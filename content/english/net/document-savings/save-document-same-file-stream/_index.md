@@ -24,9 +24,9 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.SavingDocuments
         public static void Run()
         {
             Console.WriteLine($"[Example Advanced Usage] # {typeof(SaveDocumentToTheSameFileOrStream).Name}\n");
-            string outputFileName = Path.Combine(Constants.GetOutputDirectoryPath(), Path.GetFileName(Constants.InTestDoc));
+            string outputFileName = Path.Combine("Your Document Directory", Path.GetFileName("Your Document Path"));
 
-            File.Copy(Constants.InTestDoc, outputFileName);
+            File.Copy("Your Document Path", outputFileName);
             using (Watermarker watermarker = new Watermarker(outputFileName))
             {
                 // watermarking goes here

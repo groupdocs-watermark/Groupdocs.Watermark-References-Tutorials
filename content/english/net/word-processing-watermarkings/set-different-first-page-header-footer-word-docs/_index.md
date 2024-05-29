@@ -26,8 +26,8 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.AddingWatermarks.Add
         {
             Console.WriteLine($"[Example Advanced Usage] # {typeof(WordProcessingSetDifferentFirstPageHeaderFooter).Name}\n");
 
-            string documentPath = Constants.InDocumentDocx;
-            string outputFileName = Path.Combine(Constants.GetOutputDirectoryPath(), Path.GetFileName(documentPath));
+            string documentPath = "Your Document Path";
+            string outputFileName = Path.Combine("Your Document Directory", Path.GetFileName(documentPath));
 
             var loadOptions = new WordProcessingLoadOptions();
             using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))

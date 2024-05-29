@@ -26,8 +26,8 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.AddingWatermarks.Add
         {
             Console.WriteLine($"[Example Advanced Usage] # {typeof(PdfExtractAllAttachments).Name}\n");
 
-            string documentPath = Constants.InDocumentPdf;
-            string outputDirectory = Constants.GetOutputDirectoryPath();
+            string documentPath = "Your Document Path";
+            string outputDirectory = "Your Document Directory";
             string outputFileName = Path.Combine(outputDirectory, Path.GetFileName(documentPath));
 
             var loadOptions = new PdfLoadOptions();

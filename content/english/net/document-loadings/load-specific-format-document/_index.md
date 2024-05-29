@@ -26,8 +26,8 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.LoadingDocuments
         {
             Console.WriteLine($"[Example Advanced Usage] # {typeof(LoadingDocumentOfSpecificFormat).Name}\n");
 
-            string documentPath = Constants.InSpreadsheetXlsx;
-            string outputFileName = Path.Combine(Constants.GetOutputDirectoryPath(), Path.GetFileName(documentPath));
+            string documentPath = "Your Document Path";
+            string outputFileName = Path.Combine("Your Document Directory", Path.GetFileName(documentPath));
 
             var loadOptions = new SpreadsheetLoadOptions();
             using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))

@@ -23,7 +23,7 @@ namespace GroupDocs.Watermark.Examples.CSharp.BasicUsage
             Console.WriteLine($"[Example Basic Usage] # {typeof(GenerateDocumentPreview).Name}\n");
 
             string documentPath = Constants.InDiagramVsdx;
-            string outputDirectory = Constants.GetOutputDirectoryPath();
+            string outputDirectory = "Your Document Directory";
 
             using (Watermarker watermarker = new Watermarker(documentPath))
             {

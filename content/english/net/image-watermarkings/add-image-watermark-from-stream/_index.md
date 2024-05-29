@@ -26,12 +26,12 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.AddingWatermarks.Add
             Console.WriteLine($"[Example Advanced Usage] # {typeof(AddImageWatermarkUsingStream).Name}\n");
 
             string documentPath = Constants.WatermarkJpg;
-            string outputDirectory = Constants.GetOutputDirectoryPath();
+            string outputDirectory = "Your Document Directory";
             string outputFileName = Path.Combine(outputDirectory, Path.GetFileName(documentPath));
 
             using (Stream watermarkStream = File.OpenRead(documentPath))
             {
-                using (Watermarker watermarker = new Watermarker(Constants.InImagePng))
+                using (Watermarker watermarker = new Watermarker("Your Document Path"))
                 {
                     // Use stream containing an image as constructor parameter
                     using (ImageWatermark watermark = new ImageWatermark(watermarkStream))

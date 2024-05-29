@@ -25,8 +25,8 @@ namespace GroupDocs.Watermark.Examples.CSharp.BasicUsage
         {
             Console.WriteLine($"[Example Basic Usage] # {typeof(GetDocumentInfoForTheFileFromStream).Name}\n");
 
-            // Constants.InSourceDocx is an absolute or relative path to your document. Ex: @"C:\Docs\source.docx"
-            using (FileStream stream = File.OpenRead(Constants.InSourceDocx))
+            // "Your Document Path" is an absolute or relative path to your document. Ex: @"C:\Docs\source.docx"
+            using (FileStream stream = File.OpenRead("Your Document Path"))
             {
                 using (Watermarker watermarker = new Watermarker(stream))
                 {

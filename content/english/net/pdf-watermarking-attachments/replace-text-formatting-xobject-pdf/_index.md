@@ -27,8 +27,8 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.AddingWatermarks.Add
         {
             Console.WriteLine($"[Example Advanced Usage] # {typeof(PdfReplaceTextForParticularXObjectWithFormatting).Name}\n");
 
-            string documentPath = Constants.InDocumentPdf;
-            string outputFileName = Path.Combine(Constants.GetOutputDirectoryPath(), Path.GetFileName(documentPath));
+            string documentPath = "Your Document Path";
+            string outputFileName = Path.Combine("Your Document Directory", Path.GetFileName(documentPath));
 
             var loadOptions = new PdfLoadOptions();
             using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))

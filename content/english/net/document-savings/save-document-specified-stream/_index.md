@@ -27,7 +27,7 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.SavingDocuments
             {
                 Console.WriteLine($"[Example Advanced Usage] # {typeof(SaveDocumentToTheSpecifiedStream).Name}\n");
 
-                using (Watermarker watermarker = new Watermarker(Constants.InTestDoc))
+                using (Watermarker watermarker = new Watermarker("Your Document Path"))
                 {
                     // watermarking goes here
                     TextWatermark watermark = new TextWatermark("Test watermark", new Font("Arial", 12));

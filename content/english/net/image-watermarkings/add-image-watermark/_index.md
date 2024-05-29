@@ -25,11 +25,11 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.AddingWatermarks.Add
         {
             Console.WriteLine($"[Example Advanced Usage] # {typeof(AddImageWatermark).Name}\n");
 
-            string documentPath = Constants.InPresentationPptx;
-            string outputDirectory = Constants.GetOutputDirectoryPath();
+            string documentPath = "Your Document Path";
+            string outputDirectory = "Your Document Directory";
             string outputFileName = Path.Combine(outputDirectory, Path.GetFileName(documentPath));
 
-            // Constants.InPresentationPptx is an absolute or relative path to your document. Ex: @"C:\Docs\presentation.pptx"
+            // "Your Document Path" is an absolute or relative path to your document. Ex: @"C:\Docs\presentation.pptx"
             using (Watermarker watermarker = new Watermarker(documentPath))
             {
                 // Use path to the image as constructor parameter

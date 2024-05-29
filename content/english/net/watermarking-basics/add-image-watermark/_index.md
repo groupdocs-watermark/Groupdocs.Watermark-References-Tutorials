@@ -27,11 +27,11 @@ namespace GroupDocs.Watermark.Examples.CSharp.BasicUsage
         {
             Console.WriteLine($"[Example Basic Usage] # {typeof(AddAnImageWatermark).Name}\n");
 
-            string documentPath = Constants.InDocumentPdf;
-            string outputDirectory = Constants.GetOutputDirectoryPath();
+            string documentPath = "Your Document Path";
+            string outputDirectory = "Your Document Directory";
             string outputFileName = Path.Combine(outputDirectory, Path.GetFileName(documentPath));
 
-            // Constants.InDocumentXlsx is an absolute or relative path to your document. Ex: @"C:\Docs\document.xlsx"
+            // "Your Document Path" is an absolute or relative path to your document. Ex: @"C:\Docs\document.xlsx"
             using (FileStream stream = File.Open(documentPath, FileMode.Open, FileAccess.ReadWrite))
             {
                 using (Watermarker watermarker = new Watermarker(stream))

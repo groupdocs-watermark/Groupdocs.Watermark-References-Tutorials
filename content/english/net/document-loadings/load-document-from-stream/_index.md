@@ -25,8 +25,8 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.LoadingDocuments
         {
             Console.WriteLine($"[Example Advanced Usage] # {typeof(LoadFromLocalDisk).Name}\n");
 
-            string documentPath = Constants.InDocumentDocx;
-            string outputFileName = Path.Combine(Constants.GetOutputDirectoryPath(), Path.GetFileName(documentPath));
+            string documentPath = "Your Document Path";
+            string outputFileName = Path.Combine("Your Document Directory", Path.GetFileName(documentPath));
 
             using (Stream document = File.OpenRead(documentPath))
             using (Watermarker watermarker = new Watermarker(document))

@@ -26,8 +26,8 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.AddingWatermarks.Add
         {
             Console.WriteLine($"[Example Advanced Usage] # {typeof(PdfAddAttachment).Name}\n");
 
-            string documentPath = Constants.InDocumentPdf;
-            string outputDirectory = Constants.GetOutputDirectoryPath();
+            string documentPath = "Your Document Path";
+            string outputDirectory = "Your Document Directory";
             string outputFileName = Path.Combine(outputDirectory, Path.GetFileName(documentPath));
 
             var loadOptions = new PdfLoadOptions();
@@ -36,7 +36,7 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.AddingWatermarks.Add
                 PdfContent pdfContent = watermarker.GetContent<PdfContent>();
 
                 // Add the attachment
-                pdfContent.Attachments.Add(File.ReadAllBytes(Constants.InSampleDocx), "sample doc", "sample doc as attachment");
+                pdfContent.Attachments.Add(File.ReadAllBytes("Your Document Path"), "sample doc", "sample doc as attachment");
 
                 // Save changes
                 watermarker.Save(outputFileName);

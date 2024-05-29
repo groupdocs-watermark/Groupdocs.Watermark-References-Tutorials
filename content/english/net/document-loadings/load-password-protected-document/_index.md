@@ -26,8 +26,8 @@ namespace GroupDocs.Watermark.Examples.CSharp.AdvancedUsage.LoadingDocuments
         {
             Console.WriteLine($"[Example Advanced Usage] # {typeof(LoadPasswordProtectedDocument).Name}\n");
 
-            string documentPath = Constants.InProtectedDocumentDocx;
-            string outputFileName = Path.Combine(Constants.GetOutputDirectoryPath(), Path.GetFileName(documentPath));
+            string documentPath = "Your Document Path";
+            string outputFileName = Path.Combine("Your Document Directory", Path.GetFileName(documentPath));
 
             LoadOptions loadOptions = new LoadOptions();
             loadOptions.Password = "P@$$w0rd";

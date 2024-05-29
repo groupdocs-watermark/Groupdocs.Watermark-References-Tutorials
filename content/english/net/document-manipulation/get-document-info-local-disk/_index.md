@@ -24,8 +24,8 @@ namespace GroupDocs.Watermark.Examples.CSharp.BasicUsage
         {
             Console.WriteLine($"[Example Basic Usage] # {typeof(GetDocumentInfoForTheFileFromLocalDisk).Name}\n");
 
-            // Constants.InSourceDocx is an absolute or relative path to your document. Ex: @"C:\Docs\source.docx"
-            using (Watermarker watermarker = new Watermarker(Constants.InSourceDocx))
+            // "Your Document Path" is an absolute or relative path to your document. Ex: @"C:\Docs\source.docx"
+            using (Watermarker watermarker = new Watermarker("Your Document Path"))
             {
                 IDocumentInfo info = watermarker.GetDocumentInfo();
                 Console.WriteLine("File type: {0}", info.FileType);
