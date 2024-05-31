@@ -12,7 +12,7 @@ In today's digital age, protecting sensitive information and maintaining the int
 ## Prerequisites
 Before diving into the process of removing artifacts with specific text formatting in PDF using GroupDocs.Watermark for .NET, ensure you have the following prerequisites in place:
 ### 1. Install GroupDocs.Watermark for .NET
-First and foremost, download and install GroupDocs.Watermark for .NET from the official [download link](https://releases.groupdocs.com/Watermark/net/). Follow the installation instructions provided to set up the library correctly.
+First and foremost, download and install GroupDocs.Watermark for .NET from the [download link](https://releases.groupdocs.com/Watermark/net/). Follow the installation instructions provided to set up the library correctly.
 ### 2. Obtain a License
 To unlock the full functionality of GroupDocs.Watermark for .NET, you'll need a valid license. You can either purchase a license from [here](https://purchase.groupdocs.com/buy) or obtain a temporary license for testing purposes from [here](https://purchase.groupdocs.com/temporary-license/).
 ### 3. Basic Knowledge of C#
@@ -91,4 +91,4 @@ Yes, GroupDocs.Watermark for .NET supports watermarking various document formats
 ### Is there a trial version available for testing GroupDocs.Watermark for .NET?
 Yes, you can download a free trial version of GroupDocs.Watermark for .NET from [here](https://releases.groupdocs.com/).
 ### Where can I find additional support and resources for GroupDocs.Watermark for .NET?
-You can visit the official GroupDocs forum [here](https://forum.groupdocs.com/c/watermark/19) for any assistance or queries regarding GroupDocs.Watermark for .NET.
+You can visit the GroupDocs forum [here](https://forum.groupdocs.com/c/watermark/19) for any assistance or queries regarding GroupDocs.Watermark for .NET.

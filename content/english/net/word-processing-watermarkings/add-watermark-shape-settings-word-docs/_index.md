@@ -79,4 +79,4 @@ Absolutely, you can adjust various parameters such as font size, style, color, a
 ### Is there a trial version available for GroupDocs.Watermark for .NET?
 Yes, you can get a free trial from [here](https://releases.groupdocs.com/).
 ### Where can I find support for GroupDocs.Watermark?
-You can find support and ask questions on the official GroupDocs forum [here](https://forum.groupdocs.com/c/watermark/19).
+You can find support and ask questions on the GroupDocs forum [here](https://forum.groupdocs.com/c/watermark/19).
