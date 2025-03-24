@@ -6,6 +6,9 @@ description: .NET-hez készült GroupDocs segítségével könnyedén nyerhet é
 weight: 24
 url: /hu/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# Szerezzen be alakzatokat a Word dokumentumokban
+
 ## Bevezetés
 A digitális környezetben, ahol az adatok uralkodnak, a legfontosabb, hogy a dokumentumokból értelmes betekintést nyerjünk. A GroupDocs.Watermark for .NET lehetővé teszi a fejlesztők számára, hogy elmélyüljenek a dokumentumstruktúrákban, és könnyedén nyerjenek ki értékes információkat. Ebben az oktatóanyagban azt fogjuk megvizsgálni, hogyan használhatjuk fel ezt a hatékony eszközt, hogy lépésről lépésre gyűjtsük be a Word-dokumentumok alakzatait.
 ## Előfeltételek

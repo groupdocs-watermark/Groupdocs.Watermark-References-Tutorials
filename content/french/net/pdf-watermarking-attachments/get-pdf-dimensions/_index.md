@@ -6,6 +6,9 @@ description: Protégez facilement vos documents à l'aide de Groupdocs.Watermark
 weight: 26
 url: /fr/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---
+
+# Obtenir les dimensions PDF
+
 ## Introduction
 À l’ère numérique d’aujourd’hui, la protection de vos documents est primordiale. Que vous soyez un professionnel des affaires, un juriste ou un artiste créatif, la protection de votre propriété intellectuelle est essentielle. Groupdocs.Watermark for .NET offre une solution robuste pour ajouter des filigranes, des tampons et des annotations à vos documents, garantissant ainsi leur sécurité et leur authenticité.
 ## Conditions préalables

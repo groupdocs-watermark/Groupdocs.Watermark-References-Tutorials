@@ -6,6 +6,9 @@ description: GroupDocs for .NET을 사용하여 Word 문서에 모양 설정이 
 weight: 20
 url: /ko/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Word Docs에서 도형 설정으로 워터마크 추가
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Watermark를 사용하여 Word 문서에 모양 설정이 포함된 워터마크를 추가하는 과정을 안내합니다.
 ## 전제조건

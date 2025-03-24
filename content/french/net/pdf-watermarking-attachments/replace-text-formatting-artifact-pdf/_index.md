@@ -6,6 +6,9 @@ description: Découvrez comment remplacer le texte par le formatage des artefact
 weight: 43
 url: /fr/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---
+
+# Remplacer le texte par le formatage de l'artefact au format PDF
+
 ## Introduction
 Dans le domaine du développement .NET, la gestion des artefacts et du tatouage des documents est souvent une tâche cruciale. Heureusement, avec GroupDocs.Watermark pour .NET, les développeurs disposent d'une boîte à outils puissante pour intégrer de manière transparente les fonctionnalités de filigrane et de gestion des artefacts dans leurs applications. Dans ce didacticiel complet, nous aborderons le processus de remplacement du texte par le formatage des artefacts dans les documents PDF à l'aide de GroupDocs.Watermark pour .NET.
 ## Conditions préalables

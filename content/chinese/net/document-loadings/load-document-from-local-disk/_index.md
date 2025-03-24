@@ -6,6 +6,9 @@ description: 使用 Groupdocs for .NET 保护和管理您的文档。按照我�
 weight: 10
 url: /zh/net/document-loadings/load-document-from-local-disk/
 ---
+
+# 从本地磁盘加载文档
+
 ## 介绍
 在当今的数字时代，为文档添加水印对于确保内容保护、所有权声明和机密性至关重要。 Groupdocs.Watermark for .NET 是一个功能强大的库，允许开发人员添加、搜索和管理各种文档格式的水印。在本教程中，我们将通过详细的分步说明逐步介绍使用 Groupdocs.Watermark for .NET 向文档添加水印的过程。
 ## 先决条件

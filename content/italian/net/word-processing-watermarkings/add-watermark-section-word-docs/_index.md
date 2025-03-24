@@ -6,6 +6,9 @@ description: Aggiungi facilmente filigrane ai documenti Word utilizzando GroupDo
 weight: 15
 url: /it/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Aggiungi filigrana alla sezione in documenti Word
+
 ## introduzione
 La filigrana dei tuoi documenti è un passaggio cruciale per proteggere i tuoi contenuti e affermarne la proprietà. In questo tutorial completo, ti guideremo attraverso il processo di aggiunta di una filigrana a una sezione specifica nei documenti di Word utilizzando GroupDocs.Watermark per .NET. Che tu sia uno sviluppatore o qualcuno con una conoscenza di base della codifica, questa guida ti aiuterà a proteggere i tuoi documenti in modo efficace.
 ## Prerequisiti

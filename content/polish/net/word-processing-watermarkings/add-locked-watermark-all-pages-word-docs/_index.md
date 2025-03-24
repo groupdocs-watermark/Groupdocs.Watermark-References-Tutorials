@@ -6,6 +6,9 @@ description: Zabezpiecz swoje dokumenty, dodając zablokowane znaki wodne za pom
 weight: 11
 url: /pl/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Dodaj zablokowany znak wodny do wszystkich stron w dokumentach programu Word
+
 ## Wstęp
 Dodawanie znaków wodnych do dokumentów to istotny krok w zabezpieczaniu i budowaniu marki treści. Niezależnie od tego, czy zapobiegasz nieautoryzowanemu użyciu, czy po prostu dodajesz profesjonalny akcent, znaki wodne mogą służyć wielu celom. W tym samouczku przeprowadzimy Cię przez proces dodawania zablokowanego znaku wodnego do wszystkich stron dokumentu programu Word za pomocą Groupdocs.Watermark dla .NET.
 ## Warunki wstępne

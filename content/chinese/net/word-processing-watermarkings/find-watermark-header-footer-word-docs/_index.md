@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs for .NET 高效查找和删除 Word �
 weight: 22
 url: /zh/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# 在 Word 文档的页眉/页脚中查找水印
+
 ## 介绍
 在文档管理和保护领域，水印起着至关重要的作用。无论是出于品牌推广、版权保护还是文档跟踪的目的，向文档添加水印都是必不可少的。然而，有效地查找和删除水印，尤其是在大型文档集中，可能是一项艰巨的任务。这就是 GroupDocs.Watermark for .NET 发挥作用的地方。在本教程中，我们将深入研究如何使用 GroupDocs.Watermark for .NET 在 Word 文档的页眉和页脚中查找水印，分解每个步骤以确保全面理解。
 ## 先决条件

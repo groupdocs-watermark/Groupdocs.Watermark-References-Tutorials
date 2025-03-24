@@ -6,6 +6,9 @@ description: Learn how to remove hyperlinks from Word documents using GroupDocs.
 weight: 29
 url: /net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# Remove Hyperlinks in Word Docs
+
 ## Introduction
 In today's digital world, where information flows seamlessly, protecting your documents is paramount. Whether you're sharing sensitive business data or crafting a masterpiece, safeguarding your content from unauthorized access and manipulation is crucial. With the advent of GroupDocs.Watermark for .NET, you can ensure the integrity of your documents by adding, removing, and detecting watermarks with ease.
 ## Prerequisites

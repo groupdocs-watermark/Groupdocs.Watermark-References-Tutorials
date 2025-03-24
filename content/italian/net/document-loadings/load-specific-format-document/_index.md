@@ -6,6 +6,9 @@ description: Scopri come caricare e filigranare i documenti utilizzando Groupdoc
 weight: 12
 url: /it/net/document-loadings/load-specific-format-document/
 ---
+
+# Carica documento in formato specifico
+
 ## introduzione
 L'aggiunta di filigrane ai documenti è un compito cruciale per garantire la protezione e il branding dei contenuti. Groupdocs.Watermark per .NET è uno strumento versatile e potente che semplifica questo processo. Che tu abbia a che fare con documenti di testo, fogli di calcolo, presentazioni o immagini, questa guida ti guiderà attraverso i passaggi per caricare e filigranare documenti in formati specifici utilizzando Groupdocs.Watermark per .NET.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie Doku
 weight: 12
 url: /de/net/document-loadings/load-specific-format-document/
 ---
+
+# Laden Sie ein Dokument mit einem bestimmten Format
+
 ## Einführung
 Das Hinzufügen von Wasserzeichen zu Dokumenten ist eine entscheidende Aufgabe, um den Schutz und die Markenbildung von Inhalten sicherzustellen. Groupdocs.Watermark für .NET ist ein vielseitiges und leistungsstarkes Tool, das diesen Prozess vereinfacht. Unabhängig davon, ob Sie mit Textdokumenten, Tabellenkalkulationen, Präsentationen oder Bildern arbeiten, führt Sie dieser Leitfaden durch die Schritte zum Laden und Wasserzeichen spezifischer Formatdokumente mithilfe von Groupdocs.Watermark für .NET.
 ## Voraussetzungen

@@ -6,6 +6,9 @@ description: Pelajari cara menghapus XObjects dari PDF dengan mudah menggunakan 
 weight: 35
 url: /id/net/pdf-watermarking-attachments/remove-xobject-pdf/
 ---
+
+# Hapus XObject dari PDF
+
 ## Perkenalan
 Pernahkah Anda perlu menghapus XObjects yang tidak diinginkan dari dokumen PDF Anda? Baik untuk keamanan, kejelasan, atau sekadar membersihkan file Anda, menghapus XObjects bisa menjadi tugas penting. Untungnya, dengan GroupDocs.Watermark untuk .NET, proses ini mudah dan efisien. Dalam tutorial ini, kami akan memandu Anda langkah demi langkah tentang cara menghapus XObjects dari PDF menggunakan GroupDocs.Watermark untuk .NET. Di akhir artikel ini, Anda akan diperlengkapi dengan baik untuk menangani tugas ini dengan lancar.
 ## Prasyarat

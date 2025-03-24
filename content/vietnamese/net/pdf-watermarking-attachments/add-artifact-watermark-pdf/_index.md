@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ giả tạo vào tệp PDF một
 weight: 11
 url: /vi/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# Thêm hình mờ tạo tác vào PDF
+
 ## Giới thiệu
 Thêm hình mờ vào tệp PDF là một khía cạnh quan trọng của việc quản lý tài liệu, đặc biệt là khi nói đến việc bảo vệ tài liệu sở hữu trí tuệ hoặc thương hiệu. Groupdocs.Watermark cho .NET cung cấp giải pháp mạnh mẽ để thêm hình mờ vào tệp PDF một cách dễ dàng. Trong hướng dẫn này, chúng ta sẽ hướng dẫn từng bước quy trình thêm hình mờ giả tạo vào tệp PDF.
 ## Điều kiện tiên quyết

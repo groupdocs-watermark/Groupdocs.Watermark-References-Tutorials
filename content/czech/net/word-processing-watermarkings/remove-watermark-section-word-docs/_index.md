@@ -6,6 +6,9 @@ description: Naučte se, jak odstranit vodoznaky z konkrétních sekcí v dokume
 weight: 32
 url: /cs/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# Odebrat vodoznak ze sekce v dokumentech aplikace Word
+
 ## Úvod
 digitálním věku je ochrana integrity dokumentů prvořadá, zejména pokud jde o citlivé informace nebo chráněný obsah. Vodoznak je běžně používaná technika k potvrzení vlastnictví, identity značky nebo jednoduše k označení stavu dokumentu. Existují však případy, kdy je nutné odstranit vodoznaky, ať už kvůli požadavkům na úpravy nebo kvůli ochraně soukromí.
 ## Předpoklady

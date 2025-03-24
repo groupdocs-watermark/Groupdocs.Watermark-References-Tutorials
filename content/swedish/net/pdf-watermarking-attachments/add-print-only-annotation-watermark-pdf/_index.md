@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar med endast utskriftsko
 weight: 13
 url: /sv/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---
+
+# Lägg till Skriv ut endast anteckningsvattenstämpel till PDF
+
 ## Introduktion
 I den här självstudien kommer vi att fördjupa oss i processen att lägga till en vattenstämpel med endast utskriftskommentarer till en PDF med GroupDocs.Watermark för .NET. Vattenmärkning av dokument är en avgörande aspekt av dokumentsäkerhet och varumärkesbyggande, och GroupDocs.Watermark tillhandahåller en sömlös lösning för .NET-utvecklare för att uppnå detta.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Aprenda como substituir imagens em anotações específicas de PDF 
 weight: 37
 url: /pt/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
+
+# Substituir imagem por anotação específica em PDF
+
 ## Introdução
 Bem-vindo a este guia completo sobre como usar GroupDocs.Watermark for .NET para substituir imagens em anotações específicas em documentos PDF. Quer você seja um desenvolvedor procurando aprimorar seus recursos de manipulação de PDF ou simplesmente curioso sobre as complexidades da marca d’água, este tutorial tem tudo para você. Ao final, você poderá substituir facilmente imagens em anotações de PDF por outras personalizadas, otimizando seus fluxos de trabalho de processamento de documentos.
 ## Pré-requisitos

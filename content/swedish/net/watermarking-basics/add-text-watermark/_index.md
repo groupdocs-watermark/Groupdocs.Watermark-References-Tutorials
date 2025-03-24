@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till textvattenstämplar i dina dokument me
 weight: 11
 url: /sv/net/watermarking-basics/add-text-watermark/
 ---
+
+# Lägg till textvattenstämpel
+
 ## Introduktion
 GroupDocs.Watermark for .NET är ett kraftfullt bibliotek som låter utvecklare lägga till, söka och ta bort vattenstämplar från olika dokumentformat i .NET-applikationer. I den här handledningen kommer vi att fokusera på att lägga till en textvattenstämpel i ett dokument med GroupDocs.Watermark.
 ## Förutsättningar

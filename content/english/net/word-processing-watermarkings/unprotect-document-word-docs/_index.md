@@ -6,6 +6,9 @@ description: Learn how to unprotect Word documents easily using GroupDocs.Waterm
 weight: 38
 url: /net/word-processing-watermarkings/unprotect-document-word-docs/
 ---
+
+# Unprotect Document in Word Docs
+
 ## Introduction
 GroupDocs.Watermark for .NET is a powerful API that allows developers to work with watermarks in various document formats, including Word documents. In this tutorial, we'll guide you through the process of unprotecting a Word document using GroupDocs.Watermark for .NET. Whether you're a seasoned developer or just getting started with .NET development, this step-by-step guide will help you accomplish the task efficiently.
 ## Prerequisites

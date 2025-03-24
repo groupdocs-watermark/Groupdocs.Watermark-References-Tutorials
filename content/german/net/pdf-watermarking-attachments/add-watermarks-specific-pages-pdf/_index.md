@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit Groupdocs für .NET Text- und Bildwasserz
 weight: 15
 url: /de/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# Fügen Sie Wasserzeichen zu bestimmten Seiten in PDF hinzu
+
 ## Einführung
 Das Hinzufügen von Wasserzeichen zu Ihren PDF-Dokumenten ist ein entscheidender Schritt zum Schutz Ihrer Inhalte und zur Durchsetzung Ihrer Eigentumsrechte. Ganz gleich, ob Sie einen Entwurf markieren, vertrauliche Informationen sichern oder einfach nur ein Branding hinzufügen, Wasserzeichen sind ein wirksames Werkzeug. In diesem Tutorial erfahren Sie, wie Sie mit Groupdocs.Watermark für .NET bestimmten Seiten in Ihren PDF-Dateien sowohl Text- als auch Bildwasserzeichen hinzufügen. Wir unterteilen den Prozess in überschaubare Schritte und stellen so sicher, dass Sie diese Funktionen mitverfolgen und in Ihren Projekten implementieren können.
 ## Voraussetzungen

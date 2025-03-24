@@ -6,6 +6,9 @@ description: Lär dig hur du tar bort vattenstämplar från PDF-filer med GroupD
 weight: 34
 url: /sv/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---
+
+# Ta bort vattenstämpel från PDF
+
 ## Introduktion
 I dagens digitala tidsålder är det vanligt att skydda känsliga dokument med vattenstämplar. Det finns dock tillfällen där du kan behöva ta bort vattenstämplar från PDF-filer av olika anledningar. Oavsett om du redigerar ett dokument eller bara behöver en ren version för presentationen, tillhandahåller GroupDocs.Watermark för .NET en sömlös lösning för att ta bort vattenstämplar från PDF-filer.
 ## Förutsättningar

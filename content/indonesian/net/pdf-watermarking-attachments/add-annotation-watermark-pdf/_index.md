@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air anotasi ke dokumen PDF dengan m
 weight: 10
 url: /id/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# Tambahkan Tanda Air Anotasi ke PDF
+
 ## Perkenalan
 Dalam bidang pengelolaan dokumen, menambahkan watermark pada file PDF merupakan aspek krusial, terutama untuk tujuan branding, keamanan, dan identifikasi dokumen. GroupDocs.Watermark for .NET adalah perpustakaan canggih yang memfasilitasi integrasi tanda air ke dalam berbagai format dokumen, termasuk PDF. Dalam tutorial ini, kita akan mempelajari proses menambahkan tanda air anotasi ke dokumen PDF langkah demi langkah, memanfaatkan fungsi yang disediakan oleh GroupDocs.Watermark untuk .NET.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ chú thích vào tài liệu PDF
 weight: 10
 url: /vi/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# Thêm hình mờ chú thích vào PDF
+
 ## Giới thiệu
 Trong lĩnh vực quản lý tài liệu, việc thêm hình mờ vào tệp PDF đóng vai trò là một khía cạnh quan trọng, đặc biệt là cho mục đích xây dựng thương hiệu, bảo mật và nhận dạng tài liệu. GroupDocs.Watermark cho .NET là một thư viện mạnh mẽ tạo điều kiện cho việc tích hợp liền mạch các hình mờ vào các định dạng tài liệu khác nhau, bao gồm cả tệp PDF. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình thêm hình mờ chú thích vào tài liệu PDF từng bước, sử dụng các chức năng do GroupDocs.Watermark cung cấp cho .NET.
 ## Điều kiện tiên quyết

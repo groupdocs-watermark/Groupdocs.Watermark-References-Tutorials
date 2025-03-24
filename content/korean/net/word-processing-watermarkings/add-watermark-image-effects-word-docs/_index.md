@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에 이미�
 weight: 19
 url: /ko/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---
+
+# Word Docs에서 이미지 효과로 워터마크 추가
+
 ## 소개
 눈길을 끄는 워터마크를 사용하여 Word 문서에 활기를 더하고 싶으십니까? .NET용 GroupDocs.Watermark가 여러분을 도와드립니다! 이 포괄적인 가이드는 GroupDocs for .NET을 사용하여 Word 문서에 멋진 이미지 효과가 포함된 워터마크를 추가하는 과정을 안내합니다. 숙련된 개발자이든 초보자이든 이 단계별 튜토리얼을 통해 프로세스를 쉽게 수행할 수 있습니다.
 ## 전제조건

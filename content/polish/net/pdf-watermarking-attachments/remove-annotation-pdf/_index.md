@@ -6,6 +6,9 @@ description: Dowiedz się, jak usuwać adnotacje z plików PDF za pomocą GroupD
 weight: 29
 url: /pl/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---
+
+# Usuń adnotację z pliku PDF
+
 ## Wstęp
 Adnotacje w dokumentach PDF mogą czasami zaśmiecać treść lub zakłócać czytelność dokumentu. Dzięki GroupDocs.Watermark dla .NET możesz bez wysiłku usuwać adnotacje z plików PDF. W tym samouczku przeprowadzimy Cię przez ten proces krok po kroku.
 ## Warunki wstępne

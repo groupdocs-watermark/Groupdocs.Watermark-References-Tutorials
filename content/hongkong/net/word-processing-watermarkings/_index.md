@@ -6,6 +6,9 @@ description: 了解用於 .NET 的 GroupDocs.Watermark 基本教程，以在 Wor
 weight: 26
 url: /zh-hant/net/word-processing-watermarkings/
 ---
+
+# 文字處理浮水印
+
 ## 介紹
 
 為 Word 文件添加浮水印是保護內容和建立品牌的關鍵步驟。透過 GroupDocs.Watermark for .NET，此過程變得簡單且有效率。無論您是在標題中添加圖像浮水印還是在特定頁面上鎖定浮水印，這些教學課程都將引導您完成每個步驟，確保您的文件既受保護又專業。

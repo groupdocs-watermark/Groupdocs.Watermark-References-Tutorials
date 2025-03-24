@@ -6,6 +6,9 @@ description: Explore os tutoriais do GroupDocs.Watermark for .NET sobre como adi
 weight: 24
 url: /pt/net/image-watermarkings/
 ---
+
+# Marca d'água de imagem
+
 ## Introdução
 
 Quer aprimorar seus documentos com marcas d’água de imagem? GroupDocs.Watermark for .NET ajuda você. Nossos tutoriais abrangentes irão guiá-lo através do processo de adição de marcas d'água de imagem, garantindo que seus documentos sejam seguros e com marca profissional. Quer você seja um desenvolvedor novato ou experiente, nossos guias passo a passo tornam o processo simples e eficiente. Vamos explorar alguns tutoriais importantes para ajudá-lo a começar.

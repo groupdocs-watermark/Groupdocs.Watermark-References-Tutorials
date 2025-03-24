@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinden köpr�
 weight: 29
 url: /tr/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# Word Belgelerindeki Köprüleri Kaldırma
+
 ## giriiş
 Bilginin sorunsuz bir şekilde aktığı günümüzün dijital dünyasında belgelerinizi korumak çok önemlidir. İster hassas iş verilerini paylaşıyor olun ister bir şaheser yaratıyor olun, içeriğinizi yetkisiz erişime ve manipülasyona karşı korumak çok önemlidir. GroupDocs.Watermark for .NET'in gelişiyle, filigranları kolaylıkla ekleyerek, kaldırarak ve tespit ederek belgelerinizin bütünlüğünü sağlayabilirsiniz.
 ## Önkoşullar

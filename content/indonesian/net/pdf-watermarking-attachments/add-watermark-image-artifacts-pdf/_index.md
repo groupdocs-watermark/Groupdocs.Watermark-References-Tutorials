@@ -6,6 +6,9 @@ description: Lindungi file PDF Anda dengan tanda air yang dipersonalisasi menggu
 weight: 18
 url: /id/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# Tambahkan Tanda Air ke Artefak Gambar di PDF
+
 ## Perkenalan
 Dalam tutorial ini, kami akan memandu Anda melalui proses menambahkan tanda air ke artefak gambar dalam dokumen PDF menggunakan GroupDocs.Watermark untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat melindungi file PDF Anda secara efisien dengan tanda air yang dipersonalisasi.
 ## Prasyarat

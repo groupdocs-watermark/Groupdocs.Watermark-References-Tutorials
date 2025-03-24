@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ chú thích chỉ in vào tệp 
 weight: 13
 url: /vi/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---
+
+# Thêm hình mờ chú thích chỉ in vào PDF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình thêm hình mờ chú thích chỉ in vào tệp PDF bằng GroupDocs.Watermark cho .NET. Hình mờ tài liệu là một khía cạnh quan trọng của bảo mật tài liệu và xây dựng thương hiệu và GroupDocs.Watermark cung cấp giải pháp liền mạch cho các nhà phát triển .NET để đạt được điều này.
 ## Điều kiện tiên quyết

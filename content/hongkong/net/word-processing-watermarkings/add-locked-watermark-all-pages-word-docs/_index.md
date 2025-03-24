@@ -6,6 +6,9 @@ description: 使用 Groupdocs.Watermark for .NET 新增鎖定浮水印來保護�
 weight: 11
 url: /zh-hant/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# 在 Word 文件中的所有頁面中新增鎖定浮水印
+
 ## 介紹
 在文件中添加浮水印是保護內容並打造品牌的重要一步。無論您是要防止未經授權的使用還是只是添加專業風格，水印都可以發揮多種作用。在本教學中，我們將引導您完成使用 Groupdocs.Watermark for .NET 將鎖定浮水印新增至 Word 文件的所有頁面的過程。
 ## 先決條件

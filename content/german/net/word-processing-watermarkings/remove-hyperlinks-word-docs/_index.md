@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Hyperlinks 
 weight: 29
 url: /de/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# Entfernen Sie Hyperlinks in Word-Dokumenten
+
 ## Einführung
 In der heutigen digitalen Welt, in der Informationen nahtlos fließen, ist der Schutz Ihrer Dokumente von größter Bedeutung. Unabhängig davon, ob Sie vertrauliche Geschäftsdaten weitergeben oder ein Meisterwerk erschaffen, ist der Schutz Ihrer Inhalte vor unbefugtem Zugriff und Manipulation von entscheidender Bedeutung. Mit der Einführung von GroupDocs.Watermark für .NET können Sie die Integrität Ihrer Dokumente durch einfaches Hinzufügen, Entfernen und Erkennen von Wasserzeichen sicherstellen.
 ## Voraussetzungen

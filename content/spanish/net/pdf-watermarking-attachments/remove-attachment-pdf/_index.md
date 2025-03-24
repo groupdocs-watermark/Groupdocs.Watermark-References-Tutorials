@@ -6,6 +6,9 @@ description: Aprenda cómo eliminar archivos adjuntos de documentos PDF fácilme
 weight: 33
 url: /es/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---
+
+# Eliminar archivo adjunto de PDF
+
 ## Introducción
 En el mundo del desarrollo de software, gestionar documentos de forma eficiente es una tarea crucial. Ya sea para uso personal o profesional, hay ocasiones en las que necesitamos manipular o controlar diversos elementos dentro de los documentos. GroupDocs.Watermark para .NET es una potente biblioteca diseñada para abordar esta necesidad y ofrece un conjunto completo de herramientas para trabajar con diferentes formatos de documentos sin problemas.
 ## Requisitos previos

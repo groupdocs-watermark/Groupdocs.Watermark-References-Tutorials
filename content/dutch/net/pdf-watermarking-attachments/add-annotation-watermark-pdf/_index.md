@@ -6,6 +6,9 @@ description: Leer hoe u moeiteloos annotatiewatermerken aan PDF-documenten kunt 
 weight: 10
 url: /nl/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# Annotatiewatermerk toevoegen aan PDF
+
 ## Invoering
 Op het gebied van documentbeheer is het toevoegen van watermerken aan PDF-bestanden een cruciaal aspect, vooral voor branding-, beveiligings- en documentidentificatiedoeleinden. GroupDocs.Watermark voor .NET is een krachtige bibliotheek die de naadloze integratie van watermerken in verschillende documentformaten, waaronder PDF's, mogelijk maakt. In deze zelfstudie verdiepen we ons stap voor stap in het proces van het toevoegen van annotatiewatermerken aan PDF-documenten, waarbij we gebruik maken van de functionaliteiten van GroupDocs.Watermark voor .NET.
 ## Vereisten

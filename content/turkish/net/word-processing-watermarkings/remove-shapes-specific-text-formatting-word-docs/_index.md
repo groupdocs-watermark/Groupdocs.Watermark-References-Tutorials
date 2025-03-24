@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinde belirli
 weight: 31
 url: /tr/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---
+
+# Word Belgelerindeki Belirli Metin Biçimlendirmesine Sahip Şekilleri Kaldırma
+
 ## giriiş
 GroupDocs.Watermark for .NET, geliştiricilerin çeşitli belge formatlarındaki filigranları programlı olarak değiştirmesine olanak tanıyan güçlü bir API'dir. Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki belirli metin biçimlendirmesine sahip şekilleri kaldırmaya odaklanacağız. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu adım adım kılavuz şekilleri verimli ve etkili bir şekilde kaldırma sürecini anlamanıza yardımcı olacaktır.
 ## Önkoşullar

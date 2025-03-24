@@ -6,6 +6,9 @@ description: Learn how to get document info from a stream using GroupDocs.Waterm
 weight: 12
 url: /net/document-manipulation/get-document-info-stream/
 ---
+
+# Get Document Info from Stream
+
 ## Introduction
 In today's digital age, protecting and managing document integrity is crucial. Whether you are a business professional, a developer, or someone handling sensitive information, the need to add, extract, or manipulate watermarks in your documents is essential. GroupDocs.Watermark for .NET provides a powerful toolkit to help you achieve just that. This article will guide you through using GroupDocs.Watermark for .NET to get document information from a stream, offering a step-by-step tutorial to ease you into the process. By the end, you'll be proficient in using this feature to enhance your document management capabilities.
 ## Prerequisites

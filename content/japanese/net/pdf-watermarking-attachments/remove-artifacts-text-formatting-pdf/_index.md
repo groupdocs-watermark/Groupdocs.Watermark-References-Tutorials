@@ -6,6 +6,9 @@ description: GroupDocs for .NET を使用して PDF 内の特定のテキスト�
 weight: 32
 url: /ja/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---
+
+# PDF 内の特定のテキスト書式設定を持つアーティファクトを削除する
+
 ## 導入
 今日のデジタル時代では、機密情報を保護し、文書の完全性を維持することが最も重要です。機密契約を守る法律専門家であっても、財務報告書のセキュリティを確保する経営者であっても、PDF ドキュメント内の特定のテキスト形式を持つアーティファクトを削除する必要性が頻繁に発生します。幸いなことに、テクノロジーの進歩により、GroupDocs.Watermark for .NET のようなツールは、そのような課題に対処するための包括的なソリューションを提供します。
 ## 前提条件

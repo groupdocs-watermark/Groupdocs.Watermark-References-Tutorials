@@ -6,6 +6,9 @@ description: Khám phá các hướng dẫn GroupDocs.Watermark for .NET cần t
 weight: 26
 url: /vi/net/word-processing-watermarkings/
 ---
+
+# Xử lý văn bản Hình chìm mờ
+
 ## Giới thiệu
 
 Tạo hình mờ cho tài liệu Word của bạn là một bước quan trọng trong việc bảo mật nội dung và thiết lập thương hiệu của bạn. Với GroupDocs.Watermark dành cho .NET, quá trình này trở nên đơn giản và hiệu quả. Cho dù bạn đang thêm hình mờ hình ảnh vào tiêu đề hay khóa hình mờ trên các trang cụ thể, những hướng dẫn này sẽ hướng dẫn bạn qua từng bước, đảm bảo tài liệu của bạn vừa được bảo vệ vừa chuyên nghiệp.

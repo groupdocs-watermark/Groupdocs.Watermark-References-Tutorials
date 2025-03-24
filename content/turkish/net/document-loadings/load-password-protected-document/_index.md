@@ -6,6 +6,9 @@ description: Adım adım kılavuzumuzla Groupdocs for .NET'i kullanarak parola k
 weight: 13
 url: /tr/net/document-loadings/load-password-protected-document/
 ---
+
+# Parola Korumalı Belgeyi Yükle
+
 ## giriiş
 Parola korumalı olsalar bile belgelerinizi filigran ekleyerek korumak mı istiyorsunuz? Groupdocs.Watermark for .NET, tam da bunu yapmanıza olanak tanıyan güçlü bir araçtır. Bu öğreticide, Groupdocs.Watermark for .NET'i kullanarak parola korumalı bir belge yükleme ve bu belgeye filigran ekleme sürecinde size rehberlik edeceğiz. Hadi dalalım!
 ## Önkoşullar

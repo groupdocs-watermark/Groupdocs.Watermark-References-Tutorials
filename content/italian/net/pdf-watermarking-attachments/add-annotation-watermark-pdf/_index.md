@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane di annotazioni ai documenti PDF se
 weight: 10
 url: /it/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# Aggiungi filigrana di annotazione al PDF
+
 ## introduzione
 Nell'ambito della gestione dei documenti, l'aggiunta di filigrane ai file PDF rappresenta un aspetto cruciale, soprattutto per scopi di branding, sicurezza e identificazione dei documenti. GroupDocs.Watermark per .NET è una potente libreria che facilita la perfetta integrazione delle filigrane in vari formati di documenti, inclusi i PDF. In questo tutorial, approfondiremo passo dopo passo il processo di aggiunta di filigrane di annotazione ai documenti PDF, utilizzando le funzionalità fornite da GroupDocs.Watermark per .NET.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak properti bagian dari dokumen Word menggun
 weight: 23
 url: /id/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# Dapatkan Properti Bagian di Word Docs
+
 ## Perkenalan
 Dalam bidang manajemen dan manipulasi dokumen, Groupdocs.Watermark untuk .NET menonjol sebagai alat yang serbaguna dan tangguh. Terintegrasi secara mulus ke dalam kerangka .NET, perpustakaan ini memberdayakan pengembang untuk memanipulasi tanda air, anotasi, dan properti dokumen dengan mudah. Dalam tutorial ini, kita akan mempelajari salah satu fitur utamanya: mengekstraksi properti bagian dari dokumen Word. Ikuti terus saat kami menguraikan proses langkah demi langkah, membuka potensi Groupdocs.Watermark untuk .NET.
 ## Prasyarat

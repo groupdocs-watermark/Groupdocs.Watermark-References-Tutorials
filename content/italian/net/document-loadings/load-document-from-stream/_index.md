@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane ai documenti utilizzando GroupDocs
 weight: 11
 url: /it/net/document-loadings/load-document-from-stream/
 ---
+
+# Carica documento dal flusso
+
 ## introduzione
 Desideri aggiungere filigrane ai tuoi documenti senza problemi utilizzando .NET? Non guardare oltre! GroupDocs.Watermark per .NET è una libreria potente e facile da usare che ti consente di gestire filigrane in vari formati di documenti. Che tu stia lavorando con PDF, documenti Word o immagini, questo strumento ti copre. In questo tutorial ti guideremo passo dopo passo attraverso il processo di caricamento di un documento da uno stream e di aggiunta di una filigrana. Quindi, tuffiamoci subito!
 ## Prerequisiti

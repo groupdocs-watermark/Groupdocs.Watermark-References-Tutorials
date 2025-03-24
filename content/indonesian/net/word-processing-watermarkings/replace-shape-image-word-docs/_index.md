@@ -6,6 +6,9 @@ description: Pelajari cara mengganti gambar bentuk secara terprogram di dokumen 
 weight: 33
 url: /id/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# Ganti Bentuk Gambar di Word Docs
+
 ## Perkenalan
 Dalam bidang pengembangan perangkat lunak, khususnya di lingkungan .NET, penanganan manipulasi dokumen secara efisien dan aman sangatlah penting. Di antara berbagai tugas yang sering dihadapi pengembang, salah satu tantangan umum adalah mengganti gambar bentuk dalam dokumen Word secara terprogram. Ini bisa menjadi tugas yang membosankan tanpa alat dan perpustakaan yang tepat.
 Untungnya, GroupDocs menawarkan solusi ampuh dalam bentuk GroupDocs.Watermark untuk .NET, perpustakaan serbaguna yang dirancang untuk menangani watermarking dan memanipulasi watermark dalam berbagai format dokumen, termasuk dokumen Word. Dalam tutorial ini, kita akan mempelajari proses langkah demi langkah mengganti gambar bentuk di dokumen Word menggunakan GroupDocs.Watermark untuk .NET.

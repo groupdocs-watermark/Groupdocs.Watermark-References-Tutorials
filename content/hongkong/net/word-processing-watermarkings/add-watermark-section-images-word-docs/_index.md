@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs for .NET 在 Word 文件中的圖片�
 weight: 16
 url: /zh-hant/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# 為 Word 文件中的分割區影像新增浮水印
+
 ## 介紹
 在當今的數位世界中，保護您的文件至關重要。在 Word 文件中新增浮水印是保護內容安全的簡單而有效的方法。本教學將引導您完成使用 Groupdocs.Watermark for .NET 為 Word 文件中的分割區影像新增浮水印的流程。無論您是希望將此功能整合到應用程式中的開發人員，還是只是想保護您的文檔，本指南都適合您。
 ## 先決條件

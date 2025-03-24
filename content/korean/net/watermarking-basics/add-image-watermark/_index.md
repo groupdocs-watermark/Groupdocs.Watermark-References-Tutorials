@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 문서에 이미지 워
 weight: 10
 url: /ko/net/watermarking-basics/add-image-watermark/
 ---
+
+# 이미지 워터마크 추가
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 문서에 이미지 워터마크를 추가하는 과정을 자세히 살펴보겠습니다. 워터마킹 문서는 지적 재산과 브랜딩을 보호하는 데 필수적입니다. .NET용 GroupDocs.Watermark를 사용하면 워터마크를 Word, Excel, PowerPoint, PDF 등과 같은 다양한 문서 형식에 원활하게 통합할 수 있습니다.
 ## 전제조건

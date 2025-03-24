@@ -6,6 +6,9 @@ description: Groupdocs for .NET を使用して Word ドキュメントからセ
 weight: 23
 url: /ja/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# Word ドキュメントのセクション プロパティを取得する
+
 ## 導入
 ドキュメントの管理と操作の分野では、Groupdocs.Watermark for .NET は多用途で堅牢なツールとして際立っています。 .NET Framework にシームレスに統合されたこのライブラリにより、開発者は透かし、注釈、ドキュメント プロパティを簡単に操作できるようになります。このチュートリアルでは、その主要な機能の 1 つである Word 文書からのセクション プロパティの抽出について詳しく説明します。プロセスを段階的に分析して、.NET 向け Groupdocs.Watermark の可能性を解き放ちます。
 ## 前提条件

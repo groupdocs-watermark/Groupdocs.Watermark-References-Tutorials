@@ -6,6 +6,9 @@ description: 이 단계별 가이드를 통해 .NET용 GroupDocs.Watermark를 �
 weight: 12
 url: /ko/net/document-manipulation/get-document-info-stream/
 ---
+
+# Stream에서 문서 정보 가져오기
+
 ## 소개
 오늘날의 디지털 시대에는 문서 무결성을 보호하고 관리하는 것이 중요합니다. 비즈니스 전문가, 개발자 또는 민감한 정보를 다루는 사람이라면 문서에 워터마크를 추가, 추출 또는 조작하는 것이 필수적입니다. .NET용 GroupDocs.Watermark는 이를 달성하는 데 도움이 되는 강력한 도구 키트를 제공합니다. 이 문서에서는 .NET용 GroupDocs.Watermark를 사용하여 스트림에서 문서 정보를 가져오는 방법을 안내하고 프로세스를 쉽게 진행할 수 있도록 단계별 자습서를 제공합니다. 결국에는 이 기능을 사용하여 문서 관리 기능을 향상시키는 데 능숙하게 될 것입니다.
 ## 전제조건

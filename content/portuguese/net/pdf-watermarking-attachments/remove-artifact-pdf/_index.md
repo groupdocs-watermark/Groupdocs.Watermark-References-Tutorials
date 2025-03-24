@@ -6,6 +6,9 @@ description: Aprenda como remover facilmente artefatos de documentos PDF usando 
 weight: 31
 url: /pt/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
+
+# Remover artefato do PDF
+
 ## Introdução
 No domínio do gerenciamento e manipulação de documentos, GroupDocs.Watermark for .NET se destaca como uma ferramenta poderosa. Ele permite que os desenvolvedores adicionem, removam ou manipulem marcas d’água em vários formatos de documentos, como PDF, Word, Excel, PowerPoint e muitos outros. No entanto, dominar seus recursos requer uma abordagem estruturada e, neste guia abrangente, nos aprofundaremos no intrincado processo de remoção de artefatos de documentos PDF usando GroupDocs.Watermark for .NET.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: Aprenda como rasterizar documentos PDF usando GroupDocs.Watermark f
 weight: 27
 url: /pt/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# Rasterizar documento PDF
+
 ## Introdução
 No domínio do gerenciamento e manipulação de documentos, GroupDocs.Watermark for .NET se destaca como uma ferramenta poderosa, oferecendo recursos robustos para adicionar, remover e pesquisar marcas d'água em vários formatos de documentos. Seja protegendo seus documentos com avisos de direitos autorais, adicionando logotipos corporativos para marca ou simplesmente anotando documentos com carimbos, GroupDocs.Watermark simplifica o processo com sua API intuitiva e amplo conjunto de recursos.
 ## Pré-requisitos

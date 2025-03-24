@@ -6,6 +6,9 @@ description: 透過此逐步指南，了解如何使用 GroupDocs.Watermark for 
 weight: 11
 url: /zh-hant/net/document-savings/save-document-specified-location/
 ---
+
+# 儲存文件到指定位置
+
 ## 介紹
 在數位時代，保護文件變得比以往任何時候都更加重要。浮水印是保護您的文件免遭未經授權使用的有效方法。 GroupDocs.Watermark for .NET 提供了一個強大的解決方案，用於在文件中添加浮水印。無論您是希望將浮水印整合到應用程式中的開發人員還是有興趣保護文件的開發人員，本教學都將逐步引導您完成流程。
 ## 先決條件

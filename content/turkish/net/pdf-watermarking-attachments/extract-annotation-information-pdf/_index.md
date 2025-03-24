@@ -6,6 +6,9 @@ description: Bu ayrıntılı, adım adım kılavuzda GroupDocs.Watermark for .NE
 weight: 23
 url: /tr/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
+
+# Ek Açıklama Bilgilerini PDF'den Çıkarın
+
 ## giriiş
 Sık sık PDF belgelerinizden ayrıntılı açıklama bilgileri çıkarmaya ihtiyaç duyuyor musunuz? İster belge yönetim sistemleri üzerinde çalışan bir geliştirici olun, ister çok sayıda PDF'yi işleyen bir profesyonel olun, ek açıklamaları verimli bir şekilde çıkarmak ve işlemek çok önemli olabilir. GroupDocs.Watermark for .NET ile bu görevi basit ve verimli hale getirecek güçlü bir araç setiniz elinizin altında.
 ## Önkoşullar

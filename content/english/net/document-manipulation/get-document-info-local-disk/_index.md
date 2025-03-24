@@ -6,6 +6,9 @@ description: Learn how to add, remove, and extract watermarks in documents using
 weight: 11
 url: /net/document-manipulation/get-document-info-local-disk/
 ---
+
+# Get Document Info from Local Disk
+
 ## Introduction
 Welcome to the ultimate guide on using GroupDocs.Watermark for .NET! Whether you're a seasoned developer or just getting started, this article will walk you through the essentials of watermarking your documents with this powerful tool. By the end, you'll be a pro at embedding watermarks in your documents, ensuring they are protected and branded to your specifications.
 ## Prerequisites

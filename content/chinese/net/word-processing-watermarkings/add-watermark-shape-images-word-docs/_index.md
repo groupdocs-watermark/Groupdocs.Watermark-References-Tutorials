@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 添加水印以在 
 weight: 17
 url: /zh/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# 添加水印以在 Word 文档中塑造图像
+
 ## 介绍
 在本教程中，我们将探讨如何使用 GroupDocs.Watermark for .NET 在 Word 文档中添加水印以塑造图像。水印是文档保护的一个重要方面，尤其是在处理敏感或机密信息时。通过在形状图像中添加水印，您可以确保文档的完整性和安全性。
 ## 先决条件

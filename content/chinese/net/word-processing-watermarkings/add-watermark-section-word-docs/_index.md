@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 轻松向 Word 文档添加水�
 weight: 15
 url: /zh/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# 为 Word 文档中的部分添加水印
+
 ## 介绍
 对文档加水印是保护内容和维护所有权的关键步骤。在这个综合教程中，我们将引导您完成使用 GroupDocs.Watermark for .NET 将水印添加到 Word 文档中的特定部分的过程。无论您是开发人员还是对编码有基本了解的人，本指南都将帮助您有效地保护文档。
 ## 先决条件

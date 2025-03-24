@@ -6,6 +6,9 @@ description: Naučte se přidávat obrázkové vodoznaky do dokumentů pomocí G
 weight: 12
 url: /cs/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# Přidat vodoznak obrázku ze streamu
+
 ## Úvod
 V oblasti správy dokumentů a zabezpečení má začlenění vodoznaků do souborů prvořadý význam. Vodoznaky hrají zásadní roli, ať už jde o branding, ochranu autorských práv nebo zachování integrity dokumentu. Naštěstí GroupDocs.Watermark for .NET poskytuje robustní řešení pro přidávání, odstraňování a vyhledávání vodoznaků v různých formátech dokumentů.
 ## Předpoklady

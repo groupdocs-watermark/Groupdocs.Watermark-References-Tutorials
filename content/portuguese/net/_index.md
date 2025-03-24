@@ -6,6 +6,9 @@ url: /pt/net/
 description: Explore tutoriais abrangentes do GroupDocs.Watermark para .NET. Aprenda a adicionar, gerenciar e proteger marcas d'água em vários formatos de documentos com guias passo a passo.
 is_root: true
 ---
+
+# Tutoriais e exemplos de GroupDocs.Watermark para .NET
+
 ## Introdução
 
 Quando se trata de gerenciamento de documentos, a segurança e a marca são fundamentais. GroupDocs.Watermark for .NET oferece ferramentas poderosas para adicionar e gerenciar marcas d'água em vários formatos de documentos, garantindo que seu conteúdo permaneça protegido e profissional. Este artigo aborda tutoriais e exemplos essenciais para ajudá-lo a dominar a arte da marca d’água com GroupDocs para .NET.

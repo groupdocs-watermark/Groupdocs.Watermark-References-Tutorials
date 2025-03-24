@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 將 Word 文件中�
 weight: 34
 url: /zh-hant/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# 在 Word 文件中將形狀文字替換為格式化文本
+
 ## 介紹
 在本教學中，我們將引導您完成使用 GroupDocs.Watermark for .NET 將 Word 文件中的形狀文字替換為格式化文字的過程。該庫提供了處理浮水印的強大功能，包括替換形狀中的文字。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Dễ dàng khám phá những thông tin chi tiết có giá trị 
 weight: 24
 url: /vi/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# Nhận thông tin về hình dạng trong tài liệu Word
+
 ## Giới thiệu
 Trong bối cảnh kỹ thuật số nơi dữ liệu là vua, việc trích xuất những hiểu biết có ý nghĩa từ tài liệu là điều tối quan trọng. GroupDocs.Watermark dành cho .NET trao quyền cho các nhà phát triển đi sâu vào cấu trúc tài liệu, trích xuất thông tin có giá trị một cách dễ dàng. Trong hướng dẫn này, chúng ta sẽ khám phá cách tận dụng công cụ mạnh mẽ này để lấy thông tin về hình dạng từ tài liệu Word theo từng bước.
 ## Điều kiện tiên quyết

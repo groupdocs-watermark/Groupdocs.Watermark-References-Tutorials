@@ -6,6 +6,9 @@ description: このステップバイステップ ガイドに従って、GroupD
 weight: 39
 url: /ja/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
+
+# PDF 内の特定の XObject の画像を置換する
+
 ## 導入
 GroupDocs.Watermark for .NET を使用して PDF 内の特定の XObject の画像を置き換える方法に関する詳細ガイドへようこそ。透かしを管理したり、PDF ファイル内のコンテンツを変更したりする必要がある場合は、ここが適切な場所です。このチュートリアルでは各ステップを説明し、新しい画像で PDF ドキュメントを自信を持って更新できるようにします。さあ、それに飛び込んでみましょう！
 ## 前提条件

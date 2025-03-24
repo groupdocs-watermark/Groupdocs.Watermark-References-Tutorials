@@ -6,6 +6,9 @@ description: Découvrez comment supprimer des annotations avec un formatage de t
 weight: 30
 url: /fr/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# Supprimer les annotations avec un formatage de texte spécifique dans PDF
+
 ## Introduction
 Dans ce didacticiel, nous vous guiderons tout au long du processus de suppression des annotations avec un formatage de texte spécifique dans un document PDF à l'aide de Groupdocs.Watermark pour .NET. Cette bibliothèque fournit des fonctionnalités puissantes pour travailler avec des filigranes, des annotations et d'autres éléments de document dans différents formats.
 ## Conditions préalables

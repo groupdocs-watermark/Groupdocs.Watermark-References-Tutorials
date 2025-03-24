@@ -6,6 +6,9 @@ description: 使用 GroupDocs for .NET 增強文件安全性。無縫地向 PDF 
 weight: 28
 url: /zh-hant/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---
+
+# 光柵化 PDF 頁面
+
 ## 介紹
 GroupDocs.Watermark for .NET 是一個功能強大的 API，可讓開發人員將浮水印無縫地新增至各種文件格式，包括 PDF、Word、Excel、PowerPoint 等。憑藉其直覺的介面和廣泛的功能，GroupDocs.Watermark 簡化了在文件中添加文字或圖像浮水印的過程，使用戶能夠輕鬆保護其智慧財產權並增強文件安全性。
 ## 先決條件

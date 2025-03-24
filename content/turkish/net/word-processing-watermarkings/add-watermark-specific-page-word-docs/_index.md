@@ -6,6 +6,9 @@ description: GroupDocs'u kullanarak Word belgelerindeki belirli sayfalara nasıl
 weight: 14
 url: /tr/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
 ---
+
+# Word Dokümanlarında Belirli Sayfaya Filigran Ekleme
+
 ## giriiş
 Belgelere filigran eklemek, belge güvenliği ve markalamanın çok önemli bir yönüdür. Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki belirli bir sayfaya nasıl filigran ekleneceğini inceleyeceğiz.
 ## Önkoşullar

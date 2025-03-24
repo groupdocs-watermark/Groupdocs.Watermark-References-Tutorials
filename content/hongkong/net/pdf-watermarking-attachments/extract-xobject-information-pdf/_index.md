@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 釋放文件浮水印的強大�
 weight: 25
 url: /zh-hant/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
+
+# 從 PDF 中提取 XObject 訊息
+
 ## 介紹
 GroupDocs.Watermark for .NET 是一個功能強大的文件浮水印 API，旨在操作各種文件格式（例如 PDF、Word、Excel、PowerPoint 和影像）中的浮水印。它為開發人員提供了一種以編程方式在文件中添加、刪除、搜尋和替換浮水印的簡單方法。無論您需要在文件中添加公司徽標、版權聲明還是機密印章，GroupDocs.Watermark 都可以透過其直覺的 API 簡化流程。
 ## 先決條件

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 특�
 weight: 31
 url: /ko/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---
+
+# Word Docs에서 특정 텍스트 서식이 있는 도형 제거
+
 ## 소개
 .NET용 GroupDocs.Watermark는 개발자가 다양한 문서 형식의 워터마크를 프로그래밍 방식으로 조작할 수 있는 강력한 API입니다. 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 특정 텍스트 서식이 있는 도형을 제거하는 방법에 중점을 둘 것입니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 단계별 가이드는 모양을 효율적이고 효과적으로 제거하는 과정을 이해하는 데 도움이 될 것입니다.
 ## 전제조건

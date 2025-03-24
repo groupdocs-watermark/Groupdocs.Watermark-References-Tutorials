@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、Word 文書内の特
 weight: 35
 url: /ja/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---
+
+# Word ドキュメントの特定の図形のテキストを置換する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Watermark for .NET を使用して Word 文書内の特定の図形のテキストを置き換える方法を説明します。 GroupDocs.Watermark for .NET は、Word ドキュメントを含むさまざまなドキュメント形式のウォーターマークを操作するための幅広い機能を提供する強力なライブラリです。
 ## 前提条件

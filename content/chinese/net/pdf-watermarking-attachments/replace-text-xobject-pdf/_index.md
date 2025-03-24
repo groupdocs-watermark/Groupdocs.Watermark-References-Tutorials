@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 高效替换 PDF 中的文本�
 weight: 44
 url: /zh/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
+
+# 替换 PDF 中特定 XObject 的文本
+
 ## 介绍
 在文档处理、管理敏感信息或保护知识产权领域，水印起着至关重要的作用。然而，水印不仅仅是在文档中添加可见的标记；它还包括在文档中添加水印。关键是要高效且有效地做到这一点。 GroupDocs.Watermark for .NET 成为该领域的强大工具，提供无缝集成、强大的功能和极高的易用性。在本综合指南中，我们将深入研究使用 GroupDocs.Watermark for .NET 替换 PDF 文档中特定 XObject 的文本的复杂性。
 ## 先决条件

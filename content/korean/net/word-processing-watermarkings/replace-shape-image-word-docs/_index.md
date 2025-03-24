@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 모양 �
 weight: 33
 url: /ko/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# Word Docs에서 도형 이미지 바꾸기
+
 ## 소개
 소프트웨어 개발 영역, 특히 .NET 환경에서는 문서 조작을 효율적이고 안전하게 처리하는 것이 중요합니다. 개발자가 자주 직면하는 수많은 작업 중에서 일반적인 과제 중 하나는 프로그래밍 방식으로 Word 문서 내의 도형 이미지를 바꾸는 것입니다. 올바른 도구와 라이브러리가 없으면 지루한 작업이 될 수 있습니다.
 다행스럽게도 GroupDocs는 Word 문서를 포함한 다양한 문서 형식 내에서 워터마킹 및 워터마크 조작을 처리하도록 설계된 다목적 라이브러리인 GroupDocs.Watermark for .NET 형태의 강력한 솔루션을 제공합니다. 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 모양 이미지를 바꾸는 과정을 단계별로 살펴보겠습니다.

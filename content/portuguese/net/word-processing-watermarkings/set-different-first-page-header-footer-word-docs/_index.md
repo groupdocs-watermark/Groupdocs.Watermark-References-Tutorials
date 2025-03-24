@@ -6,6 +6,9 @@ description: Aprenda como definir diferentes cabeçalhos e rodapés na primeira 
 weight: 36
 url: /pt/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Definir cabeçalho/rodapé de primeira página diferente em documentos do Word
+
 ## Introdução
 No domínio do gerenciamento e manipulação de documentos, GroupDocs.Watermark for .NET surge como uma ferramenta poderosa, oferecendo integração perfeita e funcionalidades robustas para colocar marcas d'água em documentos. Um dos requisitos comuns no processamento de documentos é definir diferentes cabeçalhos e rodapés na primeira página dos documentos do Word. Este tutorial irá elucidar o processo de realização desta tarefa usando GroupDocs.Watermark for .NET, dividindo cada etapa em segmentos de fácil compreensão.
 ## Pré-requisitos

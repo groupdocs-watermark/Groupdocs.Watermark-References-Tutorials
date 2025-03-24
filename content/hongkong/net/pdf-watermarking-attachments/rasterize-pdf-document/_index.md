@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 光柵化 PDF 文�
 weight: 27
 url: /zh-hant/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# 光柵化 PDF 文件
+
 ## 介紹
 在文件管理和操作領域，GroupDocs.Watermark for .NET 是一款強大的工具，提供強大的功能來新增、刪除和搜尋各種文件格式的浮水印。無論是使用版權聲明保護您的文件、添加企業徽標以進行品牌推廣，還是只是使用圖章對文件進行註釋，GroupDocs.Watermark 都可以透過其直觀的 API 和廣泛的功能集簡化流程。
 ## 先決條件

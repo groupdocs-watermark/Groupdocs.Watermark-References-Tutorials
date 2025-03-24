@@ -6,6 +6,9 @@ description: Chraňte své soubory PDF pomocí personalizovaných vodoznaků pom
 weight: 18
 url: /cs/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# Přidat vodoznak do obrazových artefaktů v PDF
+
 ## Úvod
 tomto tutoriálu vás provedeme procesem přidávání vodoznaku do obrazových artefaktů v dokumentu PDF pomocí GroupDocs.Watermark for .NET. Pomocí těchto kroků můžete účinně chránit své soubory PDF pomocí personalizovaných vodoznaků.
 ## Předpoklady

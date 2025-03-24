@@ -6,6 +6,9 @@ description: Learn how to extract artifact information from PDF files using Grou
 weight: 24
 url: /net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# Extract Artifact Information from PDF
+
 ## Introduction
 PDF documents often contain valuable information embedded within various artifacts such as images, text, and shapes. Extracting this information can be crucial for many applications, ranging from data analysis to content management. In this tutorial, we'll explore how to extract artifact information from PDF files using GroupDocs.Watermark for .NET, a powerful .NET library designed specifically for watermarking, searching, and manipulating PDF documents.
 ## Prerequisites

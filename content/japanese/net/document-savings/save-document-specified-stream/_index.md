@@ -6,6 +6,9 @@ description: このステップバイステップ ガイドでは、GroupDocs.Wa
 weight: 12
 url: /ja/net/document-savings/save-document-specified-stream/
 ---
+
+# ドキュメントを指定したストリームに保存
+
 ## 導入
 GroupDocs.Watermark for .NET を使用してドキュメントにウォーターマークを追加する技術を習得したいと考えていますか?正しい場所に来ました！この包括的なガイドでは、ドキュメントに透かしを入れた後、指定したストリームにドキュメントを正常に保存するために知っておくべきことをすべて説明します。早速始めてみましょう。
 ## 前提条件

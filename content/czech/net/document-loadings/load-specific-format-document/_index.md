@@ -6,6 +6,9 @@ description: Naučte se, jak načíst a vodoznak dokumenty pomocí Groupdocs Wat
 weight: 12
 url: /cs/net/document-loadings/load-specific-format-document/
 ---
+
+# Načíst dokument specifického formátu
+
 ## Úvod
 Přidávání vodoznaků do dokumentů je zásadním úkolem pro zajištění ochrany obsahu a brandingu. Groupdocs.Watermark for .NET je všestranný a výkonný nástroj, který tento proces zjednodušuje. Ať už pracujete s textovými dokumenty, tabulkami, prezentacemi nebo obrázky, tato příručka vás provede kroky k načtení a vodoznaku konkrétních formátových dokumentů pomocí Groupdocs.Watermark for .NET.
 ## Předpoklady

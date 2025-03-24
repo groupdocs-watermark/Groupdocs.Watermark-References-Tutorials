@@ -6,6 +6,9 @@ description: Learn how to add custom watermarks with text effects to Word docume
 weight: 21
 url: /net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---
+
+# Add Watermark with Text Effects in Word Docs
+
 ## Introduction
 In this tutorial, we'll explore how to add a watermark with text effects to Word documents using GroupDocs.Watermark for .NET. By following these step-by-step instructions, you'll be able to enhance your documents with customized watermarks that include various text effects.
 ## Prerequisites

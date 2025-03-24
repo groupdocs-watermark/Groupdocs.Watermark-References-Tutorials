@@ -6,6 +6,9 @@ description: Aprenda como adicionar marcas d'água a documentos usando GroupDocs
 weight: 11
 url: /pt/net/document-loadings/load-document-from-stream/
 ---
+
+# Carregar documento do stream
+
 ## Introdução
 Você deseja adicionar marcas d'água aos seus documentos de maneira integrada usando .NET? Não procure mais! GroupDocs.Watermark for .NET é uma biblioteca poderosa e fácil de usar que permite gerenciar marcas d’água em vários formatos de documentos. Esteja você trabalhando com PDFs, documentos do Word ou imagens, esta ferramenta tem o que você precisa. Neste tutorial, orientaremos você no processo de carregamento de um documento de um fluxo e adição de uma marca d’água passo a passo. Então, vamos mergulhar de cabeça!
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till en låst vattenstämpel i ett specifik
 weight: 13
 url: /sv/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Lägg till låst vattenstämpel till avsnitt i Word Docs
+
 ## Introduktion
 Letar du efter ett effektivt sätt att lägga till en låst vattenstämpel till ett avsnitt i dina Word-dokument? Kolla inte vidare! Med Groupdocs.Watermark for .NET kan du sömlöst infoga vattenstämplar i Word-dokument samtidigt som du säkerställer att de förblir låsta och manipuleringssäkra. Detta kraftfulla verktyg erbjuder en mängd olika funktioner för att tillgodose dina behov av vattenmärkning, oavsett om det är för varumärkes-, konfidentialitets- eller säkerhetsändamål. I denna steg-för-steg handledning går vi igenom hur du lägger till en låst vattenstämpel till en specifik del av ett Word-dokument med hjälp av Groupdocs.Watermark for .NET. Låt oss dyka in!
 ## Förutsättningar

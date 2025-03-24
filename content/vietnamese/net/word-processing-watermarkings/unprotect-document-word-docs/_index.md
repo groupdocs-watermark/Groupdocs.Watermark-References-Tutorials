@@ -6,6 +6,9 @@ description: Tìm hiểu cách dễ dàng bỏ bảo vệ tài liệu Word bằn
 weight: 38
 url: /vi/net/word-processing-watermarkings/unprotect-document-word-docs/
 ---
+
+# Bỏ bảo vệ tài liệu trong Word Docs
+
 ## Giới thiệu
 GroupDocs.Watermark cho .NET là một API mạnh mẽ cho phép các nhà phát triển làm việc với hình mờ ở nhiều định dạng tài liệu khác nhau, bao gồm cả tài liệu Word. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình bỏ bảo vệ tài liệu Word bằng GroupDocs.Watermark cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu phát triển .NET, hướng dẫn từng bước này sẽ giúp bạn hoàn thành nhiệm vụ một cách hiệu quả.
 ## Điều kiện tiên quyết

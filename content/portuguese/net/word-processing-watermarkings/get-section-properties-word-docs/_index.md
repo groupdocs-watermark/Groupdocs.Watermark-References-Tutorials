@@ -6,6 +6,9 @@ description: Aprenda como extrair propriedades de seção de documentos do Word 
 weight: 23
 url: /pt/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# Obtenha propriedades de seção em documentos do Word
+
 ## Introdução
 No domínio da gestão e manipulação de documentos, Groupdocs.Watermark for .NET destaca-se como uma ferramenta versátil e robusta. Perfeitamente integrada à estrutura .NET, esta biblioteca permite que os desenvolvedores manipulem marcas d'água, anotações e propriedades de documentos sem esforço. Neste tutorial, nos aprofundaremos em um de seus principais recursos: extrair propriedades de seção de documentos do Word. Acompanhe enquanto detalhamos o processo passo a passo, revelando o potencial do Groupdocs.Watermark para .NET.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: Tìm hiểu cách bảo vệ tài liệu Word bằng GroupDocs.Wate
 weight: 28
 url: /vi/net/word-processing-watermarkings/protect-document-word-docs/
 ---
+
+# Bảo vệ tài liệu trong Word Docs
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình bảo vệ tài liệu trong Tài liệu Word bằng GroupDocs.Watermark cho .NET. Bằng cách làm theo các bước này, bạn sẽ có thể thêm một lớp bảo mật cho tài liệu Word của mình, ngăn chặn việc truy cập và sửa đổi trái phép.
 ## Điều kiện tiên quyết

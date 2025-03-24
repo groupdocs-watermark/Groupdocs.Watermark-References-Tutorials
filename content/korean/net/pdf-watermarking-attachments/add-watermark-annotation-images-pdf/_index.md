@@ -6,6 +6,9 @@ description: .NET용 Groupdocs.Watermark를 사용하여 주석 이미지에 워
 weight: 17
 url: /ko/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# PDF의 주석 이미지에 워터마크 추가
+
 ## 소개
 이 튜토리얼에서는 .NET용 Groupdocs.Watermark를 사용하여 PDF 문서의 주석 이미지에 워터마크를 추가하는 방법을 살펴보겠습니다. 워터마킹은 문서를 무단 사용이나 배포로부터 보호하는 데 중요합니다. 이 단계별 가이드를 따르면 PDF의 주석 이미지에 텍스트 워터마크를 효과적으로 적용하는 방법을 배울 수 있습니다.
 ## 전제조건

@@ -6,6 +6,9 @@ description: Learn how to add watermarks to documents using GroupDocs.Watermark 
 weight: 11
 url: /net/document-loadings/load-document-from-stream/
 ---
+
+# Load Document from Stream
+
 ## Introduction
 Are you looking to add watermarks to your documents seamlessly using .NET? Look no further! GroupDocs.Watermark for .NET is a powerful and easy-to-use library that allows you to manage watermarks in various document formats. Whether you're working with PDFs, Word documents, or images, this tool has got you covered. In this tutorial, we’ll walk you through the process of loading a document from a stream and adding a watermark step by step. So, let’s dive right in!
 ## Prerequisites

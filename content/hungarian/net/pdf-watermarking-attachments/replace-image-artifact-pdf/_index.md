@@ -6,6 +6,9 @@ description: Ezzel az átfogó, lépésenkénti oktatóanyaggal megtudhatja, hog
 weight: 38
 url: /hu/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# Cserélje le a képet egy adott műtermékre a PDF-ben
+
 ## Bevezetés
 A vízjelek hozzáadása a dokumentumokhoz elengedhetetlen gyakorlat a dokumentumbiztonság, a márkajelzés és a szerzői jogvédelem biztosításához. Ha szeretne elmélyülni a dokumentumok vízjeleinek világában a GroupDocs.Watermark for .NET használatával, akkor jó helyen jár. Ez az útmutató végigvezeti a PDF-dokumentumban lévő képek cseréjének folyamatán a GroupDocs.Watermark könyvtár használatával. Kezdjük el!
 ## Előfeltételek

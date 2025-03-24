@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 輕鬆取消 Word �
 weight: 38
 url: /zh-hant/net/word-processing-watermarkings/unprotect-document-word-docs/
 ---
+
+# 取消保護 Word 文件中的文檔
+
 ## 介紹
 GroupDocs.Watermark for .NET 是一個功能強大的 API，可讓開發人員使用各種文件格式（包括 Word 文件）的浮水印。在本教學中，我們將引導您完成使用 GroupDocs.Watermark for .NET 取消保護 Word 文件的流程。無論您是經驗豐富的開發人員還是剛開始 .NET 開發，本逐步指南都將幫助您有效率地完成任務。
 ## 先決條件

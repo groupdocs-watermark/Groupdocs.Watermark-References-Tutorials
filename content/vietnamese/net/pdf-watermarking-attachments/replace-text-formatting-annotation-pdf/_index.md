@@ -6,6 +6,9 @@ description: Tăng cường bảo mật tài liệu với GroupDocs cho .NET. T�
 weight: 41
 url: /vi/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---
+
+# Thay thế văn bản bằng định dạng cho chú thích trong PDF
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc bảo vệ thông tin nhạy cảm và sở hữu trí tuệ là điều tối quan trọng. Cho dù bạn là chuyên gia pháp lý, một tổ chức doanh nghiệp hay một cá nhân quản lý các tài liệu quan trọng thì việc bảo vệ khỏi sự truy cập và phân phối trái phép là điều bắt buộc. GroupDocs.Watermark cho .NET nổi lên như một công cụ mạnh mẽ trong lĩnh vực này, cung cấp các chức năng toàn diện để thêm, tìm kiếm và xóa hình mờ khỏi các định dạng tài liệu khác nhau như PDF, Word, Excel, PowerPoint và hình ảnh. Trong hướng dẫn này, chúng ta sẽ đi sâu vào sự phức tạp của việc thay thế văn bản bằng định dạng cho chú thích trong tệp PDF bằng GroupDocs.Watermark cho .NET.
 ## Điều kiện tiên quyết

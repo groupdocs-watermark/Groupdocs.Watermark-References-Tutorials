@@ -6,6 +6,9 @@ description: Explorez les didacticiels GroupDocs.Watermark pour .NET sur le fili
 weight: 25
 url: /fr/net/pdf-watermarking-attachments/
 ---
+
+# Filigrane et pièce jointe PDF
+
 ## Introduction
 
 Vous cherchez à améliorer vos PDF avec des filigranes et à gérer efficacement les pièces jointes ? GroupDocs.Watermark for .NET propose une suite complète de didacticiels pour vous aider à maîtriser ces tâches. Que vous soyez débutant ou développeur expérimenté, nos guides étape par étape rendent le processus simple et efficace. Explorons quelques didacticiels essentiels pour vous aider à améliorer vos documents PDF.

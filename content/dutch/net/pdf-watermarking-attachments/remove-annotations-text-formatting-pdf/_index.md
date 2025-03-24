@@ -6,6 +6,9 @@ description: Leer hoe u annotaties met specifieke tekstopmaak in PDF-documenten 
 weight: 30
 url: /nl/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# Verwijder annotaties met specifieke tekstopmaak in PDF
+
 ## Invoering
 In deze zelfstudie begeleiden we u bij het verwijderen van annotaties met specifieke tekstopmaak in een PDF-document met Groupdocs.Watermark voor .NET. Deze bibliotheek biedt krachtige functies voor het werken met watermerken, annotaties en andere documentelementen in verschillende formaten.
 ## Vereisten

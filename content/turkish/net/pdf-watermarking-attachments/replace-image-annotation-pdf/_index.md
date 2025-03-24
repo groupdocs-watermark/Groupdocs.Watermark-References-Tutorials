@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak belirli PDF ek açıklama
 weight: 37
 url: /tr/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
+
+# PDF'deki Belirli Açıklamalar İçin Görüntüyü Değiştir
+
 ## giriiş
 PDF belgelerindeki belirli ek açıklamalar içindeki görüntüleri değiştirmek için GroupDocs.Watermark for .NET'in kullanımına ilişkin bu kapsamlı kılavuza hoş geldiniz. İster PDF işleme yeteneklerinizi geliştirmek isteyen bir geliştirici olun, ister yalnızca filigranlamanın inceliklerini merak ediyor olun, bu eğitim sizi ilgilendirecektir. Sonunda, PDF ek açıklamalarındaki görüntüleri özel olanlarla sorunsuz bir şekilde değiştirebilecek ve belge işleme iş akışlarınızı optimize edebileceksiniz.
 ## Önkoşullar

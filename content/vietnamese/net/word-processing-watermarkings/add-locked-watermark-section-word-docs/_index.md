@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ bị khóa vào một phần c�
 weight: 13
 url: /vi/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Thêm Hình mờ đã khóa vào Phần trong Tài liệu Word
+
 ## Giới thiệu
 Bạn đang tìm kiếm một cách hiệu quả để thêm hình mờ bị khóa vào một phần trong tài liệu Word của mình? Đừng tìm đâu xa! Với Groupdocs.Watermark dành cho .NET, bạn có thể chèn hình mờ vào tài liệu Word một cách liền mạch mà vẫn đảm bảo chúng vẫn bị khóa và chống giả mạo. Công cụ mạnh mẽ này cung cấp nhiều tính năng khác nhau để đáp ứng nhu cầu tạo hình mờ của bạn, cho dù mục đích xây dựng thương hiệu, bảo mật hay bảo mật. Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn cách thêm hình mờ bị khóa vào một phần cụ thể của tài liệu Word bằng Groupdocs.Watermark cho .NET. Hãy đi sâu vào!
 ## Điều kiện tiên quyết

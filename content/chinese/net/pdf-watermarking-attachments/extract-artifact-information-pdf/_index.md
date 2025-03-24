@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 从 PDF 文件中�
 weight: 24
 url: /zh/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# 从 PDF 中提取工件信息
+
 ## 介绍
 PDF 文档通常包含嵌入各种工件（例如图像、文本和形状）中的有价值的信息。提取此信息对于从数据分析到内容管理的许多应用程序至关重要。在本教程中，我们将探讨如何使用 GroupDocs.Watermark for .NET 从 PDF 文件中提取工件信息，这是一个功能强大的 .NET 库，专为添加水印、搜索和操作 PDF 文档而设计。
 ## 先决条件

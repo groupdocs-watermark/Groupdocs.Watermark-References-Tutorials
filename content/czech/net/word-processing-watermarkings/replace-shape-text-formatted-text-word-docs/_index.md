@@ -6,6 +6,9 @@ description: Naučte se, jak nahradit text tvaru formátovaným textem v dokumen
 weight: 34
 url: /cs/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Nahraďte text tvaru formátovaným textem v dokumentech aplikace Word
+
 ## Úvod
 tomto tutoriálu vás provedeme procesem nahrazení textu tvaru formátovaným textem v dokumentech aplikace Word pomocí GroupDocs.Watermark for .NET. Tato knihovna poskytuje výkonné funkce pro práci s vodoznaky, včetně nahrazování textu v rámci tvarů.
 ## Předpoklady

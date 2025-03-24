@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs for .NET 刪除 PDF 文件中具有特
 weight: 30
 url: /zh-hant/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# 刪除 PDF 中具有特定文字格式的註釋
+
 ## 介紹
 在本教學中，我們將引導您完成使用 Groupdocs.Watermark for .NET 刪除 PDF 文件中具有特定文字格式的註解的過程。該庫提供了強大的功能來處理各種格式的浮水印、註釋和其他文件元素。
 ## 先決條件

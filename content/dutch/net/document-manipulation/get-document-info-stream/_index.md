@@ -6,6 +6,9 @@ description: Leer met deze stapsgewijze handleiding hoe u documentinformatie uit
 weight: 12
 url: /nl/net/document-manipulation/get-document-info-stream/
 ---
+
+# Documentinformatie ophalen uit Stream
+
 ## Invoering
 In het huidige digitale tijdperk is het beschermen en beheren van documentintegriteit cruciaal. Of u nu een zakelijke professional, een ontwikkelaar of iemand bent die met gevoelige informatie omgaat, de noodzaak om watermerken in uw documenten toe te voegen, te extraheren of te manipuleren is essentieel. GroupDocs.Watermark voor .NET biedt een krachtige toolkit waarmee u precies dat kunt bereiken. Dit artikel begeleidt u bij het gebruik van GroupDocs.Watermark voor .NET om documentinformatie uit een stream op te halen, en biedt een stapsgewijze zelfstudie om u op weg te helpen bij het proces. Tegen het einde zult u bedreven zijn in het gebruik van deze functie om uw mogelijkheden voor documentbeheer te verbeteren.
 ## Vereisten

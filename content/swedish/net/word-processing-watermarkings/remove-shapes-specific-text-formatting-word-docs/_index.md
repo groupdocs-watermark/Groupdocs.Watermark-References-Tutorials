@@ -6,6 +6,9 @@ description: Lär dig hur du tar bort former med specifik textformatering i Word
 weight: 31
 url: /sv/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---
+
+# Ta bort former med specifik textformatering i Word Docs
+
 ## Introduktion
 GroupDocs.Watermark for .NET är ett kraftfullt API som tillåter utvecklare att manipulera vattenstämplar i olika dokumentformat programmatiskt. I den här handledningen kommer vi att fokusera på att ta bort former med specifik textformatering i Word-dokument med hjälp av GroupDocs.Watermark för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat, hjälper den här steg-för-steg-guiden dig att förstå processen för att ta bort former effektivt och effektivt.
 ## Förutsättningar

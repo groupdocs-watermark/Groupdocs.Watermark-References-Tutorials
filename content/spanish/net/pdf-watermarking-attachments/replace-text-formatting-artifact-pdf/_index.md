@@ -6,6 +6,9 @@ description: Aprenda a reemplazar texto con formato para artefactos en documento
 weight: 43
 url: /es/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---
+
+# Reemplazar texto con formato para artefacto en PDF
+
 ## Introducción
 En el ámbito del desarrollo .NET, la gestión de artefactos y documentos con marcas de agua suele ser una tarea crucial. Afortunadamente, con GroupDocs.Watermark para .NET, los desarrolladores tienen a su disposición un potente conjunto de herramientas para integrar perfectamente las funciones de gestión de artefactos y marcas de agua en sus aplicaciones. En este completo tutorial, profundizaremos en el proceso de reemplazar texto con formato para artefactos en documentos PDF usando GroupDocs.Watermark para .NET.
 ## Requisitos previos

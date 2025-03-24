@@ -6,6 +6,9 @@ description: Bu kapsamlı, adım adım eğitimle GroupDocs.Watermark for .NET'i 
 weight: 38
 url: /tr/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# PDF'deki Belirli Yapının Görüntüsünü Değiştir
+
 ## giriiş
 Belgelere filigran eklemek, belge güvenliğini, markalamayı ve telif hakkı korumasını sağlamak için önemli bir uygulamadır. GroupDocs.Watermark for .NET'i kullanarak belge filigranlama dünyasını keşfetmek istiyorsanız doğru yerdesiniz. Bu kılavuz, GroupDocs.Watermark kitaplığını kullanarak bir PDF belgesindeki görüntüleri değiştirme sürecinde size yol gösterecektir. Başlayalım!
 ## Önkoşullar

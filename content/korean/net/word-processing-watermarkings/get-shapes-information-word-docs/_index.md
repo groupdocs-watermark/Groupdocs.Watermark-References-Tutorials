@@ -6,6 +6,9 @@ description: GroupDocs for .NET을 사용하면 Word 문서에서 귀중한 통�
 weight: 24
 url: /ko/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# Word Docs에서 도형 정보 가져오기
+
 ## 소개
 데이터가 왕인 디지털 환경에서는 문서에서 의미 있는 통찰력을 추출하는 것이 무엇보다 중요합니다. .NET용 GroupDocs.Watermark는 개발자가 문서 구조를 자세히 살펴보고 귀중한 정보를 손쉽게 추출할 수 있도록 지원합니다. 이 튜토리얼에서는 이 강력한 도구를 활용하여 Word 문서에서 모양 정보를 얻는 방법을 단계별로 살펴보겠습니다.
 ## 전제조건

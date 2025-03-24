@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan távolíthat el megjegyzéseket PDF-fájlokból
 weight: 29
 url: /hu/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---
+
+# Annotáció eltávolítása a PDF-ből
+
 ## Bevezetés
 A PDF-dokumentumokban található megjegyzések néha összezavarhatják a tartalmat, vagy zavarhatják a dokumentum olvashatóságát. A GroupDocs.Watermark for .NET segítségével könnyedén eltávolíthatja a megjegyzéseket a PDF-fájlokból. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a folyamaton.
 ## Előfeltételek

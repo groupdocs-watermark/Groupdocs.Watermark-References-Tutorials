@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać znaki wodne do obrazów w dokumentach PD
 weight: 19
 url: /pl/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# Dodaj znak wodny do obrazów w formacie PDF
+
 ## Wstęp
 Dodawanie znaków wodnych do obrazów w dokumencie PDF może mieć kluczowe znaczenie dla ochrony własności intelektualnej lub zapewnienia autentyczności dokumentów. Korzystając z GroupDocs.Watermark dla .NET, zadanie to można wykonać sprawnie i łatwo. Ten samouczek przeprowadzi Cię przez każdy etap procesu, od skonfigurowania środowiska, przez dodanie znaków wodnych, aż po zapisanie ostatecznego dokumentu. Zanurzmy się!
 ## Warunki wstępne

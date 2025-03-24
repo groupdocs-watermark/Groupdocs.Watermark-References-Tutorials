@@ -6,6 +6,9 @@ description: 通过我们全面的分步指南，使用 GroupDocs.Watermark for 
 weight: 14
 url: /zh/net/document-loadings/load-password-protected-word-document/
 ---
+
+# 加载受密码保护的Word文档
+
 ## 介绍
 在数字时代，保护和验证您的文档比以往任何时候都更加重要。水印是保护文件的强大技术，使用 GroupDocs.Watermark for .NET，您可以轻松做到这一点。这份综合指南将引导您完成对受密码保护的 Word 文档添加水印的过程，分解每个步骤以确保您理解并能够轻松实施。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Részletes, lépésenkénti oktatóanyagunkból megtudhatja, hogyan
 weight: 11
 url: /hu/net/image-watermarkings/add-image-watermark/
 ---
+
+# Kép hozzáadása vízjelhez
+
 ## Bevezetés
 Üdvözöljük ebben az átfogó útmutatóban a képvízjelek GroupDocs.Watermark for .NET használatával történő hozzáadásával kapcsolatban! A vízjelezés hatékony módja annak, hogy megvédje dokumentumait és képeit az illetéktelen használattól, így biztosítva, hogy szellemi tulajdona biztonságban maradjon. Ebben az oktatóanyagban végigvezetjük a teljes folyamaton, a környezet beállításától a vízjel alkalmazásáig a dokumentumokon. Akár tapasztalt fejlesztő, akár csak most kezdi, ezt az útmutatót hasznosnak és könnyen követhetőnek találja.
 ## Előfeltételek

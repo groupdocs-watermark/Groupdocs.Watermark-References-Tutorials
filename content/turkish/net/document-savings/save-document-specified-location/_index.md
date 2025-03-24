@@ -6,6 +6,9 @@ description: Bu adım adım kılavuzla GroupDocs.Watermark for .NET'i kullanarak
 weight: 11
 url: /tr/net/document-savings/save-document-specified-location/
 ---
+
+# Belgeyi Belirtilen Konuma Kaydet
+
 ## giriiş
 Dijital çağda belgelerin güvenliği her zamankinden daha önemli hale geldi. Filigranlama, belgelerinizi yetkisiz kullanıma karşı korumanın etkili bir yoludur. GroupDocs.Watermark for .NET, belgelerinize filigran eklemek için güçlü bir çözüm sunar. İster uygulamanıza filigran eklemeyi entegre etmek isteyen bir geliştirici olun, ister belgelerinizi korumakla ilgilenen biri olun, bu eğitim size süreç boyunca adım adım rehberlik edecektir.
 ## Önkoşullar

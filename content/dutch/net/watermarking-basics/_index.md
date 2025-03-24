@@ -6,6 +6,9 @@ description: Ontdek GroupDocs.Watermark voor .NET-tutorials om moeiteloos afbeel
 weight: 20
 url: /nl/net/watermarking-basics/
 ---
+
+# Basisprincipes van watermerken
+
 ## Invoering
 Watermerken zijn een cruciale techniek om uw documenten te beschermen en uw eigendom te laten gelden. GroupDocs.Watermark voor .NET vereenvoudigt dit proces en biedt robuuste tools voor het toevoegen van zowel afbeeldings- als tekstwatermerken. Of u nu nieuw bent op het gebied van watermerken of uw vaardigheden wilt verbeteren, deze tutorials leiden u door de basisprincipes.
 

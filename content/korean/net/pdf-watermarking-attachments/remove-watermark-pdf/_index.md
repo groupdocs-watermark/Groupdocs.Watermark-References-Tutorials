@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 PDF 파일에서 워터
 weight: 34
 url: /ko/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---
+
+# PDF에서 워터마크 제거
+
 ## 소개
 오늘날 디지털 시대에는 민감한 문서를 워터마크로 보호하는 것이 일반적인 관행입니다. 그러나 다양한 이유로 PDF 파일에서 워터마크를 제거해야 하는 경우가 있습니다. 문서를 편집하거나 단순히 프리젠테이션을 위한 클린 버전이 필요한 경우 .NET용 GroupDocs.Watermark는 PDF 파일에서 워터마크를 제거하기 위한 완벽한 솔루션을 제공합니다.
 ## 전제조건

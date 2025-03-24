@@ -6,6 +6,9 @@ description: Dễ dàng thêm hình mờ vào tất cả các tiêu đề trong 
 weight: 10
 url: /vi/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# Thêm hình mờ hình ảnh vào tất cả tiêu đề trong tài liệu Word
+
 ## Giới thiệu
 Hình mờ có thể là một phần thiết yếu trong quản lý tài liệu, cung cấp cách nhúng thông tin như quyền sở hữu, tính bảo mật hoặc thương hiệu vào tài liệu. Trong hướng dẫn này, chúng ta sẽ thực hiện các bước để thêm hình mờ hình ảnh vào tất cả các tiêu đề trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Cho dù bạn là người mới bắt đầu lập trình hay là nhà phát triển có kinh nghiệm, hướng dẫn này sẽ giúp bạn đạt được mục tiêu tạo hình mờ một cách dễ dàng.
 ## Điều kiện tiên quyết

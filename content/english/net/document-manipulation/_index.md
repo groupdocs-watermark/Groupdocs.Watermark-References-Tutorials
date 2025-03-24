@@ -6,6 +6,9 @@ description: Explore GroupDocs.Watermark for .NET tutorials on generating docume
 weight: 21
 url: /net/document-manipulation/
 ---
+
+# Document Manipulation
+
 ## Introduction
 
 Looking to take your document management skills to the next level? GroupDocs.Watermark for .NET has got you covered. With our in-depth tutorials, you'll learn how to generate document previews, manage watermarks, and more. Let's dive into some key tutorials that will help you get the most out of this powerful tool.

@@ -6,6 +6,9 @@ description: Leer hoe u kop- en voetteksten binnen secties van Word-documenten e
 weight: 26
 url: /nl/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Koppel kop-/voettekst in sectie in Word-documenten
+
 ## Invoering
 In de wereld van .NET-ontwikkeling kan het beheren van watermerken in Word-documenten een cruciale taak zijn, of u nu gevoelige informatie beschermt of merkelementen toevoegt. Gelukkig biedt GroupDocs.Watermark voor .NET een krachtige oplossing om efficiënt met watermerken om te gaan. In deze zelfstudie onderzoeken we hoe u kop- en voetteksten in secties van Word-documenten kunt koppelen met GroupDocs.Watermark.
 ## Vereisten

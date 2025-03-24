@@ -6,6 +6,9 @@ description: Lär dig hur du ersätter formtext med formaterad text i Word-dokum
 weight: 34
 url: /sv/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Ersätt formtext med formaterad text i Word Docs
+
 ## Introduktion
 den här självstudien guidar vi dig genom processen att ersätta formtext med formaterad text i Word-dokument med hjälp av GroupDocs.Watermark för .NET. Det här biblioteket ger kraftfulla funktioner för att arbeta med vattenstämplar, inklusive att ersätta text i former.
 ## Förutsättningar

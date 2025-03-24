@@ -6,6 +6,9 @@ description: Groupdocs'u kullanarak PDF'lerdeki belirli sayfalara metin ve resim
 weight: 15
 url: /tr/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# PDF'deki Belirli Sayfalara Filigran Ekleme
+
 ## giriiş
 PDF belgelerinize filigran eklemek, içeriğinizi korumak ve sahipliğinizi iddia etmek için çok önemli bir adımdır. İster bir taslağı işaretliyor, ister hassas bilgileri güvence altına alıyor, ister yalnızca markalama ekliyor olun, filigranlar etkili bir araçtır. Bu öğreticide, PDF dosyalarınızdaki belirli sayfalara hem metin hem de resim filigranları eklemek için Groupdocs.Watermark for .NET'in nasıl kullanılacağını keşfedeceğiz. Süreci yönetilebilir adımlara bölerek bu özellikleri takip edebilmenizi ve projelerinizde uygulayabilmenizi sağlayacağız.
 ## Önkoşullar

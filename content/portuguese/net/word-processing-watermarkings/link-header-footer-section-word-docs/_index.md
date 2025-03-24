@@ -6,6 +6,9 @@ description: Aprenda como vincular cabeçalhos e rodapés com eficiência em se�
 weight: 26
 url: /pt/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Vincular cabeçalho/rodapé na seção em documentos do Word
+
 ## Introdução
 No mundo do desenvolvimento .NET, o gerenciamento de marcas d'água em documentos do Word pode ser uma tarefa crucial, seja para proteger informações confidenciais ou adicionar elementos de marca. Felizmente, GroupDocs.Watermark for .NET oferece uma solução poderosa para lidar com marcas d’água de maneira eficiente. Neste tutorial, exploraremos como vincular cabeçalhos e rodapés em seções de documentos do Word usando GroupDocs.Watermark.
 ## Pré-requisitos

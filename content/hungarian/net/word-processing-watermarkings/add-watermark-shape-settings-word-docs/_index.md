@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat hozzá vízjeleket alakbeállításokkal 
 weight: 20
 url: /hu/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Adjon hozzá vízjelet az alakbeállításokkal a Word Dokumentumokban
+
 ## Bevezetés
 Ebben az oktatóanyagban a GroupDocs.Watermark for .NET használatával vízjel alakbeállításokkal történő hozzáadásának folyamatát mutatjuk be Word-dokumentumokhoz.
 ## Előfeltételek

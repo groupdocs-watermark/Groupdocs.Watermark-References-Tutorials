@@ -6,6 +6,9 @@ description: Learn how to easily add watermarks to your documents using GroupDoc
 weight: 11
 url: /net/document-savings/save-document-specified-location/
 ---
+
+# Save Document to Specified Location
+
 ## Introduction
 In the digital age, securing documents has become more crucial than ever. Watermarking is an effective way to protect your documents from unauthorized use. GroupDocs.Watermark for .NET offers a robust solution for adding watermarks to your documents. Whether you're a developer looking to integrate watermarking into your application or someone interested in safeguarding your documents, this tutorial will guide you through the process step-by-step.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Beveilig uw documenten door vergrendelde watermerken toe te voegen 
 weight: 11
 url: /nl/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Voeg een vergrendeld watermerk toe aan alle pagina's in Word-documenten
+
 ## Invoering
 Het toevoegen van watermerken aan uw documenten is een essentiële stap bij het beveiligen en brandmerken van uw inhoud. Of u nu ongeoorloofd gebruik voorkomt of gewoon een professioneel tintje toevoegt, watermerken kunnen meerdere doeleinden dienen. In deze zelfstudie leiden we u door het proces van het toevoegen van een vergrendeld watermerk aan alle pagina's van een Word-document met Groupdocs.Watermark voor .NET.
 ## Vereisten

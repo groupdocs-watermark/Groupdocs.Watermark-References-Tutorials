@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać znaki wodne z efektami graficznymi do do
 weight: 19
 url: /pl/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---
+
+# Dodaj znak wodny z efektami graficznymi w dokumentach programu Word
+
 ## Wstęp
 Czy chcesz dodać trochę pikanterii swoim dokumentom programu Word za pomocą przyciągających wzrok znaków wodnych? GroupDocs.Watermark dla .NET pomoże Ci! Ten obszerny przewodnik przeprowadzi Cię przez proces dodawania znaków wodnych z oszałamiającymi efektami graficznymi do dokumentów programu Word za pomocą programu GroupDocs dla .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy początkującym, ten samouczek krok po kroku sprawi, że proces ten będzie dziecinnie prosty.
 ## Warunki wstępne

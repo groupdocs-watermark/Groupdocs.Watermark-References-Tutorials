@@ -6,6 +6,9 @@ description: Tìm hiểu cách thay thế văn bản hình dạng bằng văn b�
 weight: 34
 url: /vi/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Thay thế văn bản hình dạng bằng văn bản được định dạng trong tài liệu Word
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình thay thế văn bản hình dạng bằng văn bản được định dạng trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Thư viện này cung cấp các tính năng mạnh mẽ để làm việc với hình mờ, bao gồm thay thế văn bản trong hình dạng.
 ## Điều kiện tiên quyết

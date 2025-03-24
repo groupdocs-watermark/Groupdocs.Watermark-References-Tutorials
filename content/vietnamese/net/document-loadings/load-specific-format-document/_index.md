@@ -6,6 +6,9 @@ description: Tìm hiểu cách tải và tạo hình mờ cho tài liệu bằng
 weight: 12
 url: /vi/net/document-loadings/load-specific-format-document/
 ---
+
+# Tải tài liệu có định dạng cụ thể
+
 ## Giới thiệu
 Thêm hình mờ vào tài liệu là một nhiệm vụ quan trọng để đảm bảo bảo vệ nội dung và xây dựng thương hiệu. Groupdocs.Watermark cho .NET là một công cụ linh hoạt và mạnh mẽ giúp đơn giản hóa quá trình này. Cho dù bạn đang xử lý tài liệu văn bản, bảng tính, bản trình bày hay hình ảnh, hướng dẫn này sẽ hướng dẫn bạn các bước để tải và tạo hình mờ cho các tài liệu có định dạng cụ thể bằng Groupdocs.Watermark cho .NET.
 ## Điều kiện tiên quyết

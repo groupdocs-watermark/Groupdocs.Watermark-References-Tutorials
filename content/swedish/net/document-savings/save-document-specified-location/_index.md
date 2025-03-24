@@ -6,6 +6,9 @@ description: Lär dig hur du enkelt lägger till vattenstämplar i dina dokument
 weight: 11
 url: /sv/net/document-savings/save-document-specified-location/
 ---
+
+# Spara dokument till angiven plats
+
 ## Introduktion
 I den digitala tidsåldern har säkra dokument blivit mer avgörande än någonsin. Vattenmärkning är ett effektivt sätt att skydda dina dokument från obehörig användning. GroupDocs.Watermark för .NET erbjuder en robust lösning för att lägga till vattenstämplar i dina dokument. Oavsett om du är en utvecklare som vill integrera vattenmärkning i din applikation eller någon som är intresserad av att skydda dina dokument, kommer den här handledningen att guida dig genom processen steg-för-steg.
 ## Förutsättningar

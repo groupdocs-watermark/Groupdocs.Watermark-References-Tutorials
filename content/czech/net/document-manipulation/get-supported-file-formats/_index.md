@@ -6,6 +6,9 @@ description: Bez námahy přidejte vodoznaky do svých dokumentů pomocí GroupD
 weight: 13
 url: /cs/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Získejte podporované formáty souborů
+
 ## Úvod
 Vodoznak vašich dokumentů je zásadním krokem k ochraně vašich digitálních aktiv. Vodoznaky hrají zásadní roli, ať už jde o ochranu duševního vlastnictví, zajištění důvěrnosti nebo jednoduše o branding. Pokud jste vývojář .NET a chcete do svých aplikací integrovat možnosti vodoznaku, GroupDocs.Watermark for .NET je výkonný a všestranný nástroj, který byste měli zvážit. Tento tutoriál vás provede základy používání GroupDocs.Watermark, od instalace až po použití prvního vodoznaku, přičemž rozepíše každý krok, abyste se ujistili, že jej budete moci snadno sledovat.
 ## Předpoklady

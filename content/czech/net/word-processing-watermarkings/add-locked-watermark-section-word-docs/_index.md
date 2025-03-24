@@ -6,6 +6,9 @@ description: Naučte se, jak přidat zamčený vodoznak do konkrétní části v
 weight: 13
 url: /cs/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Přidejte zamčený vodoznak do sekce v Dokumentech aplikace Word
+
 ## Úvod
 Hledáte efektivní způsob, jak přidat zamčený vodoznak do sekce v dokumentech aplikace Word? Už nehledejte! S Groupdocs.Watermark for .NET můžete plynule vkládat vodoznaky do dokumentů aplikace Word a přitom zajistit, aby zůstaly uzamčené a odolné proti neoprávněné manipulaci. Tento výkonný nástroj nabízí řadu funkcí, které uspokojí vaše potřeby v oblasti vodoznaků, ať už pro účely brandingu, důvěrnosti nebo zabezpečení. V tomto podrobném tutoriálu vás provedeme přidáním zamčeného vodoznaku do konkrétní části dokumentu aplikace Word pomocí Groupdocs.Watermark for .NET. Pojďme se ponořit!
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Lär dig hur du ersätter bilder i PDF-dokument med GroupDocs.Water
 weight: 38
 url: /sv/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# Ersätt bild för specifik artefakt i PDF
+
 ## Introduktion
 Att lägga till vattenstämplar i dokument är en viktig praxis för att säkerställa dokumentsäkerhet, varumärke och upphovsrättsskydd. Om du vill fördjupa dig i dokumentvattenmärkningens värld med GroupDocs.Watermark för .NET, är du på rätt plats. Den här guiden leder dig genom processen att ersätta bilder i ett PDF-dokument med hjälp av biblioteket GroupDocs.Watermark. Låt oss börja!
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Learn how to generate document previews using GroupDocs.Watermark f
 weight: 10
 url: /net/document-manipulation/generate-document-preview/
 ---
+
+# Generate Document Preview
+
 ## Introduction
 In the world of digital document management, watermarking plays a crucial role in ensuring the security and authenticity of documents. GroupDocs.Watermark for .NET is a powerful tool that allows developers to add watermarks to documents effortlessly. In this tutorial, we will walk you through the process of generating document previews using GroupDocs.Watermark for .NET. Whether you're a seasoned developer or just getting started, this guide will provide you with a comprehensive step-by-step process to achieve your goal.
 ## Prerequisites

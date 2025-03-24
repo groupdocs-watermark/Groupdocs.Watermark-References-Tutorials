@@ -6,6 +6,9 @@ description: Amankan dokumen Anda dengan menambahkan tanda air terkunci mengguna
 weight: 11
 url: /id/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Tambahkan Tanda Air Terkunci ke Semua Halaman di Dokumen Word
+
 ## Perkenalan
 Menambahkan tanda air ke dokumen Anda adalah langkah penting dalam mengamankan dan memberi merek pada konten Anda. Baik Anda mencegah penggunaan tidak sah atau sekadar menambahkan sentuhan profesional, tanda air dapat memiliki banyak tujuan. Dalam tutorial ini, kami akan memandu Anda melalui proses menambahkan tanda air terkunci ke semua halaman dokumen Word menggunakan Groupdocs.Watermark untuk .NET.
 ## Prasyarat

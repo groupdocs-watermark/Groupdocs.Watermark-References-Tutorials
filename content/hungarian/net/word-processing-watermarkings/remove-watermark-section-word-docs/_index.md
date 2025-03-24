@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan távolíthat el vízjeleket a Word-dokumentumok
 weight: 32
 url: /hu/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# Távolítsa el a vízjelet a Word Dokumentumok szakaszából
+
 ## Bevezetés
 digitális korban a dokumentumok sértetlenségének védelme a legfontosabb, különösen, ha érzékeny információkról vagy védett tartalomról van szó. A vízjelezés egy gyakran használt technika a tulajdonjog, a márkaidentitás erősítésére vagy egyszerűen egy dokumentum állapotának jelzésére. Vannak azonban olyan esetek, amikor a vízjelek eltávolítása szükségessé válik, akár szerkesztési követelmények, akár adatvédelmi aggályok miatt.
 ## Előfeltételek

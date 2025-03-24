@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 将平铺图像水�
 weight: 10
 url: /zh/net/image-watermarkings/add-tiled-image-watermark/
 ---
+
+# 添加平铺图像水印
+
 ## 介绍
 GroupDocs.Watermark for .NET 是一个功能强大的 API，允许开发人员以编程方式添加、删除和搜索各种文档格式的水印。在本教程中，我们将指导您完成使用 GroupDocs.Watermark for .NET 将平铺图像水印添加到文档的过程。
 ## 先决条件

@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 輕鬆連結 Word 文件中的�
 weight: 25
 url: /zh-hant/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# 連結 Word 文件中節中的所有頁首/頁腳
+
 ## 介紹
 使用 Word 文件時，通常需要連結不同部分的頁首和頁尾以保持一致性和連貫性。本教學將指導您使用 GroupDocs.Watermark for .NET 逐步完成流程。
 ## 導入命名空間

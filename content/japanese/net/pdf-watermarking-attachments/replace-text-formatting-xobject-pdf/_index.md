@@ -6,6 +6,9 @@ description: GroupDocs for .NET を使用して .NET ドキュメントの操作
 weight: 45
 url: /ja/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---
+
+# PDF 内の XObject の書式設定でテキストを置換
+
 ## 導入
 ドキュメントの操作と管理の分野では、GroupDocs.Watermark for .NET は、さまざまなドキュメント形式内のウォーターマーク、テキスト、画像を操作しようとする .NET 開発者にとって堅牢なソリューションとして際立っています。このチュートリアルでは、その強力な機能の 1 つである、PDF 内の XObject の書式設定によるテキストの置換について詳しく説明します。このガイドを終えると、この機能を .NET アプリケーションにシームレスに統合できるようになります。
 ## 前提条件

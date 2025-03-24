@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET unterschied
 weight: 36
 url: /de/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Legen Sie in Word-Dokumenten eine andere Kopf-/Fußzeile für die erste Seite fest
+
 ## Einführung
 Im Bereich der Dokumentenverwaltung und -bearbeitung erweist sich GroupDocs.Watermark für .NET als leistungsstarkes Tool, das eine nahtlose Integration und robuste Funktionen zum Markieren von Dokumenten mit Wasserzeichen bietet. Eine der häufigsten Anforderungen bei der Dokumentenverarbeitung besteht darin, auf der ersten Seite von Word-Dokumenten unterschiedliche Kopf- und Fußzeilen festzulegen. In diesem Tutorial wird der Prozess zum Erreichen dieser Aufgabe mit GroupDocs.Watermark für .NET erläutert und jeder Schritt in leicht verständliche Segmente unterteilt.
 ## Voraussetzungen

@@ -6,6 +6,9 @@ description: Pelajari cara memanipulasi bentuk di dokumen Word menggunakan Group
 weight: 37
 url: /id/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Penggunaan Jenis Bentuk di Word Docs
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara memanfaatkan tipe bentuk di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Bentuk dalam dokumen Word dapat bervariasi, dan memahami cara memanipulasinya dapat menjadi sangat penting untuk berbagai tugas pemrosesan dokumen.
 ## Prasyarat

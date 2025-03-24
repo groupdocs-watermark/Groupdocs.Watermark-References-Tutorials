@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs for .NET 有效地尋找和刪除 Word
 weight: 22
 url: /zh-hant/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# 在 Word 文件的頁首/頁尾中尋找浮水印
+
 ## 介紹
 在文件管理和保護領域，水印起著至關重要的作用。無論是出於品牌推廣、版權保護還是文件追蹤的目的，在文件中添加浮水印都是必不可少的。然而，有效地尋找和刪除浮水印，尤其是在大型文件集中，可能是一項艱鉅的任務。這就是 GroupDocs.Watermark for .NET 發揮作用的地方。在本教程中，我們將深入研究如何使用 GroupDocs.Watermark for .NET 在 Word 文件的頁首和頁腳中尋找浮水印，分解每個步驟以確保全面理解。
 ## 先決條件

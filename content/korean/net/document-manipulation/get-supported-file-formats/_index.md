@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 문서에 워터마크�
 weight: 13
 url: /ko/net/document-manipulation/get-supported-file-formats/
 ---
+
+# 지원되는 파일 형식 얻기
+
 ## 소개
 문서에 워터마킹을 하는 것은 디지털 자산을 보호하는 데 있어 중요한 단계입니다. 지적 재산 보호, 기밀성 보장, 단순한 브랜딩 등 워터마크는 중요한 역할을 합니다. 워터마킹 기능을 응용 프로그램에 통합하려는 .NET 개발자라면 .NET용 GroupDocs.Watermark는 고려해야 할 강력하고 다양한 도구입니다. 이 튜토리얼에서는 설치부터 첫 번째 워터마크 적용까지 GroupDocs.Watermark를 사용하는 데 필요한 필수 사항을 안내하고, 쉽게 따라할 수 있도록 각 단계를 세분화합니다.
 ## 전제조건

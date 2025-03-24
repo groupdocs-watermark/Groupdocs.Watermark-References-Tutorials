@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinize görü
 weight: 19
 url: /tr/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---
+
+# Word Dokümanlarına Görüntü Efektleriyle Filigran Ekleme
+
 ## giriiş
 Göz alıcı filigranlarla Word belgelerinize biraz heyecan katmak mı istiyorsunuz? GroupDocs.Watermark for .NET yanınızda! Bu kapsamlı kılavuz, GroupDocs için Filigran'ı kullanarak Word belgelerinize çarpıcı görüntü efektlerine sahip filigranlar ekleme sürecinde size yol gösterecektir. İster deneyimli bir geliştirici olun ister yeni başlayan biri olun, bu adım adım eğitim süreci kolaylaştıracaktır.
 ## Önkoşullar

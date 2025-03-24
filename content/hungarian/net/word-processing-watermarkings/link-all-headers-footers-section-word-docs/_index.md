@@ -6,6 +6,9 @@ description: Könnyedén linkelhet fejlécet és láblécet a Word dokumentumokb
 weight: 25
 url: /hu/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Az összes fejléc/lábléc összekapcsolása a Word Dokumentumok szakaszaiban
+
 ## Bevezetés
 Word-dokumentumok használatakor gyakran szükséges a fejléceket és a lábléceket összekapcsolni a különböző szakaszok között a következetesség és koherencia érdekében. Ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton a GroupDocs.Watermark for .NET használatával.
 ## Névterek importálása

@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、Word 文書内のヘ
 weight: 25
 url: /ja/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Word ドキュメントのセクション内のすべてのヘッダー/フッターをリンクする
+
 ## 導入
 Word 文書を操作する場合、一貫性と一貫性を保つために、さまざまなセクションにまたがるヘッダーとフッターをリンクすることが必要になることがよくあります。このチュートリアルでは、GroupDocs.Watermark for .NET を使用するプロセスを段階的に説明します。
 ## 名前空間のインポート

@@ -6,6 +6,9 @@ description: Az egyszerű, lépésenkénti útmutatónk segítségével megtudha
 weight: 12
 url: /hu/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Zárolt vízjel hozzáadása adott oldalakhoz a Word Dokumentumokban
+
 ## Bevezetés
 Vízjelet szeretne hozzáadni a Word-dokumentumok bizonyos oldalaihoz, de szeretné zárolni, hogy ne lehessen könnyen eltávolítani vagy szerkeszteni? Jó helyen jársz! Ebben az oktatóanyagban végigvezetjük a zárolt vízjel hozzáadásának folyamatán a Word dokumentumok adott oldalaihoz a GroupDocs.Watermark for .NET segítségével. Ez a hatékony könyvtár megkönnyíti a vízjelek alkalmazását, kezelését és testreszabását különféle dokumentumtípusokon. Függetlenül attól, hogy Ön fejlesztő, vagy csak valaki, akinek meg kell őriznie dokumentumait, ez az útmutató minden lépésen átvezeti Önt.
 ## Előfeltételek

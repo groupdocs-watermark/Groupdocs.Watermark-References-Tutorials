@@ -6,6 +6,9 @@ description: GroupDocs for .NET을 사용하여 Word 문서에서 워터마크�
 weight: 22
 url: /ko/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Word Docs의 머리글/바닥글에서 워터마크 찾기
+
 ## 소개
 문서 관리 및 보호 분야에서 워터마킹은 중추적인 역할을 합니다. 브랜딩 목적이든, 저작권 보호 또는 문서 추적이든 문서에 워터마크를 추가하는 것은 필수적입니다. 그러나 특히 대규모 문서 세트에서 워터마크를 효율적으로 찾고 제거하는 것은 어려운 작업이 될 수 있습니다. 이것이 .NET용 GroupDocs.Watermark가 작동하는 곳입니다. 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 머리글과 바닥글에서 워터마크를 찾는 방법을 자세히 알아보고 각 단계를 세분화하여 포괄적인 이해를 보장합니다.
 ## 전제조건

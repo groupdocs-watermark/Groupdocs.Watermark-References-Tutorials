@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan védheti meg PDF-dokumentumait vízjelek hozzá
 weight: 17
 url: /hu/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# Vízjel hozzáadása a megjegyzésképekhez PDF-ben
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan adhatunk vízjeleket a PDF-dokumentumok kommentárjaihoz a Groupdocs.Watermark for .NET segítségével. A vízjel létfontosságú a dokumentumok jogosulatlan használattal vagy terjesztéssel szembeni védelmében. Ennek a lépésenkénti útmutatónak a követésével megtudhatja, hogyan alkalmazhat hatékonyan szöveges vízjeleket a PDF-fájlok kommentárjaira.
 ## Előfeltételek

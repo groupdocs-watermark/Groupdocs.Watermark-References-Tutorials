@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 将图像水印添�
 weight: 12
 url: /zh/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# 从流中添加图像水印
+
 ## 介绍
 在文档管理和安全领域，将水印合并到文件中至关重要。无论是品牌推广、版权保护还是维护文档完整性，水印都起着至关重要的作用。幸运的是，GroupDocs.Watermark for .NET 提供了一个强大的解决方案，用于添加、删除和搜索各种文档格式的水印。
 ## 先决条件

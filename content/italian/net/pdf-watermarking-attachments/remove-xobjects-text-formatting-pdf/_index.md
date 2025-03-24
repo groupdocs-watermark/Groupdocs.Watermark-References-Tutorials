@@ -6,6 +6,9 @@ description: Rimuovi facilmente XObjects con formattazione di testo specifica da
 weight: 36
 url: /it/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# Rimuovi XObjects con formattazione del testo specifica in PDF
+
 ## introduzione
 La filigrana dei documenti è una parte cruciale per garantirne l'autenticità e proteggere le informazioni sensibili. GroupDocs.Watermark per .NET fornisce una soluzione completa per aggiungere, modificare e rimuovere filigrane da vari formati di documenti. In questo tutorial, approfondiremo come rimuovere XObjects con una formattazione di testo specifica dai documenti PDF utilizzando GroupDocs.Watermark per .NET.
 ## Prerequisiti

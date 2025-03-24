@@ -6,6 +6,9 @@ description: Naučte se efektivně vyhledávat a odstraňovat vodoznaky z dokume
 weight: 22
 url: /cs/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Najděte vodoznak v záhlaví/zápatí v dokumentech aplikace Word
+
 ## Úvod
 Ve světě správy a ochrany dokumentů hraje vodoznak klíčovou roli. Přidání vodoznaků do vašich dokumentů je zásadní, ať už jde o branding, ochranu autorských práv nebo sledování dokumentů. Efektivní nalezení a odstranění vodoznaků, zejména u velkých sad dokumentů, však může být skličující úkol. Zde vstupuje do hry GroupDocs.Watermark for .NET. V tomto tutoriálu se ponoříme do toho, jak najít vodoznaky v záhlaví a zápatí dokumentů aplikace Word pomocí GroupDocs.Watermark for .NET, přičemž každý krok rozebereme, abychom zajistili komplexní porozumění.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Vincule fácilmente encabezados y pies de página en documentos de 
 weight: 25
 url: /es/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Vincular todos los encabezados y pies de página en secciones en documentos de Word
+
 ## Introducción
 Cuando se trabaja con documentos de Word, a menudo es necesario vincular encabezados y pies de página en diferentes secciones para lograr coherencia. Este tutorial lo guiará a través del proceso paso a paso utilizando GroupDocs.Watermark para .NET.
 ## Importar espacios de nombres

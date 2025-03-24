@@ -6,6 +6,9 @@ description: Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hog
 weight: 13
 url: /hu/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Zárolt vízjel hozzáadása a Word Dokumentumok szakaszához
+
 ## Bevezetés
 Hatékony módot keres arra, hogy zárolt vízjelet adjon a Word-dokumentumok egy szakaszához? Ne keressen tovább! A Groupdocs.Watermark for .NET segítségével zökkenőmentesen illesztheti be a vízjeleket a Word dokumentumokba, miközben biztosíthatja, hogy azok zárolva és hamisításmentesek maradjanak. Ez a hatékony eszköz számos funkciót kínál a vízjelezési igényeinek kielégítésére, legyen szó márkaépítésről, bizalmas kezelésről vagy biztonsági okokból. Ebben a lépésenkénti oktatóanyagban végigvezetjük, hogyan adhat hozzá zárolt vízjelet egy Word-dokumentum adott szakaszához a Groupdocs.Watermark for .NET segítségével. Merüljünk el!
 ## Előfeltételek

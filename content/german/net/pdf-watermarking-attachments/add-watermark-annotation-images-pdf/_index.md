@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie Ihre PDF-Dokumente schützen, indem Sie mit G
 weight: 17
 url: /de/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# Fügen Sie Wasserzeichen zu Anmerkungsbildern in PDF hinzu
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mithilfe von Groupdocs.Watermark für .NET Wasserzeichen zu Anmerkungsbildern in PDF-Dokumenten hinzufügen. Wasserzeichen sind von entscheidender Bedeutung, um Ihre Dokumente vor unbefugter Nutzung oder Verbreitung zu schützen. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, erfahren Sie, wie Sie Textwasserzeichen effektiv auf Anmerkungsbilder in PDFs anwenden.
 ## Voraussetzungen

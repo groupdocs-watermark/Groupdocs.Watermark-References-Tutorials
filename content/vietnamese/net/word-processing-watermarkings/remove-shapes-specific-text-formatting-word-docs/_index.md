@@ -6,6 +6,9 @@ description: Tìm hiểu cách xóa hình dạng có định dạng văn bản c
 weight: 31
 url: /vi/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---
+
+# Xóa hình dạng bằng định dạng văn bản cụ thể trong tài liệu Word
+
 ## Giới thiệu
 GroupDocs.Watermark cho .NET là một API mạnh mẽ cho phép các nhà phát triển thao tác hình mờ ở các định dạng tài liệu khác nhau theo chương trình. Trong hướng dẫn này, chúng tôi sẽ tập trung vào việc loại bỏ các hình dạng có định dạng văn bản cụ thể trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước này sẽ giúp bạn hiểu quy trình xóa hình dạng một cách hiệu quả và hiệu quả.
 ## Điều kiện tiên quyết

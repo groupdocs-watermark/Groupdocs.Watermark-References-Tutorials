@@ -6,6 +6,9 @@ description: Naučte se rastrovat dokumenty PDF pomocí GroupDocs.Watermark for 
 weight: 27
 url: /cs/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# Rastrovat dokument PDF
+
 ## Úvod
 oblasti správy a manipulace s dokumenty je GroupDocs.Watermark for .NET výkonným nástrojem, který nabízí robustní možnosti pro přidávání, odstraňování a vyhledávání vodoznaků v různých formátech dokumentů. Ať už se jedná o ochranu vašich dokumentů pomocí upozornění na autorská práva, přidávání firemních log pro branding nebo pouhé opatřování dokumentů razítky, GroupDocs.Watermark zjednodušuje proces pomocí intuitivního rozhraní API a rozsáhlé sady funkcí.
 ## Předpoklady

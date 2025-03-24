@@ -6,6 +6,9 @@ description: Lär dig hur du enkelt tar bort XObjects från PDF-filer med hjälp
 weight: 35
 url: /sv/net/pdf-watermarking-attachments/remove-xobject-pdf/
 ---
+
+# Ta bort XObject från PDF
+
 ## Introduktion
 Har du någonsin behövt ta bort oönskade XObjects från dina PDF-dokument? Oavsett om det är för säkerhet, tydlighet eller helt enkelt för att rensa dina filer, kan det vara en avgörande uppgift att ta bort XObjects. Lyckligtvis är denna process enkel och effektiv med GroupDocs.Watermark för .NET. I den här handledningen guidar vi dig steg-för-steg om hur du tar bort XObjects från en PDF-fil med GroupDocs.Watermark för .NET. I slutet av den här artikeln kommer du att vara väl rustad att hantera den här uppgiften sömlöst.
 ## Förutsättningar

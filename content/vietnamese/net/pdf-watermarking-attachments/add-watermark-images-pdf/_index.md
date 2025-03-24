@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ vào hình ảnh trong tài li�
 weight: 19
 url: /vi/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# Thêm hình mờ vào hình ảnh trong PDF
+
 ## Giới thiệu
 Việc thêm hình mờ vào hình ảnh trong tài liệu PDF có thể cần thiết để bảo vệ tài sản trí tuệ của bạn hoặc đảm bảo tính xác thực của tài liệu. Sử dụng GroupDocs.Watermark cho .NET, tác vụ này có thể được thực hiện một cách hiệu quả và dễ dàng. Hướng dẫn này sẽ hướng dẫn bạn qua từng bước của quy trình, từ thiết lập môi trường cho đến thêm hình mờ cho đến lưu tài liệu cuối cùng. Hãy đi sâu vào!
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Tìm hiểu cách bảo vệ tài liệu PDF của bạn bằng cá
 weight: 17
 url: /vi/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# Thêm hình mờ vào hình ảnh chú thích trong PDF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách thêm hình mờ vào hình ảnh chú thích trong tài liệu PDF bằng Groupdocs.Watermark cho .NET. Hình chìm mờ rất quan trọng để bảo vệ tài liệu của bạn khỏi việc sử dụng hoặc phân phối trái phép. Bằng cách làm theo hướng dẫn từng bước này, bạn sẽ học cách áp dụng hình mờ văn bản cho hình ảnh chú thích trong tệp PDF một cách hiệu quả.
 ## Điều kiện tiên quyết

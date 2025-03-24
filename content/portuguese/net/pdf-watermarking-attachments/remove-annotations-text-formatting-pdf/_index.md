@@ -6,6 +6,9 @@ description: Aprenda como remover anotações com formatação de texto específ
 weight: 30
 url: /pt/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# Remova anotações com formatação de texto específica em PDF
+
 ## Introdução
 Neste tutorial, orientaremos você no processo de remoção de anotações com formatação de texto específica em um documento PDF usando Groupdocs.Watermark for .NET. Esta biblioteca oferece recursos poderosos para trabalhar com marcas d'água, anotações e outros elementos de documentos em vários formatos.
 ## Pré-requisitos

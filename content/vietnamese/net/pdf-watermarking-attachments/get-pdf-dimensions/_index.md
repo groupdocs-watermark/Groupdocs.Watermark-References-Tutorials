@@ -6,6 +6,9 @@ description: Bảo vệ tài liệu của bạn một cách dễ dàng bằng Gr
 weight: 26
 url: /vi/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---
+
+# Nhận kích thước PDF
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc bảo vệ tài liệu của bạn là điều tối quan trọng. Cho dù bạn là chuyên gia kinh doanh, chuyên gia pháp lý hay nghệ sĩ sáng tạo thì việc bảo vệ tài sản trí tuệ của mình là điều cần thiết. Groupdocs.Watermark cho .NET cung cấp một giải pháp mạnh mẽ để thêm hình mờ, tem và chú thích vào tài liệu của bạn, đảm bảo tính bảo mật và tính xác thực của chúng.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Learn how to add print-only annotation watermarks to PDFs using Gro
 weight: 13
 url: /net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---
+
+# Add Print Only Annotation Watermark to PDF
+
 ## Introduction
 In this tutorial, we'll delve into the process of adding a print-only annotation watermark to a PDF using GroupDocs.Watermark for .NET. Watermarking documents is a crucial aspect of document security and branding, and GroupDocs.Watermark provides a seamless solution for .NET developers to achieve this.
 ## Prerequisites

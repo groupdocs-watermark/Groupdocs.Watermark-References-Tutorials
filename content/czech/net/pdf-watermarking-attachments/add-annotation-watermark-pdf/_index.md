@@ -6,6 +6,9 @@ description: Naučte se, jak snadno přidávat anotační vodoznaky do dokument�
 weight: 10
 url: /cs/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# Přidat anotační vodoznak do PDF
+
 ## Úvod
 oblasti správy dokumentů slouží přidávání vodoznaků do souborů PDF jako zásadní aspekt, zejména pro účely brandingu, zabezpečení a identifikace dokumentů. GroupDocs.Watermark for .NET je výkonná knihovna, která usnadňuje bezproblémovou integraci vodoznaků do různých formátů dokumentů, včetně PDF. V tomto tutoriálu se krok za krokem ponoříme do procesu přidávání anotačních vodoznaků do dokumentů PDF s využitím funkcí, které poskytuje GroupDocs.Watermark pro .NET.
 ## Předpoklady

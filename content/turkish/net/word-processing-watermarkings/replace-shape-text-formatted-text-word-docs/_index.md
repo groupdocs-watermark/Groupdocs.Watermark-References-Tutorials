@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki şeki
 weight: 34
 url: /tr/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Word Belgelerindeki Şekil Metnini Biçimlendirilmiş Metinle Değiştirme
+
 ## giriiş
 Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki şekil metnini biçimlendirilmiş metinle değiştirme sürecinde size yol göstereceğiz. Bu kitaplık, şekillerin içindeki metni değiştirmek de dahil olmak üzere filigranlarla çalışmaya yönelik güçlü özellikler sağlar.
 ## Önkoşullar

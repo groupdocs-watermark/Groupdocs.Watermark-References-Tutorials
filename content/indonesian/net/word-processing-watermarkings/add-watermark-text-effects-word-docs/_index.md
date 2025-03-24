@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air khusus dengan efek teks ke doku
 weight: 21
 url: /id/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---
+
+# Tambahkan Tanda Air dengan Efek Teks di Word Docs
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menambahkan tanda air dengan efek teks ke dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Dengan mengikuti petunjuk langkah demi langkah ini, Anda akan dapat menyempurnakan dokumen Anda dengan tanda air khusus yang menyertakan berbagai efek teks.
 ## Prasyarat

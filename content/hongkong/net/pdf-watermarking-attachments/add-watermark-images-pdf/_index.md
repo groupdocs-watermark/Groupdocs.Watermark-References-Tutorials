@@ -6,6 +6,9 @@ description: 透過我們詳細的逐步教學，了解如何使用 GroupDocs.Wa
 weight: 19
 url: /zh-hant/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# 為 PDF 影像添加浮水印
+
 ## 介紹
 在 PDF 文件中的圖像添加浮水印對於保護您的智慧財產權或確保文件的真實性至關重要。使用 GroupDocs.Watermark for .NET，可以有效率且輕鬆地完成此任務。本教學將引導您完成流程的每個步驟，從設定環境到新增浮水印再到保存最終文件。讓我們深入了解吧！
 ## 先決條件

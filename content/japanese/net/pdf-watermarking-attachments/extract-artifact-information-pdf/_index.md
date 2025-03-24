@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して PDF ファイルから
 weight: 24
 url: /ja/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# PDF からアーティファクト情報を抽出する
+
 ## 導入
 PDF ドキュメントには、多くの場合、画像、テキスト、図形などのさまざまな成果物に埋め込まれた貴重な情報が含まれています。この情報の抽出は、データ分析からコンテンツ管理に至るまで、多くのアプリケーションにとって非常に重要です。このチュートリアルでは、PDF ドキュメントの透かし、検索、操作用に特別に設計された強力な .NET ライブラリである GroupDocs.Watermark for .NET を使用して PDF ファイルからアーティファクト情報を抽出する方法を説明します。
 ## 前提条件

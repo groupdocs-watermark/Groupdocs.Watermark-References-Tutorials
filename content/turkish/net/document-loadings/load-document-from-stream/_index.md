@@ -6,6 +6,9 @@ description: Bu kılavuzla GroupDocs.Watermark for .NET'i kullanarak belgelere n
 weight: 11
 url: /tr/net/document-loadings/load-document-from-stream/
 ---
+
+# Belgeyi Akıştan Yükle
+
 ## giriiş
 .NET'i kullanarak belgelerinize sorunsuz bir şekilde filigran eklemek mi istiyorsunuz? Başka yerde arama! GroupDocs.Watermark for .NET, çeşitli belge formatlarındaki filigranları yönetmenize olanak tanıyan güçlü ve kullanımı kolay bir kitaplıktır. İster PDF'lerle, ister Word belgeleriyle, ister resimlerle çalışıyor olun, bu araç ihtiyacınızı karşılar. Bu öğreticide, bir akıştan belge yükleme ve filigran ekleme işlemini adım adım anlatacağız. Öyleyse hemen dalalım!
 ## Önkoşullar

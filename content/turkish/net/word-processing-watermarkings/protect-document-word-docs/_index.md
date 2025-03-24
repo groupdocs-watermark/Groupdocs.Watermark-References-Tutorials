@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerini nasıl k
 weight: 28
 url: /tr/net/word-processing-watermarkings/protect-document-word-docs/
 ---
+
+# Word Belgelerindeki Belgeyi Koruyun
+
 ## giriiş
 Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak Word Docs'taki bir belgeyi koruma sürecinde size yol göstereceğiz. Bu adımları izleyerek, Word belgelerinize yetkisiz erişim ve değişiklikleri önleyen bir güvenlik katmanı ekleyebileceksiniz.
 ## Önkoşullar

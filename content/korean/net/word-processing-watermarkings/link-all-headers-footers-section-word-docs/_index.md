@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 머리�
 weight: 25
 url: /ko/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Word Docs 섹션의 모든 머리글/바닥글 연결
+
 ## 소개
 Word 문서로 작업할 때 일관성과 일관성을 위해 여러 섹션에 걸쳐 머리글과 바닥글을 연결해야 하는 경우가 많습니다. 이 튜토리얼은 .NET용 GroupDocs.Watermark를 사용하여 프로세스를 단계별로 안내합니다.
 ## 네임스페이스 가져오기

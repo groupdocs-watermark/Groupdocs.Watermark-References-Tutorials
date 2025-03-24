@@ -6,6 +6,9 @@ description: .NET용 Groupdocs.Watermark를 사용하여 PDF의 XObject에 워�
 weight: 20
 url: /ko/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# PDF의 XObject에 워터마크 추가
+
 ## 소개
 PDF 워터마킹은 문서를 무단 사용으로부터 보호하기 위한 중요한 단계입니다. .NET용 Groupdocs.Watermark를 사용하면 PDF 내의 XObject에 워터마크를 추가하는 것이 그 어느 때보다 쉬워졌습니다. 이 튜토리얼에서는 PDF 문서에 워터마크를 자신있게 적용할 수 있도록 프로세스를 단계별로 안내합니다. 시작하자!
 ## 전제조건

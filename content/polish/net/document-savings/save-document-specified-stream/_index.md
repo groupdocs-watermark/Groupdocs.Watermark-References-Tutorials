@@ -6,6 +6,9 @@ description: Z tego przewodnika krok po kroku dowiesz się, jak zapisać dokumen
 weight: 12
 url: /pl/net/document-savings/save-document-specified-stream/
 ---
+
+# Zapisz dokument w określonym strumieniu
+
 ## Wstęp
 Czy chcesz opanować sztukę dodawania znaków wodnych do swoich dokumentów przy użyciu GroupDocs.Watermark dla .NET? Trafiłeś we właściwe miejsce! W tym obszernym przewodniku przeprowadzimy Cię przez wszystko, co musisz wiedzieć, aby pomyślnie zapisać dokument w określonym strumieniu po dodaniu znaku wodnego. Zanurzmy się i zacznijmy.
 ## Warunki wstępne

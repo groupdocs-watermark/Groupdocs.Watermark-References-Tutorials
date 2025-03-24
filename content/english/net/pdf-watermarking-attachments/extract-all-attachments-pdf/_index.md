@@ -6,6 +6,9 @@ description: Learn how to extract all attachments from a PDF using Groupdocs.Wat
 weight: 22
 url: /net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
+
+# Extract All Attachments from PDF
+
 ## Introduction
 Are you looking to extract attachments from a PDF document effortlessly? Well, you're in the right place! In this comprehensive tutorial, we'll guide you through the process of extracting all attachments from a PDF using Groupdocs.Watermark for .NET. This powerful library allows developers to manage watermarks in various document formats, but it also includes robust capabilities for extracting embedded files. Whether you're a seasoned developer or just starting, this step-by-step guide will make the process a breeze.
 ## Prerequisites

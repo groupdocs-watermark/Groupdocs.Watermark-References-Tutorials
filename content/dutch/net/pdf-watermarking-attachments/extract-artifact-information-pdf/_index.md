@@ -6,6 +6,9 @@ description: Leer hoe u artefactinformatie uit PDF-bestanden kunt extraheren met
 weight: 24
 url: /nl/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# Artefactinformatie extraheren uit PDF
+
 ## Invoering
 PDF-documenten bevatten vaak waardevolle informatie ingebed in verschillende artefacten, zoals afbeeldingen, tekst en vormen. Het extraheren van deze informatie kan van cruciaal belang zijn voor veel toepassingen, variërend van data-analyse tot contentbeheer. In deze zelfstudie onderzoeken we hoe u artefactinformatie uit PDF-bestanden kunt extraheren met GroupDocs.Watermark voor .NET, een krachtige .NET-bibliotheek die speciaal is ontworpen voor het watermerken, zoeken en manipuleren van PDF-documenten.
 ## Vereisten

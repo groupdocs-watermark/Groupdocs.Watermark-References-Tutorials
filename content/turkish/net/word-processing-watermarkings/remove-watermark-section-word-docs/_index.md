@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinin belirli
 weight: 32
 url: /tr/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# Word Dokümanlarındaki Bölümden Filigranı Kaldırma
+
 ## giriiş
 Dijital çağda, özellikle hassas bilgiler veya özel içerik söz konusu olduğunda belgelerin bütünlüğünü korumak çok önemlidir. Filigranlama, bir belgenin sahipliğini, marka kimliğini belirtmek veya yalnızca durumunu belirtmek için yaygın olarak kullanılan bir tekniktir. Ancak düzenleme gereksinimleri veya gizlilik endişeleri nedeniyle filigranların kaldırılmasının gerekli olduğu durumlar vardır.
 ## Önkoşullar

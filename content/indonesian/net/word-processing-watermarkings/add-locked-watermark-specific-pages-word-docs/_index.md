@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air terkunci ke halaman tertentu di
 weight: 12
 url: /id/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Tambahkan Tanda Air Terkunci ke Halaman Tertentu di Dokumen Word
+
 ## Perkenalan
 Apakah Anda ingin menambahkan tanda air ke halaman tertentu di dokumen Word Anda, tetapi ingin halaman tersebut dikunci sehingga tidak mudah dihapus atau diedit? Anda berada di tempat yang tepat! Dalam tutorial ini, kami akan memandu Anda melalui proses menambahkan tanda air terkunci ke halaman tertentu di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Pustaka canggih ini memudahkan penerapan, pengelolaan, dan penyesuaian tanda air pada berbagai jenis dokumen. Baik Anda seorang pengembang atau hanya seseorang yang perlu mengamankan dokumennya, panduan ini akan memandu Anda melalui setiap langkah dengan cara yang mudah.
 ## Prasyarat

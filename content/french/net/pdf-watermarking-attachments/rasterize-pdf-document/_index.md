@@ -6,6 +6,9 @@ description: Découvrez comment pixelliser des documents PDF à l'aide de GroupD
 weight: 27
 url: /fr/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# Pixelliser un document PDF
+
 ## Introduction
 Dans le domaine de la gestion et de la manipulation de documents, GroupDocs.Watermark pour .NET se présente comme un outil puissant, offrant des fonctionnalités robustes pour ajouter, supprimer et rechercher des filigranes dans divers formats de documents. Qu'il s'agisse de protéger vos documents avec des mentions de droits d'auteur, d'ajouter des logos d'entreprise pour la marque ou simplement d'annoter des documents avec des tampons, GroupDocs.Watermark simplifie le processus grâce à son API intuitive et à son ensemble complet de fonctionnalités.
 ## Conditions préalables

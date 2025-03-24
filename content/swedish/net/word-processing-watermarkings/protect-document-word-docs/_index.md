@@ -6,6 +6,9 @@ description: Lär dig hur du skyddar Word-dokument med GroupDocs.Watermark för 
 weight: 28
 url: /sv/net/word-processing-watermarkings/protect-document-word-docs/
 ---
+
+# Skydda dokument i Word Docs
+
 ## Introduktion
 I den här självstudien guidar vi dig genom processen att skydda ett dokument i Word Docs med GroupDocs.Watermark för .NET. Genom att följa dessa steg kommer du att kunna lägga till ett säkerhetslager till dina Word-dokument, vilket förhindrar obehörig åtkomst och modifiering.
 ## Förutsättningar

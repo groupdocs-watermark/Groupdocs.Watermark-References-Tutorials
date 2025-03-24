@@ -6,6 +6,9 @@ description: Learn how to add watermarks with page margin type in PDF using Grou
 weight: 21
 url: /net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---
+
+# Add Watermark with Page Margin Type in PDF
+
 ## Introduction
 In today's digital age, securing documents is more crucial than ever. One way to ensure the integrity and authenticity of your documents is by adding watermarks. Groupdocs.Watermark for .NET is an exceptional tool designed to make this process effortless. In this tutorial, we'll walk you through the steps to add a watermark with page margin type in a PDF using Groupdocs.Watermark for .NET.
 ## Prerequisites

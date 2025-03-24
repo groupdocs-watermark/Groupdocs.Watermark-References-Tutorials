@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs.Watermark for .NET 向文档添加水�
 weight: 10
 url: /zh/net/document-savings/save-document-same-file-stream/
 ---
+
+# 将文档保存到同一文件或流
+
 ## 介绍
 在当今的数字时代，向文档添加水印对于保护知识产权和确保品牌完整性至关重要。 Groupdocs.Watermark for .NET 为希望将水印无缝嵌入到文档中的开发人员提供了强大的解决方案。本综合指南将引导您完成使用 Groupdocs.Watermark for .NET 将带水印的文档保存到同一文件或流的步骤。
 ## 先决条件

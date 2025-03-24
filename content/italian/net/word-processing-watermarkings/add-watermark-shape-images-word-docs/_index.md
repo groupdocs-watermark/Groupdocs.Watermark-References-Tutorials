@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane per dare forma alle immagini nei d
 weight: 17
 url: /it/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Aggiungi filigrana per dare forma alle immagini nei documenti Word
+
 ## introduzione
 In questo tutorial esploreremo come aggiungere una filigrana per modellare le immagini all'interno dei documenti Word utilizzando GroupDocs.Watermark per .NET. La filigrana è un aspetto cruciale della protezione dei documenti, soprattutto quando si tratta di informazioni sensibili o riservate. Aggiungendo filigrane per dare forma alle immagini, puoi garantire l'integrità e la sicurezza dei tuoi documenti.
 ## Prerequisiti

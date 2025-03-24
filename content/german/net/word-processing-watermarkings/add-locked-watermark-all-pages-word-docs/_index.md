@@ -6,6 +6,9 @@ description: Sichern Sie Ihre Dokumente, indem Sie mit Groupdocs.Watermark für 
 weight: 11
 url: /de/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Fügen Sie allen Seiten in Word-Dokumenten ein gesperrtes Wasserzeichen hinzu
+
 ## Einführung
 Das Hinzufügen von Wasserzeichen zu Ihren Dokumenten ist ein wichtiger Schritt zur Sicherung und zum Branding Ihrer Inhalte. Ganz gleich, ob Sie unbefugte Nutzung verhindern oder einfach nur eine professionelle Note verleihen möchten, Wasserzeichen können mehreren Zwecken dienen. In diesem Tutorial führen wir Sie durch den Prozess des Hinzufügens eines gesperrten Wasserzeichens zu allen Seiten eines Word-Dokuments mithilfe von Groupdocs.Watermark für .NET.
 ## Voraussetzungen

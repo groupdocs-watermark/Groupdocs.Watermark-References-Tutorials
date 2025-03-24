@@ -6,6 +6,9 @@ description: Naučte se chránit své dokumenty PDF přidáním vodoznaků do ob
 weight: 17
 url: /cs/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# Přidejte vodoznak k obrázkům anotací v PDF
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak přidat vodoznaky do obrázků anotací v dokumentech PDF pomocí Groupdocs.Watermark for .NET. Vodoznak je zásadní pro ochranu vašich dokumentů před neoprávněným použitím nebo distribucí. Podle tohoto podrobného průvodce se naučíte, jak efektivně aplikovat textové vodoznaky na obrázky anotací v souborech PDF.
 ## Předpoklady

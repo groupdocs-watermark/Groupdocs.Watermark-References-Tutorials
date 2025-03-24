@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs for .NET 從 Word 文件中提取節�
 weight: 23
 url: /zh-hant/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# 取得 Word 文件中的節屬性
+
 ## 介紹
 在文件管理和營運領域，Groupdocs.Watermark for .NET 是一款多功能且強大的工具。該庫無縫整合到 .NET 框架中，使開發人員能夠輕鬆操作浮水印、註釋和文件屬性。在本教程中，我們將深入研究其主要功能之一：從 Word 文件中提取節屬性。請跟隨我們一步步分解這個過程，釋放 Groupdocs.Watermark for .NET 的潛力。
 ## 先決條件

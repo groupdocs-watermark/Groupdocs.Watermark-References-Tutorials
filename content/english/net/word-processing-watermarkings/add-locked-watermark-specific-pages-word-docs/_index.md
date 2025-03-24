@@ -6,6 +6,9 @@ description: Learn how to add a locked watermark to specific pages in Word docum
 weight: 12
 url: /net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Add Locked Watermark to Specific Pages in Word Docs
+
 ## Introduction
 Are you looking to add a watermark to specific pages in your Word documents, but want it to be locked so that it cannot be easily removed or edited? You’re in the right place! In this tutorial, we will guide you through the process of adding a locked watermark to specific pages in Word documents using GroupDocs.Watermark for .NET. This powerful library makes it easy to apply, manage, and customize watermarks on a variety of document types. Whether you're a developer or just someone who needs to secure their documents, this guide will walk you through each step in a straightforward manner.
 ## Prerequisites

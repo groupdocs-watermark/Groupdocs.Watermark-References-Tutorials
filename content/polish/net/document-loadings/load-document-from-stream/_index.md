@@ -6,6 +6,9 @@ description: Z tego przewodnika dowiesz się, jak dodawać znaki wodne do dokume
 weight: 11
 url: /pl/net/document-loadings/load-document-from-stream/
 ---
+
+# Załaduj dokument ze strumienia
+
 ## Wstęp
 Czy chcesz bezproblemowo dodawać znaki wodne do swoich dokumentów za pomocą platformy .NET? Nie szukaj dalej! GroupDocs.Watermark dla .NET to potężna i łatwa w użyciu biblioteka, która umożliwia zarządzanie znakami wodnymi w różnych formatach dokumentów. Niezależnie od tego, czy pracujesz z plikami PDF, dokumentami programu Word czy obrazami, to narzędzie Ci pomoże. W tym samouczku przeprowadzimy Cię krok po kroku przez proces ładowania dokumentu ze strumienia i dodawania znaku wodnego. Zatem zanurzmy się od razu!
 ## Warunki wstępne

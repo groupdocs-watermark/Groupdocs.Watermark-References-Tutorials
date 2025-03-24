@@ -6,6 +6,9 @@ description: Explore GroupDocs.Watermark for .NET tutorials on PDF watermarking 
 weight: 25
 url: /net/pdf-watermarking-attachments/
 ---
+
+# PDF Watermarking and Attachment
+
 ## Introduction
 
 Looking to enhance your PDFs with watermarks and manage attachments efficiently? GroupDocs.Watermark for .NET offers a comprehensive suite of tutorials to help you master these tasks. Whether you're a beginner or an experienced developer, our step-by-step guides make the process straightforward and efficient. Let's explore some essential tutorials to get you started on enhancing your PDF documents.

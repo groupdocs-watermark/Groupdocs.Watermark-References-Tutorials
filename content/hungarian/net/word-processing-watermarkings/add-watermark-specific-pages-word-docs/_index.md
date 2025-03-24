@@ -6,6 +6,9 @@ description: Tanulja meg, hogyan adhat hozzá könnyedén vízjeleket a Word-dok
 weight: 18
 url: /hu/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---
+
+# Adjon hozzá vízjelet bizonyos oldalakhoz a Word dokumentumokban
+
 ## Bevezetés
 Ebben az oktatóanyagban a Groupdocs.Watermark for .NET használatával vízjelek hozzáadásának folyamatát mutatjuk be a Word dokumentumok adott oldalaihoz. A vízjelezés a dokumentumkezelés kulcsfontosságú eleme, amely biztonságot és márkajelzést biztosít a dokumentumok számára. A Groupdocs.Watermark for .NET segítségével egyszerűen, pontosan és hatékonyan adhat szöveges vagy képi vízjeleket Word-dokumentumaihoz.
 ## Előfeltételek

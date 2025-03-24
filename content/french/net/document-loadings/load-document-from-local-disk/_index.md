@@ -6,6 +6,9 @@ description: Protégez et gérez vos documents avec Groupdocs Watermark pour .NE
 weight: 10
 url: /fr/net/document-loadings/load-document-from-local-disk/
 ---
+
+# Charger un document à partir du disque local
+
 ## Introduction
 Le tatouage des documents est essentiel à l'ère numérique d'aujourd'hui pour garantir la protection du contenu, l'affirmation de la propriété et la confidentialité. Groupdocs.Watermark for .NET est une bibliothèque puissante qui permet aux développeurs d'ajouter, de rechercher et de gérer des filigranes dans différents formats de documents. Dans ce didacticiel, nous passerons en revue le processus d'utilisation de Groupdocs.Watermark pour .NET pour ajouter des filigranes à vos documents avec des instructions détaillées étape par étape.
 ## Conditions préalables

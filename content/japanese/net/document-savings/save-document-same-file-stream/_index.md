@@ -6,6 +6,9 @@ description: Groupdocs.Watermark for .NET を使用してドキュメントに�
 weight: 10
 url: /ja/net/document-savings/save-document-same-file-stream/
 ---
+
+# ドキュメントを同じファイルまたはストリームに保存
+
 ## 導入
 今日のデジタル時代では、知的財産を保護し、ブランドの完全性を確保するために、文書に透かしを追加することが不可欠になっています。 Groupdocs.Watermark for .NET は、ウォーターマークをドキュメントにシームレスに埋め込みたい開発者に堅牢なソリューションを提供します。この包括的なガイドでは、Groupdocs.Watermark for .NET を使用して、ウォーターマーク付きのドキュメントを同じファイルまたはストリームに保存する手順を説明します。
 ## 前提条件

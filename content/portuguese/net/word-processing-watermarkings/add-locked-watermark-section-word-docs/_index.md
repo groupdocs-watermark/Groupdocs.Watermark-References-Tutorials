@@ -6,6 +6,9 @@ description: Aprenda como adicionar uma marca d'água bloqueada a uma seção es
 weight: 13
 url: /pt/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Adicionar marca d'água bloqueada à seção em documentos do Word
+
 ## Introdução
 Você está procurando uma maneira eficiente de adicionar uma marca d'água bloqueada a uma seção de seus documentos do Word? Não procure mais! Com Groupdocs.Watermark for .NET, você pode inserir marcas d'água perfeitamente em documentos do Word, garantindo que eles permaneçam bloqueados e à prova de adulteração. Esta ferramenta poderosa oferece uma variedade de recursos para atender às suas necessidades de marca d'água, seja para fins de marca, confidencialidade ou segurança. Neste tutorial passo a passo, orientaremos você sobre como adicionar uma marca d'água bloqueada a uma seção específica de um documento do Word usando Groupdocs.Watermark for .NET. Vamos mergulhar!
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: Ebből a lépésről-lépésre szóló útmutatóból megtudhatja, 
 weight: 12
 url: /hu/net/document-savings/save-document-specified-stream/
 ---
+
+# Dokumentum mentése a megadott adatfolyamba
+
 ## Bevezetés
 Szeretné elsajátítani a vízjelek dokumentumaihoz való hozzáadásának művészetét a GroupDocs.Watermark for .NET segítségével? Jó helyre jöttél! Ebben az átfogó útmutatóban mindent végigvezetünk, amit tudnia kell, hogy sikeresen elmentse a dokumentumot egy adott adatfolyamba, miután vízjelet kapott. Merüljünk el, és kezdjük el.
 ## Előfeltételek

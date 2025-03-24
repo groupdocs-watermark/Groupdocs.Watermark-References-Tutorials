@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan távolíthat el hiperhivatkozásokat Word-dokum
 weight: 29
 url: /hu/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# Távolítsa el a hiperhivatkozásokat a Word dokumentumokból
+
 ## Bevezetés
 A mai digitális világban, ahol az információk zökkenőmentesen áramlanak, a dokumentumok védelme a legfontosabb. Akár érzékeny üzleti adatokat oszt meg, akár remekművet készít, létfontosságú, hogy megvédje tartalmait az illetéktelen hozzáféréstől és manipulációtól. A GroupDocs.Watermark for .NET megjelenésével a vízjelek egyszerű hozzáadásával, eltávolításával és észlelésével biztosíthatja dokumentumai integritását.
 ## Előfeltételek

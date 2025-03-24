@@ -6,6 +6,9 @@ description: Bu adım adım kılavuzla GroupDocs.Watermark for .NET'i kullanarak
 weight: 12
 url: /tr/net/document-manipulation/get-document-info-stream/
 ---
+
+# Akıştan Belge Bilgilerini Al
+
 ## giriiş
 Günümüzün dijital çağında belge bütünlüğünü korumak ve yönetmek çok önemlidir. İster bir iş uzmanı, ister geliştirici, ister hassas bilgilerle ilgilenen biri olun, belgelerinize filigran ekleme, çıkarma veya değiştirme ihtiyacı çok önemlidir. GroupDocs.Watermark for .NET, tam da bunu başarmanıza yardımcı olacak güçlü bir araç seti sağlar. Bu makale, bir akıştan belge bilgileri almak için GroupDocs.Watermark for .NET'i kullanma konusunda size rehberlik edecek ve süreci kolaylaştıracak adım adım bir eğitim sunacaktır. Sonunda, belge yönetimi yeteneklerinizi geliştirmek için bu özelliği kullanma konusunda yetkin olacaksınız.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Z tego obszernego przewodnika krok po kroku dowiesz się, jak doda�
 weight: 13
 url: /pl/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Dodaj zablokowany znak wodny do sekcji w dokumentach programu Word
+
 ## Wstęp
 Szukasz skutecznego sposobu na dodanie zablokowanego znaku wodnego do sekcji dokumentów programu Word? Nie szukaj dalej! Dzięki Groupdocs.Watermark dla .NET możesz bezproblemowo wstawiać znaki wodne do dokumentów programu Word, mając pewność, że pozostaną one zamknięte i zabezpieczone przed manipulacją. To potężne narzędzie oferuje różnorodne funkcje, które zaspokoją Twoje potrzeby w zakresie znaków wodnych, zarówno w celach związanych z brandingiem, poufnością, jak i bezpieczeństwem. W tym samouczku krok po kroku przeprowadzimy Cię przez proces dodawania zablokowanego znaku wodnego do określonej sekcji dokumentu programu Word przy użyciu narzędzia Groupdocs.Watermark dla platformy .NET. Zanurzmy się!
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Learn how to remove annotations with specific text formatting in PD
 weight: 30
 url: /net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# Remove Annotations with Specific Text Formatting in PDF
+
 ## Introduction
 In this tutorial, we'll guide you through the process of removing annotations with specific text formatting in a PDF document using Groupdocs.Watermark for .NET. This library provides powerful features for working with watermarks, annotations, and other document elements in various formats.
 ## Prerequisites

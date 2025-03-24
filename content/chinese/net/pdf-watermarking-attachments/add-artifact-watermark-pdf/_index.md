@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs.Watermark for .NET 轻松地将工件�
 weight: 11
 url: /zh/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# 向 PDF 添加工件水印
+
 ## 介绍
 向 PDF 文件添加水印是文档管理的一个重要方面，尤其是在保护知识产权或品牌文档时。 Groupdocs.Watermark for .NET 提供了一个强大的解决方案，可以轻松地向 PDF 文件添加水印。在本教程中，我们将逐步介绍向 PDF 文件添加人工水印的过程。
 ## 先决条件

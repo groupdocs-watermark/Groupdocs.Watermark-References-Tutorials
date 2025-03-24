@@ -6,6 +6,9 @@ description: Khám phá GroupDocs.Watermark để biết các hướng dẫn .NE
 weight: 24
 url: /vi/net/image-watermarkings/
 ---
+
+# Hình mờ hình ảnh
+
 ## Giới thiệu
 
 Bạn đang tìm cách cải thiện tài liệu của mình bằng hình mờ? GroupDocs.Watermark dành cho .NET sẽ hỗ trợ bạn. Các hướng dẫn toàn diện của chúng tôi sẽ hướng dẫn bạn quy trình thêm hình mờ vào hình ảnh, đảm bảo tài liệu của bạn được an toàn và mang nhãn hiệu chuyên nghiệp. Cho dù bạn là người mới hay nhà phát triển có kinh nghiệm, hướng dẫn từng bước của chúng tôi sẽ giúp quá trình này trở nên đơn giản và hiệu quả. Hãy cùng khám phá một số hướng dẫn chính để giúp bạn bắt đầu.

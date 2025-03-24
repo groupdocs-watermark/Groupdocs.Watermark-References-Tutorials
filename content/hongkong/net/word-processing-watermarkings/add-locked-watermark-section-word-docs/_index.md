@@ -6,6 +6,9 @@ description: 透過這份全面的逐步指南，了解如何使用 Groupdocs fo
 weight: 13
 url: /zh-hant/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# 將鎖定浮水印新增至 Word 文件中的部分
+
 ## 介紹
 您是否正在尋找一種向 Word 文件中的某個部分添加鎖定浮水印的有效方法？別再猶豫了！使用 Groupdocs.Watermark for .NET，您可以將浮水印無縫插入 Word 文檔，同時確保它們保持鎖定和防篡改。這個強大的工具提供了多種功能來滿足您的浮水印需求，無論是出於品牌、保密還是安全目的。在本逐步教學中，我們將引導您了解如何使用 Groupdocs.Watermark for .NET 將鎖定浮水印新增至 Word 文件的特定部分。讓我們深入了解吧！
 ## 先決條件

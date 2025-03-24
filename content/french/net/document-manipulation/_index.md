@@ -6,6 +6,9 @@ description: Explorez les didacticiels GroupDocs.Watermark pour .NET sur la gén
 weight: 21
 url: /fr/net/document-manipulation/
 ---
+
+# Manipulation de documents
+
 ## Introduction
 
 Vous cherchez à faire passer vos compétences en gestion de documents au niveau supérieur ? GroupDocs.Watermark pour .NET est là pour vous. Grâce à nos didacticiels approfondis, vous apprendrez à générer des aperçus de documents, à gérer les filigranes, et bien plus encore. Passons à quelques didacticiels clés qui vous aideront à tirer le meilleur parti de cet outil puissant.

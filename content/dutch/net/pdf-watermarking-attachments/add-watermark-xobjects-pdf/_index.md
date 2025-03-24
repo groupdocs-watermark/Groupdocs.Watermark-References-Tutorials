@@ -6,6 +6,9 @@ description: Leer hoe u watermerken aan XObjects in PDF kunt toevoegen met Group
 weight: 20
 url: /nl/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# Voeg watermerk toe aan XObjects in PDF
+
 ## Invoering
 Het watermerken van PDF's is een cruciale stap om ervoor te zorgen dat uw documenten worden beschermd tegen ongeoorloofd gebruik. Met Groupdocs.Watermark voor .NET is het toevoegen van watermerken aan XObjects in uw PDF's nog nooit zo eenvoudig geweest. In deze zelfstudie leiden we u stap voor stap door het proces, zodat u vol vertrouwen watermerken op uw PDF-documenten kunt toepassen. Laten we beginnen!
 ## Vereisten

@@ -6,6 +6,9 @@ description: Aprenda a agregar marcas de agua a imágenes en documentos PDF usan
 weight: 19
 url: /es/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# Agregar marca de agua a imágenes en PDF
+
 ## Introducción
 Agregar marcas de agua a las imágenes de un documento PDF puede ser esencial para proteger su propiedad intelectual o garantizar la autenticidad de sus documentos. Con GroupDocs.Watermark para .NET, esta tarea se puede realizar de manera eficiente y sencilla. Este tutorial lo guiará a través de cada paso del proceso, desde configurar su entorno hasta agregar marcas de agua y guardar el documento final. ¡Vamos a sumergirnos!
 ## Requisitos previos

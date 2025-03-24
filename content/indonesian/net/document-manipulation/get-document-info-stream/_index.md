@@ -6,6 +6,9 @@ description: Pelajari cara mendapatkan info dokumen dari aliran menggunakan Grou
 weight: 12
 url: /id/net/document-manipulation/get-document-info-stream/
 ---
+
+# Dapatkan Info Dokumen dari Stream
+
 ## Perkenalan
 Di era digital saat ini, melindungi dan mengelola integritas dokumen sangatlah penting. Baik Anda seorang profesional bisnis, pengembang, atau seseorang yang menangani informasi sensitif, kebutuhan untuk menambahkan, mengekstrak, atau memanipulasi tanda air di dokumen Anda sangatlah penting. GroupDocs.Watermark untuk .NET menyediakan perangkat canggih untuk membantu Anda mencapai hal tersebut. Artikel ini akan memandu Anda dalam menggunakan GroupDocs.Watermark untuk .NET untuk mendapatkan informasi dokumen dari aliran, menawarkan tutorial langkah demi langkah untuk memudahkan Anda dalam prosesnya. Pada akhirnya, Anda akan mahir menggunakan fitur ini untuk meningkatkan kemampuan manajemen dokumen Anda.
 ## Prasyarat

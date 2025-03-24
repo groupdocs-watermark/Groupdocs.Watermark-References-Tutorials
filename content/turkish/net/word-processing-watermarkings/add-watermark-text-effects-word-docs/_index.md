@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerine metin ef
 weight: 21
 url: /tr/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---
+
+# Word Belgelerine Metin Efektleriyle Filigran Ekleme
+
 ## giriiş
 Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak Word belgelerine metin efektli filigranların nasıl ekleneceğini inceleyeceğiz. Bu adım adım talimatları izleyerek belgelerinizi çeşitli metin efektleri içeren özelleştirilmiş filigranlarla geliştirebileceksiniz.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Recherchez efficacement des images dans les pièces jointes PDF à 
 weight: 46
 url: /fr/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---
+
+# Rechercher une image dans la pièce jointe du PDF
+
 ## Introduction
 GroupDocs.Watermark for .NET est une API puissante conçue pour faciliter la manipulation et la gestion transparentes des filigranes dans divers formats de documents, y compris les PDF. Que vous ayez besoin d'ajouter, de supprimer ou de rechercher des filigranes dans des pièces jointes PDF, cet outil polyvalent offre une solution complète.
 ## Conditions préalables

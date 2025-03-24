@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak PDF dosyalarınızı kiş
 weight: 18
 url: /tr/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# PDF'deki Görüntü Yapılarına Filigran Ekleme
+
 ## giriiş
 Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak bir PDF belgesindeki görüntü yapıtlarına filigran ekleme sürecinde size rehberlik edeceğiz. Bu adımları izleyerek PDF dosyalarınızı kişiselleştirilmiş filigranlarla etkili bir şekilde koruyabilirsiniz.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: 이 가이드를 통해 .NET용 GroupDocs.Watermark를 사용하여
 weight: 10
 url: /ko/net/document-manipulation/generate-document-preview/
 ---
+
+# 문서 미리보기 생성
+
 ## 소개
 디지털 문서 관리의 세계에서 워터마킹은 문서의 보안과 신뢰성을 보장하는 데 중요한 역할을 합니다. .NET용 GroupDocs.Watermark는 개발자가 손쉽게 문서에 워터마크를 추가할 수 있는 강력한 도구입니다. 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 문서 미리보기를 생성하는 과정을 안내합니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 가이드는 목표 달성을 위한 포괄적인 단계별 프로세스를 제공합니다.
 ## 전제조건

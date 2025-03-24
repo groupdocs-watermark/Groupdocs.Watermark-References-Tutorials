@@ -6,6 +6,9 @@ description: Dowiedz się, jak zastępować obrazy w określonych adnotacjach PD
 weight: 37
 url: /pl/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
+
+# Zamień obraz na konkretną adnotację w formacie PDF
+
 ## Wstęp
 Witamy w tym obszernym przewodniku na temat używania GroupDocs.Watermark dla .NET do zastępowania obrazów w określonych adnotacjach w dokumentach PDF. Niezależnie od tego, czy jesteś programistą chcącym ulepszyć możliwości obsługi plików PDF, czy po prostu ciekawi Cię zawiłości związane ze znakami wodnymi, w tym samouczku znajdziesz wszystko. Na koniec będziesz mógł bezproblemowo zastępować obrazy w adnotacjach PDF niestandardowymi, optymalizując przepływ pracy podczas przetwarzania dokumentów.
 ## Warunki wstępne

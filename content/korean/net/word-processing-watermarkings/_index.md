@@ -6,6 +6,9 @@ description: Word 문서에서 워터마크를 추가하고 관리하는 데 필
 weight: 26
 url: /ko/net/word-processing-watermarkings/
 ---
+
+# 워드 프로세싱 워터마킹
+
 ## 소개
 
 Word 문서에 워터마킹을 하는 것은 콘텐츠를 보호하고 브랜드를 구축하는 핵심 단계입니다. .NET용 GroupDocs.Watermark를 사용하면 이 프로세스가 간단하고 효율적이 됩니다. 헤더에 이미지 워터마크를 추가하든 특정 페이지에 워터마크를 잠그든 이 튜토리얼은 각 단계를 안내하여 문서가 보호되고 전문적인지 확인합니다.

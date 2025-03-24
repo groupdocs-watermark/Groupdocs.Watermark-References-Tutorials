@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthatja ki az összes mellékletet PDF-ből a
 weight: 22
 url: /hu/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
+
+# Kivonja az összes mellékletet PDF-ből
+
 ## Bevezetés
 Szeretne könnyedén kinyerni a mellékleteket egy PDF-dokumentumból? Nos, jó helyen jársz! Ebben az átfogó oktatóanyagban végigvezetjük az összes melléklet PDF-ből történő kinyerésének folyamatán a Groupdocs.Watermark for .NET segítségével. Ez a nagy teljesítményű könyvtár lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokban kezeljék a vízjeleket, de emellett robusztus képességeket is tartalmaz a beágyazott fájlok kibontására. Akár tapasztalt fejlesztő, akár csak most kezdi, ez a lépésről lépésre bemutató útmutató gyerekjáték lesz a folyamatban.
 ## Előfeltételek

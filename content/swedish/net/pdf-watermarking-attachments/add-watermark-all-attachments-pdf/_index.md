@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar i PDF-bilagor med Grou
 weight: 16
 url: /sv/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# Lägg till vattenstämpel till alla bilagor i PDF
+
 ## Introduktion
 Att lägga till vattenstämplar i PDF-bilagor kan vara ett avgörande steg i dokumenthanteringen, särskilt när man säkerställer säkerhet eller varumärke. GroupDocs.Watermark för .NET erbjuder en omfattande lösning för att sömlöst bädda in vattenstämplar i PDF-filer. I den här handledningen guidar vi dig genom processen att lägga till en vattenstämpel till alla bilagor i ett PDF-dokument med GroupDocs.Watermark för .NET.
 ## Förutsättningar

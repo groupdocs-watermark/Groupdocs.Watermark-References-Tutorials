@@ -6,6 +6,9 @@ description: GroupDocs for .NET でドキュメントのセキュリティを強
 weight: 41
 url: /ja/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---
+
+# PDF の注釈のテキストを書式設定で置き換える
+
 ## 導入
 今日のデジタル時代では、機密情報と知的財産を保護することが最も重要です。法律専門家、法人、または重要な文書を管理する個人であっても、不正なアクセスや配布から保護することは必須です。 GroupDocs.Watermark for .NET は、この分野の強力なツールとして登場し、PDF、Word、Excel、PowerPoint、画像などのさまざまなドキュメント形式からウォーターマークを追加、検索、削除するための包括的な機能を提供します。このチュートリアルでは、GroupDocs.Watermark for .NET を使用して、PDF ファイル内の注釈のテキストを書式設定で置き換える複雑な作業について詳しく説明します。
 ## 前提条件

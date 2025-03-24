@@ -6,6 +6,9 @@ description: Aprenda como substituir imagens de forma programaticamente em docum
 weight: 33
 url: /pt/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# Substituir imagem de forma em documentos do Word
+
 ## Introdução
 No domínio do desenvolvimento de software, especialmente no ambiente .NET, é crucial lidar com a manipulação de documentos de forma eficiente e segura. Entre a infinidade de tarefas que os desenvolvedores costumam encontrar, um desafio comum é substituir imagens de formas em documentos do Word de forma programática. Esta pode ser uma tarefa tediosa sem as ferramentas e bibliotecas certas.
 Felizmente, o GroupDocs oferece uma solução poderosa na forma de GroupDocs.Watermark for .NET, uma biblioteca versátil projetada para lidar com marcas d'água e manipular marcas d'água em vários formatos de documentos, incluindo documentos do Word. Neste tutorial, nos aprofundaremos no processo passo a passo de substituição de imagens de formas em documentos do Word usando GroupDocs.Watermark for .NET.

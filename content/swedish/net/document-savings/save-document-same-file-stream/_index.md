@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar i dokument med Groupdo
 weight: 10
 url: /sv/net/document-savings/save-document-same-file-stream/
 ---
+
+# Spara dokument till samma fil eller ström
+
 ## Introduktion
 I dagens digitala tidsålder har det blivit viktigt att lägga till vattenstämplar i dokument för att skydda immateriella rättigheter och säkerställa varumärkesintegritet. Groupdocs.Watermark for .NET erbjuder en robust lösning för utvecklare som vill bädda in vattenstämplar i dokument sömlöst. Den här omfattande guiden leder dig genom stegen för att spara ett dokument med en vattenstämpel till samma fil eller ström med Groupdocs.Watermark för .NET.
 ## Förutsättningar

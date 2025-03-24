@@ -6,6 +6,9 @@ description: A GroupDocs.Watermark for .NET segítségével könnyedén adjon ho
 weight: 10
 url: /hu/net/watermarking-basics/add-image-watermark/
 ---
+
+# Kép hozzáadása vízjelhez
+
 ## Bevezetés
 Ebben az oktatóanyagban a GroupDocs.Watermark for .NET segítségével képes vízjel hozzáadásának folyamatába fogunk belemenni. A vízjelekkel ellátott dokumentumok nélkülözhetetlenek a szellemi tulajdon és a márkanév védelme szempontjából. A GroupDocs.Watermark for .NET segítségével zökkenőmentesen integrálhatja a vízjeleket különböző dokumentumformátumokba, például Word, Excel, PowerPoint, PDF és sok más formátumba.
 ## Előfeltételek

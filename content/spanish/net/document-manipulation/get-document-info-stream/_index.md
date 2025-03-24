@@ -6,6 +6,9 @@ description: Aprenda cómo obtener información de documentos de una secuencia u
 weight: 12
 url: /es/net/document-manipulation/get-document-info-stream/
 ---
+
+# Obtener información del documento de Stream
+
 ## Introducción
 En la era digital actual, proteger y gestionar la integridad de los documentos es crucial. Si usted es un profesional de negocios, un desarrollador o alguien que maneja información confidencial, la necesidad de agregar, extraer o manipular marcas de agua en sus documentos es esencial. GroupDocs.Watermark para .NET proporciona un potente conjunto de herramientas para ayudarle a lograr precisamente eso. Este artículo lo guiará en el uso de GroupDocs.Watermark para .NET para obtener información de documentos de una secuencia y le ofrecerá un tutorial paso a paso para facilitarle el proceso. Al final, dominará el uso de esta función para mejorar sus capacidades de gestión de documentos.
 ## Requisitos previos

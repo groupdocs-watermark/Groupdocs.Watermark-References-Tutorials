@@ -6,6 +6,9 @@ description: Aprenda a agregar marcas de agua a documentos usando Groupdocs.Wate
 weight: 10
 url: /es/net/document-savings/save-document-same-file-stream/
 ---
+
+# Guardar documento en el mismo archivo o secuencia
+
 ## Introducción
 En la era digital actual, agregar marcas de agua a los documentos se ha vuelto esencial para proteger la propiedad intelectual y garantizar la integridad de la marca. Groupdocs.Watermark para .NET ofrece una solución sólida para los desarrolladores que buscan incrustar marcas de agua en documentos sin problemas. Esta guía completa lo guiará a través de los pasos para guardar un documento con una marca de agua en el mismo archivo o secuencia usando Groupdocs.Watermark para .NET.
 ## Requisitos previos

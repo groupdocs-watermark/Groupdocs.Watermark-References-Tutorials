@@ -6,6 +6,9 @@ description: Növelje a dokumentumok biztonságát a GroupDocs Watermark for .NE
 weight: 41
 url: /hu/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---
+
+# Cserélje ki a szöveget a formázásra a megjegyzésekhez PDF-ben
+
 ## Bevezetés
 mai digitális korban az érzékeny információk és a szellemi tulajdon védelme a legfontosabb. Legyen szó jogi szakemberről, vállalati jogi személyről vagy döntő fontosságú dokumentumokat kezelő magánszemélyről, a jogosulatlan hozzáférés és terjesztés elleni védelem elengedhetetlen. A GroupDocs.Watermark for .NET hatékony eszközként jelenik meg ezen a területen, és átfogó funkciókat kínál vízjelek hozzáadásához, kereséséhez és eltávolításához különféle dokumentumformátumokból, például PDF, Word, Excel, PowerPoint és képekből. Ebben az oktatóanyagban a GroupDocs.Watermark for .NET segítségével a PDF-fájlokban a megjegyzések formázásával cserélhető szövegekkel foglalkozunk.
 ## Előfeltételek

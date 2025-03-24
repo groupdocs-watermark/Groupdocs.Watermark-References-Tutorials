@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 將影像浮水印�
 weight: 12
 url: /zh-hant/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# 從流中添加圖像浮水印
+
 ## 介紹
 在文件管理和安全領域，將浮水印合併到文件中至關重要。無論是品牌推廣、版權保護或維護文件完整性，水印都扮演著至關重要的角色。幸運的是，GroupDocs.Watermark for .NET 提供了一個強大的解決方案，用於新增、刪除和搜尋各種文件格式的浮水印。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Groupdocs for .NET을 사용하여 Word 문서의 이미지에 워�
 weight: 16
 url: /ko/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Word Docs의 섹션 이미지에 워터마크 추가
+
 ## 소개
 오늘날의 디지털 세계에서는 문서를 보호하는 것이 필수적입니다. Word 문서에 워터마크를 추가하는 것은 콘텐츠를 보호하는 간단하면서도 효과적인 방법입니다. 이 튜토리얼에서는 .NET용 Groupdocs.Watermark를 사용하여 Word 문서의 섹션 이미지에 워터마크를 추가하는 과정을 안내합니다. 이 기능을 애플리케이션에 통합하려는 개발자이거나 단순히 문서를 보호하려는 개발자라면 이 가이드가 도움이 될 것입니다.
 ## 전제조건

@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 轻松向文档添加水印。�
 weight: 13
 url: /zh/net/document-manipulation/get-supported-file-formats/
 ---
+
+# 获取支持的文件格式
+
 ## 介绍
 对文档加水印是保护数字资产的关键一步。无论是为了保护知识产权、确保机密性还是仅仅为了品牌宣传，水印都起着至关重要的作用。如果您是一名 .NET 开发人员，希望将水印功能集成到您的应用程序中，那么 GroupDocs.Watermark for .NET 是您应该考虑的一个强大且多功能的工具。本教程将指导您了解使用 GroupDocs.Watermark 的基本知识，从安装到应用第一个水印，分解每个步骤以确保您可以轻松地遵循。
 ## 先决条件

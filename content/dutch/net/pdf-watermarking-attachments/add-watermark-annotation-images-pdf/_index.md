@@ -6,6 +6,9 @@ description: Leer hoe u uw PDF-documenten kunt beveiligen door watermerken aan a
 weight: 17
 url: /nl/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# Voeg een watermerk toe aan annotatieafbeeldingen in PDF
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u watermerken kunt toevoegen aan annotatieafbeeldingen in PDF-documenten met Groupdocs.Watermark voor .NET. Watermerken zijn van cruciaal belang om uw documenten te beschermen tegen ongeoorloofd gebruik of verspreiding. Door deze stapsgewijze handleiding te volgen, leert u hoe u tekstwatermerken effectief kunt toepassen op annotatieafbeeldingen in PDF's.
 ## Vereisten

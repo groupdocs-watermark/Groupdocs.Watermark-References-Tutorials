@@ -6,6 +6,9 @@ description: Leer hoe u watermerken aan afbeeldingen in Word-documenten kunt toe
 weight: 16
 url: /nl/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Voeg een watermerk toe aan sectieafbeeldingen in Word-documenten
+
 ## Invoering
 In de digitale wereld van vandaag is het beschermen van uw documenten essentieel. Het toevoegen van watermerken aan uw Word-documenten is een eenvoudige maar effectieve manier om uw inhoud te beveiligen. Deze tutorial leidt u door het proces van het toevoegen van watermerken aan sectieafbeeldingen in Word-documenten met behulp van Groupdocs.Watermark voor .NET. Of u nu een ontwikkelaar bent en deze functie in uw toepassing wilt integreren of gewoon uw documenten wilt beschermen, deze handleiding is voor u.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar med sidmarginaltyp i P
 weight: 21
 url: /sv/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---
+
+# Lägg till vattenstämpel med sidmarginaltyp i PDF
+
 ## Introduktion
 dagens digitala tidsålder är det viktigare än någonsin att säkra dokument. Ett sätt att säkerställa integriteten och äktheten för dina dokument är att lägga till vattenstämplar. Groupdocs.Watermark för .NET är ett exceptionellt verktyg utformat för att göra denna process enkel. I den här handledningen går vi igenom stegen för att lägga till en vattenstämpel med sidmarginaltyp i en PDF med Groupdocs.Watermark for .NET.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Leer met deze stapsgewijze handleiding hoe u een document in een op
 weight: 12
 url: /nl/net/document-savings/save-document-specified-stream/
 ---
+
+# Document opslaan in opgegeven stream
+
 ## Invoering
 Wilt u de kunst van het toevoegen van watermerken aan uw documenten onder de knie krijgen met GroupDocs.Watermark voor .NET? U bent bij ons aan het juiste adres! In deze uitgebreide handleiding leiden we u door alles wat u moet weten om een document met succes op te slaan in een specifieke stream nadat u het van een watermerk heeft voorzien. Laten we erin duiken en aan de slag gaan.
 ## Vereisten

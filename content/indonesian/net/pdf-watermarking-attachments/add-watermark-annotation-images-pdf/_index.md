@@ -6,6 +6,9 @@ description: Pelajari cara melindungi dokumen PDF Anda dengan menambahkan tanda 
 weight: 17
 url: /id/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# Tambahkan Tanda Air ke Gambar Anotasi dalam PDF
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menambahkan tanda air ke gambar anotasi dalam dokumen PDF menggunakan Groupdocs.Watermark untuk .NET. Pemberian tanda air sangat penting untuk melindungi dokumen Anda dari penggunaan atau distribusi yang tidak sah. Dengan mengikuti panduan langkah demi langkah ini, Anda akan mempelajari cara menerapkan tanda air teks pada gambar anotasi di PDF secara efektif.
 ## Prasyarat

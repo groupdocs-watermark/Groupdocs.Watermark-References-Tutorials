@@ -6,6 +6,9 @@ description: Naučte se chránit dokumenty aplikace Word pomocí GroupDocs.Water
 weight: 28
 url: /cs/net/word-processing-watermarkings/protect-document-word-docs/
 ---
+
+# Ochrana dokumentu v dokumentech aplikace Word
+
 ## Úvod
 V tomto tutoriálu vás provedeme procesem ochrany dokumentu ve Word Docs pomocí GroupDocs.Watermark for .NET. Pomocí těchto kroků budete moci přidat vrstvu zabezpečení do dokumentů aplikace Word, která zabrání neoprávněnému přístupu a úpravám.
 ## Předpoklady

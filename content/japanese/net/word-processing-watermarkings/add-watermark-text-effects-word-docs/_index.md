@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、テキスト効果�
 weight: 21
 url: /ja/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---
+
+# Word ドキュメントにテキスト効果を使用して透かしを追加する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Watermark for .NET を使用して、テキスト効果のあるウォーターマークを Word 文書に追加する方法を説明します。これらの段階的な手順に従うことで、さまざまなテキスト効果を含むカスタマイズされた透かしを使用して文書を強化できるようになります。
 ## 前提条件

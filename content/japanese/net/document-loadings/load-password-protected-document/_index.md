@@ -6,6 +6,9 @@ description: Groupdocs for .NET を使用してパスワードで保護された
 weight: 13
 url: /ja/net/document-loadings/load-password-protected-document/
 ---
+
+# パスワードで保護されたドキュメントをロードする
+
 ## 導入
 パスワードで保護されている場合でも、透かしを追加してドキュメントを保護したいと考えていますか? Groupdocs.Watermark for .NET は、まさにそれを可能にする強力なツールです。このチュートリアルでは、パスワードで保護されたドキュメントをロードし、Groupdocs.Watermark for .NET を使用してそれにウォーターマークを追加するプロセスを説明します。飛び込んでみましょう！
 ## 前提条件

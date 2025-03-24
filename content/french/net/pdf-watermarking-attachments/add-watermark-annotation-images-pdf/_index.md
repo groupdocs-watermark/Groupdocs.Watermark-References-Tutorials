@@ -6,6 +6,9 @@ description: Découvrez comment protéger vos documents PDF en ajoutant des fili
 weight: 17
 url: /fr/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# Ajouter un filigrane aux images d'annotation dans un PDF
+
 ## Introduction
 Dans ce didacticiel, nous verrons comment ajouter des filigranes aux images d'annotation dans des documents PDF à l'aide de Groupdocs.Watermark pour .NET. Le filigrane est crucial pour protéger vos documents contre toute utilisation ou distribution non autorisée. En suivant ce guide étape par étape, vous apprendrez comment appliquer efficacement des filigranes de texte aux images d'annotation dans les PDF.
 ## Conditions préalables

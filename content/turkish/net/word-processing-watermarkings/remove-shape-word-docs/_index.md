@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinden şekil
 weight: 30
 url: /tr/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
+
+# Word Belgelerindeki Şekli Kaldırma
+
 ## giriiş
 Belge işleme ve işleme alanında, GroupDocs.Watermark for .NET, geliştiricilerin filigranlama işlevlerini .NET uygulamalarına sorunsuz bir şekilde entegre etmelerine olanak tanıyan güçlü bir araç seti olarak ortaya çıkıyor. Bu makale, Word belgelerindeki şekilleri kaldırmak için GroupDocs.Watermark for .NET'ten yararlanmanın inceliklerini ele alıyor. Geliştiriciler adım adım kılavuzu takip ederek süreci kolaylıkla ve verimli bir şekilde kavrayabilirler.
 ## Önkoşullar

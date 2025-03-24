@@ -6,6 +6,9 @@ description: Découvrez comment supprimer facilement les pièces jointes des doc
 weight: 33
 url: /fr/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---
+
+# Supprimer la pièce jointe du PDF
+
 ## Introduction
 Dans le monde du développement de logiciels, la gestion efficace des documents est une tâche cruciale. Que ce soit pour un usage personnel ou professionnel, il arrive parfois que nous ayons besoin de manipuler ou de contrôler divers éléments contenus dans des documents. GroupDocs.Watermark pour .NET est une bibliothèque puissante conçue pour répondre à ce besoin, offrant un ensemble complet d'outils pour travailler de manière transparente avec différents formats de documents.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: Aprenda como proteger seus documentos PDF adicionando marcas d’á
 weight: 17
 url: /pt/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# Adicionar marca d'água a imagens de anotação em PDF
+
 ## Introdução
 Neste tutorial, exploraremos como adicionar marcas d'água a imagens de anotação em documentos PDF usando Groupdocs.Watermark for .NET. A marca d'água é crucial para proteger seus documentos contra uso ou distribuição não autorizada. Seguindo este guia passo a passo, você aprenderá como aplicar marcas d'água de texto em imagens de anotação em PDFs de maneira eficaz.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: Scopri come proteggere i documenti Word utilizzando GroupDocs.Water
 weight: 28
 url: /it/net/word-processing-watermarkings/protect-document-word-docs/
 ---
+
+# Proteggi il documento in documenti Word
+
 ## introduzione
 In questo tutorial ti guideremo attraverso il processo di protezione di un documento in Word Docs utilizzando GroupDocs.Watermark per .NET. Seguendo questi passaggi, sarai in grado di aggiungere un livello di sicurezza ai tuoi documenti Word, impedendo accessi e modifiche non autorizzati.
 ## Prerequisiti

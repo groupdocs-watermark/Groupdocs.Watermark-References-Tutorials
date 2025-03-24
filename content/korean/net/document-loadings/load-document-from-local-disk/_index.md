@@ -6,6 +6,9 @@ description: Groupdocs for .NET으로 문서를 보호하고 관리하세요. �
 weight: 10
 url: /ko/net/document-loadings/load-document-from-local-disk/
 ---
+
+# 로컬 디스크에서 문서 로드
+
 ## 소개
 워터마킹 문서는 오늘날의 디지털 시대에 콘텐츠 보호, 소유권 주장 및 기밀성을 보장하는 데 필수적입니다. .NET용 Groupdocs.Watermark는 개발자가 다양한 문서 형식의 워터마크를 추가, 검색 및 관리할 수 있는 강력한 라이브러리입니다. 이 자습서에서는 자세한 단계별 지침을 통해 .NET용 Groupdocs.Watermark를 사용하여 문서에 워터마크를 추가하는 과정을 안내합니다.
 ## 전제조건

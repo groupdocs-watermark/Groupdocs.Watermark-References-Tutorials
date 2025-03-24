@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air ke halaman tertentu di dokumen 
 weight: 14
 url: /id/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
 ---
+
+# Tambahkan Tanda Air ke Halaman Tertentu di Word Docs
+
 ## Perkenalan
 Dokumen yang diberi watermark adalah aspek penting dalam keamanan dan pencitraan merek dokumen. Dalam tutorial ini, kita akan mempelajari cara menambahkan tanda air ke halaman tertentu di dokumen Word menggunakan GroupDocs.Watermark untuk .NET.
 ## Prasyarat

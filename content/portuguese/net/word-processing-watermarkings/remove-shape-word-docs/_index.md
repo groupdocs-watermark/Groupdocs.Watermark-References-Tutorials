@@ -6,6 +6,9 @@ description: Aprenda como remover formas de documentos do Word usando GroupDocs.
 weight: 30
 url: /pt/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
+
+# Remover forma em documentos do Word
+
 ## Introdução
 No domínio do processamento e manipulação de documentos, o GroupDocs.Watermark for .NET surge como um poderoso conjunto de ferramentas, permitindo que os desenvolvedores integrem perfeitamente funcionalidades de marca d'água em seus aplicativos .NET. Este artigo investiga as complexidades de aproveitar o GroupDocs.Watermark for .NET para remover formas em documentos do Word. Seguindo um guia passo a passo, os desenvolvedores podem compreender o processo com facilidade e eficiência.
 ## Pré-requisitos

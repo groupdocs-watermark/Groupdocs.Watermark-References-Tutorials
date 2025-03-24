@@ -6,6 +6,9 @@ description: Découvrez comment rechercher et supprimer efficacement les filigra
 weight: 22
 url: /fr/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Rechercher un filigrane dans l'en-tête/pied de page dans Word Docs
+
 ## Introduction
 Dans le monde de la gestion et de la protection des documents, le filigrane joue un rôle central. Que ce soit à des fins de branding, de protection des droits d'auteur ou de suivi de documents, l'ajout de filigranes à vos documents est essentiel. Cependant, trouver et supprimer efficacement les filigranes, en particulier dans les grands ensembles de documents, peut s'avérer une tâche ardue. C'est là que GroupDocs.Watermark pour .NET entre en jeu. Dans ce didacticiel, nous verrons comment rechercher des filigranes dans les en-têtes et les pieds de page des documents Word à l'aide de GroupDocs.Watermark pour .NET, en décomposant chaque étape pour garantir une compréhension globale.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: GroupDocs for .NET으로 문서 보안을 강화하세요. PDF 파�
 weight: 41
 url: /ko/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---
+
+# PDF의 주석 서식으로 텍스트 바꾸기
+
 ## 소개
 오늘날의 디지털 시대에는 민감한 정보와 지적 재산을 보호하는 것이 무엇보다 중요합니다. 법률 전문가, 기업체 또는 중요한 문서를 관리하는 개인이든 무단 액세스 및 배포로부터 보호하는 것이 필수입니다. .NET용 GroupDocs.Watermark는 PDF, Word, Excel, PowerPoint 및 이미지와 같은 다양한 문서 형식에서 워터마크를 추가, 검색 및 제거할 수 있는 포괄적인 기능을 제공하여 이 영역에서 강력한 도구로 부상하고 있습니다. 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 PDF 파일의 주석 서식으로 텍스트를 바꾸는 복잡한 과정을 살펴보겠습니다.
 ## 전제조건

@@ -6,6 +6,9 @@ description: Lindungi dan kelola dokumen Anda dengan Groupdocs untuk .NET. Ikuti
 weight: 10
 url: /id/net/document-loadings/load-document-from-local-disk/
 ---
+
+# Muat Dokumen dari Disk Lokal
+
 ## Perkenalan
 Dokumen yang diberi watermark sangat penting di era digital saat ini untuk memastikan perlindungan konten, penegasan kepemilikan, dan kerahasiaan. Groupdocs.Watermark untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang menambahkan, mencari, dan mengelola tanda air dalam berbagai format dokumen. Dalam tutorial ini, kami akan memandu proses penggunaan Groupdocs.Watermark untuk .NET guna menambahkan tanda air ke dokumen Anda dengan petunjuk langkah demi langkah yang mendetail.
 ## Prasyarat

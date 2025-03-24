@@ -6,6 +6,9 @@ description: Bescherm uw PDF-bestanden met gepersonaliseerde watermerken met Gro
 weight: 18
 url: /nl/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# Voeg watermerk toe aan afbeeldingsartefacten in PDF
+
 ## Invoering
 In deze zelfstudie begeleiden we u bij het toevoegen van een watermerk aan afbeeldingsartefacten in een PDF-document met behulp van GroupDocs.Watermark voor .NET. Door deze stappen te volgen, kunt u uw PDF-bestanden efficiënt beschermen met gepersonaliseerde watermerken.
 ## Vereisten

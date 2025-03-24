@@ -6,6 +6,9 @@ description: Aprenda a agregar marcas de agua de artefactos a archivos PDF sin e
 weight: 11
 url: /es/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# Agregar marca de agua de artefacto a PDF
+
 ## Introducción
 Agregar marcas de agua a archivos PDF es un aspecto crucial de la gestión de documentos, especialmente cuando se trata de proteger la propiedad intelectual o los documentos de marca. Groupdocs.Watermark para .NET proporciona una solución sólida para agregar marcas de agua a archivos PDF sin esfuerzo. En este tutorial, recorreremos paso a paso el proceso de agregar una marca de agua de artefacto a archivos PDF.
 ## Requisitos previos

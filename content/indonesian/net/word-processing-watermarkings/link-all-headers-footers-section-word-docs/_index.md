@@ -6,6 +6,9 @@ description: Tautkan header dan footer di dokumen Word dengan mudah menggunakan 
 weight: 25
 url: /id/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Tautkan Semua Header/Footer di Bagian di Word Docs
+
 ## Perkenalan
 Saat bekerja dengan dokumen Word, sering kali perlu menghubungkan header dan footer di berbagai bagian untuk konsistensi dan koherensi. Tutorial ini akan memandu Anda melalui proses langkah demi langkah menggunakan GroupDocs.Watermark untuk .NET.
 ## Impor Namespace

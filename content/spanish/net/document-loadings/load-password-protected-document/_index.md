@@ -6,6 +6,9 @@ description: Aprenda a agregar marcas de agua a documentos protegidos con contra
 weight: 13
 url: /es/net/document-loadings/load-password-protected-document/
 ---
+
+# Cargar documento protegido con contraseña
+
 ## Introducción
 ¿Está buscando proteger sus documentos agregando marcas de agua, incluso si están protegidos con contraseña? Groupdocs.Watermark para .NET es una poderosa herramienta que le permite hacer precisamente eso. En este tutorial, lo guiaremos a través del proceso de cargar un documento protegido con contraseña y agregarle una marca de agua usando Groupdocs.Watermark para .NET. ¡Vamos a sumergirnos!
 ## Requisitos previos

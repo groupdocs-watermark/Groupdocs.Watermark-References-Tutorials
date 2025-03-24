@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用してドキュメントに�
 weight: 12
 url: /ja/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# ストリームから画像透かしを追加
+
 ## 導入
 文書管理とセキュリティの分野では、ファイルに透かしを組み込むことが最も重要です。ブランド化、著作権保護、文書の完全性の維持など、透かしは重要な役割を果たします。幸いなことに、GroupDocs.Watermark for .NET は、さまざまなドキュメント形式でウォーターマークを追加、削除、検索するための堅牢なソリューションを提供します。
 ## 前提条件

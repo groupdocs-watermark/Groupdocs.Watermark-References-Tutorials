@@ -6,6 +6,9 @@ description: Aprenda como remover marcas d'água de seções específicas de doc
 weight: 32
 url: /pt/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# Remover marca d'água da seção em documentos do Word
+
 ## Introdução
 Na era digital, proteger a integridade dos documentos é fundamental, especialmente quando se trata de informações confidenciais ou conteúdo proprietário. A marca d’água é uma técnica comumente usada para afirmar propriedade, identidade de marca ou simplesmente indicar o status de um documento. No entanto, há casos em que a remoção de marcas d’água se torna necessária, seja por requisitos de edição ou por questões de privacidade.
 ## Pré-requisitos

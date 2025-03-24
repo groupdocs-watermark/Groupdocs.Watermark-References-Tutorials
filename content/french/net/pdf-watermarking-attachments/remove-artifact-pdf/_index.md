@@ -6,6 +6,9 @@ description: Découvrez comment supprimer sans effort les artefacts des document
 weight: 31
 url: /fr/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
+
+# Supprimer l'artefact du PDF
+
 ## Introduction
 Dans le domaine de la gestion et de la manipulation de documents, GroupDocs.Watermark for .NET s'impose comme un outil puissant. Il permet aux développeurs d'ajouter, de supprimer ou de manipuler de manière transparente des filigranes dans divers formats de documents tels que PDF, Word, Excel, PowerPoint et bien d'autres. Cependant, maîtriser ses capacités nécessite une approche structurée et, dans ce guide complet, nous approfondirons le processus complexe de suppression des artefacts des documents PDF à l'aide de GroupDocs.Watermark pour .NET.
 ## Conditions préalables

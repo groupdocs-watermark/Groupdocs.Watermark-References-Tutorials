@@ -6,6 +6,9 @@ description: Temukan tutorial GroupDocs.Watermark untuk .NET untuk menambahkan t
 weight: 20
 url: /id/net/watermarking-basics/
 ---
+
+# Dasar-dasar Penandaan Air
+
 ## Perkenalan
 Pemberian tanda air (watermarking) adalah teknik penting untuk melindungi dokumen Anda dan menegaskan kepemilikan Anda. GroupDocs.Watermark untuk .NET menyederhanakan proses ini, menyediakan alat canggih untuk menambahkan tanda air gambar dan teks. Baik Anda baru mengenal watermarking atau ingin meningkatkan keterampilan Anda, tutorial ini akan memandu Anda memahami dasar-dasarnya.
 

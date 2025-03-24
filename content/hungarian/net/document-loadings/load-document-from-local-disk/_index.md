@@ -6,6 +6,9 @@ description: Védje és kezelje dokumentumait a Groupdocs Watermark for .NET seg
 weight: 10
 url: /hu/net/document-loadings/load-document-from-local-disk/
 ---
+
+# Töltse be a dokumentumot a helyi lemezről
+
 ## Bevezetés
 vízjelekkel ellátott dokumentumok elengedhetetlenek a mai digitális korban a tartalomvédelem, a tulajdonjog érvényesítése és a titoktartás biztosítása érdekében. A Groupdocs.Watermark for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára vízjelek hozzáadását, keresését és kezelését különféle dokumentumformátumokban. Ebben az oktatóanyagban lépésről lépésre bemutatjuk a Groupdocs.Watermark for .NET használatának folyamatát, amellyel vízjeleket adhat a dokumentumokhoz.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Leer hoe u tekst- en afbeeldingswatermerken kunt toevoegen aan spec
 weight: 15
 url: /nl/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# Voeg watermerken toe aan specifieke pagina's in PDF
+
 ## Invoering
 Het toevoegen van watermerken aan uw PDF-documenten is een cruciale stap bij het beschermen van uw inhoud en het doen gelden van uw eigendom. Of u nu een concept markeert, gevoelige informatie beveiligt of eenvoudigweg branding toevoegt, watermerken zijn een effectief hulpmiddel. In deze zelfstudie onderzoeken we hoe u Groupdocs.Watermark voor .NET kunt gebruiken om zowel tekst- als afbeeldingswatermerken toe te voegen aan specifieke pagina's in uw PDF-bestanden. We verdelen het proces in beheersbare stappen, zodat u deze functies in uw projecten kunt volgen en implementeren.
 ## Vereisten

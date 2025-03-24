@@ -6,6 +6,9 @@ description: Fügen Sie mit GroupDocs.Watermark für .NET mühelos Bildwasserzei
 weight: 10
 url: /de/net/watermarking-basics/add-image-watermark/
 ---
+
+# Bildwasserzeichen hinzufügen
+
 ## Einführung
 In diesem Tutorial befassen wir uns mit dem Prozess des Hinzufügens eines Bildwasserzeichens zu Ihren Dokumenten mithilfe von GroupDocs.Watermark für .NET. Das Versehen von Dokumenten mit Wasserzeichen ist für den Schutz des geistigen Eigentums und der Marke unerlässlich. Mit GroupDocs.Watermark für .NET können Sie Wasserzeichen nahtlos in verschiedene Dokumentformate wie Word, Excel, PowerPoint, PDF und viele mehr integrieren.
 ## Voraussetzungen

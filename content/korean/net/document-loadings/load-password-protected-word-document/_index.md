@@ -6,6 +6,9 @@ description: 포괄적인 단계별 가이드와 함께 .NET용 GroupDocs.Waterm
 weight: 14
 url: /ko/net/document-loadings/load-password-protected-word-document/
 ---
+
+# 비밀번호로 보호된 Word 문서 로드
+
 ## 소개
 디지털 시대에는 문서를 보호하고 인증하는 것이 그 어느 때보다 중요합니다. 워터마킹은 파일을 보호하는 강력한 기술이며 .NET용 GroupDocs.Watermark를 사용하면 이 작업을 손쉽게 수행할 수 있습니다. 이 포괄적인 가이드는 비밀번호로 보호된 Word 문서에 워터마킹하는 과정을 안내하고 각 단계를 세분화하여 이해하고 쉽게 구현할 수 있도록 합니다.
 ## 전제조건

@@ -6,6 +6,9 @@ description: Z łatwością zamieniaj obrazy w plikach PDF za pomocą programu G
 weight: 39
 url: /pl/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
+
+# Zastąp obraz określonym obiektem XObject w formacie PDF
+
 ## Wstęp
 Witamy w naszym szczegółowym przewodniku na temat zastępowania obrazu określonego XObject w pliku PDF przy użyciu GroupDocs.Watermark dla .NET. Jeśli chcesz zarządzać znakami wodnymi lub modyfikować zawartość plików PDF, jesteś we właściwym miejscu. Ten samouczek przeprowadzi Cię przez każdy krok, dzięki czemu możesz bezpiecznie aktualizować dokumenty PDF o nowe obrazy. Zanurzmy się w to!
 ## Warunki wstępne

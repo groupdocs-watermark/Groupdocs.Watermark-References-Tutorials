@@ -6,6 +6,9 @@ description: Naučte se, jak přidat vodoznaky s dlaždicovými obrázky do vaš
 weight: 10
 url: /cs/net/image-watermarkings/add-tiled-image-watermark/
 ---
+
+# Přidat vodoznak dlaždicového obrázku
+
 ## Úvod
 GroupDocs.Watermark for .NET je výkonné rozhraní API, které umožňuje vývojářům programově přidávat, odstraňovat a vyhledávat vodoznaky v různých formátech dokumentů. V tomto tutoriálu vás provedeme procesem přidávání vodoznaku dlaždicového obrázku do vašich dokumentů pomocí GroupDocs.Watermark for .NET.
 ## Předpoklady

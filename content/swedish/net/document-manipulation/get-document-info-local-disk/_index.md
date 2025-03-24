@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till, tar bort och extraherar vattenstämpl
 weight: 11
 url: /sv/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# Få dokumentinformation från lokal disk
+
 ## Introduktion
 Välkommen till den ultimata guiden om hur du använder GroupDocs.Watermark för .NET! Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här artikeln att gå igenom det väsentliga för att vattenmärka dina dokument med detta kraftfulla verktyg. I slutet kommer du att vara proffs på att bädda in vattenstämplar i dina dokument, och se till att de är skyddade och märkta enligt dina specifikationer.
 ## Förutsättningar

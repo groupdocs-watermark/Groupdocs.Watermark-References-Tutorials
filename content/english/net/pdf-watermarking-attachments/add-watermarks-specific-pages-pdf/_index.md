@@ -6,6 +6,9 @@ description: Learn to add text and image watermarks to specific pages in PDFs us
 weight: 15
 url: /net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# Add Watermarks to Specific Pages in PDF
+
 ## Introduction
 Adding watermarks to your PDF documents is a crucial step in protecting your content and asserting your ownership. Whether you're marking a draft, securing sensitive information, or simply adding branding, watermarks are an effective tool. In this tutorial, we'll explore how to use Groupdocs.Watermark for .NET to add both text and image watermarks to specific pages in your PDF files. We'll break down the process into manageable steps, ensuring you can follow along and implement these features in your projects.
 ## Prerequisites

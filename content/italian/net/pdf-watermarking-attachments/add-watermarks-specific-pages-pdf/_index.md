@@ -6,6 +6,9 @@ description: Impara ad aggiungere filigrane di testo e immagini a pagine specifi
 weight: 15
 url: /it/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# Aggiungi filigrane a pagine specifiche in PDF
+
 ## introduzione
 L'aggiunta di filigrane ai tuoi documenti PDF è un passaggio cruciale per proteggere i tuoi contenuti e affermarne la proprietà. Che tu stia contrassegnando una bozza, proteggendo informazioni sensibili o semplicemente aggiungendo un marchio, le filigrane sono uno strumento efficace. In questo tutorial esploreremo come utilizzare Groupdocs.Watermark per .NET per aggiungere filigrane di testo e immagini a pagine specifiche nei file PDF. Suddivideremo il processo in passaggi gestibili, assicurandoti che tu possa seguire e implementare queste funzionalità nei tuoi progetti.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: Aprenda como adicionar marcas d'água com tipo de margem de página
 weight: 21
 url: /pt/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---
+
+# Adicionar marca d'água com tipo de margem de página em PDF
+
 ## Introdução
 Na era digital de hoje, proteger documentos é mais crucial do que nunca. Uma forma de garantir a integridade e autenticidade dos seus documentos é adicionar marcas d'água. Groupdocs.Watermark for .NET é uma ferramenta excepcional projetada para facilitar esse processo. Neste tutorial, orientaremos você nas etapas para adicionar uma marca d'água com tipo de margem de página em um PDF usando Groupdocs.Watermark for .NET.
 ## Pré-requisitos

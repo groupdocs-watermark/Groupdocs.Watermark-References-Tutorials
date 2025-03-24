@@ -6,6 +6,9 @@ description: Learn how to add image watermarks to documents using GroupDocs.Wate
 weight: 12
 url: /net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# Add Image Watermark from Stream
+
 ## Introduction
 In the realm of document management and security, incorporating watermarks into files holds paramount importance. Whether it's about branding, copyright protection, or maintaining document integrity, watermarks play a crucial role. Fortunately, GroupDocs.Watermark for .NET provides a robust solution for adding, removing, and searching watermarks in various document formats.
 ## Prerequisites

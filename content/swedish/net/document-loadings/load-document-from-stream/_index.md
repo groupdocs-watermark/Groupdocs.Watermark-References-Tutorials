@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar i dokument med GroupDo
 weight: 11
 url: /sv/net/document-loadings/load-document-from-stream/
 ---
+
+# Ladda dokument från Stream
+
 ## Introduktion
 Vill du lägga till vattenstämplar till dina dokument sömlöst med .NET? Kolla inte vidare! GroupDocs.Watermark for .NET är ett kraftfullt och lättanvänt bibliotek som låter dig hantera vattenstämplar i olika dokumentformat. Oavsett om du arbetar med PDF-filer, Word-dokument eller bilder, har det här verktyget dig täckt. I den här handledningen går vi igenom processen att ladda ett dokument från en ström och lägga till en vattenstämpel steg för steg. Så, låt oss dyka direkt in!
 ## Förutsättningar

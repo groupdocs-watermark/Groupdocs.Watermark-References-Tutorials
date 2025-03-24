@@ -6,6 +6,9 @@ description: Säkra dina dokument genom att lägga till låsta vattenstämplar m
 weight: 11
 url: /sv/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Lägg till låst vattenstämpel på alla sidor i Word Docs
+
 ## Introduktion
 Att lägga till vattenstämplar i dina dokument är ett viktigt steg för att säkra och skapa varumärke för ditt innehåll. Oavsett om du förhindrar obehörig användning eller bara lägger till en professionell touch, kan vattenstämplar tjäna flera syften. I den här handledningen går vi igenom processen att lägga till en låst vattenstämpel på alla sidor i ett Word-dokument med hjälp av Groupdocs.Watermark for .NET.
 ## Förutsättningar

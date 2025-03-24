@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、Word 文書内の画
 weight: 17
 url: /ja/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Word ドキュメントの図形画像に透かしを追加する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Watermark for .NET を使用して、Word ドキュメント内の画像にウォーターマークを追加して整形する方法を説明します。透かしは、特に機密情報や機密情報を扱う場合、文書保護の重要な側面です。画像の形状に透かしを追加することで、ドキュメントの完全性とセキュリティを確保できます。
 ## 前提条件

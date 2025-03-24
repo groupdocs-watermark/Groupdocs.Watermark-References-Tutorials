@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan cserélheti le a képeket adott PDF-jegyzetekbe
 weight: 37
 url: /hu/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
+
+# Cserélje le a képet egy adott megjegyzésre a PDF-ben
+
 ## Bevezetés
 Üdvözöljük ebben az átfogó útmutatóban a GroupDocs.Watermark for .NET használatáról a PDF-dokumentumok meghatározott megjegyzéseiben található képek cseréjére. Függetlenül attól, hogy Ön egy fejlesztő, aki a PDF-kezelési képességeit szeretné továbbfejleszteni, vagy egyszerűen csak kíváncsi a vízjelezés bonyolultságára, ez az oktatóanyag mindent megtalál. A végére zökkenőmentesen lecserélheti a PDF-jegyzetekben lévő képeket egyénire, így optimalizálhatja a dokumentumfeldolgozási munkafolyamatokat.
 ## Előfeltételek

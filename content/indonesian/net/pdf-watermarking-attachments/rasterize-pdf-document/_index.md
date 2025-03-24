@@ -6,6 +6,9 @@ description: Pelajari cara melakukan rasterisasi dokumen PDF menggunakan GroupDo
 weight: 27
 url: /id/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# Rasterisasi Dokumen PDF
+
 ## Perkenalan
 Dalam bidang manajemen dan manipulasi dokumen, GroupDocs.Watermark untuk .NET berdiri sebagai alat yang ampuh, menawarkan kemampuan canggih untuk menambah, menghapus, dan mencari tanda air dalam berbagai format dokumen. Baik itu melindungi dokumen Anda dengan pemberitahuan hak cipta, menambahkan logo perusahaan untuk pencitraan merek, atau sekadar memberi anotasi pada dokumen dengan stempel, GroupDocs.Watermark menyederhanakan proses dengan API intuitif dan rangkaian fitur ekstensif.
 ## Prasyarat

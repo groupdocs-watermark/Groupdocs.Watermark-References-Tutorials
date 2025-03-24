@@ -6,6 +6,9 @@ description: Busque imágenes de manera eficiente dentro de archivos adjuntos PD
 weight: 46
 url: /es/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---
+
+# Buscar imagen en el archivo adjunto del PDF
+
 ## Introducción
 GroupDocs.Watermark para .NET es una potente API diseñada para facilitar la manipulación y gestión perfectas de marcas de agua en varios formatos de documentos, incluidos los PDF. Ya sea que necesite agregar, eliminar o buscar marcas de agua en archivos adjuntos de PDF, esta herramienta versátil ofrece una solución integral.
 ## Requisitos previos

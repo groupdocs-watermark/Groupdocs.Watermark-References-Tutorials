@@ -6,6 +6,9 @@ description: Groupdocs.Watermark for .NET を使用してロックされたウ�
 weight: 11
 url: /ja/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Word ドキュメントのすべてのページにロックされた透かしを追加する
+
 ## 導入
 ドキュメントに透かしを追加することは、コンテンツを保護しブランド化する上で重要なステップです。不正使用を防止する場合でも、単にプロフェッショナルな雰囲気を加える場合でも、ウォーターマークはさまざまな目的に役立ちます。このチュートリアルでは、Groupdocs.Watermark for .NET を使用して、ロックされたウォーターマークを Word 文書のすべてのページに追加するプロセスを説明します。
 ## 前提条件

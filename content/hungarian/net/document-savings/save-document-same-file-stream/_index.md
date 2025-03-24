@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat vízjeleket dokumentumokhoz a Groupdocs.W
 weight: 10
 url: /hu/net/document-savings/save-document-same-file-stream/
 ---
+
+# Mentse a dokumentumot ugyanabba a fájlba vagy adatfolyamba
+
 ## Bevezetés
 Napjaink digitális korában a vízjelek hozzáadása a dokumentumokhoz elengedhetetlenné vált a szellemi tulajdon védelme és a márka integritásának biztosítása érdekében. A Groupdocs.Watermark for .NET robusztus megoldást kínál azoknak a fejlesztőknek, akik zökkenőmentesen szeretnék vízjeleket beágyazni a dokumentumokba. Ez az átfogó útmutató végigvezeti Önt egy vízjellel ellátott dokumentum ugyanabba a fájlba vagy adatfolyamba mentésének lépésein a Groupdocs.Watermark for .NET segítségével.
 ## Előfeltételek

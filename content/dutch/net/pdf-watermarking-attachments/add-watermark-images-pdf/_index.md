@@ -6,6 +6,9 @@ description: Leer watermerken toevoegen aan afbeeldingen in PDF-documenten met G
 weight: 19
 url: /nl/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# Voeg watermerk toe aan afbeeldingen in PDF
+
 ## Invoering
 Het toevoegen van watermerken aan afbeeldingen in een PDF-document kan essentieel zijn voor het beschermen van uw intellectuele eigendom of het garanderen van de authenticiteit van uw documenten. Met GroupDocs.Watermark voor .NET kan deze taak efficiënt en gemakkelijk worden uitgevoerd. Deze tutorial begeleidt u bij elke stap van het proces, van het instellen van uw omgeving tot het toevoegen van watermerken en het opslaan van het definitieve document. Laten we erin duiken!
 ## Vereisten

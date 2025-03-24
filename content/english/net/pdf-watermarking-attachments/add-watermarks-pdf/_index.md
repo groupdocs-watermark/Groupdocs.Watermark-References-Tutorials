@@ -6,6 +6,9 @@ description: Learn how to add text and image watermarks to your PDFs using Group
 weight: 14
 url: /net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---
+
+# Add Watermarks to PDF
+
 ## Introduction
 Are you looking to add watermarks to your PDFs to protect your documents or brand them with your logo? Look no further! In this tutorial, we'll dive into the process of using GroupDocs.Watermark for .NET to add both text and image watermarks to your PDF files. Whether you're a seasoned developer or just starting, this guide will walk you through each step, ensuring you can apply watermarks with ease and precision.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Tìm hiểu cách thay thế hình ảnh hình dạng trong tài li
 weight: 33
 url: /vi/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# Thay thế hình ảnh hình dạng trong tài liệu Word
+
 ## Giới thiệu
 Trong lĩnh vực phát triển phần mềm, đặc biệt là trong môi trường .NET, việc xử lý thao tác tài liệu một cách hiệu quả và an toàn là rất quan trọng. Trong vô số nhiệm vụ mà các nhà phát triển thường gặp phải, một thách thức chung là thay thế hình ảnh trong tài liệu Word theo chương trình. Đây có thể là một công việc tẻ nhạt nếu không có các công cụ và thư viện phù hợp.
 May mắn thay, GroupDocs cung cấp một giải pháp mạnh mẽ dưới dạng GroupDocs.Watermark cho .NET, một thư viện đa năng được thiết kế để xử lý hình mờ và thao tác hình mờ trong các định dạng tài liệu khác nhau, bao gồm cả tài liệu Word. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình từng bước thay thế hình ảnh hình dạng trong tài liệu Word bằng GroupDocs.Watermark cho .NET.

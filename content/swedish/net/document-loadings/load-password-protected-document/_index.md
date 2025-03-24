@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar i lösenordsskyddade d
 weight: 13
 url: /sv/net/document-loadings/load-password-protected-document/
 ---
+
+# Ladda lösenordsskyddat dokument
+
 ## Introduktion
 Vill du skydda dina dokument genom att lägga till vattenstämplar, även om de är lösenordsskyddade? Groupdocs.Watermark för .NET är ett kraftfullt verktyg som låter dig göra just det. I den här handledningen guidar vi dig genom processen att ladda ett lösenordsskyddat dokument och lägga till en vattenstämpel till det med Groupdocs.Watermark for .NET. Låt oss dyka in!
 ## Förutsättningar

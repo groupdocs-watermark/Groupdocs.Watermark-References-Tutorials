@@ -6,6 +6,9 @@ description: Részletes útmutatónkból megtudhatja, hogyan adhat vízjeleket j
 weight: 13
 url: /hu/net/document-loadings/load-password-protected-document/
 ---
+
+# Jelszóval védett dokumentum betöltése
+
 ## Bevezetés
 Szeretné megvédeni dokumentumait vízjelek hozzáadásával, még akkor is, ha azok jelszóval védettek? A Groupdocs.Watermark for .NET egy hatékony eszköz, amely lehetővé teszi, hogy ezt megtegye. Ebben az oktatóanyagban végigvezetjük a jelszóval védett dokumentum betöltésének folyamatán, és a Groupdocs.Watermark for .NET segítségével vízjel hozzáadásával. Merüljünk el!
 ## Előfeltételek

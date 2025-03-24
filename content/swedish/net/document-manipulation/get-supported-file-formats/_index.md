@@ -6,6 +6,9 @@ description: Lägg enkelt till vattenstämplar i dina dokument med GroupDocs.Wat
 weight: 13
 url: /sv/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Skaffa filformat som stöds
+
 ## Introduktion
 Att vattenmärka dina dokument är ett avgörande steg för att skydda dina digitala tillgångar. Oavsett om det är för att skydda immateriella rättigheter, säkerställa konfidentialitet eller helt enkelt varumärke, spelar vattenstämplar en viktig roll. Om du är en .NET-utvecklare som vill integrera vattenmärkningsfunktioner i dina applikationer, är GroupDocs.Watermark for .NET ett kraftfullt och mångsidigt verktyg som du bör överväga. Denna handledning guidar dig genom det väsentliga med att använda GroupDocs.Watermark, från installation till att applicera din första vattenstämpel, och dela upp varje steg för att säkerställa att du enkelt kan följa med.
 ## Förutsättningar

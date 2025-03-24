@@ -6,6 +6,9 @@ description: Dowiedz się, jak zastąpić tekst określonych artefaktów w dokum
 weight: 42
 url: /pl/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---
+
+# Zastąp tekst określonym artefaktem w pliku PDF
+
 ## Wstęp
 dzisiejszej epoce cyfrowej ochrona integralności i poufności dokumentów ma ogromne znaczenie. Niezależnie od tego, czy jesteś prawnikiem chroniącym poufne umowy, czy też dyrektorem biznesowym dbającym o bezpieczeństwo informacji zastrzeżonych, nie można przecenić potrzeby niezawodnej ochrony dokumentów. GroupDocs.Watermark dla .NET okazuje się solidnym rozwiązaniem, oferującym bezproblemową integrację i zaawansowane funkcje do łatwego znakowania wodnego i manipulowania dokumentami.
 ## Warunki wstępne

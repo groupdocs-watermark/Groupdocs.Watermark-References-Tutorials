@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak PDF ekleri içindeki gör
 weight: 46
 url: /tr/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---
+
+# PDF Ekinde Resim Ara
+
 ## giriiş
 GroupDocs.Watermark for .NET, PDF'ler de dahil olmak üzere çeşitli belge formatlarındaki filigranların kusursuz şekilde işlenmesini ve yönetimini kolaylaştırmak için tasarlanmış güçlü bir API'dir. PDF eklerinde filigran eklemeniz, kaldırmanız veya aramanız gerekiyorsa, bu çok yönlü araç kapsamlı bir çözüm sunar.
 ## Önkoşullar

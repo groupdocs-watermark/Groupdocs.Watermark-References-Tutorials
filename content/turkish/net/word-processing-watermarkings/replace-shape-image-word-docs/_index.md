@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki şeki
 weight: 33
 url: /tr/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# Word Belgelerindeki Şekil Görüntüsünü Değiştirme
+
 ## giriiş
 Yazılım geliştirme alanında, özellikle .NET ortamında, belge manipülasyonunun verimli ve güvenli bir şekilde ele alınması çok önemlidir. Geliştiricilerin sıklıkla karşılaştığı sayısız görev arasında en sık karşılaşılan zorluklardan biri, Word belgelerindeki şekil görüntülerini program aracılığıyla değiştirmektir. Doğru araçlar ve kütüphaneler olmadan bu sıkıcı bir görev olabilir.
 Neyse ki GroupDocs, Word belgeleri de dahil olmak üzere çeşitli belge formatlarında filigran ekleme ve filigranları işlemek için tasarlanmış çok yönlü bir kitaplık olan GroupDocs.Watermark for .NET biçiminde güçlü bir çözüm sunuyor. Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki şekil görüntülerini değiştirme işlemini adım adım inceleyeceğiz.

@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air dengan mudah ke dokumen Anda me
 weight: 11
 url: /id/net/document-savings/save-document-specified-location/
 ---
+
+# Simpan Dokumen ke Lokasi Tertentu
+
 ## Perkenalan
 Di era digital, pengamanan dokumen menjadi lebih penting dari sebelumnya. Watermarking adalah cara efektif untuk melindungi dokumen Anda dari penggunaan yang tidak sah. GroupDocs.Watermark untuk .NET menawarkan solusi tangguh untuk menambahkan tanda air ke dokumen Anda. Baik Anda seorang pengembang yang ingin mengintegrasikan watermarking ke dalam aplikasi Anda atau seseorang yang tertarik untuk melindungi dokumen Anda, tutorial ini akan memandu Anda melalui proses langkah demi langkah.
 ## Prasyarat

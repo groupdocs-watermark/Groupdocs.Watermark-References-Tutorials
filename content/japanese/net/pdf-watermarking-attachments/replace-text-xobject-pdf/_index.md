@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して PDF 内のテキスト
 weight: 44
 url: /ja/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
+
+# PDF 内の特定の XObject のテキストを置換する
+
 ## 導入
 文書処理、機密情報の管理、または知的財産の保護の分野では、透かしは極めて重要な役割を果たします。ただし、透かしは文書に目に見えるマークを追加するだけではありません。それを効率的かつ効果的に行うことが重要です。 GroupDocs.Watermark for .NET は、この分野の強力なツールとして登場し、シームレスな統合、堅牢な機能、そして最高の使いやすさを提供します。この包括的なガイドでは、GroupDocs.Watermark for .NET を使用して PDF ドキュメント内の特定の XObject のテキストを置換する複雑な作業について詳しく説明します。
 ## 前提条件

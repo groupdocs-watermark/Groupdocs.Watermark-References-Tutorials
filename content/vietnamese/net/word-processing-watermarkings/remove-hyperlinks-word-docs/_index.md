@@ -6,6 +6,9 @@ description: Tìm hiểu cách xóa siêu liên kết khỏi tài liệu Word b�
 weight: 29
 url: /vi/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# Xóa siêu liên kết trong tài liệu Word
+
 ## Giới thiệu
 Trong thế giới kỹ thuật số ngày nay, nơi thông tin được truyền đi một cách liền mạch, việc bảo vệ tài liệu của bạn là điều tối quan trọng. Cho dù bạn đang chia sẻ dữ liệu kinh doanh nhạy cảm hay đang tạo ra một kiệt tác, việc bảo vệ nội dung của bạn khỏi bị truy cập và thao túng trái phép là điều vô cùng quan trọng. Với sự ra đời của GroupDocs.Watermark dành cho .NET, bạn có thể đảm bảo tính toàn vẹn của tài liệu của mình bằng cách thêm, xóa và phát hiện hình mờ một cách dễ dàng.
 ## Điều kiện tiên quyết

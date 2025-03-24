@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać do dokumentów znaki wodne w postaci są
 weight: 10
 url: /pl/net/image-watermarkings/add-tiled-image-watermark/
 ---
+
+# Dodaj znak wodny obrazu kafelkowego
+
 ## Wstęp
 GroupDocs.Watermark dla .NET to potężny interfejs API, który umożliwia programistom programowe dodawanie, usuwanie i wyszukiwanie znaków wodnych w różnych formatach dokumentów. W tym samouczku przeprowadzimy Cię przez proces dodawania znaku wodnego z obrazem kafelkowym do dokumentów przy użyciu programu GroupDocs.Watermark dla platformy .NET.
 ## Warunki wstępne

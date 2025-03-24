@@ -6,6 +6,9 @@ description: 使用 GroupDocs for .NET 轻松从 Word 文档中获取有价值�
 weight: 24
 url: /zh/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# 在 Word 文档中获取形状信息
+
 ## 介绍
 在数据为王的数字环境中，从文档中提取有意义的见解至关重要。 GroupDocs.Watermark for .NET 使开发人员能够深入研究文档结构，轻松提取有价值的信息。在本教程中，我们将逐步探索如何利用这个强大的工具从Word文档中获取形状信息。
 ## 先决条件

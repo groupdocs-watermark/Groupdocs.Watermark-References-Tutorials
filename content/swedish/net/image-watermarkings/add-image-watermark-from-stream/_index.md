@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till bildvattenstämplar i dokument med Gro
 weight: 12
 url: /sv/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# Lägg till bildvattenstämpel från Stream
+
 ## Introduktion
 När det gäller dokumenthantering och säkerhet är det av största vikt att införliva vattenstämplar i filer. Oavsett om det handlar om varumärke, upphovsrättsskydd eller att bibehålla dokumentintegritet, spelar vattenstämplar en avgörande roll. Lyckligtvis tillhandahåller GroupDocs.Watermark för .NET en robust lösning för att lägga till, ta bort och söka efter vattenstämplar i olika dokumentformat.
 ## Förutsättningar

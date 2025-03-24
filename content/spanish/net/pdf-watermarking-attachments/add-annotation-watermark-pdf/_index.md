@@ -6,6 +6,9 @@ description: Aprenda a agregar marcas de agua de anotaciones a documentos PDF si
 weight: 10
 url: /es/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# Agregar marca de agua de anotación a PDF
+
 ## Introducción
 En el ámbito de la gestión de documentos, agregar marcas de agua a los archivos PDF es un aspecto crucial, especialmente con fines de marca, seguridad e identificación de documentos. GroupDocs.Watermark para .NET es una potente biblioteca que facilita la perfecta integración de marcas de agua en varios formatos de documentos, incluidos los PDF. En este tutorial, profundizaremos en el proceso de agregar marcas de agua de anotación a documentos PDF paso a paso, utilizando las funcionalidades proporcionadas por GroupDocs.Watermark para .NET.
 ## Requisitos previos

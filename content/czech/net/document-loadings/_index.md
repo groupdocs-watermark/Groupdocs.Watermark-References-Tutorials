@@ -6,6 +6,9 @@ description: Objevte výukové programy GroupDocs.Watermark for .NET pro načít
 weight: 22
 url: /cs/net/document-loadings/
 ---
+
+# Načítání dokumentu
+
 ## Úvod
 Pokud jste vývojář, který chce zlepšit zabezpečení dokumentů a branding, GroupDocs.Watermark for .NET je nástroj, který potřebujete. Naše komplexní výukové programy vás provedou procesem načítání a označování dokumentů různých typů. Pojďme se ponořit do několika základních návodů, které vám pomohou tento nástroj zvládnout.
 

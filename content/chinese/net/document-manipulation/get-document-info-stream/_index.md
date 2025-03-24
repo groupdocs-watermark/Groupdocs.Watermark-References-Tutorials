@@ -6,6 +6,9 @@ description: 通过此分步指南，了解如何使用 GroupDocs.Watermark for 
 weight: 12
 url: /zh/net/document-manipulation/get-document-info-stream/
 ---
+
+# 从流中获取文档信息
+
 ## 介绍
 在当今的数字时代，保护和管理文档完整性至关重要。无论您是业务专业人士、开发人员还是处理敏感信息的人员，在文档中添加、提取或操作水印的需求都是必不可少的。 GroupDocs.Watermark for .NET 提供了一个强大的工具包来帮助您实现这一目标。本文将指导您使用 GroupDocs.Watermark for .NET 从流中获取文档信息，并提供分步教程来帮助您轻松完成该过程。最后，您将熟练使用此功能来增强您的文档管理能力。
 ## 先决条件

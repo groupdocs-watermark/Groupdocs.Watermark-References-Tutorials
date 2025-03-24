@@ -6,6 +6,9 @@ description: Aprenda a eliminar anotaciones de archivos PDF utilizando GroupDocs
 weight: 29
 url: /es/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---
+
+# Eliminar anotación de PDF
+
 ## Introducción
 En ocasiones, las anotaciones en documentos PDF pueden saturar el contenido o interferir con la legibilidad del documento. Con GroupDocs.Watermark para .NET, puede eliminar anotaciones de archivos PDF sin esfuerzo. En este tutorial, lo guiaremos a través del proceso paso a paso.
 ## Requisitos previos

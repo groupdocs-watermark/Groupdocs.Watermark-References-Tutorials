@@ -6,6 +6,9 @@ description: Aggiungi facilmente filigrane ai tuoi documenti utilizzando GroupDo
 weight: 13
 url: /it/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Ottieni formati di file supportati
+
 ## introduzione
 La filigrana dei tuoi documenti è un passaggio cruciale per salvaguardare le tue risorse digitali. Che si tratti di proteggere la proprietà intellettuale, garantire la riservatezza o semplicemente marchiare, le filigrane svolgono un ruolo fondamentale. Se sei uno sviluppatore .NET che desidera integrare funzionalità di filigrana nelle tue applicazioni, GroupDocs.Watermark per .NET è uno strumento potente e versatile che dovresti prendere in considerazione. Questo tutorial ti guiderà attraverso gli elementi essenziali dell'utilizzo di GroupDocs.Watermark, dall'installazione all'applicazione della prima filigrana, suddividendo ogni passaggio per assicurarti di poterlo seguire facilmente.
 ## Prerequisiti

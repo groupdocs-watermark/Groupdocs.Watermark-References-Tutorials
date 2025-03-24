@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 PDF 첨부 파일에 �
 weight: 16
 url: /ko/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# PDF의 모든 첨부 파일에 워터마크 추가
+
 ## 소개
 PDF 첨부 파일에 워터마크를 추가하는 것은 특히 보안이나 브랜딩을 보장할 때 문서 관리에서 중요한 단계가 될 수 있습니다. .NET용 GroupDocs.Watermark는 PDF 파일에 워터마크를 원활하게 삽입하기 위한 포괄적인 솔루션을 제공합니다. 이 자습서에서는 .NET용 GroupDocs.Watermark를 사용하여 PDF 문서 내의 모든 첨부 파일에 워터마크를 추가하는 과정을 안내합니다.
 ## 전제조건

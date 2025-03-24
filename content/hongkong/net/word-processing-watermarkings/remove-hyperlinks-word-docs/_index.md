@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 從 Word 文件中�
 weight: 29
 url: /zh-hant/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# 刪除 Word 文件中的超鏈接
+
 ## 介紹
 在當今資訊無縫流動的數位世界中，保護您的文件至關重要。無論您是共享敏感的業務資料還是製作傑作，保護您的內容免遭未經授權的存取和操縱都至關重要。隨著 GroupDocs.Watermark for .NET 的出現，您可以透過輕鬆新增、刪除和偵測浮水印來確保文件的完整性。
 ## 先決條件

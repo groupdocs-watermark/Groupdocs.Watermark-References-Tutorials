@@ -6,6 +6,9 @@ description: Khám phá các hướng dẫn GroupDocs.Watermark for .NET để t
 weight: 20
 url: /vi/net/watermarking-basics/
 ---
+
+# Khái niệm cơ bản về hình mờ
+
 ## Giới thiệu
 Hình mờ là một kỹ thuật quan trọng để bảo vệ tài liệu của bạn và khẳng định quyền sở hữu của bạn. GroupDocs.Watermark dành cho .NET đơn giản hóa quy trình này, cung cấp các công cụ mạnh mẽ để thêm cả hình mờ hình ảnh và văn bản. Cho dù bạn là người mới làm quen với hình mờ hay đang tìm cách nâng cao kỹ năng của mình, những hướng dẫn này sẽ hướng dẫn bạn những điều cơ bản.
 

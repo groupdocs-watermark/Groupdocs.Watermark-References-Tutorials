@@ -6,6 +6,9 @@ description: V této příručce se dozvíte, jak generovat náhledy dokumentů 
 weight: 10
 url: /cs/net/document-manipulation/generate-document-preview/
 ---
+
+# Generovat náhled dokumentu
+
 ## Úvod
 Ve světě správy digitálních dokumentů hraje vodoznak zásadní roli při zajišťování bezpečnosti a pravosti dokumentů. GroupDocs.Watermark for .NET je výkonný nástroj, který umožňuje vývojářům přidávat vodoznaky do dokumentů bez námahy. V tomto tutoriálu vás provedeme procesem generování náhledů dokumentů pomocí GroupDocs.Watermark for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tato příručka vám poskytne komplexní postup krok za krokem k dosažení vašeho cíle.
 ## Předpoklady

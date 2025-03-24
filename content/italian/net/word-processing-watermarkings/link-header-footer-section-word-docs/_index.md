@@ -6,6 +6,9 @@ description: Scopri come collegare in modo efficiente intestazioni e piè di pag
 weight: 26
 url: /it/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Collega intestazione/piè di pagina nella sezione in documenti Word
+
 ## introduzione
 Nel mondo dello sviluppo .NET, la gestione delle filigrane nei documenti Word può essere un compito cruciale, sia che tu stia proteggendo informazioni sensibili o aggiungendo elementi di branding. Fortunatamente, GroupDocs.Watermark per .NET fornisce una potente soluzione per gestire le filigrane in modo efficiente. In questo tutorial esploreremo come collegare intestazioni e piè di pagina in sezioni di documenti Word utilizzando GroupDocs.Watermark.
 ## Prerequisiti

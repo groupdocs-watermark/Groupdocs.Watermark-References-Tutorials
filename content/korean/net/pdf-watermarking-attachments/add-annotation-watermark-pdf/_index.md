@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 PDF 문서에 주석 �
 weight: 10
 url: /ko/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# PDF에 주석 워터마크 추가
+
 ## 소개
 문서 관리 영역에서 PDF 파일에 워터마크를 추가하는 것은 특히 브랜딩, 보안 및 문서 식별 목적에서 중요한 측면입니다. GroupDocs.Watermark for .NET은 PDF를 포함한 다양한 문서 형식에 워터마크를 원활하게 통합할 수 있게 해주는 강력한 라이브러리입니다. 이 튜토리얼에서는 GroupDocs.Watermark for .NET에서 제공하는 기능을 활용하여 PDF 문서에 주석 워터마크를 추가하는 과정을 단계별로 자세히 살펴보겠습니다.
 ## 전제조건

@@ -6,6 +6,9 @@ description: Ebből az útmutatóból megtudhatja, hogyan hozhat létre dokument
 weight: 10
 url: /hu/net/document-manipulation/generate-document-preview/
 ---
+
+# Dokumentum előnézetének létrehozása
+
 ## Bevezetés
 A digitális dokumentumkezelés világában a vízjel döntő szerepet játszik a dokumentumok biztonságának és hitelességének biztosításában. A GroupDocs.Watermark for .NET egy hatékony eszköz, amellyel a fejlesztők könnyedén adhatnak vízjeleket a dokumentumokhoz. Ebben az oktatóanyagban végigvezetjük a dokumentum-előnézetek létrehozásának folyamatán a GroupDocs.Watermark for .NET használatával. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az útmutató átfogó lépésről lépésre bemutatja a célját.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Aprenda cómo agregar una marca de agua bloqueada a páginas espec�
 weight: 12
 url: /es/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Agregar marca de agua bloqueada a páginas específicas en documentos de Word
+
 ## Introducción
 ¿Está buscando agregar una marca de agua a páginas específicas de sus documentos de Word, pero desea bloquearla para que no se pueda eliminar o editar fácilmente? ¡Estás en el lugar correcto! En este tutorial, lo guiaremos a través del proceso de agregar una marca de agua bloqueada a páginas específicas en documentos de Word usando GroupDocs.Watermark para .NET. Esta poderosa biblioteca facilita la aplicación, administración y personalización de marcas de agua en una variedad de tipos de documentos. Si usted es un desarrollador o simplemente alguien que necesita proteger sus documentos, esta guía lo guiará a través de cada paso de manera sencilla.
 ## Requisitos previos

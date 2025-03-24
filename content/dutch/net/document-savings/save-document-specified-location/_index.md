@@ -6,6 +6,9 @@ description: Leer hoe u eenvoudig watermerken aan uw documenten kunt toevoegen m
 weight: 11
 url: /nl/net/document-savings/save-document-specified-location/
 ---
+
+# Document opslaan op opgegeven locatie
+
 ## Invoering
 In het digitale tijdperk is het beveiligen van documenten belangrijker dan ooit geworden. Watermerken zijn een effectieve manier om uw documenten te beschermen tegen ongeoorloofd gebruik. GroupDocs.Watermark voor .NET biedt een robuuste oplossing voor het toevoegen van watermerken aan uw documenten. Of u nu een ontwikkelaar bent die watermerken in uw toepassing wil integreren of iemand die geïnteresseerd is in het beveiligen van uw documenten: deze tutorial begeleidt u stap voor stap door het proces.
 ## Vereisten

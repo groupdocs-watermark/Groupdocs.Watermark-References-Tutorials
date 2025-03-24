@@ -6,6 +6,9 @@ description: Erfahren Sie in unserem ausführlichen Schritt-für-Schritt-Tutoria
 weight: 19
 url: /de/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# Fügen Sie Wasserzeichen zu Bildern in PDF hinzu
+
 ## Einführung
 Das Hinzufügen von Wasserzeichen zu Bildern in einem PDF-Dokument kann für den Schutz Ihres geistigen Eigentums oder die Gewährleistung der Authentizität Ihrer Dokumente von entscheidender Bedeutung sein. Mit GroupDocs.Watermark für .NET kann diese Aufgabe effizient und einfach erledigt werden. Dieses Tutorial führt Sie durch jeden Schritt des Prozesses, von der Einrichtung Ihrer Umgebung über das Hinzufügen von Wasserzeichen bis hin zum Speichern des endgültigen Dokuments. Lass uns eintauchen!
 ## Voraussetzungen

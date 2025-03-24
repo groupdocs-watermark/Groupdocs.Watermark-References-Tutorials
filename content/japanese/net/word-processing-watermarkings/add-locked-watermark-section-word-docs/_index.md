@@ -6,6 +6,9 @@ description: この包括的なステップバイステップ ガイドでは、
 weight: 13
 url: /ja/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Word ドキュメントのセクションにロックされた透かしを追加する
+
 ## 導入
 Word 文書内のセクションにロックされた透かしを追加する効率的な方法をお探しですか?これ以上探さない！ Groupdocs.Watermark for .NET を使用すると、Word 文書のロックと改ざん防止を確保しながら、透かしを Word 文書にシームレスに挿入できます。この強力なツールは、ブランド化、機密保持、セキュリティ目的など、透かしのニーズに応えるさまざまな機能を提供します。このステップバイステップのチュートリアルでは、Groupdocs.Watermark for .NET を使用して、Word 文書の特定のセクションにロックされたウォーターマークを追加する方法を説明します。飛び込んでみましょう！
 ## 前提条件

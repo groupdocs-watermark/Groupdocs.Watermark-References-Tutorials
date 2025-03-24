@@ -6,6 +6,9 @@ description: Koppel moeiteloos kop- en voetteksten in Word-documenten met GroupD
 weight: 25
 url: /nl/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Koppel alle kop- en voetteksten in secties in Word-documenten
+
 ## Invoering
 Wanneer u met Word-documenten werkt, is het vaak nodig om kop- en voetteksten in verschillende secties te koppelen voor consistentie en samenhang. Deze tutorial leidt u stap voor stap door het proces met behulp van GroupDocs.Watermark voor .NET.
 ## Naamruimten importeren

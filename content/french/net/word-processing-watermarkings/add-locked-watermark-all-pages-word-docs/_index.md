@@ -6,6 +6,9 @@ description: Sécurisez vos documents en ajoutant des filigranes verrouillés à
 weight: 11
 url: /fr/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Ajouter un filigrane verrouillé à toutes les pages dans Word Docs
+
 ## Introduction
 L'ajout de filigranes à vos documents est une étape essentielle pour sécuriser et personnaliser votre contenu. Que vous souhaitiez empêcher une utilisation non autorisée ou simplement ajouter une touche professionnelle, les filigranes peuvent servir à plusieurs fins. Dans ce didacticiel, nous vous guiderons tout au long du processus d'ajout d'un filigrane verrouillé à toutes les pages d'un document Word à l'aide de Groupdocs.Watermark pour .NET.
 ## Conditions préalables

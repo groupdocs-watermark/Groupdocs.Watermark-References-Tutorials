@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air ke dokumen yang dilindungi kata
 weight: 13
 url: /id/net/document-loadings/load-password-protected-document/
 ---
+
+# Muat Dokumen yang Dilindungi Kata Sandi
+
 ## Perkenalan
 Apakah Anda ingin melindungi dokumen Anda dengan menambahkan tanda air, meskipun dokumen tersebut dilindungi kata sandi? Groupdocs.Watermark untuk .NET adalah alat canggih yang memungkinkan Anda melakukan hal itu. Dalam tutorial ini, kami akan memandu Anda melalui proses memuat dokumen yang dilindungi kata sandi dan menambahkan tanda air ke dalamnya menggunakan Groupdocs.Watermark untuk .NET. Ayo selami!
 ## Prasyarat

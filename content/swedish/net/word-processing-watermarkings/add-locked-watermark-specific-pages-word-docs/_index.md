@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till en låst vattenstämpel på specifika 
 weight: 12
 url: /sv/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Lägg till låst vattenstämpel på specifika sidor i Word Docs
+
 ## Introduktion
 Vill du lägga till en vattenstämpel på specifika sidor i dina Word-dokument, men vill att den ska låsas så att den inte enkelt kan tas bort eller redigeras? Du är på rätt plats! I den här självstudien guidar vi dig genom processen att lägga till en låst vattenstämpel på specifika sidor i Word-dokument med hjälp av GroupDocs.Watermark för .NET. Detta kraftfulla bibliotek gör det enkelt att applicera, hantera och anpassa vattenstämplar på en mängd olika dokumenttyper. Oavsett om du är en utvecklare eller bara någon som behöver säkra sina dokument, kommer den här guiden att gå igenom varje steg på ett enkelt sätt.
 ## Förutsättningar

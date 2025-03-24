@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 문서 워터마킹의 
 weight: 25
 url: /ko/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
+
+# PDF에서 XObject 정보 추출
+
 ## 소개
 GroupDocs.Watermark for .NET은 PDF, Word, Excel, PowerPoint 및 이미지와 같은 다양한 문서 형식의 워터마크를 조작하도록 설계된 강력한 문서 워터마킹 API입니다. 이는 개발자에게 프로그래밍 방식으로 문서의 워터마크를 추가, 제거, 검색 및 교체할 수 있는 간단한 접근 방식을 제공합니다. 문서에 회사 로고, 저작권 고지 또는 기밀 스탬프를 추가해야 하는 경우 GroupDocs.Watermark는 직관적인 API를 통해 프로세스를 단순화합니다.
 ## 전제조건

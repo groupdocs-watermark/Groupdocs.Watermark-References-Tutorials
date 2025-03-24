@@ -6,6 +6,9 @@ description: Learn how to efficiently find and remove watermarks from Word docum
 weight: 22
 url: /net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Find Watermark in Header/Footer in Word Docs
+
 ## Introduction
 In the world of document management and protection, watermarking plays a pivotal role. Whether it's for branding purposes, copyright protection, or document tracking, adding watermarks to your documents is essential. However, finding and removing watermarks efficiently, especially in large document sets, can be a daunting task. This is where GroupDocs.Watermark for .NET comes into play. In this tutorial, we'll delve into how to find watermarks in headers and footers of Word documents using GroupDocs.Watermark for .NET, breaking down each step to ensure a comprehensive understanding.
 ## Prerequisites

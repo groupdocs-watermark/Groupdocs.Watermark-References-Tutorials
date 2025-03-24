@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać graficzne znaki wodne do dokumentów prz
 weight: 12
 url: /pl/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# Dodaj znak wodny obrazu ze strumienia
+
 ## Wstęp
 W dziedzinie zarządzania dokumentami i bezpieczeństwa dodawanie znaków wodnych do plików ma ogromne znaczenie. Niezależnie od tego, czy chodzi o budowanie marki, ochronę praw autorskich, czy utrzymanie integralności dokumentów, znaki wodne odgrywają kluczową rolę. Na szczęście GroupDocs.Watermark dla .NET zapewnia niezawodne rozwiązanie do dodawania, usuwania i wyszukiwania znaków wodnych w różnych formatach dokumentów.
 ## Warunki wstępne

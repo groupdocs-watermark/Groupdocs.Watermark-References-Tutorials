@@ -6,6 +6,9 @@ description: Aprenda a buscar y eliminar de manera eficiente marcas de agua de d
 weight: 22
 url: /es/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Buscar marca de agua en encabezado/pie de página en documentos de Word
+
 ## Introducción
 En el mundo de la gestión y protección de documentos, las marcas de agua desempeñan un papel fundamental. Ya sea con fines de marca, protección de derechos de autor o seguimiento de documentos, es esencial agregar marcas de agua a sus documentos. Sin embargo, encontrar y eliminar marcas de agua de manera eficiente, especialmente en conjuntos de documentos grandes, puede ser una tarea desalentadora. Aquí es donde entra en juego GroupDocs.Watermark para .NET. En este tutorial, profundizaremos en cómo encontrar marcas de agua en encabezados y pies de página de documentos de Word usando GroupDocs.Watermark para .NET, desglosando cada paso para garantizar una comprensión integral.
 ## Requisitos previos

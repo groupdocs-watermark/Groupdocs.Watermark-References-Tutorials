@@ -6,6 +6,9 @@ description: Learn how to add watermarks to documents using Groupdocs.Watermark 
 weight: 10
 url: /net/document-savings/save-document-same-file-stream/
 ---
+
+# Save Document to Same File or Stream
+
 ## Introduction
 In today's digital age, adding watermarks to documents has become essential for protecting intellectual property and ensuring brand integrity. Groupdocs.Watermark for .NET offers a robust solution for developers looking to embed watermarks into documents seamlessly. This comprehensive guide will walk you through the steps of saving a document with a watermark to the same file or stream using Groupdocs.Watermark for .NET.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: 通过此分步指南，了解如何使用 GroupDocs.Watermark for 
 weight: 12
 url: /zh/net/document-savings/save-document-specified-stream/
 ---
+
+# 将文档保存到指定流
+
 ## 介绍
 您是否希望掌握使用 GroupDocs.Watermark for .NET 向文档添加水印的艺术？您来对地方了！在本综合指南中，我们将引导您了解在添加水印后成功将文档保存到指定流所需了解的所有信息。让我们深入了解并开始吧。
 ## 先决条件

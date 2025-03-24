@@ -6,6 +6,9 @@ description: Dễ dàng thêm hình mờ hình ảnh vào tài liệu của bạ
 weight: 10
 url: /vi/net/watermarking-basics/add-image-watermark/
 ---
+
+# Thêm hình mờ hình ảnh
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình thêm hình mờ vào tài liệu của bạn bằng GroupDocs.Watermark cho .NET. Tài liệu có hình mờ là điều cần thiết để bảo vệ sở hữu trí tuệ và thương hiệu. Với GroupDocs.Watermark cho .NET, bạn có thể tích hợp liền mạch hình mờ vào các định dạng tài liệu khác nhau như Word, Excel, PowerPoint, PDF, v.v.
 ## Điều kiện tiên quyết

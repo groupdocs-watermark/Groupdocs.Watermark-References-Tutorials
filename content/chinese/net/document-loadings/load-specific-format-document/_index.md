@@ -6,6 +6,9 @@ description: 通过此分步指南了解如何使用 Groupdocs for .NET 加载�
 weight: 12
 url: /zh/net/document-loadings/load-specific-format-document/
 ---
+
+# 加载特定格式文档
+
 ## 介绍
 向文档添加水印是确保内容保护和品牌推广的一项关键任务。 Groupdocs.Watermark for .NET 是一个多功能且功能强大的工具，可以简化此过程。无论您处理的是文本文档、电子表格、演示文稿还是图像，本指南都将引导您完成使用 Groupdocs.Watermark for .NET 加载特定格式文档并为其添加水印的步骤。
 ## 先决条件

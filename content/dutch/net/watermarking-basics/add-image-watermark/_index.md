@@ -6,6 +6,9 @@ description: Voeg moeiteloos afbeeldingswatermerken toe aan uw documenten met Gr
 weight: 10
 url: /nl/net/watermarking-basics/add-image-watermark/
 ---
+
+# Voeg afbeeldingswatermerk toe
+
 ## Invoering
 In deze zelfstudie gaan we dieper in op het proces van het toevoegen van een afbeeldingswatermerk aan uw documenten met behulp van GroupDocs.Watermark voor .NET. Het watermerken van documenten is essentieel voor de bescherming van intellectueel eigendom en branding. Met GroupDocs.Watermark voor .NET kunt u watermerken naadloos integreren in verschillende documentformaten zoals Word, Excel, PowerPoint, PDF en nog veel meer.
 ## Vereisten

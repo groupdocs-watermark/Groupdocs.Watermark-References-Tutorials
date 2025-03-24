@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać znaki wodne do załączników PDF za pom
 weight: 16
 url: /pl/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# Dodaj znak wodny do wszystkich załączników w formacie PDF
+
 ## Wstęp
 Dodawanie znaków wodnych do załączników PDF może być kluczowym krokiem w zarządzaniu dokumentami, zwłaszcza jeśli chodzi o zapewnienie bezpieczeństwa lub marki. GroupDocs.Watermark dla .NET oferuje kompleksowe rozwiązanie umożliwiające bezproblemowe osadzanie znaków wodnych w plikach PDF. W tym samouczku przeprowadzimy Cię przez proces dodawania znaku wodnego do wszystkich załączników w dokumencie PDF przy użyciu programu GroupDocs.Watermark dla .NET.
 ## Warunki wstępne

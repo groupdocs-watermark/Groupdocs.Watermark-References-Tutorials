@@ -6,6 +6,9 @@ description: Unlock the power of document watermarking with GroupDocs.Watermark 
 weight: 25
 url: /net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
+
+# Extract XObject Information from PDF
+
 ## Introduction
 GroupDocs.Watermark for .NET is a powerful document watermarking API designed to manipulate watermarks in various document formats such as PDF, Word, Excel, PowerPoint, and images. It provides developers with a straightforward approach to add, remove, search, and replace watermarks in documents programmatically. Whether you need to add a company logo, copyright notice, or confidential stamp to your documents, GroupDocs.Watermark simplifies the process with its intuitive API.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Learn how to protect your PDF documents by adding watermarks to ann
 weight: 17
 url: /net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# Add Watermark to Annotation Images in PDF
+
 ## Introduction
 In this tutorial, we'll explore how to add watermarks to annotation images in PDF documents using Groupdocs.Watermark for .NET. Watermarking is crucial for protecting your documents from unauthorized use or distribution. By following this step-by-step guide, you'll learn how to apply text watermarks to annotation images in PDFs effectively.
 ## Prerequisites

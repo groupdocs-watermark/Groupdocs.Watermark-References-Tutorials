@@ -6,6 +6,9 @@ description: Tìm hiểu cách thao tác các hình dạng trong tài liệu Wor
 weight: 37
 url: /vi/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Cách sử dụng kiểu hình dạng trong tài liệu Word
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng các loại hình dạng trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Hình dạng trong tài liệu Word có thể khác nhau và việc hiểu cách thao tác với chúng có thể rất quan trọng đối với các tác vụ xử lý tài liệu khác nhau.
 ## Điều kiện tiên quyết

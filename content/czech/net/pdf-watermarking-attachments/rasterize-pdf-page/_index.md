@@ -6,6 +6,9 @@ description: Vylepšete zabezpečení dokumentů pomocí GroupDocs pro .NET. Bez
 weight: 28
 url: /cs/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---
+
+# Rastrovat stránku PDF
+
 ## Úvod
 GroupDocs.Watermark for .NET je výkonné rozhraní API, které umožňuje vývojářům bezproblémově přidávat vodoznaky do různých formátů dokumentů, včetně PDF, Wordu, Excelu, PowerPointu a dalších. Se svým intuitivním rozhraním a rozsáhlými funkcemi zjednodušuje GroupDocs.Watermark proces přidávání textových nebo obrazových vodoznaků do dokumentů a umožňuje uživatelům bez námahy chránit jejich duševní vlastnictví a zvýšit zabezpečení dokumentů.
 ## Předpoklady

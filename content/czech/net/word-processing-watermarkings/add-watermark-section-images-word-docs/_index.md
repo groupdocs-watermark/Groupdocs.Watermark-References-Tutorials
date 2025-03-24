@@ -6,6 +6,9 @@ description: Naučte se přidávat vodoznaky do obrázků v dokumentech aplikace
 weight: 16
 url: /cs/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Přidejte vodoznak do obrázků oddílů v Dokumentech aplikace Word
+
 ## Úvod
 dnešním digitálním světě je ochrana vašich dokumentů zásadní. Přidání vodoznaků do dokumentů aplikace Word je jednoduchý, ale účinný způsob, jak zabezpečit obsah. Tento tutoriál vás provede procesem přidávání vodoznaků do obrázků částí v dokumentech aplikace Word pomocí Groupdocs.Watermark for .NET. Ať už jste vývojáři, kteří chtějí integrovat tuto funkci do své aplikace, nebo jednoduše chcete chránit své dokumenty, tato příručka je pro vás.
 ## Předpoklady

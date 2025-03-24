@@ -6,6 +6,9 @@ description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit 
 weight: 11
 url: /de/net/watermarking-basics/add-text-watermark/
 ---
+
+# Textwasserzeichen hinzufügen
+
 ## Einführung
 GroupDocs.Watermark für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Wasserzeichen in verschiedenen Dokumentformaten in .NET-Anwendungen hinzuzufügen, zu suchen und zu entfernen. In diesem Tutorial konzentrieren wir uns auf das Hinzufügen eines Textwasserzeichens zu einem Dokument mithilfe von GroupDocs.Watermark.
 ## Voraussetzungen

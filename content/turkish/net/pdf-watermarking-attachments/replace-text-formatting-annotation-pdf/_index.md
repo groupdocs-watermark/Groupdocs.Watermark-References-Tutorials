@@ -6,6 +6,9 @@ description: .NET için Watermark ile belge güvenliğini geliştirin. PDF dosya
 weight: 41
 url: /tr/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---
+
+# PDF'de Ek Açıklama İçin Metni Biçimlendirmeyle Değiştirin
+
 ## giriiş
 Günümüzün dijital çağında hassas bilgilerin ve fikri mülkiyetin korunması çok önemlidir. İster bir hukuk uzmanı, ister kurumsal bir kuruluş, ister önemli belgeleri yöneten bir kişi olun, yetkisiz erişime ve dağıtıma karşı koruma sağlamak bir zorunluluktur. GroupDocs.Watermark for .NET, bu alanda güçlü bir araç olarak ortaya çıkıyor ve PDF, Word, Excel, PowerPoint ve görüntüler gibi çeşitli belge formatlarından filigran eklemek, aramak ve kaldırmak için kapsamlı işlevler sunuyor. Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak PDF dosyalarındaki metni ek açıklama için biçimlendirmeyle değiştirmenin inceliklerini inceleyeceğiz.
 ## Önkoşullar

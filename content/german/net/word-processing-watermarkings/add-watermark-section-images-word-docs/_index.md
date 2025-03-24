@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit Groupdocs Watermark für .NET Wasserzeich
 weight: 16
 url: /de/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Fügen Sie Wasserzeichen zu Abschnittsbildern in Word-Dokumenten hinzu
+
 ## Einführung
 In der heutigen digitalen Welt ist der Schutz Ihrer Dokumente unerlässlich. Das Hinzufügen von Wasserzeichen zu Ihren Word-Dokumenten ist eine einfache, aber effektive Möglichkeit, Ihre Inhalte zu schützen. Dieses Tutorial führt Sie durch den Prozess des Hinzufügens von Wasserzeichen zu Abschnittsbildern in Word-Dokumenten mithilfe von Groupdocs.Watermark für .NET. Egal, ob Sie als Entwickler diese Funktion in Ihre Anwendung integrieren möchten oder einfach nur Ihre Dokumente schützen möchten, dieser Leitfaden ist genau das Richtige für Sie.
 ## Voraussetzungen

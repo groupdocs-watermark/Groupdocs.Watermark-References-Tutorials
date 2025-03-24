@@ -6,6 +6,9 @@ description: Pelajari cara memuat dan memberi tanda air pada dokumen menggunakan
 weight: 12
 url: /id/net/document-loadings/load-specific-format-document/
 ---
+
+# Muat Dokumen Format Tertentu
+
 ## Perkenalan
 Menambahkan tanda air ke dokumen adalah tugas penting untuk memastikan perlindungan konten dan branding. Groupdocs.Watermark untuk .NET adalah alat serbaguna dan kuat yang menyederhanakan proses ini. Baik Anda berurusan dengan dokumen teks, spreadsheet, presentasi, atau gambar, panduan ini akan memandu Anda melalui langkah-langkah untuk memuat dan memberi tanda air pada dokumen format tertentu menggunakan Groupdocs.Watermark untuk .NET.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerine kolayca 
 weight: 15
 url: /tr/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Word Dokümanlarındaki Bölüme Filigran Ekleme
+
 ## giriiş
 Belgelerinize filigran eklemek, içeriğinizi korumak ve sahiplik iddiasında bulunmak için çok önemli bir adımdır. Bu kapsamlı eğitimde, GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki belirli bir bölüme filigran ekleme sürecinde size yol göstereceğiz. İster bir geliştirici olun ister temel kodlama bilgisine sahip biri olun, bu kılavuz belgelerinizi etkili bir şekilde korumanıza yardımcı olacaktır.
 ## Önkoşullar

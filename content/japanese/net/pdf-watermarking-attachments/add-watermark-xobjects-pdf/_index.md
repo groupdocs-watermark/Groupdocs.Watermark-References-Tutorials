@@ -6,6 +6,9 @@ description: Groupdocs.Watermark for .NET を使用して PDF の XObject にウ
 weight: 20
 url: /ja/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# PDF の XObject にウォーターマークを追加する
+
 ## 導入
 PDF に透かしを入れることは、ドキュメントを不正使用から確実に保護するための重要な手順です。 Groupdocs.Watermark for .NET を使用すると、PDF 内の XObject にウォーターマークを追加することがこれまでになく簡単になります。このチュートリアルでは、プロセスを段階的に説明し、PDF ドキュメントに自信を持って透かしを適用できるようにします。始めましょう！
 ## 前提条件

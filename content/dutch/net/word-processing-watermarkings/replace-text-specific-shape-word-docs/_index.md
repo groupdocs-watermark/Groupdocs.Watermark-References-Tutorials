@@ -6,6 +6,9 @@ description: Leer hoe u tekst voor specifieke vormen in Word-documenten vervangt
 weight: 35
 url: /nl/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---
+
+# Vervang tekst voor specifieke vorm in Word-documenten
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Watermark voor .NET kunt gebruiken om tekst voor een specifieke vorm in Word-documenten te vervangen. GroupDocs.Watermark voor .NET is een krachtige bibliotheek die een breed scala aan functies biedt voor het werken met watermerken in verschillende documentformaten, waaronder Word-documenten.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Naučte se přidávat vodoznaky na konkrétní stránky v dokumente
 weight: 14
 url: /cs/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
 ---
+
+# Přidat vodoznak na konkrétní stránku ve Word Docs
+
 ## Úvod
 Vodoznakové dokumenty jsou klíčovým aspektem zabezpečení dokumentů a brandingu. V tomto tutoriálu prozkoumáme, jak přidat vodoznak na konkrétní stránku v dokumentech aplikace Word pomocí GroupDocs.Watermark for .NET.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać znaki wodne do dokumentów za pomocą Gr
 weight: 10
 url: /pl/net/document-savings/save-document-same-file-stream/
 ---
+
+# Zapisz dokument w tym samym pliku lub strumieniu
+
 ## Wstęp
 W dzisiejszej epoce cyfrowej dodawanie znaków wodnych do dokumentów stało się niezbędne dla ochrony własności intelektualnej i zapewnienia integralności marki. Groupdocs.Watermark dla .NET oferuje solidne rozwiązanie dla programistów, którzy chcą bezproblemowo osadzać znaki wodne w dokumentach. Ten kompleksowy przewodnik przeprowadzi Cię przez etapy zapisywania dokumentu ze znakiem wodnym w tym samym pliku lub strumieniu przy użyciu Groupdocs.Watermark dla .NET.
 ## Warunki wstępne

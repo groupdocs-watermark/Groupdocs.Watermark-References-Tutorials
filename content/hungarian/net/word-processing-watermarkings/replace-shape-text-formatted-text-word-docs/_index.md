@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan cserélheti le az alakzat szövegét formázott
 weight: 34
 url: /hu/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Alakzatszöveg cseréje formázott szövegre a Word Dokumentumokban
+
 ## Bevezetés
 Ebben az oktatóanyagban végigvezetjük az alakzat szövegének formázott szöveggel való helyettesítésén a Word dokumentumokban a GroupDocs.Watermark for .NET segítségével. Ez a könyvtár hatékony funkciókat kínál a vízjelekkel való munkavégzéshez, beleértve a szöveg alakzatokon belüli cseréjét.
 ## Előfeltételek

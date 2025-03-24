@@ -6,6 +6,9 @@ description: Dowiedz się, jak usuwać hiperłącza z dokumentów programu Word 
 weight: 29
 url: /pl/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# Usuń hiperłącza w dokumentach programu Word
+
 ## Wstęp
 W dzisiejszym cyfrowym świecie, w którym informacje przepływają płynnie, ochrona dokumentów jest sprawą najwyższej wagi. Niezależnie od tego, czy udostępniasz wrażliwe dane biznesowe, czy tworzysz arcydzieło, ochrona treści przed nieautoryzowanym dostępem i manipulacją ma kluczowe znaczenie. Wraz z pojawieniem się GroupDocs.Watermark dla .NET możesz zapewnić integralność swoich dokumentów, z łatwością dodając, usuwając i wykrywając znaki wodne.
 ## Warunki wstępne

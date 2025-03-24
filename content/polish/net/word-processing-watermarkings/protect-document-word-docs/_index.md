@@ -6,6 +6,9 @@ description: Dowiedz się, jak chronić dokumenty programu Word za pomocą progr
 weight: 28
 url: /pl/net/word-processing-watermarkings/protect-document-word-docs/
 ---
+
+# Chroń dokument w dokumentach programu Word
+
 ## Wstęp
 W tym samouczku przeprowadzimy Cię przez proces ochrony dokumentu w programie Word Docs przy użyciu programu GroupDocs.Watermark dla platformy .NET. Wykonując poniższe kroki, będziesz mógł dodać warstwę zabezpieczeń do swoich dokumentów Word, zapobiegając nieautoryzowanemu dostępowi i modyfikacjom.
 ## Warunki wstępne

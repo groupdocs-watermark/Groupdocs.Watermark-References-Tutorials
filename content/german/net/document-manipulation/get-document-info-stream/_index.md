@@ -6,6 +6,9 @@ description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit 
 weight: 12
 url: /de/net/document-manipulation/get-document-info-stream/
 ---
+
+# Dokumentinformationen aus Stream abrufen
+
 ## Einführung
 Im heutigen digitalen Zeitalter ist der Schutz und die Verwaltung der Dokumentenintegrität von entscheidender Bedeutung. Unabhängig davon, ob Sie ein Geschäftsprofi, ein Entwickler oder jemand sind, der mit vertraulichen Informationen umgeht, ist das Hinzufügen, Extrahieren oder Bearbeiten von Wasserzeichen in Ihren Dokumenten von entscheidender Bedeutung. GroupDocs.Watermark für .NET bietet ein leistungsstarkes Toolkit, das Ihnen dabei hilft, genau das zu erreichen. Dieser Artikel führt Sie durch die Verwendung von GroupDocs.Watermark für .NET zum Abrufen von Dokumentinformationen aus einem Stream und bietet eine Schritt-für-Schritt-Anleitung, die Ihnen den Einstieg in den Prozess erleichtert. Am Ende werden Sie in der Lage sein, diese Funktion zur Verbesserung Ihrer Dokumentenverwaltungsfunktionen zu nutzen.
 ## Voraussetzungen

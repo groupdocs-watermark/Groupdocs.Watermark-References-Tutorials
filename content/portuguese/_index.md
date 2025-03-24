@@ -8,6 +8,9 @@ url: /pt/
 is_root: true
 ---
 
+# Domine a segurança e a marca de documentos com GroupDocs.Watermark
+
+
 Bem-vindo ao hub de tutorial abrangente do GroupDocs.Watermark, onde fornecemos guias detalhados e exemplos para plataformas .NET e Java. Nossos recursos foram projetados para ajudá-lo a dominar a arte de adicionar e gerenciar marcas d'água em uma ampla variedade de formatos de documentos. Quer você seja um desenvolvedor que trabalha com .NET ou Java, nossos tutoriais passo a passo irão equipá-lo com o conhecimento e as ferramentas necessárias para aprimorar a segurança de documentos, manter a consistência da marca e proteger a propriedade intelectual com facilidade. Explore nossos tutoriais para desbloquear todo o potencial do GroupDocs em seus aplicativos.
 
 

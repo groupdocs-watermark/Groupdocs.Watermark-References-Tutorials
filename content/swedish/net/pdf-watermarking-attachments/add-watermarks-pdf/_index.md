@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till text- och bildvattenstämplar i dina P
 weight: 14
 url: /sv/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---
+
+# Lägg till vattenstämplar till PDF
+
 ## Introduktion
 Vill du lägga till vattenstämplar i dina PDF-filer för att skydda dina dokument eller märka dem med din logotyp? Kolla inte vidare! I den här handledningen kommer vi att dyka ner i processen att använda GroupDocs.Watermark för .NET för att lägga till både text- och bildvattenstämplar till dina PDF-filer. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här guiden att leda dig genom varje steg, vilket säkerställer att du kan applicera vattenstämplar med lätthet och precision.
 ## Förutsättningar

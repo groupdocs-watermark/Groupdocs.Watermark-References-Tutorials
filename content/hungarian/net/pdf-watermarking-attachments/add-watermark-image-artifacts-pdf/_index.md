@@ -6,6 +6,9 @@ description: Védje meg PDF-fájljait személyre szabott vízjelekkel a GroupDoc
 weight: 18
 url: /hu/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# Vízjel hozzáadása a képi műtermékekhez PDF-ben
+
 ## Bevezetés
 Ebben az oktatóanyagban végigvezetjük Önt a PDF-dokumentum képtermékeihez vízjel hozzáadásának folyamatán a GroupDocs.Watermark for .NET segítségével. Ha követi ezeket a lépéseket, hatékonyan védheti PDF-fájljait személyre szabott vízjelekkel.
 ## Előfeltételek

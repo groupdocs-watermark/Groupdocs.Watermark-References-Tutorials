@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak informasi anotasi dari dokumen PDF menggu
 weight: 23
 url: /id/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
+
+# Ekstrak Informasi Anotasi dari PDF
+
 ## Perkenalan
 Apakah Anda sering merasa perlu mengekstrak informasi anotasi mendetail dari dokumen PDF Anda? Baik Anda seorang pengembang yang mengerjakan sistem manajemen dokumen atau profesional bisnis yang menangani banyak PDF, mengekstraksi dan memproses anotasi secara efisien dapat menjadi hal yang sangat penting. Dengan GroupDocs.Watermark untuk .NET, Anda memiliki perangkat canggih yang dapat Anda gunakan untuk menjadikan tugas ini mudah dan efisien.
 ## Prasyarat

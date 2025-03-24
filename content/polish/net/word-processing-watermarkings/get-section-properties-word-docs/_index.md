@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić właściwości sekcji z dokumentów 
 weight: 23
 url: /pl/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# Uzyskaj właściwości sekcji w dokumentach programu Word
+
 ## Wstęp
 dziedzinie zarządzania dokumentami i manipulacji nimi Groupdocs.Watermark dla .NET wyróżnia się jako wszechstronne i solidne narzędzie. Biblioteka ta, zintegrowana ze środowiskiem .NET, umożliwia programistom łatwe manipulowanie znakami wodnymi, adnotacjami i właściwościami dokumentów. W tym samouczku zagłębimy się w jedną z jego kluczowych funkcji: wyodrębnianie właściwości sekcji z dokumentów programu Word. Obserwuj, jak krok po kroku opisujemy proces, odblokowując potencjał Groupdocs.Watermark dla .NET.
 ## Warunki wstępne

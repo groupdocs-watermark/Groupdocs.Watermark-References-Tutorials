@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm, xóa và trích xuất hình mờ trong t�
 weight: 11
 url: /vi/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# Nhận thông tin tài liệu từ đĩa cục bộ
+
 ## Giới thiệu
 Chào mừng bạn đến với hướng dẫn cơ bản về cách sử dụng GroupDocs.Watermark cho .NET! Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay chỉ mới bắt đầu, bài viết này sẽ hướng dẫn bạn những điều cơ bản về cách tạo hình mờ cho tài liệu của bạn bằng công cụ mạnh mẽ này. Cuối cùng, bạn sẽ trở thành chuyên gia trong việc nhúng hình mờ vào tài liệu của mình, đảm bảo chúng được bảo vệ và gắn nhãn hiệu theo thông số kỹ thuật của bạn.
 ## Điều kiện tiên quyết

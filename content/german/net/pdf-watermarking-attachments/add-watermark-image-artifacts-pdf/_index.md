@@ -6,6 +6,9 @@ description: Schützen Sie Ihre PDF-Dateien mit personalisierten Wasserzeichen m
 weight: 18
 url: /de/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# Fügen Sie Wasserzeichen zu Bildartefakten in PDF hinzu
+
 ## Einführung
 In diesem Tutorial führen wir Sie durch den Prozess des Hinzufügens eines Wasserzeichens zu Bildartefakten in einem PDF-Dokument mithilfe von GroupDocs.Watermark für .NET. Wenn Sie diese Schritte befolgen, können Sie Ihre PDF-Dateien effizient mit personalisierten Wasserzeichen schützen.
 ## Voraussetzungen

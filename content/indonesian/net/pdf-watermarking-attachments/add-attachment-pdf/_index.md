@@ -6,6 +6,9 @@ description: Tingkatkan kemampuan manajemen dokumen .NET Anda dengan GroupDocs.W
 weight: 12
 url: /id/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---
+
+# Tambahkan Lampiran ke PDF
+
 ## Perkenalan
 Dalam bidang pengembangan .NET, GroupDocs.Watermark menonjol sebagai alat yang ampuh untuk mengelola tanda air, anotasi, dan lainnya dalam berbagai format dokumen. Baik Anda bekerja dengan PDF, dokumen Word, atau gambar, GroupDocs.Watermark untuk .NET menyediakan integrasi sempurna yang memberdayakan pengembang untuk memanipulasi dokumen dengan mudah.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Aprenda como adicionar marcas d'água personalizadas com efeitos de
 weight: 21
 url: /pt/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---
+
+# Adicionar marca d'água com efeitos de texto em documentos do Word
+
 ## Introdução
 Neste tutorial, exploraremos como adicionar uma marca d'água com efeitos de texto a documentos do Word usando GroupDocs.Watermark for .NET. Seguindo estas instruções passo a passo, você poderá aprimorar seus documentos com marcas d'água personalizadas que incluem vários efeitos de texto.
 ## Pré-requisitos

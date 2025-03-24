@@ -6,6 +6,9 @@ description: Naučte se, jak přidat zamčený vodoznak na konkrétní stránky 
 weight: 12
 url: /cs/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Přidejte zamčený vodoznak na konkrétní stránky v Dokumentech aplikace Word
+
 ## Úvod
 Chcete přidat vodoznak na konkrétní stránky v dokumentech aplikace Word, ale chcete, aby byl uzamčen, aby jej nebylo možné snadno odstranit nebo upravit? Jste na správném místě! V tomto tutoriálu vás provedeme procesem přidání zamčeného vodoznaku na konkrétní stránky v dokumentech aplikace Word pomocí GroupDocs.Watermark for .NET. Tato výkonná knihovna usnadňuje použití, správu a přizpůsobení vodoznaků na různé typy dokumentů. Ať už jste vývojář nebo jen někdo, kdo potřebuje zabezpečit své dokumenty, tento průvodce vás jednoduchým způsobem provede každým krokem.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 将文本替换为 
 weight: 43
 url: /zh/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---
+
+# 将文本替换为 PDF 中工件的格式
+
 ## 介绍
 在 .NET 开发领域，管理工件和水印文档通常是一项至关重要的任务。幸运的是，借助 GroupDocs.Watermark for .NET，开发人员可以使用强大的工具包将水印和工件管理功能无缝集成到他们的应用程序中。在这个综合教程中，我们将深入研究使用 GroupDocs.Watermark for .NET 在 PDF 文档中用格式替换文本的过程。
 ## 先决条件

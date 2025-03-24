@@ -6,6 +6,9 @@ description: Leer hoe u verschillende kop- en voetteksten instelt op de eerste p
 weight: 36
 url: /nl/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Stel een andere koptekst/voettekst voor de eerste pagina in Word-documenten in
+
 ## Invoering
 Op het gebied van documentbeheer en -manipulatie komt GroupDocs.Watermark voor .NET naar voren als een krachtig hulpmiddel dat naadloze integratie en robuuste functionaliteiten biedt voor het watermerken van documenten. Een van de meest voorkomende vereisten bij documentverwerking is het instellen van verschillende kop- en voetteksten op de eerste pagina van Word-documenten. In deze tutorial wordt het proces van het bereiken van deze taak toegelicht met behulp van GroupDocs.Watermark voor .NET, waarbij elke stap wordt opgedeeld in gemakkelijk te begrijpen segmenten.
 ## Vereisten

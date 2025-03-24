@@ -6,6 +6,9 @@ description: Groupdocs for .NET を使用して Word 文書内の画像にウォ
 weight: 16
 url: /ja/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Word ドキュメントのセクション画像に透かしを追加する
+
 ## 導入
 今日のデジタル世界では、ドキュメントを保護することが不可欠です。 Word 文書に透かしを追加することは、コンテンツを保護する簡単かつ効果的な方法です。このチュートリアルでは、Groupdocs.Watermark for .NET を使用して Word 文書のセクション画像にウォーターマークを追加するプロセスを説明します。この機能をアプリケーションに統合しようとしている開発者であっても、単にドキュメントを保護したいと考えている開発者であっても、このガイドは役に立ちます。
 ## 前提条件

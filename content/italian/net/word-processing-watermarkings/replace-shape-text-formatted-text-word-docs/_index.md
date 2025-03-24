@@ -6,6 +6,9 @@ description: Scopri come sostituire il testo forma con testo formattato nei docu
 weight: 34
 url: /it/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Sostituisci il testo forma con testo formattato nei documenti Word
+
 ## introduzione
 In questo tutorial ti guideremo attraverso il processo di sostituzione del testo forma con testo formattato nei documenti Word utilizzando GroupDocs.Watermark per .NET. Questa libreria fornisce potenti funzionalità per lavorare con le filigrane, inclusa la sostituzione del testo all'interno delle forme.
 ## Prerequisiti

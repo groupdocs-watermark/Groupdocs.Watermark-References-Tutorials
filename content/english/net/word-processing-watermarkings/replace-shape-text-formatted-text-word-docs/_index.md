@@ -6,6 +6,9 @@ description: Learn how to replace shape text with formatted text in Word documen
 weight: 34
 url: /net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Replace Shape Text with Formatted Text in Word Docs
+
 ## Introduction
 In this tutorial, we'll guide you through the process of replacing shape text with formatted text in Word documents using GroupDocs.Watermark for .NET. This library provides powerful features for working with watermarks, including replacing text within shapes.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET gekachelte 
 weight: 10
 url: /de/net/image-watermarkings/add-tiled-image-watermark/
 ---
+
+# Fügen Sie ein gekacheltes Bildwasserzeichen hinzu
+
 ## Einführung
 GroupDocs.Watermark für .NET ist eine leistungsstarke API, die es Entwicklern ermöglicht, Wasserzeichen in verschiedenen Dokumentformaten programmgesteuert hinzuzufügen, zu entfernen und zu durchsuchen. In diesem Tutorial führen wir Sie durch den Prozess des Hinzufügens eines gekachelten Bildwasserzeichens zu Ihren Dokumenten mithilfe von GroupDocs.Watermark für .NET.
 ## Voraussetzungen

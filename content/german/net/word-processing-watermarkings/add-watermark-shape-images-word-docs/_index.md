@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Wasserzeich
 weight: 17
 url: /de/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Fügen Sie Wasserzeichen zu Formbildern in Word-Dokumenten hinzu
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET ein Wasserzeichen hinzufügen, um Bilder in Word-Dokumenten zu formen. Wasserzeichen sind ein entscheidender Aspekt des Dokumentenschutzes, insbesondere beim Umgang mit sensiblen oder vertraulichen Informationen. Durch das Hinzufügen von Wasserzeichen zur Gestaltung von Bildern können Sie die Integrität und Sicherheit Ihrer Dokumente gewährleisten.
 ## Voraussetzungen

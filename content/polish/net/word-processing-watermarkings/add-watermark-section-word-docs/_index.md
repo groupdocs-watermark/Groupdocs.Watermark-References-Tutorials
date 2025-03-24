@@ -6,6 +6,9 @@ description: Z łatwością dodawaj znaki wodne do dokumentów programu Word za 
 weight: 15
 url: /pl/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Dodaj znak wodny do sekcji w dokumentach programu Word
+
 ## Wstęp
 Znak wodny w dokumentach to kluczowy krok w ochronie treści i zapewnieniu własności. W tym obszernym samouczku przeprowadzimy Cię przez proces dodawania znaku wodnego do określonej sekcji dokumentów programu Word przy użyciu programu GroupDocs.Watermark dla platformy .NET. Niezależnie od tego, czy jesteś programistą, czy osobą z podstawową wiedzą na temat kodowania, ten przewodnik pomoże Ci skutecznie zabezpieczyć dokumenty.
 ## Warunki wstępne

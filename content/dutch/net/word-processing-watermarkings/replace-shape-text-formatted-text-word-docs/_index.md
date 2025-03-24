@@ -6,6 +6,9 @@ description: Leer hoe u vormtekst vervangt door opgemaakte tekst in Word-documen
 weight: 34
 url: /nl/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Vervang vormtekst door opgemaakte tekst in Word-documenten
+
 ## Invoering
 In deze zelfstudie begeleiden we u bij het vervangen van vormtekst door opgemaakte tekst in Word-documenten met behulp van GroupDocs.Watermark voor .NET. Deze bibliotheek biedt krachtige functies voor het werken met watermerken, inclusief het vervangen van tekst in vormen.
 ## Vereisten

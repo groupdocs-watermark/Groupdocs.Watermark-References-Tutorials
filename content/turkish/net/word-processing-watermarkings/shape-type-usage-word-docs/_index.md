@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki şeki
 weight: 37
 url: /tr/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Word Dokümanlarında Şekil Türü Kullanımı
+
 ## giriiş
 Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak Word belgelerinde şekil türlerinin nasıl kullanılacağını keşfedeceğiz. Word belgelerindeki şekiller farklılık gösterebilir ve bunların nasıl değiştirileceğini anlamak, çeşitli belge işleme görevleri için çok önemli olabilir.
 ## Önkoşullar

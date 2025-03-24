@@ -6,6 +6,9 @@ description: Pelajari cara menghapus anotasi dari PDF menggunakan GroupDocs.Wate
 weight: 29
 url: /id/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---
+
+# Hapus Anotasi dari PDF
+
 ## Perkenalan
 Anotasi dalam dokumen PDF terkadang dapat mengacaukan konten atau mengganggu keterbacaan dokumen. Dengan GroupDocs.Watermark untuk .NET, Anda dapat dengan mudah menghapus anotasi dari file PDF. Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 모든 �
 weight: 10
 url: /ko/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# Word Docs의 모든 헤더에 이미지 워터마크 추가
+
 ## 소개
 워터마크는 소유권, 기밀성, 브랜드 정보 등의 정보를 문서에 삽입하는 방법을 제공하여 문서 관리의 필수적인 부분이 될 수 있습니다. 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 모든 헤더에 이미지 워터마크를 추가하는 단계를 안내합니다. 프로그래밍이 처음이시든 숙련된 개발자이시든, 이 가이드는 워터마킹 목표를 쉽게 달성하는 데 도움이 될 것입니다.
 ## 전제조건

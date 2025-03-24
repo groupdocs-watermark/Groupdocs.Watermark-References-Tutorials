@@ -6,6 +6,9 @@ description: Ajoutez facilement des filigranes d'image à tous les en-têtes des
 weight: 10
 url: /fr/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# Ajouter un filigrane d'image à tous les en-têtes dans Word Docs
+
 ## Introduction
 Les filigranes peuvent constituer un élément essentiel de la gestion des documents, car ils permettent d'intégrer des informations telles que la propriété, la confidentialité ou la marque dans les documents. Dans ce didacticiel, nous passerons en revue les étapes permettant d'ajouter un filigrane d'image à tous les en-têtes des documents Word à l'aide de GroupDocs.Watermark pour .NET. Que vous soyez débutant en programmation ou développeur expérimenté, ce guide vous aidera à atteindre facilement vos objectifs en matière de filigrane.
 ## Conditions préalables

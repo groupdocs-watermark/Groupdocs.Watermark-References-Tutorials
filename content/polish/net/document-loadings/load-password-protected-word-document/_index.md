@@ -6,6 +6,9 @@ description: Z łatwością dodawaj znaki wodne do dokumentów Word chronionych 
 weight: 14
 url: /pl/net/document-loadings/load-password-protected-word-document/
 ---
+
+# Załaduj dokument Word chroniony hasłem
+
 ## Wstęp
 W epoce cyfrowej ochrona i uwierzytelnianie dokumentów jest ważniejsza niż kiedykolwiek. Znak wodny to potężna technika zabezpieczania plików, a dzięki GroupDocs.Watermark dla .NET możesz to zrobić bez wysiłku. Ten obszerny przewodnik przeprowadzi Cię przez proces dodawania znaku wodnego do chronionego hasłem dokumentu programu Word, omawiając każdy krok, aby upewnić się, że rozumiesz i możesz go łatwo wdrożyć.
 ## Warunki wstępne

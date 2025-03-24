@@ -6,6 +6,9 @@ description: Word belgelerinizi GroupDocs için Watermark ile koruyun. Gelişmi�
 weight: 27
 url: /tr/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---
+
+# Word Belgelerindeki Şekil Özelliklerini Değiştirme
+
 ## giriiş
 Günümüzün dijital çağında belgelerinizin güvenliğini sağlamak çok önemlidir. İster bir iş uzmanı, ister hukuk uzmanı, ister yaratıcı bir yazar olun, hassas bilgilerinizi korumak çok önemlidir. İşte burada GroupDocs.Watermark for .NET devreye giriyor ve belgelerinizi yetkisiz kullanıma ve dağıtıma karşı korumak için kapsamlı bir çözüm sunuyor.
 ## Önkoşullar

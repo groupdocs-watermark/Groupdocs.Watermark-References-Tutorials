@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에 워터�
 weight: 15
 url: /ko/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Word Docs의 섹션에 워터마크 추가
+
 ## 소개
 문서에 워터마킹을 하는 것은 콘텐츠를 보호하고 소유권을 주장하는 데 있어 중요한 단계입니다. 이 포괄적인 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 특정 섹션에 워터마크를 추가하는 과정을 안내합니다. 개발자이든 코딩에 대한 기본적인 이해가 있는 사람이든 이 가이드는 문서를 효과적으로 보호하는 데 도움이 될 것입니다.
 ## 전제조건

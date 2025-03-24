@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar med forminställningar
 weight: 20
 url: /sv/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Lägg till vattenstämpel med forminställningar i Word Docs
+
 ## Introduktion
 I den här handledningen går vi igenom processen att lägga till en vattenstämpel med forminställningar till Word-dokument med hjälp av GroupDocs.Watermark för .NET.
 ## Förutsättningar

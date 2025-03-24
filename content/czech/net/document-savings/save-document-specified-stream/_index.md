@@ -6,6 +6,9 @@ description: V tomto podrobném průvodci se dozvíte, jak uložit dokument do u
 weight: 12
 url: /cs/net/document-savings/save-document-specified-stream/
 ---
+
+# Uložit dokument do zadaného streamu
+
 ## Úvod
 Chcete ovládnout umění přidávání vodoznaků do dokumentů pomocí GroupDocs.Watermark for .NET? Jste na správném místě! V tomto obsáhlém průvodci vás provedeme vším, co potřebujete vědět k úspěšnému uložení dokumentu do určeného streamu po jeho vodoznaku. Pojďme se ponořit a začít.
 ## Předpoklady

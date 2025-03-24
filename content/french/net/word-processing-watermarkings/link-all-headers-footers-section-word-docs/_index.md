@@ -6,6 +6,9 @@ description: Liez sans effort les en-têtes et les pieds de page dans les docume
 weight: 25
 url: /fr/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Lier tous les en-têtes/pieds de page dans les sections dans Word Docs
+
 ## Introduction
 Lorsque vous travaillez avec des documents Word, il est souvent nécessaire de relier les en-têtes et les pieds de page de différentes sections pour des raisons de cohérence et de cohérence. Ce didacticiel vous guidera tout au long du processus, étape par étape, à l'aide de GroupDocs.Watermark for .NET.
 ## Importer des espaces de noms

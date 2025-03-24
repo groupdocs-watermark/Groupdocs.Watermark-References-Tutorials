@@ -6,6 +6,9 @@ description: 探索 PDF 浮水印和附件的 GroupDocs.Watermark for .NET 教�
 weight: 25
 url: /zh-hant/net/pdf-watermarking-attachments/
 ---
+
+# PDF 浮水印和附件
+
 ## 介紹
 
 希望透過浮水印增強您的 PDF 並有效管理附件？ GroupDocs.Watermark for .NET 提供了一套全面的教學來幫助您掌握這些任務。無論您是初學者還是經驗豐富的開發人員，我們的逐步指南都會使過程變得簡單而有效率。讓我們探索一些基本教程，幫助您開始增強 PDF 文件。

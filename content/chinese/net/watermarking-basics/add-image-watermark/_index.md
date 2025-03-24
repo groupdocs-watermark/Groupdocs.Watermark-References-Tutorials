@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 轻松将图像水印添加到�
 weight: 10
 url: /zh/net/watermarking-basics/add-image-watermark/
 ---
+
+# 添加图像水印
+
 ## 介绍
 在本教程中，我们将深入研究使用 GroupDocs.Watermark for .NET 将图像水印添加到文档的过程。对文档加水印对于保护知识产权和品牌至关重要。借助 GroupDocs.Watermark for .NET，您可以将水印无缝集成到各种文档格式中，例如 Word、Excel、PowerPoint、PDF 等。
 ## 先决条件

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 도�
 weight: 30
 url: /ko/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
+
+# Word Docs에서 도형 제거
+
 ## 소개
 문서 처리 및 조작 영역에서 .NET용 GroupDocs.Watermark는 개발자가 워터마킹 기능을 .NET 응용 프로그램에 원활하게 통합할 수 있도록 하는 강력한 도구 세트로 등장합니다. 이 기사에서는 .NET용 GroupDocs.Watermark를 활용하여 Word 문서 내의 도형을 제거하는 복잡한 과정을 자세히 살펴봅니다. 단계별 가이드를 따르면 개발자는 프로세스를 쉽고 효율적으로 파악할 수 있습니다.
 ## 전제조건

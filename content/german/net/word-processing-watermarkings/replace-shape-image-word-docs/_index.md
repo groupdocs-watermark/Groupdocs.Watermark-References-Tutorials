@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie Formbilder in Word-Dokumenten mithilfe von Gr
 weight: 33
 url: /de/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# Ersetzen Sie das Formbild in Word-Dokumenten
+
 ## Einführung
 Im Bereich der Softwareentwicklung, insbesondere im .NET-Umfeld, ist der effiziente und sichere Umgang mit Dokumentenmanipulationen von entscheidender Bedeutung. Unter den unzähligen Aufgaben, mit denen Entwickler häufig konfrontiert werden, besteht eine häufige Herausforderung darin, Formbilder in Word-Dokumenten programmgesteuert zu ersetzen. Ohne die richtigen Tools und Bibliotheken kann dies eine mühsame Aufgabe sein.
 Glücklicherweise bietet GroupDocs eine leistungsstarke Lösung in Form von GroupDocs.Watermark für .NET, einer vielseitigen Bibliothek, die für die Handhabung von Wasserzeichen und die Bearbeitung von Wasserzeichen in verschiedenen Dokumentformaten, einschließlich Word-Dokumenten, entwickelt wurde. In diesem Tutorial befassen wir uns Schritt für Schritt mit dem Ersetzen von Formbildern in Word-Dokumenten mithilfe von GroupDocs.Watermark für .NET.

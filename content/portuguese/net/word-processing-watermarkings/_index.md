@@ -6,6 +6,9 @@ description: Descubra tutoriais essenciais do GroupDocs.Watermark for .NET para 
 weight: 26
 url: /pt/net/word-processing-watermarkings/
 ---
+
+# Marca d'água de processamento de texto
+
 ## Introdução
 
 Colocar marcas d'água em seus documentos do Word é uma etapa fundamental para proteger seu conteúdo e estabelecer sua marca. Com GroupDocs.Watermark for .NET, esse processo se torna simples e eficiente. Esteja você adicionando marcas d'água de imagem em cabeçalhos ou bloqueando marcas d'água em páginas específicas, esses tutoriais irão guiá-lo em cada etapa, garantindo que seus documentos estejam protegidos e profissionais.

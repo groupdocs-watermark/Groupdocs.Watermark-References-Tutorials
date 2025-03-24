@@ -6,6 +6,9 @@ description: Bez námahy přidejte vodoznaky do heslem chráněných dokumentů 
 weight: 14
 url: /cs/net/document-loadings/load-password-protected-word-document/
 ---
+
+# Načíst dokument Word chráněný heslem
+
 ## Úvod
 V digitálním věku je ochrana a ověřování vašich dokumentů důležitější než kdy jindy. Vodoznak je výkonná technika pro ochranu vašich souborů as GroupDocs.Watermark for .NET to můžete udělat bez námahy. Tento komplexní průvodce vás provede procesem vodoznaku do dokumentu aplikace Word chráněného heslem a rozebere každý krok, abyste mu porozuměli a mohli jej snadno implementovat.
 ## Předpoklady

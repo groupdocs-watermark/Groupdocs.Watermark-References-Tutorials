@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs for .NET 將浮水印新增至 Word �
 weight: 14
 url: /zh-hant/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
 ---
+
+# 為Word文件中的特定頁面新增浮水印
+
 ## 介紹
 文件浮水印是文件安全和品牌的一個重要方面。在本教學中，我們將探討如何使用 GroupDocs.Watermark for .NET 將浮水印新增至 Word 文件中的特定頁面。
 ## 先決條件

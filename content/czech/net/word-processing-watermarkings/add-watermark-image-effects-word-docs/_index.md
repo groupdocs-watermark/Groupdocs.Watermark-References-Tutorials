@@ -6,6 +6,9 @@ description: Naučte se přidávat vodoznaky s obrázkovými efekty do dokument�
 weight: 19
 url: /cs/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---
+
+# Přidejte vodoznak s obrázkovými efekty v Dokumentech aplikace Word
+
 ## Úvod
 Chcete do svých dokumentů Word přidat šmrnc pomocí poutavých vodoznaků? GroupDocs.Watermark pro .NET vám pomůže! Tento komplexní průvodce vás provede procesem přidávání vodoznaků s úžasnými obrazovými efekty do dokumentů aplikace Word pomocí GroupDocs pro .NET. Ať už jste zkušený vývojář nebo začátečník, tento tutoriál krok za krokem vám tento proces usnadní.
 ## Předpoklady

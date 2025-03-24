@@ -6,6 +6,9 @@ description: Naučte se, jak odstranit artefakty pomocí specifického formátov
 weight: 32
 url: /cs/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---
+
+# Odstraňte artefakty pomocí specifického formátování textu v PDF
+
 ## Úvod
 dnešní digitální době je prvořadá ochrana citlivých informací a zachování integrity dokumentů. Ať už jste právník zajišťující důvěrné smlouvy nebo obchodní manažer zajišťující bezpečnost finančních zpráv, často vyvstává potřeba odstranit artefakty pomocí specifického formátování textu v dokumentech PDF. Naštěstí s pokrokem technologie nabízejí nástroje jako GroupDocs.Watermark for .NET komplexní řešení pro řešení takových problémů.
 ## Předpoklady

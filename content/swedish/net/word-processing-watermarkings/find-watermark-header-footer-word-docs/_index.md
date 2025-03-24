@@ -6,6 +6,9 @@ description: Lär dig hur du effektivt hittar och tar bort vattenstämplar från
 weight: 22
 url: /sv/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Hitta vattenstämpel i sidhuvud/sidfot i Word Docs
+
 ## Introduktion
 I en värld av dokumenthantering och skydd spelar vattenmärkning en avgörande roll. Oavsett om det är i varumärkessyfte, upphovsrättsskydd eller dokumentspårning är det viktigt att lägga till vattenstämplar i dina dokument. Att hitta och ta bort vattenstämplar effektivt, särskilt i stora dokumentuppsättningar, kan dock vara en skrämmande uppgift. Det är här GroupDocs.Watermark för .NET kommer in i bilden. I den här handledningen kommer vi att fördjupa oss i hur du hittar vattenstämplar i sidhuvuden och sidfötter i Word-dokument med hjälp av GroupDocs.Watermark för .NET, och dela upp varje steg för att säkerställa en heltäckande förståelse.
 ## Förutsättningar

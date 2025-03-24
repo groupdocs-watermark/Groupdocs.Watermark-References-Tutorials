@@ -6,6 +6,9 @@ description: Temukan cara mengganti teks untuk artefak tertentu dalam dokumen PD
 weight: 42
 url: /id/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---
+
+# Ganti Teks untuk Artefak Tertentu di PDF
+
 ## Perkenalan
 Di era digital saat ini, melindungi integritas dan kerahasiaan dokumen adalah hal yang terpenting. Baik Anda seorang profesional hukum yang menjaga kontrak sensitif atau eksekutif bisnis yang memastikan keamanan informasi hak milik, kebutuhan akan perlindungan dokumen yang andal tidak bisa dilebih-lebihkan. GroupDocs.Watermark untuk .NET muncul sebagai solusi tangguh, menawarkan integrasi tanpa batas dan fungsionalitas canggih untuk memberi tanda air dan memanipulasi dokumen dengan mudah.
 ## Prasyarat

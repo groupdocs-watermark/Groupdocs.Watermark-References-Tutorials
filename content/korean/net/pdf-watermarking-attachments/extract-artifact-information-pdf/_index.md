@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 PDF 파일에서 아티
 weight: 24
 url: /ko/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# PDF에서 유물 정보 추출
+
 ## 소개
 PDF 문서에는 이미지, 텍스트, 모양과 같은 다양한 가공물에 포함된 귀중한 정보가 포함되어 있는 경우가 많습니다. 이 정보를 추출하는 것은 데이터 분석에서 콘텐츠 관리에 이르기까지 많은 응용 프로그램에서 중요할 수 있습니다. 이 자습서에서는 PDF 문서 워터마킹, 검색 및 조작을 위해 특별히 설계된 강력한 .NET 라이브러리인 GroupDocs.Watermark for .NET을 사용하여 PDF 파일에서 아티팩트 정보를 추출하는 방법을 살펴보겠습니다.
 ## 전제조건

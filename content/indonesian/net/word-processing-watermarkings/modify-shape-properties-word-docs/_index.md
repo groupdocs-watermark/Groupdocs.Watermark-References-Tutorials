@@ -6,6 +6,9 @@ description: Lindungi dokumen Word Anda dengan GroupDocs untuk .NET. Ubah proper
 weight: 27
 url: /id/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---
+
+# Ubah Properti Bentuk di Dokumen Word
+
 ## Perkenalan
 Di era digital saat ini, memastikan keamanan dokumen Anda adalah hal yang terpenting. Baik Anda seorang profesional bisnis, pakar hukum, atau penulis kreatif, menjaga informasi sensitif Anda sangatlah penting. Di sinilah GroupDocs.Watermark untuk .NET berperan, menawarkan solusi komprehensif untuk melindungi dokumen Anda dari penggunaan dan distribusi yang tidak sah.
 ## Prasyarat

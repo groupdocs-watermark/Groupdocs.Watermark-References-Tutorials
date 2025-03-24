@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air ke gambar dalam dokumen PDF men
 weight: 19
 url: /id/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# Tambahkan Tanda Air ke Gambar di PDF
+
 ## Perkenalan
 Menambahkan tanda air ke gambar dalam dokumen PDF penting untuk melindungi kekayaan intelektual Anda atau memastikan keaslian dokumen Anda. Menggunakan GroupDocs.Watermark untuk .NET, tugas ini dapat dilakukan secara efisien dan mudah. Tutorial ini akan memandu Anda melalui setiap langkah proses, mulai dari menyiapkan lingkungan, menambahkan tanda air, hingga menyimpan dokumen akhir. Ayo selami!
 ## Prasyarat

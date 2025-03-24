@@ -6,6 +6,9 @@ description: Naučte se přidávat vlastní vodoznaky s textovými efekty do dok
 weight: 21
 url: /cs/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---
+
+# Přidejte vodoznak s textovými efekty v Dokumentech aplikace Word
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak přidat vodoznak s textovými efekty do dokumentů aplikace Word pomocí GroupDocs.Watermark for .NET. Podle těchto podrobných pokynů budete moci vylepšit své dokumenty pomocí přizpůsobených vodoznaků, které obsahují různé textové efekty.
 ## Předpoklady

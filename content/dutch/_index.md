@@ -8,6 +8,9 @@ url: /nl/
 is_root: true
 ---
 
+# Beheers documentbeveiliging en branding met GroupDocs.Watermark
+
+
 Welkom bij de uitgebreide tutorialhub voor GroupDocs.Watermark, waar we diepgaande handleidingen en voorbeelden bieden voor zowel .NET- als Java-platforms. Onze hulpmiddelen zijn ontworpen om u te helpen de kunst van het toevoegen en beheren van watermerken in een breed scala aan documentformaten onder de knie te krijgen. Of u nu een ontwikkelaar bent die met .NET of Java werkt, onze stapsgewijze zelfstudies voorzien u van de kennis en hulpmiddelen die nodig zijn om de documentbeveiliging te verbeteren, de merkconsistentie te behouden en intellectueel eigendom met gemak te beschermen. Ontdek onze tutorials om het volledige potentieel van GroupDocs in uw toepassingen te benutten.
 
 

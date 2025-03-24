@@ -6,6 +6,9 @@ description: Chroń swoje dokumenty z łatwością, korzystając z Groupdocs.Wat
 weight: 26
 url: /pl/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---
+
+# Pobierz wymiary PDF
+
 ## Wstęp
 dzisiejszej epoce cyfrowej ochrona dokumentów jest sprawą najwyższej wagi. Niezależnie od tego, czy jesteś profesjonalistą w biznesie, ekspertem prawnym czy kreatywnym artystą, ochrona Twojej własności intelektualnej jest niezbędna. Groupdocs.Watermark dla .NET oferuje niezawodne rozwiązanie umożliwiające dodawanie znaków wodnych, stempli i adnotacji do dokumentów, zapewniając ich bezpieczeństwo i autentyczność.
 ## Warunki wstępne

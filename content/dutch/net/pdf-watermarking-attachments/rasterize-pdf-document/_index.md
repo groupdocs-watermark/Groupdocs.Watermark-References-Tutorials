@@ -6,6 +6,9 @@ description: Leer hoe u PDF-documenten kunt rasteren met GroupDocs.Watermark voo
 weight: 27
 url: /nl/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# PDF-document rasteren
+
 ## Invoering
 Op het gebied van documentbeheer en -manipulatie staat GroupDocs.Watermark voor .NET hoog als een krachtig hulpmiddel, dat robuuste mogelijkheden biedt voor het toevoegen, verwijderen en doorzoeken van watermerken in verschillende documentformaten. Of het nu gaat om het beveiligen van uw documenten met auteursrechtvermeldingen, het toevoegen van bedrijfslogo's voor branding, of het eenvoudig annoteren van documenten met stempels, GroupDocs.Watermark vereenvoudigt het proces met zijn intuïtieve API en uitgebreide functieset.
 ## Vereisten

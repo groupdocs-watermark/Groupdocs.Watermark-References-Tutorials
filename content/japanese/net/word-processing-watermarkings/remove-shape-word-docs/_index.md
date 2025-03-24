@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して Word 文書から図�
 weight: 30
 url: /ja/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
+
+# Word ドキュメントの図形を削除する
+
 ## 導入
 ドキュメントの処理と操作の領域では、GroupDocs.Watermark for .NET が強力なツールセットとして登場し、開発者が透かし機能を .NET アプリケーションにシームレスに統合できるようになります。この記事では、GroupDocs.Watermark for .NET を利用して Word 文書内の図形を削除する複雑な仕組みについて詳しく説明します。段階的なガイドに従うことで、開発者はプロセスを簡単かつ効率的に理解できます。
 ## 前提条件

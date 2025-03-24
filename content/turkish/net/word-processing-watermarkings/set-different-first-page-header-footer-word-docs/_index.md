@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinin ilk say
 weight: 36
 url: /tr/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Word Dokümanlarında Farklı İlk Sayfa Üstbilgisini/Altbilgisini Ayarlama
+
 ## giriiş
 Belge yönetimi ve manipülasyonu alanında, GroupDocs.Watermark for .NET, belgelere filigran eklemek için kusursuz entegrasyon ve sağlam işlevler sunan güçlü bir araç olarak ortaya çıkıyor. Belge işlemede yaygın gereksinimlerden biri, Word belgelerinin ilk sayfasında farklı üstbilgi ve altbilgiler ayarlamaktır. Bu öğretici, GroupDocs.Watermark for .NET kullanarak bu görevi gerçekleştirme sürecini açıklayacak ve her adımı kolayca anlaşılır bölümlere ayıracaktır.
 ## Önkoşullar

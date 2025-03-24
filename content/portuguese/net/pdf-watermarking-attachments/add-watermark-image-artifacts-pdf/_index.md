@@ -6,6 +6,9 @@ description: Proteja seus arquivos PDF com marcas d'água personalizadas usando 
 weight: 18
 url: /pt/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# Adicionar marca d'água a artefatos de imagem em PDF
+
 ## Introdução
 Neste tutorial, orientaremos você no processo de adição de uma marca d'água a artefatos de imagem em um documento PDF usando GroupDocs.Watermark for .NET. Seguindo essas etapas, você pode proteger seus arquivos PDF de maneira eficiente com marcas d’água personalizadas.
 ## Pré-requisitos

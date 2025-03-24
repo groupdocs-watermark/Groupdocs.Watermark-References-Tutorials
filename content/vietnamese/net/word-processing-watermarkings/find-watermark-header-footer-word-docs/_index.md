@@ -6,6 +6,9 @@ description: Tìm hiểu cách tìm và xóa hình mờ khỏi tài liệu Word 
 weight: 22
 url: /vi/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Tìm hình mờ ở đầu trang/chân trang trong Word Docs
+
 ## Giới thiệu
 Trong thế giới quản lý và bảo vệ tài liệu, hình mờ đóng một vai trò then chốt. Cho dù đó là mục đích xây dựng thương hiệu, bảo vệ bản quyền hay theo dõi tài liệu thì việc thêm hình mờ vào tài liệu của bạn là điều cần thiết. Tuy nhiên, việc tìm và loại bỏ hình mờ một cách hiệu quả, đặc biệt là trong các bộ tài liệu lớn, có thể là một nhiệm vụ khó khăn. Đây là lúc GroupDocs.Watermark dành cho .NET phát huy tác dụng. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách tìm hình mờ trong đầu trang và chân trang của tài liệu Word bằng GroupDocs.Watermark cho .NET, chia nhỏ từng bước để đảm bảo hiểu biết toàn diện.
 ## Điều kiện tiên quyết

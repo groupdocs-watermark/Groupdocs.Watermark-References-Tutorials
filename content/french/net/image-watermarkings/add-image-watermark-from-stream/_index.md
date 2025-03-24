@@ -6,6 +6,9 @@ description: Découvrez comment ajouter des filigranes d’image aux documents �
 weight: 12
 url: /fr/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# Ajouter un filigrane d'image à partir d'un flux
+
 ## Introduction
 Dans le domaine de la gestion et de la sécurité des documents, l’incorporation de filigranes dans les fichiers revêt une importance primordiale. Qu'il s'agisse de l'image de marque, de la protection des droits d'auteur ou du maintien de l'intégrité des documents, les filigranes jouent un rôle crucial. Heureusement, GroupDocs.Watermark pour .NET fournit une solution robuste pour ajouter, supprimer et rechercher des filigranes dans différents formats de documents.
 ## Conditions préalables

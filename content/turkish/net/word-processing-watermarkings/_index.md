@@ -6,6 +6,9 @@ description: Word belgelerinde filigran eklemek ve yönetmek için gerekli Group
 weight: 26
 url: /tr/net/word-processing-watermarkings/
 ---
+
+# Kelime İşlem Filigranı
+
 ## giriiş
 
 Word belgelerinize filigran eklemek, içeriğinizin güvenliğini sağlamanın ve markanızı oluşturmanın önemli bir adımıdır. GroupDocs.Watermark for .NET ile bu süreç basit ve verimli hale gelir. İster başlıklara görüntü filigranları ekliyor olun, ister belirli sayfalarda filigranları kilitliyor olun, bu eğitimler her adımda size rehberlik edecek ve belgelerinizin hem korunmasını hem de profesyonel olmasını sağlayacaktır.

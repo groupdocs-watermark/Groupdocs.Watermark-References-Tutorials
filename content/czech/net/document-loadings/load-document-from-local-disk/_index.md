@@ -6,6 +6,9 @@ description: Chraňte a spravujte své dokumenty pomocí Groupdocs pro .NET. Pos
 weight: 10
 url: /cs/net/document-loadings/load-document-from-local-disk/
 ---
+
+# Načíst dokument z místního disku
+
 ## Úvod
 Vodoznakové dokumenty jsou v dnešním digitálním věku zásadní pro zajištění ochrany obsahu, tvrzení o vlastnictví a důvěrnosti. Groupdocs.Watermark for .NET je výkonná knihovna, která umožňuje vývojářům přidávat, vyhledávat a spravovat vodoznaky v různých formátech dokumentů. V tomto tutoriálu projdeme procesem používání Groupdocs.Watermark for .NET k přidávání vodoznaků do vašich dokumentů s podrobnými pokyny krok za krokem.
 ## Předpoklady

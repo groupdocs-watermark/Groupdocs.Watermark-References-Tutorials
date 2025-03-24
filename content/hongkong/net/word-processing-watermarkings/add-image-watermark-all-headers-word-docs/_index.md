@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 輕鬆將影像浮水印新增�
 weight: 10
 url: /zh-hant/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# 為Word文件中的所有標題新增圖像浮水印
+
 ## 介紹
 水印是文件管理的重要組成部分，它提供了一種將所有權、機密性或品牌等資訊嵌入到文件中的方法。在本教學中，我們將逐步完成使用 GroupDocs.Watermark for .NET 將圖片浮水印新增至 Word 文件中所有標題的步驟。無論您是程式設計新手還是經驗豐富的開發人員，本指南都將幫助您輕鬆實現浮水印目標。
 ## 先決條件

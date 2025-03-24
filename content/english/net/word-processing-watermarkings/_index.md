@@ -6,6 +6,9 @@ description: Discover essential GroupDocs.Watermark for .NET tutorials to add an
 weight: 26
 url: /net/word-processing-watermarkings/
 ---
+
+# Word Processing Watermarking
+
 ## Introduction
 
 Watermarking your Word documents is a key step in securing your content and establishing your brand. With GroupDocs.Watermark for .NET, this process becomes straightforward and efficient. Whether you're adding image watermarks to headers or locking watermarks on specific pages, these tutorials will guide you through each step, ensuring your documents are both protected and professional.

@@ -6,6 +6,9 @@ description: .NET용 Watermark를 사용하여 Word 문서에서 섹션 속성�
 weight: 23
 url: /ko/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# Word Docs에서 섹션 속성 가져오기
+
 ## 소개
 문서 관리 및 조작 영역에서 .NET용 Groupdocs.Watermark는 다재다능하고 강력한 도구로 돋보입니다. .NET 프레임워크에 원활하게 통합된 이 라이브러리를 통해 개발자는 워터마크, 주석 및 문서 속성을 손쉽게 조작할 수 있습니다. 이 튜토리얼에서는 주요 기능 중 하나인 Word 문서에서 섹션 속성을 추출하는 방법을 살펴보겠습니다. 프로세스를 단계별로 분석하여 .NET용 Groupdocs.Watermark의 잠재력을 활용해 보세요.
 ## 전제조건

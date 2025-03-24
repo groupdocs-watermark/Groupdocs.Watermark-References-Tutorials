@@ -6,6 +6,9 @@ description: Naučte se, jak nahradit obrázky v dokumentech PDF pomocí GroupDo
 weight: 38
 url: /cs/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# Nahradit obrázek za konkrétní artefakt v PDF
+
 ## Úvod
 Přidávání vodoznaků do dokumentů je základním postupem pro zajištění zabezpečení dokumentů, značky a ochrany autorských práv. Pokud se chcete ponořit do světa vodoznaků dokumentů pomocí GroupDocs.Watermark pro .NET, jste na správném místě. Tato příručka vás provede procesem nahrazení obrázků v dokumentu PDF pomocí knihovny GroupDocs.Watermark. Začněme!
 ## Předpoklady

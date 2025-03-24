@@ -6,6 +6,9 @@ description: Leer hoe u naast elkaar geplaatste afbeeldingswatermerken aan uw do
 weight: 10
 url: /nl/net/image-watermarkings/add-tiled-image-watermark/
 ---
+
+# Voeg een betegeld afbeeldingswatermerk toe
+
 ## Invoering
 GroupDocs.Watermark voor .NET is een krachtige API waarmee ontwikkelaars programmatisch watermerken in verschillende documentformaten kunnen toevoegen, verwijderen en zoeken. In deze zelfstudie begeleiden we u bij het toevoegen van een betegeld afbeeldingswatermerk aan uw documenten met behulp van GroupDocs.Watermark voor .NET.
 ## Vereisten

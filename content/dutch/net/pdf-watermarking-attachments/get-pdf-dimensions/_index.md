@@ -6,6 +6,9 @@ description: Bescherm uw documenten eenvoudig met Groupdocs.Watermark voor .NET.
 weight: 26
 url: /nl/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---
+
+# Ontvang PDF-afmetingen
+
 ## Invoering
 In het huidige digitale tijdperk is het beschermen van uw documenten van cruciaal belang. Of u nu een zakelijke professional, een juridisch expert of een creatieve kunstenaar bent, het beschermen van uw intellectuele eigendom is essentieel. Groupdocs.Watermark voor .NET biedt een robuuste oplossing om watermerken, stempels en annotaties aan uw documenten toe te voegen, waardoor de veiligheid en authenticiteit ervan wordt gegarandeerd.
 ## Vereisten

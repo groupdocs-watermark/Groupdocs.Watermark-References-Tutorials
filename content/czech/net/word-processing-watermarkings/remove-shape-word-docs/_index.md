@@ -6,6 +6,9 @@ description: Naučte se odstraňovat tvary z dokumentů aplikace Word pomocí Gr
 weight: 30
 url: /cs/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
+
+# Odebrat tvar v dokumentech aplikace Word
+
 ## Úvod
 V oblasti zpracování a manipulace s dokumenty se GroupDocs.Watermark for .NET ukazuje jako výkonná sada nástrojů, která umožňuje vývojářům bezproblémově integrovat funkce vodoznaku do jejich aplikací .NET. Tento článek se ponoří do složitosti využití GroupDocs.Watermark pro .NET k odstranění tvarů z dokumentů aplikace Word. Podle podrobného průvodce mohou vývojáři snadno a efektivně pochopit proces.
 ## Předpoklady

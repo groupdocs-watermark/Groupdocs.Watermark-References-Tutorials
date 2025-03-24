@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して Word 文書内の図�
 weight: 34
 url: /ja/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Word ドキュメントの図形テキストを書式設定されたテキストに置き換える
+
 ## 導入
 このチュートリアルでは、GroupDocs.Watermark for .NET を使用して、Word 文書内の図形テキストを書式設定されたテキストに置き換えるプロセスを説明します。このライブラリは、図形内のテキストの置換など、透かしを操作するための強力な機能を提供します。
 ## 前提条件

@@ -6,6 +6,9 @@ description: 透過此逐步指南，了解如何使用 Groupdocs for .NET 將�
 weight: 11
 url: /zh-hant/net/watermarking-basics/add-text-watermark/
 ---
+
+# 添加文字浮水印
+
 ## 介紹
 GroupDocs.Watermark for .NET 是一個功能強大的程式庫，可讓開發人員在 .NET 應用程式中的各種文件格式中新增、搜尋和刪除浮水印。在本教程中，我們將重點介紹如何使用 GroupDocs.Watermark 將文字浮水印新增至文件。
 ## 先決條件

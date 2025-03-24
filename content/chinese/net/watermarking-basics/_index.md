@@ -6,6 +6,9 @@ description: 探索 GroupDocs.Watermark for .NET 教程，轻松添加图像和�
 weight: 20
 url: /zh/net/watermarking-basics/
 ---
+
+# 水印基础知识
+
 ## 介绍
 水印是保护您的文档并维护您的所有权的一项重要技术。 GroupDocs.Watermark for .NET 简化了此过程，提供了用于添加图像和文本水印的强大工具。无论您是水印新手还是希望提高自己的技能，这些教程都将指导您完成基础知识。
 

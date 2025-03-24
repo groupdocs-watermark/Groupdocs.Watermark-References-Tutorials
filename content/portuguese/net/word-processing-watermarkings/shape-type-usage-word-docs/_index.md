@@ -6,6 +6,9 @@ description: Aprenda como manipular formas em documentos do Word usando GroupDoc
 weight: 37
 url: /pt/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Uso de tipo de forma em documentos do Word
+
 ## Introdução
 Neste tutorial, exploraremos como utilizar tipos de forma em documentos do Word usando GroupDocs.Watermark for .NET. As formas nos documentos do Word podem variar e compreender como manipulá-las pode ser crucial para várias tarefas de processamento de documentos.
 ## Pré-requisitos

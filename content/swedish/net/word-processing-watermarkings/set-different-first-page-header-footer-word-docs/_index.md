@@ -6,6 +6,9 @@ description: Lär dig hur du ställer in olika sidhuvuden och sidfötter på fö
 weight: 36
 url: /sv/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Ställ in annan sidhuvud/sidfot på första sidan i Word Docs
+
 ## Introduktion
 När det gäller dokumenthantering och manipulation framstår GroupDocs.Watermark för .NET som ett kraftfullt verktyg som erbjuder sömlös integration och robusta funktioner för vattenmärkning av dokument. Ett av de vanligaste kraven vid dokumentbehandling är att sätta olika sidhuvuden och sidfötter på första sidan i Word-dokument. Denna handledning kommer att belysa processen för att uppnå denna uppgift med GroupDocs.Watermark för .NET, och dela upp varje steg i lättbegripliga segment.
 ## Förutsättningar

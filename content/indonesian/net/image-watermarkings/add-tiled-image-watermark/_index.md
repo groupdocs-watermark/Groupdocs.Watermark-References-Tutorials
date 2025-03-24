@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air gambar bersusun ke dokumen Anda
 weight: 10
 url: /id/net/image-watermarkings/add-tiled-image-watermark/
 ---
+
+# Tambahkan Tanda Air Gambar Berubin
+
 ## Perkenalan
 GroupDocs.Watermark for .NET adalah API canggih yang memungkinkan pengembang menambahkan, menghapus, dan mencari tanda air dalam berbagai format dokumen secara terprogram. Dalam tutorial ini, kami akan memandu Anda melalui proses menambahkan tanda air gambar ubin ke dokumen Anda menggunakan GroupDocs.Watermark untuk .NET.
 ## Prasyarat

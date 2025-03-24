@@ -6,6 +6,9 @@ description: Voeg moeiteloos watermerken toe aan met een wachtwoord beveiligde W
 weight: 14
 url: /nl/net/document-loadings/load-password-protected-word-document/
 ---
+
+# Met een wachtwoord beveiligd Word-document laden
+
 ## Invoering
 In het digitale tijdperk is het beschermen en authenticeren van uw documenten belangrijker dan ooit. Watermerken is een krachtige techniek om uw bestanden te beveiligen, en met GroupDocs.Watermark voor .NET kunt u dit moeiteloos doen. Deze uitgebreide gids leidt u door het proces van het watermerken van een met een wachtwoord beveiligd Word-document, waarbij elke stap wordt opgesplitst om ervoor te zorgen dat u deze begrijpt en gemakkelijk kunt implementeren.
 ## Vereisten

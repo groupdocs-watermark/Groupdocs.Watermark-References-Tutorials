@@ -6,6 +6,9 @@ description: Lär dig hur du tar bort kommentarer från PDF-filer med GroupDocs.
 weight: 29
 url: /sv/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---
+
+# Ta bort anteckning från PDF
+
 ## Introduktion
 Anteckningar i PDF-dokument kan ibland störa innehållet eller störa dokumentets läsbarhet. Med GroupDocs.Watermark för .NET kan du enkelt ta bort kommentarer från PDF-filer. I den här handledningen guidar vi dig genom processen steg för steg.
 ## Förutsättningar

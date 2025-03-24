@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark 튜토리얼을 찾아 이미지와 텍
 weight: 20
 url: /ko/net/watermarking-basics/
 ---
+
+# 워터마킹 기본 사항
+
 ## 소개
 워터마킹은 문서를 보호하고 소유권을 주장하는 데 중요한 기술입니다. .NET용 GroupDocs.Watermark는 이미지와 텍스트 워터마크를 모두 추가하기 위한 강력한 도구를 제공하여 이 프로세스를 단순화합니다. 워터마킹이 처음이시든 기술을 향상시키려는 분이든 이 튜토리얼은 기본 사항을 안내해 드립니다.
 

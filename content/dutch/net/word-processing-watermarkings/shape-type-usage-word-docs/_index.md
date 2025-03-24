@@ -6,6 +6,9 @@ description: Leer hoe u vormen in Word-documenten kunt manipuleren met GroupDocs
 weight: 37
 url: /nl/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Vormtypegebruik in Word-documenten
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u vormtypen in Word-documenten kunt gebruiken met GroupDocs.Watermark voor .NET. Vormen in Word-documenten kunnen variëren, en het begrijpen hoe u deze kunt manipuleren kan van cruciaal belang zijn voor verschillende documentverwerkingstaken.
 ## Vereisten

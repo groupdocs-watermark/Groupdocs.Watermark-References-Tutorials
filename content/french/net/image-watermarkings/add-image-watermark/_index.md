@@ -6,6 +6,9 @@ description: Découvrez comment ajouter des filigranes d'image à vos documents 
 weight: 11
 url: /fr/net/image-watermarkings/add-image-watermark/
 ---
+
+# Ajouter un filigrane d'image
+
 ## Introduction
 Bienvenue dans ce guide complet sur l'ajout de filigranes d'image à l'aide de GroupDocs.Watermark pour .NET ! Le filigrane est un moyen puissant de protéger vos documents et images contre toute utilisation non autorisée, garantissant ainsi la sécurité de votre propriété intellectuelle. Dans ce didacticiel, nous vous guiderons tout au long du processus, de la configuration de votre environnement à l'application d'un filigrane à vos documents. Que vous soyez un développeur chevronné ou que vous débutiez tout juste, vous trouverez ce guide utile et facile à suivre.
 ## Conditions préalables

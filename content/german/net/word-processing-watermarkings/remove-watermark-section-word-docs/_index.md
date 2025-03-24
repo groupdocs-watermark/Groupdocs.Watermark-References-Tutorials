@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Wasserzeich
 weight: 32
 url: /de/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# Wasserzeichen aus Abschnitt in Word-Dokumenten entfernen
+
 ## Einführung
 Im digitalen Zeitalter ist der Schutz der Integrität von Dokumenten von größter Bedeutung, insbesondere wenn es um sensible Informationen oder geschützte Inhalte geht. Wasserzeichen sind eine häufig verwendete Technik, um Eigentum oder Markenidentität zu bestätigen oder einfach den Status eines Dokuments anzuzeigen. Es gibt jedoch Fälle, in denen das Entfernen von Wasserzeichen erforderlich ist, sei es aufgrund von Bearbeitungsanforderungen oder aus Datenschutzgründen.
 ## Voraussetzungen

@@ -6,6 +6,9 @@ description: この包括的なステップバイステップのチュートリ�
 weight: 38
 url: /ja/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# PDF 内の特定のアーティファクトの画像を置換
+
 ## 導入
 文書に透かしを追加することは、文書のセキュリティ、ブランド化、著作権保護を確保するために不可欠な方法です。 GroupDocs.Watermark for .NET を使用してドキュメントの透かしの世界を詳しく調べたい場合は、ここが正しい場所です。このガイドでは、GroupDocs.Watermark ライブラリを使用して PDF ドキュメント内の画像を置換するプロセスについて説明します。始めましょう！
 ## 前提条件

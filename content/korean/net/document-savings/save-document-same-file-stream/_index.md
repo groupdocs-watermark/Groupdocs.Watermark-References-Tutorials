@@ -6,6 +6,9 @@ description: .NET용 Groupdocs.Watermark를 사용하여 문서에 워터마크�
 weight: 10
 url: /ko/net/document-savings/save-document-same-file-stream/
 ---
+
+# 동일한 파일 또는 스트림에 문서 저장
+
 ## 소개
 오늘날 디지털 시대에 문서에 워터마크를 추가하는 것은 지적 재산을 보호하고 브랜드 무결성을 보장하는 데 필수적입니다. .NET용 Groupdocs.Watermark는 워터마크를 문서에 원활하게 포함시키려는 개발자를 위한 강력한 솔루션을 제공합니다. 이 포괄적인 가이드는 .NET용 Groupdocs.Watermark를 사용하여 워터마크가 있는 문서를 동일한 파일이나 스트림에 저장하는 단계를 안내합니다.
 ## 전제조건

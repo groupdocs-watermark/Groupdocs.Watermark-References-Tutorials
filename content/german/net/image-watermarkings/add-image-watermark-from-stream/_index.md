@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Bildwasserz
 weight: 12
 url: /de/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# Bildwasserzeichen aus Stream hinzufügen
+
 ## Einführung
 Im Bereich der Dokumentenverwaltung und -sicherheit ist die Integration von Wasserzeichen in Dateien von größter Bedeutung. Ob es um Branding, Urheberrechtsschutz oder die Wahrung der Dokumentenintegrität geht, Wasserzeichen spielen eine entscheidende Rolle. Glücklicherweise bietet GroupDocs.Watermark für .NET eine robuste Lösung zum Hinzufügen, Entfernen und Durchsuchen von Wasserzeichen in verschiedenen Dokumentformaten.
 ## Voraussetzungen

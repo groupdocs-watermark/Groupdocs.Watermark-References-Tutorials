@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất các thuộc tính phần từ tài
 weight: 23
 url: /vi/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# Nhận thuộc tính phần trong tài liệu Word
+
 ## Giới thiệu
 Trong lĩnh vực quản lý và thao tác tài liệu, Groupdocs.Watermark dành cho .NET nổi bật như một công cụ linh hoạt và mạnh mẽ. Được tích hợp liền mạch vào .NET framework, thư viện này cho phép các nhà phát triển thao tác với hình mờ, chú thích và thuộc tính tài liệu một cách dễ dàng. Trong hướng dẫn này, chúng ta sẽ đi sâu vào một trong những tính năng chính của nó: trích xuất các thuộc tính của phần từ tài liệu Word. Hãy làm theo khi chúng tôi chia nhỏ quy trình từng bước, mở khóa tiềm năng của Groupdocs.Watermark cho .NET.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: 이 단계별 가이드를 통해 .NET용 GroupDocs.Watermark를 �
 weight: 39
 url: /ko/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
+
+# PDF의 특정 XObject에 대한 이미지 바꾸기
+
 ## 소개
 .NET용 GroupDocs.Watermark를 사용하여 PDF에서 특정 XObject의 이미지를 바꾸는 방법에 대한 자세한 가이드에 오신 것을 환영합니다. 워터마크를 관리하거나 PDF 파일 내 콘텐츠를 수정해야 하는 경우 올바른 위치에 오셨습니다. 이 튜토리얼에서는 PDF 문서를 새로운 이미지로 자신있게 업데이트할 수 있도록 각 단계를 안내합니다. 그것에 대해 자세히 알아보겠습니다!
 ## 전제조건

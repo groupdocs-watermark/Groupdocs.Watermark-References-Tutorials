@@ -6,6 +6,9 @@ description: Dowiedz się, jak zastąpić tekst kształtu tekstem sformatowanym 
 weight: 34
 url: /pl/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Zastąp tekst kształtu tekstem sformatowanym w dokumentach programu Word
+
 ## Wstęp
 tym samouczku przeprowadzimy Cię przez proces zastępowania tekstu kształtu tekstem sformatowanym w dokumentach programu Word przy użyciu narzędzia GroupDocs.Watermark dla platformy .NET. Ta biblioteka zapewnia zaawansowane funkcje pracy ze znakami wodnymi, w tym zastępowanie tekstu w kształtach.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodać zablokowany znak wodny do określonych str
 weight: 12
 url: /pl/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Dodaj zablokowany znak wodny do określonych stron w dokumentach programu Word
+
 ## Wstęp
 Czy chcesz dodać znak wodny do określonych stron dokumentów programu Word, ale chcesz, aby był on zablokowany, aby nie można było go łatwo usunąć lub edytować? Jesteś we właściwym miejscu! W tym samouczku przeprowadzimy Cię przez proces dodawania zablokowanego znaku wodnego do określonych stron w dokumentach programu Word za pomocą GroupDocs.Watermark dla .NET. Ta potężna biblioteka ułatwia stosowanie, zarządzanie i dostosowywanie znaków wodnych na różnych typach dokumentów. Niezależnie od tego, czy jesteś programistą, czy po prostu osobą, która musi zabezpieczyć swoje dokumenty, ten przewodnik w prosty sposób przeprowadzi Cię przez każdy krok.
 ## Warunki wstępne

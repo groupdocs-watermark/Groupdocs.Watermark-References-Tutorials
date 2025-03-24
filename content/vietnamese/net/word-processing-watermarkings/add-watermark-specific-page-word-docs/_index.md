@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ vào các trang cụ thể trong
 weight: 14
 url: /vi/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
 ---
+
+# Thêm hình mờ vào trang cụ thể trong tài liệu Word
+
 ## Giới thiệu
 Hình mờ tài liệu là một khía cạnh quan trọng của bảo mật tài liệu và xây dựng thương hiệu. Trong hướng dẫn này, chúng ta sẽ khám phá cách thêm hình mờ vào một trang cụ thể trong tài liệu Word bằng GroupDocs.Watermark cho .NET.
 ## Điều kiện tiên quyết

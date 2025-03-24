@@ -6,6 +6,9 @@ description: Leer hoe u watermerken uit PDF-bestanden verwijdert met GroupDocs.W
 weight: 34
 url: /nl/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---
+
+# Verwijder watermerk uit PDF
+
 ## Invoering
 In het huidige digitale tijdperk is het beschermen van gevoelige documenten met watermerken een gangbare praktijk. Er zijn echter gevallen waarin u om verschillende redenen watermerken uit PDF-bestanden moet verwijderen. Of u nu een document bewerkt of gewoon een schone versie nodig heeft voor de presentatie, GroupDocs.Watermark voor .NET biedt een naadloze oplossing voor het verwijderen van watermerken uit PDF-bestanden.
 ## Vereisten

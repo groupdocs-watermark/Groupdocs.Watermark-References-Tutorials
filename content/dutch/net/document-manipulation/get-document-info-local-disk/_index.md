@@ -6,6 +6,9 @@ description: Leer hoe u watermerken in documenten kunt toevoegen, verwijderen en
 weight: 11
 url: /nl/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# Documentinformatie ophalen van lokale schijf
+
 ## Invoering
 Welkom bij de ultieme handleiding voor het gebruik van GroupDocs.Watermark voor .NET! Of u nu een doorgewinterde ontwikkelaar bent of net begint, dit artikel begeleidt u bij de basisprincipes van het watermerken van uw documenten met deze krachtige tool. Uiteindelijk zult u een professional zijn in het insluiten van watermerken in uw documenten, zodat u er zeker van kunt zijn dat ze worden beschermd en van uw merk worden voorzien volgens uw specificaties.
 ## Vereisten

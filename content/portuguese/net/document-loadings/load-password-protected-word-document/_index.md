@@ -6,6 +6,9 @@ description: Adicione facilmente marcas d'água a documentos do Word protegidos 
 weight: 14
 url: /pt/net/document-loadings/load-password-protected-word-document/
 ---
+
+# Carregar documento do Word protegido por senha
+
 ## Introdução
 Na era digital, proteger e autenticar os seus documentos é mais crítico do que nunca. A marca d'água é uma técnica poderosa para proteger seus arquivos e, com GroupDocs.Watermark for .NET, você pode fazer isso sem esforço. Este guia completo orientará você no processo de colocação de marca d'água em um documento do Word protegido por senha, detalhando cada etapa para garantir que você o entenda e possa implementá-lo facilmente.
 ## Pré-requisitos

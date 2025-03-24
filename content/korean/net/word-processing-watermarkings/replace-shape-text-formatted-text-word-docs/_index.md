@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 도�
 weight: 34
 url: /ko/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Word Docs에서 도형 텍스트를 서식 있는 텍스트로 바꾸기
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 도형 텍스트를 서식 있는 텍스트로 바꾸는 과정을 안내합니다. 이 라이브러리는 모양 내의 텍스트 교체를 포함하여 워터마크 작업을 위한 강력한 기능을 제공합니다.
 ## 전제조건

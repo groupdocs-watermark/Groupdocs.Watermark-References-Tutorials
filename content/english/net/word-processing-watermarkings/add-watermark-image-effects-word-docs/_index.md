@@ -6,6 +6,9 @@ description: Learn how to add watermarks with image effects to your Word documen
 weight: 19
 url: /net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---
+
+# Add Watermark with Image Effects in Word Docs
+
 ## Introduction
 Are you looking to add some pizzazz to your Word documents with eye-catching watermarks? GroupDocs.Watermark for .NET has got you covered! This comprehensive guide will walk you through the process of adding watermarks with stunning image effects to your Word documents using GroupDocs.Watermark for .NET. Whether you're a seasoned developer or a beginner, this step-by-step tutorial will make the process a breeze.
 ## Prerequisites

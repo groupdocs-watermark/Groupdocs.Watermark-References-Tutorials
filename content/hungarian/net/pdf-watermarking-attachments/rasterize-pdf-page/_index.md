@@ -6,6 +6,9 @@ description: Növelje a dokumentumok biztonságát a GroupDocs Watermark for .NE
 weight: 28
 url: /hu/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---
+
+# PDF oldal raszterezése
+
 ## Bevezetés
 A GroupDocs.Watermark for .NET egy hatékony API, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen adjanak vízjeleket különféle dokumentumformátumokhoz, beleértve a PDF, Word, Excel, PowerPoint és egyebeket. Intuitív kezelőfelületével és kiterjedt szolgáltatásaival a GroupDocs.Watermark leegyszerűsíti a szöveges vagy képi vízjelek dokumentumokhoz való hozzáadásának folyamatát, lehetővé téve a felhasználók számára, hogy megvédjék szellemi tulajdonukat, és könnyedén fokozzák a dokumentumok biztonságát.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs for .NET 将具有形状设置的水�
 weight: 20
 url: /zh/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# 在 Word 文档中添加具有形状设置的水印
+
 ## 介绍
 在本教程中，我们将逐步介绍使用 GroupDocs.Watermark for .NET 将具有形状设置的水印添加到 Word 文档的过程。
 ## 先决条件

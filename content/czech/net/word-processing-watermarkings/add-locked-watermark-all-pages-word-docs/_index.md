@@ -6,6 +6,9 @@ description: Zabezpečte své dokumenty přidáním zamčených vodoznaků pomoc
 weight: 11
 url: /cs/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Přidat zamčený vodoznak na všechny stránky v Dokumentech aplikace Word
+
 ## Úvod
 Přidání vodoznaků do vašich dokumentů je zásadním krokem v zabezpečení a brandingu vašeho obsahu. Ať už bráníte neoprávněnému použití nebo jednoduše přidáváte profesionální nádech, vodoznaky mohou sloužit mnoha účelům. V tomto tutoriálu vás provedeme procesem přidání zamčeného vodoznaku na všechny stránky dokumentu aplikace Word pomocí Groupdocs.Watermark for .NET.
 ## Předpoklady

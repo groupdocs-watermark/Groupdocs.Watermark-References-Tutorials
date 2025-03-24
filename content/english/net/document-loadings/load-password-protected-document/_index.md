@@ -6,6 +6,9 @@ description: Learn how to add watermarks to password-protected documents using G
 weight: 13
 url: /net/document-loadings/load-password-protected-document/
 ---
+
+# Load Password Protected Document
+
 ## Introduction
 Are you looking to protect your documents by adding watermarks, even if they are password protected? Groupdocs.Watermark for .NET is a powerful tool that allows you to do just that. In this tutorial, we will guide you through the process of loading a password-protected document and adding a watermark to it using Groupdocs.Watermark for .NET. Let's dive in!
 ## Prerequisites

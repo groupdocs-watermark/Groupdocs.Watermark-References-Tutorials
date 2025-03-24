@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs for .NET 在 PDF 中新增頁邊距類
 weight: 21
 url: /zh-hant/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---
+
+# 在 PDF 中新增頁邊距類型浮水印
+
 ## 介紹
 在當今的數位時代，保護文件比以往任何時候都更加重要。確保文件完整性和真實性的一種方法是添加浮水印。 Groupdocs.Watermark for .NET 是一個出色的工具，旨在使此過程變得毫不費力。在本教學中，我們將引導您完成使用 Groupdocs.Watermark for .NET 在 PDF 中新增具有頁邊距類型的浮水印的步驟。
 ## 先決條件

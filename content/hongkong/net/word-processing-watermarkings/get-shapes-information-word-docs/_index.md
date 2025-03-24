@@ -6,6 +6,9 @@ description: 使用 GroupDocs for .NET 輕鬆從 Word 文件中獲取有價值�
 weight: 24
 url: /zh-hant/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# 在 Word 文件中取得形狀訊息
+
 ## 介紹
 在資料為王的數位環境中，從文件中提取有意義的見解至關重要。 GroupDocs.Watermark for .NET 讓開發人員能夠深入研究文件結構，輕鬆提取有價值的資訊。在本教程中，我們將逐步探索如何利用這個強大的工具從Word文件中獲取形狀資訊。
 ## 先決條件

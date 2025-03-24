@@ -6,6 +6,9 @@ description: Tìm hiểu cách xóa chú thích có định dạng văn bản c�
 weight: 30
 url: /vi/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# Xóa chú thích bằng định dạng văn bản cụ thể trong PDF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình xóa chú thích có định dạng văn bản cụ thể trong tài liệu PDF bằng Groupdocs.Watermark cho .NET. Thư viện này cung cấp các tính năng mạnh mẽ để làm việc với hình mờ, chú thích và các thành phần tài liệu khác ở nhiều định dạng khác nhau.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: GroupDocs için .NET belge işleme yeteneklerinizi geliştirin. PDF
 weight: 45
 url: /tr/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---
+
+# PDF'de XObject için Metni Biçimlendirmeyle Değiştirin
+
 ## giriiş
 Belge işleme ve yönetimi alanında, GroupDocs.Watermark for .NET, çeşitli belge formatlarındaki filigranları, metni ve görüntüleri işlemek isteyen .NET geliştiricileri için güçlü bir çözüm olarak öne çıkıyor. Bu eğitim, güçlü özelliklerinden birini ele alıyor: PDF'lerde metni XObject formatıyla değiştirmek. Bu kılavuzun sonunda, bu işlevselliği .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilecek donanıma sahip olacaksınız.
 ## Önkoşullar

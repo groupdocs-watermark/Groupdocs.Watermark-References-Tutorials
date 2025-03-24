@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić informacje o artefaktach z plików P
 weight: 24
 url: /pl/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# Wyodrębnij informacje o artefaktach z pliku PDF
+
 ## Wstęp
 Dokumenty PDF często zawierają cenne informacje osadzone w różnych artefaktach, takich jak obrazy, tekst i kształty. Wyodrębnienie tych informacji może mieć kluczowe znaczenie dla wielu zastosowań, od analizy danych po zarządzanie treścią. W tym samouczku omówimy, jak wyodrębnić informacje o artefaktach z plików PDF przy użyciu GroupDocs.Watermark dla .NET, potężnej biblioteki .NET zaprojektowanej specjalnie do znakowania wodnego, wyszukiwania i manipulowania dokumentami PDF.
 ## Warunki wstępne

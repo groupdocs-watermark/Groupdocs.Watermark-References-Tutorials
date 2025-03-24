@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku dodawać znaki wodne artefaktów do 
 weight: 11
 url: /pl/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# Dodaj znak wodny artefaktu do pliku PDF
+
 ## Wstęp
 Dodawanie znaków wodnych do plików PDF jest kluczowym aspektem zarządzania dokumentami, zwłaszcza jeśli chodzi o ochronę własności intelektualnej lub dokumentów związanych z marką. Groupdocs.Watermark dla .NET zapewnia niezawodne rozwiązanie do łatwego dodawania znaków wodnych do plików PDF. W tym samouczku omówimy krok po kroku proces dodawania znaku wodnego artefaktu do plików PDF.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Lägg enkelt till bildvattenstämplar till dina dokument med GroupD
 weight: 10
 url: /sv/net/watermarking-basics/add-image-watermark/
 ---
+
+# Lägg till bildvattenstämpel
+
 ## Introduktion
 I den här handledningen kommer vi att fördjupa oss i processen att lägga till en bildvattenstämpel till dina dokument med hjälp av GroupDocs.Watermark for .NET. Vattenmärkningsdokument är avgörande för att skydda immateriella rättigheter och varumärkesbyggande. Med GroupDocs.Watermark för .NET kan du sömlöst integrera vattenstämplar i olika dokumentformat som Word, Excel, PowerPoint, PDF och många fler.
 ## Förutsättningar

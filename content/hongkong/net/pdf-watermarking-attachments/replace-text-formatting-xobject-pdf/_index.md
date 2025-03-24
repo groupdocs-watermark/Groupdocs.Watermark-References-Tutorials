@@ -6,6 +6,9 @@ description: 使用 GroupDocs for .NET 增強您的 .NET 文件操作能力。�
 weight: 45
 url: /zh-hant/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---
+
+# 將文字替換為 PDF 中 XObject 的格式
+
 ## 介紹
 在文件操作和管理領域，GroupDocs.Watermark for .NET 對於尋求操作各種文件格式中的浮水印、文字和影像的 .NET 開發人員來說是一個強大的解決方案。本教學深入探討其強大功能之一：以 PDF 中的 XObject 格式取代文字。閱讀本指南後，您將能夠將此功能無縫整合到您的 .NET 應用程式中。
 ## 先決條件

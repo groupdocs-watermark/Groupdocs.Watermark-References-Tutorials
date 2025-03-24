@@ -6,6 +6,9 @@ description: GroupDocs'u kullanarak Word belgelerindeki filigranları nasıl ver
 weight: 22
 url: /tr/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Word Belgelerinde Üstbilgi/Altbilgide Filigran Bulma
+
 ## giriiş
 Belge yönetimi ve koruma dünyasında filigranlama çok önemli bir rol oynar. İster markalama amacıyla, ister telif hakkı koruması veya belge takibi olsun, belgelerinize filigran eklemek çok önemlidir. Ancak, özellikle büyük belge kümelerinde filigranları etkili bir şekilde bulmak ve kaldırmak göz korkutucu bir iş olabilir. GroupDocs.Watermark for .NET tam da burada devreye giriyor. Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak Word belgelerinin üstbilgilerinde ve altbilgilerinde filigranların nasıl bulunacağını, kapsamlı bir anlayış sağlamak için her adımı ayrıntılı olarak ele alacağız.
 ## Önkoşullar

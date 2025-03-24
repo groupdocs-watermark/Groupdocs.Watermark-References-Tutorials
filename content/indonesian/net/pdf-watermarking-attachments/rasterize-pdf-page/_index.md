@@ -6,6 +6,9 @@ description: Tingkatkan keamanan dokumen dengan GroupDocs untuk .NET. Tambahkan 
 weight: 28
 url: /id/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---
+
+# Rasterisasi Halaman PDF
+
 ## Perkenalan
 GroupDocs.Watermark for .NET adalah API canggih yang memungkinkan pengembang menambahkan tanda air dengan lancar ke berbagai format dokumen, termasuk PDF, Word, Excel, PowerPoint, dan banyak lagi. Dengan antarmuka intuitif dan fitur ekstensif, GroupDocs.Watermark menyederhanakan proses penambahan tanda air teks atau gambar ke dokumen, memungkinkan pengguna melindungi kekayaan intelektual mereka dan meningkatkan keamanan dokumen dengan mudah.
 ## Prasyarat

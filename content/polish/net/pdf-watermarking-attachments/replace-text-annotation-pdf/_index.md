@@ -6,6 +6,9 @@ description: Dowiedz się, jak zamienić tekst w określonych adnotacjach PDF za
 weight: 40
 url: /pl/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---
+
+# Zamień tekst na konkretną adnotację w pliku PDF
+
 ## Wstęp
 No hej! Czy chcesz bezproblemowo zarządzać znakami wodnymi w dokumentach PDF za pomocą platformy .NET? Nie szukaj dalej! Ten samouczek poprowadzi Cię przez proces zastępowania tekstu określonych adnotacji w pliku PDF przy użyciu narzędzia Groupdocs.Watermark dla platformy .NET. Podzielimy proces na łatwe do wykonania etapy, dzięki czemu będziesz mieć pewność, że zrozumiesz każdą koncepcję. Niezależnie od tego, czy jesteś doświadczonym programistą, czy nowicjuszem, ten przewodnik został stworzony tak, aby zapewnić Ci płynną i produktywną pracę.
 ## Warunki wstępne

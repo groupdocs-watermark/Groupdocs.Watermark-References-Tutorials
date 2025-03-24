@@ -6,6 +6,9 @@ description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, 
 weight: 11
 url: /hu/net/document-savings/save-document-specified-location/
 ---
+
+# Mentse a dokumentumot a megadott helyre
+
 ## Bevezetés
 A digitális korban a dokumentumok védelme fontosabbá vált, mint valaha. A vízjelezés hatékony módja annak, hogy megvédje dokumentumait a jogosulatlan használattól. A GroupDocs.Watermark for .NET robusztus megoldást kínál vízjelekkel a dokumentumokhoz. Függetlenül attól, hogy Ön fejlesztő, aki a vízjelet szeretné integrálni az alkalmazásába, vagy valaki, aki érdeklődik a dokumentumok védelme iránt, ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton.
 ## Előfeltételek

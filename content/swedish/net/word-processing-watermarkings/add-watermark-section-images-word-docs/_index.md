@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar till bilder i Word-dok
 weight: 16
 url: /sv/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Lägg till vattenstämpel till avsnittsbilder i Word Docs
+
 ## Introduktion
 dagens digitala värld är det viktigt att skydda dina dokument. Att lägga till vattenstämplar i dina Word-dokument är ett enkelt men effektivt sätt att säkra ditt innehåll. Denna handledning guidar dig genom processen att lägga till vattenstämplar till avsnittsbilder i Word-dokument med hjälp av Groupdocs.Watermark for .NET. Oavsett om du är en utvecklare som vill integrera den här funktionen i din applikation eller bara vill skydda dina dokument, är den här guiden för dig.
 ## Förutsättningar

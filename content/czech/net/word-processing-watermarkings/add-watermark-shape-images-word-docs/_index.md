@@ -6,6 +6,9 @@ description: Naučte se přidávat vodoznaky do tvarů obrázků v dokumentech a
 weight: 17
 url: /cs/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Přidejte vodoznak k obrázkům tvaru v dokumentech Word
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak přidat vodoznak do tvaru obrázků v dokumentech Word pomocí GroupDocs.Watermark for .NET. Vodoznak je zásadním aspektem ochrany dokumentů, zejména při práci s citlivými nebo důvěrnými informacemi. Přidáním vodoznaků do tvarových obrázků můžete zajistit integritu a bezpečnost svých dokumentů.
 ## Předpoklady

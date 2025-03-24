@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET ile belge filigranlamanın gücünün 
 weight: 25
 url: /tr/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
+
+# XObject Bilgilerini PDF'den Çıkarın
+
 ## giriiş
 GroupDocs.Watermark for .NET, PDF, Word, Excel, PowerPoint ve resimler gibi çeşitli belge formatlarındaki filigranları işlemek için tasarlanmış güçlü bir belge filigranlama API'sidir. Geliştiricilere, belgelerdeki filigranları programlı bir şekilde eklemek, kaldırmak, aramak ve değiştirmek için basit bir yaklaşım sağlar. Belgelerinize bir şirket logosu, telif hakkı bildirimi veya gizli damga eklemeniz gerekip gerekmediğini GroupDocs.Watermark, sezgisel API'si ile süreci basitleştirir.
 ## Önkoşullar

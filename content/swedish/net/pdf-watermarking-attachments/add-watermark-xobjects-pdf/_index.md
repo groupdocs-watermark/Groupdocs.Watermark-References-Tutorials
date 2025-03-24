@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar till XObjects i PDF me
 weight: 20
 url: /sv/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# Lägg till vattenstämpel till XObjects i PDF
+
 ## Introduktion
 Vattenmärka PDF-filer är ett avgörande steg för att säkerställa att dina dokument skyddas från obehörig användning. Med Groupdocs.Watermark för .NET har det aldrig varit enklare att lägga till vattenstämplar till XObjects i dina PDF-filer. I den här handledningen går vi igenom processen steg-för-steg, och säkerställer att du med säkerhet kan applicera vattenstämplar på dina PDF-dokument. Låt oss börja!
 ## Förutsättningar

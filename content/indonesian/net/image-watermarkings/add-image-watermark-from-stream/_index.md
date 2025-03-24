@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air gambar ke dokumen menggunakan G
 weight: 12
 url: /id/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# Tambahkan Tanda Air Gambar dari Aliran
+
 ## Perkenalan
 Dalam bidang manajemen dan keamanan dokumen, memasukkan tanda air ke dalam file sangatlah penting. Baik itu soal branding, perlindungan hak cipta, atau menjaga integritas dokumen, tanda air memainkan peran penting. Untungnya, GroupDocs.Watermark untuk .NET memberikan solusi tangguh untuk menambah, menghapus, dan mencari tanda air dalam berbagai format dokumen.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、特定のテキス�
 weight: 36
 url: /ja/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# PDF 内の特定のテキスト書式設定を持つ XObject を削除する
+
 ## 導入
 文書に透かしを入れることは、文書の信頼性を確保し、機密情報を保護するために重要な部分です。 GroupDocs.Watermark for .NET は、さまざまなドキュメント形式のウォーターマークを追加、変更、削除するための包括的なソリューションを提供します。このチュートリアルでは、GroupDocs.Watermark for .NET を使用して PDF ドキュメントから特定のテキスト形式の XObject を削除する方法を詳しく説明します。
 ## 前提条件

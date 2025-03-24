@@ -6,6 +6,9 @@ description: Lär dig hur du får dokumentinformation från en ström med GroupD
 weight: 12
 url: /sv/net/document-manipulation/get-document-info-stream/
 ---
+
+# Få dokumentinformation från Stream
+
 ## Introduktion
 I dagens digitala tidsålder är skydd och hantering av dokumentintegritet avgörande. Oavsett om du är en affärsman, en utvecklare eller någon som hanterar känslig information, är behovet av att lägga till, extrahera eller manipulera vattenstämplar i dina dokument viktigt. GroupDocs.Watermark for .NET tillhandahåller en kraftfull verktygslåda som hjälper dig att uppnå just det. Den här artikeln guidar dig genom att använda GroupDocs.Watermark för .NET för att få dokumentinformation från en ström, och erbjuder en steg-för-steg handledning för att underlätta processen. I slutet kommer du att vara skicklig i att använda den här funktionen för att förbättra dina dokumenthanteringsmöjligheter.
 ## Förutsättningar

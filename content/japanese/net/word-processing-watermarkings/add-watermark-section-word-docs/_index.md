@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、Word 文書にウォ
 weight: 15
 url: /ja/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Word ドキュメントのセクションに透かしを追加する
+
 ## 導入
 ドキュメントに透かしを入れることは、コンテンツを保護し、所有権を主張するための重要なステップです。この包括的なチュートリアルでは、GroupDocs.Watermark for .NET を使用して Word 文書の特定のセクションにウォーターマークを追加するプロセスを説明します。開発者であっても、コーディングの基本を理解している人であっても、このガイドはドキュメントを効果的に保護するのに役立ちます。
 ## 前提条件

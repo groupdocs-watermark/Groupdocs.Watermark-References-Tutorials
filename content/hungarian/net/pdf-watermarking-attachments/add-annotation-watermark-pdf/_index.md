@@ -6,6 +6,9 @@ description: Tanulja meg, hogyan adhat könnyedén megjegyzés vízjeleket PDF-d
 weight: 10
 url: /hu/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# Annotation Watermark hozzáadása a PDF-hez
+
 ## Bevezetés
 dokumentumkezelés területén a vízjelek hozzáadása a PDF-fájlokhoz kulcsfontosságú szempont, különösen a márkaépítés, a biztonság és a dokumentumok azonosítása céljából. A GroupDocs.Watermark for .NET egy hatékony könyvtár, amely megkönnyíti a vízjelek zökkenőmentes integrálását különböző dokumentumformátumokba, beleértve a PDF-eket is. Ebben az oktatóanyagban a GroupDocs.Watermark for .NET által biztosított funkciók felhasználásával lépésről lépésre elmélyülünk a megjegyzés vízjelek PDF-dokumentumokhoz való hozzáadásának folyamatában.
 ## Előfeltételek

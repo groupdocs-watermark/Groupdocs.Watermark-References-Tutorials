@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 輕鬆地在 Word 文件中新�
 weight: 15
 url: /zh-hant/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# 為 Word 文件中的部分新增浮水印
+
 ## 介紹
 對文件加浮水印是保護內容和維護所有權的關鍵步驟。在這個綜合教學中，我們將引導您完成使用 GroupDocs.Watermark for .NET 將浮水印新增至 Word 文件中的特定部分的過程。無論您是開發人員還是對編碼有基本了解的人，本指南都將幫助您有效地保護文件。
 ## 先決條件

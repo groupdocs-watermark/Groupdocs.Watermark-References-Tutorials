@@ -6,6 +6,9 @@ description: A Groupdocs.Watermark for .NET segítségével megtudhatja, hogyan 
 weight: 11
 url: /hu/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# Artifact Watermark hozzáadása a PDF-hez
+
 ## Bevezetés
 vízjelek hozzáadása a PDF-fájlokhoz a dokumentumkezelés kulcsfontosságú aspektusa, különösen, ha a szellemi tulajdon védelméről vagy a márkajelzési dokumentumokról van szó. A Groupdocs.Watermark for .NET robusztus megoldást kínál a vízjelek egyszerű hozzáadásához PDF-fájlokhoz. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a műtermék vízjel PDF-fájlokhoz való hozzáadásának folyamatán.
 ## Előfeltételek

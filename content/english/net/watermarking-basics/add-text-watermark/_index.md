@@ -6,6 +6,9 @@ description: Learn how to add text watermarks to your documents using Groupdocs.
 weight: 11
 url: /net/watermarking-basics/add-text-watermark/
 ---
+
+# Add Text Watermark
+
 ## Introduction
 GroupDocs.Watermark for .NET is a powerful library that allows developers to add, search, and remove watermarks from various document formats in .NET applications. In this tutorial, we'll focus on adding a text watermark to a document using GroupDocs.Watermark.
 ## Prerequisites

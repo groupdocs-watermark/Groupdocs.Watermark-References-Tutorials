@@ -6,6 +6,9 @@ description: Odemkněte sílu vodoznaku dokumentů s GroupDocs.Watermark pro .NE
 weight: 25
 url: /cs/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
+
+# Extrahujte informace XObject z PDF
+
 ## Úvod
 GroupDocs.Watermark for .NET je výkonné API pro vodoznaky dokumentů určené k manipulaci s vodoznaky v různých formátech dokumentů, jako jsou PDF, Word, Excel, PowerPoint a obrázky. Poskytuje vývojářům přímočarý přístup k programovému přidávání, odstraňování, vyhledávání a nahrazování vodoznaků v dokumentech. Ať už potřebujete ke svým dokumentům přidat logo společnosti, upozornění na autorská práva nebo důvěrné razítko, GroupDocs.Watermark tento proces zjednoduší pomocí intuitivního rozhraní API.
 ## Předpoklady

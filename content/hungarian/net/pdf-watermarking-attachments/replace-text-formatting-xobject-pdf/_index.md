@@ -6,6 +6,9 @@ description: Bővítse .NET-dokumentumkezelési képességeit a GroupDocs Waterm
 weight: 45
 url: /hu/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---
+
+# Cserélje le a szöveget az XObject formázásával a PDF-ben
+
 ## Bevezetés
 dokumentumkezelés és -kezelés területén a GroupDocs.Watermark for .NET robusztus megoldás a .NET-fejlesztők számára, akik különféle dokumentumformátumokon belül kívánnak manipulálni a vízjeleket, szövegeket és képeket. Ez az oktatóanyag bemutatja annak egyik hatékony funkcióját: a szöveg lecserélését az XObject formázására a PDF-ekben. Az útmutató végére készen áll arra, hogy ezt a funkciót zökkenőmentesen integrálja .NET-alkalmazásaiba.
 ## Előfeltételek

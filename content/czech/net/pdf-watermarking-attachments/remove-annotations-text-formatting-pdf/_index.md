@@ -6,6 +6,9 @@ description: Přečtěte si, jak odstranit anotace se specifickým formátován�
 weight: 30
 url: /cs/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# Odstraňte poznámky se specifickým formátováním textu v PDF
+
 ## Úvod
 V tomto tutoriálu vás provedeme procesem odstranění anotací se specifickým formátováním textu v dokumentu PDF pomocí Groupdocs.Watermark for .NET. Tato knihovna poskytuje výkonné funkce pro práci s vodoznaky, anotacemi a dalšími prvky dokumentů v různých formátech.
 ## Předpoklady

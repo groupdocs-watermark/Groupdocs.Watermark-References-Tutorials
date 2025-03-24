@@ -6,6 +6,9 @@ description: 이 단계별 가이드를 통해 .NET용 GroupDocs.Watermark를 �
 weight: 12
 url: /ko/net/document-savings/save-document-specified-stream/
 ---
+
+# 지정된 스트림에 문서 저장
+
 ## 소개
 .NET용 GroupDocs.Watermark를 사용하여 문서에 워터마크를 추가하는 기술을 익히고 싶으십니까? 당신은 올바른 장소에 왔습니다! 이 종합 가이드에서는 문서에 워터마킹을 한 후 지정된 스트림에 문서를 성공적으로 저장하기 위해 알아야 할 모든 것을 안내합니다. 본격적으로 시작해 보겠습니다.
 ## 전제조건

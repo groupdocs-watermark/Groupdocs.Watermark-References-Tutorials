@@ -6,6 +6,9 @@ description: Sorunsuz filigran ekleme ve ek yönetimi için GroupDocs.Watermark 
 weight: 12
 url: /tr/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---
+
+# PDF'ye Ek Ekle
+
 ## giriiş
 .NET geliştirme alanında GroupDocs.Watermark, çeşitli belge formatlarındaki filigranları, ek açıklamaları ve daha fazlasını yönetmek için güçlü bir araç olarak öne çıkıyor. İster PDF'lerle, ister Word belgeleriyle, ister görüntülerle çalışıyor olun, GroupDocs.Watermark for .NET, geliştiricilerin belgeleri kolaylıkla işlemesine olanak tanıyan kusursuz bir entegrasyon sağlar.
 ## Önkoşullar

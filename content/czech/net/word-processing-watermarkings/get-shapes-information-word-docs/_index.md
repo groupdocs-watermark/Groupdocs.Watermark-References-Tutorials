@@ -6,6 +6,9 @@ description: Získejte bez námahy cenné poznatky z dokumentů aplikace GroupDo
 weight: 24
 url: /cs/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# Získejte informace o tvarech ve Word Docs
+
 ## Úvod
 V digitálním prostředí, kde jsou data králem, je extrahování smysluplných poznatků z dokumentů prvořadé. GroupDocs.Watermark for .NET umožňuje vývojářům ponořit se do struktur dokumentů a bez námahy extrahovat cenné informace. V tomto tutoriálu prozkoumáme, jak využít tento výkonný nástroj k získání informací o tvarech z dokumentů aplikace Word krok za krokem.
 ## Předpoklady

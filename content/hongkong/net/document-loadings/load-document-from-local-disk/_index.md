@@ -6,6 +6,9 @@ description: 使用 Groupdocs for .NET 保護和管理您的文件。按照我�
 weight: 10
 url: /zh-hant/net/document-loadings/load-document-from-local-disk/
 ---
+
+# 從本機磁碟載入文檔
+
 ## 介紹
 在當今的數位時代，為文件添加浮水印對於確保內容保護、所有權聲明和機密性至關重要。 Groupdocs.Watermark for .NET 是一個功能強大的程式庫，可讓開發人員新增、搜尋和管理各種文件格式的浮水印。在本教學中，我們將透過詳細的逐步說明逐步介紹使用 Groupdocs.Watermark for .NET 為文件添加浮水印的過程。
 ## 先決條件

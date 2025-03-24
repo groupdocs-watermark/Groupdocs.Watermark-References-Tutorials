@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ văn bản vào tài liệu củ
 weight: 11
 url: /vi/net/watermarking-basics/add-text-watermark/
 ---
+
+# Thêm hình mờ văn bản
+
 ## Giới thiệu
 GroupDocs.Watermark cho .NET là một thư viện mạnh mẽ cho phép các nhà phát triển thêm, tìm kiếm và xóa hình mờ khỏi các định dạng tài liệu khác nhau trong các ứng dụng .NET. Trong hướng dẫn này, chúng tôi sẽ tập trung vào việc thêm hình mờ văn bản vào tài liệu bằng GroupDocs.Watermark.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Migliora le tue capacità di manipolazione dei documenti .NET con G
 weight: 45
 url: /it/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---
+
+# Sostituisci il testo con la formattazione per XObject in PDF
+
 ## introduzione
 Nel campo della manipolazione e gestione dei documenti, GroupDocs.Watermark per .NET si distingue come una soluzione solida per gli sviluppatori .NET che cercano di manipolare filigrane, testo e immagini all'interno di vari formati di documenti. Questo tutorial approfondisce una delle sue potenti funzionalità: la sostituzione del testo con la formattazione per XObject nei PDF. Al termine di questa guida sarai in grado di integrare perfettamente questa funzionalità nelle tue applicazioni .NET.
 ## Prerequisiti

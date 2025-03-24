@@ -6,6 +6,9 @@ description: Naučte se, jak snadno přidávat vodoznaky do dokumentů pomocí G
 weight: 11
 url: /cs/net/document-savings/save-document-specified-location/
 ---
+
+# Uložit dokument do určeného umístění
+
 ## Úvod
 V digitálním věku se zabezpečení dokumentů stalo důležitější než kdy jindy. Vodoznak je účinný způsob, jak chránit vaše dokumenty před neoprávněným použitím. GroupDocs.Watermark for .NET nabízí robustní řešení pro přidávání vodoznaků do vašich dokumentů. Ať už jste vývojář, který chce integrovat vodoznak do své aplikace, nebo někdo, kdo má zájem o zabezpečení vašich dokumentů, tento tutoriál vás provede procesem krok za krokem.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Tìm hiểu cách thay thế văn bản trong các chú thích PDF 
 weight: 40
 url: /vi/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---
+
+# Thay thế văn bản cho chú thích cụ thể trong PDF
+
 ## Giới thiệu
 Này! Bạn đang tìm cách quản lý liền mạch các hình mờ trong tài liệu PDF của mình bằng .NET? Đừng tìm đâu xa! Hướng dẫn này sẽ hướng dẫn bạn cách thay thế văn bản cho các chú thích cụ thể trong tệp PDF bằng Groupdocs.Watermark cho .NET. Chúng tôi sẽ chia quy trình thành các bước dễ thực hiện, đảm bảo bạn nắm bắt rõ ràng từng khái niệm. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay người mới, hướng dẫn này đều được điều chỉnh để giúp trải nghiệm của bạn suôn sẻ và hiệu quả.
 ## Điều kiện tiên quyết

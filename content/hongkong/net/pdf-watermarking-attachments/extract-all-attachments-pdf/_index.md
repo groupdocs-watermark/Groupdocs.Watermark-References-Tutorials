@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs.Watermark for .NET 從 PDF 中提取�
 weight: 22
 url: /zh-hant/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
+
+# 從 PDF 中提取所有附件
+
 ## 介紹
 您是否希望輕鬆地從 PDF 文件中提取附件？嗯，您來對地方了！在這個綜合教程中，我們將指導您完成使用 Groupdocs.Watermark for .NET 從 PDF 中提取所有附件的過程。這個強大的程式庫允許開發人員管理各種文件格式的浮水印，但它還包括提取嵌入文件的強大功能。無論您是經驗豐富的開發人員還是剛起步的開發人員，本逐步指南都將使整個過程變得輕而易舉。
 ## 先決條件

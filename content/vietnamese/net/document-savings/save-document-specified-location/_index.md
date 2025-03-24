@@ -6,6 +6,9 @@ description: Tìm hiểu cách dễ dàng thêm hình mờ vào tài liệu củ
 weight: 11
 url: /vi/net/document-savings/save-document-specified-location/
 ---
+
+# Lưu tài liệu vào vị trí được chỉ định
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số, việc bảo mật tài liệu trở nên quan trọng hơn bao giờ hết. Hình mờ là một cách hiệu quả để bảo vệ tài liệu của bạn khỏi việc sử dụng trái phép. GroupDocs.Watermark for .NET cung cấp một giải pháp mạnh mẽ để thêm hình mờ vào tài liệu của bạn. Cho dù bạn là nhà phát triển đang tìm cách tích hợp hình mờ vào ứng dụng của mình hay ai đó quan tâm đến việc bảo vệ tài liệu của bạn, hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình từng bước.
 ## Điều kiện tiên quyết

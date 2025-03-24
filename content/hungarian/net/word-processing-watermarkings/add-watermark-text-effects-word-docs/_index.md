@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat szöveges effektusokkal rendelkező egyé
 weight: 21
 url: /hu/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---
+
+# Vízjel hozzáadása szövegeffektusokkal a Word Dokumentumokban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan adhatunk szövegeffektusokkal ellátott vízjelet Word-dokumentumokhoz a GroupDocs.Watermark for .NET segítségével. Ha követi ezeket a lépésenkénti utasításokat, akkor személyre szabott vízjelekkel javíthatja dokumentumait, amelyek különféle szövegeffektusokat tartalmaznak.
 ## Előfeltételek

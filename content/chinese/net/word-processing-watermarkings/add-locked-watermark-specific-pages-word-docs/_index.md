@@ -6,6 +6,9 @@ description: 通过我们简单的分步指南，了解如何使用 GroupDocs.Wa
 weight: 12
 url: /zh/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# 将锁定水印添加到 Word 文档中的特定页面
+
 ## 介绍
 您是否希望向 Word 文档中的特定页面添加水印，但希望将其锁定以使其无法轻松删除或编辑？您来对地方了！在本教程中，我们将指导您完成使用 GroupDocs.Watermark for .NET 将锁定水印添加到 Word 文档中的特定页面的过程。这个功能强大的库可以轻松地在各种文档类型上应用、管理和自定义水印。无论您是开发人员还是只是需要保护文档的人员，本指南都将以简单的方式引导您完成每个步骤。
 ## 先决条件

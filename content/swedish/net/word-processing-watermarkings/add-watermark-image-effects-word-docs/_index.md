@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar med bildeffekter i din
 weight: 19
 url: /sv/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---
+
+# Lägg till vattenstämpel med bildeffekter i Word Docs
+
 ## Introduktion
 Är du ute efter att lägga till lite pizzeria till dina Word-dokument med iögonfallande vattenstämplar? GroupDocs.Watermark för .NET har täckt dig! Den här omfattande guiden leder dig genom processen att lägga till vattenstämplar med fantastiska bildeffekter till dina Word-dokument med hjälp av GroupDocs Watermark for .NET. Oavsett om du är en erfaren utvecklare eller nybörjare, kommer denna steg-för-steg-handledning att göra processen till en lek.
 ## Förutsättningar

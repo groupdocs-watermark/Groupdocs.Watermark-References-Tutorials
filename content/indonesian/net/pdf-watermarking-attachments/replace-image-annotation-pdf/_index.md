@@ -6,6 +6,9 @@ description: Pelajari cara mengganti gambar dalam anotasi PDF tertentu menggunak
 weight: 37
 url: /id/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
+
+# Ganti Gambar untuk Anotasi Tertentu dalam PDF
+
 ## Perkenalan
 Selamat datang di panduan komprehensif tentang penggunaan GroupDocs.Watermark untuk .NET untuk mengganti gambar dalam anotasi tertentu dalam dokumen PDF. Baik Anda seorang pengembang yang ingin meningkatkan kemampuan penanganan PDF atau sekadar ingin tahu tentang seluk-beluk watermarking, tutorial ini siap membantu Anda. Pada akhirnya, Anda akan dapat dengan mudah mengganti gambar dalam anotasi PDF dengan gambar khusus, sehingga mengoptimalkan alur kerja pemrosesan dokumen Anda.
 ## Prasyarat

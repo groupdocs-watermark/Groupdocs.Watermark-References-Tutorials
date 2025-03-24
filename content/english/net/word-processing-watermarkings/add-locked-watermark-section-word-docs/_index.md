@@ -6,6 +6,9 @@ description: Learn how to add a locked watermark to a specific section in Word d
 weight: 13
 url: /net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Add Locked Watermark to Section in Word Docs
+
 ## Introduction
 Are you looking for an efficient way to add a locked watermark to a section in your Word documents? Look no further! With Groupdocs.Watermark for .NET, you can seamlessly insert watermarks into Word documents while ensuring they remain locked and tamper-proof. This powerful tool offers a variety of features to cater to your watermarking needs, whether for branding, confidentiality, or security purposes. In this step-by-step tutorial, we'll walk you through how to add a locked watermark to a specific section of a Word document using Groupdocs.Watermark for .NET. Let’s dive in!
 ## Prerequisites

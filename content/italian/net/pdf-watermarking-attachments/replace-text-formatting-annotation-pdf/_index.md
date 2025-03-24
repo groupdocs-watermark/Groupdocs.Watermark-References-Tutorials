@@ -6,6 +6,9 @@ description: Migliora la sicurezza dei documenti con GroupDocs per .NET. Scopri 
 weight: 41
 url: /it/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---
+
+# Sostituisci il testo con la formattazione per l'annotazione nel PDF
+
 ## introduzione
 Nell'era digitale di oggi, la protezione delle informazioni sensibili e della proprietà intellettuale è fondamentale. Che tu sia un professionista legale, un'entità aziendale o un individuo che gestisce documenti cruciali, la protezione dall'accesso e dalla distribuzione non autorizzati è fondamentale. GroupDocs.Watermark per .NET emerge come un potente strumento in questo ambito, offrendo funzionalità complete per aggiungere, cercare e rimuovere filigrane da vari formati di documenti come PDF, Word, Excel, PowerPoint e immagini. In questo tutorial, approfondiremo le complessità della sostituzione del testo con la formattazione per l'annotazione nei file PDF utilizzando GroupDocs.Watermark per .NET.
 ## Prerequisiti

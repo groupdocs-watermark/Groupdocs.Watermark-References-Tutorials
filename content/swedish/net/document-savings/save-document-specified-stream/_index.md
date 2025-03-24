@@ -6,6 +6,9 @@ description: Lär dig hur du sparar ett dokument i en angiven ström med GroupDo
 weight: 12
 url: /sv/net/document-savings/save-document-specified-stream/
 ---
+
+# Spara dokument till specificerad ström
+
 ## Introduktion
 Vill du behärska konsten att lägga till vattenstämplar i dina dokument med GroupDocs.Watermark för .NET? Du har kommit till rätt ställe! I den här omfattande guiden går vi igenom allt du behöver veta för att lyckas spara ett dokument i en angiven ström efter att ha vattenmärkt det. Låt oss dyka in och komma igång.
 ## Förutsättningar

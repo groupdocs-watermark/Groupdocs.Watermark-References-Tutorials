@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ vào tài liệu bằng GroupDoc
 weight: 12
 url: /vi/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# Thêm hình mờ hình ảnh từ luồng
+
 ## Giới thiệu
 Trong lĩnh vực quản lý và bảo mật tài liệu, việc kết hợp hình mờ vào các tệp có tầm quan trọng tối cao. Cho dù đó là về xây dựng thương hiệu, bảo vệ bản quyền hay duy trì tính toàn vẹn của tài liệu, hình mờ đều đóng một vai trò quan trọng. May mắn thay, GroupDocs.Watermark cho .NET cung cấp một giải pháp mạnh mẽ để thêm, xóa và tìm kiếm hình mờ ở các định dạng tài liệu khác nhau.
 ## Điều kiện tiên quyết

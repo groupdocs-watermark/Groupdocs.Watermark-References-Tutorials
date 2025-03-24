@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して Word 文書内の特�
 weight: 31
 url: /ja/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---
+
+# Word ドキュメントで特定のテキスト書式設定を持つ図形を削除する
+
 ## 導入
 GroupDocs.Watermark for .NET は、開発者がさまざまなドキュメント形式のウォーターマークをプログラムで操作できるようにする強力な API です。このチュートリアルでは、GroupDocs.Watermark for .NET を使用して Word 文書内の特定のテキスト書式を持つ図形を削除することに焦点を当てます。経験豊富な開発者でも、初心者でも、このステップバイステップのガイドは、シェイプを効率的かつ効果的に削除するプロセスを理解するのに役立ちます。
 ## 前提条件

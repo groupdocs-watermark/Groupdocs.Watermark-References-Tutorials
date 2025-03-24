@@ -6,6 +6,9 @@ description: Adicione facilmente marcas d'água de imagem aos seus documentos us
 weight: 10
 url: /pt/net/watermarking-basics/add-image-watermark/
 ---
+
+# Adicionar marca d'água de imagem
+
 ## Introdução
 Neste tutorial, nos aprofundaremos no processo de adição de uma marca d'água de imagem aos seus documentos usando GroupDocs.Watermark for .NET. Marcar documentos com marca d'água é essencial para proteger a propriedade intelectual e a marca. Com GroupDocs.Watermark for .NET, você pode integrar marcas d'água perfeitamente em vários formatos de documentos, como Word, Excel, PowerPoint, PDF e muitos mais.
 ## Pré-requisitos

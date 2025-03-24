@@ -6,6 +6,9 @@ description: Groupdocs for .NET を使用して、PDF ドキュメント内の�
 weight: 30
 url: /ja/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# PDF 内の特定のテキスト形式の注釈を削除する
+
 ## 導入
 このチュートリアルでは、Groupdocs.Watermark for .NET を使用して、PDF ドキュメント内の特定のテキスト形式の注釈を削除するプロセスについて説明します。このライブラリは、さまざまな形式の透かし、注釈、その他のドキュメント要素を操作するための強力な機能を提供します。
 ## 前提条件

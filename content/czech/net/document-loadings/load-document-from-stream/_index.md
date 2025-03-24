@@ -6,6 +6,9 @@ description: V této příručce se dozvíte, jak přidat vodoznaky do dokument�
 weight: 11
 url: /cs/net/document-loadings/load-document-from-stream/
 ---
+
+# Načíst dokument ze streamu
+
 ## Úvod
 Přejete si přidat vodoznaky do svých dokumentů hladce pomocí .NET? Už nehledejte! GroupDocs.Watermark for .NET je výkonná a snadno použitelná knihovna, která umožňuje spravovat vodoznaky v různých formátech dokumentů. Ať už pracujete s PDF, dokumenty Wordu nebo obrázky, tento nástroj vám pomůže. V tomto tutoriálu vás krok za krokem provedeme procesem načítání dokumentu ze streamu a přidáním vodoznaku. Takže, pojďme se rovnou ponořit!
 ## Předpoklady

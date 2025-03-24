@@ -6,6 +6,9 @@ description: Ontgrendel moeiteloos waardevolle inzichten uit Word-documenten met
 weight: 24
 url: /nl/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# Vorminformatie ophalen in Word-documenten
+
 ## Invoering
 In het digitale landschap waar data koning is, is het halen van betekenisvolle inzichten uit documenten van cruciaal belang. GroupDocs.Watermark voor .NET stelt ontwikkelaars in staat zich te verdiepen in documentstructuren en er moeiteloos waardevolle informatie uit te halen. In deze zelfstudie onderzoeken we hoe u deze krachtige tool kunt gebruiken om stap voor stap vorminformatie uit Word-documenten te verkrijgen.
 ## Vereisten

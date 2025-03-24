@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 替换 PDF 文档�
 weight: 42
 url: /zh/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---
+
+# 替换 PDF 中特定工件的文本
+
 ## 介绍
 在当今的数字时代，保护文档的完整性和机密性至关重要。无论您是保护敏感合同的法律专业人士还是确保专有信息安全的企业高管，对可靠文档保护的需求都不会被夸大。 GroupDocs.Watermark for .NET 作为一个强大的解决方案出现，提供无缝集成和强大的功能，可以轻松地为文档添加水印和操作。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Learn how to remove attachments from PDF documents easily using Gro
 weight: 33
 url: /net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---
+
+# Remove Attachment from PDF
+
 ## Introduction
 In the world of software development, managing documents efficiently is a crucial task. Whether it's for personal or professional use, there are times when we need to manipulate or control various elements within documents. GroupDocs.Watermark for .NET is a powerful library designed to address this need, offering a comprehensive set of tools to work with different document formats seamlessly.
 ## Prerequisites

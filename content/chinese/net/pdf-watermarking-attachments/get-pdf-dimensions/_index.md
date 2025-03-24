@@ -6,6 +6,9 @@ description: 使用 Groupdocs.Watermark for .NET 轻松保护您的文档。轻�
 weight: 26
 url: /zh/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---
+
+# 获取 PDF 尺寸
+
 ## 介绍
 在当今的数字时代，保护您的文档至关重要。无论您是商业专业人士、法律专家还是创意艺术家，保护您的知识产权都是至关重要的。 Groupdocs.Watermark for .NET 提供了一个强大的解决方案，可以向文档添加水印、图章和注释，确保其安全性和真实性。
 ## 先决条件

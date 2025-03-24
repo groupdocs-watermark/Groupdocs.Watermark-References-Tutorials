@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 刪除 Word 文件�
 weight: 31
 url: /zh-hant/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---
+
+# 在 Word 文件中刪除具有特定文字格式的形狀
+
 ## 介紹
 GroupDocs.Watermark for .NET 是一個功能強大的 API，可讓開發人員以程式設計方式操作各種文件格式的浮水印。在本教學中，我們將重點放在使用 GroupDocs.Watermark for .NET 刪除 Word 文件中具有特定文字格式的形狀。無論您是經驗豐富的開發人員還是剛起步，本逐步指南都將幫助您了解高效且有效地刪除形狀的過程。
 ## 先決條件

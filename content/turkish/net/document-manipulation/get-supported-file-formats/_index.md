@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak belgelerinize zahmetsizce
 weight: 13
 url: /tr/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Desteklenen Dosya Formatlarını Alın
+
 ## giriiş
 Belgelerinize filigran eklemek, dijital varlıklarınızı korumada çok önemli bir adımdır. Fikri mülkiyetin korunması, gizliliğin sağlanması veya sadece markalama için filigranlar hayati bir rol oynamaktadır. Filigran özelliklerini uygulamalarınıza entegre etmek isteyen bir .NET geliştiricisiyseniz, GroupDocs.Watermark for .NET, göz önünde bulundurmanız gereken güçlü ve çok yönlü bir araçtır. Bu eğitim, kurulumdan ilk filigranınızı uygulamaya kadar GroupDocs.Watermark'ı kullanmanın temelleri konusunda size rehberlik edecek ve kolayca takip edebilmenizi sağlamak için her adımı ayrıntılı olarak anlatacaktır.
 ## Önkoşullar

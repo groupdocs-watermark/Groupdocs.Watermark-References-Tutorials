@@ -6,6 +6,9 @@ description: Découvrez comment ajouter des filigranes aux documents à l'aide d
 weight: 10
 url: /fr/net/document-savings/save-document-same-file-stream/
 ---
+
+# Enregistrer le document dans le même fichier ou flux
+
 ## Introduction
 À l’ère numérique d’aujourd’hui, l’ajout de filigranes aux documents est devenu essentiel pour protéger la propriété intellectuelle et garantir l’intégrité de la marque. Groupdocs.Watermark for .NET offre une solution robuste pour les développeurs cherchant à intégrer des filigranes dans des documents de manière transparente. Ce guide complet vous guidera à travers les étapes d'enregistrement d'un document avec un filigrane dans le même fichier ou flux à l'aide de Groupdocs.Watermark pour .NET.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: 通过本指南了解如何使用 GroupDocs.Watermark for .NET 向�
 weight: 11
 url: /zh/net/document-loadings/load-document-from-stream/
 ---
+
+# 从流加载文档
+
 ## 介绍
 您是否希望使用 .NET 向文档无缝添加水印？别再犹豫了！ GroupDocs.Watermark for .NET 是一个功能强大且易于使用的库，允许您管理各种文档格式的水印。无论您是处理 PDF、Word 文档还是图像，此工具都能满足您的需求。在本教程中，我们将引导您逐步完成从流加载文档并添加水印的过程。那么，让我们开始吧！
 ## 先决条件

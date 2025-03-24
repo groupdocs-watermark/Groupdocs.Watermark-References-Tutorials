@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar alla bilagor från en PDF med Groupdocs.
 weight: 22
 url: /sv/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
+
+# Extrahera alla bilagor från PDF
+
 ## Introduktion
 Vill du extrahera bilagor från ett PDF-dokument utan ansträngning? Tja, du är på rätt plats! I den här omfattande handledningen guidar vi dig genom processen att extrahera alla bilagor från en PDF-fil med Groupdocs.Watermark for .NET. Detta kraftfulla bibliotek låter utvecklare hantera vattenstämplar i olika dokumentformat, men det innehåller också robusta funktioner för att extrahera inbäddade filer. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer denna steg-för-steg-guide att göra processen till en lek.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs.Watermark for .NET 為文件新增浮�
 weight: 10
 url: /zh-hant/net/document-savings/save-document-same-file-stream/
 ---
+
+# 將文件儲存到同一文件或串流
+
 ## 介紹
 在當今的數位時代，為文件添加浮水印對於保護智慧財產權和確保品牌完整性至關重要。 Groupdocs.Watermark for .NET 為希望將浮水印無縫嵌入到文件中的開發人員提供了強大的解決方案。本綜合指南將引導您完成使用 Groupdocs.Watermark for .NET 將帶有浮水印的文件儲存到相同文件或流的步驟。
 ## 先決條件

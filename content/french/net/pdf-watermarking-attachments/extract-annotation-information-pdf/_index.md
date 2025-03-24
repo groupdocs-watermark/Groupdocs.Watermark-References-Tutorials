@@ -6,6 +6,9 @@ description: Découvrez comment extraire des informations d'annotation à partir
 weight: 23
 url: /fr/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
+
+# Extraire les informations d'annotation d'un PDF
+
 ## Introduction
 Avez-vous souvent besoin d'extraire des informations d'annotation détaillées de vos documents PDF ? Que vous soyez un développeur travaillant sur des systèmes de gestion de documents ou un professionnel gérant de nombreux PDF, l'extraction et le traitement efficaces des annotations peuvent s'avérer cruciaux. Avec GroupDocs.Watermark pour .NET, vous disposez d'une boîte à outils puissante pour rendre cette tâche simple et efficace.
 ## Conditions préalables

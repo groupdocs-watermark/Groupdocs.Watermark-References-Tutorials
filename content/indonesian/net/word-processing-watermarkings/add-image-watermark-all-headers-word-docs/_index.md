@@ -6,6 +6,9 @@ description: Tambahkan tanda air gambar dengan mudah ke semua header di dokumen 
 weight: 10
 url: /id/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# Tambahkan Tanda Air Gambar ke Semua Header di Word Docs
+
 ## Perkenalan
 Tanda air dapat menjadi bagian penting dalam pengelolaan dokumen, menyediakan cara untuk menyematkan informasi seperti kepemilikan, kerahasiaan, atau merek ke dalam dokumen. Dalam tutorial ini, kita akan memandu langkah-langkah untuk menambahkan tanda air gambar ke semua header di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Baik Anda seorang pemula dalam pemrograman atau pengembang berpengalaman, panduan ini akan membantu Anda mencapai tujuan watermarking Anda dengan mudah.
 ## Prasyarat

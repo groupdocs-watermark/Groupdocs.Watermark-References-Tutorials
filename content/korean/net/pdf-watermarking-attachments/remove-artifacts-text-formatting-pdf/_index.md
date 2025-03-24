@@ -6,6 +6,9 @@ description: .NET용 Watermark를 사용하여 PDF에서 특정 텍스트 형식
 weight: 32
 url: /ko/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---
+
+# PDF에서 특정 텍스트 형식의 아티팩트 제거
+
 ## 소개
 오늘날의 디지털 시대에는 민감한 정보를 보호하고 문서의 무결성을 유지하는 것이 무엇보다 중요합니다. 기밀 계약을 보호하는 법률 전문가이든 재무 보고서의 보안을 보장하는 기업 임원이든 PDF 문서에서 특정 텍스트 형식의 아티팩트를 제거해야 하는 경우가 자주 발생합니다. 다행스럽게도 기술이 발전함에 따라 .NET용 GroupDocs.Watermark와 같은 도구는 이러한 문제를 해결할 수 있는 포괄적인 솔루션을 제공합니다.
 ## 전제조건

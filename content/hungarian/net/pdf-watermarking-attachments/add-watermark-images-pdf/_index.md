@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat vízjeleket PDF-dokumentumokban lévő k�
 weight: 19
 url: /hu/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# Vízjel hozzáadása a PDF-beli képekhez
+
 ## Bevezetés
 Vízjelek hozzáadása a PDF-dokumentumban lévő képekhez elengedhetetlen lehet a szellemi tulajdon védelme vagy a dokumentumok hitelességének biztosítása érdekében. A GroupDocs.Watermark for .NET használatával ez a feladat hatékonyan és egyszerűen elvégezhető. Ez az oktatóanyag végigvezeti Önt a folyamat minden lépésén, a környezet beállításától a vízjelek hozzáadásán át a végleges dokumentum mentéséig. Merüljünk el!
 ## Előfeltételek

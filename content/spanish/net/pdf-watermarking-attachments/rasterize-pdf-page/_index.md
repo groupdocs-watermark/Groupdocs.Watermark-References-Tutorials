@@ -6,6 +6,9 @@ description: Mejore la seguridad de los documentos con GroupDocs Watermark para 
 weight: 28
 url: /es/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---
+
+# Rasterizar página PDF
+
 ## Introducción
 GroupDocs.Watermark para .NET es una potente API que permite a los desarrolladores agregar sin problemas marcas de agua a varios formatos de documentos, incluidos PDF, Word, Excel, PowerPoint y más. Con su interfaz intuitiva y amplias funciones, GroupDocs.Watermark simplifica el proceso de agregar marcas de agua de texto o imágenes a los documentos, lo que permite a los usuarios proteger su propiedad intelectual y mejorar la seguridad de los documentos sin esfuerzo.
 ## Requisitos previos

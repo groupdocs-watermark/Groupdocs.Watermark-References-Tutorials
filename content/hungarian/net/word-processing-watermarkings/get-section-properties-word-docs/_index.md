@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthatja ki a szakasztulajdonságokat a Word-d
 weight: 23
 url: /hu/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# Szerezze be a szakasz tulajdonságait a Word Dokumentumokban
+
 ## Bevezetés
 dokumentumkezelés és -kezelés területén a Groupdocs.Watermark for .NET sokoldalú és robusztus eszközként tűnik ki. A .NET keretrendszerbe zökkenőmentesen integrált könyvtár lehetővé teszi a fejlesztők számára, hogy könnyedén kezeljék a vízjeleket, a megjegyzéseket és a dokumentumtulajdonságokat. Ebben az oktatóanyagban elmélyülünk az egyik legfontosabb funkciójában: a szakasztulajdonságok kinyerése Word dokumentumokból. Kövesse végig a folyamatot lépésről lépésre lebontva, felszabadítva a Groupdocs.Watermark for .NET lehetőségeit.
 ## Előfeltételek

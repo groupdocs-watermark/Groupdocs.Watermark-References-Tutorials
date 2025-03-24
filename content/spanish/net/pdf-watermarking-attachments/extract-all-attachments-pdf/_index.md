@@ -6,6 +6,9 @@ description: Aprenda a extraer todos los archivos adjuntos de un PDF usando Grou
 weight: 22
 url: /es/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
+
+# Extraiga todos los archivos adjuntos del PDF
+
 ## Introducción
 ¿Está buscando extraer archivos adjuntos de un documento PDF sin esfuerzo? Bueno, ¡estás en el lugar correcto! En este completo tutorial, lo guiaremos a través del proceso de extracción de todos los archivos adjuntos de un PDF usando Groupdocs.Watermark para .NET. Esta poderosa biblioteca permite a los desarrolladores administrar marcas de agua en varios formatos de documentos, pero también incluye capacidades sólidas para extraer archivos incrustados. Ya sea que sea un desarrollador experimentado o esté comenzando, esta guía paso a paso hará que el proceso sea muy sencillo.
 ## Requisitos previos

@@ -6,6 +6,9 @@ description: Lägg enkelt till vattenstämplar i Word-dokument med GroupDocs.Wat
 weight: 15
 url: /sv/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Lägg till vattenstämpel till avsnitt i Word Docs
+
 ## Introduktion
 Att vattenmärka dina dokument är ett avgörande steg för att skydda ditt innehåll och hävda äganderätten. I den här omfattande självstudien går vi igenom processen att lägga till en vattenstämpel till ett specifikt avsnitt i Word-dokument med hjälp av GroupDocs.Watermark för .NET. Oavsett om du är en utvecklare eller någon med en grundläggande förståelse för kodning, hjälper den här guiden dig att säkra dina dokument effektivt.
 ## Förutsättningar

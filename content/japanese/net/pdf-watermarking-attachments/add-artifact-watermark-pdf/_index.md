@@ -6,6 +6,9 @@ description: Groupdocs.Watermark for .NET を使用して PDF ファイルにア
 weight: 11
 url: /ja/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# PDF にアーティファクトの透かしを追加
+
 ## 導入
 PDF ファイルに透かしを追加することは、特に知的財産の保護や文書のブランド化に関しては、文書管理の重要な側面です。 Groupdocs.Watermark for .NET は、PDF ファイルにウォーターマークを簡単に追加するための堅牢なソリューションを提供します。このチュートリアルでは、PDF ファイルにアーティファクト ウォーターマークを追加するプロセスを段階的に説明します。
 ## 前提条件

@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark 增強您的 .NET 文件管理功能，�
 weight: 12
 url: /zh-hant/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---
+
+# 新增附件到 PDF
+
 ## 介紹
 在 .NET 開發領域，GroupDocs.Watermark 作為管理各種文件格式中的浮水印、註解等的強大工具而脫穎而出。無論您使用 PDF、Word 文件還是圖像，GroupDocs.Watermark for .NET 都提供無縫集成，使開發人員能夠輕鬆操作文件。
 ## 先決條件

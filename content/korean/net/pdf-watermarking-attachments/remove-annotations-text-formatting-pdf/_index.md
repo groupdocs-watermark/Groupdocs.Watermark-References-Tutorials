@@ -6,6 +6,9 @@ description: Groupdocs for .NET을 사용하여 PDF 문서에서 특정 텍스�
 weight: 30
 url: /ko/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# PDF에서 특정 텍스트 형식의 주석 제거
+
 ## 소개
 이 튜토리얼에서는 .NET용 Groupdocs.Watermark를 사용하여 PDF 문서에서 특정 텍스트 형식의 주석을 제거하는 과정을 안내합니다. 이 라이브러리는 다양한 형식의 워터마크, 주석 및 기타 문서 요소 작업을 위한 강력한 기능을 제공합니다.
 ## 전제조건

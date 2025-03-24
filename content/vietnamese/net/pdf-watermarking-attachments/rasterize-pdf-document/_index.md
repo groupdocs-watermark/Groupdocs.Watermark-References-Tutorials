@@ -6,6 +6,9 @@ description: Tìm hiểu cách phân loại tài liệu PDF bằng GroupDocs.Wat
 weight: 27
 url: /vi/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# Rasterize tài liệu PDF
+
 ## Giới thiệu
 Trong lĩnh vực quản lý và thao tác tài liệu, GroupDocs.Watermark dành cho .NET được coi là một công cụ mạnh mẽ, cung cấp các khả năng mạnh mẽ để thêm, xóa và tìm kiếm hình mờ ở nhiều định dạng tài liệu khác nhau. Cho dù đó là bảo vệ tài liệu của bạn bằng thông báo bản quyền, thêm logo công ty để xây dựng thương hiệu hay chỉ đơn giản là chú thích tài liệu bằng tem, GroupDocs.Watermark sẽ đơn giản hóa quy trình bằng API trực quan và bộ tính năng mở rộng.
 ## Điều kiện tiên quyết

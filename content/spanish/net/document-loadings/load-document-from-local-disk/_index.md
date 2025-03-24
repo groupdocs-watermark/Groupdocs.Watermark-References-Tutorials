@@ -6,6 +6,9 @@ description: Proteja y administre sus documentos con Groupdocs. Siga nuestra gu�
 weight: 10
 url: /es/net/document-loadings/load-document-from-local-disk/
 ---
+
+# Cargar documento desde el disco local
+
 ## Introducción
 Poner marcas de agua en los documentos es esencial en la era digital actual para garantizar la protección del contenido, la afirmación de la propiedad y la confidencialidad. Groupdocs.Watermark para .NET es una poderosa biblioteca que permite a los desarrolladores agregar, buscar y administrar marcas de agua en varios formatos de documentos. En este tutorial, recorreremos el proceso de uso de Groupdocs.Watermark para .NET para agregar marcas de agua a sus documentos con instrucciones detalladas paso a paso.
 ## Requisitos previos

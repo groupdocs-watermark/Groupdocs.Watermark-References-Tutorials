@@ -6,6 +6,9 @@ description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit 
 weight: 11
 url: /de/net/document-savings/save-document-specified-location/
 ---
+
+# Dokument am angegebenen Ort speichern
+
 ## Einführung
 Im digitalen Zeitalter ist die Sicherung von Dokumenten wichtiger denn je. Wasserzeichen sind eine wirksame Möglichkeit, Ihre Dokumente vor unbefugter Nutzung zu schützen. GroupDocs.Watermark für .NET bietet eine robuste Lösung zum Hinzufügen von Wasserzeichen zu Ihren Dokumenten. Egal, ob Sie ein Entwickler sind, der Wasserzeichen in Ihre Anwendung integrieren möchte, oder jemand, der Ihre Dokumente schützen möchte, dieses Tutorial führt Sie Schritt für Schritt durch den Prozess.
 ## Voraussetzungen

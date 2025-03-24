@@ -6,6 +6,9 @@ description: Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit
 weight: 13
 url: /de/net/document-loadings/load-password-protected-document/
 ---
+
+# Laden Sie ein passwortgeschütztes Dokument
+
 ## Einführung
 Möchten Sie Ihre Dokumente durch das Hinzufügen von Wasserzeichen schützen, auch wenn diese passwortgeschützt sind? Groupdocs.Watermark für .NET ist ein leistungsstarkes Tool, mit dem Sie genau das tun können. In diesem Tutorial führen wir Sie durch den Prozess des Ladens eines passwortgeschützten Dokuments und des Hinzufügens eines Wasserzeichens mithilfe von Groupdocs.Watermark für .NET. Lass uns eintauchen!
 ## Voraussetzungen

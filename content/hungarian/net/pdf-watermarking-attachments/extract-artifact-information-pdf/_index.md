@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan nyerhet ki műtermék-információkat PDF-fájl
 weight: 24
 url: /hu/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# Kivonja a műtermékinformációkat a PDF-ből
+
 ## Bevezetés
 A PDF-dokumentumok gyakran értékes információkat tartalmaznak különféle műtermékekbe, például képekbe, szövegekbe és alakzatokba ágyazva. Ezen információk kinyerése számos alkalmazás számára kulcsfontosságú lehet, az adatelemzéstől a tartalomkezelésig. Ebben az oktatóanyagban megvizsgáljuk, hogyan nyerhet ki műtermék-információkat PDF-fájlokból a GroupDocs.Watermark for .NET segítségével, amely egy kifejezetten a PDF-dokumentumok vízjelezésére, keresésére és manipulálására kifejlesztett hatékony .NET-könyvtár.
 ## Előfeltételek

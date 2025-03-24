@@ -6,6 +6,9 @@ description: Scopri come estrarre tutti gli allegati da un PDF utilizzando Group
 weight: 22
 url: /it/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
+
+# Estrai tutti gli allegati dal PDF
+
 ## introduzione
 Stai cercando di estrarre gli allegati da un documento PDF senza sforzo? Bene, sei nel posto giusto! In questo tutorial completo, ti guideremo attraverso il processo di estrazione di tutti gli allegati da un PDF utilizzando Groupdocs.Watermark per .NET. Questa potente libreria consente agli sviluppatori di gestire filigrane in vari formati di documenti, ma include anche robuste funzionalità per l'estrazione di file incorporati. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questa guida passo passo renderà il processo un gioco da ragazzi.
 ## Prerequisiti

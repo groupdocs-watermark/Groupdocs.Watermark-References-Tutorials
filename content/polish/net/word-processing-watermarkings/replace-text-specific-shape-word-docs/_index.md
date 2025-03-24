@@ -6,6 +6,9 @@ description: Dowiedz się, jak zastąpić tekst określonych kształtów w dokum
 weight: 35
 url: /pl/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---
+
+# Zastąp tekst określonym kształtem w dokumentach programu Word
+
 ## Wstęp
 W tym samouczku omówimy, jak używać GroupDocs.Watermark dla .NET do zastępowania tekstu dla określonego kształtu w dokumentach programu Word. GroupDocs.Watermark dla .NET to potężna biblioteka udostępniająca szeroką gamę funkcji do pracy ze znakami wodnymi w różnych formatach dokumentów, w tym w dokumentach Word.
 ## Warunki wstępne

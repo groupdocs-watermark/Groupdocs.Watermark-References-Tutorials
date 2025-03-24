@@ -6,6 +6,9 @@ description: Buka kekuatan penandaan air dokumen dengan GroupDocs.Watermark untu
 weight: 25
 url: /id/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
+
+# Ekstrak Informasi XObject dari PDF
+
 ## Perkenalan
 GroupDocs.Watermark for .NET adalah API watermarking dokumen canggih yang dirancang untuk memanipulasi watermark dalam berbagai format dokumen seperti PDF, Word, Excel, PowerPoint, dan gambar. Ini memberi pengembang pendekatan langsung untuk menambah, menghapus, mencari, dan mengganti tanda air dalam dokumen secara terprogram. Baik Anda perlu menambahkan logo perusahaan, pemberitahuan hak cipta, atau stempel rahasia ke dokumen Anda, GroupDocs.Watermark menyederhanakan proses dengan API intuitifnya.
 ## Prasyarat

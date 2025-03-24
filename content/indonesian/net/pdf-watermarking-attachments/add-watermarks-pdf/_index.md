@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air teks dan gambar ke PDF Anda men
 weight: 14
 url: /id/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---
+
+# Tambahkan Tanda Air ke PDF
+
 ## Perkenalan
 Apakah Anda ingin menambahkan tanda air ke PDF untuk melindungi dokumen Anda atau memberi merek dengan logo Anda? Tidak perlu mencari lagi! Dalam tutorial ini, kita akan mendalami proses penggunaan GroupDocs.Watermark untuk .NET guna menambahkan tanda air teks dan gambar ke file PDF Anda. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan ini akan memandu Anda melalui setiap langkah, memastikan Anda dapat menerapkan tanda air dengan mudah dan tepat.
 ## Prasyarat

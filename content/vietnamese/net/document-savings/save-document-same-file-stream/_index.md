@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ vào tài liệu bằng Groupdoc
 weight: 10
 url: /vi/net/document-savings/save-document-same-file-stream/
 ---
+
+# Lưu tài liệu vào cùng một tệp hoặc luồng
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc thêm hình mờ vào tài liệu đã trở nên cần thiết để bảo vệ tài sản trí tuệ và đảm bảo tính toàn vẹn của thương hiệu. Groupdocs.Watermark cho .NET cung cấp một giải pháp mạnh mẽ cho các nhà phát triển muốn nhúng hình mờ vào tài liệu một cách liền mạch. Hướng dẫn toàn diện này sẽ hướng dẫn bạn các bước lưu tài liệu có hình mờ vào cùng một tệp hoặc luồng bằng Groupdocs.Watermark cho .NET.
 ## Điều kiện tiên quyết

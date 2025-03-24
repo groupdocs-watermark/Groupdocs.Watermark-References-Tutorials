@@ -6,6 +6,9 @@ description: Odblokuj cenne informacje z dokumentów Word bez wysiłku dzięki G
 weight: 24
 url: /pl/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# Uzyskaj informacje o kształtach w dokumentach programu Word
+
 ## Wstęp
 W cyfrowym krajobrazie, w którym najważniejsze są dane, wyciąganie znaczących wniosków z dokumentów jest sprawą najwyższej wagi. GroupDocs.Watermark dla .NET umożliwia programistom zagłębianie się w struktury dokumentów i bezproblemowe wydobywanie cennych informacji. W tym samouczku pokażemy, jak krok po kroku wykorzystać to potężne narzędzie do uzyskiwania informacji o kształtach z dokumentów programu Word.
 ## Warunki wstępne

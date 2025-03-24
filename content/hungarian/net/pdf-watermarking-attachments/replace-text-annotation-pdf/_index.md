@@ -6,6 +6,9 @@ description: Ezzel az átfogó, lépésenkénti oktatóanyaggal megtudhatja, hog
 weight: 40
 url: /hu/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---
+
+# Szöveg cseréje az adott megjegyzéshez PDF-ben
+
 ## Bevezetés
 Halihó! Zökkenőmentesen szeretné kezelni a vízjeleket PDF-dokumentumaiban a .NET használatával? Ne keressen tovább! Ez az oktatóanyag végigvezeti Önt a Groupdocs.Watermark for .NET segítségével a PDF-ben található bizonyos megjegyzések szövegének cseréjén. A folyamatot könnyen követhető lépésekre bontjuk, így biztosítva, hogy az egyes fogalmakat egyértelműen megértse. Akár tapasztalt fejlesztő, akár kezdő, ezt az útmutatót úgy alakítottuk ki, hogy az élmény gördülékeny és produktív legyen.
 ## Előfeltételek

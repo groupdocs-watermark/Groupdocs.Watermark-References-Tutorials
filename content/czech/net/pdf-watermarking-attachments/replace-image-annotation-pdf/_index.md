@@ -6,6 +6,9 @@ description: Naučte se, jak nahradit obrázky v konkrétních anotacích PDF po
 weight: 37
 url: /cs/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
+
+# Nahradit obrázek za konkrétní anotaci v PDF
+
 ## Úvod
 Vítejte v tomto komplexním průvodci používáním GroupDocs.Watermark for .NET k nahrazení obrázků v rámci konkrétních anotací v dokumentech PDF. Ať už jste vývojář, který chce vylepšit své možnosti práce s PDF, nebo se jen zajímáte o složitosti vodoznaku, tento tutoriál vám pomůže. Na konci budete moci bez problémů nahradit obrázky v anotacích PDF vlastními, což optimalizuje pracovní postupy zpracování dokumentů.
 ## Předpoklady

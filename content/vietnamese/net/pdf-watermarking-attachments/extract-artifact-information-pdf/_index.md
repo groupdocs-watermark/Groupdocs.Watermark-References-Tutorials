@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất thông tin giả từ tệp PDF b�
 weight: 24
 url: /vi/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# Trích xuất thông tin tạo tác từ PDF
+
 ## Giới thiệu
 Tài liệu PDF thường chứa thông tin có giá trị được nhúng trong nhiều tạo phẩm khác nhau như hình ảnh, văn bản và hình dạng. Việc trích xuất thông tin này có thể rất quan trọng đối với nhiều ứng dụng, từ phân tích dữ liệu đến quản lý nội dung. Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất thông tin giả từ các tệp PDF bằng GroupDocs.Watermark cho .NET, một thư viện .NET mạnh mẽ được thiết kế đặc biệt để tạo hình mờ, tìm kiếm và thao tác các tài liệu PDF.
 ## Điều kiện tiên quyết

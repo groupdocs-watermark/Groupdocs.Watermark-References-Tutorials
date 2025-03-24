@@ -8,6 +8,9 @@ url: /vi/
 is_root: true
 ---
 
+# Bảo mật tài liệu chính và xây dựng thương hiệu với GroupDocs.Watermark
+
+
 Chào mừng bạn đến với trung tâm hướng dẫn toàn diện dành cho GroupDocs.Watermark, nơi chúng tôi cung cấp các hướng dẫn và ví dụ chuyên sâu cho cả nền tảng .NET và Java. Tài nguyên của chúng tôi được thiết kế để giúp bạn nắm vững nghệ thuật thêm và quản lý hình mờ trên nhiều định dạng tài liệu. Cho dù bạn là nhà phát triển làm việc với .NET hay Java, hướng dẫn từng bước của chúng tôi sẽ trang bị cho bạn kiến thức và công cụ cần thiết để tăng cường bảo mật tài liệu, duy trì tính nhất quán của thương hiệu và bảo vệ tài sản trí tuệ một cách dễ dàng. Khám phá các hướng dẫn của chúng tôi để khai thác toàn bộ tiềm năng của Hình mờ GroupDocs trong ứng dụng của bạn.
 
 

@@ -6,6 +6,9 @@ description: Ebből az útmutatóból megtudhatja, hogyan adhat vízjeleket doku
 weight: 11
 url: /hu/net/document-loadings/load-document-from-stream/
 ---
+
+# Dokumentum betöltése a Streamből
+
 ## Bevezetés
 Zökkenőmentesen szeretne vízjeleket hozzáadni dokumentumaihoz a .NET használatával? Ne keressen tovább! A GroupDocs.Watermark for .NET egy hatékony és könnyen használható könyvtár, amely lehetővé teszi a vízjelek kezelését különféle dokumentumformátumokban. Függetlenül attól, hogy PDF-ekkel, Word-dokumentumokkal vagy képekkel dolgozik, ez az eszköz mindent megtalál. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a dokumentum adatfolyamból való betöltésének és vízjel hozzáadásának folyamatán. Szóval, ugorjunk bele!
 ## Előfeltételek

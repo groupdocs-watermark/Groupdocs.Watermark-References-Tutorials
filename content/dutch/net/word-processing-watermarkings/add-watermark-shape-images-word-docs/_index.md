@@ -6,6 +6,9 @@ description: Leer hoe u watermerken kunt toevoegen om afbeeldingen in Word-docum
 weight: 17
 url: /nl/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Voeg een watermerk toe aan vormafbeeldingen in Word-documenten
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u een watermerk kunt toevoegen om afbeeldingen in Word-documenten vorm te geven met behulp van GroupDocs.Watermark voor .NET. Watermerken zijn een cruciaal aspect van documentbescherming, vooral als het gaat om gevoelige of vertrouwelijke informatie. Door watermerken toe te voegen aan vormafbeeldingen kunt u de integriteit en veiligheid van uw documenten garanderen.
 ## Vereisten

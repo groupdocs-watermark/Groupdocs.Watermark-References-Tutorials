@@ -6,6 +6,9 @@ description: Nâng cao khả năng quản lý tài liệu .NET của bạn với
 weight: 12
 url: /vi/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---
+
+# Thêm tệp đính kèm vào PDF
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, GroupDocs.Watermark nổi bật như một công cụ mạnh mẽ để quản lý hình mờ, chú thích, v.v. trong các định dạng tài liệu khác nhau. Cho dù bạn đang làm việc với tệp PDF, tài liệu Word hay hình ảnh, GroupDocs.Watermark dành cho .NET đều cung cấp sự tích hợp liền mạch giúp các nhà phát triển có thể thao tác với tài liệu một cách dễ dàng.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Aprimore seus recursos de gerenciamento de documentos .NET com Grou
 weight: 12
 url: /pt/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---
+
+# Adicionar anexo ao PDF
+
 ## Introdução
 No domínio do desenvolvimento .NET, GroupDocs.Watermark se destaca como uma ferramenta poderosa para gerenciar marcas d'água, anotações e muito mais em vários formatos de documentos. Esteja você trabalhando com PDFs, documentos do Word ou imagens, o GroupDocs.Watermark for .NET oferece uma integração perfeita que permite aos desenvolvedores manipular documentos com facilidade.
 ## Pré-requisitos

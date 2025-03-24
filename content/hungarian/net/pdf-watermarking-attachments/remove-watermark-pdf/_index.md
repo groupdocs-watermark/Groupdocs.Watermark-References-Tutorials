@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan távolíthat el vízjeleket PDF-fájlokból a G
 weight: 34
 url: /hu/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---
+
+# Távolítsa el a vízjelet a PDF-ből
+
 ## Bevezetés
 A mai digitális korban bevett gyakorlat az érzékeny dokumentumok vízjelekkel való védelme. Vannak azonban olyan esetek, amikor különféle okok miatt el kell távolítania a vízjeleket a PDF-fájlokból. Akár dokumentumot szerkeszt, akár egyszerűen tiszta verzióra van szüksége a prezentációhoz, a GroupDocs.Watermark for .NET zökkenőmentes megoldást kínál a vízjelek PDF-fájlokból való eltávolítására.
 ## Előfeltételek

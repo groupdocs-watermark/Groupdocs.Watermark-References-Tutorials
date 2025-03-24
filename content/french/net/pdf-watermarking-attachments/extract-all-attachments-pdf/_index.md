@@ -6,6 +6,9 @@ description: Découvrez comment extraire toutes les pièces jointes d'un PDF à 
 weight: 22
 url: /fr/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
+
+# Extraire toutes les pièces jointes du PDF
+
 ## Introduction
 Cherchez-vous à extraire facilement les pièces jointes d’un document PDF ? Eh bien, vous êtes au bon endroit ! Dans ce didacticiel complet, nous vous guiderons tout au long du processus d'extraction de toutes les pièces jointes d'un PDF à l'aide de Groupdocs.Watermark pour .NET. Cette puissante bibliothèque permet aux développeurs de gérer les filigranes dans différents formats de documents, mais elle inclut également des fonctionnalités robustes pour extraire les fichiers intégrés. Que vous soyez un développeur chevronné ou un débutant, ce guide étape par étape facilitera le processus.
 ## Conditions préalables

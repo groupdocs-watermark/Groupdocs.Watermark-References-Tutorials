@@ -6,6 +6,9 @@ description: Bez wysiłku usuwaj obiekty XObjects z określonym formatowaniem te
 weight: 36
 url: /pl/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# Usuń XObjects z określonym formatowaniem tekstu w formacie PDF
+
 ## Wstęp
 Znak wodny na dokumentach jest kluczową częścią zapewnienia ich autentyczności i ochrony poufnych informacji. GroupDocs.Watermark dla .NET zapewnia kompleksowe rozwiązanie do dodawania, modyfikowania i usuwania znaków wodnych z różnych formatów dokumentów. W tym samouczku omówimy, w jaki sposób można usunąć obiekty XObjects z określonym formatowaniem tekstu z dokumentów PDF za pomocą GroupDocs.Watermark dla .NET.
 ## Warunki wstępne

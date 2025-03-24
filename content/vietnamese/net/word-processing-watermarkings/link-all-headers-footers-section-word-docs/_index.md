@@ -6,6 +6,9 @@ description: Dễ dàng liên kết đầu trang và chân trang trong tài li�
 weight: 25
 url: /vi/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Liên kết tất cả đầu trang/chân trang trong các phần trong tài liệu Word
+
 ## Giới thiệu
 Khi làm việc với tài liệu Word, thường cần liên kết đầu trang và chân trang giữa các phần khác nhau để đảm bảo tính thống nhất và mạch lạc. Hướng dẫn này sẽ hướng dẫn bạn từng bước thực hiện quy trình bằng cách sử dụng GroupDocs.Watermark cho .NET.
 ## Nhập không gian tên

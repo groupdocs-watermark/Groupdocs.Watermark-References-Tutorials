@@ -6,6 +6,9 @@ description: Erfahren Sie in diesem umfassenden Schritt-für-Schritt-Tutorial, w
 weight: 38
 url: /de/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# Ersetzen Sie das Bild für ein bestimmtes Artefakt im PDF
+
 ## Einführung
 Das Hinzufügen von Wasserzeichen zu Dokumenten ist eine wesentliche Maßnahme zur Gewährleistung der Dokumentensicherheit, des Brandings und des Urheberrechtsschutzes. Wenn Sie mit GroupDocs.Watermark für .NET in die Welt der Dokumentenwasserzeichen eintauchen möchten, sind Sie hier richtig. Dieser Leitfaden führt Sie durch den Prozess des Ersetzens von Bildern in einem PDF-Dokument mithilfe der GroupDocs.Watermark-Bibliothek. Lass uns anfangen!
 ## Voraussetzungen

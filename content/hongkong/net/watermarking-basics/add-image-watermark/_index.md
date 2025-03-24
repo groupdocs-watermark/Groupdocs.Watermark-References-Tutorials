@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 輕鬆將影像浮水印新增�
 weight: 10
 url: /zh-hant/net/watermarking-basics/add-image-watermark/
 ---
+
+# 新增影像浮水印
+
 ## 介紹
 在本教學中，我們將深入研究使用 GroupDocs.Watermark for .NET 將影像浮水印新增至文件的流程。對文件加浮水印對於保護智慧財產權和品牌至關重要。透過 GroupDocs.Watermark for .NET，您可以將浮水印無縫整合到各種文件格式中，例如 Word、Excel、PowerPoint、PDF 等。
 ## 先決條件

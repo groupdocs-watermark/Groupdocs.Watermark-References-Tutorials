@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 有效連結 Word �
 weight: 26
 url: /zh-hant/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# 在 Word 文件中的節中連結頁首/頁腳
+
 ## 介紹
 在 .NET 開發領域，管理 Word 文件中的浮水印可能是一項至關重要的任務，無論您是要保護敏感資訊還是添加品牌元素。幸運的是，GroupDocs.Watermark for .NET 提供了一個強大的解決方案來有效地處理浮水印。在本教學中，我們將探討如何使用 GroupDocs.Watermark 連結 Word 文件各部分中的頁首和頁尾。
 ## 先決條件

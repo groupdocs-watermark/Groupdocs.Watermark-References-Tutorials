@@ -6,6 +6,9 @@ description: Tìm hiểu cách tạo bản xem trước tài liệu bằng Group
 weight: 10
 url: /vi/net/document-manipulation/generate-document-preview/
 ---
+
+# Tạo bản xem trước tài liệu
+
 ## Giới thiệu
 Trong thế giới quản lý tài liệu kỹ thuật số, hình mờ đóng một vai trò quan trọng trong việc đảm bảo tính bảo mật và tính xác thực của tài liệu. GroupDocs.Watermark cho .NET là một công cụ mạnh mẽ cho phép các nhà phát triển thêm hình mờ vào tài liệu một cách dễ dàng. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình tạo bản xem trước tài liệu bằng GroupDocs.Watermark cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay chỉ mới bắt đầu, hướng dẫn này sẽ cung cấp cho bạn quy trình từng bước toàn diện để đạt được mục tiêu của mình.
 ## Điều kiện tiên quyết

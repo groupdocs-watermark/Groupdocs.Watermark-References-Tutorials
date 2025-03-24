@@ -6,6 +6,9 @@ description: Bu adım adım kılavuzla GroupDocs.Watermark for .NET'i kullanarak
 weight: 39
 url: /tr/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
+
+# PDF'deki Belirli XObject İçin Görüntüyü Değiştir
+
 ## giriiş
 GroupDocs.Watermark for .NET kullanılarak PDF'deki belirli bir XObject'e ait görüntünün nasıl değiştirileceğine ilişkin ayrıntılı kılavuzumuza hoş geldiniz. PDF dosyalarınızdaki filigranları yönetmeniz veya içeriği değiştirmeniz gerekiyorsa doğru yerdesiniz. Bu eğitim, PDF belgelerinizi yeni görüntülerle güvenle güncelleyebilmenizi sağlayacak her adımda size yol gösterecektir. Haydi onun içine dalalım!
 ## Önkoşullar

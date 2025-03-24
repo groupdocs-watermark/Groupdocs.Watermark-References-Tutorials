@@ -6,6 +6,9 @@ description: Scopri i tutorial di GroupDocs.Watermark per .NET per aggiungere fi
 weight: 20
 url: /it/net/watermarking-basics/
 ---
+
+# Nozioni di base sulla filigrana
+
 ## introduzione
 La filigrana è una tecnica fondamentale per proteggere i tuoi documenti e affermarne la proprietà. GroupDocs.Watermark per .NET semplifica questo processo, fornendo strumenti robusti per aggiungere filigrane sia di immagini che di testo. Che tu sia nuovo nel campo della filigrana o desideri migliorare le tue capacità, questi tutorial ti guideranno attraverso le nozioni di base.
 

@@ -6,6 +6,9 @@ description: Supprimez sans effort les XObjects avec un formatage de texte spéc
 weight: 36
 url: /fr/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# Supprimer les XObjects avec un formatage de texte spécifique dans PDF
+
 ## Introduction
 Le tatouage des documents est un élément crucial pour garantir leur authenticité et protéger les informations sensibles. GroupDocs.Watermark pour .NET fournit une solution complète pour ajouter, modifier et supprimer des filigranes de divers formats de documents. Dans ce didacticiel, nous verrons comment supprimer les XObjects avec un formatage de texte spécifique des documents PDF à l'aide de GroupDocs.Watermark pour .NET.
 ## Conditions préalables

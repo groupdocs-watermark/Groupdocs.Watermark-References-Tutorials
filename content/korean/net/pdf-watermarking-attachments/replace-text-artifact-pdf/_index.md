@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 PDF 문서의 특정 �
 weight: 42
 url: /ko/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---
+
+# PDF의 특정 아티팩트에 대한 텍스트 바꾸기
+
 ## 소개
 오늘날의 디지털 시대에는 문서의 무결성과 기밀성을 보호하는 것이 무엇보다 중요합니다. 민감한 계약을 보호하는 법률 전문가이든 독점 정보의 보안을 보장하는 기업 임원이든 신뢰할 수 있는 문서 보호의 필요성은 아무리 강조해도 지나치지 않습니다. .NET용 GroupDocs.Watermark는 문서에 워터마크를 표시하고 쉽게 조작할 수 있는 완벽한 통합과 강력한 기능을 제공하는 강력한 솔루션으로 등장합니다.
 ## 전제조건

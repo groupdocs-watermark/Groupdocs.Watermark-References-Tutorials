@@ -6,6 +6,9 @@ description: Dowiedz się, jak usuwać kształty o określonym formacie tekstu w
 weight: 31
 url: /pl/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---
+
+# Usuń kształty z określonym formatowaniem tekstu w dokumentach programu Word
+
 ## Wstęp
 GroupDocs.Watermark dla .NET to potężny interfejs API, który umożliwia programistom programowe manipulowanie znakami wodnymi w różnych formatach dokumentów. W tym samouczku skupimy się na usuwaniu kształtów z określonym formatowaniem tekstu w dokumentach Word przy użyciu GroupDocs.Watermark dla .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik krok po kroku pomoże Ci zrozumieć proces wydajnego i skutecznego usuwania kształtów.
 ## Warunki wstępne

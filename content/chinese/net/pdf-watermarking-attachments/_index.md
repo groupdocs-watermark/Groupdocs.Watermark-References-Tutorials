@@ -6,6 +6,9 @@ description: 探索有关 PDF 水印和附件的 GroupDocs.Watermark for .NET �
 weight: 25
 url: /zh/net/pdf-watermarking-attachments/
 ---
+
+# PDF 水印和附件
+
 ## 介绍
 
 希望通过水印增强您的 PDF 并有效管理附件？ GroupDocs.Watermark for .NET 提供了一套全面的教程来帮助您掌握这些任务。无论您是初学者还是经验丰富的开发人员，我们的分步指南都会使该过程变得简单而高效。让我们探索一些基本教程，帮助您开始增强 PDF 文档。

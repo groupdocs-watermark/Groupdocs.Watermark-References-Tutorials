@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 向 PDF 附件添�
 weight: 16
 url: /zh/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# 为 PDF 中的所有附件添加水印
+
 ## 介绍
 向 PDF 附件添加水印可能是文档管理中的关键步骤，尤其是在确保安全或品牌时。 GroupDocs.Watermark for .NET 提供了将水印无缝嵌入 PDF 文件的全面解决方案。在本教程中，我们将指导您完成使用 GroupDocs.Watermark for .NET 向 PDF 文档中的所有附件添加水印的过程。
 ## 先决条件

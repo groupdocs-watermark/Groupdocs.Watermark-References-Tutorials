@@ -6,6 +6,9 @@ description: 包括的なステップバイステップのチュートリアル�
 weight: 35
 url: /ja/net/pdf-watermarking-attachments/remove-xobject-pdf/
 ---
+
+# PDF から XObject を削除する
+
 ## 導入
 PDF ドキュメントから不要な XObject を削除する必要があったことがありますか?セキュリティのためでも、明確にするためでも、あるいは単にファイルをクリーンアップするためでも、XObject の削除は重要な作業となる可能性があります。幸いなことに、GroupDocs.Watermark for .NET を使用すると、このプロセスは簡単かつ効率的になります。このチュートリアルでは、GroupDocs.Watermark for .NET を使用して PDF から XObject を削除する方法を段階的に説明します。この記事を読み終えるまでに、このタスクをシームレスに処理できるようになるでしょう。
 ## 前提条件

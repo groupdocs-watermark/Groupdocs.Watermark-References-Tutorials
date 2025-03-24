@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak PDF belgelerini nasıl ra
 weight: 27
 url: /tr/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# PDF Belgesini Rasterleştir
+
 ## giriiş
 Belge yönetimi ve manipülasyonu alanında GroupDocs.Watermark for .NET, çeşitli belge formatlarındaki filigranları eklemek, kaldırmak ve aramak için güçlü yetenekler sunan güçlü bir araç olarak öne çıkıyor. Belgelerinizi telif hakkı bildirimleriyle korumak, markalama için kurumsal logolar eklemek veya belgelere yalnızca damgalarla açıklama eklemek olsun, GroupDocs.Watermark, sezgisel API'si ve kapsamlı özellik seti ile süreci basitleştirir.
 ## Önkoşullar
