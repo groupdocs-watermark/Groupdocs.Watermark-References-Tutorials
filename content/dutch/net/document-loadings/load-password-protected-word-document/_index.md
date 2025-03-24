@@ -3,7 +3,6 @@ title: Met een wachtwoord beveiligd Word-document laden
 linktitle: Met een wachtwoord beveiligd Word-document laden
 second_title: GroupDocs.Watermark .NET API
 description: Voeg moeiteloos watermerken toe aan met een wachtwoord beveiligde Word-documenten met GroupDocs.Watermark voor .NET met onze uitgebreide stapsgewijze handleiding.
-type: docs
 weight: 14
 url: /nl/net/document-loadings/load-password-protected-word-document/
 ---

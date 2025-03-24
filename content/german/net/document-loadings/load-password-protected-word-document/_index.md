@@ -3,7 +3,6 @@ title: Laden Sie ein passwortgeschütztes Word-Dokument
 linktitle: Laden Sie ein passwortgeschütztes Word-Dokument
 second_title: GroupDocs.Watermark .NET-API
 description: Fügen Sie mit GroupDocs.Watermark für .NET mit unserer umfassenden Schritt-für-Schritt-Anleitung mühelos Wasserzeichen zu passwortgeschützten Word-Dokumenten hinzu.
-type: docs
 weight: 14
 url: /de/net/document-loadings/load-password-protected-word-document/
 ---

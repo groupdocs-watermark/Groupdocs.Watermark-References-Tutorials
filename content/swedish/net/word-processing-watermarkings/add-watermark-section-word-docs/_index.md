@@ -3,7 +3,6 @@ title: Lägg till vattenstämpel till avsnitt i Word Docs
 linktitle: Lägg till vattenstämpel till avsnitt i Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Lägg enkelt till vattenstämplar i Word-dokument med GroupDocs.Watermark för .NET. Skydda ditt innehåll med denna enkla guide.
-type: docs
 weight: 15
 url: /sv/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

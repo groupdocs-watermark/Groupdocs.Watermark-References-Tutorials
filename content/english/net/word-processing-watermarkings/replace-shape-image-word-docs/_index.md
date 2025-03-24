@@ -3,7 +3,6 @@ title: Replace Shape Image in Word Docs
 linktitle: Replace Shape Image in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to programmatically replace shape images in Word documents using GroupDocs.Watermark for .NET. Simplify document manipulation tasks effortlessly.
-type: docs
 weight: 33
 url: /net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---

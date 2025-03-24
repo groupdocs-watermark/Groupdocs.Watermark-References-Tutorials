@@ -3,7 +3,6 @@ title: Αντικατάσταση κειμένου με Μορφοποίηση �
 linktitle: Αντικατάσταση κειμένου με Μορφοποίηση για XObject σε PDF
 second_title: GroupDocs.Watermark .NET API
 description: Βελτιώστε τις δυνατότητες χειρισμού εγγράφων .NET με το υδατογράφημα GroupDocs για .NET. Μάθετε πώς να αντικαθιστάτε το κείμενο με μορφοποίηση σε αρχεία PDF χωρίς κόπο.
-type: docs
 weight: 45
 url: /el/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---

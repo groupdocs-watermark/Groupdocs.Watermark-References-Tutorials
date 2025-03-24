@@ -3,7 +3,6 @@ title: 스트림에서 문서 로드
 linktitle: 스트림에서 문서 로드
 second_title: GroupDocs.Watermark .NET API
 description: 이 가이드에서 .NET용 GroupDocs.Watermark를 사용하여 문서에 워터마크를 추가하는 방법을 알아보세요. 문서 보안을 강화하려는 개발자에게 적합합니다.
-type: docs
 weight: 11
 url: /ko/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  이 코드는 새로 추가된 워터마크로 문서를 저장합니다.`outputFileName` 이전에 정의한 경로입니다.
 
 ## 결론
-축하해요! .NET용 GroupDocs.Watermark를 사용하여 문서에 워터마크를 성공적으로 추가했습니다. 이 라이브러리를 사용하면 다양한 문서 형식의 워터마크를 매우 쉽게 관리할 수 있습니다. 텍스트, 이미지 또는 기타 유형의 워터마크를 추가해야 하는 경우 GroupDocs.Watermark에는 필요한 도구가 있습니다. 꼭 확인해 보세요.[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/) 고급 기능과 사용자 정의 옵션을 확인하세요.
+축하해요! .NET용 GroupDocs.Watermark를 사용하여 문서에 워터마크를 성공적으로 추가했습니다. 이 라이브러리를 사용하면 다양한 문서 형식의 워터마크를 매우 쉽게 관리할 수 있습니다. 텍스트, 이미지 또는 기타 유형의 워터마크를 추가해야 하는 경우 GroupDocs.Watermark에는 필요한 도구가 있습니다. 꼭 확인해 보세요.[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/) 고급 기능과 사용자 정의 옵션을 확인하세요.
 ## FAQ
 ### .NET용 GroupDocs.Watermark를 사용하여 어떤 유형의 워터마크를 추가할 수 있습니까?
 텍스트 워터마크, 이미지 워터마크는 물론 복잡한 모양과 로고까지 추가할 수 있습니다. 라이브러리는 광범위한 사용자 정의 옵션을 지원합니다.

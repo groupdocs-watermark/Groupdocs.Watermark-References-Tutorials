@@ -3,7 +3,6 @@ title: Remove Shapes with Specific Text Formatting in Word Docs
 linktitle: Remove Shapes with Specific Text Formatting in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to remove shapes with specific text formatting in Word documents using GroupDocs.Watermark for .NET. Follow our guide for efficient manipulation of watermarks.
-type: docs
 weight: 31
 url: /net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---

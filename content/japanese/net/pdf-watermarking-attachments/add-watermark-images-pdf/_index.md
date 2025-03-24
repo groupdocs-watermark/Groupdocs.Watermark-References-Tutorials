@@ -3,7 +3,6 @@ title: PDF の画像に透かしを追加する
 linktitle: PDF の画像に透かしを追加する
 second_title: GroupDocs.Watermark .NET API
 description: 詳細なステップバイステップのチュートリアルで、GroupDocs.Watermark for .NET を使用して PDF ドキュメント内の画像にウォーターマークを追加する方法を学びます。 PDF を簡単に保護します。
-type: docs
 weight: 19
 url: /ja/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ GroupDocs.Watermark for .NET は、開発者が PDF を含むさまざまなド�
 ### GroupDocs.Watermark for .NET を使用するにはライセンスが必要ですか?
 はい、ライセンスが必要です。を取得できます。[仮免許証](https://purchase.groupdocs.com/temporary-license/)評価目的のため。
 ### GroupDocs.Watermark for .NET に関するその他のドキュメントはどこで見つけられますか?
-包括的なドキュメントは、[GroupDocs.Watermark ドキュメント ページ](https://reference.groupdocs.com/Watermark/net/).
+包括的なドキュメントは、[GroupDocs.Watermark ドキュメント ページ](https://tutorials.groupdocs.com/Watermark/net/).

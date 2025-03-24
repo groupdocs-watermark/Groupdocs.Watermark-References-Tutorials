@@ -3,7 +3,6 @@ title: Thay thế văn bản cho thành phần cụ thể trong PDF
 linktitle: Thay thế văn bản cho thành phần cụ thể trong PDF
 second_title: API GroupDocs.Watermark .NET
 description: Khám phá cách thay thế văn bản cho các thành phần cụ thể trong tài liệu PDF bằng GroupDocs.Watermark cho .NET. Tăng cường bảo mật tài liệu và tính toàn vẹn một cách dễ dàng.
-type: docs
 weight: 42
 url: /vi/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---

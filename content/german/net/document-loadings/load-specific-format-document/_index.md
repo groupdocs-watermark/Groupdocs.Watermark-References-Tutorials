@@ -3,7 +3,6 @@ title: Laden Sie ein Dokument mit einem bestimmten Format
 linktitle: Laden Sie ein Dokument mit einem bestimmten Format
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie Dokumente mit Groupdocs für .NET laden und mit Wasserzeichen versehen. Schützen und branden Sie Ihre Inhalte mühelos.
-type: docs
 weight: 12
 url: /de/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Abschluss
-Das Versehen von Dokumenten mit Wasserzeichen ist ein entscheidender Schritt zum Schutz Ihrer Inhalte, und Groupdocs.Watermark für .NET macht diesen Prozess unkompliziert und effizient. Wenn Sie dieser Anleitung folgen, können Sie ganz einfach Wasserzeichen auf Ihre Dokumente laden und anwenden und so deren Sicherheit und das richtige Branding gewährleisten. Weitere Einzelheiten und erweiterte Optionen finden Sie im[Groupdocs.Watermark für .NET-Dokumentation](https://reference.groupdocs.com/Watermark/net/).
+Das Versehen von Dokumenten mit Wasserzeichen ist ein entscheidender Schritt zum Schutz Ihrer Inhalte, und Groupdocs.Watermark für .NET macht diesen Prozess unkompliziert und effizient. Wenn Sie dieser Anleitung folgen, können Sie ganz einfach Wasserzeichen auf Ihre Dokumente laden und anwenden und so deren Sicherheit und das richtige Branding gewährleisten. Weitere Einzelheiten und erweiterte Optionen finden Sie im[Groupdocs.Watermark für .NET-Dokumentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQs
 ### Kann ich diese Methode für verschiedene Dokumentformate verwenden?
  Ja, Groupdocs unterstützt verschiedene Dokumentformate. Sie müssen das anpassen`LoadOptions` entsprechend.

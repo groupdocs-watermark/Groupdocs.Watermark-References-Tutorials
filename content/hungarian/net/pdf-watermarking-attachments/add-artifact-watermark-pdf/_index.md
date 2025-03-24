@@ -3,7 +3,6 @@ title: Artifact Watermark hozzáadása a PDF-hez
 linktitle: Artifact Watermark hozzáadása a PDF-hez
 second_title: GroupDocs.Watermark .NET API
 description: A Groupdocs.Watermark for .NET segítségével megtudhatja, hogyan adhatunk könnyedén műtermék vízjeleket PDF-fájlokhoz. Könnyedén megvédheti dokumentumait.
-type: docs
 weight: 11
 url: /hu/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---

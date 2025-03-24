@@ -3,7 +3,6 @@ title: Load Document from Stream
 linktitle: Load Document from Stream
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add watermarks to documents using GroupDocs.Watermark for .NET with this guide. Perfect for developers looking to enhance document security.
-type: docs
 weight: 11
 url: /net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
 This code saves the document with the newly added watermark to the `outputFileName` path you defined earlier.
 
 ## Conclusion
-Congratulations! You’ve successfully added a watermark to your document using GroupDocs.Watermark for .NET. This library makes it incredibly easy to manage watermarks across a variety of document formats. Whether you need to add text, images, or other types of watermarks, GroupDocs.Watermark has the tools you need. Don’t forget to check out the [documentation](https://reference.groupdocs.com/Watermark/net/) for more advanced features and customization options.
+Congratulations! You’ve successfully added a watermark to your document using GroupDocs.Watermark for .NET. This library makes it incredibly easy to manage watermarks across a variety of document formats. Whether you need to add text, images, or other types of watermarks, GroupDocs.Watermark has the tools you need. Don’t forget to check out the [documentation](https://tutorials.groupdocs.com/Watermark/net/) for more advanced features and customization options.
 ## FAQ's
 ### What types of watermarks can I add using GroupDocs.Watermark for .NET?
 You can add text watermarks, image watermarks, and even complex shapes and logos. The library supports a wide range of customization options.

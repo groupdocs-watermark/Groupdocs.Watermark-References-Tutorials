@@ -3,7 +3,6 @@ title: वर्ड डॉक्स में हाइपरलिंक्स 
 linktitle: वर्ड डॉक्स में हाइपरलिंक्स हटाएँ
 second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों से हाइपरलिंक हटाने का तरीका जानें। दस्तावेज़ सुरक्षा को सहजता से बढ़ाएँ।
-type: docs
 weight: 29
 url: /hi/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Word Docs에서 텍스트 효과로 워터마크 추가
 linktitle: Word Docs에서 텍스트 효과로 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에 텍스트 효과가 있는 사용자 정의 워터마크를 추가하는 방법을 알아보세요. 문서 보안과 시각적 매력을 쉽게 확보할 수 있습니다.
-type: docs
 weight: 21
 url: /ko/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---

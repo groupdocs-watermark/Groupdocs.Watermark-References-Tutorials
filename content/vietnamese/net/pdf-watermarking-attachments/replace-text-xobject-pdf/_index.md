@@ -3,7 +3,6 @@ title: Thay thế văn bản cho XObject cụ thể trong PDF
 linktitle: Thay thế văn bản cho XObject cụ thể trong PDF
 second_title: API GroupDocs.Watermark .NET
 description: Thay thế văn bản trong tệp PDF một cách hiệu quả bằng GroupDocs.Watermark cho .NET. Tích hợp liền mạch hình mờ vào các ứng dụng .NET của bạn.
-type: docs
 weight: 44
 url: /vi/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
@@ -68,6 +67,6 @@ Có, GroupDocs.Watermark for .NET hỗ trợ nhiều định dạng tài liệu,
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Watermark cho .NET?
  Giấy phép tạm thời có thể được lấy từ[trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/).
 ### Tôi có thể tìm tài liệu về GroupDocs.Watermark cho .NET ở đâu?
- Tài liệu chi tiết có sẵn tại[trang tài liệu](https://reference.groupdocs.com/Watermark/net/).
+ Tài liệu chi tiết có sẵn tại[trang tài liệu](https://tutorials.groupdocs.com/Watermark/net/).
 ### Những tùy chọn hỗ trợ nào có sẵn cho GroupDocs.Watermark cho .NET?
  Bạn có thể tìm kiếm sự hỗ trợ và trợ giúp từ diễn đàn cộng đồng GroupDocs[đây](https://forum.groupdocs.com/c/watermark/19).

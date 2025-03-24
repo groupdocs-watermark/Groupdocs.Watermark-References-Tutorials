@@ -3,7 +3,6 @@ title: PDF'de XObject için Metni Biçimlendirmeyle Değiştirin
 linktitle: PDF'de XObject için Metni Biçimlendirmeyle Değiştirin
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs için .NET belge işleme yeteneklerinizi geliştirin. PDF'lerdeki metni zahmetsizce biçimlendirmeyle nasıl değiştireceğinizi öğrenin.
-type: docs
 weight: 45
 url: /tr/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---

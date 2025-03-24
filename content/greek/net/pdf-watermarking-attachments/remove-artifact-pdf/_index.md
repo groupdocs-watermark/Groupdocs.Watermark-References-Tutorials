@@ -3,7 +3,6 @@ title: Καταργήστε το Artifact από το PDF
 linktitle: Καταργήστε το Artifact από το PDF
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αφαιρείτε αβίαστα τεχνουργήματα από έγγραφα PDF χρησιμοποιώντας το GroupDocs.Watermark για .NET. Κατακτήστε τη διαδικασία βήμα προς βήμα με το περιεκτικό μας σεμινάριο.
-type: docs
 weight: 31
 url: /el/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
@@ -66,4 +65,4 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### Μπορώ να αγοράσω μια προσωρινή άδεια χρήσης για το GroupDocs.Watermark για .NET;
  Ναι, μπορείτε να αποκτήσετε προσωρινή άδεια από την παρεχόμενη[πηγή](https://purchase.groupdocs.com/temporary-license/).
 ### Υπάρχουν διαθέσιμοι πόροι ολοκληρωμένης τεκμηρίωσης για το GroupDocs.Watermark για .NET;
- Ναι, μπορείτε να ανατρέξετε στη λεπτομερή διαθέσιμη τεκμηρίωση[εδώ](https://reference.groupdocs.com/Watermark/net/) για ενδελεχή καθοδήγηση και πληροφορίες.
+ Ναι, μπορείτε να ανατρέξετε στη λεπτομερή διαθέσιμη τεκμηρίωση[εδώ](https://tutorials.groupdocs.com/Watermark/net/) για ενδελεχή καθοδήγηση και πληροφορίες.

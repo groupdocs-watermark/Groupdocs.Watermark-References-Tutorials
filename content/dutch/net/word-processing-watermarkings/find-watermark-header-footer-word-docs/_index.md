@@ -3,7 +3,6 @@ title: Zoek watermerk in koptekst/voettekst in Word-documenten
 linktitle: Zoek watermerk in koptekst/voettekst in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u efficiënt watermerken uit Word-documenten kunt vinden en verwijderen met behulp van GroupDocs voor .NET, waardoor documentintegriteit en professionaliteit wordt gegarandeerd.
-type: docs
 weight: 22
 url: /nl/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---

@@ -3,7 +3,6 @@ title: PDF'deki Görüntülere Filigran Ekleme
 linktitle: PDF'deki Görüntülere Filigran Ekleme
 second_title: GroupDocs.Watermark .NET API'si
 description: Ayrıntılı, adım adım eğitimimizle GroupDocs.Watermark for .NET'i kullanarak PDF belgelerindeki görüntülere filigran eklemeyi öğrenin. PDF'lerinizi kolayca güvenceye alın.
-type: docs
 weight: 19
 url: /tr/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ Kesinlikle! PDF'deki her sayfada döngü yapabilir ve her sayfadaki görüntüle
 ### GroupDocs.Watermark for .NET'i kullanmak için lisansa ihtiyacım var mı?
  Evet, lisans gereklidir. Bir[geçici lisans](https://purchase.groupdocs.com/temporary-license/) değerlendirme amaçlı.
 ### GroupDocs.Watermark for .NET hakkında daha fazla belgeyi nerede bulabilirim?
- Hakkında kapsamlı belgeler bulabilirsiniz.[GroupDocs.Watermark belgelendirme sayfası](https://reference.groupdocs.com/Watermark/net/).
+ Hakkında kapsamlı belgeler bulabilirsiniz.[GroupDocs.Watermark belgelendirme sayfası](https://tutorials.groupdocs.com/Watermark/net/).

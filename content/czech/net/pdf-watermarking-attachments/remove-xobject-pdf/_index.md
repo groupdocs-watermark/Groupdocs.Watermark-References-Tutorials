@@ -3,7 +3,6 @@ title: Odebrat XObject z PDF
 linktitle: Odebrat XObject z PDF
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak snadno odstranit XObjects z PDF pomocí GroupDocs.Watermark for .NET s naším komplexním, podrobným tutoriálem.
-type: docs
 weight: 35
 url: /cs/net/pdf-watermarking-attachments/remove-xobject-pdf/
 ---
@@ -61,7 +60,7 @@ PdfContent pdfContent = watermarker.GetContent<PdfContent>();
 ```csharp
 pdfContent.Pages[0].XObjects.RemoveAt(0);
 ```
-### Odebrat XObject podle reference
+### Odebrat XObject podle tutorials
  Pokud máte odkaz na konkrétní XObject, který chcete odstranit, můžete použít`Remove` metoda. To je zvláště užitečné při práci s dynamickými dokumenty, kde se index může lišit.
 ```csharp
 pdfContent.Pages[0].XObjects.Remove(pdfContent.Pages[0].XObjects[0]);

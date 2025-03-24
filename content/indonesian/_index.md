@@ -3,7 +3,6 @@ title: Keamanan & Pencitraan Dokumen Utama dengan GroupDocs.Watermark
 linktitle: GroupDocs.Tutorial Tanda Air
 additionalTitle: Referensi API GroupDocs
 description: Buka kehebatan GroupDocs.Watermark dengan tutorial .NET dan Java kami. Kuasai teknik watermarking untuk keamanan dan branding dokumen.
-type: docs
 weight: 11
 url: /id/
 is_root: true

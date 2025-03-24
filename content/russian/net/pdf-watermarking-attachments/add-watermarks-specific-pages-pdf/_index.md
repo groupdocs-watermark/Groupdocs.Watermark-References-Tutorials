@@ -3,7 +3,6 @@ title: Добавьте водяные знаки на определенные 
 linktitle: Добавьте водяные знаки на определенные страницы в PDF
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять текстовые и графические водяные знаки на определенные страницы PDF-файлов с помощью Groupdocs. Следуйте нашему подробному руководству, чтобы защитить ваши документы.
-type: docs
 weight: 15
 url: /ru/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
@@ -100,4 +99,4 @@ Groupdocs.Watermark для .NET — это библиотека, которая 
 ### Как получить бесплатную пробную версию Groupdocs.Watermark?
  Вы можете скачать бесплатную пробную версию на сайте[Веб-сайт групповых документов](https://releases.groupdocs.com/).
 ### Где я могу найти более подробную документацию?
- Для получения более подробной информации вы можете обратиться к[документация](https://reference.groupdocs.com/Watermark/net/).
+ Для получения более подробной информации вы можете обратиться к[документация](https://tutorials.groupdocs.com/Watermark/net/).

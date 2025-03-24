@@ -3,7 +3,6 @@ title: Προσθήκη κλειδωμένου υδατογραφήματος σ
 linktitle: Προσθήκη κλειδωμένου υδατογραφήματος στην ενότητα στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε ένα κλειδωμένο υδατογράφημα σε μια συγκεκριμένη ενότητα στα έγγραφα του Word χρησιμοποιώντας το υδατογράφημα Groupdocs για .NET με αυτόν τον αναλυτικό οδηγό βήμα προς βήμα.
-type: docs
 weight: 13
 url: /el/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
@@ -70,4 +69,4 @@ watermarker.Save(outputFileName);
 ### Τι είδους υδατογραφήματα μπορώ να προσθέσω χρησιμοποιώντας το Groupdocs.Watermark;
 Το Groupdocs.Watermark υποστηρίζει διάφορους τύπους υδατογραφημάτων, συμπεριλαμβανομένων υδατογραφημάτων κειμένου, εικόνας και σχήματος, προσφέροντας εκτενείς επιλογές προσαρμογής για κάθε τύπο.
 ### Πού μπορώ να βρω περισσότερες πληροφορίες σχετικά με το Groupdocs.Watermark για .NET;
- Για περισσότερες πληροφορίες, μπορείτε να επισκεφτείτε το[τεκμηρίωση](https://reference.groupdocs.com/Watermark/net/) και[φόρουμ υποστήριξης](https://forum.groupdocs.com/c/watermark/19).
+ Για περισσότερες πληροφορίες, μπορείτε να επισκεφτείτε το[τεκμηρίωση](https://tutorials.groupdocs.com/Watermark/net/) και[φόρουμ υποστήριξης](https://forum.groupdocs.com/c/watermark/19).

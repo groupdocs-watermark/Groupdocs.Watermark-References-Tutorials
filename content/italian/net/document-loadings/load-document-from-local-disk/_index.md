@@ -3,7 +3,6 @@ title: Carica documento dal disco locale
 linktitle: Carica documento dal disco locale
 second_title: API GroupDocs.Watermark .NET
 description: Proteggi e gestisci i tuoi documenti con Groupdocs per .NET. Segui la nostra guida dettagliata per aggiungere filigrane senza problemi.
-type: docs
 weight: 10
 url: /it/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Conclusione
 Aggiungere filigrane ai tuoi documenti utilizzando Groupdocs per .NET è semplice ed efficiente. Questa guida ti ha guidato attraverso l'intero processo, dalla configurazione dell'ambiente al salvataggio di un documento con filigrana. Con questo potente strumento puoi garantire che i tuoi documenti siano protetti e che la tua proprietà intellettuale sia al sicuro. 
- Per ulteriori dettagli, consultare il[documentazione](https://reference.groupdocs.com/Watermark/net/) e se riscontri problemi, il file[Forum di assistenza](https://forum.groupdocs.com/c/watermark/19) è un luogo eccellente per ricevere assistenza. 
+ Per ulteriori dettagli, consultare il[documentazione](https://tutorials.groupdocs.com/Watermark/net/) e se riscontri problemi, il file[Forum di assistenza](https://forum.groupdocs.com/c/watermark/19) è un luogo eccellente per ricevere assistenza. 
 ## Domande frequenti
 ### Posso utilizzare caratteri personalizzati per le filigrane?
 Sì, Groupdocs supporta i caratteri personalizzati. Puoi specificare qualsiasi carattere installato sul tuo sistema.

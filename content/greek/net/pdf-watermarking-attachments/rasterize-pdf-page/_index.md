@@ -3,7 +3,6 @@ title: Ραστεροποίηση σελίδας PDF
 linktitle: Ραστεροποίηση σελίδας PDF
 second_title: GroupDocs.Watermark .NET API
 description: Βελτιώστε την ασφάλεια των εγγράφων με το GroupDocs για .NET. Προσθέστε υδατογραφήματα σε PDF και άλλες μορφές απρόσκοπτα.
-type: docs
 weight: 28
 url: /el/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---

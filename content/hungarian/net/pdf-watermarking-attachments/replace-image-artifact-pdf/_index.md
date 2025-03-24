@@ -3,7 +3,6 @@ title: Cserélje le a képet egy adott műtermékre a PDF-ben
 linktitle: Cserélje le a képet egy adott műtermékre a PDF-ben
 second_title: GroupDocs.Watermark .NET API
 description: Ezzel az átfogó, lépésenkénti oktatóanyaggal megtudhatja, hogyan cserélheti le a PDF-dokumentumokban lévő képeket a GroupDocs.Watermark for .NET segítségével.
-type: docs
 weight: 38
 url: /hu/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---

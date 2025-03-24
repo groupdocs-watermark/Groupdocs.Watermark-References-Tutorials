@@ -3,7 +3,6 @@ title: Document opslaan in opgegeven stream
 linktitle: Document opslaan in opgegeven stream
 second_title: GroupDocs.Watermark .NET API
 description: Leer met deze stapsgewijze handleiding hoe u een document in een opgegeven stream kunt opslaan met GroupDocs.Watermark voor .NET. Perfect voor ontwikkelaars van alle niveaus.
-type: docs
 weight: 12
 url: /nl/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Ja, GroupDocs Watermark ondersteunt tekst-, afbeelding- en zelfs streepjescodewa
 ### Hoe kan ik een tijdelijke licentie krijgen?
  Een tijdelijke licentie kunt u verkrijgen bij[deze link](https://purchase.groupdocs.com/temporary-license/).
 ### Waar kan ik meer gedetailleerde documentatie vinden?
- Voor meer gedetailleerde documentatie kunt u terecht op[hier](https://reference.groupdocs.com/Watermark/net/).
+ Voor meer gedetailleerde documentatie kunt u terecht op[hier](https://tutorials.groupdocs.com/Watermark/net/).

@@ -3,7 +3,6 @@ title: Ekstrak Informasi XObject dari PDF
 linktitle: Ekstrak Informasi XObject dari PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Buka kekuatan penandaan air dokumen dengan GroupDocs.Watermark untuk .NET. Kelola tanda air di PDF, dokumen Word, dan gambar dengan lancar.
-type: docs
 weight: 25
 url: /id/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---

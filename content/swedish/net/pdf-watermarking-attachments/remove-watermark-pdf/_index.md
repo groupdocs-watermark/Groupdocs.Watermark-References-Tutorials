@@ -3,7 +3,6 @@ title: Ta bort vattenstämpel från PDF
 linktitle: Ta bort vattenstämpel från PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du tar bort vattenstämplar från PDF-filer med GroupDocs.Watermark for .NET. Enkla steg för professionell dokumentredigering.
-type: docs
 weight: 34
 url: /sv/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---

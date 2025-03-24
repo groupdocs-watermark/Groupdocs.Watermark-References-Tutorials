@@ -3,7 +3,6 @@ title: PDF 内の特定のテキスト形式の注釈を削除する
 linktitle: PDF 内の特定のテキスト形式の注釈を削除する
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET を使用して、PDF ドキュメント内の特定のテキスト形式の注釈を削除する方法を学びます。
-type: docs
 weight: 30
 url: /ja/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
@@ -72,7 +71,7 @@ Groupdocs.Watermark for .NET は、PDF ドキュメント内の注釈やその�
 ### Groupdocs.Watermark for .NET に利用できる無料試用版はありますか?
 はい、次から Groupdocs.Watermark for .NET の無料トライアルにアクセスできます。[ここ](https://releases.groupdocs.com/).
 ### Groupdocs.Watermark for .NET のドキュメントはどこで見つけられますか?
-詳細なドキュメントと API リファレンスを見つけることができます。[ここ](https://reference.groupdocs.com/Watermark/net/).
+詳細なドキュメントと API リファレンスを見つけることができます。[ここ](https://tutorials.groupdocs.com/Watermark/net/).
 ### Groupdocs.Watermark に関連する問題や質問についてサポートを受けるにはどうすればよいですか?
 質問や問題は Groupdocs.Watermark フォーラムに投稿できます。[ここ](https://forum.groupdocs.com/c/watermark/19).
 ### Groupdocs.Watermark for .NET の一時ライセンスを購入できますか?

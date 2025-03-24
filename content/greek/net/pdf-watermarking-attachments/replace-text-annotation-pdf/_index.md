@@ -3,7 +3,6 @@ title: Αντικαταστήστε το κείμενο για συγκεκρι�
 linktitle: Αντικαταστήστε το κείμενο για συγκεκριμένο σχολιασμό σε PDF
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αντικαθιστάτε κείμενο σε συγκεκριμένους σχολιασμούς PDF χρησιμοποιώντας το Groupdocs.Watermark για .NET με αυτόν τον περιεκτικό, βήμα προς βήμα εκμάθηση.
-type: docs
 weight: 40
 url: /el/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---

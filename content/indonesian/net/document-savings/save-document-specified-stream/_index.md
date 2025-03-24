@@ -3,7 +3,6 @@ title: Simpan Dokumen ke Aliran Tertentu
 linktitle: Simpan Dokumen ke Aliran Tertentu
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menyimpan dokumen ke aliran tertentu menggunakan GroupDocs.Watermark untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk pengembang dari semua tingkatan.
-type: docs
 weight: 12
 url: /id/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Ya, GroupDocs mendukung tanda air teks, gambar, dan bahkan kode batang.
 ### Bagaimana saya bisa mendapatkan lisensi sementara?
  Anda dapat memperoleh lisensi sementara dari[Link ini](https://purchase.groupdocs.com/temporary-license/).
 ### Di mana saya dapat menemukan dokumentasi yang lebih detail?
- Untuk dokumentasi lebih detail, Anda dapat mengunjungi[Di Sini](https://reference.groupdocs.com/Watermark/net/).
+ Untuk dokumentasi lebih detail, Anda dapat mengunjungi[Di Sini](https://tutorials.groupdocs.com/Watermark/net/).

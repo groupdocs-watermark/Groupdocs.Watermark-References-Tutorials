@@ -3,7 +3,6 @@ title: Vincular encabezado/pie de página en una sección en documentos de Word
 linktitle: Vincular encabezado/pie de página en una sección en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a vincular de manera eficiente encabezados y pies de página dentro de secciones de documentos de Word usando GroupDocs.Watermark para .NET. Gestión documental y seguridad.
-type: docs
 weight: 26
 url: /es/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ Sí, puedes acceder a una prueba gratuita desde[página de lanzamientos](https:/
 ### ¿Hay licencias temporales disponibles para GroupDocs.Watermark para .NET?
  Sí, se pueden obtener licencias temporales del[Página de compra de GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### ¿GroupDocs.Watermark para .NET ofrece documentación para desarrolladores?
- Sí, hay documentación completa disponible[aquí](https://reference.groupdocs.com/Watermark/net/).
+ Sí, hay documentación completa disponible[aquí](https://tutorials.groupdocs.com/Watermark/net/).

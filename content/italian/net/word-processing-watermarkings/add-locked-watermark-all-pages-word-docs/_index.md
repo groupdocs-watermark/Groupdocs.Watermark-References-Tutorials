@@ -3,7 +3,6 @@ title: Aggiungi filigrana bloccata a tutte le pagine in documenti Word
 linktitle: Aggiungi filigrana bloccata a tutte le pagine in documenti Word
 second_title: API GroupDocs.Watermark .NET
 description: Proteggi i tuoi documenti aggiungendo filigrane bloccate utilizzando Groupdocs.Watermark per .NET. Segui la nostra guida passo passo per una facile implementazione.
-type: docs
 weight: 11
 url: /it/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---

@@ -1,7 +1,6 @@
 ---
 title: GroupDocs.Watermark for .NET のチュートリアルと例
 linktitle: .NET 用の GroupDocs.Watermark チュートリアル
-type: docs
 weight: 10
 url: /ja/net/
 description: 包括的な GroupDocs.Watermark for .NET チュートリアルをご覧ください。ステップバイステップのガイドを使用して、さまざまなドキュメント形式でウォーターマークを追加、管理、保護する方法を学びます。

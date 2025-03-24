@@ -3,7 +3,6 @@ title: Aggiungi filigrana bloccata a pagine specifiche in documenti Word
 linktitle: Aggiungi filigrana bloccata a pagine specifiche in documenti Word
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere una filigrana bloccata a pagine specifiche nei documenti Word utilizzando GroupDocs.Watermark per .NET con la nostra semplice guida passo passo.
-type: docs
 weight: 12
 url: /it/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## Conclusione
 Congratulazioni! Hai aggiunto correttamente una filigrana bloccata a pagine specifiche in un documento Word utilizzando GroupDocs.Watermark per .NET. Questo tutorial ha coperto tutti i passaggi essenziali dal caricamento del documento al salvataggio del file con filigrana. Seguendo questi passaggi, puoi assicurarti che i tuoi documenti abbiano una filigrana sicura, proteggendo i tuoi contenuti da modifiche e utilizzi non autorizzati.
- Per ulteriori informazioni è possibile fare riferimento al[Documentazione GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/) . Se hai domande o hai bisogno di ulteriore assistenza, non esitare a visitare il[Forum di assistenza](https://forum.groupdocs.com/c/watermark/19).
+ Per ulteriori informazioni è possibile fare riferimento al[Documentazione GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/) . Se hai domande o hai bisogno di ulteriore assistenza, non esitare a visitare il[Forum di assistenza](https://forum.groupdocs.com/c/watermark/19).
 ## Domande frequenti
 ### Cos'è GroupDocs.Watermark per .NET?
 GroupDocs.Watermark per .NET è una potente libreria che consente agli sviluppatori di aggiungere filigrane a vari tipi di documenti, inclusi Word, PDF, Excel e altro.

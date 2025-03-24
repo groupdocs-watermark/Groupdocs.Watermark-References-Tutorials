@@ -3,7 +3,6 @@ title: PDF の透かしと添付ファイル
 linktitle: PDF の透かしと添付ファイル
 second_title: GroupDocs.Watermark .NET API
 description: PDF の透かしと添付ファイルに関する GroupDocs.Watermark for .NET のチュートリアルをご覧ください。 PDF のセキュリティとブランド化を強化するための段階的な方法を学びます。
-type: docs
 weight: 25
 url: /ja/net/pdf-watermarking-attachments/
 ---

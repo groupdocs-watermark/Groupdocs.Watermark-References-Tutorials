@@ -3,7 +3,6 @@ title: Kép hozzáadása vízjelhez
 linktitle: Kép hozzáadása vízjelhez
 second_title: GroupDocs.Watermark .NET API
 description: Részletes, lépésenkénti oktatóanyagunkból megtudhatja, hogyan adhat hozzá képes vízjeleket dokumentumaihoz a GroupDocs.Watermark for .NET segítségével.
-type: docs
 weight: 11
 url: /hu/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ Igen, a GroupDocs.Watermark kompatibilis a .NET-keretrendszerrel és a .NET Core
 ### Lehetséges több vízjelet hozzáadni egyetlen dokumentumhoz?
  Teljesen! Több vízjelet is hozzáadhat a`Add` módszert többször különböző vízjelpéldányokkal.
 ### Hol találok további példákat és dokumentációt?
- További példákért és részletes dokumentációért keresse fel a[GroupDocs.Watermark dokumentáció](https://reference.groupdocs.com/Watermark/net/).
+ További példákért és részletes dokumentációért keresse fel a[GroupDocs.Watermark dokumentáció](https://tutorials.groupdocs.com/Watermark/net/).

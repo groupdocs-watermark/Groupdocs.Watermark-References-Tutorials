@@ -3,7 +3,6 @@ title: PDF에서 특정 텍스트 형식이 있는 XObject 제거
 linktitle: PDF에서 특정 텍스트 형식이 있는 XObject 제거
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 PDF에서 특정 텍스트 형식이 포함된 XObject를 쉽게 제거할 수 있습니다. 원활한 문서 조작을 위해 가이드를 따르세요.
-type: docs
 weight: 36
 url: /ko/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ foreach (PdfPage page in pdfContent.Pages)
 이로써 PDF 문서에서 특정 텍스트 형식을 가진 XObject를 제거하는 프로세스가 완료되었습니다.
 
 ## 결론
-다음 단계를 수행하면 .NET용 GroupDocs.Watermark를 사용하여 PDF 문서에서 특정 텍스트 형식의 XObject를 효율적으로 제거할 수 있습니다. 이 강력한 라이브러리는 워터마킹 작업을 단순화할 뿐만 아니라 문서 조작을 위한 강력한 기능도 제공합니다. 더 자세한 문서를 보려면 다음을 방문하세요.[.NET 문서용 GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/) . 문제가 발생하거나 질문이 있는 경우,[지원 포럼](https://forum.groupdocs.com/c/watermark/19) 도움을 구하기에 좋은 곳입니다.
+다음 단계를 수행하면 .NET용 GroupDocs.Watermark를 사용하여 PDF 문서에서 특정 텍스트 형식의 XObject를 효율적으로 제거할 수 있습니다. 이 강력한 라이브러리는 워터마킹 작업을 단순화할 뿐만 아니라 문서 조작을 위한 강력한 기능도 제공합니다. 더 자세한 문서를 보려면 다음을 방문하세요.[.NET 문서용 GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/) . 문제가 발생하거나 질문이 있는 경우,[지원 포럼](https://forum.groupdocs.com/c/watermark/19) 도움을 구하기에 좋은 곳입니다.
 ## FAQ
 ### 다른 텍스트 형식을 사용하여 XObject를 제거할 수 있나요?
 예, 코드를 수정하여 글꼴 크기, 글꼴 스타일 또는 색상과 같은 다양한 텍스트 서식 속성을 확인할 수 있습니다.

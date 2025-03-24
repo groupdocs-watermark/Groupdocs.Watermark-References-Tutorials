@@ -3,7 +3,6 @@ title: Προσθήκη υδατογραφήματος σε συγκεκριμέ
 linktitle: Προσθήκη υδατογραφήματος σε συγκεκριμένες σελίδες στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα σε συγκεκριμένες σελίδες σε έγγραφα του Word χωρίς κόπο χρησιμοποιώντας το υδατογράφημα Groupdocs για .NET. Βελτιώστε την ασφάλεια των εγγράφων και την επωνυμία.
-type: docs
 weight: 18
 url: /el/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---

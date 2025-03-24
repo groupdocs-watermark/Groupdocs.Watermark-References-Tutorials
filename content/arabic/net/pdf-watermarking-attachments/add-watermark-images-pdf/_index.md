@@ -3,7 +3,6 @@ title: إضافة علامة مائية إلى الصور في PDF
 linktitle: إضافة علامة مائية إلى الصور في PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعلم كيفية إضافة علامات مائية إلى الصور في مستندات PDF باستخدام GroupDocs.Watermark لـ .NET من خلال برنامجنا التعليمي المفصل خطوة بخطوة. تأمين ملفات PDF الخاصة بك بسهولة.
-type: docs
 weight: 19
 url: /ar/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ GroupDocs.Watermark for .NET هي مكتبة شاملة تسمح للمطوري�
 ### هل أحتاج إلى ترخيص لاستخدام GroupDocs.Watermark لـ .NET؟
  نعم، الترخيص مطلوب. يمكنك الحصول على[ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/) لأغراض التقييم.
 ### أين يمكنني العثور على مزيد من الوثائق حول GroupDocs.Watermark لـ .NET؟
- يمكنك العثور على وثائق شاملة عن[صفحة وثائق GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ يمكنك العثور على وثائق شاملة عن[صفحة وثائق GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

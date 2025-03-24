@@ -3,7 +3,6 @@ title: Ladda dokument med specifikt format
 linktitle: Ladda dokument med specifikt format
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du laddar och vattenstämplar dokument med hjälp av Groupdocs Watermark for .NET med denna steg-för-steg-guide. Skydda och märk ditt innehåll utan ansträngning.
-type: docs
 weight: 12
 url: /sv/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Slutsats
-Vattenmärkning av dokument är ett viktigt steg för att skydda ditt innehåll, och Groupdocs.Watermark för .NET gör denna process enkel och effektiv. Genom att följa den här guiden kan du enkelt ladda och applicera vattenstämplar på dina dokument, vilket säkerställer deras säkerhet och korrekt varumärke. För ytterligare information och avancerade alternativ, se[Groupdocs.Watermark för .NET-dokumentation](https://reference.groupdocs.com/Watermark/net/).
+Vattenmärkning av dokument är ett viktigt steg för att skydda ditt innehåll, och Groupdocs.Watermark för .NET gör denna process enkel och effektiv. Genom att följa den här guiden kan du enkelt ladda och applicera vattenstämplar på dina dokument, vilket säkerställer deras säkerhet och korrekt varumärke. För ytterligare information och avancerade alternativ, se[Groupdocs.Watermark för .NET-dokumentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ's
 ### Kan jag använda den här metoden för olika dokumentformat?
  Ja, Groupdocs har stöd för olika dokumentformat. Du måste justera`LoadOptions` följaktligen.

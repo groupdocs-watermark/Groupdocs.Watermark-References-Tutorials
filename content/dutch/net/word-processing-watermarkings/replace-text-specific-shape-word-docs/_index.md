@@ -3,7 +3,6 @@ title: Vervang tekst voor specifieke vorm in Word-documenten
 linktitle: Vervang tekst voor specifieke vorm in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u tekst voor specifieke vormen in Word-documenten vervangt met GroupDocs.Watermark voor .NET. Volg onze stap-voor-stap handleiding.
-type: docs
 weight: 35
 url: /nl/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---

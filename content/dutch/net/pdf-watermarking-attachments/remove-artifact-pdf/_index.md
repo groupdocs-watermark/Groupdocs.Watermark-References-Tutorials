@@ -3,7 +3,6 @@ title: Artefact uit PDF verwijderen
 linktitle: Artefact uit PDF verwijderen
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u moeiteloos artefacten uit PDF-documenten kunt verwijderen met GroupDocs.Watermark voor .NET. Beheers het proces stap voor stap met onze uitgebreide tutorial.
-type: docs
 weight: 31
 url: /nl/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
@@ -66,4 +65,4 @@ Ja, GroupDocs.Watermark voor .NET ondersteunt verschillende documentformaten, wa
 ### Kan ik een tijdelijke licentie kopen voor GroupDocs.Watermark voor .NET?
  Ja, u kunt een tijdelijke licentie verkrijgen via de meegeleverde licentie[bron](https://purchase.groupdocs.com/temporary-license/).
 ### Zijn er uitgebreide documentatiebronnen beschikbaar voor GroupDocs.Watermark voor .NET?
- Ja, u kunt de beschikbare gedetailleerde documentatie raadplegen[hier](https://reference.groupdocs.com/Watermark/net/) voor gedegen begeleiding en inzichten.
+ Ja, u kunt de beschikbare gedetailleerde documentatie raadplegen[hier](https://tutorials.groupdocs.com/Watermark/net/) voor gedegen begeleiding en inzichten.

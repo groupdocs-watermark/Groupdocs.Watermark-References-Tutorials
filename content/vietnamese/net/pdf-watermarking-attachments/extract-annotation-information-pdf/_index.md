@@ -3,7 +3,6 @@ title: Trích xuất thông tin chú thích từ PDF
 linktitle: Trích xuất thông tin chú thích từ PDF
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách trích xuất thông tin chú thích từ tài liệu PDF bằng GroupDocs.Watermark cho .NET trong hướng dẫn chi tiết từng bước này.
-type: docs
 weight: 23
 url: /vi/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
@@ -103,7 +102,7 @@ using (StreamWriter writer = new StreamWriter(outputFileName))
 ```
 ## Phần kết luận
 Trích xuất thông tin chú thích từ tài liệu PDF bằng GroupDocs.Watermark cho .NET là một quá trình đơn giản có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể dễ dàng tích hợp chức năng này vào dự án của mình và tự động trích xuất dữ liệu chú thích có giá trị.
- Cho dù bạn đang quản lý khối lượng lớn tệp PDF hay chỉ cần trích xuất thông tin cụ thể, GroupDocs.Watermark dành cho .NET đều cung cấp giải pháp đáng tin cậy và hiệu quả. Đừng quên kiểm tra[tài liệu](https://reference.groupdocs.com/Watermark/net/) để biết thêm các tính năng nâng cao và tùy chọn tùy chỉnh.
+ Cho dù bạn đang quản lý khối lượng lớn tệp PDF hay chỉ cần trích xuất thông tin cụ thể, GroupDocs.Watermark dành cho .NET đều cung cấp giải pháp đáng tin cậy và hiệu quả. Đừng quên kiểm tra[tài liệu](https://tutorials.groupdocs.com/Watermark/net/) để biết thêm các tính năng nâng cao và tùy chọn tùy chỉnh.
 ## Câu hỏi thường gặp
 ### GroupDocs.Watermark cho .NET là gì?
 GroupDocs.Watermark cho .NET là một thư viện toàn diện cho phép các nhà phát triển thêm, tìm kiếm và xóa hình mờ khỏi các định dạng tài liệu khác nhau, bao gồm PDF, tài liệu Word và hình ảnh.

@@ -3,7 +3,6 @@ title: Szöveg cseréje az adott megjegyzéshez PDF-ben
 linktitle: Szöveg cseréje az adott megjegyzéshez PDF-ben
 second_title: GroupDocs.Watermark .NET API
 description: Ezzel az átfogó, lépésenkénti oktatóanyaggal megtudhatja, hogyan cserélhet le szöveget adott PDF-jegyzetekben a Groupdocs.Watermark for .NET segítségével.
-type: docs
 weight: 40
 url: /hu/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---

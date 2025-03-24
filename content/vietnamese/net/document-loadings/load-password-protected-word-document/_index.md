@@ -3,7 +3,6 @@ title: Tải tài liệu Word được bảo vệ bằng mật khẩu
 linktitle: Tải tài liệu Word được bảo vệ bằng mật khẩu
 second_title: API GroupDocs.Watermark .NET
 description: Dễ dàng thêm hình mờ vào tài liệu Word được bảo vệ bằng mật khẩu bằng GroupDocs.Watermark cho .NET với hướng dẫn từng bước toàn diện của chúng tôi.
-type: docs
 weight: 14
 url: /vi/net/document-loadings/load-password-protected-word-document/
 ---

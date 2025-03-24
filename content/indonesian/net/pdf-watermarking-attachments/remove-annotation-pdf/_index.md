@@ -3,7 +3,6 @@ title: Hapus Anotasi dari PDF
 linktitle: Hapus Anotasi dari PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus anotasi dari PDF menggunakan GroupDocs.Watermark untuk .NET. Tingkatkan keterbacaan dokumen dengan mudah.
-type: docs
 weight: 29
 url: /id/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---

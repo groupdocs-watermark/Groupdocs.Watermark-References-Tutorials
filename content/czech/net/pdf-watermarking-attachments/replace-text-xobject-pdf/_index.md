@@ -3,7 +3,6 @@ title: Nahradit text za konkrétní XObject v PDF
 linktitle: Nahradit text za konkrétní XObject v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Efektivně nahraďte text v PDF pomocí GroupDocs.Watermark for .NET. Bezproblémově integrujte vodoznak do svých aplikací .NET.
-type: docs
 weight: 44
 url: /cs/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
@@ -68,6 +67,6 @@ Ano, GroupDocs.Watermark for .NET podporuje širokou škálu formátů dokument�
 ### Jak mohu získat dočasné licencování pro GroupDocs.Watermark for .NET?
  Dočasné licence lze získat od[dočasná licenční stránka](https://purchase.groupdocs.com/temporary-license/).
 ### Kde najdu dokumentaci k GroupDocs.Watermark for .NET?
- Podrobná dokumentace je k dispozici na[dokumentační stránku](https://reference.groupdocs.com/Watermark/net/).
+ Podrobná dokumentace je k dispozici na[dokumentační stránku](https://tutorials.groupdocs.com/Watermark/net/).
 ### Jaké možnosti podpory jsou k dispozici pro GroupDocs.Watermark for .NET?
  Podporu a pomoc můžete hledat na fóru komunity GroupDocs[tady](https://forum.groupdocs.com/c/watermark/19).

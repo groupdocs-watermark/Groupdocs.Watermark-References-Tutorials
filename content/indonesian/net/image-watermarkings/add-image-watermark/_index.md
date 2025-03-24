@@ -3,7 +3,6 @@ title: Tambahkan Tanda Air Gambar
 linktitle: Tambahkan Tanda Air Gambar
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air gambar ke dokumen Anda menggunakan GroupDocs.Watermark untuk .NET dengan tutorial langkah demi langkah kami yang mendetail.
-type: docs
 weight: 11
 url: /id/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ Ya, GroupDocs.Watermark kompatibel dengan .NET Framework dan .NET Core.
 ### Apakah mungkin menambahkan banyak tanda air ke satu dokumen?
  Sangat! Anda dapat menambahkan beberapa tanda air dengan memanggil`Add` metode beberapa kali dengan contoh tanda air yang berbeda.
 ### Di mana saya dapat menemukan lebih banyak contoh dan dokumentasi?
- Untuk contoh lebih lanjut dan dokumentasi terperinci, kunjungi[Dokumentasi GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ Untuk contoh lebih lanjut dan dokumentasi terperinci, kunjungi[Dokumentasi GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

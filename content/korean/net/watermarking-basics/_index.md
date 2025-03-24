@@ -3,7 +3,6 @@ title: 워터마킹 기본 사항
 linktitle: 워터마킹 기본 사항
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark 튜토리얼을 찾아 이미지와 텍스트 워터마크를 손쉽게 추가하세요. 따라하기 쉬운 가이드로 문서를 보호하세요.
-type: docs
 weight: 20
 url: /ko/net/watermarking-basics/
 ---

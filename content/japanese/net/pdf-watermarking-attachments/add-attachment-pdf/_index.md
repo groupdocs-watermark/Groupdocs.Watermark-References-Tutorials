@@ -3,7 +3,6 @@ title: PDFに添付ファイルを追加
 linktitle: PDFに添付ファイルを追加
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark を使用して .NET ドキュメント管理機能を強化し、シームレスな透かしと添付ファイルの処理を実現します。
-type: docs
 weight: 12
 url: /ja/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---

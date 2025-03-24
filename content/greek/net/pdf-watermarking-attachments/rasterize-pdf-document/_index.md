@@ -3,7 +3,6 @@ title: Ραστεροποίηση εγγράφου PDF
 linktitle: Ραστεροποίηση εγγράφου PDF
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να κάνετε ραστεροποίηση εγγράφων PDF χρησιμοποιώντας το GroupDocs.Watermark για .NET. Βελτιώστε την ασφάλεια των εγγράφων και την οπτική απήχηση χωρίς κόπο.
-type: docs
 weight: 27
 url: /el/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---

@@ -3,7 +3,6 @@ title: Add Locked Watermark to Specific Pages in Word Docs
 linktitle: Add Locked Watermark to Specific Pages in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add a locked watermark to specific pages in Word documents using GroupDocs.Watermark for .NET with our easy step-by-step guide.
-type: docs
 weight: 12
 url: /net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## Conclusion
 Congratulations! You've successfully added a locked watermark to specific pages in a Word document using GroupDocs.Watermark for .NET. This tutorial covered all the essential steps from loading the document to saving the watermarked file. By following these steps, you can ensure that your documents are securely watermarked, protecting your content from unauthorized editing and use.
-For more information, you can refer to the [GroupDocs.Watermark documentation](https://reference.groupdocs.com/Watermark/net/). If you have any questions or need further assistance, feel free to visit the [support forum](https://forum.groupdocs.com/c/watermark/19).
+For more information, you can refer to the [GroupDocs.Watermark documentation](https://tutorials.groupdocs.com/Watermark/net/). If you have any questions or need further assistance, feel free to visit the [support forum](https://forum.groupdocs.com/c/watermark/19).
 ## FAQ's
 ### What is GroupDocs.Watermark for .NET?
 GroupDocs.Watermark for .NET is a powerful library that allows developers to add watermarks to various types of documents, including Word, PDF, Excel, and more.

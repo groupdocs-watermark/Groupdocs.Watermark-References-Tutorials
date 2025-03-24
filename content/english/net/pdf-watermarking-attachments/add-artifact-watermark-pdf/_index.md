@@ -3,7 +3,6 @@ title: Add Artifact Watermark to PDF
 linktitle: Add Artifact Watermark to PDF
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add artifact watermarks to PDF files effortlessly using Groupdocs.Watermark for .NET. Protect your documents with eased.
-type: docs
 weight: 11
 url: /net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
@@ -60,7 +59,7 @@ watermarker.Save(outputFileName);
 In this tutorial, we've learned how to add artifact watermarks to PDF files using Groupdocs.Watermark for .NET. By following these steps, you can seamlessly integrate watermarking functionality into your .NET applications, ensuring the security and integrity of your documents.
 ## FAQ's
 ### Can I customize the appearance of the text watermark?
-Yes, you can customize various aspects such as font, size, color, and alignment of the text watermark according to your preferences.
+Yes, you can customize various aspects such as font, size, color, and alignment of the text watermark according to your ptutorialss.
 ### Does Groupdocs.Watermark support adding watermarks to other document formats?
 Yes, Groupdocs.Watermark supports adding watermarks to a wide range of document formats including Word, Excel, PowerPoint, and more.
 ### Is there a trial version available for Groupdocs.Watermark for .NET?

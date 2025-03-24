@@ -3,7 +3,6 @@ title: Sectie-eigenschappen ophalen in Word-documenten
 linktitle: Sectie-eigenschappen ophalen in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u sectie-eigenschappen uit Word-documenten kunt extraheren met behulp van Groupdocs voor .NET. Verbeter moeiteloos uw mogelijkheden voor documentmanipulatie.
-type: docs
 weight: 23
 url: /nl/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---

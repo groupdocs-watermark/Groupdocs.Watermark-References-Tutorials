@@ -3,7 +3,6 @@ title: Сохранить документ в указанное место
 linktitle: Сохранить документ в указанное место
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как легко добавлять водяные знаки в ваши документы с помощью GroupDocs.Watermark для .NET, с помощью этого пошагового руководства. Повысьте безопасность документов.
-type: docs
 weight: 11
 url: /ru/net/document-savings/save-document-specified-location/
 ---

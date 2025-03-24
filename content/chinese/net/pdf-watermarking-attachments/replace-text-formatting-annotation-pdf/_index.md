@@ -3,7 +3,6 @@ title: 将文本替换为 PDF 中的注释格式
 linktitle: 将文本替换为 PDF 中的注释格式
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs for .NET 增强文档安全性。了解如何轻松地用 PDF 文件中的注释格式替换文本。
-type: docs
 weight: 41
 url: /zh/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---

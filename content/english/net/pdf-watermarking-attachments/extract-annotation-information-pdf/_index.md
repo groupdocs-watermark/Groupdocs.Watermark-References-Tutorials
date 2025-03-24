@@ -3,7 +3,6 @@ title: Extract Annotation Information from PDF
 linktitle: Extract Annotation Information from PDF
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to extract annotation information from PDF documents using GroupDocs.Watermark for .NET in this detailed, step-by-step guide.
-type: docs
 weight: 23
 url: /net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
@@ -23,7 +22,7 @@ using System;
 using System.IO;
 ```
 ## Step 1: Set Up Your Project
-First, let's set up our project in Visual Studio. Create a new Console App (.NET Core) project. Once your project is created, you need to add a reference to the GroupDocs.Watermark for .NET library.
+First, let's set up our project in Visual Studio. Create a new Console App (.NET Core) project. Once your project is created, you need to add a tutorials to the GroupDocs.Watermark for .NET library.
 1. Open the NuGet Package Manager.
 2. Search for `GroupDocs.Watermark`.
 3. Install the `GroupDocs.Watermark` package.
@@ -103,7 +102,7 @@ using (StreamWriter writer = new StreamWriter(outputFileName))
 ```
 ## Conclusion
 Extracting annotation information from PDF documents using GroupDocs.Watermark for .NET is a straightforward process that can save you a lot of time and effort. By following the steps outlined in this guide, you can easily integrate this functionality into your projects and automate the extraction of valuable annotation data.
-Whether you're managing large volumes of PDFs or simply need to extract specific information, GroupDocs.Watermark for .NET provides a reliable and efficient solution. Don't forget to check out the [documentation](https://reference.groupdocs.com/Watermark/net/) for more advanced features and customization options.
+Whether you're managing large volumes of PDFs or simply need to extract specific information, GroupDocs.Watermark for .NET provides a reliable and efficient solution. Don't forget to check out the [documentation](https://tutorials.groupdocs.com/Watermark/net/) for more advanced features and customization options.
 ## FAQ's
 ### What is GroupDocs.Watermark for .NET?
 GroupDocs.Watermark for .NET is a comprehensive library that allows developers to add, search, and remove watermarks from various document formats, including PDFs, Word documents, and images.

@@ -3,7 +3,6 @@ title: Word Belgelerindeki Şekil Özelliklerini Değiştirme
 linktitle: Word Belgelerindeki Şekil Özelliklerini Değiştirme
 second_title: GroupDocs.Watermark .NET API'si
 description: Word belgelerinizi GroupDocs için Watermark ile koruyun. Gelişmiş güvenlik için şekil özelliklerini kolayca değiştirin.
-type: docs
 weight: 27
 url: /tr/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---

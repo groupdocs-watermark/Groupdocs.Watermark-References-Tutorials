@@ -3,7 +3,6 @@ title: ストリームから画像透かしを追加
 linktitle: ストリームから画像透かしを追加
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用してドキュメントに画像のウォーターマークを追加する方法を学びます。ウォーターマークをシームレスに統合するには、ステップバイステップのガイドに従ってください。
-type: docs
 weight: 12
 url: /ja/net/image-watermarkings/add-image-watermark-from-stream/
 ---

@@ -3,7 +3,6 @@ title: PDF에 인쇄 전용 주석 워터마크 추가
 linktitle: PDF에 인쇄 전용 주석 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 PDF에 인쇄 전용 주석 워터마크를 추가하는 방법을 알아보세요. 손쉽게 문서 보안과 브랜딩을 강화하세요.
-type: docs
 weight: 13
 url: /ko/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---

@@ -3,7 +3,6 @@ title: छवि वॉटरमार्क जोड़ें
 linktitle: छवि वॉटरमार्क जोड़ें
 second_title: GroupDocs.Watermark .NET API
 description: हमारे विस्तृत, चरण-दर-चरण ट्यूटोरियल से जानें कि .NET के लिए GroupDocs.Watermark का उपयोग करके अपने दस्तावेज़ों में छवि वॉटरमार्क कैसे जोड़ें।
-type: docs
 weight: 11
 url: /hi/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ GroupDocs.Watermark पीडीएफ, DOCX, PPTX, XLSX और JPEG और PNG 
 ### क्या एक ही दस्तावेज़ में एकाधिक वॉटरमार्क जोड़ना संभव है?
  बिल्कुल! आप कॉल करके एकाधिक वॉटरमार्क जोड़ सकते हैं`Add` विभिन्न वॉटरमार्क उदाहरणों के साथ कई बार विधि।
 ### मुझे और अधिक उदाहरण और दस्तावेज़ कहां मिल सकते हैं?
- अधिक उदाहरणों और विस्तृत दस्तावेज़ीकरण के लिए, पर जाएँ[GroupDocs.वॉटरमार्क दस्तावेज़ीकरण](https://reference.groupdocs.com/Watermark/net/).
+ अधिक उदाहरणों और विस्तृत दस्तावेज़ीकरण के लिए, पर जाएँ[GroupDocs.वॉटरमार्क दस्तावेज़ीकरण](https://tutorials.groupdocs.com/Watermark/net/).

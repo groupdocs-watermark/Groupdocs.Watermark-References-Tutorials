@@ -3,7 +3,6 @@ title: Cari Gambar di Lampiran PDF
 linktitle: Cari Gambar di Lampiran PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Cari gambar secara efisien dalam lampiran PDF menggunakan GroupDocs.Watermark untuk .NET. Sederhanakan proses pengelolaan tanda air Anda dengan mudah.
-type: docs
 weight: 46
 url: /id/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---

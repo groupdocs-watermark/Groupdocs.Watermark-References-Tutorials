@@ -3,7 +3,6 @@ title: PDF ページをラスタライズする
 linktitle: PDF ページをラスタライズする
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs for .NET でドキュメントのセキュリティを強化します。 PDF やその他の形式にウォーターマークをシームレスに追加します。
-type: docs
 weight: 28
 url: /ja/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---

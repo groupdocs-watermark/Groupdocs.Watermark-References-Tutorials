@@ -3,7 +3,6 @@ title: PDF의 아티팩트에 대한 서식으로 텍스트 바꾸기
 linktitle: PDF의 아티팩트에 대한 서식으로 텍스트 바꾸기
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 PDF 문서의 아티팩트 서식으로 텍스트를 바꾸는 방법을 알아보세요. 손쉽게 문서 관리를 개선하세요.
-type: docs
 weight: 43
 url: /ko/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---

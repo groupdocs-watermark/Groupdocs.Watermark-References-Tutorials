@@ -3,7 +3,6 @@ title: Uložit dokument do určeného umístění
 linktitle: Uložit dokument do určeného umístění
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak snadno přidávat vodoznaky do dokumentů pomocí GroupDocs.Watermark for .NET, pomocí tohoto podrobného průvodce. Zvyšte zabezpečení dokumentů.
-type: docs
 weight: 11
 url: /cs/net/document-savings/save-document-specified-location/
 ---

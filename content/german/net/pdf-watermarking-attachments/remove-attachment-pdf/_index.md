@@ -3,7 +3,6 @@ title: Anhang aus PDF entfernen
 linktitle: Anhang aus PDF entfernen
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET ganz einfach Anhänge aus PDF-Dokumenten entfernen. Steigern Sie die Effizienz Ihres Dokumentenmanagements.
-type: docs
 weight: 33
 url: /de/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

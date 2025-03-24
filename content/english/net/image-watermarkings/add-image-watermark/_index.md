@@ -3,7 +3,6 @@ title: Add Image Watermark
 linktitle: Add Image Watermark
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add image watermarks to your documents using GroupDocs.Watermark for .NET with our detailed, step-by-step tutorial.
-type: docs
 weight: 11
 url: /net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ You can obtain a temporary license from the [GroupDocs website](https://purchase
 ### Is it possible to add multiple watermarks to a single document?
 Absolutely! You can add multiple watermarks by calling the `Add` method multiple times with different watermark instances.
 ### Where can I find more examples and documentation?
-For more examples and detailed documentation, visit the [GroupDocs.Watermark documentation](https://reference.groupdocs.com/Watermark/net/).
+For more examples and detailed documentation, visit the [GroupDocs.Watermark documentation](https://tutorials.groupdocs.com/Watermark/net/).

@@ -3,7 +3,6 @@ title: ลบคำอธิบายประกอบออกจาก PDF
 linktitle: ลบคำอธิบายประกอบออกจาก PDF
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีลบคำอธิบายประกอบออกจาก PDF โดยใช้ GroupDocs.Watermark สำหรับ .NET ปรับปรุงความสามารถในการอ่านเอกสารได้อย่างง่ายดาย
-type: docs
 weight: 29
 url: /th/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---

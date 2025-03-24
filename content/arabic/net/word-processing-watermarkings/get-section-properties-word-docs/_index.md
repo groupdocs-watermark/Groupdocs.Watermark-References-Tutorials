@@ -3,7 +3,6 @@ title: احصل على خصائص القسم في مستندات Word
 linktitle: احصل على خصائص القسم في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية استخراج خصائص القسم من مستندات Word باستخدام Groupdocs لـ .NET. عزز قدرات معالجة المستندات الخاصة بك دون عناء.
-type: docs
 weight: 23
 url: /ar/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---

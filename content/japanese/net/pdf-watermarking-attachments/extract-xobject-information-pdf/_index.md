@@ -3,7 +3,6 @@ title: PDF から XObject 情報を抽出する
 linktitle: PDF から XObject 情報を抽出する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、ドキュメントの透かし機能を最大限に活用します。 PDF、Word 文書、画像の透かしをシームレスに管理します。
-type: docs
 weight: 25
 url: /ja/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---

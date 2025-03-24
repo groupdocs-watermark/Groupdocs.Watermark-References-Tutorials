@@ -3,7 +3,6 @@ title: Tautkan Header/Footer di Bagian di Word Docs
 linktitle: Tautkan Header/Footer di Bagian di Word Docs
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menautkan header dan footer secara efisien dalam bagian dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Manajemen dan keamanan dokumen.
-type: docs
 weight: 26
 url: /id/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ Ya, Anda dapat mengakses uji coba gratis dari[halaman rilis](https://releases.gr
 ### Apakah lisensi sementara tersedia untuk GroupDocs.Watermark untuk .NET?
  Ya, izin sementara dapat diperoleh dari[Halaman pembelian GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### Apakah GroupDocs.Watermark for .NET menawarkan dokumentasi untuk pengembang?
- Ya, dokumentasi lengkap tersedia[Di Sini](https://reference.groupdocs.com/Watermark/net/).
+ Ya, dokumentasi lengkap tersedia[Di Sini](https://tutorials.groupdocs.com/Watermark/net/).

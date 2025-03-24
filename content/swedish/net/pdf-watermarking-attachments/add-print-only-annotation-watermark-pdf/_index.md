@@ -3,7 +3,6 @@ title: Lägg till Skriv ut endast anteckningsvattenstämpel till PDF
 linktitle: Lägg till Skriv ut endast anteckningsvattenstämpel till PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar med endast utskriftskommentarer till PDF-filer med GroupDocs.Watermark for .NET. Förbättra dokumentsäkerhet och varumärke utan ansträngning.
-type: docs
 weight: 13
 url: /sv/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---

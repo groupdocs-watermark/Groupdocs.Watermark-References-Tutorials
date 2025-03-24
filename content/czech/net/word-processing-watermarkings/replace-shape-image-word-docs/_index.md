@@ -3,7 +3,6 @@ title: Nahradit obraz tvaru v dokumentech Word
 linktitle: Nahradit obraz tvaru v dokumentech Word
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak programově nahradit obrázky tvarů v dokumentech aplikace Word pomocí GroupDocs.Watermark for .NET. Bez námahy zjednodušte úkoly manipulace s dokumenty.
-type: docs
 weight: 33
 url: /cs/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---

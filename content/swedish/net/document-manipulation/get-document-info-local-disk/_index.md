@@ -3,7 +3,6 @@ title: Få dokumentinformation från lokal disk
 linktitle: Få dokumentinformation från lokal disk
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till, tar bort och extraherar vattenstämplar i dokument med hjälp av GroupDocs Watermark for .NET med den här omfattande steg-för-steg-guiden.
-type: docs
 weight: 11
 url: /sv/net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /sv/net/document-manipulation/get-document-info-local-disk/
 Välkommen till den ultimata guiden om hur du använder GroupDocs.Watermark för .NET! Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här artikeln att gå igenom det väsentliga för att vattenmärka dina dokument med detta kraftfulla verktyg. I slutet kommer du att vara proffs på att bädda in vattenstämplar i dina dokument, och se till att de är skyddade och märkta enligt dina specifikationer.
 ## Förutsättningar
 Innan du dyker in i steg-för-steg-guiden finns det några förutsättningar som du måste uppfylla:
-1.  .NET Framework: Se till att du har .NET Framework installerat på ditt system. GroupDocs.Watermark for .NET är kompatibel med olika versioner av .NET Framework, så kontrollera[dokumentation](https://reference.groupdocs.com/Watermark/net/) för kompatibilitetsinformation.
+1.  .NET Framework: Se till att du har .NET Framework installerat på ditt system. GroupDocs.Watermark for .NET är kompatibel med olika versioner av .NET Framework, så kontrollera[dokumentation](https://tutorials.groupdocs.com/Watermark/net/) för kompatibilitetsinformation.
 2.  GroupDocs.Watermark for .NET Library: Ladda ner och installera den senaste versionen från[nedladdningssida](https://releases.groupdocs.com/Watermark/net/).
 3. Utvecklingsmiljö: Du bör ha en utvecklingsmiljö inrättad. Visual Studio är ett populärt val för .NET-utveckling.
 4. Grundläggande C#-kunskap: Att förstå grunderna i C#-programmering hjälper dig att följa exemplen.
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
  Detta steg innebär att använda`GetWatermarks`metod för att hämta alla vattenstämplar i ett dokument. Du kan sedan iterera genom listan med vattenstämplar och inspektera deras egenskaper eller utföra ytterligare åtgärder efter behov.
 ## Slutsats
- Grattis! Du har nu lärt dig hur du använder GroupDocs.Watermark för .NET för att lägga till, ta bort och extrahera vattenstämplar från dina dokument. Med dessa färdigheter kan du skydda och varumärkesmärka dina dokument effektivt. Kom ihåg att[dokumentation](https://reference.groupdocs.com/Watermark/net/) finns alltid där om du behöver mer detaljerad information eller avancerad funktionalitet.
+ Grattis! Du har nu lärt dig hur du använder GroupDocs.Watermark för .NET för att lägga till, ta bort och extrahera vattenstämplar från dina dokument. Med dessa färdigheter kan du skydda och varumärkesmärka dina dokument effektivt. Kom ihåg att[dokumentation](https://tutorials.groupdocs.com/Watermark/net/) finns alltid där om du behöver mer detaljerad information eller avancerad funktionalitet.
 ## FAQ's
 ### Kan jag använda GroupDocs.Watermark för .NET med någon .NET-version?
- Ja, GroupDocs.Watermark för .NET är kompatibelt med olika .NET Framework-versioner. Kolla[dokumentation](https://reference.groupdocs.com/Watermark/net/) för detaljer.
+ Ja, GroupDocs.Watermark för .NET är kompatibelt med olika .NET Framework-versioner. Kolla[dokumentation](https://tutorials.groupdocs.com/Watermark/net/) för detaljer.
 ### Var kan jag ladda ner GroupDocs.Watermark för .NET?
  Du kan ladda ner den senaste versionen från[nedladdningssida](https://releases.groupdocs.com/Watermark/net/).
 ### Hur får jag en tillfällig licens?

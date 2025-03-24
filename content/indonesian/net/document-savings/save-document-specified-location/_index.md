@@ -3,7 +3,6 @@ title: Simpan Dokumen ke Lokasi Tertentu
 linktitle: Simpan Dokumen ke Lokasi Tertentu
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air dengan mudah ke dokumen Anda menggunakan GroupDocs.Watermark untuk .NET dengan panduan langkah demi langkah ini. Meningkatkan keamanan dokumen.
-type: docs
 weight: 11
 url: /id/net/document-savings/save-document-specified-location/
 ---

@@ -3,7 +3,6 @@ title: Sostituisci il testo per un artefatto specifico nel PDF
 linktitle: Sostituisci il testo per un artefatto specifico nel PDF
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come sostituire il testo per elementi specifici nei documenti PDF utilizzando GroupDocs.Watermark per .NET. Migliora facilmente la sicurezza e l'integrità dei documenti.
-type: docs
 weight: 42
 url: /it/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---

@@ -3,7 +3,6 @@ title: Cargar documento de formato específico
 linktitle: Cargar documento de formato específico
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a cargar y marcar documentos con Groupdocs Watermark para .NET con esta guía paso a paso. Proteja y marque su contenido sin esfuerzo.
-type: docs
 weight: 12
 url: /es/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Conclusión
-Poner marcas de agua en los documentos es un paso fundamental para proteger su contenido, y Groupdocs.Watermark para .NET hace que este proceso sea sencillo y eficiente. Si sigue esta guía, podrá cargar y aplicar fácilmente marcas de agua a sus documentos, garantizando su seguridad y su marca adecuada. Para obtener más detalles y opciones avanzadas, consulte la[Groupdocs.Watermark para la documentación de .NET](https://reference.groupdocs.com/Watermark/net/).
+Poner marcas de agua en los documentos es un paso fundamental para proteger su contenido, y Groupdocs.Watermark para .NET hace que este proceso sea sencillo y eficiente. Si sigue esta guía, podrá cargar y aplicar fácilmente marcas de agua a sus documentos, garantizando su seguridad y su marca adecuada. Para obtener más detalles y opciones avanzadas, consulte la[Groupdocs.Watermark para la documentación de .NET](https://tutorials.groupdocs.com/Watermark/net/).
 ## Preguntas frecuentes
 ### ¿Puedo utilizar este método para diferentes formatos de documentos?
  Sí, Groupdocs admite varios formatos de documentos. Necesitas ajustar el`LoadOptions` respectivamente.

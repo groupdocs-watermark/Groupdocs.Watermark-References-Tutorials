@@ -3,7 +3,6 @@ title: Voeg watermerk met afbeeldingseffecten toe in Word-documenten
 linktitle: Voeg watermerk met afbeeldingseffecten toe in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u watermerken met afbeeldingseffecten aan uw Word-documenten kunt toevoegen met GroupDocs.Watermark voor .NET. Volg onze stapsgewijze handleiding voor verbluffende resultaten.
-type: docs
 weight: 19
 url: /nl/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---

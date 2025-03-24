@@ -3,7 +3,6 @@ title: Thêm hình mờ vào trang cụ thể trong tài liệu Word
 linktitle: Thêm hình mờ vào trang cụ thể trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ vào các trang cụ thể trong tài liệu Word bằng GroupDocs cho .NET. Bảo vệ nội dung của bạn một cách dễ dàng.
-type: docs
 weight: 14
 url: /vi/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
 ---

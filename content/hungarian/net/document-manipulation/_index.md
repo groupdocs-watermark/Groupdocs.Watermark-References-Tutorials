@@ -3,7 +3,6 @@ title: Dokumentummanipuláció
 linktitle: Dokumentummanipuláció
 second_title: GroupDocs.Watermark .NET API
 description: Fedezze fel a GroupDocs.Watermark for .NET oktatóanyagát a dokumentum-előnézetek létrehozásáról és a vízjelek kezeléséről. Növelje a dokumentumok biztonságát és kezelését.
-type: docs
 weight: 21
 url: /hu/net/document-manipulation/
 ---

@@ -3,7 +3,6 @@ title: Xóa hình mờ khỏi phần trong tài liệu Word
 linktitle: Xóa hình mờ khỏi phần trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách xóa hình mờ khỏi các phần cụ thể trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Hướng dẫn toàn diện có sẵn ở đây.
-type: docs
 weight: 32
 url: /vi/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---

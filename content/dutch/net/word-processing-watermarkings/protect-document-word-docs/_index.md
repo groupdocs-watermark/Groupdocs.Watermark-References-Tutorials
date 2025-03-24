@@ -3,7 +3,6 @@ title: Bescherm document in Word-documenten
 linktitle: Bescherm document in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u Word-documenten kunt beveiligen met GroupDocs.Watermark voor .NET. Volg onze stapsgewijze handleiding om moeiteloos beveiliging aan uw documenten toe te voegen.
-type: docs
 weight: 28
 url: /nl/net/word-processing-watermarkings/protect-document-word-docs/
 ---

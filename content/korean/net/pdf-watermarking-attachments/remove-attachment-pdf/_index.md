@@ -3,7 +3,6 @@ title: PDF에서 첨부 파일 제거
 linktitle: PDF에서 첨부 파일 제거
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 PDF 문서에서 첨부 파일을 쉽게 제거하는 방법을 알아보세요. 문서 관리 효율성을 높여보세요.
-type: docs
 weight: 33
 url: /ko/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

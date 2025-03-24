@@ -3,7 +3,6 @@ title: Hasilkan Pratinjau Dokumen
 linktitle: Hasilkan Pratinjau Dokumen
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara membuat pratinjau dokumen menggunakan GroupDocs.Watermark untuk .NET dengan panduan ini. Tingkatkan keamanan dan pengelolaan dokumen Anda dengan mudah.
-type: docs
 weight: 10
 url: /id/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Kesimpulan
 Membuat pratinjau dokumen menggunakan GroupDocs.Watermark untuk .NET adalah proses mudah yang dapat diselesaikan hanya dengan beberapa baris kode. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat dengan mudah menyiapkan proyek, mengonfigurasi opsi yang diperlukan, dan membuat pratinjau untuk dokumen Anda. Pustaka canggih ini tidak hanya menyederhanakan proses penandaan air tetapi juga menyediakan fitur canggih untuk mengelola dan memanipulasi tanda air.
- Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, jangan ragu untuk mengunjungi[GroupDocs.Forum Dukungan Tanda Air](https://forum.groupdocs.com/c/watermark/19) atau rujuk ke[dokumentasi](https://reference.groupdocs.com/Watermark/net/).
+ Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, jangan ragu untuk mengunjungi[GroupDocs.Forum Dukungan Tanda Air](https://forum.groupdocs.com/c/watermark/19) atau rujuk ke[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### Format file apa yang didukung oleh GroupDocs.Watermark untuk .NET?
- GroupDocs.Watermark untuk .NET mendukung berbagai format file, termasuk PDF, DOCX, PPTX, XLSX, dan banyak lagi. Untuk daftar lengkap format yang didukung, lihat[dokumentasi](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark untuk .NET mendukung berbagai format file, termasuk PDF, DOCX, PPTX, XLSX, dan banyak lagi. Untuk daftar lengkap format yang didukung, lihat[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/).
 ### Bisakah saya menyesuaikan tampilan tanda air?
 Ya, GroupDocs.Watermark memungkinkan Anda menyesuaikan sepenuhnya tampilan tanda air, termasuk tanda air teks, gambar, dan bentuk. Anda dapat menyesuaikan properti seperti font, warna, ukuran, dan transparansi.
 ### Apakah ada versi uji coba yang tersedia?

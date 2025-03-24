@@ -3,7 +3,6 @@ title: Mentse a dokumentumot ugyanabba a fájlba vagy adatfolyamba
 linktitle: Mentse a dokumentumot ugyanabba a fájlba vagy adatfolyamba
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat vízjeleket dokumentumokhoz a Groupdocs.Watermark for .NET segítségével. Ez az útmutató utasításokat ad a dokumentumok védelmére és integritására.
-type: docs
 weight: 10
 url: /hu/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Végül mentse el a dokumentumot vízjellel:
 watermarker.Save();
 ```
 ## Következtetés
-Vízjelek hozzáadása a dokumentumokhoz a Groupdocs Watermark for .NET segítségével egyszerű és hatékony. A fent vázolt lépések követésével könnyedén megvédheti dokumentumait és megőrizheti azok sértetlenségét. További részletekért tekintse meg a[dokumentáció](https://reference.groupdocs.com/Watermark/net/).
+Vízjelek hozzáadása a dokumentumokhoz a Groupdocs Watermark for .NET segítségével egyszerű és hatékony. A fent vázolt lépések követésével könnyedén megvédheti dokumentumait és megőrizheti azok sértetlenségét. További részletekért tekintse meg a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/).
 ## GYIK
 ### Használhatok képet vízjelként szöveg helyett?
 Igen, a Groupdocs.Watermark lehetővé teszi képek, alakzatok és szövegek vízjelként való használatát.

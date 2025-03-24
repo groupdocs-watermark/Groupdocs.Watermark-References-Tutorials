@@ -3,7 +3,6 @@ title: Ottieni informazioni sul documento dallo streaming
 linktitle: Ottieni informazioni sul documento dallo streaming
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come ottenere informazioni sul documento da un flusso utilizzando GroupDocs.Watermark per .NET con questa guida passo passo. Le tue funzionalità di gestione dei documenti senza sforzo.
-type: docs
 weight: 12
 url: /it/net/document-manipulation/get-document-info-stream/
 ---
@@ -46,10 +45,10 @@ Console.WriteLine("Document size: {0} bytes", info.Size);
 ```
 
 ## Conclusione
- Il recupero delle informazioni sui documenti da un flusso utilizzando GroupDocs.Watermark per .NET è un processo semplice se suddiviso in passaggi gestibili. Seguendo questa guida, potrai integrare in modo efficiente questa funzionalità nelle tue applicazioni, garantendo una migliore gestione e integrità dei documenti. Non esitate a esplorare il[documentazione](https://reference.groupdocs.com/Watermark/net/) per funzionalità e opzioni più avanzate.
+ Il recupero delle informazioni sui documenti da un flusso utilizzando GroupDocs.Watermark per .NET è un processo semplice se suddiviso in passaggi gestibili. Seguendo questa guida, potrai integrare in modo efficiente questa funzionalità nelle tue applicazioni, garantendo una migliore gestione e integrità dei documenti. Non esitate a esplorare il[documentazione](https://tutorials.groupdocs.com/Watermark/net/) per funzionalità e opzioni più avanzate.
 ## Domande frequenti
 ### Quali formati di file supporta GroupDocs.Watermark?
- GroupDocs.Watermark supporta un'ampia gamma di formati di file tra cui PDF, Word, Excel, PowerPoint e altri. Potete trovare l'elenco completo nel[documentazione](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark supporta un'ampia gamma di formati di file tra cui PDF, Word, Excel, PowerPoint e altri. Potete trovare l'elenco completo nel[documentazione](https://tutorials.groupdocs.com/Watermark/net/).
 ### Posso provare GroupDocs.Watermark prima dell'acquisto?
  Sì, puoi scaricare una versione di prova gratuita da[Qui](https://releases.groupdocs.com/) e richiedere una licenza temporanea da[Qui](https://purchase.groupdocs.com/temporary-license/).
 ### Come installo GroupDocs.Watermark per .NET?

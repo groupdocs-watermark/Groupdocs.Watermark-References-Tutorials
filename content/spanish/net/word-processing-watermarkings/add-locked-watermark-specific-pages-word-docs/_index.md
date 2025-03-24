@@ -3,7 +3,6 @@ title: Agregar marca de agua bloqueada a páginas específicas en documentos de 
 linktitle: Agregar marca de agua bloqueada a páginas específicas en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda cómo agregar una marca de agua bloqueada a páginas específicas en documentos de Word usando GroupDocs.Watermark para .NET con nuestra sencilla guía paso a paso.
-type: docs
 weight: 12
 url: /es/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## Conclusión
 ¡Felicidades! Ha agregado con éxito una marca de agua bloqueada a páginas específicas en un documento de Word usando GroupDocs.Watermark para .NET. Este tutorial cubrió todos los pasos esenciales desde cargar el documento hasta guardar el archivo con marca de agua. Si sigue estos pasos, puede asegurarse de que sus documentos tengan una marca de agua segura, protegiendo su contenido contra la edición y el uso no autorizados.
- Para obtener más información, puede consultar el[Documentación de GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/) . Si tiene alguna pregunta o necesita más ayuda, no dude en visitar el[Foro de soporte](https://forum.groupdocs.com/c/watermark/19).
+ Para obtener más información, puede consultar el[Documentación de GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/) . Si tiene alguna pregunta o necesita más ayuda, no dude en visitar el[Foro de soporte](https://forum.groupdocs.com/c/watermark/19).
 ## Preguntas frecuentes
 ### ¿Qué es GroupDocs.Watermark para .NET?
 GroupDocs.Watermark para .NET es una potente biblioteca que permite a los desarrolladores agregar marcas de agua a varios tipos de documentos, incluidos Word, PDF, Excel y más.

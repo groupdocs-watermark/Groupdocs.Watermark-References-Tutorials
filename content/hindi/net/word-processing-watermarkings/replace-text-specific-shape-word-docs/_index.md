@@ -3,7 +3,6 @@ title: वर्ड डॉक्स में विशिष्ट आकार
 linktitle: वर्ड डॉक्स में विशिष्ट आकार के लिए टेक्स्ट बदलें
 second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों में विशिष्ट आकृतियों के लिए टेक्स्ट को बदलने का तरीका जानें। हमारे चरण-दर-चरण ट्यूटोरियल का अनुसरण करें।
-type: docs
 weight: 35
 url: /hi/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---

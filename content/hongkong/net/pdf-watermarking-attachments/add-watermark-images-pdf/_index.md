@@ -3,7 +3,6 @@ title: 為 PDF 影像添加浮水印
 linktitle: 為 PDF 影像添加浮水印
 second_title: GroupDocs.Watermark .NET API
 description: 透過我們詳細的逐步教學，了解如何使用 GroupDocs.Watermark for .NET 在 PDF 文件中的影像添加浮水印。輕鬆保護您的 PDF。
-type: docs
 weight: 19
 url: /zh-hant/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ GroupDocs.Watermark for .NET 是一個綜合資料庫，可讓開發人員新增
 ### 我需要許可證才能使用 GroupDocs.Watermark for .NET 嗎？
 是的，需要許可證。您可以獲得[臨時執照](https://purchase.groupdocs.com/temporary-license/)出於評估目的。
 ### 在哪裡可以找到更多關於 GroupDocs.Watermark for .NET 的文件？
-您可以在以下位置找到全面的文檔[GroupDocs.Watermark 文件頁面](https://reference.groupdocs.com/Watermark/net/).
+您可以在以下位置找到全面的文檔[GroupDocs.Watermark 文件頁面](https://tutorials.groupdocs.com/Watermark/net/).

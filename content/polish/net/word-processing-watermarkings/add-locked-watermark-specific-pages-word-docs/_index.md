@@ -3,7 +3,6 @@ title: Dodaj zablokowany znak wodny do określonych stron w dokumentach programu
 linktitle: Dodaj zablokowany znak wodny do określonych stron w dokumentach programu Word
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak dodać zablokowany znak wodny do określonych stron w dokumentach programu Word za pomocą programu GroupDocs.Watermark dla platformy .NET, korzystając z naszego prostego przewodnika krok po kroku.
-type: docs
 weight: 12
 url: /pl/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## Wniosek
 Gratulacje! Pomyślnie dodałeś zablokowany znak wodny do określonych stron dokumentu programu Word przy użyciu GroupDocs.Watermark dla .NET. W tym samouczku omówiono wszystkie niezbędne kroki, od załadowania dokumentu do zapisania pliku ze znakiem wodnym. Wykonując poniższe kroki, możesz mieć pewność, że Twoje dokumenty będą bezpiecznie oznaczone znakiem wodnym, chroniąc zawartość przed nieuprawnioną edycją i wykorzystaniem.
- Aby uzyskać więcej informacji, możesz zapoznać się z[Dokumentacja GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/) . Jeśli masz jakieś pytania lub potrzebujesz dalszej pomocy, odwiedź stronę[forum wsparcia](https://forum.groupdocs.com/c/watermark/19).
+ Aby uzyskać więcej informacji, możesz zapoznać się z[Dokumentacja GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/) . Jeśli masz jakieś pytania lub potrzebujesz dalszej pomocy, odwiedź stronę[forum wsparcia](https://forum.groupdocs.com/c/watermark/19).
 ## Często zadawane pytania
 ### Co to jest GroupDocs.Watermark dla .NET?
 GroupDocs.Watermark dla .NET to potężna biblioteka, która umożliwia programistom dodawanie znaków wodnych do różnych typów dokumentów, w tym Word, PDF, Excel i innych.

@@ -3,7 +3,6 @@ title: 取得支援的文件格式
 linktitle: 取得支援的文件格式
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 輕鬆地在文件中新增浮水印。請遵循我們全面的逐步指南來保護您的數位資產。
-type: docs
 weight: 13
 url: /zh-hant/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ foreach (FileType fileType in supportedFileTypes)
 ### 如何購買 GroupDocs.Watermark 的授權？
 許可證可以直接從[購買頁面](https://purchase.groupdocs.com/buy).
 ### 有適用於 GroupDocs.Watermark 的任何文件嗎？
-是的，提供全面的文檔[這裡](https://reference.groupdocs.com/Watermark/net/).
+是的，提供全面的文檔[這裡](https://tutorials.groupdocs.com/Watermark/net/).

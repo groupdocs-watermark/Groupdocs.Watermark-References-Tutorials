@@ -3,7 +3,6 @@ title: Tambahkan Tanda Air Terkunci ke Halaman Tertentu di Dokumen Word
 linktitle: Tambahkan Tanda Air Terkunci ke Halaman Tertentu di Dokumen Word
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air terkunci ke halaman tertentu di dokumen Word menggunakan GroupDocs.Watermark untuk .NET dengan panduan langkah demi langkah kami yang mudah.
-type: docs
 weight: 12
 url: /id/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## Kesimpulan
 Selamat! Anda telah berhasil menambahkan tanda air terkunci ke halaman tertentu di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Tutorial ini mencakup semua langkah penting mulai dari memuat dokumen hingga menyimpan file yang diberi watermark. Dengan mengikuti langkah-langkah ini, Anda dapat memastikan bahwa dokumen Anda diberi tanda air dengan aman, sehingga melindungi konten Anda dari pengeditan dan penggunaan yang tidak sah.
- Untuk informasi lebih lanjut, Anda dapat merujuk ke[Dokumentasi GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/) . Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, silakan kunjungi[forum dukungan](https://forum.groupdocs.com/c/watermark/19).
+ Untuk informasi lebih lanjut, Anda dapat merujuk ke[Dokumentasi GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/) . Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, silakan kunjungi[forum dukungan](https://forum.groupdocs.com/c/watermark/19).
 ## FAQ
 ### Apa itu GroupDocs.Watermark untuk .NET?
 GroupDocs.Watermark for .NET adalah perpustakaan canggih yang memungkinkan pengembang menambahkan tanda air ke berbagai jenis dokumen, termasuk Word, PDF, Excel, dan banyak lagi.

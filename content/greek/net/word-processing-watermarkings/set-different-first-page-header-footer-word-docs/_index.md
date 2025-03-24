@@ -3,7 +3,6 @@ title: Ορισμός διαφορετικής κεφαλίδας/υποσέλι
 linktitle: Ορισμός διαφορετικής κεφαλίδας/υποσέλιδου πρώτης σελίδας στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να ορίζετε διαφορετικές κεφαλίδες και υποσέλιδα στην πρώτη σελίδα των εγγράφων του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET.
-type: docs
 weight: 36
 url: /el/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ watermarker.Save(outputFileName);
 ### Μπορώ να αγοράσω μια προσωρινή άδεια χρήσης για βραχυπρόθεσμη χρήση;
  Ναι, οι προσωρινές άδειες χρήσης για GroupDocs για .NET μπορούν να αποκτηθούν από το[Σελίδα αγοράς προσωρινής άδειας](https://purchase.groupdocs.com/temporary-license/).
 ### Πού μπορώ να βρω ολοκληρωμένη τεκμηρίωση για το GroupDocs.Watermark για .NET;
- Λεπτομερής τεκμηρίωση για το GroupDocs.Watermark για .NET είναι διαθέσιμη στο[Σελίδα αναφοράς](https://reference.groupdocs.com/Watermark/net/).
+ Λεπτομερής τεκμηρίωση για το GroupDocs.Watermark για .NET είναι διαθέσιμη στο[Σελίδα αναφοράς](https://tutorials.groupdocs.com/Watermark/net/).

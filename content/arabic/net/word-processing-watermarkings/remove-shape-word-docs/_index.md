@@ -3,7 +3,6 @@ title: إزالة الشكل في مستندات Word
 linktitle: إزالة الشكل في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة الأشكال من مستندات Word باستخدام GroupDocs.Watermark لـ .NET. معالجة سهلة وفعالة وقوية للمستندات.
-type: docs
 weight: 30
 url: /ar/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
@@ -72,6 +71,6 @@ watermarker.Save(outputFileName);
 ### كيف يمكنني الحصول على تراخيص مؤقتة لـ GroupDocs.Watermark لـ .NET؟
  يمكن الحصول على تراخيص مؤقتة لـ GroupDocs.Watermark لـ .NET من[صفحة الترخيص المؤقتة](https://purchase.groupdocs.com/temporary-license/).
 ### أين يمكنني العثور على الوثائق والدعم الخاص بـ GroupDocs.Watermark لـ .NET؟
- تتوفر موارد التوثيق والدعم الخاصة بـ GroupDocs.Watermark لـ .NET على الموقع[المنتدى](https://forum.groupdocs.com/c/watermark/19) و[الصفحه المرجعيه](https://reference.groupdocs.com/Watermark/net/).
+ تتوفر موارد التوثيق والدعم الخاصة بـ GroupDocs.Watermark لـ .NET على الموقع[المنتدى](https://forum.groupdocs.com/c/watermark/19) و[الصفحه المرجعيه](https://tutorials.groupdocs.com/Watermark/net/).
 ### ما هي إصدارات .NET المتوافقة مع GroupDocs.Watermark؟
 تتوافق العلامة المائية GroupDocs.Watermark لـ .NET مع إصدارات مختلفة من .NET، بما في ذلك .NET Framework و.NET Core.

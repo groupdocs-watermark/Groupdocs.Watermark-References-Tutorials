@@ -3,7 +3,6 @@ title: إضافة علامة مائية للصورة المتجانبة
 linktitle: إضافة علامة مائية للصورة المتجانبة
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية للصور المتجانبة إلى مستنداتك باستخدام GroupDocs.Watermark لـ .NET. سهلة وفعالة وقابلة للتخصيص.
-type: docs
 weight: 10
 url: /ar/net/image-watermarkings/add-tiled-image-watermark/
 ---

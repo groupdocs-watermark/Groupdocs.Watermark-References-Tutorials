@@ -3,7 +3,6 @@ title: PDF'deki Belirli Açıklamalar İçin Görüntüyü Değiştir
 linktitle: PDF'deki Belirli Açıklamalar İçin Görüntüyü Değiştir
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak belirli PDF ek açıklamalarındaki görüntüleri nasıl değiştireceğinizi öğrenin. Bu ayrıntılı kılavuz, belgelerin yüklenmesinden değişikliklerin kaydedilmesine kadar her şeyi kapsar.
-type: docs
 weight: 37
 url: /tr/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 Bu adım, tüm değişikliklerin kaydedilmesini ve değiştirilen belgenin kullanıma hazır olmasını sağlar.
 ## Çözüm
-Tebrikler! GroupDocs.Watermark for .NET'i kullanarak bir PDF belgesindeki belirli ek açıklamalardaki görüntüleri başarıyla değiştirdiniz. Bu güçlü kitaplık, karmaşık PDF filigranlama görevlerinin üstesinden gelmenizi kolaylaştırarak belge yönetimi yeteneklerinizi geliştirir. Daha fazla özelleştirme ve gelişmiş özellikler için[GroupDocs.Watermark belgeleri](https://reference.groupdocs.com/Watermark/net/).
+Tebrikler! GroupDocs.Watermark for .NET'i kullanarak bir PDF belgesindeki belirli ek açıklamalardaki görüntüleri başarıyla değiştirdiniz. Bu güçlü kitaplık, karmaşık PDF filigranlama görevlerinin üstesinden gelmenizi kolaylaştırarak belge yönetimi yeteneklerinizi geliştirir. Daha fazla özelleştirme ve gelişmiş özellikler için[GroupDocs.Watermark belgeleri](https://tutorials.groupdocs.com/Watermark/net/).
 ## SSS'ler
 ### Bir PDF'nin tüm sayfalarındaki ek açıklamalardaki görüntüleri değiştirebilir miyim?
 Evet, döngüyü her sayfanın ek açıklamalarını gözden geçirecek şekilde ayarlayarak PDF'nin tüm sayfalarını yineleyebilirsiniz.

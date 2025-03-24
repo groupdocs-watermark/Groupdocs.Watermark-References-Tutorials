@@ -3,7 +3,6 @@ title: Extraer información de artefactos de PDF
 linktitle: Extraer información de artefactos de PDF
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a extraer información de artefactos de archivos PDF utilizando GroupDocs.Watermark para .NET. Mejore sus capacidades de procesamiento de documentos.
-type: docs
 weight: 24
 url: /es/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---

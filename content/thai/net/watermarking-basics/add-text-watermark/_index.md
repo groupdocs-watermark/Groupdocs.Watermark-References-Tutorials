@@ -3,7 +3,6 @@ title: เพิ่มลายน้ำข้อความ
 linktitle: เพิ่มลายน้ำข้อความ
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำข้อความลงในเอกสารของคุณโดยใช้ Groupdocs ลายน้ำสำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนนี้
-type: docs
 weight: 11
 url: /th/net/watermarking-basics/add-text-watermark/
 ---

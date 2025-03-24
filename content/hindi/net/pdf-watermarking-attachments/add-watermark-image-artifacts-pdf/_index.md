@@ -3,7 +3,6 @@ title: पीडीएफ में छवि कलाकृतियों म
 linktitle: पीडीएफ में छवि कलाकृतियों में वॉटरमार्क जोड़ें
 second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके अपनी पीडीएफ फाइलों को वैयक्तिकृत वॉटरमार्क से सुरक्षित रखें। पीडीएफ दस्तावेज़ों में छवि कलाकृतियों में आसानी से टेक्स्ट या छवि वॉटरमार्क जोड़ें।
-type: docs
 weight: 18
 url: /hi/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---

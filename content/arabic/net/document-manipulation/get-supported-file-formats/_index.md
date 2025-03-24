@@ -3,7 +3,6 @@ title: احصل على تنسيقات الملفات المدعومة
 linktitle: احصل على تنسيقات الملفات المدعومة
 second_title: GroupDocs.Watermark .NET API
 description: أضف علامات مائية إلى مستنداتك بسهولة باستخدام GroupDocs.Watermark لـ .NET. اتبع دليلنا الشامل خطوة بخطوة لحماية أصولك الرقمية.
-type: docs
 weight: 13
 url: /ar/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ foreach (FileType fileType in supportedFileTypes)
 ### كيف يمكنني شراء ترخيص GroupDocs.Watermark؟
  يمكن شراء التراخيص مباشرة من[صفحة الشراء](https://purchase.groupdocs.com/buy).
 ### هل هناك أي وثائق متاحة لـ GroupDocs.Watermark؟
- نعم، الوثائق الشاملة متاحة[هنا](https://reference.groupdocs.com/Watermark/net/).
+ نعم، الوثائق الشاملة متاحة[هنا](https://tutorials.groupdocs.com/Watermark/net/).

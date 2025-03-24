@@ -3,7 +3,6 @@ title: A vízjelezés alapjai
 linktitle: A vízjelezés alapjai
 second_title: GroupDocs.Watermark .NET API
 description: Fedezze fel a GroupDocs.Watermark for .NET oktatóanyagát, amellyel könnyedén adhat hozzá kép- és szöveges vízjeleket. Védje meg dokumentumait ezekkel a könnyen követhető útmutatókkal.
-type: docs
 weight: 20
 url: /hu/net/watermarking-basics/
 ---

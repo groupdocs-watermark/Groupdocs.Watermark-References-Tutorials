@@ -3,7 +3,6 @@ title: Dokument in derselben Datei oder demselben Stream speichern
 linktitle: Dokument in derselben Datei oder demselben Stream speichern
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit Groupdocs.Watermark für .NET Wasserzeichen zu Dokumenten hinzufügen. Dieses Handbuch enthält Anweisungen zur Gewährleistung des Schutzes und der Integrität von Dokumenten.
-type: docs
 weight: 10
 url: /de/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Speichern Sie abschließend das Dokument mit dem angewendeten Wasserzeichen:
 watermarker.Save();
 ```
 ## Abschluss
-Das Hinzufügen von Wasserzeichen zu Ihren Dokumenten mit Groupdocs für .NET ist unkompliziert und effizient. Indem Sie die oben beschriebenen Schritte befolgen, können Sie Ihre Dokumente mühelos schützen und ihre Integrität wahren. Weitere Einzelheiten finden Sie im[Dokumentation](https://reference.groupdocs.com/Watermark/net/).
+Das Hinzufügen von Wasserzeichen zu Ihren Dokumenten mit Groupdocs für .NET ist unkompliziert und effizient. Indem Sie die oben beschriebenen Schritte befolgen, können Sie Ihre Dokumente mühelos schützen und ihre Integrität wahren. Weitere Einzelheiten finden Sie im[Dokumentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQs
 ### Kann ich ein Bild als Wasserzeichen anstelle von Text verwenden?
 Ja, mit Groupdocs.Watermark können Sie Bilder, Formen und Text als Wasserzeichen verwenden.

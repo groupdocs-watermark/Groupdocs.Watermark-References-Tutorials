@@ -3,7 +3,6 @@ title: 将文档保存到同一文件或流
 linktitle: 将文档保存到同一文件或流
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs.Watermark for .NET 向文档添加水印。本指南提供了确保文档保护和完整性的说明。
-type: docs
 weight: 10
 url: /zh/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ watermarker.Add(watermark);
 watermarker.Save();
 ```
 ## 结论
-使用 Watermark for .NET 向文档添加水印既简单又高效。通过执行上述步骤，您可以轻松保护您的文档并保持其完整性。欲了解更多详情，您可以参考[文档](https://reference.groupdocs.com/Watermark/net/).
+使用 Watermark for .NET 向文档添加水印既简单又高效。通过执行上述步骤，您可以轻松保护您的文档并保持其完整性。欲了解更多详情，您可以参考[文档](https://tutorials.groupdocs.com/Watermark/net/).
 ## 常见问题解答
 ### 我可以使用图像而不是文本作为水印吗？
 是的，Groupdocs.Watermark 允许您使用图像、形状和文本作为水印。

@@ -3,7 +3,6 @@ title: Přidat vodoznak do sekce v Dokumentech aplikace Word
 linktitle: Přidat vodoznak do sekce v Dokumentech aplikace Word
 second_title: GroupDocs.Watermark .NET API
 description: Snadno přidávejte vodoznaky do dokumentů aplikace Word pomocí GroupDocs.Watermark for .NET. Chraňte svůj obsah pomocí tohoto jednoduchého průvodce.
-type: docs
 weight: 15
 url: /cs/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

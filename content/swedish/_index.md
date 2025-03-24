@@ -3,7 +3,6 @@ title: Master Document Security & Branding med GroupDocs.Watermark
 linktitle: GroupDocs.Watermark självstudier
 additionalTitle: GroupDocs API-referenser
 description: Lås upp kraften i GroupDocs.Watermark med våra .NET- och Java-handledningar. Bemästra vattenmärkningstekniker för dokumentsäkerhet och branding.
-type: docs
 weight: 11
 url: /sv/
 is_root: true

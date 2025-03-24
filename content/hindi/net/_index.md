@@ -1,7 +1,6 @@
 ---
 title: .NET के लिए GroupDocs.Watermark के ट्यूटोरियल और उदाहरण
 linktitle: .NET ट्यूटोरियल के लिए GroupDocs.वॉटरमार्क
-type: docs
 weight: 10
 url: /hi/net/
 description: .NET ट्यूटोरियल के लिए व्यापक GroupDocs.Watermark का अन्वेषण करें। चरण-दर-चरण मार्गदर्शिकाओं के साथ विभिन्न दस्तावेज़ प्रारूपों में वॉटरमार्क जोड़ना, प्रबंधित करना और सुरक्षित करना सीखें।

@@ -3,7 +3,6 @@ title: Voeg een watermerk toe aan sectieafbeeldingen in Word-documenten
 linktitle: Voeg een watermerk toe aan sectieafbeeldingen in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u watermerken aan afbeeldingen in Word-documenten kunt toevoegen met behulp van Groupdocs. Volg onze gids voor veilige en professionele documentbescherming.
-type: docs
 weight: 16
 url: /nl/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## Conclusie
 Het toevoegen van watermerken aan afbeeldingen in uw Word-documenten is een krachtige manier om uw inhoud te beschermen. Met Groupdocs.Watermark voor .NET is dit proces eenvoudig en efficiënt. Volg de stappen in deze zelfstudie om ervoor te zorgen dat uw documenten veilig en goed beschermd zijn.
- Voor meer gedetailleerde documentatie, bezoek de[documentatie](https://reference.groupdocs.com/Watermark/net/) . Als u vragen heeft of meer hulp nodig heeft, kijk dan op de[Helpforum](https://forum.groupdocs.com/c/watermark/19).
+ Voor meer gedetailleerde documentatie, bezoek de[documentatie](https://tutorials.groupdocs.com/Watermark/net/) . Als u vragen heeft of meer hulp nodig heeft, kijk dan op de[Helpforum](https://forum.groupdocs.com/c/watermark/19).
 ## Veelgestelde vragen
 ### Kan ik de watermerktekst aanpassen?
 Ja, u kunt de watermerktekst, het lettertype, de grootte, de uitlijning en de rotatie aanpassen aan uw behoeften.
 ### Is het mogelijk om watermerken aan meerdere secties toe te voegen?
 Ja, u kunt elke sectie doorlopen en het watermerk op afbeeldingen in alle secties toepassen.
 ### Kan ik deze methode gebruiken voor andere documentformaten?
- Groupdocs Watermark ondersteunt verschillende documentformaten. Controleer de[documentatie](https://reference.groupdocs.com/Watermark/net/) voor meer details.
+ Groupdocs Watermark ondersteunt verschillende documentformaten. Controleer de[documentatie](https://tutorials.groupdocs.com/Watermark/net/) voor meer details.
 ### Hoe kan ik een tijdelijke licentie verkrijgen?
  U kunt een tijdelijke licentie verkrijgen[hier](https://purchase.groupdocs.com/temporary-license/).
 ### Wat moet ik doen als ik problemen ondervind tijdens het gebruik van Groupdocs.Watermark?

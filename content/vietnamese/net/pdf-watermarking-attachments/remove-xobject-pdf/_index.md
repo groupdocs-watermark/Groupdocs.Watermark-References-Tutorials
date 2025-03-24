@@ -3,7 +3,6 @@ title: Xóa XObject khỏi PDF
 linktitle: Xóa XObject khỏi PDF
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách dễ dàng xóa XObject khỏi tệp PDF bằng GroupDocs.Watermark cho .NET với hướng dẫn từng bước toàn diện của chúng tôi.
-type: docs
 weight: 35
 url: /vi/net/pdf-watermarking-attachments/remove-xobject-pdf/
 ---

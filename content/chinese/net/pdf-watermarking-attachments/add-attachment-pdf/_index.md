@@ -3,7 +3,6 @@ title: 添加附件到 PDF
 linktitle: 添加附件到 PDF
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark 增强您的 .NET 文档管理功能，实现无缝水印和附件处理。
-type: docs
 weight: 12
 url: /zh/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---

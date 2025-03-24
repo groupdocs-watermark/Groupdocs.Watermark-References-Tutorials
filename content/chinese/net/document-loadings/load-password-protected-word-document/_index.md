@@ -3,7 +3,6 @@ title: 加载受密码保护的Word文档
 linktitle: 加载受密码保护的Word文档
 second_title: GroupDocs.Watermark .NET API
 description: 通过我们全面的分步指南，使用 GroupDocs.Watermark for .NET 轻松向受密码保护的 Word 文档添加水印。
-type: docs
 weight: 14
 url: /zh/net/document-loadings/load-password-protected-word-document/
 ---

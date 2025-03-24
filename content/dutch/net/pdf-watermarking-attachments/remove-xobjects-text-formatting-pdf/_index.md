@@ -3,7 +3,6 @@ title: Verwijder XObjects met specifieke tekstopmaak in PDF
 linktitle: Verwijder XObjects met specifieke tekstopmaak in PDF
 second_title: GroupDocs.Watermark .NET API
 description: Verwijder moeiteloos XObjects met specifieke tekstopmaak uit PDF's met GroupDocs.Watermark voor .NET. Volg onze gids voor naadloze documentmanipulatie.
-type: docs
 weight: 36
 url: /nl/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Sla ten slotte het gewijzigde PDF-document op in het opgegeven uitvoerbestandspa
 Hiermee is het proces van het verwijderen van XObjects met specifieke tekstopmaak uit een PDF-document voltooid.
 
 ## Conclusie
-Door deze stappen te volgen, kunt u XObjects met specifieke tekstopmaak efficiënt verwijderen uit PDF-documenten met behulp van GroupDocs.Watermark voor .NET. Deze krachtige bibliotheek vereenvoudigt niet alleen watermerktaken, maar biedt ook robuuste mogelijkheden voor documentmanipulatie. Voor meer gedetailleerde documentatie, bezoek de[GroupDocs.Watermark voor .NET-documentatie](https://reference.groupdocs.com/Watermark/net/) . Als u problemen ondervindt of vragen heeft, kunt u de[Helpforum](https://forum.groupdocs.com/c/watermark/19) is een geweldige plek om hulp te zoeken.
+Door deze stappen te volgen, kunt u XObjects met specifieke tekstopmaak efficiënt verwijderen uit PDF-documenten met behulp van GroupDocs.Watermark voor .NET. Deze krachtige bibliotheek vereenvoudigt niet alleen watermerktaken, maar biedt ook robuuste mogelijkheden voor documentmanipulatie. Voor meer gedetailleerde documentatie, bezoek de[GroupDocs.Watermark voor .NET-documentatie](https://tutorials.groupdocs.com/Watermark/net/) . Als u problemen ondervindt of vragen heeft, kunt u de[Helpforum](https://forum.groupdocs.com/c/watermark/19) is een geweldige plek om hulp te zoeken.
 ## Veelgestelde vragen
 ### Kan ik XObjects met verschillende tekstopmaak verwijderen?
 Ja, u kunt de code wijzigen om te controleren op verschillende kenmerken van de tekstopmaak, zoals lettergrootte, letterstijl of kleur.

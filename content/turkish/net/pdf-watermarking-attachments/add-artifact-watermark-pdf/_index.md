@@ -3,7 +3,6 @@ title: PDF'ye Yapı Filigranı Ekleme
 linktitle: PDF'ye Yapı Filigranı Ekleme
 second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs.Watermark for .NET'i kullanarak PDF dosyalarına yapay filigranları zahmetsizce nasıl ekleyeceğinizi öğrenin. Belgelerinizi kolaylıkla koruyun.
-type: docs
 weight: 11
 url: /tr/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---

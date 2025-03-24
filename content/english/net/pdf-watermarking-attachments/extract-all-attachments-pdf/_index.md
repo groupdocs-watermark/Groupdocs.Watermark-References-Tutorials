@@ -3,7 +3,6 @@ title: Extract All Attachments from PDF
 linktitle: Extract All Attachments from PDF
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to extract all attachments from a PDF using Groupdocs.Watermark for .NET. Follow our step-by-step guide for a seamless extraction process.
-type: docs
 weight: 22
 url: /net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
@@ -28,7 +27,7 @@ First things first, let's set up your project. Open your .NET development enviro
 ### Create a New Project
 1. Open Visual Studio.
 2. Select "Create a new project."
-3. Choose "Console App (.NET Core)" or ".NET Framework" depending on your preference.
+3. Choose "Console App (.NET Core)" or ".NET Framework" depending on your ptutorials.
 4. Name your project and click "Create."
 ### Add Groupdocs.Watermark for .NET
 1. Right-click on your project in the Solution Explorer.

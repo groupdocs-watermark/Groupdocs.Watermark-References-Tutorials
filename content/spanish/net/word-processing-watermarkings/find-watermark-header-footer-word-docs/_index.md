@@ -3,7 +3,6 @@ title: Buscar marca de agua en encabezado/pie de página en documentos de Word
 linktitle: Buscar marca de agua en encabezado/pie de página en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a buscar y eliminar de manera eficiente marcas de agua de documentos de Word utilizando GroupDocs Watermark para .NET, garantizando la integridad y el profesionalismo de los documentos.
-type: docs
 weight: 22
 url: /es/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---

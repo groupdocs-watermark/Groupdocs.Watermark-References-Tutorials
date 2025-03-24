@@ -3,7 +3,6 @@ title: Tambahkan Tanda Air ke Bagian di Dokumen Word
 linktitle: Tambahkan Tanda Air ke Bagian di Dokumen Word
 second_title: GroupDocs.Tanda Air .NET API
 description: Tambahkan tanda air dengan mudah ke dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Lindungi konten Anda dengan panduan sederhana ini.
-type: docs
 weight: 15
 url: /id/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

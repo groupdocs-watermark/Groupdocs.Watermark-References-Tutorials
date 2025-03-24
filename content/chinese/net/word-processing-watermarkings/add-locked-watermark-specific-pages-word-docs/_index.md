@@ -3,7 +3,6 @@ title: 将锁定水印添加到 Word 文档中的特定页面
 linktitle: 将锁定水印添加到 Word 文档中的特定页面
 second_title: GroupDocs.Watermark .NET API
 description: 通过我们简单的分步指南，了解如何使用 GroupDocs.Watermark for .NET 将锁定水印添加到 Word 文档中的特定页面。
-type: docs
 weight: 12
 url: /zh/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## 结论
 恭喜！您已使用 GroupDocs.Watermark for .NET 成功将锁定水印添加到 Word 文档中的特定页面。本教程涵盖了从加载文档到保存水印文件的所有基本步骤。通过执行这些步骤，您可以确保您的文档带有安全的水印，从而保护您的内容免遭未经授权的编辑和使用。
-欲了解更多信息，您可以参考[GroupDocs.Watermark 文档](https://reference.groupdocs.com/Watermark/net/)。如果您有任何疑问或需要进一步帮助，请随时访问[支持论坛](https://forum.groupdocs.com/c/watermark/19).
+欲了解更多信息，您可以参考[GroupDocs.Watermark 文档](https://tutorials.groupdocs.com/Watermark/net/)。如果您有任何疑问或需要进一步帮助，请随时访问[支持论坛](https://forum.groupdocs.com/c/watermark/19).
 ## 常见问题解答
 ### 什么是 .NET 的 GroupDocs.Watermark？
 GroupDocs.Watermark for .NET 是一个功能强大的库，允许开发人员向各种类型的文档添加水印，包括 Word、PDF、Excel 等。

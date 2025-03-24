@@ -3,7 +3,6 @@ title: ลายน้ำการประมวลผลคำ
 linktitle: ลายน้ำการประมวลผลคำ
 second_title: GroupDocs.Watermark .NET API
 description: ค้นพบบทช่วยสอน GroupDocs.Watermark สำหรับ .NET ที่สำคัญเพื่อเพิ่มและจัดการลายน้ำในเอกสาร Word เพิ่มความปลอดภัยให้กับเอกสารและการสร้างแบรนด์ของคุณได้อย่างง่ายดาย
-type: docs
 weight: 26
 url: /th/net/word-processing-watermarkings/
 ---

@@ -3,7 +3,6 @@ title: Resim Filigranı Ekle
 linktitle: Resim Filigranı Ekle
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak belgelerinize zahmetsizce görüntü filigranları ekleyin. Fikri mülkiyetinizi kolaylıkla koruyun.
-type: docs
 weight: 10
 url: /tr/net/watermarking-basics/add-image-watermark/
 ---

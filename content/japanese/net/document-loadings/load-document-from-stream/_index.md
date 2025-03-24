@@ -3,7 +3,6 @@ title: ストリームからドキュメントをロード
 linktitle: ストリームからドキュメントをロード
 second_title: GroupDocs.Watermark .NET API
 description: このガイドでは、GroupDocs.Watermark for .NET を使用してドキュメントにウォーターマークを追加する方法を学習します。ドキュメントのセキュリティを強化したい開発者に最適です。
-type: docs
 weight: 11
 url: /ja/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
 このコードは、新しく追加された透かしを含むドキュメントを保存します。`outputFileName`前に定義したパス。
 
 ## 結論
-おめでとう！ GroupDocs.Watermark for .NET を使用してドキュメントにウォーターマークを追加することに成功しました。このライブラリを使用すると、さまざまなドキュメント形式にわたるウォーターマークの管理が驚くほど簡単になります。テキスト、画像、その他の種類のウォーターマークを追加する必要がある場合でも、GroupDocs.Watermark には必要なツールが揃っています。忘れずにチェックしてください[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/)より高度な機能とカスタマイズ オプションについては、
+おめでとう！ GroupDocs.Watermark for .NET を使用してドキュメントにウォーターマークを追加することに成功しました。このライブラリを使用すると、さまざまなドキュメント形式にわたるウォーターマークの管理が驚くほど簡単になります。テキスト、画像、その他の種類のウォーターマークを追加する必要がある場合でも、GroupDocs.Watermark には必要なツールが揃っています。忘れずにチェックしてください[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/)より高度な機能とカスタマイズ オプションについては、
 ## よくある質問
 ### GroupDocs.Watermark for .NET を使用して追加できるウォーターマークの種類は何ですか?
 テキストの透かし、画像の透かし、さらには複雑な形状やロゴを追加できます。このライブラリは、幅広いカスタマイズ オプションをサポートしています。

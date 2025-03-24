@@ -1,7 +1,6 @@
 ---
 title: برامج تعليمية وأمثلة لـ GroupDocs.Watermark لـ .NET
 linktitle: GroupDocs.علامة مائية لبرامج .NET التعليمية
-type: docs
 weight: 10
 url: /ar/net/
 description: استكشف GroupDocs.Watermark الشاملة لبرامج .NET التعليمية. تعلم كيفية إضافة العلامات المائية وإدارتها وتأمينها بتنسيقات المستندات المختلفة باستخدام أدلة خطوة بخطوة.

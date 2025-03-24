@@ -3,7 +3,6 @@ title: เพิ่มลายน้ำรูปภาพ
 linktitle: เพิ่มลายน้ำรูปภาพ
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำรูปภาพลงในเอกสารของคุณโดยใช้ GroupDocs.Watermark สำหรับ .NET พร้อมบทช่วยสอนแบบละเอียดทีละขั้นตอนของเรา
-type: docs
 weight: 11
 url: /th/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ GroupDocs.Watermark รองรับรูปแบบไฟล์ที่ห
 ### เป็นไปได้ไหมที่จะเพิ่มลายน้ำหลายลายลงในเอกสารเดียว?
  อย่างแน่นอน! คุณสามารถเพิ่มลายน้ำได้หลายแบบโดยโทรไปที่`Add` วิธีการหลายครั้งด้วยอินสแตนซ์ลายน้ำที่แตกต่างกัน
 ### ฉันจะหาตัวอย่างและเอกสารประกอบเพิ่มเติมได้ที่ไหน
- สำหรับตัวอย่างเพิ่มเติมและเอกสารประกอบโดยละเอียด โปรดไปที่[GroupDocs.เอกสารลายน้ำ](https://reference.groupdocs.com/Watermark/net/).
+ สำหรับตัวอย่างเพิ่มเติมและเอกสารประกอบโดยละเอียด โปรดไปที่[GroupDocs.เอกสารลายน้ำ](https://tutorials.groupdocs.com/Watermark/net/).

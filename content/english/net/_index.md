@@ -1,7 +1,6 @@
 ---
 title: Tutorials and Examples of GroupDocs.Watermark for .NET 
 linktitle: GroupDocs.Watermark for .NET Tutorials
-type: docs
 weight: 10
 url: /net/
 description: Explore comprehensive GroupDocs.Watermark for .NET tutorials. Learn to add, manage, and secure watermarks in various document formats with step-by-step guides.

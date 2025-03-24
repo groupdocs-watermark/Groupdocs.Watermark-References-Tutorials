@@ -3,7 +3,6 @@ title: パスワードで保護されたドキュメントをロードする
 linktitle: パスワードで保護されたドキュメントをロードする
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET を使用してパスワードで保護されたドキュメントにウォーターマークを追加する方法については、ステップバイステップのガイドを参照してください。ファイルを簡単に保護し、ブランド化します。
-type: docs
 weight: 13
 url: /ja/net/document-loadings/load-password-protected-document/
 ---

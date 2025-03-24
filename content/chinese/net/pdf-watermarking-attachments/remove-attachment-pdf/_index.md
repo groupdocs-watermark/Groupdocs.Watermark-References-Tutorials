@@ -3,7 +3,6 @@ title: 从 PDF 中删除附件
 linktitle: 从 PDF 中删除附件
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 轻松删除 PDF 文档中的附件。提高您的文档管理效率。
-type: docs
 weight: 33
 url: /zh/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

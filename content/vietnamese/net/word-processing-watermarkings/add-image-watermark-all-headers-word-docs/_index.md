@@ -3,7 +3,6 @@ title: Thêm hình mờ hình ảnh vào tất cả tiêu đề trong tài liệ
 linktitle: Thêm hình mờ hình ảnh vào tất cả tiêu đề trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Dễ dàng thêm hình mờ vào tất cả các tiêu đề trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi với các ví dụ về mã chi tiết.
-type: docs
 weight: 10
 url: /vi/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---

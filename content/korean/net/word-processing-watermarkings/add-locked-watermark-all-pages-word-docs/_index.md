@@ -3,7 +3,6 @@ title: Word Docs의 모든 페이지에 잠긴 워터마크 추가
 linktitle: Word Docs의 모든 페이지에 잠긴 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 Groupdocs.Watermark를 사용하여 잠긴 워터마크를 추가하여 문서를 보호하세요. 쉬운 구현을 위해 단계별 가이드를 따르세요.
-type: docs
 weight: 11
 url: /ko/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---

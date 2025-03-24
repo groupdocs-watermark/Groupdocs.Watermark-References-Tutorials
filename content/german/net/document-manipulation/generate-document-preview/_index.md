@@ -3,7 +3,6 @@ title: Dokumentvorschau generieren
 linktitle: Dokumentvorschau generieren
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in diesem Handbuch, wie Sie mit GroupDocs.Watermark für .NET Dokumentvorschauen erstellen. Verbessern Sie mühelos die Sicherheit und Verwaltung Ihrer Dokumente.
-type: docs
 weight: 10
 url: /de/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Abschluss
 Das Generieren von Dokumentvorschauen mit GroupDocs.Watermark für .NET ist ein unkomplizierter Vorgang, der mit nur wenigen Codezeilen durchgeführt werden kann. Wenn Sie die in dieser Anleitung beschriebenen Schritte befolgen, können Sie Ihr Projekt ganz einfach einrichten, die erforderlichen Optionen konfigurieren und Vorschauen für Ihre Dokumente erstellen. Diese leistungsstarke Bibliothek vereinfacht nicht nur den Wasserzeichenprozess, sondern bietet auch robuste Funktionen zum Verwalten und Bearbeiten von Wasserzeichen.
- Wenn Sie Fragen haben oder weitere Hilfe benötigen, besuchen Sie bitte die[GroupDocs.Watermark-Supportforum](https://forum.groupdocs.com/c/watermark/19) oder beziehen Sie sich auf die[Dokumentation](https://reference.groupdocs.com/Watermark/net/).
+ Wenn Sie Fragen haben oder weitere Hilfe benötigen, besuchen Sie bitte die[GroupDocs.Watermark-Supportforum](https://forum.groupdocs.com/c/watermark/19) oder beziehen Sie sich auf die[Dokumentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQs
 ### Welche Dateiformate werden von GroupDocs.Watermark für .NET unterstützt?
- GroupDocs.Watermark für .NET unterstützt eine Vielzahl von Dateiformaten, darunter PDF, DOCX, PPTX, XLSX und viele mehr. Eine vollständige Liste der unterstützten Formate finden Sie im[Dokumentation](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark für .NET unterstützt eine Vielzahl von Dateiformaten, darunter PDF, DOCX, PPTX, XLSX und viele mehr. Eine vollständige Liste der unterstützten Formate finden Sie im[Dokumentation](https://tutorials.groupdocs.com/Watermark/net/).
 ### Kann ich das Erscheinungsbild von Wasserzeichen anpassen?
 Ja, mit GroupDocs.Watermark können Sie das Erscheinungsbild von Wasserzeichen, einschließlich Text-, Bild- und Formwasserzeichen, vollständig anpassen. Sie können Eigenschaften wie Schriftart, Farbe, Größe und Transparenz anpassen.
 ### Gibt es eine Testversion?

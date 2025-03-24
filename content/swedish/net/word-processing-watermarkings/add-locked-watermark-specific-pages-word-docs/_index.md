@@ -3,7 +3,6 @@ title: Lägg till låst vattenstämpel på specifika sidor i Word Docs
 linktitle: Lägg till låst vattenstämpel på specifika sidor i Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till en låst vattenstämpel på specifika sidor i Word-dokument med hjälp av GroupDocs.Watermark for .NET med vår enkla steg-för-steg-guide.
-type: docs
 weight: 12
 url: /sv/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## Slutsats
 Grattis! Du har framgångsrikt lagt till en låst vattenstämpel på specifika sidor i ett Word-dokument med hjälp av GroupDocs.Watermark for .NET. Denna handledning täckte alla viktiga steg från att ladda dokumentet till att spara den vattenmärkta filen. Genom att följa dessa steg kan du se till att dina dokument är säkert vattenmärkta, vilket skyddar ditt innehåll från obehörig redigering och användning.
- För mer information kan du hänvisa till[GroupDocs.Watermark dokumentation](https://reference.groupdocs.com/Watermark/net/) . Om du har några frågor eller behöver ytterligare hjälp, besök gärna[supportforum](https://forum.groupdocs.com/c/watermark/19).
+ För mer information kan du hänvisa till[GroupDocs.Watermark dokumentation](https://tutorials.groupdocs.com/Watermark/net/) . Om du har några frågor eller behöver ytterligare hjälp, besök gärna[supportforum](https://forum.groupdocs.com/c/watermark/19).
 ## FAQ's
 ### Vad är GroupDocs.Watermark för .NET?
 GroupDocs.Watermark for .NET är ett kraftfullt bibliotek som låter utvecklare lägga till vattenstämplar i olika typer av dokument, inklusive Word, PDF, Excel och mer.

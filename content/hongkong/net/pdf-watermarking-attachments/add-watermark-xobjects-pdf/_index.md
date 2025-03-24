@@ -3,7 +3,6 @@ title: 在 PDF 中的 XObject 新增浮水印
 linktitle: 在 PDF 中的 XObject 新增浮水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs.Watermark for .NET 將浮水印新增至 PDF 中的 XObject。請遵循我們的逐步指南以輕鬆實施。
-type: docs
 weight: 20
 url: /zh-hant/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ foreach (PdfPage page in pdfContent.Pages)
 ```
 現在你就得到它了！現在，您的 PDF 的所有 XObject 上都包含浮水印。
 ## 結論
-使用 Groupdocs for .NET 在 PDF 文件中新增浮水印是一個簡單的過程，可提供額外的安全層。透過遵循本教學中概述的步驟，您可以確保您的文件免受未經授權的使用。請記住，您可以隨時參考[文件](https://reference.groupdocs.com/Watermark/net/)了解更多詳細資訊和進階功能。
+使用 Groupdocs for .NET 在 PDF 文件中新增浮水印是一個簡單的過程，可提供額外的安全層。透過遵循本教學中概述的步驟，您可以確保您的文件免受未經授權的使用。請記住，您可以隨時參考[文件](https://tutorials.groupdocs.com/Watermark/net/)了解更多詳細資訊和進階功能。
 ## 常見問題解答
 ### 我可以使用圖像而不是文字作為浮水印嗎？
 是的，Groupdocs.Watermark for .NET 支援文字和影像浮水印。

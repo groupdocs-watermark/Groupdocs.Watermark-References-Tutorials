@@ -3,7 +3,6 @@ title: إزالة الأشكال ذات تنسيق النص المحدد في م
 linktitle: إزالة الأشكال ذات تنسيق النص المحدد في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة الأشكال ذات تنسيق نص معين في مستندات Word باستخدام GroupDocs.Watermark لـ .NET. اتبع دليلنا للتعامل الفعال مع العلامات المائية.
-type: docs
 weight: 31
 url: /ar/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---

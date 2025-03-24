@@ -3,7 +3,6 @@ title: Word Belgelerindeki Köprüleri Kaldırma
 linktitle: Word Belgelerindeki Köprüleri Kaldırma
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinden köprüleri nasıl kaldıracağınızı öğrenin. Belge güvenliğini zahmetsizce artırın.
-type: docs
 weight: 29
 url: /tr/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---

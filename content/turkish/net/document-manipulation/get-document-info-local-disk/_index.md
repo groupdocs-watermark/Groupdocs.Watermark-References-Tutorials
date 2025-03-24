@@ -3,7 +3,6 @@ title: Yerel Diskten Belge Bilgilerini Al
 linktitle: Yerel Diskten Belge Bilgilerini Al
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu kapsamlı adım adım kılavuzla, GroupDocs for .NET'i kullanarak filigranları nasıl ekleyeceğinizi, kaldıracağınızı ve çıkaracağınızı öğrenin.
-type: docs
 weight: 11
 url: /tr/net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /tr/net/document-manipulation/get-document-info-local-disk/
 .NET için GroupDocs.Watermark'ın kullanımına ilişkin nihai kılavuza hoş geldiniz! İster deneyimli bir geliştirici olun, ister yeni başlıyor olun, bu makale, bu güçlü araçla belgelerinize filigran eklemenin temelleri konusunda size yol gösterecektir. Sonunda, belgelerinize filigran yerleştirme konusunda uzmanlaşacak, onların korunmasını ve sizin spesifikasyonlarınıza göre markalanmasını sağlayacaksınız.
 ## Önkoşullar
 Adım adım kılavuza dalmadan önce yerine getirmeniz gereken birkaç önkoşul vardır:
-1.  .NET Framework: Sisteminizde .NET Framework'ün kurulu olduğundan emin olun. GroupDocs.Watermark for .NET, .NET Framework'ün çeşitli sürümleriyle uyumludur;[dokümantasyon](https://reference.groupdocs.com/Watermark/net/) uyumluluk ayrıntıları için.
+1.  .NET Framework: Sisteminizde .NET Framework'ün kurulu olduğundan emin olun. GroupDocs.Watermark for .NET, .NET Framework'ün çeşitli sürümleriyle uyumludur;[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/) uyumluluk ayrıntıları için.
 2.  GroupDocs.Watermark for .NET Kitaplığı: En son sürümü şuradan indirin ve yükleyin:[indirme sayfası](https://releases.groupdocs.com/Watermark/net/).
 3. Geliştirme Ortamı: Bir geliştirme ortamı kurmuş olmalısınız. Visual Studio, .NET geliştirme için popüler bir seçimdir.
 4. Temel C# Bilgisi: C# programlamanın temellerini anlamak, örnekleri takip etmenize yardımcı olacaktır.
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
  Bu adım,`GetWatermarks`Bir belgedeki tüm filigranları alma yöntemi. Daha sonra filigran listesini yineleyebilir ve özelliklerini inceleyebilir veya gerektiğinde ek eylemler gerçekleştirebilirsiniz.
 ## Çözüm
- Tebrikler! Artık belgelerinize filigran eklemek, kaldırmak ve filigranları çıkarmak için GroupDocs.Watermark for .NET'i nasıl kullanacağınızı öğrendiniz. Bu becerilerle belgelerinizi etkili bir şekilde koruyabilir ve markalayabilirsiniz. Unutmayın,[dokümantasyon](https://reference.groupdocs.com/Watermark/net/) Daha ayrıntılı bilgiye veya gelişmiş işlevselliğe ihtiyacınız varsa her zaman yanınızda.
+ Tebrikler! Artık belgelerinize filigran eklemek, kaldırmak ve filigranları çıkarmak için GroupDocs.Watermark for .NET'i nasıl kullanacağınızı öğrendiniz. Bu becerilerle belgelerinizi etkili bir şekilde koruyabilir ve markalayabilirsiniz. Unutmayın,[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/) Daha ayrıntılı bilgiye veya gelişmiş işlevselliğe ihtiyacınız varsa her zaman yanınızda.
 ## SSS'ler
 ### GroupDocs.Watermark for .NET'i herhangi bir .NET sürümüyle kullanabilir miyim?
- Evet, GroupDocs.Watermark for .NET, çeşitli .NET Framework sürümleriyle uyumludur. Kontrol edin[dokümantasyon](https://reference.groupdocs.com/Watermark/net/) ayrıntılar için.
+ Evet, GroupDocs.Watermark for .NET, çeşitli .NET Framework sürümleriyle uyumludur. Kontrol edin[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/) ayrıntılar için.
 ### .NET için GroupDocs.Watermark'ı nereden indirebilirim?
  En son sürümü adresinden indirebilirsiniz.[indirme sayfası](https://releases.groupdocs.com/Watermark/net/).
 ### Geçici lisansı nasıl alabilirim?

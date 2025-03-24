@@ -3,7 +3,6 @@ title: PDF'deki Belirli Yapının Görüntüsünü Değiştir
 linktitle: PDF'deki Belirli Yapının Görüntüsünü Değiştir
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu kapsamlı, adım adım eğitimle GroupDocs.Watermark for .NET'i kullanarak PDF belgelerindeki görüntüleri nasıl değiştireceğinizi öğrenin.
-type: docs
 weight: 38
 url: /tr/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---

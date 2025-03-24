@@ -3,7 +3,6 @@ title: Προσθήκη υδατογραφήματος Artifact σε PDF
 linktitle: Προσθήκη υδατογραφήματος Artifact σε PDF
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα τεχνουργημάτων σε αρχεία PDF χωρίς κόπο χρησιμοποιώντας το Groupdocs.Watermark για .NET. Προστατέψτε τα έγγραφά σας με ευκολία.
-type: docs
 weight: 11
 url: /el/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---

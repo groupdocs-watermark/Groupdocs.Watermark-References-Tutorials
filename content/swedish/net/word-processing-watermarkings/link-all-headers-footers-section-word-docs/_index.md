@@ -3,7 +3,6 @@ title: Länka alla sidhuvuden/sidfötter i avsnitt i Word Docs
 linktitle: Länka alla sidhuvuden/sidfötter i avsnitt i Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Länka sidhuvuden och sidfötter enkelt i Word-dokument med GroupDocs.Watermark för .NET. Säkerställ konsekvens och professionalism med lätthet.
-type: docs
 weight: 25
 url: /sv/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

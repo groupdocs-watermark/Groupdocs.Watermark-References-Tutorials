@@ -3,7 +3,6 @@ title: Συνδέστε όλες τις κεφαλίδες/υποσέλιδα σ
 linktitle: Συνδέστε όλες τις κεφαλίδες/υποσέλιδα σε ενότητες στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Συνδέστε εύκολα κεφαλίδες και υποσέλιδα σε έγγραφα του Word χρησιμοποιώντας GroupDocs.Watermark για .NET. Εξασφαλίστε συνέπεια και επαγγελματισμό με ευκολία.
-type: docs
 weight: 25
 url: /el/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

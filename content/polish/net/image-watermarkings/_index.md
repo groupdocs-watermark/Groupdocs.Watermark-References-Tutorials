@@ -3,7 +3,6 @@ title: Znak wodny obrazu
 linktitle: Znak wodny obrazu
 second_title: GroupDocs.Watermark API .NET
 description: Zapoznaj się z samouczkami GroupDocs.Watermark for .NET dotyczącymi dodawania znaków wodnych do obrazów. Poznaj metody krok po kroku zwiększające bezpieczeństwo dokumentu i budowanie marki.
-type: docs
 weight: 24
 url: /pl/net/image-watermarkings/
 ---

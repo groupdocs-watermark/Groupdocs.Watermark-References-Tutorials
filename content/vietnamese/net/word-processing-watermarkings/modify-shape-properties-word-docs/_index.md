@@ -3,7 +3,6 @@ title: Sửa đổi thuộc tính hình dạng trong tài liệu Word
 linktitle: Sửa đổi thuộc tính hình dạng trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Bảo vệ tài liệu Word của bạn bằng GroupDocs cho .NET. Dễ dàng sửa đổi các thuộc tính hình dạng để tăng cường bảo mật.
-type: docs
 weight: 27
 url: /vi/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---

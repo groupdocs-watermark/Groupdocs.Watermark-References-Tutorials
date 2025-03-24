@@ -3,7 +3,6 @@ title: Afbeelding watermerken
 linktitle: Afbeelding watermerken
 second_title: GroupDocs.Watermark .NET API
 description: Ontdek GroupDocs.Watermark voor .NET-tutorials over het toevoegen van afbeeldingswatermerken. Leer stapsgewijze methoden om de beveiliging en branding van uw document te verbeteren.
-type: docs
 weight: 24
 url: /nl/net/image-watermarkings/
 ---

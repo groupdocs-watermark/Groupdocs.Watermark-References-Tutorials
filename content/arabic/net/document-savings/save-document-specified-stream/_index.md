@@ -3,7 +3,6 @@ title: احفظ المستند في الدفق المحدد
 linktitle: احفظ المستند في الدفق المحدد
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية حفظ مستند في دفق محدد باستخدام GroupDocs.Watermark لـ .NET باستخدام هذا الدليل التفصيلي خطوة بخطوة. مثالية للمطورين من جميع المستويات.
-type: docs
 weight: 12
 url: /ar/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ using (MemoryStream stream = new MemoryStream())
 ### كيف يمكنني الحصول على ترخيص مؤقت؟
  يمكنك الحصول على ترخيص مؤقت من[هذا الرابط](https://purchase.groupdocs.com/temporary-license/).
 ### أين يمكنني العثور على وثائق أكثر تفصيلا؟
- لمزيد من الوثائق التفصيلية، يمكنك زيارة[هنا](https://reference.groupdocs.com/Watermark/net/).
+ لمزيد من الوثائق التفصيلية، يمكنك زيارة[هنا](https://tutorials.groupdocs.com/Watermark/net/).

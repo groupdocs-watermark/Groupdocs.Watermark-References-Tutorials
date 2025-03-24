@@ -3,7 +3,6 @@ title: Kelime İşlem Filigranı
 linktitle: Kelime İşlem Filigranı
 second_title: GroupDocs.Watermark .NET API'si
 description: Word belgelerinde filigran eklemek ve yönetmek için gerekli GroupDocs.Watermark for .NET eğitimlerini keşfedin. Belge güvenliğinizi ve markalamanızı zahmetsizce geliştirin.
-type: docs
 weight: 26
 url: /tr/net/word-processing-watermarkings/
 ---

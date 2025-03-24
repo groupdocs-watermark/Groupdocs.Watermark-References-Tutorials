@@ -3,7 +3,6 @@ title: Få dokumentinformation från Stream
 linktitle: Få dokumentinformation från Stream
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du får dokumentinformation från en ström med GroupDocs.Watermark for .NET med den här steg-för-steg-guiden. Dina dokumenthanteringsmöjligheter utan ansträngning.
-type: docs
 weight: 12
 url: /sv/net/document-manipulation/get-document-info-stream/
 ---
@@ -46,10 +45,10 @@ Console.WriteLine("Document size: {0} bytes", info.Size);
 ```
 
 ## Slutsats
- Att hämta dokumentinformation från en ström med GroupDocs.Watermark för .NET är en enkel process när den delas upp i hanterbara steg. Genom att följa den här guiden kan du effektivt integrera denna funktionalitet i dina applikationer, vilket säkerställer bättre dokumenthantering och integritet. Tveka inte att utforska[dokumentation](https://reference.groupdocs.com/Watermark/net/) för mer avancerade funktioner och alternativ.
+ Att hämta dokumentinformation från en ström med GroupDocs.Watermark för .NET är en enkel process när den delas upp i hanterbara steg. Genom att följa den här guiden kan du effektivt integrera denna funktionalitet i dina applikationer, vilket säkerställer bättre dokumenthantering och integritet. Tveka inte att utforska[dokumentation](https://tutorials.groupdocs.com/Watermark/net/) för mer avancerade funktioner och alternativ.
 ## FAQ's
 ### Vilka filformat stöder GroupDocs.Watermark?
- GroupDocs.Watermark stöder ett brett utbud av filformat inklusive PDF, Word, Excel, PowerPoint och mer. Du hittar hela listan i[dokumentation](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark stöder ett brett utbud av filformat inklusive PDF, Word, Excel, PowerPoint och mer. Du hittar hela listan i[dokumentation](https://tutorials.groupdocs.com/Watermark/net/).
 ### Kan jag prova GroupDocs.Watermark innan jag köper?
  Ja, du kan ladda ner en gratis testversion från[här](https://releases.groupdocs.com/) och ansöka om en tillfällig licens från[här](https://purchase.groupdocs.com/temporary-license/).
 ### Hur installerar jag GroupDocs.Watermark för .NET?

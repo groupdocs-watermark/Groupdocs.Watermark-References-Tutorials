@@ -3,7 +3,6 @@ title: Vízjel hozzáadása a képi műtermékekhez PDF-ben
 linktitle: Vízjel hozzáadása a képi műtermékekhez PDF-ben
 second_title: GroupDocs.Watermark .NET API
 description: Védje meg PDF-fájljait személyre szabott vízjelekkel a GroupDocs.Watermark for .NET segítségével. Könnyen hozzáadhat szöveges vagy képi vízjeleket a PDF-dokumentumok képtermékeihez.
-type: docs
 weight: 18
 url: /hu/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---

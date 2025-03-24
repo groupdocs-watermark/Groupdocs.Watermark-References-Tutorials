@@ -3,7 +3,6 @@ title: Entfernen Sie XObjects mit spezifischer Textformatierung in PDF
 linktitle: Entfernen Sie XObjects mit spezifischer Textformatierung in PDF
 second_title: GroupDocs.Watermark .NET-API
 description: Entfernen Sie mühelos XObjects mit spezifischer Textformatierung aus PDFs mit GroupDocs.Watermark für .NET. Befolgen Sie unseren Leitfaden für eine reibungslose Dokumentenbearbeitung.
-type: docs
 weight: 36
 url: /de/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Speichern Sie abschließend das geänderte PDF-Dokument im angegebenen Ausgabeda
 Damit ist der Vorgang des Entfernens von XObjects mit spezifischer Textformatierung aus einem PDF-Dokument abgeschlossen.
 
 ## Abschluss
-Wenn Sie diese Schritte befolgen, können Sie XObjects mit spezifischer Textformatierung mithilfe von GroupDocs.Watermark für .NET effizient aus PDF-Dokumenten entfernen. Diese leistungsstarke Bibliothek vereinfacht nicht nur Wasserzeichenaufgaben, sondern bietet auch robuste Funktionen zur Dokumentbearbeitung. Eine ausführlichere Dokumentation finden Sie unter[GroupDocs.Watermark für .NET-Dokumentation](https://reference.groupdocs.com/Watermark/net/) . Wenn Sie auf Probleme stoßen oder Fragen haben, wenden Sie sich bitte an die[Hilfeforum](https://forum.groupdocs.com/c/watermark/19) ist ein großartiger Ort, um Hilfe zu suchen.
+Wenn Sie diese Schritte befolgen, können Sie XObjects mit spezifischer Textformatierung mithilfe von GroupDocs.Watermark für .NET effizient aus PDF-Dokumenten entfernen. Diese leistungsstarke Bibliothek vereinfacht nicht nur Wasserzeichenaufgaben, sondern bietet auch robuste Funktionen zur Dokumentbearbeitung. Eine ausführlichere Dokumentation finden Sie unter[GroupDocs.Watermark für .NET-Dokumentation](https://tutorials.groupdocs.com/Watermark/net/) . Wenn Sie auf Probleme stoßen oder Fragen haben, wenden Sie sich bitte an die[Hilfeforum](https://forum.groupdocs.com/c/watermark/19) ist ein großartiger Ort, um Hilfe zu suchen.
 ## FAQs
 ### Kann ich XObjects mit unterschiedlicher Textformatierung entfernen?
 Ja, Sie können den Code ändern, um nach verschiedenen Textformatierungsattributen wie Schriftgröße, Schriftstil oder Farbe zu suchen.

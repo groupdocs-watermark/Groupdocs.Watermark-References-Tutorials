@@ -3,7 +3,6 @@ title: Belgeyi Akıştan Yükle
 linktitle: Belgeyi Akıştan Yükle
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu kılavuzla GroupDocs.Watermark for .NET'i kullanarak belgelere nasıl filigran ekleyeceğinizi öğrenin. Belge güvenliğini artırmak isteyen geliştiriciler için mükemmeldir.
-type: docs
 weight: 11
 url: /tr/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Bu kod, belgeyi yeni eklenen filigranla kaydeder`outputFileName` daha önce tanımladığınız yol.
 
 ## Çözüm
-Tebrikler! GroupDocs.Watermark for .NET'i kullanarak belgenize başarıyla filigran eklediniz. Bu kitaplık, çeşitli belge formatlarındaki filigranları yönetmeyi inanılmaz derecede kolaylaştırır. Metin, resim veya diğer filigran türlerini eklemeniz gerekip gerekmediğini GroupDocs.Watermark'ta ihtiyacınız olan araçlar vardır. Kontrol etmeyi unutmayın[dokümantasyon](https://reference.groupdocs.com/Watermark/net/) daha gelişmiş özellikler ve kişiselleştirme seçenekleri için.
+Tebrikler! GroupDocs.Watermark for .NET'i kullanarak belgenize başarıyla filigran eklediniz. Bu kitaplık, çeşitli belge formatlarındaki filigranları yönetmeyi inanılmaz derecede kolaylaştırır. Metin, resim veya diğer filigran türlerini eklemeniz gerekip gerekmediğini GroupDocs.Watermark'ta ihtiyacınız olan araçlar vardır. Kontrol etmeyi unutmayın[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/) daha gelişmiş özellikler ve kişiselleştirme seçenekleri için.
 ## SSS'ler
 ### GroupDocs.Watermark for .NET'i kullanarak ne tür filigranlar ekleyebilirim?
 Metin filigranları, görüntü filigranları ve hatta karmaşık şekiller ve logolar ekleyebilirsiniz. Kitaplık çok çeşitli özelleştirme seçeneklerini destekler.

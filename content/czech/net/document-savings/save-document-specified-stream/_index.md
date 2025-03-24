@@ -3,7 +3,6 @@ title: Uložit dokument do zadaného streamu
 linktitle: Uložit dokument do zadaného streamu
 second_title: GroupDocs.Watermark .NET API
 description: V tomto podrobném průvodci se dozvíte, jak uložit dokument do určeného streamu pomocí GroupDocs.Watermark for .NET. Ideální pro vývojáře všech úrovní.
-type: docs
 weight: 12
 url: /cs/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Ano, GroupDocs podporuje vodoznaky textové, obrázkové a dokonce i čárové k
 ### Jak mohu získat dočasnou licenci?
  Dočasnou licenci můžete získat od[tento odkaz](https://purchase.groupdocs.com/temporary-license/).
 ### Kde najdu podrobnější dokumentaci?
- Pro podrobnější dokumentaci můžete navštívit[tady](https://reference.groupdocs.com/Watermark/net/).
+ Pro podrobnější dokumentaci můžete navštívit[tady](https://tutorials.groupdocs.com/Watermark/net/).

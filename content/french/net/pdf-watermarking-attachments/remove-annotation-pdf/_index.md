@@ -3,7 +3,6 @@ title: Supprimer l'annotation du PDF
 linktitle: Supprimer l'annotation du PDF
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment supprimer les annotations des PDF à l’aide de GroupDocs.Watermark pour .NET. Améliorez la lisibilité des documents sans effort.
-type: docs
 weight: 29
 url: /fr/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---

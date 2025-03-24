@@ -3,7 +3,6 @@ title: Belgeyi Yerel Diskten Yükle
 linktitle: Belgeyi Yerel Diskten Yükle
 second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs for .NET ile belgelerinizi koruyun ve yönetin. Sorunsuz bir şekilde filigran eklemek için ayrıntılı kılavuzumuzu izleyin.
-type: docs
 weight: 10
 url: /tr/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Çözüm
 Groupdocs'u kullanarak belgelerinize filigran eklemek basit ve etkilidir. Bu kılavuz, ortamınızı ayarlamaktan filigranlı bir belgeyi kaydetmeye kadar tüm süreç boyunca size yol göstermiştir. Bu güçlü araçla belgelerinizin korunduğundan ve fikri mülkiyetinizin güvende olduğundan emin olabilirsiniz. 
- Daha fazla ayrıntı için şurayı kontrol edin:[dokümantasyon](https://reference.groupdocs.com/Watermark/net/) ve herhangi bir sorunla karşılaşırsanız,[destek Forumu](https://forum.groupdocs.com/c/watermark/19) yardım için mükemmel bir yerdir. 
+ Daha fazla ayrıntı için şurayı kontrol edin:[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/) ve herhangi bir sorunla karşılaşırsanız,[destek Forumu](https://forum.groupdocs.com/c/watermark/19) yardım için mükemmel bir yerdir. 
 ## SSS'ler
 ### Filigranlar için özel yazı tipleri kullanabilir miyim?
 Evet, Groupdocs, özel yazı tiplerini destekler. Sisteminizde yüklü olan herhangi bir yazı tipini belirtebilirsiniz.

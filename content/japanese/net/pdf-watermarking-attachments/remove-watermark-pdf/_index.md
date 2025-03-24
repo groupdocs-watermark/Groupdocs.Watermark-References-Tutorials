@@ -3,7 +3,6 @@ title: PDF から透かしを削除する
 linktitle: PDF から透かしを削除する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して PDF ファイルからウォーターマークを削除する方法を学びます。プロフェッショナルなドキュメント編集のための簡単な手順。
-type: docs
 weight: 34
 url: /ja/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---

@@ -3,7 +3,6 @@ title: Master Document Security & Branding with GroupDocs.Watermark
 linktitle: GroupDocs.Watermark Tutorials
 additionalTitle: GroupDocs API References
 description: Unlock the power of GroupDocs.Watermark with our .NET and Java tutorials. Master watermarking techniques for document security and branding.
-type: docs
 weight: 11
 url: /
 is_root: true

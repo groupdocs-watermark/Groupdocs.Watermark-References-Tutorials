@@ -3,7 +3,6 @@ title: Documenten laden
 linktitle: Documenten laden
 second_title: GroupDocs.Watermark .NET API
 description: Ontdek GroupDocs.Watermark voor .NET-tutorials om documenten te laden en van een watermerk te voorzien, zodat documentbeveiliging en branding gegarandeerd zijn met stapsgewijze handleidingen.
-type: docs
 weight: 22
 url: /nl/net/document-loadings/
 ---

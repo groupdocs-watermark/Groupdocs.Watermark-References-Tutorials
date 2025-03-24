@@ -3,7 +3,6 @@ title: 지정된 스트림에 문서 저장
 linktitle: 지정된 스트림에 문서 저장
 second_title: GroupDocs.Watermark .NET API
 description: 이 단계별 가이드를 통해 .NET용 GroupDocs.Watermark를 사용하여 지정된 스트림에 문서를 저장하는 방법을 알아보세요. 모든 수준의 개발자에게 적합합니다.
-type: docs
 weight: 12
 url: /ko/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ using (MemoryStream stream = new MemoryStream())
 ### 임시 면허는 어떻게 얻을 수 있나요?
  임시면허를 취득하실 수 있습니다.[이 링크](https://purchase.groupdocs.com/temporary-license/).
 ### 더 자세한 문서는 어디서 찾을 수 있나요?
- 더 자세한 문서를 보려면 다음을 방문하세요.[여기](https://reference.groupdocs.com/Watermark/net/).
+ 더 자세한 문서를 보려면 다음을 방문하세요.[여기](https://tutorials.groupdocs.com/Watermark/net/).

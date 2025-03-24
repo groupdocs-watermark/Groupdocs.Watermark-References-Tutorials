@@ -3,7 +3,6 @@ title: Voeg een watermerk toe met vorminstellingen in Word-documenten
 linktitle: Voeg een watermerk toe met vorminstellingen in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u watermerken met vorminstellingen aan Word-documenten kunt toevoegen met GroupDocs voor .NET. Bescherm uw documenten effectief.
-type: docs
 weight: 20
 url: /nl/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---

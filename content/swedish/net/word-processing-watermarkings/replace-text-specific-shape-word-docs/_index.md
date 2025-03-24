@@ -3,7 +3,6 @@ title: Ersätt text för specifik form i Word Docs
 linktitle: Ersätt text för specifik form i Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du ersätter text för specifika former i Word-dokument med GroupDocs.Watermark för .NET. Följ vår steg-för-steg handledning.
-type: docs
 weight: 35
 url: /sv/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---

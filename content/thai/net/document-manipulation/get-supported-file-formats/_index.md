@@ -3,7 +3,6 @@ title: รับรูปแบบไฟล์ที่รองรับ
 linktitle: รับรูปแบบไฟล์ที่รองรับ
 second_title: GroupDocs.Watermark .NET API
 description: เพิ่มลายน้ำให้กับเอกสารของคุณได้อย่างง่ายดายโดยใช้ GroupDocs.Watermark สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนที่ครอบคลุมของเราเพื่อปกป้องทรัพย์สินดิจิทัลของคุณ
-type: docs
 weight: 13
 url: /th/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ foreach (FileType fileType in supportedFileTypes)
 ### ฉันจะซื้อใบอนุญาตสำหรับ GroupDocs.Watermark ได้อย่างไร
  สามารถซื้อใบอนุญาตได้โดยตรงจาก[หน้าซื้อ](https://purchase.groupdocs.com/buy).
 ### มีเอกสารสำหรับ GroupDocs.Watermark หรือไม่
- ใช่ มีเอกสารประกอบครบถ้วน[ที่นี่](https://reference.groupdocs.com/Watermark/net/).
+ ใช่ มีเอกสารประกอบครบถ้วน[ที่นี่](https://tutorials.groupdocs.com/Watermark/net/).

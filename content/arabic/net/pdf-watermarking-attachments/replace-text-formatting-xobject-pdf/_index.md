@@ -3,7 +3,6 @@ title: استبدال النص بتنسيق XObject في PDF
 linktitle: استبدال النص بتنسيق XObject في PDF
 second_title: GroupDocs.Watermark .NET API
 description: قم بتحسين قدرات معالجة مستندات .NET لديك باستخدام GroupDocs للعلامة المائية لـ .NET. تعرف على كيفية استبدال النص بالتنسيق في ملفات PDF بسهولة.
-type: docs
 weight: 45
 url: /ar/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---

@@ -3,7 +3,6 @@ title: Удалить артефакт из PDF
 linktitle: Удалить артефакт из PDF
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как легко удалить артефакты из PDF-документов с помощью GroupDocs.Watermark для .NET. Освойте этот процесс шаг за шагом с помощью нашего подробного руководства.
-type: docs
 weight: 31
 url: /ru/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
@@ -66,4 +65,4 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### Могу ли я приобрести временную лицензию на GroupDocs.Watermark для .NET?
  Да, вы можете приобрести временную лицензию из предоставленных[источник](https://purchase.groupdocs.com/temporary-license/).
 ### Существуют ли какие-либо исчерпывающие ресурсы документации для GroupDocs.Watermark для .NET?
- Да, вы можете обратиться к доступной подробной документации.[здесь](https://reference.groupdocs.com/Watermark/net/) за подробное руководство и понимание.
+ Да, вы можете обратиться к доступной подробной документации.[здесь](https://tutorials.groupdocs.com/Watermark/net/) за подробное руководство и понимание.

@@ -3,7 +3,6 @@ title: Adicionar marca d'água a imagens em PDF
 linktitle: Adicionar marca d'água a imagens em PDF
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a adicionar marcas d'água a imagens em documentos PDF usando GroupDocs.Watermark for .NET com nosso tutorial passo a passo detalhado. Proteja seus PDFs facilmente.
-type: docs
 weight: 19
 url: /pt/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ Absolutamente! Você pode percorrer cada página do PDF e aplicar marcas d’ág
 ### Preciso de uma licença para usar GroupDocs.Watermark for .NET?
  Sim, é necessária uma licença. Você pode obter um[licença temporária](https://purchase.groupdocs.com/temporary-license/) para fins de avaliação.
 ### Onde posso encontrar mais documentação sobre GroupDocs.Watermark for .NET?
- Você pode encontrar documentação abrangente sobre o[Página de documentação do GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ Você pode encontrar documentação abrangente sobre o[Página de documentação do GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

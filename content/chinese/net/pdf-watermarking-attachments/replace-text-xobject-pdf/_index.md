@@ -3,7 +3,6 @@ title: 替换 PDF 中特定 XObject 的文本
 linktitle: 替换 PDF 中特定 XObject 的文本
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 高效替换 PDF 中的文本。将水印无缝集成到您的 .NET 应用程序中。
-type: docs
 weight: 44
 url: /zh/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
@@ -68,6 +67,6 @@ watermarker.Save(outputFileName);
 ### 如何获得 GroupDocs.Watermark for .NET 的临时许可？
 临时许可证可以从[临时许可证页面](https://purchase.groupdocs.com/temporary-license/).
 ### 在哪里可以找到 GroupDocs.Watermark for .NET 的文档？
-详细文档可在[文档页](https://reference.groupdocs.com/Watermark/net/).
+详细文档可在[文档页](https://tutorials.groupdocs.com/Watermark/net/).
 ### GroupDocs.Watermark for .NET 提供哪些支持选项？
 您可以从 GroupDocs 社区论坛寻求支持和帮助[这里](https://forum.groupdocs.com/c/watermark/19).

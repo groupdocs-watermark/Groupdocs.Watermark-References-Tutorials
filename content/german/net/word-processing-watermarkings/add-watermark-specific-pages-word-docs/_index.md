@@ -3,7 +3,6 @@ title: Fügen Sie Wasserzeichen zu bestimmten Seiten in Word-Dokumenten hinzu
 linktitle: Fügen Sie Wasserzeichen zu bestimmten Seiten in Word-Dokumenten hinzu
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit Groupdocs für .NET mühelos Wasserzeichen zu bestimmten Seiten in Word-Dokumenten hinzufügen. Verbessern Sie die Dokumentensicherheit und das Branding.
-type: docs
 weight: 18
 url: /de/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---

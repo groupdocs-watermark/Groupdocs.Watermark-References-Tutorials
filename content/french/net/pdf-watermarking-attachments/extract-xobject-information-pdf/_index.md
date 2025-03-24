@@ -3,7 +3,6 @@ title: Extraire les informations XObject du PDF
 linktitle: Extraire les informations XObject du PDF
 second_title: API GroupDocs.Watermark .NET
 description: Libérez la puissance du filigrane de documents avec GroupDocs.Watermark pour .NET. Gérez en toute transparence les filigranes dans les PDF, les documents Word et les images.
-type: docs
 weight: 25
 url: /fr/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---

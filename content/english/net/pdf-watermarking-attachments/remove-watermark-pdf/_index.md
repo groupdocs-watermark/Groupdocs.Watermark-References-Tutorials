@@ -3,7 +3,6 @@ title: Remove Watermark from PDF
 linktitle: Remove Watermark from PDF
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to remove watermarks from PDF files using GroupDocs.Watermark for .NET. Easy steps for professional document editing.
-type: docs
 weight: 34
 url: /net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---

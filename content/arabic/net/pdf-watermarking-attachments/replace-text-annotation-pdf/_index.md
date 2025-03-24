@@ -3,7 +3,6 @@ title: استبدال النص لتعليق توضيحي محدد في PDF
 linktitle: استبدال النص لتعليق توضيحي محدد في PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية استبدال النص في تعليقات توضيحية معينة في PDF باستخدام Groupdocs.Watermark لـ .NET من خلال هذا البرنامج التعليمي الشامل خطوة بخطوة.
-type: docs
 weight: 40
 url: /ar/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---

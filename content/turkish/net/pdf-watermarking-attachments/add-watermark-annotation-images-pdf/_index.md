@@ -3,7 +3,6 @@ title: PDF'deki Ek Açıklama Görüntülerine Filigran Ekleme
 linktitle: PDF'deki Ek Açıklama Görüntülerine Filigran Ekleme
 second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs.Watermark for .NET'i kullanarak açıklama görüntülerine filigran ekleyerek PDF belgelerinizi nasıl koruyacağınızı öğrenin.
-type: docs
 weight: 17
 url: /tr/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---

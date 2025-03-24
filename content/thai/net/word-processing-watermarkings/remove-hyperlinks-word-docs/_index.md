@@ -3,7 +3,6 @@ title: ลบไฮเปอร์ลิงก์ในเอกสาร Word
 linktitle: ลบไฮเปอร์ลิงก์ในเอกสาร Word
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีลบไฮเปอร์ลิงก์ออกจากเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET เพิ่มความปลอดภัยให้กับเอกสารได้อย่างง่ายดาย
-type: docs
 weight: 29
 url: /th/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---

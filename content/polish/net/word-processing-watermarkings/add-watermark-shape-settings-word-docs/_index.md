@@ -3,7 +3,6 @@ title: Dodaj znak wodny z ustawieniami kształtu w dokumentach programu Word
 linktitle: Dodaj znak wodny z ustawieniami kształtu w dokumentach programu Word
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak dodawać znaki wodne z ustawieniami kształtu do dokumentów programu Word za pomocą programu GroupDocs dla platformy .NET. Skutecznie chroń swoje dokumenty.
-type: docs
 weight: 20
 url: /pl/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---

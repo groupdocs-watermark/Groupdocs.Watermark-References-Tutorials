@@ -3,7 +3,6 @@ title: PDF 内の特定の成果物のテキストを置換
 linktitle: PDF 内の特定の成果物のテキストを置換
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して PDF ドキュメント内の特定のアーティファクトのテキストを置換する方法を説明します。ドキュメントのセキュリティと整合性を簡単に強化します。
-type: docs
 weight: 42
 url: /ja/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---

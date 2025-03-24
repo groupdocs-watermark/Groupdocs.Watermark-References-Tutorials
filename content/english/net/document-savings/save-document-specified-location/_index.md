@@ -3,7 +3,6 @@ title: Save Document to Specified Location
 linktitle: Save Document to Specified Location
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to easily add watermarks to your documents using GroupDocs.Watermark for .NET with this step-by-step guide. Enhance document security.
-type: docs
 weight: 11
 url: /net/document-savings/save-document-specified-location/
 ---
@@ -12,7 +11,7 @@ In the digital age, securing documents has become more crucial than ever. Waterm
 ## Prerequisites
 Before diving into the tutorial, make sure you have the following prerequisites in place:
 - .NET Development Environment: Ensure you have Visual Studio or any other .NET development environment installed.
-- GroupDocs.Watermark for .NET Library: Download and reference the library in your project. [Download GroupDocs.Watermark for .NET](https://releases.groupdocs.com/Watermark/net/)
+- GroupDocs.Watermark for .NET Library: Download and tutorials the library in your project. [Download GroupDocs.Watermark for .NET](https://releases.groupdocs.com/Watermark/net/)
 - Basic Knowledge of C# Programming: Understanding basic C# programming concepts will be helpful.
 - Document to Watermark: Have a sample document ready that you want to apply the watermark to.
 ## Import Namespaces

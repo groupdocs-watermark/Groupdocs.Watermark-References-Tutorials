@@ -3,7 +3,6 @@ title: Ek Açıklama Bilgilerini PDF'den Çıkarın
 linktitle: Ek Açıklama Bilgilerini PDF'den Çıkarın
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu ayrıntılı, adım adım kılavuzda GroupDocs.Watermark for .NET'i kullanarak PDF belgelerinden ek açıklama bilgilerini nasıl çıkaracağınızı öğrenin.
-type: docs
 weight: 23
 url: /tr/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
@@ -103,7 +102,7 @@ using (StreamWriter writer = new StreamWriter(outputFileName))
 ```
 ## Çözüm
 GroupDocs.Watermark for .NET'i kullanarak PDF belgelerinden ek açıklama bilgilerinin çıkarılması, size çok fazla zaman ve emek kazandırabilecek basit bir işlemdir. Bu kılavuzda özetlenen adımları izleyerek bu işlevselliği projelerinize kolayca entegre edebilir ve değerli açıklama verilerinin çıkarılmasını otomatikleştirebilirsiniz.
- İster büyük hacimli PDF'leri yönetiyor olun, ister yalnızca belirli bilgileri ayıklamak istiyor olun, GroupDocs.Watermark for .NET güvenilir ve etkili bir çözüm sunar. Kontrol etmeyi unutmayın[dokümantasyon](https://reference.groupdocs.com/Watermark/net/) daha gelişmiş özellikler ve kişiselleştirme seçenekleri için.
+ İster büyük hacimli PDF'leri yönetiyor olun, ister yalnızca belirli bilgileri ayıklamak istiyor olun, GroupDocs.Watermark for .NET güvenilir ve etkili bir çözüm sunar. Kontrol etmeyi unutmayın[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/) daha gelişmiş özellikler ve kişiselleştirme seçenekleri için.
 ## SSS'ler
 ### .NET için GroupDocs.Watermark nedir?
 GroupDocs.Watermark for .NET, geliştiricilerin PDF'ler, Word belgeleri ve resimler de dahil olmak üzere çeşitli belge formatlarındaki filigranları eklemesine, aramasına ve kaldırmasına olanak tanıyan kapsamlı bir kitaplıktır.

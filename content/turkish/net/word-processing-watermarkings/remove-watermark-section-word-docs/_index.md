@@ -3,7 +3,6 @@ title: Word Dokümanlarındaki Bölümden Filigranı Kaldırma
 linktitle: Word Dokümanlarındaki Bölümden Filigranı Kaldırma
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinin belirli bölümlerinden filigranları nasıl kaldıracağınızı öğrenin. Kapsamlı eğitim burada mevcuttur.
-type: docs
 weight: 32
 url: /tr/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Générer un aperçu du document
 linktitle: Générer un aperçu du document
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment générer des aperçus de documents à l'aide de GroupDocs.Watermark pour .NET avec ce guide. Améliorez la sécurité et la gestion de vos documents sans effort.
-type: docs
 weight: 10
 url: /fr/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Conclusion
 La génération d'aperçus de documents à l'aide de GroupDocs.Watermark pour .NET est un processus simple qui peut être réalisé avec seulement quelques lignes de code. En suivant les étapes décrites dans ce guide, vous pouvez facilement configurer votre projet, configurer les options nécessaires et générer des aperçus pour vos documents. Cette puissante bibliothèque simplifie non seulement le processus de tatouage, mais fournit également des fonctionnalités robustes pour gérer et manipuler les filigranes.
- Si vous avez des questions ou avez besoin d'aide supplémentaire, n'hésitez pas à visiter le[Forum d'assistance GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) ou se référer au[Documentation](https://reference.groupdocs.com/Watermark/net/).
+ Si vous avez des questions ou avez besoin d'aide supplémentaire, n'hésitez pas à visiter le[Forum d'assistance GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) ou se référer au[Documentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### Quels formats de fichiers sont pris en charge par GroupDocs.Watermark pour .NET ?
- GroupDocs.Watermark pour .NET prend en charge un large éventail de formats de fichiers, notamment PDF, DOCX, PPTX, XLSX et bien d'autres. Pour une liste complète des formats pris en charge, reportez-vous au[Documentation](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark pour .NET prend en charge un large éventail de formats de fichiers, notamment PDF, DOCX, PPTX, XLSX et bien d'autres. Pour une liste complète des formats pris en charge, reportez-vous au[Documentation](https://tutorials.groupdocs.com/Watermark/net/).
 ### Puis-je personnaliser l’apparence des filigranes ?
 Oui, GroupDocs.Watermark vous permet de personnaliser entièrement l’apparence des filigranes, y compris les filigranes de texte, d’image et de forme. Vous pouvez ajuster les propriétés telles que la police, la couleur, la taille et la transparence.
 ### Existe-t-il une version d'essai disponible ?

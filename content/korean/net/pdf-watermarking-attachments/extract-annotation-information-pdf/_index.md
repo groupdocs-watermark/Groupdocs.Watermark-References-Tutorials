@@ -3,7 +3,6 @@ title: PDF에서 주석 정보 추출
 linktitle: PDF에서 주석 정보 추출
 second_title: GroupDocs.Watermark .NET API
 description: 이 상세한 단계별 가이드에서 .NET용 GroupDocs.Watermark를 사용하여 PDF 문서에서 주석 정보를 추출하는 방법을 알아보세요.
-type: docs
 weight: 23
 url: /ko/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
@@ -103,7 +102,7 @@ using (StreamWriter writer = new StreamWriter(outputFileName))
 ```
 ## 결론
 .NET용 GroupDocs.Watermark를 사용하여 PDF 문서에서 주석 정보를 추출하는 것은 많은 시간과 노력을 절약할 수 있는 간단한 프로세스입니다. 이 가이드에 설명된 단계를 따르면 이 기능을 프로젝트에 쉽게 통합하고 귀중한 주석 데이터 추출을 자동화할 수 있습니다.
- 대량의 PDF를 관리하거나 단순히 특정 정보를 추출해야 하는 경우 .NET용 GroupDocs.Watermark는 안정적이고 효율적인 솔루션을 제공합니다. 꼭 확인해 보세요.[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/) 고급 기능과 사용자 정의 옵션을 확인하세요.
+ 대량의 PDF를 관리하거나 단순히 특정 정보를 추출해야 하는 경우 .NET용 GroupDocs.Watermark는 안정적이고 효율적인 솔루션을 제공합니다. 꼭 확인해 보세요.[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/) 고급 기능과 사용자 정의 옵션을 확인하세요.
 ## FAQ
 ### .NET용 GroupDocs.Watermark란 무엇입니까?
 .NET용 GroupDocs.Watermark는 개발자가 PDF, Word 문서 및 이미지를 포함한 다양한 문서 형식에서 워터마크를 추가, 검색 및 제거할 수 있는 포괄적인 라이브러리입니다.

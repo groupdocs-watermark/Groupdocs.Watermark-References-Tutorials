@@ -3,7 +3,6 @@ title: Hapus Lampiran dari PDF
 linktitle: Hapus Lampiran dari PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus lampiran dari dokumen PDF dengan mudah menggunakan GroupDocs.Watermark untuk .NET. Tingkatkan efisiensi manajemen dokumen Anda.
-type: docs
 weight: 33
 url: /id/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

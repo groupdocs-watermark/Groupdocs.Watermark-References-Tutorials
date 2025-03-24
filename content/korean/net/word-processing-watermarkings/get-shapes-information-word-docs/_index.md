@@ -3,7 +3,6 @@ title: Word Docs에서 도형 정보 가져오기
 linktitle: Word Docs에서 도형 정보 가져오기
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs for .NET을 사용하면 Word 문서에서 귀중한 통찰력을 쉽게 얻을 수 있습니다. 향상된 데이터 분석을 위해 형상 정보를 원활하게 추출합니다.
-type: docs
 weight: 24
 url: /ko/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---

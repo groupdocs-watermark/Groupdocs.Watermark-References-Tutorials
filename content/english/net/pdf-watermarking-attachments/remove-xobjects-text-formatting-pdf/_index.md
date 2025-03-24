@@ -3,7 +3,6 @@ title: Remove XObjects with Specific Text Formatting in PDF
 linktitle: Remove XObjects with Specific Text Formatting in PDF
 second_title: GroupDocs.Watermark .NET API
 description: Effortlessly remove XObjects with specific text formatting from PDFs using GroupDocs.Watermark for .NET. Follow our guide for seamless document manipulation.
-type: docs
 weight: 36
 url: /net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -29,7 +28,7 @@ using System;
 ## Step 1: Set Up Your Project
 Before you write any code, set up your project in Visual Studio or your preferred .NET development environment.
 1. Create a New Project: Start by creating a new Console Application project in Visual Studio.
-2. Add References: Add references to the GroupDocs.Watermark for .NET library.
+2. Add References: Add tutorialss to the GroupDocs.Watermark for .NET library.
 ## Step 2: Define Paths
 Next, define the paths for your input and output files. This ensures that your code knows where to look for the PDF document and where to save the modified document.
 ```csharp
@@ -85,7 +84,7 @@ Finally, save the modified PDF document to the specified output file path.
 This completes the process of removing XObjects with specific text formatting from a PDF document.
 
 ## Conclusion
-By following these steps, you can efficiently remove XObjects with specific text formatting from PDF documents using GroupDocs.Watermark for .NET. This powerful library not only simplifies watermarking tasks but also offers robust capabilities for document manipulation. For more detailed documentation, visit the [GroupDocs.Watermark for .NET documentation](https://reference.groupdocs.com/Watermark/net/). If you encounter any issues or have questions, the [support forum](https://forum.groupdocs.com/c/watermark/19) is a great place to seek help.
+By following these steps, you can efficiently remove XObjects with specific text formatting from PDF documents using GroupDocs.Watermark for .NET. This powerful library not only simplifies watermarking tasks but also offers robust capabilities for document manipulation. For more detailed documentation, visit the [GroupDocs.Watermark for .NET documentation](https://tutorials.groupdocs.com/Watermark/net/). If you encounter any issues or have questions, the [support forum](https://forum.groupdocs.com/c/watermark/19) is a great place to seek help.
 ## FAQ's
 ### Can I remove XObjects with different text formatting?
 Yes, you can modify the code to check for different text formatting attributes such as font size, font style, or color.

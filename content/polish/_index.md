@@ -3,7 +3,6 @@ title: Bezpieczeństwo i branding dokumentów głównych dzięki GroupDocs.Water
 linktitle: Poradniki GroupDocs.Watermark
 additionalTitle: Referencje API GroupDocs
 description: Odblokuj możliwości GroupDocs.Watermark dzięki naszym samouczkom dotyczącym .NET i Java. Opanuj techniki znakowania wodnego w celu zapewnienia bezpieczeństwa dokumentów i budowania marki.
-type: docs
 weight: 11
 url: /pl/
 is_root: true

@@ -3,7 +3,6 @@ title: إضافة علامة مائية مع نوع هامش الصفحة في P
 linktitle: إضافة علامة مائية مع نوع هامش الصفحة في PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية مع نوع هامش الصفحة في ملف PDF باستخدام Groupdocs لـ .NET. تأمين المستندات الخاصة بك دون عناء.
-type: docs
 weight: 21
 url: /ar/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---

@@ -3,7 +3,6 @@ title: Ganti Bentuk Gambar di Word Docs
 linktitle: Ganti Bentuk Gambar di Word Docs
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengganti gambar bentuk secara terprogram di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Sederhanakan tugas manipulasi dokumen dengan mudah.
-type: docs
 weight: 33
 url: /id/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Extrahieren Sie alle Anhänge aus PDF
 linktitle: Extrahieren Sie alle Anhänge aus PDF
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit Groupdocs.Watermark für .NET alle Anhänge aus einer PDF-Datei extrahieren. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für einen reibungslosen Extraktionsprozess.
-type: docs
 weight: 22
 url: /de/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---

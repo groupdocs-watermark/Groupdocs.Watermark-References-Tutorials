@@ -3,7 +3,6 @@ title: 为 PDF 添加注释水印
 linktitle: 为 PDF 添加注释水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 轻松向 PDF 文档添加注释水印。轻松增强文档品牌和安全性。
-type: docs
 weight: 10
 url: /zh/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---

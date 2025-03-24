@@ -3,7 +3,6 @@ title: Word Docs의 섹션 이미지에 워터마크 추가
 linktitle: Word Docs의 섹션 이미지에 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET을 사용하여 Word 문서의 이미지에 워터마크를 추가하는 방법을 알아보세요. 안전하고 전문적인 문서 보호를 위한 가이드를 따르세요.
-type: docs
 weight: 16
 url: /ko/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## 결론
 Word 문서 내의 이미지에 워터마크를 추가하는 것은 콘텐츠를 보호하는 강력한 방법입니다. .NET용 Groupdocs.Watermark를 사용하면 이 프로세스가 간단하고 효율적입니다. 문서가 안전하고 잘 보호되도록 하려면 이 튜토리얼에 설명된 단계를 따르세요.
- 더 자세한 문서를 보려면 다음을 방문하세요.[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/) . 질문이 있거나 추가 지원이 필요한 경우 다음을 확인하세요.[지원 포럼](https://forum.groupdocs.com/c/watermark/19).
+ 더 자세한 문서를 보려면 다음을 방문하세요.[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/) . 질문이 있거나 추가 지원이 필요한 경우 다음을 확인하세요.[지원 포럼](https://forum.groupdocs.com/c/watermark/19).
 ## FAQ
 ### 워터마크 텍스트를 사용자 정의할 수 있나요?
 예, 워터마크 텍스트, 글꼴, 크기, 정렬 및 회전을 필요에 맞게 사용자 정의할 수 있습니다.
 ### 여러 섹션에 워터마크를 추가할 수 있나요?
 예, 각 섹션을 반복하여 모든 섹션의 이미지에 워터마크를 적용할 수 있습니다.
 ### 다른 문서 형식에 이 방법을 사용할 수 있나요?
- Groupdocs는 다양한 문서 형식을 지원합니다. 을 체크 해봐[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/) 상세 사항은.
+ Groupdocs는 다양한 문서 형식을 지원합니다. 을 체크 해봐[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/) 상세 사항은.
 ### 임시 라이센스는 어떻게 얻을 수 있나요?
  임시면허를 취득할 수 있습니다.[여기](https://purchase.groupdocs.com/temporary-license/).
 ### Groupdocs.Watermark를 사용하는 동안 문제가 발생하면 어떻게 됩니까?

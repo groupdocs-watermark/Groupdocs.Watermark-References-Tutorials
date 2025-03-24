@@ -3,7 +3,6 @@ title: 문서 미리보기 생성
 linktitle: 문서 미리보기 생성
 second_title: GroupDocs.Watermark .NET API
 description: 이 가이드를 통해 .NET용 GroupDocs.Watermark를 사용하여 문서 미리보기를 생성하는 방법을 알아보세요. 문서 보안 및 관리를 손쉽게 강화하세요.
-type: docs
 weight: 10
 url: /ko/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## 결론
 .NET용 GroupDocs.Watermark를 사용하여 문서 미리보기를 생성하는 것은 단 몇 줄의 코드만으로 수행할 수 있는 간단한 프로세스입니다. 이 가이드에 설명된 단계를 따르면 쉽게 프로젝트를 설정하고, 필요한 옵션을 구성하고, 문서에 대한 미리 보기를 생성할 수 있습니다. 이 강력한 라이브러리는 워터마킹 프로세스를 단순화할 뿐만 아니라 워터마크 관리 및 조작을 위한 강력한 기능도 제공합니다.
- 궁금한 점이 있거나 추가 도움이 필요하면 주저하지 말고[GroupDocs.Watermark 지원 포럼](https://forum.groupdocs.com/c/watermark/19) 또는[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/).
+ 궁금한 점이 있거나 추가 도움이 필요하면 주저하지 말고[GroupDocs.Watermark 지원 포럼](https://forum.groupdocs.com/c/watermark/19) 또는[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### .NET용 GroupDocs.Watermark는 어떤 파일 형식을 지원합니까?
- .NET용 GroupDocs.Watermark는 PDF, DOCX, PPTX, XLSX 등을 포함한 광범위한 파일 형식을 지원합니다. 지원되는 형식의 전체 목록은 다음을 참조하세요.[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/).
+ .NET용 GroupDocs.Watermark는 PDF, DOCX, PPTX, XLSX 등을 포함한 광범위한 파일 형식을 지원합니다. 지원되는 형식의 전체 목록은 다음을 참조하세요.[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/).
 ### 워터마크의 모양을 사용자 정의할 수 있나요?
 예, GroupDocs.Watermark를 사용하면 텍스트, 이미지, 모양 워터마크를 포함한 워터마크의 모양을 완전히 사용자 정의할 수 있습니다. 글꼴, 색상, 크기, 투명도 등의 속성을 조정할 수 있습니다.
 ### 평가판을 사용할 수 있나요?

@@ -3,7 +3,6 @@ title: Charger un document protégé par mot de passe
 linktitle: Charger un document protégé par mot de passe
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes à des documents protégés par mot de passe à l'aide de Groupdocs Watermark for .NET avec notre guide étape par étape. Sécurisez et marquez vos fichiers facilement.
-type: docs
 weight: 13
 url: /fr/net/document-loadings/load-password-protected-document/
 ---

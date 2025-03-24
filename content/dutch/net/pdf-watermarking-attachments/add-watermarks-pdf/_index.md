@@ -3,7 +3,6 @@ title: Voeg watermerken toe aan PDF
 linktitle: Voeg watermerken toe aan PDF
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u tekst- en afbeeldingswatermerken aan uw PDF's kunt toevoegen met GroupDocs.Watermark voor .NET met onze uitgebreide stapsgewijze handleiding.
-type: docs
 weight: 14
 url: /nl/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---

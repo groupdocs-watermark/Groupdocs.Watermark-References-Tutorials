@@ -3,7 +3,6 @@ title: Přidat vodoznak do obrazových artefaktů v PDF
 linktitle: Přidat vodoznak do obrazových artefaktů v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Chraňte své soubory PDF pomocí personalizovaných vodoznaků pomocí GroupDocs.Watermark for .NET. Snadno přidávejte textové nebo obrazové vodoznaky k obrazovým artefaktům v dokumentech PDF.
-type: docs
 weight: 18
 url: /cs/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---

@@ -3,7 +3,6 @@ title: Resim Filigranı Ekle
 linktitle: Resim Filigranı Ekle
 second_title: GroupDocs.Watermark .NET API'si
 description: Ayrıntılı, adım adım eğitimimizle GroupDocs.Watermark for .NET'i kullanarak belgelerinize görüntü filigranlarını nasıl ekleyeceğinizi öğrenin.
-type: docs
 weight: 11
 url: /tr/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ Evet, GroupDocs.Watermark hem .NET Framework hem de .NET Core ile uyumludur.
 ### Tek bir belgeye birden fazla filigran eklemek mümkün mü?
  Kesinlikle! numaralı telefonu arayarak birden fazla filigran ekleyebilirsiniz.`Add` yöntemi farklı filigran örnekleriyle birden çok kez kullanın.
 ### Daha fazla örnek ve belgeyi nerede bulabilirim?
- Daha fazla örnek ve ayrıntılı belgeler için şu adresi ziyaret edin:[GroupDocs.Watermark belgeleri](https://reference.groupdocs.com/Watermark/net/).
+ Daha fazla örnek ve ayrıntılı belgeler için şu adresi ziyaret edin:[GroupDocs.Watermark belgeleri](https://tutorials.groupdocs.com/Watermark/net/).

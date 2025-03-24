@@ -3,7 +3,6 @@ title: PDF の XObject にウォーターマークを追加する
 linktitle: PDF の XObject にウォーターマークを追加する
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs.Watermark for .NET を使用して PDF の XObject にウォーターマークを追加する方法を学びます。簡単に実装するには、ステップバイステップのガイドに従ってください。
-type: docs
 weight: 20
 url: /ja/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ foreach (PdfPage page in pdfContent.Pages)
 ```
 そして、それができました！ PDF のすべての XObject に透かしが含まれるようになりました。
 ## 結論
- Groupdocs for .NET を使用して PDF ドキュメントにウォーターマークを追加することは、追加のセキュリティ層を提供する簡単なプロセスです。このチュートリアルで概説されている手順に従うことで、ドキュメントを不正使用から確実に保護できます。いつでも参照できることを覚えておいてください。[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/)より詳細な情報と高度な機能については、
+ Groupdocs for .NET を使用して PDF ドキュメントにウォーターマークを追加することは、追加のセキュリティ層を提供する簡単なプロセスです。このチュートリアルで概説されている手順に従うことで、ドキュメントを不正使用から確実に保護できます。いつでも参照できることを覚えておいてください。[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/)より詳細な情報と高度な機能については、
 ## よくある質問
 ### テキストの代わりに画像を透かしとして使用できますか?
 はい、Groupdocs.Watermark for .NET はテキストと画像の両方のウォーターマークをサポートしています。

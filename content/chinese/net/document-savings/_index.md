@@ -3,7 +3,6 @@ title: 文件保存
 linktitle: 文件保存
 second_title: GroupDocs.Watermark .NET API
 description: 浏览 GroupDocs.Watermark for .NET 教程，了解如何保存带有水印的文档。了解增强文档安全性和管理的分步方法。
-type: docs
 weight: 23
 url: /zh/net/document-savings/
 ---

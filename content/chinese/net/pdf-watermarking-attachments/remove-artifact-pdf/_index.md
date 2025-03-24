@@ -3,7 +3,6 @@ title: 从 PDF 中删除伪影
 linktitle: 从 PDF 中删除伪影
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 轻松删除 PDF 文档中的伪影。通过我们的综合教程逐步掌握该过程。
-type: docs
 weight: 31
 url: /zh/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
@@ -66,4 +65,4 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### 我可以购买 GroupDocs.Watermark for .NET 的临时许可证吗？
 是的，您可以从提供的服务中获取临时许可证[来源](https://purchase.groupdocs.com/temporary-license/).
 ### 是否有适用于 .NET 的 GroupDocs.Watermark 的全面文档资源？
-是的，您可以参考可用的详细文档[这里](https://reference.groupdocs.com/Watermark/net/)以获得全面的指导和见解。
+是的，您可以参考可用的详细文档[这里](https://tutorials.groupdocs.com/Watermark/net/)以获得全面的指导和见解。

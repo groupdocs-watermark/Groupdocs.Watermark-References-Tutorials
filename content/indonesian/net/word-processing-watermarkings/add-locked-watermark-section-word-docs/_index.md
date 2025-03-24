@@ -3,7 +3,6 @@ title: Tambahkan Tanda Air Terkunci ke Bagian di Dokumen Word
 linktitle: Tambahkan Tanda Air Terkunci ke Bagian di Dokumen Word
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air terkunci ke bagian tertentu di dokumen Word menggunakan Groupdocs untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
-type: docs
 weight: 13
 url: /id/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
@@ -70,4 +69,4 @@ Groupdocs.Watermark for .NET adalah perpustakaan canggih yang memungkinkan penge
 ### Jenis tanda air apa yang dapat saya tambahkan menggunakan Groupdocs.Watermark?
 Groupdocs.Watermark mendukung berbagai jenis tanda air, termasuk tanda air teks, gambar, dan bentuk, menawarkan opsi penyesuaian ekstensif untuk setiap jenis.
 ### Di mana saya dapat menemukan informasi lebih lanjut tentang Groupdocs.Watermark untuk .NET?
- Untuk informasi lebih lanjut, Anda dapat mengunjungi[dokumentasi](https://reference.groupdocs.com/Watermark/net/) Dan[forum dukungan](https://forum.groupdocs.com/c/watermark/19).
+ Untuk informasi lebih lanjut, Anda dapat mengunjungi[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/) Dan[forum dukungan](https://forum.groupdocs.com/c/watermark/19).

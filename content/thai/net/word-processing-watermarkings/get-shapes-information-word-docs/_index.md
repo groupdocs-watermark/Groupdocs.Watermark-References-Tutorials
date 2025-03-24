@@ -3,7 +3,6 @@ title: รับข้อมูลรูปร่างในเอกสาร 
 linktitle: รับข้อมูลรูปร่างในเอกสาร Word
 second_title: GroupDocs.Watermark .NET API
 description: ปลดล็อกข้อมูลเชิงลึกอันมีค่าจากเอกสาร Word ได้อย่างง่ายดายด้วย GroupDocs Watermark สำหรับ .NET แยกข้อมูลรูปร่างได้อย่างลงตัวเพื่อการวิเคราะห์ข้อมูลที่ได้รับการปรับปรุง
-type: docs
 weight: 24
 url: /th/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Fügen Sie Wasserzeichen zu Bildern in PDF hinzu
 linktitle: Fügen Sie Wasserzeichen zu Bildern in PDF hinzu
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in unserem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mithilfe von GroupDocs.Watermark für .NET Wasserzeichen zu Bildern in PDF-Dokumenten hinzufügen. Sichern Sie Ihre PDFs ganz einfach.
-type: docs
 weight: 19
 url: /de/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ Absolut! Sie können jede Seite im PDF durchlaufen und den Bildern auf jeder Sei
 ### Benötige ich eine Lizenz, um GroupDocs.Watermark für .NET zu verwenden?
  Ja, eine Lizenz ist erforderlich. Sie können eine erhalten[temporäre Lizenz](https://purchase.groupdocs.com/temporary-license/) zu Auswertungszwecken.
 ### Wo finde ich weitere Dokumentation zu GroupDocs.Watermark für .NET?
- Eine umfassende Dokumentation finden Sie hier[GroupDocs.Watermark-Dokumentationsseite](https://reference.groupdocs.com/Watermark/net/).
+ Eine umfassende Dokumentation finden Sie hier[GroupDocs.Watermark-Dokumentationsseite](https://tutorials.groupdocs.com/Watermark/net/).

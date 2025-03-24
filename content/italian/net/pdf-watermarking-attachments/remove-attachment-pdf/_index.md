@@ -3,7 +3,6 @@ title: Rimuovi l'allegato dal PDF
 linktitle: Rimuovi l'allegato dal PDF
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come rimuovere facilmente gli allegati dai documenti PDF utilizzando GroupDocs.Watermark per .NET. Migliora l'efficienza della gestione dei documenti.
-type: docs
 weight: 33
 url: /it/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

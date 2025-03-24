@@ -3,7 +3,6 @@ title: 在 Word 文件中設定不同的首頁頁首/頁尾
 linktitle: 在 Word 文件中設定不同的首頁頁首/頁尾
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 在 Word 文件的首頁上設定不同的頁首和頁尾。
-type: docs
 weight: 36
 url: /zh-hant/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ GroupDocs.Watermark for .NET 提供了一個簡單的解決方案，用於在 Wo
 ### 我可以購買臨時許可證以供短期使用嗎？
 是的，可以從 GroupDocs for .NET 取得臨時許可證。[臨時許可證購買頁面](https://purchase.groupdocs.com/temporary-license/).
 ### 在哪裡可以找到 GroupDocs.Watermark for .NET 的綜合文件？
- GroupDocs.Watermark for .NET 的詳細文件可在[參考頁](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark for .NET 的詳細文件可在[參考頁](https://tutorials.groupdocs.com/Watermark/net/).

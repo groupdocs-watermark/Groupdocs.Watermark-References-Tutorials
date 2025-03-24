@@ -3,7 +3,6 @@ title: Ładowanie dokumentu
 linktitle: Ładowanie dokumentu
 second_title: GroupDocs.Watermark API .NET
 description: Odkryj samouczki GroupDocs.Watermark dla .NET dotyczące ładowania i znakowania dokumentów, zapewniając bezpieczeństwo dokumentów i budowanie marki dzięki przewodnikom krok po kroku.
-type: docs
 weight: 22
 url: /pl/net/document-loadings/
 ---

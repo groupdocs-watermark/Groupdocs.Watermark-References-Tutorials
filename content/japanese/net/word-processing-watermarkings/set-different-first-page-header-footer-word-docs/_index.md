@@ -3,7 +3,6 @@ title: Word ドキュメントで異なる最初のページのヘッダー/フ�
 linktitle: Word ドキュメントで異なる最初のページのヘッダー/フッターを設定する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、Word 文書の最初のページにさまざまなヘッダーとフッターを設定する方法を学びます。
-type: docs
 weight: 36
 url: /ja/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ GroupDocs.Watermark for .NET は、Word 文書の最初のページにさまざ�
 ### 短期使用のために一時ライセンスを購入できますか?
 はい、GroupDocs for .NET の一時ライセンスは、から取得できます。[一時ライセンス購入ページ](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Watermark for .NET の包括的なドキュメントはどこで見つけられますか?
- GroupDocs.Watermark for .NET の詳細なドキュメントは、次の場所で入手できます。[参考ページ](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark for .NET の詳細なドキュメントは、次の場所で入手できます。[参考ページ](https://tutorials.groupdocs.com/Watermark/net/).

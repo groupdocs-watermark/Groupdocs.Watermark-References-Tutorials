@@ -3,7 +3,6 @@ title: Zastąp obraz określonym artefaktem w formacie PDF
 linktitle: Zastąp obraz określonym artefaktem w formacie PDF
 second_title: GroupDocs.Watermark API .NET
 description: Z tego wszechstronnego samouczka krok po kroku dowiesz się, jak zastępować obrazy w dokumentach PDF przy użyciu narzędzia GroupDocs.Watermark dla platformy .NET.
-type: docs
 weight: 38
 url: /pl/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---

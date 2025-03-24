@@ -3,7 +3,6 @@ title: 將文件儲存到指定流
 linktitle: 將文件儲存到指定流
 second_title: GroupDocs.Watermark .NET API
 description: 透過此逐步指南，了解如何使用 GroupDocs.Watermark for .NET 將文件儲存到指定的串流。非常適合各個層級的開發人員。
-type: docs
 weight: 12
 url: /zh-hant/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ GroupDocs.Watermark for .NET 是一個功能強大的程式庫，可讓開發人
 ### 我怎麼才能獲得臨時許可證？
 您可以從以下地址取得臨時許可證[這個連結](https://purchase.groupdocs.com/temporary-license/).
 ### 在哪裡可以找到更詳細的文件？
-如需更詳細的文檔，您可以訪問[這裡](https://reference.groupdocs.com/Watermark/net/).
+如需更詳細的文檔，您可以訪問[這裡](https://tutorials.groupdocs.com/Watermark/net/).

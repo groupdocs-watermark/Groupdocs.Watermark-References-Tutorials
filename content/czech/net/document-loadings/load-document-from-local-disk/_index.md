@@ -3,7 +3,6 @@ title: Načíst dokument z místního disku
 linktitle: Načíst dokument z místního disku
 second_title: GroupDocs.Watermark .NET API
 description: Chraňte a spravujte své dokumenty pomocí Groupdocs pro .NET. Postupujte podle našeho podrobného průvodce a přidejte vodoznaky hladce.
-type: docs
 weight: 10
 url: /cs/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Závěr
 Přidávání vodoznaků do dokumentů pomocí Groupdocs je jednoduché a efektivní. Tato příručka vás provede celým procesem od nastavení prostředí až po uložení dokumentu s vodoznakem. Pomocí tohoto výkonného nástroje můžete zajistit ochranu vašich dokumentů a zabezpečení vašeho duševního vlastnictví. 
- Pro další podrobnosti zkontrolujte[dokumentace](https://reference.groupdocs.com/Watermark/net/) a pokud narazíte na nějaké problémy,[Fórum podpory](https://forum.groupdocs.com/c/watermark/19) je skvělým místem pro pomoc. 
+ Pro další podrobnosti zkontrolujte[dokumentace](https://tutorials.groupdocs.com/Watermark/net/) a pokud narazíte na nějaké problémy,[Fórum podpory](https://forum.groupdocs.com/c/watermark/19) je skvělým místem pro pomoc. 
 ## FAQ
 ### Mohu pro vodoznaky použít vlastní písma?
 Ano, Groupdocs podporuje vlastní písma. Můžete zadat libovolné písmo nainstalované ve vašem systému.

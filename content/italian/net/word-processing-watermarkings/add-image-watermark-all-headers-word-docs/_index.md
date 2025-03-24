@@ -3,7 +3,6 @@ title: Aggiungi filigrana immagine a tutte le intestazioni nei documenti Word
 linktitle: Aggiungi filigrana immagine a tutte le intestazioni nei documenti Word
 second_title: API GroupDocs.Watermark .NET
 description: Aggiungi facilmente filigrane di immagini a tutte le intestazioni nei documenti Word utilizzando GroupDocs.Watermark per .NET. Segui la nostra guida passo passo con esempi di codice dettagliati.
-type: docs
 weight: 10
 url: /it/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---

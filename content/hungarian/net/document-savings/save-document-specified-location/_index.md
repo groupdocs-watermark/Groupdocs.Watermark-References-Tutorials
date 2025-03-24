@@ -3,7 +3,6 @@ title: Mentse a dokumentumot a megadott helyre
 linktitle: Mentse a dokumentumot a megadott helyre
 second_title: GroupDocs.Watermark .NET API
 description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan adhat hozzá egyszerűen vízjeleket dokumentumaihoz a GroupDocs.Watermark for .NET segítségével. Növelje a dokumentumok biztonságát.
-type: docs
 weight: 11
 url: /hu/net/document-savings/save-document-specified-location/
 ---

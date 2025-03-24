@@ -3,7 +3,6 @@ title: Wasserzeichen aus Abschnitt in Word-Dokumenten entfernen
 linktitle: Wasserzeichen aus Abschnitt in Word-Dokumenten entfernen
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Wasserzeichen aus bestimmten Abschnitten in Word-Dokumenten entfernen. Umfassendes Tutorial hier verfügbar.
-type: docs
 weight: 32
 url: /de/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---

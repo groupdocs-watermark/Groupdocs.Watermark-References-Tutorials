@@ -3,7 +3,6 @@ title: Vervang afbeelding voor specifiek artefact in PDF
 linktitle: Vervang afbeelding voor specifiek artefact in PDF
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u afbeeldingen in PDF-documenten vervangt met GroupDocs.Watermark voor .NET met deze uitgebreide, stapsgewijze zelfstudie.
-type: docs
 weight: 38
 url: /nl/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---

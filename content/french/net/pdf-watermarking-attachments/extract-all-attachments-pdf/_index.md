@@ -3,7 +3,6 @@ title: Extraire toutes les pièces jointes du PDF
 linktitle: Extraire toutes les pièces jointes du PDF
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment extraire toutes les pièces jointes d'un PDF à l'aide de Groupdocs.Watermark pour .NET. Suivez notre guide étape par étape pour un processus d’extraction fluide.
-type: docs
 weight: 22
 url: /fr/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---

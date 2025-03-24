@@ -3,7 +3,6 @@ title: Kép vízjel hozzáadása a Streamből
 linktitle: Kép vízjel hozzáadása a Streamből
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat hozzá képes vízjeleket dokumentumokhoz a GroupDocs.Watermark for .NET segítségével. Kövesse lépésről lépésre útmutatónkat a vízjel zökkenőmentes integrációjához.
-type: docs
 weight: 12
 url: /hu/net/image-watermarkings/add-image-watermark-from-stream/
 ---

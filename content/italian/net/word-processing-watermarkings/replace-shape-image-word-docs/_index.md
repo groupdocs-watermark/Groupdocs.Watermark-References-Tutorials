@@ -3,7 +3,6 @@ title: Sostituisci l'immagine della forma in documenti Word
 linktitle: Sostituisci l'immagine della forma in documenti Word
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come sostituire a livello di codice le immagini delle forme nei documenti Word utilizzando GroupDocs.Watermark per .NET. Semplifica le attività di manipolazione dei documenti senza sforzo.
-type: docs
 weight: 33
 url: /it/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---

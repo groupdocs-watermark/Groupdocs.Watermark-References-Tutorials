@@ -3,7 +3,6 @@ title: Lägg till bildvattenstämpel
 linktitle: Lägg till bildvattenstämpel
 second_title: GroupDocs.Watermark .NET API
 description: Lägg enkelt till bildvattenstämplar till dina dokument med GroupDocs.Watermark för .NET. Skydda din immateriella egendom med lätthet.
-type: docs
 weight: 10
 url: /sv/net/watermarking-basics/add-image-watermark/
 ---

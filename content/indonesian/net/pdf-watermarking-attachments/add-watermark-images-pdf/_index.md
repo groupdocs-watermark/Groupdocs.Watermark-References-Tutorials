@@ -3,7 +3,6 @@ title: Tambahkan Tanda Air ke Gambar di PDF
 linktitle: Tambahkan Tanda Air ke Gambar di PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air ke gambar dalam dokumen PDF menggunakan GroupDocs.Watermark untuk .NET dengan tutorial langkah demi langkah kami yang mendetail. Amankan PDF Anda dengan mudah.
-type: docs
 weight: 19
 url: /id/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ Sangat! Anda dapat menelusuri setiap halaman dalam PDF dan menerapkan tanda air 
 ### Apakah saya memerlukan lisensi untuk menggunakan GroupDocs.Watermark untuk .NET?
  Ya, lisensi diperlukan. Anda dapat memperoleh a[izin sementara](https://purchase.groupdocs.com/temporary-license/) untuk tujuan evaluasi.
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang GroupDocs.Watermark untuk .NET?
- Anda dapat menemukan dokumentasi lengkap di[Halaman dokumentasi GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ Anda dapat menemukan dokumentasi lengkap di[Halaman dokumentasi GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

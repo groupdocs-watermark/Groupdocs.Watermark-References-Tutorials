@@ -3,7 +3,6 @@ title: Document opslaan op opgegeven locatie
 linktitle: Document opslaan op opgegeven locatie
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u eenvoudig watermerken aan uw documenten kunt toevoegen met GroupDocs.Watermark voor .NET met deze stapsgewijze handleiding. Verbeter de documentbeveiliging.
-type: docs
 weight: 11
 url: /nl/net/document-savings/save-document-specified-location/
 ---

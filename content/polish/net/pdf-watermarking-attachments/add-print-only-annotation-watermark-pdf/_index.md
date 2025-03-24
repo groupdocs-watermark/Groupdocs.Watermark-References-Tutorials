@@ -3,7 +3,6 @@ title: Dodaj znak wodny z adnotacją tylko do druku do pliku PDF
 linktitle: Dodaj znak wodny z adnotacją tylko do druku do pliku PDF
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak dodawać znaki wodne z adnotacjami przeznaczonymi tylko do druku do plików PDF przy użyciu programu GroupDocs.Watermark dla platformy .NET. Bez wysiłku zwiększ bezpieczeństwo dokumentów i branding.
-type: docs
 weight: 13
 url: /pl/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---

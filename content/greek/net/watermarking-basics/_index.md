@@ -3,7 +3,6 @@ title: Βασικά υδατογραφήματα
 linktitle: Βασικά υδατογραφήματα
 second_title: GroupDocs.Watermark .NET API
 description: Ανακαλύψτε μαθήματα GroupDocs.Watermark για .NET για να προσθέσετε υδατογραφήματα εικόνας και κειμένου χωρίς κόπο. Προστατέψτε τα έγγραφά σας με αυτούς τους εύκολους οδηγούς.
-type: docs
 weight: 20
 url: /el/net/watermarking-basics/
 ---

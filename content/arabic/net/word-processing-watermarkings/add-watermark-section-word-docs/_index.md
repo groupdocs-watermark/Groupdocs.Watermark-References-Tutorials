@@ -3,7 +3,6 @@ title: إضافة علامة مائية إلى القسم في مستندات Wo
 linktitle: إضافة علامة مائية إلى القسم في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: يمكنك إضافة علامات مائية بسهولة إلى مستندات Word باستخدام GroupDocs.Watermark لـ .NET. قم بحماية المحتوى الخاص بك باستخدام هذا الدليل البسيط.
-type: docs
 weight: 15
 url: /ar/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Erhalten Sie unterstützte Dateiformate
 linktitle: Erhalten Sie unterstützte Dateiformate
 second_title: GroupDocs.Watermark .NET-API
 description: Fügen Sie mit GroupDocs.Watermark für .NET mühelos Wasserzeichen zu Ihren Dokumenten hinzu. Befolgen Sie unsere umfassende Schritt-für-Schritt-Anleitung zum Schutz Ihrer digitalen Vermögenswerte.
-type: docs
 weight: 13
 url: /de/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ Sie können das bereitgestellte Code-Snippet verwenden, um alle unterstützten D
 ### Wie kann ich eine Lizenz für GroupDocs.Watermark kaufen?
  Lizenzen können direkt bei erworben werden[Kaufseite](https://purchase.groupdocs.com/buy).
 ### Gibt es Dokumentation für GroupDocs.Watermark?
- Ja, eine umfassende Dokumentation ist vorhanden[Hier](https://reference.groupdocs.com/Watermark/net/).
+ Ja, eine umfassende Dokumentation ist vorhanden[Hier](https://tutorials.groupdocs.com/Watermark/net/).

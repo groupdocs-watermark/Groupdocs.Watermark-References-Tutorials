@@ -3,7 +3,6 @@ title: 透かしの基本
 linktitle: 透かしの基本
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET チュートリアルを参照して、画像やテキストのウォーターマークを簡単に追加してください。これらのわかりやすいガイドを使用して文書を保護してください。
-type: docs
 weight: 20
 url: /ja/net/watermarking-basics/
 ---

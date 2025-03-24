@@ -3,7 +3,6 @@ title: 在 Word 文档中获取形状信息
 linktitle: 在 Word 文档中获取形状信息
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs for .NET 轻松从 Word 文档中获取有价值的见解。无缝提取形状信息以增强数据分析。
-type: docs
 weight: 24
 url: /zh/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---

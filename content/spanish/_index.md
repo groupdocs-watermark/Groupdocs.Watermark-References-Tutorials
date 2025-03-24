@@ -3,7 +3,6 @@ title: Domine la seguridad y la marca de los documentos con GroupDocs.Watermark
 linktitle: Tutoriales de GroupDocs.Watermark
 additionalTitle: Referencias de la API de GroupDocs
 description: Desbloquee el poder de GroupDocs.Watermark con nuestros tutoriales de .NET y Java. Domine las técnicas de marcas de agua para la seguridad de documentos y la creación de marcas.
-type: docs
 weight: 11
 url: /es/
 is_root: true

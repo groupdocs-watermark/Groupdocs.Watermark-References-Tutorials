@@ -3,7 +3,6 @@ title: 从 Word 文档中的部分中删除水印
 linktitle: 从 Word 文档中的部分中删除水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 从 Word 文档中的特定部分删除水印。此处提供综合教程。
-type: docs
 weight: 32
 url: /zh/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---

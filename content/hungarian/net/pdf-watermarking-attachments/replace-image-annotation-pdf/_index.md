@@ -3,7 +3,6 @@ title: Cserélje le a képet egy adott megjegyzésre a PDF-ben
 linktitle: Cserélje le a képet egy adott megjegyzésre a PDF-ben
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan cserélheti le a képeket adott PDF-jegyzetekben a GroupDocs.Watermark for .NET segítségével. Ez a részletes útmutató a dokumentumok betöltésétől a változtatások mentéséig mindenre kiterjed.
-type: docs
 weight: 37
 url: /hu/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 Ez a lépés biztosítja, hogy az összes változtatást elmentse, és a módosított dokumentum használatra kész.
 ## Következtetés
-Gratulálunk! Sikeresen lecserélte a képeket egy PDF-dokumentum adott megjegyzéseiben a GroupDocs.Watermark for .NET segítségével. Ez a nagy teljesítményű könyvtár megkönnyíti az összetett PDF vízjelezési feladatok kezelését, javítva ezzel a dokumentumkezelési képességeket. További testreszabáshoz és speciális funkciókhoz fedezze fel a[GroupDocs.Watermark dokumentáció](https://reference.groupdocs.com/Watermark/net/).
+Gratulálunk! Sikeresen lecserélte a képeket egy PDF-dokumentum adott megjegyzéseiben a GroupDocs.Watermark for .NET segítségével. Ez a nagy teljesítményű könyvtár megkönnyíti az összetett PDF vízjelezési feladatok kezelését, javítva ezzel a dokumentumkezelési képességeket. További testreszabáshoz és speciális funkciókhoz fedezze fel a[GroupDocs.Watermark dokumentáció](https://tutorials.groupdocs.com/Watermark/net/).
 ## GYIK
 ### Cserélhetem a képeket a megjegyzésekben a PDF minden oldalán?
 Igen, a PDF összes oldala között ismételgethet úgy, hogy a hurkot úgy állítja be, hogy az egyes oldalak megjegyzései végigmenjenek.

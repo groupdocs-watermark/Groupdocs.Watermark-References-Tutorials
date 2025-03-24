@@ -3,7 +3,6 @@ title: Tekstwatermerk toevoegen
 linktitle: Tekstwatermerk toevoegen
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u tekstwatermerken aan uw documenten kunt toevoegen met Groupdocs Watermark voor .NET met deze stapsgewijze handleiding.
-type: docs
 weight: 11
 url: /nl/net/watermarking-basics/add-text-watermark/
 ---

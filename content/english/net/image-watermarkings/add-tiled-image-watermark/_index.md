@@ -3,7 +3,6 @@ title: Add Tiled Image Watermark
 linktitle: Add Tiled Image Watermark
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add tiled image watermarks to your documents using GroupDocs.Watermark for .NET. Easy, efficient, and customizable.
-type: docs
 weight: 10
 url: /net/image-watermarkings/add-tiled-image-watermark/
 ---

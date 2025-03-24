@@ -3,7 +3,6 @@ title: Word Docs에서 도형 텍스트를 서식 있는 텍스트로 바꾸기
 linktitle: Word Docs에서 도형 텍스트를 서식 있는 텍스트로 바꾸기
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 도형 텍스트를 서식 있는 텍스트로 바꾸는 방법을 알아보세요. 문서 편집 기능을 쉽게 사용할 수 있습니다.
-type: docs
 weight: 34
 url: /ko/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---

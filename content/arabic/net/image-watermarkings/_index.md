@@ -3,7 +3,6 @@ title: العلامة المائية للصورة
 linktitle: العلامة المائية للصورة
 second_title: GroupDocs.Watermark .NET API
 description: استكشف GroupDocs.Watermark لبرامج .NET التعليمية حول إضافة علامات مائية للصور. تعرف على أساليب خطوة بخطوة لتحسين أمان المستند وعلامته التجارية.
-type: docs
 weight: 24
 url: /ar/net/image-watermarkings/
 ---

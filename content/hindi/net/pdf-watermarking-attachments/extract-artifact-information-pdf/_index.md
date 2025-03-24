@@ -3,7 +3,6 @@ title: पीडीएफ से कलाकृतियों की जान
 linktitle: पीडीएफ से कलाकृतियों की जानकारी निकालें
 second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके PDF फ़ाइलों से आर्टिफैक्ट जानकारी निकालने का तरीका जानें। अपनी दस्तावेज़ प्रसंस्करण क्षमताओं को बढ़ाएँ।
-type: docs
 weight: 24
 url: /hi/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---

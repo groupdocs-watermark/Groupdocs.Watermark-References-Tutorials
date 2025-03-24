@@ -3,7 +3,6 @@ title: Tìm hình mờ ở đầu trang/chân trang trong Word Docs
 linktitle: Tìm hình mờ ở đầu trang/chân trang trong Word Docs
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách tìm và xóa hình mờ khỏi tài liệu Word một cách hiệu quả bằng GroupDocs cho .NET, đảm bảo tính toàn vẹn và tính chuyên nghiệp của tài liệu.
-type: docs
 weight: 22
 url: /vi/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---

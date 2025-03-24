@@ -3,7 +3,6 @@ title: احصل على معلومات المستند من الدفق
 linktitle: احصل على معلومات المستند من الدفق
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية الحصول على معلومات المستند من دفق باستخدام GroupDocs.Watermark لـ .NET باستخدام هذا الدليل التفصيلي خطوة بخطوة. قدرات إدارة المستندات الخاصة بك دون عناء.
-type: docs
 weight: 12
 url: /ar/net/document-manipulation/get-document-info-stream/
 ---
@@ -46,10 +45,10 @@ Console.WriteLine("Document size: {0} bytes", info.Size);
 ```
 
 ## خاتمة
- يعد استرداد معلومات المستند من دفق باستخدام GroupDocs.Watermark لـ .NET عملية مباشرة عند تقسيمها إلى خطوات يمكن التحكم فيها. باتباع هذا الدليل، يمكنك دمج هذه الوظيفة بكفاءة في تطبيقاتك، مما يضمن إدارة المستندات وسلامتها بشكل أفضل. لا تتردد في استكشاف[توثيق](https://reference.groupdocs.com/Watermark/net/) لمزيد من الميزات والخيارات المتقدمة.
+ يعد استرداد معلومات المستند من دفق باستخدام GroupDocs.Watermark لـ .NET عملية مباشرة عند تقسيمها إلى خطوات يمكن التحكم فيها. باتباع هذا الدليل، يمكنك دمج هذه الوظيفة بكفاءة في تطبيقاتك، مما يضمن إدارة المستندات وسلامتها بشكل أفضل. لا تتردد في استكشاف[توثيق](https://tutorials.groupdocs.com/Watermark/net/) لمزيد من الميزات والخيارات المتقدمة.
 ## الأسئلة الشائعة
 ### ما تنسيقات الملفات التي يدعمها GroupDocs.Watermark؟
- يدعم GroupDocs.Watermark مجموعة واسعة من تنسيقات الملفات بما في ذلك PDF وWord وExcel وPowerPoint والمزيد. يمكنك العثور على القائمة الكاملة في[توثيق](https://reference.groupdocs.com/Watermark/net/).
+ يدعم GroupDocs.Watermark مجموعة واسعة من تنسيقات الملفات بما في ذلك PDF وWord وExcel وPowerPoint والمزيد. يمكنك العثور على القائمة الكاملة في[توثيق](https://tutorials.groupdocs.com/Watermark/net/).
 ### هل يمكنني تجربة GroupDocs.Watermark قبل الشراء؟
  نعم، يمكنك تنزيل نسخة تجريبية مجانية من[هنا](https://releases.groupdocs.com/) والتقدم بطلب للحصول على ترخيص مؤقت من[هنا](https://purchase.groupdocs.com/temporary-license/).
 ### كيف أقوم بتثبيت GroupDocs.Watermark لـ .NET؟

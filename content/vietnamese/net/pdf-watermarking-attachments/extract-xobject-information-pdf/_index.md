@@ -3,7 +3,6 @@ title: Trích xuất thông tin XObject từ PDF
 linktitle: Trích xuất thông tin XObject từ PDF
 second_title: API GroupDocs.Watermark .NET
 description: Khai phá sức mạnh của hình mờ tài liệu bằng GroupDocs.Watermark cho .NET. Quản lý liền mạch hình mờ trong tệp PDF, tài liệu Word và hình ảnh.
-type: docs
 weight: 25
 url: /vi/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---

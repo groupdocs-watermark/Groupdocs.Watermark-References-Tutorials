@@ -3,7 +3,6 @@ title: Verwijder annotaties met specifieke tekstopmaak in PDF
 linktitle: Verwijder annotaties met specifieke tekstopmaak in PDF
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u annotaties met specifieke tekstopmaak in PDF-documenten kunt verwijderen met behulp van Groupdocs voor .NET.
-type: docs
 weight: 30
 url: /nl/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
@@ -72,7 +71,7 @@ Ja, Groupdocs.Watermark ondersteunt verschillende documentformaten, waaronder DO
 ### Is er een gratis proefversie beschikbaar voor Groupdocs.Watermark voor .NET?
  Ja, u heeft toegang tot een gratis proefversie van Groupdocs.Watermark voor .NET vanaf[hier](https://releases.groupdocs.com/).
 ### Waar kan ik documentatie vinden voor Groupdocs.Watermark voor .NET?
- U kunt gedetailleerde documentatie en API-referenties vinden[hier](https://reference.groupdocs.com/Watermark/net/).
+ U kunt gedetailleerde documentatie en API-referenties vinden[hier](https://tutorials.groupdocs.com/Watermark/net/).
 ### Hoe kan ik ondersteuning krijgen voor eventuele problemen of vragen met betrekking tot Groupdocs.Watermark?
  U kunt uw vragen of problemen posten op het Groupdocs.Watermark-forum[hier](https://forum.groupdocs.com/c/watermark/19).
 ### Kan ik een tijdelijke licentie kopen voor Groupdocs.Watermark voor .NET?

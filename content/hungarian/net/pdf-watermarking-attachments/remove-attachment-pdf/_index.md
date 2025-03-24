@@ -3,7 +3,6 @@ title: Távolítsa el a mellékletet a PDF-ből
 linktitle: Távolítsa el a mellékletet a PDF-ből
 second_title: GroupDocs.Watermark .NET API
 description: Tanulja meg, hogyan távolíthat el egyszerűen mellékleteket PDF-dokumentumokból a GroupDocs.Watermark for .NET segítségével. Növelje dokumentumkezelésének hatékonyságát.
-type: docs
 weight: 33
 url: /hu/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

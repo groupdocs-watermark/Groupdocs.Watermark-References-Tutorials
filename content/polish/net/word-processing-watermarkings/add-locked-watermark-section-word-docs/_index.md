@@ -3,7 +3,6 @@ title: Dodaj zablokowany znak wodny do sekcji w dokumentach programu Word
 linktitle: Dodaj zablokowany znak wodny do sekcji w dokumentach programu Word
 second_title: GroupDocs.Watermark API .NET
 description: Z tego obszernego przewodnika krok po kroku dowiesz się, jak dodać zablokowany znak wodny do określonej sekcji dokumentów programu Word przy użyciu narzędzia Groupdocs.
-type: docs
 weight: 13
 url: /pl/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
@@ -70,4 +69,4 @@ Groupdocs.Watermark dla .NET to potężna biblioteka, która umożliwia programi
 ### Jakie typy znaków wodnych mogę dodać za pomocą Groupdocs.Watermark?
 Groupdocs.Watermark obsługuje różne typy znaków wodnych, w tym znaki wodne tekstowe, graficzne i kształtowe, oferując szerokie opcje dostosowywania dla każdego typu.
 ### Gdzie mogę znaleźć więcej informacji na temat Groupdocs.Watermark dla .NET?
- Więcej informacji można znaleźć na stronie[dokumentacja](https://reference.groupdocs.com/Watermark/net/) I[forum wsparcia](https://forum.groupdocs.com/c/watermark/19).
+ Więcej informacji można znaleźć na stronie[dokumentacja](https://tutorials.groupdocs.com/Watermark/net/) I[forum wsparcia](https://forum.groupdocs.com/c/watermark/19).

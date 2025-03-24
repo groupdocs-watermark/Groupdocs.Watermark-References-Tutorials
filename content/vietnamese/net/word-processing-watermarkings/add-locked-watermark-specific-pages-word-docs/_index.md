@@ -3,7 +3,6 @@ title: Thêm hình mờ bị khóa vào các trang cụ thể trong tài liệu 
 linktitle: Thêm hình mờ bị khóa vào các trang cụ thể trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ bị khóa vào các trang cụ thể trong tài liệu Word bằng GroupDocs.Watermark dành cho .NET với hướng dẫn từng bước dễ dàng của chúng tôi.
-type: docs
 weight: 12
 url: /vi/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## Phần kết luận
 Chúc mừng! Bạn đã thêm thành công hình mờ bị khóa vào các trang cụ thể trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Hướng dẫn này bao gồm tất cả các bước cần thiết từ tải tài liệu đến lưu tệp có hình chìm mờ. Bằng cách làm theo các bước này, bạn có thể đảm bảo rằng tài liệu của mình được gắn hình mờ một cách an toàn, bảo vệ nội dung của bạn khỏi bị chỉnh sửa và sử dụng trái phép.
- Để biết thêm thông tin, bạn có thể tham khảo[Tài liệu GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/) . Nếu bạn có thắc mắc hoặc cần hỗ trợ thêm, vui lòng truy cập[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/watermark/19).
+ Để biết thêm thông tin, bạn có thể tham khảo[Tài liệu GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/) . Nếu bạn có thắc mắc hoặc cần hỗ trợ thêm, vui lòng truy cập[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/watermark/19).
 ## Câu hỏi thường gặp
 ### GroupDocs.Watermark cho .NET là gì?
 GroupDocs.Watermark cho .NET là một thư viện mạnh mẽ cho phép các nhà phát triển thêm hình mờ vào nhiều loại tài liệu khác nhau, bao gồm Word, PDF, Excel, v.v.

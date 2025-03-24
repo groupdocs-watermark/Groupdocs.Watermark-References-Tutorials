@@ -3,7 +3,6 @@ title: PDF-Seite rastern
 linktitle: PDF-Seite rastern
 second_title: GroupDocs.Watermark .NET-API
 description: Verbessern Sie die Dokumentensicherheit mit GroupDocs für .NET. Fügen Sie Wasserzeichen nahtlos zu PDF und anderen Formaten hinzu.
-type: docs
 weight: 28
 url: /de/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---

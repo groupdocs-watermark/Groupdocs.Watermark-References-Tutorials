@@ -3,7 +3,6 @@ title: Get Supported File Formats
 linktitle: Get Supported File Formats
 second_title: GroupDocs.Watermark .NET API
 description: Effortlessly add watermarks to your documents using GroupDocs.Watermark for .NET. Follow our comprehensive, step-by-step guide to protect your digital assets.
-type: docs
 weight: 13
 url: /net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ You can use the provided code snippet to list all supported file formats.
 ### How can I buy a license for GroupDocs.Watermark?
 Licenses can be purchased directly from the [purchase page](https://purchase.groupdocs.com/buy).
 ### Is there any documentation available for GroupDocs.Watermark?
-Yes, comprehensive documentation is available [here](https://reference.groupdocs.com/Watermark/net/).
+Yes, comprehensive documentation is available [here](https://tutorials.groupdocs.com/Watermark/net/).

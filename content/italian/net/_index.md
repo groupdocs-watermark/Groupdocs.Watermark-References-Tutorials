@@ -1,7 +1,6 @@
 ---
 title: Tutorial ed esempi di GroupDocs.Watermark per .NET
 linktitle: GroupDocs.Watermark per esercitazioni .NET
-type: docs
 weight: 10
 url: /it/net/
 description: Esplora tutorial completi su GroupDocs.Watermark per .NET. Impara ad aggiungere, gestire e proteggere le filigrane in vari formati di documenti con guide dettagliate.

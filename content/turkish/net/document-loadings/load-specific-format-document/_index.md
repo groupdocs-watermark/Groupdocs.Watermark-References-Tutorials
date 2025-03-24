@@ -3,7 +3,6 @@ title: Belirli Formattaki Belgeyi Yükle
 linktitle: Belirli Formattaki Belgeyi Yükle
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu adım adım kılavuzla Groupdocs for .NET'i kullanarak belgeleri nasıl yükleyeceğinizi ve filigran ekleyeceğinizi öğrenin. İçeriğinizi zahmetsizce koruyun ve markalayın.
-type: docs
 weight: 12
 url: /tr/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Çözüm
-Belgelere filigran eklemek, içeriğinizi korumada kritik bir adımdır ve Groupdocs.Watermark for .NET bu süreci basit ve verimli hale getirir. Bu kılavuzu takip ederek filigranları kolayca yükleyip belgelerinize uygulayabilir, böylece belgelerinizin güvenliğini ve doğru markalaşmasını sağlayabilirsiniz. Daha fazla ayrıntı ve gelişmiş seçenekler için bkz.[.NET belgeleri için Groupdocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+Belgelere filigran eklemek, içeriğinizi korumada kritik bir adımdır ve Groupdocs.Watermark for .NET bu süreci basit ve verimli hale getirir. Bu kılavuzu takip ederek filigranları kolayca yükleyip belgelerinize uygulayabilir, böylece belgelerinizin güvenliğini ve doğru markalaşmasını sağlayabilirsiniz. Daha fazla ayrıntı ve gelişmiş seçenekler için bkz.[.NET belgeleri için Groupdocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).
 ## SSS'ler
 ### Bu yöntemi farklı belge formatları için kullanabilir miyim?
  Evet, Groupdocs Filigran çeşitli belge formatlarını destekler. Ayarlamanız gerekir`LoadOptions` buna göre.

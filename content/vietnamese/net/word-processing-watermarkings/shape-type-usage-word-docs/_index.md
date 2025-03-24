@@ -3,7 +3,6 @@ title: Cách sử dụng kiểu hình dạng trong tài liệu Word
 linktitle: Cách sử dụng kiểu hình dạng trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thao tác các hình dạng trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Hướng dẫn này cung cấp hướng dẫn để xử lý tài liệu hiệu quả.
-type: docs
 weight: 37
 url: /vi/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---

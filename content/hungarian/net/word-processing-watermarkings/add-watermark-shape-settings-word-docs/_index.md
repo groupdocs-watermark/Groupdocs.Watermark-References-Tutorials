@@ -3,7 +3,6 @@ title: Adjon hozzá vízjelet az alakbeállításokkal a Word Dokumentumokban
 linktitle: Adjon hozzá vízjelet az alakbeállításokkal a Word Dokumentumokban
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat hozzá vízjeleket alakbeállításokkal Word-dokumentumokhoz a GroupDocs Watermark for .NET segítségével. Védje hatékonyan dokumentumait.
-type: docs
 weight: 20
 url: /hu/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---

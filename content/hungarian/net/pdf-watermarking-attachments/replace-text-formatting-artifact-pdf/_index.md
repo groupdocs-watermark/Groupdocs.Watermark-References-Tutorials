@@ -3,7 +3,6 @@ title: Cserélje le a szöveget a Formázásra az Artifact számára a PDF-ben
 linktitle: Cserélje le a szöveget a Formázásra az Artifact számára a PDF-ben
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan cserélheti le a szöveget formázással a műtermékek esetében a PDF-dokumentumokban a GroupDocs.Watermark for .NET segítségével. Javítsa a dokumentumkezelést könnyedén.
-type: docs
 weight: 43
 url: /hu/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---

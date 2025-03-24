@@ -3,7 +3,6 @@ title: Remove XObject from PDF
 linktitle: Remove XObject from PDF
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to easily remove XObjects from PDFs using GroupDocs.Watermark for .NET with our comprehensive, step-by-step tutorial.
-type: docs
 weight: 35
 url: /net/pdf-watermarking-attachments/remove-xobject-pdf/
 ---
@@ -62,7 +61,7 @@ To remove an XObject by its index, use the `RemoveAt` method. This is useful if 
 pdfContent.Pages[0].XObjects.RemoveAt(0);
 ```
 ### Remove XObject by Reference
-If you have a reference to the specific XObject you want to remove, you can use the `Remove` method. This is particularly handy when dealing with dynamic documents where the index may vary.
+If you have a tutorials to the specific XObject you want to remove, you can use the `Remove` method. This is particularly handy when dealing with dynamic documents where the index may vary.
 ```csharp
 pdfContent.Pages[0].XObjects.Remove(pdfContent.Pages[0].XObjects[0]);
 ```

@@ -3,7 +3,6 @@ title: Användning av formtyp i Word Docs
 linktitle: Användning av formtyp i Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du manipulerar former i Word-dokument med GroupDocs.Watermark for .NET. Denna handledning ger vägledning för effektiv dokumentbehandling.
-type: docs
 weight: 37
 url: /sv/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---

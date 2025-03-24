@@ -3,7 +3,6 @@ title: Anmerkung aus PDF entfernen
 linktitle: Anmerkung aus PDF entfernen
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Anmerkungen aus PDFs entfernen. Verbessern Sie mühelos die Lesbarkeit von Dokumenten.
-type: docs
 weight: 29
 url: /de/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---

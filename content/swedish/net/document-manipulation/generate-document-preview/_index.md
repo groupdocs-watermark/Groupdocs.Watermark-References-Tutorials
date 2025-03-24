@@ -3,7 +3,6 @@ title: Skapa dokumentförhandsgranskning
 linktitle: Skapa dokumentförhandsgranskning
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du genererar dokumentförhandsvisningar med GroupDocs.Watermark för .NET med den här guiden. Förbättra din dokumentsäkerhet och hantering utan ansträngning.
-type: docs
 weight: 10
 url: /sv/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Slutsats
 Att skapa förhandsvisningar av dokument med GroupDocs.Watermark för .NET är en enkel process som kan utföras med bara några rader kod. Genom att följa stegen som beskrivs i den här guiden kan du enkelt ställa in ditt projekt, konfigurera nödvändiga alternativ och generera förhandsgranskningar för dina dokument. Detta kraftfulla bibliotek förenklar inte bara vattenmärkningsprocessen utan ger också robusta funktioner för att hantera och manipulera vattenstämplar.
- Om du har några frågor eller behöver ytterligare hjälp, tveka inte att besöka[Supportforum för GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) eller hänvisa till[dokumentation](https://reference.groupdocs.com/Watermark/net/).
+ Om du har några frågor eller behöver ytterligare hjälp, tveka inte att besöka[Supportforum för GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) eller hänvisa till[dokumentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ's
 ### Vilka filformat stöds av GroupDocs.Watermark för .NET?
- GroupDocs.Watermark för .NET stöder ett brett utbud av filformat, inklusive PDF, DOCX, PPTX, XLSX och många fler. För en fullständig lista över format som stöds, se[dokumentation](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark för .NET stöder ett brett utbud av filformat, inklusive PDF, DOCX, PPTX, XLSX och många fler. För en fullständig lista över format som stöds, se[dokumentation](https://tutorials.groupdocs.com/Watermark/net/).
 ### Kan jag anpassa utseendet på vattenstämplar?
 Ja, GroupDocs.Watermark låter dig anpassa utseendet på vattenstämplar, inklusive text, bild och formvattenstämplar. Du kan justera egenskaper som teckensnitt, färg, storlek och genomskinlighet.
 ### Finns det en testversion tillgänglig?

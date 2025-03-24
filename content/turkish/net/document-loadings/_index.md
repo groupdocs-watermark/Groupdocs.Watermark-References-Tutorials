@@ -3,7 +3,6 @@ title: Belge Yükleme
 linktitle: Belge Yükleme
 second_title: GroupDocs.Watermark .NET API'si
 description: Belgeleri yüklemek ve filigranlamak, adım adım kılavuzlarla belge güvenliğini ve markalamayı sağlamak için GroupDocs.Watermark for .NET eğitimlerini keşfedin.
-type: docs
 weight: 22
 url: /tr/net/document-loadings/
 ---

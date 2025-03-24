@@ -3,7 +3,6 @@ title: Αναζήτηση εικόνας στο συνημμένο PDF
 linktitle: Αναζήτηση εικόνας στο συνημμένο PDF
 second_title: GroupDocs.Watermark .NET API
 description: Αποτελεσματική αναζήτηση εικόνων σε συνημμένα PDF χρησιμοποιώντας GroupDocs.Watermark για .NET. Απλοποιήστε τη διαδικασία διαχείρισης υδατογραφήματος χωρίς κόπο.
-type: docs
 weight: 46
 url: /el/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---

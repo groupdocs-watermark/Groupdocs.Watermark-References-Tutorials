@@ -3,7 +3,6 @@ title: Zapisz dokument w tym samym pliku lub strumieniu
 linktitle: Zapisz dokument w tym samym pliku lub strumieniu
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak dodawać znaki wodne do dokumentów za pomocą Groupdocs.Watermark dla .NET. Ten przewodnik zawiera instrukcje zapewniające ochronę i integralność dokumentów.
-type: docs
 weight: 10
 url: /pl/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Na koniec zapisz dokument z zastosowanym znakiem wodnym:
 watermarker.Save();
 ```
 ## Wniosek
-Dodawanie znaków wodnych do dokumentów przy użyciu programu Groupdocs dla platformy .NET jest proste i wydajne. Wykonując czynności opisane powyżej, możesz bez wysiłku chronić swoje dokumenty i zachować ich integralność. Więcej szczegółów można znaleźć w[dokumentacja](https://reference.groupdocs.com/Watermark/net/).
+Dodawanie znaków wodnych do dokumentów przy użyciu programu Groupdocs dla platformy .NET jest proste i wydajne. Wykonując czynności opisane powyżej, możesz bez wysiłku chronić swoje dokumenty i zachować ich integralność. Więcej szczegółów można znaleźć w[dokumentacja](https://tutorials.groupdocs.com/Watermark/net/).
 ## Często zadawane pytania
 ### Czy mogę użyć obrazu jako znaku wodnego zamiast tekstu?
 Tak, Groupdocs.Watermark umożliwia używanie obrazów, kształtów i tekstu jako znaków wodnych.

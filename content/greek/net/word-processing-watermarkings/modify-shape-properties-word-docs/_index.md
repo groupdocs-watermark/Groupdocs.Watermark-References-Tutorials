@@ -3,7 +3,6 @@ title: Τροποποίηση ιδιοτήτων σχήματος στα Έγγ�
 linktitle: Τροποποίηση ιδιοτήτων σχήματος στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Προστατέψτε τα έγγραφα του Word με το υδατογράφημα GroupDocs για .NET. Τροποποιήστε εύκολα τις ιδιότητες σχήματος για βελτιωμένη ασφάλεια.
-type: docs
 weight: 27
 url: /el/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---

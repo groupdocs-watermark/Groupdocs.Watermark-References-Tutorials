@@ -3,7 +3,6 @@ title: 載入受密碼保護的文檔
 linktitle: 載入受密碼保護的文檔
 second_title: GroupDocs.Watermark .NET API
 description: 透過我們的逐步指南，了解如何使用 Groupdocs for .NET 將浮水印新增至受密碼保護的文件。輕鬆保護您的文件並為其建立品牌。
-type: docs
 weight: 13
 url: /zh-hant/net/document-loadings/load-password-protected-document/
 ---

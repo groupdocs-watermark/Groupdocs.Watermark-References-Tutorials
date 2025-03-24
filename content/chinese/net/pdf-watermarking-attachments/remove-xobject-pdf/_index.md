@@ -3,7 +3,6 @@ title: 从 PDF 中删除 XObject
 linktitle: 从 PDF 中删除 XObject
 second_title: GroupDocs.Watermark .NET API
 description: 通过我们全面的分步教程，了解如何使用 GroupDocs.Watermark for .NET 轻松从 PDF 中删除 XObject。
-type: docs
 weight: 35
 url: /zh/net/pdf-watermarking-attachments/remove-xobject-pdf/
 ---

@@ -3,7 +3,6 @@ title: Eliminar marca de agua de la sección en documentos de Word
 linktitle: Eliminar marca de agua de la sección en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a eliminar marcas de agua de secciones específicas dentro de documentos de Word usando GroupDocs.Watermark para .NET. Tutorial completo disponible aquí.
-type: docs
 weight: 32
 url: /es/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---

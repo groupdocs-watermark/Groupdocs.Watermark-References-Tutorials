@@ -3,7 +3,6 @@ title: 使用 GroupDocs.Watermark 掌控文档安全和品牌
 linktitle: GroupDocs.Watermark 教程
 additionalTitle: GroupDocs API 参考
 description: 通过我们的 .NET 和 Java 教程解锁 GroupDocs.Watermark 的强大功能。掌握文档安全和品牌的水印技术。
-type: docs
 weight: 11
 url: /zh/
 is_root: true

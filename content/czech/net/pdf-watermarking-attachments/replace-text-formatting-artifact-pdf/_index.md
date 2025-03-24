@@ -3,7 +3,6 @@ title: Nahradit text formátováním pro artefakt v PDF
 linktitle: Nahradit text formátováním pro artefakt v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak nahradit text formátováním pro artefakty v dokumentech PDF pomocí GroupDocs.Watermark for .NET. Zlepšete správu dokumentů bez námahy.
-type: docs
 weight: 43
 url: /cs/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---

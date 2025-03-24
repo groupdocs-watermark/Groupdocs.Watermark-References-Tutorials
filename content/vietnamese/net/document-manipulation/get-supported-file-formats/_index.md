@@ -3,7 +3,6 @@ title: Nhận các định dạng tệp được hỗ trợ
 linktitle: Nhận các định dạng tệp được hỗ trợ
 second_title: API GroupDocs.Watermark .NET
 description: Dễ dàng thêm hình mờ vào tài liệu của bạn bằng GroupDocs.Watermark cho .NET. Hãy làm theo hướng dẫn từng bước toàn diện của chúng tôi để bảo vệ tài sản kỹ thuật số của bạn.
-type: docs
 weight: 13
 url: /vi/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ Bạn có thể sử dụng đoạn mã được cung cấp để liệt kê t�
 ### Làm cách nào tôi có thể mua giấy phép cho GroupDocs.Watermark?
  Giấy phép có thể được mua trực tiếp từ[trang mua hàng](https://purchase.groupdocs.com/buy).
 ### Có tài liệu nào có sẵn cho GroupDocs.Watermark không?
- Có, tài liệu đầy đủ có sẵn[đây](https://reference.groupdocs.com/Watermark/net/).
+ Có, tài liệu đầy đủ có sẵn[đây](https://tutorials.groupdocs.com/Watermark/net/).

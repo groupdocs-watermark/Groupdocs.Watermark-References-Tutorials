@@ -3,7 +3,6 @@ title: تحميل المستند من القرص المحلي
 linktitle: تحميل المستند من القرص المحلي
 second_title: GroupDocs.Watermark .NET API
 description: قم بحماية مستنداتك وإدارتها باستخدام Groupdocs للعلامة المائية لـ .NET. اتبع دليلنا التفصيلي لإضافة العلامات المائية بسلاسة.
-type: docs
 weight: 10
 url: /ar/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## خاتمة
 تعد إضافة علامات مائية إلى مستنداتك باستخدام Groupdocs Watermark for .NET عملية واضحة وفعالة. يرشدك هذا الدليل خلال العملية بأكملها بدءًا من إعداد بيئتك وحتى حفظ مستند يحمل علامة مائية. باستخدام هذه الأداة القوية، يمكنك التأكد من حماية مستنداتك وتأمين ملكيتك الفكرية. 
- لمزيد من التفاصيل، تحقق من[توثيق](https://reference.groupdocs.com/Watermark/net/) ، وإذا واجهت أية مشكلات، فإن[منتدى الدعم](https://forum.groupdocs.com/c/watermark/19) مكان ممتاز للمساعدة. 
+ لمزيد من التفاصيل، تحقق من[توثيق](https://tutorials.groupdocs.com/Watermark/net/) ، وإذا واجهت أية مشكلات، فإن[منتدى الدعم](https://forum.groupdocs.com/c/watermark/19) مكان ممتاز للمساعدة. 
 ## الأسئلة الشائعة
 ### هل يمكنني استخدام خطوط مخصصة للعلامات المائية؟
 نعم، تدعم العلامة المائية Groupdocs الخطوط المخصصة. يمكنك تحديد أي خط مثبت على نظامك.

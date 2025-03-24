@@ -3,7 +3,6 @@ title: Получить свойства раздела в документах 
 linktitle: Получить свойства раздела в документах Word
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как извлечь свойства раздела из документов Word с помощью водяных знаков для .NET. Расширьте свои возможности манипулирования документами без особых усилий.
-type: docs
 weight: 23
 url: /ru/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---

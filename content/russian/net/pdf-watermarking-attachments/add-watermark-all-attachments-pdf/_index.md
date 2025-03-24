@@ -3,7 +3,6 @@ title: Добавить водяной знак ко всем вложениям
 linktitle: Добавить водяной знак ко всем вложениям в PDF
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять водяные знаки к вложениям PDF с помощью GroupDocs.Watermark для .NET. Легко защитите свои документы с помощью пользовательских водяных знаков.
-type: docs
 weight: 16
 url: /ru/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---

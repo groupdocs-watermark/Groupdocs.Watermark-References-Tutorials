@@ -3,7 +3,6 @@ title: Nhận thông tin tài liệu từ luồng
 linktitle: Nhận thông tin tài liệu từ luồng
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách lấy thông tin tài liệu từ luồng bằng GroupDocs.Watermark dành cho .NET với hướng dẫn từng bước này. Khả năng quản lý tài liệu của bạn một cách dễ dàng.
-type: docs
 weight: 12
 url: /vi/net/document-manipulation/get-document-info-stream/
 ---
@@ -46,10 +45,10 @@ Console.WriteLine("Document size: {0} bytes", info.Size);
 ```
 
 ## Phần kết luận
- Truy xuất thông tin tài liệu từ luồng bằng GroupDocs.Watermark cho .NET là một quá trình đơn giản khi được chia thành các bước có thể quản lý được. Bằng cách làm theo hướng dẫn này, bạn có thể tích hợp hiệu quả chức năng này vào các ứng dụng của mình, đảm bảo tính toàn vẹn và quản lý tài liệu tốt hơn. Đừng ngần ngại khám phá[tài liệu](https://reference.groupdocs.com/Watermark/net/) để biết thêm các tính năng và tùy chọn nâng cao.
+ Truy xuất thông tin tài liệu từ luồng bằng GroupDocs.Watermark cho .NET là một quá trình đơn giản khi được chia thành các bước có thể quản lý được. Bằng cách làm theo hướng dẫn này, bạn có thể tích hợp hiệu quả chức năng này vào các ứng dụng của mình, đảm bảo tính toàn vẹn và quản lý tài liệu tốt hơn. Đừng ngần ngại khám phá[tài liệu](https://tutorials.groupdocs.com/Watermark/net/) để biết thêm các tính năng và tùy chọn nâng cao.
 ## Câu hỏi thường gặp
 ### GroupDocs.Watermark hỗ trợ những định dạng tệp nào?
- GroupDocs.Watermark hỗ trợ nhiều định dạng tệp bao gồm PDF, Word, Excel, PowerPoint, v.v. Bạn có thể tìm thấy danh sách đầy đủ trong[tài liệu](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark hỗ trợ nhiều định dạng tệp bao gồm PDF, Word, Excel, PowerPoint, v.v. Bạn có thể tìm thấy danh sách đầy đủ trong[tài liệu](https://tutorials.groupdocs.com/Watermark/net/).
 ### Tôi có thể dùng thử GroupDocs.Watermark trước khi mua không?
  Có, bạn có thể tải xuống bản dùng thử miễn phí từ[đây](https://releases.groupdocs.com/) và xin giấy phép tạm thời từ[đây](https://purchase.groupdocs.com/temporary-license/).
 ### Làm cách nào để cài đặt GroupDocs.Watermark cho .NET?

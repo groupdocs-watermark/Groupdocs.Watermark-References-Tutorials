@@ -3,7 +3,6 @@ title: Αντικατάσταση εικόνας σχήματος στα Έγγ�
 linktitle: Αντικατάσταση εικόνας σχήματος στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αντικαθιστάτε μέσω προγραμματισμού εικόνες σχήματος σε έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Απλοποιήστε τις εργασίες χειρισμού εγγράφων χωρίς κόπο.
-type: docs
 weight: 33
 url: /el/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---

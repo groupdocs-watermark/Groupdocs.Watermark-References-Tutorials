@@ -3,7 +3,6 @@ title: Ekstrak Informasi Anotasi dari PDF
 linktitle: Ekstrak Informasi Anotasi dari PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengekstrak informasi anotasi dari dokumen PDF menggunakan GroupDocs.Watermark untuk .NET dalam panduan langkah demi langkah yang mendetail ini.
-type: docs
 weight: 23
 url: /id/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
@@ -103,7 +102,7 @@ using (StreamWriter writer = new StreamWriter(outputFileName))
 ```
 ## Kesimpulan
 Mengekstrak informasi anotasi dari dokumen PDF menggunakan GroupDocs.Watermark untuk .NET adalah proses mudah yang dapat menghemat banyak waktu dan tenaga Anda. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat dengan mudah mengintegrasikan fungsi ini ke dalam proyek Anda dan mengotomatiskan ekstraksi data anotasi yang berharga.
- Baik Anda mengelola PDF dalam jumlah besar atau hanya perlu mengekstrak informasi spesifik, GroupDocs.Watermark untuk .NET memberikan solusi yang andal dan efisien. Jangan lupa untuk memeriksa[dokumentasi](https://reference.groupdocs.com/Watermark/net/) untuk fitur lanjutan dan opsi penyesuaian lainnya.
+ Baik Anda mengelola PDF dalam jumlah besar atau hanya perlu mengekstrak informasi spesifik, GroupDocs.Watermark untuk .NET memberikan solusi yang andal dan efisien. Jangan lupa untuk memeriksa[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/) untuk fitur lanjutan dan opsi penyesuaian lainnya.
 ## FAQ
 ### Apa itu GroupDocs.Watermark untuk .NET?
 GroupDocs.Watermark for .NET adalah perpustakaan komprehensif yang memungkinkan pengembang menambahkan, mencari, dan menghapus tanda air dari berbagai format dokumen, termasuk PDF, dokumen Word, dan gambar.

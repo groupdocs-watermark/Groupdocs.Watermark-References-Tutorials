@@ -3,7 +3,6 @@ title: 刪除 PDF 中具有特定文字格式的偽影
 linktitle: 刪除 PDF 中具有特定文字格式的偽影
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs for .NET 刪除 PDF 中具有特定文字格式的瑕疵。請遵循我們的逐步指南。
-type: docs
 weight: 32
 url: /zh-hant/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---

@@ -3,7 +3,6 @@ title: Sicherheit und Branding von Masterdokumenten mit GroupDocs.Watermark
 linktitle: GroupDocs.Watermark-Tutorials
 additionalTitle: GroupDocs-API-Referenzen
 description: Nutzen Sie die Leistungsfähigkeit von GroupDocs.Watermark mit unseren .NET- und Java-Tutorials. Beherrschen Sie Wasserzeichentechniken für Dokumentensicherheit und Branding.
-type: docs
 weight: 11
 url: /de/
 is_root: true

@@ -3,7 +3,6 @@ title: Ajouter un filigrane à toutes les pièces jointes du PDF
 linktitle: Ajouter un filigrane à toutes les pièces jointes du PDF
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes aux pièces jointes PDF à l'aide de GroupDocs.Watermark pour .NET. Sécurisez facilement vos documents avec des filigranes personnalisés.
-type: docs
 weight: 16
 url: /fr/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---

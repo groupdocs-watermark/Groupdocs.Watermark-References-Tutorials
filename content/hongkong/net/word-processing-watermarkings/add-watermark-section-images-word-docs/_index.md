@@ -3,7 +3,6 @@ title: 為 Word 文件中的分割區影像新增浮水印
 linktitle: 為 Word 文件中的分割區影像新增浮水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs for .NET 在 Word 文件中的圖片中新增浮水印。請遵循我們的安全、專業文件保護指南。
-type: docs
 weight: 16
 url: /zh-hant/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## 結論
 在 Word 文件中的圖像中新增浮水印是保護內容的有效方法。透過 Groupdocs.Watermark for .NET，此過程變得簡單且有效率。請按照本教學中概述的步驟操作，以確保您的文件安全且受到良好保護。
-如需更詳細的文檔，請訪問[文件](https://reference.groupdocs.com/Watermark/net/)。如果您有任何疑問或需要進一步協助，請查看[支援論壇](https://forum.groupdocs.com/c/watermark/19).
+如需更詳細的文檔，請訪問[文件](https://tutorials.groupdocs.com/Watermark/net/)。如果您有任何疑問或需要進一步協助，請查看[支援論壇](https://forum.groupdocs.com/c/watermark/19).
 ## 常見問題解答
 ### 我可以自訂浮水印文字嗎？
 是的，您可以自訂浮水印文字、字體、大小、對齊方式和旋轉以滿足您的需求。
 ### 是否可以為多個部分添加浮水印？
 是的，您可以循環瀏覽每個部分並將浮水印套用到所有部分中的圖像。
 ### 我可以將此方法用於其他文件格式嗎？
- Groupdocs.Watermark 支援各種文件格式。檢查[文件](https://reference.groupdocs.com/Watermark/net/)更多細節。
+ Groupdocs.Watermark 支援各種文件格式。檢查[文件](https://tutorials.groupdocs.com/Watermark/net/)更多細節。
 ### 我怎麼才能獲得臨時許可證？
 您可以獲得臨時許可證[這裡](https://purchase.groupdocs.com/temporary-license/).
 ### 如果我在使用 Groupdocs.Watermark 時遇到問題怎麼辦？

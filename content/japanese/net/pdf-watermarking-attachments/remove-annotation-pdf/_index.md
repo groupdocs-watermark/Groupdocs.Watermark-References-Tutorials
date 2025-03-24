@@ -3,7 +3,6 @@ title: PDF から注釈を削除する
 linktitle: PDF から注釈を削除する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して PDF から注釈を削除する方法を学びます。文書の読みやすさを簡単に向上させます。
-type: docs
 weight: 29
 url: /ja/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---

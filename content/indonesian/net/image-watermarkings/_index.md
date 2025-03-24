@@ -3,7 +3,6 @@ title: Tanda Air Gambar
 linktitle: Tanda Air Gambar
 second_title: GroupDocs.Tanda Air .NET API
 description: Jelajahi tutorial GroupDocs.Watermark untuk .NET tentang menambahkan tanda air gambar. Pelajari metode langkah demi langkah untuk meningkatkan keamanan dan pencitraan merek dokumen Anda.
-type: docs
 weight: 24
 url: /id/net/image-watermarkings/
 ---

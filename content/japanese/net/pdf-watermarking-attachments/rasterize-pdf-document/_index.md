@@ -3,7 +3,6 @@ title: PDFドキュメントをラスタライズする
 linktitle: PDFドキュメントをラスタライズする
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して PDF ドキュメントをラスタライズする方法を学びます。ドキュメントのセキュリティと視覚的な魅力を簡単に強化します。
-type: docs
 weight: 27
 url: /ja/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---

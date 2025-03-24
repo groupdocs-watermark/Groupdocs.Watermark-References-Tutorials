@@ -3,7 +3,6 @@ title: Kép keresése a PDF mellékletében
 linktitle: Kép keresése a PDF mellékletében
 second_title: GroupDocs.Watermark .NET API
 description: Hatékonyan kereshet képeket a PDF-mellékletekben a GroupDocs.Watermark for .NET segítségével. Egyszerűsítse a vízjelkezelési folyamatot könnyedén.
-type: docs
 weight: 46
 url: /hu/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---

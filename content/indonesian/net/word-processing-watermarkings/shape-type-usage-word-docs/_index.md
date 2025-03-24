@@ -3,7 +3,6 @@ title: Penggunaan Jenis Bentuk di Word Docs
 linktitle: Penggunaan Jenis Bentuk di Word Docs
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara memanipulasi bentuk di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Tutorial ini memberikan panduan untuk pemrosesan dokumen yang efisien.
-type: docs
 weight: 37
 url: /id/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---

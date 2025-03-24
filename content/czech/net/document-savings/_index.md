@@ -3,7 +3,6 @@ title: Ukládání dokumentu
 linktitle: Ukládání dokumentu
 second_title: GroupDocs.Watermark .NET API
 description: Prozkoumejte výukové programy GroupDocs.Watermark for .NET o ukládání dokumentů pomocí vodoznaků. Naučte se krok za krokem metody, jak zlepšit zabezpečení a správu dokumentů.
-type: docs
 weight: 23
 url: /cs/net/document-savings/
 ---

@@ -3,7 +3,6 @@ title: Khái niệm cơ bản về hình mờ
 linktitle: Khái niệm cơ bản về hình mờ
 second_title: API GroupDocs.Watermark .NET
 description: Khám phá các hướng dẫn GroupDocs.Watermark for .NET để thêm hình mờ hình ảnh và văn bản một cách dễ dàng. Bảo vệ tài liệu của bạn bằng những hướng dẫn dễ làm theo này.
-type: docs
 weight: 20
 url: /vi/net/watermarking-basics/
 ---

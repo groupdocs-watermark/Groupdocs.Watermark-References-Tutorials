@@ -3,7 +3,6 @@ title: Получить поддерживаемые форматы файлов
 linktitle: Получить поддерживаемые форматы файлов
 second_title: GroupDocs.Watermark .NET API
 description: Легко добавляйте водяные знаки в свои документы с помощью GroupDocs.Watermark для .NET. Следуйте нашему подробному пошаговому руководству, чтобы защитить свои цифровые активы.
-type: docs
 weight: 13
 url: /ru/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ foreach (FileType fileType in supportedFileTypes)
 ### Как купить лицензию на GroupDocs.Watermark?
  Лицензии можно приобрести непосредственно на сайте[страница покупки](https://purchase.groupdocs.com/buy).
 ### Есть ли какая-либо документация для GroupDocs.Watermark?
- Да, доступна полная документация[здесь](https://reference.groupdocs.com/Watermark/net/).
+ Да, доступна полная документация[здесь](https://tutorials.groupdocs.com/Watermark/net/).

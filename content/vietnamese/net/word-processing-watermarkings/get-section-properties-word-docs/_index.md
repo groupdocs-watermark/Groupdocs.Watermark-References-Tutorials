@@ -3,7 +3,6 @@ title: Nhận thuộc tính phần trong tài liệu Word
 linktitle: Nhận thuộc tính phần trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách trích xuất các thuộc tính phần từ tài liệu Word bằng Groupdocs cho .NET. Nâng cao khả năng thao tác tài liệu của bạn một cách dễ dàng.
-type: docs
 weight: 23
 url: /vi/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---

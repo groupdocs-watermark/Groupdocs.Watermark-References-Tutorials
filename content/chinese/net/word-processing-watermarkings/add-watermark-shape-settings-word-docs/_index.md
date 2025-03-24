@@ -3,7 +3,6 @@ title: 在 Word 文档中添加具有形状设置的水印
 linktitle: 在 Word 文档中添加具有形状设置的水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs for .NET 将具有形状设置的水印添加到 Word 文档。有效保护您的文档。
-type: docs
 weight: 20
 url: /zh/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---

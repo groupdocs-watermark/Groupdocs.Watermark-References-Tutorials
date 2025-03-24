@@ -3,7 +3,6 @@ title: Get Document Info from Local Disk
 linktitle: Get Document Info from Local Disk
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add, remove, and extract watermarks in documents using GroupDocs.Watermark for .NET with this comprehensive step-by-step guide.
-type: docs
 weight: 11
 url: /net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /net/document-manipulation/get-document-info-local-disk/
 Welcome to the ultimate guide on using GroupDocs.Watermark for .NET! Whether you're a seasoned developer or just getting started, this article will walk you through the essentials of watermarking your documents with this powerful tool. By the end, you'll be a pro at embedding watermarks in your documents, ensuring they are protected and branded to your specifications.
 ## Prerequisites
 Before diving into the step-by-step guide, there are a few prerequisites you'll need to meet:
-1. .NET Framework: Make sure you have .NET Framework installed on your system. GroupDocs.Watermark for .NET is compatible with various versions of the .NET Framework, so check the [documentation](https://reference.groupdocs.com/Watermark/net/) for compatibility details.
+1. .NET Framework: Make sure you have .NET Framework installed on your system. GroupDocs.Watermark for .NET is compatible with various versions of the .NET Framework, so check the [documentation](https://tutorials.groupdocs.com/Watermark/net/) for compatibility details.
 2. GroupDocs.Watermark for .NET Library: Download and install the latest version from the [download page](https://releases.groupdocs.com/Watermark/net/).
 3. Development Environment: You should have a development environment set up. Visual Studio is a popular choice for .NET development.
 4. Basic C# Knowledge: Understanding the basics of C# programming will help you follow along with the examples.
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
 This step involves using the `GetWatermarks` method to retrieve all watermarks in a document. You can then iterate through the list of watermarks and inspect their properties or perform additional actions as needed.
 ## Conclusion
-Congratulations! You've now learned how to use GroupDocs.Watermark for .NET to add, remove, and extract watermarks from your documents. With these skills, you can protect and brand your documents effectively. Remember, the [documentation](https://reference.groupdocs.com/Watermark/net/) is always there if you need more detailed information or advanced functionality.
+Congratulations! You've now learned how to use GroupDocs.Watermark for .NET to add, remove, and extract watermarks from your documents. With these skills, you can protect and brand your documents effectively. Remember, the [documentation](https://tutorials.groupdocs.com/Watermark/net/) is always there if you need more detailed information or advanced functionality.
 ## FAQ's
 ### Can I use GroupDocs.Watermark for .NET with any .NET version?
-Yes, GroupDocs.Watermark for .NET is compatible with various .NET Framework versions. Check the [documentation](https://reference.groupdocs.com/Watermark/net/) for specifics.
+Yes, GroupDocs.Watermark for .NET is compatible with various .NET Framework versions. Check the [documentation](https://tutorials.groupdocs.com/Watermark/net/) for specifics.
 ### Where can I download GroupDocs.Watermark for .NET?
 You can download the latest version from the [download page](https://releases.groupdocs.com/Watermark/net/).
 ### How do I get a temporary license?

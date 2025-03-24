@@ -3,7 +3,6 @@ title: Dodaj znak wodny z typem marginesu strony w formacie PDF
 linktitle: Dodaj znak wodny z typem marginesu strony w formacie PDF
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak dodawać znaki wodne z typem marginesu strony w formacie PDF przy użyciu Groupdocs dla .NET. Zabezpiecz swoje dokumenty bez wysiłku.
-type: docs
 weight: 21
 url: /pl/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---

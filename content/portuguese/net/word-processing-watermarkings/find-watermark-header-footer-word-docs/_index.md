@@ -3,7 +3,6 @@ title: Encontre marca d’água no cabeçalho/rodapé em documentos do Word
 linktitle: Encontre marca d’água no cabeçalho/rodapé em documentos do Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda como encontrar e remover marcas d’água de documentos do Word com eficiência usando GroupDocs para .NET, garantindo a integridade e o profissionalismo dos documentos.
-type: docs
 weight: 22
 url: /pt/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---

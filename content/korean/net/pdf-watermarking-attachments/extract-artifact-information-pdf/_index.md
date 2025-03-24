@@ -3,7 +3,6 @@ title: PDF에서 유물 정보 추출
 linktitle: PDF에서 유물 정보 추출
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 PDF 파일에서 아티팩트 정보를 추출하는 방법을 알아보세요. 문서 처리 능력을 향상시켜 보세요.
-type: docs
 weight: 24
 url: /ko/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---

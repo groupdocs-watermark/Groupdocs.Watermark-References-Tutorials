@@ -3,7 +3,6 @@ title: ค้นหารูปภาพในไฟล์แนบของ PDF
 linktitle: ค้นหารูปภาพในไฟล์แนบของ PDF
 second_title: GroupDocs.Watermark .NET API
 description: ค้นหารูปภาพภายในไฟล์แนบ PDF อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Watermark สำหรับ .NET ลดความซับซ้อนของกระบวนการจัดการลายน้ำของคุณได้อย่างง่ายดาย
-type: docs
 weight: 46
 url: /th/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---

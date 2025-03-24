@@ -3,7 +3,6 @@ title: PDF 内の特定の注釈の画像を置換
 linktitle: PDF 内の特定の注釈の画像を置換
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して特定の PDF 注釈内の画像を置き換える方法を学びます。この詳細なガイドでは、ドキュメントのロードから変更の保存までのすべてをカバーしています。
-type: docs
 weight: 37
 url: /ja/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 この手順により、すべての変更が確実に保存され、変更されたドキュメントを使用できるようになります。
 ## 結論
-おめでとう！ GroupDocs.Watermark for .NET を使用して、PDF ドキュメント内の特定の注釈内の画像を正常に置き換えることができました。この強力なライブラリにより、複雑な PDF 透かしタスクを簡単に処理できるようになり、ドキュメント管理機能が強化されます。さらなるカスタマイズと高度な機能については、[GroupDocs.Watermark ドキュメント](https://reference.groupdocs.com/Watermark/net/).
+おめでとう！ GroupDocs.Watermark for .NET を使用して、PDF ドキュメント内の特定の注釈内の画像を正常に置き換えることができました。この強力なライブラリにより、複雑な PDF 透かしタスクを簡単に処理できるようになり、ドキュメント管理機能が強化されます。さらなるカスタマイズと高度な機能については、[GroupDocs.Watermark ドキュメント](https://tutorials.groupdocs.com/Watermark/net/).
 ## よくある質問
 ### PDF のすべてのページの注釈内の画像を置き換えることはできますか?
 はい、各ページの注釈を処理するようにループを調整することで、PDF のすべてのページを反復処理できます。

@@ -3,7 +3,6 @@ title: Töltse be a dokumentumot a helyi lemezről
 linktitle: Töltse be a dokumentumot a helyi lemezről
 second_title: GroupDocs.Watermark .NET API
 description: Védje és kezelje dokumentumait a Groupdocs Watermark for .NET segítségével. Kövesse részletes útmutatónkat a vízjelek zökkenőmentes hozzáadásához.
-type: docs
 weight: 10
 url: /hu/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Következtetés
 Vízjelek hozzáadása a dokumentumokhoz a Groupdocs Watermark for .NET segítségével egyszerű és hatékony. Ez az útmutató végigvezeti a teljes folyamaton a környezet beállításától a vízjeles dokumentum mentéséig. Ezzel a hatékony eszközzel biztosíthatja dokumentumai védelmét és szellemi tulajdonának biztonságát. 
- További részletekért tekintse meg a[dokumentáció](https://reference.groupdocs.com/Watermark/net/) , és ha bármilyen problémába ütközik, a[támogatói fórum](https://forum.groupdocs.com/c/watermark/19) kiváló hely a segítségnyújtásra. 
+ További részletekért tekintse meg a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) , és ha bármilyen problémába ütközik, a[támogatói fórum](https://forum.groupdocs.com/c/watermark/19) kiváló hely a segítségnyújtásra. 
 ## GYIK
 ### Használhatok egyéni betűtípusokat vízjelekhez?
 Igen, a Groupdocs támogatja az egyéni betűtípusokat. Megadhat bármilyen, a rendszerére telepített betűtípust.

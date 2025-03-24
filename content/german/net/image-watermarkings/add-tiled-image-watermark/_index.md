@@ -3,7 +3,6 @@ title: Fügen Sie ein gekacheltes Bildwasserzeichen hinzu
 linktitle: Fügen Sie ein gekacheltes Bildwasserzeichen hinzu
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET gekachelte Bildwasserzeichen zu Ihren Dokumenten hinzufügen. Einfach, effizient und anpassbar.
-type: docs
 weight: 10
 url: /de/net/image-watermarkings/add-tiled-image-watermark/
 ---

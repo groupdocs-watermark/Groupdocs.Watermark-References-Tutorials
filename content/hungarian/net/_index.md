@@ -1,7 +1,6 @@
 ---
 title: Oktatóanyagok és példák a GroupDocs.Watermark for .NET-hez
 linktitle: GroupDocs.Watermark for .NET oktatóanyagok
-type: docs
 weight: 10
 url: /hu/net/
 description: Fedezze fel az átfogó GroupDocs.Watermark for .NET oktatóanyagokat. Ismerje meg a vízjelek hozzáadását, kezelését és biztonságossá tételét különféle dokumentumformátumokban a lépésenkénti útmutatók segítségével.

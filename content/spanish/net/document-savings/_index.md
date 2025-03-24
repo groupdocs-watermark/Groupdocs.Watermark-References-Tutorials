@@ -3,7 +3,6 @@ title: Guardar documentos
 linktitle: Guardar documentos
 second_title: API GroupDocs.Watermark .NET
 description: Explore los tutoriales de GroupDocs.Watermark para .NET sobre cómo guardar documentos con marcas de agua. Aprenda métodos paso a paso para mejorar la seguridad y la gestión de documentos.
-type: docs
 weight: 23
 url: /es/net/document-savings/
 ---

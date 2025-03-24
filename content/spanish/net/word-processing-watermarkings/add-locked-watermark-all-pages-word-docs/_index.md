@@ -3,7 +3,6 @@ title: Agregar marca de agua bloqueada a todas las páginas en documentos de Wor
 linktitle: Agregar marca de agua bloqueada a todas las páginas en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Proteja sus documentos agregando marcas de agua bloqueadas usando Groupdocs.Watermark para .NET. Siga nuestra guía paso a paso para una fácil implementación.
-type: docs
 weight: 11
 url: /es/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---

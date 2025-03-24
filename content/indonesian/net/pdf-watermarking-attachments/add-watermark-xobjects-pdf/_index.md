@@ -3,7 +3,6 @@ title: Tambahkan Tanda Air ke XObjects di PDF
 linktitle: Tambahkan Tanda Air ke XObjects di PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air ke XObjects di PDF menggunakan Groupdocs.Watermark untuk .NET. Ikuti panduan langkah demi langkah kami untuk kemudahan penerapan.
-type: docs
 weight: 20
 url: /id/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ Terakhir, simpan PDF yang diberi tanda air ke file keluaran yang ditentukan.
 ```
 Dan itu dia! PDF Anda sekarang berisi tanda air di semua XObjects-nya.
 ## Kesimpulan
- Menambahkan tanda air ke dokumen PDF Anda menggunakan Groupdocs untuk .NET adalah proses sederhana yang memberikan lapisan keamanan tambahan. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat memastikan bahwa dokumen Anda terlindungi dari penggunaan yang tidak sah. Ingat, Anda selalu dapat merujuk ke[dokumentasi](https://reference.groupdocs.com/Watermark/net/) untuk informasi lebih detail dan fitur lanjutan.
+ Menambahkan tanda air ke dokumen PDF Anda menggunakan Groupdocs untuk .NET adalah proses sederhana yang memberikan lapisan keamanan tambahan. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat memastikan bahwa dokumen Anda terlindungi dari penggunaan yang tidak sah. Ingat, Anda selalu dapat merujuk ke[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/) untuk informasi lebih detail dan fitur lanjutan.
 ## FAQ
 ### Bisakah saya menggunakan gambar sebagai tanda air dan bukan teks?
 Ya, Groupdocs.Watermark untuk .NET mendukung tanda air teks dan gambar.

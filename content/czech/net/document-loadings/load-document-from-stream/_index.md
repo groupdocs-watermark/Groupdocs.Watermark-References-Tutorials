@@ -3,7 +3,6 @@ title: Načíst dokument ze streamu
 linktitle: Načíst dokument ze streamu
 second_title: GroupDocs.Watermark .NET API
 description: V této příručce se dozvíte, jak přidat vodoznaky do dokumentů pomocí GroupDocs.Watermark for .NET. Ideální pro vývojáře, kteří chtějí zlepšit zabezpečení dokumentů.
-type: docs
 weight: 11
 url: /cs/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Tento kód uloží dokument s nově přidaným vodoznakem`outputFileName` cesta, kterou jste definovali dříve.
 
 ## Závěr
-Gratulujeme! Úspěšně jste do dokumentu přidali vodoznak pomocí GroupDocs.Watermark for .NET. Tato knihovna neuvěřitelně usnadňuje správu vodoznaků v různých formátech dokumentů. Ať už potřebujete přidat text, obrázky nebo jiné typy vodoznaků, GroupDocs.Watermark má nástroje, které potřebujete. Nezapomeňte se podívat na[dokumentace](https://reference.groupdocs.com/Watermark/net/) pro pokročilejší funkce a možnosti přizpůsobení.
+Gratulujeme! Úspěšně jste do dokumentu přidali vodoznak pomocí GroupDocs.Watermark for .NET. Tato knihovna neuvěřitelně usnadňuje správu vodoznaků v různých formátech dokumentů. Ať už potřebujete přidat text, obrázky nebo jiné typy vodoznaků, GroupDocs.Watermark má nástroje, které potřebujete. Nezapomeňte se podívat na[dokumentace](https://tutorials.groupdocs.com/Watermark/net/) pro pokročilejší funkce a možnosti přizpůsobení.
 ## FAQ
 ### Jaké typy vodoznaků mohu přidat pomocí GroupDocs.Watermark for .NET?
 Můžete přidat textové vodoznaky, obrázkové vodoznaky a dokonce i složité tvary a loga. Knihovna podporuje širokou škálu možností přizpůsobení.

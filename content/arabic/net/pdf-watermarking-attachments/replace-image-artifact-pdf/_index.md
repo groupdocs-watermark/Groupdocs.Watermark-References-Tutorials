@@ -3,7 +3,6 @@ title: استبدال الصورة بقطعة أثرية محددة في PDF
 linktitle: استبدال الصورة بقطعة أثرية محددة في PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية استبدال الصور في مستندات PDF باستخدام GroupDocs.Watermark لـ .NET من خلال هذا البرنامج التعليمي الشامل خطوة بخطوة.
-type: docs
 weight: 38
 url: /ar/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---

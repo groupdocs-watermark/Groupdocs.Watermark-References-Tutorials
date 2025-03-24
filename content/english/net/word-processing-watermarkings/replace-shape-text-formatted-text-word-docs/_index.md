@@ -3,7 +3,6 @@ title: Replace Shape Text with Formatted Text in Word Docs
 linktitle: Replace Shape Text with Formatted Text in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to replace shape text with formatted text in Word documents using GroupDocs.Watermark for .NET. Your document editing capabilities effortlessly.
-type: docs
 weight: 34
 url: /net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---

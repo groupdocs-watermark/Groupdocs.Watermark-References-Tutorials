@@ -3,7 +3,6 @@ title: Ajouter un filigrane d'image à partir d'un flux
 linktitle: Ajouter un filigrane d'image à partir d'un flux
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes d’image aux documents à l’aide de GroupDocs.Watermark pour .NET. Suivez notre guide étape par étape pour une intégration transparente des filigranes.
-type: docs
 weight: 12
 url: /fr/net/image-watermarkings/add-image-watermark-from-stream/
 ---

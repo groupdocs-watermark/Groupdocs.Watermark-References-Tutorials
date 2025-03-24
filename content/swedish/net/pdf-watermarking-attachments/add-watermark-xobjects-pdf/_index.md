@@ -3,7 +3,6 @@ title: Lägg till vattenstämpel till XObjects i PDF
 linktitle: Lägg till vattenstämpel till XObjects i PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar till XObjects i PDF med Groupdocs.Watermark for .NET. Följ vår steg-för-steg-guide för enkel implementering.
-type: docs
 weight: 20
 url: /sv/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ Slutligen, spara den vattenmärkta PDF-filen till den angivna utdatafilen.
 ```
 Och där har du det! Din PDF innehåller nu vattenstämplar på alla dess XObjects.
 ## Slutsats
- Att lägga till vattenstämplar i dina PDF-dokument med Groupdocs Watermark för .NET är en enkel process som ger ett extra lager av säkerhet. Genom att följa stegen som beskrivs i den här handledningen kan du säkerställa att dina dokument skyddas från obehörig användning. Kom ihåg att du alltid kan hänvisa till[dokumentation](https://reference.groupdocs.com/Watermark/net/) för mer detaljerad information och avancerade funktioner.
+ Att lägga till vattenstämplar i dina PDF-dokument med Groupdocs Watermark för .NET är en enkel process som ger ett extra lager av säkerhet. Genom att följa stegen som beskrivs i den här handledningen kan du säkerställa att dina dokument skyddas från obehörig användning. Kom ihåg att du alltid kan hänvisa till[dokumentation](https://tutorials.groupdocs.com/Watermark/net/) för mer detaljerad information och avancerade funktioner.
 ## FAQ's
 ### Kan jag använda en bild som vattenstämpel istället för text?
 Ja, Groupdocs.Watermark för .NET stöder både text- och bildvattenstämplar.

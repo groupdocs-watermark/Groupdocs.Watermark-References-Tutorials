@@ -3,7 +3,6 @@ title: Ersätt text för specifik anteckning i PDF
 linktitle: Ersätt text för specifik anteckning i PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du ersätter text i specifika PDF-kommentarer med hjälp av Groupdocs.Watermark for .NET med denna omfattande, steg-för-steg-handledning.
-type: docs
 weight: 40
 url: /sv/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---

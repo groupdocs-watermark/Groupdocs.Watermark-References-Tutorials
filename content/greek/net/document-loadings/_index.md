@@ -3,7 +3,6 @@ title: Φόρτωση εγγράφου
 linktitle: Φόρτωση εγγράφου
 second_title: GroupDocs.Watermark .NET API
 description: Ανακαλύψτε μαθήματα GroupDocs.Watermark για .NET για φόρτωση και υδατογράφημα εγγράφων, διασφαλίζοντας την ασφάλεια των εγγράφων και την επωνυμία με οδηγούς βήμα προς βήμα.
-type: docs
 weight: 22
 url: /el/net/document-loadings/
 ---

@@ -3,7 +3,6 @@ title: 儲存文件到指定位置
 linktitle: 儲存文件到指定位置
 second_title: GroupDocs.Watermark .NET API
 description: 透過此逐步指南，了解如何使用 GroupDocs.Watermark for .NET 輕鬆地在文件中新增浮水印。增強文件安全性。
-type: docs
 weight: 11
 url: /zh-hant/net/document-savings/save-document-specified-location/
 ---

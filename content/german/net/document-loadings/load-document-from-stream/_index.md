@@ -3,7 +3,6 @@ title: Dokument aus Stream laden
 linktitle: Dokument aus Stream laden
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in dieser Anleitung, wie Sie mit GroupDocs.Watermark für .NET Wasserzeichen zu Dokumenten hinzufügen. Perfekt für Entwickler, die die Dokumentensicherheit verbessern möchten.
-type: docs
 weight: 11
 url: /de/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Dieser Code speichert das Dokument mit dem neu hinzugefügten Wasserzeichen`outputFileName` Pfad, den Sie zuvor definiert haben.
 
 ## Abschluss
-Glückwunsch! Sie haben Ihrem Dokument mit GroupDocs.Watermark für .NET erfolgreich ein Wasserzeichen hinzugefügt. Diese Bibliothek macht es unglaublich einfach, Wasserzeichen in einer Vielzahl von Dokumentformaten zu verwalten. Unabhängig davon, ob Sie Text, Bilder oder andere Arten von Wasserzeichen hinzufügen müssen, GroupDocs.Watermark verfügt über die Tools, die Sie benötigen. Vergessen Sie nicht, sich das anzusehen[Dokumentation](https://reference.groupdocs.com/Watermark/net/) für erweiterte Funktionen und Anpassungsoptionen.
+Glückwunsch! Sie haben Ihrem Dokument mit GroupDocs.Watermark für .NET erfolgreich ein Wasserzeichen hinzugefügt. Diese Bibliothek macht es unglaublich einfach, Wasserzeichen in einer Vielzahl von Dokumentformaten zu verwalten. Unabhängig davon, ob Sie Text, Bilder oder andere Arten von Wasserzeichen hinzufügen müssen, GroupDocs.Watermark verfügt über die Tools, die Sie benötigen. Vergessen Sie nicht, sich das anzusehen[Dokumentation](https://tutorials.groupdocs.com/Watermark/net/) für erweiterte Funktionen und Anpassungsoptionen.
 ## FAQs
 ### Welche Arten von Wasserzeichen kann ich mit GroupDocs.Watermark für .NET hinzufügen?
 Sie können Textwasserzeichen, Bildwasserzeichen und sogar komplexe Formen und Logos hinzufügen. Die Bibliothek unterstützt eine Vielzahl von Anpassungsoptionen.

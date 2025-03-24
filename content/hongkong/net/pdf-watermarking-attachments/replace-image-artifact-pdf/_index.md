@@ -3,7 +3,6 @@ title: 替換 PDF 中特定工件的圖像
 linktitle: 替換 PDF 中特定工件的圖像
 second_title: GroupDocs.Watermark .NET API
 description: 透過這個全面的逐步教學，了解如何使用 GroupDocs.Watermark for .NET 取代 PDF 文件中的圖像。
-type: docs
 weight: 38
 url: /zh-hant/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---

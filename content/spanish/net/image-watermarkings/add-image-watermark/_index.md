@@ -3,7 +3,6 @@ title: Agregar marca de agua de imagen
 linktitle: Agregar marca de agua de imagen
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a agregar marcas de agua de imágenes a sus documentos usando GroupDocs.Watermark para .NET con nuestro tutorial detallado paso a paso.
-type: docs
 weight: 11
 url: /es/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ Sí, GroupDocs.Watermark es compatible tanto con .NET Framework como con .NET Co
 ### ¿Es posible agregar varias marcas de agua a un solo documento?
  ¡Absolutamente! Puede agregar varias marcas de agua llamando al`Add` método varias veces con diferentes instancias de marca de agua.
 ### ¿Dónde puedo encontrar más ejemplos y documentación?
- Para obtener más ejemplos y documentación detallada, visite el[Documentación de GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ Para obtener más ejemplos y documentación detallada, visite el[Documentación de GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

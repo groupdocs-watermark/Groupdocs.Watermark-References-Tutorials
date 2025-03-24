@@ -3,7 +3,6 @@ title: Zastąp tekst określonym kształtem w dokumentach programu Word
 linktitle: Zastąp tekst określonym kształtem w dokumentach programu Word
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak zastąpić tekst określonych kształtów w dokumentach programu Word za pomocą programu GroupDocs.Watermark dla platformy .NET. Postępuj zgodnie z naszym samouczkiem krok po kroku.
-type: docs
 weight: 35
 url: /pl/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---

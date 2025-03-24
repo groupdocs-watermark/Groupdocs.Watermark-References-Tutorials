@@ -3,7 +3,6 @@ title: Agregar marca de agua de texto
 linktitle: Agregar marca de agua de texto
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a agregar marcas de agua de texto a sus documentos usando Groupdocs Watermark para .NET con esta guía paso a paso.
-type: docs
 weight: 11
 url: /es/net/watermarking-basics/add-text-watermark/
 ---

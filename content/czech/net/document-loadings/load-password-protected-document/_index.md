@@ -3,7 +3,6 @@ title: Načíst dokument chráněný heslem
 linktitle: Načíst dokument chráněný heslem
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky do dokumentů chráněných heslem pomocí Groupdocs Watermark for .NET pomocí našeho podrobného průvodce. Zabezpečte a označte své soubory snadno.
-type: docs
 weight: 13
 url: /cs/net/document-loadings/load-password-protected-document/
 ---

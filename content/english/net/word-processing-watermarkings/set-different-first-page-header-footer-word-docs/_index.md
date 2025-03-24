@@ -3,7 +3,6 @@ title: Set Different First Page Header/Footer in Word Docs
 linktitle: Set Different First Page Header/Footer in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to set different headers and footers on the first page of Word documents using GroupDocs.Watermark for .NET.
-type: docs
 weight: 36
 url: /net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Yes, technical support for GroupDocs.Watermark for .NET is available through the
 ### Can I purchase a temporary license for short-term usage?
 Yes, temporary licenses for GroupDocs.Watermark for .NET can be acquired from the [temporary license purchase page](https://purchase.groupdocs.com/temporary-license/).
 ### Where can I find comprehensive documentation for GroupDocs.Watermark for .NET?
-Detailed documentation for GroupDocs.Watermark for .NET is available on the [reference page](https://reference.groupdocs.com/Watermark/net/).
+Detailed documentation for GroupDocs.Watermark for .NET is available on the [tutorials page](https://tutorials.groupdocs.com/Watermark/net/).

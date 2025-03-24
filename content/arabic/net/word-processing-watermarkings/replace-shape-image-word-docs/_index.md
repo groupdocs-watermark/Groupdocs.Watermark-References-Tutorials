@@ -3,7 +3,6 @@ title: استبدال صورة الشكل في مستندات Word
 linktitle: استبدال صورة الشكل في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية استبدال صور الأشكال برمجياً في مستندات Word باستخدام GroupDocs.Watermark لـ .NET. تبسيط مهام معالجة المستندات دون عناء.
-type: docs
 weight: 33
 url: /ar/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---

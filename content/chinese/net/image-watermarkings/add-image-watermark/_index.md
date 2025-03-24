@@ -3,7 +3,6 @@ title: 添加图像水印
 linktitle: 添加图像水印
 second_title: GroupDocs.Watermark .NET API
 description: 通过我们详细的分步教程，了解如何使用 GroupDocs.Watermark for .NET 将图像水印添加到文档中。
-type: docs
 weight: 11
 url: /zh/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ GroupDocs.Watermark 支持多种文件格式，包括 PDF、DOCX、PPTX、XLSX �
 ### 是否可以向单个文档添加多个水印？
 绝对地！您可以通过调用添加多个水印`Add`使用不同的水印实例多次方法。
 ### 在哪里可以找到更多示例和文档？
-有关更多示例和详细文档，请访问[GroupDocs.Watermark 文档](https://reference.groupdocs.com/Watermark/net/).
+有关更多示例和详细文档，请访问[GroupDocs.Watermark 文档](https://tutorials.groupdocs.com/Watermark/net/).

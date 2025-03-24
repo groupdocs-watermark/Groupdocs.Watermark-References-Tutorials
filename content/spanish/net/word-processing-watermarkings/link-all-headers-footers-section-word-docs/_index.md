@@ -3,7 +3,6 @@ title: Vincular todos los encabezados y pies de página en secciones en document
 linktitle: Vincular todos los encabezados y pies de página en secciones en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Vincule fácilmente encabezados y pies de página en documentos de Word utilizando GroupDocs.Watermark para .NET. Garantice coherencia y profesionalismo con facilidad.
-type: docs
 weight: 25
 url: /es/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Eliminar formas con formato de texto específico en documentos de Word
 linktitle: Eliminar formas con formato de texto específico en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a eliminar formas con formato de texto específico en documentos de Word usando GroupDocs.Watermark para .NET. Siga nuestra guía para la manipulación eficiente de marcas de agua.
-type: docs
 weight: 31
 url: /es/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---

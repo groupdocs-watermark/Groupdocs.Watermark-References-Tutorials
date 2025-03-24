@@ -3,7 +3,6 @@ title: Voeg watermerk toe aan afbeeldingen in PDF
 linktitle: Voeg watermerk toe aan afbeeldingen in PDF
 second_title: GroupDocs.Watermark .NET API
 description: Leer watermerken toevoegen aan afbeeldingen in PDF-documenten met GroupDocs.Watermark voor .NET met onze gedetailleerde, stapsgewijze zelfstudie. Beveilig uw PDF's eenvoudig.
-type: docs
 weight: 19
 url: /nl/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ Absoluut! U kunt door elke pagina in de PDF bladeren en watermerken op afbeeldin
 ### Heb ik een licentie nodig om GroupDocs.Watermark voor .NET te gebruiken?
  Ja, een licentie is vereist. U kunt een[tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/) voor evaluatiedoeleinden.
 ### Waar kan ik meer documentatie vinden over GroupDocs.Watermark voor .NET?
- Uitgebreide documentatie vindt u op de website[GroupDocs.Watermark documentatiepagina](https://reference.groupdocs.com/Watermark/net/).
+ Uitgebreide documentatie vindt u op de website[GroupDocs.Watermark documentatiepagina](https://tutorials.groupdocs.com/Watermark/net/).

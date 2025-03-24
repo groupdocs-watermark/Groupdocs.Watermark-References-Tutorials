@@ -3,7 +3,6 @@ title: إضافة علامة مائية للصورة
 linktitle: إضافة علامة مائية للصورة
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية مصورة إلى مستنداتك باستخدام GroupDocs.Watermark لـ .NET من خلال برنامجنا التعليمي التفصيلي خطوة بخطوة.
-type: docs
 weight: 11
 url: /ar/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ watermarker.Save(outputFileName);
 ### هل من الممكن إضافة علامات مائية متعددة إلى وثيقة واحدة؟
  قطعاً! يمكنك إضافة علامات مائية متعددة عن طريق الاتصال بـ`Add` الطريقة عدة مرات مع مثيلات مختلفة للعلامة المائية.
 ### أين يمكنني العثور على المزيد من الأمثلة والوثائق؟
- لمزيد من الأمثلة والوثائق التفصيلية، قم بزيارة[وثائق GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ لمزيد من الأمثلة والوثائق التفصيلية، قم بزيارة[وثائق GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

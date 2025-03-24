@@ -3,7 +3,6 @@ title: Adicionar marca d'água a páginas específicas em documentos do Word
 linktitle: Adicionar marca d'água a páginas específicas em documentos do Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda como adicionar marcas d’água a páginas específicas em documentos do Word sem esforço usando o Groupdocs para .NET. Melhore a segurança e a marca dos documentos.
-type: docs
 weight: 18
 url: /pt/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---

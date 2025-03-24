@@ -3,7 +3,6 @@ title: 文件載入
 linktitle: 文件載入
 second_title: GroupDocs.Watermark .NET API
 description: 探索 GroupDocs.Watermark for .NET 教學來載入文件並為其添加浮水印，透過逐步指南確保文件安全和品牌塑造。
-type: docs
 weight: 22
 url: /zh-hant/net/document-loadings/
 ---

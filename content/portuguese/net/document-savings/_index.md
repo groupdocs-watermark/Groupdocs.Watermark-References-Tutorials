@@ -3,7 +3,6 @@ title: Salvamento de documentos
 linktitle: Salvamento de documentos
 second_title: API GroupDocs.Watermark .NET
 description: Explore os tutoriais do GroupDocs.Watermark for .NET sobre como salvar documentos com marcas d'água. Aprenda métodos passo a passo para aprimorar a segurança e o gerenciamento de documentos.
-type: docs
 weight: 23
 url: /pt/net/document-savings/
 ---

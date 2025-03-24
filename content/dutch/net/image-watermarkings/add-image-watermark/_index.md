@@ -3,7 +3,6 @@ title: Voeg afbeeldingswatermerk toe
 linktitle: Voeg afbeeldingswatermerk toe
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u afbeeldingswatermerken aan uw documenten kunt toevoegen met GroupDocs.Watermark voor .NET met onze gedetailleerde, stapsgewijze zelfstudie.
-type: docs
 weight: 11
 url: /nl/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ Ja, GroupDocs.Watermark is compatibel met zowel .NET Framework als .NET Core.
 ### Is het mogelijk om meerdere watermerken aan één document toe te voegen?
  Absoluut! U kunt meerdere watermerken toevoegen door te bellen naar de`Add` methode meerdere keren met verschillende watermerkinstanties.
 ### Waar kan ik meer voorbeelden en documentatie vinden?
- Voor meer voorbeelden en gedetailleerde documentatie kunt u terecht op de website[GroupDocs.Watermark-documentatie](https://reference.groupdocs.com/Watermark/net/).
+ Voor meer voorbeelden en gedetailleerde documentatie kunt u terecht op de website[GroupDocs.Watermark-documentatie](https://tutorials.groupdocs.com/Watermark/net/).

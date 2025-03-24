@@ -3,7 +3,6 @@ title: Wyszukaj obraz w załączniku pliku PDF
 linktitle: Wyszukaj obraz w załączniku pliku PDF
 second_title: GroupDocs.Watermark API .NET
 description: Efektywnie przeszukuj obrazy w załącznikach PDF za pomocą GroupDocs.Watermark dla .NET. Uprość proces zarządzania znakami wodnymi bez wysiłku.
-type: docs
 weight: 46
 url: /pl/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---

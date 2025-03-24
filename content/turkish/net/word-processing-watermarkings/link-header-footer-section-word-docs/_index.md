@@ -3,7 +3,6 @@ title: Word Belgelerindeki Bölümdeki Bağlantı Üstbilgisi/Altbilgisi
 linktitle: Word Belgelerindeki Bölümdeki Bağlantı Üstbilgisi/Altbilgisi
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinin bölümleri içindeki üstbilgileri ve altbilgileri verimli bir şekilde nasıl bağlayacağınızı öğrenin. Belge yönetimi ve güvenliği.
-type: docs
 weight: 26
 url: /tr/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ Evet, ücretsiz deneme sürümüne şu adresten erişebilirsiniz:[sürümler say
 ### GroupDocs.Watermark for .NET için geçici lisanslar mevcut mu?
  Evet, geçici lisanslar şu adresten alınabilir:[GroupDocs satın alma sayfası](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Watermark for .NET geliştiricilere yönelik belgeler sunuyor mu?
- Evet, kapsamlı belgeler mevcut[Burada](https://reference.groupdocs.com/Watermark/net/).
+ Evet, kapsamlı belgeler mevcut[Burada](https://tutorials.groupdocs.com/Watermark/net/).

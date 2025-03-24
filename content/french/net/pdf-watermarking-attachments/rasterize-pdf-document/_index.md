@@ -3,7 +3,6 @@ title: Pixelliser un document PDF
 linktitle: Pixelliser un document PDF
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment pixelliser des documents PDF à l'aide de GroupDocs.Watermark pour .NET. Améliorez la sécurité des documents et leur attrait visuel sans effort.
-type: docs
 weight: 27
 url: /fr/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---

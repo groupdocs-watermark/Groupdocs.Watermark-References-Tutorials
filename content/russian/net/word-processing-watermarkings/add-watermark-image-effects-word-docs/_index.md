@@ -3,7 +3,6 @@ title: Добавьте водяной знак с эффектами изобр
 linktitle: Добавьте водяной знак с эффектами изображения в документах Word
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять водяные знаки с графическими эффектами в документы Word с помощью GroupDocs.Watermark для .NET. Следуйте нашему пошаговому руководству, чтобы получить потрясающие результаты.
-type: docs
 weight: 19
 url: /ru/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---

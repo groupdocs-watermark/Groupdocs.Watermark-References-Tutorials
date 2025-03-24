@@ -3,7 +3,6 @@ title: Zapisywanie dokumentów
 linktitle: Zapisywanie dokumentów
 second_title: GroupDocs.Watermark API .NET
 description: Zapoznaj się z samouczkami GroupDocs.Watermark for .NET dotyczącymi zapisywania dokumentów ze znakami wodnymi. Poznaj metody krok po kroku zwiększające bezpieczeństwo dokumentów i zarządzanie nimi.
-type: docs
 weight: 23
 url: /pl/net/document-savings/
 ---

@@ -3,7 +3,6 @@ title: إضافة مرفق إلى PDF
 linktitle: إضافة مرفق إلى PDF
 second_title: GroupDocs.Watermark .NET API
 description: قم بتحسين قدرات إدارة مستندات .NET الخاصة بك باستخدام GroupDocs.Watermark لوضع العلامات المائية ومعالجة المرفقات بشكل سلس.
-type: docs
 weight: 12
 url: /ar/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---

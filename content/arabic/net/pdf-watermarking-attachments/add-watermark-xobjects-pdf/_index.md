@@ -3,7 +3,6 @@ title: أضف علامة مائية إلى XObjects في PDF
 linktitle: أضف علامة مائية إلى XObjects في PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية إلى XObjects في PDF باستخدام Groupdocs.Watermark لـ .NET. اتبع دليلنا خطوة بخطوة لسهولة التنفيذ.
-type: docs
 weight: 20
 url: /ar/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ foreach (PdfPage page in pdfContent.Pages)
 ```
 وهناك لديك! يحتوي ملف PDF الخاص بك الآن على علامات مائية على جميع ملفات XObjects الخاصة به.
 ## خاتمة
- تعد إضافة علامات مائية إلى مستندات PDF الخاصة بك باستخدام Groupdocs Watermark for .NET عملية مباشرة توفر طبقة إضافية من الأمان. باتباع الخطوات الموضحة في هذا البرنامج التعليمي، يمكنك التأكد من حماية مستنداتك من الاستخدام غير المصرح به. تذكر أنه يمكنك دائمًا الرجوع إلى[توثيق](https://reference.groupdocs.com/Watermark/net/) لمزيد من المعلومات التفصيلية والميزات المتقدمة.
+ تعد إضافة علامات مائية إلى مستندات PDF الخاصة بك باستخدام Groupdocs Watermark for .NET عملية مباشرة توفر طبقة إضافية من الأمان. باتباع الخطوات الموضحة في هذا البرنامج التعليمي، يمكنك التأكد من حماية مستنداتك من الاستخدام غير المصرح به. تذكر أنه يمكنك دائمًا الرجوع إلى[توثيق](https://tutorials.groupdocs.com/Watermark/net/) لمزيد من المعلومات التفصيلية والميزات المتقدمة.
 ## الأسئلة الشائعة
 ### هل يمكنني استخدام صورة كعلامة مائية بدلاً من النص؟
 نعم، تدعم Groupdocs.Watermark for .NET العلامات المائية النصية والصورية.

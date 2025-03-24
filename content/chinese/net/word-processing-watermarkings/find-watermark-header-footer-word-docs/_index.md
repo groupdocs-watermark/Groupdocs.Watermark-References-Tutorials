@@ -3,7 +3,6 @@ title: 在 Word 文档的页眉/页脚中查找水印
 linktitle: 在 Word 文档的页眉/页脚中查找水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs for .NET 高效查找和删除 Word 文档中的水印，确保文档的完整性和专业性。
-type: docs
 weight: 22
 url: /zh/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---

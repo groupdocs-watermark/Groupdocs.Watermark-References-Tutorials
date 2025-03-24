@@ -3,7 +3,6 @@ title: استبدال النص بالتنسيق للتعليق التوضيحي 
 linktitle: استبدال النص بالتنسيق للتعليق التوضيحي في PDF
 second_title: GroupDocs.Watermark .NET API
 description: قم بتحسين أمان المستند باستخدام GroupDocs للعلامة المائية لـ .NET. تعرف على كيفية استبدال النص بتنسيق التعليقات التوضيحية في ملفات PDF دون عناء.
-type: docs
 weight: 41
 url: /ar/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---

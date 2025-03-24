@@ -3,7 +3,6 @@ title: 画像の透かしを追加する
 linktitle: 画像の透かしを追加する
 second_title: GroupDocs.Watermark .NET API
 description: 詳細なステップバイステップのチュートリアルで、GroupDocs.Watermark for .NET を使用してドキュメントに画像ウォーターマークを追加する方法を学びます。
-type: docs
 weight: 11
 url: /ja/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ GroupDocs.Watermark は、PDF、DOCX、PPTX、XLSX、JPEG や PNG などの画�
 ### 1 つのドキュメントに複数の透かしを追加することはできますか?
 絶対に！を呼び出すことで、複数のウォーターマークを追加できます。`Add`メソッドを異なるウォーターマーク インスタンスで複数回実行します。
 ### 他の例やドキュメントはどこで入手できますか?
-その他の例と詳細なドキュメントについては、次のサイトを参照してください。[GroupDocs.Watermark ドキュメント](https://reference.groupdocs.com/Watermark/net/).
+その他の例と詳細なドキュメントについては、次のサイトを参照してください。[GroupDocs.Watermark ドキュメント](https://tutorials.groupdocs.com/Watermark/net/).

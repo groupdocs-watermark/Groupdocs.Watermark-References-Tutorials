@@ -3,7 +3,6 @@ title: ลบลายน้ำออกจาก PDF
 linktitle: ลบลายน้ำออกจาก PDF
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีลบลายน้ำออกจากไฟล์ PDF โดยใช้ GroupDocs.Watermark สำหรับ .NET ขั้นตอนง่ายๆ สำหรับการแก้ไขเอกสารอย่างมืออาชีพ
-type: docs
 weight: 34
 url: /th/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---

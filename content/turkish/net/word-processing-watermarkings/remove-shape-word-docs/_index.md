@@ -3,7 +3,6 @@ title: Word Belgelerindeki Şekli Kaldırma
 linktitle: Word Belgelerindeki Şekli Kaldırma
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinden şekilleri nasıl kaldıracağınızı öğrenin. Kolay, verimli ve güçlü belge işleme.
-type: docs
 weight: 30
 url: /tr/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
@@ -72,6 +71,6 @@ Evet, GroupDocs.Watermark for .NET, Excel, PowerPoint, PDF ve daha fazlasını i
 ### GroupDocs.Watermark for .NET için geçici lisansları nasıl edinebilirim?
  GroupDocs.Watermark for .NET için geçici lisanslar şu adresten edinilebilir:[geçici lisans sayfası](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Watermark for .NET'e ilişkin belgeleri ve desteği nerede bulabilirim?
- GroupDocs.Watermark for .NET'e yönelik belgeler ve destek kaynakları şu adreste mevcuttur:[forum](https://forum.groupdocs.com/c/watermark/19) Ve[Referans sayfası](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark for .NET'e yönelik belgeler ve destek kaynakları şu adreste mevcuttur:[forum](https://forum.groupdocs.com/c/watermark/19) Ve[Referans sayfası](https://tutorials.groupdocs.com/Watermark/net/).
 ### Hangi .NET sürümleri GroupDocs.Watermark ile uyumludur?
 GroupDocs.Watermark for .NET, .NET Framework ve .NET Core dahil olmak üzere çeşitli .NET sürümleriyle uyumludur.

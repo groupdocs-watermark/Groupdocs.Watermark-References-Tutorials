@@ -3,7 +3,6 @@ title: ローカルディスクからドキュメント情報を取得
 linktitle: ローカルディスクからドキュメント情報を取得
 second_title: GroupDocs.Watermark .NET API
 description: この包括的なステップバイステップ ガイドでは、GroupDocs for .NET のウォーターマークを使用してドキュメントにウォーターマークを追加、削除、抽出する方法を学びます。
-type: docs
 weight: 11
 url: /ja/net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /ja/net/document-manipulation/get-document-info-local-disk/
 GroupDocs.Watermark for .NET の使用に関する究極のガイドへようこそ!経験豊富な開発者であっても、初心者であっても、この記事では、この強力なツールを使用してドキュメントに透かしを入れるための基本事項を説明します。最終的には、文書に透かしを埋め込み、文書が確実に保護され、仕様に合わせてブランド化されるプロになれるでしょう。
 ## 前提条件
 ステップバイステップ ガイドに進む前に、満たす必要がある前提条件がいくつかあります。
-1.  .NET Framework: システムに .NET Framework がインストールされていることを確認してください。 GroupDocs.Watermark for .NET は、.NET Framework のさまざまなバージョンと互換性があるため、[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/)互換性の詳細については。
+1.  .NET Framework: システムに .NET Framework がインストールされていることを確認してください。 GroupDocs.Watermark for .NET は、.NET Framework のさまざまなバージョンと互換性があるため、[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/)互換性の詳細については。
 2.  GroupDocs.Watermark for .NET ライブラリ: 最新バージョンを次の場所からダウンロードしてインストールします。[ダウンロードページ](https://releases.groupdocs.com/Watermark/net/).
 3. 開発環境: 開発環境をセットアップする必要があります。 Visual Studio は、.NET 開発によく選ばれています。
 4. C# の基本知識: C# プログラミングの基本を理解すると、例を理解するのに役立ちます。
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
 このステップでは、`GetWatermarks`ドキュメント内のすべてのウォーターマークを取得するメソッド。その後、ウォーターマークのリストを繰り返し処理して、そのプロパティを検査したり、必要に応じて追加のアクションを実行したりできます。
 ## 結論
-おめでとう！ GroupDocs.Watermark for .NET を使用して、ドキュメントにウォーターマークを追加、削除、抽出する方法を学習しました。これらのスキルがあれば、ドキュメントを効果的に保護し、ブランド化することができます。覚えておいてください、[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/)より詳細な情報や高度な機能が必要な場合には、いつでも利用できます。
+おめでとう！ GroupDocs.Watermark for .NET を使用して、ドキュメントにウォーターマークを追加、削除、抽出する方法を学習しました。これらのスキルがあれば、ドキュメントを効果的に保護し、ブランド化することができます。覚えておいてください、[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/)より詳細な情報や高度な機能が必要な場合には、いつでも利用できます。
 ## よくある質問
 ### GroupDocs.Watermark for .NET はどの .NET バージョンでも使用できますか?
-はい、GroupDocs.Watermark for .NET はさまざまな .NET Framework バージョンと互換性があります。チェックしてください[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/)具体的には。
+はい、GroupDocs.Watermark for .NET はさまざまな .NET Framework バージョンと互換性があります。チェックしてください[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/)具体的には。
 ### .NET 用の GroupDocs.Watermark はどこでダウンロードできますか?
 最新バージョンはからダウンロードできます。[ダウンロードページ](https://releases.groupdocs.com/Watermark/net/).
 ### 仮免許はどうやって取得するのですか？

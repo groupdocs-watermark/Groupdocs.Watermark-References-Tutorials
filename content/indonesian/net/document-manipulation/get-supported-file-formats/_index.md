@@ -3,7 +3,6 @@ title: Dapatkan Format File yang Didukung
 linktitle: Dapatkan Format File yang Didukung
 second_title: GroupDocs.Tanda Air .NET API
 description: Tambahkan tanda air ke dokumen Anda dengan mudah menggunakan GroupDocs.Watermark untuk .NET. Ikuti panduan komprehensif langkah demi langkah kami untuk melindungi aset digital Anda.
-type: docs
 weight: 13
 url: /id/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ Anda dapat menggunakan cuplikan kode yang disediakan untuk mencantumkan semua fo
 ### Bagaimana saya bisa membeli lisensi untuk GroupDocs.Watermark?
  Lisensi dapat dibeli langsung dari[halaman pembelian](https://purchase.groupdocs.com/buy).
 ### Apakah ada dokumentasi yang tersedia untuk GroupDocs.Watermark?
- Ya, dokumentasi lengkap tersedia[Di Sini](https://reference.groupdocs.com/Watermark/net/).
+ Ya, dokumentasi lengkap tersedia[Di Sini](https://tutorials.groupdocs.com/Watermark/net/).

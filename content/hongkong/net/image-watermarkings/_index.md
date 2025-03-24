@@ -3,7 +3,6 @@ title: 圖片浮水印
 linktitle: 圖片浮水印
 second_title: GroupDocs.Watermark .NET API
 description: 探索新增影像浮水印的 GroupDocs.Watermark for .NET 教學。了解增強文件安全性和品牌形象的逐步方法。
-type: docs
 weight: 24
 url: /zh-hant/net/image-watermarkings/
 ---

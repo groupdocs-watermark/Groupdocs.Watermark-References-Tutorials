@@ -3,7 +3,6 @@ title: 删除 PDF 中具有特定文本格式的注释
 linktitle: 删除 PDF 中具有特定文本格式的注释
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs for .NET 删除 PDF 文档中具有特定文本格式的注释。
-type: docs
 weight: 30
 url: /zh/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
@@ -72,7 +71,7 @@ Groupdocs.Watermark for .NET 为处理 PDF 文档中的注释和其他元素提�
 ### Groupdocs.Watermark for .NET 是否有免费试用版？
 是的，您可以访问 Groupdocs.Watermark for .NET 的免费试用版：[这里](https://releases.groupdocs.com/).
 ### 在哪里可以找到 Groupdocs.Watermark for .NET 的文档？
-您可以找到详细的文档和 API 参考[这里](https://reference.groupdocs.com/Watermark/net/).
+您可以找到详细的文档和 API 参考[这里](https://tutorials.groupdocs.com/Watermark/net/).
 ### 对于与 Groupdocs.Watermark 相关的任何问题或查询，如何获得支持？
 您可以在 Groupdocs.Watermark 论坛上发布您的疑问或问题[这里](https://forum.groupdocs.com/c/watermark/19).
 ### 我可以购买 Groupdocs.Watermark for .NET 的临时许可证吗？

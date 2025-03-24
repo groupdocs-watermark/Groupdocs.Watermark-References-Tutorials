@@ -3,7 +3,6 @@ title: Utilizzo del tipo di forma nei documenti Word
 linktitle: Utilizzo del tipo di forma nei documenti Word
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come manipolare le forme nei documenti Word utilizzando GroupDocs.Watermark per .NET. Questo tutorial fornisce indicazioni per un'elaborazione efficiente dei documenti.
-type: docs
 weight: 37
 url: /it/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---

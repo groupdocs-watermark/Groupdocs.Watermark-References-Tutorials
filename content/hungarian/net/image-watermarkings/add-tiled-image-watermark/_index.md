@@ -3,7 +3,6 @@ title: Adjon hozzá csempézett kép vízjelet
 linktitle: Adjon hozzá csempézett kép vízjelet
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat mozaikszerű vízjeleket a dokumentumokhoz a GroupDocs.Watermark for .NET segítségével. Egyszerű, hatékony és testreszabható.
-type: docs
 weight: 10
 url: /hu/net/image-watermarkings/add-tiled-image-watermark/
 ---

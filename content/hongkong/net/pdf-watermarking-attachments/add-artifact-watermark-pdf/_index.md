@@ -3,7 +3,6 @@ title: 為 PDF 新增工件浮水印
 linktitle: 為 PDF 新增工件浮水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs.Watermark for .NET 輕鬆地將工件浮水印新增至 PDF 檔案。輕鬆保護您的文件。
-type: docs
 weight: 11
 url: /zh-hant/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---

@@ -3,7 +3,6 @@ title: Προσθήκη υδατογραφήματος εικόνας
 linktitle: Προσθήκη υδατογραφήματος εικόνας
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα εικόνας στα έγγραφά σας χρησιμοποιώντας το GroupDocs.Watermark για .NET με τον αναλυτικό, βήμα προς βήμα εκμάθησή μας.
-type: docs
 weight: 11
 url: /el/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ watermarker.Save(outputFileName);
 ### Είναι δυνατή η προσθήκη πολλών υδατογραφημάτων σε ένα μόνο έγγραφο;
  Απολύτως! Μπορείτε να προσθέσετε πολλά υδατογραφήματα καλώντας το`Add` μέθοδος πολλές φορές με διαφορετικές περιπτώσεις υδατογραφήματος.
 ### Πού μπορώ να βρω περισσότερα παραδείγματα και τεκμηρίωση;
- Για περισσότερα παραδείγματα και λεπτομερή τεκμηρίωση, επισκεφθείτε το[Τεκμηρίωση GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ Για περισσότερα παραδείγματα και λεπτομερή τεκμηρίωση, επισκεφθείτε το[Τεκμηρίωση GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

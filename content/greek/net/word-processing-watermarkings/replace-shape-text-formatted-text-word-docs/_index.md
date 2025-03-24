@@ -3,7 +3,6 @@ title: Αντικαταστήστε το κείμενο σχήματος με μ
 linktitle: Αντικαταστήστε το κείμενο σχήματος με μορφοποιημένο κείμενο στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αντικαθιστάτε κείμενο σχήματος με μορφοποιημένο κείμενο σε έγγραφα Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Οι δυνατότητες επεξεργασίας εγγράφων σας χωρίς κόπο.
-type: docs
 weight: 34
 url: /el/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---

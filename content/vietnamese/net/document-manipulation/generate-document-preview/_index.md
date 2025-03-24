@@ -3,7 +3,6 @@ title: Tạo bản xem trước tài liệu
 linktitle: Tạo bản xem trước tài liệu
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách tạo bản xem trước tài liệu bằng GroupDocs.Watermark cho .NET với hướng dẫn này. Tăng cường bảo mật và quản lý tài liệu của bạn một cách dễ dàng.
-type: docs
 weight: 10
 url: /vi/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Phần kết luận
 Tạo bản xem trước tài liệu bằng GroupDocs.Watermark cho .NET là một quá trình đơn giản có thể được thực hiện chỉ với một vài dòng mã. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể dễ dàng thiết lập dự án của mình, định cấu hình các tùy chọn cần thiết và tạo bản xem trước cho tài liệu của mình. Thư viện mạnh mẽ này không chỉ đơn giản hóa quá trình tạo hình mờ mà còn cung cấp các tính năng mạnh mẽ để quản lý và thao tác hình mờ.
- Nếu bạn có thắc mắc hoặc cần hỗ trợ thêm, đừng ngần ngại truy cập[Diễn đàn hỗ trợ GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) hoặc tham khảo[tài liệu](https://reference.groupdocs.com/Watermark/net/).
+ Nếu bạn có thắc mắc hoặc cần hỗ trợ thêm, đừng ngần ngại truy cập[Diễn đàn hỗ trợ GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) hoặc tham khảo[tài liệu](https://tutorials.groupdocs.com/Watermark/net/).
 ## Câu hỏi thường gặp
 ### Những định dạng tệp nào được GroupDocs.Watermark hỗ trợ cho .NET?
- GroupDocs.Watermark cho .NET hỗ trợ nhiều định dạng tệp, bao gồm PDF, DOCX, PPTX, XLSX, v.v. Để biết danh sách đầy đủ các định dạng được hỗ trợ, hãy tham khảo[tài liệu](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark cho .NET hỗ trợ nhiều định dạng tệp, bao gồm PDF, DOCX, PPTX, XLSX, v.v. Để biết danh sách đầy đủ các định dạng được hỗ trợ, hãy tham khảo[tài liệu](https://tutorials.groupdocs.com/Watermark/net/).
 ### Tôi có thể tùy chỉnh sự xuất hiện của hình mờ không?
 Có, GroupDocs.Watermark cho phép bạn tùy chỉnh hoàn toàn giao diện của hình mờ, bao gồm hình mờ văn bản, hình ảnh và hình dạng. Bạn có thể điều chỉnh các thuộc tính như phông chữ, màu sắc, kích thước và độ trong suốt.
 ### Có sẵn phiên bản dùng thử không?

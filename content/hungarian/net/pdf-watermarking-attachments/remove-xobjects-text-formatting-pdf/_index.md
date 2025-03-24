@@ -3,7 +3,6 @@ title: Távolítsa el az XObjects objektumokat meghatározott szövegformázáss
 linktitle: Távolítsa el az XObjects objektumokat meghatározott szövegformázással a PDF-ben
 second_title: GroupDocs.Watermark .NET API
 description: Könnyedén távolítsa el az XObjects objektumokat meghatározott szövegformázással a PDF-ekből a GroupDocs.Watermark for .NET segítségével. Kövesse útmutatónkat a zökkenőmentes dokumentumkezeléshez.
-type: docs
 weight: 36
 url: /hu/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Végül mentse a módosított PDF dokumentumot a megadott kimeneti fájl eléré
 Ezzel befejeződik a meghatározott szövegformázással rendelkező XObjects eltávolítási folyamat a PDF-dokumentumból.
 
 ## Következtetés
-Ha követi ezeket a lépéseket, hatékonyan távolíthatja el az XObject-eket meghatározott szövegformázással a PDF-dokumentumokból a GroupDocs.Watermark for .NET segítségével. Ez a hatékony könyvtár nemcsak leegyszerűsíti a vízjelezési feladatokat, hanem robusztus lehetőségeket is kínál a dokumentumok kezeléséhez. Részletesebb dokumentációért keresse fel a[GroupDocs.Watermark a .NET dokumentációhoz](https://reference.groupdocs.com/Watermark/net/) . Ha bármilyen problémába ütközik vagy kérdése van, a[támogatói fórum](https://forum.groupdocs.com/c/watermark/19) remek hely a segítség kérésére.
+Ha követi ezeket a lépéseket, hatékonyan távolíthatja el az XObject-eket meghatározott szövegformázással a PDF-dokumentumokból a GroupDocs.Watermark for .NET segítségével. Ez a hatékony könyvtár nemcsak leegyszerűsíti a vízjelezési feladatokat, hanem robusztus lehetőségeket is kínál a dokumentumok kezeléséhez. Részletesebb dokumentációért keresse fel a[GroupDocs.Watermark a .NET dokumentációhoz](https://tutorials.groupdocs.com/Watermark/net/) . Ha bármilyen problémába ütközik vagy kérdése van, a[támogatói fórum](https://forum.groupdocs.com/c/watermark/19) remek hely a segítség kérésére.
 ## GYIK
 ### Eltávolíthatom az XObjecteket eltérő szövegformázással?
 Igen, módosíthatja a kódot a különböző szövegformázási attribútumok, például a betűméret, a betűstílus vagy a szín ellenőrzéséhez.

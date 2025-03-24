@@ -3,7 +3,6 @@ title: Alakzat eltávolítása a Word Dokumentumokban
 linktitle: Alakzat eltávolítása a Word Dokumentumokban
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan távolíthat el alakzatokat Word-dokumentumokból a GroupDocs.Watermark for .NET segítségével. Egyszerű, hatékony és hatékony dokumentumkezelés.
-type: docs
 weight: 30
 url: /hu/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
@@ -72,6 +71,6 @@ Igen, a GroupDocs.Watermark for .NET a dokumentumformátumok széles skáláját
 ### Hogyan szerezhetek ideiglenes licenceket a GroupDocs.Watermark for .NET számára?
  Ideiglenes licencek a GroupDocs.Watermark for .NET-hez a következő webhelyen szerezhetők be[ideiglenes licenc oldal](https://purchase.groupdocs.com/temporary-license/).
 ### Hol találom a GroupDocs.Watermark for .NET dokumentációját és támogatását?
- A GroupDocs.Watermark for .NET dokumentációs és támogatási forrásai a webhelyen érhetők el[fórum](https://forum.groupdocs.com/c/watermark/19) és[Hivatkozási oldal](https://reference.groupdocs.com/Watermark/net/).
+ A GroupDocs.Watermark for .NET dokumentációs és támogatási forrásai a webhelyen érhetők el[fórum](https://forum.groupdocs.com/c/watermark/19) és[Hivatkozási oldal](https://tutorials.groupdocs.com/Watermark/net/).
 ### A .NET mely verziói kompatibilisek a GroupDocs.Watermark programmal?
 A GroupDocs.Watermark for .NET kompatibilis a .NET különféle verzióival, beleértve a .NET Framework-et és a .NET Core-t.

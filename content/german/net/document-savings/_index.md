@@ -3,7 +3,6 @@ title: Speichern von Dokumenten
 linktitle: Speichern von Dokumenten
 second_title: GroupDocs.Watermark .NET-API
 description: Entdecken Sie die Tutorials von GroupDocs.Watermark für .NET zum Speichern von Dokumenten mit Wasserzeichen. Lernen Sie Schritt-für-Schritt-Methoden zur Verbesserung der Dokumentensicherheit und -verwaltung.
-type: docs
 weight: 23
 url: /de/net/document-savings/
 ---

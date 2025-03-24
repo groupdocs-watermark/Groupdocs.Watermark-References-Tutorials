@@ -3,7 +3,6 @@ title: PDF の注釈のテキストを書式設定で置き換える
 linktitle: PDF の注釈のテキストを書式設定で置き換える
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs for .NET でドキュメントのセキュリティを強化します。 PDF ファイル内の注釈のテキストを簡単に書式設定に置き換える方法を学びます。
-type: docs
 weight: 41
 url: /ja/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---

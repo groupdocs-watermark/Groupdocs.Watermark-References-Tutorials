@@ -3,7 +3,6 @@ title: Nahraďte text formátováním pro XObject v PDF
 linktitle: Nahraďte text formátováním pro XObject v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Vylepšete své možnosti manipulace s dokumenty .NET pomocí GroupDocs pro .NET. Naučte se, jak snadno nahradit text formátováním v PDF.
-type: docs
 weight: 45
 url: /cs/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---

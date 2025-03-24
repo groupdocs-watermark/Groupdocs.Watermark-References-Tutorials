@@ -3,7 +3,6 @@ title: Obtenir des informations sur le document à partir du disque local
 linktitle: Obtenir des informations sur le document à partir du disque local
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter, supprimer et extraire des filigranes dans des documents à l'aide de GroupDocs Watermark for .NET avec ce guide complet étape par étape.
-type: docs
 weight: 11
 url: /fr/net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /fr/net/document-manipulation/get-document-info-local-disk/
 Bienvenue dans le guide ultime sur l'utilisation de GroupDocs.Watermark pour .NET ! Que vous soyez un développeur chevronné ou que vous débutiez tout juste, cet article vous expliquera les bases du filigrane de vos documents avec cet outil puissant. À la fin, vous serez un pro dans l'intégration de filigranes dans vos documents, en vous assurant qu'ils sont protégés et marqués selon vos spécifications.
 ## Conditions préalables
 Avant de plonger dans le guide étape par étape, vous devrez remplir quelques conditions préalables :
-1.  .NET Framework : assurez-vous que .NET Framework est installé sur votre système. GroupDocs.Watermark pour .NET est compatible avec différentes versions du .NET Framework, alors vérifiez le[Documentation](https://reference.groupdocs.com/Watermark/net/) pour les détails de compatibilité.
+1.  .NET Framework : assurez-vous que .NET Framework est installé sur votre système. GroupDocs.Watermark pour .NET est compatible avec différentes versions du .NET Framework, alors vérifiez le[Documentation](https://tutorials.groupdocs.com/Watermark/net/) pour les détails de compatibilité.
 2.  GroupDocs.Watermark pour la bibliothèque .NET : téléchargez et installez la dernière version à partir du[page de téléchargement](https://releases.groupdocs.com/Watermark/net/).
 3. Environnement de développement : vous devez disposer d'un environnement de développement. Visual Studio est un choix populaire pour le développement .NET.
 4. Connaissances de base en C# : Comprendre les bases de la programmation C# vous aidera à suivre les exemples.
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
  Cette étape consiste à utiliser le`GetWatermarks`méthode pour récupérer tous les filigranes d’un document. Vous pouvez ensuite parcourir la liste des filigranes et inspecter leurs propriétés ou effectuer des actions supplémentaires si nécessaire.
 ## Conclusion
- Toutes nos félicitations! Vous avez maintenant appris à utiliser GroupDocs.Watermark pour .NET pour ajouter, supprimer et extraire des filigranes de vos documents. Grâce à ces compétences, vous pouvez protéger et marquer efficacement vos documents. Se souvenir du[Documentation](https://reference.groupdocs.com/Watermark/net/) est toujours là si vous avez besoin d'informations plus détaillées ou de fonctionnalités avancées.
+ Toutes nos félicitations! Vous avez maintenant appris à utiliser GroupDocs.Watermark pour .NET pour ajouter, supprimer et extraire des filigranes de vos documents. Grâce à ces compétences, vous pouvez protéger et marquer efficacement vos documents. Se souvenir du[Documentation](https://tutorials.groupdocs.com/Watermark/net/) est toujours là si vous avez besoin d'informations plus détaillées ou de fonctionnalités avancées.
 ## FAQ
 ### Puis-je utiliser GroupDocs.Watermark pour .NET avec n’importe quelle version de .NET ?
- Oui, GroupDocs.Watermark pour .NET est compatible avec différentes versions de .NET Framework. Vérifier la[Documentation](https://reference.groupdocs.com/Watermark/net/) pour des détails.
+ Oui, GroupDocs.Watermark pour .NET est compatible avec différentes versions de .NET Framework. Vérifier la[Documentation](https://tutorials.groupdocs.com/Watermark/net/) pour des détails.
 ### Où puis-je télécharger GroupDocs.Watermark pour .NET ?
  Vous pouvez télécharger la dernière version à partir du[page de téléchargement](https://releases.groupdocs.com/Watermark/net/).
 ### Comment obtenir un permis temporaire ?

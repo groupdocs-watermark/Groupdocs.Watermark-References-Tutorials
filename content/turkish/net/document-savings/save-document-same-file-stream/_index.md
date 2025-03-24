@@ -3,7 +3,6 @@ title: Belgeyi Aynı Dosyaya veya Akışa Kaydetme
 linktitle: Belgeyi Aynı Dosyaya veya Akışa Kaydetme
 second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs.Watermark for .NET'i kullanarak belgelere nasıl filigran ekleyeceğinizi öğrenin. Bu kılavuz, belgenin korunmasını ve bütünlüğünü sağlamaya yönelik talimatlar sağlar.
-type: docs
 weight: 10
 url: /tr/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Son olarak, filigranın uygulandığı belgeyi kaydedin:
 watermarker.Save();
 ```
 ## Çözüm
-Groupdocs'u kullanarak belgelerinize filigran eklemek basit ve etkilidir. Yukarıda özetlenen adımları takip ederek belgelerinizi koruyabilir ve bütünlüklerini zahmetsizce koruyabilirsiniz. Daha fazla ayrıntı için şuraya başvurabilirsiniz:[dokümantasyon](https://reference.groupdocs.com/Watermark/net/).
+Groupdocs'u kullanarak belgelerinize filigran eklemek basit ve etkilidir. Yukarıda özetlenen adımları takip ederek belgelerinizi koruyabilir ve bütünlüklerini zahmetsizce koruyabilirsiniz. Daha fazla ayrıntı için şuraya başvurabilirsiniz:[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/).
 ## SSS'ler
 ### Bir resmi metin yerine filigran olarak kullanabilir miyim?
 Evet, Groupdocs.Watermark görselleri, şekilleri ve metni filigran olarak kullanmanıza olanak tanır.

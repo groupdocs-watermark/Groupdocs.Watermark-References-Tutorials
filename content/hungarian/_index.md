@@ -3,7 +3,6 @@ title: Master Document Security & Branding a GroupDocs.Watermark segítségével
 linktitle: GroupDocs.Watermark oktatóanyagok
 additionalTitle: GroupDocs API referenciák
 description: Fedezze fel a GroupDocs.Watermark erejét .NET és Java oktatóanyagainkkal. Sajátítsa el a vízjelezési technikákat a dokumentumok biztonságához és a márkaépítéshez.
-type: docs
 weight: 11
 url: /hu/
 is_root: true

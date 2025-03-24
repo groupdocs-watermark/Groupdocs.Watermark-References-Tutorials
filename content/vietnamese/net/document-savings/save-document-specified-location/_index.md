@@ -3,7 +3,6 @@ title: Lưu tài liệu vào vị trí được chỉ định
 linktitle: Lưu tài liệu vào vị trí được chỉ định
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách dễ dàng thêm hình mờ vào tài liệu của bạn bằng GroupDocs.Watermark cho .NET với hướng dẫn từng bước này. Tăng cường bảo mật tài liệu.
-type: docs
 weight: 11
 url: /vi/net/document-savings/save-document-specified-location/
 ---

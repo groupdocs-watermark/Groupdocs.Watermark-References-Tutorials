@@ -3,7 +3,6 @@ title: Documentinformatie ophalen uit Stream
 linktitle: Documentinformatie ophalen uit Stream
 second_title: GroupDocs.Watermark .NET API
 description: Leer met deze stapsgewijze handleiding hoe u documentinformatie uit een stream kunt halen met GroupDocs.Watermark voor .NET. Uw mogelijkheden voor documentbeheer moeiteloos.
-type: docs
 weight: 12
 url: /nl/net/document-manipulation/get-document-info-stream/
 ---
@@ -46,10 +45,10 @@ Console.WriteLine("Document size: {0} bytes", info.Size);
 ```
 
 ## Conclusie
- Het ophalen van documentinformatie uit een stream met GroupDocs.Watermark voor .NET is een eenvoudig proces als het wordt opgesplitst in beheersbare stappen. Door deze handleiding te volgen, kunt u deze functionaliteit efficiënt in uw applicaties integreren, waardoor een beter documentbeheer en betere integriteit worden gegarandeerd. Aarzel niet om de[documentatie](https://reference.groupdocs.com/Watermark/net/) voor meer geavanceerde functies en opties.
+ Het ophalen van documentinformatie uit een stream met GroupDocs.Watermark voor .NET is een eenvoudig proces als het wordt opgesplitst in beheersbare stappen. Door deze handleiding te volgen, kunt u deze functionaliteit efficiënt in uw applicaties integreren, waardoor een beter documentbeheer en betere integriteit worden gegarandeerd. Aarzel niet om de[documentatie](https://tutorials.groupdocs.com/Watermark/net/) voor meer geavanceerde functies en opties.
 ## Veelgestelde vragen
 ### Welke bestandsformaten ondersteunt GroupDocs.Watermark?
- GroupDocs.Watermark ondersteunt een breed scala aan bestandsindelingen, waaronder PDF, Word, Excel, PowerPoint en meer. De volledige lijst vind je in de[documentatie](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark ondersteunt een breed scala aan bestandsindelingen, waaronder PDF, Word, Excel, PowerPoint en meer. De volledige lijst vind je in de[documentatie](https://tutorials.groupdocs.com/Watermark/net/).
 ### Kan ik GroupDocs.Watermark uitproberen voordat ik het aanschaf?
  Ja, u kunt een gratis proefversie downloaden van[hier](https://releases.groupdocs.com/) en vraag een tijdelijke licentie aan bij[hier](https://purchase.groupdocs.com/temporary-license/).
 ### Hoe installeer ik GroupDocs.Watermark voor .NET?

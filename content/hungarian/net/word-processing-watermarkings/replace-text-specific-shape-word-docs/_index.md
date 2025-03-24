@@ -3,7 +3,6 @@ title: Szöveg cseréje adott alakzathoz a Word Dokumentumokban
 linktitle: Szöveg cseréje adott alakzathoz a Word Dokumentumokban
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan cserélhet le szöveget adott alakzatokhoz Word dokumentumokban a GroupDocs.Watermark for .NET segítségével. Kövesse lépésről lépésre bemutató oktatóanyagunkat.
-type: docs
 weight: 35
 url: /hu/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---

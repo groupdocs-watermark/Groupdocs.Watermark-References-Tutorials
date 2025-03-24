@@ -3,7 +3,6 @@ title: Thêm hình mờ để định hình hình ảnh trong tài liệu Word
 linktitle: Thêm hình mờ để định hình hình ảnh trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ để định hình hình ảnh trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Tăng cường bảo mật tài liệu với hướng dẫn này.
-type: docs
 weight: 17
 url: /vi/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---

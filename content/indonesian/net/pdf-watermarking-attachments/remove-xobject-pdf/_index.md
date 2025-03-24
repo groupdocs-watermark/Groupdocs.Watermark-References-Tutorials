@@ -3,7 +3,6 @@ title: Hapus XObject dari PDF
 linktitle: Hapus XObject dari PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus XObjects dari PDF dengan mudah menggunakan GroupDocs.Watermark untuk .NET dengan tutorial langkah demi langkah kami yang komprehensif.
-type: docs
 weight: 35
 url: /id/net/pdf-watermarking-attachments/remove-xobject-pdf/
 ---

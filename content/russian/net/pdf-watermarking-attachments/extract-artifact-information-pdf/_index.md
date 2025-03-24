@@ -3,7 +3,6 @@ title: Извлечение информации об артефакте из PD
 linktitle: Извлечение информации об артефакте из PDF
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как извлечь информацию об артефактах из файлов PDF с помощью GroupDocs.Watermark для .NET. Расширьте свои возможности обработки документов.
-type: docs
 weight: 24
 url: /ru/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---

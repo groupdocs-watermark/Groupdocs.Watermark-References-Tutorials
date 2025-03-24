@@ -3,7 +3,6 @@ title: Save Document to Specified Stream
 linktitle: Save Document to Specified Stream
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to save a document to a specified stream using GroupDocs.Watermark for .NET with this step-by-step guide. Perfect for developers of all levels.
-type: docs
 weight: 12
 url: /net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Absolutely! You can try GroupDocs.Watermark for free by downloading it from [her
 ### How can I get a temporary license?
 You can obtain a temporary license from [this link](https://purchase.groupdocs.com/temporary-license/).
 ### Where can I find more detailed documentation?
-For more detailed documentation, you can visit [here](https://reference.groupdocs.com/Watermark/net/).
+For more detailed documentation, you can visit [here](https://tutorials.groupdocs.com/Watermark/net/).

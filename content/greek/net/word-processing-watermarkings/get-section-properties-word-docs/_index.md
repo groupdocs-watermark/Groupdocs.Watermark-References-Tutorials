@@ -3,7 +3,6 @@ title: Λάβετε τις ιδιότητες ενότητας στα Έγγρα
 linktitle: Λάβετε τις ιδιότητες ενότητας στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να εξάγετε ιδιότητες ενότητας από έγγραφα του Word χρησιμοποιώντας το υδατογράφημα Groupdocs για .NET. Βελτιώστε τις δυνατότητες χειρισμού εγγράφων σας χωρίς κόπο.
-type: docs
 weight: 23
 url: /el/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Kivonat a megjegyzésekkel kapcsolatos információk PDF-ből
 linktitle: Kivonat a megjegyzésekkel kapcsolatos információk PDF-ből
 second_title: GroupDocs.Watermark .NET API
 description: Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan bonthat ki megjegyzésadatokat PDF-dokumentumokból a GroupDocs.Watermark for .NET segítségével.
-type: docs
 weight: 23
 url: /hu/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
@@ -103,7 +102,7 @@ using (StreamWriter writer = new StreamWriter(outputFileName))
 ```
 ## Következtetés
 kommentárinformációk kinyerése PDF-dokumentumokból a GroupDocs.Watermark for .NET segítségével egyszerű folyamat, amellyel sok időt és erőfeszítést takaríthat meg. Az ebben az útmutatóban ismertetett lépések követésével könnyedén integrálhatja ezt a funkciót projektjeibe, és automatizálhatja az értékes annotációs adatok kinyerését.
- Függetlenül attól, hogy nagy mennyiségű PDF-et kezel, vagy egyszerűen csak bizonyos információkat kell kivonnia, a GroupDocs.Watermark for .NET megbízható és hatékony megoldást kínál. Ne felejtsd el megnézni a[dokumentáció](https://reference.groupdocs.com/Watermark/net/) fejlettebb funkciókért és testreszabási lehetőségekért.
+ Függetlenül attól, hogy nagy mennyiségű PDF-et kezel, vagy egyszerűen csak bizonyos információkat kell kivonnia, a GroupDocs.Watermark for .NET megbízható és hatékony megoldást kínál. Ne felejtsd el megnézni a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) fejlettebb funkciókért és testreszabási lehetőségekért.
 ## GYIK
 ### Mi az a GroupDocs.Watermark for .NET?
 A GroupDocs.Watermark for .NET egy átfogó könyvtár, amely lehetővé teszi a fejlesztők számára vízjelek hozzáadását, keresését és eltávolítását különféle dokumentumformátumokból, beleértve a PDF-eket, Word-dokumentumokat és képeket.

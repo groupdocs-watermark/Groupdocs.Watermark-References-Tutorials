@@ -3,7 +3,6 @@ title: Vervang vormtekst door opgemaakte tekst in Word-documenten
 linktitle: Vervang vormtekst door opgemaakte tekst in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u vormtekst vervangt door opgemaakte tekst in Word-documenten met GroupDocs.Watermark voor .NET. Uw documentbewerkingsmogelijkheden moeiteloos.
-type: docs
 weight: 34
 url: /nl/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---

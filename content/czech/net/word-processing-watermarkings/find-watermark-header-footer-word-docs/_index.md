@@ -3,7 +3,6 @@ title: Najděte vodoznak v záhlaví/zápatí v dokumentech aplikace Word
 linktitle: Najděte vodoznak v záhlaví/zápatí v dokumentech aplikace Word
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se efektivně vyhledávat a odstraňovat vodoznaky z dokumentů Word pomocí GroupDocs Watermark for .NET, což zajišťuje integritu a profesionalitu dokumentů.
-type: docs
 weight: 22
 url: /cs/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---

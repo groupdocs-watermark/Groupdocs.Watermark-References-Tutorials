@@ -3,7 +3,6 @@ title: Salvataggio del documento
 linktitle: Salvataggio del documento
 second_title: API GroupDocs.Watermark .NET
 description: Esplora i tutorial di GroupDocs.Watermark per .NET sul salvataggio di documenti con filigrane. Scopri metodi passo passo per migliorare la sicurezza e la gestione dei documenti.
-type: docs
 weight: 23
 url: /it/net/document-savings/
 ---

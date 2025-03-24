@@ -3,7 +3,6 @@ title: Zapisz dokument w określonym strumieniu
 linktitle: Zapisz dokument w określonym strumieniu
 second_title: GroupDocs.Watermark API .NET
 description: Z tego przewodnika krok po kroku dowiesz się, jak zapisać dokument w określonym strumieniu przy użyciu programu GroupDocs.Watermark dla platformy .NET. Idealny dla programistów na wszystkich poziomach.
-type: docs
 weight: 12
 url: /pl/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Tak, GroupDocs Watermark obsługuje znaki wodne w postaci tekstu, obrazu, a nawe
 ### Jak mogę uzyskać licencję tymczasową?
  Licencję tymczasową można uzyskać od[ten link](https://purchase.groupdocs.com/temporary-license/).
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację?
- Bardziej szczegółową dokumentację można znaleźć na stronie[Tutaj](https://reference.groupdocs.com/Watermark/net/).
+ Bardziej szczegółową dokumentację można znaleźć na stronie[Tutaj](https://tutorials.groupdocs.com/Watermark/net/).

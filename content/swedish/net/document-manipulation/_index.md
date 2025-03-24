@@ -3,7 +3,6 @@ title: Dokumentmanipulation
 linktitle: Dokumentmanipulation
 second_title: GroupDocs.Watermark .NET API
 description: Utforska GroupDocs.Watermark för .NET-självstudier om att generera dokumentförhandsvisningar och hantera vattenstämplar. Förbättra dokumentsäkerhet och hantering.
-type: docs
 weight: 21
 url: /sv/net/document-manipulation/
 ---

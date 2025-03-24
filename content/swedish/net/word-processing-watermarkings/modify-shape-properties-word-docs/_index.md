@@ -3,7 +3,6 @@ title: Ändra formegenskaper i Word Docs
 linktitle: Ändra formegenskaper i Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Skydda dina Word-dokument med GroupDocs Watermark for .NET. Ändra enkelt formegenskaper för ökad säkerhet.
-type: docs
 weight: 27
 url: /sv/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---

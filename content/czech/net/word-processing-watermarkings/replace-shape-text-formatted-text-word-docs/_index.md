@@ -3,7 +3,6 @@ title: Nahraďte text tvaru formátovaným textem v dokumentech aplikace Word
 linktitle: Nahraďte text tvaru formátovaným textem v dokumentech aplikace Word
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak nahradit text tvaru formátovaným textem v dokumentech aplikace Word pomocí GroupDocs.Watermark for .NET. Vaše možnosti úpravy dokumentů bez námahy.
-type: docs
 weight: 34
 url: /cs/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---

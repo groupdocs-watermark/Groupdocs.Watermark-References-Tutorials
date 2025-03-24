@@ -3,7 +3,6 @@ title: Voeg een vergrendeld watermerk toe aan sectie in Word-documenten
 linktitle: Voeg een vergrendeld watermerk toe aan sectie in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u een vergrendeld watermerk aan een specifieke sectie in Word-documenten kunt toevoegen met behulp van Groupdocs voor .NET met deze uitgebreide stapsgewijze handleiding.
-type: docs
 weight: 13
 url: /nl/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
@@ -70,4 +69,4 @@ Groupdocs.Watermark voor .NET is een krachtige bibliotheek waarmee ontwikkelaars
 ### Welke soorten watermerken kan ik toevoegen met Groupdocs.Watermark?
 Groupdocs.Watermark ondersteunt verschillende soorten watermerken, waaronder tekst-, afbeeldings- en vormwatermerken, en biedt uitgebreide aanpassingsopties voor elk type.
 ### Waar kan ik meer informatie vinden over Groupdocs.Watermark voor .NET?
- Voor meer informatie kunt u terecht op de[documentatie](https://reference.groupdocs.com/Watermark/net/) En[Helpforum](https://forum.groupdocs.com/c/watermark/19).
+ Voor meer informatie kunt u terecht op de[documentatie](https://tutorials.groupdocs.com/Watermark/net/) En[Helpforum](https://forum.groupdocs.com/c/watermark/19).

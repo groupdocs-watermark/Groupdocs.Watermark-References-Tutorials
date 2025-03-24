@@ -3,7 +3,6 @@ title: GroupDocs.Watermark ile Belge Güvenliğinde ve Markalamada Ustalaşın
 linktitle: GroupDocs.Filigran Eğitimleri
 additionalTitle: GroupDocs API Referansları
 description: .NET ve Java eğitimlerimizle GroupDocs.Watermark'ın gücünün kilidini açın. Belge güvenliği ve markalama için filigranlama tekniklerinde ustalaşın.
-type: docs
 weight: 11
 url: /tr/
 is_root: true

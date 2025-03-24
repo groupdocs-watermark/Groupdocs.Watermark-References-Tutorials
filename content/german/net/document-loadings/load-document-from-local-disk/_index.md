@@ -3,7 +3,6 @@ title: Dokument von der lokalen Festplatte laden
 linktitle: Dokument von der lokalen Festplatte laden
 second_title: GroupDocs.Watermark .NET-API
 description: Schützen und verwalten Sie Ihre Dokumente mit Groupdocs für .NET. Befolgen Sie unsere detaillierte Anleitung, um Wasserzeichen nahtlos hinzuzufügen.
-type: docs
 weight: 10
 url: /de/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Abschluss
 Das Hinzufügen von Wasserzeichen zu Ihren Dokumenten mit Groupdocs für .NET ist unkompliziert und effizient. Dieser Leitfaden hat Sie durch den gesamten Prozess geführt, von der Einrichtung Ihrer Umgebung bis zum Speichern eines mit Wasserzeichen versehenen Dokuments. Mit diesem leistungsstarken Tool können Sie sicherstellen, dass Ihre Dokumente geschützt und Ihr geistiges Eigentum geschützt sind. 
- Weitere Einzelheiten finden Sie unter[Dokumentation](https://reference.groupdocs.com/Watermark/net/) , und wenn Sie auf Probleme stoßen, wird die[Hilfeforum](https://forum.groupdocs.com/c/watermark/19) ist ein ausgezeichneter Ort für Hilfe. 
+ Weitere Einzelheiten finden Sie unter[Dokumentation](https://tutorials.groupdocs.com/Watermark/net/) , und wenn Sie auf Probleme stoßen, wird die[Hilfeforum](https://forum.groupdocs.com/c/watermark/19) ist ein ausgezeichneter Ort für Hilfe. 
 ## FAQs
 ### Kann ich benutzerdefinierte Schriftarten für Wasserzeichen verwenden?
 Ja, Groupdocs unterstützt benutzerdefinierte Schriftarten. Sie können jede auf Ihrem System installierte Schriftart angeben.

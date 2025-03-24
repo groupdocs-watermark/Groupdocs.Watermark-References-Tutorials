@@ -3,7 +3,6 @@ title: 從串流載入文檔
 linktitle: 從串流載入文檔
 second_title: GroupDocs.Watermark .NET API
 description: 透過本指南了解如何使用 GroupDocs.Watermark for .NET 為文件添加浮水印。非常適合希望增強文件安全性的開發人員。
-type: docs
 weight: 11
 url: /zh-hant/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
 此程式碼保存帶有新添加的浮水印的文檔`outputFileName`您之前定義的路徑。
 
 ## 結論
-恭喜！您已使用 GroupDocs.Watermark for .NET 成功地在文件中新增浮水印。該庫使管理各種文件格式的浮水印變得非常容易。無論您需要添加文字、圖像或其他類型的浮水印，GroupDocs.Watermark 都有您需要的工具。不要忘記查看[文件](https://reference.groupdocs.com/Watermark/net/)了解更多進階功能和自訂選項。
+恭喜！您已使用 GroupDocs.Watermark for .NET 成功地在文件中新增浮水印。該庫使管理各種文件格式的浮水印變得非常容易。無論您需要添加文字、圖像或其他類型的浮水印，GroupDocs.Watermark 都有您需要的工具。不要忘記查看[文件](https://tutorials.groupdocs.com/Watermark/net/)了解更多進階功能和自訂選項。
 ## 常見問題解答
 ### 我可以使用 GroupDocs.Watermark for .NET 新增哪些類型的浮水印？
 您可以添加文字浮水印、圖像浮水印，甚至複雜的形狀和標誌。該庫支援廣泛的自訂選項。

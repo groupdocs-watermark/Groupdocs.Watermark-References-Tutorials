@@ -3,7 +3,6 @@ title: Aggiungi filigrana a XObjects nel PDF
 linktitle: Aggiungi filigrana a XObjects nel PDF
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere filigrane a XObjects in PDF utilizzando Groupdocs.Watermark per .NET. Segui la nostra guida passo passo per una facile implementazione.
-type: docs
 weight: 20
 url: /it/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ Infine, salva il PDF con filigrana nel file di output specificato.
 ```
 E il gioco è fatto! Il tuo PDF ora contiene filigrane su tutti i suoi XObject.
 ## Conclusione
- Aggiungere filigrane ai tuoi documenti PDF utilizzando Groupdocs per .NET è un processo semplice che fornisce un ulteriore livello di sicurezza. Seguendo i passaggi descritti in questo tutorial, puoi assicurarti che i tuoi documenti siano protetti dall'uso non autorizzato. Ricorda che puoi sempre fare riferimento a[documentazione](https://reference.groupdocs.com/Watermark/net/) per informazioni più dettagliate e funzionalità avanzate.
+ Aggiungere filigrane ai tuoi documenti PDF utilizzando Groupdocs per .NET è un processo semplice che fornisce un ulteriore livello di sicurezza. Seguendo i passaggi descritti in questo tutorial, puoi assicurarti che i tuoi documenti siano protetti dall'uso non autorizzato. Ricorda che puoi sempre fare riferimento a[documentazione](https://tutorials.groupdocs.com/Watermark/net/) per informazioni più dettagliate e funzionalità avanzate.
 ## Domande frequenti
 ### Posso utilizzare un'immagine come filigrana al posto del testo?
 Sì, Groupdocs.Watermark per .NET supporta filigrane sia di testo che di immagini.

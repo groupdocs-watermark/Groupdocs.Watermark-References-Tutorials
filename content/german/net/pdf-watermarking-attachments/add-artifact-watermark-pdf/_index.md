@@ -3,7 +3,6 @@ title: Fügen Sie dem PDF ein Artefakt-Wasserzeichen hinzu
 linktitle: Fügen Sie dem PDF ein Artefakt-Wasserzeichen hinzu
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit Groupdocs.Watermark für .NET mühelos Artefakt-Wasserzeichen zu PDF-Dateien hinzufügen. Schützen Sie Ihre Dokumente ganz einfach.
-type: docs
 weight: 11
 url: /de/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---

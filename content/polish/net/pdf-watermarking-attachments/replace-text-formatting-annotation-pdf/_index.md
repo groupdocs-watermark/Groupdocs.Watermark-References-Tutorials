@@ -3,7 +3,6 @@ title: Zastąp tekst formatowaniem dla adnotacji w formacie PDF
 linktitle: Zastąp tekst formatowaniem dla adnotacji w formacie PDF
 second_title: GroupDocs.Watermark API .NET
 description: Zwiększ bezpieczeństwo dokumentów dzięki GroupDocs dla platformy .NET. Dowiedz się, jak łatwo zastąpić tekst formatowaniem adnotacji w plikach PDF.
-type: docs
 weight: 41
 url: /pl/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---

@@ -3,7 +3,6 @@ title: Usuń adnotacje z określonym formatowaniem tekstu w formacie PDF
 linktitle: Usuń adnotacje z określonym formatowaniem tekstu w formacie PDF
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak usuwać adnotacje o określonym formacie tekstu w dokumentach PDF za pomocą Groupdocs dla .NET.
-type: docs
 weight: 30
 url: /pl/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
@@ -72,7 +71,7 @@ Tak, Groupdocs.Watermark obsługuje różne formaty dokumentów, w tym DOCX, PPT
 ### Czy dostępna jest bezpłatna wersja próbna programu Groupdocs.Watermark dla platformy .NET?
  Tak, możesz uzyskać dostęp do bezpłatnej wersji próbnej Groupdocs.Watermark dla .NET z[Tutaj](https://releases.groupdocs.com/).
 ### Gdzie mogę znaleźć dokumentację Groupdocs.Watermark dla .NET?
- Można znaleźć szczegółową dokumentację i odniesienia do API[Tutaj](https://reference.groupdocs.com/Watermark/net/).
+ Można znaleźć szczegółową dokumentację i odniesienia do API[Tutaj](https://tutorials.groupdocs.com/Watermark/net/).
 ### Jak mogę uzyskać pomoc w przypadku jakichkolwiek problemów lub zapytań związanych z Groupdocs.Watermark?
  Możesz publikować swoje pytania lub problemy na forum Groupdocs.Watermark[Tutaj](https://forum.groupdocs.com/c/watermark/19).
 ### Czy mogę kupić tymczasową licencję na Groupdocs.Watermark dla .NET?

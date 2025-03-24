@@ -3,7 +3,6 @@ title: Ta bort anteckningar med specifik textformatering i PDF
 linktitle: Ta bort anteckningar med specifik textformatering i PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du tar bort anteckningar med specifik textformatering i PDF-dokument med hjälp av Groupdocs Watermark for .NET.
-type: docs
 weight: 30
 url: /sv/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
@@ -72,7 +71,7 @@ Ja, Groupdocs.Watermark stöder olika dokumentformat, inklusive DOCX, PPTX, XLSX
 ### Finns det en gratis testversion tillgänglig för Groupdocs.Watermark för .NET?
  Ja, du kan få tillgång till en gratis provversion av Groupdocs.Watermark för .NET från[här](https://releases.groupdocs.com/).
 ### Var kan jag hitta dokumentation för Groupdocs.Watermark for .NET?
- Du kan hitta detaljerad dokumentation och API-referenser[här](https://reference.groupdocs.com/Watermark/net/).
+ Du kan hitta detaljerad dokumentation och API-referenser[här](https://tutorials.groupdocs.com/Watermark/net/).
 ### Hur kan jag få support för eventuella problem eller frågor relaterade till Groupdocs.Watermark?
  Du kan posta dina frågor eller problem på Groupdocs.Watermark-forumet[här](https://forum.groupdocs.com/c/watermark/19).
 ### Kan jag köpa en tillfällig licens för Groupdocs.Watermark för .NET?

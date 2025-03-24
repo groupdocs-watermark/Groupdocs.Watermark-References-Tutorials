@@ -3,7 +3,6 @@ title: वर्ड डॉक्स में दस्तावेज़ को
 linktitle: वर्ड डॉक्स में दस्तावेज़ को सुरक्षित रखें
 second_title: GroupDocs.Watermark .NET API
 description: जानें कि .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों को कैसे सुरक्षित रखा जाए। अपने दस्तावेज़ों में सहजता से सुरक्षा जोड़ने के लिए हमारे चरण-दर-चरण ट्यूटोरियल का पालन करें।
-type: docs
 weight: 28
 url: /hi/net/word-processing-watermarkings/protect-document-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Voeg afbeeldingswatermerk toe vanuit stream
 linktitle: Voeg afbeeldingswatermerk toe vanuit stream
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u afbeeldingswatermerken aan documenten kunt toevoegen met GroupDocs.Watermark voor .NET. Volg onze stapsgewijze handleiding voor naadloze watermerkintegratie.
-type: docs
 weight: 12
 url: /nl/net/image-watermarkings/add-image-watermark-from-stream/
 ---

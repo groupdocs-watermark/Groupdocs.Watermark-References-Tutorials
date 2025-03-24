@@ -3,7 +3,6 @@ title: Získejte podporované formáty souborů
 linktitle: Získejte podporované formáty souborů
 second_title: GroupDocs.Watermark .NET API
 description: Bez námahy přidejte vodoznaky do svých dokumentů pomocí GroupDocs.Watermark pro .NET. Postupujte podle našeho komplexního průvodce krok za krokem k ochraně svých digitálních aktiv.
-type: docs
 weight: 13
 url: /cs/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ Pomocí poskytnutého fragmentu kódu můžete zobrazit seznam všech podporovan
 ### Jak si mohu zakoupit licenci pro GroupDocs.Watermark?
  Licence lze zakoupit přímo od[nákupní stránku](https://purchase.groupdocs.com/buy).
 ### Je k dispozici nějaká dokumentace pro GroupDocs.Watermark?
- Ano, k dispozici je komplexní dokumentace[tady](https://reference.groupdocs.com/Watermark/net/).
+ Ano, k dispozici je komplexní dokumentace[tady](https://tutorials.groupdocs.com/Watermark/net/).

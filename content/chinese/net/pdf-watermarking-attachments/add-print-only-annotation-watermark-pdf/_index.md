@@ -3,7 +3,6 @@ title: 将仅打印注释水印添加到 PDF
 linktitle: 将仅打印注释水印添加到 PDF
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 将仅打印注释水印添加到 PDF。轻松增强文档安全性和品牌形象。
-type: docs
 weight: 13
 url: /zh/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---

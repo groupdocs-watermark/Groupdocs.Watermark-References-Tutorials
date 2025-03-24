@@ -3,7 +3,6 @@ title: Metin Filigranı Ekle
 linktitle: Metin Filigranı Ekle
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu adım adım kılavuzla Groupdocs for .NET'i kullanarak belgelerinize nasıl metin filigranı ekleyeceğinizi öğrenin.
-type: docs
 weight: 11
 url: /tr/net/watermarking-basics/add-text-watermark/
 ---

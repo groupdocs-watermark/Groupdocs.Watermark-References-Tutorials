@@ -3,7 +3,6 @@ title: पीडीएफ में विशिष्ट टेक्स्ट 
 linktitle: पीडीएफ में विशिष्ट टेक्स्ट फ़ॉर्मेटिंग के साथ एनोटेशन हटाएं
 second_title: GroupDocs.Watermark .NET API
 description: जानें कि .NET के लिए वॉटरमार्क का उपयोग करके पीडीएफ दस्तावेजों में विशिष्ट टेक्स्ट फ़ॉर्मेटिंग के साथ एनोटेशन कैसे हटाएं।
-type: docs
 weight: 30
 url: /hi/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
@@ -72,7 +71,7 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### क्या .NET के लिए Groupdocs.Watermark का निःशुल्क परीक्षण उपलब्ध है?
  हाँ, आप .NET के लिए Groupdocs.Watermark का निःशुल्क परीक्षण प्राप्त कर सकते हैं[यहाँ](https://releases.groupdocs.com/).
 ### मुझे .NET के लिए Groupdocs.Watermark के लिए दस्तावेज़ कहाँ मिल सकते हैं?
- आप विस्तृत दस्तावेज़ीकरण और एपीआई संदर्भ पा सकते हैं[यहाँ](https://reference.groupdocs.com/Watermark/net/).
+ आप विस्तृत दस्तावेज़ीकरण और एपीआई संदर्भ पा सकते हैं[यहाँ](https://tutorials.groupdocs.com/Watermark/net/).
 ### मैं Groupdocs.Watermark से संबंधित किसी भी मुद्दे या प्रश्न के लिए समर्थन कैसे प्राप्त कर सकता हूं?
  आप अपने प्रश्न या मुद्दे Groupdocs.Watermark फोरम पर पोस्ट कर सकते हैं[यहाँ](https://forum.groupdocs.com/c/watermark/19).
 ### क्या मैं .NET के लिए Groupdocs.Watermark के लिए एक अस्थायी लाइसेंस खरीद सकता हूँ?

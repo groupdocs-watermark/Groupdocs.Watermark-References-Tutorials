@@ -3,7 +3,6 @@ title: Xóa siêu liên kết trong tài liệu Word
 linktitle: Xóa siêu liên kết trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách xóa siêu liên kết khỏi tài liệu Word bằng GroupDocs.Watermark cho .NET. Tăng cường bảo mật tài liệu một cách dễ dàng.
-type: docs
 weight: 29
 url: /vi/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---

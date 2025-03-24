@@ -3,7 +3,6 @@ title: تنقيط وثيقة PDF
 linktitle: تنقيط وثيقة PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية تحويل مستندات PDF إلى نقطية باستخدام GroupDocs.Watermark لـ .NET. قم بتعزيز أمان المستندات وجاذبيتها المرئية دون عناء.
-type: docs
 weight: 27
 url: /ar/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---

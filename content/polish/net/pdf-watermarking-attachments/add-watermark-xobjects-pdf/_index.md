@@ -3,7 +3,6 @@ title: Dodaj znak wodny do XObjects w formacie PDF
 linktitle: Dodaj znak wodny do XObjects w formacie PDF
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak dodawać znaki wodne do XObjects w formacie PDF przy użyciu Groupdocs.Watermark dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby ułatwić wdrożenie.
-type: docs
 weight: 20
 url: /pl/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ Na koniec zapisz plik PDF ze znakiem wodnym w określonym pliku wyjściowym.
 ```
 I masz to! Twój plik PDF zawiera teraz znaki wodne na wszystkich swoich XObjects.
 ## Wniosek
- Dodawanie znaków wodnych do dokumentów PDF przy użyciu programu Groupdocs Watermark dla .NET to prosty proces zapewniający dodatkową warstwę zabezpieczeń. Wykonując czynności opisane w tym samouczku, możesz mieć pewność, że Twoje dokumenty będą chronione przed nieuprawnionym użyciem. Pamiętaj, że zawsze możesz odwołać się do[dokumentacja](https://reference.groupdocs.com/Watermark/net/) aby uzyskać bardziej szczegółowe informacje i zaawansowane funkcje.
+ Dodawanie znaków wodnych do dokumentów PDF przy użyciu programu Groupdocs Watermark dla .NET to prosty proces zapewniający dodatkową warstwę zabezpieczeń. Wykonując czynności opisane w tym samouczku, możesz mieć pewność, że Twoje dokumenty będą chronione przed nieuprawnionym użyciem. Pamiętaj, że zawsze możesz odwołać się do[dokumentacja](https://tutorials.groupdocs.com/Watermark/net/) aby uzyskać bardziej szczegółowe informacje i zaawansowane funkcje.
 ## Często zadawane pytania
 ### Czy mogę użyć obrazu jako znaku wodnego zamiast tekstu?
 Tak, Groupdocs.Watermark dla .NET obsługuje zarówno tekstowe, jak i graficzne znaki wodne.

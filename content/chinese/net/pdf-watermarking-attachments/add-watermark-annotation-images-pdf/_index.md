@@ -3,7 +3,6 @@ title: 为 PDF 中的注释图像添加水印
 linktitle: 为 PDF 中的注释图像添加水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs.Watermark for .NET 向注释图像添加水印来保护您的 PDF 文档。
-type: docs
 weight: 17
 url: /zh/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---

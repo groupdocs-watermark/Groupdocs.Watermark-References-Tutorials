@@ -3,7 +3,6 @@ title: Ubah Properti Bentuk di Dokumen Word
 linktitle: Ubah Properti Bentuk di Dokumen Word
 second_title: GroupDocs.Tanda Air .NET API
 description: Lindungi dokumen Word Anda dengan GroupDocs untuk .NET. Ubah properti bentuk dengan mudah untuk meningkatkan keamanan.
-type: docs
 weight: 27
 url: /id/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---

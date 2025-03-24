@@ -3,7 +3,6 @@ title: Aggiungi filigrana alle immagini in PDF
 linktitle: Aggiungi filigrana alle immagini in PDF
 second_title: API GroupDocs.Watermark .NET
 description: Impara ad aggiungere filigrane alle immagini nei documenti PDF utilizzando GroupDocs.Watermark per .NET con il nostro tutorial dettagliato passo dopo passo. Proteggi facilmente i tuoi PDF.
-type: docs
 weight: 19
 url: /it/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ Assolutamente! Puoi scorrere ciascuna pagina del PDF e applicare filigrane alle 
 ### Ho bisogno di una licenza per utilizzare GroupDocs.Watermark per .NET?
  Sì, è necessaria una licenza. Puoi ottenere a[licenza temporanea](https://purchase.groupdocs.com/temporary-license/) a fini di valutazione.
 ### Dove posso trovare ulteriore documentazione su GroupDocs.Watermark per .NET?
- È possibile trovare una documentazione completa su[Pagina della documentazione GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ È possibile trovare una documentazione completa su[Pagina della documentazione GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

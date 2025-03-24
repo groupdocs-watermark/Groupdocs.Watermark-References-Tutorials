@@ -3,7 +3,6 @@ title: Word ドキュメントのすべてのページにロックされた透�
 linktitle: Word ドキュメントのすべてのページにロックされた透かしを追加する
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs.Watermark for .NET を使用してロックされたウォーターマークを追加し、ドキュメントを保護します。簡単に実装するには、ステップバイステップのガイドに従ってください。
-type: docs
 weight: 11
 url: /ja/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---

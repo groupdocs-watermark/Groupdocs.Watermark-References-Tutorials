@@ -3,7 +3,6 @@ title: Tải tài liệu có định dạng cụ thể
 linktitle: Tải tài liệu có định dạng cụ thể
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách tải và tạo hình mờ cho tài liệu bằng Groupdocs cho .NET với hướng dẫn từng bước này. Bảo vệ và xây dựng thương hiệu cho nội dung của bạn một cách dễ dàng.
-type: docs
 weight: 12
 url: /vi/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Phần kết luận
-Hình mờ tài liệu là một bước quan trọng trong việc bảo vệ nội dung của bạn và Groupdocs.Watermark dành cho .NET giúp quá trình này trở nên đơn giản và hiệu quả. Bằng cách làm theo hướng dẫn này, bạn có thể dễ dàng tải và áp dụng hình mờ cho tài liệu của mình, đảm bảo tính bảo mật và nhãn hiệu phù hợp của chúng. Để biết thêm chi tiết và các tùy chọn nâng cao, hãy tham khảo[Groupdocs.Watermark cho tài liệu .NET](https://reference.groupdocs.com/Watermark/net/).
+Hình mờ tài liệu là một bước quan trọng trong việc bảo vệ nội dung của bạn và Groupdocs.Watermark dành cho .NET giúp quá trình này trở nên đơn giản và hiệu quả. Bằng cách làm theo hướng dẫn này, bạn có thể dễ dàng tải và áp dụng hình mờ cho tài liệu của mình, đảm bảo tính bảo mật và nhãn hiệu phù hợp của chúng. Để biết thêm chi tiết và các tùy chọn nâng cao, hãy tham khảo[Groupdocs.Watermark cho tài liệu .NET](https://tutorials.groupdocs.com/Watermark/net/).
 ## Câu hỏi thường gặp
 ### Tôi có thể sử dụng phương pháp này cho các định dạng tài liệu khác nhau không?
  Có, Groupdocs hỗ trợ nhiều định dạng tài liệu khác nhau. Bạn cần phải điều chỉnh`LoadOptions` tương ứng.

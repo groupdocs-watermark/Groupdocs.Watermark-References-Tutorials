@@ -3,7 +3,6 @@ title: Bijlage uit PDF verwijderen
 linktitle: Bijlage uit PDF verwijderen
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u eenvoudig bijlagen uit PDF-documenten kunt verwijderen met GroupDocs.Watermark voor .NET. Verbeter de efficiëntie van uw documentbeheer.
-type: docs
 weight: 33
 url: /nl/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

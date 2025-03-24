@@ -3,7 +3,6 @@ title: Ersetzen Sie Text durch Formatierung für Anmerkungen in PDF
 linktitle: Ersetzen Sie Text durch Formatierung für Anmerkungen in PDF
 second_title: GroupDocs.Watermark .NET-API
 description: Verbessern Sie die Dokumentensicherheit mit GroupDocs für .NET. Erfahren Sie, wie Sie mühelos Text durch Formatierungen für Anmerkungen in PDF-Dateien ersetzen.
-type: docs
 weight: 41
 url: /de/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---

@@ -3,7 +3,6 @@ title: Удалить водяной знак из PDF
 linktitle: Удалить водяной знак из PDF
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как удалить водяные знаки из файлов PDF с помощью GroupDocs.Watermark для .NET. Простые шаги для профессионального редактирования документов.
-type: docs
 weight: 34
 url: /ru/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---

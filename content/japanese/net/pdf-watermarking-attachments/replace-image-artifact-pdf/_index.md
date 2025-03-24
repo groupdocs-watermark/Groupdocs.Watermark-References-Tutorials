@@ -3,7 +3,6 @@ title: PDF 内の特定のアーティファクトの画像を置換
 linktitle: PDF 内の特定のアーティファクトの画像を置換
 second_title: GroupDocs.Watermark .NET API
 description: この包括的なステップバイステップのチュートリアルで、GroupDocs.Watermark for .NET を使用して PDF ドキュメント内の画像を置換する方法を学びましょう。
-type: docs
 weight: 38
 url: /ja/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---

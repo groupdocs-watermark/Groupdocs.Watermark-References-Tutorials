@@ -3,7 +3,6 @@ title: Basisprincipes van watermerken
 linktitle: Basisprincipes van watermerken
 second_title: GroupDocs.Watermark .NET API
 description: Ontdek GroupDocs.Watermark voor .NET-tutorials om moeiteloos afbeeldings- en tekstwatermerken toe te voegen. Bescherm uw documenten met deze eenvoudig te volgen handleidingen.
-type: docs
 weight: 20
 url: /nl/net/watermarking-basics/
 ---

@@ -3,7 +3,6 @@ title: 为 Word 文档中的分区图像添加水印
 linktitle: 为 Word 文档中的分区图像添加水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs for .NET 向 Word 文档中的图像添加水印。请遵循我们的安全、专业文档保护指南。
-type: docs
 weight: 16
 url: /zh/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## 结论
 向 Word 文档中的图像添加水印是保护内容的有效方法。借助 Groupdocs.Watermark for .NET，此过程变得简单且高效。请按照本教程中概述的步骤操作，以确保您的文档安全且受到良好保护。
-如需更详细的文档，请访问[文档](https://reference.groupdocs.com/Watermark/net/)。如果您有任何疑问或需要进一步帮助，请查看[支持论坛](https://forum.groupdocs.com/c/watermark/19).
+如需更详细的文档，请访问[文档](https://tutorials.groupdocs.com/Watermark/net/)。如果您有任何疑问或需要进一步帮助，请查看[支持论坛](https://forum.groupdocs.com/c/watermark/19).
 ## 常见问题解答
 ### 我可以自定义水印文字吗？
 是的，您可以自定义水印文本、字体、大小、对齐方式和旋转以满足您的需求。
 ### 是否可以为多个部分添加水印？
 是的，您可以循环浏览每个部分并将水印应用到所有部分中的图像。
 ### 我可以将此方法用于其他文档格式吗？
- Groupdocs.Watermark 支持各种文档格式。检查[文档](https://reference.groupdocs.com/Watermark/net/)更多细节。
+ Groupdocs.Watermark 支持各种文档格式。检查[文档](https://tutorials.groupdocs.com/Watermark/net/)更多细节。
 ### 我怎样才能获得临时许可证？
 您可以获得临时许可证[这里](https://purchase.groupdocs.com/temporary-license/).
 ### 如果我在使用 Groupdocs.Watermark 时遇到问题怎么办？

@@ -3,7 +3,6 @@ title: Verwendung von Formtypen in Word-Dokumenten
 linktitle: Verwendung von Formtypen in Word-Dokumenten
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie Formen in Word-Dokumenten mit GroupDocs.Watermark für .NET bearbeiten. Dieses Tutorial bietet Anleitungen für eine effiziente Dokumentenverarbeitung.
-type: docs
 weight: 37
 url: /de/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---

@@ -3,7 +3,6 @@ title: 生成文件預覽
 linktitle: 生成文件預覽
 second_title: GroupDocs.Watermark .NET API
 description: 透過本指南了解如何使用 GroupDocs.Watermark for .NET 產生文件預覽。輕鬆增強您的文件安全性和管理。
-type: docs
 weight: 10
 url: /zh-hant/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## 結論
 使用 GroupDocs.Watermark for .NET 產生文件預覽是一個簡單的過程，只需幾行程式碼即可完成。透過遵循本指南中概述的步驟，您可以輕鬆設定專案、配置必要的選項並產生文件預覽。這個強大的庫不僅簡化了水印過程，而且還提供了管理和操作水印的強大功能。
-如果您有任何疑問或需要進一步協助，請隨時訪問[GroupDocs.Watermark 支援論壇](https://forum.groupdocs.com/c/watermark/19)或參考[文件](https://reference.groupdocs.com/Watermark/net/).
+如果您有任何疑問或需要進一步協助，請隨時訪問[GroupDocs.Watermark 支援論壇](https://forum.groupdocs.com/c/watermark/19)或參考[文件](https://tutorials.groupdocs.com/Watermark/net/).
 ## 常見問題解答
 ### GroupDocs.Watermark for .NET 支援哪些檔案格式？
- GroupDocs.Watermark for .NET 支援多種檔案格式，包括 PDF、DOCX、PPTX、XLSX 等。有關支援格式的完整列表，請參閱[文件](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark for .NET 支援多種檔案格式，包括 PDF、DOCX、PPTX、XLSX 等。有關支援格式的完整列表，請參閱[文件](https://tutorials.groupdocs.com/Watermark/net/).
 ### 我可以自訂浮水印的外觀嗎？
 是的，GroupDocs.Watermark 可讓您完全自訂浮水印的外觀，包括文字、圖像和形狀浮水印。您可以調整字體、顏色、大小和透明度等屬性。
 ### 有試用版嗎？

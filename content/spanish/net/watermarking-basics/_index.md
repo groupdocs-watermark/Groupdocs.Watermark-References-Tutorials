@@ -3,7 +3,6 @@ title: Conceptos básicos de marcas de agua
 linktitle: Conceptos básicos de marcas de agua
 second_title: API GroupDocs.Watermark .NET
 description: Descubra los tutoriales de GroupDocs.Watermark para .NET para agregar marcas de agua de imágenes y texto sin esfuerzo. Proteja sus documentos con estas guías fáciles de seguir.
-type: docs
 weight: 20
 url: /es/net/watermarking-basics/
 ---

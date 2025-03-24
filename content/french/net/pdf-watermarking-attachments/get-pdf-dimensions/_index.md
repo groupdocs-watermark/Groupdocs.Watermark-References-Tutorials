@@ -3,7 +3,6 @@ title: Obtenir les dimensions PDF
 linktitle: Obtenir les dimensions PDF
 second_title: API GroupDocs.Watermark .NET
 description: Protégez facilement vos documents à l'aide de Groupdocs.Watermark pour .NET. Ajoutez des filigranes, des tampons et des annotations sans effort.
-type: docs
 weight: 26
 url: /fr/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---

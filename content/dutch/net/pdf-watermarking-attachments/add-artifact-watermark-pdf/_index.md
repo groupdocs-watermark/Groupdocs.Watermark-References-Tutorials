@@ -3,7 +3,6 @@ title: Artefactwatermerk toevoegen aan PDF
 linktitle: Artefactwatermerk toevoegen aan PDF
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u moeiteloos artefactwatermerken aan PDF-bestanden kunt toevoegen met Groupdocs.Watermark voor .NET. Bescherm uw documenten met gemak.
-type: docs
 weight: 11
 url: /nl/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---

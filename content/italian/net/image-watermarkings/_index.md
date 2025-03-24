@@ -3,7 +3,6 @@ title: Filigrana dell'immagine
 linktitle: Filigrana dell'immagine
 second_title: API GroupDocs.Watermark .NET
 description: Esplora i tutorial di GroupDocs.Watermark per .NET sull'aggiunta di filigrane alle immagini. Scopri metodi passo passo per migliorare la sicurezza e il branding del tuo documento.
-type: docs
 weight: 24
 url: /it/net/image-watermarkings/
 ---

@@ -3,7 +3,6 @@ title: Προσθήκη υδατογραφήματος με εφέ εικόνα�
 linktitle: Προσθήκη υδατογραφήματος με εφέ εικόνας στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα με εφέ εικόνας στα έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για εκπληκτικά αποτελέσματα.
-type: docs
 weight: 19
 url: /el/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---

@@ -3,7 +3,6 @@ title: 添加水印以在 Word 文档中塑造图像
 linktitle: 添加水印以在 Word 文档中塑造图像
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 添加水印以在 Word 文档中塑造图像。通过本教程增强文档安全性。
-type: docs
 weight: 17
 url: /zh/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---

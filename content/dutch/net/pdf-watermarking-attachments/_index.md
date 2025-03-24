@@ -3,7 +3,6 @@ title: PDF-watermerken en bijlage
 linktitle: PDF-watermerken en bijlage
 second_title: GroupDocs.Watermark .NET API
 description: Ontdek GroupDocs.Watermark voor .NET-tutorials over PDF-watermerken en bijlagen. Leer stapsgewijze methoden om de beveiliging en branding van uw PDF's te verbeteren.
-type: docs
 weight: 25
 url: /nl/net/pdf-watermarking-attachments/
 ---

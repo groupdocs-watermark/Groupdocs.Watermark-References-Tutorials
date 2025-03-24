@@ -3,7 +3,6 @@ title: Fügen Sie Wasserzeichen mit Bildeffekten in Word-Dokumenten hinzu
 linktitle: Fügen Sie Wasserzeichen mit Bildeffekten in Word-Dokumenten hinzu
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Wasserzeichen mit Bildeffekten zu Ihren Word-Dokumenten hinzufügen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für atemberaubende Ergebnisse.
-type: docs
 weight: 19
 url: /de/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---

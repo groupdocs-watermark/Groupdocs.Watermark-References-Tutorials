@@ -3,7 +3,6 @@ title: Xóa hiện vật khỏi PDF
 linktitle: Xóa hiện vật khỏi PDF
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách dễ dàng xóa các thành phần lạ khỏi tài liệu PDF bằng GroupDocs.Watermark dành cho .NET. Nắm vững quy trình từng bước với hướng dẫn toàn diện của chúng tôi.
-type: docs
 weight: 31
 url: /vi/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
@@ -66,4 +65,4 @@ Có, GroupDocs.Watermark for .NET hỗ trợ nhiều định dạng tài liệu 
 ### Tôi có thể mua giấy phép tạm thời cho GroupDocs.Watermark cho .NET không?
  Có, bạn có thể có được giấy phép tạm thời từ cơ quan được cung cấp[nguồn](https://purchase.groupdocs.com/temporary-license/).
 ### Có tài nguyên tài liệu toàn diện nào có sẵn cho GroupDocs.Watermark cho .NET không?
- Có, bạn có thể tham khảo tài liệu chi tiết có sẵn[đây](https://reference.groupdocs.com/Watermark/net/) để được hướng dẫn kỹ lưỡng và hiểu biết sâu sắc.
+ Có, bạn có thể tham khảo tài liệu chi tiết có sẵn[đây](https://tutorials.groupdocs.com/Watermark/net/) để được hướng dẫn kỹ lưỡng và hiểu biết sâu sắc.

@@ -3,7 +3,6 @@ title: Nahradit text za konkrétní anotaci v PDF
 linktitle: Nahradit text za konkrétní anotaci v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak nahradit text v konkrétních anotacích PDF pomocí Groupdocs.Watermark for .NET pomocí tohoto komplexního, podrobného návodu.
-type: docs
 weight: 40
 url: /cs/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---

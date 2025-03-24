@@ -3,7 +3,6 @@ title: 替换 Word 文档中的形状图像
 linktitle: 替换 Word 文档中的形状图像
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 以编程方式替换 Word 文档中的形状图像。轻松简化文档操作任务。
-type: docs
 weight: 33
 url: /zh/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---

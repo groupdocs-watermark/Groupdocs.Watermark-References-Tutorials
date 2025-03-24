@@ -3,7 +3,6 @@ title: Ajouter un filigrane aux images de section dans Word Docs
 linktitle: Ajouter un filigrane aux images de section dans Word Docs
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes aux images dans des documents Word à l'aide de Groupdocs Watermark for .NET. Suivez notre guide pour une protection sécurisée et professionnelle des documents.
-type: docs
 weight: 16
 url: /fr/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## Conclusion
 L'ajout de filigranes aux images de vos documents Word est un moyen puissant de protéger votre contenu. Avec Groupdocs.Watermark pour .NET, ce processus est simple et efficace. Suivez les étapes décrites dans ce didacticiel pour vous assurer que vos documents sont sécurisés et bien protégés.
- Pour une Documentation plus détaillée, visitez le[documentation](https://reference.groupdocs.com/Watermark/net/) . Si vous avez des questions ou avez besoin d'aide supplémentaire, consultez le[forum d'entraide](https://forum.groupdocs.com/c/watermark/19).
+ Pour une Documentation plus détaillée, visitez le[documentation](https://tutorials.groupdocs.com/Watermark/net/) . Si vous avez des questions ou avez besoin d'aide supplémentaire, consultez le[forum d'entraide](https://forum.groupdocs.com/c/watermark/19).
 ## FAQ
 ### Puis-je personnaliser le texte du filigrane ?
 Oui, vous pouvez personnaliser le texte, la police, la taille, l'alignement et la rotation du filigrane en fonction de vos besoins.
 ### Est-il possible d'ajouter des filigranes à plusieurs sections ?
 Oui, vous pouvez parcourir chaque section et appliquer le filigrane aux images de toutes les sections.
 ### Puis-je utiliser cette méthode pour d’autres formats de documents ?
- Groupdocs. Watermark prend en charge différents formats de documents. Vérifier la[Documentation](https://reference.groupdocs.com/Watermark/net/) pour plus de détails.
+ Groupdocs. Watermark prend en charge différents formats de documents. Vérifier la[Documentation](https://tutorials.groupdocs.com/Watermark/net/) pour plus de détails.
 ### Comment puis-je obtenir un permis temporaire ?
  Vous pouvez obtenir un permis temporaire[ici](https://purchase.groupdocs.com/temporary-license/).
 ### Que faire si je rencontre des problèmes lors de l'utilisation de Groupdocs.Watermark ?

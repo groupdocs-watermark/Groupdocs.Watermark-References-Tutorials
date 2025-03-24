@@ -3,7 +3,6 @@ title: Szerezze be a szakasz tulajdonságait a Word Dokumentumokban
 linktitle: Szerezze be a szakasz tulajdonságait a Word Dokumentumokban
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan bonthatja ki a szakasztulajdonságokat a Word-dokumentumokból a Watermark for .NET segítségével. Fokozatmentesen fokozza dokumentumkezelési képességeit.
-type: docs
 weight: 23
 url: /hu/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---

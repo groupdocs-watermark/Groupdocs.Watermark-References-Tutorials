@@ -3,7 +3,6 @@ title: Bases du filigrane
 linktitle: Bases du filigrane
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez les didacticiels GroupDocs.Watermark pour .NET pour ajouter des filigranes d'image et de texte sans effort. Protégez vos documents avec ces guides faciles à suivre.
-type: docs
 weight: 20
 url: /fr/net/watermarking-basics/
 ---

@@ -3,7 +3,6 @@ title: Carregar documento do Word protegido por senha
 linktitle: Carregar documento do Word protegido por senha
 second_title: API GroupDocs.Watermark .NET
 description: Adicione facilmente marcas d'água a documentos do Word protegidos por senha usando GroupDocs.Watermark for .NET com nosso guia passo a passo abrangente.
-type: docs
 weight: 14
 url: /pt/net/document-loadings/load-password-protected-word-document/
 ---

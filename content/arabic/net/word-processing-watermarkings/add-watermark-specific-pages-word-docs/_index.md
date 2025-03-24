@@ -3,7 +3,6 @@ title: أضف علامة مائية إلى صفحات محددة في مستند
 linktitle: أضف علامة مائية إلى صفحات محددة في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية إلى صفحات معينة في مستندات Word دون عناء باستخدام Groupdocs للعلامة المائية لـ .NET. تعزيز أمان المستندات والعلامات التجارية.
-type: docs
 weight: 18
 url: /ar/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---

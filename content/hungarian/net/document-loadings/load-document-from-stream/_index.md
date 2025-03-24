@@ -3,7 +3,6 @@ title: Dokumentum betöltése a Streamből
 linktitle: Dokumentum betöltése a Streamből
 second_title: GroupDocs.Watermark .NET API
 description: Ebből az útmutatóból megtudhatja, hogyan adhat vízjeleket dokumentumokhoz a GroupDocs.Watermark for .NET segítségével. Tökéletes azoknak a fejlesztőknek, akik javítani szeretnék a dokumentumbiztonságot.
-type: docs
 weight: 11
 url: /hu/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Ez a kód elmenti a dokumentumot az újonnan hozzáadott vízjellel`outputFileName` korábban meghatározott útvonalat.
 
 ## Következtetés
-Gratulálunk! Sikeresen hozzáadott egy vízjelet a dokumentumhoz a GroupDocs.Watermark for .NET segítségével. Ez a könyvtár hihetetlenül egyszerűvé teszi a vízjelek kezelését különféle dokumentumformátumokban. Függetlenül attól, hogy szöveget, képeket vagy más típusú vízjeleket kell hozzáadnia, a GroupDocs.Watermark rendelkezik a szükséges eszközökkel. Ne felejtsd el megnézni a[dokumentáció](https://reference.groupdocs.com/Watermark/net/) fejlettebb funkciókért és testreszabási lehetőségekért.
+Gratulálunk! Sikeresen hozzáadott egy vízjelet a dokumentumhoz a GroupDocs.Watermark for .NET segítségével. Ez a könyvtár hihetetlenül egyszerűvé teszi a vízjelek kezelését különféle dokumentumformátumokban. Függetlenül attól, hogy szöveget, képeket vagy más típusú vízjeleket kell hozzáadnia, a GroupDocs.Watermark rendelkezik a szükséges eszközökkel. Ne felejtsd el megnézni a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) fejlettebb funkciókért és testreszabási lehetőségekért.
 ## GYIK
 ### Milyen típusú vízjeleket adhatok hozzá a GroupDocs.Watermark for .NET használatával?
 Hozzáadhat szöveges vízjeleket, képi vízjeleket, sőt összetett alakzatokat és logókat is. A könyvtár a testreszabási lehetőségek széles skáláját támogatja.

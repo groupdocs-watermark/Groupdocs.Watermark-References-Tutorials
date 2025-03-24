@@ -3,7 +3,6 @@ title: Изменение свойств фигуры в документах Wo
 linktitle: Изменение свойств фигуры в документах Word
 second_title: GroupDocs.Watermark .NET API
 description: Защитите свои документы Word с помощью водяных знаков GroupDocs для .NET. Легко изменяйте свойства фигуры для повышения безопасности.
-type: docs
 weight: 27
 url: /ru/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---

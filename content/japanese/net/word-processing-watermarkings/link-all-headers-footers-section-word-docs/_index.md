@@ -3,7 +3,6 @@ title: Word ドキュメントのセクション内のすべてのヘッダー/�
 linktitle: Word ドキュメントのセクション内のすべてのヘッダー/フッターをリンクする
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、Word 文書内のヘッダーとフッターを簡単にリンクします。一貫性と専門性を簡単に確保できます。
-type: docs
 weight: 25
 url: /ja/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

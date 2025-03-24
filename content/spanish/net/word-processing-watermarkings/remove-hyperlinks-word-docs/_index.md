@@ -3,7 +3,6 @@ title: Eliminar hipervínculos en documentos de Word
 linktitle: Eliminar hipervínculos en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda cómo eliminar hipervínculos de documentos de Word usando GroupDocs.Watermark para .NET. Mejore la seguridad de los documentos sin esfuerzo.
-type: docs
 weight: 29
 url: /es/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---

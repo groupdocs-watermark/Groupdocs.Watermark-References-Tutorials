@@ -3,7 +3,6 @@ title: Hämta PDF-mått
 linktitle: Hämta PDF-mått
 second_title: GroupDocs.Watermark .NET API
 description: Skydda dina dokument enkelt med Groupdocs.Watermark för .NET. Lägg till vattenstämplar, stämplar och anteckningar utan ansträngning.
-type: docs
 weight: 26
 url: /sv/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---

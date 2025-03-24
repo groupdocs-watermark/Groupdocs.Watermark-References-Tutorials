@@ -3,7 +3,6 @@ title: Rimuovi artefatti con formattazione di testo specifica nel PDF
 linktitle: Rimuovi artefatti con formattazione di testo specifica nel PDF
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come rimuovere artefatti con formattazione di testo specifica in PDF utilizzando GroupDocs per .NET. Segui la nostra guida passo passo.
-type: docs
 weight: 32
 url: /it/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---

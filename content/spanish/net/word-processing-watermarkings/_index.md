@@ -3,7 +3,6 @@ title: Marca de agua de procesamiento de textos
 linktitle: Marca de agua de procesamiento de textos
 second_title: API GroupDocs.Watermark .NET
 description: Descubra los tutoriales esenciales de GroupDocs.Watermark para .NET para agregar y administrar marcas de agua en documentos de Word. Mejore la seguridad y la marca de sus documentos sin esfuerzo.
-type: docs
 weight: 26
 url: /es/net/word-processing-watermarkings/
 ---

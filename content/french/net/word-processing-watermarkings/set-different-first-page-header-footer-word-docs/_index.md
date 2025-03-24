@@ -3,7 +3,6 @@ title: Définir un en-tête/pied de page de première page différent dans Word 
 linktitle: Définir un en-tête/pied de page de première page différent dans Word Docs
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment définir différents en-têtes et pieds de page sur la première page des documents Word à l'aide de GroupDocs.Watermark pour .NET.
-type: docs
 weight: 36
 url: /fr/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Oui, les utilisateurs peuvent bénéficier d'un essai gratuit de GroupDocs.Water
 ### Puis-je acheter une licence temporaire pour une utilisation à court terme ?
  Oui, des licences temporaires pour GroupDocs pour .NET peuvent être acquises auprès du.[Page d'achat de licence temporaire](https://purchase.groupdocs.com/temporary-license/).
 ### Où puis-je trouver une documentation complète sur GroupDocs.Watermark pour .NET ?
- Une documentation détaillée de GroupDocs.Watermark pour .NET est disponible sur le[Page de référence](https://reference.groupdocs.com/Watermark/net/).
+ Une documentation détaillée de GroupDocs.Watermark pour .NET est disponible sur le[Page de référence](https://tutorials.groupdocs.com/Watermark/net/).

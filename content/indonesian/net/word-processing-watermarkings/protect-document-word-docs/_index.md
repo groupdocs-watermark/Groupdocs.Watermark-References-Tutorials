@@ -3,7 +3,6 @@ title: Lindungi Dokumen di Word Docs
 linktitle: Lindungi Dokumen di Word Docs
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara melindungi dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Ikuti tutorial langkah demi langkah kami untuk menambahkan keamanan pada dokumen Anda dengan mudah.
-type: docs
 weight: 28
 url: /id/net/word-processing-watermarkings/protect-document-word-docs/
 ---

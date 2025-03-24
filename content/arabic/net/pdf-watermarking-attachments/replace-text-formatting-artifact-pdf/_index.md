@@ -3,7 +3,6 @@ title: استبدال النص بالتنسيق للقطعة الأثرية في
 linktitle: استبدال النص بالتنسيق للقطعة الأثرية في PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية استبدال النص بتنسيق العناصر في مستندات PDF باستخدام GroupDocs.Watermark لـ .NET. تحسين إدارة المستندات دون عناء.
-type: docs
 weight: 43
 url: /ar/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---

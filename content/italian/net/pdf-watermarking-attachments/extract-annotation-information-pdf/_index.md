@@ -3,7 +3,6 @@ title: Estrai le informazioni sulle annotazioni dal PDF
 linktitle: Estrai le informazioni sulle annotazioni dal PDF
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come estrarre informazioni sulle annotazioni dai documenti PDF utilizzando GroupDocs.Watermark per .NET in questa guida dettagliata passo passo.
-type: docs
 weight: 23
 url: /it/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
@@ -103,7 +102,7 @@ using (StreamWriter writer = new StreamWriter(outputFileName))
 ```
 ## Conclusione
 L'estrazione delle informazioni sulle annotazioni dai documenti PDF utilizzando GroupDocs.Watermark per .NET è un processo semplice che può farti risparmiare molto tempo e fatica. Seguendo i passaggi descritti in questa guida, puoi facilmente integrare questa funzionalità nei tuoi progetti e automatizzare l'estrazione di preziosi dati di annotazione.
- Che tu stia gestendo grandi volumi di PDF o abbia semplicemente bisogno di estrarre informazioni specifiche, GroupDocs.Watermark per .NET fornisce una soluzione affidabile ed efficiente. Non dimenticare di dare un'occhiata a[documentazione](https://reference.groupdocs.com/Watermark/net/) per funzionalità più avanzate e opzioni di personalizzazione.
+ Che tu stia gestendo grandi volumi di PDF o abbia semplicemente bisogno di estrarre informazioni specifiche, GroupDocs.Watermark per .NET fornisce una soluzione affidabile ed efficiente. Non dimenticare di dare un'occhiata a[documentazione](https://tutorials.groupdocs.com/Watermark/net/) per funzionalità più avanzate e opzioni di personalizzazione.
 ## Domande frequenti
 ### Cos'è GroupDocs.Watermark per .NET?
 GroupDocs.Watermark per .NET è una libreria completa che consente agli sviluppatori di aggiungere, cercare e rimuovere filigrane da vari formati di documenti, inclusi PDF, documenti Word e immagini.

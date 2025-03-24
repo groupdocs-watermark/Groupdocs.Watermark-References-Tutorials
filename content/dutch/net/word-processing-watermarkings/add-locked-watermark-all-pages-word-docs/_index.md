@@ -3,7 +3,6 @@ title: Voeg een vergrendeld watermerk toe aan alle pagina's in Word-documenten
 linktitle: Voeg een vergrendeld watermerk toe aan alle pagina's in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Beveilig uw documenten door vergrendelde watermerken toe te voegen met Groupdocs.Watermark voor .NET. Volg onze stapsgewijze handleiding voor een eenvoudige implementatie.
-type: docs
 weight: 11
 url: /nl/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---

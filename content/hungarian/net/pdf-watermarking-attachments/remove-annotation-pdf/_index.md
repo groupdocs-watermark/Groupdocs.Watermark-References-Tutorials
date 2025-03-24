@@ -3,7 +3,6 @@ title: Annotáció eltávolítása a PDF-ből
 linktitle: Annotáció eltávolítása a PDF-ből
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan távolíthat el megjegyzéseket PDF-fájlokból a GroupDocs.Watermark for .NET segítségével. Fokozatmentesen javítja a dokumentumok olvashatóságát.
-type: docs
 weight: 29
 url: /hu/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---

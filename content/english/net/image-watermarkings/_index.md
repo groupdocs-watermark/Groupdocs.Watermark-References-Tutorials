@@ -3,7 +3,6 @@ title: Image Watermarking
 linktitle: Image Watermarking
 second_title: GroupDocs.Watermark .NET API
 description: Explore GroupDocs.Watermark for .NET tutorials on adding image watermarks. Learn step-by-step methods to enhance your document's security and branding.
-type: docs
 weight: 24
 url: /net/image-watermarkings/
 ---

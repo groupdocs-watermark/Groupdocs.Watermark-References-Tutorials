@@ -3,7 +3,6 @@ title: Λάβετε υποστηριζόμενες μορφές αρχείων
 linktitle: Λάβετε υποστηριζόμενες μορφές αρχείων
 second_title: GroupDocs.Watermark .NET API
 description: Προσθέστε χωρίς κόπο υδατογραφήματα στα έγγραφά σας χρησιμοποιώντας το GroupDocs.Watermark για .NET. Ακολουθήστε τον αναλυτικό, βήμα προς βήμα οδηγό μας για να προστατεύσετε τα ψηφιακά σας στοιχεία.
-type: docs
 weight: 13
 url: /el/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ foreach (FileType fileType in supportedFileTypes)
 ### Πώς μπορώ να αγοράσω μια άδεια για το GroupDocs.Watermark;
  Οι άδειες μπορούν να αγοραστούν απευθείας από το[σελίδα αγοράς](https://purchase.groupdocs.com/buy).
 ### Υπάρχει διαθέσιμη τεκμηρίωση για το GroupDocs.Watermark;
- Ναι, υπάρχει πλήρης τεκμηρίωση[εδώ](https://reference.groupdocs.com/Watermark/net/).
+ Ναι, υπάρχει πλήρης τεκμηρίωση[εδώ](https://tutorials.groupdocs.com/Watermark/net/).

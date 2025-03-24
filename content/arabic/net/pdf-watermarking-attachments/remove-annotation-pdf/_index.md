@@ -3,7 +3,6 @@ title: إزالة التعليق التوضيحي من PDF
 linktitle: إزالة التعليق التوضيحي من PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة التعليقات التوضيحية من ملفات PDF باستخدام GroupDocs.Watermark لـ .NET. تعزيز إمكانية قراءة المستندات دون عناء.
-type: docs
 weight: 29
 url: /ar/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---

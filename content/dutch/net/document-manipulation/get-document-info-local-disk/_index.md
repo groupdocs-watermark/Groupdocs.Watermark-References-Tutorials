@@ -3,7 +3,6 @@ title: Documentinformatie ophalen van lokale schijf
 linktitle: Documentinformatie ophalen van lokale schijf
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u watermerken in documenten kunt toevoegen, verwijderen en extraheren met behulp van GroupDocs voor .NET met deze uitgebreide stapsgewijze handleiding.
-type: docs
 weight: 11
 url: /nl/net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /nl/net/document-manipulation/get-document-info-local-disk/
 Welkom bij de ultieme handleiding voor het gebruik van GroupDocs.Watermark voor .NET! Of u nu een doorgewinterde ontwikkelaar bent of net begint, dit artikel begeleidt u bij de basisprincipes van het watermerken van uw documenten met deze krachtige tool. Uiteindelijk zult u een professional zijn in het insluiten van watermerken in uw documenten, zodat u er zeker van kunt zijn dat ze worden beschermd en van uw merk worden voorzien volgens uw specificaties.
 ## Vereisten
 Voordat u in de stapsgewijze handleiding duikt, zijn er een aantal vereisten waaraan u moet voldoen:
-1.  .NET Framework: Zorg ervoor dat .NET Framework op uw systeem is geïnstalleerd. GroupDocs.Watermark voor .NET is compatibel met verschillende versies van .NET Framework, dus controleer de[documentatie](https://reference.groupdocs.com/Watermark/net/) voor compatibiliteitsdetails.
+1.  .NET Framework: Zorg ervoor dat .NET Framework op uw systeem is geïnstalleerd. GroupDocs.Watermark voor .NET is compatibel met verschillende versies van .NET Framework, dus controleer de[documentatie](https://tutorials.groupdocs.com/Watermark/net/) voor compatibiliteitsdetails.
 2.  GroupDocs.Watermark voor .NET Library: Download en installeer de nieuwste versie van de[downloadpagina](https://releases.groupdocs.com/Watermark/net/).
 3. Ontwikkelomgeving: U moet een ontwikkelomgeving hebben opgezet. Visual Studio is een populaire keuze voor .NET-ontwikkeling.
 4. Basiskennis van C#: Als u de basisprincipes van C#-programmeren begrijpt, kunt u de voorbeelden volgen.
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
  Deze stap omvat het gebruik van de`GetWatermarks`methode om alle watermerken in een document op te halen. Vervolgens kunt u de lijst met watermerken doorlopen en hun eigenschappen inspecteren of indien nodig aanvullende acties uitvoeren.
 ## Conclusie
- Gefeliciteerd! U hebt nu geleerd hoe u GroupDocs.Watermark voor .NET kunt gebruiken om watermerken aan uw documenten toe te voegen, te verwijderen en te extraheren. Met deze vaardigheden kunt u uw documenten effectief beschermen en van een merk voorzien. Herinner de[documentatie](https://reference.groupdocs.com/Watermark/net/) is er altijd als u meer gedetailleerde informatie of geavanceerde functionaliteit nodig heeft.
+ Gefeliciteerd! U hebt nu geleerd hoe u GroupDocs.Watermark voor .NET kunt gebruiken om watermerken aan uw documenten toe te voegen, te verwijderen en te extraheren. Met deze vaardigheden kunt u uw documenten effectief beschermen en van een merk voorzien. Herinner de[documentatie](https://tutorials.groupdocs.com/Watermark/net/) is er altijd als u meer gedetailleerde informatie of geavanceerde functionaliteit nodig heeft.
 ## Veelgestelde vragen
 ### Kan ik GroupDocs.Watermark voor .NET gebruiken met elke .NET-versie?
- Ja, GroupDocs.Watermark voor .NET is compatibel met verschillende .NET Framework-versies. Controleer de[documentatie](https://reference.groupdocs.com/Watermark/net/) voor bijzonderheden.
+ Ja, GroupDocs.Watermark voor .NET is compatibel met verschillende .NET Framework-versies. Controleer de[documentatie](https://tutorials.groupdocs.com/Watermark/net/) voor bijzonderheden.
 ### Waar kan ik GroupDocs.Watermark voor .NET downloaden?
  U kunt de nieuwste versie downloaden van de[downloadpagina](https://releases.groupdocs.com/Watermark/net/).
 ### Hoe krijg ik een tijdelijke licentie?

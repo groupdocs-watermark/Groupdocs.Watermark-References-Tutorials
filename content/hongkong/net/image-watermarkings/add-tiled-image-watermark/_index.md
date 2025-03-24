@@ -3,7 +3,6 @@ title: 新增平鋪影像浮水印
 linktitle: 新增平鋪影像浮水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 將平鋪影像浮水印新增至文件。簡單、高效且可自訂。
-type: docs
 weight: 10
 url: /zh-hant/net/image-watermarkings/add-tiled-image-watermark/
 ---

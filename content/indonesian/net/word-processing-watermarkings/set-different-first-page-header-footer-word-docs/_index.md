@@ -3,7 +3,6 @@ title: Atur Header/Footer Halaman Pertama yang Berbeda di Word Docs
 linktitle: Atur Header/Footer Halaman Pertama yang Berbeda di Word Docs
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengatur header dan footer yang berbeda di halaman pertama dokumen Word menggunakan GroupDocs.Watermark untuk .NET.
-type: docs
 weight: 36
 url: /id/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Ya, pengguna dapat memanfaatkan uji coba gratis GroupDocs.Watermark untuk .NET d
 ### Bisakah saya membeli lisensi sementara untuk penggunaan jangka pendek?
  Ya, lisensi sementara untuk GroupDocs. Tanda Air untuk .NET dapat diperoleh dari[Halaman pembelian lisensi sementara](https://purchase.groupdocs.com/temporary-license/).
 ### Di mana saya dapat menemukan dokumentasi komprehensif untuk GroupDocs.Watermark untuk .NET?
- Dokumentasi terperinci untuk GroupDocs.Watermark untuk .NET tersedia di[Halaman referensi](https://reference.groupdocs.com/Watermark/net/).
+ Dokumentasi terperinci untuk GroupDocs.Watermark untuk .NET tersedia di[Halaman referensi](https://tutorials.groupdocs.com/Watermark/net/).

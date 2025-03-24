@@ -3,7 +3,6 @@ title: Načíst dokument specifického formátu
 linktitle: Načíst dokument specifického formátu
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak načíst a vodoznak dokumenty pomocí Groupdocs Watermark for .NET s tímto průvodcem krok za krokem. Chraňte a označujte svůj obsah bez námahy.
-type: docs
 weight: 12
 url: /cs/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Závěr
-Vodoznak dokumentů je kritickým krokem k ochraně vašeho obsahu a Groupdocs.Watermark pro .NET tento proces zjednodušuje a zefektivňuje. Podle této příručky můžete snadno načíst a aplikovat vodoznaky na své dokumenty, čímž zajistíte jejich bezpečnost a správné označení. Další podrobnosti a pokročilé možnosti viz[Groupdocs.Watermark pro dokumentaci .NET](https://reference.groupdocs.com/Watermark/net/).
+Vodoznak dokumentů je kritickým krokem k ochraně vašeho obsahu a Groupdocs.Watermark pro .NET tento proces zjednodušuje a zefektivňuje. Podle této příručky můžete snadno načíst a aplikovat vodoznaky na své dokumenty, čímž zajistíte jejich bezpečnost a správné označení. Další podrobnosti a pokročilé možnosti viz[Groupdocs.Watermark pro dokumentaci .NET](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### Mohu tuto metodu použít pro různé formáty dokumentů?
  Ano, Groupdocs podporuje různé formáty dokumentů. Musíte upravit`LoadOptions` podle toho.

@@ -3,7 +3,6 @@ title: Αντικαταστήστε το κείμενο με τη μορφοπο
 linktitle: Αντικαταστήστε το κείμενο με τη μορφοποίηση για σχολιασμό σε PDF
 second_title: GroupDocs.Watermark .NET API
 description: Βελτιώστε την ασφάλεια των εγγράφων με το GroupDocs για .NET. Μάθετε πώς να αντικαθιστάτε κείμενο με μορφοποίηση για σχολιασμούς σε αρχεία PDF χωρίς κόπο.
-type: docs
 weight: 41
 url: /el/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---

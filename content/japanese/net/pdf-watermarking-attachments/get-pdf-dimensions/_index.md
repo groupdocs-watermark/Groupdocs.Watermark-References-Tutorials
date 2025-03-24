@@ -3,7 +3,6 @@ title: PDF の寸法を取得する
 linktitle: PDF の寸法を取得する
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs.Watermark for .NET を使用してドキュメントを簡単に保護します。透かし、スタンプ、注釈を簡単に追加できます。
-type: docs
 weight: 26
 url: /ja/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---

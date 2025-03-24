@@ -3,7 +3,6 @@ title: Καταργήστε το σχήμα στα Έγγραφα του Word
 linktitle: Καταργήστε το σχήμα στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αφαιρείτε σχήματα από έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Εύκολος, αποτελεσματικός και ισχυρός χειρισμός εγγράφων.
-type: docs
 weight: 30
 url: /el/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
@@ -72,6 +71,6 @@ watermarker.Save(outputFileName);
 ### Πώς μπορώ να αποκτήσω προσωρινές άδειες για το GroupDocs.Watermark για .NET;
  Προσωρινές άδειες χρήσης για GroupDocs.Watermark για .NET μπορούν να ληφθούν από το[σελίδα προσωρινής άδειας](https://purchase.groupdocs.com/temporary-license/).
 ### Πού μπορώ να βρω τεκμηρίωση και υποστήριξη για το GroupDocs.Watermark για .NET;
- Τεκμηρίωση και πόροι υποστήριξης για το GroupDocs.Watermark για .NET είναι διαθέσιμα στο[δικαστήριο](https://forum.groupdocs.com/c/watermark/19) και[Σελίδα αναφοράς](https://reference.groupdocs.com/Watermark/net/).
+ Τεκμηρίωση και πόροι υποστήριξης για το GroupDocs.Watermark για .NET είναι διαθέσιμα στο[δικαστήριο](https://forum.groupdocs.com/c/watermark/19) και[Σελίδα αναφοράς](https://tutorials.groupdocs.com/Watermark/net/).
 ### Ποιες εκδόσεις του .NET είναι συμβατές με το GroupDocs.Watermark;
 Το GroupDocs.Watermark για .NET είναι συμβατό με διάφορες εκδόσεις του .NET, συμπεριλαμβανομένων των .NET Framework και .NET Core.

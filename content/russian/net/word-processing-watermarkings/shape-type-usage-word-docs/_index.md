@@ -3,7 +3,6 @@ title: Использование типов фигур в документах 
 linktitle: Использование типов фигур в документах Word
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как манипулировать фигурами в документах Word с помощью GroupDocs.Watermark для .NET. В этом руководстве представлены рекомендации по эффективной обработке документов.
-type: docs
 weight: 37
 url: /ru/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---

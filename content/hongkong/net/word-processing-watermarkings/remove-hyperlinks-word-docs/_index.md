@@ -3,7 +3,6 @@ title: 刪除 Word 文件中的超鏈接
 linktitle: 刪除 Word 文件中的超鏈接
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 從 Word 文件中刪除超連結。輕鬆增強文件安全性。
-type: docs
 weight: 29
 url: /zh-hant/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---

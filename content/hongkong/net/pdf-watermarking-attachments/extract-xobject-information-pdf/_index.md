@@ -3,7 +3,6 @@ title: 從 PDF 中提取 XObject 訊息
 linktitle: 從 PDF 中提取 XObject 訊息
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 釋放文件浮水印的強大功能。無縫管理 PDF、Word 文件和影像中的浮水印。
-type: docs
 weight: 25
 url: /zh-hant/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---

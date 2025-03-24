@@ -3,7 +3,6 @@ title: 특정 형식의 문서 로드
 linktitle: 특정 형식의 문서 로드
 second_title: GroupDocs.Watermark .NET API
 description: 이 단계별 가이드를 통해 Groupdocs for .NET을 사용하여 문서를 로드하고 워터마크하는 방법을 알아보세요. 손쉽게 콘텐츠를 보호하고 브랜드를 지정하세요.
-type: docs
 weight: 12
 url: /ko/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## 결론
-문서에 워터마킹을 하는 것은 콘텐츠를 보호하는 데 중요한 단계이며 .NET용 Groupdocs.Watermark는 이 프로세스를 간단하고 효율적으로 만듭니다. 이 가이드를 따르면 문서에 워터마크를 쉽게 로드하고 적용하여 보안과 적절한 브랜딩을 보장할 수 있습니다. 자세한 내용과 고급 옵션은 다음을 참조하세요.[.NET 문서용 Groupdocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+문서에 워터마킹을 하는 것은 콘텐츠를 보호하는 데 중요한 단계이며 .NET용 Groupdocs.Watermark는 이 프로세스를 간단하고 효율적으로 만듭니다. 이 가이드를 따르면 문서에 워터마크를 쉽게 로드하고 적용하여 보안과 적절한 브랜딩을 보장할 수 있습니다. 자세한 내용과 고급 옵션은 다음을 참조하세요.[.NET 문서용 Groupdocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### 다양한 문서 형식에 이 방법을 사용할 수 있나요?
  네, Groupdocs는 다양한 문서 형식을 지원합니다. 조정해야합니다`LoadOptions` 따라서.

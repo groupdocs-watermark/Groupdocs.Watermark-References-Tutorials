@@ -3,7 +3,6 @@ title: 로컬 디스크에서 문서 정보 가져오기
 linktitle: 로컬 디스크에서 문서 정보 가져오기
 second_title: GroupDocs.Watermark .NET API
 description: 이 포괄적인 단계별 가이드를 통해 GroupDocs for .NET을 사용하여 문서에서 워터마크를 추가, 제거 및 추출하는 방법을 알아보세요.
-type: docs
 weight: 11
 url: /ko/net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /ko/net/document-manipulation/get-document-info-local-disk/
 .NET용 GroupDocs.Watermark 사용에 대한 최고의 가이드에 오신 것을 환영합니다! 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 문서에서는 이 강력한 도구를 사용하여 문서에 워터마킹을 적용하는 필수 사항을 안내합니다. 결국에는 문서에 워터마크를 삽입하여 문서가 보호되고 사양에 맞게 브랜드화되도록 하는 전문가가 될 것입니다.
 ## 전제조건
 단계별 가이드를 시작하기 전에 충족해야 할 몇 가지 전제 조건이 있습니다.
-1.  .NET Framework: 시스템에 .NET Framework가 설치되어 있는지 확인하십시오. .NET용 GroupDocs.Watermark는 다양한 버전의 .NET Framework와 호환되므로[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/) 호환성 세부정보를 확인하세요.
+1.  .NET Framework: 시스템에 .NET Framework가 설치되어 있는지 확인하십시오. .NET용 GroupDocs.Watermark는 다양한 버전의 .NET Framework와 호환되므로[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/) 호환성 세부정보를 확인하세요.
 2.  .NET 라이브러리용 GroupDocs.Watermark: 다음에서 최신 버전을 다운로드하여 설치하세요.[다운로드 페이지](https://releases.groupdocs.com/Watermark/net/).
 3. 개발 환경: 개발 환경이 설정되어 있어야 합니다. Visual Studio는 .NET 개발에 널리 사용되는 선택입니다.
 4. 기본 C# 지식: C# 프로그래밍의 기본 사항을 이해하면 예제를 따라가는 데 도움이 됩니다.
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
  이 단계에는`GetWatermarks`문서의 모든 워터마크를 검색하는 방법입니다. 그런 다음 워터마크 목록을 반복하여 해당 속성을 검사하거나 필요에 따라 추가 작업을 수행할 수 있습니다.
 ## 결론
- 축하해요! 이제 .NET용 GroupDocs.Watermark를 사용하여 문서에서 워터마크를 추가, 제거 및 추출하는 방법을 배웠습니다. 이러한 기술을 사용하면 문서를 효과적으로 보호하고 브랜드화할 수 있습니다. 기억하세요.[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/) 더 자세한 정보나 고급 기능이 필요한 경우 항상 있습니다.
+ 축하해요! 이제 .NET용 GroupDocs.Watermark를 사용하여 문서에서 워터마크를 추가, 제거 및 추출하는 방법을 배웠습니다. 이러한 기술을 사용하면 문서를 효과적으로 보호하고 브랜드화할 수 있습니다. 기억하세요.[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/) 더 자세한 정보나 고급 기능이 필요한 경우 항상 있습니다.
 ## FAQ
 ### 모든 .NET 버전에서 .NET용 GroupDocs.Watermark를 사용할 수 있습니까?
- 예, .NET용 GroupDocs.Watermark는 다양한 .NET Framework 버전과 호환됩니다. 을 체크 해봐[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/) 구체적인 내용은.
+ 예, .NET용 GroupDocs.Watermark는 다양한 .NET Framework 버전과 호환됩니다. 을 체크 해봐[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/) 구체적인 내용은.
 ### .NET용 GroupDocs.Watermark를 어디서 다운로드할 수 있나요?
  최신 버전은 다음 사이트에서 다운로드할 수 있습니다.[다운로드 페이지](https://releases.groupdocs.com/Watermark/net/).
 ### 임시 면허는 어떻게 얻나요?

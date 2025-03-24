@@ -3,7 +3,6 @@ title: PDF Ekinde Resim Ara
 linktitle: PDF Ekinde Resim Ara
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF ekleri içindeki görselleri verimli bir şekilde arayın. Filigran yönetimi sürecinizi zahmetsizce basitleştirin.
-type: docs
 weight: 46
 url: /tr/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---

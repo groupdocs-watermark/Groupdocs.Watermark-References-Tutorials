@@ -3,7 +3,6 @@ title: ストリームからドキュメント情報を取得する
 linktitle: ストリームからドキュメント情報を取得する
 second_title: GroupDocs.Watermark .NET API
 description: このステップバイステップ ガイドでは、GroupDocs.Watermark for .NET を使用してストリームからドキュメント情報を取得する方法を学習します。ドキュメント管理機能を簡単に。
-type: docs
 weight: 12
 url: /ja/net/document-manipulation/get-document-info-stream/
 ---
@@ -46,10 +45,10 @@ Console.WriteLine("Document size: {0} bytes", info.Size);
 ```
 
 ## 結論
- GroupDocs.Watermark for .NET を使用してストリームからドキュメント情報を取得するプロセスは、管理可能な手順に分割すると簡単です。このガイドに従うことで、この機能をアプリケーションに効率的に統合し、ドキュメントの管理と整合性を向上させることができます。遠慮せずに探索してください[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/)より高度な機能とオプションについては、
+ GroupDocs.Watermark for .NET を使用してストリームからドキュメント情報を取得するプロセスは、管理可能な手順に分割すると簡単です。このガイドに従うことで、この機能をアプリケーションに効率的に統合し、ドキュメントの管理と整合性を向上させることができます。遠慮せずに探索してください[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/)より高度な機能とオプションについては、
 ## よくある質問
 ### GroupDocs.Watermark はどのようなファイル形式をサポートしていますか?
- GroupDocs.Watermark は、PDF、Word、Excel、PowerPoint などを含む幅広いファイル形式をサポートしています。完全なリストは、[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark は、PDF、Word、Excel、PowerPoint などを含む幅広いファイル形式をサポートしています。完全なリストは、[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/).
 ### 購入する前に GroupDocs.Watermark を試してみることはできますか?
 はい、以下から無料試用版をダウンロードできます。[ここ](https://releases.groupdocs.com/)から一時ライセンスを申請します。[ここ](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Watermark for .NET をインストールするにはどうすればよいですか?

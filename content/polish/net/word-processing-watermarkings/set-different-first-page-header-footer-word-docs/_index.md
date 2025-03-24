@@ -3,7 +3,6 @@ title: Ustaw inny nagłówek/stopkę pierwszej strony w dokumentach programu Wor
 linktitle: Ustaw inny nagłówek/stopkę pierwszej strony w dokumentach programu Word
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak ustawić różne nagłówki i stopki na pierwszej stronie dokumentów programu Word przy użyciu narzędzia GroupDocs.Watermark dla platformy .NET.
-type: docs
 weight: 36
 url: /pl/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Tak, użytkownicy mogą skorzystać z bezpłatnej wersji próbnej GroupDocs.Wate
 ### Czy mogę kupić tymczasową licencję na krótkotrwałe użytkowanie?
  Tak, tymczasowe licencje na GroupDocs Watermark dla .NET można nabyć w witrynie[Strona zakupu licencji tymczasowej](https://purchase.groupdocs.com/temporary-license/).
 ### Gdzie mogę znaleźć obszerną dokumentację GroupDocs.Watermark dla .NET?
- Szczegółowa dokumentacja GroupDocs.Watermark dla .NET jest dostępna na stronie[Strona referencyjna](https://reference.groupdocs.com/Watermark/net/).
+ Szczegółowa dokumentacja GroupDocs.Watermark dla .NET jest dostępna na stronie[Strona referencyjna](https://tutorials.groupdocs.com/Watermark/net/).

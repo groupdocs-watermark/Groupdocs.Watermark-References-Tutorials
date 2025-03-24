@@ -3,7 +3,6 @@ title: Zárolt vízjel hozzáadása a Word Dokumentumok szakaszához
 linktitle: Zárolt vízjel hozzáadása a Word Dokumentumok szakaszához
 second_title: GroupDocs.Watermark .NET API
 description: Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan adhat hozzá zárolt vízjelet egy adott szakaszhoz a Word dokumentumokban a Groupdocs segítségével.
-type: docs
 weight: 13
 url: /hu/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
@@ -70,4 +69,4 @@ Groupdocs.Watermark for .NET egy hatékony könyvtár, amely fejlett testreszab�
 ### Milyen típusú vízjeleket adhatok hozzá a Groupdocs.Watermark segítségével?
 A Groupdocs.Watermark különféle típusú vízjeleket támogat, beleértve a szöveges, képi és alakzatos vízjeleket, és széles körű testreszabási lehetőségeket kínál minden típushoz.
 ### Hol találhatok további információt a Groupdocs.Watermark for .NET-ről?
- További információért látogassa meg a[dokumentáció](https://reference.groupdocs.com/Watermark/net/) és[támogatói fórum](https://forum.groupdocs.com/c/watermark/19).
+ További információért látogassa meg a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) és[támogatói fórum](https://forum.groupdocs.com/c/watermark/19).

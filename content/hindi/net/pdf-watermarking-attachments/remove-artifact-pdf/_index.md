@@ -3,7 +3,6 @@ title: पीडीएफ से विरूपण साक्ष्य हट
 linktitle: पीडीएफ से विरूपण साक्ष्य हटाएँ
 second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके PDF दस्तावेज़ों से कलाकृतियों को आसानी से हटाने का तरीका जानें। हमारे व्यापक ट्यूटोरियल के साथ चरण-दर-चरण प्रक्रिया में महारत हासिल करें।
-type: docs
 weight: 31
 url: /hi/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
@@ -66,4 +65,4 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### क्या मैं .NET के लिए GroupDocs.Watermark के लिए एक अस्थायी लाइसेंस खरीद सकता हूँ?
  हां, आप दिए गए माध्यम से अस्थायी लाइसेंस प्राप्त कर सकते हैं[स्रोत](https://purchase.groupdocs.com/temporary-license/).
 ### क्या .NET के लिए GroupDocs.Watermark के लिए कोई व्यापक दस्तावेज़ीकरण संसाधन उपलब्ध हैं?
- हां, आप उपलब्ध विस्तृत दस्तावेज़ का संदर्भ ले सकते हैं[यहाँ](https://reference.groupdocs.com/Watermark/net/) संपूर्ण मार्गदर्शन और अंतर्दृष्टि के लिए।
+ हां, आप उपलब्ध विस्तृत दस्तावेज़ का संदर्भ ले सकते हैं[यहाँ](https://tutorials.groupdocs.com/Watermark/net/) संपूर्ण मार्गदर्शन और अंतर्दृष्टि के लिए।

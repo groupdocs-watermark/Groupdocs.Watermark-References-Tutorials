@@ -3,7 +3,6 @@ title: Holen Sie sich PDF-Abmessungen
 linktitle: Holen Sie sich PDF-Abmessungen
 second_title: GroupDocs.Watermark .NET-API
 description: Schützen Sie Ihre Dokumente ganz einfach mit Groupdocs.Watermark für .NET. Fügen Sie mühelos Wasserzeichen, Stempel und Anmerkungen hinzu.
-type: docs
 weight: 26
 url: /de/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---

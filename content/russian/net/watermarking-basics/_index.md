@@ -3,7 +3,6 @@ title: Основы создания водяных знаков
 linktitle: Основы создания водяных знаков
 second_title: GroupDocs.Watermark .NET API
 description: Откройте для себя руководства GroupDocs.Watermark для .NET, позволяющие легко добавлять изображения и текстовые водяные знаки. Защитите свои документы с помощью этих простых в использовании руководств.
-type: docs
 weight: 20
 url: /ru/net/watermarking-basics/
 ---

@@ -3,7 +3,6 @@ title: PDF'ye Ek Ekle
 linktitle: PDF'ye Ek Ekle
 second_title: GroupDocs.Watermark .NET API'si
 description: Sorunsuz filigran ekleme ve ek yönetimi için GroupDocs.Watermark ile .NET belge yönetimi yeteneklerinizi geliştirin.
-type: docs
 weight: 12
 url: /tr/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---

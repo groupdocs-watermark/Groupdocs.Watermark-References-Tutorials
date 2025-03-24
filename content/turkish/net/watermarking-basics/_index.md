@@ -3,7 +3,6 @@ title: Filigranlama Temelleri
 linktitle: Filigranlama Temelleri
 second_title: GroupDocs.Watermark .NET API'si
 description: Zahmetsizce resim ve metin filigranları eklemek için GroupDocs.Watermark for .NET eğitimlerini keşfedin. Takip edilmesi kolay bu kılavuzlarla belgelerinizi koruyun.
-type: docs
 weight: 20
 url: /tr/net/watermarking-basics/
 ---

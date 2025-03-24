@@ -3,7 +3,6 @@ title: Přidat obrázek vodoznak
 linktitle: Přidat obrázek vodoznak
 second_title: GroupDocs.Watermark .NET API
 description: Pomocí GroupDocs.Watermark for .NET můžete do svých dokumentů bez námahy přidávat obrázkové vodoznaky. Chraňte své duševní vlastnictví snadno.
-type: docs
 weight: 10
 url: /cs/net/watermarking-basics/add-image-watermark/
 ---

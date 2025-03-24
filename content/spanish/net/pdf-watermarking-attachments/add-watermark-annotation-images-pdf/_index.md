@@ -3,7 +3,6 @@ title: Agregar marca de agua a imágenes de anotaciones en PDF
 linktitle: Agregar marca de agua a imágenes de anotaciones en PDF
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda cómo proteger sus documentos PDF agregando marcas de agua a las imágenes de anotaciones usando Groupdocs.Watermark para .NET.
-type: docs
 weight: 17
 url: /es/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---

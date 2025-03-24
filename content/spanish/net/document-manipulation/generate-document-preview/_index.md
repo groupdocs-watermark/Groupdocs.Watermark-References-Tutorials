@@ -3,7 +3,6 @@ title: Generar vista previa del documento
 linktitle: Generar vista previa del documento
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a generar vistas previas de documentos utilizando GroupDocs.Watermark para .NET con esta guía. Mejore la seguridad y gestión de sus documentos sin esfuerzo.
-type: docs
 weight: 10
 url: /es/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Conclusión
 Generar vistas previas de documentos usando GroupDocs.Watermark para .NET es un proceso sencillo que se puede lograr con solo unas pocas líneas de código. Si sigue los pasos descritos en esta guía, podrá configurar fácilmente su proyecto, configurar las opciones necesarias y generar vistas previas de sus documentos. Esta poderosa biblioteca no solo simplifica el proceso de creación de marcas de agua, sino que también proporciona funciones sólidas para administrar y manipular marcas de agua.
- Si tiene alguna pregunta o necesita más ayuda, no dude en visitar el[Foro de soporte de GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) o referirse a la[documentación](https://reference.groupdocs.com/Watermark/net/).
+ Si tiene alguna pregunta o necesita más ayuda, no dude en visitar el[Foro de soporte de GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) o referirse a la[documentación](https://tutorials.groupdocs.com/Watermark/net/).
 ## Preguntas frecuentes
 ### ¿Qué formatos de archivo son compatibles con GroupDocs.Watermark para .NET?
- GroupDocs.Watermark para .NET admite una amplia gama de formatos de archivo, incluidos PDF, DOCX, PPTX, XLSX y muchos más. Para obtener una lista completa de los formatos compatibles, consulte la[documentación](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark para .NET admite una amplia gama de formatos de archivo, incluidos PDF, DOCX, PPTX, XLSX y muchos más. Para obtener una lista completa de los formatos compatibles, consulte la[documentación](https://tutorials.groupdocs.com/Watermark/net/).
 ### ¿Puedo personalizar la apariencia de las marcas de agua?
 Sí, GroupDocs.Watermark le permite personalizar completamente la apariencia de las marcas de agua, incluidas marcas de agua de texto, imágenes y formas. Puede ajustar propiedades como fuente, color, tamaño y transparencia.
 ### ¿Hay una versión de prueba disponible?

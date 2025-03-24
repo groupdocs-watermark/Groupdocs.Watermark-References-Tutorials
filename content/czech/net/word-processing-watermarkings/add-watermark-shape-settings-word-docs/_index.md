@@ -3,7 +3,6 @@ title: Přidejte vodoznak s nastavením tvaru ve Word Docs
 linktitle: Přidejte vodoznak s nastavením tvaru ve Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky s nastavením tvaru do dokumentů aplikace Word pomocí GroupDocs pro .NET. Chraňte své dokumenty efektivně.
-type: docs
 weight: 20
 url: /cs/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---

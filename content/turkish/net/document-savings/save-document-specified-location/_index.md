@@ -3,7 +3,6 @@ title: Belgeyi Belirtilen Konuma Kaydet
 linktitle: Belgeyi Belirtilen Konuma Kaydet
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu adım adım kılavuzla GroupDocs.Watermark for .NET'i kullanarak belgelerinize nasıl kolayca filigran ekleyeceğinizi öğrenin. Belge güvenliğini geliştirin.
-type: docs
 weight: 11
 url: /tr/net/document-savings/save-document-specified-location/
 ---

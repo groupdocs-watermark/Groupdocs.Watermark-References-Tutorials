@@ -3,7 +3,6 @@ title: Filigranı PDF'den Kaldır
 linktitle: Filigranı PDF'den Kaldır
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF dosyalarından filigranları nasıl kaldıracağınızı öğrenin. Profesyonel belge düzenleme için kolay adımlar.
-type: docs
 weight: 34
 url: /tr/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---

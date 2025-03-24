@@ -3,7 +3,6 @@ title: 為Word文件中的特定頁面新增浮水印
 linktitle: 為Word文件中的特定頁面新增浮水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs for .NET 輕鬆地將浮水印新增至 Word 文件中的特定頁面。增強文件安全性和品牌形象。
-type: docs
 weight: 18
 url: /zh-hant/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---

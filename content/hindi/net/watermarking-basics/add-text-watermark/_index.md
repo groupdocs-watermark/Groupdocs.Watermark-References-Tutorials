@@ -3,7 +3,6 @@ title: टेक्स्ट वॉटरमार्क जोड़ें
 linktitle: टेक्स्ट वॉटरमार्क जोड़ें
 second_title: GroupDocs.Watermark .NET API
 description: इस चरण-दर-चरण मार्गदर्शिका से जानें कि .NET के लिए Groupdocs का उपयोग करके अपने दस्तावेज़ों में टेक्स्ट वॉटरमार्क कैसे जोड़ें।
-type: docs
 weight: 11
 url: /hi/net/watermarking-basics/add-text-watermark/
 ---

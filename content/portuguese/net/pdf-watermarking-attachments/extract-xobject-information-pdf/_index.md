@@ -3,7 +3,6 @@ title: Extraia informações do XObject do PDF
 linktitle: Extraia informações do XObject do PDF
 second_title: API GroupDocs.Watermark .NET
 description: Desbloqueie o poder da marca d'água em documentos com GroupDocs.Watermark for .NET. Gerencie facilmente marcas d'água em PDFs, documentos do Word e imagens.
-type: docs
 weight: 25
 url: /pt/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---

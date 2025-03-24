@@ -3,7 +3,6 @@ title: Odstraňte poznámky se specifickým formátováním textu v PDF
 linktitle: Odstraňte poznámky se specifickým formátováním textu v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Přečtěte si, jak odstranit anotace se specifickým formátováním textu v dokumentech PDF pomocí Groupdocs pro .NET.
-type: docs
 weight: 30
 url: /cs/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
@@ -72,7 +71,7 @@ Ano, Groupdocs.Watermark podporuje různé formáty dokumentů, včetně DOCX, P
 ### Je k dispozici bezplatná zkušební verze pro Groupdocs.Watermark pro .NET?
  Ano, máte přístup k bezplatné zkušební verzi Groupdocs.Watermark for .NET z[tady](https://releases.groupdocs.com/).
 ### Kde najdu dokumentaci k Groupdocs.Watermark pro .NET?
- Můžete najít podrobnou dokumentaci a reference API[tady](https://reference.groupdocs.com/Watermark/net/).
+ Můžete najít podrobnou dokumentaci a tutorials API[tady](https://tutorials.groupdocs.com/Watermark/net/).
 ### Jak mohu získat podporu pro jakékoli problémy nebo dotazy týkající se Groupdocs.Watermark?
  Své dotazy nebo problémy můžete zveřejňovat na fóru Groupdocs.Watermark[tady](https://forum.groupdocs.com/c/watermark/19).
 ### Mohu si zakoupit dočasnou licenci pro Groupdocs.Watermark pro .NET?

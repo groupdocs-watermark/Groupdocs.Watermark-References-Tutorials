@@ -3,7 +3,6 @@ title: Heben Sie den Schutz des Dokuments in Word-Dokumenten auf
 linktitle: Heben Sie den Schutz des Dokuments in Word-Dokumenten auf
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie den Schutz von Word-Dokumenten mit GroupDocs.Watermark für .NET ganz einfach aufheben können. Folgen Sie unserer Schritt-für-Schritt-Anleitung.
-type: docs
 weight: 38
 url: /de/net/word-processing-watermarkings/unprotect-document-word-docs/
 ---

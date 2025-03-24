@@ -3,7 +3,6 @@ title: PDF에 페이지 여백 유형으로 워터마크 추가
 linktitle: PDF에 페이지 여백 유형으로 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET을 사용하여 PDF에 페이지 여백 유형의 워터마크를 추가하는 방법을 알아보세요. 문서를 손쉽게 보호하세요.
-type: docs
 weight: 21
 url: /ko/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---

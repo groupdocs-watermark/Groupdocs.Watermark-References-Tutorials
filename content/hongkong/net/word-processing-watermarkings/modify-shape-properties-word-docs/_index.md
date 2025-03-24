@@ -3,7 +3,6 @@ title: 在 Word 文件中修改形狀屬性
 linktitle: 在 Word 文件中修改形狀屬性
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs for .NET 保護您的 Word 文件。輕鬆修改形狀屬性以增強安全性。
-type: docs
 weight: 27
 url: /zh-hant/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---

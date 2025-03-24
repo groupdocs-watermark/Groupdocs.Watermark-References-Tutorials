@@ -3,7 +3,6 @@ title: Sostituisci il testo per XObject specifico nel PDF
 linktitle: Sostituisci il testo per XObject specifico nel PDF
 second_title: API GroupDocs.Watermark .NET
 description: Sostituisci in modo efficiente il testo nei PDF utilizzando GroupDocs.Watermark per .NET. Integra perfettamente la filigrana nelle tue applicazioni .NET.
-type: docs
 weight: 44
 url: /it/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
@@ -68,6 +67,6 @@ Sì, GroupDocs.Watermark per .NET supporta un'ampia gamma di formati di document
 ### Come posso ottenere una licenza temporanea per GroupDocs.Watermark per .NET?
  Le licenze temporanee possono essere acquistate da[pagina della licenza temporanea](https://purchase.groupdocs.com/temporary-license/).
 ### Dove posso trovare la documentazione per GroupDocs.Watermark per .NET?
- La documentazione dettagliata è disponibile all'indirizzo[pagina della documentazione](https://reference.groupdocs.com/Watermark/net/).
+ La documentazione dettagliata è disponibile all'indirizzo[pagina della documentazione](https://tutorials.groupdocs.com/Watermark/net/).
 ### Quali opzioni di supporto sono disponibili per GroupDocs.Watermark per .NET?
  Puoi chiedere supporto e assistenza al forum della community di GroupDocs[Qui](https://forum.groupdocs.com/c/watermark/19).

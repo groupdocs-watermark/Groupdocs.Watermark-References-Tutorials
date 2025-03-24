@@ -3,7 +3,6 @@ title: 문서 로딩
 linktitle: 문서 로딩
 second_title: GroupDocs.Watermark .NET API
 description: 문서를 로드하고 워터마킹하여 단계별 가이드를 통해 문서 보안과 브랜딩을 보장하는 .NET용 GroupDocs.Watermark 튜토리얼을 살펴보세요.
-type: docs
 weight: 22
 url: /ko/net/document-loadings/
 ---

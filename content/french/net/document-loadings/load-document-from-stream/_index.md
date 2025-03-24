@@ -3,7 +3,6 @@ title: Charger un document à partir d'un flux
 linktitle: Charger un document à partir d'un flux
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes aux documents à l'aide de GroupDocs.Watermark pour .NET avec ce guide. Parfait pour les développeurs cherchant à améliorer la sécurité des documents.
-type: docs
 weight: 11
 url: /fr/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Ce code enregistre le document avec le filigrane nouvellement ajouté`outputFileName` chemin que vous avez défini précédemment.
 
 ## Conclusion
-Toutes nos félicitations! Vous avez ajouté avec succès un filigrane à votre document à l'aide de GroupDocs.Watermark pour .NET. Cette bibliothèque facilite incroyablement la gestion des filigranes dans une variété de formats de documents. Que vous ayez besoin d'ajouter du texte, des images ou d'autres types de filigranes, GroupDocs.Watermark dispose des outils dont vous avez besoin. N'oubliez pas de consulter le[Documentation](https://reference.groupdocs.com/Watermark/net/) pour des fonctionnalités plus avancées et des options de personnalisation.
+Toutes nos félicitations! Vous avez ajouté avec succès un filigrane à votre document à l'aide de GroupDocs.Watermark pour .NET. Cette bibliothèque facilite incroyablement la gestion des filigranes dans une variété de formats de documents. Que vous ayez besoin d'ajouter du texte, des images ou d'autres types de filigranes, GroupDocs.Watermark dispose des outils dont vous avez besoin. N'oubliez pas de consulter le[Documentation](https://tutorials.groupdocs.com/Watermark/net/) pour des fonctionnalités plus avancées et des options de personnalisation.
 ## FAQ
 ### Quels types de filigranes puis-je ajouter à l’aide de GroupDocs.Watermark pour .NET ?
 Vous pouvez ajouter des filigranes de texte, des filigranes d'image et même des formes et des logos complexes. La bibliothèque prend en charge un large éventail d'options de personnalisation.

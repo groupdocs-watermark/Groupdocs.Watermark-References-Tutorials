@@ -3,7 +3,6 @@ title: Přidejte vodoznak do obrázků oddílů v Dokumentech aplikace Word
 linktitle: Přidejte vodoznak do obrázků oddílů v Dokumentech aplikace Word
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky do obrázků v dokumentech aplikace Word pomocí Groupdocs pro .NET. Postupujte podle našeho průvodce pro bezpečnou a profesionální ochranu dokumentů.
-type: docs
 weight: 16
 url: /cs/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## Závěr
 Přidávání vodoznaků do obrázků v dokumentech aplikace Word je účinný způsob ochrany obsahu. S Groupdocs.Watermark pro .NET je tento proces přímočarý a efektivní. Postupujte podle kroků uvedených v tomto kurzu, abyste zajistili, že vaše dokumenty budou zabezpečené a dobře chráněné.
- Pro podrobnější dokumentaci navštivte[dokumentace](https://reference.groupdocs.com/Watermark/net/) . Pokud máte nějaké dotazy nebo potřebujete další pomoc, podívejte se na[Fórum podpory](https://forum.groupdocs.com/c/watermark/19).
+ Pro podrobnější dokumentaci navštivte[dokumentace](https://tutorials.groupdocs.com/Watermark/net/) . Pokud máte nějaké dotazy nebo potřebujete další pomoc, podívejte se na[Fórum podpory](https://forum.groupdocs.com/c/watermark/19).
 ## FAQ
 ### Mohu upravit text vodoznaku?
 Ano, text vodoznaku, písmo, velikost, zarovnání a otočení si můžete přizpůsobit podle svých potřeb.
 ### Je možné přidat vodoznak do více sekcí?
 Ano, můžete procházet každou částí a aplikovat vodoznak na obrázky ve všech částech.
 ### Mohu tuto metodu použít pro jiné formáty dokumentů?
- Groupdocs podporuje různé formáty dokumentů. Zkontrolovat[dokumentace](https://reference.groupdocs.com/Watermark/net/) Více podrobností.
+ Groupdocs podporuje různé formáty dokumentů. Zkontrolovat[dokumentace](https://tutorials.groupdocs.com/Watermark/net/) Více podrobností.
 ### Jak mohu získat dočasnou licenci?
  Můžete získat dočasnou licenci[tady](https://purchase.groupdocs.com/temporary-license/).
 ### Co když při používání Groupdocs.Watermark narazím na problémy?

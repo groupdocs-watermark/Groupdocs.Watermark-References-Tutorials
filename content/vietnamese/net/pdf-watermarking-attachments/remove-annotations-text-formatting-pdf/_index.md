@@ -3,7 +3,6 @@ title: Xóa chú thích bằng định dạng văn bản cụ thể trong PDF
 linktitle: Xóa chú thích bằng định dạng văn bản cụ thể trong PDF
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách xóa chú thích có định dạng văn bản cụ thể trong tài liệu PDF bằng Groupdocs cho .NET.
-type: docs
 weight: 30
 url: /vi/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
@@ -72,7 +71,7 @@ Có, Groupdocs.Watermark hỗ trợ nhiều định dạng tài liệu khác nha
 ### Có bản dùng thử miễn phí nào cho Groupdocs.Watermark cho .NET không?
  Có, bạn có thể truy cập bản dùng thử miễn phí Groupdocs.Watermark cho .NET từ[đây](https://releases.groupdocs.com/).
 ### Tôi có thể tìm tài liệu về Groupdocs.Watermark cho .NET ở đâu?
- Bạn có thể tìm thấy tài liệu chi tiết và tài liệu tham khảo API[đây](https://reference.groupdocs.com/Watermark/net/).
+ Bạn có thể tìm thấy tài liệu chi tiết và tài liệu tham khảo API[đây](https://tutorials.groupdocs.com/Watermark/net/).
 ### Làm cách nào tôi có thể nhận được hỗ trợ cho bất kỳ vấn đề hoặc thắc mắc nào liên quan đến Groupdocs.Watermark?
  Bạn có thể đăng câu hỏi hoặc vấn đề của mình trên diễn đàn Groupdocs.Watermark[đây](https://forum.groupdocs.com/c/watermark/19).
 ### Tôi có thể mua giấy phép tạm thời cho Groupdocs.Watermark cho .NET không?

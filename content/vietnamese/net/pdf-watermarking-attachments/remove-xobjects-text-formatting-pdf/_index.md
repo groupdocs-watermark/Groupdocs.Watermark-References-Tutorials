@@ -3,7 +3,6 @@ title: Xóa XObjects bằng định dạng văn bản cụ thể trong PDF
 linktitle: Xóa XObjects bằng định dạng văn bản cụ thể trong PDF
 second_title: API GroupDocs.Watermark .NET
 description: Dễ dàng xóa XObject có định dạng văn bản cụ thể khỏi tệp PDF bằng GroupDocs.Watermark cho .NET. Hãy làm theo hướng dẫn của chúng tôi để thao tác tài liệu liền mạch.
-type: docs
 weight: 36
 url: /vi/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Cuối cùng, lưu tài liệu PDF đã sửa đổi vào đường dẫn tệp 
 Việc này hoàn tất quá trình xóa XObject có định dạng văn bản cụ thể khỏi tài liệu PDF.
 
 ## Phần kết luận
-Bằng cách làm theo các bước này, bạn có thể xóa XObject một cách hiệu quả với định dạng văn bản cụ thể khỏi tài liệu PDF bằng GroupDocs.Watermark cho .NET. Thư viện mạnh mẽ này không chỉ đơn giản hóa các tác vụ tạo hình chìm mờ mà còn cung cấp các khả năng mạnh mẽ để thao tác tài liệu. Để biết thêm tài liệu chi tiết, hãy truy cập[GroupDocs.Watermark cho tài liệu .NET](https://reference.groupdocs.com/Watermark/net/) . Nếu bạn gặp bất kỳ vấn đề hoặc có thắc mắc,[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/watermark/19) là một nơi tuyệt vời để tìm kiếm sự giúp đỡ.
+Bằng cách làm theo các bước này, bạn có thể xóa XObject một cách hiệu quả với định dạng văn bản cụ thể khỏi tài liệu PDF bằng GroupDocs.Watermark cho .NET. Thư viện mạnh mẽ này không chỉ đơn giản hóa các tác vụ tạo hình chìm mờ mà còn cung cấp các khả năng mạnh mẽ để thao tác tài liệu. Để biết thêm tài liệu chi tiết, hãy truy cập[GroupDocs.Watermark cho tài liệu .NET](https://tutorials.groupdocs.com/Watermark/net/) . Nếu bạn gặp bất kỳ vấn đề hoặc có thắc mắc,[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/watermark/19) là một nơi tuyệt vời để tìm kiếm sự giúp đỡ.
 ## Câu hỏi thường gặp
 ### Tôi có thể xóa XObjects bằng định dạng văn bản khác không?
 Có, bạn có thể sửa đổi mã để kiểm tra các thuộc tính định dạng văn bản khác nhau như cỡ chữ, kiểu phông chữ hoặc màu sắc.

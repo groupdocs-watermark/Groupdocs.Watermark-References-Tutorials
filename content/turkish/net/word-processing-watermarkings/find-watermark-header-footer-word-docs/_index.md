@@ -3,7 +3,6 @@ title: Word Belgelerinde Üstbilgi/Altbilgide Filigran Bulma
 linktitle: Word Belgelerinde Üstbilgi/Altbilgide Filigran Bulma
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs'u kullanarak Word belgelerindeki filigranları nasıl verimli bir şekilde bulup kaldıracağınızı öğrenin, böylece belge bütünlüğünü ve profesyonelliğini sağlayın.
-type: docs
 weight: 22
 url: /tr/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---

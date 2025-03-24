@@ -3,7 +3,6 @@ title: Muat Dokumen Word yang Dilindungi Kata Sandi
 linktitle: Muat Dokumen Word yang Dilindungi Kata Sandi
 second_title: GroupDocs.Tanda Air .NET API
 description: Tambahkan tanda air dengan mudah ke dokumen Word yang dilindungi kata sandi menggunakan GroupDocs.Watermark untuk .NET dengan panduan langkah demi langkah komprehensif kami.
-type: docs
 weight: 14
 url: /id/net/document-loadings/load-password-protected-word-document/
 ---
