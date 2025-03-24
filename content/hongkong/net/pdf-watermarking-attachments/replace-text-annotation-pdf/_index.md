@@ -6,6 +6,9 @@ description: 透過這個全面的逐步教學，了解如何使用 Groupdocs.Wa
 weight: 40
 url: /zh-hant/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---
+
+# 替換 PDF 中特定註釋的文本
+
 ## 介紹
 嘿！您是否希望使用 .NET 無縫管理 PDF 文件中的浮水印？別再猶豫了！本教學將指導您使用 Groupdocs.Watermark for .NET 取代 PDF 中特定註釋的文字。我們將把這個過程分解為易於遵循的步驟，確保您清楚地掌握每個概念。無論您是經驗豐富的開發人員還是新手，本指南都是為您量身定制的，旨在讓您的體驗順暢且有效率。
 ## 先決條件

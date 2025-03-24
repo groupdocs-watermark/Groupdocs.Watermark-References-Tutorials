@@ -6,6 +6,9 @@ description: Naučte se, jak odstranit vodoznaky ze souborů PDF pomocí GroupDo
 weight: 34
 url: /cs/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---
+
+# Odebrat vodoznak z PDF
+
 ## Úvod
 V dnešní digitální době je ochrana citlivých dokumentů vodoznakem běžnou praxí. Existují však případy, kdy možná budete muset z různých důvodů odstranit vodoznaky ze souborů PDF. Ať už upravujete dokument nebo prostě potřebujete čistou verzi pro prezentaci, GroupDocs.Watermark for .NET poskytuje bezproblémové řešení pro odstraňování vodoznaků ze souborů PDF.
 ## Předpoklady

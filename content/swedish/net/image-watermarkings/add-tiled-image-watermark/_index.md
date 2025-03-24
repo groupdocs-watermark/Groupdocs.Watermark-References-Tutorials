@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar med sida vid sida i di
 weight: 10
 url: /sv/net/image-watermarkings/add-tiled-image-watermark/
 ---
+
+# Lägg till vattenstämpel med sida vid sida
+
 ## Introduktion
 GroupDocs.Watermark for .NET är ett kraftfullt API som låter utvecklare lägga till, ta bort och söka efter vattenstämplar i olika dokumentformat programmatiskt. I den här handledningen guidar vi dig genom processen att lägga till en vattenstämpel med sida vid sida i dina dokument med hjälp av GroupDocs.Watermark för .NET.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać znaki wodne z ustawieniami kształtu do 
 weight: 20
 url: /pl/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Dodaj znak wodny z ustawieniami kształtu w dokumentach programu Word
+
 ## Wstęp
 W tym samouczku omówimy proces dodawania znaku wodnego z ustawieniami kształtu do dokumentów programu Word przy użyciu programu GroupDocs.Watermark dla platformy .NET.
 ## Warunki wstępne

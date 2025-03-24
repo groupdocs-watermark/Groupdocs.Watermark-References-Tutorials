@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat hozzá csak nyomtatható jegyzetvízjelek
 weight: 13
 url: /hu/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---
+
+# Csak nyomtatási megjegyzés vízjel hozzáadása a PDF-hez
+
 ## Bevezetés
 Ebben az oktatóanyagban a GroupDocs.Watermark for .NET segítségével csak nyomtatható megjegyzés vízjel hozzáadásának folyamatába fogunk bele egy PDF-fájlba. A dokumentumok vízjelezése a dokumentumbiztonság és a márkaépítés kulcsfontosságú eleme, és a GroupDocs.Watermark zökkenőmentes megoldást kínál a .NET-fejlesztők számára ennek eléréséhez.
 ## Előfeltételek

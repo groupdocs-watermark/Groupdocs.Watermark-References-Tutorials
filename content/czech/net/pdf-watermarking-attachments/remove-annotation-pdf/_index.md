@@ -6,6 +6,9 @@ description: Přečtěte si, jak odstranit anotace z PDF pomocí GroupDocs.Water
 weight: 29
 url: /cs/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---
+
+# Odebrat anotaci z PDF
+
 ## Úvod
 Anotace v dokumentech PDF mohou někdy zaplňovat obsah nebo narušovat čitelnost dokumentu. S GroupDocs.Watermark for .NET můžete snadno odstranit anotace ze souborů PDF. V tomto tutoriálu vás provedeme procesem krok za krokem.
 ## Předpoklady

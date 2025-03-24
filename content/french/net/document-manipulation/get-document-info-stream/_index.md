@@ -6,6 +6,9 @@ description: Découvrez comment obtenir des informations sur un document à part
 weight: 12
 url: /fr/net/document-manipulation/get-document-info-stream/
 ---
+
+# Obtenir des informations sur le document à partir du flux
+
 ## Introduction
 À l’ère numérique d’aujourd’hui, la protection et la gestion de l’intégrité des documents sont cruciales. Que vous soyez un professionnel, un développeur ou une personne traitant des informations sensibles, la nécessité d'ajouter, d'extraire ou de manipuler des filigranes dans vos documents est essentielle. GroupDocs.Watermark pour .NET fournit une boîte à outils puissante pour vous aider à y parvenir. Cet article vous guidera dans l'utilisation de GroupDocs.Watermark pour .NET pour obtenir des informations sur un document à partir d'un flux, en proposant un didacticiel étape par étape pour vous faciliter le processus. À la fin, vous maîtriserez l’utilisation de cette fonctionnalité pour améliorer vos capacités de gestion de documents.
 ## Conditions préalables

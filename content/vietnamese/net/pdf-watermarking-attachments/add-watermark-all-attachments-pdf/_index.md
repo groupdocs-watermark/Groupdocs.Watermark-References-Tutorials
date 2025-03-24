@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ vào tệp đính kèm PDF bằn
 weight: 16
 url: /vi/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# Thêm hình mờ vào tất cả tệp đính kèm trong PDF
+
 ## Giới thiệu
 Thêm hình mờ vào tệp đính kèm PDF có thể là một bước quan trọng trong việc quản lý tài liệu, đặc biệt là khi đảm bảo tính bảo mật hoặc thương hiệu. GroupDocs.Watermark dành cho .NET cung cấp giải pháp toàn diện để nhúng hình mờ vào tệp PDF một cách liền mạch. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình thêm hình mờ vào tất cả các tệp đính kèm trong tài liệu PDF bằng GroupDocs.Watermark cho .NET.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 개인화된 워터마�
 weight: 18
 url: /ko/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# PDF의 이미지 아티팩트에 워터마크 추가
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Watermark를 사용하여 PDF 문서의 이미지 아티팩트에 워터마크를 추가하는 과정을 안내합니다. 다음 단계를 따르면 개인화된 워터마크를 사용하여 PDF 파일을 효율적으로 보호할 수 있습니다.
 ## 전제조건

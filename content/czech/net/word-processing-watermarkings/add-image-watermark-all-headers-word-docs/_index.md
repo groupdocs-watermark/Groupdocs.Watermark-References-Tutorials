@@ -6,6 +6,9 @@ description: Pomocí GroupDocs.Watermark for .NET můžete snadno přidat vodozn
 weight: 10
 url: /cs/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# Přidat vodoznak obrázku do všech záhlaví v dokumentech aplikace Word
+
 ## Úvod
 Vodoznaky mohou být nezbytnou součástí správy dokumentů a poskytují způsob, jak do dokumentů vkládat informace, jako je vlastnictví, důvěrnost nebo branding. V tomto tutoriálu si projdeme kroky pro přidání vodoznaku obrázku do všech záhlaví v dokumentech aplikace Word pomocí GroupDocs.Watermark for .NET. Ať už jste v programování noví nebo zkušení vývojáři, tato příručka vám pomůže snadno dosáhnout vašich cílů v oblasti vodoznaků.
 ## Předpoklady

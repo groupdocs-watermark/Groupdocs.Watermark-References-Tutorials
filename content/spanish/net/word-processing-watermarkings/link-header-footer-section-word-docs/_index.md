@@ -6,6 +6,9 @@ description: Aprenda a vincular de manera eficiente encabezados y pies de págin
 weight: 26
 url: /es/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Vincular encabezado/pie de página en una sección en documentos de Word
+
 ## Introducción
 En el mundo del desarrollo de .NET, administrar marcas de agua en documentos de Word puede ser una tarea crucial, ya sea que esté protegiendo información confidencial o agregando elementos de marca. Afortunadamente, GroupDocs.Watermark para .NET proporciona una solución poderosa para manejar marcas de agua de manera eficiente. En este tutorial, exploraremos cómo vincular encabezados y pies de página en secciones de documentos de Word usando GroupDocs.Watermark.
 ## Requisitos previos

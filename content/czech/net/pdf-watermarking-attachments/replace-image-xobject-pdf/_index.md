@@ -6,6 +6,9 @@ description: Pomocí tohoto podrobného průvodce můžete snadno nahradit obrá
 weight: 39
 url: /cs/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
+
+# Nahradit obrázek za konkrétní XObject v PDF
+
 ## Úvod
 Vítejte v našem podrobném průvodci, jak nahradit obrázek pro konkrétní XObject v PDF pomocí GroupDocs.Watermark for .NET. Pokud potřebujete spravovat vodoznaky nebo upravovat obsah v souborech PDF, jste na správném místě. Tento výukový program vás provede každým krokem a zajistí, že své dokumenty PDF můžete s jistotou aktualizovat novými obrázky. Pojďme se do toho ponořit!
 ## Předpoklady

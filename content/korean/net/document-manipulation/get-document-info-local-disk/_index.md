@@ -6,6 +6,9 @@ description: 이 포괄적인 단계별 가이드를 통해 GroupDocs for .NET�
 weight: 11
 url: /ko/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# 로컬 디스크에서 문서 정보 가져오기
+
 ## 소개
 .NET용 GroupDocs.Watermark 사용에 대한 최고의 가이드에 오신 것을 환영합니다! 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 문서에서는 이 강력한 도구를 사용하여 문서에 워터마킹을 적용하는 필수 사항을 안내합니다. 결국에는 문서에 워터마크를 삽입하여 문서가 보호되고 사양에 맞게 브랜드화되도록 하는 전문가가 될 것입니다.
 ## 전제조건

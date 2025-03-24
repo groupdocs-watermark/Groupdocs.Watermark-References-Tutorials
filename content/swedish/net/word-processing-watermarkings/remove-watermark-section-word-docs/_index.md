@@ -6,6 +6,9 @@ description: Lär dig hur du tar bort vattenstämplar från specifika avsnitt i 
 weight: 32
 url: /sv/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# Ta bort vattenstämpel från avsnitt i Word Docs
+
 ## Introduktion
 den digitala tidsåldern är det ytterst viktigt att skydda dokumentens integritet, särskilt när det gäller känslig information eller proprietärt innehåll. Vattenmärkning är en vanlig teknik för att hävda ägande, varumärkesidentitet eller helt enkelt ange status för ett dokument. Det finns dock tillfällen där det blir nödvändigt att ta bort vattenstämplar, antingen på grund av redigeringskrav eller integritetsproblem.
 ## Förutsättningar

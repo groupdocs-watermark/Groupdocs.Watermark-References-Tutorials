@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane a pagine specifiche nei documenti 
 weight: 14
 url: /it/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
 ---
+
+# Aggiungi filigrana a una pagina specifica in documenti Word
+
 ## introduzione
 La filigrana dei documenti è un aspetto cruciale della sicurezza e del branding dei documenti. In questo tutorial esploreremo come aggiungere una filigrana a una pagina specifica nei documenti di Word utilizzando GroupDocs.Watermark per .NET.
 ## Prerequisiti

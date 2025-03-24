@@ -6,6 +6,9 @@ description: Könnyedén távolítsa el az XObjects objektumokat meghatározott 
 weight: 36
 url: /hu/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# Távolítsa el az XObjects objektumokat meghatározott szövegformázással a PDF-ben
+
 ## Bevezetés
 dokumentumok vízjelezése alapvető fontosságú a hitelességük biztosításában és az érzékeny információk védelmében. A GroupDocs.Watermark for .NET átfogó megoldást kínál vízjelek hozzáadására, módosítására és eltávolítására különféle dokumentumformátumokból. Ebben az oktatóanyagban megvizsgáljuk, hogyan távolíthat el XObject-eket meghatározott szövegformázással a PDF-dokumentumokból a GroupDocs.Watermark for .NET segítségével.
 ## Előfeltételek

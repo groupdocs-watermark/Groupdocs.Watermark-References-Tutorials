@@ -6,6 +6,9 @@ description: Pelajari cara menghapus bentuk dari dokumen Word menggunakan GroupD
 weight: 30
 url: /id/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
+
+# Hapus Bentuk di Dokumen Word
+
 ## Perkenalan
 Dalam bidang pemrosesan dan manipulasi dokumen, GroupDocs.Watermark untuk .NET muncul sebagai perangkat canggih yang memungkinkan pengembang mengintegrasikan fungsionalitas watermarking ke dalam aplikasi .NET mereka dengan lancar. Artikel ini mempelajari seluk-beluk memanfaatkan GroupDocs.Watermark untuk .NET untuk menghapus bentuk dalam dokumen Word. Dengan mengikuti panduan langkah demi langkah, pengembang dapat memahami prosesnya dengan mudah dan efisien.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 모양 �
 weight: 17
 url: /ko/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Word Docs에서 도형 이미지에 워터마크 추가
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 Word 문서 내의 모양 이미지에 워터마크를 추가하는 방법을 살펴보겠습니다. 워터마킹은 특히 민감하거나 기밀 정보를 다룰 때 문서 보호의 중요한 측면입니다. 모양 이미지에 워터마크를 추가하면 문서의 무결성과 보안을 보장할 수 있습니다.
 ## 전제조건

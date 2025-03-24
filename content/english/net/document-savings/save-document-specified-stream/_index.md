@@ -6,6 +6,9 @@ description: Learn how to save a document to a specified stream using GroupDocs.
 weight: 12
 url: /net/document-savings/save-document-specified-stream/
 ---
+
+# Save Document to Specified Stream
+
 ## Introduction
 Are you looking to master the art of adding watermarks to your documents using GroupDocs.Watermark for .NET? You've come to the right place! In this comprehensive guide, we'll walk you through everything you need to know to successfully save a document to a specified stream after watermarking it. Let's dive in and get started.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Pelajari cara menghapus hyperlink dari dokumen Word menggunakan Gro
 weight: 29
 url: /id/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# Hapus Hyperlink di Word Docs
+
 ## Perkenalan
 Di dunia digital saat ini, di mana informasi mengalir dengan lancar, melindungi dokumen Anda adalah hal yang terpenting. Baik Anda berbagi data bisnis sensitif atau membuat karya agung, melindungi konten Anda dari akses dan manipulasi tidak sah sangatlah penting. Dengan munculnya GroupDocs.Watermark untuk .NET, Anda dapat memastikan integritas dokumen Anda dengan menambahkan, menghapus, dan mendeteksi tanda air dengan mudah.
 ## Prasyarat

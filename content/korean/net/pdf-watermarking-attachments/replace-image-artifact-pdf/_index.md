@@ -6,6 +6,9 @@ description: 이 포괄적인 단계별 자습서를 통해 .NET용 GroupDocs.Wa
 weight: 38
 url: /ko/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# PDF의 특정 아티팩트에 대한 이미지 교체
+
 ## 소개
 문서에 워터마크를 추가하는 것은 문서 보안, 브랜딩 및 저작권 보호를 보장하는 데 필수적인 관행입니다. .NET용 GroupDocs.Watermark를 사용하여 문서 워터마킹의 세계를 탐구하고 싶다면 올바른 위치에 오셨습니다. 이 가이드는 GroupDocs.Watermark 라이브러리를 사용하여 PDF 문서의 이미지를 바꾸는 과정을 안내합니다. 시작하자!
 ## 전제조건

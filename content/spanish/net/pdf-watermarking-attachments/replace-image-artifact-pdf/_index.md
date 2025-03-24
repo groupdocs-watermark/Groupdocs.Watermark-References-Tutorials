@@ -6,6 +6,9 @@ description: Aprenda a reemplazar imágenes en documentos PDF usando GroupDocs.W
 weight: 38
 url: /es/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# Reemplazar imagen por artefacto específico en PDF
+
 ## Introducción
 Agregar marcas de agua a los documentos es una práctica esencial para garantizar la seguridad de los documentos, la marca y la protección de los derechos de autor. Si está buscando profundizar en el mundo de las marcas de agua en documentos utilizando GroupDocs.Watermark para .NET, está en el lugar correcto. Esta guía lo guiará a través del proceso de reemplazo de imágenes en un documento PDF utilizando la biblioteca GroupDocs.Watermark. ¡Empecemos!
 ## Requisitos previos

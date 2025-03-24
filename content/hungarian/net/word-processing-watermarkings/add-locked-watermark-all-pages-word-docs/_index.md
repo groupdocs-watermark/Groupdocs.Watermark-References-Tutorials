@@ -6,6 +6,9 @@ description: Biztosítsa dokumentumait zárolt vízjelek hozzáadásával a Grou
 weight: 11
 url: /hu/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Zárolt vízjel hozzáadása a Word Docs összes oldalához
+
 ## Bevezetés
 A vízjelek hozzáadása a dokumentumokhoz létfontosságú lépés a tartalom biztonságának és márkajelzésének kialakításában. Akár megakadályozza a jogosulatlan használatot, akár egyszerűen csak professzionális hatást ad hozzá, a vízjelek többféle célt szolgálhatnak. Ebben az oktatóanyagban végigvezetjük a zárolt vízjel hozzáadásának folyamatán a Word-dokumentum összes oldalához a Groupdocs.Watermark for .NET segítségével.
 ## Előfeltételek

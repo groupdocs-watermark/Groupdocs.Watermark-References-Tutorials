@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air ke dokumen menggunakan Groupdoc
 weight: 10
 url: /id/net/document-savings/save-document-same-file-stream/
 ---
+
+# Simpan Dokumen ke File atau Aliran yang Sama
+
 ## Perkenalan
 Di era digital saat ini, menambahkan tanda air ke dokumen menjadi hal yang penting untuk melindungi kekayaan intelektual dan memastikan integritas merek. Groupdocs.Watermark untuk .NET menawarkan solusi tangguh bagi pengembang yang ingin menyematkan tanda air ke dalam dokumen dengan lancar. Panduan komprehensif ini akan memandu Anda melalui langkah-langkah menyimpan dokumen dengan tanda air ke file atau aliran yang sama menggunakan Groupdocs.Watermark untuk .NET.
 ## Prasyarat

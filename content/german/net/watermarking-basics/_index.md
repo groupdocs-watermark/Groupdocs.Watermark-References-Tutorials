@@ -6,6 +6,9 @@ description: Entdecken Sie GroupDocs.Watermark für .NET-Tutorials zum mühelose
 weight: 20
 url: /de/net/watermarking-basics/
 ---
+
+# Grundlagen des Wasserzeichens
+
 ## Einführung
 Das Anbringen von Wasserzeichen ist eine entscheidende Technik zum Schutz Ihrer Dokumente und zur Durchsetzung Ihrer Eigentumsrechte. GroupDocs.Watermark für .NET vereinfacht diesen Prozess und bietet robuste Tools zum Hinzufügen von Bild- und Textwasserzeichen. Ganz gleich, ob Sie mit Wasserzeichen noch nicht vertraut sind oder Ihre Fähigkeiten verbessern möchten, diese Tutorials führen Sie durch die Grundlagen.
 

@@ -6,6 +6,9 @@ description: Bez námahy propojte záhlaví a zápatí v dokumentech aplikace Wo
 weight: 25
 url: /cs/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Propojit všechna záhlaví/zápatí v oddílech v dokumentech Word
+
 ## Úvod
 Při práci s dokumenty aplikace Word je často nutné propojit záhlaví a zápatí napříč různými sekcemi pro konzistenci a soudržnost. Tento tutoriál vás provede procesem krok za krokem pomocí GroupDocs.Watermark for .NET.
 ## Importovat jmenné prostory

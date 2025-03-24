@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo zastępować obrazy kształtów w doku
 weight: 33
 url: /pl/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# Zamień obraz kształtu w dokumentach programu Word
+
 ## Wstęp
 obszarze tworzenia oprogramowania, zwłaszcza w środowisku .NET, sprawna i bezpieczna obsługa dokumentów jest kluczowa. Wśród niezliczonej liczby zadań, z którymi często spotykają się programiści, jednym z częstych wyzwań jest programowe zastępowanie obrazów kształtów w dokumentach programu Word. Bez odpowiednich narzędzi i bibliotek może to być żmudne zadanie.
 Na szczęście GroupDocs oferuje potężne rozwiązanie w postaci GroupDocs.Watermark dla .NET, wszechstronnej biblioteki przeznaczonej do obsługi znaków wodnych i manipulowania znakami wodnymi w różnych formatach dokumentów, w tym w dokumentach Word. W tym samouczku omówimy krok po kroku proces zastępowania obrazów kształtów w dokumentach programu Word przy użyciu narzędzia GroupDocs.Watermark dla platformy .NET.

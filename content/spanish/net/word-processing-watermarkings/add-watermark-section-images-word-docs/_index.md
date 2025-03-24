@@ -6,6 +6,9 @@ description: Aprenda a agregar marcas de agua a imágenes en documentos de Word 
 weight: 16
 url: /es/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Agregar marca de agua a imágenes de sección en documentos de Word
+
 ## Introducción
 En el mundo digital actual, proteger sus documentos es esencial. Agregar marcas de agua a sus documentos de Word es una forma sencilla pero eficaz de proteger su contenido. Este tutorial lo guiará a través del proceso de agregar marcas de agua a imágenes de sección en documentos de Word usando Groupdocs.Watermark para .NET. Si es un desarrollador que busca integrar esta función en su aplicación o simplemente desea proteger sus documentos, esta guía es para usted.
 ## Requisitos previos

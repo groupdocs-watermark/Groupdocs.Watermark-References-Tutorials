@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 使用個人化浮水印保護�
 weight: 18
 url: /zh-hant/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# 在 PDF 中的圖像工件添加浮水印
+
 ## 介紹
 在本教學中，我們將引導您完成使用 GroupDocs.Watermark for .NET 為 PDF 文件中的影像工件新增浮水印的流程。透過執行以下步驟，您可以使用個人化浮水印有效保護您的 PDF 檔案。
 ## 先決條件

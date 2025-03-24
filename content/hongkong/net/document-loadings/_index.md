@@ -6,6 +6,9 @@ description: 探索 GroupDocs.Watermark for .NET 教學來載入文件並為其�
 weight: 22
 url: /zh-hant/net/document-loadings/
 ---
+
+# 文件載入
+
 ## 介紹
 如果您是一位希望增強文件安全性和品牌形象的開發人員，那麼 GroupDocs.Watermark for .NET 就是您需要的工具。我們的綜合教學將引導您完成載入各種類型的文件並為其添加浮水印的過程。讓我們深入研究一些有助於您掌握此工具的基本教學。
 

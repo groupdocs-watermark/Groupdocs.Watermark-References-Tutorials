@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 高效搜索 PDF 附件中的�
 weight: 46
 url: /zh/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---
+
+# 搜索 PDF 附件中的图像
+
 ## 介绍
 GroupDocs.Watermark for .NET 是一个功能强大的 API，旨在促进各种文档格式（包括 PDF）的水印的无缝操作和管理。无论您需要在 PDF 附件中添加、删除还是搜索水印，这款多功能工具都能提供全面的解决方案。
 ## 先决条件

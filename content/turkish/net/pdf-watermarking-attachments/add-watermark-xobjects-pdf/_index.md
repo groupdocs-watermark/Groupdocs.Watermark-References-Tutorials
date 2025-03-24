@@ -6,6 +6,9 @@ description: Groupdocs.Watermark for .NET'i kullanarak PDF'deki XObjects'e nası
 weight: 20
 url: /tr/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# PDF'deki XObjects'e Filigran Ekleme
+
 ## giriiş
 PDF'lere filigran eklemek, belgelerinizin yetkisiz kullanıma karşı korunmasını sağlamak için çok önemli bir adımdır. Groupdocs.Watermark for .NET ile PDF'lerinizdeki XObject'lere filigran eklemek hiç bu kadar kolay olmamıştı. Bu eğitimde, filigranları PDF belgelerinize güvenle uygulayabilmenizi sağlamak için süreç boyunca size adım adım yol göstereceğiz. Başlayalım!
 ## Önkoşullar

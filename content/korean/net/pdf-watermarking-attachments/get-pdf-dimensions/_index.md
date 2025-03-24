@@ -6,6 +6,9 @@ description: .NET용 Groupdocs.Watermark를 사용하여 문서를 쉽게 보호
 weight: 26
 url: /ko/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---
+
+# PDF 치수 가져오기
+
 ## 소개
 오늘날의 디지털 시대에는 문서를 보호하는 것이 무엇보다 중요합니다. 귀하가 비즈니스 전문가이건, 법률 전문가이건, 창의적인 예술가이건 간에 귀하의 지적 재산을 보호하는 것은 필수적입니다. .NET용 Groupdocs.Watermark는 문서에 워터마크, 스탬프 및 주석을 추가하여 문서의 보안과 신뢰성을 보장하는 강력한 솔루션을 제공합니다.
 ## 전제조건

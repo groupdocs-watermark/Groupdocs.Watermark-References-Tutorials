@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air ke XObjects di PDF menggunakan 
 weight: 20
 url: /id/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# Tambahkan Tanda Air ke XObjects di PDF
+
 ## Perkenalan
 Memberi tanda air pada PDF adalah langkah penting untuk memastikan dokumen Anda terlindungi dari penggunaan yang tidak sah. Dengan Groupdocs.Watermark untuk .NET, menambahkan tanda air ke XObjects dalam PDF Anda tidak pernah semudah ini. Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah, memastikan Anda dapat dengan percaya diri menerapkan tanda air ke dokumen PDF Anda. Mari kita mulai!
 ## Prasyarat

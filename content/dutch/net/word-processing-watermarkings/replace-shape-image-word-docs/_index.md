@@ -6,6 +6,9 @@ description: Leer hoe u vormafbeeldingen in Word-documenten programmatisch verva
 weight: 33
 url: /nl/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# Vervang vormafbeelding in Word-documenten
+
 ## Invoering
 Op het gebied van softwareontwikkeling, vooral in de .NET-omgeving, is het efficiënt en veilig omgaan met documentmanipulatie van cruciaal belang. Onder de talloze taken waarmee ontwikkelaars vaak worden geconfronteerd, is een veel voorkomende uitdaging het programmatisch vervangen van vormafbeeldingen in Word-documenten. Dit kan een vervelende taak zijn zonder de juiste tools en bibliotheken.
 Gelukkig biedt GroupDocs een krachtige oplossing in de vorm van GroupDocs.Watermark voor .NET, een veelzijdige bibliotheek die is ontworpen voor het verwerken van watermerken en het manipuleren van watermerken binnen verschillende documentformaten, waaronder Word-documenten. In deze zelfstudie gaan we dieper in op het stapsgewijze proces van het vervangen van vormafbeeldingen in Word-documenten met GroupDocs.Watermark voor .NET.

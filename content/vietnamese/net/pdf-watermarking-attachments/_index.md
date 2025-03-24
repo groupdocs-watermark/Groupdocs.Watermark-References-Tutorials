@@ -6,6 +6,9 @@ description: Khám phá GroupDocs.Watermark để biết các hướng dẫn .NE
 weight: 25
 url: /vi/net/pdf-watermarking-attachments/
 ---
+
+# Hình mờ và đính kèm PDF
+
 ## Giới thiệu
 
 Bạn đang tìm cách cải thiện tệp PDF của mình bằng hình mờ và quản lý tệp đính kèm một cách hiệu quả? GroupDocs.Watermark dành cho .NET cung cấp một bộ hướng dẫn toàn diện để giúp bạn nắm vững các tác vụ này. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, hướng dẫn từng bước của chúng tôi sẽ giúp quá trình này trở nên đơn giản và hiệu quả. Hãy cùng khám phá một số hướng dẫn cần thiết để giúp bạn bắt đầu cải thiện tài liệu PDF của mình.

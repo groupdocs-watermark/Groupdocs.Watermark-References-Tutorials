@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して Word 文書内の図�
 weight: 37
 url: /ja/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Word ドキュメントでの図形タイプの使用法
+
 ## 導入
 このチュートリアルでは、GroupDocs.Watermark for .NET を使用して Word 文書で図形タイプを利用する方法を検討します。 Word 文書の形状はさまざまであるため、その操作方法を理解することは、さまざまな文書処理タスクにとって重要です。
 ## 前提条件

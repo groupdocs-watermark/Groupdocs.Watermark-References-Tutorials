@@ -6,6 +6,9 @@ description: Naučte se přidávat, odebírat a extrahovat vodoznaky v dokumente
 weight: 11
 url: /cs/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# Získejte informace o dokumentu z místního disku
+
 ## Úvod
 Vítejte v dokonalém průvodci používáním GroupDocs.Watermark pro .NET! Ať už jste zkušený vývojář nebo teprve začínáte, tento článek vás provede základy vodoznaku dokumentů pomocí tohoto výkonného nástroje. Nakonec budete profesionálem ve vkládání vodoznaků do vašich dokumentů, abyste zajistili, že budou chráněny a označeny podle vašich specifikací.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Leer hoe u watermerken met vorminstellingen aan Word-documenten kun
 weight: 20
 url: /nl/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Voeg een watermerk toe met vorminstellingen in Word-documenten
+
 ## Invoering
 In deze zelfstudie doorlopen we het proces van het toevoegen van een watermerk met vorminstellingen aan Word-documenten met behulp van GroupDocs.Watermark voor .NET.
 ## Vereisten

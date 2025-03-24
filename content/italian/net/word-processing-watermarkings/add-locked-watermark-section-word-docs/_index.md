@@ -6,6 +6,9 @@ description: Scopri come aggiungere una filigrana bloccata a una sezione specifi
 weight: 13
 url: /it/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Aggiungi filigrana bloccata alla sezione in documenti Word
+
 ## introduzione
 Stai cercando un modo efficace per aggiungere una filigrana bloccata a una sezione dei tuoi documenti Word? Non guardare oltre! Con Groupdocs.Watermark per .NET, puoi inserire facilmente filigrane nei documenti Word assicurandoti che rimangano bloccati e a prova di manomissione. Questo potente strumento offre una varietà di funzionalità per soddisfare le tue esigenze di filigrana, sia per scopi di branding, riservatezza o sicurezza. In questo tutorial passo passo ti spiegheremo come aggiungere una filigrana bloccata a una sezione specifica di un documento Word utilizzando Groupdocs.Watermark per .NET. Immergiamoci!
 ## Prerequisiti

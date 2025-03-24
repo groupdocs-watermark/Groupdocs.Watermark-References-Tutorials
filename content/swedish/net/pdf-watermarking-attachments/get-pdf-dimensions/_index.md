@@ -6,6 +6,9 @@ description: Skydda dina dokument enkelt med Groupdocs.Watermark för .NET. Läg
 weight: 26
 url: /sv/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---
+
+# Hämta PDF-mått
+
 ## Introduktion
 dagens digitala tidsålder är det viktigt att skydda dina dokument. Oavsett om du är en affärsman, en juridisk expert eller en kreativ konstnär, är det viktigt att skydda din immateriella egendom. Groupdocs.Watermark för .NET erbjuder en robust lösning för att lägga till vattenstämplar, stämplar och anteckningar till dina dokument, vilket säkerställer deras säkerhet och äkthet.
 ## Förutsättningar

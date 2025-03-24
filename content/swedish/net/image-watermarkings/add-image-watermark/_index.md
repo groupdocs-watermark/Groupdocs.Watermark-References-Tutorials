@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till bildvattenstämplar i dina dokument me
 weight: 11
 url: /sv/net/image-watermarkings/add-image-watermark/
 ---
+
+# Lägg till bildvattenstämpel
+
 ## Introduktion
 Välkommen till den här omfattande guiden för att lägga till bildvattenstämplar med GroupDocs.Watermark för .NET! Vattenmärkning är ett kraftfullt sätt att skydda dina dokument och bilder från obehörig användning, vilket säkerställer att din immateriella egendom förblir säker. I den här handledningen går vi igenom hela processen, från att ställa in din miljö till att applicera en vattenstämpel på dina dokument. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer du att tycka att den här guiden är användbar och lätt att följa.
 ## Förutsättningar

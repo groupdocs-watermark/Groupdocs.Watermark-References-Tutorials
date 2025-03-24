@@ -6,6 +6,9 @@ description: Lindungi dokumen Anda dengan mudah menggunakan Groupdocs.Watermark 
 weight: 26
 url: /id/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---
+
+# Dapatkan Dimensi PDF
+
 ## Perkenalan
 Di era digital saat ini, menjaga keamanan dokumen Anda adalah hal yang terpenting. Baik Anda seorang profesional bisnis, pakar hukum, atau seniman kreatif, melindungi kekayaan intelektual Anda sangatlah penting. Groupdocs.Watermark untuk .NET menawarkan solusi tangguh untuk menambahkan tanda air, stempel, dan anotasi ke dokumen Anda, memastikan keamanan dan keasliannya.
 ## Prasyarat

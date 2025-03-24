@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 取代 Word 文件�
 weight: 35
 url: /zh-hant/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---
+
+# 在 Word 文件中取代特定形狀的文本
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Watermark for .NET 取代 Word 文件中特定形狀的文字。 GroupDocs.Watermark for .NET 是一個功能強大的程式庫，提供了廣泛的功能來處理各種文件格式（包括 Word 文件）的浮水印。
 ## 先決條件

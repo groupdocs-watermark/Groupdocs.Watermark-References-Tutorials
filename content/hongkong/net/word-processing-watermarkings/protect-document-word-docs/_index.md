@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 保護 Word 文件�
 weight: 28
 url: /zh-hant/net/word-processing-watermarkings/protect-document-word-docs/
 ---
+
+# 保護 Word 文件中的文檔
+
 ## 介紹
 在本教學中，我們將引導您完成使用 GroupDocs.Watermark for .NET 保護 Word 文件中的文件的流程。透過執行這些步驟，您將能夠為 Word 文件添加一層安全性保護，防止未經授權的存取和修改。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Tăng cường bảo mật tài liệu với GroupDocs cho .NET. Th
 weight: 28
 url: /vi/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---
+
+# Rasterize trang PDF
+
 ## Giới thiệu
 GroupDocs.Watermark dành cho .NET là một API mạnh mẽ cho phép các nhà phát triển thêm hình mờ vào các định dạng tài liệu khác nhau một cách liền mạch, bao gồm PDF, Word, Excel, PowerPoint, v.v. Với giao diện trực quan và các tính năng mở rộng, GroupDocs.Watermark đơn giản hóa quá trình thêm hình mờ văn bản hoặc hình ảnh vào tài liệu, cho phép người dùng bảo vệ tài sản trí tuệ của họ và tăng cường bảo mật tài liệu một cách dễ dàng.
 ## Điều kiện tiên quyết

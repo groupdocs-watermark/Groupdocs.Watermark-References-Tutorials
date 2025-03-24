@@ -6,6 +6,9 @@ description: 使用 Groupdocs.Watermark for .NET 添加锁定水印来保护您�
 weight: 11
 url: /zh/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# 向 Word 文档中的所有页面添加锁定水印
+
 ## 介绍
 向文档添加水印是保护内容并打造品牌的重要一步。无论您是要防止未经授权的使用还是只是添加专业风格，水印都可以发挥多种作用。在本教程中，我们将引导您完成使用 Groupdocs.Watermark for .NET 将锁定水印添加到 Word 文档的所有页面的过程。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Länka sidhuvuden och sidfötter enkelt i Word-dokument med GroupDo
 weight: 25
 url: /sv/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Länka alla sidhuvuden/sidfötter i avsnitt i Word Docs
+
 ## Introduktion
 När du arbetar med Word-dokument är det ofta nödvändigt att länka sidhuvuden och sidfötter över olika avsnitt för konsekvens och sammanhållning. Denna handledning guidar dig genom processen steg för steg med GroupDocs.Watermark för .NET.
 ## Importera namnområden

@@ -6,6 +6,9 @@ description: Khám phá các hướng dẫn GroupDocs.Watermark for .NET để t
 weight: 22
 url: /vi/net/document-loadings/
 ---
+
+# Đang tải tài liệu
+
 ## Giới thiệu
 Nếu bạn là nhà phát triển đang tìm cách nâng cao tính bảo mật và thương hiệu cho tài liệu của mình thì GroupDocs.Watermark dành cho .NET là công cụ bạn cần. Các hướng dẫn toàn diện của chúng tôi sẽ hướng dẫn bạn qua quá trình tải và đóng dấu các loại tài liệu khác nhau. Hãy cùng đi sâu vào một số hướng dẫn cần thiết để giúp bạn thành thạo công cụ này.
 

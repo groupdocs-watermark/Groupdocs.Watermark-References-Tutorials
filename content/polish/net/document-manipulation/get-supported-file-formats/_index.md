@@ -6,6 +6,9 @@ description: Bez wysiłku dodawaj znaki wodne do swoich dokumentów za pomocą G
 weight: 13
 url: /pl/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Uzyskaj obsługiwane formaty plików
+
 ## Wstęp
 Znak wodny dokumentów to kluczowy krok w zabezpieczaniu zasobów cyfrowych. Niezależnie od tego, czy chodzi o ochronę własności intelektualnej, zapewnienie poufności, czy po prostu budowanie marki, znaki wodne odgrywają kluczową rolę. Jeśli jesteś programistą .NET i chcesz zintegrować funkcje znaku wodnego ze swoimi aplikacjami, GroupDocs.Watermark dla .NET to potężne i wszechstronne narzędzie, które powinieneś wziąć pod uwagę. Ten samouczek poprowadzi Cię przez podstawowe informacje dotyczące korzystania z GroupDocs.Watermark, od instalacji po nałożenie pierwszego znaku wodnego, z podziałem na poszczególne kroki, abyś mógł łatwo wykonać wszystkie kroki.
 ## Warunki wstępne

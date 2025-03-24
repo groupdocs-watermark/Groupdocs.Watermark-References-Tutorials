@@ -6,6 +6,9 @@ description: Verbeter uw .NET-documentbeheermogelijkheden met GroupDocs.Watermar
 weight: 12
 url: /nl/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---
+
+# Bijlage toevoegen aan PDF
+
 ## Invoering
 Op het gebied van .NET-ontwikkeling onderscheidt GroupDocs.Watermark zich als een krachtig hulpmiddel voor het beheren van watermerken, annotaties en meer binnen verschillende documentformaten. Of u nu met PDF's, Word-documenten of afbeeldingen werkt, GroupDocs.Watermark voor .NET biedt een naadloze integratie waarmee ontwikkelaars documenten gemakkelijk kunnen manipuleren.
 ## Vereisten

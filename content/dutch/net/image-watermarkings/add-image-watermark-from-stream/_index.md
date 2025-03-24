@@ -6,6 +6,9 @@ description: Leer hoe u afbeeldingswatermerken aan documenten kunt toevoegen met
 weight: 12
 url: /nl/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# Voeg afbeeldingswatermerk toe vanuit stream
+
 ## Invoering
 Op het gebied van documentbeheer en beveiliging is het opnemen van watermerken in bestanden van het allergrootste belang. Of het nu gaat om branding, auteursrechtbescherming of het behoud van documentintegriteit, watermerken spelen een cruciale rol. Gelukkig biedt GroupDocs.Watermark voor .NET een robuuste oplossing voor het toevoegen, verwijderen en zoeken van watermerken in verschillende documentformaten.
 ## Vereisten

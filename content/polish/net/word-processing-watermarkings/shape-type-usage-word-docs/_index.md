@@ -6,6 +6,9 @@ description: Dowiedz się, jak manipulować kształtami w dokumentach programu W
 weight: 37
 url: /pl/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Użycie typu kształtu w dokumentach programu Word
+
 ## Wstęp
 W tym samouczku omówimy, jak wykorzystywać typy kształtów w dokumentach programu Word przy użyciu programu GroupDocs.Watermark dla platformy .NET. Kształty w dokumentach programu Word mogą się różnić, a zrozumienie sposobu manipulowania nimi może mieć kluczowe znaczenie w przypadku różnych zadań związanych z przetwarzaniem dokumentów.
 ## Warunki wstępne

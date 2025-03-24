@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air ke dokumen menggunakan GroupDoc
 weight: 11
 url: /id/net/document-loadings/load-document-from-stream/
 ---
+
+# Muat Dokumen dari Aliran
+
 ## Perkenalan
 Apakah Anda ingin menambahkan tanda air ke dokumen Anda dengan lancar menggunakan .NET? Tidak perlu mencari lagi! GroupDocs.Watermark for .NET adalah perpustakaan yang kuat dan mudah digunakan yang memungkinkan Anda mengelola tanda air dalam berbagai format dokumen. Baik Anda bekerja dengan PDF, dokumen Word, atau gambar, alat ini siap membantu Anda. Dalam tutorial ini, kami akan memandu Anda melalui proses memuat dokumen dari aliran dan menambahkan tanda air langkah demi langkah. Jadi, mari selami!
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Leer hoe u watermerken aan PDF-bijlagen kunt toevoegen met GroupDoc
 weight: 16
 url: /nl/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# Voeg een watermerk toe aan alle bijlagen in PDF
+
 ## Invoering
 Het toevoegen van watermerken aan PDF-bijlagen kan een cruciale stap zijn in documentbeheer, vooral als het gaat om het garanderen van beveiliging of branding. GroupDocs.Watermark voor .NET biedt een uitgebreide oplossing voor het naadloos insluiten van watermerken in PDF-bestanden. In deze zelfstudie begeleiden we u bij het toevoegen van een watermerk aan alle bijlagen in een PDF-document met GroupDocs.Watermark voor .NET.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Protégez vos fichiers PDF avec des filigranes personnalisés à l'
 weight: 18
 url: /fr/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# Ajouter un filigrane aux artefacts d’image dans un PDF
+
 ## Introduction
 Dans ce didacticiel, nous vous guiderons tout au long du processus d'ajout d'un filigrane aux artefacts d'image dans un document PDF à l'aide de GroupDocs.Watermark pour .NET. En suivant ces étapes, vous pouvez protéger efficacement vos fichiers PDF avec des filigranes personnalisés.
 ## Conditions préalables

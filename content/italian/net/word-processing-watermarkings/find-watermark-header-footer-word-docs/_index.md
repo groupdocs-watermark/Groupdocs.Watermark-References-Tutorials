@@ -6,6 +6,9 @@ description: Scopri come trovare e rimuovere in modo efficiente le filigrane dai
 weight: 22
 url: /it/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Trova filigrana nell'intestazione/piè di pagina nei documenti Word
+
 ## introduzione
 Nel mondo della gestione e protezione dei documenti, il watermarking gioca un ruolo fondamentale. Che si tratti di scopi di branding, protezione del copyright o tracciamento dei documenti, aggiungere filigrane ai tuoi documenti è essenziale. Tuttavia, trovare e rimuovere le filigrane in modo efficiente, soprattutto in set di documenti di grandi dimensioni, può essere un compito arduo. È qui che entra in gioco GroupDocs.Watermark per .NET. In questo tutorial, approfondiremo come trovare filigrane nelle intestazioni e nei piè di pagina dei documenti Word utilizzando GroupDocs.Watermark per .NET, suddividendo ogni passaggio per garantire una comprensione completa.
 ## Prerequisiti

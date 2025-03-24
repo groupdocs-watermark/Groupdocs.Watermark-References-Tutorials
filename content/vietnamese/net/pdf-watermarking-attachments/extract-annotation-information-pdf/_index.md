@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất thông tin chú thích từ tài li
 weight: 23
 url: /vi/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
+
+# Trích xuất thông tin chú thích từ PDF
+
 ## Giới thiệu
 Bạn có thường thấy mình cần trích xuất thông tin chú thích chi tiết từ tài liệu PDF của mình không? Cho dù bạn là nhà phát triển làm việc trên hệ thống quản lý tài liệu hay chuyên gia kinh doanh xử lý nhiều tệp PDF, việc trích xuất và xử lý chú thích một cách hiệu quả có thể rất quan trọng. Với GroupDocs.Watermark dành cho .NET, bạn có sẵn một bộ công cụ mạnh mẽ để thực hiện nhiệm vụ này một cách đơn giản và hiệu quả.
 ## Điều kiện tiên quyết

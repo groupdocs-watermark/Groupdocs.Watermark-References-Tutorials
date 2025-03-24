@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、PDF ドキュメン�
 weight: 10
 url: /ja/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# 注釈の透かしを PDF に追加する
+
 ## 導入
 文書管理の分野では、PDF ファイルに透かしを追加することは、特にブランド化、セキュリティ、文書識別の目的で重要な側面として機能します。 GroupDocs.Watermark for .NET は、PDF を含むさまざまなドキュメント形式へのウォーターマークのシームレスな統合を容易にする強力なライブラリです。このチュートリアルでは、GroupDocs.Watermark for .NET が提供する機能を利用して、PDF ドキュメントに注釈ウォーターマークを追加するプロセスを段階的に詳しく説明します。
 ## 前提条件

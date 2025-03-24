@@ -6,6 +6,9 @@ description: Effortlessly add image watermarks to your documents using GroupDocs
 weight: 10
 url: /net/watermarking-basics/add-image-watermark/
 ---
+
+# Add Image Watermark
+
 ## Introduction
 In this tutorial, we'll delve into the process of adding an image watermark to your documents using GroupDocs.Watermark for .NET. Watermarking documents is essential for protecting intellectual property and branding. With GroupDocs.Watermark for .NET, you can seamlessly integrate watermarks into various document formats such as Word, Excel, PowerPoint, PDF, and many more.
 ## Prerequisites

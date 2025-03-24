@@ -6,6 +6,9 @@ description: 이 상세한 단계별 가이드에서 .NET용 GroupDocs.Watermark
 weight: 23
 url: /ko/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
+
+# PDF에서 주석 정보 추출
+
 ## 소개
 PDF 문서에서 자세한 주석 정보를 추출해야 하는 경우가 자주 있습니까? 문서 관리 시스템을 작업하는 개발자이거나 수많은 PDF를 처리하는 비즈니스 전문가라면 주석을 효율적으로 추출하고 처리하는 것이 중요할 수 있습니다. .NET용 GroupDocs.Watermark를 사용하면 이 작업을 간단하고 효율적으로 수행할 수 있는 강력한 도구 키트를 사용할 수 있습니다.
 ## 전제조건

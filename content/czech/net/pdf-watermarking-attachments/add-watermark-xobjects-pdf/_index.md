@@ -6,6 +6,9 @@ description: Naučte se přidávat vodoznaky do XObjects v PDF pomocí Groupdocs
 weight: 20
 url: /cs/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# Přidejte vodoznak do XObjects v PDF
+
 ## Úvod
 Vodoznak PDF je zásadním krokem k zajištění ochrany vašich dokumentů před neoprávněným použitím. S Groupdocs.Watermark for .NET nebylo přidávání vodoznaků do XObjects v rámci vašich PDF nikdy jednodušší. V tomto tutoriálu vás provedeme procesem krok za krokem a zajistíme, že můžete s jistotou použít vodoznaky na své dokumenty PDF. Začněme!
 ## Předpoklady

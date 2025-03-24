@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak belgelerinize zahmetsizce
 weight: 10
 url: /tr/net/watermarking-basics/add-image-watermark/
 ---
+
+# Resim Filigranı Ekle
+
 ## giriiş
 Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak belgelerinize görüntü filigranı ekleme sürecini ayrıntılı olarak ele alacağız. Filigranlama belgeleri, fikri mülkiyetin ve markalaşmanın korunması için gereklidir. GroupDocs.Watermark for .NET ile filigranları Word, Excel, PowerPoint, PDF ve çok daha fazlası gibi çeşitli belge formatlarına sorunsuz bir şekilde entegre edebilirsiniz.
 ## Önkoşullar

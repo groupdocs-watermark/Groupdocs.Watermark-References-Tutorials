@@ -6,6 +6,9 @@ description: Naučte se, jak nastavit různá záhlaví a zápatí na první str
 weight: 36
 url: /cs/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Nastavit jiné záhlaví/zápatí první stránky v Dokumentech aplikace Word
+
 ## Úvod
 oblasti správy a manipulace s dokumenty se GroupDocs.Watermark for .NET ukazuje jako výkonný nástroj, který nabízí bezproblémovou integraci a robustní funkce pro vodoznaky dokumentů. Jedním z běžných požadavků při zpracování dokumentů je nastavení různých záhlaví a zápatí na první stránce dokumentů aplikace Word. Tento tutoriál objasní proces dosažení tohoto úkolu pomocí GroupDocs.Watermark for .NET, přičemž každý krok rozdělí do snadno srozumitelných segmentů.
 ## Předpoklady

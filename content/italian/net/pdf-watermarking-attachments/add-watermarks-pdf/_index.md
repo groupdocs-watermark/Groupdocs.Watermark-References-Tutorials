@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane di testo e immagini ai tuoi PDF ut
 weight: 14
 url: /it/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---
+
+# Aggiungi filigrane al PDF
+
 ## introduzione
 Stai cercando di aggiungere filigrane ai tuoi PDF per proteggere i tuoi documenti o marchiarli con il tuo logo? Non guardare oltre! In questo tutorial, approfondiremo il processo di utilizzo di GroupDocs.Watermark per .NET per aggiungere filigrane di testo e immagini ai tuoi file PDF. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questa guida ti guiderà attraverso ogni passaggio, assicurandoti di poter applicare le filigrane con facilità e precisione.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: Leer hoe u een vergrendeld watermerk aan specifieke pagina's in Wor
 weight: 12
 url: /nl/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Voeg een vergrendeld watermerk toe aan specifieke pagina's in Word-documenten
+
 ## Invoering
 Wilt u een watermerk toevoegen aan specifieke pagina's in uw Word-documenten, maar wilt u dat dit wordt vergrendeld zodat het niet gemakkelijk kan worden verwijderd of bewerkt? Je bent op de juiste plek! In deze zelfstudie begeleiden we u bij het toevoegen van een vergrendeld watermerk aan specifieke pagina's in Word-documenten met behulp van GroupDocs.Watermark voor .NET. Met deze krachtige bibliotheek kunt u eenvoudig watermerken op verschillende documenttypen toepassen, beheren en aanpassen. Of u nu een ontwikkelaar bent of gewoon iemand die zijn documenten moet beveiligen, deze handleiding leidt u op een eenvoudige manier door elke stap.
 ## Vereisten

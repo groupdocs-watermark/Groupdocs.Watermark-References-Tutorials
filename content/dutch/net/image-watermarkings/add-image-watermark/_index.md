@@ -6,6 +6,9 @@ description: Leer hoe u afbeeldingswatermerken aan uw documenten kunt toevoegen 
 weight: 11
 url: /nl/net/image-watermarkings/add-image-watermark/
 ---
+
+# Voeg afbeeldingswatermerk toe
+
 ## Invoering
 Welkom bij deze uitgebreide handleiding over het toevoegen van afbeeldingswatermerken met GroupDocs.Watermark voor .NET! Watermerken zijn een krachtige manier om uw documenten en afbeeldingen te beschermen tegen ongeoorloofd gebruik, zodat uw intellectuele eigendom veilig blijft. In deze zelfstudie begeleiden we u door het hele proces, van het instellen van uw omgeving tot het aanbrengen van een watermerk op uw documenten. Of u nu een doorgewinterde ontwikkelaar bent of net begint, u zult deze handleiding nuttig en gemakkelijk te volgen vinden.
 ## Vereisten

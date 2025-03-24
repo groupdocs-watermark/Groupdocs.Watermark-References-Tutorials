@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane di annotazioni di sola stampa ai P
 weight: 13
 url: /it/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---
+
+# Aggiungi filigrana di annotazione di sola stampa al PDF
+
 ## introduzione
 In questo tutorial, approfondiremo il processo di aggiunta di una filigrana di annotazione di sola stampa a un PDF utilizzando GroupDocs.Watermark per .NET. L'applicazione della filigrana ai documenti è un aspetto cruciale della sicurezza e del branding dei documenti e GroupDocs.Watermark fornisce una soluzione perfetta per gli sviluppatori .NET per raggiungere questo obiettivo.
 ## Prerequisiti

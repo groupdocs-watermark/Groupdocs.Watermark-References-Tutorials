@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane di artefatti ai file PDF senza sfo
 weight: 11
 url: /it/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# Aggiungi filigrana artefatto al PDF
+
 ## introduzione
 L'aggiunta di filigrane ai file PDF è un aspetto cruciale della gestione dei documenti, soprattutto quando si tratta di proteggere la proprietà intellettuale o i documenti di branding. Groupdocs.Watermark per .NET fornisce una soluzione solida per aggiungere filigrane ai file PDF senza sforzo. In questo tutorial, esamineremo passo dopo passo il processo di aggiunta di una filigrana artefatto ai file PDF.
 ## Prerequisiti

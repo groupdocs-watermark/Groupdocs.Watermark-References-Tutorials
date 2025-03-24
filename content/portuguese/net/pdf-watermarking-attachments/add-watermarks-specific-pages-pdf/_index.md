@@ -6,6 +6,9 @@ description: Aprenda a adicionar marcas d'água de texto e imagem a páginas esp
 weight: 15
 url: /pt/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# Adicione marcas d'água a páginas específicas em PDF
+
 ## Introdução
 Adicionar marcas d’água aos seus documentos PDF é uma etapa crucial para proteger seu conteúdo e afirmar sua propriedade. Esteja você marcando um rascunho, protegendo informações confidenciais ou simplesmente adicionando uma marca, as marcas d'água são uma ferramenta eficaz. Neste tutorial, exploraremos como usar Groupdocs.Watermark for .NET para adicionar marcas d'água de texto e imagem a páginas específicas em seus arquivos PDF. Dividiremos o processo em etapas gerenciáveis, garantindo que você possa acompanhar e implementar esses recursos em seus projetos.
 ## Pré-requisitos

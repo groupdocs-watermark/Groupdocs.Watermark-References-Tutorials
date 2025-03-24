@@ -6,6 +6,9 @@ description: Découvrez comment enregistrer un document dans un flux spécifié 
 weight: 12
 url: /fr/net/document-savings/save-document-specified-stream/
 ---
+
+# Enregistrer le document dans le flux spécifié
+
 ## Introduction
 Cherchez-vous à maîtriser l’art de l’ajout de filigranes à vos documents à l’aide de GroupDocs.Watermark pour .NET ? Vous êtes arrivé au bon endroit! Dans ce guide complet, nous vous expliquerons tout ce que vous devez savoir pour réussir à enregistrer un document dans un flux spécifié après l'avoir filigrané. Allons-y et commençons.
 ## Conditions préalables

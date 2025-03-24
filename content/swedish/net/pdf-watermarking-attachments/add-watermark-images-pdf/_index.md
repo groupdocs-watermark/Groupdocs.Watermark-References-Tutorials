@@ -6,6 +6,9 @@ description: Lär dig att lägga till vattenstämplar till bilder i PDF-dokument
 weight: 19
 url: /sv/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# Lägg till vattenstämpel till bilder i PDF
+
 ## Introduktion
 Att lägga till vattenstämplar till bilder i ett PDF-dokument kan vara avgörande för att skydda din immateriella egendom eller för att säkerställa äktheten hos dina dokument. Genom att använda GroupDocs.Watermark för .NET kan denna uppgift utföras effektivt och enkelt. Denna handledning guidar dig genom varje steg i processen, från att ställa in din miljö till att lägga till vattenstämplar till att spara det slutliga dokumentet. Låt oss dyka in!
 ## Förutsättningar

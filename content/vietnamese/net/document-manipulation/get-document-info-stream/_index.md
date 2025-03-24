@@ -6,6 +6,9 @@ description: Tìm hiểu cách lấy thông tin tài liệu từ luồng bằng 
 weight: 12
 url: /vi/net/document-manipulation/get-document-info-stream/
 ---
+
+# Nhận thông tin tài liệu từ luồng
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc bảo vệ và quản lý tính toàn vẹn của tài liệu là rất quan trọng. Cho dù bạn là chuyên gia kinh doanh, nhà phát triển hay người xử lý thông tin nhạy cảm thì nhu cầu thêm, trích xuất hoặc thao tác hình mờ trong tài liệu của bạn là điều cần thiết. GroupDocs.Watermark for .NET cung cấp bộ công cụ mạnh mẽ để giúp bạn đạt được điều đó. Bài viết này sẽ hướng dẫn bạn cách sử dụng GroupDocs.Watermark cho .NET để lấy thông tin tài liệu từ một luồng, đồng thời cung cấp hướng dẫn từng bước để bạn dễ dàng thực hiện quy trình này. Cuối cùng, bạn sẽ thành thạo việc sử dụng tính năng này để nâng cao khả năng quản lý tài liệu của mình.
 ## Điều kiện tiên quyết

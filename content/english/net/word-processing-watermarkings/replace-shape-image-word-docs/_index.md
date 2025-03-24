@@ -6,6 +6,9 @@ description: Learn how to programmatically replace shape images in Word document
 weight: 33
 url: /net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# Replace Shape Image in Word Docs
+
 ## Introduction
 In the realm of software development, particularly in the .NET environment, handling document manipulation efficiently and securely is crucial. Among the myriad of tasks developers often encounter, one common challenge is replacing shape images within Word documents programmatically. This can be a tedious task without the right tools and libraries.
 Fortunately, GroupDocs offers a powerful solution in the form of GroupDocs.Watermark for .NET, a versatile library designed to handle watermarking and manipulating watermarks within various document formats, including Word documents. In this tutorial, we'll delve into the step-by-step process of replacing shape images in Word documents using GroupDocs.Watermark for .NET.

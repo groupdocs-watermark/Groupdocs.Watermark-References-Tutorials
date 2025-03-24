@@ -6,6 +6,9 @@ description: Aprenda como adicionar marcas d’água a páginas específicas em 
 weight: 14
 url: /pt/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
 ---
+
+# Adicionar marca d'água a uma página específica em documentos do Word
+
 ## Introdução
 Marcar documentos com marca d'água é um aspecto crucial da segurança e da marca dos documentos. Neste tutorial, exploraremos como adicionar uma marca d'água a uma página específica em documentos do Word usando GroupDocs.Watermark for .NET.
 ## Pré-requisitos

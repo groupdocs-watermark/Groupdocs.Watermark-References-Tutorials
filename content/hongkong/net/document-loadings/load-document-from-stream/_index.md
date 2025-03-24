@@ -6,6 +6,9 @@ description: 透過本指南了解如何使用 GroupDocs.Watermark for .NET 為�
 weight: 11
 url: /zh-hant/net/document-loadings/load-document-from-stream/
 ---
+
+# 從串流載入文檔
+
 ## 介紹
 您是否希望使用 .NET 為文件無縫添加浮水印？別再猶豫了！ GroupDocs.Watermark for .NET 是一個功能強大且易於使用的程式庫，可讓您管理各種文件格式的浮水印。無論您是處理 PDF、Word 文件還是影像，此工具都能滿足您的需求。在本教程中，我們將引導您逐步完成從流程載入文件並新增浮水印的過程。那麼，就讓我們開始吧！
 ## 先決條件

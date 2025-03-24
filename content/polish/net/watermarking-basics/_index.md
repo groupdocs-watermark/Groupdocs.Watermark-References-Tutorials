@@ -6,6 +6,9 @@ description: Odkryj samouczki GroupDocs.Watermark for .NET, aby bez wysiłku dod
 weight: 20
 url: /pl/net/watermarking-basics/
 ---
+
+# Podstawy znaku wodnego
+
 ## Wstęp
 Znak wodny to kluczowa technika ochrony dokumentów i potwierdzenia własności. GroupDocs.Watermark dla .NET upraszcza ten proces, udostępniając niezawodne narzędzia do dodawania zarówno graficznych, jak i tekstowych znaków wodnych. Niezależnie od tego, czy dopiero zaczynasz przygodę ze znakami wodnymi, czy chcesz udoskonalić swoje umiejętności, te samouczki poprowadzą Cię przez podstawy.
 

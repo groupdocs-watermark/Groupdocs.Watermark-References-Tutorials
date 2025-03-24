@@ -6,6 +6,9 @@ description: Découvrez comment extraire des informations sur les artefacts à p
 weight: 24
 url: /fr/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# Extraire les informations sur les artefacts du PDF
+
 ## Introduction
 Les documents PDF contiennent souvent des informations précieuses intégrées dans divers artefacts tels que des images, du texte et des formes. L'extraction de ces informations peut être cruciale pour de nombreuses applications, allant de l'analyse de données à la gestion de contenu. Dans ce didacticiel, nous verrons comment extraire des informations sur les artefacts de fichiers PDF à l'aide de GroupDocs.Watermark for .NET, une puissante bibliothèque .NET conçue spécifiquement pour le filigrane, la recherche et la manipulation de documents PDF.
 ## Conditions préalables

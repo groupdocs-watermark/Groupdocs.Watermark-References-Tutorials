@@ -6,6 +6,9 @@ description: 이 단계별 가이드를 통해 .NET용 GroupDocs.Watermark를 �
 weight: 11
 url: /ko/net/document-savings/save-document-specified-location/
 ---
+
+# 지정된 위치에 문서 저장
+
 ## 소개
 디지털 시대에는 문서 보안이 그 어느 때보다 중요해졌습니다. 워터마킹은 문서를 무단 사용으로부터 보호하는 효과적인 방법입니다. .NET용 GroupDocs.Watermark는 문서에 워터마크를 추가하기 위한 강력한 솔루션을 제공합니다. 워터마킹을 애플리케이션에 통합하려는 개발자이거나 문서 보호에 관심이 있는 사람이라면 이 튜토리얼이 프로세스를 단계별로 안내할 것입니다.
 ## 전제조건

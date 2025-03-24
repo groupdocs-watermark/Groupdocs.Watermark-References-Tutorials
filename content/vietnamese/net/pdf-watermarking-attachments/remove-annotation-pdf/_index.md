@@ -6,6 +6,9 @@ description: Tìm hiểu cách xóa chú thích khỏi tệp PDF bằng GroupDoc
 weight: 29
 url: /vi/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---
+
+# Xóa chú thích khỏi PDF
+
 ## Giới thiệu
 Chú thích trong tài liệu PDF đôi khi có thể làm lộn xộn nội dung hoặc cản trở khả năng đọc của tài liệu. Với GroupDocs.Watermark dành cho .NET, bạn có thể dễ dàng xóa chú thích khỏi tệp PDF. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn từng bước thực hiện quy trình.
 ## Điều kiện tiên quyết

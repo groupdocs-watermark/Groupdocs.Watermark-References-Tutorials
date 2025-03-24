@@ -6,6 +6,9 @@ description: Naučte se, jak programově nahradit obrázky tvarů v dokumentech 
 weight: 33
 url: /cs/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# Nahradit obraz tvaru v dokumentech Word
+
 ## Úvod
 oblasti vývoje softwaru, zejména v prostředí .NET, je efektivní a bezpečná manipulace s dokumenty zásadní. Mezi nesčetné množství úkolů, s nimiž se vývojáři často setkávají, je jedním z běžných problémů programové nahrazení obrázků tvarů v dokumentech Wordu. Bez správných nástrojů a knihoven to může být únavný úkol.
 Naštěstí GroupDocs nabízí výkonné řešení v podobě GroupDocs.Watermark for .NET, všestranné knihovny navržené pro práci s vodoznakem a manipulací s vodoznaky v různých formátech dokumentů, včetně dokumentů Word. V tomto tutoriálu se podrobně podíváme na proces nahrazování obrázků tvarů v dokumentech aplikace Word pomocí GroupDocs.Watermark for .NET.

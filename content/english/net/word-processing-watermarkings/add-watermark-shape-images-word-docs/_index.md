@@ -6,6 +6,9 @@ description: Learn how to add watermarks to shape images in Word documents using
 weight: 17
 url: /net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Add Watermark to Shape Images in Word Docs
+
 ## Introduction
 In this tutorial, we will explore how to add a watermark to shape images within Word documents using GroupDocs.Watermark for .NET. Watermarking is a crucial aspect of document protection, especially when dealing with sensitive or confidential information. By adding watermarks to shape images, you can ensure the integrity and security of your documents.
 ## Prerequisites

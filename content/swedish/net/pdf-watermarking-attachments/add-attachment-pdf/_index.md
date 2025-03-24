@@ -6,6 +6,9 @@ description: Förbättra dina .NET-dokumenthanteringsmöjligheter med GroupDocs.
 weight: 12
 url: /sv/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---
+
+# Lägg till bilaga till PDF
+
 ## Introduktion
 Inom .NET-utvecklingens område framstår GroupDocs.Watermark som ett kraftfullt verktyg för att hantera vattenstämplar, anteckningar och mer inom olika dokumentformat. Oavsett om du arbetar med PDF-filer, Word-dokument eller bilder ger GroupDocs.Watermark för .NET en sömlös integration som gör det möjligt för utvecklare att manipulera dokument med lätthet.
 ## Förutsättningar

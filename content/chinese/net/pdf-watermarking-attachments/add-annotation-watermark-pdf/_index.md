@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 轻松向 PDF 文�
 weight: 10
 url: /zh/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# 为 PDF 添加注释水印
+
 ## 介绍
 在文档管理领域，向 PDF 文件添加水印是一个至关重要的方面，特别是对于品牌、安全和文档识别目的。 GroupDocs.Watermark for .NET 是一个功能强大的库，有助于将水印无缝集成到各种文档格式（包括 PDF）中。在本教程中，我们将利用 GroupDocs.Watermark for .NET 提供的功能，逐步深入研究向 PDF 文档添加注释水印的过程。
 ## 先决条件

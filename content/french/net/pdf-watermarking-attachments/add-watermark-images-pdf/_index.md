@@ -6,6 +6,9 @@ description: Apprenez à ajouter des filigranes aux images dans des documents PD
 weight: 19
 url: /fr/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# Ajouter un filigrane aux images dans un PDF
+
 ## Introduction
 L'ajout de filigranes aux images d'un document PDF peut être essentiel pour protéger votre propriété intellectuelle ou garantir l'authenticité de vos documents. Grâce à GroupDocs.Watermark pour .NET, cette tâche peut être effectuée efficacement et facilement. Ce didacticiel vous guidera à travers chaque étape du processus, de la configuration de votre environnement à l'ajout de filigranes jusqu'à l'enregistrement du document final. Allons-y !
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać znaki wodne do XObjects w formacie PDF p
 weight: 20
 url: /pl/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# Dodaj znak wodny do XObjects w formacie PDF
+
 ## Wstęp
 Znak wodny w plikach PDF to kluczowy krok zapewniający ochronę dokumentów przed nieupoważnionym użyciem. Dzięki Groupdocs.Watermark dla .NET dodawanie znaków wodnych do XObjects w plikach PDF nigdy nie było łatwiejsze. W tym samouczku przeprowadzimy Cię przez ten proces krok po kroku, upewniając się, że możesz bezpiecznie dodawać znaki wodne do dokumentów PDF. Zacznijmy!
 ## Warunki wstępne

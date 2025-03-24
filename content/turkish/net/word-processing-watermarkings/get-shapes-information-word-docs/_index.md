@@ -6,6 +6,9 @@ description: GroupDocs for .NET ile Word belgelerinden değerli bilgilere kolayc
 weight: 24
 url: /tr/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# Word Dokümanlarında Şekil Bilgilerini Alma
+
 ## giriiş
 Verilerin kral olduğu dijital ortamda, belgelerden anlamlı içgörüler elde etmek çok önemlidir. GroupDocs.Watermark for .NET, geliştiricilerin belge yapılarını derinlemesine incelemelerine ve değerli bilgileri zahmetsizce çıkarmalarına olanak tanır. Bu derste, Word belgelerinden şekil bilgilerini adım adım elde etmek için bu güçlü araçtan nasıl yararlanacağımızı keşfedeceğiz.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Přečtěte si, jak odstranit hypertextové odkazy z dokumentů apl
 weight: 29
 url: /cs/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# Odstraňte hypertextové odkazy v Dokumentech aplikace Word
+
 ## Úvod
 V dnešním digitálním světě, kde informace plynule proudí, je ochrana vašich dokumentů prvořadá. Ať už sdílíte citlivá obchodní data nebo vytváříte mistrovské dílo, ochrana vašeho obsahu před neoprávněným přístupem a manipulací je zásadní. S příchodem GroupDocs.Watermark for .NET můžete zajistit integritu svých dokumentů jednoduchým přidáváním, odebíráním a zjišťováním vodoznaků.
 ## Předpoklady

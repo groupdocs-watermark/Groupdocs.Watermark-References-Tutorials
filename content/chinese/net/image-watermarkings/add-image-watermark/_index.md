@@ -6,6 +6,9 @@ description: 通过我们详细的分步教程，了解如何使用 GroupDocs.Wa
 weight: 11
 url: /zh/net/image-watermarkings/add-image-watermark/
 ---
+
+# 添加图像水印
+
 ## 介绍
 欢迎阅读这份有关使用 GroupDocs.Watermark for .NET 添加图像水印的综合指南！水印是保护您的文档和图像免遭未经授权使用的强大方法，可确保您的知识产权的安全。在本教程中，我们将引导您完成从设置环境到将水印应用到文档的整个过程。无论您是经验丰富的开发人员还是刚刚入门，您都会发现本指南很有帮助且易于遵循。
 ## 先决条件

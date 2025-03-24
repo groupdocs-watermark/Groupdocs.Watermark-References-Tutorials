@@ -6,6 +6,9 @@ description: .NET용 Groupdocs.Watermark를 사용하여 손쉽게 PDF 파일에
 weight: 11
 url: /ko/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# PDF에 아티팩트 워터마크 추가
+
 ## 소개
 PDF 파일에 워터마크를 추가하는 것은 문서 관리의 중요한 측면이며, 특히 지적 재산이나 브랜딩 문서를 보호하는 경우 더욱 그렇습니다. .NET용 Groupdocs.Watermark는 PDF 파일에 워터마크를 쉽게 추가할 수 있는 강력한 솔루션을 제공합니다. 이 튜토리얼에서는 PDF 파일에 아티팩트 워터마크를 추가하는 과정을 단계별로 안내합니다.
 ## 전제조건

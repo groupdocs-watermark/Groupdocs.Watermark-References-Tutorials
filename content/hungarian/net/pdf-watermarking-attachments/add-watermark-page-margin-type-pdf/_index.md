@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat hozzá vízjeleket oldalmargó-típussal 
 weight: 21
 url: /hu/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---
+
+# Vízjel hozzáadása oldalmargó-típussal a PDF-ben
+
 ## Bevezetés
 mai digitális korban a dokumentumok védelme fontosabb, mint valaha. A dokumentumok integritásának és hitelességének biztosításának egyik módja a vízjelek hozzáadása. A Groupdocs.Watermark for .NET egy kivételes eszköz, amelyet arra terveztek, hogy ezt a folyamatot egyszerűvé tegye. Ebben az oktatóanyagban végigvezetjük Önt a Groupdocs.Watermark for .NET segítségével oldalmargó-típusú vízjel hozzáadásának lépésein a PDF-ben.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Leer hoe u alleen-afdrukbare annotatiewatermerken aan PDF's kunt to
 weight: 13
 url: /nl/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---
+
+# Voeg alleen print-annotatiewatermerk toe aan PDF
+
 ## Invoering
 In deze zelfstudie gaan we dieper in op het proces van het toevoegen van een alleen-afdrukbaar annotatiewatermerk aan een PDF met behulp van GroupDocs.Watermark voor .NET. Het watermerken van documenten is een cruciaal aspect van documentbeveiliging en branding, en GroupDocs.Watermark biedt een naadloze oplossing voor .NET-ontwikkelaars om dit te bereiken.
 ## Vereisten

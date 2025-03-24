@@ -6,6 +6,9 @@ description: Naučte se manipulovat s tvary v dokumentech aplikace Word pomocí 
 weight: 37
 url: /cs/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Použití typu tvaru v dokumentech Word
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak používat typy tvarů v dokumentech aplikace Word pomocí GroupDocs.Watermark pro .NET. Tvary v dokumentech aplikace Word se mohou lišit a pochopení toho, jak s nimi manipulovat, může být klíčové pro různé úlohy zpracování dokumentů.
 ## Předpoklady

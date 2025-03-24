@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak belgelere görüntü fili
 weight: 12
 url: /tr/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# Akıştan Resim Filigranı Ekle
+
 ## giriiş
 Belge yönetimi ve güvenliği alanında filigranların dosyalara dahil edilmesi büyük önem taşıyor. Markalama, telif hakkı koruması veya belge bütünlüğünü koruma konusunda filigranlar çok önemli bir rol oynar. Neyse ki GroupDocs.Watermark for .NET, çeşitli belge formatlarındaki filigranları eklemek, kaldırmak ve aramak için güçlü bir çözüm sağlar.
 ## Önkoşullar

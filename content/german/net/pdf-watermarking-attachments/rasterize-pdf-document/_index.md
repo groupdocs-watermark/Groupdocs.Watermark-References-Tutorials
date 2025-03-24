@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie PDF-Dokumente mit GroupDocs.Watermark für .N
 weight: 27
 url: /de/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# PDF-Dokument rastern
+
 ## Einführung
 Im Bereich der Dokumentenverwaltung und -bearbeitung ist GroupDocs.Watermark für .NET ein leistungsstarkes Tool, das robuste Funktionen zum Hinzufügen, Entfernen und Durchsuchen von Wasserzeichen in verschiedenen Dokumentformaten bietet. Ganz gleich, ob es darum geht, Ihre Dokumente mit Urheberrechtshinweisen zu schützen, Firmenlogos für das Branding hinzuzufügen oder Dokumente einfach mit Stempeln zu kommentieren – GroupDocs.Watermark vereinfacht den Prozess mit seiner intuitiven API und seinem umfangreichen Funktionsumfang.
 ## Voraussetzungen

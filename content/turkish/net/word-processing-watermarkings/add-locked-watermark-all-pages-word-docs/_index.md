@@ -6,6 +6,9 @@ description: Groupdocs.Watermark for .NET'i kullanarak kilitli filigranlar ekley
 weight: 11
 url: /tr/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Word Dokümanlarındaki Tüm Sayfalara Kilitli Filigran Ekleme
+
 ## giriiş
 Belgelerinize filigran eklemek, içeriğinizi güvence altına almak ve markalamak için hayati bir adımdır. İster yetkisiz kullanımı engelliyor ister yalnızca profesyonel bir dokunuş ekliyor olun, filigranlar birçok amaca hizmet edebilir. Bu öğreticide, Groupdocs.Watermark for .NET'i kullanarak bir Word belgesinin tüm sayfalarına kilitli filigran ekleme sürecinde size yol göstereceğiz.
 ## Önkoşullar

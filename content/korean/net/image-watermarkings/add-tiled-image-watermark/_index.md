@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 문서에 타일식 이
 weight: 10
 url: /ko/net/image-watermarkings/add-tiled-image-watermark/
 ---
+
+# 타일식 이미지 워터마크 추가
+
 ## 소개
 .NET용 GroupDocs.Watermark는 개발자가 프로그래밍 방식으로 다양한 문서 형식의 워터마크를 추가, 제거 및 검색할 수 있는 강력한 API입니다. 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 문서에 타일식 이미지 워터마크를 추가하는 과정을 안내합니다.
 ## 전제조건

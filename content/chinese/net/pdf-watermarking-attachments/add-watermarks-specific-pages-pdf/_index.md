@@ -6,6 +6,9 @@ description: 了解使用 Groupdocs for .NET 将文本和图像水印添加到 P
 weight: 15
 url: /zh/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# 为 PDF 中的特定页面添加水印
+
 ## 介绍
 向 PDF 文档添加水印是保护内容和维护所有权的关键步骤。无论您是标记草稿、保护敏感信息还是只是添加品牌，水印都是一种有效的工具。在本教程中，我们将探讨如何使用 Groupdocs.Watermark for .NET 将文本和图像水印添加到 PDF 文件中的特定页面。我们将把流程分解为可管理的步骤，确保您可以在项目中遵循并实现这些功能。
 ## 先决条件

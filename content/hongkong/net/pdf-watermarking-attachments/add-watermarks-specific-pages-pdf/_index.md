@@ -6,6 +6,9 @@ description: 了解使用 Groupdocs for .NET 將文字和影像浮水印新增�
 weight: 15
 url: /zh-hant/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# 為 PDF 中的特定頁面新增浮水印
+
 ## 介紹
 在 PDF 文件中添加浮水印是保護內容和維護所有權的關鍵步驟。無論您是標記草稿、保護敏感資訊還是只是添加品牌，水印都是一種有效的工具。在本教學中，我們將探討如何使用 Groupdocs.Watermark for .NET 將文字和影像浮水印新增至 PDF 檔案中的特定頁面。我們將把流程分解為可管理的步驟，確保您可以在專案中遵循並實現這些功能。
 ## 先決條件

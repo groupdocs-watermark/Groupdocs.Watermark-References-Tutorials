@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET nur druckf�
 weight: 13
 url: /de/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---
+
+# Fügen Sie dem PDF ein „Nur drucken“-Anmerkungswasserzeichen hinzu
+
 ## Einführung
 In diesem Tutorial befassen wir uns mit dem Prozess des Hinzufügens eines Nur-Druck-Anmerkungswasserzeichens zu einer PDF-Datei mithilfe von GroupDocs.Watermark für .NET. Das Versehen von Dokumenten mit Wasserzeichen ist ein entscheidender Aspekt der Dokumentensicherheit und des Brandings, und GroupDocs.Watermark bietet eine nahtlose Lösung für .NET-Entwickler, um dies zu erreichen.
 ## Voraussetzungen

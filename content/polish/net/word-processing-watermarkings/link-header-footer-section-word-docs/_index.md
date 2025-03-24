@@ -6,6 +6,9 @@ description: Dowiedz się, jak efektywnie łączyć nagłówki i stopki w sekcja
 weight: 26
 url: /pl/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Nagłówek/stopka łącza w sekcji w dokumentach programu Word
+
 ## Wstęp
 W świecie programowania .NET zarządzanie znakami wodnymi w dokumentach programu Word może być kluczowym zadaniem, niezależnie od tego, czy chronisz poufne informacje, czy dodajesz elementy marki. Na szczęście GroupDocs.Watermark dla .NET zapewnia wydajne rozwiązanie do wydajnej obsługi znaków wodnych. W tym samouczku omówimy, jak łączyć nagłówki i stopki w sekcjach dokumentów programu Word za pomocą programu GroupDocs.Watermark.
 ## Warunki wstępne

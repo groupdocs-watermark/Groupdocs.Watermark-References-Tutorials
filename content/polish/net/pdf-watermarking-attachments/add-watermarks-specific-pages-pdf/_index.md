@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać tekstowe i graficzne znaki wodne do okre
 weight: 15
 url: /pl/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# Dodaj znaki wodne do określonych stron w formacie PDF
+
 ## Wstęp
 Dodawanie znaków wodnych do dokumentów PDF to kluczowy krok w ochronie treści i potwierdzaniu własności. Niezależnie od tego, czy zaznaczasz wersję roboczą, zabezpieczasz poufne informacje, czy po prostu dodajesz branding, znaki wodne są skutecznym narzędziem. W tym samouczku omówimy, jak używać programu Groupdocs.Watermark dla platformy .NET do dodawania tekstowych i graficznych znaków wodnych do określonych stron plików PDF. Podzielimy proces na łatwe do wykonania etapy, dzięki czemu będziesz mógł śledzić i wdrażać te funkcje w swoich projektach.
 ## Warunki wstępne

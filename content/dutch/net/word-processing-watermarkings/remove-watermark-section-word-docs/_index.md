@@ -6,6 +6,9 @@ description: Leer hoe u watermerken uit specifieke secties in Word-documenten ve
 weight: 32
 url: /nl/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# Verwijder het watermerk uit sectie in Word-documenten
+
 ## Invoering
 In het digitale tijdperk is het beschermen van de integriteit van documenten van cruciaal belang, vooral als het gaat om gevoelige informatie of bedrijfseigen inhoud. Watermerken is een veelgebruikte techniek om eigendom of merkidentiteit te bevestigen of eenvoudigweg de status van een document aan te geven. Er zijn echter gevallen waarin het verwijderen van watermerken noodzakelijk wordt, vanwege bewerkingsvereisten of vanwege privacyproblemen.
 ## Vereisten

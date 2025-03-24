@@ -6,6 +6,9 @@ description: Leer hoe u efficiënt watermerken uit Word-documenten kunt vinden e
 weight: 22
 url: /nl/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Zoek watermerk in koptekst/voettekst in Word-documenten
+
 ## Invoering
 In de wereld van documentbeheer en -bescherming speelt watermerken een cruciale rol. Of het nu gaat om merkdoeleinden, auteursrechtbescherming of het volgen van documenten, het toevoegen van watermerken aan uw documenten is essentieel. Het efficiënt vinden en verwijderen van watermerken kan echter, vooral in grote documentensets, een hele klus zijn. Dit is waar GroupDocs.Watermark voor .NET in het spel komt. In deze zelfstudie gaan we dieper in op het vinden van watermerken in kop- en voetteksten van Word-documenten met behulp van GroupDocs.Watermark voor .NET, waarbij we elke stap opsplitsen om een uitgebreid begrip te garanderen.
 ## Vereisten

@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs.Watermark for .NET 輕鬆地將工件�
 weight: 11
 url: /zh-hant/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# 為 PDF 新增工件浮水印
+
 ## 介紹
 在 PDF 文件中添加浮水印是文件管理的重要方面，尤其是在保護智慧財產權或品牌文件時。 Groupdocs.Watermark for .NET 提供了一個強大的解決方案，可以輕鬆地在 PDF 檔案中新增浮水印。在本教學中，我們將逐步介紹在 PDF 檔案中新增人工浮水印的過程。
 ## 先決條件

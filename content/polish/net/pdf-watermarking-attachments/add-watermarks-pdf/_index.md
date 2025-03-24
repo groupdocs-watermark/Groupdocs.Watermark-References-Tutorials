@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać tekstowe i graficzne znaki wodne do plik
 weight: 14
 url: /pl/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---
+
+# Dodaj znaki wodne do pliku PDF
+
 ## Wstęp
 Czy chcesz dodać znaki wodne do plików PDF, aby chronić dokumenty lub oznaczyć je swoim logo? Nie szukaj dalej! W tym samouczku szczegółowo omówimy proces używania programu GroupDocs.Watermark dla platformy .NET w celu dodawania tekstowych i graficznych znaków wodnych do plików PDF. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik przeprowadzi Cię przez każdy krok, zapewniając, że możesz łatwo i precyzyjnie dodawać znaki wodne.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Z tego wszechstronnego samouczka krok po kroku dowiesz się, jak za
 weight: 38
 url: /pl/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# Zastąp obraz określonym artefaktem w formacie PDF
+
 ## Wstęp
 Dodawanie znaków wodnych do dokumentów jest podstawową praktyką zapewniającą bezpieczeństwo dokumentów, markę i ochronę praw autorskich. Jeśli chcesz zagłębić się w świat znakowania wodnego dokumentów przy użyciu GroupDocs.Watermark dla .NET, jesteś we właściwym miejscu. Ten przewodnik przeprowadzi Cię przez proces zastępowania obrazów w dokumencie PDF przy użyciu biblioteki GroupDocs.Watermark. Zacznijmy!
 ## Warunki wstępne

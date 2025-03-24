@@ -6,6 +6,9 @@ description: Zahmetsizce resim ve metin filigranları eklemek için GroupDocs.Wa
 weight: 20
 url: /tr/net/watermarking-basics/
 ---
+
+# Filigranlama Temelleri
+
 ## giriiş
 Filigranlama, belgelerinizi korumak ve sahipliğinizi iddia etmek için çok önemli bir tekniktir. GroupDocs.Watermark for .NET, hem görüntü hem de metin filigranlarının eklenmesi için güçlü araçlar sağlayarak bu süreci basitleştirir. İster filigran ekleme konusunda yeni olun ister becerilerinizi geliştirmek istiyor olun, bu eğitimler size temel konularda rehberlik edecektir.
 

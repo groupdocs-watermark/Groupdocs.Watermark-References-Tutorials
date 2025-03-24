@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane con impostazioni di forma ai docum
 weight: 20
 url: /it/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Aggiungi filigrana con impostazioni di forma in documenti Word
+
 ## introduzione
 In questo tutorial, esamineremo il processo di aggiunta di una filigrana con impostazioni di forma ai documenti di Word utilizzando GroupDocs.Watermark per .NET.
 ## Prerequisiti

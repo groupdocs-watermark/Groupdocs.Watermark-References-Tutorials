@@ -6,6 +6,9 @@ description: 이 포괄적인 단계별 튜토리얼을 통해 .NET용 Groupdocs
 weight: 40
 url: /ko/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---
+
+# PDF의 특정 주석에 대한 텍스트 바꾸기
+
 ## 소개
 안녕하세요! .NET을 사용하여 PDF 문서의 워터마크를 원활하게 관리하고 싶으십니까? 더 이상 보지 마세요! 이 튜토리얼은 .NET용 Groupdocs.Watermark를 사용하여 PDF의 특정 주석에 대한 텍스트를 바꾸는 과정을 안내합니다. 각 개념을 명확하게 이해할 수 있도록 프로세스를 따라하기 쉬운 단계로 나누어 보겠습니다. 숙련된 개발자든 초보자든 이 가이드는 귀하의 경험을 원활하고 생산적으로 만들 수 있도록 맞춤화되었습니다.
 ## 전제조건

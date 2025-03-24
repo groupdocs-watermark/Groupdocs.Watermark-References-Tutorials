@@ -6,6 +6,9 @@ description: Naučte se přidávat textové vodoznaky do dokumentů pomocí Grou
 weight: 11
 url: /cs/net/watermarking-basics/add-text-watermark/
 ---
+
+# Přidat textový vodoznak
+
 ## Úvod
 GroupDocs.Watermark for .NET je výkonná knihovna, která umožňuje vývojářům přidávat, vyhledávat a odstraňovat vodoznaky z různých formátů dokumentů v aplikacích .NET. V tomto tutoriálu se zaměříme na přidání textového vodoznaku do dokumentu pomocí GroupDocs.Watermark.
 ## Předpoklady

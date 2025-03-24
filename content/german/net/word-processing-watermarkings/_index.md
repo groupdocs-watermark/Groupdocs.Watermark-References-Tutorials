@@ -6,6 +6,9 @@ description: Entdecken Sie wichtige GroupDocs.Watermark für .NET-Tutorials zum 
 weight: 26
 url: /de/net/word-processing-watermarkings/
 ---
+
+# Wasserzeichen in der Textverarbeitung
+
 ## Einführung
 
 Das Anbringen von Wasserzeichen in Ihren Word-Dokumenten ist ein wichtiger Schritt zur Sicherung Ihrer Inhalte und zur Etablierung Ihrer Marke. Mit GroupDocs.Watermark für .NET wird dieser Prozess unkompliziert und effizient. Unabhängig davon, ob Sie Bildwasserzeichen zu Kopfzeilen hinzufügen oder Wasserzeichen auf bestimmten Seiten sperren, führen Sie diese Tutorials durch jeden Schritt und stellen sicher, dass Ihre Dokumente sowohl geschützt als auch professionell sind.

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat vízjeleket a Word-dokumentumok képeihez
 weight: 16
 url: /hu/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Vízjel hozzáadása a szakaszképekhez a Word Dokumentumokban
+
 ## Bevezetés
 mai digitális világban elengedhetetlen a dokumentumok védelme. Vízjelek hozzáadása a Word-dokumentumokhoz egyszerű, de hatékony módja annak, hogy megvédje a tartalmat. Ez az oktatóanyag végigvezeti Önt a Word-dokumentumok szakaszképeinek vízjelek hozzáadásának folyamatán a Groupdocs.Watermark for .NET segítségével. Függetlenül attól, hogy Ön fejlesztő, aki szeretné integrálni ezt a funkciót az alkalmazásába, vagy egyszerűen csak meg akarja védeni dokumentumait, ez az útmutató az Ön számára készült.
 ## Előfeltételek

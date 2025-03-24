@@ -6,6 +6,9 @@ description: Learn how to add annotation watermarks to PDF documents effortlessl
 weight: 10
 url: /net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# Add Annotation Watermark to PDF
+
 ## Introduction
 In the realm of document management, adding watermarks to PDF files serves as a crucial aspect, especially for branding, security, and document identification purposes. GroupDocs.Watermark for .NET is a powerful library that facilitates the seamless integration of watermarks into various document formats, including PDFs. In this tutorial, we'll delve into the process of adding annotation watermarks to PDF documents step by step, utilizing the functionalities provided by GroupDocs.Watermark for .NET.
 ## Prerequisites

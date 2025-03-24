@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane con effetti immagine ai tuoi docum
 weight: 19
 url: /it/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---
+
+# Aggiungi filigrana con effetti immagine in documenti Word
+
 ## introduzione
 Stai cercando di aggiungere un po' di brio ai tuoi documenti Word con filigrane accattivanti? GroupDocs.Watermark per .NET ti copre! Questa guida completa ti guiderà attraverso il processo di aggiunta di filigrane con straordinari effetti di immagine ai tuoi documenti Word utilizzando GroupDocs per .NET. Che tu sia uno sviluppatore esperto o un principiante, questo tutorial passo passo renderà il processo un gioco da ragazzi.
 ## Prerequisiti

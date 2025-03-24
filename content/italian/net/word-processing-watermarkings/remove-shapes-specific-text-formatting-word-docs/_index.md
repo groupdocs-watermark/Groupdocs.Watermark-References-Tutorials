@@ -6,6 +6,9 @@ description: Scopri come rimuovere forme con formattazione del testo specifica n
 weight: 31
 url: /it/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---
+
+# Rimuovi forme con formattazione del testo specifica nei documenti Word
+
 ## introduzione
 GroupDocs.Watermark per .NET è una potente API che consente agli sviluppatori di manipolare le filigrane in vari formati di documenti a livello di codice. In questo tutorial, ci concentreremo sulla rimozione di forme con formattazione di testo specifica nei documenti Word utilizzando GroupDocs.Watermark per .NET. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questa guida passo passo ti aiuterà a comprendere il processo di rimozione delle forme in modo efficiente ed efficace.
 ## Prerequisiti

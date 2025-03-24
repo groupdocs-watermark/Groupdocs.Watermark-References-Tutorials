@@ -6,6 +6,9 @@ description: Z tego przewodnika krok po kroku dowiesz się, jak ładować dokume
 weight: 12
 url: /pl/net/document-loadings/load-specific-format-document/
 ---
+
+# Załaduj dokument w określonym formacie
+
 ## Wstęp
 Dodawanie znaków wodnych do dokumentów jest kluczowym zadaniem zapewniającym ochronę treści i budowanie marki. Groupdocs.Watermark dla .NET to wszechstronne i potężne narzędzie, które upraszcza ten proces. Niezależnie od tego, czy masz do czynienia z dokumentami tekstowymi, arkuszami kalkulacyjnymi, prezentacjami czy obrazami, ten przewodnik przeprowadzi Cię przez kolejne etapy ładowania i znakowania wodnego dokumentów w określonym formacie za pomocą Groupdocs.Watermark dla .NET.
 ## Warunki wstępne

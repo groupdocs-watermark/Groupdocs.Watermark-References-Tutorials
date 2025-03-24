@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs for .NET 將具有形狀設定的浮�
 weight: 20
 url: /zh-hant/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# 在 Word 文件中新增具有形狀設定的浮水印
+
 ## 介紹
 在本教學中，我們將逐步介紹使用 GroupDocs.Watermark for .NET 將具有形狀設定的浮水印新增至 Word 文件的過程。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan kapcsolhat össze hatékonyan fejlécet és lá
 weight: 26
 url: /hu/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Fejléc/lábléc hivatkozása a Word Dokumentumok szakaszában
+
 ## Bevezetés
 A .NET-fejlesztés világában a Word-dokumentumok vízjeleinek kezelése kulcsfontosságú feladat lehet, akár érzékeny információk védelméről, akár márkaépítési elemekről van szó. Szerencsére a GroupDocs.Watermark for .NET hatékony megoldást kínál a vízjelek hatékony kezelésére. Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet fejlécet és láblécet összekapcsolni Word-dokumentumok szakaszaiban a GroupDocs.Watermark segítségével.
 ## Előfeltételek

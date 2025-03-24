@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 PDF에서 주석을 제
 weight: 29
 url: /ko/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---
+
+# PDF에서 주석 제거
+
 ## 소개
 PDF 문서의 주석은 때때로 내용을 복잡하게 만들거나 문서의 가독성을 방해할 수 있습니다. .NET용 GroupDocs.Watermark를 사용하면 PDF 파일에서 주석을 쉽게 제거할 수 있습니다. 이 튜토리얼에서는 프로세스를 단계별로 안내합니다.
 ## 전제조건

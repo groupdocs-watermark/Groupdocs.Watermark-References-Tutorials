@@ -6,6 +6,9 @@ description: Aggiungi facilmente filigrane a documenti Word protetti da password
 weight: 14
 url: /it/net/document-loadings/load-password-protected-word-document/
 ---
+
+# Carica documento Word protetto da password
+
 ## introduzione
 Nell'era digitale, proteggere e autenticare i tuoi documenti è più importante che mai. La filigrana è una tecnica potente per salvaguardare i tuoi file e con GroupDocs.Watermark per .NET puoi farlo senza sforzo. Questa guida completa ti guiderà attraverso il processo di filigrana di un documento Word protetto da password, suddividendo ogni passaggio per assicurarti di comprenderlo e di poterlo implementare facilmente.
 ## Prerequisiti

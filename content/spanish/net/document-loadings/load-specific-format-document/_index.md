@@ -6,6 +6,9 @@ description: Aprenda a cargar y marcar documentos con Groupdocs Watermark para .
 weight: 12
 url: /es/net/document-loadings/load-specific-format-document/
 ---
+
+# Cargar documento de formato específico
+
 ## Introducción
 Agregar marcas de agua a los documentos es una tarea crucial para garantizar la protección del contenido y la marca. Groupdocs.Watermark para .NET es una herramienta versátil y poderosa que simplifica este proceso. Ya sea que trabaje con documentos de texto, hojas de cálculo, presentaciones o imágenes, esta guía lo guiará a través de los pasos para cargar y marcar documentos con formatos específicos utilizando Groupdocs.Watermark para .NET.
 ## Requisitos previos

@@ -6,6 +6,9 @@ description: Proteggi i tuoi documenti aggiungendo filigrane bloccate utilizzand
 weight: 11
 url: /it/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Aggiungi filigrana bloccata a tutte le pagine in documenti Word
+
 ## introduzione
 L'aggiunta di filigrane ai tuoi documenti è un passaggio fondamentale per proteggere e marchiare i tuoi contenuti. Che tu voglia impedire l'uso non autorizzato o semplicemente aggiungere un tocco professionale, le filigrane possono servire a molteplici scopi. In questo tutorial ti guideremo attraverso il processo di aggiunta di una filigrana bloccata a tutte le pagine di un documento Word utilizzando Groupdocs.Watermark per .NET.
 ## Prerequisiti

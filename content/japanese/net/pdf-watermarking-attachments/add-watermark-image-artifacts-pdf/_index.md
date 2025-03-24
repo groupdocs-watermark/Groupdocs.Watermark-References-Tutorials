@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、PDF ファイルを�
 weight: 18
 url: /ja/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# PDF の画像アーティファクトに透かしを追加する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Watermark for .NET を使用して、PDF ドキュメント内の画像アーティファクトにウォーターマークを追加するプロセスを説明します。これらの手順に従うことで、パーソナライズされた透かしを使用して PDF ファイルを効率的に保護できます。
 ## 前提条件

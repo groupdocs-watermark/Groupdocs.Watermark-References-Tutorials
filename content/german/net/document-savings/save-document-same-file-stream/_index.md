@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit Groupdocs.Watermark für .NET Wasserzeich
 weight: 10
 url: /de/net/document-savings/save-document-same-file-stream/
 ---
+
+# Dokument in derselben Datei oder demselben Stream speichern
+
 ## Einführung
 Im heutigen digitalen Zeitalter ist das Hinzufügen von Wasserzeichen zu Dokumenten für den Schutz geistigen Eigentums und die Gewährleistung der Markenintegrität unerlässlich geworden. Groupdocs.Watermark für .NET bietet eine robuste Lösung für Entwickler, die Wasserzeichen nahtlos in Dokumente einbetten möchten. Diese umfassende Anleitung führt Sie durch die Schritte zum Speichern eines Dokuments mit einem Wasserzeichen in derselben Datei oder demselben Stream mithilfe von Groupdocs.Watermark für .NET.
 ## Voraussetzungen

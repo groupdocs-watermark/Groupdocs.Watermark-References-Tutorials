@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan távolíthat el alakzatokat Word-dokumentumokb�
 weight: 30
 url: /hu/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
+
+# Alakzat eltávolítása a Word Dokumentumokban
+
 ## Bevezetés
 A dokumentumfeldolgozás és -kezelés területén a GroupDocs.Watermark for .NET hatékony eszközkészletként jelenik meg, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a vízjel funkcióit .NET-alkalmazásaikba. Ez a cikk a GroupDocs.Watermark for .NET for .NET alkalmazásának fortélyaival foglalkozik az alakzatok Word dokumentumokból való eltávolítására. A lépésenkénti útmutató követésével a fejlesztők könnyedén és hatékonyan megérthetik a folyamatot.
 ## Előfeltételek

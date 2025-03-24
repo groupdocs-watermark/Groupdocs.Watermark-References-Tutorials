@@ -6,6 +6,9 @@ description: Aprenda a agregar marcas de agua de texto e imágenes a sus archivo
 weight: 14
 url: /es/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---
+
+# Agregar marcas de agua a PDF
+
 ## Introducción
 ¿Está buscando agregar marcas de agua a sus archivos PDF para proteger sus documentos o marcarlos con su logotipo? ¡No busque más! En este tutorial, profundizaremos en el proceso de uso de GroupDocs.Watermark para .NET para agregar marcas de agua de texto e imagen a sus archivos PDF. Ya sea que sea un desarrollador experimentado o recién esté comenzando, esta guía lo guiará en cada paso, asegurándole que pueda aplicar marcas de agua con facilidad y precisión.
 ## Requisitos previos

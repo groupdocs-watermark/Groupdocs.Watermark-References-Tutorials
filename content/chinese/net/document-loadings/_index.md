@@ -6,6 +6,9 @@ description: 探索 GroupDocs.Watermark for .NET 教程来加载文档并为其�
 weight: 22
 url: /zh/net/document-loadings/
 ---
+
+# 文件加载
+
 ## 介绍
 如果您是一位希望增强文档安全性和品牌形象的开发人员，那么 GroupDocs.Watermark for .NET 就是您需要的工具。我们的综合教程将指导您完成加载各种类型的文档并为其添加水印的过程。让我们深入研究一些有助于您掌握此工具的基本教程。
 

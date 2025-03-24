@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서 섹션 내�
 weight: 26
 url: /ko/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Word Docs 섹션의 링크 머리글/바닥글
+
 ## 소개
 .NET 개발 세계에서 중요한 정보를 보호하든 브랜딩 요소를 추가하든 Word 문서의 워터마크를 관리하는 것은 중요한 작업이 될 수 있습니다. 다행히 .NET용 GroupDocs.Watermark는 워터마크를 효율적으로 처리할 수 있는 강력한 솔루션을 제공합니다. 이 튜토리얼에서는 GroupDocs.Watermark를 사용하여 Word 문서 섹션의 머리글과 바닥글을 연결하는 방법을 살펴보겠습니다.
 ## 전제조건

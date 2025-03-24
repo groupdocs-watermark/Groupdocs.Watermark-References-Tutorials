@@ -6,6 +6,9 @@ description: Lär dig hur du enkelt tar bort skyddet av Word-dokument med GroupD
 weight: 38
 url: /sv/net/word-processing-watermarkings/unprotect-document-word-docs/
 ---
+
+# Ta bort skyddet av dokument i Word Docs
+
 ## Introduktion
 GroupDocs.Watermark for .NET är ett kraftfullt API som låter utvecklare arbeta med vattenstämplar i olika dokumentformat, inklusive Word-dokument. I den här självstudien guidar vi dig genom processen att avskydda ett Word-dokument med GroupDocs.Watermark för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat med .NET-utveckling, hjälper den här steg-för-steg-guiden dig att utföra uppgiften effektivt.
 ## Förutsättningar

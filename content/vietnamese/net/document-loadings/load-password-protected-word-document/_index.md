@@ -6,6 +6,9 @@ description: Dễ dàng thêm hình mờ vào tài liệu Word được bảo v�
 weight: 14
 url: /vi/net/document-loadings/load-password-protected-word-document/
 ---
+
+# Tải tài liệu Word được bảo vệ bằng mật khẩu
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số, việc bảo vệ và xác thực tài liệu của bạn trở nên quan trọng hơn bao giờ hết. Hình mờ là một kỹ thuật mạnh mẽ để bảo vệ các tệp của bạn và với GroupDocs.Watermark dành cho .NET, bạn có thể thực hiện việc này một cách dễ dàng. Hướng dẫn toàn diện này sẽ hướng dẫn bạn quy trình đánh dấu mờ tài liệu Word được bảo vệ bằng mật khẩu, chia nhỏ từng bước để đảm bảo bạn hiểu và có thể thực hiện dễ dàng.
 ## Điều kiện tiên quyết

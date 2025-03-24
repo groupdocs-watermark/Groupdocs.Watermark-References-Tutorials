@@ -6,6 +6,9 @@ description: Lär dig hur du ersätter bilder i specifika PDF-kommentarer med Gr
 weight: 37
 url: /sv/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
+
+# Ersätt bild för specifik anteckning i PDF
+
 ## Introduktion
 Välkommen till den här omfattande guiden om hur du använder GroupDocs.Watermark för .NET för att ersätta bilder i specifika anteckningar i PDF-dokument. Oavsett om du är en utvecklare som vill förbättra dina PDF-hanteringsmöjligheter eller bara är nyfiken på krångligheterna med vattenmärkning, har den här handledningen dig täckt. I slutet kommer du att sömlöst kunna ersätta bilder i PDF-kommentarer med anpassade, vilket optimerar dina dokumentbearbetningsarbetsflöden.
 ## Förutsättningar

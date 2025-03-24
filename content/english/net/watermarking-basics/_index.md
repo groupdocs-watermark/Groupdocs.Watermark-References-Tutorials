@@ -6,6 +6,9 @@ description: Discover GroupDocs.Watermark for .NET tutorials to add image and te
 weight: 20
 url: /net/watermarking-basics/
 ---
+
+# Watermarking Basics
+
 ## Introduction
 Watermarking is a crucial technique to protect your documents and assert your ownership. GroupDocs.Watermark for .NET simplifies this process, providing robust tools for adding both image and text watermarks. Whether you're new to watermarking or looking to enhance your skills, these tutorials will guide you through the basics.
 

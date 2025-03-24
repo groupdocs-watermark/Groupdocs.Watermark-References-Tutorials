@@ -6,6 +6,9 @@ description: Pelajari cara menghapus anotasi dengan format teks tertentu dalam d
 weight: 30
 url: /id/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# Hapus Anotasi dengan Format Teks Tertentu di PDF
+
 ## Perkenalan
 Dalam tutorial ini, kami akan memandu Anda melalui proses menghapus anotasi dengan format teks tertentu dalam dokumen PDF menggunakan Groupdocs.Watermark untuk .NET. Pustaka ini menyediakan fitur canggih untuk bekerja dengan tanda air, anotasi, dan elemen dokumen lainnya dalam berbagai format.
 ## Prasyarat

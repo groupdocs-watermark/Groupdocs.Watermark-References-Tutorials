@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 轻松删除 PDF �
 weight: 33
 url: /zh/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---
+
+# 从 PDF 中删除附件
+
 ## 介绍
 在软件开发领域，有效管理文档是一项至关重要的任务。无论是个人用途还是专业用途，有时我们需要操纵或控制文档中的各种元素。 GroupDocs.Watermark for .NET 是一个功能强大的库，旨在满足这一需求，提供一套全面的工具来无缝处理不同的文档格式。
 ## 先决条件

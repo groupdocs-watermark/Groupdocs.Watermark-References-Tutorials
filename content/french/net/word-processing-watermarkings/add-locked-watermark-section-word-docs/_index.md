@@ -6,6 +6,9 @@ description: Découvrez comment ajouter un filigrane verrouillé à une section 
 weight: 13
 url: /fr/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Ajouter un filigrane verrouillé à la section dans Word Docs
+
 ## Introduction
 Cherchez-vous un moyen efficace d’ajouter un filigrane verrouillé à une section de vos documents Word ? Cherchez pas plus loin! Avec Groupdocs.Watermark pour .NET, vous pouvez insérer de manière transparente des filigranes dans des documents Word tout en garantissant qu'ils restent verrouillés et inviolables. Cet outil puissant offre une variété de fonctionnalités pour répondre à vos besoins en matière de filigrane, que ce soit à des fins de marque, de confidentialité ou de sécurité. Dans ce didacticiel étape par étape, nous vous expliquerons comment ajouter un filigrane verrouillé à une section spécifique d'un document Word à l'aide de Groupdocs.Watermark pour .NET. Allons-y !
 ## Conditions préalables

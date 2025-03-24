@@ -6,6 +6,9 @@ description: Adicione marcas d'água aos seus documentos sem esforço usando Gro
 weight: 13
 url: /pt/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Obtenha formatos de arquivo suportados
+
 ## Introdução
 Colocar marcas d'água em seus documentos é uma etapa crucial para proteger seus ativos digitais. Seja para proteger a propriedade intelectual, garantir a confidencialidade ou simplesmente promover a marca, as marcas d'água desempenham um papel vital. Se você é um desenvolvedor .NET que deseja integrar recursos de marca d'água em seus aplicativos, o GroupDocs.Watermark for .NET é uma ferramenta poderosa e versátil que você deve considerar. Este tutorial irá guiá-lo através dos fundamentos do uso do GroupDocs.Watermark, desde a instalação até a aplicação de sua primeira marca d'água, detalhando cada etapa para garantir que você possa acompanhar facilmente.
 ## Pré-requisitos

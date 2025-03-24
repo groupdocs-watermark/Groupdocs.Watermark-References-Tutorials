@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki belir
 weight: 35
 url: /tr/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---
+
+# Word Belgelerinde Belirli Şekil İçin Metni Değiştirme
+
 ## giriiş
 Bu öğreticide, Word belgelerindeki belirli bir şeklin metnini değiştirmek için GroupDocs.Watermark for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Watermark for .NET, Word belgeleri de dahil olmak üzere çeşitli belge formatlarındaki filigranlarla çalışmaya yönelik çok çeşitli özellikler sağlayan güçlü bir kitaplıktır.
 ## Önkoşullar

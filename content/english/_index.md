@@ -8,6 +8,9 @@ url: /
 is_root: true
 ---
 
+# Master Document Security & Branding with GroupDocs.Watermark
+
+
 Welcome to the comprehensive tutorial hub for GroupDocs.Watermark, where we provide in-depth guides and examples for both .NET and Java platforms. Our resources are designed to help you master the art of adding and managing watermarks across a wide range of document formats. Whether you're a developer working with .NET or Java, our step-by-step tutorials will equip you with the knowledge and tools needed to enhance document security, maintain brand consistency, and protect intellectual property with ease. Explore our tutorials to unlock the full potential of GroupDocs.Watermark in your applications.
 
 

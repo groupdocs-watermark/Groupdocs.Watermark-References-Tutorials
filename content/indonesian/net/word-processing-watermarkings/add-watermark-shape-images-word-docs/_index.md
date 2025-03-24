@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air untuk membentuk gambar di dokum
 weight: 17
 url: /id/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Tambahkan Tanda Air ke Gambar Bentuk di Dokumen Word
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menambahkan tanda air untuk membentuk gambar dalam dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Watermarking adalah aspek penting dalam perlindungan dokumen, terutama ketika berhubungan dengan informasi sensitif atau rahasia. Dengan menambahkan tanda air untuk membentuk gambar, Anda dapat memastikan integritas dan keamanan dokumen Anda.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku dodawać znaki wodne adnotacji do do
 weight: 10
 url: /pl/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# Dodaj znak wodny adnotacji do pliku PDF
+
 ## Wstęp
 dziedzinie zarządzania dokumentami dodawanie znaków wodnych do plików PDF jest kluczowym aspektem, szczególnie ze względu na budowanie marki, bezpieczeństwo i identyfikację dokumentów. GroupDocs.Watermark dla .NET to potężna biblioteka ułatwiająca bezproblemową integrację znaków wodnych z różnymi formatami dokumentów, w tym plikami PDF. W tym samouczku omówimy krok po kroku proces dodawania znaków wodnych adnotacji do dokumentów PDF, wykorzystując funkcje udostępniane przez GroupDocs.Watermark dla .NET.
 ## Warunki wstępne

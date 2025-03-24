@@ -6,6 +6,9 @@ description: Tìm hiểu cách xóa hình mờ khỏi tệp PDF bằng GroupDocs
 weight: 34
 url: /vi/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---
+
+# Xóa hình mờ khỏi PDF
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc bảo vệ các tài liệu nhạy cảm bằng hình mờ là một thói quen phổ biến. Tuy nhiên, có những trường hợp bạn có thể cần xóa hình mờ khỏi tệp PDF vì nhiều lý do. Cho dù bạn đang chỉnh sửa tài liệu hay chỉ cần một phiên bản rõ ràng để trình bày, GroupDocs.Watermark for .NET cung cấp giải pháp liền mạch để xóa hình mờ khỏi tệp PDF.
 ## Điều kiện tiên quyết

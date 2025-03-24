@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、ドキュメント�
 weight: 25
 url: /ja/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
+
+# PDF から XObject 情報を抽出する
+
 ## 導入
 GroupDocs.Watermark for .NET は、PDF、Word、Excel、PowerPoint、画像などのさまざまなドキュメント形式のウォーターマークを操作するために設計された強力なドキュメント ウォーターマーク API です。これにより、開発者はドキュメント内の透かしをプログラムで追加、削除、検索、置換するための簡単なアプローチを得ることができます。会社のロゴ、著作権表示、または機密スタンプをドキュメントに追加する必要がある場合でも、GroupDocs.Watermark は直感的な API を使用してプロセスを簡素化します。
 ## 前提条件

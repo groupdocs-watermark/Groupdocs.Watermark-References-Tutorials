@@ -6,6 +6,9 @@ description: Fügen Sie mit GroupDocs.Watermark für .NET mühelos Wasserzeichen
 weight: 13
 url: /de/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Erhalten Sie unterstützte Dateiformate
+
 ## Einführung
 Das Anbringen von Wasserzeichen in Ihren Dokumenten ist ein entscheidender Schritt zum Schutz Ihrer digitalen Vermögenswerte. Ob es um den Schutz geistigen Eigentums, die Gewährleistung der Vertraulichkeit oder einfach um die Markenbildung geht, Wasserzeichen spielen eine entscheidende Rolle. Wenn Sie ein .NET-Entwickler sind und Wasserzeichenfunktionen in Ihre Anwendungen integrieren möchten, ist GroupDocs.Watermark für .NET ein leistungsstarkes und vielseitiges Tool, das Sie in Betracht ziehen sollten. Dieses Tutorial führt Sie durch die Grundlagen der Verwendung von GroupDocs.Watermark, von der Installation bis zum Anbringen Ihres ersten Wasserzeichens, und schlüsselt jeden Schritt auf, um sicherzustellen, dass Sie problemlos mitmachen können.
 ## Voraussetzungen

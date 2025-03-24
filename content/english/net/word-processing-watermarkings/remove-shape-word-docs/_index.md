@@ -6,6 +6,9 @@ description: Learn how to remove shapes from Word documents using GroupDocs.Wate
 weight: 30
 url: /net/word-processing-watermarkings/remove-shape-word-docs/
 ---
+
+# Remove Shape in Word Docs
+
 ## Introduction
 In the realm of document processing and manipulation, GroupDocs.Watermark for .NET emerges as a powerful toolset, enabling developers to seamlessly integrate watermarking functionalities into their .NET applications. This article delves into the intricacies of leveraging GroupDocs.Watermark for .NET to remove shapes within Word documents. By following a step-by-step guide, developers can grasp the process with ease and efficiency.
 ## Prerequisites

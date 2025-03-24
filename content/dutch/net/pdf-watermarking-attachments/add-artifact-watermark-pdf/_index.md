@@ -6,6 +6,9 @@ description: Leer hoe u moeiteloos artefactwatermerken aan PDF-bestanden kunt to
 weight: 11
 url: /nl/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# Artefactwatermerk toevoegen aan PDF
+
 ## Invoering
 Het toevoegen van watermerken aan PDF-bestanden is een cruciaal aspect van documentbeheer, vooral als het gaat om de bescherming van intellectueel eigendom of branding van documenten. Groupdocs.Watermark voor .NET biedt een robuuste oplossing voor het moeiteloos toevoegen van watermerken aan PDF-bestanden. In deze zelfstudie doorlopen we stap voor stap het proces van het toevoegen van een artefactwatermerk aan PDF-bestanden.
 ## Vereisten

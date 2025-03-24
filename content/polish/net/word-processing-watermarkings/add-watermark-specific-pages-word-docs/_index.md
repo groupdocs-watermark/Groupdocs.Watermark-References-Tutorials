@@ -6,6 +6,9 @@ description: Dowiedz się, jak bez wysiłku dodawać znaki wodne do określonych
 weight: 18
 url: /pl/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---
+
+# Dodaj znak wodny do określonych stron w dokumentach programu Word
+
 ## Wstęp
 W tym samouczku omówimy proces dodawania znaków wodnych do określonych stron w dokumentach programu Word przy użyciu programu Groupdocs.Watermark dla platformy .NET. Znak wodny jest kluczowym aspektem zarządzania dokumentami, zapewniającym bezpieczeństwo i branding dokumentów. Dzięki Groupdocs.Watermark dla .NET możesz łatwo i precyzyjnie dodawać tekstowe lub graficzne znaki wodne do dokumentów programu Word.
 ## Warunki wstępne

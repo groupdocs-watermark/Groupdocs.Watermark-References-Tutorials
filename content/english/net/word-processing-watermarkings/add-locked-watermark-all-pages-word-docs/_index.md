@@ -6,6 +6,9 @@ description: Secure your documents by adding locked watermarks using Groupdocs.W
 weight: 11
 url: /net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Add Locked Watermark to All Pages in Word Docs
+
 ## Introduction
 Adding watermarks to your documents is a vital step in securing and branding your content. Whether you're preventing unauthorized use or simply adding a professional touch, watermarks can serve multiple purposes. In this tutorial, we'll walk you through the process of adding a locked watermark to all pages of a Word document using Groupdocs.Watermark for .NET.
 ## Prerequisites

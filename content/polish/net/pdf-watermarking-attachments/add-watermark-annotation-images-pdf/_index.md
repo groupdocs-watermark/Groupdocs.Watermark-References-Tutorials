@@ -6,6 +6,9 @@ description: Dowiedz się, jak chronić dokumenty PDF, dodając znaki wodne do o
 weight: 17
 url: /pl/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# Dodaj znak wodny do obrazów adnotacji w formacie PDF
+
 ## Wstęp
 W tym samouczku omówimy, jak dodawać znaki wodne do obrazów adnotacji w dokumentach PDF przy użyciu narzędzia Groupdocs.Watermark dla platformy .NET. Znak wodny ma kluczowe znaczenie dla ochrony dokumentów przed nieuprawnionym użyciem lub dystrybucją. Postępując zgodnie z tym przewodnikiem krok po kroku, dowiesz się, jak skutecznie stosować tekstowe znaki wodne do obrazów adnotacji w plikach PDF.
 ## Warunki wstępne

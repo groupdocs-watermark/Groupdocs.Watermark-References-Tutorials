@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ với loại lề trang trong PD
 weight: 21
 url: /vi/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---
+
+# Thêm hình mờ với loại lề trang trong PDF
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc bảo mật tài liệu trở nên quan trọng hơn bao giờ hết. Một cách để đảm bảo tính toàn vẹn và xác thực của tài liệu của bạn là thêm hình mờ. Groupdocs.Watermark cho .NET là một công cụ đặc biệt được thiết kế để giúp quá trình này trở nên dễ dàng. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để thêm hình mờ có loại lề trang trong tệp PDF bằng Groupdocs.Watermark cho .NET.
 ## Điều kiện tiên quyết

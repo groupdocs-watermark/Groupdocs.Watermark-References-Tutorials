@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air ke gambar di dokumen Word mengg
 weight: 16
 url: /id/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Tambahkan Tanda Air ke Gambar Bagian di Dokumen Word
+
 ## Perkenalan
 Di dunia digital saat ini, melindungi dokumen Anda sangatlah penting. Menambahkan tanda air ke dokumen Word Anda adalah cara sederhana namun efektif untuk mengamankan konten Anda. Tutorial ini akan memandu Anda melalui proses menambahkan tanda air ke gambar bagian di dokumen Word menggunakan Groupdocs.Watermark untuk .NET. Baik Anda seorang pengembang yang ingin mengintegrasikan fitur ini ke dalam aplikasi Anda atau sekadar ingin melindungi dokumen Anda, panduan ini cocok untuk Anda.
 ## Prasyarat

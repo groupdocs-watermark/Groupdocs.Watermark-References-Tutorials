@@ -6,6 +6,9 @@ description: Leer hoe u watermerken aan documenten kunt toevoegen met Groupdocs.
 weight: 10
 url: /nl/net/document-savings/save-document-same-file-stream/
 ---
+
+# Document opslaan in hetzelfde bestand of dezelfde stream
+
 ## Invoering
 In het huidige digitale tijdperk is het toevoegen van watermerken aan documenten essentieel geworden voor het beschermen van intellectueel eigendom en het waarborgen van merkintegriteit. Groupdocs.Watermark voor .NET biedt een robuuste oplossing voor ontwikkelaars die watermerken naadloos in documenten willen insluiten. Deze uitgebreide handleiding leidt u door de stappen voor het opslaan van een document met een watermerk in hetzelfde bestand of dezelfde stream met Groupdocs.Watermark voor .NET.
 ## Vereisten

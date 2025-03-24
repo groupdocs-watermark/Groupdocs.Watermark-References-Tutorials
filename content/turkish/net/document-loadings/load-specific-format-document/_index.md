@@ -6,6 +6,9 @@ description: Bu adım adım kılavuzla Groupdocs for .NET'i kullanarak belgeleri
 weight: 12
 url: /tr/net/document-loadings/load-specific-format-document/
 ---
+
+# Belirli Formattaki Belgeyi Yükle
+
 ## giriiş
 Belgelere filigran eklemek, içeriğin korunması ve markalaşmanın sağlanması açısından çok önemli bir görevdir. Groupdocs.Watermark for .NET, bu süreci basitleştiren çok yönlü ve güçlü bir araçtır. İster metin belgeleri, elektronik tablolar, sunumlar veya resimlerle ilgileniyor olun, bu kılavuz size Groupdocs.Watermark for .NET'i kullanarak belirli formattaki belgeleri yükleme ve filigran ekleme adımlarında yol gösterecektir.
 ## Önkoşullar

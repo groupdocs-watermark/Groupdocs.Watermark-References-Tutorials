@@ -6,6 +6,9 @@ description: Könnyedén hozzáadhat vízjeleket a jelszóval védett Word dokum
 weight: 14
 url: /hu/net/document-loadings/load-password-protected-word-document/
 ---
+
+# Jelszóval védett Word dokumentum betöltése
+
 ## Bevezetés
 A digitális korban a dokumentumok védelme és hitelesítése fontosabb, mint valaha. A vízjelezés egy hatékony technika a fájlok védelmére, és a GroupDocs.Watermark for .NET segítségével ezt könnyedén megteheti. Ez az átfogó útmutató végigvezeti Önt a jelszóval védett Word-dokumentumok vízjelezésének folyamatán, lebontva az egyes lépéseket, hogy megértse és könnyen megvalósíthassa azokat.
 ## Előfeltételek

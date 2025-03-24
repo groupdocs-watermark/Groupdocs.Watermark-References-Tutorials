@@ -6,6 +6,9 @@ description: Groupdocs.Watermark for .NET'i kullanarak belgelere nasıl filigran
 weight: 10
 url: /tr/net/document-savings/save-document-same-file-stream/
 ---
+
+# Belgeyi Aynı Dosyaya veya Akışa Kaydetme
+
 ## giriiş
 Günümüzün dijital çağında, fikri mülkiyetin korunması ve marka bütünlüğünün sağlanması açısından belgelere filigran eklenmesi zorunlu hale geldi. Groupdocs.Watermark for .NET, filigranları belgelere sorunsuz bir şekilde gömmek isteyen geliştiriciler için güçlü bir çözüm sunar. Bu kapsamlı kılavuz, Groupdocs.Watermark for .NET'i kullanarak filigran içeren bir belgeyi aynı dosyaya veya akışa kaydetme adımlarında size yol gösterecektir.
 ## Önkoşullar

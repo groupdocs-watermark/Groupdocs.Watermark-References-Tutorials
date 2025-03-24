@@ -6,6 +6,9 @@ description: Dễ dàng thay thế hình ảnh trong tệp PDF bằng GroupDocs.
 weight: 39
 url: /vi/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
+
+# Thay thế hình ảnh cho XObject cụ thể trong PDF
+
 ## Giới thiệu
 Chào mừng bạn đến với hướng dẫn chi tiết của chúng tôi về cách thay thế hình ảnh cho một XObject cụ thể trong tệp PDF bằng GroupDocs.Watermark cho .NET. Nếu bạn cần quản lý hình mờ hoặc sửa đổi nội dung trong tệp PDF của mình thì bạn đã đến đúng nơi. Hướng dẫn này sẽ đưa bạn qua từng bước, đảm bảo bạn có thể tự tin cập nhật tài liệu PDF của mình bằng hình ảnh mới. Hãy đi sâu vào nó!
 ## Điều kiện tiên quyết

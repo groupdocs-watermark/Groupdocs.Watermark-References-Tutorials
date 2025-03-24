@@ -6,6 +6,9 @@ description: Effortlessly link headers and footers in Word documents using Group
 weight: 25
 url: /net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Link All Headers/Footers in Section in Word Docs
+
 ## Introduction
 When working with Word documents, it's often necessary to link headers and footers across different sections for consistency and coherence. This tutorial will guide you through the process step by step using GroupDocs.Watermark for .NET.
 ## Import Namespaces

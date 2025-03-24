@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 从 Word 文档中�
 weight: 32
 url: /zh/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# 从 Word 文档中的部分中删除水印
+
 ## 介绍
 在数字时代，保护文档的完整性至关重要，尤其是涉及敏感信息或专有内容时。水印是一种常用的技术，用于声明所有权、品牌标识或简单地指示文档的状态。然而，在某些情况下，由于编辑要求或隐私问题，有必要删除水印。
 ## 先决条件

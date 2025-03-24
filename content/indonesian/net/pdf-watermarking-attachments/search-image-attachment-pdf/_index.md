@@ -6,6 +6,9 @@ description: Cari gambar secara efisien dalam lampiran PDF menggunakan GroupDocs
 weight: 46
 url: /id/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---
+
+# Cari Gambar di Lampiran PDF
+
 ## Perkenalan
 GroupDocs.Watermark for .NET adalah API canggih yang dirancang untuk memfasilitasi manipulasi dan pengelolaan tanda air secara lancar dalam berbagai format dokumen, termasuk PDF. Baik Anda perlu menambah, menghapus, atau mencari tanda air dalam lampiran PDF, alat serbaguna ini menawarkan solusi komprehensif.
 ## Prasyarat

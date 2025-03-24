@@ -6,6 +6,9 @@ description: Scopri come sostituire il testo per forme specifiche nei documenti 
 weight: 35
 url: /it/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---
+
+# Sostituisci il testo con una forma specifica nei documenti Word
+
 ## introduzione
 In questo tutorial esploreremo come utilizzare GroupDocs.Watermark per .NET per sostituire il testo per una forma specifica nei documenti di Word. GroupDocs.Watermark per .NET è una potente libreria che fornisce un'ampia gamma di funzionalità per lavorare con filigrane in vari formati di documenti, inclusi documenti Word.
 ## Prerequisiti

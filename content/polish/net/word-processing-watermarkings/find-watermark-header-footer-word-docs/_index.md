@@ -6,6 +6,9 @@ description: Dowiedz się, jak skutecznie znajdować i usuwać znaki wodne z dok
 weight: 22
 url: /pl/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Znajdź znak wodny w nagłówku/stopce w dokumentach programu Word
+
 ## Wstęp
 W świecie zarządzania i ochrony dokumentów znak wodny odgrywa kluczową rolę. Niezależnie od tego, czy chodzi o budowanie marki, ochronę praw autorskich, czy śledzenie dokumentów, dodawanie znaków wodnych do dokumentów jest niezbędne. Jednak skuteczne znajdowanie i usuwanie znaków wodnych, szczególnie w dużych zestawach dokumentów, może być trudnym zadaniem. W tym miejscu do gry wchodzi GroupDocs.Watermark dla .NET. W tym samouczku omówimy, jak znaleźć znaki wodne w nagłówkach i stopkach dokumentów programu Word przy użyciu GroupDocs.Watermark dla .NET, dzieląc każdy krok w celu zapewnienia wszechstronnego zrozumienia.
 ## Warunki wstępne

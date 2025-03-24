@@ -6,6 +6,9 @@ description: GroupDocs for .NET を使用すると、Word ドキュメントか�
 weight: 24
 url: /ja/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# Word ドキュメントで図形情報を取得する
+
 ## 導入
 データが重要なデジタル環境では、ドキュメントから有意義な洞察を抽出することが最も重要です。 GroupDocs.Watermark for .NET を使用すると、開発者はドキュメント構造を詳しく調べて、貴重な情報を簡単に抽出できます。このチュートリアルでは、この強力なツールを活用して Word 文書から形状情報を取得する方法を段階的に説明します。
 ## 前提条件

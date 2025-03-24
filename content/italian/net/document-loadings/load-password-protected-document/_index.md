@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane ai documenti protetti da password 
 weight: 13
 url: /it/net/document-loadings/load-password-protected-document/
 ---
+
+# Carica documento protetto da password
+
 ## introduzione
 Desideri proteggere i tuoi documenti aggiungendo filigrane, anche se sono protetti da password? Groupdocs.Watermark per .NET è un potente strumento che ti consente di fare proprio questo. In questo tutorial ti guideremo attraverso il processo di caricamento di un documento protetto da password e di aggiunta di una filigrana utilizzando Groupdocs.Watermark per .NET. Immergiamoci!
 ## Prerequisiti

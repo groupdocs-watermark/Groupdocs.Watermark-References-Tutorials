@@ -6,6 +6,9 @@ description: GroupDocs for .NET を使用して、形状設定を含むウォー
 weight: 20
 url: /ja/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Word ドキュメントで図形設定を使用して透かしを追加する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Watermark for .NET を使用して、形状設定を含むウォーターマークを Word 文書に追加するプロセスを説明します。
 ## 前提条件

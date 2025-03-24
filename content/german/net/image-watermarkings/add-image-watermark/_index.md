@@ -6,6 +6,9 @@ description: Erfahren Sie in unserem ausführlichen Schritt-für-Schritt-Tutoria
 weight: 11
 url: /de/net/image-watermarkings/add-image-watermark/
 ---
+
+# Bildwasserzeichen hinzufügen
+
 ## Einführung
 Willkommen zu dieser umfassenden Anleitung zum Hinzufügen von Bildwasserzeichen mit GroupDocs.Watermark für .NET! Wasserzeichen sind eine wirksame Möglichkeit, Ihre Dokumente und Bilder vor unbefugter Nutzung zu schützen und sicherzustellen, dass Ihr geistiges Eigentum sicher bleibt. In diesem Tutorial führen wir Sie durch den gesamten Prozess, von der Einrichtung Ihrer Umgebung bis zum Anbringen eines Wasserzeichens auf Ihren Dokumenten. Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst anfangen, dieser Leitfaden ist hilfreich und leicht zu befolgen.
 ## Voraussetzungen

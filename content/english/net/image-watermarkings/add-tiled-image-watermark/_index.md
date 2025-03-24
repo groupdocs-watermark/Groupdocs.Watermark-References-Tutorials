@@ -6,6 +6,9 @@ description: Learn how to add tiled image watermarks to your documents using Gro
 weight: 10
 url: /net/image-watermarkings/add-tiled-image-watermark/
 ---
+
+# Add Tiled Image Watermark
+
 ## Introduction
 GroupDocs.Watermark for .NET is a powerful API that allows developers to add, remove, and search watermarks in various document formats programmatically. In this tutorial, we will guide you through the process of adding a tiled image watermark to your documents using GroupDocs.Watermark for .NET.
 ## Prerequisites

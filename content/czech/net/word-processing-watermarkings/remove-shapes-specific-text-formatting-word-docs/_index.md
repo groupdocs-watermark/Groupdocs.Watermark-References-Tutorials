@@ -6,6 +6,9 @@ description: Naučte se odstraňovat tvary se specifickým formátováním textu
 weight: 31
 url: /cs/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---
+
+# Odstraňte tvary se specifickým formátováním textu v dokumentech Word
+
 ## Úvod
 GroupDocs.Watermark for .NET je výkonné API, které umožňuje vývojářům programově manipulovat s vodoznaky v různých formátech dokumentů. V tomto tutoriálu se zaměříme na odstraňování tvarů se specifickým formátováním textu v dokumentech aplikace Word pomocí GroupDocs.Watermark for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento podrobný průvodce vám pomůže porozumět procesu efektivního a efektivního odstraňování tvarů.
 ## Předpoklady

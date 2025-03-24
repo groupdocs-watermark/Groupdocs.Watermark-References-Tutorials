@@ -6,6 +6,9 @@ description: Erfahren Sie in unserer einfachen Schritt-für-Schritt-Anleitung, w
 weight: 12
 url: /de/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Fügen Sie bestimmten Seiten in Word-Dokumenten ein gesperrtes Wasserzeichen hinzu
+
 ## Einführung
 Möchten Sie bestimmten Seiten in Ihren Word-Dokumenten ein Wasserzeichen hinzufügen, möchten es aber sperren, damit es nicht einfach entfernt oder bearbeitet werden kann? Hier sind Sie richtig! In diesem Tutorial führen wir Sie durch den Prozess des Hinzufügens eines gesperrten Wasserzeichens zu bestimmten Seiten in Word-Dokumenten mithilfe von GroupDocs.Watermark für .NET. Diese leistungsstarke Bibliothek erleichtert das Anwenden, Verwalten und Anpassen von Wasserzeichen auf eine Vielzahl von Dokumenttypen. Ganz gleich, ob Sie Entwickler sind oder nur jemand, der seine Dokumente schützen muss, dieser Leitfaden führt Sie auf unkomplizierte Weise durch jeden Schritt.
 ## Voraussetzungen

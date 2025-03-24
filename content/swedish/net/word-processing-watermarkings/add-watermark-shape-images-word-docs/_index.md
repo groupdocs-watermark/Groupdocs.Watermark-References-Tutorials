@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar för att forma bilder 
 weight: 17
 url: /sv/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Lägg till vattenstämpel för att forma bilder i Word Docs
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man lägger till en vattenstämpel för att forma bilder i Word-dokument med GroupDocs.Watermark för .NET. Vattenmärkning är en avgörande aspekt av dokumentskydd, särskilt när man hanterar känslig eller konfidentiell information. Genom att lägga till vattenstämplar för att forma bilder kan du säkerställa integriteten och säkerheten för dina dokument.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs for .NET 向 Word 文档中的图像�
 weight: 16
 url: /zh/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# 为 Word 文档中的分区图像添加水印
+
 ## 介绍
 在当今的数字世界中，保护您的文档至关重要。向 Word 文档添加水印是保护内容安全的一种简单而有效的方法。本教程将指导您完成使用 Groupdocs.Watermark for .NET 向 Word 文档中的分区图像添加水印的过程。无论您是希望将此功能集成到应用程序中的开发人员，还是只是想保护您的文档，本指南都适合您。
 ## 先决条件

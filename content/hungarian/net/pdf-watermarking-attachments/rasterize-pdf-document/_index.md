@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan raszterizálhat PDF dokumentumokat a GroupDocs.
 weight: 27
 url: /hu/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# PDF-dokumentum raszterizálása
+
 ## Bevezetés
 dokumentumkezelés és -manipuláció területén a GroupDocs.Watermark for .NET hatékony eszköz, amely robusztus képességeket kínál vízjelek hozzáadására, eltávolítására és keresésére különféle dokumentumformátumokban. Legyen szó dokumentumainak szerzői jogi megjegyzésekkel való védelméről, vállalati logók hozzáadásával a márkaépítéshez, vagy egyszerűen bélyegzőkkel történő megjegyzésekről, a GroupDocs.Watermark leegyszerűsíti a folyamatot intuitív API-jával és kiterjedt szolgáltatáskészletével.
 ## Előfeltételek

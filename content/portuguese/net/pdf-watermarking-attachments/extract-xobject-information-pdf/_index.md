@@ -6,6 +6,9 @@ description: Desbloqueie o poder da marca d'água em documentos com GroupDocs.Wa
 weight: 25
 url: /pt/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
+
+# Extraia informações do XObject do PDF
+
 ## Introdução
 GroupDocs.Watermark for .NET é uma poderosa API de marca d'água de documentos projetada para manipular marcas d'água em vários formatos de documentos, como PDF, Word, Excel, PowerPoint e imagens. Ele fornece aos desenvolvedores uma abordagem direta para adicionar, remover, pesquisar e substituir marcas d'água em documentos de forma programática. Se você precisa adicionar um logotipo de empresa, aviso de direitos autorais ou carimbo confidencial aos seus documentos, GroupDocs.Watermark simplifica o processo com sua API intuitiva.
 ## Pré-requisitos

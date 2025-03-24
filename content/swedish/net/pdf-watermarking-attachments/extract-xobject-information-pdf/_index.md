@@ -6,6 +6,9 @@ description: Lås upp kraften i dokumentvattenmärkning med GroupDocs.Watermark 
 weight: 25
 url: /sv/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
+
+# Extrahera XObject Information från PDF
+
 ## Introduktion
 GroupDocs.Watermark for .NET är ett kraftfullt dokumentvattenmärke-API utformat för att manipulera vattenstämplar i olika dokumentformat som PDF, Word, Excel, PowerPoint och bilder. Det ger utvecklare en enkel metod för att lägga till, ta bort, söka och ersätta vattenstämplar i dokument programmatiskt. Oavsett om du behöver lägga till en företagslogotyp, upphovsrättsmeddelande eller konfidentiell stämpel till dina dokument, förenklar GroupDocs.Watermark processen med sitt intuitiva API.
 ## Förutsättningar

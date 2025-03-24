@@ -6,6 +6,9 @@ description: Learn how to add watermarks to XObjects in PDF using Groupdocs.Wate
 weight: 20
 url: /net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# Add Watermark to XObjects in PDF
+
 ## Introduction
 Watermarking PDFs is a crucial step for ensuring your documents are protected from unauthorized use. With Groupdocs.Watermark for .NET, adding watermarks to XObjects within your PDFs has never been easier. In this tutorial, we'll walk you through the process step-by-step, ensuring you can confidently apply watermarks to your PDF documents. Let's get started!
 ## Prerequisites

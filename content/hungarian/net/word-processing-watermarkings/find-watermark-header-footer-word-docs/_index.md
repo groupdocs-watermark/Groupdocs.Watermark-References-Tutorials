@@ -6,6 +6,9 @@ description: Tanulja meg, hogyan találhat meg és távolíthat el hatékonyan v
 weight: 22
 url: /hu/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Keresse meg a Vízjelet a Word Docs fejlécében/láblécében
+
 ## Bevezetés
 A dokumentumkezelés és -védelem világában a vízjel döntő szerepet játszik. Legyen szó márkaépítésről, szerzői jogvédelemről vagy dokumentumok nyomon követéséről, vízjelek hozzáadása a dokumentumokhoz elengedhetetlen. A vízjelek hatékony megtalálása és eltávolítása azonban, különösen nagy dokumentumkészleteknél, ijesztő feladat lehet. Itt jön képbe a GroupDocs.Watermark for .NET. Ebben az oktatóanyagban megvizsgáljuk, hogyan találhatunk vízjeleket Word-dokumentumok fejlécében és láblécében a GroupDocs.Watermark for .NET használatával, az egyes lépéseket lebontva az átfogó megértés érdekében.
 ## Előfeltételek

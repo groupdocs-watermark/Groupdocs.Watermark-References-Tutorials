@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan állíthat be különböző fejlécet és lábl
 weight: 36
 url: /hu/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Állítson be más első oldal fejlécet/láblécet a Word Dokumentumokban
+
 ## Bevezetés
 dokumentumkezelés és -kezelés területén a GroupDocs.Watermark for .NET hatékony eszközként jelenik meg, amely zökkenőmentes integrációt és robusztus funkciókat kínál a dokumentumok vízjelezéséhez. A dokumentumfeldolgozás egyik általános követelménye, hogy a Word dokumentumok első oldalán különböző fejléceket és lábléceket kell beállítani. Ez az oktatóanyag megvilágítja a feladat elérésének folyamatát a GroupDocs.Watermark for .NET használatával, az egyes lépéseket könnyen érthető szegmensekre bontva.
 ## Előfeltételek

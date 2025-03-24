@@ -6,6 +6,9 @@ description: A GroupDocs.Watermark for .NET segítségével felszabadíthatja a 
 weight: 25
 url: /hu/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
+
+# Az XObject információ kibontása PDF-ből
+
 ## Bevezetés
 A GroupDocs.Watermark for .NET egy hatékony dokumentum-vízjel-kezelő API, amelyet különféle dokumentumformátumok, például PDF, Word, Excel, PowerPoint és képek vízjeleinek kezelésére terveztek. Egyszerű megközelítést biztosít a fejlesztőknek a dokumentumokban lévő vízjelek programozott hozzáadásához, eltávolításához, kereséséhez és cseréjéhez. Akár vállalati logót, szerzői jogi megjegyzést vagy bizalmas bélyegzőt kell hozzáadnia dokumentumaihoz, a GroupDocs.Watermark intuitív API-jával leegyszerűsíti a folyamatot.
 ## Előfeltételek

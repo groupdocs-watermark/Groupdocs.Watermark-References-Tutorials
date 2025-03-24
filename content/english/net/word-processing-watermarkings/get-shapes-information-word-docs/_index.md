@@ -6,6 +6,9 @@ description: Unlock valuable insights from Word documents effortlessly with Grou
 weight: 24
 url: /net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# Get Shapes Information in Word Docs
+
 ## Introduction
 In the digital landscape where data is king, extracting meaningful insights from documents is paramount. GroupDocs.Watermark for .NET empowers developers to delve into document structures, extracting valuable information effortlessly. In this tutorial, we will explore how to leverage this powerful tool to obtain shapes information from Word documents step by step.
 ## Prerequisites

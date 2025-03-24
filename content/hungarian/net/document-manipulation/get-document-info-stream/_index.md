@@ -6,6 +6,9 @@ description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, 
 weight: 12
 url: /hu/net/document-manipulation/get-document-info-stream/
 ---
+
+# Dokumentuminformációk lekérése a Streamről
+
 ## Bevezetés
 A mai digitális korban a dokumentumok integritásának védelme és kezelése kulcsfontosságú. Legyen szó üzleti szakemberről, fejlesztőről vagy bizalmas információkat kezelő személyről, a vízjelek hozzáadása, kivonatolása vagy manipulálása elengedhetetlen a dokumentumokban. A GroupDocs.Watermark for .NET hatékony eszköztárat kínál, amely segít elérni ezt. Ez a cikk végigvezeti Önt a GroupDocs.Watermark for .NET használatán, amellyel dokumentumadatokat kaphat egy adatfolyamból, és lépésről lépésre bemutatja a folyamatot. A végére jártas lesz ennek a funkciónak a használatában, amellyel javíthatja dokumentumkezelési képességeit.
 ## Előfeltételek

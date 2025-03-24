@@ -6,6 +6,9 @@ description: Tìm hiểu cách thay thế văn bản cho các hình dạng cụ 
 weight: 35
 url: /vi/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---
+
+# Thay thế văn bản cho hình dạng cụ thể trong tài liệu Word
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Watermark cho .NET để thay thế văn bản cho một hình dạng cụ thể trong tài liệu Word. GroupDocs.Watermark for .NET là một thư viện mạnh mẽ cung cấp nhiều tính năng để làm việc với hình mờ ở nhiều định dạng tài liệu khác nhau, bao gồm cả tài liệu Word.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Pelajari cara menghapus tanda air dari file PDF menggunakan GroupDo
 weight: 34
 url: /id/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---
+
+# Hapus Tanda Air dari PDF
+
 ## Perkenalan
 Di era digital saat ini, melindungi dokumen sensitif dengan tanda air adalah praktik yang umum. Namun, ada kalanya Anda mungkin perlu menghapus tanda air dari file PDF karena berbagai alasan. Baik Anda sedang mengedit dokumen atau hanya memerlukan versi bersih untuk presentasi, GroupDocs.Watermark untuk .NET memberikan solusi sempurna untuk menghilangkan tanda air dari file PDF.
 ## Prasyarat

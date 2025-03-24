@@ -6,6 +6,9 @@ description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, 
 weight: 12
 url: /hu/net/document-loadings/load-specific-format-document/
 ---
+
+# Töltsön be egy adott formátumú dokumentumot
+
 ## Bevezetés
 A vízjelek hozzáadása a dokumentumokhoz kulcsfontosságú feladat a tartalomvédelem és a márkaépítés biztosítása szempontjából. A Groupdocs.Watermark for .NET egy sokoldalú és hatékony eszköz, amely leegyszerűsíti ezt a folyamatot. Függetlenül attól, hogy szöveges dokumentumokkal, táblázatokkal, prezentációkkal vagy képekkel foglalkozik, ez az útmutató végigvezeti a Groupdocs.Watermark for .NET segítségével meghatározott formátumú dokumentumok betöltésének és vízjellel történő betöltésének lépésein.
 ## Előfeltételek

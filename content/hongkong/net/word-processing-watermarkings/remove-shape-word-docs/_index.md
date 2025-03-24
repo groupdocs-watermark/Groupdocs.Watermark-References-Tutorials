@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 從 Word 文件中�
 weight: 30
 url: /zh-hant/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
+
+# 刪除 Word 文件中的形狀
+
 ## 介紹
 在文件處理和操作領域，GroupDocs.Watermark for .NET 作為一個強大的工具集出現，使開發人員能夠將浮水印功能無縫整合到他們的 .NET 應用程式中。本文深入探討了利用 GroupDocs.Watermark for .NET 刪除 Word 文件中的形狀的複雜性。透過遵循逐步指南，開發人員可以輕鬆且有效率地掌握流程。
 ## 先決條件

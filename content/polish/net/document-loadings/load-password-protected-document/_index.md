@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać znaki wodne do dokumentów chronionych h
 weight: 13
 url: /pl/net/document-loadings/load-password-protected-document/
 ---
+
+# Załaduj dokument chroniony hasłem
+
 ## Wstęp
 Czy chcesz chronić swoje dokumenty, dodając znaki wodne, nawet jeśli są chronione hasłem? Groupdocs.Watermark dla .NET to potężne narzędzie, które Ci to umożliwi. W tym samouczku przeprowadzimy Cię przez proces ładowania dokumentu chronionego hasłem i dodawania do niego znaku wodnego za pomocą Groupdocs.Watermark dla .NET. Zanurzmy się!
 ## Warunki wstępne

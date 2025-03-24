@@ -6,6 +6,9 @@ description: GroupDocs için Watermark'ı kullanarak Word belgelerine şekil aya
 weight: 20
 url: /tr/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Word Dokümanlarında Şekil Ayarlarıyla Filigran Ekleme
+
 ## giriiş
 Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak Word belgelerine şekil ayarlarıyla filigran ekleme sürecini anlatacağız.
 ## Önkoşullar

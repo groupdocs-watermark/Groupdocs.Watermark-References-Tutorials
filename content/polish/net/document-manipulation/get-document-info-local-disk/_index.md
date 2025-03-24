@@ -6,6 +6,9 @@ description: tego obszernego przewodnika krok po kroku dowiesz się, jak dodawa�
 weight: 11
 url: /pl/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# Pobierz informacje o dokumencie z dysku lokalnego
+
 ## Wstęp
 Witamy w najlepszym przewodniku na temat korzystania z GroupDocs.Watermark dla .NET! Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten artykuł przeprowadzi Cię przez podstawowe informacje dotyczące znakowania wodnego w dokumentach za pomocą tego potężnego narzędzia. Ostatecznie będziesz profesjonalistą w osadzaniu znaków wodnych w swoich dokumentach, zapewniając ich ochronę i oznakowanie marki zgodnie ze specyfikacjami.
 ## Warunki wstępne

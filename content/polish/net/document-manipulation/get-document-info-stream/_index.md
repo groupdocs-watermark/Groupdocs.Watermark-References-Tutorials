@@ -6,6 +6,9 @@ description: Z tego przewodnika krok po kroku dowiesz się, jak uzyskać informa
 weight: 12
 url: /pl/net/document-manipulation/get-document-info-stream/
 ---
+
+# Uzyskaj informacje o dokumencie ze strumienia
+
 ## Wstęp
 W dzisiejszej epoce cyfrowej ochrona integralności dokumentów i zarządzanie nią mają kluczowe znaczenie. Niezależnie od tego, czy jesteś specjalistą biznesowym, programistą czy osobą zajmującą się poufnymi informacjami, konieczność dodawania, wyodrębniania lub manipulowania znakami wodnymi w dokumentach jest niezbędna. GroupDocs.Watermark dla .NET udostępnia potężny zestaw narzędzi, który pomoże Ci to osiągnąć. W tym artykule omówiono korzystanie z programu GroupDocs.Watermark dla platformy .NET w celu uzyskania informacji o dokumentach ze strumienia, a także przedstawiono samouczek krok po kroku ułatwiający ten proces. Pod koniec będziesz biegły w korzystaniu z tej funkcji w celu zwiększenia swoich możliwości zarządzania dokumentami.
 ## Warunki wstępne

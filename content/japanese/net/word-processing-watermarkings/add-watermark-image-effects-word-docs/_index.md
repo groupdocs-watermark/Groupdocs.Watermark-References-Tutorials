@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、画像効果のあ�
 weight: 19
 url: /ja/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---
+
+# Word ドキュメントに画像効果を使用して透かしを追加する
+
 ## 導入
 目を引く透かしを使用して、Word 文書に華やかさを加えたいと考えていますか? GroupDocs.Watermark for .NET があなたをサポートします。この包括的なガイドでは、GroupDocs for .NET を使用して、素晴らしい画像効果を持つウォーターマークを Word 文書に追加するプロセスについて説明します。経験豊富な開発者でも初心者でも、このステップバイステップのチュートリアルを読むと、プロセスが簡単になります。
 ## 前提条件

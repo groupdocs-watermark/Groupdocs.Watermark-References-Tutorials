@@ -6,6 +6,9 @@ description: Verknüpfen Sie mühelos Kopf- und Fußzeilen in Word-Dokumenten mi
 weight: 25
 url: /de/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Verknüpfen Sie alle Kopf- und Fußzeilen in Abschnitten in Word-Dokumenten
+
 ## Einführung
 Bei der Arbeit mit Word-Dokumenten ist es aus Gründen der Konsistenz und Kohärenz häufig erforderlich, Kopf- und Fußzeilen über verschiedene Abschnitte hinweg zu verknüpfen. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess mit GroupDocs.Watermark für .NET.
 ## Namespaces importieren

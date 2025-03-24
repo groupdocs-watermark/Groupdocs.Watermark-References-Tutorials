@@ -6,6 +6,9 @@ description: Discover how to replace text for specific artifacts in PDF document
 weight: 42
 url: /net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---
+
+# Replace Text for Specific Artifact in PDF
+
 ## Introduction
 In today's digital age, protecting the integrity and confidentiality of documents is paramount. Whether you're a legal professional safeguarding sensitive contracts or a business executive ensuring the security of proprietary information, the need for reliable document protection cannot be overstated. GroupDocs.Watermark for .NET emerges as a robust solution, offering seamless integration and powerful functionalities to watermark and manipulate documents effortlessly.
 ## Prerequisites

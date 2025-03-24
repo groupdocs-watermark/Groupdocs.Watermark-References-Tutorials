@@ -6,6 +6,9 @@ description: Naučte se přidávat textové a obrazové vodoznaky na konkrétní
 weight: 15
 url: /cs/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# Přidejte vodoznaky na konkrétní stránky v PDF
+
 ## Úvod
 Přidání vodoznaků do dokumentů PDF je zásadním krokem při ochraně vašeho obsahu a prosazování vašeho vlastnictví. Ať už označujete koncept, zajišťujete citlivé informace nebo jednoduše přidáváte značku, vodoznaky jsou účinným nástrojem. V tomto tutoriálu prozkoumáme, jak používat Groupdocs.Watermark pro .NET k přidávání textových i obrazových vodoznaků na konkrétní stránky v souborech PDF. Rozdělíme proces do zvládnutelných kroků a zajistíme, že budete moci tyto funkce sledovat a implementovat do svých projektů.
 ## Předpoklady

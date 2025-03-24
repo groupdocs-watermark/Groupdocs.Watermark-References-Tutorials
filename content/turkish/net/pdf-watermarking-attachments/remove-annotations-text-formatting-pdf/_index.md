@@ -6,6 +6,9 @@ description: Groupdocs for .NET'i kullanarak PDF belgelerindeki belirli metin fo
 weight: 30
 url: /tr/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# PDF'de Belirli Metin Formatına Sahip Ek Açıklamaları Kaldırma
+
 ## giriiş
 Bu öğreticide, Groupdocs.Watermark for .NET'i kullanarak bir PDF belgesindeki belirli metin biçimlendirmesine sahip ek açıklamaları kaldırma sürecinde size yol göstereceğiz. Bu kitaplık, filigranlarla, ek açıklamalarla ve çeşitli formatlardaki diğer belge öğeleriyle çalışmak için güçlü özellikler sağlar.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Aprenda como encontrar e remover marcas d’água de documentos do 
 weight: 22
 url: /pt/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Encontre marca d’água no cabeçalho/rodapé em documentos do Word
+
 ## Introdução
 No mundo do gerenciamento e proteção de documentos, a marca d'água desempenha um papel fundamental. Seja para fins de marca, proteção de direitos autorais ou rastreamento de documentos, adicionar marcas d'água aos seus documentos é essencial. No entanto, encontrar e remover marcas d'água de forma eficiente, especialmente em grandes conjuntos de documentos, pode ser uma tarefa difícil. É aqui que o GroupDocs.Watermark for .NET entra em ação. Neste tutorial, nos aprofundaremos em como encontrar marcas d’água em cabeçalhos e rodapés de documentos do Word usando GroupDocs.Watermark for .NET, detalhando cada etapa para garantir uma compreensão abrangente.
 ## Pré-requisitos

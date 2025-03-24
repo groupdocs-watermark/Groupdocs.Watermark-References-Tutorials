@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinin bölüm
 weight: 26
 url: /tr/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Word Belgelerindeki Bölümdeki Bağlantı Üstbilgisi/Altbilgisi
+
 ## giriiş
 .NET geliştirme dünyasında, ister hassas bilgileri koruyor olun ister marka öğeleri ekliyor olun, Word belgelerindeki filigranları yönetmek çok önemli bir görev olabilir. Neyse ki, GroupDocs.Watermark for .NET, filigranları verimli bir şekilde işlemek için güçlü bir çözüm sağlar. Bu öğreticide, GroupDocs.Watermark'ı kullanarak Word belgelerinin bölümlerindeki üstbilgileri ve altbilgileri nasıl bağlayacağınızı keşfedeceğiz.
 ## Önkoşullar

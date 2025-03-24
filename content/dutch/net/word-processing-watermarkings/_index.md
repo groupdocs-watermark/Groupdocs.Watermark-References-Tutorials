@@ -6,6 +6,9 @@ description: Ontdek essentiële GroupDocs.Watermark voor .NET-tutorials om water
 weight: 26
 url: /nl/net/word-processing-watermarkings/
 ---
+
+# Watermerken voor tekstverwerking
+
 ## Invoering
 
 Het van een watermerk voorzien van uw Word-documenten is een belangrijke stap bij het beveiligen van uw inhoud en het vestigen van uw merk. Met GroupDocs.Watermark voor .NET wordt dit proces eenvoudig en efficiënt. Of u nu afbeeldingswatermerken aan kopteksten toevoegt of watermerken op specifieke pagina's vergrendelt, deze tutorials begeleiden u bij elke stap, zodat uw documenten zowel beschermd als professioneel zijn.

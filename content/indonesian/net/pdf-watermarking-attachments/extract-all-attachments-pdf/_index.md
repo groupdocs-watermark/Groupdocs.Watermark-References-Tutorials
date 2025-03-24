@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak semua lampiran dari PDF menggunakan Group
 weight: 22
 url: /id/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
+
+# Ekstrak Semua Lampiran dari PDF
+
 ## Perkenalan
 Apakah Anda ingin mengekstrak lampiran dari dokumen PDF dengan mudah? Nah, Anda berada di tempat yang tepat! Dalam tutorial komprehensif ini, kami akan memandu Anda melalui proses mengekstraksi semua lampiran dari PDF menggunakan Groupdocs.Watermark untuk .NET. Pustaka yang kuat ini memungkinkan pengembang untuk mengelola tanda air dalam berbagai format dokumen, tetapi juga mencakup kemampuan yang kuat untuk mengekstraksi file yang tertanam. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan langkah demi langkah ini akan membuat prosesnya menjadi mudah.
 ## Prasyarat

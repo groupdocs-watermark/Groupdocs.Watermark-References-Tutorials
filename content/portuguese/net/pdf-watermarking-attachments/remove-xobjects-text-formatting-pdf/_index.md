@@ -6,6 +6,9 @@ description: Remova facilmente XObjects com formatação de texto específica de
 weight: 36
 url: /pt/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# Remover XObjects com Formatação de Texto Específica em PDF
+
 ## Introdução
 Colocar marcas d'água em documentos é uma parte crucial para garantir sua autenticidade e proteger informações confidenciais. GroupDocs.Watermark for .NET fornece uma solução abrangente para adicionar, modificar e remover marcas d'água de vários formatos de documentos. Neste tutorial, vamos nos aprofundar em como você pode remover XObjects com formatação de texto específica de documentos PDF usando GroupDocs.Watermark for .NET.
 ## Pré-requisitos

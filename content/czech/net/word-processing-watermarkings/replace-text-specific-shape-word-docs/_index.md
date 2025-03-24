@@ -6,6 +6,9 @@ description: Naučte se, jak nahradit text pro konkrétní tvary v dokumentech a
 weight: 35
 url: /cs/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---
+
+# Nahraďte text za konkrétní tvar v dokumentech Word
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak použít GroupDocs.Watermark pro .NET k nahrazení textu za konkrétní tvar v dokumentech aplikace Word. GroupDocs.Watermark for .NET je výkonná knihovna, která poskytuje širokou škálu funkcí pro práci s vodoznaky v různých formátech dokumentů, včetně dokumentů Word.
 ## Předpoklady

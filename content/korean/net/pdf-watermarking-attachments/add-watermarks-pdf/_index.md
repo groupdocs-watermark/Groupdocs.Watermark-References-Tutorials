@@ -6,6 +6,9 @@ description: 포괄적인 단계별 가이드를 통해 .NET용 GroupDocs.Waterm
 weight: 14
 url: /ko/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---
+
+# PDF에 워터마크 추가
+
 ## 소개
 문서를 보호하거나 로고로 브랜드를 지정하기 위해 PDF에 워터마크를 추가하려고 하시나요? 더 이상 보지 마세요! 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 PDF 파일에 텍스트 및 이미지 워터마크를 추가하는 과정을 자세히 살펴보겠습니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 가이드는 워터마크를 쉽고 정확하게 적용할 수 있도록 각 단계를 안내합니다.
 ## 전제조건

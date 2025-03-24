@@ -6,6 +6,9 @@ description: Узнайте, как добавлять водяные знаки
 weight: 20
 url: /ru/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Добавьте водяной знак с настройками фигуры в документах Word
+
 ## Введение
 В этом уроке мы рассмотрим процесс добавления водяного знака с настройками формы в документы Word с помощью GroupDocs.Watermark для .NET.
 ## Предварительные условия

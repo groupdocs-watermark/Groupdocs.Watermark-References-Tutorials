@@ -6,6 +6,9 @@ description: Vincule facilmente cabeçalhos e rodapés em documentos do Word usa
 weight: 25
 url: /pt/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Vincule todos os cabeçalhos/rodapés nas seções em documentos do Word
+
 ## Introdução
 Ao trabalhar com documentos do Word, muitas vezes é necessário vincular cabeçalhos e rodapés em diferentes seções para obter consistência e coerência. Este tutorial irá guiá-lo através do processo passo a passo usando GroupDocs.Watermark for .NET.
 ## Importar namespaces

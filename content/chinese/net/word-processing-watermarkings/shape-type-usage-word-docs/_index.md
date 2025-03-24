@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 操作 Word 文档�
 weight: 37
 url: /zh/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Word 文档中形状类型的用法
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Watermark for .NET 在 Word 文档中利用形状类型。 Word 文档中的形状可能有所不同，了解如何操作它们对于各种文档处理任务至关重要。
 ## 先决条件

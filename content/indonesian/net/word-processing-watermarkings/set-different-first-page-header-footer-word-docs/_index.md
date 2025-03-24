@@ -6,6 +6,9 @@ description: Pelajari cara mengatur header dan footer yang berbeda di halaman pe
 weight: 36
 url: /id/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Atur Header/Footer Halaman Pertama yang Berbeda di Word Docs
+
 ## Perkenalan
 Dalam bidang manajemen dan manipulasi dokumen, GroupDocs.Watermark untuk .NET muncul sebagai alat yang ampuh, menawarkan integrasi tanpa batas dan fungsionalitas yang kuat untuk dokumen watermarking. Salah satu persyaratan umum dalam pemrosesan dokumen adalah mengatur header dan footer yang berbeda pada halaman pertama dokumen Word. Tutorial ini akan menjelaskan proses mencapai tugas ini menggunakan GroupDocs.Watermark untuk .NET, membagi setiap langkah menjadi segmen yang mudah dimengerti.
 ## Prasyarat

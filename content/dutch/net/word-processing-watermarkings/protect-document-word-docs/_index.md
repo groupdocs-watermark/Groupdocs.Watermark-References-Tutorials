@@ -6,6 +6,9 @@ description: Leer hoe u Word-documenten kunt beveiligen met GroupDocs.Watermark 
 weight: 28
 url: /nl/net/word-processing-watermarkings/protect-document-word-docs/
 ---
+
+# Bescherm document in Word-documenten
+
 ## Invoering
 In deze zelfstudie begeleiden we u bij het beveiligen van een document in Word Documenten met GroupDocs.Watermark voor .NET. Door deze stappen te volgen, kunt u een beveiligingslaag aan uw Word-documenten toevoegen, waardoor ongeautoriseerde toegang en wijziging wordt voorkomen.
 ## Vereisten

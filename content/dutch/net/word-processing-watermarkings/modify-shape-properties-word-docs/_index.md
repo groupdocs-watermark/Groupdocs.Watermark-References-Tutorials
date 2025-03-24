@@ -6,6 +6,9 @@ description: Bescherm uw Word-documenten met GroupDocs Watermark voor .NET. Wijz
 weight: 27
 url: /nl/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---
+
+# Wijzig vormeigenschappen in Word-documenten
+
 ## Invoering
 In het huidige digitale tijdperk is het garanderen van de veiligheid van uw documenten van cruciaal belang. Of u nu een zakelijke professional, een juridisch expert of een creatieve schrijver bent, het beschermen van uw gevoelige informatie is van cruciaal belang. Dit is waar GroupDocs.Watermark voor .NET in het spel komt en een uitgebreide oplossing biedt om uw documenten te beschermen tegen ongeoorloofd gebruik en verspreiding.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ vào tài liệu được bảo 
 weight: 13
 url: /vi/net/document-loadings/load-password-protected-document/
 ---
+
+# Tải tài liệu được bảo vệ bằng mật khẩu
+
 ## Giới thiệu
 Bạn đang tìm cách bảo vệ tài liệu của mình bằng cách thêm hình mờ, ngay cả khi chúng được bảo vệ bằng mật khẩu? Groupdocs.Watermark cho .NET là một công cụ mạnh mẽ cho phép bạn làm việc đó. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình tải tài liệu được bảo vệ bằng mật khẩu và thêm hình mờ vào tài liệu đó bằng Groupdocs.Watermark cho .NET. Hãy đi sâu vào!
 ## Điều kiện tiên quyết

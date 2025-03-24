@@ -6,6 +6,9 @@ description: Learn how to set different headers and footers on the first page of
 weight: 36
 url: /net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Set Different First Page Header/Footer in Word Docs
+
 ## Introduction
 In the realm of document management and manipulation, GroupDocs.Watermark for .NET emerges as a powerful tool, offering seamless integration and robust functionalities for watermarking documents. One of the common requirements in document processing is to set different headers and footers on the first page of Word documents. This tutorial will elucidate the process of achieving this task using GroupDocs.Watermark for .NET, breaking down each step into easily understandable segments.
 ## Prerequisites

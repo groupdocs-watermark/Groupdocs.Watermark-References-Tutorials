@@ -6,6 +6,9 @@ description: Aprenda como adicionar marcas d'água a anexos PDF usando GroupDocs
 weight: 16
 url: /pt/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# Adicionar marca d'água a todos os anexos em PDF
+
 ## Introdução
 Adicionar marcas d'água a anexos PDF pode ser uma etapa crucial no gerenciamento de documentos, especialmente para garantir a segurança ou a marca. GroupDocs.Watermark for .NET oferece uma solução abrangente para incorporar marcas d'água perfeitamente em arquivos PDF. Neste tutorial, orientaremos você no processo de adição de uma marca d'água a todos os anexos de um documento PDF usando GroupDocs.Watermark for .NET.
 ## Pré-requisitos

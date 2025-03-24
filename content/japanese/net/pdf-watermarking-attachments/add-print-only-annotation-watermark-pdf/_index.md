@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、印刷専用の注�
 weight: 13
 url: /ja/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---
+
+# 印刷専用の注釈ウォーターマークを PDF に追加
+
 ## 導入
 このチュートリアルでは、GroupDocs.Watermark for .NET を使用して印刷専用の注釈ウォーターマークを PDF に追加するプロセスを詳しく説明します。ドキュメントに透かしを入れることは、ドキュメントのセキュリティとブランド化の重要な側面であり、GroupDocs.Watermark は、これを実現するためのシームレスなソリューションを .NET 開発者に提供します。
 ## 前提条件

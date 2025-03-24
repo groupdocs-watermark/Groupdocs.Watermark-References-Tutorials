@@ -6,6 +6,9 @@ url: /zh-hant/net/
 description: 探索全面的 GroupDocs.Watermark for .NET 教學。透過逐步指南，了解如何新增、管理和保護各種文件格式的浮水印。
 is_root: true
 ---
+
+# GroupDocs.Watermark for .NET 的教學與範例
+
 ## 介紹
 
 在文件管理方面，安全性和品牌至關重要。 GroupDocs.Watermark for .NET 提供了強大的工具來新增和管理各種文件格式的浮水印，確保您的內容保持受保護和專業的狀態。本文涵蓋了基本教學和範例，可協助您掌握使用 GroupDocs Watermark for .NET 新增浮水印的技巧。

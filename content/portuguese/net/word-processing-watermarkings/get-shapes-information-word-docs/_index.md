@@ -6,6 +6,9 @@ description: Obtenha insights valiosos de documentos do Word sem esforço com Gr
 weight: 24
 url: /pt/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# Obtenha informações sobre formas em documentos do Word
+
 ## Introdução
 No cenário digital onde os dados são fundamentais, extrair insights significativos dos documentos é fundamental. GroupDocs.Watermark for .NET permite que os desenvolvedores se aprofundem nas estruturas dos documentos, extraindo informações valiosas sem esforço. Neste tutorial, exploraremos como aproveitar esta ferramenta poderosa para obter informações de formas de documentos do Word passo a passo.
 ## Pré-requisitos

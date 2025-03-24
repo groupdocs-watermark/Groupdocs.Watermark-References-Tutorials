@@ -6,6 +6,9 @@ description: GroupDocs for .NET を使用して Word 文書からウォーター
 weight: 22
 url: /ja/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Word ドキュメントのヘッダー/フッターでウォーターマークを検索する
+
 ## 導入
 文書の管理と保護の世界では、透かしは極めて重要な役割を果たします。ブランド目的、著作権保護、文書追跡のいずれの目的であっても、文書に透かしを追加することは不可欠です。ただし、特に大規模なドキュメント セットの場合、透かしを効率的に見つけて削除するのは困難な作業になる可能性があります。ここで、GroupDocs.Watermark for .NET が活躍します。このチュートリアルでは、GroupDocs.Watermark for .NET を使用して Word 文書のヘッダーとフッターにあるウォーターマークを検索する方法を詳しく説明し、包括的な理解を確実にするために各ステップに分けて説明します。
 ## 前提条件

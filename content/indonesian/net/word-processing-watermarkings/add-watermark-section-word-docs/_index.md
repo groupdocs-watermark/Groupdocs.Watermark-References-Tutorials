@@ -6,6 +6,9 @@ description: Tambahkan tanda air dengan mudah ke dokumen Word menggunakan GroupD
 weight: 15
 url: /id/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Tambahkan Tanda Air ke Bagian di Dokumen Word
+
 ## Perkenalan
 Memberi tanda air pada dokumen Anda adalah langkah penting dalam melindungi konten Anda dan menegaskan kepemilikan. Dalam tutorial komprehensif ini, kami akan memandu Anda melalui proses menambahkan tanda air ke bagian tertentu di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Baik Anda seorang pengembang atau seseorang dengan pemahaman dasar pengkodean, panduan ini akan membantu Anda mengamankan dokumen Anda secara efektif.
 ## Prasyarat

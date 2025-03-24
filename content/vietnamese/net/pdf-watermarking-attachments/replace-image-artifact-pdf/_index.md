@@ -6,6 +6,9 @@ description: Tìm hiểu cách thay thế hình ảnh trong tài liệu PDF bằ
 weight: 38
 url: /vi/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# Thay thế hình ảnh cho thành phần cụ thể trong PDF
+
 ## Giới thiệu
 Thêm hình mờ vào tài liệu là một biện pháp thiết yếu để đảm bảo an ninh tài liệu, xây dựng thương hiệu và bảo vệ bản quyền. Nếu bạn đang muốn tìm hiểu sâu hơn về thế giới hình mờ tài liệu bằng GroupDocs.Watermark cho .NET thì bạn đã đến đúng nơi. Hướng dẫn này sẽ hướng dẫn bạn quy trình thay thế hình ảnh trong tài liệu PDF bằng thư viện GroupDocs.Watermark. Bắt đầu nào!
 ## Điều kiện tiên quyết

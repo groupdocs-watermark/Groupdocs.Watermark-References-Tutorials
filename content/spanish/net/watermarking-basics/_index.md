@@ -6,6 +6,9 @@ description: Descubra los tutoriales de GroupDocs.Watermark para .NET para agreg
 weight: 20
 url: /es/net/watermarking-basics/
 ---
+
+# Conceptos básicos de marcas de agua
+
 ## Introducción
 La marca de agua es una técnica crucial para proteger sus documentos y hacer valer su propiedad. GroupDocs.Watermark para .NET simplifica este proceso y proporciona herramientas sólidas para agregar marcas de agua de imagen y texto. Si eres nuevo en el mundo de las marcas de agua o buscas mejorar tus habilidades, estos tutoriales te guiarán a través de los conceptos básicos.
 

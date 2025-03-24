@@ -6,6 +6,9 @@ description: 通过这份全面的分步指南，了解如何使用 GroupDocs fo
 weight: 11
 url: /zh/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# 从本地磁盘获取文档信息
+
 ## 介绍
 欢迎阅读有关使用 GroupDocs.Watermark for .NET 的终极指南！无论您是经验丰富的开发人员还是刚刚入门，本文都将引导您了解使用这个强大的工具为文档添加水印的基本知识。最后，您将成为在文档中嵌入水印的专家，确保它们受到保护并按照您的规格进行标记。
 ## 先决条件

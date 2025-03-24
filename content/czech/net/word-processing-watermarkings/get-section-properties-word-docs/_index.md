@@ -6,6 +6,9 @@ description: Naučte se extrahovat vlastnosti oddílu z dokumentů Word pomocí 
 weight: 23
 url: /cs/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# Získejte vlastnosti oddílu v Dokumentech aplikace Word
+
 ## Úvod
 oblasti správy a manipulace s dokumenty Groupdocs.Watermark for .NET vyniká jako všestranný a robustní nástroj. Tato knihovna, která je hladce integrována do rámce .NET, umožňuje vývojářům bez námahy manipulovat s vodoznaky, anotacemi a vlastnostmi dokumentů. V tomto tutoriálu se ponoříme do jedné z jeho klíčových funkcí: extrahování vlastností oddílu z dokumentů aplikace Word. Pokračujte v rozebírání procesu krok za krokem a odemykání potenciálu Groupdocs.Watermark pro .NET.
 ## Předpoklady

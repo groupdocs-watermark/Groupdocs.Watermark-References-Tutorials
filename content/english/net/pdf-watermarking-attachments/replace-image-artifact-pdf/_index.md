@@ -6,6 +6,9 @@ description: Learn how to replace images in PDF documents using GroupDocs.Waterm
 weight: 38
 url: /net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# Replace Image for Specific Artifact in PDF
+
 ## Introduction
 Adding watermarks to documents is an essential practice for ensuring document security, branding, and copyright protection. If you're looking to delve into the world of document watermarking using GroupDocs.Watermark for .NET, you're in the right place. This guide will walk you through the process of replacing images in a PDF document using the GroupDocs.Watermark library. Let's get started!
 ## Prerequisites

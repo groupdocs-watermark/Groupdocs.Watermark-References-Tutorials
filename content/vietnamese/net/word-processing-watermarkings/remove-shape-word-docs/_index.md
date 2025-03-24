@@ -6,6 +6,9 @@ description: Tìm hiểu cách xóa hình khỏi tài liệu Word bằng GroupDo
 weight: 30
 url: /vi/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
+
+# Xóa hình dạng trong tài liệu Word
+
 ## Giới thiệu
 Trong lĩnh vực xử lý và thao tác tài liệu, GroupDocs.Watermark dành cho .NET nổi lên như một bộ công cụ mạnh mẽ, cho phép các nhà phát triển tích hợp liền mạch các chức năng tạo hình chìm mờ vào các ứng dụng .NET của họ. Bài viết này đi sâu vào sự phức tạp của việc tận dụng GroupDocs.Watermark cho .NET để xóa hình dạng trong tài liệu Word. Bằng cách làm theo hướng dẫn từng bước, các nhà phát triển có thể nắm bắt quy trình một cách dễ dàng và hiệu quả.
 ## Điều kiện tiên quyết

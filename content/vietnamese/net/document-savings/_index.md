@@ -6,6 +6,9 @@ description: Khám phá GroupDocs.Watermark để biết các hướng dẫn .NE
 weight: 23
 url: /vi/net/document-savings/
 ---
+
+# Lưu tài liệu
+
 ## Giới thiệu
 
 Bạn đang tìm cách lưu tài liệu của mình bằng hình mờ một cách hiệu quả? GroupDocs.Watermark for .NET cung cấp một bộ hướng dẫn để giúp bạn nắm vững tác vụ này. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, hướng dẫn của chúng tôi đều cung cấp hướng dẫn rõ ràng, từng bước để đảm bảo tài liệu của bạn được bảo mật và mang nhãn hiệu chuyên nghiệp. Hãy khám phá một số hướng dẫn cần thiết để nâng cao kỹ năng quản lý tài liệu của bạn.

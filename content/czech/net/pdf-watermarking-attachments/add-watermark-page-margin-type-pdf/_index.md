@@ -6,6 +6,9 @@ description: Naučte se, jak přidat vodoznaky s typem okraje stránky do PDF po
 weight: 21
 url: /cs/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---
+
+# Přidejte vodoznak s typem okraje stránky v PDF
+
 ## Úvod
 dnešní digitální době je zabezpečení dokumentů důležitější než kdy jindy. Jedním ze způsobů, jak zajistit integritu a pravost vašich dokumentů, je přidání vodoznaků. Groupdocs.Watermark for .NET je výjimečný nástroj navržený tak, aby byl tento proces snadný. V tomto tutoriálu vás provedeme kroky k přidání vodoznaku s typem okraje stránky do PDF pomocí Groupdocs.Watermark for .NET.
 ## Předpoklady

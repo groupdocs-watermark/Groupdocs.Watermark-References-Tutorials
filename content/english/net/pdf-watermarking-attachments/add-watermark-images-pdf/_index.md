@@ -6,6 +6,9 @@ description: Learn to add watermarks to images in PDF documents using GroupDocs.
 weight: 19
 url: /net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# Add Watermark to Images in PDF
+
 ## Introduction
 Adding watermarks to images within a PDF document can be essential for protecting your intellectual property or ensuring the authenticity of your documents. Using GroupDocs.Watermark for .NET, this task can be done efficiently and with ease. This tutorial will guide you through each step of the process, from setting up your environment to adding watermarks to saving the final document. Let's dive in!
 ## Prerequisites

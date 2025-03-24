@@ -6,6 +6,9 @@ description: Fedezze fel az alapvető GroupDocs.Watermark for .NET oktatóanyago
 weight: 26
 url: /hu/net/word-processing-watermarkings/
 ---
+
+# Szövegszerkesztő vízjel
+
 ## Bevezetés
 
 A Word-dokumentumok vízjelezése kulcsfontosságú lépés a tartalom megőrzésében és a márka kialakításában. A GroupDocs.Watermark for .NET segítségével ez a folyamat egyszerűvé és hatékonysá válik. Akár képvízjeleket ad hozzá a fejlécekhez, akár zárol vízjeleket adott oldalakon, ezek az oktatóanyagok végigvezetik Önt az egyes lépéseken, így biztosítva, hogy dokumentumai védettek és professzionálisak legyenek.

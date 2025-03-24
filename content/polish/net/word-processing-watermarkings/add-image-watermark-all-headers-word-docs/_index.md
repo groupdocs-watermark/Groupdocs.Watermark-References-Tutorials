@@ -6,6 +6,9 @@ description: Z łatwością dodawaj graficzne znaki wodne do wszystkich nagłów
 weight: 10
 url: /pl/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# Dodaj obrazowy znak wodny do wszystkich nagłówków w dokumentach programu Word
+
 ## Wstęp
 Znaki wodne mogą stanowić istotną część zarządzania dokumentami, umożliwiając osadzanie w dokumentach informacji takich jak własność, poufność czy marka. W tym samouczku omówimy kroki dodawania obrazu znaku wodnego do wszystkich nagłówków w dokumentach programu Word przy użyciu programu GroupDocs.Watermark dla platformy .NET. Niezależnie od tego, czy dopiero zaczynasz programować, czy jesteś doświadczonym programistą, ten przewodnik pomoże Ci z łatwością osiągnąć cele związane ze znakami wodnymi.
 ## Warunki wstępne

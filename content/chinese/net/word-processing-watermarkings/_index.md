@@ -6,6 +6,9 @@ description: 了解用于 .NET 的 GroupDocs.Watermark 基本教程，以在 Wor
 weight: 26
 url: /zh/net/word-processing-watermarkings/
 ---
+
+# 文字处理水印
+
 ## 介绍
 
 对 Word 文档添加水印是保护内容和建立品牌的关键步骤。借助 GroupDocs.Watermark for .NET，此过程变得简单且高效。无论您是在标题中添加图像水印还是在特定页面上锁定水印，这些教程都将指导您完成每个步骤，确保您的文档既受保护又专业。

@@ -6,6 +6,9 @@ description: Learn how to add artifact watermarks to PDF files effortlessly usin
 weight: 11
 url: /net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# Add Artifact Watermark to PDF
+
 ## Introduction
 Adding watermarks to PDF files is a crucial aspect of document management, especially when it comes to protecting intellectual property or branding documents. Groupdocs.Watermark for .NET provides a robust solution for adding watermarks to PDF files effortlessly. In this tutorial, we'll walk through the process of adding an artifact watermark to PDF files step by step.
 ## Prerequisites

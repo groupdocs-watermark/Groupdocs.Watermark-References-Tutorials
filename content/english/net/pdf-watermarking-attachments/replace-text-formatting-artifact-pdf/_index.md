@@ -6,6 +6,9 @@ description: Learn how to replace text with formatting for artifacts in PDF docu
 weight: 43
 url: /net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---
+
+# Replace Text with Formatting for Artifact in PDF
+
 ## Introduction
 In the realm of .NET development, managing artifacts and watermarking documents is often a crucial task. Fortunately, with GroupDocs.Watermark for .NET, developers have a powerful toolkit at their disposal to seamlessly integrate watermarking and artifact management functionalities into their applications. In this comprehensive tutorial, we'll delve into the process of replacing text with formatting for artifacts in PDF documents using GroupDocs.Watermark for .NET.
 ## Prerequisites

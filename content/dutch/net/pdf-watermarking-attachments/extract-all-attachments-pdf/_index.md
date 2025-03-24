@@ -6,6 +6,9 @@ description: Leer hoe u alle bijlagen uit een PDF kunt extraheren met Groupdocs.
 weight: 22
 url: /nl/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
+
+# Extraheer alle bijlagen uit PDF
+
 ## Invoering
 Wilt u moeiteloos bijlagen uit een PDF-document extraheren? Nou, je bent op de juiste plek! In deze uitgebreide zelfstudie begeleiden we u bij het proces van het extraheren van alle bijlagen uit een PDF met Groupdocs.Watermark voor .NET. Met deze krachtige bibliotheek kunnen ontwikkelaars watermerken in verschillende documentformaten beheren, maar het bevat ook robuuste mogelijkheden voor het extraheren van ingesloten bestanden. Of u nu een doorgewinterde ontwikkelaar bent of net begint, deze stapsgewijze handleiding maakt het proces een fluitje van een cent.
 ## Vereisten

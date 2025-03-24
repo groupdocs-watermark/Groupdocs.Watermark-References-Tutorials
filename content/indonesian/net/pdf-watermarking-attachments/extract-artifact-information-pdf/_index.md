@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak informasi artefak dari file PDF menggunak
 weight: 24
 url: /id/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# Ekstrak Informasi Artefak dari PDF
+
 ## Perkenalan
 Dokumen PDF sering kali berisi informasi berharga yang tertanam dalam berbagai artefak seperti gambar, teks, dan bentuk. Mengekstraksi informasi ini sangat penting untuk banyak aplikasi, mulai dari analisis data hingga manajemen konten. Dalam tutorial ini, kita akan mempelajari cara mengekstrak informasi artefak dari file PDF menggunakan GroupDocs.Watermark untuk .NET, pustaka .NET canggih yang dirancang khusus untuk memberi tanda air, mencari, dan memanipulasi dokumen PDF.
 ## Prasyarat

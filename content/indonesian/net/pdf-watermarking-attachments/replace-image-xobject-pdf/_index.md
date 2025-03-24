@@ -6,6 +6,9 @@ description: Ganti gambar dalam PDF dengan mudah menggunakan GroupDocs.Watermark
 weight: 39
 url: /id/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
+
+# Ganti Gambar untuk XObject Tertentu di PDF
+
 ## Perkenalan
 Selamat datang di panduan terperinci kami tentang cara mengganti gambar untuk XObject tertentu dalam PDF menggunakan GroupDocs.Watermark untuk .NET. Jika Anda perlu mengelola tanda air atau mengubah konten dalam file PDF, Anda berada di tempat yang tepat. Tutorial ini akan memandu Anda melalui setiap langkah, memastikan Anda dapat dengan percaya diri memperbarui dokumen PDF Anda dengan gambar baru. Mari selami!
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Upptäck GroupDocs.Watermark för .NET självstudier för att lägg
 weight: 20
 url: /sv/net/watermarking-basics/
 ---
+
+# Grundläggande om vattenmärkning
+
 ## Introduktion
 Vattenmärkning är en avgörande teknik för att skydda dina dokument och hävda ditt ägande. GroupDocs.Watermark for .NET förenklar denna process och ger robusta verktyg för att lägga till både bild- och textvattenstämplar. Oavsett om du är ny med vattenmärkning eller vill förbättra dina färdigheter, kommer dessa tutorials att guida dig genom grunderna.
 

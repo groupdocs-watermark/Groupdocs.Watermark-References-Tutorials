@@ -6,6 +6,9 @@ description: Schützen und verwalten Sie Ihre Dokumente mit Groupdocs für .NET.
 weight: 10
 url: /de/net/document-loadings/load-document-from-local-disk/
 ---
+
+# Dokument von der lokalen Festplatte laden
+
 ## Einführung
 Das Anbringen von Wasserzeichen an Dokumenten ist im heutigen digitalen Zeitalter unerlässlich, um den Schutz von Inhalten, die Geltendmachung von Eigentumsrechten und die Vertraulichkeit sicherzustellen. Groupdocs.Watermark für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Wasserzeichen in verschiedenen Dokumentformaten hinzuzufügen, zu suchen und zu verwalten. In diesem Tutorial führen wir Sie mit detaillierten Schritt-für-Schritt-Anleitungen durch den Prozess der Verwendung von Groupdocs.Watermark für .NET zum Hinzufügen von Wasserzeichen zu Ihren Dokumenten.
 ## Voraussetzungen

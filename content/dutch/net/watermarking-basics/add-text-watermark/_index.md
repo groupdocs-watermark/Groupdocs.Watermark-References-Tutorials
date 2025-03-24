@@ -6,6 +6,9 @@ description: Leer hoe u tekstwatermerken aan uw documenten kunt toevoegen met Gr
 weight: 11
 url: /nl/net/watermarking-basics/add-text-watermark/
 ---
+
+# Tekstwatermerk toevoegen
+
 ## Invoering
 GroupDocs.Watermark voor .NET is een krachtige bibliotheek waarmee ontwikkelaars watermerken kunnen toevoegen, zoeken en verwijderen uit verschillende documentformaten in .NET-toepassingen. In deze zelfstudie concentreren we ons op het toevoegen van een tekstwatermerk aan een document met GroupDocs.Watermark.
 ## Vereisten

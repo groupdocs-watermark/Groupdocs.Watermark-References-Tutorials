@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air teks dan gambar ke halaman tert
 weight: 15
 url: /id/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# Tambahkan Tanda Air ke Halaman Tertentu di PDF
+
 ## Perkenalan
 Menambahkan tanda air ke dokumen PDF Anda adalah langkah penting dalam melindungi konten dan menegaskan kepemilikan Anda. Baik Anda menandai draf, mengamankan informasi sensitif, atau sekadar menambahkan merek, tanda air adalah alat yang efektif. Dalam tutorial ini, kita akan mempelajari cara menggunakan Groupdocs.Watermark untuk .NET guna menambahkan tanda air teks dan gambar ke halaman tertentu di file PDF Anda. Kami akan membagi prosesnya menjadi langkah-langkah yang dapat dikelola, memastikan Anda dapat mengikuti dan menerapkan fitur-fitur ini dalam proyek Anda.
 ## Prasyarat

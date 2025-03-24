@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie Abschnittseigenschaften aus Word-Dokumenten m
 weight: 23
 url: /de/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# Abschnittseigenschaften in Word-Dokumenten abrufen
+
 ## Einführung
 Im Bereich der Dokumentenverwaltung und -bearbeitung zeichnet sich Groupdocs.Watermark für .NET als vielseitiges und robustes Tool aus. Diese Bibliothek ist nahtlos in das .NET-Framework integriert und ermöglicht Entwicklern die mühelose Bearbeitung von Wasserzeichen, Anmerkungen und Dokumenteigenschaften. In diesem Tutorial befassen wir uns mit einer seiner Hauptfunktionen: dem Extrahieren von Abschnittseigenschaften aus Word-Dokumenten. Folgen Sie uns, während wir den Prozess Schritt für Schritt aufschlüsseln und das Potenzial von Groupdocs.Watermark für .NET freisetzen.
 ## Voraussetzungen

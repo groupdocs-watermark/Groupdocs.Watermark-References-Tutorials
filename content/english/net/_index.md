@@ -6,6 +6,9 @@ url: /net/
 description: Explore comprehensive GroupDocs.Watermark for .NET tutorials. Learn to add, manage, and secure watermarks in various document formats with step-by-step guides.
 is_root: true
 ---
+
+# Tutorials and Examples of GroupDocs.Watermark for .NET
+
 ## Introduction
 
 When it comes to document management, security and branding are paramount. GroupDocs.Watermark for .NET offers powerful tools to add and manage watermarks across various document formats, ensuring your content remains protected and professional. This article covers essential tutorials and examples to help you master the art of watermarking with GroupDocs.Watermark for .NET.

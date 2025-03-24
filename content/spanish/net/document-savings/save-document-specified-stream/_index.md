@@ -6,6 +6,9 @@ description: Aprenda cómo guardar un documento en una secuencia específica usa
 weight: 12
 url: /es/net/document-savings/save-document-specified-stream/
 ---
+
+# Guardar documento en la secuencia especificada
+
 ## Introducción
 ¿Está buscando dominar el arte de agregar marcas de agua a sus documentos usando GroupDocs.Watermark para .NET? ¡Has venido al lugar correcto! En esta guía completa, lo guiaremos a través de todo lo que necesita saber para guardar exitosamente un documento en una secuencia específica después de agregarle una marca de agua. Profundicemos y comencemos.
 ## Requisitos previos

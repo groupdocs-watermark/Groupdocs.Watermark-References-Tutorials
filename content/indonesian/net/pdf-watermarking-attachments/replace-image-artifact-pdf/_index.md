@@ -6,6 +6,9 @@ description: Pelajari cara mengganti gambar dalam dokumen PDF menggunakan GroupD
 weight: 38
 url: /id/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# Ganti Gambar untuk Artefak Tertentu di PDF
+
 ## Perkenalan
 Menambahkan tanda air ke dokumen merupakan praktik penting untuk memastikan keamanan dokumen, pencitraan merek, dan perlindungan hak cipta. Jika Anda ingin mempelajari dunia penandaan air dokumen menggunakan GroupDocs.Watermark untuk .NET, Anda berada di tempat yang tepat. Panduan ini akan memandu Anda melalui proses penggantian gambar dalam dokumen PDF menggunakan perpustakaan GroupDocs.Watermark. Mari kita mulai!
 ## Prasyarat

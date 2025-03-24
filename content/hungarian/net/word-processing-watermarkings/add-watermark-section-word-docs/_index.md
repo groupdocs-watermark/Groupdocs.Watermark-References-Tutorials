@@ -6,6 +6,9 @@ description: Könnyen hozzáadhat vízjeleket Word dokumentumokhoz a GroupDocs.W
 weight: 15
 url: /hu/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Vízjel hozzáadása a Word Dokumentumok szakaszához
+
 ## Bevezetés
 A dokumentumok vízjelezése kulcsfontosságú lépés a tartalom védelmében és a tulajdonjog érvényesítésében. Ebben az átfogó oktatóanyagban végigvezetjük a vízjel hozzáadásának folyamatán a Word dokumentumok egy adott szakaszához a GroupDocs.Watermark for .NET segítségével. Függetlenül attól, hogy Ön fejlesztő, vagy olyan személy, aki alapvetően ismeri a kódolást, ez az útmutató segít a dokumentumok hatékony védelmében.
 ## Előfeltételek

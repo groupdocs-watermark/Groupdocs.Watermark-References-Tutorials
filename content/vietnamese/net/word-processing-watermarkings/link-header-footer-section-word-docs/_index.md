@@ -6,6 +6,9 @@ description: Tìm hiểu cách liên kết đầu trang và chân trang một c�
 weight: 26
 url: /vi/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Liên kết Đầu trang/Chân trang trong Phần trong Tài liệu Word
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc quản lý hình mờ trong tài liệu Word có thể là một nhiệm vụ quan trọng, cho dù bạn đang bảo vệ thông tin nhạy cảm hay thêm các yếu tố thương hiệu. May mắn thay, GroupDocs.Watermark cho .NET cung cấp một giải pháp mạnh mẽ để xử lý hình mờ một cách hiệu quả. Trong hướng dẫn này, chúng ta sẽ khám phá cách liên kết đầu trang và chân trang trong các phần của tài liệu Word bằng GroupDocs.Watermark.
 ## Điều kiện tiên quyết

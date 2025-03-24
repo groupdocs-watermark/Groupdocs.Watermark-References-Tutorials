@@ -6,6 +6,9 @@ description: Lär dig hur du tar bort anteckningar med specifik textformatering 
 weight: 30
 url: /sv/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# Ta bort anteckningar med specifik textformatering i PDF
+
 ## Introduktion
 I den här självstudien guidar vi dig genom processen att ta bort kommentarer med specifik textformatering i ett PDF-dokument med Groupdocs.Watermark för .NET. Det här biblioteket tillhandahåller kraftfulla funktioner för att arbeta med vattenstämplar, anteckningar och andra dokumentelement i olika format.
 ## Förutsättningar

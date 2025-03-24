@@ -6,6 +6,9 @@ description: Ebből a lépésenkénti útmutatóból megtudhatja, hogyan adhat s
 weight: 11
 url: /hu/net/watermarking-basics/add-text-watermark/
 ---
+
+# Szöveg vízjel hozzáadása
+
 ## Bevezetés
 GroupDocs.Watermark for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára vízjelek hozzáadását, keresését és eltávolítását különféle dokumentumformátumokból .NET-alkalmazásokban. Ebben az oktatóanyagban arra összpontosítunk, hogy szöveges vízjelet adjunk egy dokumentumhoz a GroupDocs.Watermark segítségével.
 ## Előfeltételek

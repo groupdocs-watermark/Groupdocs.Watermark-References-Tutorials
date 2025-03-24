@@ -6,6 +6,9 @@ description: Pelajari cara menemukan dan menghapus tanda air secara efisien dari
 weight: 22
 url: /id/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---
+
+# Temukan Tanda Air di Header/Footer di Word Docs
+
 ## Perkenalan
 Dalam dunia pengelolaan dan perlindungan dokumen, watermarking memainkan peran yang sangat penting. Baik untuk tujuan pencitraan merek, perlindungan hak cipta, atau pelacakan dokumen, menambahkan tanda air ke dokumen Anda sangatlah penting. Namun, menemukan dan menghapus tanda air secara efisien, terutama pada kumpulan dokumen berukuran besar, dapat menjadi tugas yang menakutkan. Di sinilah GroupDocs.Watermark untuk .NET berperan. Dalam tutorial ini, kita akan mempelajari cara menemukan tanda air di header dan footer dokumen Word menggunakan GroupDocs.Watermark untuk .NET, menguraikan setiap langkah untuk memastikan pemahaman yang komprehensif.
 ## Prasyarat

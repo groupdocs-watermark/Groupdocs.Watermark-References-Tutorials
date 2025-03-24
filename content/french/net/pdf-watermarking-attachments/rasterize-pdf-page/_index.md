@@ -6,6 +6,9 @@ description: Améliorez la sécurité des documents avec GroupDocs pour .NET. Aj
 weight: 28
 url: /fr/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---
+
+# Pixelliser la page PDF
+
 ## Introduction
 GroupDocs.Watermark for .NET est une API puissante qui permet aux développeurs d'ajouter de manière transparente des filigranes à divers formats de documents, notamment PDF, Word, Excel, PowerPoint, etc. Avec son interface intuitive et ses fonctionnalités étendues, GroupDocs.Watermark simplifie le processus d'ajout de filigranes de texte ou d'image aux documents, permettant aux utilisateurs de protéger leur propriété intellectuelle et d'améliorer la sécurité des documents sans effort.
 ## Conditions préalables

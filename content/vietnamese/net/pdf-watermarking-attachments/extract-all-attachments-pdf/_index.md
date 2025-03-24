@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất tất cả tệp đính kèm từ P
 weight: 22
 url: /vi/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
+
+# Trích xuất tất cả tệp đính kèm từ PDF
+
 ## Giới thiệu
 Bạn đang tìm cách trích xuất tệp đính kèm từ tài liệu PDF một cách dễ dàng? Vâng, bạn đang ở đúng nơi! Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn quy trình trích xuất tất cả tệp đính kèm từ tệp PDF bằng Groupdocs.Watermark cho .NET. Thư viện mạnh mẽ này cho phép các nhà phát triển quản lý hình mờ ở nhiều định dạng tài liệu khác nhau, nhưng nó cũng bao gồm các khả năng mạnh mẽ để trích xuất các tệp nhúng. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước này sẽ giúp quá trình này trở nên dễ dàng.
 ## Điều kiện tiên quyết

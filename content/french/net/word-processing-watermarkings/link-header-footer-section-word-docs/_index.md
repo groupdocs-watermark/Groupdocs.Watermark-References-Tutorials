@@ -6,6 +6,9 @@ description: Découvrez comment lier efficacement les en-têtes et les pieds de 
 weight: 26
 url: /fr/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Lier l'en-tête/le pied de page dans la section dans Word Docs
+
 ## Introduction
 Dans le monde du développement .NET, la gestion des filigranes dans les documents Word peut s'avérer une tâche cruciale, qu'il s'agisse de protéger des informations sensibles ou d'ajouter des éléments de marque. Heureusement, GroupDocs.Watermark pour .NET fournit une solution puissante pour gérer efficacement les filigranes. Dans ce didacticiel, nous verrons comment lier les en-têtes et les pieds de page dans des sections de documents Word à l'aide de GroupDocs.Watermark.
 ## Conditions préalables

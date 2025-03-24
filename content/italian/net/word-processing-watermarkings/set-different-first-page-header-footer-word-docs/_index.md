@@ -6,6 +6,9 @@ description: Scopri come impostare intestazioni e piè di pagina diversi sulla p
 weight: 36
 url: /it/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Imposta un'intestazione/piè di pagina diversi per la prima pagina nei documenti Word
+
 ## introduzione
 Nel campo della gestione e manipolazione dei documenti, GroupDocs.Watermark per .NET emerge come uno strumento potente, offrendo un'integrazione perfetta e solide funzionalità per la filigrana dei documenti. Uno dei requisiti comuni nell'elaborazione dei documenti è impostare intestazioni e piè di pagina diversi nella prima pagina dei documenti Word. Questo tutorial illustrerà il processo per realizzare questa attività utilizzando GroupDocs.Watermark per .NET, suddividendo ogni passaggio in segmenti facilmente comprensibili.
 ## Prerequisiti

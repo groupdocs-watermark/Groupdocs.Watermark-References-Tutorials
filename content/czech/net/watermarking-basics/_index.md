@@ -6,6 +6,9 @@ description: Objevte výukové programy GroupDocs.Watermark for .NET a snadno p�
 weight: 20
 url: /cs/net/watermarking-basics/
 ---
+
+# Základy vodoznaku
+
 ## Úvod
 Vodoznak je klíčovou technikou pro ochranu vašich dokumentů a prosazování vašeho vlastnictví. GroupDocs.Watermark for .NET tento proces zjednodušuje a poskytuje robustní nástroje pro přidávání obrazových i textových vodoznaků. Ať už s vodoznakem začínáte, nebo chcete zlepšit své dovednosti, tyto výukové programy vás provedou základy.
 

@@ -6,6 +6,9 @@ description: Lägg enkelt till bildvattenstämplar i alla rubriker i Word-dokume
 weight: 10
 url: /sv/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# Lägg till bildvattenstämpel i alla rubriker i Word Docs
+
 ## Introduktion
 Vattenstämplar kan vara en viktig del av dokumenthanteringen, vilket ger ett sätt att bädda in information som ägande, konfidentialitet eller varumärke i dokument. I den här handledningen går vi igenom stegen för att lägga till en bildvattenstämpel till alla rubriker i Word-dokument med GroupDocs.Watermark för .NET. Oavsett om du är ny på programmering eller en erfaren utvecklare, kommer den här guiden att hjälpa dig att nå dina vattenmärkningsmål med lätthet.
 ## Förutsättningar

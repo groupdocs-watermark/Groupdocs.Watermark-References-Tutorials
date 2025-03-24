@@ -6,6 +6,9 @@ description: Tambahkan tanda air ke dokumen Anda dengan mudah menggunakan GroupD
 weight: 13
 url: /id/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Dapatkan Format File yang Didukung
+
 ## Perkenalan
 Memberi tanda air pada dokumen Anda adalah langkah penting dalam melindungi aset digital Anda. Baik untuk melindungi kekayaan intelektual, memastikan kerahasiaan, atau sekadar pencitraan merek, tanda air memainkan peran penting. Jika Anda seorang pengembang .NET yang ingin mengintegrasikan kemampuan watermarking ke dalam aplikasi Anda, GroupDocs.Watermark untuk .NET adalah alat yang ampuh dan serbaguna yang harus Anda pertimbangkan. Tutorial ini akan memandu Anda melalui hal-hal penting dalam menggunakan GroupDocs.Watermark, mulai dari instalasi hingga penerapan tanda air pertama Anda, menguraikan setiap langkah untuk memastikan Anda dapat mengikutinya dengan mudah.
 ## Prasyarat

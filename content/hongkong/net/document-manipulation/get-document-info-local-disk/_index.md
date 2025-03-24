@@ -6,6 +6,9 @@ description: 透過這份全面的逐步指南，了解如何使用 GroupDocs fo
 weight: 11
 url: /zh-hant/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# 從本機磁碟取得文件資訊
+
 ## 介紹
 歡迎閱讀使用 GroupDocs.Watermark for .NET 的終極指南！無論您是經驗豐富的開發人員還是剛剛入門，本文都將引導您了解使用這個強大的工具為文件添加浮水印的基本知識。最後，您將成為在文件中嵌入浮水印的專家，確保它們受到保護並按照您的規格進行標記。
 ## 先決條件

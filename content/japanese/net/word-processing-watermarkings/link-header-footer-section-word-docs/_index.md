@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、Word ドキュメン
 weight: 26
 url: /ja/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Word ドキュメントのセクションのヘッダー/フッターをリンクする
+
 ## 導入
 .NET 開発の世界では、機密情報を保護する場合でも、ブランド要素を追加する場合でも、Word 文書内のウォーターマークの管理は重要なタスクとなる場合があります。幸いなことに、GroupDocs.Watermark for .NET は、ウォーターマークを効率的に処理するための強力なソリューションを提供します。このチュートリアルでは、GroupDocs.Watermark を使用して Word 文書のセクション内のヘッダーとフッターをリンクする方法を説明します。
 ## 前提条件

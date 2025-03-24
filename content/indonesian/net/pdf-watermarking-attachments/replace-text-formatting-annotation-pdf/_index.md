@@ -6,6 +6,9 @@ description: Tingkatkan keamanan dokumen dengan GroupDocs untuk .NET. Pelajari c
 weight: 41
 url: /id/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---
+
+# Ganti Teks dengan Pemformatan untuk Anotasi dalam PDF
+
 ## Perkenalan
 Di era digital saat ini, melindungi informasi sensitif dan kekayaan intelektual adalah hal yang terpenting. Baik Anda seorang profesional hukum, entitas korporat, atau individu yang mengelola dokumen penting, perlindungan terhadap akses dan distribusi tidak sah adalah suatu keharusan. GroupDocs.Watermark untuk .NET muncul sebagai alat yang ampuh di bidang ini, menawarkan fungsionalitas komprehensif untuk menambah, mencari, dan menghapus tanda air dari berbagai format dokumen seperti PDF, Word, Excel, PowerPoint, dan gambar. Dalam tutorial ini, kita akan mempelajari seluk-beluk mengganti teks dengan pemformatan untuk anotasi dalam file PDF menggunakan GroupDocs.Watermark untuk .NET.
 ## Prasyarat

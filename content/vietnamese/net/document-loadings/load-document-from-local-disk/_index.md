@@ -6,6 +6,9 @@ description: Bảo vệ và quản lý tài liệu của bạn bằng Groupdocs 
 weight: 10
 url: /vi/net/document-loadings/load-document-from-local-disk/
 ---
+
+# Tải tài liệu từ đĩa cục bộ
+
 ## Giới thiệu
 Hình mờ tài liệu là điều cần thiết trong thời đại kỹ thuật số ngày nay để đảm bảo bảo vệ nội dung, khẳng định quyền sở hữu và bảo mật. Groupdocs.Watermark cho .NET là một thư viện mạnh mẽ cho phép các nhà phát triển thêm, tìm kiếm và quản lý hình mờ ở nhiều định dạng tài liệu khác nhau. Trong hướng dẫn này, chúng ta sẽ tìm hiểu quy trình sử dụng Groupdocs.Watermark cho .NET để thêm hình mờ vào tài liệu của bạn với hướng dẫn chi tiết từng bước.
 ## Điều kiện tiên quyết

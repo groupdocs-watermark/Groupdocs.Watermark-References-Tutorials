@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用すると、画像のウォ�
 weight: 10
 url: /ja/net/watermarking-basics/add-image-watermark/
 ---
+
+# 画像の透かしを追加する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Watermark for .NET を使用してドキュメントに画像ウォーターマークを追加するプロセスを詳しく説明します。文書に透かしを入れることは、知的財産とブランドを保護するために不可欠です。 GroupDocs.Watermark for .NET を使用すると、Word、Excel、PowerPoint、PDF などのさまざまなドキュメント形式にウォーターマークをシームレスに統合できます。
 ## 前提条件

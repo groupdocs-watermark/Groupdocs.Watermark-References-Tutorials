@@ -6,6 +6,9 @@ description: Aprenda a eliminar artefactos con formato de texto específico en P
 weight: 32
 url: /es/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---
+
+# Eliminar artefactos con formato de texto específico en PDF
+
 ## Introducción
 En la era digital actual, proteger la información confidencial y mantener la integridad de los documentos es primordial. Ya sea que sea un profesional del derecho que protege contratos confidenciales o un ejecutivo de negocios que garantiza la seguridad de los informes financieros, surge con frecuencia la necesidad de eliminar artefactos con formato de texto específico en documentos PDF. Afortunadamente, con el avance de la tecnología, herramientas como GroupDocs.Watermark para .NET ofrecen una solución integral para abordar estos desafíos.
 ## Requisitos previos

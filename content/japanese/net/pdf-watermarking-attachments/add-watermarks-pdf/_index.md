@@ -6,6 +6,9 @@ description: 包括的なステップバイステップ ガイドで、GroupDocs
 weight: 14
 url: /ja/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---
+
+# PDF に透かしを追加する
+
 ## 導入
 PDF に透かしを追加して文書を保護したり、ロゴをブランド化したいと考えていますか?これ以上探さない！このチュートリアルでは、GroupDocs.Watermark for .NET を使用してテキストと画像の両方のウォーターマークを PDF ファイルに追加するプロセスについて詳しく説明します。経験豊富な開発者でも、初心者でも、このガイドでは各ステップを順を追って説明し、ウォーターマークを簡単かつ正確に適用できるようにします。
 ## 前提条件

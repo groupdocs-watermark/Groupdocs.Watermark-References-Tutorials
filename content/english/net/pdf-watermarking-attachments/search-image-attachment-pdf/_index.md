@@ -6,6 +6,9 @@ description: Efficiently search images within PDF attachments using GroupDocs.Wa
 weight: 46
 url: /net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---
+
+# Search Image in Attachment of PDF
+
 ## Introduction
 GroupDocs.Watermark for .NET is a powerful API designed to facilitate seamless manipulation and management of watermarks in various document formats, including PDFs. Whether you need to add, remove, or search for watermarks within PDF attachments, this versatile tool offers a comprehensive solution.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: A GroupDocs.Watermark for .NET segítségével átfogó, lépésrő
 weight: 14
 url: /hu/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---
+
+# Vízjelek hozzáadása a PDF-hez
+
 ## Bevezetés
 Vízjeleket szeretne hozzáadni PDF-fájljaihoz, hogy megvédje dokumentumait, vagy logójával látja el őket? Ne keressen tovább! Ebben az oktatóanyagban a GroupDocs.Watermark for .NET használatának folyamatát mutatjuk be, amellyel szöveges és képi vízjeleket is hozzáadhat PDF-fájljaihoz. Akár tapasztalt fejlesztő, akár csak kezdő, ez az útmutató végigvezeti Önt az egyes lépéseken, biztosítva, hogy könnyedén és pontosan alkalmazhasson vízjeleket.
 ## Előfeltételek

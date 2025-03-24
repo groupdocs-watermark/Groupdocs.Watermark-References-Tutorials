@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 PDF의 텍스트를 효
 weight: 44
 url: /ko/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
+
+# PDF의 특정 XObject에 대한 텍스트 바꾸기
+
 ## 소개
 문서 처리, 민감한 정보 관리 또는 지적 재산 보호 영역에서 워터마킹은 중추적인 역할을 합니다. 하지만 워터마킹은 단순히 문서에 눈에 보이는 표시를 추가하는 것이 아닙니다. 효율적이고 효과적으로 수행하는 것입니다. .NET용 GroupDocs.Watermark는 이 분야에서 강력한 도구로 등장하여 원활한 통합, 강력한 기능 및 최고의 사용 편의성을 제공합니다. 이 포괄적인 가이드에서는 .NET용 GroupDocs.Watermark를 사용하여 PDF 문서의 특정 XObject에 대한 텍스트를 바꾸는 복잡한 과정을 자세히 살펴보겠습니다.
 ## 전제조건

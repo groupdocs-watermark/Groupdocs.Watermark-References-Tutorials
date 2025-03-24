@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して Word 文書内の特�
 weight: 32
 url: /ja/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# Word ドキュメントのセクションから透かしを削除する
+
 ## 導入
 デジタル時代では、特に機密情報や専有コンテンツの場合、ドキュメントの完全性を保護することが最も重要です。透かしは、所有権やブランドアイデンティティを主張したり、単に文書のステータスを示したりするために一般的に使用される手法です。ただし、編集要件やプライバシー上の懸念により、ウォーターマークの削除が必要になる場合があります。
 ## 前提条件

@@ -6,6 +6,9 @@ description: Ezzel a lépésenkénti útmutatóval egyszerűen cserélheti ki a 
 weight: 39
 url: /hu/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
+
+# Cserélje le a képet egy adott XObjectre a PDF-ben
+
 ## Bevezetés
 Üdvözöljük részletes útmutatónkban arról, hogyan cserélhet le egy képet egy adott XObjecthez PDF-ben a GroupDocs.Watermark for .NET használatával. Ha vízjeleket kell kezelnie vagy módosítania kell a PDF-fájlok tartalmát, akkor jó helyen jár. Ez az oktatóanyag végigvezeti Önt az egyes lépéseken, így magabiztosan frissítheti PDF-dokumentumait új képekkel. Merüljünk el benne!
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak PDF dosyalarından yapay 
 weight: 24
 url: /tr/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# Yapı Bilgilerini PDF'den Çıkarın
+
 ## giriiş
 PDF belgeleri genellikle resimler, metinler ve şekiller gibi çeşitli yapıların içine gömülü değerli bilgiler içerir. Bu bilginin çıkarılması, veri analizinden içerik yönetimine kadar birçok uygulama için hayati önem taşıyabilir. Bu öğreticide, PDF belgelerini filigranlamak, aramak ve değiştirmek için özel olarak tasarlanmış güçlü bir .NET kitaplığı olan GroupDocs.Watermark for .NET'i kullanarak PDF dosyalarından yapay bilgilerin nasıl çıkarılacağını keşfedeceğiz.
 ## Önkoşullar

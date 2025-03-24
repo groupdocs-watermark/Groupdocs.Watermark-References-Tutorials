@@ -6,6 +6,9 @@ description: Découvrez comment remplacer des images dans des documents PDF à l
 weight: 38
 url: /fr/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# Remplacer l'image d'un artefact spécifique dans un PDF
+
 ## Introduction
 L'ajout de filigranes aux documents est une pratique essentielle pour garantir la sécurité des documents, l'image de marque et la protection des droits d'auteur. Si vous souhaitez vous plonger dans le monde du filigrane de documents à l'aide de GroupDocs.Watermark pour .NET, vous êtes au bon endroit. Ce guide vous guidera tout au long du processus de remplacement d'images dans un document PDF à l'aide de la bibliothèque GroupDocs.Watermark. Commençons!
 ## Conditions préalables

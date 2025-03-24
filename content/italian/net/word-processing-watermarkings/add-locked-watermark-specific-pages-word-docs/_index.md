@@ -6,6 +6,9 @@ description: Scopri come aggiungere una filigrana bloccata a pagine specifiche n
 weight: 12
 url: /it/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Aggiungi filigrana bloccata a pagine specifiche in documenti Word
+
 ## introduzione
 Stai cercando di aggiungere una filigrana a pagine specifiche dei tuoi documenti Word, ma vuoi che sia bloccata in modo che non possa essere facilmente rimossa o modificata? Sei nel posto giusto! In questo tutorial ti guideremo attraverso il processo di aggiunta di una filigrana bloccata a pagine specifiche nei documenti Word utilizzando GroupDocs.Watermark per .NET. Questa potente libreria semplifica l'applicazione, la gestione e la personalizzazione delle filigrane su una varietà di tipi di documenti. Che tu sia uno sviluppatore o semplicemente qualcuno che ha bisogno di proteggere i propri documenti, questa guida ti guiderà attraverso ogni passaggio in modo semplice.
 ## Prerequisiti

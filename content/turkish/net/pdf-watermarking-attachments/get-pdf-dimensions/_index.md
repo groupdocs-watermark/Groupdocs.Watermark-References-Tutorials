@@ -6,6 +6,9 @@ description: Groupdocs.Watermark for .NET'i kullanarak belgelerinizi kolaylıkla
 weight: 26
 url: /tr/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---
+
+# PDF Boyutlarını Alın
+
 ## giriiş
 Günümüzün dijital çağında belgelerinizi korumak çok önemlidir. İster iş profesyoneli, ister hukuk uzmanı, ister yaratıcı bir sanatçı olun, fikri mülkiyetinizi korumak çok önemlidir. Groupdocs.Watermark for .NET, belgelerinize filigranlar, damgalar ve açıklamalar eklemek için güçlü bir çözüm sunarak bunların güvenliğini ve orijinalliğini sağlar.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Aprenda como desproteger documentos do Word facilmente usando Group
 weight: 38
 url: /pt/net/word-processing-watermarkings/unprotect-document-word-docs/
 ---
+
+# Desproteger documento em documentos do Word
+
 ## Introdução
 GroupDocs.Watermark for .NET é uma API poderosa que permite aos desenvolvedores trabalhar com marcas d’água em vários formatos de documentos, incluindo documentos do Word. Neste tutorial, orientaremos você no processo de desproteção de um documento do Word usando GroupDocs.Watermark for .NET. Quer você seja um desenvolvedor experiente ou esteja apenas começando com o desenvolvimento .NET, este guia passo a passo o ajudará a realizar a tarefa com eficiência.
 ## Pré-requisitos

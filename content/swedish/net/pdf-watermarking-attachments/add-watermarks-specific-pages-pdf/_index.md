@@ -6,6 +6,9 @@ description: Lär dig att lägga till text- och bildvattenstämplar på specifik
 weight: 15
 url: /sv/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# Lägg till vattenstämplar på specifika sidor i PDF
+
 ## Introduktion
 Att lägga till vattenstämplar i dina PDF-dokument är ett avgörande steg för att skydda ditt innehåll och hävda ditt ägande. Oavsett om du markerar ett utkast, säkrar känslig information eller bara lägger till varumärken är vattenstämplar ett effektivt verktyg. I den här handledningen kommer vi att utforska hur du använder Groupdocs.Watermark för .NET för att lägga till både text- och bildvattenstämplar på specifika sidor i dina PDF-filer. Vi delar upp processen i hanterbara steg, så att du kan följa med och implementera dessa funktioner i dina projekt.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Pelajari cara mengganti teks bentuk dengan teks berformat di dokume
 weight: 34
 url: /id/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---
+
+# Ganti Teks Bentuk dengan Teks Terformat di Dokumen Word
+
 ## Perkenalan
 Dalam tutorial ini, kami akan memandu Anda melalui proses mengganti teks bentuk dengan teks berformat di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Pustaka ini menyediakan fitur canggih untuk bekerja dengan tanda air, termasuk mengganti teks di dalam bentuk.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs for .NET 删除 PDF 中具有特定文
 weight: 32
 url: /zh/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---
+
+# 删除 PDF 中具有特定文本格式的伪影
+
 ## 介绍
 在当今的数字时代，保护敏感信息和维护文档的完整性至关重要。无论您是保护机密合同的法律专业人士还是确保财务报告安全的业务主管，经常需要删除 PDF 文档中具有特定文本格式的工件。幸运的是，随着技术的进步，GroupDocs.Watermark for .NET 等工具提供了全面的解决方案来应对此类挑战。
 ## 先决条件

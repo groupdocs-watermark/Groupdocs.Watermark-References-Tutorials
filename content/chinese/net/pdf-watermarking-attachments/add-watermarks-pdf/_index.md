@@ -6,6 +6,9 @@ description: 通过我们全面的分步指南，了解如何使用 GroupDocs.Wa
 weight: 14
 url: /zh/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---
+
+# 向 PDF 添加水印
+
 ## 介绍
 您是否希望在 PDF 中添加水印以保护您的文档或在其上添加您的徽标？别再犹豫了！在本教程中，我们将深入探讨使用 GroupDocs.Watermark for .NET 将文本和图像水印添加到 PDF 文件的过程。无论您是经验丰富的开发人员还是新手，本指南都将引导您完成每个步骤，确保您可以轻松而精确地应用水印。
 ## 先决条件

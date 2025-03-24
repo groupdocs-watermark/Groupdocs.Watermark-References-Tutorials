@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 将具有图像效�
 weight: 19
 url: /zh/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---
+
+# 在 Word 文档中添加具有图像效果的水印
+
 ## 介绍
 您是否希望通过引人注目的水印为您的 Word 文档添加一些活力？ GroupDocs.Watermark for .NET 已满足您的需求！本综合指南将引导您完成使用 GroupDocs for .NET 将具有令人惊叹的图像效果的水印添加到 Word 文档的过程。无论您是经验丰富的开发人员还是初学者，这个分步教程都会使整个过程变得轻而易举。
 ## 先决条件

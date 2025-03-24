@@ -6,6 +6,9 @@ description: 通过此分步指南，了解如何使用 GroupDocs.Watermark for 
 weight: 11
 url: /zh/net/document-savings/save-document-specified-location/
 ---
+
+# 保存文档到指定位置
+
 ## 介绍
 在数字时代，保护文档变得比以往任何时候都更加重要。水印是保护您的文档免遭未经授权使用的有效方法。 GroupDocs.Watermark for .NET 提供了一个强大的解决方案，用于向文档添加水印。无论您是希望将水印集成到应用程序中的开发人员还是有兴趣保护文档的开发人员，本教程都将逐步指导您完成该过程。
 ## 先决条件

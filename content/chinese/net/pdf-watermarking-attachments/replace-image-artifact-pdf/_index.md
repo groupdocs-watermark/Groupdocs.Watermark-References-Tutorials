@@ -6,6 +6,9 @@ description: 通过这个全面的分步教程，了解如何使用 GroupDocs.Wa
 weight: 38
 url: /zh/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# 替换 PDF 中特定工件的图像
+
 ## 介绍
 向文档添加水印是确保文档安全、品牌和版权保护的重要做法。如果您希望使用 GroupDocs.Watermark for .NET 深入研究文档水印世界，那么您来对地方了。本指南将引导您完成使用 GroupDocs.Watermark 库替换 PDF 文档中的图像的过程。让我们开始吧！
 ## 先决条件

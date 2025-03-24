@@ -6,6 +6,9 @@ description: Pomocí GroupDocs.Watermark for .NET můžete do svých dokumentů 
 weight: 10
 url: /cs/net/watermarking-basics/add-image-watermark/
 ---
+
+# Přidat obrázek vodoznak
+
 ## Úvod
 V tomto tutoriálu se ponoříme do procesu přidávání vodoznaku obrázku do vašich dokumentů pomocí GroupDocs.Watermark for .NET. Vodoznakové dokumenty jsou nezbytné pro ochranu duševního vlastnictví a značky. S GroupDocs.Watermark for .NET můžete bez problémů integrovat vodoznaky do různých formátů dokumentů, jako je Word, Excel, PowerPoint, PDF a mnoho dalších.
 ## Předpoklady

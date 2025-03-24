@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 PDF 문서에서 첨부
 weight: 33
 url: /ko/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---
+
+# PDF에서 첨부 파일 제거
+
 ## 소개
 소프트웨어 개발 세계에서 문서를 효율적으로 관리하는 것은 중요한 작업입니다. 개인용이든 업무용이든 문서 내의 다양한 요소를 조작하거나 제어해야 할 때가 있습니다. .NET용 GroupDocs.Watermark는 이러한 요구를 해결하기 위해 설계된 강력한 라이브러리로, 다양한 문서 형식을 원활하게 사용할 수 있는 포괄적인 도구 세트를 제공합니다.
 ## 전제조건

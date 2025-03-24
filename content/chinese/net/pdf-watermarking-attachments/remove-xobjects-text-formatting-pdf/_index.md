@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 轻松从 PDF 中删除具有�
 weight: 36
 url: /zh/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# 删除 PDF 中具有特定文本格式的 XObject
+
 ## 介绍
 对文档添加水印是确保其真实性和保护敏感信息的关键部分。 GroupDocs.Watermark for .NET 提供了一个全面的解决方案，用于添加、修改和删除各种文档格式的水印。在本教程中，我们将深入研究如何使用 GroupDocs.Watermark for .NET 从 PDF 文档中删除具有特定文本格式的 XObject。
 ## 先决条件

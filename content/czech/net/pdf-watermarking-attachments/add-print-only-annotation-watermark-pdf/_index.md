@@ -6,6 +6,9 @@ description: Naučte se přidávat vodoznaky pouze pro tisk do souborů PDF pomo
 weight: 13
 url: /cs/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---
+
+# Přidat vodoznak pouze pro tisk do PDF
+
 ## Úvod
 V tomto tutoriálu se ponoříme do procesu přidávání vodoznaku pouze pro tisk do PDF pomocí GroupDocs.Watermark for .NET. Vodoznakové dokumenty jsou zásadním aspektem zabezpečení dokumentů a brandingu a GroupDocs.Watermark poskytuje vývojářům .NET bezproblémové řešení, jak toho dosáhnout.
 ## Předpoklady

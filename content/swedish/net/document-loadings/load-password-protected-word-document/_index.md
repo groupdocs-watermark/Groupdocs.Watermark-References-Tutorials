@@ -6,6 +6,9 @@ description: Lägg enkelt till vattenstämplar i lösenordsskyddade Word-dokumen
 weight: 14
 url: /sv/net/document-loadings/load-password-protected-word-document/
 ---
+
+# Ladda lösenordsskyddat Word-dokument
+
 ## Introduktion
 I den digitala tidsåldern är det viktigare än någonsin att skydda och autentisera dina dokument. Vattenmärkning är en kraftfull teknik för att skydda dina filer, och med GroupDocs.Watermark för .NET kan du göra detta utan ansträngning. Denna omfattande guide kommer att leda dig genom processen att vattenmärka ett lösenordsskyddat Word-dokument och dela upp varje steg för att säkerställa att du förstår och kan implementera det enkelt.
 ## Förutsättningar

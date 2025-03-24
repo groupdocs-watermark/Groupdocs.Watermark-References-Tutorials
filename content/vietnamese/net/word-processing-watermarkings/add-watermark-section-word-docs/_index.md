@@ -6,6 +6,9 @@ description: Dễ dàng thêm hình mờ vào tài liệu Word bằng GroupDocs.
 weight: 15
 url: /vi/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Thêm hình mờ vào phần trong tài liệu Word
+
 ## Giới thiệu
 Hình mờ tài liệu của bạn là một bước quan trọng trong việc bảo vệ nội dung của bạn và khẳng định quyền sở hữu. Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn quy trình thêm hình mờ vào một phần cụ thể trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Cho dù bạn là nhà phát triển hay người có hiểu biết cơ bản về mã hóa, hướng dẫn này sẽ giúp bạn bảo mật tài liệu của mình một cách hiệu quả.
 ## Điều kiện tiên quyết

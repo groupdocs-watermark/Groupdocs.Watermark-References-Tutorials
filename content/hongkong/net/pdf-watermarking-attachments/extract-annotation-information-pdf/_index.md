@@ -6,6 +6,9 @@ description: 在此詳細的逐步指南中了解如何使用 GroupDocs.Watermar
 weight: 23
 url: /zh-hant/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
+
+# 從 PDF 中提取註釋信息
+
 ## 介紹
 您是否經常發現自己需要從 PDF 文件中提取詳細的註釋資訊？無論您是文件管理系統的開發人員還是處理大量 PDF 的業務專業人員，高效提取和處理註釋都至關重要。透過 GroupDocs.Watermark for .NET，您可以使用強大的工具包來讓此任務變得簡單且有效率。
 ## 先決條件

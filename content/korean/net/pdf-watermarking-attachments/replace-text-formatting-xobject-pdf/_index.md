@@ -6,6 +6,9 @@ description: .NET용 Watermark를 사용하여 .NET 문서 조작 기능을 강�
 weight: 45
 url: /ko/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---
+
+# PDF의 XObject 서식으로 텍스트 바꾸기
+
 ## 소개
 문서 조작 및 관리 영역에서 .NET용 GroupDocs.Watermark는 다양한 문서 형식 내에서 워터마크, 텍스트 및 이미지를 조작하려는 .NET 개발자를 위한 강력한 솔루션으로 돋보입니다. 이 튜토리얼에서는 PDF의 XObject 서식으로 텍스트를 바꾸는 강력한 기능 중 하나를 자세히 살펴봅니다. 이 가이드를 마치면 이 기능을 .NET 애플리케이션에 원활하게 통합할 수 있게 됩니다.
 ## 전제조건

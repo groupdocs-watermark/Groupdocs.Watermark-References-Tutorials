@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 문서에 이미지 워
 weight: 12
 url: /ko/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# 스트림에서 이미지 워터마크 추가
+
 ## 소개
 문서 관리 및 보안 영역에서는 워터마크를 파일에 통합하는 것이 가장 중요합니다. 브랜딩, 저작권 보호 또는 문서 무결성 유지와 관련하여 워터마크는 중요한 역할을 합니다. 다행히 .NET용 GroupDocs.Watermark는 다양한 문서 형식의 워터마크를 추가, 제거 및 검색할 수 있는 강력한 솔루션을 제공합니다.
 ## 전제조건

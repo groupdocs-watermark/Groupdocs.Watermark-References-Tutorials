@@ -6,6 +6,9 @@ description: Chroń swoje pliki PDF za pomocą spersonalizowanych znaków wodnyc
 weight: 18
 url: /pl/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# Dodaj znak wodny do artefaktów obrazu w formacie PDF
+
 ## Wstęp
 tym samouczku przeprowadzimy Cię przez proces dodawania znaku wodnego do artefaktów obrazu w dokumencie PDF przy użyciu narzędzia GroupDocs.Watermark dla platformy .NET. Wykonując poniższe kroki, możesz skutecznie chronić swoje pliki PDF za pomocą spersonalizowanych znaków wodnych.
 ## Warunki wstępne

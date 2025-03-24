@@ -6,6 +6,9 @@ description: このガイドでは、GroupDocs.Watermark for .NET を使用し�
 weight: 11
 url: /ja/net/document-loadings/load-document-from-stream/
 ---
+
+# ストリームからドキュメントをロード
+
 ## 導入
 .NET を使用してドキュメントにウォーターマークをシームレスに追加したいと考えていますか?これ以上探さない！ GroupDocs.Watermark for .NET は、さまざまなドキュメント形式のウォーターマークを管理できる強力で使いやすいライブラリです。 PDF、Word 文書、画像のいずれを扱う場合でも、このツールが役に立ちます。このチュートリアルでは、ストリームからドキュメントを読み込み、ウォーターマークを追加するプロセスを段階的に説明します。それでは、早速入っていきましょう！
 ## 前提条件

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 將僅列印註解�
 weight: 13
 url: /zh-hant/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---
+
+# 將僅列印註釋浮水印新增至 PDF
+
 ## 介紹
 在本教程中，我們將深入研究使用 GroupDocs.Watermark for .NET 將僅列印註解浮水印新增至 PDF 的過程。文件浮水印是文件安全和品牌塑造的一個重要方面，GroupDocs.Watermark 為 .NET 開發人員提供了實現這一目標的無縫解決方案。
 ## 先決條件

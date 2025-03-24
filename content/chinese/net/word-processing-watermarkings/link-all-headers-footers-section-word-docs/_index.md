@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 轻松链接 Word 文档中的�
 weight: 25
 url: /zh/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# 链接 Word 文档中节中的所有页眉/页脚
+
 ## 介绍
 使用 Word 文档时，通常需要链接不同部分的页眉和页脚以保持一致性和连贯性。本教程将指导您使用 GroupDocs.Watermark for .NET 逐步完成该过程。
 ## 导入命名空间

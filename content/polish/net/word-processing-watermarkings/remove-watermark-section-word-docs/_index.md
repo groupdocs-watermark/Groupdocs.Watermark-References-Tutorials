@@ -6,6 +6,9 @@ description: Dowiedz się, jak usuwać znaki wodne z określonych sekcji dokumen
 weight: 32
 url: /pl/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# Usuń znak wodny z sekcji w dokumentach programu Word
+
 ## Wstęp
 epoce cyfrowej ochrona integralności dokumentów ma ogromne znaczenie, zwłaszcza jeśli chodzi o informacje wrażliwe lub treści zastrzeżone. Znak wodny jest powszechnie stosowaną techniką potwierdzania własności, tożsamości marki lub po prostu wskazania statusu dokumentu. Są jednak przypadki, w których usunięcie znaków wodnych staje się konieczne ze względu na wymagania edycyjne lub obawy dotyczące prywatności.
 ## Warunki wstępne

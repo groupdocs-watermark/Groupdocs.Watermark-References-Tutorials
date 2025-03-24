@@ -6,6 +6,9 @@ description: Découvrez comment supprimer des artefacts avec une mise en forme d
 weight: 32
 url: /fr/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---
+
+# Supprimer les artefacts avec un formatage de texte spécifique dans un PDF
+
 ## Introduction
 À l’ère numérique d’aujourd’hui, la protection des informations sensibles et le maintien de l’intégrité des documents sont primordiaux. Que vous soyez un professionnel du droit protégeant des contrats confidentiels ou un dirigeant d'entreprise assurant la sécurité des rapports financiers, le besoin de supprimer les artefacts avec un formatage de texte spécifique dans les documents PDF se pose fréquemment. Heureusement, avec les progrès de la technologie, des outils tels que GroupDocs.Watermark pour .NET offrent une solution complète pour relever ces défis.
 ## Conditions préalables

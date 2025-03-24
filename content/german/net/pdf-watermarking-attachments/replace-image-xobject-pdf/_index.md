@@ -6,6 +6,9 @@ description: Ersetzen Sie mit dieser Schritt-für-Schritt-Anleitung ganz einfach
 weight: 39
 url: /de/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
+
+# Ersetzen Sie das Bild für ein bestimmtes XObject in PDF
+
 ## Einführung
 Willkommen zu unserer ausführlichen Anleitung zum Ersetzen eines Bildes für ein bestimmtes XObject in einer PDF-Datei mithilfe von GroupDocs.Watermark für .NET. Wenn Sie Wasserzeichen verwalten oder Inhalte in Ihren PDF-Dateien ändern müssen, sind Sie hier richtig. Dieses Tutorial führt Sie durch jeden Schritt und stellt sicher, dass Sie Ihre PDF-Dokumente sicher mit neuen Bildern aktualisieren können. Lasst uns eintauchen!
 ## Voraussetzungen

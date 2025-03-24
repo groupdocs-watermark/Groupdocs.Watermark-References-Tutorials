@@ -6,6 +6,9 @@ description: Naučte se přidávat vodoznaky do příloh PDF pomocí GroupDocs.W
 weight: 16
 url: /cs/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# Přidat vodoznak do všech příloh v PDF
+
 ## Úvod
 Přidání vodoznaků do příloh PDF může být zásadním krokem ve správě dokumentů, zejména při zajišťování zabezpečení nebo brandingu. GroupDocs.Watermark for .NET nabízí komplexní řešení pro bezproblémové vkládání vodoznaků do souborů PDF. V tomto tutoriálu vás provedeme procesem přidání vodoznaku do všech příloh v dokumentu PDF pomocí GroupDocs.Watermark for .NET.
 ## Předpoklady

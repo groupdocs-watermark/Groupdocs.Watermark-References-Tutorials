@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit Groupdocs.Watermark für .NET Wasserzeich
 weight: 20
 url: /de/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# Fügen Sie Wasserzeichen zu XObjects in PDF hinzu
+
 ## Einführung
 Das Anbringen von Wasserzeichen in PDFs ist ein entscheidender Schritt, um sicherzustellen, dass Ihre Dokumente vor unbefugter Nutzung geschützt sind. Mit Groupdocs.Watermark für .NET war das Hinzufügen von Wasserzeichen zu XObjects in Ihren PDFs noch nie so einfach. In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess und stellen sicher, dass Sie sicher Wasserzeichen auf Ihre PDF-Dokumente anwenden können. Lass uns anfangen!
 ## Voraussetzungen

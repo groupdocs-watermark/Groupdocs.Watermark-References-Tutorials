@@ -6,6 +6,9 @@ description: Easily add image watermarks to all headers in Word documents using 
 weight: 10
 url: /net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# Add Image Watermark to All Headers in Word Docs
+
 ## Introduction
 Watermarks can be an essential part of document management, providing a way to embed information like ownership, confidentiality, or branding into documents. In this tutorial, we’ll walk through the steps to add an image watermark to all headers in Word documents using GroupDocs.Watermark for .NET. Whether you're new to programming or an experienced developer, this guide will help you achieve your watermarking goals with ease.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Verbeter de documentbeveiliging met GroupDocs voor .NET. Leer hoe u
 weight: 41
 url: /nl/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---
+
+# Vervang tekst door opmaak voor annotatie in PDF
+
 ## Invoering
 In het huidige digitale tijdperk is de bescherming van gevoelige informatie en intellectueel eigendom van het allergrootste belang. Of u nu een juridische professional, een bedrijfsentiteit of een individu bent die cruciale documenten beheert, beveiliging tegen ongeautoriseerde toegang en verspreiding is een must. GroupDocs.Watermark voor .NET ontpopt zich als een krachtig hulpmiddel op dit gebied en biedt uitgebreide functionaliteiten voor het toevoegen, zoeken en verwijderen van watermerken uit verschillende documentformaten zoals PDF, Word, Excel, PowerPoint en afbeeldingen. In deze zelfstudie verdiepen we ons in de fijne kneepjes van het vervangen van tekst door opmaak voor annotatie in PDF-bestanden met behulp van GroupDocs.Watermark voor .NET.
 ## Vereisten

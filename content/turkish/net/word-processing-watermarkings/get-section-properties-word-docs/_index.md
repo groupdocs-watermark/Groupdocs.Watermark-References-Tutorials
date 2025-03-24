@@ -6,6 +6,9 @@ description: Groupdocs için Filigran'ı kullanarak Word belgelerinden bölüm �
 weight: 23
 url: /tr/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# Word Dokümanlarında Bölüm Özelliklerini Alma
+
 ## giriiş
 Belge yönetimi ve manipülasyonu alanında, Groupdocs.Watermark for .NET çok yönlü ve sağlam bir araç olarak öne çıkıyor. .NET çerçevesine sorunsuz bir şekilde entegre edilen bu kitaplık, geliştiricilerin filigranları, ek açıklamaları ve belge özelliklerini zahmetsizce değiştirmesine olanak tanır. Bu eğitimde, temel özelliklerinden birini inceleyeceğiz: Word belgelerinden bölüm özelliklerini çıkarmak. Süreci adım adım inceleyerek Groupdocs.Watermark for .NET'in potansiyelini açığa çıkarırken takip edin.
 ## Önkoşullar

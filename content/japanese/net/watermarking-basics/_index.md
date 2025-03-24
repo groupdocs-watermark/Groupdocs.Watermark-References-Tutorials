@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET チュートリアルを参照して�
 weight: 20
 url: /ja/net/watermarking-basics/
 ---
+
+# 透かしの基本
+
 ## 導入
 透かしは、文書を保護し、所有権を主張するための重要な技術です。 GroupDocs.Watermark for .NET はこのプロセスを簡素化し、画像とテキストの両方の透かしを追加するための強力なツールを提供します。透かしを初めて使用する場合でも、スキルを向上させたいと考えている場合でも、これらのチュートリアルは基本をガイドします。
 

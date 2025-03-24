@@ -6,6 +6,9 @@ description: Naučte se, jak snadno odstranit přílohy z dokumentů PDF pomocí
 weight: 33
 url: /cs/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---
+
+# Odebrat přílohu z PDF
+
 ## Úvod
 Ve světě vývoje softwaru je efektivní správa dokumentů zásadním úkolem. Ať už se jedná o osobní nebo profesionální použití, jsou chvíle, kdy potřebujeme manipulovat nebo ovládat různé prvky v dokumentech. GroupDocs.Watermark for .NET je výkonná knihovna navržená pro řešení této potřeby a nabízí komplexní sadu nástrojů pro bezproblémovou práci s různými formáty dokumentů.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Découvrez comment ajouter des filigranes aux images dans des docum
 weight: 16
 url: /fr/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Ajouter un filigrane aux images de section dans Word Docs
+
 ## Introduction
 Dans le monde numérique d’aujourd’hui, la protection de vos documents est essentielle. L'ajout de filigranes à vos documents Word est un moyen simple mais efficace de sécuriser votre contenu. Ce didacticiel vous guidera tout au long du processus d'ajout de filigranes aux images de section dans des documents Word à l'aide de Groupdocs.Watermark pour .NET. Que vous soyez un développeur cherchant à intégrer cette fonctionnalité dans votre application ou que vous souhaitiez simplement protéger vos documents, ce guide est fait pour vous.
 ## Conditions préalables

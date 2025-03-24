@@ -6,6 +6,9 @@ description: Scopri i tutorial essenziali di GroupDocs.Watermark per .NET per ag
 weight: 26
 url: /it/net/word-processing-watermarkings/
 ---
+
+# Filigrana di elaborazione testi
+
 ## introduzione
 
 La filigrana dei tuoi documenti Word è un passaggio fondamentale per proteggere i tuoi contenuti e affermare il tuo marchio. Con GroupDocs.Watermark per .NET, questo processo diventa semplice ed efficiente. Che tu stia aggiungendo filigrane di immagini alle intestazioni o bloccando filigrane su pagine specifiche, questi tutorial ti guideranno attraverso ogni passaggio, garantendo che i tuoi documenti siano protetti e professionali.

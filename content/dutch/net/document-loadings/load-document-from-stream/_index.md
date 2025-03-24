@@ -6,6 +6,9 @@ description: Leer in deze handleiding hoe u watermerken aan documenten kunt toev
 weight: 11
 url: /nl/net/document-loadings/load-document-from-stream/
 ---
+
+# Document uit stroom laden
+
 ## Invoering
 Wilt u naadloos watermerken aan uw documenten toevoegen met behulp van .NET? Zoek niet verder! GroupDocs.Watermark voor .NET is een krachtige en gebruiksvriendelijke bibliotheek waarmee u watermerken in verschillende documentformaten kunt beheren. Of u nu met PDF's, Word-documenten of afbeeldingen werkt, met deze tool zit u goed. In deze zelfstudie leiden we u stap voor stap door het proces van het laden van een document uit een stream en het toevoegen van een watermerk. Dus laten we er meteen in duiken!
 ## Vereisten

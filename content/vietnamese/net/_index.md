@@ -6,6 +6,9 @@ url: /vi/net/
 description: Khám phá các hướng dẫn toàn diện về GroupDocs.Watermark dành cho .NET. Tìm hiểu cách thêm, quản lý và bảo mật hình mờ ở nhiều định dạng tài liệu khác nhau bằng hướng dẫn từng bước.
 is_root: true
 ---
+
+# Hướng dẫn và ví dụ về GroupDocs.Watermark cho .NET
+
 ## Giới thiệu
 
 Khi nói đến quản lý tài liệu, bảo mật và xây dựng thương hiệu là điều tối quan trọng. GroupDocs.Watermark for .NET cung cấp các công cụ mạnh mẽ để thêm và quản lý hình mờ trên nhiều định dạng tài liệu khác nhau, đảm bảo nội dung của bạn vẫn được bảo vệ và chuyên nghiệp. Bài viết này bao gồm các hướng dẫn và ví dụ cần thiết để giúp bạn nắm vững nghệ thuật tạo hình mờ bằng GroupDocs cho .NET.

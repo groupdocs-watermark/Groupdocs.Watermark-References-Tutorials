@@ -6,6 +6,9 @@ description: Ezzel az átfogó, lépésenkénti útmutatóval megtudhatja, hogya
 weight: 11
 url: /hu/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# Dokumentuminformációk lekérése a helyi lemezről
+
 ## Bevezetés
 Üdvözöljük a GroupDocs.Watermark for .NET használatának végső útmutatójában! Akár tapasztalt fejlesztő, akár csak most kezdi, ez a cikk végigvezeti Önt a dokumentumok vízjellel való ellátásának alapvető részletein ezzel a hatékony eszközzel. A végére profi lesz a vízjelek dokumentumaiba való beágyazásában, biztosítva, hogy azok védettek legyenek, és az Ön specifikációinak megfelelő márkajelzéssel rendelkezzenek.
 ## Előfeltételek

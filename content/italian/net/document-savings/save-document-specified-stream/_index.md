@@ -6,6 +6,9 @@ description: Scopri come salvare un documento in un flusso specificato utilizzan
 weight: 12
 url: /it/net/document-savings/save-document-specified-stream/
 ---
+
+# Salva il documento nel flusso specificato
+
 ## introduzione
 Stai cercando di padroneggiare l'arte di aggiungere filigrane ai tuoi documenti utilizzando GroupDocs.Watermark per .NET? Sei arrivato nel posto giusto! In questa guida completa ti guideremo attraverso tutto ciò che devi sapere per salvare con successo un documento in uno stream specificato dopo avergli applicato la filigrana. Immergiamoci e iniziamo.
 ## Prerequisiti

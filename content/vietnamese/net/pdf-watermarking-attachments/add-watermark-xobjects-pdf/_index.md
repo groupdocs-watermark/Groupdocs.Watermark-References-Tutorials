@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ vào XObjects trong PDF bằng G
 weight: 20
 url: /vi/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# Thêm hình mờ vào XObjects trong PDF
+
 ## Giới thiệu
 Hình chìm mờ các tệp PDF là một bước quan trọng để đảm bảo tài liệu của bạn được bảo vệ khỏi việc sử dụng trái phép. Với Groupdocs.Watermark cho .NET, việc thêm hình mờ vào XObject trong tệp PDF của bạn chưa bao giờ dễ dàng hơn thế. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn từng bước quy trình, đảm bảo bạn có thể tự tin áp dụng hình mờ cho tài liệu PDF của mình. Bắt đầu nào!
 ## Điều kiện tiên quyết

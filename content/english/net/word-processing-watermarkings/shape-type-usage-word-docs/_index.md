@@ -6,6 +6,9 @@ description: Learn how to manipulate shapes in Word documents using GroupDocs.Wa
 weight: 37
 url: /net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Shape Type Usage in Word Docs
+
 ## Introduction
 In this tutorial, we will explore how to utilize shape types in Word documents using GroupDocs.Watermark for .NET. Shapes in Word documents can vary, and understanding how to manipulate them can be crucial for various document processing tasks.
 ## Prerequisites

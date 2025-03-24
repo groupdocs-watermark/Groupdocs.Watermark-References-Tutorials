@@ -6,6 +6,9 @@ description: 透過我們全面的逐步指南，使用 GroupDocs.Watermark for 
 weight: 14
 url: /zh-hant/net/document-loadings/load-password-protected-word-document/
 ---
+
+# 載入受密碼保護的Word文檔
+
 ## 介紹
 在數位時代，保護和驗證您的文件比以往任何時候都更加重要。浮水印是保護檔案的強大技術，使用 GroupDocs.Watermark for .NET，您可以輕鬆做到這一點。這份綜合指南將引導您完成對受密碼保護的 Word 文件添加浮水印的過程，分解每個步驟以確保您理解並能夠輕鬆實施。
 ## 先決條件

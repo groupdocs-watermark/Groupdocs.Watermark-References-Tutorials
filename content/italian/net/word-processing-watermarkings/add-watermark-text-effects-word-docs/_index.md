@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane personalizzate con effetti di test
 weight: 21
 url: /it/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---
+
+# Aggiungi filigrana con effetti di testo in documenti Word
+
 ## introduzione
 In questo tutorial esploreremo come aggiungere una filigrana con effetti di testo ai documenti Word utilizzando GroupDocs.Watermark per .NET. Seguendo queste istruzioni passo passo, sarai in grado di migliorare i tuoi documenti con filigrane personalizzate che includono vari effetti di testo.
 ## Prerequisiti

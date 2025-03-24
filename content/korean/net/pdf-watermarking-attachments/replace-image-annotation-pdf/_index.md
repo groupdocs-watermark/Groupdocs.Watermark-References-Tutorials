@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 특정 PDF 주석의 �
 weight: 37
 url: /ko/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
+
+# PDF의 특정 주석에 대한 이미지 교체
+
 ## 소개
 .NET용 GroupDocs.Watermark를 사용하여 PDF 문서의 특정 주석 내에서 이미지를 바꾸는 방법에 대한 포괄적인 가이드에 오신 것을 환영합니다. PDF 처리 기능을 향상시키려는 개발자이거나 단순히 워터마킹의 복잡성에 대해 궁금한 점이 있는 개발자라면 이 튜토리얼을 통해 도움을 받을 수 있습니다. 최종적으로는 PDF 주석의 이미지를 사용자 정의 이미지로 원활하게 교체하여 문서 처리 작업 흐름을 최적화할 수 있습니다.
 ## 전제조건

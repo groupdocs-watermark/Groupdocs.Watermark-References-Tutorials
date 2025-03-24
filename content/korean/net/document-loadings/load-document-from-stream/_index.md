@@ -6,6 +6,9 @@ description: 이 가이드에서 .NET용 GroupDocs.Watermark를 사용하여 문
 weight: 11
 url: /ko/net/document-loadings/load-document-from-stream/
 ---
+
+# 스트림에서 문서 로드
+
 ## 소개
 .NET을 사용하여 문서에 워터마크를 원활하게 추가하고 싶으십니까? 더 이상 보지 마세요! GroupDocs.Watermark for .NET은 다양한 문서 형식의 워터마크를 관리할 수 있는 강력하고 사용하기 쉬운 라이브러리입니다. PDF, Word 문서, 이미지 등 어떤 작업을 하든 이 도구를 사용하면 됩니다. 이 튜토리얼에서는 스트림에서 문서를 로드하고 워터마크를 추가하는 과정을 단계별로 안내합니다. 그럼 바로 들어가 보겠습니다!
 ## 전제조건

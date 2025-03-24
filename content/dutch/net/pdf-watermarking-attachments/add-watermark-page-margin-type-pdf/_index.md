@@ -6,6 +6,9 @@ description: Leer hoe u watermerken met paginamargetype in PDF kunt toevoegen me
 weight: 21
 url: /nl/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---
+
+# Watermerk toevoegen met paginamargetype in PDF
+
 ## Invoering
 In het huidige digitale tijdperk is het beveiligen van documenten belangrijker dan ooit. Eén manier om de integriteit en authenticiteit van uw documenten te garanderen, is door watermerken toe te voegen. Groupdocs.Watermark voor .NET is een uitzonderlijke tool die is ontworpen om dit proces moeiteloos te maken. In deze zelfstudie leiden we u door de stappen om een watermerk met paginamargetype toe te voegen aan een PDF met behulp van Groupdocs.Watermark voor .NET.
 ## Vereisten

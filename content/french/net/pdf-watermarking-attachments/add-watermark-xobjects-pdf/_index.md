@@ -6,6 +6,9 @@ description: Découvrez comment ajouter des filigranes aux XObjects dans un PDF 
 weight: 20
 url: /fr/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# Ajouter un filigrane aux XObjects en PDF
+
 ## Introduction
 Le filigrane des PDF est une étape cruciale pour garantir que vos documents sont protégés contre toute utilisation non autorisée. Avec Groupdocs.Watermark pour .NET, ajouter des filigranes aux XObjects dans vos PDF n'a jamais été aussi simple. Dans ce didacticiel, nous vous guiderons pas à pas tout au long du processus, afin que vous puissiez appliquer en toute confiance des filigranes à vos documents PDF. Commençons!
 ## Conditions préalables

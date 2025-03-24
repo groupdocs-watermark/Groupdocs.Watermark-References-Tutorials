@@ -6,6 +6,9 @@ description: Z tego przewodnika krok po kroku dowiesz się, jak dodawać tekstow
 weight: 11
 url: /pl/net/watermarking-basics/add-text-watermark/
 ---
+
+# Dodaj tekstowy znak wodny
+
 ## Wstęp
 GroupDocs.Watermark dla .NET to potężna biblioteka, która umożliwia programistom dodawanie, wyszukiwanie i usuwanie znaków wodnych z różnych formatów dokumentów w aplikacjach .NET. W tym samouczku skupimy się na dodawaniu tekstowego znaku wodnego do dokumentu za pomocą GroupDocs.Watermark.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Leer hoe u watermerken kunt toevoegen aan met een wachtwoord beveil
 weight: 13
 url: /nl/net/document-loadings/load-password-protected-document/
 ---
+
+# Met wachtwoord beveiligd document laden
+
 ## Invoering
 Wilt u uw documenten beschermen door watermerken toe te voegen, zelfs als ze met een wachtwoord zijn beveiligd? Groupdocs.Watermark voor .NET is een krachtig hulpmiddel waarmee u precies dat kunt doen. In deze zelfstudie begeleiden we u bij het laden van een met een wachtwoord beveiligd document en het toevoegen van een watermerk eraan met behulp van Groupdocs.Watermark voor .NET. Laten we erin duiken!
 ## Vereisten

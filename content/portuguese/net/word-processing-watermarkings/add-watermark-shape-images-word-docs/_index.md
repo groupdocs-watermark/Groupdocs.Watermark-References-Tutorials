@@ -6,6 +6,9 @@ description: Aprenda como adicionar marcas d'água para moldar imagens em docume
 weight: 17
 url: /pt/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Adicionar marca d’água a imagens de formato em documentos do Word
+
 ## Introdução
 Neste tutorial, exploraremos como adicionar uma marca d'água para moldar imagens em documentos do Word usando GroupDocs.Watermark for .NET. A marca d'água é um aspecto crucial da proteção de documentos, especialmente quando se trata de informações sensíveis ou confidenciais. Ao adicionar marcas d'água para moldar imagens, você pode garantir a integridade e segurança de seus documentos.
 ## Pré-requisitos

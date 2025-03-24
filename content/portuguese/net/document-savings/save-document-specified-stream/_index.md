@@ -6,6 +6,9 @@ description: Aprenda como salvar um documento em um fluxo especificado usando Gr
 weight: 12
 url: /pt/net/document-savings/save-document-specified-stream/
 ---
+
+# Salvar documento no fluxo especificado
+
 ## Introdução
 Você deseja dominar a arte de adicionar marcas d'água aos seus documentos usando GroupDocs.Watermark for .NET? Você veio ao lugar certo! Neste guia abrangente, orientaremos você em tudo o que você precisa saber para salvar com êxito um documento em um fluxo especificado após marcá-lo com marca d'água. Vamos mergulhar e começar.
 ## Pré-requisitos

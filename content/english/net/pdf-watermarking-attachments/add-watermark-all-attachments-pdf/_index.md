@@ -6,6 +6,9 @@ description: Learn how to add watermarks to PDF attachments using GroupDocs.Wate
 weight: 16
 url: /net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# Add Watermark to All Attachments in PDF
+
 ## Introduction
 Adding watermarks to PDF attachments can be a crucial step in document management, especially when ensuring security or branding. GroupDocs.Watermark for .NET offers a comprehensive solution for seamlessly embedding watermarks into PDF files. In this tutorial, we'll guide you through the process of adding a watermark to all attachments within a PDF document using GroupDocs.Watermark for .NET.
 ## Prerequisites

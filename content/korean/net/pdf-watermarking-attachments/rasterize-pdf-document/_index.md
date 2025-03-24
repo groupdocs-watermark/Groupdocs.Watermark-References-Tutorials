@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 PDF 문서를 래스터
 weight: 27
 url: /ko/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# PDF 문서 래스터화
+
 ## 소개
 문서 관리 및 조작 영역에서 .NET용 GroupDocs.Watermark는 다양한 문서 형식의 워터마크를 추가, 제거 및 검색할 수 있는 강력한 기능을 제공하는 강력한 도구로 우뚝 서 있습니다. 저작권 표시로 문서를 보호하든, 브랜딩을 위한 기업 로고를 추가하거나, 단순히 스탬프로 문서에 주석을 달든, GroupDocs.Watermark는 직관적인 API와 광범위한 기능 세트를 통해 프로세스를 단순화합니다.
 ## 전제조건

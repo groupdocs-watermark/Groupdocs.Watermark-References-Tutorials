@@ -6,6 +6,9 @@ description: Dễ dàng thêm hình mờ vào tài liệu của bạn bằng Gro
 weight: 13
 url: /vi/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Nhận các định dạng tệp được hỗ trợ
+
 ## Giới thiệu
 Hình mờ tài liệu của bạn là một bước quan trọng trong việc bảo vệ tài sản kỹ thuật số của bạn. Cho dù đó là để bảo vệ tài sản trí tuệ, đảm bảo bí mật hay đơn giản là xây dựng thương hiệu, hình mờ đều đóng một vai trò quan trọng. Nếu bạn là nhà phát triển .NET đang tìm cách tích hợp khả năng tạo hình mờ vào ứng dụng của mình thì GroupDocs.Watermark dành cho .NET là một công cụ mạnh mẽ và linh hoạt mà bạn nên xem xét. Hướng dẫn này sẽ hướng dẫn bạn những điều cơ bản khi sử dụng GroupDocs.Watermark, từ cài đặt đến áp dụng hình mờ đầu tiên, chia nhỏ từng bước để đảm bảo bạn có thể dễ dàng làm theo.
 ## Điều kiện tiên quyết

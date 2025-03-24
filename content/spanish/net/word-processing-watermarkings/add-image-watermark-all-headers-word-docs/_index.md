@@ -6,6 +6,9 @@ description: Agregue fácilmente marcas de agua de imagen a todos los encabezado
 weight: 10
 url: /es/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# Agregar marca de agua de imagen a todos los encabezados en documentos de Word
+
 ## Introducción
 Las marcas de agua pueden ser una parte esencial de la gestión de documentos, ya que proporcionan una forma de incorporar información como la propiedad, la confidencialidad o la marca en los documentos. En este tutorial, recorreremos los pasos para agregar una marca de agua de imagen a todos los encabezados de documentos de Word usando GroupDocs.Watermark para .NET. Ya sea que sea nuevo en programación o un desarrollador experimentado, esta guía lo ayudará a lograr sus objetivos de marca de agua con facilidad.
 ## Requisitos previos

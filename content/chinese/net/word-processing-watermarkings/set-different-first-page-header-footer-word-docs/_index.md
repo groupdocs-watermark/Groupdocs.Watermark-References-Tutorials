@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 在 Word 文档的�
 weight: 36
 url: /zh/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# 在 Word 文档中设置不同的首页页眉/页脚
+
 ## 介绍
 在文档管理和操作领域，GroupDocs.Watermark for .NET 成为一种强大的工具，为文档添加水印提供无缝集成和强大的功能。文档处理中常见的需求之一就是在Word文档的首页设置不同的页眉和页脚。本教程将阐明使用 GroupDocs.Watermark for .NET 实现此任务的过程，并将每个步骤分解为易于理解的部分。
 ## 先决条件

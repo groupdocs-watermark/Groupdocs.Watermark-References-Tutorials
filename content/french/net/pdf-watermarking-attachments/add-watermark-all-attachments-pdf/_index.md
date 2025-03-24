@@ -6,6 +6,9 @@ description: Découvrez comment ajouter des filigranes aux pièces jointes PDF �
 weight: 16
 url: /fr/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# Ajouter un filigrane à toutes les pièces jointes du PDF
+
 ## Introduction
 L'ajout de filigranes aux pièces jointes PDF peut être une étape cruciale dans la gestion des documents, en particulier lorsqu'il s'agit de garantir la sécurité ou l'image de marque. GroupDocs.Watermark for .NET offre une solution complète pour intégrer de manière transparente des filigranes dans des fichiers PDF. Dans ce didacticiel, nous vous guiderons tout au long du processus d'ajout d'un filigrane à toutes les pièces jointes d'un document PDF à l'aide de GroupDocs.Watermark pour .NET.
 ## Conditions préalables

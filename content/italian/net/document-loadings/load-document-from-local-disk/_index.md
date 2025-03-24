@@ -6,6 +6,9 @@ description: Proteggi e gestisci i tuoi documenti con Groupdocs per .NET. Segui 
 weight: 10
 url: /it/net/document-loadings/load-document-from-local-disk/
 ---
+
+# Carica documento dal disco locale
+
 ## introduzione
 L'applicazione della filigrana ai documenti è essenziale nell'era digitale di oggi per garantire la protezione dei contenuti, l'affermazione della proprietà e la riservatezza. Groupdocs.Watermark per .NET è una potente libreria che consente agli sviluppatori di aggiungere, cercare e gestire filigrane in vari formati di documenti. In questo tutorial, esamineremo il processo di utilizzo di Groupdocs.Watermark per .NET per aggiungere filigrane ai tuoi documenti con istruzioni dettagliate passo dopo passo.
 ## Prerequisiti

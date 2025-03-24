@@ -6,6 +6,9 @@ description: Pelajari cara mengganti teks untuk bentuk tertentu di dokumen Word 
 weight: 35
 url: /id/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---
+
+# Ganti Teks untuk Bentuk Tertentu di Dokumen Word
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Watermark untuk .NET untuk mengganti teks untuk bentuk tertentu di dokumen Word. GroupDocs.Watermark for .NET adalah perpustakaan canggih yang menyediakan berbagai fitur untuk bekerja dengan tanda air dalam berbagai format dokumen, termasuk dokumen Word.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: 透過此逐步指南了解如何使用 Groupdocs for .NET 載入�
 weight: 12
 url: /zh-hant/net/document-loadings/load-specific-format-document/
 ---
+
+# 載入特定格式文檔
+
 ## 介紹
 在文件中添加浮水印是確保內容保護和品牌推廣的關鍵任務。 Groupdocs.Watermark for .NET 是一個多功能且功能強大的工具，可簡化此流程。無論您處理的是文字文件、電子表格、簡報或影像，本指南都會引導您完成使用 Groupdocs.Watermark for .NET 載入特定格式文件並為其新增浮水印的步驟。
 ## 先決條件

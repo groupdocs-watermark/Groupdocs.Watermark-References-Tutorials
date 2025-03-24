@@ -6,6 +6,9 @@ description: Dễ dàng xóa XObject có định dạng văn bản cụ thể kh
 weight: 36
 url: /vi/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# Xóa XObjects bằng định dạng văn bản cụ thể trong PDF
+
 ## Giới thiệu
 Hình mờ tài liệu là một phần quan trọng để đảm bảo tính xác thực của chúng và bảo vệ thông tin nhạy cảm. GroupDocs.Watermark cho .NET cung cấp giải pháp toàn diện để thêm, sửa đổi và xóa hình mờ khỏi các định dạng tài liệu khác nhau. Trong hướng dẫn này, chúng tôi sẽ đi sâu vào cách bạn có thể xóa XObjects bằng định dạng văn bản cụ thể khỏi tài liệu PDF bằng GroupDocs.Watermark cho .NET.
 ## Điều kiện tiên quyết

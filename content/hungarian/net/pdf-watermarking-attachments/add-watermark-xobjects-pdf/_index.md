@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat vízjeleket PDF-ben található XObjects-
 weight: 20
 url: /hu/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# Vízjel hozzáadása az XObjectshez PDF-ben
+
 ## Bevezetés
 A PDF-fájlok vízjelezése kulcsfontosságú lépés annak biztosításához, hogy a dokumentumokat megvédjük a jogosulatlan használattól. A Groupdocs.Watermark for .NET segítségével még soha nem volt ilyen egyszerű vízjelek hozzáadása a PDF-ben található XObjects-hez. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a folyamaton, biztosítva, hogy magabiztosan alkalmazhasson vízjeleket PDF-dokumentumaira. Kezdjük el!
 ## Előfeltételek

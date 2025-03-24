@@ -6,6 +6,9 @@ description: Lär dig hur du tar bort hyperlänkar från Word-dokument med Group
 weight: 29
 url: /sv/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# Ta bort hyperlänkar i Word Docs
+
 ## Introduktion
 I dagens digitala värld, där information flödar sömlöst, är det ytterst viktigt att skydda dina dokument. Oavsett om du delar känslig affärsdata eller skapar ett mästerverk är det viktigt att skydda ditt innehåll från obehörig åtkomst och manipulation. Med intåget av GroupDocs.Watermark för .NET kan du säkerställa integriteten hos dina dokument genom att enkelt lägga till, ta bort och upptäcka vattenstämplar.
 ## Förutsättningar

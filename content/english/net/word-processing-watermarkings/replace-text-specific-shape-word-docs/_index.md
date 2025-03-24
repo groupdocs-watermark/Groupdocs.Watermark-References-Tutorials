@@ -6,6 +6,9 @@ description: Learn how to replace text for specific shapes in Word documents usi
 weight: 35
 url: /net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---
+
+# Replace Text for Specific Shape in Word Docs
+
 ## Introduction
 In this tutorial, we will explore how to use GroupDocs.Watermark for .NET to replace text for a specific shape in Word documents. GroupDocs.Watermark for .NET is a powerful library that provides a wide range of features for working with watermarks in various document formats, including Word documents.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Bu kapsamlı adım adım kılavuzla Groupdocs'u kullanarak Word bel
 weight: 13
 url: /tr/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Word Dokümanlarındaki Bölüme Kilitli Filigran Ekleme
+
 ## giriiş
 Word belgelerinizdeki bir bölüme kilitli filigran eklemenin etkili bir yolunu mu arıyorsunuz? Başka yerde arama! Groupdocs.Watermark for .NET ile, Word belgelerine sorunsuz bir şekilde filigran ekleyebilir, aynı zamanda bunların kilitli ve kurcalanmaya karşı korumalı kalmasını sağlayabilirsiniz. Bu güçlü araç, markalama, gizlilik veya güvenlik amacıyla filigranlama ihtiyaçlarınızı karşılayacak çeşitli özellikler sunar. Bu adım adım öğreticide, Groupdocs.Watermark for .NET'i kullanarak bir Word belgesinin belirli bir bölümüne nasıl kilitli filigran ekleyeceğinizi anlatacağız. Hadi dalalım!
 ## Önkoşullar

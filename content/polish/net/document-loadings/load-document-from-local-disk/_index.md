@@ -6,6 +6,9 @@ description: Chroń swoje dokumenty i zarządzaj nimi za pomocą Groupdocs dla .
 weight: 10
 url: /pl/net/document-loadings/load-document-from-local-disk/
 ---
+
+# Załaduj dokument z dysku lokalnego
+
 ## Wstęp
 Dokumenty ze znakami wodnymi są niezbędne w dzisiejszej epoce cyfrowej, aby zapewnić ochronę treści, potwierdzenie własności i poufność. Groupdocs.Watermark dla .NET to potężna biblioteka, która umożliwia programistom dodawanie, wyszukiwanie i zarządzanie znakami wodnymi w różnych formatach dokumentów. W tym samouczku omówimy proces używania Groupdocs.Watermark dla platformy .NET do dodawania znaków wodnych do dokumentów, korzystając ze szczegółowych instrukcji krok po kroku.
 ## Warunki wstępne

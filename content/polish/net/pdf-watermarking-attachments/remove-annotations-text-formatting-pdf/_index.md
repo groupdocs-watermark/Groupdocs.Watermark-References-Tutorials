@@ -6,6 +6,9 @@ description: Dowiedz się, jak usuwać adnotacje o określonym formacie tekstu w
 weight: 30
 url: /pl/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# Usuń adnotacje z określonym formatowaniem tekstu w formacie PDF
+
 ## Wstęp
 W tym samouczku przeprowadzimy Cię przez proces usuwania adnotacji o określonym formacie tekstu w dokumencie PDF przy użyciu programu Groupdocs.Watermark dla .NET. Ta biblioteka zapewnia zaawansowane funkcje do pracy ze znakami wodnymi, adnotacjami i innymi elementami dokumentów w różnych formatach.
 ## Warunki wstępne

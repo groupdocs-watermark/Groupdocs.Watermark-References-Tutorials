@@ -6,6 +6,9 @@ description: Leer hoe u sectie-eigenschappen uit Word-documenten kunt extraheren
 weight: 23
 url: /nl/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
+
+# Sectie-eigenschappen ophalen in Word-documenten
+
 ## Invoering
 Op het gebied van documentbeheer en -manipulatie onderscheidt Groupdocs.Watermark voor .NET zich als een veelzijdige en robuuste tool. Deze bibliotheek is naadloos geïntegreerd in het .NET-framework en stelt ontwikkelaars in staat moeiteloos watermerken, annotaties en documenteigenschappen te manipuleren. In deze zelfstudie gaan we dieper in op een van de belangrijkste functies ervan: het extraheren van sectie-eigenschappen uit Word-documenten. Volg mee terwijl we het proces stap voor stap opsplitsen en het potentieel van Groupdocs.Watermark voor .NET ontsluiten.
 ## Vereisten

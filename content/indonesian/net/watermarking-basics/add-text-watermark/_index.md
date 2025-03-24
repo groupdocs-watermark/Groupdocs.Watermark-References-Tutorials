@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air teks ke dokumen Anda menggunaka
 weight: 11
 url: /id/net/watermarking-basics/add-text-watermark/
 ---
+
+# Tambahkan Tanda Air Teks
+
 ## Perkenalan
 GroupDocs.Watermark untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang menambahkan, mencari, dan menghapus tanda air dari berbagai format dokumen dalam aplikasi .NET. Dalam tutorial ini, kita akan fokus menambahkan tanda air teks ke dokumen menggunakan GroupDocs.Watermark.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air artefak ke file PDF dengan muda
 weight: 11
 url: /id/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# Tambahkan Tanda Air Artefak ke PDF
+
 ## Perkenalan
 Menambahkan tanda air ke file PDF adalah aspek penting dalam pengelolaan dokumen, terutama dalam hal melindungi kekayaan intelektual atau dokumen merek. Groupdocs.Watermark untuk .NET memberikan solusi tangguh untuk menambahkan tanda air ke file PDF dengan mudah. Dalam tutorial ini, kita akan memandu proses menambahkan tanda air artefak ke file PDF langkah demi langkah.
 ## Prasyarat

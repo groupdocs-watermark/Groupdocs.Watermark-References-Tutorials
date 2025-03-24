@@ -6,6 +6,9 @@ description: Protect your Word documents with GroupDocs.Watermark for .NET. Easi
 weight: 27
 url: /net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---
+
+# Modify Shape Properties in Word Docs
+
 ## Introduction
 In today's digital age, ensuring the security of your documents is paramount. Whether you're a business professional, a legal expert, or a creative writer, safeguarding your sensitive information is crucial. This is where GroupDocs.Watermark for .NET comes into play, offering a comprehensive solution to protect your documents from unauthorized use and distribution.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Pomocí GroupDocs.Watermark for .NET můžete bez námahy odstranit
 weight: 36
 url: /cs/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# Odstraňte XObjects se specifickým formátováním textu v PDF
+
 ## Úvod
 Vodoznakové dokumenty jsou zásadní součástí zajištění jejich pravosti a ochrany citlivých informací. GroupDocs.Watermark for .NET poskytuje komplexní řešení pro přidávání, úpravy a odstraňování vodoznaků z různých formátů dokumentů. V tomto tutoriálu se ponoříme do toho, jak můžete odstranit XObjects se specifickým formátováním textu z dokumentů PDF pomocí GroupDocs.Watermark for .NET.
 ## Předpoklady

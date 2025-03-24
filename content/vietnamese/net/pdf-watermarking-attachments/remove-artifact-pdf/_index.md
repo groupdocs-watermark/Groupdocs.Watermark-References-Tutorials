@@ -6,6 +6,9 @@ description: Tìm hiểu cách dễ dàng xóa các thành phần lạ khỏi t�
 weight: 31
 url: /vi/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
+
+# Xóa hiện vật khỏi PDF
+
 ## Giới thiệu
 Trong lĩnh vực quản lý và thao tác tài liệu, GroupDocs.Watermark dành cho .NET nổi bật như một công cụ mạnh mẽ. Nó cho phép các nhà phát triển thêm, xóa hoặc thao tác liền mạch các hình mờ trong các định dạng tài liệu khác nhau như PDF, Word, Excel, PowerPoint và nhiều định dạng khác. Tuy nhiên, việc nắm vững các khả năng của nó đòi hỏi một cách tiếp cận có cấu trúc và trong hướng dẫn toàn diện này, chúng ta sẽ đi sâu vào quy trình phức tạp để loại bỏ các thành phần lạ khỏi tài liệu PDF bằng GroupDocs.Watermark cho .NET.
 ## Điều kiện tiên quyết

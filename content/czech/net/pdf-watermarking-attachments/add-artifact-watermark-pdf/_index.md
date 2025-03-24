@@ -6,6 +6,9 @@ description: Naučte se, jak snadno přidávat artefakty do souborů PDF pomocí
 weight: 11
 url: /cs/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# Přidejte artefaktový vodoznak do PDF
+
 ## Úvod
 Přidávání vodoznaků do souborů PDF je zásadním aspektem správy dokumentů, zejména pokud jde o ochranu duševního vlastnictví nebo branding dokumentů. Groupdocs.Watermark for .NET poskytuje robustní řešení pro snadné přidávání vodoznaků do souborů PDF. V tomto tutoriálu si krok za krokem projdeme proces přidávání vodoznaku artefaktu do souborů PDF.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Nutzen Sie die Leistungsfähigkeit der Dokumentenwasserzeichen mit 
 weight: 25
 url: /de/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
+
+# Extrahieren Sie XObject-Informationen aus PDF
+
 ## Einführung
 GroupDocs.Watermark für .NET ist eine leistungsstarke API für Dokument-Wasserzeichen, mit der Wasserzeichen in verschiedenen Dokumentformaten wie PDF, Word, Excel, PowerPoint und Bildern bearbeitet werden können. Es bietet Entwicklern einen unkomplizierten Ansatz zum programmgesteuerten Hinzufügen, Entfernen, Suchen und Ersetzen von Wasserzeichen in Dokumenten. Unabhängig davon, ob Sie Ihren Dokumenten ein Firmenlogo, einen Urheberrechtshinweis oder einen vertraulichen Stempel hinzufügen müssen, GroupDocs.Watermark vereinfacht den Prozess mit seiner intuitiven API.
 ## Voraussetzungen

@@ -6,6 +6,9 @@ description: Verwijder moeiteloos XObjects met specifieke tekstopmaak uit PDF's 
 weight: 36
 url: /nl/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# Verwijder XObjects met specifieke tekstopmaak in PDF
+
 ## Invoering
 Het watermerken van documenten is een cruciaal onderdeel van het garanderen van de authenticiteit ervan en het beschermen van gevoelige informatie. GroupDocs.Watermark voor .NET biedt een uitgebreide oplossing voor het toevoegen, wijzigen en verwijderen van watermerken uit verschillende documentformaten. In deze zelfstudie gaan we in op hoe u XObjects met specifieke tekstopmaak uit PDF-documenten kunt verwijderen met behulp van GroupDocs.Watermark voor .NET.
 ## Vereisten

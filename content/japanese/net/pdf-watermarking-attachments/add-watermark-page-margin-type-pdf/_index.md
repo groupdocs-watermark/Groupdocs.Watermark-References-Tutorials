@@ -6,6 +6,9 @@ description: Groupdocs for .NET を使用して、PDF にページ余白タイ�
 weight: 21
 url: /ja/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---
+
+# PDF にページ余白タイプのウォーターマークを追加する
+
 ## 導入
 今日のデジタル時代では、文書の安全性がこれまで以上に重要になっています。ドキュメントの完全性と信頼性を保証する 1 つの方法は、透かしを追加することです。 Groupdocs.Watermark for .NET は、このプロセスを簡単にするために設計された優れたツールです。このチュートリアルでは、Groupdocs.Watermark for .NET を使用して PDF にページ余白タイプのウォーターマークを追加する手順を説明します。
 ## 前提条件

@@ -6,6 +6,9 @@ description: V tomto podrobném průvodci se dozvíte, jak získat informace o d
 weight: 12
 url: /cs/net/document-manipulation/get-document-info-stream/
 ---
+
+# Získejte informace o dokumentu ze streamu
+
 ## Úvod
 V dnešní digitální době je ochrana a správa integrity dokumentů zásadní. Ať už jste obchodní profesionál, vývojář nebo někdo, kdo pracuje s citlivými informacemi, nutnost přidávat, extrahovat nebo manipulovat s vodoznaky ve vašich dokumentech je zásadní. GroupDocs.Watermark for .NET poskytuje výkonnou sadu nástrojů, která vám pomůže toho dosáhnout. Tento článek vás provede používáním GroupDocs.Watermark for .NET k získání informací o dokumentech z datového proudu a nabídne vám podrobný návod, který vám celý proces usnadní. Nakonec budete zběhlí v používání této funkce ke zlepšení možností správy dokumentů.
 ## Předpoklady

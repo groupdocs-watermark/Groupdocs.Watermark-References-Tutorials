@@ -6,6 +6,9 @@ description: Learn how to add watermarks with shape settings to Word documents u
 weight: 20
 url: /net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Add Watermark with Shape Settings in Word Docs
+
 ## Introduction
 In this tutorial, we'll walk through the process of adding a watermark with shape settings to Word documents using GroupDocs.Watermark for .NET.
 ## Prerequisites

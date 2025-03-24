@@ -6,6 +6,9 @@ description: Z tego szczegółowego przewodnika krok po kroku dowiesz się, jak 
 weight: 23
 url: /pl/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
+
+# Wyodrębnij informacje o adnotacjach z pliku PDF
+
 ## Wstęp
 Czy często musisz wyodrębnić szczegółowe informacje z adnotacji z dokumentów PDF? Niezależnie od tego, czy jesteś programistą pracującym nad systemami zarządzania dokumentami, czy profesjonalistą obsługującym wiele plików PDF, wydajne wyodrębnianie i przetwarzanie adnotacji może mieć kluczowe znaczenie. Dzięki GroupDocs.Watermark dla .NET masz do dyspozycji potężny zestaw narzędzi, dzięki którym to zadanie będzie proste i wydajne.
 ## Warunki wstępne

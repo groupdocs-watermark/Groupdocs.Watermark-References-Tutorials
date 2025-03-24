@@ -6,6 +6,9 @@ description: Aprenda como remover hiperlinks de documentos do Word usando GroupD
 weight: 29
 url: /pt/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# Remover hiperlinks em documentos do Word
+
 ## Introdução
 No mundo digital de hoje, onde a informação flui perfeitamente, proteger os seus documentos é fundamental. Esteja você compartilhando dados comerciais confidenciais ou criando uma obra-prima, proteger seu conteúdo contra acesso e manipulação não autorizados é crucial. Com o advento do GroupDocs.Watermark for .NET, você pode garantir a integridade de seus documentos adicionando, removendo e detectando marcas d'água com facilidade.
 ## Pré-requisitos

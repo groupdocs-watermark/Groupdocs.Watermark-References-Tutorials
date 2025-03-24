@@ -6,6 +6,9 @@ description: Naučte se přidávat vodoznaky do dokumentů chráněných heslem 
 weight: 13
 url: /cs/net/document-loadings/load-password-protected-document/
 ---
+
+# Načíst dokument chráněný heslem
+
 ## Úvod
 Chcete chránit své dokumenty přidáním vodoznaků, i když jsou chráněny heslem? Groupdocs.Watermark for .NET je výkonný nástroj, který vám to umožní. V tomto tutoriálu vás provedeme procesem načtení dokumentu chráněného heslem a přidání vodoznaku do něj pomocí Groupdocs.Watermark for .NET. Pojďme se ponořit!
 ## Předpoklady

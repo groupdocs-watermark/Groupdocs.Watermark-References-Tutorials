@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 以程式設計方�
 weight: 33
 url: /zh-hant/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# 取代 Word 文件中的形狀圖像
+
 ## 介紹
 在軟體開發領域，特別是在 .NET 環境中，高效、安全地處理文件操作至關重要。在開發人員經常遇到的眾多任務中，常見的挑戰是以程式方式取代 Word 文件中的形狀圖像。如果沒有合適的工具和函式庫，這可能是一項乏味的任務。
 幸運的是，GroupDocs 提供了 GroupDocs.Watermark for .NET 形式的強大解決方案，這是一個多功能庫，旨在處理各種文件格式（包括 Word 文件）中的浮水印和操作浮水印。在本教程中，我們將深入研究使用 GroupDocs.Watermark for .NET 取代 Word 文件中的形狀圖像的逐步過程。

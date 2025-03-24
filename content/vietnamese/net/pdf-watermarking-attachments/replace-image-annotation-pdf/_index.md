@@ -6,6 +6,9 @@ description: Tìm hiểu cách thay thế hình ảnh trong chú thích PDF cụ
 weight: 37
 url: /vi/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
+
+# Thay thế hình ảnh cho chú thích cụ thể trong PDF
+
 ## Giới thiệu
 Chào mừng bạn đến với hướng dẫn toàn diện này về cách sử dụng GroupDocs.Watermark cho .NET để thay thế hình ảnh trong các chú thích cụ thể trong tài liệu PDF. Cho dù bạn là nhà phát triển đang tìm cách nâng cao khả năng xử lý PDF của mình hay chỉ đơn giản là tò mò về sự phức tạp của hình mờ, hướng dẫn này sẽ giúp bạn. Cuối cùng, bạn sẽ có thể thay thế liền mạch hình ảnh trong chú thích PDF bằng chú thích tùy chỉnh, tối ưu hóa quy trình xử lý tài liệu của bạn.
 ## Điều kiện tiên quyết

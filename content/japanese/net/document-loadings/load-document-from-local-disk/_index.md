@@ -6,6 +6,9 @@ description: Groupdocs for .NET を使用してドキュメントを保護およ
 weight: 10
 url: /ja/net/document-loadings/load-document-from-local-disk/
 ---
+
+# ローカルディスクからドキュメントをロード
+
 ## 導入
 今日のデジタル時代において、ドキュメントの透かしは、コンテンツの保護、所有権の主張、機密性を確保するために不可欠です。 Groupdocs.Watermark for .NET は、開発者がさまざまなドキュメント形式でウォーターマークを追加、検索、管理できる強力なライブラリです。このチュートリアルでは、Groupdocs.Watermark for .NET を使用してドキュメントにウォーターマークを追加するプロセスを、詳細なステップバイステップの手順とともに説明します。
 ## 前提条件

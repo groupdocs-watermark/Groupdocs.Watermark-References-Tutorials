@@ -6,6 +6,9 @@ description: A GroupDocs.Watermark for .NET segítségével könnyen hozzáadhat
 weight: 10
 url: /hu/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# Képes vízjel hozzáadása a Word Docs összes fejlécéhez
+
 ## Bevezetés
 vízjelek a dokumentumkezelés elengedhetetlen részét képezhetik, így olyan információkat is beágyazhatnak a dokumentumokba, mint a tulajdonjog, a titoktartás vagy a márkajelzés. Ebben az oktatóanyagban végigvezetjük azokat a lépéseket, amelyekkel a GroupDocs.Watermark for .NET segítségével képes vízjelet adni a Word-dokumentumok összes fejlécéhez. Akár kezdő a programozásban, akár tapasztalt fejlesztő, ez az útmutató segít a vízjelezési célok könnyű elérésében.
 ## Előfeltételek

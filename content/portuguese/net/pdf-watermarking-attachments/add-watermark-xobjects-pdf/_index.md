@@ -6,6 +6,9 @@ description: Aprenda como adicionar marcas d'água em XObjects em PDF usando Gro
 weight: 20
 url: /pt/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
+
+# Adicionar marca d'água em XObjects em PDF
+
 ## Introdução
 Marcar PDFs com marca d'água é uma etapa crucial para garantir que seus documentos estejam protegidos contra uso não autorizado. Com Groupdocs.Watermark for .NET, adicionar marcas d'água em XObjects dentro de seus PDFs nunca foi tão fácil. Neste tutorial, orientaremos você no processo passo a passo, garantindo que você possa aplicar marcas d'água em seus documentos PDF com segurança. Vamos começar!
 ## Pré-requisitos

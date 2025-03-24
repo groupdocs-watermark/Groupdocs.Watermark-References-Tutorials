@@ -6,6 +6,9 @@ description: Learn how to effortlessly remove artifacts from PDF documents using
 weight: 31
 url: /net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
+
+# Remove Artifact from PDF
+
 ## Introduction
 In the realm of document management and manipulation, GroupDocs.Watermark for .NET stands out as a powerful tool. It empowers developers to seamlessly add, remove, or manipulate watermarks within various document formats such as PDF, Word, Excel, PowerPoint, and many others. However, mastering its capabilities requires a structured approach, and in this comprehensive guide, we'll delve into the intricate process of removing artifacts from PDF documents using GroupDocs.Watermark for .NET.
 ## Prerequisites

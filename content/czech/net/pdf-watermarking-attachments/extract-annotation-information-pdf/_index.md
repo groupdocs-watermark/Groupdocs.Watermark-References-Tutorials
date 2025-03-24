@@ -6,6 +6,9 @@ description: V tomto podrobném podrobném průvodci se dozvíte, jak extrahovat
 weight: 23
 url: /cs/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
+
+# Extrahujte anotační informace z PDF
+
 ## Úvod
 Stává se vám často, že potřebujete extrahovat podrobné informace o anotacích z vašich dokumentů PDF? Ať už jste vývojář pracující na systémech pro správu dokumentů nebo obchodní profesionál zpracovávající množství PDF, efektivní extrahování a zpracování anotací může být zásadní. S GroupDocs.Watermark for .NET máte k dispozici výkonnou sadu nástrojů, díky které je tento úkol jednoduchý a efektivní.
 ## Předpoklady

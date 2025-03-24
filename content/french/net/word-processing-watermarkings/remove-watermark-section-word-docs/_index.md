@@ -6,6 +6,9 @@ description: Découvrez comment supprimer les filigranes de sections spécifique
 weight: 32
 url: /fr/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# Supprimer le filigrane de la section dans Word Docs
+
 ## Introduction
 À l’ère du numérique, la protection de l’intégrité des documents est primordiale, notamment lorsqu’il s’agit d’informations sensibles ou de contenus propriétaires. Le filigrane est une technique couramment utilisée pour affirmer la propriété, l'identité de la marque ou simplement indiquer le statut d'un document. Cependant, il existe des cas où la suppression des filigranes devient nécessaire, soit en raison d'exigences d'édition, soit de problèmes de confidentialité.
 ## Conditions préalables

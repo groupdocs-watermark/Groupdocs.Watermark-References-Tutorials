@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ để định hình hình ảnh 
 weight: 17
 url: /vi/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Thêm hình mờ để định hình hình ảnh trong tài liệu Word
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách thêm hình mờ để định hình hình ảnh trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Hình mờ là một khía cạnh quan trọng của việc bảo vệ tài liệu, đặc biệt khi xử lý thông tin nhạy cảm hoặc bí mật. Bằng cách thêm hình mờ để định hình hình ảnh, bạn có thể đảm bảo tính toàn vẹn và bảo mật cho tài liệu của mình.
 ## Điều kiện tiên quyết

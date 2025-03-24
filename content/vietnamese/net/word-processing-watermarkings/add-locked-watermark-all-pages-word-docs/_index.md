@@ -6,6 +6,9 @@ description: Bảo mật tài liệu của bạn bằng cách thêm hình mờ b
 weight: 11
 url: /vi/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Thêm hình mờ bị khóa vào tất cả các trang trong tài liệu Word
+
 ## Giới thiệu
 Thêm hình mờ vào tài liệu của bạn là một bước quan trọng trong việc bảo mật và xây dựng thương hiệu cho nội dung của bạn. Cho dù bạn đang ngăn chặn việc sử dụng trái phép hay chỉ đơn giản là thêm một nét chuyên nghiệp, hình mờ có thể phục vụ nhiều mục đích. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình thêm hình mờ bị khóa vào tất cả các trang của tài liệu Word bằng Groupdocs.Watermark cho .NET.
 ## Điều kiện tiên quyết

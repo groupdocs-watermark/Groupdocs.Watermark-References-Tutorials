@@ -6,6 +6,9 @@ description: Dowiedz się, jak usuwać artefakty z określonym formatowaniem tek
 weight: 32
 url: /pl/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---
+
+# Usuń artefakty z określonym formatowaniem tekstu w formacie PDF
+
 ## Wstęp
 dzisiejszej epoce cyfrowej ochrona poufnych informacji i zachowanie integralności dokumentów jest sprawą najwyższej wagi. Niezależnie od tego, czy jesteś prawnikiem chroniącym poufne umowy, czy też dyrektorem biznesowym dbającym o bezpieczeństwo raportów finansowych, często pojawia się potrzeba usuwania artefaktów o określonym formatowaniu tekstu w dokumentach PDF. Na szczęście wraz z rozwojem technologii narzędzia takie jak GroupDocs.Watermark dla .NET oferują kompleksowe rozwiązanie pozwalające sprostać takim wyzwaniom.
 ## Warunki wstępne

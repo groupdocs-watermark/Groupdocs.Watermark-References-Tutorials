@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak belirli metin formatına 
 weight: 36
 url: /tr/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# PDF'de Özel Metin Formatına Sahip XObject'leri Kaldırma
+
 ## giriiş
 Belgelere filigran eklemek, bunların orijinalliğini sağlamanın ve hassas bilgileri korumanın önemli bir parçasıdır. GroupDocs.Watermark for .NET, çeşitli belge formatlarından filigran eklemek, değiştirmek ve kaldırmak için kapsamlı bir çözüm sağlar. Bu öğreticide, GroupDocs.Watermark for .NET'i kullanarak belirli metin formatına sahip XObject'leri PDF belgelerinden nasıl kaldırabileceğinizi açıklayacağız.
 ## Önkoşullar

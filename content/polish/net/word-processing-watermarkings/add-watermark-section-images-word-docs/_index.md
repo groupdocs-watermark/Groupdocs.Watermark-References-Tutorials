@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać znaki wodne do obrazów w dokumentach pr
 weight: 16
 url: /pl/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Dodaj znak wodny do obrazów sekcji w dokumentach programu Word
+
 ## Wstęp
 dzisiejszym cyfrowym świecie ochrona dokumentów jest niezbędna. Dodawanie znaków wodnych do dokumentów programu Word to prosty, ale skuteczny sposób zabezpieczenia zawartości. Ten samouczek przeprowadzi Cię przez proces dodawania znaków wodnych do obrazów sekcji w dokumentach programu Word przy użyciu narzędzia Groupdocs.Watermark dla platformy .NET. Niezależnie od tego, czy jesteś programistą i chcesz zintegrować tę funkcję ze swoją aplikacją, czy po prostu chcesz chronić swoje dokumenty, ten przewodnik jest dla Ciebie.
 ## Warunki wstępne

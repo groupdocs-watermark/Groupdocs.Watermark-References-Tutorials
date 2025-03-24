@@ -6,6 +6,9 @@ description: Aprenda a generar vistas previas de documentos utilizando GroupDocs
 weight: 10
 url: /es/net/document-manipulation/generate-document-preview/
 ---
+
+# Generar vista previa del documento
+
 ## Introducción
 En el mundo de la gestión de documentos digitales, la marca de agua juega un papel crucial para garantizar la seguridad y autenticidad de los documentos. GroupDocs.Watermark para .NET es una poderosa herramienta que permite a los desarrolladores agregar marcas de agua a documentos sin esfuerzo. En este tutorial, lo guiaremos a través del proceso de generación de vistas previas de documentos usando GroupDocs.Watermark para .NET. Ya sea que sea un desarrollador experimentado o recién esté comenzando, esta guía le brindará un proceso integral paso a paso para lograr su objetivo.
 ## Requisitos previos

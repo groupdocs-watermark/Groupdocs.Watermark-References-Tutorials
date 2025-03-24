@@ -6,6 +6,9 @@ description: Tìm hiểu cách lưu tài liệu vào luồng được chỉ đ�
 weight: 12
 url: /vi/net/document-savings/save-document-specified-stream/
 ---
+
+# Lưu tài liệu vào luồng được chỉ định
+
 ## Giới thiệu
 Bạn đang muốn nắm vững nghệ thuật thêm hình mờ vào tài liệu của mình bằng GroupDocs.Watermark cho .NET? Bạn đã đến đúng nơi! Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn mọi điều bạn cần biết để lưu thành công tài liệu vào luồng được chỉ định sau khi đóng dấu hình mờ vào tài liệu đó. Hãy đi sâu vào và bắt đầu.
 ## Điều kiện tiên quyết

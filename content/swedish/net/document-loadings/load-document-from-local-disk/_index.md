@@ -6,6 +6,9 @@ description: Skydda och hantera dina dokument med Groupdocs Watermark for .NET. 
 weight: 10
 url: /sv/net/document-loadings/load-document-from-local-disk/
 ---
+
+# Ladda dokument från lokal disk
+
 ## Introduktion
 Vattenmärkning av dokument är viktigt i dagens digitala tidsålder för att säkerställa innehållsskydd, äganderätt och konfidentialitet. Groupdocs.Watermark for .NET är ett kraftfullt bibliotek som låter utvecklare lägga till, söka och hantera vattenstämplar i olika dokumentformat. I den här handledningen går vi igenom processen att använda Groupdocs.Watermark för .NET för att lägga till vattenstämplar i dina dokument med detaljerade steg-för-steg-instruktioner.
 ## Förutsättningar

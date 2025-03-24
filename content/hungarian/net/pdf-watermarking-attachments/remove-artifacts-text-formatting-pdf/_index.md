@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan távolíthat el műtermékeket meghatározott s
 weight: 32
 url: /hu/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---
+
+# Távolítsa el a műtermékeket meghatározott szövegformázással a PDF-ben
+
 ## Bevezetés
 mai digitális korban az érzékeny információk védelme és a dokumentumok sértetlenségének megőrzése a legfontosabb. Legyen szó a bizalmas szerződéseket őrző jogi szakemberről vagy a pénzügyi jelentések biztonságát szavatoló cégvezetőről, gyakran felmerül, hogy a PDF-dokumentumokból el kell távolítani a különleges szövegformázású műtermékeket. Szerencsére a technológia fejlődésével az olyan eszközök, mint a GroupDocs.Watermark for .NET átfogó megoldást kínálnak az ilyen kihívások kezelésére.
 ## Előfeltételek

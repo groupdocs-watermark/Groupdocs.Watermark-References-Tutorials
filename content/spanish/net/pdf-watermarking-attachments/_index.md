@@ -6,6 +6,9 @@ description: Explore los tutoriales de GroupDocs.Watermark para .NET sobre marca
 weight: 25
 url: /es/net/pdf-watermarking-attachments/
 ---
+
+# PDF con marcas de agua y archivos adjuntos
+
 ## Introducción
 
 ¿Busca mejorar sus archivos PDF con marcas de agua y administrar archivos adjuntos de manera eficiente? GroupDocs.Watermark para .NET ofrece un conjunto completo de tutoriales para ayudarle a dominar estas tareas. Ya sea un principiante o un desarrollador experimentado, nuestras guías paso a paso hacen que el proceso sea sencillo y eficiente. Exploremos algunos tutoriales esenciales para que pueda comenzar a mejorar sus documentos PDF.

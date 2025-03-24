@@ -6,6 +6,9 @@ description: Hapus XObjects dengan format teks tertentu dengan mudah dari PDF me
 weight: 36
 url: /id/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
+
+# Hapus XObjects dengan Format Teks Tertentu dalam PDF
+
 ## Perkenalan
 Dokumen yang diberi watermark adalah bagian penting untuk memastikan keasliannya dan melindungi informasi sensitif. GroupDocs.Watermark untuk .NET memberikan solusi komprehensif untuk menambah, memodifikasi, dan menghapus tanda air dari berbagai format dokumen. Dalam tutorial ini, kita akan mempelajari bagaimana Anda dapat menghapus XObjects dengan format teks tertentu dari dokumen PDF menggunakan GroupDocs.Watermark untuk .NET.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Learn how to load and watermark documents using Groupdocs.Watermark
 weight: 12
 url: /net/document-loadings/load-specific-format-document/
 ---
+
+# Load Specific Format Document
+
 ## Introduction
 Adding watermarks to documents is a crucial task for ensuring content protection and branding. Groupdocs.Watermark for .NET is a versatile and powerful tool that simplifies this process. Whether you are dealing with text documents, spreadsheets, presentations, or images, this guide will walk you through the steps to load and watermark specific format documents using Groupdocs.Watermark for .NET.
 ## Prerequisites

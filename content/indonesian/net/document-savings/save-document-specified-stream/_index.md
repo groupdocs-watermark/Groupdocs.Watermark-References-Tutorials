@@ -6,6 +6,9 @@ description: Pelajari cara menyimpan dokumen ke aliran tertentu menggunakan Grou
 weight: 12
 url: /id/net/document-savings/save-document-specified-stream/
 ---
+
+# Simpan Dokumen ke Aliran Tertentu
+
 ## Perkenalan
 Apakah Anda ingin menguasai seni menambahkan tanda air ke dokumen Anda menggunakan GroupDocs.Watermark untuk .NET? Anda datang ke tempat yang tepat! Dalam panduan komprehensif ini, kami akan memandu Anda melalui semua yang perlu Anda ketahui agar berhasil menyimpan dokumen ke aliran tertentu setelah memberi tanda air pada dokumen tersebut. Mari selami dan mulai.
 ## Prasyarat

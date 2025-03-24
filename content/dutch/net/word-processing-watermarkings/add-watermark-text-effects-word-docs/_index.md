@@ -6,6 +6,9 @@ description: Leer hoe u aangepaste watermerken met teksteffecten aan Word-docume
 weight: 21
 url: /nl/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---
+
+# Voeg watermerk toe met teksteffecten in Word-documenten
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u een watermerk met teksteffecten aan Word-documenten kunt toevoegen met GroupDocs.Watermark voor .NET. Door deze stapsgewijze instructies te volgen, kunt u uw documenten verfraaien met aangepaste watermerken met verschillende teksteffecten.
 ## Vereisten

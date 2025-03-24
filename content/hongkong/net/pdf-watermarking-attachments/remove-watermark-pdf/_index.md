@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 從 PDF 檔案中�
 weight: 34
 url: /zh-hant/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---
+
+# 從 PDF 移除浮水印
+
 ## 介紹
 在當今的數位時代，使用水印保護敏感文件是一種常見的做法。但是，在某些情況下，您可能會因各種原因需要從 PDF 檔案中刪除浮水印。無論您是在編輯文件還是只是需要一個乾淨的版本進行演示，GroupDocs.Watermark for .NET 都提供了從 PDF 文件中刪除水印的無縫解決方案。
 ## 先決條件

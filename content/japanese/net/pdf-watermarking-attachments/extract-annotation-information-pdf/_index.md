@@ -6,6 +6,9 @@ description: この詳細なステップバイステップ ガイドでは、Gro
 weight: 23
 url: /ja/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
+
+# PDF から注釈情報を抽出する
+
 ## 導入
 PDF ドキュメントから詳細な注釈情報を抽出する必要があることがよくありますか?ドキュメント管理システムに取り組んでいる開発者であっても、多数の PDF を扱うビジネスプロフェッショナルであっても、注釈を効率的に抽出して処理することは非常に重要です。 GroupDocs.Watermark for .NET を使用すると、このタスクを簡単かつ効率的に行うための強力なツールキットを自由に使用できます。
 ## 前提条件

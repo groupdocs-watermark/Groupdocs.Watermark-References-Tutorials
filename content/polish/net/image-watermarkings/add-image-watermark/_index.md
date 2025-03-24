@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać graficzne znaki wodne do swoich dokument
 weight: 11
 url: /pl/net/image-watermarkings/add-image-watermark/
 ---
+
+# Dodaj znak wodny obrazu
+
 ## Wstęp
 Witamy w tym obszernym przewodniku na temat dodawania znaków wodnych do obrazów przy użyciu GroupDocs.Watermark dla .NET! Znak wodny to skuteczny sposób ochrony dokumentów i obrazów przed nieupoważnionym użyciem, zapewniający bezpieczeństwo Twojej własności intelektualnej. W tym samouczku przeprowadzimy Cię przez cały proces, od skonfigurowania środowiska po nałożenie znaku wodnego na dokumenty. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik będzie pomocny i łatwy w obsłudze.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Découvrez comment ajouter des filigranes de texte à vos documents
 weight: 11
 url: /fr/net/watermarking-basics/add-text-watermark/
 ---
+
+# Ajouter un filigrane de texte
+
 ## Introduction
 GroupDocs.Watermark for .NET est une bibliothèque puissante qui permet aux développeurs d'ajouter, de rechercher et de supprimer des filigranes de divers formats de documents dans les applications .NET. Dans ce didacticiel, nous nous concentrerons sur l'ajout d'un filigrane de texte à un document à l'aide de GroupDocs.Watermark.
 ## Conditions préalables

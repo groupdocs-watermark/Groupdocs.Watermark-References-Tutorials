@@ -6,6 +6,9 @@ description: Learn how to add image watermarks to your documents using GroupDocs
 weight: 11
 url: /net/image-watermarkings/add-image-watermark/
 ---
+
+# Add Image Watermark
+
 ## Introduction
 Welcome to this comprehensive guide on adding image watermarks using GroupDocs.Watermark for .NET! Watermarking is a powerful way to protect your documents and images from unauthorized use, ensuring that your intellectual property remains secure. In this tutorial, we'll walk you through the entire process, from setting up your environment to applying a watermark to your documents. Whether you're a seasoned developer or just getting started, you'll find this guide helpful and easy to follow.
 ## Prerequisites

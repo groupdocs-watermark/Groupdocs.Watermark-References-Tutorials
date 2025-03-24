@@ -6,6 +6,9 @@ description: 간편한 단계별 가이드를 통해 .NET용 GroupDocs.Watermark
 weight: 12
 url: /ko/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Word Docs의 특정 페이지에 잠긴 워터마크 추가
+
 ## 소개
 Word 문서의 특정 페이지에 워터마크를 추가하려고 하지만 쉽게 제거하거나 편집할 수 없도록 잠그고 싶으십니까? 당신은 바로 이곳에 있습니다! 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 특정 페이지에 잠긴 워터마크를 추가하는 과정을 안내합니다. 이 강력한 라이브러리를 사용하면 다양한 문서 유형에 워터마크를 쉽게 적용, 관리 및 사용자 정의할 수 있습니다. 개발자이든 문서 보안이 필요한 사람이든 이 가이드는 각 단계를 간단한 방식으로 안내합니다.
 ## 전제조건

@@ -6,6 +6,9 @@ description: Learn how to efficiently link headers and footers within sections o
 weight: 26
 url: /net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Link Header/Footer in Section in Word Docs
+
 ## Introduction
 In the world of .NET development, managing watermarks in Word documents can be a crucial task, whether you're protecting sensitive information or adding branding elements. Fortunately, GroupDocs.Watermark for .NET provides a powerful solution to handle watermarks efficiently. In this tutorial, we'll explore how to link headers and footers in sections of Word documents using GroupDocs.Watermark.
 ## Prerequisites

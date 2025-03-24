@@ -6,6 +6,9 @@ description: 透過本指南了解如何使用 GroupDocs.Watermark for .NET 產�
 weight: 10
 url: /zh-hant/net/document-manipulation/generate-document-preview/
 ---
+
+# 生成文件預覽
+
 ## 介紹
 在數位文件管理領域，水印在確保文件的安全性和真實性方面發揮著至關重要的作用。 GroupDocs.Watermark for .NET 是一個功能強大的工具，可讓開發人員輕鬆地在文件中新增浮水印。在本教學中，我們將引導您完成使用 GroupDocs.Watermark for .NET 產生文件預覽的流程。無論您是經驗豐富的開發人員還是剛入門，本指南都將為您提供全面的逐步流程來實現您的目標。
 ## 先決條件

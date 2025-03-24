@@ -6,6 +6,9 @@ description: 透過我們簡單的逐步指南，了解如何使用 GroupDocs.Wa
 weight: 12
 url: /zh-hant/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# 將鎖定浮水印新增至 Word 文件中的特定頁面
+
 ## 介紹
 您是否希望在 Word 文件中的特定頁面上新增浮水印，但希望將其鎖定以使其無法輕鬆刪除或編輯？您來對地方了！在本教學中，我們將引導您完成使用 GroupDocs.Watermark for .NET 將鎖定浮水印新增至 Word 文件中的特定頁面的流程。這個功能強大的庫可以輕鬆地在各種文件類型上套用、管理和自訂浮水印。無論您是開發人員還是只是需要保護文件的人員，本指南都將以簡單的方式引導您完成每個步驟。
 ## 先決條件

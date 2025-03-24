@@ -6,6 +6,9 @@ description: Bu adım adım kılavuzla Groupdocs for .NET'i kullanarak belgeleri
 weight: 11
 url: /tr/net/watermarking-basics/add-text-watermark/
 ---
+
+# Metin Filigranı Ekle
+
 ## giriiş
 GroupDocs.Watermark for .NET, geliştiricilerin .NET uygulamalarındaki çeşitli belge formatlarındaki filigranları eklemesine, aramasına ve kaldırmasına olanak tanıyan güçlü bir kitaplıktır. Bu eğitimde GroupDocs.Watermark'ı kullanarak bir belgeye metin filigranı eklemeye odaklanacağız.
 ## Önkoşullar

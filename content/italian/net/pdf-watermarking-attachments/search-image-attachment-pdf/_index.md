@@ -6,6 +6,9 @@ description: Cerca in modo efficiente le immagini all'interno degli allegati PDF
 weight: 46
 url: /it/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---
+
+# Cerca immagine nell'allegato del PDF
+
 ## introduzione
 GroupDocs.Watermark per .NET è una potente API progettata per facilitare la manipolazione e la gestione fluida delle filigrane in vari formati di documenti, inclusi i PDF. Che tu abbia bisogno di aggiungere, rimuovere o cercare filigrane negli allegati PDF, questo versatile strumento offre una soluzione completa.
 ## Prerequisiti

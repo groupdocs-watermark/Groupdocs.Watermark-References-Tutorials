@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 將平鋪影像浮�
 weight: 10
 url: /zh-hant/net/image-watermarkings/add-tiled-image-watermark/
 ---
+
+# 新增平鋪影像浮水印
+
 ## 介紹
 GroupDocs.Watermark for .NET 是一個功能強大的 API，可讓開發人員以程式設計方式新增、刪除和搜尋各種文件格式的浮水印。在本教學中，我們將指導您完成使用 GroupDocs.Watermark for .NET 將平鋪影像浮水印新增至文件的流程。
 ## 先決條件

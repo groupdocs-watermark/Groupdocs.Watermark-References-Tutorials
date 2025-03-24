@@ -6,6 +6,9 @@ description: このステップバイステップのガイドでは、Groupdocs 
 weight: 12
 url: /ja/net/document-loadings/load-specific-format-document/
 ---
+
+# 特定の形式のドキュメントをロードする
+
 ## 導入
 ドキュメントに透かしを追加することは、コンテンツの保護とブランド化を確実にするために重要な作業です。 Groupdocs.Watermark for .NET は、このプロセスを簡素化する多用途で強力なツールです。このガイドでは、テキスト ドキュメント、スプレッドシート、プレゼンテーション、画像のいずれを扱う場合でも、Groupdocs.Watermark for .NET を使用して特定の形式のドキュメントを読み込み、ウォーターマークを付ける手順を説明します。
 ## 前提条件

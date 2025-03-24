@@ -6,6 +6,9 @@ description: Aprenda como adicionar marcas d'água com efeitos de imagem aos seu
 weight: 19
 url: /pt/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---
+
+# Adicionar marca d'água com efeitos de imagem em documentos do Word
+
 ## Introdução
 Você deseja adicionar um toque especial aos seus documentos do Word com marcas d'água atraentes? GroupDocs.Watermark para .NET tem o que você precisa! Este guia completo irá orientá-lo no processo de adição de marcas d'água com efeitos de imagem impressionantes aos seus documentos do Word usando o GroupDocs para .NET. Quer você seja um desenvolvedor experiente ou iniciante, este tutorial passo a passo tornará o processo muito fácil.
 ## Pré-requisitos

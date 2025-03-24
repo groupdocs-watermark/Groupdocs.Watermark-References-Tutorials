@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET mühelos An
 weight: 10
 url: /de/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---
+
+# Anmerkungswasserzeichen zu PDF hinzufügen
+
 ## Einführung
 Im Bereich der Dokumentenverwaltung ist das Hinzufügen von Wasserzeichen zu PDF-Dateien ein entscheidender Aspekt, insbesondere für Branding-, Sicherheits- und Dokumentidentifizierungszwecke. GroupDocs.Watermark für .NET ist eine leistungsstarke Bibliothek, die die nahtlose Integration von Wasserzeichen in verschiedene Dokumentformate, einschließlich PDFs, ermöglicht. In diesem Tutorial befassen wir uns Schritt für Schritt mit dem Prozess des Hinzufügens von Anmerkungswasserzeichen zu PDF-Dokumenten und nutzen dabei die von GroupDocs.Watermark für .NET bereitgestellten Funktionen.
 ## Voraussetzungen

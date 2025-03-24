@@ -6,6 +6,9 @@ description: Scopri come sostituire a livello di codice le immagini delle forme 
 weight: 33
 url: /it/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---
+
+# Sostituisci l'immagine della forma in documenti Word
+
 ## introduzione
 Nell'ambito dello sviluppo software, in particolare nell'ambiente .NET, la gestione della manipolazione dei documenti in modo efficiente e sicuro è fondamentale. Tra la miriade di attività che gli sviluppatori spesso incontrano, una sfida comune è la sostituzione programmatica delle immagini delle forme all'interno dei documenti Word. Questo può essere un compito noioso senza gli strumenti e le librerie giuste.
 Fortunatamente, GroupDocs offre una potente soluzione sotto forma di GroupDocs.Watermark per .NET, una libreria versatile progettata per gestire la filigrana e la manipolazione delle filigrane all'interno di vari formati di documenti, inclusi i documenti Word. In questo tutorial, approfondiremo il processo passo passo di sostituzione delle immagini delle forme nei documenti Word utilizzando GroupDocs.Watermark per .NET.

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan cserélhet le szöveget adott alakzatokhoz Word
 weight: 35
 url: /hu/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---
+
+# Szöveg cseréje adott alakzathoz a Word Dokumentumokban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Watermark for .NET egy adott alakzat szövegének helyettesítésére a Word dokumentumokban. A GroupDocs.Watermark for .NET egy hatékony könyvtár, amely funkciók széles skáláját kínálja a vízjelekkel való munkavégzéshez különféle dokumentumformátumokban, beleértve a Word dokumentumokat is.
 ## Előfeltételek

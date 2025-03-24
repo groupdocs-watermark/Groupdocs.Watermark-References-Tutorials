@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ tùy chỉnh cùng với hiệu 
 weight: 21
 url: /vi/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---
+
+# Thêm Watermark với hiệu ứng văn bản trong Word Docs
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách thêm hình mờ có hiệu ứng văn bản vào tài liệu Word bằng GroupDocs.Watermark cho .NET. Bằng cách làm theo các hướng dẫn từng bước này, bạn sẽ có thể cải thiện tài liệu của mình bằng các hình mờ tùy chỉnh bao gồm nhiều hiệu ứng văn bản khác nhau.
 ## Điều kiện tiên quyết

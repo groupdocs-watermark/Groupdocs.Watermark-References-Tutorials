@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 첫 번�
 weight: 36
 url: /ko/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Word Docs에서 다른 첫 페이지 머리글/바닥글 설정
+
 ## 소개
 문서 관리 및 조작 영역에서 .NET용 GroupDocs.Watermark는 워터마킹 문서에 대한 원활한 통합과 강력한 기능을 제공하는 강력한 도구로 등장합니다. 문서 처리의 일반적인 요구 사항 중 하나는 Word 문서의 첫 번째 페이지에 서로 다른 머리글과 바닥글을 설정하는 것입니다. 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 이 작업을 수행하는 프로세스를 설명하고 각 단계를 쉽게 이해할 수 있는 부분으로 분류합니다.
 ## 전제조건

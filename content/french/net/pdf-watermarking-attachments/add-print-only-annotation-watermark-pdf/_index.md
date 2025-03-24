@@ -6,6 +6,9 @@ description: Découvrez comment ajouter des filigranes d'annotation pour impress
 weight: 13
 url: /fr/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---
+
+# Ajouter un filigrane d'annotation pour impression uniquement au PDF
+
 ## Introduction
 Dans ce didacticiel, nous aborderons le processus d'ajout d'un filigrane d'annotation pour impression uniquement à un PDF à l'aide de GroupDocs.Watermark pour .NET. Le filigrane des documents est un aspect crucial de la sécurité des documents et de l'image de marque, et GroupDocs.Watermark fournit une solution transparente aux développeurs .NET pour y parvenir.
 ## Conditions préalables

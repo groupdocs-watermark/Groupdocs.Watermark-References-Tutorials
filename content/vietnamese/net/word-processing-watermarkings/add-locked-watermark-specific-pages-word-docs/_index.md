@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ bị khóa vào các trang cụ 
 weight: 12
 url: /vi/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Thêm hình mờ bị khóa vào các trang cụ thể trong tài liệu Word
+
 ## Giới thiệu
 Bạn đang muốn thêm hình mờ vào các trang cụ thể trong tài liệu Word của mình nhưng muốn nó bị khóa để không thể dễ dàng xóa hoặc chỉnh sửa? Bạn đang ở đúng nơi! Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình thêm hình mờ bị khóa vào các trang cụ thể trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng áp dụng, quản lý và tùy chỉnh hình mờ trên nhiều loại tài liệu khác nhau. Cho dù bạn là nhà phát triển hay chỉ là người cần bảo mật tài liệu của mình, hướng dẫn này sẽ hướng dẫn bạn từng bước một cách đơn giản.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: 通过我们全面的分步教程，了解如何使用 GroupDocs.Wa
 weight: 35
 url: /zh/net/pdf-watermarking-attachments/remove-xobject-pdf/
 ---
+
+# 从 PDF 中删除 XObject
+
 ## 介绍
 您是否曾经需要从 PDF 文档中删除不需要的 XObject？无论是为了安全性、清晰度还是只是为了清理文件，删除 XObject 都是一项至关重要的任务。幸运的是，使用 GroupDocs.Watermark for .NET，这个过程变得简单而高效。在本教程中，我们将逐步指导您如何使用 GroupDocs.Watermark for .NET 从 PDF 中删除 XObject。读完本文后，您将具备无缝处理此任务的能力。
 ## 先决条件

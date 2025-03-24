@@ -6,6 +6,9 @@ description: Fedezze fel a GroupDocs.Watermark for .NET oktatóanyagát, amellye
 weight: 20
 url: /hu/net/watermarking-basics/
 ---
+
+# A vízjelezés alapjai
+
 ## Bevezetés
 A vízjelezés kulcsfontosságú technika a dokumentumok védelmében és a tulajdonjog érvényesítésében. A GroupDocs.Watermark for .NET leegyszerűsíti ezt a folyamatot, és hatékony eszközöket biztosít kép- és szöveges vízjelek hozzáadásához. Akár új a vízjelezésben, akár fejleszteni szeretné készségeit, ezek az oktatóanyagok végigvezetik az alapokon.
 

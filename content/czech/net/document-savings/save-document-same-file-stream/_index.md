@@ -6,6 +6,9 @@ description: Naučte se přidávat vodoznaky do dokumentů pomocí Groupdocs.Wat
 weight: 10
 url: /cs/net/document-savings/save-document-same-file-stream/
 ---
+
+# Uložit dokument do stejného souboru nebo streamu
+
 ## Úvod
 V dnešním digitálním věku se přidávání vodoznaků do dokumentů stalo nezbytným pro ochranu duševního vlastnictví a zajištění integrity značky. Groupdocs.Watermark for .NET nabízí robustní řešení pro vývojáře, kteří chtějí bezproblémově vkládat vodoznaky do dokumentů. Tento komplexní průvodce vás provede kroky uložení dokumentu s vodoznakem do stejného souboru nebo streamu pomocí Groupdocs.Watermark for .NET.
 ## Předpoklady

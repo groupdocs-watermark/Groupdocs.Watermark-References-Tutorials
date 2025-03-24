@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air terkunci ke bagian tertentu di 
 weight: 13
 url: /id/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
+
+# Tambahkan Tanda Air Terkunci ke Bagian di Dokumen Word
+
 ## Perkenalan
 Apakah Anda mencari cara efisien untuk menambahkan tanda air terkunci ke bagian di dokumen Word Anda? Tidak perlu mencari lagi! Dengan Groupdocs.Watermark untuk .NET, Anda dapat menyisipkan tanda air dengan lancar ke dalam dokumen Word sambil memastikan tanda air tetap terkunci dan tahan kerusakan. Alat canggih ini menawarkan beragam fitur untuk memenuhi kebutuhan watermarking Anda, baik untuk tujuan branding, kerahasiaan, atau keamanan. Dalam tutorial langkah demi langkah ini, kami akan memandu Anda tentang cara menambahkan tanda air terkunci ke bagian tertentu dari dokumen Word menggunakan Groupdocs.Watermark untuk .NET. Ayo selami!
 ## Prasyarat

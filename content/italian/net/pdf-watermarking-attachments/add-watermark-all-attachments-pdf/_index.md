@@ -6,6 +6,9 @@ description: Scopri come aggiungere filigrane agli allegati PDF utilizzando Grou
 weight: 16
 url: /it/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# Aggiungi filigrana a tutti gli allegati nel PDF
+
 ## introduzione
 L'aggiunta di filigrane agli allegati PDF può essere un passaggio cruciale nella gestione dei documenti, soprattutto quando si garantisce la sicurezza o il marchio. GroupDocs.Watermark per .NET offre una soluzione completa per incorporare facilmente filigrane nei file PDF. In questo tutorial ti guideremo attraverso il processo di aggiunta di una filigrana a tutti gli allegati all'interno di un documento PDF utilizzando GroupDocs.Watermark per .NET.
 ## Prerequisiti

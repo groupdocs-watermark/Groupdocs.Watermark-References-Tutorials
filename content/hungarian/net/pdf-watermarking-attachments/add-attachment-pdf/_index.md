@@ -6,6 +6,9 @@ description: Növelje .NET dokumentumkezelési képességeit a GroupDocs.Waterma
 weight: 12
 url: /hu/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---
+
+# Melléklet hozzáadása PDF-hez
+
 ## Bevezetés
 A .NET fejlesztés területén a GroupDocs.Watermark hatékony eszköz a vízjelek, megjegyzések és egyebek kezelésére a különféle dokumentumformátumokon belül. Akár PDF-ekkel, Word-dokumentumokkal vagy képekkel dolgozik, a GroupDocs.Watermark for .NET zökkenőmentes integrációt biztosít, amely lehetővé teszi a fejlesztők számára a dokumentumok egyszerű kezelését.
 ## Előfeltételek

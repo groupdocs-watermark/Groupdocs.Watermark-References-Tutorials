@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 從 PDF 中刪除�
 weight: 29
 url: /zh-hant/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---
+
+# 從 PDF 刪除註釋
+
 ## 介紹
 PDF 文件中的註釋有時會使內容混亂或影響文件的可讀性。使用 GroupDocs.Watermark for .NET，您可以輕鬆地從 PDF 檔案中刪除註解。在本教程中，我們將逐步指導您完成流程。
 ## 先決條件

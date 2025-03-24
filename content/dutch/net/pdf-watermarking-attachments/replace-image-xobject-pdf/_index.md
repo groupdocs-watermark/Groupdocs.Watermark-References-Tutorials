@@ -6,6 +6,9 @@ description: Vervang eenvoudig afbeeldingen in PDF's met GroupDocs.Watermark voo
 weight: 39
 url: /nl/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
+
+# Vervang afbeelding voor specifiek XObject in PDF
+
 ## Invoering
 Welkom bij onze gedetailleerde handleiding over het vervangen van een afbeelding voor een specifiek XObject in een PDF met GroupDocs.Watermark voor .NET. Als u watermerken wilt beheren of de inhoud van uw PDF-bestanden wilt wijzigen, bent u hier op de juiste plek. Deze tutorial leidt u door elke stap, zodat u uw PDF-documenten vol vertrouwen kunt bijwerken met nieuwe afbeeldingen. Laten we erin duiken!
 ## Vereisten

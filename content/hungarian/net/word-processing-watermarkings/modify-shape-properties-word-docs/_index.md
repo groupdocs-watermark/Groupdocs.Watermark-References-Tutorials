@@ -6,6 +6,9 @@ description: Védje meg Word-dokumentumait a GroupDocs Watermark for .NET segít
 weight: 27
 url: /hu/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---
+
+# Az Alakzat tulajdonságainak módosítása a Word Dokumentumokban
+
 ## Bevezetés
 A mai digitális korban a dokumentumok biztonságának biztosítása a legfontosabb. Legyen szó üzleti szakemberről, jogi szakértőről vagy kreatív íróról, érzékeny adatainak védelme kulcsfontosságú. Itt jön képbe a GroupDocs.Watermark for .NET, amely átfogó megoldást kínál a dokumentumok jogosulatlan használattal és terjesztéssel szembeni védelmére.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서 내의 특�
 weight: 32
 url: /ko/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---
+
+# Word Docs의 섹션에서 워터마크 제거
+
 ## 소개
 디지털 시대에는 문서의 무결성을 보호하는 것이 무엇보다 중요합니다. 특히 민감한 정보나 독점 콘텐츠의 경우 더욱 그렇습니다. 워터마킹은 소유권, 브랜드 아이덴티티를 주장하거나 단순히 문서의 상태를 표시하기 위해 일반적으로 사용되는 기술입니다. 그러나 편집 요구 사항이나 개인 정보 보호 문제로 인해 워터마크 제거가 필요한 경우가 있습니다.
 ## 전제조건

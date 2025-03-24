@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 取代特定 PDF �
 weight: 37
 url: /zh-hant/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
+
+# 替換 PDF 中特定註釋的圖像
+
 ## 介紹
 歡迎閱讀這份關於使用 GroupDocs.Watermark for .NET 取代 PDF 文件中特定註釋中的影像的綜合指南。無論您是希望增強 PDF 處理能力的開發人員，還是只是對浮水印的複雜性感到好奇，本教學都能滿足您的需求。最後，您將能夠用自訂註釋無縫替換 PDF 註釋中的影像，從而優化文件處理工作流程。
 ## 先決條件

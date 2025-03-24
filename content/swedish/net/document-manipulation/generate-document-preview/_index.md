@@ -6,6 +6,9 @@ description: Lär dig hur du genererar dokumentförhandsvisningar med GroupDocs.
 weight: 10
 url: /sv/net/document-manipulation/generate-document-preview/
 ---
+
+# Skapa dokumentförhandsgranskning
+
 ## Introduktion
 I en värld av digital dokumenthantering spelar vattenmärkning en avgörande roll för att säkerställa dokumentens säkerhet och äkthet. GroupDocs.Watermark for .NET är ett kraftfullt verktyg som låter utvecklare lägga till vattenstämplar i dokument utan ansträngning. I den här handledningen går vi igenom processen att skapa förhandsvisningar av dokument med GroupDocs.Watermark för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här guiden att ge dig en omfattande steg-för-steg-process för att uppnå ditt mål.
 ## Förutsättningar

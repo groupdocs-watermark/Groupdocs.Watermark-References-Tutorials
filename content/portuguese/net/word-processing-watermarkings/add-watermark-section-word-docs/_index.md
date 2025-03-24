@@ -6,6 +6,9 @@ description: Adicione facilmente marcas d'água a documentos do Word usando Grou
 weight: 15
 url: /pt/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Adicionar marca d'água à seção em documentos do Word
+
 ## Introdução
 Colocar marcas d'água em seus documentos é uma etapa crucial para proteger seu conteúdo e afirmar a propriedade. Neste tutorial abrangente, orientaremos você no processo de adição de uma marca d'água a uma seção específica em documentos do Word usando GroupDocs.Watermark for .NET. Quer você seja um desenvolvedor ou alguém com conhecimentos básicos de codificação, este guia o ajudará a proteger seus documentos de maneira eficaz.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: A GroupDocs.Watermark for .NET segítségével könnyedén adhat ho
 weight: 13
 url: /hu/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Szerezze be a támogatott fájlformátumokat
+
 ## Bevezetés
 dokumentumok vízjelezése kulcsfontosságú lépés digitális eszközei védelmében. Legyen szó a szellemi tulajdon védelméről, a titoktartásról vagy egyszerűen a márkaépítésről, a vízjelek létfontosságú szerepet játszanak. Ha Ön .NET-fejlesztő, aki a vízjelezési képességeket szeretné integrálni alkalmazásaiba, a GroupDocs.Watermark for .NET egy hatékony és sokoldalú eszköz, amelyet érdemes megfontolni. Ez az oktatóanyag végigvezeti Önt a GroupDocs.Watermark használatának lényegein, a telepítéstől az első vízjel felhelyezéséig, az egyes lépéseket lebontva, hogy könnyen követhesse.
 ## Előfeltételek

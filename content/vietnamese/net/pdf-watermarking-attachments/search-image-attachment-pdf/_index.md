@@ -6,6 +6,9 @@ description: Tìm kiếm hình ảnh trong tệp đính kèm PDF một cách hi�
 weight: 46
 url: /vi/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---
+
+# Tìm kiếm hình ảnh trong tệp đính kèm PDF
+
 ## Giới thiệu
 GroupDocs.Watermark cho .NET là một API mạnh mẽ được thiết kế để hỗ trợ thao tác và quản lý hình mờ liền mạch ở các định dạng tài liệu khác nhau, bao gồm cả tệp PDF. Cho dù bạn cần thêm, xóa hay tìm kiếm hình mờ trong tệp đính kèm PDF, công cụ đa năng này đều cung cấp giải pháp toàn diện.
 ## Điều kiện tiên quyết

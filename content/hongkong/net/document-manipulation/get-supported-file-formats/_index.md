@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Watermark for .NET 輕鬆地在文件中新增浮�
 weight: 13
 url: /zh-hant/net/document-manipulation/get-supported-file-formats/
 ---
+
+# 取得支援的文件格式
+
 ## 介紹
 對文件加浮水印是保護數位資產的關鍵一步。無論是為了保護智慧財產權、確保機密性還是僅僅為了品牌宣傳，水印都扮演著至關重要的角色。如果您是 .NET 開發人員，希望將浮水印功能整合到您的應用程式中，那麼 GroupDocs.Watermark for .NET 是您應該考慮的強大且多功能的工具。本教學將引導您了解使用 GroupDocs.Watermark 的基本知識，從安裝到應用第一個浮水印，分解每個步驟以確保您可以輕鬆遵循。
 ## 先決條件

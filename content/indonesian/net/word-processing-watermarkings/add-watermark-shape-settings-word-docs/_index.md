@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air dengan pengaturan bentuk ke dok
 weight: 20
 url: /id/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Tambahkan Tanda Air dengan Pengaturan Bentuk di Word Docs
+
 ## Perkenalan
 Dalam tutorial ini, kita akan memandu proses menambahkan tanda air dengan pengaturan bentuk ke dokumen Word menggunakan GroupDocs.Watermark untuk .NET.
 ## Prasyarat

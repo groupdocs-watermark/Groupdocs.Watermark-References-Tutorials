@@ -6,6 +6,9 @@ description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit 
 weight: 12
 url: /de/net/document-savings/save-document-specified-stream/
 ---
+
+# Dokument im angegebenen Stream speichern
+
 ## Einführung
 Möchten Sie die Kunst des Hinzufügens von Wasserzeichen zu Ihren Dokumenten mit GroupDocs.Watermark für .NET erlernen? Hier sind Sie richtig! In diesem umfassenden Leitfaden führen wir Sie durch alles, was Sie wissen müssen, um ein Dokument nach dem Versehen mit einem Wasserzeichen erfolgreich in einem bestimmten Stream zu speichern. Lasst uns eintauchen und loslegen.
 ## Voraussetzungen

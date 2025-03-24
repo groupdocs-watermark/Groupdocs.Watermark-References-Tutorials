@@ -6,6 +6,9 @@ description: Effortlessly add watermarks to your documents using GroupDocs.Water
 weight: 13
 url: /net/document-manipulation/get-supported-file-formats/
 ---
+
+# Get Supported File Formats
+
 ## Introduction
 Watermarking your documents is a crucial step in safeguarding your digital assets. Whether it's for protecting intellectual property, ensuring confidentiality, or simply branding, watermarks play a vital role. If you're a .NET developer looking to integrate watermarking capabilities into your applications, GroupDocs.Watermark for .NET is a powerful and versatile tool you should consider. This tutorial will guide you through the essentials of using GroupDocs.Watermark, from installation to applying your first watermark, breaking down each step to ensure you can easily follow along.
 ## Prerequisites

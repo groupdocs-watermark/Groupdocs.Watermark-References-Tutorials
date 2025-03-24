@@ -6,6 +6,9 @@ description: Voeg eenvoudig watermerken toe aan Word-documenten met GroupDocs.Wa
 weight: 15
 url: /nl/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Voeg een watermerk toe aan sectie in Word-documenten
+
 ## Invoering
 Het watermerken van uw documenten is een cruciale stap bij het beschermen van uw inhoud en het doen gelden van uw eigendom. In deze uitgebreide zelfstudie leiden we u door het proces van het toevoegen van een watermerk aan een specifieke sectie in Word-documenten met behulp van GroupDocs.Watermark voor .NET. Of u nu een ontwikkelaar bent of iemand met basiskennis van coderen, deze handleiding helpt u uw documenten effectief te beveiligen.
 ## Vereisten

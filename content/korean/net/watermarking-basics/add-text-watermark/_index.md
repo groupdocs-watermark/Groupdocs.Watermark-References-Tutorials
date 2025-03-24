@@ -6,6 +6,9 @@ description: 이 단계별 가이드를 통해 Groupdocs for .NET을 사용하�
 weight: 11
 url: /ko/net/watermarking-basics/add-text-watermark/
 ---
+
+# 텍스트 워터마크 추가
+
 ## 소개
 .NET용 GroupDocs.Watermark는 개발자가 .NET 응용 프로그램의 다양한 문서 형식에서 워터마크를 추가, 검색 및 제거할 수 있는 강력한 라이브러리입니다. 이 튜토리얼에서는 GroupDocs.Watermark를 사용하여 문서에 텍스트 워터마크를 추가하는 방법에 중점을 둘 것입니다.
 ## 전제조건

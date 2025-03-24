@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan manipulálhat alakzatokat Word dokumentumokban 
 weight: 37
 url: /hu/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Alakzattípus-használat a Word-dokumentumokban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatunk alaktípusokat Word dokumentumokban a GroupDocs.Watermark for .NET segítségével. A Word-dokumentumok alakjai eltérőek lehetnek, és a kezelésük megértése döntő fontosságú lehet a különböző dokumentumfeldolgozási feladatok során.
 ## Előfeltételek

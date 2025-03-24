@@ -6,6 +6,9 @@ description: Proteja seus documentos adicionando marcas d’água bloqueadas usa
 weight: 11
 url: /pt/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---
+
+# Adicionar marca d'água bloqueada a todas as páginas em documentos do Word
+
 ## Introdução
 Adicionar marcas d'água aos seus documentos é uma etapa vital para proteger e promover a marca do seu conteúdo. Esteja você evitando o uso não autorizado ou simplesmente adicionando um toque profissional, as marcas d'água podem servir a vários propósitos. Neste tutorial, orientaremos você no processo de adição de uma marca d'água bloqueada a todas as páginas de um documento do Word usando Groupdocs.Watermark for .NET.
 ## Pré-requisitos

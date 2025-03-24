@@ -6,6 +6,9 @@ description: Aprenda como extrair todos os anexos de um PDF usando Groupdocs.Wat
 weight: 22
 url: /pt/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---
+
+# Extraia todos os anexos do PDF
+
 ## Introdução
 Você deseja extrair anexos de um documento PDF sem esforço? Bem, você está no lugar certo! Neste tutorial abrangente, orientaremos você no processo de extração de todos os anexos de um PDF usando Groupdocs.Watermark for .NET. Esta poderosa biblioteca permite aos desenvolvedores gerenciar marcas d'água em vários formatos de documentos, mas também inclui recursos robustos para extrair arquivos incorporados. Quer você seja um desenvolvedor experiente ou esteja apenas começando, este guia passo a passo facilitará o processo.
 ## Pré-requisitos

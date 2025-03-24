@@ -6,6 +6,9 @@ description: Lär dig hur du effektivt länkar sidhuvuden och sidfötter i delar
 weight: 26
 url: /sv/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Länk sidhuvud/sidfot i avsnitt i Word Docs
+
 ## Introduktion
 I en värld av .NET-utveckling kan hantering av vattenstämplar i Word-dokument vara en avgörande uppgift, oavsett om du skyddar känslig information eller lägger till varumärkeselement. Lyckligtvis tillhandahåller GroupDocs.Watermark för .NET en kraftfull lösning för att hantera vattenstämplar effektivt. I den här självstudien kommer vi att utforska hur du länkar sidhuvuden och sidfötter i delar av Word-dokument med hjälp av GroupDocs.Watermark.
 ## Förutsättningar

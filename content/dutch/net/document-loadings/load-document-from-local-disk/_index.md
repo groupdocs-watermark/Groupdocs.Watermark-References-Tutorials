@@ -6,6 +6,9 @@ description: Bescherm en beheer uw documenten met Groupdocs voor .NET. Volg onze
 weight: 10
 url: /nl/net/document-loadings/load-document-from-local-disk/
 ---
+
+# Document laden vanaf lokale schijf
+
 ## Invoering
 Het watermerken van documenten is essentieel in het huidige digitale tijdperk om de bescherming van de inhoud, de eigendomsbevestiging en de vertrouwelijkheid te garanderen. Groupdocs.Watermark voor .NET is een krachtige bibliotheek waarmee ontwikkelaars watermerken in verschillende documentformaten kunnen toevoegen, zoeken en beheren. In deze zelfstudie doorlopen we het proces van het gebruik van Groupdocs.Watermark voor .NET om watermerken aan uw documenten toe te voegen met gedetailleerde stapsgewijze instructies.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Lär dig hur du laddar och vattenstämplar dokument med hjälp av G
 weight: 12
 url: /sv/net/document-loadings/load-specific-format-document/
 ---
+
+# Ladda dokument med specifikt format
+
 ## Introduktion
 Att lägga till vattenstämplar i dokument är en avgörande uppgift för att säkerställa innehållsskydd och varumärke. Groupdocs.Watermark for .NET är ett mångsidigt och kraftfullt verktyg som förenklar denna process. Oavsett om du har att göra med textdokument, kalkylblad, presentationer eller bilder, kommer den här guiden att leda dig genom stegen för att ladda och vattenmärka specifika formatdokument med hjälp av Groupdocs.Watermark for .NET.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Learn how to add watermarks to images in Word documents using Group
 weight: 16
 url: /net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Add Watermark to Section Images in Word Docs
+
 ## Introduction
 In today's digital world, protecting your documents is essential. Adding watermarks to your Word documents is a simple yet effective way to secure your content. This tutorial will guide you through the process of adding watermarks to section images in Word documents using Groupdocs.Watermark for .NET. Whether you're a developer looking to integrate this feature into your application or simply want to protect your documents, this guide is for you.
 ## Prerequisites

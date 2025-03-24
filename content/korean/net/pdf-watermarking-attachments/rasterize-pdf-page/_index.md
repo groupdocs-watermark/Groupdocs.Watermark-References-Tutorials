@@ -6,6 +6,9 @@ description: GroupDocs for .NET으로 문서 보안을 강화하세요. PDF 및 
 weight: 28
 url: /ko/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---
+
+# PDF 페이지 래스터화
+
 ## 소개
 .NET용 GroupDocs.Watermark는 개발자가 PDF, Word, Excel, PowerPoint 등을 포함한 다양한 문서 형식에 워터마크를 원활하게 추가할 수 있는 강력한 API입니다. 직관적인 인터페이스와 광범위한 기능을 갖춘 GroupDocs.Watermark는 문서에 텍스트 또는 이미지 워터마크를 추가하는 프로세스를 단순화하여 사용자가 지적 재산을 보호하고 문서 보안을 손쉽게 강화할 수 있도록 해줍니다.
 ## 전제조건

@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki üstb
 weight: 25
 url: /tr/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Word Belgelerindeki Bölümlerdeki Tüm Üstbilgileri/Altbilgileri Bağlantılandırın
+
 ## giriiş
 Word belgeleriyle çalışırken tutarlılık ve tutarlılık sağlamak için genellikle farklı bölümlerdeki üstbilgileri ve altbilgileri birbirine bağlamak gerekir. Bu eğitim, GroupDocs.Watermark for .NET'i kullanarak süreç boyunca size adım adım rehberlik edecektir.
 ## Ad Alanlarını İçe Aktar

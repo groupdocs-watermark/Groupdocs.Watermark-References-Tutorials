@@ -6,6 +6,9 @@ description: Découvrez comment générer des aperçus de documents à l'aide de
 weight: 10
 url: /fr/net/document-manipulation/generate-document-preview/
 ---
+
+# Générer un aperçu du document
+
 ## Introduction
 Dans le monde de la gestion de documents numériques, le filigrane joue un rôle crucial pour garantir la sécurité et l’authenticité des documents. GroupDocs.Watermark for .NET est un outil puissant qui permet aux développeurs d'ajouter facilement des filigranes aux documents. Dans ce didacticiel, nous vous guiderons tout au long du processus de génération d'aperçus de documents à l'aide de GroupDocs.Watermark pour .NET. Que vous soyez un développeur chevronné ou un débutant, ce guide vous fournira un processus complet, étape par étape, pour atteindre votre objectif.
 ## Conditions préalables

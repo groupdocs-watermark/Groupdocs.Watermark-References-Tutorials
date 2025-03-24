@@ -6,6 +6,9 @@ description: .NET için Filigran'ı kullanarak Word belgelerindeki görüntüler
 weight: 16
 url: /tr/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
+
+# Word Dokümanlarındaki Bölüm Resimlerine Filigran Ekleme
+
 ## giriiş
 Günümüzün dijital dünyasında belgelerinizi korumak çok önemlidir. Word belgelerinize filigran eklemek, içeriğinizi korumanın basit ama etkili bir yoludur. Bu eğitim, Groupdocs.Watermark for .NET'i kullanarak Word belgelerindeki bölüm görüntülerine filigran ekleme sürecinde size rehberlik edecektir. İster bu özelliği uygulamanıza entegre etmek isteyen bir geliştirici olun, ister yalnızca belgelerinizi korumak isteyin, bu kılavuz tam size göre.
 ## Önkoşullar

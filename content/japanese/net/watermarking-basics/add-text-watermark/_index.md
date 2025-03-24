@@ -6,6 +6,9 @@ description: このステップバイステップ ガイドでは、Groupdocs Wa
 weight: 11
 url: /ja/net/watermarking-basics/add-text-watermark/
 ---
+
+# テキストの透かしを追加する
+
 ## 導入
 GroupDocs.Watermark for .NET は、開発者が .NET アプリケーションのさまざまなドキュメント形式に対してウォーターマークを追加、検索、削除できる強力なライブラリです。このチュートリアルでは、GroupDocs.Watermark を使用してドキュメントにテキスト ウォーターマークを追加することに焦点を当てます。
 ## 前提条件

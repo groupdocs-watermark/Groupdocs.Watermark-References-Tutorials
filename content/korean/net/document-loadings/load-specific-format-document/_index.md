@@ -6,6 +6,9 @@ description: 이 단계별 가이드를 통해 Groupdocs for .NET을 사용하�
 weight: 12
 url: /ko/net/document-loadings/load-specific-format-document/
 ---
+
+# 특정 형식의 문서 로드
+
 ## 소개
 문서에 워터마크를 추가하는 것은 콘텐츠 보호 및 브랜딩을 보장하는 데 중요한 작업입니다. .NET용 Groupdocs.Watermark는 이 프로세스를 단순화하는 다재다능하고 강력한 도구입니다. 텍스트 문서, 스프레드시트, 프리젠테이션 또는 이미지 등 무엇을 처리하든 이 가이드는 .NET용 Groupdocs.Watermark를 사용하여 특정 형식의 문서를 로드하고 워터마킹하는 단계를 안내합니다.
 ## 전제조건

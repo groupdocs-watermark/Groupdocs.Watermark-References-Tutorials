@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air ke lampiran PDF menggunakan Gro
 weight: 16
 url: /id/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---
+
+# Tambahkan Tanda Air ke Semua Lampiran di PDF
+
 ## Perkenalan
 Menambahkan tanda air ke lampiran PDF bisa menjadi langkah penting dalam pengelolaan dokumen, terutama saat memastikan keamanan atau branding. GroupDocs.Watermark untuk .NET menawarkan solusi komprehensif untuk menyematkan tanda air ke dalam file PDF dengan lancar. Dalam tutorial ini, kami akan memandu Anda melalui proses menambahkan tanda air ke semua lampiran dalam dokumen PDF menggunakan GroupDocs.Watermark untuk .NET.
 ## Prasyarat

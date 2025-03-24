@@ -6,6 +6,9 @@ description: GroupDocs for .NET を使用して Word ドキュメントを保護
 weight: 27
 url: /ja/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---
+
+# Word ドキュメントの図形プロパティを変更する
+
 ## 導入
 今日のデジタル時代では、ドキュメントのセキュリティを確保することが最も重要です。ビジネスの専門家、法律の専門家、クリエイティブなライターのいずれであっても、機密情報を保護することは非常に重要です。ここで GroupDocs.Watermark for .NET が活躍し、ドキュメントを不正使用や配布から保護するための包括的なソリューションを提供します。
 ## 前提条件

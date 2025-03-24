@@ -6,6 +6,9 @@ description: Könnyedén megvédheti dokumentumait a Groupdocs.Watermark for .NE
 weight: 26
 url: /hu/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---
+
+# PDF-méretek beszerzése
+
 ## Bevezetés
 mai digitális korban a dokumentumok védelme a legfontosabb. Legyen szó üzleti szakemberről, jogi szakértőről vagy kreatív művészről, szellemi tulajdonának védelme elengedhetetlen. A Groupdocs.Watermark for .NET robusztus megoldást kínál vízjelek, bélyegzők és megjegyzések hozzáadására a dokumentumokhoz, így biztosítva azok biztonságát és hitelességét.
 ## Előfeltételek

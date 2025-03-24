@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 모�
 weight: 37
 url: /ko/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---
+
+# Word Docs의 도형 유형 사용
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 모양 유형을 활용하는 방법을 살펴보겠습니다. Word 문서의 모양은 다양할 수 있으며 이를 조작하는 방법을 이해하는 것은 다양한 문서 처리 작업에 매우 중요할 수 있습니다.
 ## 전제조건

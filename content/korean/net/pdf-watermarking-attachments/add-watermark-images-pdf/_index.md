@@ -6,6 +6,9 @@ description: 자세한 단계별 튜토리얼을 통해 .NET용 GroupDocs.Waterm
 weight: 19
 url: /ko/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
+
+# PDF 이미지에 워터마크 추가
+
 ## 소개
 PDF 문서 내의 이미지에 워터마크를 추가하는 것은 지적 재산을 보호하거나 문서의 신뢰성을 보장하는 데 필수적일 수 있습니다. .NET용 GroupDocs.Watermark를 사용하면 이 작업을 효율적이고 쉽게 수행할 수 있습니다. 이 튜토리얼은 환경 설정부터 워터마크 추가, 최종 문서 저장까지 프로세스의 각 단계를 안내합니다. 뛰어들어보자!
 ## 전제조건

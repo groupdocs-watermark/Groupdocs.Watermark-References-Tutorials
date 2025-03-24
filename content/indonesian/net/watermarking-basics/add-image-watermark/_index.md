@@ -6,6 +6,9 @@ description: Tambahkan tanda air gambar dengan mudah ke dokumen Anda menggunakan
 weight: 10
 url: /id/net/watermarking-basics/add-image-watermark/
 ---
+
+# Tambahkan Tanda Air Gambar
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari proses menambahkan tanda air gambar ke dokumen Anda menggunakan GroupDocs.Watermark untuk .NET. Dokumen yang diberi watermark sangat penting untuk melindungi kekayaan intelektual dan branding. Dengan GroupDocs.Watermark untuk .NET, Anda dapat dengan mudah mengintegrasikan tanda air ke dalam berbagai format dokumen seperti Word, Excel, PowerPoint, PDF, dan banyak lagi.
 ## Prasyarat

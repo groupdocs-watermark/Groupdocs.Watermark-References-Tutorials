@@ -6,6 +6,9 @@ description: Aprenda a eliminar marcas de agua de archivos PDF usando GroupDocs.
 weight: 34
 url: /es/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---
+
+# Eliminar marca de agua de PDF
+
 ## Introducción
 En la era digital actual, proteger documentos confidenciales con marcas de agua es una práctica común. Sin embargo, hay casos en los que es posible que necesites eliminar marcas de agua de archivos PDF por diversos motivos. Ya sea que esté editando un documento o simplemente necesite una versión limpia para la presentación, GroupDocs.Watermark para .NET proporciona una solución perfecta para eliminar marcas de agua de archivos PDF.
 ## Requisitos previos

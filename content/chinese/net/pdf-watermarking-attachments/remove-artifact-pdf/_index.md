@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 轻松删除 PDF �
 weight: 31
 url: /zh/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
+
+# 从 PDF 中删除伪影
+
 ## 介绍
 在文档管理和操作领域，GroupDocs.Watermark for .NET 是一款脱颖而出的强大工具。它使开发人员能够在各种文档格式（例如 PDF、Word、Excel、PowerPoint 等）中无缝添加、删除或操作水印。然而，掌握其功能需要结构化方法，在本综合指南中，我们将深入研究使用 GroupDocs.Watermark for .NET 从 PDF 文档中删除工件的复杂过程。
 ## 先决条件

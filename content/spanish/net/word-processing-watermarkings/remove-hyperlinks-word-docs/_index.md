@@ -6,6 +6,9 @@ description: Aprenda cómo eliminar hipervínculos de documentos de Word usando 
 weight: 29
 url: /es/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---
+
+# Eliminar hipervínculos en documentos de Word
+
 ## Introducción
 En el mundo digital actual, donde la información fluye sin problemas, proteger sus documentos es primordial. Ya sea que esté compartiendo datos comerciales confidenciales o creando una obra maestra, proteger su contenido contra el acceso y la manipulación no autorizados es crucial. Con la llegada de GroupDocs.Watermark para .NET, puede garantizar la integridad de sus documentos agregando, eliminando y detectando marcas de agua con facilidad.
 ## Requisitos previos

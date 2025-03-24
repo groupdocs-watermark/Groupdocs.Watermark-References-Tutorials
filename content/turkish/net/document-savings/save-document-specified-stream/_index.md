@@ -6,6 +6,9 @@ description: Bu adım adım kılavuzla GroupDocs.Watermark for .NET'i kullanarak
 weight: 12
 url: /tr/net/document-savings/save-document-specified-stream/
 ---
+
+# Belgeyi Belirtilen Akışa Kaydet
+
 ## giriiş
 GroupDocs.Watermark for .NET'i kullanarak belgelerinize filigran ekleme sanatında ustalaşmak mı istiyorsunuz? Doğru yere geldiniz! Bu kapsamlı kılavuzda, bir belgeyi filigranladıktan sonra belirli bir akışa başarılı bir şekilde kaydetmek için bilmeniz gereken her şeyi size anlatacağız. Hadi dalalım ve başlayalım.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Fügen Sie mit GroupDocs.Watermark für .NET ganz einfach Bildwasse
 weight: 10
 url: /de/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---
+
+# Fügen Sie Bildwasserzeichen zu allen Kopfzeilen in Word-Dokumenten hinzu
+
 ## Einführung
 Wasserzeichen können ein wesentlicher Bestandteil der Dokumentenverwaltung sein und eine Möglichkeit bieten, Informationen wie Eigentum, Vertraulichkeit oder Branding in Dokumente einzubetten. In diesem Tutorial führen wir die Schritte zum Hinzufügen eines Bildwasserzeichens zu allen Kopfzeilen in Word-Dokumenten mit GroupDocs.Watermark für .NET durch. Ganz gleich, ob Sie neu in der Programmierung oder ein erfahrener Entwickler sind, dieser Leitfaden hilft Ihnen dabei, Ihre Wasserzeichenziele mühelos zu erreichen.
 ## Voraussetzungen

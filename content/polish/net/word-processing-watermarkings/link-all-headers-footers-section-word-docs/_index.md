@@ -6,6 +6,9 @@ description: Bezproblemowo łącz nagłówki i stopki w dokumentach programu Wor
 weight: 25
 url: /pl/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Połącz wszystkie nagłówki/stopki w sekcjach w dokumentach programu Word
+
 ## Wstęp
 Podczas pracy z dokumentami programu Word często konieczne jest łączenie nagłówków i stopek w różnych sekcjach, aby zapewnić spójność. Ten samouczek przeprowadzi Cię krok po kroku przez proces korzystania z GroupDocs.Watermark dla .NET.
 ## Importuj przestrzenie nazw

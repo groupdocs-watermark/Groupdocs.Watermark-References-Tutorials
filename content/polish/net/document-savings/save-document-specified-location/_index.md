@@ -6,6 +6,9 @@ description: Dowiedz się, jak łatwo dodawać znaki wodne do dokumentów za pom
 weight: 11
 url: /pl/net/document-savings/save-document-specified-location/
 ---
+
+# Zapisz dokument w określonej lokalizacji
+
 ## Wstęp
 W epoce cyfrowej zabezpieczanie dokumentów stało się ważniejsze niż kiedykolwiek. Znak wodny to skuteczny sposób ochrony dokumentów przed nieupoważnionym użyciem. GroupDocs.Watermark dla .NET oferuje niezawodne rozwiązanie do dodawania znaków wodnych do dokumentów. Niezależnie od tego, czy jesteś programistą chcącym zintegrować znak wodny ze swoją aplikacją, czy osobą zainteresowaną zabezpieczeniem dokumentów, ten samouczek poprowadzi Cię przez ten proces krok po kroku.
 ## Warunki wstępne

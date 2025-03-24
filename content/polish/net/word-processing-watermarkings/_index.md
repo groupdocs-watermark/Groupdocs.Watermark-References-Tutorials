@@ -6,6 +6,9 @@ description: Odkryj niezbędne samouczki GroupDocs.Watermark for .NET dotyczące
 weight: 26
 url: /pl/net/word-processing-watermarkings/
 ---
+
+# Znak wodny w edytorze tekstu
+
 ## Wstęp
 
 Znak wodny w dokumentach programu Word to kluczowy krok w zabezpieczeniu treści i ugruntowaniu marki. Dzięki GroupDocs.Watermark dla .NET proces ten staje się prosty i wydajny. Niezależnie od tego, czy dodajesz graficzne znaki wodne do nagłówków, czy blokujesz znaki wodne na określonych stronach, te samouczki poprowadzą Cię przez każdy krok, zapewniając, że Twoje dokumenty będą zarówno chronione, jak i profesjonalne.

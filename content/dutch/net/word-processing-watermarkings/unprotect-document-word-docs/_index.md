@@ -6,6 +6,9 @@ description: Leer hoe u eenvoudig de beveiliging van Word-documenten kunt opheff
 weight: 38
 url: /nl/net/word-processing-watermarkings/unprotect-document-word-docs/
 ---
+
+# Beveiliging van document in Word-documenten opheffen
+
 ## Invoering
 GroupDocs.Watermark voor .NET is een krachtige API waarmee ontwikkelaars met watermerken in verschillende documentformaten kunnen werken, waaronder Word-documenten. In deze zelfstudie begeleiden we u bij het proces van het opheffen van de beveiliging van een Word-document met GroupDocs.Watermark voor .NET. Of u nu een doorgewinterde ontwikkelaar bent of net begint met de ontwikkeling van .NET, deze stapsgewijze handleiding helpt u de taak efficiënt uit te voeren.
 ## Vereisten

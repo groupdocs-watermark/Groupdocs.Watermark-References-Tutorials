@@ -6,6 +6,9 @@ description: Aprenda como adicionar, remover e extrair marcas d'água em documen
 weight: 11
 url: /pt/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# Obtenha informações do documento do disco local
+
 ## Introdução
 Bem-vindo ao guia definitivo sobre como usar GroupDocs.Watermark para .NET! Quer você seja um desenvolvedor experiente ou esteja apenas começando, este artigo irá orientá-lo nos fundamentos da marca d'água em seus documentos com esta ferramenta poderosa. No final, você será um profissional em incorporar marcas d'água em seus documentos, garantindo que eles sejam protegidos e marcados de acordo com suas especificações.
 ## Pré-requisitos

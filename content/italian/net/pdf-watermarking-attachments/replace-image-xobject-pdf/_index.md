@@ -6,6 +6,9 @@ description: Sostituisci facilmente le immagini nei PDF utilizzando GroupDocs.Wa
 weight: 39
 url: /it/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
+
+# Sostituisci l'immagine per XObject specifico nel PDF
+
 ## introduzione
 Benvenuti nella nostra guida dettagliata su come sostituire un'immagine per uno specifico XObject in un PDF utilizzando GroupDocs.Watermark per .NET. Se hai bisogno di gestire le filigrane o modificare il contenuto dei tuoi file PDF, sei nel posto giusto. Questo tutorial ti guiderà attraverso ogni passaggio, assicurandoti di poter aggiornare con sicurezza i tuoi documenti PDF con nuove immagini. Immergiamoci!
 ## Prerequisiti

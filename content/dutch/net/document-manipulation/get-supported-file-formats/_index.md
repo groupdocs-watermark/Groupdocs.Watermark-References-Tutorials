@@ -6,6 +6,9 @@ description: Voeg moeiteloos watermerken toe aan uw documenten met GroupDocs.Wat
 weight: 13
 url: /nl/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Ondersteunde bestandsformaten verkrijgen
+
 ## Invoering
 Het watermerken van uw documenten is een cruciale stap bij het beschermen van uw digitale activa. Of het nu gaat om het beschermen van intellectueel eigendom, het garanderen van vertrouwelijkheid of gewoon om branding, watermerken spelen een cruciale rol. Als u een .NET-ontwikkelaar bent en watermerkmogelijkheden in uw toepassingen wilt integreren, is GroupDocs.Watermark voor .NET een krachtige en veelzijdige tool die u zou moeten overwegen. Deze tutorial leidt u door de essentie van het gebruik van GroupDocs.Watermark, van de installatie tot het aanbrengen van uw eerste watermerk, waarbij elke stap wordt opgesplitst zodat u deze gemakkelijk kunt volgen.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Tambahkan tanda air dengan mudah ke dokumen Word yang dilindungi ka
 weight: 14
 url: /id/net/document-loadings/load-password-protected-word-document/
 ---
+
+# Muat Dokumen Word yang Dilindungi Kata Sandi
+
 ## Perkenalan
 Di era digital, melindungi dan mengautentikasi dokumen Anda menjadi lebih penting dari sebelumnya. Penandaan air adalah teknik ampuh untuk melindungi file Anda, dan dengan GroupDocs.Watermark untuk .NET, Anda dapat melakukannya dengan mudah. Panduan komprehensif ini akan memandu Anda melalui proses memberi tanda air pada dokumen Word yang dilindungi kata sandi, merinci setiap langkah untuk memastikan Anda memahami dan dapat menerapkannya dengan mudah.
 ## Prasyarat

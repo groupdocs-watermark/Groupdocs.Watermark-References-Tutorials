@@ -6,6 +6,9 @@ description: Skydda dina PDF-filer med personliga vattenstämplar med GroupDocs.
 weight: 18
 url: /sv/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# Lägg till vattenstämpel till bildartefakter i PDF
+
 ## Introduktion
 den här självstudien guidar vi dig genom processen att lägga till en vattenstämpel till bildartefakter i ett PDF-dokument med hjälp av GroupDocs.Watermark för .NET. Genom att följa dessa steg kan du effektivt skydda dina PDF-filer med personliga vattenstämplar.
 ## Förutsättningar

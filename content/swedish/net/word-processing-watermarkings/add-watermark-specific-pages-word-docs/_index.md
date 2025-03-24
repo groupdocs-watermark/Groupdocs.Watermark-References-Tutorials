@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till vattenstämplar på specifika sidor i 
 weight: 18
 url: /sv/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---
+
+# Lägg till vattenstämpel på specifika sidor i Word Docs
+
 ## Introduktion
 I den här självstudien går vi igenom processen att lägga till vattenstämplar på specifika sidor i Word-dokument med hjälp av Groupdocs.Watermark for .NET. Vattenmärkning är en avgörande aspekt av dokumenthantering, vilket ger säkerhet och varumärke för dina dokument. Med Groupdocs.Watermark för .NET kan du enkelt lägga till text- eller bildvattenstämplar till dina Word-dokument med precision och effektivitet.
 ## Förutsättningar

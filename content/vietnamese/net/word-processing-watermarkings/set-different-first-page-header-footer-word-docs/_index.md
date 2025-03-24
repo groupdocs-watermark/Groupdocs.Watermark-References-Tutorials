@@ -6,6 +6,9 @@ description: Tìm hiểu cách đặt các đầu trang và chân trang khác nh
 weight: 36
 url: /vi/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
+
+# Đặt đầu trang/chân trang trang đầu tiên khác nhau trong tài liệu Word
+
 ## Giới thiệu
 Trong lĩnh vực quản lý và thao tác tài liệu, GroupDocs.Watermark dành cho .NET nổi lên như một công cụ mạnh mẽ, cung cấp khả năng tích hợp liền mạch và các chức năng mạnh mẽ cho việc tạo hình mờ cho tài liệu. Một trong những yêu cầu phổ biến trong xử lý tài liệu là đặt tiêu đề đầu trang và chân trang khác nhau trên trang đầu tiên của tài liệu Word. Hướng dẫn này sẽ làm sáng tỏ quá trình hoàn thành nhiệm vụ này bằng cách sử dụng GroupDocs.Watermark cho .NET, chia nhỏ từng bước thành các phân đoạn dễ hiểu.
 ## Điều kiện tiên quyết

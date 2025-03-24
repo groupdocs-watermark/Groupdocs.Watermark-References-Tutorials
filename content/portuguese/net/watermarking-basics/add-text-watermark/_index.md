@@ -6,6 +6,9 @@ description: Aprenda como adicionar marcas d'água de texto aos seus documentos 
 weight: 11
 url: /pt/net/watermarking-basics/add-text-watermark/
 ---
+
+# Adicionar marca d'água de texto
+
 ## Introdução
 GroupDocs.Watermark for .NET é uma biblioteca poderosa que permite aos desenvolvedores adicionar, pesquisar e remover marcas d'água de vários formatos de documentos em aplicativos .NET. Neste tutorial, vamos nos concentrar em adicionar uma marca d'água de texto a um documento usando GroupDocs.Watermark.
 ## Pré-requisitos

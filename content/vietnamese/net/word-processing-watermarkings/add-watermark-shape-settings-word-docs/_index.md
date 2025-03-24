@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ có cài đặt hình dạng và
 weight: 20
 url: /vi/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Thêm hình mờ với cài đặt hình dạng trong Word Docs
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ tìm hiểu quy trình thêm hình mờ có cài đặt hình dạng vào tài liệu Word bằng GroupDocs.Watermark cho .NET.
 ## Điều kiện tiên quyết

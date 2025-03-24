@@ -6,6 +6,9 @@ description: Efektivně prohledávejte obrázky v přílohách PDF pomocí Group
 weight: 46
 url: /cs/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---
+
+# Vyhledejte obrázek v příloze PDF
+
 ## Úvod
 GroupDocs.Watermark for .NET je výkonné API navržené pro usnadnění bezproblémové manipulace a správy vodoznaků v různých formátech dokumentů, včetně PDF. Ať už potřebujete přidat, odstranit nebo vyhledat vodoznaky v přílohách PDF, tento všestranný nástroj nabízí komplexní řešení.
 ## Předpoklady

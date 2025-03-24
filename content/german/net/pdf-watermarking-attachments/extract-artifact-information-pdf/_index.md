@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Artefaktinf
 weight: 24
 url: /de/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# Artefaktinformationen aus PDF extrahieren
+
 ## Einführung
 PDF-Dokumente enthalten häufig wertvolle Informationen, die in verschiedene Artefakte wie Bilder, Text und Formen eingebettet sind. Das Extrahieren dieser Informationen kann für viele Anwendungen von entscheidender Bedeutung sein, von der Datenanalyse bis zum Content-Management. In diesem Tutorial erfahren Sie, wie Sie Artefaktinformationen aus PDF-Dateien mit GroupDocs.Watermark für .NET extrahieren, einer leistungsstarken .NET-Bibliothek, die speziell zum Markieren, Durchsuchen und Bearbeiten von PDF-Dokumenten mit Wasserzeichen entwickelt wurde.
 ## Voraussetzungen

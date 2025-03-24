@@ -6,6 +6,9 @@ description: Sök effektivt efter bilder i PDF-bilagor med GroupDocs.Watermark f
 weight: 46
 url: /sv/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---
+
+# Sök bild i bifogad PDF
+
 ## Introduktion
 GroupDocs.Watermark for .NET är ett kraftfullt API utformat för att underlätta sömlös manipulering och hantering av vattenstämplar i olika dokumentformat, inklusive PDF-filer. Oavsett om du behöver lägga till, ta bort eller söka efter vattenstämplar i PDF-bilagor, erbjuder detta mångsidiga verktyg en heltäckande lösning.
 ## Förutsättningar

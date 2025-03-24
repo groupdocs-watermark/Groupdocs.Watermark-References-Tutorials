@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用すると、ドキュメン�
 weight: 13
 url: /ja/net/document-manipulation/get-supported-file-formats/
 ---
+
+# サポートされているファイル形式を取得する
+
 ## 導入
 ドキュメントに透かしを入れることは、デジタル資産を保護するための重要なステップです。知的財産の保護、機密保持の確保、または単にブランド化のいずれであっても、透かしは重要な役割を果たします。ウォーターマーク機能をアプリケーションに統合しようとしている .NET 開発者であれば、GroupDocs.Watermark for .NET は検討すべき強力で多用途のツールです。このチュートリアルでは、インストールから最初のウォーターマークの適用まで、GroupDocs.Watermark の使用の基本を説明し、簡単に理解できるように各ステップに分けて説明します。
 ## 前提条件

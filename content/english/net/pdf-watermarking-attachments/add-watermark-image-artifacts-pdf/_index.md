@@ -6,6 +6,9 @@ description: Protect your PDF files with personalized watermarks using GroupDocs
 weight: 18
 url: /net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# Add Watermark to Image Artifacts in PDF
+
 ## Introduction
 In this tutorial, we'll guide you through the process of adding a watermark to image artifacts in a PDF document using GroupDocs.Watermark for .NET. By following these steps, you can efficiently protect your PDF files with personalized watermarks.
 ## Prerequisites

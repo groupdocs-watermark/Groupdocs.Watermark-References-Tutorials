@@ -6,6 +6,9 @@ description: Bu kapsamlı adım adım kılavuzla, GroupDocs for .NET'i kullanara
 weight: 11
 url: /tr/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# Yerel Diskten Belge Bilgilerini Al
+
 ## giriiş
 .NET için GroupDocs.Watermark'ın kullanımına ilişkin nihai kılavuza hoş geldiniz! İster deneyimli bir geliştirici olun, ister yeni başlıyor olun, bu makale, bu güçlü araçla belgelerinize filigran eklemenin temelleri konusunda size yol gösterecektir. Sonunda, belgelerinize filigran yerleştirme konusunda uzmanlaşacak, onların korunmasını ve sizin spesifikasyonlarınıza göre markalanmasını sağlayacaksınız.
 ## Önkoşullar

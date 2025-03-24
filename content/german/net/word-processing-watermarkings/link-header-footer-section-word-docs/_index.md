@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Kopf- und F
 weight: 26
 url: /de/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Kopf-/Fußzeile im Abschnitt in Word-Dokumenten verknüpfen
+
 ## Einführung
 In der Welt der .NET-Entwicklung kann die Verwaltung von Wasserzeichen in Word-Dokumenten eine entscheidende Aufgabe sein, unabhängig davon, ob Sie vertrauliche Informationen schützen oder Branding-Elemente hinzufügen. Glücklicherweise bietet GroupDocs.Watermark für .NET eine leistungsstarke Lösung für den effizienten Umgang mit Wasserzeichen. In diesem Tutorial erfahren Sie, wie Sie mithilfe von GroupDocs.Watermark Kopf- und Fußzeilen in Abschnitten von Word-Dokumenten verknüpfen.
 ## Voraussetzungen

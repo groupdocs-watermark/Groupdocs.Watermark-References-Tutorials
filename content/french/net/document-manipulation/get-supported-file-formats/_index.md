@@ -6,6 +6,9 @@ description: Ajoutez sans effort des filigranes à vos documents à l'aide de Gr
 weight: 13
 url: /fr/net/document-manipulation/get-supported-file-formats/
 ---
+
+# Obtenez les formats de fichiers pris en charge
+
 ## Introduction
 Le filigrane de vos documents est une étape cruciale dans la sauvegarde de vos actifs numériques. Qu'il s'agisse de protéger la propriété intellectuelle, d'assurer la confidentialité ou simplement de créer une image de marque, les filigranes jouent un rôle essentiel. Si vous êtes un développeur .NET cherchant à intégrer des fonctionnalités de filigrane dans vos applications, GroupDocs.Watermark for .NET est un outil puissant et polyvalent que vous devriez envisager. Ce didacticiel vous guidera à travers les bases de l'utilisation de GroupDocs.Watermark, de l'installation à l'application de votre premier filigrane, en décomposant chaque étape pour vous assurer que vous pouvez facilement suivre.
 ## Conditions préalables

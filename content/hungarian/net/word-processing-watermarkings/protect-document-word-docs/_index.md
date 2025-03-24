@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan védheti meg a Word dokumentumokat a GroupDocs.
 weight: 28
 url: /hu/net/word-processing-watermarkings/protect-document-word-docs/
 ---
+
+# Dokumentum védelme a Word dokumentumokban
+
 ## Bevezetés
 Ebben az oktatóanyagban végigvezetjük egy dokumentum védelmének folyamatán a Word Docs alkalmazásban a GroupDocs.Watermark for .NET használatával. Ha követi ezeket a lépéseket, egy biztonsági réteget adhat Word-dokumentumaihoz, megakadályozva a jogosulatlan hozzáférést és módosítást.
 ## Előfeltételek

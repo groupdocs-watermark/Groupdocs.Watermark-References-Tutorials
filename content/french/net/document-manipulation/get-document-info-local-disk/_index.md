@@ -6,6 +6,9 @@ description: Découvrez comment ajouter, supprimer et extraire des filigranes da
 weight: 11
 url: /fr/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# Obtenir des informations sur le document à partir du disque local
+
 ## Introduction
 Bienvenue dans le guide ultime sur l'utilisation de GroupDocs.Watermark pour .NET ! Que vous soyez un développeur chevronné ou que vous débutiez tout juste, cet article vous expliquera les bases du filigrane de vos documents avec cet outil puissant. À la fin, vous serez un pro dans l'intégration de filigranes dans vos documents, en vous assurant qu'ils sont protégés et marqués selon vos spécifications.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: Erfahren Sie in dieser Anleitung, wie Sie mit GroupDocs.Watermark f
 weight: 11
 url: /de/net/document-loadings/load-document-from-stream/
 ---
+
+# Dokument aus Stream laden
+
 ## Einführung
 Möchten Sie Ihren Dokumenten mithilfe von .NET nahtlos Wasserzeichen hinzufügen? Suchen Sie nicht weiter! GroupDocs.Watermark für .NET ist eine leistungsstarke und benutzerfreundliche Bibliothek, mit der Sie Wasserzeichen in verschiedenen Dokumentformaten verwalten können. Egal, ob Sie mit PDFs, Word-Dokumenten oder Bildern arbeiten, mit diesem Tool sind Sie bestens gerüstet. In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess des Ladens eines Dokuments aus einem Stream und des Hinzufügens eines Wasserzeichens. Also, lasst uns gleich eintauchen!
 ## Voraussetzungen

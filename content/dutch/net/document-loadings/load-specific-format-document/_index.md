@@ -6,6 +6,9 @@ description: Leer hoe u documenten kunt laden en van een watermerk kunt voorzien
 weight: 12
 url: /nl/net/document-loadings/load-specific-format-document/
 ---
+
+# Document met specifiek formaat laden
+
 ## Invoering
 Het toevoegen van watermerken aan documenten is een cruciale taak voor het garanderen van inhoudsbescherming en branding. Groupdocs.Watermark voor .NET is een veelzijdige en krachtige tool die dit proces vereenvoudigt. Of u nu te maken heeft met tekstdocumenten, spreadsheets, presentaties of afbeeldingen, deze handleiding leidt u door de stappen voor het laden en watermerken van documenten in specifieke formaten met Groupdocs.Watermark voor .NET.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Naučte se extrahovat informace o artefaktech ze souborů PDF pomoc
 weight: 24
 url: /cs/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# Extrahujte informace o artefaktu z PDF
+
 ## Úvod
 Dokumenty PDF často obsahují cenné informace vložené do různých artefaktů, jako jsou obrázky, text a tvary. Získávání těchto informací může být zásadní pro mnoho aplikací, od analýzy dat až po správu obsahu. V tomto tutoriálu prozkoumáme, jak extrahovat informace o artefaktech ze souborů PDF pomocí GroupDocs.Watermark for .NET, výkonné knihovny .NET navržené speciálně pro vodoznaky, vyhledávání a manipulaci s dokumenty PDF.
 ## Předpoklady

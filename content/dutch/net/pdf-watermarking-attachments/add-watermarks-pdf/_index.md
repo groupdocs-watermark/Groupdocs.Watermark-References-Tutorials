@@ -6,6 +6,9 @@ description: Leer hoe u tekst- en afbeeldingswatermerken aan uw PDF's kunt toevo
 weight: 14
 url: /nl/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---
+
+# Voeg watermerken toe aan PDF
+
 ## Invoering
 Wilt u watermerken aan uw PDF's toevoegen om uw documenten te beschermen of ze van uw logo te voorzien? Zoek niet verder! In deze zelfstudie duiken we in het proces van het gebruik van GroupDocs.Watermark voor .NET om zowel tekst- als afbeeldingswatermerken aan uw PDF-bestanden toe te voegen. Of u nu een doorgewinterde ontwikkelaar bent of net begint, deze gids begeleidt u bij elke stap, zodat u gemakkelijk en nauwkeurig watermerken kunt aanbrengen.
 ## Vereisten

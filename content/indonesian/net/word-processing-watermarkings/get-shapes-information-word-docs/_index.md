@@ -6,6 +6,9 @@ description: Dapatkan wawasan berharga dari dokumen Word dengan mudah menggunaka
 weight: 24
 url: /id/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---
+
+# Dapatkan Informasi Bentuk di Word Docs
+
 ## Perkenalan
 Dalam lanskap digital di mana data adalah rajanya, mengekstraksi wawasan bermakna dari dokumen adalah hal yang sangat penting. GroupDocs.Watermark untuk .NET memberdayakan pengembang untuk mempelajari struktur dokumen, mengekstraksi informasi berharga dengan mudah. Dalam tutorial ini, kita akan mengeksplorasi cara memanfaatkan alat canggih ini untuk mendapatkan informasi bentuk dari dokumen Word langkah demi langkah.
 ## Prasyarat

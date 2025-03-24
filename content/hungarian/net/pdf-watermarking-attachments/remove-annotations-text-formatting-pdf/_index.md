@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan távolíthat el speciális szövegformázású 
 weight: 30
 url: /hu/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# Távolítsa el a megjegyzéseket meghatározott szövegformázással a PDF-ben
+
 ## Bevezetés
 Ebben az oktatóanyagban a Groupdocs.Watermark for .NET segítségével meghatározott szövegformátumú megjegyzések eltávolításának folyamatán mutatjuk be egy PDF-dokumentumból. Ez a könyvtár hatékony funkciókat biztosít a vízjelekkel, megjegyzésekkel és más különböző formátumú dokumentumelemekkel való munkavégzéshez.
 ## Előfeltételek

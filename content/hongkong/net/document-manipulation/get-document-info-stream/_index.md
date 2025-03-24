@@ -6,6 +6,9 @@ description: 透過此逐步指南，了解如何使用 GroupDocs.Watermark for 
 weight: 12
 url: /zh-hant/net/document-manipulation/get-document-info-stream/
 ---
+
+# 從串流中取得文件訊息
+
 ## 介紹
 在當今的數位時代，保護和管理文件完整性至關重要。無論您是業務專業人士、開發人員或處理敏感資訊的人員，在文件中新增、提取或操作浮水印的需求都是必不可少的。 GroupDocs.Watermark for .NET 提供了一個強大的工具包來幫助您實現這一目標。本文將指導您使用 GroupDocs.Watermark for .NET 從流中獲取文檔信息，並提供逐步教程來幫助您輕鬆完成該過程。最後，您將熟練使用此功能來增強您的文件管理能力。
 ## 先決條件

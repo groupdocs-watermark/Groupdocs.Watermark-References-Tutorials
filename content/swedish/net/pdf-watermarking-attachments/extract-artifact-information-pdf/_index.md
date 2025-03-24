@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar artefaktinformation från PDF-filer med 
 weight: 24
 url: /sv/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---
+
+# Extrahera artefaktinformation från PDF
+
 ## Introduktion
 PDF-dokument innehåller ofta värdefull information inbäddad i olika artefakter som bilder, text och former. Att extrahera denna information kan vara avgörande för många applikationer, allt från dataanalys till innehållshantering. I den här handledningen kommer vi att utforska hur man extraherar artefaktinformation från PDF-filer med hjälp av GroupDocs.Watermark for .NET, ett kraftfullt .NET-bibliotek som är utformat specifikt för vattenmärkning, sökning och manipulering av PDF-dokument.
 ## Förutsättningar

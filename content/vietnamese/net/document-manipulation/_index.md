@@ -6,6 +6,9 @@ description: Khám phá GroupDocs.Watermark để biết các hướng dẫn .NE
 weight: 21
 url: /vi/net/document-manipulation/
 ---
+
+# Thao tác tài liệu
+
 ## Giới thiệu
 
 Bạn đang tìm cách nâng cao kỹ năng quản lý tài liệu của mình lên một tầm cao mới? GroupDocs.Watermark dành cho .NET sẽ giúp bạn. Với hướng dẫn chuyên sâu của chúng tôi, bạn sẽ tìm hiểu cách tạo bản xem trước tài liệu, quản lý hình mờ, v.v. Hãy cùng tìm hiểu một số hướng dẫn chính sẽ giúp bạn tận dụng tối đa công cụ mạnh mẽ này.

@@ -6,6 +6,9 @@ description: Découvrez comment ajouter facilement des filigranes à vos documen
 weight: 11
 url: /fr/net/document-savings/save-document-specified-location/
 ---
+
+# Enregistrer le document à l'emplacement spécifié
+
 ## Introduction
 À l’ère du numérique, la sécurisation des documents est devenue plus cruciale que jamais. Le filigrane est un moyen efficace de protéger vos documents contre toute utilisation non autorisée. GroupDocs.Watermark for .NET offre une solution robuste pour ajouter des filigranes à vos documents. Que vous soyez un développeur cherchant à intégrer le filigrane dans votre application ou une personne intéressée par la protection de vos documents, ce didacticiel vous guidera pas à pas tout au long du processus.
 ## Conditions préalables

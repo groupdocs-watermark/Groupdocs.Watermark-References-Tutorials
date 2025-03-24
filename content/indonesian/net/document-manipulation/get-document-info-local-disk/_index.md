@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan, menghapus, dan mengekstrak tanda air dal
 weight: 11
 url: /id/net/document-manipulation/get-document-info-local-disk/
 ---
+
+# Dapatkan Info Dokumen dari Disk Lokal
+
 ## Perkenalan
 Selamat datang di panduan utama tentang penggunaan GroupDocs.Watermark untuk .NET! Baik Anda seorang pengembang berpengalaman atau baru memulai, artikel ini akan memandu Anda memahami pentingnya memberi tanda air pada dokumen Anda dengan alat canggih ini. Pada akhirnya, Anda akan menjadi ahli dalam menyematkan tanda air di dokumen Anda, memastikan dokumen tersebut dilindungi dan diberi merek sesuai spesifikasi Anda.
 ## Prasyarat

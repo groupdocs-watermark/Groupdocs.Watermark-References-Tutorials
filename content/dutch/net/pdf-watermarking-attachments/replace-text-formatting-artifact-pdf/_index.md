@@ -6,6 +6,9 @@ description: Leer hoe u tekst kunt vervangen door opmaak voor artefacten in PDF-
 weight: 43
 url: /nl/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---
+
+# Vervang tekst door opmaak voor artefacten in PDF
+
 ## Invoering
 Op het gebied van .NET-ontwikkeling is het beheren van artefacten en het watermerken van documenten vaak een cruciale taak. Gelukkig beschikken ontwikkelaars met GroupDocs.Watermark voor .NET over een krachtige toolkit om functionaliteiten voor watermerken en artefactbeheer naadloos in hun applicaties te integreren. In deze uitgebreide zelfstudie verdiepen we ons in het proces van het vervangen van tekst door opmaak voor artefacten in PDF-documenten met behulp van GroupDocs.Watermark voor .NET.
 ## Vereisten

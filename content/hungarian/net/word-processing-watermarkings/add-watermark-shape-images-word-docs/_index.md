@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat hozzá vízjeleket Word-dokumentumok kép
 weight: 17
 url: /hu/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Adjon hozzá vízjelet az alakzatképekhez a Word Dokumentumokban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet vízjelet hozzáadni a Word-dokumentumok képeinek formázásához a GroupDocs.Watermark for .NET segítségével. A vízjelezés kulcsfontosságú szempont a dokumentumvédelemben, különösen érzékeny vagy bizalmas információk kezelésekor. Vízjelek hozzáadásával a képek formázásához biztosíthatja dokumentumai integritását és biztonságát.
 ## Előfeltételek

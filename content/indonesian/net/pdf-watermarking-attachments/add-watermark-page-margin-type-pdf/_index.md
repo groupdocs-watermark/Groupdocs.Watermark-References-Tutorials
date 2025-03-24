@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air dengan jenis margin halaman di 
 weight: 21
 url: /id/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---
+
+# Tambahkan Tanda Air dengan Jenis Margin Halaman di PDF
+
 ## Perkenalan
 Di era digital saat ini, pengamanan dokumen menjadi lebih penting dari sebelumnya. Salah satu cara untuk memastikan integritas dan keaslian dokumen Anda adalah dengan menambahkan tanda air. Groupdocs.Watermark untuk .NET adalah alat luar biasa yang dirancang untuk membuat proses ini mudah. Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah menambahkan tanda air dengan tipe margin halaman di PDF menggunakan Groupdocs.Watermark untuk .NET.
 ## Prasyarat

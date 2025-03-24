@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar anteckningsinformation från PDF-dokumen
 weight: 23
 url: /sv/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
+
+# Extrahera anteckningsinformation från PDF
+
 ## Introduktion
 Upplever du ofta att du behöver extrahera detaljerad anteckningsinformation från dina PDF-dokument? Oavsett om du är en utvecklare som arbetar med dokumenthanteringssystem eller en affärsprofessionell som hanterar många PDF-filer, kan det vara avgörande att effektivt extrahera och bearbeta kommentarer. Med GroupDocs.Watermark för .NET har du en kraftfull verktygslåda till ditt förfogande för att göra denna uppgift enkel och effektiv.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Snadno přidávejte vodoznaky do dokumentů aplikace Word pomocí G
 weight: 15
 url: /cs/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---
+
+# Přidat vodoznak do sekce v Dokumentech aplikace Word
+
 ## Úvod
 Vodoznak vašich dokumentů je zásadním krokem při ochraně vašeho obsahu a prosazování vlastnictví. V tomto obsáhlém tutoriálu vás provedeme procesem přidání vodoznaku do konkrétní části dokumentů aplikace Word pomocí GroupDocs.Watermark for .NET. Ať už jste vývojář nebo někdo se základními znalostmi o kódování, tato příručka vám pomůže efektivně zabezpečit vaše dokumenty.
 ## Předpoklady

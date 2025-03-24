@@ -6,6 +6,9 @@ description: Tìm hiểu cách xóa tệp đính kèm khỏi tài liệu PDF m�
 weight: 33
 url: /vi/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---
+
+# Xóa tệp đính kèm khỏi PDF
+
 ## Giới thiệu
 Trong thế giới phát triển phần mềm, quản lý tài liệu một cách hiệu quả là một nhiệm vụ quan trọng. Cho dù đó là mục đích sử dụng cá nhân hay chuyên nghiệp, đôi khi chúng ta cần thao tác hoặc kiểm soát các thành phần khác nhau trong tài liệu. GroupDocs.Watermark cho .NET là một thư viện mạnh mẽ được thiết kế để giải quyết nhu cầu này, cung cấp một bộ công cụ toàn diện để làm việc liền mạch với các định dạng tài liệu khác nhau.
 ## Điều kiện tiên quyết

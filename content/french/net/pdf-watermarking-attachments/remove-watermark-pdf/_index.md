@@ -6,6 +6,9 @@ description: Découvrez comment supprimer les filigranes des fichiers PDF à l'a
 weight: 34
 url: /fr/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---
+
+# Supprimer le filigrane d'un PDF
+
 ## Introduction
 À l’ère numérique d’aujourd’hui, la protection des documents sensibles avec des filigranes est une pratique courante. Cependant, il existe des cas où vous devrez peut-être supprimer les filigranes des fichiers PDF pour diverses raisons. Que vous modifiiez un document ou que vous ayez simplement besoin d'une version propre pour la présentation, GroupDocs.Watermark for .NET fournit une solution transparente pour supprimer les filigranes des fichiers PDF.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: 探索新增影像浮水印的 GroupDocs.Watermark for .NET 教學�
 weight: 24
 url: /zh-hant/net/image-watermarkings/
 ---
+
+# 圖片浮水印
+
 ## 介紹
 
 希望使用影像浮水印來增強您的文件？ GroupDocs.Watermark for .NET 可以滿足您的需求。我們全面的教學將引導您完成新增影像浮水印的流程，確保您的文件安全且具有專業品牌。無論您是新手還是經驗豐富的開發人員，我們的逐步指南都會使過程變得簡單而有效率。讓我們探索一些幫助您入門的關鍵教學。

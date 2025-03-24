@@ -6,6 +6,9 @@ description: Groupdocs for .NET を使用して、PDF の特定のページに�
 weight: 15
 url: /ja/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# PDF の特定のページにウォーターマークを追加する
+
 ## 導入
 PDF ドキュメントに透かしを追加することは、コンテンツを保護し、所有権を主張するための重要なステップです。下書きにマークを付ける場合でも、機密情報を保護する場合でも、単にブランドを追加する場合でも、透かしは効果的なツールです。このチュートリアルでは、Groupdocs.Watermark for .NET を使用して、PDF ファイルの特定のページにテキストと画像の両方の透かしを追加する方法を説明します。プロセスを管理しやすいステップに分割して、確実にプロジェクトに沿ってこれらの機能を実装できるようにします。
 ## 前提条件

@@ -6,6 +6,9 @@ description: Aprenda cómo agregar fácilmente marcas de agua a sus documentos u
 weight: 11
 url: /es/net/document-savings/save-document-specified-location/
 ---
+
+# Guardar documento en la ubicación especificada
+
 ## Introducción
 En la era digital, proteger los documentos se ha vuelto más crucial que nunca. La marca de agua es una forma eficaz de proteger sus documentos del uso no autorizado. GroupDocs.Watermark para .NET ofrece una solución sólida para agregar marcas de agua a sus documentos. Si usted es un desarrollador que busca integrar marcas de agua en su aplicación o alguien interesado en proteger sus documentos, este tutorial lo guiará a través del proceso paso a paso.
 ## Requisitos previos

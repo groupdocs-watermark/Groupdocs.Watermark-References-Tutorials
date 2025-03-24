@@ -6,6 +6,9 @@ description: Tanuljon meg szöveges és képi vízjeleket hozzáadni a PDF-fájl
 weight: 15
 url: /hu/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
+
+# Vízjelek hozzáadása adott oldalakhoz PDF-ben
+
 ## Bevezetés
 A vízjelek hozzáadása a PDF-dokumentumokhoz kulcsfontosságú lépés a tartalom védelmében és a tulajdonjog érvényesítésében. Akár piszkozatot jelöl meg, akár bizalmas információkat biztosít, akár egyszerűen márkajelzést ad hozzá, a vízjelek hatékony eszközt jelentenek. Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatja a Groupdocs.Watermark for .NET-et szöveges és képi vízjelek hozzáadásához a PDF-fájlok adott oldalaihoz. A folyamatot kezelhető lépésekre bontjuk, így biztosítva, hogy követni tudja ezeket a funkciókat, és megvalósíthassa projektjeiben.
 ## Előfeltételek

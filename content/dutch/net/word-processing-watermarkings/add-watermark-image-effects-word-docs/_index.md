@@ -6,6 +6,9 @@ description: Leer hoe u watermerken met afbeeldingseffecten aan uw Word-document
 weight: 19
 url: /nl/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---
+
+# Voeg watermerk met afbeeldingseffecten toe in Word-documenten
+
 ## Invoering
 Wilt u wat pit toevoegen aan uw Word-documenten met opvallende watermerken? GroupDocs.Watermark voor .NET heeft u gedekt! Deze uitgebreide handleiding leidt u door het proces van het toevoegen van watermerken met verbluffende afbeeldingseffecten aan uw Word-documenten met behulp van GroupDocs voor .NET. Of je nu een doorgewinterde ontwikkelaar of een beginner bent, deze stapsgewijze zelfstudie maakt het proces een fluitje van een cent.
 ## Vereisten

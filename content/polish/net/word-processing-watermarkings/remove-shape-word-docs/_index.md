@@ -6,6 +6,9 @@ description: Dowiedz się, jak usuwać kształty z dokumentów programu Word prz
 weight: 30
 url: /pl/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
+
+# Usuń kształt w dokumentach programu Word
+
 ## Wstęp
 W dziedzinie przetwarzania i manipulacji dokumentami GroupDocs.Watermark dla .NET jawi się jako potężny zestaw narzędzi, umożliwiający programistom bezproblemową integrację funkcji znaku wodnego z aplikacjami .NET. W tym artykule omówiono zawiłości wykorzystania programu GroupDocs.Watermark dla platformy .NET do usuwania kształtów z dokumentów programu Word. Postępując zgodnie z przewodnikiem krok po kroku, programiści mogą zrozumieć proces z łatwością i wydajnością.
 ## Warunki wstępne

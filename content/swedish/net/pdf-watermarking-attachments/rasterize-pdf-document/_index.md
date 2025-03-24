@@ -6,6 +6,9 @@ description: Lär dig hur du rastrerar PDF-dokument med GroupDocs.Watermark för
 weight: 27
 url: /sv/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---
+
+# Rasterisera PDF-dokument
+
 ## Introduktion
 När det gäller dokumenthantering och manipulation står GroupDocs.Watermark för .NET högt som ett kraftfullt verktyg, som erbjuder robusta möjligheter att lägga till, ta bort och söka efter vattenstämplar i olika dokumentformat. Oavsett om det gäller att skydda dina dokument med upphovsrättsmeddelanden, lägga till företagslogotyper för varumärkesbyggande eller helt enkelt kommentera dokument med stämplar, förenklar GroupDocs.Watermark processen med sitt intuitiva API och omfattande funktionsuppsättning.
 ## Förutsättningar

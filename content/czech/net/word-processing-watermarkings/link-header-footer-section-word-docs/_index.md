@@ -6,6 +6,9 @@ description: Naučte se, jak efektivně propojit záhlaví a zápatí v rámci s
 weight: 26
 url: /cs/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Záhlaví/zápatí odkazu v sekci v Dokumentech aplikace Word
+
 ## Úvod
 Ve světě vývoje .NET může být správa vodoznaků v dokumentech aplikace Word zásadním úkolem, ať už chráníte citlivé informace nebo přidáváte prvky značky. Naštěstí GroupDocs.Watermark for .NET poskytuje výkonné řešení pro efektivní zpracování vodoznaků. V tomto tutoriálu prozkoumáme, jak propojit záhlaví a zápatí v částech dokumentů aplikace Word pomocí GroupDocs.Watermark.
 ## Předpoklady

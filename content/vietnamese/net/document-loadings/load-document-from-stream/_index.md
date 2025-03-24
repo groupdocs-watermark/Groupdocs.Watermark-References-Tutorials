@@ -6,6 +6,9 @@ description: Tìm hiểu cách thêm hình mờ vào tài liệu bằng GroupDoc
 weight: 11
 url: /vi/net/document-loadings/load-document-from-stream/
 ---
+
+# Tải tài liệu từ luồng
+
 ## Giới thiệu
 Bạn đang muốn thêm hình mờ vào tài liệu của mình một cách liền mạch bằng .NET? Đừng tìm đâu xa! GroupDocs.Watermark cho .NET là một thư viện mạnh mẽ và dễ sử dụng, cho phép bạn quản lý hình mờ ở nhiều định dạng tài liệu khác nhau. Cho dù bạn đang làm việc với tệp PDF, tài liệu Word hay hình ảnh, công cụ này đều có thể giúp bạn. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình tải tài liệu từ luồng và thêm hình mờ theo từng bước. Vì vậy, hãy đi sâu vào ngay!
 ## Điều kiện tiên quyết

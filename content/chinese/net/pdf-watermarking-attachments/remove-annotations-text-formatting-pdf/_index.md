@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs for .NET 删除 PDF 文档中具有特
 weight: 30
 url: /zh/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
+
+# 删除 PDF 中具有特定文本格式的注释
+
 ## 介绍
 在本教程中，我们将指导您完成使用 Groupdocs.Watermark for .NET 删除 PDF 文档中具有特定文本格式的注释的过程。该库提供了强大的功能来处理各种格式的水印、注释和其他文档元素。
 ## 先决条件

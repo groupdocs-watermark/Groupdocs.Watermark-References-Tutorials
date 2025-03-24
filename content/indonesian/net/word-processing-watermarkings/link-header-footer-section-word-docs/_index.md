@@ -6,6 +6,9 @@ description: Pelajari cara menautkan header dan footer secara efisien dalam bagi
 weight: 26
 url: /id/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# Tautkan Header/Footer di Bagian di Word Docs
+
 ## Perkenalan
 Dalam dunia pengembangan .NET, mengelola tanda air di dokumen Word bisa menjadi tugas penting, baik Anda melindungi informasi sensitif atau menambahkan elemen merek. Untungnya, GroupDocs.Watermark untuk .NET memberikan solusi ampuh untuk menangani tanda air secara efisien. Dalam tutorial ini, kita akan mempelajari cara menautkan header dan footer di bagian dokumen Word menggunakan GroupDocs.Watermark.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서를 보호�
 weight: 28
 url: /ko/net/word-processing-watermarkings/protect-document-word-docs/
 ---
+
+# Word Docs에서 문서 보호
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Watermark를 사용하여 Word Docs에서 문서를 보호하는 과정을 안내합니다. 다음 단계를 따르면 Word 문서에 보안 계층을 추가하여 무단 액세스 및 수정을 방지할 수 있습니다.
 ## 전제조건

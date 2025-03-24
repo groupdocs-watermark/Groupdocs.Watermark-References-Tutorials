@@ -6,6 +6,9 @@ description: Protect and manage your documents with Groupdocs.Watermark for .NET
 weight: 10
 url: /net/document-loadings/load-document-from-local-disk/
 ---
+
+# Load Document from Local Disk
+
 ## Introduction
 Watermarking documents is essential in today's digital age to ensure content protection, ownership assertion, and confidentiality. Groupdocs.Watermark for .NET is a powerful library that allows developers to add, search, and manage watermarks in various document formats. In this tutorial, we’ll walk through the process of using Groupdocs.Watermark for .NET to add watermarks to your documents with detailed step-by-step instructions.
 ## Prerequisites

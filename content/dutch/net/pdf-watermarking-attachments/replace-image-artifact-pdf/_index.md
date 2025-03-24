@@ -6,6 +6,9 @@ description: Leer hoe u afbeeldingen in PDF-documenten vervangt met GroupDocs.Wa
 weight: 38
 url: /nl/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---
+
+# Vervang afbeelding voor specifiek artefact in PDF
+
 ## Invoering
 Het toevoegen van watermerken aan documenten is een essentiële praktijk voor het garanderen van documentbeveiliging, branding en auteursrechtelijke bescherming. Als u zich wilt verdiepen in de wereld van documentwatermerken met GroupDocs.Watermark voor .NET, bent u hier aan het juiste adres. Deze gids leidt u door het proces van het vervangen van afbeeldingen in een PDF-document met behulp van de GroupDocs.Watermark-bibliotheek. Laten we beginnen!
 ## Vereisten

@@ -6,6 +6,9 @@ description: Bảo vệ tệp PDF của bạn bằng hình mờ được cá nh�
 weight: 18
 url: /vi/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---
+
+# Thêm hình mờ vào các tạo phẩm hình ảnh trong PDF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình thêm hình mờ vào các tạo phẩm hình ảnh trong tài liệu PDF bằng GroupDocs.Watermark cho .NET. Bằng cách làm theo các bước này, bạn có thể bảo vệ các tệp PDF của mình một cách hiệu quả bằng các hình mờ được cá nhân hóa.
 ## Điều kiện tiên quyết

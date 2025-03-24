@@ -6,6 +6,9 @@ description: Dowiedz się, jak dodawać niestandardowe znaki wodne z efektami te
 weight: 21
 url: /pl/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---
+
+# Dodaj znak wodny z efektami tekstowymi w dokumentach programu Word
+
 ## Wstęp
 W tym samouczku omówimy, jak dodać znak wodny z efektami tekstowymi do dokumentów programu Word za pomocą programu GroupDocs.Watermark dla platformy .NET. Postępując zgodnie z tymi szczegółowymi instrukcjami, będziesz mógł ulepszyć swoje dokumenty za pomocą niestandardowych znaków wodnych zawierających różne efekty tekstowe.
 ## Warunki wstępne

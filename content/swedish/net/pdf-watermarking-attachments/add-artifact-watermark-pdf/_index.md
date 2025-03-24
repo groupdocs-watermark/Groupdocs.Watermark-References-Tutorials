@@ -6,6 +6,9 @@ description: Lär dig hur du lägger till artefaktvattenstämplar till PDF-filer
 weight: 11
 url: /sv/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---
+
+# Lägg till Artifact Watermark till PDF
+
 ## Introduktion
 Att lägga till vattenstämplar i PDF-filer är en avgörande aspekt av dokumenthantering, särskilt när det gäller att skydda immateriella rättigheter eller varumärkesdokument. Groupdocs.Watermark för .NET ger en robust lösning för att lägga till vattenstämplar till PDF-filer utan ansträngning. I den här handledningen går vi igenom processen att lägga till en artefaktvattenstämpel till PDF-filer steg för steg.
 ## Förutsättningar

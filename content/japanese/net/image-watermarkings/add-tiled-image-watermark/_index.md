@@ -6,6 +6,9 @@ description: GroupDocs.Watermark for .NET を使用して、タイル画像の�
 weight: 10
 url: /ja/net/image-watermarkings/add-tiled-image-watermark/
 ---
+
+# 並べて表示された画像の透かしを追加する
+
 ## 導入
 GroupDocs.Watermark for .NET は、開発者がさまざまなドキュメント形式のウォーターマークをプログラムで追加、削除、検索できる強力な API です。このチュートリアルでは、GroupDocs.Watermark for .NET を使用して、タイル画像ウォーターマークをドキュメントに追加するプロセスを説明します。
 ## 前提条件

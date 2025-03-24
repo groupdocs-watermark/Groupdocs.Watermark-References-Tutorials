@@ -6,6 +6,9 @@ description: Découvrez comment ajouter un filigrane verrouillé à des pages sp
 weight: 12
 url: /fr/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
+
+# Ajouter un filigrane verrouillé à des pages spécifiques dans Word Docs
+
 ## Introduction
 Cherchez-vous à ajouter un filigrane à des pages spécifiques de vos documents Word, mais souhaitez-vous qu'il soit verrouillé afin qu'il ne puisse pas être facilement supprimé ou modifié ? Vous êtes au bon endroit ! Dans ce didacticiel, nous vous guiderons tout au long du processus d'ajout d'un filigrane verrouillé à des pages spécifiques dans des documents Word à l'aide de GroupDocs.Watermark pour .NET. Cette puissante bibliothèque facilite l'application, la gestion et la personnalisation des filigranes sur une variété de types de documents. Que vous soyez un développeur ou simplement quelqu'un qui a besoin de sécuriser ses documents, ce guide vous guidera pas à pas de manière simple.
 ## Conditions préalables

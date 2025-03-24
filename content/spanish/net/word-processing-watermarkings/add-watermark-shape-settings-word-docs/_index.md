@@ -6,6 +6,9 @@ description: Aprenda a agregar marcas de agua con configuraciones de forma a doc
 weight: 20
 url: /es/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---
+
+# Agregar marca de agua con configuración de forma en documentos de Word
+
 ## Introducción
 En este tutorial, recorreremos el proceso de agregar una marca de agua con configuraciones de forma a documentos de Word usando GroupDocs.Watermark para .NET.
 ## Requisitos previos

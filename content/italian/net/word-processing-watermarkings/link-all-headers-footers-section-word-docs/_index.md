@@ -6,6 +6,9 @@ description: Collega facilmente intestazioni e piè di pagina nei documenti Word
 weight: 25
 url: /it/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---
+
+# Collega tutte le intestazioni/piè di pagina nelle sezioni di documenti Word
+
 ## introduzione
 Quando si lavora con documenti Word, è spesso necessario collegare intestazioni e piè di pagina in diverse sezioni per coerenza. Questo tutorial ti guiderà attraverso il processo passo dopo passo utilizzando GroupDocs.Watermark per .NET.
 ## Importa spazi dei nomi

@@ -6,6 +6,9 @@ description: Lär dig hur du skyddar dina PDF-dokument genom att lägga till vat
 weight: 17
 url: /sv/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
+
+# Lägg till vattenstämpel till anteckningsbilder i PDF
+
 ## Introduktion
 I den här handledningen kommer vi att undersöka hur du lägger till vattenstämplar till anteckningsbilder i PDF-dokument med Groupdocs.Watermark for .NET. Vattenmärkning är avgörande för att skydda dina dokument från obehörig användning eller distribution. Genom att följa den här steg-för-steg-guiden lär du dig hur du använder textvattenstämplar på anteckningsbilder i PDF-filer på ett effektivt sätt.
 ## Förutsättningar

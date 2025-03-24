@@ -6,6 +6,9 @@ description: Aprenda a agregar marcas de agua para dar forma a imágenes en docu
 weight: 17
 url: /es/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
+
+# Agregar marca de agua para dar forma a imágenes en documentos de Word
+
 ## Introducción
 En este tutorial, exploraremos cómo agregar una marca de agua para dar forma a imágenes dentro de documentos de Word usando GroupDocs.Watermark para .NET. La marca de agua es un aspecto crucial de la protección de documentos, especialmente cuando se trata de información sensible o confidencial. Al agregar marcas de agua para dar forma a las imágenes, puede garantizar la integridad y seguridad de sus documentos.
 ## Requisitos previos

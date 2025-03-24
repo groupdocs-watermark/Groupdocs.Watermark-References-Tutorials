@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Watermark for .NET 有效链接 Word �
 weight: 26
 url: /zh/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
+
+# 在 Word 文档中的节中链接页眉/页脚
+
 ## 介绍
 在 .NET 开发领域，管理 Word 文档中的水印可能是一项至关重要的任务，无论您是要保护敏感信息还是添加品牌元素。幸运的是，GroupDocs.Watermark for .NET 提供了一个强大的解决方案来有效地处理水印。在本教程中，我们将探讨如何使用 GroupDocs.Watermark 链接 Word 文档各部分中的页眉和页脚。
 ## 先决条件

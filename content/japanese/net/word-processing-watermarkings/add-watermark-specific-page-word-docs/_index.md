@@ -6,6 +6,9 @@ description: GroupDocs for .NET を使用して Word 文書の特定のページ
 weight: 14
 url: /ja/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
 ---
+
+# Word ドキュメントの特定のページに透かしを追加する
+
 ## 導入
 文書に透かしを入れることは、文書のセキュリティとブランド化の重要な側面です。このチュートリアルでは、GroupDocs.Watermark for .NET を使用して Word 文書の特定のページにウォーターマークを追加する方法を説明します。
 ## 前提条件

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat hozzá képes vízjeleket dokumentumokhoz
 weight: 12
 url: /hu/net/image-watermarkings/add-image-watermark-from-stream/
 ---
+
+# Kép vízjel hozzáadása a Streamből
+
 ## Bevezetés
 A dokumentumkezelés és a biztonság területén a vízjelek fájlokba való beépítése kiemelkedő fontosságú. Legyen szó márkaépítésről, szerzői jogvédelemről vagy a dokumentumok sértetlenségének megőrzéséről, a vízjelek döntő szerepet játszanak. Szerencsére a GroupDocs.Watermark for .NET robusztus megoldást kínál vízjelek hozzáadására, eltávolítására és keresésére különféle dokumentumformátumokban.
 ## Előfeltételek

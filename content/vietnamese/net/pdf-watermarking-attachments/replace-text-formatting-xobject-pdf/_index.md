@@ -6,6 +6,9 @@ description: Nâng cao khả năng thao tác tài liệu .NET của bạn với 
 weight: 45
 url: /vi/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---
+
+# Thay thế văn bản bằng định dạng cho XObject trong PDF
+
 ## Giới thiệu
 Trong lĩnh vực quản lý và thao tác tài liệu, GroupDocs.Watermark dành cho .NET nổi bật như một giải pháp mạnh mẽ dành cho các nhà phát triển .NET đang tìm cách thao tác hình mờ, văn bản và hình ảnh trong các định dạng tài liệu khác nhau. Hướng dẫn này đi sâu vào một trong những tính năng mạnh mẽ của nó: thay thế văn bản bằng định dạng cho XObject trong tệp PDF. Đến cuối hướng dẫn này, bạn sẽ được trang bị để tích hợp liền mạch chức năng này vào các ứng dụng .NET của mình.
 ## Điều kiện tiên quyết
