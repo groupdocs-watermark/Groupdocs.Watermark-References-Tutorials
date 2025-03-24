@@ -3,7 +3,6 @@ title: إنشاء معاينة المستند
 linktitle: إنشاء معاينة المستند
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إنشاء معاينات للمستندات باستخدام GroupDocs.Watermark لـ .NET باستخدام هذا الدليل. قم بتعزيز أمان المستندات وإدارتها دون عناء.
-type: docs
 weight: 10
 url: /ar/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## خاتمة
 يعد إنشاء معاينات المستندات باستخدام GroupDocs.Watermark لـ .NET عملية مباشرة يمكن إنجازها ببضعة أسطر من التعليمات البرمجية فقط. باتباع الخطوات الموضحة في هذا الدليل، يمكنك بسهولة إعداد مشروعك وتكوين الخيارات الضرورية وإنشاء معاينات لمستنداتك. لا تعمل هذه المكتبة القوية على تبسيط عملية وضع العلامات المائية فحسب، بل توفر أيضًا ميزات قوية لإدارة العلامات المائية ومعالجتها.
- إذا كان لديك أي أسئلة أو كنت بحاجة إلى مزيد من المساعدة، فلا تتردد في زيارة[منتدى دعم GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) أو الرجوع إلى[توثيق](https://reference.groupdocs.com/Watermark/net/).
+ إذا كان لديك أي أسئلة أو كنت بحاجة إلى مزيد من المساعدة، فلا تتردد في زيارة[منتدى دعم GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) أو الرجوع إلى[توثيق](https://tutorials.groupdocs.com/Watermark/net/).
 ## الأسئلة الشائعة
 ### ما تنسيقات الملفات التي يدعمها GroupDocs.Watermark لـ .NET؟
- يدعم GroupDocs.Watermark for .NET نطاقًا واسعًا من تنسيقات الملفات، بما في ذلك PDF وDOCX وPPTX وXLSX وغيرها الكثير. للحصول على قائمة كاملة بالتنسيقات المدعومة، راجع[توثيق](https://reference.groupdocs.com/Watermark/net/).
+ يدعم GroupDocs.Watermark for .NET نطاقًا واسعًا من تنسيقات الملفات، بما في ذلك PDF وDOCX وPPTX وXLSX وغيرها الكثير. للحصول على قائمة كاملة بالتنسيقات المدعومة، راجع[توثيق](https://tutorials.groupdocs.com/Watermark/net/).
 ### هل يمكنني تخصيص مظهر العلامات المائية؟
 نعم، تتيح لك GroupDocs.Watermark إمكانية تخصيص مظهر العلامات المائية بشكل كامل، بما في ذلك العلامات المائية النصية والصورة والأشكال. يمكنك ضبط خصائص مثل الخط واللون والحجم والشفافية.
 ### هل هناك نسخة تجريبية متاحة؟

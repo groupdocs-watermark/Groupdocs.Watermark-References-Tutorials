@@ -3,7 +3,6 @@ title: Add Locked Watermark to Section in Word Docs
 linktitle: Add Locked Watermark to Section in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add a locked watermark to a specific section in Word documents using Groupdocs.Watermark for .NET with this comprehensive step-by-step guide.
-type: docs
 weight: 13
 url: /net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
@@ -70,4 +69,4 @@ Absolutely! By setting different `SectionIndex` values in the `WordProcessingWat
 ### What types of watermarks can I add using Groupdocs.Watermark?
 Groupdocs.Watermark supports various types of watermarks, including text, image, and shape watermarks, offering extensive customization options for each type.
 ### Where can I find more information about Groupdocs.Watermark for .NET?
-For more information, you can visit the [documentation](https://reference.groupdocs.com/Watermark/net/) and [support forum](https://forum.groupdocs.com/c/watermark/19).
+For more information, you can visit the [documentation](https://tutorials.groupdocs.com/Watermark/net/) and [support forum](https://forum.groupdocs.com/c/watermark/19).

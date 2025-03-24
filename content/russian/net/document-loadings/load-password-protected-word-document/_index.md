@@ -3,7 +3,6 @@ title: Загрузить документ Word, защищенный парол
 linktitle: Загрузить документ Word, защищенный паролем
 second_title: GroupDocs.Watermark .NET API
 description: Легко добавляйте водяные знаки в документы Word, защищенные паролем, с помощью GroupDocs.Watermark для .NET с помощью нашего подробного пошагового руководства.
-type: docs
 weight: 14
 url: /ru/net/document-loadings/load-password-protected-word-document/
 ---

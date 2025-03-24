@@ -3,7 +3,6 @@ title: 光柵化 PDF 頁面
 linktitle: 光柵化 PDF 頁面
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs for .NET 增強文件安全性。無縫地向 PDF 和其他格式添加浮水印。
-type: docs
 weight: 28
 url: /zh-hant/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---

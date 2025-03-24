@@ -3,7 +3,6 @@ title: Dokumentuminformációk lekérése a helyi lemezről
 linktitle: Dokumentuminformációk lekérése a helyi lemezről
 second_title: GroupDocs.Watermark .NET API
 description: Ezzel az átfogó, lépésenkénti útmutatóval megtudhatja, hogyan adhat hozzá, távolíthat el és bonthat ki vízjeleket a .NET-hez készült GroupDocs segítségével.
-type: docs
 weight: 11
 url: /hu/net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /hu/net/document-manipulation/get-document-info-local-disk/
 Üdvözöljük a GroupDocs.Watermark for .NET használatának végső útmutatójában! Akár tapasztalt fejlesztő, akár csak most kezdi, ez a cikk végigvezeti Önt a dokumentumok vízjellel való ellátásának alapvető részletein ezzel a hatékony eszközzel. A végére profi lesz a vízjelek dokumentumaiba való beágyazásában, biztosítva, hogy azok védettek legyenek, és az Ön specifikációinak megfelelő márkajelzéssel rendelkezzenek.
 ## Előfeltételek
 Mielőtt belevágna a lépésről lépésre szóló útmutatóba, meg kell felelnie néhány előfeltételnek:
-1.  .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer telepítve van a rendszeren. A GroupDocs.Watermark for .NET kompatibilis a .NET-keretrendszer különböző verzióival, ezért ellenőrizze a[dokumentáció](https://reference.groupdocs.com/Watermark/net/) a kompatibilitási részletekért.
+1.  .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer telepítve van a rendszeren. A GroupDocs.Watermark for .NET kompatibilis a .NET-keretrendszer különböző verzióival, ezért ellenőrizze a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) a kompatibilitási részletekért.
 2.  GroupDocs.Watermark for .NET Library: Töltse le és telepítse a legújabb verziót a[letöltési oldal](https://releases.groupdocs.com/Watermark/net/).
 3. Fejlesztési környezet: Be kell állítania egy fejlesztői környezetet. A Visual Studio népszerű választás .NET-fejlesztéshez.
 4. Alapvető C# ismeretek: A C# programozás alapjainak megértése segít a példák követésében.
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
  Ez a lépés magában foglalja a`GetWatermarks`módszer a dokumentumban lévő összes vízjel lekéréséhez. Ezután ismételheti a vízjelek listáját, és ellenőrizheti a tulajdonságaikat, vagy szükség szerint további műveleteket hajthat végre.
 ## Következtetés
- Gratulálunk! Most már megtanulta, hogyan használhatja a GroupDocs.Watermark for .NET szolgáltatást vízjelek hozzáadására, eltávolítására és kivonására a dokumentumokból. Ezekkel a készségekkel hatékonyan védheti meg és védheti meg dokumentumait. Ne feledje, a[dokumentáció](https://reference.groupdocs.com/Watermark/net/) mindig ott van, ha részletesebb információra vagy speciális funkciókra van szüksége.
+ Gratulálunk! Most már megtanulta, hogyan használhatja a GroupDocs.Watermark for .NET szolgáltatást vízjelek hozzáadására, eltávolítására és kivonására a dokumentumokból. Ezekkel a készségekkel hatékonyan védheti meg és védheti meg dokumentumait. Ne feledje, a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) mindig ott van, ha részletesebb információra vagy speciális funkciókra van szüksége.
 ## GYIK
 ### Használhatom a GroupDocs.Watermark for .NET-et bármely .NET-verzióval?
- Igen, a GroupDocs.Watermark for .NET kompatibilis a .NET-keretrendszer különféle verzióival. Ellenőrizd a[dokumentáció](https://reference.groupdocs.com/Watermark/net/) konkrétumokhoz.
+ Igen, a GroupDocs.Watermark for .NET kompatibilis a .NET-keretrendszer különféle verzióival. Ellenőrizd a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) konkrétumokhoz.
 ### Honnan tölthetem le a GroupDocs.Watermark for .NET programot?
  A legújabb verziót letöltheti a[letöltési oldal](https://releases.groupdocs.com/Watermark/net/).
 ### Hogyan szerezhetek ideiglenes engedélyt?

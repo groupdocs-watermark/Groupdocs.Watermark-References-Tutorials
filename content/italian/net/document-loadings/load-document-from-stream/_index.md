@@ -3,7 +3,6 @@ title: Carica documento dal flusso
 linktitle: Carica documento dal flusso
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere filigrane ai documenti utilizzando GroupDocs.Watermark per .NET con questa guida. Perfetto per gli sviluppatori che desiderano migliorare la sicurezza dei documenti.
-type: docs
 weight: 11
 url: /it/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Questo codice salva il documento con la filigrana appena aggiunta`outputFileName` percorso che hai definito in precedenza.
 
 ## Conclusione
-Congratulazioni! Hai aggiunto correttamente una filigrana al tuo documento utilizzando GroupDocs.Watermark per .NET. Questa libreria semplifica incredibilmente la gestione delle filigrane in una varietà di formati di documenti. Se devi aggiungere testo, immagini o altri tipi di filigrane, GroupDocs.Watermark ha gli strumenti di cui hai bisogno. Non dimenticare di dare un'occhiata a[documentazione](https://reference.groupdocs.com/Watermark/net/) per funzionalità più avanzate e opzioni di personalizzazione.
+Congratulazioni! Hai aggiunto correttamente una filigrana al tuo documento utilizzando GroupDocs.Watermark per .NET. Questa libreria semplifica incredibilmente la gestione delle filigrane in una varietà di formati di documenti. Se devi aggiungere testo, immagini o altri tipi di filigrane, GroupDocs.Watermark ha gli strumenti di cui hai bisogno. Non dimenticare di dare un'occhiata a[documentazione](https://tutorials.groupdocs.com/Watermark/net/) per funzionalità più avanzate e opzioni di personalizzazione.
 ## Domande frequenti
 ### Quali tipi di filigrane posso aggiungere utilizzando GroupDocs.Watermark per .NET?
 Puoi aggiungere filigrane di testo, filigrane di immagini e persino forme e loghi complessi. La libreria supporta un'ampia gamma di opzioni di personalizzazione.

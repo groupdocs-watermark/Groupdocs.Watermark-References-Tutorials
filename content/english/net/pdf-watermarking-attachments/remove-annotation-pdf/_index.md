@@ -3,7 +3,6 @@ title: Remove Annotation from PDF
 linktitle: Remove Annotation from PDF
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to remove annotations from PDFs using GroupDocs.Watermark for .NET. Enhance document readability effortlessly.
-type: docs
 weight: 29
 url: /net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---
@@ -36,7 +35,7 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
     PdfContent pdfContent = watermarker.GetContent<PdfContent>();
 ```
 ## Step 2: Remove Annotations
-Now, let's proceed to remove annotations from the PDF document. You have two options to remove annotations: by index or by reference.
+Now, let's proceed to remove annotations from the PDF document. You have two options to remove annotations: by index or by tutorials.
 ### Remove Annotation by Index
 To remove an annotation by its index:
 ```csharp
@@ -44,9 +43,9 @@ To remove an annotation by its index:
 pdfContent.Pages[0].Annotations.RemoveAt(0);
 ```
 ### Remove Annotation by Reference
-To remove an annotation by reference:
+To remove an annotation by tutorials:
 ```csharp
-// Remove Annotation by reference
+// Remove Annotation by tutorials
 pdfContent.Pages[0].Annotations.Remove(pdfContent.Pages[0].Annotations[0]);
 ```
 ## Step 3: Save the Document

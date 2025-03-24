@@ -3,7 +3,6 @@ title: Λάβετε πληροφορίες για σχήματα στα Έγγρ
 linktitle: Λάβετε πληροφορίες για σχήματα στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Ξεκλειδώστε πολύτιμες πληροφορίες από έγγραφα του Word χωρίς κόπο με το υδατογράφημα GroupDocs για .NET. Εξάγετε απρόσκοπτα πληροφορίες σχήματος για βελτιωμένη ανάλυση δεδομένων.
-type: docs
 weight: 24
 url: /el/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---

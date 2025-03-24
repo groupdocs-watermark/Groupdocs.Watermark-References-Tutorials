@@ -3,7 +3,6 @@ title: Přidejte zamčený vodoznak do sekce v Dokumentech aplikace Word
 linktitle: Přidejte zamčený vodoznak do sekce v Dokumentech aplikace Word
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak přidat zamčený vodoznak do konkrétní části v dokumentech Word pomocí Groupdocs Watermark for .NET, pomocí tohoto podrobného průvodce.
-type: docs
 weight: 13
 url: /cs/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
@@ -70,4 +69,4 @@ Groupdocs.Watermark for .NET je výkonná knihovna, která umožňuje vývojář
 ### Jaké typy vodoznaků mohu přidat pomocí Groupdocs.Watermark?
 Groupdocs.Watermark podporuje různé typy vodoznaků, včetně textových, obrazových a tvarových vodoznaků, a nabízí rozsáhlé možnosti přizpůsobení pro každý typ.
 ### Kde najdu další informace o Groupdocs.Watermark pro .NET?
- Pro více informací můžete navštívit[dokumentace](https://reference.groupdocs.com/Watermark/net/) a[Fórum podpory](https://forum.groupdocs.com/c/watermark/19).
+ Pro více informací můžete navštívit[dokumentace](https://tutorials.groupdocs.com/Watermark/net/) a[Fórum podpory](https://forum.groupdocs.com/c/watermark/19).

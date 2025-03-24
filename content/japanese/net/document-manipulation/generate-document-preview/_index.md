@@ -3,7 +3,6 @@ title: ドキュメントプレビューの生成
 linktitle: ドキュメントプレビューの生成
 second_title: GroupDocs.Watermark .NET API
 description: このガイドでは、GroupDocs.Watermark for .NET を使用してドキュメント プレビューを生成する方法を学習します。ドキュメントのセキュリティと管理を簡単に強化します。
-type: docs
 weight: 10
 url: /ja/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## 結論
 GroupDocs.Watermark for .NET を使用したドキュメント プレビューの生成は、わずか数行のコードで実行できる簡単なプロセスです。このガイドで概説されている手順に従うことで、プロジェクトを簡単にセットアップし、必要なオプションを構成し、ドキュメントのプレビューを生成できます。この強力なライブラリは、透かしプロセスを簡素化するだけでなく、透かしを管理および操作するための堅牢な機能も提供します。
-ご質問がある場合、またはさらにサポートが必要な場合は、お気軽に次のサイトにアクセスしてください。[GroupDocs.Watermark サポート フォーラム](https://forum.groupdocs.com/c/watermark/19)または、を参照してください。[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/).
+ご質問がある場合、またはさらにサポートが必要な場合は、お気軽に次のサイトにアクセスしてください。[GroupDocs.Watermark サポート フォーラム](https://forum.groupdocs.com/c/watermark/19)または、を参照してください。[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/).
 ## よくある質問
 ### GroupDocs.Watermark for .NET ではどのようなファイル形式がサポートされていますか?
- GroupDocs.Watermark for .NET は、PDF、DOCX、PPTX、XLSX などを含む幅広いファイル形式をサポートしています。サポートされている形式の完全なリストについては、を参照してください。[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark for .NET は、PDF、DOCX、PPTX、XLSX などを含む幅広いファイル形式をサポートしています。サポートされている形式の完全なリストについては、を参照してください。[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/).
 ### 透かしの外観をカスタマイズできますか?
 はい、GroupDocs.Watermark を使用すると、テキスト、画像、図形の透かしなどの透かしの外観を完全にカスタマイズできます。フォント、色、サイズ、透明度などのプロパティを調整できます。
 ### 試用版はありますか?

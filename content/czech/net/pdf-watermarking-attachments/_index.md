@@ -3,7 +3,6 @@ title: PDF vodoznak a příloha
 linktitle: PDF vodoznak a příloha
 second_title: GroupDocs.Watermark .NET API
 description: Prozkoumejte výukové programy GroupDocs.Watermark for .NET o vodoznaku PDF a přílohách. Naučte se krok za krokem metody, jak zlepšit zabezpečení a branding vašich PDF.
-type: docs
 weight: 25
 url: /cs/net/pdf-watermarking-attachments/
 ---

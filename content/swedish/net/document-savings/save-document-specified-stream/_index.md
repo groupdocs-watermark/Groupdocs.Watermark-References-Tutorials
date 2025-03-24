@@ -3,7 +3,6 @@ title: Spara dokument till specificerad ström
 linktitle: Spara dokument till specificerad ström
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du sparar ett dokument i en angiven ström med GroupDocs.Watermark for .NET med denna steg-för-steg-guide. Perfekt för utvecklare på alla nivåer.
-type: docs
 weight: 12
 url: /sv/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Ja, GroupDocs Watermark stöder text, bild och till och med streckkodsvattenstä
 ### Hur kan jag få en tillfällig licens?
  Du kan få en tillfällig licens från[den här länken](https://purchase.groupdocs.com/temporary-license/).
 ### Var kan jag hitta mer detaljerad dokumentation?
- För mer detaljerad dokumentation kan du besöka[här](https://reference.groupdocs.com/Watermark/net/).
+ För mer detaljerad dokumentation kan du besöka[här](https://tutorials.groupdocs.com/Watermark/net/).

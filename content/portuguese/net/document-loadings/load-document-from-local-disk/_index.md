@@ -3,7 +3,6 @@ title: Carregar documento do disco local
 linktitle: Carregar documento do disco local
 second_title: API GroupDocs.Watermark .NET
 description: Proteja e gerencie seus documentos com Groupdocs para .NET. Siga nosso guia detalhado para adicionar marcas d'água perfeitamente.
-type: docs
 weight: 10
 url: /pt/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Conclusão
 Adicionar marcas d’água aos seus documentos usando o Groupdocs para .NET é simples e eficiente. Este guia orientou você durante todo o processo, desde a configuração do seu ambiente até salvar um documento com marca d’água. Com esta ferramenta poderosa, você pode garantir que seus documentos estejam protegidos e que sua propriedade intelectual esteja segura. 
- Para mais detalhes, verifique o[documentação](https://reference.groupdocs.com/Watermark/net/) , e se você encontrar algum problema, o[Fórum de suporte](https://forum.groupdocs.com/c/watermark/19) é um excelente lugar para assistência. 
+ Para mais detalhes, verifique o[documentação](https://tutorials.groupdocs.com/Watermark/net/) , e se você encontrar algum problema, o[Fórum de suporte](https://forum.groupdocs.com/c/watermark/19) é um excelente lugar para assistência. 
 ## Perguntas frequentes
 ### Posso usar fontes personalizadas para marcas d’água?
 Sim, Groupdocs suporta fontes personalizadas. Você pode especificar qualquer fonte instalada em seu sistema.

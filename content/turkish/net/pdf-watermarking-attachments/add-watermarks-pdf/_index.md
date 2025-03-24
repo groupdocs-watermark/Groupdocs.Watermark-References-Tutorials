@@ -3,7 +3,6 @@ title: PDF'ye Filigran Ekleme
 linktitle: PDF'ye Filigran Ekleme
 second_title: GroupDocs.Watermark .NET API'si
 description: Kapsamlı adım adım kılavuzumuzla GroupDocs.Watermark for .NET'i kullanarak PDF'lerinize metin ve resim filigranlarını nasıl ekleyeceğinizi öğrenin.
-type: docs
 weight: 14
 url: /tr/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---

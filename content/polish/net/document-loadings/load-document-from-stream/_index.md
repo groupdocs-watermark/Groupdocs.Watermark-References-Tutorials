@@ -3,7 +3,6 @@ title: Załaduj dokument ze strumienia
 linktitle: Załaduj dokument ze strumienia
 second_title: GroupDocs.Watermark API .NET
 description: Z tego przewodnika dowiesz się, jak dodawać znaki wodne do dokumentów przy użyciu programu GroupDocs.Watermark dla platformy .NET. Idealny dla programistów chcących zwiększyć bezpieczeństwo dokumentów.
-type: docs
 weight: 11
 url: /pl/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Ten kod zapisuje dokument z nowo dodanym znakiem wodnym`outputFileName` ścieżkę zdefiniowaną wcześniej.
 
 ## Wniosek
-Gratulacje! Pomyślnie dodałeś znak wodny do swojego dokumentu za pomocą GroupDocs.Watermark dla .NET. Ta biblioteka niezwykle ułatwia zarządzanie znakami wodnymi w różnych formatach dokumentów. Niezależnie od tego, czy chcesz dodać tekst, obrazy czy inne typy znaków wodnych, GroupDocs.Watermark ma potrzebne narzędzia. Nie zapomnij sprawdzić[dokumentacja](https://reference.groupdocs.com/Watermark/net/) aby uzyskać bardziej zaawansowane funkcje i opcje dostosowywania.
+Gratulacje! Pomyślnie dodałeś znak wodny do swojego dokumentu za pomocą GroupDocs.Watermark dla .NET. Ta biblioteka niezwykle ułatwia zarządzanie znakami wodnymi w różnych formatach dokumentów. Niezależnie od tego, czy chcesz dodać tekst, obrazy czy inne typy znaków wodnych, GroupDocs.Watermark ma potrzebne narzędzia. Nie zapomnij sprawdzić[dokumentacja](https://tutorials.groupdocs.com/Watermark/net/) aby uzyskać bardziej zaawansowane funkcje i opcje dostosowywania.
 ## Często zadawane pytania
 ### Jakie typy znaków wodnych mogę dodać za pomocą GroupDocs.Watermark dla .NET?
 Możesz dodawać tekstowe znaki wodne, graficzne znaki wodne, a nawet złożone kształty i logo. Biblioteka obsługuje szeroką gamę opcji dostosowywania.

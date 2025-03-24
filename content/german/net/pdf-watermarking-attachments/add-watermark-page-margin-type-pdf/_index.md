@@ -3,7 +3,6 @@ title: Fügen Sie Wasserzeichen mit Seitenrandtyp in PDF hinzu
 linktitle: Fügen Sie Wasserzeichen mit Seitenrandtyp in PDF hinzu
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit Groupdocs für .NET Wasserzeichen mit Seitenrandtyp in PDF hinzufügen. Sichern Sie Ihre Dokumente mühelos.
-type: docs
 weight: 21
 url: /de/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---

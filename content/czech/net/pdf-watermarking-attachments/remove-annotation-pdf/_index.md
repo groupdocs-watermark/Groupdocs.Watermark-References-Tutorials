@@ -3,7 +3,6 @@ title: Odebrat anotaci z PDF
 linktitle: Odebrat anotaci z PDF
 second_title: GroupDocs.Watermark .NET API
 description: Přečtěte si, jak odstranit anotace z PDF pomocí GroupDocs.Watermark for .NET. Vylepšete čitelnost dokumentu bez námahy.
-type: docs
 weight: 29
 url: /cs/net/pdf-watermarking-attachments/remove-annotation-pdf/
 ---
@@ -43,7 +42,7 @@ Chcete-li odstranit anotaci podle jejího indexu:
 // Odebrat anotaci podle indexu
 pdfContent.Pages[0].Annotations.RemoveAt(0);
 ```
-### Odebrat anotaci podle reference
+### Odebrat anotaci podle tutorials
 Chcete-li odstranit anotaci odkazem:
 ```csharp
 // Odebrat anotaci odkazem

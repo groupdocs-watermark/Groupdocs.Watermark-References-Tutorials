@@ -3,7 +3,6 @@ title: Thay thế văn bản bằng định dạng cho chú thích trong PDF
 linktitle: Thay thế văn bản bằng định dạng cho chú thích trong PDF
 second_title: API GroupDocs.Watermark .NET
 description: Tăng cường bảo mật tài liệu với GroupDocs cho .NET. Tìm hiểu cách thay thế văn bản bằng định dạng cho chú thích trong tệp PDF một cách dễ dàng.
-type: docs
 weight: 41
 url: /vi/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---

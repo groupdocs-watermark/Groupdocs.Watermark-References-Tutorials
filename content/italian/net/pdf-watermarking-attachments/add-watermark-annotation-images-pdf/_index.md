@@ -3,7 +3,6 @@ title: Aggiungi filigrana alle immagini di annotazione nel PDF
 linktitle: Aggiungi filigrana alle immagini di annotazione nel PDF
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come proteggere i tuoi documenti PDF aggiungendo filigrane alle immagini delle annotazioni utilizzando Groupdocs.Watermark per .NET.
-type: docs
 weight: 17
 url: /it/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---

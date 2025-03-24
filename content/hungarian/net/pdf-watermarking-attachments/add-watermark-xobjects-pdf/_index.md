@@ -3,7 +3,6 @@ title: Vízjel hozzáadása az XObjectshez PDF-ben
 linktitle: Vízjel hozzáadása az XObjectshez PDF-ben
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat vízjeleket PDF-ben található XObjects-hez a Groupdocs.Watermark for .NET segítségével. Kövesse lépésről lépésre útmutatónkat az egyszerű megvalósítás érdekében.
-type: docs
 weight: 20
 url: /hu/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ Végül mentse a vízjellel ellátott PDF-fájlt a megadott kimeneti fájlba.
 ```
 És megvan! A PDF-fájl most már minden XObjectjén vízjelet tartalmaz.
 ## Következtetés
- Vízjelek hozzáadása a PDF-dokumentumokhoz a Groupdocs Watermark for .NET segítségével egy egyszerű folyamat, amely további biztonságot nyújt. Az oktatóanyagban ismertetett lépések követésével biztosíthatja, hogy dokumentumai védve legyenek a jogosulatlan használat ellen. Ne feledje, mindig hivatkozhat a[dokumentáció](https://reference.groupdocs.com/Watermark/net/) részletesebb információkért és speciális funkciókért.
+ Vízjelek hozzáadása a PDF-dokumentumokhoz a Groupdocs Watermark for .NET segítségével egy egyszerű folyamat, amely további biztonságot nyújt. Az oktatóanyagban ismertetett lépések követésével biztosíthatja, hogy dokumentumai védve legyenek a jogosulatlan használat ellen. Ne feledje, mindig hivatkozhat a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) részletesebb információkért és speciális funkciókért.
 ## GYIK
 ### Használhatok képet vízjelként szöveg helyett?
 Igen, a Groupdocs.Watermark for .NET támogatja a szöveges és képi vízjeleket is.

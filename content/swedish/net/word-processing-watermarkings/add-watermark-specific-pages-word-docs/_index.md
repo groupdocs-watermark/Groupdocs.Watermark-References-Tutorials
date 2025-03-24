@@ -3,7 +3,6 @@ title: Lägg till vattenstämpel på specifika sidor i Word Docs
 linktitle: Lägg till vattenstämpel på specifika sidor i Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar på specifika sidor i Word-dokument utan ansträngning med hjälp av Groupdocs för .NET. Förbättra dokumentsäkerhet och varumärke.
-type: docs
 weight: 18
 url: /sv/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---

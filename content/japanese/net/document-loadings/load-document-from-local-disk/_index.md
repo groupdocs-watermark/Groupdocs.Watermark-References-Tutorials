@@ -3,7 +3,6 @@ title: ローカルディスクからドキュメントをロード
 linktitle: ローカルディスクからドキュメントをロード
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET を使用してドキュメントを保護および管理します。ウォーターマークをシームレスに追加するには、詳細なガイドに従ってください。
-type: docs
 weight: 10
 url: /ja/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## 結論
 Groupdocs for .NET を使用してドキュメントにウォーターマークを追加するのは簡単かつ効率的です。このガイドでは、環境のセットアップから透かし入りのドキュメントの保存までのプロセス全体を説明します。この強力なツールを使用すると、ドキュメントが保護され、知的財産が安全であることを確認できます。 
-詳細については、[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/)問題が発生した場合は、[サポートフォーラム](https://forum.groupdocs.com/c/watermark/19)助けを求めるのに最適な場所です。 
+詳細については、[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/)問題が発生した場合は、[サポートフォーラム](https://forum.groupdocs.com/c/watermark/19)助けを求めるのに最適な場所です。 
 ## よくある質問
 ### 透かしにカスタム フォントを使用できますか?
 はい、Groupdocs はカスタム フォントをサポートしています。システムにインストールされている任意のフォントを指定できます。

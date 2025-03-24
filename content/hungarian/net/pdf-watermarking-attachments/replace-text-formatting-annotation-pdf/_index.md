@@ -3,7 +3,6 @@ title: Cserélje ki a szöveget a formázásra a megjegyzésekhez PDF-ben
 linktitle: Cserélje ki a szöveget a formázásra a megjegyzésekhez PDF-ben
 second_title: GroupDocs.Watermark .NET API
 description: Növelje a dokumentumok biztonságát a GroupDocs Watermark for .NET segítségével. Tanulja meg, hogyan cserélheti le könnyedén szöveget formázással a megjegyzésekhez a PDF-fájlokban.
-type: docs
 weight: 41
 url: /hu/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---

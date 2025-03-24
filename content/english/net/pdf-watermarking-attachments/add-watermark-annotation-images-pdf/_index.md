@@ -3,7 +3,6 @@ title: Add Watermark to Annotation Images in PDF
 linktitle: Add Watermark to Annotation Images in PDF
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to protect your PDF documents by adding watermarks to annotation images using Groupdocs.Watermark for .NET.
-type: docs
 weight: 17
 url: /net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---
@@ -75,7 +74,7 @@ Yes, you can add multiple watermarks to the same PDF document using Groupdocs.Wa
 ### Does Groupdocs.Watermark support other document formats besides PDF?
 Yes, Groupdocs.Watermark supports various document formats, including Word, Excel, PowerPoint, and more.
 ### Is it possible to customize the appearance of the watermark?
-Absolutely, you can customize the text, font, color, size, and position of the watermark according to your preferences.
+Absolutely, you can customize the text, font, color, size, and position of the watermark according to your ptutorialss.
 ### Can I remove watermarks from PDF documents using Groupdocs.Watermark?
 Yes, Groupdocs.Watermark provides functionality to remove watermarks from PDF documents effortlessly.
 ### Is there any free trial available for Groupdocs.Watermark for .NET?

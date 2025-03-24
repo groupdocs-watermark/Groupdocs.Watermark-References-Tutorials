@@ -3,7 +3,6 @@ title: Voeg een watermerk toe aan sectie in Word-documenten
 linktitle: Voeg een watermerk toe aan sectie in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Voeg eenvoudig watermerken toe aan Word-documenten met GroupDocs.Watermark voor .NET. Bescherm uw inhoud met deze eenvoudige handleiding.
-type: docs
 weight: 15
 url: /nl/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

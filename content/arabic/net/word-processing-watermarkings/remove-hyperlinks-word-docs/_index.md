@@ -3,7 +3,6 @@ title: إزالة الارتباطات التشعبية في مستندات Word
 linktitle: إزالة الارتباطات التشعبية في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة الارتباطات التشعبية من مستندات Word باستخدام GroupDocs.Watermark لـ .NET. تعزيز أمان المستندات دون عناء.
-type: docs
 weight: 29
 url: /ar/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---

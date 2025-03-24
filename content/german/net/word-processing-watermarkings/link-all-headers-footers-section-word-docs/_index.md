@@ -3,7 +3,6 @@ title: Verknüpfen Sie alle Kopf- und Fußzeilen in Abschnitten in Word-Dokument
 linktitle: Verknüpfen Sie alle Kopf- und Fußzeilen in Abschnitten in Word-Dokumenten
 second_title: GroupDocs.Watermark .NET-API
 description: Verknüpfen Sie mühelos Kopf- und Fußzeilen in Word-Dokumenten mit GroupDocs.Watermark für .NET. Sorgen Sie mühelos für Konsistenz und Professionalität.
-type: docs
 weight: 25
 url: /de/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Word ドキュメントで特定のテキスト書式設定を持つ図�
 linktitle: Word ドキュメントで特定のテキスト書式設定を持つ図形を削除する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して Word 文書内の特定のテキスト書式を持つ図形を削除する方法を学びます。ウォーターマークを効率的に操作するには、ガイドに従ってください。
-type: docs
 weight: 31
 url: /ja/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Agregar marca de agua con efectos de texto en documentos de Word
 linktitle: Agregar marca de agua con efectos de texto en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a agregar marcas de agua personalizadas con efectos de texto a documentos de Word usando GroupDocs.Watermark para .NET. Documente la seguridad y el atractivo visual sin esfuerzo.
-type: docs
 weight: 21
 url: /es/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---

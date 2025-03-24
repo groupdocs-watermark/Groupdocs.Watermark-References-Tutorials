@@ -3,7 +3,6 @@ title: 新增影像浮水印
 linktitle: 新增影像浮水印
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 輕鬆將影像浮水印新增至文件。輕鬆保護您的智慧財產權。
-type: docs
 weight: 10
 url: /zh-hant/net/watermarking-basics/add-image-watermark/
 ---

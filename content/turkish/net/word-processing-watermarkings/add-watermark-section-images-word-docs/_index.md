@@ -3,7 +3,6 @@ title: Word Dokümanlarındaki Bölüm Resimlerine Filigran Ekleme
 linktitle: Word Dokümanlarındaki Bölüm Resimlerine Filigran Ekleme
 second_title: GroupDocs.Watermark .NET API'si
 description: .NET için Filigran'ı kullanarak Word belgelerindeki görüntülere nasıl filigran ekleyeceğinizi öğrenin. Güvenli ve profesyonel belge koruması için kılavuzumuzu takip edin.
-type: docs
 weight: 16
 url: /tr/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## Çözüm
 Word belgelerinizdeki resimlere filigran eklemek, içeriğinizi korumanın güçlü bir yoludur. Groupdocs.Watermark for .NET ile bu süreç basit ve etkilidir. Belgelerinizin güvenli ve iyi korunduğundan emin olmak için bu eğitimde özetlenen adımları izleyin.
- Daha ayrıntılı belgeler için şu adresi ziyaret edin:[dokümantasyon](https://reference.groupdocs.com/Watermark/net/) . Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, şuraya göz atın:[destek Forumu](https://forum.groupdocs.com/c/watermark/19).
+ Daha ayrıntılı belgeler için şu adresi ziyaret edin:[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/) . Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, şuraya göz atın:[destek Forumu](https://forum.groupdocs.com/c/watermark/19).
 ## SSS'ler
 ### Filigran metnini özelleştirebilir miyim?
 Evet, filigran metnini, yazı tipini, boyutunu, hizalamasını ve dönüşünü ihtiyaçlarınıza göre özelleştirebilirsiniz.
 ### Birden fazla bölüme filigran eklemek mümkün mü?
 Evet, her bölümde döngü yapabilir ve filigranı tüm bölümlerdeki resimlere uygulayabilirsiniz.
 ### Bu yöntemi diğer belge formatları için kullanabilir miyim?
- Groupdocs Filigran çeşitli belge formatlarını destekler. Kontrol edin[dokümantasyon](https://reference.groupdocs.com/Watermark/net/) daha fazla ayrıntı için.
+ Groupdocs Filigran çeşitli belge formatlarını destekler. Kontrol edin[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/) daha fazla ayrıntı için.
 ### Geçici lisansı nasıl alabilirim?
  Geçici lisans alabilirsiniz[Burada](https://purchase.groupdocs.com/temporary-license/).
 ### Groupdocs.Watermark'ı kullanırken sorunlarla karşılaşırsam ne olur?

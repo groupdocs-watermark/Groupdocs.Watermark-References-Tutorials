@@ -3,7 +3,6 @@ title: Ganti Teks dengan Pemformatan untuk Anotasi dalam PDF
 linktitle: Ganti Teks dengan Pemformatan untuk Anotasi dalam PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Tingkatkan keamanan dokumen dengan GroupDocs untuk .NET. Pelajari cara mengganti teks dengan pemformatan untuk anotasi dalam file PDF dengan mudah.
-type: docs
 weight: 41
 url: /id/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---

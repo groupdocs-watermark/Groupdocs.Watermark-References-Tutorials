@@ -3,7 +3,6 @@ title: Ersetzen Sie Text für eine bestimmte Form in Word-Dokumenten
 linktitle: Ersetzen Sie Text für eine bestimmte Form in Word-Dokumenten
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Text für bestimmte Formen in Word-Dokumenten ersetzen. Folgen Sie unserer Schritt-für-Schritt-Anleitung.
-type: docs
 weight: 35
 url: /de/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
 ---

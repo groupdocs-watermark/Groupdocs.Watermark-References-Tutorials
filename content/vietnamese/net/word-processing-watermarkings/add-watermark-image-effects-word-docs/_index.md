@@ -3,7 +3,6 @@ title: Thêm Watermark kèm hiệu ứng hình ảnh trong Word Docs
 linktitle: Thêm Watermark kèm hiệu ứng hình ảnh trong Word Docs
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ kèm hiệu ứng hình ảnh vào tài liệu Word của bạn bằng GroupDocs.Watermark cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để có kết quả tuyệt vời.
-type: docs
 weight: 19
 url: /vi/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---

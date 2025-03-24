@@ -3,7 +3,6 @@ title: Добавить водяной знак артефакта в PDF
 linktitle: Добавить водяной знак артефакта в PDF
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как легко добавлять артефактные водяные знаки в файлы PDF с помощью Groupdocs.Watermark для .NET. Защитите свои документы с легкостью.
-type: docs
 weight: 11
 url: /ru/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---

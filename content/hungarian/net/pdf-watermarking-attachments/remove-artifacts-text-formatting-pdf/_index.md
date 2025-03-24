@@ -3,7 +3,6 @@ title: Távolítsa el a műtermékeket meghatározott szövegformázással a PDF
 linktitle: Távolítsa el a műtermékeket meghatározott szövegformázással a PDF-ben
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan távolíthat el műtermékeket meghatározott szövegformázással PDF-ben a GroupDocs .NET-hez való vízjel használatával. Kövesse lépésenkénti útmutatónkat.
-type: docs
 weight: 32
 url: /hu/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---

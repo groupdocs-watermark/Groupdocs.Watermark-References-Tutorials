@@ -3,7 +3,6 @@ title: Stel een andere koptekst/voettekst voor de eerste pagina in Word-document
 linktitle: Stel een andere koptekst/voettekst voor de eerste pagina in Word-documenten in
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u verschillende kop- en voetteksten instelt op de eerste pagina van Word-documenten met GroupDocs.Watermark voor .NET.
-type: docs
 weight: 36
 url: /nl/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Ja, gebruikers kunnen gebruikmaken van een gratis proefversie van GroupDocs.Wate
 ### Kan ik een tijdelijke licentie kopen voor kortdurend gebruik?
  Ja, tijdelijke licenties voor GroupDocs Watermark voor .NET kunnen worden verkregen via de[Pagina voor tijdelijke licentieaankoop](https://purchase.groupdocs.com/temporary-license/).
 ### Waar kan ik uitgebreide documentatie vinden voor GroupDocs.Watermark voor .NET?
- Gedetailleerde documentatie voor GroupDocs.Watermark voor .NET is beschikbaar op de[Referentiepagina](https://reference.groupdocs.com/Watermark/net/).
+ Gedetailleerde documentatie voor GroupDocs.Watermark voor .NET is beschikbaar op de[Referentiepagina](https://tutorials.groupdocs.com/Watermark/net/).

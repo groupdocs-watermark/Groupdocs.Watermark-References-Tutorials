@@ -3,7 +3,6 @@ title: Bildwasserzeichen hinzufügen
 linktitle: Bildwasserzeichen hinzufügen
 second_title: GroupDocs.Watermark .NET-API
 description: Fügen Sie mit GroupDocs.Watermark für .NET mühelos Bildwasserzeichen zu Ihren Dokumenten hinzu. Schützen Sie Ihr geistiges Eigentum ganz einfach.
-type: docs
 weight: 10
 url: /de/net/watermarking-basics/add-image-watermark/
 ---

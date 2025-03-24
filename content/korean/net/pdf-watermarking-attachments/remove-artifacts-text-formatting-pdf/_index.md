@@ -3,7 +3,6 @@ title: PDF에서 특정 텍스트 형식의 아티팩트 제거
 linktitle: PDF에서 특정 텍스트 형식의 아티팩트 제거
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 Watermark를 사용하여 PDF에서 특정 텍스트 형식의 아티팩트를 제거하는 방법을 알아보세요. 단계별 가이드를 따르세요.
-type: docs
 weight: 32
 url: /ko/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---

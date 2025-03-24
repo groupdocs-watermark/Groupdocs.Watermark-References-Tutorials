@@ -3,7 +3,6 @@ title: Dapatkan Info Dokumen dari Disk Lokal
 linktitle: Dapatkan Info Dokumen dari Disk Lokal
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan, menghapus, dan mengekstrak tanda air dalam dokumen menggunakan GroupDocs untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
-type: docs
 weight: 11
 url: /id/net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /id/net/document-manipulation/get-document-info-local-disk/
 Selamat datang di panduan utama tentang penggunaan GroupDocs.Watermark untuk .NET! Baik Anda seorang pengembang berpengalaman atau baru memulai, artikel ini akan memandu Anda memahami pentingnya memberi tanda air pada dokumen Anda dengan alat canggih ini. Pada akhirnya, Anda akan menjadi ahli dalam menyematkan tanda air di dokumen Anda, memastikan dokumen tersebut dilindungi dan diberi merek sesuai spesifikasi Anda.
 ## Prasyarat
 Sebelum mempelajari panduan langkah demi langkah, ada beberapa prasyarat yang harus Anda penuhi:
-1.  .NET Framework: Pastikan Anda telah menginstal .NET Framework di sistem Anda. GroupDocs.Watermark untuk .NET kompatibel dengan berbagai versi .NET Framework, jadi periksalah[dokumentasi](https://reference.groupdocs.com/Watermark/net/) untuk detail kompatibilitas.
+1.  .NET Framework: Pastikan Anda telah menginstal .NET Framework di sistem Anda. GroupDocs.Watermark untuk .NET kompatibel dengan berbagai versi .NET Framework, jadi periksalah[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/) untuk detail kompatibilitas.
 2.  GroupDocs.Watermark untuk .NET Library: Unduh dan instal versi terbaru dari[Unduh Halaman](https://releases.groupdocs.com/Watermark/net/).
 3. Lingkungan Pengembangan: Anda harus menyiapkan lingkungan pengembangan. Visual Studio adalah pilihan populer untuk pengembangan .NET.
 4. Pengetahuan Dasar C#: Memahami dasar-dasar pemrograman C# akan membantu Anda mengikuti contoh.
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
  Langkah ini melibatkan penggunaan`GetWatermarks`metode untuk mengambil semua tanda air dalam dokumen. Anda kemudian dapat mengulangi daftar tanda air dan memeriksa propertinya atau melakukan tindakan tambahan sesuai kebutuhan.
 ## Kesimpulan
- Selamat! Anda sekarang telah mempelajari cara menggunakan GroupDocs.Watermark untuk .NET untuk menambah, menghapus, dan mengekstrak tanda air dari dokumen Anda. Dengan keterampilan ini, Anda dapat melindungi dan memberi merek pada dokumen Anda secara efektif. Ingat, itu[dokumentasi](https://reference.groupdocs.com/Watermark/net/) selalu ada jika Anda memerlukan informasi lebih detail atau fungsionalitas tingkat lanjut.
+ Selamat! Anda sekarang telah mempelajari cara menggunakan GroupDocs.Watermark untuk .NET untuk menambah, menghapus, dan mengekstrak tanda air dari dokumen Anda. Dengan keterampilan ini, Anda dapat melindungi dan memberi merek pada dokumen Anda secara efektif. Ingat, itu[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/) selalu ada jika Anda memerlukan informasi lebih detail atau fungsionalitas tingkat lanjut.
 ## FAQ
 ### Bisakah saya menggunakan GroupDocs.Watermark untuk .NET dengan versi .NET apa pun?
- Ya, GroupDocs.Watermark untuk .NET kompatibel dengan berbagai versi .NET Framework. Periksalah[dokumentasi](https://reference.groupdocs.com/Watermark/net/) untuk spesifik.
+ Ya, GroupDocs.Watermark untuk .NET kompatibel dengan berbagai versi .NET Framework. Periksalah[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/) untuk spesifik.
 ### Di mana saya dapat mengunduh GroupDocs.Watermark untuk .NET?
  Anda dapat mengunduh versi terbaru dari[Unduh Halaman](https://releases.groupdocs.com/Watermark/net/).
 ### Bagaimana cara mendapatkan lisensi sementara?

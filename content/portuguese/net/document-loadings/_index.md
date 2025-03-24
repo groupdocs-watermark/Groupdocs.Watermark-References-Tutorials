@@ -3,7 +3,6 @@ title: Carregamento de documentos
 linktitle: Carregamento de documentos
 second_title: API GroupDocs.Watermark .NET
 description: Descubra os tutoriais do GroupDocs.Watermark for .NET para carregar e colocar marcas d’água em documentos, garantindo a segurança dos documentos e a marca com guias passo a passo.
-type: docs
 weight: 22
 url: /pt/net/document-loadings/
 ---

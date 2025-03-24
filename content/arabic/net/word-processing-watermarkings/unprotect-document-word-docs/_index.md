@@ -3,7 +3,6 @@ title: إلغاء حماية المستند في مستندات Word
 linktitle: إلغاء حماية المستند في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إلغاء حماية مستندات Word بسهولة باستخدام GroupDocs.Watermark لـ .NET. اتبع دليلنا خطوة بخطوة.
-type: docs
 weight: 38
 url: /ar/net/word-processing-watermarkings/unprotect-document-word-docs/
 ---

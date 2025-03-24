@@ -3,7 +3,6 @@ title: Aggiungi filigrana con margine di pagina nel PDF
 linktitle: Aggiungi filigrana con margine di pagina nel PDF
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere filigrane con il tipo di margine della pagina in PDF utilizzando Groupdocs per .NET. Proteggi i tuoi documenti senza sforzo.
-type: docs
 weight: 21
 url: /it/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---

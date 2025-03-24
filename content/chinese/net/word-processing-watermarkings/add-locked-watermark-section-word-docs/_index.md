@@ -3,7 +3,6 @@ title: 将锁定水印添加到 Word 文档中的部分
 linktitle: 将锁定水印添加到 Word 文档中的部分
 second_title: GroupDocs.Watermark .NET API
 description: 通过这份全面的分步指南，了解如何使用 Groupdocs for .NET 将锁定水印添加到 Word 文档中的特定部分。
-type: docs
 weight: 13
 url: /zh/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
@@ -70,4 +69,4 @@ Groupdocs.Watermark for .NET 是一个功能强大的库，允许开发人员向
 ### 我可以使用 Groupdocs.Watermark 添加哪些类型的水印？
 Groupdocs.Watermark 支持各种类型的水印，包括文本、图像和形状水印，为每种类型提供广泛的自定义选项。
 ### 在哪里可以找到有关 Groupdocs.Watermark for .NET 的更多信息？
-欲了解更多信息，您可以访问[文档](https://reference.groupdocs.com/Watermark/net/)和[支持论坛](https://forum.groupdocs.com/c/watermark/19).
+欲了解更多信息，您可以访问[文档](https://tutorials.groupdocs.com/Watermark/net/)和[支持论坛](https://forum.groupdocs.com/c/watermark/19).

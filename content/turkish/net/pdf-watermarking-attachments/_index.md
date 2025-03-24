@@ -3,7 +3,6 @@ title: PDF Filigranı ve Eki
 linktitle: PDF Filigranı ve Eki
 second_title: GroupDocs.Watermark .NET API'si
 description: PDF filigranı ve ekleriyle ilgili GroupDocs.Watermark for .NET eğitimlerini keşfedin. PDF'lerinizin güvenliğini ve marka bilincini geliştirmek için adım adım yöntemleri öğrenin.
-type: docs
 weight: 25
 url: /tr/net/pdf-watermarking-attachments/
 ---

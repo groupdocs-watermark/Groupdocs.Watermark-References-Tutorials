@@ -3,7 +3,6 @@ title: Załaduj dokument Word chroniony hasłem
 linktitle: Załaduj dokument Word chroniony hasłem
 second_title: GroupDocs.Watermark API .NET
 description: Z łatwością dodawaj znaki wodne do dokumentów Word chronionych hasłem, korzystając z GroupDocs.Watermark dla .NET i korzystając z naszego obszernego przewodnika krok po kroku.
-type: docs
 weight: 14
 url: /pl/net/document-loadings/load-password-protected-word-document/
 ---

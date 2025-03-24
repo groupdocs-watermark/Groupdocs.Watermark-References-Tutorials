@@ -3,7 +3,6 @@ title: 동일한 파일 또는 스트림에 문서 저장
 linktitle: 동일한 파일 또는 스트림에 문서 저장
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 Groupdocs.Watermark를 사용하여 문서에 워터마크를 추가하는 방법을 알아보세요. 이 가이드는 문서 보호 및 무결성을 보장하기 위한 지침을 제공합니다.
-type: docs
 weight: 10
 url: /ko/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ watermarker.Add(watermark);
 watermarker.Save();
 ```
 ## 결론
-Groupdocs for .NET을 사용하여 문서에 워터마크를 추가하는 것은 간단하고 효율적입니다. 위에 설명된 단계를 따르면 문서를 보호하고 손쉽게 무결성을 유지할 수 있습니다. 자세한 내용은 다음을 참조하세요.[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/).
+Groupdocs for .NET을 사용하여 문서에 워터마크를 추가하는 것은 간단하고 효율적입니다. 위에 설명된 단계를 따르면 문서를 보호하고 손쉽게 무결성을 유지할 수 있습니다. 자세한 내용은 다음을 참조하세요.[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### 텍스트 대신 이미지를 워터마크로 사용할 수 있나요?
 예, Groupdocs.Watermark를 사용하면 이미지, 모양 및 텍스트를 워터마크로 사용할 수 있습니다.

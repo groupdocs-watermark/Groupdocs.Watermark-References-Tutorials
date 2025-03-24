@@ -3,7 +3,6 @@ title: Filigrana di elaborazione testi
 linktitle: Filigrana di elaborazione testi
 second_title: API GroupDocs.Watermark .NET
 description: Scopri i tutorial essenziali di GroupDocs.Watermark per .NET per aggiungere e gestire filigrane nei documenti Word. Migliora la sicurezza e il branding dei tuoi documenti senza sforzo.
-type: docs
 weight: 26
 url: /it/net/word-processing-watermarkings/
 ---

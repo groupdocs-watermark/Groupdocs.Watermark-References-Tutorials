@@ -3,7 +3,6 @@ title: Ta bort vattenstämpel från avsnitt i Word Docs
 linktitle: Ta bort vattenstämpel från avsnitt i Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du tar bort vattenstämplar från specifika avsnitt i Word-dokument med GroupDocs.Watermark för .NET. Omfattande handledning finns här.
-type: docs
 weight: 32
 url: /sv/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---

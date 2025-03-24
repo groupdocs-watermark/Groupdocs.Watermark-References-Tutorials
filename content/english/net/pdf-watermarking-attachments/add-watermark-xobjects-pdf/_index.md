@@ -3,7 +3,6 @@ title: Add Watermark to XObjects in PDF
 linktitle: Add Watermark to XObjects in PDF
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add watermarks to XObjects in PDF using Groupdocs.Watermark for .NET. Follow our step-by-step guide for easy implementation.
-type: docs
 weight: 20
 url: /net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ Finally, save the watermarked PDF to the specified output file.
 ```
 And there you have it! Your PDF now contains watermarks on all its XObjects.
 ## Conclusion
-Adding watermarks to your PDF documents using Groupdocs.Watermark for .NET is a straightforward process that provides an additional layer of security. By following the steps outlined in this tutorial, you can ensure that your documents are protected from unauthorized use. Remember, you can always refer to the [documentation](https://reference.groupdocs.com/Watermark/net/) for more detailed information and advanced features.
+Adding watermarks to your PDF documents using Groupdocs.Watermark for .NET is a straightforward process that provides an additional layer of security. By following the steps outlined in this tutorial, you can ensure that your documents are protected from unauthorized use. Remember, you can always refer to the [documentation](https://tutorials.groupdocs.com/Watermark/net/) for more detailed information and advanced features.
 ## FAQ's
 ### Can I use an image as a watermark instead of text?
 Yes, Groupdocs.Watermark for .NET supports both text and image watermarks.

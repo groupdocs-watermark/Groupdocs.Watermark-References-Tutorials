@@ -3,7 +3,6 @@ title: Távolítsa el a műterméket a PDF-ből
 linktitle: Távolítsa el a műterméket a PDF-ből
 second_title: GroupDocs.Watermark .NET API
 description: Tanulja meg, hogyan távolíthat el könnyedén műtermékeket PDF-dokumentumokból a GroupDocs.Watermark for .NET segítségével. Lépésről lépésre sajátítsa el a folyamatot átfogó oktatóanyagunk segítségével.
-type: docs
 weight: 31
 url: /hu/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
@@ -66,4 +65,4 @@ Igen, a GroupDocs.Watermark for .NET különféle dokumentumformátumokat támog
 ### Vásárolhatok ideiglenes licencet a GroupDocs.Watermark for .NET számára?
  Igen, ideiglenes engedélyt szerezhet a rendelkezésre állóból[forrás](https://purchase.groupdocs.com/temporary-license/).
 ### Vannak átfogó dokumentációs források a GroupDocs.Watermark for .NET számára?
- Igen, tekintheti meg a rendelkezésre álló részletes dokumentációt[itt](https://reference.groupdocs.com/Watermark/net/) alapos útmutatásért és betekintésért.
+ Igen, tekintheti meg a rendelkezésre álló részletes dokumentációt[itt](https://tutorials.groupdocs.com/Watermark/net/) alapos útmutatásért és betekintésért.

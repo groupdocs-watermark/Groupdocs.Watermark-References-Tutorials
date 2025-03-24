@@ -3,7 +3,6 @@ title: Thêm hình mờ vào hình ảnh trong PDF
 linktitle: Thêm hình mờ vào hình ảnh trong PDF
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ vào hình ảnh trong tài liệu PDF bằng GroupDocs.Watermark cho .NET với hướng dẫn chi tiết từng bước của chúng tôi. Bảo mật các tệp PDF của bạn một cách dễ dàng.
-type: docs
 weight: 19
 url: /vi/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ Tuyệt đối! Bạn có thể lặp qua từng trang trong tệp PDF và áp d
 ### Tôi có cần giấy phép để sử dụng GroupDocs.Watermark cho .NET không?
  Có, cần phải có giấy phép. Bạn có thể có được một[giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/) cho mục đích đánh giá.
 ### Tôi có thể tìm thêm tài liệu về GroupDocs.Watermark cho .NET ở đâu?
- Bạn có thể tìm thấy tài liệu đầy đủ về[Trang tài liệu GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ Bạn có thể tìm thấy tài liệu đầy đủ về[Trang tài liệu GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

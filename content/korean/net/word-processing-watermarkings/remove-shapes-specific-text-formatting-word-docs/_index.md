@@ -3,7 +3,6 @@ title: Word Docs에서 특정 텍스트 서식이 있는 도형 제거
 linktitle: Word Docs에서 특정 텍스트 서식이 있는 도형 제거
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 특정 텍스트 서식이 있는 도형을 제거하는 방법을 알아보세요. 워터마크를 효율적으로 조작하려면 가이드를 따르세요.
-type: docs
 weight: 31
 url: /ko/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---

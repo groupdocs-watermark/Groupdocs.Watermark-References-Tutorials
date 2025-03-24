@@ -3,7 +3,6 @@ title: वर्ड डॉक्स में विशिष्ट पेजो
 linktitle: वर्ड डॉक्स में विशिष्ट पेजों पर वॉटरमार्क जोड़ें
 second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए वॉटरमार्क का उपयोग करके आसानी से Word दस्तावेज़ों में विशिष्ट पृष्ठों पर वॉटरमार्क जोड़ने का तरीका जानें। दस्तावेज़ सुरक्षा और ब्रांडिंग बढ़ाएँ।
-type: docs
 weight: 18
 url: /hi/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Bild Vattenmärkning
 linktitle: Bild Vattenmärkning
 second_title: GroupDocs.Watermark .NET API
 description: Utforska GroupDocs.Watermark för .NET tutorials om att lägga till bildvattenstämplar. Lär dig steg-för-steg-metoder för att förbättra ditt dokuments säkerhet och varumärke.
-type: docs
 weight: 24
 url: /sv/net/image-watermarkings/
 ---

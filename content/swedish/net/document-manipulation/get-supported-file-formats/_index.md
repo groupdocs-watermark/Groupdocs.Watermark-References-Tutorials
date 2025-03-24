@@ -3,7 +3,6 @@ title: Skaffa filformat som stöds
 linktitle: Skaffa filformat som stöds
 second_title: GroupDocs.Watermark .NET API
 description: Lägg enkelt till vattenstämplar i dina dokument med GroupDocs.Watermark för .NET. Följ vår omfattande, steg-för-steg-guide för att skydda dina digitala tillgångar.
-type: docs
 weight: 13
 url: /sv/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ Du kan använda det medföljande kodavsnittet för att lista alla filformat som 
 ### Hur kan jag köpa en licens för GroupDocs.Watermark?
  Licenser kan köpas direkt från[köpsidan](https://purchase.groupdocs.com/buy).
 ### Finns det någon dokumentation tillgänglig för GroupDocs.Watermark?
- Ja, omfattande dokumentation finns tillgänglig[här](https://reference.groupdocs.com/Watermark/net/).
+ Ja, omfattande dokumentation finns tillgänglig[här](https://tutorials.groupdocs.com/Watermark/net/).

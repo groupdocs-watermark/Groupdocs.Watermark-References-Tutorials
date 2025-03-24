@@ -3,7 +3,6 @@ title: 從本機磁碟載入文檔
 linktitle: 從本機磁碟載入文檔
 second_title: GroupDocs.Watermark .NET API
 description: 使用 Groupdocs for .NET 保護和管理您的文件。按照我們的詳細指南無縫添加浮水印。
-type: docs
 weight: 10
 url: /zh-hant/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## 結論
 使用 Watermark for .NET 為文件添加浮水印既簡單又有效率。本指南引導您完成從設定環境到儲存帶有浮水印的文件的整個過程。借助這個強大的工具，您可以確保您的文件受到保護並確保您的智慧財產權安全。 
-欲了解更多詳情，請查看[文件](https://reference.groupdocs.com/Watermark/net/)，如果您遇到任何問題，[支援論壇](https://forum.groupdocs.com/c/watermark/19)是尋求幫助的絕佳場所。 
+欲了解更多詳情，請查看[文件](https://tutorials.groupdocs.com/Watermark/net/)，如果您遇到任何問題，[支援論壇](https://forum.groupdocs.com/c/watermark/19)是尋求幫助的絕佳場所。 
 ## 常見問題解答
 ### 我可以使用自訂字體作為浮水印嗎？
 是的，Groupdocs 支援自訂字體。您可以指定係統上安裝的任何字型。

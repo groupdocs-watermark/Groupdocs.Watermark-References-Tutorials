@@ -3,7 +3,6 @@ title: أضف علامة مائية مقفلة إلى جميع الصفحات ف
 linktitle: أضف علامة مائية مقفلة إلى جميع الصفحات في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: قم بتأمين مستنداتك عن طريق إضافة علامات مائية مقفلة باستخدام Groupdocs.Watermark لـ .NET. اتبع دليلنا خطوة بخطوة لسهولة التنفيذ.
-type: docs
 weight: 11
 url: /ar/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---

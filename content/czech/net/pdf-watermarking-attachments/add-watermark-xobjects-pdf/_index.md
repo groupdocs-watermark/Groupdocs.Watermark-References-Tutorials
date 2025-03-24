@@ -3,7 +3,6 @@ title: Přidejte vodoznak do XObjects v PDF
 linktitle: Přidejte vodoznak do XObjects v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky do XObjects v PDF pomocí Groupdocs.Watermark for .NET. Pro snadnou implementaci postupujte podle našeho podrobného průvodce.
-type: docs
 weight: 20
 url: /cs/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ Nakonec uložte vodoznak PDF do určeného výstupního souboru.
 ```
 A tady to máte! Váš PDF nyní obsahuje vodoznaky na všech svých objektech XObjects.
 ## Závěr
- Přidávání vodoznaků do dokumentů PDF pomocí Groupdocs Watermark for .NET je jednoduchý proces, který poskytuje další vrstvu zabezpečení. Dodržováním kroků uvedených v tomto kurzu můžete zajistit, aby byly vaše dokumenty chráněny před neoprávněným použitím. Pamatujte si, že vždy můžete odkazovat na[dokumentace](https://reference.groupdocs.com/Watermark/net/) pro podrobnější informace a pokročilé funkce.
+ Přidávání vodoznaků do dokumentů PDF pomocí Groupdocs Watermark for .NET je jednoduchý proces, který poskytuje další vrstvu zabezpečení. Dodržováním kroků uvedených v tomto kurzu můžete zajistit, aby byly vaše dokumenty chráněny před neoprávněným použitím. Pamatujte si, že vždy můžete odkazovat na[dokumentace](https://tutorials.groupdocs.com/Watermark/net/) pro podrobnější informace a pokročilé funkce.
 ## FAQ
 ### Mohu použít obrázek jako vodoznak místo textu?
 Ano, Groupdocs.Watermark for .NET podporuje textové i obrázkové vodoznaky.

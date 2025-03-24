@@ -3,7 +3,6 @@ title: PDF のすべての添付ファイルに透かしを追加する
 linktitle: PDF のすべての添付ファイルに透かしを追加する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して PDF 添付ファイルにウォーターマークを追加する方法を学びます。カスタム透かしを使用してドキュメントを簡単に保護します。
-type: docs
 weight: 16
 url: /ja/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---

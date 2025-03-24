@@ -3,7 +3,6 @@ title: การจัดการเอกสาร
 linktitle: การจัดการเอกสาร
 second_title: GroupDocs.Watermark .NET API
 description: สำรวจ GroupDocs.Watermark สำหรับบทช่วยสอน .NET เกี่ยวกับการสร้างตัวอย่างเอกสารและการจัดการลายน้ำ ปรับปรุงความปลอดภัยและการจัดการเอกสาร
-type: docs
 weight: 21
 url: /th/net/document-manipulation/
 ---

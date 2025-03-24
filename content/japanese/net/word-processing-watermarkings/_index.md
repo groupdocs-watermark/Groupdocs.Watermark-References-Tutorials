@@ -3,7 +3,6 @@ title: ワープロの透かし入れ
 linktitle: ワープロの透かし入れ
 second_title: GroupDocs.Watermark .NET API
 description: Word 文書にウォーターマークを追加および管理するための重要な GroupDocs.Watermark for .NET チュートリアルをご覧ください。ドキュメントのセキュリティとブランディングを簡単に強化します。
-type: docs
 weight: 26
 url: /ja/net/word-processing-watermarkings/
 ---

@@ -3,7 +3,6 @@ title: Удаление гиперссылок в документах Word
 linktitle: Удаление гиперссылок в документах Word
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как удалить гиперссылки из документов Word с помощью GroupDocs.Watermark для .NET. Повысьте безопасность документов без особых усилий.
-type: docs
 weight: 29
 url: /ru/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Přidejte vodoznaky na konkrétní stránky v PDF
 linktitle: Přidejte vodoznaky na konkrétní stránky v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat textové a obrazové vodoznaky na konkrétní stránky v PDF pomocí Groupdocs. Zabezpečte své dokumenty podle našeho podrobného průvodce.
-type: docs
 weight: 15
 url: /cs/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
@@ -100,4 +99,4 @@ Absolutně. Groupdocs.Watermark for .NET poskytuje možnosti pro přidání vodo
 ### Jak získám bezplatnou zkušební verzi Groupdocs.Watermark?
  Můžete si stáhnout bezplatnou zkušební verzi z[Web Groupdocs](https://releases.groupdocs.com/).
 ### Kde najdu podrobnější dokumentaci?
- Pro podrobnější informace se můžete podívat na[dokumentace](https://reference.groupdocs.com/Watermark/net/).
+ Pro podrobnější informace se můžete podívat na[dokumentace](https://tutorials.groupdocs.com/Watermark/net/).

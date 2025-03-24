@@ -3,7 +3,6 @@ title: Távolítsa el az XObject-et a PDF-ből
 linktitle: Távolítsa el az XObject-et a PDF-ből
 second_title: GroupDocs.Watermark .NET API
 description: A GroupDocs.Watermark for .NET segítségével megtudhatja, hogyan távolíthat el egyszerűen XObjecteket PDF-fájlokból az átfogó, lépésről lépésre mutató oktatóanyagunk segítségével.
-type: docs
 weight: 35
 url: /hu/net/pdf-watermarking-attachments/remove-xobject-pdf/
 ---

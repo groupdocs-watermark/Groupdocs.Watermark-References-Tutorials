@@ -3,7 +3,6 @@ title: Thêm Hình mờ đã khóa vào Phần trong Tài liệu Word
 linktitle: Thêm Hình mờ đã khóa vào Phần trong Tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ bị khóa vào một phần cụ thể trong tài liệu Word bằng Groupdocs cho .NET với hướng dẫn từng bước toàn diện này.
-type: docs
 weight: 13
 url: /vi/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
@@ -70,4 +69,4 @@ Groupdocs.Watermark cho .NET là một thư viện mạnh mẽ cho phép các nh
 ### Tôi có thể thêm những loại hình mờ nào bằng Groupdocs.Watermark?
 Groupdocs.Watermark hỗ trợ nhiều loại hình mờ khác nhau, bao gồm hình mờ văn bản, hình ảnh và hình dạng, cung cấp các tùy chọn tùy chỉnh mở rộng cho từng loại.
 ### Tôi có thể tìm thêm thông tin về Groupdocs.Watermark cho .NET ở đâu?
- Để biết thêm thông tin, bạn có thể truy cập[tài liệu](https://reference.groupdocs.com/Watermark/net/) Và[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/watermark/19).
+ Để biết thêm thông tin, bạn có thể truy cập[tài liệu](https://tutorials.groupdocs.com/Watermark/net/) Và[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/watermark/19).

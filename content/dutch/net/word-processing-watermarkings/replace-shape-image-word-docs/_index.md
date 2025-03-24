@@ -3,7 +3,6 @@ title: Vervang vormafbeelding in Word-documenten
 linktitle: Vervang vormafbeelding in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u vormafbeeldingen in Word-documenten programmatisch vervangt met GroupDocs.Watermark voor .NET. Vereenvoudig documentmanipulatietaken moeiteloos.
-type: docs
 weight: 33
 url: /nl/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---

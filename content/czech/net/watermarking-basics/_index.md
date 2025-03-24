@@ -3,7 +3,6 @@ title: Základy vodoznaku
 linktitle: Základy vodoznaku
 second_title: GroupDocs.Watermark .NET API
 description: Objevte výukové programy GroupDocs.Watermark for .NET a snadno přidejte obrázkové a textové vodoznaky. Chraňte své dokumenty pomocí těchto snadno srozumitelných průvodců.
-type: docs
 weight: 20
 url: /cs/net/watermarking-basics/
 ---

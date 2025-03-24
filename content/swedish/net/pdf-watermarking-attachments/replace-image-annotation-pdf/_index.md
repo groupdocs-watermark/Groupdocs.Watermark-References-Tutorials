@@ -3,7 +3,6 @@ title: Ersätt bild för specifik anteckning i PDF
 linktitle: Ersätt bild för specifik anteckning i PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du ersätter bilder i specifika PDF-kommentarer med GroupDocs.Watermark for .NET. Den här detaljerade guiden täcker allt från att ladda dokument till att spara ändringar.
-type: docs
 weight: 37
 url: /sv/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 Detta steg säkerställer att alla ändringar sparas och att det ändrade dokumentet är klart att användas.
 ## Slutsats
-Grattis! Du har framgångsrikt ersatt bilder i specifika anteckningar i ett PDF-dokument med GroupDocs.Watermark för .NET. Detta kraftfulla bibliotek gör det enkelt att hantera komplexa PDF-vattenmärkningsuppgifter, vilket förbättrar dina dokumenthanteringsmöjligheter. För ytterligare anpassning och avancerade funktioner, utforska[GroupDocs.Watermark dokumentation](https://reference.groupdocs.com/Watermark/net/).
+Grattis! Du har framgångsrikt ersatt bilder i specifika anteckningar i ett PDF-dokument med GroupDocs.Watermark för .NET. Detta kraftfulla bibliotek gör det enkelt att hantera komplexa PDF-vattenmärkningsuppgifter, vilket förbättrar dina dokumenthanteringsmöjligheter. För ytterligare anpassning och avancerade funktioner, utforska[GroupDocs.Watermark dokumentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ's
 ### Kan jag ersätta bilder i kommentarer på alla sidor i en PDF?
 Ja, du kan iterera genom alla sidor i PDF-filen genom att justera slingan för att gå igenom varje sidas kommentarer.

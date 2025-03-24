@@ -3,7 +3,6 @@ title: Wygeneruj podgląd dokumentu
 linktitle: Wygeneruj podgląd dokumentu
 second_title: GroupDocs.Watermark API .NET
 description: Z tego przewodnika dowiesz się, jak generować podglądy dokumentów przy użyciu GroupDocs.Watermark dla platformy .NET. Bez wysiłku zwiększ bezpieczeństwo swoich dokumentów i zarządzanie nimi.
-type: docs
 weight: 10
 url: /pl/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Wniosek
 Generowanie podglądów dokumentów przy użyciu GroupDocs.Watermark dla .NET to prosty proces, który można wykonać za pomocą zaledwie kilku linijek kodu. Postępując zgodnie z krokami opisanymi w tym przewodniku, możesz łatwo skonfigurować swój projekt, skonfigurować niezbędne opcje i wygenerować podglądy swoich dokumentów. Ta potężna biblioteka nie tylko upraszcza proces znakowania wodnego, ale także zapewnia zaawansowane funkcje zarządzania znakami wodnymi i manipulowania nimi.
- Jeśli masz jakieś pytania lub potrzebujesz dalszej pomocy, nie wahaj się odwiedzić witryny[Forum pomocy technicznej GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) lub zapoznaj się z[dokumentacja](https://reference.groupdocs.com/Watermark/net/).
+ Jeśli masz jakieś pytania lub potrzebujesz dalszej pomocy, nie wahaj się odwiedzić witryny[Forum pomocy technicznej GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) lub zapoznaj się z[dokumentacja](https://tutorials.groupdocs.com/Watermark/net/).
 ## Często zadawane pytania
 ### Jakie formaty plików są obsługiwane przez GroupDocs.Watermark dla .NET?
- GroupDocs.Watermark dla .NET obsługuje szeroką gamę formatów plików, w tym PDF, DOCX, PPTX, XLSX i wiele innych. Pełna lista obsługiwanych formatów znajduje się na stronie[dokumentacja](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark dla .NET obsługuje szeroką gamę formatów plików, w tym PDF, DOCX, PPTX, XLSX i wiele innych. Pełna lista obsługiwanych formatów znajduje się na stronie[dokumentacja](https://tutorials.groupdocs.com/Watermark/net/).
 ### Czy mogę dostosować wygląd znaków wodnych?
 Tak, GroupDocs.Watermark umożliwia pełne dostosowanie wyglądu znaków wodnych, w tym znaków wodnych zawierających tekst, obraz i kształt. Można dostosować właściwości, takie jak czcionka, kolor, rozmiar i przezroczystość.
 ### Czy dostępna jest wersja próbna?

@@ -3,7 +3,6 @@ title: 文件加载
 linktitle: 文件加载
 second_title: GroupDocs.Watermark .NET API
 description: 探索 GroupDocs.Watermark for .NET 教程来加载文档并为其添加水印，通过分步指南确保文档安全和品牌塑造。
-type: docs
 weight: 22
 url: /zh/net/document-loadings/
 ---

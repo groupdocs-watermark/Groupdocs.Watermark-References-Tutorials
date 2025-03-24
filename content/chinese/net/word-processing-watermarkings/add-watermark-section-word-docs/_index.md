@@ -3,7 +3,6 @@ title: 为 Word 文档中的部分添加水印
 linktitle: 为 Word 文档中的部分添加水印
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 轻松向 Word 文档添加水印。通过这个简单的指南保护您的内容。
-type: docs
 weight: 15
 url: /zh/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

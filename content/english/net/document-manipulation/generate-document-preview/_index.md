@@ -3,7 +3,6 @@ title: Generate Document Preview
 linktitle: Generate Document Preview
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to generate document previews using GroupDocs.Watermark for .NET with this guide. Enhance your document security and management effortlessly.
-type: docs
 weight: 10
 url: /net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Conclusion
 Generating document previews using GroupDocs.Watermark for .NET is a straightforward process that can be accomplished with just a few lines of code. By following the steps outlined in this guide, you can easily set up your project, configure the necessary options, and generate previews for your documents. This powerful library not only simplifies the watermarking process but also provides robust features for managing and manipulating watermarks.
-If you have any questions or need further assistance, don't hesitate to visit the [GroupDocs.Watermark Support Forum](https://forum.groupdocs.com/c/watermark/19) or refer to the [documentation](https://reference.groupdocs.com/Watermark/net/).
+If you have any questions or need further assistance, don't hesitate to visit the [GroupDocs.Watermark Support Forum](https://forum.groupdocs.com/c/watermark/19) or refer to the [documentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ's
 ### What file formats are supported by GroupDocs.Watermark for .NET?
-GroupDocs.Watermark for .NET supports a wide range of file formats, including PDF, DOCX, PPTX, XLSX, and many more. For a full list of supported formats, refer to the [documentation](https://reference.groupdocs.com/Watermark/net/).
+GroupDocs.Watermark for .NET supports a wide range of file formats, including PDF, DOCX, PPTX, XLSX, and many more. For a full list of supported formats, refer to the [documentation](https://tutorials.groupdocs.com/Watermark/net/).
 ### Can I customize the appearance of watermarks?
 Yes, GroupDocs.Watermark allows you to fully customize the appearance of watermarks, including text, image, and shape watermarks. You can adjust properties such as font, color, size, and transparency.
 ### Is there a trial version available?

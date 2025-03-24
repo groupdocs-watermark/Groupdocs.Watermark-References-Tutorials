@@ -3,7 +3,6 @@ title: パスワードで保護された Word 文書をロードする
 linktitle: パスワードで保護された Word 文書をロードする
 second_title: GroupDocs.Watermark .NET API
 description: 包括的なステップバイステップ ガイドに従って、GroupDocs.Watermark for .NET を使用して、パスワードで保護された Word 文書に透かしを簡単に追加します。
-type: docs
 weight: 14
 url: /ja/net/document-loadings/load-password-protected-word-document/
 ---

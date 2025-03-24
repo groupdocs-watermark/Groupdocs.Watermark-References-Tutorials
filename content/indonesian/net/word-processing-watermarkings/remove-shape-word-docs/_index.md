@@ -3,7 +3,6 @@ title: Hapus Bentuk di Dokumen Word
 linktitle: Hapus Bentuk di Dokumen Word
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus bentuk dari dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Manipulasi dokumen yang mudah, efisien, dan kuat.
-type: docs
 weight: 30
 url: /id/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
@@ -72,6 +71,6 @@ Ya, GroupDocs.Watermark untuk .NET mendukung berbagai format dokumen, termasuk E
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Watermark untuk .NET?
  Lisensi sementara untuk GroupDocs.Watermark untuk .NET dapat diperoleh dari[halaman lisensi sementara](https://purchase.groupdocs.com/temporary-license/).
 ### Di mana saya dapat menemukan dokumentasi dan dukungan untuk GroupDocs.Watermark untuk .NET?
- Dokumentasi dan sumber daya dukungan untuk GroupDocs.Watermark untuk .NET tersedia di[forum](https://forum.groupdocs.com/c/watermark/19) Dan[Halaman referensi](https://reference.groupdocs.com/Watermark/net/).
+ Dokumentasi dan sumber daya dukungan untuk GroupDocs.Watermark untuk .NET tersedia di[forum](https://forum.groupdocs.com/c/watermark/19) Dan[Halaman referensi](https://tutorials.groupdocs.com/Watermark/net/).
 ### Versi .NET apa yang kompatibel dengan GroupDocs.Watermark?
 GroupDocs.Watermark untuk .NET kompatibel dengan berbagai versi .NET, termasuk .NET Framework dan .NET Core.

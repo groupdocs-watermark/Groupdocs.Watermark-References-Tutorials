@@ -3,7 +3,6 @@ title: Word Docs에서 이미지 효과로 워터마크 추가
 linktitle: Word Docs에서 이미지 효과로 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에 이미지 효과가 있는 워터마크를 추가하는 방법을 알아보세요. 놀라운 결과를 얻으려면 단계별 가이드를 따르십시오.
-type: docs
 weight: 19
 url: /ko/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
 ---

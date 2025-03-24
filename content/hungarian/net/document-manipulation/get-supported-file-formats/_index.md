@@ -3,7 +3,6 @@ title: Szerezze be a támogatott fájlformátumokat
 linktitle: Szerezze be a támogatott fájlformátumokat
 second_title: GroupDocs.Watermark .NET API
 description: A GroupDocs.Watermark for .NET segítségével könnyedén adhat hozzá vízjeleket dokumentumaihoz. Kövesse átfogó, lépésenkénti útmutatónkat digitális eszközei védelméhez.
-type: docs
 weight: 13
 url: /hu/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ A mellékelt kódrészlet segítségével felsorolhatja az összes támogatott f
 ### Hogyan vásárolhatok licencet a GroupDocs.Watermark számára?
  A licencek közvetlenül a szolgáltatótól vásárolhatók meg[vásárlási oldal](https://purchase.groupdocs.com/buy).
 ### Elérhető a GroupDocs.Watermark dokumentációja?
- Igen, átfogó dokumentáció áll rendelkezésre[itt](https://reference.groupdocs.com/Watermark/net/).
+ Igen, átfogó dokumentáció áll rendelkezésre[itt](https://tutorials.groupdocs.com/Watermark/net/).

@@ -3,7 +3,6 @@ title: Lägg till textvattenstämpel
 linktitle: Lägg till textvattenstämpel
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till textvattenstämplar i dina dokument med hjälp av Groupdocs Watermark for .NET med denna steg-för-steg-guide.
-type: docs
 weight: 11
 url: /sv/net/watermarking-basics/add-text-watermark/
 ---

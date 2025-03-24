@@ -3,7 +3,6 @@ title: Carregar documento do stream
 linktitle: Carregar documento do stream
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda como adicionar marcas d'água a documentos usando GroupDocs.Watermark for .NET com este guia. Perfeito para desenvolvedores que buscam aprimorar a segurança dos documentos.
-type: docs
 weight: 11
 url: /pt/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Este código salva o documento com a marca d'água recém-adicionada`outputFileName` caminho que você definiu anteriormente.
 
 ## Conclusão
-Parabéns! Você adicionou com sucesso uma marca d'água ao seu documento usando GroupDocs.Watermark for .NET. Esta biblioteca torna incrivelmente fácil gerenciar marcas d'água em vários formatos de documentos. Se você precisa adicionar texto, imagens ou outros tipos de marcas d’água, GroupDocs.Watermark tem as ferramentas que você precisa. Não esqueça de conferir o[documentação](https://reference.groupdocs.com/Watermark/net/) para recursos mais avançados e opções de personalização.
+Parabéns! Você adicionou com sucesso uma marca d'água ao seu documento usando GroupDocs.Watermark for .NET. Esta biblioteca torna incrivelmente fácil gerenciar marcas d'água em vários formatos de documentos. Se você precisa adicionar texto, imagens ou outros tipos de marcas d’água, GroupDocs.Watermark tem as ferramentas que você precisa. Não esqueça de conferir o[documentação](https://tutorials.groupdocs.com/Watermark/net/) para recursos mais avançados e opções de personalização.
 ## Perguntas frequentes
 ### Que tipos de marcas d'água posso adicionar usando GroupDocs.Watermark for .NET?
 Você pode adicionar marcas d'água de texto, marcas d'água de imagem e até formas e logotipos complexos. A biblioteca oferece suporte a uma ampla gama de opções de personalização.

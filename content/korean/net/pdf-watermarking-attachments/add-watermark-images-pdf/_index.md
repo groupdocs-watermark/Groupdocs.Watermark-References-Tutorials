@@ -3,7 +3,6 @@ title: PDF 이미지에 워터마크 추가
 linktitle: PDF 이미지에 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: 자세한 단계별 튜토리얼을 통해 .NET용 GroupDocs.Watermark를 사용하여 PDF 문서의 이미지에 워터마크를 추가하는 방법을 알아보세요. PDF를 쉽게 보호하세요.
-type: docs
 weight: 19
 url: /ko/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ watermarker.Save(outputFileName);
 ### .NET용 GroupDocs.Watermark를 사용하려면 라이센스가 필요합니까?
  예, 라이센스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.groupdocs.com/temporary-license/) 평가 목적으로.
 ### .NET용 GroupDocs.Watermark에 대한 추가 문서는 어디에서 찾을 수 있습니까?
- 다음에서 포괄적인 문서를 찾을 수 있습니다.[GroupDocs.Watermark 문서 페이지](https://reference.groupdocs.com/Watermark/net/).
+ 다음에서 포괄적인 문서를 찾을 수 있습니다.[GroupDocs.Watermark 문서 페이지](https://tutorials.groupdocs.com/Watermark/net/).

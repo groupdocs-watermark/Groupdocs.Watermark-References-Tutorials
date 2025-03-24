@@ -3,7 +3,6 @@ title: Add Locked Watermark to All Pages in Word Docs
 linktitle: Add Locked Watermark to All Pages in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Secure your documents by adding locked watermarks using Groupdocs.Watermark for .NET. Follow our step-by-step guide for easy implementation.
-type: docs
 weight: 11
 url: /net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Aggiungi filigrane a pagine specifiche in PDF
 linktitle: Aggiungi filigrane a pagine specifiche in PDF
 second_title: API GroupDocs.Watermark .NET
 description: Impara ad aggiungere filigrane di testo e immagini a pagine specifiche nei PDF utilizzando Groupdocs per .NET. Segui la nostra guida dettagliata per proteggere i tuoi documenti.
-type: docs
 weight: 15
 url: /it/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
@@ -100,4 +99,4 @@ Assolutamente. Groupdocs.Watermark per .NET fornisce opzioni per aggiungere fili
 ### Come posso ottenere una prova gratuita di Groupdocs.Watermark?
  È possibile scaricare una versione di prova gratuita da[Sito web di Groupdoc](https://releases.groupdocs.com/).
 ### Dove posso trovare documentazione più dettagliata?
- Per informazioni più dettagliate è possibile fare riferimento al[documentazione](https://reference.groupdocs.com/Watermark/net/).
+ Per informazioni più dettagliate è possibile fare riferimento al[documentazione](https://tutorials.groupdocs.com/Watermark/net/).

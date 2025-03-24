@@ -3,7 +3,6 @@ title: Muat Dokumen Format Tertentu
 linktitle: Muat Dokumen Format Tertentu
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara memuat dan memberi tanda air pada dokumen menggunakan Groupdocs untuk .NET dengan panduan langkah demi langkah ini. Lindungi dan beri merek pada konten Anda dengan mudah.
-type: docs
 weight: 12
 url: /id/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Kesimpulan
-Memberi tanda air pada dokumen adalah langkah penting dalam melindungi konten Anda, dan Groupdocs.Watermark untuk .NET menjadikan proses ini mudah dan efisien. Dengan mengikuti panduan ini, Anda dapat dengan mudah memuat dan menerapkan tanda air pada dokumen Anda, memastikan keamanan dan merek yang tepat. Untuk rincian lebih lanjut dan opsi lanjutan, lihat[Groupdocs.Watermark untuk dokumentasi .NET](https://reference.groupdocs.com/Watermark/net/).
+Memberi tanda air pada dokumen adalah langkah penting dalam melindungi konten Anda, dan Groupdocs.Watermark untuk .NET menjadikan proses ini mudah dan efisien. Dengan mengikuti panduan ini, Anda dapat dengan mudah memuat dan menerapkan tanda air pada dokumen Anda, memastikan keamanan dan merek yang tepat. Untuk rincian lebih lanjut dan opsi lanjutan, lihat[Groupdocs.Watermark untuk dokumentasi .NET](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### Bisakah saya menggunakan metode ini untuk format dokumen yang berbeda?
  Ya, Groupdocs. Anda perlu menyesuaikannya`LoadOptions` demikian.

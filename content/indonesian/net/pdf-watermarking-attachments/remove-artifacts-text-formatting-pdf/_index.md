@@ -3,7 +3,6 @@ title: Hapus Artefak dengan Format Teks Tertentu di PDF
 linktitle: Hapus Artefak dengan Format Teks Tertentu di PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus artefak dengan format teks tertentu dalam PDF menggunakan GroupDocs untuk .NET. Ikuti panduan langkah demi langkah kami.
-type: docs
 weight: 32
 url: /id/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
 ---

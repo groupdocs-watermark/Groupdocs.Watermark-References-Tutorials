@@ -3,7 +3,6 @@ title: Ta bort hyperlänkar i Word Docs
 linktitle: Ta bort hyperlänkar i Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du tar bort hyperlänkar från Word-dokument med GroupDocs.Watermark for .NET. Förbättra dokumentsäkerheten utan ansträngning.
-type: docs
 weight: 29
 url: /sv/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
 ---

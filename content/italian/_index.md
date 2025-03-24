@@ -3,7 +3,6 @@ title: Gestisci la sicurezza e il branding dei documenti con GroupDocs.Watermark
 linktitle: Esercitazioni su GroupDocs.Watermark
 additionalTitle: Riferimenti API GroupDocs
 description: Sfrutta tutta la potenza di GroupDocs.Watermark con i nostri tutorial su .NET e Java. Padroneggia le tecniche di watermarking per la sicurezza e il branding dei documenti.
-type: docs
 weight: 11
 url: /it/
 is_root: true

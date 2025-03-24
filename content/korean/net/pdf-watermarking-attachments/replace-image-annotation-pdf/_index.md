@@ -3,7 +3,6 @@ title: PDF의 특정 주석에 대한 이미지 교체
 linktitle: PDF의 특정 주석에 대한 이미지 교체
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 특정 PDF 주석의 이미지를 바꾸는 방법을 알아보세요. 이 상세한 가이드는 문서 로딩부터 변경 사항 저장까지 모든 것을 다룹니다.
-type: docs
 weight: 37
 url: /ko/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 이 단계를 수행하면 모든 변경 사항이 저장되고 수정된 문서를 사용할 수 있게 됩니다.
 ## 결론
-축하해요! .NET용 GroupDocs.Watermark를 사용하여 PDF 문서 내 특정 주석의 이미지를 성공적으로 교체했습니다. 이 강력한 라이브러리를 사용하면 복잡한 PDF 워터마킹 작업을 쉽게 처리할 수 있어 문서 관리 기능이 향상됩니다. 추가 사용자 정의 및 고급 기능을 알아보려면[GroupDocs.Watermark 문서](https://reference.groupdocs.com/Watermark/net/).
+축하해요! .NET용 GroupDocs.Watermark를 사용하여 PDF 문서 내 특정 주석의 이미지를 성공적으로 교체했습니다. 이 강력한 라이브러리를 사용하면 복잡한 PDF 워터마킹 작업을 쉽게 처리할 수 있어 문서 관리 기능이 향상됩니다. 추가 사용자 정의 및 고급 기능을 알아보려면[GroupDocs.Watermark 문서](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### PDF의 모든 페이지에 있는 주석의 이미지를 바꿀 수 있습니까?
 예, 각 페이지의 주석을 통과하도록 루프를 조정하여 PDF의 모든 페이지를 반복할 수 있습니다.

@@ -3,7 +3,6 @@ title: Rasterize trang PDF
 linktitle: Rasterize trang PDF
 second_title: API GroupDocs.Watermark .NET
 description: Tăng cường bảo mật tài liệu với GroupDocs cho .NET. Thêm hình mờ vào PDF và các định dạng khác một cách liền mạch.
-type: docs
 weight: 28
 url: /vi/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---

@@ -3,7 +3,6 @@ title: Vízjel hozzáadása a szakaszképekhez a Word Dokumentumokban
 linktitle: Vízjel hozzáadása a szakaszképekhez a Word Dokumentumokban
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat vízjeleket a Word-dokumentumok képeihez a Groupdocs Watermark for .NET segítségével. Kövesse útmutatónkat a biztonságos és professzionális dokumentumvédelem érdekében.
-type: docs
 weight: 16
 url: /hu/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## Következtetés
 Vízjelek hozzáadása a Word-dokumentumokban lévő képekhez hatékony módja a tartalom védelmének. A Groupdocs.Watermark for .NET segítségével ez a folyamat egyszerű és hatékony. Kövesse az oktatóanyagban ismertetett lépéseket, hogy megbizonyosodjon arról, hogy dokumentumai biztonságosak és jól védettek.
- Részletesebb dokumentációért keresse fel a[dokumentáció](https://reference.groupdocs.com/Watermark/net/) . Ha bármilyen kérdése van, vagy további segítségre van szüksége, tekintse meg a[támogatói fórum](https://forum.groupdocs.com/c/watermark/19).
+ Részletesebb dokumentációért keresse fel a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) . Ha bármilyen kérdése van, vagy további segítségre van szüksége, tekintse meg a[támogatói fórum](https://forum.groupdocs.com/c/watermark/19).
 ## GYIK
 ### Testreszabhatom a vízjel szövegét?
 Igen, testreszabhatja a vízjel szövegét, betűtípusát, méretét, igazítását és elforgatását igényeinek megfelelően.
 ### Lehetséges több szakaszhoz vízjelet adni?
 Igen, végigpörgetheti az egyes szakaszokat, és minden szakasz képére alkalmazhatja a vízjelet.
 ### Használhatom ezt a módszert más dokumentumformátumokhoz?
- A Groupdocs különféle dokumentumformátumokat támogat. Ellenőrizd a[dokumentáció](https://reference.groupdocs.com/Watermark/net/) további részletekért.
+ A Groupdocs különféle dokumentumformátumokat támogat. Ellenőrizd a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) további részletekért.
 ### Hogyan szerezhetek ideiglenes engedélyt?
  Kaphat ideiglenes engedélyt[itt](https://purchase.groupdocs.com/temporary-license/).
 ### Mi a teendő, ha problémákat tapasztalok a Groupdocs.Watermark használata közben?

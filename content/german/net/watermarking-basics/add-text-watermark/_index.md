@@ -3,7 +3,6 @@ title: Textwasserzeichen hinzufügen
 linktitle: Textwasserzeichen hinzufügen
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Groupdocs Watermark für .NET Textwasserzeichen zu Ihren Dokumenten hinzufügen.
-type: docs
 weight: 11
 url: /de/net/watermarking-basics/add-text-watermark/
 ---

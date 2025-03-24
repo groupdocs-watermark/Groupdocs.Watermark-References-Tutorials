@@ -3,7 +3,6 @@ title: Thay thế hình ảnh hình dạng trong tài liệu Word
 linktitle: Thay thế hình ảnh hình dạng trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thay thế hình ảnh hình dạng trong tài liệu Word theo chương trình bằng GroupDocs.Watermark cho .NET. Đơn giản hóa các tác vụ thao tác tài liệu một cách dễ dàng.
-type: docs
 weight: 33
 url: /vi/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---

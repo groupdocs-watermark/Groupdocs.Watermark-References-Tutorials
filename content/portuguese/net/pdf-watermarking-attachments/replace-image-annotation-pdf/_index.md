@@ -3,7 +3,6 @@ title: Substituir imagem por anotação específica em PDF
 linktitle: Substituir imagem por anotação específica em PDF
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda como substituir imagens em anotações específicas de PDF usando GroupDocs.Watermark for .NET. Este guia detalhado cobre tudo, desde carregar documentos até salvar alterações.
-type: docs
 weight: 37
 url: /pt/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 Esta etapa garante que todas as alterações sejam salvas e que o documento modificado esteja pronto para uso.
 ## Conclusão
-Parabéns! Você substituiu com êxito imagens em anotações específicas em um documento PDF usando GroupDocs.Watermark for .NET. Esta poderosa biblioteca facilita o gerenciamento de tarefas complexas de marcação de marca d'água em PDF, aprimorando seus recursos de gerenciamento de documentos. Para maior personalização e recursos avançados, explore o[Documentação GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+Parabéns! Você substituiu com êxito imagens em anotações específicas em um documento PDF usando GroupDocs.Watermark for .NET. Esta poderosa biblioteca facilita o gerenciamento de tarefas complexas de marcação de marca d'água em PDF, aprimorando seus recursos de gerenciamento de documentos. Para maior personalização e recursos avançados, explore o[Documentação GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).
 ## Perguntas frequentes
 ### Posso substituir imagens em anotações em todas as páginas de um PDF?
 Sim, você pode percorrer todas as páginas do PDF ajustando o loop para percorrer as anotações de cada página.

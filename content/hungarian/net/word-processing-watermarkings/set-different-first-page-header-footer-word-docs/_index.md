@@ -3,7 +3,6 @@ title: Állítson be más első oldal fejlécet/láblécet a Word Dokumentumokba
 linktitle: Állítson be más első oldal fejlécet/láblécet a Word Dokumentumokban
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan állíthat be különböző fejlécet és láblécet a Word-dokumentumok első oldalán a GroupDocs.Watermark for .NET segítségével.
-type: docs
 weight: 36
 url: /hu/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Igen, a felhasználók igénybe vehetik a GroupDocs.Watermark for .NET ingyenes 
 ### Vásárolhatok ideiglenes licencet rövid távú használatra?
  Igen, a .NET-hez készült GroupDocs ideiglenes licencei beszerezhetők[Ideiglenes licenc vásárlási oldal](https://purchase.groupdocs.com/temporary-license/).
 ### Hol találom a GroupDocs.Watermark for .NET átfogó dokumentációját?
- A GroupDocs.Watermark for .NET részletes dokumentációja a következő oldalon érhető el[Hivatkozási oldal](https://reference.groupdocs.com/Watermark/net/).
+ A GroupDocs.Watermark for .NET részletes dokumentációja a következő oldalon érhető el[Hivatkozási oldal](https://tutorials.groupdocs.com/Watermark/net/).

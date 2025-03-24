@@ -3,7 +3,6 @@ title: Záhlaví/zápatí odkazu v sekci v Dokumentech aplikace Word
 linktitle: Záhlaví/zápatí odkazu v sekci v Dokumentech aplikace Word
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak efektivně propojit záhlaví a zápatí v rámci sekcí dokumentů aplikace Word pomocí GroupDocs.Watermark for .NET. Správa a zabezpečení dokumentů.
-type: docs
 weight: 26
 url: /cs/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ Ano, máte přístup k bezplatné zkušební verzi z[stránka vydání](https://
 ### Jsou k dispozici dočasné licence pro GroupDocs.Watermark for .NET?
  Ano, dočasné licence lze získat z[Nákupní stránka GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### Nabízí GroupDocs.Watermark for .NET dokumentaci pro vývojáře?
- Ano, k dispozici je komplexní dokumentace[tady](https://reference.groupdocs.com/Watermark/net/).
+ Ano, k dispozici je komplexní dokumentace[tady](https://tutorials.groupdocs.com/Watermark/net/).

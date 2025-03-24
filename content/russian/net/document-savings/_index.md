@@ -3,7 +3,6 @@ title: Сохранение документа
 linktitle: Сохранение документа
 second_title: GroupDocs.Watermark .NET API
 description: Изучите руководства GroupDocs.Watermark для .NET по сохранению документов с водяными знаками. Изучите пошаговые методы повышения безопасности документов и управления ими.
-type: docs
 weight: 23
 url: /ru/net/document-savings/
 ---

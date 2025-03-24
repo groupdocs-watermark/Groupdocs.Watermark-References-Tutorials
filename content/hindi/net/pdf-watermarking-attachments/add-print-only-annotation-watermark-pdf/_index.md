@@ -3,7 +3,6 @@ title: पीडीएफ में केवल प्रिंट एनोट
 linktitle: पीडीएफ में केवल प्रिंट एनोटेशन वॉटरमार्क जोड़ें
 second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके PDF में केवल-प्रिंट एनोटेशन वॉटरमार्क जोड़ने का तरीका जानें। दस्तावेज़ सुरक्षा और ब्रांडिंग को सहजता से बढ़ाएँ।
-type: docs
 weight: 13
 url: /hi/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---

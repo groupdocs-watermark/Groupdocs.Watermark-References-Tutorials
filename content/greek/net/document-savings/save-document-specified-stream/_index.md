@@ -3,7 +3,6 @@ title: Αποθήκευση εγγράφου σε καθορισμένη ροή
 linktitle: Αποθήκευση εγγράφου σε καθορισμένη ροή
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αποθηκεύετε ένα έγγραφο σε μια καθορισμένη ροή χρησιμοποιώντας το GroupDocs.Watermark για .NET με αυτόν τον οδηγό βήμα προς βήμα. Ιδανικό για προγραμματιστές όλων των επιπέδων.
-type: docs
 weight: 12
 url: /el/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ using (MemoryStream stream = new MemoryStream())
 ### Πώς μπορώ να πάρω μια προσωρινή άδεια;
  Μπορείτε να αποκτήσετε προσωρινή άδεια από[αυτός ο σύνδεσμος](https://purchase.groupdocs.com/temporary-license/).
 ### Πού μπορώ να βρω πιο αναλυτική τεκμηρίωση;
- Για πιο λεπτομερή τεκμηρίωση, μπορείτε να επισκεφθείτε[εδώ](https://reference.groupdocs.com/Watermark/net/).
+ Για πιο λεπτομερή τεκμηρίωση, μπορείτε να επισκεφθείτε[εδώ](https://tutorials.groupdocs.com/Watermark/net/).

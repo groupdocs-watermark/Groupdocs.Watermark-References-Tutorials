@@ -3,7 +3,6 @@ title: Agregar marcas de agua a páginas específicas en PDF
 linktitle: Agregar marcas de agua a páginas específicas en PDF
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a agregar marcas de agua de texto e imágenes a páginas específicas en archivos PDF usando Groupdocs para .NET. Siga nuestra guía detallada para proteger sus documentos.
-type: docs
 weight: 15
 url: /es/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
@@ -100,4 +99,4 @@ Absolutamente. Groupdocs.Watermark para .NET proporciona opciones para agregar m
 ### ¿Cómo obtengo una prueba gratuita de Groupdocs.Watermark?
  Puede descargar una prueba gratuita desde[Sitio web de Groupdocs](https://releases.groupdocs.com/).
 ### ¿Dónde puedo encontrar documentación más detallada?
- Para obtener información más detallada, puede consultar el[documentación](https://reference.groupdocs.com/Watermark/net/).
+ Para obtener información más detallada, puede consultar el[documentación](https://tutorials.groupdocs.com/Watermark/net/).

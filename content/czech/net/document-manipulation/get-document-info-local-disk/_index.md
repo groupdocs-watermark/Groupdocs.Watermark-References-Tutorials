@@ -3,7 +3,6 @@ title: Získejte informace o dokumentu z místního disku
 linktitle: Získejte informace o dokumentu z místního disku
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat, odebírat a extrahovat vodoznaky v dokumentech pomocí GroupDocs Watermark for .NET s tímto komplexním průvodcem krok za krokem.
-type: docs
 weight: 11
 url: /cs/net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /cs/net/document-manipulation/get-document-info-local-disk/
 Vítejte v dokonalém průvodci používáním GroupDocs.Watermark pro .NET! Ať už jste zkušený vývojář nebo teprve začínáte, tento článek vás provede základy vodoznaku dokumentů pomocí tohoto výkonného nástroje. Nakonec budete profesionálem ve vkládání vodoznaků do vašich dokumentů, abyste zajistili, že budou chráněny a označeny podle vašich specifikací.
 ## Předpoklady
 Než se pustíte do podrobného průvodce, musíte splnit několik předpokladů:
-1.  .NET Framework: Ujistěte se, že máte v systému nainstalované rozhraní .NET Framework. GroupDocs.Watermark for .NET je kompatibilní s různými verzemi rozhraní .NET Framework, proto zkontrolujte[dokumentace](https://reference.groupdocs.com/Watermark/net/) pro podrobnosti o kompatibilitě.
+1.  .NET Framework: Ujistěte se, že máte v systému nainstalované rozhraní .NET Framework. GroupDocs.Watermark for .NET je kompatibilní s různými verzemi rozhraní .NET Framework, proto zkontrolujte[dokumentace](https://tutorials.groupdocs.com/Watermark/net/) pro podrobnosti o kompatibilitě.
 2.  GroupDocs.Watermark for .NET Library: Stáhněte a nainstalujte nejnovější verzi z[stránka ke stažení](https://releases.groupdocs.com/Watermark/net/).
 3. Vývojové prostředí: Měli byste mít nastavené vývojové prostředí. Visual Studio je oblíbenou volbou pro vývoj .NET.
 4. Základní znalosti C#: Pochopení základů programování v C# vám pomůže postupovat podle příkladů.
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
  Tento krok zahrnuje použití`GetWatermarks`metoda pro načtení všech vodoznaků v dokumentu. Poté můžete iterovat seznam vodoznaků a zkontrolovat jejich vlastnosti nebo podle potřeby provést další akce.
 ## Závěr
- Gratulujeme! Nyní jste se naučili, jak používat GroupDocs.Watermark pro .NET k přidávání, odstraňování a extrahování vodoznaků z vašich dokumentů. S těmito dovednostmi můžete efektivně chránit a označovat své dokumenty. Pamatujte,[dokumentace](https://reference.groupdocs.com/Watermark/net/) je vždy k dispozici, pokud potřebujete podrobnější informace nebo pokročilé funkce.
+ Gratulujeme! Nyní jste se naučili, jak používat GroupDocs.Watermark pro .NET k přidávání, odstraňování a extrahování vodoznaků z vašich dokumentů. S těmito dovednostmi můžete efektivně chránit a označovat své dokumenty. Pamatujte,[dokumentace](https://tutorials.groupdocs.com/Watermark/net/) je vždy k dispozici, pokud potřebujete podrobnější informace nebo pokročilé funkce.
 ## FAQ
 ### Mohu použít GroupDocs.Watermark pro .NET s jakoukoli verzí .NET?
- Ano, GroupDocs.Watermark for .NET je kompatibilní s různými verzemi rozhraní .NET Framework. Zkontrolovat[dokumentace](https://reference.groupdocs.com/Watermark/net/) pro upřesnění.
+ Ano, GroupDocs.Watermark for .NET je kompatibilní s různými verzemi rozhraní .NET Framework. Zkontrolovat[dokumentace](https://tutorials.groupdocs.com/Watermark/net/) pro upřesnění.
 ### Kde si mohu stáhnout GroupDocs.Watermark pro .NET?
  Nejnovější verzi si můžete stáhnout z[stránka ke stažení](https://releases.groupdocs.com/Watermark/net/).
 ### Jak získám dočasnou licenci?

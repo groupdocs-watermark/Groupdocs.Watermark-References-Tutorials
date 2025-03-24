@@ -3,7 +3,6 @@ title: Muat Dokumen dari Disk Lokal
 linktitle: Muat Dokumen dari Disk Lokal
 second_title: GroupDocs.Tanda Air .NET API
 description: Lindungi dan kelola dokumen Anda dengan Groupdocs untuk .NET. Ikuti panduan terperinci kami untuk menambahkan tanda air dengan lancar.
-type: docs
 weight: 10
 url: /id/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Kesimpulan
 Menambahkan tanda air ke dokumen Anda menggunakan Groupdocs untuk .NET sangatlah mudah dan efisien. Panduan ini telah memandu Anda melalui seluruh proses mulai dari menyiapkan lingkungan hingga menyimpan dokumen yang diberi tanda air. Dengan alat canggih ini, Anda dapat memastikan dokumen Anda terlindungi dan kekayaan intelektual Anda aman. 
- Untuk rincian lebih lanjut, periksa[dokumentasi](https://reference.groupdocs.com/Watermark/net/) , dan jika Anda mengalami masalah apa pun,[forum dukungan](https://forum.groupdocs.com/c/watermark/19) adalah tempat yang tepat untuk mendapatkan bantuan. 
+ Untuk rincian lebih lanjut, periksa[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/) , dan jika Anda mengalami masalah apa pun,[forum dukungan](https://forum.groupdocs.com/c/watermark/19) adalah tempat yang tepat untuk mendapatkan bantuan. 
 ## FAQ
 ### Bisakah saya menggunakan font khusus untuk tanda air?
 Ya, Groupdocs mendukung font khusus. Anda dapat menentukan font apa pun yang diinstal pada sistem Anda.

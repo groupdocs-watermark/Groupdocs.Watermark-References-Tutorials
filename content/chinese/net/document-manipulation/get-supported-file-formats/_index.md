@@ -3,7 +3,6 @@ title: 获取支持的文件格式
 linktitle: 获取支持的文件格式
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 轻松向文档添加水印。请遵循我们全面的分步指南来保护您的数字资产。
-type: docs
 weight: 13
 url: /zh/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ foreach (FileType fileType in supportedFileTypes)
 ### 如何购买 GroupDocs.Watermark 的许可证？
 许可证可以直接从[购买页面](https://purchase.groupdocs.com/buy).
 ### 有适用于 GroupDocs.Watermark 的任何文档吗？
-是的，提供全面的文档[这里](https://reference.groupdocs.com/Watermark/net/).
+是的，提供全面的文档[这里](https://tutorials.groupdocs.com/Watermark/net/).

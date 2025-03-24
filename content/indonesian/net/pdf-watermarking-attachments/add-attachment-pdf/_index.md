@@ -3,7 +3,6 @@ title: Tambahkan Lampiran ke PDF
 linktitle: Tambahkan Lampiran ke PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Tingkatkan kemampuan manajemen dokumen .NET Anda dengan GroupDocs.Watermark untuk penanganan tanda air dan lampiran yang lancar.
-type: docs
 weight: 12
 url: /id/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---

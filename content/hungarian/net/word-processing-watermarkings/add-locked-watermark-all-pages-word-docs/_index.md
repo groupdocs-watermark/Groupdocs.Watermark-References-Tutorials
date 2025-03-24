@@ -3,7 +3,6 @@ title: Zárolt vízjel hozzáadása a Word Docs összes oldalához
 linktitle: Zárolt vízjel hozzáadása a Word Docs összes oldalához
 second_title: GroupDocs.Watermark .NET API
 description: Biztosítsa dokumentumait zárolt vízjelek hozzáadásával a Groupdocs.Watermark for .NET segítségével. Kövesse lépésről lépésre útmutatónkat az egyszerű megvalósítás érdekében.
-type: docs
 weight: 11
 url: /hu/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---

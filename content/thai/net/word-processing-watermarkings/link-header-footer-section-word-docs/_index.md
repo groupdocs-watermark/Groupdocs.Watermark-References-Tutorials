@@ -3,7 +3,6 @@ title: ลิงก์ส่วนหัว/ส่วนท้ายในส่
 linktitle: ลิงก์ส่วนหัว/ส่วนท้ายในส่วนในเอกสาร Word
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีการเชื่อมโยงส่วนหัวและส่วนท้ายภายในส่วนของเอกสาร Word อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Watermark สำหรับ .NET การจัดการเอกสารและการรักษาความปลอดภัย
-type: docs
 weight: 26
 url: /th/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### GroupDocs.Watermark สำหรับ .NET มีใบอนุญาตชั่วคราวหรือไม่
  ใช่ สามารถรับใบอนุญาตชั่วคราวได้จาก[หน้าการซื้อ GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Watermark สำหรับ .NET มีเอกสารประกอบสำหรับนักพัฒนาหรือไม่
- ใช่ มีเอกสารประกอบครบถ้วน[ที่นี่](https://reference.groupdocs.com/Watermark/net/).
+ ใช่ มีเอกสารประกอบครบถ้วน[ที่นี่](https://tutorials.groupdocs.com/Watermark/net/).

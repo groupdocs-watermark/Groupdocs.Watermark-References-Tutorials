@@ -3,7 +3,6 @@ title: PDF의 특정 XObject에 대한 이미지 바꾸기
 linktitle: PDF의 특정 XObject에 대한 이미지 바꾸기
 second_title: GroupDocs.Watermark .NET API
 description: 이 단계별 가이드를 통해 .NET용 GroupDocs.Watermark를 사용하여 PDF의 이미지를 쉽게 교체하세요. PDF 콘텐츠를 효율적으로 관리하는 데 적합합니다.
-type: docs
 weight: 39
 url: /ko/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
@@ -76,6 +75,6 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### GroupDocs.Watermark의 무료 평가판을 받으려면 어떻게 해야 합니까?
  다음에서 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.groupdocs.com/).
 ### 더 많은 고급 기능이 필요하면 어떻게 하나요?
- 을 체크 해봐[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/) 고급 기능 및 사용자 정의 옵션을 확인하세요.
+ 을 체크 해봐[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/) 고급 기능 및 사용자 정의 옵션을 확인하세요.
 ### GroupDocs.Watermark에 대한 지원은 어디서 받을 수 있나요?
  방문하다[지원 포럼](https://forum.groupdocs.com/c/watermark/19) 도움을 위해.

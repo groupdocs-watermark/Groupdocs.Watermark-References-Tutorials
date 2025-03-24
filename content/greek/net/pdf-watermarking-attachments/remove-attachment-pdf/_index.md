@@ -3,7 +3,6 @@ title: Αφαιρέστε το συνημμένο από το PDF
 linktitle: Αφαιρέστε το συνημμένο από το PDF
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αφαιρείτε εύκολα συνημμένα από έγγραφα PDF χρησιμοποιώντας το GroupDocs.Watermark για .NET. Βελτιώστε την αποτελεσματικότητα διαχείρισης εγγράφων σας.
-type: docs
 weight: 33
 url: /el/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

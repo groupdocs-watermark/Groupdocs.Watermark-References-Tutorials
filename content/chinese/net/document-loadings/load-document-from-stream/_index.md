@@ -3,7 +3,6 @@ title: 从流加载文档
 linktitle: 从流加载文档
 second_title: GroupDocs.Watermark .NET API
 description: 通过本指南了解如何使用 GroupDocs.Watermark for .NET 向文档添加水印。非常适合希望增强文档安全性的开发人员。
-type: docs
 weight: 11
 url: /zh/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
 此代码保存带有新添加的水印的文档`outputFileName`您之前定义的路径。
 
 ## 结论
-恭喜！您已使用 GroupDocs.Watermark for .NET 成功向文档添加水印。该库使管理各种文档格式的水印变得非常容易。无论您需要添加文本、图像还是其他类型的水印，GroupDocs.Watermark 都有您需要的工具。不要忘记查看[文档](https://reference.groupdocs.com/Watermark/net/)了解更多高级功能和定制选项。
+恭喜！您已使用 GroupDocs.Watermark for .NET 成功向文档添加水印。该库使管理各种文档格式的水印变得非常容易。无论您需要添加文本、图像还是其他类型的水印，GroupDocs.Watermark 都有您需要的工具。不要忘记查看[文档](https://tutorials.groupdocs.com/Watermark/net/)了解更多高级功能和定制选项。
 ## 常见问题解答
 ### 我可以使用 GroupDocs.Watermark for .NET 添加哪些类型的水印？
 您可以添加文本水印、图像水印，甚至复杂的形状和徽标。该库支持广泛的定制选项。

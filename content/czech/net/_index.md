@@ -1,7 +1,6 @@
 ---
 title: Návody a příklady GroupDocs.Watermark pro .NET
 linktitle: GroupDocs.Watermark pro .NET výukové programy
-type: docs
 weight: 10
 url: /cs/net/
 description: Prozkoumejte komplexní výukové programy GroupDocs.Watermark for .NET. Naučte se přidávat, spravovat a zabezpečit vodoznaky v různých formátech dokumentů pomocí podrobných průvodců.

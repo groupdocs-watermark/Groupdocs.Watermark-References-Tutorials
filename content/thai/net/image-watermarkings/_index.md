@@ -3,7 +3,6 @@ title: ภาพลายน้ำ
 linktitle: ภาพลายน้ำ
 second_title: GroupDocs.Watermark .NET API
 description: สำรวจ GroupDocs.Watermark สำหรับบทช่วยสอน .NET เกี่ยวกับการเพิ่มลายน้ำรูปภาพ เรียนรู้วิธีทีละขั้นตอนเพื่อเพิ่มความปลอดภัยและการสร้างแบรนด์ให้กับเอกสารของคุณ
-type: docs
 weight: 24
 url: /th/net/image-watermarkings/
 ---

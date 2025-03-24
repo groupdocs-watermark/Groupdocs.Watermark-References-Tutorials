@@ -3,7 +3,6 @@ title: Ajouter un filigrane pour façonner les images dans Word Docs
 linktitle: Ajouter un filigrane pour façonner les images dans Word Docs
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes pour façonner des images dans des documents Word à l'aide de GroupDocs.Watermark pour .NET. Améliorez la sécurité des documents avec ce didacticiel.
-type: docs
 weight: 17
 url: /fr/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---

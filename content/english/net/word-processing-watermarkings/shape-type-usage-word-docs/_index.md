@@ -3,7 +3,6 @@ title: Shape Type Usage in Word Docs
 linktitle: Shape Type Usage in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to manipulate shapes in Word documents using GroupDocs.Watermark for .NET. This tutorial provides guidance for efficient document processing.
-type: docs
 weight: 37
 url: /net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---

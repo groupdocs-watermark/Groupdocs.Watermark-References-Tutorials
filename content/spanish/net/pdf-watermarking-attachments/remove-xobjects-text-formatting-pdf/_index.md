@@ -3,7 +3,6 @@ title: Eliminar XObjects con formato de texto específico en PDF
 linktitle: Eliminar XObjects con formato de texto específico en PDF
 second_title: API GroupDocs.Watermark .NET
 description: Elimine sin esfuerzo XObjects con formato de texto específico de archivos PDF utilizando GroupDocs.Watermark para .NET. Siga nuestra guía para una manipulación de documentos perfecta.
-type: docs
 weight: 36
 url: /es/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Finalmente, guarde el documento PDF modificado en la ruta del archivo de salida 
 Esto completa el proceso de eliminación de XObjects con formato de texto específico de un documento PDF.
 
 ## Conclusión
-Si sigue estos pasos, puede eliminar de manera eficiente XObjects con formato de texto específico de documentos PDF usando GroupDocs.Watermark para .NET. Esta poderosa biblioteca no solo simplifica las tareas de marcas de agua sino que también ofrece capacidades sólidas para la manipulación de documentos. Para obtener documentación más detallada, visite el[Documentación de GroupDocs.Watermark para .NET](https://reference.groupdocs.com/Watermark/net/) . Si encuentra algún problema o tiene preguntas, el[Foro de soporte](https://forum.groupdocs.com/c/watermark/19) es un gran lugar para buscar ayuda.
+Si sigue estos pasos, puede eliminar de manera eficiente XObjects con formato de texto específico de documentos PDF usando GroupDocs.Watermark para .NET. Esta poderosa biblioteca no solo simplifica las tareas de marcas de agua sino que también ofrece capacidades sólidas para la manipulación de documentos. Para obtener documentación más detallada, visite el[Documentación de GroupDocs.Watermark para .NET](https://tutorials.groupdocs.com/Watermark/net/) . Si encuentra algún problema o tiene preguntas, el[Foro de soporte](https://forum.groupdocs.com/c/watermark/19) es un gran lugar para buscar ayuda.
 ## Preguntas frecuentes
 ### ¿Puedo eliminar XObjects con formato de texto diferente?
 Sí, puede modificar el código para comprobar diferentes atributos de formato de texto, como tamaño de fuente, estilo de fuente o color.

@@ -3,7 +3,6 @@ title: Vervang tekst voor specifiek XObject in PDF
 linktitle: Vervang tekst voor specifiek XObject in PDF
 second_title: GroupDocs.Watermark .NET API
 description: Vervang tekst in PDF's efficiënt met GroupDocs.Watermark voor .NET. Integreer watermerken naadloos in uw .NET-toepassingen.
-type: docs
 weight: 44
 url: /nl/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
@@ -68,6 +67,6 @@ Ja, GroupDocs.Watermark voor .NET ondersteunt een breed scala aan documentindeli
 ### Hoe kan ik tijdelijke licenties verkrijgen voor GroupDocs.Watermark voor .NET?
  Tijdelijke licenties kunnen worden verkregen bij de[tijdelijke licentiepagina](https://purchase.groupdocs.com/temporary-license/).
 ### Waar kan ik documentatie vinden voor GroupDocs.Watermark voor .NET?
- Gedetailleerde documentatie is beschikbaar op de[documentatiepagina](https://reference.groupdocs.com/Watermark/net/).
+ Gedetailleerde documentatie is beschikbaar op de[documentatiepagina](https://tutorials.groupdocs.com/Watermark/net/).
 ### Welke ondersteuningsopties zijn beschikbaar voor GroupDocs.Watermark voor .NET?
  U kunt ondersteuning en hulp zoeken op het GroupDocs-communityforum[hier](https://forum.groupdocs.com/c/watermark/19).

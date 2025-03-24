@@ -3,7 +3,6 @@ title: Dodaj tekstowy znak wodny
 linktitle: Dodaj tekstowy znak wodny
 second_title: GroupDocs.Watermark API .NET
 description: Z tego przewodnika krok po kroku dowiesz się, jak dodawać tekstowe znaki wodne do dokumentów za pomocą Groupdocs.
-type: docs
 weight: 11
 url: /pl/net/watermarking-basics/add-text-watermark/
 ---

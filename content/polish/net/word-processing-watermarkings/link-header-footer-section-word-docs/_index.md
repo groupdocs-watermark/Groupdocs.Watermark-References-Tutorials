@@ -3,7 +3,6 @@ title: Nagłówek/stopka łącza w sekcji w dokumentach programu Word
 linktitle: Nagłówek/stopka łącza w sekcji w dokumentach programu Word
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak efektywnie łączyć nagłówki i stopki w sekcjach dokumentów programu Word przy użyciu programu GroupDocs.Watermark dla platformy .NET. Zarządzanie dokumentacją i bezpieczeństwo.
-type: docs
 weight: 26
 url: /pl/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ Tak, możesz uzyskać dostęp do bezpłatnego okresu próbnego w witrynie[strona
 ### Czy dostępne są licencje tymczasowe dla GroupDocs.Watermark dla .NET?
  Tak, tymczasowe licencje można uzyskać od[Strona zakupu GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### Czy GroupDocs.Watermark dla .NET oferuje dokumentację dla programistów?
- Tak, dostępna jest obszerna dokumentacja[Tutaj](https://reference.groupdocs.com/Watermark/net/).
+ Tak, dostępna jest obszerna dokumentacja[Tutaj](https://tutorials.groupdocs.com/Watermark/net/).

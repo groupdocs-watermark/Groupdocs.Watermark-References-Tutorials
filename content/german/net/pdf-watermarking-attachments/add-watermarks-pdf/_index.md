@@ -3,7 +3,6 @@ title: Fügen Sie Wasserzeichen zu PDF hinzu
 linktitle: Fügen Sie Wasserzeichen zu PDF hinzu
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in unserer umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit GroupDocs.Watermark für .NET Text- und Bildwasserzeichen zu Ihren PDFs hinzufügen.
-type: docs
 weight: 14
 url: /de/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---

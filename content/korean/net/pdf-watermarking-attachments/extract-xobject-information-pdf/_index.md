@@ -3,7 +3,6 @@ title: PDF에서 XObject 정보 추출
 linktitle: PDF에서 XObject 정보 추출
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 문서 워터마킹의 강력한 기능을 활용하세요. PDF, Word 문서 및 이미지의 워터마크를 원활하게 관리합니다.
-type: docs
 weight: 25
 url: /ko/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---

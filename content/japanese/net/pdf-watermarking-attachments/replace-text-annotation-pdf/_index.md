@@ -3,7 +3,6 @@ title: PDF 内の特定の注釈のテキストを置換
 linktitle: PDF 内の特定の注釈のテキストを置換
 second_title: GroupDocs.Watermark .NET API
 description: この包括的なステップバイステップのチュートリアルでは、Groupdocs.Watermark for .NET を使用して特定の PDF 注釈内のテキストを置換する方法を学びます。
-type: docs
 weight: 40
 url: /ja/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---

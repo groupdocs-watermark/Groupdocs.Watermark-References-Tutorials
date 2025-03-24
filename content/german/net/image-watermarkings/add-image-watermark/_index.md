@@ -3,7 +3,6 @@ title: Bildwasserzeichen hinzufügen
 linktitle: Bildwasserzeichen hinzufügen
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in unserem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit GroupDocs.Watermark für .NET Bildwasserzeichen zu Ihren Dokumenten hinzufügen.
-type: docs
 weight: 11
 url: /de/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ Ja, GroupDocs.Watermark ist sowohl mit .NET Framework als auch .NET Core kompati
 ### Ist es möglich, einem einzelnen Dokument mehrere Wasserzeichen hinzuzufügen?
  Absolut! Sie können mehrere Wasserzeichen hinzufügen, indem Sie die aufrufen`Add` Methode mehrmals mit unterschiedlichen Wasserzeicheninstanzen.
 ### Wo finde ich weitere Beispiele und Dokumentation?
- Weitere Beispiele und eine ausführliche Dokumentation finden Sie unter[GroupDocs.Watermark-Dokumentation](https://reference.groupdocs.com/Watermark/net/).
+ Weitere Beispiele und eine ausführliche Dokumentation finden Sie unter[GroupDocs.Watermark-Dokumentation](https://tutorials.groupdocs.com/Watermark/net/).

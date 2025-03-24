@@ -3,7 +3,6 @@ title: Fügen Sie Wasserzeichen mit Formeinstellungen in Word-Dokumenten hinzu
 linktitle: Fügen Sie Wasserzeichen mit Formeinstellungen in Word-Dokumenten hinzu
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs Watermark für .NET Wasserzeichen mit Formeinstellungen zu Word-Dokumenten hinzufügen. Schützen Sie Ihre Dokumente effektiv.
-type: docs
 weight: 20
 url: /de/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---

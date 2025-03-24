@@ -1,7 +1,6 @@
 ---
 title: Учебники и примеры GroupDocs.Watermark для .NET
 linktitle: GroupDocs.Watermark для учебных пособий по .NET
-type: docs
 weight: 10
 url: /ru/net/
 description: Изучите подробные руководства по GroupDocs.Watermark для .NET. Научитесь добавлять, управлять и защищать водяные знаки в различных форматах документов с помощью пошаговых руководств.

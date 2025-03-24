@@ -1,7 +1,6 @@
 ---
 title: Poradniki i przykłady GroupDocs.Watermark dla .NET
 linktitle: GroupDocs.Watermark dla samouczków .NET
-type: docs
 weight: 10
 url: /pl/net/
 description: Zapoznaj się z obszernymi samouczkami GroupDocs.Watermark dla .NET. Dowiedz się, jak dodawać, zarządzać i zabezpieczać znaki wodne w różnych formatach dokumentów, korzystając z przewodników krok po kroku.

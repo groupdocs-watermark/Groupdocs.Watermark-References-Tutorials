@@ -3,7 +3,6 @@ title: PDF からすべての添付ファイルを抽出
 linktitle: PDF からすべての添付ファイルを抽出
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs.Watermark for .NET を使用して PDF からすべての添付ファイルを抽出する方法を学びます。シームレスな抽出プロセスについては、ステップバイステップのガイドに従ってください。
-type: docs
 weight: 22
 url: /ja/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---

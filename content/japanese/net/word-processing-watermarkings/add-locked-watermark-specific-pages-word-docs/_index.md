@@ -3,7 +3,6 @@ title: Word ドキュメントの特定のページにロックされた透か�
 linktitle: Word ドキュメントの特定のページにロックされた透かしを追加する
 second_title: GroupDocs.Watermark .NET API
 description: 簡単なステップバイステップ ガイドで、GroupDocs.Watermark for .NET を使用して Word 文書の特定のページにロックされたウォーターマークを追加する方法を学びます。
-type: docs
 weight: 12
 url: /ja/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## 結論
 おめでとう！ GroupDocs.Watermark for .NET を使用して、ロックされたウォーターマークを Word 文書の特定のページに追加することに成功しました。このチュートリアルでは、ドキュメントの読み込みから透かし入りファイルの保存までの重要な手順をすべて説明しました。これらの手順に従うことで、ドキュメントに安全に透かしを入れて、コンテンツを不正な編集や使用から保護することができます。
-詳細については、以下を参照してください。[GroupDocs.Watermark ドキュメント](https://reference.groupdocs.com/Watermark/net/) 。ご質問がある場合、またはさらにサポートが必要な場合は、お気軽に次のサイトにアクセスしてください。[サポートフォーラム](https://forum.groupdocs.com/c/watermark/19).
+詳細については、以下を参照してください。[GroupDocs.Watermark ドキュメント](https://tutorials.groupdocs.com/Watermark/net/) 。ご質問がある場合、またはさらにサポートが必要な場合は、お気軽に次のサイトにアクセスしてください。[サポートフォーラム](https://forum.groupdocs.com/c/watermark/19).
 ## よくある質問
 ### .NET 用の GroupDocs.Watermark とは何ですか?
 GroupDocs.Watermark for .NET は、開発者が Word、PDF、Excel などのさまざまな種類のドキュメントにウォーターマークを追加できる強力なライブラリです。

@@ -3,7 +3,6 @@ title: Kopf-/Fußzeile im Abschnitt in Word-Dokumenten verknüpfen
 linktitle: Kopf-/Fußzeile im Abschnitt in Word-Dokumenten verknüpfen
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Kopf- und Fußzeilen in Abschnitten von Word-Dokumenten effizient verknüpfen. Dokumentenmanagement und Sicherheit.
-type: docs
 weight: 26
 url: /de/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ Ja, Sie können über die auf eine kostenlose Testversion zugreifen[Veröffentli
 ### Sind temporäre Lizenzen für GroupDocs.Watermark für .NET verfügbar?
  Ja, temporäre Lizenzen sind bei erhältlich[GroupDocs-Kaufseite](https://purchase.groupdocs.com/temporary-license/).
 ### Bietet GroupDocs.Watermark für .NET Dokumentation für Entwickler?
- Ja, eine umfassende Dokumentation ist vorhanden[Hier](https://reference.groupdocs.com/Watermark/net/).
+ Ja, eine umfassende Dokumentation ist vorhanden[Hier](https://tutorials.groupdocs.com/Watermark/net/).

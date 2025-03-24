@@ -3,7 +3,6 @@ title: Получение информации о фигурах в докуме
 linktitle: Получение информации о фигурах в документах Word
 second_title: GroupDocs.Watermark .NET API
 description: Легко извлекайте ценную информацию из документов Word с помощью GroupDocs для .NET. Легко извлекайте информацию о форме для расширенного анализа данных.
-type: docs
 weight: 24
 url: /ru/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---

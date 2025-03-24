@@ -3,7 +3,6 @@ title: Zoek afbeelding in bijlage van PDF
 linktitle: Zoek afbeelding in bijlage van PDF
 second_title: GroupDocs.Watermark .NET API
 description: Zoek efficiënt naar afbeeldingen in PDF-bijlagen met GroupDocs.Watermark voor .NET. Vereenvoudig uw watermerkbeheerproces moeiteloos.
-type: docs
 weight: 46
 url: /nl/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---

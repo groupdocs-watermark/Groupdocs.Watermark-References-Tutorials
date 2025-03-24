@@ -3,7 +3,6 @@ title: Add Watermark to Specific Pages in Word Docs
 linktitle: Add Watermark to Specific Pages in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add watermarks to specific pages in Word documents effortlessly using Groupdocs.Watermark for .NET. Enhance document security and branding.
-type: docs
 weight: 18
 url: /net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---

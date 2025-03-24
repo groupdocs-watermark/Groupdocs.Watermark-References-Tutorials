@@ -3,7 +3,6 @@ title: पीडीएफ में विशिष्ट एनोटेशन 
 linktitle: पीडीएफ में विशिष्ट एनोटेशन के लिए टेक्स्ट बदलें
 second_title: GroupDocs.Watermark .NET API
 description: इस व्यापक, चरण-दर-चरण ट्यूटोरियल के साथ .NET के लिए Groupdocs.Watermark का उपयोग करके विशिष्ट पीडीएफ एनोटेशन में टेक्स्ट को बदलने का तरीका जानें।
-type: docs
 weight: 40
 url: /hi/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---

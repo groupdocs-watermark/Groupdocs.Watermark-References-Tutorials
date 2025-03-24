@@ -3,7 +3,6 @@ title: ドキュメントを同じファイルまたはストリームに保存
 linktitle: ドキュメントを同じファイルまたはストリームに保存
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs.Watermark for .NET を使用してドキュメントにウォーターマークを追加する方法を学びます。このガイドでは、文書の保護と整合性を確保するための手順を説明します。
-type: docs
 weight: 10
 url: /ja/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ watermarker.Add(watermark);
 watermarker.Save();
 ```
 ## 結論
-Groupdocs for .NET を使用してドキュメントにウォーターマークを追加するのは簡単かつ効率的です。上記の手順に従うことで、ドキュメントを保護し、その整合性を簡単に維持できます。詳細については、以下を参照してください。[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/).
+Groupdocs for .NET を使用してドキュメントにウォーターマークを追加するのは簡単かつ効率的です。上記の手順に従うことで、ドキュメントを保護し、その整合性を簡単に維持できます。詳細については、以下を参照してください。[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/).
 ## よくある質問
 ### テキストの代わりに画像を透かしとして使用できますか?
 はい、Groupdocs.Watermark を使用すると、画像、図形、テキストを透かしとして使用できます。

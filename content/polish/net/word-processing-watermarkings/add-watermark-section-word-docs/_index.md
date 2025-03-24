@@ -3,7 +3,6 @@ title: Dodaj znak wodny do sekcji w dokumentach programu Word
 linktitle: Dodaj znak wodny do sekcji w dokumentach programu Word
 second_title: GroupDocs.Watermark API .NET
 description: Z łatwością dodawaj znaki wodne do dokumentów programu Word za pomocą programu GroupDocs.Watermark dla platformy .NET. Chroń swoje treści, korzystając z tego prostego przewodnika.
-type: docs
 weight: 15
 url: /pl/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

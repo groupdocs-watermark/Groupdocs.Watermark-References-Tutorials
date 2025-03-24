@@ -3,7 +3,6 @@ title: Adicionar marca d'água de anotação somente para impressão ao PDF
 linktitle: Adicionar marca d'água de anotação somente para impressão ao PDF
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda como adicionar marcas d'água de anotação somente para impressão em PDFs usando GroupDocs.Watermark for .NET. Melhore a segurança e a marca dos documentos sem esforço.
-type: docs
 weight: 13
 url: /pt/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---

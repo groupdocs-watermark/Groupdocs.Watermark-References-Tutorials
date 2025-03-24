@@ -3,7 +3,6 @@ title: PDF의 XObject에 워터마크 추가
 linktitle: PDF의 XObject에 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 Groupdocs.Watermark를 사용하여 PDF의 XObject에 워터마크를 추가하는 방법을 알아보세요. 쉬운 구현을 위해 단계별 가이드를 따르세요.
-type: docs
 weight: 20
 url: /ko/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ foreach (PdfPage page in pdfContent.Pages)
 ```
 그리고 거기에 있습니다! 이제 PDF의 모든 XObject에 워터마크가 포함됩니다.
 ## 결론
- Groupdocs를 사용하여 PDF 문서에 워터마크를 추가하는 것은 추가 보안 계층을 제공하는 간단한 프로세스입니다. 이 튜토리얼에 설명된 단계를 따르면 문서가 무단 사용으로부터 보호될 수 있습니다. 기억하세요. 언제든지 다음을 참조할 수 있습니다.[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/) 더 자세한 정보와 고급 기능을 확인하세요.
+ Groupdocs를 사용하여 PDF 문서에 워터마크를 추가하는 것은 추가 보안 계층을 제공하는 간단한 프로세스입니다. 이 튜토리얼에 설명된 단계를 따르면 문서가 무단 사용으로부터 보호될 수 있습니다. 기억하세요. 언제든지 다음을 참조할 수 있습니다.[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/) 더 자세한 정보와 고급 기능을 확인하세요.
 ## FAQ
 ### 텍스트 대신 이미지를 워터마크로 사용할 수 있나요?
 예, .NET용 Groupdocs.Watermark는 텍스트 및 이미지 워터마크를 모두 지원합니다.

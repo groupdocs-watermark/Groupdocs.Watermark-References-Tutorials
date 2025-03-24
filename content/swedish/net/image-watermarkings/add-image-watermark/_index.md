@@ -3,7 +3,6 @@ title: Lägg till bildvattenstämpel
 linktitle: Lägg till bildvattenstämpel
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till bildvattenstämplar i dina dokument med hjälp av GroupDocs.Watermark for .NET med vår detaljerade, steg-för-steg handledning.
-type: docs
 weight: 11
 url: /sv/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ Ja, GroupDocs.Watermark är kompatibel med både .NET Framework och .NET Core.
 ### Är det möjligt att lägga till flera vattenstämplar i ett enda dokument?
  Absolut! Du kan lägga till flera vattenstämplar genom att anropa`Add` metod flera gånger med olika vattenstämpelinstanser.
 ### Var kan jag hitta fler exempel och dokumentation?
- För fler exempel och detaljerad dokumentation, besök[GroupDocs.Watermark dokumentation](https://reference.groupdocs.com/Watermark/net/).
+ För fler exempel och detaljerad dokumentation, besök[GroupDocs.Watermark dokumentation](https://tutorials.groupdocs.com/Watermark/net/).

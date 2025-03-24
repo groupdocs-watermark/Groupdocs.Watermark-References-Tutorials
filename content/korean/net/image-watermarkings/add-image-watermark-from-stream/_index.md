@@ -3,7 +3,6 @@ title: 스트림에서 이미지 워터마크 추가
 linktitle: 스트림에서 이미지 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 문서에 이미지 워터마크를 추가하는 방법을 알아보세요. 원활한 워터마크 통합을 위한 단계별 가이드를 따르세요.
-type: docs
 weight: 12
 url: /ko/net/image-watermarkings/add-image-watermark-from-stream/
 ---

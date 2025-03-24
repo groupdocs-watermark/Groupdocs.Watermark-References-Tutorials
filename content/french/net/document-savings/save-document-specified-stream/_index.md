@@ -3,7 +3,6 @@ title: Enregistrer le document dans le flux spécifié
 linktitle: Enregistrer le document dans le flux spécifié
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment enregistrer un document dans un flux spécifié à l'aide de GroupDocs.Watermark pour .NET avec ce guide étape par étape. Parfait pour les développeurs de tous niveaux.
-type: docs
 weight: 12
 url: /fr/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Oui, GroupDocs prend en charge les filigranes de texte, d’image et même de co
 ### Comment puis-je obtenir un permis temporaire ?
  Vous pouvez obtenir une licence temporaire auprès de[ce lien](https://purchase.groupdocs.com/temporary-license/).
 ### Où puis-je trouver une documentation plus détaillée ?
- Pour une documentation plus détaillée, vous pouvez visiter[ici](https://reference.groupdocs.com/Watermark/net/).
+ Pour une documentation plus détaillée, vous pouvez visiter[ici](https://tutorials.groupdocs.com/Watermark/net/).

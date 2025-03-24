@@ -3,7 +3,6 @@ title: Ganti Gambar untuk Artefak Tertentu di PDF
 linktitle: Ganti Gambar untuk Artefak Tertentu di PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengganti gambar dalam dokumen PDF menggunakan GroupDocs.Watermark untuk .NET dengan tutorial langkah demi langkah yang komprehensif ini.
-type: docs
 weight: 38
 url: /id/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---

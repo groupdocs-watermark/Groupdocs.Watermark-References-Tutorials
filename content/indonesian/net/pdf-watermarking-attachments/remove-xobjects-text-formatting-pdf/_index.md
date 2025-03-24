@@ -3,7 +3,6 @@ title: Hapus XObjects dengan Format Teks Tertentu dalam PDF
 linktitle: Hapus XObjects dengan Format Teks Tertentu dalam PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Hapus XObjects dengan format teks tertentu dengan mudah dari PDF menggunakan GroupDocs.Watermark untuk .NET. Ikuti panduan kami untuk manipulasi dokumen yang lancar.
-type: docs
 weight: 36
 url: /id/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Terakhir, simpan dokumen PDF yang dimodifikasi ke jalur file keluaran yang diten
 Ini menyelesaikan proses menghapus XObjects dengan format teks tertentu dari dokumen PDF.
 
 ## Kesimpulan
-Dengan mengikuti langkah-langkah ini, Anda dapat menghapus XObjects dengan format teks tertentu secara efisien dari dokumen PDF menggunakan GroupDocs.Watermark untuk .NET. Pustaka yang kuat ini tidak hanya menyederhanakan tugas-tugas watermarking tetapi juga menawarkan kemampuan yang kuat untuk manipulasi dokumen. Untuk dokumentasi lebih rinci, kunjungi[GroupDocs.Watermark untuk dokumentasi .NET](https://reference.groupdocs.com/Watermark/net/) . Jika Anda mengalami masalah atau memiliki pertanyaan,[forum dukungan](https://forum.groupdocs.com/c/watermark/19) adalah tempat yang bagus untuk mencari bantuan.
+Dengan mengikuti langkah-langkah ini, Anda dapat menghapus XObjects dengan format teks tertentu secara efisien dari dokumen PDF menggunakan GroupDocs.Watermark untuk .NET. Pustaka yang kuat ini tidak hanya menyederhanakan tugas-tugas watermarking tetapi juga menawarkan kemampuan yang kuat untuk manipulasi dokumen. Untuk dokumentasi lebih rinci, kunjungi[GroupDocs.Watermark untuk dokumentasi .NET](https://tutorials.groupdocs.com/Watermark/net/) . Jika Anda mengalami masalah atau memiliki pertanyaan,[forum dukungan](https://forum.groupdocs.com/c/watermark/19) adalah tempat yang bagus untuk mencari bantuan.
 ## FAQ
 ### Bisakah saya menghapus XObjects dengan format teks berbeda?
 Ya, Anda dapat memodifikasi kode untuk memeriksa atribut pemformatan teks yang berbeda seperti ukuran font, gaya font, atau warna.

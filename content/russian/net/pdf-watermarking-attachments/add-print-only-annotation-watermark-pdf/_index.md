@@ -3,7 +3,6 @@ title: Добавить водяной знак аннотации только 
 linktitle: Добавить водяной знак аннотации только для печати в PDF
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять водяные знаки аннотаций только для печати в PDF-файлы с помощью GroupDocs.Watermark для .NET. Повысьте безопасность документов и брендинг без особых усилий.
-type: docs
 weight: 13
 url: /ru/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---

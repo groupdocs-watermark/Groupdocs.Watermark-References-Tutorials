@@ -3,7 +3,6 @@ title: Dokumentuminformációk lekérése a Streamről
 linktitle: Dokumentuminformációk lekérése a Streamről
 second_title: GroupDocs.Watermark .NET API
 description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan szerezhet be dokumentuminformációkat egy adatfolyamból a GroupDocs.Watermark for .NET segítségével. Az Ön dokumentumkezelési lehetőségei könnyedén.
-type: docs
 weight: 12
 url: /hu/net/document-manipulation/get-document-info-stream/
 ---
@@ -46,10 +45,10 @@ Console.WriteLine("Document size: {0} bytes", info.Size);
 ```
 
 ## Következtetés
- A dokumentuminformációk lekérése egy adatfolyamból a GroupDocs.Watermark for .NET segítségével egyszerű folyamat, ha kezelhető lépésekre van lebontva. Az útmutató követésével hatékonyan integrálhatja ezt a funkciót alkalmazásaiba, így jobb dokumentumkezelést és integritást biztosít. Ne habozzon felfedezni a[dokumentáció](https://reference.groupdocs.com/Watermark/net/) a fejlettebb funkciókért és opciókért.
+ A dokumentuminformációk lekérése egy adatfolyamból a GroupDocs.Watermark for .NET segítségével egyszerű folyamat, ha kezelhető lépésekre van lebontva. Az útmutató követésével hatékonyan integrálhatja ezt a funkciót alkalmazásaiba, így jobb dokumentumkezelést és integritást biztosít. Ne habozzon felfedezni a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) a fejlettebb funkciókért és opciókért.
 ## GYIK
 ### Milyen fájlformátumokat támogat a GroupDocs.Watermark?
- A GroupDocs.Watermark a fájlformátumok széles skáláját támogatja, beleértve a PDF, Word, Excel, PowerPoint és egyebeket. A teljes listát megtalálod a[dokumentáció](https://reference.groupdocs.com/Watermark/net/).
+ A GroupDocs.Watermark a fájlformátumok széles skáláját támogatja, beleértve a PDF, Word, Excel, PowerPoint és egyebeket. A teljes listát megtalálod a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/).
 ### Kipróbálhatom a GroupDocs.Watermark alkalmazást vásárlás előtt?
  Igen, letölthet egy ingyenes próbaverziót a webhelyről[itt](https://releases.groupdocs.com/) és től kérjen ideiglenes engedélyt[itt](https://purchase.groupdocs.com/temporary-license/).
 ### Hogyan telepíthetem a GroupDocs.Watermark for .NET programot?

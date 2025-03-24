@@ -3,7 +3,6 @@ title: Get PDF Dimensions
 linktitle: Get PDF Dimensions
 second_title: GroupDocs.Watermark .NET API
 description: Protect your documents with ease using Groupdocs.Watermark for .NET. Add watermarks, stamps, and annotations effortlessly.
-type: docs
 weight: 26
 url: /net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---

@@ -3,7 +3,6 @@ title: Bảo mật tài liệu chính và xây dựng thương hiệu với Grou
 linktitle: Hướng dẫn về GroupDocs.Watermark
 additionalTitle: Tài liệu tham khảo API GroupDocs
 description: Khai phá sức mạnh của GroupDocs.Watermark bằng các hướng dẫn .NET và Java của chúng tôi. Nắm vững các kỹ thuật tạo hình mờ để bảo mật tài liệu và xây dựng thương hiệu.
-type: docs
 weight: 11
 url: /vi/
 is_root: true

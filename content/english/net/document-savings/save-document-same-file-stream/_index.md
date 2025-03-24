@@ -3,7 +3,6 @@ title: Save Document to Same File or Stream
 linktitle: Save Document to Same File or Stream
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add watermarks to documents using Groupdocs.Watermark for .NET. This guide provides instructions to ensure document protection and integrity.
-type: docs
 weight: 10
 url: /net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Finally, save the document with the watermark applied:
 watermarker.Save();
 ```
 ## Conclusion
-Adding watermarks to your documents using Groupdocs.Watermark for .NET is straightforward and efficient. By following the steps outlined above, you can protect your documents and maintain their integrity effortlessly. For more details, you can refer to the [documentation](https://reference.groupdocs.com/Watermark/net/).
+Adding watermarks to your documents using Groupdocs.Watermark for .NET is straightforward and efficient. By following the steps outlined above, you can protect your documents and maintain their integrity effortlessly. For more details, you can refer to the [documentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ's
 ### Can I use an image as a watermark instead of text?
 Yes, Groupdocs.Watermark allows you to use images, shapes, and text as watermarks.

@@ -3,7 +3,6 @@ title: Document laden vanaf lokale schijf
 linktitle: Document laden vanaf lokale schijf
 second_title: GroupDocs.Watermark .NET API
 description: Bescherm en beheer uw documenten met Groupdocs voor .NET. Volg onze gedetailleerde gids om naadloos watermerken toe te voegen.
-type: docs
 weight: 10
 url: /nl/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Conclusie
 Het toevoegen van watermerken aan uw documenten met Groupdocs voor .NET is eenvoudig en efficiënt. Deze handleiding heeft u door het hele proces geleid, van het instellen van uw omgeving tot het opslaan van een document met een watermerk. Met deze krachtige tool kunt u ervoor zorgen dat uw documenten worden beschermd en dat uw intellectuele eigendom veilig is. 
- Voor meer details, kijk op de[documentatie](https://reference.groupdocs.com/Watermark/net/) , en als u problemen ondervindt, kunt u de[Helpforum](https://forum.groupdocs.com/c/watermark/19) is een uitstekende plek voor hulp. 
+ Voor meer details, kijk op de[documentatie](https://tutorials.groupdocs.com/Watermark/net/) , en als u problemen ondervindt, kunt u de[Helpforum](https://forum.groupdocs.com/c/watermark/19) is een uitstekende plek voor hulp. 
 ## Veelgestelde vragen
 ### Kan ik aangepaste lettertypen voor watermerken gebruiken?
 Ja, Groupdocs ondersteunt aangepaste lettertypen. U kunt elk lettertype opgeven dat op uw systeem is geïnstalleerd.

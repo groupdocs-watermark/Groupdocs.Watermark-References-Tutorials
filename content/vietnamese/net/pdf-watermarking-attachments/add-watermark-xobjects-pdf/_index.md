@@ -3,7 +3,6 @@ title: Thêm hình mờ vào XObjects trong PDF
 linktitle: Thêm hình mờ vào XObjects trong PDF
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ vào XObjects trong PDF bằng Groupdocs.Watermark cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để dễ dàng thực hiện.
-type: docs
 weight: 20
 url: /vi/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ Cuối cùng, lưu tệp PDF có hình mờ vào tệp đầu ra được chỉ 
 ```
 Và bạn có nó rồi đấy! Tệp PDF của bạn hiện chứa hình mờ trên tất cả các XObject của nó.
 ## Phần kết luận
- Thêm hình mờ vào tài liệu PDF của bạn bằng Groupdocs cho .NET là một quy trình đơn giản cung cấp lớp bảo mật bổ sung. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể đảm bảo rằng tài liệu của mình được bảo vệ khỏi việc sử dụng trái phép. Hãy nhớ rằng, bạn luôn có thể tham khảo[tài liệu](https://reference.groupdocs.com/Watermark/net/) để biết thêm thông tin chi tiết và các tính năng nâng cao.
+ Thêm hình mờ vào tài liệu PDF của bạn bằng Groupdocs cho .NET là một quy trình đơn giản cung cấp lớp bảo mật bổ sung. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể đảm bảo rằng tài liệu của mình được bảo vệ khỏi việc sử dụng trái phép. Hãy nhớ rằng, bạn luôn có thể tham khảo[tài liệu](https://tutorials.groupdocs.com/Watermark/net/) để biết thêm thông tin chi tiết và các tính năng nâng cao.
 ## Câu hỏi thường gặp
 ### Tôi có thể sử dụng hình ảnh làm hình mờ thay vì văn bản không?
 Có, Groupdocs.Watermark for .NET hỗ trợ cả hình mờ văn bản và hình ảnh.

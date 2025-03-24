@@ -3,7 +3,6 @@ title: Távolítsa el az alakzatokat meghatározott szövegformázással a Word 
 linktitle: Távolítsa el az alakzatokat meghatározott szövegformázással a Word Dokumentumokban
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan távolíthat el alakzatokat meghatározott szövegformázású Word dokumentumokból a GroupDocs.Watermark for .NET segítségével. Kövesse útmutatónkat a vízjelek hatékony kezeléséhez.
-type: docs
 weight: 31
 url: /hu/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---

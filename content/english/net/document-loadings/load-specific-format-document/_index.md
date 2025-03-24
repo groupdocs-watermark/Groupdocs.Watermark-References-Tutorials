@@ -3,7 +3,6 @@ title: Load Specific Format Document
 linktitle: Load Specific Format Document
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to load and watermark documents using Groupdocs.Watermark for .NET with this step-by-step guide. Protect and brand your content effortlessly.
-type: docs
 weight: 12
 url: /net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Conclusion
-Watermarking documents is a critical step in protecting your content, and Groupdocs.Watermark for .NET makes this process straightforward and efficient. By following this guide, you can easily load and apply watermarks to your documents, ensuring their security and proper branding. For further details and advanced options, refer to the [Groupdocs.Watermark for .NET documentation](https://reference.groupdocs.com/Watermark/net/).
+Watermarking documents is a critical step in protecting your content, and Groupdocs.Watermark for .NET makes this process straightforward and efficient. By following this guide, you can easily load and apply watermarks to your documents, ensuring their security and proper branding. For further details and advanced options, refer to the [Groupdocs.Watermark for .NET documentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ's
 ### Can I use this method for different document formats?
 Yes, Groupdocs.Watermark supports various document formats. You need to adjust the `LoadOptions` accordingly.

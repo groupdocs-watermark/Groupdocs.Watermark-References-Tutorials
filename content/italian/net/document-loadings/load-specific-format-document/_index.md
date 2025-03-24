@@ -3,7 +3,6 @@ title: Carica documento in formato specifico
 linktitle: Carica documento in formato specifico
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come caricare e filigranare i documenti utilizzando Groupdocs per .NET con questa guida passo passo. Proteggi e marchia i tuoi contenuti senza sforzo.
-type: docs
 weight: 12
 url: /it/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Conclusione
-L'applicazione della filigrana ai documenti è un passaggio fondamentale nella protezione dei contenuti e Groupdocs.Watermark per .NET rende questo processo semplice ed efficiente. Seguendo questa guida, puoi caricare e applicare facilmente filigrane ai tuoi documenti, garantendone la sicurezza e il corretto branding. Per ulteriori dettagli e opzioni avanzate, fare riferimento a[Groupdocs.Watermark per la documentazione .NET](https://reference.groupdocs.com/Watermark/net/).
+L'applicazione della filigrana ai documenti è un passaggio fondamentale nella protezione dei contenuti e Groupdocs.Watermark per .NET rende questo processo semplice ed efficiente. Seguendo questa guida, puoi caricare e applicare facilmente filigrane ai tuoi documenti, garantendone la sicurezza e il corretto branding. Per ulteriori dettagli e opzioni avanzate, fare riferimento a[Groupdocs.Watermark per la documentazione .NET](https://tutorials.groupdocs.com/Watermark/net/).
 ## Domande frequenti
 ### Posso utilizzare questo metodo per diversi formati di documento?
  Sì, Groupdocs supporta vari formati di documenti. È necessario regolare il`LoadOptions` di conseguenza.

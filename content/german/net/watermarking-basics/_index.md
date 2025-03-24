@@ -3,7 +3,6 @@ title: Grundlagen des Wasserzeichens
 linktitle: Grundlagen des Wasserzeichens
 second_title: GroupDocs.Watermark .NET-API
 description: Entdecken Sie GroupDocs.Watermark für .NET-Tutorials zum mühelosen Hinzufügen von Bild- und Textwasserzeichen. Schützen Sie Ihre Dokumente mit diesen leicht verständlichen Anleitungen.
-type: docs
 weight: 20
 url: /de/net/watermarking-basics/
 ---

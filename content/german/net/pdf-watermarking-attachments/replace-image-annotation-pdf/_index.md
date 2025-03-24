@@ -3,7 +3,6 @@ title: Bild durch spezifische Anmerkung in PDF ersetzen
 linktitle: Bild durch spezifische Anmerkung in PDF ersetzen
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie Bilder in bestimmten PDF-Anmerkungen mit GroupDocs.Watermark für .NET ersetzen. Diese detaillierte Anleitung deckt alles ab, vom Laden von Dokumenten bis zum Speichern von Änderungen.
-type: docs
 weight: 37
 url: /de/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 Dieser Schritt stellt sicher, dass alle Änderungen gespeichert werden und das geänderte Dokument zur Verwendung bereit ist.
 ## Abschluss
-Glückwunsch! Sie haben mit GroupDocs.Watermark für .NET erfolgreich Bilder in bestimmten Anmerkungen in einem PDF-Dokument ersetzt. Diese leistungsstarke Bibliothek erleichtert die Bewältigung komplexer PDF-Wasserzeichenaufgaben und erweitert Ihre Dokumentenverwaltungsfunktionen. Weitere Anpassungen und erweiterte Funktionen finden Sie unter[GroupDocs.Watermark-Dokumentation](https://reference.groupdocs.com/Watermark/net/).
+Glückwunsch! Sie haben mit GroupDocs.Watermark für .NET erfolgreich Bilder in bestimmten Anmerkungen in einem PDF-Dokument ersetzt. Diese leistungsstarke Bibliothek erleichtert die Bewältigung komplexer PDF-Wasserzeichenaufgaben und erweitert Ihre Dokumentenverwaltungsfunktionen. Weitere Anpassungen und erweiterte Funktionen finden Sie unter[GroupDocs.Watermark-Dokumentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQs
 ### Kann ich Bilder in Anmerkungen auf allen Seiten einer PDF-Datei ersetzen?
 Ja, Sie können alle Seiten der PDF-Datei durchlaufen, indem Sie die Schleife so anpassen, dass sie die Anmerkungen jeder Seite durchgeht.

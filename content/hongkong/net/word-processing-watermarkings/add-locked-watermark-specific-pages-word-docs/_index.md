@@ -3,7 +3,6 @@ title: 將鎖定浮水印新增至 Word 文件中的特定頁面
 linktitle: 將鎖定浮水印新增至 Word 文件中的特定頁面
 second_title: GroupDocs.Watermark .NET API
 description: 透過我們簡單的逐步指南，了解如何使用 GroupDocs.Watermark for .NET 將鎖定浮水印新增至 Word 文件中的特定頁面。
-type: docs
 weight: 12
 url: /zh-hant/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## 結論
 恭喜！您已使用 GroupDocs.Watermark for .NET 成功將鎖定浮水印新增至 Word 文件中的特定頁面。本教學涵蓋了從載入文件到保存浮水印文件的所有基本步驟。透過執行這些步驟，您可以確保您的文件帶有安全的浮水印，從而保護您的內容免遭未經授權的編輯和使用。
-欲了解更多信息，您可以參考[GroupDocs.Watermark 文檔](https://reference.groupdocs.com/Watermark/net/)。如果您有任何疑問或需要進一步協助，請隨時訪問[支援論壇](https://forum.groupdocs.com/c/watermark/19).
+欲了解更多信息，您可以參考[GroupDocs.Watermark 文檔](https://tutorials.groupdocs.com/Watermark/net/)。如果您有任何疑問或需要進一步協助，請隨時訪問[支援論壇](https://forum.groupdocs.com/c/watermark/19).
 ## 常見問題解答
 ### 什麼是 .NET 的 GroupDocs.Watermark？
 GroupDocs.Watermark for .NET 是一個功能強大的程式庫，可讓開發人員在各種類型的文件中添加浮水印，包括 Word、PDF、Excel 等。

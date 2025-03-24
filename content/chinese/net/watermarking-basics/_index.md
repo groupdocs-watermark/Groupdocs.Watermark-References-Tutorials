@@ -3,7 +3,6 @@ title: 水印基础知识
 linktitle: 水印基础知识
 second_title: GroupDocs.Watermark .NET API
 description: 探索 GroupDocs.Watermark for .NET 教程，轻松添加图像和文本水印。使用这些易于遵循的指南来保护您的文档。
-type: docs
 weight: 20
 url: /zh/net/watermarking-basics/
 ---

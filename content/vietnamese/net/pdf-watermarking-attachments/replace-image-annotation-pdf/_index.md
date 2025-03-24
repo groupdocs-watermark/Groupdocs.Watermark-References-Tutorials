@@ -3,7 +3,6 @@ title: Thay thế hình ảnh cho chú thích cụ thể trong PDF
 linktitle: Thay thế hình ảnh cho chú thích cụ thể trong PDF
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thay thế hình ảnh trong chú thích PDF cụ thể bằng GroupDocs.Watermark cho .NET. Hướng dẫn chi tiết này bao gồm mọi thứ từ tải tài liệu đến lưu thay đổi.
-type: docs
 weight: 37
 url: /vi/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 Bước này đảm bảo rằng tất cả các thay đổi đều được lưu và tài liệu đã sửa đổi đã sẵn sàng để sử dụng.
 ## Phần kết luận
-Chúc mừng! Bạn đã thay thế thành công hình ảnh trong các chú thích cụ thể trong tài liệu PDF bằng GroupDocs.Watermark cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng xử lý các tác vụ tạo hình mờ phức tạp trên PDF, nâng cao khả năng quản lý tài liệu của bạn. Để có thêm tùy chỉnh và các tính năng nâng cao, hãy khám phá[Tài liệu GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+Chúc mừng! Bạn đã thay thế thành công hình ảnh trong các chú thích cụ thể trong tài liệu PDF bằng GroupDocs.Watermark cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng xử lý các tác vụ tạo hình mờ phức tạp trên PDF, nâng cao khả năng quản lý tài liệu của bạn. Để có thêm tùy chỉnh và các tính năng nâng cao, hãy khám phá[Tài liệu GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).
 ## Câu hỏi thường gặp
 ### Tôi có thể thay thế hình ảnh trong chú thích trên tất cả các trang của tệp PDF không?
 Có, bạn có thể duyệt qua tất cả các trang của tệp PDF bằng cách điều chỉnh vòng lặp để xem qua chú thích của từng trang.

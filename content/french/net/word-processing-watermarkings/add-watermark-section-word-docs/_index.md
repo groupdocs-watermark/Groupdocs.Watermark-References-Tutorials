@@ -3,7 +3,6 @@ title: Ajouter un filigrane à la section dans Word Docs
 linktitle: Ajouter un filigrane à la section dans Word Docs
 second_title: API GroupDocs.Watermark .NET
 description: Ajoutez facilement des filigranes aux documents Word à l'aide de GroupDocs.Watermark pour .NET. Protégez votre contenu avec ce guide simple.
-type: docs
 weight: 15
 url: /fr/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

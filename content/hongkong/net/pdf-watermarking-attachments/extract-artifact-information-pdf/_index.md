@@ -3,7 +3,6 @@ title: 從 PDF 提取工件信息
 linktitle: 從 PDF 提取工件信息
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 從 PDF 檔案中擷取工件資訊。增強您的文件處理能力。
-type: docs
 weight: 24
 url: /zh-hant/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---

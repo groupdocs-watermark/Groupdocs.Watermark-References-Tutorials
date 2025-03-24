@@ -3,7 +3,6 @@ title: Akıştan Belge Bilgilerini Al
 linktitle: Akıştan Belge Bilgilerini Al
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu adım adım kılavuzla GroupDocs.Watermark for .NET'i kullanarak bir akıştan belge bilgilerini nasıl alacağınızı öğrenin. Belge yönetimi yetenekleriniz zahmetsizce.
-type: docs
 weight: 12
 url: /tr/net/document-manipulation/get-document-info-stream/
 ---
@@ -46,10 +45,10 @@ Console.WriteLine("Document size: {0} bytes", info.Size);
 ```
 
 ## Çözüm
- GroupDocs.Watermark for .NET'i kullanarak bir akıştan belge bilgilerinin alınması, yönetilebilir adımlara bölündüğünde basit bir işlemdir. Bu kılavuzu takip ederek bu işlevselliği uygulamalarınıza verimli bir şekilde entegre edebilir, daha iyi belge yönetimi ve bütünlüğü sağlayabilirsiniz. Keşfetmekten çekinmeyin[dokümantasyon](https://reference.groupdocs.com/Watermark/net/) Daha gelişmiş özellikler ve seçenekler için.
+ GroupDocs.Watermark for .NET'i kullanarak bir akıştan belge bilgilerinin alınması, yönetilebilir adımlara bölündüğünde basit bir işlemdir. Bu kılavuzu takip ederek bu işlevselliği uygulamalarınıza verimli bir şekilde entegre edebilir, daha iyi belge yönetimi ve bütünlüğü sağlayabilirsiniz. Keşfetmekten çekinmeyin[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/) Daha gelişmiş özellikler ve seçenekler için.
 ## SSS'ler
 ### GroupDocs.Watermark hangi dosya formatlarını destekler?
- GroupDocs.Watermark, PDF, Word, Excel, PowerPoint ve daha fazlasını içeren çok çeşitli dosya formatlarını destekler. Listenin tamamını şurada bulabilirsiniz[dokümantasyon](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark, PDF, Word, Excel, PowerPoint ve daha fazlasını içeren çok çeşitli dosya formatlarını destekler. Listenin tamamını şurada bulabilirsiniz[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/).
 ### Satın almadan önce GroupDocs.Watermark'ı deneyebilir miyim?
  Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.groupdocs.com/) ve geçici lisans başvurusunda bulunun[Burada](https://purchase.groupdocs.com/temporary-license/).
 ### .NET için GroupDocs.Watermark'ı nasıl yüklerim?

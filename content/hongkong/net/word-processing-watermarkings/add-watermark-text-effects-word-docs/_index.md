@@ -3,7 +3,6 @@ title: 在 Word 文件中加入帶有文字效果的浮水印
 linktitle: 在 Word 文件中加入帶有文字效果的浮水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 將具有文字效果的自訂浮水印新增至 Word 文件。輕鬆記錄安全性和視覺吸引力。
-type: docs
 weight: 21
 url: /zh-hant/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---

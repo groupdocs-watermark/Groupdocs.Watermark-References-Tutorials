@@ -3,7 +3,6 @@ title: PDF 워터마킹 및 첨부
 linktitle: PDF 워터마킹 및 첨부
 second_title: GroupDocs.Watermark .NET API
 description: PDF 워터마킹 및 첨부 파일에 대한 .NET용 GroupDocs.Watermark 튜토리얼을 살펴보세요. PDF의 보안과 브랜딩을 강화하는 단계별 방법을 알아보세요.
-type: docs
 weight: 25
 url: /ko/net/pdf-watermarking-attachments/
 ---

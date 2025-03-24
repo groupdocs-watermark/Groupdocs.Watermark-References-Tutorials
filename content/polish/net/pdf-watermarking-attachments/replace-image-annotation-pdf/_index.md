@@ -3,7 +3,6 @@ title: Zamień obraz na konkretną adnotację w formacie PDF
 linktitle: Zamień obraz na konkretną adnotację w formacie PDF
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak zastępować obrazy w określonych adnotacjach PDF przy użyciu programu GroupDocs.Watermark dla platformy .NET. Ten szczegółowy przewodnik obejmuje wszystko, od ładowania dokumentów po zapisywanie zmian.
-type: docs
 weight: 37
 url: /pl/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 Ten krok gwarantuje, że wszystkie zmiany zostaną zapisane, a zmodyfikowany dokument będzie gotowy do użycia.
 ## Wniosek
-Gratulacje! Pomyślnie zastąpiłeś obrazy w określonych adnotacjach w dokumencie PDF za pomocą GroupDocs.Watermark dla .NET. Ta potężna biblioteka ułatwia obsługę złożonych zadań związanych ze znakami wodnymi w plikach PDF, zwiększając możliwości zarządzania dokumentami. Aby uzyskać dalsze możliwości dostosowywania i zaawansowane funkcje, zapoznaj się z[Dokumentacja GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+Gratulacje! Pomyślnie zastąpiłeś obrazy w określonych adnotacjach w dokumencie PDF za pomocą GroupDocs.Watermark dla .NET. Ta potężna biblioteka ułatwia obsługę złożonych zadań związanych ze znakami wodnymi w plikach PDF, zwiększając możliwości zarządzania dokumentami. Aby uzyskać dalsze możliwości dostosowywania i zaawansowane funkcje, zapoznaj się z[Dokumentacja GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).
 ## Często zadawane pytania
 ### Czy mogę zastąpić obrazy w adnotacjach na wszystkich stronach pliku PDF?
 Tak, możesz przeglądać wszystkie strony pliku PDF, dostosowując pętlę tak, aby przeglądała adnotacje na każdej stronie.

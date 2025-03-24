@@ -3,7 +3,6 @@ title: Dapatkan Properti Bagian di Word Docs
 linktitle: Dapatkan Properti Bagian di Word Docs
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengekstrak properti bagian dari dokumen Word menggunakan Groupdocs untuk .NET. Tingkatkan kemampuan manipulasi dokumen Anda dengan mudah.
-type: docs
 weight: 23
 url: /id/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---

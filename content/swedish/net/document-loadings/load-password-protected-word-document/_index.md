@@ -3,7 +3,6 @@ title: Ladda lösenordsskyddat Word-dokument
 linktitle: Ladda lösenordsskyddat Word-dokument
 second_title: GroupDocs.Watermark .NET API
 description: Lägg enkelt till vattenstämplar i lösenordsskyddade Word-dokument med hjälp av GroupDocs.Watermark för .NET med vår omfattande steg-för-steg-guide.
-type: docs
 weight: 14
 url: /sv/net/document-loadings/load-password-protected-word-document/
 ---

@@ -3,7 +3,6 @@ title: Dodaj zablokowany znak wodny do wszystkich stron w dokumentach programu W
 linktitle: Dodaj zablokowany znak wodny do wszystkich stron w dokumentach programu Word
 second_title: GroupDocs.Watermark API .NET
 description: Zabezpiecz swoje dokumenty, dodając zablokowane znaki wodne za pomocą Groupdocs.Watermark dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby ułatwić wdrożenie.
-type: docs
 weight: 11
 url: /pl/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---

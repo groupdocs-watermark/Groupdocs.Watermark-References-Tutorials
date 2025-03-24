@@ -3,7 +3,6 @@ title: Adicionar anexo ao PDF
 linktitle: Adicionar anexo ao PDF
 second_title: API GroupDocs.Watermark .NET
 description: Aprimore seus recursos de gerenciamento de documentos .NET com GroupDocs.Watermark para marcas d'água e manuseio de anexos perfeitos.
-type: docs
 weight: 12
 url: /pt/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---

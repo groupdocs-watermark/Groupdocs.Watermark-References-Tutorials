@@ -3,7 +3,6 @@ title: إضافة علامة مائية توضيحية إلى ملف PDF
 linktitle: إضافة علامة مائية توضيحية إلى ملف PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية توضيحية إلى مستندات PDF بسهولة باستخدام GroupDocs.Watermark لـ .NET. تعزيز العلامة التجارية للمستندات وأمانها بسهولة.
-type: docs
 weight: 10
 url: /ar/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---

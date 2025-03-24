@@ -3,7 +3,6 @@ title: Word ドキュメントにテキスト効果を使用して透かしを�
 linktitle: Word ドキュメントにテキスト効果を使用して透かしを追加する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、テキスト効果のあるカスタム ウォーターマークを Word 文書に追加する方法を学びます。ドキュメントのセキュリティと視覚的なアピールを簡単に実現します。
-type: docs
 weight: 21
 url: /ja/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Rastrovat stránku PDF
 linktitle: Rastrovat stránku PDF
 second_title: GroupDocs.Watermark .NET API
 description: Vylepšete zabezpečení dokumentů pomocí GroupDocs pro .NET. Bezproblémově přidejte vodoznaky do PDF a dalších formátů.
-type: docs
 weight: 28
 url: /cs/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---

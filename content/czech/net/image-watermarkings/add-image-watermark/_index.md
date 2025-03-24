@@ -3,7 +3,6 @@ title: Přidat obrázek vodoznak
 linktitle: Přidat obrázek vodoznak
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak přidat obrázkové vodoznaky do dokumentů pomocí GroupDocs.Watermark for .NET s naším podrobným, podrobným návodem.
-type: docs
 weight: 11
 url: /cs/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ Ano, GroupDocs.Watermark je kompatibilní s .NET Framework i .NET Core.
 ### Je možné přidat více vodoznaků do jednoho dokumentu?
  Absolutně! Můžete přidat více vodoznaků zavoláním na`Add` metoda vícekrát s různými instancemi vodoznaku.
 ### Kde najdu další příklady a dokumentaci?
- Další příklady a podrobnou dokumentaci naleznete na adrese[Dokumentace GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ Další příklady a podrobnou dokumentaci naleznete na adrese[Dokumentace GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

@@ -3,7 +3,6 @@ title: Link Header/Footer in Section in Word Docs
 linktitle: Link Header/Footer in Section in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to efficiently link headers and footers within sections of Word documents using GroupDocs.Watermark for .NET. Document management and security.
-type: docs
 weight: 26
 url: /net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ You can find support and resources on the [GroupDocs forum](https://forum.groupd
 ### Are temporary licenses available for GroupDocs.Watermark for .NET?
 Yes, temporary licenses can be obtained from the [GroupDocs purchase page](https://purchase.groupdocs.com/temporary-license/).
 ### Does GroupDocs.Watermark for .NET offer documentation for developers?
-Yes, comprehensive documentation is available [here](https://reference.groupdocs.com/Watermark/net/).
+Yes, comprehensive documentation is available [here](https://tutorials.groupdocs.com/Watermark/net/).

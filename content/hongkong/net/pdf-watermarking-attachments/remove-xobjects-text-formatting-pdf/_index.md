@@ -3,7 +3,6 @@ title: 刪除 PDF 中具有特定文字格式的 XObject
 linktitle: 刪除 PDF 中具有特定文字格式的 XObject
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 輕鬆從 PDF 中刪除具有特定文字格式的 XObject。請遵循我們的無縫文件操作指南。
-type: docs
 weight: 36
 url: /zh-hant/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ foreach (PdfPage page in pdfContent.Pages)
 這樣就完成了從 PDF 文件中刪除具有特定文字格式的 XObject 的過程。
 
 ## 結論
-透過執行以下步驟，您可以使用 GroupDocs.Watermark for .NET 從 PDF 文件中有效刪除具有特定文字格式的 XObject。這個強大的庫不僅簡化了浮水印任務，還提供了強大的文件操作功能。如需更詳細的文檔，請訪問[.NET 文件的 GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/) 。如果您遇到任何問題或有疑問，[支援論壇](https://forum.groupdocs.com/c/watermark/19)是個尋求幫助的好地方。
+透過執行以下步驟，您可以使用 GroupDocs.Watermark for .NET 從 PDF 文件中有效刪除具有特定文字格式的 XObject。這個強大的庫不僅簡化了浮水印任務，還提供了強大的文件操作功能。如需更詳細的文檔，請訪問[.NET 文件的 GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/) 。如果您遇到任何問題或有疑問，[支援論壇](https://forum.groupdocs.com/c/watermark/19)是個尋求幫助的好地方。
 ## 常見問題解答
 ### 我可以刪除具有不同文字格式的 XObject 嗎？
 是的，您可以修改程式碼來檢查不同的文字格式屬性，例如字體大小、字體樣式或顏色。

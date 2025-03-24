@@ -3,7 +3,6 @@ title: Tambahkan Tanda Air Teks
 linktitle: Tambahkan Tanda Air Teks
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air teks ke dokumen Anda menggunakan Groupdocs untuk .NET dengan panduan langkah demi langkah ini.
-type: docs
 weight: 11
 url: /id/net/watermarking-basics/add-text-watermark/
 ---

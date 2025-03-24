@@ -3,7 +3,6 @@ title: 이미지 워터마크 추가
 linktitle: 이미지 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: 자세한 단계별 튜토리얼을 통해 .NET용 GroupDocs.Watermark를 사용하여 문서에 이미지 워터마크를 추가하는 방법을 알아보세요.
-type: docs
 weight: 11
 url: /ko/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ GroupDocs.Watermark는 PDF, DOCX, PPTX, XLSX 및 JPEG, PNG와 같은 이미지 �
 ### 단일 문서에 여러 개의 워터마크를 추가할 수 있습니까?
  전적으로! 다음을 호출하여 여러 워터마크를 추가할 수 있습니다.`Add` 다른 워터마크 인스턴스를 사용하여 여러 번 메서드를 사용합니다.
 ### 더 많은 예제와 문서는 어디에서 찾을 수 있나요?
- 더 많은 예제와 자세한 문서를 보려면 다음을 방문하세요.[GroupDocs.Watermark 문서](https://reference.groupdocs.com/Watermark/net/).
+ 더 많은 예제와 자세한 문서를 보려면 다음을 방문하세요.[GroupDocs.Watermark 문서](https://tutorials.groupdocs.com/Watermark/net/).

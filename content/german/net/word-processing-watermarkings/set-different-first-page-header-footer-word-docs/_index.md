@@ -3,7 +3,6 @@ title: Legen Sie in Word-Dokumenten eine andere Kopf-/Fußzeile für die erste S
 linktitle: Legen Sie in Word-Dokumenten eine andere Kopf-/Fußzeile für die erste Seite fest
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET unterschiedliche Kopf- und Fußzeilen auf der ersten Seite von Word-Dokumenten festlegen.
-type: docs
 weight: 36
 url: /de/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Ja, Benutzer können eine kostenlose Testversion von GroupDocs.Watermark für .N
 ### Kann ich eine temporäre Lizenz für die kurzfristige Nutzung erwerben?
  Ja, temporäre Lizenzen für GroupDocs für .NET können bei erworben werden[Seite zum Kauf einer temporären Lizenz](https://purchase.groupdocs.com/temporary-license/).
 ### Wo finde ich eine umfassende Dokumentation zu GroupDocs.Watermark für .NET?
- Eine ausführliche Dokumentation zu GroupDocs.Watermark für .NET finden Sie unter[Referenzseite](https://reference.groupdocs.com/Watermark/net/).
+ Eine ausführliche Dokumentation zu GroupDocs.Watermark für .NET finden Sie unter[Referenzseite](https://tutorials.groupdocs.com/Watermark/net/).

@@ -3,7 +3,6 @@ title: Extract XObject Information from PDF
 linktitle: Extract XObject Information from PDF
 second_title: GroupDocs.Watermark .NET API
 description: Unlock the power of document watermarking with GroupDocs.Watermark for .NET. Seamlessly manage watermarks in PDFs, Word documents, and images.
-type: docs
 weight: 25
 url: /net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---
@@ -17,7 +16,7 @@ Before diving into GroupDocs.Watermark for .NET, ensure you have the following p
 
 ## Importing Namespaces
 To start using GroupDocs.Watermark for .NET in your project, you need to import the necessary namespaces.
-In your .NET project, add a reference to GroupDocs.Watermark.dll.
+In your .NET project, add a tutorials to GroupDocs.Watermark.dll.
 ```csharp
 using GroupDocs.Watermark.Contents.Pdf;
 using GroupDocs.Watermark.Options.Pdf;

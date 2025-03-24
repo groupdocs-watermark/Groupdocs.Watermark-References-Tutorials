@@ -3,7 +3,6 @@ title: Dodaj znak wodny obrazu
 linktitle: Dodaj znak wodny obrazu
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak dodawać graficzne znaki wodne do swoich dokumentów za pomocą GroupDocs.Watermark dla platformy .NET, korzystając ze szczegółowego samouczka krok po kroku.
-type: docs
 weight: 11
 url: /pl/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ Tak, GroupDocs.Watermark jest kompatybilny zarówno z .NET Framework, jak i .NET
 ### Czy można dodać wiele znaków wodnych do jednego dokumentu?
  Absolutnie! Możesz dodać wiele znaków wodnych, wywołując metodę`Add` metodę wielokrotnie z różnymi instancjami znaku wodnego.
 ### Gdzie mogę znaleźć więcej przykładów i dokumentacji?
- Więcej przykładów i szczegółową dokumentację można znaleźć na stronie[Dokumentacja GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ Więcej przykładów i szczegółową dokumentację można znaleźć na stronie[Dokumentacja GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

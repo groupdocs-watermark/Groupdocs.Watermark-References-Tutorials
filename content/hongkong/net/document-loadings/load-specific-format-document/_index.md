@@ -3,7 +3,6 @@ title: 載入特定格式文檔
 linktitle: 載入特定格式文檔
 second_title: GroupDocs.Watermark .NET API
 description: 透過此逐步指南了解如何使用 Groupdocs for .NET 載入文件並為其新增浮水印。輕鬆保護您的內容並為其建立品牌。
-type: docs
 weight: 12
 url: /zh-hant/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## 結論
-在文件中添加浮水印是保護內容的關鍵步驟，Groupdocs.Watermark for .NET 讓此流程簡單且有效率。透過遵循本指南，您可以輕鬆載入浮水印並將其應用到文件中，確保其安全性和正確的品牌標識。如需更多詳細資訊和進階選項，請參閱[.NET 文件的 Groupdocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+在文件中添加浮水印是保護內容的關鍵步驟，Groupdocs.Watermark for .NET 讓此流程簡單且有效率。透過遵循本指南，您可以輕鬆載入浮水印並將其應用到文件中，確保其安全性和正確的品牌標識。如需更多詳細資訊和進階選項，請參閱[.NET 文件的 Groupdocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).
 ## 常見問題解答
 ### 我可以對不同的文件格式使用此方法嗎？
 是的，Groupdocs 支援各種文件格式。您需要調整`LoadOptions`因此。

@@ -3,7 +3,6 @@ title: Свяжите все верхние и нижние колонтитул
 linktitle: Свяжите все верхние и нижние колонтитулы в разделах документов Word
 second_title: GroupDocs.Watermark .NET API
 description: Легко связывайте верхние и нижние колонтитулы в документах Word с помощью GroupDocs.Watermark для .NET. Обеспечьте последовательность и профессионализм с легкостью.
-type: docs
 weight: 25
 url: /ru/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

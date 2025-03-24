@@ -3,7 +3,6 @@ title: PDF에서 아티팩트 제거
 linktitle: PDF에서 아티팩트 제거
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 PDF 문서에서 아티팩트를 손쉽게 제거하는 방법을 알아보세요. 당사의 포괄적인 튜토리얼을 통해 프로세스를 단계별로 마스터하세요.
-type: docs
 weight: 31
 url: /ko/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
@@ -66,4 +65,4 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### .NET용 GroupDocs.Watermark의 임시 라이센스를 구입할 수 있습니까?
  예, 제공된 임시 라이선스를 취득할 수 있습니다.[원천](https://purchase.groupdocs.com/temporary-license/).
 ### .NET용 GroupDocs.Watermark에 사용할 수 있는 포괄적인 문서 리소스가 있습니까?
- 예, 사용 가능한 자세한 문서를 참조할 수 있습니다.[여기](https://reference.groupdocs.com/Watermark/net/) 철저한 지도와 통찰을 위해.
+ 예, 사용 가능한 자세한 문서를 참조할 수 있습니다.[여기](https://tutorials.groupdocs.com/Watermark/net/) 철저한 지도와 통찰을 위해.

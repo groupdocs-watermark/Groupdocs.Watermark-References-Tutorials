@@ -3,7 +3,6 @@ title: Word ドキュメントのセクション画像に透かしを追加す�
 linktitle: Word ドキュメントのセクション画像に透かしを追加する
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET を使用して Word 文書内の画像にウォーターマークを追加する方法を説明します。安全かつ専門的な文書保護のためのガイドに従ってください。
-type: docs
 weight: 16
 url: /ja/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## 結論
 Word 文書内の画像に透かしを追加することは、コンテンツを保護する強力な方法です。 Groupdocs.Watermark for .NET を使用すると、このプロセスは簡単かつ効率的になります。このチュートリアルで概説されている手順に従って、ドキュメントが安全で適切に保護されていることを確認してください。
-さらに詳細なドキュメントについては、次のサイトを参照してください。[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/) 。ご質問がある場合、またはさらにサポートが必要な場合は、[サポートフォーラム](https://forum.groupdocs.com/c/watermark/19).
+さらに詳細なドキュメントについては、次のサイトを参照してください。[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/) 。ご質問がある場合、またはさらにサポートが必要な場合は、[サポートフォーラム](https://forum.groupdocs.com/c/watermark/19).
 ## よくある質問
 ### 透かしテキストをカスタマイズできますか?
 はい、透かしのテキスト、フォント、サイズ、配置、回転をニーズに合わせてカスタマイズできます。
 ### 複数のセクションに透かしを追加することはできますか?
 はい、各セクションをループして、すべてのセクションの画像に透かしを適用できます。
 ### この方法を他のドキュメント形式に使用できますか?
- Groupdocs.Watermark はさまざまなドキュメント形式をサポートしています。チェックしてください[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/)詳細については。
+ Groupdocs.Watermark はさまざまなドキュメント形式をサポートしています。チェックしてください[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/)詳細については。
 ### 仮免許はどうやって取得できますか?
 仮免許を取得できます[ここ](https://purchase.groupdocs.com/temporary-license/).
 ### Groupdocs.Watermark の使用中に問題が発生した場合はどうすればよいですか?

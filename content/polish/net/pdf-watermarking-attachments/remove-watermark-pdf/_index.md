@@ -3,7 +3,6 @@ title: Usuń znak wodny z pliku PDF
 linktitle: Usuń znak wodny z pliku PDF
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak usunąć znaki wodne z plików PDF za pomocą GroupDocs.Watermark dla .NET. Proste kroki do profesjonalnej edycji dokumentów.
-type: docs
 weight: 34
 url: /pl/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---

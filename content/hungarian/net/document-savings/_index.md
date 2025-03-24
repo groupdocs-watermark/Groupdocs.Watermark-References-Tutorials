@@ -3,7 +3,6 @@ title: Dokumentum mentése
 linktitle: Dokumentum mentése
 second_title: GroupDocs.Watermark .NET API
 description: Fedezze fel a GroupDocs.Watermark for .NET oktatóanyagát a dokumentumok vízjelekkel történő mentéséről. Ismerje meg lépésről lépésre a dokumentumok biztonságának és kezelésének javítására szolgáló módszereket.
-type: docs
 weight: 23
 url: /hu/net/document-savings/
 ---

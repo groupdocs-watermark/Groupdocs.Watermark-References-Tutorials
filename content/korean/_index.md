@@ -3,7 +3,6 @@ title: GroupDocs.Watermark를 사용한 마스터 문서 보안 및 브랜딩
 linktitle: GroupDocs.Watermark 튜토리얼
 additionalTitle: GroupDocs API 참조
 description: .NET 및 Java 튜토리얼을 통해 GroupDocs.Watermark의 강력한 기능을 활용해 보세요. 문서 보안 및 브랜딩을 위한 마스터 워터마킹 기술.
-type: docs
 weight: 11
 url: /ko/
 is_root: true

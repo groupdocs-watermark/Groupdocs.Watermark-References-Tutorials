@@ -3,7 +3,6 @@ title: Word Belgelerindeki Bölümlerdeki Tüm Üstbilgileri/Altbilgileri Bağla
 linktitle: Word Belgelerindeki Bölümlerdeki Tüm Üstbilgileri/Altbilgileri Bağlantılandırın
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki üstbilgileri ve altbilgileri zahmetsizce bağlayın. Tutarlılığı ve profesyonelliği kolaylıkla sağlayın.
-type: docs
 weight: 25
 url: /tr/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

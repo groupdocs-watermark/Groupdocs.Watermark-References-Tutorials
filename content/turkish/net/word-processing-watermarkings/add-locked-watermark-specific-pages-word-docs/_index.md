@@ -3,7 +3,6 @@ title: Word Belgelerindeki Belirli Sayfalara Kilitli Filigran Ekleme
 linktitle: Word Belgelerindeki Belirli Sayfalara Kilitli Filigran Ekleme
 second_title: GroupDocs.Watermark .NET API'si
 description: Kolay adım adım kılavuzumuzla GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki belirli sayfalara nasıl kilitli filigran ekleyeceğinizi öğrenin.
-type: docs
 weight: 12
 url: /tr/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## Çözüm
 Tebrikler! GroupDocs.Watermark for .NET'i kullanarak Word belgesindeki belirli sayfalara başarıyla kilitli filigran eklediniz. Bu eğitim, belgenin yüklenmesinden filigranlı dosyanın kaydedilmesine kadar tüm önemli adımları kapsıyordu. Bu adımları izleyerek belgelerinizin güvenli bir şekilde filigranlandığından ve içeriğinizin yetkisiz düzenleme ve kullanıma karşı korunduğundan emin olabilirsiniz.
- Daha fazla bilgi için şu adrese başvurabilirsiniz:[GroupDocs.Watermark belgeleri](https://reference.groupdocs.com/Watermark/net/) . Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, şu adresi ziyaret etmekten çekinmeyin:[destek Forumu](https://forum.groupdocs.com/c/watermark/19).
+ Daha fazla bilgi için şu adrese başvurabilirsiniz:[GroupDocs.Watermark belgeleri](https://tutorials.groupdocs.com/Watermark/net/) . Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, şu adresi ziyaret etmekten çekinmeyin:[destek Forumu](https://forum.groupdocs.com/c/watermark/19).
 ## SSS'ler
 ### .NET için GroupDocs.Watermark nedir?
 GroupDocs.Watermark for .NET, geliştiricilerin Word, PDF, Excel ve daha fazlasını içeren çeşitli belge türlerine filigran eklemesine olanak tanıyan güçlü bir kitaplıktır.

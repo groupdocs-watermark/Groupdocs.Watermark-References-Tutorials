@@ -3,7 +3,6 @@ title: Přidejte artefaktový vodoznak do PDF
 linktitle: Přidejte artefaktový vodoznak do PDF
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak snadno přidávat artefakty do souborů PDF pomocí Groupdocs.Watermark for .NET. Chraňte své dokumenty snadno.
-type: docs
 weight: 11
 url: /cs/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---

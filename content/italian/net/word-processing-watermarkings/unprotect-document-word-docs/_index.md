@@ -3,7 +3,6 @@ title: Rimuovere la protezione del documento in documenti Word
 linktitle: Rimuovere la protezione del documento in documenti Word
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come rimuovere facilmente la protezione dei documenti Word utilizzando GroupDocs.Watermark per .NET. Segui la nostra guida passo passo.
-type: docs
 weight: 38
 url: /it/net/word-processing-watermarkings/unprotect-document-word-docs/
 ---

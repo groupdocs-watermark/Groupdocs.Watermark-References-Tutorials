@@ -3,7 +3,6 @@ title: Watermerken voor tekstverwerking
 linktitle: Watermerken voor tekstverwerking
 second_title: GroupDocs.Watermark .NET API
 description: Ontdek essentiële GroupDocs.Watermark voor .NET-tutorials om watermerken in Word-documenten toe te voegen en te beheren. Verbeter moeiteloos uw documentbeveiliging en branding.
-type: docs
 weight: 26
 url: /nl/net/word-processing-watermarkings/
 ---

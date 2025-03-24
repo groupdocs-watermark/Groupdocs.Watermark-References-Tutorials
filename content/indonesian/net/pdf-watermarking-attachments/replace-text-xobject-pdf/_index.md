@@ -3,7 +3,6 @@ title: Ganti Teks untuk XObject Tertentu di PDF
 linktitle: Ganti Teks untuk XObject Tertentu di PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Ganti teks dalam PDF secara efisien menggunakan GroupDocs.Watermark untuk .NET. Integrasikan watermarking dengan mulus ke dalam aplikasi .NET Anda.
-type: docs
 weight: 44
 url: /id/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
@@ -68,6 +67,6 @@ Ya, GroupDocs.Watermark untuk .NET mendukung berbagai format dokumen, termasuk W
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Watermark untuk .NET?
  Lisensi sementara dapat diperoleh dari[halaman lisensi sementara](https://purchase.groupdocs.com/temporary-license/).
 ### Di mana saya dapat menemukan dokumentasi untuk GroupDocs.Watermark untuk .NET?
- Dokumentasi terperinci tersedia di[halaman dokumentasi](https://reference.groupdocs.com/Watermark/net/).
+ Dokumentasi terperinci tersedia di[halaman dokumentasi](https://tutorials.groupdocs.com/Watermark/net/).
 ### Opsi dukungan apa yang tersedia untuk GroupDocs.Watermark untuk .NET?
  Anda dapat mencari dukungan dan bantuan dari forum komunitas GroupDocs[Di Sini](https://forum.groupdocs.com/c/watermark/19).

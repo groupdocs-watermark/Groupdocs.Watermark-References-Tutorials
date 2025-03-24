@@ -3,7 +3,6 @@ title: Водяные знаки текстовой обработки
 linktitle: Водяные знаки текстовой обработки
 second_title: GroupDocs.Watermark .NET API
 description: Ознакомьтесь с основными руководствами по GroupDocs.Watermark для .NET, позволяющими добавлять водяные знаки в документы Word и управлять ими. Повысьте безопасность своих документов и брендинг без особых усилий.
-type: docs
 weight: 26
 url: /ru/net/word-processing-watermarkings/
 ---

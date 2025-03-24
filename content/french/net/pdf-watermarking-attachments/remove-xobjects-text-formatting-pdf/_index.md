@@ -3,7 +3,6 @@ title: Supprimer les XObjects avec un formatage de texte spécifique dans PDF
 linktitle: Supprimer les XObjects avec un formatage de texte spécifique dans PDF
 second_title: API GroupDocs.Watermark .NET
 description: Supprimez sans effort les XObjects avec un formatage de texte spécifique des PDF à l'aide de GroupDocs.Watermark pour .NET. Suivez notre guide pour une manipulation transparente des documents.
-type: docs
 weight: 36
 url: /fr/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Enfin, enregistrez le document PDF modifié dans le chemin du fichier de sortie 
 Ceci termine le processus de suppression des XObjects avec un formatage de texte spécifique d'un document PDF.
 
 ## Conclusion
-En suivant ces étapes, vous pouvez supprimer efficacement les XObjects avec un formatage de texte spécifique des documents PDF à l'aide de GroupDocs.Watermark pour .NET. Cette puissante bibliothèque simplifie non seulement les tâches de filigrane, mais offre également des fonctionnalités robustes pour la manipulation de documents. Pour une documentation plus détaillée, visitez le[Documentation GroupDocs.Watermark pour .NET](https://reference.groupdocs.com/Watermark/net/) . Si vous rencontrez des problèmes ou avez des questions, le[forum d'entraide](https://forum.groupdocs.com/c/watermark/19) est un excellent endroit pour demander de l'aide.
+En suivant ces étapes, vous pouvez supprimer efficacement les XObjects avec un formatage de texte spécifique des documents PDF à l'aide de GroupDocs.Watermark pour .NET. Cette puissante bibliothèque simplifie non seulement les tâches de filigrane, mais offre également des fonctionnalités robustes pour la manipulation de documents. Pour une documentation plus détaillée, visitez le[Documentation GroupDocs.Watermark pour .NET](https://tutorials.groupdocs.com/Watermark/net/) . Si vous rencontrez des problèmes ou avez des questions, le[forum d'entraide](https://forum.groupdocs.com/c/watermark/19) est un excellent endroit pour demander de l'aide.
 ## FAQ
 ### Puis-je supprimer des XObjects avec un formatage de texte différent ?
 Oui, vous pouvez modifier le code pour vérifier différents attributs de formatage du texte tels que la taille, le style de police ou la couleur.

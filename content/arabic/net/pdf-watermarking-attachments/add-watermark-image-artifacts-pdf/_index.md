@@ -3,7 +3,6 @@ title: إضافة علامة مائية إلى عناصر الصورة في PDF
 linktitle: إضافة علامة مائية إلى عناصر الصورة في PDF
 second_title: GroupDocs.Watermark .NET API
 description: قم بحماية ملفات PDF الخاصة بك باستخدام علامات مائية مخصصة باستخدام GroupDocs.Watermark لـ .NET. يمكنك بسهولة إضافة علامات مائية نصية أو صورية إلى عناصر الصور في مستندات PDF.
-type: docs
 weight: 18
 url: /ar/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---

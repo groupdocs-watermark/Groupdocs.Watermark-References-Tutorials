@@ -3,7 +3,6 @@ title: Extrahera artefaktinformation från PDF
 linktitle: Extrahera artefaktinformation från PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du extraherar artefaktinformation från PDF-filer med GroupDocs.Watermark för .NET. Förbättra dina dokumentbehandlingsmöjligheter.
-type: docs
 weight: 24
 url: /sv/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---

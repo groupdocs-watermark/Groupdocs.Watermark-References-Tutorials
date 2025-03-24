@@ -3,7 +3,6 @@ title: Add Watermark to Shape Images in Word Docs
 linktitle: Add Watermark to Shape Images in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add watermarks to shape images in Word documents using GroupDocs.Watermark for .NET. Enhance document security with this tutorial.
-type: docs
 weight: 17
 url: /net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---
@@ -74,7 +73,7 @@ watermarker.Save(outputFileName);
 In this tutorial, we have learned how to add watermarks to shape images in Word documents using GroupDocs.Watermark for .NET. By following the step-by-step guide and leveraging the powerful features of GroupDocs.Watermark, you can enhance the security and protection of your documents effectively.
 ## FAQ's
 ### Can I customize the appearance of the watermark text?
-Yes, you can adjust various properties such as font, size, color, rotation angle, and alignment to customize the watermark according to your preferences.
+Yes, you can adjust various properties such as font, size, color, rotation angle, and alignment to customize the watermark according to your ptutorialss.
 ### Does GroupDocs.Watermark support other document formats besides Word?
 Yes, GroupDocs.Watermark provides support for a wide range of document formats including PDF, Excel, PowerPoint, and more.
 ### Is it possible to add multiple watermarks to a single document?

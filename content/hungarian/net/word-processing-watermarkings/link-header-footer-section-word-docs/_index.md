@@ -3,7 +3,6 @@ title: Fejléc/lábléc hivatkozása a Word Dokumentumok szakaszában
 linktitle: Fejléc/lábléc hivatkozása a Word Dokumentumok szakaszában
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan kapcsolhat össze hatékonyan fejlécet és láblécet a Word-dokumentumok szakaszaiban a GroupDocs.Watermark for .NET segítségével. Dokumentumkezelés és biztonság.
-type: docs
 weight: 26
 url: /hu/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ Igen, hozzáférhet egy ingyenes próbaverzióhoz a[kiadások oldala](https://re
 ### Vannak ideiglenes licencek a GroupDocs.Watermark for .NET számára?
  Igen, ideiglenes engedélyek beszerezhetők a[GroupDocs vásárlási oldal](https://purchase.groupdocs.com/temporary-license/).
 ### A GroupDocs.Watermark for .NET kínál dokumentációt a fejlesztők számára?
- Igen, átfogó dokumentáció áll rendelkezésre[itt](https://reference.groupdocs.com/Watermark/net/).
+ Igen, átfogó dokumentáció áll rendelkezésre[itt](https://tutorials.groupdocs.com/Watermark/net/).

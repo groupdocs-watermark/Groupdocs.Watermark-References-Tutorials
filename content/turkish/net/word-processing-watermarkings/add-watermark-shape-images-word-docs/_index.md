@@ -3,7 +3,6 @@ title: Word Dokümanlarındaki Şekil Görüntülerine Filigran Ekleme
 linktitle: Word Dokümanlarındaki Şekil Görüntülerine Filigran Ekleme
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki görselleri şekillendirmek için nasıl filigran ekleyeceğinizi öğrenin. Bu eğitimle belge güvenliğini artırın.
-type: docs
 weight: 17
 url: /tr/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---

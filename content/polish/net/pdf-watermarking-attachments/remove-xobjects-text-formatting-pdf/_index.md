@@ -3,7 +3,6 @@ title: Usuń XObjects z określonym formatowaniem tekstu w formacie PDF
 linktitle: Usuń XObjects z określonym formatowaniem tekstu w formacie PDF
 second_title: GroupDocs.Watermark API .NET
 description: Bez wysiłku usuwaj obiekty XObjects z określonym formatowaniem tekstu z plików PDF za pomocą GroupDocs.Watermark dla .NET. Postępuj zgodnie z naszym przewodnikiem, aby bezproblemowo manipulować dokumentami.
-type: docs
 weight: 36
 url: /pl/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Na koniec zapisz zmodyfikowany dokument PDF w określonej ścieżce pliku wyjśc
 Na tym kończy się proces usuwania obiektów XObjects z określonym formatowaniem tekstu z dokumentu PDF.
 
 ## Wniosek
-Wykonując poniższe kroki, możesz skutecznie usunąć obiekty XObjects z określonym formatowaniem tekstu z dokumentów PDF przy użyciu programu GroupDocs.Watermark dla .NET. Ta potężna biblioteka nie tylko upraszcza zadania związane ze znakami wodnymi, ale także oferuje solidne możliwości manipulowania dokumentami. Bardziej szczegółową dokumentację znajdziesz na stronie[Dokumentacja GroupDocs.Watermark dla platformy .NET](https://reference.groupdocs.com/Watermark/net/) . Jeśli napotkasz jakiekolwiek problemy lub masz pytania,[forum wsparcia](https://forum.groupdocs.com/c/watermark/19) to świetne miejsce, aby szukać pomocy.
+Wykonując poniższe kroki, możesz skutecznie usunąć obiekty XObjects z określonym formatowaniem tekstu z dokumentów PDF przy użyciu programu GroupDocs.Watermark dla .NET. Ta potężna biblioteka nie tylko upraszcza zadania związane ze znakami wodnymi, ale także oferuje solidne możliwości manipulowania dokumentami. Bardziej szczegółową dokumentację znajdziesz na stronie[Dokumentacja GroupDocs.Watermark dla platformy .NET](https://tutorials.groupdocs.com/Watermark/net/) . Jeśli napotkasz jakiekolwiek problemy lub masz pytania,[forum wsparcia](https://forum.groupdocs.com/c/watermark/19) to świetne miejsce, aby szukać pomocy.
 ## Często zadawane pytania
 ### Czy mogę usunąć XObjects z innym formatowaniem tekstu?
 Tak, możesz zmodyfikować kod, aby sprawdzić różne atrybuty formatowania tekstu, takie jak rozmiar czcionki, styl czcionki lub kolor.

@@ -3,7 +3,6 @@ title: PDF의 특정 아티팩트에 대한 이미지 교체
 linktitle: PDF의 특정 아티팩트에 대한 이미지 교체
 second_title: GroupDocs.Watermark .NET API
 description: 이 포괄적인 단계별 자습서를 통해 .NET용 GroupDocs.Watermark를 사용하여 PDF 문서의 이미지를 바꾸는 방법을 알아보세요.
-type: docs
 weight: 38
 url: /ko/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---

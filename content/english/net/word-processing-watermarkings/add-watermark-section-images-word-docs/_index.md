@@ -3,7 +3,6 @@ title: Add Watermark to Section Images in Word Docs
 linktitle: Add Watermark to Section Images in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add watermarks to images in Word documents using Groupdocs.Watermark for .NET. Follow our guide for secure and professional document protection.
-type: docs
 weight: 16
 url: /net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## Conclusion
 Adding watermarks to images within your Word documents is a powerful way to protect your content. With Groupdocs.Watermark for .NET, this process is straightforward and efficient. Follow the steps outlined in this tutorial to ensure your documents are secure and well-protected.
-For more detailed documentation, visit the [documentation](https://reference.groupdocs.com/Watermark/net/). If you have any questions or need further assistance, check out the [support forum](https://forum.groupdocs.com/c/watermark/19).
+For more detailed documentation, visit the [documentation](https://tutorials.groupdocs.com/Watermark/net/). If you have any questions or need further assistance, check out the [support forum](https://forum.groupdocs.com/c/watermark/19).
 ## FAQ's
 ### Can I customize the watermark text?
 Yes, you can customize the watermark text, font, size, alignment, and rotation to suit your needs.
 ### Is it possible to add watermarks to multiple sections?
 Yes, you can loop through each section and apply the watermark to images in all sections.
 ### Can I use this method for other document formats?
-Groupdocs.Watermark supports various document formats. Check the [documentation](https://reference.groupdocs.com/Watermark/net/) for more details.
+Groupdocs.Watermark supports various document formats. Check the [documentation](https://tutorials.groupdocs.com/Watermark/net/) for more details.
 ### How can I obtain a temporary license?
 You can obtain a temporary license [here](https://purchase.groupdocs.com/temporary-license/).
 ### What if I encounter issues while using Groupdocs.Watermark?

@@ -3,7 +3,6 @@ title: Ganti Teks dengan Pemformatan untuk Artefak dalam PDF
 linktitle: Ganti Teks dengan Pemformatan untuk Artefak dalam PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengganti teks dengan pemformatan artefak dalam dokumen PDF menggunakan GroupDocs.Watermark untuk .NET. Tingkatkan manajemen dokumen dengan mudah.
-type: docs
 weight: 43
 url: /id/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---

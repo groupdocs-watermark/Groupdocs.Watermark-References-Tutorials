@@ -3,7 +3,6 @@ title: Dokumentum előnézetének létrehozása
 linktitle: Dokumentum előnézetének létrehozása
 second_title: GroupDocs.Watermark .NET API
 description: Ebből az útmutatóból megtudhatja, hogyan hozhat létre dokumentum-előnézeteket a GroupDocs.Watermark for .NET használatával. Fokozatmentesen fokozza dokumentumbiztonságát és kezelését.
-type: docs
 weight: 10
 url: /hu/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Következtetés
 A dokumentum-előnézetek generálása a GroupDocs.Watermark for .NET használatával egyszerű folyamat, amely néhány sornyi kóddal végrehajtható. Az ebben az útmutatóban ismertetett lépések követésével könnyedén beállíthatja projektjét, konfigurálhatja a szükséges beállításokat, és előnézeteket hozhat létre a dokumentumokhoz. Ez a hatékony könyvtár nemcsak leegyszerűsíti a vízjelezési folyamatot, hanem robusztus funkciókat is kínál a vízjelek kezeléséhez és manipulálásához.
- Ha bármilyen kérdése van, vagy további segítségre van szüksége, ne habozzon felkeresni a[GroupDocs.Watermark támogatási fórum](https://forum.groupdocs.com/c/watermark/19) vagy hivatkozzon a[dokumentáció](https://reference.groupdocs.com/Watermark/net/).
+ Ha bármilyen kérdése van, vagy további segítségre van szüksége, ne habozzon felkeresni a[GroupDocs.Watermark támogatási fórum](https://forum.groupdocs.com/c/watermark/19) vagy hivatkozzon a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/).
 ## GYIK
 ### Milyen fájlformátumokat támogat a GroupDocs.Watermark for .NET?
- A GroupDocs.Watermark for .NET fájlformátumok széles skáláját támogatja, beleértve a PDF, DOCX, PPTX, XLSX és még sok más formátumot. A támogatott formátumok teljes listáját a[dokumentáció](https://reference.groupdocs.com/Watermark/net/).
+ A GroupDocs.Watermark for .NET fájlformátumok széles skáláját támogatja, beleértve a PDF, DOCX, PPTX, XLSX és még sok más formátumot. A támogatott formátumok teljes listáját a[dokumentáció](https://tutorials.groupdocs.com/Watermark/net/).
 ### Testreszabhatom a vízjelek megjelenését?
 Igen, a GroupDocs.Watermark lehetővé teszi a vízjelek megjelenésének teljes testreszabását, beleértve a szöveges, képi és alakzati vízjeleket. Beállíthatja az olyan tulajdonságokat, mint a betűtípus, szín, méret és átlátszóság.
 ### Létezik próbaverzió?

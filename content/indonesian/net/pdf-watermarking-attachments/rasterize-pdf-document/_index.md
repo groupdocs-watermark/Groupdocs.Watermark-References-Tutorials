@@ -3,7 +3,6 @@ title: Rasterisasi Dokumen PDF
 linktitle: Rasterisasi Dokumen PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara melakukan rasterisasi dokumen PDF menggunakan GroupDocs.Watermark untuk .NET. Tingkatkan keamanan dokumen dan daya tarik visual dengan mudah.
-type: docs
 weight: 27
 url: /id/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---

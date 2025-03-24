@@ -3,7 +3,6 @@ title: Nozioni di base sulla filigrana
 linktitle: Nozioni di base sulla filigrana
 second_title: API GroupDocs.Watermark .NET
 description: Scopri i tutorial di GroupDocs.Watermark per .NET per aggiungere filigrane di immagini e testo senza sforzo. Proteggi i tuoi documenti con queste guide facili da seguire.
-type: docs
 weight: 20
 url: /it/net/watermarking-basics/
 ---

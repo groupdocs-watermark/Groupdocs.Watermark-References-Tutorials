@@ -3,7 +3,6 @@ title: 添加浮水印以在 Word 文件中塑造圖像
 linktitle: 添加浮水印以在 Word 文件中塑造圖像
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 新增浮水印以在 Word 文件中塑造圖像。透過本教學增強文件安全性。
-type: docs
 weight: 17
 url: /zh-hant/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---

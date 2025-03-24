@@ -3,7 +3,6 @@ title: Thêm hình mờ hình ảnh lát gạch
 linktitle: Thêm hình mờ hình ảnh lát gạch
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ hình ảnh xếp kề vào tài liệu của bạn bằng GroupDocs.Watermark cho .NET. Dễ dàng, hiệu quả và có thể tùy chỉnh.
-type: docs
 weight: 10
 url: /vi/net/image-watermarkings/add-tiled-image-watermark/
 ---

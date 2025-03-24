@@ -3,7 +3,6 @@ title: เพิ่มลายน้ำให้กับ PDF
 linktitle: เพิ่มลายน้ำให้กับ PDF
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำข้อความและรูปภาพลงใน PDF ของคุณโดยใช้ GroupDocs.Watermark สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนที่ครอบคลุมของเรา
-type: docs
 weight: 14
 url: /th/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---

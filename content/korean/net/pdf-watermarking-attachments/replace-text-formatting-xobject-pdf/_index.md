@@ -3,7 +3,6 @@ title: PDF의 XObject 서식으로 텍스트 바꾸기
 linktitle: PDF의 XObject 서식으로 텍스트 바꾸기
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 Watermark를 사용하여 .NET 문서 조작 기능을 강화하세요. PDF에서 텍스트를 서식으로 쉽게 바꾸는 방법을 알아보세요.
-type: docs
 weight: 45
 url: /ko/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---

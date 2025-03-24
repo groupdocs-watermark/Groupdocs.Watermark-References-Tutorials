@@ -3,7 +3,6 @@ title: Döşenmiş Resim Filigranı Ekle
 linktitle: Döşenmiş Resim Filigranı Ekle
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak belgelerinize döşemeli görüntü filigranlarını nasıl ekleyeceğinizi öğrenin. Kolay, verimli ve özelleştirilebilir.
-type: docs
 weight: 10
 url: /tr/net/image-watermarkings/add-tiled-image-watermark/
 ---

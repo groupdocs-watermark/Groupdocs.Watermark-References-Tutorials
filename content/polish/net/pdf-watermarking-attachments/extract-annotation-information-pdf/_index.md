@@ -3,7 +3,6 @@ title: Wyodrębnij informacje o adnotacjach z pliku PDF
 linktitle: Wyodrębnij informacje o adnotacjach z pliku PDF
 second_title: GroupDocs.Watermark API .NET
 description: Z tego szczegółowego przewodnika krok po kroku dowiesz się, jak wyodrębnić informacje z adnotacji z dokumentów PDF przy użyciu narzędzia GroupDocs.Watermark dla platformy .NET.
-type: docs
 weight: 23
 url: /pl/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
@@ -103,7 +102,7 @@ using (StreamWriter writer = new StreamWriter(outputFileName))
 ```
 ## Wniosek
 Wyodrębnianie informacji o adnotacjach z dokumentów PDF przy użyciu programu GroupDocs.Watermark dla platformy .NET to prosty proces, który pozwala zaoszczędzić dużo czasu i wysiłku. Wykonując kroki opisane w tym przewodniku, możesz łatwo zintegrować tę funkcję ze swoimi projektami i zautomatyzować wyodrębnianie cennych danych adnotacji.
- Niezależnie od tego, czy zarządzasz dużymi ilościami plików PDF, czy po prostu chcesz wyodrębnić określone informacje, GroupDocs.Watermark dla .NET zapewnia niezawodne i wydajne rozwiązanie. Nie zapomnij sprawdzić[dokumentacja](https://reference.groupdocs.com/Watermark/net/) aby uzyskać bardziej zaawansowane funkcje i opcje dostosowywania.
+ Niezależnie od tego, czy zarządzasz dużymi ilościami plików PDF, czy po prostu chcesz wyodrębnić określone informacje, GroupDocs.Watermark dla .NET zapewnia niezawodne i wydajne rozwiązanie. Nie zapomnij sprawdzić[dokumentacja](https://tutorials.groupdocs.com/Watermark/net/) aby uzyskać bardziej zaawansowane funkcje i opcje dostosowywania.
 ## Często zadawane pytania
 ### Co to jest GroupDocs.Watermark dla .NET?
 GroupDocs.Watermark dla .NET to obszerna biblioteka, która umożliwia programistom dodawanie, wyszukiwanie i usuwanie znaków wodnych z różnych formatów dokumentów, w tym plików PDF, dokumentów programu Word i obrazów.

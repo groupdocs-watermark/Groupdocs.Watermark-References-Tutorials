@@ -3,7 +3,6 @@ title: Hapus Anotasi dengan Format Teks Tertentu di PDF
 linktitle: Hapus Anotasi dengan Format Teks Tertentu di PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus anotasi dengan format teks tertentu dalam dokumen PDF menggunakan Groupdocs untuk .NET.
-type: docs
 weight: 30
 url: /id/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
@@ -72,7 +71,7 @@ Ya, Groupdocs.Watermark mendukung berbagai format dokumen, termasuk DOCX, PPTX, 
 ### Apakah ada uji coba gratis yang tersedia untuk Groupdocs.Watermark untuk .NET?
  Ya, Anda dapat mengakses uji coba gratis Groupdocs.Watermark untuk .NET dari[Di Sini](https://releases.groupdocs.com/).
 ### Di mana saya dapat menemukan dokumentasi Groupdocs.Watermark untuk .NET?
- Anda dapat menemukan dokumentasi terperinci dan referensi API[Di Sini](https://reference.groupdocs.com/Watermark/net/).
+ Anda dapat menemukan dokumentasi terperinci dan referensi API[Di Sini](https://tutorials.groupdocs.com/Watermark/net/).
 ### Bagaimana saya bisa mendapatkan dukungan untuk masalah atau pertanyaan apa pun yang terkait dengan Groupdocs.Watermark?
  Anda dapat memposting pertanyaan atau masalah Anda di forum Groupdocs.Watermark[Di Sini](https://forum.groupdocs.com/c/watermark/19).
 ### Bisakah saya membeli lisensi sementara untuk Groupdocs.Watermark untuk .NET?

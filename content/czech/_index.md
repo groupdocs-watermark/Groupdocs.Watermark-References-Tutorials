@@ -3,7 +3,6 @@ title: Master Document Security & Branding s GroupDocs.Watermark
 linktitle: Výukové programy GroupDocs.Watermark
 additionalTitle: Reference API GroupDocs
 description: Odemkněte sílu GroupDocs.Watermark s našimi .NET a Java tutoriály. Zvládněte techniky vodoznaku pro zabezpečení dokumentů a branding.
-type: docs
 weight: 11
 url: /cs/
 is_root: true

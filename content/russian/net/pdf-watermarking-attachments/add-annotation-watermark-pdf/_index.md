@@ -3,7 +3,6 @@ title: Добавить водяной знак аннотации в PDF
 linktitle: Добавить водяной знак аннотации в PDF
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как легко добавлять водяные знаки аннотаций в документы PDF с помощью GroupDocs.Watermark для .NET. С легкостью повышайте брендинг и безопасность документов.
-type: docs
 weight: 10
 url: /ru/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---

@@ -3,7 +3,6 @@ title: 從本機磁碟取得文件資訊
 linktitle: 從本機磁碟取得文件資訊
 second_title: GroupDocs.Watermark .NET API
 description: 透過這份全面的逐步指南，了解如何使用 GroupDocs for .NET 在文件中新增、刪除和擷取浮水印。
-type: docs
 weight: 11
 url: /zh-hant/net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /zh-hant/net/document-manipulation/get-document-info-local-disk/
 歡迎閱讀使用 GroupDocs.Watermark for .NET 的終極指南！無論您是經驗豐富的開發人員還是剛剛入門，本文都將引導您了解使用這個強大的工具為文件添加浮水印的基本知識。最後，您將成為在文件中嵌入浮水印的專家，確保它們受到保護並按照您的規格進行標記。
 ## 先決條件
 在深入了解逐步指南之前，您需要滿足一些先決條件：
-1.  .NET Framework：確保您的系統上安裝了 .NET Framework。 GroupDocs.Watermark for .NET 與各種版本的 .NET Framework 相容，因此請檢查[文件](https://reference.groupdocs.com/Watermark/net/)有關相容性詳細資訊。
+1.  .NET Framework：確保您的系統上安裝了 .NET Framework。 GroupDocs.Watermark for .NET 與各種版本的 .NET Framework 相容，因此請檢查[文件](https://tutorials.groupdocs.com/Watermark/net/)有關相容性詳細資訊。
 2.  GroupDocs.Watermark for .NET Library：從以下位置下載並安裝最新版本[下載頁面](https://releases.groupdocs.com/Watermark/net/).
 3. 開發環境：您應該設定一個開發環境。 Visual Studio 是 .NET 開發的熱門選擇。
 4. 基本 C# 知識：了解 C# 程式設計的基礎知識將幫助您理解範例。
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
 此步驟涉及使用`GetWatermarks`檢索文件中所有浮水印的方法。然後，您可以遍歷水印清單並檢查其屬性或根據需要執行其他操作。
 ## 結論
-恭喜！現在您已經了解如何使用 GroupDocs.Watermark for .NET 在文件中新增、刪除和提取浮水印。借助這些技能，您可以有效地保護您的文件並為其建立品牌。請記住，[文件](https://reference.groupdocs.com/Watermark/net/)如果您需要更詳細的資訊或高級功能，請總是在那裡。
+恭喜！現在您已經了解如何使用 GroupDocs.Watermark for .NET 在文件中新增、刪除和提取浮水印。借助這些技能，您可以有效地保護您的文件並為其建立品牌。請記住，[文件](https://tutorials.groupdocs.com/Watermark/net/)如果您需要更詳細的資訊或高級功能，請總是在那裡。
 ## 常見問題解答
 ### 我可以將 GroupDocs.Watermark for .NET 與任何 .NET 版本一起使用嗎？
-是的，GroupDocs.Watermark for .NET 與各種 .NET Framework 版本相容。檢查[文件](https://reference.groupdocs.com/Watermark/net/)了解具體情況。
+是的，GroupDocs.Watermark for .NET 與各種 .NET Framework 版本相容。檢查[文件](https://tutorials.groupdocs.com/Watermark/net/)了解具體情況。
 ### 哪裡可以下載 .NET 版 GroupDocs.Watermark？
 您可以從以下位置下載最新版本[下載頁面](https://releases.groupdocs.com/Watermark/net/).
 ### 我如何獲得臨時許可證？

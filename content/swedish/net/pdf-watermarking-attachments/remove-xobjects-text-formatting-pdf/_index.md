@@ -3,7 +3,6 @@ title: Ta bort XObjects med specifik textformatering i PDF
 linktitle: Ta bort XObjects med specifik textformatering i PDF
 second_title: GroupDocs.Watermark .NET API
 description: Ta enkelt bort XObjects med specifik textformatering från PDF-filer med GroupDocs.Watermark för .NET. Följ vår guide för sömlös dokumenthantering.
-type: docs
 weight: 36
 url: /sv/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Slutligen sparar du det ändrade PDF-dokumentet till den angivna sökvägen för
 Detta slutför processen med att ta bort XObjects med specifik textformatering från ett PDF-dokument.
 
 ## Slutsats
-Genom att följa dessa steg kan du effektivt ta bort XObjects med specifik textformatering från PDF-dokument med GroupDocs.Watermark for .NET. Detta kraftfulla bibliotek förenklar inte bara vattenmärkningsuppgifter utan erbjuder också robusta möjligheter för dokumentmanipulation. För mer detaljerad dokumentation, besök[GroupDocs.Watermark för .NET-dokumentation](https://reference.groupdocs.com/Watermark/net/) . Om du stöter på några problem eller har frågor kan du[supportforum](https://forum.groupdocs.com/c/watermark/19) är ett bra ställe att söka hjälp.
+Genom att följa dessa steg kan du effektivt ta bort XObjects med specifik textformatering från PDF-dokument med GroupDocs.Watermark for .NET. Detta kraftfulla bibliotek förenklar inte bara vattenmärkningsuppgifter utan erbjuder också robusta möjligheter för dokumentmanipulation. För mer detaljerad dokumentation, besök[GroupDocs.Watermark för .NET-dokumentation](https://tutorials.groupdocs.com/Watermark/net/) . Om du stöter på några problem eller har frågor kan du[supportforum](https://forum.groupdocs.com/c/watermark/19) är ett bra ställe att söka hjälp.
 ## FAQ's
 ### Kan jag ta bort XObjects med annan textformatering?
 Ja, du kan ändra koden för att söka efter olika textformateringsattribut som teckenstorlek, typsnittsstil eller färg.

@@ -3,7 +3,6 @@ title: Word Dokümanlarında Farklı İlk Sayfa Üstbilgisini/Altbilgisini Ayarl
 linktitle: Word Dokümanlarında Farklı İlk Sayfa Üstbilgisini/Altbilgisini Ayarlama
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinin ilk sayfasında farklı üstbilgi ve altbilgileri nasıl ayarlayacağınızı öğrenin.
-type: docs
 weight: 36
 url: /tr/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Evet, kullanıcılar GroupDocs.Watermark for .NET'in ücretsiz denemesinden şu 
 ### Kısa süreli kullanım için geçici lisans satın alabilir miyim?
  Evet, GroupDocs için geçici lisanslar .NET'ten edinilebilir.[Geçici lisans satın alma sayfası](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Watermark for .NET'e ilişkin kapsamlı belgeleri nerede bulabilirim?
- GroupDocs.Watermark for .NET'e ilişkin ayrıntılı belgeler şu adreste mevcuttur:[Referans sayfası](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark for .NET'e ilişkin ayrıntılı belgeler şu adreste mevcuttur:[Referans sayfası](https://tutorials.groupdocs.com/Watermark/net/).

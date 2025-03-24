@@ -3,7 +3,6 @@ title: PDF에서 모든 첨부 파일 추출
 linktitle: PDF에서 모든 첨부 파일 추출
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 Groupdocs.Watermark를 사용하여 PDF에서 모든 첨부 파일을 추출하는 방법을 알아보세요. 원활한 추출 과정을 위해 단계별 가이드를 따르세요.
-type: docs
 weight: 22
 url: /ko/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---

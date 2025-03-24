@@ -3,7 +3,6 @@ title: Document uit stroom laden
 linktitle: Document uit stroom laden
 second_title: GroupDocs.Watermark .NET API
 description: Leer in deze handleiding hoe u watermerken aan documenten kunt toevoegen met GroupDocs.Watermark voor .NET. Perfect voor ontwikkelaars die de documentbeveiliging willen verbeteren.
-type: docs
 weight: 11
 url: /nl/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Met deze code wordt het document opgeslagen met het nieuw toegevoegde watermerk`outputFileName` pad dat u eerder hebt gedefinieerd.
 
 ## Conclusie
-Gefeliciteerd! U hebt met succes een watermerk aan uw document toegevoegd met GroupDocs.Watermark voor .NET. Deze bibliotheek maakt het ongelooflijk eenvoudig om watermerken in verschillende documentformaten te beheren. Of u nu tekst, afbeeldingen of andere soorten watermerken moet toevoegen, GroupDocs.Watermark heeft de tools die u nodig heeft. Vergeet niet een kijkje te nemen op de[documentatie](https://reference.groupdocs.com/Watermark/net/) voor meer geavanceerde functies en aanpassingsmogelijkheden.
+Gefeliciteerd! U hebt met succes een watermerk aan uw document toegevoegd met GroupDocs.Watermark voor .NET. Deze bibliotheek maakt het ongelooflijk eenvoudig om watermerken in verschillende documentformaten te beheren. Of u nu tekst, afbeeldingen of andere soorten watermerken moet toevoegen, GroupDocs.Watermark heeft de tools die u nodig heeft. Vergeet niet een kijkje te nemen op de[documentatie](https://tutorials.groupdocs.com/Watermark/net/) voor meer geavanceerde functies en aanpassingsmogelijkheden.
 ## Veelgestelde vragen
 ### Welke soorten watermerken kan ik toevoegen met GroupDocs.Watermark voor .NET?
 U kunt tekstwatermerken, afbeeldingswatermerken en zelfs complexe vormen en logo's toevoegen. De bibliotheek ondersteunt een breed scala aan aanpassingsopties.

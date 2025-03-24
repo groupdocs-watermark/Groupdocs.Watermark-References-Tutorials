@@ -3,7 +3,6 @@ title: Länk sidhuvud/sidfot i avsnitt i Word Docs
 linktitle: Länk sidhuvud/sidfot i avsnitt i Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du effektivt länkar sidhuvuden och sidfötter i delar av Word-dokument med hjälp av GroupDocs.Watermark för .NET. Dokumenthantering och säkerhet.
-type: docs
 weight: 26
 url: /sv/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ Ja, du kan få tillgång till en gratis provperiod från[släpper sida](https://
 ### Finns tillfälliga licenser tillgängliga för GroupDocs.Watermark för .NET?
  Ja, tillfälliga licenser kan erhållas från[GroupDocs köpsida](https://purchase.groupdocs.com/temporary-license/).
 ### Erbjuder GroupDocs.Watermark for .NET dokumentation för utvecklare?
- Ja, omfattande dokumentation finns tillgänglig[här](https://reference.groupdocs.com/Watermark/net/).
+ Ja, omfattande dokumentation finns tillgänglig[här](https://tutorials.groupdocs.com/Watermark/net/).

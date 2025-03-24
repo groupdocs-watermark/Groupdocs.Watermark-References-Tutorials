@@ -3,7 +3,6 @@ title: Dokument im angegebenen Stream speichern
 linktitle: Dokument im angegebenen Stream speichern
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit GroupDocs.Watermark für .NET ein Dokument in einem bestimmten Stream speichern. Perfekt für Entwickler aller Niveaus.
-type: docs
 weight: 12
 url: /de/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Ja, GroupDocs unterstützt Text-, Bild- und sogar Barcode-Wasserzeichen.
 ### Wie kann ich eine temporäre Lizenz erhalten?
  Eine temporäre Lizenz erhalten Sie bei[dieser Link](https://purchase.groupdocs.com/temporary-license/).
 ### Wo finde ich eine ausführlichere Dokumentation?
- Eine ausführlicHier Dokumentation finden Sie unter[here](https://reference.groupdocs.com/Watermark/net/).
+ Eine ausführlicHier Dokumentation finden Sie unter[here](https://tutorials.groupdocs.com/Watermark/net/).

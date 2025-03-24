@@ -3,7 +3,6 @@ title: استبدال النص بقطعة أثرية محددة في PDF
 linktitle: استبدال النص بقطعة أثرية محددة في PDF
 second_title: GroupDocs.Watermark .NET API
 description: اكتشف كيفية استبدال النص لعناصر معينة في مستندات PDF باستخدام GroupDocs.Watermark لـ .NET. تعزيز أمن المستندات وسلامتها دون عناء.
-type: docs
 weight: 42
 url: /ar/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---

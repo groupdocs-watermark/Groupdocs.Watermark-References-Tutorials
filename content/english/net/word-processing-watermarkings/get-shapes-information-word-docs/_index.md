@@ -3,7 +3,6 @@ title: Get Shapes Information in Word Docs
 linktitle: Get Shapes Information in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Unlock valuable insights from Word documents effortlessly with GroupDocs.Watermark for .NET. Extract shape information seamlessly for enhanced data analysis.
-type: docs
 weight: 24
 url: /net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---

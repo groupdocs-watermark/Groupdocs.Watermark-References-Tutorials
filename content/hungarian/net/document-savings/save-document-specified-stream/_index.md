@@ -3,7 +3,6 @@ title: Dokumentum mentése a megadott adatfolyamba
 linktitle: Dokumentum mentése a megadott adatfolyamba
 second_title: GroupDocs.Watermark .NET API
 description: Ebből a lépésről-lépésre szóló útmutatóból megtudhatja, hogyan menthet dokumentumot egy meghatározott adatfolyamba a GroupDocs.Watermark for .NET segítségével. Tökéletes minden szintű fejlesztő számára.
-type: docs
 weight: 12
 url: /hu/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Igen, a GroupDocs támogatja a szöveges, képi és még vonalkódos vízjeleket
 ### Hogyan szerezhetek ideiglenes engedélyt?
  Ideiglenes jogosítványt szerezhet be[ez a link](https://purchase.groupdocs.com/temporary-license/).
 ### Hol találok részletesebb dokumentációt?
- Részletesebb dokumentációért látogassa meg[itt](https://reference.groupdocs.com/Watermark/net/).
+ Részletesebb dokumentációért látogassa meg[itt](https://tutorials.groupdocs.com/Watermark/net/).

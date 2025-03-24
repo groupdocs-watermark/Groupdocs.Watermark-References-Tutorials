@@ -3,7 +3,6 @@ title: Muat Dokumen dari Aliran
 linktitle: Muat Dokumen dari Aliran
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air ke dokumen menggunakan GroupDocs.Watermark untuk .NET dengan panduan ini. Sempurna untuk pengembang yang ingin meningkatkan keamanan dokumen.
-type: docs
 weight: 11
 url: /id/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Kode ini menyimpan dokumen dengan tanda air yang baru ditambahkan`outputFileName` jalur yang Anda tentukan sebelumnya.
 
 ## Kesimpulan
-Selamat! Anda telah berhasil menambahkan tanda air ke dokumen Anda menggunakan GroupDocs.Watermark untuk .NET. Pustaka ini sangat memudahkan pengelolaan tanda air di berbagai format dokumen. Baik Anda perlu menambahkan teks, gambar, atau jenis tanda air lainnya, GroupDocs.Watermark memiliki alat yang Anda perlukan. Jangan lupa untuk memeriksa[dokumentasi](https://reference.groupdocs.com/Watermark/net/) untuk fitur lanjutan dan opsi penyesuaian lainnya.
+Selamat! Anda telah berhasil menambahkan tanda air ke dokumen Anda menggunakan GroupDocs.Watermark untuk .NET. Pustaka ini sangat memudahkan pengelolaan tanda air di berbagai format dokumen. Baik Anda perlu menambahkan teks, gambar, atau jenis tanda air lainnya, GroupDocs.Watermark memiliki alat yang Anda perlukan. Jangan lupa untuk memeriksa[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/) untuk fitur lanjutan dan opsi penyesuaian lainnya.
 ## FAQ
 ### Jenis tanda air apa yang dapat saya tambahkan menggunakan GroupDocs.Watermark untuk .NET?
 Anda dapat menambahkan tanda air teks, tanda air gambar, dan bahkan bentuk dan logo yang rumit. Perpustakaan mendukung berbagai pilihan penyesuaian.

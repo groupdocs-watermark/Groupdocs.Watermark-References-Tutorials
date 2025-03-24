@@ -3,7 +3,6 @@ title: เพิ่มไฟล์แนบลงใน PDF
 linktitle: เพิ่มไฟล์แนบลงใน PDF
 second_title: GroupDocs.Watermark .NET API
 description: ปรับปรุงความสามารถในการจัดการเอกสาร .NET ของคุณด้วย GroupDocs.Watermark สำหรับลายน้ำและการจัดการไฟล์แนบที่ราบรื่น
-type: docs
 weight: 12
 url: /th/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---

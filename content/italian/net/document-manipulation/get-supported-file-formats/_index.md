@@ -3,7 +3,6 @@ title: Ottieni formati di file supportati
 linktitle: Ottieni formati di file supportati
 second_title: API GroupDocs.Watermark .NET
 description: Aggiungi facilmente filigrane ai tuoi documenti utilizzando GroupDocs.Watermark per .NET. Segui la nostra guida completa passo dopo passo per proteggere le tue risorse digitali.
-type: docs
 weight: 13
 url: /it/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ Puoi utilizzare lo snippet di codice fornito per elencare tutti i formati di fil
 ### Come posso acquistare una licenza per GroupDocs.Watermark?
  Le licenze possono essere acquistate direttamente da[pagina di acquisto](https://purchase.groupdocs.com/buy).
 ### È disponibile documentazione per GroupDocs.Watermark?
- Sì, è disponibile una documentazione completa[Qui](https://reference.groupdocs.com/Watermark/net/).
+ Sì, è disponibile una documentazione completa[Qui](https://tutorials.groupdocs.com/Watermark/net/).

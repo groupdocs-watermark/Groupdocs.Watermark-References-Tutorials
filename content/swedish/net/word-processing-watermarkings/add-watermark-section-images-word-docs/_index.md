@@ -3,7 +3,6 @@ title: Lägg till vattenstämpel till avsnittsbilder i Word Docs
 linktitle: Lägg till vattenstämpel till avsnittsbilder i Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar till bilder i Word-dokument med hjälp av Groupdocs Watermark for .NET. Följ vår guide för säkert och professionellt dokumentskydd.
-type: docs
 weight: 16
 url: /sv/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## Slutsats
 Att lägga till vattenstämplar till bilder i dina Word-dokument är ett kraftfullt sätt att skydda ditt innehåll. Med Groupdocs.Watermark för .NET är denna process enkel och effektiv. Följ stegen som beskrivs i denna handledning för att säkerställa att dina dokument är säkra och väl skyddade.
- För mer detaljerad dokumentation, besök[dokumentation](https://reference.groupdocs.com/Watermark/net/) . Om du har några frågor eller behöver mer hjälp, kolla in[supportforum](https://forum.groupdocs.com/c/watermark/19).
+ För mer detaljerad dokumentation, besök[dokumentation](https://tutorials.groupdocs.com/Watermark/net/) . Om du har några frågor eller behöver mer hjälp, kolla in[supportforum](https://forum.groupdocs.com/c/watermark/19).
 ## FAQ's
 ### Kan jag anpassa vattenstämpeltexten?
 Ja, du kan anpassa vattenstämpelns text, teckensnitt, storlek, justering och rotation för att passa dina behov.
 ### Är det möjligt att lägga till vattenstämplar i flera sektioner?
 Ja, du kan gå igenom varje avsnitt och applicera vattenstämpeln på bilder i alla avsnitt.
 ### Kan jag använda den här metoden för andra dokumentformat?
- Groupdocs Watermark stöder olika dokumentformat. Kolla[dokumentation](https://reference.groupdocs.com/Watermark/net/) för mer detaljer.
+ Groupdocs Watermark stöder olika dokumentformat. Kolla[dokumentation](https://tutorials.groupdocs.com/Watermark/net/) för mer detaljer.
 ### Hur kan jag få en tillfällig licens?
  Du kan få en tillfällig licens[här](https://purchase.groupdocs.com/temporary-license/).
 ### Vad händer om jag stöter på problem när jag använder Groupdocs.Watermark?

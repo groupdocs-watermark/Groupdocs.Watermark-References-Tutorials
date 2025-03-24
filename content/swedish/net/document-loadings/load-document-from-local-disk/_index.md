@@ -3,7 +3,6 @@ title: Ladda dokument från lokal disk
 linktitle: Ladda dokument från lokal disk
 second_title: GroupDocs.Watermark .NET API
 description: Skydda och hantera dina dokument med Groupdocs Watermark for .NET. Följ vår detaljerade guide för att lägga till vattenstämplar sömlöst.
-type: docs
 weight: 10
 url: /sv/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Slutsats
 Att lägga till vattenstämplar i dina dokument med Groupdocs Watermark för .NET är enkelt och effektivt. Den här guiden har gått igenom hela processen från att ställa in din miljö till att spara ett vattenmärkt dokument. Med detta kraftfulla verktyg kan du säkerställa att dina dokument är skyddade och att din immateriella egendom är säker. 
- För ytterligare information, kolla[dokumentation](https://reference.groupdocs.com/Watermark/net/) , och om du stöter på några problem,[supportforum](https://forum.groupdocs.com/c/watermark/19) är en utmärkt plats för hjälp. 
+ För ytterligare information, kolla[dokumentation](https://tutorials.groupdocs.com/Watermark/net/) , och om du stöter på några problem,[supportforum](https://forum.groupdocs.com/c/watermark/19) är en utmärkt plats för hjälp. 
 ## FAQ's
 ### Kan jag använda anpassade teckensnitt för vattenstämplar?
 Ja, Groupdocs stöder anpassade teckensnitt. Du kan ange vilket typsnitt som helst som är installerat på ditt system.

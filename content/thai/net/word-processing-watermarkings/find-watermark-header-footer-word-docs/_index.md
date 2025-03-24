@@ -3,7 +3,6 @@ title: ค้นหาลายน้ำในส่วนหัว/ท้าย
 linktitle: ค้นหาลายน้ำในส่วนหัว/ท้ายกระดาษในเอกสาร Word
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีค้นหาและลบลายน้ำออกจากเอกสาร Word อย่างมีประสิทธิภาพโดยใช้ GroupDocs สำหรับ .NET เพื่อให้มั่นใจถึงความสมบูรณ์ของเอกสารและความเป็นมืออาชีพ
-type: docs
 weight: 22
 url: /th/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---

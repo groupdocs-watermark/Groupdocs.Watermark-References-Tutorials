@@ -3,7 +3,6 @@ title: Rimuovi la filigrana dalla sezione in Word Docs
 linktitle: Rimuovi la filigrana dalla sezione in Word Docs
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come rimuovere filigrane da sezioni specifiche all'interno di documenti Word utilizzando GroupDocs.Watermark per .NET. Tutorial completo disponibile qui.
-type: docs
 weight: 32
 url: /it/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---

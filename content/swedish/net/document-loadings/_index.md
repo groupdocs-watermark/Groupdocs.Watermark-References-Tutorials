@@ -3,7 +3,6 @@ title: Dokument laddas
 linktitle: Dokument laddas
 second_title: GroupDocs.Watermark .NET API
 description: Upptäck GroupDocs.Watermark for .NET självstudier för att ladda och vattenstämpla dokument, vilket säkerställer dokumentsäkerhet och varumärkesbyggande med steg-för-steg-guider.
-type: docs
 weight: 22
 url: /sv/net/document-loadings/
 ---

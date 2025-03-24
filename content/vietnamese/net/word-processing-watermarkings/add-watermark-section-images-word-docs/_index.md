@@ -3,7 +3,6 @@ title: Thêm hình mờ vào hình ảnh phần trong tài liệu Word
 linktitle: Thêm hình mờ vào hình ảnh phần trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ vào hình ảnh trong tài liệu Word bằng Groupdocs cho .NET. Hãy làm theo hướng dẫn của chúng tôi để bảo vệ tài liệu an toàn và chuyên nghiệp.
-type: docs
 weight: 16
 url: /vi/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## Phần kết luận
 Thêm hình mờ vào hình ảnh trong tài liệu Word là một cách mạnh mẽ để bảo vệ nội dung của bạn. Với Groupdocs.Watermark dành cho .NET, quá trình này rất đơn giản và hiệu quả. Hãy làm theo các bước được nêu trong hướng dẫn này để đảm bảo tài liệu của bạn được an toàn và bảo vệ tốt.
- Để biết thêm tài liệu chi tiết, hãy truy cập[tài liệu](https://reference.groupdocs.com/Watermark/net/) . Nếu bạn có bất kỳ câu hỏi nào hoặc cần hỗ trợ thêm, hãy xem[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/watermark/19).
+ Để biết thêm tài liệu chi tiết, hãy truy cập[tài liệu](https://tutorials.groupdocs.com/Watermark/net/) . Nếu bạn có bất kỳ câu hỏi nào hoặc cần hỗ trợ thêm, hãy xem[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/watermark/19).
 ## Câu hỏi thường gặp
 ### Tôi có thể tùy chỉnh văn bản hình mờ không?
 Có, bạn có thể tùy chỉnh văn bản hình mờ, phông chữ, kích thước, căn chỉnh và xoay để phù hợp với nhu cầu của bạn.
 ### Có thể thêm hình mờ vào nhiều phần không?
 Có, bạn có thể lặp qua từng phần và áp dụng hình mờ cho hình ảnh trong tất cả các phần.
 ### Tôi có thể sử dụng phương pháp này cho các định dạng tài liệu khác không?
- Groupdocs hỗ trợ nhiều định dạng tài liệu khác nhau. Kiểm tra[tài liệu](https://reference.groupdocs.com/Watermark/net/) để biết thêm chi tiết.
+ Groupdocs hỗ trợ nhiều định dạng tài liệu khác nhau. Kiểm tra[tài liệu](https://tutorials.groupdocs.com/Watermark/net/) để biết thêm chi tiết.
 ### Làm thế nào tôi có thể có được giấy phép tạm thời?
  Bạn có thể có được giấy phép tạm thời[đây](https://purchase.groupdocs.com/temporary-license/).
 ### Điều gì sẽ xảy ra nếu tôi gặp sự cố khi sử dụng Groupdocs.Watermark?

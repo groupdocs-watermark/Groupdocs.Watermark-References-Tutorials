@@ -3,7 +3,6 @@ title: Unprotect Document in Word Docs
 linktitle: Unprotect Document in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to unprotect Word documents easily using GroupDocs.Watermark for .NET. Follow our step-by-step guide.
-type: docs
 weight: 38
 url: /net/word-processing-watermarkings/unprotect-document-word-docs/
 ---

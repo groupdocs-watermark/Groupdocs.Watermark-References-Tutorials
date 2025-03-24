@@ -3,7 +3,6 @@ title: PDF から注釈情報を抽出する
 linktitle: PDF から注釈情報を抽出する
 second_title: GroupDocs.Watermark .NET API
 description: この詳細なステップバイステップ ガイドでは、GroupDocs.Watermark for .NET を使用して PDF ドキュメントから注釈情報を抽出する方法を学びます。
-type: docs
 weight: 23
 url: /ja/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
@@ -103,7 +102,7 @@ using (StreamWriter writer = new StreamWriter(outputFileName))
 ```
 ## 結論
 GroupDocs.Watermark for .NET を使用して PDF ドキュメントから注釈情報を抽出するのは簡単なプロセスであり、時間と労力を大幅に節約できます。このガイドで概説されている手順に従うことで、この機能をプロジェクトに簡単に統合し、貴重な注釈データの抽出を自動化できます。
-大量の PDF を管理している場合でも、単に特定の情報を抽出する必要がある場合でも、GroupDocs.Watermark for .NET は信頼性が高く効率的なソリューションを提供します。忘れずにチェックしてください[ドキュメンテーション](https://reference.groupdocs.com/Watermark/net/)より高度な機能とカスタマイズ オプションについては、
+大量の PDF を管理している場合でも、単に特定の情報を抽出する必要がある場合でも、GroupDocs.Watermark for .NET は信頼性が高く効率的なソリューションを提供します。忘れずにチェックしてください[ドキュメンテーション](https://tutorials.groupdocs.com/Watermark/net/)より高度な機能とカスタマイズ オプションについては、
 ## よくある質問
 ### .NET 用の GroupDocs.Watermark とは何ですか?
 GroupDocs.Watermark for .NET は、開発者が PDF、Word ドキュメント、画像などのさまざまなドキュメント形式からウォーターマークを追加、検索、削除できるようにする包括的なライブラリです。

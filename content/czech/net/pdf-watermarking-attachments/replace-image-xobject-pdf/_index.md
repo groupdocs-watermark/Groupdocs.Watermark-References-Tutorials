@@ -3,7 +3,6 @@ title: Nahradit obrázek za konkrétní XObject v PDF
 linktitle: Nahradit obrázek za konkrétní XObject v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Pomocí tohoto podrobného průvodce můžete snadno nahradit obrázky v souborech PDF pomocí GroupDocs.Watermark for .NET. Ideální pro efektivní správu obsahu PDF.
-type: docs
 weight: 39
 url: /cs/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
@@ -76,6 +75,6 @@ Absolutně! GroupDocs.Watermark podporuje různé formáty dokumentů, včetně 
 ### Jak mohu získat bezplatnou zkušební verzi GroupDocs.Watermark?
  Bezplatnou zkušební verzi si můžete stáhnout z[tady](https://releases.groupdocs.com/).
 ### Co když potřebuji pokročilejší funkce?
- Zkontrolovat[dokumentace](https://reference.groupdocs.com/Watermark/net/) pro pokročilé funkce a možnosti přizpůsobení.
+ Zkontrolovat[dokumentace](https://tutorials.groupdocs.com/Watermark/net/) pro pokročilé funkce a možnosti přizpůsobení.
 ### Kde mohu získat podporu pro GroupDocs.Watermark?
  Navštivte[Fórum podpory](https://forum.groupdocs.com/c/watermark/19) pro pomoc.

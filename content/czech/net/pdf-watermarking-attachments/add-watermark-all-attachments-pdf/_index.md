@@ -3,7 +3,6 @@ title: Přidat vodoznak do všech příloh v PDF
 linktitle: Přidat vodoznak do všech příloh v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky do příloh PDF pomocí GroupDocs.Watermark for .NET. Zabezpečte své dokumenty snadno pomocí vlastních vodoznaků.
-type: docs
 weight: 16
 url: /cs/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---

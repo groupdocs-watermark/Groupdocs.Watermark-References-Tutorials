@@ -3,7 +3,6 @@ title: Χρήση τύπου σχήματος στα Έγγραφα του Word
 linktitle: Χρήση τύπου σχήματος στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να χειρίζεστε σχήματα σε έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Αυτό το σεμινάριο παρέχει καθοδήγηση για αποτελεσματική επεξεργασία εγγράφων.
-type: docs
 weight: 37
 url: /el/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---

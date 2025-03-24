@@ -3,7 +3,6 @@ title: 在 Word 文件中的節中連結頁首/頁腳
 linktitle: 在 Word 文件中的節中連結頁首/頁腳
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 有效連結 Word 文件各部分中的頁首和頁尾。文件管理和安全。
-type: docs
 weight: 26
 url: /zh-hant/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### GroupDocs.Watermark for .NET 是否有臨時授權？
 是的，可以從以下機構獲得臨時許可證[GroupDocs 購買頁面](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Watermark for .NET 是否為開發人員提供文件？
-是的，提供全面的文檔[這裡](https://reference.groupdocs.com/Watermark/net/).
+是的，提供全面的文檔[這裡](https://tutorials.groupdocs.com/Watermark/net/).

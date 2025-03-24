@@ -3,7 +3,6 @@ title: Κύρια ασφάλεια και επωνυμία εγγράφων με
 linktitle: GroupDocs.Watermark Tutorials
 additionalTitle: Αναφορές API GroupDocs
 description: Ξεκλειδώστε τη δύναμη του GroupDocs.Watermark με τα σεμινάρια .NET και Java. Κατακτήστε τις τεχνικές υδατογράφησης για την ασφάλεια εγγράφων και την επωνυμία.
-type: docs
 weight: 11
 url: /el/
 is_root: true

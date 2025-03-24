@@ -3,7 +3,6 @@ title: Trova filigrana nell'intestazione/piè di pagina nei documenti Word
 linktitle: Trova filigrana nell'intestazione/piè di pagina nei documenti Word
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come trovare e rimuovere in modo efficiente le filigrane dai documenti Word utilizzando GroupDocs per .NET, garantendo l'integrità e la professionalità dei documenti.
-type: docs
 weight: 22
 url: /it/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---

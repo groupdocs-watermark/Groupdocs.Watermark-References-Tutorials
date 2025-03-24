@@ -3,7 +3,6 @@ title: Nastavit jiné záhlaví/zápatí první stránky v Dokumentech aplikace 
 linktitle: Nastavit jiné záhlaví/zápatí první stránky v Dokumentech aplikace Word
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak nastavit různá záhlaví a zápatí na první stránce dokumentů Word pomocí GroupDocs.Watermark for .NET.
-type: docs
 weight: 36
 url: /cs/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Ano, uživatelé mohou využít bezplatnou zkušební verzi GroupDocs.Watermark 
 ### Mohu si zakoupit dočasnou licenci pro krátkodobé použití?
  Ano, dočasné licence pro GroupDocs pro .NET lze získat z[Stránka pro dočasný nákup licence](https://purchase.groupdocs.com/temporary-license/).
 ### Kde najdu komplexní dokumentaci k GroupDocs.Watermark for .NET?
- Podrobná dokumentace k GroupDocs.Watermark for .NET je k dispozici na[Referenční stránka](https://reference.groupdocs.com/Watermark/net/).
+ Podrobná dokumentace k GroupDocs.Watermark for .NET je k dispozici na[Referenční stránka](https://tutorials.groupdocs.com/Watermark/net/).

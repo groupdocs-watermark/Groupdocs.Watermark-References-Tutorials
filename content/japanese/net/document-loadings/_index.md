@@ -3,7 +3,6 @@ title: ドキュメントのロード
 linktitle: ドキュメントのロード
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET チュートリアルを参照して、ドキュメントをロードして透かしを入れ、ステップバイステップのガイドでドキュメントのセキュリティとブランド化を確保します。
-type: docs
 weight: 22
 url: /ja/net/document-loadings/
 ---

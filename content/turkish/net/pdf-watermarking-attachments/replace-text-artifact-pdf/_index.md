@@ -3,7 +3,6 @@ title: PDF'deki Belirli Yapının Metni Değiştir
 linktitle: PDF'deki Belirli Yapının Metni Değiştir
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF belgelerindeki belirli yapılara ilişkin metni nasıl değiştireceğinizi keşfedin. Belge güvenliğini ve bütünlüğünü zahmetsizce geliştirin.
-type: docs
 weight: 42
 url: /tr/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---

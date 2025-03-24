@@ -3,7 +3,6 @@ title: PDF Belgesini Rasterleştir
 linktitle: PDF Belgesini Rasterleştir
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF belgelerini nasıl rasterleştireceğinizi öğrenin. Belge güvenliğini ve görsel çekiciliği zahmetsizce artırın.
-type: docs
 weight: 27
 url: /tr/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---

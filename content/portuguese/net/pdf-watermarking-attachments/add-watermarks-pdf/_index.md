@@ -3,7 +3,6 @@ title: Adicionar marcas d'água ao PDF
 linktitle: Adicionar marcas d'água ao PDF
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda como adicionar marcas d'água de texto e imagem aos seus PDFs usando GroupDocs.Watermark for .NET com nosso guia passo a passo abrangente.
-type: docs
 weight: 14
 url: /pt/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---

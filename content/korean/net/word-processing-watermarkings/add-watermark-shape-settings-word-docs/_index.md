@@ -3,7 +3,6 @@ title: Word Docs에서 도형 설정으로 워터마크 추가
 linktitle: Word Docs에서 도형 설정으로 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs for .NET을 사용하여 Word 문서에 모양 설정이 포함된 워터마크를 추가하는 방법을 알아보세요. 문서를 효과적으로 보호하세요.
-type: docs
 weight: 20
 url: /ko/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---

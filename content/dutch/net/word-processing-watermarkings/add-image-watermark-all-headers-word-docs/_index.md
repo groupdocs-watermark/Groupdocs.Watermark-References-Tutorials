@@ -3,7 +3,6 @@ title: Voeg een afbeeldingswatermerk toe aan alle kopteksten in Word-documenten
 linktitle: Voeg een afbeeldingswatermerk toe aan alle kopteksten in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Voeg eenvoudig afbeeldingswatermerken toe aan alle kopteksten in Word-documenten met GroupDocs.Watermark voor .NET. Volg onze stapsgewijze handleiding met gedetailleerde codevoorbeelden.
-type: docs
 weight: 10
 url: /nl/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---

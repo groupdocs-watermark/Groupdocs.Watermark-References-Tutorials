@@ -3,7 +3,6 @@ title: Fügen Sie bestimmten Seiten in Word-Dokumenten ein gesperrtes Wasserzeic
 linktitle: Fügen Sie bestimmten Seiten in Word-Dokumenten ein gesperrtes Wasserzeichen hinzu
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in unserer einfachen Schritt-für-Schritt-Anleitung, wie Sie mit GroupDocs.Watermark für .NET bestimmten Seiten in Word-Dokumenten ein gesperrtes Wasserzeichen hinzufügen.
-type: docs
 weight: 12
 url: /de/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## Abschluss
 Glückwunsch! Sie haben mit GroupDocs.Watermark für .NET erfolgreich ein gesperrtes Wasserzeichen zu bestimmten Seiten in einem Word-Dokument hinzugefügt. In diesem Tutorial wurden alle wesentlichen Schritte vom Laden des Dokuments bis zum Speichern der mit Wasserzeichen versehenen Datei behandelt. Indem Sie diese Schritte befolgen, können Sie sicherstellen, dass Ihre Dokumente sicher mit Wasserzeichen versehen sind und Ihre Inhalte so vor unbefugter Bearbeitung und Nutzung geschützt sind.
- Weitere Informationen finden Sie im[GroupDocs.Watermark-Dokumentation](https://reference.groupdocs.com/Watermark/net/) . Wenn Sie Fragen haben oder weitere Hilfe benötigen, besuchen Sie bitte die[Hilfeforum](https://forum.groupdocs.com/c/watermark/19).
+ Weitere Informationen finden Sie im[GroupDocs.Watermark-Dokumentation](https://tutorials.groupdocs.com/Watermark/net/) . Wenn Sie Fragen haben oder weitere Hilfe benötigen, besuchen Sie bitte die[Hilfeforum](https://forum.groupdocs.com/c/watermark/19).
 ## FAQs
 ### Was ist GroupDocs.Watermark für .NET?
 GroupDocs.Watermark für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Wasserzeichen zu verschiedenen Dokumenttypen hinzuzufügen, darunter Word, PDF, Excel und mehr.

@@ -3,7 +3,6 @@ title: حماية المستند في مستندات Word
 linktitle: حماية المستند في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية حماية مستندات Word باستخدام GroupDocs.Watermark لـ .NET. اتبع برنامجنا التعليمي خطوة بخطوة لإضافة الأمان إلى مستنداتك دون عناء.
-type: docs
 weight: 28
 url: /ar/net/word-processing-watermarkings/protect-document-word-docs/
 ---

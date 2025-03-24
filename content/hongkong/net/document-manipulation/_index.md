@@ -3,7 +3,6 @@ title: 文件處理
 linktitle: 文件處理
 second_title: GroupDocs.Watermark .NET API
 description: 探索產生文件預覽和管理浮水印的 GroupDocs.Watermark for .NET 教學。加強文件安全和管理。
-type: docs
 weight: 21
 url: /zh-hant/net/document-manipulation/
 ---

@@ -3,7 +3,6 @@ title: PDF'ye Salt Yazdır Açıklama Filigranı Ekleme
 linktitle: PDF'ye Salt Yazdır Açıklama Filigranı Ekleme
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF'lere salt yazdırılabilir açıklama filigranlarını nasıl ekleyeceğinizi öğrenin. Belge güvenliğini ve markalamayı zahmetsizce geliştirin.
-type: docs
 weight: 13
 url: /tr/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---

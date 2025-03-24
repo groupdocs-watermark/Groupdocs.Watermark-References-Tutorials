@@ -3,7 +3,6 @@ title: Zastąp tekst kształtu tekstem sformatowanym w dokumentach programu Word
 linktitle: Zastąp tekst kształtu tekstem sformatowanym w dokumentach programu Word
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak zastąpić tekst kształtu tekstem sformatowanym w dokumentach programu Word przy użyciu narzędzia GroupDocs.Watermark dla platformy .NET. Twoje możliwości edycji dokumentów bez wysiłku.
-type: docs
 weight: 34
 url: /pl/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---

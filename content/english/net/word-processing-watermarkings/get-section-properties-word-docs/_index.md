@@ -3,7 +3,6 @@ title: Get Section Properties in Word Docs
 linktitle: Get Section Properties in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to extract section properties from Word documents using Groupdocs.Watermark for .NET. Enhance your document manipulation capabilities effortlessly.
-type: docs
 weight: 23
 url: /net/word-processing-watermarkings/get-section-properties-word-docs/
 ---

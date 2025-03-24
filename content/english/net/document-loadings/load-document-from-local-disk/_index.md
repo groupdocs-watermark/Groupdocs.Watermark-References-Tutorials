@@ -3,7 +3,6 @@ title: Load Document from Local Disk
 linktitle: Load Document from Local Disk
 second_title: GroupDocs.Watermark .NET API
 description: Protect and manage your documents with Groupdocs.Watermark for .NET. Follow our detailed guide to add watermarks seamlessly.
-type: docs
 weight: 10
 url: /net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Conclusion
 Adding watermarks to your documents using Groupdocs.Watermark for .NET is straightforward and efficient. This guide has walked you through the entire process from setting up your environment to saving a watermarked document. With this powerful tool, you can ensure your documents are protected and your intellectual property is secure. 
-For further details, check the [documentation](https://reference.groupdocs.com/Watermark/net/), and if you encounter any issues, the [support forum](https://forum.groupdocs.com/c/watermark/19) is an excellent place for assistance. 
+For further details, check the [documentation](https://tutorials.groupdocs.com/Watermark/net/), and if you encounter any issues, the [support forum](https://forum.groupdocs.com/c/watermark/19) is an excellent place for assistance. 
 ## FAQ's
 ### Can I use custom fonts for watermarks?
 Yes, Groupdocs.Watermark supports custom fonts. You can specify any font installed on your system.

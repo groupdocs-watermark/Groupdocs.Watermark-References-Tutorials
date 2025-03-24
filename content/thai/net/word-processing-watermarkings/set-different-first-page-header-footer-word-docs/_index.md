@@ -3,7 +3,6 @@ title: ตั้งค่าส่วนหัว/ส่วนท้ายขอ
 linktitle: ตั้งค่าส่วนหัว/ส่วนท้ายของหน้าแรกที่แตกต่างกันในเอกสาร Word
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีตั้งค่าส่วนหัวและส่วนท้ายต่างๆ บนหน้าแรกของเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET
-type: docs
 weight: 36
 url: /th/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ GroupDocs.Watermark สำหรับ .NET มอบโซลูชันที
 ### ฉันสามารถซื้อใบอนุญาตชั่วคราวสำหรับการใช้งานระยะสั้นได้หรือไม่
  ใช่ สามารถรับสิทธิ์การใช้งานชั่วคราวสำหรับ GroupDocs สำหรับ .NET ได้[หน้าซื้อใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/).
 ### ฉันจะหาเอกสารที่ครอบคลุมสำหรับ GroupDocs.Watermark for .NET ได้ที่ไหน
- เอกสารรายละเอียดสำหรับ GroupDocs.Watermark สำหรับ .NET มีอยู่ใน[หน้าอ้างอิง](https://reference.groupdocs.com/Watermark/net/).
+ เอกสารรายละเอียดสำหรับ GroupDocs.Watermark สำหรับ .NET มีอยู่ใน[หน้าอ้างอิง](https://tutorials.groupdocs.com/Watermark/net/).

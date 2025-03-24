@@ -3,7 +3,6 @@ title: Pixelliser la page PDF
 linktitle: Pixelliser la page PDF
 second_title: API GroupDocs.Watermark .NET
 description: Améliorez la sécurité des documents avec GroupDocs pour .NET. Ajoutez des filigranes aux PDF et à d’autres formats de manière transparente.
-type: docs
 weight: 28
 url: /fr/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---

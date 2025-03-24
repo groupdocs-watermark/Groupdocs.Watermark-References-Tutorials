@@ -3,7 +3,6 @@ title: Alakzatszöveg cseréje formázott szövegre a Word Dokumentumokban
 linktitle: Alakzatszöveg cseréje formázott szövegre a Word Dokumentumokban
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan cserélheti le az alakzat szövegét formázott szöveggel a Word dokumentumokban a GroupDocs.Watermark for .NET segítségével. Az Ön dokumentumszerkesztési lehetőségei könnyedén.
-type: docs
 weight: 34
 url: /hu/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
 ---

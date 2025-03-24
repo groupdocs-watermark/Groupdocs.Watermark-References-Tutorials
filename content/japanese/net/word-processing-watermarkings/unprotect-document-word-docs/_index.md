@@ -3,7 +3,6 @@ title: Word ドキュメントでドキュメントの保護を解除する
 linktitle: Word ドキュメントでドキュメントの保護を解除する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して Word ドキュメントの保護を簡単に解除する方法を学びます。ステップバイステップのガイドに従ってください。
-type: docs
 weight: 38
 url: /ja/net/word-processing-watermarkings/unprotect-document-word-docs/
 ---

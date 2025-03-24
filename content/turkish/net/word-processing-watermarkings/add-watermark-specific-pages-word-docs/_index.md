@@ -3,7 +3,6 @@ title: Word Belgelerindeki Belirli Sayfalara Filigran Ekleme
 linktitle: Word Belgelerindeki Belirli Sayfalara Filigran Ekleme
 second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs for .NET'i kullanarak Word belgelerindeki belirli sayfalara zahmetsizce nasıl filigran ekleyeceğinizi öğrenin. Belge güvenliğini ve markalamayı geliştirin.
-type: docs
 weight: 18
 url: /tr/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---

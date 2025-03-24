@@ -3,7 +3,6 @@ title: Salva il documento nello stesso file o flusso
 linktitle: Salva il documento nello stesso file o flusso
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere filigrane ai documenti utilizzando Groupdocs.Watermark per .NET. Questa guida fornisce istruzioni per garantire la protezione e l'integrità dei documenti.
-type: docs
 weight: 10
 url: /it/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Infine, salva il documento con la filigrana applicata:
 watermarker.Save();
 ```
 ## Conclusione
-Aggiungere filigrane ai tuoi documenti utilizzando Groupdocs per .NET è semplice ed efficiente. Seguendo i passaggi sopra descritti, puoi proteggere i tuoi documenti e mantenerne l'integrità senza sforzo. Per maggiori dettagli è possibile fare riferimento al[documentazione](https://reference.groupdocs.com/Watermark/net/).
+Aggiungere filigrane ai tuoi documenti utilizzando Groupdocs per .NET è semplice ed efficiente. Seguendo i passaggi sopra descritti, puoi proteggere i tuoi documenti e mantenerne l'integrità senza sforzo. Per maggiori dettagli è possibile fare riferimento al[documentazione](https://tutorials.groupdocs.com/Watermark/net/).
 ## Domande frequenti
 ### Posso utilizzare un'immagine come filigrana al posto del testo?
 Sì, Groupdocs.Watermark ti consente di utilizzare immagini, forme e testo come filigrane.

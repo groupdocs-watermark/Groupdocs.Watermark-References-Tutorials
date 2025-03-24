@@ -3,7 +3,6 @@ title: แปลงหน้า PDF เป็นแรสเตอร์
 linktitle: แปลงหน้า PDF เป็นแรสเตอร์
 second_title: GroupDocs.Watermark .NET API
 description: เพิ่มความปลอดภัยให้กับเอกสารด้วย GroupDocs ลายน้ำสำหรับ .NET เพิ่มลายน้ำให้กับ PDF และรูปแบบอื่นๆ ได้อย่างราบรื่น
-type: docs
 weight: 28
 url: /th/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---

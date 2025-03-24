@@ -3,7 +3,6 @@ title: تعيين رأس/تذييل مختلف للصفحة الأولى في م
 linktitle: تعيين رأس/تذييل مختلف للصفحة الأولى في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية تعيين رؤوس وتذييلات مختلفة على الصفحة الأولى من مستندات Word باستخدام GroupDocs.Watermark لـ .NET.
-type: docs
 weight: 36
 url: /ar/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ watermarker.Save(outputFileName);
 ### هل يمكنني شراء ترخيص مؤقت للاستخدام قصير المدى؟
  نعم، يمكن الحصول على تراخيص مؤقتة لـ GroupDocs للعلامة المائية لـ .NET من[صفحة شراء الترخيص المؤقت](https://purchase.groupdocs.com/temporary-license/).
 ### أين يمكنني العثور على وثائق شاملة لـ GroupDocs.Watermark لـ .NET؟
- تتوفر الوثائق التفصيلية لـ GroupDocs.Watermark لـ .NET على الموقع[الصفحه المرجعيه](https://reference.groupdocs.com/Watermark/net/).
+ تتوفر الوثائق التفصيلية لـ GroupDocs.Watermark لـ .NET على الموقع[الصفحه المرجعيه](https://tutorials.groupdocs.com/Watermark/net/).

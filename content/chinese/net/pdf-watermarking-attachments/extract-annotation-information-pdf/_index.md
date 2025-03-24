@@ -3,7 +3,6 @@ title: 从 PDF 中提取注释信息
 linktitle: 从 PDF 中提取注释信息
 second_title: GroupDocs.Watermark .NET API
 description: 在此详细的分步指南中了解如何使用 GroupDocs.Watermark for .NET 从 PDF 文档中提取注释信息。
-type: docs
 weight: 23
 url: /zh/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
@@ -103,7 +102,7 @@ using (StreamWriter writer = new StreamWriter(outputFileName))
 ```
 ## 结论
 使用 GroupDocs.Watermark for .NET 从 PDF 文档中提取注释信息是一个简单的过程，可以为您节省大量时间和精力。通过遵循本指南中概述的步骤，您可以轻松地将此功能集成到您的项目中并自动提取有价值的注释数据。
-无论您是管理大量 PDF 还是仅需要提取特定信息，GroupDocs.Watermark for .NET 都能提供可靠且高效的解决方案。不要忘记查看[文档](https://reference.groupdocs.com/Watermark/net/)了解更多高级功能和定制选项。
+无论您是管理大量 PDF 还是仅需要提取特定信息，GroupDocs.Watermark for .NET 都能提供可靠且高效的解决方案。不要忘记查看[文档](https://tutorials.groupdocs.com/Watermark/net/)了解更多高级功能和定制选项。
 ## 常见问题解答
 ### 什么是 .NET 的 GroupDocs.Watermark？
 GroupDocs.Watermark for .NET 是一个综合库，允许开发人员从各种文档格式（包括 PDF、Word 文档和图像）添加、搜索和删除水印。

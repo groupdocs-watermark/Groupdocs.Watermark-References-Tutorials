@@ -3,7 +3,6 @@ title: Lưu tài liệu vào luồng được chỉ định
 linktitle: Lưu tài liệu vào luồng được chỉ định
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách lưu tài liệu vào luồng được chỉ định bằng GroupDocs.Watermark cho .NET với hướng dẫn từng bước này. Hoàn hảo cho các nhà phát triển ở mọi cấp độ.
-type: docs
 weight: 12
 url: /vi/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Có, GroupDocs hỗ trợ hình mờ văn bản, hình ảnh và thậm chí c�
 ### Làm thế nào tôi có thể nhận được giấy phép tạm thời?
  Bạn có thể xin giấy phép tạm thời từ[liên kết này](https://purchase.groupdocs.com/temporary-license/).
 ### Tôi có thể tìm tài liệu chi tiết hơn ở đâu?
- Để biết thêm tài liệu chi tiết, bạn có thể truy cập[đây](https://reference.groupdocs.com/Watermark/net/).
+ Để biết thêm tài liệu chi tiết, bạn có thể truy cập[đây](https://tutorials.groupdocs.com/Watermark/net/).

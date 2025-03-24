@@ -3,7 +3,6 @@ title: पीडीएफ में सभी अनुलग्नकों म
 linktitle: पीडीएफ में सभी अनुलग्नकों में वॉटरमार्क जोड़ें
 second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके PDF अनुलग्नकों में वॉटरमार्क जोड़ने का तरीका जानें। अपने दस्तावेज़ों को कस्टम वॉटरमार्क से आसानी से सुरक्षित करें।
-type: docs
 weight: 16
 url: /hi/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---

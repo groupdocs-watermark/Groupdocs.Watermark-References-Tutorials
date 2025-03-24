@@ -3,7 +3,6 @@ title: Extrahujte všechny přílohy z PDF
 linktitle: Extrahujte všechny přílohy z PDF
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se extrahovat všechny přílohy z PDF pomocí Groupdocs.Watermark for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémový proces extrakce.
-type: docs
 weight: 22
 url: /cs/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---

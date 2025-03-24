@@ -3,7 +3,6 @@ title: Sök bild i bifogad PDF
 linktitle: Sök bild i bifogad PDF
 second_title: GroupDocs.Watermark .NET API
 description: Sök effektivt efter bilder i PDF-bilagor med GroupDocs.Watermark för .NET. Förenkla din vattenstämpelhanteringsprocess utan ansträngning.
-type: docs
 weight: 46
 url: /sv/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---

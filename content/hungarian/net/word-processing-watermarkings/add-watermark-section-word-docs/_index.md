@@ -3,7 +3,6 @@ title: Vízjel hozzáadása a Word Dokumentumok szakaszához
 linktitle: Vízjel hozzáadása a Word Dokumentumok szakaszához
 second_title: GroupDocs.Watermark .NET API
 description: Könnyen hozzáadhat vízjeleket Word dokumentumokhoz a GroupDocs.Watermark for .NET segítségével. Védje meg tartalmait ezzel az egyszerű útmutatóval.
-type: docs
 weight: 15
 url: /hu/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

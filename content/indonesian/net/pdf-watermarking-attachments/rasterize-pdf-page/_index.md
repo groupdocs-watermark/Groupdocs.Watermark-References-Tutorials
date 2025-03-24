@@ -3,7 +3,6 @@ title: Rasterisasi Halaman PDF
 linktitle: Rasterisasi Halaman PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Tingkatkan keamanan dokumen dengan GroupDocs untuk .NET. Tambahkan tanda air ke PDF dan format lainnya dengan lancar.
-type: docs
 weight: 28
 url: /id/net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---

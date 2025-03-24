@@ -3,7 +3,6 @@ title: PDF'de Belirli Metin Formatına Sahip Ek Açıklamaları Kaldırma
 linktitle: PDF'de Belirli Metin Formatına Sahip Ek Açıklamaları Kaldırma
 second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs for .NET'i kullanarak PDF belgelerindeki belirli metin formatına sahip ek açıklamaları nasıl kaldıracağınızı öğrenin.
-type: docs
 weight: 30
 url: /tr/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
@@ -72,7 +71,7 @@ Evet, Groupdocs.Watermark, DOCX, PPTX, XLSX, PDF ve daha fazlası dahil olmak ü
 ### Groupdocs.Watermark for .NET'in ücretsiz deneme sürümü var mı?
  Evet, Groupdocs.Watermark for .NET'in ücretsiz deneme sürümüne şu adresten erişebilirsiniz:[Burada](https://releases.groupdocs.com/).
 ### Groupdocs.Watermark for .NET belgelerini nerede bulabilirim?
- Ayrıntılı belgeleri ve API referanslarını bulabilirsiniz[Burada](https://reference.groupdocs.com/Watermark/net/).
+ Ayrıntılı belgeleri ve API referanslarını bulabilirsiniz[Burada](https://tutorials.groupdocs.com/Watermark/net/).
 ### Groupdocs.Watermark ile ilgili herhangi bir sorun veya soru için nasıl destek alabilirim?
  Sorularınızı veya sorunlarınızı Groupdocs.Watermark forumuna gönderebilirsiniz.[Burada](https://forum.groupdocs.com/c/watermark/19).
 ### Groupdocs.Watermark for .NET için geçici bir lisans satın alabilir miyim?

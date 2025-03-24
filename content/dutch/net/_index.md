@@ -1,7 +1,6 @@
 ---
 title: Zelfstudies en voorbeelden van GroupDocs.Watermark voor .NET
 linktitle: GroupDocs.Watermark voor .NET-zelfstudies
-type: docs
 weight: 10
 url: /nl/net/
 description: Ontdek uitgebreide GroupDocs.Watermark voor .NET-tutorials. Leer hoe u watermerken in verschillende documentformaten kunt toevoegen, beheren en beveiligen met stapsgewijze handleidingen.

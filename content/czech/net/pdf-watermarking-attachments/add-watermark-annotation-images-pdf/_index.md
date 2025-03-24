@@ -3,7 +3,6 @@ title: Přidejte vodoznak k obrázkům anotací v PDF
 linktitle: Přidejte vodoznak k obrázkům anotací v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se chránit své dokumenty PDF přidáním vodoznaků do obrázků anotací pomocí Groupdocs.Watermark for .NET.
-type: docs
 weight: 17
 url: /cs/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---

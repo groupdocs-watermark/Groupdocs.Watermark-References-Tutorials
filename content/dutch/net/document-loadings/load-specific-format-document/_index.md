@@ -3,7 +3,6 @@ title: Document met specifiek formaat laden
 linktitle: Document met specifiek formaat laden
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u documenten kunt laden en van een watermerk kunt voorzien met Groupdocs voor .NET met deze stapsgewijze handleiding. Bescherm en merk uw inhoud moeiteloos.
-type: docs
 weight: 12
 url: /nl/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Conclusie
-Het watermerken van documenten is een cruciale stap bij het beschermen van uw inhoud, en Groupdocs.Watermark voor .NET maakt dit proces eenvoudig en efficiënt. Door deze handleiding te volgen, kunt u eenvoudig watermerken laden en op uw documenten toepassen, waardoor de veiligheid en de juiste branding worden gegarandeerd. Voor meer details en geavanceerde opties raadpleegt u de[Groupdocs.Watermark voor .NET-documentatie](https://reference.groupdocs.com/Watermark/net/).
+Het watermerken van documenten is een cruciale stap bij het beschermen van uw inhoud, en Groupdocs.Watermark voor .NET maakt dit proces eenvoudig en efficiënt. Door deze handleiding te volgen, kunt u eenvoudig watermerken laden en op uw documenten toepassen, waardoor de veiligheid en de juiste branding worden gegarandeerd. Voor meer details en geavanceerde opties raadpleegt u de[Groupdocs.Watermark voor .NET-documentatie](https://tutorials.groupdocs.com/Watermark/net/).
 ## Veelgestelde vragen
 ### Kan ik deze methode gebruiken voor verschillende documentformaten?
  Ja, Groupdocs ondersteunt verschillende documentformaten. Je moet de`LoadOptions` overeenkomstig.

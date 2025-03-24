@@ -3,7 +3,6 @@ title: 为Word文档中的特定页面添加水印
 linktitle: 为Word文档中的特定页面添加水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs for .NET 轻松地将水印添加到 Word 文档中的特定页面。增强文档安全性和品牌形象。
-type: docs
 weight: 18
 url: /zh/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
 ---

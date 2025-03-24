@@ -3,7 +3,6 @@ title: 特定の形式のドキュメントをロードする
 linktitle: 特定の形式のドキュメントをロードする
 second_title: GroupDocs.Watermark .NET API
 description: このステップバイステップのガイドでは、Groupdocs for .NET を使用してドキュメントをロードし、ウォーターマークを付ける方法を学習します。コンテンツを簡単に保護し、ブランド化します。
-type: docs
 weight: 12
 url: /ja/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## 結論
-ドキュメントに透かしを入れることは、コンテンツを保護するための重要なステップであり、Groupdocs.Watermark for .NET を使用すると、このプロセスが簡単かつ効率的になります。このガイドに従うことで、ドキュメントに透かしを簡単にロードして適用することができ、ドキュメントのセキュリティと適切なブランド化を確保できます。詳細と高度なオプションについては、「[Groupdocs.Watermark for .NET ドキュメント](https://reference.groupdocs.com/Watermark/net/).
+ドキュメントに透かしを入れることは、コンテンツを保護するための重要なステップであり、Groupdocs.Watermark for .NET を使用すると、このプロセスが簡単かつ効率的になります。このガイドに従うことで、ドキュメントに透かしを簡単にロードして適用することができ、ドキュメントのセキュリティと適切なブランド化を確保できます。詳細と高度なオプションについては、「[Groupdocs.Watermark for .NET ドキュメント](https://tutorials.groupdocs.com/Watermark/net/).
 ## よくある質問
 ### この方法をさまざまなドキュメント形式に使用できますか?
 はい、Groupdocs はさまざまなドキュメント形式をサポートしています。調整する必要があります`LoadOptions`それに応じて。

@@ -3,7 +3,6 @@ title: Agregar marca de agua a imágenes de sección en documentos de Word
 linktitle: Agregar marca de agua a imágenes de sección en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a agregar marcas de agua a imágenes en documentos de Word usando Groupdocs para .NET. Siga nuestra guía para una protección de documentos segura y profesional.
-type: docs
 weight: 16
 url: /es/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## Conclusión
 Agregar marcas de agua a las imágenes de sus documentos de Word es una forma poderosa de proteger su contenido. Con Groupdocs.Watermark para .NET, este proceso es sencillo y eficiente. Siga los pasos descritos en este tutorial para asegurarse de que sus documentos estén seguros y bien protegidos.
- Para obtener documentación más detallada, visite el[documentación](https://reference.groupdocs.com/Watermark/net/) . Si tiene alguna pregunta o necesita más ayuda, consulte el[Foro de soporte](https://forum.groupdocs.com/c/watermark/19).
+ Para obtener documentación más detallada, visite el[documentación](https://tutorials.groupdocs.com/Watermark/net/) . Si tiene alguna pregunta o necesita más ayuda, consulte el[Foro de soporte](https://forum.groupdocs.com/c/watermark/19).
 ## Preguntas frecuentes
 ### ¿Puedo personalizar el texto de la marca de agua?
 Sí, puede personalizar el texto, la fuente, el tamaño, la alineación y la rotación de la marca de agua para adaptarla a sus necesidades.
 ### ¿Es posible agregar marcas de agua a varias secciones?
 Sí, puede recorrer cada sección y aplicar la marca de agua a las imágenes en todas las secciones.
 ### ¿Puedo utilizar este método para otros formatos de documentos?
- Groupdocs. Watermark admite varios formatos de documentos. Comprobar el[documentación](https://reference.groupdocs.com/Watermark/net/) para más detalles.
+ Groupdocs. Watermark admite varios formatos de documentos. Comprobar el[documentación](https://tutorials.groupdocs.com/Watermark/net/) para más detalles.
 ### ¿Cómo puedo obtener una licencia temporal?
  Puedes obtener una licencia temporal[aquí](https://purchase.groupdocs.com/temporary-license/).
 ### ¿Qué pasa si tengo problemas al utilizar Groupdocs.Watermark?

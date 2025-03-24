@@ -3,7 +3,6 @@ title: Szöveg cseréje adott XObject esetén a PDF-ben
 linktitle: Szöveg cseréje adott XObject esetén a PDF-ben
 second_title: GroupDocs.Watermark .NET API
 description: Hatékonyan helyettesítheti a PDF-fájlok szövegét a GroupDocs.Watermark for .NET segítségével. Zökkenőmentesen integrálja a vízjelet .NET-alkalmazásaiba.
-type: docs
 weight: 44
 url: /hu/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
@@ -68,6 +67,6 @@ Igen, a GroupDocs.Watermark for .NET a dokumentumformátumok széles skáláját
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Watermark for .NET számára?
  Ideiglenes jogosítványok szerezhetők be a[ideiglenes licenc oldal](https://purchase.groupdocs.com/temporary-license/).
 ### Hol találom a GroupDocs.Watermark for .NET dokumentációját?
- A részletes dokumentáció a címen érhető el[dokumentációs oldal](https://reference.groupdocs.com/Watermark/net/).
+ A részletes dokumentáció a címen érhető el[dokumentációs oldal](https://tutorials.groupdocs.com/Watermark/net/).
 ### Milyen támogatási lehetőségek állnak rendelkezésre a GroupDocs.Watermark for .NET számára?
  Támogatást és segítséget kérhet a GroupDocs közösségi fórumtól[itt](https://forum.groupdocs.com/c/watermark/19).

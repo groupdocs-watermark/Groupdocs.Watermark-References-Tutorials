@@ -3,7 +3,6 @@ title: Tải tài liệu từ đĩa cục bộ
 linktitle: Tải tài liệu từ đĩa cục bộ
 second_title: API GroupDocs.Watermark .NET
 description: Bảo vệ và quản lý tài liệu của bạn bằng Groupdocs cho .NET. Hãy làm theo hướng dẫn chi tiết của chúng tôi để thêm hình mờ một cách liền mạch.
-type: docs
 weight: 10
 url: /vi/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Phần kết luận
 Thêm hình mờ vào tài liệu của bạn bằng Groupdocs cho .NET rất đơn giản và hiệu quả. Hướng dẫn này đã hướng dẫn bạn toàn bộ quá trình từ thiết lập môi trường cho đến lưu tài liệu có hình mờ. Với công cụ mạnh mẽ này, bạn có thể đảm bảo tài liệu của mình được bảo vệ và tài sản trí tuệ của bạn được bảo mật. 
- Để biết thêm chi tiết, hãy kiểm tra[tài liệu](https://reference.groupdocs.com/Watermark/net/) và nếu bạn gặp phải bất kỳ vấn đề nào,[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/watermark/19) là một nơi tuyệt vời để được hỗ trợ. 
+ Để biết thêm chi tiết, hãy kiểm tra[tài liệu](https://tutorials.groupdocs.com/Watermark/net/) và nếu bạn gặp phải bất kỳ vấn đề nào,[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/watermark/19) là một nơi tuyệt vời để được hỗ trợ. 
 ## Câu hỏi thường gặp
 ### Tôi có thể sử dụng phông chữ tùy chỉnh cho hình mờ không?
 Có, Groupdocs hỗ trợ phông chữ tùy chỉnh. Bạn có thể chỉ định bất kỳ phông chữ nào được cài đặt trên hệ thống của bạn.

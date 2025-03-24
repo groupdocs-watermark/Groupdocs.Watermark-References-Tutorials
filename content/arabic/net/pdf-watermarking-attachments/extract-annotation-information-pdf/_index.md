@@ -3,7 +3,6 @@ title: استخراج معلومات التعليق التوضيحي من PDF
 linktitle: استخراج معلومات التعليق التوضيحي من PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية استخراج معلومات التعليقات التوضيحية من مستندات PDF باستخدام GroupDocs.Watermark لـ .NET في هذا الدليل المفصل خطوة بخطوة.
-type: docs
 weight: 23
 url: /ar/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
 ---
@@ -103,7 +102,7 @@ using (StreamWriter writer = new StreamWriter(outputFileName))
 ```
 ## خاتمة
 يعد استخراج معلومات التعليقات التوضيحية من مستندات PDF باستخدام GroupDocs.Watermark لـ .NET عملية مباشرة يمكن أن توفر لك الكثير من الوقت والجهد. باتباع الخطوات الموضحة في هذا الدليل، يمكنك بسهولة دمج هذه الوظيفة في مشاريعك وأتمتة استخراج بيانات التعليقات التوضيحية القيمة.
- سواء كنت تدير كميات كبيرة من ملفات PDF أو تحتاج ببساطة إلى استخراج معلومات محددة، فإن GroupDocs.Watermark for .NET يوفر حلاً موثوقًا وفعالاً. لا تنسى التحقق من[توثيق](https://reference.groupdocs.com/Watermark/net/) لمزيد من الميزات المتقدمة وخيارات التخصيص.
+ سواء كنت تدير كميات كبيرة من ملفات PDF أو تحتاج ببساطة إلى استخراج معلومات محددة، فإن GroupDocs.Watermark for .NET يوفر حلاً موثوقًا وفعالاً. لا تنسى التحقق من[توثيق](https://tutorials.groupdocs.com/Watermark/net/) لمزيد من الميزات المتقدمة وخيارات التخصيص.
 ## الأسئلة الشائعة
 ### ما هي العلامة المائية GroupDocs.Net لـ .NET؟
 GroupDocs.Watermark for .NET هي مكتبة شاملة تسمح للمطورين بإضافة العلامات المائية والبحث فيها وإزالتها من تنسيقات المستندات المختلفة، بما في ذلك ملفات PDF ومستندات Word والصور.

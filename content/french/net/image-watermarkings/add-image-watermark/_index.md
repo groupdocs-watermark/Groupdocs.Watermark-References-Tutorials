@@ -3,7 +3,6 @@ title: Ajouter un filigrane d'image
 linktitle: Ajouter un filigrane d'image
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes d'image à vos documents à l'aide de GroupDocs.Watermark pour .NET grâce à notre didacticiel détaillé étape par étape.
-type: docs
 weight: 11
 url: /fr/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ Oui, GroupDocs.Watermark est compatible avec .NET Framework et .NET Core.
 ### Est-il possible d'ajouter plusieurs filigranes à un seul document ?
  Absolument! Vous pouvez ajouter plusieurs filigranes en appelant le`Add` méthode plusieurs fois avec différentes instances de filigrane.
 ### Où puis-je trouver plus d’exemples et de documentation ?
- Pour plus d'exemples et une documentation détaillée, visitez le[Documentation GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ Pour plus d'exemples et une documentation détaillée, visitez le[Documentation GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

@@ -3,7 +3,6 @@ title: Dodaj obrazowy znak wodny do wszystkich nagłówków w dokumentach progra
 linktitle: Dodaj obrazowy znak wodny do wszystkich nagłówków w dokumentach programu Word
 second_title: GroupDocs.Watermark API .NET
 description: Z łatwością dodawaj graficzne znaki wodne do wszystkich nagłówków w dokumentach programu Word za pomocą GroupDocs.Watermark dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku ze szczegółowymi przykładami kodu.
-type: docs
 weight: 10
 url: /pl/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---

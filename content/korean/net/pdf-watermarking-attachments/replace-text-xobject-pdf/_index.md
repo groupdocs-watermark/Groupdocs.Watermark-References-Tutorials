@@ -3,7 +3,6 @@ title: PDF의 특정 XObject에 대한 텍스트 바꾸기
 linktitle: PDF의 특정 XObject에 대한 텍스트 바꾸기
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 PDF의 텍스트를 효율적으로 바꿉니다. 워터마킹을 .NET 애플리케이션에 원활하게 통합하세요.
-type: docs
 weight: 44
 url: /ko/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
@@ -68,6 +67,6 @@ watermarker.Save(outputFileName);
 ### .NET용 GroupDocs.Watermark에 대한 임시 라이센스를 어떻게 얻을 수 있습니까?
  임시 라이센스는 다음에서 취득할 수 있습니다.[임시 라이센스 페이지](https://purchase.groupdocs.com/temporary-license/).
 ### .NET용 GroupDocs.Watermark에 대한 설명서는 어디서 찾을 수 있나요?
- 자세한 문서는 다음에서 확인할 수 있습니다.[문서 페이지](https://reference.groupdocs.com/Watermark/net/).
+ 자세한 문서는 다음에서 확인할 수 있습니다.[문서 페이지](https://tutorials.groupdocs.com/Watermark/net/).
 ### .NET용 GroupDocs.Watermark에 어떤 지원 옵션을 사용할 수 있나요?
  GroupDocs 커뮤니티 포럼에서 지원과 도움을 구할 수 있습니다.[여기](https://forum.groupdocs.com/c/watermark/19).

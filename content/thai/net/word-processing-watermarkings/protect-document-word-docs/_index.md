@@ -3,7 +3,6 @@ title: ป้องกันเอกสารในเอกสาร Word
 linktitle: ป้องกันเอกสารในเอกสาร Word
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีการป้องกันเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET ปฏิบัติตามบทช่วยสอนทีละขั้นตอนของเราเพื่อเพิ่มความปลอดภัยให้กับเอกสารของคุณได้อย่างง่ายดาย
-type: docs
 weight: 28
 url: /th/net/word-processing-watermarkings/protect-document-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Word ドキュメントで図形設定を使用して透かしを追加�
 linktitle: Word ドキュメントで図形設定を使用して透かしを追加する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs for .NET を使用して、形状設定を含むウォーターマークを Word 文書に追加する方法を説明します。文書を効果的に保護します。
-type: docs
 weight: 20
 url: /ja/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---

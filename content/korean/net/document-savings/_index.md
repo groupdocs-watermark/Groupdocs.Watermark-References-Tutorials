@@ -3,7 +3,6 @@ title: 문서 저장
 linktitle: 문서 저장
 second_title: GroupDocs.Watermark .NET API
 description: 워터마크가 포함된 문서 저장에 대한 .NET용 GroupDocs.Watermark 튜토리얼을 살펴보세요. 문서 보안 및 관리를 강화하는 단계별 방법을 알아보세요.
-type: docs
 weight: 23
 url: /ko/net/document-savings/
 ---

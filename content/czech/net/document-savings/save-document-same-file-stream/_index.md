@@ -3,7 +3,6 @@ title: Uložit dokument do stejného souboru nebo streamu
 linktitle: Uložit dokument do stejného souboru nebo streamu
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky do dokumentů pomocí Groupdocs.Watermark for .NET. Tato příručka obsahuje pokyny k zajištění ochrany a integrity dokumentů.
-type: docs
 weight: 10
 url: /cs/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Nakonec uložte dokument s vodoznakem:
 watermarker.Save();
 ```
 ## Závěr
-Přidávání vodoznaků do dokumentů pomocí Groupdocs je jednoduché a efektivní. Dodržováním výše uvedených kroků můžete bez námahy chránit své dokumenty a udržovat jejich integritu. Pro více podrobností se můžete podívat na[dokumentace](https://reference.groupdocs.com/Watermark/net/).
+Přidávání vodoznaků do dokumentů pomocí Groupdocs je jednoduché a efektivní. Dodržováním výše uvedených kroků můžete bez námahy chránit své dokumenty a udržovat jejich integritu. Pro více podrobností se můžete podívat na[dokumentace](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### Mohu použít obrázek jako vodoznak místo textu?
 Ano, Groupdocs.Watermark vám umožňuje používat obrázky, tvary a text jako vodoznaky.

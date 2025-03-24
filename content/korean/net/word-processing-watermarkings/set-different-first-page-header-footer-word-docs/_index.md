@@ -3,7 +3,6 @@ title: Word Docs에서 다른 첫 페이지 머리글/바닥글 설정
 linktitle: Word Docs에서 다른 첫 페이지 머리글/바닥글 설정
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 첫 번째 페이지에 다양한 머리글과 바닥글을 설정하는 방법을 알아보세요.
-type: docs
 weight: 36
 url: /ko/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ watermarker.Save(outputFileName);
 ### 단기 사용을 위해 임시 라이센스를 구입할 수 있나요?
  예, .NET용 Watermark의 임시 라이센스는 다음에서 얻을 수 있습니다.[임시 라이센스 구매 페이지](https://purchase.groupdocs.com/temporary-license/).
 ### .NET용 GroupDocs.Watermark에 대한 포괄적인 문서는 어디에서 찾을 수 있습니까?
- .NET용 GroupDocs.Watermark에 대한 자세한 설명서는 다음에서 확인할 수 있습니다.[참고 페이지](https://reference.groupdocs.com/Watermark/net/).
+ .NET용 GroupDocs.Watermark에 대한 자세한 설명서는 다음에서 확인할 수 있습니다.[참고 페이지](https://tutorials.groupdocs.com/Watermark/net/).

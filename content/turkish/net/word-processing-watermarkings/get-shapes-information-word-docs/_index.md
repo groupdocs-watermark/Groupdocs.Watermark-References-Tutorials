@@ -3,7 +3,6 @@ title: Word Dokümanlarında Şekil Bilgilerini Alma
 linktitle: Word Dokümanlarında Şekil Bilgilerini Alma
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs for .NET ile Word belgelerinden değerli bilgilere kolayca ulaşın. Gelişmiş veri analizi için şekil bilgilerini sorunsuz bir şekilde çıkarın.
-type: docs
 weight: 24
 url: /tr/net/word-processing-watermarkings/get-shapes-information-word-docs/
 ---

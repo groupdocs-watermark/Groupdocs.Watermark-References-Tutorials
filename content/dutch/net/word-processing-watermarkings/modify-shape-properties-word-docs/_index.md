@@ -3,7 +3,6 @@ title: Wijzig vormeigenschappen in Word-documenten
 linktitle: Wijzig vormeigenschappen in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Bescherm uw Word-documenten met GroupDocs Watermark voor .NET. Wijzig eenvoudig vormeigenschappen voor verbeterde beveiliging.
-type: docs
 weight: 27
 url: /nl/net/word-processing-watermarkings/modify-shape-properties-word-docs/
 ---

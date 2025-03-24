@@ -3,7 +3,6 @@ title: Odebrat vodoznak ze sekce v dokumentech aplikace Word
 linktitle: Odebrat vodoznak ze sekce v dokumentech aplikace Word
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak odstranit vodoznaky z konkrétních sekcí v dokumentech aplikace Word pomocí GroupDocs.Watermark for .NET. Komplexní návod k dispozici zde.
-type: docs
 weight: 32
 url: /cs/net/word-processing-watermarkings/remove-watermark-section-word-docs/
 ---

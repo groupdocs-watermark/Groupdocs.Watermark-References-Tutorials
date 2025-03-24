@@ -3,7 +3,6 @@ title: Remplacer l'image d'un artefact spécifique dans un PDF
 linktitle: Remplacer l'image d'un artefact spécifique dans un PDF
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment remplacer des images dans des documents PDF à l'aide de GroupDocs.Watermark pour .NET grâce à ce didacticiel complet étape par étape.
-type: docs
 weight: 38
 url: /fr/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---

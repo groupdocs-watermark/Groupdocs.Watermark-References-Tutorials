@@ -3,7 +3,6 @@ title: أضف علامة مائية مقفلة إلى القسم في مستند
 linktitle: أضف علامة مائية مقفلة إلى القسم في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامة مائية مقفلة إلى قسم معين في مستندات Word باستخدام Groupdocs لـ .NET باستخدام هذا الدليل الشامل خطوة بخطوة.
-type: docs
 weight: 13
 url: /ar/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
@@ -70,4 +69,4 @@ Groupdocs.Watermark for .NET هي مكتبة قوية تسمح للمطورين 
 ### ما أنواع العلامات المائية التي يمكنني إضافتها باستخدام Groupdocs.Watermark؟
 يدعم Groupdocs.Watermark أنواعًا مختلفة من العلامات المائية، بما في ذلك العلامات المائية النصية والصورية والأشكال، مما يوفر خيارات تخصيص شاملة لكل نوع.
 ### أين يمكنني العثور على مزيد من المعلومات حول Groupdocs.Watermark لـ .NET؟
- لمزيد من المعلومات، يمكنك زيارة[توثيق](https://reference.groupdocs.com/Watermark/net/) و[منتدى الدعم](https://forum.groupdocs.com/c/watermark/19).
+ لمزيد من المعلومات، يمكنك زيارة[توثيق](https://tutorials.groupdocs.com/Watermark/net/) و[منتدى الدعم](https://forum.groupdocs.com/c/watermark/19).

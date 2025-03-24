@@ -3,7 +3,6 @@ title: Zpracování textu vodoznaky
 linktitle: Zpracování textu vodoznaky
 second_title: GroupDocs.Watermark .NET API
 description: Objevte základní výukové programy GroupDocs.Watermark pro .NET pro přidávání a správu vodoznaků v dokumentech aplikace Word. Vylepšete zabezpečení dokumentů a branding bez námahy.
-type: docs
 weight: 26
 url: /cs/net/word-processing-watermarkings/
 ---

@@ -3,7 +3,6 @@ title: أضف علامة مائية مقفلة إلى صفحات محددة في
 linktitle: أضف علامة مائية مقفلة إلى صفحات محددة في مستندات Word
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامة مائية مقفلة إلى صفحات محددة في مستندات Word باستخدام GroupDocs.Watermark لـ .NET من خلال دليلنا السهل خطوة بخطوة.
-type: docs
 weight: 12
 url: /ar/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## خاتمة
 تهانينا! لقد نجحت في إضافة علامة مائية مقفلة إلى صفحات محددة في مستند Word باستخدام GroupDocs.Watermark لـ .NET. غطى هذا البرنامج التعليمي جميع الخطوات الأساسية بدءًا من تحميل المستند وحتى حفظ الملف الذي يحمل علامة مائية. باتباع هذه الخطوات، يمكنك التأكد من وضع علامة مائية على مستنداتك بشكل آمن، وحماية المحتوى الخاص بك من التحرير والاستخدام غير المصرح به.
- لمزيد من المعلومات، يمكنك الرجوع إلى[وثائق GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/) . إذا كان لديك أي أسئلة أو كنت بحاجة إلى مزيد من المساعدة، فلا تتردد في زيارة[منتدى الدعم](https://forum.groupdocs.com/c/watermark/19).
+ لمزيد من المعلومات، يمكنك الرجوع إلى[وثائق GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/) . إذا كان لديك أي أسئلة أو كنت بحاجة إلى مزيد من المساعدة، فلا تتردد في زيارة[منتدى الدعم](https://forum.groupdocs.com/c/watermark/19).
 ## الأسئلة الشائعة
 ### ما هي العلامة المائية GroupDocs.Net لـ .NET؟
 GroupDocs.Watermark for .NET هي مكتبة قوية تسمح للمطورين بإضافة علامات مائية إلى أنواع مختلفة من المستندات، بما في ذلك Word وPDF وExcel والمزيد.

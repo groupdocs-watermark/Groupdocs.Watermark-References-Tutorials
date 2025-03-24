@@ -3,7 +3,6 @@ title: Collega tutte le intestazioni/piè di pagina nelle sezioni di documenti W
 linktitle: Collega tutte le intestazioni/piè di pagina nelle sezioni di documenti Word
 second_title: API GroupDocs.Watermark .NET
 description: Collega facilmente intestazioni e piè di pagina nei documenti Word utilizzando GroupDocs.Watermark per .NET. Garantisci coerenza e professionalità con facilità.
-type: docs
 weight: 25
 url: /it/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

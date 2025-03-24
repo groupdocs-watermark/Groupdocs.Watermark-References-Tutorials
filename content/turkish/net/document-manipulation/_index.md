@@ -3,7 +3,6 @@ title: Belge İşleme
 linktitle: Belge İşleme
 second_title: GroupDocs.Watermark .NET API'si
 description: Belge önizlemeleri oluşturma ve filigranları yönetmeye ilişkin GroupDocs.Watermark for .NET eğitimlerini keşfedin. Belge güvenliğini ve yönetimini geliştirin.
-type: docs
 weight: 21
 url: /tr/net/document-manipulation/
 ---

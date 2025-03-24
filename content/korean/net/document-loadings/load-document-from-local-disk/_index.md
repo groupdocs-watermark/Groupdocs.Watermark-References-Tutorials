@@ -3,7 +3,6 @@ title: 로컬 디스크에서 문서 로드
 linktitle: 로컬 디스크에서 문서 로드
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET으로 문서를 보호하고 관리하세요. 워터마크를 원활하게 추가하려면 자세한 가이드를 따르세요.
-type: docs
 weight: 10
 url: /ko/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## 결론
 Groupdocs for .NET을 사용하여 문서에 워터마크를 추가하는 것은 간단하고 효율적입니다. 이 가이드는 환경 설정부터 워터마크가 있는 문서 저장까지 전체 과정을 안내했습니다. 이 강력한 도구를 사용하면 문서를 보호하고 지적 재산을 안전하게 보호할 수 있습니다. 
- 자세한 내용은[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/) , 문제가 발생하면[지원 포럼](https://forum.groupdocs.com/c/watermark/19) 도움을 받을 수 있는 훌륭한 장소입니다. 
+ 자세한 내용은[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/) , 문제가 발생하면[지원 포럼](https://forum.groupdocs.com/c/watermark/19) 도움을 받을 수 있는 훌륭한 장소입니다. 
 ## FAQ
 ### 워터마크에 사용자 정의 글꼴을 사용할 수 있습니까?
 예, Groupdocs는 사용자 정의 글꼴을 지원합니다. 시스템에 설치된 글꼴을 지정할 수 있습니다.

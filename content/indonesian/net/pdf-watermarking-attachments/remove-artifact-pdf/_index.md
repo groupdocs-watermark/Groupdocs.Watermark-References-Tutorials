@@ -3,7 +3,6 @@ title: Hapus Artefak dari PDF
 linktitle: Hapus Artefak dari PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus artefak dari dokumen PDF dengan mudah menggunakan GroupDocs.Watermark untuk .NET. Kuasai prosesnya langkah demi langkah dengan tutorial komprehensif kami.
-type: docs
 weight: 31
 url: /id/net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
@@ -66,4 +65,4 @@ Ya, GroupDocs.Watermark untuk .NET mendukung berbagai format dokumen, termasuk W
 ### Bisakah saya membeli lisensi sementara untuk GroupDocs.Watermark untuk .NET?
  Ya, Anda dapat memperoleh lisensi sementara dari yang disediakan[sumber](https://purchase.groupdocs.com/temporary-license/).
 ### Apakah ada sumber dokumentasi komprehensif yang tersedia untuk GroupDocs.Watermark untuk .NET?
- Ya, Anda dapat merujuk ke dokumentasi terperinci yang tersedia[Di Sini](https://reference.groupdocs.com/Watermark/net/) untuk bimbingan dan wawasan menyeluruh.
+ Ya, Anda dapat merujuk ke dokumentasi terperinci yang tersedia[Di Sini](https://tutorials.groupdocs.com/Watermark/net/) untuk bimbingan dan wawasan menyeluruh.

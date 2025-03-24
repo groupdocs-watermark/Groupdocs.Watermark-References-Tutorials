@@ -3,7 +3,6 @@ title: Voeg watermerken toe aan specifieke pagina's in PDF
 linktitle: Voeg watermerken toe aan specifieke pagina's in PDF
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u tekst- en afbeeldingswatermerken kunt toevoegen aan specifieke pagina's in PDF's met behulp van Groupdocs voor .NET. Volg onze gedetailleerde gids om uw documenten te beveiligen.
-type: docs
 weight: 15
 url: /nl/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
@@ -100,4 +99,4 @@ Absoluut. Groupdocs.Watermark voor .NET biedt opties om watermerken toe te voege
 ### Hoe krijg ik een gratis proefversie van Groupdocs.Watermark?
  U kunt een gratis proefversie downloaden van de[Groupdocs-website](https://releases.groupdocs.com/).
 ### Waar kan ik meer gedetailleerde documentatie vinden?
- Voor meer gedetailleerde informatie kunt u verwijzen naar de[documentatie](https://reference.groupdocs.com/Watermark/net/).
+ Voor meer gedetailleerde informatie kunt u verwijzen naar de[documentatie](https://tutorials.groupdocs.com/Watermark/net/).

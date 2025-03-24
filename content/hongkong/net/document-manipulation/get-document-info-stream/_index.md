@@ -3,7 +3,6 @@ title: 從串流中取得文件訊息
 linktitle: 從串流中取得文件訊息
 second_title: GroupDocs.Watermark .NET API
 description: 透過此逐步指南，了解如何使用 GroupDocs.Watermark for .NET 從串流中取得文件資訊。您的文件管理功能毫不費力。
-type: docs
 weight: 12
 url: /zh-hant/net/document-manipulation/get-document-info-stream/
 ---
@@ -46,10 +45,10 @@ Console.WriteLine("Document size: {0} bytes", info.Size);
 ```
 
 ## 結論
-當分解為可管理的步驟時，使用 GroupDocs.Watermark for .NET 從流程中擷取文件資訊是一個簡單的過程。透過遵循本指南，您可以有效地將此功能整合到您的應用程式中，從而確保更好的文件管理和完整性。不要猶豫去探索[文件](https://reference.groupdocs.com/Watermark/net/)了解更多進階功能和選項。
+當分解為可管理的步驟時，使用 GroupDocs.Watermark for .NET 從流程中擷取文件資訊是一個簡單的過程。透過遵循本指南，您可以有效地將此功能整合到您的應用程式中，從而確保更好的文件管理和完整性。不要猶豫去探索[文件](https://tutorials.groupdocs.com/Watermark/net/)了解更多進階功能和選項。
 ## 常見問題解答
 ### GroupDocs.Watermark 支援哪些檔案格式？
- GroupDocs.Watermark 支援多種文件格式，包括 PDF、Word、Excel、PowerPoint 等。您可以在以下位置找到完整列表[文件](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark 支援多種文件格式，包括 PDF、Word、Excel、PowerPoint 等。您可以在以下位置找到完整列表[文件](https://tutorials.groupdocs.com/Watermark/net/).
 ### 我可以在購買前試用 GroupDocs.Watermark 嗎？
 是的，您可以從以下位置下載免費試用版[這裡](https://releases.groupdocs.com/)並向以下機構申請臨時許可證[這裡](https://purchase.groupdocs.com/temporary-license/).
 ### 如何安裝 GroupDocs.Watermark for .NET？

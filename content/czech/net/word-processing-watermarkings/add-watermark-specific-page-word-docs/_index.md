@@ -3,7 +3,6 @@ title: Přidat vodoznak na konkrétní stránku ve Word Docs
 linktitle: Přidat vodoznak na konkrétní stránku ve Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky na konkrétní stránky v dokumentech aplikace Word pomocí GroupDocs pro .NET. Chraňte svůj obsah bez námahy.
-type: docs
 weight: 14
 url: /cs/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
 ---

@@ -3,7 +3,6 @@ title: PDF'deki Belirli XObject Metnini Değiştir
 linktitle: PDF'deki Belirli XObject Metnini Değiştir
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF'lerdeki metni etkili bir şekilde değiştirin. Filigranı .NET uygulamalarınıza sorunsuz bir şekilde entegre edin.
-type: docs
 weight: 44
 url: /tr/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
 ---
@@ -68,6 +67,6 @@ Evet, GroupDocs.Watermark for .NET, Word, Excel, PowerPoint ve daha fazlasını 
 ### GroupDocs.Watermark for .NET için geçici lisansı nasıl edinebilirim?
  Geçici lisanslar adresinden alınabilir.[geçici lisans sayfası](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Watermark for .NET belgelerini nerede bulabilirim?
- Ayrıntılı belgeler şu adreste mevcuttur:[dokümantasyon sayfası](https://reference.groupdocs.com/Watermark/net/).
+ Ayrıntılı belgeler şu adreste mevcuttur:[dokümantasyon sayfası](https://tutorials.groupdocs.com/Watermark/net/).
 ### GroupDocs.Watermark for .NET için hangi destek seçenekleri mevcut?
  GroupDocs topluluk forumundan destek ve yardım alabilirsiniz.[Burada](https://forum.groupdocs.com/c/watermark/19).

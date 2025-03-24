@@ -3,7 +3,6 @@ title: Удалить вложение из PDF
 linktitle: Удалить вложение из PDF
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как легко удалять вложения из документов PDF с помощью GroupDocs.Watermark для .NET. Повысьте эффективность управления документами.
-type: docs
 weight: 33
 url: /ru/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

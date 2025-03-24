@@ -3,7 +3,6 @@ title: Agregar marca de agua a XObjects en PDF
 linktitle: Agregar marca de agua a XObjects en PDF
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a agregar marcas de agua a XObjects en PDF usando Groupdocs.Watermark para .NET. Siga nuestra guía paso a paso para una fácil implementación.
-type: docs
 weight: 20
 url: /es/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ Finalmente, guarde el PDF con marca de agua en el archivo de salida especificado
 ```
 ¡Y ahí lo tienes! Su PDF ahora contiene marcas de agua en todos sus XObjects.
 ## Conclusión
- Agregar marcas de agua a sus documentos PDF usando Groupdocs Watermark para .NET es un proceso sencillo que proporciona una capa adicional de seguridad. Si sigue los pasos descritos en este tutorial, puede asegurarse de que sus documentos estén protegidos contra el uso no autorizado. Recuerde, siempre puede consultar el[documentación](https://reference.groupdocs.com/Watermark/net/) para obtener información más detallada y funciones avanzadas.
+ Agregar marcas de agua a sus documentos PDF usando Groupdocs Watermark para .NET es un proceso sencillo que proporciona una capa adicional de seguridad. Si sigue los pasos descritos en este tutorial, puede asegurarse de que sus documentos estén protegidos contra el uso no autorizado. Recuerde, siempre puede consultar el[documentación](https://tutorials.groupdocs.com/Watermark/net/) para obtener información más detallada y funciones avanzadas.
 ## Preguntas frecuentes
 ### ¿Puedo usar una imagen como marca de agua en lugar de texto?
 Sí, Groupdocs.Watermark para .NET admite marcas de agua de texto e imagen.

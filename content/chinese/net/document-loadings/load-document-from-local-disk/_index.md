@@ -3,7 +3,6 @@ title: 从本地磁盘加载文档
 linktitle: 从本地磁盘加载文档
 second_title: GroupDocs.Watermark .NET API
 description: 使用 Groupdocs for .NET 保护和管理您的文档。按照我们的详细指南无缝添加水印。
-type: docs
 weight: 10
 url: /zh/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## 结论
 使用 Watermark for .NET 向文档添加水印既简单又高效。本指南引导您完成从设置环境到保存带水印的文档的整个过程。借助这个强大的工具，您可以确保您的文档受到保护并确保您的知识产权安全。 
-欲了解更多详情，请查看[文档](https://reference.groupdocs.com/Watermark/net/)，如果您遇到任何问题，[支持论坛](https://forum.groupdocs.com/c/watermark/19)是寻求帮助的绝佳场所。 
+欲了解更多详情，请查看[文档](https://tutorials.groupdocs.com/Watermark/net/)，如果您遇到任何问题，[支持论坛](https://forum.groupdocs.com/c/watermark/19)是寻求帮助的绝佳场所。 
 ## 常见问题解答
 ### 我可以使用自定义字体作为水印吗？
 是的，Groupdocs 支持自定义字体。您可以指定系统上安装的任何字体。

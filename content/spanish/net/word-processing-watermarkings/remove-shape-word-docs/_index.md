@@ -3,7 +3,6 @@ title: Eliminar forma en documentos de Word
 linktitle: Eliminar forma en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a eliminar formas de documentos de Word usando GroupDocs.Watermark para .NET. Manipulación de documentos fácil, eficiente y potente.
-type: docs
 weight: 30
 url: /es/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
@@ -72,6 +71,6 @@ Sí, GroupDocs.Watermark para .NET admite una amplia gama de formatos de documen
 ### ¿Cómo puedo obtener licencias temporales de GroupDocs.Watermark para .NET?
  Las licencias temporales para GroupDocs.Watermark para .NET se pueden obtener en[página de licencia temporal](https://purchase.groupdocs.com/temporary-license/).
 ### ¿Dónde puedo encontrar documentación y soporte para GroupDocs.Watermark para .NET?
- La documentación y los recursos de soporte para GroupDocs.Watermark para .NET están disponibles en[foro](https://forum.groupdocs.com/c/watermark/19) y[Página de referencia](https://reference.groupdocs.com/Watermark/net/).
+ La documentación y los recursos de soporte para GroupDocs.Watermark para .NET están disponibles en[foro](https://forum.groupdocs.com/c/watermark/19) y[Página de referencia](https://tutorials.groupdocs.com/Watermark/net/).
 ### ¿Qué versiones de .NET son compatibles con GroupDocs.Watermark?
 GroupDocs.Watermark para .NET es compatible con varias versiones de .NET, incluidos .NET Framework y .NET Core.

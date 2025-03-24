@@ -3,7 +3,6 @@ title: Abschnittseigenschaften in Word-Dokumenten abrufen
 linktitle: Abschnittseigenschaften in Word-Dokumenten abrufen
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie Abschnittseigenschaften aus Word-Dokumenten mit Groupdocs für .NET extrahieren. Erweitern Sie mühelos Ihre Möglichkeiten zur Dokumentenbearbeitung.
-type: docs
 weight: 23
 url: /de/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---

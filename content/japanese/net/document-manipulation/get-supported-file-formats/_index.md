@@ -3,7 +3,6 @@ title: サポートされているファイル形式を取得する
 linktitle: サポートされているファイル形式を取得する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用すると、ドキュメントにウォーターマークを簡単に追加できます。デジタル資産を保護するには、包括的なステップバイステップのガイドに従ってください。
-type: docs
 weight: 13
 url: /ja/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ GroupDocs for .NET を使用してドキュメントにウォーターマーク�
 ### GroupDocs.Watermark のライセンスを購入するにはどうすればよいですか?
 ライセンスは次から直接購入できます。[購入ページ](https://purchase.groupdocs.com/buy).
 ### GroupDocs.Watermark について利用可能なドキュメントはありますか?
-はい、包括的なドキュメントが利用可能です[ここ](https://reference.groupdocs.com/Watermark/net/).
+はい、包括的なドキュメントが利用可能です[ここ](https://tutorials.groupdocs.com/Watermark/net/).

@@ -3,7 +3,6 @@ title: Agregar marca de agua para dar forma a imágenes en documentos de Word
 linktitle: Agregar marca de agua para dar forma a imágenes en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a agregar marcas de agua para dar forma a imágenes en documentos de Word usando GroupDocs.Watermark para .NET. Mejore la seguridad de los documentos con este tutorial.
-type: docs
 weight: 17
 url: /es/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---

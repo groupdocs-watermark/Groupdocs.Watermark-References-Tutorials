@@ -3,7 +3,6 @@ title: Odstraňte XObjects se specifickým formátováním textu v PDF
 linktitle: Odstraňte XObjects se specifickým formátováním textu v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Pomocí GroupDocs.Watermark for .NET můžete bez námahy odstranit XObjects se specifickým formátováním textu z PDF. Postupujte podle našeho průvodce pro bezproblémovou manipulaci s dokumenty.
-type: docs
 weight: 36
 url: /cs/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Nakonec uložte upravený dokument PDF do zadané cesty k výstupnímu souboru.
 Tím je dokončen proces odstranění XObjects se specifickým formátováním textu z dokumentu PDF.
 
 ## Závěr
-Pomocí těchto kroků můžete efektivně odstranit XObjects se specifickým formátováním textu z dokumentů PDF pomocí GroupDocs.Watermark for .NET. Tato výkonná knihovna nejen zjednodušuje úlohy vodoznaku, ale nabízí také robustní možnosti pro manipulaci s dokumenty. Pro podrobnější dokumentaci navštivte[GroupDocs.Watermark pro dokumentaci .NET](https://reference.groupdocs.com/Watermark/net/) . Pokud narazíte na nějaké problémy nebo máte dotazy,[Fórum podpory](https://forum.groupdocs.com/c/watermark/19) je skvělé místo, kde hledat pomoc.
+Pomocí těchto kroků můžete efektivně odstranit XObjects se specifickým formátováním textu z dokumentů PDF pomocí GroupDocs.Watermark for .NET. Tato výkonná knihovna nejen zjednodušuje úlohy vodoznaku, ale nabízí také robustní možnosti pro manipulaci s dokumenty. Pro podrobnější dokumentaci navštivte[GroupDocs.Watermark pro dokumentaci .NET](https://tutorials.groupdocs.com/Watermark/net/) . Pokud narazíte na nějaké problémy nebo máte dotazy,[Fórum podpory](https://forum.groupdocs.com/c/watermark/19) je skvělé místo, kde hledat pomoc.
 ## FAQ
 ### Mohu odstranit XObjects s jiným formátováním textu?
 Ano, kód můžete upravit, abyste zkontrolovali různé atributy formátování textu, jako je velikost písma, styl písma nebo barva.

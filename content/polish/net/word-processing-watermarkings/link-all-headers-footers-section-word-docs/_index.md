@@ -3,7 +3,6 @@ title: Połącz wszystkie nagłówki/stopki w sekcjach w dokumentach programu Wo
 linktitle: Połącz wszystkie nagłówki/stopki w sekcjach w dokumentach programu Word
 second_title: GroupDocs.Watermark API .NET
 description: Bezproblemowo łącz nagłówki i stopki w dokumentach programu Word za pomocą GroupDocs.Watermark dla .NET. Z łatwością zapewnij spójność i profesjonalizm.
-type: docs
 weight: 25
 url: /pl/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

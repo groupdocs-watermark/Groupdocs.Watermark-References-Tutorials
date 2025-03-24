@@ -3,7 +3,6 @@ title: Desteklenen Dosya Formatlarını Alın
 linktitle: Desteklenen Dosya Formatlarını Alın
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak belgelerinize zahmetsizce filigran ekleyin. Dijital varlıklarınızı korumak için kapsamlı, adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 13
 url: /tr/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ Desteklenen tüm dosya formatlarını listelemek için sağlanan kod pasajını 
 ### GroupDocs.Watermark lisansını nasıl satın alabilirim?
  Lisanslar doğrudan adresinden satın alınabilir.[satın alma sayfası](https://purchase.groupdocs.com/buy).
 ### GroupDocs.Watermark için herhangi bir belge mevcut mu?
- Evet, kapsamlı belgeler mevcut[Burada](https://reference.groupdocs.com/Watermark/net/).
+ Evet, kapsamlı belgeler mevcut[Burada](https://tutorials.groupdocs.com/Watermark/net/).

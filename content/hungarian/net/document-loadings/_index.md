@@ -3,7 +3,6 @@ title: Dokumentum betöltése
 linktitle: Dokumentum betöltése
 second_title: GroupDocs.Watermark .NET API
 description: Fedezze fel a GroupDocs.Watermark for .NET oktatóanyagokat a dokumentumok betöltéséhez és vízjellel való ellátásához, lépésről lépésre szóló útmutatókkal biztosítva a dokumentumok biztonságát és a márkaépítést.
-type: docs
 weight: 22
 url: /hu/net/document-loadings/
 ---

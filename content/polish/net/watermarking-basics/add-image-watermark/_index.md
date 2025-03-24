@@ -3,7 +3,6 @@ title: Dodaj znak wodny obrazu
 linktitle: Dodaj znak wodny obrazu
 second_title: GroupDocs.Watermark API .NET
 description: Bez wysiłku dodawaj graficzne znaki wodne do swoich dokumentów za pomocą GroupDocs.Watermark dla .NET. Z łatwością chroń swoją własność intelektualną.
-type: docs
 weight: 10
 url: /pl/net/watermarking-basics/add-image-watermark/
 ---

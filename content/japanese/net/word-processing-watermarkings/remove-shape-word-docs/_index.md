@@ -3,7 +3,6 @@ title: Word ドキュメントの図形を削除する
 linktitle: Word ドキュメントの図形を削除する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して Word 文書から図形を削除する方法を学びます。簡単、効率的、強力なドキュメント操作。
-type: docs
 weight: 30
 url: /ja/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
@@ -72,6 +71,6 @@ watermarker.Save(outputFileName);
 ### GroupDocs.Watermark for .NET の一時ライセンスを取得するにはどうすればよいですか?
  GroupDocs.Watermark for .NET の一時ライセンスは、以下から取得できます。[一時ライセンスのページ](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Watermark for .NET のドキュメントとサポートはどこで見つけられますか?
- GroupDocs.Watermark for .NET のドキュメントとサポート リソースは、次の場所で入手できます。[フォーラム](https://forum.groupdocs.com/c/watermark/19)そして[参考ページ](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark for .NET のドキュメントとサポート リソースは、次の場所で入手できます。[フォーラム](https://forum.groupdocs.com/c/watermark/19)そして[参考ページ](https://tutorials.groupdocs.com/Watermark/net/).
 ### GroupDocs.Watermark と互換性のある .NET のバージョンはどれですか?
 GroupDocs.Watermark for .NET は、.NET Framework や .NET Core など、さまざまなバージョンの .NET と互換性があります。

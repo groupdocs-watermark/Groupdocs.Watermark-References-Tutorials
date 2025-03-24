@@ -3,7 +3,6 @@ title: Použití typu tvaru v dokumentech Word
 linktitle: Použití typu tvaru v dokumentech Word
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se manipulovat s tvary v dokumentech aplikace Word pomocí GroupDocs.Watermark for .NET. Tento kurz poskytuje návod pro efektivní zpracování dokumentů.
-type: docs
 weight: 37
 url: /cs/net/word-processing-watermarkings/shape-type-usage-word-docs/
 ---

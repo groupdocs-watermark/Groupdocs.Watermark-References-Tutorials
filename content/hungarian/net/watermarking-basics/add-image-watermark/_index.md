@@ -3,7 +3,6 @@ title: Kép hozzáadása vízjelhez
 linktitle: Kép hozzáadása vízjelhez
 second_title: GroupDocs.Watermark .NET API
 description: A GroupDocs.Watermark for .NET segítségével könnyedén adjon hozzá képes vízjeleket dokumentumaihoz. Védje meg szellemi tulajdonát könnyedén.
-type: docs
 weight: 10
 url: /hu/net/watermarking-basics/add-image-watermark/
 ---

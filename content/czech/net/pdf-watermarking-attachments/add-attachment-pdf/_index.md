@@ -3,7 +3,6 @@ title: Přidat přílohu do PDF
 linktitle: Přidat přílohu do PDF
 second_title: GroupDocs.Watermark .NET API
 description: Vylepšete své možnosti správy dokumentů .NET pomocí GroupDocs.Watermark pro bezproblémový vodoznak a manipulaci s přílohami.
-type: docs
 weight: 12
 url: /cs/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---

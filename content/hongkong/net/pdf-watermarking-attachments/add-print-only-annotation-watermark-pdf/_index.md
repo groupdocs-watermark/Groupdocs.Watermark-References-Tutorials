@@ -3,7 +3,6 @@ title: 將僅列印註釋浮水印新增至 PDF
 linktitle: 將僅列印註釋浮水印新增至 PDF
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 將僅列印註解浮水印新增至 PDF。輕鬆增強文件安全性和品牌形象。
-type: docs
 weight: 13
 url: /zh-hant/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---

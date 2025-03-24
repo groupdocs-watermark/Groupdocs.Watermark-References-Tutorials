@@ -3,7 +3,6 @@ title: Belge Önizlemesi Oluştur
 linktitle: Belge Önizlemesi Oluştur
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu kılavuzla GroupDocs.Watermark for .NET'i kullanarak belge önizlemelerini nasıl oluşturacağınızı öğrenin. Belge güvenliğinizi ve yönetiminizi zahmetsizce geliştirin.
-type: docs
 weight: 10
 url: /tr/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Çözüm
 GroupDocs.Watermark for .NET'i kullanarak belge önizlemeleri oluşturmak, yalnızca birkaç satır kodla gerçekleştirilebilecek basit bir işlemdir. Bu kılavuzda özetlenen adımları izleyerek projenizi kolayca kurabilir, gerekli seçenekleri yapılandırabilir ve belgeleriniz için önizlemeler oluşturabilirsiniz. Bu güçlü kitaplık yalnızca filigran ekleme işlemini basitleştirmekle kalmaz, aynı zamanda filigranları yönetmek ve değiştirmek için güçlü özellikler de sağlar.
- Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, şu adresi ziyaret etmekten çekinmeyin:[GroupDocs.Watermark Destek Forumu](https://forum.groupdocs.com/c/watermark/19) veya şuraya bakın:[dokümantasyon](https://reference.groupdocs.com/Watermark/net/).
+ Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, şu adresi ziyaret etmekten çekinmeyin:[GroupDocs.Watermark Destek Forumu](https://forum.groupdocs.com/c/watermark/19) veya şuraya bakın:[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/).
 ## SSS'ler
 ### GroupDocs.Watermark for .NET hangi dosya formatlarını destekler?
- GroupDocs.Watermark for .NET, PDF, DOCX, PPTX, XLSX ve çok daha fazlasını içeren çok çeşitli dosya formatlarını destekler. Desteklenen formatların tam listesi için bkz.[dokümantasyon](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark for .NET, PDF, DOCX, PPTX, XLSX ve çok daha fazlasını içeren çok çeşitli dosya formatlarını destekler. Desteklenen formatların tam listesi için bkz.[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/).
 ### Filigranların görünümünü özelleştirebilir miyim?
 Evet, GroupDocs.Watermark; metin, resim ve şekil filigranları da dahil olmak üzere filigranların görünümünü tamamen özelleştirmenize olanak tanır. Yazı tipi, renk, boyut ve şeffaflık gibi özellikleri ayarlayabilirsiniz.
 ### Deneme sürümü mevcut mu?

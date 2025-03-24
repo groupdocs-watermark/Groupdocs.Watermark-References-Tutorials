@@ -3,7 +3,6 @@ title: 取消保护 Word 文档中的文档
 linktitle: 取消保护 Word 文档中的文档
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 轻松取消对 Word 文档的保护。请遵循我们的分步指南。
-type: docs
 weight: 38
 url: /zh/net/word-processing-watermarkings/unprotect-document-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Verwijder watermerk uit PDF
 linktitle: Verwijder watermerk uit PDF
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u watermerken uit PDF-bestanden verwijdert met GroupDocs.Watermark voor .NET. Eenvoudige stappen voor professionele documentbewerking.
-type: docs
 weight: 34
 url: /nl/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---

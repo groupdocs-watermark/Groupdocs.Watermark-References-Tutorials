@@ -3,7 +3,6 @@ title: PDF 水印和附件
 linktitle: PDF 水印和附件
 second_title: GroupDocs.Watermark .NET API
 description: 探索有关 PDF 水印和附件的 GroupDocs.Watermark for .NET 教程。了解增强 PDF 安全性和品牌形象的分步方法。
-type: docs
 weight: 25
 url: /zh/net/pdf-watermarking-attachments/
 ---

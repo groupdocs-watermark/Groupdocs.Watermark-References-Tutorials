@@ -3,7 +3,6 @@ title: 在 PDF 中添加页边距类型水印
 linktitle: 在 PDF 中添加页边距类型水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs for .NET 在 PDF 中添加页边距类型的水印。轻松保护您的文档。
-type: docs
 weight: 21
 url: /zh/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
 ---

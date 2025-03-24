@@ -3,7 +3,6 @@ title: التلاعب بالوثيقة
 linktitle: التلاعب بالوثيقة
 second_title: GroupDocs.Watermark .NET API
 description: استكشف البرامج التعليمية الخاصة بـ GroupDocs.Watermark for .NET حول إنشاء معاينات المستندات وإدارة العلامات المائية. تعزيز أمن المستندات وإدارتها.
-type: docs
 weight: 21
 url: /ar/net/document-manipulation/
 ---

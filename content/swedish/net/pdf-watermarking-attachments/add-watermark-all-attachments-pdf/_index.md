@@ -3,7 +3,6 @@ title: Lägg till vattenstämpel till alla bilagor i PDF
 linktitle: Lägg till vattenstämpel till alla bilagor i PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar i PDF-bilagor med GroupDocs.Watermark for .NET. Säkra dina dokument enkelt med anpassade vattenstämplar.
-type: docs
 weight: 16
 url: /sv/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
 ---

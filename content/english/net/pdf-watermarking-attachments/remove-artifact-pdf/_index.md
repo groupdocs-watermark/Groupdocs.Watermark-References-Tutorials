@@ -3,7 +3,6 @@ title: Remove Artifact from PDF
 linktitle: Remove Artifact from PDF
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to effortlessly remove artifacts from PDF documents using GroupDocs.Watermark for .NET. Master the process step-by-step with our comprehensive tutorial.
-type: docs
 weight: 31
 url: /net/pdf-watermarking-attachments/remove-artifact-pdf/
 ---
@@ -43,10 +42,10 @@ Here, we obtain the content of the PDF document using the `GetContent<PdfContent
 ```csharp
     // Remove Artifact by index
     pdfContent.Pages[0].Artifacts.RemoveAt(0);
-    // Remove Artifact by reference
+    // Remove Artifact by tutorials
     pdfContent.Pages[0].Artifacts.Remove(pdfContent.Pages[0].Artifacts[0]);
 ```
-In this crucial step, we remove artifacts from the PDF document. Artifacts can be removed either by their index or by reference.
+In this crucial step, we remove artifacts from the PDF document. Artifacts can be removed either by their index or by tutorials.
 ## Step 4: Save the Modified Document
 ```csharp
     watermarker.Save(outputFileName);
@@ -66,4 +65,4 @@ Absolutely, you can seek assistance and engage with the community through the de
 ### Can I purchase a temporary license for GroupDocs.Watermark for .NET?
 Yes, you can acquire a temporary license from the provided [source](https://purchase.groupdocs.com/temporary-license/).
 ### Are there any comprehensive documentation resources available for GroupDocs.Watermark for .NET?
-Yes, you can refer to the detailed documentation available [here](https://reference.groupdocs.com/Watermark/net/) for thorough guidance and insights.
+Yes, you can refer to the detailed documentation available [here](https://tutorials.groupdocs.com/Watermark/net/) for thorough guidance and insights.

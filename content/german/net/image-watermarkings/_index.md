@@ -3,7 +3,6 @@ title: Bildwasserzeichen
 linktitle: Bildwasserzeichen
 second_title: GroupDocs.Watermark .NET-API
 description: Entdecken Sie GroupDocs.Watermark für .NET-Tutorials zum Hinzufügen von Bildwasserzeichen. Lernen Sie Schritt-für-Schritt-Methoden kennen, um die Sicherheit und das Branding Ihres Dokuments zu verbessern.
-type: docs
 weight: 24
 url: /de/net/image-watermarkings/
 ---

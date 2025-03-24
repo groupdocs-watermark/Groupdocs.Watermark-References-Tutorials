@@ -1,7 +1,6 @@
 ---
 title: GroupDocs.Watermark for .NET 的教學與範例
 linktitle: .NET 教學的 GroupDocs.Watermark
-type: docs
 weight: 10
 url: /zh-hant/net/
 description: 探索全面的 GroupDocs.Watermark for .NET 教學。透過逐步指南，了解如何新增、管理和保護各種文件格式的浮水印。

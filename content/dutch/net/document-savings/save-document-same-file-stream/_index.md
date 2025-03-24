@@ -3,7 +3,6 @@ title: Document opslaan in hetzelfde bestand of dezelfde stream
 linktitle: Document opslaan in hetzelfde bestand of dezelfde stream
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u watermerken aan documenten kunt toevoegen met Groupdocs.Watermark voor .NET. Deze handleiding bevat instructies om de bescherming en integriteit van documenten te garanderen.
-type: docs
 weight: 10
 url: /nl/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Sla ten slotte het document op met het toegepaste watermerk:
 watermarker.Save();
 ```
 ## Conclusie
-Het toevoegen van watermerken aan uw documenten met Groupdocs voor .NET is eenvoudig en efficiënt. Door de hierboven beschreven stappen te volgen, kunt u uw documenten beschermen en hun integriteit moeiteloos behouden. Voor meer details kunt u verwijzen naar de[documentatie](https://reference.groupdocs.com/Watermark/net/).
+Het toevoegen van watermerken aan uw documenten met Groupdocs voor .NET is eenvoudig en efficiënt. Door de hierboven beschreven stappen te volgen, kunt u uw documenten beschermen en hun integriteit moeiteloos behouden. Voor meer details kunt u verwijzen naar de[documentatie](https://tutorials.groupdocs.com/Watermark/net/).
 ## Veelgestelde vragen
 ### Kan ik een afbeelding als watermerk gebruiken in plaats van tekst?
 Ja, met Groupdocs.Watermark kunt u afbeeldingen, vormen en tekst als watermerken gebruiken.

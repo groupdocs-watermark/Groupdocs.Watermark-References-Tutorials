@@ -3,7 +3,6 @@ title: Tambahkan Tanda Air ke Gambar Bagian di Dokumen Word
 linktitle: Tambahkan Tanda Air ke Gambar Bagian di Dokumen Word
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air ke gambar di dokumen Word menggunakan Groupdocs untuk .NET. Ikuti panduan kami untuk perlindungan dokumen yang aman dan profesional.
-type: docs
 weight: 16
 url: /id/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## Kesimpulan
 Menambahkan tanda air ke gambar dalam dokumen Word Anda adalah cara ampuh untuk melindungi konten Anda. Dengan Groupdocs.Watermark untuk .NET, proses ini mudah dan efisien. Ikuti langkah-langkah yang diuraikan dalam tutorial ini untuk memastikan dokumen Anda aman dan terlindungi dengan baik.
- Untuk dokumentasi lebih rinci, kunjungi[dokumentasi](https://reference.groupdocs.com/Watermark/net/) . Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, lihat[forum dukungan](https://forum.groupdocs.com/c/watermark/19).
+ Untuk dokumentasi lebih rinci, kunjungi[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/) . Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, lihat[forum dukungan](https://forum.groupdocs.com/c/watermark/19).
 ## FAQ
 ### Bisakah saya menyesuaikan teks tanda air?
 Ya, Anda dapat menyesuaikan teks tanda air, font, ukuran, perataan, dan rotasi sesuai kebutuhan Anda.
 ### Apakah mungkin menambahkan tanda air ke beberapa bagian?
 Ya, Anda dapat mengulang setiap bagian dan menerapkan tanda air ke gambar di semua bagian.
 ### Bisakah saya menggunakan metode ini untuk format dokumen lain?
- Groupdocs.Tanda Air mendukung berbagai format dokumen. Periksalah[dokumentasi](https://reference.groupdocs.com/Watermark/net/) untuk lebih jelasnya.
+ Groupdocs.Tanda Air mendukung berbagai format dokumen. Periksalah[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/) untuk lebih jelasnya.
 ### Bagaimana saya bisa mendapatkan lisensi sementara?
  Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.groupdocs.com/temporary-license/).
 ### Bagaimana jika saya mengalami masalah saat menggunakan Groupdocs.Watermark?

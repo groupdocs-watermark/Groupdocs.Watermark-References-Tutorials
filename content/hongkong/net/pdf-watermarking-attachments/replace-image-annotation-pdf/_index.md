@@ -3,7 +3,6 @@ title: 替換 PDF 中特定註釋的圖像
 linktitle: 替換 PDF 中特定註釋的圖像
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 取代特定 PDF 註解中的影像。這個詳細的指南涵蓋了從載入文件到保存變更的所有內容。
-type: docs
 weight: 37
 url: /zh-hant/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 此步驟可確保儲存所有更改，並且修改後的文件可供使用。
 ## 結論
-恭喜！您已使用 GroupDocs.Watermark for .NET 成功替換了 PDF 文件中特定註釋中的影像。這個強大的庫可以輕鬆處理複雜的 PDF 浮水印任務，增強您的文件管理能力。如需進一步客製化和高級功能，請探索[GroupDocs.Watermark 文檔](https://reference.groupdocs.com/Watermark/net/).
+恭喜！您已使用 GroupDocs.Watermark for .NET 成功替換了 PDF 文件中特定註釋中的影像。這個強大的庫可以輕鬆處理複雜的 PDF 浮水印任務，增強您的文件管理能力。如需進一步客製化和高級功能，請探索[GroupDocs.Watermark 文檔](https://tutorials.groupdocs.com/Watermark/net/).
 ## 常見問題解答
 ### 我可以替換 PDF 所有頁面上註釋中的圖像嗎？
 是的，您可以透過調整循環來遍歷 PDF 的所有頁面以遍歷每個頁面的註釋。

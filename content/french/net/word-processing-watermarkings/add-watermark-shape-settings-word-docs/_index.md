@@ -3,7 +3,6 @@ title: Ajouter un filigrane avec les paramètres de forme dans Word Docs
 linktitle: Ajouter un filigrane avec les paramètres de forme dans Word Docs
 second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes avec des paramètres de forme aux documents Word à l'aide de GroupDocs pour .NET. Protégez efficacement vos documents.
-type: docs
 weight: 20
 url: /fr/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
 ---

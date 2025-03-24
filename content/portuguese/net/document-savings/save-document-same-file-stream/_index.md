@@ -3,7 +3,6 @@ title: Salvar documento no mesmo arquivo ou fluxo
 linktitle: Salvar documento no mesmo arquivo ou fluxo
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda como adicionar marcas d'água a documentos usando Groupdocs.Watermark for .NET. Este guia fornece instruções para garantir a proteção e integridade dos documentos.
-type: docs
 weight: 10
 url: /pt/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Por fim, salve o documento com a marca d'água aplicada:
 watermarker.Save();
 ```
 ## Conclusão
-Adicionar marcas d’água aos seus documentos usando o Groupdocs para .NET é simples e eficiente. Seguindo as etapas descritas acima, você pode proteger seus documentos e manter sua integridade sem esforço. Para mais detalhes, você pode consultar o[documentação](https://reference.groupdocs.com/Watermark/net/).
+Adicionar marcas d’água aos seus documentos usando o Groupdocs para .NET é simples e eficiente. Seguindo as etapas descritas acima, você pode proteger seus documentos e manter sua integridade sem esforço. Para mais detalhes, você pode consultar o[documentação](https://tutorials.groupdocs.com/Watermark/net/).
 ## Perguntas frequentes
 ### Posso usar uma imagem como marca d’água em vez de texto?
 Sim, Groupdocs.Watermark permite usar imagens, formas e texto como marcas d’água.

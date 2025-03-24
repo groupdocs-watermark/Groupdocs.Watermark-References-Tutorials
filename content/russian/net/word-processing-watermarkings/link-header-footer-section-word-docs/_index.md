@@ -3,7 +3,6 @@ title: Ссылка на верхний/нижний колонтитул в р�
 linktitle: Ссылка на верхний/нижний колонтитул в разделе в документах Word
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как эффективно связывать верхние и нижние колонтитулы в разделах документов Word с помощью GroupDocs.Watermark для .NET. Управление документами и безопасность.
-type: docs
 weight: 26
 url: /ru/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### Доступны ли временные лицензии для GroupDocs.Watermark для .NET?
  Да, временные лицензии можно получить в[Страница покупки GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### Предлагает ли GroupDocs.Watermark для .NET документацию для разработчиков?
- Да, доступна полная документация[здесь](https://reference.groupdocs.com/Watermark/net/).
+ Да, доступна полная документация[здесь](https://tutorials.groupdocs.com/Watermark/net/).

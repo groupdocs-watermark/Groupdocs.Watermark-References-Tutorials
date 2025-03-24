@@ -3,7 +3,6 @@ title: Rasterize PDF Page
 linktitle: Rasterize PDF Page
 second_title: GroupDocs.Watermark .NET API
 description: Enhance document security with GroupDocs.Watermark for .NET. Add watermarks to PDF and other formats seamlessly.
-type: docs
 weight: 28
 url: /net/pdf-watermarking-attachments/rasterize-pdf-page/
 ---
@@ -69,7 +68,7 @@ In conclusion, GroupDocs.Watermark for .NET offers a seamless solution for addin
 ### Is GroupDocs.Watermark compatible with other document formats besides PDF?
 Yes, GroupDocs.Watermark supports a wide range of document formats, including Word, Excel, PowerPoint, Visio, and more.
 ### Can I customize the appearance of the watermark added to the document?
-Absolutely! GroupDocs.Watermark provides extensive customization options for text and image watermarks, allowing users to adjust the font, size, color, opacity, and positioning according to their preferences.
+Absolutely! GroupDocs.Watermark provides extensive customization options for text and image watermarks, allowing users to adjust the font, size, color, opacity, and positioning according to their ptutorialss.
 ### Is GroupDocs.Watermark suitable for both personal and commercial use?
 Yes, GroupDocs.Watermark offers flexible licensing options to cater to both individual and enterprise needs, making it suitable for personal projects as well as large-scale commercial applications.
 ### Does GroupDocs.Watermark offer technical support for developers?

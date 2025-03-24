@@ -3,7 +3,6 @@ title: Reemplazar texto para anotaciones específicas en PDF
 linktitle: Reemplazar texto para anotaciones específicas en PDF
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a reemplazar texto en anotaciones de PDF específicas usando Groupdocs.Watermark para .NET con este completo tutorial paso a paso.
-type: docs
 weight: 40
 url: /es/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---

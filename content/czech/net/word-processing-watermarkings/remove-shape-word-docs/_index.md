@@ -3,7 +3,6 @@ title: Odebrat tvar v dokumentech aplikace Word
 linktitle: Odebrat tvar v dokumentech aplikace Word
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se odstraňovat tvary z dokumentů aplikace Word pomocí GroupDocs.Watermark for .NET. Snadná, efektivní a výkonná manipulace s dokumenty.
-type: docs
 weight: 30
 url: /cs/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
@@ -51,7 +50,7 @@ WordProcessingContent content = watermarker.GetContent<WordProcessingContent>();
 ```csharp
 content.Sections[0].Shapes.RemoveAt(0);
 ```
-## Krok 5: Odstraňte tvar podle reference
+## Krok 5: Odstraňte tvar podle tutorials
  Případně můžete odstranit tvar přímým odkazem na něj v rámci`Shapes` sbírka:
 ```csharp
 content.Sections[0].Shapes.Remove(content.Sections[0].Shapes[0]);
@@ -72,6 +71,6 @@ Ano, GroupDocs.Watermark for .NET podporuje širokou škálu formátů dokument�
 ### Jak mohu získat dočasné licence pro GroupDocs.Watermark for .NET?
  Dočasné licence pro GroupDocs.Watermark for .NET lze získat z webu[dočasná licenční stránka](https://purchase.groupdocs.com/temporary-license/).
 ### Kde najdu dokumentaci a podporu pro GroupDocs.Watermark for .NET?
- Dokumentace a zdroje podpory pro GroupDocs.Watermark for .NET jsou k dispozici na[Fórum](https://forum.groupdocs.com/c/watermark/19) a[Referenční stránka](https://reference.groupdocs.com/Watermark/net/).
+ Dokumentace a zdroje podpory pro GroupDocs.Watermark for .NET jsou k dispozici na[Fórum](https://forum.groupdocs.com/c/watermark/19) a[Referenční stránka](https://tutorials.groupdocs.com/Watermark/net/).
 ### Jaké verze .NET jsou kompatibilní s GroupDocs.Watermark?
 GroupDocs.Watermark for .NET je kompatibilní s různými verzemi .NET, včetně .NET Framework a .NET Core.

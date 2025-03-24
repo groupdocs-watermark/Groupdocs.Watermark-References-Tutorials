@@ -3,7 +3,6 @@ title: 取得 Word 文件中的節屬性
 linktitle: 取得 Word 文件中的節屬性
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs for .NET 從 Word 文件中提取節屬性。輕鬆增強您的文件處理能力。
-type: docs
 weight: 23
 url: /zh-hant/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---

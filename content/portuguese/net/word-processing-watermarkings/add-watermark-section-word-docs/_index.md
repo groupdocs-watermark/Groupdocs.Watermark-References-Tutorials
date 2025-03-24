@@ -3,7 +3,6 @@ title: Adicionar marca d'água à seção em documentos do Word
 linktitle: Adicionar marca d'água à seção em documentos do Word
 second_title: API GroupDocs.Watermark .NET
 description: Adicione facilmente marcas d'água a documentos do Word usando GroupDocs.Watermark for .NET. Proteja seu conteúdo com este guia simples.
-type: docs
 weight: 15
 url: /pt/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

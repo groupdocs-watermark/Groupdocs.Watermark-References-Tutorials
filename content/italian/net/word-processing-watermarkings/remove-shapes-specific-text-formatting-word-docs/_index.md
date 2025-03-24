@@ -3,7 +3,6 @@ title: Rimuovi forme con formattazione del testo specifica nei documenti Word
 linktitle: Rimuovi forme con formattazione del testo specifica nei documenti Word
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come rimuovere forme con formattazione del testo specifica nei documenti Word utilizzando GroupDocs.Watermark per .NET. Segui la nostra guida per una manipolazione efficiente delle filigrane.
-type: docs
 weight: 31
 url: /it/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---

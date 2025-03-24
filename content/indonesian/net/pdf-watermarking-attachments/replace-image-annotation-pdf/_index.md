@@ -3,7 +3,6 @@ title: Ganti Gambar untuk Anotasi Tertentu dalam PDF
 linktitle: Ganti Gambar untuk Anotasi Tertentu dalam PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengganti gambar dalam anotasi PDF tertentu menggunakan GroupDocs.Watermark untuk .NET. Panduan terperinci ini mencakup semuanya mulai dari memuat dokumen hingga menyimpan perubahan.
-type: docs
 weight: 37
 url: /id/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 Langkah ini memastikan bahwa semua perubahan disimpan, dan dokumen yang dimodifikasi siap digunakan.
 ## Kesimpulan
-Selamat! Anda telah berhasil mengganti gambar dalam anotasi tertentu dalam dokumen PDF menggunakan GroupDocs.Watermark untuk .NET. Pustaka canggih ini memudahkan penanganan tugas watermarking PDF yang rumit, sehingga meningkatkan kemampuan manajemen dokumen Anda. Untuk penyesuaian lebih lanjut dan fitur lanjutan, jelajahi[Dokumentasi GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+Selamat! Anda telah berhasil mengganti gambar dalam anotasi tertentu dalam dokumen PDF menggunakan GroupDocs.Watermark untuk .NET. Pustaka canggih ini memudahkan penanganan tugas watermarking PDF yang rumit, sehingga meningkatkan kemampuan manajemen dokumen Anda. Untuk penyesuaian lebih lanjut dan fitur lanjutan, jelajahi[Dokumentasi GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### Bisakah saya mengganti gambar dalam anotasi di semua halaman PDF?
 Ya, Anda dapat mengulangi seluruh halaman PDF dengan menyesuaikan loop untuk menelusuri anotasi setiap halaman.

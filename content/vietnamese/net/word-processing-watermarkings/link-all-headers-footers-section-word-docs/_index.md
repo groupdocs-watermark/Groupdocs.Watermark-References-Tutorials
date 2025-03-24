@@ -3,7 +3,6 @@ title: Liên kết tất cả đầu trang/chân trang trong các phần trong t
 linktitle: Liên kết tất cả đầu trang/chân trang trong các phần trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Dễ dàng liên kết đầu trang và chân trang trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Đảm bảo tính nhất quán và chuyên nghiệp một cách dễ dàng.
-type: docs
 weight: 25
 url: /vi/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

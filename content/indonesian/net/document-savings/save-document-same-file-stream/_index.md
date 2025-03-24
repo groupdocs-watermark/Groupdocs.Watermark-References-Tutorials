@@ -3,7 +3,6 @@ title: Simpan Dokumen ke File atau Aliran yang Sama
 linktitle: Simpan Dokumen ke File atau Aliran yang Sama
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air ke dokumen menggunakan Groupdocs.Watermark untuk .NET. Panduan ini memberikan instruksi untuk memastikan perlindungan dan integritas dokumen.
-type: docs
 weight: 10
 url: /id/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Terakhir, simpan dokumen dengan tanda air yang diterapkan:
 watermarker.Save();
 ```
 ## Kesimpulan
-Menambahkan tanda air ke dokumen Anda menggunakan Groupdocs untuk .NET sangatlah mudah dan efisien. Dengan mengikuti langkah-langkah yang diuraikan di atas, Anda dapat melindungi dokumen Anda dan menjaga integritasnya dengan mudah. Untuk lebih jelasnya, Anda dapat merujuk ke[dokumentasi](https://reference.groupdocs.com/Watermark/net/).
+Menambahkan tanda air ke dokumen Anda menggunakan Groupdocs untuk .NET sangatlah mudah dan efisien. Dengan mengikuti langkah-langkah yang diuraikan di atas, Anda dapat melindungi dokumen Anda dan menjaga integritasnya dengan mudah. Untuk lebih jelasnya, Anda dapat merujuk ke[dokumentasi](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### Bisakah saya menggunakan gambar sebagai tanda air dan bukan teks?
 Ya, Groupdocs.Watermark memungkinkan Anda menggunakan gambar, bentuk, dan teks sebagai tanda air.

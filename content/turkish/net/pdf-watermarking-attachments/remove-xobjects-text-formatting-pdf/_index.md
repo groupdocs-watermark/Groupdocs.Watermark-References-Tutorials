@@ -3,7 +3,6 @@ title: PDF'de Özel Metin Formatına Sahip XObject'leri Kaldırma
 linktitle: PDF'de Özel Metin Formatına Sahip XObject'leri Kaldırma
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak belirli metin formatına sahip XObject'leri PDF'lerden zahmetsizce kaldırın. Kusursuz belge işleme için kılavuzumuzu takip edin.
-type: docs
 weight: 36
 url: /tr/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Son olarak, değiştirilen PDF belgesini belirtilen çıktı dosyası yoluna kay
 Bu, belirli metin formatına sahip XObject'leri bir PDF belgesinden kaldırma işlemini tamamlar.
 
 ## Çözüm
-Bu adımları izleyerek, GroupDocs.Watermark for .NET'i kullanarak belirli metin formatına sahip XObject'leri PDF belgelerinden etkili bir şekilde kaldırabilirsiniz. Bu güçlü kitaplık yalnızca filigranlama görevlerini basitleştirmekle kalmaz, aynı zamanda belge işleme için de güçlü yetenekler sunar. Daha ayrıntılı belgeler için şu adresi ziyaret edin:[.NET belgeleri için GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/) . Herhangi bir sorunla karşılaşırsanız veya sorularınız varsa,[destek Forumu](https://forum.groupdocs.com/c/watermark/19) yardım istemek için harika bir yerdir.
+Bu adımları izleyerek, GroupDocs.Watermark for .NET'i kullanarak belirli metin formatına sahip XObject'leri PDF belgelerinden etkili bir şekilde kaldırabilirsiniz. Bu güçlü kitaplık yalnızca filigranlama görevlerini basitleştirmekle kalmaz, aynı zamanda belge işleme için de güçlü yetenekler sunar. Daha ayrıntılı belgeler için şu adresi ziyaret edin:[.NET belgeleri için GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/) . Herhangi bir sorunla karşılaşırsanız veya sorularınız varsa,[destek Forumu](https://forum.groupdocs.com/c/watermark/19) yardım istemek için harika bir yerdir.
 ## SSS'ler
 ### Farklı metin formatına sahip XObject'leri kaldırabilir miyim?
 Evet, yazı tipi boyutu, yazı tipi stili veya rengi gibi farklı metin biçimlendirme niteliklerini kontrol etmek için kodu değiştirebilirsiniz.

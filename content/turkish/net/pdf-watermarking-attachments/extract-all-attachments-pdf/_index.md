@@ -3,7 +3,6 @@ title: Tüm Ekleri PDF'den Çıkarın
 linktitle: Tüm Ekleri PDF'den Çıkarın
 second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs.Watermark for .NET'i kullanarak PDF'deki tüm ekleri nasıl çıkaracağınızı öğrenin. Sorunsuz bir çıkarma işlemi için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 22
 url: /tr/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---

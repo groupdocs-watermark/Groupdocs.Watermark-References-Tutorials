@@ -3,7 +3,6 @@ title: Dokumentum védelme a Word dokumentumokban
 linktitle: Dokumentum védelme a Word dokumentumokban
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan védheti meg a Word dokumentumokat a GroupDocs.Watermark for .NET használatával. Kövesse lépésenkénti oktatóanyagunkat, hogy könnyedén növelje dokumentumai biztonságát.
-type: docs
 weight: 28
 url: /hu/net/word-processing-watermarkings/protect-document-word-docs/
 ---

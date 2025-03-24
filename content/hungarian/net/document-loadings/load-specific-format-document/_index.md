@@ -3,7 +3,6 @@ title: Töltsön be egy adott formátumú dokumentumot
 linktitle: Töltsön be egy adott formátumú dokumentumot
 second_title: GroupDocs.Watermark .NET API
 description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan tölthet be és vízjelekkel tölthet be dokumentumokat a Groupdocs segítségével. Könnyedén védje meg és jellemezze tartalmait.
-type: docs
 weight: 12
 url: /hu/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Következtetés
- dokumentumok vízjelezése kritikus lépés a tartalom védelmében, a Groupdocs.Watermark for .NET pedig ezt a folyamatot egyszerűvé és hatékonysá teszi. Ennek az útmutatónak a követésével könnyedén betölthet és felhelyezhet vízjeleket dokumentumaira, így biztosítva a biztonságukat és a megfelelő márkajelzést. További részletekért és speciális opciókért tekintse meg a[Groupdocs.Watermark a .NET dokumentációhoz](https://reference.groupdocs.com/Watermark/net/).
+ dokumentumok vízjelezése kritikus lépés a tartalom védelmében, a Groupdocs.Watermark for .NET pedig ezt a folyamatot egyszerűvé és hatékonysá teszi. Ennek az útmutatónak a követésével könnyedén betölthet és felhelyezhet vízjeleket dokumentumaira, így biztosítva a biztonságukat és a megfelelő márkajelzést. További részletekért és speciális opciókért tekintse meg a[Groupdocs.Watermark a .NET dokumentációhoz](https://tutorials.groupdocs.com/Watermark/net/).
 ## GYIK
 ### Használhatom ezt a módszert különböző dokumentumformátumokhoz?
  Igen, a Groupdocs különféle dokumentumformátumokat támogat. Be kell állítani a`LoadOptions` Eszerint.

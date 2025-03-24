@@ -3,7 +3,6 @@ title: Aggiungi filigrana immagine affiancata
 linktitle: Aggiungi filigrana immagine affiancata
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere filigrane di immagini affiancate ai tuoi documenti utilizzando GroupDocs.Watermark per .NET. Facile, efficiente e personalizzabile.
-type: docs
 weight: 10
 url: /it/net/image-watermarkings/add-tiled-image-watermark/
 ---

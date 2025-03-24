@@ -3,7 +3,6 @@ title: إزالة المرفق من PDF
 linktitle: إزالة المرفق من PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة المرفقات من مستندات PDF بسهولة باستخدام GroupDocs.Watermark لـ .NET. تعزيز كفاءة إدارة المستندات الخاصة بك.
-type: docs
 weight: 33
 url: /ar/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

@@ -3,7 +3,6 @@ title: Penyimpanan Dokumen
 linktitle: Penyimpanan Dokumen
 second_title: GroupDocs.Tanda Air .NET API
 description: Jelajahi GroupDocs.Watermark untuk tutorial .NET tentang menyimpan dokumen dengan tanda air. Pelajari metode langkah demi langkah untuk meningkatkan keamanan dan manajemen dokumen.
-type: docs
 weight: 23
 url: /id/net/document-savings/
 ---

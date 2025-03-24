@@ -3,7 +3,6 @@ title: Belgeyi Belirtilen Akışa Kaydet
 linktitle: Belgeyi Belirtilen Akışa Kaydet
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu adım adım kılavuzla GroupDocs.Watermark for .NET'i kullanarak bir belgeyi belirli bir akışa nasıl kaydedeceğinizi öğrenin. Her seviyedeki geliştiriciler için mükemmeldir.
-type: docs
 weight: 12
 url: /tr/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Evet, GroupDocs Filigran metin, resim ve hatta barkod filigranlarını destekler
 ### Geçici lisansı nasıl alabilirim?
  adresinden geçici lisans alabilirsiniz.[bu bağlantı](https://purchase.groupdocs.com/temporary-license/).
 ### Daha ayrıntılı belgeleri nerede bulabilirim?
- Daha ayrıntılı belgeler için şu adresi ziyaret edebilirsiniz:[Burada](https://reference.groupdocs.com/Watermark/net/).
+ Daha ayrıntılı belgeler için şu adresi ziyaret edebilirsiniz:[Burada](https://tutorials.groupdocs.com/Watermark/net/).

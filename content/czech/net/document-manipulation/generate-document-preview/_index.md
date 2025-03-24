@@ -3,7 +3,6 @@ title: Generovat náhled dokumentu
 linktitle: Generovat náhled dokumentu
 second_title: GroupDocs.Watermark .NET API
 description: V této příručce se dozvíte, jak generovat náhledy dokumentů pomocí GroupDocs.Watermark for .NET. Vylepšete zabezpečení a správu dokumentů bez námahy.
-type: docs
 weight: 10
 url: /cs/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Závěr
 Generování náhledů dokumentů pomocí GroupDocs.Watermark for .NET je jednoduchý proces, který lze provést pomocí několika řádků kódu. Podle kroků uvedených v této příručce můžete snadno nastavit svůj projekt, nakonfigurovat potřebné možnosti a generovat náhledy dokumentů. Tato výkonná knihovna nejen zjednodušuje proces vodoznaku, ale také poskytuje robustní funkce pro správu a manipulaci s vodoznaky.
- Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte a navštivte[Fórum podpory GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) nebo odkazovat na[dokumentace](https://reference.groupdocs.com/Watermark/net/).
+ Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte a navštivte[Fórum podpory GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark/19) nebo odkazovat na[dokumentace](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### Jaké formáty souborů podporuje GroupDocs.Watermark for .NET?
- GroupDocs.Watermark for .NET podporuje širokou škálu formátů souborů, včetně PDF, DOCX, PPTX, XLSX a mnoha dalších. Úplný seznam podporovaných formátů naleznete na[dokumentace](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark for .NET podporuje širokou škálu formátů souborů, včetně PDF, DOCX, PPTX, XLSX a mnoha dalších. Úplný seznam podporovaných formátů naleznete na[dokumentace](https://tutorials.groupdocs.com/Watermark/net/).
 ### Mohu upravit vzhled vodoznaků?
 Ano, GroupDocs.Watermark umožňuje plně přizpůsobit vzhled vodoznaků, včetně textových, obrazových a tvarových vodoznaků. Můžete upravit vlastnosti, jako je písmo, barva, velikost a průhlednost.
 ### Je k dispozici zkušební verze?

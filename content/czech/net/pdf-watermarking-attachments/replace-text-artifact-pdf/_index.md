@@ -3,7 +3,6 @@ title: Nahradit text za konkrétní artefakt v PDF
 linktitle: Nahradit text za konkrétní artefakt v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Objevte, jak nahradit text pro konkrétní artefakty v dokumentech PDF pomocí GroupDocs.Watermark for .NET. Bez námahy vylepšete zabezpečení a integritu dokumentů.
-type: docs
 weight: 42
 url: /cs/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---

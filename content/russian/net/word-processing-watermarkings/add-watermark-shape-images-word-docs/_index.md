@@ -3,7 +3,6 @@ title: Добавьте водяной знак для формирования 
 linktitle: Добавьте водяной знак для формирования изображений в документах Word
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять водяные знаки для придания формы изображениям в документах Word с помощью GroupDocs.Watermark для .NET. Повысьте безопасность документов с помощью этого руководства.
-type: docs
 weight: 17
 url: /ru/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---

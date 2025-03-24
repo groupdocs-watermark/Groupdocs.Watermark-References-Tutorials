@@ -3,7 +3,6 @@ title: Lưu tài liệu vào cùng một tệp hoặc luồng
 linktitle: Lưu tài liệu vào cùng một tệp hoặc luồng
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ vào tài liệu bằng Groupdocs.Watermark cho .NET. Hướng dẫn này cung cấp hướng dẫn để đảm bảo tính toàn vẹn và bảo vệ tài liệu.
-type: docs
 weight: 10
 url: /vi/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Cuối cùng, lưu tài liệu có áp dụng hình mờ:
 watermarker.Save();
 ```
 ## Phần kết luận
-Thêm hình mờ vào tài liệu của bạn bằng Groupdocs cho .NET rất đơn giản và hiệu quả. Bằng cách làm theo các bước được nêu ở trên, bạn có thể bảo vệ tài liệu của mình và duy trì tính toàn vẹn của chúng một cách dễ dàng. Để biết thêm chi tiết, bạn có thể tham khảo[tài liệu](https://reference.groupdocs.com/Watermark/net/).
+Thêm hình mờ vào tài liệu của bạn bằng Groupdocs cho .NET rất đơn giản và hiệu quả. Bằng cách làm theo các bước được nêu ở trên, bạn có thể bảo vệ tài liệu của mình và duy trì tính toàn vẹn của chúng một cách dễ dàng. Để biết thêm chi tiết, bạn có thể tham khảo[tài liệu](https://tutorials.groupdocs.com/Watermark/net/).
 ## Câu hỏi thường gặp
 ### Tôi có thể sử dụng hình ảnh làm hình mờ thay vì văn bản không?
 Có, Groupdocs.Watermark cho phép bạn sử dụng hình ảnh, hình dạng và văn bản làm hình mờ.

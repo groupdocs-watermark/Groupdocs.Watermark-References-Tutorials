@@ -3,7 +3,6 @@ title: PDF-méretek beszerzése
 linktitle: PDF-méretek beszerzése
 second_title: GroupDocs.Watermark .NET API
 description: Könnyedén megvédheti dokumentumait a Groupdocs.Watermark for .NET segítségével. Könnyedén hozzáadhat vízjeleket, bélyegzőket és megjegyzéseket.
-type: docs
 weight: 26
 url: /hu/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---

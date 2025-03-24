@@ -3,7 +3,6 @@ title: Usuń załącznik z pliku PDF
 linktitle: Usuń załącznik z pliku PDF
 second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak łatwo usuwać załączniki z dokumentów PDF za pomocą GroupDocs.Watermark dla .NET. Zwiększ efektywność zarządzania dokumentami.
-type: docs
 weight: 33
 url: /pl/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

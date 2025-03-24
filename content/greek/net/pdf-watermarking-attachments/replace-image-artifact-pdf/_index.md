@@ -3,7 +3,6 @@ title: Αντικαταστήστε την εικόνα για συγκεκρι�
 linktitle: Αντικαταστήστε την εικόνα για συγκεκριμένο τεχνούργημα σε PDF
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αντικαθιστάτε εικόνες σε έγγραφα PDF χρησιμοποιώντας το GroupDocs.Watermark για .NET με αυτόν τον αναλυτικό, βήμα προς βήμα εκμάθηση.
-type: docs
 weight: 38
 url: /el/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
 ---

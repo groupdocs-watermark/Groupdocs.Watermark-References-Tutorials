@@ -3,7 +3,6 @@ title: Cserélje le a szöveget az XObject formázásával a PDF-ben
 linktitle: Cserélje le a szöveget az XObject formázásával a PDF-ben
 second_title: GroupDocs.Watermark .NET API
 description: Bővítse .NET-dokumentumkezelési képességeit a GroupDocs Watermark for .NET segítségével. Tanulja meg, hogyan lehet könnyedén szöveget formázással helyettesíteni a PDF-fájlokban.
-type: docs
 weight: 45
 url: /hu/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---

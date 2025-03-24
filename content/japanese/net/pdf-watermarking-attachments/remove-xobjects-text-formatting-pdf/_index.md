@@ -3,7 +3,6 @@ title: PDF 内の特定のテキスト書式設定を持つ XObject を削除す
 linktitle: PDF 内の特定のテキスト書式設定を持つ XObject を削除する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、特定のテキスト形式を持つ XObject を PDF から簡単に削除します。シームレスなドキュメント操作については、ガイドに従ってください。
-type: docs
 weight: 36
 url: /ja/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ foreach (PdfPage page in pdfContent.Pages)
 これで、特定のテキスト形式を持つ XObject を PDF ドキュメントから削除するプロセスが完了しました。
 
 ## 結論
-これらの手順に従うと、GroupDocs.Watermark for .NET を使用して PDF ドキュメントから特定のテキスト形式の XObject を効率的に削除できます。この強力なライブラリは、透かし入れタスクを簡素化するだけでなく、ドキュメント操作のための堅牢な機能も提供します。さらに詳細なドキュメントについては、次のサイトを参照してください。[GroupDocs.Watermark for .NET ドキュメント](https://reference.groupdocs.com/Watermark/net/)。問題が発生したり、質問がある場合は、[サポートフォーラム](https://forum.groupdocs.com/c/watermark/19)助けを求めるのに最適な場所です。
+これらの手順に従うと、GroupDocs.Watermark for .NET を使用して PDF ドキュメントから特定のテキスト形式の XObject を効率的に削除できます。この強力なライブラリは、透かし入れタスクを簡素化するだけでなく、ドキュメント操作のための堅牢な機能も提供します。さらに詳細なドキュメントについては、次のサイトを参照してください。[GroupDocs.Watermark for .NET ドキュメント](https://tutorials.groupdocs.com/Watermark/net/)。問題が発生したり、質問がある場合は、[サポートフォーラム](https://forum.groupdocs.com/c/watermark/19)助けを求めるのに最適な場所です。
 ## よくある質問
 ### 異なるテキスト形式の XObject を削除できますか?
 はい、コードを変更して、フォント サイズ、フォント スタイル、色などのさまざまなテキスト書式設定属性を確認できます。

@@ -3,7 +3,6 @@ title: Rasterisera PDF-dokument
 linktitle: Rasterisera PDF-dokument
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du rastrerar PDF-dokument med GroupDocs.Watermark för .NET. Förbättra dokumentsäkerheten och visuellt tilltalande utan ansträngning.
-type: docs
 weight: 27
 url: /sv/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---

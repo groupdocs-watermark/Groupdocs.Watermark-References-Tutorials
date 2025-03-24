@@ -3,7 +3,6 @@ title: Koppel kop-/voettekst in sectie in Word-documenten
 linktitle: Koppel kop-/voettekst in sectie in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u kop- en voetteksten binnen secties van Word-documenten efficiënt kunt koppelen met GroupDocs.Watermark voor .NET. Documentbeheer en beveiliging.
-type: docs
 weight: 26
 url: /nl/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ Ja, u kunt toegang krijgen tot een gratis proefperiode via de[releases pagina](h
 ### Zijn er tijdelijke licenties beschikbaar voor GroupDocs.Watermark voor .NET?
  Ja, tijdelijke licenties zijn verkrijgbaar bij de[GroupDocs-aankooppagina](https://purchase.groupdocs.com/temporary-license/).
 ### Biedt GroupDocs.Watermark voor .NET documentatie voor ontwikkelaars?
- Ja, er is uitgebreide documentatie beschikbaar[hier](https://reference.groupdocs.com/Watermark/net/).
+ Ja, er is uitgebreide documentatie beschikbaar[hier](https://tutorials.groupdocs.com/Watermark/net/).

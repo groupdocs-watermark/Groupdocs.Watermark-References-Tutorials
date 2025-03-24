@@ -3,7 +3,6 @@ title: Ladda dokument från Stream
 linktitle: Ladda dokument från Stream
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar i dokument med GroupDocs.Watermark for .NET med den här guiden. Perfekt för utvecklare som vill förbättra dokumentsäkerheten.
-type: docs
 weight: 11
 url: /sv/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Denna kod sparar dokumentet med den nyligen tillagda vattenstämpeln`outputFileName` sökväg du definierade tidigare.
 
 ## Slutsats
-Grattis! Du har framgångsrikt lagt till en vattenstämpel i ditt dokument med GroupDocs.Watermark for .NET. Detta bibliotek gör det otroligt enkelt att hantera vattenstämplar i en mängd olika dokumentformat. Oavsett om du behöver lägga till text, bilder eller andra typer av vattenstämplar har GroupDocs.Watermark de verktyg du behöver. Glöm inte att kolla in[dokumentation](https://reference.groupdocs.com/Watermark/net/) för mer avancerade funktioner och anpassningsalternativ.
+Grattis! Du har framgångsrikt lagt till en vattenstämpel i ditt dokument med GroupDocs.Watermark for .NET. Detta bibliotek gör det otroligt enkelt att hantera vattenstämplar i en mängd olika dokumentformat. Oavsett om du behöver lägga till text, bilder eller andra typer av vattenstämplar har GroupDocs.Watermark de verktyg du behöver. Glöm inte att kolla in[dokumentation](https://tutorials.groupdocs.com/Watermark/net/) för mer avancerade funktioner och anpassningsalternativ.
 ## FAQ's
 ### Vilka typer av vattenstämplar kan jag lägga till med GroupDocs.Watermark for .NET?
 Du kan lägga till textvattenstämplar, bildvattenstämplar och till och med komplexa former och logotyper. Biblioteket stöder ett brett utbud av anpassningsalternativ.

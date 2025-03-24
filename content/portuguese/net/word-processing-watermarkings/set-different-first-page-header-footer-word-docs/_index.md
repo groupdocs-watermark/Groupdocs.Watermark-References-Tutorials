@@ -3,7 +3,6 @@ title: Definir cabeçalho/rodapé de primeira página diferente em documentos do
 linktitle: Definir cabeçalho/rodapé de primeira página diferente em documentos do Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda como definir diferentes cabeçalhos e rodapés na primeira página de documentos do Word usando GroupDocs.Watermark for .NET.
-type: docs
 weight: 36
 url: /pt/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Sim, os usuários podem aproveitar uma avaliação gratuita do GroupDocs.Waterma
 ### Posso comprar uma licença temporária para uso de curto prazo?
  Sim, licenças temporárias para GroupDocs para .NET podem ser adquiridas no.[Página de compra de licença temporária](https://purchase.groupdocs.com/temporary-license/).
 ### Onde posso encontrar documentação abrangente para GroupDocs.Watermark for .NET?
- A documentação detalhada do GroupDocs.Watermark for .NET está disponível no site[Página de referência](https://reference.groupdocs.com/Watermark/net/).
+ A documentação detalhada do GroupDocs.Watermark for .NET está disponível no site[Página de referência](https://tutorials.groupdocs.com/Watermark/net/).

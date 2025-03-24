@@ -3,7 +3,6 @@ title: 文字处理水印
 linktitle: 文字处理水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解用于 .NET 的 GroupDocs.Watermark 基本教程，以在 Word 文档中添加和管理水印。轻松增强您的文档安全性和品牌形象。
-type: docs
 weight: 26
 url: /zh/net/word-processing-watermarkings/
 ---

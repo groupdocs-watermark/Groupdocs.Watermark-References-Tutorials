@@ -3,7 +3,6 @@ title: Ondersteunde bestandsformaten verkrijgen
 linktitle: Ondersteunde bestandsformaten verkrijgen
 second_title: GroupDocs.Watermark .NET API
 description: Voeg moeiteloos watermerken toe aan uw documenten met GroupDocs.Watermark voor .NET. Volg onze uitgebreide, stapsgewijze handleiding om uw digitale activa te beschermen.
-type: docs
 weight: 13
 url: /nl/net/document-manipulation/get-supported-file-formats/
 ---
@@ -82,4 +81,4 @@ U kunt het meegeleverde codefragment gebruiken om alle ondersteunde bestandsinde
 ### Hoe kan ik een licentie kopen voor GroupDocs.Watermark?
  Licenties kunnen rechtstreeks bij de[aankooppagina](https://purchase.groupdocs.com/buy).
 ### Is er documentatie beschikbaar voor GroupDocs.Watermark?
- Ja, er is uitgebreide documentatie beschikbaar[hier](https://reference.groupdocs.com/Watermark/net/).
+ Ja, er is uitgebreide documentatie beschikbaar[hier](https://tutorials.groupdocs.com/Watermark/net/).

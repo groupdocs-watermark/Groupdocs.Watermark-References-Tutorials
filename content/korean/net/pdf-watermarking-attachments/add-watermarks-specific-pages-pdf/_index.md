@@ -3,7 +3,6 @@ title: PDF의 특정 페이지에 워터마크 추가
 linktitle: PDF의 특정 페이지에 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET을 사용하여 PDF의 특정 페이지에 텍스트 및 이미지 워터마크를 추가하는 방법을 알아보세요. 문서를 보호하려면 자세한 가이드를 따르세요.
-type: docs
 weight: 15
 url: /ko/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
@@ -100,4 +99,4 @@ Groupdocs.Watermark for .NET은 PDF, Word, Excel 등을 포함한 다양한 문�
 ### Groupdocs.Watermark의 무료 평가판을 받으려면 어떻게 해야 합니까?
  다음에서 무료 평가판을 다운로드할 수 있습니다.[그룹닥스 웹사이트](https://releases.groupdocs.com/).
 ### 더 자세한 문서는 어디서 찾을 수 있나요?
- 자세한 내용은 다음을 참조하세요.[선적 서류 비치](https://reference.groupdocs.com/Watermark/net/).
+ 자세한 내용은 다음을 참조하세요.[선적 서류 비치](https://tutorials.groupdocs.com/Watermark/net/).

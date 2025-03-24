@@ -3,7 +3,6 @@ title: Beheers documentbeveiliging en branding met GroupDocs.Watermark
 linktitle: GroupDocs.Watermark-zelfstudies
 additionalTitle: GroupDocs API-referenties
 description: Ontgrendel de kracht van GroupDocs.Watermark met onze .NET- en Java-tutorials. Beheers watermerktechnieken voor documentbeveiliging en branding.
-type: docs
 weight: 11
 url: /nl/
 is_root: true

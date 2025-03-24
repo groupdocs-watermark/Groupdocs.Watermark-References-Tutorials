@@ -3,7 +3,6 @@ title: Távolítsa el a vízjelet a PDF-ből
 linktitle: Távolítsa el a vízjelet a PDF-ből
 second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan távolíthat el vízjeleket PDF-fájlokból a GroupDocs.Watermark for .NET segítségével. Egyszerű lépések a professzionális dokumentumszerkesztéshez.
-type: docs
 weight: 34
 url: /hu/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---

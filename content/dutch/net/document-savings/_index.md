@@ -3,7 +3,6 @@ title: Document opslaan
 linktitle: Document opslaan
 second_title: GroupDocs.Watermark .NET API
 description: Ontdek GroupDocs.Watermark voor .NET-tutorials over het opslaan van documenten met watermerken. Leer stapsgewijze methoden om de beveiliging en het beheer van documenten te verbeteren.
-type: docs
 weight: 23
 url: /nl/net/document-savings/
 ---

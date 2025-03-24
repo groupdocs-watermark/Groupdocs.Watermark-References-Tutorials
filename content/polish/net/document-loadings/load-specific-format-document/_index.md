@@ -3,7 +3,6 @@ title: Załaduj dokument w określonym formacie
 linktitle: Załaduj dokument w określonym formacie
 second_title: GroupDocs.Watermark API .NET
 description: Z tego przewodnika krok po kroku dowiesz się, jak ładować dokumenty i oznaczać je znakami wodnymi przy użyciu programu Groupdocs. Chroń i promuj swoje treści bez wysiłku.
-type: docs
 weight: 12
 url: /pl/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## Wniosek
-Oznaczanie dokumentów znakami wodnymi to kluczowy krok w ochronie treści, a Groupdocs.Watermark dla .NET sprawia, że proces ten jest prosty i wydajny. Postępując zgodnie z tym przewodnikiem, możesz łatwo załadować i zastosować znaki wodne do swoich dokumentów, zapewniając ich bezpieczeństwo i odpowiedni branding. Dalsze szczegóły i opcje zaawansowane można znaleźć w[Dokumentacja Groupdocs.Watermark dla platformy .NET](https://reference.groupdocs.com/Watermark/net/).
+Oznaczanie dokumentów znakami wodnymi to kluczowy krok w ochronie treści, a Groupdocs.Watermark dla .NET sprawia, że proces ten jest prosty i wydajny. Postępując zgodnie z tym przewodnikiem, możesz łatwo załadować i zastosować znaki wodne do swoich dokumentów, zapewniając ich bezpieczeństwo i odpowiedni branding. Dalsze szczegóły i opcje zaawansowane można znaleźć w[Dokumentacja Groupdocs.Watermark dla platformy .NET](https://tutorials.groupdocs.com/Watermark/net/).
 ## Często zadawane pytania
 ### Czy mogę używać tej metody w przypadku różnych formatów dokumentów?
  Tak, Groupdocs Watermark obsługuje różne formaty dokumentów. Musisz dostosować`LoadOptions` odpowiednio.

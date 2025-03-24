@@ -3,7 +3,6 @@ title: Lägg till anteckningsvattenstämpel till PDF
 linktitle: Lägg till anteckningsvattenstämpel till PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till anteckningsvattenstämplar i PDF-dokument utan ansträngning med GroupDocs.Watermark för .NET. Förbättra dokumentvarumärke och säkerhet med lätthet.
-type: docs
 weight: 10
 url: /sv/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---

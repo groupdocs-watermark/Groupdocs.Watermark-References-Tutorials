@@ -3,7 +3,6 @@ title: أساسيات العلامة المائية
 linktitle: أساسيات العلامة المائية
 second_title: GroupDocs.Watermark .NET API
 description: اكتشف GroupDocs.Watermark لبرامج .NET التعليمية لإضافة علامات مائية مصورة ونصية بسهولة. قم بحماية مستنداتك باستخدام هذه الأدلة سهلة المتابعة.
-type: docs
 weight: 20
 url: /ar/net/watermarking-basics/
 ---

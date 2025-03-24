@@ -3,7 +3,6 @@ title: PDF'deki Belirli Ek Açıklamanın Metni Değiştir
 linktitle: PDF'deki Belirli Ek Açıklamanın Metni Değiştir
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu kapsamlı, adım adım eğitimle Groupdocs.Watermark for .NET'i kullanarak belirli PDF ek açıklamalarındaki metni nasıl değiştireceğinizi öğrenin.
-type: docs
 weight: 40
 url: /tr/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
 ---

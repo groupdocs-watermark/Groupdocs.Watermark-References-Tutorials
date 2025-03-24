@@ -3,7 +3,6 @@ title: Đặt đầu trang/chân trang trang đầu tiên khác nhau trong tài 
 linktitle: Đặt đầu trang/chân trang trang đầu tiên khác nhau trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách đặt các đầu trang và chân trang khác nhau trên trang đầu tiên của tài liệu Word bằng GroupDocs.Watermark cho .NET.
-type: docs
 weight: 36
 url: /vi/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Có, người dùng có thể tận dụng bản dùng thử miễn phí GroupDo
 ### Tôi có thể mua giấy phép tạm thời để sử dụng ngắn hạn không?
  Có, bạn có thể lấy giấy phép tạm thời cho GroupDocs cho .NET từ[Trang mua giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/).
 ### Tôi có thể tìm tài liệu toàn diện về GroupDocs.Watermark cho .NET ở đâu?
- Tài liệu chi tiết về GroupDocs.Watermark cho .NET có sẵn trên[Trang tham khảo](https://reference.groupdocs.com/Watermark/net/).
+ Tài liệu chi tiết về GroupDocs.Watermark cho .NET có sẵn trên[Trang tham khảo](https://tutorials.groupdocs.com/Watermark/net/).

@@ -3,7 +3,6 @@ title: Thêm hình mờ hình ảnh
 linktitle: Thêm hình mờ hình ảnh
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ hình ảnh vào tài liệu của bạn bằng GroupDocs.Watermark cho .NET với hướng dẫn chi tiết từng bước của chúng tôi.
-type: docs
 weight: 11
 url: /vi/net/image-watermarkings/add-image-watermark/
 ---
@@ -77,4 +76,4 @@ Có, GroupDocs.Watermark tương thích với cả .NET Framework và .NET Core.
 ### Có thể thêm nhiều hình mờ vào một tài liệu không?
  Tuyệt đối! Bạn có thể thêm nhiều hình mờ bằng cách gọi`Add` phương pháp nhiều lần với các trường hợp hình mờ khác nhau.
 ### Tôi có thể tìm thêm ví dụ và tài liệu ở đâu?
- Để biết thêm ví dụ và tài liệu chi tiết, hãy truy cập[Tài liệu GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ Để biết thêm ví dụ và tài liệu chi tiết, hãy truy cập[Tài liệu GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

@@ -3,7 +3,6 @@ title: Word Belgelerindeki Şekil Görüntüsünü Değiştirme
 linktitle: Word Belgelerindeki Şekil Görüntüsünü Değiştirme
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki şekil görüntülerini programlı olarak nasıl değiştireceğinizi öğrenin. Belge işleme görevlerini zahmetsizce basitleştirin.
-type: docs
 weight: 33
 url: /tr/net/word-processing-watermarkings/replace-shape-image-word-docs/
 ---

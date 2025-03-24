@@ -3,7 +3,6 @@ title: पीडीएफ से सभी अनुलग्नक निका
 linktitle: पीडीएफ से सभी अनुलग्नक निकालें
 second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए Groupdocs.Watermark का उपयोग करके PDF से सभी अनुलग्नकों को निकालने का तरीका जानें। निर्बाध निष्कर्षण प्रक्रिया के लिए हमारी चरण-दर-चरण मार्गदर्शिका का पालन करें।
-type: docs
 weight: 22
 url: /hi/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---

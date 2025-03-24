@@ -3,7 +3,6 @@ title: إضافة علامات مائية إلى صفحات محددة في PDF
 linktitle: إضافة علامات مائية إلى صفحات محددة في PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية نصية وصورية إلى صفحات معينة في ملفات PDF باستخدام Groupdocs للعلامة المائية لـ .NET. اتبع دليلنا التفصيلي لتأمين مستنداتك.
-type: docs
 weight: 15
 url: /ar/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
@@ -100,4 +99,4 @@ Groupdocs.Watermark for .NET هي مكتبة تسمح لك بإضافة العل
 ### كيف يمكنني الحصول على نسخة تجريبية مجانية من Groupdocs.Watermark؟
  يمكنك تنزيل نسخة تجريبية مجانية من[موقع مستندات المجموعة](https://releases.groupdocs.com/).
 ### أين يمكنني العثور على وثائق أكثر تفصيلا؟
- لمزيد من المعلومات التفصيلية، يمكنك الرجوع إلى[توثيق](https://reference.groupdocs.com/Watermark/net/).
+ لمزيد من المعلومات التفصيلية، يمكنك الرجوع إلى[توثيق](https://tutorials.groupdocs.com/Watermark/net/).

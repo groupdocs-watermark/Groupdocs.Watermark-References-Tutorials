@@ -3,7 +3,6 @@ title: Maîtrisez la sécurité et l’image de marque des documents avec GroupD
 linktitle: Tutoriels GroupDocs.Watermark
 additionalTitle: Références de l'API GroupDocs
 description: Libérez la puissance de GroupDocs.Watermark avec nos didacticiels .NET et Java. Maîtrisez les techniques de filigrane pour la sécurité des documents et l'image de marque.
-type: docs
 weight: 11
 url: /fr/
 is_root: true

@@ -3,7 +3,6 @@ title: Establecer encabezado/pie de página diferente en la primera página en d
 linktitle: Establecer encabezado/pie de página diferente en la primera página en documentos de Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda a configurar diferentes encabezados y pies de página en la primera página de documentos de Word usando GroupDocs.Watermark para .NET.
-type: docs
 weight: 36
 url: /es/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Sí, los usuarios pueden aprovechar una prueba gratuita de GroupDocs.Watermark p
 ### ¿Puedo comprar una licencia temporal para uso a corto plazo?
  Sí, las licencias temporales de GroupDocs Watermark para .NET se pueden adquirir en el sitio.[Página de compra de licencia temporal](https://purchase.groupdocs.com/temporary-license/).
 ### ¿Dónde puedo encontrar documentación completa para GroupDocs.Watermark para .NET?
- La documentación detallada de GroupDocs.Watermark para .NET está disponible en[Página de referencia](https://reference.groupdocs.com/Watermark/net/).
+ La documentación detallada de GroupDocs.Watermark para .NET está disponible en[Página de referencia](https://tutorials.groupdocs.com/Watermark/net/).

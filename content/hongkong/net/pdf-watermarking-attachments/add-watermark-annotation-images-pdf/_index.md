@@ -3,7 +3,6 @@ title: 為 PDF 中的註釋圖像添加浮水印
 linktitle: 為 PDF 中的註釋圖像添加浮水印
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs.Watermark for .NET 為註釋影像添加浮水印來保護您的 PDF 文件。
-type: docs
 weight: 17
 url: /zh-hant/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---

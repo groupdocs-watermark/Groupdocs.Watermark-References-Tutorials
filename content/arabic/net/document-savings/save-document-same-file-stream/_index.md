@@ -3,7 +3,6 @@ title: احفظ المستند في نفس الملف أو الدفق
 linktitle: احفظ المستند في نفس الملف أو الدفق
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية إلى المستندات باستخدام Groupdocs.Watermark لـ .NET. يوفر هذا الدليل تعليمات لضمان حماية المستندات وسلامتها.
-type: docs
 weight: 10
 url: /ar/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ watermarker.Add(watermark);
 watermarker.Save();
 ```
 ## خاتمة
-تعد إضافة علامات مائية إلى مستنداتك باستخدام Groupdocs Watermark for .NET عملية واضحة وفعالة. باتباع الخطوات الموضحة أعلاه، يمكنك حماية مستنداتك والحفاظ على سلامتها دون عناء. لمزيد من التفاصيل، يمكنك الرجوع إلى[توثيق](https://reference.groupdocs.com/Watermark/net/).
+تعد إضافة علامات مائية إلى مستنداتك باستخدام Groupdocs Watermark for .NET عملية واضحة وفعالة. باتباع الخطوات الموضحة أعلاه، يمكنك حماية مستنداتك والحفاظ على سلامتها دون عناء. لمزيد من التفاصيل، يمكنك الرجوع إلى[توثيق](https://tutorials.groupdocs.com/Watermark/net/).
 ## الأسئلة الشائعة
 ### هل يمكنني استخدام صورة كعلامة مائية بدلاً من النص؟
 نعم، تتيح لك Groupdocs.Watermark استخدام الصور والأشكال والنصوص كعلامات مائية.

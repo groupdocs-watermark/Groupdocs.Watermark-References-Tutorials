@@ -3,7 +3,6 @@ title: Thêm hình mờ tạo tác vào PDF
 linktitle: Thêm hình mờ tạo tác vào PDF
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ giả tạo vào tệp PDF một cách dễ dàng bằng cách sử dụng Groupdocs.Watermark cho .NET. Bảo vệ tài liệu của bạn một cách dễ dàng.
-type: docs
 weight: 11
 url: /vi/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---

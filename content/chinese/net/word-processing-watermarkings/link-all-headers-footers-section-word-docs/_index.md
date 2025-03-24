@@ -3,7 +3,6 @@ title: 链接 Word 文档中节中的所有页眉/页脚
 linktitle: 链接 Word 文档中节中的所有页眉/页脚
 second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 轻松链接 Word 文档中的页眉和页脚。轻松确保一致性和专业性。
-type: docs
 weight: 25
 url: /zh/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

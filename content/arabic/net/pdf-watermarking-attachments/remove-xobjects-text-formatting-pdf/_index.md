@@ -3,7 +3,6 @@ title: قم بإزالة XObjects بتنسيق نص محدد في PDF
 linktitle: قم بإزالة XObjects بتنسيق نص محدد في PDF
 second_title: GroupDocs.Watermark .NET API
 description: قم بإزالة XObjects بسهولة بتنسيق نصي محدد من ملفات PDF باستخدام GroupDocs.Watermark لـ .NET. اتبع دليلنا لمعالجة المستندات بسلاسة.
-type: docs
 weight: 36
 url: /ar/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ foreach (PdfPage page in pdfContent.Pages)
 يؤدي هذا إلى إكمال عملية إزالة XObjects بتنسيق نص محدد من مستند PDF.
 
 ## خاتمة
-باتباع هذه الخطوات، يمكنك إزالة XObjects بكفاءة بتنسيق نص معين من مستندات PDF باستخدام GroupDocs.Watermark لـ .NET. لا تعمل هذه المكتبة القوية على تبسيط مهام وضع العلامات المائية فحسب، بل توفر أيضًا إمكانات قوية لمعالجة المستندات. لمزيد من الوثائق التفصيلية، قم بزيارة[GroupDocs.Watermark لوثائق .NET](https://reference.groupdocs.com/Watermark/net/) . إذا واجهت أي مشاكل أو لديك أسئلة،[منتدى الدعم](https://forum.groupdocs.com/c/watermark/19) مكان عظيم لطلب المساعدة.
+باتباع هذه الخطوات، يمكنك إزالة XObjects بكفاءة بتنسيق نص معين من مستندات PDF باستخدام GroupDocs.Watermark لـ .NET. لا تعمل هذه المكتبة القوية على تبسيط مهام وضع العلامات المائية فحسب، بل توفر أيضًا إمكانات قوية لمعالجة المستندات. لمزيد من الوثائق التفصيلية، قم بزيارة[GroupDocs.Watermark لوثائق .NET](https://tutorials.groupdocs.com/Watermark/net/) . إذا واجهت أي مشاكل أو لديك أسئلة،[منتدى الدعم](https://forum.groupdocs.com/c/watermark/19) مكان عظيم لطلب المساعدة.
 ## الأسئلة الشائعة
 ### هل يمكنني إزالة XObjects بتنسيق نص مختلف؟
 نعم، يمكنك تعديل التعليمات البرمجية للتحقق من سمات تنسيق النص المختلفة مثل حجم الخط أو نمط الخط أو اللون.

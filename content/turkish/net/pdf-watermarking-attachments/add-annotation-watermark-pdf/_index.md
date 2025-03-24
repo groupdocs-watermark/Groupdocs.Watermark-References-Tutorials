@@ -3,7 +3,6 @@ title: PDF'ye Ek Açıklama Filigranı Ekleme
 linktitle: PDF'ye Ek Açıklama Filigranı Ekleme
 second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF belgelerine zahmetsizce açıklama filigranlarını nasıl ekleyeceğinizi öğrenin. Belge markalamayı ve güvenliği kolaylıkla geliştirin.
-type: docs
 weight: 10
 url: /tr/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---

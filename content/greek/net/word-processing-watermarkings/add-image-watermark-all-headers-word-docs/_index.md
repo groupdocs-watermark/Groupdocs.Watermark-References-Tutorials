@@ -3,7 +3,6 @@ title: Προσθήκη υδατογραφήματος εικόνας σε όλ�
 linktitle: Προσθήκη υδατογραφήματος εικόνας σε όλες τις κεφαλίδες στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Προσθέστε εύκολα υδατογραφήματα εικόνας σε όλες τις κεφαλίδες στα έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας με λεπτομερή παραδείγματα κώδικα.
-type: docs
 weight: 10
 url: /el/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
 ---

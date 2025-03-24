@@ -3,7 +3,6 @@ title: Načítání dokumentu
 linktitle: Načítání dokumentu
 second_title: GroupDocs.Watermark .NET API
 description: Objevte výukové programy GroupDocs.Watermark for .NET pro načítání dokumentů a vodoznaků, zajišťující zabezpečení dokumentů a branding pomocí podrobných průvodců.
-type: docs
 weight: 22
 url: /cs/net/document-loadings/
 ---

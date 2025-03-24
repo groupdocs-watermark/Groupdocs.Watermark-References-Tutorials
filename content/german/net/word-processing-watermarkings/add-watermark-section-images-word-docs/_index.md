@@ -3,7 +3,6 @@ title: Fügen Sie Wasserzeichen zu Abschnittsbildern in Word-Dokumenten hinzu
 linktitle: Fügen Sie Wasserzeichen zu Abschnittsbildern in Word-Dokumenten hinzu
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit Groupdocs Watermark für .NET Wasserzeichen zu Bildern in Word-Dokumenten hinzufügen. Folgen Sie unserem Leitfaden für sicheren und professionellen Dokumentenschutz.
-type: docs
 weight: 16
 url: /de/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
 ---
@@ -75,14 +74,14 @@ watermarker.Save(outputFileName);
 ```
 ## Abschluss
 Das Hinzufügen von Wasserzeichen zu Bildern in Ihren Word-Dokumenten ist eine wirkungsvolle Möglichkeit, Ihre Inhalte zu schützen. Mit Groupdocs.Watermark für .NET ist dieser Prozess unkompliziert und effizient. Befolgen Sie die in diesem Tutorial beschriebenen Schritte, um sicherzustellen, dass Ihre Dokumente sicher und gut geschützt sind.
- Eine ausführlichere Dokumentation finden Sie unter[Dokumentation](https://reference.groupdocs.com/Watermark/net/) . Wenn Sie Fragen haben oder weitere Hilfe benötigen, schauen Sie sich die an[Hilfeforum](https://forum.groupdocs.com/c/watermark/19).
+ Eine ausführlichere Dokumentation finden Sie unter[Dokumentation](https://tutorials.groupdocs.com/Watermark/net/) . Wenn Sie Fragen haben oder weitere Hilfe benötigen, schauen Sie sich die an[Hilfeforum](https://forum.groupdocs.com/c/watermark/19).
 ## FAQs
 ### Kann ich den Wasserzeichentext anpassen?
 Ja, Sie können den Text, die Schriftart, die Größe, die Ausrichtung und die Drehung des Wasserzeichens an Ihre Bedürfnisse anpassen.
 ### Ist es möglich, mehreren Abschnitten Wasserzeichen hinzuzufügen?
 Ja, Sie können jeden Abschnitt durchlaufen und das Wasserzeichen auf die Bilder in allen Abschnitten anwenden.
 ### Kann ich diese Methode für andere Dokumentformate verwenden?
- Groupdocs. Watermark unterstützt verschiedene Dokumentformate. Überprüf den[Dokumentation](https://reference.groupdocs.com/Watermark/net/) für mehr Details.
+ Groupdocs. Watermark unterstützt verschiedene Dokumentformate. Überprüf den[Dokumentation](https://tutorials.groupdocs.com/Watermark/net/) für mehr Details.
 ### Wie kann ich eine temporäre Lizenz erhalten?
  Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.groupdocs.com/temporary-license/).
 ### Was passiert, wenn bei der Verwendung von Groupdocs.Watermark Probleme auftreten?

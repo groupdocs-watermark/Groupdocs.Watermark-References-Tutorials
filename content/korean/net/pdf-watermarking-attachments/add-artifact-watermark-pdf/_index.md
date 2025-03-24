@@ -3,7 +3,6 @@ title: PDF에 아티팩트 워터마크 추가
 linktitle: PDF에 아티팩트 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 Groupdocs.Watermark를 사용하여 손쉽게 PDF 파일에 아티팩트 워터마크를 추가하는 방법을 알아보세요. 문서를 쉽게 보호하세요.
-type: docs
 weight: 11
 url: /ko/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
 ---

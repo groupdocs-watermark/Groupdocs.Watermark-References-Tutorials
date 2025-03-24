@@ -3,7 +3,6 @@ title: Imposta un'intestazione/piè di pagina diversi per la prima pagina nei do
 linktitle: Imposta un'intestazione/piè di pagina diversi per la prima pagina nei documenti Word
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come impostare intestazioni e piè di pagina diversi sulla prima pagina dei documenti Word utilizzando GroupDocs.Watermark per .NET.
-type: docs
 weight: 36
 url: /it/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
 ---
@@ -59,4 +58,4 @@ Sì, gli utenti possono usufruire di una prova gratuita di GroupDocs.Watermark p
 ### Posso acquistare una licenza temporanea per un utilizzo a breve termine?
  Sì, è possibile acquistare licenze temporanee per GroupDocs per .NET da[Pagina di acquisto della licenza temporanea](https://purchase.groupdocs.com/temporary-license/).
 ### Dove posso trovare la documentazione completa per GroupDocs.Watermark per .NET?
- La documentazione dettagliata per GroupDocs.Watermark per .NET è disponibile su[Pagina di riferimento](https://reference.groupdocs.com/Watermark/net/).
+ La documentazione dettagliata per GroupDocs.Watermark per .NET è disponibile su[Pagina di riferimento](https://tutorials.groupdocs.com/Watermark/net/).

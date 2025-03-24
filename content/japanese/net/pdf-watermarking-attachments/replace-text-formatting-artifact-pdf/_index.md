@@ -3,7 +3,6 @@ title: PDF 内のアーティファクトの書式設定でテキストを置換
 linktitle: PDF 内のアーティファクトの書式設定でテキストを置換
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、PDF ドキュメント内のアーティファクトの書式設定でテキストを置き換える方法を学びます。ドキュメント管理を簡単に改善します。
-type: docs
 weight: 43
 url: /ja/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---

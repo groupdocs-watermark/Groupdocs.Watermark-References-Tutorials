@@ -3,7 +3,6 @@ title: Guardar documento en la secuencia especificada
 linktitle: Guardar documento en la secuencia especificada
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda cómo guardar un documento en una secuencia específica usando GroupDocs.Watermark para .NET con esta guía paso a paso. Perfecto para desarrolladores de todos los niveles.
-type: docs
 weight: 12
 url: /es/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Sí, GroupDocs admite marcas de agua de texto, imágenes e incluso códigos de b
 ### ¿Cómo puedo obtener una licencia temporal?
  Puede obtener una licencia temporal de[este enlace](https://purchase.groupdocs.com/temporary-license/).
 ### ¿Dónde puedo encontrar documentación más detallada?
- Para documentación más detallada, puede visitar[aquí](https://reference.groupdocs.com/Watermark/net/).
+ Para documentación más detallada, puede visitar[aquí](https://tutorials.groupdocs.com/Watermark/net/).

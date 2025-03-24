@@ -3,7 +3,6 @@ title: Remover XObjects com Formatação de Texto Específica em PDF
 linktitle: Remover XObjects com Formatação de Texto Específica em PDF
 second_title: API GroupDocs.Watermark .NET
 description: Remova facilmente XObjects com formatação de texto específica de PDFs usando GroupDocs.Watermark for .NET. Siga nosso guia para uma manipulação perfeita de documentos.
-type: docs
 weight: 36
 url: /pt/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Finalmente, salve o documento PDF modificado no caminho do arquivo de saída esp
 Isso completa o processo de remoção de XObjects com formatação de texto específica de um documento PDF.
 
 ## Conclusão
-Seguindo essas etapas, você pode remover com eficiência XObjects com formatação de texto específica de documentos PDF usando GroupDocs.Watermark for .NET. Esta poderosa biblioteca não apenas simplifica as tarefas de criação de marcas d'água, mas também oferece recursos robustos para manipulação de documentos. Para documentação mais detalhada, visite o[Documentação do GroupDocs.Watermark para .NET](https://reference.groupdocs.com/Watermark/net/) . Se você encontrar algum problema ou tiver dúvidas, o[Fórum de suporte](https://forum.groupdocs.com/c/watermark/19) é um ótimo lugar para procurar ajuda.
+Seguindo essas etapas, você pode remover com eficiência XObjects com formatação de texto específica de documentos PDF usando GroupDocs.Watermark for .NET. Esta poderosa biblioteca não apenas simplifica as tarefas de criação de marcas d'água, mas também oferece recursos robustos para manipulação de documentos. Para documentação mais detalhada, visite o[Documentação do GroupDocs.Watermark para .NET](https://tutorials.groupdocs.com/Watermark/net/) . Se você encontrar algum problema ou tiver dúvidas, o[Fórum de suporte](https://forum.groupdocs.com/c/watermark/19) é um ótimo lugar para procurar ajuda.
 ## Perguntas frequentes
 ### Posso remover XObjects com formatação de texto diferente?
 Sim, você pode modificar o código para verificar diferentes atributos de formatação de texto, como tamanho da fonte, estilo da fonte ou cor.

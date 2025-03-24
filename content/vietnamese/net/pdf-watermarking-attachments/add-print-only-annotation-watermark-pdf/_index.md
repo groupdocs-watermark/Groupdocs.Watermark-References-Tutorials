@@ -3,7 +3,6 @@ title: Thêm hình mờ chú thích chỉ in vào PDF
 linktitle: Thêm hình mờ chú thích chỉ in vào PDF
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ chú thích chỉ in vào tệp PDF bằng GroupDocs.Watermark cho .NET. Tăng cường bảo mật tài liệu và xây dựng thương hiệu một cách dễ dàng.
-type: docs
 weight: 13
 url: /vi/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
 ---

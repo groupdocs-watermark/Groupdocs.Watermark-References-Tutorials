@@ -3,7 +3,6 @@ title: Lưu tài liệu
 linktitle: Lưu tài liệu
 second_title: API GroupDocs.Watermark .NET
 description: Khám phá GroupDocs.Watermark để biết các hướng dẫn .NET về cách lưu tài liệu có hình mờ. Tìm hiểu các phương pháp từng bước để tăng cường quản lý và bảo mật tài liệu.
-type: docs
 weight: 23
 url: /vi/net/document-savings/
 ---

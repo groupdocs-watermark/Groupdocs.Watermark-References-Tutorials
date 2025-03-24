@@ -3,7 +3,6 @@ title: Lägg till vattenstämpel till bilder i PDF
 linktitle: Lägg till vattenstämpel till bilder i PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig att lägga till vattenstämplar till bilder i PDF-dokument med hjälp av GroupDocs.Watermark for .NET med vår detaljerade, steg-för-steg handledning. Säkra dina PDF-filer enkelt.
-type: docs
 weight: 19
 url: /sv/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ Absolut! Du kan gå igenom varje sida i PDF:en och använda vattenstämplar på 
 ### Behöver jag en licens för att använda GroupDocs.Watermark för .NET?
  Ja, en licens krävs. Du kan få en[tillfällig licens](https://purchase.groupdocs.com/temporary-license/) i utvärderingssyfte.
 ### Var kan jag hitta mer dokumentation om GroupDocs.Watermark for .NET?
- Du kan hitta omfattande dokumentation på[GroupDocs.Watermark dokumentationssida](https://reference.groupdocs.com/Watermark/net/).
+ Du kan hitta omfattande dokumentation på[GroupDocs.Watermark dokumentationssida](https://tutorials.groupdocs.com/Watermark/net/).

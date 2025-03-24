@@ -3,7 +3,6 @@ title: Salva il documento nel flusso specificato
 linktitle: Salva il documento nel flusso specificato
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come salvare un documento in un flusso specificato utilizzando GroupDocs.Watermark per .NET con questa guida passo passo. Perfetto per sviluppatori di tutti i livelli.
-type: docs
 weight: 12
 url: /it/net/document-savings/save-document-specified-stream/
 ---
@@ -62,4 +61,4 @@ Sì, GroupDocs supporta filigrane di testo, immagini e persino codici a barre.
 ### Come posso ottenere una licenza temporanea?
  È possibile ottenere una licenza temporanea da[questo link](https://purchase.groupdocs.com/temporary-license/).
 ### Dove posso trovare documentazione più dettagliata?
- Per una documentazione più dettagliata, è possibile visitare[Qui](https://reference.groupdocs.com/Watermark/net/).
+ Per una documentazione più dettagliata, è possibile visitare[Qui](https://tutorials.groupdocs.com/Watermark/net/).

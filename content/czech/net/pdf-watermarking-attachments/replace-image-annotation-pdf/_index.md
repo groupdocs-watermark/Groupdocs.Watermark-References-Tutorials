@@ -3,7 +3,6 @@ title: Nahradit obrázek za konkrétní anotaci v PDF
 linktitle: Nahradit obrázek za konkrétní anotaci v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak nahradit obrázky v konkrétních anotacích PDF pomocí GroupDocs.Watermark for .NET. Tento podrobný průvodce pokrývá vše od načítání dokumentů po ukládání změn.
-type: docs
 weight: 37
 url: /cs/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
 ---
@@ -78,7 +77,7 @@ watermarker.Save(outputFileName);
 ```
 Tento krok zajistí, že se všechny změny uloží a upravený dokument bude připraven k použití.
 ## Závěr
-Gratulujeme! Úspěšně jste nahradili obrázky v konkrétních anotacích v dokumentu PDF pomocí GroupDocs.Watermark for .NET. Tato výkonná knihovna usnadňuje zpracování složitých úloh vodoznaku PDF a rozšiřuje možnosti správy dokumentů. Pro další přizpůsobení a pokročilé funkce prozkoumejte[Dokumentace GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+Gratulujeme! Úspěšně jste nahradili obrázky v konkrétních anotacích v dokumentu PDF pomocí GroupDocs.Watermark for .NET. Tato výkonná knihovna usnadňuje zpracování složitých úloh vodoznaku PDF a rozšiřuje možnosti správy dokumentů. Pro další přizpůsobení a pokročilé funkce prozkoumejte[Dokumentace GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ
 ### Mohu nahradit obrázky v anotacích na všech stránkách PDF?
 Ano, můžete procházet všemi stránkami PDF úpravou smyčky tak, aby procházela anotacemi každé stránky.

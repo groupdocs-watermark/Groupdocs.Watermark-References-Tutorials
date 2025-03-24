@@ -3,7 +3,6 @@ title: Spara dokument till samma fil eller ström
 linktitle: Spara dokument till samma fil eller ström
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar i dokument med Groupdocs.Watermark for .NET. Den här guiden ger instruktioner för att säkerställa dokumentskydd och integritet.
-type: docs
 weight: 10
 url: /sv/net/document-savings/save-document-same-file-stream/
 ---
@@ -52,7 +51,7 @@ Slutligen sparar du dokumentet med vattenstämpeln:
 watermarker.Save();
 ```
 ## Slutsats
-Att lägga till vattenstämplar i dina dokument med Groupdocs Watermark för .NET är enkelt och effektivt. Genom att följa stegen som beskrivs ovan kan du skydda dina dokument och behålla deras integritet utan ansträngning. För mer information kan du hänvisa till[dokumentation](https://reference.groupdocs.com/Watermark/net/).
+Att lägga till vattenstämplar i dina dokument med Groupdocs Watermark för .NET är enkelt och effektivt. Genom att följa stegen som beskrivs ovan kan du skydda dina dokument och behålla deras integritet utan ansträngning. För mer information kan du hänvisa till[dokumentation](https://tutorials.groupdocs.com/Watermark/net/).
 ## FAQ's
 ### Kan jag använda en bild som vattenstämpel istället för text?
 Ja, Groupdocs.Watermark låter dig använda bilder, former och text som vattenstämplar.

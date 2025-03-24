@@ -3,7 +3,6 @@ title: ลบไฟล์แนบออกจาก PDF
 linktitle: ลบไฟล์แนบออกจาก PDF
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีลบไฟล์แนบออกจากเอกสาร PDF อย่างง่ายดายโดยใช้ GroupDocs.Watermark สำหรับ .NET เพิ่มประสิทธิภาพการจัดการเอกสารของคุณ
-type: docs
 weight: 33
 url: /th/net/pdf-watermarking-attachments/remove-attachment-pdf/
 ---

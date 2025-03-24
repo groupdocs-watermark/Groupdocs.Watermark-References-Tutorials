@@ -3,7 +3,6 @@ title: Tải tài liệu từ luồng
 linktitle: Tải tài liệu từ luồng
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ vào tài liệu bằng GroupDocs.Watermark cho .NET với hướng dẫn này. Hoàn hảo cho các nhà phát triển muốn tăng cường bảo mật tài liệu.
-type: docs
 weight: 11
 url: /vi/net/document-loadings/load-document-from-stream/
 ---
@@ -59,7 +58,7 @@ watermarker.Save(outputFileName);
  Mã này lưu tài liệu với hình mờ mới được thêm vào`outputFileName` đường dẫn bạn đã xác định trước đó.
 
 ## Phần kết luận
-Chúc mừng! Bạn đã thêm thành công hình mờ vào tài liệu của mình bằng GroupDocs.Watermark cho .NET. Thư viện này giúp việc quản lý hình mờ trên nhiều định dạng tài liệu trở nên vô cùng dễ dàng. Cho dù bạn cần thêm văn bản, hình ảnh hay các loại hình mờ khác, GroupDocs.Watermark đều có những công cụ bạn cần. Đừng quên kiểm tra[tài liệu](https://reference.groupdocs.com/Watermark/net/) để biết thêm các tính năng nâng cao và tùy chọn tùy chỉnh.
+Chúc mừng! Bạn đã thêm thành công hình mờ vào tài liệu của mình bằng GroupDocs.Watermark cho .NET. Thư viện này giúp việc quản lý hình mờ trên nhiều định dạng tài liệu trở nên vô cùng dễ dàng. Cho dù bạn cần thêm văn bản, hình ảnh hay các loại hình mờ khác, GroupDocs.Watermark đều có những công cụ bạn cần. Đừng quên kiểm tra[tài liệu](https://tutorials.groupdocs.com/Watermark/net/) để biết thêm các tính năng nâng cao và tùy chọn tùy chỉnh.
 ## Câu hỏi thường gặp
 ### Tôi có thể thêm những loại hình mờ nào bằng GroupDocs.Watermark cho .NET?
 Bạn có thể thêm hình mờ văn bản, hình mờ hình ảnh và thậm chí cả các hình dạng và biểu tượng phức tạp. Thư viện hỗ trợ nhiều tùy chọn tùy chỉnh.

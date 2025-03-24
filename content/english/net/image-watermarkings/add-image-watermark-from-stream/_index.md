@@ -3,7 +3,6 @@ title: Add Image Watermark from Stream
 linktitle: Add Image Watermark from Stream
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to add image watermarks to documents using GroupDocs.Watermark for .NET. Follow our step-by-step guide for seamless watermark integration.
-type: docs
 weight: 12
 url: /net/image-watermarkings/add-image-watermark-from-stream/
 ---

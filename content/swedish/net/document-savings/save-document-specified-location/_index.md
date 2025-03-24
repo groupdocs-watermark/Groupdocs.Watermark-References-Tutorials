@@ -3,7 +3,6 @@ title: Spara dokument till angiven plats
 linktitle: Spara dokument till angiven plats
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du enkelt lägger till vattenstämplar i dina dokument med GroupDocs.Watermark for .NET med denna steg-för-steg-guide. Förbättra dokumentsäkerheten.
-type: docs
 weight: 11
 url: /sv/net/document-savings/save-document-specified-location/
 ---

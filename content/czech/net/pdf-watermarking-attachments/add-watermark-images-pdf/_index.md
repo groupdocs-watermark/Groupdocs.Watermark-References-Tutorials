@@ -3,7 +3,6 @@ title: Přidat vodoznak do obrázků v PDF
 linktitle: Přidat vodoznak do obrázků v PDF
 second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky do obrázků v dokumentech PDF pomocí GroupDocs.Watermark for .NET s naším podrobným, podrobným návodem. Zabezpečte své PDF snadno.
-type: docs
 weight: 19
 url: /cs/net/pdf-watermarking-attachments/add-watermark-images-pdf/
 ---
@@ -85,4 +84,4 @@ Absolutně! Můžete procházet každou stránku v PDF a aplikovat vodoznaky na 
 ### Potřebuji licenci k používání GroupDocs.Watermark pro .NET?
  Ano, je vyžadována licence. Můžete získat a[dočasná licence](https://purchase.groupdocs.com/temporary-license/) pro účely hodnocení.
 ### Kde najdu další dokumentaci ke GroupDocs.Watermark for .NET?
- Komplexní dokumentaci naleznete na[Stránka dokumentace GroupDocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+ Komplexní dokumentaci naleznete na[Stránka dokumentace GroupDocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).

@@ -3,7 +3,6 @@ title: Ontvang PDF-afmetingen
 linktitle: Ontvang PDF-afmetingen
 second_title: GroupDocs.Watermark .NET API
 description: Bescherm uw documenten eenvoudig met Groupdocs.Watermark voor .NET. Voeg moeiteloos watermerken, stempels en annotaties toe.
-type: docs
 weight: 26
 url: /nl/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---

@@ -3,7 +3,6 @@ title: Προσθήκη κλειδωμένου υδατογραφήματος σ
 linktitle: Προσθήκη κλειδωμένου υδατογραφήματος σε όλες τις σελίδες στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Ασφαλίστε τα έγγραφά σας προσθέτοντας κλειδωμένα υδατογραφήματα χρησιμοποιώντας το Groupdocs.Watermark για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για εύκολη εφαρμογή.
-type: docs
 weight: 11
 url: /el/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Ajouter un filigrane verrouillé à toutes les pages dans Word Docs
 linktitle: Ajouter un filigrane verrouillé à toutes les pages dans Word Docs
 second_title: API GroupDocs.Watermark .NET
 description: Sécurisez vos documents en ajoutant des filigranes verrouillés à l'aide de Groupdocs.Watermark pour .NET. Suivez notre guide étape par étape pour une mise en œuvre facile.
-type: docs
 weight: 11
 url: /fr/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
 ---

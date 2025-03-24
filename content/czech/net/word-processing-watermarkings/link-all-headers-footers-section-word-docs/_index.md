@@ -3,7 +3,6 @@ title: Propojit všechna záhlaví/zápatí v oddílech v dokumentech Word
 linktitle: Propojit všechna záhlaví/zápatí v oddílech v dokumentech Word
 second_title: GroupDocs.Watermark .NET API
 description: Bez námahy propojte záhlaví a zápatí v dokumentech aplikace Word pomocí GroupDocs.Watermark pro .NET. Snadno zajistěte konzistenci a profesionalitu.
-type: docs
 weight: 25
 url: /cs/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
 ---

@@ -3,7 +3,6 @@ title: 在 Word 文档中删除具有特定文本格式的形状
 linktitle: 在 Word 文档中删除具有特定文本格式的形状
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 删除 Word 文档中具有特定文本格式的形状。请遵循我们的指南来有效地处理水印。
-type: docs
 weight: 31
 url: /zh/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
 ---

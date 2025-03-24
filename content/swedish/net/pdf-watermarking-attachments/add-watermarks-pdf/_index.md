@@ -3,7 +3,6 @@ title: Lägg till vattenstämplar till PDF
 linktitle: Lägg till vattenstämplar till PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till text- och bildvattenstämplar i dina PDF-filer med hjälp av GroupDocs.Watermark for .NET med vår omfattande steg-för-steg-guide.
-type: docs
 weight: 14
 url: /sv/net/pdf-watermarking-attachments/add-watermarks-pdf/
 ---

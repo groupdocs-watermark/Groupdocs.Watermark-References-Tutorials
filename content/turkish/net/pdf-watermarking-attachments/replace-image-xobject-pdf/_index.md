@@ -3,7 +3,6 @@ title: PDF'deki Belirli XObject İçin Görüntüyü Değiştir
 linktitle: PDF'deki Belirli XObject İçin Görüntüyü Değiştir
 second_title: GroupDocs.Watermark .NET API'si
 description: Bu adım adım kılavuzla GroupDocs.Watermark for .NET'i kullanarak PDF'lerdeki görüntüleri kolayca değiştirin. PDF içeriğini verimli bir şekilde yönetmek için mükemmeldir.
-type: docs
 weight: 39
 url: /tr/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
 ---
@@ -76,6 +75,6 @@ Kesinlikle! GroupDocs.Watermark, Word, Excel ve PowerPoint dahil olmak üzere ç
 ### GroupDocs.Watermark'ın ücretsiz deneme sürümünü nasıl edinebilirim?
  Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.groupdocs.com/).
 ### Daha gelişmiş özelliklere ihtiyacım olursa ne olur?
- Kontrol edin[dokümantasyon](https://reference.groupdocs.com/Watermark/net/) gelişmiş özellikler ve kişiselleştirme seçenekleri için.
+ Kontrol edin[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/) gelişmiş özellikler ve kişiselleştirme seçenekleri için.
 ### GroupDocs.Watermark için nereden destek alabilirim?
  Ziyaret edin[destek Forumu](https://forum.groupdocs.com/c/watermark/19) yardım için.

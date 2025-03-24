@@ -3,7 +3,6 @@ title: PDF の注釈画像に透かしを追加する
 linktitle: PDF の注釈画像に透かしを追加する
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs.Watermark for .NET を使用して注釈画像にウォーターマークを追加し、PDF ドキュメントを保護する方法を学びます。
-type: docs
 weight: 17
 url: /ja/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
 ---

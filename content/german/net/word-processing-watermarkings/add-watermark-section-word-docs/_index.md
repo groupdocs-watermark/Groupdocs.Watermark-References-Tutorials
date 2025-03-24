@@ -3,7 +3,6 @@ title: Fügen Sie einem Abschnitt in Word-Dokumenten ein Wasserzeichen hinzu
 linktitle: Fügen Sie einem Abschnitt in Word-Dokumenten ein Wasserzeichen hinzu
 second_title: GroupDocs.Watermark .NET-API
 description: Fügen Sie mit GroupDocs.Watermark für .NET ganz einfach Wasserzeichen zu Word-Dokumenten hinzu. Schützen Sie Ihre Inhalte mit dieser einfachen Anleitung.
-type: docs
 weight: 15
 url: /de/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

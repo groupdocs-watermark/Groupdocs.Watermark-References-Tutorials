@@ -3,7 +3,6 @@ title: إزالة التعليقات التوضيحية بتنسيق نص محد
 linktitle: إزالة التعليقات التوضيحية بتنسيق نص محدد في PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة التعليقات التوضيحية بتنسيق نصي محدد في مستندات PDF باستخدام Groupdocs لـ .NET.
-type: docs
 weight: 30
 url: /ar/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
 ---
@@ -72,7 +71,7 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### هل هناك نسخة تجريبية مجانية متاحة لـ Groupdocs.Watermark لـ .NET؟
  نعم، يمكنك الوصول إلى النسخة التجريبية المجانية من Groupdocs.Watermark لـ .NET من[هنا](https://releases.groupdocs.com/).
 ### أين يمكنني العثور على وثائق Groupdocs.Watermark لـ .NET؟
- يمكنك العثور على وثائق مفصلة ومراجع API[هنا](https://reference.groupdocs.com/Watermark/net/).
+ يمكنك العثور على وثائق مفصلة ومراجع API[هنا](https://tutorials.groupdocs.com/Watermark/net/).
 ### كيف يمكنني الحصول على الدعم لأية مشكلات أو استفسارات تتعلق بـ Groupdocs.Watermark؟
  يمكنك نشر أسئلتك أو مشكلاتك في منتدى Groupdocs.Watermark[هنا](https://forum.groupdocs.com/c/watermark/19).
 ### هل يمكنني شراء ترخيص مؤقت لـ Groupdocs.Watermark لـ .NET؟

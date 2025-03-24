@@ -3,7 +3,6 @@ title: استخراج معلومات قطعة أثرية من PDF
 linktitle: استخراج معلومات قطعة أثرية من PDF
 second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية استخراج المعلومات الاصطناعية من ملفات PDF باستخدام GroupDocs.Watermark لـ .NET. تعزيز قدرات معالجة المستندات الخاصة بك.
-type: docs
 weight: 24
 url: /ar/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
 ---

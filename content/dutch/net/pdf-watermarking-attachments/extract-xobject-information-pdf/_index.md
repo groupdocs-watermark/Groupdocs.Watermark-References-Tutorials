@@ -3,7 +3,6 @@ title: Extraheer XObject-informatie uit PDF
 linktitle: Extraheer XObject-informatie uit PDF
 second_title: GroupDocs.Watermark .NET API
 description: Ontgrendel de kracht van documentwatermerken met GroupDocs.Watermark voor .NET. Beheer naadloos watermerken in PDF's, Word-documenten en afbeeldingen.
-type: docs
 weight: 25
 url: /nl/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---

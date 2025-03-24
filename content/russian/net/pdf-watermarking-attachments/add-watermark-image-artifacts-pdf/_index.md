@@ -3,7 +3,6 @@ title: Добавить водяной знак к артефактам изоб
 linktitle: Добавить водяной знак к артефактам изображения в PDF
 second_title: GroupDocs.Watermark .NET API
 description: Защитите свои PDF-файлы с помощью персонализированных водяных знаков с помощью GroupDocs.Watermark для .NET. Легко добавляйте текстовые или графические водяные знаки к изображениям в PDF-документах.
-type: docs
 weight: 18
 url: /ru/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
 ---

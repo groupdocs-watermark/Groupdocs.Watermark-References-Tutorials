@@ -3,7 +3,6 @@ title: เลิกป้องกันเอกสารใน Word Docs
 linktitle: เลิกป้องกันเอกสารใน Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีป้องกันเอกสาร Word อย่างง่ายดายโดยใช้ GroupDocs.Watermark สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเรา
-type: docs
 weight: 38
 url: /th/net/word-processing-watermarkings/unprotect-document-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Thay thế văn bản bằng định dạng cho XObject trong PDF
 linktitle: Thay thế văn bản bằng định dạng cho XObject trong PDF
 second_title: API GroupDocs.Watermark .NET
 description: Nâng cao khả năng thao tác tài liệu .NET của bạn với GroupDocs cho .NET. Tìm hiểu cách thay thế văn bản bằng định dạng trong tệp PDF một cách dễ dàng.
-type: docs
 weight: 45
 url: /vi/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
 ---

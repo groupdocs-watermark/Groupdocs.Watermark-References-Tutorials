@@ -3,7 +3,6 @@ title: Documentvoorbeeld genereren
 linktitle: Documentvoorbeeld genereren
 second_title: GroupDocs.Watermark .NET API
 description: Leer in deze handleiding hoe u documentvoorbeelden kunt genereren met GroupDocs.Watermark voor .NET. Verbeter moeiteloos uw documentbeveiliging en -beheer.
-type: docs
 weight: 10
 url: /nl/net/document-manipulation/generate-document-preview/
 ---
@@ -87,10 +86,10 @@ watermarker.GeneratePreview(previewOptions);
 ```
 ## Conclusie
 Het genereren van documentvoorbeelden met GroupDocs.Watermark voor .NET is een eenvoudig proces dat met slechts een paar regels code kan worden uitgevoerd. Door de stappen in deze handleiding te volgen, kunt u eenvoudig uw project instellen, de benodigde opties configureren en voorbeelden voor uw documenten genereren. Deze krachtige bibliotheek vereenvoudigt niet alleen het watermerkproces, maar biedt ook robuuste functies voor het beheren en manipuleren van watermerken.
- Als u vragen heeft of verdere hulp nodig heeft, aarzel dan niet om een bezoek te brengen aan de[GroupDocs.Watermark-ondersteuningsforum](https://forum.groupdocs.com/c/watermark/19) of raadpleeg de[documentatie](https://reference.groupdocs.com/Watermark/net/).
+ Als u vragen heeft of verdere hulp nodig heeft, aarzel dan niet om een bezoek te brengen aan de[GroupDocs.Watermark-ondersteuningsforum](https://forum.groupdocs.com/c/watermark/19) of raadpleeg de[documentatie](https://tutorials.groupdocs.com/Watermark/net/).
 ## Veelgestelde vragen
 ### Welke bestandsformaten worden ondersteund door GroupDocs.Watermark voor .NET?
- GroupDocs.Watermark voor .NET ondersteunt een breed scala aan bestandsindelingen, waaronder PDF, DOCX, PPTX, XLSX en nog veel meer. Voor een volledige lijst met ondersteunde formaten raadpleegt u de[documentatie](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark voor .NET ondersteunt een breed scala aan bestandsindelingen, waaronder PDF, DOCX, PPTX, XLSX en nog veel meer. Voor een volledige lijst met ondersteunde formaten raadpleegt u de[documentatie](https://tutorials.groupdocs.com/Watermark/net/).
 ### Kan ik het uiterlijk van watermerken aanpassen?
 Ja, met GroupDocs.Watermark kunt u het uiterlijk van watermerken volledig aanpassen, inclusief tekst-, afbeeldings- en vormwatermerken. U kunt eigenschappen zoals lettertype, kleur, grootte en transparantie aanpassen.
 ### Is er een proefversie beschikbaar?

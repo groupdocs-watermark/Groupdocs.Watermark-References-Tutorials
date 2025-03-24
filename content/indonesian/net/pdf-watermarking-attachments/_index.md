@@ -3,7 +3,6 @@ title: Tanda Air dan Lampiran PDF
 linktitle: Tanda Air dan Lampiran PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Jelajahi GroupDocs.Watermark untuk tutorial .NET tentang watermark dan lampiran PDF. Pelajari metode langkah demi langkah untuk meningkatkan keamanan dan branding PDF Anda.
-type: docs
 weight: 25
 url: /id/net/pdf-watermarking-attachments/
 ---

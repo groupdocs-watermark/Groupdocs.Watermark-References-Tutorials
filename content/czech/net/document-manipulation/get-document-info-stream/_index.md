@@ -3,7 +3,6 @@ title: Získejte informace o dokumentu ze streamu
 linktitle: Získejte informace o dokumentu ze streamu
 second_title: GroupDocs.Watermark .NET API
 description: V tomto podrobném průvodci se dozvíte, jak získat informace o dokumentu ze streamu pomocí GroupDocs.Watermark for .NET. Vaše možnosti správy dokumentů bez námahy.
-type: docs
 weight: 12
 url: /cs/net/document-manipulation/get-document-info-stream/
 ---
@@ -46,10 +45,10 @@ Console.WriteLine("Document size: {0} bytes", info.Size);
 ```
 
 ## Závěr
- Získávání informací o dokumentu ze streamu pomocí GroupDocs.Watermark for .NET je jednoduchý proces, když je rozdělen do zvládnutelných kroků. Podle této příručky můžete efektivně integrovat tuto funkci do svých aplikací a zajistit tak lepší správu a integritu dokumentů. Neváhejte prozkoumat[dokumentace](https://reference.groupdocs.com/Watermark/net/) pro pokročilejší funkce a možnosti.
+ Získávání informací o dokumentu ze streamu pomocí GroupDocs.Watermark for .NET je jednoduchý proces, když je rozdělen do zvládnutelných kroků. Podle této příručky můžete efektivně integrovat tuto funkci do svých aplikací a zajistit tak lepší správu a integritu dokumentů. Neváhejte prozkoumat[dokumentace](https://tutorials.groupdocs.com/Watermark/net/) pro pokročilejší funkce a možnosti.
 ## FAQ
 ### Jaké formáty souborů podporuje GroupDocs.Watermark?
- GroupDocs.Watermark podporuje širokou škálu formátů souborů včetně PDF, Word, Excel, PowerPoint a dalších. Celý seznam najdete v[dokumentace](https://reference.groupdocs.com/Watermark/net/).
+ GroupDocs.Watermark podporuje širokou škálu formátů souborů včetně PDF, Word, Excel, PowerPoint a dalších. Celý seznam najdete v[dokumentace](https://tutorials.groupdocs.com/Watermark/net/).
 ### Mohu GroupDocs.Watermark před nákupem vyzkoušet?
  Ano, můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.groupdocs.com/) a požádat o dočasnou licenci od[tady](https://purchase.groupdocs.com/temporary-license/).
 ### Jak nainstaluji GroupDocs.Watermark for .NET?

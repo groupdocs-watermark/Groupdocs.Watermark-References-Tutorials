@@ -3,7 +3,6 @@ title: Add Watermarks to Specific Pages in PDF
 linktitle: Add Watermarks to Specific Pages in PDF
 second_title: GroupDocs.Watermark .NET API
 description: Learn to add text and image watermarks to specific pages in PDFs using Groupdocs.Watermark for .NET. Follow our detailed guide to secure your documents.
-type: docs
 weight: 15
 url: /net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
 ---
@@ -100,4 +99,4 @@ Absolutely. Groupdocs.Watermark for .NET provides options to add watermarks to s
 ### How do I get a free trial of Groupdocs.Watermark?
 You can download a free trial from the [Groupdocs website](https://releases.groupdocs.com/).
 ### Where can I find more detailed documentation?
-For more detailed information, you can refer to the [documentation](https://reference.groupdocs.com/Watermark/net/).
+For more detailed information, you can refer to the [documentation](https://tutorials.groupdocs.com/Watermark/net/).

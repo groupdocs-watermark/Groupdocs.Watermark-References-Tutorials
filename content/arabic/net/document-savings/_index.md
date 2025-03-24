@@ -3,7 +3,6 @@ title: حفظ المستندات
 linktitle: حفظ المستندات
 second_title: GroupDocs.Watermark .NET API
 description: استكشف GroupDocs.Watermark للحصول على دروس .NET حول حفظ المستندات التي تحتوي على علامات مائية. تعلم طرقًا خطوة بخطوة لتحسين أمان المستندات وإدارتها.
-type: docs
 weight: 23
 url: /ar/net/document-savings/
 ---

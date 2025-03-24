@@ -3,7 +3,6 @@ title: Find Watermark in Header/Footer in Word Docs
 linktitle: Find Watermark in Header/Footer in Word Docs
 second_title: GroupDocs.Watermark .NET API
 description: Learn how to efficiently find and remove watermarks from Word documents using GroupDocs.Watermark for .NET, ensuring document integrity and professionalism.
-type: docs
 weight: 22
 url: /net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---

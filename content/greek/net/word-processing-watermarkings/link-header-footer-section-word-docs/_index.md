@@ -3,7 +3,6 @@ title: Σύνδεση Κεφαλίδα/Υποσέλιδο στην Ενότητ�
 linktitle: Σύνδεση Κεφαλίδα/Υποσέλιδο στην Ενότητα στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να συνδέετε αποτελεσματικά κεφαλίδες και υποσέλιδα σε ενότητες εγγράφων του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Διαχείριση και ασφάλεια εγγράφων.
-type: docs
 weight: 26
 url: /el/net/word-processing-watermarkings/link-header-footer-section-word-docs/
 ---
@@ -60,4 +59,4 @@ using (Watermarker watermarker = new Watermarker(documentPath, loadOptions))
 ### Υπάρχουν προσωρινές άδειες χρήσης για το GroupDocs.Watermark για .NET;
  Ναι, οι προσωρινές άδειες μπορούν να ληφθούν από το[Σελίδα αγοράς GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### Το GroupDocs.Watermark για .NET προσφέρει τεκμηρίωση για προγραμματιστές;
- Ναι, υπάρχει πλήρης τεκμηρίωση[εδώ](https://reference.groupdocs.com/Watermark/net/).
+ Ναι, υπάρχει πλήρης τεκμηρίωση[εδώ](https://tutorials.groupdocs.com/Watermark/net/).

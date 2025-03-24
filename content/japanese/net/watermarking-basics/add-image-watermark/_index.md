@@ -3,7 +3,6 @@ title: 画像の透かしを追加する
 linktitle: 画像の透かしを追加する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用すると、画像のウォーターマークをドキュメントに簡単に追加できます。知的財産を簡単に保護します。
-type: docs
 weight: 10
 url: /ja/net/watermarking-basics/add-image-watermark/
 ---

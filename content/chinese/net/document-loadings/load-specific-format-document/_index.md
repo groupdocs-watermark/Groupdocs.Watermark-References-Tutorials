@@ -3,7 +3,6 @@ title: 加载特定格式文档
 linktitle: 加载特定格式文档
 second_title: GroupDocs.Watermark .NET API
 description: 通过此分步指南了解如何使用 Groupdocs for .NET 加载文档并为其添加水印。轻松保护您的内容并为其打造品牌。
-type: docs
 weight: 12
 url: /zh/net/document-loadings/load-specific-format-document/
 ---
@@ -67,7 +66,7 @@ watermarker.Save(outputFileName);
 ```
 
 ## 结论
-对文档添加水印是保护内容的关键步骤，Groupdocs.Watermark for .NET 使此过程简单而高效。通过遵循本指南，您可以轻松加载水印并将其应用到文档中，确保其安全性和正确的品牌标识。有关更多详细信息和高级选项，请参阅[.NET 文档的 Groupdocs.Watermark](https://reference.groupdocs.com/Watermark/net/).
+对文档添加水印是保护内容的关键步骤，Groupdocs.Watermark for .NET 使此过程简单而高效。通过遵循本指南，您可以轻松加载水印并将其应用到文档中，确保其安全性和正确的品牌标识。有关更多详细信息和高级选项，请参阅[.NET 文档的 Groupdocs.Watermark](https://tutorials.groupdocs.com/Watermark/net/).
 ## 常见问题解答
 ### 我可以对不同的文档格式使用此方法吗？
 是的，Groupdocs 支持各种文档格式。您需要调整`LoadOptions`因此。

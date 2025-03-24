@@ -3,7 +3,6 @@ title: 光栅化 PDF 文档
 linktitle: 光栅化 PDF 文档
 second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 光栅化 PDF 文档。轻松增强文档安全性和视觉吸引力。
-type: docs
 weight: 27
 url: /zh/net/pdf-watermarking-attachments/rasterize-pdf-document/
 ---

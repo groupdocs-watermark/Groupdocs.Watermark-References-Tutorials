@@ -3,7 +3,6 @@ title: Extrahera XObject Information från PDF
 linktitle: Extrahera XObject Information från PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lås upp kraften i dokumentvattenmärkning med GroupDocs.Watermark för .NET. Hantera vattenstämplar sömlöst i PDF-filer, Word-dokument och bilder.
-type: docs
 weight: 25
 url: /sv/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---

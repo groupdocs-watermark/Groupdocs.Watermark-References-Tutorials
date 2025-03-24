@@ -3,7 +3,6 @@ title: Załaduj dokument z dysku lokalnego
 linktitle: Załaduj dokument z dysku lokalnego
 second_title: GroupDocs.Watermark API .NET
 description: Chroń swoje dokumenty i zarządzaj nimi za pomocą Groupdocs dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem, aby bezproblemowo dodawać znaki wodne.
-type: docs
 weight: 10
 url: /pl/net/document-loadings/load-document-from-local-disk/
 ---
@@ -61,7 +60,7 @@ watermarker.Save(outputFileName);
 
 ## Wniosek
 Dodawanie znaków wodnych do dokumentów przy użyciu programu Groupdocs dla platformy .NET jest proste i wydajne. Ten przewodnik przeprowadził Cię przez cały proces, od konfiguracji środowiska po zapisanie dokumentu ze znakiem wodnym. Dzięki temu potężnemu narzędziu możesz mieć pewność, że Twoje dokumenty będą chronione, a Twoja własność intelektualna będzie bezpieczna. 
- Aby uzyskać więcej informacji, sprawdź[dokumentacja](https://reference.groupdocs.com/Watermark/net/) , a jeśli napotkasz jakiekolwiek problemy,[forum wsparcia](https://forum.groupdocs.com/c/watermark/19) to doskonałe miejsce na pomoc. 
+ Aby uzyskać więcej informacji, sprawdź[dokumentacja](https://tutorials.groupdocs.com/Watermark/net/) , a jeśli napotkasz jakiekolwiek problemy,[forum wsparcia](https://forum.groupdocs.com/c/watermark/19) to doskonałe miejsce na pomoc. 
 ## Często zadawane pytania
 ### Czy mogę używać niestandardowych czcionek w znakach wodnych?
 Tak, Groupdocs obsługuje niestandardowe czcionki. Możesz określić dowolną czcionkę zainstalowaną w systemie.

@@ -3,7 +3,6 @@ title: Extrahera alla bilagor från PDF
 linktitle: Extrahera alla bilagor från PDF
 second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du extraherar alla bilagor från en PDF med Groupdocs.Watermark for .NET. Följ vår steg-för-steg-guide för en sömlös extraktionsprocess.
-type: docs
 weight: 22
 url: /sv/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---

@@ -3,7 +3,6 @@ title: Zárolt vízjel hozzáadása adott oldalakhoz a Word Dokumentumokban
 linktitle: Zárolt vízjel hozzáadása adott oldalakhoz a Word Dokumentumokban
 second_title: GroupDocs.Watermark .NET API
 description: Az egyszerű, lépésenkénti útmutatónk segítségével megtudhatja, hogyan adhat hozzá zárolt vízjelet a Word dokumentumok adott oldalaihoz a GroupDocs.Watermark for .NET segítségével.
-type: docs
 weight: 12
 url: /hu/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## Következtetés
 Gratulálunk! Sikeresen hozzáadott egy zárolt vízjelet egy Word-dokumentum bizonyos oldalaihoz a GroupDocs.Watermark for .NET segítségével. Ez az oktatóanyag az összes lényeges lépést lefedte a dokumentum betöltésétől a vízjeles fájl mentéséig. Az alábbi lépések követésével gondoskodhat arról, hogy dokumentumai biztonságosan vízjellel legyenek ellátva, így megvédheti tartalmát a jogosulatlan szerkesztéstől és használattól.
- További információkért tekintse meg a[GroupDocs.Watermark dokumentáció](https://reference.groupdocs.com/Watermark/net/) . Ha bármilyen kérdése van, vagy további segítségre van szüksége, keresse fel a[támogatói fórum](https://forum.groupdocs.com/c/watermark/19).
+ További információkért tekintse meg a[GroupDocs.Watermark dokumentáció](https://tutorials.groupdocs.com/Watermark/net/) . Ha bármilyen kérdése van, vagy további segítségre van szüksége, keresse fel a[támogatói fórum](https://forum.groupdocs.com/c/watermark/19).
 ## GYIK
 ### Mi az a GroupDocs.Watermark for .NET?
 GroupDocs.Watermark for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy vízjeleket adjanak különféle típusú dokumentumokhoz, beleértve a Word-t, PDF-t, Excelt és egyebeket.

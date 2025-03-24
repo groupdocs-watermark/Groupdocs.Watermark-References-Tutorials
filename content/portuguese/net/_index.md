@@ -1,7 +1,6 @@
 ---
 title: Tutoriais e exemplos de GroupDocs.Watermark para .NET
 linktitle: Tutoriais do GroupDocs.Watermark para .NET
-type: docs
 weight: 10
 url: /pt/net/
 description: Explore tutoriais abrangentes do GroupDocs.Watermark para .NET. Aprenda a adicionar, gerenciar e proteger marcas d'água em vários formatos de documentos com guias passo a passo.

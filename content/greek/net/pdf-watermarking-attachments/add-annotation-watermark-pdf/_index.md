@@ -3,7 +3,6 @@ title: Προσθήκη υδατογραφήματος σχολιασμού σε
 linktitle: Προσθήκη υδατογραφήματος σχολιασμού σε PDF
 second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα σχολιασμού σε έγγραφα PDF χωρίς κόπο χρησιμοποιώντας το GroupDocs.Watermark για .NET. Βελτιώστε την επωνυμία και την ασφάλεια των εγγράφων με ευκολία.
-type: docs
 weight: 10
 url: /el/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
 ---

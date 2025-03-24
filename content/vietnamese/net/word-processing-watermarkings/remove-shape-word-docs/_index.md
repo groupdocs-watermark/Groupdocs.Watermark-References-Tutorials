@@ -3,7 +3,6 @@ title: Xóa hình dạng trong tài liệu Word
 linktitle: Xóa hình dạng trong tài liệu Word
 second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách xóa hình khỏi tài liệu Word bằng GroupDocs.Watermark cho .NET. Thao tác tài liệu dễ dàng, hiệu quả và mạnh mẽ.
-type: docs
 weight: 30
 url: /vi/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
@@ -72,6 +71,6 @@ Có, GroupDocs.Watermark cho .NET hỗ trợ nhiều định dạng tài liệu,
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Watermark cho .NET?
  Bạn có thể lấy giấy phép tạm thời cho GroupDocs.Watermark cho .NET từ[trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/).
 ### Tôi có thể tìm tài liệu và hỗ trợ cho GroupDocs.Watermark cho .NET ở đâu?
- Tài liệu và tài nguyên hỗ trợ cho GroupDocs.Watermark cho .NET có sẵn trên[diễn đàn](https://forum.groupdocs.com/c/watermark/19) Và[Trang tham khảo](https://reference.groupdocs.com/Watermark/net/).
+ Tài liệu và tài nguyên hỗ trợ cho GroupDocs.Watermark cho .NET có sẵn trên[diễn đàn](https://forum.groupdocs.com/c/watermark/19) Và[Trang tham khảo](https://tutorials.groupdocs.com/Watermark/net/).
 ### Phiên bản .NET nào tương thích với GroupDocs.Watermark?
 GroupDocs.Watermark cho .NET tương thích với nhiều phiên bản .NET khác nhau, bao gồm .NET Framework và .NET Core.

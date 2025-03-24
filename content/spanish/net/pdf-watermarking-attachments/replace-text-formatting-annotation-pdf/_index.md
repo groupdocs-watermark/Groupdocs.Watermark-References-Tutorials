@@ -3,7 +3,6 @@ title: Reemplazar texto con formato para anotaciones en PDF
 linktitle: Reemplazar texto con formato para anotaciones en PDF
 second_title: API GroupDocs.Watermark .NET
 description: Mejore la seguridad de los documentos con GroupDocs Watermark para .NET. Aprenda a reemplazar texto con formato para anotaciones en archivos PDF sin esfuerzo.
-type: docs
 weight: 41
 url: /es/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---

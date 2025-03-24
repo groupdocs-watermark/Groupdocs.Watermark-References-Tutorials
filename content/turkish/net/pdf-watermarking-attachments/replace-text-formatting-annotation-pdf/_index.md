@@ -3,7 +3,6 @@ title: PDF'de Ek Açıklama İçin Metni Biçimlendirmeyle Değiştirin
 linktitle: PDF'de Ek Açıklama İçin Metni Biçimlendirmeyle Değiştirin
 second_title: GroupDocs.Watermark .NET API'si
 description: .NET için Watermark ile belge güvenliğini geliştirin. PDF dosyalarındaki ek açıklamalara yönelik metni zahmetsizce biçimlendirmeyle nasıl değiştireceğinizi öğrenin.
-type: docs
 weight: 41
 url: /tr/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
 ---

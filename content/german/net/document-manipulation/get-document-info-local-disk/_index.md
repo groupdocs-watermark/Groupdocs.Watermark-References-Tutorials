@@ -3,7 +3,6 @@ title: Holen Sie sich Dokumentinformationen von der lokalen Festplatte
 linktitle: Holen Sie sich Dokumentinformationen von der lokalen Festplatte
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit GroupDocs Watermark für .NET Wasserzeichen in Dokumenten hinzufügen, entfernen und extrahieren.
-type: docs
 weight: 11
 url: /de/net/document-manipulation/get-document-info-local-disk/
 ---
@@ -11,7 +10,7 @@ url: /de/net/document-manipulation/get-document-info-local-disk/
 Willkommen beim ultimativen Leitfaden zur Verwendung von GroupDocs.Watermark für .NET! Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst anfangen, dieser Artikel führt Sie durch die Grundlagen des Wasserzeichens Ihrer Dokumente mit diesem leistungsstarken Tool. Am Ende sind Sie ein Profi im Einbetten von Wasserzeichen in Ihre Dokumente und stellen so sicher, dass diese geschützt sind und Ihren Vorgaben entsprechen.
 ## Voraussetzungen
 Bevor Sie sich mit der Schritt-für-Schritt-Anleitung befassen, müssen Sie einige Voraussetzungen erfüllen:
-1.  .NET Framework: Stellen Sie sicher, dass .NET Framework auf Ihrem System installiert ist. GroupDocs.Watermark für .NET ist mit verschiedenen Versionen von .NET Framework kompatibel. Überprüfen Sie daher die[Dokumentation](https://reference.groupdocs.com/Watermark/net/) für Kompatibilitätsdetails.
+1.  .NET Framework: Stellen Sie sicher, dass .NET Framework auf Ihrem System installiert ist. GroupDocs.Watermark für .NET ist mit verschiedenen Versionen von .NET Framework kompatibel. Überprüfen Sie daher die[Dokumentation](https://tutorials.groupdocs.com/Watermark/net/) für Kompatibilitätsdetails.
 2.  GroupDocs.Watermark für .NET-Bibliothek: Laden Sie die neueste Version von herunter und installieren Sie sie[Download-Seite](https://releases.groupdocs.com/Watermark/net/).
 3. Entwicklungsumgebung: Sie sollten eine Entwicklungsumgebung eingerichtet haben. Visual Studio ist eine beliebte Wahl für die .NET-Entwicklung.
 4. Grundlegende C#-Kenntnisse: Wenn Sie die Grundlagen der C#-Programmierung verstehen, können Sie die Beispiele leichter nachvollziehen.
@@ -103,10 +102,10 @@ using (Watermarker watermarker = new Watermarker("Your Document Path"))
 ```
  Dieser Schritt beinhaltet die Verwendung von`GetWatermarks`Methode zum Abrufen aller Wasserzeichen in einem Dokument. Anschließend können Sie die Liste der Wasserzeichen durchgehen und deren Eigenschaften überprüfen oder bei Bedarf zusätzliche Aktionen ausführen.
 ## Abschluss
- Glückwunsch! Sie haben jetzt gelernt, wie Sie mit GroupDocs.Watermark für .NET Wasserzeichen zu Ihren Dokumenten hinzufügen, entfernen und extrahieren. Mit diesen Fähigkeiten können Sie Ihre Dokumente effektiv schützen und mit einem Branding versehen. Denken Sie daran, die[Dokumentation](https://reference.groupdocs.com/Watermark/net/) ist immer da, wenn Sie detailliertere Informationen oder erweiterte Funktionen benötigen.
+ Glückwunsch! Sie haben jetzt gelernt, wie Sie mit GroupDocs.Watermark für .NET Wasserzeichen zu Ihren Dokumenten hinzufügen, entfernen und extrahieren. Mit diesen Fähigkeiten können Sie Ihre Dokumente effektiv schützen und mit einem Branding versehen. Denken Sie daran, die[Dokumentation](https://tutorials.groupdocs.com/Watermark/net/) ist immer da, wenn Sie detailliertere Informationen oder erweiterte Funktionen benötigen.
 ## FAQs
 ### Kann ich GroupDocs.Watermark für .NET mit jeder .NET-Version verwenden?
- Ja, GroupDocs.Watermark für .NET ist mit verschiedenen .NET Framework-Versionen kompatibel. Überprüf den[Dokumentation](https://reference.groupdocs.com/Watermark/net/) für Einzelheiten.
+ Ja, GroupDocs.Watermark für .NET ist mit verschiedenen .NET Framework-Versionen kompatibel. Überprüf den[Dokumentation](https://tutorials.groupdocs.com/Watermark/net/) für Einzelheiten.
 ### Wo kann ich GroupDocs.Watermark für .NET herunterladen?
  Sie können die neueste Version von herunterladen[Download-Seite](https://releases.groupdocs.com/Watermark/net/).
 ### Wie erhalte ich eine temporäre Lizenz?

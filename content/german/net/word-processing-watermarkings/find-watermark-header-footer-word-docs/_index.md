@@ -3,7 +3,6 @@ title: Suchen Sie nach Wasserzeichen in der Kopf-/Fußzeile von Word-Dokumenten
 linktitle: Suchen Sie nach Wasserzeichen in der Kopf-/Fußzeile von Word-Dokumenten
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs Watermark für .NET effizient Wasserzeichen aus Word-Dokumenten finden und entfernen und so die Integrität und Professionalität von Dokumenten gewährleisten.
-type: docs
 weight: 22
 url: /de/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
 ---

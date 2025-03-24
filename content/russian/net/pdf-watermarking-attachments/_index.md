@@ -3,7 +3,6 @@ title: Водяные знаки и вложения PDF-файлов
 linktitle: Водяные знаки и вложения PDF-файлов
 second_title: GroupDocs.Watermark .NET API
 description: Изучите руководства GroupDocs.Watermark для .NET, посвященные водяным знакам и вложениям PDF-файлов. Изучите пошаговые методы повышения безопасности и брендинга ваших PDF-файлов.
-type: docs
 weight: 25
 url: /ru/net/pdf-watermarking-attachments/
 ---

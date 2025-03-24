@@ -3,7 +3,6 @@ title: Word ドキュメントの図形画像に透かしを追加する
 linktitle: Word ドキュメントの図形画像に透かしを追加する
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、Word 文書内の画像に透かしを追加して画像を整形する方法を学びます。このチュートリアルでドキュメントのセキュリティを強化します。
-type: docs
 weight: 17
 url: /ja/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---

@@ -3,7 +3,6 @@ title: Remover marca d'água do PDF
 linktitle: Remover marca d'água do PDF
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda como remover marcas d'água de arquivos PDF usando GroupDocs.Watermark for .NET. Etapas fáceis para edição profissional de documentos.
-type: docs
 weight: 34
 url: /pt/net/pdf-watermarking-attachments/remove-watermark-pdf/
 ---

@@ -3,7 +3,6 @@ title: GroupDocs.Watermark を使用してドキュメントのセキュリテ�
 linktitle: GroupDocs.Watermark チュートリアル
 additionalTitle: GroupDocs API リファレンス
 description: .NET および Java チュートリアルを使用して、GroupDocs.Watermark の機能を最大限に活用してください。文書のセキュリティとブランディングのための透かし技術をマスターします。
-type: docs
 weight: 11
 url: /ja/
 is_root: true

@@ -3,7 +3,6 @@ title: Λάβετε Διαστάσεις PDF
 linktitle: Λάβετε Διαστάσεις PDF
 second_title: GroupDocs.Watermark .NET API
 description: Προστατέψτε τα έγγραφά σας με ευκολία χρησιμοποιώντας το Groupdocs.Watermark για .NET. Προσθέστε υδατογραφήματα, γραμματόσημα και σχολιασμούς χωρίς κόπο.
-type: docs
 weight: 26
 url: /el/net/pdf-watermarking-attachments/get-pdf-dimensions/
 ---

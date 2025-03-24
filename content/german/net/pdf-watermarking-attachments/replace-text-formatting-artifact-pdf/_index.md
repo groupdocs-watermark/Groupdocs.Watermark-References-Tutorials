@@ -3,7 +3,6 @@ title: Ersetzen Sie Text durch Formatierung für Artefakte in PDF
 linktitle: Ersetzen Sie Text durch Formatierung für Artefakte in PDF
 second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Text durch Formatierung für Artefakte in PDF-Dokumenten ersetzen. Verbessern Sie mühelos die Dokumentenverwaltung.
-type: docs
 weight: 43
 url: /de/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
 ---

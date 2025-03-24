@@ -3,7 +3,6 @@ title: استخراج معلومات XObject من PDF
 linktitle: استخراج معلومات XObject من PDF
 second_title: GroupDocs.Watermark .NET API
 description: أطلق العنان لقوة وضع العلامات المائية على المستندات باستخدام GroupDocs.Watermark لـ .NET. إدارة العلامات المائية بسلاسة في ملفات PDF ومستندات Word والصور.
-type: docs
 weight: 25
 url: /ar/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---

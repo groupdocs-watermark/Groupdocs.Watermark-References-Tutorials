@@ -3,7 +3,6 @@ title: PDF'deki XObjects'e Filigran Ekleme
 linktitle: PDF'deki XObjects'e Filigran Ekleme
 second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs.Watermark for .NET'i kullanarak PDF'deki XObjects'e nasıl filigran ekleyeceğinizi öğrenin. Kolay uygulama için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 20
 url: /tr/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
 ---
@@ -81,7 +80,7 @@ Son olarak filigranlı PDF'yi belirtilen çıktı dosyasına kaydedin.
 ```
 İşte buyur! PDF'niz artık tüm XObject'lerinde filigranlar içeriyor.
 ## Çözüm
- Groupdocs'u kullanarak PDF belgelerinize filigran eklemek, ek bir güvenlik katmanı sağlayan basit bir işlemdir. Bu eğitimde özetlenen adımları izleyerek belgelerinizin yetkisiz kullanıma karşı korunmasını sağlayabilirsiniz. Unutmayın, her zaman başvurabilirsiniz[dokümantasyon](https://reference.groupdocs.com/Watermark/net/) daha ayrıntılı bilgi ve gelişmiş özellikler için.
+ Groupdocs'u kullanarak PDF belgelerinize filigran eklemek, ek bir güvenlik katmanı sağlayan basit bir işlemdir. Bu eğitimde özetlenen adımları izleyerek belgelerinizin yetkisiz kullanıma karşı korunmasını sağlayabilirsiniz. Unutmayın, her zaman başvurabilirsiniz[dokümantasyon](https://tutorials.groupdocs.com/Watermark/net/) daha ayrıntılı bilgi ve gelişmiş özellikler için.
 ## SSS'ler
 ### Bir resmi metin yerine filigran olarak kullanabilir miyim?
 Evet, Groupdocs.Watermark for .NET hem metin hem de resim filigranlarını destekler.

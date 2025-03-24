@@ -3,7 +3,6 @@ title: Προσθήκη υδατογραφήματος στην ενότητα �
 linktitle: Προσθήκη υδατογραφήματος στην ενότητα στα Έγγραφα του Word
 second_title: GroupDocs.Watermark .NET API
 description: Προσθέστε εύκολα υδατογραφήματα σε έγγραφα του Word χρησιμοποιώντας GroupDocs.Watermark για .NET. Προστατέψτε το περιεχόμενό σας με αυτόν τον απλό οδηγό.
-type: docs
 weight: 15
 url: /el/net/word-processing-watermarkings/add-watermark-section-word-docs/
 ---

@@ -3,7 +3,6 @@ title: PDF에 첨부 파일 추가
 linktitle: PDF에 첨부 파일 추가
 second_title: GroupDocs.Watermark .NET API
 description: 원활한 워터마킹 및 첨부 파일 처리를 위해 GroupDocs.Watermark를 사용하여 .NET 문서 관리 기능을 강화하세요.
-type: docs
 weight: 12
 url: /ko/net/pdf-watermarking-attachments/add-attachment-pdf/
 ---

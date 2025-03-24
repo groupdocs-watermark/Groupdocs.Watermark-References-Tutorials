@@ -3,7 +3,6 @@ title: Rimuovi XObjects con formattazione del testo specifica in PDF
 linktitle: Rimuovi XObjects con formattazione del testo specifica in PDF
 second_title: API GroupDocs.Watermark .NET
 description: Rimuovi facilmente XObjects con formattazione di testo specifica dai PDF utilizzando GroupDocs.Watermark per .NET. Segui la nostra guida per una manipolazione fluida dei documenti.
-type: docs
 weight: 36
 url: /it/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
 ---
@@ -85,7 +84,7 @@ Infine, salva il documento PDF modificato nel percorso del file di output specif
 Questo completa il processo di rimozione di XObjects con formattazione di testo specifica da un documento PDF.
 
 ## Conclusione
-Seguendo questi passaggi, puoi rimuovere in modo efficiente XObjects con formattazione di testo specifica dai documenti PDF utilizzando GroupDocs.Watermark per .NET. Questa potente libreria non solo semplifica le attività di filigrana, ma offre anche solide funzionalità per la manipolazione dei documenti. Per una documentazione più dettagliata, visitare il[GroupDocs.Watermark per la documentazione .NET](https://reference.groupdocs.com/Watermark/net/) . Se riscontri problemi o hai domande, il[Forum di assistenza](https://forum.groupdocs.com/c/watermark/19) è un ottimo posto per cercare aiuto.
+Seguendo questi passaggi, puoi rimuovere in modo efficiente XObjects con formattazione di testo specifica dai documenti PDF utilizzando GroupDocs.Watermark per .NET. Questa potente libreria non solo semplifica le attività di filigrana, ma offre anche solide funzionalità per la manipolazione dei documenti. Per una documentazione più dettagliata, visitare il[GroupDocs.Watermark per la documentazione .NET](https://tutorials.groupdocs.com/Watermark/net/) . Se riscontri problemi o hai domande, il[Forum di assistenza](https://forum.groupdocs.com/c/watermark/19) è un ottimo posto per cercare aiuto.
 ## Domande frequenti
 ### Posso rimuovere XObjects con una formattazione del testo diversa?
 Sì, puoi modificare il codice per verificare diversi attributi di formattazione del testo come dimensione del carattere, stile del carattere o colore.

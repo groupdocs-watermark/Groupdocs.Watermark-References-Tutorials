@@ -3,7 +3,6 @@ title: Удалить фигуру в документах Word
 linktitle: Удалить фигуру в документах Word
 second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как удалять фигуры из документов Word с помощью GroupDocs.Watermark для .NET. Простое, эффективное и мощное манипулирование документами.
-type: docs
 weight: 30
 url: /ru/net/word-processing-watermarkings/remove-shape-word-docs/
 ---
@@ -72,6 +71,6 @@ watermarker.Save(outputFileName);
 ### Как получить временные лицензии для GroupDocs.Watermark для .NET?
  Временные лицензии для GroupDocs.Watermark для .NET можно получить на сайте[страница временной лицензии](https://purchase.groupdocs.com/temporary-license/).
 ### Где я могу найти документацию и поддержку для GroupDocs.Watermark для .NET?
- Ресурсы документации и поддержки для GroupDocs.Watermark для .NET доступны на сайте[Форум](https://forum.groupdocs.com/c/watermark/19) и[Справочная страница](https://reference.groupdocs.com/Watermark/net/).
+ Ресурсы документации и поддержки для GroupDocs.Watermark для .NET доступны на сайте[Форум](https://forum.groupdocs.com/c/watermark/19) и[Справочная страница](https://tutorials.groupdocs.com/Watermark/net/).
 ### Какие версии .NET совместимы с GroupDocs.Watermark?
 GroupDocs.Watermark для .NET совместим с различными версиями .NET, включая .NET Framework и .NET Core.

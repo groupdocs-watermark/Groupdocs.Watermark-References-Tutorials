@@ -3,7 +3,6 @@ title: Voeg een vergrendeld watermerk toe aan specifieke pagina's in Word-docume
 linktitle: Voeg een vergrendeld watermerk toe aan specifieke pagina's in Word-documenten
 second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u een vergrendeld watermerk aan specifieke pagina's in Word-documenten kunt toevoegen met GroupDocs.Watermark voor .NET met onze eenvoudige stapsgewijze handleiding.
-type: docs
 weight: 12
 url: /nl/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
 ---
@@ -63,7 +62,7 @@ watermarker.Save(outputFileName);
 ```
 ## Conclusie
 Gefeliciteerd! U hebt met succes een vergrendeld watermerk toegevoegd aan specifieke pagina's in een Word-document met GroupDocs.Watermark voor .NET. In deze zelfstudie werden alle essentiële stappen behandeld, van het laden van het document tot het opslaan van het bestand met een watermerk. Door deze stappen te volgen, kunt u ervoor zorgen dat uw documenten veilig van een watermerk zijn voorzien, zodat uw inhoud wordt beschermd tegen ongeoorloofde bewerking en gebruik.
- Voor meer informatie kunt u verwijzen naar de[GroupDocs.Watermark-documentatie](https://reference.groupdocs.com/Watermark/net/) . Als u vragen heeft of meer hulp nodig heeft, kunt u gerust een bezoek brengen aan de[Helpforum](https://forum.groupdocs.com/c/watermark/19).
+ Voor meer informatie kunt u verwijzen naar de[GroupDocs.Watermark-documentatie](https://tutorials.groupdocs.com/Watermark/net/) . Als u vragen heeft of meer hulp nodig heeft, kunt u gerust een bezoek brengen aan de[Helpforum](https://forum.groupdocs.com/c/watermark/19).
 ## Veelgestelde vragen
 ### Wat is GroupDocs.Watermark voor .NET?
 GroupDocs.Watermark voor .NET is een krachtige bibliotheek waarmee ontwikkelaars watermerken kunnen toevoegen aan verschillende soorten documenten, waaronder Word, PDF, Excel en meer.

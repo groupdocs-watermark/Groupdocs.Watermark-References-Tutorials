@@ -3,7 +3,6 @@ title: Εξαγωγή πληροφοριών XObject από PDF
 linktitle: Εξαγωγή πληροφοριών XObject από PDF
 second_title: GroupDocs.Watermark .NET API
 description: Ξεκλειδώστε τη δύναμη της υδατοσήμανσης εγγράφων με το GroupDocs.Watermark για .NET. Διαχειριστείτε απρόσκοπτα τα υδατογραφήματα σε αρχεία PDF, έγγραφα Word και εικόνες.
-type: docs
 weight: 25
 url: /el/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
 ---

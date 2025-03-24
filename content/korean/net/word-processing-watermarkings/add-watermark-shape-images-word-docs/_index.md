@@ -3,7 +3,6 @@ title: Word Docs에서 도형 이미지에 워터마크 추가
 linktitle: Word Docs에서 도형 이미지에 워터마크 추가
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 모양 이미지에 워터마크를 추가하는 방법을 알아보세요. 이 튜토리얼을 통해 문서 보안을 강화하세요.
-type: docs
 weight: 17
 url: /ko/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
 ---

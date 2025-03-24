@@ -3,7 +3,6 @@ title: Adicionar marca d'água bloqueada à seção em documentos do Word
 linktitle: Adicionar marca d'água bloqueada à seção em documentos do Word
 second_title: API GroupDocs.Watermark .NET
 description: Aprenda como adicionar uma marca d'água bloqueada a uma seção específica em documentos do Word usando Groupdocs para .NET com este guia passo a passo abrangente.
-type: docs
 weight: 13
 url: /pt/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
 ---
@@ -70,4 +69,4 @@ Groupdocs.Watermark for .NET é uma biblioteca poderosa que permite aos desenvol
 ### Que tipos de marcas d'água posso adicionar usando Groupdocs.Watermark?
 Groupdocs.Watermark oferece suporte a vários tipos de marcas d'água, incluindo marcas d'água de texto, imagem e formato, oferecendo amplas opções de personalização para cada tipo.
 ### Onde posso encontrar mais informações sobre Groupdocs.Watermark for .NET?
- Para mais informações, você pode visitar o[documentação](https://reference.groupdocs.com/Watermark/net/) e[Fórum de suporte](https://forum.groupdocs.com/c/watermark/19).
+ Para mais informações, você pode visitar o[documentação](https://tutorials.groupdocs.com/Watermark/net/) e[Fórum de suporte](https://forum.groupdocs.com/c/watermark/19).

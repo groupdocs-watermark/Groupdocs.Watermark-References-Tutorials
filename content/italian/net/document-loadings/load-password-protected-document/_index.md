@@ -3,7 +3,6 @@ title: Carica documento protetto da password
 linktitle: Carica documento protetto da password
 second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere filigrane ai documenti protetti da password utilizzando Groupdocs per .NET con la nostra guida passo passo. Proteggi e personalizza facilmente i tuoi file.
-type: docs
 weight: 13
 url: /it/net/document-loadings/load-password-protected-document/
 ---

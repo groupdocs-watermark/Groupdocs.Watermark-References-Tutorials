@@ -3,7 +3,6 @@ title: Ekstrak Semua Lampiran dari PDF
 linktitle: Ekstrak Semua Lampiran dari PDF
 second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengekstrak semua lampiran dari PDF menggunakan Groupdocs.Watermark untuk .NET. Ikuti panduan langkah demi langkah kami untuk proses ekstraksi yang lancar.
-type: docs
 weight: 22
 url: /id/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
 ---

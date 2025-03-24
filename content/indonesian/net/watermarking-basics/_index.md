@@ -3,7 +3,6 @@ title: Dasar-dasar Penandaan Air
 linktitle: Dasar-dasar Penandaan Air
 second_title: GroupDocs.Tanda Air .NET API
 description: Temukan tutorial GroupDocs.Watermark untuk .NET untuk menambahkan tanda air gambar dan teks dengan mudah. Lindungi dokumen Anda dengan panduan yang mudah diikuti ini.
-type: docs
 weight: 20
 url: /id/net/watermarking-basics/
 ---

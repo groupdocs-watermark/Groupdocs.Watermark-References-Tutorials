@@ -3,7 +3,6 @@ title: PDF의 특정 아티팩트에 대한 텍스트 바꾸기
 linktitle: PDF의 특정 아티팩트에 대한 텍스트 바꾸기
 second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 PDF 문서의 특정 아티팩트에 대한 텍스트를 바꾸는 방법을 알아보세요. 손쉽게 문서 보안과 무결성을 강화하세요.
-type: docs
 weight: 42
 url: /ko/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
 ---

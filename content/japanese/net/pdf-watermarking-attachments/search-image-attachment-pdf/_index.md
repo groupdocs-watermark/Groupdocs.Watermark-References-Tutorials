@@ -3,7 +3,6 @@ title: PDFの添付ファイル内の画像を検索
 linktitle: PDFの添付ファイル内の画像を検索
 second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、PDF 添付ファイル内の画像を効率的に検索します。透かし管理プロセスを簡単に簡素化します。
-type: docs
 weight: 46
 url: /ja/net/pdf-watermarking-attachments/search-image-attachment-pdf/
 ---

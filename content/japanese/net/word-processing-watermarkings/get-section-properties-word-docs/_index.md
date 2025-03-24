@@ -3,7 +3,6 @@ title: Word ドキュメントのセクション プロパティを取得する
 linktitle: Word ドキュメントのセクション プロパティを取得する
 second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET を使用して Word ドキュメントからセクション プロパティを抽出する方法を学びます。ドキュメントの操作能力を簡単に強化します。
-type: docs
 weight: 23
 url: /ja/net/word-processing-watermarkings/get-section-properties-word-docs/
 ---
