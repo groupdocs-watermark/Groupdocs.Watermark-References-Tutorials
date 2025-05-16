@@ -11,9 +11,6 @@ Learn how to create professionally watermarked Word documents with our GroupDocs
 
 ## Available Tutorials
 
-### [Add & Lock Text Watermarks in Word Documents Using GroupDocs.Watermark .NET for Enhanced Security and Branding](./groupdocs-word-watermarks-seo/)
-Learn how to add and lock text watermarks in Word documents using GroupDocs.Watermark .NET, enhancing document security and branding.
-
 ### [Add Image Watermarks & Link Headers in Word Using GroupDocs.Watermark for .NET](./groupdocs-watermark-add-image-watermark-link-headers-word/)
 Learn how to add image watermarks and link headers in Word documents using GroupDocs.Watermark for .NET. Secure your files while maintaining a professional appearance.
 

@@ -32,9 +32,6 @@ Learn how to secure your PowerPoint presentations by adding text watermarks usin
 ### [How to Add Text Watermarks to PowerPoint Images Using GroupDocs.Watermark for .NET](./add-text-watermarks-powerpoint-groupdocs-net/)
 Learn how to add text watermarks to PowerPoint images using GroupDocs.Watermark for .NET. Enhance your presentations with brand protection and security.
 
-### [How to Add Text Watermarks to PowerPoint Presentations Using GroupDocs.Watermark .NET](./groupdocs-watermark-net-text-presentation-watermark/)
-Learn how to easily add text watermarks to PowerPoint presentations using GroupDocs.Watermark for .NET. Protect and brand your slides efficiently with this comprehensive guide.
-
 ### [How to Add and Customize Text Watermarks in PowerPoint Using GroupDocs.Watermark for .NET](./add-watermarks-powerpoint-groupdocs-watermark/)
 Learn how to securely add text watermarks to PowerPoint presentations using GroupDocs.Watermark for .NET. Protect your content with customizable effects.
 

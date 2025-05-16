@@ -17,9 +17,6 @@ Learn how to add print-only watermarks to your PDF documents using GroupDocs.Wat
 ### [Add Text Watermarks to PDF XObjects Using GroupDocs.Watermark .NET&#58; A Comprehensive Guide](./add-text-watermark-pdf-xobjects-groupdocs-watermark-net/)
 Learn how to securely add text watermarks to PDF XObjects using GroupDocs.Watermark for .NET. Follow this step-by-step guide to protect your documents effectively.
 
-### [Automate Text Replacement in PDFs with Custom Formatting Using GroupDocs.Watermark .NET](./automate-text-replacement-pdf-custom-formatting/)
-Learn how to automate text replacement in PDF artifacts using custom formatting with GroupDocs.Watermark .NET. Streamline your document management tasks efficiently.
-
 ### [Extract PDF Artifacts Efficiently Using GroupDocs.Watermark .NET for Enhanced Document Processing](./extract-pdf-artifacts-groupdocs-watermark-net/)
 Learn how to extract and manage PDF artifacts effortlessly with GroupDocs.Watermark for .NET. Enhance your document processing capabilities today.
 
@@ -43,9 +40,6 @@ Learn how to enhance your PDF documents with watermarks and annotations using Gr
 
 ### [How to Add Watermarks to PDF Images Using GroupDocs.Watermark for .NET](./groupdocs-watermark-add-watermarks-pdf-images/)
 Learn how to effectively add watermarks to image artifacts in PDFs using GroupDocs.Watermark for .NET. Protect your digital content with ease.
-
-### [How to Add Watermarks to PDF Images Using GroupDocs.Watermark for .NET](./add-watermarks-pdf-images-groupdocs-watermark/)
-Learn how to protect your intellectual property by adding text watermarks to images in PDF documents using GroupDocs.Watermark for .NET. Follow this step-by-step guide.
 
 ### [How to Add a Text Watermark to PDFs Using GroupDocs.Watermark for .NET Developers](./add-text-watermark-pdf-groupdocs-net/)
 Learn how to efficiently add text watermarks to your PDF documents using GroupDocs.Watermark for .NET. Follow this guide for step-by-step instructions and best practices.

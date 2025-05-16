@@ -11,9 +11,6 @@ Our document loading and saving tutorials provide comprehensive guidance for wor
 
 ## Available Tutorials
 
-### [How to Load Encrypted Word Documents Using GroupDocs.Watermark for .NET&#58; A Step-by-Step Guide](./groupdocs-watermark-load-encrypted-word-docs-net/)
-Learn how to easily load and manage password-protected Word documents in your .NET applications using GroupDocs.Watermark. Follow this comprehensive guide to enhance document security.
-
 ### [Loading Password-Protected Documents with GroupDocs.Watermark .NET&#58; A Complete Guide](./load-password-protected-docs-groupdocs-watermark-net/)
 Learn how to load password-protected documents using GroupDocs.Watermark for .NET. Discover step-by-step instructions, key configurations, and real-world applications.
 
