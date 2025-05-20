@@ -29,9 +29,6 @@ A code tutorial for GroupDocs.Watermark Java
 ### [Efficient Image Searches in Excel Spreadsheets using GroupDocs.Watermark Java](./excel-image-search-groupdocs-watermark-java/)
 Discover how to automate image searches in Excel spreadsheets with GroupDocs.Watermark Java, enhancing workflow efficiency.
 
-### [Efficiently Remove Excel Shapes Using GroupDocs.Watermark and Aspose.Cells](./automate-excel-shape-removal-groupdocs-watermark/)
-Automate the removal of shapes from your Excel files using powerful tools like GroupDocs.Watermark and Aspose.Cells. Follow this guide to enhance productivity with automated shape management.
-
 ### [Excel Document Handling and Watermarking with GroupDocs.Watermark Java](./excel-document-handling-groupdocs-watermark-java/)
 Learn how to handle Excel documents and apply watermarks using the GroupDocs.Watermark library in Java. This tutorial covers setup, loading, content extraction, and practical applications.
 

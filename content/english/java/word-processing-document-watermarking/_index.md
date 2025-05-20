@@ -29,9 +29,6 @@ Learn how to secure your Word documents by adding image watermarks using GroupDo
 ### [How to Add Text Watermarks to Word Documents Using GroupDocs.Watermark for Java](./add-text-watermark-word-docs-groupdocs-java/)
 Learn how to add text watermarks to your Word documents with ease using GroupDocs.Watermark for Java. Secure and brand your documents effectively.
 
-### [How to Add Text Watermarks to Word Documents using GroupDocs.Watermark for Java](./groupdocs-watermark-java-text-watermark-word-documents/)
-Learn how to implement text watermarks in Word documents with GroupDocs.Watermark for Java. Protect your content easily and enhance document security.
-
 ### [How to Add Text Watermarks to Word Shapes with GroupDocs.Watermark for Java](./add-text-watermarks-to-word-shapes-groupdocs-watermark-java/)
 Learn how to protect sensitive information in Word documents by adding text watermarks to shapes using GroupDocs.Watermark for Java.
 
@@ -40,9 +37,6 @@ Learn how to add watermarks like 'DRAFT' to specific pages of a Word document us
 
 ### [How to Add Watermarks to Word Documents Using GroupDocs.Watermark Java](./groupdocs-watermark-java-word-watermarks/)
 Learn how to protect your documents by adding custom text watermarks using GroupDocs.Watermark for Java. Follow this step-by-step guide.
-
-### [How to Add and Lock Watermarks in Word Documents Using GroupDocs.Watermark for Java](./add-lock-watermarks-word-groupdocs-watermark-java/)
-Learn how to effectively add and lock watermarks on specific pages of Word documents using GroupDocs.Watermark for Java, ensuring document protection.
 
 ### [How to Set Different Headers and Footers in Word Documents Using GroupDocs.Watermark for Java](./groupdocs-watermark-headers-footers-word-java/)
 Learn how to customize headers and footers in Word documents using GroupDocs.Watermark for Java. Perfect for branding and legal formatting.

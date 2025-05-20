@@ -166,15 +166,20 @@ By following this guide, you've learned how to effectively load, annotate, modif
 As next steps, consider exploring more advanced features of the API or integrating it into larger systems.
 
 ## FAQ Section
-**1. How do I obtain a free trial license?**
+
+1. **How do I obtain a free trial license?**
    - Visit the [GroupDocs purchase page](https://purchase.groupdocs.com/temporary-license/) for instructions on acquiring a temporary license.
-**2. Can I watermark images in PDFs using GroupDocs.Watermark?**
+
+2. **Can I watermark images in PDFs using GroupDocs.Watermark?**
    - Yes, GroupDocs.Watermark supports image watermarking within PDF documents.
-**3. Is it possible to remove watermarks from a PDF?**
+
+3. **Is it possible to remove watermarks from a PDF?**
    - While the library focuses on adding watermarks, you can manipulate annotations and other elements to achieve desired effects.
-**4. What font types are supported for annotations?**
+
+4. **What font types are supported for annotations?**
    - GroupDocs.Watermark supports common fonts like Calibri, Times New Roman, etc., with customizable styling options.
-**5. How do I handle large PDF files without performance degradation?**
+
+5. **How do I handle large PDF files without performance degradation?**
    - Optimize memory usage by processing documents in batches and ensuring proper disposal of resources.
 
 ## Resources

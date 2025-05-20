@@ -17,9 +17,6 @@ Learn how to load and manage watermarks in password-protected documents using Gr
 ### [How to Load and Watermark Password-Protected Word Documents Using GroupDocs.Watermark in Java](./groupdocs-watermark-java-password-protected-word-docs/)
 Learn how to use GroupDocs.Watermark with Java to load, manage, and watermark password-protected Word documents efficiently.
 
-### [Load and Watermark Word Documents Using GroupDocs.Watermark in Java](./groupdocs-watermark-java-load-word-document/)
-Learn how to efficiently load and watermark Word documents in Java using the GroupDocs.Watermark library. Follow our step-by-step guide for seamless integration.
-
 ## Additional Resources
 
 - [GroupDocs.Watermark for Java Documentation](https://docs.groupdocs.com/watermark/java/)
