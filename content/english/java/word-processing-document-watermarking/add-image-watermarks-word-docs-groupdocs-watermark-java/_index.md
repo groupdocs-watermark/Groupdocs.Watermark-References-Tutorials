@@ -176,8 +176,15 @@ Ready to implement? Head over to [GroupDocs documentation](https://docs.groupdoc
 ## FAQ Section
 1. **Can I apply watermarks to PDFs using GroupDocs.Watermark?**
    - Yes, the library supports multiple document formats including PDFs.
+
 2. **How do I prevent watermarks from appearing in headers/footers?**
    - Check if `wordShape.getHeaderFooter()` is null before applying watermarks.
-3. **Is it possible to scale watermarks dynamically based on image size?**
-   - Yes, use the
+  
+3. **Can I add text watermarks along with images?**
+	- Yes, GroupDocs.Watermark supports both image and text watermarks simultaneously.
 
+4. **Does watermarking affect headers or footers?**  
+   - Watermarks can be applied selectively; exclude headers and footers for precise control.
+
+5. **Is this method suitable for batch processing multiple documents?**  
+   - Yes, you can automate watermark application across multiple files with scripting.

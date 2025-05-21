@@ -17,9 +17,6 @@ Learn how to access and iterate over PDF artifacts using GroupDocs.Watermark in 
 ### [Add Print-Only Watermarks to PDFs Using GroupDocs.Watermark Java&#58; A Comprehensive Guide](./groupdocs-watermark-java-print-only-pdf-watermark/)
 Learn how to add print-only watermarks to PDF files with GroupDocs.Watermark for Java. Secure your documents effectively with this step-by-step tutorial.
 
-### [Automate PDF Text Replacement in Java Using GroupDocs Watermark](./automate-pdf-text-replacement-groupdocs-java/)
-Learn how to automate PDF text replacement using GroupDocs.Watermark for Java. Streamline document editing with advanced formatting options.
-
 ### [Comprehensive Guide&#58; Watermarking PDFs with GroupDocs for Java (Text & Image)](./add-watermarks-pdfs-groupdocs-java/)
 Learn how to add text and image watermarks to PDFs using GroupDocs.Watermark for Java. Enhance document security and ownership identification with this easy-to-follow tutorial.
 
@@ -28,9 +25,6 @@ Learn how to add watermarks to your PDFs using GroupDocs.Watermark for Java. Pro
 
 ### [How to Add Attachments to PDFs Using GroupDocs.Watermark in Java&#58; A Complete Guide](./add-attachments-pdf-groupdocs-watermark-java/)
 Learn how to enhance your PDF documents by adding attachments using GroupDocs.Watermark for Java with this step-by-step tutorial.
-
-### [How to Add Text Watermarks to PDFs Using GroupDocs.Watermark Java SDK](./add-text-watermarks-pdf-groupdocs-java/)
-Learn how to add text watermarks to your PDF documents using GroupDocs.Watermark for Java. Protect your content with professional watermarks.
 
 ### [How to Add Text and Image Watermarks to PDFs in Java using GroupDocs.Watermark](./groupdocs-watermark-java-pdf-watermarks/)
 Learn how to protect your PDF documents by adding text and image watermarks with GroupDocs.Watermark for Java. Secure, brand, and manage your files effectively.

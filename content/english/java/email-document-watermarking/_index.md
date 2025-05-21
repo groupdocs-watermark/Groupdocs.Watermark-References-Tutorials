@@ -11,9 +11,6 @@ Our email watermarking tutorials provide comprehensive guidance for implementing
 
 ## Available Tutorials
 
-### [Customize Email Content Using GroupDocs.Watermark in Java&#58; A Complete Guide for Email Document Watermarking](./customize-email-content-groupdocs-watermark-java/)
-Learn how to effectively customize email content using GroupDocs.Watermark in Java. This guide covers loading, modifying, and saving email documents with practical examples.
-
 ### [Efficiently Remove Email Attachments Using GroupDocs.Watermark in Java](./remove-email-attachments-groupdocs-watermark-java/)
 Learn how to streamline email management by removing specific attachments using GroupDocs.Watermark for Java. Follow our guide to enhance productivity and security.
 

@@ -186,6 +186,12 @@ By following this tutorial, you've learned how to utilize GroupDocs.Watermark fo
    - A comprehensive Java library designed for watermarking and extracting information from various document formats, including diagrams.
 2. **Can I use this library to process all types of diagram files?**
    - Yes, but ensure that the file format is supported by checking the [API Reference](https://reference.groupdocs.com/watermark/java).
-3. **What if I encounter a "file not found" error?**
-   - Verify your document path and permissions for accessing
 
+3. **How do I extract shape dimensions and positions from a diagram using Java and GroupDocs.Watermark?**  
+   - Load the diagram, access `DiagramContent`, then iterate shapes to get properties like width, height, X, and Y.
+
+4. **Can GroupDocs.Watermark extract images embedded in diagram shapes with Java?**  
+   - Yes, it provides methods to access image data within shapes, including size and pixel data, useful for analysis or modification.
+
+5. **What are the prerequisites for extracting diagram shape info in Java?**  
+   - Java JDK 8+, Maven setup, GroupDocs.Watermark library (24.11+), and basic Java knowledge are essential for implementation.

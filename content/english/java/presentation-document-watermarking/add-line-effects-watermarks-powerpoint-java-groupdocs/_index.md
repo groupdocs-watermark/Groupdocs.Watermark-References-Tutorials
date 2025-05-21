@@ -191,7 +191,19 @@ watermarker.close();
 ## Conclusion
 You've successfully learned how to add line effects watermarks to PowerPoint presentations using GroupDocs.Watermark for Java. By integrating these techniques into your workflow, you can enhance document security and protect your intellectual property efficiently. Explore further capabilities of the library to fully leverage its potential in various use cases.
 
-**Next Steps:**
-Try implementing these features on different types of documents supported by GroupDocs.Watermark, such as Word or PDF files, to broaden your application's functionality.
+### FAQs
 
-## FAQ Section
+**1. Can I add watermarks to specific slides only?**  
+	- Yes, by configuring `PresentationWatermarkSlideOptions`, you can selectively apply watermarks to individual slides.
+
+**2. How do I customize the color and dash style of the line effects?**  
+	- Use `effects.getLineFormat()` to set properties like color (`Color.getRed()`) and dash style (`OfficeDashStyle.DashDotDot`).
+
+**3. Is it possible to add multiple watermarks to a presentation?**  
+	- Yes, you can add multiple watermarks sequentially by calling `watermarker.add()` repeatedly with different watermark objects.
+
+**4. What are the system requirements for running this code?**  
+	- Java JDK (version 8 or above), GroupDocs.Watermark for Java 24.11+, and an IDE like IntelliJ IDEA or Eclipse.
+
+**5. How do I remove or replace an existing watermark?**  
+	- You can load the document, locate existing watermarks using the library’s methods, and delete or overwrite them before saving.

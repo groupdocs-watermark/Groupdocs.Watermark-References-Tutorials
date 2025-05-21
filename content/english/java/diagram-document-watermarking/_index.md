@@ -29,9 +29,6 @@ Learn how to protect your diagrams by adding text and image watermarks with Grou
 ### [How to Add Text Watermarks to Diagrams Using GroupDocs.Watermark in Java](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
 Learn how to add text watermarks to diagrams using GroupDocs.Watermark for Java. This guide covers setup, implementation, and practical applications.
 
-### [How to Add Watermarks to Diagrams Using GroupDocs.Watermark for Java&#58; A Step-by-Step Guide](./add-watermarks-diagrams-groupdocs-java/)
-Learn how to securely add watermarks to diagram files using GroupDocs.Watermark for Java. Protect your intellectual property with text and image options.
-
 ### [Master Image Replacement in Diagrams with GroupDocs.Watermark for Java](./automate-image-replacement-groupdocs-watermark-java/)
 Automate image updates in diagrams using GroupDocs.Watermark for Java to enhance efficiency and accuracy. Learn how to streamline your workflow.
 
