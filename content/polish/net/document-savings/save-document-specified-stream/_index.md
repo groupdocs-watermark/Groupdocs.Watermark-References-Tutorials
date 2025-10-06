@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Z tego przewodnika krok po kroku dowiesz się, jak zapisać dokument w określonym strumieniu przy użyciu programu GroupDocs.Watermark dla platformy .NET. Idealny dla programistów na wszystkich poziomach.
 weight: 12
 url: /pl/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Zapisz dokument w określonym strumieniu
 
 ## Wstęp

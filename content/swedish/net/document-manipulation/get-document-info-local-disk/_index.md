@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till, tar bort och extraherar vattenstämplar i dokument med hjälp av GroupDocs Watermark for .NET med den här omfattande steg-för-steg-guiden.
 weight: 11
 url: /sv/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Få dokumentinformation från lokal disk
 
 ## Introduktion

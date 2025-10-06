@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak łatwo wyłączyć ochronę dokumentów programu Word za pomocą programu GroupDocs.Watermark dla platformy .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku.
 weight: 38
 url: /pl/net/word-processing-watermarkings/unprotect-document-word-docs/
+type: docs
 ---
-
 # Usuń ochronę dokumentu w dokumentach programu Word
 
 ## Wstęp

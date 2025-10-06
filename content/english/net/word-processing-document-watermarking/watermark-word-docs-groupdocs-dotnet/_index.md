@@ -8,10 +8,8 @@ keywords:
 - watermark Word documents
 - GroupDocs Watermark for .NET
 - Word document security
-
+type: docs
 ---
-
-
 # How to Watermark Word Documents Using GroupDocs.Watermark for .NET
 
 ## Introduction

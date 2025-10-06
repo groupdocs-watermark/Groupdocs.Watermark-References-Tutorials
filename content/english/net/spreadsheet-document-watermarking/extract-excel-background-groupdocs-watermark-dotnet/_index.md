@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark .NET
 - Excel worksheet background extraction
 - automate Excel document processing
-
+type: docs
 ---
-
-
 # Extract Excel Worksheet Backgrounds Using GroupDocs.Watermark .NET: A Comprehensive Guide
 
 ## Introduction

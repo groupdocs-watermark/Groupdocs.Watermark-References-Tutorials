@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ bị khóa vào các trang cụ thể trong tài liệu Word bằng GroupDocs.Watermark dành cho .NET với hướng dẫn từng bước dễ dàng của chúng tôi.
 weight: 12
 url: /vi/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Thêm hình mờ bị khóa vào các trang cụ thể trong tài liệu Word
 
 ## Giới thiệu

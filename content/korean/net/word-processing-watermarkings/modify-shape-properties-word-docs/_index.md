@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 Watermark를 사용하여 Word 문서를 보호하세요. 보안 강화를 위해 모양 속성을 쉽게 수정할 수 있습니다.
 weight: 27
 url: /ko/net/word-processing-watermarkings/modify-shape-properties-word-docs/
+type: docs
 ---
-
 # Word Docs에서 도형 속성 수정
 
 ## 소개

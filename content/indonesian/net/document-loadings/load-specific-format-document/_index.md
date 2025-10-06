@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara memuat dan memberi tanda air pada dokumen menggunakan Groupdocs untuk .NET dengan panduan langkah demi langkah ini. Lindungi dan beri merek pada konten Anda dengan mudah.
 weight: 12
 url: /id/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # Muat Dokumen Format Tertentu
 
 ## Perkenalan

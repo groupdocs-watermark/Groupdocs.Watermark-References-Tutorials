@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して Word 文書内の図形テキストを書式設定されたテキストに置き換える方法を学びます。ドキュメント編集機能を簡単に。
 weight: 34
 url: /ja/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # Word ドキュメントの図形テキストを書式設定されたテキストに置き換える
 
 ## 導入

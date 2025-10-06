@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách trích xuất thông tin chú thích từ tài liệu PDF bằng GroupDocs.Watermark cho .NET trong hướng dẫn chi tiết từng bước này.
 weight: 23
 url: /vi/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # Trích xuất thông tin chú thích từ PDF
 
 ## Giới thiệu

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se extrahovat vlastnosti oddílu z dokumentů Word pomocí Groupdocs pro .NET. Vylepšete své možnosti manipulace s dokumenty bez námahy.
 weight: 23
 url: /cs/net/word-processing-watermarkings/get-section-properties-word-docs/
+type: docs
 ---
-
 # Získejte vlastnosti oddílu v Dokumentech aplikace Word
 
 ## Úvod

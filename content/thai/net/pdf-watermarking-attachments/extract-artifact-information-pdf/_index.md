@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีแยกข้อมูลสิ่งประดิษฐ์จากไฟล์ PDF โดยใช้ GroupDocs.Watermark สำหรับ .NET เพิ่มความสามารถในการประมวลผลเอกสารของคุณ
 weight: 24
 url: /th/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
+type: docs
 ---
-
 # แยกข้อมูลสิ่งประดิษฐ์จาก PDF
 
 ## การแนะนำ

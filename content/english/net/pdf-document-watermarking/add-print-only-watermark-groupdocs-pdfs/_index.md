@@ -8,10 +8,8 @@ keywords:
 - print-only watermarks PDFs GroupDocs
 - add watermark to PDF print mode
 - GroupDocs.Watermark .NET guide
-
+type: docs
 ---
-
-
 # Add a Print-Only Watermark to PDFs Using GroupDocs.Watermark for .NET
 
 ## Introduction

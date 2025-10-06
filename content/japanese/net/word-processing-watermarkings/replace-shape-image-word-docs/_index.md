@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、Word 文書内の図形画像をプログラムで置き換える方法を学びます。ドキュメント操作タスクを簡単に簡素化します。
 weight: 33
 url: /ja/net/word-processing-watermarkings/replace-shape-image-word-docs/
+type: docs
 ---
-
 # Word ドキュメントの図形画像を置換する
 
 ## 導入

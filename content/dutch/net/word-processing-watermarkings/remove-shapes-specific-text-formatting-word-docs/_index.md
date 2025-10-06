@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u vormen met specifieke tekstopmaak in Word-documenten verwijdert met GroupDocs.Watermark voor .NET. Volg onze gids voor efficiënte manipulatie van watermerken.
 weight: 31
 url: /nl/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
+type: docs
 ---
-
 # Verwijder vormen met specifieke tekstopmaak in Word-documenten
 
 ## Invoering

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aggiungi facilmente filigrane ai documenti Word utilizzando GroupDocs.Watermark per .NET. Proteggi i tuoi contenuti con questa semplice guida.
 weight: 15
 url: /it/net/word-processing-watermarkings/add-watermark-section-word-docs/
+type: docs
 ---
-
 # Aggiungi filigrana alla sezione in documenti Word
 
 ## introduzione

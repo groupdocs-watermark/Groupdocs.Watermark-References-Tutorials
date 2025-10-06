@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 在此详细的分步指南中了解如何使用 GroupDocs.Watermark for .NET 从 PDF 文档中提取注释信息。
 weight: 23
 url: /zh/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # 从 PDF 中提取注释信息
 
 ## 介绍

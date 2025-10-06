@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية مخصصة مع تأثيرات نصية إلى مستندات Word باستخدام GroupDocs.Watermark لـ .NET. أمان المستندات وجاذبية بصرية دون عناء.
 weight: 21
 url: /ar/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
+type: docs
 ---
-
 # أضف علامة مائية مع تأثيرات النص في مستندات Word
 
 ## مقدمة

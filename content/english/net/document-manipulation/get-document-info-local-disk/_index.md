@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to add, remove, and extract watermarks in documents using GroupDocs.Watermark for .NET with this comprehensive step-by-step guide.
 weight: 11
 url: /net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Get Document Info from Local Disk
 
 ## Introduction

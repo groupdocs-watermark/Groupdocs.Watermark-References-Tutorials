@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda a agregar marcas de agua a documentos protegidos con contraseña usando Groupdocs para .NET con nuestra guía paso a paso. Proteja y marque sus archivos fácilmente.
 weight: 13
 url: /es/net/document-loadings/load-password-protected-document/
+type: docs
 ---
-
 # Cargar documento protegido con contraseña
 
 ## Introducción

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: ドキュメント プレビューの生成とウォーターマークの管理に関する GroupDocs.Watermark for .NET チュートリアルを参照してください。ドキュメントのセキュリティと管理を強化します。
 weight: 21
 url: /ja/net/document-manipulation/
+type: docs
 ---
-
 # 文書の操作
 
 ## 導入

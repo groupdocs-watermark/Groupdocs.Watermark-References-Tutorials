@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 為 PDF 附件新增浮水印。使用自訂浮水印輕鬆保護您的文件。
 weight: 16
 url: /zh-hant/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
+type: docs
 ---
-
 # 為 PDF 中的所有配件添加浮水印
 
 ## 介紹

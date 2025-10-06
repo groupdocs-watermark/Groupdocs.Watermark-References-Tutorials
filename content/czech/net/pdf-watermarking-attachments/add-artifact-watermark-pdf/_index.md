@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak snadno přidávat artefakty do souborů PDF pomocí Groupdocs.Watermark for .NET. Chraňte své dokumenty snadno.
 weight: 11
 url: /cs/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
+type: docs
 ---
-
 # Přidejte artefaktový vodoznak do PDF
 
 ## Úvod

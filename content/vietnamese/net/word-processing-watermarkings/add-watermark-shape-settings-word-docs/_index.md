@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ có cài đặt hình dạng vào tài liệu Word bằng GroupDocs cho .NET. Bảo vệ tài liệu của bạn một cách hiệu quả.
 weight: 20
 url: /vi/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
+type: docs
 ---
-
 # Thêm hình mờ với cài đặt hình dạng trong Word Docs
 
 ## Giới thiệu

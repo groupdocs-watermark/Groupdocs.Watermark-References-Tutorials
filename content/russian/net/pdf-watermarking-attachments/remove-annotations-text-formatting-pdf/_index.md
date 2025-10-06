@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как удалить аннотации с определенным форматированием текста в документах PDF с помощью водяных знаков для .NET.
 weight: 30
 url: /ru/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
+type: docs
 ---
-
 # Удаление аннотаций с определенным форматированием текста в PDF
 
 ## Введение

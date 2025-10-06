@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan szerezhet be dokumentuminformációkat egy adatfolyamból a GroupDocs.Watermark for .NET segítségével. Az Ön dokumentumkezelési lehetőségei könnyedén.
 weight: 12
 url: /hu/net/document-manipulation/get-document-info-stream/
+type: docs
 ---
-
 # Dokumentuminformációk lekérése a Streamről
 
 ## Bevezetés

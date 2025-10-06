@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีแทนที่ข้อความสำหรับรูปร่างเฉพาะในเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET ปฏิบัติตามบทช่วยสอนทีละขั้นตอนของเรา
 weight: 35
 url: /th/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
+type: docs
 ---
-
 # แทนที่ข้อความสำหรับรูปร่างเฉพาะในเอกสาร Word
 
 ## การแนะนำ

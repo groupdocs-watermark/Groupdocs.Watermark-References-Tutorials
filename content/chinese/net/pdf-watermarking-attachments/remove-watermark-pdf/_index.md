@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 从 PDF 文件中删除水印。专业文档编辑的简单步骤。
 weight: 34
 url: /zh/net/pdf-watermarking-attachments/remove-watermark-pdf/
+type: docs
 ---
-
 # 从 PDF 中删除水印
 
 ## 介绍

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - Java email attachment watermarking
 - watermarking with GroupDocs
-
+type: docs
 ---
-
-
 # How to Add Watermarks to Email Attachments Using GroupDocs.Watermark for Java
 
 ## Introduction

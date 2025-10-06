@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus anotasi dengan format teks tertentu dalam dokumen PDF menggunakan Groupdocs untuk .NET.
 weight: 30
 url: /id/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
+type: docs
 ---
-
 # Hapus Anotasi dengan Format Teks Tertentu di PDF
 
 ## Perkenalan

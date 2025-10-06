@@ -8,10 +8,8 @@ keywords:
 - .NET Diagram Watermarking
 - GroupDocs.Watermark for .NET
 - Diagram Document Manipulation
-
+type: docs
 ---
-
-
 # .NET Diagram Document Watermarking: Master GroupDocs.Watermark for .NET
 
 ## Introduction

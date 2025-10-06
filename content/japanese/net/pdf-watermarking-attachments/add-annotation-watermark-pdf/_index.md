@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、PDF ドキュメントに注釈のウォーターマークを簡単に追加する方法を学びます。ドキュメントのブランディングとセキュリティを簡単に強化します。
 weight: 10
 url: /ja/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
+type: docs
 ---
-
 # 注釈の透かしを PDF に追加する
 
 ## 導入

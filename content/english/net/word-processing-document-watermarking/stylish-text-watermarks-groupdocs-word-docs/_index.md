@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark for .NET
 - Stylish Text Watermarks in Word
 - Text Effects for Document Security
-
+type: docs
 ---
-
-
 # Applying Stylish Text Effects to Shape Watermarks in Word Documents Using GroupDocs.Watermark for .NET
 
 ## Introduction

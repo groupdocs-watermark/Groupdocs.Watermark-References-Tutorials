@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat hozzá vízjeleket Word-dokumentumok képeinek formázásához a GroupDocs.Watermark for .NET segítségével. Növelje a dokumentumok biztonságát ezzel az oktatóanyaggal.
 weight: 17
 url: /hu/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
+type: docs
 ---
-
 # Adjon hozzá vízjelet az alakzatképekhez a Word Dokumentumokban
 
 ## Bevezetés

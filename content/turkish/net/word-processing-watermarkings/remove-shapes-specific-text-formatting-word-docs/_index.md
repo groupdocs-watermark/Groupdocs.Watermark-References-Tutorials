@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinde belirli metin formatına sahip şekilleri nasıl kaldıracağınızı öğrenin. Filigranların verimli şekilde işlenmesi için kılavuzumuzu takip edin.
 weight: 31
 url: /tr/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
+type: docs
 ---
-
 # Word Belgelerindeki Belirli Metin Biçimlendirmesine Sahip Şekilleri Kaldırma
 
 ## giriiş

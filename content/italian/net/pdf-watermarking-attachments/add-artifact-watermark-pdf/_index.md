@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere filigrane di artefatti ai file PDF senza sforzo utilizzando Groupdocs.Watermark per .NET. Proteggi i tuoi documenti con facilità.
 weight: 11
 url: /it/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
+type: docs
 ---
-
 # Aggiungi filigrana artefatto al PDF
 
 ## introduzione

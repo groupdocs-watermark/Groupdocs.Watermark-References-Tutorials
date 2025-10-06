@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять, удалять и извлекать водяные знаки в документах с помощью GroupDocs для .NET, с помощью этого подробного пошагового руководства.
 weight: 11
 url: /ru/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Получить информацию о документе с локального диска
 
 ## Введение

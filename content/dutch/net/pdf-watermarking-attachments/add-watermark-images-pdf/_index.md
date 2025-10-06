@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer watermerken toevoegen aan afbeeldingen in PDF-documenten met GroupDocs.Watermark voor .NET met onze gedetailleerde, stapsgewijze zelfstudie. Beveilig uw PDF's eenvoudig.
 weight: 19
 url: /nl/net/pdf-watermarking-attachments/add-watermark-images-pdf/
+type: docs
 ---
-
 # Voeg watermerk toe aan afbeeldingen in PDF
 
 ## Invoering

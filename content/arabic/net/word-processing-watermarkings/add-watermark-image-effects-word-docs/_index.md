@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية مع تأثيرات الصورة إلى مستندات Word الخاصة بك باستخدام GroupDocs.Watermark لـ .NET. اتبع دليلنا خطوة بخطوة للحصول على نتائج مذهلة.
 weight: 19
 url: /ar/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
+type: docs
 ---
-
 # أضف علامة مائية مع تأثيرات الصورة في مستندات Word
 
 ## مقدمة

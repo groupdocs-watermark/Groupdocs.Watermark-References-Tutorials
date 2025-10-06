@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: इस गाइड से जानें कि .NET के लिए GroupDocs.Watermark का उपयोग करके दस्तावेज़ों में वॉटरमार्क कैसे जोड़ें। दस्तावेज़ सुरक्षा बढ़ाने की चाहत रखने वाले डेवलपर्स के लिए बिल्कुल सही।
 weight: 11
 url: /hi/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # स्ट्रीम से दस्तावेज़ लोड करें
 
 ## परिचय

@@ -8,10 +8,8 @@ keywords:
 - replace PDF watermarks .NET
 - GroupDocs.Watermark for .NET
 - update PDF image watermarks
-
+type: docs
 ---
-
-
 # How to Replace PDF Watermarks Using GroupDocs.Watermark for .NET
 
 ## Introduction

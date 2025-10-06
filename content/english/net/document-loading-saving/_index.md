@@ -3,8 +3,8 @@ title: "Document Loading and Saving Operations with GroupDocs.Watermark for .NET
 description: "Learn how to load documents from various sources and save watermarked files using GroupDocs.Watermark for .NET."
 weight: 2
 url: "/net/document-loading-saving/"
+type: docs
 ---
-
 # Document Loading and Saving Operations with GroupDocs.Watermark for .NET
 
 Our document loading and saving tutorials provide comprehensive guidance for working with files in various formats using GroupDocs.Watermark for .NET. These step-by-step guides demonstrate how to load documents from disk, streams, and other sources, handle password-protected files, and save documents after watermarking operations. Each tutorial includes complete C# code examples for implementing robust document management features in your watermarking applications.

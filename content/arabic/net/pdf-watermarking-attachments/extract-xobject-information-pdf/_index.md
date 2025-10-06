@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: أطلق العنان لقوة وضع العلامات المائية على المستندات باستخدام GroupDocs.Watermark لـ .NET. إدارة العلامات المائية بسلاسة في ملفات PDF ومستندات Word والصور.
 weight: 25
 url: /ar/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
+type: docs
 ---
-
 # استخراج معلومات XObject من PDF
 
 ## مقدمة

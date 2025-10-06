@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn to add text and image watermarks to specific pages in PDFs using Groupdocs.Watermark for .NET. Follow our detailed guide to secure your documents.
 weight: 15
 url: /net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
+type: docs
 ---
-
 # Add Watermarks to Specific Pages in PDF
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air dengan jenis margin halaman di PDF menggunakan Groupdocs untuk .NET. Amankan dokumen Anda dengan mudah.
 weight: 21
 url: /id/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # Tambahkan Tanda Air dengan Jenis Margin Halaman di PDF
 
 ## Perkenalan

@@ -8,10 +8,8 @@ keywords:
 - extract PDF annotations .NET
 - GroupDocs Watermark for .NET setup
 - annotation extraction using GroupDocs
-
+type: docs
 ---
-
-
 # How to Extract PDF Annotations Using GroupDocs.Watermark .NET
 
 ## Introduction

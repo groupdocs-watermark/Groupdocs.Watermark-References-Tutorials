@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية ربط الرؤوس والتذييلات بشكل فعال داخل أقسام مستندات Word باستخدام GroupDocs.Watermark لـ .NET. إدارة الوثائق والأمن.
 weight: 26
 url: /ar/net/word-processing-watermarkings/link-header-footer-section-word-docs/
+type: docs
 ---
-
 # ربط الرأس/التذييل في القسم في مستندات Word
 
 ## مقدمة

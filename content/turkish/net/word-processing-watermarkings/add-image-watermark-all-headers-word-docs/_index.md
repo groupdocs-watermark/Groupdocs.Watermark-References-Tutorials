@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki tüm başlıklara kolayca görüntü filigranları ekleyin. Ayrıntılı kod örneklerinin yer aldığı adım adım kılavuzumuzu takip edin.
 weight: 10
 url: /tr/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # Word Dokümanlarındaki Tüm Başlıklara Resim Filigranı Ekleme
 
 ## giriiş

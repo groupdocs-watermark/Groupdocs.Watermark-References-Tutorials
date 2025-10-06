@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Защитите свои документы, добавив заблокированные водяные знаки с помощью Groupdocs.Watermark для .NET. Следуйте нашему пошаговому руководству, чтобы упростить реализацию.
 weight: 11
 url: /ru/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
+type: docs
 ---
-
 # Добавить заблокированный водяной знак на все страницы в документах Word
 
 ## Введение

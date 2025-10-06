@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit Groupdocs für .NET Text- und Bildwasserzeichen zu bestimmten Seiten in PDFs hinzufügen. Befolgen Sie unsere detaillierte Anleitung, um Ihre Dokumente zu sichern.
 weight: 15
 url: /de/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
+type: docs
 ---
-
 # Fügen Sie Wasserzeichen zu bestimmten Seiten in PDF hinzu
 
 ## Einführung

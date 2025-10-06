@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak nastavit různá záhlaví a zápatí na první stránce dokumentů Word pomocí GroupDocs.Watermark for .NET.
 weight: 36
 url: /cs/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Nastavit jiné záhlaví/zápatí první stránky v Dokumentech aplikace Word
 
 ## Úvod

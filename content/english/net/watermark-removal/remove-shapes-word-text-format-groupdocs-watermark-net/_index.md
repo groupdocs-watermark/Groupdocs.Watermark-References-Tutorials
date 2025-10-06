@@ -8,10 +8,8 @@ keywords:
 - remove shapes Word
 - GroupDocs Watermark .NET
 - text format criteria
-
+type: docs
 ---
-
-
 # How to Remove Shapes by Text Format in Word Documents Using GroupDocs.Watermark .NET
 
 ## Introduction

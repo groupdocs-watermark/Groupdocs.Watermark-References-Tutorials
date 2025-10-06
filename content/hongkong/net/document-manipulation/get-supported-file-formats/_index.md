@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 輕鬆地在文件中新增浮水印。請遵循我們全面的逐步指南來保護您的數位資產。
 weight: 13
 url: /zh-hant/net/document-manipulation/get-supported-file-formats/
+type: docs
 ---
-
 # 取得支援的文件格式
 
 ## 介紹

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat hozzá csak nyomtatható jegyzetvízjeleket PDF-fájlokhoz a GroupDocs.Watermark for .NET segítségével. Fokozatmentesen fokozza a dokumentumok biztonságát és a márkaépítést.
 weight: 13
 url: /hu/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
+type: docs
 ---
-
 # Csak nyomtatási megjegyzés vízjel hozzáadása a PDF-hez
 
 ## Bevezetés

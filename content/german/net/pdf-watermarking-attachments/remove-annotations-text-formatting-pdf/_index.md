@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit Groupdocs für .NET Anmerkungen mit spezifischer Textformatierung in PDF-Dokumenten entfernen.
 weight: 30
 url: /de/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
+type: docs
 ---
-
 # Entfernen Sie Anmerkungen mit spezifischer Textformatierung in PDF
 
 ## Einführung

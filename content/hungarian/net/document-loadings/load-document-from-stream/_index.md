@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ebből az útmutatóból megtudhatja, hogyan adhat vízjeleket dokumentumokhoz a GroupDocs.Watermark for .NET segítségével. Tökéletes azoknak a fejlesztőknek, akik javítani szeretnék a dokumentumbiztonságot.
 weight: 11
 url: /hu/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # Dokumentum betöltése a Streamből
 
 ## Bevezetés

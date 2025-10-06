@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα σχολιασμού μόνο για εκτύπωση σε αρχεία PDF χρησιμοποιώντας το GroupDocs.Watermark για .NET. Βελτιώστε την ασφάλεια των εγγράφων και την επωνυμία χωρίς κόπο.
 weight: 13
 url: /el/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
+type: docs
 ---
-
 # Προσθήκη υδατογραφήματος σχολιασμού μόνο εκτύπωσης σε PDF
 
 ## Εισαγωγή

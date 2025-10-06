@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 有效地取代 PDF 中的文字。將浮水印無縫整合到您的 .NET 應用程式中。
 weight: 44
 url: /zh-hant/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
+type: docs
 ---
-
 # 替換 PDF 中特定 XObject 的文本
 
 ## 介紹

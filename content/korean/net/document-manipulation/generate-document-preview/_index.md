@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 이 가이드를 통해 .NET용 GroupDocs.Watermark를 사용하여 문서 미리보기를 생성하는 방법을 알아보세요. 문서 보안 및 관리를 손쉽게 강화하세요.
 weight: 10
 url: /ko/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # 문서 미리보기 생성
 
 ## 소개

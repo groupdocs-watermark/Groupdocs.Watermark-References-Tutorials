@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak belirli metin formatına sahip XObject'leri PDF'lerden zahmetsizce kaldırın. Kusursuz belge işleme için kılavuzumuzu takip edin.
 weight: 36
 url: /tr/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
+type: docs
 ---
-
 # PDF'de Özel Metin Formatına Sahip XObject'leri Kaldırma
 
 ## giriiş

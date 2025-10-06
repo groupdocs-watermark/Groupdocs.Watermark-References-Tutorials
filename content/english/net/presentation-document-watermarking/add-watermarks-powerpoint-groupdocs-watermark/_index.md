@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark PowerPoint
 - text watermarks in PowerPoint
 - adding watermarks with GroupDocs
-
+type: docs
 ---
-
-
 # How to Add and Customize Text Watermarks in PowerPoint Presentations Using GroupDocs.Watermark for .NET
 
 **Introduction**

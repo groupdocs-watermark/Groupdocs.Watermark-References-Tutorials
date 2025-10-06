@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs for .NET を使用して Word 文書からウォーターマークを効率的に検索して削除し、文書の整合性と専門性を確保する方法を学びます。
 weight: 22
 url: /ja/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # Word ドキュメントのヘッダー/フッターでウォーターマークを検索する
 
 ## 導入

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、画像効果のあるウォーターマークを Word 文書に追加する方法を学びます。素晴らしい結果を得るには、ステップバイステップのガイドに従ってください。
 weight: 19
 url: /ja/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
+type: docs
 ---
-
 # Word ドキュメントに画像効果を使用して透かしを追加する
 
 ## 導入

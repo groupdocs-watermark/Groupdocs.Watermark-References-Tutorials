@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in diesem umfassenden Schritt-für-Schritt-Tutorial, wie Sie Text in bestimmten PDF-Anmerkungen mit Groupdocs.Watermark für .NET ersetzen.
 weight: 40
 url: /de/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
+type: docs
 ---
-
 # Ersetzen Sie Text für spezifische Anmerkungen in PDF
 
 ## Einführung

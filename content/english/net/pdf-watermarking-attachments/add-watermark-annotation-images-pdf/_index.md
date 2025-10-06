@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to protect your PDF documents by adding watermarks to annotation images using Groupdocs.Watermark for .NET.
 weight: 17
 url: /net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
+type: docs
 ---
-
 # Add Watermark to Annotation Images in PDF
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - remove attachments excel java
 - groupdocs watermark excel java
 - excel file management java
-
+type: docs
 ---
-
-
 # How to Remove Attachments from Excel with GroupDocs.Watermark in Java
 ## Introduction
 Managing attachments within Excel worksheets is crucial for optimizing data storage and maintaining privacy. This tutorial will guide you through removing unnecessary attachments using GroupDocs.Watermark for Java.

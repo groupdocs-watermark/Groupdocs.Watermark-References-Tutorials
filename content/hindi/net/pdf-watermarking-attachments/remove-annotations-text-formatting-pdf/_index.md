@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: जानें कि .NET के लिए वॉटरमार्क का उपयोग करके पीडीएफ दस्तावेजों में विशिष्ट टेक्स्ट फ़ॉर्मेटिंग के साथ एनोटेशन कैसे हटाएं।
 weight: 30
 url: /hi/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
+type: docs
 ---
-
 # पीडीएफ में विशिष्ट टेक्स्ट फ़ॉर्मेटिंग के साथ एनोटेशन हटाएं
 
 ## परिचय

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Enhance document security with GroupDocs.Watermark for .NET. Add watermarks to PDF and other formats seamlessly.
 weight: 28
 url: /net/pdf-watermarking-attachments/rasterize-pdf-page/
+type: docs
 ---
-
 # Rasterize PDF Page
 
 ## Introduction

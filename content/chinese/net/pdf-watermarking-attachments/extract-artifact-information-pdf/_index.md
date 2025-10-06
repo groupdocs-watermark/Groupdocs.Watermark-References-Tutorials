@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 从 PDF 文件中提取工件信息。增强您的文档处理能力。
 weight: 24
 url: /zh/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
+type: docs
 ---
-
 # 从 PDF 中提取工件信息
 
 ## 介绍

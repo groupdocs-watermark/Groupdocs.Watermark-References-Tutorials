@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: दस्तावेज़ की अखंडता और व्यावसायिकता सुनिश्चित करते हुए, .NET के लिए वॉटरमार्क का उपयोग करके Word दस्तावेज़ों से वॉटरमार्क को कुशलतापूर्वक ढूँढना और हटाना सीखें।
 weight: 22
 url: /hi/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में हेडर/फुटर में वॉटरमार्क ढूंढें
 
 ## परिचय

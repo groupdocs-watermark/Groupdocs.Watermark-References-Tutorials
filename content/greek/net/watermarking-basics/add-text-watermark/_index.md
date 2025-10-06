@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα κειμένου στα έγγραφά σας χρησιμοποιώντας το υδατογράφημα Groupdocs για .NET με αυτόν τον αναλυτικό οδηγό.
 weight: 11
 url: /el/net/watermarking-basics/add-text-watermark/
+type: docs
 ---
-
 # Προσθήκη υδατογραφήματος κειμένου
 
 ## Εισαγωγή

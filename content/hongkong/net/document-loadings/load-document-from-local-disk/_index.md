@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 使用 Groupdocs for .NET 保護和管理您的文件。按照我們的詳細指南無縫添加浮水印。
 weight: 10
 url: /zh-hant/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # 從本機磁碟載入文檔
 
 ## 介紹

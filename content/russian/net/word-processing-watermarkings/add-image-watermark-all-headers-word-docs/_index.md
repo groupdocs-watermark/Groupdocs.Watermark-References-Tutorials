@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Легко добавляйте водяные знаки изображений ко всем заголовкам в документах Word с помощью GroupDocs.Watermark для .NET. Следуйте нашему пошаговому руководству с подробными примерами кода.
 weight: 10
 url: /ru/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # Добавьте водяной знак изображения ко всем заголовкам в документах Word
 
 ## Введение

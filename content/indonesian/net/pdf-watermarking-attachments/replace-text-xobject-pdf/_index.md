@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Ganti teks dalam PDF secara efisien menggunakan GroupDocs.Watermark untuk .NET. Integrasikan watermarking dengan mulus ke dalam aplikasi .NET Anda.
 weight: 44
 url: /id/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
+type: docs
 ---
-
 # Ganti Teks untuk XObject Tertentu di PDF
 
 ## Perkenalan

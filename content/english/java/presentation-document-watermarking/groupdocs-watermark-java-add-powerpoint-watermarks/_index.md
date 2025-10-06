@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - PowerPoint watermarks
 - Java presentation watermarking
-
+type: docs
 ---
-
-
 # Add Watermarks to PowerPoint Presentations Using GroupDocs.Watermark for Java
 
 ## Introduction

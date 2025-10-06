@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Ersetzen Sie Text in PDFs effizient mit GroupDocs.Watermark für .NET. Integrieren Sie Wasserzeichen nahtlos in Ihre .NET-Anwendungen.
 weight: 44
 url: /de/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
+type: docs
 ---
-
 # Ersetzen Sie Text für ein bestimmtes XObject in PDF
 
 ## Einführung

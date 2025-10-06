@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment supprimer des artefacts avec une mise en forme de texte spécifique dans un PDF à l'aide de GroupDocs pour .NET. Suivez notre guide étape par étape.
 weight: 32
 url: /fr/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
+type: docs
 ---
-
 # Supprimer les artefacts avec un formatage de texte spécifique dans un PDF
 
 ## Introduction

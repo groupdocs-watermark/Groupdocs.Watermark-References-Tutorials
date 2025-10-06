@@ -8,10 +8,8 @@ keywords:
 - .NET watermarking
 - GroupDocs.Watermark
 - text watermarks
-
+type: docs
 ---
-
-
 # Implementing .NET Watermarking with GroupDocs.Watermark: Stream and Text Guide
 ## Introduction
 In today's digital landscape, protecting your documents is crucial for safeguarding intellectual property and ensuring confidentiality. Adding watermarks can be a powerful tool in this effort. This tutorial provides an efficient approach to implementing .NET watermarking using the robust GroupDocs.Watermark library.

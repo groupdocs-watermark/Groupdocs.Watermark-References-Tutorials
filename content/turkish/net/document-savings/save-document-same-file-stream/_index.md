@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs.Watermark for .NET'i kullanarak belgelere nasıl filigran ekleyeceğinizi öğrenin. Bu kılavuz, belgenin korunmasını ve bütünlüğünü sağlamaya yönelik talimatlar sağlar.
 weight: 10
 url: /tr/net/document-savings/save-document-same-file-stream/
+type: docs
 ---
-
 # Belgeyi Aynı Dosyaya veya Akışa Kaydetme
 
 ## giriiş

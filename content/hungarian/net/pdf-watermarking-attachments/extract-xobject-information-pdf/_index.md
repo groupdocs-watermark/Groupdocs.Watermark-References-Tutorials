@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: A GroupDocs.Watermark for .NET segítségével felszabadíthatja a dokumentumok vízjelezésének erejét. Zökkenőmentesen kezelheti a vízjeleket PDF-ekben, Word-dokumentumokban és képekben.
 weight: 25
 url: /hu/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
+type: docs
 ---
-
 # Az XObject információ kibontása PDF-ből
 
 ## Bevezetés

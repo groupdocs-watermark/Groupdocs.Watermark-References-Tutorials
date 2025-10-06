@@ -6,8 +6,8 @@ description: Fedezze fel a GroupDocs.Watermark erejét .NET és Java oktatóanya
 weight: 11
 url: /hu/
 is_root: true
+type: docs
 ---
-
 # Master Document Security & Branding a GroupDocs.Watermark segítségével
 
 

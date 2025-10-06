@@ -3,8 +3,8 @@ title: "Email Message Watermarking Tutorials for GroupDocs.Watermark Java"
 description: "Complete tutorials for working with email messages, extracting and watermarking attachments, and managing embedded content using GroupDocs.Watermark for Java."
 weight: 9
 url: "/java/email-document-watermarking/"
+type: docs
 ---
-
 # Email Message Watermarking Tutorials for GroupDocs.Watermark Java
 
 Our email watermarking tutorials provide comprehensive guidance for implementing security and branding in email messages and their attachments using GroupDocs.Watermark for Java. These practical guides demonstrate how to extract and watermark email attachments, add embedded images, update message body content, and work with recipient information. Each tutorial includes working Java code examples for common email processing scenarios, helping you build solutions that maintain document security across email-based document distribution.

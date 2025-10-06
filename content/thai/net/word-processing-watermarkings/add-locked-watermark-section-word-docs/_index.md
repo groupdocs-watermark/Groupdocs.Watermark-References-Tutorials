@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำที่ล็อคไว้ในส่วนเฉพาะในเอกสาร Word โดยใช้ Groupdocs ลายน้ำสำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนที่ครอบคลุมนี้
 weight: 13
 url: /th/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # เพิ่มลายน้ำที่ล็อคไว้ในส่วนในเอกสาร Word
 
 ## การแนะนำ

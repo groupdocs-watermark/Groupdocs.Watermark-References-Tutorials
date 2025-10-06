@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Bu adım adım kılavuzla GroupDocs.Watermark for .NET'i kullanarak bir akıştan belge bilgilerini nasıl alacağınızı öğrenin. Belge yönetimi yetenekleriniz zahmetsizce.
 weight: 12
 url: /tr/net/document-manipulation/get-document-info-stream/
+type: docs
 ---
-
 # Akıştan Belge Bilgilerini Al
 
 ## giriiş

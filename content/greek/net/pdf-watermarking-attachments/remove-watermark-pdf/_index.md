@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αφαιρείτε υδατογραφήματα από αρχεία PDF χρησιμοποιώντας το GroupDocs.Watermark για .NET. Εύκολα βήματα για επαγγελματική επεξεργασία εγγράφων.
 weight: 34
 url: /el/net/pdf-watermarking-attachments/remove-watermark-pdf/
+type: docs
 ---
-
 # Αφαιρέστε το υδατογράφημα από το PDF
 
 ## Εισαγωγή

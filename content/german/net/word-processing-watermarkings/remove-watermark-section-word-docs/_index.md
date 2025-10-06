@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Wasserzeichen aus bestimmten Abschnitten in Word-Dokumenten entfernen. Umfassendes Tutorial hier verfügbar.
 weight: 32
 url: /de/net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # Wasserzeichen aus Abschnitt in Word-Dokumenten entfernen
 
 ## Einführung

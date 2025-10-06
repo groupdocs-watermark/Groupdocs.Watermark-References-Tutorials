@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark
 - shape removal
 - diagram editing
-
+type: docs
 ---
-
-
 # Mastering Shape Removal in Diagrams Using GroupDocs.Watermark for .NET
 
 ## Introduction

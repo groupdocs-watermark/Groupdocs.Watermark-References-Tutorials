@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit Groupdocs.Watermark für .NET Wasserzeichen zu Dokumenten hinzufügen. Dieses Handbuch enthält Anweisungen zur Gewährleistung des Schutzes und der Integrität von Dokumenten.
 weight: 10
 url: /de/net/document-savings/save-document-same-file-stream/
+type: docs
 ---
-
 # Dokument in derselben Datei oder demselben Stream speichern
 
 ## Einführung

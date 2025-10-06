@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα εικόνων με πλακάκια στα έγγραφά σας χρησιμοποιώντας το GroupDocs.Watermark για .NET. Εύκολο, αποτελεσματικό και προσαρμόσιμο.
 weight: 10
 url: /el/net/image-watermarkings/add-tiled-image-watermark/
+type: docs
 ---
-
 # Προσθήκη υδατογραφήματος εικόνας με πλακάκια
 
 ## Εισαγωγή

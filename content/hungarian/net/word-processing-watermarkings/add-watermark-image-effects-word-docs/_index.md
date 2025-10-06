@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat hozzá vízjeleket képeffektusokkal Word-dokumentumaihoz a GroupDocs.Watermark for .NET segítségével. Kövesse lépésről lépésre útmutatónkat a lenyűgöző eredményekért.
 weight: 19
 url: /hu/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
+type: docs
 ---
-
 # Vízjel hozzáadása képeffektusokkal a Word Dokumentumokban
 
 ## Bevezetés

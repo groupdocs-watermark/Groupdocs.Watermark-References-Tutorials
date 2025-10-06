@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να εξάγετε ιδιότητες ενότητας από έγγραφα του Word χρησιμοποιώντας το υδατογράφημα Groupdocs για .NET. Βελτιώστε τις δυνατότητες χειρισμού εγγράφων σας χωρίς κόπο.
 weight: 23
 url: /el/net/word-processing-watermarkings/get-section-properties-word-docs/
+type: docs
 ---
-
 # Λάβετε τις ιδιότητες ενότητας στα Έγγραφα του Word
 
 ## Εισαγωγή

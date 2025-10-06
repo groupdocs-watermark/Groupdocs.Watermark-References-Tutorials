@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs'u kullanarak PDF'lerdeki belirli sayfalara metin ve resim filigranları eklemeyi öğrenin. Belgelerinizi güvence altına almak için ayrıntılı kılavuzumuzu izleyin.
 weight: 15
 url: /tr/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
+type: docs
 ---
-
 # PDF'deki Belirli Sayfalara Filigran Ekleme
 
 ## giriiş

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Effortlessly add watermarks to your documents using GroupDocs.Watermark for .NET. Follow our comprehensive, step-by-step guide to protect your digital assets.
 weight: 13
 url: /net/document-manipulation/get-supported-file-formats/
+type: docs
 ---
-
 # Get Supported File Formats
 
 ## Introduction

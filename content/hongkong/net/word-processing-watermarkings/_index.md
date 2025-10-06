@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解用於 .NET 的 GroupDocs.Watermark 基本教程，以在 Word 文件中新增和管理浮水印。輕鬆增強您的文件安全性和品牌形象。
 weight: 26
 url: /zh-hant/net/word-processing-watermarkings/
+type: docs
 ---
-
 # 文字處理浮水印
 
 ## 介紹

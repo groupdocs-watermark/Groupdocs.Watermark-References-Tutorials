@@ -5,8 +5,8 @@ weight: 10
 url: /el/net/
 description: Εξερευνήστε ολοκληρωμένα μαθήματα GroupDocs.Watermark για .NET. Μάθετε να προσθέτετε, να διαχειρίζεστε και να ασφαλίζετε υδατογραφήματα σε διάφορες μορφές εγγράφων με οδηγούς βήμα προς βήμα.
 is_root: true
+type: docs
 ---
-
 # Tutorials και παραδείγματα GroupDocs.Watermark για .NET
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية لتشكيل الصور في مستندات Word باستخدام GroupDocs.Watermark لـ .NET. قم بتعزيز أمان المستندات باستخدام هذا البرنامج التعليمي.
 weight: 17
 url: /ar/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
+type: docs
 ---
-
 # أضف علامة مائية لتشكيل الصور في مستندات Word
 
 ## مقدمة

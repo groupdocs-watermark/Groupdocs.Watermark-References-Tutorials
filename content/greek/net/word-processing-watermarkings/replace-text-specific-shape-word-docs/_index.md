@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αντικαθιστάτε κείμενο για συγκεκριμένα σχήματα σε έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Ακολουθήστε το βήμα προς βήμα σεμινάριο μας.
 weight: 35
 url: /el/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
+type: docs
 ---
-
 # Αντικατάσταση κειμένου για συγκεκριμένο σχήμα στα Έγγραφα του Word
 
 ## Εισαγωγή

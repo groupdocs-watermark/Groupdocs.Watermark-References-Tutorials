@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere filigrane di annotazioni di sola stampa ai PDF utilizzando GroupDocs.Watermark per .NET. Migliora la sicurezza e il branding dei documenti senza sforzo.
 weight: 13
 url: /it/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
+type: docs
 ---
-
 # Aggiungi filigrana di annotazione di sola stampa al PDF
 
 ## introduzione

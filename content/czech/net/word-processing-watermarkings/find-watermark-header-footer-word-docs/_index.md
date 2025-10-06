@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se efektivně vyhledávat a odstraňovat vodoznaky z dokumentů Word pomocí GroupDocs Watermark for .NET, což zajišťuje integritu a profesionalitu dokumentů.
 weight: 22
 url: /cs/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # Najděte vodoznak v záhlaví/zápatí v dokumentech aplikace Word
 
 ## Úvod

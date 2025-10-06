@@ -8,10 +8,8 @@ keywords:
 - unprotect word document
 - GroupDocs Watermark C#
 - remove Word document password
-
+type: docs
 ---
-
-
 # Unprotect a Word Document without Password Using GroupDocs.Watermark in C#
 
 ## Introduction

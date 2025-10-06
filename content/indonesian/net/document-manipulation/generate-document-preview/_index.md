@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara membuat pratinjau dokumen menggunakan GroupDocs.Watermark untuk .NET dengan panduan ini. Tingkatkan keamanan dan pengelolaan dokumen Anda dengan mudah.
 weight: 10
 url: /id/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # Hasilkan Pratinjau Dokumen
 
 ## Perkenalan

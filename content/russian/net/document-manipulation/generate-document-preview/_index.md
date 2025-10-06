@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Из этого руководства вы узнаете, как создавать предварительные просмотры документов с помощью GroupDocs.Watermark для .NET. Повысьте безопасность и управление документами без особых усилий.
 weight: 10
 url: /ru/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # Создать предварительный просмотр документа
 
 ## Введение

@@ -3,8 +3,8 @@ title: "Word Document Watermarking Tutorials for GroupDocs.Watermark .NET"
 description: "Complete tutorials for implementing watermarks in Word documents, including headers, footers, and section-specific watermarking using GroupDocs.Watermark for .NET."
 weight: 6
 url: "/net/word-processing-document-watermarking/"
+type: docs
 ---
-
 # Word Document Watermarking Tutorials for GroupDocs.Watermark .NET
 
 Learn how to create professionally watermarked Word documents with our GroupDocs.Watermark for .NET tutorials. These detailed guides demonstrate how to add watermarks to specific sections or pages, implement locked watermarks that resist tampering, watermark header and footer regions, and work with shape-based watermarking techniques. Each tutorial includes working C# code examples that show how to implement effective document protection and branding in Microsoft Word documents while maintaining document formatting and structure.

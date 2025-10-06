@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: हमारे विस्तृत, चरण-दर-चरण ट्यूटोरियल के साथ .NET के लिए GroupDocs.Watermark का उपयोग करके PDF दस्तावेज़ों में छवियों में वॉटरमार्क जोड़ना सीखें। अपनी पीडीएफ़ को आसानी से सुरक्षित करें।
 weight: 19
 url: /hi/net/pdf-watermarking-attachments/add-watermark-images-pdf/
+type: docs
 ---
-
 # पीडीएफ में छवियों में वॉटरमार्क जोड़ें
 
 ## परिचय

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki şekilleri nasıl değiştireceğinizi öğrenin. Bu eğitim, verimli belge işleme için rehberlik sağlar.
 weight: 37
 url: /tr/net/word-processing-watermarkings/shape-type-usage-word-docs/
+type: docs
 ---
-
 # Word Dokümanlarında Şekil Türü Kullanımı
 
 ## giriiş

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak dodawać znaki wodne do załączników PDF za pomocą GroupDocs.Watermark dla .NET. Z łatwością zabezpiecz swoje dokumenty za pomocą niestandardowych znaków wodnych.
 weight: 16
 url: /pl/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
+type: docs
 ---
-
 # Dodaj znak wodny do wszystkich załączników w formacie PDF
 
 ## Wstęp

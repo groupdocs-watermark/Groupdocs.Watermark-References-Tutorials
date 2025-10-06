@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark
 - Java
 - Document Processing
-
+type: docs
 ---
-
-
 # How to Add Watermarks to Spreadsheets Using GroupDocs.Watermark Java
 
 ## Introduction

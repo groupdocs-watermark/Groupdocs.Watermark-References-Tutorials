@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: สำรวจ GroupDocs.Watermark สำหรับบทช่วยสอน .NET เกี่ยวกับการบันทึกเอกสารที่มีลายน้ำ เรียนรู้วิธีทีละขั้นตอนเพื่อเพิ่มความปลอดภัยและการจัดการเอกสาร
 weight: 23
 url: /th/net/document-savings/
+type: docs
 ---
-
 # การบันทึกเอกสาร
 
 ## การแนะนำ

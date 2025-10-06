@@ -8,10 +8,8 @@ keywords:
 - extract PDF attachments
 - GroupDocs Watermark Java
 - document management
-
+type: docs
 ---
-
-
 # How to Extract PDF Attachments Using GroupDocs Watermark in Java
 ## Introduction
 In today's digital world, managing document attachments, especially PDFs that often contain embedded files like images and documents, can be challenging. This tutorial will show you how to efficiently extract these attachments using **GroupDocs.Watermark for Java**.

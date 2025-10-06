@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों में आकार टेक्स्ट को स्वरूपित टेक्स्ट से बदलने का तरीका जानें। आपकी दस्तावेज़ संपादन क्षमताएँ सहजता से।
 weight: 34
 url: /hi/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में शेप टेक्स्ट को फ़ॉर्मेटेड टेक्स्ट से बदलें
 
 ## परिचय

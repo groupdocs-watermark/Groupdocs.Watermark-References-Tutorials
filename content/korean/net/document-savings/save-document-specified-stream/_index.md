@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 이 단계별 가이드를 통해 .NET용 GroupDocs.Watermark를 사용하여 지정된 스트림에 문서를 저장하는 방법을 알아보세요. 모든 수준의 개발자에게 적합합니다.
 weight: 12
 url: /ko/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # 지정된 스트림에 문서 저장
 
 ## 소개

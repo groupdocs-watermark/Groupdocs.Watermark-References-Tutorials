@@ -8,10 +8,8 @@ keywords:
 - metered license GroupDocs Watermark Java
 - GroupDocs.Watermark setup Java
 - Java document security watermarks
-
+type: docs
 ---
-
-
 # How to Set a Metered License for GroupDocs Watermark in Java
 
 ## Introduction

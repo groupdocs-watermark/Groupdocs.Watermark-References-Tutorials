@@ -3,8 +3,8 @@ title: "Diagram Watermarking Tutorials for GroupDocs.Watermark Java"
 description: "Step-by-step tutorials for implementing watermarks in diagram files, including Visio documents, using GroupDocs.Watermark for Java."
 weight: 10
 url: "/java/diagram-document-watermarking/"
+type: docs
 ---
-
 # Diagram Watermarking Tutorials for GroupDocs.Watermark Java
 
 Learn to effectively watermark diagram documents with our GroupDocs.Watermark for Java tutorials. These detailed guides show you how to add watermarks to specific pages or page types in diagrams, implement background watermarks, work with shapes and text content, and manipulate header and footer information. Each tutorial includes practical Java code examples that demonstrate how to implement security and branding features in diagram files while preserving their visual structure and technical precision.

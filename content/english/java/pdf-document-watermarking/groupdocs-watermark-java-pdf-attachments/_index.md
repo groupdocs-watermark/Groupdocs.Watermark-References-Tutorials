@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark for Java
 - watermark PDF attachments
 - Java PDF security
-
+type: docs
 ---
-
-
 # How to Secure PDF Attachments with GroupDocs Watermark for Java
 ## Introduction
 When distributing crucial projects in PDF format, it's essential to ensure document security and ownership through watermarking. With GroupDocs.Watermark for Java, adding text watermarks to non-encrypted attachments is straightforward and secure.

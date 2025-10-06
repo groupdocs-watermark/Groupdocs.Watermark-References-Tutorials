@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、Word 文書の最初のページにさまざまなヘッダーとフッターを設定する方法を学びます。
 weight: 36
 url: /ja/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Word ドキュメントで異なる最初のページのヘッダー/フッターを設定する
 
 ## 導入

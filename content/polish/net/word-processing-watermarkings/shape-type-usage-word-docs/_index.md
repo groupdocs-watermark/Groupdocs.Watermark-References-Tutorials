@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak manipulować kształtami w dokumentach programu Word przy użyciu programu GroupDocs.Watermark dla platformy .NET. Ten samouczek zawiera wskazówki dotyczące wydajnego przetwarzania dokumentów.
 weight: 37
 url: /pl/net/word-processing-watermarkings/shape-type-usage-word-docs/
+type: docs
 ---
-
 # Użycie typu kształtu w dokumentach programu Word
 
 ## Wstęp

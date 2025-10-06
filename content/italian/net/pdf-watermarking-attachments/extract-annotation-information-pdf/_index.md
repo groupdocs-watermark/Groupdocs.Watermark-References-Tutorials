@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come estrarre informazioni sulle annotazioni dai documenti PDF utilizzando GroupDocs.Watermark per .NET in questa guida dettagliata passo passo.
 weight: 23
 url: /it/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # Estrai le informazioni sulle annotazioni dal PDF
 
 ## introduzione

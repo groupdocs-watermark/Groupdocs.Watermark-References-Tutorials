@@ -8,10 +8,8 @@ keywords:
 - text watermarks Java
 - relative margins watermarking
 - GroupDocs.Watermark Java
-
+type: docs
 ---
-
-
 # Add Text Watermarks with Relative Margins in Java using GroupDocs.Watermark
 
 Watermarking is an essential technique for protecting digital images and documents from unauthorized use while maintaining brand identity or conveying important information. This tutorial guides you through adding text watermarks with relative margins to your Java applications using GroupDocs.Watermark, enhancing image processing capabilities seamlessly.

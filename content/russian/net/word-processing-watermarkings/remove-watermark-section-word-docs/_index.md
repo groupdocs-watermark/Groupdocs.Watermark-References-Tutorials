@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как удалить водяные знаки из определенных разделов документов Word с помощью GroupDocs.Watermark для .NET. Подробное руководство доступно здесь.
 weight: 32
 url: /ru/net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # Удалить водяной знак из раздела в документах Word
 
 ## Введение

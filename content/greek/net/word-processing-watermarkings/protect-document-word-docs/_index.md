@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προστατεύετε έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Ακολουθήστε το βήμα προς βήμα σεμινάριο για να προσθέσετε ασφάλεια στα έγγραφά σας χωρίς κόπο.
 weight: 28
 url: /el/net/word-processing-watermarkings/protect-document-word-docs/
+type: docs
 ---
-
 # Προστασία εγγράφου στα Έγγραφα του Word
 
 ## Εισαγωγή

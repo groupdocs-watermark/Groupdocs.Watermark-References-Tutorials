@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus artefak dari dokumen PDF dengan mudah menggunakan GroupDocs.Watermark untuk .NET. Kuasai prosesnya langkah demi langkah dengan tutorial komprehensif kami.
 weight: 31
 url: /id/net/pdf-watermarking-attachments/remove-artifact-pdf/
+type: docs
 ---
-
 # Hapus Artefak dari PDF
 
 ## Perkenalan

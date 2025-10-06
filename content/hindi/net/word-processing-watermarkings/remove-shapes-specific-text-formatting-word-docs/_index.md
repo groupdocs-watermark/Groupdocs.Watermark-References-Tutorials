@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों में विशिष्ट टेक्स्ट फ़ॉर्मेटिंग वाली आकृतियों को हटाने का तरीका जानें। वॉटरमार्क के कुशल हेरफेर के लिए हमारे गाइड का पालन करें।
 weight: 31
 url: /hi/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में विशिष्ट टेक्स्ट फ़ॉर्मेटिंग वाली आकृतियाँ हटाएँ
 
 ## परिचय

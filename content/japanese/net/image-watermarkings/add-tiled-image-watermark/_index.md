@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、タイル画像のウォーターマークをドキュメントに追加する方法を学びます。簡単、効率的、カスタマイズ可能。
 weight: 10
 url: /ja/net/image-watermarkings/add-tiled-image-watermark/
+type: docs
 ---
-
 # 並べて表示された画像の透かしを追加する
 
 ## 導入

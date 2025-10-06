@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak přidat vodoznaky s typem okraje stránky do PDF pomocí Groupdocs Watermark for .NET. Zabezpečte své dokumenty bez námahy.
 weight: 21
 url: /cs/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # Přidejte vodoznak s typem okraje stránky v PDF
 
 ## Úvod

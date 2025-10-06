@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 光柵化 PDF 文件。輕鬆增強文件安全性和視覺吸引力。
 weight: 27
 url: /zh-hant/net/pdf-watermarking-attachments/rasterize-pdf-document/
+type: docs
 ---
-
 # 光柵化 PDF 文件
 
 ## 介紹

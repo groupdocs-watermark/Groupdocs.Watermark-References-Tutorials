@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Fedezze fel az alapvető GroupDocs.Watermark for .NET oktatóanyagokat vízjelek hozzáadásához és kezeléséhez a Word dokumentumokban. Fokozza a dokumentumbiztonságot és a márkaépítést könnyedén.
 weight: 26
 url: /hu/net/word-processing-watermarkings/
+type: docs
 ---
-
 # Szövegszerkesztő vízjel
 
 ## Bevezetés

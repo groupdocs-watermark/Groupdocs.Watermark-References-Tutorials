@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как загружать документы и добавлять водяные знаки с помощью Groupdocs для .NET, с помощью этого пошагового руководства. Защитите и промаркируйте свой контент без особых усилий.
 weight: 12
 url: /ru/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # Загрузить документ определенного формата
 
 ## Введение

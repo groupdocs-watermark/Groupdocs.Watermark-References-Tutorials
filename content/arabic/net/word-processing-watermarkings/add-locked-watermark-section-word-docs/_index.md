@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامة مائية مقفلة إلى قسم معين في مستندات Word باستخدام Groupdocs لـ .NET باستخدام هذا الدليل الشامل خطوة بخطوة.
 weight: 13
 url: /ar/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # أضف علامة مائية مقفلة إلى القسم في مستندات Word
 
 ## مقدمة

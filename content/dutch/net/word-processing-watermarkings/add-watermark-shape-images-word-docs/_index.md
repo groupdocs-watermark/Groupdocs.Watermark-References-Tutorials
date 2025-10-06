@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u watermerken kunt toevoegen om afbeeldingen in Word-documenten vorm te geven met GroupDocs.Watermark voor .NET. Verbeter de documentbeveiliging met deze zelfstudie.
 weight: 17
 url: /nl/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
+type: docs
 ---
-
 # Voeg een watermerk toe aan vormafbeeldingen in Word-documenten
 
 ## Invoering

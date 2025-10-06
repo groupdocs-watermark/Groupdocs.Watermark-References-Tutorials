@@ -8,10 +8,8 @@ keywords:
 - text watermark Excel
 - GroupDocs.Watermark Java
 - Excel document security
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to Excel Sheets Using GroupDocs.Watermark for Java
 ## Spreadsheet Document Watermarking
 **SEO URL**: add-text-watermark-excel-groupdocs-watermark-java

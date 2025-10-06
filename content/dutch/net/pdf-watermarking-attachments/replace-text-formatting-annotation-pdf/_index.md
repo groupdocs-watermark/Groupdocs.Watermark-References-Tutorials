@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Verbeter de documentbeveiliging met GroupDocs voor .NET. Leer hoe u tekst moeiteloos kunt vervangen door opmaak voor annotaties in PDF-bestanden.
 weight: 41
 url: /nl/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
+type: docs
 ---
-
 # Vervang tekst door opmaak voor annotatie in PDF
 
 ## Invoering

@@ -6,8 +6,8 @@ description: .NET 및 Java 튜토리얼을 통해 GroupDocs.Watermark의 강력�
 weight: 11
 url: /ko/
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Watermark를 사용한 마스터 문서 보안 및 브랜딩
 
 

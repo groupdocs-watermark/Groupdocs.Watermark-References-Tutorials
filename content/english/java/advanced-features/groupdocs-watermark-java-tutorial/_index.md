@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - Java watermarking techniques
 - text watermarks in Java
-
+type: docs
 ---
-
-
 # Mastering GroupDocs.Watermark in Java: An SEO-Rich Tutorial
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية التعامل مع الأشكال في مستندات Word باستخدام GroupDocs.Watermark لـ .NET. يوفر هذا البرنامج التعليمي إرشادات لمعالجة المستندات بكفاءة.
 weight: 37
 url: /ar/net/word-processing-watermarkings/shape-type-usage-word-docs/
+type: docs
 ---
-
 # استخدام نوع الشكل في مستندات Word
 
 ## مقدمة

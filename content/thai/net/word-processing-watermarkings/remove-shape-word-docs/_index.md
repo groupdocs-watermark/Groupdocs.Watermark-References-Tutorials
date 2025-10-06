@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีลบรูปร่างออกจากเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET การจัดการเอกสารที่ง่าย มีประสิทธิภาพ และทรงพลัง
 weight: 30
 url: /th/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # ลบรูปร่างในเอกสาร Word
 
 ## การแนะนำ

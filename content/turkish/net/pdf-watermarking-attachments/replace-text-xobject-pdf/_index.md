@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF'lerdeki metni etkili bir şekilde değiştirin. Filigranı .NET uygulamalarınıza sorunsuz bir şekilde entegre edin.
 weight: 44
 url: /tr/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
+type: docs
 ---
-
 # PDF'deki Belirli XObject Metnini Değiştir
 
 ## giriiş

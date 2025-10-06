@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके अपने दस्तावेज़ों में आसानी से छवि वॉटरमार्क जोड़ें। अपनी बौद्धिक संपदा को आसानी से सुरक्षित रखें।
 weight: 10
 url: /hi/net/watermarking-basics/add-image-watermark/
+type: docs
 ---
-
 # छवि वॉटरमार्क जोड़ें
 
 ## परिचय

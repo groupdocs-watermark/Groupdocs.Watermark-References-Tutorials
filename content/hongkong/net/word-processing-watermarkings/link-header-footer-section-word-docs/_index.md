@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 有效連結 Word 文件各部分中的頁首和頁尾。文件管理和安全。
 weight: 26
 url: /zh-hant/net/word-processing-watermarkings/link-header-footer-section-word-docs/
+type: docs
 ---
-
 # 在 Word 文件中的節中連結頁首/頁腳
 
 ## 介紹

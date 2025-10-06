@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách tải và tạo hình mờ cho tài liệu bằng Groupdocs cho .NET với hướng dẫn từng bước này. Bảo vệ và xây dựng thương hiệu cho nội dung của bạn một cách dễ dàng.
 weight: 12
 url: /vi/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # Tải tài liệu có định dạng cụ thể
 
 ## Giới thiệu

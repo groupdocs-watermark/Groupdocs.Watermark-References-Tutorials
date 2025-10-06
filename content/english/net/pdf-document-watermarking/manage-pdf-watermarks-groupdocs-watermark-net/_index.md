@@ -8,10 +8,8 @@ keywords:
 - PDF watermark management
 - remove PDF watermarks
 - search for PDF watermarks
-
+type: docs
 ---
-
-
 # Mastering PDF Watermark Management with GroupDocs.Watermark .NET
 
 ## Introduction

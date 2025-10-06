@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 透過本指南了解如何使用 GroupDocs.Watermark for .NET 產生文件預覽。輕鬆增強您的文件安全性和管理。
 weight: 10
 url: /zh-hant/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # 生成文件預覽
 
 ## 介紹

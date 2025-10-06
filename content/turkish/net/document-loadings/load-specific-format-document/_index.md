@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Bu adım adım kılavuzla Groupdocs for .NET'i kullanarak belgeleri nasıl yükleyeceğinizi ve filigran ekleyeceğinizi öğrenin. İçeriğinizi zahmetsizce koruyun ve markalayın.
 weight: 12
 url: /tr/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # Belirli Formattaki Belgeyi Yükle
 
 ## giriiş

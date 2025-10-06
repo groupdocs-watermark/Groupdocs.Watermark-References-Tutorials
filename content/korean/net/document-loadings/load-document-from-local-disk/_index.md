@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET으로 문서를 보호하고 관리하세요. 워터마크를 원활하게 추가하려면 자세한 가이드를 따르세요.
 weight: 10
 url: /ko/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # 로컬 디스크에서 문서 로드
 
 ## 소개

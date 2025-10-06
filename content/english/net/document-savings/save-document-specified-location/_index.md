@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to easily add watermarks to your documents using GroupDocs.Watermark for .NET with this step-by-step guide. Enhance document security.
 weight: 11
 url: /net/document-savings/save-document-specified-location/
+type: docs
 ---
-
 # Save Document to Specified Location
 
 ## Introduction

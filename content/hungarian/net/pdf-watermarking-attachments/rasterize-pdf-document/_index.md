@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan raszterizálhat PDF dokumentumokat a GroupDocs.Watermark for .NET segítségével. Fokozatmentesen fokozza a dokumentumok biztonságát és vizuális vonzerejét.
 weight: 27
 url: /hu/net/pdf-watermarking-attachments/rasterize-pdf-document/
+type: docs
 ---
-
 # PDF-dokumentum raszterizálása
 
 ## Bevezetés

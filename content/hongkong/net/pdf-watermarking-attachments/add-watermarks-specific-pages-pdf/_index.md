@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解使用 Groupdocs for .NET 將文字和影像浮水印新增至 PDF 中的特定頁面。請遵循我們的詳細指南來保護您的文件。
 weight: 15
 url: /zh-hant/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
+type: docs
 ---
-
 # 為 PDF 中的特定頁面新增浮水印
 
 ## 介紹

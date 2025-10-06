@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: ค้นพบวิธีแทนที่ข้อความสำหรับส่วนเฉพาะในเอกสาร PDF โดยใช้ GroupDocs.Watermark สำหรับ .NET เพิ่มความปลอดภัยและความสมบูรณ์ของเอกสารได้อย่างง่ายดาย
 weight: 42
 url: /th/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
+type: docs
 ---
-
 # แทนที่ข้อความสำหรับสิ่งประดิษฐ์เฉพาะในรูปแบบ PDF
 
 ## การแนะนำ

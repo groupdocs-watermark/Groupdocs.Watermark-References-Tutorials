@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Groupdocs.Watermark for .NET を使用してドキュメントにウォーターマークを追加する方法を学びます。このガイドでは、文書の保護と整合性を確保するための手順を説明します。
 weight: 10
 url: /ja/net/document-savings/save-document-same-file-stream/
+type: docs
 ---
-
 # ドキュメントを同じファイルまたはストリームに保存
 
 ## 導入

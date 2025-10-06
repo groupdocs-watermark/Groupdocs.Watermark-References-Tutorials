@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να βρίσκετε και να αφαιρείτε αποτελεσματικά υδατογραφήματα από έγγραφα του Word χρησιμοποιώντας το υδατογράφημα GroupDocs για .NET, διασφαλίζοντας την ακεραιότητα και τον επαγγελματισμό των εγγράφων.
 weight: 22
 url: /el/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # Βρείτε το υδατογράφημα στην κεφαλίδα/υποσέλιδο στα Έγγραφα του Word
 
 ## Εισαγωγή

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark for Java
 - Java watermark Word document
 - add watermarks to specific pages
-
+type: docs
 ---
-
-
 # How to Add Watermarks to Specific Pages in Word Documents Using GroupDocs.Watermark for Java
 
 **Introduction**

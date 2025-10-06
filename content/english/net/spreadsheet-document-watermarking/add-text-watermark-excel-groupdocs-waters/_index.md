@@ -8,10 +8,8 @@ keywords:
 - add text watermark excel
 - GroupDocs Watermark .NET
 - Excel workbook protection
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to Excel Workbooks Using GroupDocs.Watermark for .NET
 
 ## Introduction

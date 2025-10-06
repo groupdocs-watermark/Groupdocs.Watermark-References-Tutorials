@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark .NET
 - extract headers footers diagrams
 - header footer extraction diagrams
-
+type: docs
 ---
-
-
 # Extract Headers & Footers from Diagrams with GroupDocs.Watermark for .NET
 
 ## Introduction

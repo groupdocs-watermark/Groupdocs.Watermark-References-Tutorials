@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF dosyalarından yapay bilgilerin nasıl çıkarılacağını öğrenin. Belge işleme yeteneklerinizi geliştirin.
 weight: 24
 url: /tr/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
+type: docs
 ---
-
 # Yapı Bilgilerini PDF'den Çıkarın
 
 ## giriiş

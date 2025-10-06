@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to add a locked watermark to specific pages in Word documents using GroupDocs.Watermark for .NET with our easy step-by-step guide.
 weight: 12
 url: /net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Add Locked Watermark to Specific Pages in Word Docs
 
 ## Introduction

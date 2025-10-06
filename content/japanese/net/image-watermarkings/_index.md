@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 画像ウォーターマークの追加については、GroupDocs.Watermark for .NET チュートリアルを参照してください。ドキュメントのセキュリティとブランド化を強化するための段階的な方法を学びます。
 weight: 24
 url: /ja/net/image-watermarkings/
+type: docs
 ---
-
 # 画像の透かし
 
 ## 導入

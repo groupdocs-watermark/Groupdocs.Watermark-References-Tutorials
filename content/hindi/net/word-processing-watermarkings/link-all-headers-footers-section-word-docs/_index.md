@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों में हेडर और फ़ूटर को आसानी से लिंक करें। सहजता से निरंतरता और व्यावसायिकता सुनिश्चित करें।
 weight: 25
 url: /hi/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में अनुभागों के सभी शीर्षलेख/पादलेख लिंक करें
 
 ## परिचय

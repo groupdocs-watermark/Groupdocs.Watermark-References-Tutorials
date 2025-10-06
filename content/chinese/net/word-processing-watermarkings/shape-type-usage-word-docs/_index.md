@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 操作 Word 文档中的形状。本教程提供高效文档处理的指导。
 weight: 37
 url: /zh/net/word-processing-watermarkings/shape-type-usage-word-docs/
+type: docs
 ---
-
 # Word 文档中形状类型的用法
 
 ## 介绍

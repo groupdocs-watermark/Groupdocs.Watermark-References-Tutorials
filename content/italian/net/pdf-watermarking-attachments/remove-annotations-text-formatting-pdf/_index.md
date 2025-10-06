@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come rimuovere annotazioni con formattazione di testo specifica nei documenti PDF utilizzando Groupdocs per .NET.
 weight: 30
 url: /it/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
+type: docs
 ---
-
 # Rimuovi annotazioni con formattazione di testo specifica nel PDF
 
 ## introduzione

@@ -8,10 +8,8 @@ keywords:
 - search PDF watermarks
 - text watermark search .NET
 - GroupDocs.Watermark library
-
+type: docs
 ---
-
-
 # Efficiently Searching PDF Text Watermarks with GroupDocs.Watermark .NET
 
 ## Introduction

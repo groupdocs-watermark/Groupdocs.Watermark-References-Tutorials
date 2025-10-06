@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: जानें कि .NET के लिए GroupDocs.Watermark का उपयोग करके अपने दस्तावेज़ों में टाइलयुक्त छवि वॉटरमार्क कैसे जोड़ें। आसान, कुशल और अनुकूलन योग्य।
 weight: 10
 url: /hi/net/image-watermarkings/add-tiled-image-watermark/
+type: docs
 ---
-
 # टाइलयुक्त छवि वॉटरमार्क जोड़ें
 
 ## परिचय

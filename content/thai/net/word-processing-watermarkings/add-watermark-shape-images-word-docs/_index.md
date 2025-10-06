@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำเพื่อจัดรูปร่างรูปภาพในเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET ปรับปรุงความปลอดภัยของเอกสารด้วยบทช่วยสอนนี้
 weight: 17
 url: /th/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
+type: docs
 ---
-
 # เพิ่มลายน้ำเพื่อกำหนดรูปร่างรูปภาพในเอกสาร Word
 
 ## การแนะนำ

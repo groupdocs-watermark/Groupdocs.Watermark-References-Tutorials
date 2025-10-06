@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να δημιουργείτε προεπισκοπήσεις εγγράφων χρησιμοποιώντας το GroupDocs.Watermark για .NET με αυτόν τον οδηγό. Βελτιώστε την ασφάλεια και τη διαχείριση των εγγράφων σας χωρίς κόπο.
 weight: 10
 url: /el/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # Δημιουργία προεπισκόπησης εγγράφου
 
 ## Εισαγωγή

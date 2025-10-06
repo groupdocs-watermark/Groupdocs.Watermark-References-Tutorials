@@ -8,10 +8,8 @@ keywords:
 - Java PDF Watermarking
 - GroupDocs.Watermark for Java
 - PDF Document Security
-
+type: docs
 ---
-
-
 # Comprehensive Guide to Implementing Java PDF Watermarking with GroupDocs.Watermark
 
 ## Introduction

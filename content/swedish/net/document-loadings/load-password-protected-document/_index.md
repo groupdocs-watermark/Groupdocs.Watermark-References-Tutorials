@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar i lösenordsskyddade dokument med hjälp av Groupdocs Watermark for .NET med vår steg-för-steg-guide. Säkra och märk dina filer enkelt.
 weight: 13
 url: /sv/net/document-loadings/load-password-protected-document/
+type: docs
 ---
-
 # Ladda lösenordsskyddat dokument
 
 ## Introduktion

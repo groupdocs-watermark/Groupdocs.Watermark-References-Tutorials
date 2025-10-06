@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए वॉटरमार्क के साथ अपनी .NET दस्तावेज़ हेरफेर क्षमताओं को बढ़ाएं। पीडीएफ़ में टेक्स्ट को फ़ॉर्मेटिंग से आसानी से बदलने का तरीका जानें।
 weight: 45
 url: /hi/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
+type: docs
 ---
-
 # पीडीएफ में XObject के लिए टेक्स्ट को फ़ॉर्मेटिंग से बदलें
 
 ## परिचय

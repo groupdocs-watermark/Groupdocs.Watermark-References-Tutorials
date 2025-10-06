@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 하이퍼링크를 제거하는 방법을 알아보세요. 손쉽게 문서 보안을 강화하세요.
 weight: 29
 url: /ko/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
+type: docs
 ---
-
 # Word Docs에서 하이퍼링크 제거
 
 ## 소개

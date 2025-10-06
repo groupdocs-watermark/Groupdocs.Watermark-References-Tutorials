@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: اكتشف البرامج التعليمية GroupDocs.Watermark for .NET لتحميل المستندات ووضع علامة مائية عليها، مما يضمن أمان المستندات والعلامة التجارية من خلال أدلة خطوة بخطوة.
 weight: 22
 url: /ar/net/document-loadings/
+type: docs
 ---
-
 # تحميل المستند
 
 ## مقدمة

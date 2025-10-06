@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Upptäck viktiga GroupDocs.Watermark för .NET-självstudier för att lägga till och hantera vattenstämplar i Word-dokument. Förbättra din dokumentsäkerhet och ditt varumärke utan ansträngning.
 weight: 26
 url: /sv/net/word-processing-watermarkings/
+type: docs
 ---
-
 # Ordbehandling vattenstämpel
 
 ## Introduktion

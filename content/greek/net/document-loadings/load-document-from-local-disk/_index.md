@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Προστατέψτε και διαχειριστείτε τα έγγραφά σας με το Groupdocs για το .NET. Ακολουθήστε τον λεπτομερή οδηγό μας για να προσθέσετε υδατογραφήματα απρόσκοπτα.
 weight: 10
 url: /el/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # Φόρτωση εγγράφου από τοπικό δίσκο
 
 ## Εισαγωγή

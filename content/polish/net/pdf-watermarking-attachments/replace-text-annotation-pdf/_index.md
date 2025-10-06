@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak zamienić tekst w określonych adnotacjach PDF za pomocą Groupdocs.Watermark dla .NET, korzystając z tego wszechstronnego samouczka krok po kroku.
 weight: 40
 url: /pl/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
+type: docs
 ---
-
 # Zamień tekst na konkretną adnotację w pliku PDF
 
 ## Wstęp

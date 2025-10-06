@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u alleen-afdrukbare annotatiewatermerken aan PDF's kunt toevoegen met GroupDocs.Watermark voor .NET. Verbeter moeiteloos documentbeveiliging en branding.
 weight: 13
 url: /nl/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
+type: docs
 ---
-
 # Voeg alleen print-annotatiewatermerk toe aan PDF
 
 ## Invoering

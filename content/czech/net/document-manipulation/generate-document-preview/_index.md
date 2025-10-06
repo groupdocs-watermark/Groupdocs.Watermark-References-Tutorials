@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: V této příručce se dozvíte, jak generovat náhledy dokumentů pomocí GroupDocs.Watermark for .NET. Vylepšete zabezpečení a správu dokumentů bez námahy.
 weight: 10
 url: /cs/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # Generovat náhled dokumentu
 
 ## Úvod

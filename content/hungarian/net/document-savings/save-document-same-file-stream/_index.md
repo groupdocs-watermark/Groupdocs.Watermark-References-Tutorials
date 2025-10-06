@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat vízjeleket dokumentumokhoz a Groupdocs.Watermark for .NET segítségével. Ez az útmutató utasításokat ad a dokumentumok védelmére és integritására.
 weight: 10
 url: /hu/net/document-savings/save-document-same-file-stream/
+type: docs
 ---
-
 # Mentse a dokumentumot ugyanabba a fájlba vagy adatfolyamba
 
 ## Bevezetés

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark .NET
 - text watermark positioning
 - adding text watermarks in .NET
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark Using GroupDocs.Watermark .NET (Absolute Positioning)
 
 ## Introduction

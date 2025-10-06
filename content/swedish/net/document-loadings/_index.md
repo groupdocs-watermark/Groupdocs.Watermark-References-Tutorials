@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Upptäck GroupDocs.Watermark for .NET självstudier för att ladda och vattenstämpla dokument, vilket säkerställer dokumentsäkerhet och varumärkesbyggande med steg-för-steg-guider.
 weight: 22
 url: /sv/net/document-loadings/
+type: docs
 ---
-
 # Dokument laddas
 
 ## Introduktion

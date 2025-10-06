@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Schützen Sie Ihre Dokumente ganz einfach mit Groupdocs.Watermark für .NET. Fügen Sie mühelos Wasserzeichen, Stempel und Anmerkungen hinzu.
 weight: 26
 url: /de/net/pdf-watermarking-attachments/get-pdf-dimensions/
+type: docs
 ---
-
 # Holen Sie sich PDF-Abmessungen
 
 ## Einführung

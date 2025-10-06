@@ -6,8 +6,8 @@ description: Odblokuj możliwości GroupDocs.Watermark dzięki naszym samouczkom
 weight: 11
 url: /pl/
 is_root: true
+type: docs
 ---
-
 # Bezpieczeństwo i branding dokumentów głównych dzięki GroupDocs.Watermark
 
 

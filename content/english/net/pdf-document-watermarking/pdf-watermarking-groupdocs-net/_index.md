@@ -8,10 +8,8 @@ keywords:
 - PDF Watermarking
 - GroupDocs.Watermark .NET
 - Text Watermarks in PDF
-
+type: docs
 ---
-
-
 # PDF Watermarking with GroupDocs.Watermark .NET: A Step-by-Step Guide
 
 ## Introduction

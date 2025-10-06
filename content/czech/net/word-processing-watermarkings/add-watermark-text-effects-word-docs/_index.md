@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vlastní vodoznaky s textovými efekty do dokumentů aplikace Word pomocí GroupDocs.Watermark for .NET. Zabezpečení dokumentů a vizuální přitažlivost bez námahy.
 weight: 21
 url: /cs/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
+type: docs
 ---
-
 # Přidejte vodoznak s textovými efekty v Dokumentech aplikace Word
 
 ## Úvod

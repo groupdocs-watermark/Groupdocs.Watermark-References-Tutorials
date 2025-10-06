@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengganti teks untuk bentuk tertentu di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Ikuti tutorial langkah demi langkah kami.
 weight: 35
 url: /id/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
+type: docs
 ---
-
 # Ganti Teks untuk Bentuk Tertentu di Dokumen Word
 
 ## Perkenalan

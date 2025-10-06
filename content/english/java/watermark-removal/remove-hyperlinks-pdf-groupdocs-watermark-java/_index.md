@@ -8,10 +8,8 @@ keywords:
 - Remove Hyperlinks from PDFs
 - GroupDocs.Watermark Java
 - Automate PDF Hyperlink Removal
-
+type: docs
 ---
-
-
 # Remove Hyperlinks from PDFs Using GroupDocs.Watermark for Java
 
 Are you tired of manually searching your documents for unwanted hyperlinks? With **GroupDocs.Watermark** for Java, automating this tedious task is now a breeze. This tutorial will guide you through removing specific hyperlinks from PDF documents using GroupDocs.Watermark's robust API.

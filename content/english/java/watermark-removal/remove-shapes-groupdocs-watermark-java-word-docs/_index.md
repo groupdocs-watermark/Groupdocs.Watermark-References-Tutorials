@@ -8,10 +8,8 @@ keywords:
 - remove shapes from Word documents
 - GroupDocs Watermark Java
 - Java watermark removal
-
+type: docs
 ---
-
-
 # Removing Shapes from a Word Document Using GroupDocs.Watermark in Java
 
 In today's digital age, efficiently managing and editing documents is crucial for professionals across industries. Imagine needing to remove unwanted shapes—such as images or charts—from a Word document without compromising its integrity. This comprehensive guide will walk you through the process using GroupDocs.Watermark for Java, focusing on two main functionalities: removing shapes by index and reference.

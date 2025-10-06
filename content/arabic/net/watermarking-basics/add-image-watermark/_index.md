@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: قم بإضافة علامات مائية للصور إلى مستنداتك بسهولة باستخدام GroupDocs.Watermark لـ .NET. حماية الملكية الفكرية الخاصة بك بكل سهولة.
 weight: 10
 url: /ar/net/watermarking-basics/add-image-watermark/
+type: docs
 ---
-
 # إضافة علامة مائية للصورة
 
 ## مقدمة

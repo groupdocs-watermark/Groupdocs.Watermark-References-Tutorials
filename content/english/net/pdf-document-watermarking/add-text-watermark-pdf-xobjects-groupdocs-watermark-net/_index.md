@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark .NET
 - PDF XObjects
 - text watermarks PDF
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to PDF XObjects Using GroupDocs.Watermark .NET
 
 ## Introduction

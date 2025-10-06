@@ -8,10 +8,8 @@ keywords:
 - edit diagram headers footers
 - groupdocs watermark java
 - diagram document watermarking
-
+type: docs
 ---
-
-
 # Edit Diagram Headers & Footers in Java with GroupDocs.Watermark
 
 In today's digital landscape, ensuring the accuracy of document headers and footers is crucial, especially when managing diagrams for presentations or technical documentation. GroupDocs.Watermark for Java simplifies this task. This comprehensive guide will walk you through editing diagram headers and footers using GroupDocs.Watermark in Java.

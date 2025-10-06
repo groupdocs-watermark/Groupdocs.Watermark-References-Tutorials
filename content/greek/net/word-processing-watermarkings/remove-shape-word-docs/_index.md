@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αφαιρείτε σχήματα από έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Εύκολος, αποτελεσματικός και ισχυρός χειρισμός εγγράφων.
 weight: 30
 url: /el/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # Καταργήστε το σχήμα στα Έγγραφα του Word
 
 ## Εισαγωγή

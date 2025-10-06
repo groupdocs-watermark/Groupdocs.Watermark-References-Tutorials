@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách xóa hình mờ khỏi tệp PDF bằng GroupDocs.Watermark cho .NET. Các bước dễ dàng để chỉnh sửa tài liệu chuyên nghiệp.
 weight: 34
 url: /vi/net/pdf-watermarking-attachments/remove-watermark-pdf/
+type: docs
 ---
-
 # Xóa hình mờ khỏi PDF
 
 ## Giới thiệu

@@ -6,8 +6,8 @@ description: .NET および Java チュートリアルを使用して、GroupDoc
 weight: 11
 url: /ja/
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Watermark を使用してドキュメントのセキュリティとブランディングをマスターする
 
 

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat textové vodoznaky do dokumentů pomocí Groupdocs Watermark for .NET pomocí tohoto podrobného průvodce.
 weight: 11
 url: /cs/net/watermarking-basics/add-text-watermark/
+type: docs
 ---
-
 # Přidat textový vodoznak
 
 ## Úvod

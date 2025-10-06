@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak belgelere görüntü filigranlarını nasıl ekleyeceğinizi öğrenin. Sorunsuz filigran entegrasyonu için adım adım kılavuzumuzu izleyin.
 weight: 12
 url: /tr/net/image-watermarkings/add-image-watermark-from-stream/
+type: docs
 ---
-
 # Akıştan Resim Filigranı Ekle
 
 ## giriiş

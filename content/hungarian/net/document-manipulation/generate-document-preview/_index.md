@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ebből az útmutatóból megtudhatja, hogyan hozhat létre dokumentum-előnézeteket a GroupDocs.Watermark for .NET használatával. Fokozatmentesen fokozza dokumentumbiztonságát és kezelését.
 weight: 10
 url: /hu/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # Dokumentum előnézetének létrehozása
 
 ## Bevezetés

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to add watermarks with shape settings to Word documents using GroupDocs.Watermark for .NET. Protect your documents effectively.
 weight: 20
 url: /net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
+type: docs
 ---
-
 # Add Watermark with Shape Settings in Word Docs
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Khám phá các hướng dẫn GroupDocs.Watermark for .NET cần thiết để thêm và quản lý hình mờ trong tài liệu Word. Tăng cường bảo mật tài liệu và xây dựng thương hiệu của bạn một cách dễ dàng.
 weight: 26
 url: /vi/net/word-processing-watermarkings/
+type: docs
 ---
-
 # Xử lý văn bản Hình chìm mờ
 
 ## Giới thiệu

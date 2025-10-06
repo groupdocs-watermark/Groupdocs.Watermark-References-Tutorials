@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u vormtekst vervangt door opgemaakte tekst in Word-documenten met GroupDocs.Watermark voor .NET. Uw documentbewerkingsmogelijkheden moeiteloos.
 weight: 34
 url: /nl/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # Vervang vormtekst door opgemaakte tekst in Word-documenten
 
 ## Invoering

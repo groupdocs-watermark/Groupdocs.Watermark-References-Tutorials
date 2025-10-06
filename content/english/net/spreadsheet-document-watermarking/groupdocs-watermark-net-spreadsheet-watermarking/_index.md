@@ -8,10 +8,8 @@ keywords:
 - watermark spreadsheets
 - spreadsheet document security
 - GroupDocs.Watermark .NET
-
+type: docs
 ---
-
-
 # Add Watermark to Spreadsheets Using GroupDocs.Watermark for .NET
 
 ## Introduction

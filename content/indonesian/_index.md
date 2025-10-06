@@ -6,8 +6,8 @@ description: Buka kehebatan GroupDocs.Watermark dengan tutorial .NET dan Java ka
 weight: 11
 url: /id/
 is_root: true
+type: docs
 ---
-
 # Keamanan & Pencitraan Dokumen Utama dengan GroupDocs.Watermark
 
 

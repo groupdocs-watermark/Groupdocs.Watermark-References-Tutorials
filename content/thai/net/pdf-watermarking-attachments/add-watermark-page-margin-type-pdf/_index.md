@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำด้วยประเภทระยะขอบหน้าใน PDF โดยใช้ Groupdocs รักษาความปลอดภัยเอกสารของคุณได้อย่างง่ายดาย
 weight: 21
 url: /th/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # เพิ่มลายน้ำด้วยประเภทขอบหน้าใน PDF
 
 ## การแนะนำ

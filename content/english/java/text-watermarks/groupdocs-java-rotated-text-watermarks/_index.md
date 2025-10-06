@@ -8,10 +8,8 @@ keywords:
 - rotated text watermarks
 - add watermarks to documents with GroupDocs
 - text watermarking in Java
-
+type: docs
 ---
-
-
 # How to Add Rotated Text Watermarks in Documents Using GroupDocs.Watermark for Java
 
 ## Introduction

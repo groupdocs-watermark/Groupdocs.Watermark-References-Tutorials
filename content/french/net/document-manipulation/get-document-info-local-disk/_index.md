@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter, supprimer et extraire des filigranes dans des documents à l'aide de GroupDocs Watermark for .NET avec ce guide complet étape par étape.
 weight: 11
 url: /fr/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Obtenir des informations sur le document à partir du disque local
 
 ## Introduction

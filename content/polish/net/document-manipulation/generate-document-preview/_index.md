@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Z tego przewodnika dowiesz się, jak generować podglądy dokumentów przy użyciu GroupDocs.Watermark dla platformy .NET. Bez wysiłku zwiększ bezpieczeństwo swoich dokumentów i zarządzanie nimi.
 weight: 10
 url: /pl/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # Wygeneruj podgląd dokumentu
 
 ## Wstęp

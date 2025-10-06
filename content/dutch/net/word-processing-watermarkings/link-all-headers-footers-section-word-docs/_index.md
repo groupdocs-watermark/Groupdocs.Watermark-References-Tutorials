@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Koppel moeiteloos kop- en voetteksten in Word-documenten met GroupDocs.Watermark voor .NET. Zorg met gemak voor consistentie en professionaliteit.
 weight: 25
 url: /nl/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
+type: docs
 ---
-
 # Koppel alle kop- en voetteksten in secties in Word-documenten
 
 ## Invoering

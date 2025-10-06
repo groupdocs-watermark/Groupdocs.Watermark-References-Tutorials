@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: इस चरण-दर-चरण मार्गदर्शिका से जानें कि .NET के लिए Groupdocs का उपयोग करके दस्तावेज़ों को कैसे लोड और वॉटरमार्क किया जाए। अपनी सामग्री को सहजता से सुरक्षित रखें और ब्रांड करें।
 weight: 12
 url: /hi/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # विशिष्ट प्रारूप दस्तावेज़ लोड करें
 
 ## परिचय

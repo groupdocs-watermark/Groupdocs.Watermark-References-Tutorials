@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Discover essential GroupDocs.Watermark for .NET tutorials to add and manage watermarks in Word documents. Enhance your document security and branding effortlessly.
 weight: 26
 url: /net/word-processing-watermarkings/
+type: docs
 ---
-
 # Word Processing Watermarking
 
 ## Introduction

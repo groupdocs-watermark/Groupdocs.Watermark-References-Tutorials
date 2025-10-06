@@ -8,10 +8,8 @@ keywords:
 - search text in email attachments
 - GroupDocs.Watermark .NET tutorial
 - text search email subject
-
+type: docs
 ---
-
-
 # How to Search for Text in Email Attachments Using GroupDocs.Watermark .NET
 
 ## Introduction

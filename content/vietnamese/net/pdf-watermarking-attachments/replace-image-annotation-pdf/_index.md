@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thay thế hình ảnh trong chú thích PDF cụ thể bằng GroupDocs.Watermark cho .NET. Hướng dẫn chi tiết này bao gồm mọi thứ từ tải tài liệu đến lưu thay đổi.
 weight: 37
 url: /vi/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
+type: docs
 ---
-
 # Thay thế hình ảnh cho chú thích cụ thể trong PDF
 
 ## Giới thiệu

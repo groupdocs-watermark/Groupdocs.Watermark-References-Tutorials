@@ -3,8 +3,8 @@ title: "Advanced Watermarking Features Tutorials for GroupDocs.Watermark .NET"
 description: "Step-by-step tutorials for implementing specialized watermarking techniques, protection features, and document preview with GroupDocs.Watermark for .NET."
 weight: 13
 url: "/net/advanced-features/"
+type: docs
 ---
-
 # Advanced Watermarking Features Tutorials for GroupDocs.Watermark .NET
 
 Explore advanced watermarking capabilities with our comprehensive GroupDocs.Watermark for .NET tutorials. These detailed guides cover implementing specialized features like document protection, watermark locking, unreadable character techniques, hyperlink manipulation, and document preview generation. Each tutorial includes practical C# code examples for sophisticated watermarking scenarios, helping you build robust document security solutions that go beyond basic watermarking to provide enhanced document protection and management features.

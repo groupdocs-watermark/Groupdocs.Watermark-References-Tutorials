@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 透過此逐步指南了解如何使用 Groupdocs for .NET 載入文件並為其新增浮水印。輕鬆保護您的內容並為其建立品牌。
 weight: 12
 url: /zh-hant/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # 載入特定格式文檔
 
 ## 介紹

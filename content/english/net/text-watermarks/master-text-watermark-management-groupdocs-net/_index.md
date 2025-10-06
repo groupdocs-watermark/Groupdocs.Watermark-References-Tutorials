@@ -8,10 +8,8 @@ keywords:
 - text-based watermarks management
 - search and modify watermarks in .NET
 - GroupDocs.Watermark C# implementation
-
+type: docs
 ---
-
-
 # Mastering Text-Based Watermark Management with GroupDocs.Watermark .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำให้กับเอกสารโดยใช้ GroupDocs.Watermark สำหรับ .NET พร้อมคำแนะนำนี้ เหมาะสำหรับนักพัฒนาที่ต้องการปรับปรุงความปลอดภัยของเอกสาร
 weight: 11
 url: /th/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # โหลดเอกสารจากสตรีม
 
 ## การแนะนำ

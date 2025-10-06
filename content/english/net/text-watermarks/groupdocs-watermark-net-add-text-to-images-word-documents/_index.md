@@ -8,10 +8,8 @@ keywords:
 - text watermarks in Word
 - GroupDocs.Watermark .NET setup
 - add text watermark to images
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to Images in Word Documents with GroupDocs.Watermark .NET
 
 ## Introduction

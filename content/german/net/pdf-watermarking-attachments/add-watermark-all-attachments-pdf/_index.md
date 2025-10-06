@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Wasserzeichen zu PDF-Anhängen hinzufügen. Sichern Sie Ihre Dokumente ganz einfach mit benutzerdefinierten Wasserzeichen.
 weight: 16
 url: /de/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
+type: docs
 ---
-
 # Fügen Sie allen PDF-Anhängen ein Wasserzeichen hinzu
 
 ## Einführung

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere facilmente filigrane ai tuoi documenti utilizzando GroupDocs.Watermark per .NET con questa guida passo passo. Migliora la sicurezza dei documenti.
 weight: 11
 url: /it/net/document-savings/save-document-specified-location/
+type: docs
 ---
-
 # Salva il documento nella posizione specificata
 
 ## introduzione

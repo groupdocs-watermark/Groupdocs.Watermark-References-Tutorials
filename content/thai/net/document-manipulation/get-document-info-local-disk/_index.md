@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่ม ลบ และแยกลายน้ำในเอกสารโดยใช้ GroupDocs ลายน้ำสำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนที่ครอบคลุมนี้
 weight: 11
 url: /th/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # รับข้อมูลเอกสารจาก Local Disk
 
 ## การแนะนำ

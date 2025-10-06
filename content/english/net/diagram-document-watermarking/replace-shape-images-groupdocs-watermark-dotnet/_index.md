@@ -8,10 +8,8 @@ keywords:
 - replace shape images in diagrams
 - GroupDocs.Watermark for .NET
 - diagram image replacement
-
+type: docs
 ---
-
-
 # How to Replace Shape Images in Diagrams Using GroupDocs.Watermark for .NET: A Comprehensive Guide
 
 ## Introduction

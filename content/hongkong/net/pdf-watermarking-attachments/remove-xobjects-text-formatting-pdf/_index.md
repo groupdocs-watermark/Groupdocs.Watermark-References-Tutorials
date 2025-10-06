@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 輕鬆從 PDF 中刪除具有特定文字格式的 XObject。請遵循我們的無縫文件操作指南。
 weight: 36
 url: /zh-hant/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
+type: docs
 ---
-
 # 刪除 PDF 中具有特定文字格式的 XObject
 
 ## 介紹

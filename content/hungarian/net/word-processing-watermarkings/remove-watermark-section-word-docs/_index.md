@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan távolíthat el vízjeleket a Word-dokumentumok egyes szakaszaiból a GroupDocs.Watermark for .NET segítségével. Átfogó oktatóanyag itt érhető el.
 weight: 32
 url: /hu/net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # Távolítsa el a vízjelet a Word Dokumentumok szakaszából
 
 ## Bevezetés

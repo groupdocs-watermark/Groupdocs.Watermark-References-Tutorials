@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как настроить разные верхние и нижние колонтитулы на первой странице документов Word с помощью GroupDocs.Watermark для .NET.
 weight: 36
 url: /ru/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Установите другой верхний/нижний колонтитул первой страницы в документах Word
 
 ## Введение

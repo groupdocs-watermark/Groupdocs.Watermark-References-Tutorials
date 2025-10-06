@@ -8,10 +8,8 @@ keywords:
 - text watermark in Java
 - GroupDocs Watermark Java
 - add text watermark Java
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks in Java with GroupDocs.Watermark: A Complete Guide
 
 ## Introduction

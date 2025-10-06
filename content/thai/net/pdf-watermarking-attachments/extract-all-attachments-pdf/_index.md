@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีแยกไฟล์แนบทั้งหมดจาก PDF โดยใช้ Groupdocs.Watermark สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อกระบวนการสกัดที่ราบรื่น
 weight: 22
 url: /th/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
+type: docs
 ---
-
 # แยกไฟล์แนบทั้งหมดออกจาก PDF
 
 ## การแนะนำ

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: اكتشف GroupDocs.Watermark لبرامج .NET التعليمية لإضافة علامات مائية مصورة ونصية بسهولة. قم بحماية مستنداتك باستخدام هذه الأدلة سهلة المتابعة.
 weight: 20
 url: /ar/net/watermarking-basics/
+type: docs
 ---
-
 # أساسيات العلامة المائية
 
 ## مقدمة

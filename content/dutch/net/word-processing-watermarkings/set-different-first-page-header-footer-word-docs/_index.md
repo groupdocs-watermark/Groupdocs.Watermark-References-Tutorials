@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u verschillende kop- en voetteksten instelt op de eerste pagina van Word-documenten met GroupDocs.Watermark voor .NET.
 weight: 36
 url: /nl/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Stel een andere koptekst/voettekst voor de eerste pagina in Word-documenten in
 
 ## Invoering

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - generate document previews
 - Java watermarking library
-
+type: docs
 ---
-
-
 # Generate Document Previews Using GroupDocs.Watermark in Java: Advanced Guide
 
 ## Introduction

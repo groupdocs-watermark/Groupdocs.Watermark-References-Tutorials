@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u afbeeldingen in PDF-documenten vervangt met GroupDocs.Watermark voor .NET met deze uitgebreide, stapsgewijze zelfstudie.
 weight: 38
 url: /nl/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
+type: docs
 ---
-
 # Vervang afbeelding voor specifiek artefact in PDF
 
 ## Invoering

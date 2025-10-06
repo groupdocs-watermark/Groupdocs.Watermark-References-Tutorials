@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Görüntü filigranları eklemeye ilişkin GroupDocs.Watermark for .NET eğitimlerini keşfedin. Belgenizin güvenliğini ve markasını geliştirmek için adım adım yöntemleri öğrenin.
 weight: 24
 url: /tr/net/image-watermarkings/
+type: docs
 ---
-
 # Görüntü Filigranı
 
 ## giriiş

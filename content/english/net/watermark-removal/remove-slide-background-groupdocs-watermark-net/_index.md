@@ -8,10 +8,8 @@ keywords:
 - remove slide background
 - GroupDocs.Watermark .NET
 - presentation modification
-
+type: docs
 ---
-
-
 # Efficient Slide Background Removal Using GroupDocs.Watermark for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำให้กับเอกสารที่มีการป้องกันด้วยรหัสผ่านโดยใช้ Groupdocs ลายน้ำสำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนของเรา รักษาความปลอดภัยและสร้างแบรนด์ให้กับไฟล์ของคุณได้อย่างง่ายดาย
 weight: 13
 url: /th/net/document-loadings/load-password-protected-document/
+type: docs
 ---
-
 # โหลดเอกสารที่ป้องกันด้วยรหัสผ่าน
 
 ## การแนะนำ

@@ -8,10 +8,8 @@ keywords:
 - add text watermark Visio
 - GroupDocs.Watermark for .NET
 - Visio diagram watermarking
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to Visio Diagrams Using GroupDocs.Watermark for .NET
 
 ## Introduction

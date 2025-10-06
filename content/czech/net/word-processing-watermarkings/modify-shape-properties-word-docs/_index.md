@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Chraňte své dokumenty Word pomocí GroupDocs pro .NET. Snadno upravte vlastnosti tvaru pro lepší zabezpečení.
 weight: 27
 url: /cs/net/word-processing-watermarkings/modify-shape-properties-word-docs/
+type: docs
 ---
-
 # Upravte vlastnosti tvaru v Dokumentech aplikace Word
 
 ## Úvod

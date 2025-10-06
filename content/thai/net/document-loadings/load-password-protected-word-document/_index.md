@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เพิ่มลายน้ำให้กับเอกสาร Word ที่มีการป้องกันด้วยรหัสผ่านได้อย่างง่ายดายโดยใช้ GroupDocs.Watermark สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนที่ครอบคลุมของเรา
 weight: 14
 url: /th/net/document-loadings/load-password-protected-word-document/
+type: docs
 ---
-
 # โหลดเอกสาร Word ที่ป้องกันด้วยรหัสผ่าน
 
 ## การแนะนำ

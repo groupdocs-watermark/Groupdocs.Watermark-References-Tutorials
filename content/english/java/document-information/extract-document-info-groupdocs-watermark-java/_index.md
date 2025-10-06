@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - extract document metadata Java
 - Java document information retrieval
-
+type: docs
 ---
-
-
 # Extract Document Information Using GroupDocs.Watermark for Java: A Complete Guide
 
 ## Introduction

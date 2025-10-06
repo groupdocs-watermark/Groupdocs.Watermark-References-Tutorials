@@ -8,10 +8,8 @@ keywords:
 - print-only watermark PDF
 - GroupDocs Watermark Java tutorial
 - Java PDF watermarking
-
+type: docs
 ---
-
-
 # Add Print-Only Watermarks to PDFs Using GroupDocs.Watermark Java: A Comprehensive Guide
 ## Introduction
 In today's digital age, safeguarding printed documents is as crucial as protecting them on-screen. Watermarks serve as invisible guardians, making unauthorized reproduction difficult. By ensuring these protective marks are only visible during printing and not in regular viewing mode, you add another layer of security to your PDFs. This tutorial will guide you through using GroupDocs.Watermark for Java to add print-only annotation watermarks to PDF files.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีจัดการรูปร่างในเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET บทช่วยสอนนี้ให้คำแนะนำสำหรับการประมวลผลเอกสารอย่างมีประสิทธิภาพ
 weight: 37
 url: /th/net/word-processing-watermarkings/shape-type-usage-word-docs/
+type: docs
 ---
-
 # การใช้ประเภทรูปร่างในเอกสาร Word
 
 ## การแนะนำ

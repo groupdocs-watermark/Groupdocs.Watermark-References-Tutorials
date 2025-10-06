@@ -8,10 +8,8 @@ keywords:
 - extract shape information VSDX
 - GroupDocs Watermark .NET
 - Visio diagram analysis
-
+type: docs
 ---
-
-
 # How to Extract Shape Information from VSDX Files Using GroupDocs.Watermark for .NET
 
 ## Introduction

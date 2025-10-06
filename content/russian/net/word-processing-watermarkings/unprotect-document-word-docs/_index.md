@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как легко снять защиту с документов Word с помощью GroupDocs.Watermark для .NET. Следуйте нашему пошаговому руководству.
 weight: 38
 url: /ru/net/word-processing-watermarkings/unprotect-document-word-docs/
+type: docs
 ---
-
 # Снять защиту документа в документах Word
 
 ## Введение

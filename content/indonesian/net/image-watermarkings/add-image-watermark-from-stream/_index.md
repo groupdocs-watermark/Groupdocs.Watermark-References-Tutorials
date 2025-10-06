@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air gambar ke dokumen menggunakan GroupDocs.Watermark untuk .NET. Ikuti panduan langkah demi langkah kami untuk integrasi tanda air yang lancar.
 weight: 12
 url: /id/net/image-watermarkings/add-image-watermark-from-stream/
+type: docs
 ---
-
 # Tambahkan Tanda Air Gambar dari Aliran
 
 ## Perkenalan

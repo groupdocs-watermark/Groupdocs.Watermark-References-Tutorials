@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Formen aus Word-Dokumenten entfernen. Einfache, effiziente und leistungsstarke Dokumentenbearbeitung.
 weight: 30
 url: /de/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # Entfernen Sie die Form in Word-Dokumenten
 
 ## Einführung

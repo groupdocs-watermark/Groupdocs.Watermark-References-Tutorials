@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ebből a lépésről-lépésre szóló útmutatóból megtudhatja, hogyan menthet dokumentumot egy meghatározott adatfolyamba a GroupDocs.Watermark for .NET segítségével. Tökéletes minden szintű fejlesztő számára.
 weight: 12
 url: /hu/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Dokumentum mentése a megadott adatfolyamba
 
 ## Bevezetés

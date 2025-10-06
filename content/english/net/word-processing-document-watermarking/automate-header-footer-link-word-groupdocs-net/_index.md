@@ -8,10 +8,8 @@ keywords:
 - automate header/footer linking
 - GroupDocs Watermark .NET
 - link headers footers Word
-
+type: docs
 ---
-
-
 # Automate Header/Footer Linking in Word with GroupDocs.Watermark for .NET
 
 ## Introduction

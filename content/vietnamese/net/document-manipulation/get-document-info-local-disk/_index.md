@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm, xóa và trích xuất hình mờ trong tài liệu bằng GroupDocs cho .NET với hướng dẫn từng bước toàn diện này.
 weight: 11
 url: /vi/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Nhận thông tin tài liệu từ đĩa cục bộ
 
 ## Giới thiệu

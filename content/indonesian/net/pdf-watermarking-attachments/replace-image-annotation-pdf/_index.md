@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengganti gambar dalam anotasi PDF tertentu menggunakan GroupDocs.Watermark untuk .NET. Panduan terperinci ini mencakup semuanya mulai dari memuat dokumen hingga menyimpan perubahan.
 weight: 37
 url: /id/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
+type: docs
 ---
-
 # Ganti Gambar untuk Anotasi Tertentu dalam PDF
 
 ## Perkenalan

@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Tambahkan tanda air gambar dengan mudah ke semua header di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Ikuti panduan langkah demi langkah kami dengan contoh kode terperinci.
 weight: 10
 url: /id/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # Tambahkan Tanda Air Gambar ke Semua Header di Word Docs
 
 ## Perkenalan

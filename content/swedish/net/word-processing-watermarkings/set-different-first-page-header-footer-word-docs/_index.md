@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du ställer in olika sidhuvuden och sidfötter på första sidan i Word-dokument med hjälp av GroupDocs.Watermark för .NET.
 weight: 36
 url: /sv/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Ställ in annan sidhuvud/sidfot på första sidan i Word Docs
 
 ## Introduktion

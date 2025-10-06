@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как удалять фигуры с определенным форматированием текста в документах Word с помощью GroupDocs.Watermark для .NET. Следуйте нашему руководству для эффективного манипулирования водяными знаками.
 weight: 31
 url: /ru/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
+type: docs
 ---
-
 # Удаление фигур с определенным форматированием текста в документах Word
 
 ## Введение

@@ -3,8 +3,8 @@ title: "Advanced Watermarking Features Tutorials for GroupDocs.Watermark Java"
 description: "Step-by-step tutorials for implementing specialized watermarking techniques, protection features, and document preview with GroupDocs.Watermark for Java."
 weight: 13
 url: "/java/advanced-features/"
+type: docs
 ---
-
 # Advanced Watermarking Features Tutorials for GroupDocs.Watermark Java
 
 Explore advanced watermarking capabilities with our comprehensive GroupDocs.Watermark for Java tutorials. These detailed guides cover implementing specialized features like document protection, watermark locking, unreadable character techniques, hyperlink manipulation, and document preview generation. Each tutorial includes practical Java code examples for sophisticated watermarking scenarios, helping you build robust document security solutions that go beyond basic watermarking to provide enhanced document protection and management features.

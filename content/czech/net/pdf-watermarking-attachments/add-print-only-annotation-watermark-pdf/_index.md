@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky pouze pro tisk do souborů PDF pomocí GroupDocs.Watermark for .NET. Vylepšete zabezpečení dokumentů a branding bez námahy.
 weight: 13
 url: /cs/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
+type: docs
 ---
-
 # Přidat vodoznak pouze pro tisk do PDF
 
 ## Úvod

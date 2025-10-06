@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: आसानी से छवि और टेक्स्ट वॉटरमार्क जोड़ने के लिए .NET ट्यूटोरियल के लिए GroupDocs.Watermark खोजें। पालन करने में आसान इन मार्गदर्शिकाओं से अपने दस्तावेज़ों को सुरक्षित रखें।
 weight: 20
 url: /hi/net/watermarking-basics/
+type: docs
 ---
-
 # वॉटरमार्किंग मूल बातें
 
 ## परिचय

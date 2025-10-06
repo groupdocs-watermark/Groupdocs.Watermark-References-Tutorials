@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة العلامات المائية من ملفات PDF باستخدام GroupDocs.Watermark لـ .NET. خطوات سهلة لتحرير المستندات بشكل احترافي.
 weight: 34
 url: /ar/net/pdf-watermarking-attachments/remove-watermark-pdf/
+type: docs
 ---
-
 # إزالة العلامة المائية من ملف PDF
 
 ## مقدمة

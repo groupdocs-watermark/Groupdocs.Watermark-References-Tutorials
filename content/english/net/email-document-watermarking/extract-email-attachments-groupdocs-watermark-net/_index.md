@@ -8,10 +8,8 @@ keywords:
 - extract email attachments
 - GroupDocs.Watermark for .NET
 - email document watermarking
-
+type: docs
 ---
-
-
 # How to Extract Email Attachments Using GroupDocs.Watermark for .NET
 
 ## Introduction

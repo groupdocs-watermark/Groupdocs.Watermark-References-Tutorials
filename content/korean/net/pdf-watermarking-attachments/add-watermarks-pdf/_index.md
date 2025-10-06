@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 포괄적인 단계별 가이드를 통해 .NET용 GroupDocs.Watermark를 사용하여 PDF에 텍스트 및 이미지 워터마크를 추가하는 방법을 알아보세요.
 weight: 14
 url: /ko/net/pdf-watermarking-attachments/add-watermarks-pdf/
+type: docs
 ---
-
 # PDF에 워터마크 추가
 
 ## 소개

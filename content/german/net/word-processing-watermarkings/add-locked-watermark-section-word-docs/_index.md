@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Groupdocs für .NET einem bestimmten Abschnitt in Word-Dokumenten ein gesperrtes Wasserzeichen hinzufügen.
 weight: 13
 url: /de/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # Fügen Sie dem Abschnitt in Word-Dokumenten ein gesperrtes Wasserzeichen hinzu
 
 ## Einführung

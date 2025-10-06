@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u moeiteloos annotatiewatermerken aan PDF-documenten kunt toevoegen met GroupDocs.Watermark voor .NET. Verbeter eenvoudig de branding en beveiliging van documenten.
 weight: 10
 url: /nl/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
+type: docs
 ---
-
 # Annotatiewatermerk toevoegen aan PDF
 
 ## Invoering

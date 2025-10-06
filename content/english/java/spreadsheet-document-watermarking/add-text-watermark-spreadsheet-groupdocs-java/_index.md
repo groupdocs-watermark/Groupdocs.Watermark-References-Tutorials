@@ -8,10 +8,8 @@ keywords:
 - text watermark spreadsheet Java
 - GroupDocs.Watermark for Java
 - add watermark to spreadsheets
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to a Spreadsheet Using GroupDocs.Watermark in Java
 
 ## Introduction

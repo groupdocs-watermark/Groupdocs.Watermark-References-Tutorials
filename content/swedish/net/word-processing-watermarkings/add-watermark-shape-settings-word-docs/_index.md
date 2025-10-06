@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar med forminställningar i Word-dokument med hjälp av GroupDocs Watermark for .NET. Skydda dina dokument effektivt.
 weight: 20
 url: /sv/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
+type: docs
 ---
-
 # Lägg till vattenstämpel med forminställningar i Word Docs
 
 ## Introduktion

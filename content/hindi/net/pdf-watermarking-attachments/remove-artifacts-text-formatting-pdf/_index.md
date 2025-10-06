@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: जानें कि .NET के लिए वॉटरमार्क का उपयोग करके पीडीएफ में विशिष्ट टेक्स्ट फ़ॉर्मेटिंग वाली कलाकृतियों को कैसे हटाया जाए। हमारे चरण-दर-चरण मार्गदर्शिका का पालन करें.
 weight: 32
 url: /hi/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
+type: docs
 ---
-
 # पीडीएफ में विशिष्ट टेक्स्ट फ़ॉर्मेटिंग वाली कलाकृतियाँ हटाएँ
 
 ## परिचय

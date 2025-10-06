@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak usuwać kształty z dokumentów programu Word przy użyciu narzędzia GroupDocs.Watermark dla platformy .NET. Łatwa, wydajna i wydajna manipulacja dokumentami.
 weight: 30
 url: /pl/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # Usuń kształt w dokumentach programu Word
 
 ## Wstęp

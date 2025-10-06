@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky do obrázků v dokumentech aplikace Word pomocí Groupdocs pro .NET. Postupujte podle našeho průvodce pro bezpečnou a profesionální ochranu dokumentů.
 weight: 16
 url: /cs/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
+type: docs
 ---
-
 # Přidejte vodoznak do obrázků oddílů v Dokumentech aplikace Word
 
 ## Úvod

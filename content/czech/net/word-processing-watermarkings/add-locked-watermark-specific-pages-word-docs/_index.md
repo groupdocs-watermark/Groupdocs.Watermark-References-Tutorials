@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak přidat zamčený vodoznak na konkrétní stránky v dokumentech Word pomocí GroupDocs.Watermark for .NET s naším jednoduchým průvodcem krok za krokem.
 weight: 12
 url: /cs/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Přidejte zamčený vodoznak na konkrétní stránky v Dokumentech aplikace Word
 
 ## Úvod

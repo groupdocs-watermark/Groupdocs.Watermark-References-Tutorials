@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: この詳細なステップバイステップ ガイドでは、GroupDocs.Watermark for .NET を使用して PDF ドキュメントから注釈情報を抽出する方法を学びます。
 weight: 23
 url: /ja/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # PDF から注釈情報を抽出する
 
 ## 導入

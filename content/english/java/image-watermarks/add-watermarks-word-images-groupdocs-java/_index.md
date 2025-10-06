@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - add text watermarks to Word images
 - Java watermarking in Word documents
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks to Word Document Images Using GroupDocs.Watermark for Java
 
 ## Introduction

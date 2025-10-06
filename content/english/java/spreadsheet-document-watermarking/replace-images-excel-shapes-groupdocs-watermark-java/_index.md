@@ -8,10 +8,8 @@ keywords:
 - replace images in Excel
 - Excel shape image replacement
 - GroupDocs.Watermark for Java
-
+type: docs
 ---
-
-
 # Replace Images in Excel Shapes Using GroupDocs.Watermark for Java: A Complete Guide
 
 ## Introduction

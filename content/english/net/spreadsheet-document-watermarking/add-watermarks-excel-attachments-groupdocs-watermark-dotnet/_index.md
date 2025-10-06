@@ -8,10 +8,8 @@ keywords:
 - watermark Excel attachments
 - document security with watermarks
 - branding documents using GroupDocs.Watermark
-
+type: docs
 ---
-
-
 # How to Add a Watermark to Excel Attachments Using GroupDocs.Watermark .NET
 
 ## Introduction

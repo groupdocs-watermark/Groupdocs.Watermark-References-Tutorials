@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Fedezze fel a GroupDocs.Watermark for .NET oktatóanyagait a PDF vízjelekkel és mellékletekkel kapcsolatban. Ismerje meg lépésről lépésre a PDF-fájlok biztonságának és márkaépítésének javítására szolgáló módszereket.
 weight: 25
 url: /hu/net/pdf-watermarking-attachments/
+type: docs
 ---
-
 # PDF vízjel és csatolás
 
 ## Bevezetés

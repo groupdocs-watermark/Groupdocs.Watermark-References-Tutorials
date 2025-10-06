@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Tingkatkan kemampuan manipulasi dokumen .NET Anda dengan GroupDocs untuk .NET. Pelajari cara mengganti teks dengan pemformatan dalam PDF dengan mudah.
 weight: 45
 url: /id/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
+type: docs
 ---
-
 # Ganti Teks dengan Pemformatan untuk XObject di PDF
 
 ## Perkenalan

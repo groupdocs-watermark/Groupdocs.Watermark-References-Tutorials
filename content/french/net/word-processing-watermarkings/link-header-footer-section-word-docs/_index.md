@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment lier efficacement les en-têtes et les pieds de page dans les sections de documents Word à l'aide de GroupDocs.Watermark pour .NET. Gestion et sécurité des documents.
 weight: 26
 url: /fr/net/word-processing-watermarkings/link-header-footer-section-word-docs/
+type: docs
 ---
-
 # Lier l'en-tête/le pied de page dans la section dans Word Docs
 
 ## Introduction

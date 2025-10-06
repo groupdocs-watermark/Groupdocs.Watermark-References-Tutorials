@@ -8,10 +8,8 @@ keywords:
 - remove DOCX attachments from emails
 - GroupDocs.Watermark for .NET
 - programmatically filter email attachments
-
+type: docs
 ---
-
-
 # How to Remove Specific DOCX Attachments from Emails Using GroupDocs.Watermark for .NET
 
 ## Introduction

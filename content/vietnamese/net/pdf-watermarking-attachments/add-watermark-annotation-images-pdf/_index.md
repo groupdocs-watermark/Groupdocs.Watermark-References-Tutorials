@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách bảo vệ tài liệu PDF của bạn bằng cách thêm hình mờ vào hình ảnh chú thích bằng Groupdocs.Watermark cho .NET.
 weight: 17
 url: /vi/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
+type: docs
 ---
-
 # Thêm hình mờ vào hình ảnh chú thích trong PDF
 
 ## Giới thiệu

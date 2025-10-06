@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark
 - Word Processing Document Watermarking
 - Image Watermarks in Word Documents
-
+type: docs
 ---
-
-
 # Add Image Watermarks & Link Headers in Word with GroupDocs.Watermark for .NET
 
 In today's digital landscape, safeguarding your documents while preserving their professional look is essential. Whether you're an individual or a business, ensuring that your Word documents are secure and consistent can be challenging. This tutorial will guide you through using GroupDocs.Watermark for .NET to add image watermarks to headers and link headers and footers across sections in your Word documents. By the end of this article, you'll have mastered these features and learned how to seamlessly integrate them into your projects.

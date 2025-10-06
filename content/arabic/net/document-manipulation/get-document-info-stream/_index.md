@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية الحصول على معلومات المستند من دفق باستخدام GroupDocs.Watermark لـ .NET باستخدام هذا الدليل التفصيلي خطوة بخطوة. قدرات إدارة المستندات الخاصة بك دون عناء.
 weight: 12
 url: /ar/net/document-manipulation/get-document-info-stream/
+type: docs
 ---
-
 # احصل على معلومات المستند من الدفق
 
 ## مقدمة

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять водяные знаки к объектам XObject в PDF с помощью Groupdocs.Watermark для .NET. Следуйте нашему пошаговому руководству, чтобы упростить реализацию.
 weight: 20
 url: /ru/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
+type: docs
 ---
-
 # Добавить водяной знак в XObjects в PDF
 
 ## Введение

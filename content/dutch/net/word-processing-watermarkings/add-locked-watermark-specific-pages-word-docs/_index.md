@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u een vergrendeld watermerk aan specifieke pagina's in Word-documenten kunt toevoegen met GroupDocs.Watermark voor .NET met onze eenvoudige stapsgewijze handleiding.
 weight: 12
 url: /nl/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Voeg een vergrendeld watermerk toe aan specifieke pagina's in Word-documenten
 
 ## Invoering

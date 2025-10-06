@@ -8,10 +8,8 @@ keywords:
 - retrieve PowerPoint slide dimensions
 - GroupDocs.Watermark Java API
 - Java presentation analysis
-
+type: docs
 ---
-
-
 # How to Get Slide Dimensions from a PowerPoint Presentation Using GroupDocs.Watermark Java API
 
 ## Introduction

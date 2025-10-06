@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn to add watermarks to images in PDF documents using GroupDocs.Watermark for .NET with our detailed, step-by-step tutorial. Secure your PDFs easily.
 weight: 19
 url: /net/pdf-watermarking-attachments/add-watermark-images-pdf/
+type: docs
 ---
-
 # Add Watermark to Images in PDF
 
 ## Introduction

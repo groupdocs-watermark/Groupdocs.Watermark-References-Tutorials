@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να εξάγετε πληροφορίες σχολιασμού από έγγραφα PDF χρησιμοποιώντας το GroupDocs.Watermark για .NET σε αυτόν τον αναλυτικό, βήμα προς βήμα οδηγό.
 weight: 23
 url: /el/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # Εξαγωγή πληροφοριών σχολιασμού από PDF
 
 ## Εισαγωγή

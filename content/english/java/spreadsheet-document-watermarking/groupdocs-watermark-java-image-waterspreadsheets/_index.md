@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - image watermarking spreadsheets
 - spreadsheet document security
-
+type: docs
 ---
-
-
 # Secure Spreadsheets with GroupDocs.Watermark Java: Image Watermarking Guide
 ## Introduction
 In today's digital age, protecting sensitive information within spreadsheets is more crucial than ever. Whether you're a business professional safeguarding financial data or an individual looking to secure personal documents, adding watermarks can serve as a deterrent against unauthorized use and distribution. This guide will walk you through using GroupDocs.Watermark for Java to add image watermarks and effects to your spreadsheet files, ensuring enhanced security and branding.

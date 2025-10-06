@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 이 포괄적인 단계별 가이드를 통해 Groupdocs for .NET을 사용하여 Word 문서의 특정 섹션에 잠긴 워터마크를 추가하는 방법을 알아보세요.
 weight: 13
 url: /ko/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # Word Docs의 섹션에 잠긴 워터마크 추가
 
 ## 소개

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách đặt các đầu trang và chân trang khác nhau trên trang đầu tiên của tài liệu Word bằng GroupDocs.Watermark cho .NET.
 weight: 36
 url: /vi/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Đặt đầu trang/chân trang trang đầu tiên khác nhau trong tài liệu Word
 
 ## Giới thiệu

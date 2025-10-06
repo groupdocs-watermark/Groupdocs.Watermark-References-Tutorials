@@ -8,10 +8,8 @@ keywords:
 - Word document headers and footers
 - GroupDocs.Watermark for Java
 - customizing Word documents
-
+type: docs
 ---
-
-
 # How to Set Different Headers and Footers in Word Documents Using GroupDocs.Watermark for Java
 
 ## Introduction

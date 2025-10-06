@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية استبدال الصور في تعليقات توضيحية معينة في ملفات PDF باستخدام GroupDocs.Watermark لـ .NET. يغطي هذا الدليل التفصيلي كل شيء بدءًا من تحميل المستندات وحتى حفظ التغييرات.
 weight: 37
 url: /ar/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
+type: docs
 ---
-
 # استبدال الصورة لتعليق توضيحي محدد في PDF
 
 ## مقدمة

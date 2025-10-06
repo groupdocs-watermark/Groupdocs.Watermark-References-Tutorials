@@ -8,10 +8,8 @@ keywords:
 - unprotect Word documents
 - GroupDocs Watermark Java
 - remove password protection from Word files
-
+type: docs
 ---
-
-
 # How to Unprotect Password-Protected Word Documents Using GroupDocs.Watermark for Java
 
 **Category:** Watermark Removal

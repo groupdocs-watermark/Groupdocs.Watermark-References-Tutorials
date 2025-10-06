@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية استخراج معلومات التعليقات التوضيحية من مستندات PDF باستخدام GroupDocs.Watermark لـ .NET في هذا الدليل المفصل خطوة بخطوة.
 weight: 23
 url: /ar/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # استخراج معلومات التعليق التوضيحي من PDF
 
 ## مقدمة

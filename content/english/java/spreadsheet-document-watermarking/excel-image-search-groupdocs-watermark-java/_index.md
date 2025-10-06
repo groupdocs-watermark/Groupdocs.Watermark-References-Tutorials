@@ -8,10 +8,8 @@ keywords:
 - image search in Excel
 - GroupDocs.Watermark Java setup
 - DCT hash comparison
-
+type: docs
 ---
-
-
 # Efficient Image Searches in Excel Spreadsheets Using GroupDocs.Watermark Java
 
 ## Introduction

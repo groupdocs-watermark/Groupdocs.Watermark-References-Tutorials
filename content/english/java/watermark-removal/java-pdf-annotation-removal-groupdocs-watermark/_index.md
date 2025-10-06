@@ -8,10 +8,8 @@ keywords:
 - Java PDF Annotation Removal
 - GroupDocs.Watermark Java Library
 - Remove Annotations from PDF in Java
-
+type: docs
 ---
-
-
 # How to Remove Java PDF Annotations Using GroupDocs.Watermark: A Comprehensive Guide
 
 ## Introduction

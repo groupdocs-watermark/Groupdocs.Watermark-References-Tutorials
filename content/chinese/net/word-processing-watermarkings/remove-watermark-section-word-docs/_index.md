@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 从 Word 文档中的特定部分删除水印。此处提供综合教程。
 weight: 32
 url: /zh/net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # 从 Word 文档中的部分中删除水印
 
 ## 介绍

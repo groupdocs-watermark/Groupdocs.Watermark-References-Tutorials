@@ -7,8 +7,8 @@ keywords: [document watermarking, digital document security, PDF watermarking, W
 weight: 11
 url: /
 is_root: true
+type: docs
 ---
-
 # Complete Guide to Document Watermarking with GroupDocs.Watermark
 
 ## Overview of GroupDocs.Watermark for Document Security & Branding

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come rimuovere i collegamenti ipertestuali dai documenti Word utilizzando GroupDocs.Watermark per .NET. Migliora la sicurezza dei documenti senza sforzo.
 weight: 29
 url: /it/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
+type: docs
 ---
-
 # Rimuovere i collegamenti ipertestuali nei documenti Word
 
 ## introduzione

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lägg enkelt till vattenstämplar i dina dokument med GroupDocs.Watermark för .NET. Följ vår omfattande, steg-för-steg-guide för att skydda dina digitala tillgångar.
 weight: 13
 url: /sv/net/document-manipulation/get-supported-file-formats/
+type: docs
 ---
-
 # Skaffa filformat som stöds
 
 ## Introduktion

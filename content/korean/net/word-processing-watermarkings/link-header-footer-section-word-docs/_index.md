@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서 섹션 내에서 머리글과 바닥글을 효율적으로 연결하는 방법을 알아보세요. 문서 관리 및 보안.
 weight: 26
 url: /ko/net/word-processing-watermarkings/link-header-footer-section-word-docs/
+type: docs
 ---
-
 # Word Docs 섹션의 링크 머리글/바닥글
 
 ## 소개

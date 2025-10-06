@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके आसानी से Word दस्तावेज़ों में वॉटरमार्क जोड़ें। इस सरल मार्गदर्शिका से अपनी सामग्री को सुरक्षित रखें।
 weight: 15
 url: /hi/net/word-processing-watermarkings/add-watermark-section-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में सेक्शन में वॉटरमार्क जोड़ें
 
 ## परिचय

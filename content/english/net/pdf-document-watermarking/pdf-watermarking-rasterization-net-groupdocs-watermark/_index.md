@@ -8,10 +8,8 @@ keywords:
 - PDF watermarking
 - PDF rasterization .NET
 - GroupDocs.Watermark
-
+type: docs
 ---
-
-
 # Mastering PDF Watermarking & Rasterization in .NET with GroupDocs.Watermark
 
 Secure and enhance your PDF documents by adding watermarks or converting pages into raster images. This comprehensive tutorial will guide you through using **GroupDocs.Watermark for .NET** to efficiently add text watermarks and rasterize specific PDF pages.

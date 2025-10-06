@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αφαιρείτε υδατογραφήματα από συγκεκριμένες ενότητες σε έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Ολοκληρωμένο σεμινάριο διαθέσιμο εδώ.
 weight: 32
 url: /el/net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # Καταργήστε το υδατογράφημα από την ενότητα στα Έγγραφα του Word
 
 ## Εισαγωγή

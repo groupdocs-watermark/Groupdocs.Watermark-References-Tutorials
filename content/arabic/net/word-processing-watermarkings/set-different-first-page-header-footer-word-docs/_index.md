@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية تعيين رؤوس وتذييلات مختلفة على الصفحة الأولى من مستندات Word باستخدام GroupDocs.Watermark لـ .NET.
 weight: 36
 url: /ar/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # تعيين رأس/تذييل مختلف للصفحة الأولى في مستندات Word
 
 ## مقدمة

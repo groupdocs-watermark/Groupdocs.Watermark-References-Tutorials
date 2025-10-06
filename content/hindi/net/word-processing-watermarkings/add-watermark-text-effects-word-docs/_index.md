@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों में टेक्स्ट इफ़ेक्ट के साथ कस्टम वॉटरमार्क जोड़ने का तरीका जानें। दस्तावेज़ सुरक्षा और दृश्य अपील सहजता से।
 weight: 21
 url: /hi/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में टेक्स्ट इफेक्ट्स के साथ वॉटरमार्क जोड़ें
 
 ## परिचय

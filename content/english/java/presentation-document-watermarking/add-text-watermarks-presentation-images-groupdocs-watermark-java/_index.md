@@ -8,10 +8,8 @@ keywords:
 - add text watermarks to PowerPoint images
 - GroupDocs.Watermark for Java tutorial
 - Java presentation security
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks to PowerPoint Images Using GroupDocs.Watermark for Java
 
 ## Introduction

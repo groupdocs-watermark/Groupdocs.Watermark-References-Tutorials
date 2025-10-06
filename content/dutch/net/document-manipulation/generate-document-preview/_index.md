@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer in deze handleiding hoe u documentvoorbeelden kunt genereren met GroupDocs.Watermark voor .NET. Verbeter moeiteloos uw documentbeveiliging en -beheer.
 weight: 10
 url: /nl/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # Documentvoorbeeld genereren
 
 ## Invoering

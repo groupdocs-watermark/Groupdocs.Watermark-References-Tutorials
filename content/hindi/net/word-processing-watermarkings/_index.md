@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Word दस्तावेज़ों में वॉटरमार्क जोड़ने और प्रबंधित करने के लिए .NET ट्यूटोरियल के लिए आवश्यक GroupDocs.Watermark खोजें। अपने दस्तावेज़ की सुरक्षा और ब्रांडिंग को सहजता से बढ़ाएँ।
 weight: 26
 url: /hi/net/word-processing-watermarkings/
+type: docs
 ---
-
 # वर्ड प्रोसेसिंग वॉटरमार्किंग
 
 ## परिचय

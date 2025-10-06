@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Utforska GroupDocs.Watermark för .NET självstudier om hur du sparar dokument med vattenstämplar. Lär dig steg-för-steg-metoder för att förbättra dokumentsäkerhet och hantering.
 weight: 23
 url: /sv/net/document-savings/
+type: docs
 ---
-
 # Dokument sparar
 
 ## Introduktion

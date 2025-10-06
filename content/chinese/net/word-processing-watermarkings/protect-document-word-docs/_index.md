@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 保护 Word 文档。按照我们的分步教程轻松增强文档的安全性。
 weight: 28
 url: /zh/net/word-processing-watermarkings/protect-document-word-docs/
+type: docs
 ---
-
 # 保护 Word 文档中的文档
 
 ## 介绍

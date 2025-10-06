@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark for .NET
 - list email recipients MSG files
 - email management with GroupDocs
-
+type: docs
 ---
-
-
 # Master GroupDocs.Watermark for .NET: Easily List Email Recipients in MSG Files
 
 ## Introduction

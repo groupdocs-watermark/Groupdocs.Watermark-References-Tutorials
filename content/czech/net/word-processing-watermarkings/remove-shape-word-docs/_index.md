@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se odstraňovat tvary z dokumentů aplikace Word pomocí GroupDocs.Watermark for .NET. Snadná, efektivní a výkonná manipulace s dokumenty.
 weight: 30
 url: /cs/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # Odebrat tvar v dokumentech aplikace Word
 
 ## Úvod

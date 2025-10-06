@@ -10,10 +10,8 @@ keywords:
 - WordArt Watermark
 - Excel Document
 - Watermark in Excel
-
+type: docs
 ---
-
-
 # How to Add a Modern WordArt Watermark to an Excel Document Using GroupDocs.Watermark Java
 
 ### Introduction

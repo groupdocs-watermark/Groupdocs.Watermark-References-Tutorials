@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Explore GroupDocs.Watermark for .NET tutorials on saving documents with watermarks. Learn step-by-step methods to enhance document security and management.
 weight: 23
 url: /net/document-savings/
+type: docs
 ---
-
 # Document Saving
 
 ## Introduction

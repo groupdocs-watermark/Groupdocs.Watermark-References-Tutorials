@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark
 - Net
 - Document Processing
-
+type: docs
 ---
-
-
 # How to Add a Background Watermark to Excel Sheets Using GroupDocs.Watermark .NET
 
 ## Introduction

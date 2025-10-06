@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to manipulate shapes in Word documents using GroupDocs.Watermark for .NET. This tutorial provides guidance for efficient document processing.
 weight: 37
 url: /net/word-processing-watermarkings/shape-type-usage-word-docs/
+type: docs
 ---
-
 # Shape Type Usage in Word Docs
 
 ## Introduction

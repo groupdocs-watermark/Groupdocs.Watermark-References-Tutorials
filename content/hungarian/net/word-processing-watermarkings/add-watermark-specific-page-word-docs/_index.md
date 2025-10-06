@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat vízjeleket a Word-dokumentumok bizonyos oldalaihoz a GroupDocs Watermark for .NET segítségével. Védje meg tartalmait erőfeszítés nélkül.
 weight: 14
 url: /hu/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
+type: docs
 ---
-
 # Adjon hozzá vízjelet egy adott oldalhoz a Word Dokumentumokban
 
 ## Bevezetés

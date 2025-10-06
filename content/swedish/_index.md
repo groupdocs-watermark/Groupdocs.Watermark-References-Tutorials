@@ -6,8 +6,8 @@ description: Lås upp kraften i GroupDocs.Watermark med våra .NET- och Java-han
 weight: 11
 url: /sv/
 is_root: true
+type: docs
 ---
-
 # Master Document Security & Branding med GroupDocs.Watermark
 
 

@@ -8,10 +8,8 @@ keywords:
 - extract slide background info
 - groupdocs watermark .net
 - presentation management tools
-
+type: docs
 ---
-
-
 # How to Extract Slide Background Information with GroupDocs.Watermark .NET
 
 ## Introduction

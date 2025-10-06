@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Bez námahy přidejte vodoznaky do svých dokumentů pomocí GroupDocs.Watermark pro .NET. Postupujte podle našeho komplexního průvodce krok za krokem k ochraně svých digitálních aktiv.
 weight: 13
 url: /cs/net/document-manipulation/get-supported-file-formats/
+type: docs
 ---
-
 # Získejte podporované formáty souborů
 
 ## Úvod

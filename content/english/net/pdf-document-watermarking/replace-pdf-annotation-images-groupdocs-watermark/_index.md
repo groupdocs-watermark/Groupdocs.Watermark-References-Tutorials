@@ -8,10 +8,8 @@ keywords:
 - replace PDF annotation images
 - PDF document watermarking
 - update PDF annotations
-
+type: docs
 ---
-
-
 # Replace PDF Annotation Images with GroupDocs.Watermark for .NET
 
 ## Introduction

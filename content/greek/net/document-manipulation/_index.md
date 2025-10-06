@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Εξερευνήστε μαθήματα GroupDocs.Watermark για .NET σχετικά με τη δημιουργία προεπισκοπήσεων εγγράφων και τη διαχείριση υδατογραφημάτων. Βελτιώστε την ασφάλεια και τη διαχείριση των εγγράφων.
 weight: 21
 url: /el/net/document-manipulation/
+type: docs
 ---
-
 # Χειρισμός εγγράφων
 
 ## Εισαγωγή

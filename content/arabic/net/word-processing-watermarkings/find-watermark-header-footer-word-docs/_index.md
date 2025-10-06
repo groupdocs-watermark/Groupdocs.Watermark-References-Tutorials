@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية العثور على العلامات المائية وإزالتها بكفاءة من مستندات Word باستخدام GroupDocs لـ .NET، مما يضمن سلامة المستندات واحترافيتها.
 weight: 22
 url: /ar/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # ابحث عن العلامة المائية في الرأس/التذييل في مستندات Word
 
 ## مقدمة

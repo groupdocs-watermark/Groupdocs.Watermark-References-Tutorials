@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 簡単なステップバイステップ ガイドで、GroupDocs.Watermark for .NET を使用して Word 文書の特定のページにロックされたウォーターマークを追加する方法を学びます。
 weight: 12
 url: /ja/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Word ドキュメントの特定のページにロックされた透かしを追加する
 
 ## 導入

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs for .NET 删除 PDF 文档中具有特定文本格式的注释。
 weight: 30
 url: /zh/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
+type: docs
 ---
-
 # 删除 PDF 中具有特定文本格式的注释
 
 ## 介绍

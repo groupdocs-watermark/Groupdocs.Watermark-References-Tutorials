@@ -8,10 +8,8 @@ keywords:
 - modify PDF annotations
 - Java GroupDocs Watermark
 - PDF document management
-
+type: docs
 ---
-
-
 # How to Modify PDF Annotations in Java Using GroupDocs.Watermark
 
 PDF files are essential in business workflows, often requiring updates or modifications after creation. Whether you need to add annotations, update text, or alter metadata, programmatically managing these documents is invaluable. This tutorial guides you through using the GroupDocs.Watermark Java library to modify annotations within PDF documents efficiently and effectively.

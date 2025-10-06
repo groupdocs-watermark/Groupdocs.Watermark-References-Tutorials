@@ -8,10 +8,8 @@ keywords:
 - extract headers footers excel
 - groupdocs watermark net
 - spreadsheet document watermarking
-
+type: docs
 ---
-
-
 # How to Extract Headers and Footers from an Excel Document Using GroupDocs.Watermark .NET
 
 ## Introduction

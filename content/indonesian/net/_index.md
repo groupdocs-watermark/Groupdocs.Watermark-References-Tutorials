@@ -5,8 +5,8 @@ weight: 10
 url: /id/net/
 description: Jelajahi GroupDocs.Watermark yang komprehensif untuk tutorial .NET. Pelajari cara menambahkan, mengelola, dan mengamankan tanda air dalam berbagai format dokumen dengan panduan langkah demi langkah.
 is_root: true
+type: docs
 ---
-
 # Tutorial dan Contoh GroupDocs.Watermark untuk .NET
 
 ## Perkenalan

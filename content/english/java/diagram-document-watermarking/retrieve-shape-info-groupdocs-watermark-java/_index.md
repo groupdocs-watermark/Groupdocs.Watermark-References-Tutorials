@@ -8,10 +8,8 @@ keywords:
 - extract shape information Java
 - GroupDocs.Watermark diagram processing
 - Java diagram manipulation
-
+type: docs
 ---
-
-
 # Extract Shape Information from Diagrams Using GroupDocs.Watermark in Java
 
 ## Introduction

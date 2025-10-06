@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 透過這個全面的逐步教學，了解如何使用 Groupdocs.Watermark for .NET 取代特定 PDF 註解中的文字。
 weight: 40
 url: /zh-hant/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
+type: docs
 ---
-
 # 替換 PDF 中特定註釋的文本
 
 ## 介紹

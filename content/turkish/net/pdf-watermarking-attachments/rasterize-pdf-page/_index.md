@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: .NET için Watermark ile belge güvenliğini geliştirin. PDF'ye ve diğer formatlara sorunsuz bir şekilde filigran ekleyin.
 weight: 28
 url: /tr/net/pdf-watermarking-attachments/rasterize-pdf-page/
+type: docs
 ---
-
 # PDF Sayfasını Rasterleştir
 
 ## giriiş

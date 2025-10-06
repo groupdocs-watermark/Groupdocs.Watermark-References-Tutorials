@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara melindungi dokumen PDF Anda dengan menambahkan tanda air ke gambar anotasi menggunakan Groupdocs.Watermark untuk .NET.
 weight: 17
 url: /id/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
+type: docs
 ---
-
 # Tambahkan Tanda Air ke Gambar Anotasi dalam PDF
 
 ## Perkenalan

@@ -8,10 +8,8 @@ keywords:
 - remove headers and footers Excel
 - automate spreadsheet management Java
 - GroupDocs.Watermark for Java
-
+type: docs
 ---
-
-
 # How to Remove Headers and Footers from Excel Spreadsheets Using GroupDocs.Watermark for Java
 
 ## Introduction

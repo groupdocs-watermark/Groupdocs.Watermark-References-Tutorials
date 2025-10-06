@@ -8,10 +8,8 @@ keywords:
 - text watermark Excel Java
 - GroupDocs Watermark for Java
 - customize text watermarks in spreadsheets
-
+type: docs
 ---
-
-
 # Add & Customize Text Watermarks in Excel Using Java
 ## How to Add and Customize Text Watermarks in Spreadsheets Using GroupDocs.Watermark for Java
 In today's digital age, protecting sensitive information in spreadsheets is crucial. GroupDocs.Watermark for Java offers a robust solution by allowing users to add text watermarks to Excel files seamlessly. This feature not only deters unauthorized distribution but also helps maintain document authenticity. In this tutorial, you'll learn how to effectively integrate and customize text watermarks in your spreadsheets using GroupDocs.Watermark for Java.

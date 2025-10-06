@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีแทนที่ข้อความในคำอธิบายประกอบ PDF เฉพาะเจาะจงโดยใช้ Groupdocs.Watermark สำหรับ .NET ด้วยบทช่วยสอนแบบทีละขั้นตอนที่ครอบคลุมนี้
 weight: 40
 url: /th/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
+type: docs
 ---
-
 # แทนที่ข้อความสำหรับคำอธิบายประกอบเฉพาะในรูปแบบ PDF
 
 ## การแนะนำ

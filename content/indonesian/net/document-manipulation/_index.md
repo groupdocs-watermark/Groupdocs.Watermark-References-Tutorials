@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Jelajahi tutorial GroupDocs.Watermark untuk .NET tentang cara membuat pratinjau dokumen dan mengelola tanda air. Meningkatkan keamanan dan manajemen dokumen.
 weight: 21
 url: /id/net/document-manipulation/
+type: docs
 ---
-
 # Manipulasi Dokumen
 
 ## Perkenalan

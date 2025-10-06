@@ -8,10 +8,8 @@ keywords:
 - extract XObjects PDF
 - GroupDocs Watermark Java
 - PDF document watermarking
-
+type: docs
 ---
-
-
 # How to Extract XObjects from PDFs Using GroupDocs.Watermark in Java: A Comprehensive Guide
 
 ## Introduction

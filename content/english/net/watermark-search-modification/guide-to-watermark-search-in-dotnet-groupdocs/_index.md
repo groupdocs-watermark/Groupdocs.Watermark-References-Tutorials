@@ -9,10 +9,8 @@ keywords:
 - GroupDocs Watermark for .NET
 - image watermark detection
 - .NET watermarking techniques
-
+type: docs
 ---
-
-
 # Comprehensive Guide to Watermark Search in .NET Using GroupDocs
 
 ## Introduction

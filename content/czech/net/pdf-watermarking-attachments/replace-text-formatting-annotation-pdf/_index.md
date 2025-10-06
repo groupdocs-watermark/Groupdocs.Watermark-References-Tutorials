@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Vylepšete zabezpečení dokumentů pomocí GroupDocs pro .NET. Naučte se, jak snadno nahradit text formátováním pro anotace v souborech PDF.
 weight: 41
 url: /cs/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
+type: docs
 ---
-
 # Nahradit text formátováním pro anotaci v PDF
 
 ## Úvod

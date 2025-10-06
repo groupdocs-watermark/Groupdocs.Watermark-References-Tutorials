@@ -8,10 +8,8 @@ keywords:
 - extract attachments from excel
 - groupdocs watermark java tutorial
 - manage excel document attachments
-
+type: docs
 ---
-
-
 # Extract Attachments from Excel Using GroupDocs.Watermark Java: A Comprehensive Guide
 
 ## Introduction

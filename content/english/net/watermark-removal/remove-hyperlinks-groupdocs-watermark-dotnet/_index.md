@@ -8,10 +8,8 @@ keywords:
 - remove hyperlinks
 - GroupDocs.Watermark .NET
 - document management
-
+type: docs
 ---
-
-
 # Removing Hyperlinks Containing a Specific URL with GroupDocs.Watermark .NET
 
 ## Introduction

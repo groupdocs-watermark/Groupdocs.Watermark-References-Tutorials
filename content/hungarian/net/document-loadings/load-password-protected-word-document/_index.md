@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Könnyedén hozzáadhat vízjeleket a jelszóval védett Word dokumentumokhoz a GroupDocs.Watermark for .NET segítségével átfogó, lépésenkénti útmutatónkkal.
 weight: 14
 url: /hu/net/document-loadings/load-password-protected-word-document/
+type: docs
 ---
-
 # Jelszóval védett Word dokumentum betöltése
 
 ## Bevezetés

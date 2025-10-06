@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Könnyedén linkelhet fejlécet és láblécet a Word dokumentumokban a GroupDocs.Watermark for .NET segítségével. Könnyedén biztosíthatja a következetességet és a professzionalizmust.
 weight: 25
 url: /hu/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
+type: docs
 ---
-
 # Az összes fejléc/lábléc összekapcsolása a Word Dokumentumok szakaszaiban
 
 ## Bevezetés

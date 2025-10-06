@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Z tego przewodnika krok po kroku dowiesz się, jak ładować dokumenty i oznaczać je znakami wodnymi przy użyciu programu Groupdocs. Chroń i promuj swoje treści bez wysiłku.
 weight: 12
 url: /pl/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # Załaduj dokument w określonym formacie
 
 ## Wstęp

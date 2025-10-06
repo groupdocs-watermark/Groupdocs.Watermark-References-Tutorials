@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีดึงข้อมูลคำอธิบายประกอบจากเอกสาร PDF โดยใช้ GroupDocs.Watermark สำหรับ .NET ในคำแนะนำโดยละเอียดทีละขั้นตอนนี้
 weight: 23
 url: /th/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # แยกข้อมูลคำอธิบายประกอบจาก PDF
 
 ## การแนะนำ

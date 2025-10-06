@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Bez wysiłku dodawaj graficzne znaki wodne do swoich dokumentów za pomocą GroupDocs.Watermark dla .NET. Z łatwością chroń swoją własność intelektualną.
 weight: 10
 url: /pl/net/watermarking-basics/add-image-watermark/
+type: docs
 ---
-
 # Dodaj znak wodny obrazu
 
 ## Wstęp

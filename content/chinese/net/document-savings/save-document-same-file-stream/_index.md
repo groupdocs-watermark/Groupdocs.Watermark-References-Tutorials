@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs.Watermark for .NET 向文档添加水印。本指南提供了确保文档保护和完整性的说明。
 weight: 10
 url: /zh/net/document-savings/save-document-same-file-stream/
+type: docs
 ---
-
 # 将文档保存到同一文件或流
 
 ## 介绍

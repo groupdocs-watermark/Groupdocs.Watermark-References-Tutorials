@@ -8,10 +8,8 @@ keywords:
 - remove PDF annotations
 - GroupDocs.Watermark for .NET
 - manage PDF documents
-
+type: docs
 ---
-
-
 # How to Remove Specific PDF Annotations Using GroupDocs.Watermark .NET
 
 ## Introduction

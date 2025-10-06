@@ -8,10 +8,8 @@ keywords:
 - search text watermarks PDFs GroupDocs
 - modify text watermarks GroupDocs .NET
 - GroupDocs Watermark search techniques
-
+type: docs
 ---
-
-
 # How to Search and Modify Text Watermarks in PDFs Using GroupDocs.Watermark for .NET
 
 ## Introduction

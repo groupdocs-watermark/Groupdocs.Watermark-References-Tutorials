@@ -6,8 +6,8 @@ url: /java/
 description: Explore comprehensive GroupDocs.Watermark for Java tutorials to implement robust document security and branding. Learn text and image watermarking, format-specific techniques, and advanced protection features with practical code examples.
 keywords: [Java watermarking, document protection Java, PDF watermark Java, Word watermark Java, Excel watermark Java, PowerPoint watermark Java, Java document security, digital watermarking Java, GroupDocs API, watermark management]
 is_root: true
+type: docs
 ---
-
 # Complete Guide to GroupDocs.Watermark for Java - Tutorials & Examples
 
 ## Introduction to Document Security & Branding with Java

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامة مائية مقفلة إلى صفحات محددة في مستندات Word باستخدام GroupDocs.Watermark لـ .NET من خلال دليلنا السهل خطوة بخطوة.
 weight: 12
 url: /ar/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # أضف علامة مائية مقفلة إلى صفحات محددة في مستندات Word
 
 ## مقدمة

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer in deze handleiding hoe u watermerken aan documenten kunt toevoegen met GroupDocs.Watermark voor .NET. Perfect voor ontwikkelaars die de documentbeveiliging willen verbeteren.
 weight: 11
 url: /nl/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # Document uit stroom laden
 
 ## Invoering

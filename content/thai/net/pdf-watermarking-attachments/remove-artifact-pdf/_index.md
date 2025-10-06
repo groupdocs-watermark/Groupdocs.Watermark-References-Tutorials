@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีลบสิ่งแปลกปลอมออกจากเอกสาร PDF ได้อย่างง่ายดายโดยใช้ GroupDocs.Watermark สำหรับ .NET ฝึกฝนกระบวนการทีละขั้นตอนด้วยบทช่วยสอนที่ครอบคลุมของเรา
 weight: 31
 url: /th/net/pdf-watermarking-attachments/remove-artifact-pdf/
+type: docs
 ---
-
 # ลบสิ่งประดิษฐ์ออกจาก PDF
 
 ## การแนะนำ

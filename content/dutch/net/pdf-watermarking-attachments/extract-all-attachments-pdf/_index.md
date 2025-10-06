@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u alle bijlagen uit een PDF kunt extraheren met Groupdocs.Watermark voor .NET. Volg onze stapsgewijze handleiding voor een naadloos extractieproces.
 weight: 22
 url: /nl/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
+type: docs
 ---
-
 # Extraheer alle bijlagen uit PDF
 
 ## Invoering

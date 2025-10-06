@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit Groupdocs.Watermark für .NET Wasserzeichen zu XObjects in PDF hinzufügen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine einfache Implementierung.
 weight: 20
 url: /de/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
+type: docs
 ---
-
 # Fügen Sie Wasserzeichen zu XObjects in PDF hinzu
 
 ## Einführung

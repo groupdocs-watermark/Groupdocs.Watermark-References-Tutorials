@@ -8,10 +8,8 @@ keywords:
 - modify shape properties Excel
 - GroupDocs Watermark .NET
 - Excel automation with GroupDocs
-
+type: docs
 ---
-
-
 # How to Modify Shape Properties in Excel Using GroupDocs.Watermark for .NET
 
 ## Introduction

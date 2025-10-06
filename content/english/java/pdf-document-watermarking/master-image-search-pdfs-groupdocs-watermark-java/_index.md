@@ -8,9 +8,8 @@ keywords:
 - GroupDocs.Watermark
 - Java
 - Document Processing
-
+type: docs
 ---
-
 # Mastering Image Search in PDFs with GroupDocs.Watermark Java
 
 ## Introduction

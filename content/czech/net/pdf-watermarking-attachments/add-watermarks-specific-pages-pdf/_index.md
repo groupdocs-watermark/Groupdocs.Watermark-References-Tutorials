@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat textové a obrazové vodoznaky na konkrétní stránky v PDF pomocí Groupdocs. Zabezpečte své dokumenty podle našeho podrobného průvodce.
 weight: 15
 url: /cs/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
+type: docs
 ---
-
 # Přidejte vodoznaky na konkrétní stránky v PDF
 
 ## Úvod

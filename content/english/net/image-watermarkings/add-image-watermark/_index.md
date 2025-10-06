@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to add image watermarks to your documents using GroupDocs.Watermark for .NET with our detailed, step-by-step tutorial.
 weight: 11
 url: /net/image-watermarkings/add-image-watermark/
+type: docs
 ---
-
 # Add Image Watermark
 
 ## Introduction

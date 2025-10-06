@@ -8,10 +8,8 @@ keywords:
 - automate image replacement in Word shapes
 - GroupDocs Watermark for .NET
 - programmatically update images in documents
-
+type: docs
 ---
-
-
 # Automate Image Replacement in Word Shapes with GroupDocs.Watermark for .NET
 
 ## Introduction

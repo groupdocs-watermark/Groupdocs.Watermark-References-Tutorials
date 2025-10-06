@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αφαιρείτε σχολιασμούς με συγκεκριμένη μορφοποίηση κειμένου σε έγγραφα PDF χρησιμοποιώντας το υδατογράφημα Groupdocs για .NET.
 weight: 30
 url: /el/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
+type: docs
 ---
-
 # Αφαιρέστε σχολιασμούς με συγκεκριμένη μορφοποίηση κειμένου σε PDF
 
 ## Εισαγωγή

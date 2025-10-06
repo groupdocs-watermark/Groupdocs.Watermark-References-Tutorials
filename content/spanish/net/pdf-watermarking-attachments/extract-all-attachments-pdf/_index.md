@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda a extraer todos los archivos adjuntos de un PDF usando Groupdocs.Watermark para .NET. Siga nuestra guía paso a paso para un proceso de extracción perfecto.
 weight: 22
 url: /es/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
+type: docs
 ---
-
 # Extraiga todos los archivos adjuntos del PDF
 
 ## Introducción

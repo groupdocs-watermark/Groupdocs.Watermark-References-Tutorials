@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Thay thế văn bản trong tệp PDF một cách hiệu quả bằng GroupDocs.Watermark cho .NET. Tích hợp liền mạch hình mờ vào các ứng dụng .NET của bạn.
 weight: 44
 url: /vi/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
+type: docs
 ---
-
 # Thay thế văn bản cho XObject cụ thể trong PDF
 
 ## Giới thiệu

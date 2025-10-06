@@ -3,8 +3,8 @@ title: "Document Loading and Saving Operations with GroupDocs.Watermark for Java
 description: "Learn how to load documents from various sources and save watermarked files using GroupDocs.Watermark for Java."
 weight: 2
 url: "/java/document-loading-saving/"
+type: docs
 ---
-
 # Document Loading and Saving Operations with GroupDocs.Watermark for Java
 
 Our document loading and saving tutorials provide comprehensive guidance for working with files in various formats using GroupDocs.Watermark for Java. These step-by-step guides demonstrate how to load documents from disk, streams, and other sources, handle password-protected files, and save documents after watermarking operations. Each tutorial includes complete Java code examples for implementing robust document management features in your watermarking applications.

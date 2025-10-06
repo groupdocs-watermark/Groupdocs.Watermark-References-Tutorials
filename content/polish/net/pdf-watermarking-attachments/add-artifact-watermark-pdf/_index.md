@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak bez wysiłku dodawać znaki wodne artefaktów do plików PDF za pomocą Groupdocs.Watermark dla .NET. Chroń swoje dokumenty z łatwością.
 weight: 11
 url: /pl/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
+type: docs
 ---
-
 # Dodaj znak wodny artefaktu do pliku PDF
 
 ## Wstęp

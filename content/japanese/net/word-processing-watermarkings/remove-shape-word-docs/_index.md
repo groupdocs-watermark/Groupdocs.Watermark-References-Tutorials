@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して Word 文書から図形を削除する方法を学びます。簡単、効率的、強力なドキュメント操作。
 weight: 30
 url: /ja/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # Word ドキュメントの図形を削除する
 
 ## 導入

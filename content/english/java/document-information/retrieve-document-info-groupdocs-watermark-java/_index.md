@@ -8,10 +8,8 @@ keywords:
 - retrieve document information Java
 - GroupDocs Watermark Java setup
 - Java document info retrieval
-
+type: docs
 ---
-
-
 # How to Retrieve Document Information Using GroupDocs.Watermark for Java: A Step-by-Step Guide
 
 **Introduction**

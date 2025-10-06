@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Dễ dàng thêm hình mờ vào tài liệu Word bằng GroupDocs.Watermark cho .NET. Bảo vệ nội dung của bạn với hướng dẫn đơn giản này.
 weight: 15
 url: /vi/net/word-processing-watermarkings/add-watermark-section-word-docs/
+type: docs
 ---
-
 # Thêm hình mờ vào phần trong tài liệu Word
 
 ## Giới thiệu

@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus hyperlink dari dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Tingkatkan keamanan dokumen dengan mudah.
 weight: 29
 url: /id/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
+type: docs
 ---
-
 # Hapus Hyperlink di Word Docs
 
 ## Perkenalan

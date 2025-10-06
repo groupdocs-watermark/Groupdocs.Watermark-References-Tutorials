@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Изучите руководства GroupDocs.Watermark для .NET по созданию предварительного просмотра документов и управлению водяными знаками. Повышение безопасности и управления документами.
 weight: 21
 url: /ru/net/document-manipulation/
+type: docs
 ---
-
 # Манипуляции с документами
 
 ## Введение

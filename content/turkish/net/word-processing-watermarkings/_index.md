@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Word belgelerinde filigran eklemek ve yönetmek için gerekli GroupDocs.Watermark for .NET eğitimlerini keşfedin. Belge güvenliğinizi ve markalamanızı zahmetsizce geliştirin.
 weight: 26
 url: /tr/net/word-processing-watermarkings/
+type: docs
 ---
-
 # Kelime İşlem Filigranı
 
 ## giriiş

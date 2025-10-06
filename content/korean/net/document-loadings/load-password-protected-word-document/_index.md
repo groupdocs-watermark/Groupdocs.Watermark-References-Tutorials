@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 포괄적인 단계별 가이드와 함께 .NET용 GroupDocs.Watermark를 사용하여 비밀번호로 보호된 Word 문서에 워터마크를 손쉽게 추가하세요.
 weight: 14
 url: /ko/net/document-loadings/load-password-protected-word-document/
+type: docs
 ---
-
 # 비밀번호로 보호된 Word 문서 로드
 
 ## 소개

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Εξερευνήστε το GroupDocs.Watermark for .NET tutorials σχετικά με την υδατοσήμανση PDF και τα συνημμένα. Μάθετε βήμα προς βήμα μεθόδους για να βελτιώσετε την ασφάλεια και την επωνυμία των αρχείων PDF σας.
 weight: 25
 url: /el/net/pdf-watermarking-attachments/
+type: docs
 ---
-
 # Υδατογράφημα και συνημμένο PDF
 
 ## Εισαγωγή

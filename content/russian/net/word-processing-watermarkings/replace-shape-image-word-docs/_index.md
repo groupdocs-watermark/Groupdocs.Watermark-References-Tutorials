@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как программно заменить изображения фигур в документах Word с помощью GroupDocs.Watermark для .NET. Легко упростите задачи манипулирования документами.
 weight: 33
 url: /ru/net/word-processing-watermarkings/replace-shape-image-word-docs/
+type: docs
 ---
-
 # Заменить изображение фигуры в документах Word
 
 ## Введение

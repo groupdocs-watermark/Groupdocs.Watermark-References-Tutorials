@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit GroupDocs Watermark für .NET Wasserzeichen in Dokumenten hinzufügen, entfernen und extrahieren.
 weight: 11
 url: /de/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Holen Sie sich Dokumentinformationen von der lokalen Festplatte
 
 ## Einführung

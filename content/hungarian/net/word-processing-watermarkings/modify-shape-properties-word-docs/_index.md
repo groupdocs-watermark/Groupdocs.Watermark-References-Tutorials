@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Védje meg Word-dokumentumait a GroupDocs Watermark for .NET segítségével. Könnyen módosíthatja az alak tulajdonságait a fokozott biztonság érdekében.
 weight: 27
 url: /hu/net/word-processing-watermarkings/modify-shape-properties-word-docs/
+type: docs
 ---
-
 # Az Alakzat tulajdonságainak módosítása a Word Dokumentumokban
 
 ## Bevezetés

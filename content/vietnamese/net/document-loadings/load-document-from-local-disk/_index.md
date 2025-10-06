@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Bảo vệ và quản lý tài liệu của bạn bằng Groupdocs cho .NET. Hãy làm theo hướng dẫn chi tiết của chúng tôi để thêm hình mờ một cách liền mạch.
 weight: 10
 url: /vi/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # Tải tài liệu từ đĩa cục bộ
 
 ## Giới thiệu

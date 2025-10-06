@@ -8,10 +8,8 @@ keywords:
 - remove PDF text artifacts
 - GroupDocs Watermark Java
 - PDF cleanup with Java
-
+type: docs
 ---
-
-
 # Removing Unwanted PDF Text Artifacts with Specific Formatting Using GroupDocs.Watermark for Java
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة الأشكال من مستندات Word باستخدام GroupDocs.Watermark لـ .NET. معالجة سهلة وفعالة وقوية للمستندات.
 weight: 30
 url: /ar/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # إزالة الشكل في مستندات Word
 
 ## مقدمة

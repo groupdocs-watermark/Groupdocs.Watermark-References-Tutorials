@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda a agregar marcas de agua de imágenes en mosaico a sus documentos usando GroupDocs.Watermark para .NET. Fácil, eficiente y personalizable.
 weight: 10
 url: /es/net/image-watermarkings/add-tiled-image-watermark/
+type: docs
 ---
-
 # Agregar marca de agua de imagen en mosaico
 
 ## Introducción

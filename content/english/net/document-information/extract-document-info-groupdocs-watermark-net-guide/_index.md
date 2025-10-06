@@ -8,10 +8,8 @@ keywords:
 - extract document metadata GroupDocs.Watermark .NET
 - GroupDocs.Watermark C# implementation
 - manage document information with GroupDocs
-
+type: docs
 ---
-
-
 # How to Extract Document Metadata with GroupDocs.Watermark .NET: A Step-by-Step Guide
 
 ## Introduction

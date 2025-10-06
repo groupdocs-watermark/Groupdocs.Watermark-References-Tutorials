@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Proteggi e gestisci i tuoi documenti con Groupdocs per .NET. Segui la nostra guida dettagliata per aggiungere filigrane senza problemi.
 weight: 10
 url: /it/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # Carica documento dal disco locale
 
 ## introduzione

@@ -8,10 +8,8 @@ keywords:
 - PDF text replacement in Java
 - GroupDocs.Watermark automation
 - Java PDF editing with GroupDocs
-
+type: docs
 ---
-
-
 # Automate PDF Text Replacement in Java Using GroupDocs.Watermark
 
 Are you tired of manually editing PDFs to update or replace text? Automating this process can save time and reduce errors, especially when dealing with large documents. This tutorial will guide you through using the GroupDocs.Watermark for Java library to efficiently manage text replacement within PDFs.

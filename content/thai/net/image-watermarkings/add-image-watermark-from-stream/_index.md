@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำรูปภาพลงในเอกสารโดยใช้ GroupDocs.Watermark สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อการผสานรวมลายน้ำอย่างราบรื่น
 weight: 12
 url: /th/net/image-watermarkings/add-image-watermark-from-stream/
+type: docs
 ---
-
 # เพิ่มลายน้ำรูปภาพจากสตรีม
 
 ## การแนะนำ

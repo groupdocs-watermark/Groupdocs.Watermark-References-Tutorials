@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Easily add image watermarks to all headers in Word documents using GroupDocs.Watermark for .NET. Follow our step-by-step guide with detailed code examples.
 weight: 10
 url: /net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # Add Image Watermark to All Headers in Word Docs
 
 ## Introduction

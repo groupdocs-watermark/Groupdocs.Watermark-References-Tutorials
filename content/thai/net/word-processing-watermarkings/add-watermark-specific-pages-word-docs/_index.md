@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำให้กับหน้าเฉพาะในเอกสาร Word ได้อย่างง่ายดายโดยใช้ Groupdocs ปรับปรุงความปลอดภัยของเอกสารและการสร้างแบรนด์
 weight: 18
 url: /th/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # เพิ่มลายน้ำให้กับหน้าเฉพาะในเอกสาร Word
 
 ## การแนะนำ

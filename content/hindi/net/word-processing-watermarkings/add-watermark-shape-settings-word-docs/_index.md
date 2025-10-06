@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: जानें कि .NET के लिए वॉटरमार्क का उपयोग करके Word दस्तावेज़ों में आकार सेटिंग्स के साथ वॉटरमार्क कैसे जोड़ें। अपने दस्तावेज़ों को प्रभावी ढंग से सुरक्षित रखें.
 weight: 20
 url: /hi/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में शेप सेटिंग्स के साथ वॉटरमार्क जोड़ें
 
 ## परिचय

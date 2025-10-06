@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำให้กับไฟล์แนบ PDF โดยใช้ GroupDocs.Watermark สำหรับ .NET รักษาความปลอดภัยเอกสารของคุณด้วยลายน้ำแบบกำหนดเองได้อย่างง่ายดาย
 weight: 16
 url: /th/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
+type: docs
 ---
-
 # เพิ่มลายน้ำให้กับไฟล์แนบทั้งหมดในรูปแบบ PDF
 
 ## การแนะนำ

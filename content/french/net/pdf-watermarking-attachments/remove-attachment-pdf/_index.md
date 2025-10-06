@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment supprimer facilement les pièces jointes des documents PDF à l'aide de GroupDocs.Watermark pour .NET. Améliorez l’efficacité de votre gestion documentaire.
 weight: 33
 url: /fr/net/pdf-watermarking-attachments/remove-attachment-pdf/
+type: docs
 ---
-
 # Supprimer la pièce jointe du PDF
 
 ## Introduction

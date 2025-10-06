@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to add custom watermarks with text effects to Word documents using GroupDocs.Watermark for .NET. Document security and visual appeal effortlessly.
 weight: 21
 url: /net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
+type: docs
 ---
-
 # Add Watermark with Text Effects in Word Docs
 
 ## Introduction

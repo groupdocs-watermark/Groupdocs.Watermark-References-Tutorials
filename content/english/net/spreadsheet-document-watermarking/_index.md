@@ -3,8 +3,8 @@ title: "Excel Spreadsheet Watermarking Tutorials for GroupDocs.Watermark .NET"
 description: "Learn to implement watermarks in Excel workbooks, including worksheet-specific watermarking, header/footer watermarks, and background watermarks using .NET."
 weight: 8
 url: "/net/spreadsheet-document-watermarking/"
+type: docs
 ---
-
 # Excel Spreadsheet Watermarking Tutorials for GroupDocs.Watermark .NET
 
 Master Excel watermarking techniques with our detailed GroupDocs.Watermark for .NET tutorials. These step-by-step guides demonstrate how to add watermarks to specific worksheets, implement header and footer watermarks, create background watermarks with relative sizing and positioning, and work with shape-based watermarking approaches. Each tutorial provides practical C# code examples for spreadsheet watermarking operations, helping you build applications that can effectively protect and brand Excel documents while maintaining their functionality and appearance.

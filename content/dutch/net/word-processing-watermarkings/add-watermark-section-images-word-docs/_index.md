@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u watermerken aan afbeeldingen in Word-documenten kunt toevoegen met behulp van Groupdocs. Volg onze gids voor veilige en professionele documentbescherming.
 weight: 16
 url: /nl/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
+type: docs
 ---
-
 # Voeg een watermerk toe aan sectieafbeeldingen in Word-documenten
 
 ## Invoering

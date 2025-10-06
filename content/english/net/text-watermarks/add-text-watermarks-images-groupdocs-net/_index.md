@@ -8,10 +8,8 @@ keywords:
 - text watermarks images
 - GroupDocs Watermark for .NET
 - add text watermark
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks to Images using GroupDocs.Watermark for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Fedezze fel a GroupDocs.Watermark for .NET oktatóanyagát, amellyel könnyedén adhat hozzá kép- és szöveges vízjeleket. Védje meg dokumentumait ezekkel a könnyen követhető útmutatókkal.
 weight: 20
 url: /hu/net/watermarking-basics/
+type: docs
 ---
-
 # A vízjelezés alapjai
 
 ## Bevezetés

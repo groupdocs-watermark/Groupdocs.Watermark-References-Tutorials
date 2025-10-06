@@ -6,8 +6,8 @@ description: Libérez la puissance de GroupDocs.Watermark avec nos didacticiels 
 weight: 11
 url: /fr/
 is_root: true
+type: docs
 ---
-
 # Maîtrisez la sécurité et l’image de marque des documents avec GroupDocs.Watermark
 
 

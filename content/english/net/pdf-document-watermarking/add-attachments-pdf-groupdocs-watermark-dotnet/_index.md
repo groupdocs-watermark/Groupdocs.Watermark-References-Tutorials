@@ -8,10 +8,8 @@ keywords:
 - add attachments to PDFs using GroupDocs.Watermark for .NET
 - PDF document watermarking with GroupDocs
 - GroupDocs Watermark library features
-
+type: docs
 ---
-
-
 # How to Add Attachments to a PDF Document using GroupDocs.Watermark for .NET
 
 **Simplify Your Workflow: Learn How to Seamlessly Add Attachments to PDFs Using GroupDocs.Watermark for .NET**

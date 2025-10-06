@@ -8,10 +8,8 @@ keywords:
 - add text watermark .NET
 - GroupDocs Watermark for .NET
 - secure documents with watermarks
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to Specific Pages Using GroupDocs.Watermark for .NET
 
 ## Introduction

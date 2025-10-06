@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat vízjeleket PDF-ben található XObjects-hez a Groupdocs.Watermark for .NET segítségével. Kövesse lépésről lépésre útmutatónkat az egyszerű megvalósítás érdekében.
 weight: 20
 url: /hu/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
+type: docs
 ---
-
 # Vízjel hozzáadása az XObjectshez PDF-ben
 
 ## Bevezetés

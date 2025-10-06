@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs के साथ दस्तावेज़ सुरक्षा बढ़ाएँ। पीडीएफ और अन्य प्रारूपों में निर्बाध रूप से वॉटरमार्क जोड़ें।
 weight: 28
 url: /hi/net/pdf-watermarking-attachments/rasterize-pdf-page/
+type: docs
 ---
-
 # पीडीएफ पेज को रेखापुंज करें
 
 ## परिचय

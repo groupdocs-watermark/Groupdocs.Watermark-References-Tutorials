@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए वॉटरमार्क के साथ अपने दस्तावेज़ों को सुरक्षित और प्रबंधित करें। वॉटरमार्क को निर्बाध रूप से जोड़ने के लिए हमारी विस्तृत मार्गदर्शिका का पालन करें।
 weight: 10
 url: /hi/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # स्थानीय डिस्क से दस्तावेज़ लोड करें
 
 ## परिचय

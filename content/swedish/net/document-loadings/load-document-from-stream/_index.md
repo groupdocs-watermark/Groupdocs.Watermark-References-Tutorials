@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar i dokument med GroupDocs.Watermark for .NET med den här guiden. Perfekt för utvecklare som vill förbättra dokumentsäkerheten.
 weight: 11
 url: /sv/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # Ladda dokument från Stream
 
 ## Introduktion

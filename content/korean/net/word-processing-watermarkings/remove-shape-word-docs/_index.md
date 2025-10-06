@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 도형을 제거하는 방법을 알아보세요. 쉽고 효율적이며 강력한 문서 조작.
 weight: 30
 url: /ko/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # Word Docs에서 도형 제거
 
 ## 소개

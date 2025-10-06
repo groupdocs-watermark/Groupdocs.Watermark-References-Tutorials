@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 PDF 첨부 파일 내의 이미지를 효율적으로 검색합니다. 워터마크 관리 프로세스를 손쉽게 단순화하세요.
 weight: 46
 url: /ko/net/pdf-watermarking-attachments/search-image-attachment-pdf/
+type: docs
 ---
-
 # PDF 첨부 이미지 검색
 
 ## 소개

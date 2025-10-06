@@ -5,8 +5,8 @@ weight: 10
 url: /pl/net/
 description: Zapoznaj się z obszernymi samouczkami GroupDocs.Watermark dla .NET. Dowiedz się, jak dodawać, zarządzać i zabezpieczać znaki wodne w różnych formatach dokumentów, korzystając z przewodników krok po kroku.
 is_root: true
+type: docs
 ---
-
 # Poradniki i przykłady GroupDocs.Watermark dla .NET
 
 ## Wstęp

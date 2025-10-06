@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan távolíthat el hiperhivatkozásokat Word-dokumentumokból a GroupDocs.Watermark for .NET segítségével. Fokozatmentesen fokozza a dokumentumok biztonságát.
 weight: 29
 url: /hu/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
+type: docs
 ---
-
 # Távolítsa el a hiperhivatkozásokat a Word dokumentumokból
 
 ## Bevezetés

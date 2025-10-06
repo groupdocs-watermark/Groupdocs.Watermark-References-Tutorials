@@ -5,8 +5,8 @@ weight: 10
 url: /fr/net/
 description: Explorez les didacticiels complets GroupDocs.Watermark pour .NET. Apprenez à ajouter, gérer et sécuriser des filigranes dans différents formats de documents grâce à des guides étape par étape.
 is_root: true
+type: docs
 ---
-
 # Tutoriels et exemples de GroupDocs.Watermark pour .NET
 
 ## Introduction

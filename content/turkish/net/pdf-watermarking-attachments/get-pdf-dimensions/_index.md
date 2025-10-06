@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs.Watermark for .NET'i kullanarak belgelerinizi kolaylıkla koruyun. Zahmetsizce filigran, damga ve açıklamalar ekleyin.
 weight: 26
 url: /tr/net/pdf-watermarking-attachments/get-pdf-dimensions/
+type: docs
 ---
-
 # PDF Boyutlarını Alın
 
 ## giriiş

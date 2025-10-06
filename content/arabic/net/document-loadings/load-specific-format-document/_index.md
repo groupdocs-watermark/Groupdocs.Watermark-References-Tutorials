@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية تحميل المستندات ووضع علامة مائية عليها باستخدام Groupdocs للعلامة المائية لـ .NET من خلال هذا الدليل المفصل خطوة بخطوة. قم بحماية المحتوى الخاص بك ووضع علامة تجارية عليه دون عناء.
 weight: 12
 url: /ar/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # قم بتحميل مستند بتنسيق محدد
 
 ## مقدمة

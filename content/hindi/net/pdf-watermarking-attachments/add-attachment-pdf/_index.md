@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: निर्बाध वॉटरमार्किंग और अटैचमेंट हैंडलिंग के लिए GroupDocs.Watermark के साथ अपनी .NET दस्तावेज़ प्रबंधन क्षमताओं को बढ़ाएं।
 weight: 12
 url: /hi/net/pdf-watermarking-attachments/add-attachment-pdf/
+type: docs
 ---
-
 # पीडीएफ में अनुलग्नक जोड़ें
 
 ## परिचय

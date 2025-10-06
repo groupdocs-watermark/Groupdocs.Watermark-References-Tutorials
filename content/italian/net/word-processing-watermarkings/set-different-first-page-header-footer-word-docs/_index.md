@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come impostare intestazioni e piè di pagina diversi sulla prima pagina dei documenti Word utilizzando GroupDocs.Watermark per .NET.
 weight: 36
 url: /it/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Imposta un'intestazione/piè di pagina diversi per la prima pagina nei documenti Word
 
 ## introduzione

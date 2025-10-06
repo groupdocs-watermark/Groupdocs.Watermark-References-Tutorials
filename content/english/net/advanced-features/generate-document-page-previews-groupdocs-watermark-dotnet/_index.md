@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark .NET
 - generate document previews .NET
 - document management with GroupDocs
-
+type: docs
 ---
-
-
 # Generate Document Page Previews with GroupDocs.Watermark for .NET
 
 ## Introduction

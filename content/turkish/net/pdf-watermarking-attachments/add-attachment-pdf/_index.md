@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Sorunsuz filigran ekleme ve ek yönetimi için GroupDocs.Watermark ile .NET belge yönetimi yeteneklerinizi geliştirin.
 weight: 12
 url: /tr/net/pdf-watermarking-attachments/add-attachment-pdf/
+type: docs
 ---
-
 # PDF'ye Ek Ekle
 
 ## giriiş

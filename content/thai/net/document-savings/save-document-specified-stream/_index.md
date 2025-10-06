@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีบันทึกเอกสารลงในสตรีมที่ระบุโดยใช้ GroupDocs.Watermark สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนนี้ เหมาะสำหรับนักพัฒนาทุกระดับ
 weight: 12
 url: /th/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # บันทึกเอกสารไปยังสตรีมที่ระบุ
 
 ## การแนะนำ

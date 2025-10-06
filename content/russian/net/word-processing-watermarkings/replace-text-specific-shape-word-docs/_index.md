@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как заменить текст определенных фигур в документах Word с помощью GroupDocs.Watermark для .NET. Следуйте нашему пошаговому руководству.
 weight: 35
 url: /ru/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
+type: docs
 ---
-
 # Заменить текст определенной фигурой в документах Word
 
 ## Введение

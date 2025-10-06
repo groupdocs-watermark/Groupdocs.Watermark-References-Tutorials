@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Explore los tutoriales de GroupDocs.Watermark para .NET sobre cómo generar vistas previas de documentos y administrar marcas de agua. Mejore la seguridad y la gestión de los documentos.
 weight: 21
 url: /es/net/document-manipulation/
+type: docs
 ---
-
 # Manipulación de documentos
 
 ## Introducción

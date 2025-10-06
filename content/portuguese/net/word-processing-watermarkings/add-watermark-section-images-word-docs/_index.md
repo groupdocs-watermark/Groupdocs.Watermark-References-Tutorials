@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda como adicionar marcas d’água a imagens em documentos do Word usando Groupdocs. Siga nosso guia para proteção segura e profissional de documentos.
 weight: 16
 url: /pt/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
+type: docs
 ---
-
 # Adicionar marca d'água a imagens de seção em documentos do Word
 
 ## Introdução

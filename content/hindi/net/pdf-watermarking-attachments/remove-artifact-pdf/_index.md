@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके PDF दस्तावेज़ों से कलाकृतियों को आसानी से हटाने का तरीका जानें। हमारे व्यापक ट्यूटोरियल के साथ चरण-दर-चरण प्रक्रिया में महारत हासिल करें।
 weight: 31
 url: /hi/net/pdf-watermarking-attachments/remove-artifact-pdf/
+type: docs
 ---
-
 # पीडीएफ से विरूपण साक्ष्य हटाएँ
 
 ## परिचय

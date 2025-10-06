@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: .NET için Watermark ile belge güvenliğini geliştirin. PDF dosyalarındaki ek açıklamalara yönelik metni zahmetsizce biçimlendirmeyle nasıl değiştireceğinizi öğrenin.
 weight: 41
 url: /tr/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
+type: docs
 ---
-
 # PDF'de Ek Açıklama İçin Metni Biçimlendirmeyle Değiştirin
 
 ## giriiş

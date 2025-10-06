@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 从 Word 文档中删除形状。简单、高效、强大的文档操作。
 weight: 30
 url: /zh/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # 删除 Word 文档中的形状
 
 ## 介绍

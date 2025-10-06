@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs for .NET'i kullanarak PDF'de belirli metin formatına sahip yapıtları nasıl kaldıracağınızı öğrenin. Adım adım kılavuzumuzu takip edin.
 weight: 32
 url: /tr/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
+type: docs
 ---
-
 # PDF'de Belirli Metin Formatına Sahip Yapıları Kaldırma
 
 ## giriiş

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Adicione facilmente marcas d'água de imagem a todos os cabeçalhos em documentos do Word usando GroupDocs.Watermark for .NET. Siga nosso guia passo a passo com exemplos de código detalhados.
 weight: 10
 url: /pt/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # Adicionar marca d'água de imagem a todos os cabeçalhos em documentos do Word
 
 ## Introdução

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية باستخدام إعدادات الشكل إلى مستندات Word باستخدام GroupDocs لـ .NET. حماية المستندات الخاصة بك بشكل فعال.
 weight: 20
 url: /ar/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
+type: docs
 ---
-
 # أضف علامة مائية مع إعدادات الشكل في مستندات Word
 
 ## مقدمة

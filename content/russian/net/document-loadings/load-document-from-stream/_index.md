@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Из этого руководства вы узнаете, как добавлять водяные знаки в документы с помощью GroupDocs.Watermark для .NET. Идеально подходит для разработчиков, стремящихся повысить безопасность документов.
 weight: 11
 url: /ru/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # Загрузить документ из потока
 
 ## Введение

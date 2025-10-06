@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment remplacer le texte de forme par du texte formaté dans des documents Word à l'aide de GroupDocs.Watermark pour .NET. Vos capacités d’édition de documents sans effort.
 weight: 34
 url: /fr/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # Remplacer le texte de forme par du texte formaté dans Word Docs
 
 ## Introduction

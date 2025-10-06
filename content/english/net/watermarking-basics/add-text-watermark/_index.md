@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to add text watermarks to your documents using Groupdocs.Watermark for .NET with this step-by-step guide.
 weight: 11
 url: /net/watermarking-basics/add-text-watermark/
+type: docs
 ---
-
 # Add Text Watermark
 
 ## Introduction

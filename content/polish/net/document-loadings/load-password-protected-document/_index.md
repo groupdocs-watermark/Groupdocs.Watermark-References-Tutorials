@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak dodawać znaki wodne do dokumentów chronionych hasłem za pomocą programu Groupdocs dla platformy .NET, korzystając z naszego przewodnika krok po kroku. Z łatwością zabezpiecz i otaguj swoje pliki.
 weight: 13
 url: /pl/net/document-loadings/load-password-protected-document/
+type: docs
 ---
-
 # Załaduj dokument chroniony hasłem
 
 ## Wstęp

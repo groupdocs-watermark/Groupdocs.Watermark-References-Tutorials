@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak snadno zrušit ochranu dokumentů aplikace Word pomocí GroupDocs.Watermark for .NET. Postupujte podle našeho podrobného průvodce.
 weight: 38
 url: /cs/net/word-processing-watermarkings/unprotect-document-word-docs/
+type: docs
 ---
-
 # Odemkněte dokument v Dokumentech aplikace Word
 
 ## Úvod

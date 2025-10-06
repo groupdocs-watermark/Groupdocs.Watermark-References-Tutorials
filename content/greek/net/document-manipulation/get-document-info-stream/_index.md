@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να λαμβάνετε πληροφορίες εγγράφων από μια ροή χρησιμοποιώντας το GroupDocs.Watermark για .NET με αυτόν τον αναλυτικό οδηγό. Οι δυνατότητες διαχείρισης εγγράφων σας χωρίς κόπο.
 weight: 12
 url: /el/net/document-manipulation/get-document-info-stream/
+type: docs
 ---
-
 # Λάβετε πληροφορίες εγγράφου από τη ροή
 
 ## Εισαγωγή

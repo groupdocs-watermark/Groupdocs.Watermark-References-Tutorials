@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan állíthat be különböző fejlécet és láblécet a Word-dokumentumok első oldalán a GroupDocs.Watermark for .NET segítségével.
 weight: 36
 url: /hu/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Állítson be más első oldal fejlécet/láblécet a Word Dokumentumokban
 
 ## Bevezetés

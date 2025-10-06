@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية إلى XObjects في PDF باستخدام Groupdocs.Watermark لـ .NET. اتبع دليلنا خطوة بخطوة لسهولة التنفيذ.
 weight: 20
 url: /ar/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
+type: docs
 ---
-
 # أضف علامة مائية إلى XObjects في PDF
 
 ## مقدمة

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して Word 文書内の特定のセクションからウォーターマークを削除する方法を学びます。包括的なチュートリアルはここから入手できます。
 weight: 32
 url: /ja/net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # Word ドキュメントのセクションから透かしを削除する
 
 ## 導入

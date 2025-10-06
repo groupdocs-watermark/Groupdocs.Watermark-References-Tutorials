@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Temukan tutorial penting GroupDocs.Watermark untuk .NET untuk menambahkan dan mengelola tanda air di dokumen Word. Tingkatkan keamanan dokumen dan branding Anda dengan mudah.
 weight: 26
 url: /id/net/word-processing-watermarkings/
+type: docs
 ---
-
 # Tanda Air Pengolahan Kata
 
 ## Perkenalan

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - list supported file formats GroupDocs
 - Java watermarking library
-
+type: docs
 ---
-
-
 # How to List Supported File Formats Using GroupDocs.Watermark for Java
 
 ## Introduction

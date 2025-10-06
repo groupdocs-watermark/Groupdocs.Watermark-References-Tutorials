@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 첫 번째 페이지에 다양한 머리글과 바닥글을 설정하는 방법을 알아보세요.
 weight: 36
 url: /ko/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Word Docs에서 다른 첫 페이지 머리글/바닥글 설정
 
 ## 소개

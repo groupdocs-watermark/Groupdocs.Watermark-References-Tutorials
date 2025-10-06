@@ -8,10 +8,8 @@ keywords:
 - clear headers footers Excel
 - GroupDocs Watermark .NET tutorial
 - remove header footer spreadsheet
-
+type: docs
 ---
-
-
 # Clearing Header and Footer in an Excel Spreadsheet Using GroupDocs.Watermark for .NET
 
 ## Introduction

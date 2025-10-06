@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: V této příručce se dozvíte, jak přidat vodoznaky do dokumentů pomocí GroupDocs.Watermark for .NET. Ideální pro vývojáře, kteří chtějí zlepšit zabezpečení dokumentů.
 weight: 11
 url: /cs/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # Načíst dokument ze streamu
 
 ## Úvod

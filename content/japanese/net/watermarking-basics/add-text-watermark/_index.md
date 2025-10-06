@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: このステップバイステップ ガイドでは、Groupdocs Watermark for .NET を使用してドキュメントにテキスト ウォーターマークを追加する方法を学習します。
 weight: 11
 url: /ja/net/watermarking-basics/add-text-watermark/
+type: docs
 ---
-
 # テキストの透かしを追加する
 
 ## 導入

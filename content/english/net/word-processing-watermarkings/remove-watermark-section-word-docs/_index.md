@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to remove watermarks from specific sections within Word documents using GroupDocs.Watermark for .NET. Comprehensive tutorial available here.
 weight: 32
 url: /net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # Remove Watermark from Section in Word Docs
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere filigrane di immagini ai documenti utilizzando GroupDocs.Watermark per .NET. Segui la nostra guida passo passo per un'integrazione perfetta della filigrana.
 weight: 12
 url: /it/net/image-watermarkings/add-image-watermark-from-stream/
+type: docs
 ---
-
 # Aggiungi filigrana immagine dallo streaming
 
 ## introduzione

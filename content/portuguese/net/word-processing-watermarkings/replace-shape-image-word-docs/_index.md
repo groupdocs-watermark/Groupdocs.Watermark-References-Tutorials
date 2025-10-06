@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda como substituir imagens de forma programaticamente em documentos do Word usando GroupDocs.Watermark for .NET. Simplifique as tarefas de manipulação de documentos sem esforço.
 weight: 33
 url: /pt/net/word-processing-watermarkings/replace-shape-image-word-docs/
+type: docs
 ---
-
 # Substituir imagem de forma em documentos do Word
 
 ## Introdução

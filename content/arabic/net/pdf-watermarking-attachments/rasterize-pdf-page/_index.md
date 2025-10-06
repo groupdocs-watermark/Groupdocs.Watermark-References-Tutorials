@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: قم بتحسين أمان المستند باستخدام GroupDocs للعلامة المائية لـ .NET. أضف علامات مائية إلى PDF والتنسيقات الأخرى بسلاسة.
 weight: 28
 url: /ar/net/pdf-watermarking-attachments/rasterize-pdf-page/
+type: docs
 ---
-
 # تنقيط صفحة PDF
 
 ## مقدمة

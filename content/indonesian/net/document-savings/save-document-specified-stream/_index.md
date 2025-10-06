@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menyimpan dokumen ke aliran tertentu menggunakan GroupDocs.Watermark untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk pengembang dari semua tingkatan.
 weight: 12
 url: /id/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Simpan Dokumen ke Aliran Tertentu
 
 ## Perkenalan

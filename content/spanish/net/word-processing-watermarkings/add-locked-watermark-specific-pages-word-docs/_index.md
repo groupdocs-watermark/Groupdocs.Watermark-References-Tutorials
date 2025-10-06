@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda cómo agregar una marca de agua bloqueada a páginas específicas en documentos de Word usando GroupDocs.Watermark para .NET con nuestra sencilla guía paso a paso.
 weight: 12
 url: /es/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Agregar marca de agua bloqueada a páginas específicas en documentos de Word
 
 ## Introducción

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять водяные знаки к изображениям в документах Word с помощью Groupdocs для .NET. Следуйте нашему руководству для безопасной и профессиональной защиты документов.
 weight: 16
 url: /ru/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
+type: docs
 ---
-
 # Добавить водяной знак к изображениям разделов в документах Word
 
 ## Введение

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة التعليقات التوضيحية بتنسيق نصي محدد في مستندات PDF باستخدام Groupdocs لـ .NET.
 weight: 30
 url: /ar/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
+type: docs
 ---
-
 # إزالة التعليقات التوضيحية بتنسيق نص محدد في PDF
 
 ## مقدمة

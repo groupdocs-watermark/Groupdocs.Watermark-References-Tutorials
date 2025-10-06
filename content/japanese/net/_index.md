@@ -5,8 +5,8 @@ weight: 10
 url: /ja/net/
 description: 包括的な GroupDocs.Watermark for .NET チュートリアルをご覧ください。ステップバイステップのガイドを使用して、さまざまなドキュメント形式でウォーターマークを追加、管理、保護する方法を学びます。
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Watermark for .NET のチュートリアルと例
 
 ## 導入

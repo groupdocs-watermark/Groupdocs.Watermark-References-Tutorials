@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: このステップバイステップのガイドでは、Groupdocs for .NET を使用してドキュメントをロードし、ウォーターマークを付ける方法を学習します。コンテンツを簡単に保護し、ブランド化します。
 weight: 12
 url: /ja/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # 特定の形式のドキュメントをロードする
 
 ## 導入

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se rastrovat dokumenty PDF pomocí GroupDocs.Watermark for .NET. Vylepšete zabezpečení dokumentů a vizuální přitažlivost bez námahy.
 weight: 27
 url: /cs/net/pdf-watermarking-attachments/rasterize-pdf-document/
+type: docs
 ---
-
 # Rastrovat dokument PDF
 
 ## Úvod

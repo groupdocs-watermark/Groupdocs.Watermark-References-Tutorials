@@ -3,8 +3,8 @@ title: "Watermark Removal Tutorials for GroupDocs.Watermark .NET"
 description: "Complete tutorials for removing watermarks from documents based on text content, formatting, or other criteria using GroupDocs.Watermark for .NET."
 weight: 12
 url: "/net/watermark-removal/"
+type: docs
 ---
-
 # Watermark Removal Tutorials for GroupDocs.Watermark .NET
 
 Master watermark removal techniques with our detailed GroupDocs.Watermark for .NET tutorials. These step-by-step guides demonstrate how to identify and remove text or image watermarks, remove watermarks with particular formatting or content, implement selective removal based on search criteria, and clean documents from unwanted branding or markings. Each tutorial provides working C# code examples for effective watermark removal, helping you build applications that can manage document appearance and remove outdated or unwanted watermarks when needed.

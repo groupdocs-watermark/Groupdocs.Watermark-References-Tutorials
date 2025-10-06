@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Fedezze fel a GroupDocs.Watermark for .NET oktatóanyagát a képvízjelek hozzáadásával kapcsolatban. Tanuljon meg lépésről lépésre módszereket dokumentuma biztonságának és márkaépítésének javítására.
 weight: 24
 url: /hu/net/image-watermarkings/
+type: docs
 ---
-
 # Kép vízjel
 
 ## Bevezetés

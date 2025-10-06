@@ -8,10 +8,8 @@ keywords:
 - load diagram document with GroupDocs.Watermark .NET
 - watermark diagram documents in .NET
 - GroupDocs.Watermark setup and implementation
-
+type: docs
 ---
-
-
 # How to Load and Watermark Diagram Documents with GroupDocs.Watermark for .NET
 
 ## Introduction

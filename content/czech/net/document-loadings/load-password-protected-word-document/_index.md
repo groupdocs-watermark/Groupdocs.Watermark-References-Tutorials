@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Bez námahy přidejte vodoznaky do heslem chráněných dokumentů Word pomocí GroupDocs.Watermark for .NET s naším komplexním průvodcem krok za krokem.
 weight: 14
 url: /cs/net/document-loadings/load-password-protected-word-document/
+type: docs
 ---
-
 # Načíst dokument Word chráněný heslem
 
 ## Úvod

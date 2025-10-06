@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Bu adım adım kılavuzla GroupDocs.Watermark for .NET'i kullanarak PDF'lerdeki görüntüleri kolayca değiştirin. PDF içeriğini verimli bir şekilde yönetmek için mükemmeldir.
 weight: 39
 url: /tr/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
+type: docs
 ---
-
 # PDF'deki Belirli XObject İçin Görüntüyü Değiştir
 
 ## giriiş

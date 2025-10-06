@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Bảo vệ tài liệu Word của bạn bằng GroupDocs cho .NET. Dễ dàng sửa đổi các thuộc tính hình dạng để tăng cường bảo mật.
 weight: 27
 url: /vi/net/word-processing-watermarkings/modify-shape-properties-word-docs/
+type: docs
 ---
-
 # Sửa đổi thuộc tính hình dạng trong tài liệu Word
 
 ## Giới thiệu

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky do XObjects v PDF pomocí Groupdocs.Watermark for .NET. Pro snadnou implementaci postupujte podle našeho podrobného průvodce.
 weight: 20
 url: /cs/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
+type: docs
 ---
-
 # Přidejte vodoznak do XObjects v PDF
 
 ## Úvod

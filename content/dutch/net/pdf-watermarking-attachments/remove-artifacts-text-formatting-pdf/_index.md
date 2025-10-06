@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u artefacten met specifieke tekstopmaak in PDF kunt verwijderen met GroupDocs voor .NET. Volg onze stapsgewijze handleiding.
 weight: 32
 url: /nl/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
+type: docs
 ---
-
 # Verwijder artefacten met specifieke tekstopmaak in PDF
 
 ## Invoering

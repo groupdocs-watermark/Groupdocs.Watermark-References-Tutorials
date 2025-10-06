@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Enhance your .NET document management capabilities with GroupDocs.Watermark for seamless watermarking and attachment handling.
 weight: 12
 url: /net/pdf-watermarking-attachments/add-attachment-pdf/
+type: docs
 ---
-
 # Add Attachment to PDF
 
 ## Introduction

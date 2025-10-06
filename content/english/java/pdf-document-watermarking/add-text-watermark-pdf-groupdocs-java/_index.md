@@ -8,10 +8,8 @@ keywords:
 - text watermark PDF
 - GroupDocs Watermark Java
 - PDF document watermarking
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to PDFs Using GroupDocs.Watermark for Java: A Step-by-Step Guide
 
 In today's digital age, protecting your intellectual property is crucial when sharing confidential documents or publishing content online. Adding watermarks helps safeguard your work from unauthorized use. This tutorial guides you through adding text watermarks to PDFs using GroupDocs.Watermark for Java, a powerful tool that simplifies document watermarking.

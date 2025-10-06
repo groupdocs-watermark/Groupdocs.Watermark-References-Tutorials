@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: ปลดล็อกพลังของลายน้ำเอกสารด้วย GroupDocs.Watermark สำหรับ .NET จัดการลายน้ำใน PDF, เอกสาร Word และรูปภาพได้อย่างราบรื่น
 weight: 25
 url: /th/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
+type: docs
 ---
-
 # แยกข้อมูล XObject จาก PDF
 
 ## การแนะนำ

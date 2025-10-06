@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำแบบกำหนดเองพร้อมเอฟเฟกต์ข้อความลงในเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET การรักษาความปลอดภัยเอกสารและรูปลักษณ์ที่น่าดึงดูดได้อย่างง่ายดาย
 weight: 21
 url: /th/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
+type: docs
 ---
-
 # เพิ่มลายน้ำพร้อมเอฟเฟกต์ข้อความในเอกสาร Word
 
 ## การแนะนำ

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำให้กับเอกสารของคุณอย่างง่ายดายโดยใช้ GroupDocs.Watermark สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนนี้ เพิ่มความปลอดภัยให้กับเอกสาร
 weight: 11
 url: /th/net/document-savings/save-document-specified-location/
+type: docs
 ---
-
 # บันทึกเอกสารไปยังตำแหน่งที่ระบุ
 
 ## การแนะนำ

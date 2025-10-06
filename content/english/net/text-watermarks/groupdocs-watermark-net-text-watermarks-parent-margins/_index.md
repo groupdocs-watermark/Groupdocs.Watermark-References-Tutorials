@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark .NET
 - text watermarks in .NET
 - adding text watermarks
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks with Parent Margins Using GroupDocs.Watermark for .NET
 
 ## Introduction

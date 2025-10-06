@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes personnalisés avec des effets de texte aux documents Word à l'aide de GroupDocs.Watermark pour .NET. Documentez la sécurité et l’attrait visuel sans effort.
 weight: 21
 url: /fr/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
+type: docs
 ---
-
 # Ajouter un filigrane avec des effets de texte dans Word Docs
 
 ## Introduction

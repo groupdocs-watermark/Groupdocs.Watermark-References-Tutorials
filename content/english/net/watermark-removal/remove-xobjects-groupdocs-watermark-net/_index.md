@@ -8,10 +8,8 @@ keywords:
 - remove PDF XObjects with GroupDocs.Watermark
 - GroupDocs Watermark for .NET setup
 - efficient PDF manipulation
-
+type: docs
 ---
-
-
 # How to Remove PDF XObjects Using GroupDocs.Watermark .NET: A Comprehensive Guide
 
 In digital document management, managing embedded resources like images or forms (XObjects) in PDFs can be challenging. This tutorial provides a detailed guide on removing unwanted XObjects using GroupDocs.Watermark .NET, helping you streamline your document workflows.

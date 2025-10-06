@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Tanuljon meg szöveges és képi vízjeleket hozzáadni a PDF-fájlok meghatározott oldalaihoz a Groupdocs Watermark for .NET segítségével. Kövesse részletes útmutatónkat a dokumentumok biztonságához.
 weight: 15
 url: /hu/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
+type: docs
 ---
-
 # Vízjelek hozzáadása adott oldalakhoz PDF-ben
 
 ## Bevezetés

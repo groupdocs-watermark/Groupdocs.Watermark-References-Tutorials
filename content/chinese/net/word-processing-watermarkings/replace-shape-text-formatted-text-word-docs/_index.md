@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 将 Word 文档中的形状文本替换为格式化文本。您的文档编辑功能毫不费力。
 weight: 34
 url: /zh/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # 在 Word 文档中将形状文本替换为格式化文本
 
 ## 介绍

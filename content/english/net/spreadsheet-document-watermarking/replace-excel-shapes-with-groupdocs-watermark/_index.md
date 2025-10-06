@@ -8,10 +8,8 @@ keywords:
 - replace images in excel shapes
 - groupdocs watermark for .net
 - automate image replacement in excel
-
+type: docs
 ---
-
-
 # Replace Images in Excel Shapes with GroupDocs.Watermark .NET
 
 ## Introduction

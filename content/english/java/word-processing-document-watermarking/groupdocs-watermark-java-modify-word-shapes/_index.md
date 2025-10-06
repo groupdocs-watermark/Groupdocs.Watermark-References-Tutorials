@@ -9,10 +9,8 @@ keywords:
 - groupdocs watermark java
 - text replacement in word shapes
 - java watermarker library
-
+type: docs
 ---
-
-
 # Modify Word Document Shapes with GroupDocs.Watermark in Java: A Comprehensive Guide
 
 ## Introduction

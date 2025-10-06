@@ -8,10 +8,8 @@ keywords:
 - image watermark PowerPoint Java
 - GroupDocs Watermark Java setup
 - Java presentation branding
-
+type: docs
 ---
-
-
 # How to Add an Image Watermark to PowerPoint Using Java and GroupDocs.Watermark
 
 ## Introduction

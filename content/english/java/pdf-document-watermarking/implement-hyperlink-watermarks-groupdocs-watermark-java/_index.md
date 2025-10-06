@@ -8,10 +8,8 @@ keywords:
 - hyperlink watermark PDF
 - GroupDocs Watermark Java
 - search hyperlink watermark PDF
-
+type: docs
 ---
-
-
 # Implement Hyperlink Watermarks in PDFs Using GroupDocs.Watermark for Java: A Complete Guide
 
 Are you looking to manage and extract hyperlink watermarks from PDF files efficiently? With GroupDocs.Watermark for Java, this task becomes straightforward, allowing developers to streamline their workflow by focusing solely on hyperlinks. In this tutorial, we'll guide you through the process of implementing search functionalities specifically for hyperlink watermarks in PDF documents.

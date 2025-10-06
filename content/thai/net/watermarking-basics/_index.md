@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: ค้นพบ GroupDocs.Watermark สำหรับบทช่วยสอน .NET เพื่อเพิ่มลายน้ำรูปภาพและข้อความได้อย่างง่ายดาย ปกป้องเอกสารของคุณด้วยคำแนะนำที่ปฏิบัติตามง่ายเหล่านี้
 weight: 20
 url: /th/net/watermarking-basics/
+type: docs
 ---
-
 # ข้อมูลเบื้องต้นเกี่ยวกับลายน้ำ
 
 ## การแนะนำ

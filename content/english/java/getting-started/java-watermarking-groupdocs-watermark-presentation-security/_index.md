@@ -8,10 +8,8 @@ keywords:
 - Java Watermarking
 - GroupDocs.Watermark for Java
 - Presentation Security
-
+type: docs
 ---
-
-
 # Implement Java Watermarking in Presentations Using GroupDocs.Watermark for Enhanced Security
 
 ## Introduction

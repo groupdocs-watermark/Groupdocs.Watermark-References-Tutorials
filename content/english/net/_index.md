@@ -6,8 +6,8 @@ url: /net/
 description: Explore comprehensive GroupDocs.Watermark for .NET tutorials to implement robust document security and branding. Learn text and image watermarking, format-specific techniques, and advanced protection features with practical C# code examples.
 keywords: [.NET watermarking, C# document protection, PDF watermark .NET, Word watermark C#, Excel watermark .NET, PowerPoint watermark C#, .NET document security, digital watermarking C#, GroupDocs API, watermark management]
 is_root: true
+type: docs
 ---
-
 # Complete Guide to GroupDocs.Watermark for .NET - Tutorials & Examples
 
 ## Introduction to Document Security & Branding with .NET

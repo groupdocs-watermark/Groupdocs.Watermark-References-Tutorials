@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes d’images en mosaïque à vos documents à l’aide de GroupDocs.Watermark for .NET. Facile, efficace et personnalisable.
 weight: 10
 url: /fr/net/image-watermarkings/add-tiled-image-watermark/
+type: docs
 ---
-
 # Ajouter un filigrane d'image en mosaïque
 
 ## Introduction

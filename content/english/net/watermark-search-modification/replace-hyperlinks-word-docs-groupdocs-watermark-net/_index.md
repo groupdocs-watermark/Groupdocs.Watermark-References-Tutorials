@@ -8,10 +8,8 @@ keywords:
 - replace hyperlinks Word documents
 - GroupDocs.Watermark for .NET
 - Word document management
-
+type: docs
 ---
-
-
 # Replace Hyperlinks in Word Documents Using GroupDocs.Watermark for .NET
 ## Introduction
 Navigating the complexities of document management often involves modifying hyperlinks within Word documents, particularly those linked to shapes. This task can be cumbersome without the right tools. **GroupDocs.Watermark for .NET** simplifies this process, making it manageable and efficient. In this tutorial, you'll learn how to replace hyperlinks associated with shapes in Word documents using GroupDocs.Watermark's powerful features.

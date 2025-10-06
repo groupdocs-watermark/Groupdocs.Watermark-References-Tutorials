@@ -5,8 +5,8 @@ weight: 10
 url: /sv/net/
 description: Utforska omfattande GroupDocs.Watermark för .NET tutorials. Lär dig att lägga till, hantera och säkra vattenstämplar i olika dokumentformat med steg-för-steg-guider.
 is_root: true
+type: docs
 ---
-
 # Handledningar och exempel på GroupDocs.Watermark för .NET
 
 ## Introduktion

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat vodoznaky s obrázkovými efekty do dokumentů aplikace Word pomocí GroupDocs.Watermark for .NET. Postupujte podle našeho podrobného průvodce pro ohromující výsledky.
 weight: 19
 url: /cs/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
+type: docs
 ---
-
 # Přidejte vodoznak s obrázkovými efekty v Dokumentech aplikace Word
 
 ## Úvod

@@ -3,8 +3,8 @@ title: "Watermark Search and Modification Tutorials for GroupDocs.Watermark Java
 description: "Learn to search, find, and modify existing watermarks in documents using GroupDocs.Watermark for Java."
 weight: 11
 url: "/java/watermark-search-modification/"
+type: docs
 ---
-
 # Watermark Search and Modification Tutorials for GroupDocs.Watermark Java
 
 Our watermark search and modification tutorials demonstrate how to work with existing watermarks using GroupDocs.Watermark for Java. These comprehensive guides cover searching for text and image watermarks, finding watermarks with specific formatting or regular expressions, modifying discovered watermarks, and implementing combined search strategies. Each tutorial includes detailed Java code examples for watermark discovery and manipulation, helping you build applications that can effectively manage document watermarks throughout their lifecycle.

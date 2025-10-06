@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Protégez vos fichiers PDF avec des filigranes personnalisés à l'aide de GroupDocs.Watermark for .NET. Ajoutez facilement des filigranes de texte ou d’image aux artefacts d’image dans les documents PDF.
 weight: 18
 url: /fr/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
+type: docs
 ---
-
 # Ajouter un filigrane aux artefacts d’image dans un PDF
 
 ## Introduction

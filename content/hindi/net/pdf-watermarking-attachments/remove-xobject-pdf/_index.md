@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: हमारे व्यापक, चरण-दर-चरण ट्यूटोरियल के साथ .NET के लिए GroupDocs.Watermark का उपयोग करके PDF से XObjects को आसानी से हटाने का तरीका जानें।
 weight: 35
 url: /hi/net/pdf-watermarking-attachments/remove-xobject-pdf/
+type: docs
 ---
-
 # पीडीएफ से एक्सऑब्जेक्ट हटाएं
 
 ## परिचय

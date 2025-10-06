@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus tanda air dari file PDF menggunakan GroupDocs.Watermark untuk .NET. Langkah mudah untuk mengedit dokumen profesional.
 weight: 34
 url: /id/net/pdf-watermarking-attachments/remove-watermark-pdf/
+type: docs
 ---
-
 # Hapus Tanda Air dari PDF
 
 ## Perkenalan

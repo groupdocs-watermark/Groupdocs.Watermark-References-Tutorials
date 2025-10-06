@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Upptäck GroupDocs.Watermark för .NET självstudier för att lägga till bild- och textvattenstämplar utan ansträngning. Skydda dina dokument med dessa lätta att följa guider.
 weight: 20
 url: /sv/net/watermarking-basics/
+type: docs
 ---
-
 # Grundläggande om vattenmärkning
 
 ## Introduktion

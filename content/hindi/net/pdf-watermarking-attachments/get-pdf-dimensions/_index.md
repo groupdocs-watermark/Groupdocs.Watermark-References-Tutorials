@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए Groupdocs.Watermark का उपयोग करके अपने दस्तावेज़ों को आसानी से सुरक्षित रखें। वॉटरमार्क, स्टैम्प और एनोटेशन आसानी से जोड़ें।
 weight: 26
 url: /hi/net/pdf-watermarking-attachments/get-pdf-dimensions/
+type: docs
 ---
-
 # पीडीएफ आयाम प्राप्त करें
 
 ## परिचय

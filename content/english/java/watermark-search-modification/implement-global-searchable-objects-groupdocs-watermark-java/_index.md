@@ -8,10 +8,8 @@ keywords:
 - global searchable objects GroupDocs.Watermark Java
 - manage watermarks document formats Java
 - watermark search parameters Java
-
+type: docs
 ---
-
-
 # Implement Global Searchable Objects with GroupDocs.Watermark for Java
 
 ## Introduction

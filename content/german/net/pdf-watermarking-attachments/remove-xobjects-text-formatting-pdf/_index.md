@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Entfernen Sie mühelos XObjects mit spezifischer Textformatierung aus PDFs mit GroupDocs.Watermark für .NET. Befolgen Sie unseren Leitfaden für eine reibungslose Dokumentenbearbeitung.
 weight: 36
 url: /de/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
+type: docs
 ---
-
 # Entfernen Sie XObjects mit spezifischer Textformatierung in PDF
 
 ## Einführung

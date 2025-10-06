@@ -8,10 +8,8 @@ keywords:
 - remove watermarks .NET
 - GroupDocs.Watermark .NET
 - watermark removal software
-
+type: docs
 ---
-
-
 # How to Remove Watermarks Using GroupDocs.Watermark for .NET: A Comprehensive Guide
 
 ## Introduction

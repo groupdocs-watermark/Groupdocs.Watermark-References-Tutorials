@@ -8,10 +8,8 @@ keywords:
 - watermarks in Word documents
 - GroupDocs.Watermark Java setup
 - custom text watermarks
-
+type: docs
 ---
-
-
 # How to Add Watermarks to Word Documents Using GroupDocs.Watermark Java
 
 ## Introduction

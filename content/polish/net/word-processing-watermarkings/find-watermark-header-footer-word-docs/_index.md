@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak skutecznie znajdować i usuwać znaki wodne z dokumentów programu Word za pomocą programu GroupDocs dla platformy .NET, zapewniając integralność i profesjonalizm dokumentów.
 weight: 22
 url: /pl/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # Znajdź znak wodny w nagłówku/stopce w dokumentach programu Word
 
 ## Wstęp

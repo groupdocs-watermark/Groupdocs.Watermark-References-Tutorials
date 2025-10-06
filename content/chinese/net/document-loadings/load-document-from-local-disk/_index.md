@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 使用 Groupdocs for .NET 保护和管理您的文档。按照我们的详细指南无缝添加水印。
 weight: 10
 url: /zh/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # 从本地磁盘加载文档
 
 ## 介绍

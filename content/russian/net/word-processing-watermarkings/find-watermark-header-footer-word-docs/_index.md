@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как эффективно находить и удалять водяные знаки из документов Word с помощью GroupDocs для .NET, обеспечивая целостность и профессионализм документов.
 weight: 22
 url: /ru/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # Найдите водяной знак в верхнем или нижнем колонтитуле документов Word
 
 ## Введение

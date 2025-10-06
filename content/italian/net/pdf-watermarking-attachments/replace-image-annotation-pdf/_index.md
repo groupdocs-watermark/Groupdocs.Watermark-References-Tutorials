@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come sostituire le immagini in annotazioni PDF specifiche utilizzando GroupDocs.Watermark per .NET. Questa guida dettagliata copre tutto, dal caricamento dei documenti al salvataggio delle modifiche.
 weight: 37
 url: /it/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
+type: docs
 ---
-
 # Sostituisci l'immagine con un'annotazione specifica nel PDF
 
 ## introduzione

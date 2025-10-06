@@ -8,10 +8,8 @@ keywords:
 - search watermarks text formatting
 - GroupDocs.Watermark Java
 - watermark text formatting criteria
-
+type: docs
 ---
-
-
 # How to Search for Watermarks with Text Formatting Using GroupDocs.Watermark Java
 
 In today's digital age, protecting and verifying the authenticity of documents is crucial. Embedding watermarks into documents is a common method. However, efficiently searching for these watermarks based on specific text formatting criteria can be challenging. This tutorial will guide you through using GroupDocs.Watermark for Java to search for watermarks with particular text formatting in your documents.

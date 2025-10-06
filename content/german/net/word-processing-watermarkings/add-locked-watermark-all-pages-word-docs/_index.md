@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Sichern Sie Ihre Dokumente, indem Sie mit Groupdocs.Watermark für .NET gesperrte Wasserzeichen hinzufügen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine einfache Implementierung.
 weight: 11
 url: /de/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
+type: docs
 ---
-
 # Fügen Sie allen Seiten in Word-Dokumenten ein gesperrtes Wasserzeichen hinzu
 
 ## Einführung

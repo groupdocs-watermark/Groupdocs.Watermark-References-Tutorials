@@ -8,10 +8,8 @@ keywords:
 - remove hyperlinks Visio diagrams
 - GroupDocs Watermark .NET
 - clean up Visio documents
-
+type: docs
 ---
-
-
 # Efficiently Remove Hyperlinks from Visio Diagrams Using GroupDocs.Watermark .NET
 
 ## Introduction

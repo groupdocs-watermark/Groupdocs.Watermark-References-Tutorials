@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment définir différents en-têtes et pieds de page sur la première page des documents Word à l'aide de GroupDocs.Watermark pour .NET.
 weight: 36
 url: /fr/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Définir un en-tête/pied de page de première page différent dans Word Docs
 
 ## Introduction

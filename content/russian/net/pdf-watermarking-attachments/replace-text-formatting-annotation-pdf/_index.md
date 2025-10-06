@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Повысьте безопасность документов с помощью GroupDocs Watermark для .NET. Узнайте, как легко заменить текст с помощью форматирования аннотаций в файлах PDF.
 weight: 41
 url: /ru/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
+type: docs
 ---
-
 # Заменить текст форматированием для аннотации в PDF
 
 ## Введение

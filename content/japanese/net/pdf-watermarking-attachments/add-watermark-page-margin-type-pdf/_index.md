@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET を使用して、PDF にページ余白タイプのウォーターマークを追加する方法を説明します。書類を簡単に保護します。
 weight: 21
 url: /ja/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # PDF にページ余白タイプのウォーターマークを追加する
 
 ## 導入

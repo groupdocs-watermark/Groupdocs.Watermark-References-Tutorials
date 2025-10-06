@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Fedezze fel, hogyan cserélheti ki a szöveget bizonyos műtermékek esetén a PDF-dokumentumokban a GroupDocs.Watermark for .NET segítségével. Fokozatmentesen fokozza a dokumentumok biztonságát és integritását.
 weight: 42
 url: /hu/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
+type: docs
 ---
-
 # Szöveg cseréje adott műtermékhez a PDF-ben
 
 ## Bevezetés

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية استبدال النص لأشكال معينة في مستندات Word باستخدام GroupDocs.Watermark لـ .NET. اتبع البرنامج التعليمي خطوة بخطوة.
 weight: 35
 url: /ar/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
+type: docs
 ---
-
 # استبدال النص لشكل معين في مستندات Word
 
 ## مقدمة

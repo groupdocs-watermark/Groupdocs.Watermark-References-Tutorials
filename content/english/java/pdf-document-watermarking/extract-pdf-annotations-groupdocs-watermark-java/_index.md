@@ -8,10 +8,8 @@ keywords:
 - extract PDF annotations
 - GroupDocs.Watermark Java
 - PDF annotation extraction
-
+type: docs
 ---
-
-
 # How to Extract PDF Annotations Using GroupDocs.Watermark in Java
 
 ## Introduction

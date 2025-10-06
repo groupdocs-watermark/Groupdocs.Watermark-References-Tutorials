@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: この包括的なステップバイステップ ガイドでは、GroupDocs for .NET のウォーターマークを使用してドキュメントにウォーターマークを追加、削除、抽出する方法を学びます。
 weight: 11
 url: /ja/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # ローカルディスクからドキュメント情報を取得
 
 ## 導入

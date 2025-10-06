@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du extraherar avsnittsegenskaper från Word-dokument med hjälp av Groupdocs Watermark for .NET. Förbättra dina dokumenthanteringsmöjligheter utan ansträngning.
 weight: 23
 url: /sv/net/word-processing-watermarkings/get-section-properties-word-docs/
+type: docs
 ---
-
 # Hämta avsnittsegenskaper i Word Docs
 
 ## Introduktion

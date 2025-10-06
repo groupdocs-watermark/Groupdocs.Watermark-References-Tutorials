@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Khám phá các hướng dẫn GroupDocs.Watermark for .NET để tải và tạo hình mờ tài liệu, đảm bảo bảo mật tài liệu và xây dựng thương hiệu với hướng dẫn từng bước.
 weight: 22
 url: /vi/net/document-loadings/
+type: docs
 ---
-
 # Đang tải tài liệu
 
 ## Giới thiệu

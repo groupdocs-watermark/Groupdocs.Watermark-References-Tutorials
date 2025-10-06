@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak ustawić różne nagłówki i stopki na pierwszej stronie dokumentów programu Word przy użyciu narzędzia GroupDocs.Watermark dla platformy .NET.
 weight: 36
 url: /pl/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Ustaw inny nagłówek/stopkę pierwszej strony w dokumentach programu Word
 
 ## Wstęp

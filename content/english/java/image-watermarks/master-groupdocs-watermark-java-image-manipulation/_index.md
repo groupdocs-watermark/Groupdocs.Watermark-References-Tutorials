@@ -8,10 +8,8 @@ keywords:
 - image watermark management Java
 - GroupDocs Watermark search criteria
 - replace watermarks in PDF with Java
-
+type: docs
 ---
-
-
 # Mastering Image Watermark Management in Java Using GroupDocs.Watermark: A Comprehensive Guide
 
 ## Introduction

@@ -3,8 +3,8 @@ title: "Watermark Removal Tutorials for GroupDocs.Watermark Java"
 description: "Complete tutorials for removing watermarks from documents based on text content, formatting, or other criteria using GroupDocs.Watermark for Java."
 weight: 12
 url: "/java/watermark-removal/"
+type: docs
 ---
-
 # Watermark Removal Tutorials for GroupDocs.Watermark Java
 
 Master watermark removal techniques with our detailed GroupDocs.Watermark for Java tutorials. These step-by-step guides demonstrate how to identify and remove text or image watermarks, remove watermarks with particular formatting or content, implement selective removal based on search criteria, and clean documents from unwanted branding or markings. Each tutorial provides working Java code examples for effective watermark removal, helping you build applications that can manage document appearance and remove outdated or unwanted watermarks when needed.

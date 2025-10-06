@@ -8,10 +8,8 @@ keywords:
 - modern WordArt watermark
 - GroupDocs.Watermark .NET
 - Excel document security
-
+type: docs
 ---
-
-
 # Embed Modern WordArt Watermark in Excel using GroupDocs.Watermark for .NET
 
 ## Introduction

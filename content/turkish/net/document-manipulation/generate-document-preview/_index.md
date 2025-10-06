@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Bu kılavuzla GroupDocs.Watermark for .NET'i kullanarak belge önizlemelerini nasıl oluşturacağınızı öğrenin. Belge güvenliğinizi ve yönetiminizi zahmetsizce geliştirin.
 weight: 10
 url: /tr/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # Belge Önizlemesi Oluştur
 
 ## giriiş

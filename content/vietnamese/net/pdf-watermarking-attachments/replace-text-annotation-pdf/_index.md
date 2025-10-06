@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thay thế văn bản trong các chú thích PDF cụ thể bằng Groupdocs.Watermark cho .NET với hướng dẫn từng bước toàn diện này.
 weight: 40
 url: /vi/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
+type: docs
 ---
-
 # Thay thế văn bản cho chú thích cụ thể trong PDF
 
 ## Giới thiệu

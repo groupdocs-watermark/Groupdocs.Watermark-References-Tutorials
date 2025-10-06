@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как заменить текст фигуры форматированным текстом в документах Word с помощью GroupDocs.Watermark для .NET. Ваши возможности редактирования документов без особых усилий.
 weight: 34
 url: /ru/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # Заменить текст фигуры форматированным текстом в документах Word
 
 ## Введение

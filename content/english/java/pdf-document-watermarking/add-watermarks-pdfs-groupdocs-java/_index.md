@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - PDF text watermark Java
 - PDF image watermark Java
-
+type: docs
 ---
-
-
 # Comprehensive Guide: Watermarking PDFs with GroupDocs for Java (Text & Image)
 
 ## Introduction

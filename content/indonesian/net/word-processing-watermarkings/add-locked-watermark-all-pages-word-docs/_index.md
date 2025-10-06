@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Amankan dokumen Anda dengan menambahkan tanda air terkunci menggunakan Groupdocs.Watermark untuk .NET. Ikuti panduan langkah demi langkah kami untuk kemudahan penerapan.
 weight: 11
 url: /id/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
+type: docs
 ---
-
 # Tambahkan Tanda Air Terkunci ke Semua Halaman di Dokumen Word
 
 ## Perkenalan

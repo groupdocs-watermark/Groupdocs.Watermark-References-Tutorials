@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to set different headers and footers on the first page of Word documents using GroupDocs.Watermark for .NET.
 weight: 36
 url: /net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Set Different First Page Header/Footer in Word Docs
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat hozzá vízjeleket oldalmargó-típussal a PDF-ben a Watermark for .NET segítségével. Biztosítsa dokumentumait könnyedén.
 weight: 21
 url: /hu/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # Vízjel hozzáadása oldalmargó-típussal a PDF-ben
 
 ## Bevezetés

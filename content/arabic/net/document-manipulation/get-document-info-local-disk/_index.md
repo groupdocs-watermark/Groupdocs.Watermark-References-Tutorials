@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة العلامات المائية وإزالتها واستخراجها في المستندات باستخدام GroupDocs للعلامة المائية لـ .NET باستخدام هذا الدليل الشامل خطوة بخطوة.
 weight: 11
 url: /ar/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # احصل على معلومات المستند من القرص المحلي
 
 ## مقدمة

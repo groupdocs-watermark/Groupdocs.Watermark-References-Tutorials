@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air ke XObjects di PDF menggunakan Groupdocs.Watermark untuk .NET. Ikuti panduan langkah demi langkah kami untuk kemudahan penerapan.
 weight: 20
 url: /id/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
+type: docs
 ---
-
 # Tambahkan Tanda Air ke XObjects di PDF
 
 ## Perkenalan

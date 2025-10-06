@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して Word 文書内の図形を操作する方法を学びます。このチュートリアルでは、文書を効率的に処理するためのガイダンスを提供します。
 weight: 37
 url: /ja/net/word-processing-watermarkings/shape-type-usage-word-docs/
+type: docs
 ---
-
 # Word ドキュメントでの図形タイプの使用法
 
 ## 導入

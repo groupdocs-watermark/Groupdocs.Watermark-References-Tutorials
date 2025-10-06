@@ -8,10 +8,8 @@ keywords:
 - load password-protected documents
 - GroupDocs.Watermark .NET
 - password-protected document handling
-
+type: docs
 ---
-
-
 # Loading Password-Protected Documents with GroupDocs.Watermark .NET: A Complete Guide
 
 ## Introduction

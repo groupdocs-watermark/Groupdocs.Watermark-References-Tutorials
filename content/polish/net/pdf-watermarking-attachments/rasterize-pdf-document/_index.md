@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak rasteryzować dokumenty PDF za pomocą GroupDocs.Watermark dla .NET. Bez wysiłku zwiększ bezpieczeństwo dokumentów i atrakcyjność wizualną.
 weight: 27
 url: /pl/net/pdf-watermarking-attachments/rasterize-pdf-document/
+type: docs
 ---
-
 # Rasteryzuj dokument PDF
 
 ## Wstęp

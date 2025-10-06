@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark Java
 - PDF artifact extraction
 - Java PDF watermarking
-
+type: docs
 ---
-
-
 # Access and Iterate Over PDF Artifacts Using GroupDocs.Watermark in Java
 ## Introduction
 Have you ever needed to extract or manage hidden metadata within a PDF document? Whether it's for data processing, auditing, or enhancing security protocols, accessing artifacts in PDFs can be crucial. This tutorial will guide you through using **GroupDocs.Watermark** in Java to access and iterate over these artifacts efficiently.

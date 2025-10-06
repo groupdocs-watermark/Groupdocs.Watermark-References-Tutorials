@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 이 상세한 단계별 가이드에서 .NET용 GroupDocs.Watermark를 사용하여 PDF 문서에서 주석 정보를 추출하는 방법을 알아보세요.
 weight: 23
 url: /ko/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # PDF에서 주석 정보 추출
 
 ## 소개

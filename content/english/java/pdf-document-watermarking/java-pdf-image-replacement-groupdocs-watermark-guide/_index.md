@@ -8,10 +8,8 @@ keywords:
 - Java PDF image replacement
 - GroupDocs Watermark Java
 - PDF manipulation in Java
-
+type: docs
 ---
-
-
 # Mastering Java PDF Image Replacement with GroupDocs.Watermark
 This tutorial will help you efficiently replace images within specific sections of a PDF document using Java and GroupDocs.Watermark. By the end, you'll know how to load, manipulate, and save your PDFs with ease.
 

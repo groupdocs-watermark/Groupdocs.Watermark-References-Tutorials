@@ -8,10 +8,8 @@ keywords:
 - remove embedded JPEG images from emails
 - GroupDocs.Watermark .NET
 - email processing with GroupDocs
-
+type: docs
 ---
-
-
 # How to Efficiently Remove Embedded JPEG Images from Emails Using GroupDocs.Watermark .NET
 
 ## Introduction

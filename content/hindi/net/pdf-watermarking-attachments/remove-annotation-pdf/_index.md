@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके PDF से एनोटेशन हटाने का तरीका जानें। दस्तावेज़ की पठनीयता को सहजता से बढ़ाएँ।
 weight: 29
 url: /hi/net/pdf-watermarking-attachments/remove-annotation-pdf/
+type: docs
 ---
-
 # पीडीएफ से एनोटेशन हटाएं
 
 ## परिचय

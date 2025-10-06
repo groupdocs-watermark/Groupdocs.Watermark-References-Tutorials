@@ -8,10 +8,8 @@ keywords:
 - extract headers and footers from Excel
 - GroupDocs Watermark Java setup
 - Excel document watermarking
-
+type: docs
 ---
-
-
 # How to Extract Headers and Footers from Excel Files Using GroupDocs.Watermark for Java
 
 ## Introduction

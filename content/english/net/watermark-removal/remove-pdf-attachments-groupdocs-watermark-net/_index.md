@@ -8,10 +8,8 @@ keywords:
 - remove PDF attachments
 - GroupDocs.Watermark .NET
 - PDF attachment removal
-
+type: docs
 ---
-
-
 # How to Remove Specific PDF Attachments Using GroupDocs.Watermark .NET
 
 ## Introduction

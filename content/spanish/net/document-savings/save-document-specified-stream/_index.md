@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda cómo guardar un documento en una secuencia específica usando GroupDocs.Watermark para .NET con esta guía paso a paso. Perfecto para desarrolladores de todos los niveles.
 weight: 12
 url: /es/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Guardar documento en la secuencia especificada
 
 ## Introducción

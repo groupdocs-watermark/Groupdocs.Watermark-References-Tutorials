@@ -3,8 +3,8 @@ title: "Image Watermark Implementation Tutorials for GroupDocs.Watermark Java"
 description: "Step-by-step tutorials for adding and customizing image watermarks in documents using GroupDocs.Watermark for Java."
 weight: 4
 url: "/java/image-watermarks/"
+type: docs
 ---
-
 # Image Watermark Implementation Tutorials for GroupDocs.Watermark Java
 
 Our image watermark tutorials provide detailed guidance for implementing visually appealing watermarks in your documents using Java. Follow these practical guides to learn how to add image watermarks from files or streams, create tiled image watermarks, apply transparency and scaling effects, and control watermark positioning. These tutorials include complete Java code examples for common image watermarking operations, helping you build applications that can precisely control visual branding and ownership markers in your documents.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Wasserzeichen aus PDF-Dateien entfernen. Einfache Schritte für die professionelle Dokumentenbearbeitung.
 weight: 34
 url: /de/net/pdf-watermarking-attachments/remove-watermark-pdf/
+type: docs
 ---
-
 # Wasserzeichen aus PDF entfernen
 
 ## Einführung

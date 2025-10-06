@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak dodawać do dokumentów znaki wodne w postaci sąsiadujących obrazów przy użyciu programu GroupDocs.Watermark dla platformy .NET. Łatwe, wydajne i konfigurowalne.
 weight: 10
 url: /pl/net/image-watermarkings/add-tiled-image-watermark/
+type: docs
 ---
-
 # Dodaj znak wodny obrazu kafelkowego
 
 ## Wstęp

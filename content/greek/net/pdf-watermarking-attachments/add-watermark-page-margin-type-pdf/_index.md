@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα με τύπο περιθωρίου σελίδας σε PDF χρησιμοποιώντας το υδατογράφημα Groupdocs για .NET. Ασφαλίστε τα έγγραφά σας χωρίς κόπο.
 weight: 21
 url: /el/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # Προσθήκη υδατογραφήματος με τύπο περιθωρίου σελίδας σε PDF
 
 ## Εισαγωγή

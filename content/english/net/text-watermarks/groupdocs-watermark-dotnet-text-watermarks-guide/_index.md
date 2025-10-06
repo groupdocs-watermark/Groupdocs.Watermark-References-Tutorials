@@ -8,10 +8,8 @@ keywords:
 - text watermarks .net
 - GroupDocs.Watermark setup
 - customizing text watermarks
-
+type: docs
 ---
-
-
 # Mastering Text Watermarks in .NET with GroupDocs.Watermark: A Step-by-Step Guide
 
 ## Introduction

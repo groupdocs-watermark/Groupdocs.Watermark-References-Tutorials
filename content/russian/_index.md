@@ -6,8 +6,8 @@ description: Раскройте возможности GroupDocs.Watermark с п
 weight: 11
 url: /ru/
 is_root: true
+type: docs
 ---
-
 # Безопасность основного документа и брендинг с помощью GroupDocs.Watermark
 
 

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Ajoutez sans effort des filigranes d'image à vos documents à l'aide de GroupDocs.Watermark pour .NET. Protégez votre propriété intellectuelle en toute simplicité.
 weight: 10
 url: /fr/net/watermarking-basics/add-image-watermark/
+type: docs
 ---
-
 # Ajouter un filigrane d'image
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - Excel document handling
 - Java watermarking library
 - GroupDocs.Watermark
-
+type: docs
 ---
-
-
 # Excel Document Handling and Watermarking with GroupDocs.Watermark Java
 
 ## Introduction

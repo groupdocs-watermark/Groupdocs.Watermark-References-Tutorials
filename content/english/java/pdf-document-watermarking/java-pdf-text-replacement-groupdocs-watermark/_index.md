@@ -8,10 +8,8 @@ keywords:
 - Java PDF text replacement
 - GroupDocs Watermark Java
 - PDF document manipulation
-
+type: docs
 ---
-
-
 # Implementing Java PDF Text Replacement with GroupDocs.Watermark: A Comprehensive Tutorial
 
 ## Introduction

@@ -3,8 +3,8 @@ title: "GroupDocs.Watermark for .NET Licensing and Configuration Tutorials"
 description: "Complete tutorials for setting up licensing, implementing metered licensing, and configuring GroupDocs.Watermark in your .NET applications."
 weight: 15
 url: "/net/licensing-configuration/"
+type: docs
 ---
-
 # GroupDocs.Watermark for .NET Licensing and Configuration Tutorials
 
 Learn to properly configure and license GroupDocs.Watermark for .NET with our detailed tutorials. These step-by-step guides walk you through setting up license files, implementing stream-based licensing, configuring metered licensing for pay-as-you-go usage, and understanding supported file formats and API capabilities. Each tutorial provides working C# code examples for proper initialization and configuration, helping you build properly licensed applications that follow best practices for document watermarking implementations.

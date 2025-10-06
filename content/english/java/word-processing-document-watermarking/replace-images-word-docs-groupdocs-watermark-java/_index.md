@@ -8,10 +8,8 @@ keywords:
 - replace images in word docs
 - groupdocs watermark java
 - automate image replacement in word
-
+type: docs
 ---
-
-
 # Replace Images in Word Documents Using GroupDocs.Watermark Java: A Comprehensive Guide
 
 ## Introduction

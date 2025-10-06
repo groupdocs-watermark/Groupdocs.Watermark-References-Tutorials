@@ -8,10 +8,8 @@ keywords:
 - remove PDF annotations Java
 - GroupDocs.Watermark Java tutorial
 - PDF annotation removal with Verdana font
-
+type: docs
 ---
-
-
 # How to Remove PDF Annotations with Verdana Font in Java Using GroupDocs.Watermark
 
 ## Introduction

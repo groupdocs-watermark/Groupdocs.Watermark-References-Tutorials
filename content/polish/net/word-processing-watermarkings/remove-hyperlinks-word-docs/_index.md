@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak usuwać hiperłącza z dokumentów programu Word za pomocą GroupDocs.Watermark dla .NET. Zwiększ bezpieczeństwo dokumentów bez wysiłku.
 weight: 29
 url: /pl/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
+type: docs
 ---
-
 # Usuń hiperłącza w dokumentach programu Word
 
 ## Wstęp

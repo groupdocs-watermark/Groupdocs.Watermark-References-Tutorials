@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark for .NET
 - watermark email attachments
 - email document security
-
+type: docs
 ---
-
-
 # How to Add Watermarks to Email Attachments Using GroupDocs.Watermark for .NET: A Step-by-Step Guide
 
 ## Introduction

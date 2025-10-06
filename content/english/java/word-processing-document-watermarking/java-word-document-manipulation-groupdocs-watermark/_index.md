@@ -8,10 +8,8 @@ keywords:
 - Java Word Document Manipulation
 - GroupDocs Watermark for Java
 - Automate Word Processing in Java
-
+type: docs
 ---
-
-
 # Java Word Document Manipulation with GroupDocs.Watermark: A Comprehensive Guide
 
 ### Introduction

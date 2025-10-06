@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να καταργείτε εύκολα τα έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας.
 weight: 38
 url: /el/net/word-processing-watermarkings/unprotect-document-word-docs/
+type: docs
 ---
-
 # Κατάργηση προστασίας εγγράφου στα Έγγραφα του Word
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách trích xuất tất cả tệp đính kèm từ PDF bằng Groupdocs.Watermark cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để có quy trình trích xuất liền mạch.
 weight: 22
 url: /vi/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
+type: docs
 ---
-
 # Trích xuất tất cả tệp đính kèm từ PDF
 
 ## Giới thiệu

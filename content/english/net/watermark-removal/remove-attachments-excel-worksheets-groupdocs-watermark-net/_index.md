@@ -8,10 +8,8 @@ keywords:
 - remove attachments Excel
 - GroupDocs Watermark .NET tutorial
 - Excel attachment cleanup
-
+type: docs
 ---
-
-
 # How to Remove Attachments from Excel Worksheets Using GroupDocs.Watermark .NET
 
 **Introduction**

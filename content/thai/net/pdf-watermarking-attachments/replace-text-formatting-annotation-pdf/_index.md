@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เพิ่มความปลอดภัยให้กับเอกสารด้วย GroupDocs ลายน้ำสำหรับ .NET เรียนรู้วิธีแทนที่ข้อความด้วยการจัดรูปแบบคำอธิบายประกอบในไฟล์ PDF ได้อย่างง่ายดาย
 weight: 41
 url: /th/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
+type: docs
 ---
-
 # แทนที่ข้อความด้วยการจัดรูปแบบสำหรับคำอธิบายประกอบในรูปแบบ PDF
 
 ## การแนะนำ

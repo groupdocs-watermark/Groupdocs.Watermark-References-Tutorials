@@ -8,10 +8,8 @@ keywords:
 - metered license
 - GroupDocs Watermark for .NET
 - document watermarking
-
+type: docs
 ---
-
-
 # How to Implement a Metered License with GroupDocs Watermark for .NET
 
 ## Introduction
