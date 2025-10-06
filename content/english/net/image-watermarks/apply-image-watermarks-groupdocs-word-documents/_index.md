@@ -8,10 +8,8 @@ keywords:
 - apply image watermarks
 - GroupDocs.Watermark .NET
 - Word documents watermarking
-
+type: docs
 ---
-
-
 # How to Apply Image Watermarks in Word Documents Using GroupDocs.Watermark .NET
 
 ## Introduction

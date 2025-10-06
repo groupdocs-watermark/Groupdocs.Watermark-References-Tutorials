@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: يمكنك إضافة علامات مائية بسهولة إلى مستندات Word المحمية بكلمة مرور باستخدام GroupDocs.Watermark لـ .NET من خلال دليلنا الشامل خطوة بخطوة.
 weight: 14
 url: /ar/net/document-loadings/load-password-protected-word-document/
+type: docs
 ---
-
 # تحميل مستند Word محمي بكلمة مرور
 
 ## مقدمة

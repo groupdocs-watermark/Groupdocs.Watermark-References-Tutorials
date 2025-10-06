@@ -8,10 +8,8 @@ keywords:
 - PDF artifact removal
 - GroupDocs Watermark Java
 - Java PDF processing
-
+type: docs
 ---
-
-
 # Mastering Artifact Removal in PDFs with GroupDocs.Watermark Java
 
 ## Introduction

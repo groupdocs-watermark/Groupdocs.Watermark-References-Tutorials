@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan adhat hozzá zárolt vízjelet egy adott szakaszhoz a Word dokumentumokban a Groupdocs segítségével.
 weight: 13
 url: /hu/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # Zárolt vízjel hozzáadása a Word Dokumentumok szakaszához
 
 ## Bevezetés

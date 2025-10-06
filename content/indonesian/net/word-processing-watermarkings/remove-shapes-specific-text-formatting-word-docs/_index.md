@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus bentuk dengan format teks tertentu di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Ikuti panduan kami untuk manipulasi tanda air yang efisien.
 weight: 31
 url: /id/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
+type: docs
 ---
-
 # Hapus Bentuk dengan Pemformatan Teks Tertentu di Dokumen Word
 
 ## Perkenalan

@@ -8,10 +8,8 @@ keywords:
 - access page properties Word document .NET
 - print section layout Word GroupDocs.Watermark
 - manage document layouts with GroupDocs
-
+type: docs
 ---
-
-
 # How to Access and Print Page Properties of a Word Document Section Using GroupDocs.Watermark in .NET
 
 ## Introduction

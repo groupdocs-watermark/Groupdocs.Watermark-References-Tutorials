@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้การเพิ่มลายน้ำข้อความและรูปภาพลงในหน้าเฉพาะใน PDF โดยใช้ Groupdocs ลายน้ำสำหรับ .NET ปฏิบัติตามคำแนะนำโดยละเอียดของเราเพื่อรักษาความปลอดภัยให้กับเอกสารของคุณ
 weight: 15
 url: /th/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
+type: docs
 ---
-
 # เพิ่มลายน้ำให้กับหน้าเฉพาะในรูปแบบ PDF
 
 ## การแนะนำ

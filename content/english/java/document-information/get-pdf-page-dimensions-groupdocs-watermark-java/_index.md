@@ -8,10 +8,8 @@ keywords:
 - extract PDF page dimensions Java
 - GroupDocs Watermark setup
 - PDF page width and height
-
+type: docs
 ---
-
-
 # Extract PDF Page Dimensions in Java Using GroupDocs.Watermark: A Complete Guide
 
 ## Introduction

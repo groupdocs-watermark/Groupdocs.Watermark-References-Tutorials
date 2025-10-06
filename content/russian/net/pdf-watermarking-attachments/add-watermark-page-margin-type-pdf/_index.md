@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять водяные знаки с типом поля страницы в PDF с помощью Groupdocs для .NET. Защитите свои документы без особых усилий.
 weight: 21
 url: /ru/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # Добавить водяной знак с типом поля страницы в PDF
 
 ## Введение

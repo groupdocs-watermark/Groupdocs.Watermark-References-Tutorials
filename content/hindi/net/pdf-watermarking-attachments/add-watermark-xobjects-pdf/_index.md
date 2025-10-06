@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए Groupdocs.Watermark का उपयोग करके PDF में XObjects में वॉटरमार्क जोड़ने का तरीका जानें। आसान कार्यान्वयन के लिए हमारी चरण-दर-चरण मार्गदर्शिका का पालन करें।
 weight: 20
 url: /hi/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
+type: docs
 ---
-
 # पीडीएफ में XObjects में वॉटरमार्क जोड़ें
 
 ## परिचय

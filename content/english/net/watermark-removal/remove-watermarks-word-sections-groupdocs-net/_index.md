@@ -8,10 +8,8 @@ keywords:
 - remove watermarks from word
 - GroupDocs Watermark .NET tutorial
 - Word document watermark removal
-
+type: docs
 ---
-
-
 # How to Remove Watermarks from a Specific Section in Word Documents Using GroupDocs.Watermark .NET
 
 ## Introduction

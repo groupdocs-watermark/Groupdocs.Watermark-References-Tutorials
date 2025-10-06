@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Προσθέστε εύκολα υδατογραφήματα σε έγγραφα του Word που προστατεύονται με κωδικό πρόσβασης χρησιμοποιώντας το GroupDocs.Watermark για .NET με τον αναλυτικό οδηγό μας βήμα προς βήμα.
 weight: 14
 url: /el/net/document-loadings/load-password-protected-word-document/
+type: docs
 ---
-
 # Φόρτωση εγγράφου Word που προστατεύεται με κωδικό πρόσβασης
 
 ## Εισαγωγή

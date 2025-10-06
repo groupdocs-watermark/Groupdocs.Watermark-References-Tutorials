@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة العناصر بتنسيق نص محدد في PDF باستخدام GroupDocs لـ .NET. اتبع دليلنا خطوة بخطوة.
 weight: 32
 url: /ar/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
+type: docs
 ---
-
 # إزالة القطع الأثرية بتنسيق نص محدد في PDF
 
 ## مقدمة

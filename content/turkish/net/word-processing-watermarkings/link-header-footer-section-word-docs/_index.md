@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinin bölümleri içindeki üstbilgileri ve altbilgileri verimli bir şekilde nasıl bağlayacağınızı öğrenin. Belge yönetimi ve güvenliği.
 weight: 26
 url: /tr/net/word-processing-watermarkings/link-header-footer-section-word-docs/
+type: docs
 ---
-
 # Word Belgelerindeki Bölümdeki Bağlantı Üstbilgisi/Altbilgisi
 
 ## giriiş

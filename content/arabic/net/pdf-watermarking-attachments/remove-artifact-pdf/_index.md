@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة العناصر من مستندات PDF بسهولة باستخدام GroupDocs.Watermark لـ .NET. أتقن العملية خطوة بخطوة من خلال برنامجنا التعليمي الشامل.
 weight: 31
 url: /ar/net/pdf-watermarking-attachments/remove-artifact-pdf/
+type: docs
 ---
-
 # إزالة قطعة أثرية من PDF
 
 ## مقدمة

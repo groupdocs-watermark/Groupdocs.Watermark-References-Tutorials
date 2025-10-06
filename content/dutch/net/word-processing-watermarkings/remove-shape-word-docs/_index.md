@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u vormen uit Word-documenten verwijdert met GroupDocs.Watermark voor .NET. Gemakkelijke, efficiënte en krachtige documentmanipulatie.
 weight: 30
 url: /nl/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # Vorm verwijderen in Word-documenten
 
 ## Invoering

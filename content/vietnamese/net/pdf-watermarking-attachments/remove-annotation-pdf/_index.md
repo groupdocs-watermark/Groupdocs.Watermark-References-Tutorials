@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách xóa chú thích khỏi tệp PDF bằng GroupDocs.Watermark cho .NET. Nâng cao khả năng đọc tài liệu một cách dễ dàng.
 weight: 29
 url: /vi/net/pdf-watermarking-attachments/remove-annotation-pdf/
+type: docs
 ---
-
 # Xóa chú thích khỏi PDF
 
 ## Giới thiệu

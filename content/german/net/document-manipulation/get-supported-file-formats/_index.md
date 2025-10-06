@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Fügen Sie mit GroupDocs.Watermark für .NET mühelos Wasserzeichen zu Ihren Dokumenten hinzu. Befolgen Sie unsere umfassende Schritt-für-Schritt-Anleitung zum Schutz Ihrer digitalen Vermögenswerte.
 weight: 13
 url: /de/net/document-manipulation/get-supported-file-formats/
+type: docs
 ---
-
 # Erhalten Sie unterstützte Dateiformate
 
 ## Einführung

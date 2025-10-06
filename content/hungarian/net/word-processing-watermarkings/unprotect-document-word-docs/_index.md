@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan távolíthatja el egyszerűen a Word dokumentumok védelmét a GroupDocs.Watermark for .NET segítségével. Kövesse lépésenkénti útmutatónkat.
 weight: 38
 url: /hu/net/word-processing-watermarkings/unprotect-document-word-docs/
+type: docs
 ---
-
 # Szüntesse meg a dokumentum védelmét a Word dokumentumokban
 
 ## Bevezetés

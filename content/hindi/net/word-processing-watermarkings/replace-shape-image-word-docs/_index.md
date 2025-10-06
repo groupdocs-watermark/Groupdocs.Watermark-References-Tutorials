@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों में आकृति छवियों को प्रोग्रामेटिक रूप से बदलने का तरीका जानें। दस्तावेज़ हेरफेर कार्यों को सहजता से सरल बनाएं।
 weight: 33
 url: /hi/net/word-processing-watermarkings/replace-shape-image-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में शेप इमेज बदलें
 
 ## परिचय

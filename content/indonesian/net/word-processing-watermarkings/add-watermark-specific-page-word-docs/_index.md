@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air ke halaman tertentu di dokumen Word menggunakan GroupDocs untuk .NET. Lindungi konten Anda dengan mudah.
 weight: 14
 url: /id/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
+type: docs
 ---
-
 # Tambahkan Tanda Air ke Halaman Tertentu di Word Docs
 
 ## Perkenalan

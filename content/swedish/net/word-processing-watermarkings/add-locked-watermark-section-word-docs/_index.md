@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till en låst vattenstämpel i ett specifikt avsnitt i Word-dokument med hjälp av Groupdocs Watermark for .NET med den här omfattande steg-för-steg-guiden.
 weight: 13
 url: /sv/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # Lägg till låst vattenstämpel till avsnitt i Word Docs
 
 ## Introduktion

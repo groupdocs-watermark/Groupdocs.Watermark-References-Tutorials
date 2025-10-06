@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 Watermark를 사용하여 Word 문서에서 섹션 속성을 추출하는 방법을 알아보세요. 문서 조작 능력을 손쉽게 향상시키세요.
 weight: 23
 url: /ko/net/word-processing-watermarkings/get-section-properties-word-docs/
+type: docs
 ---
-
 # Word Docs에서 섹션 속성 가져오기
 
 ## 소개

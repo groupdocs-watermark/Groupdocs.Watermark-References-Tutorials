@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs için Watermark'ı kullanarak Word belgelerine şekil ayarlarıyla filigran eklemeyi öğrenin. Belgelerinizi etkili bir şekilde koruyun.
 weight: 20
 url: /tr/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
+type: docs
 ---
-
 # Word Dokümanlarında Şekil Ayarlarıyla Filigran Ekleme
 
 ## giriiş

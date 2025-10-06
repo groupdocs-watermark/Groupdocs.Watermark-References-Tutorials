@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark .NET
 - text watermarks in images
 - add text watermark using GroupDocs
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks in Images Using GroupDocs.Watermark .NET
 
 In today's digital age, protecting your images from unauthorized use is crucial. Whether you're a photographer, graphic designer, or business owner, adding watermarks can safeguard your work and assert ownership. This step-by-step guide will walk you through using the powerful GroupDocs.Watermark for .NET library to add text watermarks to your images. You'll learn not only how to perform this task but also grasp key features like alignment and margin adjustments.

@@ -8,10 +8,8 @@ keywords:
 - remove Excel worksheet background
 - GroupDocs.Watermark for .NET
 - Excel background removal
-
+type: docs
 ---
-
-
 # How to Remove Background Images from Excel Worksheets Using GroupDocs.Watermark for .NET
 
 ## Introduction

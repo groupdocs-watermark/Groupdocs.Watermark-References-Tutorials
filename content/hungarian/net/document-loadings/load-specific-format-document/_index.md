@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan tölthet be és vízjelekkel tölthet be dokumentumokat a Groupdocs segítségével. Könnyedén védje meg és jellemezze tartalmait.
 weight: 12
 url: /hu/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # Töltsön be egy adott formátumú dokumentumot
 
 ## Bevezetés

@@ -8,10 +8,8 @@ keywords:
 - PDF Watermarking in Java
 - GroupDocs.Watermark for PDFs
 - Java PDF Annotations
-
+type: docs
 ---
-
-
 # PDF Watermarking & Annotations in Java: Master GroupDocs.Watermark
 
 In today's digital landscape, protecting your documents from unauthorized use is crucial. Whether you're handling sensitive information or ensuring the authenticity of official papers, watermarking and annotating PDF files can provide that extra layer of security and traceability. This comprehensive guide will walk you through using GroupDocs.Watermark for Java to effectively load, watermark, annotate, modify, and save your PDF documents.

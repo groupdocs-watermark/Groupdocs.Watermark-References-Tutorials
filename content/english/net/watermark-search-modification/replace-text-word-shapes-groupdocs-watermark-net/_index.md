@@ -8,10 +8,8 @@ keywords:
 - replace text in word shapes
 - GroupDocs Watermark .NET
 - automate text replacement in Word
-
+type: docs
 ---
-
-
 # How to Replace Text in Word Shapes Using GroupDocs.Watermark for .NET
 
 ## Introduction

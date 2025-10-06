@@ -3,8 +3,8 @@ title: "PDF Watermarking Tutorials with GroupDocs.Watermark for Java"
 description: "Learn to work with watermarks in PDF documents including annotations, artifacts, and XObjects with these GroupDocs.Watermark for Java tutorials."
 weight: 5
 url: "/java/pdf-document-watermarking/"
+type: docs
 ---
-
 # PDF Watermarking Tutorials with GroupDocs.Watermark for Java
 
 Discover how to implement robust watermarking solutions for PDF documents with our comprehensive GroupDocs.Watermark for Java tutorials. These step-by-step guides teach you how to add watermarks to PDF annotations, artifacts, and XObjects, extract and modify existing content, implement print-only watermarks, and work with PDF-specific features. Each tutorial provides practical Java code examples for PDF watermarking operations, helping you build applications that can effectively secure and brand PDF documents while maintaining their structure and functionality.

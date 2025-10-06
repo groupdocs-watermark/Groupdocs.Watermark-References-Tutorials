@@ -8,10 +8,8 @@ keywords:
 - remove watermarks java
 - GroupDocs Watermark for Java
 - text formatting watermark removal
-
+type: docs
 ---
-
-
 # How to Search and Remove Watermarks by Text Formatting Using GroupDocs.Watermark for Java
 
 ## Introduction

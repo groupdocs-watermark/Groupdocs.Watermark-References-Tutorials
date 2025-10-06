@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs'u kullanarak Word belgelerindeki filigranları nasıl verimli bir şekilde bulup kaldıracağınızı öğrenin, böylece belge bütünlüğünü ve profesyonelliğini sağlayın.
 weight: 22
 url: /tr/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # Word Belgelerinde Üstbilgi/Altbilgide Filigran Bulma
 
 ## giriiş

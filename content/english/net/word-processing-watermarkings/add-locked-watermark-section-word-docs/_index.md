@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to add a locked watermark to a specific section in Word documents using Groupdocs.Watermark for .NET with this comprehensive step-by-step guide.
 weight: 13
 url: /net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # Add Locked Watermark to Section in Word Docs
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: استكشف GroupDocs.Watermark لبرامج .NET التعليمية حول إضافة علامات مائية للصور. تعرف على أساليب خطوة بخطوة لتحسين أمان المستند وعلامته التجارية.
 weight: 24
 url: /ar/net/image-watermarkings/
+type: docs
 ---
-
 # العلامة المائية للصورة
 
 ## مقدمة

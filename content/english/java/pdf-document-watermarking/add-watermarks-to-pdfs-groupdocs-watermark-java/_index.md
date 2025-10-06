@@ -9,10 +9,8 @@ keywords:
 - PDF watermarking
 - Java document security
 - image watermark Java
-
+type: docs
 ---
-
-
 # How to Add Watermarks to PDFs Using GroupDocs.Watermark for Java
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak snadno odstranit přílohy z dokumentů PDF pomocí GroupDocs.Watermark for .NET. Zvyšte efektivitu správy dokumentů.
 weight: 33
 url: /cs/net/pdf-watermarking-attachments/remove-attachment-pdf/
+type: docs
 ---
-
 # Odebrat přílohu z PDF
 
 ## Úvod

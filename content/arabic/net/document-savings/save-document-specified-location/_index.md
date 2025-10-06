@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية بسهولة إلى مستنداتك باستخدام GroupDocs.Watermark لـ .NET باستخدام هذا الدليل التفصيلي خطوة بخطوة. تعزيز أمان المستندات.
 weight: 11
 url: /ar/net/document-savings/save-document-specified-location/
+type: docs
 ---
-
 # احفظ المستند في الموقع المحدد
 
 ## مقدمة

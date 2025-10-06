@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Bez wysiłku dodawaj znaki wodne do swoich dokumentów za pomocą GroupDocs.Watermark dla .NET. Postępuj zgodnie z naszym kompleksowym przewodnikiem krok po kroku, aby chronić swoje zasoby cyfrowe.
 weight: 13
 url: /pl/net/document-manipulation/get-supported-file-formats/
+type: docs
 ---
-
 # Uzyskaj obsługiwane formaty plików
 
 ## Wstęp

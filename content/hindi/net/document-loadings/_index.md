@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: दस्तावेज़ों को लोड करने और वॉटरमार्क करने, चरण-दर-चरण गाइड के साथ दस्तावेज़ सुरक्षा और ब्रांडिंग सुनिश्चित करने के लिए .NET ट्यूटोरियल के लिए GroupDocs.Watermark खोजें।
 weight: 22
 url: /hi/net/document-loadings/
+type: docs
 ---
-
 # दस्तावेज़ लोड हो रहा है
 
 ## परिचय

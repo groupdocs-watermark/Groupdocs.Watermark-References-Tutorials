@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs for .NET 在 Word 文件中的圖片中新增浮水印。請遵循我們的安全、專業文件保護指南。
 weight: 16
 url: /zh-hant/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
+type: docs
 ---
-
 # 為 Word 文件中的分割區影像新增浮水印
 
 ## 介紹

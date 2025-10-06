@@ -6,8 +6,8 @@ description: .NET ve Java eğitimlerimizle GroupDocs.Watermark'ın gücünün ki
 weight: 11
 url: /tr/
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Watermark ile Belge Güvenliğinde ve Markalamada Ustalaşın
 
 

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 透過本指南了解如何使用 GroupDocs.Watermark for .NET 為文件添加浮水印。非常適合希望增強文件安全性的開發人員。
 weight: 11
 url: /zh-hant/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # 從串流載入文檔
 
 ## 介紹

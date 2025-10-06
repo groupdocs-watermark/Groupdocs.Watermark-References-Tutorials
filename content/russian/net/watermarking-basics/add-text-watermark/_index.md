@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять текстовые водяные знаки в документы с помощью Groupdocs for .NET, с помощью этого пошагового руководства.
 weight: 11
 url: /ru/net/watermarking-basics/add-text-watermark/
+type: docs
 ---
-
 # Добавить текстовый водяной знак
 
 ## Введение

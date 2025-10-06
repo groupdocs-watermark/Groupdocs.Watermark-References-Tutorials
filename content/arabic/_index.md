@@ -6,8 +6,8 @@ description: أطلق العنان لقوة GroupDocs.Watermark من خلال ب
 weight: 11
 url: /ar/
 is_root: true
+type: docs
 ---
-
 # إتقان أمان المستندات والعلامات التجارية باستخدام GroupDocs.Watermark
 
 

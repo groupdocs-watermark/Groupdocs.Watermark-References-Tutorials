@@ -8,10 +8,8 @@ keywords:
 - Excel watermarking
 - text watermark Excel
 - image watermark Excel
-
+type: docs
 ---
-
-
 # How to Add Text & Image Watermarks to Excel Sheets Using GroupDocs.Watermark for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar med sidmarginaltyp i PDF med Groupdocs Watermark for .NET. Säkra dina dokument utan ansträngning.
 weight: 21
 url: /sv/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # Lägg till vattenstämpel med sidmarginaltyp i PDF
 
 ## Introduktion

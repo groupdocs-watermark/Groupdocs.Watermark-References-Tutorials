@@ -8,10 +8,8 @@ keywords:
 - image effects on watermarks
 - shape watermarks in .NET
 - GroupDocs Watermark .NET
-
+type: docs
 ---
-
-
 # Applying Image Effects to Shape Watermarks in .NET
 ## Introduction
 In today’s digital world, protecting your documents is crucial for maintaining privacy and ownership. Whether securing spreadsheets with sensitive data or enhancing branding, watermarking offers a robust solution. This tutorial guides you through applying image effects such as brightness, contrast, and chroma key to shape watermarks using GroupDocs.Watermark for .NET.

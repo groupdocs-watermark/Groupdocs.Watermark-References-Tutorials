@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να ορίζετε διαφορετικές κεφαλίδες και υποσέλιδα στην πρώτη σελίδα των εγγράφων του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET.
 weight: 36
 url: /el/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Ορισμός διαφορετικής κεφαλίδας/υποσέλιδου πρώτης σελίδας στα Έγγραφα του Word
 
 ## Εισαγωγή

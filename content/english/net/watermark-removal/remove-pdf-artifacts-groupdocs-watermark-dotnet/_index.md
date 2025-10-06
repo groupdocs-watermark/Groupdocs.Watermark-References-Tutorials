@@ -8,10 +8,8 @@ keywords:
 - remove PDF artifacts
 - GroupDocs.Watermark .NET setup
 - PDF document management
-
+type: docs
 ---
-
-
 # Remove PDF Artifacts Using GroupDocs.Watermark for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: इस व्यापक चरण-दर-चरण मार्गदर्शिका के साथ .NET के लिए वॉटरमार्क का उपयोग करके दस्तावेज़ों में वॉटरमार्क जोड़ना, हटाना और निकालना सीखें।
 weight: 11
 url: /hi/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # स्थानीय डिस्क से दस्तावेज़ जानकारी प्राप्त करें
 
 ## परिचय

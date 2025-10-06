@@ -3,8 +3,8 @@ title: "Document Information Extraction Tutorials for GroupDocs.Watermark Java"
 description: "Learn to extract and analyze document metadata, content structure, and format information with these GroupDocs.Watermark for Java tutorials."
 weight: 14
 url: "/java/document-information/"
+type: docs
 ---
-
 # Document Information Extraction Tutorials for GroupDocs.Watermark Java
 
 Our document information tutorials show you how to analyze documents using GroupDocs.Watermark for Java. These practical guides demonstrate how to extract document metadata, identify document structure elements like sections and headers, retrieve shape and image information, and determine document dimensions and properties. Each tutorial includes complete Java code examples for document analysis scenarios, helping you build applications that can make intelligent decisions about watermark placement and style based on document characteristics.

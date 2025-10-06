@@ -8,10 +8,8 @@ keywords:
 - Excel attachment extraction
 - GroupDocs Watermark .NET
 - automate Excel attachments
-
+type: docs
 ---
-
-
 # Automate Excel Attachment Extraction with GroupDocs
 ## Category: Email Document Watermarking
 

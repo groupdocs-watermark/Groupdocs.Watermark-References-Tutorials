@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to add artifact watermarks to PDF files effortlessly using Groupdocs.Watermark for .NET. Protect your documents with eased.
 weight: 11
 url: /net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
+type: docs
 ---
-
 # Add Artifact Watermark to PDF
 
 ## Introduction

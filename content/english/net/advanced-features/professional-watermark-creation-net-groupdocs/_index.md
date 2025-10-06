@@ -8,10 +8,8 @@ keywords:
 - professional watermark creation .NET
 - text watermarks .NET GroupDocs
 - rotate text watermarks .NET
-
+type: docs
 ---
-
-
 # Create Professional Watermarks in .NET Documents Using GroupDocs.Watermark
 
 ## Introduction

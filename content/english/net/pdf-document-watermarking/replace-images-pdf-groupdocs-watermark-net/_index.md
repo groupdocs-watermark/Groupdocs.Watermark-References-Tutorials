@@ -8,10 +8,8 @@ keywords:
 - replace images in PDF
 - GroupDocs.Watermark .NET
 - modify image artifacts in PDF
-
+type: docs
 ---
-
-
 # How to Replace an Image in a PDF with GroupDocs.Watermark for .NET
 
 ## Introduction

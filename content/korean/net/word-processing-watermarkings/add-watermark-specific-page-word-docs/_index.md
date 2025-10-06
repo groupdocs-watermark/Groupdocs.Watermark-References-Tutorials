@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs for .NET을 사용하여 Word 문서의 특정 페이지에 워터마크를 추가하는 방법을 알아보세요. 콘텐츠를 손쉽게 보호하세요.
 weight: 14
 url: /ko/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
+type: docs
 ---
-
 # Word Docs의 특정 페이지에 워터마크 추가
 
 ## 소개

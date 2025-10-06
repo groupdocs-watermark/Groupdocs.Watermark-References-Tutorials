@@ -6,8 +6,8 @@ description: Nutzen Sie die Leistungsfähigkeit von GroupDocs.Watermark mit unse
 weight: 11
 url: /de/
 is_root: true
+type: docs
 ---
-
 # Sicherheit und Branding von Masterdokumenten mit GroupDocs.Watermark
 
 

@@ -3,8 +3,8 @@ title: "GroupDocs.Watermark Getting Started Tutorials for .NET Developers"
 description: "Step-by-step tutorials for GroupDocs.Watermark installation, licensing setup, and creating your first document watermarks in .NET applications."
 weight: 1
 url: "/net/getting-started/"
+type: docs
 ---
-
 # GroupDocs.Watermark Getting Started Tutorials for .NET Developers
 
 Begin your journey with these essential GroupDocs.Watermark tutorials that walk you through installation, licensing configuration, and creating your first document watermarks in C#. Our beginner-friendly guides demonstrate how to set up your development environment, initialize the GroupDocs.Watermark library, and perform fundamental watermarking operations. Follow these tutorials to quickly master the basics and prepare for more advanced document watermarking tasks in your .NET applications.

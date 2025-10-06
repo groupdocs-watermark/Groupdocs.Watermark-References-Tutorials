@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как эффективно связывать верхние и нижние колонтитулы в разделах документов Word с помощью GroupDocs.Watermark для .NET. Управление документами и безопасность.
 weight: 26
 url: /ru/net/word-processing-watermarkings/link-header-footer-section-word-docs/
+type: docs
 ---
-
 # Ссылка на верхний/нижний колонтитул в разделе в документах Word
 
 ## Введение

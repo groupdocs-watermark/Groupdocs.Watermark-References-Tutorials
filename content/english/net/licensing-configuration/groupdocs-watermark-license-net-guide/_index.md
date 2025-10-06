@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark license .NET
 - Set GroupDocs Watermark License
 - Programmatically apply GroupDocs Watermark License
-
+type: docs
 ---
-
-
 # How to Set GroupDocs.Watermark License in .NET: Complete Guide for Seamless Integration
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak dodać zablokowany znak wodny do określonych stron w dokumentach programu Word za pomocą programu GroupDocs.Watermark dla platformy .NET, korzystając z naszego prostego przewodnika krok po kroku.
 weight: 12
 url: /pl/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Dodaj zablokowany znak wodny do określonych stron w dokumentach programu Word
 
 ## Wstęp

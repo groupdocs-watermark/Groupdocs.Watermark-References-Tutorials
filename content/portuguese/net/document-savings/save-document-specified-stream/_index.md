@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda como salvar um documento em um fluxo especificado usando GroupDocs.Watermark for .NET com este guia passo a passo. Perfeito para desenvolvedores de todos os níveis.
 weight: 12
 url: /pt/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Salvar documento no fluxo especificado
 
 ## Introdução

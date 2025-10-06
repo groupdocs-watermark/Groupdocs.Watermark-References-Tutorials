@@ -8,10 +8,8 @@ keywords:
 - remove worksheet background
 - GroupDocs Watermark for Java
 - Java watermark library
-
+type: docs
 ---
-
-
 # How to Remove a Worksheet Background with GroupDocs.Watermark for Java
 
 ## Introduction

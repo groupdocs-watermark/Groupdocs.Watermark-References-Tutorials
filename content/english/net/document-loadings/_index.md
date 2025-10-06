@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Discover GroupDocs.Watermark for .NET tutorials to load and watermark documents, ensuring document security and branding with step-by-step guides.
 weight: 22
 url: /net/document-loadings/
+type: docs
 ---
-
 # Document Loading
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar i dokument med Groupdocs.Watermark for .NET. Den här guiden ger instruktioner för att säkerställa dokumentskydd och integritet.
 weight: 10
 url: /sv/net/document-savings/save-document-same-file-stream/
+type: docs
 ---
-
 # Spara dokument till samma fil eller ström
 
 ## Introduktion

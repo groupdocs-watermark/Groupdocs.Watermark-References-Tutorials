@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - add attachments to PDFs
 - PDF document enhancement
-
+type: docs
 ---
-
-
 # Adding Attachments to PDF Documents Using GroupDocs.Watermark in Java
 
 ## Introduction

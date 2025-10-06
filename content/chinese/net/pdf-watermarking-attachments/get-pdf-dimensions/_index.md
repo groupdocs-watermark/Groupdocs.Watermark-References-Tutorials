@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 使用 Groupdocs.Watermark for .NET 轻松保护您的文档。轻松添加水印、图章和注释。
 weight: 26
 url: /zh/net/pdf-watermarking-attachments/get-pdf-dimensions/
+type: docs
 ---
-
 # 获取 PDF 尺寸
 
 ## 介绍

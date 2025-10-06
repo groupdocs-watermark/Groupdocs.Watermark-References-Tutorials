@@ -8,10 +8,8 @@ keywords:
 - Set License from Stream GroupDocs Watermark Java
 - Java file stream license management
 - GroupDocs Watermark library integration
-
+type: docs
 ---
-
-
 # How to Implement Set License from Stream in GroupDocs.Watermark for Java
 
 Welcome to this comprehensive guide on setting up and utilizing the "Set License from Stream" feature within the GroupDocs.Watermark library for Java. This tutorial will walk you through resolving common licensing challenges by using a file stream, enabling seamless integration into your projects.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ontdek GroupDocs.Watermark voor .NET-tutorials over het genereren van documentvoorbeelden en het beheren van watermerken. Verbeter de documentbeveiliging en het beheer.
 weight: 21
 url: /nl/net/document-manipulation/
+type: docs
 ---
-
 # Documentmanipulatie
 
 ## Invoering

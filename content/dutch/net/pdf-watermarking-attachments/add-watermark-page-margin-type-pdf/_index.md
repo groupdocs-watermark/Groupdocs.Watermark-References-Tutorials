@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u watermerken met paginamargetype in PDF kunt toevoegen met behulp van Groupdocs voor .NET. Beveilig uw documenten moeiteloos.
 weight: 21
 url: /nl/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # Watermerk toevoegen met paginamargetype in PDF
 
 ## Invoering

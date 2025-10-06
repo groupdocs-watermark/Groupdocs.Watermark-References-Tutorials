@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mendapatkan info dokumen dari aliran menggunakan GroupDocs.Watermark untuk .NET dengan panduan langkah demi langkah ini. Kemampuan manajemen dokumen Anda dengan mudah.
 weight: 12
 url: /id/net/document-manipulation/get-document-info-stream/
+type: docs
 ---
-
 # Dapatkan Info Dokumen dari Stream
 
 ## Perkenalan

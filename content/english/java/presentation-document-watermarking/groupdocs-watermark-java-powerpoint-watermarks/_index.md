@@ -10,10 +10,8 @@ keywords:
 - Java Slide Watermarking
 - Protect Presentation Content
 - Master Slides Watermark
-
+type: docs
 ---
-
-
 # How to Add Watermarks to PowerPoint with GroupDocs.Watermark for Java
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Byt enkelt ut bilder i PDF-filer med GroupDocs.Watermark för .NET med denna steg-för-steg-guide. Perfekt för att hantera PDF-innehåll effektivt.
 weight: 39
 url: /sv/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
+type: docs
 ---
-
 # Ersätt bild för specifikt XObject i PDF
 
 ## Introduktion

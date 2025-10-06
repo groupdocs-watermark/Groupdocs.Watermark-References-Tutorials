@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Khám phá GroupDocs.Watermark để biết các hướng dẫn .NET về cách tạo bản xem trước tài liệu và quản lý hình mờ. Tăng cường bảo mật và quản lý tài liệu.
 weight: 21
 url: /vi/net/document-manipulation/
+type: docs
 ---
-
 # Thao tác tài liệu
 
 ## Giới thiệu

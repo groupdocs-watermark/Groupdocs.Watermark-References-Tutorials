@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách xóa hình khỏi tài liệu Word bằng GroupDocs.Watermark cho .NET. Thao tác tài liệu dễ dàng, hiệu quả và mạnh mẽ.
 weight: 30
 url: /vi/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # Xóa hình dạng trong tài liệu Word
 
 ## Giới thiệu

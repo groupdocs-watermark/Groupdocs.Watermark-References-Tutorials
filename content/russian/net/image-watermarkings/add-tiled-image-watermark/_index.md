@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять водяные знаки мозаичных изображений в документы с помощью GroupDocs.Watermark для .NET. Простой, эффективный и настраиваемый.
 weight: 10
 url: /ru/net/image-watermarkings/add-tiled-image-watermark/
+type: docs
 ---
-
 # Добавить водяной знак мозаичного изображения
 
 ## Введение

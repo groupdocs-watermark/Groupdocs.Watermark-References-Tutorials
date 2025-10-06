@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: इस विस्तृत, चरण-दर-चरण मार्गदर्शिका में .NET के लिए GroupDocs.Watermark का उपयोग करके PDF दस्तावेज़ों से एनोटेशन जानकारी निकालने का तरीका जानें।
 weight: 23
 url: /hi/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # पीडीएफ से एनोटेशन जानकारी निकालें
 
 ## परिचय

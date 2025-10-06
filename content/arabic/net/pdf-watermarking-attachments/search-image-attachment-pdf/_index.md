@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: ابحث بكفاءة عن الصور داخل مرفقات PDF باستخدام GroupDocs.Watermark لـ .NET. تبسيط عملية إدارة العلامة المائية الخاصة بك دون عناء.
 weight: 46
 url: /ar/net/pdf-watermarking-attachments/search-image-attachment-pdf/
+type: docs
 ---
-
 # ابحث عن الصورة في مرفق PDF
 
 ## مقدمة

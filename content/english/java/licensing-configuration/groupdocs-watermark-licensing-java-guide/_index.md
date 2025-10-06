@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - Java watermarking license setup
 - Digital document watermarking
-
+type: docs
 ---
-
-
 # How to Set Up GroupDocs.Watermark Licensing in Java: A Complete Guide
 
 ## Introduction

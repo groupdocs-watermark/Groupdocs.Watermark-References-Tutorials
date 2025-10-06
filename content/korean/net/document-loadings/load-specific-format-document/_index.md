@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 이 단계별 가이드를 통해 Groupdocs for .NET을 사용하여 문서를 로드하고 워터마크하는 방법을 알아보세요. 손쉽게 콘텐츠를 보호하고 브랜드를 지정하세요.
 weight: 12
 url: /ko/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # 특정 형식의 문서 로드
 
 ## 소개

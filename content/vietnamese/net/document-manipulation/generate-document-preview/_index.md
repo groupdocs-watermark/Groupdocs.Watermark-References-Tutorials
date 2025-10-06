@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách tạo bản xem trước tài liệu bằng GroupDocs.Watermark cho .NET với hướng dẫn này. Tăng cường bảo mật và quản lý tài liệu của bạn một cách dễ dàng.
 weight: 10
 url: /vi/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # Tạo bản xem trước tài liệu
 
 ## Giới thiệu

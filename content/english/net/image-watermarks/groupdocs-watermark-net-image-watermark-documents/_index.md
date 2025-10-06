@@ -8,10 +8,8 @@ keywords:
 - Add Image Watermarks to Documents
 - GroupDocs.Watermark .NET API
 - Image Watermarking in .NET
-
+type: docs
 ---
-
-
 # How to Add Image Watermarks to Documents Using GroupDocs.Watermark .NET API
 
 ## Introduction

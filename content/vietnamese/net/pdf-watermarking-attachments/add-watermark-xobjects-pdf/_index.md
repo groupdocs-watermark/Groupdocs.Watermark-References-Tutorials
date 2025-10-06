@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ vào XObjects trong PDF bằng Groupdocs.Watermark cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để dễ dàng thực hiện.
 weight: 20
 url: /vi/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
+type: docs
 ---
-
 # Thêm hình mờ vào XObjects trong PDF
 
 ## Giới thiệu

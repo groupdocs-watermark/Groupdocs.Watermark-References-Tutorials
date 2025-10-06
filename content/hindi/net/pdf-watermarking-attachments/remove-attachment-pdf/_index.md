@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके आसानी से PDF दस्तावेज़ों से अटैचमेंट हटाने का तरीका जानें। अपनी दस्तावेज़ प्रबंधन दक्षता बढ़ाएँ।
 weight: 33
 url: /hi/net/pdf-watermarking-attachments/remove-attachment-pdf/
+type: docs
 ---
-
 # पीडीएफ से अनुलग्नक हटाएं
 
 ## परिचय

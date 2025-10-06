@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए वॉटरमार्क के साथ आसानी से Word दस्तावेज़ों से मूल्यवान जानकारी अनलॉक करें। उन्नत डेटा विश्लेषण के लिए आकार की जानकारी निर्बाध रूप से निकालें।
 weight: 24
 url: /hi/net/word-processing-watermarkings/get-shapes-information-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में आकृतियों की जानकारी प्राप्त करें
 
 ## परिचय

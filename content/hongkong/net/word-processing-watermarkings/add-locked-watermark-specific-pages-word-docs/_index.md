@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 透過我們簡單的逐步指南，了解如何使用 GroupDocs.Watermark for .NET 將鎖定浮水印新增至 Word 文件中的特定頁面。
 weight: 12
 url: /zh-hant/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # 將鎖定浮水印新增至 Word 文件中的特定頁面
 
 ## 介紹

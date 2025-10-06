@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark for Java
 - text watermarks in Java
 - Java document protection
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks Using GroupDocs.Watermark for Java: A Comprehensive Guide
 
 Watermarking documents is crucial for ensuring the authenticity and ownership of digital files. Whether you're protecting sensitive information or simply branding your work, adding text watermarks can be an effective solution. This comprehensive guide will walk you through using **GroupDocs.Watermark** for Java to seamlessly add text watermarks to your documents.

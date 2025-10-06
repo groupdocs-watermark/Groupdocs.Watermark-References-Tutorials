@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα εικόνας σε έγγραφα χρησιμοποιώντας το GroupDocs.Watermark για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για απρόσκοπτη ενσωμάτωση υδατογραφήματος.
 weight: 12
 url: /el/net/image-watermarkings/add-image-watermark-from-stream/
+type: docs
 ---
-
 # Προσθήκη υδατογραφήματος εικόνας από τη ροή
 
 ## Εισαγωγή

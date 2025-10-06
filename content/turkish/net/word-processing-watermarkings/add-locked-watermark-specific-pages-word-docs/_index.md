@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Kolay adım adım kılavuzumuzla GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki belirli sayfalara nasıl kilitli filigran ekleyeceğinizi öğrenin.
 weight: 12
 url: /tr/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Word Belgelerindeki Belirli Sayfalara Kilitli Filigran Ekleme
 
 ## giriiş

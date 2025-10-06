@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำพร้อมเอฟเฟ็กต์รูปภาพลงในเอกสาร Word ของคุณโดยใช้ GroupDocs.Watermark สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อผลลัพธ์ที่น่าทึ่ง
 weight: 19
 url: /th/net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
+type: docs
 ---
-
 # เพิ่มลายน้ำพร้อมเอฟเฟกต์รูปภาพในเอกสาร Word
 
 ## การแนะนำ

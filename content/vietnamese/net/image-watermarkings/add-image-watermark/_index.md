@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ hình ảnh vào tài liệu của bạn bằng GroupDocs.Watermark cho .NET với hướng dẫn chi tiết từng bước của chúng tôi.
 weight: 11
 url: /vi/net/image-watermarkings/add-image-watermark/
+type: docs
 ---
-
 # Thêm hình mờ hình ảnh
 
 ## Giới thiệu

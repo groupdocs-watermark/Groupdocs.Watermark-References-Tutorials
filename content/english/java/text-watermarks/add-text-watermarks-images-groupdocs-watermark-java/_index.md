@@ -8,10 +8,8 @@ keywords:
 - add text watermarks Java
 - watermarking with GroupDocs
 - text watermark absolute positioning
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks to Images Using GroupDocs.Watermark for Java
 
 ## Introduction

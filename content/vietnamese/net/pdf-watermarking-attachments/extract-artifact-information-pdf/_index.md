@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách trích xuất thông tin giả từ tệp PDF bằng GroupDocs.Watermark cho .NET. Nâng cao khả năng xử lý tài liệu của bạn.
 weight: 24
 url: /vi/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
+type: docs
 ---
-
 # Trích xuất thông tin tạo tác từ PDF
 
 ## Giới thiệu

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके PDF दस्तावेज़ों में कलाकृतियों के लिए टेक्स्ट को फ़ॉर्मेटिंग से बदलने का तरीका जानें। दस्तावेज़ प्रबंधन को सहजता से सुधारें।
 weight: 43
 url: /hi/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
+type: docs
 ---
-
 # पीडीएफ में आर्टिफैक्ट के लिए टेक्स्ट को फ़ॉर्मेटिंग से बदलें
 
 ## परिचय

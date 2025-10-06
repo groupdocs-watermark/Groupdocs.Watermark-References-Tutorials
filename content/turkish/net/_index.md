@@ -5,8 +5,8 @@ weight: 10
 url: /tr/net/
 description: .NET için kapsamlı GroupDocs.Watermark eğitimlerini keşfedin. Adım adım kılavuzlarla çeşitli belge formatlarında filigran eklemeyi, yönetmeyi ve güvenliğini sağlamayı öğrenin.
 is_root: true
+type: docs
 ---
-
 # .NET için GroupDocs.Watermark Öğreticileri ve Örnekleri
 
 ## giriiş

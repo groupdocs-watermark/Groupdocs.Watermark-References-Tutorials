@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 刪除 Word 文件中具有特定文字格式的形狀。請遵循我們的指南來有效地處理浮水印。
 weight: 31
 url: /zh-hant/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
+type: docs
 ---
-
 # 在 Word 文件中刪除具有特定文字格式的形狀
 
 ## 介紹

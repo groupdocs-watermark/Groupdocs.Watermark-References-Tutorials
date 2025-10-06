@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Agregue fácilmente marcas de agua a documentos de Word usando GroupDocs.Watermark para .NET. Proteja su contenido con esta sencilla guía.
 weight: 15
 url: /es/net/word-processing-watermarkings/add-watermark-section-word-docs/
+type: docs
 ---
-
 # Agregar marca de agua a la sección en documentos de Word
 
 ## Introducción

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำให้กับ XObjects ใน PDF โดยใช้ Groupdocs.Watermark สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อการนำไปปฏิบัติที่ง่ายดาย
 weight: 20
 url: /th/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
+type: docs
 ---
-
 # เพิ่มลายน้ำให้กับ XObjects ในรูปแบบ PDF
 
 ## การแนะนำ

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm kiếm hình ảnh trong tệp đính kèm PDF một cách hiệu quả bằng GroupDocs.Watermark cho .NET. Đơn giản hóa quá trình quản lý hình mờ của bạn một cách dễ dàng.
 weight: 46
 url: /vi/net/pdf-watermarking-attachments/search-image-attachment-pdf/
+type: docs
 ---
-
 # Tìm kiếm hình ảnh trong tệp đính kèm PDF
 
 ## Giới thiệu

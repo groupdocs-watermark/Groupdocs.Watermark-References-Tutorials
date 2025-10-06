@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET-hez készült GroupDocs segítségével könnyedén nyerhet értékes információkat a Word dokumentumokból. Az alakadatok zökkenőmentes kinyerése a továbbfejlesztett adatelemzés érdekében.
 weight: 24
 url: /hu/net/word-processing-watermarkings/get-shapes-information-word-docs/
+type: docs
 ---
-
 # Szerezzen be alakzatokat a Word dokumentumokban
 
 ## Bevezetés

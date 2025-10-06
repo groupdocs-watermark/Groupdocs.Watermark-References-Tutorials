@@ -8,10 +8,8 @@ keywords:
 - extract shape information Word documents
 - GroupDocs.Watermark .NET API
 - automate document processing
-
+type: docs
 ---
-
-
 # Extracting Shape Information from Word Documents Using GroupDocs.Watermark .NET API
 
 ## Introduction

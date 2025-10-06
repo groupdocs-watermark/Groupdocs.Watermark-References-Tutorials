@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan nyerhet ki műtermék-információkat PDF-fájlokból a GroupDocs.Watermark for .NET segítségével. Növelje dokumentumfeldolgozási képességeit.
 weight: 24
 url: /hu/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
+type: docs
 ---
-
 # Kivonja a műtermékinformációkat a PDF-ből
 
 ## Bevezetés

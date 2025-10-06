@@ -8,10 +8,8 @@ keywords:
 - PDF annotations GroupDocs.Watermark
 - modifying PDF annotations .NET
 - automate PDF annotation updates
-
+type: docs
 ---
-
-
 # Mastering PDF Annotations with GroupDocs.Watermark .NET: A Step-by-Step Guide
 
 ## Introduction

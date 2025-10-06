@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to save a document to a specified stream using GroupDocs.Watermark for .NET with this step-by-step guide. Perfect for developers of all levels.
 weight: 12
 url: /net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Save Document to Specified Stream
 
 ## Introduction

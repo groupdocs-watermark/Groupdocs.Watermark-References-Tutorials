@@ -8,10 +8,8 @@ keywords:
 - Secure Word Documents with GroupDocs Watermark Java
 - GroupDocs.Watermark for Java
 - Password Protect Word Document
-
+type: docs
 ---
-
-
 # Secure Your Word Documents Using GroupDocs.Watermark in Java
 
 ## Introduction

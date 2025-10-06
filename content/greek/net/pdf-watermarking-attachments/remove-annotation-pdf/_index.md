@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αφαιρείτε σχολιασμούς από αρχεία PDF χρησιμοποιώντας το GroupDocs.Watermark για .NET. Βελτιώστε την αναγνωσιμότητα του εγγράφου χωρίς κόπο.
 weight: 29
 url: /el/net/pdf-watermarking-attachments/remove-annotation-pdf/
+type: docs
 ---
-
 # Αφαιρέστε τον σχολιασμό από το PDF
 
 ## Εισαγωγή

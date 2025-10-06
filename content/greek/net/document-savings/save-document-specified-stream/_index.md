@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αποθηκεύετε ένα έγγραφο σε μια καθορισμένη ροή χρησιμοποιώντας το GroupDocs.Watermark για .NET με αυτόν τον οδηγό βήμα προς βήμα. Ιδανικό για προγραμματιστές όλων των επιπέδων.
 weight: 12
 url: /el/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Αποθήκευση εγγράφου σε καθορισμένη ροή
 
 ## Εισαγωγή

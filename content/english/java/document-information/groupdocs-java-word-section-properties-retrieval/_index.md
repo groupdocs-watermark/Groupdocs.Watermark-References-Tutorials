@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark for Java
 - retrieve section properties Word documents
 - automate document handling
-
+type: docs
 ---
-
-
 # How to Retrieve Section Properties in Word Documents Using GroupDocs.Watermark for Java
 
 In today's digital landscape, managing document properties efficiently is vital for both businesses and individuals. Whether you're a developer aiming to enhance your application's functionality or an office worker seeking to streamline document processing, mastering the retrieval of section properties in Word documents can significantly improve your workflow. This tutorial will guide you through using GroupDocs.Watermark Java library to retrieve section properties from Word documents, enabling automation and customization with ease.

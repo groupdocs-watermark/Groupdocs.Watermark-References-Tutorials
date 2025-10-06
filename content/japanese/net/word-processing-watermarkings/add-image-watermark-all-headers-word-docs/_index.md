@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、Word ドキュメントのすべてのヘッダーに画像のウォーターマークを簡単に追加します。詳細なコード例を含むステップバイステップのガイドに従ってください。
 weight: 10
 url: /ja/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # Word ドキュメントのすべてのヘッダーに画像の透かしを追加する
 
 ## 導入

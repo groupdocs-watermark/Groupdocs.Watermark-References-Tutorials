@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u tekst in specifieke PDF-annotaties vervangt met Groupdocs.Watermark voor .NET met deze uitgebreide, stapsgewijze zelfstudie.
 weight: 40
 url: /nl/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
+type: docs
 ---
-
 # Vervang tekst voor specifieke annotaties in PDF
 
 ## Invoering

@@ -8,10 +8,8 @@ keywords:
 - automate text replacement in VSDX diagrams
 - GroupDocs.Watermark for .NET API
 - text manipulation in diagram shapes
-
+type: docs
 ---
-
-
 # Automate Text Replacement in VSDX Diagrams Using GroupDocs.Watermark for .NET
 
 ## Introduction

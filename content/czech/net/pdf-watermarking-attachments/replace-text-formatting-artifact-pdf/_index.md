@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak nahradit text formátováním pro artefakty v dokumentech PDF pomocí GroupDocs.Watermark for .NET. Zlepšete správu dokumentů bez námahy.
 weight: 43
 url: /cs/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
+type: docs
 ---
-
 # Nahradit text formátováním pro artefakt v PDF
 
 ## Úvod

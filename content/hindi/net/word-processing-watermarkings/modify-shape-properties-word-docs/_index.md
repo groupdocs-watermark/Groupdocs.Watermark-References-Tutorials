@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs से अपने Word दस्तावेज़ों को सुरक्षित रखें। बेहतर सुरक्षा के लिए आकार गुणों को आसानी से संशोधित करें।
 weight: 27
 url: /hi/net/word-processing-watermarkings/modify-shape-properties-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में आकार गुणों को संशोधित करें
 
 ## परिचय

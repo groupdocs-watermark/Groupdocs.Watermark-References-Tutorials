@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Научитесь добавлять водяные знаки к изображениям в документах PDF с помощью GroupDocs.Watermark для .NET с помощью нашего подробного пошагового руководства. Легко защитите свои PDF-файлы.
 weight: 19
 url: /ru/net/pdf-watermarking-attachments/add-watermark-images-pdf/
+type: docs
 ---
-
 # Добавить водяной знак к изображениям в PDF
 
 ## Введение

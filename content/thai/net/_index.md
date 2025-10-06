@@ -5,8 +5,8 @@ weight: 10
 url: /th/net/
 description: สำรวจ GroupDocs.Watermark สำหรับบทช่วยสอน .NET ที่ครอบคลุม เรียนรู้การเพิ่ม จัดการ และรักษาความปลอดภัยลายน้ำในรูปแบบเอกสารต่างๆ พร้อมคำแนะนำทีละขั้นตอน
 is_root: true
+type: docs
 ---
-
 # บทช่วยสอนและตัวอย่าง GroupDocs.Watermark สำหรับ .NET
 
 ## การแนะนำ

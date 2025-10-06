@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u watermerken in documenten kunt toevoegen, verwijderen en extraheren met behulp van GroupDocs voor .NET met deze uitgebreide stapsgewijze handleiding.
 weight: 11
 url: /nl/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Documentinformatie ophalen van lokale schijf
 
 ## Invoering

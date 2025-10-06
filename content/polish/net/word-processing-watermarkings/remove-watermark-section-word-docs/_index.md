@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak usuwać znaki wodne z określonych sekcji dokumentów programu Word za pomocą programu GroupDocs.Watermark dla platformy .NET. Obszerny samouczek dostępny tutaj.
 weight: 32
 url: /pl/net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # Usuń znak wodny z sekcji w dokumentach programu Word
 
 ## Wstęp

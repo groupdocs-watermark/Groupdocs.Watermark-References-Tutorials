@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan távolíthat el alakzatokat Word-dokumentumokból a GroupDocs.Watermark for .NET segítségével. Egyszerű, hatékony és hatékony dokumentumkezelés.
 weight: 30
 url: /hu/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # Alakzat eltávolítása a Word Dokumentumokban
 
 ## Bevezetés

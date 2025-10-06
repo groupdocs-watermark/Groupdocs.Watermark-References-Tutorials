@@ -8,10 +8,8 @@ keywords:
 - remove PDF attachments Java
 - GroupDocs Watermark PDF management
 - Java PDF attachment removal
-
+type: docs
 ---
-
-
 # How to Remove PDF Attachments Using GroupDocs.Watermark in Java
 
 Are you struggling to manage or clean up your PDF documents by removing unwanted attachments? Whether it's reducing file size or eliminating sensitive information, the ability to remove specific attachments from a PDF is an essential skill. This tutorial will guide you through using **GroupDocs.Watermark for Java** to achieve this task with ease.

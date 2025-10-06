@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: A GroupDocs.Watermark for .NET segítségével könnyen hozzáadhat vízjeleket a Word dokumentumok összes fejlécéhez. Kövesse lépésenkénti útmutatónkat részletes kódpéldákkal.
 weight: 10
 url: /hu/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # Képes vízjel hozzáadása a Word Docs összes fejlécéhez
 
 ## Bevezetés

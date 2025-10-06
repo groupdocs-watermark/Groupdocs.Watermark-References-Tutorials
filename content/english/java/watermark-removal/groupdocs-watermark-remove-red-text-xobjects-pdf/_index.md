@@ -8,10 +8,8 @@ keywords:
 - remove red text XObjects PDF
 - PDF manipulation Java GroupDocs.Watermark
 - GroupDocs Watermark tutorial
-
+type: docs
 ---
-
-
 # How to Use GroupDocs.Watermark Java to Remove Red Text XObjects from PDFs
 
 ## Introduction

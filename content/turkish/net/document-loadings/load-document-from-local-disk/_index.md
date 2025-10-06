@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs for .NET ile belgelerinizi koruyun ve yönetin. Sorunsuz bir şekilde filigran eklemek için ayrıntılı kılavuzumuzu izleyin.
 weight: 10
 url: /tr/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # Belgeyi Yerel Diskten Yükle
 
 ## giriiş

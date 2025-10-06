@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية أثرية إلى ملفات PDF بسهولة باستخدام Groupdocs.Watermark for .NET. حماية المستندات الخاصة بك بكل سهولة.
 weight: 11
 url: /ar/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
+type: docs
 ---
-
 # إضافة علامة مائية قطعة أثرية إلى PDF
 
 ## مقدمة

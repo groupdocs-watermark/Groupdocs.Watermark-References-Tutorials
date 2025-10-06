@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα σε έγγραφα χρησιμοποιώντας το GroupDocs.Watermark για .NET με αυτόν τον οδηγό. Ιδανικό για προγραμματιστές που θέλουν να βελτιώσουν την ασφάλεια των εγγράφων.
 weight: 11
 url: /el/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # Φόρτωση εγγράφου από τη ροή
 
 ## Εισαγωγή

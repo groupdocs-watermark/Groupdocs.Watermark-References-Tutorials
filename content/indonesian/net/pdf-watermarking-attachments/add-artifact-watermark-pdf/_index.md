@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air artefak ke file PDF dengan mudah menggunakan Groupdocs.Watermark untuk .NET. Lindungi dokumen Anda dengan mudah.
 weight: 11
 url: /id/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
+type: docs
 ---
-
 # Tambahkan Tanda Air Artefak ke PDF
 
 ## Perkenalan

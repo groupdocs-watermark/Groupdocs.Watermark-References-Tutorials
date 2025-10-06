@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إزالة العلامات المائية من أقسام معينة داخل مستندات Word باستخدام GroupDocs.Watermark لـ .NET. البرنامج التعليمي الشامل متاح هنا.
 weight: 32
 url: /ar/net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # إزالة العلامة المائية من القسم في مستندات Word
 
 ## مقدمة

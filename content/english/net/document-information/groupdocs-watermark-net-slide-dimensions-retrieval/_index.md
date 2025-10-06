@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark .NET
 - retrieve slide dimensions
 - presentation dimension analysis
-
+type: docs
 ---
-
-
 # Master Slide Dimension Retrieval Using GroupDocs.Watermark .NET for Presentations
 
 ## Introduction

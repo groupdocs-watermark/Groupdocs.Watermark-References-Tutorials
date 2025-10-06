@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как легко добавлять водяные знаки на определенные страницы в документах Word с помощью Groupdocs для .NET. Повысьте безопасность документов и брендинг.
 weight: 18
 url: /ru/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Добавить водяной знак на определенные страницы в документах Word
 
 ## Введение

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 이 단계별 가이드를 통해 .NET용 GroupDocs.Watermark를 사용하여 문서에 워터마크를 쉽게 추가하는 방법을 알아보세요. 문서 보안을 강화하세요.
 weight: 11
 url: /ko/net/document-savings/save-document-specified-location/
+type: docs
 ---
-
 # 지정된 위치에 문서 저장
 
 ## 소개

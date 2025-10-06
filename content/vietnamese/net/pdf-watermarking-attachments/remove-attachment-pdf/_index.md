@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách xóa tệp đính kèm khỏi tài liệu PDF một cách dễ dàng bằng GroupDocs.Watermark cho .NET. Nâng cao hiệu quả quản lý tài liệu của bạn.
 weight: 33
 url: /vi/net/pdf-watermarking-attachments/remove-attachment-pdf/
+type: docs
 ---
-
 # Xóa tệp đính kèm khỏi PDF
 
 ## Giới thiệu

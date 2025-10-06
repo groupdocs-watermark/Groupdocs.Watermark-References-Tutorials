@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menghapus tanda air dari bagian tertentu dalam dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Tutorial komprehensif tersedia di sini.
 weight: 32
 url: /id/net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # Hapus Tanda Air dari Bagian di Dokumen Word
 
 ## Perkenalan

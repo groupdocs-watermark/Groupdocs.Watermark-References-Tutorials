@@ -8,10 +8,8 @@ keywords:
 - automate excel shape text replacement
 - groupdocs watermark net tutorial
 - excel shape text manipulation
-
+type: docs
 ---
-
-
 # Automate Excel Shape Text Replacement Using GroupDocs.Watermark .NET
 ## Introduction
 Struggling with manually updating text in Excel shapes across multiple documents? This guide introduces an efficient solution using **GroupDocs.Watermark for .NET** to automate the process of replacing text within specific shapes in Excel worksheets.

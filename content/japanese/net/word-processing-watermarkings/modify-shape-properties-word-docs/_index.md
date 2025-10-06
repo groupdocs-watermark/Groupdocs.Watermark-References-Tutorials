@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs for .NET を使用して Word ドキュメントを保護します。形状プロパティを簡単に変更してセキュリティを強化します。
 weight: 27
 url: /ja/net/word-processing-watermarkings/modify-shape-properties-word-docs/
+type: docs
 ---
-
 # Word ドキュメントの図形プロパティを変更する
 
 ## 導入

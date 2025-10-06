@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Explorez les didacticiels GroupDocs.Watermark pour .NET sur la génération d'aperçus de documents et la gestion des filigranes. Améliorez la sécurité et la gestion des documents.
 weight: 21
 url: /fr/net/document-manipulation/
+type: docs
 ---
-
 # Manipulation de documents
 
 ## Introduction

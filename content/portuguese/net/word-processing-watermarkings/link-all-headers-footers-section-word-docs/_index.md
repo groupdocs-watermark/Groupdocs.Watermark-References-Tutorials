@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Vincule facilmente cabeçalhos e rodapés em documentos do Word usando GroupDocs.Watermark for .NET. Garanta consistência e profissionalismo com facilidade.
 weight: 25
 url: /pt/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
+type: docs
 ---
-
 # Vincule todos os cabeçalhos/rodapés nas seções em documentos do Word
 
 ## Introdução

@@ -8,10 +8,8 @@ keywords:
 - add text watermarks to PDF
 - GroupDocs.Watermark Java
 - protect PDF images
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks to PDF Images Using GroupDocs.Watermark for Java
 
 In today's digital age, safeguarding documents from unauthorized use is crucial. Adding text watermarks to images within your PDF files enhances security and brand visibility. This guide will help you add text watermarks to image XObjects in a PDF file using GroupDocs.Watermark for Java.

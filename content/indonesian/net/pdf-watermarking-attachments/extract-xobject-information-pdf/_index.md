@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Buka kekuatan penandaan air dokumen dengan GroupDocs.Watermark untuk .NET. Kelola tanda air di PDF, dokumen Word, dan gambar dengan lancar.
 weight: 25
 url: /id/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
+type: docs
 ---
-
 # Ekstrak Informasi XObject dari PDF
 
 ## Perkenalan

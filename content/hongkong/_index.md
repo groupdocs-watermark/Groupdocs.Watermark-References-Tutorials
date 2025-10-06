@@ -6,8 +6,8 @@ description: 透過我們的 .NET 和 Java 教學解鎖 GroupDocs.Watermark 的�
 weight: 11
 url: /zh-hant/
 is_root: true
+type: docs
 ---
-
 # 使用 GroupDocs.Watermark 掌控文件安全和品牌
 
 

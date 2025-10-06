@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinin korumasını nasıl kolayca kaldıracağınızı öğrenin. Adım adım kılavuzumuzu takip edin.
 weight: 38
 url: /tr/net/word-processing-watermarkings/unprotect-document-word-docs/
+type: docs
 ---
-
 # Word Dokümanlarında Belgenin Korumasını Kaldırma
 
 ## giriiş

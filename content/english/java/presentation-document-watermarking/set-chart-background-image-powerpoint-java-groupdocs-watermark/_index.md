@@ -8,10 +8,8 @@ keywords:
 - set chart background image PowerPoint
 - Java GroupDocs.Watermark
 - PowerPoint presentation enhancement
-
+type: docs
 ---
-
-
 # How to Set a Chart Background Image in PowerPoint Using Java and GroupDocs.Watermark
 
 ## Introduction

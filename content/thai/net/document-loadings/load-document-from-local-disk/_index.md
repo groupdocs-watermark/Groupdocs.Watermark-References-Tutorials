@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: ปกป้องและจัดการเอกสารของคุณด้วย Groupdocs ลายน้ำสำหรับ .NET ปฏิบัติตามคำแนะนำโดยละเอียดของเราเพื่อเพิ่มลายน้ำได้อย่างราบรื่น
 weight: 10
 url: /th/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # โหลดเอกสารจากดิสก์ภายในเครื่อง
 
 ## การแนะนำ

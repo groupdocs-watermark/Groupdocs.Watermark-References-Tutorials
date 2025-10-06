@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengekstrak informasi anotasi dari dokumen PDF menggunakan GroupDocs.Watermark untuk .NET dalam panduan langkah demi langkah yang mendetail ini.
 weight: 23
 url: /id/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # Ekstrak Informasi Anotasi dari PDF
 
 ## Perkenalan

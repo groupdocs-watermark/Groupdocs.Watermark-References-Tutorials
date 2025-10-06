@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: ค้นพบบทช่วยสอน GroupDocs.Watermark สำหรับ .NET เพื่อโหลดและใส่ลายน้ำเอกสาร รับรองความปลอดภัยของเอกสารและการสร้างแบรนด์ด้วยคำแนะนำทีละขั้นตอน
 weight: 22
 url: /th/net/document-loadings/
+type: docs
 ---
-
 # กำลังโหลดเอกสาร
 
 ## การแนะนำ

@@ -8,10 +8,8 @@ keywords:
 - Java PDF Annotation Editing
 - GroupDocs Watermark Java
 - Edit PDF Annotations in Java
-
+type: docs
 ---
-
-
 # Mastering Java PDF Annotation Editing with GroupDocs.Watermark
 
 ## Introduction

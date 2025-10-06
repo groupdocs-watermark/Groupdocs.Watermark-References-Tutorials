@@ -8,10 +8,8 @@ keywords:
 - add watermark to spreadsheet
 - GroupDocs.Watermark .NET
 - Excel file watermarking
-
+type: docs
 ---
-
-
 # How to Add a Watermark to a Spreadsheet using GroupDocs.Watermark .NET
 ## Introduction
 Securing your spreadsheets is crucial, whether it's for branding or protecting sensitive information. Adding a watermark in Excel files is an effective solution. This tutorial will guide you through the process of embedding an image watermark into a spreadsheet using **GroupDocs.Watermark for .NET**, ensuring that your documents carry necessary branding and security measures.

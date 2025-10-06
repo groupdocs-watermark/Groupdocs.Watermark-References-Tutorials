@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - search text in email body
 - manage email watermarks
-
+type: docs
 ---
-
-
 # Mastering GroupDocs.Watermark Java: Efficiently Search Text in Email Bodies
 Are you struggling to find specific text within the subject or body of your email messages? With GroupDocs.Watermark for Java, this task becomes efficient and straightforward. This comprehensive guide will help you implement powerful features that search for text across various parts of an email using GroupDocs.Watermark. By following these steps, you'll learn how to seamlessly manage and manipulate emails.
 

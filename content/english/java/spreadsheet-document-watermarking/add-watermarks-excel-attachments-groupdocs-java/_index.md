@@ -8,10 +8,8 @@ keywords:
 - Excel watermarking
 - Java GroupDocs Watermark
 - document security branding
-
+type: docs
 ---
-
-
 # How to Add a Watermark to All Attachments in an Excel Document Using GroupDocs.Watermark Java
 
 ## Introduction

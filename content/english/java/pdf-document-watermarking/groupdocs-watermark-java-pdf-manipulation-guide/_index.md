@@ -8,10 +8,8 @@ keywords:
 - PDF manipulation
 - GroupDocs.Watermark Java
 - document watermarking
-
+type: docs
 ---
-
-
 # Master PDF Manipulation: Implement GroupDocs.Watermark in Java for Document Watermarking and Management
 
 ## Introduction

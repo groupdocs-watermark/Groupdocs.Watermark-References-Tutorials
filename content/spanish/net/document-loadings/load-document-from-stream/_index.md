@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda a agregar marcas de agua a documentos usando GroupDocs.Watermark para .NET con esta guía. Perfecto para desarrolladores que buscan mejorar la seguridad de los documentos.
 weight: 11
 url: /es/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # Cargar documento desde la secuencia
 
 ## Introducción

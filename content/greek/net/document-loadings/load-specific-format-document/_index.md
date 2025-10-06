@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να φορτώνετε και να υδατογραφείτε έγγραφα χρησιμοποιώντας το υδατογράφημα για .NET με αυτόν τον οδηγό βήμα προς βήμα. Προστατέψτε και προστατέψτε το περιεχόμενό σας χωρίς κόπο.
 weight: 12
 url: /el/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # Φόρτωση εγγράφου συγκεκριμένης μορφής
 
 ## Εισαγωγή

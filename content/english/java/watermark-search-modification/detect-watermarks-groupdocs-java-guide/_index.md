@@ -8,10 +8,8 @@ keywords:
 - detect watermarks in documents
 - GroupDocs.Watermark for Java
 - watermark detection techniques
-
+type: docs
 ---
-
-
 # Guide to Detecting and Managing Watermarks in Documents Using GroupDocs.Watermark for Java
 
 ## Introduction

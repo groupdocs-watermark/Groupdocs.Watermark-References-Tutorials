@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำคำอธิบายประกอบสำหรับการพิมพ์เท่านั้นลงใน PDF โดยใช้ GroupDocs.Watermark สำหรับ .NET ปรับปรุงความปลอดภัยของเอกสารและการสร้างแบรนด์ได้อย่างง่ายดาย
 weight: 13
 url: /th/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
+type: docs
 ---
-
 # เพิ่มลายน้ำคำอธิบายประกอบพิมพ์เฉพาะลงใน PDF
 
 ## การแนะนำ

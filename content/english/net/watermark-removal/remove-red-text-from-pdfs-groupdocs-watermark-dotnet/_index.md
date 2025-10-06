@@ -8,10 +8,8 @@ keywords:
 - remove red text from PDFs
 - GroupDocs.Watermark for .NET
 - PDF manipulation with XObjects
-
+type: docs
 ---
-
-
 # How to Remove Red Text from PDFs Using GroupDocs.Watermark for .NET: A Step-by-Step Guide
 
 ## Introduction

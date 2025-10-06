@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε ένα κλειδωμένο υδατογράφημα σε συγκεκριμένες σελίδες σε έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET με τον εύκολο, βήμα προς βήμα οδηγό μας.
 weight: 12
 url: /el/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Προσθήκη κλειδωμένου υδατογραφήματος σε συγκεκριμένες σελίδες στα Έγγραφα του Word
 
 ## Εισαγωγή

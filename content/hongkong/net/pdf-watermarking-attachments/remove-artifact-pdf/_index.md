@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 輕鬆刪除 PDF 文件中的偽影。透過我們的綜合教程逐步掌握流程。
 weight: 31
 url: /zh-hant/net/pdf-watermarking-attachments/remove-artifact-pdf/
+type: docs
 ---
-
 # 從 PDF 中刪除偽影
 
 ## 介紹

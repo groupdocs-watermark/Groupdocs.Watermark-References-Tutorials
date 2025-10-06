@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách lấy thông tin tài liệu từ luồng bằng GroupDocs.Watermark dành cho .NET với hướng dẫn từng bước này. Khả năng quản lý tài liệu của bạn một cách dễ dàng.
 weight: 12
 url: /vi/net/document-manipulation/get-document-info-stream/
+type: docs
 ---
-
 # Nhận thông tin tài liệu từ luồng
 
 ## Giới thiệu

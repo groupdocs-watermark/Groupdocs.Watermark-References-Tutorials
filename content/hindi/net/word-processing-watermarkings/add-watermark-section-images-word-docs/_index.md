@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: जानें कि .NET के लिए वॉटरमार्क का उपयोग करके Word दस्तावेज़ों में छवियों में वॉटरमार्क कैसे जोड़ें। सुरक्षित और पेशेवर दस्तावेज़ सुरक्षा के लिए हमारी मार्गदर्शिका का पालन करें।
 weight: 16
 url: /hi/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में सेक्शन इमेज में वॉटरमार्क जोड़ें
 
 ## परिचय

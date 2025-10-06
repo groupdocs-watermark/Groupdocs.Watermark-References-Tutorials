@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak načíst a vodoznak dokumenty pomocí Groupdocs Watermark for .NET s tímto průvodcem krok za krokem. Chraňte a označujte svůj obsah bez námahy.
 weight: 12
 url: /cs/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # Načíst dokument specifického formátu
 
 ## Úvod

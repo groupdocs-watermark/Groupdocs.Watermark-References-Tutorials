@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs için Filigran'ı kullanarak Word belgelerinden bölüm özelliklerini nasıl çıkaracağınızı öğrenin. Belge işleme yeteneklerinizi zahmetsizce geliştirin.
 weight: 23
 url: /tr/net/word-processing-watermarkings/get-section-properties-word-docs/
+type: docs
 ---
-
 # Word Dokümanlarında Bölüm Özelliklerini Alma
 
 ## giriiş

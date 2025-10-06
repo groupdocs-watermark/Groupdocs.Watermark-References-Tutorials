@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Proteja y administre sus documentos con Groupdocs. Siga nuestra guía detallada para agregar marcas de agua sin problemas.
 weight: 10
 url: /es/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # Cargar documento desde el disco local
 
 ## Introducción

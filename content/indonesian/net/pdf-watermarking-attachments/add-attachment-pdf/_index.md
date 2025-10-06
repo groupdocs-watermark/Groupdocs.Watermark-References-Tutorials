@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Tingkatkan kemampuan manajemen dokumen .NET Anda dengan GroupDocs.Watermark untuk penanganan tanda air dan lampiran yang lancar.
 weight: 12
 url: /id/net/pdf-watermarking-attachments/add-attachment-pdf/
+type: docs
 ---
-
 # Tambahkan Lampiran ke PDF
 
 ## Perkenalan

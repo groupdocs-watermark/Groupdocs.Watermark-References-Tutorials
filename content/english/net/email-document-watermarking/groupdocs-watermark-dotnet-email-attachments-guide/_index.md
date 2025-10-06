@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark .NET
 - add email attachments .NET
 - GroupDocs.Watermark library
-
+type: docs
 ---
-
-
 # How to Add Email Attachments Using GroupDocs.Watermark for .NET: A Step-by-Step Guide
 
 ## Introduction

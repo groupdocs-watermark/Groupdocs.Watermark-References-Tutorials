@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีแทนที่ข้อความรูปร่างด้วยข้อความที่จัดรูปแบบในเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET ความสามารถในการแก้ไขเอกสารของคุณได้อย่างง่ายดาย
 weight: 34
 url: /th/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # แทนที่ข้อความรูปร่างด้วยข้อความที่จัดรูปแบบในเอกสาร Word
 
 ## การแนะนำ

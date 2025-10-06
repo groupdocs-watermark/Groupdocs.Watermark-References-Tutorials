@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda como obter informações de documentos de um fluxo usando GroupDocs.Watermark for .NET com este guia passo a passo. Seus recursos de gerenciamento de documentos sem esforço.
 weight: 12
 url: /pt/net/document-manipulation/get-document-info-stream/
+type: docs
 ---
-
 # Obtenha informações do documento do Stream
 
 ## Introdução

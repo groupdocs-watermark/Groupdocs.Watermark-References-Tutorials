@@ -8,10 +8,8 @@ keywords:
 - extract watermarks .net
 - manage watermarks .net documents
 - GroupDocs Watermark library
-
+type: docs
 ---
-
-
 # How to Search and Retrieve All Possible Watermarks in a Document Using GroupDocs.Watermark .NET
 
 ## Introduction

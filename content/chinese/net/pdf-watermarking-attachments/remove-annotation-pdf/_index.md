@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 从 PDF 中删除注释。轻松增强文档的可读性。
 weight: 29
 url: /zh/net/pdf-watermarking-attachments/remove-annotation-pdf/
+type: docs
 ---
-
 # 从 PDF 中删除注释
 
 ## 介绍

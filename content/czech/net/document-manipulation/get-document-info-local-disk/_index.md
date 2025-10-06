@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat, odebírat a extrahovat vodoznaky v dokumentech pomocí GroupDocs Watermark for .NET s tímto komplexním průvodcem krok za krokem.
 weight: 11
 url: /cs/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Získejte informace o dokumentu z místního disku
 
 ## Úvod

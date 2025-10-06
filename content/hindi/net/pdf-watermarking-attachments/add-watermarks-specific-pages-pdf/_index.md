@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए वॉटरमार्क का उपयोग करके PDF में विशिष्ट पृष्ठों पर टेक्स्ट और छवि वॉटरमार्क जोड़ना सीखें। अपने दस्तावेज़ों को सुरक्षित करने के लिए हमारी विस्तृत मार्गदर्शिका का पालन करें।
 weight: 15
 url: /hi/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
+type: docs
 ---
-
 # पीडीएफ में विशिष्ट पृष्ठों पर वॉटरमार्क जोड़ें
 
 ## परिचय

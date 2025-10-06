@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: สำรวจ GroupDocs.Watermark สำหรับบทช่วยสอน .NET เกี่ยวกับการใส่ลายน้ำ PDF และไฟล์แนบ เรียนรู้วิธีทีละขั้นตอนเพื่อเพิ่มความปลอดภัยและการสร้างแบรนด์ของ PDF ของคุณ
 weight: 25
 url: /th/net/pdf-watermarking-attachments/
+type: docs
 ---
-
 # ลายน้ำ PDF และไฟล์แนบ
 
 ## การแนะนำ

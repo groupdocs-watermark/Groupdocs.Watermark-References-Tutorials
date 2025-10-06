@@ -8,10 +8,8 @@ keywords:
 - tiled background for presentations
 - semi-transparent slide backgrounds
 - GroupDocs.Watermark for .NET
-
+type: docs
 ---
-
-
 # Create Tiled, Semi-transparent Backgrounds in Presentations with GroupDocs.Watermark for .NET
 
 ## Introduction

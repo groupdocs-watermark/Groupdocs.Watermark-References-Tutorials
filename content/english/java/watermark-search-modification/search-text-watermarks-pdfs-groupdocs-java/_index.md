@@ -8,10 +8,8 @@ keywords:
 - search text watermarks PDFs
 - GroupDocs Watermark Java setup
 - text watermark search criteria
-
+type: docs
 ---
-
-
 # How to Search Text Watermarks in PDFs Using GroupDocs.Watermark for Java
 Searching text watermarks within PDFs can be challenging, especially when dealing with unreadable characters. This tutorial will guide you through using GroupDocs.Watermark for Java to effectively search for text watermarks while skipping over any unreadable characters.
 

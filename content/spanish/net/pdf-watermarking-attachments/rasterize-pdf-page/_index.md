@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Mejore la seguridad de los documentos con GroupDocs Watermark para .NET. Agregue marcas de agua a PDF y otros formatos sin problemas.
 weight: 28
 url: /es/net/pdf-watermarking-attachments/rasterize-pdf-page/
+type: docs
 ---
-
 # Rasterizar página PDF
 
 ## Introducción

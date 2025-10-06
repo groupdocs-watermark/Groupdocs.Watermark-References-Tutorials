@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して PDF ドキュメントから添付ファイルを簡単に削除する方法を学びます。文書管理の効率を高めます。
 weight: 33
 url: /ja/net/pdf-watermarking-attachments/remove-attachment-pdf/
+type: docs
 ---
-
 # PDF から添付ファイルを削除
 
 ## 導入

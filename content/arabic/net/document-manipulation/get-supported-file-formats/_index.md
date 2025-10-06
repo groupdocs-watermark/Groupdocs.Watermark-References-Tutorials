@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: أضف علامات مائية إلى مستنداتك بسهولة باستخدام GroupDocs.Watermark لـ .NET. اتبع دليلنا الشامل خطوة بخطوة لحماية أصولك الرقمية.
 weight: 13
 url: /ar/net/document-manipulation/get-supported-file-formats/
+type: docs
 ---
-
 # احصل على تنسيقات الملفات المدعومة
 
 ## مقدمة

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए वॉटरमार्क का उपयोग करके Word दस्तावेज़ों से अनुभाग गुण निकालना सीखें। अपनी दस्तावेज़ हेरफेर क्षमताओं को सहजता से बढ़ाएं।
 weight: 23
 url: /hi/net/word-processing-watermarkings/get-section-properties-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में अनुभाग गुण प्राप्त करें
 
 ## परिचय

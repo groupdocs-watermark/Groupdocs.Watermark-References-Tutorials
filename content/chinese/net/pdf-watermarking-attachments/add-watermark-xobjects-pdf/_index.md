@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs.Watermark for .NET 将水印添加到 PDF 中的 XObject。请遵循我们的分步指南以轻松实施。
 weight: 20
 url: /zh/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
+type: docs
 ---
-
 # 向 PDF 中的 XObject 添加水印
 
 ## 介绍

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีลบรูปร่างด้วยการจัดรูปแบบข้อความเฉพาะในเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET ปฏิบัติตามคำแนะนำของเราเพื่อการจัดการลายน้ำอย่างมีประสิทธิภาพ
 weight: 31
 url: /th/net/word-processing-watermarkings/remove-shapes-specific-text-formatting-word-docs/
+type: docs
 ---
-
 # ลบรูปร่างด้วยการจัดรูปแบบข้อความเฉพาะในเอกสาร Word
 
 ## การแนะนำ

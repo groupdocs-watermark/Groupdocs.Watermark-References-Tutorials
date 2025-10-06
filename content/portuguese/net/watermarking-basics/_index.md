@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Descubra os tutoriais do GroupDocs.Watermark for .NET para adicionar marcas d'água de imagem e texto sem esforço. Proteja seus documentos com estes guias fáceis de seguir.
 weight: 20
 url: /pt/net/watermarking-basics/
+type: docs
 ---
-
 # Noções básicas de marca d’água
 
 ## Introdução

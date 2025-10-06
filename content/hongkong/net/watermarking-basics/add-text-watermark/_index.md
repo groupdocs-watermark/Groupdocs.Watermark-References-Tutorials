@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 透過此逐步指南，了解如何使用 Groupdocs for .NET 將文字浮水印新增至文件。
 weight: 11
 url: /zh-hant/net/watermarking-basics/add-text-watermark/
+type: docs
 ---
-
 # 添加文字浮水印
 
 ## 介紹

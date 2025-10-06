@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat vízjeleket a Word-dokumentumok képeihez a Groupdocs Watermark for .NET segítségével. Kövesse útmutatónkat a biztonságos és professzionális dokumentumvédelem érdekében.
 weight: 16
 url: /hu/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
+type: docs
 ---
-
 # Vízjel hozzáadása a szakaszképekhez a Word Dokumentumokban
 
 ## Bevezetés

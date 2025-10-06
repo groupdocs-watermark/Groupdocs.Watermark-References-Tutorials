@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: जानें कि .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों में छवियों को आकार देने के लिए वॉटरमार्क कैसे जोड़ें। इस ट्यूटोरियल के साथ दस्तावेज़ सुरक्षा बढ़ाएँ।
 weight: 17
 url: /hi/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में छवियों को आकार देने के लिए वॉटरमार्क जोड़ें
 
 ## परिचय

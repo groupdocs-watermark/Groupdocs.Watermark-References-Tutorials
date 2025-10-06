@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعلم كيفية إضافة علامات مائية إلى الصور في مستندات PDF باستخدام GroupDocs.Watermark لـ .NET من خلال برنامجنا التعليمي المفصل خطوة بخطوة. تأمين ملفات PDF الخاصة بك بسهولة.
 weight: 19
 url: /ar/net/pdf-watermarking-attachments/add-watermark-images-pdf/
+type: docs
 ---
-
 # إضافة علامة مائية إلى الصور في PDF
 
 ## مقدمة

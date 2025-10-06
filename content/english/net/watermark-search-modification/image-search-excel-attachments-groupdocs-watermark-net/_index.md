@@ -8,10 +8,8 @@ keywords:
 - image search Excel attachments GroupDocs.Watermark .NET
 - GroupDocs.Watermark .NET image search
 - search images in Excel file attachments
-
+type: docs
 ---
-
-
 # Implementing Image Search in Excel Attachments Using GroupDocs.Watermark .NET
 
 ## Introduction

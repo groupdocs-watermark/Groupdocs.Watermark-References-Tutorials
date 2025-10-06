@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα με ρυθμίσεις σχήματος σε έγγραφα του Word χρησιμοποιώντας το υδατογράφημα GroupDocs για .NET. Προστατέψτε τα έγγραφά σας αποτελεσματικά.
 weight: 20
 url: /el/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
+type: docs
 ---
-
 # Προσθήκη υδατογραφήματος με ρυθμίσεις σχήματος στα Έγγραφα του Word
 
 ## Εισαγωγή

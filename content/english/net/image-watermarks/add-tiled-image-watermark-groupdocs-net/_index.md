@@ -8,10 +8,8 @@ keywords:
 - tiled image watermarks .NET
 - GroupDocs.Watermark library installation
 - customizable tiling options
-
+type: docs
 ---
-
-
 # How to Add a Tiled Image Watermark Using GroupDocs.Watermark for .NET
 
 ## Introduction

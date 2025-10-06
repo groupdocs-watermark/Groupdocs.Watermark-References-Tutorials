@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark for Java
 - Java email attachments
 - programmatically manage email attachments
-
+type: docs
 ---
-
-
 # Master Email Attachments in Java with GroupDocs.Watermark: A Comprehensive Guide
 
 In today's digital landscape, effectively managing email attachments is crucial for both businesses and individuals. Whether you're archiving important documents or ensuring secure communication, handling email attachments seamlessly can save time and reduce errors. This guide will demonstrate how to use **GroupDocs.Watermark for Java** to load, modify, and save email messages with attachments efficiently.

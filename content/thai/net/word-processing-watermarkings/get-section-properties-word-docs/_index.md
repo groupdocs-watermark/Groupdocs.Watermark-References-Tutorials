@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีแยกคุณสมบัติของส่วนจากเอกสาร Word โดยใช้ Groupdocs ลายน้ำสำหรับ .NET เพิ่มความสามารถในการจัดการเอกสารของคุณได้อย่างง่ายดาย
 weight: 23
 url: /th/net/word-processing-watermarkings/get-section-properties-word-docs/
+type: docs
 ---
-
 # รับคุณสมบัติของส่วนในเอกสาร Word
 
 ## การแนะนำ

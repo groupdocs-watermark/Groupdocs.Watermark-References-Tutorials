@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere una filigrana bloccata a una sezione specifica nei documenti di Word utilizzando Groupdocs per .NET con questa guida passo passo completa.
 weight: 13
 url: /it/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # Aggiungi filigrana bloccata alla sezione in documenti Word
 
 ## introduzione

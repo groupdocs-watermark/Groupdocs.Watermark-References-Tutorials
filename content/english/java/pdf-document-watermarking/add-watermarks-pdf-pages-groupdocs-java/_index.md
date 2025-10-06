@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark
 - Java
 - Document Processing
-
+type: docs
 ---
-
-
 # How to Add Text and Image Watermarks to Specific PDF Pages Using GroupDocs.Watermark for Java
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF belgelerindeki belirli yapılara ilişkin metni nasıl değiştireceğinizi keşfedin. Belge güvenliğini ve bütünlüğünü zahmetsizce geliştirin.
 weight: 42
 url: /tr/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
+type: docs
 ---
-
 # PDF'deki Belirli Yapının Metni Değiştir
 
 ## giriiş

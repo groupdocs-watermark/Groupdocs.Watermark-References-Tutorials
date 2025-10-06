@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Dapatkan wawasan berharga dari dokumen Word dengan mudah menggunakan GroupDocs untuk .NET. Ekstrak informasi bentuk dengan lancar untuk analisis data yang lebih baik.
 weight: 24
 url: /id/net/word-processing-watermarkings/get-shapes-information-word-docs/
+type: docs
 ---
-
 # Dapatkan Informasi Bentuk di Word Docs
 
 ## Perkenalan

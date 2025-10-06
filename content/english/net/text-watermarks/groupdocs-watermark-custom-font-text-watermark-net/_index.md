@@ -10,9 +10,8 @@ keywords:
 - text watermark .NET
 - watermark protection digital assets
 - adding text watermarks C#
-
+type: docs
 ---
-
 # How to Add a Custom Font Text Watermark Using GroupDocs.Watermark for .NET
 
 ## Introduction

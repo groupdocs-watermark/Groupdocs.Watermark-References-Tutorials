@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u documenten kunt laden en van een watermerk kunt voorzien met Groupdocs voor .NET met deze stapsgewijze handleiding. Bescherm en merk uw inhoud moeiteloos.
 weight: 12
 url: /nl/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # Document met specifiek formaat laden
 
 ## Invoering

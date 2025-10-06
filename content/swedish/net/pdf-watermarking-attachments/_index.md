@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Utforska GroupDocs.Watermark för .NET-handledningar om PDF-vattenmärkning och bilagor. Lär dig steg-för-steg-metoder för att förbättra dina PDF-filers säkerhet och varumärke.
 weight: 25
 url: /sv/net/pdf-watermarking-attachments/
+type: docs
 ---
-
 # PDF vattenmärkning och bilaga
 
 ## Introduktion

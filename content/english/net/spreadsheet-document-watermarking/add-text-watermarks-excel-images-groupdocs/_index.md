@@ -8,10 +8,8 @@ keywords:
 - Excel watermarking
 - GroupDocs Watermark .NET
 - protect Excel documents
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks to Background Images in Excel Using GroupDocs.Watermark for .NET
 
 ## Introduction

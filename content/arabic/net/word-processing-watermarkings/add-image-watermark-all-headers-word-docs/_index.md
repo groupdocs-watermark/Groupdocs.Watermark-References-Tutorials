@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: يمكنك بسهولة إضافة علامات مائية للصور إلى كافة الرؤوس في مستندات Word باستخدام GroupDocs.Watermark لـ .NET. اتبع دليلنا خطوة بخطوة مع أمثلة التعليمات البرمجية التفصيلية.
 weight: 10
 url: /ar/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # إضافة علامة مائية للصورة إلى كافة الرؤوس في مستندات Word
 
 ## مقدمة

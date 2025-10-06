@@ -8,10 +8,8 @@ keywords:
 - watermark Excel sheets using Java
 - GroupDocs Watermark text image
 - secure documents watermarks Java
-
+type: docs
 ---
-
-
 # How to Secure Excel Sheets: Add Watermarks in Java Using GroupDocs.Watermark
 
 ## Introduction

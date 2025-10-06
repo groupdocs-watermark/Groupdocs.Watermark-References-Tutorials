@@ -3,8 +3,8 @@ title: "Word Document Watermarking Tutorials for GroupDocs.Watermark Java"
 description: "Complete tutorials for implementing watermarks in Word documents, including headers, footers, and section-specific watermarking using GroupDocs.Watermark for Java."
 weight: 6
 url: "/java/word-processing-document-watermarking/"
+type: docs
 ---
-
 # Word Document Watermarking Tutorials for GroupDocs.Watermark Java
 
 Learn how to create professionally watermarked Word documents with our GroupDocs.Watermark for Java tutorials. These detailed guides demonstrate how to add watermarks to specific sections or pages, implement locked watermarks that resist tampering, watermark header and footer regions, and work with shape-based watermarking techniques. Each tutorial includes working Java code examples that show how to implement effective document protection and branding in Microsoft Word documents while maintaining document formatting and structure.

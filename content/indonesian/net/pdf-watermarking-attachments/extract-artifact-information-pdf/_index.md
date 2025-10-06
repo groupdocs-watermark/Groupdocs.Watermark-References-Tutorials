@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengekstrak informasi artefak dari file PDF menggunakan GroupDocs.Watermark untuk .NET. Tingkatkan kemampuan pemrosesan dokumen Anda.
 weight: 24
 url: /id/net/pdf-watermarking-attachments/extract-artifact-information-pdf/
+type: docs
 ---
-
 # Ekstrak Informasi Artefak dari PDF
 
 ## Perkenalan

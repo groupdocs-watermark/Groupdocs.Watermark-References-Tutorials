@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 将图像水印添加到文档中。请遵循我们的无缝水印集成分步指南。
 weight: 12
 url: /zh/net/image-watermarkings/add-image-watermark-from-stream/
+type: docs
 ---
-
 # 从流中添加图像水印
 
 ## 介绍

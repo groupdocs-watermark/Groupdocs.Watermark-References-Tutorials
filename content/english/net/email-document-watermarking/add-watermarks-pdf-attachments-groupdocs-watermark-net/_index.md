@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark for .NET
 - PDF watermarks
 - watermark PDF attachments
-
+type: docs
 ---
-
-
 # Add Watermarks to PDF Attachments Using GroupDocs.Watermark for .NET: A Comprehensive Guide
 
 ## Introduction

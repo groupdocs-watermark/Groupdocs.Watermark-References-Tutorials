@@ -8,10 +8,8 @@ keywords:
 - add image watermark in Java
 - GroupDocs Watermark setup
 - Java document branding
-
+type: docs
 ---
-
-
 # How to Add an Image Watermark in Java Using GroupDocs.Watermark
 
 ## Introduction

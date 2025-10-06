@@ -8,10 +8,8 @@ keywords:
 - watermark removal
 - Word headers footers
 - GroupDocs Watermark Java
-
+type: docs
 ---
-
-
 # Mastering Watermark Removal from Word Headers/Footers Using GroupDocs.Watermark for Java
 
 **Introduction**

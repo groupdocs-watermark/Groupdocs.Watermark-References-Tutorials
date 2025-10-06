@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों के पहले पृष्ठ पर विभिन्न शीर्षलेख और पादलेख सेट करना सीखें।
 weight: 36
 url: /hi/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में अलग-अलग प्रथम पृष्ठ शीर्षलेख/पादलेख सेट करें
 
 ## परिचय

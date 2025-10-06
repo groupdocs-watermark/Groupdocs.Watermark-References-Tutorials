@@ -3,8 +3,8 @@ title: "Text Watermark Implementation Tutorials for GroupDocs.Watermark Java"
 description: "Complete tutorials for adding, customizing, and managing text watermarks in various document formats using GroupDocs.Watermark for Java."
 weight: 3
 url: "/java/text-watermarks/"
+type: docs
 ---
-
 # Text Watermark Implementation Tutorials for GroupDocs.Watermark Java
 
 Master text watermark creation with our detailed GroupDocs.Watermark for Java tutorials. These step-by-step guides demonstrate how to add text watermarks to documents, customize text appearance with different fonts and formatting, implement tiled text watermarks, control watermark positioning, and add rotated text. Each tutorial includes working Java code examples, implementation notes, and best practices to help you build applications that effectively apply professional text watermarks to your documents.

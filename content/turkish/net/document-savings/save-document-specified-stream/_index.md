@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Bu adım adım kılavuzla GroupDocs.Watermark for .NET'i kullanarak bir belgeyi belirli bir akışa nasıl kaydedeceğinizi öğrenin. Her seviyedeki geliştiriciler için mükemmeldir.
 weight: 12
 url: /tr/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Belgeyi Belirtilen Akışa Kaydet
 
 ## giriiş

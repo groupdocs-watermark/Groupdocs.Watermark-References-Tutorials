@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 使用 Groupdocs.Watermark for .NET 添加锁定水印来保护您的文档。请遵循我们的分步指南以轻松实施。
 weight: 11
 url: /zh/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
+type: docs
 ---
-
 # 向 Word 文档中的所有页面添加锁定水印
 
 ## 介绍

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark Java
 - manage watermarks in diagrams
 - Java diagram document watermarking
-
+type: docs
 ---
-
-
 # Master Watermark Management in Diagrams with GroupDocs.Watermark for Java
 
 Managing watermarks in documents is essential for protecting intellectual property and maintaining document integrity. Whether you're a developer working on enterprise software or someone interested in automating tasks, efficiently loading, searching, and removing watermarks from diagrams is invaluable. This tutorial will guide you through using GroupDocs.Watermark for Java to manage watermarks in diagram files like `.vsdx`. By mastering these techniques, you'll significantly enhance your document management capabilities.

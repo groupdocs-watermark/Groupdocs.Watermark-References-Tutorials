@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer met deze stapsgewijze handleiding hoe u een document in een opgegeven stream kunt opslaan met GroupDocs.Watermark voor .NET. Perfect voor ontwikkelaars van alle niveaus.
 weight: 12
 url: /nl/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Document opslaan in opgegeven stream
 
 ## Invoering

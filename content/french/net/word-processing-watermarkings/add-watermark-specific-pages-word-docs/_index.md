@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter facilement des filigranes à des pages spécifiques dans des documents Word à l'aide de Groupdocs Watermark for .NET. Améliorez la sécurité des documents et l’image de marque.
 weight: 18
 url: /fr/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Ajouter un filigrane à des pages spécifiques dans Word Docs
 
 ## Introduction

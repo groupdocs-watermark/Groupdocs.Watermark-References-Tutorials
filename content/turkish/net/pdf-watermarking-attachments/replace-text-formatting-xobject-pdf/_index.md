@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs için .NET belge işleme yeteneklerinizi geliştirin. PDF'lerdeki metni zahmetsizce biçimlendirmeyle nasıl değiştireceğinizi öğrenin.
 weight: 45
 url: /tr/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
+type: docs
 ---
-
 # PDF'de XObject için Metni Biçimlendirmeyle Değiştirin
 
 ## giriiş

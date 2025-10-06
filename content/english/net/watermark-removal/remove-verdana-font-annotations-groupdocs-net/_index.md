@@ -8,10 +8,8 @@ keywords:
 - remove verdana font annotations PDF
 - PDF management with GroupDocs.Watermark
 - annotation removal .NET
-
+type: docs
 ---
-
-
 # How to Remove Verdana Font Annotations from PDFs Using GroupDocs.Watermark for .NET
 
 ## Introduction

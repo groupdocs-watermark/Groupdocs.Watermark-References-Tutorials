@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF'lerden ek açıklamaları nasıl kaldıracağınızı öğrenin. Belgenin okunabilirliğini zahmetsizce geliştirin.
 weight: 29
 url: /tr/net/pdf-watermarking-attachments/remove-annotation-pdf/
+type: docs
 ---
-
 # PDF'den Ek Açıklamayı Kaldır
 
 ## giriiş

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark for Java
 - Excel watermarking
 - Java spreadsheet security
-
+type: docs
 ---
-
-
 # How to Add Watermarks to Spreadsheet Background Images Using GroupDocs.Watermark for Java
 
 ## Introduction

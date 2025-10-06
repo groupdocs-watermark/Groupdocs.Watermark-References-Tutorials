@@ -8,10 +8,8 @@ keywords:
 - link headers footers Word documents
 - GroupDocs.Watermark .NET
 - Word document consistency
-
+type: docs
 ---
-
-
 # How to Link Headers and Footers in Word Documents Using GroupDocs.Watermark .NET
 
 ## Introduction

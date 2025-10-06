@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों में सभी हेडर में आसानी से छवि वॉटरमार्क जोड़ें। विस्तृत कोड उदाहरणों के साथ हमारी चरण-दर-चरण मार्गदर्शिका का पालन करें।
 weight: 10
 url: /hi/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में सभी हेडर में इमेज वॉटरमार्क जोड़ें
 
 ## परिचय

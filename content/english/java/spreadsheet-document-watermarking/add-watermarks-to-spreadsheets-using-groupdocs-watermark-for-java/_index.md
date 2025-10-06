@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - add watermarks to spreadsheets
 - Java watermarking guide
-
+type: docs
 ---
-
-
 # How to Add Watermarks to Spreadsheets Using GroupDocs.Watermark for Java: A Comprehensive Guide
 
 In today's data-driven environment, safeguarding sensitive information in documents is crucial. Whether managing confidential business reports or personal financial records, adding watermarks to spreadsheets can prevent unauthorized use and tampering. This guide walks you through the process of using GroupDocs.Watermark for Java—a robust tool designed to enhance document security effortlessly.

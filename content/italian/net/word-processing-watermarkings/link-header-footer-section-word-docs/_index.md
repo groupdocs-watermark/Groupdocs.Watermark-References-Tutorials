@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come collegare in modo efficiente intestazioni e piè di pagina all'interno di sezioni di documenti Word utilizzando GroupDocs.Watermark per .NET. Gestione e sicurezza dei documenti.
 weight: 26
 url: /it/net/word-processing-watermarkings/link-header-footer-section-word-docs/
+type: docs
 ---
-
 # Collega intestazione/piè di pagina nella sezione in documenti Word
 
 ## introduzione

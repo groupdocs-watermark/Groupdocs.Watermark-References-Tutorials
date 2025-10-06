@@ -8,10 +8,8 @@ keywords:
 - load password-protected Word documents
 - GroupDocs.Watermark Java setup
 - watermarking secured files
-
+type: docs
 ---
-
-
 # How to Use GroupDocs.Watermark Java to Load and Watermark Password-Protected Word Documents
 
 In today's digital landscape, securing sensitive documents is essential. Sometimes, you need access to these password-protected files for editing or watermarking purposes. This tutorial demonstrates how to use the GroupDocs.Watermark library in Java to seamlessly load and manage encrypted WordProcessing documents.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to add watermarks with image effects to your Word documents using GroupDocs.Watermark for .NET. Follow our step-by-step guide for stunning results.
 weight: 19
 url: /net/word-processing-watermarkings/add-watermark-image-effects-word-docs/
+type: docs
 ---
-
 # Add Watermark with Image Effects in Word Docs
 
 ## Introduction

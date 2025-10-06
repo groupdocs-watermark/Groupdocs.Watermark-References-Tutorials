@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Groupdocs for .NET Wasserzeichen zu passwortgeschützten Dokumenten hinzufügen. Sichern und kennzeichnen Sie Ihre Dateien ganz einfach.
 weight: 13
 url: /de/net/document-loadings/load-password-protected-document/
+type: docs
 ---
-
 # Laden Sie ein passwortgeschütztes Dokument
 
 ## Einführung

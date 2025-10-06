@@ -9,10 +9,8 @@ keywords:
 - GroupDocs Watermark for Java
 - PDF text watermark modification
 - document security watermarks
-
+type: docs
 ---
-
-
 # Edit PDF Watermarks in Java Using GroupDocs.Watermark: A Comprehensive Guide
 
 ## Introduction

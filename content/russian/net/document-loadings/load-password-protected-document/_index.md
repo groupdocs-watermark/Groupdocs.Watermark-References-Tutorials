@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять водяные знаки в документы, защищенные паролем, с помощью Groupdocs для .NET, с помощью нашего пошагового руководства. Легко защитите и промаркируйте свои файлы.
 weight: 13
 url: /ru/net/document-loadings/load-password-protected-document/
+type: docs
 ---
-
 # Загрузить документ, защищенный паролем
 
 ## Введение

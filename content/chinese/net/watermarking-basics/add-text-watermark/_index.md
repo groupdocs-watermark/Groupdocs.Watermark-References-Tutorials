@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 通过此分步指南，了解如何使用 Groupdocs for .NET 将文本水印添加到文档中。
 weight: 11
 url: /zh/net/watermarking-basics/add-text-watermark/
+type: docs
 ---
-
 # 添加文字水印
 
 ## 介绍

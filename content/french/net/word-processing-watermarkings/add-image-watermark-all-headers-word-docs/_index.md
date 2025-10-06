@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Ajoutez facilement des filigranes d'image à tous les en-têtes des documents Word à l'aide de GroupDocs.Watermark pour .NET. Suivez notre guide étape par étape avec des exemples de code détaillés.
 weight: 10
 url: /fr/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # Ajouter un filigrane d'image à tous les en-têtes dans Word Docs
 
 ## Introduction

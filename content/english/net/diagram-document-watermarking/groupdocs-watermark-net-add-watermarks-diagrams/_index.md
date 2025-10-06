@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark for .NET
 - adding watermarks to diagrams
 - .NET diagram watermarking
-
+type: docs
 ---
-
-
 # How to Add Watermarks to Diagrams Using GroupDocs.Watermark for .NET: A Complete Guide
 
 ## Introduction

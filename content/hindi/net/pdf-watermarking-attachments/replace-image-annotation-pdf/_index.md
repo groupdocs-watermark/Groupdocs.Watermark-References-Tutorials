@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके विशिष्ट PDF एनोटेशन में छवियों को बदलने का तरीका जानें। यह विस्तृत मार्गदर्शिका दस्तावेज़ों को लोड करने से लेकर परिवर्तनों को सहेजने तक सब कुछ कवर करती है।
 weight: 37
 url: /hi/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
+type: docs
 ---
-
 # पीडीएफ में विशिष्ट एनोटेशन के लिए छवि बदलें
 
 ## परिचय

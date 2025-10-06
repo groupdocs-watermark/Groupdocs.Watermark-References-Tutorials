@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เพิ่มลายน้ำให้กับเอกสารของคุณได้อย่างง่ายดายโดยใช้ GroupDocs.Watermark สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนที่ครอบคลุมของเราเพื่อปกป้องทรัพย์สินดิจิทัลของคุณ
 weight: 13
 url: /th/net/document-manipulation/get-supported-file-formats/
+type: docs
 ---
-
 # รับรูปแบบไฟล์ที่รองรับ
 
 ## การแนะนำ

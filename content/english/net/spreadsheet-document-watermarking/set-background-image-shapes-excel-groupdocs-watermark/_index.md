@@ -8,10 +8,8 @@ keywords:
 - Set Background Image for Shapes in Excel
 - GroupDocs.Watermark .NET
 - Excel Document Watermarking
-
+type: docs
 ---
-
-
 # How to Set a Background Image for Shapes in Excel Using GroupDocs.Watermark .NET
 
 ## Introduction

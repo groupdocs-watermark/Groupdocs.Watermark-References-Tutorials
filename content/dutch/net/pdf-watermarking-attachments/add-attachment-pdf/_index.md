@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Verbeter uw .NET-documentbeheermogelijkheden met GroupDocs.Watermark voor naadloze watermerken en verwerking van bijlagen.
 weight: 12
 url: /nl/net/pdf-watermarking-attachments/add-attachment-pdf/
+type: docs
 ---
-
 # Bijlage toevoegen aan PDF
 
 ## Invoering

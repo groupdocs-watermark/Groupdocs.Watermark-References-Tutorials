@@ -8,10 +8,8 @@ keywords:
 - modify shape properties Word
 - GroupDocs Watermark .NET
 - automate branding updates documents
-
+type: docs
 ---
-
-
 # How to Modify Shape Properties in Word Documents with GroupDocs.Watermark .NET
 ## Introduction
 Struggling with manual adjustments of visual elements in Word documents? Whether you're enhancing branding materials, reports, or presentations, modifying shape properties programmatically can save time and ensure consistency. This tutorial guides you through using GroupDocs.Watermark .NET to effortlessly change shape attributes within your Word documents.

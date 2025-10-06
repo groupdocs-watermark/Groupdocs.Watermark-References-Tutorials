@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавлять водяные знаки изображений в ваши документы с помощью GroupDocs.Watermark для .NET, из нашего подробного пошагового руководства.
 weight: 11
 url: /ru/net/image-watermarkings/add-image-watermark/
+type: docs
 ---
-
 # Добавить водяной знак изображения
 
 ## Введение

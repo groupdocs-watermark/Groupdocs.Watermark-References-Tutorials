@@ -8,10 +8,8 @@ keywords:
 - remove shapes word docs
 - GroupDocs Watermark for Java
 - text formatting criteria
-
+type: docs
 ---
-
-
 # How to Remove Shapes by Text Formatting in Word Docs with GroupDocs.Watermark for Java
 
 ## Introduction

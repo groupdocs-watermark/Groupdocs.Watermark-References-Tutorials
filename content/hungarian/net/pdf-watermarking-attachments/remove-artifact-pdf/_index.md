@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Tanulja meg, hogyan távolíthat el könnyedén műtermékeket PDF-dokumentumokból a GroupDocs.Watermark for .NET segítségével. Lépésről lépésre sajátítsa el a folyamatot átfogó oktatóanyagunk segítségével.
 weight: 31
 url: /hu/net/pdf-watermarking-attachments/remove-artifact-pdf/
+type: docs
 ---
-
 # Távolítsa el a műterméket a PDF-ből
 
 ## Bevezetés

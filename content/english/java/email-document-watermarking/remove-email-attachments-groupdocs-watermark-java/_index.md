@@ -8,10 +8,8 @@ keywords:
 - remove email attachments Java
 - GroupDocs.Watermark for Java
 - email management automation
-
+type: docs
 ---
-
-
 # Efficiently Remove Email Attachments Using GroupDocs.Watermark in Java
 
 ## Introduction

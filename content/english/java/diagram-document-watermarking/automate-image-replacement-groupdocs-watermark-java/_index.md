@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - automate image replacement
 - Java diagram watermarking
-
+type: docs
 ---
-
-
 # Mastering Image Replacement in Diagrams Using GroupDocs.Watermark for Java
 
 **Introduction**

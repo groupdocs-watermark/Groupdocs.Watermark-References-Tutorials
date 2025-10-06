@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 透過此逐步指南，了解如何使用 GroupDocs.Watermark for .NET 從串流中取得文件資訊。您的文件管理功能毫不費力。
 weight: 12
 url: /zh-hant/net/document-manipulation/get-document-info-stream/
+type: docs
 ---
-
 # 從串流中取得文件訊息
 
 ## 介紹

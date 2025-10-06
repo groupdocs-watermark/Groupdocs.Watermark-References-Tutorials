@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Z tego szczegółowego przewodnika krok po kroku dowiesz się, jak wyodrębnić informacje z adnotacji z dokumentów PDF przy użyciu narzędzia GroupDocs.Watermark dla platformy .NET.
 weight: 23
 url: /pl/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # Wyodrębnij informacje o adnotacjach z pliku PDF
 
 ## Wstęp

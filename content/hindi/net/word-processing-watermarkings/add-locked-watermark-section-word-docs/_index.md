@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: इस व्यापक चरण-दर-चरण मार्गदर्शिका के साथ .NET के लिए वॉटरमार्क का उपयोग करके Word दस्तावेज़ों में एक विशिष्ट अनुभाग में लॉक किए गए वॉटरमार्क को जोड़ना सीखें।
 weight: 13
 url: /hi/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में सेक्शन में लॉक्ड वॉटरमार्क जोड़ें
 
 ## परिचय

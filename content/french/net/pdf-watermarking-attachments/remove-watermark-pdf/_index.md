@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment supprimer les filigranes des fichiers PDF à l'aide de GroupDocs.Watermark pour .NET. Étapes simples pour l’édition professionnelle de documents.
 weight: 34
 url: /fr/net/pdf-watermarking-attachments/remove-watermark-pdf/
+type: docs
 ---
-
 # Supprimer le filigrane d'un PDF
 
 ## Introduction

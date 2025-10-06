@@ -8,10 +8,8 @@ keywords:
 - remove shapes diagrams Java
 - GroupDocs Watermark Java tutorial
 - Java diagram manipulation
-
+type: docs
 ---
-
-
 # How to Efficiently Remove Shapes from Diagrams with GroupDocs.Watermark for Java
 
 ## Introduction

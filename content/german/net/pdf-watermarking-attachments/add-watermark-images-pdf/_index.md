@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in unserem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mithilfe von GroupDocs.Watermark für .NET Wasserzeichen zu Bildern in PDF-Dokumenten hinzufügen. Sichern Sie Ihre PDFs ganz einfach.
 weight: 19
 url: /de/net/pdf-watermarking-attachments/add-watermark-images-pdf/
+type: docs
 ---
-
 # Fügen Sie Wasserzeichen zu Bildern in PDF hinzu
 
 ## Einführung

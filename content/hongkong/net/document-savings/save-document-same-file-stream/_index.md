@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs.Watermark for .NET 為文件新增浮水印。本指南提供了確保文件保護和完整性的說明。
 weight: 10
 url: /zh-hant/net/document-savings/save-document-same-file-stream/
+type: docs
 ---
-
 # 將文件儲存到同一文件或串流
 
 ## 介紹

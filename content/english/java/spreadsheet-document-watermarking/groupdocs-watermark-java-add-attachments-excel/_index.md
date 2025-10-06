@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark Java
 - Excel spreadsheet attachment
 - Java document management
-
+type: docs
 ---
-
-
 # How to Add Attachments to Excel Using GroupDocs.Watermark Java
 
 ## Introduction

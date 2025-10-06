@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ với loại lề trang trong PDF bằng Groupdocs cho .NET. Bảo mật tài liệu của bạn một cách dễ dàng.
 weight: 21
 url: /vi/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # Thêm hình mờ với loại lề trang trong PDF
 
 ## Giới thiệu

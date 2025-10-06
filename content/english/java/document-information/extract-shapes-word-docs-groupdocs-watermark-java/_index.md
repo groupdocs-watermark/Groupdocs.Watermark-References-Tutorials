@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark
 - extract shapes from Word documents
 - Java document manipulation
-
+type: docs
 ---
-
-
 # Extracting Shapes from Word Documents with GroupDocs.Watermark in Java
 ## Introduction
 In the dynamic field of document management, efficiently extracting and manipulating shapes within Word documents is essential. Whether you're developing an application that automates report generation or need to programmatically analyze document content, a reliable tool can make all the difference. This tutorial will guide you through using GroupDocs.Watermark for Java to load Word documents and extract detailed information about their shapes. With this knowledge, you'll streamline handling complex document structures.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีสร้างหน้าตัวอย่างเอกสารโดยใช้ GroupDocs.Watermark สำหรับ .NET พร้อมคำแนะนำนี้ เพิ่มความปลอดภัยและการจัดการเอกสารของคุณได้อย่างง่ายดาย
 weight: 10
 url: /th/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # สร้างการแสดงตัวอย่างเอกสาร
 
 ## การแนะนำ

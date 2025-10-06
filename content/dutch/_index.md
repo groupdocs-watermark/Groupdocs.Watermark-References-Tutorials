@@ -6,8 +6,8 @@ description: Ontgrendel de kracht van GroupDocs.Watermark met onze .NET- en Java
 weight: 11
 url: /nl/
 is_root: true
+type: docs
 ---
-
 # Beheers documentbeveiliging en branding met GroupDocs.Watermark
 
 

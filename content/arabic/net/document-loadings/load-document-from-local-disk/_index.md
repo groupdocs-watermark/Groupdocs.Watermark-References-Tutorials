@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: قم بحماية مستنداتك وإدارتها باستخدام Groupdocs للعلامة المائية لـ .NET. اتبع دليلنا التفصيلي لإضافة العلامات المائية بسلاسة.
 weight: 10
 url: /ar/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # تحميل المستند من القرص المحلي
 
 ## مقدمة

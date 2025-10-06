@@ -8,10 +8,8 @@ keywords:
 - Embedding images in emails
 - GroupDocs.Watermark for .NET
 - Email document watermarking
-
+type: docs
 ---
-
-
 # How to Embed Images into Email Messages Using GroupDocs.Watermark for .NET: A Step-by-Step Guide
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan cserélheti le programozottan az alakzatokat a Word dokumentumokban a GroupDocs.Watermark for .NET segítségével. Egyszerűsítse a dokumentumkezelési feladatokat könnyedén.
 weight: 33
 url: /hu/net/word-processing-watermarkings/replace-shape-image-word-docs/
+type: docs
 ---
-
 # Alakzatkép cseréje a Word Dokumentumokban
 
 ## Bevezetés

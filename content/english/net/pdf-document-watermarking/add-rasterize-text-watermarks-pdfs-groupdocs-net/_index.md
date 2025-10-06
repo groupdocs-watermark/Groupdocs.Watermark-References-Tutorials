@@ -8,10 +8,8 @@ keywords:
 - text watermarks in PDFs
 - GroupDocs.Watermark for .NET
 - secure digital documents
-
+type: docs
 ---
-
-
 # How to Add and Rasterize Text Watermarks in PDFs Using GroupDocs.Watermark for .NET
 
 ## Introduction

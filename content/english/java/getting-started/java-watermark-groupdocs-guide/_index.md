@@ -8,10 +8,8 @@ keywords:
 - Java watermarking
 - GroupDocs.Watermark Java API
 - adding watermarks in Java
-
+type: docs
 ---
-
-
 # Mastering Document Security: Adding Watermarks in Java with GroupDocs.Watermark
 
 ## Introduction

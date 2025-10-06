@@ -5,8 +5,8 @@ weight: 10
 url: /zh/net/
 description: 探索全面的 GroupDocs.Watermark for .NET 教程。通过分步指南，了解如何添加、管理和保护各种文档格式的水印。
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Watermark for .NET 的教程和示例
 
 ## 介绍

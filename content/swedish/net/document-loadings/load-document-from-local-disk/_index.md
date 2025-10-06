@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Skydda och hantera dina dokument med Groupdocs Watermark for .NET. Följ vår detaljerade guide för att lägga till vattenstämplar sömlöst.
 weight: 10
 url: /sv/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # Ladda dokument från lokal disk
 
 ## Introduktion

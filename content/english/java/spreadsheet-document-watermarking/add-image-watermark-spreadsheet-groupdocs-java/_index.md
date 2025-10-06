@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark Java
 - add image watermark Excel
 - Java SDK spreadsheet watermark
-
+type: docs
 ---
-
-
 # How to Add an Image Watermark to a Spreadsheet Header/Footer using GroupDocs.Watermark Java SDK
 
 ## Introduction

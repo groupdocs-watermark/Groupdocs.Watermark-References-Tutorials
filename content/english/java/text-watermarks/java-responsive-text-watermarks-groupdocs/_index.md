@@ -8,10 +8,8 @@ keywords:
 - responsive text watermarks Java
 - GroupDocs Watermark API
 - document protection
-
+type: docs
 ---
-
-
 # How to Add Responsive Text Watermarks in Java Using GroupDocs.Watermark
 
 ## Introduction

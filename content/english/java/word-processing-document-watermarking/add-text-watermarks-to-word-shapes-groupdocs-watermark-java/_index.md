@@ -8,10 +8,8 @@ keywords:
 - text watermark in Word shapes
 - GroupDocs.Watermark for Java setup
 - Java word document shape modification
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks to Word Shapes Using GroupDocs.Watermark for Java
 ## Introduction
 Protecting sensitive information in your Word documents is crucial, especially when marking sections as confidential or proprietary. This guide will show you how to add text watermarks specifically to shapes within Word documents using **GroupDocs.Watermark for Java**.

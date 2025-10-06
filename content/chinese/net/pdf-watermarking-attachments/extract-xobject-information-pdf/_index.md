@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 释放文档水印的强大功能。无缝管理 PDF、Word 文档和图像中的水印。
 weight: 25
 url: /zh/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
+type: docs
 ---
-
 # 从 PDF 中提取 XObject 信息
 
 ## 介绍

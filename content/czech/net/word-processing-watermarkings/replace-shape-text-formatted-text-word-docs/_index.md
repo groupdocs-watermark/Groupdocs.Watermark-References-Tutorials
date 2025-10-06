@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak nahradit text tvaru formátovaným textem v dokumentech aplikace Word pomocí GroupDocs.Watermark for .NET. Vaše možnosti úpravy dokumentů bez námahy.
 weight: 34
 url: /cs/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # Nahraďte text tvaru formátovaným textem v dokumentech aplikace Word
 
 ## Úvod

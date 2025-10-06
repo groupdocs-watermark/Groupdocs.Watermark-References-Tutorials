@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เพิ่มลายน้ำรูปภาพให้กับส่วนหัวทั้งหมดในเอกสาร Word ได้อย่างง่ายดายโดยใช้ GroupDocs.Watermark สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ดโดยละเอียด
 weight: 10
 url: /th/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # เพิ่มลายน้ำรูปภาพให้กับส่วนหัวทั้งหมดในเอกสาร Word
 
 ## การแนะนำ

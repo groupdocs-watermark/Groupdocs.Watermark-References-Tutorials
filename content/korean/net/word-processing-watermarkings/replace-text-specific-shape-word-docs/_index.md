@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서에서 특정 도형의 텍스트를 바꾸는 방법을 알아보세요. 단계별 튜토리얼을 따라해보세요.
 weight: 35
 url: /ko/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
+type: docs
 ---
-
 # Word Docs에서 특정 도형의 텍스트 바꾸기
 
 ## 소개

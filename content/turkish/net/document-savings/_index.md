@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Belgeleri filigranlarla kaydetmeye ilişkin GroupDocs.Watermark for .NET eğitimlerini keşfedin. Belge güvenliğini ve yönetimini geliştirmeye yönelik adım adım yöntemleri öğrenin.
 weight: 23
 url: /tr/net/document-savings/
+type: docs
 ---
-
 # Belge Kaydetme
 
 ## giriiş

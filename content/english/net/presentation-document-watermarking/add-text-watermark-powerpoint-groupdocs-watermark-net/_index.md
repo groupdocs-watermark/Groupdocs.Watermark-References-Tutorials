@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark PowerPoint
 - Add text watermark to PowerPoint
 - Secure PowerPoint slides
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to PowerPoint Backgrounds Using GroupDocs.Watermark for .NET
 
 ## Introduction

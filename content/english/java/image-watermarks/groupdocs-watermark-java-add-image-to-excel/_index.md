@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark for Java
 - add image watermarks to Excel
 - Java watermarking guide
-
+type: docs
 ---
-
-
 # How to Add Image Watermarks to Excel Using GroupDocs for Java
 
 In the digital era, protecting your documents is paramount. Adding watermarks to Excel spreadsheets using GroupDocs.Watermark for Java provides a simple yet effective way to secure sensitive information while maintaining professionalism.

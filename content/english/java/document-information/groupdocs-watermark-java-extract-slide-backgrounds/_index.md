@@ -8,10 +8,8 @@ keywords:
 - extract slide background information Java
 - GroupDocs.Watermark PowerPoint
 - slide background details Java
-
+type: docs
 ---
-
-
 # How to Extract Slide Background Information Using GroupDocs.Watermark for Java
 
 ## Introduction

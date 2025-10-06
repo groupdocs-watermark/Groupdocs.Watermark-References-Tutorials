@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark Java
 - loading Word documents
 - linking headers and footers
-
+type: docs
 ---
-
-
 # Mastering Document Manipulation: Loading & Linking Headers/Footers in Word Documents Using GroupDocs.Watermark Java
 
 ## Introduction

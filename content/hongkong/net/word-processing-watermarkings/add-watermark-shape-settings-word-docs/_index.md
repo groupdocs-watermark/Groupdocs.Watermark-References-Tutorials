@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs for .NET 將具有形狀設定的浮水印新增至 Word 文件。有效保護您的文件。
 weight: 20
 url: /zh-hant/net/word-processing-watermarkings/add-watermark-shape-settings-word-docs/
+type: docs
 ---
-
 # 在 Word 文件中新增具有形狀設定的浮水印
 
 ## 介紹

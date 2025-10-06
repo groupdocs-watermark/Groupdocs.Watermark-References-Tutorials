@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark
 - Excel linked attachments
 - Excel document management
-
+type: docs
 ---
-
-
 # How to Add Linked Attachments to an Excel Worksheet Using GroupDocs.Watermark .NET
 
 ## Introduction

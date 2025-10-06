@@ -6,8 +6,8 @@ description: Ξεκλειδώστε τη δύναμη του GroupDocs.Watermark
 weight: 11
 url: /el/
 is_root: true
+type: docs
 ---
-
 # Κύρια ασφάλεια και επωνυμία εγγράφων με GroupDocs.Watermark
 
 

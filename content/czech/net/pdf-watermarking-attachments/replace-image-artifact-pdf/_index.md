@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se, jak nahradit obrázky v dokumentech PDF pomocí GroupDocs.Watermark for .NET, pomocí tohoto komplexního, podrobného návodu.
 weight: 38
 url: /cs/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
+type: docs
 ---
-
 # Nahradit obrázek za konkrétní artefakt v PDF
 
 ## Úvod

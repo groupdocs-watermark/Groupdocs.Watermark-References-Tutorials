@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα σε XObjects σε PDF χρησιμοποιώντας το Groupdocs.Watermark για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για εύκολη εφαρμογή.
 weight: 20
 url: /el/net/pdf-watermarking-attachments/add-watermark-xobjects-pdf/
+type: docs
 ---
-
 # Προσθήκη υδατογραφήματος σε XObjects σε PDF
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách lưu tài liệu vào luồng được chỉ định bằng GroupDocs.Watermark cho .NET với hướng dẫn từng bước này. Hoàn hảo cho các nhà phát triển ở mọi cấp độ.
 weight: 12
 url: /vi/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Lưu tài liệu vào luồng được chỉ định
 
 ## Giới thiệu

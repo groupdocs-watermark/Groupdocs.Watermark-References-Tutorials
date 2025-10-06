@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air anotasi khusus cetak ke PDF menggunakan GroupDocs.Watermark untuk .NET. Tingkatkan keamanan dokumen dan branding dengan mudah.
 weight: 13
 url: /id/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
+type: docs
 ---
-
 # Tambahkan Tanda Air Anotasi Cetak Saja ke PDF
 
 ## Perkenalan

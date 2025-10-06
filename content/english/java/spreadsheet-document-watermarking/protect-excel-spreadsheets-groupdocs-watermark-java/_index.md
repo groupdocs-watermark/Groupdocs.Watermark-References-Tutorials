@@ -8,10 +8,8 @@ keywords:
 - Excel spreadsheet watermarking
 - Java GroupDocs Watermark
 - protect Excel spreadsheets with watermarks
-
+type: docs
 ---
-
-
 # Secure Your Excel Spreadsheets with GroupDocs.Watermark in Java
 
 In today's data-driven environment, safeguarding sensitive information within Excel spreadsheets is essential. Whether you're a software developer or a business professional, adding watermarks can help protect your documents from unauthorized use. This tutorial will guide you through using **GroupDocs.Watermark for Java** to efficiently load and manage Excel files.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan adhat szöveges effektusokkal rendelkező egyéni vízjeleket Word-dokumentumokhoz a GroupDocs.Watermark for .NET segítségével. A dokumentumok biztonsága és látványossága erőfeszítés nélkül.
 weight: 21
 url: /hu/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
+type: docs
 ---
-
 # Vízjel hozzáadása szövegeffektusokkal a Word Dokumentumokban
 
 ## Bevezetés

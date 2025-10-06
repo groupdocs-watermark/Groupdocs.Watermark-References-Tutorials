@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak programowo zastępować obrazy kształtów w dokumentach programu Word przy użyciu programu GroupDocs.Watermark dla platformy .NET. Uprość zadania związane z manipulacją dokumentami bez wysiłku.
 weight: 33
 url: /pl/net/word-processing-watermarkings/replace-shape-image-word-docs/
+type: docs
 ---
-
 # Zamień obraz kształtu w dokumentach programu Word
 
 ## Wstęp

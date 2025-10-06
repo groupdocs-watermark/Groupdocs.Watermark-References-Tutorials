@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ vào tài liệu bằng GroupDocs.Watermark cho .NET với hướng dẫn này. Hoàn hảo cho các nhà phát triển muốn tăng cường bảo mật tài liệu.
 weight: 11
 url: /vi/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # Tải tài liệu từ luồng
 
 ## Giới thiệu

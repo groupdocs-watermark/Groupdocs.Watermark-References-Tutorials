@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere filigrane agli allegati PDF utilizzando GroupDocs.Watermark per .NET. Proteggi facilmente i tuoi documenti con filigrane personalizzate.
 weight: 16
 url: /it/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
+type: docs
 ---
-
 # Aggiungi filigrana a tutti gli allegati nel PDF
 
 ## introduzione

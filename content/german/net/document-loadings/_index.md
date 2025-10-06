@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Entdecken Sie GroupDocs.Watermark für .NET-Tutorials zum Laden und Wasserzeichen von Dokumenten und sorgen Sie mit Schritt-für-Schritt-Anleitungen für Dokumentensicherheit und Branding.
 weight: 22
 url: /de/net/document-loadings/
+type: docs
 ---
-
 # Laden von Dokumenten
 
 ## Einführung

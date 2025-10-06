@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment supprimer sans effort les artefacts des documents PDF à l'aide de GroupDocs.Watermark pour .NET. Maîtrisez le processus étape par étape grâce à notre tutoriel complet.
 weight: 31
 url: /fr/net/pdf-watermarking-attachments/remove-artifact-pdf/
+type: docs
 ---
-
 # Supprimer l'artefact du PDF
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air ke lampiran PDF menggunakan GroupDocs.Watermark untuk .NET. Amankan dokumen Anda dengan tanda air khusus dengan mudah.
 weight: 16
 url: /id/net/pdf-watermarking-attachments/add-watermark-all-attachments-pdf/
+type: docs
 ---
-
 # Tambahkan Tanda Air ke Semua Lampiran di PDF
 
 ## Perkenalan

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs के साथ दस्तावेज़ सुरक्षा बढ़ाएँ। सीखें कि आसानी से पीडीएफ फाइलों में एनोटेशन के लिए टेक्स्ट को फ़ॉर्मेटिंग से कैसे बदला जाए।
 weight: 41
 url: /hi/net/pdf-watermarking-attachments/replace-text-formatting-annotation-pdf/
+type: docs
 ---
-
 # पीडीएफ में एनोटेशन के लिए टेक्स्ट को फ़ॉर्मेटिंग से बदलें
 
 ## परिचय

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: قم بحماية مستندات Word الخاصة بك باستخدام GroupDocs للعلامة المائية لـ .NET. قم بتعديل خصائص الشكل بسهولة لتعزيز الأمان.
 weight: 27
 url: /ar/net/word-processing-watermarkings/modify-shape-properties-word-docs/
+type: docs
 ---
-
 # تعديل خصائص الشكل في مستندات Word
 
 ## مقدمة

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как добавить заблокированный водяной знак в определенный раздел документов Word с помощью Groupdocs для .NET, с помощью этого подробного пошагового руководства.
 weight: 13
 url: /ru/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # Добавить заблокированный водяной знак в раздел в документах Word
 
 ## Введение

@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Temukan tutorial GroupDocs.Watermark untuk .NET untuk memuat dan memberi tanda air pada dokumen, memastikan keamanan dan pencitraan merek dokumen dengan panduan langkah demi langkah.
 weight: 22
 url: /id/net/document-loadings/
+type: docs
 ---
-
 # Memuat Dokumen
 
 ## Perkenalan

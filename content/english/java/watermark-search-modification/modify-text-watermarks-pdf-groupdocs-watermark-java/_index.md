@@ -8,10 +8,8 @@ keywords:
 - search text watermarks PDF
 - modify text watermark Java
 - GroupDocs Watermark Java API
-
+type: docs
 ---
-
-
 # How to Search and Modify Text Watermarks in PDFs Using GroupDocs.Watermark for Java
 
 ## Introduction

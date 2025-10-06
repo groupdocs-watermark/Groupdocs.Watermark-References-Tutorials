@@ -8,10 +8,8 @@ keywords:
 - replace hyperlinks in Excel
 - GroupDocs.Watermark .NET
 - Excel hyperlink management
-
+type: docs
 ---
-
-
 # Efficiently Replace Hyperlinks in Excel with GroupDocs.Watermark .NET
 
 ## Introduction

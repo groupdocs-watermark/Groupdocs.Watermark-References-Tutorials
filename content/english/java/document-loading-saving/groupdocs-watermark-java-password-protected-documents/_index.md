@@ -8,10 +8,8 @@ keywords:
 - load password-protected documents in Java
 - GroupDocs Watermark Java
 - manage watermarks encrypted documents
-
+type: docs
 ---
-
-
 # How to Load Password-Protected Documents with GroupDocs.Watermark in Java
 
 This tutorial will help you efficiently manage watermarks in encrypted documents using GroupDocs.Watermark for Java. By the end of this guide, you'll be able to load and manipulate watermarks within secured files seamlessly.

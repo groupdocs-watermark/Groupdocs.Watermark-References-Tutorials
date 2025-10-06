@@ -8,10 +8,8 @@ keywords:
 - document security with GroupDocs.Watermark for .NET
 - watermark configuration in .NET applications
 - search and verify watermarks using GroupDocs
-
+type: docs
 ---
-
-
 # Master Document Security with GroupDocs.Watermark for .NET: A Comprehensive Guide
 
 ## Introduction

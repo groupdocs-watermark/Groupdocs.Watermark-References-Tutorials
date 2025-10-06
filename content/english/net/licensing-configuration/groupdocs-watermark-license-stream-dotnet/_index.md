@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark license stream .NET
 - Set License from Stream in .NET
 - Digital watermarking with GroupDocs
-
+type: docs
 ---
-
-
 # How to Set GroupDocs.Watermark License from Stream in .NET (Step-by-Step Guide)
 
 ## Introduction

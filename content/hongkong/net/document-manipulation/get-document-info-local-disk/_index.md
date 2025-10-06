@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 透過這份全面的逐步指南，了解如何使用 GroupDocs for .NET 在文件中新增、刪除和擷取浮水印。
 weight: 11
 url: /zh-hant/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # 從本機磁碟取得文件資訊
 
 ## 介紹

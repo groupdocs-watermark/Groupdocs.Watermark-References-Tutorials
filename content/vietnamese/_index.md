@@ -6,8 +6,8 @@ description: Khai phá sức mạnh của GroupDocs.Watermark bằng các hướ
 weight: 11
 url: /vi/
 is_root: true
+type: docs
 ---
-
 # Bảo mật tài liệu chính và xây dựng thương hiệu với GroupDocs.Watermark
 
 

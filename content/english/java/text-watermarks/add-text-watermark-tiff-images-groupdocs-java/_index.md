@@ -8,10 +8,8 @@ keywords:
 - text watermark TIFF images
 - GroupDocs.Watermark for Java setup
 - Java image processing with watermarks
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to TIFF Images Using GroupDocs.Watermark for Java
 
 ## Introduction

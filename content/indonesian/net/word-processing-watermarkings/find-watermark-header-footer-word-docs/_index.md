@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menemukan dan menghapus tanda air secara efisien dari dokumen Word menggunakan GroupDocs untuk .NET, memastikan integritas dan profesionalisme dokumen.
 weight: 22
 url: /id/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # Temukan Tanda Air di Header/Footer di Word Docs
 
 ## Perkenalan

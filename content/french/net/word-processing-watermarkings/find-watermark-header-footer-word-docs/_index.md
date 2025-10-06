@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment rechercher et supprimer efficacement les filigranes des documents Word à l'aide de GroupDocs Watermark for .NET, garantissant ainsi l'intégrité et le professionnalisme des documents.
 weight: 22
 url: /fr/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # Rechercher un filigrane dans l'en-tête/pied de page dans Word Docs
 
 ## Introduction

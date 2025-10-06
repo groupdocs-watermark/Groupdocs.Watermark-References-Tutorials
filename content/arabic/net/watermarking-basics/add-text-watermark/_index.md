@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية نصية إلى مستنداتك باستخدام Groupdocs للعلامة المائية لـ .NET من خلال هذا الدليل المفصل خطوة بخطوة.
 weight: 11
 url: /ar/net/watermarking-basics/add-text-watermark/
+type: docs
 ---
-
 # إضافة علامة مائية نصية
 
 ## مقدمة

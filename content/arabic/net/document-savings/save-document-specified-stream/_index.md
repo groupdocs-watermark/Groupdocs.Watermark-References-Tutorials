@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية حفظ مستند في دفق محدد باستخدام GroupDocs.Watermark لـ .NET باستخدام هذا الدليل التفصيلي خطوة بخطوة. مثالية للمطورين من جميع المستويات.
 weight: 12
 url: /ar/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # احفظ المستند في الدفق المحدد
 
 ## مقدمة

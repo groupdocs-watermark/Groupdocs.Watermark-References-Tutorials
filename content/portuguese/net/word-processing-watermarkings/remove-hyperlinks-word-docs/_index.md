@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda como remover hiperlinks de documentos do Word usando GroupDocs.Watermark for .NET. Aumente a segurança dos documentos sem esforço.
 weight: 29
 url: /pt/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
+type: docs
 ---
-
 # Remover hiperlinks em documentos do Word
 
 ## Introdução

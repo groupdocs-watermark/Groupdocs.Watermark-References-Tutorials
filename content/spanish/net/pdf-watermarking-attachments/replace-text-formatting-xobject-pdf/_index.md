@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Mejore sus capacidades de manipulación de documentos .NET con GroupDocs. Aprenda a reemplazar texto con formato en archivos PDF sin esfuerzo.
 weight: 45
 url: /es/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
+type: docs
 ---
-
 # Reemplazar texto con formato para XObject en PDF
 
 ## Introducción

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำรูปภาพแบบเรียงต่อกันลงในเอกสารของคุณโดยใช้ GroupDocs.Watermark สำหรับ .NET ง่าย มีประสิทธิภาพ และปรับแต่งได้
 weight: 10
 url: /th/net/image-watermarkings/add-tiled-image-watermark/
+type: docs
 ---
-
 # เพิ่มลายน้ำรูปภาพแบบเรียงต่อกัน
 
 ## การแนะนำ

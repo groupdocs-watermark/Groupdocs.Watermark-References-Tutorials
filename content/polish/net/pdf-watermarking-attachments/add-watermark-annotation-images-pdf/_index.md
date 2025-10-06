@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak chronić dokumenty PDF, dodając znaki wodne do obrazów adnotacji za pomocą Groupdocs.Watermark dla .NET.
 weight: 17
 url: /pl/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
+type: docs
 ---
-
 # Dodaj znak wodny do obrazów adnotacji w formacie PDF
 
 ## Wstęp

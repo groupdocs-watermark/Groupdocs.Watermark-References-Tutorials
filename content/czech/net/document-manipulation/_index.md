@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Prozkoumejte výukové programy GroupDocs.Watermark for .NET o generování náhledů dokumentů a správě vodoznaků. Vylepšete zabezpečení a správu dokumentů.
 weight: 21
 url: /cs/net/document-manipulation/
+type: docs
 ---
-
 # Manipulace s dokumenty
 
 ## Úvod

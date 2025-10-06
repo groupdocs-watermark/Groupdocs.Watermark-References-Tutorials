@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till vattenstämplar för att forma bilder i Word-dokument med GroupDocs.Watermark för .NET. Förbättra dokumentsäkerheten med denna handledning.
 weight: 17
 url: /sv/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
+type: docs
 ---
-
 # Lägg till vattenstämpel för att forma bilder i Word Docs
 
 ## Introduktion

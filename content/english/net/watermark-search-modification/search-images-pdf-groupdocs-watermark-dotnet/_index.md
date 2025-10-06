@@ -8,10 +8,8 @@ keywords:
 - search images in pdfs
 - GroupDocs Watermark for .NET
 - extract images from PDF
-
+type: docs
 ---
-
-
 # How to Search and Extract Images from PDFs Using GroupDocs.Watermark for .NET
 
 ## Introduction

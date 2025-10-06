@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية توضيحية للطباعة فقط إلى ملفات PDF باستخدام GroupDocs.Watermark لـ .NET. تعزيز أمان المستندات والعلامات التجارية دون عناء.
 weight: 13
 url: /ar/net/pdf-watermarking-attachments/add-print-only-annotation-watermark-pdf/
+type: docs
 ---
-
 # أضف علامة مائية توضيحية للطباعة فقط إلى PDF
 
 ## مقدمة

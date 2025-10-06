@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีการโหลดและใส่ลายน้ำเอกสารโดยใช้ Groupdocs ลายน้ำสำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนนี้ ปกป้องและสร้างแบรนด์เนื้อหาของคุณได้อย่างง่ายดาย
 weight: 12
 url: /th/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # โหลดเอกสารรูปแบบเฉพาะ
 
 ## การแนะนำ

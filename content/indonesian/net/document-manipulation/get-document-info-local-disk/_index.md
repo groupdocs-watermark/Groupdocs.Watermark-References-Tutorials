@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan, menghapus, dan mengekstrak tanda air dalam dokumen menggunakan GroupDocs untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
 weight: 11
 url: /id/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Dapatkan Info Dokumen dari Disk Lokal
 
 ## Perkenalan

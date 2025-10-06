@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Ajoutez sans effort des filigranes aux documents Word protégés par mot de passe à l'aide de GroupDocs.Watermark pour .NET avec notre guide complet étape par étape.
 weight: 14
 url: /fr/net/document-loadings/load-password-protected-word-document/
+type: docs
 ---
-
 # Charger un document Word protégé par mot de passe
 
 ## Introduction

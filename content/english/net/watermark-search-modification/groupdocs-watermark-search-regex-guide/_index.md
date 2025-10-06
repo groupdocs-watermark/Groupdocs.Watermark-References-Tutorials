@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark .NET
 - watermark search regex
 - PDF watermark management
-
+type: docs
 ---
-
-
 # Mastering Watermark Searches in Documents with GroupDocs.Watermark .NET and Regex
 
 ## Introduction

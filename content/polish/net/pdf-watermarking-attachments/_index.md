@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Zapoznaj się z samouczkami GroupDocs.Watermark for .NET na temat znaków wodnych i załączników w formacie PDF. Poznaj metody krok po kroku poprawiające bezpieczeństwo i budowanie marki plików PDF.
 weight: 25
 url: /pl/net/pdf-watermarking-attachments/
+type: docs
 ---
-
 # Znak wodny i załącznik w formacie PDF
 
 ## Wstęp

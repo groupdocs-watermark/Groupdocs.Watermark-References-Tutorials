@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 Groupdocs.Watermark for .NET 從 PDF 中提取所有附件。請按照我們的逐步指南進行無縫提取過程。
 weight: 22
 url: /zh-hant/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
+type: docs
 ---
-
 # 從 PDF 中提取所有附件
 
 ## 介紹

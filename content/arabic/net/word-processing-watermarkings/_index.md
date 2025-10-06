@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: اكتشف البرامج التعليمية الأساسية الخاصة بـ GroupDocs.Watermark لـ .NET لإضافة العلامات المائية وإدارتها في مستندات Word. عزز أمان مستنداتك وعلامتك التجارية دون عناء.
 weight: 26
 url: /ar/net/word-processing-watermarkings/
+type: docs
 ---
-
 # معالجة الكلمات بالعلامة المائية
 
 ## مقدمة

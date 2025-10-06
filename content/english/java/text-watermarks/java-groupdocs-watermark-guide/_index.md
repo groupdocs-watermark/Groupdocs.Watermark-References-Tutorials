@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - Java text watermarking
 - document protection with watermarks
-
+type: docs
 ---
-
-
 # Complete Guide: Adding Watermarks in Java Using GroupDocs API for Text Protection and Branding
 
 In today’s digital age, protecting your documents from unauthorized use or distribution is crucial. Whether you're a developer working on confidential projects or an organization aiming to safeguard intellectual property, adding watermarks can be an effective solution. This tutorial will guide you through using the GroupDocs.Watermark library for Java to seamlessly integrate watermarking functionality into your applications.

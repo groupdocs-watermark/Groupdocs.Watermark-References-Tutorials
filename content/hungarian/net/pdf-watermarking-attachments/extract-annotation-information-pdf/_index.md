@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan bonthat ki megjegyzésadatokat PDF-dokumentumokból a GroupDocs.Watermark for .NET segítségével.
 weight: 23
 url: /hu/net/pdf-watermarking-attachments/extract-annotation-information-pdf/
+type: docs
 ---
-
 # Kivonat a megjegyzésekkel kapcsolatos információk PDF-ből
 
 ## Bevezetés

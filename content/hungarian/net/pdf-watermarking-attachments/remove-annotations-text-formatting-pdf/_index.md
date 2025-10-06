@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan távolíthat el speciális szövegformázású megjegyzéseket PDF-dokumentumokból a Watermark for .NET segítségével.
 weight: 30
 url: /hu/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
+type: docs
 ---
-
 # Távolítsa el a megjegyzéseket meghatározott szövegformázással a PDF-ben
 
 ## Bevezetés

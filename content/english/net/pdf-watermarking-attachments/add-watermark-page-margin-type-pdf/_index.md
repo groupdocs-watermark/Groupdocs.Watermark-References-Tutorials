@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to add watermarks with page margin type in PDF using Groupdocs.Watermark for .NET. Secure your documents effortlessly.
 weight: 21
 url: /net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # Add Watermark with Page Margin Type in PDF
 
 ## Introduction

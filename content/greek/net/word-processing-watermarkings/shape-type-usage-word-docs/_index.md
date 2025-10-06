@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να χειρίζεστε σχήματα σε έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Αυτό το σεμινάριο παρέχει καθοδήγηση για αποτελεσματική επεξεργασία εγγράφων.
 weight: 37
 url: /el/net/word-processing-watermarkings/shape-type-usage-word-docs/
+type: docs
 ---
-
 # Χρήση τύπου σχήματος στα Έγγραφα του Word
 
 ## Εισαγωγή

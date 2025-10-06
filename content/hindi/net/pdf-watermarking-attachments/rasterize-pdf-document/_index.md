@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके PDF दस्तावेज़ों को व्यवस्थित करने का तरीका जानें। दस्तावेज़ सुरक्षा और दृश्य अपील को सहजता से बढ़ाएँ।
 weight: 27
 url: /hi/net/pdf-watermarking-attachments/rasterize-pdf-document/
+type: docs
 ---
-
 # पीडीएफ दस्तावेज़ को व्यवस्थित करें
 
 ## परिचय

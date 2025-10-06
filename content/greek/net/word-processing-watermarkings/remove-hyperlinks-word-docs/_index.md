@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αφαιρείτε υπερσυνδέσμους από έγγραφα του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Βελτιώστε την ασφάλεια των εγγράφων χωρίς κόπο.
 weight: 29
 url: /el/net/word-processing-watermarkings/remove-hyperlinks-word-docs/
+type: docs
 ---
-
 # Καταργήστε υπερσυνδέσμους στα Έγγραφα του Word
 
 ## Εισαγωγή

@@ -8,10 +8,8 @@ keywords:
 - text watermark in Word
 - Java GroupDocs Watermark
 - lock watermark Java
-
+type: docs
 ---
-
-
 # Add and Lock Text Watermarks in Word Documents Using Java
 
 ## Introduction

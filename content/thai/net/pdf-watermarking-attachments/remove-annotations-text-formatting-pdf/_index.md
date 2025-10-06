@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีลบคำอธิบายประกอบด้วยการจัดรูปแบบข้อความเฉพาะในเอกสาร PDF โดยใช้ Groupdocs
 weight: 30
 url: /th/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
+type: docs
 ---
-
 # ลบคำอธิบายประกอบด้วยการจัดรูปแบบข้อความเฉพาะในรูปแบบ PDF
 
 ## การแนะนำ

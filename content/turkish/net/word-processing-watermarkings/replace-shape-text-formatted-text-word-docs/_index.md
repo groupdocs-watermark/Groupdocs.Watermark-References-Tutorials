@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerindeki şekil metnini biçimlendirilmiş metinle nasıl değiştireceğinizi öğrenin. Belge düzenleme yetenekleriniz zahmetsizce.
 weight: 34
 url: /tr/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # Word Belgelerindeki Şekil Metnini Biçimlendirilmiş Metinle Değiştirme
 
 ## giriiş

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - watermarking Word documents
 - link headers footers in Word
-
+type: docs
 ---
-
-
 # GroupDocs.Watermark Java Guide: Mastering Watermarking in Word Documents
 ## Introduction
 In today's digital landscape, efficient document management is crucial for both businesses and individuals. Whether adding watermarks to protect sensitive information or ensuring consistent formatting across sections, managing Word documents can be challenging without the right tools. Enter GroupDocs.Watermark Java—a powerful library designed to simplify these tasks effortlessly.

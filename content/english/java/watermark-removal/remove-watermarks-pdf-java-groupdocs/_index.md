@@ -8,10 +8,8 @@ keywords:
 - remove watermarks from PDFs in Java
 - GroupDocs Watermark for Java
 - Java watermark removal
-
+type: docs
 ---
-
-
 # Remove Watermarks from PDFs in Java Using GroupDocs
 
 ## How to Find and Remove Watermarks Efficiently in Java with GroupDocs.Watermark

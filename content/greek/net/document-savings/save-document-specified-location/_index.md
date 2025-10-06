@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε εύκολα υδατογραφήματα στα έγγραφά σας χρησιμοποιώντας το GroupDocs.Watermark για .NET με αυτόν τον οδηγό βήμα προς βήμα. Βελτιώστε την ασφάλεια των εγγράφων.
 weight: 11
 url: /el/net/document-savings/save-document-specified-location/
+type: docs
 ---
-
 # Αποθήκευση εγγράφου σε καθορισμένη τοποθεσία
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Hatékonyan helyettesítheti a PDF-fájlok szövegét a GroupDocs.Watermark for .NET segítségével. Zökkenőmentesen integrálja a vízjelet .NET-alkalmazásaiba.
 weight: 44
 url: /hu/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
+type: docs
 ---
-
 # Szöveg cseréje adott XObject esetén a PDF-ben
 
 ## Bevezetés

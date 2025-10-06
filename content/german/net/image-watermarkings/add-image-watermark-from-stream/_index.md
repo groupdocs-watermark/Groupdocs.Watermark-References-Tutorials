@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Bildwasserzeichen zu Dokumenten hinzufügen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine nahtlose Wasserzeichenintegration.
 weight: 12
 url: /de/net/image-watermarkings/add-image-watermark-from-stream/
+type: docs
 ---
-
 # Bildwasserzeichen aus Stream hinzufügen
 
 ## Einführung

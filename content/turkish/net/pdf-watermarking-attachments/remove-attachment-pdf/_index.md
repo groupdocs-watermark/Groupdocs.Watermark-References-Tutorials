@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF belgelerinden ekleri kolayca nasıl kaldıracağınızı öğrenin. Belge yönetimi verimliliğinizi artırın.
 weight: 33
 url: /tr/net/pdf-watermarking-attachments/remove-attachment-pdf/
+type: docs
 ---
-
 # PDF'den Eki Kaldır
 
 ## giriiş

@@ -8,10 +8,8 @@ keywords:
 - remove watermarks from Word
 - GroupDocs Watermark Java
 - text and image watermark removal
-
+type: docs
 ---
-
-
 # How to Remove Watermarks from Specific Sections in a Word Document Using GroupDocs.Watermark for Java
 
 ## Introduction

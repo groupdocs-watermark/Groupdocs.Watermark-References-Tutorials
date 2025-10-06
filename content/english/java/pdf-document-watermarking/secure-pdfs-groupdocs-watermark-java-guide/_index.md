@@ -8,10 +8,8 @@ keywords:
 - secure PDFs
 - text watermark Java
 - PDF rasterization
-
+type: docs
 ---
-
-
 # Secure Your PDFs with GroupDocs.Watermark in Java: A Step-by-Step Guide
 
 ## Introduction

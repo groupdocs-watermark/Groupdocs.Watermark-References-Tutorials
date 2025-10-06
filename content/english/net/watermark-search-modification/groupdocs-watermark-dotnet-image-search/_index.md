@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark for .NET
 - image watermark search in .NET
 - watermark detection with GroupDocs
-
+type: docs
 ---
-
-
 # Mastering Image Watermark Searches in .NET with GroupDocs.Watermark
 
 ## Introduction

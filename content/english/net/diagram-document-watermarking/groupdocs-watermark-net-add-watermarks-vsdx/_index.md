@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark
 - VSDX watermarks
 - Diagram file protection
-
+type: docs
 ---
-
-
 # How to Add Text and Image Watermarks to VSDX Diagrams Using GroupDocs.Watermark for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan cserélheti le a képeket adott PDF-jegyzetekben a GroupDocs.Watermark for .NET segítségével. Ez a részletes útmutató a dokumentumok betöltésétől a változtatások mentéséig mindenre kiterjed.
 weight: 37
 url: /hu/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
+type: docs
 ---
-
 # Cserélje le a képet egy adott megjegyzésre a PDF-ben
 
 ## Bevezetés

@@ -8,10 +8,8 @@ keywords:
 - remove shapes excel
 - GroupDocs Watermark .NET
 - programmatically remove shapes from Excel
-
+type: docs
 ---
-
-
 # How to Remove Shapes from Excel Files with GroupDocs.Watermark .NET
 
 ## Introduction

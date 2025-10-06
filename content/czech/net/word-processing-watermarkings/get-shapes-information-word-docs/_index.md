@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Získejte bez námahy cenné poznatky z dokumentů aplikace GroupDocs pro .NET. Bezproblémově extrahujte informace o tvaru pro lepší analýzu dat.
 weight: 24
 url: /cs/net/word-processing-watermarkings/get-shapes-information-word-docs/
+type: docs
 ---
-
 # Získejte informace o tvarech ve Word Docs
 
 ## Úvod

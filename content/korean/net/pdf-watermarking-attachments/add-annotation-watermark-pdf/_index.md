@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 PDF 문서에 주석 워터마크를 쉽게 추가하는 방법을 알아보세요. 문서 브랜딩과 보안을 쉽게 강화하세요.
 weight: 10
 url: /ko/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
+type: docs
 ---
-
 # PDF에 주석 워터마크 추가
 
 ## 소개

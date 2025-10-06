@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda a reemplazar texto para formas específicas en documentos de Word usando GroupDocs.Watermark para .NET. Sigue nuestro tutorial paso a paso.
 weight: 35
 url: /es/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
+type: docs
 ---
-
 # Reemplazar texto por una forma específica en documentos de Word
 
 ## Introducción

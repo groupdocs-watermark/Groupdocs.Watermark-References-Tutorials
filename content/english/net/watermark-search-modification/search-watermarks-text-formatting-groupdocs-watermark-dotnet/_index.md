@@ -8,10 +8,8 @@ keywords:
 - search watermarks by text formatting
 - groupdocs watermark .net
 - watermark search criteria
-
+type: docs
 ---
-
-
 # Search Watermarks by Text Formatting in .NET Using GroupDocs.Watermark
 
 ## Introduction

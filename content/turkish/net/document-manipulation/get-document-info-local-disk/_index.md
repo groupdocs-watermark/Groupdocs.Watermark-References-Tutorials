@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Bu kapsamlı adım adım kılavuzla, GroupDocs for .NET'i kullanarak filigranları nasıl ekleyeceğinizi, kaldıracağınızı ve çıkaracağınızı öğrenin.
 weight: 11
 url: /tr/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Yerel Diskten Belge Bilgilerini Al
 
 ## giriiş

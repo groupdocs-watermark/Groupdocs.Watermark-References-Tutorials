@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: รักษาความปลอดภัยเอกสารของคุณโดยเพิ่มลายน้ำที่ล็อคไว้โดยใช้ Groupdocs.Watermark สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อการนำไปปฏิบัติที่ง่ายดาย
 weight: 11
 url: /th/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
+type: docs
 ---
-
 # เพิ่มลายน้ำที่ถูกล็อคลงในทุกหน้าในเอกสาร Word
 
 ## การแนะนำ

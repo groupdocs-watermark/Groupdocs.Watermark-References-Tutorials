@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda como extrair propriedades de seção de documentos do Word usando Groupdocs para .NET. Aprimore seus recursos de manipulação de documentos sem esforço.
 weight: 23
 url: /pt/net/word-processing-watermarkings/get-section-properties-word-docs/
+type: docs
 ---
-
 # Obtenha propriedades de seção em documentos do Word
 
 ## Introdução

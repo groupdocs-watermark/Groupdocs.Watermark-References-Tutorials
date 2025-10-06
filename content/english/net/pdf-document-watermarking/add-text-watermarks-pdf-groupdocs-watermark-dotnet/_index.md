@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark .NET
 - add text watermarks to PDFs
 - text watermark in PDF
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks to PDFs Using GroupDocs.Watermark for .NET (Step-by-Step Guide)
 
 ## Introduction

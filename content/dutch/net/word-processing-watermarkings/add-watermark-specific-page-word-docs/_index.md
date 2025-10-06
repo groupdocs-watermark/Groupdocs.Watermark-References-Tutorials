@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u watermerken kunt toevoegen aan specifieke pagina's in Word-documenten met behulp van GroupDocs voor .NET. Bescherm uw inhoud moeiteloos.
 weight: 14
 url: /nl/net/word-processing-watermarkings/add-watermark-specific-page-word-docs/
+type: docs
 ---
-
 # Voeg een watermerk toe aan een specifieke pagina in Word-documenten
 
 ## Invoering

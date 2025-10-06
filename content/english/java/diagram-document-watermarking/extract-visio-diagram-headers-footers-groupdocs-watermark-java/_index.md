@@ -8,10 +8,8 @@ keywords:
 - extract headers footers Visio diagrams
 - GroupDocs Watermark Java
 - Visio diagram watermarking
-
+type: docs
 ---
-
-
 # Extract Headers & Footers from Visio Diagrams Using GroupDocs.Watermark for Java
 
 ## Introduction

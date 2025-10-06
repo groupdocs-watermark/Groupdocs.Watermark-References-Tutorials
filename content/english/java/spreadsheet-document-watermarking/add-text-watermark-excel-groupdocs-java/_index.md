@@ -10,10 +10,8 @@ keywords:
 - excel spreadsheet security
 - watermark excel header footer
 - custom font text watermark excel
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to an Excel Spreadsheet Using GroupDocs.Watermark for Java
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark PDF dimensions
 - Retrieve PDF page width .NET
 - Get PDF height dimensions .NET
-
+type: docs
 ---
-
-
 # Retrieve PDF Page Dimensions with GroupDocs.Watermark for .NET
 
 ## Introduction

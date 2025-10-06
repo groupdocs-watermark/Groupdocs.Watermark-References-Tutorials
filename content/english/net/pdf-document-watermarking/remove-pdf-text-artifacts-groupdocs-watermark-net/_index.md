@@ -8,10 +8,8 @@ keywords:
 - remove text artifacts from PDFs
 - GroupDocs.Watermark .NET API
 - PDF document manipulation
-
+type: docs
 ---
-
-
 # How to Remove Text Artifacts from PDFs Using GroupDocs.Watermark .NET API
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für .NET Formtext durch formatierten Text in Word-Dokumenten ersetzen. Ihre Dokumentbearbeitungsfunktionen mühelos.
 weight: 34
 url: /de/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # Ersetzen Sie Formtext durch formatierten Text in Word-Dokumenten
 
 ## Einführung

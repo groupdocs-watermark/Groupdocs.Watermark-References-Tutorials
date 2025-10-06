@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: A GroupDocs.Watermark for .NET segítségével könnyedén adhat hozzá vízjeleket dokumentumaihoz. Kövesse átfogó, lépésenkénti útmutatónkat digitális eszközei védelméhez.
 weight: 13
 url: /hu/net/document-manipulation/get-supported-file-formats/
+type: docs
 ---
-
 # Szerezze be a támogatott fájlformátumokat
 
 ## Bevezetés

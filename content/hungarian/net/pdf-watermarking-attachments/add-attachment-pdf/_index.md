@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Növelje .NET dokumentumkezelési képességeit a GroupDocs.Watermark segítségével a zökkenőmentes vízjelezés és mellékletkezelés érdekében.
 weight: 12
 url: /hu/net/pdf-watermarking-attachments/add-attachment-pdf/
+type: docs
 ---
-
 # Melléklet hozzáadása PDF-hez
 
 ## Bevezetés

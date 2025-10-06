@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Z tego przewodnika dowiesz się, jak dodawać znaki wodne do dokumentów przy użyciu programu GroupDocs.Watermark dla platformy .NET. Idealny dla programistów chcących zwiększyć bezpieczeństwo dokumentów.
 weight: 11
 url: /pl/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # Załaduj dokument ze strumienia
 
 ## Wstęp

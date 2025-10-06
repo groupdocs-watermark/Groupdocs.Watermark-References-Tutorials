@@ -8,10 +8,8 @@ keywords:
 - PDF text replacement
 - GroupDocs Watermark for .NET
 - text manipulation in PDFs
-
+type: docs
 ---
-
-
 # Efficient PDF Text Replacement with GroupDocs.Watermark .NET: A Step-by-Step Guide
 
 ## Introduction

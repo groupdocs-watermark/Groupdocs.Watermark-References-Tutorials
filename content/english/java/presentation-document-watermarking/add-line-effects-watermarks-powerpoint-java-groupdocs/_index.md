@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark
 - Java PowerPoint watermarking
 - line effects watermarks
-
+type: docs
 ---
-
-
 # How to Add Line Effects Watermarks to PowerPoint Presentations using GroupDocs.Watermark and Java
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Ganti gambar dalam PDF dengan mudah menggunakan GroupDocs.Watermark untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk mengelola konten PDF secara efisien.
 weight: 39
 url: /id/net/pdf-watermarking-attachments/replace-image-xobject-pdf/
+type: docs
 ---
-
 # Ganti Gambar untuk XObject Tertentu di PDF
 
 ## Perkenalan

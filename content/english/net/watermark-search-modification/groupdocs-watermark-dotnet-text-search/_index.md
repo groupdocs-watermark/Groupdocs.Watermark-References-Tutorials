@@ -8,10 +8,8 @@ keywords:
 - text search in watermarks
 - GroupDocs Watermark .NET
 - watermark management
-
+type: docs
 ---
-
-
 # Implement Text Search in Watermarks Using GroupDocs.Watermark for .NET: A Comprehensive Guide
 
 ## Introduction

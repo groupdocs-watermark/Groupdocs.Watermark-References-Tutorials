@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีลบลายน้ำออกจากส่วนเฉพาะภายในเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET มีบทช่วยสอนที่ครอบคลุมที่นี่
 weight: 32
 url: /th/net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # ลบลายน้ำออกจากส่วนในเอกสาร Word
 
 ## การแนะนำ

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用して、Word 文書内の特定の図形のテキストを置換する方法を学びます。ステップバイステップのチュートリアルに従ってください。
 weight: 35
 url: /ja/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
+type: docs
 ---
-
 # Word ドキュメントの特定の図形のテキストを置換する
 
 ## 導入

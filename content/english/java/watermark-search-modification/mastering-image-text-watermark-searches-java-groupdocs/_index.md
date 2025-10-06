@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - Java watermark search
 - image watermark detection
-
+type: docs
 ---
-
-
 # Mastering Image and Text Watermark Searches in Java with GroupDocs.Watermark
 
 Unlock the power of watermark detection and management using GroupDocs.Watermark for Java to streamline your document processing tasks.

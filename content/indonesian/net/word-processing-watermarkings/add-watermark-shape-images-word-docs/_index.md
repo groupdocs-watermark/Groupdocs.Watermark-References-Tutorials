@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menambahkan tanda air untuk membentuk gambar di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Tingkatkan keamanan dokumen dengan tutorial ini.
 weight: 17
 url: /id/net/word-processing-watermarkings/add-watermark-shape-images-word-docs/
+type: docs
 ---
-
 # Tambahkan Tanda Air ke Gambar Bentuk di Dokumen Word
 
 ## Perkenalan

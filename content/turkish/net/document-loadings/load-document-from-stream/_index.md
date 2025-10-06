@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Bu kılavuzla GroupDocs.Watermark for .NET'i kullanarak belgelere nasıl filigran ekleyeceğinizi öğrenin. Belge güvenliğini artırmak isteyen geliştiriciler için mükemmeldir.
 weight: 11
 url: /tr/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # Belgeyi Akıştan Yükle
 
 ## giriiş

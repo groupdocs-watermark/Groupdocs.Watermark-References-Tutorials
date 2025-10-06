@@ -8,10 +8,8 @@ keywords:
 - Excel shape manipulation
 - GroupDocs.Watermark Java
 - spreadsheet watermarking
-
+type: docs
 ---
-
-
 # Mastering Excel Shape Manipulation Using GroupDocs.Watermark in Java
 
 Excel is an indispensable tool for data analysis and reporting, but managing its content—particularly manipulating shapes with specific text formatting—can be challenging. The GroupDocs.Watermark library in Java simplifies these tasks by providing efficient methods to load, access, iterate through worksheets, and manipulate shapes within Excel documents. This guide explores how to harness GroupDocs.Watermark for these purposes, focusing on practical applications and performance considerations.

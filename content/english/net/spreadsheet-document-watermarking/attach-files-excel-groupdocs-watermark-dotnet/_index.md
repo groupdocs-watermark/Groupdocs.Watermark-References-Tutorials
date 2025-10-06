@@ -8,10 +8,8 @@ keywords:
 - attach files to Excel
 - GroupDocs.Watermark .NET API
 - add attachments to Excel worksheet
-
+type: docs
 ---
-
-
 # How to Add Attachments to an Excel Worksheet Using GroupDocs.Watermark .NET API
 
 ## Introduction

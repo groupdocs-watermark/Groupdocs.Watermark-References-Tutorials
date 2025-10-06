@@ -8,10 +8,8 @@ keywords:
 - remove headers from diagrams
 - GroupDocs.Watermark .NET setup
 - header removal in diagrams
-
+type: docs
 ---
-
-
 # Efficiently Remove Headers from Diagrams Using GroupDocs.Watermark .NET
 ## Introduction
 In the realm of document management, customizing visual components like headers is often necessary to meet professional standards. **GroupDocs.Watermark .NET** offers an efficient solution for removing unnecessary headers from diagram documents. This tutorial provides a comprehensive guide on using GroupDocs.Watermark to remove center headers seamlessly.

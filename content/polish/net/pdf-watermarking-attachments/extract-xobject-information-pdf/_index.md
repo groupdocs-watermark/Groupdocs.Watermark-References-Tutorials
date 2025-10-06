@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Odblokuj możliwości znakowania wodnego dokumentów dzięki GroupDocs.Watermark dla .NET. Bezproblemowo zarządzaj znakami wodnymi w plikach PDF, dokumentach programu Word i obrazach.
 weight: 25
 url: /pl/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
+type: docs
 ---
-
 # Wyodrębnij informacje XObject z pliku PDF
 
 ## Wstęp

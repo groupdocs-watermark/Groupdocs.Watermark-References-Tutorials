@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to add watermarks to images in Word documents using Groupdocs.Watermark for .NET. Follow our guide for secure and professional document protection.
 weight: 16
 url: /net/word-processing-watermarkings/add-watermark-section-images-word-docs/
+type: docs
 ---
-
 # Add Watermark to Section Images in Word Docs
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Learn how to replace shape text with formatted text in Word documents using GroupDocs.Watermark for .NET. Your document editing capabilities effortlessly.
 weight: 34
 url: /net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # Replace Shape Text with Formatted Text in Word Docs
 
 ## Introduction

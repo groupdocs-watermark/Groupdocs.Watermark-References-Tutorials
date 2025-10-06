@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 輕鬆地在 PDF 文件中新增註解浮水印。輕鬆增強文件品牌和安全性。
 weight: 10
 url: /zh-hant/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
+type: docs
 ---
-
 # 為 PDF 新增註釋浮水印
 
 ## 介紹

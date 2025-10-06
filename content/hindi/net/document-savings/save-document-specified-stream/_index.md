@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: इस चरण-दर-चरण मार्गदर्शिका से जानें कि .NET के लिए GroupDocs.Watermark का उपयोग करके किसी दस्तावेज़ को निर्दिष्ट स्ट्रीम में कैसे सहेजा जाए। सभी स्तरों के डेवलपर्स के लिए बिल्कुल सही।
 weight: 12
 url: /hi/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # दस्तावेज़ को निर्दिष्ट स्ट्रीम में सहेजें
 
 ## परिचय

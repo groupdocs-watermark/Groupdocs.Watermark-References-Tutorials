@@ -8,10 +8,8 @@ keywords:
 - image watermarks Java
 - GroupDocs Watermark library
 - Java digital content protection
-
+type: docs
 ---
-
-
 # Add Image Watermarks to Java Documents Using GroupDocs.Watermark Library
 
 ## Introduction

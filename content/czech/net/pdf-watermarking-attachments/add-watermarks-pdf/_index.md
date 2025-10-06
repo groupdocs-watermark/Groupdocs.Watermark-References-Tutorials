@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Naučte se přidávat textové a obrazové vodoznaky do souborů PDF pomocí GroupDocs.Watermark for .NET s naším komplexním průvodcem krok za krokem.
 weight: 14
 url: /cs/net/pdf-watermarking-attachments/add-watermarks-pdf/
+type: docs
 ---
-
 # Přidejte vodoznaky do PDF
 
 ## Úvod

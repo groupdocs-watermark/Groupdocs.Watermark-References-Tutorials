@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: استكشف GroupDocs.Watermark لبرامج .NET التعليمية حول العلامات المائية والمرفقات في ملفات PDF. تعرف على طرق خطوة بخطوة لتحسين أمان ملفات PDF وعلامتها التجارية.
 weight: 25
 url: /ar/net/pdf-watermarking-attachments/
+type: docs
 ---
-
 # العلامة المائية والمرفقات في ملف PDF
 
 ## مقدمة

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda como adicionar marcas d'água de imagem lado a lado aos seus documentos usando GroupDocs.Watermark for .NET. Fácil, eficiente e personalizável.
 weight: 10
 url: /pt/net/image-watermarkings/add-tiled-image-watermark/
+type: docs
 ---
-
 # Adicionar marca d'água de imagem lado a lado
 
 ## Introdução

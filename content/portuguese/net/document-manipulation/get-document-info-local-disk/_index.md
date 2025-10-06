@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda como adicionar, remover e extrair marcas d'água em documentos usando GroupDocs Watermark for .NET com este guia passo a passo abrangente.
 weight: 11
 url: /pt/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Obtenha informações do documento do disco local
 
 ## Introdução

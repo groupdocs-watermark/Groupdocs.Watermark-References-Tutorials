@@ -8,10 +8,8 @@ keywords:
 - automate watermarking PowerPoint
 - GroupDocs Watermark .NET
 - text watermark master slides
-
+type: docs
 ---
-
-
 # Automate Watermarking in PowerPoint Presentations Using GroupDocs.Watermark for .NET
 
 ## Introduction

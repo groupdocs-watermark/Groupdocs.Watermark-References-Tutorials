@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้การเพิ่มลายน้ำให้กับรูปภาพในเอกสาร PDF โดยใช้ GroupDocs.Watermark สำหรับ .NET พร้อมบทช่วยสอนแบบละเอียดทีละขั้นตอนของเรา รักษาความปลอดภัย PDF ของคุณได้อย่างง่ายดาย
 weight: 19
 url: /th/net/pdf-watermarking-attachments/add-watermark-images-pdf/
+type: docs
 ---
-
 # เพิ่มลายน้ำให้กับรูปภาพในรูปแบบ PDF
 
 ## การแนะนำ

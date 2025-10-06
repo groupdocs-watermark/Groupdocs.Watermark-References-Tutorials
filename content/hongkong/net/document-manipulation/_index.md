@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 探索產生文件預覽和管理浮水印的 GroupDocs.Watermark for .NET 教學。加強文件安全和管理。
 weight: 21
 url: /zh-hant/net/document-manipulation/
+type: docs
 ---
-
 # 文件處理
 
 ## 介紹

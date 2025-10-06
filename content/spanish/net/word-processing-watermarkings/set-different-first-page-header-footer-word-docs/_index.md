@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda a configurar diferentes encabezados y pies de página en la primera página de documentos de Word usando GroupDocs.Watermark para .NET.
 weight: 36
 url: /es/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Establecer encabezado/pie de página diferente en la primera página en documentos de Word
 
 ## Introducción

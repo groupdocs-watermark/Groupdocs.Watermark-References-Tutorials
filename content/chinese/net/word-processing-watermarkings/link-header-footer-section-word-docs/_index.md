@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 有效链接 Word 文档各部分中的页眉和页脚。文档管理和安全。
 weight: 26
 url: /zh/net/word-processing-watermarkings/link-header-footer-section-word-docs/
+type: docs
 ---
-
 # 在 Word 文档中的节中链接页眉/页脚
 
 ## 介绍

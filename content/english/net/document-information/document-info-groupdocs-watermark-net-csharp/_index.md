@@ -8,10 +8,8 @@ keywords:
 - retrieve document metadata
 - GroupDocs.Watermark .NET
 - document management C#
-
+type: docs
 ---
-
-
 # Retrieve Document Metadata Using GroupDocs.Watermark .NET for C# Developers
 
 In today's digital environment, effectively managing and processing documents is essential for businesses and individuals. Understanding document metadata like file type, page count, and size can significantly boost productivity. This tutorial demonstrates how to retrieve detailed information about local files using the powerful GroupDocs.Watermark .NET library.

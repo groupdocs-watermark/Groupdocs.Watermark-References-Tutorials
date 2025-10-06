@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes aux documents à l'aide de GroupDocs.Watermark pour .NET avec ce guide. Parfait pour les développeurs cherchant à améliorer la sécurité des documents.
 weight: 11
 url: /fr/net/document-loadings/load-document-from-stream/
+type: docs
 ---
-
 # Charger un document à partir d'un flux
 
 ## Introduction

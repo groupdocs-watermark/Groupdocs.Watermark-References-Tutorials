@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du laddar och vattenstämplar dokument med hjälp av Groupdocs Watermark for .NET med denna steg-för-steg-guide. Skydda och märk ditt innehåll utan ansträngning.
 weight: 12
 url: /sv/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # Ladda dokument med specifikt format
 
 ## Introduktion

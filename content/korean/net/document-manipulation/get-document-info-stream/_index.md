@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 이 단계별 가이드를 통해 .NET용 GroupDocs.Watermark를 사용하여 스트림에서 문서 정보를 얻는 방법을 알아보세요. 문서 관리 기능을 손쉽게 사용할 수 있습니다.
 weight: 12
 url: /ko/net/document-manipulation/get-document-info-stream/
+type: docs
 ---
-
 # Stream에서 문서 정보 가져오기
 
 ## 소개

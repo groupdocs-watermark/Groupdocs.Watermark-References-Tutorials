@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak PDF belgelerinden yapıları zahmetsizce nasıl kaldıracağınızı öğrenin. Kapsamlı eğitimimizle süreçte adım adım ustalaşın.
 weight: 31
 url: /tr/net/pdf-watermarking-attachments/remove-artifact-pdf/
+type: docs
 ---
-
 # Yapıyı PDF'den Kaldır
 
 ## giriiş

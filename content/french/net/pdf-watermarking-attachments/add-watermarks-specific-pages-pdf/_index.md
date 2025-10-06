@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Apprenez à ajouter des filigranes de texte et d'image à des pages spécifiques dans des PDF à l'aide de Groupdocs pour .NET. Suivez notre guide détaillé pour sécuriser vos documents.
 weight: 15
 url: /fr/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
+type: docs
 ---
-
 # Ajouter des filigranes à des pages spécifiques dans un PDF
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - add text watermark to TIFF images
 - GroupDocs.Watermark .NET library
 - customizing text watermarks in .NET
-
+type: docs
 ---
-
-
 # How to Add a Text Watermark to a TIFF Image Using GroupDocs.Watermark .NET
 
 ## Introduction

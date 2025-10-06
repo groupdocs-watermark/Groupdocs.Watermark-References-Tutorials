@@ -8,10 +8,8 @@ keywords:
 - image watermarking
 - text watermarking in .NET
 - GroupDocs.Watermark for .NET
-
+type: docs
 ---
-
-
 # Mastering Image & Text Watermarks in .NET with GroupDocs.Watermark
 ## Introduction
 In today's digital landscape, protecting visual content is crucial. Whether for branding or copyright protection, adding watermarks can significantly enhance security. This tutorial demonstrates how to effortlessly embed text and image watermarks into images within documents using GroupDocs.Watermark for .NET.

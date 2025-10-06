@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Esplora i tutorial di GroupDocs.Watermark per .NET sulla filigrana e sugli allegati dei PDF. Scopri metodi passo passo per migliorare la sicurezza e il branding dei tuoi PDF.
 weight: 25
 url: /it/net/pdf-watermarking-attachments/
+type: docs
 ---
-
 # Filigrana e allegato PDF
 
 ## introduzione

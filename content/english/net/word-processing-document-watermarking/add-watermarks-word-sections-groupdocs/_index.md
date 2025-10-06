@@ -8,10 +8,8 @@ keywords:
 - add watermarks Word sections
 - GroupDocs Watermark .NET library
 - Word document watermarking
-
+type: docs
 ---
-
-
 # How to Add Watermarks to Specific Sections of Word Documents Using GroupDocs.Watermark for .NET
 
 ## Introduction

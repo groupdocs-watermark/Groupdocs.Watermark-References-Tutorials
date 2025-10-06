@@ -5,8 +5,8 @@ weight: 10
 url: /ko/net/
 description: .NET용 포괄적인 GroupDocs.Watermark 튜토리얼을 살펴보세요. 단계별 가이드를 통해 다양한 문서 형식의 워터마크를 추가, 관리 및 보호하는 방법을 알아보세요.
 is_root: true
+type: docs
 ---
-
 # .NET용 GroupDocs.Watermark의 튜토리얼 및 예
 
 ## 소개

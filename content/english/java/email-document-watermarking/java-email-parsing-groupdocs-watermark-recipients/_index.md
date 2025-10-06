@@ -8,10 +8,8 @@ keywords:
 - Java email parsing
 - GroupDocs.Watermark Java
 - listing email recipients
-
+type: docs
 ---
-
-
 # How to Implement Java Email Parsing with GroupDocs.Watermark: Listing Recipients Efficiently
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - extract Excel background information
 - Java GroupDocs.Watermark library
 - Excel worksheet background extraction
-
+type: docs
 ---
-
-
 # How to Extract Excel Worksheet Background Information Using GroupDocs.Watermark in Java
 
 ## Introduction

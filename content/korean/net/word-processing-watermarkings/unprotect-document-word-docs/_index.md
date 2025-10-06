@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서의 보호를 쉽게 해제하는 방법을 알아보세요. 단계별 가이드를 따르세요.
 weight: 38
 url: /ko/net/word-processing-watermarkings/unprotect-document-word-docs/
+type: docs
 ---
-
 # Word Docs에서 문서 보호 해제
 
 ## 소개

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 通过此分步指南，了解如何使用 GroupDocs.Watermark for .NET 从流中获取文档信息。您的文档管理功能毫不费力。
 weight: 12
 url: /zh/net/document-manipulation/get-document-info-stream/
+type: docs
 ---
-
 # 从流中获取文档信息
 
 ## 介绍

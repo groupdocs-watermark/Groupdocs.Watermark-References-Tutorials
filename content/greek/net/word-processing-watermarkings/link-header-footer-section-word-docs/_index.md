@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να συνδέετε αποτελεσματικά κεφαλίδες και υποσέλιδα σε ενότητες εγγράφων του Word χρησιμοποιώντας το GroupDocs.Watermark για .NET. Διαχείριση και ασφάλεια εγγράφων.
 weight: 26
 url: /el/net/word-processing-watermarkings/link-header-footer-section-word-docs/
+type: docs
 ---
-
 # Σύνδεση Κεφαλίδα/Υποσέλιδο στην Ενότητα στα Έγγραφα του Word
 
 ## Εισαγωγή

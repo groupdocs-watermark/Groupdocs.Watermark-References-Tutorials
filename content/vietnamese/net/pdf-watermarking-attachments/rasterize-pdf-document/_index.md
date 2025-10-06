@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách phân loại tài liệu PDF bằng GroupDocs.Watermark cho .NET. Tăng cường bảo mật tài liệu và thu hút trực quan một cách dễ dàng.
 weight: 27
 url: /vi/net/pdf-watermarking-attachments/rasterize-pdf-document/
+type: docs
 ---
-
 # Rasterize tài liệu PDF
 
 ## Giới thiệu

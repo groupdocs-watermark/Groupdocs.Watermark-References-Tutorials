@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Groupdocs for .NET を使用してドキュメントを保護および管理します。ウォーターマークをシームレスに追加するには、詳細なガイドに従ってください。
 weight: 10
 url: /ja/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # ローカルディスクからドキュメントをロード
 
 ## 導入

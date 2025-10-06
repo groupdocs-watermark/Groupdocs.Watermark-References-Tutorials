@@ -8,10 +8,8 @@ keywords:
 - search hyperlinks in PDFs
 - GroupDocs.Watermark .NET
 - PDF document hyperlink management
-
+type: docs
 ---
-
-
 # How to Search and Manage Hyperlinks in PDFs Using GroupDocs.Watermark for .NET
 ## Introduction
 Are you looking to identify or manage hyperlinks within a batch of PDF documents efficiently? Whether it's updating links, verifying their integrity, or simply auditing your content, extracting hyperlink information can be challenging. This tutorial introduces the powerful capabilities of **GroupDocs.Watermark for .NET**, focusing on how to search and handle hyperlinks in PDFs.

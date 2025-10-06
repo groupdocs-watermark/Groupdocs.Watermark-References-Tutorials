@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Ajoutez sans effort des filigranes à vos documents à l'aide de GroupDocs.Watermark pour .NET. Suivez notre guide complet étape par étape pour protéger vos actifs numériques.
 weight: 13
 url: /fr/net/document-manipulation/get-supported-file-formats/
+type: docs
 ---
-
 # Obtenez les formats de fichiers pris en charge
 
 ## Introduction

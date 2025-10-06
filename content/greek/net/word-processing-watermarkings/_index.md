@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ανακαλύψτε βασικά μαθήματα GroupDocs.Watermark για .NET για προσθήκη και διαχείριση υδατογραφημάτων σε έγγραφα του Word. Βελτιώστε την ασφάλεια των εγγράφων σας και την επωνυμία σας χωρίς κόπο.
 weight: 26
 url: /el/net/word-processing-watermarkings/
+type: docs
 ---
-
 # Υδατοσήμανση επεξεργασίας κειμένου
 
 ## Εισαγωγή

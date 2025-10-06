@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: जानें कि .NET के लिए Groupdocs.Watermark का उपयोग करके एनोटेशन छवियों में वॉटरमार्क जोड़कर अपने PDF दस्तावेज़ों को कैसे सुरक्षित रखें।
 weight: 17
 url: /hi/net/pdf-watermarking-attachments/add-watermark-annotation-images-pdf/
+type: docs
 ---
-
 # पीडीएफ में एनोटेशन छवियों में वॉटरमार्क जोड़ें
 
 ## परिचय

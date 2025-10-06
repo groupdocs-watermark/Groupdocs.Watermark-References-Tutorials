@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: V tomto podrobném průvodci se dozvíte, jak uložit dokument do určeného streamu pomocí GroupDocs.Watermark for .NET. Ideální pro vývojáře všech úrovní.
 weight: 12
 url: /cs/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Uložit dokument do zadaného streamu
 
 ## Úvod

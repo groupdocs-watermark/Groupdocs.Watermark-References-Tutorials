@@ -8,10 +8,8 @@ keywords:
 - replace text in shapes .NET
 - update Excel shapes formatting
 - GroupDocs Watermark .NET guide
-
+type: docs
 ---
-
-
 # How to Replace Text in Shapes Using GroupDocs.Watermark for .NET
 ## Introduction
 When working with spreadsheets, updating specific text within shapes while maintaining their formatting can be challenging. This tutorial addresses this issue by demonstrating how to replace text in spreadsheet shapes using GroupDocs.Watermark for .NET. If you're looking to preserve text formatting during updates, this guide will help.

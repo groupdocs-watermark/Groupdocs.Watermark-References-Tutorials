@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ismerje meg, hogyan manipulálhat alakzatokat Word dokumentumokban a GroupDocs.Watermark for .NET segítségével. Ez az oktatóanyag útmutatást ad a hatékony dokumentumfeldolgozáshoz.
 weight: 37
 url: /hu/net/word-processing-watermarkings/shape-type-usage-word-docs/
+type: docs
 ---
-
 # Alakzattípus-használat a Word-dokumentumokban
 
 ## Bevezetés

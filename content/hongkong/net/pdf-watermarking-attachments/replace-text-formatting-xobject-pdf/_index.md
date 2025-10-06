@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs for .NET 增強您的 .NET 文件操作能力。了解如何輕鬆地以 PDF 中的格式取代文字。
 weight: 45
 url: /zh-hant/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
+type: docs
 ---
-
 # 將文字替換為 PDF 中 XObject 的格式
 
 ## 介紹

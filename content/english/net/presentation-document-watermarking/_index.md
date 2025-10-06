@@ -3,8 +3,8 @@ title: "PowerPoint Presentation Watermarking Tutorials for GroupDocs.Watermark .
 description: "Step-by-step tutorials for adding and managing watermarks in PowerPoint presentations using GroupDocs.Watermark for .NET."
 weight: 7
 url: "/net/presentation-document-watermarking/"
+type: docs
 ---
-
 # PowerPoint Presentation Watermarking Tutorials for GroupDocs.Watermark .NET
 
 Our presentation watermarking tutorials show you how to enhance PowerPoint files with professional watermarks using GroupDocs.Watermark for .NET. These practical guides walk through adding watermarks to specific slides or slide types, implementing background image watermarks, applying text effects and shape settings, and creating tamper-resistant watermarks. Each tutorial includes detailed C# code examples for presentation watermarking scenarios, helping you build applications that maintain visual quality while adding effective branding and security to presentation content.

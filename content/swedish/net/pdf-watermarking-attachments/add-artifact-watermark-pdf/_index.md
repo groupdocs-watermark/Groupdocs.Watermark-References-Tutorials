@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till artefaktvattenstämplar till PDF-filer utan ansträngning med Groupdocs.Watermark for .NET. Skydda dina dokument med lätthet.
 weight: 11
 url: /sv/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
+type: docs
 ---
-
 # Lägg till Artifact Watermark till PDF
 
 ## Introduktion

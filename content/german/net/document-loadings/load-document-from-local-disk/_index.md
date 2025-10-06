@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Schützen und verwalten Sie Ihre Dokumente mit Groupdocs für .NET. Befolgen Sie unsere detaillierte Anleitung, um Wasserzeichen nahtlos hinzuzufügen.
 weight: 10
 url: /de/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # Dokument von der lokalen Festplatte laden
 
 ## Einführung

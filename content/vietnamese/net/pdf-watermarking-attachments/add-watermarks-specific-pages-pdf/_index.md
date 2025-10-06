@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ văn bản và hình ảnh vào các trang cụ thể trong tệp PDF bằng Hình mờ cho .NET. Hãy làm theo hướng dẫn chi tiết của chúng tôi để bảo mật tài liệu của bạn.
 weight: 15
 url: /vi/net/pdf-watermarking-attachments/add-watermarks-specific-pages-pdf/
+type: docs
 ---
-
 # Thêm hình mờ vào các trang cụ thể trong PDF
 
 ## Giới thiệu

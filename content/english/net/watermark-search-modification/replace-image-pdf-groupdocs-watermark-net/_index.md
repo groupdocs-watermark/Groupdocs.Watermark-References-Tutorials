@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark
 - Net
 - Document Processing
-
+type: docs
 ---
-
-
 # How to Replace an Image in a PDF XObject Using GroupDocs.Watermark for .NET
 
 ## Introduction

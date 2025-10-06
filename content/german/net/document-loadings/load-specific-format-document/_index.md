@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie Dokumente mit Groupdocs für .NET laden und mit Wasserzeichen versehen. Schützen und branden Sie Ihre Inhalte mühelos.
 weight: 12
 url: /de/net/document-loadings/load-specific-format-document/
+type: docs
 ---
-
 # Laden Sie ein Dokument mit einem bestimmten Format
 
 ## Einführung

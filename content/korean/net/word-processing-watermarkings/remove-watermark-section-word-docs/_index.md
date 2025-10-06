@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 Word 문서 내의 특정 섹션에서 워터마크를 제거하는 방법을 알아보세요. 여기에서 포괄적인 튜토리얼을 볼 수 있습니다.
 weight: 32
 url: /ko/net/word-processing-watermarkings/remove-watermark-section-word-docs/
+type: docs
 ---
-
 # Word Docs의 섹션에서 워터마크 제거
 
 ## 소개

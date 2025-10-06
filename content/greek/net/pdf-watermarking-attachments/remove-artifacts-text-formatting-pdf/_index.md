@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να αφαιρείτε τεχνουργήματα με συγκεκριμένη μορφοποίηση κειμένου σε PDF χρησιμοποιώντας το υδατογράφημα GroupDocs για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας.
 weight: 32
 url: /el/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
+type: docs
 ---
-
 # Αφαιρέστε τεχνουργήματα με συγκεκριμένη μορφοποίηση κειμένου σε PDF
 
 ## Εισαγωγή

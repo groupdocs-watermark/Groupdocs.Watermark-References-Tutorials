@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ανακαλύψτε μαθήματα GroupDocs.Watermark για .NET για φόρτωση και υδατογράφημα εγγράφων, διασφαλίζοντας την ασφάλεια των εγγράφων και την επωνυμία με οδηγούς βήμα προς βήμα.
 weight: 22
 url: /el/net/document-loadings/
+type: docs
 ---
-
 # Φόρτωση εγγράφου
 
 ## Εισαγωγή

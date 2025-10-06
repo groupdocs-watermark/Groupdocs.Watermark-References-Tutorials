@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lägg enkelt till bildvattenstämplar i alla rubriker i Word-dokument med GroupDocs.Watermark för .NET. Följ vår steg-för-steg-guide med detaljerade kodexempel.
 weight: 10
 url: /sv/net/word-processing-watermarkings/add-image-watermark-all-headers-word-docs/
+type: docs
 ---
-
 # Lägg till bildvattenstämpel i alla rubriker i Word Docs
 
 ## Introduktion

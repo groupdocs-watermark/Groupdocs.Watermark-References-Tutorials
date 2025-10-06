@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إنشاء معاينات للمستندات باستخدام GroupDocs.Watermark لـ .NET باستخدام هذا الدليل. قم بتعزيز أمان المستندات وإدارتها دون عناء.
 weight: 10
 url: /ar/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # إنشاء معاينة المستند
 
 ## مقدمة

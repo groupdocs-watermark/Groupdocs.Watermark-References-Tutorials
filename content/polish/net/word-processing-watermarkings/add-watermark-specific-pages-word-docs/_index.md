@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Dowiedz się, jak bez wysiłku dodawać znaki wodne do określonych stron w dokumentach programu Word przy użyciu narzędzia Groupdocs dla platformy .NET. Zwiększ bezpieczeństwo dokumentów i branding.
 weight: 18
 url: /pl/net/word-processing-watermarkings/add-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Dodaj znak wodny do określonych stron w dokumentach programu Word
 
 ## Wstęp

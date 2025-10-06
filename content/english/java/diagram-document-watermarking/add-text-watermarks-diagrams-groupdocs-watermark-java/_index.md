@@ -8,10 +8,8 @@ keywords:
 - text watermarks in Java
 - add text watermark to diagram
 - GroupDocs Watermark for Java setup
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks to Diagrams Using GroupDocs.Watermark in Java
 ## Introduction
 In the digital age, protecting your intellectual property is crucial. Whether you're sharing diagrams across platforms or collaborating on sensitive projects, ensuring that your work remains identifiable and secure can be challenging. This tutorial guides you through adding text watermarks to diagram pages using **GroupDocs.Watermark for Java**. By following these steps, you'll safeguard your content while maintaining professionalism.

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Explorez les didacticiels GroupDocs.Watermark pour .NET sur l'enregistrement de documents avec des filigranes. Découvrez des méthodes étape par étape pour améliorer la sécurité et la gestion des documents.
 weight: 23
 url: /fr/net/document-savings/
+type: docs
 ---
-
 # Sauvegarde de documents
 
 ## Introduction

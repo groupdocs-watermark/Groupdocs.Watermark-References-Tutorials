@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: इस चरण-दर-चरण मार्गदर्शिका से जानें कि .NET के लिए GroupDocs.Watermark का उपयोग करके आसानी से अपने दस्तावेज़ों में वॉटरमार्क कैसे जोड़ें। दस्तावेज़ सुरक्षा बढ़ाएँ.
 weight: 11
 url: /hi/net/document-savings/save-document-specified-location/
+type: docs
 ---
-
 # दस्तावेज़ को निर्दिष्ट स्थान पर सहेजें
 
 ## परिचय

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thêm hình mờ vào tài liệu được bảo vệ bằng mật khẩu bằng Groupdocs cho .NET với hướng dẫn từng bước của chúng tôi. Bảo mật và gắn nhãn hiệu cho các tập tin của bạn một cách dễ dàng.
 weight: 13
 url: /vi/net/document-loadings/load-password-protected-document/
+type: docs
 ---
-
 # Tải tài liệu được bảo vệ bằng mật khẩu
 
 ## Giới thiệu

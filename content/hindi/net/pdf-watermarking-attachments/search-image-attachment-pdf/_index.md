@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके PDF अनुलग्नकों के भीतर छवियों को कुशलतापूर्वक खोजें। अपनी वॉटरमार्क प्रबंधन प्रक्रिया को सहजता से सरल बनाएं।
 weight: 46
 url: /hi/net/pdf-watermarking-attachments/search-image-attachment-pdf/
+type: docs
 ---
-
 # पीडीएफ के अनुलग्नक में छवि खोजें
 
 ## परिचय

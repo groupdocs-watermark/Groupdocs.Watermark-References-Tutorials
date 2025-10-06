@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET-API
 description: Erfahren Sie in diesem Handbuch, wie Sie mit GroupDocs.Watermark für .NET Dokumentvorschauen erstellen. Verbessern Sie mühelos die Sicherheit und Verwaltung Ihrer Dokumente.
 weight: 10
 url: /de/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # Dokumentvorschau generieren
 
 ## Einführung

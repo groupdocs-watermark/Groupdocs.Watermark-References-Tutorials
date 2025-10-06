@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: ค้นพบบทช่วยสอน GroupDocs.Watermark สำหรับ .NET ที่สำคัญเพื่อเพิ่มและจัดการลายน้ำในเอกสาร Word เพิ่มความปลอดภัยให้กับเอกสารและการสร้างแบรนด์ของคุณได้อย่างง่ายดาย
 weight: 26
 url: /th/net/word-processing-watermarkings/
+type: docs
 ---
-
 # ลายน้ำการประมวลผลคำ
 
 ## การแนะนำ

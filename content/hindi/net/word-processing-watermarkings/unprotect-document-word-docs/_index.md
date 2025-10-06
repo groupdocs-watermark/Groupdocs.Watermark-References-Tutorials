@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों को आसानी से असुरक्षित करना सीखें। हमारे चरण-दर-चरण मार्गदर्शिका का पालन करें.
 weight: 38
 url: /hi/net/word-processing-watermarkings/unprotect-document-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में असुरक्षित दस्तावेज़
 
 ## परिचय

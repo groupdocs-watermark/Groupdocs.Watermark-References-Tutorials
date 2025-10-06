@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए Groupdocs.Watermark का उपयोग करके लॉक किए गए वॉटरमार्क जोड़कर अपने दस्तावेज़ सुरक्षित करें। आसान कार्यान्वयन के लिए हमारी चरण-दर-चरण मार्गदर्शिका का पालन करें।
 weight: 11
 url: /hi/net/word-processing-watermarkings/add-locked-watermark-all-pages-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में सभी पेजों पर लॉक्ड वॉटरमार्क जोड़ें
 
 ## परिचय

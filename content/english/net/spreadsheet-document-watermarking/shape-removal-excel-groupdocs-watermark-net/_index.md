@@ -8,10 +8,8 @@ keywords:
 - automate shape removal in excel
 - groupdocs watermark net tutorial
 - remove shapes from excel using groupdocs
-
+type: docs
 ---
-
-
 # Automate Shape Removal in Excel with GroupDocs.Watermark for .NET: Your Ultimate Guide
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark .NET
 - text watermarks PowerPoint
 - even-numbered slides watermark
-
+type: docs
 ---
-
-
 # How to Add Text Watermarks to Even Slides in PowerPoint Using GroupDocs.Watermark for .NET
 
 ## Introduction

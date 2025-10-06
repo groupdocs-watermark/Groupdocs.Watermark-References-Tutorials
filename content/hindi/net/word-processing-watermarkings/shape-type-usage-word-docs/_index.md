@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों में आकृतियों में हेरफेर करना सीखें। यह ट्यूटोरियल कुशल दस्तावेज़ प्रसंस्करण के लिए मार्गदर्शन प्रदान करता है।
 weight: 37
 url: /hi/net/word-processing-watermarkings/shape-type-usage-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में आकार प्रकार का उपयोग
 
 ## परिचय

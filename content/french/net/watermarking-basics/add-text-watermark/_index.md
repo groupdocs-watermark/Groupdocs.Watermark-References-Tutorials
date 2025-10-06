@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment ajouter des filigranes de texte à vos documents à l'aide de Groupdocs Watermark for .NET avec ce guide étape par étape.
 weight: 11
 url: /fr/net/watermarking-basics/add-text-watermark/
+type: docs
 ---
-
 # Ajouter un filigrane de texte
 
 ## Introduction

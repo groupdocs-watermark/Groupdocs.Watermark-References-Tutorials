@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำสิ่งประดิษฐ์ให้กับไฟล์ PDF ได้อย่างง่ายดายโดยใช้ Groupdocs.Watermark สำหรับ .NET ปกป้องเอกสารของคุณได้อย่างง่ายดาย
 weight: 11
 url: /th/net/pdf-watermarking-attachments/add-artifact-watermark-pdf/
+type: docs
 ---
-
 # เพิ่มลายน้ำสิ่งประดิษฐ์ลงใน PDF
 
 ## การแนะนำ

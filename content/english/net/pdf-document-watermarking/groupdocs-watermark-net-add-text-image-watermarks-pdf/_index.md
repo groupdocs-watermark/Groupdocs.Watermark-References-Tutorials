@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark .NET
 - PDF watermarking
 - text watermark PDF
-
+type: docs
 ---
-
-
 # How to Add Text & Image Watermarks to PDFs Using GroupDocs.Watermark .NET: A Comprehensive Guide
 
 In the digital age, protecting your documents is paramount, whether you're a business safeguarding sensitive data or an individual asserting copyright over personal creations. This tutorial provides a step-by-step guide on adding text and image watermarks to PDFs using GroupDocs.Watermark .NET, ensuring enhanced document security.

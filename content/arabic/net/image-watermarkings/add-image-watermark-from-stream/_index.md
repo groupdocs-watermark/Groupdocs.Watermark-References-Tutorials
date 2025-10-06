@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: تعرف على كيفية إضافة علامات مائية للصور إلى المستندات باستخدام GroupDocs.Watermark لـ .NET. اتبع دليلنا خطوة بخطوة لتكامل العلامة المائية بسلاسة.
 weight: 12
 url: /ar/net/image-watermarkings/add-image-watermark-from-stream/
+type: docs
 ---
-
 # إضافة علامة مائية للصورة من الدفق
 
 ## مقدمة

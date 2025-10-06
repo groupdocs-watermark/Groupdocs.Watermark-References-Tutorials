@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Découvrez comment enregistrer un document dans un flux spécifié à l'aide de GroupDocs.Watermark pour .NET avec ce guide étape par étape. Parfait pour les développeurs de tous niveaux.
 weight: 12
 url: /fr/net/document-savings/save-document-specified-stream/
+type: docs
 ---
-
 # Enregistrer le document dans le flux spécifié
 
 ## Introduction

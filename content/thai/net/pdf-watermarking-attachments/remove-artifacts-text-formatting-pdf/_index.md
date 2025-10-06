@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีลบสิ่งแปลกปลอมด้วยการจัดรูปแบบข้อความเฉพาะในรูปแบบ PDF โดยใช้ GroupDocs สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเรา
 weight: 32
 url: /th/net/pdf-watermarking-attachments/remove-artifacts-text-formatting-pdf/
+type: docs
 ---
-
 # ลบสิ่งประดิษฐ์ที่มีการจัดรูปแบบข้อความเฉพาะในรูปแบบ PDF
 
 ## การแนะนำ

@@ -8,10 +8,8 @@ keywords:
 - clear headers footers spreadsheets
 - remove spreadsheet headers footers
 - GroupDocs Watermark .NET
-
+type: docs
 ---
-
-
 # Remove Specific Sections of Headers/Footers in Spreadsheets with GroupDocs.Watermark .NET
 
 ## Introduction

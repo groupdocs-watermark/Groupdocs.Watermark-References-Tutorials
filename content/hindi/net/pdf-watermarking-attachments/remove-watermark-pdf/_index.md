@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके PDF फ़ाइलों से वॉटरमार्क हटाने का तरीका जानें। पेशेवर दस्तावेज़ संपादन के लिए आसान चरण।
 weight: 34
 url: /hi/net/pdf-watermarking-attachments/remove-watermark-pdf/
+type: docs
 ---
-
 # पीडीएफ से वॉटरमार्क हटाएं
 
 ## परिचय

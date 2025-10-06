@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Verbeter de documentbeveiliging met GroupDocs voor .NET. Voeg naadloos watermerken toe aan PDF en andere formaten.
 weight: 28
 url: /nl/net/pdf-watermarking-attachments/rasterize-pdf-page/
+type: docs
 ---
-
 # PDF-pagina rasteren
 
 ## Invoering

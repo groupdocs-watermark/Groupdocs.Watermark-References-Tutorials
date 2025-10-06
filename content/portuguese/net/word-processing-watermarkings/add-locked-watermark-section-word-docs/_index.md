@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Aprenda como adicionar uma marca d'água bloqueada a uma seção específica em documentos do Word usando Groupdocs para .NET com este guia passo a passo abrangente.
 weight: 13
 url: /pt/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # Adicionar marca d'água bloqueada à seção em documentos do Word
 
 ## Introdução

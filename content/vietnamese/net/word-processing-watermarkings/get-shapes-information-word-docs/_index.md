@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Dễ dàng khám phá những thông tin chi tiết có giá trị từ tài liệu Word với GroupDocs cho .NET. Trích xuất thông tin hình dạng một cách liền mạch để tăng cường phân tích dữ liệu.
 weight: 24
 url: /vi/net/word-processing-watermarkings/get-shapes-information-word-docs/
+type: docs
 ---
-
 # Nhận thông tin về hình dạng trong tài liệu Word
 
 ## Giới thiệu

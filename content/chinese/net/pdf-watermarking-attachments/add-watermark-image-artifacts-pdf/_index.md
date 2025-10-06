@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs.Watermark for .NET 使用个性化水印保护您的 PDF 文件。轻松将文本或图像水印添加到 PDF 文档中的图像工件。
 weight: 18
 url: /zh/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
+type: docs
 ---
-
 # 向 PDF 中的图像工件添加水印
 
 ## 介绍

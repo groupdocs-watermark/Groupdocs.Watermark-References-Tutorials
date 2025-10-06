@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: जानें कि .NET के लिए वॉटरमार्क का उपयोग करके पीडीएफ में पेज मार्जिन प्रकार के साथ वॉटरमार्क कैसे जोड़ें। अपने दस्तावेज़ों को सहजता से सुरक्षित करें।
 weight: 21
 url: /hi/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # पीडीएफ में पेज मार्जिन प्रकार के साथ वॉटरमार्क जोड़ें
 
 ## परिचय

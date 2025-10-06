@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 PDF의 텍스트를 효율적으로 바꿉니다. 워터마킹을 .NET 애플리케이션에 원활하게 통합하세요.
 weight: 44
 url: /ko/net/pdf-watermarking-attachments/replace-text-xobject-pdf/
+type: docs
 ---
-
 # PDF의 특정 XObject에 대한 텍스트 바꾸기
 
 ## 소개

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri i tutorial di GroupDocs.Watermark per .NET per caricare e filigranare i documenti, garantendo la sicurezza e il branding dei documenti con guide dettagliate.
 weight: 22
 url: /it/net/document-loadings/
+type: docs
 ---
-
 # Caricamento documenti
 
 ## introduzione

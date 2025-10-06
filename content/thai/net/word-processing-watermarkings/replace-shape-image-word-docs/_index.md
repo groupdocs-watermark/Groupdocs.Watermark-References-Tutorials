@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีแทนที่รูปภาพรูปร่างในเอกสาร Word โดยทางโปรแกรมโดยใช้ GroupDocs.Watermark สำหรับ .NET ลดความซับซ้อนของงานจัดการเอกสารได้อย่างง่ายดาย
 weight: 33
 url: /th/net/word-processing-watermarkings/replace-shape-image-word-docs/
+type: docs
 ---
-
 # แทนที่รูปภาพรูปร่างในเอกสาร Word
 
 ## การแนะนำ

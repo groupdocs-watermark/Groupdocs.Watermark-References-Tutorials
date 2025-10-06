@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Effortlessly add watermarks to password-protected Word documents using GroupDocs.Watermark for .NET with our comprehensive step-by-step guide.
 weight: 14
 url: /net/document-loadings/load-password-protected-word-document/
+type: docs
 ---
-
 # Load Password Protected Word Document
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 替换 PDF 文档中特定工件的文本。轻松增强文档的安全性和完整性。
 weight: 42
 url: /zh/net/pdf-watermarking-attachments/replace-text-artifact-pdf/
+type: docs
 ---
-
 # 替换 PDF 中特定工件的文本
 
 ## 介绍

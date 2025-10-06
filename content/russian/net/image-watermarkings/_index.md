@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Изучите руководства GroupDocs.Watermark для .NET по добавлению водяных знаков к изображениям. Изучите пошаговые методы повышения безопасности и брендинга вашего документа.
 weight: 24
 url: /ru/net/image-watermarkings/
+type: docs
 ---
-
 # Водяные знаки изображения
 
 ## Введение

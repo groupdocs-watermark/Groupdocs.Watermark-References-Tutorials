@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come generare anteprime di documenti utilizzando GroupDocs.Watermark per .NET con questa guida. Migliora la sicurezza e la gestione dei tuoi documenti senza sforzo.
 weight: 10
 url: /it/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # Genera anteprima del documento
 
 ## introduzione

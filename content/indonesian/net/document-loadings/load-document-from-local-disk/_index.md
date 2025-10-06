@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Lindungi dan kelola dokumen Anda dengan Groupdocs untuk .NET. Ikuti panduan terperinci kami untuk menambahkan tanda air dengan lancar.
 weight: 10
 url: /id/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # Muat Dokumen dari Disk Lokal
 
 ## Perkenalan

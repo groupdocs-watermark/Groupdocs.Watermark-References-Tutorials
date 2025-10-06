@@ -8,10 +8,8 @@ keywords:
 - spreadsheet dimension management .NET
 - GroupDocs Watermark cell dimensions .NET
 - retrieve spreadsheet content area
-
+type: docs
 ---
-
-
 # Efficient Spreadsheet Dimension Management in .NET using GroupDocs.Watermark
 
 ## Introduction

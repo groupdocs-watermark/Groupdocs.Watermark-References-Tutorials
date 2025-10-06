@@ -8,10 +8,8 @@ keywords:
 - spreadsheet management in Java
 - GroupDocs.Watermark for Java
 - Java spreadsheet manipulation
-
+type: docs
 ---
-
-
 # Mastering Spreadsheet Document Management in Java Using GroupDocs.Watermark
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำที่ล็อคไว้บนหน้าเฉพาะในเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนง่ายๆ ของเรา
 weight: 12
 url: /th/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # เพิ่มลายน้ำที่ถูกล็อคลงในหน้าเฉพาะในเอกสาร Word
 
 ## การแนะนำ

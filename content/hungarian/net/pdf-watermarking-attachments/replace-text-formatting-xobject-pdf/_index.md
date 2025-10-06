@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Bővítse .NET-dokumentumkezelési képességeit a GroupDocs Watermark for .NET segítségével. Tanulja meg, hogyan lehet könnyedén szöveget formázással helyettesíteni a PDF-fájlokban.
 weight: 45
 url: /hu/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
+type: docs
 ---
-
 # Cserélje le a szöveget az XObject formázásával a PDF-ben
 
 ## Bevezetés

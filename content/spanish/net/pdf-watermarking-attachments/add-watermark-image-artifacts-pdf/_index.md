@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Proteja sus archivos PDF con marcas de agua personalizadas usando GroupDocs.Watermark para .NET. Agregue fácilmente marcas de agua de texto o imágenes a artefactos de imagen en documentos PDF.
 weight: 18
 url: /es/net/pdf-watermarking-attachments/add-watermark-image-artifacts-pdf/
+type: docs
 ---
-
 # Agregar marca de agua a artefactos de imagen en PDF
 
 ## Introducción

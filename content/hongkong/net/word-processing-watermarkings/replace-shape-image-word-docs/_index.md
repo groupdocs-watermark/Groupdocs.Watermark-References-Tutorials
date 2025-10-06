@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 以程式設計方式取代 Word 文件中的形狀影像。輕鬆簡化文件操作任務。
 weight: 33
 url: /zh-hant/net/word-processing-watermarkings/replace-shape-image-word-docs/
+type: docs
 ---
-
 # 取代 Word 文件中的形狀圖像
 
 ## 介紹

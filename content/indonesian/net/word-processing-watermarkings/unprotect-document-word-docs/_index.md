@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara membuka proteksi dokumen Word dengan mudah menggunakan GroupDocs.Watermark untuk .NET. Ikuti panduan langkah demi langkah kami.
 weight: 38
 url: /id/net/word-processing-watermarkings/unprotect-document-word-docs/
+type: docs
 ---
-
 # Buka proteksi Dokumen di Word Docs
 
 ## Perkenalan

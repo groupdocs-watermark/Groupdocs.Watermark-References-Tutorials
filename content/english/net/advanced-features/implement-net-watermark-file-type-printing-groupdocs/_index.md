@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark for .NET
 - .NET Watermark File Types
 - Print Supported Formats with GroupDocs
-
+type: docs
 ---
-
-
 # Comprehensive Tutorial: Implementing .NET Watermark File Type Printing with GroupDocs.Watermark
 
 ## Introduction

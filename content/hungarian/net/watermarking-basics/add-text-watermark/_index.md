@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ebből a lépésenkénti útmutatóból megtudhatja, hogyan adhat szöveges vízjeleket a dokumentumokhoz a Groupdocs Watermark for .NET segítségével.
 weight: 11
 url: /hu/net/watermarking-basics/add-text-watermark/
+type: docs
 ---
-
 # Szöveg vízjel hozzáadása
 
 ## Bevezetés

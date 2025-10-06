@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε υδατογραφήματα σε εικόνες σε έγγραφα του Word χρησιμοποιώντας το υδατογράφημα Groupdocs για .NET. Ακολουθήστε τον οδηγό μας για ασφαλή και επαγγελματική προστασία εγγράφων.
 weight: 16
 url: /el/net/word-processing-watermarkings/add-watermark-section-images-word-docs/
+type: docs
 ---
-
 # Προσθήκη υδατογραφήματος στις Εικόνες ενότητας στα Έγγραφα του Word
 
 ## Εισαγωγή

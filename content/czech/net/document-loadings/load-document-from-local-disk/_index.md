@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Chraňte a spravujte své dokumenty pomocí Groupdocs pro .NET. Postupujte podle našeho podrobného průvodce a přidejte vodoznaky hladce.
 weight: 10
 url: /cs/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # Načíst dokument z místního disku
 
 ## Úvod

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs for .NET を使用して .NET ドキュメントの操作機能を強化します。 PDF 内のテキストを書式設定で簡単に置き換える方法を学びます。
 weight: 45
 url: /ja/net/pdf-watermarking-attachments/replace-text-formatting-xobject-pdf/
+type: docs
 ---
-
 # PDF 内の XObject の書式設定でテキストを置換
 
 ## 導入

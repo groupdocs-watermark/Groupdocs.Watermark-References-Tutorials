@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara menautkan header dan footer secara efisien dalam bagian dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Manajemen dan keamanan dokumen.
 weight: 26
 url: /id/net/word-processing-watermarkings/link-header-footer-section-word-docs/
+type: docs
 ---
-
 # Tautkan Header/Footer di Bagian di Word Docs
 
 ## Perkenalan

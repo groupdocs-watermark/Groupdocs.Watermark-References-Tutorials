@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: हमारे व्यापक चरण-दर-चरण गाइड के साथ .NET के लिए GroupDocs.Watermark का उपयोग करके पासवर्ड-सुरक्षित Word दस्तावेज़ों में आसानी से वॉटरमार्क जोड़ें।
 weight: 14
 url: /hi/net/document-loadings/load-password-protected-word-document/
+type: docs
 ---
-
 # पासवर्ड संरक्षित वर्ड दस्तावेज़ लोड करें
 
 ## परिचय

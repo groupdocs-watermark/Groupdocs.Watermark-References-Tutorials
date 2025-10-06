@@ -8,10 +8,8 @@ keywords:
 - apply image effects to shape watermarks in Java
 - GroupDocs Watermark for Java
 - image watermark customization
-
+type: docs
 ---
-
-
 # Applying Image Effects to Shape Watermarks with GroupDocs.Watermark in Java
 
 ## Introduction

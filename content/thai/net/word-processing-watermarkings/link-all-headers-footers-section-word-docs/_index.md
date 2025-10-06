@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เชื่อมโยงส่วนหัวและส่วนท้ายในเอกสาร Word ได้อย่างง่ายดายโดยใช้ GroupDocs.Watermark สำหรับ .NET รับประกันความสม่ำเสมอและความเป็นมืออาชีพได้อย่างง่ายดาย
 weight: 25
 url: /th/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
+type: docs
 ---
-
 # เชื่อมโยงส่วนหัว/ส่วนท้ายทั้งหมดในส่วนต่างๆ ในเอกสาร Word
 
 ## การแนะนำ

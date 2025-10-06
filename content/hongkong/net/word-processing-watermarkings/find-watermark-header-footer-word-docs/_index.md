@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs for .NET 有效地尋找和刪除 Word 文件中的浮水印，確保文件的完整性和專業性。
 weight: 22
 url: /zh-hant/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # 在 Word 文件的頁首/頁尾中尋找浮水印
 
 ## 介紹

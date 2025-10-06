@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีแทนที่รูปภาพในคำอธิบายประกอบ PDF เฉพาะเจาะจงโดยใช้ GroupDocs.Watermark สำหรับ .NET คู่มือโดยละเอียดนี้ครอบคลุมทุกอย่างตั้งแต่การโหลดเอกสารไปจนถึงการบันทึกการเปลี่ยนแปลง
 weight: 37
 url: /th/net/pdf-watermarking-attachments/replace-image-annotation-pdf/
+type: docs
 ---
-
 # แทนที่รูปภาพสำหรับคำอธิบายประกอบเฉพาะในรูปแบบ PDF
 
 ## การแนะนำ

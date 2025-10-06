@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 使用 GroupDocs for .NET 增强文档安全性。无缝地向 PDF 和其他格式添加水印。
 weight: 28
 url: /zh/net/pdf-watermarking-attachments/rasterize-pdf-page/
+type: docs
 ---
-
 # 光栅化 PDF 页面
 
 ## 介绍

@@ -8,10 +8,8 @@ keywords:
 - PDF watermarking
 - GroupDocs.Watermark for .NET
 - add annotations to PDF
-
+type: docs
 ---
-
-
 # How to Add Watermarks & Annotations to PDFs Using GroupDocs.Watermark for .NET
 
 ## Introduction

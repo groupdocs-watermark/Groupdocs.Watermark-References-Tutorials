@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Explore GroupDocs.Watermark for .NET tutorials on PDF watermarking and attachments. Learn step-by-step methods to enhance your PDFs' security and branding.
 weight: 25
 url: /net/pdf-watermarking-attachments/
+type: docs
 ---
-
 # PDF Watermarking and Attachment
 
 ## Introduction

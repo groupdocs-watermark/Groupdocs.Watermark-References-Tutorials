@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε πώς να προσθέτετε, να αφαιρείτε και να εξάγετε υδατογραφήματα σε έγγραφα χρησιμοποιώντας το υδατογράφημα GroupDocs για .NET με αυτόν τον αναλυτικό οδηγό.
 weight: 11
 url: /el/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Λάβετε πληροφορίες εγγράφου από τον τοπικό δίσκο
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Leer hoe u tekst kunt vervangen door opmaak voor artefacten in PDF-documenten met GroupDocs.Watermark voor .NET. Verbeter moeiteloos het documentbeheer.
 weight: 43
 url: /nl/net/pdf-watermarking-attachments/replace-text-formatting-artifact-pdf/
+type: docs
 ---
-
 # Vervang tekst door opmaak voor artefacten in PDF
 
 ## Invoering

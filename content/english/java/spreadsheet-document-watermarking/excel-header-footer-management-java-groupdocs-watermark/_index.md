@@ -8,10 +8,8 @@ keywords:
 - Excel header/footer management
 - GroupDocs.Watermark Java
 - Clearing Excel watermarks
-
+type: docs
 ---
-
-
 # Mastering Excel Header/Footer Management in Java with GroupDocs.Watermark
 
 ## Introduction

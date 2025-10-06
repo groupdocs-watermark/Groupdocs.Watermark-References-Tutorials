@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs for .NET を使用すると、Word ドキュメントから貴重な洞察を簡単に得ることができます。形状情報をシームレスに抽出してデータ分析を強化します。
 weight: 24
 url: /ja/net/word-processing-watermarkings/get-shapes-information-word-docs/
+type: docs
 ---
-
 # Word ドキュメントで図形情報を取得する
 
 ## 導入

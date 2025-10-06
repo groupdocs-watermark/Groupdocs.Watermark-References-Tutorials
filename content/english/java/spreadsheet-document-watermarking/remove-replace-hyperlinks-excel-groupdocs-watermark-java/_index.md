@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark Java
 - remove hyperlinks Excel
 - replace hyperlinks in Excel
-
+type: docs
 ---
-
-
 # Mastering GroupDocs.Watermark Java for Excel Spreadsheet Hyperlink Management
 
 Managing hyperlinks within your Excel documents using Java can significantly enhance content control without compromising data integrity. With GroupDocs.Watermark Java, this task is simplified and efficient. This tutorial guides you through removing or replacing hyperlinks in shapes and charts in an Excel file.

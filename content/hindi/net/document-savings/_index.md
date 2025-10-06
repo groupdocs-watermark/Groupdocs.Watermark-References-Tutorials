@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: वॉटरमार्क के साथ दस्तावेज़ों को सहेजने पर .NET ट्यूटोरियल के लिए GroupDocs.Watermark का अन्वेषण करें। दस्तावेज़ सुरक्षा और प्रबंधन को बढ़ाने के लिए चरण-दर-चरण तरीके सीखें।
 weight: 23
 url: /hi/net/document-savings/
+type: docs
 ---
-
 # दस्तावेज़ सहेजा जा रहा है
 
 ## परिचय

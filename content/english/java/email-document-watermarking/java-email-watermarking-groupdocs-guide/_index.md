@@ -8,10 +8,8 @@ keywords:
 - Java Email Watermarking
 - GroupDocs Watermark for Java
 - Email Document Watermarking
-
+type: docs
 ---
-
-
 # How to Implement Java Email Watermarking with GroupDocs.Watermark: A Step-by-Step Guide
 
 ## Introduction

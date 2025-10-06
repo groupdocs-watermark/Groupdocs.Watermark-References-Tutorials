@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: 了解如何使用 GroupDocs.Watermark for .NET 替换 Word 文档中特定形状的文本。请按照我们的分步教程进行操作。
 weight: 35
 url: /zh/net/word-processing-watermarkings/replace-text-specific-shape-word-docs/
+type: docs
 ---
-
 # 在 Word 文档中替换特定形状的文本
 
 ## 介绍

@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Hapus XObjects dengan format teks tertentu dengan mudah dari PDF menggunakan GroupDocs.Watermark untuk .NET. Ikuti panduan kami untuk manipulasi dokumen yang lancar.
 weight: 36
 url: /id/net/pdf-watermarking-attachments/remove-xobjects-text-formatting-pdf/
+type: docs
 ---
-
 # Hapus XObjects dengan Format Teks Tertentu dalam PDF
 
 ## Perkenalan

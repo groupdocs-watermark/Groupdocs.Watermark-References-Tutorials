@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark
 - Net
 - Document Processing
-
+type: docs
 ---
-
-
 # Master PDF Text Optimization Using GroupDocs.Watermark for .NET
 
 ## Introduction

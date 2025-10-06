@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till en låst vattenstämpel på specifika sidor i Word-dokument med hjälp av GroupDocs.Watermark for .NET med vår enkla steg-för-steg-guide.
 weight: 12
 url: /sv/net/word-processing-watermarkings/add-locked-watermark-specific-pages-word-docs/
+type: docs
 ---
-
 # Lägg till låst vattenstämpel på specifika sidor i Word Docs
 
 ## Introduktion

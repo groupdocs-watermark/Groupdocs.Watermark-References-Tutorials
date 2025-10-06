@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark .NET
 - secure Word documents
 - password protect Word files
-
+type: docs
 ---
-
-
 # Secure Your Word Documents with GroupDocs.Watermark .NET: A Comprehensive Guide to Document Watermarking and Protection
 
 ## Introduction

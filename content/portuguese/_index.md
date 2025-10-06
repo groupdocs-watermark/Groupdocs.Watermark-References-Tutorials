@@ -6,8 +6,8 @@ description: Desbloqueie o poder do GroupDocs.Watermark com nossos tutoriais .NE
 weight: 11
 url: /pt/
 is_root: true
+type: docs
 ---
-
 # Domine a segurança e a marca de documentos com GroupDocs.Watermark
 
 

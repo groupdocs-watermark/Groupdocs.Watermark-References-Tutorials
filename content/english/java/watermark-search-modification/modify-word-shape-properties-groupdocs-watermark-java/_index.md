@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark Java
 - modify shape properties
 - Word document automation
-
+type: docs
 ---
-
-
 # How to Modify Word Shape Properties Using GroupDocs.Watermark for Java
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Explore GroupDocs.Watermark for .NET tutorials on generating document previews and managing watermarks. Enhance document security and management.
 weight: 21
 url: /net/document-manipulation/
+type: docs
 ---
-
 # Document Manipulation
 
 ## Introduction

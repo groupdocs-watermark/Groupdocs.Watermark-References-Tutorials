@@ -8,10 +8,8 @@ keywords:
 - Java Email Attachment Processing
 - GroupDocs.Watermark Java
 - Email Document Watermarking
-
+type: docs
 ---
-
-
 # How to Implement Email Attachment Processing in Java with GroupDocs.Watermark
 
 ## Introduction

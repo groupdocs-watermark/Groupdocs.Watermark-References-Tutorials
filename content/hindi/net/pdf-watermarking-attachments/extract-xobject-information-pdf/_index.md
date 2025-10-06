@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark के साथ दस्तावेज़ वॉटरमार्किंग की शक्ति को अनलॉक करें। पीडीएफ़, वर्ड दस्तावेज़ों और छवियों में वॉटरमार्क को निर्बाध रूप से प्रबंधित करें।
 weight: 25
 url: /hi/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
+type: docs
 ---
-
 # पीडीएफ से एक्सऑब्जेक्ट जानकारी निकालें
 
 ## परिचय

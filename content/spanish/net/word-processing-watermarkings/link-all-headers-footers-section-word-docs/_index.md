@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Vincule fácilmente encabezados y pies de página en documentos de Word utilizando GroupDocs.Watermark para .NET. Garantice coherencia y profesionalismo con facilidad.
 weight: 25
 url: /es/net/word-processing-watermarkings/link-all-headers-footers-section-word-docs/
+type: docs
 ---
-
 # Vincular todos los encabezados y pies de página en secciones en documentos de Word
 
 ## Introducción

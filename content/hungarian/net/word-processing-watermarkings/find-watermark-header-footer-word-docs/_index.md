@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Tanulja meg, hogyan találhat meg és távolíthat el hatékonyan vízjeleket a Word dokumentumokból a GroupDocs Watermark for .NET segítségével, így biztosítva a dokumentumok integritását és professzionalizmusát.
 weight: 22
 url: /hu/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # Keresse meg a Vízjelet a Word Docs fejlécében/láblécében
 
 ## Bevezetés

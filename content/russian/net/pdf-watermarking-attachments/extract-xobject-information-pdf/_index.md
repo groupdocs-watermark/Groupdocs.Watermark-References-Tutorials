@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Раскройте возможности водяных знаков в документах с помощью GroupDocs.Watermark для .NET. Легко управляйте водяными знаками в PDF-файлах, документах Word и изображениях.
 weight: 25
 url: /ru/net/pdf-watermarking-attachments/extract-xobject-information-pdf/
+type: docs
 ---
-
 # Извлечь информацию XObject из PDF
 
 ## Введение

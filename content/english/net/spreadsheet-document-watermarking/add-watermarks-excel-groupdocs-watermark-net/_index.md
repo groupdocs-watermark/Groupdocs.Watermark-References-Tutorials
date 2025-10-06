@@ -9,10 +9,8 @@ keywords:
 - GroupDocs Watermark .NET
 - document protection
 - text watermark Excel
-
+type: docs
 ---
-
-
 # How to Add Watermarks to Excel Sheets Using GroupDocs.Watermark .NET: A Comprehensive Guide
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - text watermarks
 - GroupDocs Watermark for Java
 - diagram document watermarking
-
+type: docs
 ---
-
-
 # Add Text Watermarks to Diagrams Using GroupDocs.Watermark for Java: A Comprehensive Guide
 
 ## Introduction

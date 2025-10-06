@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Tìm hiểu cách thay thế văn bản hình dạng bằng văn bản được định dạng trong tài liệu Word bằng GroupDocs.Watermark cho .NET. Khả năng chỉnh sửa tài liệu của bạn dễ dàng.
 weight: 34
 url: /vi/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # Thay thế văn bản hình dạng bằng văn bản được định dạng trong tài liệu Word
 
 ## Giới thiệu

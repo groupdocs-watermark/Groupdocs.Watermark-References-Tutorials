@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Ezzel az átfogó, lépésenkénti útmutatóval megtudhatja, hogyan adhat hozzá, távolíthat el és bonthat ki vízjeleket a .NET-hez készült GroupDocs segítségével.
 weight: 11
 url: /hu/net/document-manipulation/get-document-info-local-disk/
+type: docs
 ---
-
 # Dokumentuminformációk lekérése a helyi lemezről
 
 ## Bevezetés

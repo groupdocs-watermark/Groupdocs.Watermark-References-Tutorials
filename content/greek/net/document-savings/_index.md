@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Εξερευνήστε μαθήματα GroupDocs.Watermark για .NET σχετικά με την αποθήκευση εγγράφων με υδατογραφήματα. Μάθετε βήμα προς βήμα μεθόδους για να βελτιώσετε την ασφάλεια και τη διαχείριση των εγγράφων.
 weight: 23
 url: /el/net/document-savings/
+type: docs
 ---
-
 # Αποθήκευση εγγράφων
 
 ## Εισαγωγή

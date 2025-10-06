@@ -8,10 +8,8 @@ keywords:
 - image watermark search
 - GroupDocs.Watermark Java
 - watermark detection in documents
-
+type: docs
 ---
-
-
 # Implementing Image Watermark Search with GroupDocs.Watermark Java
 
 ## Introduction

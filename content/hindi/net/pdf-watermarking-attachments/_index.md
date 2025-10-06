@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: पीडीएफ वॉटरमार्किंग और अनुलग्नकों पर .NET ट्यूटोरियल के लिए GroupDocs.Watermark का अन्वेषण करें। अपनी पीडीएफ़ की सुरक्षा और ब्रांडिंग बढ़ाने के लिए चरण-दर-चरण तरीके जानें।
 weight: 25
 url: /hi/net/pdf-watermarking-attachments/
+type: docs
 ---
-
 # पीडीएफ वॉटरमार्किंग और अनुलग्नक
 
 ## परिचय

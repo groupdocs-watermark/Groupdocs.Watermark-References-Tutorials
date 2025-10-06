@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Védje és kezelje dokumentumait a Groupdocs Watermark for .NET segítségével. Kövesse részletes útmutatónkat a vízjelek zökkenőmentes hozzáadásához.
 weight: 10
 url: /hu/net/document-loadings/load-document-from-local-disk/
+type: docs
 ---
-
 # Töltse be a dokumentumot a helyi lemezről
 
 ## Bevezetés

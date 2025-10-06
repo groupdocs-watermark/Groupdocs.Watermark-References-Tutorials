@@ -8,10 +8,8 @@ keywords:
 - manage diagram watermarks .net
 - GroupDocs Watermark for .NET
 - watermark management in diagrams
-
+type: docs
 ---
-
-
 # Mastering Diagram Watermark Management in .NET with GroupDocs.Watermark
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du lägger till anpassade vattenstämplar med texteffekter i Word-dokument med GroupDocs.Watermark for .NET. Dokumentsäkerhet och visuell tilltalande utan ansträngning.
 weight: 21
 url: /sv/net/word-processing-watermarkings/add-watermark-text-effects-word-docs/
+type: docs
 ---
-
 # Lägg till vattenstämpel med texteffekter i Word Docs
 
 ## Introduktion

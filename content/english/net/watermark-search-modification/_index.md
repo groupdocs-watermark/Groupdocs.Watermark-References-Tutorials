@@ -3,8 +3,8 @@ title: "Watermark Search and Modification Tutorials for GroupDocs.Watermark .NET
 description: "Learn to search, find, and modify existing watermarks in documents using GroupDocs.Watermark for .NET."
 weight: 11
 url: "/net/watermark-search-modification/"
+type: docs
 ---
-
 # Watermark Search and Modification Tutorials for GroupDocs.Watermark .NET
 
 Our watermark search and modification tutorials demonstrate how to work with existing watermarks using GroupDocs.Watermark for .NET. These comprehensive guides cover searching for text and image watermarks, finding watermarks with specific formatting or regular expressions, modifying discovered watermarks, and implementing combined search strategies. Each tutorial includes detailed C# code examples for watermark discovery and manipulation, helping you build applications that can effectively manage document watermarks throughout their lifecycle.

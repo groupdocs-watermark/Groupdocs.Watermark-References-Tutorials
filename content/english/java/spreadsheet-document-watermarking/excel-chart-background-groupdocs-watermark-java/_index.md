@@ -8,10 +8,8 @@ keywords:
 - Excel chart background image
 - GroupDocs.Watermark Java
 - Java Excel watermarking
-
+type: docs
 ---
-
-
 # Set an Excel Chart Background Image Using GroupDocs.Watermark Java
 
 ## Introduction

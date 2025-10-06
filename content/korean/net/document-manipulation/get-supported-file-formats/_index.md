@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET용 GroupDocs.Watermark를 사용하여 문서에 워터마크를 손쉽게 추가하세요. 디지털 자산을 보호하려면 포괄적인 단계별 가이드를 따르세요.
 weight: 13
 url: /ko/net/document-manipulation/get-supported-file-formats/
+type: docs
 ---
-
 # 지원되는 파일 형식 얻기
 
 ## 소개

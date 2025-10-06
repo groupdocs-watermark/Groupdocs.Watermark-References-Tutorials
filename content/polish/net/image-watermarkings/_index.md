@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Zapoznaj się z samouczkami GroupDocs.Watermark for .NET dotyczącymi dodawania znaków wodnych do obrazów. Poznaj metody krok po kroku zwiększające bezpieczeństwo dokumentu i budowanie marki.
 weight: 24
 url: /pl/net/image-watermarkings/
+type: docs
 ---
-
 # Znak wodny obrazu
 
 ## Wstęp

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Watermark Java
 - Java presentation watermarks
 - watermark tiled background presentations
-
+type: docs
 ---
-
-
 # Dynamic Presentations: Apply Watermarks to Java Presentations Using GroupDocs.Watermark
 ## Introduction
 In today's digital age, effectively presenting information is crucial for both business professionals and academics. To protect your intellectual property while maintaining aesthetics, use GroupDocs.Watermark for Java. This tutorial will guide you through applying watermarks with tiled, semi-transparent backgrounds to presentations.

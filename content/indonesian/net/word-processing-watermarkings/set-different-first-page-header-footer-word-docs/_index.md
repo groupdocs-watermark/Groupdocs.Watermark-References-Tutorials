@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengatur header dan footer yang berbeda di halaman pertama dokumen Word menggunakan GroupDocs.Watermark untuk .NET.
 weight: 36
 url: /id/net/word-processing-watermarkings/set-different-first-page-header-footer-word-docs/
+type: docs
 ---
-
 # Atur Header/Footer Halaman Pertama yang Berbeda di Word Docs
 
 ## Perkenalan

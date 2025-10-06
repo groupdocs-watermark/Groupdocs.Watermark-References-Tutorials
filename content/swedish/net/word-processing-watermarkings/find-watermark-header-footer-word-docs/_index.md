@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du effektivt hittar och tar bort vattenstämplar från Word-dokument med hjälp av GroupDocs Watermark för .NET, vilket säkerställer dokumentintegritet och professionalism.
 weight: 22
 url: /sv/net/word-processing-watermarkings/find-watermark-header-footer-word-docs/
+type: docs
 ---
-
 # Hitta vattenstämpel i sidhuvud/sidfot i Word Docs
 
 ## Introduktion

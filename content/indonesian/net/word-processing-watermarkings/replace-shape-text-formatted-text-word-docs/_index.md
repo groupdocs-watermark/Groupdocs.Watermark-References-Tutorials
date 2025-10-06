@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengganti teks bentuk dengan teks berformat di dokumen Word menggunakan GroupDocs.Watermark untuk .NET. Kemampuan mengedit dokumen Anda dengan mudah.
 weight: 34
 url: /id/net/word-processing-watermarkings/replace-shape-text-formatted-text-word-docs/
+type: docs
 ---
-
 # Ganti Teks Bentuk dengan Teks Terformat di Dokumen Word
 
 ## Perkenalan

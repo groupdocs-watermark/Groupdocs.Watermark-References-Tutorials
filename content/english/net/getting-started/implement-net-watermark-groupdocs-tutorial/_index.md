@@ -8,10 +8,8 @@ keywords:
 - .NET watermarking
 - GroupDocs.Watermark
 - document security
-
+type: docs
 ---
-
-
 # How to Implement .NET Watermarking with GroupDocs.Watermark: Complete Guide for Developers
 
 ## Introduction

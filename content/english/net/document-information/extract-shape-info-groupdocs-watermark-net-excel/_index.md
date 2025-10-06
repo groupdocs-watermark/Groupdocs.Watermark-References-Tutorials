@@ -8,10 +8,8 @@ keywords:
 - extract shape information Excel
 - GroupDocs.Watermark for .NET
 - shape metadata extraction
-
+type: docs
 ---
-
-
 # Extract Shape Information from Excel Files with GroupDocs.Watermark .NET
 
 ## Introduction

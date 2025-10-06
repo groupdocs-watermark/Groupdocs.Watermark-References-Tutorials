@@ -5,8 +5,8 @@ second_title: API GroupDocs.Watermark .NET
 description: Scopri come aggiungere filigrane di annotazioni ai documenti PDF senza sforzo utilizzando GroupDocs.Watermark per .NET. Migliora facilmente il branding e la sicurezza dei documenti.
 weight: 10
 url: /it/net/pdf-watermarking-attachments/add-annotation-watermark-pdf/
+type: docs
 ---
-
 # Aggiungi filigrana di annotazione al PDF
 
 ## introduzione

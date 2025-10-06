@@ -8,10 +8,8 @@ keywords:
 - set chart background PowerPoint
 - GroupDocs.Watermark .NET tutorial
 - customize PowerPoint chart visuals
-
+type: docs
 ---
-
-
 # How to Set a Chart Background Image in PowerPoint Using GroupDocs.Watermark .NET
 ## Introduction
 Looking to make your PowerPoint presentations more engaging with customized chart backgrounds? This tutorial guides you through using the powerful GroupDocs.Watermark for .NET library to set an image as the background of a chart within your PowerPoint documents. By following this guide, you will learn:

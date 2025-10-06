@@ -8,10 +8,8 @@ keywords:
 - PDF watermarking
 - GroupDocs.Watermark for .NET
 - watermark images in PDF
-
+type: docs
 ---
-
-
 # How to Add Watermarks to Image Artifacts in PDFs Using GroupDocs.Watermark for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Adım adım kılavuzumuzla Groupdocs for .NET'i kullanarak parola korumalı belgelere nasıl filigran ekleyeceğinizi öğrenin. Dosyalarınızı kolayca güvence altına alın ve markalayın.
 weight: 13
 url: /tr/net/document-loadings/load-password-protected-document/
+type: docs
 ---
-
 # Parola Korumalı Belgeyi Yükle
 
 ## giriiş

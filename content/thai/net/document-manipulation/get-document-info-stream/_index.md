@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: เรียนรู้วิธีรับข้อมูลเอกสารจากสตรีมโดยใช้ GroupDocs.Watermark สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนนี้ ความสามารถในการจัดการเอกสารของคุณได้อย่างง่ายดาย
 weight: 12
 url: /th/net/document-manipulation/get-document-info-stream/
+type: docs
 ---
-
 # รับข้อมูลเอกสารจากสตรีม
 
 ## การแนะนำ

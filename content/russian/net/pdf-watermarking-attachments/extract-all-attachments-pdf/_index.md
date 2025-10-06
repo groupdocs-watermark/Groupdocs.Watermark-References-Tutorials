@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Узнайте, как извлечь все вложения из PDF-файла с помощью Groupdocs.Watermark для .NET. Следуйте нашему пошаговому руководству, чтобы процесс извлечения прошел без проблем.
 weight: 22
 url: /ru/net/pdf-watermarking-attachments/extract-all-attachments-pdf/
+type: docs
 ---
-
 # Извлечь все вложения из PDF
 
 ## Введение

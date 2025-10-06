@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Μάθετε να προσθέτετε υδατογραφήματα σε εικόνες σε έγγραφα PDF χρησιμοποιώντας το GroupDocs.Watermark για .NET με τον αναλυτικό, βήμα προς βήμα εκμάθησή μας. Ασφαλίστε εύκολα τα PDF σας.
 weight: 19
 url: /el/net/pdf-watermarking-attachments/add-watermark-images-pdf/
+type: docs
 ---
-
 # Προσθήκη υδατογραφήματος σε εικόνες σε PDF
 
 ## Εισαγωγή

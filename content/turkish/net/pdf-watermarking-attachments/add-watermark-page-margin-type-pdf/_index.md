@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs için Filigran'ı kullanarak PDF'ye sayfa kenar boşluğu türüyle filigran eklemeyi öğrenin. Belgelerinizi zahmetsizce koruyun.
 weight: 21
 url: /tr/net/pdf-watermarking-attachments/add-watermark-page-margin-type-pdf/
+type: docs
 ---
-
 # PDF'ye Sayfa Kenar Boşluğu Türüyle Filigran Ekleme
 
 ## giriiş

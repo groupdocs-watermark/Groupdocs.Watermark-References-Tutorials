@@ -8,10 +8,8 @@ keywords:
 - remove hyperlinks diagram shapes GroupDocs Watermark Java
 - manage digital documents diagrams
 - GroupDocs Watermark library Java
-
+type: docs
 ---
-
-
 # Remove Hyperlinks from Diagram Shapes using GroupDocs.Watermark Java
 
 ## Introduction

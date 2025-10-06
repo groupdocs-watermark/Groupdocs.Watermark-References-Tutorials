@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: このガイドでは、GroupDocs.Watermark for .NET を使用してドキュメント プレビューを生成する方法を学習します。ドキュメントのセキュリティと管理を簡単に強化します。
 weight: 10
 url: /ja/net/document-manipulation/generate-document-preview/
+type: docs
 ---
-
 # ドキュメントプレビューの生成
 
 ## 導入

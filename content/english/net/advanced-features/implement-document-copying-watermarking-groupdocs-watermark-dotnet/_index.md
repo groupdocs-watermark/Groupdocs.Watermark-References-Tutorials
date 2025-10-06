@@ -8,10 +8,8 @@ keywords:
 - document copying and watermarking
 - GroupDocs.Watermark for .NET
 - text watermarks in .NET
-
+type: docs
 ---
-
-
 # How to Implement Document Copying and Watermarking in .NET Using GroupDocs.Watermark
 
 ## Introduction

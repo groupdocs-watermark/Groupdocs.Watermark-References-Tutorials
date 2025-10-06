@@ -8,10 +8,8 @@ keywords:
 - automate shape removal word
 - GroupDocs.Watermark .NET
 - remove shapes from Word document
-
+type: docs
 ---
-
-
 # Automating Shape Removal in Word Documents with GroupDocs.Watermark for .NET
 
 ## Introduction

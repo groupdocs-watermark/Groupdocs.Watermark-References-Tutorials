@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Watermark
 - image watermarks in presentations
 - protect presentations with watermarks
-
+type: docs
 ---
-
-
 # How to Add Image Watermarks to PowerPoint Presentations Using GroupDocs.Watermark for .NET
 
 ## Introduction

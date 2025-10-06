@@ -3,8 +3,8 @@ title: "Text Watermark Implementation Tutorials for GroupDocs.Watermark .NET"
 description: "Complete tutorials for adding, customizing, and managing text watermarks in various document formats using GroupDocs.Watermark for .NET."
 weight: 3
 url: "/net/text-watermarks/"
+type: docs
 ---
-
 # Text Watermark Implementation Tutorials for GroupDocs.Watermark .NET
 
 Master text watermark creation with our detailed GroupDocs.Watermark for .NET tutorials. These step-by-step guides demonstrate how to add text watermarks to documents, customize text appearance with different fonts and formatting, implement tiled text watermarks, control watermark positioning, and add rotated text. Each tutorial includes working C# code examples, implementation notes, and best practices to help you build applications that effectively apply professional text watermarks to your documents.

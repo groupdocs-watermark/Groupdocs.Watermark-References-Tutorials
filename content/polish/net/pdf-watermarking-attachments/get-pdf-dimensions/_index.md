@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark API .NET
 description: Chroń swoje dokumenty z łatwością, korzystając z Groupdocs.Watermark dla .NET. Bez wysiłku dodawaj znaki wodne, pieczątki i adnotacje.
 weight: 26
 url: /pl/net/pdf-watermarking-attachments/get-pdf-dimensions/
+type: docs
 ---
-
 # Pobierz wymiary PDF
 
 ## Wstęp

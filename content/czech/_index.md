@@ -6,8 +6,8 @@ description: Odemkněte sílu GroupDocs.Watermark s našimi .NET a Java tutoriá
 weight: 11
 url: /cs/
 is_root: true
+type: docs
 ---
-
 # Master Document Security & Branding s GroupDocs.Watermark
 
 

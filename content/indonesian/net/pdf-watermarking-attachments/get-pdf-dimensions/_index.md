@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Lindungi dokumen Anda dengan mudah menggunakan Groupdocs.Watermark untuk .NET. Tambahkan tanda air, stempel, dan anotasi dengan mudah.
 weight: 26
 url: /id/net/pdf-watermarking-attachments/get-pdf-dimensions/
+type: docs
 ---
-
 # Dapatkan Dimensi PDF
 
 ## Perkenalan

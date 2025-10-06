@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: .NET के लिए GroupDocs.Watermark का उपयोग करके Word दस्तावेज़ों से आकृतियाँ हटाने का तरीका जानें। आसान, कुशल और शक्तिशाली दस्तावेज़ हेरफेर।
 weight: 30
 url: /hi/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # वर्ड डॉक्स में आकृति हटाएँ
 
 ## परिचय

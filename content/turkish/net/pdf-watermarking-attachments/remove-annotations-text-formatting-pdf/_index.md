@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Groupdocs for .NET'i kullanarak PDF belgelerindeki belirli metin formatına sahip ek açıklamaları nasıl kaldıracağınızı öğrenin.
 weight: 30
 url: /tr/net/pdf-watermarking-attachments/remove-annotations-text-formatting-pdf/
+type: docs
 ---
-
 # PDF'de Belirli Metin Formatına Sahip Ek Açıklamaları Kaldırma
 
 ## giriiş

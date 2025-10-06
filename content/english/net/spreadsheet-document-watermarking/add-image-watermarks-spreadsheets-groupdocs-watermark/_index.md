@@ -8,10 +8,8 @@ keywords:
 - add image watermarks to spreadsheets
 - GroupDocs Watermark for .NET
 - image watermark in spreadsheet headers
-
+type: docs
 ---
-
-
 # How to Add Image Watermarks to Spreadsheets using GroupDocs.Watermark for .NET
 
 ## Introduction

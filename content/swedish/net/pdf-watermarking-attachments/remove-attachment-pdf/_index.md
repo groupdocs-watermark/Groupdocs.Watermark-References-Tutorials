@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: Lär dig hur du enkelt tar bort bilagor från PDF-dokument med GroupDocs.Watermark för .NET. Förbättra effektiviteten i din dokumenthantering.
 weight: 33
 url: /sv/net/pdf-watermarking-attachments/remove-attachment-pdf/
+type: docs
 ---
-
 # Ta bort bilaga från PDF
 
 ## Introduktion

@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: इस व्यापक, चरण-दर-चरण ट्यूटोरियल के साथ .NET के लिए GroupDocs.Watermark का उपयोग करके PDF दस्तावेज़ों में छवियों को बदलने का तरीका जानें।
 weight: 38
 url: /hi/net/pdf-watermarking-attachments/replace-image-artifact-pdf/
+type: docs
 ---
-
 # पीडीएफ में विशिष्ट कलाकृतियों के लिए छवि बदलें
 
 ## परिचय

@@ -8,10 +8,8 @@ keywords:
 - Extract PDF Artifacts
 - GroupDocs.Watermark .NET
 - PDF Artifact Extraction
-
+type: docs
 ---
-
-
 # Mastering PDF Artifact Extraction Using GroupDocs.Watermark .NET
 
 ## Introduction

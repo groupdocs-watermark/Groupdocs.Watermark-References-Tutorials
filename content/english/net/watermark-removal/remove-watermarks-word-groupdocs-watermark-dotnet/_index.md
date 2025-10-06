@@ -8,10 +8,8 @@ keywords:
 - remove watermarks Word
 - GroupDocs.Watermark .NET
 - remove text image watermarks
-
+type: docs
 ---
-
-
 # Efficiently Remove Watermarks from Word Documents using GroupDocs.Watermark for .NET
 
 ## Introduction

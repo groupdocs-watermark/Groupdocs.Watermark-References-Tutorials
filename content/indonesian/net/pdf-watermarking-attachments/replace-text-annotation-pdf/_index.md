@@ -5,8 +5,8 @@ second_title: GroupDocs.Tanda Air .NET API
 description: Pelajari cara mengganti teks dalam anotasi PDF tertentu menggunakan Groupdocs.Watermark untuk .NET dengan tutorial langkah demi langkah yang komprehensif ini.
 weight: 40
 url: /id/net/pdf-watermarking-attachments/replace-text-annotation-pdf/
+type: docs
 ---
-
 # Ganti Teks untuk Anotasi Tertentu di PDF
 
 ## Perkenalan

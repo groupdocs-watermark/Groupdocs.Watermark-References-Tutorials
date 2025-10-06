@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: GroupDocs.Watermark for .NET'i kullanarak Word belgelerinden şekilleri nasıl kaldıracağınızı öğrenin. Kolay, verimli ve güçlü belge işleme.
 weight: 30
 url: /tr/net/word-processing-watermarkings/remove-shape-word-docs/
+type: docs
 ---
-
 # Word Belgelerindeki Şekli Kaldırma
 
 ## giriiş

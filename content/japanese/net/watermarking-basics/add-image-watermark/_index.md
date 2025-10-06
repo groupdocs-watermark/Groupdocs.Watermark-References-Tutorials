@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API
 description: GroupDocs.Watermark for .NET を使用すると、画像のウォーターマークをドキュメントに簡単に追加できます。知的財産を簡単に保護します。
 weight: 10
 url: /ja/net/watermarking-basics/add-image-watermark/
+type: docs
 ---
-
 # 画像の透かしを追加する
 
 ## 導入

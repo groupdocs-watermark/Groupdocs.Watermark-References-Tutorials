@@ -5,8 +5,8 @@ second_title: GroupDocs.Watermark .NET API'si
 description: Bu kapsamlı adım adım kılavuzla Groupdocs'u kullanarak Word belgelerindeki belirli bir bölüme nasıl kilitli filigran ekleyeceğinizi öğrenin.
 weight: 13
 url: /tr/net/word-processing-watermarkings/add-locked-watermark-section-word-docs/
+type: docs
 ---
-
 # Word Dokümanlarındaki Bölüme Kilitli Filigran Ekleme
 
 ## giriiş

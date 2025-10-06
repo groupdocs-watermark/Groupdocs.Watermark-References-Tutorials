@@ -8,10 +8,8 @@ keywords:
 - remove PowerPoint slide background Java
 - GroupDocs Watermark library
 - PowerPoint presentation manipulation
-
+type: docs
 ---
-
-
 # Remove PowerPoint Slide Background Using GroupDocs.Watermark Library
 
 ## Introduction
