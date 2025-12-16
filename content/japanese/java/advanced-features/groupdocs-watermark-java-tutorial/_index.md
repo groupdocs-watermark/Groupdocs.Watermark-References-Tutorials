@@ -1,49 +1,52 @@
 ---
-title: "How to Watermark PDF in Java using GroupDocs.Watermark"
-description: "Learn how to watermark PDF in Java using GroupDocs.Watermark. This guide shows how to customize watermark position, add text or image watermarks, and secure your documents."
-date: "2025-12-16"
-weight: 1
-url: "/java/advanced-features/groupdocs-watermark-java-tutorial/"
+date: '2025-12-16'
+description: GroupDocs.Watermark を使用して Java で PDF に透かしを付ける方法を学びましょう。このガイドでは、透かしの位置をカスタマイズし、テキストまたは画像の透かしを追加して、ドキュメントを保護する方法を示します。
 keywords:
 - GroupDocs Watermark Java
 - Java watermarking techniques
 - text watermarks in Java
+title: GroupDocs.Watermark を使用して Java で PDF に透かしを付ける方法
 type: docs
+url: /ja/java/advanced-features/groupdocs-watermark-java-tutorial/
+weight: 1
 ---
 
-# How to Watermark PDF in Java with GroupDocs.Watermark
+# JavaでGroupDocs.Watermarkを使用してPDFに透かしを入れる方法
 
-Protecting your PDFs from unauthorized distribution is a top priority for many developers and businesses. In this tutorial you’ll discover **how to watermark PDF** files in Java using the powerful GroupDocs.Watermark library. We’ll walk through everything from Maven setup to adding both text and image watermarks, plus tips on **customize watermark position**, generate watermarked PDF outputs, and integrate the solution smoothly into your existing Java projects.
+PDF を不正配布から保護することは、多くの開発者や企業にとって最優先事項です。このチュートリアルでは、強力な GroupDocs.Watermark ライブラリを使用して Java で **PDF に透かしを入れる方法** を学びます。Maven の設定からテキストと画像の両方の透かしの追加、**透かし位置のカスタマイズ** のヒント、透かし入り PDF の生成、そして既存の Java プロジェクトへのスムーズな統合までを順に解説します。
 
-## Quick Answers
+## クイック回答
 - **What is the primary library?** GroupDocs.Watermark for Java.  
 - **Can I add both text and image watermarks?** Yes – the API supports both types.  
 - **Do I need a Maven dependency?** Absolutely; see the *maven dependency groupdocs* section below.  
 - **How do I control opacity?** Use the `setOpacity()` method on watermark objects.  
 - **Is a license required for production?** Yes, a commercial license is needed for production use.
 
-## What is “how to watermark pdf” in Java?
-Watermarking a PDF means embedding visible or semi‑transparent text or images into each page of the document. This technique helps you brand, protect, or convey confidentiality statements directly inside the file, making it harder for unauthorized parties to reuse the content without your permission.
+## Javaで「PDFに透かしを入れる」とは？
 
-## Why use GroupDocs.Watermark for Java?
+PDF に透かしを入れるとは、文書の各ページに目に見えるまたは半透明のテキストや画像を埋め込むことを意味します。この手法により、ブランド化や保護、機密性の表記をファイル内部に直接付与でき、許可なしにコンテンツを再利用しようとする第三者を防ぎやすくなります。
+
+## なぜ Java で GroupDocs.Watermark を使うのか？
+
 - **Rich feature set** – supports PDF, Word, Excel, PowerPoint, and image formats.  
 - **Fine‑grained control** – position, rotation, opacity, and color can be customized.  
 - **Performance‑optimized** – designed for large‑scale batch processing.  
 - **Simple Maven integration** – adds just a few lines to your `pom.xml`.
 
-## Prerequisites
-Before diving in, make sure you have the following:
+## 前提条件
+
+開始する前に、以下が揃っていることを確認してください。
 
 - **Java SE 8+** installed.  
 - **Maven** for dependency management.  
 - An IDE such as **IntelliJ IDEA** or **Eclipse**.  
 - A valid **GroupDocs.Watermark** license (trial or commercial).  
 
-## How to Watermark PDF in Java
+## Javaで PDF に透かしを入れる方法
 
-### Setting Up GroupDocs.Watermark
+### GroupDocs.Watermark の設定
 
-#### Maven Dependency (maven dependency groupdocs)
+#### Maven 依存関係 (maven dependency groupdocs)
 
 Add the repository and dependency to your `pom.xml`:
 
@@ -65,11 +68,11 @@ Add the repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-#### Direct Download (alternative)
+#### 直接ダウンロード (代替手段)
 
 You can also download the library manually from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-#### Basic Initialization
+#### 基本的な初期化
 
 The following snippet shows how to create a `Watermarker` instance and release resources when finished:
 
@@ -89,7 +92,7 @@ public class WatermarkSetup {
 }
 ```
 
-### Adding Text Watermarks (java pdf watermark example)
+### テキスト透かしの追加 (java pdf watermark example)
 
 Text watermarks are perfect for adding confidentiality notices or branding messages.
 
@@ -128,11 +131,11 @@ public class AddTextWatermark {
 - `setOpacity(0.5)`: Makes the watermark semi‑transparent, which is useful when you want the underlying content still readable.  
 - `setForegroundColor` / `setBackgroundColor`: Control the visual contrast.  
 
-#### Troubleshooting Tips
+#### トラブルシューティングのヒント
 - Verify the PDF path is correct; otherwise you’ll encounter a *file not found* error.  
 - Ensure the chosen font (e.g., Arial) is installed on the host machine.
 
-### Adding Image Watermarks (add image watermark java)
+### 画像透かしの追加 (add image watermark java)
 
 Embedding a logo or seal can reinforce brand identity.
 
@@ -168,26 +171,27 @@ public class AddImageWatermark {
 
 - `setOpacity(0.5)`: Controls transparency for a subtle branding effect.  
 
-#### Troubleshooting Tips
+#### トラブルシューティングのヒント
 - Double‑check the image file path and ensure the image is accessible at runtime.  
 - If the watermark looks too large or small, adjust the image dimensions before loading.
 
-### Customizing Watermark Position
+### 透かし位置のカスタマイズ
 
 Both `TextWatermark` and `ImageWatermark` expose positioning methods such as `setHorizontalAlignment`, `setVerticalAlignment`, and `setRotationAngle`. By tweaking these, you can **customize watermark position** to appear in corners, centered, or even diagonally across the page.
 
-### Generating a Watermarked PDF (generate watermarked pdf)
+### 透かし入り PDF の生成 (generate watermarked pdf)
 
 After adding the desired watermarks, the `save()` method creates a new PDF file. This step effectively **generate watermarked pdf** output that can be distributed or stored securely.
 
-## Practical Applications
+## 実用例
 
 - **Document Protection** – Add “Confidential” stamps before sending contracts to clients.  
 - **Image Copyright** – Overlay your logo on photos you sell online.  
 - **Educational Materials** – Watermark lecture slides to deter unauthorized sharing.  
 - **Marketing Collateral** – Brand PDFs with your company’s visual identity.
 
-## Common Issues and Solutions
+## よくある問題と解決策
+
 | Issue | Solution |
 |-------|----------|
 | **File not found** | Verify absolute/relative paths and ensure the file exists. |
@@ -195,8 +199,8 @@ After adding the desired watermarks, the `save()` method creates a new PDF file.
 | **Watermark not visible** | Increase opacity or change color contrast; also ensure you’re saving the document after adding the watermark. |
 | **Large PDF processing time** | Use `watermarker.optimizeResources()` before saving to reduce memory usage. |
 
-## FAQ's
-  
+## FAQ
+
 ### 1. Can I add multiple watermarks to the same document using GroupDocs.Watermark?  
 
 Yes, you can add several watermarks—text and/or images—by calling the `add()` method multiple times before saving.
@@ -217,7 +221,7 @@ Yes, you can programmatically control watermark positioning, size, and styling b
 
 Absolutely. Use the `setOpacity()` method to adjust transparency levels, enabling semi-transparent watermarks for subtle protection.
 
-## Frequently Asked Questions
+## よくある質問
 
 **Q: How do I add an image watermark using Java?**  
 A: Use the `ImageWatermark` class, provide an `InputStream` for your logo, configure opacity, and call `watermarker.add(imageWatermark)` before saving.

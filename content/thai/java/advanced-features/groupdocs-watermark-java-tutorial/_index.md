@@ -1,49 +1,48 @@
 ---
-title: "How to Watermark PDF in Java using GroupDocs.Watermark"
-description: "Learn how to watermark PDF in Java using GroupDocs.Watermark. This guide shows how to customize watermark position, add text or image watermarks, and secure your documents."
-date: "2025-12-16"
-weight: 1
-url: "/java/advanced-features/groupdocs-watermark-java-tutorial/"
+date: '2025-12-16'
+description: เรียนรู้วิธีใส่ลายน้ำ PDF ด้วย Java โดยใช้ GroupDocs.Watermark คู่มือนี้จะแสดงวิธีปรับตำแหน่งลายน้ำ,
+  เพิ่มลายน้ำข้อความหรือรูปภาพ, และปกป้องเอกสารของคุณ
 keywords:
 - GroupDocs Watermark Java
 - Java watermarking techniques
 - text watermarks in Java
+title: วิธีใส่ลายน้ำ PDF ด้วย Java โดยใช้ GroupDocs.Watermark
 type: docs
+url: /th/java/advanced-features/groupdocs-watermark-java-tutorial/
+weight: 1
 ---
 
-# How to Watermark PDF in Java with GroupDocs.Watermark
+# วิธีใส่ลายน้ำ PDF ใน Java ด้วย GroupDocs.Watermark
 
-Protecting your PDFs from unauthorized distribution is a top priority for many developers and businesses. In this tutorial you’ll discover **how to watermark PDF** files in Java using the powerful GroupDocs.Watermark library. We’ll walk through everything from Maven setup to adding both text and image watermarks, plus tips on **customize watermark position**, generate watermarked PDF outputs, and integrate the solution smoothly into your existing Java projects.
+การปกป้อง PDF ของคุณจากการแจกจ่ายโดยไม่ได้รับอนุญาตเป็นสิ่งสำคัญอันดับแรกสำหรับนักพัฒนาและธุรกิจหลายแห่ง ในบทแนะนำนี้คุณจะได้เรียนรู้ **วิธีใส่ลายน้ำ PDF** ในไฟล์ Java ด้วยไลบรารีที่มีประสิทธิภาพของ GroupDocs.Watermark เราจะอธิบายขั้นตอนทั้งหมดตั้งแต่การตั้งค่า Maven ไปจนถึงการเพิ่มลายน้ำทั้งแบบข้อความและภาพ พร้อมเคล็ดลับในการ **ปรับตำแหน่งลายน้ำ**, สร้างไฟล์ PDF ที่มีลายน้ำ, และผสานโซลูชันนี้เข้ากับโครงการ Java ของคุณอย่างราบรื่น
 
-## Quick Answers
-- **What is the primary library?** GroupDocs.Watermark for Java.  
-- **Can I add both text and image watermarks?** Yes – the API supports both types.  
-- **Do I need a Maven dependency?** Absolutely; see the *maven dependency groupdocs* section below.  
-- **How do I control opacity?** Use the `setOpacity()` method on watermark objects.  
-- **Is a license required for production?** Yes, a commercial license is needed for production use.
+## คำตอบอย่างรวดเร็ว
+- **ไลบรารีหลักคืออะไร?** GroupDocs.Watermark for Java.  
+- **ฉันสามารถเพิ่มลายน้ำทั้งข้อความและภาพได้หรือไม่?** Yes – the API supports both types.  
+- **ฉันต้องการการพึ่งพา Maven หรือไม่?** Absolutely; see the *maven dependency groupdocs* section below.  
+- **ฉันจะควบคุมความโปร่งใสได้อย่างไร?** Use the `setOpacity()` method on watermark objects.  
+- **ต้องมีลิขสิทธิ์สำหรับการใช้งานในผลิตภัณฑ์หรือไม่?** Yes, a commercial license is needed for production use.
 
-## What is “how to watermark pdf” in Java?
-Watermarking a PDF means embedding visible or semi‑transparent text or images into each page of the document. This technique helps you brand, protect, or convey confidentiality statements directly inside the file, making it harder for unauthorized parties to reuse the content without your permission.
+## “วิธีใส่ลายน้ำ PDF” ใน Java คืออะไร?
+การใส่ลายน้ำ PDF หมายถึงการฝังข้อความหรือภาพที่มองเห็นได้หรือกึ่ง‑โปร่งใสลงในแต่ละหน้า ของเอกสาร เทคนิคนี้ช่วยให้คุณสร้างแบรนด์ ปกป้อง หรือสื่อสารข้อความความลับโดยตรงภายในไฟล์ ทำให้ผู้ที่ไม่ได้รับอนุญาตยากต่อการนำเนื้อหาไปใช้ซ้ำโดยไม่มีการยินยอมจากคุณ
 
-## Why use GroupDocs.Watermark for Java?
+## ทำไมต้องใช้ GroupDocs.Watermark สำหรับ Java?
 - **Rich feature set** – supports PDF, Word, Excel, PowerPoint, and image formats.  
 - **Fine‑grained control** – position, rotation, opacity, and color can be customized.  
 - **Performance‑optimized** – designed for large‑scale batch processing.  
 - **Simple Maven integration** – adds just a few lines to your `pom.xml`.
 
-## Prerequisites
-Before diving in, make sure you have the following:
-
+## ข้อกำหนดเบื้องต้น
 - **Java SE 8+** installed.  
 - **Maven** for dependency management.  
 - An IDE such as **IntelliJ IDEA** or **Eclipse**.  
 - A valid **GroupDocs.Watermark** license (trial or commercial).  
 
-## How to Watermark PDF in Java
+## วิธีใส่ลายน้ำ PDF ใน Java
 
-### Setting Up GroupDocs.Watermark
+### การตั้งค่า GroupDocs.Watermark
 
-#### Maven Dependency (maven dependency groupdocs)
+#### การกำหนดค่า Maven (maven dependency groupdocs)
 
 Add the repository and dependency to your `pom.xml`:
 
@@ -65,11 +64,11 @@ Add the repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-#### Direct Download (alternative)
+#### ดาวน์โหลดโดยตรง (ทางเลือก)
 
 You can also download the library manually from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-#### Basic Initialization
+#### การเริ่มต้นพื้นฐาน
 
 The following snippet shows how to create a `Watermarker` instance and release resources when finished:
 
@@ -89,7 +88,7 @@ public class WatermarkSetup {
 }
 ```
 
-### Adding Text Watermarks (java pdf watermark example)
+### การเพิ่มลายน้ำข้อความ (java pdf watermark example)
 
 Text watermarks are perfect for adding confidentiality notices or branding messages.
 
@@ -123,16 +122,16 @@ public class AddTextWatermark {
 }
 ```
 
-**Key parameters**
+**พารามิเตอร์สำคัญ**
 
 - `setOpacity(0.5)`: Makes the watermark semi‑transparent, which is useful when you want the underlying content still readable.  
 - `setForegroundColor` / `setBackgroundColor`: Control the visual contrast.  
 
-#### Troubleshooting Tips
+#### เคล็ดลับการแก้ไขปัญหา
 - Verify the PDF path is correct; otherwise you’ll encounter a *file not found* error.  
 - Ensure the chosen font (e.g., Arial) is installed on the host machine.
 
-### Adding Image Watermarks (add image watermark java)
+### การเพิ่มลายน้ำภาพ (add image watermark java)
 
 Embedding a logo or seal can reinforce brand identity.
 
@@ -164,30 +163,30 @@ public class AddImageWatermark {
 }
 ```
 
-**Key parameters**
+**พารามิเตอร์สำคัญ**
 
 - `setOpacity(0.5)`: Controls transparency for a subtle branding effect.  
 
-#### Troubleshooting Tips
+#### เคล็ดลับการแก้ไขปัญหา
 - Double‑check the image file path and ensure the image is accessible at runtime.  
 - If the watermark looks too large or small, adjust the image dimensions before loading.
 
-### Customizing Watermark Position
+### การปรับตำแหน่งลายน้ำ
 
 Both `TextWatermark` and `ImageWatermark` expose positioning methods such as `setHorizontalAlignment`, `setVerticalAlignment`, and `setRotationAngle`. By tweaking these, you can **customize watermark position** to appear in corners, centered, or even diagonally across the page.
 
-### Generating a Watermarked PDF (generate watermarked pdf)
+### การสร้าง PDF ที่มีลายน้ำ (generate watermarked pdf)
 
 After adding the desired watermarks, the `save()` method creates a new PDF file. This step effectively **generate watermarked pdf** output that can be distributed or stored securely.
 
-## Practical Applications
-
+## การประยุกต์ใช้งานจริง
 - **Document Protection** – Add “Confidential” stamps before sending contracts to clients.  
 - **Image Copyright** – Overlay your logo on photos you sell online.  
 - **Educational Materials** – Watermark lecture slides to deter unauthorized sharing.  
 - **Marketing Collateral** – Brand PDFs with your company’s visual identity.
 
-## Common Issues and Solutions
+## ปัญหาที่พบบ่อยและวิธีแก้
+
 | Issue | Solution |
 |-------|----------|
 | **File not found** | Verify absolute/relative paths and ensure the file exists. |
@@ -195,43 +194,43 @@ After adding the desired watermarks, the `save()` method creates a new PDF file.
 | **Watermark not visible** | Increase opacity or change color contrast; also ensure you’re saving the document after adding the watermark. |
 | **Large PDF processing time** | Use `watermarker.optimizeResources()` before saving to reduce memory usage. |
 
-## FAQ's
-  
-### 1. Can I add multiple watermarks to the same document using GroupDocs.Watermark?  
+## คำถามที่พบบ่อย
+
+### 1. ฉันสามารถเพิ่มลายน้ำหลายรายการในเอกสารเดียวกันโดยใช้ GroupDocs.Watermark ได้หรือไม่?
 
 Yes, you can add several watermarks—text and/or images—by calling the `add()` method multiple times before saving.
 
-### 2. Is it possible to remove existing watermarks from a document with GroupDocs.Watermark?  
+### 2. เป็นไปได้หรือไม่ที่จะลบลายน้ำที่มีอยู่แล้วจากเอกสารด้วย GroupDocs.Watermark?
 
 GroupDocs.Watermark primarily focuses on adding watermarks. To remove or extract existing watermarks, you'll need more advanced techniques or manual editing, depending on the document type.
 
-### 3. Does GroupDocs.Watermark support watermarking for all file formats?  
+### 3. GroupDocs.Watermark รองรับการใส่ลายน้ำสำหรับทุกรูปแบบไฟล์หรือไม่?
 
 It supports many popular formats like PDF, Word, Excel, PowerPoint, images, and more, but always check their official documentation for specific format support.
 
-### 4. Can I automate watermark placement and styling based on page layout or content?  
+### 4. ฉันสามารถทำให้การวางลายน้ำและการจัดรูปแบบอัตโนมัติตามเค้าโครงหรือเนื้อหาของหน้าได้หรือไม่?
 
 Yes, you can programmatically control watermark positioning, size, and styling based on your logic, such as page dimensions or content areas.
 
-### 5. Is there a way to apply transparent or semi-transparent watermarks in GroupDocs.Watermark?  
+### 5. มีวิธีใดบ้างที่จะใช้ลายน้ำแบบโปร่งใสหรือกึ่ง‑โปร่งใสใน GroupDocs.Watermark?
 
-Absolutely. Use the `setOpacity()` method to adjust transparency levels, enabling semi-transparent watermarks for subtle protection.
+Absolutely. Use the `setOpacity()` method to adjust transparency levels, enabling semi‑transparent watermarks for subtle protection.
 
-## Frequently Asked Questions
+## คำถามที่พบบ่อย
 
-**Q: How do I add an image watermark using Java?**  
+**Q: ฉันจะเพิ่มลายน้ำภาพโดยใช้ Java อย่างไร?**  
 A: Use the `ImageWatermark` class, provide an `InputStream` for your logo, configure opacity, and call `watermarker.add(imageWatermark)` before saving.
 
-**Q: What Maven coordinates should I use for the latest GroupDocs.Watermark?**  
+**Q: ควรใช้พิกัด Maven ใดสำหรับ GroupDocs.Watermark เวอร์ชันล่าสุด?**  
 A: Include the repository `https://releases.groupdocs.com/watermark/java/` and the dependency `com.groupdocs:groupdocs-watermark:24.11` (or newer).
 
-**Q: Can I set the watermark to appear diagonally across the page?**  
+**Q: ฉันสามารถตั้งค่าลายน้ำให้ปรากฏเป็นแนวทแยงมุมบนหน้าได้หรือไม่?**  
 A: Yes, set the rotation angle with `setRotationAngle(45)` (degrees) on the watermark object.
 
-**Q: Is it possible to watermark password‑protected PDFs?**  
+**Q: สามารถใส่ลายน้ำใน PDF ที่มีการป้องกันด้วยรหัสผ่านได้หรือไม่?**  
 A: You can open protected PDFs by providing the password in `PdfLoadOptions`, then apply watermarks as usual.
 
-**Q: Does the library support batch processing of multiple PDFs?**  
+**Q: ไลบรารีนี้รองรับการประมวลผลเป็นชุดของหลาย PDF หรือไม่?**  
 A: Absolutely. Loop through a collection of file paths, instantiate a `Watermarker` for each, add watermarks, and save the output.
 
 ---
