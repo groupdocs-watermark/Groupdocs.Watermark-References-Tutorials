@@ -1,40 +1,42 @@
 ---
-title: "Replace Diagram Images Java with GroupDocs.Watermark – Full Guide"
-description: "Learn how to replace diagram images java using GroupDocs.Watermark for Java and read image bytes java efficiently. Automate updates with clear step‑by‑step code."
-date: "2025-12-17"
-weight: 1
-url: "/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/"
+date: '2025-12-17'
+description: Tìm hiểu cách thay thế hình ảnh sơ đồ trong Java bằng GroupDocs.Watermark
+  cho Java và đọc byte hình ảnh trong Java một cách hiệu quả. Tự động cập nhật với
+  mã rõ ràng, từng bước.
 keywords:
 - GroupDocs Watermark Java
 - automate image replacement
 - Java diagram watermarking
+title: Thay thế hình ảnh sơ đồ Java bằng GroupDocs.Watermark – Hướng dẫn đầy đủ
 type: docs
+url: /vi/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/
+weight: 1
 ---
 
-# Replace Diagram Images Java with GroupDocs.Watermark
+# Thay Thế Hình Ảnh Sơ Đồ Java bằng GroupDocs.Watermark
 
-Updating graphics inside Visio‑style diagrams can be a tedious manual task, especially when you need to **replace diagram images java** across many files. In this tutorial you’ll discover how to automate that process with GroupDocs.Watermark for Java, read image bytes java, and apply the changes programmatically. By the end, you’ll have a reusable solution that saves time, reduces human error, and keeps your documentation consistently branded.
+Cập nhật đồ họa trong các sơ đồ kiểu Visio có thể là một công việc thủ công tẻ nhạt, đặc biệt khi bạn cần **replace diagram images java** trên nhiều tệp. Trong hướng dẫn này, bạn sẽ khám phá cách tự động hoá quy trình đó với GroupDocs.Watermark cho Java, read image bytes java, và áp dụng các thay đổi một cách lập trình. Khi kết thúc, bạn sẽ có một giải pháp có thể tái sử dụng giúp tiết kiệm thời gian, giảm lỗi con người, và giữ cho tài liệu của bạn luôn có thương hiệu nhất quán.
 
-## Quick Answers
+## Câu trả lời nhanh
 - **What library handles diagram image replacement?** GroupDocs.Watermark for Java  
 - **Which method reads image bytes?** `FileInputStream` combined with `read(byte[])` (read image bytes java)  
 - **Do I need a license?** A trial license works for evaluation; a full license is required for production.  
 - **Supported diagram formats?** VSDX, VDX, VDXM, and other Microsoft Visio files.  
 - **How long does implementation take?** Roughly 15‑20 minutes for a basic replace‑diagram‑images‑java workflow.
 
-## What is replace diagram images java?
-Replacing diagram images Java refers to programmatically locating image‑bearing shapes inside a Visio diagram and swapping the embedded picture with a new file using Java code. This technique is ideal for bulk branding updates, product‑catalog refreshes, or any scenario where visual assets evolve over time.
+## Replace diagram images java là gì?
+Thay thế hình ảnh sơ đồ Java đề cập đến việc tìm kiếm một cách lập trình các hình dạng chứa hình ảnh bên trong một sơ đồ Visio và thay thế hình ảnh nhúng bằng một tệp mới bằng mã Java. Kỹ thuật này lý tưởng cho việc cập nhật thương hiệu hàng loạt, làm mới danh mục sản phẩm, hoặc bất kỳ trường hợp nào mà tài sản hình ảnh thay đổi theo thời gian.
 
-## Why use GroupDocs.Watermark for this task?
-GroupDocs.Watermark provides a high‑level API that abstracts the low‑level XML of Visio files, letting you focus on business logic rather than file format quirks. It handles loading, content navigation, and saving while preserving diagram integrity.
+## Tại sao nên sử dụng GroupDocs.Watermark cho nhiệm vụ này?
+GroupDocs.Watermark cung cấp một API cấp cao trừu tượng hoá XML cấp thấp của các tệp Visio, cho phép bạn tập trung vào logic nghiệp vụ thay vì những chi tiết phức tạp của định dạng tệp. Nó xử lý việc tải, điều hướng nội dung và lưu lại trong khi duy trì tính toàn vẹn của sơ đồ.
 
-## Prerequisites
+## Yêu cầu trước
 - JDK 8 or higher installed.  
 - Maven (or manual JAR handling) for dependency management.  
 - Basic Java knowledge (classes, streams, exception handling).  
 
-### Required Libraries, Versions, and Dependencies
-To use GroupDocs.Watermark for Java, include the repository and dependency in your `pom.xml`:
+### Thư viện, Phiên bản và Phụ thuộc cần thiết
+Để sử dụng GroupDocs.Watermark cho Java, bao gồm kho lưu trữ và phụ thuộc trong tệp `pom.xml` của bạn:
 
 ```xml
 <repositories>
@@ -54,24 +56,24 @@ To use GroupDocs.Watermark for Java, include the repository and dependency in yo
 </dependencies>
 ```
 
-You can also download the latest JAR from the official site: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Bạn cũng có thể tải JAR mới nhất từ trang chính thức: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Environment Setup Requirements
+### Yêu cầu thiết lập môi trường
 - An IDE such as IntelliJ IDEA or Eclipse.  
 - Access to the diagram files you intend to modify.  
 
-### Knowledge Prerequisites
+### Kiến thức tiên quyết
 Familiarity with Java I/O, object‑oriented programming, and basic diagram concepts will help you follow the steps smoothly.
 
-## Setting Up GroupDocs.Watermark for Java
+## Cài đặt GroupDocs.Watermark cho Java
 1. **Add the Maven dependency** (as shown above) or place the JARs on your classpath.  
 2. **Obtain a trial or permanent license** from the GroupDocs store: [GroupDocs](https://purchase.groupdocs.com/temporary-license/).  
 3. **Import the required packages** and create a `Watermarker` instance (see code below).
 
-## How to replace diagram images java with GroupDocs.Watermark
+## Cách thay thế hình ảnh sơ đồ java bằng GroupDocs.Watermark
 Below is a complete, step‑by‑step guide that walks you through initializing the library, accessing diagram content, swapping images, and persisting the changes.
 
-### Step 1: Initialize Watermarker
+### Bước 1: Khởi tạo Watermarker
 First, create a `Watermarker` object that points to your diagram file.
 
 ```java
@@ -88,9 +90,10 @@ public class FeatureWatermarkerInitialization {
 }
 ```
 
-*Why this matters:* The `Watermarker` opens the file and prepares internal structures for later manipulation.
+*Why this matters:* `Watermarker` opens the file and prepares internal structures for later manipulation.  
+*Trong tiếng Việt:* *Tại sao điều này quan trọng:* `Watermarker` mở tệp và chuẩn bị các cấu trúc nội bộ cho việc thao tác sau này.
 
-### Step 2: Access Diagram Content
+### Bước 2: Truy cập nội dung sơ đồ
 Retrieve the diagram’s internal representation so you can enumerate shapes.
 
 ```java
@@ -104,9 +107,10 @@ public class FeatureAccessDiagramContent {
 }
 ```
 
-*Why this matters:* `DiagramContent` gives you page and shape collections, the entry point for image replacement.
+*Why this matters:* `DiagramContent` gives you page and shape collections, the entry point for image replacement.  
+*Trong tiếng Việt:* *Tại sao điều này quan trọng:* `DiagramContent` cung cấp các bộ sưu tập trang và hình dạng, là điểm khởi đầu cho việc thay thế hình ảnh.
 
-### Step 3: Read image bytes java and replace shape images
+### Bước 3: Đọc byte ảnh java và thay thế hình ảnh hình dạng
 Now we locate each shape that contains an image, read the new picture file (read image bytes java), and apply it.
 
 ```java
@@ -136,9 +140,12 @@ public class FeatureReplaceShapeImages {
 
 *Key points:*  
 - `FileInputStream` reads the new PNG into a byte array—this is the **read image bytes java** step.  
-- `DiagramWatermarkableImage` wraps the byte array so the library can embed it into the shape.
+- `DiagramWatermarkableImage` wraps the byte array so the library can embed it into the shape.  
+*Trong tiếng Việt:*  
+- `FileInputStream` đọc PNG mới vào một mảng byte — đây là bước **read image bytes java**.  
+- `DiagramWatermarkableImage` bao bọc mảng byte để thư viện có thể nhúng nó vào hình dạng.
 
-### Step 4: Save and close Watermarker
+### Bước 4: Lưu và đóng Watermarker
 Persist the modified diagram and release resources.
 
 ```java
@@ -153,43 +160,49 @@ public class FeatureSaveAndCloseWatermarker {
 }
 ```
 
-*Why this matters:* Saving writes the new images into the file, and closing frees memory—essential for batch processing many diagrams.
+*Why this matters:* Saving writes the new images into the file, and closing frees memory—essential for batch processing many diagrams.  
+*Trong tiếng Việt:* *Tại sao điều này quan trọng:* Lưu sẽ ghi các hình ảnh mới vào tệp, và đóng sẽ giải phóng bộ nhớ — rất cần thiết cho việc xử lý hàng loạt nhiều sơ đồ.
 
-## Practical Applications
+## Ứng dụng thực tế
 1. **Corporate branding updates** – Replace old logos across all org charts in one run.  
 2. **Product catalog refreshes** – Swap out discontinued product images in technical manuals.  
 3. **Educational material maintenance** – Keep scientific illustrations current without manual editing.
 
-## Performance Considerations
+## Các cân nhắc về hiệu suất
 - **Process one diagram at a time** when dealing with large files to keep memory usage low.  
 - **Close streams promptly** (as shown) to avoid file locks.  
 - **Profile I/O** if you need to handle hundreds of diagrams; consider multithreading with separate `Watermarker` instances per thread.
 
-## Common Issues & Solutions
+## Các vấn đề thường gặp & Giải pháp
 | Issue | Solution |
 |-------|----------|
 | **Null image after replacement** | Verify that the source PNG is a supported format and that the byte array is fully read before calling `setImage`. |
 | **OutOfMemoryError on large diagrams** | Process diagrams sequentially, and call `System.gc()` after each `watermarker.close()` if necessary. |
 | **License exception** | Ensure the trial or purchased license file is correctly referenced before initializing `Watermarker`. |
 
-## Frequently Asked Questions
+## Câu hỏi thường gặp
 
 **Q: Can I replace images in password‑protected diagrams?**  
-A: Yes. Load the diagram with appropriate `DiagramLoadOptions` that include the password, then proceed with the same replacement steps.
+A: Yes. Load the diagram with appropriate `DiagramLoadOptions` that include the password, then proceed with the same replacement steps.  
+*Trong tiếng Việt:* Có. Tải sơ đồ bằng `DiagramLoadOptions` phù hợp có chứa mật khẩu, sau đó thực hiện các bước thay thế tương tự.
 
 **Q: Does this work with other diagram formats like VDX?**  
-A: GroupDocs.Watermark supports VDX, VDXM, and VSDX out of the box. Just change the file extension in the path.
+A: GroupDocs.Watermark supports VDX, VDXM, and VSDX out of the box. Just change the file extension in the path.  
+*Trong tiếng Việt:* GroupDocs.Watermark hỗ trợ VDX, VDXM và VSDX ngay lập tức. Chỉ cần thay đổi phần mở rộng tệp trong đường dẫn.
 
 **Q: How do I replace images in all pages, not just the first one?**  
-A: Iterate over `content.getPages()` and apply the inner shape loop to each page.
+A: Iterate over `content.getPages()` and apply the inner shape loop to each page.  
+*Trong tiếng Việt:* Lặp qua `content.getPages()` và áp dụng vòng lặp hình dạng nội bộ cho mỗi trang.
 
 **Q: Is there a way to batch process multiple diagrams?**  
-A: Wrap the four steps in a loop that reads file names from a directory, creating a new `Watermarker` for each file.
+A: Wrap the four steps in a loop that reads file names from a directory, creating a new `Watermarker` for each file.  
+*Trong tiếng Việt:* Đặt bốn bước trong một vòng lặp đọc tên tệp từ thư mục, tạo một `Watermarker` mới cho mỗi tệp.
 
 **Q: What version of GroupDocs.Watermark is required?**  
-A: The tutorial uses version 24.11, but newer releases maintain backward compatibility for these APIs.
+A: The tutorial uses version 24.11, but newer releases maintain backward compatibility for these APIs.  
+*Trong tiếng Việt:* Hướng dẫn này sử dụng phiên bản 24.11, nhưng các bản phát hành mới hơn vẫn giữ tính tương thích ngược cho các API này.
 
-## Conclusion
+## Kết luận
 You now have a complete, production‑ready workflow to **replace diagram images java** using GroupDocs.Watermark for Java. By reading image bytes java, iterating over shapes, and saving the result, you can automate branding, catalog, or educational updates at scale. Explore additional watermarking features—such as adding text watermarks or protecting diagrams—to further extend your document processing capabilities.
 
 ---
