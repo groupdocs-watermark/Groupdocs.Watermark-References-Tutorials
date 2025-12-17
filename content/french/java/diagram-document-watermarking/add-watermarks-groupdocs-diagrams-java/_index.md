@@ -1,25 +1,28 @@
 ---
-title: "Watermark Specific Diagram Page Using GroupDocs.Watermark for Java"
-description: "Learn how to watermark specific diagram page using GroupDocs.Watermark for Java, add watermark to diagram and add image watermark java. Step-by-step guide to protect your IP."
-date: "2025-12-17"
-weight: 1
-url: "/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/"
+date: '2025-12-17'
+description: Apprenez à ajouter un filigrane à une page spécifique d’un diagramme
+  avec GroupDocs.Watermark pour Java, à appliquer un filigrane à un diagramme et à
+  insérer un filigrane image en Java. Guide étape par étape pour protéger votre propriété
+  intellectuelle.
 keywords:
 - GroupDocs Watermark Java
 - adding watermarks diagrams
 - Java diagram document watermarking
+title: Filigraner une page de diagramme spécifique avec GroupDocs.Watermark pour Java
 type: docs
+url: /fr/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/
+weight: 1
 ---
 
-# Watermark Specific Diagram Page Using GroupDocs.Watermark for Java
+# Filigrane d'une page de diagramme spécifique avec GroupDocs.Watermark pour Java
 
-Protecting your diagrams is crucial, especially when it involves safeguarding intellectual property or ensuring proper attribution. In this tutorial you’ll learn **how to watermark specific diagram page** with GroupDocs.Watermark for Java, whether you need to **add watermark to diagram** as text or **add image watermark java**‑style logos. By the end of this guide you’ll be able to:
+Protéger vos diagrammes est essentiel, surtout lorsqu'il s'agit de sauvegarder la propriété intellectuelle ou d'assurer une attribution correcte. Dans ce tutoriel, vous apprendrez **comment ajouter un filigrane à une page de diagramme spécifique** avec GroupDocs.Watermark pour Java, que vous ayez besoin de **ajouter un filigrane à un diagramme** sous forme de texte ou de **logo de type add image watermark java**. À la fin de ce guide, vous serez capable de :
 
-- Seamlessly add text watermarks to chosen diagram pages.  
-- Insert image watermarks into designated sections of diagrams.  
-- Enhance performance when using GroupDocs.Watermark.
+- Ajouter sans effort des filigranes texte aux pages de diagramme choisies.  
+- Insérer des filigranes image dans des sections désignées des diagrammes.  
+- Améliorer les performances lors de l'utilisation de GroupDocs.Watermark.
 
-Let’s make sure the environment is ready before we dive into the code.
+Assurons‑nous que l'environnement est prêt avant de plonger dans le code.
 
 ## Quick Answers
 - **What does “watermark specific diagram page” mean?** It refers to applying a watermark only to selected pages of a diagram file, leaving other pages untouched.  
