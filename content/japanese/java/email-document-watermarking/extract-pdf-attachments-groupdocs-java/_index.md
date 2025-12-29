@@ -1,19 +1,19 @@
 ---
-title: "How to Extract PDF Attachments Using GroupDocs Watermark in Java"
-description: "Learn how to extract PDF attachments and understand how to extract pdf files using GroupDocs.Watermark for Java. Streamline your document management with this step‑by‑step guide."
-date: "2025-12-29"
-weight: 1
-url: "/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/"
+date: '2025-12-29'
+description: GroupDocs.Watermark for Java を使用して PDF 添付ファイルの抽出方法と PDF ファイルの抽出方法を学びましょう。このステップバイステップガイドでドキュメント管理を効率化できます。
 keywords:
 - extract PDF attachments
 - GroupDocs Watermark Java
 - document management
+title: JavaでGroupDocs Watermarkを使用してPDF添付ファイルを抽出する方法
 type: docs
+url: /ja/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/
+weight: 1
 ---
 
 # How to Extract PDF Attachments Using GroupDocs Watermark in Java
 
-In today's digital world, managing document attachments—especially PDFs that often contain embedded files like images and documents—can be challenging. **In this guide, you'll learn how to extract PDF attachments and understand how to extract pdf files** that are hidden inside a PDF container. Whether you're building an email‑document workflow or a digital archive, extracting those files quickly saves time and reduces manual effort.
+今日のデジタル社会では、特に画像や文書などの埋め込みファイルを含むことが多い PDF の添付ファイルを管理することは困難です。**このガイドでは、PDF コンテナ内に隠された PDF ファイルを抽出する方法**を学びます。メール‑ドキュメントワークフローやデジタルアーカイブを構築する場合でも、ファイルを迅速に抽出できれば時間を節約し、手作業の負担を軽減できます。
 
 ## Quick Answers
 - **What does GroupDocs.Watermark do?** It provides a simple API to read, modify, and extract content (including attachments) from PDF files.  
@@ -23,7 +23,7 @@ In today's digital world, managing document attachments—especially PDFs that o
 - **Do I need extra I/O code?** No, the library handles Java PDF file I/O internally.
 
 ## What is “how to extract pdf” in practice?
-Extracting PDF attachments means pulling out any files that were embedded inside the PDF—such as images, spreadsheets, or other PDFs—so they can be saved to the file system and processed independently.
+PDF 添付ファイルの抽出とは、PDF 内に埋め込まれた画像、スプレッドシート、他の PDF などのファイルを取り出し、ファイルシステムに保存して個別に処理できるようにすることを指します。
 
 ## Why use GroupDocs.Watermark for Java?
 - **Zero‑dependency extraction** – the library reads the PDF structure directly, no need for third‑party parsers.  
