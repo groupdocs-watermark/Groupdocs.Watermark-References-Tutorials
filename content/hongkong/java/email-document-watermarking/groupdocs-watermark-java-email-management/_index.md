@@ -1,49 +1,49 @@
 ---
-title: "load msg file java – Email Watermarking with GroupDocs.Watermark"
-description: "Learn how to load msg file java using GroupDocs.Watermark, remove embedded JPEG images, and save clean email documents for better privacy and storage."
-date: "2025-12-29"
-weight: 1
-url: "/java/email-document-watermarking/groupdocs-watermark-java-email-management/"
+date: '2025-12-29'
+description: 學習如何使用 GroupDocs.Watermark 在 Java 中載入 msg 檔案，移除內嵌 JPEG 圖像，並儲存乾淨的電子郵件文件，以提升隱私與儲存效能。
 keywords:
 - GroupDocs Watermark Java
 - Email Document Management
 - Java Email Watermarking
+title: 載入 msg 檔案 java – 使用 GroupDocs.Watermark 進行電郵浮水印
 type: docs
+url: /zh-hant/java/email-document-watermarking/groupdocs-watermark-java-email-management/
+weight: 1
 ---
 
-# load msg file java – Email Watermarking with GroupDocs.Watermark
+# load msg file java – 使用 GroupDocs.Watermark 進行電郵浮水印
 
-Managing email files that contain sensitive data or large attachments can be a headache. In this tutorial you’ll learn **how to load msg file java** with the GroupDocs.Watermark library, strip out embedded JPEG images, and save a clean version of the email. By the end, you’ll have a practical, production‑ready solution for improving data privacy and reducing storage footprints.
+管理包含敏感資料或大型附件的電郵檔案可能相當頭痛。在本教學中，你將學會 **如何在 Java 中載入 msg 檔案**，使用 GroupDocs.Watermark 函式庫去除嵌入的 JPEG 圖片，並儲存乾淨的電郵版本。完成後，你將擁有一套實用、可直接投入生產環境的解決方案，以提升資料隱私並減少儲存空間佔用。
 
 ## Quick Answers
-- **What does “load msg file java” mean?** It refers to opening a Microsoft Outlook `.msg` email file in a Java application.  
-- **Which library handles this?** GroupDocs.Watermark for Java provides built‑in support for `.msg` and `.eml` formats.  
-- **Can I remove images automatically?** Yes – you can iterate over embedded objects and delete JPEGs programmatically.  
-- **Do I need a license?** A free trial works for development; a permanent license is required for production.  
-- **Is this approach memory‑efficient?** Processing emails in batches and closing the Watermarker promptly keeps memory usage low.
+- **「load msg file java」是什麼意思？** 它指的是在 Java 應用程式中開啟 Microsoft Outlook 的 `.msg` 電郵檔案。  
+- **使用哪個函式庫？** GroupDocs.Watermark for Java 內建支援 `.msg` 與 `.eml` 格式。  
+- **可以自動移除圖片嗎？** 可以——只要遍歷嵌入的物件並以程式方式刪除 JPEG。  
+- **需要授權嗎？** 開發階段可使用免費試用版；正式上線則需購買永久授權。  
+- **此方法記憶體效能如何？** 以批次方式處理電郵並即時關閉 Watermarker，可保持記憶體使用量低。
 
 ## What is “load msg file java” and why does it matter?
-Loading a `.msg` file in Java lets you programmatically inspect, modify, or sanitize email content before archiving or forwarding. This is essential for compliance (GDPR, HIPAA), reducing mailbox sizes, and ensuring that confidential images never leave your secure environment.
+在 Java 中載入 `.msg` 檔案可讓你在歸檔或轉寄前，以程式方式檢查、修改或清理電郵內容。這對於遵循 GDPR、HIPAA 等合規要求、縮減郵箱容量，以及確保機密圖片不會外流至不安全環境都相當重要。
 
 ## Prerequisites
-- **GroupDocs.Watermark** library (version 24.11 or later)  
-- Java 8 or higher (JDK)  
-- An IDE such as IntelliJ IDEA or Eclipse  
-- Maven for dependency management  
+- **GroupDocs.Watermark** 函式庫（版本 24.11 或更新）  
+- Java 8 或以上（JDK）  
+- IntelliJ IDEA、Eclipse 等 IDE  
+- 用於管理相依性的 Maven  
 
 ### Required Libraries and Versions
-- **GroupDocs.Watermark** library (version 24.11 or later)  
-- Java Development Kit (JDK) version 8 or higher
+- **GroupDocs.Watermark** 函式庫（版本 24.11 或更新）  
+- Java Development Kit (JDK) 版本 8 或以上  
 
 ### Environment Setup
-- An IDE like IntelliJ IDEA or Eclipse for Java development  
-- Maven installed on your system to manage dependencies  
+- 使用 IntelliJ IDEA 或 Eclipse 進行 Java 開發  
+- 系統已安裝 Maven 以管理相依性  
 
 ### Knowledge Prerequisites
-A basic understanding of Java programming and familiarity with email file formats will be beneficial.
+具備基本的 Java 程式設計概念，並了解電郵檔案格式會更有幫助。
 
 ## Setting Up GroupDocs.Watermark for Java
-First, add the GroupDocs.Watermark library to your Maven project.
+首先，將 GroupDocs.Watermark 函式庫加入你的 Maven 專案。
 
 **Maven Setup:**  
 ```xml
@@ -68,14 +68,14 @@ First, add the GroupDocs.Watermark library to your Maven project.
 Alternatively, download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### License Acquisition
-- Start with a free trial by downloading the library.  
-- For extended use, consider obtaining a temporary license or purchasing one.
+- 先下載函式庫取得免費試用版。  
+- 若需長期使用，可考慮取得臨時授權或直接購買正式授權。
 
 ## Implementation Guide
-Below is a step‑by‑step walkthrough of how to **load msg file java**, strip JPEG images, and save the cleaned email.
+以下提供逐步說明，教你 **load msg file java**、去除 JPEG 圖片，並儲存已清理的電郵。
 
 ### Load and Initialize Watermarker for Email
-**Overview:** This step shows how to load an email file and initialize the Watermarker, marking the starting point for any modification.
+**Overview:** 本步驟示範如何載入電郵檔案並初始化 Watermarker，為後續修改奠定基礎。
 
 #### Step 1: Import Necessary Packages
 ```java
@@ -92,7 +92,7 @@ Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/message.msg",
 *Replace `YOUR_DOCUMENT_DIRECTORY` with the actual path to your `.msg` file.*
 
 ### Access and Modify Email Content
-**Overview:** Learn how to access the content of an email and remove embedded JPEG images, enhancing privacy and reducing unnecessary data.
+**Overview:** 了解如何存取電郵內容並移除嵌入的 JPEG 圖片，以提升隱私並減少不必要的資料。
 
 #### Step 3: Access Embedded Objects
 Retrieve and iterate over embedded objects in the email. The loop checks each object’s file type and removes JPEGs.
@@ -112,7 +112,7 @@ for (int i = content.getEmbeddedObjects().getCount() - 1; i >= 0; i--) {
 *This loop identifies JPEG images and removes their references from the HTML body.*
 
 ### Save and Close Watermarker
-**Overview:** Ensure all changes are saved to a new email file before closing the Watermarker.
+**Overview:** 確保所有變更已儲存至新電郵檔案，然後關閉 Watermarker。
 
 #### Step 4: Save Changes
 ```java
@@ -127,17 +127,17 @@ watermarker.close();
 ```
 
 ## Practical Applications
-Managing email content using GroupDocs.Watermark can be invaluable in various scenarios:
+使用 GroupDocs.Watermark 管理電郵內容在多種情境下都相當有價值：
 
-- **Data Privacy:** Remove sensitive images from emails before archiving or sharing.  
-- **Storage Optimization:** Reduce email size by eliminating unnecessary attachments.  
-- **Compliance:** Ensure emails comply with data protection regulations by managing embedded media.
+- **資料隱私：** 在歸檔或分享前移除電郵中的敏感圖片。  
+- **儲存空間優化：** 刪除不必要的附件以減少電郵大小。  
+- **合規性：** 透過管理嵌入媒體，確保電郵符合資料保護法規。
 
 ## Performance Considerations
-For optimal performance, consider the following:
+為取得最佳效能，請考慮以下建議：
 
-- Process large batches of emails in segments to manage memory usage efficiently.  
-- Regularly monitor resource consumption and adjust Java heap settings as needed.
+- 將大量電郵分段批次處理，以有效控制記憶體使用。  
+- 定期監控資源消耗，必要時調整 Java heap 設定。
 
 ## Common Issues and Solutions
 - **File not found:** Verify the path in `new Watermarker("...")` is correct and accessible.  
