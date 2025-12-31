@@ -1,19 +1,21 @@
 ---
-title: "How to Search Email Text with GroupDocs.Watermark Java – A Comprehensive Guide"
-description: "Learn how to search email text using GroupDocs.Watermark for Java, manage bodies, subjects, and attachments efficiently."
-date: "2025-12-31"
-weight: 1
-url: "/java/email-document-watermarking/master-groupdocs-watermark-java-email-text-search/"
+date: '2025-12-31'
+description: Aprende a buscar texto en correos electrónicos usando GroupDocs.Watermark
+  para Java, gestiona cuerpos, asuntos y archivos adjuntos de manera eficiente.
 keywords:
 - GroupDocs Watermark Java
 - search text in email body
 - manage email watermarks
+title: Cómo buscar texto de correo electrónico con GroupDocs.Watermark Java – Guía
+  completa
 type: docs
+url: /es/java/email-document-watermarking/master-groupdocs-watermark-java-email-text-search/
+weight: 1
 ---
 
 # How to Search Email Text with GroupDocs.Watermark Java
 
-Finding a specific phrase inside an email’s subject, body, or attachments can be a headache—especially when you’re handling dozens or hundreds of messages. In this tutorial you’ll discover **how to search email** content quickly and accurately using **GroupDocs.Watermark for Java**. We’ll walk through setup, code, and best‑practice tips so you can integrate email text search into your own applications with confidence.
+Encontrar una frase específica dentro del asunto, cuerpo o archivos adjuntos de un correo electrónico puede ser un dolor de cabeza, sobre todo cuando se manejan decenas o cientos de mensajes. En este tutorial descubrirás **cómo buscar texto en correos electrónicos** de forma rápida y precisa usando **GroupDocs.Watermark para Java**. Recorreremos la configuración, el código y consejos de buenas prácticas para que puedas integrar la búsqueda de texto en correos electrónicos en tus propias aplicaciones con confianza.
 
 ## Quick Answers
 - **What library lets me search email text in Java?** GroupDocs.Watermark for Java.  
