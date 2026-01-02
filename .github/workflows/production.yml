@@ -61,7 +61,7 @@ jobs:
       # Configure AWS credentials
       - name: Sync to Ceph S3
         run: |
-          aws s3 sync ./public/ s3://tutorials-aspose-com/watermark/ \
+          aws s3 sync ./public/ s3://tutorials-groupdocs-com/watermark/ \
             --endpoint-url https://s3.dynabic.com \
             --acl public-read \
             --delete \
@@ -77,5 +77,5 @@ jobs:
         run: |
            curl -siG \
             -H "X-Api-Key: ${{ secrets.BUNNY_API_KEY }}" \
-            --data-urlencode "url=https://tutorials.conholdate.com/watermark" \
+            --data-urlencode "url=https://tutorials.groupdocs.com/watermark" \
             "https://api.dynabic.com/bn/purge?async=true"
