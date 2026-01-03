@@ -1,19 +1,20 @@
 ---
-title: "List Email Recipients Java with GroupDocs.Watermark"
-description: "Learn how to list email recipients java using GroupDocs.Watermark – automate extracting To, CC, and BCC from email documents."
-date: "2026-01-03"
-weight: 1
-url: "/java/email-document-watermarking/java-email-parsing-groupdocs-watermark-recipients/"
+date: '2026-01-03'
+description: Leer hoe je e‑mailontvangers kunt weergeven in Java met GroupDocs.Watermark
+  – automatiseer het extraheren van Aan, CC en BCC uit e‑maildocumenten.
 keywords:
 - Java email parsing
 - GroupDocs.Watermark Java
 - listing email recipients
+title: Lijst e‑mailontvangers Java met GroupDocs.Watermark
 type: docs
+url: /nl/java/email-document-watermarking/java-email-parsing-groupdocs-watermark-recipients/
+weight: 1
 ---
 
 # List Email Recipients Java with GroupDocs.Watermark
 
-Extracting every **To**, **CC**, and **BCC** address from an email file can be tedious when you’re handling dozens or hundreds of messages. In this tutorial you’ll learn how to **list email recipients java** quickly and reliably by leveraging the GroupDocs.Watermark Java library. We’ll walk through setup, code walkthroughs, and real‑world use cases so you can integrate this capability into your own applications.
+Het extraheren van elk **To**, **CC**, en **BCC** adres uit een e‑mailbestand kan tijdrovend zijn wanneer je tientallen of honderden berichten moet verwerken. In deze tutorial leer je hoe je **list email recipients java** snel en betrouwbaar kunt uitvoeren met behulp van de GroupDocs.Watermark Java‑bibliotheek. We lopen door de installatie, code‑uitleg en praktijkvoorbeelden zodat je deze functionaliteit in je eigen applicaties kunt integreren.
 
 ## Quick Answers
 - **What does this code do?** It opens an email file and prints all To, CC, and BCC addresses.  
@@ -24,7 +25,7 @@ Extracting every **To**, **CC**, and **BCC** address from an email file can be t
 
 ## Introduction
 
-Are you tired of manually sifting through email data to extract recipient lists? Automating this task can save time and reduce errors, especially when dealing with large volumes of emails. This guide will show you how to leverage the powerful GroupDocs.Watermark Java library to parse email documents and **list email recipients java** efficiently.
+Ben je het zat om handmatig door e‑mailgegevens te zoeken om ontvangerslijsten te extraheren? Het automatiseren van deze taak kan tijd besparen en fouten verminderen, vooral bij grote hoeveelheden e‑mails. Deze gids laat zien hoe je de krachtige GroupDocs.Watermark Java‑bibliotheek kunt gebruiken om e‑maildocumenten te parseren en **list email recipients java** efficiënt uit te voeren.
 
 **What You'll Learn**
 - Setting up your environment for using GroupDocs.Watermark for Java  
@@ -133,7 +134,7 @@ Retrieving direct (To) recipients is straightforward once you have initialized y
    
    EmailContent content = watermarker.getContent(EmailContent.class);
    ```
-2. **Iterate and List Recipients**  
+2. **ate and List Recipients**  
    Loop through the list of direct recipients and print each email address.  
    ```java
    for (EmailAddress address : content.getTo()) {
