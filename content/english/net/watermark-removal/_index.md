@@ -1,5 +1,5 @@
 ---
-title: "Remove Watermarks from Documents in .NET
+title: "Remove Watermarks from Documents in .NET"
 linktitle: "Watermark Removal Tutorials"
 description: "Master programmatic watermark removal from PDFs, Word, Excel & more using GroupDocs.Watermark .NET. Step-by-step C# tutorials with working code examples."
 keywords: "remove watermarks from documents .NET, GroupDocs watermark removal tutorial, delete watermarks programmatically C#, automated watermark removal .NET, remove PDF watermarks, remove Word watermarks"
