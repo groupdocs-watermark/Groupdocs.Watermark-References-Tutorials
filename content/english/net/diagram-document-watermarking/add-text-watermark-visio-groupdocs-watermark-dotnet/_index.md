@@ -5,10 +5,6 @@ description: "Protect your Visio files with text watermarks using GroupDocs.Wate
 keywords: "watermark Visio diagram .NET, protect Visio documents, GroupDocs.Watermark tutorial, Visio file security .NET, add custom watermark Visio files"
 weight: 1
 url: "/net/diagram-document-watermarking/add-text-watermark-visio-groupdocs-watermark-dotnet/"
-keywords:
-- add text watermark Visio
-- GroupDocs.Watermark for .NET
-- Visio diagram watermarking
 type: docs
 date: "2025-01-02"
 lastmod: "2025-01-02"
