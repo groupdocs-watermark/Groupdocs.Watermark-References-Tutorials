@@ -1,5 +1,5 @@
 ---
-title: "How to Search Images in PDF Attachments Programmatically
+title: "How to Search Images in PDF Attachments Programmatically"
 linktitle: "Search Images in PDF Attachments"
 second_title: GroupDocs.Watermark .NET API
 description: "Learn how to search and extract images from PDF attachments using C# and .NET. Complete guide with code examples for automated PDF image scanning and watermark detection."
