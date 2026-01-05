@@ -1,5 +1,5 @@
 ---
-title: "How to Add Watermark to PDF C# - Complete GroupDocs.Watermark Tutorial
+title: How to Add Watermark to PDF C# - Complete GroupDocs.Watermark Tutorial
 linktitle: "Add Watermark to PDF C#"
 description: "Learn how to add watermarks to PDF, Word, Excel & PowerPoint in C# using GroupDocs.Watermark. Complete code examples, troubleshooting & best practices included."
 keywords: "add watermark to PDF C#, watermark documents .NET, GroupDocs.Watermark tutorial, protect documents with watermark, search watermarks programmatically, batch watermark files C#"
