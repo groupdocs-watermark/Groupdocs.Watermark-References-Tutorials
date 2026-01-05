@@ -12,8 +12,6 @@ keywords:
 - GroupDocs Watermark library
 - .NET document protection
 type: docs
-- protect documents with watermarks .NET
-- watermark PDF programmatically .NET Core
 categories: [".NET Development"]
 tags: ["document-security", "watermarking", "csharp", "dotnet-core"]
 ---
