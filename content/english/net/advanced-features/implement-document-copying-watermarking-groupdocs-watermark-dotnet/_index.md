@@ -5,10 +5,6 @@ description: "Learn how to add watermarks to PDF files in C# using GroupDocs.Wat
 keywords: "add watermark to PDF C#, document watermarking .NET tutorial, watermark PDF files programmatically .NET, add text watermark to document C#, batch watermark documents C# code, protect documents with watermarks .NET"
 weight: 1
 url: "/net/advanced-features/implement-document-copying-watermarking-groupdocs-watermark-dotnet/"
-keywords:
-- document copying and watermarking
-- GroupDocs.Watermark for .NET
-- text watermarks in .NET
 type: docs
 date: "2025-01-02"
 lastmod: "2025-01-02"

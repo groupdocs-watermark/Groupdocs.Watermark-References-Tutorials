@@ -5,10 +5,6 @@ description: "Learn how to add text and image watermarks to images in C# using .
 keywords: "add watermark to images in C#, protect images with watermark .NET, C# image watermark tutorial, bulk watermark images programmatically, automated watermarking solution C#"
 weight: 1
 url: "/net/advanced-features/groupdocs-watermark-net-image-text-watermarks/"
-keywords:
-- image watermarking
-- text watermarking in .NET
-- GroupDocs.Watermark for .NET
 type: docs
 date: "2025-01-02"
 lastmod: "2025-01-02"

@@ -5,10 +5,6 @@ description: "Learn how to add, rotate, and customize text watermarks in C# usin
 keywords: "add text watermark to PDF C#, rotate watermark .NET, C# watermark library tutorial, GroupDocs watermark examples, how to add watermark to Word document C#, diagonal watermark text .NET code, watermark PDF programmatically C#, protect documents with watermarks .NET"
 weight: 1
 url: "/net/advanced-features/professional-watermark-creation-net-groupdocs/"
-keywords:
-- professional watermark creation .NET
-- text watermarks .NET GroupDocs
-- rotate text watermarks .NET
 type: docs
 date: "2025-01-02"
 lastmod: "2025-01-02"

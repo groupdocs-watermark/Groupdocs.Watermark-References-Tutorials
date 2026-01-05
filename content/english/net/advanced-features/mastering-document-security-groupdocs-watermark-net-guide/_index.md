@@ -5,10 +5,6 @@ description: "Learn how to add watermarks to PDF, Word, Excel & PowerPoint in C#
 keywords: "add watermark to PDF C#, watermark documents .NET, GroupDocs.Watermark tutorial, protect documents with watermark, search watermarks programmatically, batch watermark files C#"
 weight: 1
 url: "/net/advanced-features/mastering-document-security-groupdocs-watermark-net-guide/"
-keywords:
-- document security with GroupDocs.Watermark for .NET
-- watermark configuration in .NET applications
-- search and verify watermarks using GroupDocs
 type: docs
 date: "2025-01-02"
 lastmod: "2025-01-02"
