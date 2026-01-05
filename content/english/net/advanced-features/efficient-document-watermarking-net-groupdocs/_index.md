@@ -2,7 +2,6 @@
 title: "How to Add Watermarks to PDF, Excel & Word Files in C#"
 linktitle: "Document Watermarking in C#"
 description: "Learn how to add watermarks to documents programmatically in C# using GroupDocs.Watermark. Protect PDFs, Excel, Word files with text or image watermarks in minutes."
-keywords: "how to add watermark to pdf in c#, watermark documents programmatically, batch watermark documents c#, protect documents with watermarks .net, add text watermark to excel c#"
 weight: 1
 url: "/net/advanced-features/efficient-document-watermarking-net-groupdocs/"
 keywords:
