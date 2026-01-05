@@ -7,10 +7,6 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 weight: 1
 url: "/net/diagram-document-watermarking/automate-text-replacement-vsdx-diagrams-groupdocs/"
-keywords:
-- automate text replacement in VSDX diagrams
-- GroupDocs.Watermark for .NET API
-- text manipulation in diagram shapes
 type: docs
 categories: ["Diagram Automation"]
 tags: ["visio-automation", "vsdx-editing", "dotnet", "csharp", "diagram-processing"]
