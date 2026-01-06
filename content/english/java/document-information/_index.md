@@ -1,13 +1,28 @@
 ---
-title: "Document Information Extraction Tutorials for GroupDocs.Watermark Java"
-description: "Learn to extract and analyze document metadata, content structure, and format information with these GroupDocs.Watermark for Java tutorials."
+title: "Extract PDF Page Size – GroupDocs.Watermark Java Tutorials"
+description: "Learn how to extract PDF page size, extract document info, and list supported formats Java using GroupDocs.Watermark for Java. Comprehensive guides for developers."
 weight: 14
 url: "/java/document-information/"
 type: docs
+date: 2025-12-20
 ---
-# Document Information Extraction Tutorials for GroupDocs.Watermark Java
 
-Our document information tutorials show you how to analyze documents using GroupDocs.Watermark for Java. These practical guides demonstrate how to extract document metadata, identify document structure elements like sections and headers, retrieve shape and image information, and determine document dimensions and properties. Each tutorial includes complete Java code examples for document analysis scenarios, helping you build applications that can make intelligent decisions about watermark placement and style based on document characteristics.
+# Extract PDF Page Size – Document Information Extraction Tutorials for GroupDocs.Watermark Java
+
+If you need to **extract PDF page size** as part of a larger document‑analysis workflow, you’re in the right place. This hub gathers all the essential GroupDocs.Watermark for Java tutorials that help you pull metadata, understand document structure, and work with shapes, images, and dimensions. Whether you’re building a watermarking engine that adapts to page size or simply need to audit PDF documents, these guides give you ready‑to‑run Java code and practical tips.
+
+## Extract PDF Page Size with GroupDocs.Watermark for Java
+
+GroupDocs.Watermark makes it straightforward to read a PDF’s page dimensions without opening the file in a viewer. By extracting the page size early, you can decide the optimal watermark placement, scale graphics appropriately, or generate size‑based reports. The following tutorials walk you through every step—from basic metadata extraction to handling complex documents with multiple sections.
+
+## What You’ll Find Here
+
+- **Extract document info** – Learn how to pull file type, page count, size, and more.
+- **Extract PDF page size** – Get precise width and height for each page.
+- **List supported formats Java** – See the full range of file types GroupDocs.Watermark can process.
+- **Advanced scenarios** – Work with Word sections, slide backgrounds, and embedded shapes.
+
+Below is the curated list of tutorials. Click any link to dive straight into the code and explanations.
 
 ## Available Tutorials
 
@@ -40,3 +55,5 @@ Learn how to efficiently retrieve and manipulate section properties in Word docu
 - [GroupDocs.Watermark Forum](https://forum.groupdocs.com/c/watermark)
 - [Free Support](https://forum.groupdocs.com/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---

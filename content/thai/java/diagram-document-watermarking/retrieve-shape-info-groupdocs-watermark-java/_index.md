@@ -1,23 +1,24 @@
 ---
-title: "Extract Shape Information Java: Using GroupDocs.Watermark for Diagrams"
-description: "Learn how to extract shape information java with GroupDocs.Watermark for Java. Retrieve dimensions, positions, and text from diagram files efficiently."
-date: "2025-12-20"
-weight: 1
-url: "/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/"
+date: '2025-12-20'
+description: เรียนรู้วิธีดึงข้อมูลรูปร่างใน Java ด้วย GroupDocs.Watermark for Java.
+  ดึงมิติ, ตำแหน่ง และข้อความจากไฟล์แผนภาพอย่างมีประสิทธิภาพ.
 keywords:
 - extract shape information Java
 - GroupDocs.Watermark diagram processing
 - Java diagram manipulation
+title: 'สกัดข้อมูลรูปร่าง Java: ใช้ GroupDocs.Watermark สำหรับแผนภาพ'
 type: docs
+url: /th/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/
+weight: 1
 ---
 
-# Extract Shape Information Java Using GroupDocs.Watermark in Diagrams
+# ดึงข้อมูลรูปทรง Java ด้วย GroupDocs.Watermark ใน Diagrams
 
-When you need to **extract shape information java** from complex diagram files, doing it manually quickly becomes impractical. This tutorial shows you how to harness GroupDocs.Watermark for Java to programmatically pull details such as dimensions, positions, rotation angles, embedded images, and text from each shape. By the end, you’ll have a clear, reusable pattern you can drop into any Java project that works with Visio‑style diagrams.
+เมื่อคุณต้องการ **extract shape information java** จากไฟล์ไดอะแกรมที่ซับซ้อน การทำด้วยตนเองจะกลายเป็นเรื่องยากลำบากอย่างรวดเร็ว บทแนะนำนี้จะแสดงวิธีใช้ GroupDocs.Watermark สำหรับ Java เพื่อดึงรายละเอียดต่าง ๆ เช่น ขนาด, ตำแหน่ง, มุมการหมุน, รูปภาพที่ฝังอยู่, และข้อความจากแต่ละรูปทรงอย่างอัตโนมัติ เมื่ออ่านจบคุณจะได้รูปแบบที่ชัดเจนและนำกลับมาใช้ใหม่ได้ในโปรเจกต์ Java ใด ๆ ที่ทำงานกับไดอะแกรมสไตล์ Visio
 
 ## Introduction
 
-Managing complex diagrams often requires accessing detailed information about their components, such as shapes and images. If you've ever needed to programmatically retrieve data like dimensions, positions, or text associated with diagram shapes using Java, this tutorial is for you. Leveraging the power of the GroupDocs.Watermark library can streamline this process in a Java application. In this guide, we'll walk through how to use GroupDocs.Watermark to **extract shape information java** from a diagram file.
+การจัดการไดอะแกรมที่ซับซ้อนมักต้องการการเข้าถึงข้อมูลรายละเอียดของส่วนประกอบต่าง ๆ เช่น รูปทรงและรูปภาพ หากคุณเคยต้องการดึงข้อมูลเช่น ขนาด, ตำแหน่ง, หรือข้อความที่เกี่ยวข้องกับรูปทรงในไดอะแกรมโดยใช้ Java บทแนะนำนี้เหมาะกับคุณ การใช้ประโยชน์จากไลบรารี GroupDocs.Watermark สามารถทำให้กระบวนการนี้ง่ายขึ้นในแอปพลิเคชัน Java ของคุณ ในคู่มือนี้เราจะอธิบายวิธีใช้ GroupDocs.Watermark เพื่อ **extract shape information java** จากไฟล์ไดอะแกรม
 
 ## Quick Answers
 - **What library should I use?** GroupDocs.Watermark for Java (v24.11+).  
@@ -28,11 +29,11 @@ Managing complex diagrams often requires accessing detailed information about th
 
 ## What is “extract shape information java”?
 
-Extract shape information java means programmatically reading a diagram file and pulling out each shape’s properties—size, location, rotation, text, and any embedded images—using Java code. This enables automated analysis, reporting, or integration with other systems such as CAD tools or data‑visualization pipelines.
+Extract shape information java หมายถึงการอ่านไฟล์ไดอะแกรมโดยอัตโนมัติและดึงคุณสมบัติของแต่ละรูปทรงออกมา—ขนาด, ตำแหน่ง, การหมุน, ข้อความ, และรูปภาพที่ฝังอยู่—โดยใช้โค้ด Java สิ่งนี้ช่วยให้สามารถทำการวิเคราะห์อัตโนมัติ, สร้างรายงาน, หรือเชื่อมต่อกับระบบอื่น ๆ เช่น เครื่องมือ CAD หรือกระบวนการแสดงผลข้อมูลได้
 
 ## Why use GroupDocs.Watermark for this task?
 
-GroupDocs.Watermark provides a high‑level abstraction over diagram formats, handling the low‑level parsing for you. It lets you focus on business logic instead of dealing with XML or binary specifications, and it works consistently across supported diagram types.
+GroupDocs.Watermark ให้การนามธรรมระดับสูงสำหรับรูปแบบไดอะแกรมต่าง ๆ จัดการการแยกข้อมูลระดับล่างให้คุณ มันทำให้คุณโฟกัสที่ตรรกะธุรกิจแทนการจัดการ XML หรือสเปคไบนารี และทำงานอย่างสม่ำเสมอในทุกประเภทไดอะแกรมที่รองรับ
 
 ## Prerequisites
 
