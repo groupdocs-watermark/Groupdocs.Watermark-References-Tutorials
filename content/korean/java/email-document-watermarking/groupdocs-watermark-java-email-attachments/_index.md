@@ -1,19 +1,20 @@
 ---
-title: "Add watermark to email attachments with GroupDocs.Watermark for Java"
-description: "Learn how to add watermark to email attachments using GroupDocs.Watermark for Java. This guide provides step‑by‑step instructions and best practices."
-date: "2025-12-29"
-weight: 1
-url: "/java/email-document-watermarking/groupdocs-watermark-java-email-attachments/"
+date: '2025-12-29'
+description: GroupDocs.Watermark for Java를 사용하여 이메일 첨부 파일에 워터마크를 추가하는 방법을 배워보세요. 이
+  가이드는 단계별 지침과 모범 사례를 제공합니다.
 keywords:
 - GroupDocs Watermark Java
 - Java email attachment watermarking
 - watermarking with GroupDocs
+title: GroupDocs.Watermark for Java를 사용하여 이메일 첨부 파일에 워터마크 추가
 type: docs
+url: /ko/java/email-document-watermarking/groupdocs-watermark-java-email-attachments/
+weight: 1
 ---
 
 # Add watermark to email attachments with GroupDocs.Watermark for Java
 
-In today's digital landscape, protecting sensitive information is crucial—especially when you **add watermark to email** attachments before they leave your inbox. Whether you're a developer looking to tighten document security or a business that wants to brand every outgoing file, this tutorial shows you how to use GroupDocs.Watermark for Java to apply text watermarks to all supported attachments inside an email message.
+오늘날 디지털 환경에서 민감한 정보를 보호하는 것은 매우 중요합니다—특히 **add watermark to email** 첨부 파일이 받은 편지함을 떠나기 전에 워터마크를 추가할 때 더욱 그렇습니다. 문서 보안을 강화하려는 개발자이든, 모든 발신 파일에 브랜드를 삽입하고 싶은 기업이든, 이 튜토리얼에서는 GroupDocs.Watermark for Java를 사용해 이메일 메시지 내 모든 지원되는 첨부 파일에 텍스트 워터마크를 적용하는 방법을 보여줍니다.
 
 ## Quick Answers
 - **What does “add watermark to email” achieve?** It embeds a visible or semi‑transparent label (e.g., “Confidential”) into every supported attachment, discouraging unauthorized distribution.  
