@@ -1,15 +1,16 @@
 ---
-title: "Extract Email Attachments with GroupDocs.Watermark Java"
-description: "Learn how to extract email attachments, add watermarks, and manage embedded content using GroupDocs.Watermark for Java."
-weight: 9
-url: "/java/email-document-watermarking/"
-type: docs
 date: 2025-12-26
+description: GroupDocs.Watermark for Java를 사용하여 이메일 첨부 파일을 추출하고, 워터마크를 추가하며, 포함된 콘텐츠를
+  관리하는 방법을 배워보세요.
+title: GroupDocs.Watermark Java로 이메일 첨부 파일 추출
+type: docs
+url: /ko/java/email-document-watermarking/
+weight: 9
 ---
 
-# Extract Email Attachments with GroupDocs.Watermark Java
+# GroupDocs.Watermark Java를 사용한 이메일 첨부 파일 추출
 
-In this comprehensive guide you’ll discover **how to extract email attachments** from Outlook‑style messages, add watermarks, and manipulate embedded content using GroupDocs.Watermark for Java. Whether you’re building a secure document‑distribution system or need to automate compliance checks, these tutorials walk you through real‑world scenarios step by step.
+이 포괄적인 가이드에서는 Outlook 스타일 메시지에서 **이메일 첨부 파일을 추출**하는 방법, 워터마크를 추가하는 방법, 그리고 GroupDocs.Watermark for Java를 사용하여 포함된 콘텐츠를 조작하는 방법을 알아볼 수 있습니다. 보안 문서 배포 시스템을 구축하거나 규정 준수 검사를 자동화해야 할 때, 이 튜토리얼은 실제 시나리오를 단계별로 안내합니다.
 
 ## Quick Answers
 - **What can I do with GroupDocs.Watermark for Java?** Extract, watermark, and edit email attachments and embedded media.  
@@ -39,44 +40,44 @@ Below you’ll find a curated list of focused tutorials that cover every step of
 
 ### Available Tutorials
 
-#### [Efficiently Remove Email Attachments Using GroupDocs.Watermark in Java](./remove-email-attachments-groupdocs-watermark-java/)
+#### [Java에서 GroupDocs.Watermark를 사용하여 이메일 첨부 파일을 효율적으로 제거하기](./remove-email-attachments-groupdocs-watermark-java/)
 Learn how to streamline email management by removing specific attachments using GroupDocs.Watermark for Java. Follow our guide to enhance productivity and security.
 
-#### [Email Document Watermarking in Java&#58; Master Management with GroupDocs.Watermark](./groupdocs-watermark-java-email-management/)
+#### [Java에서 이메일 문서 워터마크 처리: GroupDocs.Watermark를 활용한 마스터 관리](./groupdocs-watermark-java-email-management/)
 Learn how to use GroupDocs.Watermark for Java to efficiently manage email documents by watermarking and removing embedded media. Perfect your data privacy and storage optimization.
 
-#### [Extract Attachments from Excel Using GroupDocs.Watermark Java&#58; A Comprehensive Guide](./extract-attachments-excel-groupdocs-watermark-java/)
+#### [Java에서 GroupDocs.Watermark를 사용하여 Excel에서 첨부 파일 추출하기: 종합 가이드](./extract-attachments-excel-groupdocs-watermark-java/)
 Learn how to efficiently extract attachments from Excel documents using GroupDocs.Watermark for Java. Streamline your document management with this detailed tutorial.
 
-#### [How to Add Watermarks to Email Attachments Using GroupDocs.Watermark for Java](./groupdocs-watermark-java-email-attachments/)
+#### [Java용 GroupDocs.Watermark로 이메일 첨부 파일에 워터마크 추가하는 방법](./groupdocs-watermark-java-email-attachments/)
 Learn how to secure your email attachments by adding watermarks using GroupDocs.Watermark for Java. This guide provides step-by-step instructions and best practices.
 
-#### [How to Extract PDF Attachments Using GroupDocs Watermark in Java for Email Document Management](./extract-pdf-attachments-groupdocs-java/)
+#### [Java에서 이메일 문서 관리를 위해 GroupDocs Watermark를 사용하여 PDF 첨부 파일 추출하는 방법](./extract-pdf-attachments-groupdocs-java/)
 Learn how to efficiently extract attachments from PDFs using GroupDocs.Watermark for Java. Streamline your document management with this step-by-step guide.
 
-#### [Java Email Attachment Processing with GroupDocs.Watermark&#58; A Complete Guide](./java-email-attachment-processing-groupdocs-watermark/)
+#### [Java 이메일 첨부 파일 처리 with GroupDocs.Watermark: 완전 가이드](./java-email-attachment-processing-groupdocs-watermark/)
 Learn how to process and manage email attachments in Java using GroupDocs.Watermark. This guide covers setup, loading files, extracting information, and saving attachments.
 
-#### [Java Email Parsing with GroupDocs.Watermark&#58; Efficiently Listing Recipients](./java-email-parsing-groupdocs-watermark-recipients/)
+#### [Java 이메일 파싱 with GroupDocs.Watermark: 수신자 효율적 목록화](./java-email-parsing-groupdocs-watermark-recipients/)
 Automate listing To, CC, and BCC recipients from email documents using GroupDocs.Watermark for Java. Learn setup, parsing, and practical applications.
 
-#### [Java Email Watermarking with GroupDocs&#58; A Step-by-Step Guide](./java-email-watermarking-groupdocs-guide/)
+#### [Java 이메일 워터마크 처리 with GroupDocs: 단계별 가이드](./java-email-watermarking-groupdocs-guide/)
 Learn how to add watermarks to email documents using GroupDocs.Watermark for Java. This guide covers setup, implementation, and best practices.
 
-#### [Master Email Attachments in Java Using GroupDocs.Watermark&#58; A Step-by-Step Guide](./mastering-email-attachments-groupdocs-watermark-java/)
+#### [Java에서 GroupDocs.Watermark를 사용한 이메일 첨부 파일 마스터링: 단계별 가이드](./mastering-email-attachments-groupdocs-watermark-java/)
 Learn how to efficiently manage email attachments in Java using GroupDocs.Watermark. This guide covers setup, loading emails, adding attachments, and saving changes.
 
-#### [Master GroupDocs.Watermark Java for Email Text Search&#58; A Comprehensive Guide](./master-groupdocs-watermark-java-email-text-search/)
+#### [이메일 텍스트 검색을 위한 GroupDocs.Watermark Java 마스터: 종합 가이드](./master-groupdocs-watermark-java-email-text-search/)
 Learn how to use GroupDocs.Watermark for Java to efficiently search and manage text in email bodies, subjects, and attachments.
 
 ## Additional Resources
 
-- [GroupDocs.Watermark for Java Documentation](https://docs.groupdocs.com/watermark/java/)
-- [GroupDocs.Watermark for Java API Reference](https://reference.groupdocs.com/watermark/java/)
-- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
-- [GroupDocs.Watermark Forum](https://forum.groupdocs.com/c/watermark)
-- [Free Support](https://forum.groupdocs.com/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [GroupDocs.Watermark for Java 문서](https://docs.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java API 레퍼런스](https://reference.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java 다운로드](https://releases.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark 포럼](https://forum.groupdocs.com/c/watermark)
+- [무료 지원](https://forum.groupdocs.com/)
+- [임시 라이선스](https://purchase.groupdocs.com/temporary-license/)
 
 ## Frequently Asked Questions
 
@@ -97,6 +98,6 @@ A: You’ll find guidance on **search email text**, **java email parsing**, **em
 
 ---
 
-**Last Updated:** 2025-12-26  
-**Tested With:** GroupDocs.Watermark 23.12 for Java  
-**Author:** GroupDocs
+**마지막 업데이트:** 2025-12-26  
+**테스트 환경:** GroupDocs.Watermark 23.12 for Java  
+**작성자:** GroupDocs
