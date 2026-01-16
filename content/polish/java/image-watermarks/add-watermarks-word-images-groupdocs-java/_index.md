@@ -1,20 +1,22 @@
 ---
-title: "Add text watermark images to Word docs with Java"
-description: "Learn how to add text watermark images to Word documents using Java and the GroupDocs.Watermark library. Includes java add watermark picture examples."
-date: "2026-01-16"
-weight: 1
-url: "/java/image-watermarks/add-watermarks-word-images-groupdocs-java/"
+date: '2026-01-16'
+description: Dowiedz się, jak dodawać obrazy znaków wodnych z tekstem do dokumentów
+  Word przy użyciu Javy i biblioteki GroupDocs.Watermark. Zawiera przykłady dodawania
+  znaków wodnych do obrazów w Javie.
 keywords:
 - GroupDocs Watermark Java
 - add text watermarks to Word images
 - Java watermarking in Word documents
+title: Dodaj tekstowe znaki wodne do dokumentów Word w Javie
 type: docs
+url: /pl/java/image-watermarks/add-watermarks-word-images-groupdocs-java/
+weight: 1
 ---
 
 # Add text watermark images to Word docs with Java
 
 ## Introduction
-If you need to **add text watermark images** to Word documents — for branding, security, or version‑control purposes — you've come to the right place. In this tutorial we’ll walk through the exact steps to embed a text watermark onto every image inside a specific section of a Word file using **GroupDocs.Watermark for Java**. By the end, you’ll have a reusable code snippet that can be dropped into any Java project.
+Jeśli potrzebujesz **dodać tekstowe znaki wodne do obrazów** w dokumentach Word — w celach brandingu, zabezpieczenia lub kontroli wersji — trafiłeś we właściwe miejsce. W tym samouczku przeprowadzimy Cię krok po kroku przez proces osadzania tekstowego znaku wodnego na każdym obrazie w określonej sekcji pliku Word przy użyciu **GroupDocs.Watermark for Java**. Po zakończeniu będziesz mieć gotowy fragment kodu, który można wstawić do dowolnego projektu Java.
 
 ### Quick Answers
 - **What library does this use?** GroupDocs.Watermark for Java  
@@ -24,7 +26,7 @@ If you need to **add text watermark images** to Word documents — for brand
 - **What Java version is supported?** Java 8+ with Maven or Gradle builds  
 
 ## What is “add text watermark images”?
-Adding a text watermark to an image means overlaying semi‑transparent text on top of the picture so that the watermark travels with the image wherever it’s displayed or printed. In Word documents, this protects the visual content from unauthorized reuse.
+Dodanie tekstowego znaku wodnego do obrazu oznacza nałożenie półprzezroczystego tekstu na zdjęcie, tak aby znak wodny podążał za obrazem wszędzie, gdzie jest wyświetlany lub drukowany. W dokumentach Word chroni to treść wizualną przed nieautoryzowanym użyciem.
 
 ## Why use GroupDocs.Watermark for Java?
 - **Full‑document support** – works with DOCX, DOC, and other Office formats.  
@@ -158,6 +160,4 @@ You now have a complete, production‑ready method to **add text watermark image
 **Resources**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
-- [Download](https://releases.groupdocs.com/watermark/java/) GroupDocs.Watermark for Java  
-
----
+- [Download](https://releases.groupdocs.com/watermark/java/) GroupDocs.Watermark for Java
