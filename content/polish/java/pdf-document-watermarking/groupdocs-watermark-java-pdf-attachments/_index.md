@@ -1,14 +1,16 @@
 ---
-title: "Secure PDF Attachments Java Using GroupDocs Watermark"
-description: "Learn how to secure PDF attachments Java with GroupDocs Watermark. This guide shows how to add watermark to PDF attachments and includes best practices."
-date: "2026-01-29"
-weight: 1
-url: "/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-attachments/"
+date: '2026-01-29'
+description: Dowiedz się, jak zabezpieczyć załączniki PDF w Javie za pomocą GroupDocs
+  Watermark. Ten przewodnik pokazuje, jak dodać znak wodny do załączników PDF i zawiera
+  najlepsze praktyki.
 keywords:
 - GroupDocs Watermark for Java
 - watermark PDF attachments
 - Java PDF security
+title: Zabezpieczanie załączników PDF w Javie przy użyciu GroupDocs Watermark
 type: docs
+url: /pl/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-attachments/
+weight: 1
 ---
 
 # Secure PDF Attachments Java with GroupDocs Watermark
