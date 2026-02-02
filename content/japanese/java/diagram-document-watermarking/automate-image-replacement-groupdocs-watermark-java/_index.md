@@ -71,7 +71,7 @@ Java I/O、オブジェクト指向プログラミング、基本的な図の概
 ## GroupDocs.Watermark で replace diagram images java を実行する手順
 以下は、ライブラリの初期化、図コンテンツへのアクセス、画像の置換、変更の保存までをステップバイステップで示した完全なガイドです。
 
-### Step 1: Initialize Watermarker
+### ステップ 1: Watermarker を初期化する
 まず、対象の図ファイルを指す `Watermarker` オブジェクトを作成します。
 
 ```java
@@ -88,9 +88,9 @@ public class FeatureWatermarkerInitialization {
 }
 ```
 
-*Why this matters:* `Watermarker` はファイルを開き、後続の操作に備えて内部構造を準備します。
+*これが重要な理由:* `Watermarker` はファイルを開き、後続の操作に備えて内部構造を準備します。
 
-### Step 2: Access Diagram Content
+### ステップ 2: ダイアグラムのコンテンツにアクセスする
 図の内部表現を取得し、シェイプを列挙できるようにします。
 
 ```java
@@ -104,9 +104,9 @@ public class FeatureAccessDiagramContent {
 }
 ```
 
-*Why this matters:* `DiagramContent` はページとシェイプのコレクションを提供し、画像置換のエントリーポイントとなります。
+*これが重要な理由:* `DiagramContent` はページとシェイプのコレクションを提供し、画像置換のエントリーポイントとなります。
 
-### Step 3: Read image bytes java and replace shape images
+### ステップ 3: Java で画像バイトを読み取り、図形画像を置き換える
 次に、画像を含むシェイプを検出し、新しい画像ファイルを読み込んで（read image bytes java）置換します。
 
 ```java
@@ -134,11 +134,11 @@ public class FeatureReplaceShapeImages {
 }
 ```
 
-*Key points:*  
+*要点:* 
 - `FileInputStream` が新しい PNG をバイト配列に読み込む—これが **read image bytes java** のステップです。  
 - `DiagramWatermarkableImage` がバイト配列をラップし、ライブラリがシェイプに埋め込めるようにします。
 
-### Step 4: Save and close Watermarker
+### ステップ4: Watermarkerを保存して閉じる
 変更を永続化し、リソースを解放します。
 
 ```java
@@ -153,7 +153,7 @@ public class FeatureSaveAndCloseWatermarker {
 }
 ```
 
-*Why this matters:* 保存により新しい画像がファイルに書き込まれ、クローズでメモリが解放されます。多数の図をバッチ処理する際に重要です。
+*これが重要な理由:* 保存により新しい画像がファイルに書き込まれ、クローズでメモリが解放されます。多数の図をバッチ処理する際に重要です。
 
 ## 実用的な活用例
 1. **企業ブランディングの更新** – すべての組織図で古いロゴを一括置換。  

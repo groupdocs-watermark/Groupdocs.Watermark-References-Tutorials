@@ -22,7 +22,7 @@ weight: 1
 
 コードに入る前に、環境が整っていることを確認しましょう。
 
-## Quick Answers
+## クイックアンサー
 - **「watermark specific diagram page」とは何ですか？**  
   特定の図ファイルのページ（またはページ群）だけにウォーターマークを適用し、他のページはそのままにすることを指します。  
 - **必要なライブラリのバージョンは？**  
@@ -47,7 +47,7 @@ GroupDocs.Watermark は、図形式の複雑さを抽象化した高レベル AP
 
 ## GroupDocs.Watermark for Java の設定
 
-### Using Maven
+### Maven の使用
 `pom.xml` に以下を追加して GroupDocs.Watermark をプロジェクトに組み込みます。
 
 ```xml
@@ -68,13 +68,13 @@ GroupDocs.Watermark は、図形式の複雑さを抽象化した高レベル AP
 </dependencies>
 ```
 
-### Direct Download
+### 直接ダウンロード
 あるいは、[GroupDocs.Watermark for Java のリリース](https://releases.groupdocs.com/watermark/java/) から最新バージョンを直接ダウンロードしてください。
 
-#### License Acquisition
+#### ライセンスの取得
 一時的な無料トライアルライセンスをダウンロードして開始できます。継続して使用する場合は、公式サイトでフルライセンスを購入してください。
 
-### Basic Initialization and Setup
+### 基本的な初期化とセットアップ
 ライブラリが利用可能になったら、保護したい図を指す `Watermarker` インスタンスを作成します。
 
 ```java
@@ -84,7 +84,7 @@ Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx"
 
 ## **add watermark to diagram** – テキストウォーターマーク
 
-### Create a Text Watermark
+### テキスト透かしの作成
 適用したいテキスト、フォント、色、透明度を定義します。
 
 ```java
@@ -93,7 +93,7 @@ textWatermark.setForegroundColor(Color.BLUE);
 textWatermark.setOpacity(0.5f);
 ```
 
-### Set the Page Index for the Watermark
+### 透かしのページインデックスの設定
 ウォーターマークを付ける正確なページを指定します。ページインデックスはゼロベースです。
 
 ```java
@@ -101,7 +101,7 @@ DiagramPageWatermarkOptions textWatermarkOptions = new DiagramPageWatermarkOptio
 textWatermarkOptions.setPageIndex(0); // First page (index 0)
 ```
 
-### Add the Text Watermark
+### テキスト透かしの追加
 選択したページにウォーターマークを適用します。
 
 ```java
@@ -110,7 +110,7 @@ watermarker.add(textWatermark, textWatermarkOptions);
 
 ## **add image watermark java** – 画像ウォーターマーク
 
-### Create an Image Watermark
+### 画像透かしを作成する
 オーバーレイしたい画像（例: 会社ロゴ）を読み込みます。
 
 ```java
@@ -118,7 +118,7 @@ ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo
 imageWatermark.setOpacity(0.7f);
 ```
 
-### Set the Page Index for the Image Watermark
+### 画像透かしのページインデックスを設定する
 画像ウォーターマークを表示させるページを選択します。
 
 ```java
@@ -126,14 +126,14 @@ DiagramPageWatermarkOptions imageWatermarkOptions = new DiagramPageWatermarkOpti
 imageWatermarkOptions.setPageIndex(1); // Second page (index 1)
 ```
 
-### Add the Image Watermark
+### 画像透かしを追加する
 選択したページに画像ウォーターマークを挿入します。
 
 ```java
 watermarker.add(imageWatermark, imageWatermarkOptions);
 ```
 
-## Save and Close Resources
+## リソースを保存して閉じる
 すべてのウォーターマークを追加したら、変更を保存しリソースをクリーンアップします。
 
 ```java
@@ -143,17 +143,17 @@ textWatermark.close();
 imageWatermark.close();
 ```
 
-## Practical Applications
+## 実際のアプリケーション
 - **ドキュメントセキュリティ** – パートナーと共有する前にドラフト図に「Confidential」ラベルを付与  
 - **ブランディング** – 技術図面の特定ページにロゴをスタンプ  
 - **著作権保護** – 高価値の図に著作権表示を埋め込み、無断使用を防止  
 
-## Performance Considerations
+## パフォーマンスに関する考慮事項
 - 大きなファイルではメモリ使用量を効率的に管理  
 - 画像をウォーターマークとして使用する前にサイズを最適化し、処理速度を向上  
 - 保存後はすべてのウォーターマークオブジェクトを閉じ、Java のガベージコレクションを活用  
 
-## Common Issues and Solutions
+## よくある問題と解決策
 | 症状 | 考えられる原因 | 対処法 |
 |---|---|---|
 | ウォーターマークが表示されない | ページインデックスが間違っている | 意図したページに対応するゼロベースのインデックスか確認してください。 |
@@ -161,7 +161,7 @@ imageWatermark.close();
 | 本番環境でライセンスエラー | トライアルライセンスのみ使用 | `License.setLicense("path/to/license.file")` でフルライセンスファイルを適用してください。 |
 | 大きな図の処理が遅い | ファイルサイズが大きく、リソースが閉じられていない | `Watermarker` と個々のウォーターマークオブジェクトを速やかに閉じてください。 |
 
-## Frequently Asked Questions
+## よくある質問
 
 **Q1: 1 つの図ページに複数のウォーターマークを追加できますか？**  
 A: はい、同じ `DiagramPageWatermarkOptions` に対して異なるウォーターマークオブジェクトを使用し、`watermarker.add()` を呼び出すだけです。
@@ -184,7 +184,7 @@ A: はい – `DiagramPageWatermarkOptions` インスタンスを作成し、ペ
 **Q7: パスワード保護された図ファイルに対してもウォーターマークは適用できますか？**  
 A: はい、ロード時に `DiagramLoadOptions.setPassword("yourPassword")` でパスワードを指定すれば可能です。
 
-## Resources
+## リソース
 - [GroupDocs.Watermark ドキュメント](https://docs.groupdocs.com/watermark/java/)  
 - [API リファレンスガイド](https://reference.groupdocs.com/watermark/java)  
 - [ライブラリのダウンロード](https://releases.groupdocs.com/watermark/java/)  
