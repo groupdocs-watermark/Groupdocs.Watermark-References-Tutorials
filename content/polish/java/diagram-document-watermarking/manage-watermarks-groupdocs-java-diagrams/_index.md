@@ -1,44 +1,46 @@
 ---
-title: "groupdocs watermark maven – Manage Diagram Watermarks with Java"
-description: "Learn how to use groupdocs watermark maven to manage watermarks in diagram files like .vsdx with Java, enhancing document integrity and protecting intellectual property."
-date: "2025-12-19"
-weight: 1
-url: "/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/"
+date: '2025-12-19'
+description: Dowiedz się, jak używać GroupDocs Watermark Maven do zarządzania znakami
+  wodnymi w plikach diagramów, takich jak .vsdx, przy użyciu Javy, zwiększając integralność
+  dokumentów i chroniąc własność intelektualną.
 keywords:
-  - GroupDocs.Watermark Java
-  - manage watermarks in diagrams
-  - Java diagram document watermarking
-  - groupdocs watermark maven
+- GroupDocs.Watermark Java
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark maven – Zarządzaj znakami wodnymi diagramów w Javie
 type: docs
+url: /pl/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
+weight: 1
 ---
 
-# groupdocs watermark maven – Manage Diagram Watermarks with Java
+# groupdocs watermark maven – Zarządzanie znakami wodnymi diagramów w Javie
 
-Managing watermarks in documents is essential for protecting intellectual property and maintaining document integrity. **In this tutorial we’ll show you how to use groupdocs watermark maven to efficiently load, search, and remove watermarks from diagram files such as `.vsdx`**. Whether you’re building enterprise software or automating document workflows, mastering these techniques will give you full control over diagram watermark management.
+Zarządzanie znakami wodnymi w dokumentach jest niezbędne do ochrony własności intelektualnej i utrzymania integralności dokumentu. **W tym samouczku pokażemy, jak używać groupdocs watermark maven do efektywnego ładowania, wyszukiwania i usuwania znaków wodnych z plików diagramów, takich jak `.vsdx`**. Niezależnie od tego, czy tworzysz oprogramowanie korporacyjne, czy automatyzujesz przepływy pracy z dokumentami, opanowanie tych technik da Ci pełną kontrolę nad zarządzaniem znakami wodnymi diagramów.
 
-## Quick Answers
-- **What library is needed?** GroupDocs.Watermark for Java (available via Maven).  
-- **Which diagram formats are supported?** `.vsdx`, `.vdx`, and other Visio formats.  
-- **Can I search both text and image watermarks?** Yes – combine search criteria with `or()`.  
-- **Is a license required for production?** A valid GroupDocs.Watermark license is required.  
-- **How do I integrate this into Maven?** Add the repository and dependency shown below.
+## Szybkie odpowiedzi
+- **Jakiej biblioteki potrzebujesz?** GroupDocs.Watermark for Java (available via Maven).  
+- **Jakie formaty diagramów są obsługiwane?** `.vsdx`, `.vdx`, and other Visio formats.  
+- **Czy mogę wyszukiwać zarówno tekstowe, jak i graficzne znaki wodne?** Yes – combine search criteria with `or()`.  
+- **Czy wymagana jest licencja do produkcji?** A valid GroupDocs.Watermark license is required.  
+- **Jak zintegrować to z Maven?** Add the repository and dependency shown below.  
 
-## What is groupdocs watermark maven?
-`groupdocs watermark maven` refers to the Maven‑based integration of the GroupDocs.Watermark library for Java. By declaring the library in your `pom.xml`, Maven automatically resolves all required binaries, letting you focus on code that loads diagrams, searches for watermarks, and removes them programmatically.
+## Co to jest groupdocs watermark maven?
+`groupdocs watermark maven` odnosi się do integracji opartej na Maven biblioteki GroupDocs.Watermark dla Javy. Deklarując bibliotekę w swoim `pom.xml`, Maven automatycznie rozwiązuje wszystkie wymagane pliki binarne, pozwalając skupić się na kodzie, który ładuje diagramy, wyszukuje znaki wodne i usuwa je programowo.
 
-## Why use GroupDocs.Watermark for diagram watermark management?
-- **Full‑featured API** – supports text, image, and shape watermarks across many diagram types.  
-- **Precise removal** – eliminates watermarks without corrupting the original diagram layout.  
-- **Scalable** – suitable for batch processing large collections of diagrams.  
-- **Maven friendly** – simple dependency management, keeping your project clean.
+## Dlaczego warto używać GroupDocs.Watermark do zarządzania znakami wodnymi diagramów?
+- **Pełnofunkcyjne API** – supports text, image, and shape watermarks across many diagram types.  
+- **Precyzyjne usuwanie** – eliminates watermarks without corrupting the original diagram layout.  
+- **Skalowalne** – suitable for batch processing large collections of diagrams.  
+- **Przyjazne Maven** – simple dependency management, keeping your project clean.  
 
-## Prerequisites
+## Wymagania wstępne
 1. **Java Development Kit (JDK) 8+** – ensures compatibility with the library.  
 2. **IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.  
 3. **GroupDocs.Watermark for Java** – added via Maven (recommended) or direct JAR download.  
 
-### Required Libraries and Dependencies
-#### Maven Setup
+### Wymagane biblioteki i zależności
+#### Konfiguracja Maven
 Add the following configuration to your `pom.xml` file:
 
 ```xml
@@ -59,16 +61,16 @@ Add the following configuration to your `pom.xml` file:
 </dependencies>
 ```
 
-#### Direct Download
-Alternatively, download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+#### Bezpośrednie pobranie
+Alternatywnie pobierz najnowszą wersję z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### License Acquisition
+### Uzyskanie licencji
 - **Free Trial:** Test the library with a trial license.  
 - **Temporary License:** Request a short‑term key for evaluation.  
-- **Purchase:** Obtain a production license for unlimited use.
+- **Purchase:** Obtain a production license for unlimited use.  
 
-## Using groupdocs watermark maven to Load a Diagram Document
-Loading a diagram document is the first step before any watermark operation. Below is a minimal example that creates a `Watermarker` instance with `DiagramLoadOptions`.
+## Używanie groupdocs watermark maven do ładowania dokumentu diagramu
+Ładowanie dokumentu diagramu jest pierwszym krokiem przed jakąkolwiek operacją na znakach wodnych. Poniżej znajduje się minimalny przykład, który tworzy instancję `Watermarker` z `DiagramLoadOptions`.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -89,8 +91,8 @@ public class LoadDiagramDocument {
   - `inputFilePath` – path to your `.vsdx` file.  
   - `loadOptions` – lets you control how the diagram is parsed (e.g., password protection).
 
-## Searching for Watermarks with groupdocs watermark maven
-### Text Watermarks
+## Wyszukiwanie znaków wodnych przy użyciu groupdocs watermark maven
+### Tekstowe znaki wodne
 To locate text‑based watermarks, define a `TextSearchCriteria` and query the first page of the diagram.
 
 ```java
@@ -118,7 +120,7 @@ public class SearchTextWatermarks {
   - `TextSearchCriteria` – specifies the exact text to look for.  
   - `PossibleWatermarkCollection` – stores any matches found.
 
-### Image Watermarks
+### Graficzne znaki wodne
 If your diagram contains logo or picture watermarks, use `ImageDctHashSearchCriteria` to compare against a reference image.
 
 ```java
@@ -146,7 +148,7 @@ public class SearchImageWatermarks {
 - **Key Methods:**  
   - `ImageDctHashSearchCriteria` – creates a perceptual hash of the reference image for robust matching.
 
-## Removing Watermarks
+## Usuwanie znaków wodnych
 Once you’ve identified unwanted watermarks, you can clear them and save a clean copy of the diagram.
 
 ```java
@@ -178,40 +180,38 @@ public class RemoveWatermarks {
 
 - **Key Method:** `clear()` removes every watermark found by the combined criteria, leaving the diagram intact.
 
-## Practical Applications
+## Praktyczne zastosowania
 1. **Enterprise Software Integration** – Embed watermark management into business apps to protect proprietary diagrams.  
 2. **Content Management Systems (CMS)** – Automate detection and removal of unauthorized logos before publishing.  
 3. **Legal Document Workflows** – Add or strip watermarks at different stages of contract processing.  
 
-## Common Issues & Troubleshooting
+## Typowe problemy i rozwiązywanie
 - **License errors:** Ensure the license file is correctly referenced before creating a `Watermarker`.  
 - **Large files:** Use streaming APIs or increase JVM heap size (`-Xmx2g`) for diagrams > 100 MB.  
 - **Missing watermarks:** Verify that the search criteria (text case, image similarity threshold) match the actual watermark content.
 
-## Frequently Asked Questions
+## Najczęściej zadawane pytania
 
-**Q: Can I search for both text and images simultaneously?**  
+**Q: Czy mogę wyszukiwać zarówno tekst i obrazy jednocześnie?**  
 A: Yes. Combine criteria with `or()` as shown in the removal example.
 
-**Q: Is it safe to remove watermarks without altering the diagram layout?**  
+**Q: Czy bezpieczne jest usuwanie znaków wodnych bez zmiany układu diagramu?**  
 A: Absolutely. The API precisely targets watermark objects, preserving all other diagram elements.
 
-**Q: Which diagram formats does GroupDocs.Watermark support?**  
+**Q: Jakie formaty diagramów obsługuje GroupDocs.Watermark?**  
 A: It supports Visio formats like `.vsdx`, `.vdx`, as well as other vector diagram types.
 
-**Q: How can I process hundreds of diagrams efficiently?**  
+**Q: Jak mogę efektywnie przetwarzać setki diagramów?**  
 A: Implement a batch loop, reuse a single `Watermarker` instance when possible, and consider parallel processing with Java’s `ExecutorService`.
 
-**Q: Can I integrate watermark detection into a CI/CD pipeline?**  
+**Q: Czy mogę zintegrować wykrywanie znaków wodnych w pipeline CI/CD?**  
 A: Yes. Include the Java snippets in your build scripts (e.g., Maven plugins or Gradle tasks) to validate diagrams before deployment.
 
-## Conclusion
+## Podsumowanie
 By leveraging **groupdocs watermark maven**, you gain a powerful, Maven‑managed way to load, search, and remove watermarks from diagram files using Java. This capability strengthens document security, streamlines content workflows, and scales effortlessly across large document collections.
 
 ---
 
-**Last Updated:** 2025-12-19  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
-
----
+**Ostatnia aktualizacja:** 2025-12-19  
+**Testowano z:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs
