@@ -161,12 +161,6 @@ Usuwanie hiperłączy z kształtów diagramu może być korzystne w kilku rzeczy
 ## Podsumowanie
 Masz teraz kompletną, gotową do produkcji metodę **jak usuwać hiperłącza** z kształtów diagramu przy użyciu GroupDocs.Watermark dla Java. Postępując zgodnie z powyższymi krokami, możesz zabezpieczyć swoje diagramy, spełnić wymogi polityk i utrzymać dokumenty w estetycznym stanie.
 
----
-
-**Ostatnia aktualizacja:** 2025-12-19  
-**Testowano z:** GroupDocs.Watermark 24.11 for Java  
-**Autor:** GroupDocs  
-
 **Zasoby**  
 - [Dokumentacja](https://docs.groupdocs.com/watermark/java/)  
 - [Referencja API](https://reference.groupdocs.com/watermark/java)  
@@ -174,3 +168,9 @@ Masz teraz kompletną, gotową do produkcji metodę **jak usuwać hiperłącza**
 - [Repozytorium GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Darmowe forum wsparcia](https://forum.groupdocs.com/c/watermark/10)  
 - [Uzyskanie tymczasowej licencji](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Ostatnia aktualizacja:** 2025-12-19  
+**Testowano z:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs  

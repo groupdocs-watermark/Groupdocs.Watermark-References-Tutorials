@@ -162,12 +162,6 @@ A hiperhivatkozások diagram alakzatokból történő eltávolítása több val�
 ## Következtetés
 Most már rendelkezik egy teljes, termelésre kész módszerrel a **hiperhivatkozások eltávolítására** a diagram alakzatokból a GroupDocs.Watermark for Java segítségével. A fenti lépések követésével biztosíthatja diagramjai biztonságát, megfelelhet a szabályzatoknak, és dokumentumait kifogástalanul megjelenítheti.
 
----
-
-**Utolsó frissítés:** 2025-12-19  
-**Tesztelve ezzel:** GroupDocs.Watermark 24.11 for Java  
-**Szerző:** GroupDocs  
-
 **Erőforrások**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
@@ -175,3 +169,9 @@ Most már rendelkezik egy teljes, termelésre kész módszerrel a **hiperhivatko
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Utolsó frissítés:** 2025-12-19  
+**Tesztelve ezzel:** GroupDocs.Watermark 24.11 for Java  
+**Szerző:** GroupDocs  

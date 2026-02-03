@@ -159,12 +159,6 @@ Removing hyperlinks from diagram shapes can be beneficial in several real‑worl
 ## Conclusion
 You now have a complete, production‑ready method for **how to remove hyperlinks** from diagram shapes using GroupDocs.Watermark for Java. By following the steps above, you can secure your diagrams, comply with policies, and keep your documents looking polished.
 
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
-
 **Resources**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
@@ -172,5 +166,11 @@ You now have a complete, production‑ready method for **how to remove hyperlink
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  
 
 ---

@@ -136,18 +136,6 @@ Bạn giờ đã có một phương pháp hoàn chỉnh, sẵn sàng cho môi tr
 - Kết hợp nhiều watermark (văn bản + hình ảnh) để bảo vệ lớp.  
 - Tự động hoá xử lý hàng loạt bằng vòng lặp `for` đơn giản và các cuộc gọi API tương tự.  
 
-## Phần Câu hỏi thường gặp
-1. **Tôi có thể sử dụng GroupDocs.Watermark cho các định dạng tệp khác không?**  
-   Có, nó hỗ trợ một loạt các loại tài liệu ngoài sơ đồ, bao gồm PDF, DOCX, PPTX và nhiều hơn nữa.  
-2. **Có giới hạn số lượng watermark tôi có thể thêm không?**  
-   Không có giới hạn cứng, nhưng việc thêm quá nhiều watermark phức tạp có thể ảnh hưởng đến hiệu năng.  
-3. **Làm sao để loại bỏ watermark khỏi một sơ đồ?**  
-   Thư viện cung cấp API phát hiện và loại bỏ; xem tài liệu chính thức để biết chi tiết.  
-4. **Có thể thêm watermark văn bản chỉ vào một số trang hoặc các hình dạng được chọn không?**  
-   Bạn có thể cấu hình `DiagramShapeWatermarkOptions` để nhắm mục tiêu các trang hoặc hình dạng cụ thể.  
-5. **Nếu watermark không xuất hiện như mong đợi, tôi nên làm gì?**  
-   Kiểm tra lại cài đặt vị trí, độ tương phản màu phông và đảm bảo bạn đã lưu tệp sau khi thêm watermark.  
-
 ## Câu hỏi thường gặp
 
 **Q: GroupDocs.Watermark có hoạt động với các phiên bản Java mới nhất không?**  

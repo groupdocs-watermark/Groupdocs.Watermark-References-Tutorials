@@ -162,12 +162,6 @@ Odstranění hypertextových odkazů z tvarů diagramu může být užitečné v
 ## Závěr
 Nyní máte kompletní, připravenou metodu pro **odstranění hypertextových odkazů** z tvarů diagramu pomocí GroupDocs.Watermark pro Java. Dodržením výše uvedených kroků můžete zabezpečit své diagramy, splnit politiky a udržet své dokumenty v profesionálním vzhledu.
 
----
-
-**Poslední aktualizace:** 2025-12-19  
-**Testováno s:** GroupDocs.Watermark 24.11 pro Java  
-**Autor:** GroupDocs  
-
 **Zdroje**  
 - [Dokumentace](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
@@ -175,3 +169,9 @@ Nyní máte kompletní, připravenou metodu pro **odstranění hypertextových o
 - [GitHub úložiště](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Bezplatné fórum podpory](https://forum.groupdocs.com/c/watermark/10)  
 - [Získání dočasné licence](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Poslední aktualizace:** 2025-12-19  
+**Testováno s:** GroupDocs.Watermark 24.11 pro Java  
+**Autor:** GroupDocs  

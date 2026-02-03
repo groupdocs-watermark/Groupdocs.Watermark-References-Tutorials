@@ -136,18 +136,6 @@ Anda kini memiliki metode lengkap yang siap produksi untuk **menambahkan waterma
 - Gabungkan beberapa watermark (teks + gambar) untuk perlindungan berlapis.  
 - Otomatiskan pemrosesan batch dengan loop `for` sederhana dan panggilan API yang sama.  
 
-## Bagian FAQ
-1. **Apakah saya dapat menggunakan GroupDocs.Watermark untuk format file lain?**  
-   Ya, ia mendukung berbagai jenis dokumen selain diagram, termasuk PDF, DOCX, PPTX, dan lainnya.  
-2. **Apakah ada batasan jumlah watermark yang dapat saya tambahkan?**  
-   Tidak ada batasan keras, tetapi menambahkan banyak watermark kompleks dapat memengaruhi kinerja.  
-3. **Bagaimana cara menghapus watermark dari diagram?**  
-   Pustaka menyediakan API deteksi dan penghapusan; lihat dokumentasi resmi untuk detailnya.  
-4. **Apakah watermark teks dapat ditambahkan ke semua halaman atau hanya yang dipilih?**  
-   Anda dapat mengonfigurasi `DiagramShapeWatermarkOptions` untuk menargetkan halaman atau bentuk tertentu.  
-5. **Apa yang harus saya lakukan jika watermark tidak muncul seperti yang diharapkan?**  
-   Verifikasi pengaturan penempatan, kontras warna font, dan pastikan Anda menyimpan file setelah menambahkan watermark.  
-
 ## Pertanyaan yang Sering Diajukan
 
 **Q: Apakah GroupDocs.Watermark bekerja dengan versi Java terbaru?**  

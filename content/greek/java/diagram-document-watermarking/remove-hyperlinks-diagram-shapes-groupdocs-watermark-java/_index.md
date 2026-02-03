@@ -163,12 +163,6 @@ watermarker.close();
 ## Συμπέρασμα
 Τώρα έχετε μια πλήρη, έτοιμη για παραγωγή μέθοδο για **πώς να αφαιρέσετε συνδέσμους** από σχήματα διαγράμματος χρησιμοποιώντας το GroupDocs.Watermark for Java. Ακολουθώντας τα παραπάνω βήματα, μπορείτε να ασφαλίσετε τα διαγράμματά σας, να συμμορφωθείτε με τις πολιτικές και να διατηρήσετε τα έγγραφά σας καλοσχηματισμένα.
 
----
-
-**Τελευταία Ενημέρωση:** 2025-12-19  
-**Δοκιμάστηκε Με:** GroupDocs.Watermark 24.11 for Java  
-**Συγγραφέας:** GroupDocs  
-
 **Πόροι**  
 - [Τεκμηρίωση](https://docs.groupdocs.com/watermark/java/)  
 - [Αναφορά API](https://reference.groupdocs.com/watermark/java)  
@@ -176,3 +170,9 @@ watermarker.close();
 - [Αποθετήριο GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Δωρεάν Φόρουμ Υποστήριξης](https://forum.groupdocs.com/c/watermark/10)  
 - [Απόκτηση Προσωρινής Άδειας](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Τελευταία Ενημέρωση:** 2025-12-19  
+**Δοκιμάστηκε Με:** GroupDocs.Watermark 24.11 for Java  
+**Συγγραφέας:** GroupDocs  

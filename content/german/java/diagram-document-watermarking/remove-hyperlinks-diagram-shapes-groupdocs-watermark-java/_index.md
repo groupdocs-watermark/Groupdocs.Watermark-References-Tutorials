@@ -161,12 +161,6 @@ Das Entfernen von Hyperlinks aus Diagrammformen kann in mehreren realen Szenarie
 ## Fazit
 Sie haben nun eine vollständige, produktionsreife Methode, **wie man Hyperlinks** aus Diagrammformen mit GroupDocs.Watermark für Java entfernt. Durch Befolgen der obigen Schritte können Sie Ihre Diagramme sichern, Richtlinien einhalten und Ihre Dokumente professionell aussehen lassen.
 
----
-
-**Zuletzt aktualisiert:** 2025-12-19  
-**Getestet mit:** GroupDocs.Watermark 24.11 for Java  
-**Autor:** GroupDocs  
-
 **Ressourcen**  
 - [Dokumentation](https://docs.groupdocs.com/watermark/java/)  
 - [API‑Referenz](https://reference.groupdocs.com/watermark/java)  
@@ -174,3 +168,9 @@ Sie haben nun eine vollständige, produktionsreife Methode, **wie man Hyperlinks
 - [GitHub‑Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Kostenloses Support‑Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Erwerb einer temporären Lizenz](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Zuletzt aktualisiert:** 2025-12-19  
+**Getestet mit:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs  

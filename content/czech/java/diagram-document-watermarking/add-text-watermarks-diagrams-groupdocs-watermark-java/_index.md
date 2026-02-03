@@ -136,22 +136,6 @@ Nyní máte kompletní, připravenou metodu pro **přidání textového vodoznak
 - Kombinujte více vodoznaků (text + obrázek) pro vrstvenou ochranu.  
 - Automatizujte dávkové zpracování pomocí jednoduché smyčky `for` a stejných volání API.
 
-## Sekce FAQ
-1. **Mohu použít GroupDocs.Watermark pro jiné formáty souborů?**  
-   Ano, podporuje širokou škálu typů dokumentů nad rámec diagramů, včetně PDF, DOCX, PPTX a dalších.  
-
-2. **Existuje limit na počet vodoznaků, které mohu přidat?**  
-   Neexistuje pevný limit, ale přidání mnoha složitých vodoznaků může ovlivnit výkon.  
-
-3. **Jak odstraním vodoznak z diagramu?**  
-   Knihovna poskytuje API pro detekci a odstranění; podrobnosti najdete v oficiální dokumentaci.  
-
-4. **Lze textové vodoznaky přidat na všechny stránky nebo jen na vybrané?**  
-   Můžete nakonfigurovat `DiagramShapeWatermarkOptions`, aby cílil na konkrétní stránky nebo tvary.  
-
-5. **Co mám dělat, pokud se vodoznak neobjeví podle očekávání?**  
-   Ověřte nastavení umístění, kontrast barvy písma a ujistěte se, že jste soubor po přidání vodoznaku uložili.  
-
 ## Často kladené otázky
 
 **Q: Funguje GroupDocs.Watermark s nejnovějšími verzemi Javy?**  

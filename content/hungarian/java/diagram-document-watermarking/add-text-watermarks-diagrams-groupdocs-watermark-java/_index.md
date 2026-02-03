@@ -137,18 +137,6 @@ Most már rendelkezik egy teljes, termelésre kész módszerrel a diagramfájlok
 - Kombináljon több vízjelet (szöveg + kép) a rétegezett védelemhez.  
 - Automatizálja a kötegelt feldolgozást egy egyszerű `for` ciklussal és ugyanazokkal az API hívásokkal.  
 
-## GyIK szakasz
-1. **Használhatom a GroupDocs.Watermark‑ot más fájlformátumokhoz?**  
-   Igen, széles körű dokumentumtípusokat támogat a diagramokon kívül, beleértve a PDF, DOCX, PPTX és egyebeket.  
-2. **Van korlát a hozzáadható vízjelek számában?**  
-   Nincs szigorú korlát, de sok összetett vízjel hozzáadása befolyásolhatja a teljesítményt.  
-3. **Hogyan távolíthatok el egy vízjelet egy diagramról?**  
-   A könyvtár detektálási és eltávolítási API‑kat biztosít; a részletekért tekintse meg a hivatalos dokumentációt.  
-4. **Lehet szöveges vízjelet hozzáadni minden oldalra vagy csak kiválasztottakra?**  
-   A `DiagramShapeWatermarkOptions`‑t konfigurálhatja, hogy konkrét oldalakat vagy alakzatokat célozzon meg.  
-5. **Mit tegyek, ha a vízjel nem a várt módon jelenik meg?**  
-   Ellenőrizze az elhelyezési beállításokat, a betűszín kontrasztját, és győződjön meg róla, hogy a vízjel hozzáadása után mentette a fájlt.  
-
 ## Gyakran Ismételt Kérdések
 
 **Q: A GroupDocs.Watermark működik a legújabb Java verziókkal?**  

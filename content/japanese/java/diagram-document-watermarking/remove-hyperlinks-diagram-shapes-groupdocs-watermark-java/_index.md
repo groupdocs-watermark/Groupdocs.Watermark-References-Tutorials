@@ -15,7 +15,7 @@ weight: 1
 
 デジタル文書の管理では、特に **ハイパーリンクの削除** がセキュリティや可読性の観点で重要になることから、図面の編集が頻繁に行われます。このチュートリアルでは、GroupDocs.Watermark for Java を使って図形から **ハイパーリンクを削除する方法** を学び、ファイルをクリーンで安全、かつプロフェッショナルに保つ方法をご紹介します。
 
-## Quick Answers
+## クイックアンサー
 - **主な目的は何ですか？**  
   不要なハイパーリンクを図形から除去し、文書のセキュリティを向上させることです。  
 - **使用するライブラリは？**  
@@ -164,12 +164,6 @@ watermarker.close();
 ## Conclusion
 これで、GroupDocs.Watermark for Java を使用した図形からハイパーリンクを削除する **完全な本番対応手法** が身につきました。上記手順に従うことで、図面のセキュリティを強化し、ポリシー遵守を実現し、文書を洗練された状態に保つことができます。
 
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
-
 **Resources**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
@@ -177,3 +171,9 @@ watermarker.close();
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  

@@ -160,12 +160,6 @@ Si necesita limpiar muchos diagramas a la vez, envuelva la lógica anterior dent
 ## Conclusión
 Ahora dispone de un método completo y listo para producción para **eliminar hipervínculos** de formas de diagramas usando GroupDocs.Watermark para Java. Siguiendo los pasos anteriores, puede asegurar sus diagramas, cumplir con las políticas y mantener sus documentos con un aspecto pulido.
 
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
-
 ## Recursos
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
@@ -173,3 +167,9 @@ Ahora dispone de un método completo y listo para producción para **eliminar hi
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  

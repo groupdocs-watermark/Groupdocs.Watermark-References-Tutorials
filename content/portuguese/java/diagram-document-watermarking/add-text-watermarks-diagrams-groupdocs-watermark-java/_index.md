@@ -136,18 +136,6 @@ Agora você tem um método completo e pronto para produção de **add text water
 - Combine múltiplas marcas d'água (texto + imagem) para proteção em camadas.  
 - Automatize o processamento em lote com um simples `for` loop e as mesmas chamadas de API.
 
-## Seção de Perguntas Frequentes
-1. **Posso usar GroupDocs.Watermark para outros formatos de arquivo?**  
-   Sim, ele suporta uma ampla variedade de tipos de documentos além de diagramas, incluindo PDF, DOCX, PPTX e muito mais.  
-2. **Existe um limite para a quantidade de marcas d'água que posso adicionar?**  
-   Não há limite rígido, mas adicionar muitas marcas d'água complexas pode afetar o desempenho.  
-3. **Como removo uma marca d'água de um diagrama?**  
-   A biblioteca fornece APIs de detecção e remoção; consulte a documentação oficial para detalhes.  
-4. **As marcas d'água de texto podem ser adicionadas a todas as páginas ou apenas a páginas selecionadas?**  
-   Você pode configurar o `DiagramShapeWatermarkOptions` para direcionar páginas ou formas específicas.  
-5. **O que fazer se a marca d'água não aparecer como esperado?**  
-   Verifique as configurações de posicionamento, contraste da cor da fonte e assegure que o arquivo foi salvo após a adição da marca d'água.
-
 ## Perguntas Frequentes
 
 **Q: O GroupDocs.Watermark funciona com as versões mais recentes do Java?**  

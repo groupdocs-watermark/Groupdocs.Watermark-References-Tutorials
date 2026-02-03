@@ -159,12 +159,6 @@ watermarker.close();
 ## 結論
 現在您已掌握使用 GroupDocs.Watermark for Java 從圖表形狀中**移除超連結**的完整、可投入生產的做法。依照上述步驟，您可以保護圖表安全、符合政策，並讓文件保持精緻。
 
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
-
 **資源**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
@@ -172,3 +166,9 @@ watermarker.close();
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  

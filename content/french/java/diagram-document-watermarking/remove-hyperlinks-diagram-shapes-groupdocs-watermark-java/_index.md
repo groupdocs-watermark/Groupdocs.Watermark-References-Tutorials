@@ -162,12 +162,6 @@ Supprimer les hyperliens des formes de diagramme peut être bénéfique dans plu
 ## Conclusion
 Vous disposez maintenant d’une méthode complète et prête pour la production pour **supprimer les hyperliens** des formes de diagramme avec GroupDocs.Watermark pour Java. En suivant les étapes ci‑dessus, vous pouvez sécuriser vos diagrammes, respecter les politiques et garder vos documents impeccables.
 
----
-
-**Dernière mise à jour :** 2025-12-19  
-**Testé avec :** GroupDocs.Watermark 24.11 for Java  
-**Auteur :** GroupDocs  
-
 **Ressources**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [Référence API](https://reference.groupdocs.com/watermark/java)  
@@ -175,3 +169,9 @@ Vous disposez maintenant d’une méthode complète et prête pour la production
 - [Dépôt GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Forum d'assistance gratuit](https://forum.groupdocs.com/c/watermark/10)  
 - [Acquisition de licence temporaire](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Dernière mise à jour :** 2025-12-19  
+**Testé avec :** GroupDocs.Watermark 24.11 for Java  
+**Auteur :** GroupDocs  

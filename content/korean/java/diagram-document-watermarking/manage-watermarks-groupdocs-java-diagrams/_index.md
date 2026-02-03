@@ -61,7 +61,7 @@ Add the following configuration to your `pom.xml` file:
 ```
 
 #### 직접 다운로드
-Alternatively, download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+또는 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 에서 최신 버전을 다운로드하십시오.
 
 ### 라이선스 획득
 - **무료 체험:** 체험 라이선스로 라이브러리를 테스트합니다.  

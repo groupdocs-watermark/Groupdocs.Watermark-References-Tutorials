@@ -136,18 +136,6 @@ Vous disposez maintenant d’une méthode complète et prête pour la production
 - Combinez plusieurs filigranes (texte + image) pour une protection en couches.  
 - Automatisez le traitement par lots avec une simple boucle `for` et les mêmes appels d’API.
 
-## FAQ Section
-1. **Can I use GroupDocs.Watermark for other file formats?**  
-   Yes, it supports a wide range of document types beyond diagrams, including PDF, DOCX, PPTX, and more.  
-2. **Is there a limit to the number of watermarks I can add?**  
-   No hard limit, but adding many complex watermarks may affect performance.  
-3. **How do I remove a watermark from a diagram?**  
-   The library provides detection and removal APIs; see the official docs for details.  
-4. **Can text watermarks be added to all pages or selected ones only?**  
-   You can configure the `DiagramShapeWatermarkOptions` to target specific pages or shapes.  
-5. **What should I do if the watermark doesn’t appear as expected?**  
-   Verify placement settings, font color contrast, and ensure you saved the file after adding the watermark.
-
 ## Frequently Asked Questions
 
 **Q : Does GroupDocs.Watermark work with the latest Java versions?**  

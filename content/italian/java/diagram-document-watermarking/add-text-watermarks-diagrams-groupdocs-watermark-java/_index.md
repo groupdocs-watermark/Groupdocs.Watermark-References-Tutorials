@@ -136,18 +136,6 @@ Ora disponi di un metodo completo e pronto per la produzione per **aggiungere un
 - Combina più filigrane (testo + immagine) per una protezione a più livelli.  
 - Automatizza l'elaborazione batch con un semplice ciclo `for` e le stesse chiamate API.  
 
-## Sezione FAQ
-1. **Posso usare GroupDocs.Watermark per altri formati di file?**  
-   Sì, supporta una vasta gamma di tipi di documento oltre ai diagrammi, inclusi PDF, DOCX, PPTX e molti altri.  
-2. **C'è un limite al numero di filigrane che posso aggiungere?**  
-   Non esiste un limite rigido, ma aggiungere molte filigrane complesse può influire sulle prestazioni.  
-3. **Come rimuovo una filigrana da un diagramma?**  
-   La libreria fornisce API di rilevamento e rimozione; consulta la documentazione ufficiale per i dettagli.  
-4. **Le filigrane di testo possono essere aggiunte a tutte le pagine o solo a quelle selezionate?**  
-   Puoi configurare `DiagramShapeWatermarkOptions` per mirare a pagine o forme specifiche.  
-5. **Cosa devo fare se la filigrana non appare come previsto?**  
-   Verifica le impostazioni di posizionamento, il contrasto del colore del font e assicurati di aver salvato il file dopo aver aggiunto la filigrana.  
-
 ## Domande Frequenti
 
 **D: GroupDocs.Watermark funziona con le versioni più recenti di Java?**  

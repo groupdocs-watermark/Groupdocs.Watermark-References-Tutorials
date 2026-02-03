@@ -159,12 +159,6 @@ watermarker.close();
 ## 结论
 您现在拥有一套完整的、可用于生产环境的 **如何删除超链接** 方法，使用 GroupDocs.Watermark for Java 对图表形状进行处理。按照上述步骤操作，即可保护图表安全、符合政策要求，并保持文档的专业外观。
 
----
-
-**最后更新：** 2025-12-19  
-**测试环境：** GroupDocs.Watermark 24.11 for Java  
-**作者：** GroupDocs  
-
 **资源**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
@@ -172,3 +166,9 @@ watermarker.close();
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**最后更新：** 2025-12-19  
+**测试环境：** GroupDocs.Watermark 24.11 for Java  
+**作者：** GroupDocs  

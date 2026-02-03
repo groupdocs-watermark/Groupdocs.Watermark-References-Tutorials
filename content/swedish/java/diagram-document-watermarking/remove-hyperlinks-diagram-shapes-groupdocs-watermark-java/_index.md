@@ -160,12 +160,6 @@ Att ta bort hyperlänkar från diagramformer kan vara fördelaktigt i flera verk
 ## Slutsats
 Du har nu en komplett, produktionsklar metod för **hur man tar bort hyperlänkar** från diagramformer med GroupDocs.Watermark för Java. Genom att följa stegen ovan kan du säkra dina diagram, följa policyer och hålla dina dokument snygga.
 
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** GroupDocs.Watermark 24.11 för Java  
-**Author:** GroupDocs  
-
 **Resurser**  
 - [Dokumentation](https://docs.groupdocs.com/watermark/java/)  
 - [API‑referens](https://reference.groupdocs.com/watermark/java)  
@@ -173,3 +167,9 @@ Du har nu en komplett, produktionsklar metod för **hur man tar bort hyperlänka
 - [GitHub‑arkiv](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Gratis supportforum](https://forum.groupdocs.com/c/watermark/10)  
 - [Tillfällig licensanskaffning](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** GroupDocs.Watermark 24.11 för Java  
+**Author:** GroupDocs  

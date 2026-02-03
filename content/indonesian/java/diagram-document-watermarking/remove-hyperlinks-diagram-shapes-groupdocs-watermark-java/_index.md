@@ -162,12 +162,6 @@ Menghapus hyperlink dari bentuk diagram dapat bermanfaat dalam beberapa skenario
 ## Kesimpulan
 Anda kini memiliki metode lengkap yang siap produksi untuk **cara menghapus hyperlink** dari bentuk diagram menggunakan GroupDocs.Watermark untuk Java. Dengan mengikuti langkah‑langkah di atas, Anda dapat mengamankan diagram, mematuhi kebijakan, dan menjaga dokumen tetap tampak profesional.
 
----
-
-**Terakhir Diperbarui:** 2025-12-19  
-**Diuji Dengan:** GroupDocs.Watermark 24.11 untuk Java  
-**Penulis:** GroupDocs  
-
 **Sumber Daya**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
@@ -175,3 +169,9 @@ Anda kini memiliki metode lengkap yang siap produksi untuk **cara menghapus hype
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Terakhir Diperbarui:** 2025-12-19  
+**Diuji Dengan:** GroupDocs.Watermark 24.11 untuk Java  
+**Penulis:** GroupDocs  

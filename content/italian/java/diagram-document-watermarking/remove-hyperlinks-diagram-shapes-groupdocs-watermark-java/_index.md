@@ -162,12 +162,6 @@ Rimuovere i collegamenti ipertestuali dalle forme dei diagrammi può essere vant
 ## Conclusione
 Ora disponi di un metodo completo, pronto per la produzione, per **rimuovere i collegamenti ipertestuali** dalle forme dei diagrammi usando GroupDocs.Watermark per Java. Seguendo i passaggi sopra, puoi proteggere i tuoi diagrammi, rispettare le politiche e mantenere i documenti dall'aspetto curato.
 
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
-
 ## Risorse
 - [Documentazione](https://docs.groupdocs.com/watermark/java/)  
 - [Riferimento API](https://reference.groupdocs.com/watermark/java)  
@@ -175,3 +169,9 @@ Ora disponi di un metodo completo, pronto per la produzione, per **rimuovere i c
 - [Repository GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Forum di supporto gratuito](https://forum.groupdocs.com/c/watermark/10)  
 - [Acquisizione licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  

@@ -160,12 +160,6 @@ watermarker.close();
 ## 결론
 이제 GroupDocs.Watermark for Java를 사용하여 다이어그램 도형에서 **하이퍼링크를 제거하는 방법**에 대한 완전하고 프로덕션 준비된 방법을 갖추었습니다. 위 단계들을 따르면 다이어그램을 보호하고, 정책을 준수하며, 문서를 깔끔하게 유지할 수 있습니다.
 
----
-
-**마지막 업데이트:** 2025-12-19  
-**테스트 환경:** GroupDocs.Watermark 24.11 for Java  
-**작성자:** GroupDocs  
-
 **리소스**  
 - [문서](https://docs.groupdocs.com/watermark/java/)  
 - [API 레퍼런스](https://reference.groupdocs.com/watermark/java)  
@@ -173,3 +167,9 @@ watermarker.close();
 - [GitHub 저장소](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [무료 지원 포럼](https://forum.groupdocs.com/c/watermark/10)  
 - [임시 라이선스 획득](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**마지막 업데이트:** 2025-12-19  
+**테스트 환경:** GroupDocs.Watermark 24.11 for Java  
+**작성자:** GroupDocs  

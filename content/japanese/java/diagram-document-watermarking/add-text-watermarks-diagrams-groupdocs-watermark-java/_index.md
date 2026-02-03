@@ -133,18 +133,6 @@ watermarker.close();
 - テキスト＋画像の複数透かしを組み合わせて階層的保護を実装します。  
 - 同じ API 呼び出しを使ったシンプルな `for` ループでバッチ処理を自動化します。  
 
-## FAQ セクション
-1. **Can I use GroupDocs.Watermark for other file formats?**  
-   はい、図以外にも PDF、DOCX、PPTX など幅広い文書タイプをサポートしています。  
-2. **Is there a limit to the number of watermarks I can add?**  
-   明確な上限はありませんが、複雑な透かしを多数追加するとパフォーマンスに影響する可能性があります。  
-3. **How do I remove a watermark from a diagram?**  
-   ライブラリは検出・除去 API を提供しています。詳細は公式ドキュメントをご参照ください。  
-4. **Can text watermarks be added to all pages or selected ones only?**  
-   `DiagramShapeWatermarkOptions` を設定して、特定のページやシェイプのみを対象にできます。  
-5. **What should I do if the watermark doesn’t appear as expected?**  
-   配置設定、フォント色のコントラストを確認し、透かし追加後にファイルを保存したか確認してください。  
-
 ## よくある質問
 
 **Q: Does GroupDocs.Watermark work with the latest Java versions?**  

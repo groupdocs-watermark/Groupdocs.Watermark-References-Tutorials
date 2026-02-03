@@ -160,12 +160,6 @@ watermarker.close();
 ## الخلاصة
 أصبحت الآن تمتلك طريقة كاملة وجاهزة للإنتاج **لإزالة الروابط التشعبية** من أشكال المخطط باستخدام GroupDocs.Watermark للغة Java. باتباع الخطوات السابقة، يمكنك تأمين مخططاتك، والامتثال للسياسات، والحفاظ على مظهر مستنداتك مصقولًا.
 
----
-
-**آخر تحديث:** 2025-12-19  
-**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
-**المؤلف:** GroupDocs  
-
 **الموارد**  
 - [التوثيق](https://docs.groupdocs.com/watermark/java/)  
 - [مرجع API](https://reference.groupdocs.com/watermark/java)  
@@ -173,3 +167,9 @@ watermarker.close();
 - [مستودع GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [منتدى الدعم المجاني](https://forum.groupdocs.com/c/watermark/10)  
 - [الحصول على ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**آخر تحديث:** 2025-12-19  
+**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
+**المؤلف:** GroupDocs  

@@ -162,10 +162,6 @@ Het verwijderen van hyperlinks uit diagramvormen kan nuttig zijn in verschillend
 ## Conclusie
 Je hebt nu een volledige, productie‑klare methode voor **hoe je hyperlinks kunt verwijderen** uit diagramvormen met GroupDocs.Watermark voor Java. Door de bovenstaande stappen te volgen, kun je je diagrammen beveiligen, voldoen aan beleid, en je documenten er verzorgd uit laten zien.
 
-**Laatst bijgewerkt:** 2025-12-19  
-**Getest met:** GroupDocs.Watermark 24.11 for Java  
-**Auteur:** GroupDocs  
-
 **Bronnen**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
@@ -173,3 +169,7 @@ Je hebt nu een volledige, productie‑klare methode voor **hoe je hyperlinks kun
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+**Laatst bijgewerkt:** 2025-12-19  
+**Getest met:** GroupDocs.Watermark 24.11 for Java  
+**Auteur:** GroupDocs  

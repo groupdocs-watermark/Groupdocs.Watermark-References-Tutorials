@@ -136,18 +136,6 @@ Sie haben nun eine vollständige, produktionsreife Methode, um **add text waterm
 - Kombinieren Sie mehrere Wasserzeichen (Text + Bild) für mehrschichtigen Schutz.  
 - Automatisieren Sie die Stapelverarbeitung mit einer einfachen `for`‑Schleife und denselben API‑Aufrufen.  
 
-## FAQ‑Abschnitt
-1. **Kann ich GroupDocs.Watermark für andere Dateiformate verwenden?**  
-   Ja, es unterstützt eine breite Palette von Dokumenttypen über Diagramme hinaus, einschließlich PDF, DOCX, PPTX und mehr.  
-2. **Gibt es ein Limit für die Anzahl der Wasserzeichen, die ich hinzufügen kann?**  
-   Es gibt kein festes Limit, aber das Hinzufügen vieler komplexer Wasserzeichen kann die Leistung beeinträchtigen.  
-3. **Wie entferne ich ein Wasserzeichen aus einem Diagramm?**  
-   Die Bibliothek bietet Erkennungs‑ und Entfernungs‑APIs; siehe die offizielle Dokumentation für Details.  
-4. **Können Textwasserzeichen zu allen Seiten oder nur zu ausgewählten hinzugefügt werden?**  
-   Sie können die `DiagramShapeWatermarkOptions` konfigurieren, um bestimmte Seiten oder Formen anzusprechen.  
-5. **Was soll ich tun, wenn das Wasserzeichen nicht wie erwartet erscheint?**  
-   Überprüfen Sie die Platzierungseinstellungen, den Farbkontrast der Schrift und stellen Sie sicher, dass Sie die Datei nach dem Hinzufügen des Wasserzeichens gespeichert haben.  
-
 ## Häufig gestellte Fragen
 
 **Q: Funktioniert GroupDocs.Watermark mit den neuesten Java‑Versionen?**  

@@ -162,12 +162,6 @@ Diyagram şekillerinden hipermetin bağlantılarını kaldırmak, aşağıdaki g
 ## Sonuç
 Artık GroupDocs.Watermark for Java kullanarak diyagram şekillerinden **hipermetin bağlantılarını nasıl kaldıracağınız** konusunda eksiksiz, üretim‑hazır bir yönteme sahipsiniz. Yukarıdaki adımları izleyerek diyagramlarınızı güvence altına alabilir, politikalara uyum sağlayabilir ve belgelerinizin profesyonel görünümünü koruyabilirsiniz.
 
----
-
-**Son Güncelleme:** 2025-12-19  
-**Test Edilen Sürüm:** GroupDocs.Watermark 24.11 for Java  
-**Yazar:** GroupDocs  
-
 **Kaynaklar**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
@@ -175,3 +169,9 @@ Artık GroupDocs.Watermark for Java kullanarak diyagram şekillerinden **hiperme
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Son Güncelleme:** 2025-12-19  
+**Test Edilen Sürüm:** GroupDocs.Watermark 24.11 for Java  
+**Yazar:** GroupDocs  

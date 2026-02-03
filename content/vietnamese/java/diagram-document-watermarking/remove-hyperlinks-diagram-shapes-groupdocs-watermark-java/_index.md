@@ -161,12 +161,6 @@ Việc xóa liên kết siêu văn bản khỏi các hình trong sơ đồ có t
 ## Kết Luận
 Bạn đã có một phương pháp hoàn chỉnh, sẵn sàng cho môi trường sản xuất để **cách xóa liên kết siêu văn bản** khỏi các hình trong sơ đồ bằng GroupDocs.Watermark cho Java. Thực hiện các bước trên, bạn có thể bảo vệ sơ đồ, tuân thủ chính sách và giữ cho tài liệu của mình luôn gọn gàng, chuyên nghiệp.
 
----
-
-**Cập nhật lần cuối:** 2025-12-19  
-**Đã kiểm tra với:** GroupDocs.Watermark 24.11 cho Java  
-**Tác giả:** GroupDocs  
-
 **Tài nguyên**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
@@ -174,3 +168,9 @@ Bạn đã có một phương pháp hoàn chỉnh, sẵn sàng cho môi trườn
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Cập nhật lần cuối:** 2025-12-19  
+**Đã kiểm tra với:** GroupDocs.Watermark 24.11 cho Java  
+**Tác giả:** GroupDocs  

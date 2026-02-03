@@ -161,12 +161,6 @@ Remover hiperlinks de formas de diagrama pode ser benéfico em vários cenários
 ## Conclusão
 Agora você possui um método completo e pronto para produção **como remover hiperlinks** de formas de diagrama usando o GroupDocs.Watermark para Java. Seguindo os passos acima, você pode proteger seus diagramas, cumprir políticas e manter seus documentos com aparência profissional.
 
----
-
-**Última Atualização:** 2025-12-19  
-**Testado Com:** GroupDocs.Watermark 24.11 for Java  
-**Autor:** GroupDocs  
-
 **Recursos**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](httpsreference.groupdocs.com/watermark/java)  
@@ -174,3 +168,9 @@ Agora você possui um método completo e pronto para produção **como remover h
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Última Atualização:** 2025-12-19  
+**Testado Com:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs  

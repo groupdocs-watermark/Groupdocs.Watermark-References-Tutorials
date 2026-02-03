@@ -147,30 +147,30 @@ watermarker.close();
 5. **क्या यह मेथड अन्य डायग्राम फ़ॉर्मेट्स के साथ काम कर सकता है?**  
    GroupDocs.Watermark कई डायग्राम प्रकारों को सपोर्ट करता है; आधिकारिक डॉक्यूमेंटेशन में संगतता जाँचें।  
 
-**Additional Q&A**
+**अतिरिक्त प्रश्नोत्तर**
 
-**Q:** *क्या हटाए गए हाइपरलिंक्स को लॉग किया जा सकता है?*  
-**A:** हाँ – `removeAt(i)` कॉल करने से पहले `shape.getHyperlinks().get_Item(i).getAddress()` को कैप्चर करके लॉग फ़ाइल में लिखें।
+**प्रश्न:** *क्या हटाए गए हाइपरलिंक्स को लॉग किया जा सकता है?*
+**उत्तर:** हाँ – `removeAt(i)` कॉल करने से पहले `shape.getHyperlinks().get_Item(i).getAddress()` को स्कैन करके लॉग फ़ाइल में लिखें।
 
-**Q:** *हाइपरलिंक्स हटाने से शैप की विज़ुअल अपीयरेंस पर असर पड़ेगा?*  
-**A:** नहीं। शैप की ज्योमेट्री अपरिवर्तित रहती है; केवल लिंक मेटाडेटा हटाया जाता है।
+**प्रश्न:** *हाइपरलिंक्स हटाने से शेप की विज़ुअल अपीयरेंस पर असर पड़ेगा?*
+**उत्तर:** नहीं। शेप की ज्योमेट्री कनेक्शन रहता है; केवल लिंक मेटाडेटा हटाया जाता है।
 
-**Q:** *हटाने के बाद मुझे कोई स्टाइलिंग फिर से लागू करनी पड़ेगी?*  
-**A:** आमतौर पर नहीं। हाइपरलिंक हटाने से फ़िल, लाइन या टेक्स्ट स्टाइल्स पर कोई असर नहीं पड़ता।
+**प्रश्न:** *हटाने के बाद मुझे कोई स्टाइलिंग फिर से लागू करनी पड़ेगी?*
+**उत्तर:** आमतौर पर नहीं। हाइपरलिंक हटाने से फाइल, लाइन या टेक्स्ट स्टाइल्स पर कोई असर नहीं पड़ता।
 
 ## निष्कर्ष
-आपके पास अब GroupDocs.Watermark for Java का उपयोग करके डायग्राम शैप्स से **हाइपरलिंक्स कैसे हटाएँ** की एक पूर्ण, प्रोडक्शन‑रेडी विधि है। ऊपर दिए गए चरणों का पालन करके आप अपने डायग्राम को सुरक्षित बना सकते हैं, नीतियों का पालन कर सकते हैं, और अपने दस्तावेज़ को पॉलिश्ड रख सकते हैं।
+आपके पास अब GroupDocs.Watermark for Java का इस्तेमाल करके डायग्राम शेप्स से **हाइपरलिंक्स कैसे हटाएँ** की एक पूरी, प्रोडक्शन-रेडी विधि है। ऊपर दिए गए चरणों का पालन करके आप अपने डायग्राम को सुरक्षित बना सकते हैं, नीतियों का पालन कर सकते हैं, और अपने डॉक्यूमेंट को पॉलिश्ड रख सकते हैं।
+
+**रिसोर्स**
+- [डॉक्यूमेंटेशन](https://docs.groupdocs.com/watermark/java/)
+- [API रेफरेंस](https://reference.groupdocs.com/watermark/java)
+- [डाउनलोड](https://releases.groupdocs.com/watermark/java/)
+- [GitHub रिपॉजिटरी](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [फ्री सपोर्ट फोरम](https://forum.groupdocs.com/c/watermark/10)
+- [टेम्पररी लाइसेंस एक्विजिशन](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Last Updated:** 2025-12-19  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
-
-**Resources**  
-- [Documentation](https://docs.groupdocs.com/watermark/java/)  
-- [API Reference](https://reference.groupdocs.com/watermark/java)  
-- [Download](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
-- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+**लास्ट अपडेटेड:** 2025-12-19
+**इसके साथ टेस्ट किया गया:** Java के लिए GroupDocs.Watermark24.11
+**लेखक:** GroupDocs  

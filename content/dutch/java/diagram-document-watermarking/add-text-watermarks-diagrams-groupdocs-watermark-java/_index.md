@@ -136,18 +136,6 @@ Je beschikt nu over een volledige, productie‑klare methode om **tekstwatermerk
 - Combineer meerdere watermerken (tekst + afbeelding) voor gelaagde bescherming.  
 - Automatiseer batch‑verwerking met een eenvoudige `for`‑lus en dezelfde API‑aanroepen.
 
-## FAQ‑sectie
-1. **Kan ik GroupDocs.Watermark voor andere bestandsformaten gebruiken?**  
-   Ja, het ondersteunt een breed scala aan documenttypen naast diagrammen, waaronder PDF, DOCX, PPTX en meer.  
-2. **Is er een limiet aan het aantal watermerken dat ik kan toevoegen?**  
-   Geen harde limiet, maar veel complexe watermerken kunnen de prestaties beïnvloeden.  
-3. **Hoe verwijder ik een watermerk uit een diagram?**  
-   De bibliotheek biedt detectie‑ en verwijder‑API’s; zie de officiële documentatie voor details.  
-4. **Kunnen tekstwatermerken aan alle pagina's of alleen geselecteerde pagina's worden toegevoegd?**  
-   Je kunt `DiagramShapeWatermarkOptions` configureren om specifieke pagina's of vormen te targeten.  
-5. **Wat moet ik doen als het watermerk niet verschijnt zoals verwacht?**  
-   Controleer de plaatsingsinstellingen, kleurcontrast van het lettertype en zorg dat je het bestand hebt opgeslagen na het toevoegen van het watermerk.
-
 ## Veelgestelde vragen
 
 **Q: Werkt GroupDocs.Watermark met de nieuwste Java‑versies?**  
