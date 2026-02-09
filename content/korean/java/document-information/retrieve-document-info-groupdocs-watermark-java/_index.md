@@ -12,38 +12,38 @@ url: /ko/java/document-information/retrieve-document-info-groupdocs-watermark-ja
 weight: 1
 ---
 
-# get file type java – GroupDocs.Watermark for Java를 사용한 문서 정보 검색
+# 파일 형식 가져오기 java – GroupDocs.Watermark for Java를 사용하는 문서 정보 검색
 
-**소개**  
-빠르게 **get file type java** 를 수행하고 문서 크기 java를 읽거나 페이지 수 java를 추출하고 싶다면, 여기가 바로 적절한 곳입니다. 현대 **document management java** 워크플로우에서는 파일의 유형, 페이지 수 및 크기를 처리하기 전에 알면 시간을 절약하고 오류를 줄이며 전체 효율성을 향상시킬 수 있습니다. 이 튜토리얼에서는 **GroupDocs.Watermark for Java** 설정 방법과 간단한 API를 사용해 지원되는 모든 문서에서 이러한 세부 정보를 가져오는 방법을 단계별로 안내합니다.
+**소개**
+빠르게 **파일 형식 java**를 가져오고 문서의 크기를 java로 가져오거나 페이지 수 java를 추출하고, 여기가 바로 적절한 위치입니다. 현대 **문서 관리 java** 워크플로우에서는 파일의 유형, 페이지 수 및 크기를 처리하기 전에 알면 시간을 저장하고 오류를 줄이면 전체를 포괄할 수 있습니다. 이 튜토리얼에서는 **GroupDocs.Watermark for Java** 설정 방법과 간단한 API를 확장 지원하는 모든 문서에서 해당 세부 정보를 가져오는 방법을 단계적으로 안내합니다.
 
-## 빠른 답변
-- **get file type java** 를 얻는 기본 메서드는 무엇인가요? `watermarker.getDocumentInfo().getFileType()` 를 사용합니다.  
-- 동일한 호출로 **document size java** 를 읽을 수 있나요? 예, `getSize()` 가 바이트 단위 크기를 반환합니다.  
-- **page count java** 를 추출하려면 어떻게 하나요? `IDocumentInfo` 객체에서 `getPageCount()` 를 호출합니다.  
-- 기본 메타데이터 검색에 라이선스가 필요합니까? 평가용으로는 체험판 또는 임시 라이선스면 충분합니다.  
-- 지원되는 Java 버전은 무엇인가요? Java 8 이상.
+##빠른 답변
+- **파일 형식 java**를 얻는 기본 방법은 무엇입니까? `watermarker.getDocumentInfo().getFileType()`을 사용합니다.
+- 동등 호출로 **문서 크기 java**를 등록할 수 있나요? 예, `getSize()` 가 바이트 단위의 크기를 반환합니다.
+- **페이지 수 java**를 추출하려면 어떻게 해야 할까요? `IDocumentInfo`를 통해 `getPageCount()`를 호출합니다.
+- 기본적으로 데이터 검색에 필요한가요? 평가용으로 사용해 보세요.
+- 지원되는 Java 버전은 무엇입니까? Java8이상.
 
-## “get file type java”란 무엇인가요?
-이 문구는 Java 애플리케이션에서 프로그래밍 방식으로 문서의 파일 형식(예: DOCX, PDF)을 가져오는 것을 의미합니다. GroupDocs.Watermark는 이 정보를 다른 유용한 메타데이터와 함께 반환하는 단일 메서드를 제공합니다.
+## “get file type java”란 무엇입니까?
+이 문구는 Java의 프로그래밍 방식으로 문서의 파일 형식(예: DOCX, PDF)을 가져오는 것을 의미합니다. GroupDocs.Watermark는 이 정보를 별도로 유지하면서 데이터를 함께 제공하는 단일 메서드를 제공합니다.
 
 ## 문서 관리 java에 GroupDocs.Watermark를 사용하는 이유
-- **Unified API** – 추가 변환기 없이 수십 가지 형식을 처리합니다.  
-- **Fast metadata access** – 전체 문서를 메모리에 로드할 필요가 없습니다.  
-- **Built‑in security** – 암호화된 파일을 지원하고 라이선스를 준수합니다.  
-- **Scalable** – 대규모 **document management java** 시스템에서 배치 처리에 적합합니다.
+- **통합 API** – 추가 연구원들은 계속해서 포맷을 처리합니다.
+- **빠른 메타데이터 액세스** – 전체 문서를 메모리에 로드할 필요가 없습니다.
+- **내장된 보안** – 파일을 지원하고 권위를 준수합니다.
+- **확장 가능** – **문서 관리 java** 시스템에서 배치 처리에 적합합니다.
 
-## 사전 요구 사항
-1. **GroupDocs.Watermark for Java** (버전 24.11 이상).  
-2. JDK 8 이상.  
-3. Maven(또는 JAR를 수동으로 추가할 수 있는 환경).  
-4. 기본 Java I/O 지식.
+## 사전을 요구합니다
+1. **GroupDocs.Watermark for Java** (버전24.11이상).
+2. JDK8이상.
+3. Maven(또는 JAR을 수동으로 추가할 수 있는 환경).
+4. 기본적으로 Java I/O 지식.
 
 ## GroupDocs.Watermark for Java 설정
 
-**GroupDocs.Watermark for Java** 를 통합하려면 Maven 또는 직접 다운로드 방식을 사용할 수 있습니다. 설정 방법은 다음과 같습니다:
+**GroupDocs.Watermark for Java**를 통합하려면 Maven 또는 직접 다운로드 방식을 사용할 수 있습니다. 설정 방법은 다음과 같습니다:
 
-**Maven 구성**
+**메이븐 구성**
 
 `pom.xml` 파일에 다음 구성을 추가합니다:
 

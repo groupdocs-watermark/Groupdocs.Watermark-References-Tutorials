@@ -2,7 +2,7 @@
 date: 2025-12-23
 description: Lär dig hur du vattenmärker PDF‑Java‑filer genom att ladda dokument från
   olika källor och spara vattenmärkta filer med GroupDocs.Watermark för Java.
-title: 'Vattenstämpel PDF Java: Dokumentladdning och -sparande med GroupDocs.Watermark'
+title: 'Vattenstämpel PDF Java - Dokumentladdning och -sparande med GroupDocs.Watermark'
 type: docs
 url: /sv/java/document-loading-saving/
 weight: 2

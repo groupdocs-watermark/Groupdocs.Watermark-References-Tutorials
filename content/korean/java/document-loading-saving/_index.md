@@ -2,7 +2,7 @@
 date: 2025-12-23
 description: 다양한 소스에서 문서를 로드하고 GroupDocs.Watermark for Java를 사용하여 워터마크가 적용된 PDF Java
   파일을 저장하는 방법을 배웁니다.
-title: '워터마크 PDF Java: GroupDocs.Watermark를 사용한 문서 로드 및 저장 작업'
+title: '워터마크 PDF Java - GroupDocs.Watermark를 사용한 문서 로드 및 저장 작업'
 type: docs
 url: /ko/java/document-loading-saving/
 weight: 2

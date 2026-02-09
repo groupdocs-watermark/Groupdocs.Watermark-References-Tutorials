@@ -3,7 +3,7 @@ date: 2025-12-23
 description: Leer hoe u PDF‑Java‑bestanden kunt watermerken door documenten uit verschillende
   bronnen te laden en watermerkte bestanden op te slaan met GroupDocs.Watermark voor
   Java.
-title: 'Watermark PDF Java: Documenten laden en opslaan met GroupDocs.Watermark'
+title: 'Watermark PDF Java - Documenten laden en opslaan met GroupDocs.Watermark'
 type: docs
 url: /nl/java/document-loading-saving/
 weight: 2

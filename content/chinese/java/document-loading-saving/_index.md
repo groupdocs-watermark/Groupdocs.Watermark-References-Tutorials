@@ -1,7 +1,7 @@
 ---
 date: 2025-12-23
 description: 了解如何使用 GroupDocs.Watermark for Java 加载来自各种来源的文档，为 PDF Java 文件添加水印，并保存带水印的文件。
-title: Watermark PDF Java：使用 GroupDocs.Watermark 进行文档加载和保存操作
+title: Watermark PDF Java - 使用 GroupDocs.Watermark 进行文档加载和保存操作
 type: docs
 url: /zh/java/document-loading-saving/
 weight: 2

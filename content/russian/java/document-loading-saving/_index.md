@@ -3,7 +3,7 @@ date: 2025-12-23
 description: Узнайте, как наносить водяной знак на PDF‑файлы Java, загружая документы
   из различных источников и сохраняя файлы с водяным знаком с помощью GroupDocs.Watermark
   для Java.
-title: 'Водяной знак PDF Java: загрузка и сохранение документов с GroupDocs.Watermark'
+title: 'Водяной знак PDF Java - загрузка и сохранение документов с GroupDocs.Watermark'
 type: docs
 url: /ru/java/document-loading-saving/
 weight: 2

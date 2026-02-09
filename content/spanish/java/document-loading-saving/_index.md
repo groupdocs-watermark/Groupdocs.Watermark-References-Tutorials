@@ -3,7 +3,7 @@ date: 2025-12-23
 description: Aprenda a aplicar marcas de agua a archivos PDF Java cargando documentos
   desde diversas fuentes y guardando los archivos con marca de agua usando GroupDocs.Watermark
   para Java.
-title: 'Marca de agua PDF Java: Operaciones de carga y guardado de documentos con
+title: 'Marca de agua PDF Java - Operaciones de carga y guardado de documentos con
   GroupDocs.Watermark'
 type: docs
 url: /es/java/document-loading-saving/

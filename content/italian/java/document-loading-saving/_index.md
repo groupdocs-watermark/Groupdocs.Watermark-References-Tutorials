@@ -3,7 +3,7 @@ date: 2025-12-23
 description: Scopri come aggiungere filigrane ai file PDF Java caricando documenti
   da diverse fonti e salvando i file con filigrana utilizzando GroupDocs.Watermark
   per Java.
-title: 'Watermark PDF Java: Operazioni di caricamento e salvataggio dei documenti
+title: 'Watermark PDF Java - Operazioni di caricamento e salvataggio dei documenti
   con GroupDocs.Watermark'
 type: docs
 url: /it/java/document-loading-saving/

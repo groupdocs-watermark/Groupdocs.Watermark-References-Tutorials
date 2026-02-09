@@ -3,7 +3,7 @@ date: 2025-12-23
 description: Naučte se vkládat vodoznak do PDF souborů v Javě načítáním dokumentů
   z různých zdrojů a ukládáním vodoznakovaných souborů pomocí GroupDocs.Watermark
   pro Javu.
-title: 'Vodoznak PDF Java: Načítání a ukládání dokumentů s GroupDocs.Watermark'
+title: 'Vodoznak PDF Java - Načítání a ukládání dokumentů s GroupDocs.Watermark'
 type: docs
 url: /cs/java/document-loading-saving/
 weight: 2

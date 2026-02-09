@@ -3,7 +3,7 @@ date: 2025-12-23
 description: Apprenez à ajouter un filigrane aux fichiers PDF Java en chargeant des
   documents depuis diverses sources et en enregistrant les fichiers filigranés à l'aide
   de GroupDocs.Watermark pour Java.
-title: 'Filigrane PDF Java : Opérations de chargement et d’enregistrement de documents
+title: 'Filigrane PDF Java - Opérations de chargement et d’enregistrement de documents
   avec GroupDocs.Watermark'
 type: docs
 url: /fr/java/document-loading-saving/

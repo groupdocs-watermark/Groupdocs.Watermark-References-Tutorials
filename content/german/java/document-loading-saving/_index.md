@@ -3,7 +3,7 @@ date: 2025-12-23
 description: Erfahren Sie, wie Sie PDF‑Java‑Dateien mit GroupDocs.Watermark für Java
   versehen, indem Sie Dokumente aus verschiedenen Quellen laden und die wasserzeichenbehafteten
   Dateien speichern.
-title: 'Wasserzeichen PDF Java: Dokumentenladen und -speichern mit GroupDocs.Watermark'
+title: 'Wasserzeichen PDF Java - Dokumentenladen und -speichern mit GroupDocs.Watermark'
 type: docs
 url: /de/java/document-loading-saving/
 weight: 2

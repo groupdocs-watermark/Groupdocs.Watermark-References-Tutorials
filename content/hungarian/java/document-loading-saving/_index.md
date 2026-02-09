@@ -3,7 +3,7 @@ date: 2025-12-23
 description: Tanulja meg, hogyan lehet vízjelet elhelyezni PDF Java fájlokon, dokumentumok
   betöltésével különböző forrásokból, és a vízjelezett fájlok mentésével a GroupDocs.Watermark
   for Java használatával.
-title: 'Vízjel PDF Java: Dokumentum betöltési és mentési műveletek a GroupDocs.Watermark
+title: 'Vízjel PDF Java - Dokumentum betöltési és mentési műveletek a GroupDocs.Watermark
   segítségével'
 type: docs
 url: /hu/java/document-loading-saving/

@@ -2,7 +2,7 @@
 date: 2025-12-23
 description: Dowiedz się, jak znakować pliki PDF w Javie, wczytując dokumenty z różnych
   źródeł i zapisując oznaczone pliki przy użyciu GroupDocs.Watermark dla Javy.
-title: 'Watermark PDF Java: Operacje ładowania i zapisywania dokumentów z GroupDocs.Watermark'
+title: 'Watermark PDF Java - Operacje ładowania i zapisywania dokumentów z GroupDocs.Watermark'
 type: docs
 url: /pl/java/document-loading-saving/
 weight: 2

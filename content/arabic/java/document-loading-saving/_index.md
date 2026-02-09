@@ -2,7 +2,7 @@
 date: 2025-12-23
 description: تعلم كيفية إضافة علامة مائية إلى ملفات PDF Java عن طريق تحميل المستندات
   من مصادر مختلفة وحفظ الملفات المائية باستخدام GroupDocs.Watermark للغة Java.
-title: 'العلامة المائية PDF Java: عمليات تحميل وحفظ المستندات باستخدام GroupDocs.Watermark'
+title: 'العلامة المائية PDF Java - عمليات تحميل وحفظ المستندات باستخدام GroupDocs.Watermark'
 type: docs
 url: /ar/java/document-loading-saving/
 weight: 2

@@ -2,7 +2,7 @@
 date: 2025-12-23
 description: เรียนรู้วิธีใส่ลายน้ำไฟล์ PDF Java โดยการโหลดเอกสารจากแหล่งต่าง ๆ และบันทึกไฟล์ที่มีลายน้ำโดยใช้
   GroupDocs.Watermark สำหรับ Java.
-title: 'Watermark PDF Java: การโหลดและบันทึกเอกสารด้วย GroupDocs.Watermark'
+title: 'Watermark PDF Java - การโหลดและบันทึกเอกสารด้วย GroupDocs.Watermark'
 type: docs
 url: /th/java/document-loading-saving/
 weight: 2

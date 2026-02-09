@@ -14,38 +14,42 @@ weight: 1
 
 # get file type java – GroupDocs.Watermark for Java Kullanarak Belge Bilgilerini Getirme
 
-**Introduction**  
-Eğer **get file type java**'ı hızlı bir şekilde elde etmek ve ayrıca document size java'ı okumak ya da page count java'ı çıkarmak istiyorsanız, doğru yerdesiniz. Modern **document management java** iş akışlarında, bir dosyanın türünü, sayfa sayısını ve boyutunu işlemeye başlamadan bilmek zaman kazandırır, hataları azaltır ve genel verimliliği artırır. Bu öğretici, **GroupDocs.Watermark for Java**'ı kurmanızı ve basit API'sini kullanarak desteklenen herhangi bir belgede bu detayları almanızı gösterir.
+**Giriiş**
+**get file type java**'ı hızlı bir şekilde elde etmek ve ayrıca belge boyutu java'yı okumak ya da sayfa sayımı yapmak istiyorsanız java'yı çıkarmak istiyorsanız, doğru yerdesiniz. Modern **belge yönetimi java** iş akışlarında, bir dosyanın dahil edilmesi, sayfa sayısı ve işletime alınan tarama zaman kazancı, hataların kesintileri ve genel aralıkların arttırılması. Bu öğretici, **GroupDocs.Watermark for Java**'yı kurmanızı ve basit API'sini kullanarak herhangi bir belgedeki bu ayrıntıların özelliklerini gösterir.
 
-## Quick Answers
-- **get file type java'ı elde etmek için birincil yöntem nedir?** Use `watermarker.getDocumentInfo().getFileType()`.  
-- **Aynı çağrıyla document size java'ı da okuyabilir miyim?** Yes, `getSize()` returns the size in bytes.  
-- **page count java'ı nasıl çıkarırım?** Call `getPageCount()` on the `IDocumentInfo` object.  
-- **Temel metadata alma için lisansa ihtiyacım var mı?** A trial or temporary license is sufficient for evaluation.  
-- **Hangi Java sürümleri destekleniyor?** Java 8 or higher.
+## Hızlı Yanıtlar
+- **get file type java'yı elde etmek için basit yöntem nedir?** `watermarker.getDocumentInfo().getFileType()` kullanın.
+- **Aynı çağrıyla belge boyutu java'yı da okuyabilir miyim?** Evet, `getSize()` boyutu bayt cinsinden döndürür.
+- **sayfa sayısı java'ı nasıl çıkarırım?** `IDocumentInfo` nesnesinde `getPageCount()'u çağırın.
+- **Temel metadata alma için lisansa ihtiyacım var mı?** Değerlendirme için deneme veya geçici lisans yeterlidir.
+- **Hangi Java desteği destekleniyor mu?** Java8 veya üstü.
 
-## “get file type java” nedir?
-Bu ifade, bir Java uygulamasında programatik olarak bir belgenin dosya formatını (örn. DOCX, PDF) almayı ifade eder. GroupDocs.Watermark, bu bilgiyi ve diğer faydalı metadata'ları döndüren tek bir yöntem sağlar.
+## “java dosya türünü al” nedir?
+Bu ifade, bir Java'nın programatik olarak bir belgenin dosya formatını (örn.DOCX, PDF) almayı ifade eder. GroupDocs.Watermark, bu bilgilerin ve diğer faydalı metadata'ların döndürülmesini sağlayan tek bir yöntem sağlar.
 
-## Why use GroupDocs.Watermark for document management java?
-- **Unified API** – Handles dozens of formats without additional converters.  
-- **Fast metadata access** – No need to load the entire document into memory.  
-- **Built‑in security** – Works with encrypted files and respects licensing.  
-- **Scalable** – Suitable for batch processing in large‑scale **document management java** systems.
+## Belge yönetimi java'sı için neden GroupDocs.Watermark'ı kullanmalısınız?
+- **Birleşik API** – Ek dönüştürücüler olmadan düzinelerce formatı işler.
+- **Hızlı meta veri erişimi** – Belgenin tamamını belleğe yüklemenize gerek yoktur.
+- **Yerleşik güvenlik** – Şifrelenmiş dosyalarla çalışır ve lisanslama kurallarına uyar.
 
-## Prerequisites
-1. **GroupDocs.Watermark for Java** (version 24.11 or later).  
-2. JDK 8 or newer.  
-3. Maven (or the ability to add a JAR manually).  
-4. Basic Java I/O knowledge.
+- **Ölçeklenebilir** – Büyük ölçekli **Java belge yönetim** sistemlerinde toplu işlemeye uygundur.
 
-## Setting Up GroupDocs.Watermark for Java
+## Önkoşullar
+1. **GroupDocs.Watermark for Java** (sürüm 24.11 veya üzeri).
 
-To integrate **GroupDocs.Watermark for Java**, you can use either Maven or a direct download approach. Here's how to set it up:
+2. JDK 8 veya daha yenisi.
 
-**Maven Configuration**
+3. Maven (veya manuel olarak bir JAR ekleme yeteneği).
 
-Add the following configuration to your `pom.xml` file:
+4. Temel Java G/Ç bilgisi.
+
+## GroupDocs.Watermark for Java Kurulumu
+
+**GroupDocs.Watermark for Java**'yı entegre etmek için Maven veya doğrudan indirme yöntemini kullanabilirsiniz. Kurulumu şu şekilde yapabilirsiniz:
+
+**Maven Yapılandırması**
+
+Aşağıdaki yapılandırmayı `pom.xml` dosyanıza ekleyin:
 
 ```xml
 <repositories>
@@ -65,19 +69,20 @@ Add the following configuration to your `pom.xml` file:
 </dependencies>
 ```
 
-**Direct Download**
+**Doğrudan İndirme**
 
-Alternatively, you can download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternatif olarak, en son sürümü [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) adresinden indirebilirsiniz.
 
-#### License Acquisition
-You can obtain a free trial license or purchase a temporary license. Follow these steps:
-1. Visit the [GroupDocs Purchase page](https://purchase.groupdocs.com/temporary-license/) to apply for a temporary license.  
-2. Download and apply your license file as per instructions in the documentation.
+#### Lisans Edinimi
+Ücretsiz deneme lisansı alabilir veya geçici bir lisans satın alabilirsiniz. Şu adımları izleyin:
+1. Geçici bir lisans için başvurmak üzere [GroupDocs Satın Alma sayfasına](https://purchase.groupdocs.com/temporary-license/) gidin.
 
-## How to get file type java with GroupDocs.Watermark
+2. Belgelerdeki talimatlara göre lisans dosyanızı indirin ve uygulayın.
 
-### Basic Initialization
-Start by importing the required classes and creating a `Watermarker` instance from a `FileInputStream`:
+## GroupDocs.Watermark ile Java dosya türünü nasıl alabilirsiniz?
+
+### Temel Başlatma
+Gerekli sınıfları içe aktararak ve bir `FileInputStream`'den bir `Watermarker` örneği oluşturarak başlayın:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -90,11 +95,11 @@ FileInputStream stream = new FileInputStream("YOUR_DOCUMENT_DIRECTORY/source.doc
 Watermarker watermarker = new Watermarker(stream);
 ```
 
-### Retrieve Document Information from File Stream
-The following steps show how to pull the file type, page count, and size—all in one go.
+### Dosya Akışından Belge Bilgilerini Alma
+Aşağıdaki adımlar, dosya türünü, sayfa sayısını ve boyutunu tek seferde nasıl alacağınızı göstermektedir.
 
-#### Step 1: Open the File Stream
-Replace `'YOUR_DOCUMENT_DIRECTORY/source.docx'` with your actual file path:
+#### Adım 1: Dosya Akışını Açın
+`'YOUR_DOCUMENT_DIRECTORY/source.docx'` ifadesini gerçek dosya yolunuzla değiştirin:
 
 ```java
 import java.io.FileInputStream;
@@ -103,10 +108,10 @@ import java.io.FileInputStream;
 FileInputStream stream = new FileInputStream("YOUR_DOCUMENT_DIRECTORY/source.docx");
 ```
 
-*Why this step?*: This initializes access to your document, allowing further processing.
+*Bu adım neden gerekli?*: Bu adım, belgenize erişimi başlatarak daha fazla işlemeye olanak tanır.
 
-#### Step 2: Initialize Watermarker Object
-The `Watermarker` object is crucial as it facilitates various document manipulations:
+#### Adım 2: Filigran Nesnesini Başlatma
+`Filigran` nesnesi, çeşitli belge manipülasyonlarını kolaylaştırdığı için çok önemlidir:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -115,10 +120,10 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker(stream);
 ```
 
-*Key Configuration*: Ensure your file path and permissions are correct to avoid access errors.
+*Temel Yapılandırma*: Erişim hatalarını önlemek için dosya yolunuzun ve izinlerinizin doğru olduğundan emin olun.
 
-#### Step 3: Retrieve Document Information
-Use the `getDocumentInfo()` method to fetch document metadata:
+#### Adım 3: Belge Bilgilerini Alma
+Belge meta verilerini almak için `getDocumentInfo()` yöntemini kullanın:
 
 ```java
 import com.groupdocs.watermark.common.IDocumentInfo;
@@ -127,10 +132,10 @@ import com.groupdocs.watermark.common.IDocumentInfo;
 IDocumentInfo info = watermarker.getDocumentInfo();
 ```
 
-*What this does*: Retrieves an object containing all relevant document details.
+*Bu ne işe yarar*: İlgili tüm belge ayrıntılarını içeren bir nesne alır.
 
-#### Step 4: Obtain Specific Details
-Print the file type, number of pages, and size for verification:
+#### Adım 4: Belirli Ayrıntıları Elde Etme
+Dosya türünü, sayfa sayısını ve boyutunu doğrulama için yazdırın:
 
 ```java
 System.out.println("File type: " + info.getFileType());
@@ -138,10 +143,10 @@ System.out.println("Number of pages: " + info.getPageCount());
 System.out.println("Document size: " + info.getSize() + " bytes");
 ```
 
-*Why these details?*: Understanding document properties is essential for further processing and decision‑making.
+*Neden bu ayrıntılar?*: Belge özelliklerini anlamak, daha sonraki işlemler ve karar verme için çok önemlidir.
 
-#### Step 5: Close Resources
-Properly closing resources prevents memory leaks:
+#### Adım 5: Kaynakları Kapatma
+Kaynakların düzgün bir şekilde kapatılması bellek sızıntılarını önler:
 
 ```java
 // Always close the Watermarker and FileInputStream
@@ -149,49 +154,49 @@ watermarker.close();
 stream.close();
 ```
 
-*Best Practice*: This ensures optimal resource management, critical in large‑scale applications.
+*En İyi Uygulama*: Bu, büyük ölçekli uygulamalarda kritik olan optimum kaynak yönetimini sağlar.
 
-## Practical Applications (document management java)
+## Pratik Uygulamalar (belge yönetimi java)
 
-Here are some real‑world scenarios where retrieving document information is beneficial:
+Belge bilgilerini almanın yararlı olduğu bazı gerçek dünya senaryoları şunlardır:
 
-1. **Automated Classification** – Dosyaları depoya girmeden önce türüne veya boyutuna göre sınıflandır.  
-2. **Pre‑processing Validation** – Boyut veya sayfa sayısı eşiklerini karşılamayan belgeleri reddet.  
-3. **Audit Trails** – Uyumluluk ve adli analiz için metadata kaydet.  
-4. **Batch Pipelines** – Sayfa sayısına göre işleme yollarını (ör. OCR vs. dönüşüm) belirle.  
-5. **Cloud Integration** – Depolama hizmetlerine yüklemeden önce dosyaları önceden doğrula.
+1. **Otomatik Sınıflandırma** – Dosyaları depoya önce türüne veya boyutuna göre sınıflandırın.
+2. **Ön İşleme Doğrulaması** – Boyut veya sayfa sayıları eşiklerini karşılamayan belgeleri reddet.
+3. **Denetim Yolları** – Uyumluluk ve adli analiz için meta veri kaydı.
+4. **Toplu Boru Hatları** – Sayfalardaki işleme göre işleme işlemlerini (ör.OCR vs. dönüşüm) belirle.
+5. **Bulut Entegrasyonu** – Depolama hizmetlerine yüklenmeden önce dosyalar doğrula.
 
-## Performance Considerations
-- **Efficient I/O** – Load only the metadata; avoid full document rendering when not needed.  
-- **Resource Cleanup** – Always close `Watermarker` and streams to free memory.  
-- **Parallel Processing** – For bulk operations, consider Java’s `ExecutorService` to handle multiple files concurrently.
+## Performansla İlgili Hususlar
+- **Verimli G/Ç** – Yalnızca meta verileri yükleyin; gerekmediğinde tam belge oluşturmayı önleyin.
+- **Kaynak Temizleme** – Her zaman "Filigran"ı kapatın ve bellekte yer açmak için akış yapın.
+- **Paralel İşleme** – Toplu işlemlerde, birden fazla dosyayı aynı anda işlemek için Java'nın `ExecutorService' özelliğini düşünün.
 
-## Common Issues and Solutions
+## Yaygın Sorunlar ve Çözümler
 | Sorun | Neden Oluşur | Çözüm |
-|-------|----------------|-----|
-| `FileNotFoundException` | Yanlış dosya yolu veya eksik izinler | Mutlak yolu doğrulayın ve Java sürecinin okuma izinlerine sahip olduğundan emin olun. |
-| `UnsupportedFormatException` | Belge formatı mevcut kütüphane sürümü tarafından desteklenmiyor | GroupDocs.Watermark'ı en son sürüme güncelleyin veya önce dosyayı desteklenen bir tipe dönüştürün. |
-| Büyük PDF'lerde bellek dalgalanmaları | Sadece metadata yerine tam belge yüklenmesi | Sadece başlıkları okuyan metadata API'sini (`getDocumentInfo`) kullanın. |
-| Lisans hataları | Deneme süresi dolmuş veya lisans dosyası eksik | Satın alma sayfasından yeni bir geçici lisans uygulayın. |
+|----------|-----|-----|
+| 'FileNotFoundException' | Yanlış dosya yolu veya eksik izinler | Mutlak yolunu doğrulayın ve Java sürecini okumaya izin verdiğinizden emin olun. |
+| 'DesteklenmeyenFormatException' | Belge formatı mevcut sürüm sürümü tarafından desteklenmiyor | GroupDocs.Watermark'ı en son sürüme güncelleyin veya önceden elde ettiğiniz bir tipe dönüştürülün. |
+| Büyük PDF'lerdeki bellek para birimleri | Yalnızca meta veri yerine tam belge yazma | Sadece başlıkları okuyan metadata API'sini (`getDocumentInfo`) kullanın. |
+| Lisans hataları | Deneme süresi dolmuş veya lisans dosyası eksik | Satın alma sayfasının yeni bir geçici lisans rejimi. |
 
-## Frequently Asked Questions
+## Sıkça Sorulan Sorular
 
-**S: Belge bilgisi alma için hangi dosya türleri destekleniyor?**  
-C: GroupDocs, DOCX, PDF, PPTX, XLSX ve birçok görüntü türü dahil geniş bir format yelpazesini destekler.
+**S: Belge bilgisi alma için hangi dosya türleri destekleniyor?**
+C: GroupDocs, DOCX, PDF, PPTX, XLSX ve birçok görüntü türü dahil geniş bir format aralığını sağlar.
 
-**S: FileInputStream ile ilgili sorunları nasıl gideririm?**  
-C: Dosya yolunun doğru olduğundan, dosyanın mevcut olduğundan ve Java sürecinin okuma izinlerine sahip olduğundan emin olun. `IOException` için yığın izlerini kontrol edin.
+**S: FileInputStream ile ilgili sorunlar nasıl giderilir?**
+C: Dosya yolunun doğru olduğundan, dosyanın mevcut olduğundan ve Java sürecini okumaya izinlerine sahip olduğunuzdan emin olun. `IOException` için yığın izlerini kontrol edin.
 
-**S: Bu yöntem büyük belgeleri verimli bir şekilde işleyebilir mi?**  
-C: Evet. `getDocumentInfo()` çağrısı yalnızca başlık bilgilerini okur, bu yüzden çok‑megabayt dosyalarda bile bellek kullanımı düşük kalır.
+**S: Bu yöntem büyük belgeleri verimli bir şekilde işleyebilir mi?**
+C: Evet. `getDocumentInfo()` yalnızca başlıktan satın alınabilir okur, bu nedenle çok‑megabayt dosyalardaki bile bellek kullanımı düşük kalır.
 
-**S: Dosya türü, boyut ve sayfa sayısının ötesinde ek metadata almak mümkün mü?**  
-C: Kesinlikle. `IDocumentInfo` yazar, oluşturma tarihi gibi özellikleri ortaya çıkarır—tam liste için API referansına bakın.
+**S: Dosya türü, boyut ve sayfaların ötesinde ek meta veri almak mümkün mü?**
+C: elbette. `IDocumentInfo` yazarı, oluşturma tarihi gibi özellikler ortaya çıkıyor—tam liste için API referansına bakın.
 
-**S: Bunu mevcut bir document management java sistemine nasıl entegre ederim?**  
-C: Bir dosya aldığınız her yerde gösterilen kod parçacığını çağırın, dönen metadata'yı veritabanınıza kaydedin ve sonraki mantığı yönlendirmek için kullanın.
+**S: Bunu mevcut bir belge yönetimi java sistemi nasıl entegre ederim?**
+C: Bir dosya kaydının her yerde kaydedilmesi kod parçasını çağırın, dönen metadata'yı veri tabanınıza kaydetme ve sonraki prosedür yönlendirmek için kullanın.
 
-## Resources
+## Kaynaklar
 
 - **Dokümantasyon**: [GroupDocs Watermark for Java Documentation](https://docs.groupdocs.com/watermark/java/)  
 - **API Referansı**: [GroupDocs Watermark API Reference](https://reference.groupdocs.com/watermark/java)  

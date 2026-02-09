@@ -33,27 +33,27 @@ Een watermerk toevoegen betekent het overleggen van tekst, afbeelding of vorm op
 - **Rijke API** – Biedt zowel high‑level helpers als low‑level controle voor geavanceerde scenario's.
 - **Prestatie‑geoptimaliseerd** – Efficiënte I/O en geheugenbeheer, ideaal voor server‑side verwerking.
 
-## Prerequisites
+## Vereisten
 
 Voordat je een met wachtwoord beveiligd document laadt met GroupDocs.Watermark voor Java, zorg ervoor dat je het volgende hebt:
 
-### Required Libraries and Versions
-Neem de GroupDocs.Watermark bibliotheek op in je project. De nieuwste versie op dit moment is 24.11.
+### Vereiste bibliotheken en versies
+Neem de GroupDocs.Watermark-bibliotheek op in je project. De nieuwste versie op dit moment is 24.11.
 
-### Environment Setup Requirements
-Zorg voor compatibiliteit met een Java Development Kit (JDK) omgeving die de benodigde afhankelijkheden ondersteunt voor een soepele uitvoering van Java‑applicaties.
+### Vereisten voor omgevingsinstallatie
+Zorg voor compatibiliteit met een Java Development Kit (JDK) omgeving die de vereiste afhankelijkheden ondersteunt voor een soepele uitvoering van Java‑applicaties.
 
-### Knowledge Prerequisites
-- Basiskennis van Java‑programmeren  
-- Bekendheid met Maven of directe bibliotheekdownloads  
+### Kennisvereisten
+- Basiskennis van Java-programmeurs
+- Bekendheid met Maven van directe bibliotheekdownloads
 
-Met deze vereisten op orde, laten we GroupDocs.Watermark in je project integreren.
+Met deze vereisten op bestelling, laten we GroupDocs.Watermark in je project eindigen.
 
-## Setting Up GroupDocs.Watermark for Java
+## GroupDocs.Watermark instellen voor Java
 
 Je kunt GroupDocs.Watermark toevoegen aan je Java‑applicatie via Maven of door de bibliotheek direct te downloaden. Zo doe je dat:
 
-### Maven Setup
+### Maven-installatie
 
 Voeg deze repository en afhankelijkheid toe aan je `pom.xml` bestand:
 
@@ -75,25 +75,25 @@ Voeg deze repository en afhankelijkheid toe aan je `pom.xml` bestand:
 </dependencies>
 ```
 
-### Direct Download
-Of download de nieuwste versie van [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Direct downloaden
+Of download de nieuwste versie van [GroupDocs.Watermark voor Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### License Acquisition Steps
-Begin met een gratis proefversie om de functies van GroupDocs.Watermark te verkennen. Voor langdurig gebruik kun je een tijdelijke licentie aanvragen of er een kopen. Bezoek de [purchase page](https://purchase.groupdocs.com/temporary-license/) voor meer informatie.
+### Stappen voor het verwerven van licenties
+Begin met een gratis proefversie van de functies van GroupDocs.Watermark om te verkennen. Voor langdurig gebruik kun je een tijdelijke licentie aanvragen of er een kopen. Bezoek de [aankooppagina](https://purchase.groupdocs.com/temporary-license/) voor meer informatie.
 
-### Basic Initialization and Setup
+### Basisinitialisatie en configuratie
 Zo initialiseert je je project met GroupDocs.Watermark:
-1. Voeg de bibliotheek toe aan je build‑pad.  
-2. Importeer benodigde klassen zoals `Watermarker` en `LoadOptions`.
+1. Voeg de bibliotheek toe aan je build-pad.
+2. Importeer verschillende klassen zoals `Watermarker` en `LoadOptions`.
 
-Laten we nu de kernfunctionaliteit implementeren om een met wachtwoord beveiligd document te laden.
+Laten we nu de kernfunctionaliteit implementeren om een ​​met wachtwoord beveiligd document te laden.
 
-## How to Load Protected Documents (java load encrypted file)
+## Hoe beveiligde documenten te laden (java-gecodeerd bestand laden)
 
-### Feature: Load Password‑Protected Document
-Deze functie stelt je in staat versleutelde documenten te openen met een opgegeven wachtwoord. Laten we stap voor stap bekijken hoe je dit implementeert:
+### Functie: Met wachtwoord beveiligd document laden
+Deze functie stelt je in staat versleutelde documenten te openen met een herhaaldelijk wachtwoord. Laten we stap voor stap bekijken hoe je dit implementeert:
 
-#### Step 1: Configure Load Options with Password
+#### Stap 1: Configureer laadopties met wachtwoord
 Maak een instantie van `LoadOptions` aan en stel het vereiste wachtwoord voor je document in.
 
 ```java
@@ -107,7 +107,7 @@ public class LoadPasswordProtectedDocument {
         loadOptions.setPassword("P@$$w0rd");
 ```
 
-#### Step 2: Specify Document Path
+#### Stap 2: Documentpad opgeven
 Definieer het pad naar je versleutelde document.
 
 ```java
@@ -115,7 +115,7 @@ Definieer het pad naar je versleutelde document.
         String filePath = "YOUR_DOCUMENT_DIRECTORY/protected-document.docx";
 ```
 
-#### Step 3: Create Watermarker Instance
+#### Stap 3: Watermerkinstantie maken
 Instantieer `Watermarker` met zowel het documentpad als de geconfigureerde load‑options. Deze stap is cruciaal omdat het toegang tot het beveiligde document mogelijk maakt.
 
 ```java
@@ -123,12 +123,12 @@ Instantieer `Watermarker` met zowel het documentpad als de geconfigureerde load�
         Watermarker watermarker = new Watermarker(filePath, loadOptions);
 ```
 
-#### Step 4: Manage Watermarks
+#### Stap 4: Watermerken beheren
 Nadat het document is geladen kun je **watermerken toevoegen** of **verwijderen**. Hieronder staat een beknopt voorbeeld dat een tekst‑watermerk toevoegt (het verwijderproces volgt een vergelijkbaar patroon met `watermarker.remove`).
 
 > *Opmerking: De daadwerkelijke code voor het toevoegen van een watermerk is weggelaten voor de beknoptheid; raadpleeg de API‑referentie voor gedetailleerde voorbeelden.*
 
-#### Step 5: Save Changes
+#### Stap 5: Wijzigingen opslaan
 Definieer de output‑directory en sla het verwerkte document op.
 
 ```java
@@ -137,7 +137,7 @@ Definieer de output‑directory en sla het verwerkte document op.
         watermarker.save(outputPath);
 ```
 
-#### Step 6: Release Resources
+#### Stap 6: Bronnen vrijgeven
 Sluit de `Watermarker` instantie om bronnen vrij te geven.
 
 ```java
@@ -147,58 +147,58 @@ Sluit de `Watermarker` instantie om bronnen vrij te geven.
 }
 ```
 
-### Troubleshooting Tips
-- Zorg ervoor dat het wachtwoord correct is; zelfs kleine typefouten voorkomen het laden.  
-- Controleer of bestands‑paden correct zijn opgegeven en toegankelijk.  
+### Tips voor het oplossen van problemen
+- Zorg ervoor dat het wachtwoord correct is; zelfs kleine typefouten voorkomen het laden.
+- Controleer of bestandspaden correct zijn horizontaal en toegankelijk.
 - Bekijk eventuele uitzonderingen die tijdens de uitvoering worden gegooid voor meer inzicht.
 
-## How to Remove Watermark from Protected Documents
-Als je een bestaand watermerk van een beveiligd bestand wilt verwijderen, volgt het proces de bovenstaande laadstappen — roep simpelweg de verwijder‑API aan na het creëren van de `Watermarker` instantie. Dit is een veelvoorkomende eis in juridische of compliance‑workflows waarbij het originele document moet worden hersteld vóór archivering.
+## Hoe u een watermerk uit beveiligde documenten kunt verwijderen
+Als je een bestaand watermerk van een beveiligd bestand wilt verwijderen, volgt het proces de bovenstaande laadstappen — roep bestaande de verwijder‑API aan na het creëren van de `Watermarker`-installatie. Dit is een veelvoorkomende eis in juridische procedures voor compliance-workflows waarbij het originele document moet worden hersteld vóór archivering.
 
-## Practical Applications
-1. **Document Management Systemen** – Behandel gevoelige bestanden veilig terwijl je ze toch kunt voorzien van bedrijfs‑watermerken.  
-2. **Juridische kantoren** – Beheer vertrouwelijke dossiers die zowel bescherming als visuele identificatie vereisen.  
-3. **Academische instellingen** – Bescherm studentenrecords en examen‑papieren terwijl je institutionele watermerken toevoegt.  
-4. **Financiële diensten** – Verwerk versleutelde financiële overzichten en voeg compliance‑stempels toe.  
-5. **Content Management Platforms** – Bescherm eigendomsrechtelijke content met zowel encryptie als watermerken.
+## Praktische toepassingen
+1. **Document Management Systemen** – Behandel gevoelige bestanden veilig terwijl je ze toch kunt voorzien van bedrijfs‑watermerken.
+2. **Juridische kantoren** – Beheer dubbele dossiers die zowel bescherming als visuele identificatie verdeeld zijn.
+3. **Academische instellingen** – Bescherm studentenrecords en examen‑papieren terwijl je synthetische watermerken toegevoegd.
+4. **Financiële diensten** – Verwerk versleutelde financiële overzichten en voeg compliance‑stempels toe.
+5. **Content Management Platforms** – Bescherm eigendomsrechtelijke inhoud met zowel encryptie als watermerken.
 
-## Performance Considerations
-- Optimaliseer bestand‑I/O‑bewerkingen om laadtijden te verkorten.  
-- Beheer geheugen efficiënt door bronnen direct na verwerking vrij te geven.  
+## Prestatieoverwegingen
+- Optimaliseer bestand‑I/O‑bewerkingen om laadtijden te verkorten.
+- Beheer geheugen efficiënte door bronnen directe verwerking vrij te geven.
 - Overweeg multithreading voor het gelijktijdig verwerken van meerdere documenten, indien van toepassing.
 
-## Common Issues and Solutions
+## Veelvoorkomende problemen en oplossingen
 
 | Probleem | Oorzaak | Oplossing |
 |----------|---------|-----------|
-| **Fout: ongeldig wachtwoord** | Verkeerd wachtwoord of coderingsprobleem | Controleer de wachtwoord‑string nogmaals; zorg voor juiste hoofdlettergebruik en speciale tekens. |
-| **Bestand niet gevonden** | Onjuist pad of ontbrekende permissies | Controleer het absolute/relatieve pad en de bestandsysteem‑permissies. |
-| **Out‑of‑memory voor grote bestanden** | Het laden van zeer grote documenten in één thread | Verwerk pagina's in batches of vergroot de JVM‑heap‑grootte (`-Xmx`). |
+| **Fout: wachtwoord** | Verkeerd wachtwoord of coderingsprobleem | Controleer de wachtwoord‑string gelijktijdig; zorg voor juist hoofdlettergebruik en speciale tekens. |
+| **Best niet gevonden** | Onjuist pad van ontbrekende toestemmingen | Controleer het absolute/relatieve pad en de bestandsysteem‑permissies. |
+| **Onvoldoende geheugen voor grote bestanden** | Het laden van zeer grote documenten in één draad | Verwerk pagina's in batches van vergroot de JVM‑heap‑grootte (`-Xmx`). |
 
-## Frequently Asked Questions
+## Veelgestelde vragen
 
-**Q: Hoe ga ik om met onjuiste wachtwoorden?**  
-A: Zorg ervoor dat het wachtwoord exact overeenkomt met wat gebruikt is om het document te versleutelen. Controleer hoofdlettergevoeligheid en speciale tekens.
+**Q: Hoe ga ik om met gewijzigde wachtwoorden?**
+A: Zorg ervoor dat het exacte wachtwoord met wat gebruikt is om het document te versleutelen. Controleer hoofdlettergevoeligheid en speciale tekens.
 
-**Q: Kan ik GroupDocs.Watermark gebruiken zonder licentie?**  
+**Q: Kan ik GroupDocs.Watermark gebruiken zonder licentie?**
 A: Je kunt beginnen met een gratis proefversie, maar die heeft beperkingen. Voor productiegebruik moet je een tijdelijke of volledige licentie verkrijgen.
 
-**Q: Welke bestandsformaten ondersteunt GroupDocs.Watermark?**  
-A: Het ondersteunt een breed scala aan formaten, waaronder DOCX, PDF, PPTX en nog veel meer. Zie de volledige lijst in de API‑referentie.
+**V: Welke bestandsformaten ondersteunen GroupDocs.Watermark?**
+A: Het ondersteunt een scala aan formaten, waaronder DOCX, PDF, PPTX en nog veel meer. Zie de volledige lijst in de API-referentie.
 
-**Q: Zijn er prestatie‑impacten bij het werken met grote documenten?**  
-A: De prestaties kunnen variëren afhankelijk van de documentgrootte. Gebruik efficiënte I/O, geef bronnen snel vrij, en overweeg multithreading voor bulk‑bewerkingen.
+**Q: Zijn er prestatie‑impacten bij het werken met grote documenten?**
+A: De prestaties kunnen afhankelijk zijn van de documentgrootte. Gebruik eenvoudige I/O, geef bronnen snel vrij, en overweeg multithreading voor bulk‑bewerkingen.
 
-**Q: Hoe integreer ik GroupDocs.Watermark in een webapplicatie?**  
-A: Zet de bibliotheek op je backend‑server, zorg dat alle Maven‑afhankelijkheden zijn verpakt, en exposeer service‑endpoints die document‑streams en wachtwoorden accepteren.
+**Q: Hoe integreer ik GroupDocs.Watermark in een webapplicatie?**
+A: Zet de bibliotheek op je backend-server, zorg ervoor dat alle Maven-afhankelijkheden zijn gecombineerd, en exposeer service-endpoints die documentstromen en wachtwoorden accepteren.
 
-**Q: Is het mogelijk om een watermerk te verwijderen uit een met wachtwoord beveiligd bestand?**  
-A: Ja. Laad het document met het juiste wachtwoord en roep vervolgens de verwijder‑methoden van de API aan.
+**V: Is het mogelijk om een ​​watermerk te verwijderen uit een met wachtwoord beveiligd bestand?**
+EEN:Ja. Laad het document met het juiste wachtwoord en roep vervolgens de verwijder‑methoden van de API aan.
 
-## Resources
+## Bronnen
 - [Documentatie](https://docs.groupdocs.com/watermark/java/)
 - [API‑referentie](https://reference.groupdocs.com/watermark/java)
-- [Download GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark downloaden](https://releases.groupdocs.com/watermark/java/)
 - [GitHub‑repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
 - [Gratis ondersteuningsforum](https://forum.groupdocs.com/c/watermark/10)
 - [Aanvraag tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/)
@@ -207,6 +207,6 @@ Verken deze bronnen voor verdere begeleiding en ondersteuning terwijl je blijft 
 
 ---
 
-**Last Updated:** 2025-12-23  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+**Laatst bijgewerkt:** 23-12-2025
+**Getest met:** GroupDocs.Watermark 24.11 voor Java
+**Auteur:** GroupDocs

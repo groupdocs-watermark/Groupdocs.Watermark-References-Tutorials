@@ -3,7 +3,7 @@ date: 2025-12-23
 description: Tìm hiểu cách thêm watermark vào các tệp PDF Java bằng cách tải tài liệu
   từ nhiều nguồn khác nhau và lưu các tệp đã được watermark bằng GroupDocs.Watermark
   cho Java.
-title: 'Watermark PDF Java: Các thao tác tải và lưu tài liệu với GroupDocs.Watermark'
+title: 'Watermark PDF Java - Các thao tác tải và lưu tài liệu với GroupDocs.Watermark'
 type: docs
 url: /vi/java/document-loading-saving/
 weight: 2
