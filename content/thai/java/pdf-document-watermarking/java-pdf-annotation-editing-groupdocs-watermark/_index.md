@@ -1,17 +1,39 @@
 ---
-title: "Edit PDF Annotations Java: A Comprehensive Guide Using GroupDocs.Watermark"
-description: "Learn how to edit pdf annotations java using GroupDocs.Watermark Java. Streamline your PDF workflows with groupdocs watermark java for efficient document processing."
-date: "2026-02-18"
-weight: 1
-url: "/java/pdf-document-watermarking/java-pdf-annotation-editing-groupdocs-watermark/"
+date: '2026-02-18'
+description: เรียนรู้วิธีแก้ไขคำอธิบาย PDF ด้วย Java โดยใช้ GroupDocs.Watermark Java.
+  ปรับกระบวนการทำงาน PDF ของคุณให้เป็นระบบด้วย GroupDocs.Watermark Java เพื่อการประมวลผลเอกสารที่มีประสิทธิภาพ.
 keywords:
 - Java PDF Annotation Editing
 - GroupDocs Watermark Java
 - Edit PDF Annotations in Java
+title: 'แก้ไขคำอธิบาย PDF ด้วย Java: คู่มือครบวงจรโดยใช้ GroupDocs.Watermark'
 type: docs
+url: /th/java/pdf-document-watermarking/java-pdf-annotation-editing-groupdocs-watermark/
+weight: 1
 ---
 
-# Edit PDF Annotations Java with GroupDocs.Watermark
+ 17, and newer LTS releases.
+
+**Q: How do I handle PDFs with multiple pages?**  
+A: Loop through `pdfContent.getPages()` and apply the same logic to each page’s annotation collection.
+
+## Conclusion
+
+Translate.
+
+---
+
+**Last Updated:** 2026-02-18  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs
+
+Translate the labels but keep dates.
+
+Now produce final markdown with Thai translations.
+
+Be careful to keep code block placeholders unchanged.
+
+Let's craft final answer.# แก้ไข PDF Annotations Java ด้วย GroupDocs.Watermark
 
 ## Introduction
 
