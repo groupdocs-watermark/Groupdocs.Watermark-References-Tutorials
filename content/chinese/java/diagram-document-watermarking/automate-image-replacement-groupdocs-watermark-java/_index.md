@@ -1,43 +1,43 @@
 ---
-title: "How to Replace Diagram Images Java with GroupDocs.Watermark"
-description: "Learn how to replace diagram images Java using GroupDocs.Watermark for Java—automate updates, boost efficiency, and ensure accuracy in your workflow."
-date: "2026-02-18"
-weight: 1
-url: "/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/"
+date: '2026-02-18'
+description: 了解如何使用 GroupDocs.Watermark for Java 替换 Java 中的图表图片——实现自动更新，提高效率，确保工作流的准确性。
 keywords:
 - GroupDocs Watermark Java
 - automate image replacement
 - Java diagram watermarking
+title: 如何在 Java 中使用 GroupDocs.Watermark 替换图表图像
 type: docs
+url: /zh/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/
+weight: 1
 ---
 
 # replace diagram images java with GroupDocs.Watermark for Java
 
-Updating pictures inside Visio‑style diagrams can be a tedious, error‑prone task—especially when you have dozens of files to keep in sync with brand guidelines or product revisions. In this tutorial you’ll learn **how to replace diagram images java** programs, using the powerful GroupDocs.Watermark library. We’ll walk through setting up the environment, accessing diagram shapes, swapping out images, and saving the result, all with clear, conversational explanations.
+在 Visio 风格的图表中更新图片可能是一项繁琐且容易出错的工作——尤其是当你需要同步数十个文件以符合品牌指南或产品修订时。在本教程中，你将学习 **如何使用 GroupDocs.Watermark 库在 Java 程序中 replace diagram images java**。我们将逐步演示环境搭建、访问图表形状、替换图片以及保存结果，全部配以清晰、口语化的说明。
 
 ## Quick Answers
-- **What library can replace diagram images in Java?** GroupDocs.Watermark for Java.  
-- **Do I need a license?** A free trial works for development; a production license is required for commercial use.  
-- **Which file formats are supported?** Visio (.vsdx, .vsd) and other diagram types supported by the library.  
-- **How long does the implementation take?** Around 15 minutes for a basic replace‑image script.  
-- **Can I process multiple diagrams in a batch?** Yes—simply loop over files with the same Watermarker logic.
+- **哪个库可以在 Java 中 replace diagram images?** GroupDocs.Watermark for Java。  
+- **需要许可证吗?** 免费试用可用于开发；商业使用需购买正式许可证。  
+- **支持哪些文件格式?** Visio (.vsdx, .vsd) 以及库支持的其他图表类型。  
+- **实现大概需要多长时间?** 基本的 replace‑image 脚本约 15 分钟即可完成。  
+- **可以批量处理多个图表吗?** 可以——只需在同一 Watermarker 逻辑中循环文件即可。
 
 ## What is “replace diagram images java”?
-“replace diagram images java” refers to the process of programmatically locating image‑bearing shapes inside a diagram file and substituting the embedded bitmap with a new one, all from Java code. This eliminates manual editing in Visio or similar tools and ensures consistency across large document collections.
+“replace diagram images java” 指的是在图表文件中以编程方式定位带有图片的形状，并用新的位图替换嵌入的图片的过程，全部通过 Java 代码完成。这样可以避免在 Visio 或类似工具中手动编辑，并确保大批文档的一致性。
 
 ## Why use GroupDocs.Watermark for this task?
-- **Automation‑first**: Handles thousands of files with a few lines of code.  
-- **No UI required**: Works head‑less on servers, CI pipelines, or desktop apps.  
-- **Rich content model**: Provides strong abstractions (DiagramContent, DiagramShape) that let you target exactly the shapes you need.  
-- **Cross‑platform**: Runs on any JVM‑compatible environment (Windows, Linux, macOS).  
+- **Automation‑first**：几行代码即可处理成千上万的文件。  
+- **No UI required**：可在服务器、CI 流水线或桌面应用的无头环境中运行。  
+- **Rich content model**：提供强大的抽象（DiagramContent、DiagramShape），让你精准定位所需形状。  
+- **Cross‑platform**：在任何兼容 JVM 的环境（Windows、Linux、macOS）上运行。
 
 ## Prerequisites
-- JDK 8 or newer installed.  
-- Maven (or manual JAR handling) for dependency management.  
-- Basic Java knowledge and familiarity with file I/O.  
+- 已安装 JDK 8 或更高版本。  
+- 使用 Maven（或手动管理 JAR）进行依赖管理。  
+- 具备基本的 Java 知识并熟悉文件 I/O。
 
 ### Required Libraries, Versions, and Dependencies
-Add the GroupDocs repository and the Watermark dependency to your `pom.xml`:
+在 `pom.xml` 中添加 GroupDocs 仓库和 Watermark 依赖：
 
 ```xml
 <repositories>
@@ -57,14 +57,14 @@ Add the GroupDocs repository and the Watermark dependency to your `pom.xml`:
 </dependencies>
 ```
 
-You can also download the latest JAR directly from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+你也可以直接从 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下载最新的 JAR 包。
 
-A free trial license is available, and a permanent license can be purchased from [GroupDocs](https://purchase.groupdocs.com/temporary-license/).
+免费试用许可证可用，永久许可证可在 [GroupDocs](https://purchase.groupdocs.com/temporary-license/) 购买。
 
 ## Step‑by‑Step Implementation
 
 ### 1. Initialize the Watermarker
-First, create a `Watermarker` instance that points to the diagram you want to edit.
+首先，创建指向待编辑图表的 `Watermarker` 实例。
 
 ```java
 import java.io.File;
@@ -80,10 +80,10 @@ public class FeatureWatermarkerInitialization {
 }
 ```
 
-*Why this matters*: Loading the file with `DiagramLoadOptions` tells the library to treat the source as a diagram, enabling shape‑level access.
+*Why this matters*: 使用 `DiagramLoadOptions` 加载文件可让库将源文件视为图表，从而实现对形状的级别访问。
 
 ### 2. Access Diagram Content
-Retrieve the internal representation (`DiagramContent`) so you can enumerate pages and shapes.
+获取内部表示 (`DiagramContent`)，以便遍历页面和形状。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -96,10 +96,10 @@ public class FeatureAccessDiagramContent {
 }
 ```
 
-*Pro tip*: Keep the `Watermarker` instance alive while you work with `DiagramContent`; closing it too early will invalidate the content object.
+*Pro tip*: 在使用 `DiagramContent` 的整个过程中保持 `Watermarker` 实例存活；过早关闭会导致内容对象失效。
 
 ### 3. Replace Shape Images
-Iterate over the shapes on the first page (you can extend this to all pages) and swap any existing image with a new PNG.
+遍历第一页的形状（可扩展至所有页面），将已有图片替换为新的 PNG。
 
 ```java
 import java.io.File;
@@ -127,12 +127,12 @@ public class FeatureReplaceShapeImages {
 ```
 
 *Explanation*:  
-- `shape.getImage()` checks whether the shape already contains a picture.  
-- We read the replacement PNG into a byte array and wrap it in `DiagramWatermarkableImage`.  
-- `shape.setImage(...)` swaps the old picture for the new one.
+- `shape.getImage()` 用于检查形状是否已经包含图片。  
+- 将替换用的 PNG 读取为字节数组并包装为 `DiagramWatermarkableImage`。  
+- `shape.setImage(...)` 将旧图片换成新图片。
 
 ### 4. Save Changes and Clean Up
-After all replacements, persist the diagram and release resources.
+完成所有替换后，保存图表并释放资源。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -146,17 +146,17 @@ public class FeatureSaveAndCloseWatermarker {
 }
 ```
 
-Saving writes the updated diagram to disk, and `close()` prevents file‑handle leaks—critical for batch processing.
+保存会将更新后的图表写入磁盘，`close()` 可防止文件句柄泄漏——这在批处理时尤为关键。
 
 ## Practical Applications
-- **Corporate branding** – Update logos across all org charts with a single script.  
-- **Product documentation** – Refresh component images when new hardware is released.  
-- **Educational resources** – Swap outdated diagrams for the latest scientific illustrations.
+- **企业品牌** – 使用单个脚本更新所有组织结构图中的徽标。  
+- **产品文档** – 在新硬件发布时刷新组件图片。  
+- **教育资源** – 将过时的图表替换为最新的科学插图。
 
 ## Performance & Best Practices
-- **Process one file at a time** when dealing with large diagrams to keep memory usage low.  
-- **Dispose streams promptly** (as shown) to avoid file‑lock issues.  
-- **Profile I/O** if you’re handling hundreds of files; consider a thread‑pool with controlled concurrency.
+- **一次处理一个文件**，在处理大型图表时保持内存占用低。  
+- **及时释放流**（如示例所示），避免文件锁定问题。  
+- **对 I/O 进行性能分析**，若处理数百个文件，可考虑使用受控并发的线程池。
 
 ## Common Issues and Solutions
 | Symptom | Likely Cause | Fix |
