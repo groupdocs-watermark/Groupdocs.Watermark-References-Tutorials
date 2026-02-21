@@ -1,19 +1,20 @@
 ---
-title: "pdf watermark java: PDF Watermarking & Annotations with GroupDocs.Watermark"
-description: "Learn how to add pdf watermark java and annotate PDFs using GroupDocs.Watermark. Discover how to add watermark pdf and manage java pdf memory efficiently."
-date: "2026-02-21"
-weight: 1
-url: "/java/pdf-document-watermarking/java-pdf-watermarking-annotations-groupdocs/"
+date: '2026-02-21'
+description: Naučte se, jak přidat vodoznak do PDF v Javě a anotovat PDF pomocí GroupDocs.Watermark.
+  Objevte, jak přidat vodoznak do PDF a efektivně spravovat paměť PDF v Javě.
 keywords:
 - PDF Watermarking in Java
 - GroupDocs.Watermark for PDFs
 - Java PDF Annotations
+title: 'pdf vodoznak java: Vodoznakování PDF a anotace pomocí GroupDocs.Watermark'
 type: docs
+url: /cs/java/pdf-document-watermarking/java-pdf-watermarking-annotations-groupdocs/
+weight: 1
 ---
 
-# pdf watermark java: PDF Watermarking & Annotations with GroupDocs.Watermark
+# pdf watermark java: Vodoznakování PDF a anotace s GroupDocs.Watermark
 
-In modern Java applications, protecting PDF assets with **pdf watermark java** is a best‑practice for security and brand integrity. Whether you need to embed a discreet logo, add traceable text, or modify existing annotations, GroupDocs.Watermark gives you a fluent API to do it all. In this guide you’ll learn **how to add watermark pdf** files, work with annotation text, and keep an eye on **java pdf memory management** so your solution stays performant.
+V moderních Java aplikacích je ochrana PDF souborů pomocí **pdf watermark java** osvědčenou praxí pro zabezpečení a zachování značky. Ať už potřebujete vložit diskrétní logo, přidat sledovatelný text nebo upravit existující anotace, GroupDocs.Watermark vám poskytuje plynulé API, které to umožňuje. V tomto průvodci se naučíte **jak přidat watermark pdf** soubory, pracovat s textem anotací a sledovat **java pdf memory management**, aby vaše řešení zůstalo výkonné.
 
 ## Quick Answers
 - **What library supports pdf watermark java?** GroupDocs.Watermark for Java.
@@ -23,7 +24,7 @@ In modern Java applications, protecting PDF assets with **pdf watermark java** i
 - **Is multi‑threading safe?** Use separate `Watermarker` instances per thread and avoid sharing mutable objects.
 
 ## What is pdf watermark java?
-`pdf watermark java` refers to the technique of programmatically inserting visible or invisible watermarks into PDF documents using Java code. Watermarks can be text, images, or custom graphics that help identify the document’s source or owner.
+`pdf watermark java` označuje techniku programového vkládání viditelných nebo neviditelných vodoznaků do PDF dokumentů pomocí Java kódu. Vodoznaky mohou být textové, obrázkové nebo vlastní grafika, která pomáhá identifikovat zdroj nebo vlastníka dokumentu.
 
 ## Why use GroupDocs.Watermark for pdf watermark java?
 - **Full‑featured API** – supports text, image, and annotation watermarks.
@@ -32,10 +33,10 @@ In modern Java applications, protecting PDF assets with **pdf watermark java** i
 - **Security‑focused** – easy to add tamper‑evident marks that survive printing and conversion.
 
 ## Prerequisites
-- **Java Development Kit (JDK)** 8 or newer.
-- **IDE** such as IntelliJ IDEA or Eclipse.
-- **Maven** for dependency handling.
-- Basic familiarity with Java and PDF concepts.
+- **Java Development Kit (JDK)** 8 nebo novější.
+- **IDE** jako IntelliJ IDEA nebo Eclipse.
+- **Maven** pro správu závislostí.
+- Základní znalost Javy a PDF konceptů.
 
 ## Setting Up GroupDocs.Watermark for Java
 
