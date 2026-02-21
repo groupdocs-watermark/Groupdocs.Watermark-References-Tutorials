@@ -1,19 +1,21 @@
 ---
-title: "replace pdf images java – Java PDF Image Replacement Using GroupDocs.Watermark"
-description: "Learn how to replace pdf images java with GroupDocs.Watermark for Java. This guide also shows how to add pdf watermark java, covering setup, code, and best practices."
-date: "2026-02-21"
-weight: 1
-url: "/java/pdf-document-watermarking/java-pdf-image-replacement-groupdocs-watermark-guide/"
+date: '2026-02-21'
+description: Dowiedz się, jak zamienić obrazy PDF w Javie przy użyciu GroupDocs.Watermark
+  for Java. Ten przewodnik pokazuje także, jak dodać znak wodny PDF w Javie, obejmując
+  konfigurację, kod i najlepsze praktyki.
 keywords:
 - Java PDF image replacement
 - GroupDocs Watermark Java
 - PDF manipulation in Java
+title: Zastąp obrazy PDF w Javie – zamiana obrazów PDF w Javie przy użyciu GroupDocs.Watermark
 type: docs
+url: /pl/java/pdf-document-watermarking/java-pdf-image-replacement-groupdocs-watermark-guide/
+weight: 1
 ---
 
-# Mastering Java PDF Image Replacement with GroupDocs.Watermark
+# Opanowanie wymiany obrazów PDF w Javie przy użyciu GroupDocs.Watermark
 
-In this comprehensive tutorial you’ll discover **how to replace pdf images java** using the powerful GroupDocs.Watermark library. We’ll walk through everything from environment setup to the exact code you need, and we’ll also touch on how to **add pdf watermark java** when you’re ready to protect your documents. By the end, you’ll be able to automate image updates inside PDFs with confidence.
+W tym obszernej tutorialu odkryjesz **how to replace pdf images java** przy użyciu potężnej biblioteki GroupDocs.Watermark. Przejdziemy przez wszystko – od konfiguracji środowiska po dokładny kod, którego potrzebujesz, a także wspomnimy o tym, jak **add pdf watermark java**, gdy będziesz gotowy zabezpieczyć swoje dokumenty. Po zakończeniu będziesz mógł automatycznie aktualizować obrazy w plikach PDF z pełnym przekonaniem.
 
 ## Quick Answers
 - **What library lets me replace images in a PDF with Java?** GroupDocs.Watermark for Java.  
@@ -23,36 +25,36 @@ In this comprehensive tutorial you’ll discover **how to replace pdf images jav
 - **Is the code thread‑safe?** The Watermarker instance is not thread‑safe; create a new instance per thread.
 
 ## What is “replace pdf images java”?
-Replacing PDF images in Java means programmatically locating embedded image objects (XObjects) inside a PDF file and swapping them out for new graphics. This is useful for updating logos, correcting outdated diagrams, or personalizing documents without recreating the entire PDF.
+Zastępowanie obrazów PDF w Javie oznacza programowe wyszukiwanie osadzonych obiektów graficznych (XObjects) w pliku PDF i zamianę ich na nowe grafiki. Jest to przydatne przy aktualizacji logotypów, poprawianiu przestarzałych diagramów lub personalizacji dokumentów bez konieczności tworzenia całego PDF od nowa.
 
 ## Why use GroupDocs.Watermark for this task?
-GroupDocs.Watermark provides a high‑level API that abstracts the low‑level PDF structure, letting you focus on business logic rather than PDF internals. It also integrates watermarking capabilities, so you can **add pdf watermark java** in the same workflow.
+GroupDocs.Watermark udostępnia wysokopoziomowe API, które abstrahuje niskopoziomową strukturę PDF, pozwalając skupić się na logice biznesowej zamiast na wewnętrznych szczegółach PDF. Biblioteka integruje także funkcje znakowania, więc możesz **add pdf watermark java** w tym samym procesie.
 
 ## What You'll Learn
-- How to load a PDF file for processing.
-- Techniques to identify and replace images within specific XObjects on a PDF page.
-- Steps to save your modified PDF document efficiently.
-- Performance considerations and best practices when working with PDF manipulations in Java.
+- Jak wczytać plik PDF do przetworzenia.  
+- Techniki identyfikacji i zamiany obrazów w konkretnych XObjects na stronie PDF.  
+- Kroki zapisu zmodyfikowanego dokumentu PDF w sposób efektywny.  
+- Rozważania dotyczące wydajności i najlepsze praktyki przy manipulacji PDF w Javie.
 
 ## Prerequisites
-Before starting, ensure you have:
+Zanim rozpoczniesz, upewnij się, że masz:
 
 ### Required Libraries
-- GroupDocs.Watermark for Java version 24.11 or later.
+- GroupDocs.Watermark for Java w wersji 24.11 lub nowszej.
 
 ### Environment Setup
-- A Java Development Kit (JDK) installed on your system.
-- An IDE such as IntelliJ IDEA or Eclipse configured for Java development.
+- Zainstalowany Java Development Kit (JDK).  
+- IDE, takie jak IntelliJ IDEA lub Eclipse, skonfigurowane do programowania w Javie.
 
 ### Knowledge Prerequisites
-- Basic understanding of Java programming.
-- Familiarity with handling PDFs and images in a programmatic context.
+- Podstawowa znajomość programowania w Javie.  
+- Znajomość obsługi PDF‑ów i obrazów w kontekście programistycznym.
 
 ## Setting Up GroupDocs.Watermark for Java
-To set up GroupDocs.Watermark, add it via Maven or direct download:
+Aby skonfigurować GroupDocs.Watermark, dodaj go przez Maven lub pobierz bezpośrednio:
 
 **Maven Setup:**  
-Add the following repository and dependency to your `pom.xml`:
+Dodaj poniższe repozytorium i zależność do swojego `pom.xml`:
 ```xml
 <repositories>
    <repository>
@@ -71,16 +73,16 @@ Add the following repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 **Direct Download:**  
-Alternatively, download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternatywnie pobierz najnowszą wersję z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### License Acquisition
-To use GroupDocs.Watermark without limitations, consider obtaining a free trial or purchasing a license. You can also request a temporary license to explore its full capabilities.
+Aby używać GroupDocs.Watermark bez ograniczeń, rozważ uzyskanie darmowej wersji próbnej lub zakupu licencji. Możesz także poprosić o tymczasową licencję, aby przetestować pełne możliwości.
 
 ## How to replace pdf images java using GroupDocs.Watermark
-This section breaks down the process into clear, numbered steps. Follow each step and refer to the code snippets that follow.
+Ten rozdział dzieli proces na przejrzyste, numerowane kroki. Postępuj zgodnie z każdym z nich i odwołuj się do zamieszczonych fragmentów kodu.
 
 ### Step 1: Load the PDF Document
-First, configure load options and create a `Watermarker` instance.
+Najpierw skonfiguruj opcje ładowania i utwórz instancję `Watermarker`.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -96,7 +98,7 @@ Watermarker watermarker = new Watermarker(pdfPath, loadOptions);
 ```
 
 ### Step 2: Access PDF Content and XObjects
-Retrieve the PDF content model so you can work with pages and XObjects.
+Pobierz model treści PDF, aby móc pracować ze stronami i XObjects.
 
 ```java
 import com.groupdocs.watermark.contents.PdfContent;
@@ -105,7 +107,7 @@ PdfContent pdfContent = watermarker.getContent(PdfContent.class);
 ```
 
 ### Step 3: Load the Replacement Image
-Read the new image file into a byte array. This image will replace the existing one(s).
+Wczytaj nowy plik obrazu do tablicy bajtów. Ten obraz zastąpi istniejące.
 
 ```java
 import java.io.File;
@@ -121,7 +123,7 @@ imageStream.close();
 ```
 
 ### Step 4: Replace Images Inside XObjects
-Iterate over the XObjects on the first page (or any page you target) and swap the image data.
+Iteruj po XObjects na pierwszej stronie (lub dowolnej wybranej) i zamień dane obrazu.
 
 ```java
 import com.groupdocs.watermark.contents.PdfXObject;
@@ -135,7 +137,7 @@ for (PdfXObject xObject : pdfContent.getPages().get_Item(0).getXObjects()) {
 ```
 
 ### Step 5: Save the Modified PDF
-Define where the updated file should be written and persist the changes.
+Określ, gdzie ma zostać zapisany zaktualizowany plik i zapisz zmiany.
 
 ```java
 String outputPath = "YOUR_OUTPUT_DIRECTORY/output.pdf";
@@ -150,7 +152,7 @@ watermarker.close();
 ```
 
 ## How to add pdf watermark java (optional)
-If you also need to protect the document, you can add a watermark after the image replacement:
+Jeśli chcesz dodatkowo zabezpieczyć dokument, możesz dodać znak wodny po wymianie obrazów:
 
 ```java
 import com.groupdocs.watermark.contents.PdfWatermarkableText;
@@ -161,19 +163,19 @@ PdfWatermarkableText watermark = new PdfWatermarkableText("CONFIDENTIAL");
 watermarker.add(watermark);
 ```
 
-> **Pro tip:** Apply the watermark after all image changes to avoid re‑processing the same pages.
+> **Pro tip:** Dodaj znak wodny po wszystkich zmianach obrazów, aby uniknąć ponownego przetwarzania tych samych stron.
 
 ## Practical Applications
-Here are some scenarios where these features can be applied:
+Oto kilka scenariuszy, w których te funkcje mogą być przydatne:
 1. **Updating Branding:** Replace outdated logos or images in marketing PDFs to reflect a new brand identity.  
 2. **Document Version Control:** Update specific visuals across multiple document versions without altering the entire file.  
 3. **Personalized Content Delivery:** Modify sample documents with client‑specific imagery before sending them out.  
 
 ## Performance Considerations
-When working with PDF manipulations, consider these performance tips:
-- Optimize image sizes to minimize memory usage.  
-- Process large files in chunks if possible to avoid excessive resource consumption.  
-- Regularly profile your application to identify and address bottlenecks.
+Podczas pracy z manipulacjami PDF, weź pod uwagę następujące wskazówki dotyczące wydajności:
+- Optymalizuj rozmiary obrazów, aby zminimalizować zużycie pamięci.  
+- Przetwarzaj duże pliki w partiach, jeśli to możliwe, aby uniknąć nadmiernego zużycia zasobów.  
+- Regularnie profiluj aplikację, aby wykrywać i usuwać wąskie gardła.
 
 ## Common Issues and Solutions
 | Issue | Solution |
