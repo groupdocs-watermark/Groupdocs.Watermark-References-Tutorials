@@ -15,45 +15,45 @@ weight: 1
 
 # Visio डायग्राम से हेडर और फुटर निकालें GroupDocs.Watermark for Java का उपयोग करके
 
-## Introduction
+## परिचय
 
-Microsoft Visio डायग्राम में हेडर और फुटर से फ़ॉन्ट जानकारी, टेक्स्ट कंटेंट, रंग, या मार्जिन निकालने में परेशानी हो रही है? GroupDocs.Watermark for Java के साथ, ये कार्य सरल हो जाते हैं। यह गाइड दिखाएगा कि इस शक्तिशाली लाइब्रेरी का उपयोग करके महत्वपूर्ण विवरणों को कुशलतापूर्वक कैसे निकाला जाए।
+Microsoft Visio डायग्राम में हेडर और फुटर से पोर्ट्रेट जानकारी, टेक्स्ट सामग्री, रंग, या मार्जिन निकालने में परेशानी हो रही है? GroupDocs.Watermark for Java के साथ, ये कार्य सरल हो जाते हैं। यह गाइड पोर्टफोलियो कि इस शक्तिशाली लाइब्रेरी का उपयोग करके महत्वपूर्ण डॉक्यूमेंट को कॉन्फ़िगर कैसे किया जाए।
 
-इस ट्यूटोरियल में, **आप सीखेंगे कि GroupDocs** का उपयोग करके हेडर/फुटर डेटा कैसे निकाला जाए, जिससे दस्तावेज़ विश्लेषण और अनुपालन जांच आसान हो जाती है।
+इस ट्यूटोरियल में, **आप समझाते हैं कि GroupDocs** का उपयोग करके हेडर/फुटर डेटा कैसे निकाला जाए, जिससे डॉक्यूमेंट एनालिसिस और अनुपालन जांच आसान हो जाती है।
 
-इस गाइड के अंत तक, आपके पास इन सुविधाओं की व्यापक समझ होगी। चलिए शुरू करते हैं!
+इस गाइड के अंत तक, आपके पास इन सुविधाओं की व्यापक समझ होगी। इंतज़ार शुरू करते हैं!
 
-## Quick Answers
-- **आप क्या निकाल सकते हैं?** फ़ॉन्ट सेटिंग्स, टेक्स्ट कंटेंट, रंग, और Visio हेडर और फुटर से मार्जिन।  
-- **कौन सी लाइब्रेरी आवश्यक है?** GroupDocs.Watermark for Java (version 24.11 या नया)।  
-- **क्या मुझे लाइसेंस चाहिए?** मूल्यांकन के लिए एक फ्री ट्रायल काम करता है; उत्पादन के लिए पूर्ण लाइसेंस आवश्यक है।  
-- **कौन सा Java संस्करण समर्थित है?** JDK 8 या उससे ऊपर।  
-- **संसाधनों को कैसे़ करें?** डेटा निकालने के बाद `watermarker.close()` कॉल करें।
+## त्वरित उत्तर
+- **आप क्या निकाल सकते हैं?** पोर्ट्रेट सेटिंग्स, टेक्स्ट सामग्री, रंग, और Visio हेडर और फुटर से मार्जिन।
+- **कौन सी लाइब्रेरी आवश्यक है?** GroupDocs.Watermark for Java (version24.11 या नया)।
+- **क्या मुझे लाइसेंस चाहिए?** मूल्यांकन के लिए एक फ्री ट्रायल काम करता है; प्रोडक्शन के लिए पूर्ण लाइसेंस आवश्यक है।
+- **कौन सा Java वर्जन सपोर्टेड है?** JDK8या उससे ऊपर।
+- **साधनों को कैसे करें?** डेटा निकालने के बाद `watermarker.close()` कॉल करें।
 
-## How to Use GroupDocs to Extract Visio Headers & Footers
+## Visio Headers & Footers निकालने के लिए GroupDocs का इस्तेमाल कैसे करें
 
-नीचे आप एक चरण‑दर‑चरण walkthrough पाएँगे जो प्रोजेक्ट सेटअप से लेकर प्रत्येक हेडर/फुटर जानकारी निकालने तक सब कुछ कवर करता है। क्रमांकित चरणों का पालन करें, और आप मिनटों में कार्यशील कोड प्राप्त करेंगे।
+नीचे आप एक स्टेप-दर-चरण वॉकथ्रू पाएँगे जो प्रोजेक्ट सेटअप से लेकर हर हेडर/फुटर जानकारी निकालने तक सब कुछ कवर करता है। क्रमांकित चरणों का पालन करें, और आप मिनटों में फाइनेंशियल कोड हासिल करेंगे।
 
-## Prerequisites
+## ज़रूरी शर्तें
 
 शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
 
-### Required Libraries & Dependencies
+### ज़रूरी लाइब्रेरी और डिपेंडेंसी
 
-- **GroupDocs.Watermark for Java**: सुनिश्चित करें कि संस्करण 24.11 या बाद का स्थापित है।
+- **GroupDocs.Watermark for Java**: सुनिश्चित करें कि वर्जन 24.11 या बाद का इंस्टॉल है।
 
-### Environment Setup Requirements
+### एनवायरनमेंट सेटअप ज़रूरतें
 
-- एक संगत JDK (Java Development Kit), बेहतर होगा कि संस्करण 8 या उससे ऊपर हो।
+- एक कम्पैटिबल JDK (Java Development Kit), बेहतर होगा कि वर्जन 8 या उससे ऊपर हो।
 - IntelliJ IDEA या Eclipse जैसे IDE।
 
 ### Knowledge Prerequisites
 
-Java प्रोग्रामिंग की बुनियादी समझ और Maven डिपेंडेंसी मैनेजमेंट का ज्ञान उपयोगी होगा।
+Java प्रोग्रामिंग की बेसिक समझ और Maven Dependency Management का ज्ञान उपयोगी होगा।
 
-## Using GroupDocs.Watermark Java for Extraction
+## Extraction के लिए GroupDocs.Watermark Java का इस्तेमाल करना
 
-### Setting Up GroupDocs.Watermark for Java
+### Java के लिए GroupDocs.Watermark सेट अप करना
 
 शुरू करने के लिए, आपको अपने प्रोजेक्ट में GroupDocs.Watermark लाइब्रेरी जोड़नी होगी। आप इसे Maven के माध्यम से कर सकते हैं:
 
@@ -79,13 +79,13 @@ Java प्रोग्रामिंग की बुनियादी सम
 
 वैकल्पिक रूप से, लाइब्रेरी सीधे [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) से डाउनलोड करें।
 
-### License Acquisition
+### लाइसेंस एक्विजिशन
 
-- **Free Trial**: क्षमताओं को खोजने के लिए फ्री ट्रायल से शुरू करें।  
-- **Temporary License**: GroupDocs वेबसाइट पर एक अस्थायी लाइसेंस के लिए आवेदन करें।  
-- **Purchase**: पूर्ण एक्सेस और सपोर्ट के लिए लाइसेंस खरीदने पर विचार करें।
+- **फ्री ट्रायल**: ऑटोमैटिक लाइसेंस को खोजने के लिए फ्री ट्रायल से शुरू करें।
+- **टेम्पररी लाइसेंस**: GroupDocs वेबसाइट पर एक टेम्पररी लाइसेंस के लिए अप्लाई करें।
+- **परचेज़**: फुल एक्सेस और सपोर्ट के लिए लाइसेंस खरीदने पर विचार करें।
 
-### Basic Initialization
+## बेसिक इनिशियलाइज़ेशन
 
 अपने वातावरण को इनिशियलाइज़ करने के लिए एक `Watermarker` इंस्टेंस बनाएं। यह आपके डायग्राम दस्तावेज़ को एप्लिकेशन में लोड करेगा:
 
@@ -94,26 +94,26 @@ DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-## Implementation Guide
+## इम्प्लीमेंटेशन गाइड
 
-अब, प्रत्येक फीचर को तोड़ते हैं और देखते हैं कि आप उन्हें कैसे लागू कर सकते हैं।
+अब, हर फ़ीचर को तोड़ते हैं और देखते हैं कि आप उन्हें कैसे लागू कर सकते हैं।
 
-### Feature 1: Extract Header and Footer Font Information
+### फ़ीचर 1: हेडर और फ़ुटर फ़ॉन्ट जानकारी निकालें
 
-#### Overview
+#### ओवरव्यू
 
 यह फीचर आपको डायग्राम दस्तावेज़ के हेडर और फुटर से फ़ॉन्ट सेटिंग्स प्राप्त करने की अनुमति देता है। इसमें फ़ॉन्ट फ़ैमिली, साइज, बोल्डनेस, इटैलिक, अंडरलाइन, और स्ट्राइकआउट एट्रिब्यूट्स निकालना शामिल है।
 
-#####‑by‑Step Implementation
+#####‑स्टेप इम्प्लीमेंटेशन
 
-**Initialize Watermarker**
+**वॉटरमार्कर इनिशियलाइज़ करें**
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-**Extract Font Settings**
+**फ़ॉन्ट सेटिंग्स एक्सट्रैक्ट करें**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -129,15 +129,15 @@ boolean isStrikeout = content.getHeaderFooter().getFont().getStrikeout();
 watermarker.close(); // Always close the watermarker to free resources
 ```
 
-### Feature 2: Extract Text Content from Headers and Footers
+### फ़ीचर 2: हेडर और फ़ुटर से टेक्स्ट कंटेंट निकालें
 
-#### Overview
+#### ओवरव्यू
 
-यह फीचर डायग्राम दस्तावेज़ के हेडर और फुटर के विभिन्न हिस्सों से टेक्स्ट निकालने पर केंद्रित है।
+यह फ़ीचर डायग्राम डॉक्यूमेंट के हेडर और फ़ुटर के अलग-अलग हिस्सों से टेक्स्ट निकालने पर केंद्रित है।
 
-##### Step‑by‑Step Implementation
+##### स्टेप-बाय-स्टेप इम्प्लीमेंटेशन
 
-**Extract Header & Footer Text**
+**हेडर और फ़ुटर टेक्स्ट निकालें**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -155,15 +155,15 @@ String footerRightText = content.getHeaderFooter().getFooterRight();
 watermarker.close(); // Remember to close the watermarker
 ```
 
-### Feature 3: Extract Text Color from Headers and Footers
+### फ़ीचर 3: हेडर और फ़ुटर से टेक्स्ट कलर निकालें
 
-#### Overview
+#### ओवरव्यू
 
-यह फीचर हेडर और फुटर में उपयोग किए गए रंग को निर्धारित करने की सुविधा देता है, जो ARGB इंटीजर वैल्यू के रूप में प्रस्तुत किया जाता है।
+यह फ़ीचर हेडर और फ़ुटर में इस्तेमाल किए गए रंग को तय करने की सुविधा देता है, जो ARGB इंटीजर वैल्यू के रूप में प्रस्तुत किया जाता है।
 
-##### Step‑by‑Step Implementation
+##### स्टेप-बाय-स्टेप इम्प्लीमेंटेशन
 
-**Extract Text Color**
+**टेक्स्ट कलर निकालें**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -174,15 +174,15 @@ int textColorArgb = content.getHeaderFooter().getTextColor().toArgb();
 watermarker.close(); // Close to release resources
 ```
 
-### Feature 4: Extract Header and Footer Margins
+### फ़ीचर 4: हेडर और फ़ुटर मार्जिन निकालें
 
-#### Overview
+#### ओवरव्यू
 
-हेडर और फुटर के मार्जिन सेटिंग्स को निकालना सीखें, जो लेआउट कॉन्फ़िगरेशन को समझने के लिए आवश्यक है।
+हेडर और फ़ुटर के मार्जिन सेटिंग को निकालना सीखें, जो लेआउट सेटिंग्स को समझने के लिए ज़रूरी है।
 
-##### Step‑by‑Step Implementation
+##### स्टेप-बाय-स्टेप इम्प्लीमेंटेशन
 
-**Extract Margin Settings**
+**मार्जिन सेटिंग्स निकालें**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -196,50 +196,55 @@ watermarker.close(); // Closing is crucial for resource management
 
 ## Practical Applications
 
-इन सुविधाओं का उपयोग करके विभिन्न वास्तविक‑विश्व कार्यों को सरल बनाया जा सकता है, जैसे:
+इन सुविधाओं का इस्तेमाल करके अलग-अलग वास्तविक-विश्व कार्यों को सरल बनाया जा सकता है, जैसे:
 
-1. **Document Analysis** – दस्तावेज़ विश्लेषण और तुलना के लिए स्टाइलिंग जानकारी को स्वचालित रूप से निकालें।  
-2. **Compliance Checks** – सुनिश्चित करें कि हेडर और फुटर फॉर्मेट संगठनात्मक मानकों के अनुरूप हैं।  
-3. **Automated Report Generation** – निकाली गई फ़ॉन्ट और रंग सेटिंग्स के आधार पर स्टाइल को डायनामिक रूप से समायोजित करें।  
-4. **Integration with CMS Systems** – निकाले गए टेक्स्ट कंटेंट का उपयोग करके कंटेंट मैनेजमेंट सिस्टम में मेटाडेटा भरें।
+1. **Document Analysis** – डॉक्यूमेंट एनालिसिस और तुलना के लिए स्टाइलिंग जानकारी को ऑटोमैटिक रूप से हटाएं।
+
+2. **Compliance Checks** – यह सुनिश्चित करें कि हेडर और फुटर फॉर्मेट मानकों के अनुरूप हैं।
+
+3. **Automated Report Generation** – निकाली गई फ़ॉन्ट और रंग सेटिंग के आधार पर स्टाइल को डायनामिक रूप से एडजस्ट करें।
+
+4. **Integration with CMS Systems** – निकाले गए टेक्स्ट सामग्री का इस्तेमाल करके सामग्री मैनेजमेंट सिस्टम में मेटाडेटा भरें।
 
 ## Performance Considerations
 
-GroupDocs.Watermark का उपयोग करते समय प्रदर्शन को अनुकूलित करने के लिए:
+GroupDocs.Watermark का इस्तेमाल करते समय परफॉर्मेंस को कॉन्फ़िगर करने के लिए:
 
-- ऑपरेशनों के बाद `Watermarker` इंस्टेंस को बंद करके संसाधन उपयोग को न्यूनतम रखें।  
-- बड़े डायग्राम फ़ाइलों के लिए मेमोरी को कुशलतापूर्वक प्रबंधित करें।  
-- बॉटलनेक पहचानने के लिए अपने एप्लिकेशन का प्रोफ़ाइल और परीक्षण करें।
+- ऑपरेशन के बाद `Watermarker` इंस्टेंस को बंद करके रिसोर्स इस्तेमाल को न्यूनतम रखें।
 
-## Frequently Asked Questions
+- बड़े डायग्राम डेटाबेस के लिए मेमोरी को स्टोरेज मैनेज करें।
 
-**Q: How do I handle large diagram files efficiently?**  
-**A:** मेमोरी‑प्रबंधन के प्रभावी अभ्यास अपनाएँ, `Watermarker` को शीघ्र बंद करें, और भारी‑मेमोरी ऑपरेशन्स की पहचान के लिए अपने एप्लिकेशन का प्रोफ़ाइल बनाएं।
+- बॉटलनेक डिलीट के लिए अपने एप्लिकेशन का प्रोफ़ाइल और टेस्ट करें।
 
-**Q: Can GroupDocs.Watermark extract information from other document types?**  
-**A:** हाँ, यह Visio डायग्राम के अलावा कई फ़ॉर्मेट्स को सपोर्ट करता है। पूरी सूची के लिए आधिकारिक दस्तावेज़ देखें।
+## अक्सर पूछे जाने वाले सवाल
 
-**Q: What should I do if I encounter extraction errors?**  
-**A:** सुनिश्चित करें कि आपका वातावरण लाइब्रेरी आवश्यकताओं के अनुरूप है, डायग्राम फ़ॉर्मेट समर्थित है, और त्रुटि विवरण में लापता डिपेंडेंसियों की जाँच करें।
+**Q: मैं बड़ी डायग्राम फ़ाइलों को अच्छे से कैसे हैंडल करूँ?**
+**A:** मेमोरी-प्रबंधन के असरदार अभ्यास अपनीएँ, `Watermarker` को जल्दी बंद करें, और भारी-मेमोरी ऑपरेशन्स की पहचान के लिए अपने एप्लिकेशन का प्रोफ़ाइल बनाएँ।
 
-**Q: Is there support available for troubleshooting?**  
-**A:** हाँ, आप [free support forum](https://forum.groupdocs.com/c/watermark/10) पर प्रश्न पूछ सकते हैं या सीधे GroupDocs सपोर्ट से संपर्क कर सकते हैं।
+**Q: क्या GroupDocs.Watermark दूसरे डॉक्यूमेंट टाइप से जानकारी निकाल सकता है?**
+**A:** हाँ, यह Visio डायग्राम के अलावा कई फ़ॉर्मेट को सपोर्ट करता है। पूरी सूची के लिए आधिकारिक डॉक्यूमेंट देखें।
 
-**Q: How can I integrate these extraction steps into an existing Java application?**  
-**A:** ऊपर दिखाए गए इनिशियलाइज़ेशन पैटर्न का पालन करें, जहाँ हेडर/फुटर डेटा चाहिए वहाँ एक्सट्रैक्शन कोड एम्बेड करें, और उपयोग के बाद `Watermarker` को बंद करना न भूलें।
+**Q: अगर मुझे एक्सट्रैक्शन में एरर आती हैं तो मुझे क्या करना चाहिए?**
+**A:** यह सुनिश्चित करें कि आपका एनवायरनमेंट लाइब्रेरी आवश्यकताओं के अनुरूप है, डायग्राम फ़ॉर्मेट सपोर्टेड है, और एरर डिस्क्रिप्शन में लापता डिपेंडेंसी की जाँच करें।
 
-## Conclusion
+**Q: क्या समस्या निवारण के लिए सहायता उपलब्ध है?**
+**A:** हाँ, आप [free support forum](https://forum.groupdocs.com/c/watermark/10) पर प्रश्न पूछ सकते हैं या सीधे GroupDocs सहायता से संपर्क कर सकते हैं।
 
-अब आपके पास Visio डायग्राम से हेडर और फुटर निकालने के लिए GroupDocs.Watermark in Java का उपयोग करने की ठोस नींव है। इन सुविधाओं के साथ प्रयोग करें और उन्हें अपने प्रोजेक्ट्स में सहजता से एकीकृत करें। आगे की खोज के लिए, [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/) देखें और अपनी विशिष्ट आवश्यकताओं के अनुसार कार्यक्षमता का विस्तार करने पर विचार करें।
+**Q: मैं इन निष्कर्षण चरणों को किसी मौजूदा Java एप्लिकेशन में कैसे एकीकृत कर सकता हूँ?**
+**A:** ऊपर दिखाए गए प्रारंभिक चरण का पालन करें, जहाँ Header/footer डेटा चाहिए वहाँ निष्कर्षण कोड एम्बेड करें, और उपयोग के बाद `Watermarker` को बंद करना न भूलें।
 
-## Resources
+## निष्कर्ष
 
-- **Documentation**: अधिक जानकारी के लिए देखें [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **API Reference**: गहराई से जानने के लिए देखें [API References](https://reference.groupdocs.com/watermark/java)  
-- **Download Library**: नवीनतम संस्करण प्राप्त करें [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
+अब आपके पास Visio आरेख से Header और Footer निकालने के लिए GroupDocs.Watermark in Java का उपयोग करने की ठोस नींव है। इन सुविधाओं के साथ प्रयोग करें और उन्हें अपने प्रोजेक्ट्स में सहजता से एकीकृत करें। आगे की खोज के लिए, [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/) देखें और अपनी विशिष्ट आवश्यकताओं के अनुसार कार्यक्षमता का विस्तार करने पर विचार करें।
+
+## रिसोर्स
+
+- **डॉक्यूमेंटेशन**: ज़्यादा जानकारी के लिए देखें [GroupDocs डॉक्यूमेंटेशन](https://docs.groupdocs.com/watermark/java/)
+- **API रेफरेंस**: गहराई से जानने के लिए देखें [API रेफरेंस](https://reference.groupdocs.com/watermark/java)
+- **डाउनलोड लाइब्रेरी**: नया वर्शन पाएं [GroupDocs.Watermark for Java रिलीज़](https://releases.groupdocs.com/watermark/java/)
 
 ---
 
-**Last Updated:** 2025-12-31  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+**पिछला अपडेट:** 2025-12-31
+**इसके साथ टेस्ट किया गया:** GroupDocs.Watermark 24.11 for Java
+**लेखक:** GroupDocs

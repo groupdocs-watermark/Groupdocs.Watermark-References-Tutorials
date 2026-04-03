@@ -13,37 +13,43 @@ url: /es/java/email-document-watermarking/master-groupdocs-watermark-java-email-
 weight: 1
 ---
 
-# How to Search Email Text with GroupDocs.Watermark Java
+# Cómo buscar texto de correo electrónico con GroupDocs.Watermark Java
 
-Encontrar una frase específica dentro del asunto, cuerpo o archivos adjuntos de un correo electrónico puede ser un dolor de cabeza, sobre todo cuando se manejan decenas o cientos de mensajes. En este tutorial descubrirás **cómo buscar texto en correos electrónicos** de forma rápida y precisa usando **GroupDocs.Watermark para Java**. Recorreremos la configuración, el código y consejos de buenas prácticas para que puedas integrar la búsqueda de texto en correos electrónicos en tus propias aplicaciones con confianza.
+Encontrar una frase específica dentro del asunto, cuerpo o archivos adjuntos de un correo electrónico puede ser un dolor de cabeza, sobre todo cuando se manejan decenas o cientos de mensajes. En este tutorial descubrirás **cómo buscar texto en correos electrónicos** de forma rápida y precisa usando **GroupDocs.Watermark para Java**. Recordaremos la configuración, el código y consejos de buenas prácticas para que puedas integrar la búsqueda de texto en correos electrónicos en tus propias aplicaciones con confianza.
 
-## Quick Answers
-- **What library lets me search email text in Java?** GroupDocs.Watermark for Java.  
-- **Do I need a license?** A free trial works for testing; a paid license is required for production.  
-- **Can I search both subject and body?** Yes—configure `EmailSearchableObjects` to include Subject, HtmlBody, and PlainTextBody.  
-- **Is the API case‑sensitive?** You can choose case‑insensitive searches by setting the appropriate flag in `TextSearchCriteria`.  
-- **What Java version is required?** JDK 8 or higher; Maven is recommended for dependency management.
+## Respuestas rápidas
+- **¿Qué biblioteca me permite buscar texto de correo electrónico en Java?**GroupDocs.Watermark para Java.
+- **¿Necesito una licencia?**Una prueba gratuita funciona para realizar pruebas; Se requiere una licencia paga para la producción.
+- **¿Puedo buscar tanto por asunto como por cuerpo?**Sí: configure `EmailSearchableObjects` para incluir Asunto, HtmlBody y PlainTextBody.
+- ¿La API distingue entre mayúsculas y minúsculas? Puede configurar búsquedas que no distingan entre mayúsculas y minúsculas estableciendo la bandera correspondiente en `TextSearchCriteria`.
 
-## What is “how to search email” with GroupDocs.Watermark?
-GroupDocs.Watermark provides a unified API for locating, removing, or modifying watermarks and plain text across many document types—including **email messages** (`.msg`, `.eml`). By leveraging its searchable objects model, you can target exactly the parts of an email you care about, making bulk processing fast and reliable.
+- ¿Qué versión de Java se requiere? JDK 8 o superior; se recomienda Maven para la gestión de dependencias.
 
-## Why use GroupDocs.Watermark Java for email search?
-- **Unified API** – Works with PDFs, images, Office files, and emails using the same code patterns.  
-- **Performance‑optimized** – Search operations run in memory without needing external services.  
-- **Robust handling** – Supports HTML and plain‑text bodies, attachments, and even password‑protected emails.  
-- **Easy integration** – Maven/Gradle ready, with clear documentation and active support.
+## ¿Cómo se busca en correos electrónicos con GroupDocs.Watermark?
 
-## Prerequisites
+GroupDocs.Watermark proporciona una API unificada para localizar, eliminar o modificar marcas de agua y texto sin formato en diversos tipos de documentos, incluidos los **mensajes de correo electrónico** (`.msg`, `.eml`). Gracias a su modelo de objetos de búsqueda, puede seleccionar con precisión las partes de un correo electrónico que le interesan, lo que hace que el procesamiento masivo sea rápido y fiable.
 
-- **Java Development Kit (JDK)** 8 or newer.  
-- **Maven** (or Gradle) for dependency management.  
-- An IDE such as **IntelliJ IDEA** or **Eclipse**.  
-- Basic familiarity with Java syntax and email file formats (`.msg`, `.eml`).
+## ¿Por qué usar GroupDocs.Watermark Java para la búsqueda de correos electrónicos?
 
-## Setting Up GroupDocs.Watermark for Java
+- **API unificada**: funciona con PDF, imágenes, archivos de Office y correos electrónicos utilizando los mismos patrones de código.
 
-### Maven Setup
-Add the repository and dependency to your `pom.xml`:
+- **Optimizado para el rendimiento**: las operaciones de búsqueda se ejecutan en memoria sin necesidad de servicios externos. - **Gestión robusta**: Admite HTML y texto plano, archivos adjuntos e incluso correos electrónicos protegidos con contraseña.
+
+- **Fácil integración**: Compatible con Maven/Gradle, con documentación clara y soporte activo.
+
+## Requisitos previos
+
+- **Java Development Kit (JDK)** 8 o posterior.
+
+- **Maven** (o Gradle) para la gestión de dependencias.
+
+- Un IDE como **IntelliJ IDEA** o **Eclipse**.
+
+- Conocimientos básicos de sintaxis Java y formatos de archivo de correo electrónico (`.msg`, `.eml`).
+
+## Configuración de GroupDocs.Watermark para Java
+### Configuración de Maven
+Añade el repositorio y la dependencia a tu `pom.xml`:
 
 ```xml
 <repositories>
@@ -63,15 +69,17 @@ Add the repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### Direct Download
-Alternatively, you can download the latest JAR from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Descarga directa
+Alternativamente, puede descargar el archivo JAR más reciente desde [GroupDocs.Watermark para versiones de Java](https://releases.groupdocs.com/watermark/java/).
 
-### License Acquisition
-- **Free Trial:** Test core features without a license key.  
-- **Temporary License:** Request a time‑limited key for extended evaluation.  
-- **Paid License:** Purchase for unlimited production use.
+### Adquisición de licencia
+- **Prueba gratuita:** Pruebe las funciones principales sin una clave de licencia.
 
-#### Basic Initialization
+- **Licencia temporal:** Solicite una clave por tiempo limitado para una evaluación extendida.
+
+- **Licencia de pago:** Adquiera una licencia para uso ilimitado en producción.
+
+#### Inicialización básica
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.EmailLoadOptions;
@@ -80,26 +88,26 @@ EmailLoadOptions loadOptions = new EmailLoadOptions();
 Watermarker watermarker = new Watermarker("input_email.msg", loadOptions);
 ```
 
-## Implementation Guide
+## Guía de implementación
 
-### Feature 1: Search Text in Email Body
+### Función 1: Búsqueda de texto en el cuerpo del correo electrónico
 
-#### Overview
-We’ll configure the API to scan the **subject**, **HTML body**, and **plain‑text body** of an email for a given keyword.
+#### Descripción general
+Configuraremos la API para escanear el **asunto**, el **cuerpo HTML** y el **cuerpo de texto sin formato** de un correo electrónico en busca de una palabra clave específica.
 
-#### Step 1: Define Document Paths
+#### Paso 1: Definir las rutas del documento
 ```java
 String inputDocumentPath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
 String outputDocumentPath = "YOUR_OUTPUT_DIRECTORY/output_message.msg";
 ```
 
-#### Step 2: Set Up Load Options and Watermarker
+#### Paso 2: Configurar las opciones de carga y la marca de agua
 ```java
 EmailLoadOptions loadOptions = new EmailLoadOptions();
 Watermarker watermarker = new Watermarker(inputDocumentPath, loadOptions);
 ```
 
-#### Step 3: Create Search Criteria
+#### Paso 3: Crear criterios de búsqueda
 ```java
 import com.groupdocs.watermark.search.SearchCriteria;
 import com.groupdocs.watermark.search.TextSearchCriteria;
@@ -107,7 +115,7 @@ import com.groupdocs.watermark.search.TextSearchCriteria;
 SearchCriteria criteria = new TextSearchCriteria("test", false);
 ```
 
-#### Step 4: Specify Search Locations
+#### Paso 4: Especificar las ubicaciones de búsqueda
 ```java
 watermarker.getSearchableObjects().setEmailSearchableObjects(
     EmailSearchableObjects.Subject |
@@ -115,7 +123,7 @@ watermarker.getSearchableObjects().setEmailSearchableObjects(
     EmailSearchableObjects.PlainTextBody);
 ```
 
-#### Step 5: Execute Search and Clear Watermarks
+#### Paso 5: Ejecutar la búsqueda y borrar las marcas de agua
 ```java
 import com.groupdocs.watermark.search.PossibleWatermarkCollection;
 
@@ -123,75 +131,85 @@ PossibleWatermarkCollection watermarks = watermarker.search(criteria);
 watermarks.clear();
 ```
 
-#### Step 6: Save Changes
+#### Paso 6: Guardar los cambios
 ```java
 watermarker.save(outputDocumentPath);
 // Close the Watermarker instance to release resources
 watermarker.close();
 ```
 
-#### Troubleshooting Tips
-- **Empty results:** Verify that the keyword actually appears in the selected email parts.  
-- **Performance:** Limit the searchable objects to only those you need (e.g., Subject + PlainTextBody) to speed up large batches.
+#### Consejos para la resolución de problemas
+- **Resultados vacíos:** Verifique que la palabra clave aparezca realmente en las partes del correo electrónico seleccionadas.
 
-### Feature 2: Load Email Document Options
+- **Rendimiento:** Limite los objetos que se pueden buscar a solo aquellos que necesite (por ejemplo, Asunto + Cuerpo del mensaje) para acelerar el procesamiento de grandes lotes.
 
-#### Overview
-`EmailLoadOptions` lets you control how the email is parsed—useful for encrypted messages or custom encodings.
+### Función 2: Opciones de carga de documentos de correo electrónico
 
-#### Step 1: Configure Load Options
+#### Descripción general
+`EmailLoadOptions` le permite controlar cómo se analiza el correo electrónico, lo cual es útil para mensajes cifrados o codificaciones personalizadas.
+
+#### Paso 1: Configurar las opciones de carga
 ```java
 EmailLoadOptions loadOptions = new EmailLoadOptions();
 // Additional configurations can be added here.
 ```
 
-#### Key Configuration Options
-- **Password Protection:** Set `loadOptions.setPassword("yourPassword")` for encrypted `.msg` files.  
-- **Encoding Settings:** Adjust `loadOptions.setEncoding(Charset.forName("UTF-8"))` when dealing with non‑standard character sets.
+#### Opciones de configuración clave
+- **Protección con contraseña:** Configure `loadOptions.setPassword("tuContraseña")` para los archivos `.msg` cifrados.
 
-## Practical Applications
+- **Configuración de codificación:** Ajuste `loadOptions.setEncoding(Charset.forName("UTF-8"))` cuando trabaje con conjuntos de caracteres no estándar.
 
-- **Automated Email Processing:** Bulk‑scan incoming support tickets for keywords like “refund” or “error”.  
-- **Legal Compliance Checks:** Quickly locate confidential terms (e.g., SSN, credit‑card numbers) across corporate mail archives.  
-- **Customer Support Automation:** Route emails based on detected phrases to the right support team.
+## Aplicaciones prácticas
 
-## Performance Considerations
-- **Resource Management:** Call `watermarker.close()` as soon as you finish processing to free native resources.  
-- **Memory Best Practices:** When handling thousands of messages, process them in batches and reuse the `Watermarker` instance where possible.
+- **Procesamiento automatizado de correo electrónico:** Analice masivamente los tickets de soporte entrantes en busca de palabras clave como "reembolso" o "error".
 
-## Conclusion
-You now have a solid, production‑ready approach for **how to search email** content using GroupDocs.Watermark Java. The API’s flexibility lets you target specific parts of an email, clear unwanted watermarks, and integrate the logic into larger workflows.
+- **Verificaciones de cumplimiento legal:** Localice rápidamente términos confidenciales (p. ej., número de la seguridad social, números de tarjetas de crédito) en los archivos de correo corporativos.
 
-### Next Steps
-- Experiment with **multiple search criteria** (e.g., combine “invoice” + “overdue”).  
-- Explore **watermark addition** to flag emails that contain sensitive data.  
-- Dive into other document types (PDF, DOCX) using the same Watermarker workflow.
+- **Automatización de la atención al cliente:** Dirija los correos electrónicos según las frases detectadas al equipo de soporte adecuado.
 
-## Frequently Asked Questions
+## Consideraciones de rendimiento
+- **Gestión de recursos:** Llame a `watermarker.close()` tan pronto como finalice el procesamiento para liberar recursos nativos.
+- **Mejores prácticas de memoria:** Al gestionar miles de mensajes, procéselos en lotes y reutilice la instancia de `Watermarker` siempre que sea posible.
 
-**Q1:** How can I handle encrypted emails with GroupDocs.Watermark?  
-**A1:** Use `EmailLoadOptions.setPassword("yourPassword")` before creating the `Watermarker` instance.
+## Conclusión
+Ahora dispone de un método sólido y listo para producción para **buscar** contenido de correo electrónico con GroupDocs.Watermark Java. La flexibilidad de la API le permite seleccionar partes específicas de un correo electrónico, eliminar marcas de agua no deseadas e integrar la lógica en flujos de trabajo más amplios.
 
-**Q2:** Can I search for multiple keywords at once?  
-**A2:** Yes—create separate `SearchCriteria` objects for each keyword and combine them with logical operators (e.g., `OrSearchCriteria`).
+### Próximos pasos
+- Experimente con **múltiples criterios de búsqueda** (por ejemplo, combinar «factura» + «vencida»).
 
-**Q3:** Is GroupDocs.Watermark Java free to use?  
-**A3:** A free trial is available for evaluation. For production use, a paid license is required.
+- Explore la **adición de marcas de agua** para marcar correos electrónicos que contengan datos confidenciales.
 
-**Q4:** How do I handle large volumes of emails efficiently?  
-**A4:** Limit the searchable objects to only those needed, process emails in batches, and always close the `Watermarker` to release resources.
+- Profundice en otros tipos de documentos (PDF, DOCX) utilizando el mismo flujo de trabajo de Watermarker.
 
-**Q5:** Where can I find additional help or support?  
-**A5:** Visit the [GroupDocs forum](https://forum.groupdocs.com/c/watermark/10) for community assistance or contact GroupDocs support directly.
+## Preguntas frecuentes
 
-## Resources
-- **Documentation:** Explore detailed guides at [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/).  
-- **API Reference:** Access technical details at [GroupDocs API](https://apireference.groupdocs.com/watermark/java/).
+**P1:** ¿Cómo puedo gestionar correos electrónicos cifrados con GroupDocs.Watermark?
+**R1:** Utilice `EmailLoadOptions.setPassword("tuContraseña")` antes de crear la instancia de `Watermarker`.
 
----
+**P2:** ¿Puedo buscar varias palabras clave a la vez?
 
-**Last Updated:** 2025-12-31  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
+**R2:** Sí, cree objetos `SearchCriteria` separados para cada palabra clave y combínelos con operadores lógicos (por ejemplo, `OrSearchCriteria`).
+
+**P3:** ¿Es gratuito usar GroupDocs.Watermark Java?
+
+**R3:** Hay una versión de prueba gratuita disponible para su evaluación. Para su uso en producción, se requiere una licencia de pago.
+
+**P4:** ¿Cómo puedo gestionar grandes volúmenes de correos electrónicos de forma eficiente?
+
+**R4:** Limite los objetos de búsqueda solo a los necesarios, procese los correos electrónicos en lotes y cierre siempre `Watermarker` para liberar recursos.
+
+**P5:** ¿Dónde puedo encontrar ayuda o soporte adicional?
+**A5:** Visita el [foro de GroupDocs](https://forum.groupdocs.com/c/watermark/10) para obtener ayuda de la comunidad o contacta directamente con el soporte de GroupDocs.
+
+## Recursos
+- **Documentación:** Consulta guías detalladas en la [Documentación de GroupDocs](https://docs.groupdocs.com/watermark/java/).
+
+- **Referencia de la API:** Accede a los detalles técnicos en la [API de GroupDocs](https://apireference.groupdocs.com/watermark/java/).
+
+--
+
+**Última actualización:** 31/12/2025
+**Probado con:** GroupDocs.Watermark 24.11 para Java
+**Autor:** GroupDocs  
 
 ---
