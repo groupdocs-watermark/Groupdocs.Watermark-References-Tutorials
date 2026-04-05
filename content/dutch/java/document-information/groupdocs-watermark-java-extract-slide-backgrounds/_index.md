@@ -1,19 +1,21 @@
 ---
-title: "java get image dimensions – Extract Slide Backgrounds Using GroupDocs.Watermark"
-description: "Learn how to java get image dimensions and extract slide background details using GroupDocs.Watermark for Java. Perfect for customization, analysis, or documentation."
-date: "2026-02-11"
-weight: 1
-url: "/java/document-information/groupdocs-watermark-java-extract-slide-backgrounds/"
+date: '2026-02-11'
+description: Leer hoe je in Java de afmetingen van een afbeelding kunt verkrijgen
+  en details van de slide‑achtergrond kunt extraheren met GroupDocs.Watermark voor
+  Java. Perfect voor aanpassing, analyse of documentatie.
 keywords:
 - extract slide background information Java
 - GroupDocs.Watermark PowerPoint
 - slide background details Java
+title: java afbeeldingafmetingen ophalen – Slide‑achtergronden extraheren met GroupDocs.Watermark
 type: docs
+url: /nl/java/document-information/groupdocs-watermark-java-extract-slide-backgrounds/
+weight: 1
 ---
 
-# java get image dimensions – Extract Slide Backgrounds Using GroupDocs.Watermark
+# java get image dimensions – Slide‑achtergronden extraheren met GroupDocs.Watermark
 
-Are you looking to **java get image dimensions** and other background details from a PowerPoint slide? Whether you need this information for custom branding, data analysis, or documentation, the GroupDocs.Watermark library for Java makes it straightforward. In this tutorial you’ll learn how to extract slide background information—including image width, height, and file size—using a few simple API calls.
+Zoek je naar **java get image dimensions** en andere achtergronddetails van een PowerPoint‑slide? Of je deze informatie nu nodig hebt voor aangepaste branding, data‑analyse of documentatie, de GroupDocs.Watermark‑bibliotheek voor Java maakt het eenvoudig. In deze tutorial leer je hoe je slide‑achtergrondinformatie kunt extraheren — inclusief afbeeldingsbreedte, -hoogte en bestandsgrootte — met een paar eenvoudige API‑aanroepen.
 
 ## Quick Answers
 - **What does “java get image dimensions” mean?** It refers to retrieving the width and height of an image embedded in a PowerPoint slide via Java code.  
@@ -180,5 +182,3 @@ You now have a complete, production‑ready approach to **java get image dimensi
 - **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)  
 - **GitHub Repository:** [GroupDocs GitHub Page](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - **Support Forum:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/watermark/10)
-
----
