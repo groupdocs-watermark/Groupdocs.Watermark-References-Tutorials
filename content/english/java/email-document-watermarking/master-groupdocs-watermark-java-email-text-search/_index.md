@@ -1,42 +1,43 @@
 ---
-title: "Master GroupDocs.Watermark Java for Email Text Search&#58; A Comprehensive Guide"
-description: "Learn how to use GroupDocs.Watermark for Java to efficiently search and manage text in email bodies, subjects, and attachments."
-date: "2025-05-15"
+title: "Search Email Body Java with GroupDocs.Watermark: A Comprehensive Guide"
+description: "Learn how to search email body java using GroupDocs.Watermark, including how to search multiple keywords email and how to remove email watermarks."
+date: "2026-04-07"
 weight: 1
 url: "/java/email-document-watermarking/master-groupdocs-watermark-java-email-text-search/"
 keywords:
-- GroupDocs Watermark Java
-- search text in email body
-- manage email watermarks
+- search email body java
+- search multiple keywords email
+- how to remove email watermarks
 type: docs
 ---
-# Mastering GroupDocs.Watermark Java: Efficiently Search Text in Email Bodies
-Are you struggling to find specific text within the subject or body of your email messages? With GroupDocs.Watermark for Java, this task becomes efficient and straightforward. This comprehensive guide will help you implement powerful features that search for text across various parts of an email using GroupDocs.Watermark. By following these steps, you'll learn how to seamlessly manage and manipulate emails.
 
-## What You'll Learn:
-- How to install and set up GroupDocs.Watermark Java.
-- Creating search criteria to locate specific text within emails.
-- Clearing unwanted watermarks or texts from email bodies.
-- Best practices for using the API efficiently.
+# Search Email Body Java with GroupDocs.Watermark
 
-Let's begin by ensuring you have everything needed before diving into coding!
+If you need to **search email body java** quickly and reliably, you’ve come to the right place. In this tutorial we’ll walk through how GroupDocs.Watermark for Java lets you locate specific text inside email subjects, HTML bodies, and plain‑text bodies, and how you can clean up unwanted watermarks afterward. By the end, you’ll be able to implement a robust solution that works on single or multiple keywords and even removes email watermarks when needed.
+
+## Quick Answers
+- **What does “search email body java” mean?** It refers to using Java code (with GroupDocs.Watermark) to find text inside an email’s content.  
+- **Can I search multiple keywords email at once?** Yes – create separate `SearchCriteria` objects and combine them.  
+- **How to remove email watermarks?** Use the `PossibleWatermarkCollection.clear()` method after a search.  
+- **Do I need a license?** A free trial works for testing; a permanent license is required for production.  
+- **Which IDE works best?** IntelliJ IDEA or Eclipse are both fully supported.
+
+## What You’ll Learn
+- Installing and configuring GroupDocs.Watermark for Java.  
+- Setting up search criteria to **search email body java** across subjects and bodies.  
+- Techniques for **search multiple keywords email** in a single run.  
+- The exact steps **how to remove email watermarks** after locating them.  
+
+## Why Search Email Body Java with GroupDocs.Watermark?
+GroupDocs.Watermark provides a high‑level API that abstracts the complexities of parsing .msg files, handling different body formats, and managing watermarks. This saves you time compared to building a custom parser and ensures consistent results across large email batches.
 
 ## Prerequisites
-
-### Required Libraries, Versions, and Dependencies
-To effectively implement this feature, ensure you have:
-- Java Development Kit (JDK) installed on your machine.
-- Maven or a direct download method to integrate GroupDocs.Watermark for Java.
-
-### Environment Setup Requirements
-- A suitable IDE like IntelliJ IDEA or Eclipse for writing and testing your code.
-- Basic understanding of Java programming concepts.
-
-### Knowledge Prerequisites
-A basic familiarity with object-oriented programming in Java is helpful, though not mandatory. Understanding how email structures work can also be beneficial.
+- Java Development Kit (JDK) 8 or newer.  
+- Maven (or the ability to add JARs manually).  
+- Basic familiarity with Java and email file formats (.msg, .eml).  
 
 ## Setting Up GroupDocs.Watermark for Java
-GroupDocs.Watermark for Java simplifies watermarking and text searching within documents, including emails. Here's how to set it up:
+GroupDocs.Watermark for Java simplifies watermarking and text searching within documents, including emails. Below are the two most common ways to add the library to your project.
 
 ### Maven Setup
 Include the following in your `pom.xml` file to add GroupDocs.Watermark as a dependency:
@@ -62,8 +63,8 @@ Include the following in your `pom.xml` file to add GroupDocs.Watermark as a dep
 Alternatively, you can download the latest version directly from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### License Acquisition Steps
-- **Free Trial:** Start with a free trial to test basic functionalities.
-- **Temporary License:** Obtain a temporary license for extended access and testing.
+- **Free Trial:** Start with a free trial to test basic functionalities.  
+- **Temporary License:** Obtain a temporary license for extended access and testing.  
 - **Purchase:** Consider purchasing if GroupDocs.Watermark meets your needs.
 
 #### Basic Initialization
@@ -99,7 +100,7 @@ Watermarker watermarker = new Watermarker(inputDocumentPath, loadOptions);
 ```
 
 ##### Step 3: Create Search Criteria
-Define criteria for searching text. We'll use a case-insensitive search for the keyword "test":
+Define criteria for searching text. We'll use a case‑insensitive search for the keyword **"test"**:
 ```java
 import com.groupdocs.watermark.search.SearchCriteria;
 import com.groupdocs.watermark.search.TextSearchCriteria;
@@ -134,8 +135,8 @@ watermarker.close();
 ```
 
 #### Troubleshooting Tips
-- **Common Issue:** If search results are empty, ensure the text is present in the email body or subject.
-- **Performance Tip:** Optimize by limiting searches to necessary sections of emails.
+- **Common Issue:** If search results are empty, ensure the text is present in the email body or subject.  
+- **Performance Tip:** Optimize by limiting searches to only the sections you actually need.
 
 ### Feature 2: Load Email Document Options
 This section discusses how you can set up additional options when loading an email document for processing with GroupDocs.Watermark.
@@ -151,8 +152,14 @@ EmailLoadOptions loadOptions = new EmailLoadOptions();
 ```
 
 #### Key Configuration Options
-- **Password Protection:** Specify passwords if your emails are encrypted.
+- **Password Protection:** Specify passwords if your emails are encrypted.  
 - **Encoding Settings:** Define specific encoding types as needed.
+
+## How to Search Multiple Keywords Email
+If you need to locate several terms in one pass, create multiple `SearchCriteria` objects and combine them using logical **OR** or **AND** operators. The API lets you chain criteria, so you can search for “invoice” **or** “receipt” without running separate loops.
+
+## How to Remove Email Watermarks
+After you locate watermarks (or any text matching your criteria), the `PossibleWatermarkCollection.clear()` method removes them from the email document. This is the exact step we used in **Step 5** above, and it works for any number of matches.
 
 ## Practical Applications
 
@@ -168,34 +175,32 @@ Streamline support workflows by quickly locating keywords or phrases in customer
 ## Performance Considerations
 When using GroupDocs.Watermark, consider the following to optimize performance:
 
-- **Resource Management:** Efficiently manage memory and processing power to handle large email datasets.
+- **Resource Management:** Efficiently manage memory and processing power to handle large email datasets.  
 - **Java Memory Management Best Practices:** Regularly monitor resource usage and release resources promptly.
 
-## Conclusion
-By now, you should have a solid understanding of how to use GroupDocs.Watermark for Java to search text within emails effectively. This powerful tool offers flexibility and efficiency in handling email content, making it invaluable for developers working with digital documents.
+## Frequently Asked Questions
 
-### Next Steps
-- Explore further features of GroupDocs.Watermark.
-- Experiment with other document types like PDFs or images.
+**Q:** How can I handle encrypted emails with GroupDocs.Watermark?  
+**A:** Use the `EmailLoadOptions` to specify passwords when initializing the `Watermarker`.
 
-Ready to take your skills further? Try implementing these solutions today!
+**Q:** Can I search for multiple keywords at once?  
+**A:** Yes, create separate `SearchCriteria` instances and combine them using logical operations.
 
-## FAQ Section
-**Q1:** How can I handle encrypted emails with GroupDocs.Watermark?
-**A1:** Use the `EmailLoadOptions` to specify passwords when initializing the `Watermarker`.
+**Q:** Is GroupDocs.Watermark Java free to use?  
+**A:** A free trial is available; consider purchasing a license for extended features.
 
-**Q2:** Can I search for multiple keywords at once?
-**A2:** Yes, create separate `SearchCriteria` instances and combine them using logical operations.
+**Q:** How do I handle large volumes of emails efficiently?  
+**A:** Optimize your searches by targeting specific email sections and managing resources effectively.
 
-**Q3:** Is GroupDocs.Watermark Java free to use?
-**A3:** A free trial is available; consider purchasing a license for extended features.
-
-**Q4:** How do I handle large volumes of emails efficiently?
-**A4:** Optimize your searches by targeting specific email sections and managing resources effectively.
-
-**Q5:** Where can I find additional help or support?
-**A5:** Visit the [GroupDocs forum](https://forum.groupdocs.com/c/watermark/10) for community support or contact their free support channel.
+**Q:** Where can I find additional help or support?  
+**A:** Visit the [GroupDocs forum](https://forum.groupdocs.com/c/watermark/10) for community support or contact their free support channel.
 
 ## Resources
-- **Documentation:** Explore detailed guides at [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/).
-- **API Reference:** Access technical details at [GroupDocs API](https://apireference.groupdocs.com/watermark/java).
+- **Documentation:** Explore detailed guides at [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/).  
+- **API Reference:** Access technical details at [GroupDocs API](https://apireference.groupdocs.com/watermark/java/).
+
+---
+
+**Last Updated:** 2026-04-07  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs
