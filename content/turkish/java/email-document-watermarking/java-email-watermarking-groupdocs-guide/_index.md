@@ -1,27 +1,29 @@
 ---
-title: "Add email watermark java using GroupDocs.Watermark"
-description: "Learn how to add email watermark java with GroupDocs.Watermark, covering embed image email java and read image bytes java techniques for secure email documents."
-date: "2026-01-03"
-weight: 1
-url: "/java/email-document-watermarking/java-email-watermarking-groupdocs-guide/"
+date: '2026-01-03'
+description: GroupDocs.Watermark kullanarak Java'da e-posta filigranı eklemeyi öğrenin;
+  güvenli e-posta belgeleri için gömülü resim e-posta Java ve resim baytlarını okuma
+  Java tekniklerini kapsar.
 keywords:
 - Java Email Watermarking
 - GroupDocs Watermark for Java
 - Email Document Watermarking
+title: GroupDocs.Watermark kullanarak Java'da e-posta filigranı ekle
 type: docs
+url: /tr/java/email-document-watermarking/java-email-watermarking-groupdocs-guide/
+weight: 1
 ---
 
 # How to add email watermark java with GroupDocs.Watermark: A Step‑by‑Step Guide
 
 ## Introduction
 
-Are you looking to **add email watermark java** to secure your email documents without affecting their integrity? Discover how to seamlessly integrate watermarking into your email workflows using GroupDocs.Watermark for Java. This tutorial will guide you through loading an email document, reading image files, embedding images as watermarks, and saving the modified document efficiently.
+E‑posta belgelerinizi bütünlüğünü bozmadan korumak için **add email watermark java** eklemek mi istiyorsunuz? GroupDocs.Watermark for Java kullanarak e‑posta iş akışlarınıza su işareti eklemeyi sorunsuz bir şekilde nasıl entegre edeceğinizi keşfedin. Bu öğretici, bir e‑posta belgesini yükleme, görüntü dosyalarını okuma, görüntüleri su işareti olarak gömme ve değiştirilmiş belgeyi verimli bir şekilde kaydetme adımlarını size gösterecek.
 
 **What You'll Learn:**
-- Setting up and using GroupDocs.Watermark for Java.  
-- Loading an email document into your application.  
-- Reading and embedding images into emails.  
-- Efficiently saving watermarked email documents.
+- GroupDocs.Watermark for Java’yı kurma ve kullanma.  
+- Bir e‑posta belgesini uygulamanıza yükleme.  
+- Görüntüleri okuyup e‑postalara gömme.  
+- Su işaretli e‑posta belgelerini verimli bir şekilde kaydetme.
 
 ### Quick Answers
 - **Primary library?** GroupDocs.Watermark for Java  
@@ -32,20 +34,20 @@ Are you looking to **add email watermark java** to secure your email documents w
 
 ## What is add email watermark java?
 
-Adding an email watermark in Java means programmatically inserting a visual identifier—such as a logo or disclaimer—into the body or attachments of an email file. This helps protect confidential information, reinforce branding, and verify document authenticity.
+Java’da bir e‑posta su işareti eklemek, bir logo veya uyarı gibi görsel bir tanımlayıcının e‑posta dosyasının gövdesine veya eklerine programlı olarak yerleştirilmesi anlamına gelir. Bu, gizli bilgileri korumaya, marka tutarlılığını güçlendirmeye ve belgenin özgünlüğünü doğrulamaya yardımcı olur.
 
 ## Why use GroupDocs.Watermark for Java?
 
-GroupDocs.Watermark provides a high‑level API that abstracts the complexities of different email formats. It lets you focus on business logic while handling MIME structures, embedded objects, and image rendering under the hood.
+GroupDocs.Watermark, farklı e‑posta formatlarının karmaşıklıklarını soyutlayan yüksek seviyeli bir API sunar. MIME yapıları, gömülü nesneler ve görüntü işleme gibi detayları arka planda yönetirken iş mantığınıza odaklanmanızı sağlar.
 
 ## Prerequisites
 
 - **Required Libraries and Dependencies**
   - GroupDocs.Watermark for Java (version 24.11 or later).  
-  - An IDE like IntelliJ IDEA or Eclipse that supports Maven projects.
+  - Maven projelerini destekleyen IntelliJ IDEA veya Eclipse gibi bir IDE.
 - **Environment Setup Requirements**
   - JDK 8 or newer installed.  
-  - Access to a directory for storing input and output files.
+  - Girdi ve çıktı dosyalarını saklamak için bir dizine erişim.
 - **Knowledge Prerequisites**
   - Basic Java programming.  
   - Familiarity with file handling and Maven.
