@@ -26,23 +26,25 @@ jobs:
 
     # Steps represent a sequence of watermark that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
-            submodules: true  # Fetch Hugo themes
-            fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+            submodules: true
+            fetch-depth: 0
       - name: Checkout theme repo
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
         with:
           repository: groupdocs/tutorials-theme
           token: ${{ secrets.REPO_TOKEN }}
           fetch-depth: 0
           path: themes/tutorials-theme
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
       - name: Install Theme Dependencies
         run: npm install
-        working-directory: ./themes/tutorials-theme      
-      # Step 2 - Sets up the latest version of Hugo
+        working-directory: ./themes/tutorials-theme
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -54,7 +56,6 @@ jobs:
         run:  npm install -D --save postcss-cli
       - name: Install Dependicies3
         run:  npm install -D postcss
-      # Also specifies the theme we want to use
       - name: Build
         run: hugo --configDir config/watermark --environment production --minify
         
