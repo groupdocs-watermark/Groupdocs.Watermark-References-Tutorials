@@ -1,51 +1,52 @@
 ---
-title: "How to Extract Shapes from Diagrams Using GroupDocs.Watermark in Java"
-description: "Learn how to extract shapes and extract image from shape with GroupDocs.Watermark for Java, retrieving detailed diagram information efficiently."
-date: "2026-02-13"
-weight: 1
-url: "/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/"
+date: '2026-02-13'
+description: Naučte se, jak pomocí GroupDocs.Watermark pro Javu extrahovat tvary a
+  získat obrázek z tvaru, přičemž efektivně získáváte podrobné informace o diagramu.
 keywords:
 - extract shape information Java
 - GroupDocs.Watermark diagram processing
 - Java diagram manipulation
+title: Jak extrahovat tvary z diagramů pomocí GroupDocs.Watermark v Javě
 type: docs
+url: /cs/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/
+weight: 1
 ---
 
-# How to Extract Shapes from Diagrams Using GroupDocs.Watermark in Java
+# Jak extrahovat tvary z diagramů pomocí GroupDocs.Watermark v Javě
 
-When you need to **how to extract shapes** from a Visio‑style diagram programmatically, the GroupDocs.Watermark library gives you a clean, Java‑first way to pull every detail—dimensions, positions, embedded images, and even the text inside each shape. In this tutorial you’ll see exactly **how to extract shapes**, why it matters, and step‑by‑step code you can copy into your project.
+Když potřebujete **jak extrahovat tvary** z diagramu ve stylu Visio programově, knihovna GroupDocs.Watermark vám poskytuje čistý, Java‑první způsob, jak získat každý detail — rozměry, pozice, vložené obrázky a dokonce i text uvnitř každého tvaru. V tomto tutoriálu uvidíte přesně **jak extrahovat tvary**, proč je to důležité a krok‑za‑krokem kód, který můžete zkopírovat do svého projektu.
 
-## Quick Answers
-- **What library handles shape extraction?** GroupDocs.Watermark for Java  
-- **Which Java version is required?** JDK 8 or higher  
-- **Can I get image data from a shape?** Yes – use `shape.getImage()`  
-- **Is text inside a shape accessible?** Absolutely, via `shape.getText()`  
-- **Do I need a license for production?** A valid GroupDocs.Watermark license is required  
+## Rychlé odpovědi
+- **Která knihovna zpracovává extrakci tvarů?** GroupDocs.Watermark for Java  
+- **Která verze Javy je vyžadována?** JDK 8 or higher  
+- **Mohu získat data obrázku z tvaru?** Yes – use `shape.getImage()`  
+- **Je text uvnitř tvaru přístupný?** Absolutely, via `shape.getText()`  
+- **Potřebuji licenci pro produkci?** A valid GroupDocs.Watermark license is required  
 
-## Introduction
+## Úvod
 
-Managing complex diagrams often requires accessing detailed information about their components, such as shapes and images. If you've ever needed to programmatically retrieve data like dimensions, positions, or text associated with diagram shapes using Java, this tutorial is for you. Leveraging the power of the GroupDocs.Watermark library can streamline this process in a Java application. In this guide, we'll walk through **how to extract shapes** from a diagram file and also show you how to **extract image from shape** and **extract text from shape**.
+Správa složitých diagramů často vyžaduje přístup k podrobným informacím o jejich komponentách, jako jsou tvary a obrázky. Pokud jste někdy potřebovali programově získat data jako rozměry, pozice nebo text spojený s tvary diagramu pomocí Javy, tento tutoriál je pro vás. Využití síly knihovny GroupDocs.Watermark může tento proces v Java aplikaci zjednodušit. V tomto průvodci projdeme **jak extrahovat tvary** ze souboru diagramu a také vám ukážeme, jak **extrahovat obrázek z tvaru** a **extrahovat text z tvaru**.
 
-## What is “how to extract shapes”?
+## Co je “jak extrahovat tvary”?
 
-Extracting shapes means reading the diagram’s internal objects (pages, shapes, images, text) so you can analyze, transform, or reuse them in other applications—perfect for automation, reporting, or integration with CAD tools.
+Extrahování tvarů znamená čtení interních objektů diagramu (stránky, tvary, obrázky, text), abyste je mohli analyzovat, transformovat nebo znovu použít v jiných aplikacích — ideální pro automatizaci, reportování nebo integraci s CAD nástroji.
 
-## Why use GroupDocs.Watermark for shape extraction?
+## Proč použít GroupDocs.Watermark pro extrakci tvarů?
 
 - **Full format support** – works with VSDX, VDX, and many other diagram types.  
 - **Rich object model** – gives direct access to shape geometry, images, and text.  
 - **No external dependencies** – pure Java, easy to embed in Maven projects.  
 
-## Prerequisites
+## Předpoklady
 
 - **GroupDocs.Watermark for Java** (version 24.11 or later)  
 - Java Development Kit (JDK) 8 or higher  
 - Maven for dependency management  
 - An IDE such as IntelliJ IDEA or Eclipse  
 
-## Setting Up GroupDocs.Watermark for Java
+## Nastavení GroupDocs.Watermark pro Java
 
-Add the library to your Maven `pom.xml`:
+Přidejte knihovnu do svého Maven `pom.xml`:
 
 ```xml
 <repositories>
@@ -65,14 +66,14 @@ Add the library to your Maven `pom.xml`:
 </dependencies>
 ```
 
-You can also download the latest binaries from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Můžete také stáhnout nejnovější binární soubory z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### License Acquisition Steps
+### Kroky získání licence
 - **Free Trial:** Download a trial package to evaluate the API.  
 - **Temporary License:** Request a temporary key for extended testing.  
 - **Purchase:** Obtain a full license for production use.
 
-### Basic Initialization and Setup
+### Základní inicializace a nastavení
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -83,9 +84,9 @@ DiagramLoadOptions diagramLoadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", diagramLoadOptions);
 ```
 
-## How to Extract Shapes – Implementation Guide
+## Jak extrahovat tvary – průvodce implementací
 
-### Load and Retrieve Content
+### Načtení a získání obsahu
 
 ```java
 // Create load options if necessary
@@ -99,7 +100,7 @@ Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx"
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 ```
 
-### Iterate Through Shapes
+### Procházení tvarů
 
 ```java
 for (DiagramPage page : content.getPages()) {
@@ -128,36 +129,36 @@ for (DiagramShape shape : page.getShapes()) {
 }
 ```
 
-### How to extract image from shape
+### Jak extrahovat obrázek z tvaru
 
-The `shape.getImage()` call returns an object containing the raw bitmap, its dimensions, and the byte array. Use the properties shown above to store the image on disk or feed it into another processing pipeline.
+Volání `shape.getImage()` vrací objekt obsahující surový bitmap, jeho rozměry a pole bajtů. Použijte výše zobrazené vlastnosti k uložení obrázku na disk nebo k předání do dalšího zpracovatelského potrubí.
 
-### How to extract text from shape
+### Jak extrahovat text z tvaru
 
-The `shape.getText()` method returns the plain text inside the shape. If the shape contains no text, the method returns `null`. The sample loop already prints the text, and you can further manipulate it—for example, building an index of all shape labels.
+Metoda `shape.getText()` vrací prostý text uvnitř tvaru. Pokud tvar neobsahuje žádný text, metoda vrátí `null`. Vzorkový cyklus již text vypisuje a můžete s ním dále pracovat — například vytvořením indexu všech popisků tvarů.
 
-## Troubleshooting Tips
+## Tipy pro řešení problémů
 - Verify the file path and read permissions.  
 - Ensure you are using a supported diagram format (VSDX, VDX, etc.).  
-- If a shape appears without expected data, check the library’s release notes for format‑specific quirks.
+- If a shape appears without expected data, check the library’s release notes for format‑specific quirks.  
 
-## Practical Applications
+## Praktické aplikace
 
 1. **Diagram Analysis:** Automatically audit diagrams for compliance by checking shape sizes or missing labels.  
 2. **Data Visualization:** Feed extracted dimensions into a reporting dashboard to visualize layout density.  
 3. **CAD Integration:** Combine shape data with CAD APIs to synchronize design specifications across tools.  
 
-## Performance Considerations
+## Úvahy o výkonu
 
 - **Close resources:** Call `watermarker.close()` when you’re done to free native resources.  
 - **Memory management:** Large diagrams can consume significant heap; monitor memory and increase `-Xmx` if needed.  
-- **Batch processing:** Process files in batches and reuse a single `Watermarker` instance when possible.
+- **Batch processing:** Process files in batches and reuse a single `Watermarker` instance when possible.  
 
-## Conclusion
+## Závěr
 
-By following this guide you now know **how to extract shapes**, how to **extract image from shape**, and how to **extract text from shape** using GroupDocs.Watermark for Java. These techniques open the door to automated diagram analysis, reporting, and integration with other engineering systems. As a next step, explore the full API by checking out its [documentation](https://docs.groupdocs.com/watermark/java/) and try combining shape extraction with custom business logic.
+Following this guide you now know **how to extract shapes**, how to **extract image from shape**, and how to **extract text from shape** using GroupDocs.Watermark for Java. These techniques open the door to automated diagram analysis, reporting, and integration with other engineering systems. As a next step, explore the full API by checking out its [documentation](https://docs.groupdocs.com/watermark/java/) and try combining shape extraction with custom business logic.
 
-## FAQ Section
+## Sekce FAQ
 
 1. **What is GroupDocs.Watermark?**  
    - A comprehensive Java library designed for watermarking and extracting information from various document formats, including diagrams.  
@@ -176,6 +177,6 @@ By following this guide you now know **how to extract shapes**, how to **extract
 
 ---
 
-**Last Updated:** 2026-02-13  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+**Poslední aktualizace:** 2026-02-13  
+**Testováno s:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs
