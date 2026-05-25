@@ -198,6 +198,6 @@ A: Absoluut. De API werkt in elke Java‑runtime, inclusief containers en server
 - **Documentatie:** [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)
 - **API‑referentie:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)
 - **Download:** [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)
-- **GitHub:** [GroupDocs Watermark GitHub Repository](://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- **GitHub:** [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
 - **Gratis ondersteuning:** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
 - **Tijdelijke licentie:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
