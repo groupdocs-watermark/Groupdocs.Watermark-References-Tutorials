@@ -1,15 +1,17 @@
 ---
-title: "Extract Document Metadata Java – GroupDocs.Watermark Tutorials"
-description: "Learn how to extract document metadata Java using GroupDocs.Watermark for Java tutorials. Discover metadata, page count, size, and more."
-weight: 14
-url: "/java/document-information/"
-type: docs
 date: 2026-02-05
+description: Tanulja meg, hogyan lehet Java-ban kinyerni a dokumentum metaadatait
+  a GroupDocs.Watermark for Java oktatóanyagok segítségével. Fedezze fel a metaadatokat,
+  az oldalszámot, a méretet és még sok mást.
+title: Dokumentum metaadatok kinyerése Java – GroupDocs.Watermark oktatóanyagok
+type: docs
+url: /hu/java/document-information/
+weight: 14
 ---
 
 # Extract Document Metadata Java – Document Information Extraction Tutorials for GroupDocs.Watermark Java
 
-In this guide you’ll discover how to **extract document metadata Java** projects with the powerful GroupDocs.Watermark for Java library. Whether you need file type, page count, size, or deeper structural details, these tutorials show you step‑by‑step how to pull that information out of PDFs, Word files, PowerPoint slides, and more. Understanding document metadata lets your application make smarter decisions about watermark placement, content analysis, and automated processing.
+Ebben az útmutatóban megtudhatja, hogyan **extract document metadata Java** projekteket valósítson meg a hatékony GroupDocs.Watermark for Java könyvtárral. Akár fájltípust, oldalszámot, méretet vagy mélyebb szerkezeti adatokat szeretne, ezek a tutorialok lépésről‑lépésre bemutatják, hogyan nyerhetjük ki ezeket a PDF‑ekből, Word‑fájlokból, PowerPoint‑diákból és egyéb formátumokból. A dokumentum metaadatok megértése lehetővé teszi, hogy az alkalmazása okosabb döntéseket hozzon a vízjel elhelyezéséről, a tartalomelemzésről és az automatizált feldolgozásról.
 
 ## Quick Answers
 - **What does “extract document metadata Java” mean?** It refers to programmatically reading a file’s properties (type, pages, size, etc.) using Java code.  
@@ -28,9 +30,9 @@ Extracting document metadata in Java means using code to read a document’s int
 - **Future‑proof** – New file types are added regularly, reducing maintenance overhead.
 
 ## Prerequisites
-- Java 17 or later installed.  
-- Maven or Gradle project set up to include the GroupDocs.Watermark for Java dependency.  
-- A valid GroupDocs temporary or full license key (free trial available).
+- Java 17 vagy újabb telepítve.  
+- Maven vagy Gradle projekt beállítva a GroupDocs.Watermark for Java függőség hozzáadásához.  
+- Érvényes GroupDocs ideiglenes vagy teljes licenckulcs (ingyenes próba elérhető).
 
 ## Step‑by‑Step Guide to Using the Tutorials
 
