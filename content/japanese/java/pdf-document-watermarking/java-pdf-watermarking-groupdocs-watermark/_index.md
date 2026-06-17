@@ -1,37 +1,37 @@
 ---
-title: "remove text watermark pdf using GroupDocs.Watermark Java"
-description: "Learn how to remove text watermark pdf and add watermark java pdf using GroupDocs.Watermark for Java. Step‑by‑step code, licensing tips, and performance advice."
-date: "2026-02-21"
-weight: 1
-url: "/java/pdf-document-watermarking/java-pdf-watermarking-groupdocs-watermark/"
+date: '2026-02-21'
+description: GroupDocs.Watermark for Java を使用して、PDF のテキスト透かしを削除し、Java で PDF に透かしを追加する方法を学びましょう。ステップバイステップのコード、ライセンスに関するヒント、パフォーマンスに関するアドバイスを提供します。
 keywords:
 - Java PDF Watermarking
 - GroupDocs.Watermark for Java
 - PDF Document Security
+title: GroupDocs.Watermark Java を使用して PDF のテキスト透かしを削除する
 type: docs
+url: /ja/java/pdf-document-watermarking/java-pdf-watermarking-groupdocs-watermark/
+weight: 1
 ---
 
 # Comprehensive Guide to Implementing Java PDF Watermarking with GroupDocs.Watermark
 
 ## Introduction
 
-If you need to **remove text watermark pdf** files or embed branding directly into your PDFs, you’ve come to the right place. In this tutorial we’ll walk through the entire process—loading a PDF, searching for both image and text watermarks, deleting a watermark on a specific page, and finally saving the cleaned document. Along the way you’ll also see how to **add watermark java pdf** when you need to brand new files, all using the powerful **groupdocs watermark java** library.
+PDF ファイルから **remove text watermark pdf** を削除したり、PDF に直接ブランドロゴを埋め込んだりしたい場合は、ここが最適です。このチュートリアルでは、PDF の読み込み、画像およびテキストの透かし検索、特定ページの透かし削除、そしてクリーンなドキュメントの保存までの全プロセスを解説します。また、**add watermark java pdf** が必要なときに新規ファイルへ透かしを追加する方法も、強力な **groupdocs watermark java** ライブラリを使って紹介します。
 
 ### Quick Answers
 - **What is the primary purpose of GroupDocs.Watermark for Java?**  
-  To add, search, and remove image or text watermarks in PDF, Word, Excel, and image files.  
+  PDF、Word、Excel、画像ファイルに対して、画像またはテキストの透かしを追加、検索、削除することです。  
 - **Can I delete a watermark on a specific page?**  
-  Yes – use page‑level search criteria (see “delete watermark specific page”).  
+  はい – ページ単位の検索条件を使用します（「delete watermark specific page」参照）。  
 - **Do I need a license for production use?**  
-  A temporary or purchased license is required beyond the trial period.  
+  トライアル期間を過ぎた場合は、一時ライセンスまたは購入ライセンスが必要です。  
 - **Which Maven coordinates are required?**  
-  `com.groupdocs:groupdocs-watermark:24.11` (or latest).  
+  `com.groupdocs:groupdocs-watermark:24.11`（または最新）。  
 - **Is the library compatible with Java 8+?**  
-  Fully compatible with Java 8 and later versions.
+  Java 8 以降のバージョンと完全に互換性があります。
 
 ## What is “remove text watermark pdf” and why does it matter?
 
-Removing unwanted watermarks restores a document’s clean appearance, making it ready for redistribution, printing, or archival. It’s especially useful when you receive PDFs that contain legacy branding or copyright notices that are no longer relevant.
+不要な透かしを除去することで、文書の見た目がクリアになり、再配布、印刷、アーカイブが容易になります。特に、古いブランドやもう必要のない著作権表示が含まれた PDF を受け取ったときに有用です。
 
 ## Why use GroupDocs.Watermark for Java?
 
@@ -42,7 +42,7 @@ Removing unwanted watermarks restores a document’s clean appearance, making it
 
 ## Prerequisites
 
-Before we dive in, make sure you have:
+開始する前に、以下を用意してください。
 
 - **Required Libraries:** GroupDocs.Watermark for Java (version 24.11 or newer).  
 - **Environment Setup:** JDK 8+ and an IDE such as IntelliJ IDEA or Eclipse.  
@@ -50,10 +50,10 @@ Before we dive in, make sure you have:
 
 ## Setting Up GroupDocs.Watermark for Java
 
-To include the GroupDocs.Watermark library in your project, use Maven or download the JAR file directly.
+プロジェクトに GroupDocs.Watermark ライブラリを組み込むには、Maven を使用するか JAR ファイルを直接ダウンロードします。
 
 **Maven Setup:**  
-Add this configuration to your `pom.xml`:
+`pom.xml` に以下の設定を追加します。
 
 ```xml
 <repositories>
@@ -74,14 +74,14 @@ Add this configuration to your `pom.xml`:
 ```
 
 **Direct Download:**  
-Download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+最新バージョンは [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) からダウンロードしてください。
 
 ### License Acquisition
 
-To use GroupDocs.Watermark beyond its trial period, obtain a temporary license or purchase it. Visit [this link](https://purchase.groupdocs.com/temporary-license/) to start the licensing process.
+トライアル期間を超えて GroupDocs.Watermark を使用するには、一時ライセンスを取得するか購入してください。ライセンス取得は [this link](https://purchase.groupdocs.com/temporary-license/) から開始できます。
 
 **Basic Initialization:**  
-Initialize the watermarker in your Java application:
+Java アプリケーションでウォーターマーカーを初期化します。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -96,11 +96,11 @@ public class SetupGroupDocsWatermark {
 
 ## Implementation Guide
 
-Explore each feature of GroupDocs.Watermark for Java through practical examples.
+実践的なサンプルを通じて、GroupDocs.Watermark for Java の各機能を確認しましょう。
 
 ### Feature 1: Load a PDF Document
 
-Load a PDF document using the `Watermarker` class, which is essential for any watermarking task.
+透かし処理の第一歩として、`Watermarker` クラスで PDF ドキュメントを読み込みます。
 
 #### Step‑by‑Step Implementation:
 
@@ -118,11 +118,11 @@ public class Feature1 {
 }
 ```
 
-*Explanation:* `PdfLoadOptions` specifies loading preferences, while `Watermarker` loads and manages your documents.
+*Explanation:* `PdfLoadOptions` は読み込み設定を指定し、`Watermarker` がドキュメントの読み込みと管理を行います。
 
 ### Feature 2: Initialize Search Criteria for Image and Text Watermarks
 
-Set up criteria to locate both image and text watermarks in a PDF document.
+PDF 内の画像透かしとテキスト透かしの両方を検出する検索条件を設定します。
 
 #### Step‑by‑Step Implementation:
 
@@ -141,11 +141,11 @@ public class Feature2 {
 }
 ```
 
-*Explanation:* `ImageDctHashSearchCriteria` identifies images based on DCT hash, while `TextSearchCriteria` locates specific text strings.
+*Explanation:* `ImageDctHashSearchCriteria` は DCT ハッシュに基づいて画像を特定し、`TextSearchCriteria` は指定したテキスト文字列を検索します。
 
 ### Feature 3: Search and Remove Watermarks from a Specific Page in PDF
 
-Focuses on searching for and removing watermarks on specific pages of your PDF document.
+特定ページに存在する透かしを検索し、削除する方法を示します。
 
 #### Step‑by‑Step Implementation:
 
@@ -175,11 +175,11 @@ public class Feature3 {
 }
 ```
 
-*Explanation:* This snippet searches the first page for both image and text watermarks, removing any found.
+*Explanation:* このスニペットは 1 ページ目で画像とテキストの透かしを検索し、見つかったものを削除します。
 
 ### Feature 4: Save and Close Watermarked PDF Document
 
-Save your changes and properly close the document once modifications are complete.
+変更を保存し、ドキュメントを適切にクローズします。
 
 #### Step‑by‑Step Implementation:
 
@@ -199,32 +199,32 @@ public class Feature4 {
 }
 ```
 
-*Explanation:* The `save` method writes your changes back to disk, while `close` ensures resources are freed.
+*Explanation:* `save` メソッドで変更をディスクに書き込み、`close` でリソースを解放します。
 
 ## How to remove text watermark pdf from a specific page
 
-If you only need to delete a watermark on page 3, simply adjust the page index in the `search` call (`get_Item(2)`). The same logic applies for any page you target, fulfilling the **delete watermark specific page** requirement.
+ページ 3 の透かしだけを削除したい場合は、`search` 呼び出しのページインデックスを `get_Item(2)` に変更します。対象ページを変更すれば、**delete watermark specific page** の要件を満たせます。
 
 ## How to add watermark java pdf to a new document
 
-When creating a fresh PDF, you can use `watermarker.add()` with either `TextWatermark` or `ImageWatermark` objects. This complements the removal workflow and lets you **add watermark java pdf** in a single pipeline.
+新規 PDF を作成する際は、`watermarker.add()` に `TextWatermark` または `ImageWatermark` オブジェクトを渡します。これにより、削除フローに続いて **add watermark java pdf** を単一パイプラインで実行できます。
 
 ## Practical Applications
 
 ### 1. Document Branding
-Add company logos or brand names to PDFs for consistent branding across all documents.
+PDF に会社ロゴやブランド名を追加し、すべての文書で一貫したブランディングを実現します。
 
 ### 2. Copyright Protection
-Embed copyright notices in digital publications to deter unauthorized use.
+デジタル出版物に著作権表示を埋め込み、無断使用を抑止します。
 
 ### 3. Watermark Removal Automation
-Automate the removal of specific watermarks during document processing workflows.
+文書処理ワークフロー内で特定の透かしを自動的に除去します。
 
 ## Performance Considerations
 
-- **Optimize Resource Usage:** Ensure your Java environment has sufficient memory for handling large PDFs.  
-- **Efficient Search Criteria:** Use precise search criteria to speed up watermark detection and removal processes.  
-- **Batch Processing:** When working with multiple documents, consider batch processing techniques to improve performance.
+- **Optimize Resource Usage:** 大容量 PDF を扱う場合は、Java 環境に十分なメモリを確保してください。  
+- **Efficient Search Criteria:** 正確な検索条件を使用して、透かし検出と削除の速度を向上させます。  
+- **Batch Processing:** 複数文書を処理する際は、バッチ処理技術を活用してパフォーマンスを改善します。
 
 ## Common Issues and Solutions
 
