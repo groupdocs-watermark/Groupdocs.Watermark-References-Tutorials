@@ -1,45 +1,45 @@
 ---
-title: "How to Watermark Excel Sheets with Text Using GroupDocs.Watermark for Java"
-description: "Learn how to watermark Excel files by adding a text watermark using GroupDocs.Watermark for Java. Secure your spreadsheets and reinforce branding."
-date: "2026-03-22"
-weight: 1
-url: "/java/spreadsheet-document-watermarking/add-text-watermark-excel-groupdocs-watermark-java/"
+date: '2026-03-22'
+description: 學習如何使用 GroupDocs.Watermark for Java 為 Excel 檔案添加文字浮水印。保護您的試算表並加強品牌形象。
 keywords:
 - text watermark Excel
 - GroupDocs.Watermark Java
 - Excel document security
+title: 如何使用 GroupDocs.Watermark for Java 為 Excel 工作表添加文字水印
 type: docs
+url: /zh-hant/java/spreadsheet-document-watermarking/add-text-watermark-excel-groupdocs-watermark-java/
+weight: 1
 ---
 
-# How to Watermark Excel Sheets with Text Using GroupDocs.Watermark for Java
+# 如何使用 GroupDocs.Watermark for Java 為 Excel 工作表添加文字浮水印
 
-When you need to **how to watermark Excel** workbooks—especially those that contain sensitive data—adding a clear, professional text watermark is one of the most effective ways to protect your content and reinforce brand identity. In this tutorial we’ll walk through the exact steps to **add text watermark Excel** files using the GroupDocs.Watermark library for Java, covering everything from project setup to saving the final, secured workbook.
+當你需要 **how to watermark Excel** 工作簿——尤其是包含敏感資料的時候——加入清晰、專業的文字浮水印是保護內容及加強品牌形象的最有效方法之一。本教學將逐步說明如何使用 GroupDocs.Watermark Java 程式庫 **add text watermark Excel** 檔案，涵蓋從專案設定到儲存最終安全工作簿的全部步驟。
 
-## Quick Answers
-- **What library should I use?** GroupDocs.Watermark for Java.
-- **Can I add a text watermark to every sheet?** Yes – iterate over each worksheet and apply the same watermark.
-- **Do I need a license?** A free trial works for evaluation; a permanent license is required for production.
-- **Which Java version is supported?** JDK 8 or later.
-- **Will the watermark affect cell data?** No, it only overlays images within the worksheet.
+## 快速解答
+- **What library should I use?** 應該使用哪個程式庫？ GroupDocs.Watermark for Java.
+- **Can I add a text watermark to every sheet?** 我可以在每個工作表加入文字浮水印嗎？ Yes – iterate over each worksheet and apply the same watermark.
+- **Do I need a license?** 我需要授權嗎？ A free trial works for evaluation; a permanent license is required for production.
+- **Which Java version is supported?** 支援哪個 Java 版本？ JDK 8 or later.
+- **Will the watermark affect cell data?** 浮水印會影響儲存格資料嗎？ No, it only overlays images within the worksheet.
 
-## What is watermarking Excel?
-Watermarking Excel means embedding a visible marker—text or image—directly onto the worksheet’s visual elements (such as images) so that anyone opening the file can see the ownership or confidentiality notice. This technique helps deter unauthorized distribution and adds a professional look to your reports.
+## 什麼是 Excel 浮水印？
+Excel 浮水印是指將可見的標記（文字或圖像）直接嵌入工作表的視覺元素（例如圖像）之上，讓任何開啟檔案的人都能看到所有權或機密性聲明。此技術有助於防止未授權的散佈，並為報告增添專業外觀。
 
-## Why add a text watermark Excel using Java?
-- **Security** – Clearly indicates confidential or proprietary information.
-- **Brand consistency** – Reinforces corporate branding across all shared spreadsheets.
-- **Automation** – Java lets you embed watermarks programmatically, saving time on manual edits.
-- **Cross‑format support** – Works with both `.xlsx` and legacy `.xls` files.
+## 為什麼要使用 Java 為 Excel 加入文字浮水印？
+- **Security** – 明確標示機密或專有資訊。
+- **Brand consistency** – 加強公司品牌於所有共享試算表的一致性。
+- **Automation** – Java 可程式化嵌入浮水印，節省手動編輯時間。
+- **Cross‑format support** – 同時支援 `.xlsx` 與舊版 `.xls` 檔案。
 
-## Prerequisites
+## 前置條件
 - **Java Development Kit (JDK)** 8 or newer.
 - **Maven** for dependency management.
-- Basic familiarity with Java syntax and object‑oriented concepts.
+- 基本熟悉 Java 語法與物件導向概念。
 
-## Setting Up GroupDocs.Watermark for Java
-To start, add the GroupDocs.Watermark dependency to your Maven project.
+## 設定 GroupDocs.Watermark for Java
+要開始使用，先將 GroupDocs.Watermark 相依性加入 Maven 專案。
 
-### Using Maven
+### 使用 Maven
 ```xml
 <repositories>
    <repository>
@@ -58,7 +58,7 @@ To start, add the GroupDocs.Watermark dependency to your Maven project.
 </dependencies>
 ```
 
-### Direct Download
+### 直接下載
 Alternatively, download the latest JAR from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 **License Acquisition**
@@ -66,19 +66,19 @@ Alternatively, download the latest JAR from [GroupDocs.Watermark for Java releas
 - **Temporary License** – Use for short‑term testing.
 - **Purchase** – Unlock full production capabilities.
 
-### Basic Initialization
+### 基本初始化
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Initialize watermarker instance for your document
 Watermarker watermarker = new Watermarker("path/to/your/spreadsheet.xlsx");
 ```
 
-## Implementation Guide
+## 實作指南
 
-### Feature 1: Creating a Text Watermark and Configuring Its Properties
+### 功能 1：建立文字浮水印並設定其屬性
 Creating and customizing the watermark involves setting its text, font, alignment, rotation angle, and scaling.  
 
-#### Step‑by‑Step Overview
+#### 步驟概覽
 **Define Your Watermark**
 ```java
 import com.groupdocs.watermark.common.HorizontalAlignment;
@@ -102,9 +102,7 @@ text watermark.setScaleFactor(1); // Maintain original size scale factor
 - **Alignment** – Centering works well for most images.
 - **Rotation & Scaling** – A 45° tilt makes the watermark noticeable without obscuring the image.
 
-### Feature 2: Loading a Spreadsheet Document for Watermarking
-Load the workbook with appropriate options so GroupDocs can access its internal images.
-
+### 功能 2：載入試算表文件以進行浮水印
 ```java
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 // Load your Excel spreadsheet
@@ -112,9 +110,7 @@ documentLoadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx", documentLoadOptions);
 ```
 
-### Feature 3: Adding Text Watermark to Images in a Worksheet
-Iterate through the images on the first worksheet and apply the configured watermark.
-
+### 功能 3：在工作表的圖像上加入文字浮水印
 ```java
 import com.groupdocs.watermark.contents.SpreadsheetContent;
 import com.groupdocs.watermark.contents.WatermarkableImageCollection;
@@ -129,9 +125,7 @@ for (com.groupdocs.watermark.contents.WatermarkableImage image : images) {
 }
 ```
 
-### Feature 4: Saving and Closing the Watermarked Spreadsheet Document
-Persist the changes to a new file and clean up resources.
-
+### 功能 4：儲存並關閉已加浮水印的試算表文件
 ```java
 // Save the changes to a new file
 watermarker.save("YOUR_OUTPUT_DIRECTORY/spreadsheet-out.xlsx");
@@ -139,17 +133,17 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/spreadsheet-out.xlsx");
 watermarker.close();
 ```
 
-## Practical Applications
+## 實務應用
 - **Document Security** – Guard confidential financial models or HR data.
 - **Branding** – Insert company slogans or legal notices across all shared reports.
 - **Copyright Protection** – Deter plagiarism by marking every exported image.
 
-## Performance Considerations
+## 效能考量
 - Keep GroupDocs.Watermark up‑to‑date to benefit from the latest performance tweaks.
 - Release the `Watermarker` instance promptly (`close()`) to free memory.
 - For very large workbooks, process worksheets in batches to avoid high memory consumption.
 
-## Common Issues and Solutions
+## 常見問題與解決方案
 | Issue | Solution |
 |-------|----------|
 | Watermark not visible | Verify that the worksheet actually contains images; the API only watermarks images, not cells. |
@@ -157,7 +151,7 @@ watermarker.close();
 | Out‑of‑memory errors on big files | Increase JVM heap (`-Xmx`) or process each worksheet separately. |
 | License errors | Ensure the trial or permanent license file is correctly referenced in your project. |
 
-## Frequently Asked Questions
+## 常見問答
 
 **Q: Can I use this on all Excel versions?**  
 A: Yes, GroupDocs supports both `.xlsx` and `.xls` formats.
@@ -174,7 +168,7 @@ A: Absolutely—loop through `content.getWorksheets()` and apply the same `image
 **Q: How do I handle large Excel files efficiently?**  
 A: Process worksheets incrementally, close each `Watermarker` after saving, and consider increasing the JVM heap size.
 
-## Resources
+## 資源
 - [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)
 - [API Reference](https://reference.groupdocs.com/watermark/java)
 - [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
@@ -182,12 +176,10 @@ A: Process worksheets incrementally, close each `Watermarker` after saving, and 
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
 - [Temporary License Application](https://purchase.groupdocs.com/temporary-license/) 
 
-By integrating these steps into your Java projects, you can **java add watermark excel** files quickly, ensuring both security and brand consistency.
+透過將這些步驟整合至你的 Java 專案，你可以 **java add watermark excel** 檔案快速完成，確保安全性與品牌一致性。
 
 ---
 
-**Last Updated:** 2026-03-22  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
-
----
+**最後更新：** 2026-03-22  
+**測試環境：** GroupDocs.Watermark 24.11 for Java  
+**作者：** GroupDocs
