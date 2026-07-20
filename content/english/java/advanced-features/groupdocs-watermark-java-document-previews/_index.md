@@ -1,6 +1,6 @@
 ---
-title: "How to Preview Documents with GroupDocs.Watermark for Java"
-description: "Learn how to preview documents using GroupDocs.Watermark for Java – a quick guide for document preview Java developers."
+title: "How to Generate Document Previews with GroupDocs.Watermark for Java"
+description: "Learn how to generate document previews using GroupDocs.Watermark for Java – a quick guide for Java developers."
 date: "2026-02-03"
 weight: 1
 url: "/java/advanced-features/groupdocs-watermark-java-document-previews/"
@@ -61,7 +61,7 @@ Add the library to your project using Maven:
 ```
 
 Or download the JAR directly from the official page:  
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
+[GroupDocs.Watermark for Java releases]({{< relref "groupdocs-watermark-java-releases.md" >}})
 
 ### License Acquisition
 

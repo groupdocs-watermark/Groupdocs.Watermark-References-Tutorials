@@ -1,5 +1,5 @@
 ---
-title: PDF Watermark Java: Complete Guide with GroupDocs.Watermark
+title: 'PDF Watermark Java: Complete Guide with GroupDocs.Watermark'
 linktitle: GroupDocs.Watermark for Java Tutorials
 weight: 10
 url: /java/
@@ -82,6 +82,20 @@ Implementing **pdf watermark java** is straightforward:
 4. **Save the result** – Persist the watermarked file to disk, stream, or cloud storage.
 
 These steps are illustrated in each tutorial linked above, giving you ready‑to‑run code snippets for every file type.
+
+```java
+// Load a PDF document
+Watermark watermark = new Watermark("input.pdf");
+
+// Create a text watermark
+TextWatermark text = new TextWatermark("Confidential", new Font("Arial", 36));
+text.setColor(Color.RED);
+text.setTransparency(0.5);
+
+// Apply the watermark
+watermark.add(text);
+watermark.save("output.pdf");
+```
 
 ## Key Benefits of GroupDocs.Watermark for Java
 

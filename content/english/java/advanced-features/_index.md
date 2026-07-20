@@ -1,6 +1,6 @@
 ---
-title: "How to Lock Watermark – Advanced Watermarking Features Tutorials for GroupDocs.Watermark Java"
-description: "Learn how to lock watermark using GroupDocs.Watermark for Java, plus secure PDF watermark and image watermark Java techniques in advanced tutorials."
+title: "Learn How to Lock Watermark – Advanced Watermarking Features Tutorials for GroupDocs.Watermark Java"
+description: "Learn how to lock watermark using GroupDocs.Watermark for Java, plus secure PDF watermark and image watermark Java techniques in advanced tutorials, and protect your documents."
 weight: 13
 url: "/java/advanced-features/"
 type: docs
@@ -42,6 +42,28 @@ When working with images, the *image watermark java* feature allows you to overl
 ### Step 1: Initialize the Watermark Engine
 Create an instance of the `Watermarker` class, load your target document, and prepare the watermark settings.
 
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.PdfLoadOptions;
+import com.groupdocs.watermark.watermarks.TextWatermark;
+import java.awt.Font;
+
+public class LockWatermarkExample {
+    public static void main(String[] args) throws Exception {
+        // Load the document
+        Watermarker watermarker = new Watermarker("sample.pdf", new PdfLoadOptions());
+
+        // Create a text watermark
+        TextWatermark watermark = new TextWatermark("Confidential", new Font("Arial", 36));
+        watermark.setLocked(true); // Enable lock
+
+        // Apply the watermark
+        watermarker.add(watermark);
+        watermarker.save("sample_locked.pdf");
+    }
+}
+```
+
 ### Step 2: Configure the Watermark
 Define the watermark content (text or image), set its appearance, and enable the **lock** flag to make it immutable.
 
@@ -76,10 +98,10 @@ A: A commercial license is required for production use; a free trial can be used
 
 ### Available Tutorials
 
-- [Generate Document Previews Using GroupDocs.Watermark in Java&#58; Advanced Guide](./groupdocs-watermark-java-document-previews/)  
+- [Generate Document Previews Using GroupDocs.Watermark in Java&#58; Advanced Guide]({{< relref "groupdocs-watermark-java-document-previews/_index.md" >}})
   Learn to generate document previews with GroupDocs.Watermark for Java. Streamline your workflow by efficiently handling large volumes of documents.
 
-- [Master GroupDocs.Watermark in Java&#58; A Comprehensive Guide for Document Protection](./groupdocs-watermark-java-tutorial/)  
+- [Master GroupDocs.Watermark in Java&#58; A Comprehensive Guide for Document Protection]({{< relref "groupdocs-watermark-java-tutorial/_index.md" >}})
   Learn how to integrate GroupDocs.Watermark into your Java applications. Secure documents and images with text and image watermarks.
 
 ### Additional Resources

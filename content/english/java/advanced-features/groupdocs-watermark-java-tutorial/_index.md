@@ -1,6 +1,6 @@
 ---
-title: "groupdocs watermark maven – Mastering GroupDocs.Watermark in Java"
-description: "Learn how to use groupdocs watermark maven integration to protect PDFs, embed logo watermarks, add image watermark java, and watermark multiple pages."
+title: "Learn groupdocs watermark maven – Mastering GroupDocs.Watermark in Java"
+description: "Learn how to use GroupDocs.Watermark Maven integration to protect PDFs, embed logo watermarks, add image watermarks in Java, and watermark multiple pages efficiently."
 date: "2026-02-03"
 weight: 1
 url: "/java/advanced-features/groupdocs-watermark-java-tutorial/"
@@ -30,6 +30,8 @@ Protecting documents and images from unauthorized use is a top priority for deve
 - **Fine‑grained control** – opacity, rotation, scaling, and positioning are fully programmable.  
 - **Performance‑optimized** – batch operations like watermarking multiple pages are handled efficiently.  
 - **Enterprise‑ready licensing** – trial for testing, commercial license for production.
+
+For a broader overview, see the [GroupDocs.Watermark Java overview]({{< relref "groupdocs-watermark-java-overview.md" >}}).
 
 ## Prerequisites
 - **Java SE 8+** installed.  
