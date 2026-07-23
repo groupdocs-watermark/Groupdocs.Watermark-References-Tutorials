@@ -1,5 +1,5 @@
 ---
-title: "Master GroupDocs.Watermark in Java&#58; A Comprehensive Guide for Document Protection"
+title: "Master GroupDocs.Watermark in Java - A Comprehensive Guide for Document Protection"
 description: "Learn how to integrate GroupDocs.Watermark into your Java applications. Secure documents and images with text and image watermarks."
 date: "2025-05-15"
 weight: 1
