@@ -1,5 +1,5 @@
 ---
-title: "Generate Document Previews Using GroupDocs.Watermark in Java&#58; Advanced Guide"
+title: "Generate Document Previews Using GroupDocs.Watermark in Java - Advanced Guide"
 description: "Learn to generate document previews with GroupDocs.Watermark for Java. Streamline your workflow by efficiently handling large volumes of documents."
 date: "2025-05-15"
 weight: 1
