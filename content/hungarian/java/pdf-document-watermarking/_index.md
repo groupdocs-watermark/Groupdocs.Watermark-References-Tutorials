@@ -1,19 +1,20 @@
 ---
 date: 2026-07-25
-description: Learn how to watermark specific PDF pages using GroupDocs.Watermark for
-  Java, add watermark PDF Java, and secure PDF with watermark in real‑world scenarios.
-images:
-- /java/pdf-document-watermarking/og-image.png
+description: Ismerje meg, hogyan helyezhet el vízjelet meghatározott PDF oldalakon
+  a GroupDocs.Watermark for Java segítségével, add watermark PDF Java, és secure PDF
+  with watermark valós körülmények között.
 keywords:
 - watermark specific pdf pages
 - add watermark pdf java
 - secure pdf with watermark
 lastmod: 2026-07-25
-og_description: Watermark specific PDF pages with GroupDocs.Watermark for Java. Learn
-  to add watermark PDF Java and secure PDF with watermark in minutes.
+og_description: Vízjel elhelyezése meghatározott PDF oldalakon a GroupDocs.Watermark
+  for Java segítségével. Learn to add watermark PDF Java and secure PDF with watermark
+  néhány perc alatt.
 og_image_alt: 'Guide: watermark specific PDF pages using GroupDocs.Watermark Java
   library'
-og_title: Watermark Specific PDF Pages – GroupDocs.Watermark for Java
+og_title: Vízjel elhelyezése meghatározott PDF oldalakra – GroupDocs.Watermark for
+  Java
 schemas:
 - author: GroupDocs
   dateModified: '2026-07-25'
@@ -45,68 +46,68 @@ tags:
 - java pdf processing
 - document security
 - pdf annotations
-title: Watermark Specific PDF Pages – GroupDocs.Watermark for Java
+title: Vízjel elhelyezése meghatározott PDF oldalakra – GroupDocs.Watermark for Java
 type: docs
-url: /java/pdf-document-watermarking/
+url: /hu/java/pdf-document-watermarking/
 weight: 5
 ---
 
-# Watermark Specific PDF Pages – PDF Watermarking Tutorials with GroupDocs.Watermark for Java
+# PDF oldalak vízjelezése – PDF vízjelezési útmutatók a GroupDocs.Watermark for Java-hoz
 
-In this guide you’ll discover **how to watermark specific PDF pages** using the powerful GroupDocs.Watermark library for Java. Whether you need to brand a single confidential page, add a print‑only notice, or protect a multi‑page contract, the techniques below let you apply watermarks with pinpoint precision. We’ll walk through real‑world scenarios, outline best practices, and point you to dozens of ready‑to‑run tutorials that cover every corner of PDF watermarking.
+Ebben az útmutatóban **megmutatjuk, hogyan lehet vízjelezni konkrét PDF oldalakat** a hatékony GroupDocs.Watermark Java könyvtárral. Akár egyetlen bizalmas oldalt szeretnél megjelölni, nyomtatás‑csak értesítést hozzáadni, vagy egy többoldalas szerződést védeni, az alábbi technikák pontos pontossággal teszik lehetővé a vízjelek alkalmazását. Valós példákon keresztül mutatjuk be a forgatókönyveket, a legjobb gyakorlatokat, és számos kész‑futtatható útmutatóra mutatunk, amelyek a PDF vízjelezés minden aspektusát lefedik.
 
-## Quick Answers
-- **Can I watermark only selected pages?** Yes – you can target individual page indexes or ranges when adding a watermark.  
-- **Which library supports this in Java?** GroupDocs.Watermark for Java provides a fluent API for page‑level watermarking.  
-- **Do I need a commercial license?** A temporary license works for evaluation; production use requires a paid license.  
-- **Is it possible to add print‑only watermarks?** Absolutely – the library lets you flag a watermark as “print‑only”.  
-- **What Java versions are supported?** Java 8 through Java 21 are fully supported.
+## Gyors válaszok
+- **Csak a kiválasztott oldalakat tudom vízjelezni?** Igen – egyes oldal indexeket vagy tartományokat célozhatsz meg vízjel hozzáadásakor.  
+- **Melyik könyvtár támogatja ezt Java‑ban?** A GroupDocs.Watermark for Java egy folyékony API‑t biztosít az oldal‑szintű vízjelezéshez.  
+- **Szükség van kereskedelmi licencre?** Ideiglenes licenc elég a kiértékeléshez; a termeléshez fizetős licenc szükséges.  
+- **Lehet csak nyomtatás‑csak vízjelet hozzáadni?** Teljesen – a könyvtár lehetővé teszi, hogy a vízjelet „print‑only” jelzővel lássuk el.  
+- **Mely Java verziók támogatottak?** A Java 8‑tól a Java 21‑ig terjedő verziók teljes körűen támogatottak.
 
-## What is GroupDocs.Watermark for Java?
-**GroupDocs.Watermark for Java** is a dedicated API that enables developers to add, edit, and remove text, image, and hyperlink watermarks in PDF, DOCX, PPTX, and many other document formats. It abstracts low‑level PDF manipulation, letting you focus on business rules rather than PDF internals.
+## Mi az a GroupDocs.Watermark for Java?
+**GroupDocs.Watermark for Java** egy dedikált API, amely lehetővé teszi a fejlesztők számára szöveg, kép és hiperhivatkozás vízjelek hozzáadását, szerkesztését és eltávolítását PDF, DOCX, PPTX és számos egyéb dokumentumformátumban. Elrejti az alacsony szintű PDF manipulációt, így a vállalati szabályokra koncentrálhatsz a PDF belső részletei helyett.
 
-## Why watermark specific PDF pages?
-Targeted watermarks let you protect sensitive sections without cluttering the entire document. By applying watermarks only where needed, you reduce visual noise, improve processing speed, and maintain the original appearance of untouched pages. This approach also helps meet compliance requirements that demand selective protection of confidential content.
+## Miért kell konkrét PDF oldalakat vízjelezni?
+A célzott vízjelek lehetővé teszik a érzékeny részek védelmét anélkül, hogy az egész dokumentumot elárasztanák. Csak a szükséges helyeken alkalmazva a vízjelet csökkented a vizuális zajt, javítod a feldolgozási sebességet, és megőrzöd a nem módosított oldalak eredeti megjelenését. Ez a megközelítés segít a megfelelőségi követelményeknek is, amelyek a bizalmas tartalom szelektív védelmét írják elő.
 
-- **92 % reduction** in accidental data leakage when only confidential pages are marked.  
-- **Up to 3× faster rendering** compared with watermarking the whole file, because the library processes only the selected pages in memory.  
-- **Support for 50+ output formats**, so the same code can protect PDFs, images, and Office files alike.
+- **92 % csökkenés** a véletlen adatszivárgásban, ha csak a bizalmas oldalakat jelöljük.  
+- **Akár 3× gyorsabb renderelés** a teljes fájl vízjelezéséhez képest, mivel a könyvtár csak a kiválasztott oldalakat dolgozza fel a memóriában.  
+- **Támogatás 50+ kimeneti formátumhoz**, így ugyanazzal a kóddal PDF‑eket, képeket és Office fájlokat is védhetsz.
 
-## Common Use Cases
-- **Legal contracts** – add a “Confidential” stamp only on the signature page.  
-- **Marketing brochures** – embed a “Draft – Do Not Distribute” label on the cover page while leaving interior pages clean.  
-- **Regulatory filings** – apply a “Print‑Only” watermark that appears only when the PDF is printed, not on screen.  
-- **Educational material** – watermark exam answer sheets while leaving study guides untouched.
+## Gyakori felhasználási esetek
+- **Jogi szerződések** – csak az aláírási oldalon helyezz el egy „Confidential” pecsétet.  
+- **Marketing brosúrák** – a borítóoldalon „Draft – Do Not Distribute” feliratot ágyazz be, a belső oldalak érintetlenek maradnak.  
+- **Szabályozási beadványok** – „Print‑Only” vízjelet alkalmazz, amely csak nyomtatáskor jelenik meg, képernyőn nem.  
+- **Oktatási anyagok** – vizsgaválaszlapokat vízjelezzen, a tanulási útmutatókat érintetlenül hagyva.
 
-## Prerequisites
-- Java 8 or newer installed on your development machine.  
-- Maven or Gradle for dependency management.  
-- A GroupDocs.Watermark for Java license (temporary license works for testing).  
-- Basic familiarity with PDF page indexing (pages are zero‑based in the API).
+## Előfeltételek
+- Java 8 vagy újabb telepítve a fejlesztői gépen.  
+- Maven vagy Gradle a függőségkezeléshez.  
+- GroupDocs.Watermark for Java licenc (ideiglenes licenc teszteléshez elegendő).  
+- Alapvető ismeretek a PDF oldal indexeléséről (az API‑ban az oldalak null‑alapúak).
 
-## How to watermark specific PDF pages?
+## Hogyan vízjelezhetünk konkrét PDF oldalakat?
 
-Load the PDF, define the watermark, and apply it only to the pages you choose. The direct answer: **Create a `Watermark` object, set its properties, then call `add` with a page range or list of indexes** – this completes the operation in three concise steps.
+Töltsd be a PDF‑et, definiáld a vízjelet, és csak a kiválasztott oldalakon alkalmazd. A közvetlen válasz: **Hozz létre egy `Watermark` objektumot, állítsd be a tulajdonságait, majd hívd meg az `add` metódust egy oldal‑tartománnyal vagy indexlistával** – ez három tömör lépésben végrehajtja a műveletet.
 
-### Step 1 – Initialize the Watermark Engine
-First, instantiate the `Watermark` class with your license key and the target PDF file. **The `Watermark` class is the main entry point for all watermark operations.** This object becomes the central point for all watermark tasks.
+### 1. lépés – A Watermark motor inicializálása
+Először példányosítsd a `Watermark` osztályt a licenckulcsoddal és a cél PDF fájllal. **A `Watermark` osztály a fő belépési pont minden vízjel‑művelethez.** Ez az objektum lesz a központi pont minden vízjel feladathoz.
 
-### Step 2 – Define the Watermark Content
-Create either a `TextWatermark` or `ImageWatermark` instance, configure opacity, rotation, and font, then attach it to the `Watermark` object. For example, a semi‑transparent “Confidential” text can be set to 30 % opacity and a 45° rotation.
+### 2. lépés – A vízjel tartalmának meghatározása
+Hozz létre egy `TextWatermark` vagy `ImageWatermark` példányt, konfiguráld az átlátszóságot, forgatást és betűtípust, majd csatold a `Watermark` objektumhoz. Például egy félig átlátszó „Confidential” szöveg beállítható 30 % átlátszóságra és 45° forgatásra.
 
-### Step 3 – Apply to Selected Pages
-Use the `add` method overload that accepts a `PageSelection` object. **`PageSelection` specifies which pages to process.** You can specify a single page (`new int[]{2}`), a range (`new int[]{0,4}`), or a complex list (`new int[]{0,2,5,7}`). The library processes only those pages, leaving the rest untouched.
+### 3. lépés – Alkalmazás a kiválasztott oldalakon
+Használd az `add` metódus túlterhelését, amely egy `PageSelection` objektumot fogad. **A `PageSelection` határozza meg, mely oldalakat dolgozza fel.** Megadhatsz egyetlen oldalt (`new int[]{2}`), egy tartományt (`new int[]{0,4}`), vagy egy összetett listát (`new int[]{0,2,5,7}`). A könyvtár csak ezeket az oldalakat dolgozza fel, a többit érintetlenül hagyja.
 
-### Step 4 – Save the Result
-Finally, call `save` with an output path. The API writes the modified PDF without re‑encoding untouched pages, preserving original quality and reducing file size.
+### 4. lépés – Az eredmény mentése
+Végül hívd meg a `save` metódust egy kimeneti úttal. Az API a módosított PDF‑et anélkül írja ki, hogy a nem módosított oldalakat újrakódolná, megőrizve az eredeti minőséget és csökkentve a fájlméretet.
 
-## How to add watermark PDF Java for print‑only scenarios?
-Load your PDF, create a watermark, set the `PrintOnly` flag to `true`, and apply it to the desired pages. The library automatically hides the watermark on screen while ensuring it appears on printed copies, satisfying compliance requirements for confidential documents.
+## Hogyan adhatunk hozzá nyomtatás‑csak vízjelet PDF‑hez Java‑ban?
+Töltsd be a PDF‑et, hozz létre egy vízjelet, állítsd a `PrintOnly` jelzőt `true`‑ra, és alkalmazd a kívánt oldalakon. A könyvtár automatikusan elrejti a vízjelet a képernyőn, de nyomtatáskor megjeleníti, ezzel teljesítve a bizalmas dokumentumokra vonatkozó megfelelőségi követelményeket.
 
-## How to secure PDF with watermark using GroupDocs.Watermark?
-Secure a PDF by combining watermarking with encryption. First, add a watermark as described above, then call `protect` on the same `Watermark` instance, providing a password and permission set. This two‑step process both visually marks the document and enforces access control.
+## Hogyan védhetünk PDF‑et vízjelezéssel a GroupDocs.Watermark‑dal?
+Védd a PDF‑et a vízjelezés és a titkosítás kombinálásával. Először add hozzá a vízjelet a fent leírt módon, majd hívd meg a `protect` metódust ugyanazon a `Watermark` példányon, megadva egy jelszót és engedélykészletet. Ez a kétlépéses folyamat vizuálisan jelöli a dokumentumot és hozzáférés‑szabályozást is biztosít.
 
-## Available Tutorials
+## Elérhető útmutatók
 
 ### [Access and Iterate Over PDF Artifacts Using GroupDocs.Watermark in Java for Document Watermarking](./access-iterate-pdf-artifacts-groupdocs-watermark-java/)
 Learn how to access and iterate over PDF artifacts using GroupDocs.Watermark in Java. Enhance document security and management with practical tutorials.
@@ -186,7 +187,7 @@ Learn how to effectively watermark and annotate PDFs using GroupDocs.Watermark w
 ### [Secure Your PDFs with GroupDocs.Watermark in Java&#58; A Step-by-Step Guide](./secure-pdfs-groupdocs-watermark-java-guide/)
 Learn how to secure your PDF documents using GroupDocs.Watermark for Java. This guide covers adding text watermarks and rasterizing pages into images.
 
-## Additional Resources
+## További források
 
 - [GroupDocs.Watermark for Java Documentation](https://docs.groupdocs.com/watermark/java/)
 - [GroupDocs.Watermark for Java API Reference](https://reference.groupdocs.com/watermark/java/)
@@ -195,30 +196,30 @@ Learn how to secure your PDF documents using GroupDocs.Watermark for Java. This 
 - [Free Support](https://forum.groupdocs.com/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
-## Frequently Asked Questions
+## Gyakran Ismételt Kérdések
 
-**Q: Can I apply different watermarks to different pages in the same PDF?**  
-A: Yes – create separate `Watermark` objects or reuse one with distinct `PageSelection` settings for each page range.
+**Q: Alkalmazhatok különböző vízjeleket különböző oldalakra ugyanabban a PDF‑ben?**  
+A: Igen – hozhatsz létre külön `Watermark` objektumokat, vagy újrahasználhatod ugyanazt a `PageSelection` beállítással minden oldal‑tartományhoz.
 
-**Q: Does watermarking affect PDF file size?**  
-A: Only the pages you modify are rewritten; typical size increase is under 5 % for text watermarks and under 12 % for high‑resolution image watermarks.
+**Q: Befolyásolja a vízjelezés a PDF fájlméretet?**  
+A: Csak a módosított oldalakat írja újra; a tipikus méretnövekedés szöveges vízjelek esetén 5 % alatt, magas felbontású képi vízjelek esetén 12 % alatt marad.
 
-**Q: Is it possible to remove a watermark after it has been added?**  
-A: Absolutely – the API provides a `remove` method that accepts the same page selection used during addition.
+**Q: Lehet eltávolítani a vízjelet, miután hozzá lett adva?**  
+A: Teljesen – az API biztosít egy `remove` metódust, amely ugyanazt a page selection‑t fogadja, mint a hozzáadáskor.
 
-**Q: How do I handle password‑protected PDFs?**  
-A: Load the document with the password parameter (`Watermark.load("file.pdf", "pwd")`), then apply watermarks as usual.
+**Q: Hogyan kezelem a jelszóval védett PDF‑eket?**  
+A: Töltsd be a dokumentumot a jelszó paraméterrel (`Watermark.load("file.pdf", "pwd")`), majd alkalmazd a vízjeleket a szokásos módon.
 
-**Q: What performance can I expect on large documents (500+ pages)?**  
-A: Targeted page watermarking processes only the selected pages, typically completing in under 2 seconds for a 500‑page file on a standard 8‑core server.
+**Q: Milyen teljesítményt várhatok nagy dokumentumoknál (500+ oldal)?**  
+A: A célzott oldal‑vízjelezés csak a kiválasztott oldalakat dolgozza fel, általában 2 másodperc alatt befejeződik egy 500 oldalas fájl esetén egy tipikus 8‑magos szerveren.
 
 ---
 
-**Last Updated:** 2026-07-25  
-**Tested With:** GroupDocs.Watermark for Java 23.12  
-**Author:** GroupDocs
+**Utoljára frissítve:** 2026-07-25  
+**Tesztelt verzió:** GroupDocs.Watermark for Java 23.12  
+**Szerző:** GroupDocs
 
-## Related Tutorials
+## Kapcsolódó útmutatók
 
 - [GroupDocs.Watermark for Java: Comprehensive Guide to PDF Watermarking](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermark-guide/)
 - [How to Add a Text Watermark to PDF Using GroupDocs.Watermark for Java (2023 Guide)](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-java/)
