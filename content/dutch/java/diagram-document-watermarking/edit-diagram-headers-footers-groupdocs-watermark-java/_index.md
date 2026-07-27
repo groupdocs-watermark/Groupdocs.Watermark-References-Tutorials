@@ -1,45 +1,46 @@
 ---
-date: '2025-12-17'
-description: Leer hoe u de koptekst bewerkt en de voettekst vervangt in diagrambestanden
-  met GroupDocs.Watermark voor Java. Volg deze stapsgewijze handleiding.
+date: '2026-02-16'
+description: Leer hoe je diagramkoppen in Java kunt bewerken en een watermerk aan
+  een diagram kunt toevoegen met GroupDocs.Watermark voor Java. Volg deze stapsgewijze
+  handleiding om je documenten te verbeteren.
 keywords:
 - edit diagram headers footers
 - groupdocs watermark java
 - diagram document watermarking
-title: Hoe de koptekst bewerken in Java-diagrammen met GroupDocs.Watermark
+title: Diagramkoppen bewerken in Java met GroupDocs.Watermark
 type: docs
 url: /nl/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Hoe Header Bewerken in Java Diagrammen met GroupDocs.Watermark
+# Diagramkoppen bewerken Java met GroupDocs.Watermark
 
-In moderne technische documentatie kan het weten **hoe je een header bewerkt** in diagrambestanden je uren handmatig werk besparen. Of je nu een verouderde titel moet verwijderen, een voettekst moet vervangen door branding, of versie‑controlinformatie wilt toevoegen, GroupDocs.Watermark voor Java maakt deze taken eenvoudig. Deze gids leidt je stap voor stap, van het installeren van de bibliotheek tot het aanpassen van headers en footers, en deelt zelfs best‑practice tips voor productiegebruik.
+In moderne technische documentatie en presentaties is **edit diagram headers java** een veelvoorkomende vereiste—of u nu verouderde titels wilt verwijderen, branding wilt invoegen, of moet voldoen aan wettelijke voetteksten. Deze tutorial leidt u door het gebruik van GroupDocs.Watermark voor Java om diagramkoppen en -voetteksten snel en betrouwbaar te bewerken.
 
-## Snelle Antwoorden
-- **Welke bibliotheek verwerkt headerbewerkingen?** GroupDocs.Watermark for Java  
-- **Kan ik een voettekst vervangen door aangepaste tekst?** Ja – gebruik de `setFooterCenter` methode  
-- **Wordt het verwijderen van een header ondersteund?** Absoluut, roep `setHeaderCenter(null)` aan  
-- **Heb ik een licentie nodig voor productie?** Een proefversie werkt voor testen; een betaalde licentie is vereist voor commercieel gebruik  
-- **Welke Java‑versie is vereist?** JDK 8 of hoger  
+## Snelle antwoorden
+- **Welke bibliotheek heb ik nodig?** GroupDocs.Watermark for Java.
+- **Kan ik zowel koppen als voetteksten bewerken?** Ja, de API laat u elk onafhankelijk aanpassen.
+- **Heb ik een licentie nodig?** Een proefversie werkt voor ontwikkeling; een commerciële licentie is vereist voor productie.
+- **Welke diagramformaten worden ondersteund?** Visio (`.vsdx`, `.vsd`), onder andere.
+- **Is batchverwerking mogelijk?** Absoluut—loop door bestanden met dezelfde Watermarker‑logica.
 
-## Wat betekent “hoe header bewerken” in de context van diagrammen?
-Een header bewerken betekent programmatisch toegang krijgen tot de header/footer‑container van het diagram en tekst of afbeeldingen wijzigen, verwijderen of toevoegen. Met GroupDocs.Watermark manipuleer je het `DiagramContent`‑object, dat de onderliggende VSDX‑structuur abstraheert.
+## Wat is “edit diagram headers java”?
+Diagramkoppen bewerken in Java betekent programmatic toegang tot een diagrambestand (bijv. Visio) en het wijzigen of verwijderen van de tekst die bovenaan elke pagina verschijnt. GroupDocs.Watermark biedt een high‑level API die de details van het bestandsformaat abstraheert, zodat u zich kunt concentreren op de bedrijfslogica.
 
-## Waarom GroupDocs.Watermark gebruiken voor header‑ en footermanipulatie?
-- **Volledige formatondersteuning** – werkt met Visio, VSDX en andere diagramtypen.  
-- **Geen UI‑afhankelijkheid** – perfect voor backend‑services, batch‑taken of CI‑pipelines.  
-- **Rijke opmaak** – wijzig lettertype, grootte, kleur en zelfs afbeeldingen insluiten.  
-- **Prestaties‑geoptimaliseerd** – lage geheugenvoetafdruk voor grote batches.
+## Waarom GroupDocs.Watermark gebruiken om een watermerk aan een diagram toe te voegen?
+- **Geen externe afhankelijkheden** – werkt met gewone Java.
+- **Rijke opmaakopties** – lettertypen, kleuren en positionering zijn volledig controleerbaar.
+- **Batch‑klaar** – verwerk tientallen bestanden in één run.
+- **Cross‑format ondersteuning** – dezelfde code werkt voor PDF's, afbeeldingen en Office‑documenten.
 
-## Voorvereisten
-- **Java Development Kit (JDK)** 8 of nieuwer.  
-- **GroupDocs.Watermark for Java** bibliotheek (toegevoegd als Maven‑dependency).  
+## Vereisten
+- **Java Development Kit (JDK)** 8 of nieuwer.
+- **GroupDocs.Watermark for Java** bibliotheek (toegevoegd als Maven‑dependency of handmatig gedownload).
 - Basiskennis van Java bestands‑I/O.
 
-## GroupDocs.Watermark voor Java Instellen
-### Maven‑instelling
-Voeg de repository en dependency toe aan je `pom.xml`‑bestand:
+## GroupDocs.Watermark voor Java instellen
+### Maven‑configuratie
+Voeg de repository en dependency toe aan uw `pom.xml`:
 
 ```xml
 <repositories>
@@ -59,14 +60,14 @@ Voeg de repository en dependency toe aan je `pom.xml`‑bestand:
 </dependencies>
 ```
 
-### Directe Download
-Of download de nieuwste JAR van [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Directe download
+U kunt ook de nieuwste JAR downloaden van [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Licentie‑verwerving
-Om zonder evaluatielimieten te draaien, verkrijg een licentie via de [licentiepagina](https://purchase.groupdocs.com/temporary-license/). Een proef‑sleutel werkt voor ontwikkeling en testen.
+### Licentie‑acquisitie
+Om zonder evaluatielimieten te draaien, verkrijgt u een licentie via de [licentiepagina](https://purchase.groupdocs.com/temporary-license/). Een gratis proefversie is voldoende voor experimenten.
 
-### De Watermarker Initialiseren
-De volgende code‑fragment toont de minimale code die nodig is om een `Watermarker`‑instantie voor een diagrambestand te maken:
+## De Watermarker initialiseren
+De eerste stap is het aanmaken van een `Watermarker`‑instantie die naar uw diagrambestand wijst:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -82,12 +83,9 @@ public class InitializeWatermarker {
 }
 ```
 
-## Implementatie‑gids
-### Watermarker Laden en Initialiseren
-**Hoe header bewerken** begint met het laden van het diagram in het geheugen.
-
-#### Stap 1: DiagramLoadOptions Aanmaken
-Als je aangepast laadgedrag nodig hebt (bijv. wachtwoord‑beveiligde bestanden), configureer dan `DiagramLoadOptions`:
+## Watermarker laden en initialiseren met aangepaste opties
+### Stap 1: Maak DiagramLoadOptions
+U kunt fijn afstellen hoe het diagram wordt geladen met `DiagramLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.options.DiagramLoadOptions;
@@ -95,8 +93,8 @@ import com.groupdocs.watermark.options.DiagramLoadOptions;
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 ```
 
-#### Stap 2: Document Laden
-Geef de opties door aan de `Watermarker`‑constructor:
+### Stap 2: Laad het document
+Geef de opties door bij het construeren van de `Watermarker`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -104,11 +102,9 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-### Hoe Header Verwijderen uit Diagram
-Het verwijderen van een bestaande header is vaak nodig wanneer de oorspronkelijke titel niet meer relevant is.
-
-#### Stap 1: Diagraminhoud Toegang
-Haal het content‑object op dat header/footer‑besturingen blootlegt:
+## Header uit diagram verwijderen
+### Stap 1: Toegang tot diagraminhoud
+Haal het content‑object op dat u directe toegang geeft tot de header/footer‑secties:
 
 ```java
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -116,18 +112,16 @@ import com.groupdocs.watermark.contents.DiagramContent;
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 ```
 
-#### Stap 2: Header Verwijderen
-Stel de centrale header‑slot in op `null`. Dit verwijdert de header effectief:
+### Stap 2: Header verwijderen
+Het instellen van de header‑center op `null` verwijdert de header volledig:
 
 ```java
 content.getHeaderFooter().setHeaderCenter(null);
 ```
 
-### Hoe Voettekst Vervangen in Diagram
-Het vervangen van een voettekst stelt je in staat **een branding‑voettekst toe te voegen** of versie‑informatie in te voegen.
-
-#### Stap 1: Nieuwe Voettekst Instellen
-Geef de nieuwe voettekst‑string op:
+## Footer in diagram vervangen
+### Stap 1: Nieuwe footer‑tekst instellen
+U kunt de bestaande footer vervangen door een aangepaste tekenreeks:
 
 ```java
 import com.groupdocs.watermark.watermarks.Color;
@@ -135,8 +129,8 @@ import com.groupdocs.watermark.watermarks.Color;
 content.getHeaderFooter().setFooterCenter("New Footer Text");
 ```
 
-#### Stap 2: Lettertype‑eigenschappen Aanpassen
-Pas grootte, familie en kleur aan om overeen te komen met je bedrijfsstijl:
+### Stap 2: Lettertype‑eigenschappen aanpassen
+Pas grootte, familie en kleur aan om bij uw branding te passen:
 
 ```java
 content.getHeaderFooter().getFont().setSize(19);
@@ -144,68 +138,70 @@ content.getHeaderFooter().getFont().setFamilyName("Calibri");
 content.getHeaderFooter().setTextColor(Color.getRed());
 ```
 
-> **Pro tip:** Gebruik `setFooterCenter` samen met `setFooterLeft` of `setFooterRight` om een logo aan één kant te plaatsen en versie‑gegevens aan de andere, waardoor **versiebeheer‑voetteksten** ontstaan.
-
-### Opslaan en Watermarker Sluiten
-Na bewerken, sla de wijzigingen op en maak bronnen vrij.
-
-#### Stap 1: Wijzigingen Opslaan
-Kies een uitvoerpad dat verschilt van het bronbestand:
+## Watermarker opslaan en sluiten
+### Stap 1: Wijzigingen opslaan
+Schrijf het aangepaste diagram naar een nieuw bestand:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output.vsdx");
 ```
 
-#### Stap 2: Watermarker Sluiten
-Sluit altijd om geheugen vrij te maken, vooral in batch‑scenario's:
+### Stap 2: Watermarker sluiten
+Sluit de instantie altijd om native resources vrij te geven:
 
 ```java
 watermarker.close();
 ```
 
-## Praktische Toepassingen
-1. **Documenten Brandmerken** – Voeg een bedrijfslogo of slogan toe aan de voettekst (`add branding footer`).  
-2. **Versiebeheer‑voetteksten** – Voeg versienummers of revisiedata toe aan de voettekst voor audit‑trails.  
-3. **Juridische Naleving** – Voeg verplichte disclaimer‑tekst toe aan de voettekst in alle diagrammen.
+## Praktische toepassingen
+1. **Documenten branden** – Voeg bedrijfslogo's of slogans toe in koppen/voetteksten.
+2. **Versiebeheer** – Voeg automatisch versienummers of datums toe.
+3. **Juridische naleving** – Voeg verplichte disclaimer‑tekst toe aan elk diagram.
 
 ## Prestatie‑overwegingen
-- **Geheugenverbruik Optimaliseren** – Verwerk diagrammen één voor één of gebruik streaming waar mogelijk.  
-- **Batchverwerking** – Loop door een lijst met bestanden, hergebruik een enkele `Watermarker`‑instantie wanneer veilig.  
-- **Foutafhandeling** – Plaats bestandsbewerkingen in `try‑catch`‑blokken om `IOException` of `WatermarkerException` te vangen.
+- **Geheugengebruik optimaliseren** – Vernietig `Watermarker`‑objecten tijdig.
+- **Batchverwerking** – Loop door een map met diagrammen om dezelfde header/footer‑logica toe te passen.
+- **Foutafhandeling** – Plaats bestandsbewerkingen in `try‑catch`‑blokken om `IOException` of `WatermarkException` op te vangen.
+
+## Veelvoorkomende problemen & oplossingen
+| Probleem | Waarom het gebeurt | Hoe op te lossen |
+|----------|--------------------|------------------|
+| **Header niet verwijderd** | Het diagram gebruikt een andere header‑regio (links/rechts). | Gebruik `setHeaderLeft(...)` of `setHeaderRight(...)` indien nodig. |
+| **Lettertype‑wijzigingen niet zichtbaar** | Het diagram overschrijft lettertype‑instellingen met een stijlblad. | Roep `content.getHeaderFooter().getFont().setBold(true)` aan of pas de stijlhiërarchie aan. |
+| **Licentie niet herkend** | Pad naar licentiebestand is onjuist. | Plaats `license.lic` in de project‑root en laad het met `License license = new License(); license.setLicense("license.lic");` vóór het aanmaken van `Watermarker`. |
+
+## Veelgestelde vragen
+
+**Q: Kan ik zowel koppen als voetteksten in dezelfde run bewerken?**  
+A: Ja—roep simpelweg de juiste `setHeader...` en `setFooter...` methoden aan vóór het opslaan.
+
+**Q: Ondersteunt GroupDocs.Watermark wachtwoord‑beveiligde diagrammen?**  
+A: Ja. Geef het wachtwoord op in `DiagramLoadOptions.setPassword("yourPassword")`.
+
+**Q: Is het mogelijk om een afbeelding‑watermerk toe te voegen samen met header/footer‑wijzigingen?**  
+A: Absoluut. Gebruik `watermarker.add(watermark)` waarbij `watermark` een instantie is van `ImageWatermark`.
+
+**Q: Hoe groot een diagram kan ik verwerken?**  
+A: De bibliotheek kan bestanden tot enkele honderden megabytes aan; houd de JVM‑heap in de gaten en vergroot deze indien nodig.
+
+**Q: Zijn er beperkingen in de gratis proefversie?**  
+A: De proefversie biedt volledige functionaliteit maar kan een watermerk toevoegen dat aangeeft dat het een proefversie is.
 
 ## Conclusie
-Je weet nu **hoe je een header bewerkt**, **hoe je een header verwijdert**, en **hoe je een voettekst vervangt** in diagrambestanden met behulp van GroupDocs.Watermark voor Java. Door de bovenstaande stappen te volgen, kun je branding automatiseren, versiebeheer afdwingen en je documentatie consistent houden over grote projecten.
+U heeft nu een volledige, productie‑klare workflow om **edit diagram headers java** en zelfs **add watermark to diagram** te gebruiken met GroupDocs.Watermark. Door de bovenstaande stappen te volgen, kunt u branding, versiebeheer en naleving automatiseren over grote sets diagram‑bestanden.
 
-Voel je vrij om extra watermerk‑functies te verkennen — zoals afbeelding‑watermerken of dynamische tekst — door de officiële documentatie te bekijken en je resultaten te delen op het community‑forum.
+Om uw expertise verder uit te breiden, verken andere watermerk‑functies zoals afbeelding‑watermerken, tekst‑watermerken en batch‑verwerkingspatronen. Deel uw ervaringen op het community‑forum!
 
-## Veelgestelde Vragen
+**Bronnen**  
+- [GroupDocs.Watermark Documentatie](https://docs.groupdocs.com/watermark/java/)  
+- [API‑referentie](https://reference.groupdocs.com/watermark/java)  
+- [Download GroupDocs.Watermark voor Java](https://releases.groupdocs.com/watermark/java/)  
+- [GitHub‑repository](https://github.com/groupdocs-watermark/GroupDocs.Wat)  
+- [GroupDocs‑forums](https://forum.groupdocs.com/c/watermark/10)
 
-**Q: Wat is GroupDocs.Watermark for Java?**  
-A: Een krachtige bibliotheek die je in staat stelt watermerken, headers en footers toe te voegen, te bewerken of te verwijderen uit een breed scala aan documenttypen, inclusief diagrammen.
-
-**Q: Kan ik het gebruiken met bestandsformaten anders dan VSDX?**  
-A: Ja, de bibliotheek ondersteunt PDF’s, afbeeldingen, Office‑bestanden en meer.
-
-**Q: Zijn er kosten verbonden aan de bibliotheek?**  
-A: Een gratis proefversie is beschikbaar; een betaalde licentie is vereist voor productie‑implementaties.
-
-**Q: Hoe moet ik fouten afhandelen bij het laden van een diagram?**  
-A: Plaats de laadcode in een `try‑catch`‑blok en log de details van `WatermarkerException` voor probleemoplossing.
-
-**Q: Kan ik het lettertype en de kleur van de voettekst aanpassen?**  
-A: Absoluut — gebruik `getFont().setSize()`, `setFamilyName()` en `setTextColor()` zoals getoond in het voorbeeld.
-
-**Q: Waar kan ik de community om hulp vragen?**  
-A: Plaats vragen op de [GroupDocs forums](https://forum.groupdocs.com/c/watermark/10).
-
-**Aanvullende Bronnen**
-- [GroupDocs.Watermark Documentatie](https://docs.groupdocs.com/watermark/java/)
-- [API‑referentie](https://reference.groupdocs.com/watermark/java)
-- [Download GroupDocs.Watermark voor Java](https://releases.groupdocs.com/watermark/java/)
-- [GitHub‑repository](https://github.com/groupdocs-watermark/GroupDocs.Wat)
 
 ---
 
-**Laatst Bijgewerkt:** 2025-12-17  
-**Getest Met:** GroupDocs.Watermark 24.11 voor Java  
-**Auteur:** GroupDocs
+**Laatst bijgewerkt:** 2026-02-16  
+**Getest met:** GroupDocs.Watermark 24.11 for Java  
+**Auteur:** GroupDocs  

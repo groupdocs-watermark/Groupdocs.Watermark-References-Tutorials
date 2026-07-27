@@ -1,45 +1,46 @@
 ---
-date: '2025-12-17'
-description: Tìm hiểu cách chỉnh sửa tiêu đề và cách thay thế chân trang trong các
-  tệp sơ đồ bằng GroupDocs.Watermark cho Java. Hãy làm theo hướng dẫn từng bước này.
+date: '2026-02-16'
+description: Tìm hiểu cách chỉnh sửa tiêu đề sơ đồ Java và thêm watermark vào sơ đồ
+  bằng GroupDocs.Watermark cho Java. Hãy làm theo hướng dẫn từng bước này để nâng
+  cao tài liệu của bạn.
 keywords:
 - edit diagram headers footers
 - groupdocs watermark java
 - diagram document watermarking
-title: Cách chỉnh sửa đầu trang trong biểu đồ Java bằng GroupDocs.Watermark
+title: Chỉnh sửa tiêu đề sơ đồ Java bằng GroupDocs.Watermark
 type: docs
 url: /vi/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Cách chỉnh sửa Header trong sơ đồ Java với GroupDocs.Watermark
+# Chỉnh sửa tiêu đề biểu đồ Java với GroupDocs.Watermark
 
-Trong tài liệu kỹ thuật hiện đại, việc biết **cách chỉnh sửa header** trong các tệp sơ đồ có thể giúp bạn tiết kiệm hàng giờ công việc thủ công. Cho dù bạn cần xóa tiêu đề lỗi thời, thay thế footer bằng thương hiệu, hoặc thêm thông tin kiểm soát phiên bản, GroupDocs.Watermark cho Java giúp thực hiện các nhiệm vụ này một cách đơn giản. Hướng dẫn này sẽ dẫn bạn qua từng bước, từ cài đặt thư viện đến tùy chỉnh header và footer, và thậm chí chia sẻ các mẹo thực tiễn cho môi trường sản xuất.
+Trong tài liệu kỹ thuật và bài thuyết trình hiện đại, **edit diagram headers java** là một yêu cầu thường gặp—cho dù bạn cần loại bỏ tiêu đề lỗi thời, chèn thương hiệu, hoặc tuân thủ các chân trang pháp lý. Hướng dẫn này sẽ chỉ cho bạn cách sử dụng GroupDocs.Watermark cho Java để chỉnh sửa tiêu đề và chân trang của biểu đồ một cách nhanh chóng và đáng tin cậy.
 
 ## Câu trả lời nhanh
-- **Thư viện nào xử lý việc chỉnh sửa header?** GroupDocs.Watermark cho Java  
-- **Tôi có thể thay thế footer bằng văn bản tùy chỉnh không?** Có – sử dụng phương thức `setFooterCenter`  
-- **Việc xóa header có được hỗ trợ không?** Chắc chắn, gọi `setHeaderCenter(null)`  
-- **Có cần giấy phép cho môi trường sản xuất không?** Bản dùng thử hoạt động cho việc thử nghiệm; cần giấy phép trả phí cho sử dụng thương mại  
-- **Yêu cầu phiên bản Java nào?** JDK 8 trở lên  
+- **What library do I need?** GroupDocs.Watermark for Java.
+- **Can I edit both headers and footers?** Yes, the API lets you modify each independently.
+- **Do I need a license?** A trial works for development; a commercial license is required for production.
+- **Which diagram formats are supported?** Visio (`.vsdx`, `.vsd`), among others.
+- **Is batch processing possible?** Absolutely—loop through files with the same Watermarker logic.
 
-## “Cách chỉnh sửa header” trong ngữ cảnh sơ đồ là gì?
-Chỉnh sửa header có nghĩa là truy cập chương trình vào container header/footer của sơ đồ và thay đổi, xóa hoặc thêm văn bản hoặc đồ họa. Với GroupDocs.Watermark, bạn thao tác với đối tượng `DiagramContent`, đối tượng này trừu tượng hoá cấu trúc VSDX bên dưới.
+## “edit diagram headers java” là gì?
+Chỉnh sửa tiêu đề biểu đồ trong Java có nghĩa là truy cập một tệp biểu đồ (ví dụ: Visio) một cách lập trình và thay đổi hoặc loại bỏ văn bản xuất hiện ở đầu mỗi trang. GroupDocs.Watermark cung cấp một API cấp cao trừu tượng hoá các chi tiết định dạng tệp, cho phép bạn tập trung vào logic nghiệp vụ.
 
-## Tại sao nên dùng GroupDocs.Watermark để thao tác header và footer?
-- **Hỗ trợ đầy đủ định dạng** – hoạt động với Visio, VSDX và các loại sơ đồ khác.  
-- **Không phụ thuộc UI** – lý tưởng cho dịch vụ backend, công việc batch, hoặc pipeline CI.  
-- **Định dạng phong phú** – thay đổi phông chữ, kích thước, màu sắc và thậm chí chèn hình ảnh.  
-- **Tối ưu hiệu năng** – tiêu thụ bộ nhớ thấp cho các batch lớn.  
+## Tại sao nên sử dụng GroupDocs.Watermark để thêm watermark vào biểu đồ?
+- **No external dependencies** – hoạt động với Java thuần.
+- **Rich styling options** – phông chữ, màu sắc và vị trí có thể kiểm soát hoàn toàn.
+- **Batch‑ready** – xử lý hàng chục tệp trong một lần chạy.
+- **Cross‑format support** – cùng một đoạn mã hoạt động cho PDF, hình ảnh và tài liệu Office.
 
 ## Yêu cầu trước
-- **Java Development Kit (JDK)** 8 hoặc mới hơn.  
-- Thư viện **GroupDocs.Watermark cho Java** (được thêm dưới dạng phụ thuộc Maven).  
-- Kiến thức cơ bản về I/O trong Java.  
+- **Java Development Kit (JDK)** 8 hoặc mới hơn.
+- **GroupDocs.Watermark for Java** library (added as a Maven dependency or downloaded manually).
+- Kiến thức cơ bản về Java file I/O.
 
 ## Cài đặt GroupDocs.Watermark cho Java
 ### Cài đặt Maven
-Thêm kho và phụ thuộc vào tệp `pom.xml` của bạn:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -62,11 +63,11 @@ Thêm kho và phụ thuộc vào tệp `pom.xml` của bạn:
 ### Tải trực tiếp
 Hoặc tải JAR mới nhất từ [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Mua giấy phép
-Để chạy không bị giới hạn đánh giá, lấy giấy phép từ [trang giấy phép](https://purchase.groupdocs.com/temporary-license/). Khóa dùng thử hoạt động cho phát triển và thử nghiệm.
+### Nhận giấy phép
+Để chạy mà không bị giới hạn đánh giá, hãy lấy giấy phép từ [license page](https://purchase.groupdocs.com/temporary-license/). Bản dùng thử miễn phí đủ cho việc thử nghiệm.
 
-### Khởi tạo Watermarker
-Đoạn mã dưới đây cho thấy cách tạo một thể hiện `Watermarker` tối thiểu cho tệp sơ đồ:
+## Khởi tạo Watermarker
+The first step is to create a `Watermarker` instance that points to your diagram file:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -82,12 +83,9 @@ public class InitializeWatermarker {
 }
 ```
 
-## Hướng dẫn triển khai
-### Tải và khởi tạo Watermarker
-**Cách chỉnh sửa header** bắt đầu bằng việc tải sơ đồ vào bộ nhớ.
-
-#### Bước 1: Tạo DiagramLoadOptions
-Nếu bạn cần hành vi tải tùy chỉnh (ví dụ: tệp được bảo vệ bằng mật khẩu), cấu hình `DiagramLoadOptions`:
+## Tải và Khởi tạo Watermarker với Tùy chọn Tùy chỉnh
+### Bước 1: Tạo DiagramLoadOptions
+You can fine‑tune how the diagram is loaded by using `DiagramLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.options.DiagramLoadOptions;
@@ -95,8 +93,8 @@ import com.groupdocs.watermark.options.DiagramLoadOptions;
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 ```
 
-#### Bước 2: Tải tài liệu
-Chuyển các tùy chọn vào hàm khởi tạo `Watermarker`:
+### Bước 2: Tải tài liệu
+Pass the options when constructing the `Watermarker`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -104,11 +102,9 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-### Cách xóa Header trong sơ đồ
-Việc xóa một header hiện có thường cần thiết khi tiêu đề gốc không còn phù hợp.
-
-#### Bước 1: Truy cập Diagram Content
-Lấy đối tượng nội dung cung cấp các điều khiển header/footer:
+## Xóa tiêu đề khỏi biểu đồ
+### Bước 1: Truy cập nội dung biểu đồ
+Retrieve the content object that gives you direct access to header/footer sections:
 
 ```java
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -116,18 +112,16 @@ import com.groupdocs.watermark.contents.DiagramContent;
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 ```
 
-#### Bước 2: Xóa Header
-Đặt vị trí header trung tâm thành `null`. Điều này sẽ xóa header:
+### Bước 2: Xóa tiêu đề
+Setting the header center to `null` removes the header entirely:
 
 ```java
 content.getHeaderFooter().setHeaderCenter(null);
 ```
 
-### Cách thay thế Footer trong sơ đồ
-Thay thế footer cho phép bạn **thêm footer thương hiệu** hoặc chèn thông tin phiên bản.
-
-#### Bước 1: Đặt văn bản Footer mới
-Cung cấp chuỗi footer mới:
+## Thay thế chân trang trong biểu đồ
+### Bước 1: Đặt văn bản chân trang mới
+You can replace the existing footer with any custom string:
 
 ```java
 import com.groupdocs.watermark.watermarks.Color;
@@ -135,8 +129,8 @@ import com.groupdocs.watermark.watermarks.Color;
 content.getHeaderFooter().setFooterCenter("New Footer Text");
 ```
 
-#### Bước 2: Tùy chỉnh thuộc tính phông chữ
-Điều chỉnh kích thước, họ phông và màu sắc để phù hợp với phong cách công ty:
+### Bước 2: Tùy chỉnh thuộc tính phông chữ
+Adjust size, family, and color to match your branding:
 
 ```java
 content.getHeaderFooter().getFont().setSize(19);
@@ -144,69 +138,69 @@ content.getHeaderFooter().getFont().setFamilyName("Calibri");
 content.getHeaderFooter().setTextColor(Color.getRed());
 ```
 
-> **Mẹo chuyên nghiệp:** Sử dụng `setFooterCenter` cùng với `setFooterLeft` hoặc `setFooterRight` để đặt logo ở một phía và dữ liệu phiên bản ở phía kia, tạo ra **footer kiểm soát phiên bản**.
-
-### Lưu và đóng Watermarker
-Sau khi chỉnh sửa, lưu các thay đổi và giải phóng tài nguyên.
-
-#### Bước 1: Lưu thay đổi
-Chọn đường dẫn đầu ra khác với tệp nguồn:
+## Lưu và Đóng Watermarker
+### Bước 1: Lưu thay đổi
+Write the modified diagram to a new file:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output.vsdx");
 ```
 
-#### Bước 2: Đóng Watermarker
-Luôn đóng để giải phóng bộ nhớ, đặc biệt trong các kịch bản batch:
+### Bước 2: Đóng Watermarker
+Always close the instance to free native resources:
 
 ```java
 watermarker.close();
 ```
 
 ## Ứng dụng thực tiễn
-1. **Tài liệu thương hiệu** – Chèn logo công ty hoặc khẩu hiệu vào footer (`add branding footer`).  
-2. **Footer kiểm soát phiên bản** – Thêm số phiên bản hoặc ngày sửa đổi vào footer để theo dõi audit.  
-3. **Tuân thủ pháp lý** – Thêm văn bản từ chối trách nhiệm bắt buộc vào footer trên tất cả các sơ đồ.  
+1. **Branding Documents** – Chèn logo công ty hoặc khẩu hiệu trong tiêu đề/chân trang.
+2. **Version Control** – Tự động thêm số phiên bản hoặc ngày tháng.
+3. **Legal Compliance** – Thêm văn bản từ chối trách nhiệm bắt buộc vào mọi biểu đồ.
 
-## Cân nhắc về hiệu năng
-- **Tối ưu sử dụng bộ nhớ** – Xử lý sơ đồ từng cái một hoặc dùng streaming khi có thể.  
-- **Xử lý batch** – Lặp qua danh sách tệp, tái sử dụng một thể hiện `Watermarker` duy nhất khi an toàn.  
-- **Xử lý lỗi** – Bao bọc các thao tác file trong khối `try‑catch` để bắt `IOException` hoặc `WatermarkerException`.  
+## Các yếu tố hiệu năng
+- **Optimize Memory Usage** – Giải phóng các đối tượng `Watermarker` kịp thời.
+- **Batch Processing** – Lặp qua một thư mục các biểu đồ để áp dụng cùng logic tiêu đề/chân trang.
+- **Error Handling** – Bao bọc các thao tác file trong khối `try‑catch` để bắt `IOException` hoặc `WatermarkException`.
 
-## Kết luận
-Bây giờ bạn đã biết **cách chỉnh sửa header**, **cách xóa header**, và **cách thay thế footer** trong các tệp sơ đồ bằng GroupDocs.Watermark cho Java. Thực hiện các bước trên, bạn có thể tự động hoá việc thương hiệu, thực thi kiểm soát phiên bản, và giữ tài liệu nhất quán trong các dự án lớn.
-
-Hãy tự do khám phá các tính năng watermark bổ sung—như watermark hình ảnh hoặc văn bản động—bằng cách tham khảo tài liệu chính thức và chia sẻ kết quả của bạn trên diễn đàn cộng đồng.
+## Các vấn đề thường gặp & Giải pháp
+| Vấn đề | Tại sao xảy ra | Cách khắc phục |
+|-------|----------------|----------------|
+| **Header not removed** | Biểu đồ sử dụng vùng tiêu đề khác (trái/phải). | Sử dụng `setHeaderLeft(...)` hoặc `setHeaderRight(...)` khi cần. |
+| **Font changes not visible** | Biểu đồ ghi đè cài đặt phông chữ bằng một bảng kiểu. | Gọi `content.getHeaderFooter().getFont().setBold(true)` hoặc điều chỉnh thứ tự kiểu. |
+| **License not recognized** | Đường dẫn tệp giấy phép không đúng. | Đặt `license.lic` trong thư mục gốc của dự án và tải nó bằng `License license = new License(); license.setLicense("license.lic");` trước khi tạo `Watermarker`. |
 
 ## Câu hỏi thường gặp
 
-**Q: GroupDocs.Watermark cho Java là gì?**  
-A: Một thư viện mạnh mẽ cho phép bạn thêm, chỉnh sửa hoặc xóa watermark, header và footer từ nhiều loại tài liệu, bao gồm cả sơ đồ.
+**Q: Tôi có thể chỉnh sửa cả tiêu đề và chân trang trong cùng một lần chạy không?**  
+A: Có—chỉ cần gọi các phương thức `setHeader...` và `setFooter...` thích hợp trước khi lưu.
 
-**Q: Tôi có thể dùng nó với các định dạng file khác ngoài VSDX không?**  
-A: Có, thư viện hỗ trợ PDF, hình ảnh, file Office và nhiều định dạng khác.
+**Q: GroupDocs.Watermark có hỗ trợ biểu đồ được bảo mật bằng mật khẩu không?**  
+A: Có. Cung cấp mật khẩu trong `DiagramLoadOptions.setPassword("yourPassword")`.
 
-**Q: Có chi phí nào liên quan đến thư viện không?**  
-A: Có bản dùng thử miễn phí; cần mua giấy phép trả phí cho triển khai sản xuất.
+**Q: Có thể thêm watermark hình ảnh cùng với việc thay đổi tiêu đề/chân trang không?**  
+A: Chắc chắn. Sử dụng `watermarker.add(watermark)` trong đó `watermark` là một thể hiện của `ImageWatermark`.
 
-**Q: Tôi nên xử lý lỗi như thế nào khi tải sơ đồ?**  
-A: Bao bọc mã tải trong khối `try‑catch` và ghi log chi tiết `WatermarkerException` để khắc phục.
+**Q: Tôi có thể xử lý biểu đồ có kích thước bao nhiêu?**  
+A: Thư viện có thể xử lý các tệp lên tới vài trăm megabyte; theo dõi bộ nhớ heap của JVM và tăng nó nếu cần.
 
-**Q: Tôi có thể tùy chỉnh phông chữ và màu sắc của footer không?**  
-A: Chắc chắn—sử dụng `getFont().setSize()`, `setFamilyName()` và `setTextColor()` như trong ví dụ.
+**Q: Có bất kỳ giới hạn nào trong bản dùng thử miễn phí không?**  
+A: Bản dùng thử cho phép đầy đủ chức năng nhưng có thể chèn watermark chỉ ra rằng đây là phiên bản dùng thử.
 
-**Q: Tôi có thể hỏi cộng đồng để được hỗ trợ ở đâu?**  
-A: Đăng câu hỏi trên [GroupDocs forums](https://forum.groupdocs.com/c/watermark/10).
+## Kết luận
+Bạn đã có một quy trình hoàn chỉnh, sẵn sàng cho sản xuất để **edit diagram headers java** và thậm chí **add watermark to diagram** bằng cách sử dụng GroupDocs.Watermark. Bằng cách thực hiện các bước trên, bạn có thể tự động hoá việc gắn thương hiệu, phiên bản và tuân thủ trên một lượng lớn các tệp biểu đồ.
 
-**Tài nguyên bổ sung**
-
-- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
-- [API Reference](https://reference.groupdocs.com/watermark/java)  
-- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Wat)  
+Để tiếp tục mở rộng kiến thức, hãy khám phá các tính năng watermark khác như watermark hình ảnh, watermark văn bản và các mẫu xử lý hàng loạt. Chia sẻ trải nghiệm của bạn trên diễn đàn cộng đồng!
 
 ---
 
-**Cập nhật lần cuối:** 2025-12-17  
-**Kiểm tra với:** GroupDocs.Watermark 24.11 cho Java  
-**Tác giả:** GroupDocs
+**Cập nhật lần cuối:** 2026-02-16  
+**Kiểm thử với:** GroupDocs.Watermark 24.11 for Java  
+**Tác giả:** GroupDocs  
+
+**Tài nguyên**  
+- [Tài liệu GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
+- [Tham chiếu API](https://reference.groupdocs.com/watermark/java)  
+- [Tải xuống GroupDocs.Watermark cho Java](https://releases.groupdocs.com/watermark/java/)  
+- [Kho GitHub](https://github.com/groupdocs-watermark/GroupDocs.Wat)  
+- [Diễn đàn GroupDocs](https://forum.groupdocs.com/c/watermark/10)

@@ -1,50 +1,45 @@
 ---
-date: '2025-12-17'
-description: Naučte se, jak přidat vodoznak na konkrétní stránku diagramu pomocí GroupDocs.Watermark
-  pro Javu, přidat vodoznak do diagramu a přidat obrázkový vodoznak v Javě. Krok za
-  krokem průvodce, jak chránit vaše duševní vlastnictví.
+date: '2026-02-16'
+description: Naučte se, jak vodoznakovat konkrétní stránku diagramu pomocí GroupDocs.Watermark
+  pro Javu, včetně toho, jak přidat obrázkový vodoznak v Javě a chránit své soubory.
 keywords:
 - GroupDocs Watermark Java
 - adding watermarks diagrams
 - Java diagram document watermarking
-title: Vodoznak konkrétní stránky diagramu pomocí GroupDocs.Watermark pro Javu
+title: Vodoznak konkrétní stránky diagramu pomocí GroupDocs.Watermark pro Java
 type: docs
 url: /cs/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/
 weight: 1
 ---
 
-# Vodoznak konkrétní stránky diagramu pomocí GroupDocs.Watermark pro Java
+# Vodoznak konkrétní stránky diagramu pomocí GroupDocs.Watermark for Java
 
-Ochrana vašich diagramů je zásadní, zejména když jde o zabezpečení duševního vlastnictví nebo zajištění řádného přiřazení. V tomto tutoriálu se naučíte **jak přidat vodoznak na konkrétní stránku diagramu** pomocí GroupDocs.Watermark pro Java, ať už potřebujete **přidat vodoznak do diagramu** jako text nebo **přidat obrázkový vodoznak java**‑stylové loga. Na konci tohoto průvodce budete schopni:
-
-- Bez problémů přidávat textové vodoznaky na vybrané stránky diagramu.  
-- Vkládat obrázkové vodoznaky do určených částí diagramů.  
-- Zvýšit výkon při používání GroupDocs.Watermark.
-
-Ujistěme se, že je prostředí připravené, než se ponoříme do kódu.
+Ochrana vašich diagramů je zásadní, zejména když potřebujete **watermark specific diagram page** pro bezpečnost duševního vlastnictví nebo přiřazení značky. V tomto tutoriálu se krok za krokem naučíte, jak přidat textové i obrazové vodoznaky na vybrané stránky souboru diagramu pomocí **GroupDocs.Watermark for Java**. Na konci budete připraveni zabezpečit své diagramy a přesně kontrolovat, kde se každý vodoznak zobrazí.
 
 ## Rychlé odpovědi
-- **Co znamená „watermark specific diagram page“?** Jedná se o aplikaci vodoznaku pouze na vybrané stránky souboru diagramu, zatímco ostatní stránky zůstávají nedotčeny.  
-- **Jaká verze knihovny je vyžadována?** GroupDocs.Watermark 24.11 nebo novější.  
-- **Mohu použít textové i obrázkové vodoznaky na stejné stránce?** Ano – zavolejte `watermarker.add()` pro každý typ vodoznaku.  
-- **Potřebuji licenci pro vývoj?** Dočasná zkušební licence funguje pro testování; pro produkci je vyžadována plná licence.  
-- **Je Maven jediný způsob, jak přidat knihovnu?** Ne – můžete také stáhnout JAR přímo (viz „Direct Download“ níže).
+- **Jaký je hlavní účel?** Přidávat vodoznaky na vybrané stránky diagramu.  
+- **Která knihovna je vyžadována?** GroupDocs.Watermark for Java (Maven nebo přímé stažení).  
+- **Mohu v Java přidat obrazový vodoznak?** Ano – použijte `ImageWatermark` s možnostmi specifickými pro stránku.  
+- **Potřebuji licenci?** Dočasná zkušební licence funguje pro testování; plná licence je vyžadována pro produkci.  
+- **Kolik řádků kódu?** Méně než 30 řádků pro kompletní workflow text + obrazový vodoznak.
 
 ## Co je „watermark specific diagram page“?
-Operace **watermark specific diagram page** cílí na jednu stránku (nebo sadu stránek) uvnitř dokumentu diagramu (např. Visio *.vsdx*) a překryje ji textovou nebo obrázkovou vrstvou. To je užitečné pro důvěrné koncepty, branding nebo upozornění na autorská práva, aniž by se měnil celý soubor.
+A **watermark specific diagram page** znamená aplikaci vizuálního značky — textu nebo obrázku — pouze na stránky, které si vyberete v rámci více‑stránkového diagramu (např. Visio . vsdx). To vám poskytuje detailní kontrolu nad značkováním, upozorněními na důvěrnost nebo prohlášením o autorských právech, aniž by to ovlivnilo celý dokument.
 
-## Proč používat GroupDocs.Watermark pro Java?
-GroupDocs.Watermark poskytuje vysoce úrovňové API, které abstrahuje složitosti formátů diagramů, podporuje dávkové zpracování a nabízí jemnozrnné řízení průhlednosti, umístění a výběru stránek. Navíc se hladce integruje s Mavenem a standardními nástroji pro sestavování Java.
+## Proč používat GroupDocs.Watermark for Java?
+- **Full page control** – cílit na libovolný index stránky, který potřebujete.  
+- **Rich styling** – písma, barvy, neprůhlednost, rotace a škálování obrázku jsou všechny konfigurovatelné.  
+- **Performance‑optimized** – efektivně zpracovává velké diagramy a hladce se integruje s Maven buildy.  
+- **Cross‑format support** – funguje s Visio, SVG a mnoha dalšími formáty diagramů.
 
 ## Předpoklady
-- **GroupDocs.Watermark pro Java** verze 24.11 nebo novější nainstalovaná.  
-- Vývojové prostředí s Mavenem (nebo možností přidat JAR ručně).  
-- Základní znalost Javy a přístup k souborovému systému.  
+- **GroupDocs.Watermark for Java** knihovna verze 24.11 nebo novější.  
+- Maven nebo přímé stažení JAR souboru.  
+- Základní nastavení vývoje v Javě (doporučeno JDK 8+).  
 
-## Nastavení GroupDocs.Watermark pro Java
-
-### Použití Maven
-Přidejte GroupDocs.Watermark do svého projektu pomocí Mavenu vložením následujícího do souboru `pom.xml`:
+## Nastavení GroupDocs.Watermark for Java
+### Použití Maven groupdocs watermark
+Zahrňte GroupDocs.Watermark do svého projektu pomocí Maven přidáním následujícího do souboru `pom.xml`:
 
 ```xml
 <repositories>
@@ -65,23 +60,25 @@ Přidejte GroupDocs.Watermark do svého projektu pomocí Mavenu vložením násl
 ```
 
 ### Přímé stažení
-Alternativně si stáhněte nejnovější verzi přímo z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternativně stáhněte nejnovější verzi přímo z [vydání GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/).
 
 #### Získání licence
-Začněte s bezplatnou zkušební licencí stažením dočasné licence. Možnosti zakoupení jsou k dispozici na jejich oficiálním webu, pokud se rozhodnete pokračovat v používání GroupDocs.Watermark.
+Začněte s bezplatnou zkušební verzí stažením dočasné licence. Možnosti zakoupení jsou k dispozici na jejich oficiálních stránkách, pokud se rozhodnete nadále používat GroupDocs.Watermark.
 
 ### Základní inicializace a nastavení
-Jakmile je knihovna k dispozici, vytvořte instanci `Watermarker`, která ukazuje na diagram, který chcete chránit:
+Po instalaci inicializujte třídu `Watermarker` pro operace vodoznakování:
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-## Jak **add watermark to diagram** – Textový vodoznak
+## Průvodce implementací
+### Přidání textového vodoznaku na konkrétní stránku
+Pro přidání textového vodoznaku jej vytvořte a nakonfigurujte před určením cílové stránky.
 
-### Vytvoření textového vodoznaku
-Definujte text, font, barvu a průhlednost, které chcete použít:
+#### Vytvoření textového vodoznaku
+Definujte svůj textový vodoznak s nastavitelným obsahem, stylem písma, velikostí atd.:
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Confidential", new Font("Arial", 18));
@@ -89,48 +86,49 @@ textWatermark.setForegroundColor(Color.BLUE);
 textWatermark.setOpacity(0.5f);
 ```
 
-### Nastavení indexu stránky pro vodoznak
-Určete přesnou stránku, kterou chcete opatřit vodoznakem. Indexy stránek jsou nulové‑základní:
+#### Nastavení indexu stránky pro vodoznak
+Určete, která stránka diagramu bude zobrazovat vodoznak pomocí `DiagramPageWatermarkOptions`:
 
 ```java
 DiagramPageWatermarkOptions textWatermarkOptions = new DiagramPageWatermarkOptions();
 textWatermarkOptions.setPageIndex(0); // First page (index 0)
 ```
 
-### Přidání textového vodoznaku
-Aplikujte vodoznak na vybranou stránku:
+#### Přidání textového vodoznaku
+Přidejte svůj nakonfigurovaný vodoznak do diagramu:
 
 ```java
 watermarker.add(textWatermark, textWatermarkOptions);
 ```
 
-## Jak **add image watermark java** – Obrázkový vodoznak
+### Přidání obrazového vodoznaku na konkrétní stránku
+Postupujte podobně pro obrazové vodoznaky pomocí objektu `ImageWatermark`.
 
-### Vytvoření obrázkového vodoznaku
-Načtěte obrázek, který chcete překrýt (např. firemní logo):
+#### Vytvoření obrazového vodoznaku
+Vytvořte instanci `ImageWatermark` s požadovanou cestou k obrázku vodoznaku:
 
 ```java
 ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
 imageWatermark.setOpacity(0.7f);
 ```
 
-### Nastavení indexu stránky pro obrázkový vodoznak
-Vyberte stránku, na které se obrázkový vodoznak zobrazí:
+#### Nastavení indexu stránky pro vodoznak
+Určete, která stránka má zobrazovat obrazový vodoznak:
 
 ```java
 DiagramPageWatermarkOptions imageWatermarkOptions = new DiagramPageWatermarkOptions();
 imageWatermarkOptions.setPageIndex(1); // Second page (index 1)
 ```
 
-### Přidání obrázkového vodoznaku
-Vložte obrázkový vodoznak na zvolenou stránku:
+#### Přidání obrazového vodoznaku
+Přidejte obrázek na určenou stránku diagramu:
 
 ```java
 watermarker.add(imageWatermark, imageWatermarkOptions);
 ```
 
-## Uložení a uzavření zdrojů
-Po přidání všech požadovaných vodoznaků uložte změny a vyčistěte prostředky:
+### Uložení a uzavření zdrojů
+Nezapomeňte uložit změny a uzavřít zdroje, aby nedocházelo k únikům:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_diagram.vsdx");
@@ -140,58 +138,51 @@ imageWatermark.close();
 ```
 
 ## Praktické aplikace
-- **Zabezpečení dokumentů** – Přidejte štítek „Confidential“ na koncepty diagramů před sdílením s partnery.  
-- **Branding** – Razte své logo na konkrétní stránky technických schémat.  
-- **Ochrana autorských práv** – Vložte upozornění na autorská práva na vysoce hodnotné diagramy, aby se odradilo jejich zneužití.
+- **Document Security** – Použijte důvěrné vodoznaky pouze na stránkách, které obsahují citlivé schémata.  
+- **Branding** – Umístěte logo vaší společnosti na titulní stránku a nechte vnitřní stránky čisté.  
+- **Copyright Protection** – Přidejte upozornění na autorská práva na poslední stránku technického balíčku diagramů.
 
 ## Úvahy o výkonu
-- Spravujte paměť efektivně, zejména u velkých souborů.  
-- Optimalizujte velikosti obrázků před jejich použitím jako vodoznaků, aby se urychlilo zpracování.  
-- Využijte garbage collection v Javě tím, že po uložení uzavřete všechny objekty vodoznaku.
+- **Memory Management** – Po uložení zavřete každý objekt vodoznaku, aby se uvolnily nativní zdroje.  
+- **Image Optimization** – Používejte vhodně velikostní PNG/JPEG soubory, aby zpracování zůstalo rychlé.  
+- **Batch Processing** – Při zpracování mnoha diagramů opakovaně používejte jedinou instanci `Watermarker`, pokud je to možné.
 
 ## Časté problémy a řešení
-| Problém | Pravděpodobná příčina | Oprava |
-|---|---|---|
-| Vodoznak není vidět | Nesprávný index stránky | Ověřte, že nulové‑základní index odpovídá zamýšlené stránce. |
-| Obrázek je zkreslený | Obrázek s vysokým rozlišením | Změňte velikost obrázku na rozumnou dimenzi (např. 300 × 300 px). |
-| Chyba licence v produkci | Používáte pouze zkušební licenci | Použijte plný licenční soubor pomocí `License.setLicense("path/to/license.file")`. |
-| Pomalé zpracování velkých diagramů | Velikost souboru & neuzavřené zdroje | Uzavřete `Watermarker` a jednotlivé objekty vodoznaku okamžitě. |
+| Příznak | Předpokládaná příčina | Řešení |
+|---------|-----------------------|--------|
+| Vodoznak není viditelný | Špatný `pageIndex` (číslování od nuly) | Ověřte, že index odpovídá zamýšlené stránce. |
+| Obrázek je deformovaný | Vysoké rozlišení zdrojového obrázku | Změňte velikost obrázku před vytvořením `ImageWatermark`. |
+| Chyba licence v produkci | Použití zkušební licence po jejím vypršení | Použijte plný licenční soubor pomocí `License.setLicense("path/to/license.json")`. |
 
 ## Často kladené otázky
 
 **Q1: Mohu přidat více vodoznaků na jednu stránku diagramu?**  
-A: Ano, stačí zavolat `watermarker.add()` s různými objekty vodoznaku pro stejnou `DiagramPageWatermarkOptions`.
+A1: Ano, jednoduše zavolejte `watermarker.add()` s různými objekty vodoznaku pro stejný index stránky.
 
-**Q2: Jaké formáty souborů jsou podporovány GroupDocs.Watermark pro Java?**  
-A: Podporuje různé formáty diagramů a obrázků. Kompletní seznam najdete v [API documentation](https://reference.groupdocs.com/watermark/java).
+**Q2: Jaké souborové formáty podporuje GroupDocs.Watermark for Java?**  
+A2: Podporuje různé formáty diagramů a obrázků. Podívejte se na [API dokumentaci](https://reference.groupdocs.com/watermark/java) pro úplný seznam.
 
 **Q3: Jak řešit licenční problémy při používání zkušební verze?**  
-A: Začněte s bezplatnou dočasnou licencí od GroupDocs. Pro produkci zakupte plnou licenci, která odemkne všechny funkce.
+A3: Začněte s bezplatnou dočasnou licencí od GroupDocs. Zakupte plnou licenci pro odemknutí všech funkcí v produkci.
 
 **Q4: Jaké jsou běžné tipy pro odstraňování problémů, pokud se vodoznaky neobjevují podle očekávání?**  
-A: Ujistěte se, že je správný index stránky, ověřte cesty k souborům obrázků a potvrďte, že nastavení průhlednosti není nastaveno na 0.
+A4: Ujistěte se, že je index stránky správný a dvakrát zkontrolujte cesty k souborům obrázků. Také ověřte, že neprůhlednost vodoznaku není nastavena na 0.
 
 **Q5: Jak mohu dále přizpůsobit vzhled vodoznaku?**  
-A: Upravit velikost písma, průhlednost, rotaci a umístění pomocí metod na `TextWatermark` nebo `ImageWatermark`.
-
-**Q6: Je možné vodoznakovat více stránek v jednom volání?**  
-A: Ano – můžete vytvořit instanci `DiagramPageWatermarkOptions`, nastavit seznam indexů stránek a předat ji do `watermarker.add()`.
-
-**Q7: Podporuje GroupDocs.Watermark soubory diagramů chráněné heslem?**  
-A: Ano, můžete před načtením poskytnout heslo pomocí `DiagramLoadOptions.setPassword("yourPassword")`.
+A5: Upravit velikost písma, neprůhlednost, rotaci a umístění pomocí metod dostupných na `TextWatermark` nebo `ImageWatermark`.
 
 ## Zdroje
-- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)
-- [API Reference Guide](https://reference.groupdocs.com/watermark/java)
-- [Download Library](https://releases.groupdocs.com/watermark/java/)
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
-- [Temporary License Information](https://purchase.groupdocs.com/temporary-license/)
+- [Dokumentace GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)
+- [Průvodce referencí API](https://reference.groupdocs.com/watermark/java)
+- [Stáhnout knihovnu](https://releases.groupdocs.com/watermark/java/)
+- [Úložiště na GitHubu](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Bezplatné fórum podpory](https://forum.groupdocs.com/c/watermark/10)
+- [Informace o dočasné licenci](https://purchase.groupdocs.com/temporary-license/)
 
-Prozkoumejte tyto zdroje, abyste prohloubili své znalosti a schopnosti s GroupDocs.Watermark pro Java. Šťastné vodoznakování!
+Prozkoumejte tyto zdroje, abyste prohloubili své znalosti a možnosti práce s GroupDocs.Watermark for Java. Šťastné vodoznakování!
 
 ---
 
-**Poslední aktualizace:** 2025-12-17  
-**Testováno s:** GroupDocs.Watermark 24.11 pro Java  
+**Poslední aktualizace:** 2026-02-16  
+**Testováno s:** GroupDocs.Watermark 24.11 for Java  
 **Autor:** GroupDocs

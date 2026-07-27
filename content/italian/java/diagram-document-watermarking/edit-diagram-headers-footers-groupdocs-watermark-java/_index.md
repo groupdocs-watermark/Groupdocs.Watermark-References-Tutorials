@@ -1,46 +1,46 @@
 ---
-date: '2025-12-17'
-description: Scopri come modificare l'intestazione e come sostituire il piè di pagina
-  nei file diagramma utilizzando GroupDocs.Watermark per Java. Segui questa guida
-  passo passo.
+date: '2026-02-16'
+description: Impara come modificare le intestazioni dei diagrammi in Java e aggiungere
+  una filigrana al diagramma usando GroupDocs.Watermark per Java. Segui questa guida
+  passo passo per migliorare i tuoi documenti.
 keywords:
 - edit diagram headers footers
 - groupdocs watermark java
 - diagram document watermarking
-title: Come modificare l'intestazione nei diagrammi Java con GroupDocs.Watermark
+title: Modifica le intestazioni dei diagrammi Java con GroupDocs.Watermark
 type: docs
 url: /it/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Come modificare l'intestazione nei diagrammi Java con GroupDocs.Watermark
+# Modifica intestazioni diagrammi Java con GroupDocs.Watermark
 
-Nella documentazione tecnica moderna, sapere **come modificare l'intestazione** nei file di diagramma può farti risparmiare ore di lavoro manuale. Che tu debba rimuovere un titolo obsoleto, sostituire un piè di pagina con il branding o aggiungere informazioni di controllo versione, GroupDocs.Watermark per Java rende queste operazioni semplici. Questa guida ti accompagna passo passo, dall'installazione della libreria alla personalizzazione di intestazioni e piè di pagina, e condivide anche consigli di best‑practice per l'uso in produzione.
+Nella documentazione tecnica moderna e nelle presentazioni, **edit diagram headers java** è una necessità frequente—che tu debba rimuovere titoli obsoleti, inserire il branding o rispettare i piè di pagina legali. Questo tutorial ti guida nell'utilizzo di GroupDocs.Watermark per Java per modificare rapidamente e in modo affidabile le intestazioni e i piè di pagina dei diagrammi.
 
 ## Risposte rapide
-- **Quale libreria gestisce la modifica delle intestazioni?** GroupDocs.Watermark for Java  
-- **Posso sostituire un piè di pagina con testo personalizzato?** Sì – usa il metodo `setFooterCenter`  
-- **È supportata la rimozione di un'intestazione?** Assolutamente, chiama `setHeaderCenter(null)`  
-- **È necessaria una licenza per la produzione?** Una versione di prova funziona per i test; è richiesta una licenza a pagamento per l'uso commerciale  
-- **Quale versione di Java è necessaria?** JDK 8 o superiore  
+- **Quale libreria mi serve?** GroupDocs.Watermark for Java.  
+- **Posso modificare sia le intestazioni che i piè di pagina?** Sì, l'API consente di modificare ciascuna indipendentemente.  
+- **Ho bisogno di una licenza?** Una versione di prova funziona per lo sviluppo; è necessaria una licenza commerciale per la produzione.  
+- **Quali formati di diagramma sono supportati?** Visio (`.vsdx`, `.vsd`), among others.  
+- **È possibile l'elaborazione batch?** Assolutamente—itera sui file con la stessa logica di Watermarker.  
 
-## Che cosa significa “come modificare l'intestazione” nel contesto dei diagrammi?
-Modificare un'intestazione significa accedere programmaticamente al contenitore di intestazione/piè di del diagramma e modificare, rimuovere o aggiungere testo o grafica. Con GroupDocs.Watermark, si manipola l'oggetto `DiagramContent`, che astrae la struttura VSDX sottostante.
+## Cos'è “edit diagram headers java”?
+Modificare le intestazioni dei diagrammi in Java significa accedere programmaticamente a un file di diagramma (ad es., Visio) e modificare o rimuovere il testo che appare nella parte superiore di ogni pagina. GroupDocs.Watermark fornisce un'API di alto livello che astrae i dettagli del formato file, consentendoti di concentrarti sulla logica di business.
 
-## Perché utilizzare GroupDocs.Watermark per la manipolazione di intestazioni e piè di pagina?
-- **Supporto completo dei formati** – funziona con Visio, VSDX e altri tipi di diagrammi.  
-- **Nessuna dipendenza dall'interfaccia UI** – perfetto per servizi backend, lavori batch o pipeline CI.  
-- **Stile avanzato** – modifica font, dimensione, colore e persino incorpora immagini.  
-- **Ottimizzato per le prestazioni** – basso consumo di memoria per grandi batch.
+## Perché usare GroupDocs.Watermark per aggiungere watermark al diagramma?
+- **Nessuna dipendenza esterna** – funziona con Java puro.  
+- **Opzioni di stile avanzate** – font, colori e posizionamento sono completamente controllabili.  
+- **Pronto per il batch** – elabora decine di file in un'unica esecuzione.  
+- **Supporto cross‑format** – lo stesso codice funziona per PDF, immagini e documenti Office.  
 
 ## Prerequisiti
-- **Java Development Kit (JDK)** 8 o superiore.  
-- Libreria **GroupDocs.Watermark for Java** (aggiunta come dipendenza Maven).  
-- Familiarità di base con I/O di file Java.
+- **Java Development Kit (JDK)** 8 o versioni successive.  
+- **GroupDocs.Watermark for Java** library (added as a Maven dependency or downloaded manually).  
+- Familiarità di base con Java file I/O.  
 
 ## Configurazione di GroupDocs.Watermark per Java
 ### Configurazione Maven
-Aggiungi il repository e la dipendenza al tuo file `pom.xml`:
+Aggiungi il repository e la dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -61,13 +61,14 @@ Aggiungi il repository e la dipendenza al tuo file `pom.xml`:
 ```
 
 ### Download diretto
-In alternativa, scarica l'ultimo JAR da [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Acquisizione della licenza
-Per eseguire senza limiti di valutazione, ottieni una licenza dalla [pagina delle licenze](https://purchase.groupdocs.com/temporary-license/). Una chiave di prova funziona per sviluppo e test.
+In alternativa, scarica l'ultimo JAR da [rilasci di GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/).
 
-### Inizializzare il Watermarker
-Il frammento seguente mostra il codice minimo necessario per creare un'istanza `Watermarker` per un file di diagramma:
+### Ottenimento della licenza
+Per eseguire senza limiti di valutazione, ottieni una licenza dalla [pagina della licenza](https://purchase.groupdocs.com/temporary-license/). Una prova gratuita è sufficiente per sperimentare.
+
+## Inizializza il Watermarker
+Il primo passo è creare un'istanza di `Watermarker` che punti al tuo file di diagramma:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -83,12 +84,9 @@ public class InitializeWatermarker {
 }
 ```
 
-## Guida all'implementazione
-### Caricare e Inizializzare Watermarker
-**Come modificare l'intestazione** inizia con il caricamento del diagramma in memoria.
-
-#### Passo 1: Creare DiagramLoadOptions
-Se hai bisogno di un comportamento di caricamento personalizzato (ad esempio, file protetti da password), configura `DiagramLoadOptions`:
+## Carica e inizializza Watermarker con opzioni personalizzate
+### Passo 1: Crea DiagramLoadOptions
+Puoi affinare il modo in cui il diagramma viene caricato usando `DiagramLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.options.DiagramLoadOptions;
@@ -96,8 +94,8 @@ import com.groupdocs.watermark.options.DiagramLoadOptions;
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 ```
 
-#### Passo 2: Caricare il documento
-Passa le opzioni al costruttore `Watermarker`:
+### Passo 2: Carica il documento
+Passa le opzioni durante la costruzione del `Watermarker`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -105,11 +103,9 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-### Come rimuovere l'intestazione dal diagramma
-Rimuovere un'intestazione esistente è spesso necessario quando il titolo originale non è più pertinente.
-
-#### Passo 1: Accedere al contenuto del diagramma
-Recupera l'oggetto contenuto che espone i controlli di intestazione/piè di pagina:
+## Rimuovi l'intestazione dal diagramma
+### Passo 1: Accedi al contenuto del diagramma
+Recupera l'oggetto contenuto che ti dà accesso diretto alle sezioni intestazione/piè di pagina:
 
 ```java
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -117,18 +113,16 @@ import com.groupdocs.watermark.contents.DiagramContent;
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 ```
 
-#### Passo 2: Rimuovere l'intestazione
-Imposta lo slot centrale dell'intestazione a `null`. Questo elimina effettivamente l'intestazione:
+### Passo 2: Rimuovi l'intestazione
+Impostare l'intestazione centrale a `null` rimuove completamente l'intestazione:
 
 ```java
 content.getHeaderFooter().setHeaderCenter(null);
 ```
 
-### Come sostituire il piè di pagina nel diagramma
-Sostituire un piè di pagina ti consente di **aggiungere un piè di pagina con branding** o inserire informazioni di versione.
-
-#### Passo 1: Impostare il nuovo testo del piè di pagina
-Fornisci la nuova stringa del piè di pagina:
+## Sostituisci il piè di pagina nel diagramma
+### Passo 1: Imposta nuovo testo del piè di pagina
+Puoi sostituire il piè di pagina esistente con qualsiasi stringa personalizzata:
 
 ```java
 import com.groupdocs.watermark.watermarks.Color;
@@ -136,8 +130,8 @@ import com.groupdocs.watermark.watermarks.Color;
 content.getHeaderFooter().setFooterCenter("New Footer Text");
 ```
 
-#### Passo 2: Personalizzare le proprietà del font
-Regola dimensione, famiglia e colore per corrispondere allo stile aziendale:
+### Passo 2: Personalizza le proprietà del font
+Regola dimensione, famiglia e colore per corrispondere al tuo branding:
 
 ```java
 content.getHeaderFooter().getFont().setSize(19);
@@ -145,67 +139,69 @@ content.getHeaderFooter().getFont().setFamilyName("Calibri");
 content.getHeaderFooter().setTextColor(Color.getRed());
 ```
 
-> **Consiglio professionale:** Usa `setFooterCenter` insieme a `setFooterLeft` o `setFooterRight` per posizionare un logo su un lato e i dati di versione sull'altro, ottenendo **piè di pagina di controllo versione**.
-
-### Salvare e chiudere Watermarker
-Dopo la modifica, salva le modifiche e rilascia le risorse.
-
-#### Passo 1: Salvare le modifiche
-Scegli un percorso di output distinto dal file sorgente:
+## Salva e chiudi Watermarker
+### Passo 1: Salva le modifiche
+Scrivi il diagramma modificato in un nuovo file:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output.vsdx");
 ```
 
-#### Passo 2: Chiudere Watermarker
-Chiudi sempre per liberare memoria, specialmente in scenari batch:
+### Passo 2: Chiudi Watermarker
+Chiudi sempre l'istanza per liberare le risorse native:
 
 ```java
 watermarker.close();
 ```
 
 ## Applicazioni pratiche
-1. **Documenti di branding** – Inserisci il logo aziendale o lo slogan nel piè di pagina (`add branding footer`).  
-2. **Piè di pagina di controllo versione** – Aggiungi numeri di versione o date di revisione al piè di pagina per le tracce di audit.  
-3. **Conformità legale** – Aggiungi testo di disclaimer obbligatorio al piè di pagina in tutti i diagrammi.
+1. **Documenti di branding** – Inserisci loghi aziendali o slogan nelle intestazioni/piè di pagina.  
+2. **Controllo versione** – Aggiungi numeri di versione o date automaticamente.  
+3. **Conformità legale** – Aggiungi testo di disclaimer obbligatorio a ogni diagramma.  
 
 ## Considerazioni sulle prestazioni
-- **Ottimizzare l'uso della memoria** – Elabora i diagrammi uno alla volta o utilizza lo streaming quando possibile.  
-- **Elaborazione batch** – Scorri un elenco di file, riutilizzando una singola istanza `Watermarker` quando è sicuro.  
-- **Gestione degli errori** – Avvolgi le operazioni sui file in blocchi `try‑catch` per catturare `IOException` o `WatermarkerException`.
+- **Ottimizza l'uso della memoria** – Disporre prontamente degli oggetti `Watermarker`.  
+- **Elaborazione batch** – Scorri una cartella di diagrammi per applicare la stessa logica di intestazione/piè di pagina.  
+- **Gestione degli errori** – Avvolgi le operazioni sui file in blocchi `try‑catch` per catturare `IOException` o `WatermarkException`.  
 
-## Con
-Ora sai **come modificare l'intestazione**, **come rimuovere l'intestazione** e **come sostituire il piè di pagina** nei file di diagramma usando GroupDocs.Watermark per Java. Seguendo i passaggi sopra, puoi automatizzare il branding, applicare il controllo versione e mantenere la tua documentazione coerente in progetti di grandi dimensioni.
-
-Sentiti libero di esplorare funzionalità di watermark aggiuntive — come watermark immagine o testo dinamico — consultando la documentazione ufficiale e condividendo i tuoi risultati sul forum della community.
+## Problemi comuni e soluzioni
+| Problema | Perché accade | Come risolvere |
+|----------|----------------|----------------|
+| **Intestazione non rimossa** | Il diagramma utilizza una regione di intestazione diversa (sinistra/destra). | Usa `setHeaderLeft(...)` o `setHeaderRight(...)` secondo necessità. |
+| **Modifiche al font non visibili** | Il diagramma sovrascrive le impostazioni del font con un foglio di stile. | Chiama `content.getHeaderFooter().getFont().setBold(true)` o regola la gerarchia degli stili. |
+| **Licenza non riconosciuta** | Il percorso del file di licenza è errato. | Posiziona `license.lic` nella radice del progetto e caricalo con `License license = new License(); license.setLicense("license.lic");` prima di creare `Watermarker`. |
 
 ## Domande frequenti
-**D: Cos'è GroupDocs.Watermark per Java?**  
-R: Una potente libreria che consente di aggiungere, modificare o rimuovere watermark, intestazioni e piè di pagina da un'ampia gamma di tipi di documenti, inclusi i diagrammi.
 
-**D: Posso usarlo con formati di file diversi da VSDX?**  
-R: Sì, la libreria supporta PDF, immagini, file Office e altro.
+**D: Posso modificare sia le intestazioni che i piè di pagina nella stessa esecuzione?**  
+R: Sì—basta chiamare i metodi appropriati `setHeader...` e `setFooter...` prima di salvare.
 
-**D: C'è un costo associato alla libreria?**  
-R: È disponibile una prova gratuita; è necessaria una licenza a pagamento per le distribuzioni in produzione.
+**D: GroupDocs.Watermark supporta diagrammi protetti da password?**  
+R: Sì. Fornisci la password in `DiagramLoadOptions.setPassword("yourPassword")`.
 
-**D: Come devo gestire gli errori durante il caricamento di un diagramma?**  
-R: Avvolgi il codice di caricamento in un blocco `try‑catch` e registra i dettagli di `WatermarkerException` per la risoluzione dei problemi.
+**D: È possibile aggiungere un watermark immagine insieme alle modifiche di intestazione/piè di pagina?**  
+R: Assolutamente. Usa `watermarker.add(watermark)` dove `watermark` è un'istanza di `ImageWatermark`.
 
-**D: Posso personalizzare il font e il colore del piè di pagina?**  
-R: Assolutamente—usa `getFont().setSize()`, `setFamilyName()` e `setTextColor()` come mostrato nell'esempio.
+**D: Quanto grande può essere un diagramma che posso elaborare?**  
+R: La libreria gestisce file fino a diverse centinaia di megabyte; monitora l'heap JVM e aumentalo se necessario.
 
-**D: Dove posso chiedere aiuto alla community?**  
-R: Pubblica le domande sui [forum GroupDocs](https://forum.groupdocs.com/c/watermark/10).
+**D: Ci sono limiti nella versione di prova gratuita?**  
+R: La versione di prova consente tutte le funzionalità ma può inserire un watermark che indica che è una versione di prova.
 
-**Risorse aggiuntive**
-- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)
-- [API Reference](https://reference.groupdocs.com/watermark/java)
-- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Wat)
+## Conclusione
+Ora disponi di un flusso di lavoro completo e pronto per la produzione per **edit diagram headers java** e persino **add watermark to diagram** usando GroupDocs.Watermark. Seguendo i passaggi sopra, puoi automatizzare il branding, il versionamento e la conformità su grandi insiemi di file di diagrammi.
+
+Per continuare a espandere le tue competenze, esplora altre funzionalità di watermarking come watermark immagine, watermark testo e modelli di elaborazione batch. Condividi le tue esperienze sul forum della community!
+
+**Risorse**  
+- [Documentazione di GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
+- [Riferimento API](https://reference.groupdocs.com/watermark/java)  
+- [Download GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/)  
+- [Repository GitHub](https://github.com/groupdocs-watermark/GroupDocs.Wat)  
+- [Forum di GroupDocs](https://forum.groupdocs.com/c/watermark/10)
 
 ---
 
-**Ultimo aggiornamento:** 2025-12-17  
+**Ultimo aggiornamento:** 2026-02-16  
 **Testato con:** GroupDocs.Watermark 24.11 per Java  
-**Autore:** GroupDocs
+**Autore:** GroupDocs  

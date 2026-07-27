@@ -1,45 +1,46 @@
 ---
-date: '2025-12-17'
-description: Naučte se, jak upravit záhlaví a jak nahradit zápatí v souborech diagramů
-  pomocí GroupDocs.Watermark pro Javu. Postupujte podle tohoto průvodce krok za krokem.
+date: '2026-02-16'
+description: Naučte se, jak upravit záhlaví diagramu v Javě a přidat vodoznak do diagramu
+  pomocí GroupDocs.Watermark pro Javu. Postupujte podle tohoto krok za krokem průvodce
+  a vylepšete své dokumenty.
 keywords:
 - edit diagram headers footers
 - groupdocs watermark java
 - diagram document watermarking
-title: Jak upravit záhlaví v Java diagramech pomocí GroupDocs.Watermark
+title: Upravit záhlaví diagramů v Javě pomocí GroupDocs.Watermark
 type: docs
 url: /cs/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Jak upravit záhlaví v diagramových souborech Java pomocí GroupDocs.Watermark
+# Upravit záhlaví diagramu v Javě pomocí GroupDocs.Watermark
 
-V moderní technické dokumentaci může znalost **jak upravit záhlaví** v diagramových souborech ušetřit hodiny ruční práce. Ať už potřebujete odstranit zastaralý název, nahradit zápatí značkou, nebo přidat informace o řízení verzí, GroupDocs.Watermark for Java tyto úkoly usnadňuje. Tento průvodce vás provede každým krokem, od nastavení knihovny po přizpůsobení záhlaví a zápatí, a dokonce sdílí tipy na osvědčené postupy pro produkční použití.
+V moderní technické dokumentaci a prezentacích je **edit diagram headers java** častým požadavkem – ať už potřebujete odstranit zastaralé nadpisy, vložit branding nebo splnit požadavky na právní zápatí. Tento tutoriál vás provede používáním GroupDocs.Watermark pro Javu k rychlé a spolehlivé úpravě záhlaví a zápatí diagramů.
 
 ## Rychlé odpovědi
-- **Jaká knihovna zpracovává úpravy záhlaví?** GroupDocs.Watermark for Java  
-- **Mohu nahradit zápatí vlastním textem?** Ano – použijte metodu `setFooterCenter`  
-- **Je podporováno odstranění záhlaví?** Rozhodně, zavolejte `setHeaderCenter(null)`  
-- **Potřebuji licenci pro produkci?** Zkušební verze funguje pro testování; pro komerční použití je vyžadována placená licence  
-- **Jaká verze Javy je požadována?** JDK 8 nebo vyšší  
+- **Jaká knihovna potřebuji?** GroupDocs.Watermark for Java.  
+- **Mohu upravovat jak záhlaví, tak zápatí?** Ano, API umožňuje upravovat každé samostatně.  
+- **Potřebuji licenci?** Zkušební verze funguje pro vývoj; pro produkci je vyžadována komerční licence.  
+- **Jaké formáty diagramů jsou podporovány?** Visio (`.vsdx`, `.vsd`) a další.  
+- **Je možný hromadný (batch) processing?** Rozhodně – můžete procházet soubory se stejnou logikou Watermarkeru.  
 
-## Co znamená „jak upravit záhlaví“ v kontextu diagramů?
-Úprava záhlaví znamená programově přistupovat k kontejneru záhlaví/zápatí diagramu a měnit, odstraňovat nebo přidávat text či grafiku. S GroupDocs.Watermark manipulujete s objektem `DiagramContent`, který abstrahuje podkladovou strukturu VSDX.
+## Co je “edit diagram headers java”?
+Úprava záhlaví diagramu v Javě znamená programově přistupovat k souboru diagramu (např. Visio) a měnit nebo odstraňovat text, který se zobrazuje v horní části každé stránky. GroupDocs.Watermark poskytuje vysoce úrovňové API, které abstrahuje detaily formátu souboru, což vám umožní soustředit se na obchodní logiku.
 
-## Proč použít GroupDocs.Watermark pro manipulaci se záhlavím a zápatím?
-- **Kompletní podpora formátů** – funguje s Visio, VSDX a dalšími typy diagramů.  
-- **Bez závislosti na UI** – ideální pro backendové služby, dávkové úlohy nebo CI pipeline.  
-- **Bohaté stylování** – změňte font, velikost, barvu a dokonce vložte obrázky.  
-- **Optimalizováno pro výkon** – nízká spotřeba paměti při velkých dávkách.  
+## Proč použít GroupDocs.Watermark k přidání vodoznaku do diagramu?
+- **Žádné externí závislosti** – funguje s čistou Javou.  
+- **Bohaté možnosti stylování** – písma, barvy a umístění jsou plně ovladatelné.  
+- **Připraveno pro hromadné zpracování** – zpracujte desítky souborů v jednom běhu.  
+- **Podpora napříč formáty** – stejný kód funguje pro PDF, obrázky a Office dokumenty.  
 
 ## Předpoklady
 - **Java Development Kit (JDK)** 8 nebo novější.  
-- **GroupDocs.Watermark for Java** knihovna (přidána jako Maven závislost).  
-- Základní znalost Java I/O souborů.  
+- **GroupDocs.Watermark for Java** knihovna (přidána jako Maven závislost nebo stažena ručně).  
+- Základní znalost práce se soubory v Javě (Java I/O).  
 
-## Nastavení GroupDocs.Watermark pro Java
+## Nastavení GroupDocs.Watermark pro Javu
 ### Nastavení Maven
-Přidejte repozitář a závislost do souboru `pom.xml`:
+Přidejte repozitář a závislost do vašeho `pom.xml`:
 
 ```xml
 <repositories>
@@ -63,10 +64,10 @@ Přidejte repozitář a závislost do souboru `pom.xml`:
 Alternativně stáhněte nejnovější JAR z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Získání licence
-Pro běh bez omezení zkušební verze získáte licenci na [stránce s licencí](https://purchase.groupdocs.com/temporary-license/). Zkušební klíč funguje pro vývoj a testování.
+Pro běh bez omezení hodnocení získáte licenci na [licenční stránce](https://purchase.groupdocs.com/temporary-license/). Bezplatná zkušební verze stačí pro experimentování.
 
-### Inicializace Watermarkeru
-Následující úryvek ukazuje minimální kód potřebný k vytvoření instance `Watermarker` pro diagramový soubor:
+## Inicializace Watermarkeru
+Prvním krokem je vytvořit instanci `Watermarker`, která ukazuje na váš soubor diagramu:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -82,12 +83,9 @@ public class InitializeWatermarker {
 }
 ```
 
-## Průvodce implementací
-### Načtení a inicializace Watermarkeru
-**Jak upravit záhlaví** začíná načtením diagramu do paměti.
-
-#### Krok 1: Vytvořte DiagramLoadOptions
-Pokud potřebujete vlastní chování při načítání (např. soubory chráněné heslem), nakonfigurujte `DiagramLoadOptions`:
+## Načtení a inicializace Watermarkeru s vlastními možnostmi
+### Krok 1: Vytvořit DiagramLoadOptions
+Můžete jemně doladit, jak se diagram načítá, pomocí `DiagramLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.options.DiagramLoadOptions;
@@ -95,8 +93,8 @@ import com.groupdocs.watermark.options.DiagramLoadOptions;
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 ```
 
-#### Krok 2: Načtěte dokument
-Předávejte možnosti konstruktoru `Watermarker`:
+### Krok 2: Načíst dokument
+Předávejte možnosti při vytváření `Watermarker`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -104,11 +102,10 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-### Jak odstranit záhlaví z diagramu
-Odstranění existujícího záhlaví je často potřeba, když původní název již není relevantní.
+## Odstranění záhlaví z diagramu
+### Krok 1: Přístup k obsahu diagramu
+Získejte objekt obsahu, který vám poskytuje přímý přístup k sekcím záhlaví/zápatí:
 
-#### Krok 1: Přístup k obsahu diagramu
-Získejte objekt obsahu, který poskytuje ovládání záhlaví/zápatí:
 
 ```java
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -116,18 +113,16 @@ import com.groupdocs.watermark.contents.DiagramContent;
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 ```
 
-#### Krok 2: Odstraňte záhlaví
-Nastavte centrální slot záhlaví na `null`. Tím efektivně odstraníte záhlaví:
+### Krok 2: Odstranit záhlaví
+Nastavením středního záhlaví na `null` odstraníte záhlaví úplně:
 
 ```java
 content.getHeaderFooter().setHeaderCenter(null);
 ```
 
-### Jak nahradit zápatí v diagramu
-Nahrazení zápatí vám umožní **přidat značkové zápatí** nebo vložit informace o verzi.
-
-#### Krok 1: Nastavte nový text zápatí
-Zadejte nový řetězec zápatí:
+## Nahrazení zápatí v diagramu
+### Krok 1: Nastavit nový text zápatí
+Můžete nahradit existující zápatí libovolným vlastním řetězcem:
 
 ```java
 import com.groupdocs.watermark.watermarks.Color;
@@ -135,8 +130,8 @@ import com.groupdocs.watermark.watermarks.Color;
 content.getHeaderFooter().setFooterCenter("New Footer Text");
 ```
 
-#### Krok 2: Přizpůsobte vlastnosti písma
-Upravte velikost, rodinu a barvu tak, aby odpovídaly firemnímu stylu:
+### Krok 2: Přizpůsobit vlastnosti písma
+Upravte velikost, rodinu a barvu tak, aby odpovídaly vašemu brandingu:
 
 ```java
 content.getHeaderFooter().getFont().setSize(19);
@@ -144,68 +139,69 @@ content.getHeaderFooter().getFont().setFamilyName("Calibri");
 content.getHeaderFooter().setTextColor(Color.getRed());
 ```
 
-> **Tip:** Použijte `setFooterCenter` spolu s `setFooterLeft` nebo `setFooterRight` k umístění loga na jedné straně a dat verze na druhé, čímž získáte **zápatí pro řízení verzí**.
-
-### Uložení a uzavření Watermarkeru
-Po úpravě uložte změny a uvolněte prostředky.
-
-#### Krok 1: Uložte změny
-Zvolte výstupní cestu odlišnou od zdrojového souboru:
+## Uložení a uzavření Watermarkeru
+### Krok 1: Uložit změny
+Zapište upravený diagram do nového souboru:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output.vsdx");
 ```
 
-#### Krok 2: Uzavřete Watermarker
-Vždy uzavřete, aby se uvolnila paměť, zejména v dávkových scénářích:
+### Krok 2: Uzavřít Watermarker
+Vždy uzavřete instanci, aby se uvolnily nativní zdroje:
 
 ```java
 watermarker.close();
 ```
 
 ## Praktické aplikace
-1. **Branding dokumentů** – Vložte firemní logo nebo slogan do zápatí (`add branding footer`).  
-2. **Zápatí pro řízení verzí** – Přidejte čísla verzí nebo data revizí do zápatí pro auditní stopy.  
-3. **Právní soulad** – Přidejte povinný text odmítnutí odpovědnosti do zápatí ve všech diagramech.  
+1. **Branding dokumentů** – Vložte firemní loga nebo slogany do záhlaví/zápatí.  
+2. **Řízení verzí** – Automaticky přidávejte čísla verzí nebo data.  
+3. **Právní soulad** – Přidejte povinný disclaimer text do každého diagramu.  
 
 ## Úvahy o výkonu
-- **Optimalizace využití paměti** – Zpracovávejte diagramy po jednom nebo použijte streamování, kde je to možné.  
-- **Dávkové zpracování** – Procházejte seznam souborů a opakovaně používejte jednu instanci `Watermarker`, pokud je to bezpečné.  
-- **Zpracování chyb** – Zabalte operace se soubory do bloků `try‑catch`, abyste zachytili `IOException` nebo `WatermarkerException`.  
+- **Optimalizace využití paměti** – Okamžitě uvolněte objekty `Watermarker`.  
+- **Hromadné zpracování** – Procházejte složku diagramů a aplikujte stejnou logiku záhlaví/zápatí.  
+- **Zpracování chyb** – Zabalte operace se soubory do bloků `try‑catch` pro zachycení `IOException` nebo `WatermarkException`.  
 
-## Závěr
-Nyní víte **jak upravit záhlaví**, **jak odstranit záhlaví** a **jak nahradit zápatí** v diagramových souborech pomocí GroupDocs.Watermark pro Java. Dodržením výše uvedených kroků můžete automatizovat branding, vynutit řízení verzí a udržet dokumentaci konzistentní napříč velkými projekty.
-
-Neváhejte prozkoumat další funkce vodoznaků – například obrázkové vodoznaky nebo dynamický text – kontrolou oficiální dokumentace a sdílením výsledků na komunitním fóru.
+## Časté problémy a řešení
+| Problém | Proč k tomu dochází | Jak opravit |
+|-------|----------------|------------|
+| **Záhlaví nebylo odstraněno** | Diagram používá jinou oblast záhlaví (levé/pravé). | Použijte `setHeaderLeft(...)` nebo `setHeaderRight(...)` podle potřeby. |
+| **Změny písma nejsou viditelné** | Diagram přepisuje nastavení písma pomocí stylového listu. | Zavolejte `content.getHeaderFooter().getFont().setBold(true)` nebo upravte hierarchii stylů. |
+| **Licence nebyla rozpoznána** | Cesta k souboru licence je nesprávná. | Umístěte `license.lic` do kořenového adresáře projektu a načtěte ji pomocí `License license = new License(); license.setLicense("license.lic");` před vytvořením `Watermarker`. |
 
 ## Často kladené otázky
 
-**Q: Co je GroupDocs.Watermark pro Java?**  
-A: Výkonná knihovna, která vám umožní přidávat, upravovat nebo odstraňovat vodoznaky, záhlaví a zápatí z široké škály typů dokumentů, včetně diagramů.
+**Q: Mohu upravovat jak záhlaví, tak zápatí ve stejném běhu?**  
+A: Ano – stačí zavolat příslušné metody `setHeader...` a `setFooter...` před uložením.
 
-**Q: Můžu ji použít s formáty souborů jinými než VSDX?**  
-A: Ano, knihovna podporuje PDF, obrázky, soubory Office a další.
+**Q: Podporuje GroupDocs.Watermark diagramy chráněné heslem?**  
+A: Ano. Zadejte heslo v `DiagramLoadOptions.setPassword("yourPassword")`.
 
-**Q: Je s knihovnou spojený nějaký poplatek?**  
-A: K dispozici je bezplatná zkušební verze; pro produkční nasazení je vyžadována placená licence.
+**Q: Je možné přidat obrázkový vodoznak spolu se změnami záhlaví/zápatí?**  
+A: Rozhodně. Použijte `watermarker.add(watermark)`, kde `watermark` je instance `ImageWatermark`.
 
-**Q: Jak mám zacházet s chybami při načítání diagramu?**  
-A: Zabalte kód načítání do bloku `try‑catch` a zaznamenejte podrobnosti `WatermarkerException` pro odstraňování problémů.
+**Q: Jak velký diagram mohu zpracovat?**  
+A: Knihovna zvládne soubory až několik stovek megabajtů; sledujte haldu JVM a v případě potřeby ji navýšte.
 
-**Q: Můžu přizpůsobit písmo a barvu zápatí?**  
-A: Rozhodně – použijte `getFont().setSize()`, `setFamilyName()` a `setTextColor()` podle ukázky.
+**Q: Existují nějaká omezení ve zkušební verzi?**  
+A: Zkušební verze poskytuje plnou funkčnost, ale může vložit vodoznak označující, že jde o zkušební verzi.
 
-**Q: Kde mohu požádat komunitu o pomoc?**  
-A: Pokládejte otázky na [GroupDocs fóru](https://forum.groupdocs.com/c/watermark/10).
+## Závěr
+Nyní máte kompletní, připravený workflow pro **edit diagram headers java** a dokonce **add watermark to diagram** pomocí GroupDocs.Watermark. Dodržením výše uvedených kroků můžete automatizovat branding, verzování a soulad napříč velkými sadami souborů diagramů.
 
-**Další zdroje**
-- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)
-- [API Reference](https://reference.groupdocs.com/watermark/java)
-- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Wat)
+Pro další rozšiřování svých dovedností prozkoumejte další funkce vodoznakování, jako jsou obrázkové vodoznaky, textové vodoznaky a vzory hromadného zpracování. Sdílejte své zkušenosti na komunitním fóru!
+
+**Zdroje**  
+- [Dokumentace GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
+- [Reference API](https://reference.groupdocs.com/watermark/java)  
+- [Stáhnout GroupDocs.Watermark pro Javu](https://releases.groupdocs.com/watermark/java/)  
+- [Úložiště na GitHubu](https://github.com/groupdocs-watermark/GroupDocs.Wat)  
+- [Fóra GroupDocs](https://forum.groupdocs.com/c/watermark/10)
 
 ---
 
-**Poslední aktualizace:** 2025-12-17  
+**Poslední aktualizace:** 2026-02-16  
 **Testováno s:** GroupDocs.Watermark 24.11 for Java  
-**Autor:** GroupDocs
+**Autor:** GroupDocs  

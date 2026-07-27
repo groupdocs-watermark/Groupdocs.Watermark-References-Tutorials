@@ -1,11 +1,11 @@
 ---
-date: '2025-12-17'
-description: 學習如何使用 GroupDocs.Watermark for Java 為特定圖表頁面添加水印，將水印加入圖表以及加入圖像水印（Java）。一步一步的指南，保護您的知識產權。
+date: '2026-02-16'
+description: 了解如何使用 GroupDocs.Watermark for Java 為特定圖表頁面添加水印，包括如何在 Java 中加入圖片水印以及保護您的檔案。
 keywords:
 - GroupDocs Watermark Java
 - adding watermarks diagrams
 - Java diagram document watermarking
-title: 使用 GroupDocs.Watermark for Java 為特定圖表頁面加上浮水印
+title: 使用 GroupDocs.Watermark for Java 為特定圖表頁面加上水印
 type: docs
 url: /zh-hant/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/
 weight: 1
@@ -13,36 +13,32 @@ weight: 1
 
 # 使用 GroupDocs.Watermark for Java 為特定圖表頁面加水印
 
-保護您的圖表至關重要，尤其是在需要維護智慧財產權或確保正確署名時。在本教學中，您將學會 **如何為特定圖表頁面加水印**，無論是 **以文字方式為圖表加水印**，或是 **以 Java 風格的圖像水印**（如商標）為例。完成本指南後，您將能夠：
+保護您的圖表至關重要，尤其在需要 **為特定圖表頁面加水印** 以確保智慧財產安全或品牌歸屬時更是如此。在本教學中，您將一步步學會如何使用 **GroupDocs.Watermark for Java** 為圖表檔案中選定的頁面加入文字與圖片水印。完成後，您即可安全地保護圖表，並精確控制每個水印的顯示位置。
 
-- 無縫地為選定的圖表頁面添加文字水印。  
-- 在圖表的指定區段插入圖像水印。  
-- 提升使用 GroupDocs.Watermark 時的效能。
+## 快速解答
+- **主要目的為何？** 為選取的圖表頁面加入水印。  
+- **需要哪個函式庫？** GroupDocs.Watermark for Java（Maven 或直接下載）。  
+- **可以在 Java 中加入圖片水印嗎？** 可以 – 使用 `ImageWatermark` 並設定頁面相關選項。  
+- **需要授權嗎？** 測試可使用臨時試用授權；正式環境需購買正式授權。  
+- **程式碼行數多少？** 完整的文字 + 圖片水印流程少於 30 行。
 
-在開始編寫程式碼之前，先確保環境已就緒。
+## 什麼是「為特定圖表頁面加水印」？
+**為特定圖表頁面加水印** 指的是僅在多頁圖表（例如 Visio .vsdx）中您選擇的頁面上套用視覺標記（文字或圖片）。這讓您能細緻地控制品牌、機密聲明或版權資訊的顯示，而不會影響整份文件。
 
-## 快速答覆
-- **「watermark specific diagram page」是什麼意思？** 指僅對圖表檔案的特定頁面套用水印，其他頁面保持不變。  
-- **需要哪個版本的函式庫？** 需要 GroupDocs.Watermark 24.11 或更新版本。  
-- **可以在同一頁面同時使用文字與圖像水印嗎？** 可以 – 針對每種水印類型分別呼叫 `watermarker.add()`。  
-- **開發階段需要授權嗎？** 測試時可使用臨時試用授權；正式上線則需正式授權。  
-- **Maven 是唯一加入函式庫的方式嗎？** 不是 – 也可以直接下載 JAR（請參考下方「直接下載」）。
-
-## 什麼是「watermark specific diagram page」？
-**watermark specific diagram page** 操作針對圖表文件（例如 Visio *.vsdx*）中的單一頁面（或多頁）加上文字或圖像層。此功能適用於機密草稿、品牌標示或版權聲明，而不會影響整個檔案。
-
-## 為什麼要使用 GroupDocs.Watermark for Java？
-GroupDocs.Watermark 提供高階 API，抽象化圖表格式的複雜性，支援批次處理，並可細緻控制不透明度、定位與頁面選擇。它亦能順利整合至 Maven 及一般 Java 建置工具。
+## 為何使用 GroupDocs.Watermark for Java？
+- **完整頁面控制** – 可針對任意頁索引加水印。  
+- **豐富樣式設定** – 字型、顏色、不透明度、旋轉角度與圖片縮放皆可自訂。  
+- **效能優化** – 高效處理大型圖表，且能順利整合至 Maven 建置流程。  
+- **跨格式支援** – 支援 Visio、SVG 以及其他多種圖表格式。
 
 ## 前置條件
-- 已安裝 **GroupDocs.Watermark for Java** 函式庫 24.11 或更新版本。  
-- 具備 Maven 環境（或能手動加入 JAR）。  
-- 具備基本的 Java 知識與檔案系統存取權限。  
+- **GroupDocs.Watermark for Java** 函式庫版本 24.11 或更新。  
+- Maven 或直接下載 JAR。  
+- 基本的 Java 開發環境（建議 JDK 8 以上）。
 
 ## 設定 GroupDocs.Watermark for Java
-
-### 使用 Maven
-在 `pom.xml` 中加入以下內容以將 GroupDocs.Watermark 加入專案：
+### 使用 Maven groupdocs watermark
+在 `pom.xml` 中加入以下設定，即可將 GroupDocs.Watermark 加入專案：
 
 ```xml
 <repositories>
@@ -66,20 +62,23 @@ GroupDocs.Watermark 提供高階 API，抽象化圖表格式的複雜性，支�
 亦可直接從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載最新版本。
 
 #### 取得授權
-先下載臨時授權以取得免費試用。若要持續使用 GroupDocs.Watermark，請於官方網站購買正式授權。
+
+先下載臨時授權以取得免費試用。若決定持續使用 GroupDocs.Watermark，請於官方網站購買正式授權。
 
 ### 基本初始化與設定
-函式庫可用後，建立指向欲保護圖表的 `Watermarker` 實例：
+安裝完成後，使用 `Watermarker` 類別進行水印操作：
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-## 如何 **add watermark to diagram** – 文字水印
+## 實作指南
+### 為特定頁面加入文字水印
+在指定目標頁面前，先建立並設定文字水印。
 
-### 建立文字水印
-定義要套用的文字、字型、顏色與不透明度：
+#### 建立文字水印
+以可自訂內容、字型、大小等屬性的方式定義文字水印：
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Confidential", new Font("Arial", 18));
@@ -87,48 +86,49 @@ textWatermark.setForegroundColor(Color.BLUE);
 textWatermark.setOpacity(0.5f);
 ```
 
-### 設定文字水印的頁面索引
-指定要加水印的確切頁面。頁面索引採零基制：
+#### 設定水印的頁面索引
+使用 `DiagramPageWatermarkOptions` 指定要顯示水印的圖表頁面：
 
 ```java
 DiagramPageWatermarkOptions textWatermarkOptions = new DiagramPageWatermarkOptions();
 textWatermarkOptions.setPageIndex(0); // First page (index 0)
 ```
 
-### 加入文字水印
-將水印套用至選定的頁面：
+#### 加入文字水印
+將已設定好的水印加入圖表：
 
 ```java
 watermarker.add(textWatermark, textWatermarkOptions);
 ```
 
-## 如何 **add image watermark java** – 圖像水印
+### 為特定頁面加入圖片水印
+圖片水印的流程與文字水印類似，只是使用 `ImageWatermark` 物件。
 
-### 建立圖像水印
-載入要覆蓋的圖像（例如公司商標）：
+#### 建立圖片水印
+以欲使用的圖片路徑建立 `ImageWatermark` 實例：
 
 ```java
 ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
 imageWatermark.setOpacity(0.7f);
 ```
 
-### 設定圖像水印的頁面索引
-選擇要顯示圖像水印的頁面：
+#### 設定水印的頁面索引
+指定哪一頁要顯示圖片水印：
 
 ```java
 DiagramPageWatermarkOptions imageWatermarkOptions = new DiagramPageWatermarkOptions();
 imageWatermarkOptions.setPageIndex(1); // Second page (index 1)
 ```
 
-### 加入圖像水印
-將圖像水印插入指定頁面：
+#### 加入圖片水印
+將圖片加入指定的圖表頁面：
 
 ```java
 watermarker.add(imageWatermark, imageWatermarkOptions);
 ```
 
-## 儲存並關閉資源
-完成所有水印後，將變更寫入檔案並釋放資源：
+### 儲存並關閉資源
+記得在完成後儲存變更並關閉資源，以免發生記憶體洩漏：
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_diagram.vsdx");
@@ -138,58 +138,51 @@ imageWatermark.close();
 ```
 
 ## 實務應用
-- **文件安全** – 在分享給合作夥伴前，於草稿圖表上加上「機密」標籤。  
-- **品牌行銷** – 在技術圖紙的特定頁面蓋上公司標誌。  
-- **版權保護** – 在高價值圖表上嵌入版權聲明，以防止未授權使用。
+- **文件安全** – 僅在包含機密圖紙的頁面上加上保密水印。  
+- **品牌形象** – 將公司標誌放在封面頁，內頁保持乾淨。  
+- **版權保護** – 在技術圖表包的最後一頁加入版權聲明。
 
 ## 效能考量
-- 大檔案時請妥善管理記憶體。  
-- 使用圖像水印前先壓縮圖檔，以加快處理速度。  
-- 透過關閉所有水印物件並呼叫 `Watermarker.save()`，配合 Java 垃圾回收機制。
+- **記憶體管理** – 儲存後關閉每個水印物件，以釋放原生資源。  
+- **圖片最佳化** – 使用適當尺寸的 PNG/JPEG，以提升處理速度。  
+- **批次處理** – 處理大量圖表時，盡可能重複使用同一個 `Watermarker` 實例。
 
 ## 常見問題與解決方案
 | 症狀 | 可能原因 | 解決方式 |
-|---|---|---|
-| 水印未顯示 | 頁面索引錯誤 | 確認零基索引與目標頁面相符。 |
-| 圖像變形 | 原始圖像解析度過高 | 將圖像調整至合理尺寸（例如 300 × 300 px）。 |
-| 正式環境授權錯誤 | 僅使用試用授權 | 透過 `License.setLicense("path/to/license.file")` 載入正式授權檔。 |
-| 大型圖表處理緩慢 | 檔案過大且資源未關閉 | 及時關閉 `Watermarker` 及各水印物件。 |
+|------|----------|----------|
+| 水印未顯示 | `pageIndex` 設定錯誤（從 0 開始） | 確認索引與目標頁面相符。 |
+| 圖片變形 | 原始圖片解析度過高 | 在建立 `ImageWatermark` 前先調整圖片大小。 |
+| 正式環境授權錯誤 | 試用授權已過期 | 透過 `License.setLicense("path/to/license.json")` 載入正式授權檔案。 |
 
 ## 常見問答
 
 **Q1: 可以在同一圖表頁面加入多個水印嗎？**  
-A: 可以，只要對同一個 `DiagramPageWatermarkOptions` 呼叫多次 `watermarker.add()`，傳入不同的水印物件即可。
+A1: 可以，只需對相同的頁索引呼叫 `watermarker.add()` 並傳入不同的水印物件。
 
 **Q2: GroupDocs.Watermark for Java 支援哪些檔案格式？**  
-A: 支援多種圖表與影像格式，完整清單請參考 [API 文件](https://reference.groupdocs.com/watermark/java)。
+A2: 支援多種圖表與影像格式，完整清單請參考 [API documentation](https://reference.groupdocs.com/watermark/java)。
 
-**Q3: 使用試用版時授權問題該怎麼處理？**  
-A: 先取得免費的臨時授權；正式上線時請購買完整授權以解鎖全部功能。
+**Q3: 使用試用版時，授權問題該如何處理？**  
+A3: 先從 GroupDocs 取得免費的臨時授權；若要在正式環境使用，請購買正式授權以解鎖全部功能。
 
-**Q4: 若水印未如預期顯示，有哪些常見排除方法？**  
-A: 確認頁面索引正確、檢查圖像檔案路徑、確保不透明度未設為 0。
+**Q4: 若水印未如預期顯示，有哪些常見的除錯技巧？**  
+A4: 確認頁索引正確，並再次檢查圖片檔案路徑。亦需確認水印不透明度未設為 0。
 
 **Q5: 如何進一步自訂水印外觀？**  
-A: 可透過 `TextWatermark` 或 `ImageWatermark` 的方法調整字體大小、不透明度、旋轉角度與定位。
+A5: 可透過 `TextWatermark` 或 `ImageWatermark` 的方法調整字體大小、不透明度、旋轉角度與定位。
 
-**Q6: 能否一次呼叫為多個頁面加水印？**  
-A: 能 – 建立 `DiagramPageWatermarkOptions` 實例，設定頁面索引清單，然後傳入 `watermarker.add()`。
-
-**Q7: GroupDocs.Watermark 是否支援受密碼保護的圖表檔案？**  
-A: 支援，可在載入前使用 `DiagramLoadOptions.setPassword("yourPassword")` 提供密碼。
-
-## 參考資源
-- [GroupDocs.Watermark 文件](https://docs.groupdocs.com/watermark/java/)  
-- [API 參考指南](https://reference.groupdocs.com/watermark/java)  
-- [下載函式庫](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub 程式庫](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [免費支援論壇](https://forum.groupdocs.com/c/watermark/10)  
+## 資源
+- [GroupDocs.Watermark 文件](https://docs.groupdocs.com/watermark/java/)
+- [API 參考指南](https://reference.groupdocs.com/watermark/java)
+- [下載函式庫](https://releases.groupdocs.com/watermark/java/)
+- [GitHub 程式庫](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [免費支援論壇](https://forum.groupdocs.com/c/watermark/10)
 - [臨時授權資訊](https://purchase.groupdocs.com/temporary-license/)
 
-探索上述資源，深入了解並善用 GroupDocs.Watermark for Java。祝您加水印順利！
+探索以上資源，深入了解並善用 GroupDocs.Watermark for Java。祝您加水印順利！
 
 ---
 
-**最後更新時間：** 2025-12-17  
+**最後更新：** 2026-02-16 
 **測試環境：** GroupDocs.Watermark 24.11 for Java  
 **作者：** GroupDocs

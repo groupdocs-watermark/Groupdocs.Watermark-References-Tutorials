@@ -1,54 +1,44 @@
 ---
-date: '2025-12-17'
-description: GroupDocs.Watermark for Java を使用して特定の図面ページに透かしを付ける方法、図面に透かしを追加する方法、Java
-  で画像透かしを追加する方法を学びましょう。IP を保護するためのステップバイステップガイドです。
+date: '2026-02-16'
+description: GroupDocs.Watermark for Java を使用して、特定の図面ページに透かしを付ける方法と、画像透かし（Java）の追加方法およびファイルの保護方法を学びましょう。
 keywords:
 - GroupDocs Watermark Java
 - adding watermarks diagrams
 - Java diagram document watermarking
-title: GroupDocs.Watermark for Java を使用して特定の図面ページに透かしを付ける
+title: GroupDocs.Watermark for Java を使用して特定の図ページに透かしを付ける
 type: docs
 url: /ja/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/
 weight: 1
 ---
 
-# GroupDocs.Watermark for Java を使用した特定の図ページへのウォーターマーク
+# GroupDocs.Watermark for Java を使用した特定の図面ページへの透かし
 
-図を保護することは重要です。特に知的財産の保護や適切な帰属を確保する場合に重要です。このチュートリアルでは、GroupDocs.Watermark for Java を使用して **how to watermark specific diagram page** を学びます。テキストとして **add watermark to diagram** を追加する場合や **add image watermark java**‑style ロゴを追加する場合にも対応します。このガイドの最後までに、以下ができるようになります：
+図面の保護は非常に重要です。特に、知的財産の安全性やブランドの帰属を示すために **特定の図面ページに透かし** を入れる必要がある場合はなおさらです。このチュートリアルでは、**GroupDocs.Watermark for Java** を使用して、図面ファイルの選択したページにテキストと画像の透かしを追加する方法をステップバイステップで学びます。最後まで読めば、図面を安全に保護し、透かしの表示位置を正確にコントロールできるようになります。
 
-- 選択した図ページにテキストウォーターマークをシームレスに追加できる  
-- 図の指定セクションに画像ウォーターマークを挿入できる  
-- GroupDocs.Watermark を使用した際のパフォーマンスを向上させられる  
+## クイック回答
+- **主な目的は何ですか？** 選択した図面ページに透かしを追加することです。  
+- **必要なライブラリはどれですか？** GroupDocs.Watermark for Java（Maven または直接ダウンロード）。  
+- **Java で画像透かしを追加できますか？** はい – `ImageWatermark` を使用し、ページ固有のオプションを設定します。  
+- **ライセンスは必要ですか？** テスト用には一時的なトライアルライセンスで動作しますが、本番環境では正式なライセンスが必要です。  
+- **コード行数はどれくらいですか？** テキスト + 画像透かしの完全なワークフローは 30 行未満です。
 
-コードに入る前に、環境が整っていることを確認しましょう。
+## 「特定の図面ページに透かし」とは何ですか？
+**特定の図面ページに透かし** とは、マルチページの図面（例: Visio .vsdx）内で選択したページのみに視覚的マーカー（テキストまたは画像）を適用することを指します。これにより、ブランド表示、機密通知、著作権表示などを文書全体に影響を与えることなく、細かく制御できます。
 
-## クイックアンサー
-- **「watermark specific diagram page」とは何ですか？**  
-  特定の図ファイルのページ（またはページ群）だけにウォーターマークを適用し、他のページはそのままにすることを指します。  
-- **必要なライブラリのバージョンは？**  
-  GroupDocs.Watermark 24.11 以上。  
-- **同じページにテキストと画像の両方のウォーターマークを付けられますか？**  
-  はい – 各ウォーターマークタイプごとに `watermarker.add()` を呼び出してください。  
-- **開発用にライセンスは必要ですか？**  
-  テスト用の一時トライアルライセンスで動作しますが、本番環境ではフルライセンスが必要です。  
-- **ライブラリの追加は Maven だけですか？**  
-  いいえ – JAR を直接ダウンロードして使用することもできます（下記「Direct Download」参照）。
-
-## 「watermark specific diagram page」とは？
-**watermark specific diagram page** 操作は、図ドキュメント（例: Visio *.vsdx*）内の単一ページ（または複数ページ）を対象にテキストまたは画像のレイヤーをオーバーレイします。機密ドラフトやブランディング、著作権表示など、ファイル全体を変更せずに特定ページだけに情報を付加したい場合に便利です。
-
-## なぜ GroupDocs.Watermark for Java を使うのか？
-GroupDocs.Watermark は、図形式の複雑さを抽象化した高レベル API を提供し、バッチ処理や不透明度・位置・ページ選択の細かな制御が可能です。また、Maven や標準的な Java ビルドツールとの統合もスムーズです。
+## なぜ GroupDocs.Watermark for Java を使用するのか？
+- **フルページ制御** – 必要な任意のページインデックスを対象にできます。  
+- **豊富なスタイリング** – フォント、色、不透明度、回転、画像のスケーリングなどすべて設定可能です。  
+- **パフォーマンス最適化** – 大規模な図面を効率的に処理し、Maven ビルドとスムーズに統合します。  
+- **クロスフォーマット対応** – Visio、SVG など多数の図面フォーマットで動作します。
 
 ## 前提条件
-- **GroupDocs.Watermark for Java** ライブラリ 24.11 以上がインストール済み  
-- Maven が利用できる開発環境（または JAR を手動で追加できる環境）  
-- 基本的な Java の知識とファイルシステムへのアクセス権  
+- **GroupDocs.Watermark for Java** ライブラリ バージョン 24.11 以降。  
+- Maven または直接 JAR ダウンロード。  
+- 基本的な Java 開発環境（JDK 8 以上推奨）。
 
 ## GroupDocs.Watermark for Java の設定
-
-### Maven の使用
-`pom.xml` に以下を追加して GroupDocs.Watermark をプロジェクトに組み込みます。
+### Maven で GroupDocs.Watermark を使用する
+`pom.xml` に以下を追加して、Maven 経由でプロジェクトに GroupDocs.Watermark を組み込みます。
 
 ```xml
 <repositories>
@@ -69,23 +59,25 @@ GroupDocs.Watermark は、図形式の複雑さを抽象化した高レベル AP
 ```
 
 ### 直接ダウンロード
-あるいは、[GroupDocs.Watermark for Java のリリース](https://releases.groupdocs.com/watermark/java/) から最新バージョンを直接ダウンロードしてください。
+または、最新バージョンを直接 [GroupDocs.Watermark for Java リリース](https://releases.groupdocs.com/watermark/java/) からダウンロードしてください。
 
-#### ライセンスの取得
-一時的な無料トライアルライセンスをダウンロードして開始できます。継続して使用する場合は、公式サイトでフルライセンスを購入してください。
+#### ライセンス取得
+まずは一時的なライセンスをダウンロードして無料トライアルを開始します。継続して使用する場合は、公式サイトで購入オプションが提供されています。
 
-### 基本的な初期化とセットアップ
-ライブラリが利用可能になったら、保護したい図を指す `Watermarker` インスタンスを作成します。
+### 基本的な初期化と設定
+インストール後、透かし操作のために `Watermarker` クラスを初期化します。
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-## **add watermark to diagram** – テキストウォーターマーク
+## 実装ガイド
+### 特定のページにテキスト透かしを追加する
+テキスト透かしを追加するには、対象ページを指定する前に透かしを作成・設定します。
 
-### テキスト透かしの作成
-適用したいテキスト、フォント、色、透明度を定義します。
+#### テキスト透かしの作成
+カスタマイズ可能な内容、フォントスタイル、サイズなどでテキスト透かしを定義します。
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Confidential", new Font("Arial", 18));
@@ -93,48 +85,49 @@ textWatermark.setForegroundColor(Color.BLUE);
 textWatermark.setOpacity(0.5f);
 ```
 
-### 透かしのページインデックスの設定
-ウォーターマークを付ける正確なページを指定します。ページインデックスはゼロベースです。
+#### 透かしのページインデックスを設定する
+`DiagramPageWatermarkOptions` を使用して、透かしを表示する図面ページを決定します。
 
 ```java
 DiagramPageWatermarkOptions textWatermarkOptions = new DiagramPageWatermarkOptions();
 textWatermarkOptions.setPageIndex(0); // First page (index 0)
 ```
 
-### テキスト透かしの追加
-選択したページにウォーターマークを適用します。
+#### テキスト透かしの追加
+設定した透かしを図面に追加します。
 
 ```java
 watermarker.add(textWatermark, textWatermarkOptions);
 ```
 
-## **add image watermark java** – 画像ウォーターマーク
+### 特定のページに画像透かしを追加する
+`ImageWatermark` オブジェクトを使用して、画像透かしでも同様の手順を行います。
 
-### 画像透かしを作成する
-オーバーレイしたい画像（例: 会社ロゴ）を読み込みます。
+#### 画像透かしの作成
+目的の透かし画像パスを指定して `ImageWatermark` のインスタンスを作成します。
 
 ```java
 ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
 imageWatermark.setOpacity(0.7f);
 ```
 
-### 画像透かしのページインデックスを設定する
-画像ウォーターマークを表示させるページを選択します。
+#### 透かしのページインデックスを設定する
+画像透かしを表示するページを指定します。
 
 ```java
 DiagramPageWatermarkOptions imageWatermarkOptions = new DiagramPageWatermarkOptions();
 imageWatermarkOptions.setPageIndex(1); // Second page (index 1)
 ```
 
-### 画像透かしを追加する
-選択したページに画像ウォーターマークを挿入します。
+#### 画像透かしの追加
+指定した図面ページに画像を追加します。
 
 ```java
 watermarker.add(imageWatermark, imageWatermarkOptions);
 ```
 
-## リソースを保存して閉じる
-すべてのウォーターマークを追加したら、変更を保存しリソースをクリーンアップします。
+### 保存とリソースのクローズ
+変更を保存し、リソースをクローズしてリークを防止してください。
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_diagram.vsdx");
@@ -143,59 +136,52 @@ textWatermark.close();
 imageWatermark.close();
 ```
 
-## 実際のアプリケーション
-- **ドキュメントセキュリティ** – パートナーと共有する前にドラフト図に「Confidential」ラベルを付与  
-- **ブランディング** – 技術図面の特定ページにロゴをスタンプ  
-- **著作権保護** – 高価値の図に著作権表示を埋め込み、無断使用を防止  
+## 実用例
+- **ドキュメントのセキュリティ** – 機密図面が含まれるページのみに機密透かしを適用します。  
+- **ブランディング** – カバーページに会社ロゴを配置し、内部ページはクリーンに保ちます。  
+- **著作権保護** – 技術図面パックの最終ページに著作権表示を追加します。
 
-## パフォーマンスに関する考慮事項
-- 大きなファイルではメモリ使用量を効率的に管理  
-- 画像をウォーターマークとして使用する前にサイズを最適化し、処理速度を向上  
-- 保存後はすべてのウォーターマークオブジェクトを閉じ、Java のガベージコレクションを活用  
+## パフォーマンス上の考慮点
+- **メモリ管理** – 保存後に各透かしオブジェクトをクローズし、ネイティブリソースを解放します。  
+- **画像最適化** – 適切なサイズの PNG/JPEG ファイルを使用して処理を高速化します。  
+- **バッチ処理** – 多数の図面を処理する場合、可能な限り単一の `Watermarker` インスタンスを再利用します。
 
 ## よくある問題と解決策
-| 症状 | 考えられる原因 | 対処法 |
-|---|---|---|
-| ウォーターマークが表示されない | ページインデックスが間違っている | 意図したページに対応するゼロベースのインデックスか確認してください。 |
-| 画像が歪んで表示される | 高解像度の元画像 | 画像を適切なサイズ（例: 300×300px）にリサイズしてください。 |
-| 本番環境でライセンスエラー | トライアルライセンスのみ使用 | `License.setLicense("path/to/license.file")` でフルライセンスファイルを適用してください。 |
-| 大きな図の処理が遅い | ファイルサイズが大きく、リソースが閉じられていない | `Watermarker` と個々のウォーターマークオブジェクトを速やかに閉じてください。 |
+| 症状 | 考えられる原因 | 対策 |
+|---------|--------------|-----|
+| 透かしが表示されない | `pageIndex` が間違っている（0 ベース） | インデックスが目的のページと一致しているか確認してください。 |
+| 画像が歪んで表示される | 高解像度の元画像 | `ImageWatermark` 作成前に画像のサイズを変更してください。 |
+| 本番環境でライセンスエラー | 期限切れのトライアルライセンスを使用している | `License.setLicense("path/to/license.json")` で正式なライセンスファイルを適用してください。 |
 
 ## よくある質問
 
-**Q1: 1 つの図ページに複数のウォーターマークを追加できますか？**  
-A: はい、同じ `DiagramPageWatermarkOptions` に対して異なるウォーターマークオブジェクトを使用し、`watermarker.add()` を呼び出すだけです。
+**Q1: 単一の図面ページに複数の透かしを追加できますか？**  
+A1: はい、同じページインデックスに対して異なる透かしオブジェクトを `watermarker.add()` で呼び出すだけです。
 
-**Q2: GroupDocs.Watermark for Java がサポートするファイル形式は何ですか？**  
-A: 各種図形および画像形式に対応しています。完全な一覧は [API ドキュメント](https://reference.groupdocs.com/watermark/java) をご確認ください。
+**Q2: GroupDocs.Watermark for Java がサポートしているファイル形式は何ですか？**  
+A2: 各種図面および画像形式をサポートしています。完全な一覧は [API ドキュメント](https://reference.groupdocs.com/watermark/java) をご確認ください。
 
-**Q3: トライアル版を使用する際のライセンス問題はどう対処すればよいですか？**  
-A: GroupDocs から無料の一時ライセンスを取得して開始できます。本番環境ではフルライセンスを購入し、すべての機能をアンロックしてください。
+**Q3: トライアル版使用時のライセンス問題はどう対処すればよいですか？**  
+A3: まず GroupDocs から無料の一時ライセンスを取得してください。本番環境で全機能を使用するには正式なライセンスを購入します。
 
-**Q4: ウォーターマークが期待通りに表示されない場合の一般的なトラブルシューティングは？**  
-A: ページインデックスが正しいか確認し、画像リソースへのパスを検証し、透明度設定が 0 になっていないか確認してください。
+**Q4: 透かしが期待通りに表示されない場合の一般的なトラブルシューティングのヒントは何ですか？**  
+A4: ページインデックスが正しいこと、画像リソースのファイルパスを再確認すること、さらに透かしの不透明度が 0 になっていないか確認してください。
 
-**Q5: ウォーターマークの外観をさらにカスタマイズするには？**  
-A: `TextWatermark` や `ImageWatermark` のメソッドを使用して、フォントサイズ、透明度、回転、位置などを調整できます。
-
-**Q6: 1 回の呼び出しで複数ページにウォーターマークを付けることは可能ですか？**  
-A: はい – `DiagramPageWatermarkOptions` インスタンスを作成し、ページインデックスのリストを設定して `watermarker.add()` に渡すだけです。
-
-**Q7: パスワード保護された図ファイルに対してもウォーターマークは適用できますか？**  
-A: はい、ロード時に `DiagramLoadOptions.setPassword("yourPassword")` でパスワードを指定すれば可能です。
+**Q5: 透かしの外観をさらにカスタマイズするには？**  
+A5: `TextWatermark` または `ImageWatermark` のメソッドを使用して、フォントサイズ、不透明度、回転、位置を調整できます。
 
 ## リソース
-- [GroupDocs.Watermark ドキュメント](https://docs.groupdocs.com/watermark/java/)  
-- [API リファレンスガイド](https://reference.groupdocs.com/watermark/java)  
-- [ライブラリのダウンロード](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub リポジトリ](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [無料サポートフォーラム](https://forum.groupdocs.com/c/watermark/10)  
-- [一時ライセンス情報](https://purchase.groupdocs.com/temporary-license/)  
+- [GroupDocs.Watermark ドキュメント](https://docs.groupdocs.com/watermark/java/)
+- [API リファレンスガイド](https://reference.groupdocs.com/watermark/java)
+- [ライブラリのダウンロード](https://releases.groupdocs.com/watermark/java/)
+- [GitHub リポジトリ](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [無料サポートフォーラム](https://forum.groupdocs.com/c/watermark/10)
+- [一時ライセンス情報](https://purchase.groupdocs.com/temporary-license/)
 
-これらのリソースを活用して、GroupDocs.Watermark for Java の理解と活用能力を深めてください。ウォーターマーク作業、楽しんでください！
+これらのリソースを活用して、GroupDocs.Watermark for Java の理解と活用力を深めてください。透かし作業をお楽しみください！
 
 ---
 
-**Last Updated:** 2025-12-17  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+**最終更新日:** 2026-02-16  
+**テスト環境:** GroupDocs.Watermark 24.11 for Java  
+**作者:** GroupDocs

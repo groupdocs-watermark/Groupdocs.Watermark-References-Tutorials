@@ -1,8 +1,8 @@
 ---
-date: '2025-12-17'
-description: Tanulja meg, hogyan helyezzen vízjelet egy adott diagramoldalra a GroupDocs.Watermark
-  for Java segítségével, hogyan adjon vízjelet a diagramhoz, és hogyan adjon képi
-  vízjelet Java-ban. Lépésről lépésre útmutató az IP védelméhez.
+date: '2026-02-16'
+description: Ismerje meg, hogyan lehet vízjelet elhelyezni egy adott diagramoldalon
+  a GroupDocs.Watermark for Java segítségével, beleértve, hogyan adhat hozzá képi
+  vízjelet Java-ban, és hogyan védheti meg fájljait.
 keywords:
 - GroupDocs Watermark Java
 - adding watermarks diagrams
@@ -13,37 +13,33 @@ url: /hu/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-ja
 weight: 1
 ---
 
-# Specifikus diagramoldal vízjelezése a GroupDocs.Watermark for Java használatával
+# Vízjel egy adott diagram oldalra a GroupDocs.Watermark for Java használatával
 
-A diagramok védelme kulcsfontosságú, különösen akkor, ha a szellemi tulajdon védelméről vagy a megfelelő forrásmegjelölés biztosításáról van szó. Ebben az útmutatóban megtanulja, hogyan **vízjelezzen egy specifikus diagramoldalt** a GroupDocs.Watermark for Java segítségével, akár **vízjelet szeretne hozzáadni a diagramhoz** szövegként, akár **képi vízjelet java‑stílusú** logóként. A útmutató végére képes lesz:
-
-- Zökkenőmentesen szöveges vízjeleket hozzáadni a kiválasztott diagramoldalakhoz.  
-- Képi vízjeleket beilleszteni a diagramok kijelölt részeibe.  
-- A GroupDocs.Watermark használata során a teljesítmény javítása.
-
-Győződjünk meg róla, hogy a környezet készen áll, mielőtt a kódba merülnénk.
+A diagramok védelme létfontosságú, különösen akkor, amikor **vízjelet kell elhelyezni egy adott diagram oldalra** a szellemi tulajdon védelme vagy a márka megjelölése érdekében. Ebben az útmutatóban lépésről lépésre megtanulja, hogyan adjon szöveges és képes vízjeleket a diagram fájl kiválasztott oldalaihoz a **GroupDocs.Watermark for Java** használatával. A végére készen áll majd a diagramok biztosítására és arra, hogy pontosan szabályozza, hol jelenik meg minden vízjel.
 
 ## Gyors válaszok
-- **Mit jelent a „watermark specific diagram page”?** Azt jelenti, hogy a vízjelet csak a diagramfájl kiválasztott oldalaira alkalmazzák, a többi oldal érintetlen marad.  
-- **Melyik könyvtárverzió szükséges?** GroupDocs.Watermark 24.11 vagy újabb.  
-- **Használhatok egyszerre szöveges és képi vízjelet ugyanazon az oldalon?** Igen – hívja meg a `watermarker.add()` metódust minden egyes vízjel típushoz.  
-- **Szükségem van licencre a fejlesztéshez?** Egy ideiglenes próbaverzió licenc működik teszteléshez; a termeléshez teljes licenc szükséges.  
-- **A Maven az egyetlen módja a könyvtár hozzáadásának?** Nem – a JAR fájlt közvetlenül is letöltheti (lásd az alább található „Direct Download” részt).
+- **Mi a fő cél?** Vízjelek hozzáadása a kiválasztott diagram oldalakhoz.  
+- **Melyik könyvtár szükséges?** GroupDocs.Watermark for Java (Maven vagy közvetlen letöltés).  
+- **Hozzáadhatok képes vízjelet Java-ban?** Igen – használja az `ImageWatermark`-t oldal‑specifikus beállításokkal.  
+- **Szükség van licencre?** Egy ideiglenes próbalicenc elegendő a teszteléshez; a teljes licenc szükséges a termeléshez.  
+- **Hány kódsorra van szükség?** Kevesebb, mint 30 sor egy teljes szöveg + képes vízjel munkafolyamathoz.
 
-## Mi a „watermark specific diagram page”?
-A **watermark specific diagram page** művelet egyetlen oldalra (vagy oldalcsoportokra) céloz egy diagramdokumentumban (pl. Visio *.vsdx*), és ráhelyez egy szöveges vagy képi réteget. Ez hasznos bizalmas vázlatok, márkajelzés vagy szerzői jogi megjegyzések esetén, anélkül, hogy az egész fájlt módosítaná.
+## Mi az a „vízjel egy adott diagram oldalra”?
+A **vízjel egy adott diagram oldalra** azt jelenti, hogy egy vizuális jelzést—szöveget vagy képet—csak a többoldalas diagram (pl. Visio . vsdx) általad kiválasztott oldalaira alkalmazza. Ez finomhangolt vezérlést biztosít a márka, a titoktartási megjegyzések vagy a szerzői jogi nyilatkozatok felett, anélkül, hogy az egész dokumentumot befolyásolná.
 
-## Miért használjuk a GroupDocs.Watermark for Java-t?
-A GroupDocs.Watermark egy magas szintű API-t biztosít, amely elrejti a diagramformátumok összetettségét, támogatja a kötegelt feldolgozást, és finomhangolt vezérlést nyújt az átlátszóság, a pozicionálás és az oldalválasztás felett. Emellett zökkenőmentesen integrálódik a Maven-nel és a szabványos Java build eszközökkel.
+## Miért használja a GroupDocs.Watermark for Java-t?
+- **Teljes oldalvezérlés** – célozzon meg bármely szükséges oldal indexet.  
+- **Gazdag stílus** – betűtípusok, színek, átlátszóság, forgatás és képméretezés mind konfigurálható.  
+- **Teljesítmény‑optimalizált** – hatékonyan dolgozik nagy diagramokkal, és zökkenőmentesen integrálódik a Maven buildekkel.  
+- **Keresztformátumú támogatás** – működik Visio, SVG és számos más diagramformátummal.
 
-## Előfeltételek
-- **GroupDocs.Watermark for Java** könyvtár 24.11 vagy újabb verziója telepítve.  
-- Fejlesztői környezet Maven-nel (vagy a JAR manuális hozzáadásának lehetőségével).  
-- Alapvető Java ismeretek és fájlrendszer hozzáférés.  
+## Előkövetelmények
+- **GroupDocs.Watermark for Java** könyvtár 24.11 vagy újabb verziója.  
+- Maven vagy közvetlen JAR letöltés.  
+- Alap Java fejlesztői környezet (JDK 8+ ajánlott).
 
 ## A GroupDocs.Watermark for Java beállítása
-
-### Maven használata
+### Maven használata a groupdocs watermark-hez
 Adja hozzá a GroupDocs.Watermark-et a projektjéhez Maven-en keresztül, a következőt beillesztve a `pom.xml`-be:
 
 ```xml
@@ -65,23 +61,25 @@ Adja hozzá a GroupDocs.Watermark-et a projektjéhez Maven-en keresztül, a köv
 ```
 
 ### Közvetlen letöltés
-Alternatívaként töltheti le a legújabb verziót közvetlenül a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
+Alternatívaként töltse le a legújabb verziót közvetlenül a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
 
 #### Licenc beszerzése
-Kezdje egy ingyenes próbaidőszakkal, ideiglenes licenc letöltésével. A vásárlási lehetőségek elérhetők a hivatalos weboldalon, ha a GroupDocs.Watermark használatát folytatni szeretné.
+Kezdje egy ingyenes próbaidőszakkal, egy ideiglenes licenc letöltésével. Vásárlási lehetőségek elérhetők a hivatalos oldalon, ha a GroupDocs.Watermark használatát folytatni szeretné.
 
-### Alapvető inicializálás és beállítás
-Miután a könyvtár elérhető, hozzon létre egy `Watermarker` példányt, amely a védendő diagramra mutat:
+### Alap inicializálás és beállítás
+A telepítés után inicializálja a `Watermarker` osztályt a vízjelezési műveletekhez:
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-## Hogyan **add watermark to diagram** – Szöveges vízjel
+## Implementációs útmutató
+### Szöveges vízjel hozzáadása egy adott oldalhoz
+Szöveges vízjel hozzáadásához hozza létre és konfigurálja azt, mielőtt megadná a céloldalt.
 
-### Szöveges vízjel létrehozása
-Határozza meg a szöveget, betűtípust, színt és átlátszóságot, amelyet alkalmazni szeretne:
+#### Szöveges vízjel létrehozása
+Határozza meg a szöveges vízjelet testreszabható tartalommal, betűstílussal, mérettel stb.:
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Confidential", new Font("Arial", 18));
@@ -89,48 +87,49 @@ textWatermark.setForegroundColor(Color.BLUE);
 textWatermark.setOpacity(0.5f);
 ```
 
-### Állítsa be a vízjel oldalindexét
-Adja meg a pontos oldalt, amelyet vízjelezni szeretne. Az oldalindexek nullától kezdődnek:
+#### A vízjel oldal indexének beállítása
+Határozza meg, melyik diagram oldal jeleníti meg a vízjelet a `DiagramPageWatermarkOptions` használatával:
 
 ```java
 DiagramPageWatermarkOptions textWatermarkOptions = new DiagramPageWatermarkOptions();
 textWatermarkOptions.setPageIndex(0); // First page (index 0)
 ```
 
-### Szöveges vízjel hozzáadása
-Alkalmazza a vízjelet a kiválasztott oldalra:
+#### Szöveges vízjel hozzáadása
+Adja hozzá a konfigurált vízjelet a diagramhoz:
 
 ```java
 watermarker.add(textWatermark, textWatermarkOptions);
 ```
 
-## Hogyan **add image watermark java** – Képi vízjel
+### Képes vízjel hozzáadása egy adott oldalhoz
+Kövesse a hasonló lépéseket a képes vízjelekhez egy `ImageWatermark` objektum használatával.
 
-### Képi vízjel létrehozása
-Töltse be a ráhelyezni kívánt képet (pl. egy vállalati logó):
+#### Képes vízjel létrehozása
+Hozzon létre egy `ImageWatermark` példányt a kívánt vízjel kép útvonalával:
 
 ```java
 ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
 imageWatermark.setOpacity(0.7f);
 ```
 
-### Állítsa be a képi vízjel oldalindexét
-Válassza ki azt az oldalt, amelyen a képi vízjel megjelenik:
+#### A vízjel oldal indexének beállítása
+Adja meg, melyik oldal jelenítse meg a képes vízjelet:
 
 ```java
 DiagramPageWatermarkOptions imageWatermarkOptions = new DiagramPageWatermarkOptions();
 imageWatermarkOptions.setPageIndex(1); // Second page (index 1)
 ```
 
-### Képi vízjel hozzáadása
-Illessze be a képi vízjelet a kiválasztott oldalra:
+#### Képes vízjel hozzáadása
+Adja hozzá a képet a megadott diagram oldalhoz:
 
 ```java
 watermarker.add(imageWatermark, imageWatermarkOptions);
 ```
 
-## Erőforrások mentése és lezárása
-A kívánt vízjelek hozzáadása után mentse a módosításokat és tisztítsa meg a környezetet:
+### Erőforrások mentése és lezárása
+Ne felejtse el menteni a változtatásokat és lezárni az erőforrásokat a szivárgások elkerülése érdekében:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_diagram.vsdx");
@@ -140,57 +139,51 @@ imageWatermark.close();
 ```
 
 ## Gyakorlati alkalmazások
-- **Dokumentum biztonság** – Alkalmazzon egy „Bizalmas” címkét a vázlatdiagramokra, mielőtt megosztaná partnerekkel.  
-- **Márkajelzés** – Nyomtatja rá a logóját a műszaki rajzok specifikus oldalaira.  
-- **Szerzői jogi védelem** – Ágyazzon be szerzői jogi megjegyzéseket a nagy értékű diagramokra a visszaélés elkerülése érdekében.  
+- **Dokumentum biztonság** – Alkalmazzon bizalmas vízjeleket csak az érzékeny vázlatokat tartalmazó oldalakon.  
+- **Márkaépítés** – Helyezze el a cég logóját a címlapra, miközben a belső oldalak tiszták maradnak.  
+- **Szerzői jogi védelem** – Tegyen szerzői jogi nyilatkozatot a technikai diagramcsomag utolsó oldalára.
 
 ## Teljesítmény szempontok
-- Kezelje hatékonyan a memóriát, különösen nagy fájlok esetén.  
-- Optimalizálja a képek méretét, mielőtt vízjeleként használja őket, a feldolgozás felgyorsítása érdekében.  
-- Használja ki a Java szemétgyűjtőjét, az összes vízjel objektumot a mentés után zárja le.  
+- **Memória kezelés** – Mentés után zárja be minden vízjel objektumot a natív erőforrások felszabadításához.  
+- **Kép optimalizálás** – Használjon megfelelő méretű PNG/JPEG fájlokat a gyors feldolgozás érdekében.  
+- **Kötegelt feldolgozás** – Sok diagram kezelésekor, ahol lehetséges, használja újra egyetlen `Watermarker` példányt.
 
 ## Gyakori problémák és megoldások
-
-| Tünet | Valószínű ok | Megoldás |
-|---|---|---|
-| A vízjel nem látható | Helytelen oldalindex | Ellenőrizze, hogy a nullától kezdődő index megegyezik a kívánt oldallal. |
-| A kép torzult | Nagy felbontású forráskép | Módosítsa a kép méretét egy ésszerű dimenzióra (pl. 300 × 300 px). |
-| Licenc hiba a termelésben | Csak próbaverzió licenc használata | Alkalmazzon teljes licencfájlt a `License.setLicense("path/to/license.file")` metódussal. |
-| Lassú feldolgozás nagy diagramok esetén | Nagy fájlméret és nem lezárt erőforrások | Zárja le a `Watermarker` és az egyes vízjel objektumokat azonnal. |
+| Tünet | Valószínű ok | Javítás |
+|---------|--------------|-----|
+| A vízjel nem látható | Hibás `pageIndex` (nulláról indul) | Ellenőrizze, hogy az index megfelel-e a kívánt oldalnak. |
+| A kép torzult | Nagy felbontású forráskép | Méretezze át a képet, mielőtt létrehozná az `ImageWatermark`-t. |
+| Licenc hiba a termelésben | Próbaverzió használata a lejárta után | Alkalmazzon teljes licencfájlt a `License.setLicense("path/to/license.json")` segítségével. |
 
 ## Gyakran feltett kérdések
 
-**Q1: Hozzáadhatok több vízjelet egyetlen diagramoldalhoz?**  
-A: Igen, egyszerűen hívja meg a `watermarker.add()` metódust különböző vízjel objektumokkal ugyanarra a `DiagramPageWatermarkOptions`-ra.
+**Q1: Hozzáadhatok több vízjelet egyetlen diagram oldalhoz?**  
+A1: Igen, egyszerűen hívja meg a `watermarker.add()`-t különböző vízjel objektumokkal ugyanarra az oldal indexre.
 
 **Q2: Milyen fájlformátumokat támogat a GroupDocs.Watermark for Java?**  
-A: Különféle diagram- és képformátumokat támogat. Tekintse meg a [API documentation](https://reference.groupdocs.com/watermark/java) teljes listáját.
+A2: Különféle diagram és kép formátumokat támogat. Tekintse meg a [API dokumentációt](https://reference.groupdocs.com/watermark/java) a teljes listáért.
 
-**Q3: Hogyan kezeljem a licencelési problémákat a próbaverzió használata során?**  
-A: Kezdje egy ingyenes ideiglenes licenccel a GroupDocs-tól. A termeléshez vásároljon teljes licencet a teljes funkcionalitás eléréséhez.
+**Q3: Hogyan kezeljem a licencelési problémákat próba verzió használata esetén?**  
+A3: Kezdje egy ingyenes ideiglenes licenccel a GroupDocs-tól. Vásároljon teljes licencet, hogy a termeléshez szükséges összes funkciót feloldja.
 
-**Q4: Milyen gyakori hibaelhárítási tippek vannak, ha a vízjelek nem jelennek meg a várt módon?**  
-A: Győződjön meg arról, hogy az oldalindex helyes, ellenőrizze a képes erőforrások fájlútvonalait, és erősítse meg, hogy az átlátszóság beállítása nem 0.
+**Q4: Melyek a gyakori hibakeresési tippek, ha a vízjelek nem jelennek meg a várt módon?**  
+A4: Győződjön meg arról, hogy az oldal index helyes, és ellenőrizze kétszer a kép erőforrások fájl útvonalait. Emellett ellenőrizze, hogy a vízjel átlátszósága nincs 0-ra állítva.
 
 **Q5: Hogyan testreszabhatom tovább a vízjel megjelenését?**  
-A: Állítsa be a betűméretet, átlátszóságot, forgatást és pozicionálást a `TextWatermark` vagy `ImageWatermark` metódusaival.
-
-**Q6: Lehetséges egyszerre több oldalt vízjelezni egy hívással?**  
-A: Igen – létrehozhat egy `DiagramPageWatermarkOptions` példányt, beállíthat egy oldalindex-listát, és átadhatja a `watermarker.add()` metódusnak.
-
-**Q7: Támogatja a GroupDocs.Watermark a jelszóval védett diagramfájlokat?**  
-A: Igen, a betöltés előtt megadhatja a jelszót a `DiagramLoadOptions.setPassword("yourPassword")` metódussal.
+A5: Állítsa be a betűméretet, átlátszóságot, forgatást és elhelyezést a `TextWatermark` vagy `ImageWatermark` által biztosított módszerekkel.
 
 ## Források
-- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)
-- [API Reference Guide](https://reference.groupdocs.com/watermark/java)
-- [Download Library](https://releases.groupdocs.com/watermark/java/)
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
-- [Temporary License Information](https://purchase.groupdocs.com/temporary-license/)
+- [GroupDocs.Watermark dokumentáció](https://docs.groupdocs.com/watermark/java/)
+- [API referencia útmutató](https://reference.groupdocs.com/watermark/java)
+- [Könyvtár letöltése](https://releases.groupdocs.com/watermark/java/)
+- [GitHub tároló](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Ingyenes támogatási fórum](https://forum.groupdocs.com/c/watermark/10)
+- [Ideiglenes licenc információk](https://purchase.groupdocs.com/temporary-license/)
 
-Fedezze fel ezeket a forrásokat, hogy mélyítse a GroupDocs.Watermark for Java megértését és képességeit. Boldog vízjelezést!
+Fedezze fel ezeket a forrásokat, hogy mélyítse megértését és képességeit a GroupDocs.Watermark for Java használatában. Boldog vízjelezést!
 
-**Legutóbb frissítve:** 2025-12-17  
-**Tesztelve ezzel:** GroupDocs.Watermark 24.11 for Java  
+---
+
+**Utolsó frissítés:** 2026-02-16  
+**Tesztelve:** GroupDocs.Watermark 24.11 for Java  
 **Szerző:** GroupDocs

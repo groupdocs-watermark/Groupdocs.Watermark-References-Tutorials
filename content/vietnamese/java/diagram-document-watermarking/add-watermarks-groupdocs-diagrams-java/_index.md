@@ -1,13 +1,12 @@
 ---
-date: '2025-12-17'
-description: Tìm hiểu cách chèn dấu nước vào trang sơ đồ cụ thể bằng GroupDocs.Watermark
-  cho Java, thêm dấu nước vào sơ đồ và thêm dấu nước hình ảnh bằng Java. Hướng dẫn
-  từng bước để bảo vệ sở hữu trí tuệ của bạn.
+date: '2026-02-16'
+description: Tìm hiểu cách thêm dấu nước vào trang sơ đồ cụ thể bằng GroupDocs.Watermark
+  cho Java, bao gồm cách thêm dấu nước hình ảnh trong Java và bảo vệ các tệp của bạn.
 keywords:
 - GroupDocs Watermark Java
 - adding watermarks diagrams
 - Java diagram document watermarking
-title: Đánh dấu trang sơ đồ cụ thể bằng GroupDocs.Watermark cho Java
+title: Thêm watermark vào trang sơ đồ cụ thể bằng GroupDocs.Watermark cho Java
 type: docs
 url: /vi/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/
 weight: 1
@@ -15,34 +14,32 @@ weight: 1
 
 # Đánh dấu trang biểu đồ cụ thể bằng GroupDocs.Watermark cho Java
 
-Bảo vệ các biểu đồ của bạn là điều quan trọng, đặc biệt khi liên quan đến việc bảo vệ sở hữu trí tuệ hoặc đảm bảo ghi nhận đúng nguồn. Trong hướng dẫn này, bạn sẽ học **cách watermark specific diagram page** với GroupDocs.Watermark cho Java, dù bạn cần **add watermark to diagram** dưới dạng văn bản hoặc **add image watermark java**‑style logos. Khi kết thúc hướng dẫn, bạn sẽ có thể:
-
-- Thêm watermark văn bản một cách liền mạch vào các trang biểu đồ đã chọn.  
-- Chèn watermark hình ảnh vào các phần được chỉ định của biểu đồ.  
-- Cải thiện hiệu năng khi sử dụng GroupDocs.Watermark.
+Bảo vệ các biểu đồ của bạn là rất quan trọng, đặc biệt khi bạn cần **watermark specific diagram page** để bảo vệ sở hữu trí tuệ hoặc ghi nhận thương hiệu. Trong hướng dẫn này, bạn sẽ học từng bước cách thêm cả dấu nước dạng văn bản và hình ảnh vào các trang đã chọn của tệp biểu đồ bằng **GroupDocs.Watermark for Java**. Khi kết thúc, bạn sẽ sẵn sàng bảo mật các biểu đồ và kiểm soát chính xác vị trí xuất hiện của mỗi dấu nước.
 
 ## Câu trả lời nhanh
-- **What does “watermark specific diagram page” mean?** Nó đề cập đến việc áp dụng watermark chỉ trên các trang được chọn của tệp biểu đồ, để các trang khác không bị ảnh hưởng.  
-- **Which library version is required?** GroupDocs.Watermark 24.11 hoặc mới hơn.  
-- **Can I use both text and image watermarks on the same page?** Có – gọi `watermarker.add()` cho mỗi loại watermark.  
-- **Do I need a license for development?** Giấy phép dùng thử tạm thời hoạt động cho việc thử nghiệm; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
-- **Is Maven the only way to add the library?** Không – bạn cũng có thể tải JAR trực tiếp (xem “Direct Download” bên dưới).
+- **Mục đích chính là gì?** Thêm dấu nước vào các trang biểu đồ đã chọn.  
+- **Thư viện nào được yêu cầu?** GroupDocs.Watermark for Java (Maven hoặc tải trực tiếp).  
+- **Tôi có thể thêm dấu nước hình ảnh java không?** Có – sử dụng `ImageWatermark` với các tùy chọn riêng cho trang.  
+- **Tôi có cần giấy phép không?** Giấy phép dùng thử tạm thời hoạt động cho việc thử nghiệm; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
+- **Có bao nhiêu dòng mã?** Ít hơn 30 dòng cho quy trình dấu nước văn bản + hình ảnh hoàn chỉnh.
 
-## “Watermark specific diagram page” là gì?
-Một thao tác **watermark specific diagram page** nhắm vào một trang duy nhất (hoặc một tập hợp các trang) trong tài liệu biểu đồ (ví dụ, Visio *.vsdx*) và chồng một lớp văn bản hoặc hình ảnh lên trên. Điều này hữu ích cho các bản nháp bảo mật, thương hiệu, hoặc thông báo bản quyền mà không làm thay đổi toàn bộ tệp.
+## “watermark specific diagram page” là gì?
+Một **watermark specific diagram page** có nghĩa là áp dụng một dấu hiệu trực quan—văn bản hoặc hình ảnh—chỉ vào các trang bạn chọn trong một biểu đồ đa trang (ví dụ, Visio . vsdx). Điều này cho phép bạn kiểm soát chi tiết về thương hiệu, thông báo bảo mật, hoặc tuyên bố bản quyền mà không ảnh hưởng đến toàn bộ tài liệu.
 
 ## Tại sao nên sử dụng GroupDocs.Watermark cho Java?
-GroupDocs.Watermark cung cấp một API cấp cao giúp trừu tượng hoá các phức tạp của định dạng biểu đồ, hỗ trợ xử lý hàng loạt, và cung cấp kiểm soát chi tiết về độ trong suốt, vị trí và lựa chọn trang. Nó cũng tích hợp mượt mà với Maven và các công cụ xây dựng Java tiêu chuẩn.
+- **Full page control** – nhắm mục tiêu bất kỳ chỉ mục trang nào bạn cần.  
+- **Rich styling** – phông chữ, màu sắc, độ trong suốt, xoay, và tỉ lệ hình ảnh đều có thể cấu hình.  
+- **Performance‑optimized** – xử lý các biểu đồ lớn một cách hiệu quả và tích hợp mượt mà với các dự án Maven.  
+- **Cross‑format support** – hoạt động với Visio, SVG và nhiều định dạng biểu đồ khác.
 
 ## Yêu cầu trước
-- Thư viện **GroupDocs.Watermark for Java** phiên bản 24.11 hoặc mới hơn đã được cài đặt.  
-- Môi trường phát triển có Maven (hoặc khả năng thêm JAR thủ công).  
-- Kiến thức cơ bản về Java và quyền truy cập hệ thống tệp.
+- **GroupDocs.Watermark for Java** phiên bản 24.11 hoặc mới hơn.  
+- Maven hoặc tải JAR trực tiếp.  
+- Môi trường phát triển Java cơ bản (khuyến nghị JDK 8+).
 
 ## Cài đặt GroupDocs.Watermark cho Java
-
-### Sử dụng Maven
-Bao gồm GroupDocs.Watermark trong dự án của bạn qua Maven bằng cách thêm đoạn sau vào `pom.xml`:
+### Sử dụng Maven groupdocs watermark
+Bao gồm GroupDocs.Watermark vào dự án của bạn qua Maven bằng cách thêm đoạn sau vào `pom.xml` của bạn:
 
 ```xml
 <repositories>
@@ -69,17 +66,19 @@ Hoặc tải phiên bản mới nhất trực tiếp từ [GroupDocs.Watermark f
 Bắt đầu với bản dùng thử miễn phí bằng cách tải giấy phép tạm thời. Các tùy chọn mua hàng có sẵn trên trang chính thức nếu bạn muốn tiếp tục sử dụng GroupDocs.Watermark.
 
 ### Khởi tạo và Cấu hình Cơ bản
-Khi thư viện đã sẵn sàng, tạo một thể hiện `Watermarker` trỏ tới biểu đồ bạn muốn bảo vệ:
+Sau khi cài đặt, khởi tạo lớp `Watermarker` để thực hiện các thao tác đánh dấu:
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-## Cách **add watermark to diagram** – Watermark Văn bản
+## Hướng dẫn triển khai
+### Thêm Dấu nước Văn bản vào Trang Cụ thể
+Để thêm dấu nước văn bản, tạo và cấu hình nó trước khi chỉ định trang mục tiêu.
 
-### Tạo Watermark Văn bản
-Xác định văn bản, phông chữ, màu sắc và độ trong suốt bạn muốn áp dụng:
+#### Tạo Dấu nước Văn bản
+Xác định dấu nước văn bản của bạn với nội dung tùy chỉnh, kiểu phông chữ, kích thước, v.v.:
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Confidential", new Font("Arial", 18));
@@ -87,48 +86,49 @@ textWatermark.setForegroundColor(Color.BLUE);
 textWatermark.setOpacity(0.5f);
 ```
 
-### Đặt chỉ số trang cho Watermark
-Chỉ định trang chính xác bạn muốn watermark. Các chỉ số trang bắt đầu từ 0:
+#### Đặt Chỉ mục Trang cho Dấu nước
+Xác định trang biểu đồ nào sẽ hiển thị dấu nước bằng cách sử dụng `DiagramPageWatermarkOptions`:
 
 ```java
 DiagramPageWatermarkOptions textWatermarkOptions = new DiagramPageWatermarkOptions();
 textWatermarkOptions.setPageIndex(0); // First page (index 0)
 ```
 
-### Thêm Watermark Văn bản
-Áp dụng watermark lên trang đã chọn:
+#### Thêm Dấu nước Văn bản
+Thêm dấu nước đã cấu hình vào biểu đồ:
 
 ```java
 watermarker.add(textWatermark, textWatermarkOptions);
 ```
 
-## Cách **add image watermark java** – Watermark Hình ảnh
+### Thêm Dấu nước Hình ảnh vào Trang Cụ thể
+Thực hiện các bước tương tự cho dấu nước hình ảnh bằng cách sử dụng đối tượng `ImageWatermark`.
 
-### Tạo Watermark Hình ảnh
-Tải hình ảnh bạn muốn chồng lên (ví dụ, logo công ty):
+#### Tạo Dấu nước Hình ảnh
+Tạo một thể hiện của `ImageWatermark` với đường dẫn hình ảnh dấu nước mong muốn:
 
 ```java
 ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
 imageWatermark.setOpacity(0.7f);
 ```
 
-### Đặt chỉ số trang cho Watermark Hình ảnh
-Chọn trang sẽ hiển thị watermark hình ảnh:
+#### Đặt Chỉ mục Trang cho Dấu nước
+Chỉ định trang nào sẽ hiển thị dấu nước hình ảnh:
 
 ```java
 DiagramPageWatermarkOptions imageWatermarkOptions = new DiagramPageWatermarkOptions();
 imageWatermarkOptions.setPageIndex(1); // Second page (index 1)
 ```
 
-### Thêm Watermark Hình ảnh
-Chèn watermark hình ảnh vào trang đã chọn:
+#### Thêm Dấu nước Hình ảnh
+Thêm hình ảnh vào trang biểu đồ đã chỉ định:
 
 ```java
 watermarker.add(imageWatermark, imageWatermarkOptions);
 ```
 
-## Lưu và Đóng Tài nguyên
-Sau khi thêm tất cả các watermark mong muốn, lưu các thay đổi và dọn dẹp:
+### Lưu và Đóng Tài nguyên
+Nhớ lưu các thay đổi và đóng tài nguyên để tránh rò rỉ:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_diagram.vsdx");
@@ -138,59 +138,51 @@ imageWatermark.close();
 ```
 
 ## Ứng dụng Thực tiễn
-- **Document Security** – Áp dụng nhãn “Confidential” cho các bản nháp biểu đồ trước khi chia sẻ với đối tác.  
-- **Branding** – Đóng dấu logo của bạn trên các trang cụ thể của sơ đồ kỹ thuật.  
-- **Copyright Protection** – Nhúng thông báo bản quyền trên các biểu đồ có giá trị cao để ngăn ngừa việc sử dụng trái phép.
+- **Document Security** – Áp dụng dấu nước bảo mật chỉ trên các trang chứa sơ đồ nhạy cảm.  
+- **Branding** – Đặt logo công ty của bạn trên trang bìa trong khi để các trang bên trong sạch sẽ.  
+- **Copyright Protection** – Thêm thông báo bản quyền vào trang cuối cùng của một bộ sơ đồ kỹ thuật.
 
-## Các lưu ý về Hiệu năng
-- Quản lý bộ nhớ hiệu quả, đặc biệt với các tệp lớn.  
-- Tối ưu kích thước hình ảnh trước khi dùng làm watermark để tăng tốc xử lý.  
-- Tận dụng cơ chế thu gom rác của Java bằng cách đóng tất cả các đối tượng watermark sau khi lưu.
+## Các yếu tố về Hiệu năng
+- **Memory Management** – Đóng mỗi đối tượng dấu nước sau khi lưu để giải phóng tài nguyên gốc.  
+- **Image Optimization** – Sử dụng các tệp PNG/JPEG có kích thước phù hợp để giữ tốc độ xử lý nhanh.  
+- **Batch Processing** – Khi xử lý nhiều biểu đồ, tái sử dụng một thể hiện `Watermarker` duy nhất nếu có thể.
 
 ## Các vấn đề thường gặp và Giải pháp
-
-| Triệu chứng | Nguyên nhân có thể | Giải pháp |
-|---|---|---|
-| Watermark không hiển thị | Chỉ số trang sai | Xác minh chỉ số bắt đầu từ 0 khớp với trang mong muốn. |
-| Hình ảnh bị biến dạng | Hình ảnh nguồn có độ phân giải cao | Thu nhỏ hình ảnh về kích thước hợp lý (ví dụ, 300 × 300 px). |
-| Lỗi giấy phép trong môi trường sản xuất | Chỉ dùng giấy phép dùng thử | Áp dụng file giấy phép đầy đủ qua `License.setLicense("path/to/license.file")`. |
-| Xử lý chậm với biểu đồ lớn | Kích thước tệp lớn & tài nguyên chưa được đóng | Đóng `Watermarker` và các đối tượng watermark riêng lẻ kịp thời. |
+| Triệu chứng | Nguyên nhân khả dĩ | Cách khắc phục |
+|------------|---------------------|----------------|
+| Dấu nước không hiển thị | Sai `pageIndex` (đánh số từ 0) | Xác minh chỉ mục khớp với trang mong muốn. |
+| Hình ảnh bị biến dạng | Hình ảnh nguồn độ phân giải cao | Thay đổi kích thước hình ảnh trước khi tạo `ImageWatermark`. |
+| Lỗi giấy phép trong môi trường sản xuất | Sử dụng giấy phép dùng thử vượt quá thời hạn | Áp dụng tệp giấy phép đầy đủ qua `License.setLicense("path/to/license.json")`. |
 
 ## Câu hỏi thường gặp
 
-**Q1: Can I add multiple watermarks to a single diagram page?**  
-A: Có, chỉ cần gọi `watermarker.add()` với các đối tượng watermark khác nhau cho cùng một `DiagramPageWatermarkOptions`.
+**Q1: Tôi có thể thêm nhiều dấu nước vào một trang biểu đồ duy nhất không?**  
+A1: Có, chỉ cần gọi `watermarker.add()` với các đối tượng dấu nước khác nhau cho cùng một chỉ mục trang.
 
-**Q2: What file formats are supported by GroupDocs.Watermark for Java?**  
-A: Nó hỗ trợ nhiều định dạng biểu đồ và hình ảnh. Kiểm tra [API documentation](https://reference.groupdocs.com/watermark/java) để biết danh sách đầy đủ.
+**Q2: Các định dạng tệp nào được GroupDocs.Watermark cho Java hỗ trợ?**  
+A2: Nó hỗ trợ nhiều định dạng biểu đồ và hình ảnh. Kiểm tra [API documentation](https://reference.groupdocs.com/watermark/java) để xem danh sách đầy đủ.
 
-**Q3: How do I handle licensing issues when using a trial version?**  
-A: Bắt đầu với giấy phép tạm thời miễn phí từ GroupDocs. Đối với môi trường sản xuất, mua giấy phép đầy đủ để mở khóa tất cả tính năng.
+**Q3: Làm thế nào để xử lý các vấn đề giấy phép khi sử dụng phiên bản dùng thử?**  
+A3: Bắt đầu với giấy phép tạm thời miễn phí từ GroupDocs. Mua giấy phép đầy đủ để mở khóa tất cả tính năng cho môi trường sản xuất.
 
-**Q4: What are some common troubleshooting tips if watermarks don’t appear as expected?**  
-A: Đảm bảo chỉ số trang đúng, xác minh đường dẫn tệp cho tài nguyên hình ảnh, và chắc chắn rằng cài đặt độ trong suốt không đặt về 0.
+**Q4: Một số mẹo khắc phục sự cố thường gặp nếu dấu nước không hiển thị như mong đợi là gì?**  
+A4: Đảm bảo chỉ mục trang đúng và kiểm tra lại đường dẫn tệp cho tài nguyên hình ảnh. Ngoài ra, xác nhận độ trong suốt của dấu nước không được đặt là 0.
 
-**Q5: How can I customize watermark appearance further?**  
-A: Điều chỉnh kích thước phông chữ, độ trong suốt, góc quay và vị trí bằng các phương thức trên `TextWatermark` hoặc `ImageWatermark`.
-
-**Q6: Is it possible to watermark multiple pages in one call?**  
-A: Có – bạn có thể tạo một thể hiện `DiagramPageWatermarkOptions`, đặt danh sách các chỉ số trang, và truyền nó vào `watermarker.add()`.
-
-**Q7: Does GroupDocs.Watermark support password‑protected diagram files?**  
-A: Có, bạn có thể cung cấp mật khẩu qua `DiagramLoadOptions.setPassword("yourPassword")` trước khi tải.
+**Q5: Làm thế nào tôi có thể tùy chỉnh thêm giao diện dấu nước?**  
+A5: Điều chỉnh kích thước phông chữ, độ trong suốt, xoay và vị trí bằng các phương thức có sẵn trên `TextWatermark` hoặc `ImageWatermark`.
 
 ## Tài nguyên
-- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)
-- [API Reference Guide](https://reference.groupdocs.com/watermark/java)
-- [Download Library](https://releases.groupdocs.com/watermark/java/)
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
-- [Temporary License Information](https://purchase.groupdocs.com/temporary-license/)
+- [Tài liệu GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)
+- [Hướng dẫn Tham chiếu API](https://reference.groupdocs.com/watermark/java)
+- [Tải thư viện](https://releases.groupdocs.com/watermark/java/)
+- [Kho GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Diễn đàn Hỗ trợ Miễn phí](https://forum.groupdocs.com/c/watermark/10)
+- [Thông tin Giấy phép Tạm thời](https://purchase.groupdocs.com/temporary-license/)
 
-Khám phá các tài nguyên này để nâng cao hiểu biết và khả năng của bạn với GroupDocs.Watermark cho Java. Chúc bạn watermark thành công!
+Khám phá các tài nguyên này để nâng cao hiểu biết và khả năng của bạn với GroupDocs.Watermark cho Java. Chúc bạn đánh dấu thành công!
 
 ---
 
-**Last Updated:** 2025-12-17  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+**Cập nhật lần cuối:** 2026-02-16  
+**Đã kiểm tra với:** GroupDocs.Watermark 24.11 cho Java  
+**Tác giả:** GroupDocs

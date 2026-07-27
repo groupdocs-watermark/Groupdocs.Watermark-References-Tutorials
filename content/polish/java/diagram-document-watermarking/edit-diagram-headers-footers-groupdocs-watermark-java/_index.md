@@ -1,46 +1,46 @@
 ---
-date: '2025-12-17'
-description: Dowiedz się, jak edytować nagłówek i jak zamienić stopkę w plikach diagramów
-  przy użyciu GroupDocs.Watermark dla Javy. Postępuj zgodnie z tym przewodnikiem krok
-  po kroku.
+date: '2026-02-16'
+description: Dowiedz się, jak edytować nagłówki diagramów w Javie i dodać znak wodny
+  do diagramu przy użyciu GroupDocs.Watermark dla Javy. Postępuj zgodnie z tym przewodnikiem
+  krok po kroku, aby ulepszyć swoje dokumenty.
 keywords:
 - edit diagram headers footers
 - groupdocs watermark java
 - diagram document watermarking
-title: Jak edytować nagłówek w diagramach Java za pomocą GroupDocs.Watermark
+title: Edytuj nagłówki diagramów w Javie przy użyciu GroupDocs.Watermark
 type: docs
 url: /pl/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Jak edytować nagłówek w diagramach Java przy użyciu GroupDocs.Watermark
+# Edytowanie nagłówków diagramów w Javie z GroupDocs.Watermark
 
-W nowoczesnej dokumentacji technicznej, znajomość **jak edytować nagłówek** w plikach diagramów może zaoszczędzić godziny ręcznej pracy. Niezależnie od tego, czy musisz usunąć przestarzały tytuł, zastąpić stopkę brandingiem, czy dodać informacje o kontroli wersji, GroupDocs.Watermark for Java ułatwia te zadania. Ten przewodnik przeprowadzi Cię przez każdy krok, od konfiguracji biblioteki po dostosowywanie nagłówków i stopek, a także podzieli się wskazówkami najlepszych praktyk dla środowiska produkcyjnego.
+W nowoczesnej dokumentacji technicznej i prezentacjach **edit diagram headers java** jest częstym wymaganiem — niezależnie od tego, czy musisz usunąć przestarzałe tytuły, wstawić branding, czy spełnić wymogi prawne dotyczące stopki. Ten samouczek przeprowadzi Cię przez użycie GroupDocs.Watermark dla Javy do szybkiej i niezawodnej edycji nagłówków i stopek diagramów.
 
 ## Szybkie odpowiedzi
-- **Jaka biblioteka obsługuje edycję nagłówka?** GroupDocs.Watermark for Java  
-- **Czy mogę zastąpić stopkę własnym tekstem?** Tak – użyj metody `setFooterCenter`  
-- **Czy usunięcie nagłówka jest obsługiwane?** Absolutnie, wywołaj `setHeaderCenter(null)`  
-- **Czy potrzebna jest licencja do produkcji?** Wersja próbna działa w testach; wymagana jest płatna licencja do użytku komercyjnego  
-- **Jakiej wersji Javy wymaga?** JDK 8 lub nowsza  
+- **What library do I need?** GroupDocs.Watermark for Java.  
+- **Can I edit both headers and footers?** Yes, the API lets you modify each independently.  
+- **Do I need a license?** A trial works for development; a commercial license is required for production.  
+- **Which diagram formats are supported?** Visio (`.vsdx`, `.vsd`), among others.  
+- **Is batch processing possible?** Absolutely—loop through files with the same Watermarker logic.
 
-## Co oznacza „jak edytować nagłówek” w kontekście diagramów?
-Edycja nagłówka oznacza programowe uzyskanie dostępu do kontenera nagłówka/stopki diagramu oraz zmianę, usunięcie lub dodanie tekstu lub grafiki. Dzięki GroupDocs.Watermark manipulujesz obiektem `DiagramContent`, który abstrahuje strukturę VSDX.
+## Co to jest „edit diagram headers java”?
+Edycja nagłówków diagramów w Javie oznacza programowe uzyskanie dostępu do pliku diagramu (np. Visio) i zmianę lub usunięcie tekstu wyświetlanego u góry każdej strony. GroupDocs.Watermark udostępnia wysokopoziomowe API, które abstrahuje szczegóły formatu pliku, pozwalając skupić się na logice biznesowej.
 
-## Dlaczego warto używać GroupDocs.Watermark do manipulacji nagłówkiem i stopką?
-- **Pełne wsparcie formatów** – działa z Visio, VSDX i innymi typami diagramów.  
-- **Brak zależności od UI** – idealne dla usług backendowych, zadań wsadowych lub pipeline'ów CI.  
-- **Bogate formatowanie** – zmień czcionkę, rozmiar, kolor i nawet osadź obrazy.  
-- **Optymalizacja wydajności** – niski zużycie pamięci przy dużych partiach.  
+## Dlaczego używać GroupDocs.Watermark do add watermark to diagram?
+- **No external dependencies** – works with plain Java.  
+- **Rich styling options** – fonts, colors, and positioning are fully controllable.  
+- **Batch‑ready** – process dozens of files in a single run.  
+- **Cross‑format support** – the same code works for PDFs, images, and Office documents.
 
 ## Wymagania wstępne
 - **Java Development Kit (JDK)** 8 lub nowszy.  
-- **GroupDocs.Watermark for Java** biblioteka (dodana jako zależność Maven).  
-- Podstawowa znajomość operacji I/O w Javie.
+- **GroupDocs.Watermark for Java** library (added as a Maven dependency or downloaded manually).  
+- Podstawowa znajomość Java I/O.
 
-## Konfiguracja GroupDocs.Watermark dla Java
-### Maven Setup
-Dodaj repozytorium i zależność do pliku `pom.xml`:
+## Konfiguracja GroupDocs.Watermark dla Javy
+### Konfiguracja Maven
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -60,14 +60,14 @@ Dodaj repozytorium i zależność do pliku `pom.xml`:
 </dependencies>
 ```
 
-### Direct Download
-Alternatywnie, pobierz najnowszy plik JAR z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Bezpośrednie pobranie
+Alternatively, download the latest JAR from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### License Acquisition
-Aby uruchomić bez ograniczeń wersji próbnej, uzyskaj licencję ze [strony licencyjnej](https://purchase.groupdocs.com/temporary-license/). Klucz próbny działa w środowisku deweloperskim i testowym.
+### Uzyskanie licencji
+To run without evaluation limits, obtain a license from the [license page](https://purchase.groupdocs.com/temporary-license/). A free trial is sufficient for experimenting.
 
-### Initialize the Watermarker
-Poniższy fragment kodu pokazuje minimalny kod potrzebny do utworzenia instancji `Watermarker` dla pliku diagramu:
+## Inicjalizacja Watermarker
+The first step is to create a `Watermarker` instance that points to your diagram file:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -83,12 +83,9 @@ public class InitializeWatermarker {
 }
 ```
 
-## Przewodnik implementacji
-### Ładowanie i inicjalizacja Watermarker
-**Jak edytować nagłówek** zaczyna się od załadowania diagramu do pamięci.
-
-#### Krok 1: Utwórz DiagramLoadOptions
-Jeśli potrzebujesz niestandardowego zachowania ładowania (np. pliki chronione hasłem), skonfiguruj `DiagramLoadOptions`:
+## Ładowanie i inicjalizacja Watermarker z niestandardowymi opcjami
+### Krok 1: Utwórz DiagramLoadOptions
+You can fine‑tune how the diagram is loaded by using `DiagramLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.options.DiagramLoadOptions;
@@ -96,8 +93,8 @@ import com.groupdocs.watermark.options.DiagramLoadOptions;
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 ```
 
-#### Krok 2: Załaduj dokument
-Przekaż opcje do konstruktora `Watermarker`:
+### Krok 2: Załaduj dokument
+Pass the options when constructing the `Watermarker`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -105,11 +102,9 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-### Jak usunąć nagłówek z diagramu
-Usunięcie istniejącego nagłówka jest często wymagane, gdy pierwotny tytuł nie jest już istotny.
-
-#### Krok 1: Uzyskaj dostęp do DiagramContent
-Pobierz obiekt zawartości, który udostępnia kontrolki nagłówka/stopki:
+## Usuwanie nagłówka z diagramu
+### Krok 1: Uzyskaj dostęp do zawartości diagramu
+Retrieve the content object that gives you direct access to header/footer sections:
 
 ```java
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -117,18 +112,16 @@ import com.groupdocs.watermark.contents.DiagramContent;
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 ```
 
-#### Krok 2: Usuń nagłówek
-Ustaw centralny slot nagłówka na `null`. To skutecznie usuwa nagłówek:
+### Krok 2: Usuń nagłówek
+Setting the header center to `null` removes the header entirely:
 
 ```java
 content.getHeaderFooter().setHeaderCenter(null);
 ```
 
-### Jak zastąpić stopkę w diagramie
-Zastąpienie stopki pozwala **dodać stopkę brandingową** lub wstawić informacje o wersji.
-
-#### Krok 1: Ustaw nowy tekst stopki
-Podaj nowy ciąg tekstowy stopki:
+## Zastąpienie stopki w diagramie
+### Krok 1: Ustaw nowy tekst stopki
+You can replace the existing footer with any custom string:
 
 ```java
 import com.groupdocs.watermark.watermarks.Color;
@@ -136,8 +129,8 @@ import com.groupdocs.watermark.watermarks.Color;
 content.getHeaderFooter().setFooterCenter("New Footer Text");
 ```
 
-#### Krok 2: Dostosuj właściwości czcionki
-Dostosuj rozmiar, rodzinę i kolor, aby pasowały do stylu korporacyjnego:
+### Krok 2: Dostosuj właściwości czcionki
+Adjust size, family, and color to match your branding:
 
 ```java
 content.getHeaderFooter().getFont().setSize(19);
@@ -145,68 +138,69 @@ content.getHeaderFooter().getFont().setFamilyName("Calibri");
 content.getHeaderFooter().setTextColor(Color.getRed());
 ```
 
-> **Wskazówka:** Użyj `setFooterCenter` razem z `setFooterLeft` lub `setFooterRight`, aby umieścić logo po jednej stronie i dane wersji po drugiej, uzyskując **stopki kontroli wersji**.
-
-### Zapisz i zamknij Watermarker
-Po edycji zapisz zmiany i zwolnij zasoby.
-
-#### Krok 1: Zapisz zmiany
-Wybierz ścieżkę wyjściową różną od pliku źródłowego:
+## Zapis i zamknięcie Watermarker
+### Krok 1: Zapisz zmiany
+Write the modified diagram to a new file:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output.vsdx");
 ```
 
-#### Krok 2: Zamknij Watermarker
-Zawsze zamykaj, aby zwolnić pamięć, szczególnie w scenariuszach wsadowych:
+### Krok 2: Zamknij Watermarker
+Always close the instance to free native resources:
 
 ```java
 watermarker.close();
 ```
 
 ## Praktyczne zastosowania
-1. **Branding Documents** – Wstaw logo firmy lub slogan do stopki (`add branding footer`).  
-2. **Version Control Footers** – Dodaj numery wersji lub daty rewizji do stopki w celu śledzenia audytu.  
-3. **Legal Compliance** – Dodaj obowiązkowy tekst zastrzeżenia do stopki we wszystkich diagramach.
+1. **Branding Documents** – Insert company logos or taglines in headers/footers.  
+2. **Version Control** – Append version numbers or dates automatically.  
+3. **Legal Compliance** – Add mandatory disclaimer text to every diagram.
 
 ## Rozważania dotyczące wydajności
-- **Optymalizacja użycia pamięci** – Przetwarzaj diagramy pojedynczo lub używaj strumieniowania, gdy to możliwe.  
-- **Przetwarzanie wsadowe** – Przeglądaj listę plików, ponownie używając jednej instancji `Watermarker`, gdy jest to bezpieczne.  
-- **Obsługa błędów** – Otaczaj operacje plikowe blokami `try‑catch`, aby przechwycić `IOException` lub `WatermarkerException`.
+- **Optimize Memory Usage** – Dispose of `Watermarker` objects promptly.  
+- **Batch Processing** – Loop through a folder of diagrams to apply the same header/footer logic.  
+- **Error Handling** – Wrap file operations in `try‑catch` blocks to capture `IOException` or `WatermarkException`.
 
-## Zakończenie
-Teraz wiesz **jak edytować nagłówek**, **jak usunąć nagłówek** i **jak zastąpić stopkę** w plikach diagramów przy użyciu GroupDocs.Watermark for Java. Postępując zgodnie z powyższymi krokami, możesz zautomatyzować branding, wymusić kontrolę wersji i utrzymać spójną dokumentację w dużych projektach.
-
-Śmiało eksploruj dodatkowe funkcje znakowania wodnego — takie jak znaki wodne obrazu lub dynamiczny tekst — przeglądając oficjalną dokumentację i dzieląc się wynikami na forum społeczności.
+## Częste problemy i rozwiązania
+| Issue | Why It Happens | How to Fix |
+|-------|----------------|------------|
+| **Header not removed** | The diagram uses a different header region (left/right). | Use `setHeaderLeft(...)` or `setHeaderRight(...)` as needed. |
+| **Font changes not visible** | The diagram overrides font settings with a style sheet. | Call `content.getHeaderFooter().getFont().setBold(true)` or adjust style hierarchy. |
+| **License not recognized** | License file path is incorrect. | Place `license.lic` in the project root and load it with `License license = new License(); license.setLicense("license.lic");` before creating `Watermarker`. |
 
 ## Najczęściej zadawane pytania
 
-**Q: Czym jest GroupDocs.Watermark for Java?**  
-A: Potężna biblioteka, która pozwala dodawać, edytować lub usuwać znaki wodne, nagłówki i stopki w szerokim zakresie typów dokumentów, w tym diagramów.
+**Q: Can I edit both headers and footers in the same run?**  
+A: Yes—simply call the appropriate `setHeader...` and `setFooter...` methods before saving.
 
-**Q: Czy mogę używać go z formatami plików innymi niż VSDX?**  
-A: Tak, biblioteka obsługuje PDF‑y, obrazy, pliki Office i inne.
+**Q: Does GroupDocs.Watermark support password‑protected diagrams?**  
+A: It does. Provide the password in `DiagramLoadOptions.setPassword("yourPassword")`.
 
-**Q: Czy korzystanie z biblioteki wiąże się z kosztami?**  
-A: Dostępna jest darmowa wersja próbna; płatna licencja jest wymagana przy wdrożeniach produkcyjnych.
+**Q: Is it possible to add an image watermark together with header/footer changes?**  
+A: Absolutely. Use `watermarker.add(watermark)` where `watermark` is an instance of `ImageWatermark`.
 
-**Q: Jak powinienem obsługiwać błędy podczas ładowania diagramu?**  
-A: Otocz kod ładowania blokiem `try‑catch` i zaloguj szczegóły `WatermarkerException` w celu rozwiązywania problemów.
+**Q: How large a diagram can I process?**  
+A: The library handles files up to several hundred megabytes; monitor JVM heap and increase it if necessary.
 
-**Q: Czy mogę dostosować czcionkę i kolor stopki?**  
-A: Oczywiście — użyj `getFont().setSize()`, `setFamilyName()` i `setTextColor()` jak pokazano w przykładzie.
+**Q: Are there any limits in the free trial?**  
+A: The trial allows full functionality but may embed a watermark indicating it’s a trial version.
 
-**Q: Gdzie mogę poprosić społeczność o pomoc?**  
-A: Zadawaj pytania na [forum GroupDocs](https://forum.groupdocs.com/c/watermark/10).
+## Zakończenie
+You now have a complete, production‑ready workflow to **edit diagram headers java** and even **add watermark to diagram** using GroupDocs.Watermark. By following the steps above, you can automate branding, versioning, and compliance across large sets of diagram files.
 
-**Dodatkowe zasoby**
-- [Dokumentacja GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)
-- [Referencja API](https://reference.groupdocs.com/watermark/java)
-- [Pobierz GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
-- [Repozytorium GitHub](https://github.com/groupdocs-watermark/GroupDocs.Wat)
+To keep expanding your expertise, explore other watermarking features such as image watermarks, text watermarks, and batch processing patterns. Share your experiences on the community forum!
+
+**Resources**  
+- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- [API Reference](https://reference.groupdocs.com/watermark/java)  
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)  
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Wat)  
+- [GroupDocs forums](https://forum.groupdocs.com/c/watermark/10)
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-17  
-**Testowano z:** GroupDocs.Watermark 24.11 for Java  
-**Autor:** GroupDocs
+**Last Updated:** 2026-02-16  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  
