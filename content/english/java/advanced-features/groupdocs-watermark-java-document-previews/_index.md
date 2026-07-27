@@ -60,9 +60,6 @@ Add the library to your project using Maven:
 </dependencies>
 ```
 
-Or download the JAR directly from the official page:  
-[GroupDocs.Watermark for Java releases]({{< relref "groupdocs-watermark-java-releases.md" >}})
-
 ### License Acquisition
 
 - **Free Trial** – limited functionality, great for testing.  
