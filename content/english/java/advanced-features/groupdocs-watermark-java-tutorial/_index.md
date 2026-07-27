@@ -31,8 +31,6 @@ Protecting documents and images from unauthorized use is a top priority for deve
 - **Performance‑optimized** – batch operations like watermarking multiple pages are handled efficiently.  
 - **Enterprise‑ready licensing** – trial for testing, commercial license for production.
 
-For a broader overview, see the [GroupDocs.Watermark Java overview]({{< relref "groupdocs-watermark-java-overview.md" >}}).
-
 ## Prerequisites
 - **Java SE 8+** installed.  
 - **Maven** for dependency management.  
