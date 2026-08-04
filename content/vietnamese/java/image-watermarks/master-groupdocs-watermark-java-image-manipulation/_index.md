@@ -1,19 +1,18 @@
 ---
 date: '2026-08-04'
-description: Learn how to add image watermark java using GroupDocs.Watermark. This
-  tutorial covers loading image files, searching, and replacing watermarks in documents.
-images:
-- /java/image-watermarks/master-groupdocs-watermark-java-image-manipulation/og-image.png
+description: Tìm hiểu cách thêm watermark hình ảnh java bằng GroupDocs.Watermark.
+  Hướng dẫn này bao gồm việc tải các tệp hình ảnh, tìm kiếm và thay thế watermark
+  trong tài liệu.
 keywords:
 - add image watermark java
 - load image file java
 - GroupDocs.Watermark Java
 - image watermark management
 lastmod: '2026-08-04'
-og_description: Add image watermark java using GroupDocs.Watermark. Learn to load
-  image files, search, and replace watermarks in PDFs and other documents.
+og_description: Thêm watermark hình ảnh java bằng GroupDocs.Watermark. Tìm hiểu cách
+  tải các tệp hình ảnh, tìm kiếm và thay thế watermark trong PDF và các tài liệu khác.
 og_image_alt: Guide showing how to add image watermark in Java with GroupDocs.Watermark
-og_title: Add image watermark java with GroupDocs.Watermark – guide
+og_title: Thêm watermark hình ảnh java với GroupDocs.Watermark – hướng dẫn
 schemas:
 - author: GroupDocs
   dateModified: '2026-08-04'
@@ -63,37 +62,37 @@ tags:
 - GroupDocs.Watermark
 - Java document processing
 - image watermark Java
-title: Add image watermark java with GroupDocs.Watermark – comprehensive guide
+title: Thêm watermark hình ảnh java với GroupDocs.Watermark – hướng dẫn toàn diện
 type: docs
-url: /java/image-watermarks/master-groupdocs-watermark-java-image-manipulation/
+url: /vi/java/image-watermarks/master-groupdocs-watermark-java-image-manipulation/
 weight: 1
 ---
 
-# Add image watermark java with GroupDocs.Watermark: a comprehensive guide
+# Thêm watermark hình ảnh java với GroupDocs.Watermark: hướng dẫn toàn diện
 
-Adding an image watermark in Java is a common requirement for protecting brand identity and ensuring document authenticity. In this tutorial you’ll discover how to **add image watermark java** using the GroupDocs.Watermark library, covering everything from loading the image file to searching existing watermarks and swapping them out with new graphics. By the end, you’ll have a reusable pattern that works across PDFs, Word files, and image‑based documents.
+Thêm watermark hình ảnh trong Java là một yêu cầu phổ biến để bảo vệ nhận dạng thương hiệu và đảm bảo tính xác thực của tài liệu. Trong hướng dẫn này, bạn sẽ khám phá cách **add image watermark java** using the GroupDocs.Watermark library, covering everything from loading the image file to searching existing watermarks and swapping them out with new graphics. By the end, you’ll have a reusable pattern that works across PDFs, Word files, and image‑based documents.
 
-## Quick answers
-- **Which library handles image watermarks in Java?** GroupDocs.Watermark for Java.  
-- **Do I need a license for production use?** Yes, a commercial license removes trial limitations.  
-- **Can I work with PDFs and Office files?** Yes, the API supports more than 30 formats.  
-- **What Java version is required?** JDK 8 or newer.  
-- **Is Maven the only way to add the dependency?** Maven is recommended, but you can also download the JAR manually.
+## Câu trả lời nhanh
+- **Thư viện nào xử lý watermark hình ảnh trong Java?** GroupDocs.Watermark for Java.  
+- **Tôi có cần giấy phép cho việc sử dụng trong môi trường sản xuất không?** Yes, a commercial license removes trial limitations.  
+- **Tôi có thể làm việc với PDF và các tệp Office không?** Yes, the API supports more than 30 formats.  
+- **Phiên bản Java nào được yêu cầu?** JDK 8 or newer.  
+- **Maven là cách duy nhất để thêm phụ thuộc không?** Maven is recommended, but you can also download the JAR manually.
 
-## What is add image watermark java?
-`add image watermark java` refers to the process of embedding a raster graphic (PNG, JPEG, BMP, etc.) into a document programmatically using Java code. This technique lets you overlay logos, copyright notices, or security stamps without altering the original content layout.
+## add image watermark java là gì?
+`add image watermark java` đề cập đến quá trình nhúng một đồ họa raster (PNG, JPEG, BMP, v.v.) vào tài liệu một cách lập trình bằng Java. Kỹ thuật này cho phép bạn chồng logo, thông báo bản quyền hoặc dấu bảo mật mà không thay đổi bố cục nội dung gốc.
 
-## Why use GroupDocs.Watermark for Java?
-GroupDocs.Watermark supports **30+ input and output formats**—including PDF, DOCX, XLSX, PPTX, and common image types—while processing multi‑hundred‑page files without loading the entire document into memory. The library’s hash‑based search engine can locate watermarks with > 95 % accuracy, reducing the time spent scanning large archives by up to 70 %.
+## Tại sao nên sử dụng GroupDocs.Watermark cho Java?
+GroupDocs.Watermark hỗ trợ **hơn 30 định dạng đầu vào và đầu ra** — bao gồm PDF, DOCX, XLSX, PPTX và các loại hình ảnh phổ biến — trong khi xử lý các tệp hàng trăm trang mà không cần tải toàn bộ tài liệu vào bộ nhớ. Công cụ tìm kiếm dựa trên hàm băm của thư viện có thể xác định watermark với độ chính xác > 95 %, giảm thời gian quét các kho lưu trữ lớn lên tới 70 %.
 
-## Prerequisites
+## Yêu cầu trước
 - **Java Development Kit (JDK):** version 8 or later installed.  
 - **GroupDocs.Watermark for Java:** version 24.11 (the version used in this guide).  
 - **Maven:** for dependency management, though a manual JAR download works as well.  
 
-If you’re new to Maven, the `pom.xml` snippet below shows exactly what you need to add.
+Nếu bạn mới dùng Maven, đoạn mã `pom.xml` dưới đây cho thấy chính xác những gì bạn cần thêm.
 
-### Maven setup
+### Cấu hình Maven
 Add the following configuration to your `pom.xml` to include GroupDocs.Watermark as a dependency:
 
 ```xml
@@ -114,23 +113,23 @@ Add the following configuration to your `pom.xml` to include GroupDocs.Watermark
 </dependencies>
 ```
 
-### Direct download
+### Tải trực tiếp
 Alternatively, you can download the latest version directly from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-#### License acquisition
-- **Free trial:** Download a trial package to explore the core features.  
-- **Temporary license:** Obtain a time‑limited key for extended testing from the GroupDocs portal.  
-- **Commercial license:** Purchase a full license for unrestricted production use and priority support.
+#### Nhận giấy phép
+- **Dùng thử miễn phí:** Download a trial package to explore the core features.  
+- **Giấy phép tạm thời:** Obtain a time‑limited key for extended testing from the GroupDocs portal.  
+- **Giấy phép thương mại:** Purchase a full license for unrestricted production use and priority support.
 
-## How to add image watermark java step by step
+## Cách thêm watermark hình ảnh java từng bước
 
-The `Watermark` class represents a document that can be processed for watermark operations. `ImageSearchOptions` configures criteria for locating image watermarks. `WatermarkSearchResult` holds the collection of watermarks found by a search. The `setImage()` method replaces the image of a watermark, and `document.save()` writes the modified document to disk.
+`Watermark` class đại diện cho một tài liệu có thể được xử lý cho các thao tác watermark. `ImageSearchOptions` cấu hình tiêu chí để tìm watermark hình ảnh. `WatermarkSearchResult` chứa tập hợp các watermark được tìm thấy qua một tìm kiếm. Phương thức `setImage()` thay thế hình ảnh của một watermark, và `document.save()` ghi tài liệu đã sửa đổi ra đĩa.
 
-Load your target document, locate any existing watermarks, and replace them with a new image—all in three concise steps. The following direct answer explains the overall flow before diving into each individual piece.
+Tải tài liệu mục tiêu của bạn, xác định bất kỳ watermark nào hiện có, và thay thế chúng bằng một hình ảnh mới — tất cả trong ba bước ngắn gọn. Câu trả lời trực tiếp dưới đây giải thích luồng tổng thể trước khi đi sâu vào từng phần riêng lẻ.
 
 Load the PDF (or other supported file) with `Watermark.load()`, configure an `ImageSearchOptions` object to find watermarks that match a supplied hash, iterate over the returned collection, call `setImage()` with your new byte array, and finally save the modified document with `save()`. This pattern works for PDFs, Word, Excel, PowerPoint, and image files alike, and it ensures that only the intended watermarks are altered.
 
-### Step 1: load image file java
+### Bước 1: tải tệp hình ảnh java
 
 To replace a watermark you first need the new image as a byte array. The code below reads any image file from disk into memory, which you can then feed to the watermark API.
 
@@ -145,9 +144,9 @@ public class Main {
 }
 ```
 
-**Explanation:** The snippet uses a `FileInputStream` wrapped in a try‑with‑resources block, guaranteeing that the stream is closed automatically. This prevents file‑handle leaks, especially important when processing many documents in a batch job.
+**Giải thích:** Đoạn mã sử dụng `FileInputStream` được bọc trong khối try‑with‑resources, đảm bảo luồng được đóng tự động. Điều này ngăn rò rỉ handle tệp, đặc biệt quan trọng khi xử lý nhiều tài liệu trong một công việc batch.
 
-### Step 2: search for watermarks in a document
+### Bước 2: tìm watermark trong tài liệu
 
 Next, configure the search criteria so the engine knows which watermarks to target. You can match by image hash, size, or opacity; the example below uses a hash‑based approach for high precision.
 
@@ -170,9 +169,9 @@ public class LoadImageData {
 }
 ```
 
-**Explanation:** `Watermark.search()` returns a `WatermarkSearchResult` collection. By supplying an `ImageSearchOptions` object with the hash of the original watermark, the API filters out unrelated graphics, giving you a clean list of matches.
+**Giải thích:** `Watermark.search()` returns a `WatermarkSearchResult` collection. By supplying an `ImageSearchOptions` object with the hash of the original watermark, the API filters out unrelated graphics, giving you a clean list of matches.
 
-### Step 3: replace image in watermarks
+### Bước 3: thay thế hình ảnh trong watermark
 
 Finally, iterate through the found watermarks and replace each one’s image data with the new byte array you created in Step 1. After updating, save the document to a new file to preserve the original.
 
@@ -193,41 +192,41 @@ public class SearchForWatermarks {
 }
 ```
 
-**Explanation:** The loop calls `watermark.setImage(newImageBytes)` for every match, then persists the changes with `document.save(outputPath)`. Because the API works in‑place, you only need a single save operation regardless of how many watermarks were swapped.
+**Giải thích:** The loop calls `watermark.setImage(newImageBytes)` for every match, then persists the changes with `document.save(outputPath)`. Because the API works in‑place, you only need a single save operation regardless of how many watermarks were swapped.
 
-## Common issues and troubleshooting
+## Các vấn đề thường gặp và khắc phục
 
 `LoadOptions` lets you specify parameters such as password or loading mode when opening a document. `LoadMode` enum defines how the file is loaded, e.g., STREAM for streaming access.
 
-| Symptom | Likely cause | Fix |
+| Triệu chứng | Nguyên nhân có thể | Cách khắc phục |
 |---|---|---|
-| No watermarks are found | Search hash does not match (different resolution or color depth) | Generate the hash from the exact source file or use `ImageSearchOptions.setSimilarity(0.85)` to allow fuzzy matching. |
-| Out‑of‑memory error on large PDFs | Whole document loaded into memory | Use `Watermark.load(inputPath, LoadOptions.create().setLoadMode(LoadMode.STREAM))` to stream the file. |
-| Saved document is corrupted | Output stream not closed properly | Ensure `try‑with‑resources` is used for the output stream, or call `document.close()` after saving. |
-| New watermark appears shifted | Original watermark had rotation or scaling metadata | Preserve the original `Watermark.getTransform()` settings and apply them to the new image via `watermark.setTransform(originalTransform)`. |
+| Không tìm thấy watermark | Hash tìm kiếm không khớp (độ phân giải hoặc độ sâu màu khác) | Tạo hash từ tệp nguồn chính xác hoặc sử dụng `ImageSearchOptions.setSimilarity(0.85)` để cho phép khớp mờ. |
+| Lỗi hết bộ nhớ trên PDF lớn | Toàn bộ tài liệu được tải vào bộ nhớ | Sử dụng `Watermark.load(inputPath, LoadOptions.create().setLoadMode(LoadMode.STREAM))` để stream tệp. |
+| Tài liệu đã lưu bị hỏng | Luồng xuất không được đóng đúng cách | Đảm bảo sử dụng `try‑with‑resources` cho luồng xuất, hoặc gọi `document.close()` sau khi lưu. |
+| Watermark mới xuất hiện lệch | Watermark gốc có metadata xoay hoặc thu phóng | Giữ nguyên cài đặt `Watermark.getTransform()` của gốc và áp dụng chúng cho hình ảnh mới qua `watermark.setTransform(originalTransform)`. |
 
-## Frequently asked questions
+## Câu hỏi thường gặp
 
-**Q: Can I add a watermark to a password‑protected PDF?**  
+**Q: Tôi có thể thêm watermark vào PDF được bảo vệ bằng mật khẩu không?**  
 A: Yes. Load the document with `Watermark.load(path, new LoadOptions(password))` and the API will decrypt it for processing.
 
-**Q: Does GroupDocs.Watermark support SVG images?**  
+**Q: GroupDocs.Watermark có hỗ trợ hình ảnh SVG không?**  
 A: The library can rasterize SVG files into PNG before embedding, but native SVG insertion is not currently available.
 
-**Q: How many pages can be processed in a single call?**  
+**Q: Có thể xử lý bao nhiêu trang trong một lần gọi?**  
 A: The API can handle documents with **500+ pages** without loading the entire file into memory, thanks to its streaming architecture.
 
-**Q: Is it possible to add multiple different watermarks to the same document?**  
+**Q: Có thể thêm nhiều watermark khác nhau vào cùng một tài liệu không?**  
 A: Absolutely. Create separate `Watermark` objects for each image and call `document.add(watermark)` for each one.
 
-**Q: What platforms are supported for the Java SDK?**  
+**Q: Các nền tảng nào được hỗ trợ cho Java SDK?**  
 A: Windows, Linux, and macOS are all supported, and the library works with any JVM‑compatible environment, including Docker containers.
 
 ---
 
-**Last Updated:** 2026-08-04  
-**Tested with:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+**Cập nhật lần cuối:** 2026-08-04  
+**Kiểm thử với:** GroupDocs.Watermark 24.11 for Java  
+**Tác giả:** GroupDocs
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -253,8 +252,8 @@ public class ReplaceImageInWatermarks {
 }
 ```
 
-## Related Tutorials
+## Hướng dẫn liên quan
 
-- [How to Add Image Watermarks in Word Documents Using GroupDocs.Watermark for Java](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
-- [How to Add Image Watermarks to Excel Using GroupDocs for Java: A Comprehensive Guide](/watermark/java/image-watermarks/groupdocs-watermark-java-add-image-to-excel/)
-- [How to Add Text Watermarks in Java with GroupDocs.Watermark: A Step-by-Step Guide](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)
+- [Cách Thêm Watermark Hình Ảnh trong Tài Liệu Word Sử Dụng GroupDocs.Watermark cho Java](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
+- [Cách Thêm Watermark Hình Ảnh vào Excel Sử Dụng GroupDocs cho Java: Hướng Dẫn Toàn Diện](/watermark/java/image-watermarks/groupdocs-watermark-java-add-image-to-excel/)
+- [Cách Thêm Watermark Văn Bản trong Java với GroupDocs.Watermark: Hướng Dẫn Từng Bước](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)
