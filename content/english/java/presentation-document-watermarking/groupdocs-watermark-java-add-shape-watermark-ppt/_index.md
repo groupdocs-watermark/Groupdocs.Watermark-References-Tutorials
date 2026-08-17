@@ -1,5 +1,5 @@
 ---
-title: "How to Use GroupDocs to Add Shape Watermarks in Java for PowerPoint Presentations"
+title: "How to Use GroupDocs to Add Shape Watermarks to PPTX Files in Java"
 description: "Learn how to use GroupDocs to add shape watermarks to PPT files with Java. Step-by-step guide, configuration tips, and performance insights."
 date: "2026-05-27"
 weight: 1
@@ -11,13 +11,13 @@ keywords:
 type: docs
 schemas:
 - type: TechArticle
-  headline: How to Use GroupDocs to Add Shape Watermarks in Java for PowerPoint Presentations
+  headline: How to Use GroupDocs to Add Shape Watermarks to PPTX Files in Java
   description: Learn how to use GroupDocs to add shape watermarks to PPT files with
     Java. Step-by-step guide, configuration tips, and performance insights.
   dateModified: '2026-05-27'
   author: GroupDocs
 - type: HowTo
-  name: How to Use GroupDocs to Add Shape Watermarks in Java for PowerPoint Presentations
+  name: How to Use GroupDocs to Add Shape Watermarks to PPTX Files in Java
   description: Learn how to use GroupDocs to add shape watermarks to PPT files with
     Java. Step-by-step guide, configuration tips, and performance insights.
   steps:
@@ -47,7 +47,7 @@ schemas:
     answer: Shape watermarks are static by design; they do not interfere with existing
       animations on the slide.
 ---
-# How to Use GroupDocs to Add Shape Watermarks in Java for PowerPoint Presentations
+# How to Use GroupDocs to Add Shape Watermarks to PPTX Files in Java
 
 Protecting your PowerPoint decks is essential for brand consistency and data security. In this tutorial you’ll discover **how to use GroupDocs** to embed shape watermarks directly into PPTX files with Java, giving you a reliable, programmatic way to brand every slide.
 
@@ -74,10 +74,10 @@ Shape watermarks retain visual consistency across slides and can be positioned p
 - Basic Java knowledge and familiarity with Maven.
 - Access to a **GroupDocs.Watermark** license (trial or commercial).
 
-### Required Libraries and Versions
+### Required libraries and versions
 - **GroupDocs.Watermark for Java** version **24.11** or later.
 
-### Environment Setup Requirements
+### Environment setup requirements
 - Ensure `JAVA_HOME` points to your JDK.
 - Configure your project’s `pom.xml` as shown below.
 
@@ -114,7 +114,7 @@ Alternatively, download the latest version from [GroupDocs.Watermark for Java re
 ### License Acquisition
 Obtain a free trial or temporary license to explore all features of GroupDocs.Watermark. For production use, purchase a license that matches your deployment scale.
 
-#### Basic Initialization and Setup
+#### Basic initialization and setup
 `Watermarker` is the core class that loads a document and applies watermarks.  
 `PresentationLoadOptions` provides options for loading PowerPoint files, such as slide handling and animation preservation.
 
@@ -126,7 +126,7 @@ PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx\
 ```
 
-#### Step 1: Create a Shape Watermark
+#### Step 1: create a shape watermark
 `ShapeWatermarkOptions` defines visual properties of a shape watermark, including size, color, opacity, and rotation.  
 
 ```java
@@ -146,7 +146,7 @@ options.setHorizontalAlignment(HorizontalAlignment.Center);
 options.setVerticalAlignment(VerticalAlignment.Center);
 ```
 
-#### Step 2: Apply the Watermark to All Slides
+#### Step 2: apply the watermark to all slides
 Iterate through each slide in the presentation and add the shape watermark.
 
 ```java
@@ -155,20 +155,20 @@ for (int i = 0; i < watermarker.getDocument().getPages().size(); i++) {
 }
 ```
 
-#### Step 3: Save the Watermarked Presentation
+#### Step 3: save the watermarked presentation
 Choose the output format (PPTX) and save the file. The SDK preserves original slide content and animations.
 
 ```java
 watermarker.save("OUTPUT_DIRECTORY/presentation_watermarked.pptx", SaveFormat.Pptx);
 ```
 
-### Common Issues and Solutions
+### Common issues and solutions
 - **Missing license error:** Ensure the license file is placed in the classpath or set via `License.setLicense("path/to/license.lic")`.  
 `License` class loads and applies a GroupDocs license file to enable full SDK functionality.  
 - **Shape not visible:** Increase the shape’s opacity or color contrast; the default opacity is 0.2.
 - **Large file slowdown:** Use `PresentationLoadOptions.setLoadAllSlides(false)` to load slides on demand, reducing memory usage.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: Can I add multiple watermarks to the same slide?**  
 A: Yes – call `watermarker.add()` multiple times with different `ShapeWatermarkOptions` for each watermark.
