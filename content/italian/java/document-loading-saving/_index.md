@@ -1,115 +1,69 @@
 ---
-date: 2026-04-10
-description: Scopri come aggiungere filigrane Java ai documenti, caricare un documento
-  dallo stream e salvare i file con filigrana utilizzando GroupDocs.Watermark per
-  Java.
-keywords:
-- add watermark java
-- how to load documents
-- load document from stream
-- load and save java
-title: 'Aggiungi filigrana Java: Carica e salva documenti con GroupDocs.Watermark'
+date: 2025-12-23
+description: Scopri come aggiungere filigrane ai file PDF Java caricando documenti
+  da diverse fonti e salvando i file con filigrana utilizzando GroupDocs.Watermark
+  per Java.
+title: 'Watermark PDF Java - Operazioni di caricamento e salvataggio dei documenti
+  con GroupDocs.Watermark'
 type: docs
 url: /it/java/document-loading-saving/
 weight: 2
 ---
 
-# Aggiungere Watermark Java: Caricare e Salvare Documenti con GroupDocs.Watermark
+# Operazioni di Caricamento e Salvataggio dei Documenti con GroupDocs.Watermark per Java
 
-In questa guida scoprirai **how to add watermark java** per un'ampia gamma di tipi di documento, caricare tali documenti da disco, flussi o altre fonti, e infine salvare i file con watermark. Che tu stia costruendo un servizio di elaborazione batch o un uploader a pagina singola, i passaggi seguenti ti offrono un flusso di lavoro chiaro, end‑to‑end, usando GroupDocs.Watermark per Java.
+In questa guida scoprirai come **watermark PDF Java** file caricando i documenti da varie fonti e salvandoli dopo aver applicato le filigrane usando GroupDocs.Watermark per Java. I nostri tutorial passo‑paso coprono tutto, dal caricamento di base dei documenti alla gestione di file protetti da password, dandoti la sicurezza necessaria per costruire soluzioni di filigranatura robuste.
 
 ## Risposte Rapide
-- **Cosa fa “add watermark java”?** Inserisce watermark di testo o immagine nei formati di documento supportati tramite l'API GroupDocs.Watermark Java.  
-- **Posso caricare un documento da uno stream?** Sì – l'API accetta oggetti `InputStream`, facilitando il lavoro con file memorizzati in memoria o recuperati da una rete.  
-- **Come vengono gestiti i file protetti da password?** Fornisci la password durante la creazione di un'istanza `Watermark`; la libreria decritterà, applicherà i watermark e ri‑crypterà il file.  
-- **Quali formati sono supportati?** PDF, DOC/DOCX, PPT/PPTX, XLS/XLSX, immagini (PNG, JPEG, BMP) e molti altri.  
-- **È necessaria una licenza per la produzione?** È richiesta una licenza commerciale per l'uso in produzione; è disponibile una prova gratuita per la valutazione.
+- **Cosa significa “watermark pdf java”?** Si riferisce all'aggiunta di filigrane visive ai file PDF nelle applicazioni Java utilizzando GroupDocs.Watermark.  
+- **Quali formati posso caricare?** Qualsiasi formato supportato da GroupDocs.Watermark, inclusi PDF, DOCX, PPTX e immagini.  
+- **Posso caricare da stream?** Sì—i documenti possono essere caricati direttamente da oggetti `InputStream`.  
+- **Come salvo un documento con filigrana?** Usa il metodo `save` sull'oggetto `Watermarker`, specificando il percorso di output desiderato o lo stream.  
+- **La protezione con password è supportata?** Assolutamente—sia il caricamento che il salvataggio di PDF protetti da password sono gestiti senza problemi.
 
-## Cos'è “add watermark java”?
-“Add watermark java” si riferisce al processo di inserimento programmatico di watermark visibili o invisibili nei documenti usando la libreria GroupDocs.Watermark scritta in Java. Questa tecnica aiuta a proteggere la proprietà intellettuale, i documenti del brand o a rispettare i requisiti normativi.
+## Come aggiungere filigrane a documenti PDF Java con GroupDocs.Watermark
+Comprendere il flusso di lavoro generale ti aiuta a integrare rapidamente la filigranatura:
 
-## Perché usare GroupDocs.Watermark per Java?
-- **Ampio supporto di formati** – una singola API funziona su PDF, file Office e immagini.  
-- **Compatibile con stream** – carica da `FileInputStream`, `ByteArrayInputStream` o qualsiasi stream personalizzato senza toccare il file system.  
-- **Gestione delle password** – supporto integrato per aprire e salvare documenti criptati.  
-- **Alte prestazioni** – ottimizzato per file di grandi dimensioni e operazioni batch.  
-- **API semplice** – metodi chiari e fluenti mantengono il tuo codice leggibile e manutenibile.
+1. **Caricamento del documento Java** – Carica il tuo file sorgente (disco, stream o array di byte).  
+2. **Applicare la filigrana** – Scegli filigrane di testo, immagine o codice a barre e configura il loro aspetto.  
+3. **Salvataggio del documento Java** – Salva il documento modificato nuovamente su disco, su uno stream o su una posizione di storage cloud.  
 
-## Prerequisiti
-- Java 8 o superiore installato.  
-- Libreria GroupDocs.Watermark per Java aggiunta al tuo progetto (Maven/Gradle).  
-- Una licenza valida GroupDocs.Watermark per la produzione (opzionale per i test).
-
-## Guida Passo‑Passo
-
-### Passo 1: Configurare il progetto
-Aggiungi la dipendenza GroupDocs.Watermark al tuo `pom.xml` (o file Gradle) e includi la tua chiave di licenza nel codice di inizializzazione.
-
-### Passo 2: Caricare un documento da disco o stream
-Usa la classe `Watermark` per aprire un file direttamente da un percorso, oppure passa un `InputStream` quando il documento risiede in memoria o in una posizione remota.
-
-### Passo 3: Applicare un watermark di testo o immagine
-Crea un oggetto `TextWatermark` o `ImageWatermark`, configura il suo aspetto (colore, opacità, rotazione) e aggiungilo al documento caricato.
-
-### Passo 4: Salvare il documento con watermark
-Scegli il formato di output (uguale a quello di origine o diverso) e scrivi il risultato in un file, stream o array di byte.
-
-### Passo 5: Gestire i file protetti da password (opzionale)
-Quando apri un documento protetto, fornisci la password nelle opzioni di caricamento. Dopo il watermarking, la libreria ri‑applica automaticamente la crittografia.
-
-## Problemi Comuni & Soluzioni
-- **Documento non caricato dallo stream** – assicurati che lo stream sia resettato (`stream.reset()`) prima di passarlo all'API.  
-- **Watermark non visibile** – verifica che l'opacità e il contrasto del colore siano appropriati per il formato di destinazione.  
-- **Salvataggio fallito per PDF di grandi dimensioni** – aumenta la dimensione dell'heap JVM o usa il metodo `Document.optimizeResources()` per ridurre il consumo di memoria.  
+Di seguito trovi i link a tutorial dettagliati che ti guidano passo passo in ciascuna fase.
 
 ## Tutorial Disponibili
 
-### [Come Caricare Documenti Protetti da Password in Java Usando GroupDocs.Watermark](./groupdocs-watermark-java-password-protected-documents/)
-Scopri come caricare e gestire i watermark in documenti protetti da password usando GroupDocs.Watermark per Java. Questa guida fornisce istruzioni passo‑passo, esempi pratici e suggerimenti per la risoluzione dei problemi.
+### [Come Caricare Documenti Protetti da Password in Java Utilizzando GroupDocs.Watermark](./groupdocs-watermark-java-password-protected-documents/)
+Scopri come caricare e gestire le filigrane in documenti protetti da password usando GroupDocs.Watermark per Java. Questa guida fornisce istruzioni passo‑paso, esempi pratici e suggerimenti per la risoluzione dei problemi.
 
-### [Come Caricare e Applicare Watermark a Documenti Word Protetti da Password Usando GroupDocs.Watermark in Java](./groupdocs-watermark-java-password-protected-word-docs/)
-Scopri come usare GroupDocs.Watermark con Java per caricare, gestire e applicare watermark a documenti Word protetti da password in modo efficiente.
+### [Come Caricare e Filigranare Documenti Word Protetti da Password Utilizzando GroupDocs.Watermark in Java](./groupdocs-watermark-java-password-protected-word-docs/)
+Impara a usare GroupDocs.Watermark con Java per caricare, gestire e filigranare in modo efficiente documenti Word protetti da password.
 
 ## Risorse Aggiuntive
 
-- [Documentazione GroupDocs.Watermark per Java](https://docs.groupdocs.com/watermark/java/)
-- [Riferimento API GroupDocs.Watermark per Java](https://reference.groupdocs.com/watermark/java/)
-- [Scarica GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/)
-- [Forum GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark)
+- [Documentazione di GroupDocs.Watermark per Java](https://docs.groupdocs.com/watermark/java/)
+- [Riferimento API di GroupDocs.Watermark per Java](https://reference.groupdocs.com/watermark/java/)
+- [Download di GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/)
+- [Forum di GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark)
 - [Supporto Gratuito](https://forum.groupdocs.com/)
 - [Licenza Temporanea](https://purchase.groupdocs.com/temporary-license/)
 
-## PAROLE CHIAVE TARGET:
-
-**Parola chiave primaria (MASSIMA PRIORITÀ):**  
-add watermark java
-
-**Parole chiave secondarie (SUPPORTING):**  
-how to load documents, load document from stream, load and save java
-
-**Strategia di integrazione delle parole chiave:**
-1. Parola chiave primaria: Usare 3-5 volte (titolo, meta, primo paragrafo, intestazione H2, corpo)  
-2. Parole chiave secondarie: Usare 1-2 volte ciascuna (intestazioni, testo del corpo)  
-3. Tutte le parole chiave devono essere integrate naturalmente - dare priorità alla leggibilità rispetto al conteggio delle parole chiave  
-4. Se una parola chiave non si adatta naturalmente, usa una variazione semantica o omettila  
-
 ## Domande Frequenti
 
-**Q: Posso aggiungere sia watermark di testo che di immagine allo stesso documento?**  
-A: Sì. Puoi creare più oggetti watermark e aggiungerli sequenzialmente; la libreria li renderà nell'ordine specificato.
+**Q: Posso filigranare PDF che sono memorizzati in un bucket cloud?**  
+A: Sì, puoi caricare il PDF da uno stream cloud (ad esempio AWS S3, Azure Blob) e poi salvare la versione con filigrana nuovamente nel cloud.
 
-**Q: È possibile applicare watermark solo a pagine specifiche?**  
-A: Assolutamente. Usa `WatermarkOptions` per definire un intervallo di pagine o una collezione di numeri di pagina prima di applicare il watermark.
+**Q: Come gestisco file PDF di grandi dimensioni senza esaurire la memoria?**  
+A: Carica il documento usando uno stream e processa le pagine in modo incrementale. GroupDocs.Watermark offre anche impostazioni ottimizzate per la memoria.
 
-**Q: Come posso caricare un documento da un URL senza salvarlo prima localmente?**  
-A: Recupera il file in un `ByteArrayInputStream` (o qualsiasi `InputStream`) e passa quello stream direttamente al costruttore `Watermark`.
+**Q: È possibile aggiungere più filigrane (testo + immagine) allo stesso PDF?**  
+A: Assolutamente. Puoi aggiungere quante filigrane desideri; basta configurare individualmente la posizione e l'opacità di ciascuna.
 
-**Q: Cosa succede ai metadati del file originale dopo il salvataggio?**  
-A: Per impostazione predefinita, i metadati vengono preservati. Puoi modificarli o rimuoverli usando la classe `DocumentInfo` se necessario.
+**Q: Cosa succede se provo a salvare un PDF protetto da password senza fornire la password?**  
+A: La libreria genererà un'eccezione. Fornisci sempre la password originale al momento del salvataggio, oppure imposta una nuova password tramite le `saveOptions`.
 
-**Q: La libreria supporta l'elaborazione batch di molti file contemporaneamente?**  
-A: Sì. Avvolgi la tua logica di caricamento, watermarking e salvataggio all'interno di un ciclo o di uno stream parallelo per processare più documenti in modo efficiente.
+**Q: GroupDocs.Watermark supporta la rotazione o il ridimensionamento delle filigrane?**  
+A: Sì—le filigrane possono essere ruotate, ridimensionate e posizionate usando le proprietà di trasformazione dell'API.
 
-**Ultimo aggiornamento:** 2026-04-10  
-**Testato con:** GroupDocs.Watermark per Java 23.9 (latest at time of writing)  
+**Ultimo Aggiornamento:** 2025-12-23  
+**Testato Con:** GroupDocs.Watermark 23.12 per Java  
 **Autore:** GroupDocs

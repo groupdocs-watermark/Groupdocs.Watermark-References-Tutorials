@@ -1,115 +1,70 @@
 ---
-date: 2026-04-10
-description: GroupDocs.Watermark for Java kullanarak belgelere nasıl watermark ekleyeceğinizi,
-  belgeyi akıştan nasıl yükleyeceğinizi ve su işareti eklenmiş dosyaları nasıl kaydedeceğinizi
+date: 2025-12-23
+description: PDF Java dosyalarına filigran eklemeyi, belgeleri çeşitli kaynaklardan
+  yükleyerek ve GroupDocs.Watermark for Java kullanarak filigranlı dosyaları kaydederek
   öğrenin.
-keywords:
-- add watermark java
-- how to load documents
-- load document from stream
-- load and save java
-title: 'Java ile Filigran Ekle: GroupDocs.Watermark ile Belgeleri Yükle ve Kaydet'
+title: 'Watermark PDF Java - GroupDocs.Watermark ile Belge Yükleme ve Kaydetme İşlemleri'
 type: docs
 url: /tr/java/document-loading-saving/
 weight: 2
 ---
 
-# Watermark Java Ekle: GroupDocs.Watermark ile Belgeleri Yükle ve Kaydet
+# GroupDocs.Watermark for Java ile Belge Yükleme ve Kaydetme İşlemleri
 
-Bu rehberde **how to add watermark java** ifadesini geniş bir belge yelpazesine nasıl ekleyeceğinizi keşfedecek, bu belgeleri diskten, akışlardan veya diğer kaynaklardan yükleyecek ve sonunda watermark'li dosyaları kaydedeceksiniz. İster toplu‑işlem hizmeti ister tek‑sayfa yükleyici oluşturuyor olun, aşağıdaki adımlar GroupDocs.Watermark for Java kullanarak net, uçtan uca bir iş akışı sunar.
+Bu rehberde, GroupDocs.Watermark for Java kullanarak belgeleri çeşitli kaynaklardan yükleyip su işareti ekledikten sonra kaydetmenin **watermark PDF Java** yollarını keşfedeceksiniz. Adım adım öğreticilerimiz, temel belge yüklemeden parola korumalı dosyaların işlenmesine kadar her şeyi kapsar ve sağlam su işareti çözümleri oluşturmanız için size güven verir.
 
 ## Hızlı Yanıtlar
-- **“add watermark java” ne yapar?** Desteklenen belge formatlarına GroupDocs.Watermark Java API'si aracılığıyla metin veya görüntü watermark'ları ekler.  
-- **Bir belgeyi akıştan yükleyebilir miyim?** Evet – API `InputStream` nesnelerini kabul eder, böylece bellekte saklanan veya ağdan alınan dosyalarla çalışmak kolaylaşır.  
-- **Şifre korumalı dosyalar nasıl işlenir?** `Watermark` örneği oluştururken şifreyi geçin; kütüphane dosyayı çözer, watermark ekler ve yeniden şifreler.  
-- **Hangi formatlar destekleniyor?** PDF, DOC/DOCX, PPT/PPTX, XLS/XLSX, görüntüler (PNG, JPEG, BMP) ve daha fazlası.  
-- **Üretim için lisansa ihtiyacım var mı?** Üretim kullanımında ticari bir lisans gereklidir; değerlendirme için ücretsiz deneme mevcuttur.
+- **“watermark pdf java” ne anlama geliyor?** Java uygulamalarında GroupDocs.Watermark kullanarak PDF dosyalarına görsel su işaretleri eklemeyi ifade eder.  
+- **Hangi formatları yükleyebilirim?** PDF, DOCX, PPTX ve görseller dahil, GroupDocs.Watermark tarafından desteklenen tüm formatlar.  
+- **Akışlardan (streams) yükleyebilir miyim?** Evet—belgeler doğrudan `InputStream` nesnelerinden yüklenebilir.  
+- **Su işaretli bir belgeyi nasıl kaydederim?** `Watermarker` nesnesinin `save` metodunu kullanarak istediğiniz çıktı yolunu veya akışı (stream) belirtin.  
+- **Parola koruması destekleniyor mu?** Kesinlikle—parola korumalı PDF'lerin hem yüklenmesi hem de kaydedilmesi sorunsuz bir şekilde yönetilir.
 
-## “add watermark java” nedir?
-“Add watermark java”, Java’da yazılmış GroupDocs.Watermark kütüphanesini kullanarak belgelere görünür veya görünmez watermark'lar programlı bir şekilde ekleme sürecine denir. Bu teknik, fikri mülkiyeti korumaya, belgeleri markalamaya veya yasal gerekliliklere uyum sağlamaya yardımcı olur.
+## GroupDocs.Watermark ile PDF Java belgelerine su işareti ekleme
+Genel iş akışını anlamak, su işareti eklemeyi hızlıca entegre etmenize yardımcı olur:
 
-## Neden GroupDocs.Watermark for Java Kullanmalı?
-- **Geniş format desteği** – tek bir API PDF'ler, Office dosyaları ve görüntüler arasında çalışır.  
-- **Akış dostu** – dosya sistemine dokunmadan `FileInputStream`, `ByteArrayInputStream` veya herhangi bir özel akıştan yükleme yapar.  
-- **Şifre yönetimi** – şifreli belgeleri açma ve kaydetme için yerleşik destek.  
-- **Yüksek performans** – büyük dosyalar ve toplu işlemler için optimize edilmiştir.  
-- **Basit API** – net, akıcı metodlar kodunuzun okunabilir ve sürdürülebilir olmasını sağlar.
+1. **Document loading Java** – Kaynak dosyanızı (disk, akış veya bayt dizisi) yükleyin.  
+2. **Apply watermark** – Metin, görüntü veya barkod su işaretlerini seçin ve görünümünü yapılandırın.  
+3. **Document saving Java** – Değiştirilen belgeyi diske, bir akışa veya bulut depolama konumuna kaydedin.
 
-## Önkoşullar
-- Java 8 ve üzeri yüklü olmalıdır.  
-- Projenize GroupDocs.Watermark for Java kütüphanesini ekleyin (Maven/Gradle).  
-- Üretim için geçerli bir GroupDocs.Watermark lisansı (test için isteğe bağlı).
+Aşağıda her adımı ayrıntılı olarak anlatan öğreticilere yönlendiren bağlantılar bulacaksınız.
 
-## Adım‑Adım Kılavuz
+## Mevcut Öğreticiler
 
-### Adım 1: Projeyi Kurun
-GroupDocs.Watermark bağımlılığını `pom.xml` (veya Gradle dosyanıza) ekleyin ve başlatma kodunda lisans anahtarınızı dahil edin.
+### [How to Load Password-Protected Documents in Java Using GroupDocs.Watermark](./groupdocs-watermark-java-password-protected-documents/)
+Parola korumalı belgelerde su işaretlerini nasıl yükleyip yöneteceğinizi GroupDocs.Watermark for Java ile öğrenin. Bu rehber adım adım talimatlar, pratik örnekler ve sorun giderme ipuçları sunar.
 
-### Adım 2: Bir belgeyi diskten veya akıştan yükleyin
-`Watermark` sınıfını kullanarak bir dosyayı doğrudan bir yoldan açın veya belge bellekte ya da uzaktan bir konumda olduğunda bir `InputStream` geçirin.
-
-### Adım 3: Metin veya görüntü watermark'ı uygulayın
-Bir `TextWatermark` veya `ImageWatermark` nesnesi oluşturun, görünümünü (renk, opaklık, dönüş) yapılandırın ve yüklü belgeye ekleyin.
-
-### Adım 4: Watermark'lı belgeyi kaydedin
-Çıktı formatını (kaynakla aynı veya farklı) seçin ve sonucu bir dosyaya, akışa veya bayt dizisine yazın.
-
-### Adım 5: Şifre korumalı dosyaları işleyin (isteğe bağlı)
-Korunan bir belgeyi açarken, yükleme seçeneklerinde şifreyi sağlayın. Watermark ekledikten sonra, kütüphane şifrelemeyi otomatik olarak yeniden uygular.
-
-## Yaygın Sorunlar ve Çözümler
-- **Belge akıştan yüklenmiyor** – API'ye geçirmeden önce akışın sıfırlandığından (`stream.reset()`) emin olun.  
-- **Watermark görünmüyor** – opaklık ve renk kontrastının hedef format için uygun olduğundan emin olun.  
-- **Büyük PDF'lerde kaydetme başarısız oluyor** – JVM yığın boyutunu artırın veya bellek tüketimini azaltmak için `Document.optimizeResources()` metodunu kullanın.  
-
-## Mevcut Eğitimler
-
-### [Java’da GroupDocs.Watermark Kullanarak Şifre Koruması Olan Belgeleri Nasıl Yüklenir](./groupdocs-watermark-java-password-protected-documents/)
-GroupDocs.Watermark for Java kullanarak şifre korumalı belgelerde watermark'ları nasıl yükleyeceğinizi ve yöneteceğinizi öğrenin. Bu rehber adım‑adım talimatlar, pratik örnekler ve sorun giderme ipuçları sunar.
-
-### [Java’da GroupDocs.Watermark ile Şifre Koruması Olan Word Belgelerini Yükleme ve Watermark Ekleme](./groupdocs-watermark-java-password-protected-word-docs/)
-GroupDocs.Watermark'i Java ile kullanarak şifre korumalı Word belgelerini verimli bir şekilde yüklemeyi, yönetmeyi ve watermark eklemeyi öğrenin.
+### [How to Load and Watermark Password-Protected Word Documents Using GroupDocs.Watermark in Java](./groupdocs-watermark-java-password-protected-word-docs/)
+GroupDocs.Watermark ile Java’da parola korumalı Word belgelerini nasıl yükleyip, yöneteceğinizi ve su işareti ekleyeceğinizi verimli bir şekilde öğrenin.
 
 ## Ek Kaynaklar
 
-- [GroupDocs.Watermark for Java Dokümantasyonu](https://docs.groupdocs.com/watermark/java/)
-- [GroupDocs.Watermark for Java API Referansı](https://reference.groupdocs.com/watermark/java/)
-- [GroupDocs.Watermark for Java İndir](https://releases.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java Documentation](https://docs.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java API Reference](https://reference.groupdocs.com/watermark/java/)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
 - [GroupDocs.Watermark Forum](https://forum.groupdocs.com/c/watermark)
-- [Ücretsiz Destek](https://forum.groupdocs.com/)
-- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
-
-## HEDEF ANAHTAR KELİMELER:
-
-**Birincil Anahtar Kelime (EN YÜKSEK ÖNCELİK):**
-add watermark java
-
-**İkincil Anahtar Kelimeler (DESTEKLEYİCİ):**
-how to load documents, load document from stream, load and save java
-
-**Anahtar Kelime Entegrasyon Stratejisi:**
-1. Birincil anahtar kelime: 3-5 kez kullanın (başlık, meta, ilk paragraf, H2 başlık, gövde)
-2. İkincil anahtar kelimeler: her biri 1-2 kez kullanın (başlıklar, gövde metni)
-3. Tüm anahtar kelimeler doğal bir şekilde entegre edilmelidir - okunabilirliğe anahtar kelime sayısından öncelik verin
-4. Bir anahtar kelime doğal olarak uymuyorsa, anlamsal bir varyasyon kullanın veya atlayın
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ## Sıkça Sorulan Sorular
 
-**Q:** Aynı belgeye hem metin hem de görüntü watermark'ları ekleyebilir miyim?  
-**A:** Evet. Birden fazla watermark nesnesi oluşturabilir ve sırasıyla ekleyebilirsiniz; kütüphane onları belirttiğiniz sırada işler.
+**S: Bulut bir bucket içinde depolanan PDF'lere su işareti ekleyebilir miyim?**  
+C: Evet, PDF'yi bir bulut akışı (ör. AWS S3, Azure Blob) üzerinden yükleyebilir ve su işaretli sürümü tekrar buluta kaydedebilirsiniz.
 
-**Q:** Yalnızca belirli sayfalara watermark eklemek mümkün mü?  
-**A:** Kesinlikle. Watermark uygulamadan önce bir sayfa aralığı veya sayfa numaraları koleksiyonu tanımlamak için `WatermarkOptions` kullanın.
+**S: Büyük PDF dosyalarını bellek tüketmeden nasıl işlerim?**  
+C: Belgeyi bir akışla yükleyin ve sayfaları artımlı olarak işleyin. GroupDocs.Watermark ayrıca bellek‑optimizeli ayarlar sunar.
 
-**Q:** Bir belgeyi önce yerel olarak kaydetmeden bir URL'den nasıl yüklerim?  
-**A:** Dosyayı bir `ByteArrayInputStream` (veya herhangi bir `InputStream`) içine alın ve bu akışı doğrudan `Watermark` yapıcısına geçirin.
+**S: Aynı PDF'e birden fazla su işareti (metin + görüntü) eklemek mümkün mü?**  
+C: Kesinlikle. İhtiyacınız kadar su işareti ekleyebilirsiniz; her bir su işaretinin konum ve opaklığını ayrı ayrı yapılandırmanız yeterlidir.
 
-**Q:** Kaydetme işleminden sonra orijinal dosyanın meta verileri ne olur?  
-**A:** Varsayılan olarak meta veriler korunur. Gerekirse `DocumentInfo` sınıfını kullanarak değiştirebilir veya kaldırabilirsiniz.
+**S: Parola korumalı bir PDF'i parola vermeden kaydetmeye çalışırsam ne olur?**  
+C: Kütüphane bir istisna (exception) fırlatır. Kaydederken her zaman orijinal parolayı sağlayın veya `saveOptions` aracılığıyla yeni bir parola belirleyin.
 
-**Q:** Kütüphane aynı anda birden fazla dosyanın toplu işlenmesini destekliyor mu?  
-**A:** Evet. Yükleme, watermark ekleme ve kaydetme mantığınızı bir döngü veya paralel akış içinde sararak birden çok belgeyi verimli bir şekilde işleyebilirsiniz.
+**S: GroupDocs.Watermark su işaretlerini döndürme veya ölçeklendirme destekliyor mu?**  
+C: Evet—su işaretleri API’nin dönüşüm (transformation) özellikleriyle döndürülebilir, ölçeklendirilebilir ve konumlandırılabilir.
 
-**Son Güncelleme:** 2026-04-10  
-**Test Edilen Versiyon:** GroupDocs.Watermark for Java 23.9 (yazım zamanındaki en son)  
+---
+
+**Son Güncelleme:** 2025-12-23  
+**Test Edilen Sürüm:** GroupDocs.Watermark 23.12 for Java  
 **Yazar:** GroupDocs
