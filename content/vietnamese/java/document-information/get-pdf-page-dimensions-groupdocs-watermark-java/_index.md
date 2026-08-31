@@ -1,18 +1,17 @@
 ---
 date: '2026-08-31'
-description: Learn how to get pdf page size java using GroupDocs.Watermark. Extract
-  pdf page dimensions quickly with step‑by‑step code and tips.
-images:
-- /java/document-information/get-pdf-page-dimensions-groupdocs-watermark-java/og-image.png
+description: Tìm hiểu cách lấy kích thước trang pdf trong java bằng GroupDocs.Watermark.
+  Trích xuất kích thước trang pdf nhanh chóng với mã hướng dẫn từng bước và các mẹo.
 keywords:
 - pdf page size java
 - get pdf page width
 - extract pdf page dimensions
 lastmod: '2026-08-31'
-og_description: Learn how to get pdf page size java using GroupDocs.Watermark. This
-  guide shows code, setup, and performance tips for extracting PDF page dimensions.
+og_description: Tìm hiểu cách lấy kích thước trang pdf trong java bằng GroupDocs.Watermark.
+  Hướng dẫn này trình bày mã, cấu hình và các mẹo về hiệu năng để trích xuất kích
+  thước trang PDF.
 og_image_alt: Guide to extract PDF page size in Java with GroupDocs.Watermark
-og_title: How to get pdf page size java using GroupDocs.Watermark
+og_title: Cách lấy kích thước trang pdf trong java bằng GroupDocs.Watermark
 schemas:
 - author: GroupDocs
   dateModified: '2026-08-31'
@@ -61,41 +60,40 @@ tags:
 - Java PDF
 - document processing
 - extract dimensions
-title: How to get pdf page size java using GroupDocs.Watermark
+title: Cách lấy kích thước trang pdf trong java bằng GroupDocs.Watermark
 type: docs
-url: /java/document-information/get-pdf-page-dimensions-groupdocs-watermark-java/
+url: /vi/java/document-information/get-pdf-page-dimensions-groupdocs-watermark-java/
 weight: 1
 ---
 
-# How to get pdf page size java using GroupDocs.Watermark
+# Cách lấy kích thước trang pdf java bằng GroupDocs.Watermark
 
-In this tutorial you’ll learn **how to get pdf page size java** with the GroupDocs.Watermark library. Extracting page width and height is a common requirement when building PDF editors, automated reporting tools, or layout‑validation pipelines. We’ll walk through the full setup, show the exact API calls, and share practical tips to keep your code fast and reliable.
+Trong hướng dẫn này, bạn sẽ học **cách lấy kích thước trang pdf java** với thư viện GroupDocs.Watermark. Việc trích xuất chiều rộng và chiều cao của trang là một yêu cầu phổ biến khi xây dựng trình chỉnh sửa PDF, công cụ báo cáo tự động, hoặc các pipeline kiểm tra bố cục. Chúng tôi sẽ hướng dẫn toàn bộ quá trình thiết lập, hiển thị các lời gọi API chính xác, và chia sẻ các mẹo thực tế để giữ cho mã của bạn nhanh và đáng tin cậy.
 
-## Quick answers
-- **Which library provides pdf page size java?** GroupDocs.Watermark for Java.
-- **What is the minimum JDK version?** JDK 8 or higher.
-- **Do I need a license for development?** A free trial works for testing; a commercial license is required for production.
-- **Can I extract dimensions from password‑protected PDFs?** Yes – supply the password when loading the document.
-- **Is batch processing supported?** Yes, you can loop through `pdfContent.getPages()` to handle all pages.
+## Câu trả lời nhanh
+- **Thư viện nào cung cấp pdf page size java?** GroupDocs.Watermark for Java.
+- **Phiên bản JDK tối thiểu là gì?** JDK 8 hoặc cao hơn.
+- **Tôi có cần giấy phép cho việc phát triển không?** Bản dùng thử miễn phí hoạt động cho việc kiểm tra; giấy phép thương mại là bắt buộc cho môi trường sản xuất.
+- **Tôi có thể trích xuất kích thước từ các PDF được bảo mật bằng mật khẩu không?** Có – cung cấp mật khẩu khi tải tài liệu.
+- **Xử lý hàng loạt có được hỗ trợ không?** Có, bạn có thể lặp qua `pdfContent.getPages()` để xử lý tất cả các trang.
 
-## What is pdf page size java?
-The term **pdf page size java** refers to the width and height of a single page inside a PDF file, measured in points (1 pt = 1/72 inch). Knowing these dimensions lets you align graphics, fit content, or validate that a document meets printing specifications.
+## pdf page size java là gì?
+Thuật ngữ **pdf page size java** đề cập đến chiều rộng và chiều cao của một trang duy nhất trong tệp PDF, đo bằng điểm (1 pt = 1/72 inch). Biết được các kích thước này cho phép bạn căn chỉnh đồ họa, điều chỉnh nội dung, hoặc xác nhận rằng tài liệu đáp ứng các thông số in ấn.
 
-## Why use GroupDocs.Watermark for pdf page size extraction?
-GroupDocs.Watermark supports **30+ file formats** and can process PDFs up to **500 MB** without loading the entire file into memory, thanks to its streaming architecture. This efficiency translates into lower CPU usage and faster response times for large‑scale document pipelines.
+## Tại sao nên sử dụng GroupDocs.Watermark để trích xuất kích thước trang pdf?
+GroupDocs.Watermark hỗ trợ **hơn 30 định dạng tệp** và có thể xử lý các PDF lên tới **500 MB** mà không cần tải toàn bộ tệp vào bộ nhớ, nhờ kiến trúc streaming của nó. Hiệu suất này giúp giảm mức sử dụng CPU và thời gian phản hồi nhanh hơn cho các pipeline tài liệu quy mô lớn.
 
-## Prerequisites
+## Yêu cầu trước
+- Java Development Kit 8 hoặc mới hơn.
+- Một IDE như IntelliJ IDEA hoặc Eclipse.
+- Maven để quản lý phụ thuộc.
+- Quyền truy cập giấy phép GroupDocs.Watermark (dùng thử hoặc thương mại).
 
-- Java Development Kit 8 or newer.
-- An IDE such as IntelliJ IDEA or Eclipse.
-- Maven for dependency management.
-- Access to a GroupDocs.Watermark license (trial or commercial).
+## Cài đặt GroupDocs.Watermark cho Java
 
-## Setting up GroupDocs.Watermark for Java
+`GroupDocs.Watermark` là một thư viện Java cho phép đánh dấu bản quyền, xử lý siêu dữ liệu và kiểm tra tài liệu. Sau khi thêm các tọa độ Maven, bạn có thể bắt đầu sử dụng API của nó ngay lập tức.
 
-`GroupDocs.Watermark` is a Java library that enables watermarking, metadata handling, and document inspection. After adding the Maven coordinates, you can start using its API immediately.
-
-**Maven configuration:**  
+**Cấu hình Maven:**  
 ```xml
 <repositories>
    <repository>
@@ -114,15 +112,15 @@ GroupDocs.Watermark supports **30+ file formats** and can process PDFs up to **5
 </dependencies>
 ```
 
-**Direct download:**  
+**Tải trực tiếp:**  
 Alternatively, download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### License acquisition steps
-1. **Free trial** – evaluate the library without cost.  
-2. **Temporary license** – obtain a time‑limited key for extended testing.  
-3. **Purchase** – secure a commercial license for production deployments.
+### Các bước lấy giấy phép
+1. **Dùng thử miễn phí** – đánh giá thư viện mà không tốn phí.  
+2. **Giấy phép tạm thời** – nhận khóa có thời hạn để thử nghiệm mở rộng.  
+3. **Mua** – đảm bảo có giấy phép thương mại cho triển khai sản xuất.
 
-**Basic initialization and setup:**  
+**Khởi tạo và thiết lập cơ bản:**  
 The `Watermarker` class is the primary entry point for loading and manipulating documents.  
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -138,15 +136,15 @@ public class InitializeWatermarker {
 }
 ```
 
-## Implementation guide
+## Hướng dẫn triển khai
 
-Below is the step‑by‑step process for extracting PDF page dimensions using GroupDocs.Watermark.
+Dưới đây là quy trình từng bước để trích xuất kích thước trang PDF bằng GroupDocs.Watermark.
 
-### How to extract pdf page dimensions using GroupDocs.Watermark?
+### Cách trích xuất kích thước trang pdf bằng GroupDocs.Watermark?
 Load the PDF, access its `PdfContent`, and read the `PageInfo` objects that expose width and height. The whole operation requires only a few lines of code and automatically releases resources when the `Watermarker` is closed. This approach works for single‑page and multi‑page documents, providing accurate dimensions without loading the entire file into memory.
 
-#### Step 1: set up load options
-Create a `PdfLoadOptions` instance to control how the file is read.  
+#### Bước 1: thiết lập tùy chọn tải
+Tạo một thể hiện `PdfLoadOptions` để kiểm soát cách tệp được đọc.  
 ```java
 import com.groupdocs.watermark.options.PdfLoadOptions;
 
@@ -154,8 +152,8 @@ import com.groupdocs.watermark.options.PdfLoadOptions;
 PdfLoadOptions loadOptions = new PdfLoadOptions();
 ```
 
-#### Step 2: initialize the watermarker
-Pass the file path and the load options to the `Watermarker` constructor.  
+#### Bước 2: khởi tạo watermarker
+Truyền đường dẫn tệp và các tùy chọn tải vào hàm khởi tạo `Watermarker`.  
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -163,8 +161,8 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-#### Step 3: access PDF content
-Retrieve a `PdfContent` object, which gives you direct access to page collections.  
+#### Bước 3: truy cập nội dung PDF
+Lấy một đối tượng `PdfContent`, cho phép bạn truy cập trực tiếp vào bộ sưu tập các trang.  
 ```java
 import com.groupdocs.watermark.contents.PdfContent;
 
@@ -172,7 +170,7 @@ import com.groupdocs.watermark.contents.PdfContent;
 PdfContent pdfContent = watermarker.getContent(PdfContent.class);
 ```
 
-#### Step 4: retrieve and print page dimensions
+#### Bước 4: lấy và in kích thước trang
 The `PageInfo` class represents a single page’s metadata, including its width and height.  
 Iterate over `pdfContent.getPages()` and call `getWidth()` / `getHeight()` on each `PageInfo`.  
 ```java
@@ -184,32 +182,32 @@ System.out.println("Width of the first page: " + width);
 System.out.println("Height of the first page: " + height);
 ```
 
-#### Step 5: close the watermarker
+#### Bước 5: đóng watermarker
 Always invoke `watermarker.close()` to free native resources and avoid memory leaks.  
 ```java
 watermarker.close();
 ```
 
-## Common issues and solutions
+## Các vấn đề thường gặp và giải pháp
 - **Incorrect file path** – verify that the path is absolute or relative to the working directory.  
 - **Unsupported PDF version** – ensure the PDF complies with PDF 1.4 – 1.7; older versions may need conversion.  
 - **Insufficient permissions** – run the JVM with read access to the folder containing the PDF.
 
-## Practical applications
+## Ứng dụng thực tiễn
 Understanding page dimensions unlocks many scenarios:
 
 1. **PDF editing tools** – dynamically adjust fonts or images based on exact page size.  
 2. **Document analysis** – confirm that exported reports meet predefined print specifications.  
 3. **Data visualization** – generate charts that perfectly fit within a page’s printable area.
 
-## Performance considerations
+## Các cân nhắc về hiệu năng
 When dealing with large PDFs or bulk processing:
 
 - Cache `PdfLoadOptions` if you load many documents with the same settings.  
 - Process pages in parallel using Java’s `ExecutorService` to maximize CPU utilization.  
 - Avoid loading the entire document into memory; GroupDocs.Watermark streams pages on demand.
 
-## Frequently asked questions
+## Câu hỏi thường gặp
 
 **Q: What is the minimum Java version required for GroupDocs.Watermark?**  
 A: JDK 8 or higher is required; the library is fully compatible with Java 11, 17, and newer LTS releases.
@@ -226,24 +224,22 @@ A: The library can handle files up to 500 MB without full‑memory loading; fo
 **Q: Where can I find more examples of PDF manipulation?**  
 A: The official documentation and API reference provide extensive code snippets for watermarking, metadata editing, and more.
 
-## Resources
-- [Documentation](https://docs.groupdocs.com/watermark/java/)
-- [API Reference](https://reference.groupdocs.com/watermark/java)
-- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
-- [Temporary License Information](https://purchase.groupdocs.com/temporary-license/)
+## Tài nguyên
+- [Tài liệu](https://docs.groupdocs.com/watermark/java/)
+- [Tham chiếu API](https://reference.groupdocs.com/watermark/java)
+- [Tải GroupDocs.Watermark cho Java](https://releases.groupdocs.com/watermark/java/)
+- [Kho GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Diễn đàn Hỗ trợ miễn phí](https://forum.groupdocs.com/c/watermark/10)
+- [Thông tin Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Last Updated:** 2026-08-31  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
+**Cập nhật lần cuối:** 2026-08-31  
+**Kiểm tra với:** GroupDocs.Watermark 24.11 for Java  
+**Tác giả:** GroupDocs  
 
----
+## Hướng dẫn liên quan
 
-## Related Tutorials
-
-- [How to Retrieve Document Information Using GroupDocs.Watermark for Java: A Step-by-Step Guide](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
-- [Access and Iterate Over PDF Artifacts Using GroupDocs.Watermark in Java for Document Watermarking](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
-- [How to Extract PDF Annotations Using GroupDocs.Watermark in Java: A Comprehensive Guide](/watermark/java/pdf-document-watermarking/extract-pdf-annotations-groupdocs-watermark-java/)
+- [Cách Lấy Thông Tin Tài Liệu Sử Dụng GroupDocs.Watermark cho Java: Hướng Dẫn Từng Bước](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
+- [Truy cập và Lặp Qua Các Thành Phần PDF Sử Dụng GroupDocs.Watermark trong Java cho Đánh Dấu Tài Liệu](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
+- [Cách Trích Xuất Ghi Chú PDF Sử Dụng GroupDocs.Watermark trong Java: Hướng Dẫn Toàn Diện](/watermark/java/pdf-document-watermarking/extract-pdf-annotations-groupdocs-watermark-java/)
