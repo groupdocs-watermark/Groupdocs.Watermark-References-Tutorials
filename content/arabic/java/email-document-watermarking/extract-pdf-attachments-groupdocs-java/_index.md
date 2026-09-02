@@ -1,12 +1,11 @@
 ---
-date: '2026-04-26'
-description: تعلم كيفية استخراج مرفقات PDF باستخدام GroupDocs.Watermark للغة Java.
-  يوضح لك هذا الدليل خطوة بخطوة كيفية استخراج مرفقات PDF بكفاءة لإدارة مستندات البريد
-  الإلكتروني.
+date: '2025-12-29'
+description: تعلم كيفية استخراج مرفقات PDF وفهم طريقة استخراج ملفات PDF باستخدام GroupDocs.Watermark
+  للغة Java. قم بتحسين إدارة مستنداتك من خلال هذا الدليل خطوة بخطوة.
 keywords:
-- how to extract pdf attachments
+- extract PDF attachments
 - GroupDocs Watermark Java
-- PDF attachment extraction
+- document management
 title: كيفية استخراج مرفقات PDF باستخدام GroupDocs Watermark في Java
 type: docs
 url: /ar/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/
@@ -15,44 +14,35 @@ weight: 1
 
 # كيفية استخراج مرفقات PDF باستخدام GroupDocs Watermark في Java
 
-في العالم الرقمي اليوم، إدارة مرفقات المستندات—وخاصة ملفات PDF التي غالبًا ما تخفي صورًا أو جداول بيانات أو ملفات أخرى—يمكن أن تكون صداعًا حقيقيًا. **يشرح هذا الدليل كيفية استخراج مرفقات PDF** باستخدام GroupDocs.Watermark للـ Java، حتى تتمكن من سحب كل ملف مضمّن بسرعة وتخزينه حيث تحتاج.
+في العالم الرقمي اليوم، إدارة مرفقات المستندات—وخاصة ملفات PDF التي غالبًا ما تحتوي على ملفات مدمجة مثل الصور والمستندات—يمكن أن تكون تحديًا. **في هذا الدليل، ستتعلم كيفية استخراج مرفقات PDF وفهم كيفية استخراج ملفات pdf** المخفية داخل حاوية PDF. سواءً كنت تبني سير عمل بريد إلكتروني‑مستند أو أرشيفًا رقميًا، فإن استخراج تلك الملفات بسرعة يوفر الوقت ويقلل الجهد اليدوي.
 
-## الإجابات السريعة
-- **ما الذي تفعله الميزة؟** يقوم بقراءة كل ملف مضمّن في ملف PDF ويحفظ كل واحد في مجلد تختاره.  
-- **ما المكتبة المطلوبة؟** GroupDocs.Watermark for Java (الإصدار 24.11 أو أحدث).  
-- **هل أحتاج إلى ترخيص؟** تجربة مجانية تعمل للتقييم؛ ترخيص مؤقت أو مُشتَرٍ يزيل جميع القيود.  
-- **هل يمكنه التعامل مع ملفات PDF المحمية بكلمة مرور؟** نعم—ما عليك سوى تمرير كلمة المرور عبر `PdfLoadOptions`.  
-- **هل هو مناسب للدفعات الكبيرة؟** بالطبع، طالما أنك تغلق `Watermarker` بعد كل مستند لتحرير الذاكرة.
+## إجابات سريعة
+- **What does GroupDocs.Watermark do?** It provides a simple API to read, modify, and extract content (including attachments) from PDF files.  
+- **Which language is covered?** Java, using the GroupDocs.Watermark for Java library.  
+- **Can I extract from password‑protected PDFs?** Yes—just supply the password via `PdfLoadOptions`.  
+- **Where are extracted files saved?** To a folder you specify, e.g., `YOUR_OUTPUT_DIRECTORY/`.  
+- **Do I need extra I/O code?** No, the library handles Java PDF file I/O internally.
 
-## ما هو استخراج مرفقات PDF؟
-مرفقات PDF هي ملفات يدمجها المؤلفون داخل حاوية PDF (مثل الصور، جداول البيانات، العقود). يتيح لك استخراجها أرشفتها أو فهرستها أو معالجتها كل على حدة—مناسب تمامًا لأنظمة إدارة مستندات البريد الإلكتروني التي تحتاج إلى فصل المرفقات عن محتوى PDF الرئيسي.
+## ما هو “how to extract pdf” عمليًا؟
+استخراج مرفقات PDF يعني سحب أي ملفات تم تضمينها داخل PDF—مثل الصور، جداول البيانات، أو ملفات PDF أخرى—حتى يمكن حفظها على نظام الملفات ومعالجتها بشكل مستقل.
 
-## لماذا استخراج مرفقات PDF باستخدام GroupDocs Watermark؟
-- **تحليل بدون كود:** المكتبة تجريدية للهياكل منخفضة المستوى لملف PDF، لذا لا تحتاج إلى كتابة محلل خاص بك.  
-- **استقرار عبر الأنظمة:** تعمل على أي بيئة متوافقة مع Java (Windows، Linux، macOS).  
-- **معالجة أمان مدمجة:** تدعم ملفات PDF المشفرة عبر `PdfLoadOptions`.  
-- **مركز على الأداء:** يسمح لك بإغلاق الموارد بسرعة، مما يحافظ على انخفاض استهلاك الذاكرة حتى مع المستندات الكبيرة.
+## لماذا تستخدم GroupDocs.Watermark لـ Java؟
+- **Zero‑dependency extraction** – the library reads the PDF structure directly, no need for third‑party parsers.  
+- **Built‑in support for password‑protected PDF Java** – just pass the password when loading.  
+- **Efficient Java PDF file I/O** – works with large files without excessive memory consumption.  
+- **One‑stop solution** – you can later add watermarking, metadata editing, or other document‑management tasks.
 
 ## المتطلبات المسبقة
-- **Java Development Kit (JDK)** – أي إصدار مستقر حديث (يوصى بالإصدار 11+).  
-- **Maven** – لإدارة التبعيات.  
-- **GroupDocs.Watermark for Java** – المكتبة الأساسية (انظر خطوات التثبيت أدناه).  
+قبل أن نبدأ، تأكد من وجود ما يلي:
 
-### المكتبات والاعتمادات المطلوبة
-1. **GroupDocs.Watermark for Java** – تأكد من توفر المكتبة.  
-2. **Java Development Kit (JDK)** – نسخة مستقرة مثبتة على جهازك.
+- **GroupDocs.Watermark for Java** (installed via Maven or direct download).  
+- **Java Development Kit (JDK)** – a stable, recent version (e.g., JDK 11 or newer).  
+- بيئة تطوير متكاملة مثل **IntelliJ IDEA** أو **Eclipse** (أو أي محرر نصوص تفضله).  
+- معرفة أساسية بـ **Java file I/O** ومعالجة التدفقات.
 
-### متطلبات إعداد البيئة
-- IDE مثل IntelliJ IDEA أو Eclipse (أو أي محرر نصوص تفضله).  
-- Maven لمعالجة تبعيات `pom.xml`.
-
-### متطلبات المعرفة المسبقة
-- مفاهيم برمجة Java الأساسية.  
-- الإلمام بعمليات إدخال/إخراج الملفات في Java.
-
-## إعداد GroupDocs.Watermark للـ Java
+## إعداد GroupDocs.Watermark لـ Java
 ### إعداد Maven
-Add the repository and dependency to your `pom.xml`:
+أضف المستودع والاعتماد إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <repositories>
@@ -73,15 +63,15 @@ Add the repository and dependency to your `pom.xml`:
 ```
 
 ### التحميل المباشر
-بدلاً من ذلك، قم بتحميل المكتبة مباشرةً من [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+بدلاً من ذلك، قم بتحميل المكتبة مباشرة من [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 #### خطوات الحصول على الترخيص
-- **Free Trial** – ابدأ بتجربة مجانية لاستكشاف الوظائف الأساسية.  
-- **Temporary License** – احصل على مفتاح مؤقت لاختبار غير مقيد.  
-- **Purchase** – اشترِ ترخيصًا كاملًا للاستخدام في الإنتاج.
+- **Free Trial** – start with a trial to explore basic functionality.  
+- **Temporary License** – obtain a temporary key for unrestricted testing.  
+- **Purchase** – buy a full license if the tool fits your production needs.
 
 ### التهيئة الأساسية
-فيما يلي الحد الأدنى من الشيفرة المطلوبة لإنشاء كائن `Watermarker`:
+إليك الحد الأدنى من الشيفرة التي تحتاجها لتشغيل الـ watermarker:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -91,39 +81,36 @@ PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("path/to/your/document.pdf", loadOptions);
 ```
 
-## دليل التنفيذ
-دعونا نتبع العملية الكاملة لاستخراج المرفقات من مستند PDF باستخدام GroupDocs.Watermark.
-
+## كيفية استخراج مرفقات PDF – دليل خطوة بخطوة
 ### نظرة عامة
-يتكون سير عمل الاستخراج من أربع خطوات بسيطة:
-1. تحميل ملف PDF باستخدام `Watermarker`.  
-2. استرجاع كائن `PdfContent`.  
-3. التكرار عبر كل `PdfAttachment` وكتابة بايتاته إلى القرص.  
-4. إغلاق `Watermarker` لتحرير الموارد.
+يتكون سير عمل الاستخراج من أربع إجراءات بسيطة:
 
-### تنفيذ خطوة بخطوة
+1. Load the PDF with `Watermarker`.  
+2. Retrieve the `PdfContent` object.  
+3. Loop through each `PdfAttachment`.  
+4. Write the attachment bytes to a **save pdf attachments folder** of your choice.
 
-#### الخطوة 1: تحميل مستند PDF
-أنشئ كائن `Watermarker` يشير إلى ملف PDF المصدر الخاص بك:
+### الخطوة 1: تحميل مستند PDF
+إنشاء مثيل `Watermarker` باستخدام مسار ملف PDF الخاص بك:
 
 ```java
 String pdfPath = "YOUR_DOCUMENT_DIRECTORY/document.pdf";
 Watermarker watermarker = new Watermarker(pdfPath, new PdfLoadOptions());
 ```
 
-**شرح:** يجهز هذا السطر المكتبة للعمل مع ملف PDF المحدد. يمكن توسيع `PdfLoadOptions` لاحقًا (مثلاً لإضافة كلمة مرور).
+**Explanation:** This line tells GroupDocs.Watermark where the source PDF lives and prepares it for further processing. The `PdfLoadOptions` can also carry a password if you’re dealing with a **password protected pdf java** scenario.
 
-#### الخطوة 2: الوصول إلى محتوى PDF
-احصل على تمثيل PDF منخفض المستوى:
+### الخطوة 2: الوصول إلى محتوى PDF
+احصل على كائن المحتوى الذي يمنحك الوصول إلى الموارد المدمجة:
 
 ```java
 com.groupdocs.watermark.contents.PdfContent pdfContent = watermarker.getContent(com.groupdocs.watermark.contents.PdfContent.class);
 ```
 
-**شرح:** `getContent()` تُعيد كائن `PdfContent` يمنحك وصولًا مباشرًا إلى الموارد المضمّنة، بما في ذلك المرفقات.
+**Explanation:** `getContent()` returns a `PdfContent` instance that holds collections of attachments, images, and other PDF elements.
 
-#### الخطوة 3: التكرار واستخراج المرفقات
-تكرّر عبر كل مرفق، اعرض بياناته الوصفية، واكتب البيانات الثنائية إلى مجلد تختاره:
+### الخطوة 3: التكرار واستخراج المرفقات
+تكرار كل مرفق وكتابته إلى القرص:
 
 ```java
 for (com.groupdocs.watermark.contents.PdfAttachment attachment : pdfContent.getAttachments()) {
@@ -138,76 +125,75 @@ for (com.groupdocs.watermark.contents.PdfAttachment attachment : pdfContent.getA
 }
 ```
 
-**شرح:** كل `PdfAttachment` يوفر اسم الملف الأصلي، وصفًا، ونوع MIME الخاص به. استدعاء `write()` يحفظ البايتات الخام في الموقع الذي تحدده.
+**Explanation:**  
+- `attachment.getName()` returns the original filename.  
+- `attachment.getContent()` provides the raw bytes, which we write using standard **java pdf file io** (`FileOutputStream`).  
+- This loop automatically handles any type of embedded file, so you can also **extract embedded images pdf** without extra code.
 
-#### الخطوة 4: إغلاق Watermarker
-دائمًا أغلق `Watermarker` عند الانتهاء:
+### الخطوة 4: إغلاق Watermarker
+تحرير الموارد بمجرد الانتهاء:
 
 ```java
 watermarker.close();
 ```
 
-**شرح:** الإغلاق يحرّر مقبض الملفات والذاكرة، وهو أمر حاسم عند معالجة العديد من ملفات PDF في مهمة دفعة.
-
-### نصائح استكشاف الأخطاء وإصلاحها
-- **مسارات غير صحيحة:** تحقق مرة أخرى من أن مسار PDF المصدر ومجلد الإخراج موجودان وقابلان للكتابة.  
-- **استثناءات إدخال/إخراج الملفات:** غلف حلقة الاستخراج بكتلة try‑catch لمعالجة `IOException` بشكل سلس.  
-- **ملفات PDF المشفرة:** مرّر كلمة المرور إلى `PdfLoadOptions` مثل `loadOptions.setPassword("yourPassword");`.
-
-## التطبيقات العملية
-استخراج مرفقات PDF مفيد في العديد من السيناريوهات الواقعية:
-1. **أرشفة المستندات:** استخراج العقود، الصور، أو جداول البيانات المضمّنة للتخزين طويل الأمد.  
-2. **أتمتة البريد الإلكتروني:** عندما يحتوي بريد إلكتروني على PDF بملفات مخفية، يتم استخراجها تلقائيًا للمعالجة اللاحقة.  
-3. **التدقيق القانوني والامتثال:** تأكد من أن كل ملف مشار إليه في PDF مُؤَخذ في الاعتبار أثناء مراجعة الامتثال.
-
-## اعتبارات الأداء
-- **إدارة الذاكرة:** أغلق كل `Watermarker` بعد معالجة ملف للحفاظ على حجم JVM منخفض.  
-- **معالجة الدُفعات:** للدُفعات الكبيرة، فكر في إعادة استخدام كائن `Watermarker` واحد لكل خيط ومعالجة الملفات تسلسليًا.  
-- **تحسين الإدخال/الإخراج:** استخدم تدفقات مخزنة إذا كنت تتوقع مرفقات كبيرة جدًا.
+**Explanation:** Closing the `Watermarker` frees memory and file handles, which is especially important when processing large PDFs.
 
 ## المشكلات الشائعة والحلول
-| المشكلة | الحل |
-|-------|----------|
-| **لم يتم إرجاع أي مرفقات** | تحقق من أن ملف PDF يحتوي فعليًا على ملفات مضمّنة (افتحه في Adobe Reader → لوحة المرفقات). |
-| **`NullPointerException` على `pdfContent.getAttachments()`** | تأكد من تحميل ملف PDF بشكل صحيح؛ تحقق من مسار الملف والأذونات. |
-| **أخطاء الترخيص** | استخدم ترخيصًا مؤقتًا للاختبار أو اشترِ ترخيصًا كاملًا؛ ضع ملف الترخيص في جذر المشروع أو عيّن مسار الترخيص برمجيًا. |
-| **استخراج بطيء على ملفات PDF الضخمة** | عالج الصفحات على دفعات وأغلق `Watermarker` بعد كل مستند لتحرير الذاكرة. |
+| العَرَض | السبب المحتمل | الحل |
+|---------|--------------|-----|
+| `FileNotFoundException` on PDF path | Wrong `pdfPath` or missing file | Verify the absolute path and ensure the file exists. |
+| No attachments listed | PDF has no embedded files or they are encrypted | Use `PdfLoadOptions.setPassword("yourPassword")` for **password protected pdf java** files. |
+| Out‑of‑memory errors on large PDFs | Not closing `Watermarker` promptly | Call `watermarker.close()` after extraction or process PDFs in batches. |
 
-## الأسئلة المتكررة
+## التطبيقات العملية
+استخراج المرفقات مفيد لـ:
 
-**س1:** هل يمكنني استخراج المرفقات من ملفات PDF المحمية بكلمة مرور؟  
-**ج:** نعم، قدّم كلمة المرور عبر `PdfLoadOptions.setPassword("yourPassword")` قبل إنشاء `Watermarker`.
+- **Document Archiving** – pull out original source files for long‑term storage.  
+- **Digital Libraries** – make embedded multimedia (images, videos) searchable.  
+- **Legal & Compliance** – ensure every attached file is accounted for during audits.
 
-**س2:** ما أنواع الملفات التي يمكن استخراجها كمرفقات؟  
-**ج:** أي نوع ملف مضمّن في PDF—صور، جداول بيانات، مستندات Word، أرشيفات ZIP، إلخ.
-
-**س3:** هل تتوفر GroupDocs.Watermark لمنصات غير Java؟  
-**ج:** بالتأكيد. نفس الوظيفة متاحة لـ .NET وكواجهات برمجة تطبيقات سحابية.
-
-**س4:** ما هي مدة التجربة المجانية؟  
-**ج:** تختلف فترة التجربة؛ راجع التفاصيل على صفحة [GroupDocs License](https://purchase.groupdocs.com/temporary-license/).
-
-**س5:** هل يمكن لهذه الطريقة التعامل مع حجم كبير من ملفات PDF بكفاءة؟  
-**ج:** نعم، طالما أنك تغلق كل `Watermarker` بسرعة وتدير تدفقات الإدخال/الإخراج بحكمة.
+## اعتبارات الأداء
+- **Memory Management:** Close the `Watermarker` as soon as you finish extracting.  
+- **I/O Efficiency:** Write each attachment directly to disk; avoid loading all attachments into memory simultaneously.  
+- **Threading:** For bulk processing, consider processing PDFs in parallel streams, but keep each `Watermarker` instance isolated.
 
 ## الخلاصة
-لديك الآن طريقة كاملة وجاهزة للإنتاج **لاستخراج مرفقات PDF** باستخدام GroupDocs.Watermark في Java. من خلال دمج هذه العملية في خط أنابيب إدارة مستندات البريد الإلكتروني، يمكنك فصل الملفات المضمّنة تلقائيًا، تحسين الفهرسة، وتبسيط فحوصات الامتثال.
+You now have a complete, production‑ready method for **how to extract pdf** attachments using GroupDocs.Watermark in Java. This approach simplifies handling embedded files, reduces manual effort, and integrates smoothly with any Java‑based document‑management pipeline.
 
 ### الخطوات التالية
-- جرّب `PdfLoadOptions` للتعامل مع ملفات PDF المشفرة.  
-- ادمج منطق الاستخراج هذا مع ميزات العلامات المائية في GroupDocs.Watermark للحصول على حل معالجة مستندات كامل الدورة.  
-- استكشف واجهات برمجة تطبيقات GroupDocs للتعامل مع البيانات الوصفية لإثراء الملفات المستخرجة بسياق إضافي.
+- جرّب إضافة علامة مائية إلى نفس ملف PDF بعد الاستخراج.  
+- استكشف الـ API لاستخراج **embedded images pdf** بشكل خاص.  
+- دمج هذه المنطق في خدمة معالجة مرفقات البريد الإلكتروني الخاصة بك.
 
 ### دعوة إلى اتخاذ إجراء
-جرّب الشيفرة في مشروعك الخاص وشاهد مقدار الوقت الذي توفره على الاستخراج اليدوي. إذا واجهت أي مشاكل، انضم إلى النقاش في [منتدى دعم GroupDocs](https://forum.groupdocs.com/c/watermark/10).
+Give the code a spin in your own project and see how quickly you can pull out hidden files. If you run into questions, the community is ready to help on the [GroupDocs Support Forum](https://forum.groupdocs.com/c/watermark/10).
 
-**آخر تحديث:** 2026-04-26  
-**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
-**المؤلف:** GroupDocs  
+## قسم الأسئلة المتكررة
+**Q1**: هل يمكنني استخراج المرفقات من ملفات PDF المحمية بكلمة مرور؟  
+A: Yes, but you'll need to provide the correct password through `PdfLoadOptions`.
+
+**Q2**: ما أنواع الملفات التي يمكن استخراجها كمرفقات؟  
+A: Almost all types of files embedded within a PDF can be extracted.
+
+**Q3**: هل GroupDocs.Watermark متاح لمنصات غير Java؟  
+A: Yes, it supports .NET and cloud‑based APIs.
+
+**Q4**: كم تدوم الفترة التجريبية المجانية؟  
+A: The trial period varies; check [GroupDocs License](https://purchase.groupdocs.com/temporary-license/) for details.
+
+**Q5**: هل يمكن لهذه الطريقة التعامل مع حجم كبير من ملفات PDF بكفاءة؟  
+A: Yes, with proper resource management and optimization strategies in place.
 
 ## الموارد
-- **التوثيق:** [GroupDocs.Watermark Java Docs](https://docs.groupdocs.com/watermark/java/)  
-- **API Reference:** [Java API Reference](https://reference.groupdocs.com/watermark/java)  
-- **Download Library:** [Get GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub Repository:** [GroupDocs Watermark GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Free Support Forum:** [Join the Discussion](https://forum.groupdocs.com/c/watermark/10)
+- **Documentation**: [GroupDocs.Watermark Java Docs](https://docs.groupdocs.com/watermark/java/)  
+- **API Reference**: [Java API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Download Library**: [Get GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)  
+- **GitHub Repository**: [GroupDocs Watermark GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Free Support Forum**: [Join the Discussion](https://forum.groupdocs.com/c/watermark/10)
+
+---
+
+**آخر تحديث:** 2025-12-29  
+**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
+**المؤلف:** GroupDocs
