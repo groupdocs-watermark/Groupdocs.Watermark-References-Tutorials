@@ -1,28 +1,25 @@
 ---
-title: "How to remove shapes from excel using GroupDocs.Watermark in Java"
-description: "Learn how to remove shapes from excel files with GroupDocs.Watermark for Java. Includes steps to load Excel, iterate worksheets, and delete formatted shapes."
-date: "2026-06-01"
-weight: 1
-url: "/java/spreadsheet-document-watermarking/excel-shape-manipulation-groupdocs-watermark-java/"
+date: '2026-06-01'
+description: 'Dowiedz się, jak usunąć shapes z plików Excel przy użyciu GroupDocs.Watermark
+  dla Java. Zawiera kroki: wczytanie Excel, iterację worksheets i usunięcie formatted
+  shapes.'
 keywords:
-  - remove shapes from excel
-  - add watermark to excel
-  - load excel document java
-  - how to add watermark excel
-type: docs
+- remove shapes from excel
+- add watermark to excel
+- load excel document java
+- how to add watermark excel
 schemas:
-- type: TechArticle
-  headline: How to remove shapes from excel using GroupDocs.Watermark in Java
-  description: Learn how to remove shapes from excel files with GroupDocs.Watermark
-    for Java. Includes steps to load Excel, iterate worksheets, and delete formatted
-    shapes.
+- author: GroupDocs
   dateModified: '2026-06-01'
-  author: GroupDocs
-- type: HowTo
-  name: How to remove shapes from excel using GroupDocs.Watermark in Java
   description: Learn how to remove shapes from excel files with GroupDocs.Watermark
     for Java. Includes steps to load Excel, iterate worksheets, and delete formatted
     shapes.
+  headline: How to remove shapes from excel using GroupDocs.Watermark in Java
+  type: TechArticle
+- description: Learn how to remove shapes from excel files with GroupDocs.Watermark
+    for Java. Includes steps to load Excel, iterate worksheets, and delete formatted
+    shapes.
+  name: How to remove shapes from excel using GroupDocs.Watermark in Java
   steps:
   - name: '**Data Validation** – Automatically delete shapes that contain deprecated
       notices.'
@@ -36,53 +33,59 @@ schemas:
       guaranteeing a polished look.'
     text: '**Automated Reporting** – Clean up generated reports before distribution,
       guaranteeing a polished look.'
-- type: FAQPage
-  questions:
-  - question: Can I remove shapes from a password‑protected workbook?
-    answer: Yes. Load the document with the password parameter, then run the same
+  type: HowTo
+- questions:
+  - answer: Yes. Load the document with the password parameter, then run the same
       removal logic; the API decrypts the file in memory.
-  - question: Does the library support .xls (Excel 97‑2003) files?
-    answer: Absolutely. GroupDocs.Watermark handles both `.xlsx` and legacy `.xls`
+    question: Can I remove shapes from a password‑protected workbook?
+  - answer: Absolutely. GroupDocs.Watermark handles both `.xlsx` and legacy `.xls`
       formats without conversion.
-  - question: How do I log which shapes were deleted?
-    answer: Iterate the shape collection, check the formatting criteria, log `shape.getName()`
+    question: Does the library support .xls (Excel 97‑2003) files?
+  - answer: Iterate the shape collection, check the formatting criteria, log `shape.getName()`
       or `shape.getId()`, then call `remove()`.
-  - question: Is it possible to add a watermark after removing shapes?
-    answer: Yes. After cleanup, invoke `doc.addWatermark(new TextWatermark("Confidential"))`
+    question: How do I log which shapes were deleted?
+  - answer: Yes. After cleanup, invoke `doc.addWatermark(new TextWatermark("Confidential"))`
       to overlay a text watermark across all worksheets.
-  - question: What is the maximum file size supported?
-    answer: The library can process files up to **2 GB** on a 64‑bit JVM, limited
+    question: Is it possible to add a watermark after removing shapes?
+  - answer: The library can process files up to **2 GB** on a 64‑bit JVM, limited
       only by available heap memory and OS constraints.
+    question: What is the maximum file size supported?
+  type: FAQPage
+title: Jak usunąć shapes z Excel przy użyciu GroupDocs.Watermark w Java
+type: docs
+url: /pl/java/spreadsheet-document-watermarking/excel-shape-manipulation-groupdocs-watermark-java/
+weight: 1
 ---
-# How to remove shapes from excel using GroupDocs.Watermark in Java
+
+# Jak usunąć kształty z Excela przy użyciu GroupDocs.Watermark w Javie
 
 Excel spreadsheets are a cornerstone of business reporting, but unwanted shapes—especially those with outdated or non‑standard text formatting—can clutter a file and break visual consistency. **Removing shapes from excel** quickly becomes essential for clean, professional documents. In this tutorial we’ll walk through loading an Excel workbook, iterating its worksheets, and programmatically deleting shapes that match specific formatting criteria, all with the powerful GroupDocs.Watermark Java library.
 
-## Quick Answers
-- **Can GroupDocs.Watermark delete shapes?** Yes, it provides a `removeShape` method that works on any worksheet.  
-- **Do I need a license for this feature?** A trial works for evaluation; a full license is required for production.  
-- **Which Java version is required?** Java 8 or later is supported.  
-- **How many file formats does GroupDocs.Watermark handle?** Over 30 input and output formats, including XLSX, DOCX, PDF, and PPTX.  
-- **Is memory consumption a concern for large workbooks?** Use try‑with‑resources and avoid loading entire sheets into memory; the API streams data efficiently.
+## Szybkie odpowiedzi
+- **Czy GroupDocs.Watermark może usuwać kształty?** Tak, udostępnia metodę `removeShape`, która działa na dowolnym arkuszu.  
+- **Czy potrzebna jest licencja do tej funkcji?** Wersja próbna działa w celach oceny; pełna licencja jest wymagana w produkcji.  
+- **Jaka wersja Javy jest wymagana?** Obsługiwana jest Java 8 lub nowsza.  
+- **Ile formatów plików obsługuje GroupDocs.Watermark?** Ponad 30 formatów wejściowych i wyjściowych, w tym XLSX, DOCX, PDF i PPTX.  
+- **Czy zużycie pamięci jest problemem przy dużych skoroszytach?** Używaj try‑with‑resources i unikaj ładowania całych arkuszy do pamięci; API strumieniuje dane efektywnie.
 
-## What is remove shapes from excel?
+## Co to jest usuwanie kształtów z Excela?
 *Removing shapes from excel* means programmatically deleting drawing objects—such as text boxes, icons, or SmartArt—that meet certain criteria, like font style, color, or size. This operation cleans up the workbook without manual editing, ensuring visual consistency, reducing file size, and preventing outdated or unwanted graphics from appearing in distributed reports.
 
-## Why remove shapes from excel?
+## Dlaczego usuwać kształty z Excela?
 GroupDocs.Watermark can process **multi‑hundred‑page workbooks at speeds up to 3 × faster** than manual editing, handling **30+ file formats** while keeping memory usage under 150 MB for files larger than 50 MB. Automating shape removal eliminates human error and guarantees consistent branding across all generated reports.
 
-## Prerequisites
-### Required Libraries, Versions, and Dependencies
-- **Java Development Kit (JDK)**: Version 8 or later.  
-- **GroupDocs.Watermark**: Version 24.11 (the latest stable release at the time of writing).
+## Wymagania wstępne
+### Wymagane biblioteki, wersje i zależności
+- **Java Development Kit (JDK)**: wersja 8 lub nowsza.  
+- **GroupDocs.Watermark**: wersja 24.11 (najnowsze stabilne wydanie w momencie pisania).
 
-### Environment Setup Requirements
+### Wymagania dotyczące konfiguracji środowiska
 Use an IDE such as IntelliJ IDEA or Eclipse and Maven for dependency management.
 
-### Knowledge Prerequisites
+### Wymagania wiedzy
 Familiarity with Java syntax and basic Excel concepts (worksheets, cells, and shapes) will help you follow the examples.
 
-## Setting Up GroupDocs.Watermark for Java
+## Konfiguracja GroupDocs.Watermark dla Javy
 **Maven Dependency**  
 Add the following to your `pom.xml`:
 
@@ -104,15 +107,15 @@ Add the following to your `pom.xml`:
 </dependencies>
 ```  
 
-**Direct Download**  
+**Bezpośrednie pobranie**  
 Alternatively, download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### License Acquisition Steps
-- **Free Trial** – Start with a free trial to evaluate features.  
-- **Temporary License** – Obtain a temporary license for extended testing.  
-- **Purchase** – Buy a full license for production use.
+### Kroki uzyskania licencji
+- **Free Trial** – Rozpocznij od darmowej wersji próbnej, aby ocenić funkcje.  
+- **Temporary License** – Uzyskaj tymczasową licencję do rozszerzonego testowania.  
+- **Purchase** – Kup pełną licencję do użytku produkcyjnego.
 
-### Basic Initialization and Setup  
+### Podstawowa inicjalizacja i konfiguracja  
 Once the library is added to your project, initialize it as shown below:
 
 ```java
@@ -131,17 +134,17 @@ public class WatermarkSetup {
 }
 ```  
 
-## How to remove shapes from excel?
+## Jak usunąć kształty z Excela?
 Load the workbook, walk through each worksheet, and call the shape‑removal API. This two‑step pattern—*load* then *iterate*—covers virtually any scenario where you need to clean up shapes across an entire file. By checking each shape’s properties against your criteria before removal, you ensure only the unwanted elements are deleted while preserving the rest of the document’s layout and content.
 
-## Load an Excel Document
+## Ładowanie dokumentu Excel
 **Overview**  
 Loading an Excel document is your starting point for any manipulation task. GroupDocs.Watermark simplifies this with its intuitive API.  
 
 **Definition Anchor**  
 `SpreadsheetDocument` is the primary class in GroupDocs.Watermark that represents an Excel workbook in memory, providing methods to access worksheets, cells, and shapes.  
 
-#### Code Snippet
+#### Fragment kodu
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -157,14 +160,14 @@ public class FeatureLoadExcelDocument {
 }
 ```  
 
-## Access and Iterate Through Worksheets in a Spreadsheet
+## Dostęp i iteracja przez arkusze w skoroszycie
 **Overview**  
 Iterating through worksheets allows you to perform operations on each sheet individually.  
 
 **Definition Anchor**  
 `Worksheet` represents a single sheet inside a `SpreadsheetDocument`; you can read, modify, or delete its content through this object.  
 
-#### Code Snippet
+#### Fragment kodu
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.SpreadsheetContent;
@@ -187,14 +190,14 @@ public class FeatureIterateWorksheets {
 }
 ```  
 
-## Remove Shapes with Specific Text Formatting from a Spreadsheet
+## Usuwanie kształtów o określonym formatowaniu tekstu ze skoroszytu
 **Overview**  
 This feature targets shapes that meet certain text formatting criteria, such as font type or color.  
 
 **Definition Anchor**  
 `Shape` is the object model for any drawing element (text box, picture, or SmartArt) inside a worksheet; it exposes properties like `getText`, `getFont`, and `remove`.  
 
-#### Code Snippet
+#### Fragment kodu
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.SpreadsheetContent;
@@ -231,49 +234,49 @@ public class FeatureRemoveShapesWithSpecificFormatting {
 }
 ```  
 
-## Practical Applications
-### Real‑World Use Cases
-1. **Data Validation** – Automatically delete shapes that contain deprecated notices.  
-2. **Template Standardization** – Enforce corporate branding by stripping non‑standard text boxes.  
-3. **Automated Reporting** – Clean up generated reports before distribution, guaranteeing a polished look.
+## Praktyczne zastosowania
+### Przykłady zastosowań w rzeczywistym świecie
+1. **Data Validation** – Automatycznie usuwać kształty zawierające przestarzałe powiadomienia.  
+2. **Template Standardization** – Wymuszać branding korporacyjny poprzez usuwanie niestandardowych pól tekstowych.  
+3. **Automated Reporting** – Oczyścić wygenerowane raporty przed dystrybucją, zapewniając dopracowany wygląd.
 
-### Integration Possibilities
+### Możliwości integracji
 GroupDocs.Watermark can be embedded in Java‑based enterprise pipelines, such as document‑generation micro‑services, batch‑processing jobs, or content‑management systems, providing a seamless, license‑compliant way to manage Excel assets.
 
-## Performance Considerations
-### Optimizing Performance
-- **Avoid heavy operations inside loops** – fetch shape collections once per worksheet.  
-- **Release resources promptly** – use try‑with‑resources to close streams automatically.
+## Rozważania dotyczące wydajności
+### Optymalizacja wydajności
+- **Unikaj ciężkich operacji w pętlach** – pobieraj kolekcje kształtów raz na arkusz.  
+- **Szybko zwalniaj zasoby** – używaj try‑with‑resources, aby automatycznie zamykać strumienie.
 
-### Resource Usage Guidelines
+### Wytyczne dotyczące użycia zasobów
 Release the `SpreadsheetDocument` object as soon as processing finishes to free native memory. For files exceeding 100 MB, consider processing worksheets in parallel streams to leverage multi‑core CPUs.
 
-### Best Practices for Java Memory Management
+### Najlepsze praktyki zarządzania pamięcią w Javie
 Utilize `try (SpreadsheetDocument doc = new SpreadsheetDocument(...)) { … }` so the `close()` method runs even if an exception occurs.
 
-## Common Issues and Solutions
-- **Shape not found** – Ensure you’re checking the correct worksheet index; shapes are scoped per sheet.  
-- **License exception** – A trial license disables batch processing; upgrade to a full license for unlimited operations.  
-- **Unexpected font values** – Font properties may be inherited; use `shape.getEffectiveFont()` to retrieve the resolved style.
+## Typowe problemy i rozwiązania
+- **Shape not found** – Upewnij się, że sprawdzasz prawidłowy indeks arkusza; kształty są ograniczone do poszczególnych arkuszy.  
+- **License exception** – Licencja próbna wyłącza przetwarzanie wsadowe; przejdź na pełną licencję, aby uzyskać nieograniczone operacje.  
+- **Unexpected font values** – Właściwości czcionki mogą być dziedziczone; użyj `shape.getEffectiveFont()`, aby uzyskać rozstrzygnięty styl.
 
-## Frequently Asked Questions
+## Najczęściej zadawane pytania
 
-**Q: Can I remove shapes from a password‑protected workbook?**  
+**Q: Czy mogę usunąć kształty z skoroszytu zabezpieczonego hasłem?**  
 A: Yes. Load the document with the password parameter, then run the same removal logic; the API decrypts the file in memory.
 
-**Q: Does the library support .xls (Excel 97‑2003) files?**  
+**Q: Czy biblioteka obsługuje pliki .xls (Excel 97‑2003)?**  
 A: Absolutely. GroupDocs.Watermark handles both `.xlsx` and legacy `.xls` formats without conversion.
 
-**Q: How do I log which shapes were deleted?**  
+**Q: Jak mogę zalogować, które kształty zostały usunięte?**  
 A: Iterate the shape collection, check the formatting criteria, log `shape.getName()` or `shape.getId()`, then call `remove()`.
 
-**Q: Is it possible to add a watermark after removing shapes?**  
+**Q: Czy można dodać znak wodny po usunięciu kształtów?**  
 A: Yes. After cleanup, invoke `doc.addWatermark(new TextWatermark("Confidential"))` to overlay a text watermark across all worksheets.
 
-**Q: What is the maximum file size supported?**  
+**Q: Jaki jest maksymalny obsługiwany rozmiar pliku?**  
 A: The library can process files up to **2 GB** on a 64‑bit JVM, limited only by available heap memory and OS constraints.
 
-## Conclusion
+## Zakończenie
 In this tutorial we demonstrated a complete, production‑ready approach to **remove shapes from excel** workbooks using GroupDocs.Watermark for Java. By loading the document, iterating worksheets, and applying precise formatting filters, you can automate cleanup tasks, enforce branding, and improve report quality at scale. Explore additional features such as watermark insertion, document conversion, and batch processing to further extend your document‑automation toolkit.
 
 ---
@@ -282,8 +285,8 @@ In this tutorial we demonstrated a complete, production‑ready approach to **re
 **Tested With:** GroupDocs.Watermark 24.11 for Java  
 **Author:** GroupDocs
 
-## Related Tutorials
+## Powiązane samouczki
 
-- [Excel Shape Manipulation Using GroupDocs.Watermark in Java: A Comprehensive Guide](/watermark/java/spreadsheet-document-watermarking/excel-shape-manipulation-groupdocs-watermark-java/)
-- [Add Image Watermark to Excel Spreadsheet Using GroupDocs.Watermark Java SDK](/watermark/java/spreadsheet-document-watermarking/add-image-watermark-spreadsheet-groupdocs-java/)
-- [Excel Document Handling and Watermarking with GroupDocs.Watermark Java](/watermark/java/spreadsheet-document-watermarking/excel-document-handling-groupdocs-watermark-java/)
+- [Manipulacja kształtami Excel przy użyciu GroupDocs.Watermark w Javie: Kompletny przewodnik](/watermark/java/spreadsheet-document-watermarking/excel-shape-manipulation-groupdocs-watermark-java/)
+- [Dodaj znak wodny obrazu do arkusza Excel przy użyciu GroupDocs.Watermark Java SDK](/watermark/java/spreadsheet-document-watermarking/add-image-watermark-spreadsheet-groupdocs-java/)
+- [Obsługa dokumentów Excel i znakowanie wodne z GroupDocs.Watermark Java](/watermark/java/spreadsheet-document-watermarking/excel-document-handling-groupdocs-watermark-java/)
