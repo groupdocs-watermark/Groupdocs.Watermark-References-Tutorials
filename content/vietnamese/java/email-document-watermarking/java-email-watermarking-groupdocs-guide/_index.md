@@ -1,112 +1,61 @@
 ---
-date: '2026-06-16'
-description: Tìm hiểu cách watermark tài liệu email bằng GroupDocs.Watermark for Java.
-  Hướng dẫn step‑by‑step này bao gồm setup, thêm watermark vào email và best practices.
+date: '2026-01-03'
+description: Tìm hiểu cách thêm watermark email bằng Java với GroupDocs.Watermark,
+  bao gồm các kỹ thuật nhúng hình ảnh vào email bằng Java và đọc byte hình ảnh bằng
+  Java để bảo mật tài liệu email.
 keywords:
-- how to watermark email
-- add watermark to email
-- GroupDocs Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-16'
-  description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  headline: How to Watermark Email with GroupDocs.Watermark for Java – A Complete
-    Guide
-  type: TechArticle
-- description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  name: How to Watermark Email with GroupDocs.Watermark for Java – A Complete Guide
-  steps:
-  - name: '**Import Necessary Classes:**'
-    text: '**Import Necessary Classes:**'
-  - name: '**Initialize Email Load Options and Watermarker:**'
-    text: '**Initialize Email Load Options and Watermarker:**'
-  - name: '**Import Required Packages:**'
-    text: '**Import Required Packages:**'
-  - name: '**Read Image File and Convert to Byte Array:**'
-    text: '**Read Image File and Convert to Byte Array:**'
-  - name: '**Import Classes for Handling Email Contents:**'
-    text: '**Import Classes for Handling Email Contents:**'
-  - name: '**Add Embedded Image to the Email:**'
-    text: '**Add Embedded Image to the Email:**'
-  - name: '**Save and Close Watermarker:**'
-    text: '**Save and Close Watermarker:**'
-  - name: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-    text: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-  - name: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-    text: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-  - name: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-    text: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-  type: HowTo
-- questions:
-  - answer: GroupDocs.Watermark only modifies the HTML body; plain‑text parts remain
-      unchanged, which is standard practice for email branding.
-    question: Can I watermark both HTML and plain‑text parts of an email?
-  - answer: Yes, because the watermark becomes part of the email’s HTML content, it
-      is retained in all subsequent forwards.
-    question: Does the watermark survive when the email is forwarded?
-  - answer: You can save as EML, MSG, or MHT. The API also supports PDF conversion
-      if you need a printable version.
-    question: What file formats can I export the watermarked email to?
-  - answer: A free trial license works for development and testing. Production deployments
-      require a purchased license to remove evaluation watermarks.
-    question: Is a license required for development environments?
-  - answer: Attachments are streamed unchanged; only the email body is processed,
-      so attachment size does not affect watermarking performance.
-    question: How does GroupDocs.Watermark handle large attachments?
-  type: FAQPage
-title: Cách watermark email với GroupDocs.Watermark for Java – Hướng dẫn toàn diện
+- Java Email Watermarking
+- GroupDocs Watermark for Java
+- Email Document Watermarking
+title: Thêm watermark email trong Java bằng GroupDocs.Watermark
 type: docs
 url: /vi/java/email-document-watermarking/java-email-watermarking-groupdocs-guide/
 weight: 1
 ---
 
-# Cách Đánh Dấu Nước Email bằng GroupDocs.Watermark cho Java – Hướng Dẫn Toàn Diện
+# Cách thêm email watermark java với GroupDocs.Watermark: Hướng dẫn từng bước
 
 ## Giới thiệu
 
-Nếu bạn cần bảo vệ tính toàn vẹn của các giao tiếp email, **how to watermark email** là một khả năng quan trọng. Thêm một định danh trực quan trực tiếp vào email ngăn chặn việc chuyển tiếp và can thiệp trái phép đồng thời giữ cho nội dung gốc của tin nhắn vẫn có thể đọc được. Trong hướng dẫn này, bạn sẽ học cách tích hợp GroupDocs.Watermark cho Java vào ứng dụng của mình, tải một tệp email, nhúng một hình ảnh làm dấu nước, và lưu lại tin nhắn đã được đánh dấu—tất cả mà không làm thay đổi cấu trúc gốc của email.
+Bạn có đang tìm cách **add email watermark java** để bảo mật tài liệu email của mình mà không ảnh hưởng đến tính toàn vẹn? Khám phá cách tích hợp watermark một cách liền mạch vào quy trình email của bạn bằng GroupDocs.Watermark cho Java. Hướng dẫn này sẽ chỉ cho bạn cách tải tài liệu email, đọc các tệp hình ảnh, nhúng hình ảnh làm watermark và lưu tài liệu đã chỉnh sửa một cách hiệu quả.
 
-**Bạn sẽ thành thạo:**
-- Cài đặt và cấu hình GroupDocs.Watermark cho Java.  
-- Tải tài liệu email (EML, MSG, hoặc MHT) vào API.  
-- Chuyển đổi hình ảnh thành mảng byte và nhúng nó làm dấu nước.  
-- Lưu email đã chỉnh sửa trong khi giữ nguyên các tệp đính kèm và nội dung HTML.  
+**Bạn sẽ học được:**
+- Cài đặt và sử dụng GroupDocs.Watermark cho Java.  
+- Tải tài liệu email vào ứng dụng của bạn.  
+- Đọc và nhúng hình ảnh vào email.  
+- Lưu tài liệu email có watermark một cách hiệu quả.
 
-Khi hoàn thành, bạn sẽ có thể **add watermark to email** các tệp một cách lập trình, giúp các giao tiếp gửi đi của bạn được gắn thương hiệu một cách an toàn.
+### Câu trả lời nhanh
+- **Thư viện chính?** GroupDocs.Watermark cho Java  
+- **Mục tiêu chính?** Thêm email watermark java vào các tệp MSG/EML  
+- **Các bước chính?** Tải email → đọc byte hình ảnh → nhúng hình ảnh → lưu  
+- **Cần giấy phép?** Có, giấy phép GroupDocs hợp lệ cho môi trường sản xuất  
+- **Định dạng được hỗ trợ?** MSG, EML và các loại email khác
 
-## Câu trả lời nhanh
-- **Thư viện cần thiết là gì?** GroupDocs.Watermark cho Java (v24.11+).  
-- **Các định dạng email được hỗ trợ là gì?** EML, MSG và MHT – hơn 30 + định dạng tổng cộng.  
-- **Tôi có thể sử dụng dấu nước PNG không?** Có, PNG và JPEG được hỗ trợ đầy đủ.  
-- **Tôi có cần giấy phép cho việc phát triển không?** Giấy phép dùng thử miễn phí hoạt động cho việc thử nghiệm; giấy phép sản xuất cần thiết cho việc sử dụng thương mại.  
-- **Việc đánh dấu nước tiêu tốn bao nhiêu bộ nhớ bổ sung?** Thông thường dưới 15 MB cho một email 5 MB khi sử dụng hình ảnh nén.
+## Add email watermark java là gì?
 
-## Đánh dấu nước Email là gì?
-Đánh dấu nước email là quá trình nhúng một yếu tố trực quan—chẳng hạn như logo hoặc tuyên bố—trực tiếp vào phần thân của tệp email. Dấu nước trở thành một phần của nội dung HTML, đảm bảo người nhận nhìn thấy thương hiệu bất kể họ sử dụng client email nào.
+Thêm watermark email trong Java có nghĩa là chèn một định danh trực quan—như logo hoặc tuyên bố—vào phần thân hoặc tệp đính kèm của một tệp email một cách lập trình. Điều này giúp bảo vệ thông tin mật, củng cố thương hiệu và xác thực tính xác thực của tài liệu.
 
 ## Tại sao nên sử dụng GroupDocs.Watermark cho Java?
-GroupDocs.Watermark hỗ trợ **hơn 50 định dạng đầu vào và đầu ra**, bao gồm EML, MSG và MHT, và có thể xử lý email lên tới **200 MB** mà không cần tải toàn bộ tệp vào bộ nhớ. API của nó cung cấp các thao tác thread‑safe, cho phép bạn đánh dấu hàng trăm email mỗi phút trên một máy chủ tiêu chuẩn 4‑core.
+
+GroupDocs.Watermark cung cấp một API cấp cao giúp trừu tượng hoá các phức tạp của các định dạng email khác nhau. Nó cho phép bạn tập trung vào logic nghiệp vụ trong khi xử lý các cấu trúc MIME, các đối tượng nhúng và việc render hình ảnh phía sau.
 
 ## Yêu cầu trước
-- **Java Development Kit (JDK) 8+** đã được cài đặt và cấu hình trong IDE của bạn.  
-- **Maven** hoặc công cụ xây dựng khác để quản lý các phụ thuộc.  
-- Truy cập vào một thư mục nơi bạn có thể đọc các email nguồn và ghi kết quả đã được đánh dấu.  
-- Kiến thức cơ bản về Java (file I/O, streams, và các khái niệm hướng đối tượng).  
+
+- **Thư viện và phụ thuộc cần thiết**
+  - GroupDocs.Watermark cho Java (phiên bản 24.11 trở lên).  
+  - Một IDE như IntelliJ IDEA hoặc Eclipse hỗ trợ dự án Maven.
+- **Yêu cầu thiết lập môi trường**
+  - JDK 8 hoặc mới hơn đã được cài đặt.  
+  - Quyền truy cập vào thư mục để lưu các tệp đầu vào và đầu ra.
+- **Kiến thức nền tảng**
+  - Lập trình Java cơ bản.  
+  - Quen thuộc với việc xử lý tệp và Maven.
 
 ## Cài đặt GroupDocs.Watermark cho Java
 
 ### Sử dụng Maven
-Thêm phụ thuộc sau vào tệp `pom.xml` của bạn:
+Thêm cấu hình sau vào tệp `pom.xml` của bạn:
 
 ```xml
 <repositories>
@@ -127,18 +76,14 @@ Thêm phụ thuộc sau vào tệp `pom.xml` của bạn:
 ```
 
 ### Tải trực tiếp
-Hoặc tải JAR mới nhất từ trang phát hành chính thức:  
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Hoặc tải phiên bản mới nhất trực tiếp từ [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 #### Các bước lấy giấy phép
-- **Free Trial:** Tải giấy phép dùng thử để khám phá API.  
-- **Temporary License:** Để đánh giá kéo dài, yêu cầu khóa tạm thời qua cổng mua hàng: [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license).  
-- **Full License:** Mua giấy phép sản xuất để triển khai không giới hạn.
+- **Dùng thử miễn phí:** Bắt đầu bằng cách tải bản dùng thử miễn phí để khám phá các tính năng của GroupDocs.Watermark.  
+- **Giấy phép tạm thời:** Để đánh giá kéo dài, lấy giấy phép tạm thời qua [trang mua của GroupDocs](https://purchase.groupdocs.com/temporary-license).  
+- **Mua bản quyền:** Xem xét mua giấy phép đầy đủ cho môi trường sản xuất.
 
-### Khởi tạo và Cấu hình Cơ bản
-`Watermarker` là lớp chính quản lý việc tải, chỉnh sửa và lưu tài liệu.  
-`EmailLoadOptions` cấu hình cách tệp email được diễn giải khi tải.
-
+### Khởi tạo và cài đặt cơ bản
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -147,163 +92,128 @@ String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
 Watermarker watermarker = new Watermarker(emailFilePath);
 ```
 
-## Hướng dẫn triển khai
+## Cách thêm email watermark java
 
-### Tải tài liệu Email
+Dưới đây là hướng dẫn đầy đủ, từng bước cho thấy **cách thêm email watermark java** bằng API.
 
-#### Tổng quan
-Việc tải email là bước đầu tiên trước khi áp dụng bất kỳ dấu nước nào. GroupDocs.Watermark trừu tượng hoá định dạng tệp, cho phép bạn làm việc với một đối tượng `Watermarker` thống nhất.
-
-#### Trả lời trực tiếp
-Tạo một thể hiện `Watermarker` với `EmailLoadOptions`, chỉ tới tệp `.eml` hoặc `.msg` của bạn, và API sẽ phân tích phần thân HTML, các tệp đính kèm và siêu dữ liệu—tất cả trong một lần gọi. Thao tác này thường hoàn thành dưới 200 ms cho một email 2 MB.
-
-#### Triển khai từng bước
-1. **Nhập các lớp cần thiết:**  
-   ```java
-   import com.groupdocs.watermark.Watermarker;
-   import com.groupdocs.watermark.options.EmailLoadOptions;
-   ```  
-
-2. **Khởi tạo Email Load Options và Watermarker:**  
-   ```java
-   EmailLoadOptions loadOptions = new EmailLoadOptions();
-   String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
-   Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
-   ```  
-
-#### Định nghĩa
-`EmailLoadOptions` là một lớp cấu hình cho phép GroupDocs.Watermark hiểu cách diễn giải tệp email nguồn (ví dụ, có nên giữ lại các hình ảnh nhúng hay không).
-
-### Đọc tệp hình ảnh thành mảng Byte
+### Bước 1: Tải tài liệu email
 
 #### Tổng quan
-Để nhúng dấu nước, hình ảnh phải được cung cấp dưới dạng mảng byte để API có thể chèn nó vào HTML của email.
+Tải tài liệu email là bước đầu tiên của bạn trong việc thêm watermark. GroupDocs.Watermark cho phép bạn tải nhiều định dạng một cách liền mạch.
 
-#### Trả lời trực tiếp
-Đọc tệp hình ảnh bằng `FileInputStream`, chuyển luồng thành mảng byte bằng `IOUtils.toByteArray`, và giữ mảng này trong bộ nhớ—điều này cho phép dấu nước được chèn mà không cần ghi tệp tạm thời lên đĩa.
+#### Triển khai
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.EmailLoadOptions;
+```
 
-#### Triển khai từng bước
-1. **Nhập các gói cần thiết:**  
-   ```java
-   import java.io.File;
-   import java.io.FileInputStream;
-   import java.io.InputStream;
-   ```  
+```java
+EmailLoadOptions loadOptions = new EmailLoadOptions();
+String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
+Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
+```
 
-2. **Đọc tệp hình ảnh và chuyển thành mảng Byte:**  
-   ```java
-   File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
-   byte[] imageBytes = new byte[(int) imageFile.length()];
-   InputStream imageInputStream = new FileInputStream(imageFile);
-   imageInputStream.read(imageBytes);
-   imageInputStream.close();
-   ```  
+*Giải thích:* `EmailLoadOptions` cho phép bạn tinh chỉnh cách tệp MSG/EML được phân tích. Đảm bảo đường dẫn tệp trỏ tới một tệp email hợp lệ.
 
-#### Định nghĩa
-`FileInputStream` là một lớp I/O chuẩn của Java, đọc các byte thô từ một tệp trên hệ thống tập tin.
-
-### Thêm hình ảnh nhúng vào Email
+### Bước 2: đọc byte hình ảnh java
 
 #### Tổng quan
-Nhúng hình ảnh dưới dạng tham chiếu Content‑ID (CID) đảm bảo dấu nước hiển thị nội tuyến trong phần thân HTML của email.
+Để nhúng hình ảnh làm watermark, trước tiên bạn cần đọc tệp hình ảnh vào một mảng byte. Đây là bước **read image bytes java**.
 
-#### Trả lời trực tiếp
-Tạo một CID duy nhất, thêm các byte hình ảnh vào `Watermarker` bằng `addImageWatermark`, và tham chiếu CID trong phần thân HTML. API tự động cập nhật các phần MIME để email vẫn tương thích với RFC.
+#### Triển khai
+```java
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+```
 
-#### Triển khai từng bước
-1. **Nhập các lớp để xử lý nội dung Email:**  
-   ```java
-   import com.groupdocs.watermark.contents.EmailContent;
-   import com.groupdocs.watermark.contents.EmailEmbeddedObject;
-   ```  
+```java
+File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
+byte[] imageBytes = new byte[(int) imageFile.length()];
+InputStream imageInputStream = new FileInputStream(imageFile);
+imageInputStream.read(imageBytes);
+imageInputStream.close();
+```
 
-2. **Thêm hình ảnh nhúng vào Email:**  
-   ```java
-   EmailContent content = watermarker.getContent(EmailContent.class);
-   content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
-   
-   EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
-   content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
-   ```  
+*Giải thích:* Chuyển đổi hình ảnh thành mảng byte làm cho nó tương thích với API `addEmbeddedObject`, bất kể kích thước hình ảnh.
 
-#### Định nghĩa
-`addImageWatermark` là một phương thức của `Watermarker` chèn dấu nước hình ảnh vào lớp hiển thị của tài liệu.  
-`Content‑ID (CID)` là một tiêu đề MIME cho phép client email hiển thị các tài nguyên nhúng như hình ảnh trực tiếp trong phần thân tin nhắn.
-
-### Lưu tài liệu Email đã đánh dấu nước
+### Bước 3: nhúng hình ảnh email java
 
 #### Tổng quan
-Sau khi dấu nước được áp dụng, bạn phải lưu các thay đổi vào một tệp mới.
+Bây giờ bạn sẽ nhúng hình ảnh vào nội dung email. Đây là thao tác **embed image email java** tạo ra một tham chiếu Content‑ID (CID).
 
-#### Trả lời trực tiếp
-Gọi `watermarker.save("output.eml", SaveOptions.create())` rồi `watermarker.close()` để giải phóng tất cả các handle tệp và bộ đệm bộ nhớ. Tệp đã lưu giữ nguyên các tệp đính kèm và siêu dữ liệu gốc đồng thời hiển thị dấu nước mới.
+#### Triển khai
+```java
+import com.groupdocs.watermark.contents.EmailContent;
+import com.groupdocs.watermark.contents.EmailEmbeddedObject;
+```
 
-#### Triển khai từng bước
-1. **Lưu và Đóng Watermarker:**  
-   ```java
-   String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
-   watermarker.save(outputFilePath);
-   watermarker.close();
-   ```  
+```java
+EmailContent content = watermarker.getContent(EmailContent.class);
+content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
 
-#### Định nghĩa
-`SaveOptions` xác định định dạng đầu ra và cài đặt nén cho tệp email kết quả.
+EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
+content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
+```
+
+*Giải thích:* Phương thức `add` lưu hình ảnh dưới dạng đối tượng nhúng. CID được tạo ra sau đó được sử dụng trong phần thân HTML để hiển thị watermark.
+
+### Bước 4: Lưu tài liệu email có watermark
+
+#### Tổng quan
+Sau khi nhúng watermark, lưu các thay đổi vào một tệp mới.
+
+#### Triển khai
+```java
+String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
+watermarker.save(outputFilePath);
+watermarker.close();
+```
+
+*Giải thích:* `save` ghi email đã chỉnh sửa ra đĩa, trong khi `close` giải phóng tất cả tài nguyên gốc.
 
 ## Ứng dụng thực tiễn
 
-Nhúng dấu nước vào email có giá trị trong nhiều tình huống thực tế:
-
-1. **Bảo mật tài liệu nội bộ** – Ngăn chặn rò rỉ dữ liệu vô tình bằng cách gắn thương hiệu cho mọi bản ghi nhớ nội bộ với dấu nước bảo mật.  
-2. **Tiếp thị qua Email** – Tăng cường nhận diện thương hiệu bằng cách tự động thêm logo của bạn vào mọi email chiến dịch.  
-3. **Thư từ pháp lý** – Gắn dấu nước “Confidential – Attorney‑Client Privilege” vào email pháp lý để đáp ứng kiểm toán tuân thủ.  
+1. **Bảo mật tài liệu nội bộ:** Bảo vệ các giao tiếp doanh nghiệp nhạy cảm khỏi việc chuyển tiếp không được phép.  
+2. **Chiến dịch Email Marketing:** Gắn thương hiệu vào mỗi email gửi đi bằng logo của bạn để nhận diện nhất quán.  
+3. **Tài liệu pháp lý:** Thêm watermark chống giả mạo vào thư từ pháp lý để đảm bảo tính toàn vẹn.
 
 ## Các cân nhắc về hiệu năng
-- **Tối ưu kích thước hình ảnh:** Sử dụng PNG‑8 hoặc JPEG‑2000 để giữ mảng byte dưới 100 KB mà không mất chất lượng đáng chú ý.  
-- **Quản lý tài nguyên:** Luôn đóng các stream (`FileInputStream`, `watermarker`) trong khối `finally` hoặc sử dụng try‑with‑resources để tránh rò rỉ bộ nhớ.  
-- **Xử lý hàng loạt:** Đối với việc đánh dấu hàng loạt, xử lý email bất đồng bộ bằng `CompletableFuture` của Java để tối đa hoá việc sử dụng CPU.  
+- **Tối ưu kích thước hình ảnh:** Sử dụng tệp PNG/JPEG nén để giảm mức sử dụng bộ nhớ.  
+- **Quản lý tài nguyên:** Luôn đóng các luồng (`close()`) để tránh rò rỉ bộ nhớ.  
+- **Xử lý bất đồng bộ:** Đối với các thao tác hàng loạt, xử lý email trên các luồng nền hoặc sử dụng `CompletableFuture` của Java để cải thiện thông lượng.
 
 ## Các vấn đề thường gặp và giải pháp
 
 | Vấn đề | Nguyên nhân | Giải pháp |
-|-------|-------------|-----------|
-| **Hình ảnh không hiển thị** | CID không được tham chiếu đúng trong HTML | Xác minh thẻ `<img src="cid:yourCid">` khớp với CID được sử dụng trong `addImageWatermark`. |
-| **Email bị hỏng** | Lưu với `SaveOptions` sai | Sử dụng `SaveOptions.create().setPreserveOriginalHeaders(true)` để giữ nguyên các header gốc. |
-| **Lỗi hết bộ nhớ** | Email lớn (>200 MB) được tải toàn bộ vào bộ nhớ | Kích hoạt chế độ streaming qua `EmailLoadOptions.setLoadMode(LoadMode.Stream)` trước khi khởi tạo `Watermarker`. |
+|-------|-------|----------|
+| Không có hình ảnh hiển thị trong email | Tham chiếu CID không đúng | Xác minh `embeddedObject.getContentId()` được sử dụng chính xác trong thẻ `<img src="cid:...">`. |
+| Watermark không được lưu | `watermarker.save()` được gọi ở cùng đường dẫn với tệp đầu vào | Sử dụng thư mục hoặc tên tệp đầu ra khác. |
+| Ngoại lệ giấy phép | Thiếu hoặc giấy phép đã hết hạn | Đặt một tệp `GroupDocs.Watermark.lic` hợp lệ trong thư mục gốc của ứng dụng hoặc thiết lập `License` bằng mã. |
 
-## Câu hỏi thường gặp
+##âu hỏi thường gặp
 
-**Q: Tôi có thể đánh dấu cả phần HTML và plain‑text của email không?**  
-A: GroupDocs.Watermark chỉ chỉnh sửa phần thân HTML; các phần plain‑text vẫn không thay đổi, đây là thực hành tiêu chuẩn cho việc gắn thương hiệu email.
+**H: Định dạng hình ảnh nào phù hợp nhất cho embed image email java?**  
+A: PNG và JPEG được khuyến nghị vì chúng cân bằng giữa chất lượng và kích thước tệp, và cả hai đều được GroupDocs.Watermark hỗ trợ đầy đủ.
 
-**Q: Dấu nước có tồn tại khi email được chuyển tiếp không?**  
-A: Có, vì dấu nước trở thành một phần của nội dung HTML của email, nó sẽ được giữ lại trong mọi lần chuyển tiếp sau.
+**H: Làm sao tôi có thể khắc phục các vấn đề với read image bytes java?**  
+A: Đảm bảo đường dẫn tệp đúng, tệp không bị khóa và bạn có quyền đọc. Ngoài ra, xác minh độ dài mảng byte khớp với kích thước tệp.
 
-**Q: Tôi có thể xuất email đã đánh dấu sang định dạng file nào?**  
-A: Bạn có thể lưu dưới dạng EML, MSG hoặc MHT. API cũng hỗ trợ chuyển đổi sang PDF nếu bạn cần phiên bản có thể in.
+**H: Tôi có thể thêm nhiều watermark vào cùng một email không?**  
+A: Có. Gọi `content.getEmbeddedObjects().add(...)` cho mỗi hình ảnh và cập nhật phần thân HTML tương ứng.
 
-**Q: Có cần giấy phép cho môi trường phát triển không?**  
-A: Giấy phép dùng thử miễn phí hoạt động cho việc phát triển và thử nghiệm. Triển khai sản xuất yêu cầu mua giấy phép để loại bỏ dấu nước đánh giá.
+**H: Có thể watermark các tệp đính kèm trong email không?**  
+A: GroupDocs.Watermark có thể xử lý các tài liệu đính kèm riêng lẻ; bạn cần trích xuất, thêm watermark và gắn lại chúng bằng mã.
 
-**Q: GroupDocs.Watermark xử lý các tệp đính kèm lớn như thế nào?**  
-A: Các tệp đính kèm được stream mà không thay đổi; chỉ phần thân email được xử lý, vì vậy kích thước đính kèm không ảnh hưởng đến hiệu năng đánh dấu nước.
+**H: Thư viện có hỗ trợ tệp EML cũng như MSG không?**  
+A: Hoàn toàn. API giống nhau hoạt động cho cả định dạng MSG và EML.
 
 ## Kết luận
 
-Bây giờ bạn đã có quy trình hoàn chỉnh, sẵn sàng cho sản xuất để **how to watermark email** các tệp bằng GroupDocs.Watermark cho Java. Bằng cách thực hiện các bước trên, bạn có thể nhúng logo, thông báo bảo mật, hoặc bất kỳ hình ảnh tùy chỉnh nào vào mọi email gửi đi, đảm bảo thương hiệu nhất quán và tăng cường bảo mật. Khám phá các tính năng bổ sung như dấu nước văn bản, dấu thời gian động, hoặc xử lý hàng loạt để mở rộng giải pháp của bạn hơn nữa.
+Bạn giờ đã có một phương pháp đầy đủ, sẵn sàng cho môi trường sản xuất để **add email watermark java** bằng GroupDocs.Watermark. Thử nghiệm với các kiểu hình ảnh khác nhau, khám phá watermark văn bản, và tích hợp quy trình này vào các pipeline xử lý email lớn hơn để bảo mật tài liệu mạnh mẽ.
 
 ---
 
-**Cập nhật lần cuối:** 2026-06-16  
-**Đã kiểm tra với:** GroupDocs.Watermark cho Java 24.11  
-**Tác giả:** GroupDocs
-
-## Hướng dẫn liên quan
-
-- [Đánh dấu tài liệu Email trong Java : Quản lý chuyên sâu với GroupDocs.Watermark](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-management/)
-- [Xử lý tệp đính kèm Email Java với GroupDocs.Watermark : Hướng dẫn toàn diện](/watermark/java/email-document-watermarking/java-email-attachment-processing-groupdocs-watermark/)
-- [Hướng dẫn Đánh dấu Java : Bảo mật tài liệu với GroupDocs.Watermark API](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
+**Last Updated:** 2026-01-03  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs

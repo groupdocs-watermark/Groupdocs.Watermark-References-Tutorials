@@ -1,114 +1,61 @@
 ---
-date: '2026-06-16'
-description: GroupDocs.Watermark for Java kullanarak e-posta belgelerine nasıl filigran
-  ekleyeceğinizi öğrenin. Bu adım adım öğretici, kurulum, e-postaya filigran ekleme
-  ve en iyi uygulamaları kapsar.
+date: '2026-01-03'
+description: GroupDocs.Watermark kullanarak Java'da e-posta filigranı eklemeyi öğrenin;
+  güvenli e-posta belgeleri için gömülü resim e-posta Java ve resim baytlarını okuma
+  Java tekniklerini kapsar.
 keywords:
-- how to watermark email
-- add watermark to email
-- GroupDocs Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-16'
-  description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  headline: How to Watermark Email with GroupDocs.Watermark for Java – A Complete
-    Guide
-  type: TechArticle
-- description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  name: How to Watermark Email with GroupDocs.Watermark for Java – A Complete Guide
-  steps:
-  - name: '**Import Necessary Classes:**'
-    text: '**Import Necessary Classes:**'
-  - name: '**Initialize Email Load Options and Watermarker:**'
-    text: '**Initialize Email Load Options and Watermarker:**'
-  - name: '**Import Required Packages:**'
-    text: '**Import Required Packages:**'
-  - name: '**Read Image File and Convert to Byte Array:**'
-    text: '**Read Image File and Convert to Byte Array:**'
-  - name: '**Import Classes for Handling Email Contents:**'
-    text: '**Import Classes for Handling Email Contents:**'
-  - name: '**Add Embedded Image to the Email:**'
-    text: '**Add Embedded Image to the Email:**'
-  - name: '**Save and Close Watermarker:**'
-    text: '**Save and Close Watermarker:**'
-  - name: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-    text: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-  - name: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-    text: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-  - name: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-    text: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-  type: HowTo
-- questions:
-  - answer: GroupDocs.Watermark only modifies the HTML body; plain‑text parts remain
-      unchanged, which is standard practice for email branding.
-    question: Can I watermark both HTML and plain‑text parts of an email?
-  - answer: Yes, because the watermark becomes part of the email’s HTML content, it
-      is retained in all subsequent forwards.
-    question: Does the watermark survive when the email is forwarded?
-  - answer: You can save as EML, MSG, or MHT. The API also supports PDF conversion
-      if you need a printable version.
-    question: What file formats can I export the watermarked email to?
-  - answer: A free trial license works for development and testing. Production deployments
-      require a purchased license to remove evaluation watermarks.
-    question: Is a license required for development environments?
-  - answer: Attachments are streamed unchanged; only the email body is processed,
-      so attachment size does not affect watermarking performance.
-    question: How does GroupDocs.Watermark handle large attachments?
-  type: FAQPage
-title: GroupDocs.Watermark for Java ile E-posta Filigranlama – Tam Kılavuz
+- Java Email Watermarking
+- GroupDocs Watermark for Java
+- Email Document Watermarking
+title: GroupDocs.Watermark kullanarak Java'da e-posta filigranı ekle
 type: docs
 url: /tr/java/email-document-watermarking/java-email-watermarking-groupdocs-guide/
 weight: 1
 ---
 
-# GroupDocs.Watermark for Java ile E-posta Üzerine Filigran Ekleme – Tam Kılavuz
+# How to add email watermark java with GroupDocs.Watermark: A Step‑by‑Step Guide
 
-## Giriş
+## Introduction
 
-E-posta iletişiminizin bütünlüğünü korumanız gerekiyorsa, **how to watermark email** kritik bir yetenektir. Görsel bir tanımlayıcıyı doğrudan e-postanın içine eklemek, yetkisiz yönlendirme ve müdahaleyi önlerken orijinal mesajın okunabilirliğini korur. Bu öğreticide, GroupDocs.Watermark for Java'yı uygulamanıza nasıl entegre edeceğinizi, bir e-posta dosyasını nasıl yükleyeceğinizi, bir resmi filigran olarak nasıl gömeceğinizi ve filigranlı mesajı nasıl kaydedeceğinizi öğreneceksiniz—e-postanın orijinal yapısını değiştirmeden.
+E‑posta belgelerinizi bütünlüğünü bozmadan korumak için **add email watermark java** eklemek mi istiyorsunuz? GroupDocs.Watermark for Java kullanarak e‑posta iş akışlarınıza su işareti eklemeyi sorunsuz bir şekilde nasıl entegre edeceğinizi keşfedin. Bu öğretici, bir e‑posta belgesini yükleme, görüntü dosyalarını okuma, görüntüleri su işareti olarak gömme ve değiştirilmiş belgeyi verimli bir şekilde kaydetme adımlarını size gösterecek.
 
-**Ne öğreneceksiniz:**
-- GroupDocs.Watermark for Java'nın kurulumu ve yapılandırması.  
-- Bir e-posta belgesini (EML, MSG veya MHT) API'ye yükleme.  
-- Bir resmi bayt dizisine dönüştürme ve filigran olarak gömme.  
-- Ekleri ve HTML içeriğini koruyarak değiştirilmiş e-postayı kaydetme.  
+**What You'll Learn:**
+- GroupDocs.Watermark for Java’yı kurma ve kullanma.  
+- Bir e‑posta belgesini uygulamanıza yükleme.  
+- Görüntüleri okuyup e‑postalara gömme.  
+- Su işaretli e‑posta belgelerini verimli bir şekilde kaydetme.
 
-Sonunda, **add watermark to email** dosyalarını programlı olarak ekleyebilecek ve giden iletişiminizi güvenli bir şekilde markalayabileceksiniz.
+### Quick Answers
+- **Primary library?** GroupDocs.Watermark for Java  
+- **Main goal?** Add email watermark java to MSG/EML files  
+- **Key steps?** Load email → read image bytes → embed image → save  
+- **License needed?** Yes, a valid GroupDocs license for production  
+- **Supported formats?** MSG, EML, and other email types
 
-## Hızlı Yanıtlar
-- **Gerekli kütüphane nedir?** GroupDocs.Watermark for Java (v24.11+).  
-- **Hangi e-posta formatları desteklenir?** EML, MSG ve MHT dosyaları – toplamda 30+ format.  
-- **PNG filigranları kullanabilir miyim?** Evet, PNG ve JPEG tam olarak desteklenir.  
-- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme çalışır; ticari kullanım için üretim lisansı gereklidir.  
-- **Filigran ne kadar ekstra bellek tüketir?** Sıkıştırılmış görüntüler kullanıldığında 5 MB e-posta için genellikle 15 MB'ın altında.
+## What is add email watermark java?
 
-## E-posta Filigranlama Nedir?
-E-posta filigranlama, bir görsel öğeyi—örneğin bir logo veya uyarı metni—doğrudan bir e-posta dosyasının gövdesine gömmek işlemidir. Filigran, HTML içeriğinin bir parçası haline gelir ve alıcıların kullandıkları e-posta istemcisine bakılmaksızın markayı görmelerini sağlar.
+Java’da bir e‑posta su işareti eklemek, bir logo veya uyarı gibi görsel bir tanımlayıcının e‑posta dosyasının gövdesine veya eklerine programlı olarak yerleştirilmesi anlamına gelir. Bu, gizli bilgileri korumaya, marka tutarlılığını güçlendirmeye ve belgenin özgünlüğünü doğrulamaya yardımcı olur.
 
-## Neden GroupDocs.Watermark for Java Kullanmalısınız?
-GroupDocs.Watermark, **50+ giriş ve çıkış formatını** destekler; EML, MSG ve MHT dahil ve dosyanın tamamını belleğe yüklemeden **200 MB**'a kadar e-postaları işleyebilir. API'si, iş parçacığı‑güvenli işlemler sunar ve standart 4‑çekirdekli bir sunucuda dakikada yüzlerce e-postaya filigran eklemenizi sağlar.
+## Why use GroupDocs.Watermark for Java?
 
-## Önkoşullar
+GroupDocs.Watermark, farklı e‑posta formatlarının karmaşıklıklarını soyutlayan yüksek seviyeli bir API sunar. MIME yapıları, gömülü nesneler ve görüntü işleme gibi detayları arka planda yönetirken iş mantığınıza odaklanmanızı sağlar.
 
-- **Java Development Kit (JDK) 8+** IDE'nizde kurulu ve yapılandırılmış.  
-- **Maven** veya bağımlılıkları yönetmek için başka bir yapı aracı.  
-- Kaynak e-postaları okuyup filigranlı sonuçları yazabileceğiniz bir klasöre erişim.  
-- Temel Java bilgisi (dosya I/O, akışlar ve nesne‑yönelimli kavramlar).  
+## Prerequisites
 
-## GroupDocs.Watermark for Java'ı Kurma
+- **Required Libraries and Dependencies**
+  - GroupDocs.Watermark for Java (version 24.11 or later).  
+  - Maven projelerini destekleyen IntelliJ IDEA veya Eclipse gibi bir IDE.
+- **Environment Setup Requirements**
+  - JDK 8 or newer installed.  
+  - Girdi ve çıktı dosyalarını saklamak için bir dizine erişim.
+- **Knowledge Prerequisites**
+  - Basic Java programming.  
+  - Familiarity with file handling and Maven.
 
-### Maven Kullanarak
-Aşağıdaki bağımlılığı `pom.xml` dosyanıza ekleyin:
+## Setting Up GroupDocs.Watermark for Java
+
+### Using Maven
+Add the following configuration to your `pom.xml` file:
 
 ```xml
 <repositories>
@@ -128,18 +75,15 @@ Aşağıdaki bağımlılığı `pom.xml` dosyanıza ekleyin:
 </dependencies>
 ```
 
-### Doğrudan İndirme
-Alternatif olarak, resmi sürüm sayfasından en son JAR'ı indirin:  
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Direct Download
+Alternatively, download the latest version directly from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-#### Lisans Edinme Adımları
-- **Free Trial:** API'yi keşfetmek için deneme lisansı indirin.  
-- **Temporary License:** Uzun süreli değerlendirme için satın alma portalı üzerinden geçici bir anahtar isteyin: [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license).  
-- **Full License:** Sınırsız dağıtım için üretim lisansı satın alın.
+#### License Acquisition Steps
+- **Free Trial:** Start by downloading a free trial to explore GroupDocs.Watermark functionalities.  
+- **Temporary License:** For extended evaluation, acquire a temporary license through [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license).  
+- **Purchase:** Consider purchasing a full license for production environments.
 
-### Temel Başlatma ve Kurulum
-`Watermarker` belgeleri yükleme, düzenleme ve kaydetme işlemlerini yöneten ana sınıftır. `EmailLoadOptions` bir e-posta dosyasının yüklenirken nasıl yorumlanacağını yapılandırır.
-
+### Basic Initialization and Setup
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -148,164 +92,129 @@ String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
 Watermarker watermarker = new Watermarker(emailFilePath);
 ```
 
-## Uygulama Kılavuzu
+## How to add email watermark java
 
-### E-posta Belgesi Yükleme
+Below is a complete, step‑by‑step guide that shows **how to add email watermark java** using the API.
 
-#### Genel Bakış
-E-postayı yüklemek, herhangi bir filigran uygulanmadan önceki ilk adımdır. GroupDocs.Watermark dosya formatını soyutlayarak tek bir `Watermarker` nesnesiyle çalışmanıza olanak tanır.
+### Step 1: Load Email Document
 
-#### Doğrudan Cevap
-`EmailLoadOptions` ile bir `Watermarker` örneği oluşturun, `.eml` veya `.msg` dosyanıza yönlendirin ve API HTML gövdesini, ekleri ve meta verileri tek bir çağrıda ayrıştıracaktır. Bu işlem genellikle 2 MB bir e-posta için 200 ms'nin altında tamamlanır.
+#### Overview
+Loading an email document is your first step in watermarking. GroupDocs.Watermark allows you to load various formats seamlessly.
 
-#### Adım‑Adım Uygulama
-1. **Gerekli Sınıfları İçe Aktarın:**  
-   ```java
-   import com.groupdocs.watermark.Watermarker;
-   import com.groupdocs.watermark.options.EmailLoadOptions;
-   ```  
+#### Implementation
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.EmailLoadOptions;
+```
 
-2. **Email Load Options ve Watermarker'ı Başlatın:**  
-   ```java
-   EmailLoadOptions loadOptions = new EmailLoadOptions();
-   String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
-   Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
-   ```  
+```java
+EmailLoadOptions loadOptions = new EmailLoadOptions();
+String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
+Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
+```
 
-#### Tanım Açıklaması
-`EmailLoadOptions`, GroupDocs.Watermark'a kaynak e-posta dosyasını nasıl yorumlayacağını (örneğin gömülü görüntüleri koruyup korumayacağını) söyleyen bir yapılandırma sınıfıdır.  
+*Explanation:* `EmailLoadOptions` lets you fine‑tune how the MSG/EML file is parsed. Ensure the file path points to a valid email file.
 
-### Görüntü Dosyasını Bayt Dizisine Okuma
+### Step 2: read image bytes java
 
-#### Genel Bakış
-Filigran gömmek için, görüntünün API'nin e-postanın HTML'ine ekleyebilmesi amacıyla bayt dizisi olarak sağlanması gerekir.
+#### Overview
+To embed an image as a watermark, you first need to read the image file into a byte array. This is the **read image bytes java** step.
 
-#### Doğrudan Cevap
-Görüntü dosyasını `FileInputStream` ile okuyun, akışı `IOUtils.toByteArray` kullanarak bayt dizisine dönüştürün ve diziyi bellekte tutun—bu, filigranın diske geçici dosyalar yazmadan eklenmesini sağlar.
+#### Implementation
+```java
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+```
 
-#### Adım‑Adım Uygulama
-1. **Gerekli Paketleri İçe Aktarın:**  
-   ```java
-   import java.io.File;
-   import java.io.FileInputStream;
-   import java.io.InputStream;
-   ```  
+```java
+File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
+byte[] imageBytes = new byte[(int) imageFile.length()];
+InputStream imageInputStream = new FileInputStream(imageFile);
+imageInputStream.read(imageBytes);
+imageInputStream.close();
+```
 
-2. **Görüntü Dosyasını Oku ve Bayt Dizisine Dönüştür:**  
-   ```java
-   File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
-   byte[] imageBytes = new byte[(int) imageFile.length()];
-   InputStream imageInputStream = new FileInputStream(imageFile);
-   imageInputStream.read(imageBytes);
-   imageInputStream.close();
-   ```  
+*Explanation:* Converting the image to a byte array makes it compatible with the `addEmbeddedObject` API, regardless of image size.
 
-#### Tanım Açıklaması
-`FileInputStream`, dosya sistemindeki bir dosyadan ham baytları okuyan standart bir Java I/O sınıfıdır.
+### Step 3: embed image email java
 
-### E-postaya Gömülü Görüntü Ekleme
+#### Overview
+Now you’ll embed the image into the email content. This is the **embed image email java** operation that creates a Content‑ID (CID) reference.
 
-#### Genel Bakış
-Görüntüyü Content‑ID (CID) referansı olarak gömmek, filigranın e-postanın HTML gövdesinde satır içi görünmesini sağlar.
+#### Implementation
+```java
+import com.groupdocs.watermark.contents.EmailContent;
+import com.groupdocs.watermark.contents.EmailEmbeddedObject;
+```
 
-#### Doğrudan Cevap
-Benzersiz bir CID oluşturun, görüntü baytlarını `addImageWatermark` ile `Watermarker`'a ekleyin ve CID'yi HTML gövdesinde referans gösterin. API, e-postanın RFC‑uyumlu kalması için MIME bölümlerini otomatik olarak günceller.
+```java
+EmailContent content = watermarker.getContent(EmailContent.class);
+content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
 
-#### Adım‑Adım Uygulama
-1. **E-posta İçeriklerini İşlemek İçin Sınıfları İçe Aktarın:**  
-   ```java
-   import com.groupdocs.watermark.contents.EmailContent;
-   import com.groupdocs.watermark.contents.EmailEmbeddedObject;
-   ```  
+EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
+content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
+```
 
-2. **Gömülü Görüntüyü E-postaya Ekleyin:**  
-   ```java
-   EmailContent content = watermarker.getContent(EmailContent.class);
-   content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
-   
-   EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
-   content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
-   ```  
+*Explanation:* The `add` method stores the image as an embedded object. The generated CID is then used in the HTML body to display the watermark.
 
-#### Tanım Açıklaması
-`addImageWatermark`, `Watermarker`'ın belge görsel katmanına bir görüntü filigranı ekleyen metodudur.  
-`Content‑ID (CID)`, bir e-posta istemcisinin gömülü kaynakları (örneğin görüntüleri) doğrudan mesaj gövdesinde gösterebilmesini sağlayan bir MIME başlığıdır.
+### Step 4: Save Watermarked Email Document
 
-### Filigranlı E-posta Belgesini Kaydetme
+#### Overview
+After embedding your watermark, persist the changes to a new file.
 
-#### Genel Bakış
-Filigran uygulandıktan sonra, değişiklikleri yeni bir dosyaya kaydetmeniz gerekir.
+#### Implementation
+```java
+String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
+watermarker.save(outputFilePath);
+watermarker.close();
+```
 
-#### Doğrudan Cevap
-`watermarker.save("output.eml", SaveOptions.create())` metodunu çağırın ve ardından `watermarker.close()` ile tüm dosya tutucularını ve bellek tamponlarını serbest bırakın. Kaydedilen dosya, yeni filigranı gösterirken orijinal ekleri ve meta verileri korur.
+*Explanation:* `save` writes the modified email to disk, while `close` releases all native resources.
 
-#### Adım‑Adım Uygulama
-1. **Watermarker'ı Kaydedin ve Kapatın:**  
-   ```java
-   String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
-   watermarker.save(outputFilePath);
-   watermarker.close();
-   ```  
+## Practical Applications
 
-#### Tanım Açıklaması
-`SaveOptions`, ortaya çıkan e-posta dosyasının çıktı formatını ve sıkıştırma ayarlarını tanımlar.
+1. **Internal Document Security:** Protect sensitive corporate communications from unauthorized forwarding.  
+2. **Email Marketing Campaigns:** Brand every outbound email with your logo for consistent recognition.  
+3. **Legal Documentation:** Add a tamper‑evident watermark to legal correspondence to ensure integrity.
 
-## Pratik Uygulamalar
+## Performance Considerations
+- **Optimize Image Sizes:** Use compressed PNG/JPEG files to keep memory usage low.  
+- **Resource Management:** Always close streams (`close()`) to avoid memory leaks.  
+- **Asynchronous Processing:** For bulk operations, process emails on background threads or use Java’s `CompletableFuture` to improve throughput.
 
-E-postalara filigran eklemek, birçok gerçek dünya senaryosunda değerlidir:
-
-1. **Internal Document Security** – Her iç memo'yu gizli bir filigranla markalayarak kazara veri sızıntılarını önleyin.  
-2. **Email Marketing** – Her kampanya e-postasına otomatik olarak logonuzu ekleyerek marka kimliğinizi güçlendirin.  
-3. **Legal Correspondence** – Hukuki e-postalara “Confidential – Attorney‑Client Privilege” filigranı ekleyerek uyum denetimlerini karşılayın.  
-
-## Performans Düşünceleri
-- **Optimize Image Sizes:** Bayt dizisini 100 KB altında tutmak ve kalite kaybı olmadan PNG‑8 veya JPEG‑2000 kullanın.  
-- **Resource Management:** Bellek sızıntılarını önlemek için akışları (`FileInputStream`, `watermarker`) her zaman bir `finally` bloğunda kapatın veya try‑with‑resources kullanın.  
-- **Batch Processing:** Toplu filigranlama için, CPU kullanımını maksimize etmek amacıyla Java’nın `CompletableFuture` ile e-postaları asenkron işleyin.  
-
-## Yaygın Sorunlar ve Çözümler
-
-| Sorun | Neden | Çözüm |
+## Common Issues and Solutions
+| Issue | Cause | Solution |
 |-------|-------|----------|
-| **Görsel görünmüyor** | HTML içinde CID doğru şekilde referans gösterilmemiş | `<img src="cid:yourCid">` etiketinin `addImageWatermark` içinde kullanılan CID ile eşleştiğini doğrulayın. |
-| **E-posta bozuluyor** | `SaveOptions` yanlış kullanılarak kaydediliyor | Orijinal başlıkların bozulmaması için `SaveOptions.create().setPreserveOriginalHeaders(true)` kullanın. |
-| **Bellek yetersiz hatası** | Büyük e-posta (>200 MB) tamamen belleğe yüklendi | `Watermarker`'ı başlatmadan önce `EmailLoadOptions.setLoadMode(LoadMode.Stream)` ile akış modunu etkinleştirin. |
+| No image appears in email | Incorrect CID reference | Verify `embeddedObject.getContentId()` is used exactly in the `<img src="cid:...">` tag. |
+| Watermark not saved | `watermarker.save()` called on the same path as input | Use a different output directory or filename. |
+| License exception | Missing or expired license file | Place a valid `GroupDocs.Watermark.lic` in the application root or set `License` programmatically. |
 
-## Sıkça Sorulan Sorular
+## Frequently Asked Questions
 
-**S: Hem HTML hem de düz metin bölümlerine filigran ekleyebilir miyim?**  
-A: GroupDocs.Watermark yalnızca HTML gövdesini değiştirir; düz metin bölümleri değişmeden kalır, bu e-posta markalama için standart bir uygulamadır.
+**Q: What image formats work best for embed image email java?**  
+A: PNG and JPEG are recommended because they balance quality and file size, and both are fully supported by GroupDocs.Watermark.
 
-**S: E-posta yönlendirildiğinde filigran korunur mu?**  
-A: Evet, çünkü filigran e-postanın HTML içeriğinin bir parçası haline gelir ve tüm sonraki yönlendirmelerde korunur.
+**Q: How can I troubleshoot issues with read image bytes java?**  
+A: Ensure the file path is correct, the file is not locked, and that you have read permissions. Also, verify the byte array length matches the file size.
 
-**S: Filigranlı e-postayı hangi dosya formatlarına dışa aktarabilirim?**  
-A: EML, MSG veya MHT olarak kaydedebilirsiniz. Yazdırılabilir bir sürüm gerektiğinde API ayrıca PDF dönüşümünü de destekler.
+**Q: Can I add multiple watermarks to the same email?**  
+A: Yes. Call `content.getEmbeddedObjects().add(...)` for each image and update the HTML body accordingly.
 
-**S: Geliştirme ortamları için lisans gerekli mi?**  
-A: Geliştirme ve test için ücretsiz deneme lisansı yeterlidir. Üretim dağıtımları için değerlendirme filigranlarını kaldırmak amacıyla satın alınmış bir lisans gerekir.
+**Q: Is it possible to watermark attachments inside the email?**  
+A: GroupDocs.Watermark can process attached documents individually; you need to extract, watermark, and re‑attach them programmatically.
 
-**S: GroupDocs.Watermark büyük ekleri nasıl yönetir?**  
-A: Ekler değişmeden akış olarak işlenir; yalnızca e-posta gövdesi işlenir, bu yüzden ek boyutu filigranlama performansını etkilemez.
+**Q: Does the library support EML files as well as MSG?**  
+A: Absolutely. The same API works for both MSG and EML formats.
 
-## Sonuç
+## Conclusion
 
-Artık GroupDocs.Watermark for Java kullanarak **how to watermark email** dosyaları için eksiksiz, üretime hazır bir iş akışına sahipsiniz. Yukarıdaki adımları izleyerek her giden e-postaya logo, gizlilik uyarısı veya herhangi bir özel görüntü ekleyebilir, tutarlı bir marka kimliği ve artırılmış güvenlik sağlayabilirsiniz. Çözümünüzü daha da genişletmek için metin filigranları, dinamik tarih damgaları veya toplu işleme gibi ek özellikleri keşfedin.
+You now have a complete, production‑ready method to **add email watermark java** using GroupDocs.Watermark. Experiment with different image styles, explore text watermarks, and integrate this workflow into larger email‑processing pipelines for robust document security.
 
 ---
 
-**Son Güncelleme:** 2026-06-16  
-**Test Edilen Versiyon:** GroupDocs.Watermark for Java 24.11  
-**Yazar:** GroupDocs
+**Last Updated:** 2026-01-03  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  
 
-## İlgili Öğreticiler
-
-- [Java'da E-posta Belgesi Filigranlama : GroupDocs.Watermark ile Yönetim Ustalığı](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-management/)
-- [Java E-posta Ek İşleme ile GroupDocs.Watermark : Tam Kılavuz](/watermark/java/email-document-watermarking/java-email-attachment-processing-groupdocs-watermark/)
-- [Java Filigran Kılavuzu : GroupDocs.Watermark API ile Güvenli Belgeler](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
+---

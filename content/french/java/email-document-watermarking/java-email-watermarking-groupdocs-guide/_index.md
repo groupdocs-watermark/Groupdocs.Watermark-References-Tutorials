@@ -1,115 +1,61 @@
 ---
-date: '2026-06-16'
-description: Apprenez à ajouter un filigrane aux documents e‑mail à l’aide de GroupDocs.Watermark
-  for Java. Ce tutoriel étape par étape couvre la configuration, l’ajout de filigrane
-  aux e‑mails et les meilleures pratiques.
+date: '2026-01-03'
+description: Apprenez comment ajouter un filigrane d'e‑mail en Java avec GroupDocs.Watermark,
+  en couvrant les techniques d'intégration d'image d'e‑mail en Java et de lecture
+  des octets d'image en Java pour sécuriser les documents d'e‑mail.
 keywords:
-- how to watermark email
-- add watermark to email
-- GroupDocs Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-16'
-  description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  headline: How to Watermark Email with GroupDocs.Watermark for Java – A Complete
-    Guide
-  type: TechArticle
-- description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  name: How to Watermark Email with GroupDocs.Watermark for Java – A Complete Guide
-  steps:
-  - name: '**Import Necessary Classes:**'
-    text: '**Import Necessary Classes:**'
-  - name: '**Initialize Email Load Options and Watermarker:**'
-    text: '**Initialize Email Load Options and Watermarker:**'
-  - name: '**Import Required Packages:**'
-    text: '**Import Required Packages:**'
-  - name: '**Read Image File and Convert to Byte Array:**'
-    text: '**Read Image File and Convert to Byte Array:**'
-  - name: '**Import Classes for Handling Email Contents:**'
-    text: '**Import Classes for Handling Email Contents:**'
-  - name: '**Add Embedded Image to the Email:**'
-    text: '**Add Embedded Image to the Email:**'
-  - name: '**Save and Close Watermarker:**'
-    text: '**Save and Close Watermarker:**'
-  - name: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-    text: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-  - name: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-    text: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-  - name: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-    text: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-  type: HowTo
-- questions:
-  - answer: GroupDocs.Watermark only modifies the HTML body; plain‑text parts remain
-      unchanged, which is standard practice for email branding.
-    question: Can I watermark both HTML and plain‑text parts of an email?
-  - answer: Yes, because the watermark becomes part of the email’s HTML content, it
-      is retained in all subsequent forwards.
-    question: Does the watermark survive when the email is forwarded?
-  - answer: You can save as EML, MSG, or MHT. The API also supports PDF conversion
-      if you need a printable version.
-    question: What file formats can I export the watermarked email to?
-  - answer: A free trial license works for development and testing. Production deployments
-      require a purchased license to remove evaluation watermarks.
-    question: Is a license required for development environments?
-  - answer: Attachments are streamed unchanged; only the email body is processed,
-      so attachment size does not affect watermarking performance.
-    question: How does GroupDocs.Watermark handle large attachments?
-  type: FAQPage
-title: Comment ajouter un filigrane aux e‑mails avec GroupDocs.Watermark for Java
-  – Guide complet
+- Java Email Watermarking
+- GroupDocs Watermark for Java
+- Email Document Watermarking
+title: Ajouter un filigrane d'e‑mail en Java avec GroupDocs.Watermark
 type: docs
 url: /fr/java/email-document-watermarking/java-email-watermarking-groupdocs-guide/
 weight: 1
 ---
 
-# Comment ajouter un filigrane aux e‑mails avec GroupDocs.Watermark pour Java – Guide complet
+# Comment ajouter un filigrane d'email java avec GroupDocs.Watermark : Guide étape par étape
 
 ## Introduction
 
-Si vous devez protéger l'intégrité de vos communications par e‑mail, **comment ajouter un filigrane à un e‑mail** est une capacité cruciale. Ajouter un identifiant visuel directement dans l'e‑mail empêche le transfert non autorisé et la falsification tout en conservant le message original lisible. Dans ce tutoriel, vous apprendrez comment intégrer GroupDocs.Watermark pour Java dans votre application, charger un fichier e‑mail, intégrer une image comme filigrane, et enregistrer le message filigrané — sans modifier la structure originale de l'e‑mail.
+Vous cherchez à **add email watermark java** pour sécuriser vos documents email sans affecter leur intégrité ? Découvrez comment intégrer parfaitement le filigrane dans vos flux de travail email en utilisant GroupDocs.Watermark pour Java. Ce tutoriel vous guidera à travers le chargement d’un document email, la lecture de fichiers image, l’intégration d’images comme filigranes, et l’enregistrement efficace du document modifié.
 
-**Ce que vous maîtriserez :**
-- Installation et configuration de GroupDocs.Watermark pour Java.  
-- Chargement d'un document e‑mail (EML, MSG ou MHT) dans l'API.  
-- Conversion d'une image en tableau d'octets et insertion comme filigrane.  
-- Enregistrement de l'e‑mail modifié tout en préservant les pièces jointes et le contenu HTML.  
+**Ce que vous apprendrez :**
+- Configurer et utiliser GroupDocs.Watermark pour Java.  
+- Charger un document email dans votre application.  
+- Lire et intégrer des images dans les emails.  
+- Enregistrer efficacement les emails filigranés.
 
-À la fin, vous serez capable d'**ajouter un filigrane aux e‑mails** de façon programmatique, assurant que vos communications sortantes soient sécurisées et brandées.
+### Réponses rapides
+- **Bibliothèque principale ?** GroupDocs.Watermark pour Java  
+- **Objectif principal ?** Add email watermark java aux fichiers MSG/EML  
+- **Étapes clés ?** Charger l’email → lire les octets d’image → intégrer l’image → enregistrer  
+- **Licence requise ?** Oui, une licence GroupDocs valide pour la production  
+- **Formats pris en charge ?** MSG, EML et autres types d’email  
 
-## Réponses rapides
-- **Quelle bibliothèque est requise ?** GroupDocs.Watermark pour Java (v24.11+).  
-- **Quels formats d'e‑mail sont pris en charge ?** Fichiers EML, MSG et MHT – plus de 30 + formats au total.  
-- **Puis-je utiliser des filigranes PNG ?** Oui, PNG et JPEG sont entièrement pris en charge.  
-- **Ai-je besoin d'une licence pour le développement ?** Un essai gratuit suffit pour les tests ; une licence de production est requise pour une utilisation commerciale.  
-- **Quelle quantité de mémoire supplémentaire la filigrane consomme‑t‑elle ?** Typiquement moins de 15 Mo pour un e‑mail de 5 Mo lorsqu'on utilise des images compressées.
+## Qu’est‑ce que add email watermark java ?
 
-## Qu'est‑ce que le filigrane d'e‑mail ?
-Le filigrane d'e‑mail est le processus d'intégration d'un élément visuel — tel qu'un logo ou une clause de non‑responsabilité — directement dans le corps d'un fichier e‑mail. Le filigrane devient partie du contenu HTML, garantissant que les destinataires voient la marque quel que soit le client e‑mail utilisé.
+Ajouter un filigrane d’email en Java signifie insérer programmétiquement un identifiant visuel — tel qu’un logo ou une mention légale — dans le corps ou les pièces jointes d’un fichier email. Cela aide à protéger les informations confidentielles, renforcer l’image de marque et vérifier l’authenticité du document.
 
 ## Pourquoi utiliser GroupDocs.Watermark pour Java ?
-GroupDocs.Watermark prend en charge **plus de 50 formats d'entrée et de sortie**, y compris EML, MSG et MHT, et peut traiter des e‑mails jusqu'à **200 Mo** sans charger le fichier complet en mémoire. Son API offre des opérations thread‑safe, vous permettant de filigraner des centaines d'e‑mails par minute sur un serveur standard à 4 cœurs.
+
+GroupDocs.Watermark fournit une API de haut niveau qui abstrait les complexités des différents formats d’email. Elle vous permet de vous concentrer sur la logique métier tout en gérant les structures MIME, les objets intégrés et le rendu d’images en arrière‑plan.
 
 ## Prérequis
 
-- **Java Development Kit (JDK) 8+** installé et configuré dans votre IDE.  
-- **Maven** ou un autre outil de construction pour gérer les dépendances.  
-- Accès à un dossier où vous pouvez lire les e‑mails source et écrire les résultats filigranés.  
-- Connaissances de base en Java (I/O de fichiers, flux, et concepts orientés objet).  
+- **Bibliothèques et dépendances requises**
+  - GroupDocs.Watermark pour Java (version 24.11 ou ultérieure).  
+  - Un IDE comme IntelliJ IDEA ou Eclipse qui prend en charge les projets Maven.
+- **Exigences de configuration de l’environnement**
+  - JDK 8 ou supérieur installé.  
+  - Accès à un répertoire pour stocker les fichiers d’entrée et de sortie.
+- **Prérequis de connaissances**
+  - Programmation Java de base.  
+  - Familiarité avec la gestion de fichiers et Maven.
 
 ## Configuration de GroupDocs.Watermark pour Java
 
 ### Utilisation de Maven
-Ajoutez la dépendance suivante à votre fichier `pom.xml` :
+Ajoutez la configuration suivante à votre fichier `pom.xml` :
 
 ```xml
 <repositories>
@@ -130,18 +76,14 @@ Ajoutez la dépendance suivante à votre fichier `pom.xml` :
 ```
 
 ### Téléchargement direct
-Sinon, téléchargez le JAR le plus récent depuis la page officielle des releases :  
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Sinon, téléchargez la dernière version directement depuis [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-#### Étapes d'obtention de licence
-- **Essai gratuit :** Téléchargez une licence d'essai pour explorer l'API.  
-- **Licence temporaire :** Pour une évaluation prolongée, demandez une clé temporaire via le portail d'achat : [Page d'achat de GroupDocs](https://purchase.groupdocs.com/temporary-license).  
-- **Licence complète :** Achetez une licence de production pour un déploiement illimité.
+#### Étapes d’obtention de licence
+- **Essai gratuit :** Commencez par télécharger un essai gratuit pour explorer les fonctionnalités de GroupDocs.Watermark.  
+- **Licence temporaire :** Pour une évaluation prolongée, obtenez une licence temporaire via la [page d’achat de GroupDocs](https://purchase.groupdocs.com/temporary-license).  
+- **Achat :** Envisagez d’acheter une licence complète pour les environnements de production.
 
 ### Initialisation et configuration de base
-`Watermarker` est la classe principale qui gère le chargement, la modification et l'enregistrement des documents.  
-`EmailLoadOptions` configure la façon dont un fichier e‑mail est interprété lors du chargement.  
-
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -150,163 +92,127 @@ String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
 Watermarker watermarker = new Watermarker(emailFilePath);
 ```
 
-## Guide d'implémentation
+## Comment ajouter un filigrane d'email java
 
-### Charger le document e‑mail
+Ci‑dessous se trouve un guide complet, étape par étape, qui montre **how to add email watermark java** en utilisant l’API.
 
-#### Vue d'ensemble
-Le chargement de l'e‑mail est la première étape avant d'appliquer un filigrane. GroupDocs.Watermark abstrait le format de fichier, vous permettant de travailler avec un objet `Watermarker` unifié.
+### Étape 1 : Charger le document email
 
-#### Réponse directe
-Créez une instance `Watermarker` avec `EmailLoadOptions`, pointez‑la vers votre fichier `.eml` ou `.msg`, et l'API analysera le corps HTML, les pièces jointes et les métadonnées — le tout en un seul appel. Cette opération se termine généralement en moins de 200 ms pour un e‑mail de 2 Mo.
+#### Vue d’ensemble
+Charger un document email est votre première étape dans le filigrannage. GroupDocs.Watermark vous permet de charger divers formats de façon transparente.
 
-#### Implémentation étape par étape
-1. **Importer les classes nécessaires :**  
-   ```java
-   import com.groupdocs.watermark.Watermarker;
-   import com.groupdocs.watermark.options.EmailLoadOptions;
-   ```  
+#### Implémentation
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.EmailLoadOptions;
+```
 
-2. **Initialiser les options de chargement d'e‑mail et le Watermarker :**  
-   ```java
-   EmailLoadOptions loadOptions = new EmailLoadOptions();
-   String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
-   Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
-   ```  
+```java
+EmailLoadOptions loadOptions = new EmailLoadOptions();
+String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
+Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
+```
 
-#### Ancre de définition
-`EmailLoadOptions` est une classe de configuration qui indique à GroupDocs.Watermark comment interpréter le fichier e‑mail source (par ex., s'il faut préserver les images incorporées).
+*Explication :* `EmailLoadOptions` vous permet d’ajuster finement la façon dont le fichier MSG/EML est analysé. Assurez‑vous que le chemin du fichier pointe vers un email valide.
 
-### Lire le fichier image en tableau d'octets
+### Étape 2 : read image bytes java
 
-#### Vue d'ensemble
-Pour intégrer un filigrane, l'image doit être fournie sous forme de tableau d'octets afin que l'API puisse l'insérer dans le HTML de l'e‑mail.
+#### Vue d’ensemble
+Pour intégrer une image comme filigrane, vous devez d’abord lire le fichier image dans un tableau d’octets. C’est l’étape **read image bytes java**.
 
-#### Réponse directe
-Lisez le fichier image avec un `FileInputStream`, convertissez le flux en tableau d'octets à l'aide de `IOUtils.toByteArray`, et conservez le tableau en mémoire — cela permet d'insérer le filigrane sans écrire de fichiers temporaires sur le disque.
+#### Implémentation
+```java
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+```
 
-#### Implémentation étape par étape
-1. **Importer les packages requis :**  
-   ```java
-   import java.io.File;
-   import java.io.FileInputStream;
-   import java.io.InputStream;
-   ```  
+```java
+File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
+byte[] imageBytes = new byte[(int) imageFile.length()];
+InputStream imageInputStream = new FileInputStream(imageFile);
+imageInputStream.read(imageBytes);
+imageInputStream.close();
+```
 
-2. **Lire le fichier image et le convertir en tableau d'octets :**  
-   ```java
-   File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
-   byte[] imageBytes = new byte[(int) imageFile.length()];
-   InputStream imageInputStream = new FileInputStream(imageFile);
-   imageInputStream.read(imageBytes);
-   imageInputStream.close();
-   ```  
+*Explication :* Convertir l’image en tableau d’octets la rend compatible avec l’API `addEmbeddedObject`, quelle que soit la taille de l’image.
 
-#### Ancre de définition
-`FileInputStream` est une classe Java I/O standard qui lit les octets bruts d'un fichier sur le système de fichiers.
+### Étape 3 : embed image email java
 
-### Ajouter une image incorporée à l'e‑mail
+#### Vue d’ensemble
+Vous allez maintenant intégrer l’image dans le contenu de l’email. Il s’agit de l’opération **embed image email java** qui crée une référence Content‑ID (CID).
 
-#### Vue d'ensemble
-Incorporer l'image comme référence Content‑ID (CID) garantit que le filigrane apparaît en ligne dans le corps HTML de l'e‑mail.
+#### Implémentation
+```java
+import com.groupdocs.watermark.contents.EmailContent;
+import com.groupdocs.watermark.contents.EmailEmbeddedObject;
+```
 
-#### Réponse directe
-Générez un CID unique, ajoutez les octets de l'image au `Watermarker` via `addImageWatermark`, et référencez le CID dans le corps HTML. L'API met automatiquement à jour les parties MIME afin que l'e‑mail reste compatible RFC.
+```java
+EmailContent content = watermarker.getContent(EmailContent.class);
+content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
 
-#### Implémentation étape par étape
-1. **Importer les classes pour gérer le contenu des e‑mails :**  
-   ```java
-   import com.groupdocs.watermark.contents.EmailContent;
-   import com.groupdocs.watermark.contents.EmailEmbeddedObject;
-   ```  
+EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
+content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
+```
 
-2. **Ajouter l'image incorporée à l'e‑mail :**  
-   ```java
-   EmailContent content = watermarker.getContent(EmailContent.class);
-   content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
-   
-   EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
-   content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
-   ```  
+*Explication :* La méthode `add` stocke l’image comme objet intégré. Le CID généré est ensuite utilisé dans le corps HTML pour afficher le filigrane.
 
-#### Ancre de définition
-`addImageWatermark` est une méthode de `Watermarker` qui insère un filigrane image dans la couche visuelle du document.  
-`Content‑ID (CID)` est un en‑tête MIME qui permet à un client e‑mail d'afficher des ressources incorporées comme des images directement dans le corps du message.
+### Étape 4 : Enregistrer le document email filigrané
 
-### Enregistrer le document e‑mail filigrané
+#### Vue d’ensemble
+Après avoir intégré votre filigrane, persistez les modifications dans un nouveau fichier.
 
-#### Vue d'ensemble
-Après l'application du filigrane, vous devez persister les modifications dans un nouveau fichier.
+#### Implémentation
+```java
+String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
+watermarker.save(outputFilePath);
+watermarker.close();
+```
 
-#### Réponse directe
-Appelez `watermarker.save("output.eml", SaveOptions.create())` puis `watermarker.close()` pour libérer toutes les poignées de fichiers et les tampons mémoire. Le fichier enregistré conserve les pièces jointes et les métadonnées originales tout en affichant le nouveau filigrane.
-
-#### Implémentation étape par étape
-1. **Enregistrer et fermer le Watermarker :**  
-   ```java
-   String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
-   watermarker.save(outputFilePath);
-   watermarker.close();
-   ```  
-
-#### Ancre de définition
-`SaveOptions` définit le format de sortie et les paramètres de compression pour le fichier e‑mail résultant.
+*Explication :* `save` écrit l’email modifié sur le disque, tandis que `close` libère toutes les ressources natives.
 
 ## Applications pratiques
 
-Incorporer des filigranes dans les e‑mails est utile dans de nombreux scénarios réels :
-
-1. **Sécurité des documents internes** – Prévenir les fuites de données accidentelles en brandant chaque mémo interne avec un filigrane confidentiel.  
-2. **Marketing par e‑mail** – Renforcer l'identité de marque en ajoutant automatiquement votre logo à chaque e‑mail de campagne.  
-3. **Correspondance juridique** – Ajouter un filigrane « Confidentiel – Secret professionnel » aux e‑mails juridiques pour satisfaire les audits de conformité.  
+1. **Sécurité interne des documents :** Protégez les communications d’entreprise sensibles contre le transfert non autorisé.  
+2. **Campagnes d’email marketing :** Marquez chaque email sortant avec votre logo pour une reconnaissance cohérente.  
+3. **Documentation juridique :** Ajoutez un filigrane anti‑altération aux correspondances juridiques afin d’assurer leur intégrité.
 
 ## Considérations de performance
-- **Optimiser la taille des images :** Utilisez PNG‑8 ou JPEG‑2000 pour garder le tableau d'octets sous 100 KB sans perte de qualité notable.  
-- **Gestion des ressources :** Fermez toujours les flux (`FileInputStream`, `watermarker`) dans un bloc `finally` ou utilisez try‑with‑resources pour éviter les fuites de mémoire.  
-- **Traitement par lots :** Pour le filigrane en masse, traitez les e‑mails de façon asynchrone avec `CompletableFuture` de Java afin de maximiser l'utilisation du CPU.  
+- **Optimiser la taille des images :** Utilisez des fichiers PNG/JPEG compressés pour réduire la consommation mémoire.  
+- **Gestion des ressources :** Fermez toujours les flux (`close()`) afin d’éviter les fuites de mémoire.  
+- **Traitement asynchrone :** Pour les opérations en masse, traitez les emails sur des threads d’arrière‑plan ou utilisez `CompletableFuture` de Java pour améliorer le débit.
 
 ## Problèmes courants et solutions
-
 | Problème | Cause | Solution |
 |----------|-------|----------|
-| **Image non affichée** | CID non référencé correctement dans le HTML | Vérifiez que la balise `<img src="cid:yourCid">` correspond au CID utilisé dans `addImageWatermark`. |
-| **L'e‑mail devient corrompu** | Enregistrement avec des `SaveOptions` incorrects | Utilisez `SaveOptions.create().setPreserveOriginalHeaders(true)` pour conserver les en‑têtes originaux intacts. |
-| **Erreur de dépassement de mémoire** | E‑mail volumineux (>200 Mo) chargé entièrement en mémoire | Activez le mode streaming via `EmailLoadOptions.setLoadMode(LoadMode.Stream)` avant d'initialiser le `Watermarker`. |
+| Aucun image n’apparaît dans l’email | Référence CID incorrecte | Vérifiez que `embeddedObject.getContentId()` est utilisé exactement dans la balise `<img src="cid:...">`. |
+| Filigrane non enregistré | `watermarker.save()` appelé sur le même chemin que l’entrée | Utilisez un répertoire ou un nom de fichier de sortie différent. |
+| Exception de licence | Fichier de licence manquant ou expiré | Placez un `GroupDocs.Watermark.lic` valide à la racine de l’application ou définissez la `License` programmatique. |
 
-## Questions fréquemment posées
+## FAQ
 
-**Q : Puis‑je filigraner à la fois les parties HTML et texte brut d'un e‑mail ?**  
-R : GroupDocs.Watermark ne modifie que le corps HTML ; les parties texte brut restent inchangées, ce qui est la pratique standard pour le branding des e‑mails.
+**Q : Quels formats d’image fonctionnent le mieux pour embed image email java ?**  
+R : PNG et JPEG sont recommandés car ils offrent un bon équilibre entre qualité et taille de fichier, et les deux sont pleinement pris en charge par GroupDocs.Watermark.
 
-**Q : Le filigrane survit‑il lorsqu'un e‑mail est transféré ?**  
-R : Oui, parce que le filigrane devient partie du contenu HTML de l'e‑mail, il est conservé dans tous les transferts ultérieurs.
+**Q : Comment dépanner les problèmes avec read image bytes java ?**  
+R : Assurez‑vous que le chemin du fichier est correct, que le fichier n’est pas verrouillé et que vous disposez des permissions de lecture. Vérifiez également que la longueur du tableau d’octets correspond à la taille du fichier.
 
-**Q : Vers quels formats de fichier puis‑je exporter l'e‑mail filigrané ?**  
-R : Vous pouvez enregistrer en EML, MSG ou MHT. L'API prend également en charge la conversion PDF si vous avez besoin d'une version imprimable.
+**Q : Puis‑je ajouter plusieurs filigranes au même email ?**  
+R : Oui. Appelez `content.getEmbeddedObjects().add(...)` pour chaque image et mettez à jour le corps HTML en conséquence.
 
-**Q : Une licence est‑elle requise pour les environnements de développement ?**  
-R : Une licence d'essai gratuite suffit pour le développement et les tests. Les déploiements en production nécessitent une licence achetée pour supprimer les filigranes d'évaluation.
+**Q : Est‑il possible de filigraner les pièces jointes à l’intérieur de l’email ?**  
+R : GroupDocs.Watermark peut traiter les documents joints individuellement ; vous devez les extraire, les filigraner, puis les ré‑attacher programmatiquement.
 
-**Q : Comment GroupDocs.Watermark gère‑t‑il les pièces jointes volumineuses ?**  
-R : Les pièces jointes sont diffusées inchangées ; seul le corps de l'e‑mail est traité, donc la taille des pièces jointes n'affecte pas les performances du filigrane.
+**Q : La bibliothèque prend‑elle en charge les fichiers EML ainsi que les MSG ?**  
+R : Absolument. La même API fonctionne pour les formats MSG et EML.
 
 ## Conclusion
 
-Vous disposez maintenant d'un flux de travail complet, prêt pour la production, pour **comment ajouter un filigrane aux e‑mails** en utilisant GroupDocs.Watermark pour Java. En suivant les étapes ci‑dessus, vous pouvez intégrer des logos, des mentions de confidentialité ou toute image personnalisée dans chaque e‑mail sortant, assurant une marque cohérente et une sécurité renforcée. Explorez des fonctionnalités supplémentaires telles que les filigranes texte, les horodatages dynamiques ou le traitement par lots pour étendre davantage votre solution.
+Vous disposez désormais d’une méthode complète et prête pour la production afin de **add email watermark java** avec GroupDocs.Watermark. Expérimentez différents styles d’image, explorez les filigranes texte, et intégrez ce flux de travail dans des pipelines de traitement d’emails plus larges pour une sécurité documentaire robuste.
 
 ---
 
-**Last Updated:** 2026-06-16  
-**Tested With:** GroupDocs.Watermark for Java 24.11  
-**Author:** GroupDocs
-
-## Tutoriels associés
-
-- [Filigrane de documents e‑mail en Java : Gestion maître avec GroupDocs.Watermark](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-management/)
-- [Traitement des pièces jointes d'e‑mail Java avec GroupDocs.Watermark : Guide complet](/watermark/java/email-document-watermarking/java-email-attachment-processing-groupdocs-watermark/)
-- [Guide de filigrane Java : Sécuriser les documents avec l'API GroupDocs.Watermark](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
+**Dernière mise à jour :** 2026-01-03  
+**Testé avec :** GroupDocs.Watermark 24.11 pour Java  
+**Auteur :** GroupDocs

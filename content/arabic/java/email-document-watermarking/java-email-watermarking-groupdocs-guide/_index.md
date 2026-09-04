@@ -1,117 +1,61 @@
 ---
-date: '2026-06-16'
-description: تعرف على كيفية وضع علامة مائية على مستندات البريد الإلكتروني باستخدام
-  GroupDocs.Watermark for Java. هذا الدليل step‑by‑step يغطي الإعداد، إضافة العلامة
-  المائية إلى البريد الإلكتروني، وأفضل الممارسات.
+date: '2026-01-03'
+description: تعلم كيفية إضافة علامة مائية للبريد الإلكتروني باستخدام Java مع GroupDocs.Watermark،
+  مع تغطية تقنيات تضمين صورة البريد الإلكتروني في Java وقراءة بايتات الصورة في Java
+  للوثائق البريدية الآمنة.
 keywords:
-- how to watermark email
-- add watermark to email
-- GroupDocs Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-16'
-  description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  headline: How to Watermark Email with GroupDocs.Watermark for Java – A Complete
-    Guide
-  type: TechArticle
-- description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  name: How to Watermark Email with GroupDocs.Watermark for Java – A Complete Guide
-  steps:
-  - name: '**Import Necessary Classes:**'
-    text: '**Import Necessary Classes:**'
-  - name: '**Initialize Email Load Options and Watermarker:**'
-    text: '**Initialize Email Load Options and Watermarker:**'
-  - name: '**Import Required Packages:**'
-    text: '**Import Required Packages:**'
-  - name: '**Read Image File and Convert to Byte Array:**'
-    text: '**Read Image File and Convert to Byte Array:**'
-  - name: '**Import Classes for Handling Email Contents:**'
-    text: '**Import Classes for Handling Email Contents:**'
-  - name: '**Add Embedded Image to the Email:**'
-    text: '**Add Embedded Image to the Email:**'
-  - name: '**Save and Close Watermarker:**'
-    text: '**Save and Close Watermarker:**'
-  - name: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-    text: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-  - name: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-    text: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-  - name: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-    text: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-  type: HowTo
-- questions:
-  - answer: GroupDocs.Watermark only modifies the HTML body; plain‑text parts remain
-      unchanged, which is standard practice for email branding.
-    question: Can I watermark both HTML and plain‑text parts of an email?
-  - answer: Yes, because the watermark becomes part of the email’s HTML content, it
-      is retained in all subsequent forwards.
-    question: Does the watermark survive when the email is forwarded?
-  - answer: You can save as EML, MSG, or MHT. The API also supports PDF conversion
-      if you need a printable version.
-    question: What file formats can I export the watermarked email to?
-  - answer: A free trial license works for development and testing. Production deployments
-      require a purchased license to remove evaluation watermarks.
-    question: Is a license required for development environments?
-  - answer: Attachments are streamed unchanged; only the email body is processed,
-      so attachment size does not affect watermarking performance.
-    question: How does GroupDocs.Watermark handle large attachments?
-  type: FAQPage
-title: كيفية وضع علامة مائية على البريد الإلكتروني باستخدام GroupDocs.Watermark for
-  Java – دليل شامل
+- Java Email Watermarking
+- GroupDocs Watermark for Java
+- Email Document Watermarking
+title: إضافة علامة مائية للبريد الإلكتروني في جافا باستخدام GroupDocs.Watermark
 type: docs
 url: /ar/java/email-document-watermarking/java-email-watermarking-groupdocs-guide/
 weight: 1
 ---
 
-# كيفية وضع علامة مائية على البريد الإلكتروني باستخدام GroupDocs.Watermark للـ Java – دليل كامل
+# كيفية إضافة علامة مائية للبريد الإلكتروني java باستخدام GroupDocs.Watermark: دليل خطوة بخطوة
 
 ## المقدمة
 
-إذا كنت بحاجة إلى حماية سلامة اتصالاتك البريدية، فإن **كيفية وضع علامة مائية على البريد الإلكتروني** هي قدرة حاسمة. إضافة معرف بصري مباشرة داخل البريد الإلكتروني يمنع إعادة التوجيه غير المصرح به والتلاعب مع الحفاظ على قابلية قراءة الرسالة الأصلية. في هذا الدرس ستتعلم كيفية دمج GroupDocs.Watermark للـ Java في تطبيقك، تحميل ملف بريد إلكتروني، تضمين صورة كعلامة مائية، وحفظ الرسالة ذات العلامة المائية—كل ذلك دون تعديل بنية البريد الأصلي.
+هل تبحث عن **add email watermark java** لتأمين مستندات البريد الإلكتروني الخاصة بك دون التأثير على سلامتها؟ اكتشف كيف يمكنك دمج العلامة المائية بسلاسة في سير عمل البريد الإلكتروني باستخدام GroupDocs.Watermark for Java. سيوجهك هذا الدليل خلال تحميل مستند البريد الإلكتروني، قراءة ملفات الصور، تضمين الصور كعلامات مائية، وحفظ المستند المعدل بكفاءة.
 
-**ما ستتمكن من إتقانه:**
-- تثبيت وتكوين GroupDocs.Watermark للـ Java.  
-- تحميل مستند بريد إلكتروني (EML، MSG، أو MHT) إلى الـ API.  
-- تحويل صورة إلى مصفوفة بايت وتضمينها كعلامة مائية.  
-- حفظ البريد الإلكتروني المعدل مع الحفاظ على المرفقات ومحتوى HTML.  
+**ما ستتعلمه:**
+- إعداد واستخدام GroupDocs.Watermark for Java.  
+- تحميل مستند بريد إلكتروني إلى تطبيقك.  
+- قراءة وتضمين الصور في رسائل البريد الإلكتروني.  
+- حفظ مستندات البريد الإلكتروني ذات العلامة المائية بفعالية.
 
-بنهاية الدرس، ستتمكن من **إضافة علامة مائية إلى ملفات البريد الإلكتروني** برمجيًا، مما يجعل اتصالاتك الصادرة ذات علامة تجارية آمنة.
+### إجابات سريعة
+- **المكتبة الأساسية؟** GroupDocs.Watermark for Java  
+- **الهدف الرئيسي؟** إضافة علامة مائية للبريد الإلكتروني java إلى ملفات MSG/EML  
+- **الخطوات الأساسية؟** تحميل البريد → قراءة بايتات الصورة → تضمين الصورة → حفظ  
+- **هل تحتاج إلى ترخيص؟** نعم، ترخيص GroupDocs صالح للإنتاج  
+- **الصيغ المدعومة؟** MSG، EML، وأنواع أخرى من البريد الإلكتروني
 
-## إجابات سريعة
-- **ما المكتبة المطلوبة؟** GroupDocs.Watermark للـ Java (v24.11+).  
-- **ما صيغ البريد الإلكتروني المدعومة؟** ملفات EML، MSG، وMHT – أكثر من 30 صيغة إجمالاً.  
-- **هل يمكنني استخدام علامات مائية PNG؟** نعم، PNG و JPEG مدعومان بالكامل.  
-- **هل أحتاج إلى ترخيص للتطوير؟** نسخة تجريبية مجانية تكفي للاختبار؛ ترخيص إنتاج مطلوب للاستخدام التجاري.  
-- **كم الذاكرة الإضافية التي يستهلكها وضع العلامة المائية؟** عادةً أقل من 15 ميغابايت لبريد بحجم 5 ميغابايت عند استخدام صور مضغوطة.
+## ما هو add email watermark java؟
 
-## ما هو وضع العلامة المائية على البريد الإلكتروني؟
+إضافة علامة مائية للبريد الإلكتروني في Java تعني إدراج معرف بصري—مثل شعار أو إخلاء مسؤولية—برمجيًا في جسم الرسالة أو مرفقات ملف البريد. يساعد ذلك في حماية المعلومات السرية، تعزيز العلامة التجارية، والتحقق من أصالة المستند.
 
-وضع العلامة المائية على البريد الإلكتروني هو عملية تضمين عنصر بصري—مثل شعار أو إخلاء مسؤولية—مباشرةً في جسم ملف البريد الإلكتروني. تصبح العلامة المائية جزءًا من محتوى HTML، مما يضمن رؤية المتلقين للعلامة التجارية بغض النظر عن عميل البريد الذي يستخدمونه.
+## لماذا تستخدم GroupDocs.Watermark for Java؟
 
-## لماذا نستخدم GroupDocs.Watermark للـ Java؟
-
-يدعم GroupDocs.Watermark **أكثر من 50 صيغة إدخال وإخراج**، بما في ذلك EML و MSG و MHT، ويمكنه معالجة رسائل البريد الإلكتروني حتى **200 ميغابايت** دون تحميل الملف بالكامل إلى الذاكرة. توفر الـ API عمليات آمنة للخطوط المتعددة، مما يتيح لك وضع علامة مائية على مئات الرسائل في الدقيقة على خادم عادي بأربع نوى.
+يوفر GroupDocs.Watermark واجهة برمجة تطبيقات عالية المستوى تُجرد تعقيدات صيغ البريد الإلكتروني المختلفة. يتيح لك التركيز على منطق الأعمال بينما يتولى التعامل مع هياكل MIME، الكائنات المضمنة، وعرض الصور خلف الكواليس.
 
 ## المتطلبات المسبقة
 
-- **Java Development Kit (JDK) 8+** مثبت ومُكوَّن في بيئة التطوير المتكاملة الخاصة بك.  
-- **Maven** أو أداة بناء أخرى لإدارة التبعيات.  
-- الوصول إلى مجلد يمكنك من قراءة رسائل البريد المصدرية وكتابة النتائج ذات العلامة المائية.  
-- معرفة أساسية بـ Java (ملفات I/O، التدفقات، ومفاهيم البرمجة الكائنية).  
+- **المكتبات والاعتمادات المطلوبة**
+  - GroupDocs.Watermark for Java (الإصدار 24.11 أو أحدث).  
+  - بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse تدعم مشاريع Maven.
+- **متطلبات إعداد البيئة**
+  - JDK 8 أو أحدث مثبت.  
+  - إمكانية الوصول إلى دليل لتخزين ملفات الإدخال والإخراج.
+- **المعرفة المسبقة**
+  - برمجة Java أساسية.  
+  - الإلمام بالتعامل مع الملفات وMaven.
 
-## إعداد GroupDocs.Watermark للـ Java
+## إعداد GroupDocs.Watermark for Java
 
 ### استخدام Maven
-أضف التبعيات التالية إلى ملف `pom.xml` الخاص بك:
+أضف التكوين التالي إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <repositories>
@@ -132,18 +76,14 @@ weight: 1
 ```
 
 ### التحميل المباشر
-بدلاً من ذلك، قم بتحميل أحدث JAR من صفحة الإصدارات الرسمية:  
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+بدلاً من ذلك، قم بتنزيل أحدث نسخة مباشرة من [إصدارات GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/).
 
 #### خطوات الحصول على الترخيص
-- **نسخة تجريبية:** تحميل ترخيص تجريبي لاستكشاف الـ API.  
-- **ترخيص مؤقت:** للتقييم الموسع، اطلب مفتاحًا مؤقتًا عبر بوابة الشراء: [صفحة شراء GroupDocs](https://purchase.groupdocs.com/temporary-license).  
-- **ترخيص كامل:** شراء ترخيص إنتاج للنشر غير المحدود.
+- **التجربة المجانية:** ابدأ بتنزيل نسخة تجريبية مجانية لاستكشاف وظائف GroupDocs.Watermark.  
+- **ترخيص مؤقت:** للتقييم الموسع، احصل على ترخيص مؤقت عبر [صفحة شراء GroupDocs](https://purchase.groupdocs.com/temporary-license).  
+- **الشراء:** فكر في شراء ترخيص كامل لبيئات الإنتاج.
 
-### التهيئة والإعداد الأساسي
-`Watermarker` هو الفئة الرئيسية التي تدير تحميل وتحرير وحفظ المستندات.  
-`EmailLoadOptions` يضبط كيفية تفسير ملف البريد الإلكتروني عند التحميل.
-
+### التهيئة الأساسية والإعداد
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -152,164 +92,127 @@ String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
 Watermarker watermarker = new Watermarker(emailFilePath);
 ```
 
-## دليل التنفيذ
+## كيفية إضافة علامة مائية للبريد الإلكتروني java
 
-### تحميل مستند البريد الإلكتروني
+فيما يلي دليل كامل خطوة بخطوة يوضح **كيفية إضافة علامة مائية للبريد الإلكتروني java** باستخدام الـ API.
 
-#### نظرة عامة
-تحميل البريد الإلكتروني هو الخطوة الأولى قبل تطبيق أي علامة مائية. يقوم GroupDocs.Watermark بتجريد صيغة الملف، مما يتيح لك العمل مع كائن `Watermarker` موحد.
-
-#### إجابة مباشرة
-أنشئ مثيلًا من `Watermarker` باستخدام `EmailLoadOptions`، ووجهه إلى ملف `.eml` أو `.msg` الخاص بك، وستقوم الـ API بتحليل جسم HTML، المرفقات، والبيانات الوصفية—كل ذلك في استدعاء واحد. عادةً ما يكتمل هذا العملية في أقل من 200 مللي ثانية لبريد بحجم 2 ميغابايت.
-
-#### تنفيذ خطوة بخطوة
-1. **استيراد الفئات الضرورية:**  
-   ```java
-   import com.groupdocs.watermark.Watermarker;
-   import com.groupdocs.watermark.options.EmailLoadOptions;
-   ```  
-
-2. **تهيئة خيارات تحميل البريد الإلكتروني وWatermarker:**  
-   ```java
-   EmailLoadOptions loadOptions = new EmailLoadOptions();
-   String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
-   Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
-   ```  
-
-#### تعريف
-`EmailLoadOptions` هي فئة تكوين تخبر GroupDocs.Watermark كيفية تفسير ملف البريد المصدر (مثلاً، ما إذا كان يجب الحفاظ على الصور المضمنة).
-
-### قراءة ملف الصورة إلى مصفوفة بايت
+### الخطوة 1: تحميل مستند البريد الإلكتروني
 
 #### نظرة عامة
-لتضمين علامة مائية، يجب توفير الصورة كمصفوفة بايت حتى تتمكن الـ API من إدراجها في HTML البريد الإلكتروني.
+تحميل مستند البريد الإلكتروني هو خطوتك الأولى في وضع العلامة المائية. يتيح لك GroupDocs.Watermark تحميل صيغ متعددة بسلاسة.
 
-#### إجابة مباشرة
-اقرأ ملف الصورة باستخدام `FileInputStream`، وحول التدفق إلى مصفوفة بايت باستخدام `IOUtils.toByteArray`، واحتفظ بالمصفوفة في الذاكرة—هذا يتيح إدراج العلامة المائية دون كتابة ملفات مؤقتة إلى القرص.
+#### التنفيذ
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.EmailLoadOptions;
+```
 
-#### تنفيذ خطوة بخطوة
-1. **استيراد الحزم المطلوبة:**  
-   ```java
-   import java.io.File;
-   import java.io.FileInputStream;
-   import java.io.InputStream;
-   ```  
+```java
+EmailLoadOptions loadOptions = new EmailLoadOptions();
+String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
+Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
+```
 
-2. **قراءة ملف الصورة وتحويله إلى مصفوفة بايت:**  
-   ```java
-   File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
-   byte[] imageBytes = new byte[(int) imageFile.length()];
-   InputStream imageInputStream = new FileInputStream(imageFile);
-   imageInputStream.read(imageBytes);
-   imageInputStream.close();
-   ```  
+*شرح:* `EmailLoadOptions` يتيح لك ضبط طريقة تحليل ملف MSG/EML. تأكد من أن مسار الملف يشير إلى ملف بريد إلكتروني صالح.
 
-#### تعريف
-`FileInputStream` هي فئة I/O قياسية في Java تقرأ البايتات الخام من ملف على نظام الملفات.
-
-### إضافة صورة مدمجة إلى البريد الإلكتروني
+### الخطوة 2: read image bytes java
 
 #### نظرة عامة
-تضمين الصورة كمرجع Content‑ID (CID) يضمن ظهور العلامة المائية داخل جسم HTML للبريد الإلكتروني.
+لتضمين صورة كعلامة مائية، تحتاج أولاً إلى قراءة ملف الصورة إلى مصفوفة بايت. هذه هي خطوة **read image bytes java**.
 
-#### إجابة مباشرة
-أنشئ CID فريدًا، أضف بايتات الصورة إلى `Watermarker` باستخدام `addImageWatermark`، وأشر إلى CID في جسم HTML. تقوم الـ API تلقائيًا بتحديث أجزاء MIME بحيث يبقى البريد متوافقًا مع RFC.
+#### التنفيذ
+```java
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+```
 
-#### تنفيذ خطوة بخطوة
-1. **استيراد الفئات لمعالجة محتويات البريد الإلكتروني:**  
-   ```java
-   import com.groupdocs.watermark.contents.EmailContent;
-   import com.groupdocs.watermark.contents.EmailEmbeddedObject;
-   ```  
+```java
+File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
+byte[] imageBytes = new byte[(int) imageFile.length()];
+InputStream imageInputStream = new FileInputStream(imageFile);
+imageInputStream.read(imageBytes);
+imageInputStream.close();
+```
 
-2. **إضافة الصورة المدمجة إلى البريد الإلكتروني:**  
-   ```java
-   EmailContent content = watermarker.getContent(EmailContent.class);
-   content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
-   
-   EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
-   content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
-   ```  
+*شرح:* تحويل الصورة إلى مصفوفة بايت يجعلها متوافقة مع واجهة `addEmbeddedObject`، بغض النظر عن حجم الصورة.
 
-#### تعريف
-`addImageWatermark` هي طريقة في `Watermarker` تُدرج علامة مائية صورة في الطبقة البصرية للمستند.  
-`Content‑ID (CID)` هو رأس MIME يسمح لعميل البريد بعرض الموارد المدمجة مثل الصور مباشرةً داخل جسم الرسالة.
-
-### حفظ مستند البريد الإلكتروني المموسوم
+### الخطوة 3: embed image email java
 
 #### نظرة عامة
-بعد تطبيق العلامة المائية، يجب حفظ التغييرات إلى ملف جديد.
+الآن ستقوم بتضمين الصورة في محتوى البريد الإلكتروني. هذه هي عملية **embed image email java** التي تنشئ مرجع Content‑ID (CID).
 
-#### إجابة مباشرة
-استدعِ `watermarker.save("output.eml", SaveOptions.create())` ثم `watermarker.close()` لتحرير جميع مقبضات الملفات ومخازن الذاكرة. يحتفظ الملف المحفوظ بالمرفقات والبيانات الوصفية الأصلية مع إظهار العلامة المائية الجديدة.
+#### التنفيذ
+```java
+import com.groupdocs.watermark.contents.EmailContent;
+import com.groupdocs.watermark.contents.EmailEmbeddedObject;
+```
 
-#### تنفيذ خطوة بخطوة
-1. **حفظ وإغلاق Watermarker:**  
-   ```java
-   String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
-   watermarker.save(outputFilePath);
-   watermarker.close();
-   ```  
+```java
+EmailContent content = watermarker.getContent(EmailContent.class);
+content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
 
-#### تعريف
-`SaveOptions` يحدد صيغة الإخراج وإعدادات الضغط للملف البريد الناتج.
+EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
+content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
+```
+
+*شرح:* طريقة `add` تخزن الصورة ككائن مضمّن. يُستخدم الـ CID المُولد بعد ذلك في جسم HTML لعرض العلامة المائية.
+
+### الخطوة 4: حفظ مستند البريد الإلكتروني مع علامة مائية
+
+#### نظرة عامة
+بعد تضمين العلامة المائية، احفظ التغييرات في ملف جديد.
+
+#### التنفيذ
+```java
+String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
+watermarker.save(outputFilePath);
+watermarker.close();
+```
+
+*شرح:* `save` يكتب البريد الإلكتروني المعدل إلى القرص، بينما `close` يحرّر جميع الموارد الأصلية.
 
 ## التطبيقات العملية
 
-تضمين العلامات المائية في رسائل البريد الإلكتروني ذو قيمة في العديد من السيناريوهات الواقعية:
-
-1. **أمان المستندات الداخلية** – منع تسرب البيانات عن طريق وضع علامة مائية سرية على كل مذكرة داخلية.  
-2. **التسويق عبر البريد الإلكتروني** – تعزيز هوية العلامة التجارية بإضافة شعارك تلقائيًا إلى كل بريد حملة.  
-3. **المراسلات القانونية** – إرفاق علامة مائية “سري – خصوصية المحامي‑العميل” إلى رسائل البريد القانونية لتلبية تدقيق الامتثال.
+1. **أمان المستندات الداخلية:** حماية الاتصالات المؤسسية الحساسة من إعادة التوجيه غير المصرح به.  
+2. **حملات التسويق عبر البريد الإلكتروني:** وضع شعارك على كل بريد صادر لضمان التعرف المتسق.  
+3. **المستندات القانونية:** إضافة علامة مائية مقاومة للعبث إلى المراسلات القانونية لضمان سلامتها.
 
 ## اعتبارات الأداء
-
-- **تحسين حجم الصور:** استخدم PNG‑8 أو JPEG‑2000 للحفاظ على مصفوفة البايت أقل من 100 KB دون فقدان ملحوظ في الجودة.  
-- **إدارة الموارد:** أغلق دائمًا التدفقات (`FileInputStream`، `watermarker`) في كتلة `finally` أو استخدم try‑with‑resources لتجنب تسرب الذاكرة.  
-- **المعالجة الدفعية:** للوسم الضخم، عالج الرسائل بشكل غير متزامن باستخدام `CompletableFuture` في Java لتعظيم استغلال وحدة المعالجة.
+- **تحسين حجم الصور:** استخدم ملفات PNG/JPEG مضغوطة لتقليل استهلاك الذاكرة.  
+- **إدارة الموارد:** احرص دائمًا على إغلاق التدفقات (`close()`) لتجنب تسرب الذاكرة.  
+- **المعالجة غير المتزامنة:** للعمليات الضخمة، عالج الرسائل في خيوط خلفية أو استخدم `CompletableFuture` في Java لتحسين الإنتاجية.
 
 ## المشكلات الشائعة والحلول
-
 | المشكلة | السبب | الحل |
 |-------|-------|----------|
-| **الصورة لا تظهر** | لم يتم الإشارة إلى CID بشكل صحيح في HTML | تحقق من أن وسم `<img src="cid:yourCid">` يطابق CID المستخدم في `addImageWatermark`. |
-| **البريد يصبح معطوبًا** | الحفظ باستخدام `SaveOptions` غير الصحيح | استخدم `SaveOptions.create().setPreserveOriginalHeaders(true)` للحفاظ على رؤوس البريد الأصلية. |
-| **خطأ نفاد الذاكرة** | تم تحميل بريد كبير (>200 ميغابايت) بالكامل في الذاكرة | فعّل وضع البث عبر `EmailLoadOptions.setLoadMode(LoadMode.Stream)` قبل تهيئة `Watermarker`. |
+| عدم ظهور الصورة في البريد الإلكتروني | مرجع CID غير صحيح | تحقق من أن `embeddedObject.getContentId()` يُستخدم بالضبط في وسم `<img src="cid:...">`. |
+| عدم حفظ العلامة المائية | `watermarker.save()` تم استدعاؤه على نفس مسار الإدخال | استخدم دليل إخراج مختلف أو اسم ملف مختلف. |
+| استثناء الترخيص | ملف الترخيص مفقود أو منتهي | ضع ملف `GroupDocs.Watermark.lic` صالح في جذر التطبيق أو اضبط `License` برمجياً. |
 
 ## الأسئلة المتكررة
 
-**س: هل يمكنني وضع علامة مائية على كل من أجزاء HTML والنص العادي في البريد الإلكتروني؟**  
-ج: يقوم GroupDocs.Watermark بتعديل جسم HTML فقط؛ تبقى أجزاء النص العادي دون تغيير، وهذا هو الممارس القياسي للعلامة التجارية للبريد.
+**س: ما هي صيغ الصور الأنسب لـ embed image email java؟**  
+ج: يُنصح باستخدام PNG و JPEG لأنهما يوازنان الجودة وحجم الملف، وكلاهما مدعومان بالكامل من قبل GroupDocs.Watermark.
 
-**س: هل تبقى العلامة المائية عند إعادة توجيه البريد؟**  
-ج: نعم، لأن العلامة المائية تصبح جزءًا من محتوى HTML للبريد، وتبقى في جميع عمليات إعادة التوجيه اللاحقة.
+**س: كيف يمكنني استكشاف مشكلات read image bytes java؟**  
+ج: تأكد من صحة مسار الملف، وأن الملف غير مقفل، وأن لديك صلاحيات القراءة. كما يجب التحقق من أن طول مصفوفة البايت يطابق حجم الملف.
 
-**س: ما صيغ الملفات التي يمكنني تصدير البريد المموسوم إليها؟**  
-ج: يمكنك الحفظ كـ EML أو MSG أو MHT. تدعم الـ API أيضًا تحويل إلى PDF إذا كنت بحاجة إلى نسخة قابلة للطباعة.
+**س: هل يمكنني إضافة علامات مائية متعددة إلى نفس البريد الإلكتروني؟**  
+ج: نعم. استدعِ `content.getEmbeddedObjects().add(...)` لكل صورة وقم بتحديث جسم HTML وفقًا لذلك.
 
-**س: هل يلزم ترخيص لبيئات التطوير؟**  
-ج: ترخيص تجريبي مجاني يكفي للتطوير والاختبار. تتطلب عمليات النشر الإنتاجية ترخيصًا مدفوعًا لإزالة العلامات المائية التجريبية.
+**س: هل من الممكن وضع علامة مائية على المرفقات داخل البريد الإلكتروني؟**  
+ج: يمكن لـ GroupDocs.Watermark معالجة المستندات المرفقة بشكل منفصل؛ تحتاج إلى استخراجها، وضع العلامة المائية، ثم إرفاقها مرة أخرى برمجيًا.
 
-**س: كيف يتعامل GroupDocs.Watermark مع المرفقات الكبيرة؟**  
-ج: يتم بث المرفقات دون تغيير؛ يتم معالجة جسم البريد فقط، لذا لا يؤثر حجم المرفق على أداء وضع العلامة المائية.
+**س: هل تدعم المكتبة ملفات EML بالإضافة إلى MSG؟**  
+ج: بالتأكيد. نفس الـ API يعمل مع صيغ MSG و EML.
 
-## الخلاصة
+## الخاتمة
 
-أصبح لديك الآن سير عمل كامل وجاهز للإنتاج لـ **كيفية وضع علامة مائية على ملفات البريد الإلكتروني** باستخدام GroupDocs.Watermark للـ Java. باتباع الخطوات أعلاه، يمكنك تضمين الشعارات، إخطارات السرية، أو أي صورة مخصصة في كل بريد صادر، مما يضمن علامة تجارية متسقة وأمانًا محسّنًا. استكشف ميزات إضافية مثل العلامات المائية النصية، الطوابع التاريخية الديناميكية، أو المعالجة الدفعية لتوسيع حلّك.
+أصبح لديك الآن طريقة كاملة وجاهزة للإنتاج **لإضافة علامة مائية للبريد الإلكتروني java** باستخدام GroupDocs.Watermark. جرّب أنماط صور مختلفة، استكشف العلامات المائية النصية، ودمج هذا التدفق في خطوط معالجة البريد الإلكتروني الأكبر لضمان أمان المستندات بشكل قوي.
 
 ---
 
-**آخر تحديث:** 2026-06-16  
-**تم الاختبار مع:** GroupDocs.Watermark للـ Java 24.11  
+**آخر تحديث:** 2026-01-03  
+**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
 **المؤلف:** GroupDocs
-
-## دروس ذات صلة
-
-- [وضع علامة مائية على مستند البريد الإلكتروني في Java : إدارة متقدمة مع GroupDocs.Watermark](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-management/)
-- [معالجة مرفقات البريد الإلكتروني في Java باستخدام GroupDocs.Watermark : دليل كامل](/watermark/java/email-document-watermarking/java-email-attachment-processing-groupdocs-watermark/)
-- [دليل وضع العلامة المائية في Java : تأمين المستندات باستخدام GroupDocs.Watermark API](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

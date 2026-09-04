@@ -1,115 +1,61 @@
 ---
-date: '2026-06-16'
-description: Ismerje meg, hogyan helyezhet vízjelet e‑mail dokumentumokra a GroupDocs.Watermark
-  for Java használatával. Ez a lépésről‑lépésre útmutató bemutatja a telepítést, a
-  vízjel hozzáadását e‑mailhez, és a legjobb gyakorlatokat.
+date: '2026-01-03'
+description: Ismerje meg, hogyan adhat hozzá e‑mail vízjelet Java‑ban a GroupDocs.Watermark
+  segítségével, beleértve a beágyazott képes e‑mail Java és a képadatokat olvasó Java
+  technikákat a biztonságos e‑mail dokumentumokhoz.
 keywords:
-- how to watermark email
-- add watermark to email
-- GroupDocs Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-16'
-  description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  headline: How to Watermark Email with GroupDocs.Watermark for Java – A Complete
-    Guide
-  type: TechArticle
-- description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  name: How to Watermark Email with GroupDocs.Watermark for Java – A Complete Guide
-  steps:
-  - name: '**Import Necessary Classes:**'
-    text: '**Import Necessary Classes:**'
-  - name: '**Initialize Email Load Options and Watermarker:**'
-    text: '**Initialize Email Load Options and Watermarker:**'
-  - name: '**Import Required Packages:**'
-    text: '**Import Required Packages:**'
-  - name: '**Read Image File and Convert to Byte Array:**'
-    text: '**Read Image File and Convert to Byte Array:**'
-  - name: '**Import Classes for Handling Email Contents:**'
-    text: '**Import Classes for Handling Email Contents:**'
-  - name: '**Add Embedded Image to the Email:**'
-    text: '**Add Embedded Image to the Email:**'
-  - name: '**Save and Close Watermarker:**'
-    text: '**Save and Close Watermarker:**'
-  - name: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-    text: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-  - name: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-    text: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-  - name: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-    text: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-  type: HowTo
-- questions:
-  - answer: GroupDocs.Watermark only modifies the HTML body; plain‑text parts remain
-      unchanged, which is standard practice for email branding.
-    question: Can I watermark both HTML and plain‑text parts of an email?
-  - answer: Yes, because the watermark becomes part of the email’s HTML content, it
-      is retained in all subsequent forwards.
-    question: Does the watermark survive when the email is forwarded?
-  - answer: You can save as EML, MSG, or MHT. The API also supports PDF conversion
-      if you need a printable version.
-    question: What file formats can I export the watermarked email to?
-  - answer: A free trial license works for development and testing. Production deployments
-      require a purchased license to remove evaluation watermarks.
-    question: Is a license required for development environments?
-  - answer: Attachments are streamed unchanged; only the email body is processed,
-      so attachment size does not affect watermarking performance.
-    question: How does GroupDocs.Watermark handle large attachments?
-  type: FAQPage
-title: Hogyan helyezzünk vízjelet e‑mailre a GroupDocs.Watermark for Java‑val – Teljes
-  útmutató
+- Java Email Watermarking
+- GroupDocs Watermark for Java
+- Email Document Watermarking
+title: E-mail vízjel hozzáadása Java-ban a GroupDocs.Watermark segítségével
 type: docs
 url: /hu/java/email-document-watermarking/java-email-watermarking-groupdocs-guide/
 weight: 1
 ---
 
-# Hogyan jelöljük meg vízjellel az e‑mailt a GroupDocs.Watermark for Java segítségével – Teljes útmutató
+# Hogyan adjon hozzá e‑mail vízjelet Java‑ban a GroupDocs.Watermark segítségével: Lépésről‑lépésre útmutató
 
 ## Bevezetés
 
-Ha meg kell védenie e‑mail kommunikációja integritását, az **email vízjelzése** kritikus képesség. Egy vizuális azonosító közvetlenül az e‑mailben megakadályozza az illetéktelen továbbítást és a manipulációt, miközben az eredeti üzenet olvasható marad. Ebben az útmutatóban megtanulja, hogyan integrálja a GroupDocs.Watermark for Java‑t az alkalmazásába, hogyan töltsön be egy e‑mail fájlt, hogyan ágyazzon be egy képet vízjelként, és hogyan mentse el a vízjellel ellátott üzenetet – mindezt anélkül, hogy megváltoztatná az e‑mail eredeti struktúráját.
+Szeretne **add email watermark java** hozzáadni, hogy biztonságba helyezze e‑mail dokumentumait anélkül, hogy azok integritását befolyásolná? Fedezze fel, hogyan integrálhatja zökkenőmentesen a vízjelezést e‑mail munkafolyamataiba a GroupDocs.Watermark for Java használatával. Ez az útmutató végigvezeti a felhasználót egy e‑mail dokumentum betöltésén, képfájlok beolvasásán, képek vízjelként beágyazásán és a módosított dokumentum hatékony mentésén.
 
-**Amit elsajátít:**
-- A GroupDocs.Watermark for Java telepítése és konfigurálása.  
-- E‑mail dokumentum (EML, MSG vagy MHT) betöltése az API-ba.  
-- Kép byte tömbbé konvertálása és vízjelként történő beágyazása.  
-- A módosított e‑mail mentése a mellékletek és a HTML tartalom megőrzésével.  
+**Amit megtanul majd:**
+- A GroupDocs.Watermark for Java beállítása és használata.  
+- E‑mail dokumentum betöltése az alkalmazásba.  
+- Képek beolvasása és beágyazása e‑mailbe.  
+- Vízjeles e‑mail dokumentumok hatékony mentése.
 
-A végére képes lesz programozottan **vízjelet hozzáadni e‑mail** fájlokhoz, így kimenő kommunikációja biztonságosan márkázott lesz.
+### Gyors válaszok
+- **Elsődleges könyvtár?** GroupDocs.Watermark for Java  
+- **Fő cél?** add email watermark java hozzáadása MSG/EML fájlokhoz  
+- **Kulcsfontosságú lépések?** e‑mail betöltése → kép bájtok beolvasása → kép beágyazása → mentés  
+- **Licenc szükséges?** Igen, érvényes GroupDocs licenc a termeléshez  
+- **Támogatott formátumok?** MSG, EML és egyéb e‑mail típusok
 
-## Gyors válaszok
-- **Melyik könyvtár szükséges?** GroupDocs.Watermark for Java (v24.11+).  
-- **Mely e‑mail formátumok támogatottak?** EML, MSG és MHT fájlok – összesen több mint 30 + formátum.  
-- **Használhatok PNG vízjeleket?** Igen, a PNG és JPEG teljes mértékben támogatott.  
-- **Szükségem van licencre a fejlesztéshez?** Egy ingyenes próba működik teszteléshez; termelési licenc szükséges kereskedelmi felhasználáshoz.  
-- **Mennyi extra memória szükséges a vízjelzéshez?** Általában 15 MB alatt egy 5 MB-os e‑mail esetén tömörített képek használatával.
+## Mi az az add email watermark java?
 
-## Mi az e‑mail vízjelzés?
-Az e‑mail vízjelzés egy vizuális elem – például logó vagy nyilatkozat – közvetlen beágyazása az e‑mail fájl törzsébe. A vízjel a HTML tartalom részévé válik, biztosítva, hogy a címzettek a márkát lássák, függetlenül attól, melyik e‑mail kliensüket használják.
+Az e‑mail vízjel hozzáadása Java‑ban azt jelenti, hogy programozottan beillesztünk egy vizuális azonosítót – például logót vagy nyilatkozatot – az e‑mail fájl törzsébe vagy mellékleteibe. Ez segít megvédeni a bizalmas információkat, erősíti a márka megjelenését, és ellenőrizhetővé teszi a dokumentum hitelességét.
 
-## Miért használjuk a GroupDocs.Watermark for Java‑t?
-A GroupDocs.Watermark **50+ bemeneti és kimeneti formátumot** támogat, köztük az EML, MSG és MHT formátumokat, és akár **200 MB‑os** e‑mail-eket is képes feldolgozni anélkül, hogy a teljes fájlt memóriába töltené. API-ja szálbiztos műveleteket kínál, lehetővé téve, hogy egy szabványos 4‑magos szerveren percenként több száz e‑mail‑t jelöljön meg vízjellel.
+## Miért használja a GroupDocs.Watermark for Java‑t?
+
+A GroupDocs.Watermark egy magas szintű API‑t biztosít, amely elrejti a különböző e‑mail formátumok bonyolultságát. Lehetővé teszi, hogy az üzleti logikára koncentráljon, miközben a MIME‑struktúrákat, beágyazott objektumokat és a képek renderelését a háttérben kezeli.
 
 ## Előfeltételek
 
-- **Java Development Kit (JDK) 8+** telepítve és konfigurálva az IDE‑ben.  
-- **Maven** vagy más build eszköz a függőségek kezeléséhez.  
-- Hozzáférés egy mappához, ahol a forrás e‑mailokat olvashatja és a vízjellel ellátott eredményeket írhatja.  
-- Alapvető Java ismeretek (fájl I/O, stream‑ek, és objektum‑orientált koncepciók).  
+- **Szükséges könyvtárak és függőségek**
+  - GroupDocs.Watermark for Java (24.11 vagy újabb verzió).  
+  - IntelliJ IDEA vagy Eclipse IDE, amely támogatja a Maven projekteket.
+- **Környezet beállítási követelmények**
+  - JDK 8 vagy újabb telepítve.  
+  - Hozzáférés egy könyvtárhoz a bemeneti és kimeneti fájlok tárolásához.
+- **Tudás előfeltételek**
+  - Alapvető Java programozás.  
+  - Fájlkezelés és Maven ismerete.
 
 ## A GroupDocs.Watermark for Java beállítása
 
 ### Maven használata
-Addja hozzá a következő függőséget a `pom.xml` fájlhoz:
+Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz:
 
 ```xml
 <repositories>
@@ -130,18 +76,14 @@ Addja hozzá a következő függőséget a `pom.xml` fájlhoz:
 ```
 
 ### Közvetlen letöltés
-Alternatívaként töltse le a legújabb JAR‑t a hivatalos kiadási oldalról:  
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternatívaként töltse le a legújabb verziót közvetlenül a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 #### Licenc beszerzési lépések
-- **Ingyenes próba:** Töltse le a próba licencet az API felfedezéséhez.  
-- **Ideiglenes licenc:** Kiterjesztett értékeléshez kérjen ideiglenes kulcsot a vásárlási portálon: [GroupDocs vásárlási oldal](https://purchase.groupdocs.com/temporary-license).  
-- **Teljes licenc:** Vásároljon termelési licencet korlátlan telepítéshez.
+- **Ingyenes próba:** Kezdje egy ingyenes próba letöltésével, hogy felfedezze a GroupDocs.Watermark funkcióit.  
+- **Ideiglenes licenc:** Hosszabb értékeléshez szerezzen ideiglenes licencet a [GroupDocs vásárlási oldalán](https://purchase.groupdocs.com/temporary-license).  
+- **Vásárlás:** Fontolja meg egy teljes licenc megvásárlását a termelési környezetekhez.
 
 ### Alapvető inicializálás és beállítás
-`Watermarker` a fő osztály, amely kezeli a dokumentumok betöltését, szerkesztését és mentését.  
-`EmailLoadOptions` konfigurálja, hogyan értelmezze az e‑mail fájlt betöltéskor.  
-
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -150,162 +92,127 @@ String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
 Watermarker watermarker = new Watermarker(emailFilePath);
 ```
 
-## Megvalósítási útmutató
+## Hogyan adjon hozzá e‑mail vízjelet Java‑ban
 
-### E‑mail dokumentum betöltése
+Az alábbiakban egy teljes, lépésről‑lépésre útmutatót talál, amely bemutatja, hogyan **add email watermark java** használatával valósítható meg az API‑val.
 
-#### Áttekintés
-Az e‑mail betöltése az első lépés, mielőtt bármilyen vízjelet alkalmazna. A GroupDocs.Watermark elrejti a fájlformátum részleteit, lehetővé téve, hogy egy egységes `Watermarker` objektummal dolgozzon.
-
-#### Közvetlen válasz
-Hozzon létre egy `Watermarker` példányt `EmailLoadOptions`‑szel, mutassa rá a `.eml` vagy `.msg` fájlra, és az API feldolgozza a HTML törzset, a mellékleteket és a metaadatokat – mindezt egyetlen hívásban. Ez a művelet általában 200 ms alatt befejeződik egy 2 MB-os e‑mail esetén.
-
-#### Lépésről‑lépésre megvalósítás
-1. **Import Necessary Classes:**  
-   ```java
-   import com.groupdocs.watermark.Watermarker;
-   import com.groupdocs.watermark.options.EmailLoadOptions;
-   ```  
-
-2. **Initialize Email Load Options and Watermarker:**  
-   ```java
-   EmailLoadOptions loadOptions = new EmailLoadOptions();
-   String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
-   Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
-   ```  
-
-#### Definíció
-`EmailLoadOptions` egy konfigurációs osztály, amely megmondja a GroupDocs.Watermark‑nak, hogyan értelmezze a forrás e‑mail fájlt (például, hogy megőrizze‑e a beágyazott képeket).
-
-### Kép fájl beolvasása byte tömbbe
+### 1. lépés: E‑mail dokumentum betöltése
 
 #### Áttekintés
-A vízjel beágyazásához a képet byte tömbként kell megadni, hogy az API be tudja szúrni azt az e‑mail HTML‑jébe.
+Az e‑mail dokumentum betöltése az első lépés a vízjelezéshez. A GroupDocs.Watermark lehetővé teszi a különböző formátumok zökkenőmentes betöltését.
 
-#### Közvetlen válasz
-Olvassa be a kép fájlt `FileInputStream`‑mal, konvertálja a stream‑et byte tömbbé az `IOUtils.toByteArray` segítségével, és tartsa a memóriában – ez lehetővé teszi a vízjel beillesztését anélkül, hogy ideiglenes fájlokat hozna létre.
+#### Implementáció
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.EmailLoadOptions;
+```
 
-#### Lépésről‑lépésre megvalósítás
-1. **Import Required Packages:**  
-   ```java
-   import java.io.File;
-   import java.io.FileInputStream;
-   import java.io.InputStream;
-   ```  
+```java
+EmailLoadOptions loadOptions = new EmailLoadOptions();
+String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
+Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
+```
 
-2. **Read Image File and Convert to Byte Array:**  
-   ```java
-   File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
-   byte[] imageBytes = new byte[(int) imageFile.length()];
-   InputStream imageInputStream = new FileInputStream(imageFile);
-   imageInputStream.read(imageBytes);
-   imageInputStream.close();
-   ```  
+*Magyarázat:* Az `EmailLoadOptions` lehetővé teszi a MSG/EML fájl finomhangolását. Győződjön meg arról, hogy a fájl útvonala egy érvényes e‑mail fájlra mutat.
 
-#### Definíció
-`FileInputStream` egy szabványos Java I/O osztály, amely nyers bájtokat olvas egy fájlrendszerben lévő fájlból.
-
-### Beágyazott kép hozzáadása az e‑mailhez
+### 2. lépés: read image bytes java
 
 #### Áttekintés
-A képet Content‑ID (CID) hivatkozásként beágyazni biztosítja, hogy a vízjel inline jelenjen meg az e‑mail HTML‑törzsében.
+A kép vízjelként való beágyazásához először be kell olvasni a képfájlt egy bájt tömbbe. Ez a **read image bytes java** lépés.
 
-#### Közvetlen válasz
-Generáljon egy egyedi CID‑t, adja hozzá a kép bájtjait a `Watermarker`‑hez az `addImageWatermark` metódussal, és hivatkozzon a CID‑re a HTML‑törzsben. Az API automatikusan frissíti a MIME részeket, így az e‑mail RFC‑kompatibilis marad.
+#### Implementáció
+```java
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+```
 
-#### Lépésről‑lépésre megvalósítás
-1. **Import Classes for Handling Email Contents:**  
-   ```java
-   import com.groupdocs.watermark.contents.EmailContent;
-   import com.groupdocs.watermark.contents.EmailEmbeddedObject;
-   ```  
+```java
+File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
+byte[] imageBytes = new byte[(int) imageFile.length()];
+InputStream imageInputStream = new FileInputStream(imageFile);
+imageInputStream.read(imageBytes);
+imageInputStream.close();
+```
 
-2. **Add Embedded Image to the Email:**  
-   ```java
-   EmailContent content = watermarker.getContent(EmailContent.class);
-   content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
-   
-   EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
-   content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
-   ```  
+*Magyarázat:* A kép bájt tömbbé konvertálása kompatibilissé teszi azt az `addEmbeddedObject` API‑val, függetlenül a kép méretétől.
 
-#### Definíció
-`addImageWatermark` a `Watermarker` egy metódusa, amely egy kép vízjelet szúr be a dokumentum vizuális rétegébe.  
-`Content‑ID (CID)` egy MIME fejléc, amely lehetővé teszi, hogy egy e‑mail kliens beágyazott erőforrásokat – például képeket – közvetlenül a üzenettörzsben jelenítsen meg.
-
-### Vízjellel ellátott e‑mail dokumentum mentése
+### 3. lépés: embed image email java
 
 #### Áttekintés
-A vízjel alkalmazása után a módosításokat egy új fájlba kell menteni.
+Most beágyazzuk a képet az e‑mail tartalmába. Ez a **embed image email java** művelet, amely egy Content‑ID (CID) hivatkozást hoz létre.
 
-#### Közvetlen válasz
-Hívja meg a `watermarker.save("output.eml", SaveOptions.create())` metódust, majd a `watermarker.close()`‑t a fájlkezelők és memória pufferek felszabadításához. A mentett fájl megőrzi az eredeti mellékleteket és metaadatokat, miközben megjeleníti az új vízjelet.
+#### Implementáció
+```java
+import com.groupdocs.watermark.contents.EmailContent;
+import com.groupdocs.watermark.contents.EmailEmbeddedObject;
+```
 
-#### Lépésről‑lépésre megvalósítás
-1. **Save and Close Watermarker:**  
-   ```java
-   String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
-   watermarker.save(outputFilePath);
-   watermarker.close();
-   ```  
+```java
+EmailContent content = watermarker.getContent(EmailContent.class);
+content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
 
-#### Definíció
-`SaveOptions` határozza meg a kimeneti formátumot és a tömörítési beállításokat a létrehozott e‑mail fájlhoz.
+EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
+content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
+```
+
+*Magyarázat:* Az `add` metódus a képet beágyazott objektumként tárolja. A generált CID-t ezután a HTML‑törzsben használják a vízjel megjelenítéséhez.
+
+### 4. lépés: Vízjeles e‑mail dokumentum mentése
+
+#### Áttekintés
+A vízjel beágyazása után a módosításokat egy új fájlba kell menteni.
+
+#### Implementáció
+```java
+String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
+watermarker.save(outputFilePath);
+watermarker.close();
+```
+
+*Magyarázat:* A `save` a módosított e‑mailt lemezre írja, míg a `close` felszabadítja az összes natív erőforrást.
 
 ## Gyakorlati alkalmazások
 
-1. **Belső dokumentum biztonság** – Megakadályozza a véletlen adatszivárgást azáltal, hogy minden belső értesítést bizalmas vízjellel lát el.  
-2. **E‑mail marketing** – Erősíti a márkaazonosságot azáltal, hogy automatikusan hozzáadja a logót minden kampány e‑mailhez.  
-3. **Jogi levelezés** – Csatoljon egy „Bizalmas – Ügyvéd‑Ügyfél titoktartás” vízjelet a jogi e‑mailhez a megfelelőségi auditok teljesítéséhez.  
+1. **Belső dokumentumbiztonság:** Védje a bizalmas vállalati kommunikációkat az illetéktelen továbbítástól.  
+2. **E‑mail marketing kampányok:** Minden kimenő e‑mailt logójával márkázzon a konzisztens felismerhetőség érdekében.  
+3. **Jogi dokumentáció:** Adjunk hozzá manipulációra ellenálló vízjelet a jogi levelezéshez, hogy biztosítsuk annak integritását.
 
-## Teljesítmény szempontok
-- **Kép méretek optimalizálása:** Használjon PNG‑8 vagy JPEG‑2000 formátumot, hogy a byte tömb 100 KB alatt maradjon minőségi veszteség nélkül.  
-- **Erőforrás kezelés:** Mindig zárja be a stream‑eket (`FileInputStream`, `watermarker`) egy `finally` blokkban vagy használjon try‑with‑resources‑t a memória szivárgás elkerüléséhez.  
-- **Kötegelt feldolgozás:** Tömeges vízjelzéshez dolgozza fel az e‑mailokat aszinkron módon a Java `CompletableFuture`‑val a CPU kihasználtság maximalizálása érdekében.  
+## Teljesítménybeli szempontok
+- **Képméretek optimalizálása:** Használjon tömörített PNG/JPEG fájlokat a memóriahasználat alacsonyan tartásához.  
+- **Erőforrás-kezelés:** Mindig zárja le a stream‑eket (`close()`), hogy elkerülje a memória szivárgásokat.  
+- **Aszinkron feldolgozás:** Tömeges műveletek esetén dolgozza fel az e‑maileket háttérszálakon vagy használja a Java `CompletableFuture`‑jét a teljesítmény növeléséhez.
 
 ## Gyakori problémák és megoldások
-
 | Probléma | Ok | Megoldás |
 |----------|----|----------|
-| **A kép nem jelenik meg** | CID helytelenül van hivatkozva a HTML‑ben | Ellenőrizze, hogy a `<img src="cid:yourCid">` címke megegyezik a `addImageWatermark`‑ben használt CID‑vel. |
-| **Az e‑mail megsérül** | Hibás `SaveOptions` használata | Használja a `SaveOptions.create().setPreserveOriginalHeaders(true)` beállítást az eredeti fejlécek megőrzéséhez. |
-| **Memória‑hiány hiba** | Nagy e‑mail (>200 MB) teljes betöltése memóriába | Engedélyezze a streaming módot az `EmailLoadOptions.setLoadMode(LoadMode.Stream)` hívással a `Watermarker` inicializálása előtt. |
+| Nem jelenik meg a kép az e‑mailben | Hibás CID hivatkozás | Ellenőrizze, hogy a `embeddedObject.getContentId()` pontosan a `<img src="cid:...">` címkében legyen használva. |
+| A vízjel nem kerül mentésre | `watermarker.save()` ugyanarra az útra lett hívva, mint a bemenet | Használjon másik kimeneti könyvtárat vagy fájlnevet. |
+| Licenc kivétel | Hiányzó vagy lejárt licencfájl | Helyezzen egy érvényes `GroupDocs.Watermark.lic` fájlt az alkalmazás gyökerébe, vagy állítsa be a `License` objektumot programozottan. |
 
-## Gyakran Ismételt Kérdések
+## Gyakran ismételt kérdések
 
-**Q: Be tudok-e jelölni vízjellel mind a HTML, mind a sima szöveges részeket egy e‑mailben?**  
-A: A GroupDocs.Watermark csak a HTML törzset módosítja; a sima szöveges részek változatlanok maradnak, ami az e‑mail márkázásának szokásos gyakorlata.
+**Q: Mely képformátumok működnek a legjobban az embed image email java esetén?**  
+A: A PNG és JPEG ajánlott, mivel jó egyensúlyt biztosítanak a minőség és a fájlméret között, és mindkettő teljesen támogatott a GroupDocs.Watermark által.
 
-**Q: Megmarad a vízjel, ha az e‑mail továbbításra kerül?**  
-A: Igen, mivel a vízjel az e‑mail HTML‑tartalmának része, minden további továbbításnál megmarad.
+**Q: Hogyan háríthatom a read image bytes java problémákat?**  
+A: Győződjön meg arról, hogy az útvonal helyes, a fájl nincs zárolva, és rendelkezik olvasási jogosultsággal. Emellett ellenőrizze, hogy a bájt tömb hossza megegyezik a fájl méretével.
 
-**Q: Milyen fájlformátumokba exportálhatom a vízjellel ellátott e‑mailt?**  
-A: Menthet EML, MSG vagy MHT formátumban. Az API PDF konverziót is támogat, ha nyomtatható verzióra van szükség.
+**Q: Hozzáadhatok több vízjelet ugyanahhoz az e‑mailhez?**  
+A: Igen. Hívja meg a `content.getEmbeddedObjects().add(...)` metódust minden egyes képhez, és ennek megfelelően frissítse a HTML‑törzset.
 
-**Q: Szükséges licenc a fejlesztői környezethez?**  
-A: Egy ingyenes próba licenc megfelelő a fejlesztéshez és teszteléshez. A termelési környezethez vásárolt licenc szükséges az értékelési vízjelek eltávolításához.
+**Q: Lehet-e a csatolmányokat is vízjelezni az e‑mailben?**  
+A: A GroupDocs.Watermark képes aatolt dokumentumokat egyenként feldolgozni; ki kell őket nyerni, vízjelezni, majd programozottan újra csatolni.
 
-**Q: Hogyan kezeli a GroupDocs.Watermark a nagy mellékleteket?**  
-A: A mellékletek változatlanul stream‑elődnek; csak az e‑mail törzsét dolgozza fel, így a melléklet mérete nem befolyásolja a vízjelzési teljesítményt.
+**Q: Támogatja a könyvtár az EML fájlokat is, nem csak az MSG‑t?**  
+A: Teljes mértékben. Ugyanaz az API működik mind MSG, mind EML formátumok esetén.
 
 ## Következtetés
 
-Most már rendelkezik egy teljes, termelés‑kész munkafolyamattal a **email vízjelzés** fájlok programozott hozzáadásához a GroupDocs.Watermark for Java segítségével. A fenti lépések követésével logókat, titoktartási megjegyzéseket vagy bármilyen egyedi képet ágyazhat be minden kimenő e‑mailbe, biztosítva az egységes márkázást és a fokozott biztonságot. Fedezze fel a további funkciókat, például a szöveges vízjeleket, dinamikus dátumlencéket vagy a kötegelt feldolgozást, hogy még tovább bővítse megoldását.
+Most már rendelkezik egy teljes, termelés‑kész módszerrel a **add email watermark java** megvalósításához a GroupDocs.Watermark segítségével. Kísérletezzen különböző képstílusokkal, fedezze fel a szöveges vízjeleket, és integrálja ezt a munkafolyamatot nagyobb e‑mail‑feldolgozó csővezetékekbe a robusztus dokumentumbiztonság érdekében.
 
 ---
 
-**Last Updated:** 2026-06-16  
-**Tested With:** GroupDocs.Watermark for Java 24.11  
-**Author:** GroupDocs
-
-## Kapcsolódó oktatóanyagok
-
-- [Email Document Watermarking in Java : Master Management with GroupDocs.Watermark](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-management/)
-- [Java Email Attachment Processing with GroupDocs.Watermark : A Complete Guide](/watermark/java/email-document-watermarking/java-email-attachment-processing-groupdocs-watermark/)
-- [Java Watermarking Guide : Secure Documents with GroupDocs.Watermark API](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
+**Utolsó frissítés:** 2026-01-03  
+**Tesztelt verzió:** GroupDocs.Watermark 24.11 for Java  
+**Szerző:** GroupDocs

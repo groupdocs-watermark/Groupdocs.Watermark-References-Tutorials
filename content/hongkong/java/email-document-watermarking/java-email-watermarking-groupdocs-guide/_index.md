@@ -1,112 +1,60 @@
 ---
-date: '2026-06-16'
-description: 了解如何使用 GroupDocs.Watermark for Java 為電子郵件文件加上浮水印。本分步教學涵蓋設定、在電子郵件中添加浮水印以及最佳實踐。
+date: '2026-01-03'
+description: 學習如何使用 GroupDocs.Watermark 在 Java 中為電子郵件加入浮水印，涵蓋嵌入圖像的電子郵件 Java 以及讀取圖像位元組的
+  Java 技術，以確保電子郵件文件的安全。
 keywords:
-- how to watermark email
-- add watermark to email
-- GroupDocs Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-16'
-  description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  headline: How to Watermark Email with GroupDocs.Watermark for Java – A Complete
-    Guide
-  type: TechArticle
-- description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  name: How to Watermark Email with GroupDocs.Watermark for Java – A Complete Guide
-  steps:
-  - name: '**Import Necessary Classes:**'
-    text: '**Import Necessary Classes:**'
-  - name: '**Initialize Email Load Options and Watermarker:**'
-    text: '**Initialize Email Load Options and Watermarker:**'
-  - name: '**Import Required Packages:**'
-    text: '**Import Required Packages:**'
-  - name: '**Read Image File and Convert to Byte Array:**'
-    text: '**Read Image File and Convert to Byte Array:**'
-  - name: '**Import Classes for Handling Email Contents:**'
-    text: '**Import Classes for Handling Email Contents:**'
-  - name: '**Add Embedded Image to the Email:**'
-    text: '**Add Embedded Image to the Email:**'
-  - name: '**Save and Close Watermarker:**'
-    text: '**Save and Close Watermarker:**'
-  - name: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-    text: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-  - name: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-    text: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-  - name: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-    text: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-  type: HowTo
-- questions:
-  - answer: GroupDocs.Watermark only modifies the HTML body; plain‑text parts remain
-      unchanged, which is standard practice for email branding.
-    question: Can I watermark both HTML and plain‑text parts of an email?
-  - answer: Yes, because the watermark becomes part of the email’s HTML content, it
-      is retained in all subsequent forwards.
-    question: Does the watermark survive when the email is forwarded?
-  - answer: You can save as EML, MSG, or MHT. The API also supports PDF conversion
-      if you need a printable version.
-    question: What file formats can I export the watermarked email to?
-  - answer: A free trial license works for development and testing. Production deployments
-      require a purchased license to remove evaluation watermarks.
-    question: Is a license required for development environments?
-  - answer: Attachments are streamed unchanged; only the email body is processed,
-      so attachment size does not affect watermarking performance.
-    question: How does GroupDocs.Watermark handle large attachments?
-  type: FAQPage
-title: 如何使用 GroupDocs.Watermark for Java 為電子郵件加上浮水印 – 完整指南
+- Java Email Watermarking
+- GroupDocs Watermark for Java
+- Email Document Watermarking
+title: 使用 GroupDocs.Watermark 在 Java 中添加電郵水印
 type: docs
 url: /zh-hant/java/email-document-watermarking/java-email-watermarking-groupdocs-guide/
 weight: 1
 ---
 
-# 如何使用 GroupDocs.Watermark for Java 為電郵加上浮水印 – 完整指南
+# 如何使用 GroupDocs.Watermark 為 Java 添加電子郵件浮水印：逐步指南
 
 ## 簡介
 
-如果您需要保護電郵通訊的完整性，**如何為電郵加上浮水印** 是一項關鍵功能。直接在電郵內加入視覺識別碼，可防止未經授權的轉發與竄改，同時保持原始訊息可讀。在本教學中，您將學會如何將 GroupDocs.Watermark for Java 整合至您的應用程式，載入電郵檔案、將圖像嵌入為浮水印，並儲存加了浮水印的訊息——全部不會改變電郵的原始結構。
+您是否希望 **add email watermark java** 以在不影響完整性的情況下保護您的電子郵件文件？了解如何使用 GroupDocs.Watermark for Java 無縫將浮水印整合到您的電子郵件工作流程中。本教學將指導您載入電子郵件文件、讀取圖像檔案、將圖像嵌入為浮水印，並有效地儲存修改後的文件。
 
-**您將掌握的內容：**
-- 安裝與設定 GroupDocs.Watermark for Java。  
-- 將電郵文件（EML、MSG 或 MHT）載入 API。  
-- 將圖像轉換為位元組陣列並嵌入為浮水印。  
-- 儲存已修改的電郵，同時保留附件與 HTML 內容。  
+**您將學到：**
+- 設定與使用 GroupDocs.Watermark for Java。  
+- 將電子郵件文件載入您的應用程式。  
+- 讀取並嵌入圖像至電子郵件。  
+- 有效地儲存帶有浮水印的電子郵件文件。
 
-完成後，您將能以程式方式 **為電郵加上浮水印** 檔案，讓您的外發通訊具備安全的品牌識別。
+### 快速回答
+- **主要函式庫？** GroupDocs.Watermark for Java  
+- **主要目標？** Add email watermark java to MSG/EML files  
+- **關鍵步驟？** Load email → read image bytes → embed image → save  
+- **需要授權嗎？** 是，需要有效的 GroupDocs 授權才能投入生產使用  
+- **支援的格式？** MSG、EML 以及其他電子郵件類型  
 
-## 快速解答
-- **需要的函式庫是什麼？** GroupDocs.Watermark for Java (v24.11+)。  
-- **支援哪些電郵格式？** EML、MSG 與 MHT 檔案 – 總計超過 30 種格式。  
-- **可以使用 PNG 浮水印嗎？** 可以，完整支援 PNG 與 JPEG。  
-- **開發需要授權嗎？** 免費試用可用於測試；商業使用需購買正式授權。  
-- **浮水印會額外佔用多少記憶體？** 使用壓縮圖像時，對於 5 MB 的電郵通常不超過 15 MB。  
+## 什麼是 add email watermark java？
 
-## 什麼是電郵浮水印？
-電郵浮水印是將視覺元素（例如標誌或免責聲明）直接嵌入電郵檔案正文的過程。浮水印成為 HTML 內容的一部分，確保收件人在任何電郵客戶端都能看到品牌標示。
+在 Java 中添加電子郵件浮水印是指以程式方式在電子郵件檔案的正文或附件中插入視覺識別標誌（例如標誌或免責聲明）。此舉有助於保護機密資訊、加強品牌形象，並驗證文件的真實性。
 
-## 為什麼使用 GroupDocs.Watermark for Java？
-GroupDocs.Watermark 支援 **50+ input and output formats**，包括 EML、MSG 與 MHT，且可在不將整個檔案載入記憶體的情況下處理高達 **200 MB** 的電郵。其 API 提供執行緒安全的操作，讓您在標準 4 核心伺服器上每分鐘可為數百封電郵加上浮水印。
+## 為何使用 GroupDocs.Watermark for Java？
+
+GroupDocs.Watermark 提供高階 API，抽象化不同電子郵件格式的複雜性。它讓您專注於業務邏輯，同時在底層處理 MIME 結構、嵌入物件與圖像渲染。
 
 ## 先決條件
 
-- **Java Development Kit (JDK) 8+** 已安裝並在 IDE 中配置。  
-- **Maven** 或其他建置工具以管理相依性。  
-- 取得可讀取來源電郵並寫入浮水印結果的資料夾存取權限。  
-- 基本的 Java 知識（檔案 I/O、串流與物件導向概念）。  
+- **必備函式庫與相依性**
+  - GroupDocs.Watermark for Java（版本 24.11 或更新）。  
+  - 支援 Maven 專案的 IDE，例如 IntelliJ IDEA 或 Eclipse。  
+- **環境設定需求**
+  - 已安裝 JDK 8 或更新版本。  
+  - 可存取用於儲存輸入與輸出檔案的目錄。  
+- **知識先備**
+  - 基本的 Java 程式設計。  
+  - 熟悉檔案處理與 Maven。  
 
 ## 設定 GroupDocs.Watermark for Java
 
 ### 使用 Maven
-在您的 `pom.xml` 檔案中加入以下相依性：
+將以下設定加入您的 `pom.xml` 檔案：
 
 ```xml
 <repositories>
@@ -127,18 +75,14 @@ GroupDocs.Watermark 支援 **50+ input and output formats**，包括 EML、MSG �
 ```
 
 ### 直接下載
-亦可從官方發行頁面下載最新 JAR：  
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+或者，直接從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載最新版本。
 
 #### 授權取得步驟
-- **免費試用：** 下載試用授權以探索 API。  
-- **臨時授權：** 若需延長評估，可透過購買入口請求臨時金鑰：[GroupDocs 的購買頁面](https://purchase.groupdocs.com/temporary-license)。  
-- **正式授權：** 購買正式授權以無限制部署。
+- **免費試用：** 先下載免費試用版以探索 GroupDocs.Watermark 功能。  
+- **臨時授權：** 若需延長評估，可透過 [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license) 取得臨時授權。  
+- **購買：** 考慮為生產環境購買完整授權。  
 
 ### 基本初始化與設定
-`Watermarker` 是管理載入、編輯與儲存文件的主要類別。  
-`EmailLoadOptions` 設定載入電郵檔案時的解析方式。
-
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -147,163 +91,127 @@ String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
 Watermarker watermarker = new Watermarker(emailFilePath);
 ```
 
-## 實作指南
+## 如何 add email watermark java
 
-### 載入電郵文件
+以下是一個完整的逐步指南，展示如何使用 API **add email watermark java**。
 
-#### 概述
-載入電郵是套用任何浮水印之前的第一步。GroupDocs.Watermark 抽象化檔案格式，讓您以統一的 `Watermarker` 物件操作。
+### 步驟 1：載入電子郵件文件
 
-#### 直接回答
-建立帶有 `EmailLoadOptions` 的 `Watermarker` 實例，指向您的 `.eml` 或 `.msg` 檔案，API 會一次解析 HTML 本文、附件與中繼資料。此操作通常在 2 MB 電郵下 200 ms 內完成。
+#### Overview
+載入電子郵件文件是浮水印的第一步。GroupDocs.Watermark 允許您無縫載入各種格式。
 
-#### 逐步實作
-1. **Import Necessary Classes:**  
-   ```java
-   import com.groupdocs.watermark.Watermarker;
-   import com.groupdocs.watermark.options.EmailLoadOptions;
-   ```  
+#### Implementation
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.EmailLoadOptions;
+```
 
-2. **Initialize Email Load Options and Watermarker:**  
-   ```java
-   EmailLoadOptions loadOptions = new EmailLoadOptions();
-   String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
-   Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
-   ```  
+```java
+EmailLoadOptions loadOptions = new EmailLoadOptions();
+String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
+Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
+```
 
-#### Definition Anchor
-`EmailLoadOptions` 是一個設定類別，告訴 GroupDocs.Watermark 如何解讀來源電郵檔案（例如是否保留嵌入圖像）。
+*說明：* `EmailLoadOptions` 讓您微調 MSG/EML 檔案的解析方式。請確保檔案路徑指向有效的電子郵件檔案。
 
-### 將圖像檔案讀取為位元組陣列
+### 步驟 2：read image bytes java
 
-#### 概述
-要嵌入浮水印，圖像必須以位元組陣列形式提供，讓 API 能將其插入電郵的 HTML 中。
+#### Overview
+要將圖像嵌入為浮水印，首先需要將圖像檔案讀取為位元組陣列。這就是 **read image bytes java** 步驟。
 
-#### 直接回答
-使用 `FileInputStream` 讀取圖像檔案，透過 `IOUtils.toByteArray` 將串流轉換為位元組陣列，並將陣列保留在記憶體中——這樣即可在不寫入暫存檔的情況下插入浮水印。
+#### Implementation
+```java
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+```
 
-#### 逐步實作
-1. **Import Required Packages:**  
-   ```java
-   import java.io.File;
-   import java.io.FileInputStream;
-   import java.io.InputStream;
-   ```  
+```java
+File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
+byte[] imageBytes = new byte[(int) imageFile.length()];
+InputStream imageInputStream = new FileInputStream(imageFile);
+imageInputStream.read(imageBytes);
+imageInputStream.close();
+```
 
-2. **Read Image File and Convert to Byte Array:**  
-   ```java
-   File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
-   byte[] imageBytes = new byte[(int) imageFile.length()];
-   InputStream imageInputStream = new FileInputStream(imageFile);
-   imageInputStream.read(imageBytes);
-   imageInputStream.close();
-   ```  
+*說明：* 將圖像轉換為位元組陣列，使其與 `addEmbeddedObject` API 相容，無論圖像大小如何。
 
-#### Definition Anchor
-`FileInputStream` 是標準的 Java I/O 類別，用於從檔案系統讀取原始位元組。
+### 步驟 3：embed image email java
 
-### 將嵌入圖像加入電郵
+#### Overview
+現在您將圖像嵌入電子郵件內容。這是 **embed image email java** 操作，會產生 Content‑ID（CID）參考。
 
-#### 概述
-將圖像作為 Content‑ID（CID）參照嵌入，可確保浮水印在電郵的 HTML 本文中內嵌顯示。
+#### Implementation
+```java
+import com.groupdocs.watermark.contents.EmailContent;
+import com.groupdocs.watermark.contents.EmailEmbeddedObject;
+```
 
-#### 直接回答
-產生唯一的 CID，使用 `addImageWatermark` 將圖像位元組加入 `Watermarker`，並在 HTML 本文中引用該 CID。API 會自動更新 MIME 部分，使電郵保持 RFC 相容。
+```java
+EmailContent content = watermarker.getContent(EmailContent.class);
+content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
 
-#### 逐步實作
-1. **Import Classes for Handling Email Contents:**  
-   ```java
-   import com.groupdocs.watermark.contents.EmailContent;
-   import com.groupdocs.watermark.contents.EmailEmbeddedObject;
-   ```  
+EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
+content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
+```
 
-2. **Add Embedded Image to the Email:**  
-   ```java
-   EmailContent content = watermarker.getContent(EmailContent.class);
-   content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
-   
-   EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
-   content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
-   ```  
+*說明：* `add` 方法將圖像儲存為嵌入物件。產生的 CID 隨後在 HTML 本文中使用，以顯示浮水印。
 
-#### Definition Anchor
-`addImageWatermark` 是 `Watermarker` 的方法，用於將圖像浮水印插入文件的視覺層。  
-`Content‑ID (CID)` 是一個 MIME 標頭，允許電郵客戶端直接在訊息正文中顯示嵌入資源（如圖像）。
+### 步驟 4：儲存帶浮水印的電子郵件文件
 
-### 儲存已加浮水印的電郵文件
+#### Overview
+在嵌入浮水印後，將變更持久化至新檔案。
 
-#### 概述
-浮水印套用完成後，必須將變更持久化為新檔案。
+#### Implementation
+```java
+String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
+watermarker.save(outputFilePath);
+watermarker.close();
+```
 
-#### 直接回答
-呼叫 `watermarker.save("output.eml", SaveOptions.create())`，然後 `watermarker.close()` 以釋放所有檔案句柄與記憶體緩衝區。儲存的檔案保留原始附件與中繼資料，同時顯示新的浮水印。
+*說明：* `save` 將修改後的電子郵件寫入磁碟，而 `close` 釋放所有本機資源。
 
-#### 逐步實作
-1. **Save and Close Watermarker:**  
-   ```java
-   String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
-   watermarker.save(outputFilePath);
-   watermarker.close();
-   ```  
+## 實際應用
 
-#### Definition Anchor
-`SaveOptions` 定義了輸出電郵檔案的格式與壓縮設定。
-
-## 實務應用
-
-在許多真實情境中，將浮水印嵌入電郵非常有價值：
-
-1. **內部文件安全** – 透過在每份內部備忘錄加上機密浮水印，以防止意外資料外洩。  
-2. **電郵行銷** – 自動在每封活動電郵加入您的標誌，強化品牌形象。  
-3. **法律往來** – 為法律電郵附加「機密 – 律師‑客戶特權」浮水印，以符合合規審核。  
+1. **內部文件安全：** 防止敏感企業通訊被未授權轉發。  
+2. **電子郵件行銷活動：** 為每封外發郵件加上您的標誌，以保持一致的辨識度。  
+3. **法律文件：** 為法律往來加上防篡改浮水印，以確保完整性。
 
 ## 效能考量
-- **優化圖像大小：** 使用 PNG‑8 或 JPEG‑2000，使位元組陣列保持在 100 KB 以下且不影響品質。  
-- **資源管理：** 確保在 `finally` 區塊或使用 try‑with‑resources 關閉串流（`FileInputStream`、`watermarker`），以避免記憶體洩漏。  
-- **批次處理：** 若需大量浮水印，可使用 Java 的 `CompletableFuture` 非同步處理電郵，以最大化 CPU 使用率。  
+- **優化圖像大小：** 使用壓縮的 PNG/JPEG 檔案以降低記憶體使用。  
+- **資源管理：** 始終關閉串流 (`close()`) 以避免記憶體洩漏。  
+- **非同步處理：** 對於大量操作，請在背景執行緒上處理電子郵件，或使用 Java 的 `CompletableFuture` 提升吞吐量。
 
 ## 常見問題與解決方案
-
-| Issue | Cause | Solution |
-|-------|-------|----------|
-| **Image not appearing** | CID not referenced correctly in HTML | Verify the `<img src="cid:yourCid">` tag matches the CID used in `addImageWatermark`. |
-| **Email becomes corrupted** | Saving with wrong `SaveOptions` | Use `SaveOptions.create().setPreserveOriginalHeaders(true)` to keep original headers intact. |
-| **Out‑of‑memory error** | Large email (>200 MB) loaded fully into memory | Enable streaming mode via `EmailLoadOptions.setLoadMode(LoadMode.Stream)` before initializing the `Watermarker`. |
+| 問題 | 原因 | 解決方案 |
+|------|------|----------|
+| 電子郵件中未顯示圖像 | CID 參考不正確 | 驗證在 `<img src="cid:...">` 標籤中正確使用 `embeddedObject.getContentId()`。 |
+| 浮水印未儲存 | `watermarker.save()` 在與輸入相同的路徑上被呼叫 | 使用不同的輸出目錄或檔名。 |
+| 授權例外 | 授權檔案遺失或已過期 | 將有效的 `GroupDocs.Watermark.lic` 放置於應用程式根目錄，或以程式方式設定 `License`。 |
 
 ## 常見問答
 
-**Q: 我可以同時為電郵的 HTML 與純文字部分加上浮水印嗎？**  
-A: GroupDocs.Watermark 只會修改 HTML 本文；純文字部分保持不變，這是電郵品牌化的標準做法。
+**Q: 哪些圖像格式最適合 embed image email java？**  
+A: 建議使用 PNG 與 JPEG，因為它們在品質與檔案大小之間取得平衡，且皆受到 GroupDocs.Watermark 完全支援。
 
-**Q: 電郵轉寄時浮水印會保留嗎？**  
-A: 會，因為浮水印已成為電郵的 HTML 內容，所有後續轉寄都會保留。
+**Q: 如何排除 read image bytes java 的問題？**  
+A: 確認檔案路徑正確、檔案未被鎖定且您具有讀取權限。同時，驗證位元組陣列長度與檔案大小相符。
 
-**Q: 我可以將加了浮水印的電郵匯出為哪些檔案格式？**  
-A: 可儲存為 EML、MSG 或 MHT。若需要可列印版本，API 亦支援轉換為 PDF。
+**Q: 我可以在同一封電子郵件中加入多個浮水印嗎？**  
+A: 可以。對每個圖像呼叫 `content.getEmbeddedObjects().add(...)`，並相應更新 HTML 本文。
 
-**Q: 開發環境需要授權嗎？**  
-A: 免費試用授權可用於開發與測試。正式部署則需購買授權，以移除評估浮水印。
+**Q: 能否對電子郵件內的附件進行浮水印？**  
+A: GroupDocs.Watermark 可個別處理附件文件；您需要以程式方式提取、加浮水印，然後重新附加。
 
-**Q: GroupDocs.Watermark 如何處理大型附件？**  
-A: 附件會以串流方式保持不變；僅處理電郵正文，因此附件大小不會影響浮水印的效能。
+**Q: 此函式庫是否同時支援 EML 與 MSG 檔案？**  
+A: 當然。相同的 API 可同時用於 MSG 與 EML 格式。
 
 ## 結論
 
-您現在已掌握使用 GroupDocs.Watermark for Java 為 **電郵加上浮水印** 檔案的完整、可投入生產的工作流程。依照上述步驟，您可以將標誌、機密聲明或任何自訂圖像嵌入每封外發電郵，確保品牌一致性與安全性。進一步探索文字浮水印、動態日期戳記或批次處理等功能，以擴充您的解決方案。
+您現在已掌握使用 GroupDocs.Watermark 的完整、可投入生產的 **add email watermark java** 方法。可嘗試不同的圖像樣式、探索文字浮水印，並將此工作流程整合到更大的電子郵件處理管線中，以實現強大的文件安全性。
 
 ---
 
-**Last Updated:** 2026-06-16  
-**Tested With:** GroupDocs.Watermark for Java 24.11  
-**Author:** GroupDocs
-
-## 相關教學
-
-- [Java 電郵文件浮水印：使用 GroupDocs.Watermark 的完整管理](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-management/)
-- [Java 電郵附件處理與 GroupDocs.Watermark：完整指南](/watermark/java/email-document-watermarking/java-email-attachment-processing-groupdocs-watermark/)
-- [Java 浮水印指南：使用 GroupDocs.Watermark API 保護文件](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
+**最後更新：** 2026-01-03  
+**測試環境：** GroupDocs.Watermark 24.11 for Java  
+**作者：** GroupDocs

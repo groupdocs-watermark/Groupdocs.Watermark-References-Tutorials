@@ -1,103 +1,65 @@
 ---
-date: '2026-06-16'
-description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für Java eine MSG-Datei
-  in Java parsen und automatisch die Empfänger von To, CC und BCC auflisten. Dieses
-  Tutorial zeigt, wie man E-Mails effizient parst.
+date: '2026-01-03'
+description: Erfahren Sie, wie Sie E‑Mail‑Empfänger in Java mit GroupDocs.Watermark
+  auflisten – automatisieren Sie das Extrahieren von An, CC und BCC aus E‑Mail‑Dokumenten.
 keywords:
-- java parse msg file
-- how to parse email
-- how to read msg
-- retrieve email recipients
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-16'
-  description: Learn how to java parse msg file and automatically list To, CC, and
-    BCC recipients using GroupDocs.Watermark for Java. This tutorial shows how to
-    parse email efficiently.
-  headline: 'Java Parse MSG File: List Recipients with GroupDocs.Watermark'
-  type: TechArticle
-- description: Learn how to java parse msg file and automatically list To, CC, and
-    BCC recipients using GroupDocs.Watermark for Java. This tutorial shows how to
-    parse email efficiently.
-  name: 'Java Parse MSG File: List Recipients with GroupDocs.Watermark'
-  steps:
-  - name: Add the Maven Dependency
-    text: Add the GroupDocs.Watermark Maven coordinates to your `pom.xml`. This brings
-      in all required JARs automatically. Alternatively, download the latest version
-      from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
-  - name: Import Required Classes
-    text: The `Watermarker` class loads an email document, while `EmailContent` provides
-      access to its metadata such as recipients.
-  - name: Define the Email Path and Load Options
-    text: '`LoadOptions` configures how the file is opened, allowing settings like
-      password protection.'
-  - name: Open the Document with Resource Management
-    text: Using try‑with‑resources ensures the `Watermarker` instance is automatically
-      closed.
-  - name: Retrieve Direct (To) Recipients
-    text: The `EmailContent.getTo()` method returns a list of primary recipient objects.
-  - name: List CC Recipients
-    text: The `EmailContent.getCc()` method returns a list of carbon‑copy recipient
-      objects.
-  - name: List BCC Recipients
-    text: The `EmailContent.getBcc()` method returns a list of blind‑carbon‑copy recipient
-      objects.
-  - name: Clean Up
-    text: '`watermarker.close()` releases native resources and file handles.'
-  type: HowTo
-- questions:
-  - answer: Use `LoadOptions.setPassword("yourPassword")` before opening the document;
-      the API will decrypt the content automatically.
-    question: How do I handle encrypted .msg files?
-  - answer: Yes—`EmailContent.getBody()` returns the plain‑text or HTML body, which
-      you can combine with recipient data for full‑message exports.
-    question: Can I extract the email body together with recipients?
-  - answer: Absolutely. GroupDocs.Watermark is designed for high‑throughput scenarios;
-      just ensure you manage thread pools and close each `Watermarker` instance promptly.
-    question: Is it possible to process thousands of emails in one run?
-  - answer: It is fully cross‑platform; the same Maven dependency runs on Windows,
-      macOS, and Linux Docker images.
-    question: Does the library work on Linux containers?
-  - answer: The official documentation and API reference contain deeper use‑cases,
-      such as watermarking attachments or extracting embedded images.
-    question: Where can I find more advanced examples?
-  type: FAQPage
-title: 'Java MSG-Datei parsen: Empfänger auflisten mit GroupDocs.Watermark'
+- Java email parsing
+- GroupDocs.Watermark Java
+- listing email recipients
+title: E-Mail-Empfänger in Java mit GroupDocs.Watermark auflisten
 type: docs
 url: /de/java/email-document-watermarking/java-email-parsing-groupdocs-watermark-recipients/
 weight: 1
 ---
 
-# Java MSG-Datei analysieren: Empfänger auflisten mit GroupDocs.Watermark
+# List Email Recipients Java with GroupDocs.Watermark
 
-Das Extrahieren jeder „An“, „CC“ und „BCC“-Adresse aus einer `.msg`‑E‑Mail kann mühsam sein, wenn Sie Hunderte von Dateien haben. **Java parse msg file** ermöglicht die Automatisierung dieses Schrittes, eliminiert manuelles Kopieren‑Einfügen und reduziert menschliche Fehler. In diesem Tutorial lernen Sie, wie Sie GroupDocs.Watermark für Java einrichten, ein E‑Mail‑Dokument laden und alle Empfängerlisten schnell und zuverlässig abrufen.
+Das Extrahieren jeder **To**, **CC** und **BCC**‑Adresse aus einer E‑Mail‑Datei kann mühsam sein, wenn Sie Dutzende oder Hunderte von Nachrichten verarbeiten. In diesem Tutorial lernen Sie, wie Sie **list email recipients java** schnell und zuverlässig mithilfe der GroupDocs.Watermark Java‑Bibliothek auflisten können. Wir führen Sie durch die Einrichtung, Code‑Durchgänge und Praxisbeispiele, damit Sie diese Funktion in Ihre eigenen Anwendungen integrieren können.
 
-## Schnellantworten
-- **Was wird im Tutorial behandelt?** Laden einer .msg‑Datei mit GroupDocs.Watermark und Extrahieren von „An“, „CC“ und „BCC“-Adressen.  
-- **Welche Bibliothek wird benötigt?** GroupDocs.Watermark für Java (v24.11 oder neuer).  
-- **Benötige ich eine Lizenz?** Eine kostenlose Testversion reicht für Tests; für die Produktion ist eine kostenpflichtige Lizenz erforderlich.  
-- **Kann ich andere Formate parsen?** Ja – dieselbe API unterstützt .eml und weitere E‑Mail‑Typen.  
-- **Welche Java‑Version wird unterstützt?** JDK 8 oder neuer.
+## Quick Answers
+- **What does this code do?** It opens an email file and prints all To, CC, and BCC addresses.  
+- **Which library is required?** GroupDocs.Watermark for Java (version 24.11).  
+- **Can it read .msg and .eml files?** Yes – the API supports common email formats.  
+- **Do I need a license?** A free trial works for testing; a full license is required for production.  
+- **Is batch processing possible?** Absolutely – you can loop over multiple files using the same pattern.
 
-## Was ist java parse msg file?
-Der Ausdruck **java parse msg file** bezieht sich auf die Verwendung von Java‑Code zum Lesen von Microsoft Outlook `.msg`‑Dateien und zum Extrahieren ihrer strukturierten Daten. Dieser Vorgang ermöglicht Entwicklern den programmgesteuerten Zugriff auf E‑Mail‑Metadaten, Inhaltskörper und Empfängerlisten ohne manuelle Inspektion. Er unterstützt zudem die Stapelverarbeitung, behandelt Unicode‑Zeichen und bewahrt Anhangsdaten, was ihn für unternehmensweite E‑Mail‑Analysen geeignet macht.
+## Introduction
 
-## Warum GroupDocs.Watermark für die E‑Mail‑Analyse verwenden?
-GroupDocs.Watermark verarbeitet **200 + E‑Mail‑Formate** und kann Dateien bis zu **500 MB** handhaben, ohne das gesamte Dokument in den Speicher zu laden, und erreicht dabei bis zu **3× schnellere** Extraktion im Vergleich zu generischen Datei‑Lese‑Ansätzen. Die dedizierte `EmailContent`‑API abstrahiert die komplexe .msg‑Struktur und bietet zuverlässigen Zugriff auf „An“, „CC“ und „BCC“-Felder in nur wenigen Java‑Zeilen.
+Sind Sie es leid, manuell E‑Mail‑Daten zu durchsuchen, um Empfängerlisten zu extrahieren? Die Automatisierung dieser Aufgabe kann Zeit sparen und Fehler reduzieren, besonders bei großen Mengen an E‑Mails. Dieser Leitfaden zeigt Ihnen, wie Sie die leistungsstarke GroupDocs.Watermark Java‑Bibliothek nutzen, um E‑Mail‑Dokumente zu parsen und **list email recipients java** effizient aufzulisten.
 
-## Voraussetzungen
+**What You'll Learn**
+- Setting up your environment for using GroupDocs.Watermark for Java  
+- Loading and initializing an email document with the GroupDocs.Watermark API  
+- Retrieving lists of To, CC, and BCC recipients from email documents  
+- Practical applications and performance considerations  
 
-- **Java Development Kit (JDK):** 8 oder höher.  
-- **IDE:** IntelliJ IDEA, Eclipse oder ein beliebiger Java‑kompatibler Editor.  
-- **Build‑Tool:** Maven (empfohlen) oder manuelle JAR‑Einbindung.  
-- **GroupDocs.Watermark für Java:** Version 24.11 (oder neuer).  
-- **Grundlegende Java‑Kenntnisse** und Vertrautheit mit E‑Mail‑Dateiformaten.
+Let's start by covering the prerequisites.
 
-## Wie java parse msg file und Empfänger auflisten?
-Laden Sie die .msg‑Datei mit der Klasse `Watermarker`, erhalten Sie eine `EmailContent`‑Instanz und iterieren Sie durch deren Empfängersammlungen. Dieser direkte Absatz erklärt die Kernschritte in weniger als 70 Wörtern: **Instanziieren Sie `Watermarker` mit dem Dateipfad, rufen Sie `getEmailContent()` auf, um die Empfängersammlungen zu erhalten, und durchlaufen Sie dann `getTo()`, `getCc()` und `getBcc()`, um jede Adresse auszugeben.** Die API übernimmt das gesamte Parsing intern, sodass Sie nie die rohe MIME‑Struktur selbst analysieren müssen.
+## Prerequisites
 
-### Schritt 1: Maven‑Abhängigkeit hinzufügen
-Fügen Sie die GroupDocs.Watermark‑Maven‑Koordinaten zu Ihrer `pom.xml` hinzu. Dadurch werden alle erforderlichen JARs automatisch eingebunden.
+Before diving into the code, ensure your environment is ready:
+
+### Required Libraries, Versions, and Dependencies
+
+You'll need to have GroupDocs.Watermark for Java installed. This guide uses version 24.11.
+
+### Environment Setup Requirements
+
+- **Java Development Kit (JDK):** Version 8 or higher  
+- **Integrated Development Environment (IDE):** IntelliJ IDEA or Eclipse recommended  
+- **Dependency Management:** Maven or direct download setup  
+
+### Knowledge Prerequisites
+
+A basic understanding of Java programming and familiarity with handling email formats (like .msg files) will be helpful.
+
+## Setting Up GroupDocs.Watermark for Java
+
+To get started, you'll need to set up your project with the necessary dependencies. Here’s how you can do it:
+
+**Maven Setup**
+
+Add the following configuration in your `pom.xml` file to include GroupDocs.Watermark:
 
 ```xml
 <repositories>
@@ -117,119 +79,151 @@ Fügen Sie die GroupDocs.Watermark‑Maven‑Koordinaten zu Ihrer `pom.xml` hinz
 </dependencies>
 ```
 
-Alternativ können Sie die neueste Version von [GroupDocs.Watermark für Java Releases](https://releases.groupdocs.com/watermark/java/) herunterladen.
+**Direct Download**
 
-### Schritt 2: Erforderliche Klassen importieren
-Die Klasse `Watermarker` lädt ein E‑Mail‑Dokument, während `EmailContent` Zugriff auf Metadaten wie Empfänger bietet.
+Alternatively, download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-```java
+### License Acquisition Steps
+
+- **Free Trial:** Start with a free trial to explore functionalities.  
+- **Temporary License:** Apply for a temporary license if you need extended access for testing purposes.  
+- **Purchase:** Consider purchasing a license for production use.
+
+Once your setup is ready, let’s initialize and prepare the environment for processing email documents.
+
+## How to List Email Recipients Java – Implementation Guide
+
+This section breaks down each feature into manageable steps so you can implement email parsing effectively with GroupDocs.Watermark.
+
+### Load and Initialize Email Document
+
+**Overview**  
+Loading an email document is the first step in our journey. This process involves initializing a `Watermarker` object, which serves as our gateway to interacting with email files.
+
+**Implementation Steps**
+
+1. **Import Required Classes**  
+   ```java
    import com.groupdocs.watermark.Watermarker;
    import com.groupdocs.watermark.options.EmailLoadOptions;
    ```
-
-### Schritt 3: E‑Mail‑Pfad und Ladeoptionen definieren
-`LoadOptions` konfiguriert, wie die Datei geöffnet wird, und ermöglicht Einstellungen wie Passwortschutz.
-
-```java
+2. **Define Email File Path and Load Options**  
+   Specify the path to your email document. Replace `"YOUR_DOCUMENT_DIRECTORY/email.msg"` with the actual path.  
+   ```java
    String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/email.msg";
    EmailLoadOptions loadOptions = new EmailLoadOptions();
    Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
    ```
-
-### Schritt 4: Dokument mit Ressourcenverwaltung öffnen
-Die Verwendung von try‑with‑resources stellt sicher, dass die `Watermarker`‑Instanz automatisch geschlossen wird.
-
-```java
+3. **Resource Management**  
+   Always remember to close the `Watermarker` instance after use to release system resources.  
+   ```java
    watermarker.close();
    ```
 
-### Schritt 5: Direkte (An‑)Empfänger abrufen
-Die Methode `EmailContent.getTo()` liefert eine Liste von primären Empfängerobjekten.
+### List All Direct Recipients of an Email
 
-```java
+**Overview**  
+Retrieving direct (To) recipients is straightforward once you have initialized your email document.
+
+**Implementation Steps**
+
+1. **Retrieve Email Content**  
+   Ensure the `watermarker` object is already initialized as shown in the previous section.  
+   ```java
    import com.groupdocs.watermark.contents.EmailContent;
    
    EmailContent content = watermarker.getContent(EmailContent.class);
    ```
-
-### Schritt 6: CC‑Empfänger auflisten
-Die Methode `EmailContent.getCc()` liefert eine Liste von Carbon‑Copy‑Empfängerobjekten.
-
-```java
+2. **Iterate and List Recipients**  
+   Loop through the list of direct recipients and print each email address.  
+   ```java
    for (EmailAddress address : content.getTo()) {
        System.out.println("Direct Recipient: " + address.getEmailAddress());
    }
    ```
 
-### Schritt 7: BCC‑Empfänger auflisten
-Die Methode `EmailContent.getBcc()` liefert eine Liste von Blind‑Carbon‑Copy‑Empfängerobjekten.
+### List All CC Recipients of an Email
 
-```java
+**Overview**  
+Listing CC recipients follows a similar process to listing direct recipients, allowing you to access additional email addresses included in the CC field.
+
+**Implementation Steps**
+
+1. **Retrieve and Iterate**  
+   Use the `EmailContent` object from before:  
+   ```java
    for (EmailAddress address : content.getCc()) {
        System.out.println("CC Recipient: " + address.getEmailAddress());
    }
    ```
 
-### Schritt 8: Aufräumen
-`watermarker.close()` gibt native Ressourcen und Dateihandles frei.
+### List All BCC Recipients of an Email
 
-```java
+**Overview**  
+Even though BCC recipients are not visible in the email header, you can still retrieve them using GroupDocs.Watermark.
+
+**Implementation Steps**
+
+1. **Access and Display BCC Addresses**  
+   ```java
    for (EmailAddress address : content.getBcc()) {
        System.out.println("BCC Recipient: " + address.getEmailAddress());
    }
    ```
 
-## Praktische Anwendungsfälle
+## Practical Applications
 
-- **E‑Mail‑Verwaltungssysteme:** Eingehende Mails automatisch kategorisieren, indem Empfängergruppen extrahiert werden.  
-- **Compliance‑Audits:** Berichte aller BCC‑Empfänger erstellen, um potenzielle Datenlecks zu erkennen.  
-- **Customer Relationship Management (CRM):** „An/CC“-Listen mit Kontaktdatenbanken synchronisieren für gezielte Ansprache.  
-- **Sicherheitsüberwachung:** Große Mail‑Archive nach unerwarteten externen Empfängern scannen.
+These features can be integrated into various systems, such as:
 
-## Leistungsüberlegungen
+- **Email Management Systems:** Automate the categorization and processing of emails based on recipient lists.  
+- **Data Analysis Tools:** Extract recipient data for analytics to identify communication patterns within an organization.  
+- **Security Software:** Monitor email traffic to detect unauthorized sharing or leaks.  
 
-- **Stapelverarbeitung:** E‑Mails in Parallel‑Streams (z. B. `java.util.concurrent.ForkJoinPool`) verarbeiten, um die CPU‑Auslastung zu maximieren und gleichzeitig Speichergrenzen einzuhalten.  
-- **Speicherverbrauch:** Die Bibliothek streamt Dateidaten; Sie können sicher Dateien bis zu **500 MB** ohne OOM‑Fehler parsen.  
-- **Ressourcen‑Bereinigung:** Schließen Sie stets das `Watermarker`‑Objekt; das Versäumnis kann Dateisperren unter Windows hinterlassen.
+## Performance Considerations
 
-## Häufige Probleme und Lösungen
+When dealing with large volumes of emails, consider these tips:
 
-- **Ungültiger Dateipfad:** Stellen Sie sicher, dass der Pfad Vorwärtsschrägstriche (`/`) oder escapte Rückwärtsschrägstriche (`\\`) unter Windows verwendet.  
-- **Nicht unterstütztes Format:** Vergewissern Sie sich, dass die Datei ein echtes Outlook `.msg`‑ oder `.eml`‑Format ist; andere Formate benötigen andere Loader.  
-- **Lizenzablauf:** Eine Testlizenz läuft nach 30 Tagen ab; ersetzen Sie sie durch einen Produktionsschlüssel, um `LicenseException` zu vermeiden.  
+- **Optimize Resource Usage:** Close the `Watermarker` object promptly after use.  
+- **Memory Management:** Be mindful of Java's garbage collection and memory usage when processing multiple files.  
+- **Batch Processing:** Handle emails in batches to reduce load on system resources.  
 
-## Häufig gestellte Fragen
+## Frequently Asked Questions
 
-**F: Wie gehe ich mit verschlüsselten .msg‑Dateien um?**  
-A: Verwenden Sie `LoadOptions.setPassword("yourPassword")` bevor Sie das Dokument öffnen; die API entschlüsselt den Inhalt automatisch.
+**Q: How do I handle errors during email parsing?**  
+A: Ensure your file paths are correct, files conform to expected formats, and wrap your code in try‑catch blocks to capture `IOException` or `GroupDocsException`.
 
-**F: Kann ich den E‑Mail‑Body zusammen mit den Empfängern extrahieren?**  
-A: Ja – `EmailContent.getBody()` liefert den Klartext‑ oder HTML‑Body, den Sie mit den Empfängerdaten für vollständige Nachrichtenexporte kombinieren können.
+**Q: Can I use this library with other email formats like .eml?**  
+A: Yes, GroupDocs.Watermark supports various email formats. Check the documentation for format‑specific load options.
 
-**F: Ist es möglich, Tausende von E‑Mails in einem Durchlauf zu verarbeiten?**  
-A: Absolut. GroupDocs.Watermark ist für Hoch‑Durchsatz‑Szenarien ausgelegt; achten Sie nur darauf, Thread‑Pools zu verwalten und jede `Watermarker`‑Instanz zeitnah zu schließen.
+**Q: What are common pitfalls when listing recipients?**  
+A: Incorrect file paths, unsupported file types, or forgetting to close the `Watermarker` instance can cause resource leaks.
 
-**F: Funktioniert die Bibliothek in Linux‑Containern?**  
-A: Sie ist vollständig plattformübergreifend; dieselbe Maven‑Abhängigkeit läuft unter Windows, macOS und Linux‑Docker‑Images.
+**Q: How can I improve performance when parsing many emails?**  
+A: Process files in parallel using Java’s `ExecutorService`, but monitor CPU and memory usage to avoid overload.
 
-**F: Wo finde ich weiterführende Beispiele?**  
-A: Die offizielle Dokumentation und API‑Referenz enthalten tiefere Anwendungsfälle, z. B. das Wasserzeichen von Anhängen oder das Extrahieren eingebetteter Bilder.
+**Q: Where can I get help if I encounter problems?**  
+A: Visit the [GroupDocs Free Support Forum](https://forum.groupdocs.com/c/watermark/10) for community assistance and official support.
 
-## Weitere Ressourcen
-- **Dokumentation:** [GroupDocs Watermark Java Docs](https://docs.groupdocs.com/watermark/java/)  
-- **API‑Referenz:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
-- **GroupDocs.Watermark API:** [GroupDocs.Watermark API](https://docs.groupdocs.com/watermark/java/)  
-- **Downloads:** [GroupDocs Watermark Releases](https://releases.groupdocs.com/watermark/java)  
-- **Support‑Forum:** [GroupDocs Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
+## Additional Resources
+
+- **Documentation:** [GroupDocs Watermark Java Docs](https://docs.groupdocs.com/watermark/java/)  
+- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Download:** [GroupDocs Watermark Releases](https://releases.groupdocs.com/watermark/java)  
+
+## Conclusion
+
+You’ve now learned how to **list email recipients java** efficiently using GroupDocs.Watermark for Java. This powerful tool can streamline your email management processes and open up new possibilities for data analysis and automation.
+
+**Next Steps**
+
+- Explore more features in the [GroupDocs.Watermark API](https://docs.groupdocs.com/watermark/java/).  
+- Integrate these snippets into larger projects or batch‑processing pipelines.  
+- Experiment with different configurations to suit your specific needs.
 
 ---
 
-**Zuletzt aktualisiert:** 2026-06-16  
-**Getestet mit:** GroupDocs.Watermark Java 24.11  
-**Autor:** GroupDocs
+**Last Updated:** 2026-01-03  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  
 
-## Verwandte Tutorials
-
-- [Email Document Watermarking in Java: Master Management with GroupDocs.Watermark](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-management/)
-- [How to Extract PDF Attachments Using GroupDocs Watermark in Java for Email Document Management](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)
-- [Efficiently Remove Email Attachments Using GroupDocs.Watermark in Java](/watermark/java/email-document-watermarking/remove-email-attachments-groupdocs-watermark-java/)
+---

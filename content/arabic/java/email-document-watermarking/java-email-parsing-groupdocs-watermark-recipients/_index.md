@@ -1,102 +1,65 @@
 ---
-date: '2026-06-16'
-description: تعلم كيفية تحليل ملف MSG باستخدام Java وتحديدًا كيفية سرد المستلمين في
-  الحقول To, CC, و BCC تلقائيًا باستخدام GroupDocs.Watermark for Java. يوضح هذا الدرس
-  كيفية تحليل البريد الإلكتروني بكفاءة.
+date: '2026-01-03'
+description: تعلم كيفية سرد مستلمي البريد الإلكتروني في جافا باستخدام GroupDocs.Watermark
+  – أتمتة استخراج الحقول إلى (To) ونسخة (CC) ونسخة مخفية (BCC) من مستندات البريد الإلكتروني.
 keywords:
-- java parse msg file
-- how to parse email
-- how to read msg
-- retrieve email recipients
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-16'
-  description: Learn how to java parse msg file and automatically list To, CC, and
-    BCC recipients using GroupDocs.Watermark for Java. This tutorial shows how to
-    parse email efficiently.
-  headline: 'Java Parse MSG File: List Recipients with GroupDocs.Watermark'
-  type: TechArticle
-- description: Learn how to java parse msg file and automatically list To, CC, and
-    BCC recipients using GroupDocs.Watermark for Java. This tutorial shows how to
-    parse email efficiently.
-  name: 'Java Parse MSG File: List Recipients with GroupDocs.Watermark'
-  steps:
-  - name: Add the Maven Dependency
-    text: Add the GroupDocs.Watermark Maven coordinates to your `pom.xml`. This brings
-      in all required JARs automatically. Alternatively, download the latest version
-      from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
-  - name: Import Required Classes
-    text: The `Watermarker` class loads an email document, while `EmailContent` provides
-      access to its metadata such as recipients.
-  - name: Define the Email Path and Load Options
-    text: '`LoadOptions` configures how the file is opened, allowing settings like
-      password protection.'
-  - name: Open the Document with Resource Management
-    text: Using try‑with‑resources ensures the `Watermarker` instance is automatically
-      closed.
-  - name: Retrieve Direct (To) Recipients
-    text: The `EmailContent.getTo()` method returns a list of primary recipient objects.
-  - name: List CC Recipients
-    text: The `EmailContent.getCc()` method returns a list of carbon‑copy recipient
-      objects.
-  - name: List BCC Recipients
-    text: The `EmailContent.getBcc()` method returns a list of blind‑carbon‑copy recipient
-      objects.
-  - name: Clean Up
-    text: '`watermarker.close()` releases native resources and file handles.'
-  type: HowTo
-- questions:
-  - answer: Use `LoadOptions.setPassword("yourPassword")` before opening the document;
-      the API will decrypt the content automatically.
-    question: How do I handle encrypted .msg files?
-  - answer: Yes—`EmailContent.getBody()` returns the plain‑text or HTML body, which
-      you can combine with recipient data for full‑message exports.
-    question: Can I extract the email body together with recipients?
-  - answer: Absolutely. GroupDocs.Watermark is designed for high‑throughput scenarios;
-      just ensure you manage thread pools and close each `Watermarker` instance promptly.
-    question: Is it possible to process thousands of emails in one run?
-  - answer: It is fully cross‑platform; the same Maven dependency runs on Windows,
-      macOS, and Linux Docker images.
-    question: Does the library work on Linux containers?
-  - answer: The official documentation and API reference contain deeper use‑cases,
-      such as watermarking attachments or extracting embedded images.
-    question: Where can I find more advanced examples?
-  type: FAQPage
-title: 'Java تحليل ملف MSG: سرد المستلمين باستخدام GroupDocs.Watermark'
+- Java email parsing
+- GroupDocs.Watermark Java
+- listing email recipients
+title: قائمة مستلمي البريد الإلكتروني في جافا باستخدام GroupDocs.Watermark
 type: docs
 url: /ar/java/email-document-watermarking/java-email-parsing-groupdocs-watermark-recipients/
 weight: 1
 ---
 
-# تحليل ملف MSG باستخدام Java: سرد المستلمين مع GroupDocs.Watermark
+# قائمة مستلمي البريد الإلكتروني Java مع GroupDocs.Watermark
 
-استخراج كل عناوين To و CC و BCC من بريد إلكتروني بامتداد `.msg` يمكن أن يكون مرهقًا عندما يكون لديك مئات الملفات. **Java parse msg file** يتيح لك أتمتة هذه الخطوة، مما يلغي النسخ واللصق اليدوي ويقلل من الأخطاء البشرية. في هذا الدرس ستتعلم كيفية إعداد GroupDocs.Watermark للغة Java، تحميل مستند بريد إلكتروني، واسترجاع جميع قوائم المستلمين بسرعة وموثوقية.
+استخراج كل عنوان **To** و **CC** و **BCC** من ملف بريد إلكتروني قد يكون مرهقًا عندما تتعامل مع العشرات أو المئات من الرسائل. في هذا الدرس ستتعلم كيفية **list email recipients java** بسرعة وبشكل موثوق باستخدام مكتبة GroupDocs.Watermark للـ Java. سنستعرض الإعداد، ومراجعات الكود، وحالات الاستخدام الواقعية حتى تتمكن من دمج هذه القدرة في تطبيقاتك الخاصة.
 
 ## إجابات سريعة
-- **ما الذي يغطيه هذا الدرس؟** تحميل ملف .msg باستخدام GroupDocs.Watermark واستخراج عناوين To و CC و BCC.  
-- **ما المكتبة المطلوبة؟** GroupDocs.Watermark for Java (v24.11 أو أحدث).  
-- **هل أحتاج إلى ترخيص؟** النسخة التجريبية المجانية تعمل للاختبار؛ يلزم ترخيص مدفوع للإنتاج.  
-- **هل يمكنني تحليل صيغ أخرى؟** نعم – نفس API يدعم أيضًا .eml وأنواع بريد إلكتروني أخرى.  
-- **ما نسخة Java المدعومة؟** JDK 8 أو أحدث.
+- **ما الذي يفعله هذا الكود؟** يفتح ملف بريد إلكتروني ويطبع جميع عناوين To و CC و BCC.  
+- **ما المكتبة المطلوبة؟** GroupDocs.Watermark for Java (الإصدار 24.11).  
+- **هل يمكنه قراءة ملفات .msg و .eml؟** نعم – الـ API يدعم صيغ البريد الشائعة.  
+- **هل أحتاج إلى ترخيص؟** النسخة التجريبية المجانية تكفي للاختبار؛ الترخيص الكامل مطلوب للإنتاج.  
+- **هل المعالجة الدفعية ممكنة؟** بالتأكيد – يمكنك تكرار العملية على ملفات متعددة باستخدام نفس النمط.
 
-## ما هو java parse msg file؟
-تشير العبارة **java parse msg file** إلى استخدام كود Java لقراءة ملفات Microsoft Outlook `.msg` واستخراج بياناتها المهيكلة. تتيح هذه العملية للمطورين الوصول برمجياً إلى بيانات تعريف البريد الإلكتروني، محتوى النص، وقوائم المستلمين دون فحص يدوي. كما تدعم المعالجة الدفعية، التعامل مع أحرف Unicode، والحفاظ على بيانات المرفقات، مما يجعلها مناسبة لتحليلات البريد الإلكتروني على نطاق المؤسسات.
+## المقدمة
 
-## لماذا نستخدم GroupDocs.Watermark لتحليل البريد الإلكتروني؟
-يقوم GroupDocs.Watermark بمعالجة **أكثر من 200 صيغة بريد إلكتروني** ويمكنه التعامل مع ملفات تصل إلى **500 ميغابايت** دون تحميل المستند بالكامل في الذاكرة، محققًا استخراجًا أسرع حتى **3×** مقارنةً بأساليب القراءة العامة للملفات. واجهة برمجة التطبيقات `EmailContent` المخصصة تُجرد بنية .msg المعقدة، مما يمنحك وصولًا موثوقًا إلى حقول To و CC و BCC في بضع أسطر من Java فقط.
+هل سئمت من فرز بيانات البريد يدويًا لاستخراج قوائم المستلمين؟ أتمتة هذه المهمة يمكن أن توفر الوقت وتقلل الأخطاء، خاصةً عند التعامل مع كميات كبيرة من الرسائل. سيُظهر لك هذا الدليل كيفية الاستفادة من مكتبة GroupDocs.Watermark القوية للـ Java لتحليل مستندات البريد الإلكتروني و**list email recipients java** بفعالية.
+
+**ما ستتعلمه**
+- إعداد بيئتك لاستخدام GroupDocs.Watermark للـ Java  
+- تحميل وتهيئة مستند بريد إلكتروني باستخدام API الخاص بـ GroupDocs.Watermark  
+- استرجاع قوائم المستلمين To و CC و BCC من مستندات البريد  
+- تطبيقات عملية واعتبارات الأداء  
+
+لنبدأ بتغطية المتطلبات المسبقة.
 
 ## المتطلبات المسبقة
-- **Java Development Kit (JDK):** 8 أو أعلى.  
-- **IDE:** IntelliJ IDEA، Eclipse، أو أي محرر يدعم Java.  
-- **Build Tool:** Maven (مُفضَّل) أو تضمين JAR يدوي.  
-- **GroupDocs.Watermark for Java:** الإصدار 24.11 (أو أحدث).  
-- **معرفة أساسية بـ Java** وإلمام بصيغ ملفات البريد الإلكتروني.
 
-## كيفية java parse msg file وإدراج المستلمين؟
-حمّل ملف .msg باستخدام الفئة `Watermarker`، احصل على كائن `EmailContent`، وتكرّر عبر مجموعات المستلمين الخاصة به. يشرح هذا الفقرة المباشرة الخطوات الأساسية في أقل من 70 كلمة: **إنشاء كائن `Watermarker` باستخدام مسار الملف، استدعاء `getEmailContent()` للوصول إلى مجموعات المستلمين، ثم التكرار عبر `getTo()` و `getCc()` و `getBcc()` لطباعة كل عنوان.** تتعامل الواجهة البرمجية مع جميع عمليات التحليل داخليًا، لذا لن تحتاج أبدًا إلى تحليل بنية MIME الخام بنفسك.
+قبل الغوص في الكود، تأكد من جاهزية بيئتك:
 
-### الخطوة 1: إضافة تبعية Maven
-أضف إحداثيات Maven الخاصة بـ GroupDocs.Watermark إلى ملف `pom.xml`. سيؤدي ذلك إلى جلب جميع ملفات JAR المطلوبة تلقائيًا.
+### المكتبات المطلوبة، الإصدارات، والاعتمادات
+
+ستحتاج إلى تثبيت GroupDocs.Watermark للـ Java. يستخدم هذا الدليل الإصدار 24.11.
+
+### متطلبات إعداد البيئة
+
+- **مجموعة تطوير جافا (JDK):** الإصدار 8 أو أعلى  
+- **بيئة التطوير المتكاملة (IDE):** يفضَّل IntelliJ IDEA أو Eclipse  
+- **إدارة الاعتمادات:** Maven أو إعداد التحميل المباشر  
+
+### المتطلبات المعرفية
+
+فهم أساسي لبرمجة Java ومعرفة بصيغ البريد (مثل ملفات .msg) سيكون مفيدًا.
+
+## إعداد GroupDocs.Watermark للـ Java
+
+للبدء، ستحتاج إلى إعداد مشروعك بالاعتمادات اللازمة. إليك الطريقة:
+
+**إعداد Maven**
+
+أضف التكوين التالي إلى ملف `pom.xml` لتضمين GroupDocs.Watermark:
 
 ```xml
 <repositories>
@@ -116,114 +79,149 @@ weight: 1
 </dependencies>
 ```
 
-بدلاً من ذلك، قم بتنزيل أحدث نسخة من [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+**التحميل المباشر**
 
-### الخطوة 2: استيراد الفئات المطلوبة
-الفئة `Watermarker` تقوم بتحميل مستند بريد إلكتروني، بينما توفر `EmailContent` الوصول إلى بيانات التعريف الخاصة به مثل المستلمين.
+بدلاً من ذلك، قم بتحميل أحدث نسخة من [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-```java
+### خطوات الحصول على الترخيص
+
+- **نسخة تجريبية مجانية:** ابدأ بنسخة تجريبية لاستكشاف الوظائف.  
+- **ترخيص مؤقت:** قدِّم طلبًا للحصول على ترخيص مؤقت إذا كنت تحتاج وصولًا ممتدًا للاختبار.  
+- **شراء:** فكر في شراء ترخيص للاستخدام في الإنتاج.
+
+بمجرد أن يصبح إعدادك جاهزًا، دعنا نهيئ البيئة لمعالجة مستندات البريد الإلكتروني.
+
+## كيفية قائمة مستلمي البريد الإلكتروني Java – دليل التنفيذ
+
+هذه القسم يشرح كل ميزة خطوة بخطوة لتتمكن من تنفيذ تحليل البريد الإلكتروني بفعالية باستخدام GroupDocs.Watermark.
+
+### تحميل وتهيئة مستند البريد الإلكتروني
+
+**نظرة عامة**  
+تحميل مستند البريد هو الخطوة الأولى في رحلتنا. تتضمن هذه العملية تهيئة كائن `Watermarker`، الذي يُعد بوابتنا للتفاعل مع ملفات البريد.
+
+**خطوات التنفيذ**
+
+1. **استيراد الفئات المطلوبة**  
+   ```java
    import com.groupdocs.watermark.Watermarker;
    import com.groupdocs.watermark.options.EmailLoadOptions;
    ```
-
-### الخطوة 3: تحديد مسار البريد الإلكتروني وخيارات التحميل
-`LoadOptions` يحدد كيفية فتح الملف، مما يسمح بإعدادات مثل حماية كلمة المرور.
-
-```java
+2. **تحديد مسار ملف البريد وخيارات التحميل**  
+   حدد المسار إلى مستند البريد الخاص بك. استبدل `"YOUR_DOCUMENT_DIRECTORY/email.msg"` بالمسار الفعلي.  
+   ```java
    String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/email.msg";
    EmailLoadOptions loadOptions = new EmailLoadOptions();
    Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
    ```
-
-### الخطوة 4: فتح المستند مع إدارة الموارد
-استخدام try‑with‑resources يضمن إغلاق كائن `Watermarker` تلقائيًا.
-
-```java
+3. **إدارة الموارد**  
+   تذكر دائمًا إغلاق كائن `Watermarker` بعد الاستخدام لتحرير موارد النظام.  
+   ```java
    watermarker.close();
    ```
 
-### الخطوة 5: استرجاع المستلمين الرئيسيين (To)
-طريقة `EmailContent.getTo()` تُعيد قائمة بكائنات المستلمين الرئيسيين.
+### قائمة جميع المستلمين المباشرين للبريد الإلكتروني
 
-```java
+**نظرة عامة**  
+استرجاع المستلمين المباشرين (To) سهل بمجرد تهيئة مستند البريد.
+
+**خطوات التنفيذ**
+
+1. **استرجاع محتوى البريد**  
+   تأكد من أن كائن `watermarker` مهيأ كما هو موضح في القسم السابق.  
+   ```java
    import com.groupdocs.watermark.contents.EmailContent;
    
    EmailContent content = watermarker.getContent(EmailContent.class);
    ```
-
-### الخطوة 6: سرد مستلمي CC
-طريقة `EmailContent.getCc()` تُعيد قائمة بكائنات مستلمي النسخة الكربونية.
-
-```java
+2. **التكرار وقائمة المستلمين**  
+   تكرار قائمة المستلمين المباشرين وطباعة كل عنوان بريد إلكتروني.  
+   ```java
    for (EmailAddress address : content.getTo()) {
        System.out.println("Direct Recipient: " + address.getEmailAddress());
    }
    ```
 
-### الخطوة 7: سرد مستلمي BCC
-طريقة `EmailContent.getBcc()` تُعيد قائمة بكائنات مستلمي النسخة الكربونية المخفية.
+### قائمة جميع مستلمي النسخة الكربونية (CC) للبريد الإلكتروني
 
-```java
+**نظرة عامة**  
+قائمة مستلمي الـ CC تتبع عملية مشابهة لقائمة المستلمين المباشرين، مما يتيح لك الوصول إلى عناوين البريد الإضافية الموجودة في حقل CC.
+
+**خطوات التنفيذ**
+
+1. **الاسترجاع والتكرار**  
+   استخدم كائن `EmailContent` من الخطوة السابقة:  
+   ```java
    for (EmailAddress address : content.getCc()) {
        System.out.println("CC Recipient: " + address.getEmailAddress());
    }
    ```
 
-### الخطوة 8: تنظيف الموارد
-`watermarker.close()` يحرر الموارد الأصلية ومقابض الملفات.
+### قائمة جميع مستلمي النسخة الكربونية المخفية (BCC) للبريد الإلكتروني
 
-```java
+**نظرة عامة**  
+على الرغم من أن مستلمي الـ BCC غير مرئيين في رأس البريد، يمكنك still استرجاعهم باستخدام GroupDocs.Watermark.
+
+**خطوات التنفيذ**
+
+1. **الوصول وعرض عناوين BCC**  
+   ```java
    for (EmailAddress address : content.getBcc()) {
        System.out.println("BCC Recipient: " + address.getEmailAddress());
    }
    ```
 
-## التطبيقات العملية
-- **أنظمة إدارة البريد الإلكتروني:** تصنيف البريد الوارد تلقائيًا عبر استخراج مجموعات المستلمين.  
-- **التدقيق والامتثال:** إنشاء تقارير بجميع مستلمي BCC للكشف عن تسريبات محتملة للبيانات.  
-- **إدارة علاقات العملاء (CRM):** مزامنة قوائم To/CC مع قواعد بيانات الاتصالات لاستهداف أفضل.  
-- **المراقبة الأمنية:** فحص أرشيفات البريد الكبيرة للعثور على مستلمين خارجيين غير متوقعين.
+## تطبيقات عملية
+
+يمكن دمج هذه الميزات في أنظمة مختلفة، مثل:
+
+- **أنظمة إدارة البريد الإلكتروني:** أتمتة تصنيف ومعالجة الرسائل بناءً على قوائم المستلمين.  
+- **أدوات تحليل البيانات:** استخراج بيانات المستلمين للتحليلات لتحديد أنماط التواصل داخل المؤسسة.  
+- **برمجيات الأمان:** مراقبة حركة البريد لاكتشاف مشاركة غير مصرح بها أو تسريبات.  
 
 ## اعتبارات الأداء
-- **المعالجة الدفعية:** معالجة الرسائل عبر تدفقات متوازية (مثل `java.util.concurrent.ForkJoinPool`) لتعظيم استغلال المعالج مع احترام حدود الذاكرة.  
-- **استهلاك الذاكرة:** المكتبة تبث بيانات الملف؛ يمكنك بأمان تحليل ملفات تصل إلى **500 ميغابايت** دون حدوث أخطاء OOM.  
-- **تنظيف الموارد:** احرص دائمًا على إغلاق كائن `Watermarker`؛ عدم القيام بذلك قد يترك أقفال ملفات على أنظمة Windows.
 
-## المشكلات الشائعة والحلول
-- **مسار ملف غير صالح:** تأكد من أن المسار يستخدم الشرط المائل للأمام (`/`) أو الشرط المائل العكسي المُهَرَّب (`\\`) على نظام Windows.  
-- **صيغة غير مدعومة:** تأكد من أن الملف هو Outlook `.msg` أو `.eml` أصلي؛ الصيغ الأخرى تتطلب محملات مختلفة.  
-- **انتهاء صلاحية الترخيص:** الترخيص التجريبي ينتهي بعد 30 يومًا؛ استبدله بمفتاح إنتاج لتجنب `LicenseException`.  
+عند التعامل مع كميات كبيرة من الرسائل، ضع في اعتبارك النصائح التالية:
+
+- **تحسين استخدام الموارد:** أغلق كائن `Watermarker` فور الانتهاء.  
+- **إدارة الذاكرة:** كن واعيًا لجمع القمامة في جافا واستهلاك الذاكرة عند معالجة ملفات متعددة.  
+- **المعالجة الدفعية:** عالج الرسائل على دفعات لتقليل الحمل على موارد النظام.  
 
 ## الأسئلة المتكررة
-**س: كيف أتعامل مع ملفات .msg المشفرة؟**  
-ج: استخدم `LoadOptions.setPassword("yourPassword")` قبل فتح المستند؛ ستقوم الواجهة البرمجية بفك تشفير المحتوى تلقائيًا.
 
-**س: هل يمكن استخراج نص البريد مع المستلمين؟**  
-ج: نعم—`EmailContent.getBody()` يُعيد النص العادي أو HTML، ويمكنك دمجه مع بيانات المستلمين لتصدير الرسالة بالكامل.
+**س: كيف أتعامل مع الأخطاء أثناء تحليل البريد الإلكتروني؟**  
+**ج:** تأكد من صحة مسارات الملفات، وأن الملفات تتوافق مع الصيغ المتوقعة، واستخدم كتل try‑catch لالتقاط `IOException` أو `GroupDocsException`.
 
-**س: هل يمكن معالجة آلاف الرسائل في تشغيل واحد؟**  
-ج: بالتأكيد. تم تصميم GroupDocs.Watermark لسيناريوهات عالية الإنتاجية؛ فقط احرص على إدارة مجموعات الخيوط وإغلاق كل كائن `Watermarker` بسرعة.
+**س: هل يمكنني استخدام هذه المكتبة مع صيغ بريد أخرى مثل .eml؟**  
+**ج:** نعم، يدعم GroupDocs.Watermark صيغ بريد متعددة. راجع الوثائق للحصول على خيارات التحميل الخاصة بكل صيغة.
 
-**س: هل تعمل المكتبة داخل حاويات Linux؟**  
-ج: نعم، هي متوافقة تمامًا مع الأنظمة؛ تبعية Maven نفسها تعمل على Windows و macOS وصور Docker على Linux.
+**س: ما هي الأخطاء الشائعة عند سرد المستلمين؟**  
+**ج:** مسارات ملفات غير صحيحة، صيغ ملفات غير مدعومة، أو نسيان إغلاق كائن `Watermarker` قد يسبب تسرب الموارد.
 
-**س: أين يمكنني العثور على أمثلة متقدمة؟**  
-ج: الوثائق الرسمية ومرجع API يحتويان على حالات استخدام أعمق، مثل وضع علامة مائية على المرفقات أو استخراج الصور المدمجة.
+**س: كيف يمكن تحسين الأداء عند تحليل عدد كبير من الرسائل؟**  
+**ج:** عالج الملفات بشكل متوازي باستخدام `ExecutorService` في جافا، لكن راقب استهلاك المعالج والذاكرة لتجنب التحميل الزائد.
+
+**س: أين يمكنني الحصول على مساعدة إذا واجهت مشاكل؟**  
+**ج:** زر [GroupDocs Free Support Forum](https://forum.groupdocs.com/c/watermark/10) للحصول على مساعدة المجتمع والدعم الرسمي.
 
 ## موارد إضافية
+
 - **الوثائق:** [GroupDocs Watermark Java Docs](https://docs.groupdocs.com/watermark/java/)  
 - **مرجع API:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
-- **API GroupDocs.Watermark:** [GroupDocs.Watermark API](https://docs.groupdocs.com/watermark/java/)  
-- **التنزيلات:** [GroupDocs Watermark Releases](https://releases.groupdocs.com/watermark/java)  
-- **منتدى الدعم:** [GroupDocs Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
+- **التحميل:** [GroupDocs Watermark Releases](https://releases.groupdocs.com/watermark/java)  
+
+## الخلاصة
+
+لقد تعلمت الآن كيفية **list email recipients java** بفعالية باستخدام GroupDocs.Watermark للـ Java. هذه الأداة القوية يمكن أن تُبسّط عمليات إدارة البريد وتفتح آفاقًا جديدة لتحليل البيانات والأتمتة.
+
+**الخطوات التالية**
+
+- استكشف مزيدًا من الميزات في [GroupDocs.Watermark API](https://docs.groupdocs.com/watermark/java/).  
+- دمج هذه المقاطع في مشاريع أكبر أو خطوط معالجة دفعية.  
+- جرب إعدادات مختلفة لتناسب احتياجاتك الخاصة.
 
 ---
 
-**آخر تحديث:** 2026-06-16  
-**تم الاختبار مع:** GroupDocs.Watermark Java 24.11  
+**آخر تحديث:** 2026-01-03  
+**تم الاختبار مع:** GroupDocs.Watermark 24.11 للـ Java  
 **المؤلف:** GroupDocs
-
-## دروس ذات صلة
-- [وضع علامة مائية على مستند البريد الإلكتروني في Java: إدارة متقدمة مع GroupDocs.Watermark](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-management/)  
-- [كيفية استخراج مرفقات PDF باستخدام GroupDocs Watermark في Java لإدارة مستندات البريد الإلكتروني](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)  
-- [إزالة مرفقات البريد الإلكتروني بفعالية باستخدام GroupDocs.Watermark في Java](/watermark/java/email-document-watermarking/remove-email-attachments-groupdocs-watermark-java/)

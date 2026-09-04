@@ -1,115 +1,61 @@
 ---
-date: '2026-06-16'
-description: Aprenda a aplicar marca d'água em documentos de e‑mail usando GroupDocs.Watermark
-  for Java. Este tutorial step‑by‑step cobre a configuração, a adição de marca d'água
-  ao e‑mail e as melhores práticas.
+date: '2026-01-03'
+description: Aprenda como adicionar marca d'água de e‑mail em Java com o GroupDocs.Watermark,
+  abordando técnicas de incorporação de imagem em e‑mail Java e leitura de bytes de
+  imagem Java para documentos de e‑mail seguros.
 keywords:
-- how to watermark email
-- add watermark to email
-- GroupDocs Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-16'
-  description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  headline: How to Watermark Email with GroupDocs.Watermark for Java – A Complete
-    Guide
-  type: TechArticle
-- description: Learn how to watermark email documents using GroupDocs.Watermark for
-    Java. This step‑by‑step tutorial covers setup, adding watermark to email, and
-    best practices.
-  name: How to Watermark Email with GroupDocs.Watermark for Java – A Complete Guide
-  steps:
-  - name: '**Import Necessary Classes:**'
-    text: '**Import Necessary Classes:**'
-  - name: '**Initialize Email Load Options and Watermarker:**'
-    text: '**Initialize Email Load Options and Watermarker:**'
-  - name: '**Import Required Packages:**'
-    text: '**Import Required Packages:**'
-  - name: '**Read Image File and Convert to Byte Array:**'
-    text: '**Read Image File and Convert to Byte Array:**'
-  - name: '**Import Classes for Handling Email Contents:**'
-    text: '**Import Classes for Handling Email Contents:**'
-  - name: '**Add Embedded Image to the Email:**'
-    text: '**Add Embedded Image to the Email:**'
-  - name: '**Save and Close Watermarker:**'
-    text: '**Save and Close Watermarker:**'
-  - name: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-    text: '**Internal Document Security** – Prevent accidental data leaks by branding
-      every internal memo with a confidential watermark.'
-  - name: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-    text: '**Email Marketing** – Reinforce brand identity by automatically adding
-      your logo to every campaign email.'
-  - name: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-    text: '**Legal Correspondence** – Attach a “Confidential – Attorney‑Client Privilege”
-      watermark to legal emails to satisfy compliance audits.'
-  type: HowTo
-- questions:
-  - answer: GroupDocs.Watermark only modifies the HTML body; plain‑text parts remain
-      unchanged, which is standard practice for email branding.
-    question: Can I watermark both HTML and plain‑text parts of an email?
-  - answer: Yes, because the watermark becomes part of the email’s HTML content, it
-      is retained in all subsequent forwards.
-    question: Does the watermark survive when the email is forwarded?
-  - answer: You can save as EML, MSG, or MHT. The API also supports PDF conversion
-      if you need a printable version.
-    question: What file formats can I export the watermarked email to?
-  - answer: A free trial license works for development and testing. Production deployments
-      require a purchased license to remove evaluation watermarks.
-    question: Is a license required for development environments?
-  - answer: Attachments are streamed unchanged; only the email body is processed,
-      so attachment size does not affect watermarking performance.
-    question: How does GroupDocs.Watermark handle large attachments?
-  type: FAQPage
-title: Como aplicar marca d'água em e‑mail com GroupDocs.Watermark for Java – Um guia
-  completo
+- Java Email Watermarking
+- GroupDocs Watermark for Java
+- Email Document Watermarking
+title: Adicionar marca d'água em e‑mail Java usando GroupDocs.Watermark
 type: docs
 url: /pt/java/email-document-watermarking/java-email-watermarking-groupdocs-guide/
 weight: 1
 ---
 
-# Como Marcar Email com GroupDocs.Watermark para Java – Um Guia Completo
+# Como adicionar marca d'água em email java com GroupDocs.Watermark: Um Guia Passo a Passo
 
 ## Introdução
 
-Se você precisa proteger a integridade das suas comunicações por email, **como marcar email** é uma capacidade crítica. Adicionar um identificador visual diretamente dentro do email impede o encaminhamento não autorizado e a adulteração, mantendo a mensagem original legível. Neste tutorial você aprenderá como integrar o GroupDocs.Watermark para Java em sua aplicação, carregar um arquivo de email, incorporar uma imagem como marca d'água e salvar a mensagem marcada — tudo sem alterar a estrutura original do email.
+Você está procurando **adicionar marca d'água em email java** para proteger seus documentos de email sem afetar sua integridade? Descubra como integrar a marca d'água de forma fluida em seus fluxos de trabalho de email usando o GroupDocs.Watermark para Java. Este tutorial orientará você na carga de um documento de email, leitura de arquivos de imagem, incorporação de imagens como marcas d'água e salvamento eficiente do documento modificado.
 
-**O que você dominará:**
-- Instalar e configurar o GroupDocs.Watermark para Java.  
-- Carregar um documento de email (EML, MSG ou MHT) na API.  
-- Converter uma imagem em um array de bytes e incorporá‑la como marca d'água.  
-- Salvar o email modificado preservando anexos e conteúdo HTML.  
+**O que você aprenderá:**
+- Configuração e uso do GroupDocs.Watermark para Java.  
+- Carregar um documento de email na sua aplicação.  
+- Ler e incorporar imagens em emails.  
+- Salvar documentos de email com marca d'água de forma eficiente.
 
-Ao final, você será capaz de **adicionar marca d'água a arquivos de email** programaticamente, tornando suas comunicações externas marcadas de forma segura.
+### Respostas Rápidas
+- **Biblioteca principal?** GroupDocs.Watermark para Java  
+- **Objetivo principal?** Adicionar marca d'água em email java a arquivos MSG/EML  
+- **Etapas chave?** Carregar email → ler bytes da imagem → incorporar imagem → salvar  
+- **Licença necessária?** Sim, uma licença válida do GroupDocs para produção  
+- **Formatos suportados?** MSG, EML e outros tipos de email
 
-## Respostas Rápidas
-- **Qual biblioteca é necessária?** GroupDocs.Watermark para Java (v24.11+).  
-- **Quais formatos de email são suportados?** Arquivos EML, MSG e MHT – mais de 30 + formatos no total.  
-- **Posso usar marcas d'água PNG?** Sim, PNG e JPEG são totalmente suportados.  
-- **Preciso de licença para desenvolvimento?** Uma avaliação gratuita funciona para testes; uma licença de produção é necessária para uso comercial.  
-- **Quanto memória extra o processo de marca d'água consome?** Normalmente menos de 15 MB para um email de 5 MB ao usar imagens comprimidas.
+## O que é adicionar marca d'água em email java?
 
-## O que é Marcação de Email?
-A marca d'água em email é o processo de incorporar um elemento visual — como um logotipo ou aviso — diretamente no corpo de um arquivo de email. A marca d'água torna‑se parte do conteúdo HTML, garantindo que os destinatários vejam a marca independentemente do cliente de email que utilizem.
+Adicionar uma marca d'água em email em Java significa inserir programaticamente um identificador visual — como um logotipo ou aviso — no corpo ou nos anexos de um arquivo de email. Isso ajuda a proteger informações confidenciais, reforçar a identidade da marca e verificar a autenticidade do documento.
 
-## Por que Usar GroupDocs.Watermark para Java?
-O GroupDocs.Watermark suporta **mais de 50 formatos de entrada e saída**, incluindo EML, MSG e MHT, e pode processar emails de até **200 MB** sem carregar o arquivo inteiro na memória. Sua API oferece operações thread‑safe, permitindo marcar centenas de emails por minuto em um servidor padrão de 4 núcleos.
+## Por que usar o GroupDocs.Watermark para Java?
+
+O GroupDocs.Watermark fornece uma API de alto nível que abstrai as complexidades dos diferentes formatos de email. Ele permite que você se concentre na lógica de negócios enquanto lida com estruturas MIME, objetos incorporados e renderização de imagens nos bastidores.
 
 ## Pré‑requisitos
 
-- **Java Development Kit (JDK) 8+** instalado e configurado em sua IDE.  
-- **Maven** ou outra ferramenta de build para gerenciar dependências.  
-- Acesso a uma pasta onde você possa ler os emails de origem e gravar os resultados com marca d'água.  
-- Conhecimento básico de Java (I/O de arquivos, streams e conceitos orientados a objetos).  
+- **Bibliotecas e Dependências Necessárias**
+  - GroupDocs.Watermark para Java (versão 24.11 ou posterior).  
+  - Uma IDE como IntelliJ IDEA ou Eclipse que suporte projetos Maven.
+- **Requisitos de Configuração do Ambiente**
+  - JDK 8 ou mais recente instalado.  
+  - Acesso a um diretório para armazenar arquivos de entrada e saída.
+- **Conhecimentos Prévios**
+  - Programação básica em Java.  
+  - Familiaridade com manipulação de arquivos e Maven.
 
-## Configurando GroupDocs.Watermark para Java
+## Configurando o GroupDocs.Watermark para Java
 
 ### Usando Maven
-Adicione a seguinte dependência ao seu arquivo `pom.xml`:
+Adicione a seguinte configuração ao seu arquivo `pom.xml`:
 
 ```xml
 <repositories>
@@ -130,18 +76,14 @@ Adicione a seguinte dependência ao seu arquivo `pom.xml`:
 ```
 
 ### Download Direto
-Alternativamente, faça download do JAR mais recente na página oficial de lançamentos:  
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternativamente, faça o download da versão mais recente diretamente em [Lançamentos do GroupDocs.Watermark para Java](https://releases.groupdocs.com/watermark/java/).
 
 #### Etapas de Aquisição de Licença
-- **Teste Gratuito:** Baixe uma licença de avaliação para explorar a API.  
-- **Licença Temporária:** Para avaliação prolongada, solicite uma chave temporária via portal de compra: [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license).  
-- **Licença Completa:** Compre uma licença de produção para implantação ilimitada.
+- **Teste Gratuito:** Comece baixando uma avaliação gratuita para explorar as funcionalidades do GroupDocs.Watermark.  
+- **Licença Temporária:** Para avaliação prolongada, adquira uma licença temporária através da [página de compra do GroupDocs](https://purchase.groupdocs.com/temporary-license).  
+- **Compra:** Considere adquirir uma licença completa para ambientes de produção.
 
-### Inicialização e Configuração Básicas
-`Watermarker` é a classe principal que gerencia o carregamento, edição e salvamento de documentos.  
-`EmailLoadOptions` configura como um arquivo de email é interpretado ao ser carregado.  
-
+### Inicialização Básica e Configuração
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -150,162 +92,129 @@ String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
 Watermarker watermarker = new Watermarker(emailFilePath);
 ```
 
-## Guia de Implementação
+## Como adicionar marca d'água em email java
 
-### Carregar Documento de Email
+A seguir, um guia completo, passo a passo, que mostra **como adicionar marca d'água em email java** usando a API.
 
-#### Visão Geral
-Carregar o email é o primeiro passo antes de aplicar qualquer marca d'água. O GroupDocs.Watermark abstrai o formato do arquivo, permitindo que você trabalhe com um objeto `Watermarker` unificado.
-
-#### Resposta Direta
-Crie uma instância de `Watermarker` com `EmailLoadOptions`, aponte‑a para seu arquivo `.eml` ou `.msg`, e a API analisará o corpo HTML, anexos e metadados — tudo em uma única chamada. Essa operação normalmente é concluída em menos de 200 ms para um email de 2 MB.
-
-#### Implementação Passo a Passo
-1. **Importar Classes Necessárias:**  
-   ```java
-   import com.groupdocs.watermark.Watermarker;
-   import com.groupdocs.watermark.options.EmailLoadOptions;
-   ```  
-
-2. **Inicializar Email Load Options e Watermarker:**  
-   ```java
-   EmailLoadOptions loadOptions = new EmailLoadOptions();
-   String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
-   Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
-   ```  
-
-#### Âncora de Definição
-`EmailLoadOptions` é uma classe de configuração que indica ao GroupDocs.Watermark como interpretar o arquivo de email de origem (por exemplo, se deve preservar imagens incorporadas).
-
-### Ler Arquivo de Imagem em Array de Bytes
+### Etapa 1: Carregar Documento de Email
 
 #### Visão Geral
-Para incorporar a marca d'água, a imagem deve ser fornecida como um array de bytes para que a API possa inseri‑la no HTML do email.
+Carregar um documento de email é sua primeira etapa na marcação d'água. O GroupDocs.Watermark permite carregar diversos formatos de forma fluida.
 
-#### Resposta Direta
-Leia o arquivo de imagem com um `FileInputStream`, converta o stream para um array de bytes usando `IOUtils.toByteArray` e mantenha o array na memória — isso permite que a marca d'água seja inserida sem gravar arquivos temporários no disco.
+#### Implementação
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.EmailLoadOptions;
+```
 
-#### Implementação Passo a Passo
-1. **Importar Pacotes Necessários:**  
-   ```java
-   import java.io.File;
-   import java.io.FileInputStream;
-   import java.io.InputStream;
-   ```  
+```java
+EmailLoadOptions loadOptions = new EmailLoadOptions();
+String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
+Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
+```
 
-2. **Ler Arquivo de Imagem e Converter para Array de Bytes:**  
-   ```java
-   File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
-   byte[] imageBytes = new byte[(int) imageFile.length()];
-   InputStream imageInputStream = new FileInputStream(imageFile);
-   imageInputStream.read(imageBytes);
-   imageInputStream.close();
-   ```  
+*Explicação:* `EmailLoadOptions` permite ajustar como o arquivo MSG/EML é analisado. Certifique‑se de que o caminho do arquivo aponta para um email válido.
 
-#### Âncora de Definição
-`FileInputStream` é uma classe padrão de I/O Java que lê bytes brutos de um arquivo no sistema de arquivos.
-
-### Adicionar Imagem Incorporada ao Email
+### Etapa 2: ler bytes da imagem java
 
 #### Visão Geral
-Incorporar a imagem como uma referência Content‑ID (CID) garante que a marca d'água apareça inline dentro do corpo HTML do email.
+Para incorporar uma imagem como marca d'água, primeiro você precisa ler o arquivo de imagem em um array de bytes. Esta é a etapa **ler bytes da imagem java**.
 
-#### Resposta Direta
-Gere um CID único, adicione os bytes da imagem ao `Watermarker` usando `addImageWatermark` e faça referência ao CID no corpo HTML. A API atualiza automaticamente as partes MIME para que o email permaneça compatível com RFC.
+#### Implementação
+```java
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+```
 
-#### Implementação Passo a Passo
-1. **Importar Classes para Manipulação de Conteúdo de Email:**  
-   ```java
-   import com.groupdocs.watermark.contents.EmailContent;
-   import com.groupdocs.watermark.contents.EmailEmbeddedObject;
-   ```  
+```java
+File imageFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.jpg");
+byte[] imageBytes = new byte[(int) imageFile.length()];
+InputStream imageInputStream = new FileInputStream(imageFile);
+imageInputStream.read(imageBytes);
+imageInputStream.close();
+```
 
-2. **Adicionar Imagem Incorporada ao Email:**  
-   ```java
-   EmailContent content = watermarker.getContent(EmailContent.class);
-   content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
-   
-   EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
-   content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
-   ```  
+*Explicação:* Converter a imagem para um array de bytes a torna compatível com a API `addEmbeddedObject`, independentemente do tamanho da imagem.
 
-#### Âncora de Definição
-`addImageWatermark` é um método de `Watermarker` que insere uma marca d'água de imagem na camada visual do documento.  
-`Content‑ID (CID)` é um cabeçalho MIME que permite que um cliente de email exiba recursos incorporados, como imagens, diretamente dentro do corpo da mensagem.
-
-### Salvar Documento de Email com Marca d'Água
+### Etapa 3: incorporar imagem email java
 
 #### Visão Geral
-Depois que a marca d'água for aplicada, você deve persistir as alterações em um novo arquivo.
+Agora você incorporará a imagem ao conteúdo do email. Esta é a operação **incorporar imagem email java** que cria uma referência Content‑ID (CID).
 
-#### Resposta Direta
-Chame `watermarker.save("output.eml", SaveOptions.create())` e depois `watermarker.close()` para liberar todos os manipuladores de arquivo e buffers de memória. O arquivo salvo retém os anexos e metadados originais enquanto exibe a nova marca d'água.
+#### Implementação
+```java
+import com.groupdocs.watermark.contents.EmailContent;
+import com.groupdocs.watermark.contents.EmailEmbeddedObject;
+```
 
-#### Implementação Passo a Passo
-1. **Salvar e Fechar Watermarker:**  
-   ```java
-   String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
-   watermarker.save(outputFilePath);
-   watermarker.close();
-   ```  
+```java
+EmailContent content = watermarker.getContent(EmailContent.class);
+content.getEmbeddedObjects().add(imageBytes, "sample.jpg");
 
-#### Âncora de Definição
-`SaveOptions` define o formato de saída e as configurações de compressão para o arquivo de email resultante.
+EmailEmbeddedObject embeddedObject = content.getEmbeddedObjects().get_Item(content.getEmbeddedObjects().getCount() - 1);
+content.setHtmlBody("<html><body>This is an embedded image: <img src=\"cid:" + embeddedObject.getContentId() + "\"></body></html>");
+```
+
+*Explicação:* O método `add` armazena a imagem como um objeto incorporado. O CID gerado é então usado no corpo HTML para exibir a marca d'água.
+
+### Etapa 4: Salvar Documento de Email com Marca d'Água
+
+#### Visão Geral
+Após incorporar sua marca d'água, persista as alterações em um novo arquivo.
+
+#### Implementação
+```java
+String outputFilePath = "YOUR_OUTPUT_DIRECTORY/message.msg";
+watermarker.save(outputFilePath);
+watermarker.close();
+```
+
+*Explicação:* `save` grava o email modificado no disco, enquanto `close` libera todos os recursos nativos.
 
 ## Aplicações Práticas
 
-1. **Segurança de Documentos Internos** – Evite vazamentos acidentais de dados marcando cada memorando interno com uma marca d'água confidencial.  
-2. **Marketing por Email** – Reforce a identidade da marca adicionando automaticamente seu logotipo a cada email de campanha.  
-3. **Correspondência Jurídica** – Anexe uma marca d'água “Confidencial – Privacidade Advogado‑Cliente” aos emails legais para atender auditorias de conformidade.  
+1. **Segurança de Documentos Internos:** Proteja comunicações corporativas sensíveis contra encaminhamento não autorizado.  
+2. **Campanhas de Email Marketing:** Marque cada email enviado com seu logotipo para reconhecimento consistente.  
+3. **Documentação Jurídica:** Adicione uma marca d'água à prova de adulteração em correspondências legais para garantir a integridade.
 
 ## Considerações de Desempenho
-- **Otimize o Tamanho das Imagens:** Use PNG‑8 ou JPEG‑2000 para manter o array de bytes abaixo de 100 KB sem perda de qualidade perceptível.  
-- **Gerenciamento de Recursos:** Sempre feche streams (`FileInputStream`, `watermarker`) em um bloco `finally` ou use try‑with‑resources para evitar vazamentos de memória.  
-- **Processamento em Lote:** Para marcação em massa, processe emails assincronamente com `CompletableFuture` do Java para maximizar a utilização da CPU.  
+- **Otimizar Tamanhos de Imagem:** Use arquivos PNG/JPEG compactados para manter o uso de memória baixo.  
+- **Gerenciamento de Recursos:** Sempre feche streams (`close()`) para evitar vazamentos de memória.  
+- **Processamento Assíncrono:** Para operações em massa, processe emails em threads de fundo ou use `CompletableFuture` do Java para melhorar o throughput.
 
 ## Problemas Comuns e Soluções
-
 | Problema | Causa | Solução |
-|----------|-------|----------|
-| **Imagem não aparece** | CID não referenciado corretamente no HTML | Verifique se a tag `<img src="cid:yourCid">` corresponde ao CID usado em `addImageWatermark`. |
-| **Email fica corrompido** | Salvando com `SaveOptions` incorreto | Use `SaveOptions.create().setPreserveOriginalHeaders(true)` para manter os cabeçalhos originais intactos. |
-| **Erro de falta de memória** | Email grande (>200 MB) carregado totalmente na memória | Habilite o modo de streaming via `EmailLoadOptions.setLoadMode(LoadMode.Stream)` antes de inicializar o `Watermarker`. |
+|----------|-------|---------|
+| Nenhuma imagem aparece no email | Referência CID incorreta | Verifique se `embeddedObject.getContentId()` é usado exatamente na tag `<img src="cid:...">`. |
+| Marca d'água não salva | `watermarker.save()` chamado no mesmo caminho de entrada | Use um diretório ou nome de arquivo de saída diferente. |
+| Exceção de licença | Arquivo de licença ausente ou expirado | Coloque um `GroupDocs.Watermark.lic` válido na raiz da aplicação ou defina a `License` programaticamente. |
 
 ## Perguntas Frequentes
 
-**P: Posso marcar tanto a parte HTML quanto a de texto simples de um email?**  
-R: O GroupDocs.Watermark modifica apenas o corpo HTML; as partes de texto simples permanecem inalteradas, o que é prática padrão para branding de email.
+**P: Quais formatos de imagem funcionam melhor para incorporar imagem email java?**  
+R: PNG e JPEG são recomendados porque equilibram qualidade e tamanho de arquivo, e ambos são totalmente suportados pelo GroupDocs.Watermark.
 
-**P: A marca d'água sobrevive quando o email é encaminhado?**  
-R: Sim, porque a marca d'água torna‑se parte do conteúdo HTML do email, sendo mantida em todos os encaminhamentos subsequentes.
+**P: Como posso solucionar problemas ao ler bytes da imagem java?**  
+R: Certifique‑se de que o caminho do arquivo está correto, o arquivo não está bloqueado e que você tem permissão de leitura. Também verifique se o comprimento do array de bytes corresponde ao tamanho do arquivo.
 
-**P: Em quais formatos de arquivo posso exportar o email marcado?**  
-R: Você pode salvar como EML, MSG ou MHT. A API também suporta conversão para PDF caso precise de uma versão imprimível.
+**P: Posso adicionar várias marcas d'água ao mesmo email?**  
+R: Sim. Chame `content.getEmbeddedObjects().add(...)` para cada imagem e atualize o corpo HTML conforme necessário.
 
-**P: É necessária uma licença para ambientes de desenvolvimento?**  
-R: Uma licença de avaliação gratuita funciona para desenvolvimento e testes. Implantações em produção exigem uma licença comprada para remover marcas d'água de avaliação.
+**P: É possível aplicar marca d'água aos anexos dentro do email?**  
+R: O GroupDocs.Watermark pode processar documentos anexados individualmente; você precisa extrair, aplicar a marca d'água e re‑anexar programaticamente.
 
-**P: Como o GroupDocs.Watermark lida com anexos grandes?**  
-R: Os anexos são transmitidos sem alterações; apenas o corpo do email é processado, portanto o tamanho do anexo não afeta o desempenho da marca d'água.
+**P: A biblioteca suporta arquivos EML assim como MSG?**  
+R: Absolutamente. A mesma API funciona tanto para formatos MSG quanto EML.
 
 ## Conclusão
 
-Agora você tem um fluxo de trabalho completo e pronto para produção para **como marcar email** usando o GroupDocs.Watermark para Java. Seguindo os passos acima, você pode incorporar logotipos, avisos de confidencialidade ou qualquer imagem personalizada em cada email enviado, garantindo branding consistente e segurança aprimorada. Explore recursos adicionais como marcas d'água de texto, carimbos de data dinâmicos ou processamento em lote para ampliar ainda mais sua solução.
+Agora você possui um método completo e pronto para produção de **adicionar marca d'água em email java** usando o GroupDocs.Watermark. Experimente diferentes estilos de imagem, explore marcas d'água de texto e integre esse fluxo de trabalho em pipelines maiores de processamento de email para uma segurança robusta de documentos.
 
 ---
 
-**Última atualização:** 2026-06-16  
-**Testado com:** GroupDocs.Watermark para Java 24.11  
-**Autor:** GroupDocs
+**Última atualização:** 2026-01-03  
+**Testado com:** GroupDocs.Watermark 24.11 para Java  
+**Autor:** GroupDocs  
 
-## Tutoriais Relacionados
-
-- [Marca d'água de Documento de Email em Java : Gerenciamento Avançado com GroupDocs.Watermark](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-management/)
-- [Processamento de Anexos de Email Java com GroupDocs.Watermark : Um Guia Completo](/watermark/java/email-document-watermarking/java-email-attachment-processing-groupdocs-watermark/)
-- [Guia de Marcação d'Água em Java : Documentos Seguros com a API GroupDocs.Watermark](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
+---
