@@ -96,7 +96,6 @@ Java प्रोग्रामिंग की बुनियादी सम
 ## Java के लिए GroupDocs.Watermark कैसे सेट अप करें?
 अपने Maven प्रोजेक्ट को लोड करें, निर्भरता जोड़ें, और उपयुक्त सेटिंग्स के साथ Watermarker को इनिशियलाइज़ करें। यह दो‑स्टेप प्रक्रिया आपको खोज शुरू करने के लिए तैयार करती है। पहले, अपने `pom.xml` में Maven रिपॉजिटरी और निर्भरता जोड़ें, फिर Excel फ़ाइल पाथ और एक `WatermarkLoadOptions` ऑब्जेक्ट पास करके Watermarker इंस्टेंस बनाएं जो इच्छित शीट और खोज सेटिंग्स को निर्दिष्ट करता है। `SpreadsheetLoadOptions` आपको यह निर्धारित करने देता है कि कौन सी शीट्स लोड करनी हैं और केस सेंसिटिविटी जैसे खोज विकल्प कॉन्फ़िगर कर सकते हैं। `Watermarker` दस्तावेज़ लोड करने और खोज या वाटरमार्क ऑपरेशन्स करने के लिए मुख्य एंट्री पॉइंट है।
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -114,22 +113,18 @@ Java प्रोग्रामिंग की बुनियादी सम
    </dependency>
 </dependencies>
 ```
-```
 
 ## विशिष्ट खोज सेटिंग्स के साथ Excel फ़ाइल java कैसे लोड करें?
 वर्कबुक को लोड करें और लाइब्रेरी को केवल एटैच्ड इमेजेज़ पर देखने के लिए बताएं। यह केंद्रित दृष्टिकोण सामान्य स्प्रेडशीट्स के लिए प्रोसेसिंग समय को **30 %** तक कम कर देता है।
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## खोज को केवल एटैच्ड इमेजेज़ तक सीमित कैसे करें?
 `SpreadsheetSearchableObjects` एनेम आपको यह निर्दिष्ट करने देता है कि क्या स्कैन करना है। इसे `AttachedImages` पर सेट करने से इंजन केवल चित्र वस्तुओं तक सीमित हो जाता है, टेक्स्ट, फॉर्मूले या चार्ट्स को अनदेखा करता है।
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -137,12 +132,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## DCT हैश मानदंड का उपयोग करके छवि खोज कैसे निष्पादित करें?
 DCT‑हैश विधि संदर्भ छवि का एक कॉम्पैक्ट फ़िंगरप्रिंट बनाती है और इसे प्रत्येक एम्बेडेड चित्र से तुलना करती है, जिससे उच्च दृश्य समानता वाले मिलान लौटाए जाते हैं।
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -150,27 +143,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## DCT हैश खोज मानदंड को कैसे परिभाषित करें?
 `ImageDctHashSearchCriteria` संदर्भ छवि और वैकल्पिक समानता थ्रेशोल्ड को समेटता है। आप मिलान को कड़ा या ढीला करने के लिए थ्रेशोल्ड (0‑100) को समायोजित कर सकते हैं।
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## खोज चलाएँ और परिणामों को प्रोसेस करें?
 `watermarker.search(criteria)` को कॉल करने से `Watermark` ऑब्जेक्ट्स का एक संग्रह लौटता है। संग्रह पर इटरेट करके पेज नंबर, सेल एड्रेस प्राप्त करें, या छवि को बदलें।
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## व्यावहारिक अनुप्रयोग

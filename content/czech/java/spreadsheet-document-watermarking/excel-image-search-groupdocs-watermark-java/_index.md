@@ -96,7 +96,6 @@ Základní pochopení programování v Javě a znalost práce s Excel soubory pr
 ## Jak nastavit GroupDocs.Watermark pro Java?
 Načtěte svůj Maven projekt, přidejte závislost a inicializujte Watermarker s odpovídajícím nastavením. Tento dvoustupňový proces vás připraví na zahájení vyhledávání. Nejprve přidejte Maven repozitář a závislost do vašeho `pom.xml`, poté vytvořte instanci Watermarker předáním cesty k Excel souboru a objektu `WatermarkLoadOptions`, který určuje požadovaný list a nastavení vyhledávání. `SpreadsheetLoadOptions` vám umožní specifikovat, které listy načíst a nakonfigurovat možnosti vyhledávání, jako je rozlišení velkých a malých písmen. `Watermarker` je hlavní vstupní bod pro načítání dokumentů a provádění vyhledávání nebo operací s vodoznaky.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -114,22 +113,18 @@ Načtěte svůj Maven projekt, přidejte závislost a inicializujte Watermarker 
    </dependency>
 </dependencies>
 ```
-```
 
 ## Jak načíst Excel soubor java s konkrétními nastaveními vyhledávání?
 Načtěte sešit a přitom řekněte knihovně, aby hledala pouze připojené obrázky. Tento zaměřený přístup zkrátí dobu zpracování až o **30 %** u typických tabulek.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## Jak nakonfigurovat vyhledávání tak, aby cílilo pouze na připojené obrázky?
 `SpreadsheetSearchableObjects` výčet vám umožní přesně specifikovat, co skenovat. Nastavením na `AttachedImages` omezíte engine na objekty obrázků, ignorující text, vzorce nebo grafy.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -137,12 +132,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## Jak provést vyhledávání obrázků pomocí kritéria DCT hash?
 Metoda DCT‑hash vytváří kompaktní otisk referenčního obrázku a porovnává jej s každým vloženým obrázkem, vracející shody s vysokou vizuální podobností.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -150,27 +143,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## Jak definovat kritérium vyhledávání DCT hash?
 `ImageDctHashSearchCriteria` zapouzdřuje referenční obrázek a volitelný práh podobnosti. Práh (0‑100) můžete upravit pro zpřísnění nebo uvolnění shody.
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## Jak spustit vyhledávání a zpracovat výsledky?
 Volání `watermarker.search(criteria)` vrátí kolekci objektů `Watermark`. Procházejte kolekci pro získání čísel stránek, adres buněk nebo pro nahrazení obrázku.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## Praktické aplikace

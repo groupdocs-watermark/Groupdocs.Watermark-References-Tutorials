@@ -96,7 +96,6 @@ Une compréhension de base de la programmation Java et une familiarité avec la 
 ## Comment configurer GroupDocs.Watermark pour Java ?
 Chargez votre projet Maven, ajoutez la dépendance, et initialisez le Watermarker avec les paramètres appropriés. Ce processus en deux étapes vous prépare à commencer la recherche. D'abord, ajoutez le référentiel Maven et la dépendance à votre `pom.xml`, puis créez une instance de Watermarker en passant le chemin du fichier Excel et un objet `WatermarkLoadOptions` qui spécifie la feuille souhaitée et les paramètres de recherche. `SpreadsheetLoadOptions` vous permet de spécifier quelles feuilles charger et de configurer les options de recherche telles que la sensibilité à la casse. `Watermarker` est le point d'entrée principal pour charger les documents et effectuer des opérations de recherche ou de filigrane.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -114,22 +113,18 @@ Chargez votre projet Maven, ajoutez la dépendance, et initialisez le Watermarke
    </dependency>
 </dependencies>
 ```
-```
 
 ## Comment charger un fichier Excel java avec des paramètres de recherche spécifiques ?
 Chargez le classeur tout en indiquant à la bibliothèque de ne regarder que les images intégrées. Cette approche ciblée réduit le temps de traitement jusqu'à **30 %** pour les feuilles de calcul typiques.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## Comment configurer la recherche pour cibler uniquement les images intégrées ?
 L'énumération `SpreadsheetSearchableObjects` vous permet de spécifier exactement ce qu'il faut analyser. La définir sur `AttachedImages` restreint le moteur aux objets image, en ignorant le texte, les formules ou les graphiques.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -137,12 +132,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## Comment exécuter une recherche d'image en utilisant le critère de hachage DCT ?
 La méthode de hachage DCT crée une empreinte compacte de l'image de référence et la compare à chaque image intégrée, renvoyant les correspondances avec une forte similarité visuelle.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -150,27 +143,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## Comment définir le critère de recherche par hachage DCT ?
 `ImageDctHashSearchCriteria` encapsule l'image de référence et le seuil de similarité optionnel. Vous pouvez ajuster le seuil (0‑100) pour resserrer ou assouplir la correspondance.
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## Comment exécuter la recherche et traiter les résultats ?
 Appeler `watermarker.search(criteria)` renvoie une collection d'objets `Watermark`. Parcourez la collection pour récupérer les numéros de page, les adresses de cellules, ou pour remplacer l'image.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## Applications pratiques

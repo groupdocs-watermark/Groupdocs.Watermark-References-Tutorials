@@ -96,7 +96,6 @@ Java 프로그래밍에 대한 기본 이해와 프로그래밍 방식으로 Exc
 ## Java용 GroupDocs.Watermark를 설정하는 방법
 Maven 프로젝트를 로드하고, 의존성을 추가한 뒤 적절한 설정으로 Watermarker를 초기화합니다. 이 두 단계 과정으로 검색을 시작할 준비가 됩니다. 먼저 `pom.xml`에 Maven 저장소와 의존성을 추가하고, 그 다음 Excel 파일 경로와 원하는 시트 및 검색 설정을 지정하는 `WatermarkLoadOptions` 객체를 전달해 Watermarker 인스턴스를 생성합니다. `SpreadsheetLoadOptions`를 사용하면 로드할 시트를 지정하고 대소문자 구분과 같은 검색 옵션을 구성할 수 있습니다. `Watermarker`는 문서를 로드하고 검색 또는 워터마크 작업을 수행하는 주요 진입점입니다.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -114,22 +113,18 @@ Maven 프로젝트를 로드하고, 의존성을 추가한 뒤 적절한 설정�
    </dependency>
 </dependencies>
 ```
-```
 
 ## 특정 검색 설정으로 Excel 파일(java)을 로드하는 방법
 라이브러리에게 첨부된 이미지만 확인하도록 지시하면서 워크북을 로드합니다. 이 집중된 접근 방식은 일반적인 스프레드시트에서 처리 시간을 최대 **30 %**까지 단축합니다.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## 검색을 첨부된 이미지만 대상으로 구성하는 방법
 `SpreadsheetSearchableObjects` 열거형을 사용하면 정확히 스캔할 항목을 지정할 수 있습니다. `AttachedImages`로 설정하면 엔진이 그림 객체만 검색하고 텍스트, 수식 또는 차트는 무시합니다.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -137,12 +132,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## DCT 해시 기준을 사용해 이미지 검색을 실행하는 방법
 DCT‑hash 방법은 참조 이미지의 간결한 지문을 생성하고 이를 각 임베디드 그림과 비교하여 시각적으로 높은 유사성을 가진 일치 항목을 반환합니다.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -150,27 +143,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## DCT 해시 검색 기준을 정의하는 방법
 `ImageDctHashSearchCriteria`는 참조 이미지와 선택적 유사도 임계값을 캡슐화합니다. 임계값(0‑100)을 조정하여 매칭을 엄격하게 또는 느슨하게 할 수 있습니다.
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## 검색을 실행하고 결과를 처리하는 방법
 `watermarker.search(criteria)`를 호출하면 `Watermark` 객체 컬렉션이 반환됩니다. 컬렉션을 반복하여 페이지 번호, 셀 주소를 가져오거나 이미지를 교체할 수 있습니다.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## 실용적인 적용 사례

@@ -95,7 +95,6 @@ En grundläggande förståelse för Java‑programmering och erfarenhet av att h
 ## Hur ställer du in GroupDocs.Watermark för Java?
 Läs in ditt Maven‑projekt, lägg till beroendet och initiera Watermarker med lämpliga inställningar. Denna tvåstegsprocess gör dig redo att börja söka. Först, lägg till Maven‑arkivet och beroendet i din `pom.xml`, sedan skapa en Watermarker‑instans genom att ange Excel‑filens sökväg och ett `WatermarkLoadOptions`‑objekt som specificerar önskat blad och sökinställningar. `SpreadsheetLoadOptions` låter dig ange vilka blad som ska laddas och konfigurera sökalternativ såsom skiftlägeskänslighet. `Watermarker` är huvudpunkten för att ladda dokument och utföra sök‑ eller vattenstämplingsoperationer.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -113,22 +112,18 @@ Läs in ditt Maven‑projekt, lägg till beroendet och initiera Watermarker med 
    </dependency>
 </dependencies>
 ```
-```
 
 ## Hur laddar du Excel‑fil java med specifika sökinställningar?
 Läs in arbetsboken samtidigt som du instruerar biblioteket att endast titta på bifogade bilder. Detta fokuserade tillvägagångssätt minskar bearbetningstiden med upp till **30 %** för typiska kalkylblad.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## Hur konfigurerar du sökningen för att endast rikta in sig på bifogade bilder?
 `SpreadsheetSearchableObjects`‑enumet låter dig specificera exakt vad som ska genomsökas. Att sätta det till `AttachedImages` begränsar motorn till bildobjekt och ignorerar text, formler eller diagram.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -136,12 +131,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## Hur utför du en bildsökning med DCT‑hash‑kriterier?
 DCT‑hash‑metoden skapar ett kompakt fingeravtryck av referensbilden och jämför det med varje inbäddad bild, och returnerar matchningar med hög visuell likhet.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -149,27 +142,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## Hur definierar du DCT‑hash‑sök kriterierna?
 `ImageDctHashSearchCriteria` kapslar in referensbilden och ett valfritt likhetströskelvärde. Du kan justera tröskeln (0‑100) för att strama åt eller lossa matchningen.
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## Hur kör du sökningen och bearbetar resultaten?
 Att anropa `watermarker.search(criteria)` returnerar en samling av `Watermark`‑objekt. Iterera över samlingen för att hämta sidnummer, celladresser eller för att ersätta bilden.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## Praktiska tillämpningar

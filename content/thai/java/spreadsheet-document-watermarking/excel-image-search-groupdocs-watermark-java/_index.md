@@ -95,7 +95,6 @@ GroupDocs.Watermark รองรับ **50+** รูปแบบไฟล์เ
 ## วิธีตั้งค่า GroupDocs.Watermark สำหรับ Java?
 โหลดโปรเจกต์ Maven ของคุณ เพิ่ม dependency แล้วเริ่มต้น Watermarker ด้วยการตั้งค่าที่เหมาะสม กระบวนการสองขั้นตอนนี้จะทำให้คุณพร้อมเริ่มค้นหา ขั้นแรกให้เพิ่มรีโพซิทอรีและ dependency ลงใน `pom.xml` ของคุณ แล้วสร้างอินสแตนซ์ Watermarker โดยส่งพาธไฟล์ Excel และออบเจ็กต์ `WatermarkLoadOptions` ที่ระบุแผ่นและการตั้งค่าการค้นหาที่ต้องการ `SpreadsheetLoadOptions` ให้คุณระบุแผ่นที่ต้องการโหลดและกำหนดตัวเลือกการค้นหา เช่น ความไวต่อขนาดอักษร `Watermarker` เป็นจุดเริ่มต้นหลักสำหรับการโหลดเอกสารและทำการค้นหา หรือการใส่ watermark.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -113,22 +112,18 @@ GroupDocs.Watermark รองรับ **50+** รูปแบบไฟล์เ
    </dependency>
 </dependencies>
 ```
-```
 
 ## วิธีโหลดไฟล์ Excel ด้วย Java พร้อมการตั้งค่าการค้นหาเฉพาะ?
 โหลดสมุดงานพร้อมบอกไลบรารีให้มองหาเฉพาะรูปภาพที่ฝังอยู่ วิธีนี้ช่วยลดเวลาในการประมวลผลได้ถึง **30 %** สำหรับสเปรดชีตทั่วไป.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## วิธีกำหนดค่าการค้นหาให้มุ่งเป้าเฉพาะรูปภาพที่ฝังอยู่?
 Enum `SpreadsheetSearchableObjects` ให้คุณระบุสิ่งที่ต้องสแกนอย่างชัดเจน การตั้งค่าเป็น `AttachedImages` จะจำกัดเอนจินให้สแกนเฉพาะออบเจ็กต์รูปภาพ ไม่สนใจข้อความ สูตร หรือแผนภูมิ.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -136,12 +131,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## วิธีดำเนินการค้นหารูปภาพโดยใช้เกณฑ์ DCT hash?
 วิธี DCT‑hash สร้างลายนิ้วมือขนาดกะทัดรัดของรูปอ้างอิงและเปรียบเทียบกับรูปภาพที่ฝังแต่ละรูป ส่งคืนผลลัพธ์ที่มีความคล้ายคลึงกันสูง.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -149,27 +142,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## วิธีกำหนดเกณฑ์การค้นหา DCT hash?
 `ImageDctHashSearchCriteria` รวมรูปอ้างอิงและค่าขีดจำกัดความคล้าย (threshold) ที่กำหนดได้ คุณสามารถปรับ threshold (0‑100) เพื่อทำให้การจับคู่เข้มงวดหรือผ่อนคลายขึ้น.
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## วิธีรันการค้นหาและประมวลผลผลลัพธ์?
 การเรียก `watermarker.search(criteria)` จะคืนคอลเลกชันของออบเจ็กต์ `Watermark` วนลูปผ่านคอลเลกชันเพื่อดึงหมายเลขหน้า ที่อยู่เซลล์ หรือแทนที่รูปภาพได้.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## การประยุกต์ใช้งานจริง

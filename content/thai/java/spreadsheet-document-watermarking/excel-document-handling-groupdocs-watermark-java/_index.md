@@ -210,8 +210,3 @@ A: The examples target GroupDocs.Watermark **24.11**.
 **อัปเดตล่าสุด:** 2026-04-01  
 **ทดสอบด้วย:** GroupDocs.Watermark 24.11 for Java  
 **ผู้เขียน:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

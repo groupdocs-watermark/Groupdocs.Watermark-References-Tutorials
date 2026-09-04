@@ -96,7 +96,6 @@ Java programlaması hakkında temel bir anlayış ve Excel dosyalarını program
 ## GroupDocs.Watermark'ı Java için nasıl kurarsınız?
 Maven projenizi yükleyin, bağımlılığı ekleyin ve Watermarker'ı uygun ayarlarla başlatın. Bu iki adımlı süreç, aramaya başlamanız için sizi hazırlar. İlk olarak, Maven deposunu ve bağımlılığı `pom.xml` dosyanıza ekleyin, ardından Excel dosya yolunu ve istenen sayfa ve arama ayarlarını belirten bir `WatermarkLoadOptions` nesnesini geçirerek bir Watermarker örneği oluşturun. `SpreadsheetLoadOptions`, hangi sayfaların yükleneceğini belirlemenize ve büyük/küçük harf duyarlılığı gibi arama seçeneklerini yapılandırmanıza olanak tanır. `Watermarker`, belgeleri yüklemek ve arama ya da watermark işlemleri gerçekleştirmek için ana giriş noktasıdır.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -114,22 +113,18 @@ Maven projenizi yükleyin, bağımlılığı ekleyin ve Watermarker'ı uygun aya
    </dependency>
 </dependencies>
 ```
-```
 
 ## Belirli arama ayarlarıyla Excel dosyasını java ile nasıl yüklenir?
 Kitaplığı yalnızca ekli görüntülere bakacak şekilde ayarlayarak çalışma kitabını yükleyin. Bu odaklanmış yaklaşım, tipik elektronik tablolar için işleme süresini **%30** kadar azaltır.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## Aramayı yalnızca ekli görüntülere hedeflemek nasıl yapılandırılır?
 `SpreadsheetSearchableObjects` enum'u, tam olarak neyin taranacağını belirlemenizi sağlar. `AttachedImages` olarak ayarlandığında, motor sadece resim nesnelerini tarar, metin, formül veya grafikleri yok sayar.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -137,12 +132,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## DCT hash kriteri kullanarak görüntü araması nasıl yürütülür?
 DCT‑hash yöntemi, referans görüntünün kompakt bir parmak izini oluşturur ve her gömülü resimle karşılaştırır; yüksek görsel benzerliğe sahip eşleşmeleri döndürür.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -150,27 +143,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## DCT hash arama kriteri nasıl tanımlanır?
 `ImageDctHashSearchCriteria`, referans görüntüyü ve isteğe bağlı benzerlik eşiğini kapsar. Eşleşmeyi sıkılaştırmak veya gevşetmek için eşiği (0‑100) ayarlayabilirsiniz.
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## Aramayı çalıştırma ve sonuçları işleme
 `watermarker.search(criteria)` çağrısı, bir `Watermark` nesnesi koleksiyonu döndürür. Koleksiyon üzerinde döngü yaparak sayfa numaralarını, hücre adreslerini alabilir veya görüntüyü değiştirebilirsiniz.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## Pratik Uygulamalar

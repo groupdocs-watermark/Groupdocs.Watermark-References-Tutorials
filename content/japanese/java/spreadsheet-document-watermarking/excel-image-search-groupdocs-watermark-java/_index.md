@@ -95,7 +95,6 @@ Java プログラミングの基本的な理解と、プログラムで Excel �
 ## GroupDocs.Watermark を Java でセットアップする方法
 Maven プロジェクトをロードし、依存関係を追加し、適切な設定で Watermarker を初期化します。この 2 段階のプロセスで検索を開始できる状態になります。まず `pom.xml` に Maven リポジトリと依存関係を追加し、次に Excel ファイルのパスと、対象シートと検索設定を指定する `WatermarkLoadOptions` オブジェクトを渡して Watermarker インスタンスを作成します。`SpreadsheetLoadOptions` を使用すると、ロードするシートを指定し、ケースセンシティブなどの検索オプションを構成できます。`Watermarker` はドキュメントのロードや検索・ウォーターマーク操作のメインエントリーポイントです。
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -113,22 +112,18 @@ Maven プロジェクトをロードし、依存関係を追加し、適切な�
    </dependency>
 </dependencies>
 ```
-```
 
 ## 特定の検索設定で Excel ファイル（java）をロードする方法
 ブックをロードし、ライブラリに添付画像のみを対象とするよう指示します。この絞り込みにより、一般的なスプレッドシートの処理時間が最大 **30 %** 短縮されます。
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## 検索を添付画像のみに対象とする設定方法
 `SpreadsheetSearchableObjects` 列挙型を使用すると、スキャン対象を正確に指定できます。`AttachedImages` に設定すると、エンジンは画像オブジェクトのみに限定され、テキスト、数式、チャートは無視されます。
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -136,12 +131,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## DCT ハッシュ基準を使用した画像検索の実行方法
 DCT ハッシュ方式は、参照画像のコンパクトな指紋を作成し、埋め込み画像それぞれと比較して、視覚的に高い類似性を持つ一致を返します。
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -149,27 +142,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## DCT ハッシュ検索基準の定義方法
 `ImageDctHashSearchCriteria` は参照画像とオプションの類似度閾値をカプセル化します。閾値（0‑100）を調整してマッチングの厳しさを変えることができます。
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## 検索を実行し結果を処理する方法
 `watermarker.search(criteria)` を呼び出すと、`Watermark` オブジェクトのコレクションが返されます。コレクションを反復処理してページ番号やセルアドレスを取得したり、画像を置換したりできます。
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## 実用的な応用例

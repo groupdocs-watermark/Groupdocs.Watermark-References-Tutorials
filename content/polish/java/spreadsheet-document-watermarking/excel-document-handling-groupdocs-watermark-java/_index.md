@@ -211,8 +211,3 @@ O: Przykłady dotyczą GroupDocs.Watermark **24.11**.
 **Ostatnia aktualizacja:** 2026-04-01  
 **Testowano z:** GroupDocs.Watermark 24.11 for Java  
 **Autor:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

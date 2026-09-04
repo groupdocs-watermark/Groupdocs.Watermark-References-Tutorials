@@ -208,8 +208,3 @@ R : Les exemples ciblent GroupDocs.Watermark **24.11**.
 **Dernière mise à jour :** 2026-04-01  
 **Testé avec :** GroupDocs.Watermark 24.11 pour Java  
 **Auteur :** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

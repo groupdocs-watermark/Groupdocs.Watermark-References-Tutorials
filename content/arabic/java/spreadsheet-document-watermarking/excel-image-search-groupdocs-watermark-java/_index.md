@@ -93,7 +93,6 @@ weight: 1
 ## كيف تقوم بإعداد GroupDocs.Watermark لجافا؟
 حمّل مشروع Maven الخاص بك، أضف الاعتماد، وابدأ تهيئة Watermarker بالإعدادات المناسبة. هذه العملية ذات الخطوتين تُعدك للبدء في البحث. أولاً، أضف مستودع Maven والاعتماد إلى ملف `pom.xml` الخاص بك، ثم أنشئ كائن Watermarker بتمرير مسار ملف Excel وكائن `WatermarkLoadOptions` الذي يحدد الورقة المطلوبة وإعدادات البحث. يتيح لك `SpreadsheetLoadOptions` تحديد الأوراق التي تريد تحميلها وتكوين خيارات البحث مثل حساسية الحالة. `Watermarker` هو نقطة الدخول الرئيسية لتحميل المستندات وتنفيذ عمليات البحث أو العلامات المائية.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -111,22 +110,18 @@ weight: 1
    </dependency>
 </dependencies>
 ```
-```
 
 ## كيف تقوم بتحميل ملف Excel java بإعدادات بحث محددة؟
 حمّل دفتر العمل مع إخبار المكتبة بالبحث فقط عن الصور المرفقة. هذا النهج المركز يقلل وقت المعالجة بما يصل إلى **30 %** للدفاتر النموذجية.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## كيف تقوم بتكوين البحث لاستهداف الصور المرفقة فقط؟
 يتيح لك تعداد `SpreadsheetSearchableObjects` تحديد ما تريد مسحه بدقة. ضبطه على `AttachedImages` يقيد المحرك بكائنات الصور، متجاهلاً النصوص أو الصيغ أو المخططات.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -134,12 +129,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## كيف تنفّذ بحثًا عن صورة باستخدام معيار تجزئة DCT؟
 طريقة تجزئة DCT تُنشئ بصمة مدمجة للصورة المرجعية وتقارنها بكل صورة مدمجة، وتُعيد التطابقات ذات التشابه البصري العالي.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -147,27 +140,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## كيف تُعرّف معيار البحث بتجزئة DCT؟
 `ImageDctHashSearchCriteria` يضمّن الصورة المرجعية وعامل التشابه الاختياري. يمكنك تعديل العتبة (0‑100) لتشديد أو تخفيف المطابقة.
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## كيف تُجري البحث وتعالج النتائج؟
 استدعاء `watermarker.search(criteria)` يُعيد مجموعة من كائنات `Watermark`. قم بالتكرار عبر المجموعة لاسترجاع أرقام الصفحات، عناوين الخلايا، أو لاستبدال الصورة.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## تطبيقات عملية

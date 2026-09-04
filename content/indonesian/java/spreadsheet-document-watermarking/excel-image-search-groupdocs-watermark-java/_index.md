@@ -95,7 +95,6 @@ Pemahaman dasar tentang pemrograman Java dan familiaritas dengan penanganan file
 ## Bagaimana cara menyiapkan GroupDocs.Watermark untuk Java?
 Muat proyek Maven Anda, tambahkan dependensi, dan inisialisasi Watermarker dengan pengaturan yang tepat. Proses dua langkah ini menyiapkan Anda untuk mulai melakukan pencarian. Pertama, tambahkan repositori dan dependensi Maven ke `pom.xml`, kemudian buat instance Watermarker dengan memberikan jalur file Excel dan objek `WatermarkLoadOptions` yang menentukan lembar yang diinginkan serta pengaturan pencarian. `SpreadsheetLoadOptions` memungkinkan Anda menentukan lembar mana yang akan dimuat dan mengonfigurasi opsi pencarian seperti sensitivitas huruf. `Watermarker` adalah titik masuk utama untuk memuat dokumen serta melakukan operasi pencarian atau watermark.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -113,22 +112,18 @@ Muat proyek Maven Anda, tambahkan dependensi, dan inisialisasi Watermarker denga
    </dependency>
 </dependencies>
 ```
-```
 
 ## Bagaimana cara memuat file Excel java dengan pengaturan pencarian khusus?
 Muat workbook sambil memberi tahu perpustakaan untuk hanya memperhatikan gambar yang disematkan. Pendekatan terfokus ini memotong waktu pemrosesan hingga **30 %** untuk spreadsheet tipikal.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Kode inisialisasi dasar di sini...
-```
 ```
 
 ## Bagaimana cara mengonfigurasi pencarian agar menargetkan hanya gambar yang disematkan?
 Enum `SpreadsheetSearchableObjects` memungkinkan Anda menentukan apa yang akan dipindai. Menetapkannya ke `AttachedImages` membatasi mesin pada objek gambar, mengabaikan teks, formula, atau diagram.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -136,12 +131,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## Bagaimana cara mengeksekusi pencarian gambar menggunakan kriteria hash DCT?
 Metode hash DCT membuat sidik jari kompak dari gambar referensi dan membandingkannya dengan setiap gambar yang disematkan, mengembalikan kecocokan dengan kemiripan visual tinggi.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -149,27 +142,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## Bagaimana cara mendefinisikan kriteria pencarian hash DCT?
 `ImageDctHashSearchCriteria` membungkus gambar referensi dan ambang kemiripan opsional. Anda dapat menyesuaikan ambang (0‑100) untuk memperketat atau melonggarkan pencocokan.
 
-``` 
 ```java
 // Gunakan kembali konfigurasi sebelumnya dari bagian 'Load Spreadsheet'.
-```
 ```
 
 ## Bagaimana cara menjalankan pencarian dan memproses hasilnya?
 Memanggil `watermarker.search(criteria)` mengembalikan koleksi objek `Watermark`. Iterasi koleksi untuk mengambil nomor halaman, alamat sel, atau mengganti gambar.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## Aplikasi Praktis

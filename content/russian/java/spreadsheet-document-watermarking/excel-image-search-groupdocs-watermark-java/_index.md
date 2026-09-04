@@ -97,7 +97,6 @@ GroupDocs.Watermark поддерживает **более 50 форматов в
 ## Как настроить GroupDocs.Watermark для Java?
 Загрузите ваш Maven‑проект, добавьте зависимость и инициализируйте Watermarker с соответствующими настройками. Этот двухшаговый процесс подготовит вас к поиску. Сначала добавьте репозиторий Maven и зависимость в ваш `pom.xml`, затем создайте экземпляр Watermarker, передав путь к файлу Excel и объект `WatermarkLoadOptions`, который указывает нужный лист и параметры поиска. `SpreadsheetLoadOptions` позволяет указать, какие листы загружать, и настроить параметры поиска, такие как чувствительность к регистру. `Watermarker` — основной входной пункт для загрузки документов и выполнения операций поиска или водяных знаков.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -115,22 +114,18 @@ GroupDocs.Watermark поддерживает **более 50 форматов в
    </dependency>
 </dependencies>
 ```
-```
 
 ## Как загрузить Excel файл java с конкретными настройками поиска?
 Загрузите книгу, указав библиотеке искать только вложенные изображения. Такой целенаправленный подход сокращает время обработки до **30 %** для типичных таблиц.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## Как настроить поиск, чтобы он охватывал только вложенные изображения?
 `enum` `SpreadsheetSearchableObjects` позволяет точно указать, что сканировать. Установка значения `AttachedImages` ограничивает движок объектами‑картинками, игнорируя текст, формулы или диаграммы.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -138,12 +133,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## Как выполнить поиск изображения с использованием критериев DCT‑хеша?
 Метод DCT‑хеша создаёт компактный отпечаток эталонного изображения и сравнивает его с каждым встроенным изображением, возвращая совпадения с высокой визуальной схожестью.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -151,27 +144,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## Как определить критерий поиска DCT‑хеш?
 `ImageDctHashSearchCriteria` инкапсулирует эталонное изображение и необязательный порог схожести. Вы можете изменить порог (0‑100), чтобы ужесточить или ослабить совпадения.
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## Как выполнить поиск и обработать результаты?
 Вызов `watermarker.search(criteria)` возвращает коллекцию объектов `Watermark`. Итерируйте коллекцию, чтобы получить номера страниц, адреса ячеек или заменить изображение.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## Практические применения

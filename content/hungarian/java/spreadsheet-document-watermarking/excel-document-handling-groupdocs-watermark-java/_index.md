@@ -208,8 +208,3 @@ A: The examples target GroupDocs.Watermark **24.11**.
 **Utolsó frissítés:** 2026-04-01  
 **Tesztelve ezzel:** GroupDocs.Watermark 24.11 for Java  
 **Szerző:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

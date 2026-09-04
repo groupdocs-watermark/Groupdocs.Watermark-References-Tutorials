@@ -96,7 +96,6 @@ Ein grundlegendes Verständnis der Java‑Programmierung und Erfahrung im progra
 ## Wie richtet man GroupDocs.Watermark für Java ein?
 Laden Sie Ihr Maven‑Projekt, fügen Sie die Abhängigkeit hinzu und initialisieren Sie den Watermarker mit den entsprechenden Einstellungen. Dieser zweistufige Prozess macht Sie bereit für die Suche. Zuerst fügen Sie das Maven‑Repository und die Abhängigkeit zu Ihrer `pom.xml` hinzu, dann erstellen Sie eine Watermarker‑Instanz, indem Sie den Pfad zur Excel‑Datei und ein `WatermarkLoadOptions`‑Objekt übergeben, das das gewünschte Blatt und die Such‑Einstellungen spezifiziert. `SpreadsheetLoadOptions` ermöglicht es Ihnen, festzulegen, welche Blätter geladen werden und Suchoptionen wie Groß‑/Kleinschreibung zu konfigurieren. `Watermarker` ist der Haupteinstiegspunkt zum Laden von Dokumenten und zum Durchführen von Such‑ oder Wasserzeichen‑Operationen.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -114,22 +113,18 @@ Laden Sie Ihr Maven‑Projekt, fügen Sie die Abhängigkeit hinzu und initialisi
    </dependency>
 </dependencies>
 ```
-```
 
 ## Wie lädt man eine Excel‑Datei java mit spezifischen Sucheinstellungen?
 Laden Sie die Arbeitsmappe, während Sie der Bibliothek mitteilen, nur an angehängte Bilder zu denken. Dieser fokussierte Ansatz reduziert die Verarbeitungszeit um bis zu **30 %** für typische Tabellen.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## Wie konfiguriert man die Suche, um nur angehängte Bilder zu berücksichtigen?
 Das `SpreadsheetSearchableObjects`‑Enum ermöglicht es Ihnen, exakt festzulegen, was gescannt werden soll. Wird es auf `AttachedImages` gesetzt, beschränkt die Engine sich auf Bildobjekte und ignoriert Text, Formeln oder Diagramme.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -137,12 +132,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## Wie führt man eine Bildsuche mit DCT‑Hash‑Kriterien aus?
 Die DCT‑Hash‑Methode erzeugt einen kompakten Fingerabdruck des Referenzbildes und vergleicht ihn mit jedem eingebetteten Bild, wobei Treffer mit hoher visueller Ähnlichkeit zurückgegeben werden.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -150,27 +143,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## Wie definiert man die DCT‑Hash‑Suchkriterien?
 `ImageDctHashSearchCriteria` kapselt das Referenzbild und einen optionalen Ähnlichkeitsschwellenwert. Sie können den Schwellenwert (0‑100) anpassen, um die Trefferquote strenger oder lockerer zu gestalten.
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## Wie führt man die Suche aus und verarbeitet die Ergebnisse?
 Der Aufruf `watermarker.search(criteria)` liefert eine Sammlung von `Watermark`‑Objekten. Durchlaufen Sie die Sammlung, um Seitenzahlen, Zelladressen zu erhalten oder das Bild zu ersetzen.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## Praktische Anwendungsfälle

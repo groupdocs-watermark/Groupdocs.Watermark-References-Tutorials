@@ -94,7 +94,6 @@ Alapvető ismeretek a Java programozásról és a programozott Excel fájlkezel�
 ## Hogyan állítsuk be a GroupDocs.Watermark-ot Java-hoz?
 Töltse be Maven projektjét, adja hozzá a függőséget, és inicializálja a Watermarker-t a megfelelő beállításokkal. Ez a kétlépéses folyamat felkészíti a keresés megkezdésére. Először adja hozzá a Maven tárolót és a függőséget a `pom.xml`-hez, majd hozzon létre egy Watermarker példányt, amely átadja az Excel fájl útvonalát és egy `WatermarkLoadOptions` objektumot, amely meghatározza a kívánt munkalapot és keresési beállításokat. A `SpreadsheetLoadOptions` lehetővé teszi, hogy megadja, mely munkalapokat töltse be, és konfigurálja a keresési opciókat, például a kis- és nagybetű érzékenységet. A `Watermarker` a fő belépési pont a dokumentumok betöltéséhez és a keresési vagy vízjel műveletek végrehajtásához.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -112,22 +111,18 @@ Töltse be Maven projektjét, adja hozzá a függőséget, és inicializálja a 
    </dependency>
 </dependencies>
 ```
-```
 
 ## Hogyan töltsük be az Excel fájlt java-val specifikus keresési beállításokkal?
 Töltse be a munkafüzetet úgy, hogy a könyvtárat csak a csatolt képekre irányítsa. Ez a fókuszált megközelítés akár **30 %**-kal is csökkenti a feldolgozási időt a tipikus táblázatoknál.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## Hogyan konfiguráljuk a keresést, hogy csak a csatolt képeket célozza meg?
 A `SpreadsheetSearchableObjects` enum lehetővé teszi, hogy pontosan meghatározza, mit kell átvizsgálni. `AttachedImages`-re állítva a motor csak a képobjektumokra korlátozódik, figyelmen kívül hagyva a szöveget, képleteket vagy diagramokat.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -135,12 +130,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## Hogyan hajtsuk végre a képkeresést DCT hash kritériumokkal?
 A DCT‑hash módszer egy kompakt ujjlenyomatot hoz létre a referencia képről, és összehasonlítja minden beágyazott képpel, a magas vizuális hasonlóságú találatokat visszaadva.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -148,27 +141,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## Hogyan definiáljuk a DCT hash keresési kritériumot?
 `ImageDctHashSearchCriteria` tartalmazza a referencia képet és egy opcionális hasonlósági küszöböt. A küszöb (0‑100) módosításával szigoríthatja vagy lazíthatja az egyezést.
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## Hogyan futtassuk a keresést és dolgozzuk fel az eredményeket?
 A `watermarker.search(criteria)` hívás egy `Watermark` objektumok gyűjteményét adja vissza. Iteráljon a gyűjteményen, hogy lekérdezze az oldal számokat, cella címeket, vagy a kép cseréjét.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## Gyakorlati alkalmazások

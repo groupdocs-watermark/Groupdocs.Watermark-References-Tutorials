@@ -95,7 +95,6 @@ Hiểu biết cơ bản về lập trình Java và quen thuộc với việc x�
 ## Làm thế nào để thiết lập GroupDocs.Watermark cho Java?
 Tải dự án Maven của bạn, thêm phụ thuộc và khởi tạo Watermarker với các cài đặt phù hợp. Quy trình hai bước này giúp bạn sẵn sàng bắt đầu tìm kiếm. Đầu tiên, thêm repository và phụ thuộc Maven vào `pom.xml`, sau đó tạo một thể hiện Watermarker bằng cách truyền đường dẫn tệp Excel và một đối tượng `WatermarkLoadOptions` xác định sheet mong muốn và các cài đặt tìm kiếm. `SpreadsheetLoadOptions` cho phép bạn chỉ định các sheet cần tải và cấu hình các tùy chọn tìm kiếm như độ nhạy chữ hoa/thường. `Watermarker` là điểm vào chính để tải tài liệu và thực hiện các thao tác tìm kiếm hoặc watermark.
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -113,22 +112,18 @@ Tải dự án Maven của bạn, thêm phụ thuộc và khởi tạo Watermark
    </dependency>
 </dependencies>
 ```
-```
 
 ## Cách tải tệp Excel java với các cài đặt tìm kiếm cụ thể?
 Tải workbook đồng thời chỉ định thư viện chỉ tìm kiếm các hình ảnh đính kèm. Cách tiếp cận tập trung này giảm thời gian xử lý lên tới **30 %** cho các bảng tính thông thường.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## Cách cấu hình tìm kiếm để chỉ nhắm vào các hình ảnh đính kèm?
 `enum` `SpreadsheetSearchableObjects` cho phép bạn chỉ định chính xác những gì cần quét. Đặt nó thành `AttachedImages` sẽ giới hạn engine chỉ vào các đối tượng hình ảnh, bỏ qua văn bản, công thức hoặc biểu đồ.
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -136,12 +131,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## Cách thực hiện tìm kiếm hình ảnh bằng tiêu chí hàm băm DCT?
 Phương pháp DCT‑hash tạo ra một dấu vân tay gọn nhẹ của hình ảnh tham chiếu và so sánh nó với mỗi hình ảnh nhúng, trả về các kết quả trùng khớp với độ tương đồng hình ảnh cao.
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -149,27 +142,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## Cách định nghĩa tiêu chí tìm kiếm hàm băm DCT?
 `ImageDctHashSearchCriteria` bao gồm hình ảnh tham chiếu và ngưỡng tương đồng tùy chọn. Bạn có thể điều chỉnh ngưỡng (0‑100) để thắt chặt hoặc nới lỏng việc khớp.
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## Cách chạy tìm kiếm và xử lý kết quả?
 Gọi `watermarker.search(criteria)` sẽ trả về một tập hợp các đối tượng `Watermark`. Duyệt qua tập hợp để lấy số trang, địa chỉ ô, hoặc để thay thế hình ảnh.
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## Ứng dụng thực tiễn

@@ -95,7 +95,6 @@ GroupDocs.Watermark 支持 **50+ 输入和输出格式**——包括 XLSX、XLS�
 ## 如何为 Java 设置 GroupDocs.Watermark？
 加载您的 Maven 项目，添加依赖项，并使用适当的设置初始化 Watermarker。此两步过程让您准备好开始搜索。首先，将 Maven 仓库和依赖项添加到您的 `pom.xml`，然后通过传入 Excel 文件路径和一个指定所需工作表和搜索设置的 `WatermarkLoadOptions` 对象来创建 Watermarker 实例。`SpreadsheetLoadOptions` 允许您指定加载哪些工作表并配置搜索选项，如大小写敏感性。`Watermarker` 是加载文档并执行搜索或水印操作的主要入口。
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -113,22 +112,18 @@ GroupDocs.Watermark 支持 **50+ 输入和输出格式**——包括 XLSX、XLS�
    </dependency>
 </dependencies>
 ```
-```
 
 ## 如何使用特定搜索设置加载 Excel 文件 java？
 在加载工作簿时指示库仅查看附加图像。这种聚焦方法可将典型电子表格的处理时间缩短最多 **30 %**。
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## 如何配置搜索以仅针对附加图像？
 `SpreadsheetSearchableObjects` 枚举允许您精确指定要扫描的内容。将其设置为 `AttachedImages` 会将引擎限制为图片对象，忽略文本、公式或图表。
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -136,12 +131,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## 如何使用 DCT 哈希标准执行图像搜索？
 DCT‑hash 方法为参考图像创建紧凑的指纹，并将其与每个嵌入的图片进行比较，返回具有高度视觉相似性的匹配项。
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -149,27 +142,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## 如何定义 DCT 哈希搜索标准？
 `ImageDctHashSearchCriteria` 封装了参考图像和可选的相似度阈值。您可以调整阈值（0‑100）以收紧或放宽匹配。
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## 如何运行搜索并处理结果？
 调用 `watermarker.search(criteria)` 将返回 `Watermark` 对象的集合。遍历该集合以获取页码、单元格地址，或替换图像。
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## 实际应用

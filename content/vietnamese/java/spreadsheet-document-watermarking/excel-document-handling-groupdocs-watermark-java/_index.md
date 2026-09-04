@@ -215,8 +215,3 @@ A: Các ví dụ nhắm tới GroupDocs.Watermark **24.11**.
 **Cập nhật lần cuối:** 2026-04-01  
 **Kiểm tra với:** GroupDocs.Watermark 24.11 for Java  
 **Tác giả:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

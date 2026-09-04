@@ -210,8 +210,3 @@ A: 例は GroupDocs.Watermark **24.11** を対象としています。
 **最終更新日:** 2026-04-01  
 **テスト環境:** GroupDocs.Watermark 24.11 for Java  
 **作者:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

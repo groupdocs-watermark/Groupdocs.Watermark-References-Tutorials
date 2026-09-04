@@ -209,8 +209,3 @@ A: 範例針對 GroupDocs.Watermark **24.11**。
 **最後更新：** 2026-04-01  
 **測試版本：** GroupDocs.Watermark 24.11 for Java  
 **作者：** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

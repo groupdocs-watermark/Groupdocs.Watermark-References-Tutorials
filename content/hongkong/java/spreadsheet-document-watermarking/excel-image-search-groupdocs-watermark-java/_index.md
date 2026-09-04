@@ -93,7 +93,6 @@ GroupDocs.Watermark 支援 **超過 50 種輸入與輸出格式**——包括 XL
 ## 如何為 Java 設定 GroupDocs.Watermark？
 載入您的 Maven 專案，加入相依性，並以適當的設定初始化 Watermarker。此兩步驟流程可讓您準備好開始搜尋。首先，將 Maven 儲存庫與相依性加入 `pom.xml`，接著建立 Watermarker 實例，傳入 Excel 檔案路徑與 `WatermarkLoadOptions` 物件，以指定欲搜尋的工作表與設定。`SpreadsheetLoadOptions` 允許您指定要載入的工作表並設定搜尋選項，例如大小寫敏感度。`Watermarker` 是載入文件及執行搜尋或水印操作的主要入口。
 
-``` 
 ```xml
 <repositories>
    <repository>
@@ -111,22 +110,18 @@ GroupDocs.Watermark 支援 **超過 50 種輸入與輸出格式**——包括 XL
    </dependency>
 </dependencies>
 ```
-```
 
 ## 如何以特定搜尋設定載入 Excel 檔案 java？
 載入活頁簿，同時指示函式庫僅檢視附加的圖像。此聚焦方式可將一般試算表的處理時間縮短最多 **30 %**。
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 // Basic initialization code here...
-```
 ```
 
 ## 如何設定搜尋僅針對附加圖像？
 `SpreadsheetSearchableObjects` 列舉允許您精確指定要掃描的項目。將其設定為 `AttachedImages` 可將引擎限制於圖片物件，忽略文字、公式或圖表。
 
-``` 
 ```java
 import com.groupdocs.watermark.WatermarkerSettings;
 import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
@@ -134,12 +129,10 @@ import com.groupdocs.watermark.options.SpreadsheetLoadOptions;
 WatermarkerSettings settings = new WatermarkerSettings();
 settings.getSearchableObjects().setSpreadsheetSearchableObjects(SpreadsheetSearchableObjects.AttachedImages);
 ```
-```
 
 ## 如何使用 DCT 雜湊條件執行圖像搜尋？
 DCT‑hash 方法會為參考圖像產生緊湊的指紋，並與每個嵌入的圖片進行比較，返回具有高度視覺相似度的匹配項。
 
-``` 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -147,27 +140,22 @@ String filePath = "YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 Watermarker watermarker = new Watermarker(filePath, loadOptions, settings);
 ```
-```
 
 ## 如何定義 DCT 雜湊搜尋條件？
 `ImageDctHashSearchCriteria` 包含參考圖像與可選的相似度閾值。您可以調整閾值（0‑100）以收緊或放寬匹配。
 
-``` 
 ```java
 // Reuse the previous configuration from the 'Load Spreadsheet' section.
-```
 ```
 
 ## 如何執行搜尋並處理結果？
 呼叫 `watermarker.search(criteria)` 會返回 `Watermark` 物件的集合。遍歷此集合即可取得頁碼、儲存格位址，或替換圖像。
 
-``` 
 ```java
 import com.groupdocs.watermark.search.ImageDctHashSearchCriteria;
 
 String imagePath = "YOUR_DOCUMENT_DIRECTORY/sample_image.png";
 ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria(imagePath);
-```
 ```
 
 ## 實務應用
