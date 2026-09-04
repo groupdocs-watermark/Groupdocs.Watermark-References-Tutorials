@@ -1,83 +1,45 @@
 ---
-date: '2026-06-11'
-description: Leer hoe je Word-afbeeldingen kunt watermerken met tekstwatermerken met
-  behulp van GroupDocs.Watermark for Java—bescherm je documenten efficiënt.
+date: '2026-01-16'
+description: Leer hoe je tekstwatermerkafbeeldingen toevoegt aan Word‑documenten met
+  Java en de GroupDocs.Watermark‑bibliotheek. Inclusief Java‑voorbeelden voor het
+  toevoegen van watermerkafbeeldingen.
 keywords:
-- how to watermark word
-- add text watermark
-- protect word images
-- save watermarked word
-- image watermarking java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-11'
-  description: Learn how to watermark Word images with text watermarks using GroupDocs.Watermark
-    for Java—protect your documents efficiently.
-  headline: How to Watermark Word Images with GroupDocs.Watermark Java
-  type: TechArticle
-- description: Learn how to watermark Word images with text watermarks using GroupDocs.Watermark
-    for Java—protect your documents efficiently.
-  name: How to Watermark Word Images with GroupDocs.Watermark Java
-  steps:
-  - name: Load the Word Document
-    text: The `Watermarker` class is the entry point for all document‑level operations
-      in GroupDocs.Watermark.
-  - name: Create and Customize the Text Watermark
-    text: '`TextWatermark` represents a textual watermark that can be styled and applied
-      to images.'
-  - name: Access Images in a Specific Section
-    text: '`Section` represents a logical part of a Word document such as header,
-      body, or footer.'
-  - name: Apply the Watermark to Each Image
-    text: '`addWatermark` applies the specified watermark to the target image.'
-  - name: Save and Close
-    text: '`save` writes the modified document to the chosen output path. `close`
-      releases native resources used by the Watermarker instance.'
-  type: HowTo
-- questions:
-  - answer: It means stamping every picture inside a .docx with semi‑transparent text
-      so the source is identifiable.
-    question: What does “watermark Word images” mean?
-  - answer: GroupDocs.Watermark for Java (v24.11+).
-    question: Which library handles this?
-  - answer: A trial works for development; a permanent license removes all evaluation
-      limits.
-    question: Do I need a license?
-  - answer: Yes—use the `Section` API to fetch images from a chosen part of the document.
-    question: Can I target only one section?
-  - answer: Absolutely; the library rewrites the .docx without breaking existing content.
-    question: Is the output still a valid Word file?
-  type: FAQPage
-title: Hoe Word-afbeeldingen watermerken met GroupDocs.Watermark Java
+- GroupDocs Watermark Java
+- add text watermarks to Word images
+- Java watermarking in Word documents
+title: Voeg tekstwatermerkafbeeldingen toe aan Word‑documenten met Java
 type: docs
 url: /nl/java/image-watermarks/add-watermarks-word-images-groupdocs-java/
 weight: 1
 ---
 
-# Hoe Word‑afbeeldingen watermerken met GroupDocs.Watermark Java
+# Tekstwatermerkafbeeldingen toevoegen aan Word‑documenten met Java
 
-Het beschermen van de visuele inhoud in Word‑bestanden is een veelvoorkomende eis voor bedrijven die concepten, ontwerp‑mock‑ups of vertrouwelijke diagrammen delen. **Hoe Word watermerken** documenten door tekstwatermerken direct op de ingesloten afbeeldingen toe te voegen, biedt een lichtgewicht, manipulatie‑evidente oplossing die op alle belangrijke platformen werkt. In deze tutorial leer je hoe je GroupDocs.Watermark voor Java instelt, specifieke secties target, het uiterlijk van het watermerk aanpast en het beschermde bestand opslaat.
+## Introductie
+Als je **tekstwatermerkafbeeldingen** wilt toevoegen aan Word‑documenten — voor branding, beveiliging of versie‑beheer — dan ben je hier aan het juiste adres. In deze tutorial lopen we stap voor stap door hoe je een tekstwatermerk in elke afbeelding binnen een specifieke sectie van een Word‑bestand kunt insluiten met behulp van **GroupDocs.Watermark for Java**. Aan het einde heb je een herbruikbare code‑snippet die je in elk Java‑project kunt gebruiken.
 
-## Snelle antwoorden
-- **Wat betekent “watermark Word images”?** Het betekent dat elke afbeelding in een .docx wordt gestempeld met semi‑transparante tekst zodat de bron identificeerbaar is.  
-- **Welke bibliotheek behandelt dit?** GroupDocs.Watermark for Java (v24.11+).  
-- **Heb ik een licentie nodig?** Een proefversie werkt voor ontwikkeling; een permanente licentie verwijdert alle evaluatielimieten.  
-- **Kan ik alleen één sectie targeten?** Ja—gebruik de `Section` API om afbeeldingen uit een gekozen deel van het document op te halen.  
-- **Is de output nog steeds een geldig Word‑bestand?** Absoluut; de bibliotheek herschrijft de .docx zonder bestaande inhoud te breken.
+### Snelle antwoorden
+- **Welke bibliotheek wordt hier gebruikt?** GroupDocs.Watermark for Java  
+- **Welk primair zoekwoord wordt getarget?** add text watermark images  
+- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor ontwikkeling; een licentie is vereist voor productie  
+- **Kan ik een enkele sectie targeten?** Ja – de API laat je afbeeldingen per sectie selecteren  
+- **Welke Java‑versie wordt ondersteund?** Java 8+ met Maven‑ of Gradle‑builds  
 
-## Wat betekent “how to watermark word”?
-De uitdrukking “how to watermark word” beschrijft de techniek om programmatisch zichtbare of onzichtbare merktekens in Microsoft Word‑bestanden te embedden, meestal op afbeeldingen of tekst, om eigendom te claimen, vertrouwelijkheid aan te geven of documentversies bij te houden. Door dergelijke watermerken toe te passen kun je ongeautoriseerd kopiëren ontmoedigen en de bron van de inhoud duidelijk identificeren.
+## Wat is “add text watermark images”?
+Een tekstwatermerk aan een afbeelding toevoegen betekent dat je halfdoorzichtige tekst over de afbeelding legt, zodat het watermerk met de afbeelding meereist, waar deze ook wordt weergegeven of afgedrukt. In Word‑documenten beschermt dit de visuele inhoud tegen ongeautoriseerd hergebruik.
 
-## Waarom GroupDocs.Watermark voor Java gebruiken?
-GroupDocs.Watermark voor Java biedt een eendrachtige API die meer dan 50 document‑ en afbeeldingsformaten ondersteunt, waardoor ontwikkelaars watermerken kunnen toevoegen, bewerken of verwijderen zonder bestanden te converteren. Het verwerkt grote Word‑documenten efficiënt door inhoud te streamen, biedt uitgebreide stijlopties voor tekst‑ en afbeeldingswatermerken, en bevat ingebouwde beveiligingsfuncties zoals encryptie en digitale handtekeningen, waardoor het ideaal is voor bescherming op ondernemingsniveau.
+## Waarom GroupDocs.Watermark for Java gebruiken?
+- **Volledige documentondersteuning** – werkt met DOCX, DOC en andere Office‑formaten.  
+- **Fijne controle** – je kunt individuele secties, alinea's of afbeeldingen selecteren.  
+- **Geoptimaliseerde prestaties** – verwerkt grote bestanden met minimale geheugengebruik.  
 
 ## Vereisten
-- **GroupDocs.Watermark for Java** (versie 24.11 of later).  
-- Maven of een ander build‑tool voor afhankelijkheidsbeheer.  
-- Basiskennis van Java en toegang tot een .docx‑bestand met afbeeldingen.  
+- **GroupDocs.Watermark for Java** (versie 24.11 of later).  
+- Maven (of een andere build‑tool) om afhankelijkheden te beheren.  
+- Basiskennis van Java en een Word‑document dat je wilt beveiligen.
 
-## Hoe stel ik GroupDocs.Watermark voor Java in?
-Om GroupDocs.Watermark in een Java‑project te integreren, voeg je de repository‑ en afhankelijkheidsvermeldingen toe aan je Maven `pom.xml` zoals weergegeven, en voer je vervolgens `mvn clean install` uit om de JAR‑bestanden te downloaden. Als je handmatige installatie verkiest, download je de bibliotheek van de officiële releases‑pagina en voeg je de JAR‑bestanden toe aan je classpath. Daarna kun je de API in je code gebruiken.
+## GroupDocs.Watermark for Java instellen
+Om GroupDocs.Watermark for Java te gebruiken, integreer je het in je project als volgt:
 
 **Maven‑configuratie:**  
 Voeg de volgende configuratie toe aan je `pom.xml`‑bestand:
@@ -103,16 +65,14 @@ Voeg de volgende configuratie toe aan je `pom.xml`‑bestand:
 **Directe download:**  
 Download anders de nieuwste versie van [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Licentie‑acquisitie
+### Licentie‑verwerving
 Om GroupDocs.Watermark volledig te benutten, overweeg je een licentie aan te schaffen. Je kunt beginnen met een gratis proefversie of een tijdelijke licentie aanvragen om alle functies zonder beperkingen te verkennen. Voor aankoopopties, bezoek de [GroupDocs purchase page](https://purchase.groupdocs.com/temporary-license/).
 
-Nu de bibliotheek klaar is, laten we de daadwerkelijke watermerkstappen doorlopen.
-
-## Hoe voeg ik een tekstwatermerk toe aan Word‑documentafbeeldingen?
-Het toevoegen van een tekstwatermerk aan afbeeldingen in een Word‑bestand omvat het laden van het document met `Watermarker`, het maken van een `TextWatermark`‑instantie, het selecteren van de doel‑`Section`, itereren over elk `Image`‑object, het toepassen van het watermerk via `addWatermark`, en tenslotte het opslaan van het document. Dit proces zorgt ervoor dat elke afbeelding een consistent, semi‑transparant label krijgt zonder de oorspronkelijke lay-out te wijzigen.
+## java add watermark picture – Stapsgewijze handleiding
+Hieronder vind je een volledige walkthrough die de functionaliteit van **java add watermark picture** demonstreert, met de nadruk op het toevoegen van tekstwatermerkafbeeldingen.
 
 ### Stap 1: Laad het Word‑document
-De `Watermarker`‑klasse is het toegangspunt voor alle document‑niveau bewerkingen in GroupDocs.Watermark.
+Open eerst het Word‑bestand dat je wilt aanpassen:
 
 ```java
 WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
@@ -120,7 +80,7 @@ Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions
 ```
 
 ### Stap 2: Maak en pas het tekstwatermerk aan
-`TextWatermark` vertegenwoordigt een tekstueel watermerk dat gestyled kan worden en op afbeeldingen kan worden toegepast.
+Definieer de watermerktekst, het lettertype, de uitlijning, rotatie en grootte:
 
 ```java
 TextWatermark watermark = new TextWatermark("Protected image", new Font("Arial", 8));
@@ -132,7 +92,7 @@ watermark.setScaleFactor(1);                           // Maintain original scal
 ```
 
 ### Stap 3: Toegang tot afbeeldingen in een specifieke sectie
-`Section` vertegenwoordigt een logisch deel van een Word‑document, zoals header, body of footer.
+Selecteer alleen de afbeeldingen in de eerste sectie (je kunt de index wijzigen om andere secties te targeten):
 
 ```java
 WordProcessingContent content = watermarker.getContent(WordProcessingContent.class);
@@ -140,7 +100,7 @@ var images = content.getSections().get_Item(0).findImages();
 ```
 
 ### Stap 4: Pas het watermerk toe op elke afbeelding
-`addWatermark` past het opgegeven watermerk toe op de doelafbeelding.
+Loop door de opgehaalde afbeeldingen en voeg het tekstwatermerk toe:
 
 ```java
 for (var image : images) {
@@ -149,8 +109,7 @@ for (var image : images) {
 ```
 
 ### Stap 5: Opslaan en sluiten
-`save` schrijft het gewijzigde document naar het gekozen uitvoerpad.  
-`close` geeft de native resources vrij die door de Watermarker‑instantie worden gebruikt.
+Schrijf het bijgewerkte document naar schijf en maak de resources vrij:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY");
@@ -158,54 +117,49 @@ watermarker.close();
 ```
 
 ## Veelvoorkomende problemen en oplossingen
-- **Watermerk niet zichtbaar:** Controleer of de tekstkleur contrasteert met de afbeelding‑achtergrond en dat de opacity boven 0.3 is ingesteld.  
-- **Prestatie‑vertraging bij grote bestanden:** Pre‑comprimeer afbeeldingen, verwerk secties afzonderlijk, en schakel `setMemoryLimit` in om het geheugenverbruik onder controle te houden.
+- **Watermerk niet zichtbaar:** Controleer of de tekstkleur contrasteert met de achtergrond van de afbeelding. Je kunt ook de opacity aanpassen via `watermark.setOpacity(0.5);`.  
+- **Prestatie‑vertraging bij grote bestanden:** Pre‑comprimeer afbeeldingen en verwerk het document sectie‑voor‑sectie in plaats van het hele bestand in één keer te laden.  
 
 ## Praktische toepassingen
-1. **Branding:** Stempel interne presentaties met de naam van je bedrijf voordat je ze deelt met partners.  
-2. **Vertrouwelijkheid:** Markeer eigendomsdiagrammen in technische handleidingen om ongeautoriseerde herdistributie te ontmoedigen.  
-3. **Versiebeheer:** Voeg “Draft 1‑Feb‑2026” watermerken toe aan vroege documenten voor duidelijke audit‑trails.
+1. **Branding:** Voeg bedrijfsbrede watermerken toe aan alle afbeeldingen voordat je presentaties met partners deelt.  
+2. **Vertrouwelijkheid:** Bescherm eigendomsdiagrammen in interne handleidingen.  
+3. **Versiebeheer:** Markeer concept‑afbeeldingen met “Confidential Draft” om per ongeluk vrijgeven te voorkomen.  
 
 ## Prestatie‑overwegingen
-- **Geheugenbeheer:** Roep altijd `watermarker.close()` aan na het opslaan om lekken te voorkomen.  
-- **Batchverwerking:** Bij het verwerken van tientallen bestanden, verwerk ze in groepen van 10–20 om CPU‑ en RAM‑gebruik stabiel te houden.  
-- **Afbeeldingsoptimalisatie:** Converteer hoge‑resolutie afbeeldingen naar JPEG/PNG met een redelijk DPI vóór het watermerken om de bewerking te versnellen.
+- **Geheugenbeheer:** Roep altijd `watermarker.close();` aan om native resources vrij te maken.  
+- **Batch‑verwerking:** Verwerk bij veel documenten ze in kleine batches om het geheugengebruik laag te houden.  
+- **Afbeeldingsoptimalisatie:** Gebruik JPEG of PNG met passende compressie vóór het watermerken.  
 
 ## Conclusie
-Je hebt nu een volledige, productie‑klare handleiding voor **hoe Word‑afbeeldingen watermerken** met GroupDocs.Watermark voor Java. Door specifieke secties te targeten, het uiterlijk aan te passen en best‑practice prestatie‑tips te volgen, kun je je visuele assets beschermen met minimale code‑overhead.
+Je hebt nu een volledige, productie‑klare methode om **tekstwatermerkafbeeldingen** toe te voegen aan afbeeldingen in Word‑documenten met Java. Deze techniek versterkt de documentbeveiliging, ondersteunt branding en geeft je gedetailleerde controle over welke afbeeldingen watermerken krijgen.
 
-**Volgende stappen:** Experimenteer met op afbeeldingen gebaseerde watermerken, integreer de workflow in een CI‑pipeline, of combineer het met PDF‑conversie voor cross‑format bescherming.
+**Volgende stappen:** Verken extra watermerktypeën (beeld‑gebaseerde watermerken), experimenteer met verschillende rotatiehoeken, of integreer deze code in een grotere document‑verwerkingspipeline.
 
 ## Veelgestelde vragen
+**V:** Kan ik GroupDocs.Watermark met andere bestandsformaten gebruiken?  
+**A:** Ja, de bibliotheek ondersteunt PDF, Excel, PowerPoint en afbeeldingsbestanden naast Word.
 
-**Q:** Kan GroupDocs.Watermark andere bestandstypen dan Word verwerken?  
-**A:** Ja, het ondersteunt PDF, Excel, PowerPoint en gangbare afbeeldingsformaten, waardoor een eendrachtige watermerkstrategie over je document‑ecosysteem mogelijk is.
+**V:** Hoe wijzig ik de opacity van het watermerk?  
+**A:** Roep `watermark.setOpacity(double opacity)` aan, waarbij `opacity` varieert van 0.0 (transparant) tot 1.0 (ondoorzichtig).
 
-**Q:** Hoe wijzig ik de opacity van het watermerk?  
-**A:** Gebruik de `setOpacity(double value)`‑methode op de `TextWatermark`‑instantie; waarden variëren van 0.0 (transparant) tot 1.0 (volledig ondoorzichtig).
+**V:** Wat als mijn document meerdere secties met afbeeldingen heeft?  
+**A:** Loop door `content.getSections()` en pas dezelfde logica toe op elke sectie die je nodig hebt.
 
-**Q:** Wat als mijn document meerdere secties met afbeeldingen bevat?  
-**A:** Loop door `watermarker.getDocument().getSections()` en pas dezelfde logica toe op elk `Section`‑object dat je wilt beschermen.
+**V:** Worden aangepaste lettertypen ondersteund?  
+**A:** Absoluut. Geef het volledige pad naar het `.ttf`‑bestand op bij het construeren van het `Font`‑object.
 
-**Q:** Worden aangepaste lettertypen ondersteund?  
-**A:** Absoluut—geef het pad naar een `.ttf`‑ of `.otf`‑bestand op bij het construeren van het `Font`‑object, en de bibliotheek zal het embedden in het watermerk.
-
-**Q:** Kan ik een op afbeelding gebaseerd watermerk toevoegen in plaats van tekst?  
-**A:** Ja, de API bevat een `ImageWatermark`‑klasse die een bitmap accepteert, waardoor je logo's of handtekeningen op afbeeldingen kunt stempelen.
+**V:** Kan ik een beeld‑gebaseerd watermerk toevoegen in plaats van tekst?  
+**A:** Ja—gebruik `ImageWatermark` in plaats van `TextWatermark` en volg hetzelfde `add`‑patroon.
 
 ---
 
-**Last Updated:** 2026-06-11  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
+**Laatst bijgewerkt:** 2026-01-16  
+**Getest met:** GroupDocs.Watermark 24.11 for Java  
+**Auteur:** GroupDocs  
 
-**Bronnen**  
-- [Documentatie](https://docs.groupdocs.com/watermark/java/)  
-- [API‑referentie](https://reference.groupdocs.com/watermark/java)  
-- [Download](https://releases.groupdocs.com/watermark/java/) GroupDocs.Watermark for Java
+**Resources**  
+- [Documentation](https://docs.groupdocs.com/watermark/java/)  
+- [API Reference](https://reference.groupdocs.com/watermark/java)  
+- [Download](https://releases.groupdocs.com/watermark/java/) GroupDocs.Watermark for Java  
 
-## Gerelateerde tutorials
-
-- [Hoe afbeelding‑watermerken toe te voegen in Word‑documenten met GroupDocs.Watermark voor Java](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
-- [Hoe tekst‑watermerken toe te voegen aan Word‑documenten met GroupDocs.Watermark voor Java](/watermark/java/word-processing-document-watermarking/add-text-watermark-word-docs-groupdocs-java/)
-- [Afbeeldings‑watermerken toevoegen & stylen in Word‑documenten met GroupDocs.Watermark Java](/watermark/java/word-processing-document-watermarking/groupdocs-watermark-java-add-style-word-image-watermarks/)
+---

@@ -1,86 +1,48 @@
 ---
-date: '2026-06-11'
-description: Scopri come aggiungere filigrane di testo alle immagini Word usando GroupDocs.Watermark
-  per Java—proteggi i tuoi documenti in modo efficiente.
+date: '2026-01-16'
+description: Scopri come aggiungere filigrane di testo alle immagini nei documenti
+  Word usando Java e la libreria GroupDocs.Watermark. Include esempi Java di aggiunta
+  di filigrane alle immagini.
 keywords:
-- how to watermark word
-- add text watermark
-- protect word images
-- save watermarked word
-- image watermarking java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-11'
-  description: Learn how to watermark Word images with text watermarks using GroupDocs.Watermark
-    for Java—protect your documents efficiently.
-  headline: How to Watermark Word Images with GroupDocs.Watermark Java
-  type: TechArticle
-- description: Learn how to watermark Word images with text watermarks using GroupDocs.Watermark
-    for Java—protect your documents efficiently.
-  name: How to Watermark Word Images with GroupDocs.Watermark Java
-  steps:
-  - name: Load the Word Document
-    text: The `Watermarker` class is the entry point for all document‑level operations
-      in GroupDocs.Watermark.
-  - name: Create and Customize the Text Watermark
-    text: '`TextWatermark` represents a textual watermark that can be styled and applied
-      to images.'
-  - name: Access Images in a Specific Section
-    text: '`Section` represents a logical part of a Word document such as header,
-      body, or footer.'
-  - name: Apply the Watermark to Each Image
-    text: '`addWatermark` applies the specified watermark to the target image.'
-  - name: Save and Close
-    text: '`save` writes the modified document to the chosen output path. `close`
-      releases native resources used by the Watermarker instance.'
-  type: HowTo
-- questions:
-  - answer: It means stamping every picture inside a .docx with semi‑transparent text
-      so the source is identifiable.
-    question: What does “watermark Word images” mean?
-  - answer: GroupDocs.Watermark for Java (v24.11+).
-    question: Which library handles this?
-  - answer: A trial works for development; a permanent license removes all evaluation
-      limits.
-    question: Do I need a license?
-  - answer: Yes—use the `Section` API to fetch images from a chosen part of the document.
-    question: Can I target only one section?
-  - answer: Absolutely; the library rewrites the .docx without breaking existing content.
-    question: Is the output still a valid Word file?
-  type: FAQPage
-title: Come applicare filigrane alle immagini Word con GroupDocs.Watermark Java
+- GroupDocs Watermark Java
+- add text watermarks to Word images
+- Java watermarking in Word documents
+title: Aggiungi immagini di filigrana di testo ai documenti Word con Java
 type: docs
 url: /it/java/image-watermarks/add-watermarks-word-images-groupdocs-java/
 weight: 1
 ---
 
-# Come aggiungere filigrane alle immagini Word con GroupDocs.Watermark Java
+# Aggiungere immagini di filigrana testuali ai documenti Word con Java
 
-Proteggere il contenuto visivo all'interno dei file Word è una necessità comune per le aziende che condividono bozze, mock‑up di design o diagrammi riservati. **How to watermark Word** documenti aggiungendo filigrane di testo direttamente sulle immagini incorporate ti offre una soluzione leggera e a prova di manomissione che funziona su tutte le principali piattaforme. In questo tutorial imparerai a configurare GroupDocs.Watermark per Java, a mirare sezioni specifiche, a personalizzare l'aspetto della filigrana e a salvare il file protetto.
+## Introduzione
+Se devi **aggiungere immagini di filigrana testuali** ai documenti Word — per branding, sicurezza o controllo delle versioni — sei nel posto giusto. In questo tutorial percorreremo passo passo le istruzioni per inserire una filigrana testuale su ogni immagine all'interno di una sezione specifica di un file Word usando **GroupDocs.Watermark for Java**. Alla fine avrai uno snippet di codice riutilizzabile da inserire in qualsiasi progetto Java.
 
-## Risposte rapide
-- **Cosa significa “watermark Word images”?** Significa apporre un timbro su ogni immagine all'interno di un .docx con testo semitrasparente in modo che la fonte sia identificabile.  
-- **Quale libreria gestisce questo?** GroupDocs.Watermark for Java (v24.11+).  
-- **Ho bisogno di una licenza?** Una versione di prova funziona per lo sviluppo; una licenza permanente rimuove tutti i limiti di valutazione.  
-- **Posso mirare solo una sezione?** Sì—usa l'API `Section` per recuperare le immagini da una parte scelta del documento.  
-- **L'output è ancora un file Word valido?** Assolutamente; la libreria riscrive il .docx senza rompere il contenuto esistente.
+### Risposte rapide
+- **Quale libreria viene utilizzata?** GroupDocs.Watermark for Java  
+- **Qual è la parola chiave principale?** add text watermark images  
+- **È necessaria una licenza?** Una prova gratuita è sufficiente per lo sviluppo; è richiesta una licenza per la produzione  
+- **Posso mirare a una singola sezione?** Sì – l'API consente di selezionare le immagini per sezione  
+- **Quale versione di Java è supportata?** Java 8+ con build Maven o Gradle  
 
-## Che cosa è “how to watermark word”?
-La frase “how to watermark word” descrive la tecnica di inserire programmaticamente segni visibili o invisibili nei file Microsoft Word, tipicamente su immagini o testo, per affermare la proprietà, indicare la riservatezza o tracciare le versioni del documento. Applicando tali filigrane è possibile scoraggiare la copia non autorizzata e identificare chiaramente la fonte del contenuto.
+## Che cosa significa “add text watermark images”?
+Aggiungere una filigrana testuale a un'immagine significa sovrapporre del testo semitrasparente sopra la foto, così che la filigrana viaggi con l'immagine ovunque venga visualizzata o stampata. Nei documenti Word, questo protegge il contenuto visivo da utilizzi non autorizzati.
 
-## Perché usare GroupDocs.Watermark per Java?
-GroupDocs.Watermark per Java offre un'API unificata che supporta oltre 50 formati di documenti e immagini, consentendo agli sviluppatori di aggiungere, modificare o rimuovere filigrane senza convertire i file. Elabora grandi documenti Word in modo efficiente tramite lo streaming del contenuto, fornisce ampie opzioni di stile per le filigrane di testo e immagine, e include funzionalità di sicurezza integrate come crittografia e firme digitali, rendendola ideale per protezione a livello enterprise.
+## Perché usare GroupDocs.Watermark for Java?
+- **Supporto a documento completo** – funziona con DOCX, DOC e altri formati Office.  
+- **Controllo granulare** – puoi selezionare sezioni, paragrafi o immagini individuali.  
+- **Ottimizzato per le prestazioni** – elabora file di grandi dimensioni con un consumo minimo di memoria.  
 
 ## Prerequisiti
-- **GroupDocs.Watermark for Java** (version 24.11 o successiva).  
-- Maven o un altro strumento di build per la gestione delle dipendenze.  
-- Conoscenze di base di Java e accesso a un file .docx contenente immagini.  
+- **GroupDocs.Watermark for Java** (versione 24.11 o successiva).  
+- Maven (o un altro tool di build) per gestire le dipendenze.  
+- Conoscenze di base di Java e un documento Word da proteggere.
 
-## Come configuro GroupDocs.Watermark per Java?
-Per integrare GroupDocs.Watermark in un progetto Java, aggiungi il repository e le voci di dipendenza al tuo `pom.xml` Maven come mostrato, quindi esegui `mvn clean install` per scaricare i JAR. Se preferisci una configurazione manuale, scarica la libreria dalla pagina ufficiale delle release e includi i file JAR nel tuo classpath. Dopo ciò, puoi iniziare a utilizzare l'API nel tuo codice.
+## Configurazione di GroupDocs.Watermark for Java
+Per utilizzare GroupDocs.Watermark for Java, integralo nel tuo progetto come segue:
 
 **Configurazione Maven:**  
-Includi la seguente configurazione nel tuo file `pom.xml`:
+Inserisci la seguente configurazione nel tuo file `pom.xml`:
 
 ```xml
 <repositories>
@@ -104,23 +66,21 @@ Includi la seguente configurazione nel tuo file `pom.xml`:
 In alternativa, scarica l'ultima versione da [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Acquisizione della licenza
-Per utilizzare appieno GroupDocs.Watermark, considera l'ottenimento di una licenza. Puoi iniziare con una prova gratuita o richiedere una licenza temporanea per esplorare tutte le funzionalità senza limitazioni. Per le opzioni di acquisto, visita la [pagina di acquisto di GroupDocs](https://purchase.groupdocs.com/temporary-license/).
+Per sfruttare appieno GroupDocs.Watermark, considera l'ottenimento di una licenza. Puoi iniziare con una prova gratuita o richiedere una licenza temporanea per esplorare tutte le funzionalità senza limitazioni. Per le opzioni di acquisto, visita la [pagina di acquisto di GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 
-Ora che la libreria è pronta, percorriamo i passaggi effettivi di aggiunta della filigrana.
+## java add watermark picture – Guida passo‑passo
+Di seguito trovi un walkthrough completo che dimostra la funzionalità **java add watermark picture** mantenendo il focus sull'aggiunta di immagini di filigrana testuali.
 
-## Come aggiungere una filigrana di testo alle immagini di un documento Word?
-Aggiungere una filigrana di testo alle immagini all'interno di un file Word comporta il caricamento del documento con `Watermarker`, la creazione di un'istanza `TextWatermark`, la selezione della `Section` target, l'iterazione su ogni oggetto `Image`, l'applicazione della filigrana tramite `addWatermark` e infine il salvataggio del documento. Questo processo garantisce che ogni immagine riceva un'etichetta semitrasparente e coerente senza alterare il layout originale.
-
-### Passo 1: Carica il documento Word
-La classe `Watermarker` è il punto di ingresso per tutte le operazioni a livello di documento in GroupDocs.Watermark.
+### Passo 1: Caricare il documento Word
+Per prima cosa, apri il file Word che desideri modificare:
 
 ```java
 WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-### Passo 2: Crea e personalizza la filigrana di testo
-`TextWatermark` rappresenta una filigrana testuale che può essere stilizzata e applicata alle immagini.
+### Passo 2: Creare e personalizzare la filigrana testuale
+Definisci il testo della filigrana, il font, l'allineamento, la rotazione e le dimensioni:
 
 ```java
 TextWatermark watermark = new TextWatermark("Protected image", new Font("Arial", 8));
@@ -131,16 +91,16 @@ watermark.setSizingType(SizingType.ScaleToParentDimensions);// Scale size relati
 watermark.setScaleFactor(1);                           // Maintain original scale factor
 ```
 
-### Passo 3: Accedi alle immagini in una sezione specifica
-`Section` rappresenta una parte logica di un documento Word, come intestazione, corpo o piè di pagina.
+### Passo 3: Accedere alle immagini in una sezione specifica
+Seleziona solo le immagini all'interno della prima sezione (puoi cambiare l'indice per puntare ad altre sezioni):
 
 ```java
 WordProcessingContent content = watermarker.getContent(WordProcessingContent.class);
 var images = content.getSections().get_Item(0).findImages();
 ```
 
-### Passo 4: Applica la filigrana a ogni immagine
-`addWatermark` applica la filigrana specificata all'immagine target.
+### Passo 4: Applicare la filigrana a ciascuna immagine
+Scorri le immagini recuperate e incorpora la filigrana testuale:
 
 ```java
 for (var image : images) {
@@ -148,9 +108,8 @@ for (var image : images) {
 }
 ```
 
-### Passo 5: Salva e chiudi
-`save` scrive il documento modificato nel percorso di output scelto.  
-`close` rilascia le risorse native utilizzate dall'istanza Watermarker.
+### Passo 5: Salvare e chiudere
+Scrivi il documento aggiornato su disco e rilascia le risorse:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY");
@@ -158,54 +117,47 @@ watermarker.close();
 ```
 
 ## Problemi comuni e soluzioni
-- **Filigrana non visibile:** Verifica che il colore del testo contrasti con lo sfondo dell'immagine e che l'opacità sia impostata sopra 0,3.  
-- **Ritardo delle prestazioni su file grandi:** Pre‑comprime le immagini, elabora le sezioni singolarmente e abilita `setMemoryLimit` per mantenere l'uso della memoria sotto controllo.  
+- **Filigrana non visibile:** Verifica che il colore del testo contrasti con lo sfondo dell'immagine. Puoi anche regolare l'opacità tramite `watermark.setOpacity(0.5);`.  
+- **Rallentamento delle prestazioni su file di grandi dimensioni:** Pre‑comprime le immagini e processa il documento sezione per sezione invece di caricare l'intero file in una volta.  
 
 ## Applicazioni pratiche
-1. **Branding:** Apponi il nome della tua azienda alle presentazioni interne prima di condividerle con i partner.  
-2. **Confidenzialità:** Contrassegna i diagrammi proprietari nei manuali di ingegneria per scoraggiare la redistribuzione non autorizzata.  
-3. **Controllo versione:** Aggiungi filigrane “Draft 1‑Feb‑2026” ai documenti in fase iniziale per tracce di audit chiare.  
+1. **Branding:** Inserisci filigrane aziendali su tutte le immagini prima di condividere presentazioni con i partner.  
+2. **Confidenzialità:** Proteggi diagrammi proprietari nei manuali interni.  
+3. **Controllo delle versioni:** Marca le immagini di bozza con “Confidential Draft” per evitare pubblicazioni accidentali.  
 
 ## Considerazioni sulle prestazioni
-- **Gestione della memoria:** Chiama sempre `watermarker.close()` dopo il salvataggio per prevenire perdite.  
-- **Elaborazione batch:** Quando gestisci decine di file, elabora in gruppi di 10–20 per mantenere stabile l'uso di CPU e RAM.  
-- **Ottimizzazione delle immagini:** Converti le immagini ad alta risoluzione in JPEG/PNG con una DPI ragionevole prima di aggiungere la filigrana per velocizzare l'operazione.  
+- **Gestione della memoria:** Chiama sempre `watermarker.close();` per liberare le risorse native.  
+- **Elaborazione batch:** Quando gestisci molti documenti, elabora in piccoli lotti per mantenere basso l'utilizzo di memoria.  
+- **Ottimizzazione delle immagini:** Usa JPEG o PNG con compressione adeguata prima di applicare la filigrana.  
 
 ## Conclusione
-Ora hai una ricetta completa, pronta per la produzione, per **how to watermark Word** immagini usando GroupDocs.Watermark per Java. Mirando sezioni specifiche, personalizzando l'aspetto e seguendo i consigli di prestazione migliori, puoi proteggere i tuoi asset visivi con un overhead di codice minimo.
+Ora disponi di un metodo completo e pronto per la produzione per **aggiungere immagini di filigrana testuali** alle immagini dei documenti Word usando Java. Questa tecnica rafforza la sicurezza dei documenti, consolida il branding e ti offre un controllo granulare su quali immagini ricevano la filigrana.
 
-**Passi successivi:** Sperimenta con filigrane basate su immagine, integra il flusso di lavoro in una pipeline CI, o combinalo con la conversione PDF per protezione cross‑format.
+**Passi successivi:** Esplora altri tipi di filigrana (filigrane basate su immagine), sperimenta angoli di rotazione diversi o integra questo codice in una pipeline più ampia di elaborazione documenti.
 
 ## Domande frequenti
+**D:** Posso usare GroupDocs.Watermark con altri formati di file?  
+**R:** Sì, la libreria supporta PDF, Excel, PowerPoint e file immagine oltre a Word.
 
-**Q:** GroupDocs.Watermark può gestire altri tipi di file oltre a Word?  
-**A:** Sì, supporta PDF, Excel, PowerPoint e formati di immagine comuni, consentendo una strategia di filigrana unificata nel tuo ecosistema di documenti.
+**D:** Come modifico l'opacità della filigrana?  
+**R:** Chiama `watermark.setOpacity(double opacity)` dove `opacity` varia da 0.0 (trasparente) a 1.0 (opaco).
 
-**Q:** Come modifico l'opacità della filigrana?  
-**A:** Usa il metodo `setOpacity(double value)` sull'istanza `TextWatermark`; i valori vanno da 0.0 (trasparente) a 1.0 (completamente opaco).
+**D:** Cosa succede se il mio documento ha più sezioni con immagini?  
+**R:** Scorri `content.getSections()` e applica la stessa logica a ciascuna sezione necessaria.
 
-**Q:** Cosa succede se il mio documento contiene più sezioni con immagini?  
-**A:** Itera su `watermarker.getDocument().getSections()` e applica la stessa logica a ogni oggetto `Section` che desideri proteggere.
+**D:** Sono supportati font personalizzati?  
+**R:** Assolutamente. Fornisci il percorso completo al file `.ttf` quando costruisci l'oggetto `Font`.
 
-**Q:** Sono supportati i font personalizzati?  
-**A:** Assolutamente—fornisci il percorso a un file `.ttf` o `.otf` quando costruisci l'oggetto `Font`, e la libreria lo incorporerà nella filigrana.
-
-**Q:** Posso aggiungere una filigrana basata su immagine invece di testo?  
-**A:** Sì, l'API include una classe `ImageWatermark` che accetta un bitmap, permettendoti di apporre loghi o firme sulle immagini.
+**D:** Posso aggiungere una filigrana basata su immagine invece di testo?  
+**R:** Sì—usa `ImageWatermark` al posto di `TextWatermark` e segui lo stesso pattern `add`.
 
 ---
 
-**Ultimo aggiornamento:** 2026-06-11  
+**Ultimo aggiornamento:** 2026-01-16  
 **Testato con:** GroupDocs.Watermark 24.11 for Java  
 **Autore:** GroupDocs  
 
 **Risorse**  
-- [Documentazione](https://docs.groupdocs.com/watermark/java/)  
-- [Riferimento API](https://reference.groupdocs.com/watermark/java)  
+- [Documentation](https://docs.groupdocs.com/watermark/java/)  
+- [API Reference](https://reference.groupdocs.com/watermark/java)  
 - [Download](https://releases.groupdocs.com/watermark/java/) GroupDocs.Watermark for Java
-
-## Tutorial correlati
-
-- [Come aggiungere filigrane immagine nei documenti Word usando GroupDocs.Watermark per Java](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
-- [Come aggiungere filigrane di testo nei documenti Word usando GroupDocs.Watermark per Java](/watermark/java/word-processing-document-watermarking/add-text-watermark-word-docs-groupdocs-java/)
-- [Aggiungi e stile filigrane immagine nei documenti Word usando GroupDocs.Watermark Java](/watermark/java/word-processing-document-watermarking/groupdocs-watermark-java-add-style-word-image-watermarks/)

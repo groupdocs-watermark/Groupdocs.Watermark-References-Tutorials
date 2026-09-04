@@ -1,86 +1,47 @@
 ---
-date: '2026-06-11'
-description: Μάθετε πώς να προσθέτετε υδατογράφημα σε εικόνες Word με υδατογραφήματα
-  κειμένου χρησιμοποιώντας το GroupDocs.Watermark for Java—προστατέψτε τα έγγραφά
-  σας αποδοτικά.
+date: '2026-01-16'
+description: Μάθετε πώς να προσθέτετε εικόνες υδατογραφήματος κειμένου σε έγγραφα
+  Word χρησιμοποιώντας τη Java και τη βιβλιοθήκη GroupDocs.Watermark. Περιλαμβάνει
+  παραδείγματα προσθήκης υδατογραφήματος εικόνας σε Java.
 keywords:
-- how to watermark word
-- add text watermark
-- protect word images
-- save watermarked word
-- image watermarking java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-11'
-  description: Learn how to watermark Word images with text watermarks using GroupDocs.Watermark
-    for Java—protect your documents efficiently.
-  headline: How to Watermark Word Images with GroupDocs.Watermark Java
-  type: TechArticle
-- description: Learn how to watermark Word images with text watermarks using GroupDocs.Watermark
-    for Java—protect your documents efficiently.
-  name: How to Watermark Word Images with GroupDocs.Watermark Java
-  steps:
-  - name: Load the Word Document
-    text: The `Watermarker` class is the entry point for all document‑level operations
-      in GroupDocs.Watermark.
-  - name: Create and Customize the Text Watermark
-    text: '`TextWatermark` represents a textual watermark that can be styled and applied
-      to images.'
-  - name: Access Images in a Specific Section
-    text: '`Section` represents a logical part of a Word document such as header,
-      body, or footer.'
-  - name: Apply the Watermark to Each Image
-    text: '`addWatermark` applies the specified watermark to the target image.'
-  - name: Save and Close
-    text: '`save` writes the modified document to the chosen output path. `close`
-      releases native resources used by the Watermarker instance.'
-  type: HowTo
-- questions:
-  - answer: It means stamping every picture inside a .docx with semi‑transparent text
-      so the source is identifiable.
-    question: What does “watermark Word images” mean?
-  - answer: GroupDocs.Watermark for Java (v24.11+).
-    question: Which library handles this?
-  - answer: A trial works for development; a permanent license removes all evaluation
-      limits.
-    question: Do I need a license?
-  - answer: Yes—use the `Section` API to fetch images from a chosen part of the document.
-    question: Can I target only one section?
-  - answer: Absolutely; the library rewrites the .docx without breaking existing content.
-    question: Is the output still a valid Word file?
-  type: FAQPage
-title: Πώς να προσθέσετε υδατογράφημα σε εικόνες Word με GroupDocs.Watermark Java
+- GroupDocs Watermark Java
+- add text watermarks to Word images
+- Java watermarking in Word documents
+title: Προσθήκη εικόνων υδατογραφήματος κειμένου σε έγγραφα Word με Java
 type: docs
 url: /el/java/image-watermarks/add-watermarks-word-images-groupdocs-java/
 weight: 1
 ---
 
-# Πώς να Προσθέσετε Υδατογράφημα σε Εικόνες Word με το GroupDocs.Watermark Java
+# Προσθήκη εικόνων υδατογραφήματος κειμένου σε έγγραφα Word με Java
 
-Η προστασία του οπτικού περιεχομένου μέσα σε αρχεία Word είναι μια κοινή απαίτηση για επιχειρήσεις που μοιράζονται σχέδια, προεπισκοπήσεις σχεδίου ή εμπιστευτικά διαγράμματα. **How to watermark Word** έγγραφα προσθέτοντας υδατογραφήματα κειμένου απευθείας πάνω στις ενσωματωμένες εικόνες σας παρέχει μια ελαφριά, ανιχνεύσιμη λύση που λειτουργεί σε όλες τις κύριες πλατφόρμες. Σε αυτόν τον οδηγό θα μάθετε πώς να ρυθμίσετε το GroupDocs.Watermark για Java, να στοχεύσετε συγκεκριμένες ενότητες, να προσαρμόσετε την εμφάνιση του υδατογραφήματος και να αποθηκεύσετε το προστατευμένο αρχείο.
+## Εισαγωγή
+Αν χρειάζεστε **προσθήκη εικόνων υδατογραφήματος κειμένου** σε έγγραφα Word — για branding, ασφάλεια ή σκοπούς ελέγχου εκδόσεων — βρίσκεστε στο σωστό μέρος. Σε αυτό το tutorial θα περάσουμε βήμα‑βήμα τις ακριβείς διαδικασίες για να ενσωματώσουμε ένα υδατογράφημα κειμένου πάνω σε κάθε εικόνα μέσα σε μια συγκεκριμένη ενότητα ενός αρχείου Word χρησιμοποιώντας το **GroupDocs.Watermark for Java**. Στο τέλος, θα έχετε ένα επαναχρησιμοποιήσιμο κομμάτι κώδικα που μπορεί να ενσωματωθεί σε οποιοδήποτε έργο Java.
 
-## Γρήγορες Απαντήσεις
-- **What does “watermark Word images” mean?** Σημαίνει την σήμανση κάθε εικόνας μέσα σε ένα .docx με ημιδιαφανές κείμενο ώστε η πηγή να είναι αναγνωρίσιμη.  
-- **Which library handles this?** GroupDocs.Watermark for Java (v24.11+).  
-- **Do I need a license?** Μια δοκιμαστική έκδοση λειτουργεί για ανάπτυξη· μια μόνιμη άδεια αφαιρεί όλους τους περιορισμούς αξιολόγησης.  
-- **Can I target only one section?** Ναι—χρησιμοποιήστε το API `Section` για να ανακτήσετε εικόνες από το επιλεγμένο τμήμα του εγγράφου.  
-- **Is the output still a valid Word file?** Απολύτως· η βιβλιοθήκη ξαναγράφει το .docx χωρίς να διασπά το υπάρχον περιεχόμενο.
+### Γρήγορες Απαντήσεις
+- **Ποια βιβλιοθήκη χρησιμοποιείται;** GroupDocs.Watermark for Java  
+- **Ποια κύρια λέξη‑κλειδί στοχεύεται;** add text watermark images  
+- **Χρειάζομαι άδεια;** A free trial works for development; a license is required for production  
+- **Μπορώ να στοχεύσω μια μόνο ενότητα;** Yes – the API lets you select images per section  
+- **Ποια έκδοση Java υποστηρίζεται;** Java 8+ with Maven or Gradle builds  
 
-## Τι είναι το “how to watermark word”;
-Η φράση “how to watermark word” περιγράφει την τεχνική προγραμματιστικής ενσωμάτωσης ορατών ή αόρατων σημάτων σε αρχεία Microsoft Word, συνήθως πάνω σε εικόνες ή κείμενο, για να δηλώσετε ιδιοκτησία, να υποδείξετε εμπιστευτικότητα ή να παρακολουθήσετε εκδόσεις εγγράφων. Εφαρμόζοντας τέτοια υδατογραφήματα μπορείτε να αποτρέψετε την μη εξουσιοδοτημένη αντιγραφή και να ταυτοποιήσετε σαφώς την πηγή του περιεχομένου.
+## Τι είναι “add text watermark images”;
+Η προσθήκη υδατογραφήματος κειμένου σε μια εικόνα σημαίνει την επικάλυψη ημιδιαφανούς κειμένου πάνω στη φωτογραφία, ώστε το υδατογράφημα να μετακινείται μαζί με την εικόνα όπου και αν εμφανίζεται ή εκτυπώνεται. Σε έγγραφα Word, αυτό προστατεύει το οπτικό περιεχόμενο από μη εξουσιοδοτημένη επαναχρησιμοποίηση.
 
-## Γιατί να χρησιμοποιήσετε το GroupDocs.Watermark για Java;
-Το GroupDocs.Watermark για Java προσφέρει ένα ενοποιημένο API που υποστηρίζει πάνω από 50 μορφές εγγράφων και εικόνων, επιτρέποντας στους προγραμματιστές να προσθέτουν, επεξεργάζονται ή αφαιρούν υδατογραφήματα χωρίς μετατροπή αρχείων. Επεξεργάζεται μεγάλα έγγραφα Word αποδοτικά μέσω ροής περιεχομένου, παρέχει εκτενείς επιλογές στυλ για υδατογραφήματα κειμένου και εικόνας, και περιλαμβάνει ενσωματωμένα χαρακτηριστικά ασφαλείας όπως κρυπτογράφηση και ψηφιακές υπογραφές, καθιστώντας το ιδανικό για προστασία επιχειρησιακού επιπέδου.
+## Γιατί να χρησιμοποιήσετε το GroupDocs.Watermark for Java;
+- **Full‑document support** – works with DOCX, DOC, and other Office formats.  
+- **Fine‑grained control** – you can pick individual sections, paragraphs, or images.  
+- **Performance‑optimized** – processes large files with minimal memory overhead.  
 
 ## Προαπαιτούμενα
-- **GroupDocs.Watermark for Java** (έκδοση 24.11 ή νεότερη).  
-- Maven ή άλλο εργαλείο κατασκευής για διαχείριση εξαρτήσεων.  
-- Βασικές γνώσεις Java και πρόσβαση σε αρχείο .docx που περιέχει εικόνες.  
+- **GroupDocs.Watermark for Java** (version 24.11 or later).  
+- Maven (or another build tool) to manage dependencies.  
+- Basic Java knowledge and a Word document you want to protect.
 
-## Πώς να ρυθμίσετε το GroupDocs.Watermark για Java;
-Για να ενσωματώσετε το GroupDocs.Watermark σε ένα έργο Java, προσθέστε το αποθετήριο και τις εγγραφές εξαρτήσεων στο Maven `pom.xml` όπως φαίνεται, στη συνέχεια εκτελέστε `mvn clean install` για να κατεβάσετε τα JARs. Εάν προτιμάτε χειροκίνητη εγκατάσταση, κατεβάστε τη βιβλιοθήκη από τη σελίδα επίσημων εκδόσεων και συμπεριλάβετε τα αρχεία JAR στην classpath σας. Μετά από αυτό, μπορείτε να αρχίσετε να χρησιμοποιείτε το API στον κώδικά σας.
+## Ρύθμιση του GroupDocs.Watermark for Java
+Για να χρησιμοποιήσετε το GroupDocs.Watermark for Java, ενσωματώστε το στο έργο σας ως εξής:
 
-**Διαμόρφωση Maven:**  
+**Maven Setup:**  
 Include the following configuration in your `pom.xml` file:
 
 ```xml
@@ -101,27 +62,25 @@ Include the following configuration in your `pom.xml` file:
 </dependencies>
 ```
 
-**Άμεση Λήψη:**  
+**Direct Download:**  
 Alternatively, download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Απόκτηση Άδειας
-Για να αξιοποιήσετε πλήρως το GroupDocs.Watermark, σκεφτείτε την απόκτηση άδειας. Μπορείτε να ξεκινήσετε με μια δωρεάν δοκιμαστική έκδοση ή να ζητήσετε προσωρινή άδεια για να εξερευνήσετε όλες τις λειτουργίες χωρίς περιορισμούς. Για επιλογές αγοράς, επισκεφθείτε τη [GroupDocs purchase page](https://purchase.groupdocs.com/temporary-license/).
+To fully utilize GroupDocs.Watermark, consider obtaining a license. You can start with a free trial or request a temporary license to explore all features without limitations. For purchasing options, visit the [GroupDocs purchase page](https://purchase.groupdocs.com/temporary-license/).
 
-Τώρα που η βιβλιοθήκη είναι έτοιμη, ας περάσουμε από τα πραγματικά βήματα υδατογράφησης.
+## java add watermark picture – Οδηγός βήμα‑βήμα
+Below is a complete walkthrough that demonstrates **java add watermark picture** functionality while keeping the focus on adding text watermark images.
 
-## Πώς να προσθέσετε υδατογράφημα κειμένου σε εικόνες εγγράφου Word;
-Η προσθήκη υδατογραφήματος κειμένου σε εικόνες μέσα σε αρχείο Word περιλαμβάνει τη φόρτωση του εγγράφου με `Watermarker`, τη δημιουργία μιας παρουσίας `TextWatermark`, την επιλογή του στόχου `Section`, την επανάληψη σε κάθε αντικείμενο `Image`, την εφαρμογή του υδατογραφήματος μέσω `addWatermark` και τέλος την αποθήκευση του εγγράφου. Αυτή η διαδικασία εξασφαλίζει ότι κάθε εικόνα λαμβάνει μια συνεπή, ημιδιαφανή ετικέτα χωρίς να αλλάζει η αρχική διάταξη.
-
-### Βήμα 1: Φόρτωση του Εγγράφου Word
-Η κλάση `Watermarker` είναι το σημείο εισόδου για όλες τις λειτουργίες σε επίπεδο εγγράφου στο GroupDocs.Watermark.
+### Βήμα 1: Φόρτωση του εγγράφου Word
+First, open the Word file you want to modify:
 
 ```java
 WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-### Βήμα 2: Δημιουργία και Προσαρμογή του Υδατογραφήματος Κειμένου
-`TextWatermark` αντιπροσωπεύει ένα υδατογράφημα κειμένου που μπορεί να μορφοποιηθεί και να εφαρμοστεί σε εικόνες.
+### Βήμα 2: Δημιουργία και προσαρμογή του κειμενικού υδατογραφήματος
+Define the watermark text, font, alignment, rotation, and sizing:
 
 ```java
 TextWatermark watermark = new TextWatermark("Protected image", new Font("Arial", 8));
@@ -132,16 +91,16 @@ watermark.setSizingType(SizingType.ScaleToParentDimensions);// Scale size relati
 watermark.setScaleFactor(1);                           // Maintain original scale factor
 ```
 
-### Βήμα 3: Πρόσβαση σε Εικόνες σε Συγκεκριμένη Ενότητα
-`Section` αντιπροσωπεύει ένα λογικό τμήμα ενός εγγράφου Word όπως κεφαλίδα, σώμα ή υποσέλιδο.
+### Βήμα 3: Πρόσβαση σε εικόνες σε συγκεκριμένη ενότητα
+Target only the images inside the first section (you can change the index to target other sections):
 
 ```java
 WordProcessingContent content = watermarker.getContent(WordProcessingContent.class);
 var images = content.getSections().get_Item(0).findImages();
 ```
 
-### Βήμα 4: Εφαρμογή του Υδατογραφήματος σε Κάθε Εικόνα
-`addWatermark` εφαρμόζει το καθορισμένο υδατογράφημα στην εικόνα-στόχο.
+### Βήμα 4: Εφαρμογή του υδατογραφήματος σε κάθε εικόνα
+Loop through the retrieved images and embed the text watermark:
 
 ```java
 for (var image : images) {
@@ -149,64 +108,56 @@ for (var image : images) {
 }
 ```
 
-### Βήμα 5: Αποθήκευση και Κλείσιμο
-`save` γράφει το τροποποιημένο έγγραφο στην επιλεγμένη διαδρομή εξόδου.  
-`close` απελευθερώνει τους εγγενείς πόρους που χρησιμοποιεί η παρουσία Watermarker.
+### Βήμα 5: Αποθήκευση και κλείσιμο
+Write the updated document to disk and release resources:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY");
 watermarker.close();
 ```
 
-## Κοινά Προβλήματα και Λύσεις
-- **Watermark not visible:** Επαληθεύστε ότι το χρώμα του κειμένου αντιτίθεται στο φόντο της εικόνας και ότι η διαφάνεια είναι ορισμένη πάνω από 0.3.  
-- **Performance lag on large files:** Προ-συμπιέστε τις εικόνες, επεξεργαστείτε τις ενότητες ξεχωριστά και ενεργοποιήστε το `setMemoryLimit` για να διατηρήσετε τη χρήση μνήμης υπό έλεγχο.  
+## Συχνά Προβλήματα και Λύσεις
+- **Watermark not visible:** Verify that the text color contrasts with the image background. You can also adjust opacity via `watermark.setOpacity(0.5);`.  
+- **Performance slowdown on large files:** Pre‑compress images and process the document section‑by‑section instead of loading the entire file at once.  
 
 ## Πρακτικές Εφαρμογές
-1. **Branding:** Σφραγίστε τις εσωτερικές παρουσιάσεις με το όνομα της εταιρείας σας πριν τις μοιραστείτε με συνεργάτες.  
-2. **Confidentiality:** Σημειώστε ιδιόκτητα διαγράμματα σε τεχνικά εγχειρίδια για να αποτρέψετε την μη εξουσιοδοτημένη διανομή.  
-3. **Version Control:** Προσθέστε υδατογραφήματα “Draft 1‑Feb‑2026” σε έγγραφα πρώιμου σταδίου για σαφείς διαδρομές ελέγχου.  
+1. **Branding:** Insert company‑wide watermarks on all images before sharing presentations with partners.  
+2. **Confidentiality:** Protect proprietary diagrams in internal manuals.  
+3. **Version control:** Mark draft images with “Confidential Draft” to avoid accidental release.  
 
-## Παράγοντες Απόδοσης
-- **Memory Management:** Πάντα καλέστε `watermarker.close()` μετά την αποθήκευση για να αποτρέψετε διαρροές.  
-- **Batch Processing:** Κατά την επεξεργασία δεκάδων αρχείων, επεξεργαστείτε τα σε ομάδες των 10–20 για να διατηρήσετε τη χρήση CPU και RAM σταθερή.  
-- **Image Optimization:** Μετατρέψτε τις υψηλής ανάλυσης εικόνες σε JPEG/PNG με λογικό DPI πριν την υδτογράφηση για να επιταχύνετε τη λειτουργία.  
+## Σκέψεις Απόδοσης
+- **Memory Management:** Always call `watermarker.close();` to free native resources.  
+- **Batch Processing:** When handling many documents, process them in small batches to keep memory usage low.  
+- **Image Optimization:** Use JPEG or PNG with appropriate compression before watermarking.  
 
 ## Συμπέρασμα
-Τώρα έχετε μια πλήρη, έτοιμη για παραγωγή συνταγή για **how to watermark Word** εικόνες χρησιμοποιώντας το GroupDocs.Watermark για Java. Με την στόχευση συγκεκριμένων ενοτήτων, την προσαρμογή της εμφάνισης και ακολουθώντας τις βέλτιστες πρακτικές απόδοσης, μπορείτε να προστατεύσετε τα οπτικά σας περιουσιακά στοιχεία με ελάχιστο κώδικα.
+You now have a complete, production‑ready method to **add text watermark images** to Word document pictures using Java. This technique strengthens document security, reinforces branding, and gives you granular control over which images receive watermarks.
 
-**Next Steps:** Πειραματιστείτε με υδατογραφήματα βασισμένα σε εικόνες, ενσωματώστε τη ροή εργασίας σε CI pipeline, ή συνδυάστε την με μετατροπή PDF για προστασία πολλαπλών μορφών.
+**Next Steps:** Explore additional watermark types (image‑based watermarks), experiment with different rotation angles, or integrate this code into a larger document‑processing pipeline.
 
 ## Συχνές Ερωτήσεις
+**Q:** Can I use GroupDocs.Watermark with other file formats?  
+**A:** Yes, the library supports PDF, Excel, PowerPoint, and image files in addition to Word.
 
-**Q:** Μπορεί το GroupDocs.Watermark να χειριστεί άλλους τύπους αρχείων εκτός από Word;  
-**A:** Ναι, υποστηρίζει PDF, Excel, PowerPoint και κοινές μορφές εικόνων, επιτρέποντας μια ενοποιημένη στρατηγική υδατογράφησης σε όλο το οικοσύστημα εγγράφων σας.
+**Q:** How do I change the watermark’s opacity?  
+**A:** Call `watermark.setOpacity(double opacity)` where `opacity` ranges from 0.0 (transparent) to 1.0 (opaque).
 
-**Q:** Πώς αλλάζω τη διαφάνεια του υδατογραφήματος;  
-**A:** Χρησιμοποιήστε τη μέθοδο `setOpacity(double value)` στην παρουσία `TextWatermark`; οι τιμές κυμαίνονται από 0.0 (διαφανές) έως 1.0 (πλήρως αδιαφανές).
+**Q:** What if my document has multiple sections with images?  
+**A:** Loop through `content.getSections()` and apply the same logic to each section you need.
 
-**Q:** Τι γίνεται αν το έγγραφό μου περιέχει πολλές ενότητες με εικόνες;  
-**A:** Επανάληψη μέσω `watermarker.getDocument().getSections()` και εφαρμογή της ίδιας λογικής σε κάθε αντικείμενο `Section` που θέλετε να προστατέψετε.
+**Q:** Are custom fonts supported?  
+**A:** Absolutely. Provide the full path to the `.ttf` file when constructing the `Font` object.
 
-**Q:** Υποστηρίζονται προσαρμοσμένες γραμματοσειρές;  
-**A:** Απόλυτα—παρέχετε τη διαδρομή σε αρχείο `.ttf` ή `.otf` κατά τη δημιουργία του αντικειμένου `Font`, και η βιβλιοθήκη θα το ενσωματώσει στο υδατογράφημα.
-
-**Q:** Μπορώ να προσθέσω υδατογράφημα βασισμένο σε εικόνα αντί για κείμενο;  
-**A:** Ναι, το API περιλαμβάνει την κλάση `ImageWatermark` που δέχεται bitmap, επιτρέποντάς σας να σφραγίσετε λογότυπα ή υπογραφές πάνω σε εικόνες.
+**Q:** Can I add an image‑based watermark instead of text?  
+**A:** Yes—use `ImageWatermark` instead of `TextWatermark` and follow the same `add` pattern.
 
 ---
 
-**Last Updated:** 2026-06-11  
+**Last Updated:** 2026-01-16  
 **Tested With:** GroupDocs.Watermark 24.11 for Java  
 **Author:** GroupDocs  
 
-**Πόροι**  
+**Resources**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
 - [Download](https://releases.groupdocs.com/watermark/java/) GroupDocs.Watermark for Java
-
-## Σχετικά Μαθήματα
-
-- [How to Add Image Watermarks in Word Documents Using GroupDocs.Watermark for Java](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
-- [How to Add Text Watermarks to Word Documents Using GroupDocs.Watermark for Java](/watermark/java/word-processing-document-watermarking/add-text-watermark-word-docs-groupdocs-java/)
-- [Add & Style Image Watermarks in Word Documents Using GroupDocs.Watermark Java](/watermark/java/word-processing-document-watermarking/groupdocs-watermark-java-add-style-word-image-watermarks/)
