@@ -1,96 +1,49 @@
 ---
-date: '2026-06-21'
-description: Μάθετε πώς να προσθέσετε υδατογράφημα κειμένου java χρησιμοποιώντας το
-  GroupDocs.Watermark. Αποτρέψτε διαρροές μνήμης java ενώ εξασφαλίζετε και προωθείτε
-  τα έγγραφά σας αποδοτικά.
+date: '2026-01-06'
+description: Μάθετε πώς να προσθέσετε υδατογράφημα Java χρησιμοποιώντας το GroupDocs.Watermark
+  API. Προστατέψτε τα έγγραφά σας και ενισχύστε το branding σας χωρίς κόπο.
 keywords:
-- add text watermark java
-- prevent memory leaks java
-- GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  headline: Add Text Watermark Java with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  name: Add Text Watermark Java with GroupDocs.Watermark
-  steps:
-  - name: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-    text: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-  - name: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-    text: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-  - name: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-    text: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-  - name: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-    text: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-  type: HowTo
-- questions:
-  - answer: Yes, GroupDocs.Watermark also supports `ImageWatermark` objects for logos
-      or stamps.
-    question: Can I add image watermarks in addition to text?
-  - answer: Absolutely. Provide the password via `LoadOptions` when constructing the
-      `Watermarker`.
-    question: Does the library work with password‑protected PDFs?
-  - answer: Use a loop to instantiate a `Watermarker` per file, apply the watermark,
-      save, and close immediately. This pattern keeps memory usage constant.
-    question: How can I watermark a large batch of documents efficiently?
-  - answer: The API offers a `remove` method that can target specific watermarks by
-      ID or type, but you need to keep a reference to the added watermark.
-    question: Is it possible to remove a watermark that was added earlier?
-  - answer: GroupDocs.Watermark is compatible with Java 8 through Java 21, covering
-      both legacy and modern environments.
-    question: What Java versions are supported?
-  type: FAQPage
-title: Προσθήκη Υδατογραφήματος Κειμένου Java με GroupDocs.Watermark
+- Java watermarking
+- GroupDocs.Watermark Java API
+- adding watermarks in Java
+title: 'Προσθήκη Υδατογραφήματος Java: Ασφαλή Έγγραφα με το API GroupDocs.Watermark'
 type: docs
 url: /el/java/getting-started/java-watermark-groupdocs-guide/
 weight: 1
 ---
 
-# Προσθήκη Υδατογραφήματος Κειμένου Java με το GroupDocs.Watermark
+# Προσθήκη Υδατογραφήματος Java: Κατάκτηση της Ασφάλειας Εγγράφων με το GroupDocs.Watermark
 
-## Εισαγωγή
-
-Η προσθήκη ενός **text watermark** σε ένα έγγραφο είναι ένας από τους πιο γρήγορους τρόπους για να προστατεύσετε την πνευματική ιδιοκτησία και να ενισχύσετε την ταυτότητα της μάρκας. Σε αυτό το σεμινάριο θα μάθετε πώς να **add text watermark java** με τη βιβλιοθήκη GroupDocs.Watermark, ακολουθώντας ταυτόχρονα τις βέλτιστες πρακτικές για **prevent memory leaks java**. Θα περάσουμε από κάθε βήμα — από τη ρύθμιση του Maven έργου σας μέχρι τον καθαρισμό των πόρων — ώστε να μπορείτε να ενσωματώσετε την υδατογράφημα σε οποιαδήποτε εφαρμογή Java με σιγουριά.
+Η προσθήκη ενός **υδατογραφήματος** στα αρχεία σας είναι ένας από τους πιο αποτελεσματικούς τρόπους προστασίας της πνευματικής ιδιοκτησίας, ενδυνάμωσης της μάρκας σας και σήμανσης εμπιστευτικότητας. Σε αυτό το tutorial θα μάθετε **πώς να προσθέσετε υδατογράφημα java** σε έργα χρησιμοποιώντας τη δυναμική βιβλιοθήκη GroupDocs.Watermark. Θα περάσουμε από όλα, από τη ρύθμιση του περιβάλλοντος μέχρι την αρχικοποίηση του `Watermarker`, την εφαρμογή κειμενικού υδατογραφήματος, την αποθήκευση του αποτελέσματος και τον καθαρισμό των πόρων—όλα με σαφείς, συνομιλιακούς επεξηγήσεις.
 
 ## Γρήγορες Απαντήσεις
-- **What library adds text watermarks in Java?** GroupDocs.Watermark for Java.  
-- **How many lines of code are needed for a basic watermark?** Just two lines: create a `Watermarker` and call `add`.  
-- **Can I avoid memory leaks?** Yes—always close the `Watermarker` after use.  
-- **Which file formats are supported?** Over 70 input and output formats, including PDF, DOCX, PPTX, and images.  
-- **Do I need a license for production?** A full license is required for commercial deployments; a free trial is available for evaluation.
+- **Τι κάνει το “add watermark java”;** Ενσωματώνει προσαρμοσμένο κείμενο ή εικόνες σε ένα έγγραφο για να υποδείξει ιδιοκτησία ή εμπιστευτικότητα.  
+- **Ποια βιβλιοθήκη συνιστάται;** Το GroupDocs.Watermark για Java παρέχει ένα απλό API για κειμενικά και εικόνα υδατογραφήματα.  
+- **Χρειάζομαι άδεια;** Διατίθεται δωρεάν δοκιμή· απαιτείται πλήρης άδεια για παραγωγική χρήση.  
+- **Μπορώ να επεξεργαστώ πολλαπλά αρχεία;** Ναι – μπορείτε να κάνετε βρόχο πάνω σε μια συλλογή εγγράφων και να επαναχρησιμοποιήσετε την ίδια ροή εργασίας.  
+- **Ποια έκδοση Java απαιτείται;** Java 8 ή νεότερη.
 
-## Τι είναι το “add text watermark java”
+## Τι είναι το “add watermark java”
 
-**Add text watermark java** αναφέρεται στη διαδικασία προγραμματιστικής εισαγωγής μιας κειμενικής επικάλυψης σε ένα έγγραφο χρησιμοποιώντας κώδικα Java. Αυτή η τεχνική χρησιμοποιείται συχνά για την επισήμανση εμπιστευτικών αρχείων, την προβολή της επωνυμίας ή την ένδειξη της κατάστασης του εγγράφου. Μπορεί να εφαρμοστεί σε PDF, έγγραφα Word, παρουσιάσεις και εικόνες, και η βιβλιοθήκη διαχειρίζεται αυτόματα την σελιδοποίηση, την κλιμάκωση και την ειδική απόδοση ανά μορφή.
+Η προσθήκη υδατογραφήματος σε Java σημαίνει χρήση κώδικα για προγραμματιστική εισαγωγή ορατού ή ημιδιαφανούς κειμένου ή γραφικών σε ένα έγγραφο (PDF, Word, Excel κ.λπ.). Αυτή η τεχνική σας βοηθά να προστατεύετε ευαίσθητες πληροφορίες, να ενισχύετε την ταυτότητα της μάρκας και να συμμορφώνεστε με νομικές ή εταιρικές πολιτικές.
 
 ## Γιατί να χρησιμοποιήσετε το GroupDocs.Watermark για Java;
 
-GroupDocs.Watermark υποστηρίζει **70+** μορφές εγγράφων και εικόνων, μπορεί να επεξεργαστεί αρχεία έως **500 MB** χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη, και παρέχει ένα ευέλικτο API που μειώνει το χρόνο ανάπτυξης έως **40 %** σε σύγκριση με τις χειροκίνητες βιβλιοθήκες επεξεργασίας PDF. Επιπλέον, προσφέρει ενσωματωμένη υποστήριξη για αρχεία με κωδικό πρόσβασης, επεξεργασία σε παρτίδες και έξοδο υψηλής ανάλυσης, καθιστώντας το κατάλληλο για εταιρικές γραμμές επεξεργασίας εγγράφων.
+- **Υποστήριξη πολλαπλών μορφών:** Λειτουργεί με πάνω από 100 τύπους εγγράφων.  
+- **Απλό API:** Απαιτεί ελάχιστο κώδικα για προσθήκη, προσαρμογή και αποθήκευση υδατογραφημάτων.  
+- **Επικεντρωμένο στην απόδοση:** Σχεδιασμένο για επεξεργασία παρτίδων και χαμηλή χρήση μνήμης.  
+- **Ενεργή υποστήριξη & τεκμηρίωση:** Τακτικές ενημερώσεις και ολοκληρωμένοι οδηγοί.
 
-## Προαπαιτήσεις
+## Προαπαιτούμενα
 
-- **Java Development Kit (JDK):** Version 8 or higher.  
-- **IDE:** IntelliJ IDEA, Eclipse, or any Java‑compatible editor.  
-- **Maven:** For dependency management and building the project.  
-- **Basic Java knowledge:** Familiarity with object‑oriented concepts and exception handling.  
+- **Java Development Kit (JDK):** Έκδοση 8 ή νεότερη.  
+- **IDE:** IntelliJ IDEA, Eclipse ή οποιοσδήποτε επεξεργαστής συμβατός με Java.  
+- **Maven:** Για διαχείριση εξαρτήσεων.  
+- **Βασικές γνώσεις Java:** Εξοικειωμένοι με κλάσεις, μεθόδους και I/O αρχείων.
 
 ## Ρύθμιση του GroupDocs.Watermark για Java
 
-Για να ξεκινήσετε, προσθέστε την εξάρτηση GroupDocs.Watermark στο `pom.xml` του Maven. Αυτή η μοναδική εγγραφή φέρνει όλα τα απαιτούμενα binaries.
-
-**Ρύθμιση Maven:**
+Για να ξεκινήσετε, προσθέστε το αποθετήριο και την εξάρτηση GroupDocs.Watermark στο αρχείο Maven `pom.xml`. Αυτό δίνει στο έργο σας πρόσβαση σε όλες τις δυνατότητες υδατογράφησης.
 
 ```xml
 <repositories>
@@ -110,30 +63,19 @@ GroupDocs.Watermark υποστηρίζει **70+** μορφές εγγράφων
 </dependencies>
 ```
 
-**Άμεση Λήψη:** Εναλλακτικά, μπορείτε να κατεβάσετε την τελευταία έκδοση από [εκδόσεις GroupDocs.Watermark για Java](https://releases.groupdocs.com/watermark/java/).
-
-Πρόσθετοι πόροι: η επίσημη [Τεκμηρίωση GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/) και η εκτενής [Αναφορά API GroupDocs](https://reference.groupdocs.com/watermark/java) παρέχουν πιο βαθιές γνώσεις και παραδείγματα κώδικα.
+**Άμεση λήψη:** Εναλλακτικά, μπορείτε να κατεβάσετε την τελευταία έκδοση από [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Απόκτηση Άδειας
 
-- **Free Trial:** Test all features without a credit card.  
-- **Temporary License:** Extends the trial period for evaluation projects.  
-- **Full License:** Required for production use and to unlock premium support.
-
-Με τη βιβλιοθήκη έτοιμη, ας προχωρήσουμε στην κύρια υλοποίηση.
+- **Δωρεάν Δοκιμή:** Δοκιμάστε όλες τις λειτουργίες χωρίς πιστωτική κάρτα.  
+- **Προσωρινή Άδεια:** Επεκτείνετε την περίοδο δοκιμής για έργα αξιολόγησης.  
+- **Πλήρης Άδεια:** Απαιτείται για εμπορική ανάπτυξη και απεριόριστη χρήση.
 
 ## Οδηγός Υλοποίησης
 
-### Πώς να προσθέσετε text watermark java;
-
-Φορτώστε το αρχείο προέλευσης με `new Watermarker(inputPath)` και καλέστε `add(new TextWatermark("CONFIDENTIAL", new Font("Arial", 36)))`. Αυτό το μοτίβο δύο βημάτων δημιουργεί το υδατογράφημα και το εφαρμόζει αμέσως, διαχειριζόμενο όλες τις λεπτομέρειες ανά μορφή εσωτερικά.
-
 ### Αρχικοποίηση Watermarker
 
-#### Αγκύρωση Ορισμού
-Η κλάση `Watermarker` είναι το σημείο εισόδου για όλες τις λειτουργίες υδατογράφησης στο GroupDocs.Watermark. Φορτώνει ένα έγγραφο στη μνήμη και εκθέτει μεθόδους για προσθήκη, επεξεργασία ή αφαίρεση υδατογραφημάτων.
-
-**Code Snippet:**
+Το πρώτο βήμα είναι η δημιουργία ενός αντικειμένου `Watermarker` που δείχνει στο έγγραφο που θέλετε να προστατέψετε.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -146,16 +88,12 @@ public class FeatureInitializeWatermarker {
 }
 ```
 
-**Explanation:**  
-- `inputDocumentPath` – Αντικαταστήστε με την απόλυτη ή σχετική διαδρομή του αρχείου που θέλετε να προστατέψετε.  
-- Η αρχικοποίηση του `Watermarker` δημιουργεί τη γραμμή επεξεργασίας, επιτρέποντας τις επόμενες ενέργειες υδατογράφησης.
+- **`inputDocumentPath`** – Αντικαταστήστε με την απόλυτη ή σχετική διαδρομή του αρχικού αρχείου σας.  
+- **Γιατί να αρχικοποιήσετε;** Το αντικείμενο `Watermarker` φορτώνει το έγγραφο στη μνήμη και το προετοιμάζει για λειτουργίες υδατογράφησης.
 
-### Προσθήκη Text Watermark στο Έγγραφο
+### Προσθήκη Κειμενικού Υδατογραφήματος στο Έγγραφο
 
-#### Αγκύρωση Ορισμού
-`TextWatermark` αντιπροσωπεύει μια κειμενική επικάλυψη που μπορεί να τοποθετηθεί, να μορφοποιηθεί και να επαναληφθεί σε πολλές σελίδες. Περιλαμβάνει ρυθμίσεις γραμματοσειράς, μεγέθους, χρώματος και περιστροφής.
-
-**Code Snippet:**
+Δημιουργήστε ένα αντικείμενο `TextWatermark`, ορίστε την εμφάνισή του και συνδέστε το με το φορτωμένο έγγραφο.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -170,16 +108,12 @@ public class FeatureAddTextWatermark {
 }
 ```
 
-**Explanation:**  
-- Δημιουργήστε ένα `TextWatermark` με το επιθυμητό κείμενο και ένα αντικείμενο `Font`.  
-- Ρυθμίστε ιδιότητες όπως η αδιαφάνεια, η γωνία περιστροφής και η θέση ώστε να ταιριάζουν με τις οδηγίες της επωνυμίας σας.
+- **`TextWatermark`** – Περιέχει το κείμενο του υδατογραφήματος και τις πληροφορίες στυλ.  
+- **Προσαρμογή:** Αλλάξτε τη γραμματοσειρά, το μέγεθος, το χρώμα ή την αδιαφάνεια ώστε να ταιριάζει με τις οδηγίες της μάρκας σας.
 
 ### Αποθήκευση Εγγράφου στην Καθορισμένη Τοποθεσία
 
-#### Αγκύρωση Ορισμού
-Η μέθοδος `save` γράφει το τροποποιημένο έγγραφο στο δίσκο, διατηρώντας την αρχική μορφή αρχείου εκτός εάν καθορίσετε διαφορετικό τύπο εξόδου.
-
-**Code Snippet:**
+Αφού προσθέσετε το υδατογράφημα, αποθηκεύστε τις αλλαγές σε νέο αρχείο.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -192,16 +126,12 @@ public class FeatureSaveDocument {
 }
 ```
 
-**Explanation:**  
-- `outputDocumentPath` καθορίζει πού θα αποθηκευτεί το αρχείο με υδατογράφημα.  
-- Μπορείτε επίσης να αλλάξετε τον τύπο αρχείου παρέχοντας μια παρουσία `SaveOptions`.
+- **`outputDocumentPath`** – Επιλέξτε φάκελο όπου θα γραφτεί το αρχείο με υδατογράφημα.  
+- **Γιατί να αποθηκεύσετε;** Η μέθοδος `save` γράφει όλες τις τροποποιήσεις, δημιουργώντας νέο έγγραφο που διατηρεί το αρχικό ανέγγιχτο.
 
 ### Κλείσιμο Πόρου Watermarker
 
-#### Αγκύρωση Ορισμού
-Καλώντας `close()` στο `Watermarker` απελευθερώνει τους εγγενείς πόρους και καθαρίζει τις εσωτερικές μνήμες, κάτι που είναι ουσιώδες για **prevent memory leaks java**.
-
-**Code Snippet:**
+Απελευθερώστε τους πόρους του συστήματος κλείνοντας το `Watermarker` όταν ολοκληρώσετε.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -213,61 +143,48 @@ public class FeatureCloseWatermarker {
 }
 ```
 
-**Explanation:**  
-- Το κλείσιμο του πόρου ελευθερώνει τους χειριστές αρχείων και τη φυσική μνήμη, διασφαλίζοντας ότι η εφαρμογή σας παραμένει σταθερή κατά την επεξεργασία μεγάλων παρτίδων.
+- **Καλύτερη πρακτική:** Το κλείσιμο απελευθερώνει χειριστές αρχείων και βοηθά τον garbage collector της JVM να ανακτήσει μνήμη.
 
 ## Πρακτικές Εφαρμογές
 
-1. **Branding Documents:** Insert your company name or logo as a subtle text watermark on all outgoing PDFs.  
-2. **Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL” to deter accidental distribution.  
-3. **Version Control in Collaboration:** Add version numbers as watermarks to keep track of document revisions.  
-4. **Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks on contracts and statements to reinforce compliance.
+1. **Branding:** Εισάγετε το λογότυπο ή το σλόγκαν της εταιρείας σας σε κάθε εξαγόμενο αναφορά.  
+2. **Εμπιστευτικότητα:** Σημειώστε προσχέδια, συμβόλαια ή οικονομικές καταστάσεις με το κείμενο “CONFIDENTIAL”.  
+3. **Παρακολούθηση Εκδόσεων:** Προσθέστε αριθμούς έκδοσης ή χρονικές σφραγίδες ως υδατογραφήματα για ίχνη ελέγχου.  
+4. **Νομική Συμμόρφωση:** Προσθέστε νόμιμες ειδοποιήσεις σε ρυθμιζόμενα έγγραφα αυτόματα.
 
-## Παράγοντες Απόδοσης
+## Σκέψεις για την Απόδοση
 
-- **Resource Management:** Always close `Watermarker` objects; this prevents memory leaks java and keeps heap usage low.  
-- **Batch Processing:** When handling hundreds of files, reuse a single `Watermarker` instance per file and process them sequentially to minimize GC overhead.  
-- **Large Files:** GroupDocs.Watermark streams data, allowing you to watermark PDFs up to **500 MB** without loading the whole file into RAM.
-
-## Κοινά Προβλήματα και Λύσεις
-
-| Πρόβλημα | Λύση |
-|----------|------|
-| **OutOfMemoryError** when processing large PDFs | Enable streaming mode by using `Watermarker.setLoadOptions(new LoadOptions().setLoadMode(LoadMode.Stream))` and always close the `Watermarker`. |
-| **Watermark not visible on some pages** | Verify that the `TextWatermark` opacity is set above 0.1 and that the page size matches the watermark dimensions. |
-| **License exception** | Ensure the license file is placed in the classpath and call `License license = new License(); license.setLicense("path/to/license.lic");` before creating the `Watermarker`. |
+- **Διαχείριση Πόρων:** Πάντα κλείνετε το `Watermarker` για αποφυγή διαρροών μνήμης, ειδικά σε εργασίες παρτίδας.  
+- **Επεξεργασία Παρτίδας:** Κάντε βρόχο σε λίστα διαδρομών αρχείων και επαναχρησιμοποιήστε ένα μόνο αντικείμενο `Watermarker` όπου είναι δυνατόν.  
+- **Ρύθμιση Μνήμης:** Για πολύ μεγάλα αρχεία, εξετάστε την επεξεργασία σελίδων ξεχωριστά ώστε να διατηρείται μικρό αποτύπωμα μνήμης.
 
 ## Συχνές Ερωτήσεις
 
-**Q: Can I add image watermarks in addition to text?**  
-A: Yes, GroupDocs.Watermark also supports `ImageWatermark` objects for logos or stamps.
+**Ε: Τι είναι το κειμενικό υδατογράφημα;**  
+Α: Ένα κειμενικό υδατογράφημα είναι ένα κομμάτι κειμενικής πληροφορίας ενσωματωμένο σε ένα έγγραφο, συχνά χρησιμοποιούμενο για branding ή ασφάλεια.
 
-**Q: Does the library work with password‑protected PDFs?**  
-A: Absolutely. Provide the password via `LoadOptions` when constructing the `Watermarker`.
+**Ε: Μπορώ να προσθέσω εικόνες ως υδατογραφήματα χρησιμοποιώντας το GroupDocs.Watermark;**  
+Α: Ναι, η βιβλιοθήκη υποστηρίζει επίσης υδατογραφήματα εικόνας, επιτρέποντάς σας να τοποθετήσετε λογότυπα ή υπογραφές.
 
-**Q: How can I watermark a large batch of documents efficiently?**  
-A: Use a loop to instantiate a `Watermarker` per file, apply the watermark, save, and close immediately. This pattern keeps memory usage constant.
+**Ε: Πώς να διαχειριστώ μεγάλα σύνολα εγγράφων αποδοτικά με το GroupDocs.Watermark;**  
+Α: Χρησιμοποιήστε βρόχους επεξεργασίας παρτίδας και βεβαιωθείτε ότι κλείνετε άμεσα κάθε αντικείμενο `Watermarker` για απελευθέρωση πόρων.
 
-**Q: Is it possible to remove a watermark that was added earlier?**  
-A: The API offers a `remove` method that can target specific watermarks by ID or type, but you need to keep a reference to the added watermark.
+**Ε: Είναι δυνατόν να αφαιρέσετε υδατογραφήματα που προστέθηκαν από το GroupDocs.Watermark;**  
+Α: Η αφαίρεση δεν καλύπτεται σε αυτόν τον οδηγό· απαιτούνται πρόσθετες κλήσεις API και προσεκτική διαχείριση του αρχικού περιεχομένου.
 
-**Q: What Java versions are supported?**  
-A: GroupDocs.Watermark is compatible with Java 8 through Java 21, covering both legacy and modern environments.
+**Ε: Ποια είναι τα κοινά προβλήματα κατά τη χρήση του GroupDocs.Watermark;**  
+Α: Συνηθισμένα ζητήματα περιλαμβάνουν λανθασμένες διαδρομές αρχείων, έλλειψη αδειών ή χρήση μη υποστηριζόμενων τύπων εγγράφων. Επαληθεύστε τις εξαρτήσεις και τις διαδρομές πριν την εκτέλεση.
 
-## Συμπέρασμα
+## Πόροι
 
-You now have a complete, production‑ready workflow for **add text watermark java** using GroupDocs.Watermark. By following the steps above—and remembering to close the `Watermarker` to **prevent memory leaks java**—you can protect, brand, and manage documents at scale. Explore additional watermark types, experiment with rotation and opacity, and integrate the API into larger document‑processing pipelines for even greater automation.
-
----
-
-**Last Updated:** 2026-06-21  
-**Tested With:** GroupDocs.Watermark 23.12 for Java  
-**Author:** GroupDocs  
+- **Τεκμηρίωση:** [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Αναφορά API:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Λήψη:** [GroupDo
 
 ---
 
-## Σχετικά Μαθήματα
+**Τελευταία Ενημέρωση:** 2026-01-06  
+**Δοκιμασμένο Με:** GroupDocs.Watermark 24.11  
+**Συγγραφέας:** GroupDocs  
 
-- [How to Add a Text Watermark to PDFs Using GroupDocs.Watermark for Java: A Step-by-Step Guide](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [Add and Lock Text Watermarks in Word Documents Using Java: A Comprehensive Guide with GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [How to Add Rotated Text Watermarks in Documents Using GroupDocs.Watermark for Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+---

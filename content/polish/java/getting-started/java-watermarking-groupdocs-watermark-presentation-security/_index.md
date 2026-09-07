@@ -1,87 +1,56 @@
 ---
-date: '2026-06-21'
-description: Dowiedz się, jak dodać watermark do prezentacji Java przy użyciu GroupDocs.Watermark
-  dla Javy, zabezpieczając slajdy poprzez stosowanie tekstowych watermarków oraz ochronę
-  przed nieczytelnymi znakami.
+date: '2026-01-06'
+description: Dowiedz się, jak dodawać znak wodny do plików prezentacji przy użyciu
+  Javy. Ten przewodnik pokazuje, jak dodać poufny znak wodny, zablokować znak wodny
+  oraz używać biblioteki GroupDocs.Watermark Java do zabezpieczania prezentacji.
 keywords:
-- add watermark java presentation
-- GroupDocs.Watermark Java
-- presentation security
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  headline: Add Watermark Java Presentation Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  name: Add Watermark Java Presentation Using GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-    text: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-  - name: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-    text: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-  - name: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-    text: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-  type: HowTo
-- questions:
-  - answer: Yes—use the `ImageWatermark` class, which supports PNG, JPEG, and SVG
-      formats.
-    question: Can I add an image watermark instead of text?
-  - answer: Absolutely; provide the password via `PresentationLoadOptions.setPassword("yourPassword")`.
-    question: Does the library work with password‑protected PPTX files?
-  - answer: There is no hard limit; the API streams slides, so you can process presentations
-      with thousands of slides as long as the JVM heap is sized appropriately.
-    question: How many slides can I watermark in one operation?
-  - answer: Yes—specify a slide range in `PresentationLoadOptions` or pass a list
-      of slide indices to the `add` method.
-    question: Is it possible to watermark only selected slides?
-  - answer: The examples were verified with GroupDocs.Watermark 23.12 for Java.
-    question: What version of GroupDocs.Watermark is tested with this tutorial?
-  type: FAQPage
-title: Dodaj watermark do prezentacji Java przy użyciu GroupDocs.Watermark
+- Java Watermarking
+- GroupDocs.Watermark for Java
+- Presentation Security
+title: Jak dodać znak wodny do plików prezentacji przy użyciu Javy i GroupDocs.Watermark
 type: docs
 url: /pl/java/getting-started/java-watermarking-groupdocs-watermark-presentation-security/
 weight: 1
 ---
 
-# Dodaj znak wodny do prezentacji Java przy użyciu GroupDocs.Watermark
+# Jak dodać znak wodny do plików prezentacji przy użyciu Java i GroupDocs.Watermark
 
-W dzisiejszym szybkim środowisku biznesowym, **add watermark java presentation** jest najlepszą praktyką ochrony poufnych zestawów slajdów, materiałów szkoleniowych i materiałów marketingowych. GroupDocs.Watermark dla Java umożliwia osadzanie niewidzialnych lub widzialnych znaków wodnych tekstowych bezpośrednio w plikach PowerPoint, zapewniając, że każdy odbiorca pliku natychmiast zobaczy informacje o własności lub statusie poufności. Ten przewodnik przeprowadzi Cię przez każdy krok — od konfiguracji biblioteki, przez ładowanie prezentacji, tworzenie własnego znaku wodnego tekstowego, blokowanie go ochroną przed nieczytelnymi znakami, aż po zapisanie zabezpieczonego pliku.
+W dzisiejszej erze cyfrowej, **jak dodać znak wodny do prezentacji** jest najważniejszym zagadnieniem dla każdego, kto udostępnia poufne slajdy, materiały szkoleniowe lub materiały marketingowe. Dodanie poufnego znaku wodnego nie tylko sygnalizuje własność, ale także odstrasza nieautoryzowaną dystrybucję. W tym samouczku dowiesz się, jak dodać ochronę w stylu watermark java, zablokować znak wodny i wykorzystać bibliotekę GroupDocs.Watermark Java do szybkiego i niezawodnego zabezpieczania prezentacji.
 
 ## Szybkie odpowiedzi
-- **Jaki jest główny cel?** Zabezpiecz pliki prezentacji, wstawiając trwałe znaki wodne w postaci tekstu.  
-- **Która biblioteka jest wymagana?** GroupDocs.Watermark for Java (Maven artifact `com.groupdocs:groupdocs-watermark`).  
-- **Czy potrzebna jest licencja?** Bezpłatna wersja próbna działa w środowisku deweloperskim; pełna licencja jest wymagana w produkcji.  
-- **Czy mogę chronić duże zestawy slajdów?** Tak — GroupDocs.Watermark przetwarza pliki do 500 MB bez ładowania całego dokumentu do pamięci.  
-- **Czy API jest kompatybilne z Java 8+?** Absolutnie, działa na JDK 8 i nowszych wersjach.
+- **Jaki jest najprostszy sposób dodania znaku wodnego do prezentacji?** Użyj GroupDocs.Watermark dla Java i wywołaj `watermarker.add()` z `TextWatermark`.
+- **Czy mogę zablokować znak wodny, aby nie mógł być usunięty?** Tak — ustaw `options.setLocked(true)` i włącz nieczytelne znaki.
+- **Czy potrzebna jest specjalna licencja?** Darmowa wersja próbna działa w środowisku deweloperskim; pełna licencja jest wymagana w produkcji.
+- **Jaka wersja Java jest wymagana?** Obsługiwana jest Java 8 lub nowsza.
+- **Czy to będzie działać z plikami PPTX i ODP?** Tak, GroupDocs.Watermark obsługuje najważniejsze formaty prezentacji.
 
-## Co to jest „add watermark java presentation”?
-*Add watermark java presentation* odnosi się do procesu programowego wstawiania znaku wodnego tekstowego lub graficznego do pliku PowerPoint (`.pptx`) opartego na Javie w celu zabezpieczenia jego zawartości. Poprzez osadzanie widzialnych lub niewidzialnych znaków możesz potwierdzić własność, wymusić poufność i odstraszyć nieautoryzowane rozpowszechnianie, zapewniając, że odbiorcy zawsze widzą źródło lub status ochrony.
+## Co to jest „jak dodać znak wodny do prezentacji”?
+Dodawanie znaku wodnego do prezentacji oznacza osadzanie widocznego lub niewidocznego tekstu (lub obrazów) na każdym slajdzie, tak aby dokument zawierał wyraźny znak własności. Technika ta jest szeroko stosowana w propozycjach korporacyjnych, wykładach akademickich oraz wszelkich treściach wymagających ochrony przed niewłaściwym użyciem.
 
-## Dlaczego używać GroupDocs.Watermark dla Java?
-GroupDocs.Watermark obsługuje **ponad 30 formatów plików** (w tym PPTX, PPT, PDF, DOCX i obrazy) i może stosować znaki wodne do prezentacji bez **utraty jakości**. Jego silnik przetwarza wielostronicowe zestawy w mniej niż sekundę na typowym serwerze, zużywając mniej niż 150 MB RAM — co czyni go idealnym rozwiązaniem dla wysokowydajnych zadań wsadowych.
+## Dlaczego dodać poufny znak wodny?
+- **Ochrona marki:** Wzmacnia tożsamość korporacyjną na każdym slajdzie.  
+- **Dowód prawny:** Pokazuje, że plik został rozpowszechniony z wyraźnym oświadczeniem o własności.  
+- **Odstraszanie:** Ujawnia, gdy dokument został udostępniony bez zezwolenia.  
+- **Zgodność:** Spełnia wewnętrzne polityki bezpieczeństwa dotyczące obsługi wrażliwych informacji.
 
 ## Wymagania wstępne
+Zanim rozpoczniesz, upewnij się, że masz następujące elementy:
 
-1. **Java Development Kit (JDK) 8 lub nowszy** – wymagany do kompilacji i uruchomienia.  
-2. **Maven** – obsługuje rozwiązywanie zależności; możesz także używać Gradle, jeśli wolisz.  
-3. **IDE** – IntelliJ IDEA, Eclipse lub dowolny edytor kompatybilny z Javą.  
-4. **Podstawowa znajomość Java I/O** – aby zrozumieć strumienie plików i obsługę wyjątków.
+1. **Wymagane biblioteki i zależności**
+   - Java Development Kit (JDK) 8 lub nowszy  
+   - Maven do zarządzania zależnościami  
+
+2. **Konfiguracja środowiska**
+   - IDE, takie jak IntelliJ IDEA lub Eclipse  
+   - Podstawowa znajomość Java I/O i obsługi wyjątków  
+
+3. **Wymagania wiedzy**
+   - Znajomość klas Java i koncepcji programowania obiektowego  
 
 ## Konfiguracja GroupDocs.Watermark dla Java
 
 ### Konfiguracja Maven
-Dodaj następującą zależność do swojego `pom.xml`. Spowoduje to pobranie najnowszej stabilnej wersji GroupDocs.Watermark.
+Dodaj repozytorium GroupDocs oraz zależność do pliku `pom.xml`:
 
 ```xml
 <repositories>
@@ -102,15 +71,15 @@ Dodaj następującą zależność do swojego `pom.xml`. Spowoduje to pobranie na
 ```
 
 ### Bezpośrednie pobranie
-Jeśli wolisz ręczną instalację, pobierz pliki JAR ze strony wydania: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternatywnie, pobierz najnowszą wersję z [wydania GroupDocs.Watermark dla Java](https://releases.groupdocs.com/watermark/java/).
 
 ### Uzyskiwanie licencji
-- **Bezpłatna wersja próbna:** Pozwala na nieograniczoną liczbę wywołań API przez 30 dni.  
-- **Licencja tymczasowa:** Wydłuża limity wersji próbnej na dłuższe cykle rozwojowe.  
-- **Pełna licencja:** Wymagana przy wdrożeniu komercyjnym i usuwa wszystkie ograniczenia wersji próbnej.
+- **Darmowa wersja próbna:** Testuj bibliotekę bez licencji.  
+- **Licencja tymczasowa:** Użyj tymczasowego klucza do rozszerzonego testowania w fazie rozwoju.  
+- **Pełna licencja:** Wymagana przy wdrożeniach produkcyjnych.
 
 ### Podstawowa inicjalizacja i konfiguracja
-Utwórz instancję `Watermarker`, która służy jako centralny obiekt dla wszystkich operacji znaków wodnych.
+Poniższy fragment kodu pokazuje, jak utworzyć instancję `Watermarker` dla pliku prezentacji:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -123,15 +92,12 @@ public class InitializeWatermarker {
 }
 ```
 
-`Watermarker` jest klasą rdzeniową, która ładuje, edytuje i zapisuje dokumenty. Ten obiekt będzie zarządzał ładowaniem, edycją i zapisem Twoich plików prezentacji.
-
 ## Przewodnik implementacji
 
-### Jak dodać znak wodny do prezentacji Java?
-Aby dodać znak wodny do prezentacji Java, najpierw załaduj plik PowerPoint przy użyciu `PresentationLoadOptions`. Następnie utwórz `TextWatermark` z żądanym tekstem, stylem i rotacją. Włącz ochronę przed nieczytelnymi znakami za pomocą `PresentationWatermarkSlideOptions`, dodaj znak wodny do wybranych slajdów i na końcu zapisz zmodyfikowany plik, aby utrwalić zmiany.
+Poniżej znajduje się krok po kroku przewodnik po **jak dodać znak wodny do prezentacji**, od załadowania dokumentu po zapisanie zabezpieczonego wyniku.
 
-#### Ładowanie dokumentu prezentacji
-Najpierw musisz otworzyć plik z odpowiednimi opcjami ładowania.
+### Ładowanie dokumentu prezentacji
+Najpierw załaduj prezentację używając `PresentationLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -146,10 +112,10 @@ public class LoadPresentation {
 }
 ```
 
-**Definition anchor:** `PresentationLoadOptions` definiuje, w jaki sposób GroupDocs.Watermark odczytuje plik PowerPoint, umożliwiając określenie ochrony hasłem, zakresu slajdów oraz flag oszczędzających pamięć.
+*Wyjaśnienie:* `PresentationLoadOptions` pozwala określić, jak plik ma być interpretowany przed zastosowaniem jakiegokolwiek znaku wodnego.
 
-#### Tworzenie znaku wodnego tekstowego
-Następnie przygotuj tekst znaku wodnego i sformatuj go zgodnie z wytycznymi Twojej marki.
+### Tworzenie tekstowego znaku wodnego
+Następnie utwórz właściwy tekst znaku wodnego. To miejsce, w którym **dodajesz poufny znak wodny**:
 
 ```java
 import com.groupdocs.watermark.watermarks.Font;
@@ -164,10 +130,10 @@ public class CreateTextWatermark {
 }
 ```
 
-**Definition anchor:** `TextWatermark` reprezentuje nakładkę tekstową, którą można pozycjonować, obracać i kolorować. Obsługuje Unicode, więc możesz osadzać wielojęzyczne tagi.
+*Wyjaśnienie:* Dostosuj czcionkę, rozmiar i tekst, aby pasowały do wytycznych Twojej marki.
 
-#### Konfigurowanie opcji znaku wodnego dla nieczytelnych znaków
-Aby znak wodny był odporny na manipulacje, włącz ochronę przed nieczytelnymi znakami.
+### Konfigurowanie opcji znaku wodnego dla nieczytelnych znaków
+Aby **zablokować znak wodny** i uczynić go nieczytelnym przy manipulacji, skonfiguruj opcje slajdów:
 
 ```java
 import com.groupdocs.watermark.options.PresentationWatermarkSlideOptions;
@@ -181,10 +147,10 @@ public class ConfigureWatermarkOptions {
 }
 ```
 
-**Definition anchor:** `PresentationWatermarkSlideOptions` konfiguruje sposób aplikacji znaku wodnego do poszczególnych slajdów. Pozwala zablokować znak wodny, ustawić flagi tylko do odczytu oraz włączyć ochronę przed nieczytelnymi znakami, które zamazują tekst przy edycji dokumentu bez odpowiedniego zezwolenia.
+*Wyjaśnienie:* Włączenie `setLocked` i `setProtectWithUnreadableCharacters` dodaje warstwę ochrony, która uniemożliwia łatwe usunięcie.
 
-#### Dodawanie znaku wodnego do prezentacji
-Teraz zastosuj znak wodny do każdego slajdu (lub wybranej podgrupy) przy użyciu obiektu `Watermarker`.
+### Dodawanie znaku wodnego do prezentacji
+Połącz ładowanie, tworzenie znaku wodnego i konfigurację opcji, aby zastosować znak wodny:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -207,10 +173,10 @@ public class AddWatermarkToPresentation {
 }
 ```
 
-**Definition anchor:** Metoda `add` klasy `Watermarker` dołącza skonfigurowany `TextWatermark` do docelowych slajdów, respektując wcześniej zdefiniowane opcje.
+*Wyjaśnienie:* Ten krok wstawia tekst **java watermark library** do każdego slajdu, jednocześnie go blokując.
 
-#### Zapisywanie i zamykanie dokumentu ze znakiem wodnym
-Na koniec utrwal zmiany i zwolnij zasoby.
+### Zapisywanie i zamykanie dokumentu ze znakiem wodnym
+Na koniec zachowaj zmiany i wyczyść zasoby:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -226,60 +192,50 @@ public class SaveAndCloseWatermarkedDocument {
 }
 ```
 
-**Definition anchor:** Wywołanie `save` zapisuje zmodyfikowaną prezentację na dysk, natomiast `close` zwalnia zasoby natywne i zapobiega wyciekom pamięci.
+*Wyjaśnienie:* Zawsze wywołuj `close()`, aby zwolnić uchwyty plików i uniknąć wycieków pamięci.
 
 ## Praktyczne zastosowania
-
-- **Propozycje korporacyjne:** Osadź „Poufne – Firma XYZ” na wszystkich slajdach przed wysłaniem do klientów.  
-- **Wykłady akademickie:** Dodaj logotypy uczelni i kody kursów, aby zapobiec nieautoryzowanemu rozpowszechnianiu.  
-- **Prezentacje wydarzeń:** Znak wodny z nazwą wydarzenia i datą na każdym slajdzie w celu wzmocnienia marki.  
-- **Materiały prawne:** Oznacz zestawy slajdów identyfikatorami spraw, aby zachować łańcuch dowodowy.  
-- **Zasoby marketingowe:** Chronią wysokiej rozdzielczości materiały promocyjne subtelnymi znakami wodnymi marki, które przetrwają konwersję do PDF.
+1. **Ochrona dokumentów korporacyjnych:** Dodaj logo firmy lub etykietę „Poufne” do propozycji biznesowych.  
+2. **Dystrybucja materiałów akademickich:** Chroń slajdy wykładowe przed nieautoryzowanym udostępnianiem.  
+3. **Zarządzanie wydarzeniami:** Zabezpiecz zestawy slajdów wydarzeń za pomocą znaków wodnych marki.  
+4. **Dokumentacja prawna:** Oznacz prezentacje prawne znakiem wodnym w celu potwierdzenia autentyczności.  
+5. **Kampanie marketingowe:** Oznacz promocyjne zestawy slajdów marką, jednocześnie zapobiegając niewłaściwemu użyciu.
 
 ## Rozważania dotyczące wydajności
+- **Optymalizacja wydajności:** Przetwarzaj pliki w strumieniach przy dużych prezentacjach.  
+- **Wytyczne dotyczące użycia zasobów:** Monitoruj pamięć JVM; szybko zamykaj `Watermarker`.  
+- **Zarządzanie pamięcią w Java:** Używaj try‑with‑resources lub wywołań `close()`, aby zapobiec wyciekom.
 
-- **Optymalizacja wydajności:** Ponownie używaj jednej instancji `Watermarker` przy przetwarzaniu wsadowym; zmniejsza to narzut JVM.  
-- **Wytyczne dotyczące zużycia zasobów:** Dla prezentacji większych niż 200 MB włącz tryb strumieniowy w `PresentationLoadOptions`, aby utrzymać zużycie pamięci poniżej 200 MB.  
-- **Zarządzanie pamięcią w Javie:** Zawsze wywołuj `close()` w bloku `finally` lub używaj try‑with‑resources, aby zapewnić czyszczenie.
+## Częste problemy i rozwiązania
 
-## Typowe problemy i rozwiązania
-
-| Problem | Przyczyna | Rozwiązanie |
-|-------|-------|----------|
-| Znak wodny niewidoczny | Domyślna nieprzezroczystość ustawiona na 0% | Dostosuj `setOpacity(0.5)` w `TextWatermark`. |
-| Błąd braku pamięci przy dużych zestawach | Cały plik ładowany do pamięci | Włącz `setLoadMode(LoadMode.STREAM)` w `PresentationLoadOptions`. |
-| Nieczytelne znaki nie zastosowano | Pominięto `setUnreadableCharacters(true)` | Upewnij się, że flaga jest ustawiona w `PresentationWatermarkSlideOptions`. |
-| Wyjątek licencyjny w czasie wykonywania | Używanie wersji próbnej po wygaśnięciu | Zaktualizuj plik licencji lub poproś o nowy klucz wersji próbnej. |
+| Problem | Rozwiązanie |
+|-------|----------|
+| **Znak wodny nie pojawia się** | Sprawdź, czy opcje slajdu są ustawione (`setLocked(true)`) oraz czy używany jest prawidłowy zakres slajdów. |
+| **OutOfMemoryError przy dużym PPTX** | Zwiększ pamięć JVM (`-Xmx2g`) lub przetwarzaj plik w mniejszych partiach przy użyciu `PresentationLoadOptions`. |
+| **Wyjątek licencyjny** | Upewnij się, że przed utworzeniem `Watermarker` załadowano ważną wersję próbną lub pełną licencję. |
 
 ## Najczęściej zadawane pytania
 
-**Q: Czy mogę dodać znak wodny obrazu zamiast tekstu?**  
-A: Tak — użyj klasy `ImageWatermark`, która obsługuje formaty PNG, JPEG i SVG.
+**P: Czy mogę używać GroupDocs.Watermark do dodawania również znaków wodnych w postaci obrazów?**  
+A: Tak, biblioteka obsługuje zarówno tekstowe, jak i graficzne znaki wodne; po prostu użyj `ImageWatermark` zamiast `TextWatermark`.
 
-**Q: Czy biblioteka działa z plikami PPTX chronionymi hasłem?**  
-A: Absolutnie; podaj hasło za pomocą `PresentationLoadOptions.setPassword("yourPassword")`.
+**P: Czy biblioteka działa z prezentacjami zabezpieczonymi hasłem?**  
+A: Oczywiście — podaj hasło w `PresentationLoadOptions` przed załadowaniem pliku.
 
-**Q: Ile slajdów mogę oznaczyć znakiem wodnym w jednej operacji?**  
-A: Nie ma sztywnego limitu; API strumieniuje slajdy, więc możesz przetwarzać prezentacje z tysiącami slajdów, o ile przydzielisz odpowiednią wielkość sterty JVM.
+**P: Czy można dostosować krycie (opacity) znaku wodnego?**  
+A: Tak, możesz ustawić krycie na obiekcie `TextWatermark` za pomocą `setOpacity(double)`.
 
-**Q: Czy można oznaczyć znakiem wodnym tylko wybrane slajdy?**  
-A: Tak — określ zakres slajdów w `PresentationLoadOptions` lub przekaż listę indeksów slajdów do metody `add`.
+**P: Jak „ochrona nieczytelnymi znakami” wpływa na konwersję do PDF?**  
+A: Ochrona pozostaje osadzona w prezentacji; po wyeksportowaniu do PDF nieczytelne znaki są zachowane, utrzymując blokadę.
 
-**Q: Jaką wersję GroupDocs.Watermark testowano w tym samouczku?**  
-A: Przykłady zostały zweryfikowane z GroupDocs.Watermark 23.12 dla Java.
+**P: Jaka jest minimalna wymagana wersja Java?**  
+A: Java 8 lub nowsza; biblioteka jest w pełni kompatybilna z Java 11, 17 i późniejszymi wersjami LTS.
 
 ## Zakończenie
-
-Masz teraz kompletny, gotowy do produkcji przepływ pracy dla **add watermark java presentation** przy użyciu GroupDocs.Watermark. Postępując zgodnie z powyższymi krokami, możesz chronić poufne slajdy, wzmacniać tożsamość marki i spełniać wymogi prawne — przy minimalnym narzucie wydajnościowym. Eksploruj dalej API, aby łączyć znaki wodne tekstowe i graficzne, stosować dynamiczne znaczniki czasu lub integrować się z istniejącym potokiem zarządzania dokumentami.
+Masz teraz kompletny, gotowy do produkcji przewodnik po **jak dodać znak wodny do prezentacji** przy użyciu Java i biblioteki GroupDocs.Watermark. Dodając poufny znak wodny, blokując go i chroniąc nieczytelnymi znakami, chronisz swoją własność intelektualną i wzmacniasz integralność marki. Rozważ dalsze możliwości, integrując te kroki w automatycznych pipeline'ach dokumentów lub łącząc je z innymi API GroupDocs w celu kompleksowego zarządzania dokumentami.
 
 ---
 
-**Ostatnia aktualizacja:** 2026-06-21  
-**Testowano z:** GroupDocs.Watermark 23.12 for Java  
+**Ostatnia aktualizacja:** 2026-01-06  
+**Testowano z:** GroupDocs.Watermark 24.11 dla Java  
 **Autor:** GroupDocs
-
-## Powiązane samouczki
-
-- [Jak dodać tekstowe i graficzne znaki wodne do plików PDF w Javie przy użyciu GroupDocs.Watermark](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermarks/)
-- [Dodawanie i blokowanie znaków wodnych tekstowych w dokumentach Word przy użyciu Java: Kompletny przewodnik z GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [Jak dodać obrócone znaki wodne tekstowe w dokumentach przy użyciu GroupDocs.Watermark dla Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)

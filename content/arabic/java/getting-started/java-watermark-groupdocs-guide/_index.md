@@ -1,95 +1,49 @@
 ---
-date: '2026-06-21'
-description: تعلم كيفية إضافة علامة مائية نصية java باستخدام GroupDocs.Watermark.
-  منع تسرب الذاكرة java أثناء تأمين وتوسيم مستنداتك بكفاءة.
+date: '2026-01-06'
+description: تعلم كيفية إضافة علامة مائية في جافا باستخدام واجهة برمجة تطبيقات GroupDocs.Watermark.
+  احمِ مستنداتك وعزز علامتك التجارية بسهولة.
 keywords:
-- add text watermark java
-- prevent memory leaks java
-- GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  headline: Add Text Watermark Java with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  name: Add Text Watermark Java with GroupDocs.Watermark
-  steps:
-  - name: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-    text: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-  - name: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-    text: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-  - name: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-    text: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-  - name: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-    text: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-  type: HowTo
-- questions:
-  - answer: Yes, GroupDocs.Watermark also supports `ImageWatermark` objects for logos
-      or stamps.
-    question: Can I add image watermarks in addition to text?
-  - answer: Absolutely. Provide the password via `LoadOptions` when constructing the
-      `Watermarker`.
-    question: Does the library work with password‑protected PDFs?
-  - answer: Use a loop to instantiate a `Watermarker` per file, apply the watermark,
-      save, and close immediately. This pattern keeps memory usage constant.
-    question: How can I watermark a large batch of documents efficiently?
-  - answer: The API offers a `remove` method that can target specific watermarks by
-      ID or type, but you need to keep a reference to the added watermark.
-    question: Is it possible to remove a watermark that was added earlier?
-  - answer: GroupDocs.Watermark is compatible with Java 8 through Java 21, covering
-      both legacy and modern environments.
-    question: What Java versions are supported?
-  type: FAQPage
-title: إضافة علامة مائية نصية Java باستخدام GroupDocs.Watermark
+- Java watermarking
+- GroupDocs.Watermark Java API
+- adding watermarks in Java
+title: 'إضافة علامة مائية Java: تأمين المستندات باستخدام واجهة برمجة تطبيقات GroupDocs.Watermark'
 type: docs
 url: /ar/java/getting-started/java-watermark-groupdocs-guide/
 weight: 1
 ---
 
-# إضافة علامة مائية نصية Java باستخدام GroupDocs.Watermark
+# إضافة علامة مائية Java: إتقان أمان المستندات مع GroupDocs.Watermark
 
-## مقدمة
-
-إضافة **علامة مائية نصية** إلى مستند هي واحدة من أسرع الطرق لحماية الملكية الفكرية وتعزيز هوية العلامة التجارية. في هذا الدرس ستتعلم كيفية **add text watermark java** باستخدام مكتبة GroupDocs.Watermark، مع اتباع أفضل الممارسات **prevent memory leaks java**. سنستعرض كل خطوة — من إعداد مشروع Maven إلى تنظيف الموارد — حتى تتمكن من دمج العلامات المائية في أي تطبيق Java بثقة.
+إضافة **watermark** إلى ملفاتك هي واحدة من أكثر الطرق فعالية لحماية الملكية الفكرية، وتوسيم أصولك، والإشارة إلى السرية. في هذا الدرس ستتعلم **how to add watermark java** باستخدام مكتبة GroupDocs.Watermark القوية. سنستعرض كل شيء من إعداد بيئتك إلى تهيئة `Watermarker`، وتطبيق علامة مائية نصية، وحفظ النتيجة، وتنظيف الموارد — كل ذلك بشرح واضح ومحادث.
 
 ## إجابات سريعة
-- **ما المكتبة التي تضيف علامات مائية نصية في Java؟** GroupDocs.Watermark for Java.  
-- **كم عدد أسطر الكود المطلوبة لعلامة مائية أساسية؟** سطران فقط: إنشاء `Watermarker` واستدعاء `add`.  
-- **هل يمكنني تجنب تسرب الذاكرة؟** نعم — دائمًا أغلق `Watermarker` بعد الاستخدام.  
-- **ما صيغ الملفات المدعومة؟** أكثر من 70 صيغة إدخال وإخراج، بما في ذلك PDF و DOCX و PPTX والصور.  
-- **هل أحتاج إلى ترخيص للإنتاج؟** يتطلب الترخيص الكامل للنشر التجاري؛ يتوفر إصدار تجريبي مجاني للتقييم.
+- **What does “add watermark java” do?** يدمج نصًا مخصصًا أو صورًا في مستند للإشارة إلى الملكية أو السرية.  
+- **Which library is recommended?** توفر GroupDocs.Watermark for Java واجهة برمجة تطبيقات بسيطة لإضافة علامات مائية نصية وصورية.  
+- **Do I need a license?** تتوفر نسخة تجريبية مجانية؛ يتطلب الاستخدام في الإنتاج رخصة كاملة.  
+- **Can I process multiple files?** نعم – يمكنك تكرار العملية عبر مجموعة من المستندات وإعادة استخدام نفس سير العمل.  
+- **What Java version is required?** Java 8 أو أعلى.
 
-## ما هو “add text watermark java”؟
+## ما هو “add watermark java”
 
-**Add text watermark java** يشير إلى عملية إدراج طبقة نصية فوق المستند برمجيًا باستخدام كود Java. تُستخدم هذه التقنية عادةً لتعليم الملفات السرية، عرض العلامة التجارية، أو الإشارة إلى حالة المستند. يمكن تطبيقها على ملفات PDF، ومستندات Word، والعروض التقديمية، والصور، وتتعامل المكتبة مع ترقيم الصفحات، والتحجيم، والعرض الخاص بكل صيغة تلقائيًا.
+إضافة علامة مائية في Java تعني استخدام الكود لإدراج نص أو رسومات مرئية أو شبه شفافة في مستند (PDF، Word، Excel، إلخ) بشكل برمجي. تساعدك هذه التقنية على حماية المعلومات الحساسة، وتعزيز هوية العلامة التجارية، والامتثال للسياسات القانونية أو المؤسسية.
 
-## لماذا نستخدم GroupDocs.Watermark for Java؟
+## لماذا تستخدم GroupDocs.Watermark for Java؟
 
-يدعم GroupDocs.Watermark **أكثر من 70** صيغة مستند وصورة، ويمكنه معالجة ملفات تصل إلى **500 ميغابايت** دون تحميل الملف بالكامل إلى الذاكرة، ويوفر API سهل الاستخدام يقلل من وقت التطوير حتى **40 %** مقارنةً بمكتبات معالجة PDF اليدوية. بالإضافة إلى ذلك، يقدم دعمًا مدمجًا للملفات المحمية بكلمة مرور، ومعالجة دفعات، وإخراج عالي الدقة، مما يجعله مناسبًا لخطوط أنابيب المستندات على مستوى المؤسسات.
+- **Cross‑format support:** يدعم أكثر من 100 نوع من المستندات.  
+- **Simple API:** يتطلب أقل قدر من الكود لإضافة وتخصيص وحفظ العلامات المائية.  
+- **Performance‑focused:** صُممت للمعالجة الدفعية واستهلاك منخفض للذاكرة.  
+- **Active support & documentation:** تحديثات منتظمة وأدلة شاملة.
 
 ## المتطلبات المسبقة
 
-- **Java Development Kit (JDK):** الإصدار 8 أو أعلى.  
-- **IDE:** IntelliJ IDEA أو Eclipse أو أي محرر متوافق مع Java.  
-- **Maven:** لإدارة الاعتمادات وبناء المشروع.  
-- **معرفة أساسية بـ Java:** إلمام بمفاهيم البرمجة الكائنية ومعالجة الاستثناءات.  
+- **Java Development Kit (JDK):** الإصدار 8 أو أحدث.  
+- **IDE:** IntelliJ IDEA، Eclipse، أو أي محرر متوافق مع Java.  
+- **Maven:** لإدارة التبعيات.  
+- **Basic Java knowledge:** الإلمام بالفئات، والطرق، وإدخال/إخراج الملفات.
 
 ## إعداد GroupDocs.Watermark for Java
 
-لبدء العمل، أضف اعتماد GroupDocs.Watermark إلى ملف `pom.xml` في Maven. هذا الإدخال الواحد يجلب جميع الثنائيات المطلوبة.
-
-**إعداد Maven:**
+لبدء العمل، أضف مستودع GroupDocs.Watermark والاعتماد إلى ملف Maven `pom.xml` الخاص بك. يتيح ذلك لمشروعك الوصول إلى جميع ميزات العلامات المائية.
 
 ```xml
 <repositories>
@@ -109,30 +63,19 @@ weight: 1
 </dependencies>
 ```
 
-**تحميل مباشر:** بدلاً من ذلك، يمكنك تنزيل أحدث نسخة من [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
-
-الموارد الإضافية: الوثائق الرسمية لـ [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/) ومرجع API الشامل لـ [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java) يوفران رؤى أعمق وأمثلة كود.
+**Direct Download:** بدلاً من ذلك، يمكنك تنزيل أحدث إصدار من [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### الحصول على الترخيص
 
-- **إصدار تجريبي:** اختبر جميع الميزات دون بطاقة ائتمان.  
-- **ترخيص مؤقت:** يمدد فترة التجربة للمشاريع التقييمية.  
-- **ترخيص كامل:** مطلوب للاستخدام الإنتاجي ولإلغاء قفل الدعم المميز.
-
-مع جاهزية المكتبة، لننتقل إلى التنفيذ الأساسي.
+- **Free Trial:** اختبر جميع الميزات دون الحاجة إلى بطاقة ائتمان.  
+- **Temporary License:** تمديد فترة التجربة للمشاريع التقييمية.  
+- **Full License:** مطلوب للنشر التجاري والاستخدام غير المحدود.
 
 ## دليل التنفيذ
 
-### كيف نضيف علامة مائية نصية java؟
-
-حمّل ملف المصدر باستخدام `new Watermarker(inputPath)` واستدعِ `add(new TextWatermark("CONFIDENTIAL", new Font("Arial", 36)))`. هذا النمط ذو الخطوتين ينشئ العلامة المائية ويطبقها فورًا، مع معالجة جميع تفاصيل الصيغة داخليًا.
-
 ### تهيئة Watermarker
 
-#### تعريف مرساة
-فئة `Watermarker` هي نقطة الدخول لجميع عمليات العلامة المائية في GroupDocs.Watermark. تقوم بتحميل المستند إلى الذاكرة وتوفر طرقًا لإضافة، تعديل، أو إزالة العلامات المائية.
-
-**مقتطف الكود:**
+الخطوة الأولى هي إنشاء كائن `Watermarker` يشير إلى المستند الذي تريد حمايته.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -145,16 +88,12 @@ public class FeatureInitializeWatermarker {
 }
 ```
 
-**التفسير:**  
-- `inputDocumentPath` – استبدله بالمسار المطلق أو النسبي للملف الذي تريد حمايته.  
-- تهيئة `Watermarker` تُعد خط أنابيب المعالجة، مما يسمح بالعمليات اللاحقة للعلامة المائية.
+- **`inputDocumentPath`** – استبدله بالمسار المطلق أو النسبي لملف المصدر الخاص بك.  
+- **Why initialize?** يقوم كائن `Watermarker` بتحميل المستند إلى الذاكرة وتحضيره لعمليات العلامة المائية.
 
 ### إضافة علامة مائية نصية إلى المستند
 
-#### تعريف مرساة
-`TextWatermark` تمثل طبقة نصية يمكن وضعها، تنسيقها، وتكرارها عبر الصفحات. تشمل الخط، الحجم، اللون، وإعدادات الدوران.
-
-**مقتطف الكود:**
+أنشئ كائن `TextWatermark`، حدد مظهره، وأرفقه بالمستند المحمل.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -169,16 +108,12 @@ public class FeatureAddTextWatermark {
 }
 ```
 
-**التفسير:**  
-- أنشئ `TextWatermark` بالنص المطلوب وكائن `Font`.  
-- اضبط الخصائص مثل الشفافية، زاوية الدوران، والموقع لتتناسب مع إرشادات العلامة التجارية.
+- **`TextWatermark`** – يحتوي على نص العلامة المائية ومعلومات التنسيق.  
+- **Customization:** غيّر الخط، الحجم، اللون، أو الشفافية لتتناسب مع إرشادات العلامة التجارية الخاصة بك.
 
 ### حفظ المستند في الموقع المحدد
 
-#### تعريف مرساة
-طريقة `save` تكتب المستند المعدل إلى القرص، مع الحفاظ على صيغة الملف الأصلية ما لم تحدد نوع إخراج مختلف.
-
-**مقتطف الكود:**
+بعد إضافة العلامة المائية، احفظ التغييرات في ملف جديد.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -191,16 +126,12 @@ public class FeatureSaveDocument {
 }
 ```
 
-**التفسير:**  
-- `outputDocumentPath` يحدد أين سيُخزن الملف المائي.  
-- يمكنك أيضًا تغيير نوع الملف بتوفير كائن `SaveOptions`.
+- **`outputDocumentPath`** – اختر مجلدًا حيث سيتم كتابة الملف المموسى.  
+- **Why save?** تقوم طريقة `save` بكتابة جميع التعديلات، مما ينتج مستندًا جديدًا يحتفظ بالأصل دون تغيير.
 
 ### إغلاق مورد Watermarker
 
-#### تعريف مرساة
-استدعاء `close()` على `Watermarker` يحرر الموارد الأصلية ويمسح المخازن الداخلية، وهو أمر أساسي **prevent memory leaks java**.
-
-**مقتطف الكود:**
+حرّر موارد النظام بإغلاق كائن `Watermarker` عند الانتهاء.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -212,61 +143,46 @@ public class FeatureCloseWatermarker {
 }
 ```
 
-**التفسير:**  
-- إغلاق المورد يحرر مقابض الملفات والذاكرة الأصلية، مما يضمن استقرار التطبيق أثناء معالجة الدُفعات.
+- **Best practice:** يؤدي الإغلاق إلى تحرير مقابض الملفات ويساعد جامع القمامة في JVM على استعادة الذاكرة.
 
 ## تطبيقات عملية
 
-1. **توثيق العلامة التجارية:** أدخل اسم شركتك أو شعارك كعلامة مائية نصية خفيفة على جميع ملفات PDF الصادرة.  
-2. **حماية المعلومات السرية:** ضع كلمة “CONFIDENTIAL” على التقارير الداخلية لمنع التوزيع غير المقصود.  
-3. **التحكم في الإصدارات أثناء التعاون:** أضف أرقام الإصدارات كعلامات مائية لتتبع تعديلات المستند.  
-4. **الوثائق القانونية والمالية:** طبّق علامة “FOR INTERNAL USE ONLY” على العقود والبيانات لتعزيز الالتزام.
+1. **Branding:** أدخل شعار شركتك أو الشعار الفرعي في كل تقرير مُصدَّر.  
+2. **Confidentiality:** ضع علامة “CONFIDENTIAL” على المسودات أو العقود أو البيانات المالية.  
+3. **Version Tracking:** أضف أرقام الإصدارات أو الطوابع الزمنية كعلامات مائية لتتبع التدقيق.  
+4. **Legal Compliance:** أضف إشعارات قانونية إلى المستندات المنظمة تلقائيًا.
 
 ## اعتبارات الأداء
 
-- **إدارة الموارد:** دائمًا أغلق كائنات `Watermarker`؛ هذا يمنع **prevent memory leaks java** ويحافظ على انخفاض استهلاك الذاكرة.  
-- **معالجة الدُفعات:** عند التعامل مع مئات الملفات، أعد استخدام كائن `Watermarker` واحد لكل ملف وعالجها تسلسليًا لتقليل عبء الـ GC.  
-- **الملفات الكبيرة:** يقوم GroupDocs.Watermark ببث البيانات، مما يتيح لك وضع علامة مائية على ملفات PDF تصل إلى **500 ميغابايت** دون تحميلها بالكامل إلى الذاكرة.
-
-## المشكلات الشائعة والحلول
-
-| المشكلة | الحل |
-|-------|----------|
-| **OutOfMemoryError** عند معالجة ملفات PDF كبيرة | فعّل وضع البث باستخدام `Watermarker.setLoadOptions(new LoadOptions().setLoadMode(LoadMode.Stream))` وتأكد دائمًا من إغلاق `Watermarker`. |
-| **العلامة المائية غير مرئية في بعض الصفحات** | تحقق من أن شفافية `TextWatermark` مضبوطة فوق 0.1 وأن حجم الصفحة يتطابق مع أبعاد العلامة المائية. |
-| **استثناء الترخيص** | تأكد من وضع ملف الترخيص في مسار الـ classpath واستدعِ `License license = new License(); license.setLicense("path/to/license.lic");` قبل إنشاء `Watermarker`. |
+- **Resource Management:** احرص دائمًا على إغلاق `Watermarker` لمنع تسرب الذاكرة، خاصةً في وظائف الدُفعات.  
+- **Batch Processing:** كرّر عبر قائمة مسارات الملفات وأعد استخدام كائن `Watermarker` واحد حيثما أمكن.  
+- **Memory Tuning:** بالنسبة للملفات الكبيرة جدًا، فكر في معالجة الصفحات بشكل فردي للحفاظ على استهلاك منخفض للذاكرة.
 
 ## الأسئلة المتكررة
 
-**س: هل يمكنني إضافة علامات مائية صورة بالإضافة إلى النص؟**  
-ج: نعم، يدعم GroupDocs.Watermark كائنات `ImageWatermark` للشعارات أو الأختام.
+**Q: What is a text watermark?**  
+A: علامة مائية نصية هي قطعة من المعلومات النصية مدمجة في مستند، تُستخدم غالبًا للعلامة التجارية أو الأمان.
 
-**س: هل تعمل المكتبة مع ملفات PDF محمية بكلمة مرور؟**  
-ج: بالتأكيد. قدم كلمة المرور عبر `LoadOptions` عند إنشاء `Watermarker`.
+**Q: Can I add image watermarks using GroupDocs.Watermark?**  
+A: نعم، تدعم المكتبة أيضًا العلامات المائية الصورية، مما يتيح لك وضع الشعارات أو التوقيعات.
 
-**س: كيف يمكنني وضع علامة مائية على دفعة كبيرة من المستندات بكفاءة؟**  
-ج: استخدم حلقة لإنشاء `Watermarker` لكل ملف، أضف العلامة المائية، احفظ، وأغلق فورًا. هذا النمط يحافظ على استهلاك ثابت للذاكرة.
+**Q: How do I handle large document sets efficiently with GroupDocs.Watermark?**  
+A: استخدم حلقات المعالجة الدُفعية وتأكد من إغلاق كل كائن `Watermarker` فورًا لتحرير الموارد.
 
-**س: هل يمكن إزالة علامة مائية أُضيفت مسبقًا؟**  
-ج: توفر API طريقة `remove` التي يمكنها استهداف علامات مائية محددة بالمعرف أو النوع، بشرط الاحتفاظ بمرجع العلامة المضافة.
+**Q: Is it possible to remove watermarks added by GroupDocs.Watermark?**  
+A: الإزالة غير مغطاة في هذا الدليل؛ تتطلب استدعاءات API إضافية وتعاملًا حذرًا مع المحتوى الأصلي.
 
-**س: ما إصدارات Java المدعومة؟**  
-ج: يتوافق GroupDocs.Watermark مع Java 8 حتى Java 21، مما يغطي البيئات القديمة والحديثة.
+**Q: What are common issues when using GroupDocs.Watermark?**  
+A: المشكلات الشائعة تشمل مسارات ملفات غير صحيحة، تراخيص مفقودة، أو استخدام صيغ مستندات غير مدعومة. تحقق من التبعيات والمسارات قبل التشغيل.
 
-## الخلاصة
+## الموارد
 
-أصبح لديك الآن سير عمل كامل وجاهز للإنتاج لـ **add text watermark java** باستخدام GroupDocs.Watermark. باتباع الخطوات أعلاه وتذكر إغلاق `Watermarker` لتجنب **prevent memory leaks java**، يمكنك حماية، توثيق، وإدارة المستندات على نطاق واسع. استكشف أنواع العلامات المائية الإضافية، جرب الدوران والشفافية، ودمج الـ API في خطوط معالجة مستندات أكبر لمزيد من الأتمتة.
-
----
-
-**آخر تحديث:** 2026-06-21  
-**تم الاختبار مع:** GroupDocs.Watermark 23.12 for Java  
-**المؤلف:** GroupDocs  
+- **Documentation:** [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Download:** [GroupDo
 
 ---
 
-## دروس ذات صلة
-
-- [How to Add a Text Watermark to PDFs Using GroupDocs.Watermark for Java: A Step-by-Step Guide](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [Add and Lock Text Watermarks in Word Documents Using Java: A Comprehensive Guide with GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [How to Add Rotated Text Watermarks in Documents Using GroupDocs.Watermark for Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+**آخر تحديث:** 2026-01-06  
+**تم الاختبار مع:** GroupDocs.Watermark 24.11  
+**المؤلف:** GroupDocs

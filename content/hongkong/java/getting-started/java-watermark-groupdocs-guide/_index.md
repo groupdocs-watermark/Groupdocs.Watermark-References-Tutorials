@@ -1,94 +1,48 @@
 ---
-date: '2026-06-21'
-description: 了解如何使用 GroupDocs.Watermark 為 Java 添加文字浮水印。防止 Java 記憶體洩漏，同時有效地保護與品牌化您的文件。
+date: '2026-01-06'
+description: 學習如何使用 GroupDocs.Watermark API 在 Java 中添加水印。輕鬆保護您的文件並提升品牌形象。
 keywords:
-- add text watermark java
-- prevent memory leaks java
-- GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  headline: Add Text Watermark Java with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  name: Add Text Watermark Java with GroupDocs.Watermark
-  steps:
-  - name: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-    text: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-  - name: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-    text: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-  - name: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-    text: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-  - name: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-    text: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-  type: HowTo
-- questions:
-  - answer: Yes, GroupDocs.Watermark also supports `ImageWatermark` objects for logos
-      or stamps.
-    question: Can I add image watermarks in addition to text?
-  - answer: Absolutely. Provide the password via `LoadOptions` when constructing the
-      `Watermarker`.
-    question: Does the library work with password‑protected PDFs?
-  - answer: Use a loop to instantiate a `Watermarker` per file, apply the watermark,
-      save, and close immediately. This pattern keeps memory usage constant.
-    question: How can I watermark a large batch of documents efficiently?
-  - answer: The API offers a `remove` method that can target specific watermarks by
-      ID or type, but you need to keep a reference to the added watermark.
-    question: Is it possible to remove a watermark that was added earlier?
-  - answer: GroupDocs.Watermark is compatible with Java 8 through Java 21, covering
-      both legacy and modern environments.
-    question: What Java versions are supported?
-  type: FAQPage
-title: 使用 GroupDocs.Watermark 為 Java 添加文字浮水印
+- Java watermarking
+- GroupDocs.Watermark Java API
+- adding watermarks in Java
+title: 在 Java 中加入水印：使用 GroupDocs.Watermark API 保護文件
 type: docs
 url: /zh-hant/java/getting-started/java-watermark-groupdocs-guide/
 weight: 1
 ---
 
-# 添加文字水印 Java 使用 GroupDocs.Watermark
+# 新增 Watermark Java：掌握使用 GroupDocs.Watermark 的文件安全
 
-## 簡介
-
-將 **text watermark** 添加到文件是保護知識產權和加強品牌形象的最快方法之一。在本教程中，您將學習如何 **add text watermark java** 使用 GroupDocs.Watermark 函式庫，同時遵循最佳實踐以 **prevent memory leaks java**。我們將逐步說明——從設定 Maven 專案到清理資源——讓您能自信地將水印功能整合到任何 Java 應用程式中。
+在檔案中加入 **watermark** 是保護智慧財產、為資產加上品牌標示以及顯示機密性的最有效方式之一。在本教學中，你將學會 **如何在 Java 專案中加入 watermark**，使用功能強大的 GroupDocs.Watermark 函式庫。我們會一步步說明從環境設定、初始化 `Watermarker`、套用文字 watermark、儲存結果，到釋放資源的完整流程，並提供清晰、口語化的說明。
 
 ## 快速答覆
-- **What library adds text watermarks in Java?** GroupDocs.Watermark for Java.  
-- **How many lines of code are needed for a basic watermark?** 基本水印需要多少行程式碼？ 只需兩行：建立 `Watermarker` 並呼叫 `add`。  
-- **Can I avoid memory leaks?** 我可以避免記憶體洩漏嗎？ 是的——使用完畢後務必關閉 `Watermarker`。  
-- **Which file formats are supported?** 支援哪些檔案格式？ 超過 70 種輸入與輸出格式，包括 PDF、DOCX、PPTX 以及影像。  
-- **Do I need a license for production?** 生產環境需要授權嗎？ 商業部署必須使用完整授權；亦提供免費試用供評估使用。
+- **「add watermark java」是做什麼的？** 它會將自訂文字或圖片嵌入文件，以標示所有權或機密性。  
+- **推薦使用哪個函式庫？** GroupDocs.Watermark for Java，提供簡易的 API 來處理文字與圖片 watermark。  
+- **需要授權嗎？** 提供免費試用版；正式上線需購買完整授權。  
+- **可以一次處理多個檔案嗎？** 可以——只要在集合上迴圈，重複使用相同的工作流程即可。  
+- **需要哪個 Java 版本？** Java 8 或以上。
 
-## 「add text watermark java」是什麼？
+## 什麼是「add watermark java」？
 
-**Add text watermark java** 指的是使用 Java 程式碼以程式化方式在文件中插入文字覆蓋層的過程。此技術常用於標記機密檔案、展示品牌或指示文件狀態。它可套用於 PDF、Word 文件、簡報與影像，且函式庫會自動處理分頁、縮放與特定格式的渲染。
+在 Java 中加入 watermark 意指使用程式碼將可見或半透明的文字或圖形插入文件（PDF、Word、Excel 等）。此技術可協助保護敏感資訊、強化品牌形象，並符合相關法規或企業政策。
 
-## 為何在 Java 中使用 GroupDocs.Watermark？
+## 為什麼選擇 GroupDocs.Watermark for Java？
 
-GroupDocs.Watermark 支援 **70+** 種文件與影像格式，能處理高達 **500 MB** 的檔案而無需將整個檔案載入記憶體，並提供流暢的 API，較手動 PDF 操作函式庫可減少高達 **40 %** 的開發時間。此外，它內建支援受密碼保護的檔案、批次處理與高解析度輸出，適合企業級文件流水線使用。
+- **跨格式支援：** 支援超過 100 種文件類型。  
+- **簡易 API：** 只需少量程式碼即可新增、客製化與儲存 watermark。  
+- **效能導向：** 為批次處理與低記憶體佔用而設計。  
+- **活躍支援與文件：** 定期更新，且提供完整教學文件。
 
 ## 前置條件
 
-- **Java Development Kit (JDK)：** 版本 8 或以上。  
-- **IDE：** IntelliJ IDEA、Eclipse，或任何相容 Java 的編輯器。  
-- **Maven：** 用於相依性管理與專案建置。  
-- **Basic Java knowledge：** 熟悉物件導向概念與例外處理。  
+- **Java Development Kit (JDK)：** 8 版或更新版本。  
+- **IDE：** IntelliJ IDEA、Eclipse，或任何支援 Java 的編輯器。  
+- **Maven：** 用於相依管理。  
+- **基本 Java 知識：** 了解類別、方法與檔案 I/O。
 
-## 設定 GroupDocs.Watermark 於 Java
+## 設定 GroupDocs.Watermark for Java
 
-首先，將 GroupDocs.Watermark 相依性加入 Maven 的 `pom.xml`。此單一條目會自動下載所有必要的二進位檔。
-
-**Maven 設定：**
+首先，將 GroupDocs.Watermark 的儲存庫與相依加入 Maven `pom.xml`。如此即可在專案中使用所有 watermark 功能。
 
 ```xml
 <repositories>
@@ -108,30 +62,19 @@ GroupDocs.Watermark 支援 **70+** 種文件與影像格式，能處理高達 **
 </dependencies>
 ```
 
-**Direct Download：** 另外，您可以從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載最新版本。
-
-其他資源：官方的 [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/) 與完整的 [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java) 提供更深入的說明與程式碼範例。
+**直接下載：** 亦可從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載最新版本。
 
 ### 取得授權
 
-- **Free Trial：** 無需信用卡即可測試所有功能。  
-- **Temporary License：** 延長評估專案的試用期。  
-- **Full License：** 生產環境必須使用，並可解鎖高級支援。
-
-函式庫已就緒，讓我們深入核心實作。
+- **免費試用：** 無需信用卡即可測試全部功能。  
+- **臨時授權：** 延長試用期以供評估專案使用。  
+- **完整授權：** 商業部署與無限制使用時必須購買。
 
 ## 實作指南
 
-### 如何 add text watermark java？
-
-使用 `new Watermarker(inputPath)` 載入來源檔案，然後呼叫 `add(new TextWatermark("CONFIDENTIAL", new Font("Arial", 36)))`。此兩步驟模式會即時建立並套用水印，內部自動處理所有格式特定的細節。
-
 ### 初始化 Watermarker
 
-#### 定義錨點
-`Watermarker` 類別是 GroupDocs.Watermark 中所有水印操作的入口點。它會將文件載入記憶體，並提供添加、編輯或移除水印的方法。
-
-**程式碼片段：**
+第一步是建立指向欲保護文件的 `Watermarker` 實例。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -144,16 +87,12 @@ public class FeatureInitializeWatermarker {
 }
 ```
 
-**說明：**  
-- `inputDocumentPath` – 請替換為您欲保護檔案的絕對或相對路徑。  
-- 初始化 `Watermarker` 會建立處理管線，允許後續的水印操作。
+- **`inputDocumentPath`** – 請改成來源檔案的絕對或相對路徑。  
+- **為什麼要初始化？** `Watermarker` 物件會將文件載入記憶體，並為後續的 watermark 操作做好準備。
 
-### 為文件添加文字水印
+### 為文件加入文字 Watermark
 
-#### 定義錨點
-`TextWatermark` 代表可定位、樣式化且可跨頁重複的文字覆蓋層。它封裝了字型、大小、顏色與旋轉設定。
-
-**程式碼片段：**
+建立 `TextWatermark` 物件，設定外觀後套用至已載入的文件。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -168,16 +107,12 @@ public class FeatureAddTextWatermark {
 }
 ```
 
-**說明：**  
-- 使用欲顯示的文字與 `Font` 物件建立 `TextWatermark`。  
-- 調整不透明度、旋轉角度與放置位置等屬性，以符合品牌指引。
+- **`TextWatermark`** – 用於保存 watermark 文字與樣式資訊。  
+- **客製化：** 可調整字型、大小、顏色或不透明度，以符合品牌指引。
 
-### 將文件儲存至指定位置
+### 儲存文件至指定位置
 
-#### 定義錨點
-`save` 方法會將修改後的文件寫入磁碟，保留原始檔案格式，除非您指定不同的輸出類型。
-
-**程式碼片段：**
+加入 watermark 後，將變更寫入新檔案。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -190,16 +125,12 @@ public class FeatureSaveDocument {
 }
 ```
 
-**說明：**  
-- `outputDocumentPath` 決定水印檔案的儲存位置。  
-- 您亦可透過提供 `SaveOptions` 實例來變更檔案類型。
+- **`outputDocumentPath`** – 請選擇欲寫入加了 watermark 後檔案的資料夾。  
+- **為什麼要儲存？** `save` 方法會寫入所有修改，產生一個保留原始檔案的全新文件。
 
 ### 關閉 Watermarker 資源
 
-#### 定義錨點
-對 `Watermarker` 呼叫 `close()` 會釋放原生資源並清除內部緩衝區，這對於 **prevent memory leaks java** 至關重要。
-
-**程式碼片段：**
+完成後關閉 `Watermarker`，釋放系統資源。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -211,59 +142,48 @@ public class FeatureCloseWatermarker {
 }
 ```
 
-**說明：**  
-- 關閉資源會釋放檔案句柄與原生記憶體，確保您的應用程式在批次處理期間保持穩定。
+- **最佳實踐：** 關閉可釋放檔案句柄，並協助 JVM 的垃圾回收機制回收記憶體。
 
 ## 實務應用
 
-1. **Branding Documents：** 在所有外發 PDF 上插入公司名稱或標誌作為細微的文字水印。  
-2. **Protecting Confidential Information：** 在內部報告上標記 “CONFIDENTIAL”，以防止意外散布。  
-3. **Version Control in Collaboration：** 添加版本號作為水印，以追蹤文件修訂。  
-4. **Legal and Financial Documentation：** 在合約與報表上套用 “FOR INTERNAL USE ONLY” 水印，以加強合規性。
+1. **品牌化：** 在每份匯出報告上加入公司標誌或標語。  
+2. **機密性：** 為草稿、合約或財務報表加上「CONFIDENTIAL」標記。  
+3. **版本追蹤：** 以 watermark 方式附加版本號或時間戳，作為稽核紀錄。  
+4. **法規遵循：** 自動在受管制文件上加入法定聲明。
 
 ## 效能考量
 
-- **Resource Management：** 必須始終關閉 `Watermarker` 物件；此舉可防止 **prevent memory leaks java** 並降低堆積使用量。  
-- **Batch Processing：** 處理數百檔案時，對每個檔案重複使用單一 `Watermarker` 實例並依序處理，以減少 GC 開銷。  
-- **Large Files：** GroupDocs.Watermark 以串流方式處理資料，讓您能在不將整個檔案載入記憶體的情況下，為高達 **500 MB** 的 PDF 加水印。
-
-## 常見問題與解決方案
-
-| 問題 | 解決方案 |
-|------|----------|
-| **OutOfMemoryError** 在處理大型 PDF 時 | 使用 `Watermarker.setLoadOptions(new LoadOptions().setLoadMode(LoadMode.Stream))` 啟用串流模式，並始終關閉 `Watermarker`。 |
-| **Watermark not visible on some pages** | 確認 `TextWatermark` 的不透明度設定高於 0.1，且頁面尺寸與水印尺寸相符。 |
-| **License exception** | 確保授權檔案放置於 classpath 中，並在建立 `Watermarker` 前呼叫 `License license = new License(); license.setLicense("path/to/license.lic");`。 |
+- **資源管理：** 必須在批次作業中隨時關閉 `Watermarker`，避免記憶體泄漏。  
+- **批次處理：** 迴圈處理檔案清單時，盡可能重複使用同一個 `Watermarker` 實例。  
+- **記憶體調校：** 處理極大檔案時，可考慮逐頁處理，以降低記憶體佔用。
 
 ## 常見問答
 
-**Q: 我可以在文字之外加入影像水印嗎？**  
-A: 是的，GroupDocs.Watermark 也支援 `ImageWatermark` 物件，可用於標誌或印章。
+**Q: 什麼是文字 watermark？**  
+A: 文字 watermark 是嵌入文件中的文字資訊，常用於品牌化或安全性標示。
 
-**Q: 此函式庫能處理受密碼保護的 PDF 嗎？**  
-A: 當然可以。於建立 `Watermarker` 時透過 `LoadOptions` 提供密碼。
+**Q: 可以使用 GroupDocs.Watermark 加入圖片 watermark 嗎？**  
+A: 可以，函式庫同樣支援圖片 watermark，讓你放置標誌或簽名。
 
-**Q: 如何有效地為大量文件加水印？**  
-A: 使用迴圈為每個檔案建立 `Watermarker`，套用水印、儲存並立即關閉。此模式可保持記憶體使用量恆定。
+**Q: 如何有效處理大量文件集合？**  
+A: 使用批次處理迴圈，並確保每個 `Watermarker` 實例在使用完畢後即時關閉，以釋放資源。
 
-**Q: 能否移除先前添加的水印？**  
-A: API 提供 `remove` 方法，可依 ID 或類型移除特定水印，但需保留對已添加水印的參考。
+**Q: 能否移除由 GroupDocs.Watermark 加入的 watermark？**  
+A: 本指南未涵蓋移除功能；需要額外的 API 呼叫並小心處理原始內容。
 
-**Q: 支援哪些 Java 版本？**  
-A: GroupDocs.Watermark 相容於 Java 8 至 Java 21，涵蓋舊版與最新版環境。
+**Q: 使用 GroupDocs.Watermark 時常見的問題是什麼？**  
+A: 常見問題包括檔案路徑錯誤、授權缺失或使用不支援的文件格式。執行前請確認相依與路徑正確。
 
-## 結論
+## 資源
 
-您現在已掌握使用 GroupDocs.Watermark 的完整、可投入生產的 **add text watermark java** 工作流程。依照上述步驟，並記得關閉 `Watermarker` 以 **prevent memory leaks java**，即可大規模保護、品牌化與管理文件。探索其他水印類型、嘗試旋轉與不透明度，並將 API 整合至更大型的文件處理流水線，以實現更高自動化程度。
+- **文件說明：** [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **API 參考：** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
+- **下載：** [GroupDo
 
 ---
 
-**最後更新：** 2026-06-21  
-**測試環境：** GroupDocs.Watermark 23.12 for Java  
+**最後更新：** 2026-01-06  
+**測試版本：** GroupDocs.Watermark 24.11  
 **作者：** GroupDocs  
 
-## 相關教學
-
-- [如何使用 GroupDocs.Watermark for Java 為 PDF 添加文字水印：逐步指南](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [使用 Java 為 Word 文件添加與鎖定文字水印：GroupDocs.Watermark 完整指南](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [如何使用 GroupDocs.Watermark for Java 為文件添加旋轉文字水印](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+---

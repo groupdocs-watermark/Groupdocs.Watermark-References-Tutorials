@@ -1,97 +1,52 @@
 ---
-date: '2026-06-21'
-description: Scopri come rimuovere gli allegati dai messaggi email usando GroupDocs.Watermark
-  per Java, migliorando produttività e sicurezza.
+date: '2026-01-03'
+description: Scopri come rimuovere gli allegati dai file email con GroupDocs.Watermark
+  per Java – la guida passo passo su come rimuovere gli allegati in modo efficiente.
 keywords:
-- how to remove attachments
-- email attachment removal Java
-- GroupDocs.Watermark email
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to remove attachments from email messages using GroupDocs.Watermark
-    for Java, boosting productivity and security.
-  headline: How to Remove Attachments from Emails Using GroupDocs.Watermark in Java
-  type: TechArticle
-- description: Learn how to remove attachments from email messages using GroupDocs.Watermark
-    for Java, boosting productivity and security.
-  name: How to Remove Attachments from Emails Using GroupDocs.Watermark in Java
-  steps:
-  - name: '**Email Cleanup Automation:** Strip outdated PDFs or large spreadsheets
-      from inbound messages before archiving.'
-    text: '**Email Cleanup Automation:** Strip outdated PDFs or large spreadsheets
-      from inbound messages before archiving.'
-  - name: '**Data Privacy Compliance:** Automatically delete confidential contracts
-      from outgoing emails to meet GDPR or HIPAA requirements.'
-    text: '**Data Privacy Compliance:** Automatically delete confidential contracts
-      from outgoing emails to meet GDPR or HIPAA requirements.'
-  - name: '**Enhanced Email Management:** Reduce mailbox size by removing redundant
-      images, easing backup and search operations.'
-    text: '**Enhanced Email Management:** Reduce mailbox size by removing redundant
-      images, easing backup and search operations.'
-  type: HowTo
-- questions:
-  - answer: Yes, inspect `attachment.getContentType()` and apply your filter logic
-      accordingly.
-    question: Can I remove attachments based on MIME type instead of file name?
-  - answer: Absolutely; `EmailLoadOptions` works with both formats without additional
-      configuration.
-    question: Does the library support .eml files as well as .msg?
-  - answer: The reverse‑iteration loop simply skips non‑matching items, so no exception
-      is thrown.
-    question: What happens if I try to remove an attachment that doesn’t exist?
-  - answer: You can modify `attachment.setFileName("newName.ext")` before saving the
-      email.
-    question: Is it possible to rename an attachment instead of deleting it?
-  - answer: Use a thread‑pool executor to parallelize the load‑modify‑save cycle,
-      making sure each thread creates its own `Watermarker` instance.
-    question: How can I process thousands of emails efficiently?
-  type: FAQPage
-title: Come rimuovere gli allegati dalle email con GroupDocs.Watermark per Java
+- remove email attachments Java
+- GroupDocs.Watermark for Java
+- email management automation
+title: Come rimuovere gli allegati dai messaggi di posta elettronica utilizzando GroupDocs.Watermark
+  in Java
 type: docs
 url: /it/java/email-document-watermarking/remove-email-attachments-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Come rimuovere gli allegati dalle email usando GroupDocs.Watermark in Java
+# Come rimuovere gli allegati dai messaggi email usando GroupDocs.Watermark in Java
 
-Nell'era digitale odierna, **come rimuovere gli allegati** dai messaggi email in modo efficiente è una priorità per gli sviluppatori che devono mantenere le caselle di posta ordinate e proteggere i dati sensibili. Questo tutorial ti guida nell'uso di **GroupDocs.Watermark per Java** per individuare ed eliminare specifici allegati email per nome o tipo di file, preservando il messaggio originale.
+Nel frenetico ambiente lavorativo di oggi, **sapere come rimuovere gli allegati** dai messaggi email è fondamentale per mantenere le caselle di posta ordinate, proteggere i dati sensibili e migliorare la produttività complessiva. Questo tutorial ti guida attraverso l’intero processo di utilizzo di **GroupDocs.Watermark per Java** per identificare ed eliminare allegati specifici per nome o tipo di file. Alla fine, sarai in grado di automatizzare la pulizia delle email e rispettare le politiche di privacy dei dati.
 
 ## Risposte rapide
-- **Quale libreria gestisce la rimozione degli allegati?** GroupDocs.Watermark for Java.
-- **Quale versione di Java è richiesta?** JDK 8 o superiore.
-- **Posso mirare gli allegati per estensione del file?** Sì, usando una logica condizionale semplice.
-- **È necessaria una licenza per la produzione?** È richiesta una licenza valida di GroupDocs.Watermark.
-- **L'email originale rimarrà intatta?** Il file originale rimane intatto; un nuovo file viene salvato con gli allegati selezionati rimossi.
+- **Cosa significa “come rimuovere gli allegati” in questo contesto?** Si riferisce all’eliminazione programmatica di file indesiderati da una email .msg utilizzando GroupDocs.Watermark.  
+- **Quale versione della libreria è necessaria?** GroupDocs.Watermark 24.11 (o successiva).  
+- **È necessaria una licenza?** Una prova gratuita è sufficiente per i test; per la produzione è richiesta una licenza permanente.  
+- **Posso elaborare più email contemporaneamente?** Sì—avvolgi il codice in un ciclo o in un job batch.  
+- **L’iterazione inversa è importante?** Assolutamente; evita lo spostamento degli indici quando si rimuovono gli elementi.
 
-## Cos'è “come rimuovere gli allegati” nel contesto dell'elaborazione delle email?
-**Come rimuovere gli allegati** si riferisce all'eliminazione programmatica dei file selezionati incorporati in un'email (ad es., *.msg* o *.eml*) senza modificare il contenuto del resto del messaggio. Questa operazione è comunemente usata per l'automazione della pulizia, la conformità o l'applicazione della sicurezza. Rimuovendo i file non necessari, riduci l'uso di spazio di archiviazione, migliori le prestazioni di ricerca e mitighi il rischio di condividere involontariamente dati sensibili.
+## Che cosa è “come rimuovere gli allegati” con GroupDocs.Watermark?
+GroupDocs.Watermark fornisce un’API semplice per caricare un file email, ispezionare la sua collezione di allegati e cancellare gli elementi che corrispondono ai criteri impostati. Questa funzionalità è particolarmente utile per:
 
-## Perché usare GroupDocs.Watermark per Java?
-GroupDocs.Watermark supporta **50+** formati di documenti e immagini, può elaborare email fino a **500 MB** di dimensione e esegue la manipolazione degli allegati interamente in memoria, eliminando la necessità di installazioni esterne di Office. La sua API è thread‑safe, consentendo l'elaborazione in blocco di migliaia di messaggi all'ora su hardware server standard.
+- **Igiene email automatizzata** – elimina report vecchi o file duplicati.  
+- **Applicazione della conformità** – rimuovi documenti riservati prima di inoltrarli.  
+- **Ottimizzazione delle prestazioni** – riduci la dimensione della casella di posta e velocizza le ricerche.
+
+## Perché usare GroupDocs.Watermark per questo compito?
+- **Supporto completo per .msg** – gestione nativa del formato email di Outlook.  
+- **Controllo fine‑grained** – verifica nome allegato, tipo di file, dimensione, ecc.  
+- **Gestione robusta della memoria** – il `Watermarker` implementa `AutoCloseable`, garantendo il rilascio delle risorse.  
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di avere quanto segue:
-
-### Librerie richieste e versioni
-- **GroupDocs.Watermark** versione 24.11 (disponibile via Maven o download diretto)
-
-### Requisiti di configurazione dell'ambiente
-- Java Development Kit (JDK) installato sul tuo sistema
-- Un IDE come IntelliJ IDEA o Eclipse per scrivere ed eseguire il codice
-
-### Prerequisiti di conoscenza
-- Comprensione di base della programmazione Java
-- Familiarità con la gestione di file email (.msg format)
+- **GroupDocs.Watermark** versione 24.11 (disponibile via Maven o download diretto).  
+- Java Development Kit (JDK 8 o successivo).  
+- Un IDE come IntelliJ IDEA o Eclipse.  
+- Conoscenze di base di Java e familiarità con i file .msg.
 
 ## Configurazione di GroupDocs.Watermark per Java
 
-Per iniziare, dovrai installare **GroupDocs.Watermark**. Ecco come:
-
 ### Configurazione Maven
-
-Aggiungi la seguente configurazione al tuo file `pom.xml`:
+Aggiungi il repository e la dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -112,17 +67,15 @@ Aggiungi la seguente configurazione al tuo file `pom.xml`:
 ```
 
 ### Download diretto
-
-In alternativa, scarica l'ultima versione da [rilasci di GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/).
+In alternativa, scarica l’ultima versione da [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Acquisizione della licenza
-- **Prova gratuita:** Inizia con una prova gratuita per testare le funzionalità.  
-- **Licenza temporanea:** Ottieni una licenza temporanea per accesso completo durante i test.  
-- **Acquisto:** Considera l'acquisto di una licenza per l'uso in produzione.
+- **Prova gratuita:** testa tutte le funzionalità senza costi.  
+- **Licenza temporanea:** da usare per test a breve termine.  
+- **Licenza completa:** consigliata per le distribuzioni in produzione.
 
-#### Inizializzazione e configurazione di base
-
-Inizializza la libreria nel tuo progetto Java per cominciare:
+#### Inizializzazione di base e configurazione
+Di seguito il codice minimo necessario per aprire un file email con GroupDocs.Watermark:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -139,17 +92,10 @@ class EmailAttachmentManager {
 }
 ```
 
-## Come rimuovere gli allegati dai messaggi email?
+## Guida passo‑passo per rimuovere gli allegati
 
-`Watermarker` è la classe principale che fornisce l'accesso alle funzionalità di elaborazione dei documenti.  
-`EmailLoadOptions` specifica come l'SDK deve interpretare il file di input come un'email.  
-`EmailAttachment` rappresenta un singolo file allegato all'email.
-
-Carica l'email, itera attraverso la sua lista di allegati e elimina gli elementi che corrispondono ai tuoi criteri—questo può essere fatto in poche righe di codice. Prima, crea un'istanza di `Watermarker`, carica l'email con `EmailLoadOptions`, poi cicla gli oggetti `EmailAttachment` in ordine inverso, rimuovendo quelli che soddisfano le condizioni di nome o formato. Infine, salva l'email modificata in un nuovo file così l'originale rimane invariato.
-
-### Inizializza le opzioni di caricamento per l'email
-
-`EmailLoadOptions` indica all'SDK che il file di input deve essere analizzato come un messaggio email, esponendo il corpo e la collezione di allegati.
+### 1. Inizializza le opzioni di caricamento per l'email
+Per prima cosa, indica alla libreria che stai lavorando con un file email:
 
 ```java
 EmailLoadOptions loadOptions = new EmailLoadOptions();
@@ -159,15 +105,8 @@ try (Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/message.
 }
 ```
 
-**Ancora di definizione:** `EmailLoadOptions` indica all'SDK che il file di input deve essere analizzato come un messaggio email, esponendo il corpo e la collezione di allegati.
-
-Qui, `EmailLoadOptions` è configurato per specificare che il file caricato è un'email.
-
-### Accedi e itera sugli allegati email
-
-`EmailAttachment` rappresenta un singolo file incorporato all'interno dell'email, esponendo proprietà come `getFileName()` e `getFileExtension()`.
-
-Ora puoi accedere al contenuto dell'email e iterare sui suoi allegati:
+### 2. Accedi e itera sugli allegati dell'email
+Recupera il contenuto dell'email, quindi scorre la collezione di allegati **in ordine inverso**. Questo evita lo spostamento degli indici quando si eliminano gli elementi.
 
 ```java
 EmailContent content = watermarker.getContent(EmailContent.class);
@@ -181,91 +120,65 @@ for (int i = content.getAttachments().getCount() - 1; i >= 0; i--) {
 }
 ```
 
-- **Perché iterazione inversa?** Rimuovere gli elementi in ordine inverso impedisce che gli indici si spostino, influenzando il processo di iterazione.
+- **Perché l’iterazione inversa?** Rimuovere un elemento riduce la lista; iterare all’indietro mantiene valido il contatore del ciclo.
 
-**Ancora di definizione:** `EmailAttachment` rappresenta un singolo file incorporato all'interno dell'email, esponendo proprietà come `getFileName()` e `getFileExtension()`.
-
-### Salva le modifiche in un nuovo file
-
-Una volta completate le modifiche, salva l'email:
+### 3. Salva l'email modificata
+Dopo aver rimosso i file indesiderati, scrivi l’email aggiornata in una nuova posizione:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/modified_message.msg");
 ```
 
-Questo crea un nuovo file con gli allegati specificati rimossi, consentendoti di mantenere intatto il file originale.
+In questo modo il messaggio originale rimane intatto, mentre ottieni una copia pulita.
 
 ## Applicazioni pratiche
 
-**Casi d'uso reali:**
-1. **Automazione della pulizia delle email:** Rimuovi PDF obsoleti o fogli di calcolo di grandi dimensioni dai messaggi in ingresso prima dell'archiviazione.  
-2. **Conformità alla privacy dei dati:** Elimina automaticamente contratti riservati dalle email in uscita per soddisfare i requisiti GDPR o HIPAA.  
-3. **Gestione avanzata delle email:** Riduci la dimensione della casella di posta rimuovendo immagini ridondanti, facilitando backup e operazioni di ricerca.
-
-**Possibilità di integrazione:**
-- Integra nei flussi di lavoro CRM per filtrare gli allegati prima che vengano inviati ai clienti.  
-- Inserisci in un sistema di gestione documentale per far rispettare le politiche sugli allegati durante l'acquisizione dei documenti.
+| Scenario | Come “come rimuovere gli allegati” aiuta |
+|----------|------------------------------------------|
+| **Automazione della pulizia email** | Pulisci periodicamente PDF di grandi dimensioni o duplicati. |
+| **Conformità alla privacy dei dati** | Rimuovi documenti Word riservati prima della distribuzione esterna. |
+| **Integrazione CRM** | Filtra gli allegati prima di registrare le email in un record cliente. |
 
 ## Considerazioni sulle prestazioni
 
-Per garantire prestazioni ottimali:
-- **Ottimizza le operazioni di I/O file:** Elabora in batch più email in un'unica transazione per ridurre il sovraccarico di accesso al disco.  
-- **Suggerimenti per la gestione della memoria:** Chiama `watermarker.close()` dopo ogni operazione per rilasciare le risorse native ed evitare perdite di memoria.  
-- **Best practice:** Mantieni aggiornata la libreria GroupDocs.Watermark; ogni rilascio minore porta miglioramenti di velocità fino al **30 %** per la gestione di allegati su larga scala.
+- **I/O batch:** elabora più file .msg in un’unica esecuzione per ridurre il carico su disco.  
+- **Gestione della memoria:** il blocco `try‑with‑resources` elimina automaticamente il `Watermarker`.  
+- **Aggiornamenti della libreria:** mantieni GroupDocs.Watermark aggiornato per usufruire di ottimizzazioni di performance.
 
-## Problemi comuni e soluzioni
+## Problemi comuni e risoluzione
 
-| Sintomo | Causa probabile | Risoluzione |
-|---|---|---|
-| `NullPointerException` durante l'accesso agli allegati | Il file email è corrotto o non è stato caricato con `EmailLoadOptions` | Verifica il percorso del file e assicurati che `EmailLoadOptions` sia usato |
-| Allegati non rimossi | Il ciclo di iterazione utilizza l'ordine diretto | Passa all'iterazione inversa come mostrato sopra |
-| Elevato utilizzo di memoria su email di grandi dimensioni | Non chiudere le istanze di `Watermarker` | Invoca `watermarker.close()` in un blocco `finally` |
+- **File .msg corrotti:** verifica che l’email di origine si apra correttamente in Outlook prima della lavorazione.  
+- **Percorsi file errati:** usa percorsi assoluti o risolvi i percorsi relativi con `Paths.get(...)`.  
+- **Errori di licenza:** assicurati che il file di licenza sia collocato dove la libreria può trovarlo, oppure impostalo programmaticamente con `License.setLicense(...)`.
 
 ## Domande frequenti
 
-**Q: Posso rimuovere gli allegati in base al tipo MIME invece che al nome del file?**  
-A: Sì, ispeziona `attachment.getContentType()` e applica la tua logica di filtro di conseguenza.
+**D: Cos’è GroupDocs.Watermark?**  
+R: È una libreria Java che consente agli sviluppatori di aggiungere, rilevare e rimuovere filigrane e allegati in molti tipi di documento, inclusi i file Outlook .msg.
 
-**Q: La libreria supporta i file .eml così come i .msg?**  
-A: Assolutamente; `EmailLoadOptions` funziona con entrambi i formati senza configurazioni aggiuntive.
+**D: Come posso gestire più tipi di allegato?**  
+R: Estendi la condizione `if` all’interno del ciclo per verificare altri valori di `FileType` o utilizza regex su `attachment.getName()`.
 
-**Q: Cosa succede se provo a rimuovere un allegato che non esiste?**  
-A: Il ciclo di iterazione inversa semplicemente salta gli elementi non corrispondenti, quindi non viene generata alcuna eccezione.
+**D: È necessaria una licenza per l’uso in produzione?**  
+R: Sì. La prova è valida per la valutazione, ma per le distribuzioni commerciali è richiesta una licenza permanente.
 
-**Q: È possibile rinominare un allegato invece di eliminarlo?**  
-A: Puoi modificare `attachment.setFileName("newName.ext")` prima di salvare l'email.
+**D: Cosa devo fare se incontro un’eccezione durante la rimozione degli allegati?**  
+R: Controlla che l’email non sia protetta da password, verifica il percorso del file e assicurati di utilizzare una versione compatibile di GroupDocs.Watermark.
 
-**Q: Come posso elaborare migliaia di email in modo efficiente?**  
-A: Usa un thread‑pool executor per parallelizzare il ciclo carica‑modifica‑salva, assicurandoti che ogni thread crei la propria istanza di `Watermarker`.
-
-## Conclusione
-
-Ora disponi di un modello completo, pronto per la produzione, per **come rimuovere gli allegati** dai messaggi email usando GroupDocs.Watermark per Java. Sfruttando l'iterazione inversa e l'API robusta `EmailLoadOptions`, puoi automatizzare la pulizia, garantire la conformità e mantenere le tue caselle di posta leggere.
-
-### Prossimi passi
-- Sperimenta filtri aggiuntivi (ad es., soglie di dimensione del file).  
-- Combina questo approccio con le API di invio email per eliminare gli allegati prima della spedizione.  
-- Esplora altre funzionalità di GroupDocs.Watermark come la filigrana e la redazione dei contenuti.
-
-Pronto per implementare? Aggiungi gli snippet di codice sopra al tuo progetto e inizia a pulire le email oggi stesso!
+**D: L’iterazione inversa migliora davvero le prestazioni?**  
+R: Elimina la necessità di aggiustare gli indici, rendendo il ciclo più semplice e leggermente più veloce, soprattutto con collezioni di allegati di grandi dimensioni.
 
 ## Risorse
 
-- **Documentazione:** [Documentazione Java di GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)
-- **Riferimento API:** [Riferimento API di GroupDocs per Java](https://reference.groupdocs.com/watermark/java)
-- **Download:** [Ultime versioni](https://releases.groupdocs.com/watermark/java/)
-- **Repository GitHub:** [GroupDocs.Watermark per Java su GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- **Supporto gratuito:** [Forum GroupDocs](https://forum.groupdocs.com/c/watermark/10)
-- **Licenza temporanea:** [Ottieni una licenza temporanea](https://purchase.groupdocs.com/temporary-license/) 
+- **Documentazione:** [GroupDocs.Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Riferimento API:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/watermark/java)  
+- **Download:** [Latest Releases](https://releases.groupdocs.com/watermark/java/)  
+- **Repository GitHub:** [GroupDocs.Watermark for Java on GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Supporto gratuito:** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
+- **Licenza temporanea:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/) 
 
 ---
 
-**Ultimo aggiornamento:** 2026-06-21  
+**Ultimo aggiornamento:** 2026-01-03  
 **Testato con:** GroupDocs.Watermark 24.11 per Java  
 **Autore:** GroupDocs
-
-## Tutorial correlati
-
-- [Come estrarre gli allegati PDF usando GroupDocs Watermark in Java per la gestione dei documenti email](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)
-- [Come aggiungere filigrane agli allegati email usando GroupDocs.Watermark per Java](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-attachments/)
-- [Elaborazione degli allegati email Java con GroupDocs.Watermark: Guida completa](/watermark/java/email-document-watermarking/java-email-attachment-processing-groupdocs-watermark/)

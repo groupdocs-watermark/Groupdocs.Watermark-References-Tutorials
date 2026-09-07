@@ -1,87 +1,57 @@
 ---
-date: '2026-06-21'
-description: Leer hoe u een watermark aan een Java-presentatie kunt toevoegen met
-  GroupDocs.Watermark voor Java, en dia's beveiligt door text watermarks toe te passen
-  en unreadable-character protection.
+date: '2026-01-06'
+description: Leer hoe je presentatiedocumenten kunt watermerken met Java. Deze gids
+  laat zien hoe je een vertrouwelijk watermerk kunt toevoegen, een watermerk kunt
+  vergrendelen en de GroupDocs.Watermark Java-bibliotheek kunt gebruiken voor beveiligde
+  presentaties.
 keywords:
-- add watermark java presentation
-- GroupDocs.Watermark Java
-- presentation security
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  headline: Add Watermark Java Presentation Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  name: Add Watermark Java Presentation Using GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-    text: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-  - name: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-    text: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-  - name: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-    text: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-  type: HowTo
-- questions:
-  - answer: Yes—use the `ImageWatermark` class, which supports PNG, JPEG, and SVG
-      formats.
-    question: Can I add an image watermark instead of text?
-  - answer: Absolutely; provide the password via `PresentationLoadOptions.setPassword("yourPassword")`.
-    question: Does the library work with password‑protected PPTX files?
-  - answer: There is no hard limit; the API streams slides, so you can process presentations
-      with thousands of slides as long as the JVM heap is sized appropriately.
-    question: How many slides can I watermark in one operation?
-  - answer: Yes—specify a slide range in `PresentationLoadOptions` or pass a list
-      of slide indices to the `add` method.
-    question: Is it possible to watermark only selected slides?
-  - answer: The examples were verified with GroupDocs.Watermark 23.12 for Java.
-    question: What version of GroupDocs.Watermark is tested with this tutorial?
-  type: FAQPage
-title: Watermark toevoegen aan Java-presentatie met GroupDocs.Watermark
+- Java Watermarking
+- GroupDocs.Watermark for Java
+- Presentation Security
+title: Hoe presentatiebestanden te watermerken met Java en GroupDocs.Watermark
 type: docs
 url: /nl/java/getting-started/java-watermarking-groupdocs-watermark-presentation-security/
 weight: 1
 ---
 
-# Watermerk toevoegen aan Java-presentatie met GroupDocs.Watermark
+# Hoe presentatiedocumenten te watermerken met Java en GroupDocs.Watermark
 
-In de hedendaagse, snel veranderende zakelijke omgeving is **add watermark java presentation** een best practice voor het beschermen van vertrouwelijke presentaties, trainingsmateriaal en marketingdocumenten. GroupDocs.Watermark voor Java stelt je in staat onzichtbare of zichtbare tekstwatermerken direct in PowerPoint‑bestanden te embedden, zodat iedereen die het bestand ontvangt onmiddellijk de eigendom‑ of vertrouwelijkheidsstatus kan zien. Deze gids leidt je stap voor stap – van het installeren van de bibliotheek tot het laden van een presentatie, het maken van een aangepast tekstwatermerk, het vergrendelen met onleesbare‑tekens‑bescherming, en uiteindelijk het opslaan van het beveiligde bestand.
+In het digitale tijdperk van vandaag is **hoe presentaties te watermerken** een belangrijk aandachtspunt voor iedereen die vertrouwelijke dia's, trainingsdecks of marketingmateriaal deelt. Het toevoegen van een vertrouwelijk watermerk signaleert niet alleen eigendom, maar ontmoedigt ook ongeautoriseerde distributie. In deze tutorial ontdek je hoe je watermerk‑bescherming in Java‑stijl toevoegt, het watermerk vergrendelt en de GroupDocs.Watermark Java‑bibliotheek gebruikt om je presentaties snel en betrouwbaar te beveiligen.
 
 ## Snelle antwoorden
-- **Wat is het primaire doel?** Presentatiebestanden beveiligen door blijvende tekstwatermerken in te sluiten.  
-- **Welke bibliotheek is vereist?** GroupDocs.Watermark voor Java (Maven‑artifact `com.groupdocs:groupdocs-watermark`).  
-- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor ontwikkeling; een volledige licentie is vereist voor productie.  
-- **Kan ik grote presentaties beschermen?** Ja—GroupDocs.Watermark verwerkt bestanden tot 500 MB zonder het volledige document in het geheugen te laden.  
-- **Is de API compatibel met Java 8+?** Absoluut, hij draait op JDK 8 en nieuwere versies.
+- **Wat is de eenvoudigste manier om een watermerk aan een presentatie toe te voegen?** Gebruik GroupDocs.Watermark voor Java en roep `watermarker.add()` aan met een `TextWatermark`.
+- **Kan ik het watermerk vergrendelen zodat het niet kan worden verwijderd?** Ja—stel `options.setLocked(true)` in en schakel onleesbare tekens in.
+- **Heb ik een speciale licentie nodig?** Een gratis proefversie werkt voor ontwikkeling; een volledige licentie is vereist voor productie.
+- **Welke Java‑versie is vereist?** Java 8 of hoger wordt ondersteund.
+- **Werkt dit met PPTX‑ en ODP‑bestanden?** Ja, GroupDocs.Watermark ondersteunt de belangrijkste presentatieformaten.
 
-## Wat is “add watermark java presentation”?
-*Add watermark java presentation* verwijst naar het proces waarbij programmatic een tekst‑ of afbeelding‑watermerk in een Java‑gebaseerd PowerPoint‑(`.pptx`)‑bestand wordt ingevoegd om de inhoud te beveiligen. Door zichtbare of onzichtbare merktekens toe te voegen, kun je eigendom claimen, vertrouwelijkheid afdwingen en ongeautoriseerde distributie ontmoedigen, zodat ontvangers altijd de bron of beschermingsstatus zien.
+## Wat is “hoe presentaties te watermerken”?
+Een presentatie watermerken betekent dat je zichtbare of onzichtbare tekst (of afbeeldingen) in elke dia embeddert, zodat het document een duidelijk eigendomsmerk draagt. Deze techniek wordt veel gebruikt voor bedrijfsvoorstellen, academische lezingen en alle inhoud die bescherming tegen misbruik nodig heeft.
 
-## Waarom GroupDocs.Watermark voor Java gebruiken?
-GroupDocs.Watermark ondersteunt **30+ bestandsformaten** (inclusief PPTX, PPT, PDF, DOCX en afbeeldingen) en kan watermerken toepassen op presentaties met **geen kwaliteitsverlies**. De engine verwerkt multi‑honderd‑pagina‑decks in minder dan een seconde op typische serverhardware, terwijl het minder dan 150 MB RAM verbruikt—ideaal voor batch‑taken met hoge doorvoer.
+## Waarom een vertrouwelijk watermerk toevoegen?
+- **Merkbescherming:** Versterkt de bedrijfsidentiteit op elke dia.  
+- **Juridisch bewijs:** Laat zien dat het bestand is verspreid met een duidelijke eigendomsverklaring.  
+- **Afschrikking:** Maakt duidelijk wanneer een document zonder toestemming is gedeeld.  
+- **Naleving:** Voldoet aan interne beveiligingsrichtlijnen voor het omgaan met gevoelige informatie.
 
-## Voorvereisten
+## Vereisten
+Voordat je begint, zorg dat je het volgende hebt:
 
-1. **Java Development Kit (JDK) 8 of later** – vereist voor compilatie en uitvoering.  
-2. **Maven** – regelt afhankelijkheidsresolutie; je kunt ook Gradle gebruiken indien gewenst.  
-3. **IDE** – IntelliJ IDEA, Eclipse of een andere Java‑compatibele editor.  
-4. **Basiskennis van Java I/O** – om bestandsstromen en foutafhandeling te begrijpen.
+1. **Vereiste bibliotheken en afhankelijkheden**
+   - Java Development Kit (JDK) 8 of later  
+   - Maven voor afhankelijkheidsbeheer  
+
+2. **Omgevingsconfiguratie**
+   - Een IDE zoals IntelliJ IDEA of Eclipse  
+   - Basiskennis van Java I/O en exception handling  
+
+3. **Kennisvereisten**
+   - Vertrouwdheid met Java‑klassen en object‑georiënteerde concepten  
 
 ## GroupDocs.Watermark voor Java instellen
 
-### Maven-configuratie
-Add the following dependency to your `pom.xml`. This pulls the latest stable version of GroupDocs.Watermark.
+### Maven‑configuratie
+Voeg de GroupDocs‑repository en afhankelijkheid toe aan je `pom.xml`‑bestand:
 
 ```xml
 <repositories>
@@ -102,15 +72,15 @@ Add the following dependency to your `pom.xml`. This pulls the latest stable ver
 ```
 
 ### Directe download
-Als je handmatige installatie verkiest, download de JAR‑bestanden van de officiële release‑pagina: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Download anders de nieuwste versie van [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Licentie‑acquisitie
-- **Gratis proefversie:** Staat onbeperkt API‑gebruik toe gedurende 30 dagen.  
-- **Tijdelijke licentie:** Verhoogt de proeflimieten voor langere ontwikkelingscycli.  
-- **Volledige licentie:** Vereist voor commerciële inzet en verwijdert alle proefbeperkingen.
+- **Gratis proefversie:** Test de bibliotheek zonder licentie.  
+- **Tijdelijke licentie:** Gebruik een tijdelijke sleutel voor uitgebreid ontwikkeltesten.  
+- **Volledige licentie:** Vereist voor productie‑implementaties.
 
-### Basisinitialisatie en -configuratie
-Create a `Watermarker` instance, which serves as the central object for all watermark operations.
+### Basisinitialisatie en configuratie
+De volgende snippet toont hoe je een `Watermarker`‑instantie maakt voor een presentatiedocument:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -123,15 +93,12 @@ public class InitializeWatermarker {
 }
 ```
 
-`Watermarker` is the core class that loads, edits, and saves documents. This object will manage loading, editing, and saving your presentation files.
-
 ## Implementatie‑gids
 
-### Hoe voeg je een watermerk toe aan een Java‑presentatie?
-Om een watermerk toe te voegen aan een Java‑presentatie, laad je eerst het PowerPoint‑bestand met `PresentationLoadOptions`. Maak vervolgens een `TextWatermark` met de gewenste tekst, stijl en rotatie. Pas onleesbare‑tekens‑bescherming toe via `PresentationWatermarkSlideOptions`, voeg het watermerk toe aan de gewenste dia's, en sla tenslotte het gewijzigde bestand op om de wijzigingen te behouden.
+Hieronder vind je een stap‑voor‑stap walkthrough van **hoe presentaties te watermerken**, van het laden van het document tot het opslaan van de beveiligde output.
 
-#### Een presentatiedocument laden
-First, you need to open the file with the appropriate load options.
+### Een presentatiedocument laden
+Laad eerst de presentatie met `PresentationLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -146,10 +113,10 @@ public class LoadPresentation {
 }
 ```
 
-**Definition anchor:** `PresentationLoadOptions` defines how GroupDocs.Watermark reads a PowerPoint file, allowing you to specify password protection, slide range, and memory‑saving flags.
+*Uitleg:* `PresentationLoadOptions` laat je specificeren hoe het bestand moet worden geïnterpreteerd voordat een watermerk wordt toegepast.
 
-#### Een tekstwatermerk maken
-Next, craft the watermark text and style it to match your branding guidelines.
+### Een tekstwatermerk maken
+Maak vervolgens de daadwerkelijke watermerktekst. Dit is waar je **vertrouwelijk watermerk** toevoegt:
 
 ```java
 import com.groupdocs.watermark.watermarks.Font;
@@ -164,10 +131,10 @@ public class CreateTextWatermark {
 }
 ```
 
-**Definition anchor:** `TextWatermark` represents a textual overlay that can be positioned, rotated, and colored. It supports Unicode, so you can embed multilingual tags.
+*Uitleg:* Pas het lettertype, de grootte en de tekst aan volgens je merkrichtlijnen.
 
-#### Watermerkopties configureren voor onleesbare tekens
-To make the watermark tamper‑proof, enable unreadable‑character protection.
+### Watermerk‑opties configureren voor onleesbare tekens
+Om **hoe watermerk te vergrendelen** en onleesbaar te maken bij manipulatie, configureer je dia‑opties:
 
 ```java
 import com.groupdocs.watermark.options.PresentationWatermarkSlideOptions;
@@ -181,10 +148,10 @@ public class ConfigureWatermarkOptions {
 }
 ```
 
-**Definition anchor:** `PresentationWatermarkSlideOptions` configures how a watermark is applied to individual slides. It lets you lock a watermark, set read‑only flags, and enable unreadable‑character protection that scrambles text when the document is edited without proper authorization.
+*Uitleg:* Het inschakelen van `setLocked` en `setProtectWithUnreadableCharacters` voegt een beschermingslaag toe die eenvoudige verwijdering voorkomt.
 
-#### Watermerk toevoegen aan een presentatie
-Now apply the watermark to every slide (or a subset) using the `Watermarker` object.
+### Watermerk aan een presentatie toevoegen
+Combineer laden, watermerkcreatie en optie‑configuratie om het watermerk toe te passen:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -207,10 +174,10 @@ public class AddWatermarkToPresentation {
 }
 ```
 
-**Definition anchor:** The `add` method of `Watermarker` attaches the configured `TextWatermark` to the target slides, respecting the options you defined earlier.
+*Uitleg:* Deze stap embeddert de **java watermark library**‑tekst in elke dia terwijl deze wordt vergrendeld.
 
-#### Het watermerk‑document opslaan en sluiten
-Finally, persist the changes and release resources.
+### Watergemarkeerd document opslaan en sluiten
+Sla tenslotte de wijzigingen op en maak resources vrij:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -226,60 +193,51 @@ public class SaveAndCloseWatermarkedDocument {
 }
 ```
 
-**Definition anchor:** Calling `save` writes the modified presentation back to disk, while `close` frees native resources and prevents memory leaks.
+*Uitleg:* Roep altijd `close()` aan om bestands‑handles vrij te geven en geheugenlekken te voorkomen.
 
 ## Praktische toepassingen
-
-- **Bedrijfsvoorstellen:** Voeg “Confidential – Company XYZ” toe aan alle dia's voordat je ze naar klanten stuurt.  
-- **Academische lezingen:** Voeg universiteitslogo's en cursuscodes toe om ongeautoriseerde verspreiding te voorkomen.  
-- **Evenementpresentaties:** Watermerk elke dia met de naam en datum van het evenement voor merkversterking.  
-- **Juridische dossiers:** Markeer juridische presentaties met zaak‑identifiers om de bewijs‑keten te behouden.  
-- **Marketing‑materialen:** Bescherm hoge‑resolutie promotiedia's met subtiele merkwatermerken die PDF‑conversie overleven.
+1. **Bescherming van bedrijfsdocumenten:** Voeg een bedrijfslogo of “Confidential”‑label toe aan zakelijke voorstellen.  
+2. **Distributie van academisch materiaal:** Bescherm lezing‑dia's tegen ongeautoriseerde verspreiding.  
+3. **Evenementbeheer:** Beveilig evenement‑slide‑decks met een merk‑watermerk.  
+4. **Juridische documentatie:** Markeer juridische presentaties met een watermerk voor authenticiteit.  
+5. **Marketingcampagnes:** Merk promotionele decks met een watermerk terwijl je misbruik voorkomt.
 
 ## Prestatie‑overwegingen
+- **Prestaties optimaliseren:** Verwerk bestanden in streams bij grote presentaties.  
+- **Richtlijnen voor resource‑gebruik:** Houd JVM‑heap in de gaten; sluit `Watermarker` direct.  
+- **Java‑geheugenbeheer:** Gebruik try‑with‑resources of expliciete `close()`‑aanroepen om lekken te voorkomen.
 
-- **Prestaties optimaliseren:** Hergebruik één `Watermarker`‑instantie voor batchverwerking; dit vermindert JVM‑overhead.  
-- **Richtlijnen voor resourcegebruik:** Schakel voor presentaties groter dan 200 MB de streaming‑modus in `PresentationLoadOptions` in om het geheugenverbruik onder 200 MB te houden.  
-- **Java‑geheugenbeheer:** Roep altijd `close()` aan in een `finally`‑blok of gebruik try‑with‑resources om opruimen te garanderen.
-
-## Veelvoorkomende problemen en oplossingen
-
-| Probleem | Oorzaak | Oplossing |
-|----------|---------|-----------|
-| Watermerk niet zichtbaar | Standaard doorzichtigheid ingesteld op 0% | Pas `setOpacity(0.5)` aan op `TextWatermark`. |
-| Out‑of‑memory‑fout bij grote decks | Whole file loaded into memory | Enable `setLoadMode(LoadMode.STREAM)` in `PresentationLoadOptions`. |
-| Onleesbare tekens niet toegepast | `setUnreadableCharacters(true)` omitted | Ensure the flag is set on `PresentationWatermarkSlideOptions`. |
-| Licentie‑exception tijdens runtime | Using trial after expiration | Update the license file or request a new trial key. |
+## Veelvoorkomende problemen & oplossingen
+| Probleem | Oplossing |
+|----------|-----------|
+| **Watermerk verschijnt niet** | Controleer of de dia‑opties zijn ingesteld (`setLocked(true)`) en of het juiste dia‑bereik wordt gebruikt. |
+| **OutOfMemoryError bij grote PPTX** | Verhoog de JVM‑heap (`-Xmx2g`) of verwerk het bestand in kleinere batches met `PresentationLoadOptions`. |
+| **Licentie‑exception** | Zorg dat een geldige proef‑ of volledige licentie is geladen vóór het aanmaken van `Watermarker`. |
 
 ## Veelgestelde vragen
 
-**V: Kan ik een afbeelding‑watermerk toevoegen in plaats van tekst?**  
-A: Ja—gebruik de `ImageWatermark`‑klasse, die PNG, JPEG en SVG‑formaten ondersteunt.
+**Q: Kan ik GroupDocs.Watermark ook gebruiken om afbeelding‑watermerken toe te voegen?**  
+A: Ja, de bibliotheek ondersteunt zowel tekst‑ als afbeelding‑watermerken; gebruik simpelweg `ImageWatermark` in plaats van `TextWatermark`.
 
-**V: Werkt de bibliotheek met met wachtwoord beveiligde PPTX‑bestanden?**  
-A: Absoluut; geef het wachtwoord op via `PresentationLoadOptions.setPassword("yourPassword")`.
+**Q: Werkt de bibliotheek met met wachtwoord beveiligde presentaties?**  
+A: Absoluut—geef het wachtwoord op in `PresentationLoadOptions` voordat je het bestand laadt.
 
-**V: Hoeveel dia's kan ik in één bewerking watermerken?**  
-A: Er is geen harde limiet; de API streamt dia's, dus je kunt presentaties met duizenden dia's verwerken zolang de JVM‑heap voldoende is.
+**Q: Is het mogelijk de opacity van het watermerk aan te passen?**  
+A: Ja, je kunt de opacity instellen op het `TextWatermark`‑object via `setOpacity(double)`.
 
-**V: Is het mogelijk om alleen geselecteerde dia's te watermerken?**  
-A: Ja—specificeer een dia‑bereik in `PresentationLoadOptions` of geef een lijst met dia‑indices door aan de `add`‑methode.
+**Q: Hoe beïnvloedt “protect with unreadable characters” de PDF‑conversie?**  
+A: De bescherming blijft ingebed in de presentatie; bij export naar PDF blijven de onleesbare tekens behouden, waardoor de vergrendeling behouden blijft.
 
-**V: Welke versie van GroupDocs.Watermark is getest met deze tutorial?**  
-A: De voorbeelden zijn geverifieerd met GroupDocs.Watermark 23.12 voor Java.
+**Q: Wat is de minimale Java‑versie die vereist is?**  
+A: Java 8 of nieuwer; de bibliotheek is volledig compatibel met Java 11, 17 en latere LTS‑releases.
 
 ## Conclusie
-
-Je beschikt nu over een volledige, productie‑klare workflow voor **add watermark java presentation** met GroupDocs.Watermark. Door de bovenstaande stappen te volgen, kun je vertrouwelijke dia's beschermen, merkidentiteit versterken en voldoen aan wettelijke eisen—alles met minimale prestatie‑overhead. Verken de API verder om tekst‑ en afbeelding‑watermerken te combineren, dynamische tijdstempels toe te passen, of te integreren met je bestaande document‑beheer‑pipeline.
+Je beschikt nu over een volledige, productie‑klare gids voor **hoe presentaties te watermerken** met Java en de GroupDocs.Watermark‑bibliotheek. Door een vertrouwelijk watermerk toe te voegen, dit te vergrendelen en te beschermen met onleesbare tekens, bescherm je je intellectueel eigendom en versterk je de merkintegriteit. Verken verdere mogelijkheden door deze stappen te integreren in geautomatiseerde document‑pipelines of te combineren met andere GroupDocs‑API’s voor end‑to‑end documentbeheer.
 
 ---
 
-**Laatst bijgewerkt:** 2026-06-21  
-**Getest met:** GroupDocs.Watermark 23.12 for Java  
-**Auteur:** GroupDocs
+**Laatst bijgewerkt:** 2026-01-06  
+**Getest met:** GroupDocs.Watermark 24.11 for Java  
+**Auteur:** GroupDocs  
 
-## Gerelateerde tutorials
-
-- [Hoe tekst‑ en afbeelding‑watermerken toe te voegen aan PDF's in Java met GroupDocs.Watermark](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermarks/)
-- [Tekst‑watermerken toevoegen en vergrendelen in Word‑documenten met Java: Een uitgebreide gids met GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [Hoe roterende tekst‑watermerken toe te voegen aan documenten met GroupDocs.Watermark voor Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+---

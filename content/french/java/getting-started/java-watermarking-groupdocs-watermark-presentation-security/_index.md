@@ -1,87 +1,54 @@
 ---
-date: '2026-06-21'
-description: Apprenez comment ajouter un filigrane à une présentation Java avec GroupDocs.Watermark
-  pour Java, en sécurisant les diapositives en appliquant des filigranes texte et
-  une protection contre les caractères illisibles.
+date: '2026-01-06'
+description: Apprenez à ajouter un filigrane aux fichiers de présentation avec Java.
+  Ce guide vous montre comment ajouter un filigrane confidentiel, verrouiller le filigrane
+  et utiliser la bibliothèque GroupDocs.Watermark Java pour des présentations sécurisées.
 keywords:
-- add watermark java presentation
-- GroupDocs.Watermark Java
-- presentation security
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  headline: Add Watermark Java Presentation Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  name: Add Watermark Java Presentation Using GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-    text: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-  - name: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-    text: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-  - name: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-    text: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-  type: HowTo
-- questions:
-  - answer: Yes—use the `ImageWatermark` class, which supports PNG, JPEG, and SVG
-      formats.
-    question: Can I add an image watermark instead of text?
-  - answer: Absolutely; provide the password via `PresentationLoadOptions.setPassword("yourPassword")`.
-    question: Does the library work with password‑protected PPTX files?
-  - answer: There is no hard limit; the API streams slides, so you can process presentations
-      with thousands of slides as long as the JVM heap is sized appropriately.
-    question: How many slides can I watermark in one operation?
-  - answer: Yes—specify a slide range in `PresentationLoadOptions` or pass a list
-      of slide indices to the `add` method.
-    question: Is it possible to watermark only selected slides?
-  - answer: The examples were verified with GroupDocs.Watermark 23.12 for Java.
-    question: What version of GroupDocs.Watermark is tested with this tutorial?
-  type: FAQPage
-title: Ajouter un filigrane à une présentation Java avec GroupDocs.Watermark
+- Java Watermarking
+- GroupDocs.Watermark for Java
+- Presentation Security
+title: Comment ajouter un filigrane aux fichiers de présentation avec Java et GroupDocs.Watermark
 type: docs
 url: /fr/java/getting-started/java-watermarking-groupdocs-watermark-presentation-security/
 weight: 1
 ---
 
-# Ajouter un filigrane à une présentation Java avec GroupDocs.Watermark
+# Comment ajouter un filigrane aux fichiers de présentation avec Java et GroupDocs.Watermark
 
-Dans l'environnement commercial actuel, en évolution rapide, **add watermark java presentation** est une bonne pratique pour protéger les présentations confidentielles, le matériel de formation et les supports marketing. GroupDocs.Watermark pour Java vous permet d'intégrer des filigranes texte invisibles ou visibles directement dans les fichiers PowerPoint, garantissant que toute personne recevant le fichier puisse immédiatement voir son propriétaire ou son statut de confidentialité. Ce guide vous accompagne à chaque étape — de la configuration de la bibliothèque au chargement d'une présentation, à la création d'un filigrane texte personnalisé, à son verrouillage avec la protection des caractères illisibles, et enfin à l'enregistrement du fichier sécurisé.
+À l'ère numérique actuelle, **comment ajouter un filigrane à une présentation** est une préoccupation majeure pour quiconque partage des diapositives confidentielles, des présentations de formation ou du matériel marketing. Ajouter un filigrane confidentiel signale non seulement la propriété mais décourage également la distribution non autorisée. Dans ce tutoriel, vous découvrirez comment ajouter une protection de type filigrane en Java, verrouiller le filigrane et exploiter la bibliothèque Java GroupDocs.Watermark pour sécuriser vos présentations rapidement et de manière fiable.
 
 ## Réponses rapides
-- **Quel est le but principal ?** Sécuriser les fichiers de présentation en intégrant des filigranes texte persistants.  
-- **Quelle bibliothèque est requise ?** GroupDocs.Watermark for Java (Maven artifact `com.groupdocs:groupdocs-watermark`).  
-- **Ai-je besoin d'une licence ?** Un essai gratuit fonctionne pour le développement ; une licence complète est requise pour la production.  
-- **Puis-je protéger de grands jeux de diapositives ?** Oui — GroupDocs.Watermark traite des fichiers jusqu'à 500 Mo sans charger l'intégralité du document en mémoire.  
-- **L'API est‑elle compatible avec Java 8+ ?** Absolument, il fonctionne sur JDK 8 et les versions ultérieures.
+- **Quelle est la façon la plus simple d'ajouter un filigrane à une présentation ?** Utilisez GroupDocs.Watermark pour Java et appelez `watermarker.add()` avec un `TextWatermark`.
+- **Puis-je verrouiller le filigrane afin qu'il ne puisse pas être supprimé ?** Oui — définissez `options.setLocked(true)` et activez les caractères illisibles.
+- **Ai-je besoin d'une licence spéciale ?** Un essai gratuit fonctionne pour le développement ; une licence complète est requise pour la production.
+- **Quelle version de Java est requise ?** Java 8 ou ultérieure est prise en charge.
+- **Cela fonctionnera-t-il avec les fichiers PPTX et ODP ?** Oui, GroupDocs.Watermark prend en charge les principaux formats de présentation.
 
-## Qu’est‑ce que « add watermark java presentation » ?
-*Add watermark java presentation* désigne le processus d’insertion programmatique d’un filigrane texte ou image dans un fichier PowerPoint (`.pptx`) basé sur Java afin de protéger son contenu. En intégrant des marques visibles ou invisibles, vous pouvez affirmer la propriété, appliquer la confidentialité et décourager la distribution non autorisée, garantissant que les destinataires voient toujours la source ou le statut de protection.
+## Qu’est‑ce que “comment ajouter un filigrane à une présentation” ?
+Ajouter un filigrane à une présentation signifie intégrer du texte (ou des images) visible ou invisible dans chaque diapositive afin que le document porte une marque de propriété claire. Cette technique est largement utilisée pour les propositions d'entreprise, les cours universitaires et tout contenu nécessitant une protection contre les abus.
 
-## Pourquoi utiliser GroupDocs.Watermark pour Java ?
-GroupDocs.Watermark prend en charge **plus de 30 formats de fichiers** (y compris PPTX, PPT, PDF, DOCX et images) et peut appliquer des filigranes aux présentations avec **aucune perte de qualité**. Son moteur traite des présentations de plusieurs centaines de pages en moins d’une seconde sur un matériel serveur typique, tout en consommant moins de 150 Mo de RAM — ce qui le rend idéal pour les traitements par lots à haut débit.
+## Pourquoi ajouter un filigrane confidentiel ?
+- **Protection de la marque :** Renforce l'identité de l'entreprise sur chaque diapositive.  
+- **Preuve légale :** Montre que le fichier a été distribué avec une déclaration de propriété claire.  
+- **Dissuasion :** Rend évident lorsqu'un document a été partagé sans autorisation.  
+- **Conformité :** Répond aux politiques de sécurité internes pour la gestion d'informations sensibles.
 
 ## Prérequis
-1. **Java Development Kit (JDK) 8 ou supérieur** – requis pour la compilation et l’exécution.  
-2. **Maven** – gère la résolution des dépendances ; vous pouvez également utiliser Gradle si vous le préférez.  
-3. **IDE** – IntelliJ IDEA, Eclipse ou tout éditeur compatible Java.  
-4. **Connaissances de base en I/O Java** – pour comprendre les flux de fichiers et la gestion des exceptions.
+1. **Bibliothèques et dépendances requises**
+   - Java Development Kit (JDK) 8 ou ultérieur  
+   - Maven pour la gestion des dépendances  
+
+2. **Configuration de l'environnement**
+   - Un IDE tel qu'IntelliJ IDEA ou Eclipse  
+   - Connaissances de base en I/O Java et gestion des exceptions  
+
+3. **Pré-requis de connaissances**
+   - Familiarité avec les classes Java et les concepts orientés objet  
 
 ## Configuration de GroupDocs.Watermark pour Java
 
 ### Configuration Maven
-Ajoutez la dépendance suivante à votre `pom.xml`. Cela récupère la dernière version stable de GroupDocs.Watermark.
-
+Ajoutez le dépôt GroupDocs et la dépendance à votre fichier `pom.xml` :
 ```xml
 <repositories>
    <repository>
@@ -101,16 +68,15 @@ Ajoutez la dépendance suivante à votre `pom.xml`. Cela récupère la dernière
 ```
 
 ### Téléchargement direct
-Si vous préférez une installation manuelle, récupérez les JAR depuis la page officielle des versions : [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Sinon, téléchargez la dernière version depuis [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Acquisition de licence
-- **Free Trial :** Autorise les appels API illimités pendant 30 jours.  
-- **Temporary License :** Prolonge les limites de l'essai pour des cycles de développement plus longs.  
-- **Full License :** Nécessaire pour le déploiement commercial et supprime toutes les restrictions de l'essai.
+- **Essai gratuit :** Testez la bibliothèque sans licence.  
+- **Licence temporaire :** Utilisez une clé temporaire pour des tests de développement prolongés.  
+- **Licence complète :** Requise pour les déploiements en production.
 
 ### Initialisation et configuration de base
-Créez une instance de `Watermarker`, qui sert d'objet central pour toutes les opérations de filigrane.
-
+L'extrait suivant montre comment créer une instance `Watermarker` pour un fichier de présentation :
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -122,16 +88,12 @@ public class InitializeWatermarker {
 }
 ```
 
-`Watermarker` est la classe principale qui charge, modifie et enregistre les documents. Cet objet gérera le chargement, la modification et l’enregistrement de vos fichiers de présentation.
+## Guide de mise en œuvre
 
-## Guide d’implémentation
+Voici un guide étape par étape de **comment ajouter un filigrane à une présentation**, depuis le chargement du document jusqu'à l'enregistrement du résultat protégé.
 
-### Comment ajouter un filigrane à une présentation Java ?
-Pour ajouter un filigrane à une présentation Java, chargez d’abord le fichier PowerPoint à l’aide de `PresentationLoadOptions`. Créez ensuite un `TextWatermark` avec le texte souhaité, le style et la rotation. Appliquez la protection des caractères illisibles via `PresentationWatermarkSlideOptions`, ajoutez le filigrane aux diapositives désirées, puis enregistrez le fichier modifié pour conserver les modifications.
-
-#### Chargement d’un document de présentation
-Tout d’abord, vous devez ouvrir le fichier avec les options de chargement appropriées.
-
+### Chargement d'un document de présentation
+Tout d'abord, chargez la présentation en utilisant `PresentationLoadOptions` :
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PresentationLoadOptions;
@@ -145,11 +107,10 @@ public class LoadPresentation {
 }
 ```
 
-**Definition anchor :** `PresentationLoadOptions` définit la façon dont GroupDocs.Watermark lit un fichier PowerPoint, vous permettant de spécifier la protection par mot de passe, la plage de diapositives et les indicateurs d’économie de mémoire.
+*Explication :* `PresentationLoadOptions` vous permet de spécifier comment le fichier doit être interprété avant l'application de tout filigrane.
 
-#### Création d’un filigrane texte
-Ensuite, créez le texte du filigrane et stylisez‑le selon les directives de votre identité visuelle.
-
+### Création d'un filigrane texte
+Ensuite, créez le texte réel du filigrane. C'est ici que vous **ajoutez le contenu du filigrane confidentiel** :
 ```java
 import com.groupdocs.watermark.watermarks.Font;
 import com.groupdocs.watermark.watermarks.TextWatermark;
@@ -163,11 +124,10 @@ public class CreateTextWatermark {
 }
 ```
 
-**Definition anchor :** `TextWatermark` représente une superposition textuelle qui peut être positionnée, tournée et colorée. Il prend en charge Unicode, vous permettant d’intégrer des balises multilingues.
+*Explication :* Ajustez la police, la taille et le texte pour correspondre à vos directives de marque.
 
-#### Configuration des options de filigrane pour les caractères illisibles
-Pour rendre le filigrane inviolable, activez la protection des caractères illisibles.
-
+### Configuration des options de filigrane pour caractères illisibles
+Pour **verrouiller le filigrane** et le rendre illisible en cas de manipulation, configurez les options de diapositive :
 ```java
 import com.groupdocs.watermark.options.PresentationWatermarkSlideOptions;
 
@@ -180,11 +140,10 @@ public class ConfigureWatermarkOptions {
 }
 ```
 
-**Definition anchor :** `PresentationWatermarkSlideOptions` configure la façon dont un filigrane est appliqué aux diapositives individuelles. Il vous permet de verrouiller un filigrane, de définir des indicateurs en lecture seule et d’activer la protection des caractères illisibles qui brouille le texte lorsque le document est modifié sans autorisation appropriée.
+*Explication :* Activer `setLocked` et `setProtectWithUnreadableCharacters` ajoute une couche de protection qui empêche une suppression facile.
 
-#### Ajout du filigrane à une présentation
-Appliquez maintenant le filigrane à chaque diapositive (ou à un sous‑ensemble) à l’aide de l’objet `Watermarker`.
-
+### Ajout du filigrane à une présentation
+Combinez le chargement, la création du filigrane et la configuration des options pour appliquer le filigrane :
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PresentationWatermarkSlideOptions;
@@ -206,11 +165,10 @@ public class AddWatermarkToPresentation {
 }
 ```
 
-**Definition anchor :** La méthode `add` de `Watermarker` attache le `TextWatermark` configuré aux diapositives cibles, en respectant les options que vous avez définies précédemment.
+*Explication :* Cette étape intègre le texte de la **bibliothèque java de filigrane** dans chaque diapositive tout en le verrouillant.
 
-#### Enregistrement et fermeture du document filigrané
-Enfin, persistez les modifications et libérez les ressources.
-
+### Enregistrement et fermeture du document filigrané
+Enfin, persistez les modifications et libérez les ressources :
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -225,58 +183,49 @@ public class SaveAndCloseWatermarkedDocument {
 }
 ```
 
-**Definition anchor :** L’appel à `save` écrit la présentation modifiée sur le disque, tandis que `close` libère les ressources natives et empêche les fuites de mémoire.
+*Explication :* Appelez toujours `close()` pour libérer les descripteurs de fichiers et éviter les fuites de mémoire.
 
 ## Applications pratiques
-- **Corporate Proposals :** Intégrez « Confidential – Company XYZ » sur toutes les diapositives avant de les envoyer aux clients.  
-- **Academic Lectures :** Ajoutez les logos universitaires et les codes de cours pour empêcher la redistribution non autorisée.  
-- **Event Presentations :** Filigranez chaque diapositive avec le nom et la date de l'événement pour renforcer la marque.  
-- **Legal Briefs :** Marquez les présentations juridiques avec des identifiants de dossier afin de maintenir la chaîne de garde.  
-- **Marketing Assets :** Protégez les présentations promotionnelles haute résolution avec des filigranes de marque subtils qui survivent à la conversion PDF.
+1. **Protection des documents d'entreprise :** Ajoutez le logo de l'entreprise ou la mention « Confidentiel » aux propositions commerciales.  
+2. **Distribution de matériel académique :** Protégez les diapositives de cours contre le partage non autorisé.  
+3. **Gestion d'événements :** Sécurisez les présentations d'événement avec un filigrane de marque.  
+4. **Documentation juridique :** Marquez les présentations légales avec un filigrane pour l'authenticité.  
+5. **Campagnes marketing :** Marquez les présentations promotionnelles tout en empêchant les abus.
 
 ## Considérations de performance
-- **Optimizing Performance :** Réutilisez une seule instance de `Watermarker` pour le traitement par lots ; cela réduit la surcharge de la JVM.  
-- **Resource Usage Guidelines :** Pour les présentations supérieures à 200 Mo, activez le mode streaming dans `PresentationLoadOptions` afin de maintenir la consommation mémoire en dessous de 200 Mo.  
-- **Java Memory Management :** Appelez toujours `close()` dans un bloc `finally` ou utilisez try‑with‑resources pour garantir le nettoyage.
+- **Optimisation des performances :** Traitez les fichiers en flux lorsqu'il s'agit de grandes présentations.  
+- **Directives d'utilisation des ressources :** Surveillez l'espace du tas JVM ; fermez `Watermarker` rapidement.  
+- **Gestion de la mémoire Java :** Utilisez try‑with‑resources ou des appels explicites à `close()` pour éviter les fuites.
 
 ## Problèmes courants et solutions
+| Problème | Solution |
+|----------|----------|
+| **Filigrane non affiché** | Vérifiez que les options de diapositive sont définies (`setLocked(true)`) et que la plage de diapositives correcte est utilisée. |
+| **OutOfMemoryError sur un grand PPTX** | Augmentez le tas JVM (`-Xmx2g`) ou traitez le fichier par lots plus petits en utilisant `PresentationLoadOptions`. |
+| **Exception de licence** | Assurez-vous qu'un essai valide ou une licence complète est chargé avant de créer `Watermarker`. |
 
-| Problème | Cause | Solution |
-|----------|-------|----------|
-| Watermark not visible | Default opacity set to 0% | Adjust `setOpacity(0.5)` on `TextWatermark`. |
-| Out‑of‑memory error on large decks | Whole file loaded into memory | Enable `setLoadMode(LoadMode.STREAM)` in `PresentationLoadOptions`. |
-| Unreadable characters not applied | `setUnreadableCharacters(true)` omitted | Ensure the flag is set on `PresentationWatermarkSlideOptions`. |
-| License exception at runtime | Using trial after expiration | Update the license file or request a new trial key. |
+## Questions fréquentes
 
-## Questions fréquemment posées
+**Q : Puis‑je utiliser GroupDocs.Watermark pour ajouter également des filigranes image ?**  
+R : Oui, la bibliothèque prend en charge les filigranes texte et image ; utilisez simplement `ImageWatermark` à la place de `TextWatermark`.
 
-**Q : Puis‑je ajouter un filigrane image au lieu d’un texte ?**  
-A : Oui — utilisez la classe `ImageWatermark`, qui prend en charge les formats PNG, JPEG et SVG.
+**Q : La bibliothèque fonctionne‑t‑elle avec des présentations protégées par mot de passe ?**  
+R : Absolument — fournissez le mot de passe dans `PresentationLoadOptions` avant de charger le fichier.
 
-**Q : La bibliothèque fonctionne‑t‑elle avec des fichiers PPTX protégés par mot de passe ?**  
-A : Absolument ; fournissez le mot de passe via `PresentationLoadOptions.setPassword("yourPassword")`.
+**Q : Est‑il possible de personnaliser l'opacité du filigrane ?**  
+R : Oui, vous pouvez définir l'opacité sur l'objet `TextWatermark` via `setOpacity(double)`.
 
-**Q : Combien de diapositives puis‑je filigraner en une seule opération ?**  
-A : Il n’y a pas de limite stricte ; l’API diffuse les diapositives, vous pouvez donc traiter des présentations contenant des milliers de diapositives tant que le tas JVM est dimensionné correctement.
+**Q : Comment le « protect with unreadable characters » affecte‑t‑il la conversion PDF ?**  
+R : La protection reste intégrée à la présentation ; lors de l'exportation en PDF, les caractères illisibles sont conservés, maintenant le verrouillage.
 
-**Q : Est‑il possible de filigraner uniquement des diapositives sélectionnées ?**  
-A : Oui — spécifiez une plage de diapositives dans `PresentationLoadOptions` ou passez une liste d’indices de diapositives à la méthode `add`.
-
-**Q : Quelle version de GroupDocs.Watermark a été testée avec ce tutoriel ?**  
-A : Les exemples ont été vérifiés avec GroupDocs.Watermark 23.12 pour Java.
+**Q : Quelle est la version minimale de Java requise ?**  
+R : Java 8 ou plus récent ; la bibliothèque est entièrement compatible avec Java 11, 17 et les versions LTS ultérieures.
 
 ## Conclusion
-
-Vous disposez désormais d’un flux de travail complet et prêt pour la production pour **add watermark java presentation** avec GroupDocs.Watermark. En suivant les étapes ci‑dessus, vous pouvez protéger les diapositives confidentielles, renforcer l’identité de la marque et respecter les exigences légales — tout en maintenant une surcharge de performance minimale. Explorez davantage l’API pour combiner filigranes texte et image, appliquer des horodatages dynamiques ou l’intégrer à votre pipeline de gestion de documents existant.
+Vous disposez maintenant d'un guide complet et prêt pour la production sur **comment ajouter un filigrane à une présentation** en utilisant Java et la bibliothèque GroupDocs.Watermark. En ajoutant un filigrane confidentiel, en le verrouillant et en le protégeant avec des caractères illisibles, vous protégez votre propriété intellectuelle et renforcez l'intégrité de votre marque. Explorez davantage en intégrant ces étapes dans des pipelines de documents automatisés ou en les combinant avec d'autres API GroupDocs pour une gestion de documents de bout en bout.
 
 ---
 
-**Last Updated :** 2026-06-21  
-**Tested With :** GroupDocs.Watermark 23.12 for Java  
-**Author :** GroupDocs
-
-## Tutoriels associés
-
-- [Comment ajouter des filigranes texte et image aux PDF en Java avec GroupDocs.Watermark](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermarks/)
-- [Ajouter et verrouiller des filigranes texte dans les documents Word avec Java : guide complet avec GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [Comment ajouter des filigranes texte tournés dans les documents avec GroupDocs.Watermark pour Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+**Dernière mise à jour :** 2026-01-06  
+**Testé avec :** GroupDocs.Watermark 24.11 pour Java  
+**Auteur :** GroupDocs

@@ -1,96 +1,49 @@
 ---
-date: '2026-06-21'
-description: Lär dig hur du lägger till textvattenstämpel i Java med hjälp av GroupDocs.Watermark.
-  Förhindra minnesläckor i Java samtidigt som du säkrar och märker dina dokument på
-  ett effektivt sätt.
+date: '2026-01-06'
+description: Lär dig hur du lägger till vattenstämpel i Java med GroupDocs.Watermark
+  API. Skydda dina dokument och förbättra varumärket utan ansträngning.
 keywords:
-- add text watermark java
-- prevent memory leaks java
-- GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  headline: Add Text Watermark Java with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  name: Add Text Watermark Java with GroupDocs.Watermark
-  steps:
-  - name: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-    text: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-  - name: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-    text: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-  - name: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-    text: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-  - name: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-    text: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-  type: HowTo
-- questions:
-  - answer: Yes, GroupDocs.Watermark also supports `ImageWatermark` objects for logos
-      or stamps.
-    question: Can I add image watermarks in addition to text?
-  - answer: Absolutely. Provide the password via `LoadOptions` when constructing the
-      `Watermarker`.
-    question: Does the library work with password‑protected PDFs?
-  - answer: Use a loop to instantiate a `Watermarker` per file, apply the watermark,
-      save, and close immediately. This pattern keeps memory usage constant.
-    question: How can I watermark a large batch of documents efficiently?
-  - answer: The API offers a `remove` method that can target specific watermarks by
-      ID or type, but you need to keep a reference to the added watermark.
-    question: Is it possible to remove a watermark that was added earlier?
-  - answer: GroupDocs.Watermark is compatible with Java 8 through Java 21, covering
-      both legacy and modern environments.
-    question: What Java versions are supported?
-  type: FAQPage
-title: Lägg till textvattenstämpel i Java med GroupDocs.Watermark
+- Java watermarking
+- GroupDocs.Watermark Java API
+- adding watermarks in Java
+title: 'Lägg till vattenstämpel Java: Säkra dokument med GroupDocs.Watermark API'
 type: docs
 url: /sv/java/getting-started/java-watermark-groupdocs-guide/
 weight: 1
 ---
 
-# Lägg till textvattenstämpel i Java med GroupDocs.Watermark
+# Lägg till vattenstämpel Java: Mästra dokumentssäkerhet med GroupDocs.Watermark
 
-## Introduktion
-
-Att lägga till ett **textvattenstämpel** i ett dokument är ett av de snabbaste sätten att skydda immateriella rättigheter och stärka varumärkesidentiteten. I den här handledningen kommer du att lära dig hur du **lägger till textvattenstämpel java** med GroupDocs.Watermark-biblioteket, samtidigt som du följer bästa praxis för att **förhindra minnesläckor java**. Vi går igenom varje steg—från att sätta upp ditt Maven‑projekt till att rensa resurser—så att du tryggt kan integrera vattenstämpling i vilken Java‑applikation som helst.
+Att lägga till en **watermark** i dina filer är ett av de mest effektiva sätten att skydda immateriella rättigheter, märka dina tillgångar och signalera konfidentialitet. I den här handledningen kommer du att lära dig **hur man lägger till watermark java** projekt med det kraftfulla GroupDocs.Watermark‑biblioteket. Vi går igenom allt från att konfigurera din miljö till att initiera `Watermarker`, applicera en text‑watermark, spara resultatet och rensa resurser – allt med tydliga, konversativa förklaringar.
 
 ## Snabba svar
-- **Vilket bibliotek lägger till textvattenstämplar i Java?** GroupDocs.Watermark for Java.  
-- **Hur många kodrader behövs för en grundläggande vattenstämpel?** Endast två rader: skapa en `Watermarker` och anropa `add`.  
-- **Kan jag undvika minnesläckor?** Ja—stäng alltid `Watermarker` efter användning.  
-- **Vilka filformat stöds?** Över 70 in- och utdataformat, inklusive PDF, DOCX, PPTX och bilder.  
-- **Behöver jag en licens för produktion?** En full licens krävs för kommersiella distributioner; en gratis provperiod finns tillgänglig för utvärdering.
+- **Vad gör “add watermark java”?** Det bäddar in anpassad text eller bilder i ett dokument för att signalera ägande eller konfidentialitet.  
+- **Vilket bibliotek rekommenderas?** GroupDocs.Watermark för Java erbjuder ett enkelt API för både text‑ och bild‑watermarks.  
+- **Behöver jag en licens?** En gratis provversion finns tillgänglig; en full licens krävs för produktionsanvändning.  
+- **Kan jag bearbeta flera filer?** Ja – du kan loopa igenom en samling dokument och återanvända samma arbetsflöde.  
+- **Vilken Java‑version krävs?** Java 8 eller högre.
 
-## Vad är “add text watermark java”?
+## Vad är “add watermark java”?
 
-**Add text watermark java** avser processen att programatiskt infoga ett textöverlägg i ett dokument med Java‑kod. Denna teknik används ofta för att märka konfidentiella filer, visa varumärket eller indikera dokumentstatus. Den kan tillämpas på PDF‑filer, Word‑dokument, presentationer och bilder, och biblioteket hanterar paginering, skalning och format‑specifik rendering automatiskt.
+Att lägga till en watermark i Java innebär att använda kod för att programatiskt infoga synlig eller halvtransparent text eller grafik i ett dokument (PDF, Word, Excel osv.). Denna teknik hjälper dig att skydda känslig information, stärka varumärkesidentiteten och följa juridiska eller företagsmässiga policyer.
 
 ## Varför använda GroupDocs.Watermark för Java?
 
-GroupDocs.Watermark stöder **70+** dokument‑ och bildformat, kan bearbeta filer upp till **500 MB** utan att ladda hela filen i minnet, och erbjuder ett flytande API som minskar utvecklingstiden med upp till **40 %** jämfört med manuella PDF‑manipuleringsbibliotek. Dessutom erbjuder det inbyggt stöd för lösenordsskyddade filer, batch‑bearbetning och högupplöst output, vilket gör det lämpligt för företags‑klassade dokumentpipeline.
+- **Stöd för flera format:** Fungerar med över 100 dokumenttyper.  
+- **Enkelt API:** Minimal kod krävs för att lägga till, anpassa och spara watermarks.  
+- **Prestandafokuserad:** Designad för batch‑bearbetning och låg minnesanvändning.  
+- **Aktivt stöd & dokumentation:** Regelbundna uppdateringar och omfattande guider.
 
 ## Förutsättningar
 
-- **Java Development Kit (JDK):** Version 8 eller högre.  
+- **Java Development Kit (JDK):** Version 8 eller nyare.  
 - **IDE:** IntelliJ IDEA, Eclipse eller någon Java‑kompatibel editor.  
-- **Maven:** För beroendehantering och byggning av projektet.  
-- **Grundläggande Java‑kunskaper:** Bekantskap med objekt‑orienterade koncept och undantagshantering.  
+- **Maven:** För beroendehantering.  
+- **Grundläggande Java‑kunskaper:** Bekantskap med klasser, metoder och fil‑I/O.
 
-## Konfigurera GroupDocs.Watermark för Java
+## Installera GroupDocs.Watermark för Java
 
-För att börja, lägg till GroupDocs.Watermark‑beroendet i din Maven `pom.xml`. Detta enda inlägg hämtar alla nödvändiga binärer.
-
-**Maven Setup:**
+För att börja, lägg till GroupDocs.Watermark‑arkivet och beroendet i din Maven `pom.xml`. Detta ger ditt projekt åtkomst till alla vattenstämpelfunktioner.
 
 ```xml
 <repositories>
@@ -110,30 +63,19 @@ För att börja, lägg till GroupDocs.Watermark‑beroendet i din Maven `pom.xml
 </dependencies>
 ```
 
-**Direct Download:** Alternativt kan du ladda ner den senaste versionen från [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
-
-Ytterligare resurser: den officiella [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/) och den omfattande [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java) ger djupare insikter och kodexempel.
+**Direktnedladdning:** Alternativt kan du ladda ner den senaste versionen från [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Licensanskaffning
 
-- **Gratis provperiod:** Testa alla funktioner utan kreditkort.  
-- **Tillfällig licens:** Förlänger provperioden för utvärderingsprojekt.  
-- **Full licens:** Krävs för produktionsanvändning och för att låsa upp premiumsupport.
-
-Med biblioteket redo, låt oss dyka in i den centrala implementeringen.
+- **Gratis provversion:** Testa alla funktioner utan kreditkort.  
+- **Tillfällig licens:** Förläng provperioden för utvärderingsprojekt.  
+- **Full licens:** Krävs för kommersiell distribution och obegränsad användning.
 
 ## Implementeringsguide
 
-### Hur lägger man till textvattenstämpel java?
-
-Läs in din källfil med `new Watermarker(inputPath)` och anropa `add(new TextWatermark("CONFIDENTIAL", new Font("Arial", 36)))`. Detta tvåstegsmönster skapar vattenstämpeln och applicerar den omedelbart, och hanterar alla format‑specifika detaljer internt.
-
 ### Initiera Watermarker
 
-#### Definitionsankare
-`Watermarker`‑klassen är ingångspunkten för alla vattenstämplingsoperationer i GroupDocs.Watermark. Den laddar ett dokument i minnet och exponerar metoder för att lägga till, redigera eller ta bort vattenstämplar.
-
-**Code Snippet:**
+Det första steget är att skapa en `Watermarker`‑instans som pekar på det dokument du vill skydda.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -146,16 +88,12 @@ public class FeatureInitializeWatermarker {
 }
 ```
 
-**Explanation:**  
-- `inputDocumentPath` – Ersätt med den absoluta eller relativa sökvägen till filen du vill skydda.  
-- Initiering av `Watermarker` sätter upp bearbetningspipeline, vilket möjliggör efterföljande vattenstämplingsåtgärder.
+- **`inputDocumentPath`** – Ersätt med den absoluta eller relativa sökvägen till din källfil.  
+- **Varför initiera?** `Watermarker`‑objektet laddar dokumentet i minnet och förbereder det för vattenstämpeloperationer.
 
-### Lägg till textvattenstämpel i dokument
+### Lägg till text‑watermark i dokumentet
 
-#### Definitionsankare
-`TextWatermark` representerar ett textöverlägg som kan positioneras, stylas och upprepas över sidor. Den kapslar in teckensnitt, storlek, färg och rotationsinställningar.
-
-**Code Snippet:**
+Skapa ett `TextWatermark`‑objekt, definiera dess utseende och fäst det på det inlästa dokumentet.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -170,16 +108,12 @@ public class FeatureAddTextWatermark {
 }
 ```
 
-**Explanation:**  
-- Skapa en `TextWatermark` med önskad text och ett `Font`‑objekt.  
-- Justera egenskaper som opacitet, rotationsvinkel och placering för att matcha dina varumärkesriktlinjer.
+- **`TextWatermark`** – Innehåller vattenstämpelns text och stilinformation.  
+- **Anpassning:** Ändra teckensnitt, storlek, färg eller opacitet för att matcha dina varumärkesriktlinjer.
 
-### Spara dokument till angiven plats
+### Spara dokumentet till angiven plats
 
-#### Definitionsankare
-`save`‑metoden skriver det modifierade dokumentet till disk, bevarar originalfilens format om du inte anger en annan utdata‑typ.
-
-**Code Snippet:**
+Efter att ha lagt till vattenstämpeln, spara ändringarna till en ny fil.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -192,16 +126,12 @@ public class FeatureSaveDocument {
 }
 ```
 
-**Explanation:**  
-- `outputDocumentPath` bestämmer var den vattenmärkta filen kommer att lagras.  
-- Du kan också ändra filtypen genom att tillhandahålla en `SaveOptions`‑instans.
+- **`outputDocumentPath`** – Välj en mapp där den vattenmärkta filen ska skrivas.  
+- **Varför spara?** `save`‑metoden skriver alla ändringar och skapar ett nytt dokument som behåller originalet oförändrat.
 
-### Stäng Watermarker‑resurs
+### Stäng Watermarker‑resursen
 
-#### Definitionsankare
-Att anropa `close()` på `Watermarker` frigör inhemska resurser och rensar interna buffertar, vilket är avgörande för att **förhindra minnesläckor java**.
-
-**Code Snippet:**
+Frigör systemresurser genom att stänga `Watermarker` när du är klar.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -213,57 +143,46 @@ public class FeatureCloseWatermarker {
 }
 ```
 
-**Explanation:**  
-- Att stänga resursen frigör filhandtag och inhemskt minne, vilket säkerställer att din applikation förblir stabil under batch‑bearbetning.
+- **Bästa praxis:** Att stänga frigör filhandtag och hjälper JVM:s skräpsamlare att återvinna minne.
 
 ## Praktiska tillämpningar
 
-1. **Branding av dokument:** Infoga ditt företagsnamn eller logotyp som ett subtilt textvattenstämpel på alla utgående PDF‑filer.  
-2. **Skydda konfidentiell information:** Märk interna rapporter med “CONFIDENTIAL” för att avskräcka oavsiktlig distribution.  
-3. **Versionskontroll i samarbete:** Lägg till versionsnummer som vattenstämplar för att hålla reda på dokumentrevisioner.  
-4. **Juridisk och finansiell dokumentation:** Applicera “FOR INTERNAL USE ONLY” vattenstämplar på kontrakt och uttalanden för att stärka efterlevnad.
+1. **Varumärkesprofilering:** Infoga ditt företags logotyp eller slogan på varje exporterad rapport.  
+2. **Konfidentialitet:** Märk utkast, kontrakt eller finansiella rapporter med “CONFIDENTIAL”.  
+3. **Versionsspårning:** Lägg till versionsnummer eller tidsstämplar som vattenstämplar för revisionsspår.  
+4. **Juridisk efterlevnad:** Lägg automatiskt till lagstadgade meddelanden i reglerade dokument.
 
 ## Prestandaöverväganden
 
-- **Resurshantering:** Stäng alltid `Watermarker`‑objekt; detta förhindrar minnesläckor java och håller heap‑användning låg.  
-- **Batch‑bearbetning:** När du hanterar hundratals filer, återanvänd en enda `Watermarker`‑instans per fil och bearbeta dem sekventiellt för att minimera GC‑kostnad.  
-- **Stora filer:** GroupDocs.Watermark strömmar data, vilket gör att du kan vattenmärka PDF‑filer upp till **500 MB** utan att ladda hela filen i RAM.
-
-## Vanliga problem och lösningar
-
-| Problem | Lösning |
-|-------|----------|
-| **OutOfMemoryError** vid bearbetning av stora PDF‑filer | Aktivera strömningsläge genom att använda `Watermarker.setLoadOptions(new LoadOptions().setLoadMode(LoadMode.Stream))` och stäng alltid `Watermarker`. |
-| **Vattenstämpel syns inte på vissa sidor** | Verifiera att `TextWatermark`‑opaciteten är inställd på över 0.1 och att sidstorleken matchar vattenstämpelns dimensioner. |
-| **Licensundantag** | Se till att licensfilen placeras i classpath och anropa `License license = new License(); license.setLicense("path/to/license.lic");` innan du skapar `Watermarker`. |
+- **Resurshantering:** Stäng alltid `Watermarker` för att förhindra minnesläckor, särskilt i batch‑jobb.  
+- **Batch‑bearbetning:** Loopa igenom en lista med filsökvägar och återanvänd en enda `Watermarker`‑instans där det är möjligt.  
+- **Minnesoptimering:** För mycket stora filer, överväg att bearbeta sidor individuellt för att hålla minnesavtrycket lågt.
 
 ## Vanliga frågor
 
-**Q: Kan jag lägga till bildvattenstämplar utöver text?**  
-A: Ja, GroupDocs.Watermark stödjer också `ImageWatermark`‑objekt för logotyper eller stämplar.
+**Q: Vad är en text‑watermark?**  
+A: En text‑watermark är en textuell information som är inbäddad i ett dokument, ofta använd för varumärkesprofilering eller säkerhet.
 
-**Q: Fungerar biblioteket med lösenordsskyddade PDF‑filer?**  
-A: Absolut. Ange lösenordet via `LoadOptions` när du konstruerar `Watermarker`.
+**Q: Kan jag lägga till bild‑watermarks med GroupDocs.Watermark?**  
+A: Ja, biblioteket stödjer även bild‑watermarks, vilket låter dig placera logotyper eller signaturer.
 
-**Q: Hur kan jag vattenmärka en stor batch av dokument effektivt?**  
-A: Använd en loop för att instansiera en `Watermarker` per fil, applicera vattenstämpeln, spara och stäng omedelbart. Detta mönster håller minnesanvändningen konstant.
+**Q: Hur hanterar jag stora dokumentuppsättningar effektivt med GroupDocs.Watermark?**  
+A: Använd batch‑bearbetningsloopar och se till att stänga varje `Watermarker`‑instans omedelbart för att frigöra resurser.
 
-**Q: Är det möjligt att ta bort en vattenstämpel som lades till tidigare?**  
-A: API:et erbjuder en `remove`‑metod som kan rikta in sig på specifika vattenstämplar efter ID eller typ, men du måste behålla en referens till den tillagda vattenstämpeln.
+**Q: Är det möjligt att ta bort watermarks som lagts till av GroupDocs.Watermark?**  
+A: Borttagning behandlas inte i den här guiden; det kräver ytterligare API‑anrop och noggrann hantering av originalinnehållet.
 
-**Q: Vilka Java‑versioner stöds?**  
-A: GroupDocs.Watermark är kompatibel med Java 8 till Java 21, vilket täcker både äldre och moderna miljöer.
+**Q: Vilka vanliga problem uppstår vid användning av GroupDocs.Watermark?**  
+A: Vanliga problem inkluderar felaktiga filsökvägar, saknade licenser eller användning av dokumentformat som inte stöds. Verifiera beroenden och sökvägar innan du kör.
 
-## Slutsats
+## Resurser
 
-Du har nu ett komplett, produktionsklart arbetsflöde för **add text watermark java** med hjälp av GroupDocs.Watermark. Genom att följa stegen ovan—och komma ihåg att stänga `Watermarker` för att **förhindra minnesläckor java**—kan du skydda, varumärka och hantera dokument i stor skala. Utforska ytterligare vattenstämplingstyper, experimentera med rotation och opacitet, och integrera API:et i större dokument‑bearbetningspipeline för ännu större automatisering.
+- **Documentation:** [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Nedladdning:** [GroupDo
 
-**Senast uppdaterad:** 2026-06-21  
-**Testad med:** GroupDocs.Watermark 23.12 för Java  
-**Författare:** GroupDocs  
+---
 
-## Relaterade handledningar
-
-- [Hur man lägger till ett textvattenstämpel i PDF‑filer med GroupDocs.Watermark för Java: En steg‑för‑steg‑guide](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [Lägg till och lås textvattenstämplar i Word‑dokument med Java: En omfattande guide med GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [Hur man lägger till roterade textvattenstämplar i dokument med GroupDocs.Watermark för Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+**Senast uppdaterad:** 2026-01-06  
+**Testad med:** GroupDocs.Watermark 24.11  
+**Författare:** GroupDocs

@@ -1,97 +1,49 @@
 ---
-date: '2026-06-21'
-description: Apprenez comment ajouter un filigrane texte java en utilisant GroupDocs.Watermark.
-  Prévenez les fuites de mémoire java tout en sécurisant et en marquant vos documents
-  efficacement.
+date: '2026-01-06'
+description: Apprenez à ajouter un filigrane Java en utilisant l'API GroupDocs.Watermark.
+  Protégez vos documents et renforcez votre image de marque sans effort.
 keywords:
-- add text watermark java
-- prevent memory leaks java
-- GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  headline: Add Text Watermark Java with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  name: Add Text Watermark Java with GroupDocs.Watermark
-  steps:
-  - name: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-    text: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-  - name: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-    text: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-  - name: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-    text: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-  - name: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-    text: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-  type: HowTo
-- questions:
-  - answer: Yes, GroupDocs.Watermark also supports `ImageWatermark` objects for logos
-      or stamps.
-    question: Can I add image watermarks in addition to text?
-  - answer: Absolutely. Provide the password via `LoadOptions` when constructing the
-      `Watermarker`.
-    question: Does the library work with password‑protected PDFs?
-  - answer: Use a loop to instantiate a `Watermarker` per file, apply the watermark,
-      save, and close immediately. This pattern keeps memory usage constant.
-    question: How can I watermark a large batch of documents efficiently?
-  - answer: The API offers a `remove` method that can target specific watermarks by
-      ID or type, but you need to keep a reference to the added watermark.
-    question: Is it possible to remove a watermark that was added earlier?
-  - answer: GroupDocs.Watermark is compatible with Java 8 through Java 21, covering
-      both legacy and modern environments.
-    question: What Java versions are supported?
-  type: FAQPage
-title: Ajouter un filigrane texte Java avec GroupDocs.Watermark
+- Java watermarking
+- GroupDocs.Watermark Java API
+- adding watermarks in Java
+title: 'Ajouter un filigrane Java : sécuriser les documents avec l''API GroupDocs.Watermark'
 type: docs
 url: /fr/java/getting-started/java-watermark-groupdocs-guide/
 weight: 1
 ---
 
-# Ajouter un filigrane texte Java avec GroupDocs.Watermark
+# Ajouter un filigrane Java : Maîtriser la sécurité des documents avec GroupDocs.Watermark
 
-## Introduction
-
-Ajouter un **text watermark** à un document est l'une des façons les plus rapides de protéger la propriété intellectuelle et de renforcer l'identité de marque. Dans ce tutoriel, vous apprendrez comment **add text watermark java** avec la bibliothèque GroupDocs.Watermark, tout en suivant les meilleures pratiques pour **prevent memory leaks java**. Nous parcourrons chaque étape — de la configuration de votre projet Maven au nettoyage des ressources — afin que vous puissiez intégrer le filigrane dans n'importe quelle application Java en toute confiance.
+Ajouter un **filigrane** à vos fichiers est l'une des méthodes les plus efficaces pour protéger la propriété intellectuelle, marquer vos actifs et signaler la confidentialité. Dans ce tutoriel, vous apprendrez **comment ajouter un filigrane java** aux projets en utilisant la puissante bibliothèque GroupDocs.Watermark. Nous parcourrons tout, de la configuration de votre environnement à l'initialisation du `Watermarker`, l'application d'un filigrane texte, l'enregistrement du résultat et le nettoyage des ressources — le tout avec des explications claires et conversationnelles.
 
 ## Réponses rapides
+- **Que fait “add watermark java” ?** Il intègre du texte ou des images personnalisés dans un document pour signaler la propriété ou la confidentialité.  
+- **Quelle bibliothèque est recommandée ?** GroupDocs.Watermark for Java fournit une API simple pour les filigranes texte et image.  
+- **Ai‑je besoin d'une licence ?** Un essai gratuit est disponible ; une licence complète est requise pour une utilisation en production.  
+- **Puis‑je traiter plusieurs fichiers ?** Oui – vous pouvez parcourir une collection de documents et réutiliser le même flux de travail.  
+- **Quelle version de Java est requise ?** Java 8 ou supérieure.
 
-- **Quelle bibliothèque ajoute des filigranes texte en Java ?** GroupDocs.Watermark for Java.  
-- **Combien de lignes de code sont nécessaires pour un filigrane de base ?** Just two lines: create a `Watermarker` and call `add`.  
-- **Puis-je éviter les fuites de mémoire ?** Yes—always close the `Watermarker` after use.  
-- **Quels formats de fichiers sont pris en charge ?** Over 70 input and output formats, including PDF, DOCX, PPTX, and images.  
-- **Ai-je besoin d'une licence pour la production ?** A full license is required for commercial deployments; a free trial is available for evaluation.
+## Qu’est‑ce que “add watermark java” ?
 
-## Qu’est‑ce que “add text watermark java”
-
-**Add text watermark java** désigne le processus d'insertion programmatique d'une superposition textuelle dans un document à l'aide de code Java. Cette technique est couramment utilisée pour marquer les fichiers confidentiels, afficher la marque ou indiquer le statut du document. Elle peut être appliquée aux PDF, documents Word, présentations et images, et la bibliothèque gère automatiquement la pagination, le redimensionnement et le rendu spécifique aux formats.
+Ajouter un filigrane en Java signifie utiliser du code pour insérer de manière programmatique du texte ou des graphiques visibles ou semi‑transparents dans un document (PDF, Word, Excel, etc.). Cette technique vous aide à protéger les informations sensibles, renforcer l'identité de marque et respecter les politiques légales ou d'entreprise.
 
 ## Pourquoi utiliser GroupDocs.Watermark pour Java ?
 
-GroupDocs.Watermark prend en charge **plus de 70** formats de documents et d'images, peut traiter des fichiers jusqu'à **500 Mo** sans charger le fichier complet en mémoire, et fournit une API fluide qui réduit le temps de développement jusqu'à **40 %** comparé aux bibliothèques de manipulation PDF manuelles. De plus, il offre une prise en charge intégrée des fichiers protégés par mot de passe, du traitement par lots et de la sortie haute résolution, ce qui le rend adapté aux pipelines de documents de niveau entreprise.
+- **Prise en charge multi‑format :** Fonctionne avec plus de 100 types de documents.  
+- **API simple :** Code minimal requis pour ajouter, personnaliser et enregistrer les filigranes.  
+- **Axé sur la performance :** Conçu pour le traitement par lots et une faible utilisation de mémoire.  
+- **Support actif & documentation :** Mises à jour régulières et guides complets.
 
 ## Prérequis
 
-- **Java Development Kit (JDK) :** Version 8 ou supérieure.  
-- **IDE :** IntelliJ IDEA, Eclipse ou tout éditeur compatible Java.  
-- **Maven :** Pour la gestion des dépendances et la construction du projet.  
-- **Connaissances de base en Java :** Familiarité avec les concepts orientés objet et la gestion des exceptions.  
+- **Java Development Kit (JDK) :** Version 8 ou plus récente.  
+- **IDE :** IntelliJ IDEA, Eclipse ou tout éditeur compatible Java.  
+- **Maven :** Pour la gestion des dépendances.  
+- **Connaissances de base en Java :** Familiarité avec les classes, les méthodes et les entrées/sorties de fichiers.
 
 ## Configuration de GroupDocs.Watermark pour Java
 
-Pour commencer, ajoutez la dépendance GroupDocs.Watermark à votre `pom.xml` Maven. Cette unique entrée récupère tous les binaires requis.
-
-**Maven Setup:**
+Pour commencer, ajoutez le dépôt et la dépendance GroupDocs.Watermark à votre `pom.xml` Maven. Cela donne à votre projet l'accès à toutes les fonctionnalités de filigrane.
 
 ```xml
 <repositories>
@@ -111,30 +63,19 @@ Pour commencer, ajoutez la dépendance GroupDocs.Watermark à votre `pom.xml` Ma
 </dependencies>
 ```
 
-**Téléchargement direct :** Alternativement, vous pouvez télécharger la dernière version depuis [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
-
-Ressources supplémentaires : la documentation officielle [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/) et la référence complète [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java) offrent des informations plus approfondies et des exemples de code.
+**Téléchargement direct :** Alternativement, vous pouvez télécharger la dernière version depuis [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Acquisition de licence
 
-- **Essai gratuit :** Testez toutes les fonctionnalités sans carte de crédit.  
-- **Licence temporaire :** Prolonge la période d'essai pour les projets d'évaluation.  
-- **Licence complète :** Nécessaire pour une utilisation en production et pour débloquer le support premium.
-
-Avec la bibliothèque prête, plongeons dans l'implémentation principale.
+- **Essai gratuit :** Testez toutes les fonctionnalités sans carte de crédit.  
+- **Licence temporaire :** Prolongez la période d'essai pour les projets d'évaluation.  
+- **Licence complète :** Requise pour le déploiement commercial et l'utilisation illimitée.
 
 ## Guide d'implémentation
 
-### Comment ajouter un text watermark java ?
-
-Chargez votre fichier source avec `new Watermarker(inputPath)` et appelez `add(new TextWatermark("CONFIDENTIAL", new Font("Arial", 36)))`. Ce modèle en deux étapes crée le filigrane et l'applique instantanément, en gérant tous les détails spécifiques au format en interne.
-
 ### Initialiser Watermarker
 
-#### Ancre de définition
-La classe `Watermarker` est le point d'entrée pour toutes les opérations de filigrane dans GroupDocs.Watermark. Elle charge un document en mémoire et expose des méthodes pour ajouter, modifier ou supprimer des filigranes.
-
-**Code Snippet:**
+La première étape consiste à créer une instance `Watermarker` qui pointe vers le document que vous souhaitez protéger.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -147,16 +88,12 @@ public class FeatureInitializeWatermarker {
 }
 ```
 
-**Explanation:**  
-- `inputDocumentPath` – Remplacez par le chemin absolu ou relatif du fichier que vous souhaitez protéger.  
-- L'initialisation du `Watermarker` configure le pipeline de traitement, permettant les actions de filigrane suivantes.
+- **`inputDocumentPath`** – Remplacez-le par le chemin absolu ou relatif de votre fichier source.  
+- **Pourquoi initialiser ?** L'objet `Watermarker` charge le document en mémoire et le prépare aux opérations de filigrane.
 
-### Ajouter un Text Watermark au document
+### Ajouter un filigrane texte au document
 
-#### Ancre de définition
-`TextWatermark` représente une superposition textuelle qui peut être positionnée, stylisée et répétée sur les pages. Elle encapsule la police, la taille, la couleur et les paramètres de rotation.
-
-**Code Snippet:**
+Créez un objet `TextWatermark`, définissez son apparence et attachez-le au document chargé.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -171,16 +108,12 @@ public class FeatureAddTextWatermark {
 }
 ```
 
-**Explanation:**  
-- Créez un `TextWatermark` avec le texte souhaité et un objet `Font`.  
-- Ajustez les propriétés telles que l'opacité, l'angle de rotation et le placement pour correspondre aux directives de votre marque.
+- **`TextWatermark`** – Contient le texte du filigrane et les informations de style.  
+- **Personnalisation :** Modifiez la police, la taille, la couleur ou l'opacité pour correspondre aux directives de votre marque.
 
 ### Enregistrer le document à l'emplacement spécifié
 
-#### Ancre de définition
-La méthode `save` écrit le document modifié sur le disque, en conservant le format de fichier original sauf si vous spécifiez un type de sortie différent.
-
-**Code Snippet:**
+Après avoir ajouté le filigrane, enregistrez les modifications dans un nouveau fichier.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -193,16 +126,12 @@ public class FeatureSaveDocument {
 }
 ```
 
-**Explanation:**  
-- `outputDocumentPath` détermine où le fichier filigrané sera stocké.  
-- Vous pouvez également changer le type de fichier en fournissant une instance `SaveOptions`.
+- **`outputDocumentPath`** – Choisissez un dossier où le fichier filigrané sera écrit.  
+- **Pourquoi enregistrer ?** La méthode `save` écrit toutes les modifications, créant un nouveau document qui conserve l'original intact.
 
 ### Fermer la ressource Watermarker
 
-#### Ancre de définition
-Appeler `close()` sur le `Watermarker` libère les ressources natives et vide les tampons internes, ce qui est essentiel pour **prevent memory leaks java**.
-
-**Code Snippet:**
+Libérez les ressources système en fermant le `Watermarker` lorsque vous avez terminé.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -214,61 +143,46 @@ public class FeatureCloseWatermarker {
 }
 ```
 
-**Explanation:**  
-- Fermer la ressource libère les descripteurs de fichiers et la mémoire native, garantissant que votre application reste stable pendant le traitement par lots.
+- **Bonne pratique :** La fermeture libère les descripteurs de fichiers et aide le ramasse‑miettes de la JVM à récupérer la mémoire.
 
 ## Applications pratiques
 
-1. **Documents de marque :** Insérez le nom ou le logo de votre entreprise comme un filigrane texte discret sur tous les PDF sortants.  
-2. **Protection des informations confidentielles :** Marquez les rapports internes avec « CONFIDENTIAL » pour décourager la distribution accidentelle.  
-3. **Contrôle de version en collaboration :** Ajoutez des numéros de version en tant que filigranes pour suivre les révisions de documents.  
-4. **Documentation juridique et financière :** Appliquez des filigranes « FOR INTERNAL USE ONLY » sur les contrats et les relevés pour renforcer la conformité.
+1. **Branding :** Insérez le logo ou le slogan de votre entreprise sur chaque rapport exporté.  
+2. **Confidentialité :** Marquez les brouillons, contrats ou états financiers avec « CONFIDENTIAL ».  
+3. **Suivi de version :** Ajoutez des numéros de version ou des horodatages comme filigranes pour les pistes d’audit.  
+4. **Conformité légale :** Ajoutez automatiquement des mentions légales aux documents réglementés.
 
 ## Considérations de performance
 
-- **Gestion des ressources :** Fermez toujours les objets `Watermarker` ; cela empêche les memory leaks java et maintient une utilisation du tas faible.  
-- **Traitement par lots :** Lors du traitement de centaines de fichiers, réutilisez une seule instance `Watermarker` par fichier et traitez-les séquentiellement pour minimiser la surcharge du GC.  
-- **Fichiers volumineux :** GroupDocs.Watermark diffuse les données, vous permettant de filigraner des PDF jusqu'à **500 Mo** sans charger le fichier complet en RAM.
-
-## Problèmes courants et solutions
-
-| Issue | Solution |
-|-------|----------|
-| **OutOfMemoryError** lors du traitement de gros PDF | Activez le mode streaming en utilisant `Watermarker.setLoadOptions(new LoadOptions().setLoadMode(LoadMode.Stream))` et fermez toujours le `Watermarker`. |
-| **Filigrane non visible sur certaines pages** | Vérifiez que l'opacité du `TextWatermark` est supérieure à 0,1 et que la taille de la page correspond aux dimensions du filigrane. |
-| **Exception de licence** | Assurez-vous que le fichier de licence est placé dans le classpath et appelez `License license = new License(); license.setLicense("path/to/license.lic");` avant de créer le `Watermarker`. |
+- **Gestion des ressources :** Fermez toujours le `Watermarker` pour éviter les fuites de mémoire, surtout dans les traitements par lots.  
+- **Traitement par lots :** Parcourez une liste de chemins de fichiers et réutilisez une seule instance `Watermarker` lorsque c’est possible.  
+- **Optimisation mémoire :** Pour les fichiers très volumineux, envisagez de traiter les pages individuellement afin de réduire l’empreinte mémoire.
 
 ## Questions fréquentes
 
-**Q :** Puis-je ajouter des filigranes image en plus du texte ?  
-**A :** Oui, GroupDocs.Watermark prend également en charge les objets `ImageWatermark` pour les logos ou les tampons.
+**Q : Qu’est‑ce qu’un filigrane texte ?**  
+R : Un filigrane texte est une information textuelle intégrée dans un document, souvent utilisée pour le branding ou la sécurité.
 
-**Q :** La bibliothèque fonctionne‑t‑elle avec les PDF protégés par mot de passe ?  
-**A :** Absolument. Fournissez le mot de passe via `LoadOptions` lors de la construction du `Watermarker`.
+**Q : Puis‑je ajouter des filigranes image avec GroupDocs.Watermark ?**  
+R : Oui, la bibliothèque prend également en charge les filigranes image, vous permettant de placer des logos ou des signatures.
 
-**Q :** Comment puis‑je filigraner un grand lot de documents efficacement ?  
-**A :** Utilisez une boucle pour instancier un `Watermarker` par fichier, appliquer le filigrane, enregistrer et fermer immédiatement. Ce modèle maintient une utilisation mémoire constante.
+**Q : Comment gérer efficacement de grands ensembles de documents avec GroupDocs.Watermark ?**  
+R : Utilisez des boucles de traitement par lots et assurez‑vous de fermer chaque instance `Watermarker` rapidement pour libérer les ressources.
 
-**Q :** Est‑il possible de supprimer un filigrane ajouté précédemment ?  
-**A :** L'API propose une méthode `remove` qui peut cibler des filigranes spécifiques par ID ou type, mais vous devez conserver une référence au filigrane ajouté.
+**Q : Est‑il possible de supprimer les filigranes ajoutés par GroupDocs.Watermark ?**  
+R : La suppression n’est pas couverte dans ce guide ; elle nécessite des appels API supplémentaires et une manipulation soigneuse du contenu original.
 
-**Q :** Quelles versions de Java sont prises en charge ?  
-**A :** GroupDocs.Watermark est compatible avec Java 8 à Java 21, couvrant les environnements legacy et modernes.
+**Q : Quels sont les problèmes courants lors de l’utilisation de GroupDocs.Watermark ?**  
+R : Les problèmes typiques incluent des chemins de fichiers incorrects, des licences manquantes ou l’utilisation de formats de documents non pris en charge. Vérifiez les dépendances et les chemins avant d’exécuter.
 
-## Conclusion
+## Ressources
 
-Vous disposez maintenant d'un flux de travail complet et prêt pour la production pour **add text watermark java** avec GroupDocs.Watermark. En suivant les étapes ci‑dessus — et en vous rappelant de fermer le `Watermarker` pour **prevent memory leaks java** — vous pouvez protéger, marquer et gérer les documents à grande échelle. Explorez d'autres types de filigranes, expérimentez la rotation et l'opacité, et intégrez l'API dans des pipelines de traitement de documents plus vastes pour une automatisation encore plus poussée.
-
----
-
-**Last Updated:** 2026-06-21  
-**Tested With:** GroupDocs.Watermark 23.12 for Java  
-**Author:** GroupDocs  
+- **Documentation :** [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Référence API :** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Téléchargement :** [GroupDo
 
 ---
 
-## Tutoriels associés
-
-- [Comment ajouter un filigrane texte aux PDF avec GroupDocs.Watermark pour Java : guide étape par étape](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [Ajouter et verrouiller des filigranes texte dans les documents Word avec Java : guide complet avec GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [Comment ajouter des filigranes texte tournés dans les documents avec GroupDocs.Watermark pour Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+**Dernière mise à jour :** 2026-01-06  
+**Testé avec :** GroupDocs.Watermark 24.11  
+**Auteur :** GroupDocs

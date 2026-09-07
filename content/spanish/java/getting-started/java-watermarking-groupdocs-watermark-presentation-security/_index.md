@@ -1,87 +1,56 @@
 ---
-date: '2026-06-21'
-description: Aprenda cómo agregar una marca de agua a una presentación Java con GroupDocs.Watermark
-  para Java, protegiendo las diapositivas mediante la aplicación de marcas de agua
-  de texto y protección contra caracteres ilegibles.
+date: '2026-01-06'
+description: Aprende a agregar marcas de agua a archivos de presentación usando Java.
+  Esta guía muestra cómo añadir una marca de agua confidencial, bloquear la marca
+  de agua y usar la biblioteca GroupDocs.Watermark para Java para presentaciones seguras.
 keywords:
-- add watermark java presentation
-- GroupDocs.Watermark Java
-- presentation security
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  headline: Add Watermark Java Presentation Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  name: Add Watermark Java Presentation Using GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-    text: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-  - name: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-    text: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-  - name: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-    text: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-  type: HowTo
-- questions:
-  - answer: Yes—use the `ImageWatermark` class, which supports PNG, JPEG, and SVG
-      formats.
-    question: Can I add an image watermark instead of text?
-  - answer: Absolutely; provide the password via `PresentationLoadOptions.setPassword("yourPassword")`.
-    question: Does the library work with password‑protected PPTX files?
-  - answer: There is no hard limit; the API streams slides, so you can process presentations
-      with thousands of slides as long as the JVM heap is sized appropriately.
-    question: How many slides can I watermark in one operation?
-  - answer: Yes—specify a slide range in `PresentationLoadOptions` or pass a list
-      of slide indices to the `add` method.
-    question: Is it possible to watermark only selected slides?
-  - answer: The examples were verified with GroupDocs.Watermark 23.12 for Java.
-    question: What version of GroupDocs.Watermark is tested with this tutorial?
-  type: FAQPage
-title: Agregar marca de agua a presentación Java usando GroupDocs.Watermark
+- Java Watermarking
+- GroupDocs.Watermark for Java
+- Presentation Security
+title: Cómo aplicar marcas de agua a archivos de presentación con Java y GroupDocs.Watermark
 type: docs
 url: /es/java/getting-started/java-watermarking-groupdocs-watermark-presentation-security/
 weight: 1
 ---
 
-# Agregar marca de agua a presentación Java usando GroupDocs.Watermark
+# Cómo agregar marcas de agua a archivos de presentación con Java y GroupDocs.Watermark
 
-En el entorno empresarial de hoy, que avanza rápidamente, **add watermark java presentation** es una buena práctica para proteger presentaciones confidenciales, material de capacitación y material de marketing. GroupDocs.Watermark para Java le permite incrustar marcas de agua de texto invisibles o visibles directamente en archivos PowerPoint, asegurando que cualquiera que reciba el archivo pueda ver instantáneamente su propiedad o estado de confidencialidad. Esta guía lo lleva paso a paso—desde la configuración de la biblioteca hasta la carga de una presentación, la creación de una marca de agua de texto personalizada, su bloqueo con protección de caracteres ilegibles y, finalmente, el guardado del archivo seguro.
+En la era digital actual, **how to watermark presentation** es una preocupación principal para cualquiera que comparta diapositivas confidenciales, presentaciones de entrenamiento o material de marketing. Agregar una marca de agua confidencial no solo indica la propiedad, sino que también disuade la distribución no autorizada. En este tutorial descubrirá cómo agregar protección de marca de agua al estilo java, bloquear la marca de agua y aprovechar la biblioteca GroupDocs.Watermark para Java para asegurar sus presentaciones de forma rápida y fiable.
 
 ## Respuestas rápidas
-- **¿Cuál es el propósito principal?** Proteger archivos de presentación mediante la inserción de marcas de agua de texto persistentes.  
-- **¿Qué biblioteca se requiere?** GroupDocs.Watermark para Java (artefacto Maven `com.groupdocs:groupdocs-watermark`).  
-- **¿Necesito una licencia?** Una prueba gratuita funciona para desarrollo; se requiere una licencia completa para producción.  
-- **¿Puedo proteger presentaciones grandes?** Sí—GroupDocs.Watermark procesa archivos de hasta 500 MB sin cargar todo el documento en memoria.  
-- **¿Es compatible la API con Java 8+?** Absolutamente, se ejecuta en JDK 8 y versiones posteriores.
+- **¿Cuál es la forma más fácil de agregar una marca de agua a una presentación?** Use GroupDocs.Watermark for Java and call `watermarker.add()` with a `TextWatermark`.
+- **¿Puedo bloquear la marca de agua para que no se pueda eliminar?** Yes—set `options.setLocked(true)` and enable unreadable characters.
+- **¿Necesito una licencia especial?** A free trial works for development; a full license is required for production.
+- **¿Qué versión de Java se requiere?** Java 8 or later is supported.
+- **¿Funcionará con archivos PPTX y ODP?** Yes, GroupDocs.Watermark supports the major presentation formats.
 
-## ¿Qué es “add watermark java presentation”?
-*Add watermark java presentation* se refiere al proceso de insertar programáticamente una marca de agua de texto o imagen en un archivo PowerPoint basado en Java (`.pptx`) para proteger su contenido. Al incrustar marcas visibles o invisibles, puede afirmar la propiedad, aplicar confidencialidad y disuadir la distribución no autorizada, asegurando que los destinatarios siempre vean la fuente o el estado de protección.
+## Qué es “how to watermark presentation”?
+Agregar una marca de agua a una presentación significa incrustar texto visible o invisible (o imágenes) en cada diapositiva para que el documento lleve una marca clara de propiedad. Esta técnica se usa ampliamente para propuestas corporativas, conferencias académicas y cualquier contenido que necesite protección contra el uso indebido.
 
-## ¿Por qué usar GroupDocs.Watermark para Java?
-GroupDocs.Watermark admite **más de 30 formatos de archivo** (incluidos PPTX, PPT, PDF, DOCX e imágenes) y puede aplicar marcas de agua a presentaciones con **cero pérdida de calidad**. Su motor procesa presentaciones de cientos de páginas en menos de un segundo en hardware de servidor típico, mientras consume menos de 150 MB de RAM—lo que lo hace ideal para trabajos por lotes de alto rendimiento.
+## ¿Por qué agregar una marca de agua confidencial?
+- **Brand protection:** Refuerza la identidad corporativa en cada diapositiva.  
+- **Legal evidence:** Muestra que el archivo se distribuyó con una declaración clara de propiedad.  
+- **Deterrence:** Hace evidente cuando un documento ha sido compartido sin permiso.  
+- **Compliance:** Cumple con las políticas internas de seguridad para el manejo de información sensible.
 
 ## Requisitos previos
+Antes de comenzar, asegúrese de tener lo siguiente:
 
-1. **Java Development Kit (JDK) 8 o posterior** – requerido para compilación y tiempo de ejecución.  
-2. **Maven** – gestiona la resolución de dependencias; también puede usar Gradle si lo prefiere.  
-3. **IDE** – IntelliJ IDEA, Eclipse o cualquier editor compatible con Java.  
-4. **Conocimientos básicos de Java I/O** – para comprender flujos de archivos y manejo de excepciones.
+1. **Required Libraries and Dependencies**
+   - Java Development Kit (JDK) 8 or later  
+   - Maven for dependency management  
+
+2. **Environment Setup**
+   - An IDE such as IntelliJ IDEA or Eclipse  
+   - Basic knowledge of Java I/O and exception handling  
+
+3. **Knowledge Prerequisites**
+   - Familiarity with Java classes and object‑oriented concepts  
 
 ## Configuración de GroupDocs.Watermark para Java
 
 ### Configuración de Maven
-Agregue la siguiente dependencia a su `pom.xml`. Esto obtiene la última versión estable de GroupDocs.Watermark.
+Agregue el repositorio de GroupDocs y la dependencia a su archivo `pom.xml`:
 
 ```xml
 <repositories>
@@ -102,15 +71,15 @@ Agregue la siguiente dependencia a su `pom.xml`. Esto obtiene la última versió
 ```
 
 ### Descarga directa
-Si prefiere la instalación manual, descargue los JARs desde la página oficial de lanzamientos: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternativamente, descargue la última versión desde [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Obtención de licencia
-- **Free Trial:** Permite llamadas ilimitadas a la API durante 30 días.  
-- **Temporary License:** Extiende los límites de la prueba para ciclos de desarrollo más largos.  
-- **Full License:** Requerida para despliegue comercial y elimina todas las restricciones de la prueba.
+- **Free Trial:** Test the library without a license.  
+- **Temporary License:** Use a temporary key for extended development testing.  
+- **Full License:** Required for production deployments.
 
 ### Inicialización y configuración básica
-Cree una instancia de `Watermarker`, que sirve como el objeto central para todas las operaciones de marcas de agua.
+El siguiente fragmento muestra cómo crear una instancia de `Watermarker` para un archivo de presentación:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -123,15 +92,12 @@ public class InitializeWatermarker {
 }
 ```
 
-`Watermarker` es la clase principal que carga, edita y guarda documentos. Este objeto gestionará la carga, edición y guardado de sus archivos de presentación.
-
 ## Guía de implementación
 
-### ¿Cómo agregar marca de agua a presentación Java?
-Para agregar una marca de agua a una presentación Java, primero cargue el archivo PowerPoint usando `PresentationLoadOptions`. Luego cree un `TextWatermark` con el texto deseado, estilo y rotación. Aplique la protección de caracteres ilegibles mediante `PresentationWatermarkSlideOptions`, añada la marca de agua a las diapositivas deseadas y, finalmente, guarde el archivo modificado para conservar los cambios.
+A continuación se muestra una guía paso a paso de **how to watermark presentation** archivos, desde la carga del documento hasta guardar la salida protegida.
 
-#### Cargando un documento de presentación
-Primero, necesita abrir el archivo con las opciones de carga apropiadas.
+### Cargando un documento de presentación
+Primero, cargue la presentación usando `PresentationLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -146,10 +112,10 @@ public class LoadPresentation {
 }
 ```
 
-**Definition anchor:** `PresentationLoadOptions` define cómo GroupDocs.Watermark lee un archivo PowerPoint, permitiéndole especificar protección con contraseña, rango de diapositivas y banderas de ahorro de memoria.
+*Explicación:* `PresentationLoadOptions` le permite especificar cómo debe interpretarse el archivo antes de aplicar cualquier marca de agua.
 
-#### Creando una marca de agua de texto
-A continuación, elabore el texto de la marca de agua y estílelo para que coincida con las directrices de su marca.
+### Creando una marca de agua de texto
+A continuación, cree el texto real de la marca de agua. Aquí es donde **add confidential watermark** el contenido:
 
 ```java
 import com.groupdocs.watermark.watermarks.Font;
@@ -164,10 +130,10 @@ public class CreateTextWatermark {
 }
 ```
 
-**Definition anchor:** `TextWatermark` representa una superposición textual que puede posicionarse, rotarse y colorearse. Soporta Unicode, por lo que puede incrustar etiquetas multilingües.
+*Explicación:* Ajuste la fuente, el tamaño y el texto para que coincidan con las directrices de su marca.
 
-#### Configurando opciones de marca de agua para caracteres ilegibles
-Para que la marca de agua sea a prueba de manipulaciones, habilite la protección de caracteres ilegibles.
+### Configurando opciones de marca de agua para caracteres ilegibles
+Para **how to lock watermark** y hacerlo ilegible cuando se manipula, configure las opciones de diapositiva:
 
 ```java
 import com.groupdocs.watermark.options.PresentationWatermarkSlideOptions;
@@ -181,10 +147,10 @@ public class ConfigureWatermarkOptions {
 }
 ```
 
-**Definition anchor:** `PresentationWatermarkSlideOptions` configura cómo se aplica una marca de agua a diapositivas individuales. Le permite bloquear una marca de agua, establecer banderas de solo lectura y habilitar la protección de caracteres ilegibles que distorsiona el texto cuando el documento se edita sin la autorización adecuada.
+*Explicación:* Habilitar `setLocked` y `setProtectWithUnreadableCharacters` agrega una capa de protección que impide la eliminación fácil.
 
-#### Añadiendo la marca de agua a una presentación
-Ahora aplique la marca de agua a cada diapositiva (o a un subconjunto) usando el objeto `Watermarker`.
+### Agregando la marca de agua a una presentación
+Combine la carga, la creación de la marca de agua y la configuración de opciones para aplicar la marca de agua:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -207,10 +173,10 @@ public class AddWatermarkToPresentation {
 }
 ```
 
-**Definition anchor:** El método `add` de `Watermarker` adjunta el `TextWatermark` configurado a las diapositivas objetivo, respetando las opciones que definió anteriormente.
+*Explicación:* Este paso inserta el texto de **java watermark library** en cada diapositiva mientras lo bloquea.
 
-#### Guardando y cerrando el documento con marca de agua
-Finalmente, persista los cambios y libere los recursos.
+### Guardando y cerrando el documento con marca de agua
+Finalmente, persista los cambios y libere los recursos:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -226,60 +192,50 @@ public class SaveAndCloseWatermarkedDocument {
 }
 ```
 
-**Definition anchor:** Llamar a `save` escribe la presentación modificada de nuevo en disco, mientras que `close` libera recursos nativos y previene fugas de memoria.
+*Explicación:* Siempre llame a `close()` para liberar los manejadores de archivo y evitar fugas de memoria.
 
 ## Aplicaciones prácticas
-
-- **Corporate Proposals:** Inserte “Confidential – Company XYZ” en todas las diapositivas antes de enviarlas a los clientes.  
-- **Academic Lectures:** Añada logotipos universitarios y códigos de curso para evitar la redistribución no autorizada.  
-- **Event Presentations:** Marque cada diapositiva con el nombre del evento y la fecha para reforzar la marca.  
-- **Legal Briefs:** Etiquete las presentaciones legales con identificadores de caso para mantener la evidencia de cadena de custodia.  
-- **Marketing Assets:** Proteja presentaciones promocionales de alta resolución con marcas de agua sutiles de la marca que sobrevivan a la conversión a PDF.
+1. **Corporate Document Protection:** Agregue el logotipo de la empresa o la etiqueta “Confidential” a las propuestas comerciales.  
+2. **Academic Material Distribution:** Proteja las diapositivas de conferencias contra la distribución no autorizada.  
+3. **Event Management:** Asegure los decks de diapositivas de eventos con una marca de agua de marca.  
+4. **Legal Documentation:** Marque presentaciones legales con una marca de agua para autenticidad.  
+5. **Marketing Campaigns:** Marque los decks promocionales mientras previene el uso indebido.  
 
 ## Consideraciones de rendimiento
-
-- **Optimizing Performance:** Reutilice una única instancia de `Watermarker` para procesamiento por lotes; esto reduce la sobrecarga de la JVM.  
-- **Resource Usage Guidelines:** Para presentaciones mayores de 200 MB, habilite el modo de transmisión en `PresentationLoadOptions` para mantener el consumo de memoria por debajo de 200 MB.  
-- **Java Memory Management:** Siempre invoque `close()` en un bloque `finally` o use try‑with‑resources para garantizar la limpieza.
+- **Optimizing Performance:** Procese los archivos en streams cuando trabaje con presentaciones grandes.  
+- **Resource Usage Guidelines:** Monitoree el espacio del heap de la JVM; cierre `Watermarker` rápidamente.  
+- **Java Memory Management:** Use try‑with‑resources o llamadas explícitas a `close()` para prevenir fugas.  
 
 ## Problemas comunes y soluciones
 
-| Issue | Cause | Solution |
-|-------|-------|----------|
-| Marca de agua no visible | Opacidad predeterminada establecida en 0% | Ajuste `setOpacity(0.5)` en `TextWatermark`. |
-| Error de falta de memoria en presentaciones grandes | Todo el archivo cargado en memoria | Habilite `setLoadMode(LoadMode.STREAM)` en `PresentationLoadOptions`. |
-| Caracteres ilegibles no aplicados | `setUnreadableCharacters(true)` omitido | Asegúrese de que la bandera esté establecida en `PresentationWatermarkSlideOptions`. |
-| Excepción de licencia en tiempo de ejecución | Uso de la prueba después de la expiración | Actualice el archivo de licencia o solicite una nueva clave de prueba. |
+| Problema | Solución |
+|----------|----------|
+| **Marca de agua no aparece** | Verifique que las opciones de diapositiva estén configuradas (`setLocked(true)`) y que se use el rango de diapositivas correcto. |
+| **OutOfMemoryError en PPTX grande** | Aumente el heap de la JVM (`-Xmx2g`) o procese el archivo en lotes más pequeños usando `PresentationLoadOptions`. |
+| **Excepción de licencia** | Asegúrese de que una licencia de prueba o completa válida esté cargada antes de crear `Watermarker`. |
 
 ## Preguntas frecuentes
 
-**Q: ¿Puedo agregar una marca de agua de imagen en lugar de texto?**  
-A: Sí—utilice la clase `ImageWatermark`, que soporta formatos PNG, JPEG y SVG.
+**Q: ¿Puedo usar GroupDocs.Watermark para agregar marcas de agua de imagen también?**  
+A: Yes, the library supports both text and image watermarks; simply use `ImageWatermark` instead of `TextWatermark`.
 
-**Q: ¿La biblioteca funciona con archivos PPTX protegidos con contraseña?**  
-A: Absolutamente; proporcione la contraseña mediante `PresentationLoadOptions.setPassword("yourPassword")`.
+**Q: ¿La biblioteca funciona con presentaciones protegidas con contraseña?**  
+A: Absolutely—provide the password in `PresentationLoadOptions` before loading the file.
 
-**Q: ¿Cuántas diapositivas puedo marcar con agua en una sola operación?**  
-A: No hay un límite estricto; la API transmite diapositivas, por lo que puede procesar presentaciones con miles de diapositivas siempre que el heap de la JVM esté dimensionado adecuadamente.
+**Q: ¿Es posible personalizar la opacidad de la marca de agua?**  
+A: Yes, you can set the opacity on the `TextWatermark` object via `setOpacity(double)`.
 
-**Q: ¿Es posible marcar solo diapositivas seleccionadas?**  
-A: Sí—especifique un rango de diapositivas en `PresentationLoadOptions` o pase una lista de índices de diapositivas al método `add`.
+**Q: ¿Cómo afecta “protect with unreadable characters” a la conversión a PDF?**  
+A: The protection stays embedded in the presentation; when exported to PDF, the unreadable characters are retained, preserving the lock.
 
-**Q: ¿Qué versión de GroupDocs.Watermark se probó con este tutorial?**  
-A: Los ejemplos fueron verificados con GroupDocs.Watermark 23.12 para Java.
+**Q: ¿Cuál es la versión mínima de Java requerida?**  
+A: Java 8 or newer; the library is fully compatible with Java 11, 17, and later LTS releases.
 
 ## Conclusión
-
-Ahora tiene un flujo de trabajo completo y listo para producción para **add watermark java presentation** usando GroupDocs.Watermark. Siguiendo los pasos anteriores, puede proteger diapositivas confidenciales, reforzar la identidad de marca y cumplir con los requisitos legales—todo mientras mantiene la sobrecarga de rendimiento al mínimo. Explore más la API para combinar marcas de agua de texto e imagen, aplicar marcas de tiempo dinámicas o integrarse con su canal de gestión de documentos existente.
+Ahora tiene una guía completa y lista para producción sobre **how to watermark presentation** archivos usando Java y la biblioteca GroupDocs.Watermark. Al agregar una marca de agua confidencial, bloquearla y protegerla con caracteres ilegibles, protege su propiedad intelectual y refuerza la integridad de la marca. Explore más integrando estos pasos en pipelines automatizados de documentos o combinándolos con otras APIs de GroupDocs para una gestión de documentos de extremo a extremo.
 
 ---
 
-**Última actualización:** 2026-06-21  
-**Probado con:** GroupDocs.Watermark 23.12 for Java  
+**Última actualización:** 2026-01-06  
+**Probado con:** GroupDocs.Watermark 24.11 for Java  
 **Autor:** GroupDocs
-
-## Tutoriales relacionados
-
-- [Cómo agregar marcas de agua de texto e imagen a PDFs en Java usando GroupDocs.Watermark](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermarks/)
-- [Agregar y bloquear marcas de agua de texto en documentos Word usando Java: Guía completa con GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [Cómo agregar marcas de agua de texto rotado en documentos usando GroupDocs.Watermark para Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)

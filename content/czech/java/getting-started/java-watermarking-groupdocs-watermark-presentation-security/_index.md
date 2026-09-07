@@ -1,86 +1,56 @@
 ---
-date: '2026-06-21'
-description: Naučte se, jak přidat watermark do prezentace Java pomocí GroupDocs.Watermark
-  pro Javu, zabezpečit snímky pomocí text watermarks a unreadable‑character protection.
+date: '2026-01-06'
+description: Naučte se, jak vkládat vodoznaky do prezentačních souborů pomocí Javy.
+  Tento průvodce vám ukáže, jak přidat důvěrný vodoznak, zamknout vodoznak a použít
+  knihovnu GroupDocs.Watermark pro Javu pro zabezpečené prezentace.
 keywords:
-- add watermark java presentation
-- GroupDocs.Watermark Java
-- presentation security
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  headline: Add Watermark Java Presentation Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  name: Add Watermark Java Presentation Using GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-    text: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-  - name: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-    text: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-  - name: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-    text: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-  type: HowTo
-- questions:
-  - answer: Yes—use the `ImageWatermark` class, which supports PNG, JPEG, and SVG
-      formats.
-    question: Can I add an image watermark instead of text?
-  - answer: Absolutely; provide the password via `PresentationLoadOptions.setPassword("yourPassword")`.
-    question: Does the library work with password‑protected PPTX files?
-  - answer: There is no hard limit; the API streams slides, so you can process presentations
-      with thousands of slides as long as the JVM heap is sized appropriately.
-    question: How many slides can I watermark in one operation?
-  - answer: Yes—specify a slide range in `PresentationLoadOptions` or pass a list
-      of slide indices to the `add` method.
-    question: Is it possible to watermark only selected slides?
-  - answer: The examples were verified with GroupDocs.Watermark 23.12 for Java.
-    question: What version of GroupDocs.Watermark is tested with this tutorial?
-  type: FAQPage
-title: Přidání watermark do prezentace Java pomocí GroupDocs.Watermark
+- Java Watermarking
+- GroupDocs.Watermark for Java
+- Presentation Security
+title: Jak vodotiskovat prezentační soubory pomocí Javy a GroupDocs.Watermark
 type: docs
 url: /cs/java/getting-started/java-watermarking-groupdocs-watermark-presentation-security/
 weight: 1
 ---
 
-# Přidání vodoznaku do Java prezentace pomocí GroupDocs.Watermark
+# Jak vodoznakovat soubory prezentací pomocí Javy a GroupDocs.Watermark
 
-V dnešním rychle se měnícím obchodním prostředí je **add watermark java presentation** osvědčenou praxí pro ochranu důvěrných prezentací, výukových materiálů a marketingových materiálů. GroupDocs.Watermark pro Java vám umožňuje vložit neviditelné nebo viditelné textové vodoznaky přímo do souborů PowerPoint, což zajišťuje, že každý, kdo soubor obdrží, okamžitě uvidí jeho vlastnictví nebo stav důvěrnosti. Tento průvodce vás provede každým krokem – od nastavení knihovny po načtení prezentace, vytvoření vlastního textového vodoznaku, jeho uzamčení pomocí ochrany před nečitelnými znaky a nakonec uložení zabezpečeného souboru.
+V dnešní digitální éře je **jak vodoznakovat prezentaci** soubory hlavní starostí pro každého, kdo sdílí důvěrné snímky, školící materiály nebo marketingové materiály. Přidání důvěrného vodoznaku nejen signalizuje vlastnictví, ale také odrazuje od neautorizovaného šíření. V tomto tutoriálu se dozvíte, jak přidat ochranu vodoznaku ve stylu Java, zamknout vodoznak a využít knihovnu GroupDocs.Watermark pro Java k rychlému a spolehlivému zabezpečení vašich prezentací.
 
 ## Rychlé odpovědi
-- **Jaký je hlavní účel?** Secure presentation files by embedding persistent text watermarks.  
-- **Která knihovna je vyžadována?** GroupDocs.Watermark for Java (Maven artifact `com.groupdocs:groupdocs-watermark`).  
-- **Potřebuji licenci?** A free trial works for development; a full license is required for production.  
-- **Mohu chránit velké prezentace?** Yes—GroupDocs.Watermark processes files up to 500 MB without loading the entire document into memory.  
-- **Je API kompatibilní s Java 8+?** Absolutely, it runs on JDK 8 and newer versions.
+- **Jaký je nejjednodušší způsob, jak přidat vodoznak do prezentace?** Použijte GroupDocs.Watermark pro Java a zavolejte `watermarker.add()` s `TextWatermark`.
+- **Mohu zamknout vodoznak, aby jej nebylo možné odstranit?** Ano—nastavte `options.setLocked(true)` a povolte nečitelné znaky.
+- **Potřebuji speciální licenci?** Bezplatná zkušební verze funguje pro vývoj; plná licence je vyžadována pro produkci.
+- **Která verze Javy je požadována?** Java 8 nebo novější je podporována.
+- **Bude to fungovat s soubory PPTX a ODP?** Ano, GroupDocs.Watermark podporuje hlavní formáty prezentací.
 
-## Co je “add watermark java presentation”?
-*Add watermark java presentation* odkazuje na proces programového vkládání textového nebo obrázkového vodoznaku do Java‑založeného PowerPoint (`.pptx`) souboru za účelem ochrany jeho obsahu. Vkládáním viditelných nebo neviditelných značek můžete uplatnit vlastnictví, vynutit důvěrnost a odradit neautorizované šíření, čímž zajistíte, že příjemci vždy uvidí zdroj nebo stav ochrany.
+## Co je „jak vodoznakovat prezentaci“?
+Vodoznakování prezentace znamená vložení viditelného nebo neviditelného textu (nebo obrázků) do každého snímku, aby dokument nesl jasnou značku vlastnictví. Tato technika se široce používá pro firemní nabídky, akademické přednášky a jakýkoli obsah, který potřebuje ochranu proti zneužití.
 
-## Proč používat GroupDocs.Watermark pro Java?
-GroupDocs.Watermark podporuje **30+ formátů souborů** (včetně PPTX, PPT, PDF, DOCX a obrázků) a může aplikovat vodoznaky na prezentace s **nulovou ztrátou kvality**. Jeho engine zpracuje prezentace o stovkách stránek za méně než sekundu na typickém serverovém hardware, přičemž spotřebuje méně než 150 MB RAM – což ho činí ideálním pro vysoce výkonné dávkové úlohy.
+## Proč přidat důvěrný vodoznak?
+- **Ochrana značky:** Posiluje firemní identitu na každém snímku.  
+- **Právní důkaz:** Ukazuje, že soubor byl distribuován s jasným prohlášením o vlastnictví.  
+- **Odstrašení:** Zřetelně ukazuje, když byl dokument sdílen bez povolení.  
+- **Shoda:** Splňuje interní bezpečnostní politiky pro zacházení s citlivými informacemi.
 
 ## Předpoklady
+Předtím, než začnete, ujistěte se, že máte následující:
 
-1. **Java Development Kit (JDK) 8 nebo novější** – vyžadováno pro kompilaci a běh.  
-2. **Maven** – řeší závislosti; můžete také použít Gradle, pokud preferujete.  
-3. **IDE** – IntelliJ IDEA, Eclipse nebo jakýkoli Java‑kompatibilní editor.  
-4. **Základní znalost Java I/O** – pro pochopení souborových streamů a zpracování výjimek.
+1. **Požadované knihovny a závislosti**
+   - Java Development Kit (JDK) 8 nebo novější  
+   - Maven pro správu závislostí  
+
+2. **Nastavení prostředí**
+   - IDE jako IntelliJ IDEA nebo Eclipse  
+   - Základní znalost Java I/O a zpracování výjimek  
+
+3. **Předpoklady znalostí**
+   - Znalost Java tříd a objektově orientovaných konceptů  
 
 ## Nastavení GroupDocs.Watermark pro Java
 
 ### Nastavení Maven
-Přidejte následující závislost do vašeho `pom.xml`. Tím se načte nejnovější stabilní verze GroupDocs.Watermark.
+Přidejte repozitář GroupDocs a závislost do souboru `pom.xml`:
 
 ```xml
 <repositories>
@@ -101,15 +71,15 @@ Přidejte následující závislost do vašeho `pom.xml`. Tím se načte nejnov�
 ```
 
 ### Přímé stažení
-Pokud dáváte přednost ruční instalaci, stáhněte JAR soubory z oficiální stránky vydání: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternativně stáhněte nejnovější verzi z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Získání licence
-- **Free Trial:** Umožňuje neomezené volání API po dobu 30 dnů.  
-- **Temporary License:** Rozšiřuje limity zkušební verze pro delší vývojové cykly.  
-- **Full License:** Vyžadována pro komerční nasazení a odstraňuje všechna omezení zkušební verze.
+- **Bezplatná zkušební verze:** Otestujte knihovnu bez licence.  
+- **Dočasná licence:** Použijte dočasný klíč pro rozšířené testování vývoje.  
+- **Plná licence:** Vyžadována pro nasazení do produkce.
 
 ### Základní inicializace a nastavení
-Vytvořte instanci `Watermarker`, která slouží jako centrální objekt pro všechny operace s vodoznaky.
+Následující úryvek ukazuje, jak vytvořit instanci `Watermarker` pro soubor prezentace:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -122,15 +92,12 @@ public class InitializeWatermarker {
 }
 ```
 
-`Watermarker` je hlavní třída, která načítá, upravuje a ukládá dokumenty. Tento objekt bude spravovat načítání, úpravy a ukládání vašich souborů prezentací.
-
 ## Průvodce implementací
 
-### Jak přidat vodoznak do Java prezentace?
-Pro přidání vodoznaku do Java prezentace nejprve načtěte soubor PowerPoint pomocí `PresentationLoadOptions`. Poté vytvořte `TextWatermark` s požadovaným textem, stylem a rotací. Aplikujte ochranu před nečitelnými znaky pomocí `PresentationWatermarkSlideOptions`, přidejte vodoznak na požadované snímky a nakonec uložte upravený soubor, aby se změny zachovaly.
+Níže je krok za krokem průvodce **jak vodoznakovat prezentaci** soubory, od načtení dokumentu po uložení chráněného výstupu.
 
-#### Načtení dokumentu prezentace
-Nejprve musíte otevřít soubor s příslušnými možnostmi načtení.
+### Načtení dokumentu prezentace
+Nejprve načtěte prezentaci pomocí `PresentationLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -145,10 +112,10 @@ public class LoadPresentation {
 }
 ```
 
-**Definition anchor:** `PresentationLoadOptions` určuje, jak GroupDocs.Watermark čte soubor PowerPoint, což vám umožňuje specifikovat ochranu heslem, rozsah snímků a příznaky šetřící paměť.
+*Vysvětlení:* `PresentationLoadOptions` vám umožňuje specifikovat, jak má být soubor interpretován před aplikací jakéhokoli vodoznaku.
 
-#### Vytvoření textového vodoznaku
-Dále vytvořte text vodoznaku a stylizujte jej podle vašich brandových směrnic.
+### Vytvoření textového vodoznaku
+Dále vytvořte skutečný text vodoznaku. Zde přidáte obsah **důvěrného vodoznaku**:
 
 ```java
 import com.groupdocs.watermark.watermarks.Font;
@@ -163,10 +130,10 @@ public class CreateTextWatermark {
 }
 ```
 
-**Definition anchor:** `TextWatermark` představuje textový překrytí, které lze umístit, otočit a obarvit. Podporuje Unicode, takže můžete vložit vícejazyčné značky.
+*Vysvětlení:* Nastavte písmo, velikost a text tak, aby odpovídaly vašim směrnicím značky.
 
-#### Konfigurace možností vodoznaku pro nečitelné znaky
-Aby byl vodoznak odolný vůči manipulaci, povolte ochranu před nečitelnými znaky.
+### Konfigurace možností vodoznaku pro nečitelné znaky
+Pro **jak zamknout vodoznak** a učinit jej nečitelným při manipulaci, nakonfigurujte možnosti snímků:
 
 ```java
 import com.groupdocs.watermark.options.PresentationWatermarkSlideOptions;
@@ -180,10 +147,10 @@ public class ConfigureWatermarkOptions {
 }
 ```
 
-**Definition anchor:** `PresentationWatermarkSlideOptions` konfiguruje, jak je vodoznak aplikován na jednotlivé snímky. Umožňuje vám uzamknout vodoznak, nastavit příznaky jen pro čtení a povolit ochranu před nečitelnými znaky, která zamíchá text, když je dokument upraven bez řádného oprávnění.
+*Vysvětlení:* Povolení `setLocked` a `setProtectWithUnreadableCharacters` přidává vrstvu ochrany, která zabraňuje snadnému odstranění.
 
-#### Přidání vodoznaku do prezentace
-Nyní aplikujte vodoznak na každý snímek (nebo podmnožinu) pomocí objektu `Watermarker`.
+### Přidání vodoznaku do prezentace
+Spojte načítání, vytvoření vodoznaku a konfiguraci možností pro aplikaci vodoznaku:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -206,10 +173,10 @@ public class AddWatermarkToPresentation {
 }
 ```
 
-**Definition anchor:** Metoda `add` třídy `Watermarker` připojí nakonfigurovaný `TextWatermark` k cílovým snímkům, respektujíc dříve definované možnosti.
+*Vysvětlení:* Tento krok vloží text **java watermark library** do každého snímku a zároveň jej zamkne.
 
-#### Uložení a uzavření dokumentu s vodoznakem
-Nakonec uložte změny a uvolněte prostředky.
+### Uložení a uzavření vodoznáčeného dokumentu
+Nakonec uložte změny a uvolněte zdroje:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -225,60 +192,50 @@ public class SaveAndCloseWatermarkedDocument {
 }
 ```
 
-**Definition anchor:** Volání `save` zapíše upravenou prezentaci zpět na disk, zatímco `close` uvolní nativní prostředky a zabrání únikům paměti.
+*Vysvětlení:* Vždy zavolejte `close()`, aby se uvolnily souborové handly a předešlo se únikům paměti.
 
 ## Praktické aplikace
-
-- **Corporate Proposals:** Vložte „Confidential – Company XYZ“ na všechny snímky před odesláním klientům.  
-- **Academic Lectures:** Přidejte loga univerzity a kódy kurzů, aby se zabránilo neautorizovanému šíření.  
-- **Event Presentations:** Vodoznak na každý snímek s názvem události a datem pro posílení značky.  
-- **Legal Briefs:** Označte právní prezentace identifikátory případů pro zachování důkazního řetězce.  
-- **Marketing Assets:** Chraňte vysoce rozlišené propagační prezentace jemnými vodoznaky značky, které přežijí konverzi do PDF.
+1. **Ochrana firemních dokumentů:** Přidejte logo společnosti nebo štítek „Confidential“ do obchodních nabídek.  
+2. **Distribuce akademického materiálu:** Chraňte přednáškové snímky před neautorizovaným sdílením.  
+3. **Správa událostí:** Zabezpečte sady snímků události značkovým vodoznakem.  
+4. **Právní dokumentace:** Označte právní prezentace vodoznakem pro autenticitu.  
+5. **Marketingové kampaně:** Značte propagační sady a zároveň předcházejte zneužití.
 
 ## Úvahy o výkonu
-
-- **Optimizing Performance:** Znovu použijte jedinou instanci `Watermarker` pro dávkové zpracování; tím se sníží zátěž JVM.  
-- **Resource Usage Guidelines:** Pro prezentace větší než 200 MB povolte režim streamování v `PresentationLoadOptions`, aby spotřeba paměti zůstala pod 200 MB.  
-- **Java Memory Management:** Vždy volajte `close()` v bloku `finally` nebo použijte try‑with‑resources pro zajištění úklidu.
+- **Optimalizace výkonu:** Zpracovávejte soubory ve streamu při práci s velkými prezentacemi.  
+- **Pokyny pro využití zdrojů:** Sledujte paměťový prostor JVM; rychle uzavřete `Watermarker`.  
+- **Správa paměti v Javě:** Používejte try‑with‑resources nebo explicitní volání `close()`, aby se zabránilo únikům.
 
 ## Časté problémy a řešení
 
-| Problém | Příčina | Řešení |
-|-------|-------|----------|
-| Vodoznak není viditelný | Výchozí neprůhlednost nastavena na 0 % | Upravte `setOpacity(0.5)` na `TextWatermark`. |
-| Chyba nedostatku paměti u velkých prezentací | Celý soubor načten do paměti | Povolte `setLoadMode(LoadMode.STREAM)` v `PresentationLoadOptions`. |
-| Nečitelné znaky nebyly aplikovány | `setUnreadableCharacters(true)` vynecháno | Ujistěte se, že příznak je nastaven v `PresentationWatermarkSlideOptions`. |
-| Výjimka licence během běhu | Použití zkušební verze po vypršení | Aktualizujte soubor licence nebo požádejte o nový zkušební klíč. |
+| Problém | Řešení |
+|-------|----------|
+| **Vodoznak se nezobrazuje** | Ověřte, že jsou nastaveny možnosti snímků (`setLocked(true)`) a že je použito správné rozmezí snímků. |
+| **OutOfMemoryError u velkého PPTX** | Zvyšte haldu JVM (`-Xmx2g`) nebo zpracovávejte soubor v menších dávkách pomocí `PresentationLoadOptions`. |
+| **Výjimka licence** | Ujistěte se, že je načtena platná zkušební nebo plná licence před vytvořením `Watermarker`. |
 
 ## Často kladené otázky
 
-**Q: Mohu místo textu přidat obrázkový vodoznak?**  
-A: Ano—použijte třídu `ImageWatermark`, která podporuje formáty PNG, JPEG a SVG.
+**Q: Mohu použít GroupDocs.Watermark také k přidání obrázkových vodoznaků?**  
+A: Ano, knihovna podporuje jak textové, tak obrázkové vodoznaky; jednoduše použijte `ImageWatermark` místo `TextWatermark`.
 
-**Q: Funguje knihovna s heslem chráněnými soubory PPTX?**  
-A: Ano; zadejte heslo pomocí `PresentationLoadOptions.setPassword("yourPassword")`.
+**Q: Funguje knihovna s prezentacemi chráněnými heslem?**  
+A: Naprosto—zadejte heslo v `PresentationLoadOptions` před načtením souboru.
 
-**Q: Kolik snímků mohu vodoznakovat v jedné operaci?**  
-A: Neexistuje pevný limit; API streamuje snímky, takže můžete zpracovat prezentace s tisíci snímky, pokud je heap JVMu dostatečně velký.
+**Q: Je možné přizpůsobit neprůhlednost vodoznaku?**  
+A: Ano, můžete nastavit neprůhlednost na objektu `TextWatermark` pomocí `setOpacity(double)`.
 
-**Q: Je možné vodoznakovat pouze vybrané snímky?**  
-A: Ano—specifikujte rozsah snímků v `PresentationLoadOptions` nebo předávejte seznam indexů snímků metodě `add`.
+**Q: Jak „ochrana nečitelnými znaky“ ovlivňuje konverzi do PDF?**  
+A: Ochrana zůstává vložena v prezentaci; při exportu do PDF jsou nečitelné znaky zachovány, čímž se udržuje zámek.
 
-**Q: Jaká verze GroupDocs.Watermark byla testována s tímto tutoriálem?**  
-A: Příklady byly ověřeny s GroupDocs.Watermark 23.12 pro Java.
+**Q: Jaká je minimální požadovaná verze Javy?**  
+A: Java 8 nebo novější; knihovna je plně kompatibilní s Java 11, 17 a dalšími LTS verzemi.
 
 ## Závěr
-
-Nyní máte kompletní, připravený workflow pro **add watermark java presentation** pomocí GroupDocs.Watermark. Dodržením výše uvedených kroků můžete chránit důvěrné snímky, posílit identitu značky a splnit právní požadavky – a to vše při minimálním dopadu na výkon. Prozkoumejte API dále, abyste kombinovali textové a obrázkové vodoznaky, aplikovali dynamické časové razítka nebo integrovali do vašeho stávajícího pipeline pro správu dokumentů.
+Nyní máte kompletní, připravený průvodce pro **jak vodoznakovat prezentaci** soubory pomocí Javy a knihovny GroupDocs.Watermark. Přidáním důvěrného vodoznaku, jeho zamčením a ochranou nečitelnými znaky chráníte své duševní vlastnictví a posilujete integritu značky. Prozkoumejte dále integrací těchto kroků do automatizovaných dokumentových pipeline nebo jejich kombinací s dalšími GroupDocs API pro end‑to‑end správu dokumentů.
 
 ---
 
-**Poslední aktualizace:** 2026-06-21  
-**Testováno s:** GroupDocs.Watermark 23.12 for Java  
+**Poslední aktualizace:** 2026-01-06  
+**Testováno s:** GroupDocs.Watermark 24.11 pro Java  
 **Autor:** GroupDocs
-
-## Související tutoriály
-
-- [Jak přidat textové a obrázkové vodoznaky do PDF v Javě pomocí GroupDocs.Watermark](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermarks/)
-- [Přidání a uzamčení textových vodoznaků ve Word dokumentech pomocí Java: komplexní průvodce s GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [Jak přidat otočené textové vodoznaky do dokumentů pomocí GroupDocs.Watermark pro Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)

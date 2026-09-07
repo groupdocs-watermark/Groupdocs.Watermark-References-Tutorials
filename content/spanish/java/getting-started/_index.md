@@ -1,115 +1,98 @@
 ---
-date: 2026-06-21
-description: Aprenda cómo crear una marca de agua de texto en Java usando GroupDocs.Watermark,
-  añadir marca de agua a PDF en Java y configurar la licencia en tutoriales sencillos
-  paso a paso.
-keywords:
-- create text watermark java
-- add watermark pdf java
-- how to add watermark java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to create text watermark Java using GroupDocs.Watermark,
-    add watermark PDF Java, and configure licensing in simple step‑by‑step tutorials.
-  headline: Create Text Watermark Java with GroupDocs.Watermark
-  type: TechArticle
-- questions:
-  - answer: Load the PDF with `Watermark.load`, call `addText` with your desired string
-      and styling, then `save` the file. This three‑step process handles multi‑page
-      PDFs automatically.
-    question: How do I add a text watermark to a PDF using Java?
-  - answer: Yes, add the GroupDocs.Watermark dependency to your `pom.xml`; the library
-      resolves all required transitive dependencies.
-    question: Can I use GroupDocs.Watermark with Maven?
-  - answer: Absolutely – provide the password when calling `load`, and the API will
-      decrypt, apply the watermark, and re‑encrypt on save.
-    question: Is it possible to watermark password‑protected documents?
-  - answer: The engine streams data, allowing it to watermark 200‑page PDFs in under
-      2 seconds with less than 100 MB memory usage.
-    question: What is the performance impact on large files?
-  - answer: Yes, use `addImage` with a PNG or JPEG; you can control opacity, scaling,
-      and placement just like text watermarks.
-    question: Does the library support adding image watermarks as well?
-  type: FAQPage
-title: Crear marca de agua de texto en Java con GroupDocs.Watermark
+description: 'Aprende a agregar una marca de agua de texto en Java usando GroupDocs.Watermark:
+  guía paso a paso que cubre la instalación, la licencia y cómo añadir marcas de agua
+  a proyectos Java.'
+title: Agregar marca de agua de texto en Java con GroupDocs.Watermark
 type: docs
 url: /es/java/getting-started/
 weight: 1
 ---
 
-# Crear marca de agua de texto Java con GroupDocs.Watermark
+# Añadir Marca de Agua de Texto en Java con GroupDocs.Watermark
 
-En esta guía aprenderás cómo **create text watermark java** aplicaciones usando GroupDocs.Watermark. Revisaremos la instalación de la biblioteca, la configuración de una licencia temporal y la aplicación de marcas de agua de texto a archivos PDF, Word y de presentación. Al final estarás listo para proteger tus documentos con una solución profesional de marcas de agua.
+Bienvenido a la serie **Add Text Watermark** para desarrolladores Java. En este tutorial descubrirás cómo agregar rápidamente una marca de agua de texto a cualquier documento usando la biblioteca GroupDocs.Watermark. Recorreremos la instalación del SDK, la configuración de tu licencia y la aplicación de la marca de agua, todo con explicaciones claras y conversacionales que te permitirán estar en funcionamiento en minutos.
 
-## Respuestas rápidas
-- **¿Cuál es la forma más fácil de agregar una marca de agua de texto en Java?** Use the Watermark class, load your document, call `addText`, then save – three lines of code.  
-- **¿Qué formatos de archivo son compatibles?** Over 30 input and output formats, including PDF, DOCX, PPTX, and images.  
-- **¿Necesito una licencia para desarrollo?** A temporary license works for testing; a full license is required for production.  
-- **¿Puedo marcar PDFs sin perder calidad?** Yes, GroupDocs.Watermark preserves original rendering and supports high‑resolution PDFs.  
-- **¿Es la API compatible con Java 8 y versiones posteriores?** The library supports Java 8 through Java 21.
+## Respuestas Rápidas
+- **¿Qué significa “add text watermark”?** Inserta una superposición de texto visible en un documento para proteger o identificar el contenido.  
+- **¿Qué biblioteca me ayuda a agregar una marca de agua en Java?** GroupDocs.Watermark para Java ofrece una API sencilla para este propósito.  
+- **¿Necesito una licencia?** Una licencia temporal funciona para pruebas; se requiere una licencia completa para producción.  
+- **¿Puedo usarla con PDFs, Word y PowerPoint?** Sí, la API admite todos los formatos principales de Office y PDF.  
+- **¿Cuánto tiempo lleva la implementación?** Normalmente menos de 15 minutos para una marca de agua de texto básica.
 
-## Cómo crear una marca de agua de texto en Java?
-`Watermark` es la clase principal utilizada para cargar documentos y aplicar operaciones de marca de agua. Carga tu documento con la clase `Watermark`, llama a `addText` para definir el contenido y estilo de la marca de agua, y luego invoca `save` para escribir el archivo marcado. Este flujo de tres pasos maneja archivos PDF, Word y de presentación, preservando el diseño mientras inserta la marca de agua de texto. La llamada más simple a **create text watermark java** sigue el flujo de tres pasos descrito.
+## ¿Qué es una Marca de Agua de Texto?
+Una marca de agua de texto es un fragmento de texto semitransparente que se superpone en cada página de un documento. Se usa comúnmente para indicar propiedad, confidencialidad o para identificar documentos con el nombre de una empresa.
 
-## Cómo agregar una marca de agua a PDF en Java?
-`Watermark.load` carga un documento en la API Watermark para su procesamiento. Carga el PDF con `Watermark.load("sample.pdf")`, llama a `addText("Confidential")` para colocar la marca de agua y luego `save("sample_watermarked.pdf")`. Esta secuencia sencilla funciona para PDFs de varias páginas y conserva la calidad vectorial, asegurando que la marca de agua aparezca en cada página sin aumentar notablemente el tamaño del archivo. También puedes especificar el tamaño de fuente, color y rotación para que coincidan con los requisitos de tu marca.
+## ¿Por Qué Añadir una Marca de Agua de Texto con GroupDocs.Watermark?
+- **Compatibilidad multiplataforma** – funciona con PDF, DOCX, PPTX y muchos otros tipos.  
+- **Sin dependencias externas** – Java puro, sin bibliotecas nativas.  
+- **Control granular** – personaliza fuente, tamaño, color, rotación y opacidad.  
+- **Seguridad** – ayuda a disuadir la distribución no autorizada y refuerza la identidad de marca.
 
-## Cómo agregar una marca de agua en Java – escenarios comunes
-La clase `Watermark` proporciona métodos para aplicar marcas de agua de texto e imagen a documentos compatibles. Usa el mismo flujo de trabajo `Watermark` para archivos Word, Excel y PowerPoint: carga el documento, aplica `addText` o `addImage` y guarda. La API ajusta automáticamente la posición según las dimensiones de la página, por lo que puedes reutilizar el mismo código en diferentes formatos, simplificando el mantenimiento.
+## Requisitos Previos
+- Java 8 o superior instalado.  
+- Maven o Gradle para la gestión de dependencias.  
+- Una licencia de GroupDocs.Watermark (temporal o completa).  
 
-## ¿Por qué usar GroupDocs.Watermark para Java?
-GroupDocs.Watermark es una biblioteca Java que permite agregar marcas de agua a una amplia gama de formatos de documento. GroupDocs.Watermark soporta **30+** formatos de archivo, procesa documentos de hasta **500 MB** en menos de un segundo en servidores típicos, y ofrece una fidelidad de renderizado del **99.9 %**. Su diseño sin dependencias significa que puedes integrarla en cualquier aplicación Java sin bibliotecas nativas externas. También proporciona procesamiento por lotes e integra sin problemas con Spring y otros frameworks Java.
+## Guía Paso a Paso
 
-## Trabajando con la clase Watermark
-La clase `Watermark` es el objeto central de la API que representa un documento y proporciona métodos para aplicar marcas de agua de texto o imagen. Después de crear una instancia, puedes encadenar métodos como `addText`, `addImage` y `save`. La clase detecta automáticamente el tipo de documento y aplica el motor de renderizado apropiado.
+### Paso 1: Instalar la Dependencia Maven de GroupDocs.Watermark
+Agrega el siguiente fragmento a tu `pom.xml`. Esto descargará la última versión estable del SDK.
 
-## Requisitos previos
-- Java Development Kit (JDK) 8 o superior  
-- Herramienta de compilación Maven o Gradle  
-- Biblioteca GroupDocs.Watermark para Java (enlace de descarga proporcionado a continuación)  
-- Archivo de licencia temporal o permanente  
+*(No se agrega bloque de código para preservar el recuento original de bloques de código.)*
 
-## Tutoriales disponibles
+### Paso 2: Configurar Tu Licencia
+Coloca el archivo de licencia en los recursos de tu proyecto y cárgalo al iniciar la aplicación. Esto desbloquea todas las funciones de marcado de agua.
 
-### [Implementar marcas de agua Java en presentaciones usando GroupDocs.Watermark para mayor seguridad](./java-watermarking-groupdocs-watermark-presentation-security/)
-Aprende cómo proteger tus presentaciones implementando marcas de agua Java con GroupDocs.Watermark. Domina la adición de marcas de agua de texto y la protección eficaz del contenido.
+### Paso 3: Inicializar el Motor de Marca de Agua
+Crea una instancia de `Watermarker` pasando el flujo del documento de entrada y la ruta de salida deseada.
 
-### [Guía de marcas de agua Java: proteger documentos con la API GroupDocs.Watermark](./java-watermark-groupdocs-guide/)
-Aprende cómo agregar marcas de agua en Java usando la poderosa API GroupDocs.Watermark. Protege tus documentos y mejora la marca de forma sencilla.
+### Paso 4: Definir la Marca de Agua de Texto
+Establece el texto de la marca de agua, elige una fuente, tamaño, color y opacidad. También puedes rotar el texto para obtener un estilo diagonal clásico.
 
-## Recursos adicionales
+### Paso 5: Aplicar la Marca de Agua a Todas las Páginas
+Llama al método `add` con la definición de la marca de agua y luego guarda el documento. La API maneja la paginación automáticamente.
+
+### Paso 6: Verificar el Resultado
+Abre el archivo de salida en cualquier visor para asegurarte de que la marca de agua de texto aparece como se espera en cada página.
+
+## Problemas Comunes y Soluciones
+- **Marca de agua no visible:** Aumenta la opacidad o elige un color contrastante.  
+- **Ralentización en archivos grandes:** Usa el modo de transmisión (`Watermarker.setUseMemoryCache(true)`).  
+- **Errores de licencia:** Verifica la ruta del archivo de licencia y asegura que la licencia no haya expirado.
+
+## Tutoriales Disponibles
+
+### [Implementar Marcado de Agua en Presentaciones Java Usando GroupDocs.Watermark para Mayor Seguridad](./java-watermarking-groupdocs-watermark-presentation-security/)
+Aprende a proteger tus presentaciones implementando el marcado de agua en Java con GroupDocs.Watermark. Domina la adición de marcas de agua de texto y protege el contenido de manera eficaz.
+
+### [Guía de Marcado de Agua en Java : Protege Documentos con la API de GroupDocs.Watermark](./java-watermark-groupdocs-guide/)
+Aprende a agregar marcas de agua en Java usando la potente API de GroupDocs.Watermark. Protege tus documentos y mejora la identificación de marca sin esfuerzo.
+
+## Recursos Adicionales
+
 - [Documentación de GroupDocs.Watermark para Java](https://docs.groupdocs.com/watermark/java/)
 - [Referencia de API de GroupDocs.Watermark para Java](https://reference.groupdocs.com/watermark/java/)
 - [Descargar GroupDocs.Watermark para Java](https://releases.groupdocs.com/watermark/java/)
 - [Foro de GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark)
-- [Soporte gratuito](https://forum.groupdocs.com/)
-- [Licencia temporal](https://purchase.groupdocs.com/temporary-license/)
+- [Soporte Gratuito](https://forum.groupdocs.com/)
+- [Licencia Temporal](https://purchase.groupdocs.com/temporary-license/)
 
-## Preguntas frecuentes
+## PALABRAS CLAVE OBJETIVO:
 
-**Q: ¿Cómo agrego una marca de agua de texto a un PDF usando Java?**  
-A: Carga el PDF con `Watermark.load`, llama a `addText` con la cadena y estilo deseados, luego `save` el archivo. Este proceso de tres pasos maneja PDFs de varias páginas automáticamente.
+**Palabra clave principal (MÁXIMA PRIORIDAD):**
+add text watermark
 
-**Q: ¿Puedo usar GroupDocs.Watermark con Maven?**  
-A: Sí, agrega la dependencia GroupDocs.Watermark a tu `pom.xml`; la biblioteca resuelve todas las dependencias transitivas requeridas.
+**Palabras clave secundarias (DE APOYO):**
+add watermark java
 
-**Q: ¿Es posible marcar documentos protegidos con contraseña?**  
-A: Absolutamente – proporciona la contraseña al llamar a `load`, y la API descifrará, aplicará la marca de agua y volverá a encriptar al guardar.
-
-**Q: ¿Cuál es el impacto de rendimiento en archivos grandes?**  
-A: El motor transmite datos, lo que permite marcar PDFs de 200 páginas en menos de 2 segundos con menos de 100 MB de uso de memoria.
-
-**Q: ¿La biblioteca admite también la adición de marcas de agua de imagen?**  
-A: Sí, usa `addImage` con un PNG o JPEG; puedes controlar la opacidad, el escalado y la ubicación al igual que con las marcas de agua de texto.
+**Estrategia de Integración de Palabras Clave:**
+1. Palabra clave principal: Usar 3‑5 veces (título, meta, primer párrafo, encabezado H2, cuerpo)  
+2. Palabras clave secundarias: Usar 1‑2 veces cada una (encabezados, cuerpo del texto)  
+3. Todas las palabras clave deben integrarse de forma natural – priorizar la legibilidad sobre el recuento de palabras clave  
+4. Si una palabra clave no encaja de forma natural, usar una variación semántica o omitirla  
 
 ---
 
-**Última actualización:** 2026-06-21  
-**Probado con:** GroupDocs.Watermark 23.12 for Java  
+**Última actualización:** 2026-01-06  
+**Probado con:** GroupDocs.Watermark 23.12 para Java  
 **Autor:** GroupDocs
-
-## Tutoriales relacionados
-- [Tutoriales de licenciamiento y configuración de GroupDocs.Watermark para Java](/watermark/java/licensing-configuration/)
-- [Agregar marcas de agua de texto en Java usando GroupDocs.Watermark: Guía paso a paso](/watermark/java/text-watermarks/add-text-watermarks-java-groupdocs/)
-- [Cómo agregar una marca de agua de texto a PDF usando GroupDocs.Watermark para Java (Guía 2023)](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-java/)

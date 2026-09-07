@@ -1,87 +1,56 @@
 ---
-date: '2026-06-21'
-description: Tìm hiểu cách thêm watermark vào bản trình chiếu Java với GroupDocs.Watermark
-  cho Java, bảo vệ các slide bằng cách áp dụng text watermarks và unreadable‑character
-  protection.
+date: '2026-01-06'
+description: Tìm hiểu cách thêm watermark vào các tệp trình chiếu bằng Java. Hướng
+  dẫn này chỉ cho bạn cách thêm watermark bảo mật, khóa watermark và sử dụng thư viện
+  GroupDocs.Watermark Java cho các bản trình chiếu an toàn.
 keywords:
-- add watermark java presentation
-- GroupDocs.Watermark Java
-- presentation security
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  headline: Add Watermark Java Presentation Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  name: Add Watermark Java Presentation Using GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-    text: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-  - name: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-    text: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-  - name: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-    text: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-  type: HowTo
-- questions:
-  - answer: Yes—use the `ImageWatermark` class, which supports PNG, JPEG, and SVG
-      formats.
-    question: Can I add an image watermark instead of text?
-  - answer: Absolutely; provide the password via `PresentationLoadOptions.setPassword("yourPassword")`.
-    question: Does the library work with password‑protected PPTX files?
-  - answer: There is no hard limit; the API streams slides, so you can process presentations
-      with thousands of slides as long as the JVM heap is sized appropriately.
-    question: How many slides can I watermark in one operation?
-  - answer: Yes—specify a slide range in `PresentationLoadOptions` or pass a list
-      of slide indices to the `add` method.
-    question: Is it possible to watermark only selected slides?
-  - answer: The examples were verified with GroupDocs.Watermark 23.12 for Java.
-    question: What version of GroupDocs.Watermark is tested with this tutorial?
-  type: FAQPage
-title: Thêm watermark cho bản trình chiếu Java bằng GroupDocs.Watermark
+- Java Watermarking
+- GroupDocs.Watermark for Java
+- Presentation Security
+title: Cách Đánh Dấu Nước Các Tệp Bài Trình Bày Bằng Java và GroupDocs.Watermark
 type: docs
 url: /vi/java/getting-started/java-watermarking-groupdocs-watermark-presentation-security/
 weight: 1
 ---
 
-# Thêm Watermark cho Bản Trình Bày Java bằng GroupDocs.Watermark
+# Cách Đánh Dấu Nước Các Tệp Bản Trình Chiếu Bằng Java và GroupDocs.Watermark
 
-Trong môi trường kinh doanh ngày càng nhanh chóng hiện nay, **add watermark java presentation** là một thực hành tốt để bảo vệ các bộ slide bí mật, tài liệu đào tạo và tài liệu marketing. GroupDocs.Watermark cho Java cho phép bạn nhúng watermark văn bản ẩn hoặc hiện trực tiếp vào các tệp PowerPoint, đảm bảo rằng bất kỳ ai nhận được tệp đều có thể ngay lập tức thấy quyền sở hữu hoặc trạng thái bảo mật của nó. Hướng dẫn này sẽ đưa bạn qua từng bước — từ việc thiết lập thư viện, tải bản trình bày, tạo watermark văn bản tùy chỉnh, khóa nó bằng bảo vệ ký tự không đọc được, và cuối cùng lưu tệp đã được bảo vệ.
+Trong thời đại số hiện nay, **cách đánh dấu nước bản trình chiếu** là mối quan tâm hàng đầu của bất kỳ ai chia sẻ các slide bí mật, bộ tài liệu đào tạo hoặc tài liệu marketing. Thêm một dấu nước bảo mật không chỉ thể hiện quyền sở hữu mà còn ngăn chặn việc phân phối trái phép. Trong hướng dẫn này, bạn sẽ khám phá cách thêm bảo vệ dấu nước kiểu Java, khóa dấu nước và tận dụng thư viện GroupDocs.Watermark cho Java để bảo mật các bản trình chiếu của mình một cách nhanh chóng và đáng tin cậy.
 
-## Câu trả lời nhanh
-- **Mục đích chính là gì?** Bảo mật các tệp trình bày bằng cách nhúng watermark văn bản liên tục.  
-- **Thư viện nào được yêu cầu?** GroupDocs.Watermark cho Java (artifact Maven `com.groupdocs:groupdocs-watermark`).  
-- **Có cần giấy phép không?** Bản dùng thử miễn phí hoạt động cho phát triển; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
-- **Có thể bảo vệ các bộ slide lớn không?** Có — GroupDocs.Watermark xử lý các tệp lên tới 500 MB mà không cần tải toàn bộ tài liệu vào bộ nhớ.  
-- **API có tương thích với Java 8+ không?** Chắc chắn, nó chạy trên JDK 8 và các phiên bản mới hơn.
+## Quick Answers
+- **Cách dễ nhất để thêm dấu nước vào bản trình chiếu là gì?** Sử dụng GroupDocs.Watermark cho Java và gọi `watermarker.add()` với một `TextWatermark`.  
+- **Tôi có thể khóa dấu nước để không thể bị xóa không?** Có — đặt `options.setLocked(true)` và bật các ký tự không đọc được.  
+- **Tôi có cần giấy phép đặc biệt không?** Bản dùng thử miễn phí hoạt động cho phát triển; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
+- **Phiên bản Java nào được yêu cầu?** Hỗ trợ Java 8 hoặc mới hơn.  
+- **Điều này có hoạt động với các tệp PPTX và ODP không?** Có, GroupDocs.Watermark hỗ trợ các định dạng bản trình chiếu chính.
 
-## “add watermark java presentation” là gì?
-*Add watermark java presentation* đề cập đến quá trình chèn programmatically một watermark văn bản hoặc hình ảnh vào tệp PowerPoint (`.pptx`) dựa trên Java để bảo vệ nội dung của nó. Bằng cách nhúng các dấu hiệu hiển thị hoặc ẩn, bạn có thể khẳng định quyền sở hữu, thực thi tính bảo mật và ngăn chặn việc phân phối trái phép, đảm bảo người nhận luôn thấy nguồn gốc hoặc trạng thái bảo vệ.
+## Cách Đánh Dấu Nước Bản Trình Chiếu là gì?
+Đánh dấu nước một bản trình chiếu có nghĩa là nhúng văn bản (hoặc hình ảnh) có thể nhìn thấy hoặc ẩn vào mỗi slide sao cho tài liệu mang một dấu hiệu sở hữu rõ ràng. Kỹ thuật này được sử dụng rộng rãi cho các đề xuất doanh nghiệp, bài giảng học thuật và bất kỳ nội dung nào cần bảo vệ khỏi việc lạm dụng.
 
-## Tại sao nên dùng GroupDocs.Watermark cho Java?
-GroupDocs.Watermark hỗ trợ **hơn 30 định dạng tệp** (bao gồm PPTX, PPT, PDF, DOCX và hình ảnh) và có thể áp dụng watermark cho các bản trình bày **không làm mất chất lượng**. Động cơ của nó xử lý các bộ slide hàng trăm trang trong vòng chưa đầy một giây trên phần cứng máy chủ tiêu chuẩn, đồng thời tiêu thụ dưới 150 MB RAM — rất phù hợp cho các công việc batch có lưu lượng cao.
+## Tại sao nên thêm dấu nước bảo mật?
+- **Bảo vệ thương hiệu:** Củng cố nhận diện doanh nghiệp trên mỗi slide.  
+- **Bằng chứng pháp lý:** Chứng tỏ tệp đã được phân phối kèm theo tuyên bố sở hữu rõ ràng.  
+- **Ngăn chặn:** Làm cho người khác nhận thấy khi tài liệu được chia sẻ mà không có sự cho phép.  
+- **Tuân thủ:** Đáp ứng các chính sách bảo mật nội bộ khi xử lý thông tin nhạy cảm.
 
-## Yêu cầu trước
+## Prerequisites
+Trước khi bắt đầu, hãy chắc chắn rằng bạn đã có:
 
-1. **Java Development Kit (JDK) 8 hoặc mới hơn** – cần cho việc biên dịch và chạy.  
-2. **Maven** – quản lý phụ thuộc; bạn cũng có thể dùng Gradle nếu muốn.  
-3. **IDE** – IntelliJ IDEA, Eclipse, hoặc bất kỳ trình chỉnh sửa Java nào tương thích.  
-4. **Kiến thức cơ bản về Java I/O** – để hiểu luồng tệp và xử lý ngoại lệ.
+1. **Thư viện và Phụ thuộc Cần Thiết**
+   - Java Development Kit (JDK) 8 hoặc mới hơn  
+   - Maven để quản lý phụ thuộc  
 
-## Cài đặt GroupDocs.Watermark cho Java
+2. **Cài Đặt Môi Trường**
+   - Một IDE như IntelliJ IDEA hoặc Eclipse  
+   - Kiến thức cơ bản về Java I/O và xử lý ngoại lệ  
 
-### Cài đặt Maven
-Thêm phụ thuộc sau vào `pom.xml` của bạn. Điều này sẽ tải phiên bản ổn định mới nhất của GroupDocs.Watermark.
+3. **Kiến Thức Tiền Đề**
+   - Quen thuộc với các lớp Java và các khái niệm hướng đối tượng  
+
+## Setting Up GroupDocs.Watermark for Java
+
+### Maven Setup
+Thêm kho lưu trữ và phụ thuộc GroupDocs vào tệp `pom.xml` của bạn:
 
 ```xml
 <repositories>
@@ -101,16 +70,16 @@ Thêm phụ thuộc sau vào `pom.xml` của bạn. Điều này sẽ tải phi�
 </dependencies>
 ```
 
-### Tải trực tiếp
-Nếu bạn muốn cài đặt thủ công, tải các JAR từ trang phát hành chính thức: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Direct Download
+Hoặc tải phiên bản mới nhất từ [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Mua giấy phép
-- **Bản dùng thử:** Cho phép gọi API không giới hạn trong 30 ngày.  
-- **Giấy phép tạm thời:** Mở rộng giới hạn dùng thử cho các chu kỳ phát triển dài hơn.  
-- **Giấy phép đầy đủ:** Cần cho triển khai thương mại và loại bỏ mọi hạn chế của bản dùng thử.
+### License Acquisition
+- **Free Trial:** Kiểm tra thư viện mà không cần giấy phép.  
+- **Temporary License:** Sử dụng khóa tạm thời cho việc thử nghiệm phát triển mở rộng.  
+- **Full License:** Cần thiết cho triển khai sản xuất.
 
-### Khởi tạo và thiết lập cơ bản
-Tạo một thể hiện `Watermarker`, đối tượng trung tâm cho mọi thao tác watermark.
+### Basic Initialization and Setup
+Đoạn mã sau cho thấy cách tạo một thể hiện `Watermarker` cho tệp bản trình chiếu:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -123,15 +92,12 @@ public class InitializeWatermarker {
 }
 ```
 
-`Watermarker` là lớp cốt lõi chịu trách nhiệm tải, chỉnh sửa và lưu tài liệu. Đối tượng này sẽ quản lý việc tải, chỉnh sửa và lưu các tệp trình bày của bạn.
+## Implementation Guide
 
-## Hướng dẫn thực hiện
+Dưới đây là hướng dẫn từng bước **cách đánh dấu nước bản trình chiếu**, từ việc tải tài liệu đến lưu kết quả đã bảo vệ.
 
-### Cách thêm watermark java presentation?
-Để thêm watermark vào một bản trình bày Java, đầu tiên tải tệp PowerPoint bằng `PresentationLoadOptions`. Sau đó tạo một `TextWatermark` với văn bản, kiểu dáng và góc quay mong muốn. Áp dụng bảo vệ ký tự không đọc được qua `PresentationWatermarkSlideOptions`, thêm watermark vào các slide mong muốn, và cuối cùng lưu tệp đã chỉnh sửa để lưu lại các thay đổi.
-
-#### Tải tài liệu trình bày
-Đầu tiên, bạn cần mở tệp với các tùy chọn tải phù hợp.
+### Loading a Presentation Document
+Đầu tiên, tải bản trình chiếu bằng `PresentationLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -146,10 +112,10 @@ public class LoadPresentation {
 }
 ```
 
-**Mô tả:** `PresentationLoadOptions` xác định cách GroupDocs.Watermark đọc tệp PowerPoint, cho phép bạn chỉ định mật khẩu bảo vệ, phạm vi slide và các cờ tiết kiệm bộ nhớ.
+*Explanation:* `PresentationLoadOptions` cho phép bạn chỉ định cách tệp sẽ được hiểu trước khi áp dụng bất kỳ dấu nước nào.
 
-#### Tạo Text Watermark
-Tiếp theo, tạo văn bản watermark và định dạng nó sao cho phù hợp với hướng dẫn thương hiệu của bạn.
+### Creating a Text Watermark
+Tiếp theo, tạo nội dung dấu nước văn bản thực tế. Đây là nơi bạn **thêm nội dung dấu nước bảo mật**:
 
 ```java
 import com.groupdocs.watermark.watermarks.Font;
@@ -164,10 +130,10 @@ public class CreateTextWatermark {
 }
 ```
 
-**Mô tả:** `TextWatermark` đại diện cho lớp phủ văn bản có thể được định vị, xoay và tô màu. Nó hỗ trợ Unicode, vì vậy bạn có thể nhúng các thẻ đa ngôn ngữ.
+*Explanation:* Điều chỉnh phông chữ, kích thước và văn bản để phù hợp với hướng dẫn thương hiệu của bạn.
 
-#### Cấu hình tùy chọn Watermark cho ký tự không đọc được
-Để làm cho watermark không thể bị giả mạo, bật bảo vệ ký tự không đọc được.
+### Configuring Watermark Options for Unreadable Characters
+Để **khóa dấu nước** và làm cho nó không đọc được khi bị can thiệp, cấu hình các tùy chọn slide:
 
 ```java
 import com.groupdocs.watermark.options.PresentationWatermarkSlideOptions;
@@ -181,10 +147,10 @@ public class ConfigureWatermarkOptions {
 }
 ```
 
-**Mô tả:** `PresentationWatermarkSlideOptions` cấu hình cách watermark được áp dụng cho từng slide. Nó cho phép bạn khóa watermark, đặt cờ chỉ đọc và bật bảo vệ ký tự không đọc được, khiến văn bản bị xáo trộn khi tài liệu được chỉnh sửa mà không có quyền hợp lệ.
+*Explanation:* Bật `setLocked` và `setProtectWithUnreadableCharacters` thêm một lớp bảo vệ ngăn việc gỡ bỏ dễ dàng.
 
-#### Thêm Watermark vào bản trình bày
-Bây giờ áp dụng watermark vào mọi slide (hoặc một tập con) bằng đối tượng `Watermarker`.
+### Adding Watermark to a Presentation
+Kết hợp việc tải, tạo dấu nước và cấu hình tùy chọn để áp dụng dấu nước:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -207,10 +173,10 @@ public class AddWatermarkToPresentation {
 }
 ```
 
-**Mô tả:** Phương thức `add` của `Watermarker` gắn `TextWatermark` đã cấu hình vào các slide mục tiêu, tuân theo các tùy chọn bạn đã định nghĩa trước đó.
+*Explanation:* Bước này nhúng văn bản **java watermark library** vào mọi slide đồng thời khóa nó.
 
-#### Lưu và đóng tài liệu đã watermark
-Cuối cùng, lưu các thay đổi và giải phóng tài nguyên.
+### Saving and Closing Watermarked Document
+Cuối cùng, lưu các thay đổi và giải phóng tài nguyên:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -226,60 +192,51 @@ public class SaveAndCloseWatermarkedDocument {
 }
 ```
 
-**Mô tả:** Gọi `save` ghi bản trình bày đã chỉnh sửa trở lại đĩa, trong khi `close` giải phóng tài nguyên gốc và ngăn rò rỉ bộ nhớ.
+*Explanation:* Luôn gọi `close()` để giải phóng các handle tệp và tránh rò rỉ bộ nhớ.
 
-## Ứng dụng thực tiễn
+## Practical Applications
+1. **Bảo Vệ Tài Liệu Doanh Nghiệp:** Thêm logo công ty hoặc thẻ “Confidential” vào các đề xuất kinh doanh.  
+2. **Phân Phối Tài Liệu Học Thuật:** Bảo vệ slide giảng dạy khỏi việc chia sẻ trái phép.  
+3. **Quản Lý Sự Kiện:** Bảo mật bộ slide sự kiện bằng dấu nước có thương hiệu.  
+4. **Tài Liệu Pháp Lý:** Đánh dấu các bản trình chiếu pháp lý để xác thực.  
+5. **Chiến Dịch Marketing:** Gắn thương hiệu cho các deck quảng cáo đồng thời ngăn việc lạm dụng.
 
-- **Đề xuất doanh nghiệp:** Nhúng “Confidential – Company XYZ” trên tất cả các slide trước khi gửi cho khách hàng.  
-- **Bài giảng học thuật:** Thêm logo trường và mã khóa học để ngăn việc phân phối trái phép.  
-- **Bản trình bày sự kiện:** Đánh dấu mỗi slide bằng tên và ngày sự kiện để tăng cường thương hiệu.  
-- **Bản tóm tắt pháp lý:** Gắn nhãn các bộ slide pháp lý với mã vụ để duy trì bằng chứng chuỗi lưu giữ.  
-- **Tài sản marketing:** Bảo vệ các bộ slide quảng cáo độ phân giải cao bằng watermark thương hiệu tinh tế, vẫn tồn tại sau khi chuyển sang PDF.
+## Performance Considerations
+- **Tối ưu Hiệu Suất:** Xử lý tệp theo luồng khi làm việc với các bản trình chiếu lớn.  
+- **Hướng Dẫn Sử Dụng Tài Nguyên:** Giám sát dung lượng heap JVM; đóng `Watermarker` kịp thời.  
+- **Quản Lý Bộ Nhớ Java:** Sử dụng try‑with‑resources hoặc gọi `close()` một cách rõ ràng để ngăn rò rỉ.
 
-## Các cân nhắc về hiệu năng
+## Common Issues & Solutions
+| Vấn đề | Giải pháp |
+|-------|----------|
+| **Dấu nước không hiển thị** | Kiểm tra xem các tùy chọn slide đã được đặt (`setLocked(true)`) và phạm vi slide đúng chưa. |
+| **Lỗi OutOfMemoryError trên PPTX lớn** | Tăng heap JVM (`-Xmx2g`) hoặc xử lý tệp thành các lô nhỏ hơn bằng `PresentationLoadOptions`. |
+| **Ngoại lệ giấy phép** | Đảm bảo tải giấy phép dùng thử hợp lệ hoặc giấy phép đầy đủ trước khi tạo `Watermarker`. |
 
-- **Tối ưu hiệu năng:** Tái sử dụng một thể hiện `Watermarker` duy nhất cho xử lý batch; điều này giảm tải JVM.  
-- **Hướng dẫn sử dụng tài nguyên:** Đối với các bản trình bày lớn hơn 200 MB, bật chế độ streaming trong `PresentationLoadOptions` để giữ mức tiêu thụ bộ nhớ dưới 200 MB.  
-- **Quản lý bộ nhớ Java:** Luôn gọi `close()` trong khối `finally` hoặc sử dụng try‑with‑resources để đảm bảo dọn dẹp.
+## Frequently Asked Questions
 
-## Các vấn đề thường gặp và giải pháp
+**Q: Tôi có thể sử dụng GroupDocs.Watermark để thêm dấu nước hình ảnh không?**  
+A: Có, thư viện hỗ trợ cả dấu nước văn bản và hình ảnh; chỉ cần dùng `ImageWatermark` thay cho `TextWatermark`.
 
-| Vấn đề | Nguyên nhân | Giải pháp |
-|-------|-------------|-----------|
-| Watermark không hiển thị | Độ trong suốt mặc định đặt 0% | Điều chỉnh `setOpacity(0.5)` trên `TextWatermark`. |
-| Lỗi out‑of‑memory khi xử lý deck lớn | Toàn bộ tệp được tải vào bộ nhớ | Bật `setLoadMode(LoadMode.STREAM)` trong `PresentationLoadOptions`. |
-| Ký tự không đọc được không được áp dụng | Bỏ qua `setUnreadableCharacters(true)` | Đảm bảo cờ này được đặt trên `PresentationWatermarkSlideOptions`. |
-| Ngoại lệ giấy phép tại thời gian chạy | Sử dụng bản dùng thử sau khi hết hạn | Cập nhật tệp giấy phép hoặc yêu cầu khóa dùng thử mới. |
+**Q: Thư viện có hoạt động với các bản trình chiếu được bảo vệ bằng mật khẩu không?**  
+A: Hoàn toàn—cung cấp mật khẩu trong `PresentationLoadOptions` trước khi tải tệp.
 
-## Câu hỏi thường gặp
+**Q: Có thể tùy chỉnh độ trong suốt của dấu nước không?**  
+A: Có, bạn có thể đặt độ trong suốt trên đối tượng `TextWatermark` bằng `setOpacity(double)`.
 
-**H: Tôi có thể thêm watermark hình ảnh thay vì văn bản không?**  
-Đ: Có — sử dụng lớp `ImageWatermark`, hỗ trợ các định dạng PNG, JPEG và SVG.
+**Q: “Bảo vệ bằng ký tự không đọc được” ảnh hưởng như thế nào đến việc chuyển đổi PDF?**  
+A: Bảo vệ vẫn được nhúng trong bản trình chiếu; khi xuất ra PDF, các ký tự không đọc được vẫn được giữ lại, duy trì khóa.
 
-**H: Thư viện có hoạt động với các tệp PPTX được bảo vệ bằng mật khẩu không?**  
-Đ: Chắc chắn; cung cấp mật khẩu qua `PresentationLoadOptions.setPassword("yourPassword")`.
+**Q: Yêu cầu tối thiểu về phiên bản Java là gì?**  
+A: Java 8 hoặc mới hơn; thư viện tương thích đầy đủ với Java 11, 17 và các bản LTS sau này.
 
-**H: Tôi có thể watermark bao nhiêu slide trong một lần thao tác?**  
-Đ: Không có giới hạn cứng; API stream các slide, vì vậy bạn có thể xử lý các bản trình bày có hàng ngàn slide miễn là kích thước heap JVM được cấu hình phù hợp.
-
-**H: Có thể watermark chỉ một số slide được chọn không?**  
-Đ: Có — chỉ định phạm vi slide trong `PresentationLoadOptions` hoặc truyền danh sách chỉ số slide vào phương thức `add`.
-
-**H: Phiên bản GroupDocs.Watermark nào được kiểm tra với tutorial này?**  
-Đ: Các ví dụ đã được xác minh với GroupDocs.Watermark 23.12 cho Java.
-
-## Kết luận
-
-Bạn đã có một quy trình hoàn chỉnh, sẵn sàng cho môi trường sản xuất để **add watermark java presentation** bằng GroupDocs.Watermark. Bằng cách thực hiện các bước trên, bạn có thể bảo vệ các slide bí mật, củng cố nhận diện thương hiệu và tuân thủ các yêu cầu pháp lý — đồng thời giữ chi phí hiệu năng ở mức tối thiểu. Khám phá thêm API để kết hợp watermark văn bản và hình ảnh, áp dụng dấu thời gian động, hoặc tích hợp vào quy trình quản lý tài liệu hiện có của bạn.
+## Conclusion
+Bạn đã có một hướng dẫn hoàn chỉnh, sẵn sàng cho môi trường sản xuất về **cách đánh dấu nước bản trình chiếu** bằng Java và thư viện GroupDocs.Watermark. Bằng cách thêm dấu nước bảo mật, khóa nó và bảo vệ bằng các ký tự không đọc được, bạn bảo vệ tài sản trí tuệ và củng cố tính nhất quán thương hiệu. Hãy khám phá thêm bằng cách tích hợp các bước này vào các pipeline tài liệu tự động hoặc kết hợp chúng với các API GroupDocs khác để quản lý tài liệu từ đầu đến cuối.
 
 ---
 
-**Cập nhật lần cuối:** 2026-06-21  
-**Kiểm tra với:** GroupDocs.Watermark 23.12 cho Java  
-**Tác giả:** GroupDocs
+**Cập nhật lần cuối:** 2026-01-06  
+**Kiểm tra với:** GroupDocs.Watermark 24.11 for Java  
+**Tác giả:** GroupDocs  
 
-## Các hướng dẫn liên quan
-
-- [Cách Thêm Watermark Văn Bản và Hình Ảnh vào PDF trong Java bằng GroupDocs.Watermark](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermarks/)
-- [Thêm và Khóa Watermark Văn Bản trong Tài Liệu Word bằng Java: Hướng Dẫn Toàn Diện với GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [Cách Thêm Watermark Văn Bản Xoay trong Tài Liệu bằng GroupDocs.Watermark cho Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+---

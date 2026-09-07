@@ -1,86 +1,55 @@
 ---
-date: '2026-06-21'
-description: 了解如何使用 GroupDocs.Watermark for Java 為 Java 簡報加入 watermark，透過套用 text watermarks
-  與 unreadable‑character protection 來保護投影片。
+date: '2026-01-06'
+description: 學習如何使用 Java 為簡報檔案加上浮水印。本指南將示範如何添加機密浮水印、鎖定浮水印，並使用 GroupDocs.Watermark
+  Java 函式庫來保護簡報的安全。
 keywords:
-- add watermark java presentation
-- GroupDocs.Watermark Java
-- presentation security
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  headline: Add Watermark Java Presentation Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  name: Add Watermark Java Presentation Using GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-    text: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-  - name: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-    text: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-  - name: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-    text: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-  type: HowTo
-- questions:
-  - answer: Yes—use the `ImageWatermark` class, which supports PNG, JPEG, and SVG
-      formats.
-    question: Can I add an image watermark instead of text?
-  - answer: Absolutely; provide the password via `PresentationLoadOptions.setPassword("yourPassword")`.
-    question: Does the library work with password‑protected PPTX files?
-  - answer: There is no hard limit; the API streams slides, so you can process presentations
-      with thousands of slides as long as the JVM heap is sized appropriately.
-    question: How many slides can I watermark in one operation?
-  - answer: Yes—specify a slide range in `PresentationLoadOptions` or pass a list
-      of slide indices to the `add` method.
-    question: Is it possible to watermark only selected slides?
-  - answer: The examples were verified with GroupDocs.Watermark 23.12 for Java.
-    question: What version of GroupDocs.Watermark is tested with this tutorial?
-  type: FAQPage
-title: 使用 GroupDocs.Watermark 為 Java 簡報加入 watermark
+- Java Watermarking
+- GroupDocs.Watermark for Java
+- Presentation Security
+title: 如何使用 Java 與 GroupDocs.Watermark 為簡報檔案加上浮水印
 type: docs
 url: /zh-hant/java/getting-started/java-watermarking-groupdocs-watermark-presentation-security/
 weight: 1
 ---
 
-# 在 Java 簡報中加入浮水印（使用 GroupDocs.Watermark）
+# 如何使用 Java 與 GroupDocs.Watermark 為簡報檔案加上浮水印
 
-在當今快速變化的商業環境中，**add watermark java presentation** 是保護機密簡報、培訓資料和市場推廣素材的最佳實踐。GroupDocs.Watermark for Java 讓您可以直接在 PowerPoint 檔案中嵌入隱形或可見的文字浮水印，確保收到檔案的人能立即看到其所有權或機密狀態。本指南將逐步說明從設定函式庫、載入簡報、建立自訂文字浮水印、以不可讀字元保護鎖定，最後儲存受保護檔案的全部流程。
+在當今的數位時代，**如何為簡報加上浮水印** 是所有分享機密投影片、培訓簡報或行銷素材的人關注的重點。加入機密浮水印不僅能表明所有權，還能阻止未經授權的散布。在本教學中，您將學會如何加入 Java 風格的浮水印保護、鎖定浮水印，並利用 GroupDocs.Watermark Java 函式庫快速且可靠地保護您的簡報。
 
 ## 快速解答
-- **主要目的為何？** 透過嵌入持續性的文字浮水印來保護簡報檔案的安全。  
-- **需要哪個函式庫？** GroupDocs.Watermark for Java (Maven artifact `com.groupdocs:groupdocs-watermark`)。  
-- **需要授權嗎？** 開發階段可使用免費試用版；正式上線則需購買正式授權。  
-- **可以保護大型簡報嗎？** 可以 — GroupDocs.Watermark 可處理高達 500 MB 的檔案，且不需將整個文件載入記憶體。  
-- **API 是否相容於 Java 8 以上？** 當然，支援 JDK 8 及更新版本。
+- **什麼是為簡報加入浮水印的最簡單方法？** 使用適用於 Java 的 GroupDocs.Watermark，並呼叫 `watermarker.add()` 並傳入 `TextWatermark`。
+- **我可以鎖定浮水印使其無法被移除嗎？** 可以——設定 `options.setLocked(true)` 並啟用不可讀字元。
+- **我需要特殊授權嗎？** 免費試用可用於開發；正式環境需購買完整授權。
+- **需要哪個版本的 Java？** 支援 Java 8 或更新版本。
+- **這能支援 PPTX 與 ODP 檔案嗎？** 能，GroupDocs.Watermark 支援主要的簡報格式。
 
-## 什麼是「add watermark java presentation」？
-*Add watermark java presentation* 指的是以程式方式在基於 Java 的 PowerPoint（`.pptx`）檔案中插入文字或圖片浮水印的過程，以保護其內容。透過嵌入可見或隱形的標記，您可以宣示所有權、強化機密性，並阻止未授權的散布，確保接收者始終看到來源或保護狀態。
+## 什麼是「如何為簡報加上浮水印」？
+為簡報加上浮水印是指將可見或不可見的文字（或圖像）嵌入每張投影片，使文件帶有明確的所有權標記。此技術廣泛應用於企業提案、學術講座，以及任何需要防止濫用的內容。
 
-## 為何使用 GroupDocs.Watermark for Java？
-GroupDocs.Watermark 支援 **30+ 種檔案格式**（包括 PPTX、PPT、PDF、DOCX 以及影像），且能在簡報上套用 **零品質損失** 的浮水印。其引擎在一般伺服器硬體上可於一秒內處理數百頁的簡報，同時佔用低於 150 MB 的記憶體——非常適合高吞吐量的批次作業。
+## 為何要加入機密浮水印？
+- **品牌保護：** 加強每張投影片的企業形象。  
+- **法律證據：** 顯示該檔案已附帶明確的所有權聲明而被分發。  
+- **威懾作用：** 明確顯示文件在未經授權的情況下被分享。  
+- **合規性：** 符合內部處理敏感資訊的安全政策。
 
 ## 前置條件
+在開始之前，請確保您已具備以下項目：
 
-1. **Java Development Kit (JDK) 8 或更新版本** – 需要用於編譯與執行。  
-2. **Maven** – 處理相依性解析；若需要亦可使用 Gradle。  
-3. **IDE** – IntelliJ IDEA、Eclipse 或任何相容 Java 的編輯器。  
-4. **Basic Java I/O knowledge** – 了解檔案串流與例外處理。
+1. **必要的函式庫與相依性**
+   - Java Development Kit (JDK) 8 或更新版本  
+   - 用於相依性管理的 Maven  
 
-## 設定 GroupDocs.Watermark for Java
+2. **環境設定**
+   - 如 IntelliJ IDEA 或 Eclipse 等 IDE  
+   - 基本的 Java I/O 與例外處理知識  
+
+3. **知識前提**
+   - 熟悉 Java 類別與物件導向概念  
+
+## 為 Java 設定 GroupDocs.Watermark
 
 ### Maven 設定
-在 `pom.xml` 中加入以下相依性，即可取得最新穩定版的 GroupDocs.Watermark。
+將 GroupDocs 儲存庫與相依性加入您的 `pom.xml` 檔案：
 
 ```xml
 <repositories>
@@ -101,15 +70,15 @@ GroupDocs.Watermark 支援 **30+ 種檔案格式**（包括 PPTX、PPT、PDF、D
 ```
 
 ### 直接下載
-如果您偏好手動安裝，請從官方發行頁面取得 JAR 檔案： [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)。
+或者，從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載最新版本。
 
 ### 取得授權
-- **Free Trial:** 允許在 30 天內無限制呼叫 API。  
-- **Temporary License:** 延長試用限制，以支援較長的開發週期。  
-- **Full License:** 商業部署所必需，且會移除所有試用限制。
+- **免費試用：** 在未取得授權的情況下測試函式庫。  
+- **臨時授權：** 使用臨時金鑰以進行更長時間的開發測試。  
+- **完整授權：** 生產環境部署時必須取得。
 
 ### 基本初始化與設定
-建立 `Watermarker` 實例，作為所有浮水印操作的核心物件。
+以下程式碼片段示範如何為簡報檔案建立 `Watermarker` 實例：
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -122,15 +91,12 @@ public class InitializeWatermarker {
 }
 ```
 
-`Watermarker` 為載入、編輯與儲存文件的核心類別。此物件將負責管理簡報檔案的載入、編輯與儲存。
-
 ## 實作指南
 
-### 如何加入 add watermark java presentation？
-要在 Java 簡報中加入浮水印，首先使用 `PresentationLoadOptions` 載入 PowerPoint 檔案。接著建立帶有所需文字、樣式與旋轉角度的 `TextWatermark`。透過 `PresentationWatermarkSlideOptions` 套用不可讀字元保護，將浮水印加入目標投影片，最後儲存修改後的檔案以保留變更。
+以下是 **如何為簡報加上浮水印** 檔案的逐步說明，從載入文件到儲存受保護的輸出。
 
-#### 載入簡報文件
-首先，您需要使用適當的載入選項開啟檔案。
+### 載入簡報文件
+首先，使用 `PresentationLoadOptions` 載入簡報：
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -145,10 +111,10 @@ public class LoadPresentation {
 }
 ```
 
-**定義說明：** `PresentationLoadOptions` 定義 GroupDocs.Watermark 讀取 PowerPoint 檔案的方式，讓您可指定密碼保護、投影片範圍以及節省記憶體的旗標。
+*說明：* `PresentationLoadOptions` 讓您在套用任何浮水印前指定檔案的解析方式。
 
-#### 建立文字浮水印
-接著，編寫浮水印文字並依照品牌指南設定樣式。
+### 建立文字浮水印
+接著，建立實際的浮水印文字。這裡是您 **加入機密浮水印** 內容的地方：
 
 ```java
 import com.groupdocs.watermark.watermarks.Font;
@@ -163,10 +129,10 @@ public class CreateTextWatermark {
 }
 ```
 
-**定義說明：** `TextWatermark` 代表可定位、旋轉與著色的文字覆蓋層。它支援 Unicode，因而能嵌入多語言標籤。
+*說明：* 調整字型、大小與文字，以符合您的品牌指引。
 
-#### 設定不可讀字元的浮水印選項
-為了讓浮水印防篡改，請啟用不可讀字元保護。
+### 設定浮水印選項以使用不可讀字元
+若要 **鎖定浮水印** 並在被竄改時使其變成不可讀，請設定投影片選項：
 
 ```java
 import com.groupdocs.watermark.options.PresentationWatermarkSlideOptions;
@@ -180,10 +146,10 @@ public class ConfigureWatermarkOptions {
 }
 ```
 
-**定義說明：** `PresentationWatermarkSlideOptions` 設定浮水印在單一投影片上的套用方式。它允許您鎖定浮水印、設定唯讀旗標，並啟用不可讀字元保護，使文件在未授權編輯時文字被亂碼化。
+*說明：* 啟用 `setLocked` 與 `setProtectWithUnreadableCharacters` 可增加一層保護，防止輕易移除。
 
-#### 將浮水印加入簡報
-現在使用 `Watermarker` 物件將浮水印套用至每張投影片（或指定的子集）。
+### 為簡報加入浮水印
+結合載入、浮水印建立與選項設定，即可套用浮水印：
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -206,10 +172,10 @@ public class AddWatermarkToPresentation {
 }
 ```
 
-**定義說明：** `Watermarker` 的 `add` 方法會將已設定好的 `TextWatermark` 附加至目標投影片，並遵循先前定義的選項。
+*說明：* 此步驟將 **java watermark library** 文字嵌入每張投影片，同時將其鎖定。
 
-#### 儲存與關閉已加浮水印的文件
-最後，將變更寫入檔案並釋放資源。
+### 儲存並關閉已加浮水印的文件
+最後，將變更寫入檔案並清理資源：
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -225,60 +191,50 @@ public class SaveAndCloseWatermarkedDocument {
 }
 ```
 
-**定義說明：** 呼叫 `save` 會將修改後的簡報寫回磁碟，`close` 則釋放原生資源以防止記憶體洩漏。
+*說明：* 必須呼叫 `close()` 以釋放檔案句柄，避免記憶體洩漏。
 
 ## 實務應用
-
-- **Corporate Proposals:** 在所有投影片中嵌入「Confidential – Company XYZ」字樣，於寄送給客戶前使用。  
-- **Academic Lectures:** 加入大學標誌與課程代碼，以防止未授權的再散布。  
-- **Event Presentations:** 為每張投影片加上活動名稱與日期的浮水印，以加強品牌形象。  
-- **Legal Briefs:** 為法律簡報標註案件識別碼，維持證據的保存鏈。  
-- **Marketing Assets:** 以細緻的品牌浮水印保護高解析度的推廣簡報，且在轉為 PDF 時仍能保留。
+1. **企業文件保護：** 為商業提案加入公司標誌或「機密」標籤。  
+2. **學術資料發佈：** 防止講義投影片被未授權分享。  
+3. **活動管理：** 使用品牌浮水印保護活動簡報。  
+4. **法律文件：** 為法律簡報加上浮水印以確保真實性。  
+5. **行銷活動：** 為推廣簡報加上品牌標記，同時防止濫用。
 
 ## 效能考量
-
-- **Optimizing Performance:** 在批次處理時重複使用單一 `Watermarker` 實例，可降低 JVM 開銷。  
-- **Resource Usage Guidelines:** 對於超過 200 MB 的簡報，請在 `PresentationLoadOptions` 中啟用串流模式，以將記憶體使用量維持在 200 MB 以下。  
-- **Java Memory Management:** 必須在 `finally` 區塊中呼叫 `close()`，或使用 try‑with‑resources 以確保資源釋放。
+- **效能最佳化：** 處理大型簡報時以串流方式處理檔案。  
+- **資源使用指引：** 監控 JVM 堆積空間；盡快關閉 `Watermarker`。  
+- **Java 記憶體管理：** 使用 try‑with‑resources 或明確的 `close()` 呼叫以防止記憶體洩漏。
 
 ## 常見問題與解決方案
 
-| 問題 | 原因 | 解決方案 |
-|-------|-------|----------|
-| 浮水印未顯示 | 預設不透明度設定為 0% | 在 `TextWatermark` 上調整 `setOpacity(0.5)`。 |
-| 大型簡報發生記憶體不足錯誤 | 整個檔案被載入記憶體 | 在 `PresentationLoadOptions` 中啟用 `setLoadMode(LoadMode.STREAM)`。 |
-| 未套用不可讀字元 | 未設定 `setUnreadableCharacters(true)` | 確保在 `PresentationWatermarkSlideOptions` 上設定此旗標。 |
-| 執行時授權例外 | 試用版已過期仍在使用 | 更新授權檔案或申請新的試用金鑰。 |
+| 問題 | 解決方案 |
+|-------|----------|
+| **浮水印未顯示** | 確認已設定投影片選項 (`setLocked(true)`) 且使用了正確的投影片範圍。 |
+| **大型 PPTX 發生 OutOfMemoryError** | 增加 JVM 堆積大小 (`-Xmx2g`) 或使用 `PresentationLoadOptions` 將檔案分成較小批次處理。 |
+| **授權例外** | 在建立 `Watermarker` 前，確保已載入有效的試用或完整授權。 |
 
 ## 常見問答
 
-**Q: 我可以使用圖片浮水印而非文字嗎？**  
-A: 可以 — 使用 `ImageWatermark` 類別，支援 PNG、JPEG 與 SVG 格式。
+**Q: 我可以使用 GroupDocs.Watermark 也加入影像浮水印嗎？**  
+A: 可以，函式庫同時支援文字與影像浮水印；只需使用 `ImageWatermark` 取代 `TextWatermark`。
 
-**Q: 此函式庫能處理受密碼保護的 PPTX 檔案嗎？**  
-A: 當然可以；透過 `PresentationLoadOptions.setPassword("yourPassword")` 提供密碼。
+**Q: 此函式庫能處理受密碼保護的簡報嗎？**  
+A: 完全可以——在載入檔案前於 `PresentationLoadOptions` 提供密碼。
 
-**Q: 一次操作能為多少張投影片加浮水印？**  
-A: 沒有硬性上限；API 會串流投影片，只要 JVM 堆積大小足夠，即可處理上千張投影片的簡報。
+**Q: 可以自訂浮水印的不透明度嗎？**  
+A: 可以，透過 `setOpacity(double)` 在 `TextWatermark` 物件上設定不透明度。
 
-**Q: 能只為特定投影片加浮水印嗎？**  
-A: 可以 — 在 `PresentationLoadOptions` 中指定投影片範圍，或將投影片索引清單傳給 `add` 方法。
+**Q: 「以不可讀字元保護」對 PDF 轉換有何影響？**  
+A: 保護會嵌入於簡報中；匯出為 PDF 時，不可讀字元仍會保留，維持鎖定效果。
 
-**Q: 本教學測試使用的 GroupDocs.Watermark 版本為何？**  
-A: 範例已在 GroupDocs.Watermark 23.12 for Java 上驗證。
+**Q: 最低需要哪個版本的 Java？**  
+A: Java 8 或更新版本；函式庫完全相容於 Java 11、17 以及之後的 LTS 版本。
 
 ## 結論
-
-您現在已掌握使用 GroupDocs.Watermark 進行 **add watermark java presentation** 的完整、可投入生產的工作流程。依循上述步驟，即可保護機密投影片、強化品牌形象，並符合法律規範，同時將效能開銷維持在最低。進一步探索 API，可結合文字與圖片浮水印、套用動態時間戳記，或整合至現有的文件管理流程中。
+您現在已擁有一套完整、可投入生產的 **如何為簡報加上浮水印** 指南，使用 Java 與 GroupDocs.Watermark 函式庫。透過加入機密浮水印、將其鎖定並以不可讀字元保護，您能保障智慧財產權並強化品牌完整性。可進一步將這些步驟整合至自動化文件流程，或與其他 GroupDocs API 結合，實現端到端的文件管理。
 
 ---
 
-**最後更新：** 2026-06-21  
-**測試環境：** GroupDocs.Watermark 23.12 for Java  
-**作者：** GroupDocs
-
-## 相關教學
-
-- [如何在 Java 中使用 GroupDocs.Watermark 為 PDF 加入文字與圖片浮水印](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermarks/)
-- [在 Java 中為 Word 文件加入並鎖定文字浮水印：GroupDocs.Watermark 完整指南](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [如何在文件中使用 GroupDocs.Watermark for Java 加入旋轉文字浮水印](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+**最後更新:** 2026-01-06  
+**測試環境:** GroupDocs.Watermark 24.11 for Java  
+**作者:** GroupDocs

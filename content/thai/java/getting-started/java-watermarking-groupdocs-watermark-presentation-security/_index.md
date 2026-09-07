@@ -1,86 +1,55 @@
 ---
-date: '2026-06-21'
-description: เรียนรู้วิธีการเพิ่ม watermark ให้การนำเสนอ Java ด้วย GroupDocs.Watermark
-  สำหรับ Java, ปกป้องสไลด์โดยการใช้ text watermarks และ unreadable‑character protection.
+date: '2026-01-06'
+description: เรียนรู้วิธีใส่ลายน้ำในไฟล์งานนำเสนอด้วย Java คู่มือนี้จะแสดงวิธีเพิ่มลายน้ำความลับ,
+  ลายน้ำล็อก, และใช้ไลบรารี GroupDocs.Watermark สำหรับ Java เพื่อการนำเสนอที่ปลอดภัย
 keywords:
-- add watermark java presentation
-- GroupDocs.Watermark Java
-- presentation security
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  headline: Add Watermark Java Presentation Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  name: Add Watermark Java Presentation Using GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-    text: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-  - name: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-    text: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-  - name: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-    text: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-  type: HowTo
-- questions:
-  - answer: Yes—use the `ImageWatermark` class, which supports PNG, JPEG, and SVG
-      formats.
-    question: Can I add an image watermark instead of text?
-  - answer: Absolutely; provide the password via `PresentationLoadOptions.setPassword("yourPassword")`.
-    question: Does the library work with password‑protected PPTX files?
-  - answer: There is no hard limit; the API streams slides, so you can process presentations
-      with thousands of slides as long as the JVM heap is sized appropriately.
-    question: How many slides can I watermark in one operation?
-  - answer: Yes—specify a slide range in `PresentationLoadOptions` or pass a list
-      of slide indices to the `add` method.
-    question: Is it possible to watermark only selected slides?
-  - answer: The examples were verified with GroupDocs.Watermark 23.12 for Java.
-    question: What version of GroupDocs.Watermark is tested with this tutorial?
-  type: FAQPage
-title: เพิ่ม Watermark ให้การนำเสนอ Java ด้วย GroupDocs.Watermark
+- Java Watermarking
+- GroupDocs.Watermark for Java
+- Presentation Security
+title: วิธีใส่ลายน้ำไฟล์งานนำเสนอด้วย Java และ GroupDocs.Watermark
 type: docs
 url: /th/java/getting-started/java-watermarking-groupdocs-watermark-presentation-security/
 weight: 1
 ---
 
-# เพิ่มลายน้ำในงานนำเสนอ Java ด้วย GroupDocs.Watermark
+# วิธีใส่ลายน้ำไฟล์พรีเซนเทชันด้วย Java และ GroupDocs.Watermark
 
-ในสภาพแวดล้อมธุรกิจที่เคลื่อนที่อย่างรวดเร็วในวันนี้, **add watermark java presentation** เป็นแนวปฏิบัติที่ดีที่สุดสำหรับการปกป้องชุดสไลด์ที่เป็นความลับ, เอกสารการฝึกอบรม, และสื่อการตลาด. GroupDocs.Watermark สำหรับ Java ช่วยให้คุณฝังลายน้ำข้อความที่มองเห็นหรือไม่มองเห็นโดยตรงลงในไฟล์ PowerPoint, ทำให้ผู้ที่ได้รับไฟล์สามารถเห็นความเป็นเจ้าของหรือสถานะความลับได้ทันที. คู่มือนี้จะพาคุณผ่านทุกขั้นตอน—ตั้งแต่การตั้งค่าห้องสมุดจนถึงการโหลดงานนำเสนอ, การสร้างลายน้ำข้อความแบบกำหนดเอง, การล็อกด้วยการป้องกันอักขระที่อ่านไม่ได้, และสุดท้ายการบันทึกไฟล์ที่ได้รับการปกป้อง.
+ในยุคดิจิทัลวันนี้ **วิธีใส่ลายน้ำไฟล์พรีเซนเทชัน** เป็นเรื่องที่หลายคนกังวลเมื่อแชร์สไลด์ที่เป็นความลับ, ชุดการฝึกอบรม, หรือวัสดุการตลาด การเพิ่มลายน้ำความลับไม่เพียงแค่บ่งบอกความเป็นเจ้าของเท่านั้น แต่ยังช่วยป้องกันการกระจายโดยไม่ได้รับอนุญาต ในบทแนะนำนี้คุณจะได้เรียนรู้วิธีเพิ่มการป้องกันแบบลายน้ำด้วย Java, ล็อกลายน้ำ, และใช้ไลบรารี GroupDocs.Watermark สำหรับ Java เพื่อรักษาความปลอดภัยของพรีเซนเทชันของคุณอย่างรวดเร็วและเชื่อถือได้
 
-## คำตอบด่วน
-- **วัตถุประสงค์หลักคืออะไร?** ปกป้องไฟล์งานนำเสนอโดยฝังลายน้ำข้อความที่คงอยู่.  
-- **ต้องใช้ไลบรารีใด?** GroupDocs.Watermark for Java (Maven artifact `com.groupdocs:groupdocs-watermark`).  
-- **ฉันต้องการไลเซนส์หรือไม่?** การทดลองใช้งานฟรีทำงานได้สำหรับการพัฒนา; จำเป็นต้องมีไลเซนส์เต็มสำหรับการใช้งานจริง.  
-- **ฉันสามารถปกป้องชุดสไลด์ขนาดใหญ่ได้หรือไม่?** ได้—GroupDocs.Watermark ประมวลผลไฟล์ได้ถึง 500 MB โดยไม่ต้องโหลดเอกสารทั้งหมดเข้าสู่หน่วยความจำ.  
-- **API รองรับ Java 8+ หรือไม่?** แน่นอน, มันทำงานบน JDK 8 และเวอร์ชันที่ใหม่กว่า.
+## คำตอบสั้น ๆ
+- **วิธีที่ง่ายที่สุดในการใส่ลายน้ำลงในพรีเซนเทชันคืออะไร?** ใช้ GroupDocs.Watermark สำหรับ Java และเรียก `watermarker.add()` พร้อมกับ `TextWatermark`  
+- **ฉันสามารถล็อกลายน้ำเพื่อไม่ให้ถูกลบได้หรือไม่?** ได้ — ตั้งค่า `options.setLocked(true)` และเปิดใช้งานอักขระที่อ่านไม่ออก  
+- **ต้องมีลิขสิทธิ์พิเศษหรือไม่?** เวอร์ชันทดลองฟรีใช้ได้สำหรับการพัฒนา; ต้องมีลิขสิทธิ์เต็มสำหรับการใช้งานจริง  
+- **ต้องใช้ Java เวอร์ชันใด?** รองรับ Java 8 หรือใหม่กว่า  
+- **วิธีนี้ทำงานกับไฟล์ PPTX และ ODP หรือไม่?** ใช่, GroupDocs.Watermark รองรับรูปแบบพรีเซนเทชันหลักทั้งหมด  
 
-## “add watermark java presentation” คืออะไร?
-*Add watermark java presentation* หมายถึงกระบวนการแทรกลายน้ำข้อความหรือภาพลงในไฟล์ PowerPoint (`.pptx`) ที่เขียนด้วย Java อย่างอัตโนมัติเพื่อปกป้องเนื้อหา. โดยการฝังเครื่องหมายที่มองเห็นหรือไม่มองเห็น, คุณสามารถยืนยันความเป็นเจ้าของ, บังคับใช้ความลับ, และป้องกันการกระจายที่ไม่ได้รับอนุญาต, ทำให้ผู้รับมักเห็นแหล่งที่มาหรือสถานะการปกป้องเสมอ.
+## “วิธีใส่ลายน้ำไฟล์พรีเซนเทชัน” คืออะไร?
+การใส่ลายน้ำในพรีเซนเทชันหมายถึงการฝังข้อความ (หรือรูปภาพ) ที่มองเห็นหรือไม่มองเห็นลงในแต่ละสไลด์ เพื่อให้เอกสารมีเครื่องหมายแสดงความเป็นเจ้าของที่ชัดเจน เทคนิคนี้ใช้กันอย่างแพร่หลายสำหรับข้อเสนอทางธุรกิจ, การบรรยายทางวิชาการ, และเนื้อหาใด ๆ ที่ต้องการการปกป้องจากการใช้งานโดยไม่ได้รับอนุญาต  
 
-## ทำไมต้องใช้ GroupDocs.Watermark สำหรับ Java?
-GroupDocs.Watermark รองรับ **30+ รูปแบบไฟล์** (รวมถึง PPTX, PPT, PDF, DOCX, และรูปภาพ) และสามารถใส่ลายน้ำลงในงานนำเสนอโดย **ไม่มีการสูญเสียคุณภาพ**. เครื่องยนต์ของมันประมวลผลชุดสไลด์หลายร้อยหน้าในเวลาไม่ถึงหนึ่งวินาทีบนฮาร์ดแวร์เซิร์ฟเวอร์ทั่วไป, โดยใช้หน่วยความจำน้อยกว่า 150 MB—ทำให้เหมาะสำหรับงานแบตช์ที่ต้องการประสิทธิภาพสูง.
+## ทำไมต้องเพิ่มลายน้ำความลับ?
+- **การปกป้องแบรนด์:** เสริมสร้างอัตลักษณ์ขององค์กรในทุกสไลด์  
+- **หลักฐานทางกฎหมาย:** แสดงว่าไฟล์ถูกแจกจ่ายพร้อมคำชี้แจงความเป็นเจ้าของที่ชัดเจน  
+- **การขัดขวาง:** ทำให้เห็นได้ชัดเมื่อเอกสารถูกแชร์โดยไม่ได้รับอนุญาต  
+- **การปฏิบัติตาม:** ตรงตามนโยบายความปลอดภัยภายในสำหรับการจัดการข้อมูลที่ละเอียดอ่อน  
 
 ## ข้อกำหนดเบื้องต้น
+ก่อนเริ่มทำงาน, ตรวจสอบว่าคุณมีสิ่งต่อไปนี้แล้ว:
 
-1. **Java Development Kit (JDK) 8 หรือใหม่กว่า** – จำเป็นสำหรับการคอมไพล์และรันไทม์.  
-2. **Maven** – จัดการการแก้ไขการพึ่งพา; คุณสามารถใช้ Gradle ได้หากต้องการ.  
-3. **IDE** – IntelliJ IDEA, Eclipse หรือเครื่องมือแก้ไขที่รองรับ Java ใด ๆ.  
-4. **ความรู้พื้นฐานเกี่ยวกับ Java I/O** – เพื่อเข้าใจสตรีมไฟล์และการจัดการข้อยกเว้น.
+1. **ไลบรารีและการพึ่งพาที่จำเป็น**
+   - Java Development Kit (JDK) 8 หรือใหม่กว่า  
+   - Maven สำหรับการจัดการการพึ่งพา  
+
+2. **การตั้งค่าสภาพแวดล้อม**
+   - IDE เช่น IntelliJ IDEA หรือ Eclipse  
+   - ความรู้พื้นฐานเกี่ยวกับ Java I/O และการจัดการข้อยกเว้น  
+
+3. **ความรู้พื้นฐานที่ต้องมี**
+   - ความคุ้นเคยกับคลาสของ Java และแนวคิดเชิงวัตถุ  
 
 ## การตั้งค่า GroupDocs.Watermark สำหรับ Java
 
 ### การตั้งค่า Maven
-เพิ่มการพึ่งพาต่อไปนี้ในไฟล์ `pom.xml` ของคุณ. นี้จะดึงเวอร์ชันเสถียรล่าสุดของ GroupDocs.Watermark.
+เพิ่มรีโพซิทอรีและการพึ่งพาของ GroupDocs ลงในไฟล์ `pom.xml` ของคุณ:
 
 ```xml
 <repositories>
@@ -101,15 +70,15 @@ GroupDocs.Watermark รองรับ **30+ รูปแบบไฟล์** (�
 ```
 
 ### ดาวน์โหลดโดยตรง
-หากคุณต้องการติดตั้งด้วยตนเอง, ดาวน์โหลดไฟล์ JAR จากหน้าปล่อยอย่างเป็นทางการ: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+หรือคุณสามารถดาวน์โหลดเวอร์ชันล่าสุดจาก [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)  
 
-### การรับไลเซนส์
-- **Free Trial:** อนุญาตให้เรียก API ไม่จำกัดเป็นเวลา 30 วัน.  
-- **Temporary License:** ขยายขีดจำกัดการทดลองสำหรับรอบการพัฒนาที่ยาวนานขึ้น.  
-- **Full License:** จำเป็นสำหรับการใช้งานเชิงพาณิชย์และลบข้อจำกัดการทดลองทั้งหมด.
+### การรับลิขสิทธิ์
+- **ทดลองฟรี:** ทดสอบไลบรารีโดยไม่ต้องใช้ลิขสิทธิ์  
+- **ลิขสิทธิ์ชั่วคราว:** ใช้คีย์ชั่วคราวสำหรับการทดสอบการพัฒนาที่ต่อเนื่อง  
+- **ลิขสิทธิ์เต็ม:** จำเป็นสำหรับการใช้งานในสภาพแวดล้อมการผลิต  
 
 ### การเริ่มต้นและตั้งค่าเบื้องต้น
-สร้างอินสแตนซ์ `Watermarker`, ซึ่งทำหน้าที่เป็นอ็อบเจกต์ศูนย์กลางสำหรับการดำเนินการลายน้ำทั้งหมด.
+โค้ดตัวอย่างต่อไปนี้แสดงวิธีสร้างอินสแตนซ์ `Watermarker` สำหรับไฟล์พรีเซนเทชัน:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -122,15 +91,12 @@ public class InitializeWatermarker {
 }
 ```
 
-`Watermarker` เป็นคลาสหลักที่โหลด, แก้ไข, และบันทึกเอกสาร. อ็อบเจกต์นี้จะจัดการการโหลด, การแก้ไข, และการบันทึกไฟล์งานนำเสนอของคุณ.
+## คู่มือการดำเนินการ
 
-## คู่มือการใช้งาน
+ด้านล่างเป็นขั้นตอนแบบละเอียดของ **วิธีใส่ลายน้ำไฟล์พรีเซนเทชัน**, ตั้งแต่การโหลดเอกสารจนถึงการบันทึกผลลัพธ์ที่ได้รับการปกป้อง  
 
-### วิธีเพิ่มลายน้ำในงานนำเสนอ Java?
-เพื่อเพิ่มลายน้ำในงานนำเสนอ Java, ก่อนอื่นให้โหลดไฟล์ PowerPoint ด้วย `PresentationLoadOptions`. จากนั้นสร้าง `TextWatermark` ด้วยข้อความ, สไตล์, และการหมุนที่ต้องการ. ใช้การป้องกันอักขระที่อ่านไม่ได้ผ่าน `PresentationWatermarkSlideOptions`, เพิ่มลายน้ำลงในสไลด์ที่ต้องการ, และสุดท้ายบันทึกไฟล์ที่แก้ไขเพื่อบันทึกการเปลี่ยนแปลง.
-
-#### การโหลดเอกสารงานนำเสนอ
-แรก, คุณต้องเปิดไฟล์ด้วยตัวเลือกการโหลดที่เหมาะสม.
+### การโหลดเอกสารพรีเซนเทชัน
+แรกเริ่ม, โหลดพรีเซนเทชันด้วย `PresentationLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -145,10 +111,10 @@ public class LoadPresentation {
 }
 ```
 
-**Definition anchor:** `PresentationLoadOptions` กำหนดวิธีที่ GroupDocs.Watermark อ่านไฟล์ PowerPoint, ให้คุณระบุการป้องกันด้วยรหัสผ่าน, ช่วงสไลด์, และแฟล็กการประหยัดหน่วยความจำ.
+*คำอธิบาย:* `PresentationLoadOptions` ให้คุณกำหนดวิธีที่ไฟล์จะถูกตีความก่อนที่ลายน้ำใด ๆ จะถูกนำไปใช้  
 
-#### การสร้างลายน้ำข้อความ
-ต่อไป, สร้างข้อความลายน้ำและกำหนดสไตล์ให้ตรงกับแนวทางการสร้างแบรนด์ของคุณ.
+### การสร้างลายน้ำข้อความ
+ต่อไป, สร้างข้อความลายน้ำจริง ๆ นี่คือจุดที่คุณ **เพิ่มเนื้อหาลายน้ำความลับ**:
 
 ```java
 import com.groupdocs.watermark.watermarks.Font;
@@ -163,10 +129,10 @@ public class CreateTextWatermark {
 }
 ```
 
-**Definition anchor:** `TextWatermark` แสดงการซ้อนทับข้อความที่สามารถกำหนดตำแหน่ง, หมุน, และเปลี่ยนสีได้. รองรับ Unicode, ดังนั้นคุณสามารถฝังแท็กหลายภาษาได้.
+*คำอธิบาย:* ปรับแบบอักษร, ขนาด, และข้อความให้สอดคล้องกับแนวทางแบรนด์ของคุณ  
 
-#### การกำหนดค่าตัวเลือกลายน้ำสำหรับอักขระที่อ่านไม่ได้
-เพื่อทำให้ลายน้ำปลอดการดัดแปลง, เปิดการป้องกันอักขระที่อ่านไม่ได้.
+### การกำหนดค่าตัวเลือกลายน้ำสำหรับอักขระที่อ่านไม่ออก
+เพื่อ **วิธีล็อกลายน้ำ** และทำให้ไม่สามารถอ่านได้เมื่อมีการดัดแปลง, กำหนดค่าตัวเลือกสไลด์:
 
 ```java
 import com.groupdocs.watermark.options.PresentationWatermarkSlideOptions;
@@ -180,10 +146,10 @@ public class ConfigureWatermarkOptions {
 }
 ```
 
-**Definition anchor:** `PresentationWatermarkSlideOptions` กำหนดวิธีการใส่ลายน้ำลงในสไลด์แต่ละอัน. มันให้คุณล็อกลายน้ำ, ตั้งค่าแฟล็กอ่านอย่างเดียว, และเปิดการป้องกันอักขระที่อ่านไม่ได้ซึ่งจะทำให้ข้อความสับเปลี่ยนเมื่อเอกสารถูกแก้ไขโดยไม่ได้รับอนุญาตที่เหมาะสม.
+*คำอธิบาย:* การเปิดใช้งาน `setLocked` และ `setProtectWithUnreadableCharacters` จะเพิ่มชั้นการป้องกันที่ทำให้การลบลายน้ำทำได้ยาก  
 
-#### การเพิ่มลายน้ำลงในงานนำเสนอ
-ตอนนี้ให้ใช้วัตถุ `Watermarker` เพื่อใส่ลายน้ำลงในทุกสไลด์ (หรือบางส่วน).
+### การเพิ่มลายน้ำลงในพรีเซนเทชัน
+รวมการโหลด, การสร้างลายน้ำ, และการกำหนดค่าตัวเลือกเพื่อใช้ลายน้ำ:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -206,10 +172,10 @@ public class AddWatermarkToPresentation {
 }
 ```
 
-**Definition anchor:** เมธอด `add` ของ `Watermarker` จะแนบ `TextWatermark` ที่กำหนดไว้กับสไลด์เป้าหมาย, โดยคำนึงถึงตัวเลือกที่คุณกำหนดไว้ก่อนหน้า.
+*คำอธิบาย:* ขั้นตอนนี้ฝังข้อความจาก **java watermark library** ลงในทุกสไลด์พร้อมกับการล็อก  
 
-#### การบันทึกและปิดเอกสารที่มีลายน้ำ
-สุดท้าย, บันทึกการเปลี่ยนแปลงและปล่อยทรัพยากร.
+### การบันทึกและปิดเอกสารที่มีลายน้ำ
+สุดท้าย, บันทึกการเปลี่ยนแปลงและทำความสะอาดทรัพยากร:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -225,60 +191,51 @@ public class SaveAndCloseWatermarkedDocument {
 }
 ```
 
-**Definition anchor:** การเรียก `save` จะเขียนงานนำเสนอที่แก้ไขแล้วกลับไปยังดิสก์, ส่วน `close` จะปล่อยทรัพยากรเนทีฟและป้องกันการรั่วของหน่วยความจำ.
+*คำอธิบาย:* อย่าลืมเรียก `close()` เพื่อปล่อยตัวจัดการไฟล์และป้องกันการรั่วไหลของหน่วยความจำ  
 
 ## การประยุกต์ใช้งานจริง
+1. **การปกป้องเอกสารองค์กร:** เพิ่มโลโก้บริษัทหรือแท็ก “Confidential” ลงในข้อเสนอทางธุรกิจ  
+2. **การแจกจ่ายวัสดุการศึกษา:** ปกป้องสไลด์การบรรยายจากการแชร์โดยไม่ได้รับอนุญาต  
+3. **การจัดการอีเวนต์:** ปกป้องชุดสไลด์อีเวนต์ด้วยลายน้ำที่มีแบรนด์  
+4. **เอกสารทางกฎหมาย:** ทำเครื่องหมายพรีเซนเทชันทางกฎหมายด้วยลายน้ำเพื่อยืนยันความเป็นของจริง  
+5. **แคมเปญการตลาด:** ทำแบรนด์เด็คโปรโมชั่นพร้อมป้องกันการนำไปใช้โดยไม่ได้รับอนุญาต  
 
-- **Corporate Proposals:** ฝัง “Confidential – Company XYZ” ทั่วทุกสไลด์ก่อนส่งให้ลูกค้า.  
-- **Academic Lectures:** เพิ่มโลโก้มหาวิทยาลัยและรหัสหลักสูตรเพื่อป้องกันการกระจายที่ไม่ได้รับอนุญาต.  
-- **Event Presentations:** ใส่ลายน้ำในแต่ละสไลด์ด้วยชื่อเหตุการณ์และวันที่เพื่อเสริมสร้างแบรนด์.  
-- **Legal Briefs:** แท็กชุดสไลด์ทางกฎหมายด้วยตัวระบุคดีเพื่อรักษาหลักฐานการเป็นเจ้าของ.  
-- **Marketing Assets:** ปกป้องชุดสไลด์โปรโมชั่นความละเอียดสูงด้วยลายน้ำแบรนด์ที่ละเอียดอ่อนซึ่งยังคงอยู่หลังการแปลงเป็น PDF.
+## การพิจารณาประสิทธิภาพ
+- **การเพิ่มประสิทธิภาพ:** ประมวลผลไฟล์เป็นสตรีมเมื่อจัดการกับพรีเซนเทชันขนาดใหญ่  
+- **แนวทางการใช้ทรัพยากร:** ตรวจสอบพื้นที่ heap ของ JVM; ปิด `Watermarker` อย่างทันท่วงที  
+- **การจัดการหน่วยความจำของ Java:** ใช้ try‑with‑resources หรือเรียก `close()` อย่างชัดเจนเพื่อป้องกันการรั่วไหล  
 
-## ข้อควรพิจารณาด้านประสิทธิภาพ
-
-- **Optimizing Performance:** ใช้อินสแตนซ์ `Watermarker` เพียงหนึ่งตัวสำหรับการประมวลผลแบบแบตช์; นี้จะลดภาระของ JVM.  
-- **Resource Usage Guidelines:** สำหรับงานนำเสนอที่ใหญ่กว่า 200 MB, เปิดโหมดสตรีมมิงใน `PresentationLoadOptions` เพื่อให้การใช้หน่วยความจำน้อยกว่า 200 MB.  
-- **Java Memory Management:** ควรเรียก `close()` ในบล็อก `finally` หรือใช้ try‑with‑resources เพื่อรับประกันการทำความสะอาด.
-
-## ปัญหาทั่วไปและวิธีแก้
-
-| ปัญหา | สาเหตุ | วิธีแก้ |
-|-------|-------|----------|
-| ลายน้ำไม่ปรากฏ | ความทึบเริ่มต้นตั้งเป็น 0% | ปรับ `setOpacity(0.5)` บน `TextWatermark`. |
-| ข้อผิดพลาดหน่วยความจำไม่พอบนชุดสไลด์ขนาดใหญ่ | โหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ | เปิด `setLoadMode(LoadMode.STREAM)` ใน `PresentationLoadOptions`. |
-| อักขระที่อ่านไม่ได้ไม่ถูกนำมาใช้ | ละเว้นการตั้งค่า `setUnreadableCharacters(true)` | ตรวจสอบให้แน่ใจว่ากำหนดแฟล็กบน `PresentationWatermarkSlideOptions`. |
-| ข้อยกเว้นไลเซนส์ขณะรันไทม์ | ใช้รุ่นทดลองหลังหมดอายุ | อัปเดตไฟล์ไลเซนส์หรือขอคีย์ทดลองใหม่. |
+## ปัญหาที่พบบ่อยและวิธีแก้
+| ปัญหา | วิธีแก้ |
+|-------|----------|
+| **ลายน้ำไม่ปรากฏ** | ตรวจสอบว่าตัวเลือกสไลด์ถูกตั้งค่า (`setLocked(true)`) และช่วงสไลด์ที่ใช้ถูกต้อง |
+| **OutOfMemoryError กับ PPTX ขนาดใหญ่** | เพิ่ม heap ของ JVM (`-Xmx2g`) หรือประมวลผลไฟล์เป็นชุดย่อยโดยใช้ `PresentationLoadOptions` |
+| **ข้อยกเว้นลิขสิทธิ์** | ตรวจสอบว่ามีการโหลดลิขสิทธิ์ทดลองหรือเต็มที่ถูกต้องก่อนสร้าง `Watermarker` |
 
 ## คำถามที่พบบ่อย
 
-**Q:** ฉันสามารถเพิ่มลายน้ำรูปภาพแทนข้อความได้หรือไม่?  
-**A:** ใช่—ใช้คลาส `ImageWatermark` ซึ่งรองรับรูปแบบ PNG, JPEG, และ SVG.
+**ถาม: ฉันสามารถใช้ GroupDocs.Watermark เพื่อเพิ่มลายน้ำรูปภาพได้หรือไม่?**  
+ตอบ: ได้, ไลบรารีรองรับลายน้ำทั้งข้อความและรูปภาพ; เพียงใช้ `ImageWatermark` แทน `TextWatermark`  
 
-**Q:** ไลบรารีทำงานกับไฟล์ PPTX ที่ป้องกันด้วยรหัสผ่านหรือไม่?  
-**A:** แน่นอน; ให้รหัสผ่านผ่าน `PresentationLoadOptions.setPassword("yourPassword")`.
+**ถาม: ไลบรารีทำงานกับพรีเซนเทชันที่มีการป้องกันด้วยรหัสผ่านหรือไม่?**  
+ตอบ: แน่นอน — ให้รหัสผ่านใน `PresentationLoadOptions` ก่อนโหลดไฟล์  
 
-**Q:** ฉันสามารถใส่ลายน้ำให้สไลด์ได้กี่สไลด์ในหนึ่งการดำเนินการ?  
-**A:** ไม่มีขีดจำกัดที่แน่นอน; API สตรีมสไลด์, ดังนั้นคุณสามารถประมวลผลงานนำเสนอที่มีสไลด์หลายพันสไลด์ได้ตราบใดที่ขนาด heap ของ JVM เพียงพอ.
+**ถาม: สามารถปรับความทึบของลายน้ำได้หรือไม่?**  
+ตอบ: ได้, คุณสามารถตั้งค่าความทึบบนอ็อบเจ็กต์ `TextWatermark` ผ่าน `setOpacity(double)`  
 
-**Q:** สามารถใส่ลายน้ำเฉพาะสไลด์ที่เลือกได้หรือไม่?  
-**A:** ได้—ระบุช่วงสไลด์ใน `PresentationLoadOptions` หรือส่งรายการดัชนีสไลด์ไปยังเมธอด `add`.
+**ถาม: “protect with unreadable characters” มีผลต่อการแปลงเป็น PDF อย่างไร?**  
+ตอบ: การป้องกันจะยังคงฝังอยู่ในพรีเซนเทชัน; เมื่อส่งออกเป็น PDF อักขระที่อ่านไม่ออกจะยังคงอยู่, ทำให้การล็อกยังคงมีผล  
 
-**Q:** เวอร์ชันของ GroupDocs.Watermark ที่ทดสอบกับบทแนะนำนี้คืออะไร?  
-**A:** ตัวอย่างได้รับการตรวจสอบกับ GroupDocs.Watermark 23.12 สำหรับ Java.
+**ถาม: เวอร์ชัน Java ขั้นต่ำที่ต้องการคืออะไร?**  
+ตอบ: Java 8 หรือใหม่กว่า; ไลบรารีเข้ากันได้เต็มที่กับ Java 11, 17, และเวอร์ชัน LTS ถัดไป  
 
 ## สรุป
-
-คุณตอนนี้มีขั้นตอนการทำงานที่ครบถ้วนและพร้อมสำหรับการผลิตสำหรับ **add watermark java presentation** ด้วย GroupDocs.Watermark. โดยทำตามขั้นตอนข้างต้น, คุณสามารถปกป้องสไลด์ที่เป็นความลับ, เสริมสร้างอัตลักษณ์แบรนด์, และปฏิบัติตามข้อกำหนดทางกฎหมาย—ทั้งหมดนี้โดยที่ค่าใช้จ่ายด้านประสิทธิภาพยังคงต่ำ. สำรวจ API ต่อไปเพื่อผสานลายน้ำข้อความและรูปภาพ, ใส่ลายน้ำเวลาที่เปลี่ยนแปลงได้, หรือรวมกับระบบจัดการเอกสารที่คุณมีอยู่.
+คุณได้มีคู่มือที่ครบถ้วนและพร้อมใช้งานสำหรับ **วิธีใส่ลายน้ำไฟล์พรีเซนเทชัน** ด้วย Java และไลบรารี GroupDocs.Watermark แล้ว การเพิ่มลายน้ำความลับ, ล็อกมัน, และปกป้องด้วยอักขระที่อ่านไม่ออก จะช่วยรักษาทรัพย์สินทางปัญญาของคุณและเสริมสร้างความเป็นแบรนด์ สำรวจต่อไปโดยการรวมขั้นตอนเหล่านี้เข้าไปในกระบวนการอัตโนมัติของเอกสาร หรือผสานกับ API ของ GroupDocs อื่น ๆ เพื่อการจัดการเอกสารแบบครบวงจร  
 
 ---
 
-**อัปเดตล่าสุด:** 2026-06-21  
-**ทดสอบด้วย:** GroupDocs.Watermark 23.12 for Java  
-**ผู้เขียน:** GroupDocs
+**อัปเดตล่าสุด:** 2026-01-06  
+**ทดสอบกับ:** GroupDocs.Watermark 24.11 for Java  
+**ผู้เขียน:** GroupDocs  
 
-## บทแนะนำที่เกี่ยวข้อง
-
-- [วิธีเพิ่มลายน้ำข้อความและรูปภาพใน PDF ด้วย Java โดยใช้ GroupDocs.Watermark](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermarks/)
-- [เพิ่มและล็อกลายน้ำข้อความในเอกสาร Word ด้วย Java: คู่มือเชิงลึกกับ GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [วิธีเพิ่มลายน้ำข้อความหมุนในเอกสารโดยใช้ GroupDocs.Watermark สำหรับ Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+---

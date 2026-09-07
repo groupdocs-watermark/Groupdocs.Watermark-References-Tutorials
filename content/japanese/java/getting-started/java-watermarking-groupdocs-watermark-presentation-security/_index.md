@@ -1,86 +1,55 @@
 ---
-date: '2026-06-21'
-description: GroupDocs.Watermark for Java を使用して Java プレゼンテーションに透かしを追加する方法を学び、text
-  watermarks と unreadable‑character protection を適用してスライドを保護します。
+date: '2026-01-06'
+description: Java を使用してプレゼンテーション ファイルに透かしを付ける方法を学びましょう。このガイドでは、機密透かしの追加、透かしのロック、そして安全なプレゼンテーションのために
+  GroupDocs.Watermark Java ライブラリを使用する方法を示します。
 keywords:
-- add watermark java presentation
-- GroupDocs.Watermark Java
-- presentation security
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  headline: Add Watermark Java Presentation Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  name: Add Watermark Java Presentation Using GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-    text: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-  - name: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-    text: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-  - name: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-    text: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-  type: HowTo
-- questions:
-  - answer: Yes—use the `ImageWatermark` class, which supports PNG, JPEG, and SVG
-      formats.
-    question: Can I add an image watermark instead of text?
-  - answer: Absolutely; provide the password via `PresentationLoadOptions.setPassword("yourPassword")`.
-    question: Does the library work with password‑protected PPTX files?
-  - answer: There is no hard limit; the API streams slides, so you can process presentations
-      with thousands of slides as long as the JVM heap is sized appropriately.
-    question: How many slides can I watermark in one operation?
-  - answer: Yes—specify a slide range in `PresentationLoadOptions` or pass a list
-      of slide indices to the `add` method.
-    question: Is it possible to watermark only selected slides?
-  - answer: The examples were verified with GroupDocs.Watermark 23.12 for Java.
-    question: What version of GroupDocs.Watermark is tested with this tutorial?
-  type: FAQPage
-title: GroupDocs.Watermark を使用した Java プレゼンテーションに透かしを追加
+- Java Watermarking
+- GroupDocs.Watermark for Java
+- Presentation Security
+title: Java と GroupDocs.Watermark でプレゼンテーションファイルに透かしを付ける方法
 type: docs
 url: /ja/java/getting-started/java-watermarking-groupdocs-watermark-presentation-security/
 weight: 1
 ---
 
-# GroupDocs.Watermark を使用した Java プレゼンテーションへの透かし追加
+# Java と GroupDocs.Watermark を使用したプレゼンテーション ファイルへの透かしの付け方
 
-今日の急速に変化するビジネス環境において、**add watermark java presentation** は機密スライドデッキ、トレーニング資料、マーケティング資料を保護するベストプラクティスです。GroupDocs.Watermark for Java を使用すると、PowerPoint ファイルに目に見えるまたは見えないテキスト透かしを直接埋め込むことができ、ファイルを受け取った誰でも所有権や機密性のステータスを即座に確認できます。このガイドでは、ライブラリの設定からプレゼンテーションの読み込み、カスタムテキスト透かしの作成、読めない文字保護によるロック、そして最終的に保護されたファイルの保存まで、すべての手順を詳しく説明します。
+デジタル時代の今日、**プレゼンテーションに透かしを入れる方法**は、機密スライドや研修資料、マーケティング資料を共有するすべての人にとって重要な関心事です。機密透かしを追加することで所有権を示すだけでなく、無断配布を抑止します。このチュートリアルでは、Java スタイルの透かし保護を追加し、透かしをロックし、GroupDocs.Watermark Java ライブラリを活用してプレゼンテーションを迅速かつ確実に保護する方法を学びます。
 
 ## クイック回答
-- **主な目的は何ですか？** 永続的なテキスト透かしを埋め込むことでプレゼンテーションファイルを保護します。  
-- **必要なライブラリはどれですか？** GroupDocs.Watermark for Java (Maven アーティファクト `com.groupdocs:groupdocs-watermark`)。  
-- **ライセンスは必要ですか？** 開発用には無料トライアルで動作しますが、製品環境ではフルライセンスが必要です。  
-- **大容量のデッキも保護できますか？** はい—GroupDocs.Watermark はファイル全体をメモリに読み込まずに最大 500 MB のファイルを処理できます。  
-- **APIは Java 8 以降に対応していますか？** 絶対に対応しており、JDK 8 以降のバージョンで動作します。
+- **プレゼンテーションに透かしを追加する最も簡単な方法は何ですか？** GroupDocs.Watermark for Java を使用し、`watermarker.add()` に `TextWatermark` を渡します。  
+- **透かしをロックして削除できないようにできますか？** はい—`options.setLocked(true)` を設定し、読めない文字を有効にします。  
+- **特別なライセンスが必要ですか？** 開発には無料トライアルで動作しますが、本番環境ではフルライセンスが必要です。  
+- **必要な Java バージョンはどれですか？** Java 8 以降がサポートされています。  
+- **PPTX と ODP ファイルでも動作しますか？** はい、GroupDocs.Watermark は主要なプレゼンテーション形式をサポートしています。  
 
-## 「add watermark java presentation」とは何ですか？
-*Add watermark java presentation* は、Java ベースの PowerPoint（`.pptx`）ファイルにテキストまたは画像の透かしをプログラムで挿入し、コンテンツを保護するプロセスを指します。目に見えるまたは見えないマークを埋め込むことで、所有権を主張し、機密性を強制し、無許可の配布を抑止し、受取人が常に出所または保護ステータスを確認できるようにします。
+## 「プレゼンテーションに透かしを入れる方法」とは？
+プレゼンテーションに透かしを入れることは、各スライドに可視または不可視のテキスト（または画像）を埋め込み、文書に明確な所有権マークを付与することを意味します。この手法は、企業の提案書、学術講義、そして不正使用から保護が必要なあらゆるコンテンツで広く利用されています。
 
-## なぜ GroupDocs.Watermark for Java を使用するのですか？
-GroupDocs.Watermark は **30 以上のファイル形式**（PPTX、PPT、PDF、DOCX、画像など）をサポートし、**品質の損失なしに** プレゼンテーションに透かしを適用できます。そのエンジンは通常のサーバーハードウェア上で数百ページのデッキを 1 秒未満で処理し、メモリ使用量は 150 MB 未満に抑えられるため、高スループットのバッチジョブに最適です。
+## なぜ機密透かしを追加するのか？
+- **ブランド保護:** 各スライドで企業のアイデンティティを強化します。  
+- **法的証拠:** ファイルが明確な所有権表示とともに配布されたことを示します。  
+- **抑止効果:** 許可なく文書が共有された場合が一目で分かります。  
+- **コンプライアンス:** 機密情報の取り扱いに関する社内セキュリティポリシーを満たします。  
 
 ## 前提条件
+開始する前に、以下が揃っていることを確認してください。
 
-1. **Java Development Kit (JDK) 8 以降** – コンパイルと実行に必要です。  
-2. **Maven** – 依存関係の解決を行います。必要に応じて Gradle も使用できます。  
-3. **IDE** – IntelliJ IDEA、Eclipse、または任意の Java 対応エディタ。  
-4. **基本的な Java I/O の知識** – ファイルストリームと例外処理を理解するために必要です。
+1. **必要なライブラリと依存関係**  
+   - Java Development Kit (JDK) 8 以降  
+   - 依存関係管理のための Maven  
 
-## GroupDocs.Watermark for Java のセットアップ
+2. **環境設定**  
+   - IntelliJ IDEA や Eclipse などの IDE  
+   - Java I/O と例外処理の基本知識  
+
+3. **知識の前提**  
+   - Java のクラスとオブジェクト指向概念に慣れていること  
+
+## GroupDocs.Watermark for Java の設定
 
 ### Maven 設定
-`pom.xml` に以下の依存関係を追加します。これにより最新の安定版 GroupDocs.Watermark が取得されます。
+`pom.xml` ファイルに GroupDocs リポジトリと依存関係を追加します。
 
 ```xml
 <repositories>
@@ -101,15 +70,15 @@ GroupDocs.Watermark は **30 以上のファイル形式**（PPTX、PPT、PDF、
 ```
 
 ### 直接ダウンロード
-手動でインストールしたい場合は、公式リリースページから JAR を取得してください: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)。
+あるいは、最新バージョンを [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) からダウンロードしてください。
 
 ### ライセンス取得
-- **Free Trial:** 30 日間無制限の API 呼び出しが可能です。  
-- **Temporary License:** 開発期間が長くなる場合にトライアル制限を拡張します。  
-- **Full License:** 商用展開に必要で、すべてのトライアル制限が解除されます。
+- **無料トライアル:** ライセンスなしでライブラリをテストできます。  
+- **一時ライセンス:** 開発テストを拡張するために一時キーを使用します。  
+- **フルライセンス:** 本番環境へのデプロイに必要です。  
 
-### 基本的な初期化とセットアップ
-すべての透かし操作の中心オブジェクトとなる `Watermarker` インスタンスを作成します。
+### 基本的な初期化と設定
+以下のスニペットは、プレゼンテーションファイル用の `Watermarker` インスタンスを作成する方法を示しています。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -122,15 +91,12 @@ public class InitializeWatermarker {
 }
 ```
 
-`Watermarker` はドキュメントの読み込み、編集、保存を行うコアクラスです。このオブジェクトがプレゼンテーションファイルのロード、編集、保存を管理します。
-
 ## 実装ガイド
 
-### Java プレゼンテーションに透かしを追加する方法は？
-Java プレゼンテーションに透かしを追加するには、まず `PresentationLoadOptions` を使用して PowerPoint ファイルを読み込みます。次に、目的のテキスト、スタイル、回転角度を指定して `TextWatermark` を作成します。`PresentationWatermarkSlideOptions` で読めない文字保護を有効にし、目的のスライドに透かしを追加し、最後に変更を保存して永続化します。
+以下は、**プレゼンテーションに透かしを入れる方法**のステップバイステップの手順です。ドキュメントの読み込みから保護された出力の保存までを説明します。
 
-#### プレゼンテーションドキュメントの読み込み
-まず、適切なロードオプションでファイルを開く必要があります。
+### プレゼンテーション ドキュメントの読み込み
+まず、`PresentationLoadOptions` を使用してプレゼンテーションを読み込みます。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -145,10 +111,10 @@ public class LoadPresentation {
 }
 ```
 
-**Definition anchor:** `PresentationLoadOptions` は GroupDocs.Watermark が PowerPoint ファイルを読み取る方法を定義し、パスワード保護、スライド範囲、メモリ節約フラグなどを指定できます。
+*説明:* `PresentationLoadOptions` は、透かしを適用する前にファイルの解釈方法を指定できます。
 
-#### テキスト透かしの作成
-次に、透かしテキストを作成し、ブランドガイドラインに合わせてスタイル設定します。
+### テキスト透かしの作成
+次に、実際の透かしテキストを作成します。ここで **機密透かし** の内容を **追加** します。
 
 ```java
 import com.groupdocs.watermark.watermarks.Font;
@@ -163,10 +129,10 @@ public class CreateTextWatermark {
 }
 ```
 
-**Definition anchor:** `TextWatermark` は位置、回転、色を設定できるテキストオーバーレイを表します。Unicode をサポートしているため、多言語タグを埋め込むことが可能です。
+*説明:* フォント、サイズ、テキストをブランドガイドラインに合わせて調整します。
 
-#### 読めない文字保護のための透かしオプション設定
-透かしを改ざん防止にするため、読めない文字保護を有効にします。
+### 読めない文字用の透かしオプション設定
+透かしを **ロック** し、改ざん時に読めないようにするには、スライドオプションを設定します。
 
 ```java
 import com.groupdocs.watermark.options.PresentationWatermarkSlideOptions;
@@ -180,10 +146,10 @@ public class ConfigureWatermarkOptions {
 }
 ```
 
-**Definition anchor:** `PresentationWatermarkSlideOptions` は透かしを個々のスライドに適用する方法を構成します。透かしのロック、読み取り専用フラグの設定、そして不正に編集された場合にテキストを乱す読めない文字保護を有効にできます。
+*説明:* `setLocked` と `setProtectWithUnreadableCharacters` を有効にすると、簡単に削除できない保護層が追加されます。
 
-#### プレゼンテーションへの透かし追加
-`Watermarker` オブジェクトを使用して、すべてのスライド（または一部）に透かしを適用します。
+### プレゼンテーションへの透かし追加
+読み込み、透かし作成、オプション設定を組み合わせて透かしを適用します。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -206,10 +172,10 @@ public class AddWatermarkToPresentation {
 }
 ```
 
-**Definition anchor:** `Watermarker` の `add` メソッドは、事前に設定した `TextWatermark` を対象スライドに添付し、先に定義したオプションを尊重します。
+*説明:* このステップでは、**java watermark library** のテキストを各スライドに埋め込み、ロックします。
 
-#### 透かし付きドキュメントの保存とクローズ
-最後に変更を永続化し、リソースを解放します。
+### 透かし付きドキュメントの保存とクローズ
+最後に、変更を永続化し、リソースをクリーンアップします。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -225,60 +191,49 @@ public class SaveAndCloseWatermarkedDocument {
 }
 ```
 
-**Definition anchor:** `save` を呼び出すと変更されたプレゼンテーションがディスクに書き込まれ、`close` はネイティブリソースを解放してメモリリークを防止します。
+*説明:* 常に `close()` を呼び出してファイルハンドルを解放し、メモリリークを防止してください。
 
 ## 実用的な活用例
-
-- **Corporate Proposals:** クライアントに送付する前に、すべてのスライドに「Confidential – Company XYZ」を埋め込みます。  
-- **Academic Lectures:** 大学のロゴとコースコードを追加し、無断再配布を防止します。  
-- **Event Presentations:** 各スライドにイベント名と日付を透かしとして入れ、ブランドを強化します。  
-- **Legal Briefs:** 法的デッキにケース識別子をタグ付けし、証拠のチェーン・オブ・カストディを維持します。  
-- **Marketing Assets:** 高解像度のプロモーションデッキを、PDF 変換後も残る微妙なブランド透かしで保護します。
+1. **企業文書保護:** 会社ロゴや「Confidential」タグをビジネス提案書に追加します。  
+2. **学術資料配布:** 講義スライドを無断共有から保護します。  
+3. **イベント管理:** イベント用スライドデッキにブランド透かしで保護します。  
+4. **法務文書:** 法的プレゼンテーションに透かしを付けて真正性を示します。  
+5. **マーケティングキャンペーン:** プロモーションデッキにブランド透かしを付け、悪用を防止します。  
 
 ## パフォーマンスに関する考慮点
+- **パフォーマンス最適化:** 大きなプレゼンテーションを扱う際はストリームでファイルを処理します。  
+- **リソース使用ガイドライン:** JVM ヒープ領域を監視し、`Watermarker` は速やかにクローズします。  
+- **Java メモリ管理:** try‑with‑resources または明示的な `close()` 呼び出しを使用してリークを防止します。  
 
-- **Optimizing Performance:** バッチ処理では単一の `Watermarker` インスタンスを再利用し、JVM のオーバーヘッドを削減します。  
-- **Resource Usage Guidelines:** 200 MB を超えるプレゼンテーションでは、`PresentationLoadOptions` のストリーミングモードを有効にしてメモリ使用量を 200 MB 未満に抑えます。  
-- **Java Memory Management:** 必ず `finally` ブロックで `close()` を呼び出すか、try‑with‑resources を使用してクリーンアップを保証してください。
-
-## 一般的な問題と解決策
-
-| 問題 | 原因 | 解決策 |
-|------|------|--------|
-| 透かしが表示されない | デフォルトの不透明度が 0% に設定されている | `TextWatermark` の `setOpacity(0.5)` を調整してください。 |
-| 大容量デッキでのメモリ不足エラー | ファイル全体がメモリに読み込まれる | `PresentationLoadOptions` で `setLoadMode(LoadMode.STREAM)` を有効にしてください。 |
-| 読めない文字が適用されていない | `setUnreadableCharacters(true)` が省略されている | `PresentationWatermarkSlideOptions` でフラグが設定されていることを確認してください。 |
-| 実行時のライセンス例外 | 期限切れのトライアルを使用している | ライセンスファイルを更新するか、新しいトライアルキーをリクエストしてください。 |
+## よくある問題と解決策
+| 問題 | 解決策 |
+|-------|----------|
+| **Watermark not appearing** | スライドオプションが設定されているか (`setLocked(true)`) と、正しいスライド範囲が使用されているかを確認してください。 |
+| **OutOfMemoryError on large PPTX** | JVM ヒープを増やす（`-Xmx2g`）か、`PresentationLoadOptions` を使用してファイルを小さなバッチに分割して処理してください。 |
+| **License exception** | `Watermarker` 作成前に有効なトライアルまたはフルライセンスがロードされていることを確認してください。 |
 
 ## よくある質問
 
-**Q: テキストではなく画像透かしを追加できますか？**  
-A: はい—`ImageWatermark` クラスを使用します。PNG、JPEG、SVG 形式をサポートしています。
+**Q: GroupDocs.Watermark で画像透かしも追加できますか？**  
+A: はい、ライブラリはテキストと画像の両方の透かしをサポートしています。`TextWatermark` の代わりに `ImageWatermark` を使用してください。
 
-**Q: ライブラリはパスワード保護された PPTX ファイルで動作しますか？**  
-A: 絶対に動作します。`PresentationLoadOptions.setPassword("yourPassword")` でパスワードを指定してください。
+**Q: パスワードで保護されたプレゼンテーションでもライブラリは動作しますか？**  
+A: もちろんです。ファイルを読み込む前に `PresentationLoadOptions` にパスワードを指定してください。
 
-**Q: 1 回の操作で何枚のスライドに透かしを付けられますか？**  
-A: 固定上限はありません。API はスライドをストリーミング処理するため、JVM ヒープが十分であれば数千枚のスライドでも処理可能です。
+**Q: 透かしの不透明度をカスタマイズできますか？**  
+A: はい、`TextWatermark` オブジェクトの `setOpacity(double)` で不透明度を設定できます。
 
-**Q: 選択したスライドだけに透かしを付けることは可能ですか？**  
-A: はい—`PresentationLoadOptions` でスライド範囲を指定するか、`add` メソッドにスライドインデックスのリストを渡してください。
+**Q: 「読めない文字で保護する」機能は PDF 変換にどのように影響しますか？**  
+A: 保護はプレゼンテーションに埋め込まれたままで、PDF にエクスポートしても読めない文字が保持され、ロックが維持されます。
 
-**Q: このチュートリアルでテストされた GroupDocs.Watermark のバージョンは？**  
-A: 例は GroupDocs.Watermark 23.12 for Java で検証されています。
+**Q: 必要な最低 Java バージョンは何ですか？**  
+A: Java 8 以上です。ライブラリは Java 11、17、以降の LTS リリースと完全に互換性があります。
 
 ## 結論
-
-これで **add watermark java presentation** を GroupDocs.Watermark を使用して実装するための完全な本番対応ワークフローが整いました。上記の手順に従うことで、機密スライドを保護し、ブランドアイデンティティを強化し、法的要件にも準拠できます—しかもパフォーマンスへの負荷は最小限です。API をさらに活用してテキストと画像の透かしを組み合わせたり、動的タイムスタンプを適用したり、既存のドキュメント管理パイプラインに統合したりしてください。
+これで、Java と GroupDocs.Watermark ライブラリを使用して **プレゼンテーションに透かしを入れる方法** の完全な本番対応ガイドが手に入りました。機密透かしを追加し、ロックし、読めない文字で保護することで、知的財産を守り、ブランドの一貫性を強化できます。これらの手順を自動化された文書パイプラインに統合したり、他の GroupDocs API と組み合わせてエンドツーエンドの文書管理を実現してください。
 
 ---
 
-**最終更新日:** 2026-06-21  
-**テスト環境:** GroupDocs.Watermark 23.12 for Java  
+**最終更新日:** 2026-01-06  
+**テスト環境:** GroupDocs.Watermark 24.11 for Java  
 **作者:** GroupDocs
-
-## 関連チュートリアル
-
-- [Java で GroupDocs.Watermark を使用して PDF にテキストと画像の透かしを追加する方法](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermarks/)
-- [Java を使用して Word ドキュメントにテキスト透かしを追加・ロックする完全ガイド（GroupDocs.Watermark）](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [Java 用 GroupDocs.Watermark で文書に回転テキスト透かしを追加する方法](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)

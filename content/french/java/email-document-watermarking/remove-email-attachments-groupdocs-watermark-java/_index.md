@@ -1,95 +1,52 @@
 ---
-date: '2026-06-21'
-description: Apprenez comment supprimer les pièces jointes des messages électroniques
-  à l'aide de GroupDocs.Watermark pour Java, améliorant la productivité et la sécurité.
+date: '2026-01-03'
+description: Apprenez à supprimer les pièces jointes des fichiers e‑mail avec GroupDocs.Watermark
+  pour Java – le guide étape par étape pour supprimer les pièces jointes efficacement.
 keywords:
-- how to remove attachments
-- email attachment removal Java
-- GroupDocs.Watermark email
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to remove attachments from email messages using GroupDocs.Watermark
-    for Java, boosting productivity and security.
-  headline: How to Remove Attachments from Emails Using GroupDocs.Watermark in Java
-  type: TechArticle
-- description: Learn how to remove attachments from email messages using GroupDocs.Watermark
-    for Java, boosting productivity and security.
-  name: How to Remove Attachments from Emails Using GroupDocs.Watermark in Java
-  steps:
-  - name: '**Email Cleanup Automation:** Strip outdated PDFs or large spreadsheets
-      from inbound messages before archiving.'
-    text: '**Email Cleanup Automation:** Strip outdated PDFs or large spreadsheets
-      from inbound messages before archiving.'
-  - name: '**Data Privacy Compliance:** Automatically delete confidential contracts
-      from outgoing emails to meet GDPR or HIPAA requirements.'
-    text: '**Data Privacy Compliance:** Automatically delete confidential contracts
-      from outgoing emails to meet GDPR or HIPAA requirements.'
-  - name: '**Enhanced Email Management:** Reduce mailbox size by removing redundant
-      images, easing backup and search operations.'
-    text: '**Enhanced Email Management:** Reduce mailbox size by removing redundant
-      images, easing backup and search operations.'
-  type: HowTo
-- questions:
-  - answer: Yes, inspect `attachment.getContentType()` and apply your filter logic
-      accordingly.
-    question: Can I remove attachments based on MIME type instead of file name?
-  - answer: Absolutely; `EmailLoadOptions` works with both formats without additional
-      configuration.
-    question: Does the library support .eml files as well as .msg?
-  - answer: The reverse‑iteration loop simply skips non‑matching items, so no exception
-      is thrown.
-    question: What happens if I try to remove an attachment that doesn’t exist?
-  - answer: You can modify `attachment.setFileName("newName.ext")` before saving the
-      email.
-    question: Is it possible to rename an attachment instead of deleting it?
-  - answer: Use a thread‑pool executor to parallelize the load‑modify‑save cycle,
-      making sure each thread creates its own `Watermarker` instance.
-    question: How can I process thousands of emails efficiently?
-  type: FAQPage
-title: Comment supprimer les pièces jointes des e‑mails à l'aide de GroupDocs.Watermark
-  en Java
+- remove email attachments Java
+- GroupDocs.Watermark for Java
+- email management automation
+title: Comment supprimer les pièces jointes des messages électroniques à l'aide de
+  GroupDocs.Watermark en Java
 type: docs
 url: /fr/java/email-document-watermarking/remove-email-attachments-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Comment supprimer les pièces jointes des e‑mails à l’aide de GroupDocs.Watermark en Java
+# Comment supprimer les pièces jointes des messages électroniques à l'aide de GroupDocs.Watermark en Java
 
-À l'ère numérique actuelle, **how to remove attachments** des messages électroniques de manière efficace est une priorité pour les développeurs qui doivent garder les boîtes de réception propres et protéger les données sensibles. Ce tutoriel vous guide dans l'utilisation de **GroupDocs.Watermark for Java** pour localiser et supprimer des pièces jointes d'e‑mail spécifiques par nom ou type de fichier, tout en préservant le message original.
+Dans l'environnement de travail actuel, où tout va très vite, **savoir comment supprimer les pièces jointes** des messages électroniques est essentiel pour garder les boîtes de réception propres, protéger les données sensibles et améliorer la productivité globale. Ce tutoriel vous guide à travers le processus complet d'utilisation de **GroupDocs.Watermark pour Java** afin d'identifier et de supprimer des pièces jointes spécifiques par nom ou type de fichier. À la fin, vous pourrez automatiser le nettoyage des e‑mails et rester conforme aux politiques de confidentialité des données.
 
 ## Réponses rapides
-- **Quelle bibliothèque gère la suppression des pièces jointes ?** GroupDocs.Watermark for Java.
-- **Quelle version de Java est requise ?** JDK 8 ou supérieur.
-- **Puis‑je cibler les pièces jointes par extension de fichier ?** Oui, en utilisant une logique conditionnelle simple.
-- **Une licence est‑elle nécessaire pour la production ?** Une licence valide de GroupDocs.Watermark est requise.
-- **Le courriel original restera‑t‑il intact ?** Le fichier original n'est pas modifié ; un nouveau fichier est enregistré avec les pièces jointes sélectionnées supprimées.
+- **Que signifie « comment supprimer les pièces jointes » dans ce contexte ?** Il s'agit de supprimer programmatiquement les fichiers indésirables d'un e‑mail .msg à l'aide de GroupDocs.Watermark.  
+- **Quelle version de la bibliothèque est requise ?** GroupDocs.Watermark 24.11 (ou plus récente).  
+- **Ai‑je besoin d’une licence ?** Un essai gratuit suffit pour les tests ; une licence permanente est requise pour la production.  
+- **Puis‑je traiter plusieurs e‑mails en même temps ?** Oui — encapsulez le code dans une boucle ou un job batch.  
+- **L’itération inversée est‑elle importante ?** Absolument ; elle empêche le décalage d’index lors de la suppression d’éléments.
 
-## Qu’est‑ce que « how to remove attachments » dans le contexte du traitement des e‑mails ?
-**How to remove attachments** désigne la suppression programmatique de fichiers sélectionnés intégrés dans un e‑mail (par ex., *.msg* ou *.eml*) sans modifier le reste du contenu du message. Cette opération est couramment utilisée pour l'automatisation du nettoyage, la conformité ou l'application de la sécurité. En supprimant les fichiers inutiles, vous réduisez l'utilisation du stockage, améliorez les performances de recherche et limitez le risque de partage involontaire de données sensibles.
+## Qu’est‑ce que « comment supprimer les pièces jointes » avec GroupDocs.Watermark ?
+GroupDocs.Watermark fournit une API simple pour charger un fichier e‑mail, inspecter sa collection de pièces jointes et supprimer les éléments qui correspondent à vos critères. Cette fonctionnalité est particulièrement utile pour :
 
-## Pourquoi utiliser GroupDocs.Watermark pour Java ?
-GroupDocs.Watermark prend en charge **plus de 50** formats de documents et d'images, peut traiter des e‑mails jusqu'à **500 Mo** de taille, et effectue la manipulation des pièces jointes entièrement en mémoire, éliminant ainsi le besoin d'installations Office externes. Son API est thread‑safe, permettant le traitement en masse de milliers de messages par heure sur du matériel serveur standard.
+- **Hygiène automatisée des e‑mails** – purger les anciens rapports ou les fichiers en double.  
+- **Application de la conformité** – retirer les documents confidentiels avant de les transmettre.  
+- **Optimisation des performances** – réduire la taille de la boîte aux lettres et accélérer les recherches.
+
+## Pourquoi utiliser GroupDocs.Watermark pour cette tâche ?
+- **Support complet du format .msg** – prise en charge native du format Outlook.  
+- **Contrôle fin** – vérifier le nom, le type, la taille, etc. de la pièce jointe.  
+- **Gestion robuste de la mémoire** – le `Watermarker` implémente `AutoCloseable`, garantissant la libération des ressources.  
 
 ## Prérequis
-Avant de commencer, assurez‑vous de disposer de ce qui suit :
 
-### Bibliothèques requises et versions
-- **GroupDocs.Watermark** version 24.11 (disponible via Maven ou téléchargement direct)
-
-### Exigences de configuration de l’environnement
-- Kit de développement Java (JDK) installé sur votre système
-- Un IDE tel qu'IntelliJ IDEA ou Eclipse pour écrire et exécuter votre code
-
-### Prérequis de connaissances
-- Compréhension de base de la programmation Java
-- Familiarité avec la manipulation de fichiers e‑mail (format .msg)
+- **GroupDocs.Watermark** version 24.11 (disponible via Maven ou téléchargement direct).  
+- Java Development Kit (JDK 8 ou supérieur).  
+- Un IDE tel qu’IntelliJ IDEA ou Eclipse.  
+- Connaissances de base en Java et familiarité avec les fichiers .msg.
 
 ## Configuration de GroupDocs.Watermark pour Java
-Pour commencer, vous devez installer **GroupDocs.Watermark**. Voici comment :
 
 ### Configuration Maven
-Ajoutez la configuration suivante à votre fichier `pom.xml` :
+Ajoutez le dépôt et la dépendance à votre `pom.xml` :
 
 ```xml
 <repositories>
@@ -110,15 +67,15 @@ Ajoutez la configuration suivante à votre fichier `pom.xml` :
 ```
 
 ### Téléchargement direct
-Sinon, téléchargez la dernière version depuis [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Vous pouvez également télécharger la dernière version depuis [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Acquisition de licence
-- **Free Trial :** Commencez avec un essai gratuit pour tester les fonctionnalités.  
-- **Temporary License :** Obtenez une licence temporaire pour un accès complet pendant les tests.  
-- **Purchase :** Envisagez d'acheter une licence pour une utilisation en production.
+- **Essai gratuit** : testez toutes les fonctionnalités sans frais.  
+- **Licence temporaire** : à utiliser pour des tests à court terme.  
+- **Licence complète** : recommandée pour les déploiements en production.
 
 #### Initialisation et configuration de base
-Initialisez la bibliothèque dans votre projet Java pour commencer :
+Voici le code minimal nécessaire pour ouvrir un fichier e‑mail avec GroupDocs.Watermark :
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -135,15 +92,10 @@ class EmailAttachmentManager {
 }
 ```
 
-## Comment supprimer les pièces jointes des messages e‑mail ?
-`Watermarker` est la classe principale qui fournit l'accès aux fonctionnalités de traitement de documents.  
-`EmailLoadOptions` spécifie comment le SDK doit interpréter le fichier d'entrée comme un e‑mail.  
-`EmailAttachment` représente un fichier unique attaché à l'e‑mail.
+## Guide étape par étape pour supprimer les pièces jointes
 
-Chargez l'e‑mail, parcourez sa liste de pièces jointes et supprimez les éléments qui correspondent à vos critères — cela peut être réalisé en quelques lignes de code. Tout d'abord, créez une instance `Watermarker`, chargez l'e‑mail avec `EmailLoadOptions`, puis parcourez les objets `EmailAttachment` en ordre inverse, en supprimant ceux qui répondent aux conditions de nom ou de format. Enfin, enregistrez l'e‑mail modifié dans un nouveau fichier afin que l'original reste inchangé.
-
-### Initialiser les options de chargement pour l'e‑mail
-`EmailLoadOptions` indique au SDK que le fichier d'entrée doit être analysé comme un message e‑mail, exposant son corps et sa collection de pièces jointes.
+### 1. Initialiser les options de chargement pour l’e‑mail
+Tout d’abord, indiquez à la bibliothèque que vous travaillez avec un fichier e‑mail :
 
 ```java
 EmailLoadOptions loadOptions = new EmailLoadOptions();
@@ -153,13 +105,8 @@ try (Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/message.
 }
 ```
 
-**Ancre de définition :** `EmailLoadOptions` indique au SDK que le fichier d'entrée doit être analysé comme un message e‑mail, exposant son corps et sa collection de pièces jointes.  
-Ici, `EmailLoadOptions` est configuré pour spécifier que le fichier chargé est un e‑mail.
-
-### Accéder et parcourir les pièces jointes d'e‑mail
-`EmailAttachment` représente un fichier unique intégré dans l'e‑mail, exposant des propriétés telles que `getFileName()` et `getFileExtension()`.
-
-Vous pouvez maintenant accéder au contenu de l'e‑mail et parcourir ses pièces jointes :
+### 2. Accéder et parcourir les pièces jointes de l’e‑mail
+Récupérez le contenu de l’e‑mail, puis parcourez la collection de pièces jointes **dans l’ordre inverse**. Cela empêche le décalage d’index lors de la suppression d’éléments.
 
 ```java
 EmailContent content = watermarker.getContent(EmailContent.class);
@@ -173,83 +120,65 @@ for (int i = content.getAttachments().getCount() - 1; i >= 0; i--) {
 }
 ```
 
-- **Pourquoi une itération inverse ?** Supprimer les éléments en ordre inverse empêche le décalage des indices d'affecter le processus d'itération.
+- **Pourquoi une itération inversée ?** Supprimer un élément rétrécit la liste ; parcourir la liste à l’envers garantit que le compteur de boucle reste valide.
 
-**Ancre de définition :** `EmailAttachment` représente un fichier unique intégré dans l'e‑mail, exposant des propriétés telles que `getFileName()` et `getFileExtension()`.
-
-### Enregistrer les modifications dans un nouveau fichier
-Une fois les modifications terminées, enregistrez l'e‑mail :
+### 3. Enregistrer l’e‑mail modifié
+Après avoir retiré les fichiers indésirables, écrivez l’e‑mail mis à jour à un nouvel emplacement :
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/modified_message.msg");
 ```
 
-Cela crée un nouveau fichier avec les pièces jointes spécifiées supprimées, vous permettant de conserver le fichier original intact.
+Cela laisse le message original intact tout en vous fournissant une copie nettoyée.
 
 ## Applications pratiques
-**Cas d’utilisation réels :**
-1. **Email Cleanup Automation :** Supprimez les PDF obsolètes ou les grandes feuilles de calcul des messages entrants avant l'archivage.  
-2. **Data Privacy Compliance :** Supprimez automatiquement les contrats confidentiels des e‑mails sortants pour répondre aux exigences du RGPD ou de la HIPAA.  
-3. **Enhanced Email Management :** Réduisez la taille de la boîte aux lettres en supprimant les images redondantes, facilitant les opérations de sauvegarde et de recherche.
 
-**Possibilités d’intégration :**
-- Intégrez aux flux de travail CRM pour filtrer les pièces jointes avant qu'elles ne soient envoyées aux clients.  
-- Intégrez dans un système de gestion de documents pour appliquer les politiques de pièces jointes lors de la réception de documents.
+| Scénario | Comment « comment supprimer les pièces jointes » aide |
+|----------|------------------------------------------------------|
+| **Automatisation du nettoyage des e‑mails** | Purger périodiquement les gros PDF ou les doublons. |
+| **Conformité à la protection des données** | Retirer les documents Word confidentiels avant diffusion externe. |
+| **Intégration CRM** | Filtrer les pièces jointes avant d’enregistrer les e‑mails dans un dossier client. |
 
 ## Considérations de performance
-Pour garantir des performances optimales :
-- **Optimize File I/O Operations :** Traitez par lots plusieurs e‑mails en une seule transaction pour réduire la surcharge d'accès disque.  
-- **Memory Management Tips :** Appelez `watermarker.close()` après chaque opération pour libérer les ressources natives et éviter les fuites de mémoire.  
-- **Best Practices :** Gardez la bibliothèque GroupDocs.Watermark à jour ; chaque version mineure apporte des améliorations de vitesse allant jusqu'à **30 %** pour la gestion de pièces jointes à grande échelle.
 
-## Problèmes courants et solutions
-| Symptôme | Cause probable | Solution |
-|---|---|---|
-| `NullPointerException` lors de l'accès aux pièces jointes | Le fichier e‑mail est corrompu ou n'est pas chargé avec `EmailLoadOptions` | Vérifiez le chemin du fichier et assurez‑vous que `EmailLoadOptions` est utilisé |
-| Les pièces jointes ne sont pas supprimées | La boucle d'itération utilise l'ordre direct | Passez à une itération inverse comme indiqué ci‑dessus |
-| Utilisation élevée de mémoire sur de gros e‑mails | Non fermeture des instances `Watermarker` | Appelez `watermarker.close()` dans un bloc `finally` |
+- **E/S par lots** : traitez plusieurs fichiers .msg en une seule exécution pour réduire la surcharge disque.  
+- **Gestion de la mémoire** : le bloc `try‑with‑resources` libère automatiquement le `Watermarker`.  
+- **Mises à jour de la bibliothèque** : maintenez GroupDocs.Watermark à jour pour profiter des améliorations de performance.
 
-## Questions fréquemment posées
-**Q : Puis‑je supprimer les pièces jointes en fonction du type MIME plutôt que du nom de fichier ?**  
-**A : Oui, inspectez `attachment.getContentType()` et appliquez votre logique de filtrage en conséquence.**
+## Pièges courants et dépannage
 
-**Q : La bibliothèque prend‑elle en charge les fichiers .eml ainsi que les .msg ?**  
-**A : Absolument ; `EmailLoadOptions` fonctionne avec les deux formats sans configuration supplémentaire.**
+- **Fichiers .msg corrompus** : vérifiez que l’e‑mail source s’ouvre correctement dans Outlook avant le traitement.  
+- **Chemins de fichiers incorrects** : utilisez des chemins absolus ou résolvez les chemins relatifs avec `Paths.get(...)`.  
+- **Erreurs de licence** : assurez‑vous que le fichier de licence est placé à un emplacement accessible à la bibliothèque, ou définissez‑le programmatiquement via `License.setLicense(...)`.
 
-**Q : Que se passe‑t‑il si j'essaie de supprimer une pièce jointe qui n’existe pas ?**  
-**A : La boucle d'itération inverse ignore simplement les éléments non correspondants, donc aucune exception n’est levée.**
+## Questions fréquentes
 
-**Q : Est‑il possible de renommer une pièce jointe au lieu de la supprimer ?**  
-**A : Vous pouvez modifier `attachment.setFileName("newName.ext")` avant d’enregistrer l’e‑mail.**
+**Q : Qu’est‑ce que GroupDocs.Watermark ?**  
+R : C’est une bibliothèque Java qui permet aux développeurs d’ajouter, de détecter et de supprimer des filigranes et des pièces jointes dans de nombreux types de documents, y compris les fichiers Outlook .msg.
 
-**Q : Comment puis‑je traiter des milliers d’e‑mails efficacement ?**  
-**A : Utilisez un exécuteur de pool de threads pour paralléliser le cycle charger‑modifier‑enregistrer, en veillant à ce que chaque thread crée sa propre instance `Watermarker`.**
+**Q : Comment gérer plusieurs types de pièces jointes ?**  
+R : Étendez la condition `if` à l’intérieur de la boucle pour vérifier d’autres valeurs `FileType` ou utilisez une expression régulière sur `attachment.getName()`.
 
-## Conclusion
-Vous disposez maintenant d’un modèle complet, prêt pour la production, pour **how to remove attachments** des messages e‑mail en utilisant GroupDocs.Watermark pour Java. En tirant parti de l’itération inverse et de l’API robuste `EmailLoadOptions`, vous pouvez automatiser le nettoyage, appliquer la conformité et garder vos boîtes aux lettres légères.
+**Q : Une licence est‑elle requise pour la production ?**  
+R : Oui. Un essai suffit pour l’évaluation, mais une licence permanente est nécessaire pour les déploiements commerciaux.
 
-### Prochaines étapes
-- Expérimentez avec des filtres supplémentaires (par ex., seuils de taille de fichier).  
-- Combinez cette approche avec les API d’envoi d’e‑mail pour purger les pièces jointes avant l’envoi.  
-- Explorez d’autres fonctionnalités de GroupDocs.Watermark telles que le filigrane et la rédaction de contenu.
+**Q : Que faire en cas d’exception lors de la suppression des pièces jointes ?**  
+R : Vérifiez que l’e‑mail n’est pas protégé par mot de passe, confirmez le chemin du fichier et assurez‑vous d’utiliser une version compatible de GroupDocs.Watermark.
 
-Prêt à implémenter ? Ajoutez les extraits de code ci‑dessus à votre projet et commencez dès aujourd’hui à nettoyer les e‑mails !
+**Q : L’itération inversée améliore‑t‑elle réellement les performances ?**  
+R : Elle élimine le besoin d’ajustements d’index supplémentaires, rendant la boucle plus simple et légèrement plus rapide, surtout avec de grandes collections de pièces jointes.
 
 ## Ressources
-- **Documentation :** [GroupDocs.Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)
-- **API Reference :** [GroupDocs API Reference for Java](https://reference.groupdocs.com/watermark/java)
-- **Download :** [Latest Releases](https://releases.groupdocs.com/watermark/java/)
-- **GitHub Repository :** [GroupDocs.Watermark for Java on GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- **Free Support :** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
-- **Temporary License :** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/) 
+
+- **Documentation** : [GroupDocs.Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Référence API** : [GroupDocs API Reference for Java](https://reference.groupdocs.com/watermark/java)  
+- **Téléchargement** : [Latest Releases](https://releases.groupdocs.com/watermark/java/)  
+- **Dépôt GitHub** : [GroupDocs.Watermark for Java on GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Support gratuit** : [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
+- **Licence temporaire** : [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/) 
 
 ---
 
-**Last Updated:** 2026-06-21  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
-
-## Tutoriels associés
-- [Comment extraire les pièces jointes PDF à l’aide de GroupDocs Watermark en Java pour la gestion de documents e‑mail](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)
-- [Comment ajouter des filigranes aux pièces jointes d’e‑mail à l’aide de GroupDocs.Watermark pour Java](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-attachments/)
-- [Traitement des pièces jointes d’e‑mail Java avec GroupDocs.Watermark : guide complet](/watermark/java/email-document-watermarking/java-email-attachment-processing-groupdocs-watermark/)
+**Dernière mise à jour :** 2026-01-03  
+**Testé avec :** GroupDocs.Watermark 24.11 for Java  
+**Auteur :** GroupDocs

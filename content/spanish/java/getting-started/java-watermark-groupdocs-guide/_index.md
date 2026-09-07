@@ -1,96 +1,49 @@
 ---
-date: '2026-06-21'
-description: Aprenda cómo agregar una marca de agua de texto en Java usando GroupDocs.Watermark.
-  Prevenga fugas de memoria en Java mientras asegura y marca sus documentos de manera
-  eficiente.
+date: '2026-01-06'
+description: Aprende cómo agregar marcas de agua en Java usando la API GroupDocs.Watermark.
+  Protege tus documentos y mejora la imagen de marca sin esfuerzo.
 keywords:
-- add text watermark java
-- prevent memory leaks java
-- GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  headline: Add Text Watermark Java with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  name: Add Text Watermark Java with GroupDocs.Watermark
-  steps:
-  - name: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-    text: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-  - name: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-    text: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-  - name: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-    text: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-  - name: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-    text: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-  type: HowTo
-- questions:
-  - answer: Yes, GroupDocs.Watermark also supports `ImageWatermark` objects for logos
-      or stamps.
-    question: Can I add image watermarks in addition to text?
-  - answer: Absolutely. Provide the password via `LoadOptions` when constructing the
-      `Watermarker`.
-    question: Does the library work with password‑protected PDFs?
-  - answer: Use a loop to instantiate a `Watermarker` per file, apply the watermark,
-      save, and close immediately. This pattern keeps memory usage constant.
-    question: How can I watermark a large batch of documents efficiently?
-  - answer: The API offers a `remove` method that can target specific watermarks by
-      ID or type, but you need to keep a reference to the added watermark.
-    question: Is it possible to remove a watermark that was added earlier?
-  - answer: GroupDocs.Watermark is compatible with Java 8 through Java 21, covering
-      both legacy and modern environments.
-    question: What Java versions are supported?
-  type: FAQPage
-title: Agregar marca de agua de texto en Java con GroupDocs.Watermark
+- Java watermarking
+- GroupDocs.Watermark Java API
+- adding watermarks in Java
+title: 'Agregar marca de agua en Java: asegurar documentos con la API de GroupDocs.Watermark'
 type: docs
 url: /es/java/getting-started/java-watermark-groupdocs-guide/
 weight: 1
 ---
 
-# Agregar marca de agua de texto Java con GroupDocs.Watermark
+# Añadir Marca de Agua Java: Dominando la Seguridad de Documentos con GroupDocs.Watermark
 
-## Introducción
+Agregar una **marca de agua** a tus archivos es una de las formas más efectivas de proteger la propiedad intelectual, marcar tus activos y señalar confidencialidad. En este tutorial aprenderás **cómo añadir marca de agua java** a proyectos usando la poderosa biblioteca GroupDocs.Watermark. Recorreremos todo, desde configurar tu entorno hasta inicializar el `Watermarker`, aplicar una marca de agua de texto, guardar el resultado y limpiar los recursos, todo con explicaciones claras y conversacionales.
 
-Agregar una **marca de agua de texto** a un documento es una de las formas más rápidas de proteger la propiedad intelectual y reforzar la identidad de marca. En este tutorial aprenderás cómo **agregar marca de agua de texto java** con la biblioteca GroupDocs.Watermark, mientras sigues las mejores prácticas para **evitar fugas de memoria java**. Recorreremos cada paso—desde configurar tu proyecto Maven hasta limpiar los recursos—para que puedas integrar la marca de agua en cualquier aplicación Java con confianza.
+## Respuestas Rápidas
+- **¿Qué hace “add watermark java”?** Inserta texto o imágenes personalizadas en un documento para señalar propiedad o confidencialidad.  
+- **¿Qué biblioteca se recomienda?** GroupDocs.Watermark para Java proporciona una API sencilla para marcas de agua de texto e imagen.  
+- **¿Necesito una licencia?** Hay una prueba gratuita disponible; se requiere una licencia completa para uso en producción.  
+- **¿Puedo procesar varios archivos?** Sí, puedes iterar sobre una colección de documentos y reutilizar el mismo flujo de trabajo.  
+- **¿Qué versión de Java se requiere?** Java 8 o superior.
 
-## Respuestas rápidas
-- **¿Qué biblioteca agrega marcas de agua de texto en Java?** GroupDocs.Watermark for Java.  
-- **¿Cuántas líneas de código se necesitan para una marca de agua básica?** Solo dos líneas: crear un `Watermarker` y llamar a `add`.  
-- **¿Puedo evitar fugas de memoria?** Sí—siempre cierra el `Watermarker` después de usarlo.  
-- **¿Qué formatos de archivo son compatibles?** Más de 70 formatos de entrada y salida, incluidos PDF, DOCX, PPTX e imágenes.  
-- **¿Necesito una licencia para producción?** Se requiere una licencia completa para implementaciones comerciales; hay una prueba gratuita disponible para evaluación.
+## Qué es “add watermark java”
 
-## ¿Qué es “add text watermark java”?
-
-**Add text watermark java** se refiere al proceso de insertar programáticamente una superposición textual en un documento usando código Java. Esta técnica se emplea comúnmente para marcar archivos confidenciales, mostrar la marca o indicar el estado del documento. Puede aplicarse a PDFs, documentos Word, presentaciones e imágenes, y la biblioteca maneja la paginación, el escalado y la renderización específica de cada formato automáticamente.
+Agregar una marca de agua en Java significa usar código para insertar programáticamente texto o gráficos visibles o semitransparentes en un documento (PDF, Word, Excel, etc.). Esta técnica te ayuda a proteger información sensible, reforzar la identidad de marca y cumplir con políticas legales o corporativas.
 
 ## ¿Por qué usar GroupDocs.Watermark para Java?
 
-GroupDocs.Watermark soporta **más de 70** formatos de documentos e imágenes, puede procesar archivos de hasta **500 MB** sin cargar todo el archivo en memoria, y proporciona una API fluida que reduce el tiempo de desarrollo hasta en **40 %** comparado con bibliotecas de manipulación manual de PDF. Además, ofrece soporte integrado para archivos protegidos con contraseña, procesamiento por lotes y salida de alta resolución, lo que lo hace adecuado para canalizaciones de documentos de nivel empresarial.
+- **Soporte multiplataforma:** Funciona con más de 100 tipos de documentos.  
+- **API sencilla:** Código mínimo necesario para añadir, personalizar y guardar marcas de agua.  
+- **Enfoque en rendimiento:** Diseñada para procesamiento por lotes y bajo consumo de memoria.  
+- **Soporte activo y documentación:** Actualizaciones regulares y guías completas.
 
-## Requisitos previos
+## Requisitos Previos
 
-- **Java Development Kit (JDK):** Versión 8 o superior.  
+- **Java Development Kit (JDK):** Versión 8 o más reciente.  
 - **IDE:** IntelliJ IDEA, Eclipse o cualquier editor compatible con Java.  
-- **Maven:** Para la gestión de dependencias y la construcción del proyecto.  
-- **Conocimientos básicos de Java:** Familiaridad con conceptos orientados a objetos y manejo de excepciones.  
+- **Maven:** Para la gestión de dependencias.  
+- **Conocimientos básicos de Java:** Familiaridad con clases, métodos y E/S de archivos.
 
 ## Configuración de GroupDocs.Watermark para Java
 
-Para comenzar, agrega la dependencia de GroupDocs.Watermark a tu `pom.xml` de Maven. Esta única entrada incluye todos los binarios necesarios.
-
-**Maven Setup:**
+Para comenzar, agrega el repositorio y la dependencia de GroupDocs.Watermark a tu `pom.xml` de Maven. Esto brinda a tu proyecto acceso a todas las funciones de marcado de agua.
 
 ```xml
 <repositories>
@@ -110,30 +63,19 @@ Para comenzar, agrega la dependencia de GroupDocs.Watermark a tu `pom.xml` de Ma
 </dependencies>
 ```
 
-**Descarga directa:** Alternativamente, puedes descargar la última versión desde [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+**Descarga Directa:** Alternativamente, puedes descargar la última versión desde [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-Recursos adicionales: la documentación oficial de [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/) y la completa [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java) ofrecen información más detallada y ejemplos de código.
-
-### Adquisición de licencia
+### Obtención de Licencia
 
 - **Prueba gratuita:** Prueba todas las funciones sin tarjeta de crédito.  
 - **Licencia temporal:** Extiende el período de prueba para proyectos de evaluación.  
-- **Licencia completa:** Requerida para uso en producción y para desbloquear soporte premium.
+- **Licencia completa:** Requerida para despliegue comercial y uso ilimitado.
 
-Con la biblioteca lista, vamos a sumergirnos en la implementación principal.
-
-## Guía de implementación
-
-### ¿Cómo agregar marca de agua de texto java?
-
-Carga tu archivo fuente con `new Watermarker(inputPath)` y llama a `add(new TextWatermark("CONFIDENTIAL", new Font("Arial", 36)))`. Este patrón de dos pasos crea la marca de agua y la aplica instantáneamente, manejando internamente todos los detalles específicos de cada formato.
+## Guía de Implementación
 
 ### Inicializar Watermarker
 
-#### Definition Anchor
-La clase `Watermarker` es el punto de entrada para todas las operaciones de marcas de agua en GroupDocs.Watermark. Carga un documento en memoria y expone métodos para agregar, editar o eliminar marcas de agua.
-
-**Code Snippet:**
+El primer paso es crear una instancia de `Watermarker` que apunte al documento que deseas proteger.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -146,16 +88,12 @@ public class FeatureInitializeWatermarker {
 }
 ```
 
-**Explicación:**  
-- `inputDocumentPath` – Reemplázalo con la ruta absoluta o relativa al archivo que deseas proteger.  
-- Inicializar el `Watermarker` configura la canalización de procesamiento, permitiendo acciones posteriores de marcas de agua.
+- **`inputDocumentPath`** – Reemplázalo con la ruta absoluta o relativa a tu archivo fuente.  
+- **¿Por qué inicializar?** El objeto `Watermarker` carga el documento en memoria y lo prepara para operaciones de marca de agua.
 
-### Agregar marca de agua de texto al documento
+### Añadir Marca de Agua de Texto al Documento
 
-#### Definition Anchor
-`TextWatermark` representa una superposición textual que puede posicionarse, estilizarse y repetirse en varias páginas. Encapsula la fuente, el tamaño, el color y la configuración de rotación.
-
-**Code Snippet:**
+Crea un objeto `TextWatermark`, define su apariencia y asígnalo al documento cargado.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -170,16 +108,12 @@ public class FeatureAddTextWatermark {
 }
 ```
 
-**Explicación:**  
-- Crea un `TextWatermark` con el texto deseado y un objeto `Font`.  
-- Ajusta propiedades como opacidad, ángulo de rotación y ubicación para que coincidan con las directrices de tu marca.
+- **`TextWatermark`** – Contiene el texto de la marca de agua y la información de estilo.  
+- **Personalización:** Cambia la fuente, tamaño, color u opacidad para que coincida con las directrices de tu marca.
 
-### Guardar documento en la ubicación especificada
+### Guardar Documento en la Ubicación Especificada
 
-#### Definition Anchor
-El método `save` escribe el documento modificado en disco, preservando el formato de archivo original a menos que especifiques un tipo de salida diferente.
-
-**Code Snippet:**
+Después de añadir la marca de agua, persiste los cambios en un nuevo archivo.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -192,16 +126,12 @@ public class FeatureSaveDocument {
 }
 ```
 
-**Explicación:**  
-- `outputDocumentPath` determina dónde se almacenará el archivo con marca de agua.  
-- También puedes cambiar el tipo de archivo proporcionando una instancia de `SaveOptions`.
+- **`outputDocumentPath`** – Elige una carpeta donde se escribirá el archivo con marca de agua.  
+- **¿Por qué guardar?** El método `save` escribe todas las modificaciones, creando un nuevo documento que mantiene el original intacto.
 
-### Cerrar recurso Watermarker
+### Cerrar Recurso Watermarker
 
-#### Definition Anchor
-Llamar a `close()` en el `Watermarker` libera recursos nativos y limpia los buffers internos, lo cual es esencial para **evitar fugas de memoria java**.
-
-**Code Snippet:**
+Libera los recursos del sistema cerrando el `Watermarker` cuando hayas terminado.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -213,61 +143,46 @@ public class FeatureCloseWatermarker {
 }
 ```
 
-**Explicación:**  
-- Cerrar el recurso libera los manejadores de archivos y la memoria nativa, asegurando que tu aplicación permanezca estable durante el procesamiento por lotes.
+- **Mejor práctica:** Cerrar libera los manejadores de archivo y ayuda al recolector de basura de la JVM a recuperar memoria.
 
-## Aplicaciones prácticas
+## Aplicaciones Prácticas
 
-1. **Documentos de marca:** Inserta el nombre o logotipo de tu empresa como una sutil marca de agua de texto en todos los PDFs salientes.  
-2. **Protección de información confidencial:** Marca los informes internos con “CONFIDENTIAL” para evitar la distribución accidental.  
-3. **Control de versiones en colaboración:** Añade números de versión como marcas de agua para seguir las revisiones del documento.  
-4. **Documentación legal y financiera:** Aplica marcas de agua “FOR INTERNAL USE ONLY” en contratos y estados financieros para reforzar el cumplimiento.
+1. **Branding:** Inserta el logotipo o eslogan de tu empresa en cada informe exportado.  
+2. **Confidencialidad:** Marca borradores, contratos o estados financieros con “CONFIDENCIAL”.  
+3. **Seguimiento de versiones:** Añade números de versión o marcas de tiempo como marcas de agua para auditorías.  
+4. **Cumplimiento legal:** Agrega avisos legales a documentos regulados automáticamente.
 
-## Consideraciones de rendimiento
+## Consideraciones de Rendimiento
 
-- **Gestión de recursos:** Siempre cierra los objetos `Watermarker`; esto evita fugas de memoria java y mantiene bajo el uso del heap.  
-- **Procesamiento por lotes:** Al manejar cientos de archivos, reutiliza una única instancia de `Watermarker` por archivo y procésalos secuencialmente para minimizar la sobrecarga del GC.  
-- **Archivos grandes:** GroupDocs.Watermark transmite datos, lo que te permite marcar PDFs de hasta **500 MB** sin cargar todo el archivo en RAM.
+- **Gestión de recursos:** Siempre cierra el `Watermarker` para evitar fugas de memoria, especialmente en trabajos por lotes.  
+- **Procesamiento por lotes:** Recorre una lista de rutas de archivo y reutiliza una única instancia de `Watermarker` cuando sea posible.  
+- **Ajuste de memoria:** Para archivos muy grandes, considera procesar páginas individualmente para mantener bajo el consumo de memoria.
 
-## Problemas comunes y soluciones
+## Preguntas Frecuentes
 
-| Problema | Solución |
-|----------|----------|
-| **OutOfMemoryError** al procesar PDFs grandes | Habilita el modo de transmisión usando `Watermarker.setLoadOptions(new LoadOptions().setLoadMode(LoadMode.Stream))` y siempre cierra el `Watermarker`. |
-| **Marca de agua no visible en algunas páginas** | Verifica que la opacidad del `TextWatermark` esté por encima de 0.1 y que el tamaño de la página coincida con las dimensiones de la marca de agua. |
-| **Excepción de licencia** | Asegúrate de que el archivo de licencia esté en el classpath y llama a `License license = new License(); license.setLicense("path/to/license.lic");` antes de crear el `Watermarker`. |
+**Q: ¿Qué es una marca de agua de texto?**  
+A: Una marca de agua de texto es una pieza de información textual incrustada en un documento, a menudo usada para branding o seguridad.
 
-## Preguntas frecuentes
+**Q: ¿Puedo añadir marcas de agua de imagen usando GroupDocs.Watermark?**  
+A: Sí, la biblioteca también soporta marcas de agua de imagen, permitiéndote colocar logotipos o firmas.
 
-**Q: ¿Puedo agregar marcas de agua de imagen además de texto?**  
-A: Sí, GroupDocs.Watermark también soporta objetos `ImageWatermark` para logotipos o sellos.
+**Q: ¿Cómo manejo conjuntos grandes de documentos de forma eficiente con GroupDocs.Watermark?**  
+A: Utiliza bucles de procesamiento por lotes y asegura cerrar cada instancia de `Watermarker` rápidamente para liberar recursos.
 
-**Q: ¿La biblioteca funciona con PDFs protegidos con contraseña?**  
-A: Absolutamente. Proporciona la contraseña a través de `LoadOptions` al crear el `Watermarker`.
+**Q: ¿Es posible eliminar marcas de agua añadidas por GroupDocs.Watermark?**  
+A: La eliminación no está cubierta en esta guía; requiere llamadas API adicionales y un manejo cuidadoso del contenido original.
 
-**Q: ¿Cómo puedo marcar un gran lote de documentos de manera eficiente?**  
-A: Usa un bucle para instanciar un `Watermarker` por archivo, aplicar la marca de agua, guardar y cerrar inmediatamente. Este patrón mantiene constante el uso de memoria.
+**Q: ¿Cuáles son los problemas comunes al usar GroupDocs.Watermark?**  
+A: Los problemas típicos incluyen rutas de archivo incorrectas, licencias faltantes o uso de formatos de documento no soportados. Verifica dependencias y rutas antes de ejecutar.
 
-**Q: ¿Es posible eliminar una marca de agua que se añadió anteriormente?**  
-A: La API ofrece un método `remove` que puede dirigirse a marcas de agua específicas por ID o tipo, pero necesitas mantener una referencia a la marca de agua añadida.
+## Recursos
 
-**Q: ¿Qué versiones de Java son compatibles?**  
-A: GroupDocs.Watermark es compatible con Java 8 hasta Java 21, cubriendo tanto entornos heredados como modernos.
-
-## Conclusión
-
-Ahora tienes un flujo de trabajo completo y listo para producción para **add text watermark java** usando GroupDocs.Watermark. Siguiendo los pasos anteriores—y recordando cerrar el `Watermarker` para **evitar fugas de memoria java**—puedes proteger, marcar y gestionar documentos a gran escala. Explora tipos adicionales de marcas de agua, experimenta con rotación y opacidad, e integra la API en canalizaciones de procesamiento de documentos más grandes para una mayor automatización.
+- **Documentación:** [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Referencia API:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Descarga:** [GroupDo
 
 ---
 
-**Last Updated:** 2026-06-21  
-**Tested With:** GroupDocs.Watermark 23.12 for Java  
-**Author:** GroupDocs  
-
----
-
-## Tutoriales relacionados
-
-- [Cómo agregar una marca de agua de texto a PDFs usando GroupDocs.Watermark para Java: Guía paso a paso](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [Agregar y bloquear marcas de agua de texto en documentos Word usando Java: Guía completa con GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [Cómo agregar marcas de agua de texto rotadas en documentos usando GroupDocs.Watermark para Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+**Última actualización:** 2026-01-06  
+**Probado con:** GroupDocs.Watermark 24.11  
+**Autor:** GroupDocs

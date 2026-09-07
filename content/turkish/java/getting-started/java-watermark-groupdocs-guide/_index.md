@@ -1,96 +1,50 @@
 ---
-date: '2026-06-21'
-description: GroupDocs.Watermark kullanarak Java'da metin filigranı eklemeyi öğrenin.
-  Belgelerinizi güvenli bir şekilde korurken ve markalaştırırken Java'da bellek sızıntılarını
-  önleyin.
+date: '2026-01-06'
+description: GroupDocs.Watermark API kullanarak Java'da nasıl filigran ekleyeceğinizi
+  öğrenin. Belgelerinizi koruyun ve markalaşmayı zahmetsizce geliştirin.
 keywords:
-- add text watermark java
-- prevent memory leaks java
-- GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  headline: Add Text Watermark Java with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
-    memory leaks java while securing and branding your documents efficiently.
-  name: Add Text Watermark Java with GroupDocs.Watermark
-  steps:
-  - name: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-    text: '**Branding Documents:** Insert your company name or logo as a subtle text
-      watermark on all outgoing PDFs.'
-  - name: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-    text: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
-      to deter accidental distribution.'
-  - name: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-    text: '**Version Control in Collaboration:** Add version numbers as watermarks
-      to keep track of document revisions.'
-  - name: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-    text: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
-      on contracts and statements to reinforce compliance.'
-  type: HowTo
-- questions:
-  - answer: Yes, GroupDocs.Watermark also supports `ImageWatermark` objects for logos
-      or stamps.
-    question: Can I add image watermarks in addition to text?
-  - answer: Absolutely. Provide the password via `LoadOptions` when constructing the
-      `Watermarker`.
-    question: Does the library work with password‑protected PDFs?
-  - answer: Use a loop to instantiate a `Watermarker` per file, apply the watermark,
-      save, and close immediately. This pattern keeps memory usage constant.
-    question: How can I watermark a large batch of documents efficiently?
-  - answer: The API offers a `remove` method that can target specific watermarks by
-      ID or type, but you need to keep a reference to the added watermark.
-    question: Is it possible to remove a watermark that was added earlier?
-  - answer: GroupDocs.Watermark is compatible with Java 8 through Java 21, covering
-      both legacy and modern environments.
-    question: What Java versions are supported?
-  type: FAQPage
-title: GroupDocs.Watermark ile Java'da Metin Filigranı Ekle
+- Java watermarking
+- GroupDocs.Watermark Java API
+- adding watermarks in Java
+title: 'Java''da Filigran Ekle: GroupDocs.Watermark API ile Belgeleri Güvence Altına
+  Al'
 type: docs
 url: /tr/java/getting-started/java-watermark-groupdocs-guide/
 weight: 1
 ---
 
-# GroupDocs.Watermark ile Java'da Metin Filigranı Ekleme
+# Watermark Ekleme Java: GroupDocs.Watermark ile Belge Güvenliğini Ustalıkla Yönetme
 
-## Giriş
+Dosyalarınıza bir **watermark** eklemek, fikri mülkiyeti korumanın, varlıklarınıza marka eklemenin ve gizliliği işaretlemenin en etkili yollarından biridir. Bu öğreticide, güçlü GroupDocs.Watermark kütüphanesini kullanarak **how to add watermark java** projelerini nasıl ekleyeceğinizi öğreneceksiniz. Ortamınızı kurmaktan `Watermarker` nesnesini başlatmaya, metin watermark’i uygulamaya, sonucu kaydetmeye ve kaynakları temizlemeye kadar her adımı net ve sohbet tarzı açıklamalarla ele alacağız.
 
-Bir belgeye **text watermark** eklemek, fikri mülkiyeti korumanın ve marka kimliğini güçlendirmenin en hızlı yollarından biridir. Bu öğreticide GroupDocs.Watermark kütüphanesi ile **add text watermark java** nasıl yapılacağını ve **prevent memory leaks java** için en iyi uygulamaları öğreneceksiniz. Maven projenizi kurmaktan kaynakları temizlemeye kadar her adımı adım adım göstereceğiz, böylece filigranlamayı herhangi bir Java uygulamasına güvenle entegre edebilirsiniz.
+## Quick Answers
+- **“add watermark java” ne yapar?** Belgeye sahipliği veya gizliliği işaretlemek için özel metin veya görseller gömer.  
+- **Hangi kütüphane önerilir?** GroupDocs.Watermark for Java, hem metin hem de görüntü watermark’leri için basit bir API sağlar.  
+- **Lisans gerekli mi?** Ücretsiz bir deneme mevcuttur; üretim kullanımı için tam lisans gerekir.  
+- **Birden fazla dosya işleyebilir miyim?** Evet – bir belge koleksiyonu üzerinde döngü kurabilir ve aynı iş akışını yeniden kullanabilirsiniz.  
+- **Hangi Java sürümü gerekir?** Java 8 veya üzeri.
 
-## Hızlı Yanıtlar
-- **Java'da metin filigranı ekleyen kütüphane nedir?** GroupDocs.Watermark for Java.  
-- **Temel bir filigran için kaç satır kod gerekir?** Sadece iki satır: bir `Watermarker` oluşturun ve `add` çağırın.  
-- **Bellek sızıntılarını önleyebilir miyim?** Evet—her zaman `Watermarker`'ı kullanım sonrası kapatın.  
-- **Hangi dosya formatları destekleniyor?** PDF, DOCX, PPTX ve görseller dahil 70'ten fazla giriş ve çıkış formatı.  
-- **Üretim için lisansa ihtiyacım var mı?** Ticari dağıtımlar için tam lisans gereklidir; değerlendirme için ücretsiz deneme mevcuttur.
+## “add watermark java” nedir?
 
-## “add text watermark java” nedir?
+Java’da watermark eklemek, bir belgeye (PDF, Word, Excel vb.) görünür veya yarı saydam metin ya da grafik eklemek için kod kullanmak anlamına gelir. Bu teknik, hassas bilgileri korumanıza, marka kimliğinizi güçlendirmenize ve yasal ya da kurumsal politikalara uymanıza yardımcı olur.
 
-**Add text watermark java**, bir belgeye Java kodu kullanarak programlı bir şekilde metinsel bir kaplama ekleme sürecini ifade eder. Bu teknik genellikle gizli dosyaları işaretlemek, marka göstermek veya belge durumunu belirtmek için kullanılır. PDF'ler, Word belgeleri, sunumlar ve görseller üzerine uygulanabilir ve kütüphane sayfalama, ölçekleme ve format‑spesifik renderlemeyi otomatik olarak yönetir.
+## Neden GroupDocs.Watermark for Java kullanılmalı?
 
-## Java için GroupDocs.Watermark neden kullanılmalı?
-
-GroupDocs.Watermark, **70+** belge ve görüntü formatını destekler, dosyaları **500 MB**'a kadar belleğe tamamını yüklemeden işleyebilir ve manuel PDF işleme kütüphanelerine kıyasla geliştirme süresini **%40**'a kadar azaltan akıcı bir API sunar. Ayrıca, şifre korumalı dosyalar, toplu işleme ve yüksek çözünürlüklü çıktı için yerleşik destek sağlar ve kurumsal düzeyde belge iş akışları için uygundur.
+- **Çapraz‑format desteği:** 100’den fazla belge türüyle çalışır.  
+- **Basit API:** watermark ekleme, özelleştirme ve kaydetme için minimum kod gerekir.  
+- **Performans odaklı:** Toplu işleme ve düşük bellek tüketimi için tasarlanmıştır.  
+- **Aktif destek & dokümantasyon:** Düzenli güncellemeler ve kapsamlı rehberler.
 
 ## Önkoşullar
 
-- **Java Development Kit (JDK):** Version 8 veya üzeri.  
+- **Java Development Kit (JDK):** Versiyon 8 veya daha yenisi.  
 - **IDE:** IntelliJ IDEA, Eclipse veya herhangi bir Java‑uyumlu editör.  
-- **Maven:** Bağımlılık yönetimi ve proje derlemesi için.  
-- **Temel Java bilgisi:** Nesne yönelimli kavramlar ve istisna yönetimi hakkında bilgi.  
+- **Maven:** Bağımlılık yönetimi için.  
+- **Temel Java bilgisi:** Sınıflar, metodlar ve dosya I/O konularına aşinalık.
 
-## Java için GroupDocs.Watermark Kurulumu
+## GroupDocs.Watermark for Java Kurulumu
 
-Başlamak için, GroupDocs.Watermark bağımlılığını Maven `pom.xml` dosyanıza ekleyin. Bu tek giriş, gerekli tüm ikili dosyaları çeker.
-
-**Maven Kurulumu:**
+Başlamak için Maven `pom.xml` dosyanıza GroupDocs.Watermark deposunu ve bağımlılığını ekleyin. Bu, projenizin tüm watermark özelliklerine erişmesini sağlar.
 
 ```xml
 <repositories>
@@ -110,30 +64,19 @@ Başlamak için, GroupDocs.Watermark bağımlılığını Maven `pom.xml` dosyan
 </dependencies>
 ```
 
-**Doğrudan İndirme:** Alternatif olarak, en son sürümü [GroupDocs.Watermark Java sürümleri](https://releases.groupdocs.com/watermark/java/) adresinden indirebilirsiniz.
-
-Ek kaynaklar: resmi [GroupDocs.Watermark Dokümantasyonu](https://docs.groupdocs.com/watermark/java/) ve kapsamlı [GroupDocs API Referansı](https://reference.groupdocs.com/watermark/java) daha derin bilgiler ve kod örnekleri sağlar.
+**Doğrudan İndirme:** Alternatif olarak, en yeni sürümü [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) adresinden indirebilirsiniz.
 
 ### Lisans Edinme
 
-- **Ücretsiz Deneme:** Kredi kartı gerektirmeden tüm özellikleri test edin.  
-- **Geçici Lisans:** Değerlendirme projeleri için deneme süresini uzatır.  
-- **Tam Lisans:** Üretim kullanımı için gereklidir ve premium desteği açar.
-
-Kütüphane hazır olduğunda, temel uygulamaya dalalım.
+- **Ücretsiz Deneme:** Tüm özellikleri kredi kartı gerektirmeden test edin.  
+- **Geçici Lisans:** Değerlendirme projeleri için deneme süresini uzatın.  
+- **Tam Lisans:** Ticari dağıtım ve sınırsız kullanım için gereklidir.
 
 ## Uygulama Rehberi
 
-### Metin filigranı java nasıl eklenir?
+### Watermarker Başlatma
 
-Kaynak dosyanızı `new Watermarker(inputPath)` ile yükleyin ve `add(new TextWatermark("CONFIDENTIAL", new Font("Arial", 36)))` çağırın. Bu iki adımlı desen filigranı oluşturur ve anında uygular, tüm format‑spesifik detayları dahili olarak yönetir.
-
-### Watermarker'ı Başlatma
-
-#### Definition Anchor
-`Watermarker` sınıfı, GroupDocs.Watermark'ta tüm filigran işlemleri için giriş noktasıdır. Bir belgeyi belleğe yükler ve filigran ekleme, düzenleme veya kaldırma yöntemlerini sunar.
-
-**Code Snippet:**
+İlk adım, korumak istediğiniz belgeye işaret eden bir `Watermarker` örneği oluşturmaktır.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -146,16 +89,12 @@ public class FeatureInitializeWatermarker {
 }
 ```
 
-**Açıklama:**  
-- `inputDocumentPath` – Koruma altına almak istediğiniz dosyanın mutlak ya da göreli yoluyla değiştirin.  
-- `Watermarker`'ı başlatmak, işleme hattını kurar ve sonraki filigran işlemlerine izin verir.
+- **`inputDocumentPath`** – Kaynak dosyanızın mutlak ya da göreli yoluyla değiştirin.  
+- **Neden başlatılıyor?** `Watermarker` nesnesi belgeyi belleğe yükler ve watermark işlemleri için hazır hâle getirir.
 
-### Belgeye Metin Filigranı Ekleme
+### Belgeye Metin Watermark’i Ekleme
 
-#### Definition Anchor
-`TextWatermark`, konumlandırılabilen, biçimlendirilebilen ve sayfalara tekrar edilebilen bir metin kaplamasını temsil eder. Yazı tipi, boyut, renk ve dönüş ayarlarını kapsar.
-
-**Code Snippet:**
+Bir `TextWatermark` nesnesi oluşturun, görünümünü tanımlayın ve yüklü belgeye ekleyin.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -170,16 +109,12 @@ public class FeatureAddTextWatermark {
 }
 ```
 
-**Açıklama:**  
-- İstenen metin ve bir `Font` nesnesi ile `TextWatermark` oluşturun.  
-- Opaklık, dönüş açısı ve yerleşim gibi özellikleri marka yönergelerinize uygun şekilde ayarlayın.
+- **`TextWatermark`** – Watermark metni ve stil bilgilerini tutar.  
+- **Özelleştirme:** Font, boyut, renk veya opaklığı marka yönergelerinize göre değiştirin.
 
-### Belgeyi Belirtilen Konuma Kaydet
+### Belgeyi Belirtilen Konuma Kaydetme
 
-#### Definition Anchor
-`save` yöntemi, değiştirilmiş belgeyi diske yazar, farklı bir çıktı türü belirtmediğiniz sürece orijinal dosya formatını korur.
-
-**Code Snippet:**
+Watermark eklendikten sonra değişiklikleri yeni bir dosyaya kalıcı hâle getirin.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -192,16 +127,12 @@ public class FeatureSaveDocument {
 }
 ```
 
-**Açıklama:**  
-- `outputDocumentPath` filigranlı dosyanın nerede saklanacağını belirler.  
-- `SaveOptions` örneği sağlayarak dosya türünü de değiştirebilirsiniz.
+- **`outputDocumentPath`** – Watermark’li dosyanın yazılacağı klasörü seçin.  
+- **Neden kaydedilir?** `save` metodu tüm değişiklikleri yazar, orijinali dokunulmamış bir yeni belge oluşturur.
 
 ### Watermarker Kaynağını Kapatma
 
-#### Definition Anchor
-`Watermarker` üzerinde `close()` çağrısı, yerel kaynakları serbest bırakır ve dahili tamponları temizler; bu, **prevent memory leaks java** için esastır.
-
-**Code Snippet:**
+İşiniz bittiğinde `Watermarker`ı kapatarak sistem kaynaklarını serbest bırakın.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -213,59 +144,48 @@ public class FeatureCloseWatermarker {
 }
 ```
 
-**Açıklama:**  
-- Kaynağı kapatmak, dosya tanıtıcılarını ve yerel belleği serbest bırakır, uygulamanızın toplu işleme sırasında kararlı kalmasını sağlar.
+- **En iyi uygulama:** Kapatma dosya tutamaçlarını serbest bırakır ve JVM’in çöp toplayıcısının belleği geri kazanmasına yardımcı olur.
 
-## Pratik Uygulamalar
+## Pratik Kullanım Alanları
 
-1. **Belgeleri Markalama:** Şirket adınızı veya logonuzu tüm dışa çıkan PDF'lerde ince bir metin filigranı olarak ekleyin.  
-2. **Gizli Bilgileri Koruma:** İç raporları “CONFIDENTIAL” ile işaretleyerek yanlışlıkla dağıtımı önleyin.  
-3. **İşbirliğinde Sürüm Kontrolü:** Sürüm numaralarını filigran olarak ekleyerek belge revizyonlarını izleyin.  
-4. **Hukuki ve Finansal Belgeler:** Sözleşmeler ve beyanlarda “FOR INTERNAL USE ONLY” filigranları uygulayarak uyumu güçlendirin.
+1. **Markalaşma:** Her dışa aktarılan raporda şirket logonuzu veya sloganınızı ekleyin.  
+2. **Gizlilik:** Taslakları, sözleşmeleri veya finansal raporları “CONFIDENTIAL” etiketiyle işaretleyin.  
+3. **Sürüm Takibi:** Denetim izleri için sürüm numaraları veya zaman damgalarını watermark olarak ekleyin.  
+4. **Yasal Uyum:** Düzenlenmiş belgelere otomatik olarak yasal uyarılar ekleyin.
 
-## Performans Hususları
+## Performans Düşünceleri
 
-- **Kaynak Yönetimi:** Her zaman `Watermarker` nesnelerini kapatın; bu, memory leaks java önler ve yığın kullanımını düşük tutar.  
-- **Toplu İşleme:** Yüzlerce dosyayla çalışırken, dosya başına tek bir `Watermarker` örneğini yeniden kullanın ve GC yükünü azaltmak için sıralı işleyin.  
-- **Büyük Dosyalar:** GroupDocs.Watermark veri akışı yapar, **500 MB**'a kadar PDF'leri tüm dosyayı RAM'e yüklemeden filigranlamanıza olanak tanır.
+- **Kaynak Yönetimi:** Özellikle toplu işlerde bellek sızıntılarını önlemek için `Watermarker`ı her zaman kapatın.  
+- **Toplu İşleme:** Dosya yolu listesi üzerinden döngü kurun ve mümkün olduğunca tek bir `Watermarker` örneğini yeniden kullanın.  
+- **Bellek Ayarı:** Çok büyük dosyalar için sayfaları ayrı ayrı işleyerek bellek ayak izini düşük tutun.
 
-## Yaygın Sorunlar ve Çözümler
+## Sık Sorulan Sorular
 
-| Sorun | Çözüm |
-|-------|----------|
-| **OutOfMemoryError** büyük PDF'leri işlerken | `Watermarker.setLoadOptions(new LoadOptions().setLoadMode(LoadMode.Stream))` kullanarak akış modunu etkinleştirin ve her zaman `Watermarker`'ı kapatın. |
-| **Filigran bazı sayfalarda görünmüyor** | `TextWatermark` opaklığının 0.1'in üzerinde ayarlandığını ve sayfa boyutunun filigran boyutlarıyla eşleştiğini doğrulayın. |
-| **Lisans istisnası** | Lisans dosyasının sınıf yolunda (classpath) bulunduğundan emin olun ve `Watermarker` oluşturulmadan önce `License license = new License(); license.setLicense("path/to/license.lic");` çağrısını yapın. |
+**S: Metin watermark nedir?**  
+C: Metin watermark, belgeye gömülen ve genellikle markalaşma ya da güvenlik amacıyla kullanılan bir metin parçasıdır.
 
-## Sıkça Sorulan Sorular
+**S: GroupDocs.Watermark ile görüntü watermark’i ekleyebilir miyim?**  
+C: Evet, kütüphane aynı zamanda logo veya imza gibi görüntü watermark’lerini de destekler.
 
-**Q: Metin dışında görüntü filigranı ekleyebilir miyim?**  
-A: Evet, GroupDocs.Watermark ayrıca logo veya damga için `ImageWatermark` nesnelerini destekler.
+**S: GroupDocs.Watermark ile büyük belge setlerini verimli bir şekilde nasıl yönetirim?**  
+C: Toplu işleme döngüleri kullanın ve her `Watermarker` örneğini hızlıca kapatarak kaynakları serbest bırakın.
 
-**Q: Kütüphane şifre korumalı PDF'lerle çalışıyor mu?**  
-A: Kesinlikle. `Watermarker` oluştururken şifreyi `LoadOptions` aracılığıyla sağlayın.
+**S: GroupDocs.Watermark tarafından eklenen watermark’leri kaldırmak mümkün mü?**  
+C: Bu kılavuzda ele alınmaz; ek bir API çağrısı ve orijinal içeriğin dikkatli yönetimini gerektirir.
 
-**Q: Büyük bir belge toplusunu verimli bir şekilde nasıl filigranlayabilirim?**  
-A: Her dosya için bir `Watermarker` örneği oluşturup, filigranı uygulayın, kaydedin ve hemen kapatın. Bu desen bellek kullanımını sabit tutar.
+**S: GroupDocs.Watermark kullanırken sık karşılaşılan sorunlar nelerdir?**  
+C: Yanlış dosya yolları, eksik lisanslar veya desteklenmeyen belge formatları tipik problemler arasındadır. Bağımlılıkları ve yolları çalıştırmadan önce doğrulayın.
 
-**Q: Daha önce eklenmiş bir filigranı kaldırmak mümkün mü?**  
-A: API, ID veya tipe göre belirli filigranları hedefleyen bir `remove` metodunu sunar, ancak eklenen filigrana bir referans tutmanız gerekir.
+## Kaynaklar
 
-**Q: Hangi Java sürümleri destekleniyor?**  
-A: GroupDocs.Watermark, Java 8'den Java 21'e kadar uyumludur, hem eski hem de modern ortamları kapsar.
-
-## Sonuç
-
-Artık GroupDocs.Watermark kullanarak **add text watermark java** için tam, üretim‑hazır bir iş akışına sahipsiniz. Yukarıdaki adımları izleyerek ve `Watermarker`'ı **prevent memory leaks java** için kapatmayı unutmayarak belgeleri ölçekli bir şekilde koruyabilir, markalaştırabilir ve yönetebilirsiniz. Ek filigran türlerini keşfedin, dönüş ve opaklık ile deney yapın ve API'yi daha büyük belge‑işleme hatlarına entegre ederek otomasyonu daha da artırın.
+- **Dokümantasyon:** [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **API Referansı:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
+- **İndirme:** [GroupDo
 
 ---
 
-**Son Güncelleme:** 2026-06-21  
-**Test Edilen:** GroupDocs.Watermark 23.12 for Java  
+**Son Güncelleme:** 2026-01-06  
+**Test Edilen Versiyon:** GroupDocs.Watermark 24.11  
 **Yazar:** GroupDocs  
 
-## İlgili Eğitimler
-
-- [Java için GroupDocs.Watermark ile PDF'lere Metin Filigranı Ekleme: Adım Adım Kılavuz](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [Java ile Word Belgelerinde Metin Filigranlarını Ekleme ve Kilitleme: GroupDocs.Watermark ile Kapsamlı Rehber](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [Java için GroupDocs.Watermark ile Belgelerde Döndürülmüş Metin Filigranları Ekleme](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)
+---

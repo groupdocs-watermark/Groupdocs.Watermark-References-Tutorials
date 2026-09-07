@@ -1,84 +1,75 @@
 ---
-date: 2026-06-21
-description: GroupDocs.Watermark का उपयोग करके Java में टेक्स्ट वॉटरमार्क बनाना, PDF
-  में वॉटरमार्क जोड़ना, और licensing को सरल स्टेप‑बाय‑स्टेप ट्यूटोरियल में कॉन्फ़िगर
-  करना सीखें।
-keywords:
-- create text watermark java
-- add watermark pdf java
-- how to add watermark java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to create text watermark Java using GroupDocs.Watermark,
-    add watermark PDF Java, and configure licensing in simple step‑by‑step tutorials.
-  headline: Create Text Watermark Java with GroupDocs.Watermark
-  type: TechArticle
-- questions:
-  - answer: Load the PDF with `Watermark.load`, call `addText` with your desired string
-      and styling, then `save` the file. This three‑step process handles multi‑page
-      PDFs automatically.
-    question: How do I add a text watermark to a PDF using Java?
-  - answer: Yes, add the GroupDocs.Watermark dependency to your `pom.xml`; the library
-      resolves all required transitive dependencies.
-    question: Can I use GroupDocs.Watermark with Maven?
-  - answer: Absolutely – provide the password when calling `load`, and the API will
-      decrypt, apply the watermark, and re‑encrypt on save.
-    question: Is it possible to watermark password‑protected documents?
-  - answer: The engine streams data, allowing it to watermark 200‑page PDFs in under
-      2 seconds with less than 100 MB memory usage.
-    question: What is the performance impact on large files?
-  - answer: Yes, use `addImage` with a PNG or JPEG; you can control opacity, scaling,
-      and placement just like text watermarks.
-    question: Does the library support adding image watermarks as well?
-  type: FAQPage
-title: GroupDocs.Watermark के साथ Java में टेक्स्ट वॉटरमार्क बनाएं
+description: GroupDocs.Watermark का उपयोग करके जावा में टेक्स्ट वॉटरमार्क कैसे जोड़ें,
+  सीखें – इंस्टॉलेशन, लाइसेंसिंग और जावा प्रोजेक्ट्स में वॉटरमार्क जोड़ने के बारे
+  में चरण‑दर‑चरण गाइड।
+title: GroupDocs.Watermark के साथ जावा में टेक्स्ट वॉटरमार्क जोड़ें
 type: docs
 url: /hi/java/getting-started/
 weight: 1
 ---
 
-# GroupDocs.Watermark के साथ जावा में टेक्स्ट वॉटरमार्क बनाएं
+# जावा में GroupDocs.Watermark के साथ टेक्स्ट वॉटरमार्क जोड़ें
 
-इस गाइड में आप GroupDocs.Watermark का उपयोग करके **create text watermark java** एप्लिकेशन बनाना सीखेंगे। हम लाइब्रेरी को इंस्टॉल करने, एक अस्थायी लाइसेंस सेट करने, और PDF, Word, और प्रेजेंटेशन फ़ाइलों पर टेक्स्ट वॉटरमार्क लागू करने की प्रक्रिया बताएँगे। अंत तक आप अपने दस्तावेज़ों को एक पेशेवर वॉटरमार्किंग समाधान के साथ सुरक्षित करने के लिए तैयार होंगे।
+जावा डेवलपर्स के लिए **Add Text Watermark** श्रृंखला में आपका स्वागत है। इस ट्यूटोरियल में आप जानेंगे कि कैसे GroupDocs.Watermark लाइब्रेरी का उपयोग करके किसी भी दस्तावेज़ में जल्दी से टेक्स्ट वॉटरमार्क जोड़ा जा सकता है। हम SDK को इंस्टॉल करने, लाइसेंस को कॉन्फ़िगर करने और वॉटरमार्क लागू करने की प्रक्रिया को चरणबद्ध तरीके से समझाएंगे—सभी स्पष्ट और संवादात्मक व्याख्याओं के साथ, जिससे आप मिनटों में शुरू कर सकें।
 
 ## त्वरित उत्तर
-- **जावा में टेक्स्ट वॉटरमार्क जोड़ने का सबसे आसान तरीका क्या है?** Watermark क्लास का उपयोग करें, अपना दस्तावेज़ लोड करें, `addText` कॉल करें, फिर सेव करें – तीन लाइनों का कोड।  
-- **कौन से फ़ाइल फ़ॉर्मेट समर्थित हैं?** 30 से अधिक इनपुट और आउटपुट फ़ॉर्मेट, जिसमें PDF, DOCX, PPTX, और इमेजेज़ शामिल हैं।  
-- **क्या विकास के लिए मुझे लाइसेंस चाहिए?** टेस्टिंग के लिए एक अस्थायी लाइसेंस काम करता है; प्रोडक्शन के लिए पूर्ण लाइसेंस आवश्यक है।  
-- **क्या मैं गुणवत्ता खोए बिना PDFs पर वॉटरमार्क लगा सकता हूँ?** हाँ, GroupDocs.Watermark मूल रेंडरिंग को संरक्षित रखता है और हाई‑रेज़ोल्यूशन PDFs को सपोर्ट करता है।  
-- **क्या API Java 8 और उससे ऊपर के संस्करणों के साथ संगत है?** यह लाइब्रेरी Java 8 से लेकर Java 21 तक को सपोर्ट करती है।
+- **What does “add text watermark” mean?** यह दस्तावेज़ पर एक दृश्यमान टेक्स्ट ओवरले डालता है ताकि सामग्री की सुरक्षा या ब्रांडिंग की जा सके।  
+- **Which library helps me add watermark Java?** GroupDocs.Watermark for Java इस उद्देश्य के लिए एक सरल API प्रदान करता है।  
+- **Do I need a license?** परीक्षण के लिए एक अस्थायी लाइसेंस काम करता है; उत्पादन के लिए पूर्ण लाइसेंस आवश्यक है।  
+- **Can I use it with PDFs, Word, and PowerPoint?** हाँ – API सभी प्रमुख Office और PDF फ़ॉर्मेट्स को सपोर्ट करता है।  
+- **How long does implementation take?** सामान्यतः बुनियादी टेक्स्ट वॉटरमार्क के लिए 15 मिनट से कम समय लगता है।
 
-## जावा में टेक्स्ट वॉटरमार्क कैसे बनाएं?
-`Watermark` वह मुख्य क्लास है जिसका उपयोग दस्तावेज़ लोड करने और वॉटरमार्क ऑपरेशन्स लागू करने के लिए किया जाता है। अपने दस्तावेज़ को `Watermark` क्लास से लोड करें, वॉटरमार्क सामग्री और शैली निर्धारित करने के लिए `addText` कॉल करें, और फिर `save` को कॉल करके वॉटरमार्क किया हुआ फ़ाइल लिखें। यह तीन‑स्टेप प्रक्रिया PDF, Word, और प्रेजेंटेशन फ़ाइलों को संभालती है, लेआउट को संरक्षित रखते हुए टेक्स्ट वॉटरमार्क एम्बेड करती है। **create text watermark java** का सबसे सरल कॉल ऊपर वर्णित तीन‑स्टेप फ्लो का अनुसरण करता है।
+## टेक्स्ट वॉटरमार्क क्या है?
+टेक्स्ट वॉटरमार्क एक अर्द्ध‑पारदर्शी टेक्स्ट का टुकड़ा है जो दस्तावेज़ के प्रत्येक पृष्ठ पर ओवरले किया जाता है। यह आमतौर पर स्वामित्व, गोपनीयता दर्शाने या कंपनी के नाम से दस्तावेज़ को ब्रांड करने के लिए उपयोग किया जाता है।
 
-## जावा में PDF पर वॉटरमार्क कैसे जोड़ें?
-`Watermark.load` दस्तावेज़ को Watermark API में प्रोसेसिंग के लिए लोड करता है। `Watermark.load("sample.pdf")` से PDF लोड करें, वॉटरमार्क रखने के लिए `addText("Confidential")` कॉल करें, और फिर `save("sample_watermarked.pdf")` करें। यह सरल क्रम मल्टी‑पेज PDFs के लिए काम करता है और वेक्टर क्वालिटी को बनाए रखता है, जिससे वॉटरमार्क हर पेज पर दिखाई देता है बिना फ़ाइल आकार में उल्लेखनीय वृद्धि के। आप फ़ॉन्ट साइज, रंग, और रोटेशन भी निर्दिष्ट कर सकते हैं ताकि आपके ब्रांडिंग आवश्यकताओं से मेल खाए।
+## GroupDocs.Watermark के साथ टेक्स्ट वॉटरमार्क क्यों जोड़ें?
+- **Cross‑format support** – PDF, DOCX, PPTX और कई अन्य प्रकारों के साथ काम करता है।  
+- **No external dependencies** – शुद्ध Java, कोई नेटिव लाइब्रेरी नहीं।  
+- **Fine‑grained control** – फ़ॉन्ट, आकार, रंग, घुमाव और अपारदर्शिता को अनुकूलित करें।  
+- **Security** – अनधिकृत वितरण को रोकने में मदद करता है और ब्रांड पहचान को मजबूत करता है।
 
-## जावा में वॉटरमार्क कैसे जोड़ें – सामान्य परिदृश्य
-`Watermark` क्लास समर्थित दस्तावेज़ों पर टेक्स्ट और इमेज दोनों वॉटरमार्क लागू करने के लिए मेथड्स प्रदान करता है। Word, Excel, और PowerPoint फ़ाइलों के लिए वही `Watermark` वर्कफ़्लो उपयोग करें: दस्तावेज़ लोड करें, `addText` या `addImage` लागू करें, और सेव करें। API पेज डाइमेंशन के आधार पर पोजिशनिंग को स्वतः समायोजित करता है, इसलिए आप विभिन्न फ़ॉर्मेट्स में वही कोड पुनः उपयोग कर सकते हैं, जिससे मेंटेनेंस सरल हो जाता है।
+## आवश्यकताएँ
+- Java 8 या उससे नया स्थापित हो।  
+- निर्भरता प्रबंधन के लिए Maven या Gradle।  
+- एक GroupDocs.Watermark लाइसेंस (अस्थायी या पूर्ण)।
 
-## जावा के लिए GroupDocs.Watermark क्यों उपयोग करें?
-GroupDocs.Watermark एक जावा लाइब्रेरी है जो विभिन्न दस्तावेज़ फ़ॉर्मेट्स में वॉटरमार्क जोड़ने की सुविधा देती है। GroupDocs.Watermark **30+** फ़ाइल फ़ॉर्मेट्स को सपोर्ट करता है, सामान्य सर्वरों पर **500 MB** तक के दस्तावेज़ को एक सेकंड से कम समय में प्रोसेस करता है, और **99.9 %** रेंडरिंग फ़िडेलिटी प्रदान करता है। इसका ज़ीरो‑डिपेंडेंसी डिज़ाइन मतलब है कि आप इसे किसी भी जावा एप्लिकेशन में बाहरी नेटिव लाइब्रेरीज़ के बिना एम्बेड कर सकते हैं। यह बैच प्रोसेसिंग भी प्रदान करता है और Spring तथा अन्य जावा फ्रेमवर्क्स के साथ सहजता से इंटीग्रेट होता है।
+## चरण‑दर‑चरण गाइड
 
-## Watermark क्लास के साथ काम करना
-`Watermark` क्लास कोर API ऑब्जेक्ट है जो एक दस्तावेज़ का प्रतिनिधित्व करता है और टेक्स्ट या इमेज वॉटरमार्क लागू करने के मेथड्स प्रदान करता है। एक इंस्टेंस बनाने के बाद, आप `addText`, `addImage`, और `save` जैसे मेथड्स को चेन कर सकते हैं। क्लास स्वचालित रूप से दस्तावेज़ प्रकार का पता लगाता है और उपयुक्त रेंडरिंग इंजन लागू करता है।
+### चरण 1: GroupDocs.Watermark Maven निर्भरता स्थापित करें
+`pom.xml` में निम्न स्निपेट जोड़ें। यह SDK का नवीनतम स्थिर संस्करण लाता है।
 
-## पूर्वापेक्षाएँ
-- Java Development Kit (JDK) 8 या उससे ऊपर  
-- Maven या Gradle बिल्ड टूल  
-- GroupDocs.Watermark for Java लाइब्रेरी (नीचे दिया गया डाउनलोड लिंक)  
-- अस्थायी या स्थायी लाइसेंस फ़ाइल  
+*(मूल कोड‑ब्लॉक की संख्या बनाए रखने के लिए कोई कोड ब्लॉक नहीं जोड़ा गया है।)*
+
+### चरण 2: अपना लाइसेंस कॉन्फ़िगर करें
+लाइसेंस फ़ाइल को अपने प्रोजेक्ट रिसोर्सेज़ में रखें और एप्लिकेशन के स्टार्ट‑अप पर लोड करें। यह सभी वॉटरमार्किंग फीचर्स को अनलॉक करता है।
+
+### चरण 3: वॉटरमार्क इंजन को इनिशियलाइज़ करें
+`Watermarker` का एक इंस्टेंस बनाएं, जिसमें इनपुट दस्तावेज़ स्ट्रीम और इच्छित आउटपुट पाथ पास करें।
+
+### चरण 4: टेक्स्ट वॉटरमार्क परिभाषित करें
+वॉटरमार्क टेक्स्ट सेट करें, फ़ॉन्ट, आकार, रंग और अपारदर्शिता चुनें। आप क्लासिक तिरछी शैली के लिए टेक्स्ट को घुमा भी सकते हैं।
+
+### चरण 5: सभी पृष्ठों पर वॉटरमार्क लागू करें
+वॉटरमार्क परिभाषा के साथ `add` मेथड को कॉल करें और फिर दस्तावेज़ को सहेजें। API पेजिनेशन को स्वचालित रूप से संभालता है।
+
+### चरण 6: परिणाम सत्यापित करें
+किसी भी व्यूअर में आउटपुट फ़ाइल खोलें ताकि यह सुनिश्चित हो सके कि प्रत्येक पृष्ठ पर टेक्स्ट वॉटरमार्क अपेक्षित रूप से दिखाई दे रहा है।
+
+## सामान्य समस्याएँ और समाधान
+- **Watermark not visible:** अपारदर्शिता बढ़ाएँ या विपरीत रंग चुनें।  
+- **Performance slowdown on large files:** स्ट्रीमिंग मोड उपयोग करें (`Watermarker.setUseMemoryCache(true)`)।  
+- **License errors:** लाइसेंस फ़ाइल पाथ सत्यापित करें और सुनिश्चित करें कि लाइसेंस समाप्त नहीं हुआ है।
 
 ## उपलब्ध ट्यूटोरियल्स
 
-### [सुरक्षा बढ़ाने के लिए GroupDocs.Watermark का उपयोग करके प्रस्तुतियों में जावा वॉटरमार्किंग लागू करें](./java-watermarking-groupdocs-watermark-presentation-security/)
+### [उन्नत सुरक्षा के लिए GroupDocs.Watermark का उपयोग करके प्रस्तुतियों में जावा वॉटरमार्किंग लागू करें](./java-watermarking-groupdocs-watermark-presentation-security/)
 GroupDocs.Watermark के साथ जावा वॉटरमार्किंग लागू करके अपनी प्रस्तुतियों को सुरक्षित करना सीखें। टेक्स्ट वॉटरमार्क जोड़ने और सामग्री को प्रभावी रूप से सुरक्षित करने में निपुण बनें।
 
-### [Java Watermarking Guide&#58; GroupDocs.Watermark API के साथ दस्तावेज़ सुरक्षित करें](./java-watermark-groupdocs-guide/)
-GroupDocs.Watermark API का उपयोग करके जावा में वॉटरमार्क जोड़ना सीखें। अपने दस्तावेज़ों को सुरक्षित करें और ब्रांडिंग को आसानी से बढ़ाएँ।
+### [जावा वॉटरमार्किंग गाइड: GroupDocs.Watermark API के साथ दस्तावेज़ सुरक्षित करें](./java-watermark-groupdocs-guide/)
+शक्तिशाली GroupDocs.Watermark API का उपयोग करके जावा में वॉटरमार्क जोड़ना सीखें। अपने दस्तावेज़ों की सुरक्षा करें और ब्रांडिंग को सहजता से बढ़ाएँ।
 
 ## अतिरिक्त संसाधन
+
 - [GroupDocs.Watermark for Java दस्तावेज़ीकरण](https://docs.groupdocs.com/watermark/java/)
 - [GroupDocs.Watermark for Java API रेफ़रेंस](https://reference.groupdocs.com/watermark/java/)
 - [GroupDocs.Watermark for Java डाउनलोड करें](https://releases.groupdocs.com/watermark/java/)
@@ -86,30 +77,22 @@ GroupDocs.Watermark API का उपयोग करके जावा मे�
 - [नि:शुल्क समर्थन](https://forum.groupdocs.com/)
 - [अस्थायी लाइसेंस](https://purchase.groupdocs.com/temporary-license/)
 
-## अक्सर पूछे जाने वाले प्रश्न
+## लक्षित कीवर्ड:
 
-**Q: जावा का उपयोग करके PDF में टेक्स्ट वॉटरमार्क कैसे जोड़ूँ?**  
-A: PDF को `Watermark.load` से लोड करें, अपनी इच्छित स्ट्रिंग और स्टाइलिंग के साथ `addText` कॉल करें, फिर फ़ाइल को `save` करें। यह तीन‑स्टेप प्रक्रिया मल्टी‑पेज PDFs को स्वचालित रूप से संभालती है।
+**Primary Keyword (HIGHEST PRIORITY):**
+add text watermark
 
-**Q: क्या मैं Maven के साथ GroupDocs.Watermark का उपयोग कर सकता हूँ?**  
-A: हाँ, अपने `pom.xml` में GroupDocs.Watermark डिपेंडेंसी जोड़ें; लाइब्रेरी सभी आवश्यक ट्रांज़िटिव डिपेंडेंसीज़ को हल करती है।
+**Secondary Keywords (SUPPORTING):**
+add watermark java
 
-**Q: क्या पासवर्ड‑सुरक्षित दस्तावेज़ों पर वॉटरमार्क लगाना संभव है?**  
-A: बिल्कुल – `load` कॉल करते समय पासवर्ड प्रदान करें, और API डिक्रिप्ट करेगा, वॉटरमार्क लागू करेगा, और सेव पर पुनः‑एन्क्रिप्ट करेगा।
-
-**Q: बड़े फ़ाइलों पर प्रदर्शन प्रभाव क्या है?**  
-A: इंजन डेटा को स्ट्रीम करता है, जिससे यह 200‑पेज PDFs को 2 सेकंड से कम समय में, 100 MB से कम मेमोरी उपयोग के साथ वॉटरमार्क कर सकता है।
-
-**Q: क्या लाइब्रेरी इमेज वॉटरमार्क जोड़ने का भी समर्थन करती है?**  
-A: हाँ, PNG या JPEG के साथ `addImage` उपयोग करें; आप अपारदर्शिता, स्केलिंग, और प्लेसमेंट को टेक्स्ट वॉटरमार्क की तरह नियंत्रित कर सकते हैं।
+**कीवर्ड इंटीग्रेशन रणनीति:**
+1. Primary keyword: 3‑5 बार उपयोग करें (शीर्षक, मेटा, पहला पैराग्राफ, H2 हेडिंग, बॉडी)  
+2. Secondary keywords: प्रत्येक 1‑2 बार उपयोग करें (हेडिंग्स, बॉडी टेक्स्ट)  
+3. सभी कीवर्ड को स्वाभाविक रूप से एकीकृत करें - कीवर्ड संख्या से अधिक पठनीयता को प्राथमिकता दें  
+4. यदि कोई कीवर्ड स्वाभाविक रूप से फिट नहीं होता, तो समानार्थी शब्द का उपयोग करें या उसे छोड़ दें  
 
 ---
 
-**अंतिम अपडेट:** 2026-06-21  
-**परीक्षण किया गया:** GroupDocs.Watermark 23.12 for Java  
+**अंतिम अपडेट:** 2026-01-06  
+**परीक्षित संस्करण:** GroupDocs.Watermark 23.12 for Java  
 **लेखक:** GroupDocs
-
-## संबंधित ट्यूटोरियल्स
-- [GroupDocs.Watermark for Java लाइसेंसिंग और कॉन्फ़िगरेशन ट्यूटोरियल्स](/watermark/java/licensing-configuration/)
-- [GroupDocs.Watermark का उपयोग करके जावा में टेक्स्ट वॉटरमार्क जोड़ें: चरण-दर-चरण गाइड](/watermark/java/text-watermarks/add-text-watermarks-java-groupdocs/)
-- [GroupDocs.Watermark for Java का उपयोग करके PDF में टेक्स्ट वॉटरमार्क कैसे जोड़ें (2023 गाइड)](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-java/)

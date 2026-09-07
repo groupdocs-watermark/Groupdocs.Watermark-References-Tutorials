@@ -1,87 +1,56 @@
 ---
-date: '2026-06-21'
-description: تعلم كيفية إضافة علامة مائية إلى عرض تقديمي Java باستخدام GroupDocs.Watermark
-  for Java، وتأمين الشرائح عن طريق تطبيق علامات مائية نصية وحماية الأحرف غير القابلة
-  للقراءة.
+date: '2026-01-06'
+description: تعلم كيفية إضافة علامة مائية إلى ملفات العروض التقديمية باستخدام جافا.
+  يوضح هذا الدليل كيفية إضافة علامة مائية سرية، وقفل العلامة المائية، واستخدام مكتبة
+  GroupDocs.Watermark لجافا لتأمين العروض التقديمية.
 keywords:
-- add watermark java presentation
-- GroupDocs.Watermark Java
-- presentation security
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  headline: Add Watermark Java Presentation Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to add watermark java presentation with GroupDocs.Watermark
-    for Java, securing slides by applying text watermarks and unreadable‑character
-    protection.
-  name: Add Watermark Java Presentation Using GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-    text: '**Java Development Kit (JDK) 8 or later** – required for compilation and
-      runtime.'
-  - name: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-    text: '**Maven** – handles dependency resolution; you can also use Gradle if preferred.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.'
-  - name: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-    text: '**Basic Java I/O knowledge** – to understand file streams and exception
-      handling.'
-  type: HowTo
-- questions:
-  - answer: Yes—use the `ImageWatermark` class, which supports PNG, JPEG, and SVG
-      formats.
-    question: Can I add an image watermark instead of text?
-  - answer: Absolutely; provide the password via `PresentationLoadOptions.setPassword("yourPassword")`.
-    question: Does the library work with password‑protected PPTX files?
-  - answer: There is no hard limit; the API streams slides, so you can process presentations
-      with thousands of slides as long as the JVM heap is sized appropriately.
-    question: How many slides can I watermark in one operation?
-  - answer: Yes—specify a slide range in `PresentationLoadOptions` or pass a list
-      of slide indices to the `add` method.
-    question: Is it possible to watermark only selected slides?
-  - answer: The examples were verified with GroupDocs.Watermark 23.12 for Java.
-    question: What version of GroupDocs.Watermark is tested with this tutorial?
-  type: FAQPage
-title: إضافة علامة مائية إلى عرض تقديمي Java باستخدام GroupDocs.Watermark
+- Java Watermarking
+- GroupDocs.Watermark for Java
+- Presentation Security
+title: كيفية وضع علامة مائية على ملفات العروض التقديمية باستخدام Java وGroupDocs.Watermark
 type: docs
 url: /ar/java/getting-started/java-watermarking-groupdocs-watermark-presentation-security/
 weight: 1
 ---
 
-# إضافة علامة مائية إلى عرض Java باستخدام GroupDocs.Watermark
+# كيفية وضع علامة مائية على ملفات العروض التقديمية باستخدام Java و GroupDocs.Watermark
 
-في بيئة الأعمال السريعة اليوم، **add watermark java presentation** هو ممارسة مثالية لحماية مجموعات الشرائح السرية، والمواد التدريبية، والمواد التسويقية. يتيح لك GroupDocs.Watermark for Java تضمين علامات مائية نصية غير مرئية أو مرئية مباشرةً في ملفات PowerPoint، مما يضمن أن أي شخص يستلم الملف يمكنه رؤية ملكيته أو حالة سريته على الفور. يشرح هذا الدليل كل خطوة—من إعداد المكتبة إلى تحميل العرض، وإنشاء علامة مائية نصية مخصصة، وتأمينها بحماية الأحرف غير القابلة للقراءة، وأخيرًا حفظ الملف المؤمّن.
+في عصرنا الرقمي اليوم، **how to watermark presentation** الملفات هي مصدر قلق رئيسي لأي شخص يشارك شرائح سرية، أو عروض تدريبية، أو مواد تسويقية. إضافة علامة مائية سرية لا تشير فقط إلى الملكية بل وتردع التوزيع غير المصرح به. في هذا الدرس ستكتشف كيفية إضافة حماية على نمط watermark java، قفل العلامة المائية، والاستفادة من مكتبة GroupDocs.Watermark Java لتأمين عروضك التقديمية بسرعة وموثوقية.
 
 ## إجابات سريعة
-- **ما هو الهدف الأساسي؟** تأمين ملفات العروض التقديمية عن طريق تضمين علامات مائية نصية مستمرة.  
-- **ما المكتبة المطلوبة؟** GroupDocs.Watermark for Java (حزمة Maven `com.groupdocs:groupdocs-watermark`).  
-- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تكفي للتطوير؛ يلزم الحصول على ترخيص كامل للإنتاج.  
-- **هل يمكنني حماية مجموعات شرائح كبيرة؟** نعم—يقوم GroupDocs.Watermark بمعالجة ملفات تصل إلى 500 ميغابايت دون تحميل المستند بالكامل في الذاكرة.  
-- **هل الـ API متوافق مع Java 8+؟** بالتأكيد، يعمل على JDK 8 والإصدارات الأحدث.
+- **What is the easiest way to add a watermark to a presentation?** استخدم GroupDocs.Watermark لـ Java واستدعِ `watermarker.add()` مع `TextWatermark`.
+- **Can I lock the watermark so it can’t be removed?** نعم—قم بتعيين `options.setLocked(true)` وتمكين الأحرف غير القابلة للقراءة.
+- **Do I need a special license?** النسخة التجريبية المجانية تعمل للتطوير؛ يلزم الحصول على ترخيص كامل للإنتاج.
+- **Which Java version is required?** Java 8 أو أحدث مدعومان.
+- **Will this work with PPTX and ODP files?** نعم، يدعم GroupDocs.Watermark صيغ العروض التقديمية الرئيسية.
 
-## ما هو “add watermark java presentation”؟
-*Add watermark java presentation* يشير إلى عملية إدراج علامة مائية نصية أو صورة برمجياً في ملف PowerPoint (`.pptx`) مبني على Java لحماية محتواه. من خلال تضمين علامات مرئية أو غير مرئية، يمكنك إثبات الملكية، وتطبيق السرية، وردع التوزيع غير المصرح به، مما يضمن أن المتلقين يرون دائمًا المصدر أو حالة الحماية.
+## ما هو “how to watermark presentation”؟
+وضع علامة مائية على عرض تقديمي يعني دمج نص (أو صور) مرئي أو غير مرئي في كل شريحة بحيث يحمل المستند علامة ملكية واضحة. تُستخدم هذه التقنية على نطاق واسع في العروض المقترحة للشركات، والمحاضرات الأكاديمية، وأي محتوى يحتاج إلى حماية من سوء الاستخدام.
 
-## لماذا تستخدم GroupDocs.Watermark for Java؟
-يدعم GroupDocs.Watermark **أكثر من 30 تنسيق ملف** (بما في ذلك PPTX، PPT، PDF، DOCX، والصور) ويمكنه تطبيق علامات مائية على العروض دون **فقدان الجودة**. يعالج محركه مجموعات شرائح مئات الصفحات في أقل من ثانية على خوادم عادية، مع استهلاك أقل من 150 ميغابايت من الذاكرة—مما يجعله مثالياً للوظائف الدفعية عالية الإنتاجية.
+## لماذا إضافة علامة مائية سرية؟
+- **Brand protection:** يعزز هوية الشركة في كل شريحة.  
+- **Legal evidence:** يُظهر أن الملف تم توزيعه مع بيان ملكية واضح.  
+- **Deterrence:** يجعل من الواضح عندما يتم مشاركة المستند دون إذن.  
+- **Compliance:** يلتزم بسياسات الأمان الداخلية للتعامل مع المعلومات الحساسة.  
 
 ## المتطلبات المسبقة
+قبل البدء، تأكد من أن لديك ما يلي:
 
-1. **Java Development Kit (JDK) 8 أو أحدث** – مطلوب للتجميع والتشغيل.  
-2. **Maven** – يدير حل الاعتمادات؛ يمكنك أيضًا استخدام Gradle إذا رغبت.  
-3. **IDE** – IntelliJ IDEA، Eclipse، أو أي محرر يدعم Java.  
-4. **معرفة أساسية بـ Java I/O** – لفهم تدفقات الملفات ومعالجة الاستثناءات.
+1. **المكتبات والاعتمادات المطلوبة**
+   - Java Development Kit (JDK) 8 أو أحدث
+   - Maven لإدارة الاعتمادات  
 
-## إعداد GroupDocs.Watermark for Java
+2. **إعداد البيئة**
+   - بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse
+   - معرفة أساسية بـ Java I/O ومعالجة الاستثناءات  
+
+3. **المتطلبات المعرفية**
+   - الإلمام بفئات Java ومفاهيم البرمجة الكائنية  
+
+## إعداد GroupDocs.Watermark لـ Java
 
 ### إعداد Maven
-أضف الاعتماد التالي إلى ملف `pom.xml`. سيقوم هذا بجلب أحدث نسخة مستقرة من GroupDocs.Watermark.
+أضف مستودع GroupDocs والاعتماد إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <repositories>
@@ -101,16 +70,16 @@ weight: 1
 </dependencies>
 ```
 
-### تنزيل مباشر
-إذا كنت تفضّل التثبيت اليدوي، احصل على ملفات JAR من صفحة الإصدارات الرسمية: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### التحميل المباشر
+بدلاً من ذلك، قم بتحميل أحدث نسخة من [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### الحصول على الترخيص
-- **نسخة تجريبية مجانية:** تسمح بعدد غير محدود من استدعاءات الـ API لمدة 30 يومًا.  
-- **ترخيص مؤقت:** يمدد حدود التجربة لدورات تطوير أطول.  
-- **ترخيص كامل:** مطلوب للنشر التجاري ويزيل جميع قيود النسخة التجريبية.
+- **Free Trial:** اختبار المكتبة بدون ترخيص.  
+- **Temporary License:** استخدم مفتاحًا مؤقتًا لاختبار التطوير الموسع.  
+- **Full License:** مطلوب للنشر في بيئة الإنتاج.  
 
 ### التهيئة الأساسية والإعداد
-أنشئ كائن `Watermarker`، وهو الكائن المركزي لجميع عمليات العلامات المائية.
+المقتطف التالي يوضح كيفية إنشاء كائن `Watermarker` لملف عرض تقديمي:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -123,15 +92,12 @@ public class InitializeWatermarker {
 }
 ```
 
-`Watermarker` هو الفئة الأساسية التي تقوم بتحميل، تعديل، وحفظ المستندات. سيتولى هذا الكائن إدارة تحميل، تعديل، وحفظ ملفات العروض التقديمية الخاصة بك.
-
 ## دليل التنفيذ
 
-### كيف تضيف علامة مائية إلى عرض Java؟
-لإضافة علامة مائية إلى عرض Java، أولاً قم بتحميل ملف PowerPoint باستخدام `PresentationLoadOptions`. ثم أنشئ `TextWatermark` بالنص المطلوب، النمط، والدوران. فعّل حماية الأحرف غير القابلة للقراءة عبر `PresentationWatermarkSlideOptions`، أضف العلامة المائية إلى الشرائح المطلوبة، وأخيرًا احفظ الملف المعدل لتثبيت التغييرات.
+فيما يلي دليل خطوة بخطوة حول **how to watermark presentation** الملفات، من تحميل المستند إلى حفظ الناتج المحمي.
 
-#### تحميل مستند عرض تقديمي
-أولاً، تحتاج إلى فتح الملف باستخدام خيارات التحميل المناسبة.
+### تحميل مستند عرض تقديمي
+أولاً، قم بتحميل العرض التقديمي باستخدام `PresentationLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -146,10 +112,10 @@ public class LoadPresentation {
 }
 ```
 
-**مرساة التعريف:** `PresentationLoadOptions` تحدد كيفية قراءة GroupDocs.Watermark لملف PowerPoint، مما يتيح لك تحديد كلمة المرور، نطاق الشرائح، وعلامات توفير الذاكرة.
+*Explanation:* `PresentationLoadOptions` يتيح لك تحديد كيفية تفسير الملف قبل تطبيق أي علامة مائية.
 
-#### إنشاء علامة مائية نصية
-بعد ذلك، صغ نص العلامة المائية وقم بتنسيقه ليتماشى مع إرشادات العلامة التجارية الخاصة بك.
+### إنشاء علامة مائية نصية
+بعد ذلك، أنشئ نص العلامة المائية الفعلي. هذا هو المكان الذي تقوم فيه **add confidential watermark** المحتوى:
 
 ```java
 import com.groupdocs.watermark.watermarks.Font;
@@ -164,10 +130,10 @@ public class CreateTextWatermark {
 }
 ```
 
-**مرساة التعريف:** `TextWatermark` تمثل طبقة نصية يمكن وضعها، تدويرها، وتلوينها. تدعم Unicode، لذا يمكنك تضمين وسوم متعددة اللغات.
+*Explanation:* اضبط الخط والحجم والنص لتتناسب مع إرشادات العلامة التجارية الخاصة بك.
 
-#### تكوين خيارات العلامة المائية للأحرف غير القابلة للقراءة
-لجعل العلامة المائية مقاومة للعبث، فعّل حماية الأحرف غير القابلة للقراءة.
+### تكوين خيارات العلامة المائية للأحرف غير القابلة للقراءة
+لـ **how to lock watermark** وجعلها غير قابلة للقراءة عند العبث بها، قم بتكوين خيارات الشريحة:
 
 ```java
 import com.groupdocs.watermark.options.PresentationWatermarkSlideOptions;
@@ -181,10 +147,10 @@ public class ConfigureWatermarkOptions {
 }
 ```
 
-**مرساة التعريف:** `PresentationWatermarkSlideOptions` تضبط كيفية تطبيق العلامة المائية على الشرائح الفردية. تتيح لك قفل العلامة، تعيين علامات للقراءة فقط، وتمكين حماية الأحرف غير القابلة للقراءة التي تشوش النص عند تعديل المستند دون تفويض مناسب.
+*Explanation:* تمكين `setLocked` و `setProtectWithUnreadableCharacters` يضيف طبقة حماية تمنع الإزالة السهلة.
 
-#### إضافة علامة مائية إلى العرض
-الآن قم بتطبيق العلامة المائية على كل شريحة (أو مجموعة فرعية) باستخدام كائن `Watermarker`.
+### إضافة علامة مائية إلى عرض تقديمي
+اجمع بين التحميل، إنشاء العلامة المائية، وتكوين الخيارات لتطبيق العلامة المائية:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -207,10 +173,10 @@ public class AddWatermarkToPresentation {
 }
 ```
 
-**مرساة التعريف:** طريقة `add` في `Watermarker` تُرفق `TextWatermark` المكوَّن إلى الشرائح المستهدفة، مع مراعاة الخيارات التي حددتها مسبقًا.
+*Explanation:* هذه الخطوة تدمج نص **java watermark library** في كل شريحة مع قفلها.
 
-#### حفظ وإغلاق المستند الممَوسَّى
-أخيرًا، احفظ التغييرات وحرّر الموارد.
+### حفظ وإغلاق المستند المائي
+أخيرًا، احفظ التغييرات ونظف الموارد:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -226,60 +192,49 @@ public class SaveAndCloseWatermarkedDocument {
 }
 ```
 
-**مرساة التعريف:** استدعاء `save` يكتب العرض المعدل إلى القرص، بينما `close` يحرّر الموارد الأصلية ويمنع تسرب الذاكرة.
+*Explanation:* دائمًا استدعِ `close()` لتحرير مقابض الملفات وتجنب تسرب الذاكرة.
 
-## تطبيقات عملية
-
-- **العروض التقديمية للشركات:** أدمج “سري – الشركة XYZ” عبر جميع الشرائح قبل إرسالها للعملاء.  
-- **المحاضرات الأكاديمية:** أضف شعارات الجامعة ورموز المقررات لمنع إعادة النشر غير المصرح به.  
-- **عروض الفعاليات:** ضع علامة مائية على كل شريحة باسم الحدث وتاريخه لتعزيز العلامة التجارية.  
-- **المذكرات القانونية:** ضع معرفات القضايا على العروض القانونية للحفاظ على سلسلة حفظ الأدلة.  
-- **الأصول التسويقية:** احمِ العروض الترويجية عالية الدقة بعلامات مائية دقيقة تبقى بعد التحويل إلى PDF.
+## التطبيقات العملية
+1. **Corporate Document Protection:** أضف شعار الشركة أو علامة “Confidential” إلى مقترحات الأعمال.  
+2. **Academic Material Distribution:** احمِ شرائح المحاضرات من المشاركة غير المصرح بها.  
+3. **Event Management:** أمان مجموعة شرائح الفعالية بعلامة مائية مميزة.  
+4. **Legal Documentation:** ضع علامة مائية على العروض القانونية لضمان الأصالة.  
+5. **Marketing Campaigns:** ضع علامة تجارية على العروض الترويجية مع منع سوء الاستخدام.  
 
 ## اعتبارات الأداء
-
-- **تحسين الأداء:** أعد استخدام كائن `Watermarker` واحد للمعالجة الدفعية؛ هذا يقلل من عبء JVM.  
-- **إرشادات استخدام الموارد:** للعرض التي يزيد حجمها عن 200 ميغابايت، فعّل وضع البث في `PresentationLoadOptions` للحفاظ على استهلاك الذاكرة تحت 200 ميغابايت.  
-- **إدارة ذاكرة Java:** احرص دائمًا على استدعاء `close()` داخل كتلة `finally` أو استخدم `try‑with‑resources` لضمان تحرير الموارد.
+- **Optimizing Performance:** معالجة الملفات عبر التدفقات عند التعامل مع عروض تقديمية كبيرة.  
+- **Resource Usage Guidelines:** راقب مساحة heap في JVM؛ أغلق `Watermarker` بسرعة.  
+- **Java Memory Management:** استخدم try‑with‑resources أو استدعاءات `close()` صريحة لمنع التسربات.  
 
 ## المشكلات الشائعة والحلول
-
-| المشكلة | السبب | الحل |
-|-------|-------|----------|
-| العلامة المائية غير مرئية | شفافية افتراضية مضبوطة على 0% | اضبط `setOpacity(0.5)` على `TextWatermark`. |
-| خطأ نفاد الذاكرة على مجموعات شرائح كبيرة | تم تحميل الملف بالكامل في الذاكرة | فعّل `setLoadMode(LoadMode.STREAM)` في `PresentationLoadOptions`. |
-| عدم تطبيق الأحرف غير القابلة للقراءة | لم يتم تعيين `setUnreadableCharacters(true)` | تأكد من ضبط العلامة على `PresentationWatermarkSlideOptions`. |
-| استثناء الترخيص أثناء التشغيل | استخدام النسخة التجريبية بعد انتهاء الصلاحية | حدّث ملف الترخيص أو اطلب مفتاح تجريبي جديد. |
+| المشكلة | الحل |
+|-------|----------|
+| **Watermark not appearing** | تحقق من ضبط خيارات الشريحة (`setLocked(true)`) وأن نطاق الشرائح المحدد صحيح. |
+| **OutOfMemoryError on large PPTX** | زيادة مساحة heap في JVM (`-Xmx2g`) أو معالجة الملف على دفعات أصغر باستخدام `PresentationLoadOptions`. |
+| **License exception** | تأكد من تحميل ترخيص تجريبي صالح أو ترخيص كامل قبل إنشاء `Watermarker`. |
 
 ## الأسئلة المتكررة
 
-**س: هل يمكنني إضافة علامة مائية صورة بدلاً من النص؟**  
-ج: نعم—استخدم الفئة `ImageWatermark`، التي تدعم صيغ PNG، JPEG، وSVG.
+**س: هل يمكنني استخدام GroupDocs.Watermark لإضافة علامات مائية صورة أيضًا؟**  
+ج: نعم، المكتبة تدعم كل من العلامات المائية النصية والصورية؛ استخدم ببساطة `ImageWatermark` بدلاً من `TextWatermark`.
 
-**س: هل تعمل المكتبة مع ملفات PPTX محمية بكلمة مرور؟**  
-ج: بالتأكيد؛ قدم كلمة المرور عبر `PresentationLoadOptions.setPassword("yourPassword")`.
+**س: هل تعمل المكتبة مع العروض التقديمية المحمية بكلمة مرور؟**  
+ج: بالتأكيد—قم بتوفير كلمة المرور في `PresentationLoadOptions` قبل تحميل الملف.
 
-**س: كم عدد الشرائح التي يمكنني وضع علامة مائية عليها في عملية واحدة؟**  
-ج: لا يوجد حد ثابت؛ الـ API يبث الشرائح، لذا يمكنك معالجة عروض تحتوي على آلاف الشرائح طالما تم ضبط حجم heap للـ JVM بشكل مناسب.
+**س: هل يمكن تخصيص شفافية العلامة المائية؟**  
+ج: نعم، يمكنك ضبط الشفافية على كائن `TextWatermark` عبر `setOpacity(double)`.
 
-**س: هل يمكن وضع علامة مائية على شرائح مختارة فقط؟**  
-ج: نعم—حدد نطاق الشرائح في `PresentationLoadOptions` أو مرّر قائمة بأرقام الشرائح إلى طريقة `add`.
+**س: كيف يؤثر “protect with unreadable characters” على تحويل PDF؟**  
+ج: يبقى الحماية مدمجة في العرض التقديمي؛ عند تصديره إلى PDF، تُحتفظ بالأحرف غير القابلة للقراءة، مما يحافظ على القفل.
 
-**س: أي نسخة من GroupDocs.Watermark تم اختبارها مع هذا الدرس؟**  
-ج: تم التحقق من الأمثلة مع GroupDocs.Watermark 23.12 لـ Java.
+**س: ما هو الحد الأدنى لإصدار Java المطلوب؟**  
+ج: Java 8 أو أحدث؛ المكتبة متوافقة بالكامل مع Java 11، 17، والإصدارات LTS اللاحقة.
 
 ## الخلاصة
-
-أصبح لديك الآن سير عمل كامل وجاهز للإنتاج لـ **add watermark java presentation** باستخدام GroupDocs.Watermark. باتباع الخطوات أعلاه، يمكنك حماية الشرائح السرية، تعزيز هوية العلامة التجارية، والامتثال للمتطلبات القانونية—كل ذلك مع الحد الأدنى من تأثير الأداء. استكشف الـ API أكثر لدمج العلامات النصية والصورية، إضافة طوابع زمنية ديناميكية، أو دمجها مع خط أنابيب إدارة المستندات الحالي لديك.
+أنت الآن تمتلك دليلًا كاملاً وجاهزًا للإنتاج حول **how to watermark presentation** الملفات باستخدام Java ومكتبة GroupDocs.Watermark. من خلال إضافة علامة مائية سرية، قفلها، وحمايتها بالأحرف غير القابلة للقراءة، تحمي ملكيتك الفكرية وتعزز نزاهة العلامة التجارية. استكشف المزيد بدمج هذه الخطوات في خطوط أنابيب المستندات الآلية أو بدمجها مع واجهات برمجة تطبيقات GroupDocs الأخرى لإدارة المستندات من البداية إلى النهاية.
 
 ---
 
-**آخر تحديث:** 2026-06-21  
-**تم الاختبار مع:** GroupDocs.Watermark 23.12 لـ Java  
+**آخر تحديث:** 2026-01-06  
+**تم الاختبار باستخدام:** GroupDocs.Watermark 24.11 for Java  
 **المؤلف:** GroupDocs
-
-## دروس ذات صلة
-
-- [How to Add Text and Image Watermarks to PDFs in Java using GroupDocs.Watermark](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermarks/)
-- [Add and Lock Text Watermarks in Word Documents Using Java: A Comprehensive Guide with GroupDocs.Watermark](/watermark/java/word-processing-document-watermarking/add-lock-text-watermark-word-java-groupdocs/)
-- [How to Add Rotated Text Watermarks in Documents Using GroupDocs.Watermark for Java](/watermark/java/text-watermarks/groupdocs-java-rotated-text-watermarks/)

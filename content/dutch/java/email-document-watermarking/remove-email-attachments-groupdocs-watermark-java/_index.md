@@ -1,97 +1,52 @@
 ---
-date: '2026-06-21'
-description: Leer hoe je bijlagen uit e-mailberichten kunt verwijderen met GroupDocs.Watermark
-  voor Java, waardoor de productiviteit en beveiliging worden verhoogd.
+date: '2026-01-03'
+description: Leer hoe u bijlagen uit e‑mailbestanden kunt verwijderen met GroupDocs.Watermark
+  voor Java – de stapsgewijze handleiding om bijlagen efficiënt te verwijderen.
 keywords:
-- how to remove attachments
-- email attachment removal Java
-- GroupDocs.Watermark email
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-21'
-  description: Learn how to remove attachments from email messages using GroupDocs.Watermark
-    for Java, boosting productivity and security.
-  headline: How to Remove Attachments from Emails Using GroupDocs.Watermark in Java
-  type: TechArticle
-- description: Learn how to remove attachments from email messages using GroupDocs.Watermark
-    for Java, boosting productivity and security.
-  name: How to Remove Attachments from Emails Using GroupDocs.Watermark in Java
-  steps:
-  - name: '**Email Cleanup Automation:** Strip outdated PDFs or large spreadsheets
-      from inbound messages before archiving.'
-    text: '**Email Cleanup Automation:** Strip outdated PDFs or large spreadsheets
-      from inbound messages before archiving.'
-  - name: '**Data Privacy Compliance:** Automatically delete confidential contracts
-      from outgoing emails to meet GDPR or HIPAA requirements.'
-    text: '**Data Privacy Compliance:** Automatically delete confidential contracts
-      from outgoing emails to meet GDPR or HIPAA requirements.'
-  - name: '**Enhanced Email Management:** Reduce mailbox size by removing redundant
-      images, easing backup and search operations.'
-    text: '**Enhanced Email Management:** Reduce mailbox size by removing redundant
-      images, easing backup and search operations.'
-  type: HowTo
-- questions:
-  - answer: Yes, inspect `attachment.getContentType()` and apply your filter logic
-      accordingly.
-    question: Can I remove attachments based on MIME type instead of file name?
-  - answer: Absolutely; `EmailLoadOptions` works with both formats without additional
-      configuration.
-    question: Does the library support .eml files as well as .msg?
-  - answer: The reverse‑iteration loop simply skips non‑matching items, so no exception
-      is thrown.
-    question: What happens if I try to remove an attachment that doesn’t exist?
-  - answer: You can modify `attachment.setFileName("newName.ext")` before saving the
-      email.
-    question: Is it possible to rename an attachment instead of deleting it?
-  - answer: Use a thread‑pool executor to parallelize the load‑modify‑save cycle,
-      making sure each thread creates its own `Watermarker` instance.
-    question: How can I process thousands of emails efficiently?
-  type: FAQPage
-title: Hoe bijlagen uit e-mails verwijderen met GroupDocs.Watermark in Java
+- remove email attachments Java
+- GroupDocs.Watermark for Java
+- email management automation
+title: Hoe bijlagen uit e‑mailberichten te verwijderen met GroupDocs.Watermark in
+  Java
 type: docs
 url: /nl/java/email-document-watermarking/remove-email-attachments-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Hoe bijlagen uit e-mails verwijderen met GroupDocs.Watermark in Java
+# Hoe bijlagen uit e‑mailberichten te verwijderen met GroupDocs.Watermark in Java
 
-In het digitale tijdperk van vandaag is **how to remove attachments** uit e‑mailberichten efficiënt verwijderen een topprioriteit voor ontwikkelaars die inboxen opgeruimd willen houden en gevoelige gegevens willen beschermen. Deze tutorial leidt je door het gebruik van **GroupDocs.Watermark for Java** om specifieke e‑mailbijlagen te vinden en te verwijderen op basis van naam of bestandstype, terwijl het oorspronkelijke bericht behouden blijft.
+In de hedendaagse, snelle werkomgeving is **weten hoe je bijlagen kunt verwijderen** uit e‑mailberichten essentieel om inboxen opgeruimd te houden, gevoelige gegevens te beschermen en de algehele productiviteit te verbeteren. Deze tutorial leidt je stap voor stap door het volledige proces van het gebruik van **GroupDocs.Watermark voor Java** om specifieke bijlagen te identificeren en te verwijderen op basis van naam of bestandstype. Aan het einde kun je e‑mailopruiming automatiseren en voldoen aan privacy‑beleid.
 
 ## Snelle antwoorden
-- **Welke bibliotheek behandelt het verwijderen van bijlagen?** GroupDocs.Watermark for Java.
-- **Welke Java‑versie is vereist?** JDK 8 of hoger.
-- **Kan ik bijlagen targeten op bestandsextensie?** Ja, met eenvoudige voorwaardelijke logica.
-- **Is een licentie nodig voor productie?** Een geldige GroupDocs.Watermark‑licentie is vereist.
-- **Blijft de originele e‑mail ongewijzigd?** Het originele bestand blijft onaangeraakt; er wordt een nieuw bestand opgeslagen met de geselecteerde bijlagen verwijderd.
+- **Wat betekent “hoe bijlagen te verwijderen” in deze context?** Het verwijst naar het programmatisch verwijderen van ongewenste bestanden uit een .msg‑e‑mail met GroupDocs.Watermark.  
+- **Welke bibliotheekversie is vereist?** GroupDocs.Watermark 24.11 (of nieuwer).  
+- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor testen; een permanente licentie is vereist voor productie.  
+- **Kan ik meerdere e‑mails tegelijk verwerken?** Ja—zet de code in een lus of batch‑taak.  
+- **Is itereren in omgekeerde volgorde belangrijk?** Absoluut; het voorkomt indexverschuiving bij het verwijderen van items.
 
-## Wat betekent “how to remove attachments” in de context van e‑mailverwerking?
-**How to remove attachments** verwijst naar het programmatisch verwijderen van geselecteerde bestanden die in een e‑mail zijn ingebed (bijv. *.msg* of *.eml*) zonder de resterende berichtinhoud te wijzigen. Deze bewerking wordt vaak gebruikt voor opschoon‑automatisering, naleving of beveiligingshandhaving. Door onnodige bestanden te verwijderen, verminder je het opslaggebruik, verbeter je de zoekprestaties en verklein je het risico op onbedoeld delen van gevoelige gegevens.
+## Wat is “hoe bijlagen te verwijderen” met GroupDocs.Watermark?
+GroupDocs.Watermark biedt een eenvoudige API om een e‑mailbestand te laden, de bijlagecollectie te inspecteren en items te verwijderen die aan jouw criteria voldoen. Deze mogelijkheid is vooral nuttig voor:
 
-## Waarom GroupDocs.Watermark voor Java gebruiken?
-GroupDocs.Watermark ondersteunt **50+** document‑ en afbeeldingsformaten, kan e‑mails verwerken tot een grootte van **500 MB**, en voert bijlage‑manipulatie volledig in het geheugen uit, waardoor externe Office‑installaties overbodig zijn. De API is thread‑safe, waardoor bulkverwerking van duizenden berichten per uur op standaard serverhardware mogelijk is.
+- **Geautomatiseerde e‑mailhygiëne** – oude rapporten of dubbele bestanden verwijderen.  
+- **Naleving van regelgeving** – vertrouwelijke documenten verwijderen voordat ze worden doorgestuurd.  
+- **Prestatie‑optimalisatie** – de grootte van de mailbox verkleinen en zoekacties versnellen.
 
-## Voorvereisten
+## Waarom GroupDocs.Watermark voor deze taak gebruiken?
+- **Volledige .msg‑ondersteuning** – native verwerking van Outlook‑e‑mailformaat.  
+- **Fijne controle** – controleer bijlage‑naam, bestandstype, grootte, enz.  
+- **Robuust geheugenbeheer** – de `Watermarker` implementeert `AutoCloseable`, waardoor bronnen automatisch worden vrijgegeven.  
 
-Zorg er voordat we beginnen voor dat je het volgende hebt:
+## Vereisten
 
-### Vereiste bibliotheken en versies
-- **GroupDocs.Watermark** versie 24.11 (beschikbaar via Maven of directe download)
-
-### Vereisten voor omgeving configuratie
-- Java Development Kit (JDK) geïnstalleerd op je systeem
-- Een IDE zoals IntelliJ IDEA of Eclipse voor het schrijven en uitvoeren van je code
-
-### Kennisvereisten
-- Basiskennis van Java‑programmeren
-- Vertrouwdheid met het verwerken van e‑mailbestanden (.msg‑formaat)
+- **GroupDocs.Watermark** versie 24.11 (beschikbaar via Maven of directe download).  
+- Java Development Kit (JDK 8 of hoger).  
+- Een IDE zoals IntelliJ IDEA of Eclipse.  
+- Basiskennis van Java en vertrouwdheid met .msg‑bestanden.
 
 ## GroupDocs.Watermark voor Java instellen
 
-Om te beginnen moet je **GroupDocs.Watermark** installeren. Zo doe je dat:
-
 ### Maven‑configuratie
-
-Voeg de volgende configuratie toe aan je `pom.xml`‑bestand:
+Voeg de repository en afhankelijkheid toe aan je `pom.xml`:
 
 ```xml
 <repositories>
@@ -112,17 +67,15 @@ Voeg de volgende configuratie toe aan je `pom.xml`‑bestand:
 ```
 
 ### Directe download
-
-Alternatief kun je de nieuwste versie downloaden van [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Download anders de nieuwste versie via [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Licentie‑acquisitie
-- **Free Trial:** Begin met een gratis proefversie om functies te testen.  
-- **Temporary License:** Verkrijg een tijdelijke licentie voor volledige toegang tijdens het testen.  
-- **Purchase:** Overweeg een licentie aan te schaffen voor productiegebruik.
+- **Gratis proefversie:** Test alle functies zonder kosten.  
+- **Tijdelijke licentie:** Gebruik voor kortetermijntesten.  
+- **Volledige licentie:** Aanbevolen voor productie‑implementaties.
 
-#### Basisinitialisatie en configuratie
-
-Initialiseer de bibliotheek in je Java‑project om te beginnen:
+#### Basisinitialisatie en -instelling
+Hieronder staat de minimale code die nodig is om een e‑mailbestand te openen met GroupDocs.Watermark:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -139,17 +92,10 @@ class EmailAttachmentManager {
 }
 ```
 
-## Hoe bijlagen uit e‑mailberichten verwijderen?
+## Stapsgewijze handleiding om bijlagen te verwijderen
 
-`Watermarker` is de hoofdklasse die toegang biedt tot documentverwerkingsfuncties.  
-`EmailLoadOptions` specificeert hoe de SDK het invoerbestand moet interpreteren als een e‑mail.  
-`EmailAttachment` vertegenwoordigt een enkel bestand dat aan de e‑mail is bijgevoegd.
-
-Laad de e‑mail, doorloop de lijst met bijlagen en verwijder de items die aan je criteria voldoen — dit kan in slechts een paar regels code worden gedaan. Maak eerst een `Watermarker`‑instantie, laad de e‑mail met `EmailLoadOptions`, loop vervolgens door `EmailAttachment`‑objecten in omgekeerde volgorde en verwijder degene die voldoen aan de naam‑ of formaatvoorwaarden. Sla ten slotte de gewijzigde e‑mail op in een nieuw bestand zodat het origineel ongewijzigd blijft.
-
-### Laadopties voor e‑mail initialiseren
-
-`EmailLoadOptions` vertelt de SDK dat het invoerbestand moet worden geparseerd als een e‑mailbericht, waardoor de body en de bijlage‑collectie worden blootgesteld.
+### 1. Load‑opties voor e‑mail initialiseren
+Geef eerst aan de bibliotheek door dat je met een e‑mailbestand werkt:
 
 ```java
 EmailLoadOptions loadOptions = new EmailLoadOptions();
@@ -159,15 +105,8 @@ try (Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/message.
 }
 ```
 
-**Definition anchor:** `EmailLoadOptions` vertelt de SDK dat het invoerbestand moet worden geparseerd als een e‑mailbericht, waardoor de body en de bijlage‑collectie worden blootgesteld.
-
-Hier wordt `EmailLoadOptions` geconfigureerd om aan te geven dat het te laden bestand een e‑mail is.
-
-### Toegang tot en itereren over e‑mailbijlagen
-
-`EmailAttachment` vertegenwoordigt een enkel bestand dat in de e‑mail is ingebed, met eigenschappen zoals `getFileName()` en `getFileExtension()`.
-
-Nu kun je de e‑mailinhoud benaderen en over de bijlagen itereren:
+### 2. Toegang krijgen tot en itereren over e‑mailbijlagen
+Haal de e‑mailinhoud op en doorloop vervolgens de bijlagecollectie **in omgekeerde volgorde**. Dit voorkomt indexverschuiving bij het verwijderen van items.
 
 ```java
 EmailContent content = watermarker.getContent(EmailContent.class);
@@ -181,91 +120,65 @@ for (int i = content.getAttachments().getCount() - 1; i >= 0; i--) {
 }
 ```
 
-- **Waarom omgekeerde iteratie?** Items verwijderen in omgekeerde volgorde voorkomt dat verschuivende indexen het iteratieproces beïnvloeden.
+- **Waarom omgekeerd itereren?** Een item verwijderen verkleint de lijst; door achterwaarts te itereren blijft de teller geldig.
 
-**Definition anchor:** `EmailAttachment` vertegenwoordigt een enkel bestand dat in de e‑mail is ingebed, met eigenschappen zoals `getFileName()` en `getFileExtension()`.
-
-### Wijzigingen opslaan in een nieuw bestand
-
-Zodra de wijzigingen voltooid zijn, sla de e‑mail op:
+### 3. Het gewijzigde e‑mailbericht opslaan
+Nadat je de ongewenste bestanden hebt verwijderd, schrijf je de bijgewerkte e‑mail naar een nieuwe locatie:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/modified_message.msg");
 ```
 
-Dit maakt een nieuw bestand aan met de opgegeven bijlagen verwijderd, waardoor je het originele bestand intact kunt houden.
+Dit laat het originele bericht onaangeroerd en geeft je een schone kopie.
 
 ## Praktische toepassingen
 
-**Praktijkvoorbeelden:**
-1. **Email Cleanup Automation:** Verwijder verouderde PDF‑s of grote spreadsheets uit inkomende berichten vóór archivering.  
-2. **Data Privacy Compliance:** Verwijder automatisch vertrouwelijke contracten uit uitgaande e‑mails om te voldoen aan GDPR‑ of HIPAA‑vereisten.  
-3. **Enhanced Email Management:** Verminder de mailboxgrootte door overbodige afbeeldingen te verwijderen, waardoor back‑up‑ en zoekbewerkingen eenvoudiger worden.
+| Scenario | Hoe “hoe bijlagen te verwijderen” helpt |
+|----------|------------------------------------------|
+| **E‑mailopruiming automatiseren** | Periodiek grote PDF‑s of dubbele bestanden verwijderen. |
+| **Privacy‑naleving** | Vertrouwelijke Word‑documenten verwijderen vóór externe distributie. |
+| **CRM‑integratie** | Bijlagen filteren voordat e‑mails worden gelogd in een klantrecord. |
 
-### Integratiemogelijkheden:
-- Koppel aan CRM‑workflows om bijlagen te filteren voordat ze naar klanten worden verzonden.  
-- Integreer in een documentbeheersysteem om bijlage‑beleid af te dwingen tijdens documentinname.
+## Prestatie‑overwegingen
 
-## Prestatieoverwegingen
+- **Batch‑I/O:** Verwerk meerdere .msg‑bestanden in één run om schijf‑overhead te verminderen.  
+- **Geheugenbeheer:** Het `try‑with‑resources`‑blok maakt automatisch de `Watermarker` onbruikbaar.  
+- **Bibliotheekupdates:** Houd GroupDocs.Watermark up‑to‑date om te profiteren van prestatie‑verbeteringen.
 
-Om optimale prestaties te garanderen:
-- **Optimize File I/O Operations:** Batch‑verwerk meerdere e‑mails in één transactie om de schijf‑toegangsbelasting te verminderen.  
-- **Memory Management Tips:** Roep `watermarker.close()` aan na elke bewerking om native resources vrij te geven en geheugenlekken te voorkomen.  
-- **Best Practices:** Houd de GroupDocs.Watermark‑bibliotheek up‑to‑date; elke kleine release brengt snelheidsverbeteringen van tot **30 %** voor grootschalige bijlage‑verwerking.
+## Veelvoorkomende valkuilen & probleemoplossing
 
-## Veelvoorkomende problemen en oplossingen
-
-| Symptom | Likely Cause | Fix |
-|---|---|---|
-| `NullPointerException` bij het benaderen van bijlagen | E‑mailbestand is corrupt of niet geladen met `EmailLoadOptions` | Controleer het bestandspad en zorg dat `EmailLoadOptions` wordt gebruikt |
-| Bijlagen niet verwijderd | Iteratielus gebruikt voorwaartse volgorde | Schakel over naar omgekeerde iteratie zoals hierboven getoond |
-| Hoge geheugengebruik bij grote e‑mails | `Watermarker`‑instanties worden niet gesloten | Roep `watermarker.close()` aan in een `finally`‑blok |
+- **Beschadigde .msg‑bestanden:** Controleer of de bron‑e‑mail correct opent in Outlook voordat je deze verwerkt.  
+- **Onjuiste bestandspaden:** Gebruik absolute paden of los relatieve paden op met `Paths.get(...)`.  
+- **Licentiefouten:** Zorg dat het licentiebestand zich bevindt waar de bibliotheek het kan vinden, of stel het programmatisch in via `License.setLicense(...)`.
 
 ## Veelgestelde vragen
 
-**Q:** Kan ik bijlagen verwijderen op basis van MIME‑type in plaats van bestandsnaam?  
-**A:** Ja, inspecteer `attachment.getContentType()` en pas je filterlogica dienovereenkomstig toe.
+**V: Wat is GroupDocs.Watermark?**  
+A: Het is een Java‑bibliotheek die ontwikkelaars in staat stelt watermerken en bijlagen toe te voegen, te detecteren en te verwijderen in vele documenttypen, inclusief Outlook .msg‑bestanden.
 
-**Q:** Ondersteunt de bibliotheek .eml‑bestanden net zo goed als .msg?  
-**A:** Absoluut; `EmailLoadOptions` werkt met beide formaten zonder extra configuratie.
+**V: Hoe kan ik meerdere bijlage‑typen afhandelen?**  
+A: Breid de `if`‑conditie binnen de lus uit om andere `FileType`‑waarden te controleren of gebruik regex op `attachment.getName()`.
 
-**Q:** Wat gebeurt er als ik probeer een bijlage te verwijderen die niet bestaat?  
-**A:** De omgekeerde iteratielus slaat niet‑overeenkomende items simpelweg over, dus er wordt geen uitzondering gegooid.
+**V: Is een licentie vereist voor productiegebruik?**  
+A: Ja. Een proefversie is geschikt voor evaluatie, maar een permanente licentie is nodig voor commerciële implementaties.
 
-**Q:** Is het mogelijk om een bijlage te hernoemen in plaats van te verwijderen?  
-**A:** Je kunt `attachment.setFileName("newName.ext")` aanpassen voordat je de e‑mail opslaat.
+**V: Wat moet ik doen als ik een uitzondering krijg bij het verwijderen van bijlagen?**  
+A: Controleer of de e‑mail niet met een wachtwoord is beveiligd, verifieer het bestandspad en zorg dat je een compatibele versie van GroupDocs.Watermark gebruikt.
 
-**Q:** Hoe kan ik duizenden e‑mails efficiënt verwerken?  
-**A:** Gebruik een thread‑pool‑executor om de laad‑wijzig‑opsla‑cyclus te paralleliseren, waarbij elke thread zijn eigen `Watermarker`‑instantie maakt.
+**V: Verbetert omgekeerd itereren echt de prestaties?**  
+A: Het elimineert de noodzaak voor extra index‑aanpassingen, waardoor de lus eenvoudiger en iets sneller wordt, vooral bij grote bijlagecollecties.
 
-## Conclusie
+## Bronnen
 
-Je hebt nu een compleet, productie‑klaar patroon voor **how to remove attachments** uit e‑mailberichten met GroupDocs.Watermark voor Java. Door gebruik te maken van omgekeerde iteratie en de robuuste `EmailLoadOptions`‑API, kun je opschoning automatiseren, naleving afdwingen en je mailboxen slank houden.
-
-### Volgende stappen
-- Experimenteer met extra filters (bijv. drempels voor bestandsgrootte).  
-- Combineer deze aanpak met e‑mail‑verzend‑API's om bijlagen vóór verzending te verwijderen.  
-- Ontdek andere GroupDocs.Watermark‑functies zoals watermerken en inhouds‑redactie.
-
-Klaar om te implementeren? Voeg de bovenstaande code‑fragmenten toe aan je project en begin vandaag nog met het opschonen van e‑mails!
-
-## Resources
-
-- **Documentatie:** [GroupDocs.Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)
-- **API‑referentie:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/watermark/java)
-- **Download:** [Latest Releases](https://releases.groupdocs.com/watermark/java/)
-- **GitHub‑repository:** [GroupDocs.Watermark for Java on GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- **Gratis ondersteuning:** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
+- **Documentatie:** [GroupDocs.Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **API‑referentie:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/watermark/java)  
+- **Download:** [Latest Releases](https://releases.groupdocs.com/watermark/java/)  
+- **GitHub‑repository:** [GroupDocs.Watermark for Java on GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Gratis ondersteuning:** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
 - **Tijdelijke licentie:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/) 
 
 ---
 
-**Laatst bijgewerkt:** 2026-06-21  
-**Getest met:** GroupDocs.Watermark 24.11 for Java  
+**Laatst bijgewerkt:** 2026-01-03  
+**Getest met:** GroupDocs.Watermark 24.11 voor Java  
 **Auteur:** GroupDocs
-
-## Gerelateerde tutorials
-
-- [Hoe PDF‑bijlagen extraheren met GroupDocs Watermark in Java voor e‑maildocumentbeheer](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)
-- [Hoe watermerken toevoegen aan e‑mailbijlagen met GroupDocs.Watermark voor Java](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-attachments/)
-- [Java‑e‑mailbijlageverwerking met GroupDocs.Watermark: een volledige gids](/watermark/java/email-document-watermarking/java-email-attachment-processing-groupdocs-watermark/)
