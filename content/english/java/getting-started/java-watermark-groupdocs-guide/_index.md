@@ -5,11 +5,57 @@ date: "2026-01-06"
 weight: 1
 url: "/java/getting-started/java-watermark-groupdocs-guide/"
 keywords:
-- Java watermarking
-- GroupDocs.Watermark Java API
-- adding watermarks in Java
+- add text watermark java
+- prevent memory leaks java
+- GroupDocs.Watermark Java
 type: docs
+schemas:
+- type: TechArticle
+  headline: Add Text Watermark Java with GroupDocs.Watermark
+  description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
+    memory leaks java while securing and branding your documents efficiently.
+  dateModified: '2026-06-21'
+  author: GroupDocs
+- type: HowTo
+  name: Add Text Watermark Java with GroupDocs.Watermark
+  description: Learn how to add text watermark java using GroupDocs.Watermark. Prevent
+    memory leaks java while securing and branding your documents efficiently.
+  steps:
+  - name: '**Branding Documents:** Insert your company name or logo as a subtle text
+      watermark on all outgoing PDFs.'
+    text: '**Branding Documents:** Insert your company name or logo as a subtle text
+      watermark on all outgoing PDFs.'
+  - name: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
+      to deter accidental distribution.'
+    text: '**Protecting Confidential Information:** Mark internal reports with “CONFIDENTIAL”
+      to deter accidental distribution.'
+  - name: '**Version Control in Collaboration:** Add version numbers as watermarks
+      to keep track of document revisions.'
+    text: '**Version Control in Collaboration:** Add version numbers as watermarks
+      to keep track of document revisions.'
+  - name: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
+      on contracts and statements to reinforce compliance.'
+    text: '**Legal and Financial Documentation:** Apply “FOR INTERNAL USE ONLY” watermarks
+      on contracts and statements to reinforce compliance.'
+- type: FAQPage
+  questions:
+  - question: Can I add image watermarks in addition to text?
+    answer: Yes, GroupDocs.Watermark also supports `ImageWatermark` objects for logos
+      or stamps.
+  - question: Does the library work with password‑protected PDFs?
+    answer: Absolutely. Provide the password via `LoadOptions` when constructing the
+      `Watermarker`.
+  - question: How can I watermark a large batch of documents efficiently?
+    answer: Use a loop to instantiate a `Watermarker` per file, apply the watermark,
+      save, and close immediately. This pattern keeps memory usage constant.
+  - question: Is it possible to remove a watermark that was added earlier?
+    answer: The API offers a `remove` method that can target specific watermarks by
+      ID or type, but you need to keep a reference to the added watermark.
+  - question: What Java versions are supported?
+    answer: GroupDocs.Watermark is compatible with Java 8 through Java 21, covering
+      both legacy and modern environments.
 ---
+# Add Text Watermark Java with GroupDocs.Watermark
 
 # Add Watermark Java: Mastering Document Security with GroupDocs.Watermark
 
@@ -64,6 +110,8 @@ To start, add the GroupDocs.Watermark repository and dependency to your Maven `p
 
 **Direct Download:** Alternatively, you can download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
+Additional resources: the official [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/) and the comprehensive [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java) provide deeper insights and code examples.
+
 ### License Acquisition
 
 - **Free Trial:** Test all features without a credit card.  
@@ -71,6 +119,10 @@ To start, add the GroupDocs.Watermark repository and dependency to your Maven `p
 - **Full License:** Required for commercial deployment and unlimited usage.
 
 ## Implementation Guide
+
+### How to add text watermark java?
+
+Load your source file with `new Watermarker(inputPath)` and call `add(new TextWatermark("CONFIDENTIAL", new Font("Arial", 36)))`. This two‑step pattern creates the watermark and applies it instantly, handling all format‑specific details internally.
 
 ### Initialize Watermarker
 
