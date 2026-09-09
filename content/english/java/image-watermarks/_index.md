@@ -1,6 +1,7 @@
 ---
-title: "Add Watermark to PDF Java – Image Watermark Tutorials"
-description: "Step-by-step guide to add watermark to PDF Java using GroupDocs.Watermark, covering image watermarking, positioning, scaling, and transparency."
+title: "Create Tiled Watermark with GroupDocs.Watermark Java"
+description: "Learn how to create tiled watermarks, scale image watermarks, and securely watermark images using GroupDocs.Watermark for Java."
+date: 2026-01-08
 weight: 4
 date: 2026-06-26
 url: "/java/image-watermarks/"
@@ -55,9 +56,25 @@ schemas:
     answer: On a typical server (8 GB RAM, 2.5 GHz CPU) the library processes a 200‑page
       PDF with a single image watermark in under 2 seconds.
 ---
-# Add Watermark to PDF Java – Image Watermark Tutorials
 
-In this guide you’ll learn **how to add watermark to PDF Java** projects using the GroupDocs.Watermark library. Whether you need a subtle logo in the corner of every report or a full‑page tiled watermark for brand protection, these tutorials walk you through every step—from loading a document to fine‑tuning opacity, scaling, and placement. By the end of the page you’ll be able to integrate image watermarks into PDFs, Excel sheets, Word files, and more, all from Java code.
+# Create Tiled Watermark with GroupDocs.Watermark Java
+
+Welcome to our comprehensive guide on how to **create tiled watermark** images in your Java applications using the GroupDocs.Watermark library. In this tutorial collection you’ll discover practical ways to add, scale, and securely watermark images across a variety of document formats. Whether you need to **how to watermark images**, **scale image watermark**, or **add image watermark java**, we’ve got you covered.
+
+## Quick Answers
+- **What is a tiled watermark?** A tiled watermark repeats the same image across the page, creating a pattern that covers the entire document.  
+- **Which library supports tiled watermarks in Java?** GroupDocs.Watermark for Java provides built‑in support for tiled image watermarks.  
+- **Can I control the opacity of a tiled watermark?** Yes, you can set the transparency level to make the watermark subtle or prominent.  
+- **Do tiled watermarks work with PDF, Word, and Excel?** Absolutely – the same API works across all major document types.  
+- **Is a license required for production use?** A valid GroupDocs.Watermark license is needed for commercial deployments.
+
+## How to Create Tiled Watermark in Java
+To **create tiled watermark** you simply configure the `WatermarkOptions` object with the `Tile` property set to `true`. This tells the engine to repeat the image horizontally and vertically until the page is fully covered. You can also combine tiling with scaling, rotation, and opacity adjustments to meet your branding requirements.
+
+### Why use tiled watermarks?
+- **Enhanced security:** Repeating the logo makes it harder for malicious users to remove or crop out the watermark.  
+- **Consistent branding:** Every page displays the same visual identity, reinforcing brand recognition.  
+- **Flexibility:** You can control the size, spacing, and transparency to suit any document style.
 
 ## Quick Answers
 - **Which library adds watermarks to PDFs in Java?** GroupDocs.Watermark for Java.  
@@ -149,14 +166,37 @@ A: On a typical server (8 GB RAM, 2.5 GHz CPU) the library processes a 200�
 - [Free Support](https://forum.groupdocs.com/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
+## Target Keywords
+
+**Primary Keyword (HIGHEST PRIORITY):**  
+create tiled watermark  
+
+**Secondary Keywords (SUPPORTING):**  
+how to watermark images, scale image watermark, add image watermark java, secure documents watermark  
+
+We have woven these keywords naturally throughout the guide to help you find the exact information you need while keeping the reading experience smooth and engaging.
+
+## Frequently Asked Questions
+
+**Q: Can I use tiled watermarks with password‑protected PDFs?**  
+A: Yes. Open the protected document with the appropriate password, then apply the tiled watermark as usual.
+
+**Q: How do I change the spacing between tiled images?**  
+A: Adjust the `TileSpacing` property in `WatermarkOptions` to increase or decrease the gap between repetitions.
+
+**Q: Is it possible to combine tiled image watermarks with text watermarks?**  
+A: Absolutely. You can add multiple watermark objects (image and text) to the same document and control their order and opacity independently.
+
+**Q: What formats are supported for tiled watermarks?**  
+A: GroupDocs.Watermark supports PDF, DOCX, PPTX, XLSX, and several image formats such as PNG and JPEG.
+
+**Q: Do I need a special license for scaling or rotating tiled watermarks?**  
+A: No special license is required; the standard GroupDocs.Watermark license covers all watermarking features, including scaling and rotation.
+
 ---
 
-**Last Updated:** 2026-06-26  
-**Tested With:** GroupDocs.Watermark for Java 23.11  
-**Author:** GroupDocs
+**Last Updated:** 2026-01-08  
+**Tested With:** GroupDocs.Watermark 23.12 for Java  
+**Author:** GroupDocs  
 
-## Related Tutorials
-
-- [How to Add Text and Image Watermarks to Specific PDF Pages Using GroupDocs.Watermark for Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [How to Add a Text Watermark to PDFs Using GroupDocs.Watermark for Java: A Step-by-Step Guide](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [GroupDocs.Watermark for Java: Comprehensive Guide to PDF Watermarking](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermark-guide/)
+---

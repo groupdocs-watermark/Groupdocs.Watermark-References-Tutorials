@@ -1,148 +1,50 @@
 ---
-date: 2026-06-26
-description: Hướng dẫn từng bước để thêm Watermark vào PDF Java bằng GroupDocs.Watermark,
-  bao gồm image watermarking, positioning, scaling và transparency.
-keywords:
-- add watermark to pdf java
-- image watermark java
-- groupdocs watermark java
-- java document branding
-- pdf image watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-26'
-  description: Step-by-step guide to add watermark to PDF Java using GroupDocs.Watermark,
-    covering image watermarking, positioning, scaling, and transparency.
-  headline: Add Watermark to PDF Java – Image Watermark Tutorials
-  type: TechArticle
-- description: Step-by-step guide to add watermark to PDF Java using GroupDocs.Watermark,
-    covering image watermarking, positioning, scaling, and transparency.
-  name: Add Watermark to PDF Java – Image Watermark Tutorials
-  steps:
-  - name: Set Up the Project
-    text: Add the GroupDocs.Watermark dependency to your `pom.xml` (or Gradle file).
-      This step ensures the library is available at compile time.
-  - name: Load the Document
-    text: '`Watermark` is the entry point that represents the PDF file in memory.'
-  - name: Create the Image Watermark
-    text: The `ImageWatermark` class is GroupDocs.Watermark’s object that holds all
-      image‑specific settings.
-  - name: Apply to Desired Pages
-    text: Here `add` attaches the watermark to pages 1 through 5, and `save` writes
-      the result to disk.
-  - name: Verify the Result
-    text: Open `sample_watermarked.pdf` in any PDF viewer to confirm that the logo
-      appears with the configured opacity, scale, and placement.
-  type: HowTo
-- questions:
-  - answer: Yes—use `imgWatermark.setTile(true)` to enable tiling before calling `add`.
-    question: Can I add a tiled watermark that repeats across the whole page?
-  - answer: 'Pass the password to the `Watermark` constructor: `new Watermark("file.pdf",
-      "pwd")`.'
-    question: How do I watermark password‑protected PDFs?
-  - answer: Absolutely—provide a `PageNumber` collection such as `new PageNumber[]{new
-      PageNumber(1), new PageNumber(watermark.getPageCount())}`.
-    question: Is it possible to watermark only specific pages, like the first and
-      last?
-  - answer: Yes—GroupDocs.Watermark can embed image watermarks into XLSX, XLS, and
-      CSV files using the same `ImageWatermark` API.
-    question: Does the library support adding watermarks to Excel files?
-  - answer: On a typical server (8 GB RAM, 2.5 GHz CPU) the library processes a 200‑page
-      PDF with a single image watermark in under 2 seconds.
-    question: What performance can I expect on a 200‑page PDF?
-  type: FAQPage
-title: Thêm Watermark vào PDF Java – Image Watermark Tutorials
+date: 2026-01-08
+description: Tìm hiểu cách tạo dấu nước dạng lưới, thay đổi kích thước dấu nước hình
+  ảnh và đánh dấu nước an toàn cho hình ảnh bằng GroupDocs.Watermark cho Java.
+title: Tạo watermark dạng gạch lát với GroupDocs.Watermark Java
 type: docs
 url: /vi/java/image-watermarks/
 weight: 4
 ---
 
-# Thêm Đánh Dấu Nước vào PDF Java – Hướng Dẫn Đánh Dấu Nước Hình Ảnh
+# Tạo Watermark Dạng Lát với GroupDocs.Watermark Java
 
-Trong hướng dẫn này, bạn sẽ học **cách thêm đánh dấu nước vào PDF Java** bằng thư viện GroupDocs.Watermark. Cho dù bạn cần một logo tinh tế ở góc mỗi báo cáo hoặc một dấu nước lặp toàn trang để bảo vệ thương hiệu, các hướng dẫn này sẽ dẫn bạn qua từng bước — từ tải tài liệu đến tinh chỉnh độ trong suốt, tỷ lệ và vị trí. Khi kết thúc trang, bạn sẽ có thể tích hợp các dấu nước hình ảnh vào PDF, bảng tính Excel, tệp Word và hơn nữa, tất cả bằng mã Java.
+Chào mừng bạn đến với hướng dẫn toàn diện của chúng tôi về cách **tạo watermark dạng lát** cho hình ảnh trong các ứng dụng Java của bạn bằng thư viện GroupDocs.Watermark. Trong bộ sưu tập tutorial này, bạn sẽ khám phá các cách thực tế để thêm, thay đổi kích thước và bảo mật watermark hình ảnh trên nhiều định dạng tài liệu khác nhau. Dù bạn cần **cách watermark hình ảnh**, **thay đổi kích thước watermark hình ảnh**, hoặc **thêm watermark hình ảnh java**, chúng tôi đều có giải pháp cho bạn.
 
-## Câu trả lời nhanh
-- **Thư viện nào thêm dấu nước vào PDF trong Java?** GroupDocs.Watermark for Java.  
-- **Tôi có cần giấy phép cho môi trường sản xuất không?** Có, giấy phép thương mại là bắt buộc cho việc sử dụng không phải đánh giá.  
-- **Tôi có thể đánh dấu nước PDF từ một luồng không?** Chắc chắn — GroupDocs.Watermark hỗ trợ cả đường dẫn tệp và nguồn `InputStream`.  
-- **Có hỗ trợ độ trong suốt không?** Có, bạn có thể đặt độ trong suốt từ 0 % (vô hình) đến 100 % (đầy đủ).  
-- **Các phiên bản Java nào tương thích?** Java 8 + và tất cả các bản phát hành LTS mới hơn.
+## Quick Answers
+- **Watermark dạng lát là gì?** Watermark dạng lát lặp lại cùng một hình ảnh trên toàn bộ trang, tạo ra một mẫu bao phủ toàn bộ tài liệu.  
+- **Thư viện nào hỗ trợ watermark dạng lát trong Java?** GroupDocs.Watermark for Java cung cấp hỗ trợ tích hợp cho watermark hình ảnh dạng lát.  
+- **Tôi có thể điều chỉnh độ mờ của watermark dạng lát không?** Có, bạn có thể đặt mức độ trong suốt để watermark trở nên nhẹ nhàng hoặc nổi bật.  
+- **Watermark dạng lát có hoạt động với PDF, Word và Excel không?** Hoàn toàn có – cùng một API hoạt động trên tất cả các loại tài liệu chính.  
+- **Cần giấy phép để sử dụng trong môi trường sản xuất không?** Cần một giấy phép GroupDocs.Watermark hợp lệ cho các triển khai thương mại.
 
-## “add watermark to pdf java” là gì?
-*“Add watermark to PDF Java”* đề cập đến quá trình chèn một lớp hình ảnh (hoặc văn bản) vào tệp PDF bằng mã Java. Thao tác này thường được thực hiện để khẳng định quyền sở hữu, thương hiệu tài liệu, hoặc tuân thủ các yêu cầu pháp lý. Nó liên quan đến việc sử dụng GroupDocs.Watermark Java API để chèn hình ảnh hoặc văn bản lên mỗi trang của tệp PDF. Kỹ thuật này giúp khẳng định quyền sở hữu, thương hiệu tài liệu, đáp ứng tuân thủ và ngăn chặn việc phân phối trái phép bằng cách nhúng một dấu hiệu có thể nhìn thấy hoặc bán trong suốt trực tiếp vào nội dung tệp.
+## How to Create Tiled Watermark in Java
+Để **tạo watermark dạng lát**, bạn chỉ cần cấu hình đối tượng `WatermarkOptions` với thuộc tính `Tile` được đặt thành `true`. Điều này yêu cầu engine lặp lại hình ảnh theo chiều ngang và chiều dọc cho đến khi trang được bao phủ hoàn toàn. Bạn cũng có thể kết hợp việc lát với việc thay đổi kích thước, xoay và điều chỉnh độ trong suốt để đáp ứng yêu cầu thương hiệu của mình.
 
-## Tại sao nên sử dụng GroupDocs.Watermark cho Java?
-GroupDocs.Watermark hỗ trợ **hơn 50 định dạng đầu vào và đầu ra** — bao gồm PDF, DOCX, XLSX, PPTX và các loại hình ảnh — đồng thời xử lý các tệp hàng trăm trang mà không cần tải toàn bộ tài liệu vào bộ nhớ. API cung cấp cho bạn khả năng kiểm soát độ trong suốt, xoay, tỷ lệ và lặp lại một cách chính xác từng pixel, làm cho nó trở thành lựa chọn đáng tin cậy nhất cho việc đánh dấu nước cấp doanh nghiệp.
+### Why use tiled watermarks?
+- **Bảo mật nâng cao:** Việc lặp lại logo khiến người dùng độc hại khó loại bỏ hoặc cắt bỏ watermark.  
+- **Nhận diện thương hiệu nhất quán:** Mỗi trang hiển thị cùng một hình ảnh thương hiệu, củng cố nhận diện thương hiệu.  
+- **Linh hoạt:** Bạn có thể điều chỉnh kích thước, khoảng cách và độ trong suốt để phù hợp với bất kỳ kiểu tài liệu nào.
 
-## Yêu cầu trước
-- Java 8 hoặc mới hơn được cài đặt trên máy phát triển của bạn.  
-- Hệ thống xây dựng Maven hoặc Gradle để tải artifact `groupdocs-watermark`.  
-- Giấy phép GroupDocs.Watermark cho Java hợp lệ (có sẵn giấy phép tạm thời để thử nghiệm).  
+## Available Tutorials
 
-## Cách thêm đánh dấu nước vào PDF Java – Hướng dẫn từng bước
-Phần này sẽ hướng dẫn bạn qua quy trình hoàn chỉnh: tải PDF, tạo một thể hiện ImageWatermark, cấu hình độ trong suốt, tỷ lệ, xoay và vị trí, và cuối cùng áp dụng nó vào các trang đã chọn trước khi lưu kết quả. Mỗi bước được minh họa bằng các đoạn mã ngắn gọn có thể sao chép vào dự án của bạn.
+### [Thêm Watermark Hình Ảnh vào Tài Liệu Java Sử Dụng Thư Viện GroupDocs.Watermark](./add-image-watermarks-groupdocs-java/)
+Tìm hiểu cách bảo vệ tài sản kỹ thuật số của bạn bằng cách thêm watermark hình ảnh với thư viện GroupDocs.Watermark cho Java. Thực hiện theo hướng dẫn từng bước này.
 
-### Bước 1: Thiết lập dự án
-Thêm phụ thuộc GroupDocs.Watermark vào `pom.xml` của bạn (hoặc tệp Gradle). Bước này đảm bảo thư viện có sẵn tại thời điểm biên dịch.
+### [Áp Dụng Hiệu Ứng Hình Ảnh cho Watermark Hình Dạng trong Java với GroupDocs.Watermark](./apply-image-effects-shape-watermarks-java-groupdocs-watermark/)
+Tìm hiểu cách áp dụng các hiệu ứng hình ảnh như độ sáng, độ tương phản và viền cho watermark hình dạng trong các bản trình bày .NET bằng cách sử dụng GroupDocs.Watermark cho Java.
 
-### Bước 2: Tải tài liệu
-```java
-Watermark watermark = new Watermark("sample.pdf");
-```
-`Watermark` là điểm vào đại diện cho tệp PDF trong bộ nhớ.
+### [Cách Thêm Watermark Hình Ảnh vào Excel Sử Dụng GroupDocs cho Java: Hướng Dẫn Toàn Diện](./groupdocs-watermark-java-add-image-to-excel/)
+Tìm hiểu cách sử dụng GroupDocs.Watermark cho Java để thêm watermark hình ảnh vào các tệp Excel, nâng cao bảo mật và thương hiệu một cách dễ dàng.
 
-### Bước 3: Tạo Đánh dấu Nước Hình Ảnh
-```java
-ImageWatermark imgWatermark = new ImageWatermark("logo.png");
-imgWatermark.setOpacity(0.5);          // 50 % transparency
-imgWatermark.setScale(0.3);            // 30 % of original size
-imgWatermark.setPosition(Position.CENTER);
-```
-Lớp `ImageWatermark` là đối tượng của GroupDocs.Watermark chứa tất cả các cài đặt riêng cho hình ảnh.
+### [Cách Thêm Watermark Văn Bản vào Hình Ảnh Tài Liệu Word Sử Dụng GroupDocs.Watermark cho Java](./add-watermarks-word-images-groupdocs-java/)
+Tìm hiểu cách thêm watermark văn bản vào hình ảnh trong tài liệu Word bằng GroupDocs.Watermark cho Java, bảo vệ nội dung của bạn một cách hiệu quả.
 
-### Bước 4: Áp dụng vào các trang mong muốn
-```java
-watermark.add(imgWatermark, new PageNumber(1, 5)); // pages 1‑5
-watermark.save("sample_watermarked.pdf");
-```
-Ở đây, `add` gắn dấu nước vào các trang 1 đến 5, và `save` ghi kết quả ra đĩa.
+### [Cách Thêm Watermark Hình Ảnh trong Java sử dụng GroupDocs.Watermark: Hướng Dẫn Từng Bước](./add-image-watermark-java-groupdocs/)
+Tìm hiểu cách thêm watermark hình ảnh vào tài liệu với GroupDocs.Watermark cho Java. Bảo vệ tính xác thực của tài liệu và nâng cao thương hiệu một cách dễ dàng.
 
-### Bước 5: Xác minh kết quả
-Mở `sample_watermarked.pdf` trong bất kỳ trình xem PDF nào để xác nhận logo xuất hiện với độ trong suốt, tỷ lệ và vị trí đã cấu hình.
-
-## Các vấn đề thường gặp và giải pháp
-- **Dấu nước không hiển thị:** Đảm bảo hình ảnh có nền trong suốt và `setOpacity` lớn hơn 0.  
-- **Lỗi thiếu bộ nhớ khi xử lý PDF lớn:** Sử dụng `Watermark.load(InputStream)` để truyền luồng tệp và tránh tải toàn bộ vào bộ nhớ.  
-- **Vị trí không đúng trên các trang đã xoay:** Gọi `imgWatermark.setRotateAngle(45)` trước khi thêm để xử lý xoay tùy chỉnh.
-
-## Câu hỏi thường gặp
-
-**Q: Tôi có thể thêm một dấu nước lặp lại trên toàn trang không?**  
-A: Có — sử dụng `imgWatermark.setTile(true)` để bật tính năng lặp lại trước khi gọi `add`.
-
-**Q: Làm thế nào để đánh dấu nước các PDF được bảo vệ bằng mật khẩu?**  
-A: Truyền mật khẩu vào hàm khởi tạo `Watermark`: `new Watermark("file.pdf", "pwd")`.
-
-**Q: Có thể chỉ đánh dấu nước các trang cụ thể, như trang đầu và cuối không?**  
-A: Chắc chắn — cung cấp một tập hợp `PageNumber` như `new PageNumber[]{new PageNumber(1), new PageNumber(watermark.getPageCount())}`.
-
-**Q: Thư viện có hỗ trợ thêm dấu nước vào tệp Excel không?**  
-A: Có — GroupDocs.Watermark có thể nhúng dấu nước hình ảnh vào các tệp XLSX, XLS và CSV bằng cùng API `ImageWatermark`.
-
-**Q: Hiệu năng như thế nào trên một PDF 200 trang?**  
-A: Trên một máy chủ tiêu chuẩn (8 GB RAM, CPU 2.5 GHz) thư viện xử lý PDF 200 trang với một dấu nước hình ảnh trong thời gian dưới 2 giây.
-
-## Tài nguyên bổ sung
-
-### Các hướng dẫn có sẵn
-
-- [Thêm Đánh dấu Nước Hình Ảnh vào Tài liệu Java bằng Thư viện GroupDocs.Watermark](./add-image-watermarks-groupdocs-java/)
-- [Áp dụng Hiệu ứng Hình ảnh cho Đánh dấu Nước Hình dạng trong Java với GroupDocs.Watermark](./apply-image-effects-shape-watermarks-java-groupdocs-watermark/)
-- [Cách Thêm Đánh dấu Nước Hình Ảnh vào Excel bằng GroupDocs cho Java&#58; Hướng dẫn Toàn diện](./groupdocs-watermark-java-add-image-to-excel/)
-- [Cách Thêm Đánh dấu Nước Văn bản vào Hình ảnh Tài liệu Word bằng GroupDocs.Watermark cho Java](./add-watermarks-word-images-groupdocs-java/)
-- [Cách Thêm Đánh dấu Nước Hình Ảnh trong Java bằng GroupDocs.Watermark&#58; Hướng dẫn Từng Bước](./add-image-watermark-java-groupdocs/)
-
-### Liên kết hữu ích
+## Additional Resources
 
 - [Tài liệu GroupDocs.Watermark cho Java](https://docs.groupdocs.com/watermark/java/)
 - [Tham chiếu API GroupDocs.Watermark cho Java](https://reference.groupdocs.com/watermark/java/)
@@ -151,14 +53,35 @@ A: Trên một máy chủ tiêu chuẩn (8 GB RAM, CPU 2.5 GHz) thư viện 
 - [Hỗ trợ miễn phí](https://forum.groupdocs.com/)
 - [Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
 
+## Target Keywords
+
+**Từ khóa chính (ƯU TIÊN CAO NHẤT):**  
+create tiled watermark  
+
+**Từ khóa phụ (HỖ TRỢ):**  
+how to watermark images, scale image watermark, add image watermark java, secure documents watermark  
+
+Chúng tôi đã khéo léo lồng ghép các từ khóa này vào toàn bộ hướng dẫn để giúp bạn tìm kiếm thông tin chính xác mà bạn cần, đồng thời duy trì trải nghiệm đọc mượt mà và hấp dẫn.
+
+## Frequently Asked Questions
+
+**Q: Tôi có thể sử dụng watermark dạng lát với PDF được bảo vệ bằng mật khẩu không?**  
+A: Có. Mở tài liệu được bảo vệ bằng mật khẩu thích hợp, sau đó áp dụng watermark dạng lát như bình thường.
+
+**Q: Làm thế nào để thay đổi khoảng cách giữa các hình ảnh dạng lát?**  
+A: Điều chỉnh thuộc tính `TileSpacing` trong `WatermarkOptions` để tăng hoặc giảm khoảng cách giữa các lần lặp.
+
+**Q: Có thể kết hợp watermark hình ảnh dạng lát với watermark văn bản không?**  
+A: Chắc chắn. Bạn có thể thêm nhiều đối tượng watermark (hình ảnh và văn bản) vào cùng một tài liệu và kiểm soát thứ tự cũng như độ trong suốt của chúng một cách độc lập.
+
+**Q: Các định dạng nào được hỗ trợ cho watermark dạng lát?**  
+A: GroupDocs.Watermark hỗ trợ PDF, DOCX, PPTX, XLSX và một số định dạng hình ảnh như PNG và JPEG.
+
+**Q: Tôi có cần giấy phép đặc biệt để thay đổi kích thước hoặc xoay watermark dạng lát không?**  
+A: Không cần giấy phép đặc biệt; giấy phép GroupDocs.Watermark tiêu chuẩn bao gồm tất cả các tính năng watermark, bao gồm thay đổi kích thước và xoay.
+
 ---
 
-**Cập nhật lần cuối:** 2026-06-26  
-**Kiểm tra với:** GroupDocs.Watermark for Java 23.11  
+**Cập nhật lần cuối:** 2026-01-08  
+**Được kiểm tra với:** GroupDocs.Watermark 23.12 for Java  
 **Tác giả:** GroupDocs
-
-## Các hướng dẫn liên quan
-
-- [Cách Thêm Đánh dấu Nước Văn bản và Hình ảnh vào Các Trang PDF Cụ thể bằng GroupDocs.Watermark cho Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Cách Thêm Đánh dấu Nước Văn bản vào PDF bằng GroupDocs.Watermark cho Java: Hướng dẫn Từng Bước](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [GroupDocs.Watermark cho Java: Hướng dẫn Toàn diện về Đánh dấu Nước PDF](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermark-guide/)

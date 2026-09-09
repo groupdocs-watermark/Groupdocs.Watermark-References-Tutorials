@@ -1,105 +1,62 @@
 ---
-date: '2026-06-26'
-description: Apprenez comment ajouter un filigrane à des documents Java avec une image
-  en utilisant GroupDocs.Watermark. Ce guide étape par étape couvre la configuration,
-  l'ajout d'un filigrane image et des conseils de performance.
+date: '2026-01-08'
+description: Apprenez à ajouter un filigrane aux documents Java en ajoutant un filigrane
+  image avec GroupDocs.Watermark. Guide étape par étape pour ajouter un filigrane
+  image en Java.
 keywords:
-- how to watermark java
-- apply image watermark pdf
-- add image watermark java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-26'
-  description: Learn how to watermark Java documents with an image using GroupDocs.Watermark.
-    This step‑by‑step guide covers setup, adding an image watermark, and performance
-    tips.
-  headline: How to Watermark Java Docs with Image Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to watermark Java documents with an image using GroupDocs.Watermark.
-    This step‑by‑step guide covers setup, adding an image watermark, and performance
-    tips.
-  name: How to Watermark Java Docs with Image Using GroupDocs.Watermark
-  steps:
-  - name: Open the Document from a File Stream
-    text: Start by creating a `FileInputStream` that points to the source file you
-      want to protect.
-  - name: Initialize the Watermarker Object
-    text: '`Watermarker` is the core class that orchestrates watermark operations.
-      It represents a single document in memory and provides methods for adding, removing,
-      or searching watermarks.'
-  - name: Create an ImageWatermark Object
-    text: '`ImageWatermark` encapsulates the image you want to overlay. Provide the
-      image path or stream, and the API loads it as a watermark resource.'
-  - name: Set Watermark Alignment
-    text: Alignment determines where the watermark appears on each page (center, top‑right,
-      etc.). You can also adjust opacity and rotation here.
-  - name: Add the Watermark to the Document
-    text: Call `add` on the `Watermarker` instance, passing the configured `ImageWatermark`.
-      The API instantly renders the image onto every page.
-  - name: Save the Watermarked Document
-    text: Choose an output format that matches your source (PDF, DOCX, etc.) and specify
-      a new file path. The library writes the result without altering the original
-      file.
-  - name: Close Resources
-    text: Always close streams and the `Watermarker` instance to free system resources
-      and avoid file locks.
-  - name: Instantiate ImageWatermark
-    text: Provide the image file path; the object can now be reused.
-  - name: Configure Alignment Once
-    text: Set alignment, opacity, and scaling before applying it to any document.
-  type: HowTo
-- questions:
-  - answer: Yes, you can chain multiple `add` calls – first an `ImageWatermark`, then
-      a `TextWatermark`, each with its own alignment and opacity settings.
-    question: Can I add both image and text watermarks to the same document?
-  - answer: Absolutely. Provide the password when creating the `Watermarker` instance;
-      the API will decrypt, apply the watermark, and re‑encrypt the file.
-    question: Does the library work with password‑protected PDFs?
-  - answer: GroupDocs.Watermark can handle files up to 2 GB without loading the entire
-      document into memory, thanks to its streaming architecture.
-    question: What is the maximum file size supported?
-  - answer: You can render a page to an image using `watermarker.getPage(1).convertToImage()`
-      and inspect the result before committing.
-    question: Is there a way to preview the watermark before saving?
-  - answer: Use the `removeAll` or `removeById` methods provided by the `Watermarker`
-      class to strip watermarks without re‑creating the document.
-    question: How do I remove a watermark that was added earlier?
-  type: FAQPage
-title: Comment ajouter un filigrane à des documents Java avec une image en utilisant
-  GroupDocs.Watermark
+- add image watermark in Java
+- GroupDocs Watermark setup
+- Java document branding
+title: Comment ajouter un filigrane en Java avec GroupDocs.Watermark
 type: docs
 url: /fr/java/image-watermarks/add-image-watermark-java-groupdocs/
 weight: 1
 ---
 
-# Comment ajouter un filigrane d'image aux documents Java avec GroupDocs.Watermark
+# Comment ajouter un filigrane en Java avec GroupDocs.Watermark
 
-Ajouter un filigrane visuel à vos documents Java protège non seulement l'authenticité mais renforce également l'identité de la marque. Dans ce tutoriel, vous apprendrez **comment ajouter un filigrane aux fichiers Java** en insérant un filigrane image avec GroupDocs.Watermark. Nous passerons en revue les prérequis, la configuration de la bibliothèque et le flux de code exact, puis terminerons par les meilleures pratiques de performance et les conseils de dépannage.
+Protéger l’authenticité de vos documents ou renforcer leur image de marque grâce à des filigranes image est essentiel, que vous travailliez sur des factures, des contrats ou du matériel marketing. **GroupDocs.Watermark for Java** simplifie cette tâche tout en préservant la qualité du document.
+
+Dans ce tutoriel, vous apprendrez **comment ajouter un filigrane** à vos documents Java en ajoutant un filigrane image. Vous découvrirez le processus d’installation et les détails d’implémentation, ainsi que quelques considérations de performance.
 
 ## Réponses rapides
-- **Quelle bibliothèque faut‑il ?** GroupDocs.Watermark for Java (v24.11 ou plus récent).  
-- **Puis‑je ajouter un filigrane aux PDF, Word et Excel ?** Oui – l'API prend en charge plus de 30 formats.  
-- **Ai‑je besoin d'une licence pour les tests ?** Un essai gratuit suffit pour le développement ; une licence permanente est requise pour la production.  
-- **Le processus est‑il thread‑safe ?** Les instances de Watermarker ne sont pas partagées entre les threads ; créez une nouvelle instance par opération.  
-- **Combien de lignes de code ?** Seulement cinq étapes logiques – ouvrir, créer le filigrane, définir l'alignement, ajouter et enregistrer.
+- **Que signifie « comment ajouter un filigrane » ?** Il s’agit d’insérer une marque visible—image ou texte—dans un document pour indiquer la propriété ou la marque.  
+- **Quelle bibliothèque devrais-je utiliser pour ajouter un filigrane image en Java ?** GroupDocs.Watermark for Java fournit une API simple pour cet usage.  
+- **Ai-je besoin d’une licence ?** Un essai gratuit est disponible ; une licence payante est requise pour une utilisation en production.  
+- **Puis-je traiter des fichiers Excel, Word et PDF ?** Oui, la bibliothèque prend en charge de nombreux formats dont XLSX, DOCX et PDF.  
+- **Le traitement par lots est-il possible ?** Absolument—en parcourant les fichiers et en réutilisant l’objet Watermarker, vous pouvez filigraner de nombreux documents efficacement.  
 
-## Qu'est‑ce que « how to watermark java » ?
-*« How to watermark java »* désigne le processus d'application programmatique de marques visuelles (texte ou images) aux documents générés ou traités par des applications Java. Avec GroupDocs.Watermark, vous pouvez intégrer un filigrane image en un seul appel, en préservant la mise en page et la qualité sur PDF, DOCX, PPTX et de nombreux autres formats.
+## Qu’est‑ce que « comment ajouter un filigrane » en Java ?
+Ajouter un filigrane signifie placer programmétiquement une image (ou du texte) sur chaque page d’un document. Cette indication visuelle aide à protéger la propriété intellectuelle, à confirmer l’authenticité ou à renforcer l’identité de marque.
 
-## Pourquoi utiliser GroupDocs.Watermark pour les filigranes image ?
-GroupDocs.Watermark prend en charge **plus de 50 formats d'entrée et de sortie** et peut traiter des fichiers de plusieurs centaines de pages sans charger le document complet en mémoire, réduisant l'utilisation de RAM jusqu'à 70 %. L'API offre également des options intégrées d'alignement, d'opacité et de mise à l'échelle, vous permettant d'obtenir un branding professionnel en quelques millisecondes.
+## Pourquoi utiliser GroupDocs.Watermark pour Java ?
+- **Facilité d’intégration** – simples coordonnées Maven ou téléchargement direct.  
+- **Large prise en charge des formats** – fonctionne avec les PDF, fichiers Office, images, etc.  
+- **Contrôle fin** – alignements, opacité, rotation et mise à l’échelle configurables.  
+- **Performance optimisée** – les versions récentes réduisent l’empreinte mémoire et accélèrent le traitement.
 
 ## Prérequis
-- **Java Development Kit (JDK) 8 ou supérieur** installé localement.  
-- **Maven** ou un autre outil de construction pour gérer les dépendances.  
-- **IDE** tel qu'IntelliJ IDEA ou Eclipse (optionnel mais recommandé).  
-- **Connaissances de base en I/O de fichiers Java** – vous travaillerez avec `InputStream` et `OutputStream`.
 
-## Comment ajouter un filigrane image en Java ?
-Pour ajouter un filigrane image, ouvrez d'abord le fichier cible sous forme de flux, puis créez une instance `Watermarker` pour ce document. Créez un `ImageWatermark` à partir de l'image souhaitée, définissez sa position, son opacité et son échelle selon les besoins, puis invoquez la méthode `add`. Enfin, enregistrez le document modifié à un nouvel emplacement, en veillant à fermer tous les flux.
+Avant d’ajouter des filigranes image, assurez‑vous de disposer de :
 
-### Étape 1 : Ouvrir le document depuis un flux de fichier
-Commencez par créer un `FileInputStream` qui pointe vers le fichier source que vous souhaitez protéger.
+### Bibliothèques et dépendances requises
+- **GroupDocs.Watermark for Java** : la version 24.11 ou ultérieure est recommandée.
+
+### Exigences de configuration de l’environnement
+- Un kit de développement Java (JDK) installé sur votre machine  
+- Un environnement de développement intégré (IDE) tel qu’IntelliJ IDEA ou Eclipse  
+
+### Prérequis de connaissances
+- Compréhension de base de la programmation Java  
+- Familiarité avec la gestion des fichiers en Java  
+
+## Configuration de GroupDocs.Watermark pour Java
+
+Pour utiliser GroupDocs.Watermark, intégrez la bibliothèque à votre projet comme suit :
+
+### Configuration Maven
+
+Ajoutez ces configurations à votre `pom.xml` :
 
 ```xml
 <repositories>
@@ -119,8 +76,27 @@ Commencez par créer un `FileInputStream` qui pointe vers le fichier source que 
 </dependencies>
 ```
 
-### Étape 2 : Initialiser l'objet Watermarker
-`Watermarker` est la classe principale qui orchestre les opérations de filigrane. Elle représente un seul document en mémoire et fournit des méthodes pour ajouter, supprimer ou rechercher des filigranes.
+### Téléchargement direct
+
+Sinon, téléchargez la dernière version depuis [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+
+### Obtention de licence
+
+Commencez avec un essai gratuit en téléchargeant la bibliothèque. Pour une utilisation prolongée, envisagez d’obtenir une licence temporaire ou d’en acheter une. Consultez la page de licence de GroupDocs pour plus d’informations.
+
+Une fois configuré, nous parcourrons l’initialisation et la configuration de GroupDocs.Watermark.
+
+## Comment ajouter un filigrane aux documents en Java
+
+Nous couvrirons deux fonctionnalités principales : **java add image watermark** et la création d’un objet `ImageWatermark` réutilisable.
+
+### Ajout d’un filigrane image à un document
+
+Cette fonctionnalité vous permet d’enrichir vos documents en ajoutant des filigranes image personnalisés, améliorant ainsi l’authenticité ou la marque.
+
+#### Étape 1 : Ouvrir le document à partir d’un flux de fichier
+
+Commencez par ouvrir le document où vous souhaitez appliquer le filigrane :
 
 ```java
 import java.io.FileInputStream;
@@ -130,15 +106,17 @@ final String documentPath = "YOUR_DOCUMENT_DIRECTORY/document.xlsx"; // Replace 
 FileInputStream stream = new FileInputStream(documentPath);
 ```
 
-### Étape 3 : Créer un objet ImageWatermark
-`ImageWatermark` encapsule l'image que vous souhaitez superposer. Fournissez le chemin ou le flux de l'image, et l'API la charge comme ressource de filigrane.
+#### Étape 2 : Initialiser l’objet Watermarker
+
+Initialisez l’objet `Watermarker` à l’aide du flux de fichier :
 
 ```java
 Watermarker watermarker = new Watermarker(stream);
 ```
 
-### Étape 4 : Définir l'alignement du filigrane
-L'alignement détermine où le filigrane apparaît sur chaque page (centre, haut‑droite, etc.). Vous pouvez également ajuster l'opacité et la rotation ici.
+#### Étape 3 : Créer un objet ImageWatermark
+
+Créez un filigrane en spécifiant le chemin de votre image :
 
 ```java
 import com.groupdocs.watermark.watermarks.ImageWatermark;
@@ -147,8 +125,9 @@ final String watermarkImagePath = "YOUR_DOCUMENT_DIRECTORY/logo.png"; // Replace
 ImageWatermark watermark = new ImageWatermark(watermarkImagePath);
 ```
 
-### Étape 5 : Ajouter le filigrane au document
-Appelez `add` sur l'instance `Watermarker`, en passant le `ImageWatermark` configuré. L'API rend instantanément l'image sur chaque page.
+#### Étape 4 : Définir l’alignement du filigrane
+
+Alignez le filigrane selon votre préférence :
 
 ```java
 import com.groupdocs.watermark.common.HorizontalAlignment;
@@ -158,26 +137,26 @@ watermark.setHorizontalAlignment(HorizontalAlignment.Center);
 watermark.setVerticalAlignment(VerticalAlignment.Center);
 ```
 
-### Étape 6 : Enregistrer le document filigrané
-Choisissez un format de sortie qui correspond à votre source (PDF, DOCX, etc.) et spécifiez un nouveau chemin de fichier. La bibliothèque écrit le résultat sans modifier le fichier original.
+#### Étape 5 : Ajouter le filigrane
+
+Appliquez le filigrane configuré à votre document :
 
 ```java
 watermarker.add(watermark);
 ```
 
-### Étape 7 : Fermer les ressources
-Fermez toujours les flux et l'instance `Watermarker` pour libérer les ressources système et éviter les verrous de fichiers.
+#### Étape 6 : Enregistrer le document
+
+Enregistrez le document modifié à un nouvel emplacement :
 
 ```java
 final String outputPath = "YOUR_OUTPUT_DIRECTORY/output_document.xlsx"; // Replace with actual path.
 watermarker.save(outputPath);
 ```
 
-## Créer un objet ImageWatermark séparément
-Si vous devez réutiliser le même filigrane sur plusieurs documents, créez‑le une fois et conservez‑le pour une utilisation ultérieure.
+#### Étape 7 : Fermer les ressources
 
-### Étape 1 : Instancier ImageWatermark
-Fournissez le chemin du fichier image ; l'objet peut maintenant être réutilisé.
+Libérez les ressources système en fermant tous les flux et objets :
 
 ```java
 watermark.close();
@@ -185,72 +164,80 @@ watermarker.close();
 stream.close();
 ```
 
-### Étape 2 : Configurer l'alignement une fois
-Définissez l'alignement, l'opacité et l'échelle avant de l'appliquer à tout document.
+### Création d’un objet ImageWatermark
+
+Créer un objet filigrane autonome permet de le configurer avant l’application—utile lorsque vous devez réutiliser le même filigrane sur plusieurs documents.
+
+#### Étape 1 : Créer l’objet ImageWatermark
+
+Initialisez‑le en indiquant le chemin de votre image :
 
 ```java
 ImageWatermark watermark = new ImageWatermark(watermarkImagePath);
 ```
 
-## Applications pratiques
-1. **Branding des documents** – Insérez le logo de votre entreprise sur les factures, propositions ou PDF marketing.  
-2. **Protection de la propriété intellectuelle** – Marquez les brouillons confidentiels avec une image « Confidential » visible.  
-3. **Authentification de documents** – Ajoutez un sceau unique pouvant être vérifié par les systèmes en aval.
+#### Étape 2 : Configurer l’alignement
 
-Intégrer ces étapes dans un service ERP, CRM ou de traitement par lots garantit que chaque fichier sortant porte automatiquement votre identité visuelle.
-
-## Considérations de performance
-- **Gestion de la mémoire :** Fermez rapidement tous les objets `InputStream`/`OutputStream` ; l'API diffuse les données et ne garde pas le fichier complet en RAM.  
-- **Traitement par lots :** Réutilisez une seule instance `ImageWatermark` sur de nombreux objets `Watermarker` pour éviter le rechargement répété de l'image.  
-- **Avantages de la version :** La dernière version de GroupDocs.Watermark (v24.11) introduit le chargement paresseux, réduisant le temps de traitement jusqu'à 30 % pour les gros PDF.
-
-## Problèmes courants et solutions
-- **Filigrane non visible :** Vérifiez que l'image a une résolution suffisante et définissez une opacité supérieure à 0 % (par ex., 0,7).  
-- **Erreur de format non pris en charge :** Assurez‑vous que le type de fichier source figure dans le tableau des formats pris en charge (PDF, DOCX, PPTX, XLSX, etc.).  
-- **OutOfMemoryException sur de très gros fichiers :** Activez le mode streaming en appelant `watermarker.setUseMemoryCache(true)` avant d'ajouter le filigrane.
-
-## Questions fréquemment posées
-
-**Q : Puis‑je ajouter à la fois des filigranes image et texte au même document ?**  
-R : Oui, vous pouvez chaîner plusieurs appels `add` – d'abord un `ImageWatermark`, puis un `TextWatermark`, chacun avec ses propres paramètres d'alignement et d'opacité.
-
-**Q : La bibliothèque fonctionne‑t‑elle avec des PDF protégés par mot de passe ?**  
-R : Absolument. Fournissez le mot de passe lors de la création de l'instance `Watermarker` ; l'API déchiffrera, appliquera le filigrane et rechiffrera le fichier.
-
-**Q : Quelle est la taille maximale de fichier prise en charge ?**  
-R : GroupDocs.Watermark peut gérer des fichiers jusqu'à 2 Go sans charger le document complet en mémoire, grâce à son architecture de streaming.
-
-**Q : Existe‑t‑il un moyen de prévisualiser le filigrane avant l'enregistrement ?**  
-R : Vous pouvez rendre une page en image avec `watermarker.getPage(1).convertToImage()` et inspecter le résultat avant de valider.
-
-**Q : Comment supprimer un filigrane ajouté précédemment ?**  
-R : Utilisez les méthodes `removeAll` ou `removeById` de la classe `Watermarker` pour enlever les filigranes sans recréer le document.
-
-## Conclusion
-Vous disposez maintenant d'un flux de travail complet et prêt pour la production pour **comment ajouter un filigrane aux documents Java** avec une image en utilisant GroupDocs.Watermark. En suivant le modèle en sept étapes — ouvrir, instancier, configurer, ajouter, enregistrer et fermer — vous pouvez intégrer des marques de branding ou de sécurité efficacement. Expérimentez avec différents alignements, niveaux d'opacité et techniques de traitement par lots pour adapter la solution à votre cas d'utilisation spécifique.
-
----
-
-**Dernière mise à jour :** 2026-06-26  
-**Testé avec :** GroupDocs.Watermark 24.11 for Java  
-**Auteur :** GroupDocs  
-
-**Ressources**
-- [GroupDocs.Watermark pour Java – versions](https://releases.groupdocs.com/watermark/java/)  
-- [Documentation](https://docs.groupdocs.com/watermark/java/)  
-- [Référence API](https://reference.groupdocs.com/watermark/java)  
-- [Télécharger la bibliothèque](https://releases.groupdocs.com/watermark/java/)  
-- [Dépôt GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Forum d'assistance gratuit](https://forum.groupdocs.com/c/watermark/10)  
-- [Informations sur la licence temporaire](https://purchase.groupdocs.com/temporary-license/)  
+Définissez comment le filigrane s’alignera dans le document :
 
 ```java
 watermark.setHorizontalAlignment(ImageWatermark.HorizontalAlignment.Center);
 watermark.setVerticalAlignment(ImageWatermark.VerticalAlignment.Center);
 ```
 
-## Tutoriels associés
+## Applications pratiques
 
-- [Comment ajouter des filigranes texte aux documents avec GroupDocs.Watermark pour Java : guide étape par étape](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)  
-- [Comment ajouter des filigranes texte et image à des pages PDF spécifiques avec GroupDocs.Watermark pour Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)  
-- [Comment ajouter des filigranes image dans les documents Word avec GroupDocs.Watermark pour Java](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
+1. **Marquage des documents** – Renforcez les documents d’entreprise avec des filigranes logo.  
+2. **Protection de la propriété intellectuelle** – Utilisez des filigranes pour indiquer la propriété d’images ou de texte.  
+3. **Authentification de documents** – Appliquez des marques visibles pour la vérification d’authenticité.
+
+Envisagez d’intégrer cette fonctionnalité dans les systèmes de création et de gestion de documents, tels que les plateformes ERP ou CRM.
+
+## Considérations de performance
+
+- Optimisez l’utilisation de la mémoire en fermant rapidement les flux après usage.  
+- Utilisez la dernière version de GroupDocs.Watermark pour profiter des améliorations de performance.  
+- Profilez votre application afin d’identifier les goulets d’étranglement du filigrannage, notamment lors du traitement de gros lots.
+
+## Problèmes courants et solutions
+
+| Problème | Solution |
+|----------|----------|
+| **OutOfMemoryError sur de gros fichiers** | Traitez les fichiers un par un et fermez le `Watermarker` après chaque itération. |
+| **Filigrane non visible** | Vérifiez que l’image a une opacité suffisante et que l’alignement est correctement défini. |
+| **Format de fichier non pris en charge** | Vérifiez la liste des formats pris en charge par la bibliothèque ; mettez à jour vers la dernière version si nécessaire. |
+
+## Questions fréquentes
+
+**Q : Comment choisir entre un essai gratuit et l’achat de GroupDocs.Watermark ?**  
+R : Commencez par l’essai gratuit pour évaluer les fonctionnalités ; achetez une licence pour disposer de toutes les fonctionnalités en production.
+
+**Q : Puis-je également ajouter des filigranes texte ?**  
+R : Oui, la bibliothèque prend en charge les filigranes image et texte.
+
+**Q : Quels types de fichiers puis-je filigraner avec cette bibliothèque ?**  
+R : Les PDF, documents Word, feuilles de calcul Excel, présentations PowerPoint et de nombreux formats d’image sont pris en charge.
+
+**Q : Comment gérer le traitement par lots de grande taille avec des filigranes ?**  
+R : Parcourez les fichiers, réutilisez une seule instance de `Watermarker` lorsque possible, et surveillez l’utilisation de la mémoire.
+
+**Q : Les filigranes peuvent-ils être facilement supprimés des documents de sortie ?**  
+R : Les filigranes sont intégrés ; leur suppression nécessite un retraitement ou l’utilisation de l’API de suppression de la bibliothèque.
+
+## Conclusion
+
+Utiliser GroupDocs.Watermark en Java pour ajouter des filigranes image est une méthode efficace pour renforcer la sécurité et la marque des documents. Ce guide vous a montré comment installer, configurer et appliquer les filigranes de façon optimale. Explorez ensuite d’autres fonctionnalités de filigrane—comme les filigranes texte, les contrôles d’opacité ou le traitement par lots—pour enrichir davantage votre flux de travail documentaire.
+
+## Ressources
+- [Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download Library](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License Information](https://purchase.groupdocs.com/temporary-license/) 
+
+---
+
+**Dernière mise à jour :** 2026-01-08  
+**Testé avec :** GroupDocs.Watermark 24.11 for Java  
+**Auteur :** GroupDocs

@@ -1,148 +1,51 @@
 ---
-date: 2026-06-26
-description: Guia passo a passo para adicionar marca d'água a PDF Java usando GroupDocs.Watermark,
-  abordando marca d'água em imagem, posicionamento, dimensionamento e transparência.
-keywords:
-- add watermark to pdf java
-- image watermark java
-- groupdocs watermark java
-- java document branding
-- pdf image watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-26'
-  description: Step-by-step guide to add watermark to PDF Java using GroupDocs.Watermark,
-    covering image watermarking, positioning, scaling, and transparency.
-  headline: Add Watermark to PDF Java – Image Watermark Tutorials
-  type: TechArticle
-- description: Step-by-step guide to add watermark to PDF Java using GroupDocs.Watermark,
-    covering image watermarking, positioning, scaling, and transparency.
-  name: Add Watermark to PDF Java – Image Watermark Tutorials
-  steps:
-  - name: Set Up the Project
-    text: Add the GroupDocs.Watermark dependency to your `pom.xml` (or Gradle file).
-      This step ensures the library is available at compile time.
-  - name: Load the Document
-    text: '`Watermark` is the entry point that represents the PDF file in memory.'
-  - name: Create the Image Watermark
-    text: The `ImageWatermark` class is GroupDocs.Watermark’s object that holds all
-      image‑specific settings.
-  - name: Apply to Desired Pages
-    text: Here `add` attaches the watermark to pages 1 through 5, and `save` writes
-      the result to disk.
-  - name: Verify the Result
-    text: Open `sample_watermarked.pdf` in any PDF viewer to confirm that the logo
-      appears with the configured opacity, scale, and placement.
-  type: HowTo
-- questions:
-  - answer: Yes—use `imgWatermark.setTile(true)` to enable tiling before calling `add`.
-    question: Can I add a tiled watermark that repeats across the whole page?
-  - answer: 'Pass the password to the `Watermark` constructor: `new Watermark("file.pdf",
-      "pwd")`.'
-    question: How do I watermark password‑protected PDFs?
-  - answer: Absolutely—provide a `PageNumber` collection such as `new PageNumber[]{new
-      PageNumber(1), new PageNumber(watermark.getPageCount())}`.
-    question: Is it possible to watermark only specific pages, like the first and
-      last?
-  - answer: Yes—GroupDocs.Watermark can embed image watermarks into XLSX, XLS, and
-      CSV files using the same `ImageWatermark` API.
-    question: Does the library support adding watermarks to Excel files?
-  - answer: On a typical server (8 GB RAM, 2.5 GHz CPU) the library processes a 200‑page
-      PDF with a single image watermark in under 2 seconds.
-    question: What performance can I expect on a 200‑page PDF?
-  type: FAQPage
-title: Adicionar Marca d'água a PDF Java – Tutoriais de Marca d'água em Imagem
+date: 2026-01-08
+description: Aprenda a criar marcas d'água em mosaico, dimensionar marcas d'água de
+  imagem e aplicar marcas d'água de forma segura em imagens usando o GroupDocs.Watermark
+  para Java.
+title: Criar Marca d'água em Mosaico com GroupDocs.Watermark Java
 type: docs
 url: /pt/java/image-watermarks/
 weight: 4
 ---
 
-# Adicionar Marca d'água a PDF Java – Tutoriais de Marca d'água de Imagem
+# Criar Marca d'água em Mosaico com GroupDocs.Watermark Java
 
-Neste guia, você aprenderá **como adicionar marca d'água a PDF Java** em projetos usando a biblioteca GroupDocs.Watermark. Seja você precisar de um logotipo sutil no canto de cada relatório ou de uma marca d'água em mosaico de página inteira para proteção de marca, estes tutoriais o conduzem passo a passo — desde o carregamento de um documento até o ajuste fino de opacidade, escala e posicionamento. Ao final da página, você será capaz de integrar marcas d'água de imagem em PDFs, planilhas Excel, arquivos Word e muito mais, tudo a partir de código Java.
+Bem-vindo ao nosso guia abrangente sobre como **criar marca d'água em mosaico** em suas aplicações Java usando a biblioteca GroupDocs.Watermark. Nesta coleção de tutoriais, você descobrirá maneiras práticas de adicionar, dimensionar e aplicar marcas d'água em imagens de forma segura em diversos formatos de documentos. Seja qual for a sua necessidade de **como aplicar marcas d'água em imagens**, **dimensionar marca d'água de imagem**, ou **adicionar marca d'água de imagem java**, nós temos tudo o que você precisa.
 
-## Respostas Rápidas
-- **Qual biblioteca adiciona marcas d'água a PDFs em Java?** GroupDocs.Watermark for Java.  
-- **Preciso de uma licença para produção?** Yes, a commercial license is required for non‑evaluation use.  
-- **Posso adicionar marca d'água a um PDF a partir de um stream?** Absolutely—GroupDocs.Watermark supports both file‑path and `InputStream` sources.  
-- **A transparência é suportada?** Yes, you can set opacity from 0 % (invisible) to 100 % (fully opaque).  
-- **Quais versões do Java são compatíveis?** Java 8 + and all newer LTS releases.
+## Quick Answers
+- **What is a tiled watermark?** Uma marca d'água em mosaico repete a mesma imagem por toda a página, criando um padrão que cobre todo o documento.  
+- **Which library supports tiled watermarks in Java?** GroupDocs.Watermark for Java fornece suporte nativo para marcas d'água de imagem em mosaico.  
+- **Can I control the opacity of a tiled watermark?** Sim, você pode definir o nível de transparência para tornar a marca d'água sutil ou proeminente.  
+- **Do tiled watermarks work with PDF, Word, and Excel?** Absolutamente – a mesma API funciona em todos os principais tipos de documentos.  
+- **Is a license required for production use?** Uma licença válida do GroupDocs.Watermark é necessária para implantações comerciais.
 
-## O que é “add watermark to pdf java”?
-*“Add watermark to PDF Java”* refere-se ao processo de inserir programaticamente uma sobreposição de imagem (ou texto) em um arquivo PDF usando código Java. Esta operação é normalmente realizada para afirmar a propriedade, marcar documentos com a marca ou cumprir requisitos legais. Ela envolve o uso da API Java do GroupDocs.Watermark para sobrepor programaticamente uma imagem ou texto em cada página de um arquivo PDF. Essa técnica ajuda a afirmar a propriedade, marcar documentos, atender à conformidade e impedir a distribuição não autorizada ao incorporar um marcador visível ou semitransparente diretamente no conteúdo do arquivo.
+## How to Create Tiled Watermark in Java
+Para **criar marca d'água em mosaico** basta configurar o objeto `WatermarkOptions` com a propriedade `Tile` definida como `true`. Isso indica ao mecanismo que repita a imagem horizontal e verticalmente até que a página esteja totalmente coberta. Você também pode combinar o mosaico com dimensionamento, rotação e ajustes de opacidade para atender aos requisitos da sua marca.
 
-## Por que usar GroupDocs.Watermark para Java?
-GroupDocs.Watermark suporta **mais de 50 formatos de entrada e saída** — incluindo PDF, DOCX, XLSX, PPTX e tipos de imagem — enquanto processa arquivos com centenas de páginas sem carregar o documento inteiro na memória. A API oferece controle pixel‑perfeito sobre opacidade, rotação, escala e mosaico, tornando‑a a escolha mais confiável para marca d'água de nível empresarial.
+### Why use tiled watermarks?
+- **Enhanced security:** Repetir o logotipo dificulta que usuários mal-intencionados removam ou recortem a marca d'água.  
+- **Consistent branding:** Cada página exibe a mesma identidade visual, reforçando o reconhecimento da marca.  
+- **Flexibility:** Você pode controlar o tamanho, o espaçamento e a transparência para se adequar a qualquer estilo de documento.
 
-## Pré-requisitos
-- Java 8 ou superior instalado na sua máquina de desenvolvimento.  
-- Sistema de build Maven ou Gradle para obter o artefato `groupdocs-watermark`.  
-- Uma licença válida do GroupDocs.Watermark para Java (licenças temporárias estão disponíveis para testes).  
+## Available Tutorials
 
-## Como adicionar marca d'água a PDF Java – Guia Passo a Passo
-Esta seção orienta você por todo o fluxo de trabalho: carregar o PDF, criar uma instância de ImageWatermark, configurar sua opacidade, escala, rotação e posição, e finalmente aplicá‑la às páginas selecionadas antes de salvar o resultado. Cada passo é ilustrado com trechos de código mínimos que podem ser copiados para o seu projeto.
+### [Add Image Watermarks to Java Documents Using GroupDocs.Watermark Library](./add-image-watermarks-groupdocs-java/)
+Aprenda a proteger seus ativos digitais adicionando marcas d'água de imagem com a biblioteca GroupDocs.Watermark para Java. Siga este guia passo a passo.
 
-### Passo 1: Configurar o Projeto
-Adicione a dependência do GroupDocs.Watermark ao seu `pom.xml` (ou arquivo Gradle). Esta etapa garante que a biblioteca esteja disponível em tempo de compilação.
+### [Apply Image Effects to Shape Watermarks in Java with GroupDocs.Watermark](./apply-image-effects-shape-watermarks-java-groupdocs-watermark/)
+Aprenda a aplicar efeitos de imagem como brilho, contraste e bordas a marcas d'água de forma em apresentações .NET usando o GroupDocs.Watermark para Java.
 
-### Passo 2: Carregar o Documento
-```java
-Watermark watermark = new Watermark("sample.pdf");
-```
-`Watermark` é o ponto de entrada que representa o arquivo PDF na memória.
+### [How to Add Image Watermarks to Excel Using GroupDocs for Java&#58; A Comprehensive Guide](./groupdocs-watermark-java-add-image-to-excel/)
+Aprenda a usar o GroupDocs.Watermark para Java para adicionar marcas d'água de imagem a arquivos Excel, aprimorando a segurança e a identidade visual com facilidade.
 
-### Passo 3: Criar a Marca d'água de Imagem
-```java
-ImageWatermark imgWatermark = new ImageWatermark("logo.png");
-imgWatermark.setOpacity(0.5);          // 50 % transparency
-imgWatermark.setScale(0.3);            // 30 % of original size
-imgWatermark.setPosition(Position.CENTER);
-```
-A classe `ImageWatermark` é o objeto do GroupDocs.Watermark que contém todas as configurações específicas de imagem.
+### [How to Add Text Watermarks to Word Document Images Using GroupDocs.Watermark for Java](./add-watermarks-word-images-groupdocs-java/)
+Aprenda a adicionar marcas d'água de texto a imagens em documentos Word usando o GroupDocs.Watermark para Java, protegendo seu conteúdo de forma eficiente.
 
-### Passo 4: Aplicar às Páginas Desejadas
-```java
-watermark.add(imgWatermark, new PageNumber(1, 5)); // pages 1‑5
-watermark.save("sample_watermarked.pdf");
-```
-Aqui, `add` anexa a marca d'água às páginas 1 a 5, e `save` grava o resultado no disco.
+### [How to Add an Image Watermark in Java using GroupDocs.Watermark&#58; A Step-by-Step Guide](./add-image-watermark-java-groupdocs/)
+Aprenda a adicionar marcas d'água de imagem a documentos com o GroupDocs.Watermark para Java. Proteja a autenticidade dos seus documentos e melhore a identidade da marca sem esforço.
 
-### Passo 5: Verificar o Resultado
-Abra `sample_watermarked.pdf` em qualquer visualizador de PDF para confirmar que o logotipo aparece com a opacidade, escala e posicionamento configurados.
-
-## Problemas Comuns e Soluções
-- **Marca d'água não visível:** Certifique-se de que a imagem tem fundo transparente e que `setOpacity` seja maior que 0.  
-- **Erros de falta de memória em PDFs grandes:** Use `Watermark.load(InputStream)` para transmitir o arquivo e evitar o carregamento completo na memória.  
-- **Posicionamento incorreto em páginas rotacionadas:** Chame `imgWatermark.setRotateAngle(45)` antes de adicionar para lidar com rotação personalizada.
-
-## Perguntas Frequentes
-
-**Q: Posso adicionar uma marca d'água em mosaico que se repete por toda a página?**  
-A: Yes—use `imgWatermark.setTile(true)` to enable tiling before calling `add`.
-
-**Q: Como faço para adicionar marca d'água em PDFs protegidos por senha?**  
-A: Pass the password to the `Watermark` constructor: `new Watermark("file.pdf", "pwd")`.
-
-**Q: É possível adicionar marca d'água apenas em páginas específicas, como a primeira e a última?**  
-A: Absolutely—provide a `PageNumber` collection such as `new PageNumber[]{new PageNumber(1), new PageNumber(watermark.getPageCount())}`.
-
-**Q: A biblioteca suporta adicionar marcas d'água a arquivos Excel?**  
-A: Yes—GroupDocs.Watermark can embed image watermarks into XLSX, XLS, and CSV files using the same `ImageWatermark` API.
-
-**Q: Qual desempenho posso esperar em um PDF de 200 páginas?**  
-A: On a typical server (8 GB RAM, 2.5 GHz CPU) the library processes a 200‑page PDF with a single image watermark in under 2 seconds.
-
-## Recursos Adicionais
-
-### Tutoriais Disponíveis
-
-- [Adicionar Marcas d'água de Imagem a Documentos Java Usando a Biblioteca GroupDocs.Watermark](./add-image-watermarks-groupdocs-java/)
-- [Aplicar Efeitos de Imagem a Marcas d'água de Forma em Java com GroupDocs.Watermark](./apply-image-effects-shape-watermarks-java-groupdocs-watermark/)
-- [Como Adicionar Marcas d'água de Imagem ao Excel Usando GroupDocs para Java&#58; Um Guia Abrangente](./groupdocs-watermark-java-add-image-to-excel/)
-- [Como Adicionar Marcas d'água de Texto a Imagens de Documentos Word Usando GroupDocs.Watermark para Java](./add-watermarks-word-images-groupdocs-java/)
-- [Como Adicionar uma Marca d'água de Imagem em Java usando GroupDocs.Watermark&#58; Um Guia Passo a Passo](./add-image-watermark-java-groupdocs/)
-
-### Links Úteis
+## Additional Resources
 
 - [Documentação do GroupDocs.Watermark para Java](https://docs.groupdocs.com/watermark/java/)
 - [Referência da API do GroupDocs.Watermark para Java](https://reference.groupdocs.com/watermark/java/)
@@ -151,14 +54,35 @@ A: On a typical server (8 GB RAM, 2.5 GHz CPU) the library processes a 200�
 - [Suporte Gratuito](https://forum.groupdocs.com/)
 - [Licença Temporária](https://purchase.groupdocs.com/temporary-license/)
 
+## Target Keywords
+
+**Primary Keyword (HIGHEST PRIORITY):**  
+create tiled watermark  
+
+**Secondary Keywords (SUPPORTING):**  
+how to watermark images, scale image watermark, add image watermark java, secure documents watermark  
+
+Nós incorporamos essas palavras‑chave de forma natural ao longo do guia para ajudá‑lo a encontrar exatamente a informação que precisa, mantendo a experiência de leitura fluida e envolvente.
+
+## Frequently Asked Questions
+
+**Q: Posso usar marcas d'água em mosaico com PDFs protegidos por senha?**  
+A: Sim. Abra o documento protegido com a senha apropriada e, em seguida, aplique a marca d'água em mosaico normalmente.
+
+**Q: Como altero o espaçamento entre as imagens em mosaico?**  
+A: Ajuste a propriedade `TileSpacing` em `WatermarkOptions` para aumentar ou diminuir o intervalo entre as repetições.
+
+**Q: É possível combinar marcas d'água de imagem em mosaico com marcas d'água de texto?**  
+A: Absolutamente. Você pode adicionar múltiplos objetos de marca d'água (imagem e texto) ao mesmo documento e controlar sua ordem e opacidade de forma independente.
+
+**Q: Quais formatos são suportados para marcas d'água em mosaico?**  
+A: O GroupDocs.Watermark suporta PDF, DOCX, PPTX, XLSX e vários formatos de imagem, como PNG e JPEG.
+
+**Q: Preciso de uma licença especial para dimensionar ou girar marcas d'água em mosaico?**  
+A: Não é necessária licença especial; a licença padrão do GroupDocs.Watermark cobre todos os recursos de marca d'água, incluindo dimensionamento e rotação.
+
 ---
 
-**Última Atualização:** 2026-06-26  
-**Testado com:** GroupDocs.Watermark for Java 23.11  
-**Autor:** GroupDocs
-
-## Tutoriais Relacionados
-
-- [Como Adicionar Marcas d'água de Texto e Imagem a Páginas PDF Específicas Usando GroupDocs.Watermark para Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Como Adicionar uma Marca d'água de Texto a PDFs Usando GroupDocs.Watermark para Java: Um Guia Passo a Passo](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [GroupDocs.Watermark para Java: Guia Abrangente de Marcação d'água em PDF](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermark-guide/)
+**Last Updated:** 2026-01-08  
+**Tested With:** GroupDocs.Watermark 23.12 for Java  
+**Author:** GroupDocs

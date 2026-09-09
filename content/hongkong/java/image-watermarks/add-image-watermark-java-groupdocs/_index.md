@@ -1,103 +1,60 @@
 ---
-date: '2026-06-26'
-description: 了解如何使用 GroupDocs.Watermark 為 Java 文件添加圖片水印。本分步指南涵蓋設定、添加圖片水印以及效能技巧。
+date: '2026-01-08'
+description: 了解如何使用 GroupDocs.Watermark 為 Java 文件添加圖片浮水印。一步步教學，教您在 Java 中添加圖片浮水印。
 keywords:
-- how to watermark java
-- apply image watermark pdf
-- add image watermark java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-26'
-  description: Learn how to watermark Java documents with an image using GroupDocs.Watermark.
-    This step‑by‑step guide covers setup, adding an image watermark, and performance
-    tips.
-  headline: How to Watermark Java Docs with Image Using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to watermark Java documents with an image using GroupDocs.Watermark.
-    This step‑by‑step guide covers setup, adding an image watermark, and performance
-    tips.
-  name: How to Watermark Java Docs with Image Using GroupDocs.Watermark
-  steps:
-  - name: Open the Document from a File Stream
-    text: Start by creating a `FileInputStream` that points to the source file you
-      want to protect.
-  - name: Initialize the Watermarker Object
-    text: '`Watermarker` is the core class that orchestrates watermark operations.
-      It represents a single document in memory and provides methods for adding, removing,
-      or searching watermarks.'
-  - name: Create an ImageWatermark Object
-    text: '`ImageWatermark` encapsulates the image you want to overlay. Provide the
-      image path or stream, and the API loads it as a watermark resource.'
-  - name: Set Watermark Alignment
-    text: Alignment determines where the watermark appears on each page (center, top‑right,
-      etc.). You can also adjust opacity and rotation here.
-  - name: Add the Watermark to the Document
-    text: Call `add` on the `Watermarker` instance, passing the configured `ImageWatermark`.
-      The API instantly renders the image onto every page.
-  - name: Save the Watermarked Document
-    text: Choose an output format that matches your source (PDF, DOCX, etc.) and specify
-      a new file path. The library writes the result without altering the original
-      file.
-  - name: Close Resources
-    text: Always close streams and the `Watermarker` instance to free system resources
-      and avoid file locks.
-  - name: Instantiate ImageWatermark
-    text: Provide the image file path; the object can now be reused.
-  - name: Configure Alignment Once
-    text: Set alignment, opacity, and scaling before applying it to any document.
-  type: HowTo
-- questions:
-  - answer: Yes, you can chain multiple `add` calls – first an `ImageWatermark`, then
-      a `TextWatermark`, each with its own alignment and opacity settings.
-    question: Can I add both image and text watermarks to the same document?
-  - answer: Absolutely. Provide the password when creating the `Watermarker` instance;
-      the API will decrypt, apply the watermark, and re‑encrypt the file.
-    question: Does the library work with password‑protected PDFs?
-  - answer: GroupDocs.Watermark can handle files up to 2 GB without loading the entire
-      document into memory, thanks to its streaming architecture.
-    question: What is the maximum file size supported?
-  - answer: You can render a page to an image using `watermarker.getPage(1).convertToImage()`
-      and inspect the result before committing.
-    question: Is there a way to preview the watermark before saving?
-  - answer: Use the `removeAll` or `removeById` methods provided by the `Watermarker`
-      class to strip watermarks without re‑creating the document.
-    question: How do I remove a watermark that was added earlier?
-  type: FAQPage
-title: 如何使用 GroupDocs.Watermark 為 Java 文件添加圖片水印
+- add image watermark in Java
+- GroupDocs Watermark setup
+- Java document branding
+title: 如何在 Java 中使用 GroupDocs.Watermark 添加水印
 type: docs
 url: /zh-hant/java/image-watermarks/add-image-watermark-java-groupdocs/
 weight: 1
 ---
 
-# 如何使用 GroupDocs.Watermark 為 Java 文件添加圖片水印
+# 如何在 Java 中使用 GroupDocs.Watermark 添加水印
 
-在您的 Java 文件中添加視覺水印不僅能保護真偽，還能加強品牌形象。於本教學中，您將學習 **如何為 Java 文件加水印**，透過插入圖片水印與 GroupDocs.Watermark。我們將逐步說明前置條件、函式庫設定與完整程式流程，最後提供效能最佳實踐與疑難排解技巧。
+保護文件真偽或透過圖片水印提升品牌形象至關重要，無論是發票、合約或行銷素材皆是如此。**GroupDocs.Watermark for Java** 讓此工作變得簡單，同時維持文件品質。
 
-## 快速回答
-- **需要哪個函式庫？** GroupDocs.Watermark for Java (v24.11 或更新版本)。  
-- **我可以為 PDF、Word 和 Excel 加水印嗎？** 可以 – API 支援超過 30 種格式。  
-- **測試需要授權嗎？** 免費試用可用於開發；正式環境需購買永久授權。  
-- **此流程是執行緒安全的嗎？** Watermarker 實例不可在多執行緒間共用；每次操作請建立新實例。  
-- **需要多少行程式碼？** 只需五個邏輯步驟 – 開啟、建立水印、設定對齊、加入以及儲存。
+在本教學中，您將學會 **如何在 Java 文件中加入水印**（以圖片水印為例）。內容涵蓋設定流程、實作細節，以及一些效能考量。
 
-## 什麼是「如何為 Java 加水印」？
-*「如何為 Java 加水印」* 指的是以程式方式對由 Java 應用程式產生或處理的文件套用視覺標記（文字或圖片）的過程。使用 GroupDocs.Watermark，您可以在一次呼叫中嵌入圖片水印，並在 PDF、DOCX、PPTX 以及其他多種格式中保持版面與品質。
+## 快速答疑
+- **「how to add watermark」是什麼意思？** 指在文件中插入可見的標記（圖片或文字），以表明所有權或品牌。  
+- **哪個程式庫適合在 Java 中加入圖片水印？** GroupDocs.Watermark for Java 提供直接的 API。  
+- **需要授權嗎？** 提供免費試用版；正式上線需購買授權。  
+- **能處理 Excel、Word 與 PDF 檔案嗎？** 能，支援包括 XLSX、DOCX、PDF 在內的多種格式。  
+- **支援批次處理嗎？** 當然可以——透過迴圈處理檔案並重複使用 `Watermarker` 物件，即可高效地為大量文件加水印。  
 
-## 為什麼使用 GroupDocs.Watermark 進行圖片水印？
-GroupDocs.Watermark 支援 **超過 50 種輸入與輸出格式**，且能在不將整個文件載入記憶體的情況下處理上百頁的檔案，將 RAM 使用量降低至最高 70 %。API 亦提供內建的對齊、不透明度與縮放選項，讓您在毫秒內完成專業品牌化。
+## 「how to add watermark」在 Java 中是什麼？
+在程式中於文件每一頁上放置圖片（或文字）即為加入水印。此視覺提示有助於保護智慧財產、驗證真偽或加強品牌識別。
+
+## 為何使用 GroupDocs.Watermark for Java？
+- **易於整合** – 只需 Maven 坐標或直接下載。  
+- **廣泛格式支援** – 可處理 PDF、Office 檔案、圖片等多種格式。  
+- **細緻控制** – 可設定對齊、透明度、旋轉與縮放等屬性。  
+- **效能優化** – 最新版本減少記憶體佔用並提升處理速度。
 
 ## 前置條件
-- **Java Development Kit (JDK) 8 或更高版本** 已在本機安裝。  
-- **Maven** 或其他建置工具以管理相依性。  
-- **IDE** 如 IntelliJ IDEA 或 Eclipse（非必須但建議使用）。  
-- **基本的 Java 檔案 I/O 知識** – 您將會使用 `InputStream` 與 `OutputStream`。
 
-## 如何在 Java 中加入圖片水印？
+在加入圖片水印之前，請先確保具備以下條件：
 
-要加入圖片水印，首先將目標檔案以串流方式開啟，接著為該文件建立 `Watermarker` 實例。從欲使用的圖片建立 `ImageWatermark`，依需求設定其位置、不透明度與縮放，然後呼叫 `add` 方法。最後，將修改後的文件儲存至新位置，並確保所有串流皆已關閉。
+### 必要的程式庫與相依性
+- **GroupDocs.Watermark for Java**：建議使用 24.11 版或更新版本。
 
-### 步驟 1：從檔案串流開啟文件
-開始建立指向欲保護來源檔案的 `FileInputStream`。
+### 環境設定需求
+- 已在電腦上安裝 Java Development Kit (JDK)  
+- 使用 IntelliJ IDEA、Eclipse 等整合開發環境 (IDE)
+
+### 知識前置條件
+- 基本的 Java 程式設計概念  
+- 熟悉 Java 中的檔案操作  
+
+## 設定 GroupDocs.Watermark for Java
+
+要使用 GroupDocs.Watermark，請將程式庫整合至您的專案：
+
+### Maven 設定
+
+在 `pom.xml` 中加入以下設定：
 
 ```xml
 <repositories>
@@ -117,8 +74,27 @@ GroupDocs.Watermark 支援 **超過 50 種輸入與輸出格式**，且能在不
 </dependencies>
 ```
 
-### 步驟 2：初始化 Watermarker 物件
-`Watermarker` 是協調水印操作的核心類別。它在記憶體中代表單一文件，並提供加入、移除或搜尋水印的方法。
+### 直接下載
+
+或是從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載最新版本。
+
+### 取得授權
+
+先下載程式庫以使用免費試用版。若需長期使用，請考慮取得臨時授權或正式購買。更多資訊請參閱 GroupDocs 授權頁面。
+
+完成設定後，我們將說明如何初始化與配置 GroupDocs.Watermark。
+
+## 如何在 Java 中為文件加入水印
+
+以下說明兩個主要功能：**java add image watermark** 以及建立可重複使用的 `ImageWatermark` 物件。
+
+### 為文件加入圖片水印
+
+此功能可讓您透過自訂圖片水印提升文件的真偽或品牌形象。
+
+#### 步驟 1：從檔案串流開啟文件
+
+先開啟欲套用水印的文件：
 
 ```java
 import java.io.FileInputStream;
@@ -128,15 +104,17 @@ final String documentPath = "YOUR_DOCUMENT_DIRECTORY/document.xlsx"; // Replace 
 FileInputStream stream = new FileInputStream(documentPath);
 ```
 
-### 步驟 3：建立 ImageWatermark 物件
-`ImageWatermark` 包含您想要覆蓋的圖片。提供圖片路徑或串流，API 會將其載入為水印資源。
+#### 步驟 2：初始化 Watermarker 物件
+
+使用檔案串流建立 `Watermarker` 物件：
 
 ```java
 Watermarker watermarker = new Watermarker(stream);
 ```
 
-### 步驟 4：設定水印對齊方式
-對齊方式決定水印在每頁的顯示位置（置中、右上等）。您亦可在此調整不透明度與旋轉角度。
+#### 步驟 3：建立 ImageWatermark 物件
+
+指定圖片路徑以建立水印：
 
 ```java
 import com.groupdocs.watermark.watermarks.ImageWatermark;
@@ -145,8 +123,9 @@ final String watermarkImagePath = "YOUR_DOCUMENT_DIRECTORY/logo.png"; // Replace
 ImageWatermark watermark = new ImageWatermark(watermarkImagePath);
 ```
 
-### 步驟 5：將水印加入文件
-在 `Watermarker` 實例上呼叫 `add`，傳入已設定好的 `ImageWatermark`。API 會立即在每頁渲染該圖片。
+#### 步驟 4：設定水印對齊方式
+
+依需求設定水印的對齊方式：
 
 ```java
 import com.groupdocs.watermark.common.HorizontalAlignment;
@@ -156,27 +135,26 @@ watermark.setHorizontalAlignment(HorizontalAlignment.Center);
 watermark.setVerticalAlignment(VerticalAlignment.Center);
 ```
 
-### 步驟 6：儲存加了水印的文件
-選擇與來源相同的輸出格式（PDF、DOCX 等），並指定新的檔案路徑。函式庫會寫入結果而不修改原始檔案。
+#### 步驟 5：加入水印
+
+將已配置好的水印套用至文件：
 
 ```java
 watermarker.add(watermark);
 ```
 
-### 步驟 7：關閉資源
-務必關閉串流與 `Watermarker` 實例，以釋放系統資源並避免檔案被鎖定。
+#### 步驟 6：儲存文件
+
+將修改後的文件儲存至新位置：
 
 ```java
 final String outputPath = "YOUR_OUTPUT_DIRECTORY/output_document.xlsx"; // Replace with actual path.
 watermarker.save(outputPath);
 ```
 
-## 分別建立 ImageWatermark 物件
+#### 步驟 7：關閉資源
 
-如果需要在多個文件中重複使用相同的水印，請僅建立一次並將其儲存以供之後使用。
-
-### 步驟 1：實例化 ImageWatermark
-提供圖片檔案路徑；此物件之後即可重複使用。
+關閉所有串流與物件以釋放系統資源：
 
 ```java
 watermark.close();
@@ -184,72 +162,80 @@ watermarker.close();
 stream.close();
 ```
 
-### 步驟 2：一次性設定對齊方式
-在套用至任何文件之前，先設定對齊、不透明度與縮放。
+### 建立 ImageWatermark 物件
+
+先建立獨立的水印物件，讓您在套用前完成所有設定——這在需要於多個文件重複使用同一水印時非常實用。
+
+#### 步驟 1：建立 ImageWatermark 物件
+
+使用圖片路徑初始化：
 
 ```java
 ImageWatermark watermark = new ImageWatermark(watermarkImagePath);
 ```
 
-## 實務應用
-1. **文件品牌化** – 在發票、提案或行銷 PDF 中插入企業標誌。  
-2. **保護智慧財產** – 使用可見的「機密」圖片標記保密草稿。  
-3. **文件驗證** – 加入可供下游系統驗證的唯一印章。  
+#### 步驟 2：配置對齊方式
 
-將這些步驟整合至 ERP、CRM 或批次處理服務，可確保每個輸出檔案自動帶有您的視覺識別。
-
-## 效能考量
-- **記憶體管理：** 及時關閉所有 `InputStream`/`OutputStream` 物件；API 以串流方式處理資料，並不會將整個檔案載入記憶體。  
-- **批次處理：** 在多個 `Watermarker` 物件間重複使用單一 `ImageWatermark` 實例，以避免重複載入圖片。  
-- **版本優勢：** 最新的 GroupDocs.Watermark 版本 (v24.11) 引入懶加載，將大型 PDF 的處理時間縮短最高 30 %。
-
-## 常見問題與解決方案
-- **水印未顯示：** 確認圖片解析度足夠，且將不透明度設定高於 0 %（例如 0.7）。  
-- **不支援的格式錯誤：** 確認來源檔案類型列於支援格式表中（PDF、DOCX、PPTX、XLSX 等）。  
-- **大型檔案發生 OutOfMemoryException：** 在加入水印前呼叫 `watermarker.setUseMemoryCache(true)` 以啟用串流模式。
-
-## 常見問答
-
-**Q: 我可以在同一文件中同時加入圖片與文字水印嗎？**  
-A: 可以，您可以串接多次 `add` 呼叫 – 先加入 `ImageWatermark`，再加入 `TextWatermark`，每個都有各自的對齊與不透明度設定。
-
-**Q: 此函式庫能處理受密碼保護的 PDF 嗎？**  
-A: 完全可以。建立 `Watermarker` 實例時提供密碼，API 會先解密、套用水印，最後重新加密檔案。
-
-**Q: 支援的最大檔案大小是多少？**  
-A: 由於採用串流架構，GroupDocs.Watermark 可處理最高 2 GB 的檔案，而不需將整個文件載入記憶體。
-
-**Q: 有辦法在儲存前預覽水印嗎？**  
-A: 您可以使用 `watermarker.getPage(1).convertToImage()` 將頁面轉為圖片，檢視結果後再決定是否儲存。
-
-**Q: 如何移除先前加入的水印？**  
-A: 使用 `Watermarker` 類別提供的 `removeAll` 或 `removeById` 方法，即可在不重新建立文件的情況下移除水印。
-
-## 結論
-您現在已掌握使用 GroupDocs.Watermark 以圖片為 **Java 文件加水印** 的完整、可投入生產的工作流程。依循七步法—開啟、實例化、設定、加入、儲存與關閉，即可有效嵌入品牌或安全標記。可嘗試不同的對齊方式、不透明度與批次處理技巧，以符合您的特定需求。
-
----
-
-**最後更新：** 2026-06-26  
-**測試環境：** GroupDocs.Watermark 24.11 for Java  
-**作者：** GroupDocs  
-
-**資源**  
-- [GroupDocs.Watermark for Java 版本發布](https://releases.groupdocs.com/watermark/java/)  
-- [文件說明](https://docs.groupdocs.com/watermark/java/)  
-- [API 參考](https://reference.groupdocs.com/watermark/java)  
-- [下載函式庫](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub 程式庫](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [免費支援論壇](https://forum.groupdocs.com/c/watermark/10)  
-- [臨時授權資訊](https://purchase.groupdocs.com/temporary-license/)  
+設定水印在文件中的對齊方式：
 
 ```java
 watermark.setHorizontalAlignment(ImageWatermark.HorizontalAlignment.Center);
 watermark.setVerticalAlignment(ImageWatermark.VerticalAlignment.Center);
 ```
 
-## 相關教學
+## 實務應用
 
-- [如何使用 GroupDocs.Watermark for Java 為文件加入文字水印：逐步指南](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)
-- [如何使用 GroupDocs.Watermark for Java 為特定 PDF 頁面加入文字與圖片水印](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [如何使用 GroupDocs.Watermark for Java 為 Word 文件加入圖片水印](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
+1. **文件品牌化** – 為公司文件加上商標水印。  
+2. **保護智慧財產** – 使用水印標示圖片或文字的所有權。  
+3. **文件驗證** – 加入可見標記以供真偽驗證。
+
+建議將此功能整合至處理文件產生與管理的系統，例如 ERP 或 CRM 平台。
+
+## 效能考量
+
+- 及時關閉串流以最佳化記憶體使用。  
+- 使用最新的 GroupDocs.Watermark 版本，以取得效能改進。  
+- 針對大型批次處理進行效能分析，找出水印加入的瓶頸。
+
+## 常見問題與解決方案
+
+| 問題 | 解決方案 |
+|------|----------|
+| **OutOfMemoryError 於大型檔案** | 一次處理單一檔案，處理完畢後即關閉 `Watermarker`。 |
+| **水印不顯示** | 確認圖片透明度足夠，且對齊設定正確。 |
+| **不支援的檔案格式** | 查閱程式庫支援的格式清單；必要時升級至最新版。 |
+
+## FAQ
+
+**Q: 如何在免費試用與正式購買 GroupDocs.Watermark 之間做選擇？**  
+A: 先使用免費試用版評估功能；若需正式上線，請購買授權以取得完整功能。
+
+**Q: 我也可以加入文字水印嗎？**  
+A: 可以，程式庫同時支援圖片與文字水印。
+
+**Q: 這個程式庫能為哪些檔案類型加水印？**  
+A: 支援 PDF、Word、Excel、PowerPoint 以及多種圖片格式。
+
+**Q: 大量批次處理時該如何操作？**  
+A: 迭代檔案，盡可能重複使用同一 `Watermarker` 實例，並持續監控記憶體使用情況。
+
+**Q: 能否輕鬆從輸出文件中移除水印？**  
+A: 水印是嵌入式的；若要移除需重新處理或使用程式庫提供的移除 API。
+
+## 結論
+
+在 Java 中使用 GroupDocs.Watermark 加入圖片水印，是提升文件安全與品牌形象的有效方法。本指南帶您完成環境設定、配置與高效的水印應用。接下來，您可以探索文字水印、透明度控制或批次處理等進階功能，進一步擴充文件工作流程。
+
+## 參考資源
+- [Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download Library](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License Information](https://purchase.groupdocs.com/temporary-license/) 
+
+---
+
+**最後更新：** 2026-01-08  
+**測試環境：** GroupDocs.Watermark 24.11 for Java  
+**作者：** GroupDocs

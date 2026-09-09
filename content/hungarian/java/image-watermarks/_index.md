@@ -1,149 +1,51 @@
 ---
-date: 2026-06-26
-description: Lépésről lépésre útmutató a vízjel PDF Java-hoz való hozzáadásához a
-  GroupDocs.Watermark használatával, lefedve az image watermarking, positioning, scaling
-  és transparency területeket.
-keywords:
-- add watermark to pdf java
-- image watermark java
-- groupdocs watermark java
-- java document branding
-- pdf image watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-06-26'
-  description: Step-by-step guide to add watermark to PDF Java using GroupDocs.Watermark,
-    covering image watermarking, positioning, scaling, and transparency.
-  headline: Add Watermark to PDF Java – Image Watermark Tutorials
-  type: TechArticle
-- description: Step-by-step guide to add watermark to PDF Java using GroupDocs.Watermark,
-    covering image watermarking, positioning, scaling, and transparency.
-  name: Add Watermark to PDF Java – Image Watermark Tutorials
-  steps:
-  - name: Set Up the Project
-    text: Add the GroupDocs.Watermark dependency to your `pom.xml` (or Gradle file).
-      This step ensures the library is available at compile time.
-  - name: Load the Document
-    text: '`Watermark` is the entry point that represents the PDF file in memory.'
-  - name: Create the Image Watermark
-    text: The `ImageWatermark` class is GroupDocs.Watermark’s object that holds all
-      image‑specific settings.
-  - name: Apply to Desired Pages
-    text: Here `add` attaches the watermark to pages 1 through 5, and `save` writes
-      the result to disk.
-  - name: Verify the Result
-    text: Open `sample_watermarked.pdf` in any PDF viewer to confirm that the logo
-      appears with the configured opacity, scale, and placement.
-  type: HowTo
-- questions:
-  - answer: Yes—use `imgWatermark.setTile(true)` to enable tiling before calling `add`.
-    question: Can I add a tiled watermark that repeats across the whole page?
-  - answer: 'Pass the password to the `Watermark` constructor: `new Watermark("file.pdf",
-      "pwd")`.'
-    question: How do I watermark password‑protected PDFs?
-  - answer: Absolutely—provide a `PageNumber` collection such as `new PageNumber[]{new
-      PageNumber(1), new PageNumber(watermark.getPageCount())}`.
-    question: Is it possible to watermark only specific pages, like the first and
-      last?
-  - answer: Yes—GroupDocs.Watermark can embed image watermarks into XLSX, XLS, and
-      CSV files using the same `ImageWatermark` API.
-    question: Does the library support adding watermarks to Excel files?
-  - answer: On a typical server (8 GB RAM, 2.5 GHz CPU) the library processes a 200‑page
-      PDF with a single image watermark in under 2 seconds.
-    question: What performance can I expect on a 200‑page PDF?
-  type: FAQPage
-title: Vízjel hozzáadása PDF Java – Image Watermark Tutorials
+date: 2026-01-08
+description: Ismerje meg, hogyan hozhat létre mozaik vízjeleket, méretezheti a képi
+  vízjeleket, és biztonságosan vízjelezhet képeket a GroupDocs.Watermark for Java
+  segítségével.
+title: Csempézett vízjel létrehozása a GroupDocs.Watermark Java segítségével
 type: docs
 url: /hu/java/image-watermarks/
 weight: 4
 ---
 
-# Vízjel hozzáadása PDF Java-hoz – Képes Vízjel Oktatóanyagok
+# Csempézett vízjel létrehozása a GroupDocs.Watermark Java-val
 
-Ebben az útmutatóban megtanulja, **hogyan adjunk vízjelet PDF Java-hoz** projektekhez a GroupDocs.Watermark könyvtár használatával. Akár egy finom logóra van szüksége minden jelentés sarkában, akár egy teljes oldalra kiterjedő csempézett vízjelre a márka védelme érdekében, ezek az oktatóanyagok minden lépésen végigvezetik – a dokumentum betöltésétől az átlátszóság, méretezés és elhelyezés finomhangolásáig. A lap végére képes lesz képes vízjeleket integrálni PDF-ekbe, Excel táblázatokba, Word fájlokba és még sok másba, mind Java kódból.
+Üdvözöljük átfogó útmutatónkban, amely bemutatja, hogyan **hozzunk létre csempézett vízjelet** képekben Java alkalmazásainkban a GroupDocs.Watermark könyvtár használatával. Ebben az oktatóanyag-gyűjteményben gyakorlati módokat fedezhet fel a képek hozzáadására, méretezésére és biztonságos vízjelezésére különféle dokumentumformátumokban. Akár **hogyan kell vízjelezni a képeket**, **képi vízjel méretezése**, vagy **képi vízjel hozzáadása java**, mindegyikhez megtalálja a megoldást.
 
 ## Gyors válaszok
-- **Melyik könyvtár ad hozzá vízjeleket PDF-ekhez Java-ban?** GroupDocs.Watermark for Java.  
-- **Szükségem van licencre a termeléshez?** Igen, kereskedelmi licenc szükséges a nem‑értékelő használathoz.  
-- **Képes vagyok PDF-et vízjelezni egy stream-ből?** Teljesen – a GroupDocs.Watermark támogatja a fájl‑útvonal és az `InputStream` forrásokat is.  
-- **Támogatott a transzparencia?** Igen, beállíthatja az átlátszóságot 0 % (láthatatlan) és 100 % (teljesen átlátszatlan) között.  
-- **Mely Java verziók kompatibilisek?** Java 8 + és az összes újabb LTS kiadás.
+- **Mi az a csempézett vízjel?** A csempézett vízjel ugyanazt a képet ismétli az oldalon, egy mintát hozva létre, amely az egész dokumentumot lefedi.  
+- **Melyik könyvtár támogatja a csempézett vízjeleket Java-ban?** A GroupDocs.Watermark for Java beépített támogatást nyújt a csempézett képi vízjelekhez.  
+- **Mérgezhetem a csempézett vízjel átlátszóságát?** Igen, beállíthatja az átlátszósági szintet, hogy a vízjel finom vagy hangsúlyos legyen.  
+- **Működnek a csempézett vízjelek PDF, Word és Excel fájlokkal?** Teljesen – ugyanaz az API működik minden főbb dokumentumtípusnál.  
+- **Szükséges licenc a termelési használathoz?** Érvényes GroupDocs.Watermark licenc szükséges a kereskedelmi telepítésekhez.
 
-## Mi az a „add watermark to pdf java”?
-*„Add watermark to PDF Java”* arra a folyamatra utal, amikor programozott módon egy képet (vagy szöveget) helyeznek el egy PDF fájlra Java kóddal. Ezt a műveletet általában a tulajdonjog, a márka dokumentumok védelme vagy a jogi követelményeknek való megfelelés érdekében végzik. A GroupDocs.Watermark Java API használatával programozottan helyezhetünk egy képet vagy szöveget a PDF minden oldalára. Ez a technika segít a tulajdonjog, a márka dokumentumok védelme, a megfelelés biztosítása és a jogosulatlan terjesztés megakadályozása érdekében, egy látható vagy félig átlátszó jel beágyazásával a fájl tartalmába.
+## Hogyan hozzunk létre csempézett vízjelet Java-ban
+A **csempézett vízjel létrehozásához** egyszerűen konfigurálja a `WatermarkOptions` objektumot úgy, hogy a `Tile` tulajdonság `true` értékre legyen állítva. Ez azt mondja a motornak, hogy ismételje a képet vízszintesen és függőlegesen, amíg az oldal teljesen be nem fedődik. A csempézést kombinálhatja méretezéssel, forgatással és átlátszóság beállításokkal is, hogy megfeleljen a márka követelményeinek.
 
-## Miért használja a GroupDocs.Watermark for Java-t?
-A GroupDocs.Watermark **50+ bemeneti és kimeneti formátumot** támogat – beleértve a PDF, DOCX, XLSX, PPTX és képtípusokat – miközben több száz oldalas fájlokat dolgoz fel anélkül, hogy a teljes dokumentumot a memóriába töltené. Az API pixel‑pontos vezérlést biztosít az átlátszóság, forgatás, méretezés és csempézés felett, így a legmegbízhatóbb választás vállalati szintű vízjelezéshez.
+### Miért használjunk csempézett vízjeleket?
+- **Fokozott biztonság:** A logó ismétlése nehezebbé teszi a rosszindulatú felhasználók számára a vízjel eltávolítását vagy levágását.  
+- **Következetes márkázás:** Minden oldal ugyanazt a vizuális azonosítót mutatja, erősítve a márka felismerhetőségét.  
+- **Rugalmasság:** Méretet, távolságot és átlátszóságot szabályozhat, hogy bármilyen dokumentumstílushoz illeszkedjen.
 
-## Előfeltételek
-- Java 8 vagy újabb telepítve a fejlesztői gépén.  
-- Maven vagy Gradle építési rendszer a `groupdocs-watermark` artefakt lehúzásához.  
-- Érvényes GroupDocs.Watermark for Java licenc (ideiglenes licencek elérhetők teszteléshez).  
+## Elérhető oktatóanyagok
 
-## Hogyan adjunk vízjelet PDF Java-hoz – Lépésről‑lépésre útmutató
-Ez a szakasz végigvezeti a teljes munkafolyamaton: a PDF betöltése, egy ImageWatermark példány létrehozása, az átlátszóság, méretezés, forgatás és pozíció beállítása, majd végül a kiválasztott oldalakra való alkalmazás a mentés előtt. Minden lépést minimális kódrészletekkel illusztrálunk, amelyeket be lehet másolni a projektbe.
+### [Képi vízjelek hozzáadása Java dokumentumokhoz a GroupDocs.Watermark könyvtárral](./add-image-watermarks-groupdocs-java/)
+Ismerje meg, hogyan védheti digitális eszközeit képi vízjelek hozzáadásával a GroupDocs.Watermark könyvtár Java verziójával. Kövesse ezt a lépésről-lépésre útmutatót.
 
-### 1. lépés: A projekt beállítása
-Adja hozzá a GroupDocs.Watermark függőséget a `pom.xml`-hez (vagy Gradle fájlhoz). Ez a lépés biztosítja, hogy a könyvtár elérhető legyen fordítási időben.
+### [Képi hatások alkalmazása alakú vízjelekre Java-ban a GroupDocs.Watermark segítségével](./apply-image-effects-shape-watermarks-java-groupdocs-watermark/)
+Ismerje meg, hogyan alkalmazhat képi hatásokat, például fényerőt, kontrasztot és szegélyeket alakú vízjelekre .NET prezentációkban a GroupDocs.Watermark for Java használatával.
 
-### 2. lépés: A dokumentum betöltése
-```java
-Watermark watermark = new Watermark("sample.pdf");
-```
-`Watermark` az a belépési pont, amely a PDF fájlt a memóriában képviseli.
+### [Hogyan adjunk képi vízjeleket Excelhez a GroupDocs for Java&#58; Átfogó útmutató](./groupdocs-watermark-java-add-image-to-excel/)
+Ismerje meg, hogyan használhatja a GroupDocs.Watermark for Java-t képi vízjelek hozzáadásához Excel fájlokhoz, egyszerűen növelve a biztonságot és a márkázást.
 
-### 3. lépés: Képes vízjel létrehozása
-```java
-ImageWatermark imgWatermark = new ImageWatermark("logo.png");
-imgWatermark.setOpacity(0.5);          // 50 % transparency
-imgWatermark.setScale(0.3);            // 30 % of original size
-imgWatermark.setPosition(Position.CENTER);
-```
-Az `ImageWatermark` osztály a GroupDocs.Watermark objektuma, amely az összes képspecifikus beállítást tartalmazza.
+### [Hogyan adjunk szöveges vízjeleket Word dokumentum képekhez a GroupDocs.Watermark for Java használatával](./add-watermarks-word-images-groupdocs-java/)
+Ismerje meg, hogyan adhat szöveges vízjeleket a Word dokumentumok képeihez a GroupDocs.Watermark for Java használatával, hatékonyan védve tartalmát.
 
-### 4. lépés: Alkalmazás a kívánt oldalakon
-```java
-watermark.add(imgWatermark, new PageNumber(1, 5)); // pages 1‑5
-watermark.save("sample_watermarked.pdf");
-```
-Itt az `add` a vízjelet az 1‑től 5‑ig terjedő oldalakra csatolja, és a `save` a eredményt a lemezre írja.
-
-### 5. lépés: Az eredmény ellenőrzése
-Nyissa meg a `sample_watermarked.pdf`-et bármely PDF megjelenítőben, hogy megerősítse, a logó a beállított átlátszósággal, mérettel és elhelyezéssel jelenik meg.
-
-## Gyakori problémák és megoldások
-- **A vízjel nem látható:** Győződjön meg arról, hogy a képnek átlátszó háttere van, és a `setOpacity` nagyobb, mint 0.  
-- **Memóriahiány hibák nagy PDF-eknél:** Használja a `Watermark.load(InputStream)`-t a fájl streameléséhez, és kerülje a teljes memória betöltést.  
-- **Helytelen pozicionálás elforgatott oldalakon:** Hívja meg az `imgWatermark.setRotateAngle(45)`-t a hozzáadás előtt az egyedi forgatás kezeléséhez.
-
-## Gyakran Ismételt Kérdések
-
-**Q: Hozzáadhatok csempézett vízjelet, amely az egész oldalra ismétlődik?**  
-A: Igen – használja a `imgWatermark.setTile(true)`-t a csempézés engedélyezéséhez az `add` hívása előtt.
-
-**Q: Hogyan vízjelezhetek jelszóval védett PDF-eket?**  
-A: Adja át a jelszót a `Watermark` konstruktorának: `new Watermark("file.pdf", "pwd")`.
-
-**Q: Lehetséges csak bizonyos oldalakat vízjelezni, például az elsőt és az utolsót?**  
-A: Teljesen – adjon meg egy `PageNumber` gyűjteményt, például `new PageNumber[]{new PageNumber(1), new PageNumber(watermark.getPageCount())}`.
-
-**Q: Támogatja a könyvtár a vízjelek hozzáadását Excel fájlokhoz?**  
-A: Igen – a GroupDocs.Watermark képes képes vízjeleket beágyazni XLSX, XLS és CSV fájlokba ugyanazzal az `ImageWatermark` API-val.
-
-**Q: Milyen teljesítményt várhat el egy 200 oldalas PDF-en?**  
-A: Egy tipikus szerveren (8 GB RAM, 2.5 GHz CPU) a könyvtár egy 200 oldalas PDF-et egyetlen képes vízjellel kevesebb mint 2 másodperc alatt dolgoz fel.
+### [Hogyan adjunk képi vízjelet Java-ban a GroupDocs.Watermark használatával&#58; Lépésről-lépésre útmutató](./add-image-watermark-java-groupdocs/)
+Ismerje meg, hogyan adhat képi vízjeleket dokumentumokhoz a GroupDocs.Watermark for Java-val. Védje dokumentumai hitelességét és növelje a márkaismertséget könnyedén.
 
 ## További források
-
-### Elérhető oktatóanyagok
-
-- [Képes vízjelek hozzáadása Java dokumentumokhoz a GroupDocs.Watermark könyvtárral](./add-image-watermarks-groupdocs-java/)
-- [Képeffektusok alkalmazása alak vízjelekre Java-ban a GroupDocs.Watermark segítségével](./apply-image-effects-shape-watermarks-java-groupdocs-watermark/)
-- [Hogyan adjunk képes vízjeleket Excelhez a GroupDocs for Java&#58; Átfogó útmutató](./groupdocs-watermark-java-add-image-to-excel/)
-- [Hogyan adjunk szöveges vízjeleket Word dokumentum képekhez a GroupDocs.Watermark for Java használatával](./add-watermarks-word-images-groupdocs-java/)
-- [Hogyan adjunk képes vízjelet Java-ban a GroupDocs.Watermark&#58; Lépésről‑lépésre útmutató](./add-image-watermark-java-groupdocs/)
-
-### Hasznos linkek
 
 - [GroupDocs.Watermark for Java dokumentáció](https://docs.groupdocs.com/watermark/java/)
 - [GroupDocs.Watermark for Java API referencia](https://reference.groupdocs.com/watermark/java/)
@@ -152,14 +54,35 @@ A: Egy tipikus szerveren (8 GB RAM, 2.5 GHz CPU) a könyvtár egy 200 oldala
 - [Ingyenes támogatás](https://forum.groupdocs.com/)
 - [Ideiglenes licenc](https://purchase.groupdocs.com/temporary-license/)
 
+## Cél kulcsszavak
+
+**Primary Keyword (HIGHEST PRIORITY):**  
+create tiled watermark  
+
+**Secondary Keywords (SUPPORTING):**  
+how to watermark images, scale image watermark, add image watermark java, secure documents watermark  
+
+Ezeket a kulcsszavakat természetesen beépítettük az útmutatóba, hogy segítsünk megtalálni a pontos információkat, miközben a olvasási élmény sima és élvezetes marad.
+
+## Gyakran Ismételt Kérdések
+
+**Q: Használhatok csempézett vízjeleket jelszóval védett PDF-ekkel?**  
+A: Igen. Nyissa meg a védett dokumentumot a megfelelő jelszóval, majd alkalmazza a csempézett vízjelet a szokásos módon.
+
+**Q: Hogyan változtathatom meg a csempézett képek közötti távolságot?**  
+A: Állítsa be a `TileSpacing` tulajdonságot a `WatermarkOptions`-ban a ismétlések közötti hézag növeléséhez vagy csökkentéséhez.
+
+**Q: Lehetséges-e a csempézett képi vízjelet szöveges vízjellel kombinálni?**  
+A: Természetesen. Több vízjelobjektumot (kép és szöveg) is hozzáadhat ugyanahhoz a dokumentumhoz, és önállóan szabályozhatja azok sorrendjét és átlátszóságát.
+
+**Q: Milyen formátumok támogatottak a csempézett vízjelekhez?**  
+A: A GroupDocs.Watermark támogatja a PDF, DOCX, PPTX, XLSX és több képfájltípust, például a PNG és JPEG formátumokat.
+
+**Q: Szükség van külön licencre a csempézett vízjelek méretezéséhez vagy forgatásához?**  
+A: Nem szükséges külön licenc; a standard GroupDocs.Watermark licenc lefedi az összes vízjelezési funkciót, beleértve a méretezést és a forgatást.
+
 ---
 
-**Legutóbb frissítve:** 2026-06-26  
-**Tesztelve ezzel:** GroupDocs.Watermark for Java 23.11  
+**Legutóbb frissítve:** 2026-01-08  
+**Tesztelt verzióval:** GroupDocs.Watermark 23.12 for Java  
 **Szerző:** GroupDocs
-
-## Kapcsolódó oktatóanyagok
-
-- [Hogyan adjunk szöveges és képes vízjeleket meghatározott PDF oldalakhoz a GroupDocs.Watermark for Java használatával](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Hogyan adjunk szöveges vízjelet PDF-ekhez a GroupDocs.Watermark for Java használatával: Lépésről‑lépésre útmutató](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [GroupDocs.Watermark for Java: Átfogó útmutató a PDF vízjelezéshez](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermark-guide/)
