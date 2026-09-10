@@ -1,88 +1,59 @@
 ---
-date: '2026-07-06'
-description: Scopri come impostare la licenza GroupDocs in Java usando metodi basati
-  su file‑based o stream, sbloccando tutte le funzionalità di GroupDocs.Watermark
-  per le tue applicazioni.
+date: '2026-01-13'
+description: Scopri come aggiungere la dipendenza Maven di GroupDocs e configurare
+  la licenza di GroupDocs.Watermark in Java utilizzando metodi basati su file o stream.
 keywords:
-- set groupdocs license
-- GroupDocs.Watermark Java licensing
+- GroupDocs Watermark Java
 - Java watermarking license setup
-schemas:
-- author: GroupDocs
-  dateModified: '2026-07-06'
-  description: Learn how to set GroupDocs license in Java using file‑based or stream
-    methods, unlocking all GroupDocs.Watermark features for your applications.
-  headline: 'How to Set GroupDocs License in Java: A Complete Guide'
-  type: TechArticle
-- description: Learn how to set GroupDocs license in Java using file‑based or stream
-    methods, unlocking all GroupDocs.Watermark features for your applications.
-  name: 'How to Set GroupDocs License in Java: A Complete Guide'
-  steps:
-  - name: '**Document Security Solutions** – Embed visible or invisible watermarks
-      across PDFs, Word files, and images to deter unauthorized distribution.'
-    text: '**Document Security Solutions** – Embed visible or invisible watermarks
-      across PDFs, Word files, and images to deter unauthorized distribution.'
-  - name: '**Digital Publishing Platforms** – Automate watermarking of e‑books, reports,
-      and marketing collateral at scale, using the licensed API to access batch processing.'
-    text: '**Digital Publishing Platforms** – Automate watermarking of e‑books, reports,
-      and marketing collateral at scale, using the licensed API to access batch processing.'
-  - name: '**Enterprise Document Management Systems** – Integrate watermarking into
-      workflows for contracts, invoices, and compliance documents, guaranteeing that
-      every generated file carries the organization’s branding.'
-    text: '**Enterprise Document Management Systems** – Integrate watermarking into
-      workflows for contracts, invoices, and compliance documents, guaranteeing that
-      every generated file carries the organization’s branding.'
-  type: HowTo
-- questions:
-  - answer: The SDK runs in trial mode, adding a “Powered by GroupDocs” watermark
-      to every processed document and limiting advanced features.
-    question: What happens if I forget to set the license?
-  - answer: Yes, a single license file works across environments as long as the usage
-      stays within the licensed document count and page limits.
-    question: Can I use the same license file for both on‑premises and cloud deployments?
-  - answer: No. Treat the license as a secret; store it in a secure location or use
-      environment variables to reference its path.
-    question: Is it safe to store the license file in source control?
-  - answer: Replace the old license file with the new one and restart the application;
-      the SDK will automatically pick up the updated file.
-    question: How do I update an expired license?
-  - answer: Absolutely. Once set, the license is thread‑safe and can be used by concurrent
-      watermarking operations.
-    question: Does the license support multi‑threaded watermarking?
-  type: FAQPage
-title: 'Come impostare la licenza GroupDocs in Java: una guida completa'
+- Digital document watermarking
+title: 'Dipendenza Maven di GroupDocs: Come configurare la licenza di GroupDocs.Watermark
+  in Java – Guida completa'
 type: docs
 url: /it/java/licensing-configuration/groupdocs-watermark-licensing-java-guide/
 weight: 1
 ---
 
-# Come impostare la licenza GroupDocs in Java: Guida completa
+# Come configurare la licenza di GroupDocs.Watermark in Java: Guida completa
 
-Gestire le licenze in modo efficace è fondamentale quando si utilizzano librerie potenti come **GroupDocs.Watermark** per Java, soprattutto quando si integrano funzionalità di watermark digitale nei propri progetti. In questo tutorial **imposterai la licenza GroupDocs** usando approcci basati su file e su stream, garantendo la conformità e sbloccando l'intera API. Alla fine comprenderai perché una licenza corretta è importante, come applicarla in scenari reali e come mantenere le prestazioni della tua applicazione.
+Gestire le licenze in modo efficace è fondamentale quando si utilizzano librerie potenti come **GroupDocs.Watermark** per Java, soprattutto quando si integrano funzionalità di watermark digitale nei propri progetti. Questa guida affronta il problema comune di configurare e gestire le licenze in modo efficiente, garantendo la conformità ai termini di utilizzo e sbloccando tutte le capacità dell'API. Seguendo questo tutorial, imparerai a impostare una licenza GroupDocs sia tramite file che tramite stream.
 
 ## Risposte rapide
-- **Qual è il modo più rapido per impostare una licenza GroupDocs in Java?** Carica il file di licenza con `License license = new License(); license.setLicense("path/to/license.json");`.
-- **Posso incorporare la licenza all'interno del mio JAR?** Sì—usa un `FileInputStream` (o `InputStream`) per caricare la licenza dal classpath.
-- **Ho bisogno di una licenza separata per ogni ambiente?** No, un unico file di licenza funziona in sviluppo, test e produzione, purché il file sia accessibile.
-- **L'API funzionerà senza licenza?** Verrà eseguita in modalità di prova con funzionalità limitate e watermark che indicano una versione non licenziata.
-- **Quale versione di Java è richiesta?** Java 8 o superiore; la libreria supporta fino a Java 21.
+- **Qual è il passaggio principale per abilitare le funzionalità di GroupDocs?** Aggiungi la dipendenza Maven di GroupDocs al tuo `pom.xml`.
+- **Posso caricare una licenza da un file?** Sì, usa `license.setLicense("path/to/license.file")`.
+- **È supportata la licenza basata su stream?** Assolutamente—carica la licenza tramite un `InputStream`.
+- **Ho bisogno di una licenza per lo sviluppo?** Una licenza di prova o temporanea è sufficiente per i test; è necessaria una licenza permanente per la produzione.
+- **La licenza influirà sulle prestazioni?** Impatto minimo; una corretta gestione delle risorse mantiene il sovraccarico basso.
 
-## Cos'è “impostare la licenza groupdocs”?
-**Impostare la licenza groupdocs** significa fornire un file di licenza GroupDocs.Watermark valido o uno stream al SDK affinché tutte le funzionalità premium siano disponibili. Senza questo passaggio l'SDK funziona in modalità di valutazione, limitando le funzionalità e aggiungendo watermark di prova. Garantisce che la libreria operi senza restrizioni di prova e che i documenti generati siano privi del branding predefinito di GroupDocs.
+## Introduzione
 
-## Perché impostare la licenza GroupDocs in Java?
-GroupDocs.Watermark supporta **oltre 50 formati di input e output**—inclusi PDF, DOCX, PPTX e i comuni tipi di immagine—e può elaborare documenti con **fino a 500 pagine** senza caricare l'intero file in memoria. Fornire una licenza valida rimuove le restrizioni di prova, abilita il watermarking ad alta velocità e garantisce la conformità ai termini di utilizzo del fornitore.
+In questo tutorial scoprirai come **aggiungere la dipendenza Maven di GroupDocs** e configurare la licenza per la libreria GroupDocs.Watermark per Java. Che tu memorizzi la licenza su disco o la incorpori come risorsa, i passaggi seguenti ti guideranno verso una configurazione affidabile e pronta per la produzione.
+
+### Cosa imparerai
+- **Impostare la licenza da file** – Usa un file di licenza locale.
+- **Impostare la licenza da stream** – Carica una licenza tramite un `InputStream`.
+- **Applicazioni pratiche** – Scenari reali per il watermarking.
+- **Ottimizzazione delle prestazioni** – Suggerimenti per mantenere l'app veloce.
+
+Pronto a immergerti? Iniziamo assicurandoci di avere tutto il necessario!
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere:
 
-- **Java Development Kit (JDK) 8+** installato.
-- **Libreria GroupDocs.Watermark per Java** (ultima versione consigliata).
-- Un IDE come **IntelliJ IDEA** o **Eclipse**.
-- **Maven** per la gestione delle dipendenze.
-- Un **file di licenza GroupDocs** (JSON o XML) ottenuto dal portale GroupDocs.
+Prima di cominciare, assicurati che il tuo ambiente di sviluppo sia pronto. Ecco cosa ti serve:
 
-## Configurare GroupDocs.Watermark per Java
+### Librerie e dipendenze richieste
+- Java Development Kit (JDK) versione 8 o superiore.
+- Libreria **GroupDocs.Watermark for Java**.
+
+### Requisiti per la configurazione dell'ambiente
+- Un Integrated Development Environment (IDE) come IntelliJ IDEA o Eclipse.
+- Maven installato sul tuo sistema per la gestione delle dipendenze.
+
+### Conoscenze preliminari
+È consigliata una comprensione di base della programmazione Java e familiarità con la gestione delle dipendenze tramite Maven.
+
+## Configurare GroupDocs.Watermark per Java con la dipendenza Maven di groupdocs
+
+Per iniziare a utilizzare **GroupDocs.Watermark** nel tuo progetto, aggiungerai prima la dipendenza Maven, poi configurerai la libreria.
 
 ### Utilizzo di Maven
 Aggiungi la seguente configurazione del repository e della dipendenza al tuo file `pom.xml`:
@@ -106,32 +77,28 @@ Aggiungi la seguente configurazione del repository e della dipendenza al tuo fil
 ```
 
 ### Download diretto
-In alternativa, scarica l'ultima versione direttamente dai [rilasci di GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/).
+In alternativa, scarica l'ultima versione direttamente da [rilasci di GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/).
 
 ### Passaggi per l'acquisizione della licenza
-Ottieni una licenza tramite:
-- Registrandoti per una prova gratuita sul sito di GroupDocs.  
-- Richiedendo una licenza temporanea, se necessario, su [Licenza temporanea GroupDocs](https://purchase.groupdocs.com/temporary-license).  
-- Consultando i termini di licenza e le FAQ su [Licenze GroupDocs](https://purchase.groupdocs.com/faqs/licensing).  
+Ottieni una licenza:
+- Registrandoti per una prova gratuita sul sito di GroupDocs.
+- Richiedendo una licenza temporanea, se necessario, su [Licenza temporanea GroupDocs](https://purchase.groupdocs.com/temporary-license).
 - Acquistando una licenza permanente per un utilizzo a lungo termine.
 
-## Come impostare la licenza GroupDocs da un file?
-La classe `License` è il punto di ingresso per applicare una licenza GroupDocs.Watermark.  
-Carica la licenza da un percorso file locale in sole due righe di codice; questo approccio consente di sostituire o aggiornare la licenza senza ricompilare. È ideale per distribuzioni on‑premises dove la licenza risiede nel file system del server. Caricandola una sola volta all'avvio dell'applicazione eviti sovraccarichi I/O ripetuti e garantisci una licenza coerente su tutti i thread.
+## Guida all'implementazione
 
-```java
-// Step 1: Verify the license file exists
-File licenseFile = new File("YOUR_DOCUMENT_DIRECTORY/LicenseFilePath");
-if (!licenseFile.exists()) {
-    throw new FileNotFoundException("License file not found at " + licenseFile.getAbsolutePath());
-}
+Esaminiamo l'implementazione dell'impostazione delle licenze usando due metodi distinti: file e stream.
 
-// Step 2: Initialize the License object
-License license = new License();
+### Impostare la licenza da file
 
-// Step 3: Apply the license using the file path
-license.setLicense(licenseFile.getAbsolutePath());
-```
+Questo metodo è semplice quando la licenza è memorizzata come file locale. Ecco come funziona:
+
+#### Panoramica
+Impostare la licenza da file consente di aggiornare o sostituire facilmente la licenza senza modificare le configurazioni del codice.
+
+#### Implementazione passo‑passo
+
+**Passo 1**: Verifica se il file di licenza esiste nella posizione specificata.
 
 ```java
 import java.io.File;
@@ -147,42 +114,32 @@ if (licenseFile.exists()) {
 }
 ```
 
-```java
-// Optional: confirm the license was applied
-System.out.println("GroupDocs.Watermark license set successfully.");
-```
+**Passo 2**: Inizializza un oggetto License dall'API GroupDocs.
 
 ```java
 License license = new License();
 ```
 
-## Come impostare la licenza GroupDocs da uno stream?
-`InputStream` è una classe Java che rappresenta uno stream di byte in ingresso, utilizzata qui per leggere i dati della licenza.  
-Quando includi la licenza nel tuo JAR o devi caricarla da una posizione remota, l'uso di un `InputStream` offre la flessibilità di leggere la licenza da qualsiasi fonte (classpath, HTTP, ecc.). Questo metodo mantiene anche il file di licenza fuori dal file system, migliorando la sicurezza.
-
-```java
-// Step 1: Open the license as a stream (e.g., from classpath)
-try (InputStream licenseStream = getClass().getResourceAsStream("/license.json")) {
-    if (licenseStream == null) {
-        throw new IllegalStateException("Embedded license not found in resources.");
-    }
-
-    // Step 2: Initialize the License object
-    License license = new License();
-
-    // Step 3: Apply the license using the stream
-    license.setLicense(licenseStream);
-}
-```
+**Passo 3**: Imposta la licenza usando il percorso del file.
 
 ```java
 license.setLicense(licenseFilePath);
 ```
 
-```java
-// Confirmation message
-System.out.println("GroupDocs.Watermark license loaded from stream.");
-```
+#### Spiegazione
+- **Parametro del percorso file**: Assicurati che `YOUR_DOCUMENT_DIRECTORY/LicenseFilePath` punti alla posizione reale del tuo file di licenza.
+- **Gestione degli errori**: Se la licenza manca, avvisa gli utenti con indicazioni su come ottenerne una da GroupDocs.
+
+### Impostare la licenza da stream
+
+L'uso degli stream è vantaggioso per scenari in cui le licenze sono incorporate nelle risorse o distribuite dinamicamente.
+
+#### Panoramica
+Impostare una licenza tramite stream offre flessibilità e può essere particolarmente utile in applicazioni che distribuiscono le proprie risorse incorporate.
+
+#### Implementazione passo‑passo
+
+**Passo 1**: Apri un `FileInputStream` per il file di licenza.
 
 ```java
 import java.io.FileInputStream;
@@ -196,75 +153,89 @@ try (FileInputStream licenseStream = new FileInputStream(licenseFilePath)) {
 }
 ```
 
-## Applicazioni pratiche
-Ecco tre scenari comuni in cui **impostare la licenza GroupDocs** fa una differenza concreta:
-
-1. **Soluzioni di sicurezza dei documenti** – Inserisci watermark visibili o invisibili su PDF, file Word e immagini per scoraggiare la distribuzione non autorizzata.
-2. **Piattaforme di pubblicazione digitale** – Automatizza il watermarking di e‑book, report e materiale di marketing su larga scala, utilizzando l'API licenziata per accedere all'elaborazione batch.
-3. **Sistemi di gestione documentale aziendale** – Integra il watermarking nei flussi di lavoro per contratti, fatture e documenti di conformità, garantendo che ogni file generato riporti il branding dell'organizzazione.
-
-## Considerazioni sulle prestazioni
-Quando distribuisci GroupDocs.Watermark in produzione, tieni presente questi consigli:
-
-- **Gestione efficiente delle risorse** – Usa sempre try‑with‑resources per gli stream per evitare perdite di memoria (come mostrato nell'esempio di stream).  
-- **Cache del file di licenza** – Carica la licenza una sola volta all'avvio dell'applicazione; chiamate ripetute a `setLicense` aggiungono sovraccarichi I/O non necessari.  
-- **Elaborazione di documenti di grandi dimensioni** – La libreria elabora file con centinaia di pagine senza caricare l'intero documento in memoria, grazie alla sua architettura basata su streaming.  
-
-## Problemi comuni e soluzioni
-
-| Problema | Causa | Soluzione |
-|----------|-------|-----------|
-| **File di licenza non trovato** | Percorso errato o file mancante | Verifica il percorso assoluto e assicurati che il file sia distribuito con l'applicazione. |
-| **Lo stream restituisce null** | Risorsa non impacchettata correttamente | Posiziona `license.json` in `src/main/resources` e riferiscilo con `/license.json`. |
-| **I watermark di prova compaiono ancora** | Licenza non applicata prima della prima chiamata API | Chiama `setLicense` subito dopo l'avvio della JVM, prima di qualsiasi operazione di watermarking. |
-| **Errore di formato non supportato** | Uso di una versione più vecchia della libreria | Aggiorna all'ultima versione di GroupDocs.Watermark (supporta oltre 50 formati). |
-
-## Domande frequenti
-
-**D: Cosa succede se dimentico di impostare la licenza?**  
-R: L'SDK funziona in modalità di prova, aggiungendo un watermark “Powered by GroupDocs” a ogni documento elaborato e limitando le funzionalità avanzate.
-
-**D: Posso usare lo stesso file di licenza sia per distribuzioni on‑premises che cloud?**  
-R: Sì, un unico file di licenza funziona in tutti gli ambienti purché l'uso rimanga entro il conteggio di documenti e i limiti di pagine licenziati.
-
-**D: È sicuro memorizzare il file di licenza nel controllo del codice sorgente?**  
-R: No. Tratta la licenza come un segreto; conservala in un luogo sicuro o utilizza variabili d'ambiente per riferirne il percorso.
-
-**D: Come aggiorno una licenza scaduta?**  
-R: Sostituisci il vecchio file di licenza con quello nuovo e riavvia l'applicazione; l'SDK rileverà automaticamente il file aggiornato.
-
-**D: La licenza supporta il watermarking multithread?**  
-R: Assolutamente. Una volta impostata, la licenza è thread‑safe e può essere usata da operazioni di watermarking concorrenti.
-
-## Conclusione
-Abbiamo illustrato due metodi affidabili per **impostare la licenza GroupDocs** in Java—caricamento diretto da file e caricamento basato su stream. Applicando la licenza all'inizio del ciclo di vita della tua applicazione sblocchi tutte le capacità di watermarking, eviti i watermark di prova e rimani conforme ai termini di licenza di GroupDocs.
-
-### Prossimi passi
-- Sperimenta con le classi **TextWatermark**, **ImageWatermark** e **SignatureWatermark** per esplorare l'intero set di funzionalità.  
-- Consulta il riferimento API ufficiale per scenari avanzati come **elaborazione batch** e **watermark basati su metadati**.
-
----
-
-**Ultimo aggiornamento:** 2026-07-06  
-**Testato con:** GroupDocs.Watermark 23.12 per Java  
-**Autore:** GroupDocs  
-
-**Risorse**  
-- [Documentazione GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
-- [Guida di riferimento API](https://reference.groupdocs.com/watermark/java)  
-- [Download GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
-- [Repository GitHub](https://github.com/groupdocs)
+**Passo 2**: Inizializza un oggetto License dall'API GroupDocs.
 
 ```java
 License license = new License();
 ```
 
+**Passo 3**: Imposta la licenza usando lo stream ottenuto da `FileInputStream`.
+
 ```java
 license.setLicense(licenseStream);
 ```
 
-## Tutorial correlati
+#### Spiegazione
+- **Gestione dello stream**: Utilizza try‑with‑resources per la gestione automatica delle risorse.
+- **Gestione delle eccezioni**: Gestisce in modo elegante eventuali errori di I/O, garantendo che l'applicazione rimanga robusta.
 
-- [Come impostare la licenza da stream in GroupDocs.Watermark per Java: Guida alla licenza e configurazione](/watermark/java/licensing-configuration/groupdocs-watermark-java-license-from-stream/)
-- [Come impostare una licenza a consumo per GroupDocs Watermark in Java](/watermark/java/licensing-configuration/set-metered-license-groupdocs-watermark-java/)
-- [Guida al watermarking Java: Documenti sicuri con l'API GroupDocs.Watermark](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
+## Applicazioni pratiche
+
+Ecco alcuni scenari reali in cui impostare una licenza GroupDocs può essere vantaggioso:
+
+1. **Soluzioni di sicurezza dei documenti** – Migliora la sicurezza dei documenti incorporando watermark con funzionalità licenziate.
+2. **Piattaforme di pubblicazione digitale** – Gestisci e distribuisci watermarking su sistemi di contenuti distribuiti.
+3. **Sistemi di gestione documentale aziendali** – Integra le funzionalità di watermarking in soluzioni di gestione documentale su larga scala.
+
+## Considerazioni sulle prestazioni
+
+Quando distribuisci GroupDocs.Watermark, tieni presenti i seguenti consigli sulle prestazioni:
+- **Gestione efficiente delle risorse** – Chiudi sempre gli stream correttamente usando try‑with‑resources per evitare perdite di memoria.
+- **Ottimizza i tempi di caricamento** – Mantieni il percorso del file di licenza accessibile e utilizza operazioni I/O efficienti.
+- **Gestione della memoria** – Sfrutta al meglio il garbage collector di Java quando lavori con file di grandi dimensioni.
+
+## Conclusione
+
+Abbiamo coperto le basi per aggiungere la **dipendenza Maven di GroupDocs** e impostare una licenza GroupDocs.Watermark in Java usando sia il metodo file che quello stream. Queste tecniche garantiscono la conformità e sbloccano tutto il potere dell'API per le tue applicazioni.
+
+### Prossimi passi
+- Sperimenta con le diverse funzionalità di watermark offerte da **GroupDocs**.
+- Esplora altre API GroupDocs per potenziare le tue soluzioni di gestione documentale.
+
+Pronto a iniziare? Implementa questi metodi nei tuoi progetti e osserva la differenza!
+
+## Sezione FAQ
+
+1. **Cosa succede se il file di licenza non viene trovato durante la configurazione?**  
+   - Verifica che il percorso sia corretto e prova a riscaricare la licenza da [Licenze GroupDocs](https://purchase.groupdocs.com/faqs/licensing).
+
+2. **Come posso risolvere gli errori legati agli stream in Java?**  
+   - Controlla i percorsi dei file e assicurati di avere i permessi di lettura sul file.
+
+3. **Qual è la differenza tra licenze temporanee e permanenti per GroupDocs?**  
+   - Le licenze temporanee consentono l'uso in prova, mentre le licenze permanenti offrono accesso a lungo termine a tutte le funzionalità.
+
+4. **Cosa accade se non imposto una licenza nella mia applicazione?**  
+   - Senza una licenza valida, l'applicazione potrebbe avere funzionalità limitate o visualizzare watermark che indicano una versione non licenziata.
+
+5. **Posso distribuire GroupDocs.Watermark con risorse incorporate?**  
+   - Sì, l'uso degli stream è ideale per incorporare le licenze all'interno delle applicazioni come risorse distribuite.
+
+## Domande frequenti
+
+**D: Posso usare la dipendenza Maven di GroupDocs in una pipeline CI/CD?**  
+R: Assolutamente. Assicurati che il `pom.xml` con la dipendenza faccia parte del tuo repository di codice; Maven la risolverà durante la build.
+
+**D: Devo riavviare l'applicazione dopo aver impostato la licenza?**  
+R: No. La licenza viene applicata a runtime quando chiami `license.setLicense(...)`; le chiamate API successive la rispetteranno.
+
+**D: Come verifico che la licenza sia stata caricata correttamente?**  
+R: Dopo aver chiamato `setLicense`, invoca qualsiasi metodo API che richieda una licenza; se non viene sollevata un'eccezione di licenza, la licenza è attiva.
+
+**D: È sicuro archiviare il file di licenza in un repository pubblico?**  
+R: Mai. I file di licenza sono confidenziali; conservali in modo sicuro e caricali da posizioni protette o risorse criptate.
+
+**D: L'uso del metodo stream influisce sulle prestazioni rispetto al metodo file?**  
+R: La differenza è trascurabile. Entrambi i metodi leggono la licenza una sola volta all'avvio; scegli quello più adatto al tuo modello di distribuzione.
+
+## Risorse
+- [Documentazione GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)
+- [Guida di riferimento API](https://reference.groupdocs.com/watermark/java)
+- [Download GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)
+- [Repository GitHub](https://github.com/groupdocs)
+
+---
+
+**Ultimo aggiornamento:** 2026-01-13  
+**Testato con:** GroupDocs.Watermark 24.11 per Java  
+**Autore:** GroupDocs

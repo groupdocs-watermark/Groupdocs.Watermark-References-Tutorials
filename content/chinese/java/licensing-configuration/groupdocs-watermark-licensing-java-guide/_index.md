@@ -1,89 +1,58 @@
 ---
-date: '2026-07-06'
-description: 了解如何使用基于文件或流的方法在 Java 中设置 GroupDocs 许可证，为您的应用程序解锁所有 GroupDocs.Watermark
-  功能。
+date: '2026-01-13'
+description: 了解如何在 Java 中添加 GroupDocs Maven 依赖并使用文件或流方式配置 GroupDocs.Watermark 许可证。
 keywords:
-- set groupdocs license
-- GroupDocs.Watermark Java licensing
+- GroupDocs Watermark Java
 - Java watermarking license setup
-schemas:
-- author: GroupDocs
-  dateModified: '2026-07-06'
-  description: Learn how to set GroupDocs license in Java using file‑based or stream
-    methods, unlocking all GroupDocs.Watermark features for your applications.
-  headline: 'How to Set GroupDocs License in Java: A Complete Guide'
-  type: TechArticle
-- description: Learn how to set GroupDocs license in Java using file‑based or stream
-    methods, unlocking all GroupDocs.Watermark features for your applications.
-  name: 'How to Set GroupDocs License in Java: A Complete Guide'
-  steps:
-  - name: '**Document Security Solutions** – Embed visible or invisible watermarks
-      across PDFs, Word files, and images to deter unauthorized distribution.'
-    text: '**Document Security Solutions** – Embed visible or invisible watermarks
-      across PDFs, Word files, and images to deter unauthorized distribution.'
-  - name: '**Digital Publishing Platforms** – Automate watermarking of e‑books, reports,
-      and marketing collateral at scale, using the licensed API to access batch processing.'
-    text: '**Digital Publishing Platforms** – Automate watermarking of e‑books, reports,
-      and marketing collateral at scale, using the licensed API to access batch processing.'
-  - name: '**Enterprise Document Management Systems** – Integrate watermarking into
-      workflows for contracts, invoices, and compliance documents, guaranteeing that
-      every generated file carries the organization’s branding.'
-    text: '**Enterprise Document Management Systems** – Integrate watermarking into
-      workflows for contracts, invoices, and compliance documents, guaranteeing that
-      every generated file carries the organization’s branding.'
-  type: HowTo
-- questions:
-  - answer: The SDK runs in trial mode, adding a “Powered by GroupDocs” watermark
-      to every processed document and limiting advanced features.
-    question: What happens if I forget to set the license?
-  - answer: Yes, a single license file works across environments as long as the usage
-      stays within the licensed document count and page limits.
-    question: Can I use the same license file for both on‑premises and cloud deployments?
-  - answer: No. Treat the license as a secret; store it in a secure location or use
-      environment variables to reference its path.
-    question: Is it safe to store the license file in source control?
-  - answer: Replace the old license file with the new one and restart the application;
-      the SDK will automatically pick up the updated file.
-    question: How do I update an expired license?
-  - answer: Absolutely. Once set, the license is thread‑safe and can be used by concurrent
-      watermarking operations.
-    question: Does the license support multi‑threaded watermarking?
-  type: FAQPage
-title: 如何在 Java 中设置 GroupDocs 许可证：完整指南
+- Digital document watermarking
+title: GroupDocs Maven 依赖：如何在 Java 中设置 GroupDocs.Watermark 许可 – 完整指南
 type: docs
 url: /zh/java/licensing-configuration/groupdocs-watermark-licensing-java-guide/
 weight: 1
 ---
 
-# 如何在 Java 中设置 GroupDocs 许可证：完整指南
-
-有效管理许可证对于使用强大的库（如 **GroupDocs.Watermark** for Java）至关重要，尤其是在项目中加入数字水印功能时。在本教程中，您将使用基于文件和基于流的两种方式 **set GroupDocs license**，确保合规并解锁完整 API。完成后，您将了解为何正确的许可证很重要、如何在实际场景中应用以及如何保持应用性能。
+# 如何在 Java 中设置 GroupDocs.Watermark 许可：完整指南
 
 ## 快速答案
-- **在 Java 中设置 GroupDocs 许可证的最快方法是什么？** Load the license file with `License license = new License(); license.setLicense("path/to/license.json");`.
-- **我可以将许可证嵌入到我的 JAR 中吗？** 是的——使用 `FileInputStream`（或 `InputStream`）从类路径加载许可证。
-- **每个环境都需要单独的许可证吗？** 不需要，只要文件可访问，单个许可证文件即可在开发、测试和生产环境中使用。
-- **没有许可证 API 还能工作吗？** 它将在试用模式下运行，功能受限，并会添加标示未授权版本的水印。
-- **需要哪个 Java 版本？** Java 8 或更高；该库支持最高至 Java 21。
+- **启用 GroupDocs 功能的首要步骤是什么？** 将 GroupDocs Maven 依赖添加到你的 `pom.xml` 中。  
+- **我可以从文件加载许可证吗？** 可以，使用 `license.setLicense("path/to/license.file")`。  
+- **是否支持基于流的许可？** 当然——通过 `InputStream` 加载许可证。  
+- **开发阶段需要许可证吗？** 试用或临时许可证可用于测试；生产环境需要永久许可证。  
+- **许可证会影响性能吗？** 影响极小；合理的资源管理可保持开销低。  
 
-## 什么是 “set groupdocs license”？
-**Set groupdocs license** 指向 SDK 提供有效的 GroupDocs.Watermark 许可证文件或流，以便所有高级功能可用。没有此步骤，SDK 将以评估模式运行，功能受限并添加试用水印。它确保库在没有试用限制的情况下运行，并且生成的文档不带默认的 GroupDocs 品牌。
+## 介绍
 
-## 为什么在 Java 中设置 GroupDocs 许可证？
-GroupDocs.Watermark 支持 **50 多种输入和输出格式**——包括 PDF、DOCX、PPTX 以及常见的图像类型，并且能够在 **最多 500 页** 的文档上进行处理，而无需将整个文件加载到内存中。提供有效的许可证可消除试用限制，启用高吞吐量的水印功能，并保证符合供应商的使用条款。
+在本教程中，你将了解如何 **添加 GroupDocs Maven 依赖** 并为 GroupDocs.Watermark Java 库配置许可证。无论是将许可证存储在磁盘上还是嵌入为资源，下面的步骤都将帮助你完成可靠的生产就绪设置。
 
-## 前提条件
+### 你将学习
+- **从文件设置许可证** – 使用本地许可证文件。  
+- **从流设置许可证** – 通过 `InputStream` 加载许可证。  
+- **实际应用** – 水印的真实场景。  
+- **性能优化** – 保持应用快速的技巧。  
 
-- 已安装 **Java Development Kit (JDK) 8+**。
-- **GroupDocs.Watermark for Java** 库（建议使用最新版本）。
-- IDE，例如 **IntelliJ IDEA** 或 **Eclipse**。
-- 用于依赖管理的 **Maven**。
-- 从 GroupDocs 门户获取的 **GroupDocs 许可证文件**（JSON 或 XML）。
+准备好深入了解了吗？让我们先确保你拥有所有必需的东西！
 
-## 为 Java 设置 GroupDocs.Watermark
+## 前置条件
+
+在开始之前，请确保你的开发环境已就绪。以下是你需要的内容：
+
+### 必需的库和依赖
+- Java Development Kit (JDK) 8 版或更高。  
+- **GroupDocs.Watermark for Java** 库。  
+
+### 环境搭建要求
+- 集成开发环境 (IDE)，如 IntelliJ IDEA 或 Eclipse。  
+- 系统上已安装 Maven 用于依赖管理。  
+
+### 知识前提
+建议具备 Java 编程的基础知识，并熟悉使用 Maven 管理依赖。
+
+## 使用 groupdocs Maven 依赖设置 GroupDocs.Watermark for Java
+
+要在项目中开始使用 **GroupDocs.Watermark**，首先需要添加 Maven 依赖，然后配置库。
 
 ### 使用 Maven
-在您的 `pom.xml` 文件中添加以下仓库和依赖配置：
+在你的 `pom.xml` 文件中添加以下仓库和依赖配置：
 
 ```xml
 <repositories>
@@ -106,32 +75,26 @@ GroupDocs.Watermark 支持 **50 多种输入和输出格式**——包括 PDF、
 ### 直接下载
 或者，直接从 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下载最新版本。
 
-### 获取许可证的步骤
+### 许可证获取步骤
 获取许可证的方式包括：
-
 - 在 GroupDocs 网站上注册免费试用。  
-- 如有需要，可在 [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license) 请求临时许可证。  
-- 在 [GroupDocs Licensing](https://purchase.groupdocs.com/faqs/licensing) 查看许可条款和常见问题。  
-- 购买永久许可证以长期使用。
+- 如有需要，可在 [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license) 申请临时许可证。  
+- 购买永久许可证用于长期使用。
 
-## 如何从文件设置 GroupDocs 许可证？
+## 实现指南
 
-`License` 类是应用 GroupDocs.Watermark 许可证的入口。  
-只需两行代码即可从本地文件路径加载许可证；这种方法允许您在不重新编译的情况下替换或更新许可证。它非常适合许可证存放在服务器文件系统上的本地部署。通过在应用启动时加载一次，可避免重复的 I/O 开销，并确保所有线程的许可证一致。
+下面我们将逐步演示使用两种不同方式（文件和流）设置许可证的实现过程。
 
-```java
-// Step 1: Verify the license file exists
-File licenseFile = new File("YOUR_DOCUMENT_DIRECTORY/LicenseFilePath");
-if (!licenseFile.exists()) {
-    throw new FileNotFoundException("License file not found at " + licenseFile.getAbsolutePath());
-}
+### 从文件设置许可证
 
-// Step 2: Initialize the License object
-License license = new License();
+当许可证存储为本地文件时，此方法非常直接。以下是其工作原理：
 
-// Step 3: Apply the license using the file path
-license.setLicense(licenseFile.getAbsolutePath());
-```
+#### 概述
+从文件设置许可证可确保你能够轻松更新或替换许可证，而无需更改代码库配置。
+
+#### 步骤实现
+
+**步骤 1**：验证许可证文件是否存在于指定位置。
 
 ```java
 import java.io.File;
@@ -147,43 +110,32 @@ if (licenseFile.exists()) {
 }
 ```
 
-```java
-// Optional: confirm the license was applied
-System.out.println("GroupDocs.Watermark license set successfully.");
-```
+**步骤 2**：初始化 GroupDocs API 的 License 对象。
 
 ```java
 License license = new License();
 ```
 
-## 如何从流设置 GroupDocs 许可证？
-
-`InputStream` 是 Java 中表示输入字节流的类，此处用于读取许可证数据。  
-当您将许可证打包在 JAR 中或需要从远程位置加载时，使用 `InputStream` 可以灵活地从任何来源（类路径、HTTP 等）读取许可证。此方法还将许可证文件保留在文件系统之外，提升安全性。
-
-```java
-// Step 1: Open the license as a stream (e.g., from classpath)
-try (InputStream licenseStream = getClass().getResourceAsStream("/license.json")) {
-    if (licenseStream == null) {
-        throw new IllegalStateException("Embedded license not found in resources.");
-    }
-
-    // Step 2: Initialize the License object
-    License license = new License();
-
-    // Step 3: Apply the license using the stream
-    license.setLicense(licenseStream);
-}
-```
+**步骤 3**：使用文件路径设置许可证。
 
 ```java
 license.setLicense(licenseFilePath);
 ```
 
-```java
-// Confirmation message
-System.out.println("GroupDocs.Watermark license loaded from stream.");
-```
+#### 说明
+- **文件路径参数**：确保 `YOUR_DOCUMENT_DIRECTORY/LicenseFilePath` 指向实际的许可证文件位置。  
+- **错误处理**：如果许可证缺失，提示用户如何从 GroupDocs 获取许可证。
+
+### 从流设置许可证
+
+在许可证嵌入资源或动态分发的场景中，使用流非常有益。
+
+#### 概述
+通过流设置许可证提供了灵活性，尤其适用于分发自带资源的应用程序。
+
+#### 步骤实现
+
+**步骤 1**：打开 `FileInputStream` 读取许可证文件。
 
 ```java
 import java.io.FileInputStream;
@@ -197,78 +149,88 @@ try (FileInputStream licenseStream = new FileInputStream(licenseFilePath)) {
 }
 ```
 
-## 实际应用
-
-以下是三个常见场景，**设置 GroupDocs 许可证** 能产生显著影响：
-
-1. **文档安全解决方案** – 在 PDF、Word 文件和图像中嵌入可见或不可见的水印，以阻止未授权分发。
-2. **数字出版平台** – 大规模自动为电子书、报告和营销材料添加水印，使用已授权的 API 进行批处理。
-3. **企业文档管理系统** – 将水印集成到合同、发票和合规文档的工作流中，确保每个生成的文件都带有组织的品牌标识。
-
-## 性能考虑
-
-在生产环境部署 GroupDocs.Watermark 时，请注意以下提示：
-
-- **高效的资源处理** – 始终对流使用 try‑with‑resources，以避免内存泄漏（如流示例所示）。  
-- **许可证文件缓存** – 在应用启动时加载一次许可证；重复调用 `setLicense` 会增加不必要的 I/O 开销。  
-- **大文档处理** – 该库凭借流式架构，可处理数百页的文件而无需将整个文档加载到内存中。  
-
-## 常见问题及解决方案
-
-| 问题 | 原因 | 解决方案 |
-|-------|-------|-----|
-| **未找到许可证文件** | 路径不正确或文件缺失 | 检查绝对路径并确保文件随应用一起部署。 |
-| **流返回 null** | 资源未正确打包 | 将 `license.json` 放置在 `src/main/resources` 并使用 `/license.json` 引用。 |
-| **试用水印仍然出现** | 在首次 API 调用前未应用许可证 | 在 JVM 启动后立即调用 `setLicense`，在任何水印操作之前。 |
-| **不支持的格式错误** | 使用了较旧的库版本 | 升级到最新的 GroupDocs.Watermark 版本（支持 50 多种格式）。 |
-
-## 常见问答
-
-**问：如果忘记设置许可证会怎样？**  
-答：SDK 将以试用模式运行，在每个处理的文档上添加 “Powered by GroupDocs” 水印，并限制高级功能。
-
-**问：我可以在本地部署和云部署中使用相同的许可证文件吗？**  
-答：可以，只要使用量在许可证规定的文档数量和页数限制内，单个许可证文件即可在所有环境中使用。
-
-**问：将许可证文件存放在源码控制中安全吗？**  
-答：不安全。应将许可证视为机密，存放在安全位置或使用环境变量引用其路径。
-
-**问：如何更新已过期的许可证？**  
-答：用新许可证文件替换旧文件并重启应用；SDK 将自动加载更新后的文件。
-
-**问：许可证是否支持多线程水印？**  
-答：完全支持。设置后，许可证是线程安全的，可供并发水印操作使用。
-
-## 结论
-
-我们已经介绍了两种可靠的在 Java 中 **set GroupDocs license** 方法——直接文件加载和基于流的加载。通过在应用生命周期的早期应用许可证，您可以解锁完整的水印功能，避免试用水印，并遵守 GroupDocs 的许可条款。
-
-### 下一步
-- 尝试使用 **TextWatermark**、**ImageWatermark** 和 **SignatureWatermark** 类，以探索完整功能集。  
-- 查阅官方 API 参考，了解 **批处理** 和 **基于元数据的水印** 等高级场景。
-
----
-
-**Last Updated:** 2026-07-06  
-**Tested With:** GroupDocs.Watermark 23.12 for Java  
-**Author:** GroupDocs  
-
-**Resources**  
-- [GroupDocs.Watermark 文档](https://docs.groupdocs.com/watermark/java/)  
-- [API 参考指南](https://reference.groupdocs.com/watermark/java)  
-- [下载 GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub 仓库](https://github.com/groupdocs)
+**步骤 2**：初始化 GroupDocs API 的 License 对象。
 
 ```java
 License license = new License();
 ```
 
+**步骤 3**：使用从 `FileInputStream` 获得的流设置许可证。
+
 ```java
 license.setLicense(licenseStream);
 ```
 
-## 相关教程
+#### 说明
+- **流处理**：使用 try‑with‑resources 实现自动资源管理。  
+- **异常管理**：优雅地处理可能的文件 I/O 错误，确保应用程序的稳健性。
 
-- [如何在 GroupDocs.Watermark for Java 中从流设置许可证：许可与配置指南](/watermark/java/licensing-configuration/groupdocs-watermark-java-license-from-stream/)
-- [如何在 Java 中为 GroupDocs Watermark 设置计量许可证](/watermark/java/licensing-configuration/set-metered-license-groupdocs-watermark-java/)
-- [Java 水印指南：使用 GroupDocs.Watermark API 保护文档](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
+## 实际应用
+
+以下是一些设置 GroupDocs 许可证可带来收益的真实场景：
+
+1. **文档安全解决方案** – 通过使用许可证功能嵌入水印来提升文档安全性。  
+2. **数字出版平台** – 在分布式内容系统中管理和部署水印。  
+3. **企业文档管理系统** – 将水印功能集成到大规模文档管理解决方案中。
+
+## 性能考虑
+
+在部署 GroupDocs.Watermark 时，请考虑以下性能提示：
+
+- **高效的资源处理** – 始终使用 try‑with‑resources 正确关闭流，以防止内存泄漏。  
+- **优化加载时间** – 确保许可证文件路径可访问，并使用高效的 I/O 操作。  
+- **内存管理** – 在处理大文件时有效利用 Java 的垃圾回收机制。
+
+## 结论
+
+我们已经介绍了添加 **GroupDocs Maven 依赖** 并使用文件和流两种方式在 Java 中设置 GroupDocs.Watermark 许可证的要点。这些技术确保合规并为你的应用解锁 API 的全部功能。
+
+### 后续步骤
+- 试验 **GroupDocs** 提供的不同水印功能。  
+- 探索其他 GroupDocs API，以增强你的文档管理解决方案。  
+
+准备好开始了吗？在项目中实现这些方法，体验不同！
+
+## FAQ 部分
+
+1. **如果在设置过程中未找到许可证文件怎么办？**  
+   - 确认路径正确，并尝试从 [GroupDocs Licensing](https://purchase.groupdocs.com/faqs/licensing) 重新下载许可证。  
+
+2. **如何排查 Java 中与流相关的错误？**  
+   - 检查文件路径并确保对文件具有读取权限。  
+
+3. **GroupDocs 的临时许可证和永久许可证有什么区别？**  
+   - 临时许可证用于试用，而永久许可证提供对所有功能的长期访问。  
+
+4. **如果我的应用未设置许可证会怎样？**  
+   - 没有有效许可证，应用可能功能受限或显示标明未授权版本的水印。  
+
+5. **我可以将 GroupDocs.Watermark 与嵌入资源一起分发吗？**  
+   - 可以，使用流是将许可证嵌入为分发资源的理想方式。  
+
+## 常见问答
+
+**Q: 我可以在 CI/CD 流水线中使用 GroupDocs Maven 依赖吗？**  
+A: 当然。只需确保包含该依赖的 `pom.xml` 在源码仓库中，Maven 会在构建时解析它。
+
+**Q: 设置许可证后需要重启应用吗？**  
+A: 不需要。许可证在运行时调用 `license.setLicense(...)` 时生效，后续的 API 调用都会遵循该许可证。
+
+**Q: 我如何验证许可证已成功加载？**  
+A: 调用 `setLicense` 后，执行任何需要许可证的 API 方法；如果未抛出许可证异常，则表示许可证已激活。
+
+**Q: 将许可证文件存放在公共仓库是否安全？**  
+A: 绝对不安全。许可证文件属于机密信息，请安全存储，并从受保护或加密的资源中加载。
+
+**Q: 使用流方法相较于文件方法会影响性能吗？**  
+A: 差别可以忽略不计。两种方法都在启动时读取一次许可证，选择最适合你的部署模型的方式即可。
+
+## 资源
+- [GroupDocs.Watermark 文档](https://docs.groupdocs.com/watermark/java/)  
+- [API 参考指南](https://reference.groupdocs.com/watermark/java)  
+- [下载 GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
+- [GitHub 仓库](https://github.com/groupdocs)  
+
+**最后更新:** 2026-01-13  
+**已测试:** GroupDocs.Watermark 24.11 for Java  
+**作者:** GroupDocs

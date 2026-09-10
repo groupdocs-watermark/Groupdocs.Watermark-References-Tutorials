@@ -1,90 +1,62 @@
 ---
-date: '2026-07-06'
-description: Μάθετε πώς να ορίσετε την άδεια GroupDocs σε Java χρησιμοποιώντας μεθόδους
-  file‑based ή stream, αποδεσμεύοντας όλες τις δυνατότητες GroupDocs.Watermark για
-  τις εφαρμογές σας.
+date: '2026-01-13'
+description: Μάθετε πώς να προσθέσετε την εξάρτηση GroupDocs Maven και να διαμορφώσετε
+  την άδεια GroupDocs.Watermark στη Java χρησιμοποιώντας μεθόδους αρχείου ή ροής.
 keywords:
-- set groupdocs license
-- GroupDocs.Watermark Java licensing
+- GroupDocs Watermark Java
 - Java watermarking license setup
-schemas:
-- author: GroupDocs
-  dateModified: '2026-07-06'
-  description: Learn how to set GroupDocs license in Java using file‑based or stream
-    methods, unlocking all GroupDocs.Watermark features for your applications.
-  headline: 'How to Set GroupDocs License in Java: A Complete Guide'
-  type: TechArticle
-- description: Learn how to set GroupDocs license in Java using file‑based or stream
-    methods, unlocking all GroupDocs.Watermark features for your applications.
-  name: 'How to Set GroupDocs License in Java: A Complete Guide'
-  steps:
-  - name: '**Document Security Solutions** – Embed visible or invisible watermarks
-      across PDFs, Word files, and images to deter unauthorized distribution.'
-    text: '**Document Security Solutions** – Embed visible or invisible watermarks
-      across PDFs, Word files, and images to deter unauthorized distribution.'
-  - name: '**Digital Publishing Platforms** – Automate watermarking of e‑books, reports,
-      and marketing collateral at scale, using the licensed API to access batch processing.'
-    text: '**Digital Publishing Platforms** – Automate watermarking of e‑books, reports,
-      and marketing collateral at scale, using the licensed API to access batch processing.'
-  - name: '**Enterprise Document Management Systems** – Integrate watermarking into
-      workflows for contracts, invoices, and compliance documents, guaranteeing that
-      every generated file carries the organization’s branding.'
-    text: '**Enterprise Document Management Systems** – Integrate watermarking into
-      workflows for contracts, invoices, and compliance documents, guaranteeing that
-      every generated file carries the organization’s branding.'
-  type: HowTo
-- questions:
-  - answer: The SDK runs in trial mode, adding a “Powered by GroupDocs” watermark
-      to every processed document and limiting advanced features.
-    question: What happens if I forget to set the license?
-  - answer: Yes, a single license file works across environments as long as the usage
-      stays within the licensed document count and page limits.
-    question: Can I use the same license file for both on‑premises and cloud deployments?
-  - answer: No. Treat the license as a secret; store it in a secure location or use
-      environment variables to reference its path.
-    question: Is it safe to store the license file in source control?
-  - answer: Replace the old license file with the new one and restart the application;
-      the SDK will automatically pick up the updated file.
-    question: How do I update an expired license?
-  - answer: Absolutely. Once set, the license is thread‑safe and can be used by concurrent
-      watermarking operations.
-    question: Does the license support multi‑threaded watermarking?
-  type: FAQPage
-title: 'Πώς να ορίσετε την άδεια GroupDocs σε Java: Ένας πλήρης οδηγός'
+- Digital document watermarking
+title: 'GroupDocs Maven Dependency: Πώς να ρυθμίσετε την άδεια GroupDocs.Watermark
+  σε Java – Ένας πλήρης οδηγός'
 type: docs
 url: /el/java/licensing-configuration/groupdocs-watermark-licensing-java-guide/
 weight: 1
 ---
 
-# Πώς να ορίσετε την άδεια GroupDocs σε Java: Ένας πλήρης οδηγός
+# Πώς να Ρυθμίσετε την Άδεια GroupDocs.Watermark σε Java: Ένας Πλήρης Οδηγός
 
-Η αποτελεσματική διαχείριση των αδειών είναι κρίσιμη όταν χρησιμοποιείτε ισχυρές βιβλιοθήκες όπως το **GroupDocs.Watermark** για Java, ειδικά όταν ενσωματώνετε λειτουργίες ψηφιακής υδατογράφησης στα έργα σας. Σε αυτό το tutorial θα **ορίσετε την άδεια GroupDocs** χρησιμοποιώντας τόσο προσεγγίσεις βασισμένες σε αρχείο όσο και σε ροή, εξασφαλίζοντας τη συμμόρφωση και ξεκλειδώνοντας ολόκληρο το API. Στο τέλος θα καταλάβετε γιατί η σωστή αδειοδότηση είναι σημαντική, πώς να την εφαρμόσετε σε πραγματικά σενάρια και πώς να διατηρήσετε την απόδοση της εφαρμογής σας.
+Η αποτελεσματική διαχείριση των αδειών είναι κρίσιμη όταν χρησιμοποιείτε ισχυρές βιβλιοθήκες όπως το **GroupDocs.Watermark** για Java, ειδικά όταν ενσωματώνετε λειτουργίες ψηφιακής υδατογράφησης στα έργα σας. Αυτός ο οδηγός αντιμετωπίζει το κοινό πρόβλημα της ρύθμισης και διαχείρισης των αδειών αποδοτικά, εξασφαλίζοντας τη συμμόρφωση με τους όρους χρήσης ενώ ξεκλειδώνει πλήρεις δυνατότητες του API. Ακολουθώντας αυτό το σεμινάριο, θα μάθετε πώς να ορίσετε μια άδεια GroupDocs χρησιμοποιώντας τόσο μεθόδους βασισμένες σε αρχείο όσο και σε ροή.
 
-## Γρήγορες Απαντήσεις
-- **Ποιος είναι ο πιο γρήγορος τρόπος για να ορίσετε μια άδεια GroupDocs σε Java;** Load the license file with `License license = new License(); license.setLicense("path/to/license.json");`.
-- **Μπορώ να ενσωματώσω την άδεια μέσα στο JAR μου;** Yes—use a `FileInputStream` (or `InputStream`) to load the license from the classpath.
-- **Χρειάζομαι ξεχωριστή άδεια για κάθε περιβάλλον;** No, a single license file works across dev, test, and production as long as the file is accessible.
-- **Θα λειτουργήσει το API χωρίς άδεια;** It will run in trial mode with limited features and watermarks indicating an unlicensed version.
-- **Ποια έκδοση της Java απαιτείται;** Java 8 or higher; the library supports up to Java 21.
+## Quick Answers
+- **Ποιο είναι το βασικό βήμα για την ενεργοποίηση των λειτουργιών του GroupDocs;** Προσθέστε την εξάρτηση GroupDocs Maven στο `pom.xml` σας.  
+- **Μπορώ να φορτώσω μια άδεια από αρχείο;** Ναι, χρησιμοποιήστε `license.setLicense("path/to/license.file")`.  
+- **Υποστηρίζεται η άδεια μέσω ροής;** Απόλυτα—φορτώστε την άδεια μέσω ενός `InputStream`.  
+- **Χρειάζομαι άδεια για ανάπτυξη;** Μια δοκιμαστική ή προσωρινή άδεια λειτουργεί για δοκιμές· απαιτείται μόνιμη άδεια για παραγωγή.  
+- **Θα επηρεάσει η άδεια την απόδοση;** Ελάχιστη επίδραση· η σωστή διαχείριση πόρων διατηρεί το κόστος χαμηλό.
 
-## Τι είναι το “set groupdocs license”;
-**Set groupdocs license** σημαίνει την παροχή ενός έγκυρου αρχείου άδειας GroupDocs.Watermark ή ροής στο SDK ώστε όλες οι premium λειτουργίες να γίνουν διαθέσιμες. Χωρίς αυτό το βήμα το SDK λειτουργεί σε λειτουργία αξιολόγησης, περιορίζοντας τη λειτουργικότητα και προσθέτοντας υδατογραφήματα δοκιμής. Διασφαλίζει ότι η βιβλιοθήκη λειτουργεί χωρίς περιορισμούς δοκιμής και ότι τυχόν παραγόμενα έγγραφα είναι ελεύθερα από το προεπιλεγμένο branding του GroupDocs.
+## Introduction
 
-## Γιατί να ορίσετε την άδεια GroupDocs σε Java;
-Το GroupDocs.Watermark υποστηρίζει **πάνω από 50 μορφές εισόδου και εξόδου**—συμπεριλαμβανομένων PDF, DOCX, PPTX και κοινών τύπων εικόνων—και μπορεί να επεξεργαστεί έγγραφα με **έως 500 σελίδες** χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη. Η παροχή μιας έγκυρης άδειας αφαιρεί τους περιορισμούς δοκιμής, ενεργοποιεί υδατογράφημα υψηλής απόδοσης και εγγυάται τη συμμόρφωση με τους όρους χρήσης του προμηθευτή.
+Σε αυτό το σεμινάριο θα ανακαλύψετε πώς να **προσθέσετε την εξάρτηση GroupDocs Maven** και να ρυθμίσετε την άδεια για τη βιβλιοθήκη GroupDocs.Watermark Java. Είτε αποθηκεύετε την άδεια στο δίσκο είτε την ενσωματώνετε ως πόρο, τα παρακάτω βήματα θα σας καθοδηγήσουν σε μια αξιόπιστη, έτοιμη για παραγωγή ρύθμιση.
 
-## Προαπαιτούμενα
+### What You'll Learn
+- **Ρύθμιση Άδειας από Αρχείο** – Χρησιμοποιήστε ένα τοπικό αρχείο άδειας.  
+- **Ρύθμιση Άδειας από Ροή** – Φορτώστε μια άδεια μέσω ενός `InputStream`.  
+- **Πρακτικές Εφαρμογές** – Πραγματικά σενάρια για υδατογράφημα.  
+- **Βελτιστοποίηση Απόδοσης** – Συμβουλές για να διατηρήσετε την εφαρμογή σας γρήγορη.
 
-- **Java Development Kit (JDK) 8+** εγκατεστημένο.
-- **GroupDocs.Watermark for Java** βιβλιοθήκη (συνιστάται η τελευταία έκδοση).
-- Ένα IDE όπως το **IntelliJ IDEA** ή το **Eclipse**.
-- **Maven** για διαχείριση εξαρτήσεων.
-- Ένα **αρχείο άδειας GroupDocs** (JSON ή XML) που λαμβάνεται από το portal του GroupDocs.
+Έτοιμοι να ξεκινήσετε; Ας αρχίσουμε διασφαλίζοντας ότι έχετε όλα όσα χρειάζεστε!
 
-## Ρύθμιση του GroupDocs.Watermark για Java
+## Prerequisites
 
-### Χρήση Maven
-Προσθέστε την ακόλουθη ρύθμιση αποθετηρίου και εξάρτησης στο αρχείο `pom.xml` σας:
+Πριν ξεκινήσουμε, βεβαιωθείτε ότι το περιβάλλον ανάπτυξής σας είναι έτοιμο. Αυτό είναι που θα χρειαστείτε:
+
+### Required Libraries and Dependencies
+- Java Development Kit (JDK) έκδοση 8 ή νεότερη.  
+- **GroupDocs.Watermark for Java** βιβλιοθήκη.
+
+### Environment Setup Requirements
+- Ένα ολοκληρωμένο περιβάλλον ανάπτυξης (IDE) όπως IntelliJ IDEA ή Eclipse.  
+- Maven εγκατεστημένο στο σύστημά σας για διαχείριση εξαρτήσεων.
+
+### Knowledge Prerequisites
+Βασική κατανόηση του προγραμματισμού Java και εξοικείωση με τη διαχείριση εξαρτήσεων χρησιμοποιώντας Maven συνιστώνται.
+
+## Setting Up GroupDocs.Watermark for Java with groupdocs maven dependency
+
+Για να αρχίσετε να χρησιμοποιείτε το **GroupDocs.Watermark** στο έργο σας, πρώτα θα προσθέσετε την εξάρτηση Maven, έπειτα θα ρυθμίσετε τη βιβλιοθήκη.
+
+### Using Maven
+Προσθέστε την παρακάτω διαμόρφωση αποθετηρίου και εξάρτησης στο αρχείο `pom.xml` σας:
 
 ```xml
 <repositories>
@@ -104,34 +76,29 @@ weight: 1
 </dependencies>
 ```
 
-### Άμεση Λήψη
-Εναλλακτικά, κατεβάστε την πιο πρόσφατη έκδοση απευθείας από [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Direct Download
+Εναλλακτικά, κατεβάστε την πιο πρόσφατη έκδοση απευθείας από το [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Βήματα Απόκτησης Άδειας
-Αποκτήστε άδεια μέσω:
-- Εγγραφής για δωρεάν δοκιμή στην ιστοσελίδα του GroupDocs.  
-- Αίτησης προσωρινής άδειας εάν χρειάζεται στο [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license).  
-- Ανασκόπησης των όρων αδειοδότησης και των Συχνών Ερωτήσεων στο [GroupDocs Licensing](https://purchase.groupdocs.com/faqs/licensing).  
-- Αγοράς μόνιμης άδειας για μακροπρόθεσμη χρήση.
+### License Acquisition Steps
+Αποκτήστε μια άδεια μέσω:
+- Εγγραφείτε για δωρεάν δοκιμή στην ιστοσελίδα του GroupDocs.  
+- Ζητήστε προσωρινή άδεια εάν χρειάζεται στο [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license).  
+- Αγοράστε μόνιμη άδεια για μακροπρόθεσμη χρήση.
 
-## Πώς να ορίσετε την άδεια GroupDocs από αρχείο;
+## Implementation Guide
 
-Η κλάση `License` είναι το σημείο εισόδου για την εφαρμογή μιας άδειας GroupDocs.Watermark.  
-Φορτώστε την άδεια από τοπική διαδρομή αρχείου σε μόλις δύο γραμμές κώδικα· αυτή η προσέγγιση σας επιτρέπει να αντικαταστήσετε ή να ενημερώσετε την άδεια χωρίς επαναμεταγλώττιση. Είναι ιδανική για εγκαταστάσεις on‑premises όπου η άδεια βρίσκεται στο σύστημα αρχείων του διακομιστή. Φορτώνοντάς την μία φορά κατά την εκκίνηση της εφαρμογής αποφεύγετε επαναλαμβανόμενα I/O και διασφαλίζετε συνεπή αδειοδότηση σε όλα τα νήματα.
+Ας περάσουμε από την υλοποίηση της ρύθμισης αδειών χρησιμοποιώντας δύο διαφορετικές μεθόδους: αρχείο και ροή.
 
-```java
-// Step 1: Verify the license file exists
-File licenseFile = new File("YOUR_DOCUMENT_DIRECTORY/LicenseFilePath");
-if (!licenseFile.exists()) {
-    throw new FileNotFoundException("License file not found at " + licenseFile.getAbsolutePath());
-}
+### Setting License from File
 
-// Step 2: Initialize the License object
-License license = new License();
+Αυτή η μέθοδος είναι απλή όταν η άδεια σας αποθηκεύεται ως τοπικό αρχείο. Δείτε πώς λειτουργεί:
 
-// Step 3: Apply the license using the file path
-license.setLicense(licenseFile.getAbsolutePath());
-```
+#### Overview
+Η ρύθμιση της άδειας από αρχείο εξασφαλίζει ότι μπορείτε εύκολα να ενημερώσετε ή να αντικαταστήσετε την άδεια χωρίς να αλλάξετε τις ρυθμίσεις του κώδικα.
+
+#### Step‑by‑Step Implementation
+
+**Βήμα 1**: Επαληθεύστε αν το αρχείο άδειας υπάρχει στην καθορισμένη θέση.
 
 ```java
 import java.io.File;
@@ -147,43 +114,32 @@ if (licenseFile.exists()) {
 }
 ```
 
-```java
-// Optional: confirm the license was applied
-System.out.println("GroupDocs.Watermark license set successfully.");
-```
+**Βήμα 2**: Αρχικοποιήστε ένα αντικείμενο License από το GroupDocs API.
 
 ```java
 License license = new License();
 ```
 
-## Πώς να ορίσετε την άδεια GroupDocs από ροή;
-
-`InputStream` είναι μια κλάση της Java που αντιπροσωπεύει μια ροή εισόδου byte, χρησιμοποιείται εδώ για την ανάγνωση των δεδομένων της άδειας.  
-Όταν ενσωματώνετε την άδεια μέσα στο JAR σας ή χρειάζεται να τη φορτώσετε από απομακρυσμένη τοποθεσία, η χρήση ενός `InputStream` παρέχει την ευελιξία να διαβάσετε την άδεια από οποιαδήποτε πηγή (classpath, HTTP, κλπ.). Αυτή η μέθοδος διατηρεί επίσης το αρχείο άδειας εκτός του συστήματος αρχείων, ενισχύοντας την ασφάλεια.
-
-```java
-// Step 1: Open the license as a stream (e.g., from classpath)
-try (InputStream licenseStream = getClass().getResourceAsStream("/license.json")) {
-    if (licenseStream == null) {
-        throw new IllegalStateException("Embedded license not found in resources.");
-    }
-
-    // Step 2: Initialize the License object
-    License license = new License();
-
-    // Step 3: Apply the license using the stream
-    license.setLicense(licenseStream);
-}
-```
+**Βήμα 3**: Ορίστε την άδεια χρησιμοποιώντας τη διαδρομή του αρχείου.
 
 ```java
 license.setLicense(licenseFilePath);
 ```
 
-```java
-// Confirmation message
-System.out.println("GroupDocs.Watermark license loaded from stream.");
-```
+#### Explanation
+- **Παράμετρος Διαδρομής Αρχείου**: Βεβαιωθείτε ότι το `YOUR_DOCUMENT_DIRECTORY/LicenseFilePath` δείχνει στη πραγματική θέση του αρχείου άδειας.  
+- **Διαχείριση Σφαλμάτων**: Εάν λείπει η άδεια, ενημερώστε τους χρήστες με οδηγίες για την απόκτηση μιας από το GroupDocs.
+
+### Setting License from Stream
+
+Η χρήση ροών είναι ωφέλιμη για σενάρια όπου οι άδειες είναι ενσωματωμένες σε πόρους ή διανέμονται δυναμικά.
+
+#### Overview
+Η ρύθμιση άδειας μέσω ροής προσφέρει ευελιξία και μπορεί να είναι ιδιαίτερα χρήσιμη σε εφαρμογές που διανέμουν τους δικούς τους ενσωματωμένους πόρους.
+
+#### Step‑by‑Step Implementation
+
+**Βήμα 1**: Ανοίξτε ένα `FileInputStream` για το αρχείο άδειας.
 
 ```java
 import java.io.FileInputStream;
@@ -197,78 +153,86 @@ try (FileInputStream licenseStream = new FileInputStream(licenseFilePath)) {
 }
 ```
 
-## Πρακτικές Εφαρμογές
-
-Ακολουθούν τρία κοινά σενάρια όπου η **ρύθμιση της άδειας GroupDocs** κάνει ουσιαστική διαφορά:
-
-1. **Λύσεις Ασφάλειας Εγγράφων** – Ενσωματώστε ορατά ή αόρατα υδατογραφήματα σε PDF, αρχεία Word και εικόνες για να αποτρέψετε την μη εξουσιοδοτημένη διανομή.
-2. **Ψηφιακές Πλατφόρμες Δημοσίευσης** – Αυτοματοποιήστε την υδατογράφημα e‑books, αναφορών και υλικού μάρκετινγκ σε μεγάλη κλίμακα, χρησιμοποιώντας το αδειοδοτημένο API για επεξεργασία παρτίδων.
-3. **Συστήματα Διαχείρισης Εγγράφων Επιχειρήσεων** – Ενσωματώστε την υδατογράφημα σε ροές εργασίας για συμβόλαια, τιμολόγια και έγγραφα συμμόρφωσης, διασφαλίζοντας ότι κάθε παραγόμενο αρχείο φέρει το branding του οργανισμού.
-
-## Σκέψεις για την Απόδοση
-
-Κατά την ανάπτυξη του GroupDocs.Watermark σε παραγωγή, λάβετε υπόψη αυτές τις συμβουλές:
-
-- **Αποτελεσματική Διαχείριση Πόρων** – Χρησιμοποιείτε πάντα try‑with‑resources για ροές ώστε να αποφεύγετε διαρροές μνήμης (όπως φαίνεται στο παράδειγμα ροής).
-- **Caching Αρχείου Άδειας** – Φορτώστε την άδεια μία φορά κατά την εκκίνηση της εφαρμογής· επαναλαμβανόμενες κλήσεις στο `setLicense` προσθέτουν περιττό I/O.
-- **Επεξεργασία Μεγάλων Εγγράφων** – Η βιβλιοθήκη επεξεργάζεται αρχεία με εκατοντάδες σελίδες χωρίς να φορτώνει ολόκληρο το έγγραφο στη μνήμη, χάρη στην αρχιτεκτονική ροής.
-
-## Συχνά Προβλήματα και Λύσεις
-
-| Πρόβλημα | Αιτία | Διόρθωση |
-|----------|-------|----------|
-| **Αρχείο άδειας δεν βρέθηκε** | Λανθασμένη διαδρομή ή έλλειψη αρχείου | Επαληθεύστε την απόλυτη διαδρομή και βεβαιωθείτε ότι το αρχείο έχει αναπτυχθεί με την εφαρμογή. |
-| **Η ροή επιστρέφει null** | Ο πόρος δεν έχει συσκευαστεί σωστά | Τοποθετήστε το `license.json` στο `src/main/resources` και αναφερθείτε σε αυτό με `/license.json`. |
-| **Τα υδατογραφήματα δοκιμής εξακολουθούν να εμφανίζονται** | Η άδεια δεν εφαρμόστηκε πριν την πρώτη κλήση API | Καλέστε το `setLicense` αμέσως μετά την εκκίνηση του JVM, πριν οποιαδήποτε λειτουργία υδατογράφησης. |
-| **Σφάλμα μη υποστηριζόμενης μορφής** | Χρήση παλαιότερης έκδοσης της βιβλιοθήκης | Αναβαθμίστε στην τελευταία έκδοση του GroupDocs.Watermark (υποστηρίζει πάνω από 50 μορφές). |
-
-## Συχνές Ερωτήσεις
-
-**Ε: Τι συμβαίνει αν ξεχάσω να ορίσω την άδεια;**  
-A: Το SDK λειτουργεί σε λειτουργία δοκιμής, προσθέτοντας ένα υδατογράφημα “Powered by GroupDocs” σε κάθε επεξεργασμένο έγγραφο και περιορίζοντας τις προηγμένες λειτουργίες.
-
-**Ε: Μπορώ να χρησιμοποιήσω το ίδιο αρχείο άδειας για εγκαταστάσεις on‑premises και cloud;**  
-A: Ναι, ένα μοναδικό αρχείο άδειας λειτουργεί σε όλα τα περιβάλλοντα εφόσον η χρήση παραμένει εντός του αριθμού εγγράφων και των ορίων σελίδων που καλύπτονται από την άδεια.
-
-**Ε: Είναι ασφαλές να αποθηκεύσω το αρχείο άδειας σε σύστημα ελέγχου πηγής;**  
-A: Όχι. Θεωρήστε την άδεια ως μυστικό· αποθηκεύστε την σε ασφαλή τοποθεσία ή χρησιμοποιήστε μεταβλητές περιβάλλοντος για να αναφέρετε τη διαδρομή της.
-
-**Ε: Πώς ενημερώνω μια ληγμένη άδεια;**  
-A: Αντικαταστήστε το παλιό αρχείο άδειας με το νέο και επανεκκινήστε την εφαρμογή· το SDK θα ανιχνεύσει αυτόματα το ενημερωμένο αρχείο.
-
-**Ε: Η άδεια υποστηρίζει υδατογράφημα πολλαπλών νημάτων;**  
-A: Απολύτως. Η άδεια είναι ασφαλής για πολλαπλά νήματα και μπορεί να χρησιμοποιηθεί από ταυτόχρονες λειτουργίες υδατογράφησης.
-
-## Συμπέρασμα
-
-Διασχίσαμε δύο αξιόπιστους τρόπους για να **ορίσετε την άδεια GroupDocs** σε Java—άμεση φόρτωση από αρχείο και φόρτωση μέσω ροής. Εφαρμόζοντας την άδεια νωρίς στον κύκλο ζωής της εφαρμογής σας, ξεκλειδώνετε πλήρεις δυνατότητες υδατογράφησης, αποφεύγετε τα υδατογραφήματα δοκιμής και παραμένετε σύμφωνοι με τους όρους αδειοδότησης του GroupDocs.  
-
-### Επόμενα Βήματα
-- Πειραματιστείτε με τις κλάσεις **TextWatermark**, **ImageWatermark**, και **SignatureWatermark** για να εξερευνήσετε το πλήρες σύνολο λειτουργιών.  
-- Ανασκοπήστε την επίσημη αναφορά API για προχωρημένα σενάρια όπως **batch processing** και **metadata‑driven watermarks**.
-
----
-
-**Τελευταία Ενημέρωση:** 2026-07-06  
-**Δοκιμάστηκε Με:** GroupDocs.Watermark 23.12 for Java  
-**Συγγραφέας:** GroupDocs  
-
-**Πόροι**  
-- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
-- [API Reference Guide](https://reference.groupdocs.com/watermark/java)  
-- [Download GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub Repository](https://github.com/groupdocs)
+**Βήμα 2**: Αρχικοποιήστε ένα αντικείμενο License από το GroupDocs API.
 
 ```java
 License license = new License();
 ```
 
+**Βήμα 3**: Ορίστε την άδεια χρησιμοποιώντας τη ροή που προήλθε από το `FileInputStream`.
+
 ```java
 license.setLicense(licenseStream);
 ```
 
-## Σχετικά Μαθήματα
+#### Explanation
+- **Διαχείριση Ροής**: Χρησιμοποιεί try‑with‑resources για αυτόματη διαχείριση πόρων.  
+- **Διαχείριση Εξαίρεσης**: Διαχειρίζεται πιθανά σφάλματα I/O αρχείου με χάρη, διασφαλίζοντας ότι η εφαρμογή σας παραμένει ανθεκτική.
 
-- [Πώς να ορίσετε άδεια από ροή στο GroupDocs.Watermark για Java: Οδηγός αδειοδότησης & ρυθμίσεων](/watermark/java/licensing-configuration/groupdocs-watermark-java-license-from-stream/)
-- [Πώς να ορίσετε μετρημένη άδεια για το GroupDocs Watermark σε Java](/watermark/java/licensing-configuration/set-metered-license-groupdocs-watermark-java/)
-- [Οδηγός υδατογράφησης Java: Ασφαλή έγγραφα με το GroupDocs.Watermark API](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
+## Practical Applications
+
+Ακολουθούν μερικά πραγματικά σενάρια όπου η ρύθμιση άδειας GroupDocs μπορεί να είναι ωφέλιμη:
+1. **Λύσεις Ασφάλειας Εγγράφων** – Ενισχύστε την ασφάλεια των εγγράφων ενσωματώνοντας υδατογραφήματα με λειτουργίες που απαιτούν άδεια.  
+2. **Πλατφόρμες Ψηφιακής Έκδοσης** – Διαχειριστείτε και αναπτύξτε υδατογράφημα σε κατανεμημένα συστήματα περιεχομένου.  
+3. **Εταιρικά Συστήματα Διαχείρισης Εγγράφων** – Ενσωματώστε λειτουργίες υδατογράφησης σε λύσεις διαχείρισης εγγράφων μεγάλης κλίμακας.
+
+## Performance Considerations
+
+Κατά την υλοποίηση του GroupDocs.Watermark, λάβετε υπόψη τις παρακάτω συμβουλές απόδοσης:
+- **Αποτελεσματική Διαχείριση Πόρων** – Κλείνετε πάντα τις ροές σωστά χρησιμοποιώντας try‑with‑resources για να αποτρέψετε διαρροές μνήμης.  
+- **Βελτιστοποίηση Χρόνου Φόρτωσης** – Διατηρήστε τη διαδρομή του αρχείου άδειας προσβάσιμη και χρησιμοποιήστε αποδοτικές λειτουργίες I/O.  
+- **Διαχείριση Μνήμης** – Εκμεταλλευτείτε αποτελεσματικά τη συλλογή απορριμμάτων της Java όταν εργάζεστε με μεγάλα αρχεία.
+
+## Conclusion
+
+Καλύψαμε τα βασικά της προσθήκης της **εξάρτησης GroupDocs Maven** και της ρύθμισης άδειας GroupDocs.Watermark σε Java χρησιμοποιώντας τόσο μεθόδους αρχείου όσο και ροής. Αυτές οι τεχνικές εξασφαλίζουν τη συμμόρφωση και ξεκλειδώνουν τη πλήρη δύναμη του API για τις εφαρμογές σας.
+
+### Next Steps
+- Δοκιμάστε διαφορετικές λειτουργίες υδατογράφησης που παρέχει το **GroupDocs**.  
+- Εξερευνήστε άλλα APIs του GroupDocs για να ενισχύσετε τις λύσεις διαχείρισης εγγράφων σας.
+
+Έτοιμοι να ξεκινήσετε; Εφαρμόστε αυτές τις μεθόδους στα έργα σας και δείτε τη διαφορά!
+
+## FAQ Section
+
+1. **Τι γίνεται αν το αρχείο άδειας δεν βρεθεί κατά τη ρύθμιση;**  
+   - Βεβαιωθείτε ότι η διαδρομή είναι σωστή και δοκιμάστε να ξανακατεβάσετε την άδεια από το [GroupDocs Licensing](https://purchase.groupdocs.com/faqs/licensing).
+
+2. **Πώς μπορώ να αντιμετωπίσω σφάλματα που σχετίζονται με ροές στην Java;**  
+   - Ελέγξτε τις διαδρομές των αρχείων και βεβαιωθείτε ότι έχετε δικαιώματα ανάγνωσης στο αρχείο.
+
+3. **Υπάρχει διαφορά μεταξύ προσωρινών και μόνιμων αδειών για το GroupDocs;**  
+   - Οι προσωρινές άδειες επιτρέπουν δοκιμαστική χρήση, ενώ οι μόνιμες άδειες παρέχουν μακροπρόθεσμη πρόσβαση σε όλες τις λειτουργίες.
+
+4. **Τι συμβαίνει αν δεν ορίσω άδεια στην εφαρμογή μου;**  
+   - Χωρίς έγκυρη άδεια, η εφαρμογή σας μπορεί να έχει περιορισμένη λειτουργικότητα ή να εμφανίζει υδατογραφήματα που υποδεικνύουν μη αδειοδοτημένη έκδοση.
+
+5. **Μπορώ να διανείμω το GroupDocs.Watermark με ενσωματωμένους πόρους;**  
+   - Ναι, η χρήση ροών είναι ιδανική για ενσωμάτωση αδειών μέσα σε εφαρμογές ως διανεμημένους πόρους.
+
+## Frequently Asked Questions
+
+**Ε: Μπορώ να χρησιμοποιήσω την εξάρτηση GroupDocs Maven σε pipeline CI/CD;**  
+Α: Απόλυτα. Απλώς βεβαιωθείτε ότι το `pom.xml` με την εξάρτηση είναι μέρος του αποθετηρίου κώδικα· το Maven θα το επιλύσει κατά τη διάρκεια της κατασκευής.
+
+**Ε: Πρέπει να επανεκκινήσω την εφαρμογή μετά τη ρύθμιση της άδειας;**  
+Α: Όχι. Η άδεια εφαρμόζεται σε χρόνο εκτέλεσης όταν καλείτε `license.setLicense(...)`; οι επόμενες κλήσεις API θα τη σεβαστούν.
+
+**Ε: Πώς μπορώ να επαληθεύσω ότι η άδεια φορτώθηκε επιτυχώς;**  
+Α: Μετά την κλήση του `setLicense`, μπορείτε να εκτελέσετε οποιαδήποτε μέθοδο API που απαιτεί άδεια· εάν δεν προκύψει εξαίρεση αδειοδότησης, η άδεια είναι ενεργή.
+
+**Ε: Είναι ασφαλές να αποθηκεύσω το αρχείο άδειας σε δημόσιο αποθετήριο;**  
+Α: Ποτέ. Τα αρχεία αδειών είναι εμπιστευτικά· αποθηκεύστε τα με ασφάλεια και φορτώστε τα από προστατευμένες θέσεις ή κρυπτογραφημένους πόρους.
+
+**Ε: Θα επηρεάσει η μέθοδος ροής την απόδοση σε σύγκριση με τη μέθοδο αρχείου;**  
+Α: Η διαφορά είναι αμελητέα. Και οι δύο μέθοδοι διαβάζουν την άδεια μία φορά κατά την εκκίνηση· επιλέξτε αυτή που ταιριάζει στο μοντέλο ανάπτυξής σας.
+
+## Resources
+- [Τεκμηρίωση GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
+- [Οδηγός Αναφοράς API](https://reference.groupdocs.com/watermark/java)  
+- [Λήψη GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
+- [Αποθετήριο GitHub](https://github.com/groupdocs)
+
+**Τελευταία Ενημέρωση:** 2026-01-13  
+**Δοκιμάστηκε Με:** GroupDocs.Watermark 24.11 για Java  
+**Συγγραφέας:** GroupDocs

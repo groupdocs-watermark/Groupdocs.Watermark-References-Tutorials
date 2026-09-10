@@ -1,89 +1,48 @@
 ---
-date: '2026-07-06'
-description: Aprenda cómo agregar un adjunto de correo electrónico en Java usando
-  GroupDocs.Watermark. Esta guía paso a paso cubre la configuración, la carga de correos
-  electrónicos, la adición de adjuntos y el guardado de los cambios.
+date: '2026-01-08'
+description: Aprende a gestionar los archivos adjuntos de correo electrónico en Java
+  con GroupDocs.Watermark. Este tutorial muestra cómo agregar un adjunto, manejar
+  múltiples adjuntos y guardar los cambios de manera eficiente.
 keywords:
-- add email attachment java
-- GroupDocs.Watermark Java
-- email attachment handling Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-07-06'
-  description: Learn how to add email attachment java using GroupDocs.Watermark. This
-    step-by-step guide covers setup, loading emails, adding attachments, and saving
-    changes.
-  headline: Add Email Attachment Java with GroupDocs.Watermark – Step-by-Step
-  type: TechArticle
-- description: Learn how to add email attachment java using GroupDocs.Watermark. This
-    step-by-step guide covers setup, loading emails, adding attachments, and saving
-    changes.
-  name: Add Email Attachment Java with GroupDocs.Watermark – Step-by-Step
-  steps:
-  - name: Set the Path and Load Options
-    text: Specify the file path and create a `EmailLoadOptions` object to handle loading
-      specifics. At this point, your email message is loaded into memory and ready
-      for manipulation.
-  - name: Prepare the Attachment
-    text: First, create an `Attachment` instance that points to the file you want
-      to embed.
-  - name: Add Attachment to Email Content
-    text: Retrieve the email content and add your attachment. The attachment is now
-      added to the email message.
-  - name: Specify Output Path
-    text: Choose a destination file name for the updated email.
-  - name: Save and Close
-    text: Persist the changes and release resources.
-  type: HowTo
-- questions:
-  - answer: Use `EmailLoadOptions` with streaming enabled and process the email in
-      chunks; this keeps memory usage under 300 MB even for the biggest files.
-    question: How do I handle very large email files (over 100 MB)?
-  - answer: Yes – loop through a collection of file paths and invoke `addAttachment`
-      for each; the library updates the MIME parts efficiently.
-    question: Can I add multiple attachments in a single call?
-  - answer: Provide the password via `EmailLoadOptions.setPassword("yourPassword")`
-      before loading; the library will decrypt the message automatically.
-    question: What if the email is password‑protected?
-  - answer: Absolutely. All original headers (From, To, Subject, etc.) are retained
-      unless you explicitly modify them.
-    question: Does GroupDocs.Watermark preserve existing email headers?
-  - answer: The official GitHub repository contains dozens of real‑world examples.
-    question: Where can I find more code samples?
-  type: FAQPage
-title: Agregar adjunto de correo electrónico Java con GroupDocs.Watermark – Paso a
-  paso
+- GroupDocs Watermark for Java
+- Java email attachments
+- programmatically manage email attachments
+title: Cómo gestionar archivos adjuntos de correo electrónico en Java usando GroupDocs.Watermark
+  – Guía paso a paso
 type: docs
 url: /es/java/email-document-watermarking/mastering-email-attachments-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Agregar adjunto de correo electrónico Java con GroupDocs.Watermark – Paso a paso
+# Administrar archivos adjuntos de correo electrónico en Java con GroupDocs.Watermark: Guía completa
 
-Gestionar los adjuntos de correo electrónico de forma programática es una necesidad diaria para muchos desarrolladores Java, ya sea que estés construyendo un servicio de archivado, una integración CRM o un flujo de trabajo de mensajería segura. En este tutorial **add email attachment java** usarás la poderosa biblioteca GroupDocs.Watermark, aprendiendo cómo cargar un correo electrónico, insertar un nuevo archivo y guardar los cambios, todo con código limpio y mantenible.
+En el panorama digital actual, **gestionar archivos adjuntos de correo electrónico** es esencial para las empresas que necesitan archivar documentos, garantizar una comunicación segura o integrar correos electrónicos en flujos de trabajo más amplios. Este tutorial le muestra cómo usar **GroupDocs.Watermark for Java** para cargar un correo, **agregar archivos adjuntos de correo Java** estilo, manejar **múltiples archivos adjuntos Java**, y guardar el mensaje actualizado, todo manteniendo el código limpio y con buen rendimiento.
 
-## Respuestas rápidas
-- **¿Cuál es la primera línea de código para cargar un correo electrónico?** `Watermarker watermarker = new Watermarker("email.eml");`  
-- **¿Puedo agregar varios adjuntos a la vez?** Yes – iterate over a collection and call `addAttachment` for each file.  
-- **¿Necesito una licencia para desarrollo?** A temporary license works for testing; a full license is required for production.  
-- **¿Qué versión de Java se requiere?** JDK 8 or later is fully supported.  
-- **¿El uso de memoria es una preocupación para correos electrónicos grandes?** GroupDocs.Watermark streams data, so even 100 MB emails stay under 200 MB RAM.
+## Quick Answers
+- **¿Cuál es la biblioteca principal?** GroupDocs.Watermark for Java  
+- **¿Cómo agrego un archivo adjunto?** Use `EmailContent.getAttachments().add(byte[], fileName)`  
+- **¿Puedo agregar varios archivos adjuntos?** Sí—llame al método `add` para cada archivo  
+- **¿Necesito una licencia?** Se requiere una licencia temporal o completa para uso en producción  
+- **¿Qué versión de Java es compatible?** JDK 8 o posterior  
 
-## Qué es “add email attachment java”?
-**Add email attachment java** es el proceso de insertar programáticamente un archivo en un mensaje de correo electrónico existente usando APIs Java. Esta operación te permite automatizar la distribución de documentos, enriquecer las comunicaciones salientes y mantener el cumplimiento sin interacción manual del usuario. Se usa comúnmente en informes automatizados, archivado de documentos y soluciones de mensajería segura donde los adjuntos deben añadirse o reemplazarse sin abrir un cliente.
+## ¿Qué es la gestión de archivos adjuntos de correo electrónico?
+Gestionar archivos adjuntos de correo electrónico significa leer, agregar, eliminar o actualizar programáticamente los archivos adjuntos a un mensaje de correo. Con GroupDocs.Watermark, puede tratar el correo como un documento, manipular su contenido y preservar metadatos como marcas de tiempo e información del remitente.
 
-## Por qué usar GroupDocs.Watermark para el manejo de adjuntos de correo electrónico?
-GroupDocs.Watermark soporta **30+ formatos de archivo** (incluyendo PDF, DOCX, XLSX, PPTX y tipos de imagen comunes) y puede procesar correos de hasta **100 MB** sin cargar todo el archivo en memoria, reduciendo la carga de CPU hasta en **40 %** comparado con implementaciones ingenuas. Su API fluida, la marca de agua incorporada y las capacidades de firma digital lo convierten en una solución integral para el procesamiento seguro y de alto rendimiento de correos electrónicos.
+## ¿Por qué usar GroupDocs.Watermark for Java?
+- **Soporte robusto de formatos:** Maneja MSG, EML y otros formatos de correo electrónico listos para usar.  
+- **Funciones de marca de agua y seguridad:** Agregue marcas de agua o firmas digitales tanto al cuerpo del correo como a sus archivos adjuntos.  
+- **API sencilla:** Clases intuitivas como `Watermarker`, `EmailLoadOptions` y `EmailContent` simplifican el desarrollo.  
 
-## Requisitos previos
-- **Java Development Kit (JDK) 8+** – asegúrate de que `java -version` muestre 1.8 o superior.  
-- **IDE** – IntelliJ IDEA, Eclipse, o cualquier editor que prefieras.  
-- **GroupDocs.Watermark library** – agrega la dependencia Maven o descarga el JAR.  
+## Prerequisites
+Antes de comenzar, asegúrese de tener:
 
-### Bibliotecas y dependencias requeridas
-Para usar GroupDocs.Watermark, puedes añadirlo mediante Maven o descargarlo directamente:
+1. **Java Development Kit (JDK) 8+** instalado.  
+2. **Un IDE** (IntelliJ IDEA, Eclipse o VS Code).  
+3. **Biblioteca GroupDocs.Watermark for Java** añadida mediante Maven o descarga directa.  
 
-**Configuración Maven**  
+### Required Libraries and Dependencies
+Agregue la biblioteca mediante Maven:
+
 ```xml
 <repositories>
    <repository>
@@ -100,89 +59,46 @@ Para usar GroupDocs.Watermark, puedes añadirlo mediante Maven o descargarlo dir
       <version>24.11</version>
    </dependency>
 </dependencies>
-```  
+```
 
-**Descarga directa**  
-You can download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+O descárguela directamente desde [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Obtención de licencia
-Para probar GroupDocs.Watermark, puedes solicitar una licencia temporal o comprarla para uso continuado. Visita la [página de licencias de GroupDocs](https://purchase.groupdocs.com/temporary-license/) para comenzar.
+### License Acquisition
+Solicite una licencia temporal o compre una completa a través de la [página de licencias de GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 
-## ¿Cómo configuro GroupDocs.Watermark para Java?
-La clase `Watermarker` es el punto de entrada principal para cargar y manipular documentos. Inicializa la biblioteca creando una instancia de `Watermarker` con la ruta a tu archivo de correo, luego configura las opciones de carga que necesites. Este patrón de dos pasos prepara el motor para manipulaciones posteriores mientras gestiona los recursos de forma eficiente.
+## Configuración de GroupDocs.Watermark for Java
+Inicialice el `Watermarker` con la ruta a su archivo de correo electrónico:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
 
 // Initialize Watermarker
 Watermarker watermarker = new Watermarker("path/to/your/file.msg");
-```  
+```
 
-## ¿Cómo cargo un mensaje de correo electrónico en Java?
-`EmailLoadOptions` define cómo la biblioteca lee un archivo de correo, permitiéndote especificar reglas de análisis, protección con contraseña y comportamiento de streaming. Al proporcionar estas opciones aseguras un uso eficiente de la memoria y un manejo correcto de estructuras MIME complejas antes de realizar cualquier modificación.
-
-```java
-import java.io.File;
-import com.groupdocs.watermark.Watermarker;
-import com.groupdocs.watermark.options.EmailLoadOptions;
-```  
-
-## ¿Cómo agrego un adjunto de correo electrónico java?
-La clase `Attachment` representa un archivo que puede incrustarse en las partes MIME de un correo. Después de crear una instancia de `Attachment`, llamas a `addAttachment` sobre el objeto `EmailContent`, lo que inserta el archivo, actualiza los límites MIME y modifica los encabezados relevantes automáticamente.
-
-```java
-import java.io.FileInputStream;
-import java.io.InputStream;
-
-// Initialize input stream for the attachment file
-File attachmentFile = new File("YOUR_DOCUMENT_DIRECTORY/sample.msg");
-byte[] attachmentBytes = new byte[(int) attachmentFile.length()];
-InputStream attachmentInputStream = new FileInputStream(attachmentFile);
-
-// Read bytes from the attachment file
-attachmentInputStream.read(attachmentBytes);
-attachmentInputStream.close();
-```  
-
-## ¿Cómo guardo el mensaje de correo electrónico modificado?
-El método `save` del `Watermarker` escribe el contenido MIME actualizado a un nuevo archivo mientras preserva los encabezados y la codificación originales. Siempre especifica una ruta de salida e invoca `save` después de completar todas las modificaciones para garantizar que los cambios se persistan correctamente.
-
-```java
-String outputFilePath = "YOUR_OUTPUT_DIRECTORY/modified_message.msg";
-```  
-
-## Guía de implementación
-
-A continuación se muestra una guía paso a paso del flujo completo. Cada etapa incluye una breve explicación seguida del bloque de código original (sin cambios).
+## Step‑By‑Step Implementation
 
 ### Cargar mensaje de correo electrónico
+**¿Cómo cargar un mensaje de correo electrónico?**  
+Primero, importe las clases necesarias y cree una instancia de `Watermarker` con `EmailLoadOptions`.
 
-**Overview:** This section demonstrates how to load an email message into memory using GroupDocs.Watermark.
-
-#### Paso 1: Importar bibliotecas requeridas
 ```java
 import java.io.File;
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.EmailLoadOptions;
-```  
-
-#### Paso 2: Establecer la ruta y las opciones de carga  
-Specify the file path and create a `EmailLoadOptions` object to handle loading specifics.
+```
 
 ```java
 String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/message.msg";
 EmailLoadOptions loadOptions = new EmailLoadOptions();
 Watermarker watermarker = new Watermarker(emailFilePath, loadOptions);
-```  
+```
 
-En este punto, tu mensaje de correo está cargado en memoria y listo para manipularse.
+Su correo electrónico está ahora en memoria y listo para manipular.
 
-### Agregar adjunto al mensaje de correo electrónico
-
-**Overview:** Learn how to add an attachment to a previously loaded email message using GroupDocs.Watermark.
-
-#### Paso 1: Preparar el adjunto  
-First, create an `Attachment` instance that points to the file you want to embed.
+### Agregar archivo adjunto al mensaje de correo electrónico
+**¿Cómo agregar un archivo adjunto?**  
+Lea el archivo que desea adjuntar en un arreglo de bytes y luego agréguelo al contenido del correo.
 
 ```java
 import java.io.FileInputStream;
@@ -196,98 +112,75 @@ InputStream attachmentInputStream = new FileInputStream(attachmentFile);
 // Read bytes from the attachment file
 attachmentInputStream.read(attachmentBytes);
 attachmentInputStream.close();
-```  
-
-#### Paso 2: Añadir adjunto al contenido del correo  
-Retrieve the email content and add your attachment.
+```
 
 ```java
 import com.groupdocs.watermark.contents.EmailContent;
 
 EmailContent content = watermarker.getContent(EmailContent.class);
 content.getAttachments().add(attachmentBytes, "sample.msg");
-```  
+```
 
-El adjunto ahora está añadido al mensaje de correo electrónico.
+El archivo adjunto ahora forma parte del correo. Para agregar **múltiples archivos adjuntos Java**, repita la llamada `add` para cada archivo.
 
 ### Guardar cambios en el mensaje de correo electrónico
-
-**Overview:** This section covers how to save your changes and close the Watermarker instance correctly.
-
-#### Paso 1: Especificar ruta de salida  
-Choose a destination file name for the updated email.
+Después de modificar el correo, indique dónde se debe guardar el archivo actualizado y cierre el `Watermarker` para liberar recursos.
 
 ```java
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/modified_message.msg";
-```  
-
-#### Paso 2: Guardar y cerrar  
-Persist the changes and release resources.
+```
 
 ```java
 watermarker.save(outputFilePath);
 watermarker.close();
 The modified email message is saved, and resources are released by closing the `Watermarker`.
-```  
+```
 
-## Aplicaciones prácticas
-- **Email Archiving:** Automate the process of attaching documents to emails for record‑keeping.  
-- **Document Management Systems (DMS):** Enhance DMS by programmatically managing email attachments.  
-- **Secure Communication:** Add watermarks or digital signatures to email contents and attachments before sending.  
+## Practical Applications
+- **Archivado de correos:** Automatice la adjunción de PDFs, facturas o contratos a correos electrónicos para cumplimiento regulatorio.  
+- **Sistemas de gestión documental (DMS):** Envíe el contenido del correo y sus archivos adjuntos directamente a un DMS usando GroupDocs.Watermark.  
+- **Comunicación segura:** Combine marcas de agua con la gestión de adjuntos para garantizar autenticidad y trazabilidad.  
 
-La integración con sistemas CRM también puede lograrse, permitiendo un manejo fluido de las comunicaciones con clientes.
+## Performance Considerations
+- Utilice **streams con búfer** para archivos grandes y mantenga bajo el uso de memoria.  
+- Siempre llame a `watermarker.close()` después de guardar.  
+- Reutilice una única instancia de `Watermarker` al procesar varios correos en lote para reducir la sobrecarga.  
 
-## Consideraciones de rendimiento
-Para mantener tu aplicación responsiva al procesar correos electrónicos grandes:
+## Common Issues and Solutions
+| Problema | Solución |
+|-------|----------|
+| **OutOfMemoryError con archivos MSG grandes** | Lea los adjuntos usando un `BufferedInputStream` y procéselos en fragmentos. |
+| **El adjunto no aparece** | Asegúrese de que el arreglo de bytes representa correctamente el archivo y que el nombre del archivo incluye la extensión adecuada. |
+| **Excepción de licencia** | Verifique que el archivo de licencia temporal o completa esté correctamente colocado y referenciado en su proyecto. |
 
-- Stream data instead of loading whole files; GroupDocs.Watermark’s internal streaming reduces heap usage.  
-- Close `Watermarker` and any `InputStream` objects as soon as you’re done.  
-- For bulk operations, reuse a single `Watermarker` instance where thread‑safety permits.
+## Frequently Asked Questions
+**P: ¿Cómo manejo archivos de correo grandes?**  
+R: Utilice streams con búfer para leer el archivo en fragmentos más pequeños, lo que reduce el consumo de memoria.
 
-## Errores comunes y solución de problemas
-- **Missing Attachment After Save:** Ensure you call `watermarker.save(outputPath)` *after* adding the attachment; calling `save` too early writes the original content.  
-- **Unsupported File Types:** GroupDocs.Watermark supports 30+ formats; verify your attachment’s extension is listed in the official documentation.  
-- **License Errors:** A temporary license expires after 30 days. Switch to a permanent license before deployment to avoid runtime exceptions.
+**P: ¿Puedo agregar varios archivos adjuntos a la vez?**  
+R: Sí, itere sobre cada archivo y llame a `content.getAttachments().add(byteArray, fileName)` para cada adjunto.
 
-## Preguntas frecuentes
+**P: ¿Qué pasa si mi archivo de correo está encriptado?**  
+R: Desencripte el archivo primero usando la clave adecuada, luego cárguelo con `EmailLoadOptions`.
 
-**Q: How do I handle very large email files (over 100 MB)?**  
-A: Use `EmailLoadOptions` with streaming enabled and process the email in chunks; this keeps memory usage under 300 MB even for the biggest files.
+**P: ¿Cómo reemplazo un archivo adjunto existente?**  
+R: Elimine el adjunto antiguo mediante `content.getAttachments().remove(index)` y luego agregue el nuevo.
 
-**Q: Can I add multiple attachments in a single call?**  
-A: Yes – loop through a collection of file paths and invoke `addAttachment` for each; the library updates the MIME parts efficiently.
+**P: ¿Dónde puedo encontrar más ejemplos de GroupDocs.Watermark?**  
+R: Visite el [repositorio de GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java) para obtener más ejemplos de código.
 
-**Q: What if the email is password‑protected?**  
-A: Provide the password via `EmailLoadOptions.setPassword("yourPassword")` before loading; the library will decrypt the message automatically.
+## Resources
+- [Documentación](https://docs.groupdocs.com/watermark/java/)
+- [Referencia de API](https://reference.groupdocs.com/watermark/java)
+- [Descargar GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+- [Repositorio de GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Foro de soporte gratuito](https://forum.groupdocs.com/c/watermark/10)
+- [Licencia temporal](https://purchase.groupdocs.com/temporary-license/)
 
-**Q: Does GroupDocs.Watermark preserve existing email headers?**  
-A: Absolutely. All original headers (From, To, Subject, etc.) are retained unless you explicitly modify them.
-
-**Q: Where can I find more code samples?**  
-A: The official GitHub repository contains dozens of real‑world examples.  
-
-## Recursos
-- [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)  
-- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)  
-- [GroupDocs's licensing page](https://purchase.groupdocs.com/temporary-license/)  
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- [GitHub repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Documentation](https://docs.groupdocs.com/watermark/java/)  
-- [API Reference](https://reference.groupdocs.com/watermark/java)  
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
-
-## Conclusión
-Now you have a complete, production‑ready pattern for **add email attachment java** using GroupDocs.Watermark. By following the steps above, you can reliably load, modify, and save email messages while keeping memory usage low and preserving all original metadata. Integrate this workflow into your backend services, document pipelines, or CRM connectors to automate attachment handling at scale.
+Con esta guía, ahora tiene una base sólida para **gestionar archivos adjuntos de correo electrónico** programáticamente usando GroupDocs.Watermark en Java. ¡Feliz codificación!
 
 ---
 
-**Última actualización:** 2026-07-06  
-**Probado con:** GroupDocs.Watermark 23.9 for Java  
-**Autor:** GroupDocs
-
-## Tutoriales relacionados
-
-- [Procesamiento de adjuntos de correo electrónico Java con GroupDocs.Watermark: Guía completa](/watermark/java/email-document-watermarking/java-email-attachment-processing-groupdocs-watermark/)
-- [Cómo agregar marcas de agua a los adjuntos de correo electrónico usando GroupDocs.Watermark para Java](/watermark/java/email-document-watermarking/groupdocs-watermark-java-email-attachments/)
-- [Operaciones de carga y guardado de documentos con GroupDocs.Watermark para Java](/watermark/java/document-loading-saving/)
+**Last Updated:** 2026-01-08  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs
