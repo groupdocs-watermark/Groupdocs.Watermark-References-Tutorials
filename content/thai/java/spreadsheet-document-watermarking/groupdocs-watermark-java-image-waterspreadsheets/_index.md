@@ -33,10 +33,10 @@ schemas:
       (0‑100), contrast (0‑100), and optional border styling.'
   - name: Apply Effects and Add Watermark
     text: Link the configured effects to the `ImageWatermark` via its shaping options
-      before inserting it into the spreadsheet. CODE_BLOCK_PLACEHOLDER_8_END
+      before inserting it into the spreadsheet.
   - name: Save and Close
     text: Persist the changes and dispose of the `Watermarker` to free up Java heap
-      space. CODE_BLOCK_PLACEHOLDER_9_END
+      space.
   type: HowTo
 - questions:
   - answer: Yes. Load the file with `SpreadsheetLoadOptions` that includes the password,
@@ -247,11 +247,9 @@ public class FeatureApplyImageEffects {
 ```
 
 #### ขั้นตอนที่ 2: ใช้เอฟเฟกต์และเพิ่มน้ำลายน้ำ
-CODE_BLOCK_PLACEHOLDER_8_END
 
 #### ขั้นตอนที่ 3: บันทึกและปิด
 บันทึกการเปลี่ยนแปลงและทำลาย `Watermarker` เพื่อคืนพื้นที่ heap ของ Java.
-CODE_BLOCK_PLACEHOLDER_9_END
 
 ## การประยุกต์ใช้งานจริง
 1. **Corporate Branding:** ฝังโลโก้กึ่งโปร่งแสงบนรายงานการเงินรายไตรมาสเพื่อเสริมเอกลักษณ์แบรนด์ขณะแชร์ PDF ให้กับลูกค้า.  

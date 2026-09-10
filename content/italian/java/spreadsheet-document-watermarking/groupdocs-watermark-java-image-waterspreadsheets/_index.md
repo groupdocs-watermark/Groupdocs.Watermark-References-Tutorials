@@ -34,10 +34,10 @@ schemas:
       (0‑100), contrast (0‑100), and optional border styling.'
   - name: Apply Effects and Add Watermark
     text: Link the configured effects to the `ImageWatermark` via its shaping options
-      before inserting it into the spreadsheet. CODE_BLOCK_PLACEHOLDER_8_END
+      before inserting it into the spreadsheet.
   - name: Save and Close
     text: Persist the changes and dispose of the `Watermarker` to free up Java heap
-      space. CODE_BLOCK_PLACEHOLDER_9_END
+      space.
   type: HowTo
 - questions:
   - answer: Yes. Load the file with `SpreadsheetLoadOptions` that includes the password,
@@ -251,11 +251,9 @@ Applica modifiche visive creando un oggetto `SpreadsheetImageEffects`, impostand
 ```
 
 #### Passo 2: Applicare gli effetti e aggiungere la filigrana
-CODE_BLOCK_PLACEHOLDER_8_END
 
 #### Passo 3: Salvare e chiudere
 Persisti le modifiche e rilascia il `Watermarker` per liberare lo spazio heap di Java.
-CODE_BLOCK_PLACEHOLDER_9_END
 
 ## Applicazioni pratiche
 1. **Corporate Branding:** Inserisci un logo semitrasparente nei report finanziari trimestrali per rafforzare l'identità del marchio mentre condividi PDF con i clienti.  

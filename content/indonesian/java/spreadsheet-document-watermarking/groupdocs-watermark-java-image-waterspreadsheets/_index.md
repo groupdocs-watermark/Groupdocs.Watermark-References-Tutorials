@@ -34,10 +34,10 @@ schemas:
       (0‑100), contrast (0‑100), and optional border styling.'
   - name: Apply Effects and Add Watermark
     text: Link the configured effects to the `ImageWatermark` via its shaping options
-      before inserting it into the spreadsheet. CODE_BLOCK_PLACEHOLDER_8_END
+      before inserting it into the spreadsheet.
   - name: Save and Close
     text: Persist the changes and dispose of the `Watermarker` to free up Java heap
-      space. CODE_BLOCK_PLACEHOLDER_9_END
+      space.
   type: HowTo
 - questions:
   - answer: Yes. Load the file with `SpreadsheetLoadOptions` that includes the password,
@@ -253,12 +253,8 @@ Terapkan penyesuaian visual dengan membuat objek `SpreadsheetImageEffects`, meng
 #### Langkah 2: Terapkan Efek dan Tambahkan Watermark
 Tautkan efek yang telah dikonfigurasi ke `ImageWatermark` melalui opsi pembentukannya sebelum menyisipkannya ke dalam spreadsheet.
 
-CODE_BLOCK_PLACEHOLDER_8_END
-
 #### Langkah 3: Simpan dan Tutup
 Persist perubahan dan disposes `Watermarker` untuk membebaskan ruang heap Java.
-
-CODE_BLOCK_PLACEHOLDER_9_END
 
 ## Aplikasi Praktis
 1. **Branding Korporat:** Sematkan logo semi‑transparan pada laporan keuangan kuartalan untuk memperkuat identitas merek saat berbagi PDF dengan klien.  

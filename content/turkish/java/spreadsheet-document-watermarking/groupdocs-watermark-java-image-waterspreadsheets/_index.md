@@ -34,10 +34,10 @@ schemas:
       (0‑100), contrast (0‑100), and optional border styling.'
   - name: Apply Effects and Add Watermark
     text: Link the configured effects to the `ImageWatermark` via its shaping options
-      before inserting it into the spreadsheet. CODE_BLOCK_PLACEHOLDER_8_END
+      before inserting it into the spreadsheet.
   - name: Save and Close
     text: Persist the changes and dispose of the `Watermarker` to free up Java heap
-      space. CODE_BLOCK_PLACEHOLDER_9_END
+      space.
   type: HowTo
 - questions:
   - answer: Yes. Load the file with `SpreadsheetLoadOptions` that includes the password,
@@ -252,12 +252,8 @@ Görsel ince ayarları, bir `SpreadsheetImageEffects` nesnesi oluşturup istenen
 #### Adım 2: Efektleri Uygula ve Filigranı Ekle
 Yapılandırılmış efektleri, şekillendirme seçenekleri aracılığıyla `ImageWatermark` ile ilişkilendirin ve ardından elektronik tabloya ekleyin.
 
-CODE_BLOCK_PLACEHOLDER_8_END
-
 #### Adım 3: Kaydet ve Kapat
 Değişiklikleri kalıcı hale getirin ve Java yığın alanını boşaltmak için `Watermarker` nesnesini serbest bırakın.
-
-CODE_BLOCK_PLACEHOLDER_9_END
 
 ## Pratik Uygulamalar
 1. **Kurumsal Marka:** Çeyrek dönem finansal raporlarına yarı şeffaf bir logo ekleyerek marka kimliğini güçlendirin ve PDF'leri müşterilerle paylaşın.  

@@ -34,10 +34,10 @@ schemas:
       (0‑100), contrast (0‑100), and optional border styling.'
   - name: Apply Effects and Add Watermark
     text: Link the configured effects to the `ImageWatermark` via its shaping options
-      before inserting it into the spreadsheet. CODE_BLOCK_PLACEHOLDER_8_END
+      before inserting it into the spreadsheet.
   - name: Save and Close
     text: Persist the changes and dispose of the `Watermarker` to free up Java heap
-      space. CODE_BLOCK_PLACEHOLDER_9_END
+      space.
   type: HowTo
 - questions:
   - answer: Yes. Load the file with `SpreadsheetLoadOptions` that includes the password,
@@ -251,12 +251,8 @@ public class FeatureApplyImageEffects {
 #### Βήμα 2: Εφαρμογή Εφέ και Προσθήκη Υδατογραφήματος
 Συνδέστε τα διαμορφωμένα εφέ στο `ImageWatermark` μέσω των επιλογών σχήματος πριν το εισάγετε στο φύλλο εργασίας.
 
-CODE_BLOCK_PLACEHOLDER_8_END
-
 #### Βήμα 3: Αποθήκευση και Κλείσιμο
 Διατηρήστε τις αλλαγές και απελευθερώστε το `Watermarker` για να ελευθερώσετε χώρο στη μνήμη Java.
-
-CODE_BLOCK_PLACEHOLDER_9_END
 
 ## Πρακτικές Εφαρμογές
 1. **Corporate Branding:** Ενσωματώστε ένα ημιδιαφανές λογότυπο σε τριμηνιαίες οικονομικές αναφορές για ενίσχυση της εταιρικής ταυτότητας ενώ μοιράζεστε PDFs με πελάτες.  

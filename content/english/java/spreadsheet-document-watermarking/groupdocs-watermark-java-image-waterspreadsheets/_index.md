@@ -37,10 +37,10 @@ schemas:
       (0‑100), contrast (0‑100), and optional border styling.'
   - name: Apply Effects and Add Watermark
     text: Link the configured effects to the `ImageWatermark` via its shaping options
-      before inserting it into the spreadsheet. CODE_BLOCK_PLACEHOLDER_8_END
+      before inserting it into the spreadsheet.
   - name: Save and Close
     text: Persist the changes and dispose of the `Watermarker` to free up Java heap
-      space. CODE_BLOCK_PLACEHOLDER_9_END
+      space.
 - type: FAQPage
   questions:
   - question: Can I watermark password‑protected spreadsheets?
@@ -249,12 +249,8 @@ Apply visual tweaks by creating a `SpreadsheetImageEffects` object, setting desi
 #### Step 2: Apply Effects and Add Watermark
 Link the configured effects to the `ImageWatermark` via its shaping options before inserting it into the spreadsheet.
 
-CODE_BLOCK_PLACEHOLDER_8_END
-
 #### Step 3: Save and Close
 Persist the changes and dispose of the `Watermarker` to free up Java heap space.
-
-CODE_BLOCK_PLACEHOLDER_9_END
 
 ## Practical Applications
 1. **Corporate Branding:** Embed a semi‑transparent logo on quarterly financial reports to reinforce brand identity while sharing PDFs with clients.  

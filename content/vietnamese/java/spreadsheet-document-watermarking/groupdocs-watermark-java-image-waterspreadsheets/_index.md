@@ -34,10 +34,10 @@ schemas:
       (0‑100), contrast (0‑100), and optional border styling.'
   - name: Apply Effects and Add Watermark
     text: Link the configured effects to the `ImageWatermark` via its shaping options
-      before inserting it into the spreadsheet. CODE_BLOCK_PLACEHOLDER_8_END
+      before inserting it into the spreadsheet.
   - name: Save and Close
     text: Persist the changes and dispose of the `Watermarker` to free up Java heap
-      space. CODE_BLOCK_PLACEHOLDER_9_END
+      space.
   type: HowTo
 - questions:
   - answer: Yes. Load the file with `SpreadsheetLoadOptions` that includes the password,
@@ -252,12 +252,8 @@ public class FeatureApplyImageEffects {
 #### Bước 2: Áp dụng hiệu ứng và thêm dấu nước
 Liên kết các hiệu ứng đã cấu hình với `ImageWatermark` qua các tùy chọn hình dạng trước khi chèn vào bảng tính.
 
-CODE_BLOCK_PLACEHOLDER_8_END
-
 #### Bước 3: Lưu và Đóng
 Persist the changes and dispose of the `Watermarker` to free up Java heap space.
-
-CODE_BLOCK_PLACEHOLDER_9_END
 
 ## Ứng dụng thực tiễn
 1. **Thương hiệu doanh nghiệp:** Nhúng logo bán trong suốt vào báo cáo tài chính hàng quý để củng cố nhận diện thương hiệu khi chia sẻ PDF với khách hàng.  
