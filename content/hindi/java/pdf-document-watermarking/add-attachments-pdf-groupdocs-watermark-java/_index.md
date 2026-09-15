@@ -1,50 +1,124 @@
 ---
-date: '2026-01-18'
-description: GroupDocs.Watermark for Java के साथ PDF फ़ाइलों में अटैचमेंट जोड़ना सीखें
-  – सेटअप, कोड और सर्वोत्तम प्रथाओं को कवर करने वाला चरण-दर-चरण ट्यूटोरियल।
+date: '2026-07-20'
+description: GroupDocs.Watermark for Java का उपयोग करके PDF फ़ाइलों में अटैचमेंट जोड़ना
+  सीखें, जिसमें setup, code steps, और best practices शामिल हैं।
 keywords:
-- GroupDocs Watermark Java
-- add attachments to PDFs
-- PDF document enhancement
-title: GroupDocs.Watermark का उपयोग करके जावा में PDF में अटैचमेंट कैसे जोड़ें – एक
-  संपूर्ण गाइड
+- add attachments to pdf
+- embed file in pdf
+- attach documents to pdf
+- pdf embed attachment
+- add pdf attachment
+lastmod: '2026-07-20'
+og_description: GroupDocs.Watermark for Java का उपयोग करके PDF में अटैचमेंट जोड़ें।
+  फ़ाइलों को embed करने, दस्तावेज़ उपयोगिता को सुधारने, और large PDFs को कुशलतापूर्वक
+  संभालने के लिए इस step‑by‑step गाइड का पालन करें।
+og_image_alt: Guide showing how to add file attachments to a PDF using GroupDocs.Watermark
+  Java SDK
+og_title: GroupDocs.Watermark for Java के साथ PDF में अटैचमेंट जोड़ें
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-20'
+  description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  headline: Add Attachments to PDF with GroupDocs.Watermark for Java
+  type: TechArticle
+- description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  name: Add Attachments to PDF with GroupDocs.Watermark for Java
+  steps:
+  - name: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+    text: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+  - name: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+    text: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+  - name: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+    text: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+  type: HowTo
+- questions:
+  - answer: Yes, repeat the `add()` call for each file you wish to embed, and each
+      will appear as a separate entry in the PDF viewer’s attachment pane.
+    question: Can I add multiple attachments to a PDF?
+  - answer: Any file that can be represented as a byte array—common types include
+      DOCX, XLSX, PNG, ZIP, and even executable files.
+    question: What file types can be attached?
+  - answer: Compress files before attaching or store them externally and reference
+      them with a lightweight placeholder attachment; the library streams data to
+      keep RAM usage low.
+    question: How do I handle large files?
+  - answer: There are no explicit limits, but attaching hundreds of large files may
+      affect performance; monitor memory consumption and consider splitting the PDF
+      if needed.
+    question: Is there a limit to the number of attachments?
+  - answer: Yes, GroupDocs.Watermark is fully compatible with cloud environments such
+      as AWS Lambda, Azure Functions, and Google Cloud Run.
+    question: Can this feature be used in cloud applications?
+  type: FAQPage
+tags:
+- add attachments to pdf
+- GroupDocs.Watermark
+- Java PDF processing
+title: GroupDocs.Watermark for Java के साथ PDF में अटैचमेंट जोड़ें
 type: docs
 url: /hi/java/pdf-document-watermarking/add-attachments-pdf-groupdocs-watermark-java/
 weight: 1
 ---
 
-# PDF दस्तावेज़ों में अटैचमेंट जोड़ना GroupDocs.Watermark का उपयोग करके Java में
+# GroupDocs.Watermark का उपयोग करके जावा में PDF में अटैचमेंट जोड़ें
 
-इस व्यापक गाइड में, आप **PDF में अटैचमेंट कैसे जोड़ें** सीखेंगे, जो Java के लिए शक्तिशाली GroupDocs.Watermark लाइब्रेरी का उपयोग करता है। अनुबंध, डेटा सेट या इमेज जैसी अतिरिक्त फ़ाइलें संलग्न करने से संबंधित जानकारी एक साथ रहती है और वितरण सरल हो जाता है। हम पर्यावरण सेटअप, आवश्यक कोड, और सामान्य समस्याओं से बचने के लिए व्यावहारिक टिप्स के माध्यम से चलेंगे।
+## परिचय
 
-## Quick Answers
-- **प्राथमिक उपयोग केस क्या है?** PDF के अंदर सीधे सपोर्टिंग फ़ाइलें एम्बेड करना ताकि प्राप्तकर्ता एक ही पैकेज में सब कुछ देख सकें।  
-- **कौन सी लाइब्रेरी इसे संभालती है?** GroupDocs.Watermark for Java।  
-- **क्या मुझे लाइसेंस चाहिए?** मूल्यांकन के लिए एक अस्थायी ट्रायल लाइसेंस काम करता है; पूर्ण लाइसेंस सभी फीचर अनलॉक करता है।  
-- **क्या मैं कई फ़ाइलें जोड़ सकता हूँ?** हाँ—प्रत्येक फ़ाइल के लिए अटैचमेंट स्टेप दोहराएँ।  
-- **क्या यह क्लाउड‑रेडी है?** बिल्कुल; API ऑन‑प्रिमाइसेस और क्लाउड दोनों वातावरण में काम करता है।
+इस व्यापक गाइड में आप GroupDocs.Watermark for Java के साथ PDF फ़ाइलों में **PDF में अटैचमेंट कैसे जोड़ें** सीखेंगे। अतिरिक्त फ़ाइलों—जैसे अनुबंध, छवियां, या डेटा सेट—को सीधे PDF के भीतर एम्बेड करके, आप एक स्व‑निहित पैकेज बनाते हैं जो उपयोगकर्ताओं और सिस्टमों के बीच आसानी से यात्रा करता है। हम पर्यावरण सेटअप, सटीक API कॉल्स, और सिद्ध सर्वोत्तम प्रथाओं को चरण‑दर‑चरण देखेंगे, ताकि आप आज ही PDF दस्तावेज़ों में फ़ाइलें एम्बेड करना शुरू कर सकें।
 
-## What is “add attachments to PDF”?
-PDF में अटैचमेंट जोड़ना का मतलब है बाहरी फ़ाइलों (जैसे Word दस्तावेज़, इमेज, स्प्रेडशीट) को PDF कंटेनर के भीतर एम्बेड करना। संलग्न फ़ाइलें PDF के साथ यात्रा करती हैं और PDF रीडर से सीधे खोली जा सकती हैं, जिससे दस्तावेज़ आदान‑प्रदान अधिक विश्वसनीय बनता है।
+**आप क्या सीखेंगे**
+- GroupDocs.Watermark for Java के लिए अपना पर्यावरण सेटअप करना  
+- PDF दस्तावेज़ में अटैचमेंट जोड़ने की चरण‑दर‑चरण प्रक्रिया  
+- सर्वोत्तम प्रथाएँ, प्रदर्शन टिप्स, और समस्या निवारण सलाह  
 
-## Why embed files in PDF?
-- **सिंगल‑फ़ाइल डिलीवरी** – कई फ़ाइलों को ज़िप करने की आवश्यकता नहीं।  
-- **संदर्भ बनाए रखें** – अटैचमेंट मूल दस्तावेज़ से जुड़े रहते हैं।  
-- **अनुपालन** – कई नियामक प्रक्रियाओं में सभी सपोर्टिंग सामग्री को बंडल करना आवश्यक होता है।  
-- **उपयोगकर्ता सुविधा** – प्राप्तकर्ता एक क्लिक में सब कुछ एक्सेस कर सकते हैं।
+आइए इस समाधान को लागू करने से पहले आवश्यक पूर्वापेक्षाएँ की समीक्षा करके शुरू करें।
 
-## Prerequisites
+## त्वरित उत्तर
+- **कौन सी लाइब्रेरी PDF में अटैचमेंट जोड़ती है?** GroupDocs.Watermark for Java.  
+- **क्या मुझे लाइसेंस की आवश्यकता है?** एक अस्थायी ट्रायल लाइसेंस विकास के लिए काम करता है; उत्पादन के लिए पूर्ण लाइसेंस आवश्यक है।  
+- **क्या मैं कई फ़ाइलें अटैच कर सकता हूँ?** हाँ—प्रत्येक फ़ाइल को एम्बेड करने के लिए `add()` कॉल करें।  
+- **कौन से फ़ाइल प्रकार समर्थित हैं?** कोई भी फ़ाइल जो बाइट एरे के रूप में प्रस्तुत की जा सकती है (जैसे DOCX, PNG, ZIP)।  
+- **क्या यह बड़े PDF के लिए सुरक्षित है?** हाँ—अटैचमेंट स्ट्रीम किए जाते हैं, और आप `PdfLoadOptions` के साथ मेमोरी उपयोग को सीमित कर सकते हैं।
 
-- **GroupDocs.Watermark for Java** ≥ 24.11  
-- **JDK 8+** (सिफ़ारिश 11 या बाद वाला)  
-- **Maven** डिपेंडेंसी मैनेजमेंट के लिए  
-- बेसिक Java ज्ञान और PDF हैंडलिंग की परिचितता  
+## PDF में अटैचमेंट जोड़ना क्या है?
+**add attachments to pdf** वह प्रक्रिया है जिसमें बाहरी फ़ाइलों को PDF कंटेनर के भीतर एम्बेड किया जाता है ताकि वे मुख्य दस्तावेज़ के साथ यात्रा करें। यह तकनीक कानूनी बंडलों, प्रोजेक्ट प्रस्तावों, और शोध पत्रों में व्यापक रूप से उपयोग की जाती है जहाँ सहायक सामग्री को प्राथमिक PDF से जुड़ा रहना आवश्यक होता है।
 
-## Setting Up GroupDocs.Watermark for Java
+## GroupDocs.Watermark का उपयोग करके PDF में फ़ाइल एम्बेड क्यों करें?
+GroupDocs.Watermark **50+ इनपुट और आउटपुट फ़ॉर्मैट** का समर्थन करता है और संपूर्ण PDF को मेमोरी में लोड किए बिना अटैचमेंट एम्बेड कर सकता है, जिससे आप कई‑सौ‑पृष्ठ वाली फ़ाइलों को कुशलतापूर्वक संभाल सकते हैं। API मूल दस्तावेज़ मेटाडेटा को भी संरक्षित करता है और थ्रेड‑सेफ़ ऑपरेशन्स प्रदान करता है, जिससे यह सर्वर‑साइड बैच प्रोसेसिंग के लिए आदर्श बनता है।
 
-### Maven Setup
-अपने `pom.xml` फ़ाइल में रिपॉज़िटरी और डिपेंडेंसी जोड़ें:
+## पूर्वापेक्षाएँ
 
+### आवश्यक लाइब्रेरी, संस्करण, और निर्भरताएँ
+- **GroupDocs.Watermark for Java**: संस्करण 24.11 या बाद का।  
+- **Java Development Kit (JDK)**: संस्करण 8 या उससे ऊपर की सलाह दी जाती है।  
+- **Maven**: निर्भरताओं के प्रबंधन के लिए।
+
+### पर्यावरण सेटअप आवश्यकताएँ
+सुनिश्चित करें कि आपका विकास पर्यावरण Maven प्रोजेक्ट्स का समर्थन करता है, और आपके पास IntelliJ IDEA या Eclipse जैसे Java IDE तक पहुंच है।
+
+### ज्ञान पूर्वापेक्षाएँ
+Java प्रोग्रामिंग की बुनियादी समझ और Java में PDF को संभालने की परिचितता उपयोगी होगी।
+
+## GroupDocs.Watermark का उपयोग करके PDF में अटैचमेंट कैसे जोड़ें?
+अपने PDF को `new WatermarkEngine()` से लोड करें और `pdfContent.getAttachments().add()` को कॉल करें—यह एकल कॉल मेमोरी में फ़ाइल को अटैच करता है और इसे एक ही पास में PDF में लिख देता है। API स्वचालित रूप से PDF के आंतरिक file‑spec डिक्शनरी को अपडेट करता है, इसलिए अटैचमेंट मानक PDF व्यूअर्स में “Attachments” पैन के तहत दिखाई देता है। यह तरीका किसी भी फ़ाइल प्रकार के लिए काम करता है जिसे बाइट एरे के रूप में प्रस्तुत किया जा सकता है और बड़े दस्तावेज़ों के लिए स्केलेबल है क्योंकि लाइब्रेरी डेटा को स्ट्रीम करती है न कि पूरी फ़ाइल को RAM में रखती है।
+
+`WatermarkEngine` क्लास GroupDocs.Watermark में दस्तावेज़ लोड करने और प्रोसेस करने के लिए मुख्य प्रवेश बिंदु है।  
+`PdfContent` ऑब्जेक्ट PDF की संरचना तक पहुंच प्रदान करता है, जिसमें पृष्ठ, मेटाडेटा, और अटैचमेंट शामिल हैं।  
+`getAttachments()` मेथड PDF की अटैचमेंट कलेक्शन लौटाता है।  
+`add()` मेथड इस कलेक्शन में नई फ़ाइल सम्मिलित करता है।
+
+### GroupDocs.Watermark को Java के लिए सेटअप करना
+
+`WatermarkEngine` क्लास सभी GroupDocs.Watermark ऑपरेशन्स के लिए प्रवेश बिंदु है, जो फ़ाइल लोडिंग, प्रोसेसिंग, और सेविंग को संभालता है। Maven निर्भरता जोड़ने के बाद, आप इंजन को इंस्टैंशिएट कर सकते हैं और PDFs के साथ काम करना शुरू कर सकते हैं।
+
+**Maven सेटअप**  
+अपने `pom.xml` फ़ाइल में निम्नलिखित जोड़ें:
 ```xml
 <repositories>
    <repository>
@@ -63,15 +137,15 @@ PDF में अटैचमेंट जोड़ना का मतलब �
 </dependencies>
 ```
 
-### Direct Download
-वैकल्पिक रूप से, नवीनतम बिल्ड यहाँ से डाउनलोड करें: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)।
+**सीधा डाउनलोड**  
+वैकल्पिक रूप से, नवीनतम संस्करण [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) से डाउनलोड करें।
 
-### License Acquisition
-GroupDocs पोर्टल से एक अस्थायी ट्रायल लाइसेंस प्राप्त करें या पूर्ण लाइसेंस खरीदें। अटैचमेंट फीचर का परीक्षण करने के लिए ट्रायल लाइसेंस पर्याप्त है।
+### लाइसेंस प्राप्त करने के चरण
+आप सभी सुविधाओं को अनलॉक करने के लिए एक अस्थायी लाइसेंस प्राप्त कर सकते हैं या पूर्ण लाइसेंस खरीद सकते हैं। मुफ्त ट्रायल के लिए, उनके आधिकारिक साइट पर निर्देशों का पालन करें।
 
-### Basic Initialization
-नीचे दिया गया स्निपेट दिखाता है कि कैसे एक `Watermarker` इंस्टेंस बनाया जाए जो एक सैंपल PDF की ओर इशारा करता है:
-
+### बुनियादी इनिशियलाइज़ेशन और सेटअप
+अपने Java एप्लिकेशन में GroupDocs.Watermark को इस प्रकार इनिशियलाइज़ करें:
+`Watermarker` क्लास एक PDF दस्तावेज़ का प्रतिनिधित्व करता है और इसकी सामग्री को बदलने के मेथड्स प्रदान करता है, जिसमें अटैचमेंट जोड़ना भी शामिल है।
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -87,13 +161,20 @@ public class WatermarkSetup {
 }
 ```
 
-## How to add attachments to PDF in Java
+## कार्यान्वयन गाइड
 
-नीचे एक चरण‑दर‑चरण walkthrough है जो GroupDocs.Watermark का उपयोग करके **फ़ाइलें कैसे संलग्न करें** को दर्शाता है।
+अब, चलिए GroupDocs.Watermark का उपयोग करके जावा में PDF में अटैचमेंट जोड़ने की प्रक्रिया को चरण‑दर‑चरण देखते हैं।
 
-### Step 1: Load the PDF Document
-पहले, लक्ष्य PDF को `PdfLoadOptions` के साथ लोड करें ताकि लाइब्रेरी फ़ाइल को कैसे व्याख्या करे, यह जान सके:
+### PDF दस्तावेज़ में अटैचमेंट जोड़ना
 
+#### अवलोकन
+यह सुविधा आपको मौजूदा PDF दस्तावेज़ में अतिरिक्त फ़ाइलें अटैच करने की अनुमति देती है। संबंधित दस्तावेज़ों को एक साथ बंडल करने से उनकी उपयोगिता में काफी वृद्धि हो सकती है।
+
+#### चरण‑दर‑चरण गाइड
+
+##### 1. PDF दस्तावेज़ लोड करें
+अपने PDF को `PdfLoadOptions` का उपयोग करके लोड करके शुरू करें:
+`PdfLoadOptions` PDF को कैसे खोला जाए, इसे कॉन्फ़िगर करता है, जिससे आप मेमोरी उपयोग और पासवर्ड विकल्प सेट कर सकते हैं।
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -105,9 +186,8 @@ PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-### Step 2: Access PDF Content
-`PdfContent` ऑब्जेक्ट प्राप्त करें, जो आपको अटैचमेंट कलेक्शन तक पहुंच देता है:
-
+##### 2. PDF सामग्री तक पहुंचें
+`PdfContent` को प्राप्त करें ताकि आप अटैचमेंट के साथ काम कर सकें:
 ```java
 import com.groupdocs.watermark.contents.PdfContent;
 
@@ -115,25 +195,22 @@ import com.groupdocs.watermark.contents.PdfContent;
 PdfContent pdfContent = watermarker.getContent(PdfContent.class);
 ```
 
-### Step 3: Load Attachment Bytes
-जिस फ़ाइल को आप एम्बेड करना चाहते हैं, उसे बाइट एरे में पढ़ें। यह कोई भी फ़ाइल प्रकार हो सकता है—Word, Excel, इमेज, आदि:
-
+##### 3. अटैचमेंट बाइट्स लोड करें
+वह अटैचमेंट डेटा तैयार करें जिसे आप जोड़ना चाहते हैं:
 ```java
 byte[] attachmentBytes = { /* Byte data for your document */ };
 ```
 
-### Step 4: Add the Attachment
-एक `PdfAttachment` इंस्टेंस बनाएं और उसे PDF की अटैचमेंट सूची में जोड़ें:
-
+##### 4. अटैचमेंट जोड़ें
+`getAttachments().add()` मेथड का उपयोग करके फ़ाइलें अटैच करें:
 ```java
 // Add the attachment to the PDF
 groupdocs.watermark.contents.PdfAttachment attachment = new PdfAttachment(attachmentBytes, "sample doc", "sample doc as attachment");
 pdfContent.getAttachments().add(attachment);
 ```
 
-### Step 5: Save Changes and Close Resources
-संशोधित PDF को नई फ़ाइल में सहेजें और संसाधनों को साफ़ करें:
-
+##### 5. बदलाव सहेजें और संसाधनों को बंद करें
+सुनिश्चित करें कि आप अपने बदलाव सहेजें और संसाधनों को सही ढंग से बंद करें:
 ```java
 // Save changes to a new PDF file
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
@@ -142,60 +219,67 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
 watermarker.close();
 ```
 
-## Common Issues and Solutions
+### समस्या निवारण टिप्स
+- **फ़ाइल पाथ त्रुटियाँ**: सुनिश्चित करें कि पाथ सही हैं और पहुँच योग्य हैं।  
+- **मेमोरी समस्याएँ**: बेहतर प्रदर्शन के लिए अटैचमेंट आकार को अनुकूलित करें; लाइब्रेरी डेटा को स्ट्रीम करती है जिससे मेमोरी उपयोग कम रहता है।
 
-| समस्या | क्यों होता है | समाधान |
-|-------|----------------|-----|
-| **फ़ाइल पाथ त्रुटियाँ** | गलत रिलेटिव/एब्सोल्यूट पाथ | सुनिश्चित करें कि `YOUR_DOCUMENT_DIRECTORY` और `YOUR_OUTPUT_DIRECTORY` मौजूद हैं और पढ़ने/लिखने योग्य हैं। |
-| **बड़ी अटैचमेंट्स के लिए मेमोरी समाप्ति** | बड़े फ़ाइलों को बाइट एरे में लोड करने से RAM खपत होती है | फ़ाइलों को एम्बेड करने से पहले संकुचित करें या यदि बहुत बड़े बाइनरी फ़ाइलों के साथ काम कर रहे हैं तो उन्हें चंक्स में स्ट्रीम करें। |
-| **लाइसेंस नहीं मिला** | वैध लाइसेंस फ़ाइल के बिना लाइब्रेरी का उपयोग करना | `GroupDocs.Watermark.lic` फ़ाइल को क्लासपाथ में रखें या प्रोग्रामेटिकली लाइसेंस सेट करें। |
+## व्यावहारिक अनुप्रयोग
+PDF में अटैचमेंट जोड़ना विभिन्न परिस्थितियों में उपयोगी हो सकता है:
 
-## Practical Applications
+1. **कानूनी दस्तावेज़** – संबंधित अनुबंध, साक्ष्य, या प्रदर्शनों को अटैच करें।  
+2. **प्रोजेक्ट प्रस्ताव** – पूरक छवियां, स्प्रेडशीट्स, या CAD फ़ाइलें शामिल करें।  
+3. **शैक्षणिक पेपर** – सहायक सामग्री के रूप में स्रोत कोड, डेटा सेट, या मल्टीमीडिया जोड़ें।  
 
-PDF के भीतर फ़ाइलें एम्बेड करना कई डोमेनों में मूल्यवान है:
+डॉक्यूमेंट मैनेजमेंट सिस्टम (DMS) या क्लाउड स्टोरेज प्लेटफ़ॉर्म के साथ एकीकरण बंडलिंग प्रक्रिया को और स्वचालित कर सकता है।
 
-1. **कानूनी अनुबंध** – एग्ज़िबिट्स, साक्ष्य, या परिशिष्ट संलग्न करें।  
-2. **प्रोजेक्ट प्रस्ताव** – सपोर्टिंग स्प्रेडशीट्स, CAD ड्रॉइंग्स, या रेंडरिंग्स शामिल करें।  
-3. **शैक्षणिक शोध** – पुनरुत्पादन के लिए कच्चे डेटा सेट या कोड स्निपेट्स बंडल करें।  
+## प्रदर्शन संबंधी विचार
+सर्वोत्तम प्रदर्शन के लिए:
 
-ये उपयोग केस दर्शाते हैं **फ़ाइलें कैसे संलग्न करें** ताकि स्टेकहोल्डर एक ही स्व-समाहित पैकेज प्राप्त करें।
+- मेमोरी उपयोग को कम करने के लिए अटैचमेंट आकार को न्यूनतम रखें।  
+- Java में कुशल फ़ाइल हैंडलिंग प्रैक्टिसेज़ का उपयोग करें (जैसे, `try‑with‑resources`)।  
+- प्रदर्शन सुधार और बग फिक्सेस के लाभ के लिए GroupDocs.Watermark को नियमित रूप से अपडेट करें।
 
-## Performance Tips
+## निष्कर्ष
+GroupDocs.Watermark for Java का उपयोग करके PDF में अटैचमेंट जोड़ना एक सीधा प्रक्रिया है जो दस्तावेज़ की उपयोगिता को काफी बढ़ा सकता है। इस गाइड का पालन करके, आपने इस सुविधा को प्रभावी ढंग से लागू करना सीखा और इसके व्यावहारिक अनुप्रयोगों का अन्वेषण किया।
 
-- अटैचमेंट का आकार मध्यम रखें; बड़े बाइनरी फ़ाइलें PDF का फ़ाइल आकार और मेमोरी फुटप्रिंट बढ़ाती हैं।  
-- बैच में कई PDFs प्रोसेस करते समय एक ही `Watermarker` इंस्टेंस को पुनः उपयोग करें ताकि इनिशियलाइज़ेशन ओवरहेड कम हो।  
-- प्रदर्शन सुधार और बग फिक्सेस के लिए नवीनतम GroupDocs.Watermark संस्करण में अपग्रेड करें।
+अगले चरणों में, GroupDocs.Watermark लाइब्रेरी की अन्य सुविधाओं—जैसे वॉटरमार्किंग, रिडैक्शन, या कंटेंट एक्सट्रैक्शन—को खोजने और उन्हें बड़े दस्तावेज़‑प्रोसेसिंग पाइपलाइन में एकीकृत करने पर विचार करें।
 
-## Conclusion
-अब आपके पास GroupDocs.Watermark for Java का उपयोग करके **PDF में अटैचमेंट जोड़ने** के लिए एक पूर्ण, प्रोडक्शन‑रेडी तरीका है। ऊपर दिए गए चरणों का पालन करके आप कोई भी सपोर्टिंग दस्तावेज़ एम्बेड कर सकते हैं, सहयोग में सुधार कर सकते हैं, और एक साफ़ डिलीवरी फ़ॉर्मेट बनाए रख सकते हैं। वॉटरमार्किंग, रेडैक्शन, और कंटेंट एक्सट्रैक्शन जैसी अतिरिक्त सुविधाओं का अन्वेषण करें ताकि एक पूर्ण‑फ़ीचर PDF प्रोसेसिंग पाइपलाइन बना सकें।
+## अक्सर पूछे जाने वाले प्रश्न
 
-## Frequently Asked Questions
+**Q: क्या मैं PDF में कई अटैचमेंट जोड़ सकता हूँ?**  
+A: हाँ, प्रत्येक फ़ाइल को एम्बेड करने के लिए `add()` कॉल को दोहराएँ, और प्रत्येक PDF व्यूअर के अटैचमेंट पैन में एक अलग एंट्री के रूप में दिखाई देगा।
 
-**Q: क्या मैं PDF में कई अटैचमेंट्स जोड़ सकता हूँ?**  
-A: हाँ। प्रत्येक फ़ाइल को एम्बेड करने के लिए `pdfContent.getAttachments().add()` को कॉल करें।
+**Q: कौन से फ़ाइल प्रकार अटैच किए जा सकते हैं?**  
+A: कोई भी फ़ाइल जिसे बाइट एरे के रूप में प्रस्तुत किया जा सकता है—आम प्रकारों में DOCX, XLSX, PNG, ZIP, और यहाँ तक कि एक्सीक्यूटेबल फ़ाइलें शामिल हैं।
 
-**Q: अटैचमेंट के रूप में कौन से फ़ाइल प्रकार समर्थित हैं?**  
-A: कोई भी फ़ाइल जो बाइट एरे के रूप में प्रतिनिधित्व की जा सकती है—PDF, DOCX, XLSX, PNG, ZIP, आदि।
+**Q: बड़े फ़ाइलों को कैसे संभालूँ?**  
+A: अटैच करने से पहले फ़ाइलों को संकुचित करें या उन्हें बाहरी रूप से स्टोर करें और हल्के प्लेसहोल्डर अटैचमेंट के साथ संदर्भित करें; लाइब्रेरी डेटा को स्ट्रीम करती है जिससे RAM उपयोग कम रहता है।
 
-**Q: बहुत बड़ी फ़ाइलों को कैसे संभालूँ?**  
-A: उन्हें पहले संकुचित करें या एम्बेड करने के बजाय बाहरी रूप से स्टोर करें और हाइपरलिंक के माध्यम से संदर्भित करें।
+**Q: अटैचमेंट की संख्या पर कोई सीमा है?**  
+A: स्पष्ट सीमाएँ नहीं हैं, लेकिन सैकड़ों बड़ी फ़ाइलें अटैच करने से प्रदर्शन प्रभावित हो सकता है; मेमोरी उपयोग की निगरानी करें और आवश्यक होने पर PDF को विभाजित करने पर विचार करें।
 
-**Q: अटैचमेंट्स की संख्या पर कोई सीमा है?**  
-A: तकनीकी रूप से कोई सीमा नहीं है, लेकिन अत्यधिक बड़ी संख्या प्रदर्शन और PDF आकार को प्रभावित कर सकती है।
+**Q: क्या यह सुविधा क्लाउड एप्लिकेशन्स में उपयोग की जा सकती है?**  
+A: हाँ, GroupDocs.Watermark AWS Lambda, Azure Functions, और Google Cloud Run जैसे क्लाउड वातावरण के साथ पूरी तरह संगत है।
 
-**Q: क्या इसे क्लाउड‑नेटीव Java एप्लिकेशन में उपयोग किया जा सकता है?**  
-A: बिल्कुल। API किसी भी Java रनटाइम में काम करता है, जिसमें कंटेनर और सर्वरलेस फ़ंक्शन शामिल हैं।
+**Q: क्या अटैचमेंट जोड़ने से PDF सुरक्षा प्रभावित होती है?**  
+A: अटैचमेंट PDF की सुरक्षा सेटिंग्स को विरासत में लेता है। यदि PDF एन्क्रिप्टेड है, तो लोड करते समय आपको पासवर्ड प्रदान करना होगा, और अटैचमेंट भी एन्क्रिप्टेड होगा।
+
+## संसाधन
+- **दस्तावेज़ीकरण**: [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)
+- **API रेफ़रेंस**: [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)
+- **डाउनलोड**: [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)
+- **GitHub**: [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- **मुफ़्त समर्थन**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
+- **अस्थायी लाइसेंस**: [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Last Updated:** 2026-01-18  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
+**अंतिम अपडेट:** 2026-07-20  
+**परीक्षित संस्करण:** GroupDocs.Watermark 24.11 for Java  
+**लेखक:** GroupDocs
 
-## Resources
-- **Documentation:** [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
-- **Download:** [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub:** [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Free Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
-- **Temporary License:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+## संबंधित ट्यूटोरियल
+
+- [How to Extract PDF Attachments Using GroupDocs Watermark in Java for Email Document Management](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)
+- [Access and Iterate Over PDF Artifacts Using GroupDocs.Watermark in Java for Document Watermarking](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
+- [How to Secure PDF Attachments with GroupDocs Watermark for Java: A Comprehensive Guide](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-attachments/)

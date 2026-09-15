@@ -1,53 +1,125 @@
 ---
-date: '2026-01-18'
-description: Tanulja meg, hogyan adhat hozzá mellékleteket PDF-fájlokhoz a GroupDocs.Watermark
-  for Java segítségével – lépésről‑lépésre útmutató a beállításról, a kódról és a
-  legjobb gyakorlatokról.
+date: '2026-07-20'
+description: Ismerje meg, hogyan adhat mellékleteket PDF-fájlokhoz a GroupDocs.Watermark
+  for Java használatával, beleértve a beállítást, a kódlépéseket és a legjobb gyakorlatokat.
 keywords:
-- GroupDocs Watermark Java
-- add attachments to PDFs
-- PDF document enhancement
-title: Hogyan adjunk hozzá csatolmányokat PDF-hez a GroupDocs.Watermark Java használatával
-  – Teljes útmutató
+- add attachments to pdf
+- embed file in pdf
+- attach documents to pdf
+- pdf embed attachment
+- add pdf attachment
+lastmod: '2026-07-20'
+og_description: Mellékletek hozzáadása PDF-hez a GroupDocs.Watermark for Java használatával.
+  Kövesse ezt a lépésről‑lépésre útmutatót a fájlok beágyazásához, a dokumentumhasználat
+  javításához és a nagy PDF-ek hatékony kezeléséhez.
+og_image_alt: Guide showing how to add file attachments to a PDF using GroupDocs.Watermark
+  Java SDK
+og_title: Mellékletek hozzáadása PDF-hez a GroupDocs.Watermark for Java segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-20'
+  description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  headline: Add Attachments to PDF with GroupDocs.Watermark for Java
+  type: TechArticle
+- description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  name: Add Attachments to PDF with GroupDocs.Watermark for Java
+  steps:
+  - name: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+    text: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+  - name: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+    text: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+  - name: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+    text: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+  type: HowTo
+- questions:
+  - answer: Yes, repeat the `add()` call for each file you wish to embed, and each
+      will appear as a separate entry in the PDF viewer’s attachment pane.
+    question: Can I add multiple attachments to a PDF?
+  - answer: Any file that can be represented as a byte array—common types include
+      DOCX, XLSX, PNG, ZIP, and even executable files.
+    question: What file types can be attached?
+  - answer: Compress files before attaching or store them externally and reference
+      them with a lightweight placeholder attachment; the library streams data to
+      keep RAM usage low.
+    question: How do I handle large files?
+  - answer: There are no explicit limits, but attaching hundreds of large files may
+      affect performance; monitor memory consumption and consider splitting the PDF
+      if needed.
+    question: Is there a limit to the number of attachments?
+  - answer: Yes, GroupDocs.Watermark is fully compatible with cloud environments such
+      as AWS Lambda, Azure Functions, and Google Cloud Run.
+    question: Can this feature be used in cloud applications?
+  type: FAQPage
+tags:
+- add attachments to pdf
+- GroupDocs.Watermark
+- Java PDF processing
+title: Mellékletek hozzáadása PDF-hez a GroupDocs.Watermark for Java segítségével
 type: docs
 url: /hu/java/pdf-document-watermarking/add-attachments-pdf-groupdocs-watermark-java/
 weight: 1
 ---
 
-# PDF-dokumentumok mellékleteinek hozzáadása a GroupDocs.Watermark segítségével Java‑ban
+# PDF-hez csatolmányok hozzáadása a GroupDocs.Watermark használatával Java-ban
 
-Ebben az átfogó útmutatóban megtanulja, **hogyan adjon mellékleteket PDF** dokumentumokhoz a hatékony GroupDocs.Watermark Java könyvtár segítségével. Kiegészítő fájlok – legyen szó szerződésekről, adatállományokról vagy képekről – csatolása egy helyen tartja az információkat, és egyszerűsíti a terjesztést. Végigvezetjük a környezet beállításán, a szükséges kódon, valamint gyakorlati tippeken, hogy elkerülje a gyakori hibákat.
+## Bevezetés
+
+Ebben az átfogó útmutatóban megtanulja, hogyan kell **csatolmányokat hozzáadni PDF** fájlokhoz a GroupDocs.Watermark for Java segítségével. További fájlok – például szerződések, képek vagy adatállományok – közvetlenül a PDF-be ágyazásával önálló csomagot hoz létre, amely könnyen mozgatható a felhasználók és rendszerek között. Áttekintjük a környezet beállítását, a pontos API hívásokat és a bevált legjobb gyakorlatokat, hogy már ma elkezdhesse a fájlok PDF dokumentumokba ágyazását.
+
+****Mit fog megtanulni**  
+- A környezet beállítása a GroupDocs.Watermark Java-hoz  
+- Lépésről‑lépésre folyamat a PDF dokumentumhoz való csatolmányok hozzáadásához  
+- Legjobb gyakorlatok, teljesítmény tippek és hibaelhárítási tanácsok  
+
+Kezdjük a megoldás megvalósítása előtt szükséges előfeltételek áttekintésével.
 
 ## Gyors válaszok
-- **Mi a fő felhasználási eset?** Támogató fájlok közvetlen beágyazása egy PDF‑be, hogy a címzettek mindent egy csomagban láthassanak.  
-- **Melyik könyvtár kezeli ezt?** GroupDocs.Watermark for Java.  
-- **Szükség van licencre?** Ideiglenes próbaverziós licenc elegendő értékeléshez; a teljes licenc minden funkciót felold.  
-- **Több fájlt is hozzáadhatok?** Igen – ismételje meg a melléklet lépést minden egyes fájlhoz.  
-- **Felhő‑kész?** Teljesen; az API mind helyi, mind felhő környezetben működik.
+- **Melyik könyvtár ad csatolmányokat a PDF-hez?** GroupDocs.Watermark for Java.  
+- **Szükségem van licencre?** Egy ideiglenes próbaverzió licenc működik fejlesztéshez; a teljes licenc szükséges a termeléshez.  
+- **Csatolhatok több fájlt?** Igen—hívja meg az `add()` metódust minden beágyazni kívánt fájlhoz.  
+- **Milyen fájltípusok támogatottak?** Bármely fájl, amely bájt tömbként ábrázolható (pl. DOCX, PNG, ZIP).  
+- **Biztonságos nagy PDF-ek esetén?** Igen—csatolmányok adatfolyamba kerülnek, és a memóriahasználatot a `PdfLoadOptions` segítségével korlátozhatja.
 
-## Mi az a „PDF mellékletek hozzáadása”?
-A PDF mellékletek hozzáadása azt jelenti, hogy külső fájlokat (pl. Word dokumentumok, képek, táblázatok) ágyazunk be a PDF konténerébe. A csatolt fájlok a PDF‑vel együtt utaznak, és közvetlenül a PDF‑olvasókból nyithatók meg, ami megbízhatóbbá teszi a dokumentumcserét.
+## Mi az a csatolmányok hozzáadása PDF-hez?
+**add attachments to pdf** a folyamat, amely során külső fájlokat ágyazunk be egy PDF konténerbe, hogy azok együtt mozogjanak a fő dokumentummal. Ezt a technikát széles körben használják jogi csomagok, projektjavaslatok és kutatási dolgozatok esetén, ahol a kiegészítő anyagoknak a fő PDF-hez kell kapcsolódniuk.
 
-## Miért ágyazzunk fájlokat PDF‑be?
-- **Egyetlen fájl kézbesítése** – Nincs szükség több fájl zip‑elésére.  
-- **Környezet megőrzése** – A mellékletek az eredeti dokumentumhoz kapcsolódnak.  
-- **Megfelelőség** – Sok szabályozási folyamat megköveteli, hogy minden támogató anyag egy csomagban legyen.  
-- **Felhasználói kényelem** – A címzettek egyetlen kattintással hozzáférhetnek mindenhez.
+## Miért ágyazzunk be fájlt PDF-be a GroupDocs.Watermark használatával?
+A GroupDocs.Watermark **50+ bemeneti és kimeneti formátumot** támogat, és képes csatolmányokat beágyazni anélkül, hogy a teljes PDF-et a memóriába töltené, így hatékonyan dolgozhat több száz oldalas fájlokkal. Az API megőrzi az eredeti dokumentum metaadatait, és szálbiztos műveleteket kínál, ami ideálissá teszi szerveroldali kötegelt feldolgozáshoz.
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg róla, hogy rendelkezik:
+### Szükséges könyvtárak, verziók és függőségek
+- **GroupDocs.Watermark for Java**: 24.11 vagy újabb verzió.  
+- **Java Development Kit (JDK)**: 8 vagy újabb verzió ajánlott.  
+- **Maven**: Függőségkezeléshez.
 
-- **GroupDocs.Watermark for Java** ≥ 24.11  
-- **JDK 8+** (ajánlott 11 vagy újabb)  
-- **Maven** a függőségkezeléshez  
-- Alapvető Java ismeretek és PDF‑kezelési tapasztalat  
+### Környezet beállítási követelmények
+Győződjön meg arról, hogy a fejlesztői környezete támogatja a Maven projekteket, és hozzáfér egy Java IDE-hez, például az IntelliJ IDEA-hoz vagy az Eclipse-hez.
 
-## GroupDocs.Watermark for Java beállítása
+### Tudás előfeltételek
+Alapvető Java programozási ismeretek és a PDF-ek Java-ban történő kezelése ismerete előnyös lesz.
 
-### Maven beállítás
-Adja hozzá a tárolót és a függőséget a `pom.xml` fájlhoz:
+## Hogyan adjon csatolmányokat PDF-hez a GroupDocs.Watermark használatával?
 
+Töltse be a PDF-et a `new WatermarkEngine()` segítségével, és hívja meg a `pdfContent.getAttachments().add()` metódust – ez az egyetlen hívás a memóriában csatol egy fájlt, és egy lépésben visszaírja a PDF-be. Az API automatikusan frissíti a PDF belső file‑spec szótárát, így a csatolmány a szabványos PDF‑nézők „Attachments” (Csatolmányok) paneljén jelenik meg. Ez a megközelítés bármilyen, bájt tömbként ábrázolható fájltípusra működik, és nagy dokumentumok esetén is skálázható, mivel a könyvtár adatfolyamot használ a teljes fájl RAM‑ban tartása helyett.
+
+A `WatermarkEngine` osztály a fő belépési pont a dokumentumok betöltéséhez és feldolgozásához a GroupDocs.Watermark-ban.  
+A `PdfContent` objektum hozzáférést biztosít a PDF struktúrájához, beleértve az oldalakat, metaadatokat és a csatolmányokat.  
+A `getAttachments()` metódus visszaadja a PDF csatolmánygyűjteményét.  
+Az `add()` metódus új fájlt szúr be ebbe a gyűjteménybe.
+
+### A GroupDocs.Watermark Java-hoz történő beállítása
+
+A `WatermarkEngine` osztály a belépési pont minden GroupDocs.Watermark művelethez, kezelve a fájl betöltését, feldolgozását és mentését. A Maven függőség hozzáadása után példányosíthatja a motort és elkezdhet dolgozni a PDF-ekkel.
+
+**Maven beállítás**  
+Adja hozzá a következőket a `pom.xml` fájlhoz:
 ```xml
 <repositories>
    <repository>
@@ -66,15 +138,15 @@ Adja hozzá a tárolót és a függőséget a `pom.xml` fájlhoz:
 </dependencies>
 ```
 
-### Közvetlen letöltés
-Alternatívaként töltse le a legújabb buildet a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
+**Közvetlen letöltés**  
+Alternatívaként töltse le a legújabb verziót a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
 
-### Licenc beszerzése
-Szerezzen be egy ideiglenes próbaverziós licencet, vagy vásároljon teljes licencet a GroupDocs portálon. A próbaverzió elegendő a melléklet funkció teszteléséhez.
+### Licenc beszerzési lépések
+Ideiglenes licencet szerezhet, vagy megvásárolhat egy teljes licencet a teljes funkcionalitás feloldásához. Ingyenes próbához kövesse a hivatalos weboldalon található útmutatót.
 
-### Alapvető inicializálás
-Az alábbi kódrészlet bemutatja, hogyan hozhat létre egy `Watermarker` példányt, amely egy mintapéldány PDF‑re mutat:
-
+### Alapvető inicializálás és beállítás
+Inicializálja a GroupDocs.Watermark-ot a Java alkalmazásában a következő módon:
+A `Watermarker` osztály egy PDF dokumentumot képvisel, és módszereket biztosít a tartalom manipulálásához, beleértve a csatolmányok hozzáadását.
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -90,13 +162,20 @@ public class WatermarkSetup {
 }
 ```
 
-## Hogyan adjunk mellékleteket PDF‑hez Java‑ban
+## Megvalósítási útmutató
 
-Az alábbi lépésről‑lépésre útmutató bemutatja, **hogyan csatoljunk fájlokat** egy PDF‑hez a GroupDocs.Watermark segítségével.
+Most lépjünk végig a PDF-hez való csatolmányok hozzáadásának folyamatán a GroupDocs.Watermark Java használatával.
 
-### 1. lépés: PDF dokumentum betöltése
-Először töltse be a cél PDF‑et `PdfLoadOptions`‑szel, hogy a könyvtár tudja, hogyan értelmezze a fájlt:
+### Csatolmányok hozzáadása PDF dokumentumhoz
 
+#### Áttekintés
+Ez a funkció lehetővé teszi további fájlok csatolását egy meglévő PDF dokumentumhoz. A kapcsolódó dokumentumok egyesítése jelentősen növelheti azok hasznosságát.
+
+#### Lépésről‑lépésre útmutató
+
+##### 1. PDF dokumentum betöltése
+Kezdje a PDF betöltésével a `PdfLoadOptions` használatával:
+A `PdfLoadOptions` beállítja, hogyan nyílik meg a PDF, lehetővé téve a memóriahasználat és a jelszó opciók megadását.
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -108,9 +187,8 @@ PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-### 2. lépés: PDF tartalom elérése
-Szerezze meg a `PdfContent` objektumot, amely hozzáférést biztosít a mellékletgyűjteményhez:
-
+##### 2. PDF tartalom elérése
+Szerezze meg a `PdfContent` objektumot a csatolmányok kezeléséhez:
 ```java
 import com.groupdocs.watermark.contents.PdfContent;
 
@@ -118,25 +196,22 @@ import com.groupdocs.watermark.contents.PdfContent;
 PdfContent pdfContent = watermarker.getContent(PdfContent.class);
 ```
 
-### 3. lépés: Melléklet bájtok betöltése
-Olvassa be a beágyazni kívánt fájlt egy bájt tömbbe. Ez lehet bármilyen fájltípus – Word, Excel, képek stb.:
-
+##### 3. Csatolmány bájtok betöltése
+Készítse elő a hozzáadni kívánt csatolmány adatokat:
 ```java
 byte[] attachmentBytes = { /* Byte data for your document */ };
 ```
 
-### 4. lépés: Melléklet hozzáadása
-Hozzon létre egy `PdfAttachment` példányt, és adja hozzá a PDF mellékletlistájához:
-
+##### 4. Csatolmány hozzáadása
+Használja a `getAttachments().add()` metódust a fájlok csatolásához:
 ```java
 // Add the attachment to the PDF
 groupdocs.watermark.contents.PdfAttachment attachment = new PdfAttachment(attachmentBytes, "sample doc", "sample doc as attachment");
 pdfContent.getAttachments().add(attachment);
 ```
 
-### 5. lépés: Változások mentése és erőforrások lezárása
-Mentse a módosított PDF‑et egy új fájlba, majd takarítsa el az erőforrásokat:
-
+##### 5. Változások mentése és erőforrások lezárása
+Győződjön meg róla, hogy a változásokat megfelelően menti és az erőforrásokat lezárja:
 ```java
 // Save changes to a new PDF file
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
@@ -145,60 +220,68 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
 watermarker.close();
 ```
 
-## Gyakori problémák és megoldások
-
-| Probléma | Miért fordul elő | Megoldás |
-|----------|------------------|----------|
-| **Fájlútvonal hibák** | Helytelen relatív/abszolút útvonal | Ellenőrizze, hogy a `YOUR_DOCUMENT_DIRECTORY` és a `YOUR_OUTPUT_DIRECTORY` létezik‑e, és olvasható/írható‑e. |
-| **Memóriahiány nagy mellékleteknél** | Nagy fájlok betöltése bájt tömbbe sok RAM‑ot fogyaszt | Tömörítse a fájlokat a beágyazás előtt, vagy streamelje őket darabokban, ha nagyon nagy binárisokról van szó. |
-| **Licenc nem található** | A könyvtár használata érvényes licencfájl nélkül | Helyezze a `GroupDocs.Watermark.lic` fájlt a classpath‑ba, vagy állítsa be a licencet programozottan. |
+### Hibaelhárítási tippek
+- **Fájlútvonal hibák**: Győződjön meg arról, hogy az útvonalak helyesek és elérhetők.  
+- **Memória problémák**: Optimalizálja a csatolmány méretét a jobb teljesítmény érdekében; a könyvtár adatfolyamot használ a memóriahasználat alacsonyan tartásához.
 
 ## Gyakorlati alkalmazások
 
-Fájlok beágyazása PDF‑be számos területen értékes:
+A PDF-hez való csatolmányok hozzáadása különféle helyzetekben hasznos lehet:
+1. **Jogi dokumentumok** – Csatolja a kapcsolódó szerződéseket, bizonyítékokat vagy mellékleteket.  
+2. **Projektjavaslatok** – Tartalmazzon kiegészítő képeket, táblázatokat vagy CAD fájlokat.  
+3. **Tudományos dolgozatok** – Adj hozzá forráskódot, adatállományokat vagy multimédiát kiegészítő anyagként.  
 
-1. **Jogi szerződések** – Mellékelje a kiállításokat, bizonyítékokat vagy függelékeket.  
-2. **Projektajánlatok** – Tartalmazzon támogató táblázatokat, CAD‑rajzokat vagy rendereléseket.  
-3. **Akademiai kutatás** – Csomagolja a nyers adatállományokat vagy kódrészleteket a reprodukálhatóság érdekében.  
+A dokumentumkezelő rendszerekkel (DMS) vagy felhő tároló platformokkal való integráció tovább automatizálhatja a csomagolási folyamatot.
 
-Ezek a felhasználási esetek szemléltetik, **hogyan csatoljunk fájlokat**, hogy az érintettek egy önálló csomagot kapjanak.
+## Teljesítmény szempontok
 
-## Teljesítmény tippek
+Az optimális teljesítmény érdekében:
+- Minimalizálja a csatolmányok méretét a memóriahasználat csökkentése érdekében.  
+- Használjon hatékony fájlkezelési gyakorlatokat Java-ban (pl. `try‑with‑resources`).  
+- Rendszeresen frissítse a GroupDocs.Watermark-ot a teljesítményjavulások és hibajavítások kihasználása érdekében.
 
-- Tartsa a mellékletek méretét mérsékeltnek; a nagy binárisok növelik a PDF fájlméretét és a memóriaigényt.  
-- Használjon egyetlen `Watermarker` példányt, ha sok PDF‑et dolgoz fel kötegelt módon, így csökkenti az inicializálási terhet.  
-- Frissítsen a legújabb GroupDocs.Watermark verzióra a teljesítményjavulások és hibajavítások érdekében.
+## Összegzés
 
-## Következtetés
-Most már rendelkezik egy teljes, termelés‑kész módszerrel a **PDF mellékletek hozzáadásához** a GroupDocs.Watermark for Java segítségével. A fenti lépések követésével bármilyen támogató dokumentumot beágyazhat, javíthatja az együttműködést, és tiszta szállítási formátumot tarthat fenn. Fedezze fel a további funkciókat, mint a vízjelzés, redakció és tartalomkinyerés, hogy egy teljes körű PDF‑feldolgozó csővezetéket építsen.
+A PDF-hez való csatolmányok hozzáadása a GroupDocs.Watermark for Java segítségével egyszerű folyamat, amely jelentősen növelheti a dokumentum hasznosságát. Ezt az útmutatót követve megtanulta, hogyan valósítsa meg hatékonyan ezt a funkciót, és megismerte gyakorlati alkalmazásait.  
+
+A következő lépésként fontolja meg a GroupDocs.Watermark könyvtár egyéb funkcióinak – például vízjel, redakció vagy tartalomkinyerés – felfedezését, és integrálását nagyobb dokumentumfeldolgozó folyamatokba.
 
 ## Gyakran Ismételt Kérdések
 
-**K: Hozzáadhatok több mellékletet egy PDF‑hez?**  
-V: Igen. Hívja meg a `pdfContent.getAttachments().add()`‑t minden egyes beágyazni kívánt fájlhoz.
+**Q: Hozzáadhatok több csatolmányt egy PDF-hez?**  
+A: Igen, ismételje meg az `add()` hívást minden beágyazni kívánt fájlhoz, és minden egy külön bejegyzésként jelenik meg a PDF‑néző csatolmány paneljén.
 
-**K: Milyen fájltípusok támogatottak mellékletként?**  
-V: Bármely fájl, amely bájt tömbként reprezentálható – PDF, DOCX, XLSX, PNG, ZIP stb.
+**Q: Milyen fájltípusok csatolhatók?**  
+A: Bármely fájl, amely bájt tömbként ábrázolható – gyakori típusok a DOCX, XLSX, PNG, ZIP, és még végrehajtható fájlok is.
 
-**K: Hogyan kezeljem a nagyon nagy fájlokat?**  
-V: Tömörítse őket előre, vagy tárolja őket külsőleg, és hivatkozzon rájuk hiperhivatkozással a beágyazás helyett.
+**Q: Hogyan kezeljem a nagy fájlokat?**  
+A: Tömörítse a fájlokat a csatolás előtt, vagy tárolja őket külsőleg, és hivatkozzon rájuk egy könnyű helyőrző csatolással; a könyvtár adatfolyamot használ a RAM‑használat alacsonyan tartásához.
 
-**K: Van korlátozás a mellékletek számában?**  
-V: Technikai korlát nincs, de rendkívül nagy számú melléklet befolyásolhatja a teljesítményt és a PDF méretét.
+**Q: Van korlát a csatolmányok számában?**  
+A: Nincsenek explicit korlátok, de több száz nagy fájl csatolása befolyásolhatja a teljesítményt; figyelje a memóriahasználatot, és szükség esetén fontolja meg a PDF felosztását.
 
-**K: Használható ez felhő‑natív Java alkalmazásokban?**  
-V: Teljesen. Az API bármely Java futtatókörnyezetben működik, beleértve a konténereket és a serverless funkciókat.
+**Q: Használható ez a funkció felhőalkalmazásokban?**  
+A: Igen, a GroupDocs.Watermark teljes mértékben kompatibilis felhő környezetekkel, mint az AWS Lambda, Azure Functions és a Google Cloud Run.
+
+**Q: A csatolmány hozzáadása befolyásolja a PDF biztonságát?**  
+A: A csatolmányok öröklik a PDF biztonsági beállításait. Ha a PDF titkosított, a betöltéskor meg kell adnia a jelszót, és a csatolmány is titkosítva lesz.
+
+## Erőforrások
+- **Dokumentáció**: [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)
+- **API referencia**: [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)
+- **Letöltés**: [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)
+- **GitHub tároló**: [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- **Ingyenes támogatás**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
+- **Ideiglenes licenc**: [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Utolsó frissítés:** 2026-01-18  
+**Utolsó frissítés:** 2026-07-20  
 **Tesztelve a következővel:** GroupDocs.Watermark 24.11 for Java  
-**Szerző:** GroupDocs  
+**Szerző:** GroupDocs
 
-## Források
-- **Dokumentáció:** [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **API referencia:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
-- **Letöltés:** [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub:** [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Ingyenes támogatás:** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
-- **Ideiglenes licenc:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+## Kapcsolódó oktatóanyagok
+
+- [PDF csatolmányok kinyerése GroupDocs Watermark Java használatával e‑mail dokumentumkezeléshez](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)
+- [PDF artefaktok elérése és iterálása GroupDocs.Watermark Java használatával dokumentum vízjelezéshez](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
+- [PDF csatolmányok biztonságos kezelése a GroupDocs Watermark Java-val: Átfogó útmutató](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-attachments/)

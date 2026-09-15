@@ -1,51 +1,125 @@
 ---
-date: '2026-01-18'
-description: GroupDocs.Watermark for Java ile PDF dosyalarına ek dosya eklemeyi öğrenin
-  – kurulum, kod ve en iyi uygulamaları kapsayan adım adım öğretici.
+date: '2026-07-20'
+description: GroupDocs.Watermark for Java kullanarak PDF dosyalarına ek dosyalar eklemeyi,
+  setup, code steps ve best practices öğrenin.
 keywords:
-- GroupDocs Watermark Java
-- add attachments to PDFs
-- PDF document enhancement
-title: Java'da GroupDocs.Watermark kullanarak PDF'ye ek dosya ekleme – Tam Bir Kılavuz
+- add attachments to pdf
+- embed file in pdf
+- attach documents to pdf
+- pdf embed attachment
+- add pdf attachment
+lastmod: '2026-07-20'
+og_description: GroupDocs.Watermark for Java kullanarak PDF'ye ek dosyalar ekleyin.
+  Bu step‑by‑step guide'i izleyerek embed files, improve document utility ve handle
+  large PDFs efficiently.
+og_image_alt: Guide showing how to add file attachments to a PDF using GroupDocs.Watermark
+  Java SDK
+og_title: PDF'ye Ek Dosyalar Ekleyin GroupDocs.Watermark for Java ile
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-20'
+  description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  headline: Add Attachments to PDF with GroupDocs.Watermark for Java
+  type: TechArticle
+- description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  name: Add Attachments to PDF with GroupDocs.Watermark for Java
+  steps:
+  - name: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+    text: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+  - name: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+    text: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+  - name: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+    text: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+  type: HowTo
+- questions:
+  - answer: Yes, repeat the `add()` call for each file you wish to embed, and each
+      will appear as a separate entry in the PDF viewer’s attachment pane.
+    question: Can I add multiple attachments to a PDF?
+  - answer: Any file that can be represented as a byte array—common types include
+      DOCX, XLSX, PNG, ZIP, and even executable files.
+    question: What file types can be attached?
+  - answer: Compress files before attaching or store them externally and reference
+      them with a lightweight placeholder attachment; the library streams data to
+      keep RAM usage low.
+    question: How do I handle large files?
+  - answer: There are no explicit limits, but attaching hundreds of large files may
+      affect performance; monitor memory consumption and consider splitting the PDF
+      if needed.
+    question: Is there a limit to the number of attachments?
+  - answer: Yes, GroupDocs.Watermark is fully compatible with cloud environments such
+      as AWS Lambda, Azure Functions, and Google Cloud Run.
+    question: Can this feature be used in cloud applications?
+  type: FAQPage
+tags:
+- add attachments to pdf
+- GroupDocs.Watermark
+- Java PDF processing
+title: PDF'ye Ek Dosyalar Ekleyin GroupDocs.Watermark for Java ile
 type: docs
 url: /tr/java/pdf-document-watermarking/add-attachments-pdf-groupdocs-watermark-java/
 weight: 1
 ---
 
-# PDF Belgelerine Ek Dosyalar Eklemek için GroupDocs.Watermark Java Kullanımı
+# GroupDocs.Watermark ile Java'da PDF'ye Ek Dosyalar Ekleme
 
-Bu kapsamlı rehberde, güçlü GroupDocs.Watermark Java kütüphanesini kullanarak **PDF belgelerine ek dosyalar eklemeyi** öğreneceksiniz. Sözleşmeler, veri setleri veya görseller gibi ek dosyalar eklemek, ilgili bilgileri bir arada tutar ve dağıtımı basitleştirir. Ortam kurulumundan, ihtiyacınız olan tam koda ve yaygın hatalardan kaçınmak için pratik ipuçlarına kadar her adımı göstereceğiz.
+## Giriş
 
-## Hızlı Cevaplar
-- **Birincil kullanım durumu nedir?** Destekleyici dosyaları doğrudan bir PDF içine gömerek alıcıların her şeyi tek bir paket içinde görmesini sağlamak.  
-- **Bu işlemi hangi kütüphane gerçekleştirir?** GroupDocs.Watermark for Java.  
-- **Lisans gerekli mi?** Değerlendirme için geçici bir deneme lisansı yeterlidir; tam lisans tüm özellikleri açar.  
-- **Birden fazla dosya ekleyebilir miyim?** Evet—her dosya için ekleme adımını tekrarlayın.  
-- **Bulut ortamına uygun mu?** Kesinlikle; API hem yerel hem de bulut ortamlarında çalışır.
+Bu kapsamlı rehberde GroupDocs.Watermark for Java ile **PDF'ye ek dosyalar ekleme** yöntemini öğreneceksiniz. Sözleşmeler, görseller veya veri setleri gibi ek dosyaları doğrudan bir PDF içine gömerek, kullanıcılar ve sistemler arasında kolayca taşınabilen kendi içinde bütünleşik bir paket oluşturursunuz. Ortam kurulumunu, kesin API çağrılarını ve kanıtlanmış en iyi uygulamaları adım adım göstereceğiz, böylece bugün PDF belgelerine dosya eklemeye başlayabilirsiniz.
 
-## “PDF'e ek dosya eklemek” nedir?
-PDF'e ek dosya eklemek, dış dosyaları (ör. Word belgeleri, görseller, elektronik tablolar) PDF konteynerinin içine gömmek anlamına gelir. Eklenen dosyalar PDF ile birlikte taşınır ve PDF okuyuculardan doğrudan açılabilir, böylece belge değişimi daha güvenilir hâle gelir.
+**Ne Öğreneceksiniz**
+- GroupDocs.Watermark for Java ortamınızı kurma  
+- PDF belgesine ek dosyalar eklemek için adım adım süreç  
+- En iyi uygulamalar, performans ipuçları ve sorun giderme tavsiyeleri  
 
-## PDF içinde dosya gömmek neden önemlidir?
-- **Tek dosya teslimatı** – Birden fazla dosyayı ziplemenize gerek yok.  
-- **Bağlamı koruma** – Ek dosyalar orijinal belgeye bağlı kalır.  
-- **Uyumluluk** – Birçok düzenleyici süreç, tüm destekleyici materyalin paketlenmesini gerektirir.  
-- **Kullanıcı rahatlığı** – Alıcılar her şeye tek bir tıklama ile erişebilir.
+Bu çözümü uygulamadan önce gerekli ön koşulları gözden geçirerek başlayalım.
+
+## Hızlı Yanıtlar
+- **PDF'ye ek dosyalar ekleyen kütüphane hangisidir?** GroupDocs.Watermark for Java.  
+- **Lisans gerekli mi?** Geliştirme için geçici bir deneme lisansı yeterlidir; üretim için tam lisans gereklidir.  
+- **Birden fazla dosya ekleyebilir miyim?** Evet—eklemek istediğiniz her dosya için `add()` metodunu çağırın.  
+- **Hangi dosya türleri desteklenir?** Byte dizisi olarak temsil edilebilen herhangi bir dosya (ör. DOCX, PNG, ZIP).  
+- **Büyük PDF'ler için güvenli mi?** Evet—ek dosyalar akış olarak eklenir ve `PdfLoadOptions` ile bellek kullanımını sınırlayabilirsiniz.
+
+## PDF'ye ek dosyalar ekleme nedir?
+**add attachments to pdf**, harici dosyaları bir PDF konteynerine gömme sürecidir, böylece ana belgeyle birlikte taşınırlar. Bu teknik, destekleyici materyallerin ana PDF ile bağlantılı kalması gereken yasal paketler, proje teklifleri ve araştırma makalelerinde yaygın olarak kullanılır.
+
+## GroupDocs.Watermark kullanarak PDF'ye dosya gömmenin nedeni?
+GroupDocs.Watermark **50+ giriş ve çıkış formatını** destekler ve tüm PDF'i belleğe yüklemeden ek dosyalar gömebilir, çok sayfalı dosyalarla verimli çalışmanıza olanak tanır. API ayrıca orijinal belge meta verilerini korur ve iş parçacığı güvenli işlemler sunar, bu da sunucu tarafı toplu işleme için idealdir.
 
 ## Önkoşullar
 
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+### Gerekli Kütüphaneler, Sürümler ve Bağımlılıklar
+- **GroupDocs.Watermark for Java**: Sürüm 24.11 veya daha yeni.  
+- **Java Development Kit (JDK)**: Sürüm 8 veya üzeri önerilir.  
+- **Maven**: Bağımlılık yönetimi için.
 
-- **GroupDocs.Watermark for Java** ≥ 24.11  
-- **JDK 8+** (önerilen 11 veya üzeri)  
-- **Maven** bağımlılık yönetimi için  
-- Temel Java bilgisi ve PDF işleme konusundaki deneyim  
+### Ortam Kurulum Gereksinimleri
+Geliştirme ortamınızın Maven projelerini desteklediğinden ve IntelliJ IDEA veya Eclipse gibi bir Java IDE'sine erişiminiz olduğundan emin olun.
 
-## GroupDocs.Watermark Java Kurulumu
+### Bilgi Önkoşulları
+Java programlamaya temel bir anlayış ve Java'da PDF işleme konusundaki deneyim faydalı olacaktır.
 
-### Maven Kurulumu
-`pom.xml` dosyanıza depoyu ve bağımlılığı ekleyin:
+## GroupDocs.Watermark ile PDF'ye ek dosyalar nasıl eklenir?
 
+PDF'nizi `new WatermarkEngine()` ile yükleyin ve `pdfContent.getAttachments().add()` metodunu çağırın—bu tek çağrı, bir dosyayı bellek içinde ekler ve PDF'yi tek seferde geri yazar. API, PDF'nin iç dosya‑spec sözlüğünü otomatik olarak günceller, böylece ek dosya standart PDF görüntüleyicilerinde “Attachments” panelinde görünür. Bu yaklaşım, byte dizisi olarak temsil edilebilen herhangi bir dosya türü için çalışır ve kütüphane verileri akış olarak işlediği için büyük belgelerde ölçeklenebilir.
+
+`WatermarkEngine` sınıfı, GroupDocs.Watermark içinde belgeleri yüklemek ve işlemek için birincil giriş noktasını temsil eder.  
+`PdfContent` nesnesi, sayfalar, meta veriler ve ek dosyalar dahil PDF yapısına erişim sağlar.  
+`getAttachments()` metodu, PDF'nin ek dosya koleksiyonunu döndürür.  
+`add()` metodu, bu koleksiyona yeni bir dosya ekler.
+
+### GroupDocs.Watermark for Java Kurulumu
+
+`WatermarkEngine` sınıfı, dosya yükleme, işleme ve kaydetme işlemlerini yöneten tüm GroupDocs.Watermark işlemleri için giriş noktasıdır. Maven bağımlılığını ekledikten sonra motoru örnekleyebilir ve PDF'lerle çalışmaya başlayabilirsiniz.
+
+**Maven Kurulumu**  
+`pom.xml` dosyanıza aşağıdakileri ekleyin:
 ```xml
 <repositories>
    <repository>
@@ -64,15 +138,15 @@ Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 </dependencies>
 ```
 
-### Doğrudan İndirme
-Alternatif olarak, en son yapıyı [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) adresinden indirin.
+**Doğrudan İndirme**  
+Alternatif olarak, en son sürümü [GroupDocs Watermark Java Dokümantasyonu](https://releases.groupdocs.com/watermark/java/) adresinden indirin.
 
-### Lisans Alımı
-GroupDocs portalından geçici bir deneme lisansı alın veya tam lisans satın alın. Deneme lisansı ek dosya özelliğini test etmek için yeterlidir.
+### Lisans Edinme Adımları
+Tüm özelliklerin kilidini açmak için geçici bir lisans alabilir veya tam lisans satın alabilirsiniz. Ücretsiz deneme için resmi sitesindeki talimatları izleyin.
 
-### Temel Başlatma
-Aşağıdaki kod parçacığı, örnek bir PDF'ye işaret eden bir `Watermarker` örneği oluşturmayı gösterir:
-
+### Temel Başlatma ve Kurulum
+GroupDocs.Watermark'ı Java uygulamanızda aşağıdaki gibi başlatın:
+`Watermarker` sınıfı bir PDF belgesini temsil eder ve ek dosyalar ekleme dahil içeriğini manipüle etmek için metodlar sağlar.
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -88,13 +162,20 @@ public class WatermarkSetup {
 }
 ```
 
-## Java'da PDF'e Ek Dosya Eklemek
+## Uygulama Rehberi
 
-Aşağıda, GroupDocs.Watermark kullanarak **dosya eklemeyi** gösteren adım‑adım bir yürütme bulunmaktadır.
+Şimdi, GroupDocs.Watermark ile Java'da PDF'ye ek dosyalar ekleme sürecini adım adım inceleyelim.
 
-### Adım 1: PDF Belgesini Yükleyin
-Hedef PDF'yi `PdfLoadOptions` ile yükleyin; böylece kütüphane dosyayı nasıl yorumlayacağını bilir:
+### PDF Belgesine Ek Dosyalar Ekleme
 
+#### Genel Bakış
+Bu özellik, mevcut bir PDF belgesine ek dosyalar eklemenizi sağlar. İlgili belgeleri bir araya paketlemek, kullanım faydasını önemli ölçüde artırabilir.
+
+#### Adım Adım Kılavuz
+
+##### 1. PDF Belgesini Yükleyin
+`PdfLoadOptions` kullanarak PDF'nizi yükleyerek başlayın:
+PdfLoadOptions, PDF'nin nasıl açılacağını yapılandırır, bellek kullanımı ve şifre seçeneklerini ayarlamanıza olanak tanır.
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -106,9 +187,8 @@ PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-### Adım 2: PDF İçeriğine Erişin
-Ek dosya koleksiyonuna erişim sağlayan `PdfContent` nesnesini alın:
-
+##### 2. PDF İçeriğine Erişin
+Ek dosyalarla çalışmak için `PdfContent`'i alın:
 ```java
 import com.groupdocs.watermark.contents.PdfContent;
 
@@ -116,25 +196,22 @@ import com.groupdocs.watermark.contents.PdfContent;
 PdfContent pdfContent = watermarker.getContent(PdfContent.class);
 ```
 
-### Adım 3: Ek Dosya Baytlarını Yükleyin
-Eklemek istediğiniz dosyayı bir bayt dizisine okuyun. Bu, Word, Excel, görseller vb. herhangi bir dosya türü olabilir:
-
+##### 3. Ek Dosya Baytlarını Yükleyin
+Eklemek istediğiniz ek dosya verilerini hazırlayın:
 ```java
 byte[] attachmentBytes = { /* Byte data for your document */ };
 ```
 
-### Adım 4: Ek Dosyayı Ekleyin
-Bir `PdfAttachment` örneği oluşturun ve PDF'in ek listesine ekleyin:
-
+##### 4. Ek Dosyayı Ekleyin
+Dosyaları eklemek için `getAttachments().add()` metodunu kullanın:
 ```java
 // Add the attachment to the PDF
 groupdocs.watermark.contents.PdfAttachment attachment = new PdfAttachment(attachmentBytes, "sample doc", "sample doc as attachment");
 pdfContent.getAttachments().add(attachment);
 ```
 
-### Adım 5: Değişiklikleri Kaydedin ve Kaynakları Kapatın
-Değiştirilmiş PDF'i yeni bir dosyaya kaydedin ve kaynakları temizleyin:
-
+##### 5. Değişiklikleri Kaydedin ve Kaynakları Kapatın
+Değişikliklerinizi kaydettiğinizden ve kaynakları doğru şekilde kapattığınızdan emin olun:
 ```java
 // Save changes to a new PDF file
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
@@ -143,60 +220,69 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
 watermarker.close();
 ```
 
-## Yaygın Sorunlar ve Çözümler
-
-| Sorun | Neden Oluşur | Çözüm |
-|-------|--------------|-------|
-| **Dosya yolu hataları** | Yanlış göreceli/ mutlak yol | `YOUR_DOCUMENT_DIRECTORY` ve `YOUR_OUTPUT_DIRECTORY`'nin mevcut ve okunabilir/yazılabilir olduğundan emin olun. |
-| **Büyük ek dosyalar için bellek yetersizliği** | Büyük dosyaları bayt dizisine yüklemek RAM tüketir | Dosyaları gömmeden önce sıkıştırın veya çok büyük ikili dosyalarla çalışıyorsanız parça parça akış yapın. |
-| **Lisans bulunamadı** | Geçerli bir lisans dosyası olmadan kütüphane kullanmak | `GroupDocs.Watermark.lic` dosyasını sınıf yoluna yerleştirin veya lisansı programatik olarak ayarlayın. |
+### Sorun Giderme İpuçları
+- **Dosya Yolu Hataları**: Yolların doğru ve erişilebilir olduğundan emin olun.  
+- **Bellek Sorunları**: Daha iyi performans için ek dosya boyutlarını optimize edin; kütüphane verileri akış olarak işleyerek bellek kullanımını düşük tutar.
 
 ## Pratik Uygulamalar
 
-PDF içinde dosya gömmek birçok alanda değerlidir:
+PDF'ye ek dosyalar eklemek çeşitli senaryolarda faydalı olabilir:
 
-1. **Hukuki sözleşmeler** – Ekleri, delilleri veya ekleri ekleyin.  
-2. **Proje teklifleri** – Destekleyici elektronik tablolar, CAD çizimleri veya render'ları ekleyin.  
-3. **Akademik araştırma** – Çoğaltılabilirlik için ham veri setlerini veya kod parçacıklarını paketleyin.  
+1. **Hukuki Belgeler** – İlgili sözleşmeler, kanıtlar veya ekleri ekleyin.  
+2. **Proje Teklifleri** – Tamamlayıcı görseller, elektronik tablolar veya CAD dosyalarını dahil edin.  
+3. **Akademik Makaleler** – Kaynak kodu, veri setleri veya multimedya dosyalarını destekleyici materyal olarak ekleyin.  
 
-Bu kullanım senaryoları, paydaşların tek bir, kendi içinde bütünleşik paket almasını sağlamak için **dosya eklemenin** nasıl yapılacağını gösterir.
+Belge yönetim sistemleri (DMS) veya bulut depolama platformlarıyla entegrasyon, paketleme sürecini daha da otomatikleştirebilir.
 
-## Performans İpuçları
+## Performans Düşünceleri
 
-- Ek dosya boyutlarını makul tutun; büyük ikili dosyalar PDF'in dosya boyutunu ve bellek ayak izini artırır.  
-- Birçok PDF'i toplu işleyerek tek bir `Watermarker` örneğini yeniden kullanın; bu, başlatma yükünü azaltır.  
-- En yeni GroupDocs.Watermark sürümüne yükseltin; böylece performans iyileştirmelerinden ve hata düzeltmelerinden faydalanırsınız.
+Optimal performans için:
+- Ek dosya boyutlarını küçülterek bellek kullanımını azaltın.  
+- Java'da verimli dosya işleme uygulamaları kullanın (ör. `try‑with‑resources`).  
+- Performans iyileştirmeleri ve hata düzeltmelerinden yararlanmak için GroupDocs.Watermark'ı düzenli olarak güncelleyin.
 
 ## Sonuç
-Artık GroupDocs.Watermark for Java kullanarak **PDF dosyalarına ek dosya eklemek** için eksiksiz, üretim‑hazır bir yönteme sahipsiniz. Yukarıdaki adımları izleyerek herhangi bir destekleyici belgeyi gömebilir, iş birliğini geliştirebilir ve temiz bir teslim formatı sağlayabilirsiniz. Su işaretleme, redaksiyon ve içerik çıkarma gibi ek özellikleri keşfederek tam özellikli bir PDF işleme hattı oluşturun.
+
+GroupDocs.Watermark for Java kullanarak PDF'ye ek dosyalar eklemek, belge faydasını önemli ölçüde artırabilen basit bir süreçtir. Bu rehberi izleyerek, bu özelliği etkili bir şekilde nasıl uygulayacağınızı öğrendiniz ve pratik uygulamalarını keşfettiniz.
+
+Sonraki adım olarak, GroupDocs.Watermark kütüphanesinin su işareti ekleme, redaksiyon veya içerik çıkarma gibi diğer özelliklerini keşfetmeyi ve bunları daha büyük belge‑işleme hatlarına entegre etmeyi düşünün.
 
 ## Sıkça Sorulan Sorular
 
-**S: PDF'e birden fazla ek dosya ekleyebilir miyim?**  
-C: Evet. Eklemek istediğiniz her dosya için `pdfContent.getAttachments().add()` metodunu çağırın.
+**Q:** PDF'ye birden fazla ek dosya ekleyebilir miyim?  
+**A:** Evet, eklemek istediğiniz her dosya için `add()` çağrısını tekrarlayın; her biri PDF görüntüleyicinin ek dosya panelinde ayrı bir giriş olarak görünecektir.
 
-**S: Ek dosya olarak hangi dosya türleri desteklenir?**  
-C: Bayt dizisi olarak temsil edilebilen herhangi bir dosya—PDF, DOCX, XLSX, PNG, ZIP vb.
+**Q:** Hangi dosya türleri eklenebilir?  
+**A:** Byte dizisi olarak temsil edilebilen herhangi bir dosya—yaygın türler arasında DOCX, XLSX, PNG, ZIP ve hatta çalıştırılabilir dosyalar bulunur.
 
-**S: Çok büyük dosyalarla nasıl başa çıkmalıyım?**  
-C: Önceden sıkıştırın veya gömmek yerine dışarıda depolayıp bir hiperlink aracılığıyla referans verin.
+**Q:** Büyük dosyalarla nasıl başa çıkabilirim?  
+**A:** Eklemeden önce dosyaları sıkıştırın veya dışarıda depolayıp hafif bir yer tutucu ek dosya ile referans verin; kütüphane verileri akış olarak işleyerek RAM kullanımını düşük tutar.
 
-**S: Ek dosya sayısına bir limit var mı?**  
-C: Teknik olarak yok, ancak aşırı büyük sayılar performansı ve PDF boyutunu etkileyebilir.
+**Q:** Ek dosya sayısı için bir sınırlama var mı?  
+**A:** Açık bir sınırlama yoktur, ancak yüzlerce büyük dosya eklemek performansı etkileyebilir; bellek tüketimini izleyin ve gerekirse PDF'yi bölmeyi düşünün.
 
-**S: Bu bulut‑yerel Java uygulamalarında kullanılabilir mi?**  
-C: Kesinlikle. API, konteynerler ve sunucusuz fonksiyonlar dahil olmak üzere herhangi bir Java çalışma zamanında çalışır.
+**Q:** Bu özellik bulut uygulamalarında kullanılabilir mi?  
+**A:** Evet, GroupDocs.Watermark AWS Lambda, Azure Functions ve Google Cloud Run gibi bulut ortamlarıyla tamamen uyumludur.
+
+**Q:** Ek dosya eklemek PDF güvenliğini etkiler mi?  
+**A:** Ek dosyalar PDF'nin güvenlik ayarlarını devralır. PDF şifreli ise, yüklerken şifreyi sağlamalısınız ve ek dosya da şifrelenir.
+
+## Kaynaklar
+- **Dokümantasyon**: [GroupDocs Watermark Java Dokümantasyonu](https://docs.groupdocs.com/watermark/java/)
+- **API Referansı**: [GroupDocs API Referansı](https://reference.groupdocs.com/watermark/java)
+- **İndirme**: [En Son GroupDocs Sürümleri](https://releases.groupdocs.com/watermark/java/)
+- **GitHub**: [GroupDocs Watermark GitHub Deposu](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- **Ücretsiz Destek**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
+- **Geçici Lisans**: [Geçici Lisans Alın](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Last Updated:** 2026-01-18  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
+**Son Güncelleme:** 2026-07-20  
+**Test Edilen Versiyon:** GroupDocs.Watermark 24.11 for Java  
+**Yazar:** GroupDocs
 
-## Kaynaklar
-- **Documentation:** [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
-- **Download:** [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub:** [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Free Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
-- **Temporary License:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+## İlgili Eğitimler
+
+- [Java'da GroupDocs Watermark Kullanarak PDF Eklerini E-posta Belge Yönetimi İçin Nasıl Çıkarılır](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)
+- [Java'da GroupDocs.Watermark Kullanarak PDF Artefaktlarına Erişim ve Döngü İşlemleri Belge Su İşareti İçin](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
+- [Java için GroupDocs Watermark ile PDF Eklerini Güvence Altına Almak: Kapsamlı Bir Rehber](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-attachments/)

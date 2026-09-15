@@ -1,52 +1,125 @@
 ---
-date: '2026-01-18'
-description: Leer hoe je bijlagen kunt toevoegen aan PDF‑bestanden met GroupDocs.Watermark
-  voor Java – stapsgewijze tutorial over installatie, code en best practices.
+date: '2026-07-20'
+description: Leer hoe u bijlagen aan PDF‑bestanden kunt toevoegen met GroupDocs.Watermark
+  for Java, inclusief installatie, code‑stappen en best practices.
 keywords:
-- GroupDocs Watermark Java
-- add attachments to PDFs
-- PDF document enhancement
-title: Hoe voeg je bijlagen toe aan PDF met GroupDocs.Watermark in Java – Een volledige
-  gids
+- add attachments to pdf
+- embed file in pdf
+- attach documents to pdf
+- pdf embed attachment
+- add pdf attachment
+lastmod: '2026-07-20'
+og_description: Voeg bijlagen toe aan PDF met GroupDocs.Watermark for Java. Volg deze
+  stapsgewijze handleiding om bestanden in te sluiten, de bruikbaarheid van documenten
+  te verbeteren en grote PDF‑bestanden efficiënt te verwerken.
+og_image_alt: Guide showing how to add file attachments to a PDF using GroupDocs.Watermark
+  Java SDK
+og_title: Bijlagen toevoegen aan PDF met GroupDocs.Watermark for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-20'
+  description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  headline: Add Attachments to PDF with GroupDocs.Watermark for Java
+  type: TechArticle
+- description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  name: Add Attachments to PDF with GroupDocs.Watermark for Java
+  steps:
+  - name: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+    text: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+  - name: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+    text: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+  - name: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+    text: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+  type: HowTo
+- questions:
+  - answer: Yes, repeat the `add()` call for each file you wish to embed, and each
+      will appear as a separate entry in the PDF viewer’s attachment pane.
+    question: Can I add multiple attachments to a PDF?
+  - answer: Any file that can be represented as a byte array—common types include
+      DOCX, XLSX, PNG, ZIP, and even executable files.
+    question: What file types can be attached?
+  - answer: Compress files before attaching or store them externally and reference
+      them with a lightweight placeholder attachment; the library streams data to
+      keep RAM usage low.
+    question: How do I handle large files?
+  - answer: There are no explicit limits, but attaching hundreds of large files may
+      affect performance; monitor memory consumption and consider splitting the PDF
+      if needed.
+    question: Is there a limit to the number of attachments?
+  - answer: Yes, GroupDocs.Watermark is fully compatible with cloud environments such
+      as AWS Lambda, Azure Functions, and Google Cloud Run.
+    question: Can this feature be used in cloud applications?
+  type: FAQPage
+tags:
+- add attachments to pdf
+- GroupDocs.Watermark
+- Java PDF processing
+title: Bijlagen toevoegen aan PDF met GroupDocs.Watermark for Java
 type: docs
 url: /nl/java/pdf-document-watermarking/add-attachments-pdf-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Bijlagen toevoegen aan PDF-documenten met GroupDocs.Watermark in Java
+# Bijlagen toevoegen aan PDF met GroupDocs.Watermark in Java
 
-In deze uitgebreide gids leer je **hoe je bijlagen aan PDF**-documenten kunt toevoegen met de krachtige GroupDocs.Watermark-bibliotheek voor Java. Het toevoegen van aanvullende bestanden—of het nu contracten, datasets of afbeeldingen zijn—houdt gerelateerde informatie bij elkaar en vereenvoudigt distributie. We lopen door de omgevingconfiguratie, de exacte code die je nodig hebt, en praktische tips om veelvoorkomende valkuilen te vermijden.
+## Inleiding
+
+In deze uitgebreide gids leer je **hoe je bijlagen aan PDF**-bestanden toevoegt met GroupDocs.Watermark voor Java. Door extra bestanden—zoals contracten, afbeeldingen of datasets—direct in een PDF te embedden, creëer je een zelfstandige pakket dat gemakkelijk tussen gebruikers en systemen kan worden gedeeld. We lopen de omgevingconfiguratie, de exacte API‑aanroepen en bewezen best practices door, zodat je vandaag nog bestanden in PDF‑documenten kunt embedden.
+
+**Wat je zult leren**
+- Je omgeving instellen voor GroupDocs.Watermark in Java  
+- Een stapsgewijs proces voor het toevoegen van bijlagen aan een PDF‑document  
+- Best practices, prestatie‑tips en probleemoplossingsadvies  
+
+Laten we beginnen met het bekijken van de vereisten die nodig zijn voordat deze oplossing wordt geïmplementeerd.
 
 ## Snelle antwoorden
-- **Wat is het primaire gebruiksscenario?** Ondersteunende bestanden direct in een PDF insluiten zodat ontvangers alles in één pakket kunnen bekijken.  
-- **Welke bibliotheek behandelt dit?** GroupDocs.Watermark voor Java.  
-- **Heb ik een licentie nodig?** Een tijdelijke proeflicentie werkt voor evaluatie; een volledige licentie ontgrendelt alle functies.  
-- **Kan ik meerdere bestanden toevoegen?** Ja—herhaal de bijlage‑stap voor elk bestand.  
-- **Is het cloud‑klaar?** Absoluut; de API werkt zowel on‑premise als in cloudomgevingen.
+- **Welke bibliotheek voegt bijlagen toe aan PDF?** GroupDocs.Watermark for Java.  
+- **Heb ik een licentie nodig?** Een tijdelijke proeflicentie werkt voor ontwikkeling; een volledige licentie is vereist voor productie.  
+- **Kan ik meerdere bestanden bijvoegen?** Ja—roep `add()` aan voor elk bestand dat je wilt embedden.  
+- **Welke bestandstypen worden ondersteund?** Elk bestand dat kan worden weergegeven als een byte‑array (bijv. DOCX, PNG, ZIP).  
+- **Is het veilig voor grote PDF’s?** Ja—bijlagen worden gestreamd, en je kunt het geheugenverbruik beperken met `PdfLoadOptions`.
 
-## Wat betekent “bijlagen toevoegen aan PDF”?
-Bijlagen toevoegen aan PDF betekent externe bestanden (bijv. Word‑documenten, afbeeldingen, spreadsheets) in de PDF‑container insluiten. De bijgevoegde bestanden reizen mee met de PDF en kunnen rechtstreeks vanuit PDF‑lezers worden geopend, waardoor documentuitwisseling betrouwbaarder wordt.
+## Wat is bijlagen toevoegen aan pdf?
+**add attachments to pdf** is het proces van het embedden van externe bestanden in een PDF‑container zodat ze samen met het hoofd‑document reizen. Deze techniek wordt veel gebruikt voor juridische dossiers, projectvoorstellen en onderzoeksartikelen waarbij ondersteunend materiaal gekoppeld moet blijven aan de primaire PDF.
 
-## Waarom bestanden in PDF insluiten?
-- **Enkele‑bestand levering** – Geen noodzaak om meerdere bestanden te zippen.  
-- **Context behouden** – Bijlagen blijven gekoppeld aan het oorspronkelijke document.  
-- **Naleving** – Veel regelgevende processen vereisen dat al het ondersteunende materiaal wordt gebundeld.  
-- **Gebruikersgemak** – Ontvangers kunnen alles met één klik openen.
+## Waarom bestand embedden in pdf met GroupDocs.Watermark?
+GroupDocs.Watermark ondersteunt **meer dan 50 invoer‑ en uitvoerformaten** en kan bijlagen embedden zonder de volledige PDF in het geheugen te laden, waardoor je efficiënt kunt werken met documenten van honderden pagina's. De API behoudt ook de originele documentmetadata en biedt thread‑veilige bewerkingen, waardoor het ideaal is voor server‑side batchverwerking.
 
-## Voorvereisten
+## Vereisten
 
-Zorg ervoor dat je het volgende hebt voordat je begint:
+### Vereiste bibliotheken, versies en afhankelijkheden
+- **GroupDocs.Watermark for Java**: Versie 24.11 of later.  
+- **Java Development Kit (JDK)**: Versie 8 of hoger wordt aanbevolen.  
+- **Maven**: Voor afhankelijkheidsbeheer.
 
-- **GroupDocs.Watermark for Java** ≥ 24.11  
-- **JDK 8+** (recommended 11 or later)  
-- **Maven** for dependency management  
-- Basiskennis van Java en vertrouwdheid met PDF‑verwerking  
+### Omgevingsinstellingen vereisten
+Zorg ervoor dat je ontwikkelomgeving Maven‑projecten ondersteunt en dat je toegang hebt tot een Java‑IDE zoals IntelliJ IDEA of Eclipse.
 
-## GroupDocs.Watermark voor Java instellen
+### Kennisvereisten
+Een basisbegrip van Java‑programmeren en vertrouwdheid met het verwerken van PDF’s in Java zal nuttig zijn.
 
-### Maven Setup
-Voeg de repository en afhankelijkheid toe aan je `pom.xml`‑bestand:
+## Hoe voeg je bijlagen toe aan PDF met GroupDocs.Watermark?
 
+Laad je PDF met `new WatermarkEngine()` en roep `pdfContent.getAttachments().add()` aan—die ene aanroep voegt een bestand in het geheugen toe en schrijft het terug naar de PDF in één stap. De API werkt automatisch het interne file‑spec‑woordenboek van de PDF bij, zodat de bijlage verschijnt in standaard PDF‑viewers onder het tabblad “Attachments”. Deze aanpak werkt voor elk bestandstype dat kan worden weergegeven als een byte‑array en schaalt naar grote documenten omdat de bibliotheek gegevens streamt in plaats van het hele bestand in RAM te houden.
+
+De `WatermarkEngine`‑klasse is het primaire toegangspunt voor het laden en verwerken van documenten in GroupDocs.Watermark.  
+Het `PdfContent`‑object biedt toegang tot de structuur van de PDF, inclusief pagina's, metadata en bijlagen.  
+De `getAttachments()`‑methode retourneert de bijlagecollectie van de PDF.  
+De `add()`‑methode voegt een nieuw bestand toe aan deze collectie.
+
+### Instellen van GroupDocs.Watermark voor Java
+
+De `WatermarkEngine`‑klasse is het toegangspunt voor alle GroupDocs.Watermark‑operaties, die het laden, verwerken en opslaan van bestanden afhandelt. Na het toevoegen van de Maven‑afhankelijkheid kun je de engine instantieren en beginnen met werken met PDF’s.
+
+**Maven‑configuratie**  
+Voeg het volgende toe aan je `pom.xml`‑bestand:
 ```xml
 <repositories>
    <repository>
@@ -65,15 +138,15 @@ Voeg de repository en afhankelijkheid toe aan je `pom.xml`‑bestand:
 </dependencies>
 ```
 
-### Direct Download
-Alternatief kun je de nieuwste build downloaden van [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+**Directe download**  
+Download anders de nieuwste versie van [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### License Acquisition
-Verkrijg een tijdelijke proeflicentie of koop een volledige licentie via het GroupDocs‑portaal. Een proeflicentie is voldoende om de bijlage‑functionaliteit te testen.
+### Stappen voor licentie‑acquisitie
+Je kunt een tijdelijke licentie verkrijgen of een volledige licentie kopen om alle functies te ontgrendelen. Voor een gratis proefversie volg je de instructies op hun officiële site.
 
-### Basic Initialization
-De onderstaande code laat zien hoe je een `Watermarker`‑instantie maakt die naar een voorbeeld‑PDF wijst:
-
+### Basisinitialisatie en -configuratie
+Initialiseer GroupDocs.Watermark in je Java‑applicatie als volgt:
+De `Watermarker`‑klasse vertegenwoordigt een PDF‑document en biedt methoden om de inhoud te manipuleren, inclusief het toevoegen van bijlagen.
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -89,13 +162,20 @@ public class WatermarkSetup {
 }
 ```
 
-## Hoe bijlagen toevoegen aan PDF in Java
+## Implementatiegids
 
-Hieronder vind je een stapsgewijze walkthrough die **laat zien hoe je bestanden** aan een PDF kunt toevoegen met GroupDocs.Watermark.
+Laten we nu het proces doorlopen om bijlagen toe te voegen aan een PDF met GroupDocs.Watermark in Java.
 
-### Stap 1: Laad het PDF‑document
-Laad eerst de doel‑PDF met `PdfLoadOptions` zodat de bibliotheek weet hoe het bestand moet interpreteren:
+### Bijlagen toevoegen aan een PDF‑document
 
+#### Overzicht
+Deze functie stelt je in staat extra bestanden toe te voegen aan een bestaand PDF‑document. Het bundelen van gerelateerde documenten kan hun bruikbaarheid aanzienlijk vergroten.
+
+#### Stapsgewijze handleiding
+
+##### 1. Laad het PDF‑document
+Begin met het laden van je PDF met `PdfLoadOptions`:
+PdfLoadOptions configureert hoe de PDF wordt geopend, waardoor je geheugenverbruik en wachtwoordopties kunt instellen.
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -107,9 +187,8 @@ PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-### Stap 2: Toegang tot PDF‑inhoud
-Haal het `PdfContent`‑object op, dat je toegang geeft tot de bijlage‑collectie:
-
+##### 2. Toegang tot PDF‑inhoud
+Haal de `PdfContent` op om met bijlagen te werken:
 ```java
 import com.groupdocs.watermark.contents.PdfContent;
 
@@ -117,25 +196,22 @@ import com.groupdocs.watermark.contents.PdfContent;
 PdfContent pdfContent = watermarker.getContent(PdfContent.class);
 ```
 
-### Stap 3: Laad bijlage‑bytes
-Lees het bestand dat je wilt insluiten in een byte‑array. Dit kan elk bestandstype zijn—Word, Excel, afbeeldingen, enz.:
-
+##### 3. Laad bijlage‑bytes
+Bereid de bijlage‑data voor die je wilt toevoegen:
 ```java
 byte[] attachmentBytes = { /* Byte data for your document */ };
 ```
 
-### Stap 4: Voeg de bijlage toe
-Maak een `PdfAttachment`‑instantie aan en voeg deze toe aan de bijlage‑lijst van de PDF:
-
+##### 4. Voeg de bijlage toe
+Gebruik de `getAttachments().add()`‑methode om bestanden toe te voegen:
 ```java
 // Add the attachment to the PDF
 groupdocs.watermark.contents.PdfAttachment attachment = new PdfAttachment(attachmentBytes, "sample doc", "sample doc as attachment");
 pdfContent.getAttachments().add(attachment);
 ```
 
-### Stap 5: Sla wijzigingen op en sluit bronnen
-Sla de gewijzigde PDF op in een nieuw bestand en maak bronnen vrij:
-
+##### 5. Sla wijzigingen op en sluit bronnen
+Zorg ervoor dat je je wijzigingen opslaat en bronnen correct sluit:
 ```java
 // Save changes to a new PDF file
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
@@ -144,60 +220,67 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
 watermarker.close();
 ```
 
-## Veelvoorkomende problemen en oplossingen
-
-| Probleem | Waarom het gebeurt | Oplossing |
-|----------|--------------------|-----------|
-| **Bestandspadfouten** | Onjuist relatief/absoluut pad | Controleer of `YOUR_DOCUMENT_DIRECTORY` en `YOUR_OUTPUT_DIRECTORY` bestaan en leesbaar/schrijfbaar zijn. |
-| **Out‑of‑memory voor grote bijlagen** | Het laden van enorme bestanden in een byte‑array verbruikt RAM | Comprimeer bestanden vóór het insluiten of stream ze in delen als je met zeer grote binaire bestanden werkt. |
-| **Licentie niet gevonden** | De bibliotheek gebruiken zonder een geldig licentiebestand | Plaats het `GroupDocs.Watermark.lic`‑bestand in het classpath of stel de licentie programmatisch in. |
+### Probleemoplossingstips
+- **Bestandspad‑fouten**: Zorg ervoor dat paden correct en toegankelijk zijn.  
+- **Geheugenproblemen**: Optimaliseer de grootte van bijlagen voor betere prestaties; de bibliotheek streamt gegevens om het geheugenverbruik laag te houden.
 
 ## Praktische toepassingen
+Het toevoegen van bijlagen aan PDF’s kan nuttig zijn in verschillende scenario’s:
 
-Bestanden in PDFs insluiten is waardevol in veel domeinen:
+1. **Juridische documenten** – Voeg gerelateerde contracten, bewijsmateriaal of bijlagen toe.  
+2. **Projectvoorstellen** – Voeg aanvullende afbeeldingen, spreadsheets of CAD‑bestanden toe.  
+3. **Academische papers** – Voeg broncode, datasets of multimedia toe als ondersteunend materiaal.  
 
-1. **Juridische contracten** – Voeg bijlagen, bewijsstukken of annexen toe.  
-2. **Projectvoorstellen** – Voeg ondersteunende spreadsheets, CAD‑tekeningen of renders toe.  
-3. **Academisch onderzoek** – Bundel ruwe datasets of code‑fragmenten voor reproduceerbaarheid.  
+Integratie met documentbeheersystemen (DMS) of cloud‑opslagplatformen kan het bundelen verder automatiseren.
 
-Deze use‑cases illustreren **hoe je bestanden kunt bijvoegen** zodat belanghebbenden een enkel, zelf‑bevat pakket ontvangen.
+## Prestatie‑overwegingen
+Voor optimale prestaties:
 
-## Prestatiietips
-
-- Houd de grootte van bijlagen bescheiden; grote binaire bestanden vergroten de bestandsgrootte van de PDF en het geheugenverbruik.  
-- Hergebruik een enkele `Watermarker`‑instantie bij het verwerken van veel PDF's in een batch om initialisatie‑overhead te verminderen.  
-- Upgrade naar de nieuwste GroupDocs.Watermark‑versie om te profiteren van prestatieverbeteringen en bug‑fixes.
+- Minimaliseer de grootte van bijlagen om het geheugenverbruik te verminderen.  
+- Gebruik efficiënte bestandsbehandelingspraktijken in Java (bijv. `try‑with‑resources`).  
+- Werk GroupDocs.Watermark regelmatig bij om te profiteren van prestatie‑verbeteringen en bug‑fixes.
 
 ## Conclusie
-Je hebt nu een volledige, productie‑klare methode voor **bijlagen toevoegen aan PDF**‑bestanden met GroupDocs.Watermark voor Java. Door de bovenstaande stappen te volgen, kun je elk ondersteunend document insluiten, samenwerking verbeteren en een schone leveringsindeling behouden. Verken extra functies zoals watermerken, redactie en inhoudsextractie om een volledig uitgeruste PDF‑verwerkingspipeline op te bouwen.
+Het toevoegen van bijlagen aan PDF’s met GroupDocs.Watermark voor Java is een eenvoudig proces dat de bruikbaarheid van documenten aanzienlijk kan verbeteren. Door deze gids te volgen, heb je geleerd hoe je deze functie effectief implementeert en heb je de praktische toepassingen verkend.
+
+Als volgende stap kun je andere functies van de GroupDocs.Watermark‑bibliotheek verkennen—zoals watermerken, redactie of inhoudsextractie—en ze integreren in grotere documentverwerkings‑pijplijnen.
 
 ## Veelgestelde vragen
 
 **Q: Kan ik meerdere bijlagen aan een PDF toevoegen?**  
-A: Ja. Roep `pdfContent.getAttachments().add()` aan voor elk bestand dat je wilt insluiten.
+A: Ja, herhaal de `add()`‑aanroep voor elk bestand dat je wilt embedden, en elk zal verschijnen als een afzonderlijke entry in het bijlage‑paneel van de PDF‑viewer.
 
-**Q: Welke bestandstypen worden ondersteund als bijlagen?**  
-A: Elk bestand dat als een byte‑array kan worden weergegeven—PDF, DOCX, XLSX, PNG, ZIP, enz.
+**Q: Welke bestandstypen kunnen worden bijgevoegd?**  
+A: Elk bestand dat kan worden weergegeven als een byte‑array—gebruikelijke typen omvatten DOCX, XLSX, PNG, ZIP en zelfs uitvoerbare bestanden.
 
-**Q: Hoe moet ik omgaan met zeer grote bestanden?**  
-A: Comprimeer ze vooraf of sla ze extern op en verwijs er via een hyperlink naar in plaats van ze in te sluiten.
+**Q: Hoe ga ik om met grote bestanden?**  
+A: Comprimeer bestanden vóór het bijvoegen of sla ze extern op en verwijs ernaar met een lichte placeholder‑bijlage; de bibliotheek streamt gegevens om het RAM‑gebruik laag te houden.
 
 **Q: Is er een limiet aan het aantal bijlagen?**  
-A: Technisch gezien niet, maar een extreem groot aantal kan de prestaties en de PDF‑grootte beïnvloeden.
+A: Er zijn geen expliciete limieten, maar het bijvoegen van honderden grote bestanden kan de prestaties beïnvloeden; houd het geheugenverbruik in de gaten en overweeg het PDF‑bestand te splitsen indien nodig.
 
-**Q: Kan dit worden gebruikt in cloud‑native Java‑applicaties?**  
-A: Absoluut. De API werkt in elke Java‑runtime, inclusief containers en serverless‑functies.
+**Q: Kan deze functie worden gebruikt in cloud‑applicaties?**  
+A: Ja, GroupDocs.Watermark is volledig compatibel met cloud‑omgevingen zoals AWS Lambda, Azure Functions en Google Cloud Run.
+
+**Q: Heeft het toevoegen van een bijlage invloed op de PDF‑beveiliging?**  
+A: Bijlagen erven de beveiligingsinstellingen van de PDF. Als de PDF versleuteld is, moet je het wachtwoord opgeven bij het laden, en de bijlage wordt ook versleuteld.
+
+## Bronnen
+- **Documentatie**: [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)
+- **API‑referentie**: [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)
+- **Download**: [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)
+- **GitHub**: [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- **Gratis ondersteuning**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
+- **Tijdelijke licentie**: [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Last Updated:** 2026-01-18  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
+**Laatste update:** 2026-07-20  
+**Getest met:** GroupDocs.Watermark 24.11 for Java  
+**Auteur:** GroupDocs
 
-## Bronnen
-- **Documentatie:** [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)
-- **API‑referentie:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)
-- **Download:** [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)
-- **GitHub:** [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- **Gratis ondersteuning:** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
-- **Tijdelijke licentie:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+## Gerelateerde tutorials
+
+- [Hoe PDF‑bijlagen te extraheren met GroupDocs Watermark in Java voor e‑mail documentbeheer](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)
+- [Toegang tot en itereren over PDF‑artefacten met GroupDocs.Watermark in Java voor documentwatermerken](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
+- [Hoe PDF‑bijlagen te beveiligen met GroupDocs Watermark voor Java: een uitgebreide gids](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-attachments/)

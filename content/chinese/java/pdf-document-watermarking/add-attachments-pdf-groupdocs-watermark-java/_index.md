@@ -1,50 +1,130 @@
 ---
-date: '2026-01-18'
-description: 了解如何使用 GroupDocs.Watermark for Java 为 PDF 文件添加附件——一步步教程，涵盖设置、代码和最佳实践。
+date: '2026-07-20'
+description: 了解如何使用 GroupDocs.Watermark for Java 向 PDF 文件添加附件，包括 setup、code steps
+  和 best practices。
 keywords:
-- GroupDocs Watermark Java
-- add attachments to PDFs
-- PDF document enhancement
-title: 使用 GroupDocs.Watermark 在 Java 中向 PDF 添加附件 – 完整指南
+- add attachments to pdf
+- embed file in pdf
+- attach documents to pdf
+- pdf embed attachment
+- add pdf attachment
+lastmod: '2026-07-20'
+og_description: 使用 GroupDocs.Watermark for Java 为 PDF 添加附件。遵循此 step‑by‑step guide
+  将文件 embed，提升 document utility，并高效 handle large PDFs。
+og_image_alt: Guide showing how to add file attachments to a PDF using GroupDocs.Watermark
+  Java SDK
+og_title: 使用 GroupDocs.Watermark for Java 为 PDF 添加附件
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-20'
+  description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  headline: Add Attachments to PDF with GroupDocs.Watermark for Java
+  type: TechArticle
+- description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  name: Add Attachments to PDF with GroupDocs.Watermark for Java
+  steps:
+  - name: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+    text: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+  - name: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+    text: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+  - name: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+    text: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+  type: HowTo
+- questions:
+  - answer: Yes, repeat the `add()` call for each file you wish to embed, and each
+      will appear as a separate entry in the PDF viewer’s attachment pane.
+    question: Can I add multiple attachments to a PDF?
+  - answer: Any file that can be represented as a byte array—common types include
+      DOCX, XLSX, PNG, ZIP, and even executable files.
+    question: What file types can be attached?
+  - answer: Compress files before attaching or store them externally and reference
+      them with a lightweight placeholder attachment; the library streams data to
+      keep RAM usage low.
+    question: How do I handle large files?
+  - answer: There are no explicit limits, but attaching hundreds of large files may
+      affect performance; monitor memory consumption and consider splitting the PDF
+      if needed.
+    question: Is there a limit to the number of attachments?
+  - answer: Yes, GroupDocs.Watermark is fully compatible with cloud environments such
+      as AWS Lambda, Azure Functions, and Google Cloud Run.
+    question: Can this feature be used in cloud applications?
+  type: FAQPage
+tags:
+- add attachments to pdf
+- GroupDocs.Watermark
+- Java PDF processing
+title: 使用 GroupDocs.Watermark for Java 为 PDF 添加附件
 type: docs
 url: /zh/java/pdf-document-watermarking/add-attachments-pdf-groupdocs-watermark-java/
 weight: 1
 ---
 
-# 使用 GroupDocs.Watermark 在 Java 中向 PDF 文档添加附件
+# 使用 GroupDocs.Watermark 在 Java 中向 PDF 添加附件
 
-在本完整指南中，您将学习 **如何向 PDF 文档添加附件**，使用功能强大的 GroupDocs.Watermark Java 库。将补充文件（如合同、数据集或图像）附加到 PDF 中，可将相关信息集中在一起，简化分发。我们将逐步演示环境搭建、所需代码以及避免常见陷阱的实用技巧。
+## 介绍
 
-## 快速回答
-- **主要使用场景是什么？** 将支持文件直接嵌入 PDF，以便收件人在同一个包中查看所有内容。  
-- **使用哪个库？** GroupDocs.Watermark for Java。  
-- **需要许可证吗？** 临时试用许可证可用于评估；完整许可证解锁全部功能。  
-- **可以添加多个文件吗？** 可以——对每个文件重复附件步骤。  
-- **支持云部署吗？** 完全支持；API 可在本地和云环境中使用。
+在本综合指南中，您将学习 **如何向 PDF 添加附件**，使用 GroupDocs.Watermark for Java。通过将额外文件（如合同、图像或数据集）直接嵌入 PDF 中，您可以创建一个自包含的包，便于在用户和系统之间轻松传输。我们将逐步演示环境设置、具体的 API 调用以及成熟的最佳实践，让您今天就能开始在 PDF 文档中嵌入文件。
 
-## 什么是“向 PDF 添加附件”？
-向 PDF 添加附件指的是将外部文件（例如 Word 文档、图像、电子表格）嵌入到 PDF 容器内部。附件随 PDF 一起传输，且可以直接在 PDF 阅读器中打开，从而提升文档交换的可靠性。
+**您将学习**
+- 为 Java 中的 GroupDocs.Watermark 设置环境  
+- 向 PDF 文档添加附件的逐步过程  
+- 最佳实践、性能技巧和故障排除建议  
 
-## 为什么要在 PDF 中嵌入文件？
-- **单文件交付** – 无需压缩多个文件。  
-- **保持上下文** – 附件始终与原始文档关联。  
-- **合规性** – 许多监管流程要求将所有支持材料打包。  
-- **用户便利** – 收件人只需一次点击即可获取全部内容。
+让我们先回顾在实现此解决方案之前所需的前置条件。
+
+## 快速答疑
+
+- **哪个库可以向 PDF 添加附件？** GroupDocs.Watermark for Java.  
+- **我需要许可证吗？** 临时试用许可证可用于开发；生产环境需要正式许可证。  
+- **可以一次附加多个文件吗？** 可以——对每个要嵌入的文件调用 `add()`。  
+- **支持哪些文件类型？** 任何可以表示为字节数组的文件（例如 DOCX、PNG、ZIP）。  
+- **对大 PDF 安全么？** 安全——附件以流式方式处理，您可以使用 `PdfLoadOptions` 限制内存使用。
+
+## 什么是向 PDF 添加附件？
+
+**add attachments to pdf** 是将外部文件嵌入 PDF 容器的过程，使其与主文档一起携带。此技术广泛用于法律文书、项目提案和研究论文等需要将支持材料与主 PDF 关联的场景。
+
+## 为什么使用 GroupDocs.Watermark 在 PDF 中嵌入文件？
+
+GroupDocs.Watermark 支持 **50 多种输入和输出格式**，并且可以在不将整个 PDF 加载到内存的情况下嵌入附件，使您能够高效处理数百页的文件。该 API 还保留原始文档元数据并提供线程安全的操作，适合服务器端批处理。
 
 ## 前置条件
 
-在开始之前，请确保您具备：
+### 必需的库、版本和依赖项
 
-- **GroupDocs.Watermark for Java** ≥ 24.11  
-- **JDK 8+**（推荐 11 或更高）  
-- **Maven** 用于依赖管理  
-- 基本的 Java 知识以及 PDF 处理经验  
+- **GroupDocs.Watermark for Java**：版本 24.11 或更高。  
+- **Java Development Kit (JDK)**：推荐使用 8 版或更高。  
+- **Maven**：用于依赖管理。
 
-## 设置 GroupDocs.Watermark for Java
+### 环境搭建要求
 
-### Maven 配置
-在 `pom.xml` 文件中添加仓库和依赖：
+确保您的开发环境支持 Maven 项目，并且可以使用 IntelliJ IDEA 或 Eclipse 等 Java IDE。
 
+### 知识前置要求
+
+具备 Java 编程的基础知识并熟悉在 Java 中处理 PDF 将会有帮助。
+
+## 如何使用 GroupDocs.Watermark 向 PDF 添加附件？
+
+使用 `new WatermarkEngine()` 加载 PDF 并调用 `pdfContent.getAttachments().add()`——此单次调用将在内存中附加文件并一次性写回 PDF。API 会自动更新 PDF 的内部 file‑spec 字典，使附件在标准 PDF 查看器的 “Attachments” 面板中显示。该方法适用于任何可表示为字节数组的文件类型，并且由于库采用流式处理而非将整个文件加载到 RAM，能够扩展到大型文档。
+
+`WatermarkEngine` 类是 GroupDocs.Watermark 中加载和处理文档的主要入口。  
+`PdfContent` 对象提供对 PDF 结构的访问，包括页面、元数据和附件。  
+`getAttachments()` 方法返回 PDF 的附件集合。  
+`add()` 方法向该集合中插入新文件。
+
+### 为 Java 设置 GroupDocs.Watermark
+
+`WatermarkEngine` 类是所有 GroupDocs.Watermark 操作的入口，负责文件加载、处理和保存。添加 Maven 依赖后，您即可实例化引擎并开始处理 PDF。
+
+**Maven 设置**  
+在您的 `pom.xml` 文件中添加以下内容：
 ```xml
 <repositories>
    <repository>
@@ -63,15 +143,17 @@ weight: 1
 </dependencies>
 ```
 
-### 直接下载
-或者，从 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下载最新构建。
+**直接下载**  
+或者，从 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下载最新版本。
 
-### 获取许可证
-获取临时试用许可证或在 GroupDocs 门户购买完整许可证。试用许可证足以测试附件功能。
+### 获取许可证的步骤
 
-### 基本初始化
-下面的代码片段展示了如何创建指向示例 PDF 的 `Watermarker` 实例：
+您可以获取临时许可证或购买正式许可证以解锁全部功能。免费试用请按照其官方网站上的说明操作。
 
+### 基本初始化和设置
+
+在 Java 应用程序中按如下方式初始化 GroupDocs.Watermark：
+`Watermarker` 类表示 PDF 文档，并提供操作其内容的方法，包括添加附件。
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -87,13 +169,21 @@ public class WatermarkSetup {
 }
 ```
 
-## 如何在 Java 中向 PDF 添加附件
+## 实施指南
 
-以下是逐步演示 **如何使用 GroupDocs.Watermark 将文件附加到 PDF** 的完整流程。
+现在，让我们逐步了解使用 GroupDocs.Watermark 在 Java 中向 PDF 添加附件的过程。
 
-### 步骤 1：加载 PDF 文档
-首先使用 `PdfLoadOptions` 加载目标 PDF，以便库能够正确解析文件：
+### 向 PDF 文档添加附件
 
+#### 概述
+
+此功能允许您向现有 PDF 文档附加额外文件。将相关文档打包在一起可以显著提升其使用价值。
+
+#### 步骤指南
+
+##### 1. 加载 PDF 文档
+首先使用 `PdfLoadOptions` 加载 PDF：
+`PdfLoadOptions` 配置 PDF 的打开方式，允许您设置内存使用和密码选项。
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -105,9 +195,8 @@ PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-### 步骤 2：访问 PDF 内容
-获取 `PdfContent` 对象，从而访问附件集合：
-
+##### 2. 访问 PDF 内容
+获取 `PdfContent` 以处理附件：
 ```java
 import com.groupdocs.watermark.contents.PdfContent;
 
@@ -115,25 +204,22 @@ import com.groupdocs.watermark.contents.PdfContent;
 PdfContent pdfContent = watermarker.getContent(PdfContent.class);
 ```
 
-### 步骤 3：加载附件字节
-将要嵌入的文件读取为字节数组。可以是任意文件类型——Word、Excel、图像等：
-
+##### 3. 加载附件字节
+准备要添加的附件数据：
 ```java
 byte[] attachmentBytes = { /* Byte data for your document */ };
 ```
 
-### 步骤 4：添加附件
-创建 `PdfAttachment` 实例并将其加入 PDF 的附件列表：
-
+##### 4. 添加附件
+使用 `getAttachments().add()` 方法附加文件：
 ```java
 // Add the attachment to the PDF
 groupdocs.watermark.contents.PdfAttachment attachment = new PdfAttachment(attachmentBytes, "sample doc", "sample doc as attachment");
 pdfContent.getAttachments().add(attachment);
 ```
 
-### 步骤 5：保存更改并关闭资源
-将修改后的 PDF 持久化为新文件，并清理资源：
-
+##### 5. 保存更改并关闭资源
+确保正确保存更改并关闭资源：
 ```java
 // Save changes to a new PDF file
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
@@ -142,60 +228,71 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
 watermarker.close();
 ```
 
-## 常见问题及解决方案
+### 故障排除技巧
+- **文件路径错误**：确保路径正确且可访问。  
+- **内存问题**：优化附件大小以提升性能；库采用流式处理以保持低内存使用。
 
-| 问题 | 产生原因 | 解决办法 |
-|------|----------|----------|
-| **文件路径错误** | 相对/绝对路径不正确 | 确认 `YOUR_DOCUMENT_DIRECTORY` 和 `YOUR_OUTPUT_DIRECTORY` 已存在且具备读写权限。 |
-| **大附件导致内存不足** | 将巨大的文件加载到字节数组会占用大量 RAM | 在嵌入前压缩文件，或在处理超大二进制文件时采用分块流式方式。 |
-| **未找到许可证** | 未使用有效的许可证文件运行库 | 将 `GroupDocs.Watermark.lic` 放置在类路径下，或通过代码方式设置许可证。 |
+## 实际应用
 
-## 实际应用场景
+向 PDF 添加附件在多种场景下都很有用：
 
-在多个领域中，将文件嵌入 PDF 具有重要价值：
+1. **法律文件** – 附加相关合同、证据或展品。  
+2. **项目提案** – 包含补充图片、电子表格或 CAD 文件。  
+3. **学术论文** – 添加源代码、数据集或多媒体作为支持材料。  
 
-1. **法律合同** – 附加展品、证据或附件。  
-2. **项目提案** – 包含支持的电子表格、CAD 图纸或渲染图。  
-3. **学术研究** – 打包原始数据集或代码片段，以实现可重复性。  
+与文档管理系统（DMS）或云存储平台的集成可以进一步实现自动化打包。
 
-这些用例展示了 **如何附加文件**，使利益相关者收到单一、完整的包。
+## 性能考虑
 
-## 性能建议
+为获得最佳性能：
 
-- 保持附件尺寸适中；大型二进制会显著增加 PDF 大小和内存占用。  
-- 在批量处理多个 PDF 时复用同一个 `Watermarker` 实例，以降低初始化开销。  
-- 升级到最新的 GroupDocs.Watermark 版本，以获得性能提升和错误修复。
+- 最小化附件大小以降低内存占用。  
+- 在 Java 中使用高效的文件处理实践（例如 `try‑with‑resources`）。  
+- 定期更新 GroupDocs.Watermark，以获得性能提升和错误修复。
 
 ## 结论
-现在，您已经掌握了使用 GroupDocs.Watermark for Java **向 PDF 添加附件** 的完整、可投入生产的方法。按照上述步骤，您可以嵌入任何支持文档，提升协作效率，并保持交付格式的简洁。进一步探索水印、脱敏和内容提取等功能，构建全功能的 PDF 处理流水线。
 
-## 常见问答
+使用 GroupDocs.Watermark for Java 向 PDF 添加附件是一个简便的过程，能够显著提升文档的实用性。通过本指南，您已学会如何有效实现此功能并了解其实际应用。
 
-**问：可以向 PDF 添加多个附件吗？**  
-答：可以。对每个需要嵌入的文件调用 `pdfContent.getAttachments().add()`。
+接下来，您可以探索 GroupDocs.Watermark 库的其他功能——如水印、编辑或内容提取，并将其集成到更大的文档处理流水线中。
 
-**问：支持哪些文件类型作为附件？**  
-答：任何能够表示为字节数组的文件——PDF、DOCX、XLSX、PNG、ZIP 等。
+## 常见问题
 
-**问：如何处理非常大的文件？**  
-答：事先压缩，或改为在外部存储并通过超链接引用，而不是直接嵌入。
+**Q: 我可以向 PDF 添加多个附件吗？**  
+A: 可以，对每个要嵌入的文件重复调用 `add()`，每个文件将在 PDF 查看器的附件面板中显示为单独的条目。
 
-**问：附件数量有限制吗？**  
-答：技术上没有限制，但极大量的附件会影响性能和 PDF 大小。
+**Q: 可以附加哪些文件类型？**  
+A: 任何可以表示为字节数组的文件——常见类型包括 DOCX、XLSX、PNG、ZIP，甚至可执行文件。
 
-**问：可以在云原生 Java 应用中使用吗？**  
-答：完全可以。该 API 兼容所有 Java 运行时，包括容器和无服务器函数。
+**Q: 如何处理大文件？**  
+A: 在附加之前压缩文件，或将文件存储在外部并使用轻量占位附件进行引用；库采用流式处理以保持低 RAM 使用。
+
+**Q: 附件数量有上限吗？**  
+A: 没有明确的限制，但附加数百个大文件可能影响性能；请监控内存消耗，并在必要时考虑拆分 PDF。
+
+**Q: 此功能可以在云应用中使用吗？**  
+A: 可以，GroupDocs.Watermark 完全兼容 AWS Lambda、Azure Functions 和 Google Cloud Run 等云环境。
+
+**Q: 添加附件会影响 PDF 的安全性吗？**  
+A: 附件会继承 PDF 的安全设置。如果 PDF 已加密，加载时必须提供密码，附件也会被加密。
+
+## 资源
+
+- **文档**: [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)
+- **API 参考**: [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)
+- **下载**: [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)
+- **GitHub**: [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- **免费支持**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
+- **临时许可证**: [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**最后更新：** 2026-01-18  
+**最后更新：** 2026-07-20  
 **测试环境：** GroupDocs.Watermark 24.11 for Java  
-**作者：** GroupDocs  
+**作者：** GroupDocs
 
-## 资源
-- **文档：** [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **API 参考：** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
-- **下载：** [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub：** [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **免费支持：** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
-- **临时许可证：** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+## 相关教程
+
+- [如何使用 GroupDocs Watermark for Java 在电子邮件文档管理中提取 PDF 附件](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)
+- [使用 GroupDocs.Watermark for Java 访问并遍历 PDF 工件进行文档水印](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
+- [如何使用 GroupDocs Watermark for Java 保护 PDF 附件：综合指南](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-attachments/)

@@ -1,51 +1,125 @@
 ---
-date: '2026-01-18'
-description: Scopri come aggiungere allegati ai file PDF con GroupDocs.Watermark per
-  Java – tutorial passo‑passo che copre configurazione, codice e migliori pratiche.
+date: '2026-07-20'
+description: Scopri come aggiungere allegati a file PDF usando GroupDocs.Watermark
+  for Java, includendo setup, code steps e best practices.
 keywords:
-- GroupDocs Watermark Java
-- add attachments to PDFs
-- PDF document enhancement
-title: Come aggiungere allegati a PDF usando GroupDocs.Watermark in Java – Guida completa
+- add attachments to pdf
+- embed file in pdf
+- attach documents to pdf
+- pdf embed attachment
+- add pdf attachment
+lastmod: '2026-07-20'
+og_description: Aggiungi allegati a PDF usando GroupDocs.Watermark for Java. Segui
+  questa guida step‑by‑step per embed files, migliorare la document utility e gestire
+  grandi PDF in modo efficiente.
+og_image_alt: Guide showing how to add file attachments to a PDF using GroupDocs.Watermark
+  Java SDK
+og_title: Aggiungi allegati a PDF con GroupDocs.Watermark for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-20'
+  description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  headline: Add Attachments to PDF with GroupDocs.Watermark for Java
+  type: TechArticle
+- description: Learn how to add attachments to PDF files using GroupDocs.Watermark
+    for Java, including setup, code steps, and best practices.
+  name: Add Attachments to PDF with GroupDocs.Watermark for Java
+  steps:
+  - name: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+    text: '**Legal Documents** – Attach related contracts, evidence, or exhibits.'
+  - name: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+    text: '**Project Proposals** – Include supplementary images, spreadsheets, or
+      CAD files.'
+  - name: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+    text: '**Academic Papers** – Add source code, datasets, or multimedia as supporting
+      material.'
+  type: HowTo
+- questions:
+  - answer: Yes, repeat the `add()` call for each file you wish to embed, and each
+      will appear as a separate entry in the PDF viewer’s attachment pane.
+    question: Can I add multiple attachments to a PDF?
+  - answer: Any file that can be represented as a byte array—common types include
+      DOCX, XLSX, PNG, ZIP, and even executable files.
+    question: What file types can be attached?
+  - answer: Compress files before attaching or store them externally and reference
+      them with a lightweight placeholder attachment; the library streams data to
+      keep RAM usage low.
+    question: How do I handle large files?
+  - answer: There are no explicit limits, but attaching hundreds of large files may
+      affect performance; monitor memory consumption and consider splitting the PDF
+      if needed.
+    question: Is there a limit to the number of attachments?
+  - answer: Yes, GroupDocs.Watermark is fully compatible with cloud environments such
+      as AWS Lambda, Azure Functions, and Google Cloud Run.
+    question: Can this feature be used in cloud applications?
+  type: FAQPage
+tags:
+- add attachments to pdf
+- GroupDocs.Watermark
+- Java PDF processing
+title: Aggiungi allegati a PDF con GroupDocs.Watermark for Java
 type: docs
 url: /it/java/pdf-document-watermarking/add-attachments-pdf-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Aggiungere allegati ai documenti PDF utilizzando GroupDocs.Watermark in Java
+# Aggiungere allegati a PDF usando GroupDocs.Watermark in Java
 
-In questa guida completa, imparerai **come aggiungere allegati a PDF** utilizzando la potente libreria GroupDocs.Watermark per Java. Allegare file supplementari—che siano contratti, set di dati o immagini—mantiene le informazioni correlate insieme e semplifica la distribuzione. Ti guideremo attraverso la configurazione dell'ambiente, il codice esatto di cui hai bisogno e consigli pratici per evitare problemi comuni.
+## Introduzione
+
+In questa guida completa imparerai **come aggiungere allegati a PDF** con GroupDocs.Watermark per Java. Incorporando file aggiuntivi — come contratti, immagini o set di dati — direttamente all'interno di un PDF, crei un pacchetto autonomo che viaggia facilmente tra utenti e sistemi. Ti guideremo attraverso la configurazione dell'ambiente, le chiamate API esatte e le migliori pratiche comprovate, così potrai iniziare a incorporare file nei documenti PDF oggi.
+
+**Cosa imparerai**
+- Configurare l'ambiente per GroupDocs.Watermark in Java  
+- Un processo passo‑a‑passo per aggiungere allegati a un documento PDF  
+- Migliori pratiche, consigli sulle prestazioni e suggerimenti per la risoluzione dei problemi  
+
+Iniziamo esaminando i prerequisiti necessari prima di implementare questa soluzione.
 
 ## Risposte rapide
-- **Qual è l'uso principale?** Incorporare file di supporto direttamente all'interno di un PDF in modo che i destinatari possano visualizzare tutto in un unico pacchetto.  
-- **Quale libreria gestisce questo?** GroupDocs.Watermark per Java.  
-- **Ho bisogno di una licenza?** Una licenza di prova temporanea è sufficiente per la valutazione; una licenza completa sblocca tutte le funzionalità.  
-- **Posso aggiungere più file?** Sì—ripeti il passaggio di allegato per ogni file.  
-- **È pronta per il cloud?** Assolutamente; l'API funziona sia in ambienti on‑premise che cloud.
+- **Quale libreria aggiunge allegati a PDF?** GroupDocs.Watermark for Java.  
+- **Ho bisogno di una licenza?** Una licenza di prova temporanea funziona per lo sviluppo; è necessaria una licenza completa per la produzione.  
+- **Posso allegare più file?** Sì—chiama `add()` per ogni file che desideri incorporare.  
+- **Quali tipi di file sono supportati?** Qualsiasi file che può essere rappresentato come array di byte (ad esempio DOCX, PNG, ZIP).  
+- **È sicuro per PDF di grandi dimensioni?** Sì—gli allegati sono trasmessi in streaming e puoi limitare l'uso della memoria con `PdfLoadOptions`.
 
-## Cos'è “aggiungere allegati a PDF”?
-Aggiungere allegati a un PDF significa incorporare file esterni (ad es., documenti Word, immagini, fogli di calcolo) all'interno del contenitore PDF. I file allegati viaggiano con il PDF e possono essere aperti direttamente dai lettori PDF, rendendo lo scambio di documenti più affidabile.
+## Cos'è aggiungere allegati a PDF?
+**add attachments to pdf** è il processo di incorporare file esterni all'interno di un contenitore PDF in modo che viaggino insieme al documento principale. Questa tecnica è ampiamente utilizzata per fascicoli legali, proposte di progetto e articoli di ricerca dove i materiali di supporto devono rimanere collegati al PDF principale.
 
-## Perché incorporare file in PDF?
-- **Consegna a file unico** – Non è necessario comprimere più file.  
-- **Preservare il contesto** – Gli allegati rimangono collegati al documento originale.  
-- **Conformità** – Molti processi normativi richiedono che tutto il materiale di supporto sia raggruppato.  
-- **Comodità per l'utente** – I destinatari possono accedere a tutto con un solo clic.
+## Perché incorporare file in PDF usando GroupDocs.Watermark?
+GroupDocs.Watermark supporta **oltre 50 formati di input e output** e può incorporare allegati senza caricare l'intero PDF in memoria, consentendoti di lavorare con file di centinaia di pagine in modo efficiente. L'API preserva anche i metadati originali del documento e offre operazioni thread‑safe, rendendola ideale per l'elaborazione batch lato server.
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di avere:
+### Librerie richieste, versioni e dipendenze
+- **GroupDocs.Watermark for Java**: Version 24.11 o successive.  
+- **Java Development Kit (JDK)**: Version 8 o superiore è consigliata.  
+- **Maven**: Per la gestione delle dipendenze.
 
-- **GroupDocs.Watermark for Java** ≥ 24.11  
-- **JDK 8+** (consigliato 11 o successivo)  
-- **Maven** per la gestione delle dipendenze  
-- Conoscenza di base di Java e familiarità con la gestione dei PDF  
+### Requisiti per la configurazione dell'ambiente
+Assicurati che il tuo ambiente di sviluppo supporti progetti Maven e che tu abbia accesso a un IDE Java come IntelliJ IDEA o Eclipse.
 
-## Configurazione di GroupDocs.Watermark per Java
+### Prerequisiti di conoscenza
+Una comprensione di base della programmazione Java e familiarità con la gestione dei PDF in Java saranno utili.
 
-### Configurazione Maven
-Aggiungi il repository e la dipendenza al tuo file `pom.xml`:
+## Come aggiungere allegati a PDF usando GroupDocs.Watermark?
 
+Carica il tuo PDF con `new WatermarkEngine()` e chiama `pdfContent.getAttachments().add()` — quella singola chiamata allega un file in memoria e lo scrive nuovamente nel PDF in un unico passaggio. L'API aggiorna automaticamente il dizionario interno file‑spec del PDF, così l'allegato appare nei visualizzatori PDF standard sotto il pannello “Attachments”. Questo approccio funziona per qualsiasi tipo di file che può essere rappresentato come array di byte e scala a documenti di grandi dimensioni perché la libreria trasmette i dati invece di tenere l'intero file in RAM.
+
+La classe `WatermarkEngine` è il punto di ingresso principale per caricare e processare documenti in GroupDocs.Watermark.  
+L'oggetto `PdfContent` fornisce l'accesso alla struttura del PDF, incluse pagine, metadati e allegati.  
+Il metodo `getAttachments()` restituisce la collezione di allegati del PDF.  
+Il metodo `add()` inserisce un nuovo file in questa collezione.
+
+### Configurazione di GroupDocs.Watermark per Java
+
+La classe `WatermarkEngine` è il punto di ingresso per tutte le operazioni di GroupDocs.Watermark, gestendo il caricamento, l'elaborazione e il salvataggio dei file. Dopo aver aggiunto la dipendenza Maven, puoi istanziare il motore e iniziare a lavorare con i PDF.
+
+**Configurazione Maven**  
+Aggiungi quanto segue al tuo file `pom.xml`:
 ```xml
 <repositories>
    <repository>
@@ -64,15 +138,15 @@ Aggiungi il repository e la dipendenza al tuo file `pom.xml`:
 </dependencies>
 ```
 
-### Download diretto
-In alternativa, scarica l'ultima build da [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+**Download diretto**  
+In alternativa, scarica l'ultima versione da [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Acquisizione della licenza
-Ottieni una licenza di prova temporanea o acquista una licenza completa dal portale GroupDocs. Una licenza di prova è sufficiente per testare la funzionalità di allegato.
+### Passaggi per l'acquisizione della licenza
+Puoi ottenere una licenza temporanea o acquistare una licenza completa per sbloccare tutte le funzionalità. Per una prova gratuita, segui le istruzioni sul loro sito ufficiale.
 
-### Inizializzazione di base
-Il frammento di codice qui sotto mostra come creare un'istanza `Watermarker` che punta a un PDF di esempio:
-
+### Inizializzazione e configurazione di base
+Inizializza GroupDocs.Watermark nella tua applicazione Java come segue:
+La classe `Watermarker` rappresenta un documento PDF e fornisce metodi per manipolare il suo contenuto, inclusa l'aggiunta di allegati.
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -88,13 +162,20 @@ public class WatermarkSetup {
 }
 ```
 
-## Come aggiungere allegati a PDF in Java
+## Guida all'implementazione
 
-Di seguito trovi una guida passo‑passo che dimostra **come allegare file** a un PDF utilizzando GroupDocs.Watermark.
+Ora, esaminiamo il processo di aggiunta di allegati a un PDF usando GroupDocs.Watermark in Java.
 
-### Passo 1: Caricare il documento PDF
-Per prima cosa, carica il PDF di destinazione con `PdfLoadOptions` in modo che la libreria sappia come interpretare il file:
+### Aggiungere allegati a un documento PDF
 
+#### Panoramica
+Questa funzionalità consente di allegare file aggiuntivi a un documento PDF esistente. Raggruppare documenti correlati insieme può migliorare significativamente la loro utilità.
+
+#### Guida passo‑a‑passo
+
+##### 1. Carica il documento PDF
+Inizia caricando il tuo PDF usando `PdfLoadOptions`:
+`PdfLoadOptions` configura come il PDF viene aperto, consentendo di impostare l'uso della memoria e le opzioni di password.
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -106,9 +187,8 @@ PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-### Passo 2: Accedere al contenuto PDF
-Recupera l'oggetto `PdfContent`, che ti dà accesso alla collezione di allegati:
-
+##### 2. Accedi al contenuto PDF
+Recupera il `PdfContent` per lavorare con gli allegati:
 ```java
 import com.groupdocs.watermark.contents.PdfContent;
 
@@ -116,25 +196,22 @@ import com.groupdocs.watermark.contents.PdfContent;
 PdfContent pdfContent = watermarker.getContent(PdfContent.class);
 ```
 
-### Passo 3: Caricare i byte dell'allegato
-Leggi il file che desideri incorporare in un array di byte. Può essere di qualsiasi tipo—Word, Excel, immagini, ecc.:
-
+##### 3. Carica i byte dell'allegato
+Prepara i dati dell'allegato che desideri aggiungere:
 ```java
 byte[] attachmentBytes = { /* Byte data for your document */ };
 ```
 
-### Passo 4: Aggiungere l'allegato
-Crea un'istanza `PdfAttachment` e aggiungila all'elenco di allegati del PDF:
-
+##### 4. Aggiungi l'allegato
+Usa il metodo `getAttachments().add()` per allegare i file:
 ```java
 // Add the attachment to the PDF
 groupdocs.watermark.contents.PdfAttachment attachment = new PdfAttachment(attachmentBytes, "sample doc", "sample doc as attachment");
 pdfContent.getAttachments().add(attachment);
 ```
 
-### Passo 5: Salvare le modifiche e chiudere le risorse
-Salva il PDF modificato in un nuovo file e pulisci le risorse:
-
+##### 5. Salva le modifiche e chiudi le risorse
+Assicurati di salvare le modifiche e chiudere correttamente le risorse:
 ```java
 // Save changes to a new PDF file
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
@@ -143,58 +220,67 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/output_document.pdf");
 watermarker.close();
 ```
 
-## Problemi comuni e soluzioni
-
-| Problema | Perché accade | Soluzione |
-|----------|----------------|-----------|
-| **Errori di percorso file** | Percorso relativo/assoluto errato | Verifica che `YOUR_DOCUMENT_DIRECTORY` e `YOUR_OUTPUT_DIRECTORY` esistano e siano leggibili/scrivibili. |
-| **Out‑of‑memory per allegati di grandi dimensioni** | Caricare file enormi in un array di byte consuma RAM | Comprimi i file prima di incorporarli o trasmettili in blocchi se lavori con binari molto grandi. |
-| **Licenza non trovata** | Uso della libreria senza un file di licenza valido | Posiziona il file `GroupDocs.Watermark.lic` nel classpath o imposta la licenza programmaticamente. |
+### Suggerimenti per la risoluzione dei problemi
+- **Errori di percorso file**: Assicurati che i percorsi siano corretti e accessibili.  
+- **Problemi di memoria**: Ottimizza le dimensioni degli allegati per migliori prestazioni; la libreria trasmette i dati per mantenere basso l'uso della memoria.
 
 ## Applicazioni pratiche
+Aggiungere allegati a PDF può essere utile in vari scenari:
 
-Incorporare file all'interno dei PDF è utile in molti settori:
+1. **Documenti legali** – Allega contratti correlati, prove o allegati.  
+2. **Proposte di progetto** – Includi immagini supplementari, fogli di calcolo o file CAD.  
+3. **Articoli accademici** – Aggiungi codice sorgente, set di dati o contenuti multimediali come materiale di supporto.  
 
-1. **Contratti legali** – Allegare esibizioni, prove o allegati.  
-2. **Proposte di progetto** – Includere fogli di calcolo di supporto, disegni CAD o rendering.  
-3. **Ricerca accademica** – Raggruppare set di dati grezzi o snippet di codice per la riproducibilità.  
+L'integrazione con sistemi di gestione documentale (DMS) o piattaforme di archiviazione cloud può automatizzare ulteriormente il processo di raggruppamento.
 
-Questi casi d'uso illustrano **come allegare file** affinché le parti interessate ricevano un unico pacchetto autonomo.
+## Considerazioni sulle prestazioni
+Per prestazioni ottimali:
 
-## Suggerimenti sulle prestazioni
-
-- Mantieni le dimensioni degli allegati moderate; binari di grandi dimensioni aumentano la dimensione del file PDF e l'uso di memoria.  
-- Riutilizza una singola istanza `Watermarker` quando elabori molti PDF in batch per ridurre il sovraccarico di inizializzazione.  
-- Aggiorna all'ultima versione di GroupDocs.Watermark per beneficiare di miglioramenti delle prestazioni e correzioni di bug.
+- Riduci al minimo le dimensioni degli allegati per diminuire l'uso della memoria.  
+- Usa pratiche efficienti di gestione dei file in Java (ad es., `try‑with‑resources`).  
+- Aggiorna regolarmente GroupDocs.Watermark per beneficiare di miglioramenti delle prestazioni e correzioni di bug.
 
 ## Conclusione
-Adesso disponi di un metodo completo e pronto per la produzione per **aggiungere allegati a file PDF** utilizzando GroupDocs.Watermark per Java. Seguendo i passaggi sopra, puoi incorporare qualsiasi documento di supporto, migliorare la collaborazione e mantenere un formato di consegna pulito. Esplora funzionalità aggiuntive come watermarking, redaction e estrazione di contenuti per costruire una pipeline di elaborazione PDF completa.
+Aggiungere allegati a PDF usando GroupDocs.Watermark per Java è un processo semplice che può migliorare significativamente l'utilità dei documenti. Seguendo questa guida, hai imparato come implementare efficacemente questa funzionalità e ne hai esplorato le applicazioni pratiche.
+
+Come prossimi passi, considera di esplorare altre funzionalità della libreria GroupDocs.Watermark — come watermarking, redazione o estrazione del contenuto — e integrarle in pipeline di elaborazione documenti più ampie.
 
 ## Domande frequenti
 
-**D: Posso aggiungere più allegati a un PDF?**  
-R: Sì. Chiama `pdfContent.getAttachments().add()` per ogni file che desideri incorporare.
+**Q: Posso aggiungere più allegati a un PDF?**  
+A: Sì, ripeti la chiamata `add()` per ogni file che desideri incorporare, e ciascuno apparirà come voce separata nel pannello degli allegati del visualizzatore PDF.
 
-**D: Quali tipi di file sono supportati come allegati?**  
-R: Qualsiasi file che può essere rappresentato come array di byte—PDF, DOCX, XLSX, PNG, ZIP, ecc.
+**Q: Quali tipi di file possono essere allegati?**  
+A: Qualsiasi file che può essere rappresentato come array di byte — i tipi comuni includono DOCX, XLSX, PNG, ZIP e persino file eseguibili.
 
-**D: Come devo gestire file molto grandi?**  
-R: Comprimi i file in anticipo o archiviali esternamente e fai riferimento a essi tramite un collegamento ipertestuale anziché incorporarli.
+**Q: Come gestisco file di grandi dimensioni?**  
+A: Comprimi i file prima di allegarli o archiviali esternamente e fai riferimento a loro con un allegato segnaposto leggero; la libreria trasmette i dati per mantenere basso l'uso della RAM.
 
-**D: Esiste un limite al numero di allegati?**  
-R: Tecnicamente no, ma un numero estremamente elevato può influire sulle prestazioni e sulla dimensione del PDF.
+**Q: Esiste un limite al numero di allegati?**  
+A: Non ci sono limiti espliciti, ma allegare centinaia di file di grandi dimensioni può influire sulle prestazioni; monitora il consumo di memoria e considera di suddividere il PDF se necessario.
 
-**D: Questo può essere usato in applicazioni Java cloud‑native?**  
-R: Assolutamente. L'API funziona in qualsiasi runtime Java, inclusi container e funzioni serverless.
+**Q: Questa funzionalità può essere usata in applicazioni cloud?**  
+A: Sì, GroupDocs.Watermark è pienamente compatibile con ambienti cloud come AWS Lambda, Azure Functions e Google Cloud Run.
 
-**Ultimo aggiornamento:** 2026-01-18  
-**Testato con:** GroupDocs.Watermark 24.11 per Java  
-**Autore:** GroupDocs  
+**Q: L'aggiunta di un allegato influisce sulla sicurezza del PDF?**  
+A: Gli allegati ereditano le impostazioni di sicurezza del PDF. Se il PDF è criptato, devi fornire la password al momento del caricamento e l'allegato sarà criptato anch'esso.
 
 ## Risorse
-- **Documentazione:** [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)
-- **Riferimento API:** [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)
-- **Download:** [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)
-- **GitHub:** [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- **Supporto gratuito:** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
-- **Licenza temporanea:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Documentazione**: [GroupDocs Watermark Java Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Riferimento API**: [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Download**: [Latest GroupDocs Releases](https://releases.groupdocs.com/watermark/java/)  
+- **GitHub**: [GroupDocs Watermark GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Supporto gratuito**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
+- **Licenza temporanea**: [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2026-07-20  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs
+
+## Tutorial correlati
+
+- [Come estrarre allegati PDF usando GroupDocs Watermark in Java per la gestione dei documenti email](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)
+- [Accedere e iterare sugli artefatti PDF usando GroupDocs.Watermark in Java per il watermark dei documenti](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
+- [Come proteggere gli allegati PDF con GroupDocs Watermark per Java: Guida completa](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-attachments/)
