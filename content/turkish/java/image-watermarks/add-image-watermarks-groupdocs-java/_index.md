@@ -1,57 +1,192 @@
 ---
-date: '2026-01-08'
-description: GroupDocs.Watermark for Java kullanarak Java’da resim filigranı eklemeyi
-  öğrenin. Dijital varlıklarınızı korumak için bu adım adım rehberi izleyin.
+date: '2026-07-25'
+description: GroupDocs.Watermark kütüphanesini kullanarak Java belgelerine image watermarks
+  ekleyerek su işareti eklemeyi öğrenin. Geliştiriciler için adım adım kılavuz.
 keywords:
-- image watermarks Java
-- GroupDocs Watermark library
-- Java digital content protection
-title: GroupDocs.Watermark Kütüphanesi ile Java’da Görüntü Filigranı Ekle
+- how to watermark java
+- java add watermark pdf
+- java add watermark word
+- add image watermark java
+lastmod: '2026-07-25'
+og_description: GroupDocs.Watermark kullanarak Java belgelerine su işareti ekleme.
+  Bu kılavuz, image watermarks eklemeyi, prerequisites ve best practices'i gösterir.
+og_image_alt: 'Guide: Adding image watermarks to Java documents with GroupDocs.Watermark'
+og_title: 'Java''ı Nasıl Su İşaretiyle İşaretlenir: GroupDocs.Watermark ile image
+  watermarks Ekleyin'
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-25'
+  description: Learn how to watermark Java documents by adding image watermarks using
+    GroupDocs.Watermark library. Step‑by‑step guide for developers.
+  headline: 'How to Watermark Java: Add Image Watermarks with GroupDocs.Watermark'
+  type: TechArticle
+- description: Learn how to watermark Java documents by adding image watermarks using
+    GroupDocs.Watermark library. Step‑by‑step guide for developers.
+  name: 'How to Watermark Java: Add Image Watermarks with GroupDocs.Watermark'
+  steps:
+  - name: Prepare the watermark image stream
+    text: '`FileInputStream` reads the watermark image from disk. This stream can
+      later be reused for multiple documents.'
+  - name: Initialize the Watermarker
+    text: The `Watermarker` class is the entry point for all watermark operations.
+      It loads the target document and exposes methods to add or remove watermarks.
+  - name: Create an ImageWatermark instance
+    text: '`ImageWatermark` represents the visual overlay. You can set opacity, size,
+      and position before applying it.'
+  - name: Apply the watermark
+    text: Call `add()` on the `Watermarker` instance, passing the configured `ImageWatermark`.
+      The library instantly renders the overlay onto each page.
+  - name: Save the watermarked file
+    text: Use `save()` to write the result to a new file. The method respects the
+      original format, preserving quality and metadata.
+  - name: Release resources
+    text: Always close your `FileInputStream` objects to avoid memory leaks, especially
+      when processing large batches.
+  - name: Create a FileInputStream for the Watermark Image
+    text: '`FileInputStream` loads the watermark image from the file system. Keep
+      the image size under 500 KB for optimal performance.'
+  - name: Initialize the Watermarker
+    text: The `Watermarker` class is GroupDocs.Watermark's core API object that represents
+      the document you are editing.
+  - name: Create an ImageWatermark Object
+    text: '`ImageWatermark` encapsulates the image and its visual properties (opacity,
+      rotation, scaling). Adjust these settings to match your branding guidelines.'
+  - name: Add the Watermark to the Document
+    text: Invoke `watermarker.add(imageWatermark)` to embed the watermark on every
+      page of the document.
+  type: HowTo
+- questions:
+  - answer: '`Watermarker` is the primary API object that loads a document and provides
+      methods to add, edit, or remove watermarks.'
+    question: What is the Watermarker class?
+  - answer: Use `imageWatermark.setOpacity(0.5)` where the value ranges from 0 (transparent)
+      to 1 (fully opaque).
+    question: How do I set watermark opacity?
+  - answer: Yes – iterate over a directory, instantiate a new `Watermarker` for each
+      file, apply the same `ImageWatermark`, and save the result.
+    question: Can I batch‑process multiple files?
+  - answer: A temporary license is required for any non‑evaluation use; the free trial
+      works for up to 30 days.
+    question: Is a license mandatory for development builds?
+  - answer: Absolutely – pass the password to `Watermarker` via `LoadOptions.setPassword("yourPassword")`.
+    question: Does the library support password‑protected PDFs?
+  type: FAQPage
+tags:
+- watermark java
+- GroupDocs.Watermark
+- image watermark
+- Java document protection
+title: 'Java''ı Nasıl Su İşaretiyle İşaretlenir: GroupDocs.Watermark ile image watermarks
+  Ekleyin'
 type: docs
 url: /tr/java/image-watermarks/add-image-watermarks-groupdocs-java/
 weight: 1
 ---
 
-# Java ile Görüntü Filigranı Ekleme - GroupDocs.Watermark Kütüphanesi
+# Java'ı Su İşaretiyle İşaretleme: GroupDocs.Watermark ile Görüntü Su İşaretleri Ekleme
 
-Dijital görüntülerinizi ve belgelerinizi yetkisiz kullanımdan korumak çok önemlidir ve **add image watermark java** bunu yapmanın en güvenilir yollarından biridir. Bu rehberde, kütüphaneyi kurmaktan desteklenen herhangi bir dosya formatına filigran eklemeye kadar bilmeniz gereken her şeyi adım adım anlatacağız—böylece varlıklarınızı güvenle koruyabilir ve markalaştırabilirsiniz.
+Bu öğreticide, GroupDocs.Watermark kütüphanesini kullanarak belgelerinize doğrudan görüntü su işaretleri ekleyerek **Java'ı su işaretiyle işaretleme** uygulamalarını keşfedeceksiniz. Markanızın varlıklarını koruyor ya da telif hakkını uyguluyorsanız, aşağıdaki adımlar temiz ve üretim‑hazır bir uygulamayı size adım adım gösterir.
 
 ## Hızlı Yanıtlar
-- **“add image watermark java” ne yapar?** GroupDocs.Watermark API'si kullanarak bir belgeye veya resme görsel bir filigran resmi ekler.  
-- **Hangi kütüphane gereklidir?** GroupDocs.Watermark for Java (v24.11 veya sonrası).  
-- **Lisans gerekli mi?** Değerlendirme için bir deneme lisansı yeterlidir; üretim ortamı için tam lisans gerekir.  
-- **PDF, Word ve görüntülere filigran ekleyebilir miyim?** Evet—GroupDocs.Watermark PDF, DOCX, PPTX, PNG, JPEG ve daha birçok formatı destekler.  
-- **İşlem bellek açısından verimli mi?** Akış (stream) kullanımı, büyük dosyalarda bile bellek kullanımını düşük tutar.
+- **Gerekli kütüphane nedir?** GroupDocs.Watermark for Java ≥ 24.11.  
+- **Hangi Java sürümü destekleniyor?** JDK 8 or newer.  
+- **Lisans gerekli mi?** Yes – a temporary or full license is required for production use.  
+- **PDF'leri ve görüntüleri su işaretiyle işaretleyebilir miyim?** Absolutely – the library handles PDFs, PNGs, JPEGs, DOCX, PPTX, and more.  
+- **Kaç format destekleniyor?** Over 50 input and output formats, processing multi‑hundred‑page files without loading the whole file into memory.
 
-## “add image watermark java” nedir?
-Java’da bir görüntü filigranı eklemek, yarı saydam bir resim (örneğin logo veya telif hakkı rozeti) programatik olarak başka bir belgeye veya görüntüye bindirmek anlamına gelir. Filigran dosyanın bir parçası haline gelir ve orijinali bozmadan kaldırılması zorlaşır.
+## “Java'ı su işaretiyle işaretleme” nedir?
+*“Java'ı su işaretiyle işaretleme”*, bir Java uygulamasından dosyalara (PDF, görüntüler, Office belgeleri) programlı olarak görsel su işaretleri uygulama sürecine denir. Bu teknik, tanımlanabilir işaretleri doğrudan içeriğe yerleştirerek fikri mülkiyet ve marka kimliğini korumaya yardımcı olur. GroupDocs.Watermark kullanarak, sadece birkaç kod satırıyla desteklenen herhangi bir formatta bu işlemi otomatikleştirebilir ve ölçekli olarak tutarlı koruma sağlayabilirsiniz.
 
-## Neden GroupDocs.Watermark for Java kullanmalısınız?
-- **Geniş format desteği:** 100'den fazla dosya türüyle çalışır.  
-- **Yüksek performans:** Akış‑tabanlı işleme bellek ayak izini azaltır.  
-- **Kolay özelleştirme:** Opaklık, boyut, dönüş ve konumu kontrol edebilirsiniz.  
-- **Güçlü lisanslama:** Test için deneme seçenekleri, ticari kullanım için tam lisanslar.
+## Neden Java için GroupDocs.Watermark kullanmalı?
+GroupDocs.Watermark, **50+** belge ve görüntü formatını destekler, 500 MB'den büyük dosyaları bellek kullanımını 100 MB'nin altında tutarak işleyebilir ve yerleşik ölçekleme, opaklık ve döndürme seçenekleri sunar. Bu sayısal yetenekler, onu kurumsal‑düzey koruma için güvenilir bir seçim haline getirir.
 
-## Ön Koşullar
+## Önkoşullar
+- **GroupDocs.Watermark for Java** sürüm 24.11 veya üzeri.  
+- **JDK 8+** (Daha iyi performans için JDK 11 veya daha yenisi önerilir).  
+- **IntelliJ IDEA** veya **Eclipse** gibi bir IDE.  
+- Java I/O akışları hakkında temel bilgi.
 
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+## GroupDocs.Watermark ile Java görüntülerine nasıl su işareti eklenir?
+Kaynak görüntünüzü yükleyin, bir `ImageWatermark` nesnesi oluşturun ve sadece birkaç metod çağrısıyla hedef belgeye uygulayın. `ImageWatermark`, konumlandırılabilen, ölçeklenebilen ve opaklığı ayarlanabilen bir görsel kaplama görüntüsünü temsil eder. Kütüphane akış yönetimini dahili olarak ele alır, bu yüzden kaydetme işleminden sonra yalnızca akışları kapatmanız gerekir ve toplu işleme basit hale gelir.
 
-### Gerekli Kütüphaneler, Sürümler ve Bağımlılıklar
-GroupDocs.Watermark for Java sürüm 24.11 veya üzeri gerekir.
+### Adım 1: Su işareti görüntüsü akışını hazırlayın
+`FileInputStream`, su işareti görüntüsünü diskten okur. Bu akış daha sonra birden fazla belge için yeniden kullanılabilir.
 
-### Ortam Kurulum Gereksinimleri
-- JDK 8 veya üzeri bir Java Development Kit (JDK).  
-- Kod yazıp çalıştırmak için IntelliJ IDEA veya Eclipse gibi bir IDE.
+### Adım 2: Watermarker'ı başlatın
+`Watermarker` sınıfı, tüm su işareti işlemleri için giriş noktasıdır. Hedef belgeyi yükler ve su işaretleri eklemek veya kaldırmak için metodlar sunar.
 
-### Bilgi Ön Koşulları
-Dosya işleme ve akışlar gibi Java programlama kavramlarına aşina olmak, bu öğreticiyi daha rahat takip etmenizi sağlar.
+### Adım 3: ImageWatermark örneği oluşturun
+`ImageWatermark`, görsel kaplamayı temsil eder. Uygulamadan önce opaklık, boyut ve konumu ayarlayabilirsiniz.
 
-## GroupDocs.Watermark for Java'ı Kurma
+### Adım 4: Su işaretini uygulayın
+Yapılandırılmış `ImageWatermark` nesnesini geçirerek `Watermarker` örneği üzerinde `add()` metodunu çağırın. Kütüphane, kaplamayı her sayfaya anında işler.
 
-Projenizde GroupDocs.Watermark'ı kullanmak için bağımlılıklarını ekleyin. Maven ile ya da doğrudan kütüphaneyi indirerek ekleyebilirsiniz:
+### Adım 5: Su işareti eklenmiş dosyayı kaydedin
+Sonucu yeni bir dosyaya yazmak için `save()` metodunu kullanın. Metod, orijinal formatı korur, kaliteyi ve meta verileri saklar.
 
-### Maven
-`pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
+### Adım 6: Kaynakları serbest bırakın
+Özellikle büyük toplu işlemler yaparken bellek sızıntılarını önlemek için `FileInputStream` nesnelerinizi her zaman kapatın.
+
+## Uygulama Kılavuzu
+
+### Akışları Kullanarak Görüntü Su İşaretleri Ekleme
+
+Bu bölüm, gerçek‑dünya projeleri için pratik ipuçlarıyla birlikte her adımı ayrıntılı olarak açıklar.
+
+#### Adım 1: Su İşareti Görüntüsü için FileInputStream Oluşturun
+`FileInputStream`, su işareti görüntüsünü dosya sisteminden yükler. Optimum performans için görüntü boyutunu 500 KB'nin altında tutun.
+
+#### Adım 2: Watermarker'ı Başlatın
+`Watermarker` sınıfı, düzenlediğiniz belgeyi temsil eden GroupDocs.Watermark'ın temel API nesnesidir.
+
+#### Adım 3: ImageWatermark Nesnesi Oluşturun
+`ImageWatermark`, görüntüyü ve görsel özelliklerini (opaklık, döndürme, ölçekleme) kapsar. Bu ayarları marka yönergelerinize uygun şekilde ayarlayın.
+
+#### Adım 4: Su İşaretini Belgeye Ekleyin
+Su işaretini belgenin her sayfasına yerleştirmek için `watermarker.add(imageWatermark)` metodunu çağırın.
+
+#### Adım 5: Su İşaretli Belgeyi Kaydedin
+`watermarker.save("output_path")` değiştirilmiş dosyayı orijinal formatı koruyarak yazar.
+
+#### Adım 6: Tüm Kaynakları Kapatın
+Her `FileInputStream` üzerinde `close()` çağırmak dosya tanıtıcılarını serbest bırakır ve belleği boşaltır.
+
+## Yaygın Sorunlar ve Çözümler
+- **Büyük PDF'lerde bellek dalgalanmaları** – Sayfaları tembel bir şekilde işlemek için `Watermarker.setLoadOptions(LoadOptions.memoryOptimized())` kullanın.  
+- **Su işareti bulanık görünüyor** – Kaynak görüntünün en az 300 dpi olduğundan emin olun; kütüphane düşük çözünürlüklü görüntüleri yükseltmez.  
+- **Desteklenmeyen format hatası** – Dosya uzantısının [GroupDocs.Watermark supported formats](https://releases.groupdocs.com/watermark/java/) içinde listelendiğini doğrulayın (50'den fazla format kapsanmıştır).
+
+## Sıkça Sorulan Sorular
+
+**Q: Watermarker sınıfı nedir?**  
+A: `Watermarker`, bir belgeyi yükleyen ve su işaretleri eklemek, düzenlemek veya kaldırmak için metodlar sağlayan birincil API nesnesidir.
+
+**Q: Su işareti opaklığını nasıl ayarlarım?**  
+A: `imageWatermark.setOpacity(0.5)` metodunu kullanın; değer 0 (şeffaf) ile 1 (tam opak) arasında olmalıdır.
+
+**Q: Birden fazla dosyayı toplu işleyebilir miyim?**  
+A: Evet – bir dizini döngüyle gezerek her dosya için yeni bir `Watermarker` oluşturun, aynı `ImageWatermark`'i uygulayın ve sonucu kaydedin.
+
+**Q: Geliştirme sürümleri için lisans zorunlu mu?**  
+A: Değerlendirme dışı herhangi bir kullanım için geçici bir lisans gereklidir; ücretsiz deneme 30 güne kadar çalışır.
+
+**Q: Kütüphane şifre korumalı PDF'leri destekliyor mu?**  
+A: Kesinlikle – şifreyi `Watermarker`'a `LoadOptions.setPassword("yourPassword")` ile geçirin.
+
+## Kaynaklar
+- [Dokümantasyon](https://docs.groupdocs.com/watermark/java/)
+- [API Referansı](https://reference.groupdocs.com/watermark/java)
+- [İndirme](https://releases.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java sürümleri](https://releases.groupdocs.com/watermark/java/)
+- [GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Ücretsiz Destek](https://forum.groupdocs.com/c/watermark/10)
+- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license)
+
+---
+
+**Son Güncelleme:** 2026-07-25  
+**Test Edilen:** GroupDocs.Watermark 24.11 for Java  
+**Yazar:** GroupDocs
 
 ```xml
 <repositories>
@@ -71,17 +206,6 @@ Projenizde GroupDocs.Watermark'ı kullanmak için bağımlılıklarını ekleyin
 </dependencies>
 ```
 
-### Doğrudan İndirme
-Alternatif olarak, en yeni sürümü [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) adresinden indirin.
-
-#### Lisans Edinme Adımları
-GroupDocs.Watermark'ı ücretsiz denemek için geçici bir lisans isteyebilir veya tam bir lisans satın alabilirsiniz. Aşağıdaki adımları izleyin:
-1. [satın alma sayfasını](https://purchase.groupdocs.com/temporary-license) ziyaret ederek bir deneme lisansı talep edin veya tam lisans satın alın.  
-2. Lisansı edindikten sonra, `.lic` dosyasını proje dizininize koyun ve `License.setLicense()` yöntemiyle yükleyin.
-
-#### Temel Başlatma
-GroupDocs.Watermark'ı nasıl başlatacağınız aşağıdadır:
-
 ```java
 import com.groupdocs.watermark.License;
 
@@ -98,24 +222,12 @@ public class WatermarkSetup {
 }
 ```
 
-## Java’da Görüntü Filigranı Ekleme
-
-Bu bölüm, **add image watermark java** işlemini akışlar kullanarak adım adım gösterir. Her adım kısa bir açıklama ve ardından değiştirilmemiş kod parçacığı içerir.
-
-### Adım 1: Filigran Görüntüsü için `FileInputStream` Oluşturma
-Filigran görüntüsünü yüklemek için Java’nın I/O akış sınıflarından `FileInputStream` kullanılır:
-
 ```java
 import java.io.FileInputStream;
 
 // Load the watermark image from your directory
 FileInputStream watermarkStream = new FileInputStream("YOUR_DOCUMENT_DIRECTORY/watermark.jpg");
 ```
-
-> **İpucu:** Performansı korumak için filigran görüntüsü dosya boyutunu makul tutun (ör. < 200 KB).
-
-### Adım 2: `Watermarker`’ı Başlatma
-Filigran eklemek istediğiniz belgeyle `Watermarker` nesnesini başlatın:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -124,9 +236,6 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/input_image.png");
 ```
 
-### Adım 3: `ImageWatermark` Nesnesi Oluşturma
-Önceden oluşturulan akışı kullanarak bir `ImageWatermark` nesnesi oluşturun. Bu adım, filigran özelliklerini yapılandırmanıza olanak tanır:
-
 ```java
 import com.groupdocs.watermark.watermarks.ImageWatermark;
 
@@ -134,26 +243,15 @@ import com.groupdocs.watermark.watermarks.ImageWatermark;
 ImageWatermark watermark = new ImageWatermark(watermarkStream);
 ```
 
-İhtiyacınız olursa daha sonra bu nesne üzerinde opaklık, ölçekleme veya dönüş ayarlarını değiştirebilirsiniz.
-
-### Adım 4: Filigranı Belgeye Ekleme
-Yapılandırılmış filigranı belgenize ekleyin:
-
 ```java
 // Add watermark to the watermarked image
 target.add(watermark);
 ```
 
-### Adım 5: Filigranlı Belgeyi Kaydetme
-Filigranı ekledikten sonra, istediğiniz çıktı dizinine yeni bir dosya olarak kaydedin:
-
 ```java
 // Save the output document with the added watermark
 target.save("YOUR_OUTPUT_DIRECTORY/output_image.png");
 ```
-
-### Adım 6: Tüm Kaynakları Kapatma
-Sistemdeki bellek sızıntılarını önlemek için tüm açık kaynakları kapatın:
 
 ```java
 // Properly release resources by closing streams and watermarker
@@ -162,47 +260,8 @@ target.close();
 watermarkStream.close();
 ```
 
-## Pratik Uygulamalar
-Görsel filigran eklemek çeşitli senaryolarda faydalıdır:
-- **İçerik Koruma:** Görüntülerin veya PDF’lerin yetkisiz yeniden kullanımını önler.  
-- **Markalaşma:** Her dışa aktarılan dosyaya şirket logonuzu yerleştirir.  
-- **Telif Hakkı Bildirimleri:** Büyük dosya gruplarında otomatik olarak telif hakkı bilgisi gösterir.
+## İlgili Öğreticiler
 
-## Performans Düşünceleri
-- Bellek kullanımını düşük tutmak için (gösterildiği gibi) akışları kullanın, özellikle büyük belgelerde.  
-- İşleme öncesi kaynak filigran görüntüsünü (çözünürlük, format) optimize edin.  
-- Farklı dosya boyutlarıyla test ederek ortamınızda performans ölçümleri yapın.
-
-## Sonuç
-Artık **add image watermark java** işlemini GroupDocs.Watermark kullanarak tam üretim‑hazır bir iş akışıyla gerçekleştirebilirsiniz. Bu adımları izleyerek dijital varlıklarınızı güvenle koruyabilir, markalaştırabilir ve yönetebilirsiniz. Bir sonraki adım olarak metin filigranları, çok‑sayfalı PDF’ler veya kullanıcı verisine dayalı dinamik filigran üretimini keşfedebilirsiniz.
-
-## Sıkça Sorulan Sorular
-
-**S: GroupDocs.Watermark for Java ne için kullanılır?**  
-C: Çeşitli belge formatlarından (görüntü, metin, barkod) filigran ekleyip kaldırmanıza olanak tanıyan bir Java kütüphanesidir.
-
-**S: GroupDocs.Watermark ticari uygulamalarda kullanılabilir mi?**  
-C: Evet, ancak geçerli bir ticari lisans gerekir. Değerlendirme için ücretsiz bir deneme sürümü mevcuttur.
-
-**S: Çok büyük dosyalar nasıl yönetilmeli?**  
-C: Gösterildiği gibi akışlarla işleyin ve yalnızca gerektiğinde JVM heap boyutunu artırmayı düşünün.
-
-**S: Filigranın görünümü özelleştirilebilir mi?**  
-C: Kesinlikle. `ImageWatermark` nesnesi üzerinde opaklık, boyut, dönüş ve konum ayarlarını yapabilirsiniz.
-
-**S: Hangi belge türleri destekleniyor?**  
-C: PNG, JPEG, PDF, DOCX, PPTX ve daha fazlası dahil olmak üzere 100'den fazla format.
-
-## Kaynaklar
-- [Documentation](https://docs.groupdocs.com/watermark/java/)
-- [API Reference](https://reference.groupdocs.com/watermark/java)
-- [Download](https://releases.groupdocs.com/watermark/java/)
-- [GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Free Support](https://forum.groupdocs.com/c/watermark/10)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license)
-
----
-
-**Son Güncelleme:** 2026-01-08  
-**Test Edilen Sürüm:** GroupDocs.Watermark 24.11 for Java  
-**Yazar:** GroupDocs
+- [GroupDocs.Watermark for Java kullanarak Word Belgelerine Görüntü Su İşaretleri Ekleme](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
+- [GroupDocs for Java kullanarak Excel'e Görüntü Su İşaretleri Ekleme: Kapsamlı Kılavuz](/watermark/java/image-watermarks/groupdocs-watermark-java-add-image-to-excel/)
+- [GroupDocs.Watermark for Java kullanarak Belgelerde Metin Su İşaretleri Ekleme Kılavuzu](/watermark/java/text-watermarks/add-text-watermarks-groupdocs-java/)

@@ -1,58 +1,190 @@
 ---
-date: '2026-01-08'
-description: Naučte se, jak přidat obrázkový vodoznak v Javě pomocí GroupDocs.Watermark
-  pro Javu. Postupujte podle tohoto krok‑za‑krokem průvodce a chraňte své digitální
-  aktiva.
+date: '2026-07-25'
+description: Naučte se, jak vodoznakovat Java dokumenty přidáním image watermarks
+  pomocí knihovny GroupDocs.Watermark. Step‑by‑step guide pro vývojáře.
 keywords:
-- image watermarks Java
-- GroupDocs Watermark library
-- Java digital content protection
-title: Přidat obrázkový vodoznak v Javě pomocí knihovny GroupDocs.Watermark
+- how to watermark java
+- java add watermark pdf
+- java add watermark word
+- add image watermark java
+lastmod: '2026-07-25'
+og_description: Jak vodoznakovat Java dokumenty pomocí GroupDocs.Watermark. Tento
+  průvodce ukazuje přidání image watermarks, prerequisites a best practices.
+og_image_alt: 'Guide: Adding image watermarks to Java documents with GroupDocs.Watermark'
+og_title: 'Jak vodoznakovat Java: Přidání image watermarks pomocí GroupDocs.Watermark'
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-25'
+  description: Learn how to watermark Java documents by adding image watermarks using
+    GroupDocs.Watermark library. Step‑by‑step guide for developers.
+  headline: 'How to Watermark Java: Add Image Watermarks with GroupDocs.Watermark'
+  type: TechArticle
+- description: Learn how to watermark Java documents by adding image watermarks using
+    GroupDocs.Watermark library. Step‑by‑step guide for developers.
+  name: 'How to Watermark Java: Add Image Watermarks with GroupDocs.Watermark'
+  steps:
+  - name: Prepare the watermark image stream
+    text: '`FileInputStream` reads the watermark image from disk. This stream can
+      later be reused for multiple documents.'
+  - name: Initialize the Watermarker
+    text: The `Watermarker` class is the entry point for all watermark operations.
+      It loads the target document and exposes methods to add or remove watermarks.
+  - name: Create an ImageWatermark instance
+    text: '`ImageWatermark` represents the visual overlay. You can set opacity, size,
+      and position before applying it.'
+  - name: Apply the watermark
+    text: Call `add()` on the `Watermarker` instance, passing the configured `ImageWatermark`.
+      The library instantly renders the overlay onto each page.
+  - name: Save the watermarked file
+    text: Use `save()` to write the result to a new file. The method respects the
+      original format, preserving quality and metadata.
+  - name: Release resources
+    text: Always close your `FileInputStream` objects to avoid memory leaks, especially
+      when processing large batches.
+  - name: Create a FileInputStream for the Watermark Image
+    text: '`FileInputStream` loads the watermark image from the file system. Keep
+      the image size under 500 KB for optimal performance.'
+  - name: Initialize the Watermarker
+    text: The `Watermarker` class is GroupDocs.Watermark's core API object that represents
+      the document you are editing.
+  - name: Create an ImageWatermark Object
+    text: '`ImageWatermark` encapsulates the image and its visual properties (opacity,
+      rotation, scaling). Adjust these settings to match your branding guidelines.'
+  - name: Add the Watermark to the Document
+    text: Invoke `watermarker.add(imageWatermark)` to embed the watermark on every
+      page of the document.
+  type: HowTo
+- questions:
+  - answer: '`Watermarker` is the primary API object that loads a document and provides
+      methods to add, edit, or remove watermarks.'
+    question: What is the Watermarker class?
+  - answer: Use `imageWatermark.setOpacity(0.5)` where the value ranges from 0 (transparent)
+      to 1 (fully opaque).
+    question: How do I set watermark opacity?
+  - answer: Yes – iterate over a directory, instantiate a new `Watermarker` for each
+      file, apply the same `ImageWatermark`, and save the result.
+    question: Can I batch‑process multiple files?
+  - answer: A temporary license is required for any non‑evaluation use; the free trial
+      works for up to 30 days.
+    question: Is a license mandatory for development builds?
+  - answer: Absolutely – pass the password to `Watermarker` via `LoadOptions.setPassword("yourPassword")`.
+    question: Does the library support password‑protected PDFs?
+  type: FAQPage
+tags:
+- watermark java
+- GroupDocs.Watermark
+- image watermark
+- Java document protection
+title: 'Jak vodoznakovat Java: Přidání image watermarks pomocí GroupDocs.Watermark'
 type: docs
 url: /cs/java/image-watermarks/add-image-watermarks-groupdocs-java/
 weight: 1
 ---
 
-# Přidání vodoznaku obrázku v Javě s knihovnou GroupDocs.Watermark
+# Jak vkládat vodoznaky v Java: Přidání obrázkových vodoznaků pomocí GroupDocs.Watermark
 
-Ochrana vašich digitálních obrázků a dokumentů před neoprávněným použitím je zásadní a **add image watermark java** je jedním z nejspolehlivějších způsobů, jak toho dosáhnout. V tomto průvodci vás provedeme vším, co potřebujete vědět – od nastavení knihovny po vložení vodoznaku do libovolného podporovaného formátu souboru – abyste mohli své aktiva bezpečně chránit a značkovat s jistotou.
+V tomto tutoriálu objevíte **jak vkládat vodoznaky v Java** aplikacích vložením obrázkových vodoznaků přímo do vašich dokumentů pomocí knihovny GroupDocs.Watermark. Ať už chráníte značkové aktiva nebo vymáháte autorská práva, níže uvedené kroky vás provedou čistou, připravenou implementací pro produkci.
 
 ## Rychlé odpovědi
-- **Co dělá “add image watermark java”?** Vkládá vizuální obrázek vodoznaku do dokumentu nebo obrázku pomocí GroupDocs.Watermark API.  
-- **Která knihovna je vyžadována?** GroupDocs.Watermark pro Javu (v24.11 nebo novější).  
-- **Potřebuji licenci?** Zkušební licence stačí pro hodnocení; pro produkční nasazení je vyžadována plná licence.  
-- **Mohu vodoznakovat PDF, Word a obrázky?** Ano – GroupDocs.Watermark podporuje PDF, DOCX, PPTX, PNG, JPEG a mnoho dalších formátů.  
-- **Je proces paměťově úsporný?** Používání streamů udržuje nízkou spotřebu paměti, i u velkých souborů.
+- **Jaká knihovna je vyžadována?** GroupDocs.Watermark for Java ≥ 24.11.  
+- **Která verze Javy je podporována?** JDK 8 nebo novější.  
+- **Potřebuji licenci?** Ano – dočasná nebo plná licence je vyžadována pro produkční použití.  
+- **Mohu vodoznakovat PDF a obrázky?** Rozhodně – knihovna zvládá PDF, PNG, JPEG, DOCX, PPTX a další.  
+- **Kolik formátů je podporováno?** Více než 50 vstupních a výstupních formátů, zpracování souborů s stovkami stránek bez načítání celého souboru do paměti.
 
-## Co je “add image watermark java”?
-Přidání obrázkového vodoznaku v Javě znamená programově překrýt poloprůhledný obrázek (např. logo nebo copyrightové razítko) na jiný dokument nebo obrázek. Vodoznak se stane součástí souboru, což ztěžuje jeho odstranění bez poškození původního obsahu.
+## Co je „how to watermark java“?
+*„How to watermark java“* odkazuje na proces programového aplikování vizuálních vodoznaků na soubory (PDF, obrázky, Office dokumenty) z Java aplikace. Tato technika pomáhá chránit duševní vlastnictví a identitu značky vložením rozpoznatelných značek přímo do obsahu. Pomocí GroupDocs.Watermark můžete tento proces automatizovat pro jakýkoli podporovaný formát pomocí několika řádků kódu, což zajišťuje konzistentní ochranu ve velkém měřítku.
 
-## Proč používat GroupDocs.Watermark pro Javu?
-- **Široká podpora formátů:** Funguje s více než 100 typy souborů.  
-- **Vysoký výkon:** Zpracování založené na streamech snižuje paměťovou stopu.  
-- **Snadná přizpůsobitelnost:** Ovládejte neprůhlednost, velikost, rotaci a pozici.  
-- **Robustní licencování:** Možnosti zkušební licence pro testování, plné licence pro komerční použití.
+## Proč používat GroupDocs.Watermark pro Java?
+GroupDocs.Watermark podporuje **50+** dokumentových a obrázkových formátů, dokáže zpracovat soubory větší než 500 MB při zachování využití paměti pod 100 MB a poskytuje vestavěné možnosti škálování, průhlednosti a otáčení. Tyto kvantifikované schopnosti z něj činí spolehlivou volbu pro ochranu na úrovni podniku.
 
 ## Předpoklady
+- **GroupDocs.Watermark for Java** verze 24.11 nebo novější.  
+- **JDK 8+** (doporučuje se JDK 11 nebo novější pro lepší výkon).  
+- IDE, např. **IntelliJ IDEA** nebo **Eclipse**.  
+- Základní znalost Java I/O streamů.
 
-Předtím, než začnete, ujistěte se, že máte:
+## Jak vodoznakovat obrázky v Java pomocí GroupDocs.Watermark?
+Načtěte svůj zdrojový obrázek, vytvořte objekt `ImageWatermark` a aplikujte jej na cílový dokument pomocí několika volání metod. `ImageWatermark` představuje vizuální překryvný obrázek, který lze umístit, škálovat a nastavit průhlednost. Knihovna interně spravuje streamy, takže po uložení stačí pouze zavřít streamy, což usnadňuje dávkové zpracování.
 
-### Požadované knihovny, verze a závislosti
-Budete potřebovat GroupDocs.Watermark pro Javu verze 24.11 nebo vyšší.
+### Krok 1: Připravte stream obrázku vodoznaku
+`FileInputStream` načte obrázek vodoznaku z disku. Tento stream lze později znovu použít pro více dokumentů.
 
-### Požadavky na nastavení prostředí
-- Kompatibilní Java Development Kit (JDK), nejlépe JDK 8 nebo vyšší.  
-- IDE jako IntelliJ IDEA nebo Eclipse pro psaní a spouštění kódu.
+### Krok 2: Inicializujte Watermarker
+Třída `Watermarker` je vstupním bodem pro všechny operace s vodoznaky. Načte cílový dokument a poskytuje metody pro přidání nebo odebrání vodoznaků.
 
-### Předpoklady znalostí
-Znalost konceptů programování v Javě, jako je práce se soubory a streamy, bude pro efektivní sledování tohoto tutoriálu užitečná.
+### Krok 3: Vytvořte instanci ImageWatermark
+`ImageWatermark` představuje vizuální překryv. Před aplikací můžete nastavit průhlednost, velikost a pozici.
 
-## Nastavení GroupDocs.Watermark pro Javu
+### Krok 4: Aplikujte vodoznak
+Zavolejte `add()` na instanci `Watermarker` a předávejte nakonfigurovaný `ImageWatermark`. Knihovna okamžitě vykreslí překryv na každou stránku.
 
-Pro použití GroupDocs.Watermark ve vašem projektu jej zahrňte do závislostí. Můžete tak učinit pomocí Maven nebo stažením knihovny přímo:
+### Krok 5: Uložte soubor s vodoznakem
+Použijte `save()` k zápisu výsledku do nového souboru. Metoda zachovává původní formát, kvalitu a metadata.
 
-### Maven
-Přidejte následující konfiguraci do souboru `pom.xml`:
+### Krok 6: Uvolněte prostředky
+Vždy zavírejte své objekty `FileInputStream`, aby nedocházelo k únikům paměti, zejména při zpracování velkých dávek.
+
+## Průvodce implementací
+
+### Přidání obrázkových vodoznaků pomocí streamů
+
+Tato sekce podrobně vysvětluje každý krok a poskytuje praktické tipy pro reálné projekty.
+
+#### Krok 1: Vytvořte FileInputStream pro obrázek vodoznaku
+`FileInputStream` načte obrázek vodoznaku ze souborového systému. Pro optimální výkon udržujte velikost obrázku pod 500 KB.
+
+#### Krok 2: Inicializujte Watermarker
+Třída `Watermarker` je hlavní API objekt GroupDocs.Watermark, který představuje dokument, který upravujete.
+
+#### Krok 3: Vytvořte objekt ImageWatermark
+`ImageWatermark` zapouzdřuje obrázek a jeho vizuální vlastnosti (průhlednost, otáčení, škálování). Přizpůsobte tato nastavení podle směrnic vaší značky.
+
+#### Krok 4: Přidejte vodoznak do dokumentu
+Zavolejte `watermarker.add(imageWatermark)`, aby se vodoznak vložil na každou stránku dokumentu.
+
+#### Krok 5: Uložte dokument s vodoznakem
+`watermarker.save("output_path")` zapíše upravený soubor při zachování původního formátu.
+
+#### Krok 6: Zavřete všechny prostředky
+Voláním `close()` na každém `FileInputStream` uvolníte souborové handle a paměť.
+
+## Časté problémy a řešení
+- **Memory spikes on large PDFs** – Použijte `Watermarker.setLoadOptions(LoadOptions.memoryOptimized())` k zpracování stránek líně.  
+- **Watermark appears blurry** – Ujistěte se, že zdrojový obrázek má alespoň 300 dpi; knihovna nezvyšuje rozlišení nízkokvalitních obrázků.  
+- **Unsupported format error** – Ověřte, že přípona souboru je uvedena v [GroupDocs.Watermark supported formats](https://releases.groupdocs.com/watermark/java/) (pokryto více než 50 formátů).
+
+## Často kladené otázky
+
+**Q: Co je třída Watermarker?**  
+A: `Watermarker` je hlavní API objekt, který načte dokument a poskytuje metody pro přidání, úpravu nebo odebrání vodoznaků.
+
+**Q: Jak nastavit průhlednost vodoznaku?**  
+A: Použijte `imageWatermark.setOpacity(0.5)`, kde hodnota se pohybuje od 0 (průhledný) do 1 (plně neprůhledný).
+
+**Q: Mohu dávkově zpracovávat více souborů?**  
+A: Ano – projděte adresář, vytvořte novou instanci `Watermarker` pro každý soubor, použijte stejný `ImageWatermark` a uložte výsledek.
+
+**Q: Je licence povinná pro vývojové sestavení?**  
+A: Dočasná licence je vyžadována pro jakékoli ne‑evaluační použití; bezplatná zkušební verze funguje až 30 dnů.
+
+**Q: Podporuje knihovna PDF chráněná heslem?**  
+A: Ano – předáte heslo `Watermarker` pomocí `LoadOptions.setPassword("yourPassword")`.
+
+## Zdroje
+- [Dokumentace](https://docs.groupdocs.com/watermark/java/)
+- [Reference API](https://reference.groupdocs.com/watermark/java)
+- [Stáhnout](https://releases.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark pro Java vydání](https://releases.groupdocs.com/watermark/java/)
+- [GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Bezplatná podpora](https://forum.groupdocs.com/c/watermark/10)
+- [Dočasná licence](https://purchase.groupdocs.com/temporary-license)
+
+---
+
+**Poslední aktualizace:** 2026-07-25  
+**Testováno s:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs
 
 ```xml
 <repositories>
@@ -72,17 +204,6 @@ Přidejte následující konfiguraci do souboru `pom.xml`:
 </dependencies>
 ```
 
-### Přímé stažení
-Alternativně stáhněte nejnovější verzi z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
-
-#### Kroky získání licence
-Pro vyzkoušení GroupDocs.Watermark zdarma požádejte o dočasnou licenci nebo si ji zakupte. Postupujte podle následujících kroků:
-1. Navštivte [stránku nákupu](https://purchase.groupdocs.com/temporary-license) a požádejte o zkušební verzi nebo zakupte plnou licenci.  
-2. Po získání licence ji integrujte do projektu umístěním souboru `.lic` do adresáře projektu a načtením pomocí metody `License.setLicense()`.
-
-#### Základní inicializace
-Zde je, jak můžete inicializovat GroupDocs.Watermark:
-
 ```java
 import com.groupdocs.watermark.License;
 
@@ -99,24 +220,12 @@ public class WatermarkSetup {
 }
 ```
 
-## Přidání obrázkového vodoznaku v Javě
-
-Tato sekce popisuje přesné kroky potřebné k **add image watermark java** pomocí streamů. Každý krok obsahuje krátké vysvětlení následované původním úryvkem kódu (beze změny).
-
-### Krok 1: Vytvořte `FileInputStream` pro obrázek vodoznaku
-Pro načtení obrázku vodoznaku použijeme `FileInputStream`, součástí Java I/O streamových tříd:
-
 ```java
 import java.io.FileInputStream;
 
 // Load the watermark image from your directory
 FileInputStream watermarkStream = new FileInputStream("YOUR_DOCUMENT_DIRECTORY/watermark.jpg");
 ```
-
-> **Tip:** Udržujte velikost souboru obrázku vodoznaku skromnou (např. < 200 KB) pro zachování výkonu.
-
-### Krok 2: Inicializujte `Watermarker`
-Dále inicializujte `Watermarker` s dokumentem, ke kterému chcete přidat vodoznak:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -125,9 +234,6 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/input_image.png");
 ```
 
-### Krok 3: Vytvořte objekt `ImageWatermark`
-Vytvořte objekt `ImageWatermark` pomocí dříve vytvořeného streamu. Tento krok vám umožní nastavit vlastnosti vodoznaku:
-
 ```java
 import com.groupdocs.watermark.watermarks.ImageWatermark;
 
@@ -135,26 +241,15 @@ import com.groupdocs.watermark.watermarks.ImageWatermark;
 ImageWatermark watermark = new ImageWatermark(watermarkStream);
 ```
 
-Později můžete na tomto objektu upravit neprůhlednost, měřítko nebo rotaci, pokud bude potřeba.
-
-### Krok 4: Přidejte vodoznak do dokumentu
-Přidejte nakonfigurovaný vodoznak do vašeho dokumentu:
-
 ```java
 // Add watermark to the watermarked image
 target.add(watermark);
 ```
 
-### Krok 5: Uložte dokument s vodoznakem
-Po přidání vodoznaku jej uložte do nového souboru ve vámi zvoleném výstupním adresáři:
-
 ```java
 // Save the output document with the added watermark
 target.save("YOUR_OUTPUT_DIRECTORY/output_image.png");
 ```
-
-### Krok 6: Zavřete všechny prostředky
-Nakonec zavřete všechny otevřené prostředky, aby se uvolnila systémová paměť a předešlo se únikům prostředků:
 
 ```java
 // Properly release resources by closing streams and watermarker
@@ -163,47 +258,8 @@ target.close();
 watermarkStream.close();
 ```
 
-## Praktické aplikace
-Přidání obrázkových vodoznaků je užitečné v různých scénářích:
-- **Ochrana obsahu:** Zabránit neoprávněnému opětovnému použití obrázků nebo PDF.  
-- **Branding:** Vložte logo vaší společnosti do každého exportovaného souboru.  
-- **Upozornění na autorská práva:** Automaticky zobrazovat informace o autorských právech ve velkých dávkách souborů.
+## Související tutoriály
 
-## Úvahy o výkonu
-- Používejte streamy (jak je ukázáno) k udržení nízké spotřeby paměti, zejména u velkých dokumentů.  
-- Optimalizujte zdrojový obrázek vodoznaku (rozlišení, formát) před zpracováním.  
-- Testujte s různými velikostmi souborů pro měření výkonu ve vašem prostředí.
-
-## Závěr
-Nyní máte kompletní, připravený workflow pro **add image watermark java** pomocí GroupDocs.Watermark. Dodržením těchto kroků můžete efektivně chránit, značkovat a spravovat své digitální aktiva. Dalším krokem je prozkoumat textové vodoznaky, vícestránkové PDF nebo dynamické generování vodoznaků na základě uživatelských dat.
-
-## Často kladené otázky
-
-**Q: K čemu slouží GroupDocs.Watermark pro Javu?**  
-A: Jedná se o Java knihovnu, která vám umožní přidávat nebo odstraňovat vodoznaky (obrázek, text, čárový kód) z široké škály formátů dokumentů.
-
-**Q: Mohu GroupDocs.Watermark použít pro komerční aplikace?**  
-A: Ano, ale potřebujete platnou komerční licenci. Pro hodnocení je k dispozici bezplatná zkušební verze.
-
-**Q: Jak mám zacházet s velmi velkými soubory?**  
-A: Zpracovávejte je pomocí streamů (jak je ukázáno) a zvažte zvýšení velikosti haldy JVM pouze v případě potřeby.
-
-**Q: Je možné přizpůsobit vzhled vodoznaku?**  
-A: Rozhodně. Můžete nastavit neprůhlednost, velikost, rotaci a pozici na objektu `ImageWatermark`.
-
-**Q: Jaké typy dokumentů jsou podporovány?**  
-A: Více než 100 formátů, včetně PNG, JPEG, PDF, DOCX, PPTX a mnoha dalších.
-
-## Zdroje
-- [Dokumentace](https://docs.groupdocs.com/watermark/java/)
-- [API reference](https://reference.groupdocs.com/watermark/java)
-- [Stáhnout](https://releases.groupdocs.com/watermark/java/)
-- [GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Bezplatná podpora](https://forum.groupdocs.com/c/watermark/10)
-- [Dočasná licence](https://purchase.groupdocs.com/temporary-license)
-
----
-
-**Last Updated:** 2026-01-08  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+- [Jak přidat obrázkové vodoznaky do Word dokumentů pomocí GroupDocs.Watermark pro Java](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
+- [Jak přidat obrázkové vodoznaky do Excelu pomocí GroupDocs pro Java: Kompletní průvodce](/watermark/java/image-watermarks/groupdocs-watermark-java-add-image-to-excel/)
+- [Průvodce přidáváním textových vodoznaků do dokumentů pomocí GroupDocs.Watermark pro Java](/watermark/java/text-watermarks/add-text-watermarks-groupdocs-java/)

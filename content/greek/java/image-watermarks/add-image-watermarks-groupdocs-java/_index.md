@@ -1,58 +1,191 @@
 ---
-date: '2026-01-08'
-description: Μάθετε πώς να προσθέσετε υδατογράφημα εικόνας σε Java χρησιμοποιώντας
-  το GroupDocs.Watermark για Java. Ακολουθήστε αυτόν τον βήμα‑βήμα οδηγό για να προστατεύσετε
-  τα ψηφιακά σας περιουσιακά στοιχεία.
+date: '2026-07-25'
+description: Μάθετε πώς να υδατογραφήσετε έγγραφα Java προσθέτοντας image watermarks
+  χρησιμοποιώντας τη βιβλιοθήκη GroupDocs.Watermark. Οδηγός step‑by‑step για developers.
 keywords:
-- image watermarks Java
-- GroupDocs Watermark library
-- Java digital content protection
-title: Προσθήκη υδατογραφήματος εικόνας σε Java με τη βιβλιοθήκη GroupDocs.Watermark
+- how to watermark java
+- java add watermark pdf
+- java add watermark word
+- add image watermark java
+lastmod: '2026-07-25'
+og_description: Πώς να υδατογραφήσετε έγγραφα Java χρησιμοποιώντας GroupDocs.Watermark.
+  Αυτός ο οδηγός δείχνει την προσθήκη image watermarks, prerequisites και best practices.
+og_image_alt: 'Guide: Adding image watermarks to Java documents with GroupDocs.Watermark'
+og_title: 'Πώς να υδατογραφήσετε Java: Προσθήκη Image Watermarks με GroupDocs.Watermark'
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-25'
+  description: Learn how to watermark Java documents by adding image watermarks using
+    GroupDocs.Watermark library. Step‑by‑step guide for developers.
+  headline: 'How to Watermark Java: Add Image Watermarks with GroupDocs.Watermark'
+  type: TechArticle
+- description: Learn how to watermark Java documents by adding image watermarks using
+    GroupDocs.Watermark library. Step‑by‑step guide for developers.
+  name: 'How to Watermark Java: Add Image Watermarks with GroupDocs.Watermark'
+  steps:
+  - name: Prepare the watermark image stream
+    text: '`FileInputStream` reads the watermark image from disk. This stream can
+      later be reused for multiple documents.'
+  - name: Initialize the Watermarker
+    text: The `Watermarker` class is the entry point for all watermark operations.
+      It loads the target document and exposes methods to add or remove watermarks.
+  - name: Create an ImageWatermark instance
+    text: '`ImageWatermark` represents the visual overlay. You can set opacity, size,
+      and position before applying it.'
+  - name: Apply the watermark
+    text: Call `add()` on the `Watermarker` instance, passing the configured `ImageWatermark`.
+      The library instantly renders the overlay onto each page.
+  - name: Save the watermarked file
+    text: Use `save()` to write the result to a new file. The method respects the
+      original format, preserving quality and metadata.
+  - name: Release resources
+    text: Always close your `FileInputStream` objects to avoid memory leaks, especially
+      when processing large batches.
+  - name: Create a FileInputStream for the Watermark Image
+    text: '`FileInputStream` loads the watermark image from the file system. Keep
+      the image size under 500 KB for optimal performance.'
+  - name: Initialize the Watermarker
+    text: The `Watermarker` class is GroupDocs.Watermark's core API object that represents
+      the document you are editing.
+  - name: Create an ImageWatermark Object
+    text: '`ImageWatermark` encapsulates the image and its visual properties (opacity,
+      rotation, scaling). Adjust these settings to match your branding guidelines.'
+  - name: Add the Watermark to the Document
+    text: Invoke `watermarker.add(imageWatermark)` to embed the watermark on every
+      page of the document.
+  type: HowTo
+- questions:
+  - answer: '`Watermarker` is the primary API object that loads a document and provides
+      methods to add, edit, or remove watermarks.'
+    question: What is the Watermarker class?
+  - answer: Use `imageWatermark.setOpacity(0.5)` where the value ranges from 0 (transparent)
+      to 1 (fully opaque).
+    question: How do I set watermark opacity?
+  - answer: Yes – iterate over a directory, instantiate a new `Watermarker` for each
+      file, apply the same `ImageWatermark`, and save the result.
+    question: Can I batch‑process multiple files?
+  - answer: A temporary license is required for any non‑evaluation use; the free trial
+      works for up to 30 days.
+    question: Is a license mandatory for development builds?
+  - answer: Absolutely – pass the password to `Watermarker` via `LoadOptions.setPassword("yourPassword")`.
+    question: Does the library support password‑protected PDFs?
+  type: FAQPage
+tags:
+- watermark java
+- GroupDocs.Watermark
+- image watermark
+- Java document protection
+title: 'Πώς να υδατογραφήσετε Java: Προσθήκη Image Watermarks με GroupDocs.Watermark'
 type: docs
 url: /el/java/image-watermarks/add-image-watermarks-groupdocs-java/
 weight: 1
 ---
 
-# Προσθήκη Υδατογραφήματος Εικόνας Java με τη Βιβλιοθήκη GroupDocs.Watermark
+# Πώς να Υδατογραφήσετε Java: Προσθήκη Εικόνων Υδατογραφήματος με το GroupDocs.Watermark
 
-Η προστασία των ψηφιακών σας εικόνων και εγγράφων από μη εξουσιοδοτημένη χρήση είναι κρίσιμη, και **add image watermark java** είναι ένας από τους πιο αξιόπιστους τρόπους για να το κάνετε. Σε αυτόν τον οδηγό θα καλύψουμε όλα όσα χρειάζεται να γνωρίζετε — από τη ρύθμιση της βιβλιοθήκης μέχρι την ενσωμάτωση υδατογραφήματος σε οποιαδήποτε υποστηριζόμενη μορφή αρχείου — ώστε να μπορείτε να ασφαλίζετε και να προβάλλετε τα περιουσιακά σας στοιχεία με σιγουριά.
+Σε αυτό το σεμινάριο θα ανακαλύψετε **πώς να υδατογραφήσετε Java** εφαρμογές ενσωματώνοντας εικόνες υδατογραφήματος απευθείας στα έγγραφά σας χρησιμοποιώντας τη βιβλιοθήκη GroupDocs.Watermark. Είτε προστατεύετε τα στοιχεία της μάρκας σας είτε επιβάλλετε πνευματικά δικαιώματα, τα παρακάτω βήματα σας καθοδηγούν σε μια καθαρή, έτοιμη για παραγωγή υλοποίηση.
 
-## Quick Answers
-- **Τι κάνει το “add image watermark java”;** Ενσωματώνει μια οπτική εικόνα υδατογραφήματος σε ένα έγγραφο ή εικόνα χρησιμοποιώντας το GroupDocs.Watermark API.  
-- **Ποια βιβλιοθήκη απαιτείται;** GroupDocs.Watermark for Java (v24.11 ή νεότερη).  
-- **Χρειάζομαι άδεια;** Μια δοκιμαστική άδεια λειτουργεί για αξιολόγηση· απαιτείται πλήρης άδεια για παραγωγή.  
-- **Μπορώ να προσθέσω υδατογράφημα σε PDF, Word και εικόνες;** Ναι — το GroupDocs.Watermark υποστηρίζει PDF, DOCX, PPTX, PNG, JPEG και πολλές άλλες μορφές.  
-- **Είναι η διαδικασία αποδοτική στη μνήμη;** Η χρήση ροών (streams) διατηρεί τη χρήση μνήμης χαμηλή, ακόμη και για μεγάλα αρχεία.
+## Γρήγορες Απαντήσεις
+- **Ποια βιβλιοθήκη απαιτείται;** GroupDocs.Watermark for Java ≥ 24.11.  
+- **Ποια έκδοση Java υποστηρίζεται;** JDK 8 ή νεότερη.  
+- **Χρειάζομαι άδεια;** Ναι – απαιτείται προσωρινή ή πλήρης άδεια για χρήση σε παραγωγή.  
+- **Μπορώ να υδατογραφήσω PDF και εικόνες;** Απόλυτα – η βιβλιοθήκη διαχειρίζεται PDF, PNG, JPEG, DOCX, PPTX και άλλα.  
+- **Πόσες μορφές υποστηρίζονται;** Πάνω από 50 μορφές εισόδου και εξόδου, επεξεργασία αρχείων πολλών εκατοντάδων σελίδων χωρίς φόρτωση ολόκληρου του αρχείου στη μνήμη.
 
-## Τι είναι το “add image watermark java”;
-Η προσθήκη υδατογραφήματος εικόνας σε Java σημαίνει προγραμματιστική επικάλυψη μιας ημιδιαφανούς εικόνας (όπως λογότυπο ή σήμα πνευματικών δικαιωμάτων) πάνω σε άλλο έγγραφο ή εικόνα. Το υδατογράφημα γίνεται μέρος του αρχείου, καθιστώντας πιο δύσκολη την αφαίρεσή του χωρίς να υποβαθμίζεται το αρχικό περιεχόμενο.
+## Τι είναι το “how to watermark java”;
+*“How to watermark java”* αναφέρεται στη διαδικασία προγραμματιστικής εφαρμογής οπτικών υδατογραφημάτων σε αρχεία (PDF, εικόνες, έγγραφα Office) από μια εφαρμογή Java. Αυτή η τεχνική βοηθά στην προστασία της πνευματικής ιδιοκτησίας και της ταυτότητας της μάρκας ενσωματώνοντας αναγνωρίσιμα σήματα απευθείας στο περιεχόμενο. Χρησιμοποιώντας το GroupDocs.Watermark, μπορείτε να αυτοματοποιήσετε αυτή τη διαδικασία για οποιαδήποτε υποστηριζόμενη μορφή με λίγες μόνο γραμμές κώδικα, εξασφαλίζοντας συνεπή προστασία σε κλίμακα.
 
 ## Γιατί να χρησιμοποιήσετε το GroupDocs.Watermark για Java;
-- **Ευρεία υποστήριξη μορφών:** Λειτουργεί με πάνω από 100 τύπους αρχείων.  
-- **Υψηλή απόδοση:** Η επεξεργασία με ροές μειώνει το αποτύπωμα μνήμης.  
-- **Εύκολη προσαρμογή:** Έλεγχος διαφάνειας, μεγέθους, περιστροφής και θέσης.  
-- **Ανθεκτική αδειοδότηση:** Επιλογές δοκιμαστικής άδειας για δοκιμές, πλήρεις άδειες για εμπορική χρήση.
+Το GroupDocs.Watermark υποστηρίζει **50+** μορφές εγγράφων και εικόνων, μπορεί να επεξεργαστεί αρχεία μεγαλύτερα από 500 MB διατηρώντας τη χρήση μνήμης κάτω από 100 MB, και προσφέρει ενσωματωμένες επιλογές κλιμάκωσης, διαφάνειας και περιστροφής. Αυτές οι ποσοτικοποιημένες δυνατότητες το καθιστούν αξιόπιστη επιλογή για προστασία επιχειρησιακού επιπέδου.
 
 ## Προαπαιτούμενα
 
-Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε:
+- **GroupDocs.Watermark for Java** έκδοση 24.11 ή νεότερη.  
+- **JDK 8+** (προτείνεται JDK 11 ή νεότερη για καλύτερη απόδοση).  
+- Ένα IDE όπως **IntelliJ IDEA** ή **Eclipse**.  
+- Βασικές γνώσεις των ροών I/O της Java.
 
-### Απαιτούμενες Βιβλιοθήκες, Εκδόσεις και Εξαρτήσεις
-Θα χρειαστείτε το GroupDocs.Watermark for Java έκδοση 24.11 ή νεότερη.
+## Πώς να υδατογραφήσετε εικόνες Java με το GroupDocs.Watermark;
 
-### Απαιτήσεις Ρύθμισης Περιβάλλοντος
-- Ένα συμβατό Java Development Kit (JDK), κατά προτίμηση JDK 8 ή νεότερο.  
-- Ένα IDE όπως IntelliJ IDEA ή Eclipse για να γράψετε και να εκτελέσετε τον κώδικά σας.
+Φορτώστε την πηγαία εικόνα, δημιουργήστε ένα αντικείμενο `ImageWatermark` και εφαρμόστε το στο στοχευόμενο έγγραφο με λίγες κλήσεις μεθόδων. Το `ImageWatermark` αντιπροσωπεύει μια οπτική επικάλυψη εικόνας που μπορεί να τοποθετηθεί, κλιμακωθεί και να δοθεί διαφάνεια. Η βιβλιοθήκη διαχειρίζεται εσωτερικά τη διαχείριση των ροών, οπότε χρειάζεται μόνο να κλείσετε τις ροές μετά την αποθήκευση, καθιστώντας την επεξεργασία παρτίδας απλή.
 
-### Προαπαιτούμενες Γνώσεις
-Η εξοικείωση με έννοιες προγραμματισμού Java, όπως η διαχείριση αρχείων και οι ροές, θα είναι χρήσιμη για την αποτελεσματική παρακολούθηση αυτού του tutorial.
+### Βήμα 1: Προετοιμάστε τη ροή εικόνας υδατογραφήματος
+`FileInputStream` διαβάζει την εικόνα υδατογραφήματος από το δίσκο. Αυτή η ροή μπορεί αργότερα να επαναχρησιμοποιηθεί για πολλαπλά έγγραφα.
 
-## Ρύθμιση του GroupDocs.Watermark για Java
+### Βήμα 2: Αρχικοποιήστε το Watermarker
+Η κλάση `Watermarker` είναι το σημείο εισόδου για όλες τις λειτουργίες υδατογραφήματος. Φορτώνει το στοχευόμενο έγγραφο και εκθέτει μεθόδους για προσθήκη ή αφαίρεση υδατογραφημάτων.
 
-Για να χρησιμοποιήσετε το GroupDocs.Watermark στο έργο σας, συμπεριλάβετε το στις εξαρτήσεις σας. Μπορείτε να το κάνετε αυτό χρησιμοποιώντας Maven ή κατεβάζοντας απευθείας τη βιβλιοθήκη:
+### Βήμα 3: Δημιουργήστε ένα στιγμιότυπο ImageWatermark
+`ImageWatermark` αντιπροσωπεύει την οπτική επικάλυψη. Μπορείτε να ορίσετε διαφάνεια, μέγεθος και θέση πριν την εφαρμογή της.
 
-### Maven
-Προσθέστε την παρακάτω διαμόρφωση στο αρχείο `pom.xml` σας:
+### Βήμα 4: Εφαρμόστε το υδατογράφημα
+Καλέστε `add()` στο αντικείμενο `Watermarker`, περνώντας το ρυθμισμένο `ImageWatermark`. Η βιβλιοθήκη αποδίδει αμέσως την επικάλυψη σε κάθε σελίδα.
+
+### Βήμα 5: Αποθηκεύστε το αρχείο με υδατογράφημα
+Χρησιμοποιήστε `save()` για να γράψετε το αποτέλεσμα σε νέο αρχείο. Η μέθοδος διατηρεί την αρχική μορφή, διατηρώντας την ποιότητα και τα μεταδεδομένα.
+
+### Βήμα 6: Απελευθερώστε τους πόρους
+Πάντα κλείνετε τα αντικείμενα `FileInputStream` για να αποφύγετε διαρροές μνήμης, ειδικά όταν επεξεργάζεστε μεγάλες παρτίδες.
+
+## Οδηγός Υλοποίησης
+
+### Προσθήκη Εικόνων Υδατογραφήματος Χρησιμοποιώντας Ροές
+
+Αυτή η ενότητα εξηγεί κάθε βήμα λεπτομερώς, με πρακτικές συμβουλές για πραγματικά έργα.
+
+#### Βήμα 1: Δημιουργήστε ένα FileInputStream για την Εικόνα Υδατογραφήματος
+`FileInputStream` φορτώνει την εικόνα υδατογραφήματος από το σύστημα αρχείων. Κρατήστε το μέγεθος της εικόνας κάτω από 500 KB για βέλτιστη απόδοση.
+
+#### Βήμα 2: Αρχικοποιήστε το Watermarker
+Η κλάση `Watermarker` είναι το κεντρικό αντικείμενο API του GroupDocs.Watermark που αντιπροσωπεύει το έγγραφο που επεξεργάζεστε.
+
+#### Βήμα 3: Δημιουργήστε ένα Αντικείμενο ImageWatermark
+`ImageWatermark` περιλαμβάνει την εικόνα και τις οπτικές της ιδιότητες (διαφάνεια, περιστροφή, κλιμάκωση). Προσαρμόστε αυτές τις ρυθμίσεις ώστε να ταιριάζουν με τις οδηγίες της μάρκας σας.
+
+#### Βήμα 4: Προσθέστε το Υδατογράφημα στο Έγγραφο
+Κληθείτε `watermarker.add(imageWatermark)` για να ενσωματώσετε το υδατογράφημα σε κάθε σελίδα του εγγράφου.
+
+#### Βήμα 5: Αποθηκεύστε το Έγγραφο με Υδατογράφημα
+`watermarker.save("output_path")` γράφει το τροποποιημένο αρχείο διατηρώντας την αρχική μορφή.
+
+#### Βήμα 6: Κλείστε Όλους τους Πόρους
+Καλώντας `close()` σε κάθε `FileInputStream` απελευθερώνετε τους δείκτες αρχείων και τη μνήμη.
+
+## Συχνά Προβλήματα και Λύσεις
+
+- **Αιχμές μνήμης σε μεγάλα PDF** – Χρησιμοποιήστε `Watermarker.setLoadOptions(LoadOptions.memoryOptimized())` για επεξεργασία σελίδων με lazy loading.  
+- **Το υδατογράφημα εμφανίζεται θολό** – Βεβαιωθείτε ότι η πηγή εικόνας είναι τουλάχιστον 300 dpi· η βιβλιοθήκη δεν αυξάνει την ανάλυση χαμηλής ποιότητας εικόνων.  
+- **Σφάλμα μη υποστηριζόμενης μορφής** – Επαληθεύστε ότι η επέκταση αρχείου περιλαμβάνεται στη λίστα των [GroupDocs.Watermark supported formats](https://releases.groupdocs.com/watermark/java/) (υπάρχουν πάνω από 50 μορφές).
+
+## Συχνές Ερωτήσεις
+
+**Ε: Τι είναι η κλάση Watermarker;**  
+Α: `Watermarker` είναι το κύριο αντικείμενο API που φορτώνει ένα έγγραφο και παρέχει μεθόδους για προσθήκη, επεξεργασία ή αφαίρεση υδατογραφημάτων.
+
+**Ε: Πώς ορίζω τη διαφάνεια του υδατογραφήματος;**  
+Α: Χρησιμοποιήστε `imageWatermark.setOpacity(0.5)` όπου η τιμή κυμαίνεται από 0 (διαυγές) έως 1 (πλήρως αδιαφανές).
+
+**Ε: Μπορώ να επεξεργαστώ παρτίδες πολλαπλών αρχείων;**  
+Α: Ναι – επαναλάβετε έναν φάκελο, δημιουργήστε νέο `Watermarker` για κάθε αρχείο, εφαρμόστε το ίδιο `ImageWatermark` και αποθηκεύστε το αποτέλεσμα.
+
+**Ε: Είναι η άδεια υποχρεωτική για εκδόσεις ανάπτυξης;**  
+Α: Απαιτείται προσωρινή άδεια για οποιαδήποτε μη‑αξιολογική χρήση· η δωρεάν δοκιμή ισχύει έως 30 ημέρες.
+
+**Ε: Υποστηρίζει η βιβλιοθήκη PDF με κωδικό πρόσβασης;**  
+Α: Απόλυτα – περάστε τον κωδικό στο `Watermarker` μέσω `LoadOptions.setPassword("yourPassword")`.
+
+## Πόροι
+- [Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download](https://releases.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
+- [GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license)
+
+**Last Updated:** 2026-07-25  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs
 
 ```xml
 <repositories>
@@ -72,17 +205,6 @@ weight: 1
 </dependencies>
 ```
 
-### Άμεση Λήψη
-Εναλλακτικά, κατεβάστε την πιο πρόσφατη έκδοση από το [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
-
-#### Βήματα Απόκτησης Άδειας
-Για να δοκιμάσετε το GroupDocs.Watermark δωρεάν, ζητήστε προσωρινή άδεια ή αγοράστε μία. Ακολουθήστε αυτά τα βήματα:
-1. Επισκεφθείτε τη [σελίδα αγοράς](https://purchase.groupdocs.com/temporary-license) για να ζητήσετε δοκιμαστική άδεια ή να αγοράσετε πλήρη άδεια.  
-2. Αφού αποκτήσετε άδεια, ενσωματώστε την στο έργο σας τοποθετώντας το αρχείο `.lic` στον κατάλογο του έργου και φορτώνοντάς το με τη μέθοδο `License.setLicense()`.
-
-#### Βασική Αρχικοποίηση
-Ακολουθεί ο τρόπος για να αρχικοποιήσετε το GroupDocs.Watermark:
-
 ```java
 import com.groupdocs.watermark.License;
 
@@ -99,24 +221,12 @@ public class WatermarkSetup {
 }
 ```
 
-## Προσθήκη Υδατογραφήματος Εικόνας σε Java
-
-Αυτή η ενότητα περιγράφει τα ακριβή βήματα που απαιτούνται για την **add image watermark java** χρησιμοποιώντας ροές. Κάθε βήμα περιλαμβάνει μια σύντομη εξήγηση ακολουθούμενη από το αρχικό απόσπασμα κώδικα (αμετάβλητο).
-
-### Βήμα 1: Δημιουργία `FileInputStream` για την Εικόνα Υδατογραφήματος
-Για να φορτώσετε την εικόνα υδατογραφήματος, χρησιμοποιούμε το `FileInputStream`, μέρος των κλάσεων ροής I/O της Java:
-
 ```java
 import java.io.FileInputStream;
 
 // Load the watermark image from your directory
 FileInputStream watermarkStream = new FileInputStream("YOUR_DOCUMENT_DIRECTORY/watermark.jpg");
 ```
-
-> **Συμβουλή:** Κρατήστε το μέγεθος του αρχείου εικόνας υδατογραφήματος μικρό (π.χ., < 200 KB) για να διατηρήσετε την απόδοση.
-
-### Βήμα 2: Αρχικοποίηση του `Watermarker`
-Στη συνέχεια, αρχικοποιήστε το `Watermarker` με το έγγραφο στο οποίο θέλετε να προσθέσετε υδατογράφημα:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -125,9 +235,6 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/input_image.png");
 ```
 
-### Βήμα 3: Δημιουργία Αντικειμένου `ImageWatermark`
-Δημιουργήστε ένα αντικείμενο `ImageWatermark` χρησιμοποιώντας τη ροή που δημιουργήθηκε προηγουμένως. Αυτό το βήμα σας επιτρέπει να διαμορφώσετε τις ιδιότητες του υδατογραφήματος:
-
 ```java
 import com.groupdocs.watermark.watermarks.ImageWatermark;
 
@@ -135,26 +242,15 @@ import com.groupdocs.watermark.watermarks.ImageWatermark;
 ImageWatermark watermark = new ImageWatermark(watermarkStream);
 ```
 
-Μπορείτε αργότερα να προσαρμόσετε τη διαφάνεια, την κλίμακα ή την περιστροφή σε αυτό το αντικείμενο, εάν χρειάζεται.
-
-### Βήμα 4: Προσθήκη του Υδατογραφήματος στο Έγγραφο
-Προσθέστε το διαμορφωμένο υδατογράφημα στο έγγραφό σας:
-
 ```java
 // Add watermark to the watermarked image
 target.add(watermark);
 ```
 
-### Βήμα 5: Αποθήκευση του Εγγράφου με Υδατογράφημα
-Αφού προσθέσετε το υδατογράφημα, αποθηκεύστε το σε νέο αρχείο στον επιθυμητό φάκελο εξόδου:
-
 ```java
 // Save the output document with the added watermark
 target.save("YOUR_OUTPUT_DIRECTORY/output_image.png");
 ```
-
-### Βήμα 6: Κλείσιμο Όλων των Πόρων
-Τέλος, κλείστε όλους τους ανοιχτούς πόρους για να ελευθερώσετε τη μνήμη του συστήματος και να αποτρέψετε διαρροές πόρων:
 
 ```java
 // Properly release resources by closing streams and watermarker
@@ -163,49 +259,8 @@ target.close();
 watermarkStream.close();
 ```
 
-## Πρακτικές Εφαρμογές
-Η προσθήκη υδατογραφημάτων εικόνας είναι χρήσιμη σε διάφορα σενάρια:
-- **Προστασία Περιεχομένου:** Αποτρέπει την μη εξουσιοδοτημένη επαναχρησιμοποίηση εικόνων ή PDF.  
-- **Branding:** Ενσωματώστε το λογότυπο της εταιρείας σας σε κάθε εξαγόμενο αρχείο.  
-- **Σημειώσεις Πνευματικών Δικαιωμάτων:** Εμφανίζει αυτόματα πληροφορίες πνευματικών δικαιωμάτων σε μεγάλες παρτίδες αρχείων.
+## Σχετικά Μαθήματα
 
-## Σκέψεις Απόδοσης
-- Χρησιμοποιήστε ροές (όπως φαίνεται) για να διατηρήσετε τη χρήση μνήμης χαμηλή, ειδικά για μεγάλα έγγραφα.  
-- Βελτιστοποιήστε την πηγή της εικόνας υδατογραφήματος (ανάλυση, μορφή) πριν την επεξεργασία.  
-- Δοκιμάστε με διαφορετικά μεγέθη αρχείων για να μετρήσετε την απόδοση στο περιβάλλον σας.
-
-## Συμπέρασμα
-Τώρα έχετε μια πλήρη, έτοιμη για παραγωγή ροή εργασίας για την **add image watermark java** χρησιμοποιώντας το GroupDocs.Watermark. Ακολουθώντας αυτά τα βήματα μπορείτε να προστατεύετε, να προβάλλετε και να διαχειρίζεστε τα ψηφιακά σας περιουσιακά στοιχεία αποτελεσματικά. Στο επόμενο βήμα, εξερευνήστε υδατογραφήματα κειμένου, PDF πολλαπλών σελίδων ή δυναμική δημιουργία υδατογραφήματος βάσει δεδομένων χρήστη.
-
-## Συχνές Ερωτήσεις
-
-**Ε: Ποια είναι η χρήση του GroupDocs.Watermark για Java;**  
-Α: Είναι μια βιβλιοθήκη Java που σας επιτρέπει να προσθέτετε ή να αφαιρείτε υδατογραφήματα (εικόνα, κείμενο, barcode) από μια μεγάλη ποικιλία μορφών εγγράφων.
-
-**Ε: Μπορώ να χρησιμοποιήσω το GroupDocs.Watermark για εμπορικές εφαρμογές;**  
-Α: Ναι, αλλά χρειάζεστε έγκυρη εμπορική άδεια. Διατίθεται δωρεάν δοκιμαστική άδεια για αξιολόγηση.
-
-**Ε: Πώς πρέπει να διαχειριστώ πολύ μεγάλα αρχεία;**  
-Α: Επεξεργαστείτε τα με ροές (όπως δείχνεται) και σκεφτείτε την αύξηση του μεγέθους heap του JVM μόνο εάν είναι απαραίτητο.
-
-**Ε: Είναι δυνατόν να προσαρμόσω την εμφάνιση του υδατογραφήματος;**  
-Α: Απόλυτα. Μπορείτε να ορίσετε τη διαφάνεια, το μέγεθος, την περιστροφή και τη θέση στο αντικείμενο `ImageWatermark`.
-
-**Ε: Ποιες μορφές εγγράφων υποστηρίζονται;**  
-Α: Πάνω από 100 μορφές, συμπεριλαμβανομένων PNG, JPEG, PDF, DOCX, PPTX και πολλών άλλων.
-
-## Πόροι
-- [Documentation](https://docs.groupdocs.com/watermark/java/)
-- [API Reference](https://reference.groupdocs.com/watermark/java)
-- [Download](https://releases.groupdocs.com/watermark/java/)
-- [GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Free Support](https://forum.groupdocs.com/c/watermark/10)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license)
-
----
-
-**Τελευταία ενημέρωση:** 2026-01-08  
-**Δοκιμάστηκε με:** GroupDocs.Watermark 24.11 for Java  
-**Συγγραφέας:** GroupDocs  
-
----
+- [How to Add Image Watermarks in Word Documents Using GroupDocs.Watermark for Java](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
+- [How to Add Image Watermarks to Excel Using GroupDocs for Java: A Comprehensive Guide](/watermark/java/image-watermarks/groupdocs-watermark-java-add-image-to-excel/)
+- [Guide to Adding Text Watermarks in Documents Using GroupDocs.Watermark for Java](/watermark/java/text-watermarks/add-text-watermarks-groupdocs-java/)

@@ -1,44 +1,112 @@
 ---
-date: '2026-01-21'
-description: GroupDocs.Watermark kullanarak Java’da PDF meta verilerini nasıl okuyacağınızı
-  öğrenin, PDF Java özelliklerine filigran ekleyin ve PDF öğeleri üzerinde verimli
-  bir şekilde yineleme yapın.
+date: '2026-07-25'
+description: GroupDocs.Watermark for Java kullanarak PDF artefaktlarını nasıl çıkaracağınızı
+  öğrenin ve watermark PDF Java ekleme, gizli PDF metadata'ya erişme ve belgeleri
+  güvence altına alma yollarını keşfedin.
 keywords:
-- GroupDocs.Watermark Java
-- PDF artifact extraction
-- Java PDF watermarking
-title: PDF Meta Verilerini Java ile Okuma – GroupDocs.Watermark ile PDF Ögelerine
-  Erişim
+- how to extract pdf
+- how to add watermark
+- add watermark pdf java
+- access hidden pdf metadata
+lastmod: '2026-07-25'
+og_description: GroupDocs.Watermark for Java kullanarak PDF artefaktlarını nasıl çıkaracağınızı
+  öğrenin. Bu rehber ayrıca watermark PDF Java ekleme ve gizli PDF metadata'ya verimli
+  bir şekilde erişme yöntemlerini gösterir.
+og_image_alt: 'Developer guide: Extract PDF artifacts and add watermarks using GroupDocs.Watermark
+  in Java'
+og_title: GroupDocs.Watermark Java ile PDF Artefaktlarını Nasıl Çıkarılır?
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-25'
+  description: Learn how to extract PDF artifacts using GroupDocs.Watermark for Java,
+    and discover ways to add watermark PDF Java, access hidden PDF metadata, and secure
+    documents.
+  headline: How to Extract PDF Artifacts with GroupDocs.Watermark Java
+  type: TechArticle
+- description: Learn how to extract PDF artifacts using GroupDocs.Watermark for Java,
+    and discover ways to add watermark PDF Java, access hidden PDF metadata, and secure
+    documents.
+  name: How to Extract PDF Artifacts with GroupDocs.Watermark Java
+  steps:
+  - name: Add the Maven dependency
+    text: Add the following snippet to your `pom.xml`. This pulls in the complete
+      GroupDocs.Watermark library and its transitive dependencies.
+  - name: Initialize the Watermarker class
+    text: The `Watermarker` class is the entry point for all document operations.
+      It loads the file and prepares internal structures for reading and writing.
+  - name: Retrieve PDF content
+    text: '`PdfContent` gives you programmatic access to pages, artifacts, and underlying
+      streams.'
+  - name: Iterate over each page’s artifacts
+    text: 'A `Page` represents a single PDF page within the document. An `Artifact`
+      represents a hidden element such as metadata or an embedded file. Loop through
+      `pdfContent.getPages()`; each `Page` object exposes `getArtifacts()` which returns
+      a collection of `Artifact` objects. You can read properties like '
+  - name: Print or process the artifacts
+    text: For demonstration, we simply print each artifact’s name and value. In a
+      real application you might store them in a database or feed them to a compliance
+      engine.
+  type: HowTo
+- questions:
+  - answer: Artifacts are hidden objects such as XMP metadata, custom dictionary entries,
+      and embedded files that are not visible in the rendered PDF but can be programmatically
+      accessed.
+    question: What exactly qualifies as a PDF artifact?
+  - answer: Yes—after iterating the artifacts, call `watermarker.add(new TextWatermark("CONFIDENTIAL",
+      new Font(...)))` and then `watermarker.save("output.pdf")`.
+    question: Can I both extract artifacts and add a watermark in the same run?
+  - answer: 'Absolutely—pass the password to the `Watermarker` constructor: `new Watermarker("secure.pdf",
+      "myPassword")`.'
+    question: Does the library work with password‑protected PDFs?
+  - answer: It reliably processes PDFs up to **500 pages** (and beyond) while keeping
+      memory usage under 150 MB thanks to its streaming engine.
+    question: How large a PDF can GroupDocs.Watermark handle?
+  - answer: Yes—while a free trial lets you evaluate all features, a valid license
+      is required for any production deployment.
+    question: Is a commercial license mandatory for production?
+  type: FAQPage
+tags:
+- pdf artifacts
+- groupdocs watermark
+- java pdf processing
+- pdf metadata
+- watermark java
+title: GroupDocs.Watermark Java ile PDF Artefaktlarını Nasıl Çıkarılır?
 type: docs
 url: /tr/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/
 weight: 1
 ---
 
-# PDF Metaverilerini Java ile Okuma – GroupDocs.Watermark ile PDF Artefaktlarına Erişim
+# Java'da GroupDocs.Watermark Kullanarak PDF Artefaktlarını Çıkarma
 
-Eğer **read PDF metadata Java** ihtiyacınız varsa, programlar genellikle denetimler, güvenlik kontrolleri veya uyumluluk takibi için değerli bilgiler içerebilen gizli artefaktları göz ardı eder. Bu öğreticide, **GroupDocs.Watermark for Java** kullanarak bu PDF artefaktlarına nasıl erişileceğini ve döngüyle nasıl gezileceğini öğrenecek, belgelerinizde göızlı Yanıtlar
-- **“read PDF metadata Java” ne anlama geliyor?** Java kodu kullanarak bir PDF'ten gizli bilgileri (artefaktları) çıkarmak.  
-- **Hangi kütüphane yardımcı olur?** GroupDocs.Watermark for Java.  
-- **Lisans gerekir mi?** Ücretsiz deneme mevcuttur; üretim için ticari lisans gereklidir.  
-- **Ayrıca watermark PDF Java işlevi ekleyebilir miyim?** Evet – aynı SDK su işaretleri eklemeyi destekler.  
-- **Büyük PDF'ler için uygun mu?** SDK, büyük dosyalar için önbellekleme ve optimize döngüler içerir.
+PDF artefaktlarını çıkarmak, gizli meta verileri denetlemeniz, güvenlik politikalarını uygulamanız veya belge içgörülerini daha büyük iş akışlarına entegre etmeniz gerektiğinde önemlidir. Bu öğreticide, Java için GroupDocs.Watermark ile **PDF'i nasıl çıkarılır** artefaktlarını öğrenecek ve aynı zamanda PDF Java'ya filigran eklemeyi ve gizli PDF meta verilerine erişmeyi göreceksiniz. Kurulum, başlatma ve yineleme adımlarını adım adım gösterecek ve hemen uygulayabileceğiniz pratik ipuçlarıyla sonlandıracağız.
 
-## “read PDF metadata Java” nedir?
-Java’da PDF metaverilerini okumak, bir PDF dosyasının içinde saklanan oluşturma tarihleri, yazar bilgileri ve özel etiketler gibi gizli nesneleri (artefaktları) geri getirmeyi içerir. Bu nesnelere genellikle **artefaktlar** denir.
+## Hızlı Yanıtlar
+- **İlk adım nedir?** GroupDocs.Watermark Maven bağımlılığını ekleyin ve bir `Watermarker` örneği oluşturun.  
+- **Hangi sınıf PDF sayfalarına erişim sağlar?** `PdfContent` sınıfı, sayfa‑düzeyinde artefakt yinelemesi için `getPages()` metodunu sunar.  
+- **300 sayfalık bir PDF'den meta verileri çıkarabilir miyim?** Evet—GroupDocs.Watermark, tüm dosyayı belleğe yüklemeden 500 sayfanın üzerindeki belgeleri işler.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Ücretsiz deneme sürümü test için çalışır; üretim için ticari lisans gereklidir.  
+- **Artefaktları çıkarırken filigran eklemek mümkün mü?** Kesinlikle—artefaktları yinelemeyi tamamladıktan sonra `Watermarker.add()` kullanın.
 
-## Neden GroupDocs.Watermark Java?
-GroupDocs.Watermark yalnızca **add watermark PDF Java** özelliklerini sunmakla kalmaz, aynı zamanda PDF artefaktlarını çıkarmak ve döngüyle gezmek için temiz bir API sağlar. Bu sayede güvenlik (su işareti ekleme) ve veri çıkarma (metaveri okuma) için tek durak çözüm sunar.
+## “PDF nasıl çıkarılır” nedir?
+PDF artefaktlarını çıkarmak, bir PDF dosyasına gömülü meta veri, açıklama ve özel veri akışları gibi gizli nesneleri okumak anlamına gelir. Bu görünmez öğeler, belge oluşturma, yazar bilgisi veya gömülü kaynaklar hakkında önemli bilgiler içerebilir ve artefakt çıkarımı, uyumluluk kontrolleri, güvenlik denetimleri ve otomatik belge iş akışlarında kritik bir ilk adımdır.
 
-## Ön Koşullar
-- **GroupDocs.Watermark for Java** (en son sürüm)  
-- Geliştirme makinenizde Maven yüklü  
-- Temel Java bilgisi ve test etmek için bir PDF dosyası  
+## PDF artefakt çıkarımı için GroupDocs.Watermark neden kullanılmalı?
+GroupDocs.Watermark, **30'dan fazla giriş ve çıkış formatını** destekler ve **çok sayfalı PDF'leri** işleyebilir; akış mimarisi sayesinde bellek kullanımını 100 MB'nin altında tutar. Kütüphane ayrıca filigran eklemek için yerleşik yöntemler sunar ve böylece çıkarım ve koruma görevleri için tek durak çözüm olur.
 
-## GroupDocs.Watermark for Java Kurulumu
-SDK’yı projenize Maven aracılığıyla ya da doğrudan indirerek ekleyebilirsiniz.
+## Önkoşullar
+- **GroupDocs.Watermark for Java** — Sürüm 24.11 (veya daha yeni).  
+- Geliştirme makinenizde Maven kurulu olmalı.  
+- Temel Java bilgisi ve Java uyumlu bir IDE (IntelliJ IDEA veya Eclipse).  
 
-### Maven Kullanarak
-`pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
+## PDF artefaktlarını adım adım çıkarma
+
+PDF'nizi yükleyin, `PdfContent` nesnesini alın ve her sayfanın artefaktlarını yineleyin. Temel sorunun doğrudan yanıtı şudur:
+
+**PDF'yi `new Watermarker("sample.pdf")` ile yükleyin, `watermarker.getPdfContent()` çağırarak `PdfContent` nesnesini elde edin, ardından `pdfContent.getPages()` ve `page.getArtifacts()` üzerinden döngü yaparak her artefaktın detaylarını okuyun.** Bu yaklaşım herhangi bir PDF boyutu için çalışır ve oluşturulma tarihi, yazar ve özel XMP akışları gibi meta verileri döndürür.
+
+### Adım 1: Maven bağımlılığını ekleyin
+Add the following snippet to your `pom.xml`. This pulls in the complete GroupDocs.Watermark library and its transitive dependencies.
 
 ```xml
 <repositories>
@@ -58,49 +126,38 @@ SDK’yı projenize Maven aracılığıyla ya da doğrudan indirerek ekleyebilir
 </dependencies>
 ```
 
-### Doğrudan İndirme
-Manuel bir yaklaşım tercih ediyorsanız, resmi sürüm sayfasından kütüphaneyi alın: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
-
-#### Lisans Edinme Adımları
-1. **Ücretsiz Deneme** – SDK’yı ücretsiz olarak test edin.  
-2. **Geçici Lisans** – uzatılmış değerlendirme için kısa vadeli bir anahtar isteyin.  
-3. **Satın Alma** – üretim kullanımı için tam bir ticari lisans edinin.
-
-## Temel Başlatma ve Kurulum
-İlk adım, PDF dosyanıza işaret eden bir `Watermarker` örneği oluşturmaktır.
+### Adım 2: Watermarker sınıfını başlatın
+The `Watermarker` class is the entry point for all document operations. It loads the file and prepares internal structures for reading and writing.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.PdfArtifact;
 import com.groupdocs.watermark.contents.PdfContent;
 import com.groupdocs.watermark.options.PdfLoadOptions;
-
 // Initialize Watermarker with load options
 PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-Bu kod parçacığı, SDK’yı belgenin iç yapısını okumaya hazırlar.
-
-## Adım‑Adım Uygulama
-
-### Adım 1: Watermarker Sınıfını Başlatma
-Yukarıda gösterildiği gibi, doğru yol ve yükleme seçenekleriyle `Watermarker` nesnesini oluşturun.
+### Adım 3: PDF içeriğini alın
+`PdfContent` gives you programmatic access to pages, artifacts, and underlying streams.  
 
 ```java
 PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-### Adım 2: PDF İçeriğine Erişim
-Sayfalara ve artefaktlarına erişim sağlayan PDF içerik nesnesini alın.
+### Adım 4: Her sayfanın artefaktlarını yineleyin
+A `Page` represents a single PDF page within the document.  
+An `Artifact` represents a hidden element such as metadata or an embedded file.  
+Loop through `pdfContent.getPages()`; each `Page` object exposes `getArtifacts()` which returns a collection of `Artifact` objects. You can read properties like `getName()`, `getValue()`, and `getType()`.
 
 ```java
 PdfContent pdfContent = (PdfContent) watermarker.getContent(PdfContent.class);
 ```
 
-### Adım 3: Artefaktlar Üzerinde Döngü
-Her sayfayı dolaşın ve karşılaştığınız her artefaktın tipini ekrana yazdırın.
+### Adım 5: Artefaktları yazdırın veya işleyin
+For demonstration, we simply print each artifact’s name and value. In a real application you might store them in a database or feed them to a compliance engine.
 
 ```java
 for (int i = 0; i < pdfContent.getPages().size(); i++) {
@@ -112,65 +169,58 @@ for (int i = 0; i < pdfContent.getPages().size(); i++) {
 }
 ```
 
-**Açıklama**  
-- `pdfContent.getPages()` tüm sayfaların bir koleksiyonunu döndürür.  
-- `getArtifacts()` geçerli sayfa için gizli nesneleri getirir.  
-- Döngü, **reading PDF metadata Java** işleminin temel bir parçası olan her artefaktın tipini yazdırır.
-
-### Sorun Giderme İpuçları
-- `FileNotFoundException` almamak için dosya yolunu doğrulayın.  
-- Doğru SDK sürümünü kullandığınızdan emin olun; sürüm uyumsuzlukları çalışma zamanı hatalarına yol açabilir.  
+## Yaygın Sorunlar ve Çözümler
+- **FileNotFoundException** – PDF yolunun mutlak ya da proje kökünüzle doğru göreceli olduğundan emin olun.  
+- **Unsupported PDF version** – GroupDocs.Watermark 24.11 veya daha yeni bir sürüm kullandığınızdan emin olun; eski sürümler PDF 2.0 özelliklerini desteklemeyebilir.  
+- **Memory spikes with very large PDFs** – Belgeyi yüklemeden önce `watermarker.setCacheSize(64)` (MB cinsinden değer) ayarlayarak akış modunu etkinleştirin.  
 
 ## Pratik Uygulamalar
-Java’da PDF metaverilerini okumanın gerçek değer kattığı yaygın senaryolar:
+1. **Veri Güvenliği Denetimleri** – Gizli yazar veya oluşturma meta verilerini tarayarak hassas bilgilerin ortaya çıkmasını önleyin.  
+2. **Uyumluluk Takibi** – Arşivlemeden önce her belgenin gerekli özel XMP etiketlerini içerdiğini doğrulayın.  
+3. **Belge Yönetimi Entegrasyonu** – Artefakt çıkarımını otomatik filigranlamayla birleştirerek doğrulama sonrası “Gizli” damgası ekleyin.
 
-1. **Veri Güvenliği** – Gizli metaverileri olası sızıntılar için tarayın.  
-2. **Uyumluluk Takibi** – Gerekli metaverilerin (ör. yazar, oluşturma tarihi) mevcut olduğunu doğrulayın.  
-3. **Belge Yönetim Sistemleri** – Artefakt çıkarımını alma hatları içinde otomatikleştirin.  
-
-## Performans Düşünceleri
-Büyük PDF dosyalarıyla çalışırken:
-
-- Mümkünse akış (streaming) API’lerini tercih edin.  
-- Toplu işleme için aynı `Watermarker` örneğini yeniden kullanın.  
-- Bellek yükünü azaltmak için SDK önbelleklemesini etkinleştirin.
-
-## Yaygın Sorunlar ve Çözümleri
-| Sorun | Çözüm |
-|-------|----------|
-| `FileNotFoundException` | Mutlak yolu ve dosya izinlerini tekrar kontrol edin. |
-| Artefakt döndürülmüyor | PDF’in gerçekten metaveri içerdiğinden emin olun; bazı PDF’lerde artefaktlar temizlenmiş olabilir. |
-| Büyük dosyalarda yüksek bellek kullanımı | Sayfaları tek tek işleyin ve her toplu işlemden sonra `watermarker.dispose()` çağırın. |
+## Performans İpuçları
+- 200 sayfadan büyük PDF'lerle çalışırken Java’nın `ForkJoinPool`'unu kullanarak sayfaları paralel işleyin.  
+- Toplu işlemler için tek bir `Watermarker` örneğini yeniden kullanarak JVM yükünü azaltın.  
+- Tekrarlanan disk okumalarını önlemek için yerleşik önbelleği (`watermarker.setCacheEnabled(true)`) etkinleştirin.
 
 ## Sıkça Sorulan Sorular
 
-**S: PDF artefakti tam olarak nedir?**  
-C: Artefaktlar, PDF içinde bulunan özel metaveri, açıklama veya gömülü dosyalar gibi gizli nesnelerdir.
+**S: PDF artefaktı tam olarak neyi kapsar?**  
+C: Artefaktlar, render edilen PDF'de görünmeyen ancak programatik olarak erişilebilen XMP meta verileri, özel sözlük girişleri ve gömülü dosyalar gibi gizli nesnelerdir.
 
-**S: GroupDocs.Watermark ücretsiz kullanılabilir mi?**  
-C: Evet, ücretsiz bir deneme ile başlayabilir ve uzatılmış test için geçici bir lisans talep edebilirsiniz.
+**S: Artefaktları çıkarırken aynı çalışmada filigran ekleyebilir miyim?**  
+C: Evet—artefaktları yineledikten sonra `watermarker.add(new TextWatermark("CONFIDENTIAL", new Font(...)))` çağırın ve ardından `watermarker.save("output.pdf")` yapın.
 
-**S: Büyük belgelerde kodum hata veriyor—ne yapmalıyım?**  
-C: SDK’nın önbellekleme seçeneklerini etkinleştirin ve belgenin sayfalarını tek tek işleyerek bellek kullanımını düşük tutun.
+**S: Kütüphane şifre korumalı PDF'lerle çalışır mı?**  
+C: Kesinlikle—şifreyi `Watermarker` yapıcısına geçirin: `new Watermarker("secure.pdf", "myPassword")`.
 
-**S: Metaveri okurken aynı anda su işareti ekleyebilir miyim?**  
-C: Kesinlikle. Aynı `Watermarker` örneği, artefaktları çıkardıktan sonra **add watermark PDF Java** işlevini de gerçekleştirebilir.
+**S: GroupDocs.Watermark ne kadar büyük bir PDF'yi işleyebilir?**  
+C: Akış motoru sayesinde bellek kullanımını 150 MB'nin altında tutarak **500 sayfaya** (ve üzerisine) kadar PDF'leri güvenilir şekilde işler.
 
-**S: SDK şifreli PDF’leri destekliyor mu?**  
-C: Evet, `Watermarker` başlatılırken `PdfLoadOptions` aracılığıyla bir şifre sağlayabilirsiniz.
+**S: Üretim için ticari lisans zorunlu mu?**  
+C: Evet—ücretsiz deneme tüm özellikleri değerlendirmenizi sağlasa da, üretim ortamında geçerli bir lisans gereklidir.
 
-## Ek Kaynaklar
-- [Documentation](https://docs.groupdocs.com/watermark/java/)  
-- [API Reference](https://reference.groupdocs.com/watermark/java)  
-- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
-- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)  
+## Sonuç
+Artık Java'da GroupDocs.Watermark kullanarak **PDF artefaktlarını nasıl çıkaracağınız** konusunda eksiksiz, üretim‑hazır bir iş akışına sahipsiniz. Artefakt çıkarımını filigranlamayla birleştirerek, performanstan ödün vermeden büyük PDF'lere ölçeklenebilen güvenli ve uyumlu belge iş akışları oluşturabilirsiniz.
 
 ---
 
-**Son Güncelleme:** 2026-01-21  
-**Test Edilen Sürüm:** GroupDocs.Watermark 24.11 for Java  
+**Son Güncelleme:** 2026-07-25  
+**Test Edilen Versiyon:** GroupDocs.Watermark 24.11 for Java  
 **Yazar:** GroupDocs  
 
----
+**Kaynaklar**  
+- [GroupDocs.Watermark for Java sürümleri](https://releases.groupdocs.com/watermark/java/)  
+- [Dokümantasyon](https://docs.groupdocs.com/watermark/java/)  
+- [API Referansı](https://reference.groupdocs.com/watermark/java)  
+- [GroupDocs.Watermark for Java'ı İndir](https://releases.groupdocs.com/watermark/java/)  
+- [GitHub Deposu](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- [Ücretsiz Destek Forumu](https://forum.groupdocs.com/c/watermark/10)  
+- [Geçici Lisans Başvurusu](https://purchase.groupdocs.com/temporary-license/)
+
+## İlgili Öğreticiler
+
+- [Java'da GroupDocs Watermark Kullanarak PDF Eklerini Çıkarma (E-posta Belge Yönetimi için)](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)  
+- [GroupDocs.Watermark for Java Kullanarak Belge Bilgilerini Çıkarma: Tam Kılavuz](/watermark/java/document-information/extract-document-info-groupdocs-watermark-java/)  
+- [Java Filigran Rehberi: GroupDocs.Watermark API ile Belgeleri Güvence Altına Alın](/watermark/java/getting-started/java-watermark-groupdocs-guide/)

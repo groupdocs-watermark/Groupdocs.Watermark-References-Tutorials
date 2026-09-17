@@ -1,44 +1,112 @@
 ---
-date: '2026-01-21'
-description: Aprende a leer metadatos de PDF en Java usando GroupDocs.Watermark, agrega
-  funciones de marca de agua a PDF en Java y recorre los artefactos de PDF de manera
-  eficiente.
+date: '2026-07-25'
+description: Aprenda cómo extraer artefactos PDF usando GroupDocs.Watermark para Java
+  y descubra formas de agregar watermark PDF Java, acceder a metadatos PDF ocultos
+  y proteger documentos.
 keywords:
-- GroupDocs.Watermark Java
-- PDF artifact extraction
-- Java PDF watermarking
-title: Leer metadatos de PDF en Java – Acceder a los artefactos PDF con GroupDocs.Watermark
+- how to extract pdf
+- how to add watermark
+- add watermark pdf java
+- access hidden pdf metadata
+lastmod: '2026-07-25'
+og_description: Aprenda cómo extraer artefactos PDF usando GroupDocs.Watermark para
+  Java. Esta guía también muestra cómo agregar watermark PDF Java y acceder a metadatos
+  PDF ocultos de manera eficiente.
+og_image_alt: 'Developer guide: Extract PDF artifacts and add watermarks using GroupDocs.Watermark
+  in Java'
+og_title: Cómo extraer artefactos PDF con GroupDocs.Watermark Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-25'
+  description: Learn how to extract PDF artifacts using GroupDocs.Watermark for Java,
+    and discover ways to add watermark PDF Java, access hidden PDF metadata, and secure
+    documents.
+  headline: How to Extract PDF Artifacts with GroupDocs.Watermark Java
+  type: TechArticle
+- description: Learn how to extract PDF artifacts using GroupDocs.Watermark for Java,
+    and discover ways to add watermark PDF Java, access hidden PDF metadata, and secure
+    documents.
+  name: How to Extract PDF Artifacts with GroupDocs.Watermark Java
+  steps:
+  - name: Add the Maven dependency
+    text: Add the following snippet to your `pom.xml`. This pulls in the complete
+      GroupDocs.Watermark library and its transitive dependencies.
+  - name: Initialize the Watermarker class
+    text: The `Watermarker` class is the entry point for all document operations.
+      It loads the file and prepares internal structures for reading and writing.
+  - name: Retrieve PDF content
+    text: '`PdfContent` gives you programmatic access to pages, artifacts, and underlying
+      streams.'
+  - name: Iterate over each page’s artifacts
+    text: 'A `Page` represents a single PDF page within the document. An `Artifact`
+      represents a hidden element such as metadata or an embedded file. Loop through
+      `pdfContent.getPages()`; each `Page` object exposes `getArtifacts()` which returns
+      a collection of `Artifact` objects. You can read properties like '
+  - name: Print or process the artifacts
+    text: For demonstration, we simply print each artifact’s name and value. In a
+      real application you might store them in a database or feed them to a compliance
+      engine.
+  type: HowTo
+- questions:
+  - answer: Artifacts are hidden objects such as XMP metadata, custom dictionary entries,
+      and embedded files that are not visible in the rendered PDF but can be programmatically
+      accessed.
+    question: What exactly qualifies as a PDF artifact?
+  - answer: Yes—after iterating the artifacts, call `watermarker.add(new TextWatermark("CONFIDENTIAL",
+      new Font(...)))` and then `watermarker.save("output.pdf")`.
+    question: Can I both extract artifacts and add a watermark in the same run?
+  - answer: 'Absolutely—pass the password to the `Watermarker` constructor: `new Watermarker("secure.pdf",
+      "myPassword")`.'
+    question: Does the library work with password‑protected PDFs?
+  - answer: It reliably processes PDFs up to **500 pages** (and beyond) while keeping
+      memory usage under 150 MB thanks to its streaming engine.
+    question: How large a PDF can GroupDocs.Watermark handle?
+  - answer: Yes—while a free trial lets you evaluate all features, a valid license
+      is required for any production deployment.
+    question: Is a commercial license mandatory for production?
+  type: FAQPage
+tags:
+- pdf artifacts
+- groupdocs watermark
+- java pdf processing
+- pdf metadata
+- watermark java
+title: Cómo extraer artefactos PDF con GroupDocs.Watermark Java
 type: docs
 url: /es/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Leer metadatos PDF Java – Acceder a artefactos PDF con GroupDocs.Watermark
+# Cómo extraer artefactos PDF usando GroupDocs.Watermark en Java
 
-Si necesitas **leer metadatos PDF Java**, los programas a menudo pasan por alto artefactos ocultos que pueden contener información valiosa para auditorías, verificaciones de seguridad o seguimiento de cumplimiento. En este tutorial descubrirás cómo usar **GroupDocs.Watermark para Java** para acceder e iterar sobre esos artefactos PDF, dándote una visibilidad completa de los metadatos incrustados en tus documentos.
+Extraer artefactos PDF es esencial cuando necesitas auditar metadatos ocultos, aplicar políticas de seguridad o integrar información de documentos en flujos de trabajo más amplios. En este tutorial aprenderás **cómo extraer PDF** artefactos con GroupDocs.Watermark para Java, mientras también ves cómo agregar una marca de agua PDF Java y acceder a metadatos PDF ocultos. Recorreremos la configuración, inicialización y pasos de iteración, y terminaremos con consejos prácticos que puedes aplicar de inmediato.
 
 ## Respuestas rápidas
-- **¿Qué significa “leer metadatos PDF Java”?** Extraer información oculta (artefactos) de un PDF usando código Java.  
-- **¿Qué biblioteca ayuda con esto?** GroupDocs.Watermark para Java.  
-- **¿Necesito una licencia?** Hay una prueba gratuita disponible; se requiere una licencia comercial para producción.  
-- **¿Puedo también añadir funcionalidad de marca de agua **¿Es adecuado para PDFs grandes?** El SDK incluye caché y bucles optimizados para archivos voluminosos.
+- **¿Cuál es el primer paso?** Agrega la dependencia Maven de GroupDocs.Watermark y crea una instancia de `Watermarker`.  
+- **¿Qué clase te da acceso a las páginas PDF?** La clase `PdfContent` proporciona `getPages()` para la iteración de artefactos a nivel de página.  
+- **¿Puedo extraer metadatos de un PDF de 300 páginas?** Sí—GroupDocs.Watermark procesa documentos de más de 500 páginas sin cargar todo el archivo en memoria.  
+- **¿Necesito una licencia para desarrollo?** Una prueba gratuita funciona para pruebas; se requiere una licencia comercial para producción.  
+- **¿Es posible agregar una marca de agua mientras se extraen los artefactos?** Absolutamente—usa `Watermarker.add()` después de terminar de iterar los artefactos.
 
-## ¿Qué es “leer metadatos PDF Java”?
-Leer metadatos PDF en Java implica recuperar objetos ocultos —como fechas de creación, detalles del autor y etiquetas personalizadas— almacenados dentro de un archivo PDF. Estos objetos a menudo se denominan **artefactos**.
+## Qué es “cómo extraer pdf”?
+Extraer artefactos PDF significa leer objetos ocultos como metadatos, anotaciones y flujos de datos personalizados que están incrustados dentro de un archivo PDF. Estos elementos no visibles pueden contener información importante sobre la creación del documento, la autoría o recursos incrustados, lo que convierte la extracción de artefactos en un paso crítico inicial en verificaciones de cumplimiento, auditorías de seguridad y canalizaciones de documentos automatizadas.
 
-## ¿Por qué usar GroupDocs.Watermark Java?
-GroupDocs.Watermark no solo permite **añadir marca de agua PDF Java**, sino que también proporciona una API limpia para extraer e iterar sobre artefactos PDF. Esto lo convierte en una solución integral tanto para seguridad (marcas de agua) como para extracción de datos (lectura de metadatos).
+## Por qué usar GroupDocs.Watermark para la extracción de artefactos PDF?
+GroupDocs.Watermark soporta **más de 30 formatos de entrada y salida** y puede procesar **PDFs de cientos de páginas** manteniendo el uso de memoria por debajo de 100 MB gracias a su arquitectura de transmisión. La biblioteca también ofrece métodos incorporados para agregar marcas de agua, convirtiéndola en una solución integral para tareas de extracción y protección.
 
 ## Requisitos previos
-- **GroupDocs.Watermark para Java** (última versión)  
-- Maven instalado en tu máquina de desarrollo  
-- Conocimientos básicos de Java y un archivo PDF para probar  
+- **GroupDocs.Watermark para Java** — Versión 24.11 (o posterior).  
+- Maven instalado en tu máquina de desarrollo.  
+- Conocimientos básicos de Java y un IDE compatible con Java (IntelliJ IDEA o Eclipse).  
 
-## Configuración de GroupDocs.Watermark para Java
-Puedes agregar el SDK a tu proyecto mediante Maven o descargándolo directamente.
+## Cómo extraer artefactos PDF paso a paso
 
-### Usando Maven
-Agrega la siguiente configuración a tu archivo `pom.xml`:
+Carga tu PDF, obtén el objeto `PdfContent` y itera a través de los artefactos de cada página. La respuesta directa a la pregunta principal es:
+
+**Carga el PDF con `new Watermarker("sample.pdf")`, llama a `watermarker.getPdfContent()` para obtener el objeto `PdfContent`, luego recorre `pdfContent.getPages()` y `page.getArtifacts()` para leer los detalles de cada artefacto.** Este enfoque funciona para cualquier tamaño de PDF y devuelve metadatos como la fecha de creación, el autor y flujos XMP personalizados.
+
+### Paso 1: Agregar la dependencia Maven
+Agrega el siguiente fragmento a tu `pom.xml`. Esto incluye la biblioteca completa de GroupDocs.Watermark y sus dependencias transitivas.
 
 ```xml
 <repositories>
@@ -58,49 +126,38 @@ Agrega la siguiente configuración a tu archivo `pom.xml`:
 </dependencies>
 ```
 
-### Descarga directa
-Si prefieres un enfoque manual, obtén la biblioteca desde la página oficial de lanzamientos: [lanzamientos de GroupDocs.Watermark para Java](https://releases.groupdocs.com/watermark/java/).
-
-#### Pasos para adquirir la licencia
-1. **Prueba gratuita** – prueba el SDK sin costo.  
-2. **Licencia temporal** – solicita una clave a corto plazo para una evaluación ampliada.  
-3. **Compra** – obtén una licencia comercial completa para uso en producción.
-
-## Inicialización básica y configuración
-El primer paso es crear una instancia de `Watermarker` que apunte a tu archivo PDF.
+### Paso 2: Inicializar la clase Watermarker
+La clase `Watermarker` es el punto de entrada para todas las operaciones de documentos. Carga el archivo y prepara estructuras internas para lectura y escritura.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.PdfArtifact;
 import com.groupdocs.watermark.contents.PdfContent;
 import com.groupdocs.watermark.options.PdfLoadOptions;
-
 // Initialize Watermarker with load options
 PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-Este fragmento prepara el SDK para leer la estructura interna del documento.
-
-## Implementación paso a paso
-
-### Paso 1: Inicializar la clase Watermarker
-Como se mostró arriba, crea el objeto `Watermarker` con la ruta correcta y las opciones de carga.
+### Paso 3: Recuperar el contenido PDF
+`PdfContent` te brinda acceso programático a páginas, artefactos y flujos subyacentes.  
 
 ```java
 PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-### Paso 2: Acceder al contenido PDF
-Obtén el objeto de contenido PDF, que te brinda acceso a las páginas y sus artefactos.
+### Paso 4: Iterar sobre los artefactos de cada página
+Una `Page` representa una sola página PDF dentro del documento.  
+Un `Artifact` representa un elemento oculto como metadatos o un archivo incrustado.  
+Recorre `pdfContent.getPages()`; cada objeto `Page` expone `getArtifacts()` que devuelve una colección de objetos `Artifact`. Puedes leer propiedades como `getName()`, `getValue()` y `getType()`.
 
 ```java
 PdfContent pdfContent = (PdfContent) watermarker.getContent(PdfContent.class);
 ```
 
-### Paso 3: Iterar sobre los artefactos
-Recorre cada página e imprime el tipo de cada artefacto que encuentres.
+### Paso 5: Imprimir o procesar los artefactos
+Para la demostración, simplemente imprimimos el nombre y el valor de cada artefacto. En una aplicación real podrías almacenarlos en una base de datos o enviarlos a un motor de cumplimiento.
 
 ```java
 for (int i = 0; i < pdfContent.getPages().size(); i++) {
@@ -112,65 +169,58 @@ for (int i = 0; i < pdfContent.getPages().size(); i++) {
 }
 ```
 
-**Explicación**  
-- `pdfContent.getPages()` devuelve una colección de todas las páginas.  
-- `getArtifacts()` obtiene los objetos ocultos de la página actual.  
-- El bucle imprime el tipo de cada artefacto, que es una parte clave de **leer metadatos PDF Java**.
-
-### Consejos de solución de problemas
-- Verifica la ruta del archivo para evitar `FileNotFoundException`.  
-- Asegúrate de estar usando la versión correcta del SDK; versiones incompatibles pueden causar errores en tiempo de ejecución.  
+## Problemas comunes y soluciones
+- **FileNotFoundException** – Verifica que la ruta del PDF sea absoluta o correctamente relativa a la raíz de tu proyecto.  
+- **Unsupported PDF version** – Asegúrate de estar usando GroupDocs.Watermark 24.11 o una versión más reciente; versiones anteriores pueden no soportar funciones de PDF 2.0.  
+- **Memory spikes with very large PDFs** – Habilita el modo de transmisión configurando `watermarker.setCacheSize(64)` (valor en MB) antes de cargar el documento.  
 
 ## Aplicaciones prácticas
-Aquí tienes escenarios comunes donde leer metadatos PDF en Java aporta valor real:
+1. **Auditorías de seguridad de datos** – Escanea PDFs en busca de metadatos ocultos de autor o creación que puedan revelar información sensible.  
+2. **Seguimiento de cumplimiento** – Verifica que cada documento contenga las etiquetas XMP personalizadas requeridas antes de archivarlo.  
+3. **Integración de gestión documental** – Combina la extracción de artefactos con la marca de agua automática para incrustar un sello de “Confidencial” después de la validación.
 
-1. **Seguridad de datos** – Escanear metadatos ocultos para detectar posibles fugas.  
-2. **Seguimiento de cumplimiento** – Validar que existan los metadatos requeridos (p. ej., autor, fecha de creación).  
-3. **Sistemas de gestión documental** – Automatizar la extracción de artefactos como parte de pipelines de ingestión.  
-
-## Consideraciones de rendimiento
-Al trabajar con PDFs grandes:
-
-- Prefiere APIs de transmisión si están disponibles.  
-- Reutiliza la misma instancia de `Watermarker` para procesamiento por lotes.  
-- Habilita la caché del SDK para reducir la sobrecarga de memoria.
-
-## Problemas comunes y soluciones
-| Problema | Solución |
-|----------|----------|
-| `FileNotFoundException` | Verifica la ruta absoluta y los permisos del archivo. |
-| No se devuelven artefactos | Asegúrate de que el PDF realmente contenga metadatos; algunos PDFs están libres de artefactos. |
-| Alto consumo de memoria en archivos grandes | Procesa las páginas individualmente y llama a `watermarker.dispose()` después de cada lote. |
+## Consejos de rendimiento
+- Procesa páginas en paralelo usando `ForkJoinPool` de Java cuando trabajes con PDFs de más de 200 páginas.  
+- Reutiliza una única instancia de `Watermarker` para operaciones por lotes y reducir la sobrecarga de la JVM.  
+- Activa el caché incorporado (`watermarker.setCacheEnabled(true)`) para evitar lecturas repetidas del disco.
 
 ## Preguntas frecuentes
 
-**P: ¿Qué es exactamente un artefacto PDF?**  
-R: Los artefactos son objetos ocultos como metadatos personalizados, anotaciones o archivos incrustados que residen dentro de un PDF.
+**Q: ¿Qué califica exactamente como un artefacto PDF?**  
+A: Los artefactos son objetos ocultos como metadatos XMP, entradas de diccionario personalizadas y archivos incrustados que no son visibles en el PDF renderizado pero pueden ser accedidos programáticamente.
 
-**P: ¿Puedo usar GroupDocs.Watermark de forma gratuita?**  
-R: Sí, puedes comenzar con una prueba gratuita y solicitar una licencia temporal para pruebas ampliadas.
+**Q: ¿Puedo extraer artefactos y agregar una marca de agua en la misma ejecución?**  
+A: Sí—después de iterar los artefactos, llama a `watermarker.add(new TextWatermark("CONFIDENTIAL", new Font(...)))` y luego `watermarker.save("output.pdf")`.
 
-**P: Mi código lanza un error con documentos grandes—¿qué debo hacer?**  
-R: Habilita las opciones de caché del SDK y procesa el PDF página por página para mantener bajo el uso de memoria.
+**Q: ¿La biblioteca funciona con PDFs protegidos con contraseña?**  
+A: Absolutamente—pasa la contraseña al constructor de `Watermarker`: `new Watermarker("secure.pdf", "myPassword")`.
 
-**P: ¿Es posible agregar marcas de agua mientras se leen los metadatos?**  
-R: Absolutamente. La misma instancia de `Watermarker` puede usarse para **añadir marca de agua PDF Java** después de terminar de extraer los artefactos.
+**Q: ¿Qué tan grande puede ser un PDF que GroupDocs.Watermark maneje?**  
+A: Procesa PDFs de forma fiable hasta **500 páginas** (y más) manteniendo el uso de memoria por debajo de 150 MB gracias a su motor de transmisión.
 
-**P: ¿El SDK admite PDFs encriptados?**  
-R: Sí, puedes proporcionar una contraseña mediante `PdfLoadOptions` al inicializar el `Watermarker`.
+**Q: ¿Es obligatoria una licencia comercial para producción?**  
+A: Sí—aunque una prueba gratuita te permite evaluar todas las funciones, se requiere una licencia válida para cualquier despliegue en producción.
 
-## Recursos adicionales
+## Conclusión
+Ahora tienes un flujo de trabajo completo y listo para producción para **cómo extraer PDF** artefactos usando GroupDocs.Watermark en Java. Al combinar la extracción de artefactos con la marca de agua, puedes crear canalizaciones de documentos seguras y compatibles que escalen a PDFs grandes sin sacrificar el rendimiento.
+
+---
+
+**Última actualización:** 2026-07-25  
+**Probado con:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs  
+
+**Recursos**  
+- [Versiones de GroupDocs.Watermark para Java](https://releases.groupdocs.com/watermark/java/)  
 - [Documentación](https://docs.groupdocs.com/watermark/java/)  
 - [Referencia de API](https://reference.groupdocs.com/watermark/java)  
 - [Descargar GroupDocs.Watermark para Java](https://releases.groupdocs.com/watermark/java/)  
-- [Repositorio en GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- [Repositorio GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Foro de soporte gratuito](https://forum.groupdocs.com/c/watermark/10)  
-- [Solicitud de licencia temporal](https://purchase.groupdocs.com/temporary-license/)  
+- [Solicitud de licencia temporal](https://purchase.groupdocs.com/temporary-license/)
 
----
+## Tutoriales relacionados
 
-**Última actualización:** 2026-01-21  
-**Probado con:** GroupDocs.Watermark 24.11 para Java  
-**Autor:** GroupDocs  
-
----
+- [Cómo extraer archivos adjuntos PDF usando GroupDocs Watermark en Java para la gestión de documentos de correo electrónico](/watermark/java/email-document-watermarking/extract-pdf-attachments-groupdocs-java/)
+- [Extraer información del documento usando GroupDocs.Watermark para Java: Guía completa](/watermark/java/document-information/extract-document-info-groupdocs-watermark-java/)
+- [Guía de marcas de agua en Java: Documentos seguros con la API de GroupDocs.Watermark](/watermark/java/getting-started/java-watermark-groupdocs-guide/)

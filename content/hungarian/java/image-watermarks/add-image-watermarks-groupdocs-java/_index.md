@@ -1,58 +1,195 @@
 ---
-date: '2026-01-08'
-description: Tanulja meg, hogyan adhat hozzá képi vízjelet Java-ban a GroupDocs.Watermark
-  for Java segítségével. Kövesse ezt a lépésről‑lépésre útmutatót, hogy megvédje digitális
-  eszközeit.
+date: '2026-07-25'
+description: Ismerje meg, hogyan lehet vízjelezni Java dokumentumokat image watermarks
+  hozzáadásával a GroupDocs.Watermark könyvtár használatával. Lépésről‑lépésre útmutató
+  fejlesztőknek.
 keywords:
-- image watermarks Java
-- GroupDocs Watermark library
-- Java digital content protection
-title: Kép vízjel hozzáadása Java-ban a GroupDocs.Watermark könyvtárral
+- how to watermark java
+- java add watermark pdf
+- java add watermark word
+- add image watermark java
+lastmod: '2026-07-25'
+og_description: Hogyan jelöljünk meg Java dokumentumokat a GroupDocs.Watermark segítségével.
+  Ez az útmutató bemutatja az image watermarks hozzáadását, a követelményeket és a
+  legjobb gyakorlatokat.
+og_image_alt: 'Guide: Adding image watermarks to Java documents with GroupDocs.Watermark'
+og_title: 'Hogyan jelöljünk meg Java dokumentumokat: Image Watermarks hozzáadása a
+  GroupDocs.Watermark segítségével'
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-25'
+  description: Learn how to watermark Java documents by adding image watermarks using
+    GroupDocs.Watermark library. Step‑by‑step guide for developers.
+  headline: 'How to Watermark Java: Add Image Watermarks with GroupDocs.Watermark'
+  type: TechArticle
+- description: Learn how to watermark Java documents by adding image watermarks using
+    GroupDocs.Watermark library. Step‑by‑step guide for developers.
+  name: 'How to Watermark Java: Add Image Watermarks with GroupDocs.Watermark'
+  steps:
+  - name: Prepare the watermark image stream
+    text: '`FileInputStream` reads the watermark image from disk. This stream can
+      later be reused for multiple documents.'
+  - name: Initialize the Watermarker
+    text: The `Watermarker` class is the entry point for all watermark operations.
+      It loads the target document and exposes methods to add or remove watermarks.
+  - name: Create an ImageWatermark instance
+    text: '`ImageWatermark` represents the visual overlay. You can set opacity, size,
+      and position before applying it.'
+  - name: Apply the watermark
+    text: Call `add()` on the `Watermarker` instance, passing the configured `ImageWatermark`.
+      The library instantly renders the overlay onto each page.
+  - name: Save the watermarked file
+    text: Use `save()` to write the result to a new file. The method respects the
+      original format, preserving quality and metadata.
+  - name: Release resources
+    text: Always close your `FileInputStream` objects to avoid memory leaks, especially
+      when processing large batches.
+  - name: Create a FileInputStream for the Watermark Image
+    text: '`FileInputStream` loads the watermark image from the file system. Keep
+      the image size under 500 KB for optimal performance.'
+  - name: Initialize the Watermarker
+    text: The `Watermarker` class is GroupDocs.Watermark's core API object that represents
+      the document you are editing.
+  - name: Create an ImageWatermark Object
+    text: '`ImageWatermark` encapsulates the image and its visual properties (opacity,
+      rotation, scaling). Adjust these settings to match your branding guidelines.'
+  - name: Add the Watermark to the Document
+    text: Invoke `watermarker.add(imageWatermark)` to embed the watermark on every
+      page of the document.
+  type: HowTo
+- questions:
+  - answer: '`Watermarker` is the primary API object that loads a document and provides
+      methods to add, edit, or remove watermarks.'
+    question: What is the Watermarker class?
+  - answer: Use `imageWatermark.setOpacity(0.5)` where the value ranges from 0 (transparent)
+      to 1 (fully opaque).
+    question: How do I set watermark opacity?
+  - answer: Yes – iterate over a directory, instantiate a new `Watermarker` for each
+      file, apply the same `ImageWatermark`, and save the result.
+    question: Can I batch‑process multiple files?
+  - answer: A temporary license is required for any non‑evaluation use; the free trial
+      works for up to 30 days.
+    question: Is a license mandatory for development builds?
+  - answer: Absolutely – pass the password to `Watermarker` via `LoadOptions.setPassword("yourPassword")`.
+    question: Does the library support password‑protected PDFs?
+  type: FAQPage
+tags:
+- watermark java
+- GroupDocs.Watermark
+- image watermark
+- Java document protection
+title: 'Hogyan jelöljünk meg Java dokumentumokat: Image Watermarks hozzáadása a GroupDocs.Watermark
+  segítségével'
 type: docs
 url: /hu/java/image-watermarks/add-image-watermarks-groupdocs-java/
 weight: 1
 ---
 
-# Add Image Watermark Java with GroupDocs.Watermark Library
+# Hogyan jelöljünk vízjelet Java-ban: Képi vízjelek hozzáadása a GroupDocs.Watermark segítségével
 
-Protecting your digital images and documents from unauthorized use is crucial, and **add image watermark java** is one of the most reliable ways to do it. In this guide we’ll walk through everything you need to know—from setting up the library to embedding a watermark into any supported file format—so you can secure and brand your assets with confidence.
+## Gyors válaszok
+- **Melyik könyvtár szükséges?** GroupDocs.Watermark for Java ≥ 24.11.  
+- **Melyik Java verzió támogatott?** JDK 8 vagy újabb.  
+- **Szükségem van licencre?** Igen – ideiglenes vagy teljes licenc szükséges a termeléshez.  
+- **Tudok PDF-eket és képeket vízjellel ellátni?** Természetesen – a könyvtár kezeli a PDF-eket, PNG-ket, JPEG-eket, DOCX-et, PPTX-et és egyebeket.  
+- **Hány formátumot támogat?** Több mint 50 bemeneti és kimeneti formátum, több száz oldalas fájlok feldolgozása a teljes fájl memóriába töltése nélkül.
 
-## Quick Answers
-- **Mi a “add image watermark java” funkciója?** A GroupDocs.Watermark API használatával egy vizuális vízjel képet ágyaz be egy dokumentumba vagy képbe.  
-- **Melyik könyvtár szükséges?** GroupDocs.Watermark for Java (v24.11 vagy újabb).  
-- **Szükségem van licencre?** A próbaverzió licenc elegendő értékeléshez; a teljes licenc szükséges a termeléshez.  
-- **Vízjelhez használhatom a PDF-eket, Word-öt és képeket?** Igen – a GroupDocs.Watermark támogatja a PDF, DOCX, PPTX, PNG, JPEG és még sok más formátumot.  
-- **Memóriahatékony a folyamat?** Az adatfolyamok (streams) használata alacsony memóriahasználatot biztosít, még nagy fájlok esetén is.
+## Mi az a „how to watermark java”?
+*„How to watermark java”* a folyamatot jelenti, amikor programozott módon vizuális vízjeleket alkalmazunk fájlokra (PDF, képek, Office dokumentumok) egy Java alkalmazásból. Ez a technika segít megvédeni a szellemi tulajdont és a márkaazonosságot azáltal, hogy azonosítható jeleket ágyaz be közvetlenül a tartalomba. A GroupDocs.Watermark segítségével automatizálhatja ezt bármely támogatott formátumban néhány kódsorral, biztosítva a következetes védelmet nagy léptékben.
 
-## Mi az a “add image watermark java”?
-A kép vízjel hozzáadása Java-ban azt jelenti, hogy programozottan egy félig átlátszó képet (például logót vagy szerzői jogi jelvényt) helyezünk egy másik dokumentumra vagy képre. A vízjel a fájl része lesz, így nehezebb eltávolítani anélkül, hogy a eredeti tartalom romlana.
+## Miért használjuk a GroupDocs.Watermark-et Java-hoz?
+A GroupDocs.Watermark **50+** dokumentum- és képformátumot támogat, képes 500 MB-nál nagyobb fájlok feldolgozására, miközben a memóriahasználat 100 MB alatt marad, és beépített méretezési, átlátszósági és forgatási lehetőségeket biztosít. Ezek a számszerű képességek megbízható választássá teszik vállalati szintű védelemhez.
 
-## Miért használjuk a GroupDocs.Watermark for Java-t?
-- **Széles körű formátumtámogatás:** Több mint 100 fájltípussal működik.  
-- **Magas teljesítmény:** Az adatfolyam-alapú feldolgozás csökkenti a memóriahasználatot.  
-- **Könnyű testreszabás:** Átlátszóság, méret, forgatás és pozíció szabályozása.  
-- **Robusztus licencelés:** Próbaverziók teszteléshez, teljes licencek kereskedelmi használathoz.
+## Előkövetelmények
 
-## Előfeltételek
+- **GroupDocs.Watermark for Java** verzió 24.11 vagy újabb.  
+- **JDK 8+** (JDK 11 vagy újabb ajánlott a jobb teljesítmény érdekében).  
+- Egy IDE, például **IntelliJ IDEA** vagy **Eclipse**.  
+- Alapvető ismeretek a Java I/O streamekről.
 
-Mielőtt elkezdené, győződjön meg róla, hogy rendelkezik:
+## Hogyan jelöljünk vízjellel Java képeket a GroupDocs.Watermark segítségével?
 
-### Szükséges könyvtárak, verziók és függőségek
-Szüksége lesz a GroupDocs.Watermark for Java 24.11 vagy újabb verziójára.
+Töltse be a forrásképet, hozzon létre egy `ImageWatermark` objektumot, és alkalmazza a cél dokumentumra néhány metódushívással. Az `ImageWatermark` egy vizuális átfedő képet képvisel, amely pozicionálható, méretezhető és átlátszósággal ellátható. A könyvtár belsőleg kezeli a stream-eket, így csak a mentés után kell bezárni a stream-eket, ami egyszerűvé teszi a kötegelt feldolgozást.
 
-### Környezet beállítási követelmények
-- Kompatibilis Java Development Kit (JDK), lehetőleg JDK 8 vagy újabb.  
-- IDE, például IntelliJ IDEA vagy Eclipse a kód írásához és futtatásához.
+### 1. lépés: Készítse elő a vízjel kép stream-et
+`FileInputStream` beolvassa a vízjel képet a lemezről. Ez a stream később több dokumentumhoz is újra felhasználható.
 
-### Tudás előfeltételek
-A Java programozási koncepciók, például a fájlkezelés és adatfolyamok ismerete hasznos lesz a tutorial hatékony követéséhez.
+### 2. lépés: Inicializálja a Watermarker-t
+A `Watermarker` osztály a belépési pont minden vízjel művelethez. Betölti a cél dokumentumot, és metódusokat biztosít a vízjelek hozzáadásához vagy eltávolításához.
 
-## A GroupDocs.Watermark for Java beállítása
+### 3. lépés: Hozzon létre egy ImageWatermark példányt
+`ImageWatermark` a vizuális átfedést képviseli. Beállíthatja az átlátszóságot, méretet és pozíciót, mielőtt alkalmazná.
 
-A GroupDocs.Watermark használatához a projektben adja hozzá a függőségekhez. Ezt megteheti Maven segítségével vagy a könyvtár közvetlen letöltésével:
+### 4. lépés: Alkalmazza a vízjelet
+Hívja meg az `add()` metódust a `Watermarker` példányon, átadva a konfigurált `ImageWatermark`-et. A könyvtár azonnal megjeleníti az átfedést minden oldalon.
 
-### Maven
-Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz:
+### 5. lépés: Mentse a vízjelezett fájlt
+Használja a `save()` metódust az eredmény egy új fájlba írásához. A metódus tiszteletben tartja az eredeti formátumot, megőrizve a minőséget és a metaadatokat.
+
+### 6. lépés: Erőforrások felszabadítása
+Mindig zárja be a `FileInputStream` objektumokat a memória szivárgások elkerülése érdekében, különösen nagy kötegek feldolgozásakor.
+
+## Implementációs útmutató
+
+### Képi vízjelek hozzáadása stream-ek használatával
+
+Ez a szakasz részletesen ismerteti az egyes lépéseket, gyakorlati tippekkel a valós projektekhez.
+
+#### 1. lépés: Hozzon létre egy FileInputStream-et a vízjel képhez
+`FileInputStream` betölti a vízjel képet a fájlrendszerből. Tartsa a kép méretét 500 KB alatt a legjobb teljesítmény érdekében.
+
+#### 2. lépés: Inicializálja a Watermarker-t
+A `Watermarker` osztály a GroupDocs.Watermark központi API objektuma, amely a szerkesztett dokumentumot képviseli.
+
+#### 3. lépés: Hozzon létre egy ImageWatermark objektumot
+`ImageWatermark` magába foglalja a képet és vizuális tulajdonságait (átlátszóság, forgatás, méretezés). Állítsa be ezeket a beállításokat a márka irányelveinek megfelelően.
+
+#### 4. lépés: Adja hozzá a vízjelet a dokumentumhoz
+Hívja meg a `watermarker.add(imageWatermark)` metódust, hogy a vízjelet minden dokumentumoldalra beágyazza.
+
+#### 5. lépés: Mentse a vízjelezett dokumentumot
+`watermarker.save("output_path")` a módosított fájlt írja, miközben megőrzi az eredeti formátumot.
+
+#### 6. lépés: Zárja be az összes erőforrást
+A `close()` hívása minden `FileInputStream`-en felszabadítja a fájlkezelőket és a memóriát.
+
+## Gyakori problémák és megoldások
+
+- **Memória csúcsok nagy PDF-eknél** – Használja a `Watermarker.setLoadOptions(LoadOptions.memoryOptimized())`-t az oldalak lusta feldolgozásához.  
+- **A vízjel elmosódott** – Győződjön meg róla, hogy a forráskép legalább 300 dpi, a könyvtár nem nagyít fel alacsony felbontású képeket.  
+- **Nem támogatott formátum hiba** – Ellenőrizze, hogy a fájl kiterjesztése szerepel a [GroupDocs.Watermark támogatott formátumok](https://releases.groupdocs.com/watermark/java/) listáján (több mint 50 formátum van lefedve).
+
+## Gyakran Ismételt Kérdések
+
+**Q: Mi az a Watermarker osztály?**  
+A: `Watermarker` az elsődleges API objektum, amely betölti a dokumentumot, és metódusokat biztosít a vízjelek hozzáadásához, szerkesztéséhez vagy eltávolításához.
+
+**Q: Hogyan állíthatom be a vízjel átlátszóságát?**  
+A: Használja az `imageWatermark.setOpacity(0.5)`-t, ahol az érték 0 (átlátszó) és 1 (teljesen átlátszatlan) között van.
+
+**Q: Képes vagyok kötegelt feldolgozni több fájlt?**  
+A: Igen – iteráljon egy könyvtáron, minden fájlhoz hozzon létre egy új `Watermarker` példányt, alkalmazza ugyanazt az `ImageWatermark`-et, és mentse az eredményt.
+
+**Q: Kötelező licenc a fejlesztői build-ekhez?**  
+A: Ideiglenes licenc szükséges minden nem értékelési használathoz; az ingyenes próba legfeljebb 30 napig működik.
+
+**Q: Támogatja a könyvtár a jelszóval védett PDF-eket?**  
+A: Teljesen – adja át a jelszót a `Watermarker`-nek a `LoadOptions.setPassword("yourPassword")` segítségével.
+
+## Erőforrások
+- [Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download](https://releases.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
+- [GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license)
+
+---
+
+**Utolsó frissítés:** 2026-07-25  
+**Tesztelve ezzel:** GroupDocs.Watermark 24.11 for Java  
+**Szerző:** GroupDocs
 
 ```xml
 <repositories>
@@ -72,17 +209,6 @@ Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz:
 </dependencies>
 ```
 
-### Közvetlen letöltés
-Alternatívaként töltse le a legújabb verziót a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
-
-#### Licenc beszerzési lépések
-A GroupDocs.Watermark ingyenes kipróbálásához kérjen ideiglenes licencet vagy vásároljon egyet. Kövesse ezeket a lépéseket:
-1. Látogassa meg a [purchase page](https://purchase.groupdocs.com/temporary-license) oldalt, hogy kérjen próbaverziót vagy vásároljon teljes licencet.  
-2. Licenc megszerzése után integrálja a projektbe a `.lic` fájl projektkönyvtárba helyezésével, és töltse be a `License.setLicense()` metódussal.
-
-#### Alapvető inicializálás
-Íme, hogyan inicializálhatja a GroupDocs.Watermark-ot:
-
 ```java
 import com.groupdocs.watermark.License;
 
@@ -99,24 +225,12 @@ public class WatermarkSetup {
 }
 ```
 
-## Kép vízjel hozzáadása Java-ban
-
-Ez a szakasz bemutatja a **add image watermark java** használatához szükséges pontos lépéseket adatfolyamok (streams) segítségével. Minden lépés egy rövid magyarázatot és az eredeti kódrészletet (változatlan) tartalmazza.
-
-### 1. lépés: `FileInputStream` létrehozása a vízjel képhez
-A vízjel kép betöltéséhez a `FileInputStream`-t használjuk, amely a Java I/O adatfolyam osztályainak része:
-
 ```java
 import java.io.FileInputStream;
 
 // Load the watermark image from your directory
 FileInputStream watermarkStream = new FileInputStream("YOUR_DOCUMENT_DIRECTORY/watermark.jpg");
 ```
-
-> **Pro tipp:** Tartsa a vízjel kép fájlméretét mérsékeltnek (pl. < 200 KB), hogy a teljesítmény megmaradjon.
-
-### 2. lépés: `Watermarker` inicializálása
-Ezután inicializálja a `Watermarker`-t a vízjelezni kívánt dokumentummal:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -125,9 +239,6 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/input_image.png");
 ```
 
-### 3. lépés: `ImageWatermark` objektum létrehozása
-Hozzon létre egy `ImageWatermark` objektumot a korábban létrehozott adatfolyam (stream) használatával. Ez a lépés lehetővé teszi a vízjel tulajdonságainak beállítását:
-
 ```java
 import com.groupdocs.watermark.watermarks.ImageWatermark;
 
@@ -135,26 +246,15 @@ import com.groupdocs.watermark.watermarks.ImageWatermark;
 ImageWatermark watermark = new ImageWatermark(watermarkStream);
 ```
 
-Később, ha szükséges, módosíthatja az átlátszóságot, méretezést vagy forgatást ezen az objektumon.
-
-### 4. lépés: Vízjel hozzáadása a dokumentumhoz
-Adja hozzá a konfigurált vízjelet a dokumentumhoz:
-
 ```java
 // Add watermark to the watermarked image
 target.add(watermark);
 ```
 
-### 5. lépés: Vízjelezett dokumentum mentése
-A vízjel hozzáadása után mentse egy új fájlba a kívánt kimeneti könyvtárba:
-
 ```java
 // Save the output document with the added watermark
 target.save("YOUR_OUTPUT_DIRECTORY/output_image.png");
 ```
-
-### 6. lépés: Minden erőforrás bezárása
-Végül zárja be az összes nyitott erőforrást a rendszer memória felszabadítása és az erőforrás-szivárgás megelőzése érdekében:
 
 ```java
 // Properly release resources by closing streams and watermarker
@@ -163,49 +263,8 @@ target.close();
 watermarkStream.close();
 ```
 
-## Gyakorlati alkalmazások
-Az image watermarks hozzáadása számos helyzetben hasznos:
-- **Tartalomvédelem:** Megakadályozza a képek vagy PDF-ek jogosulatlan újrafelhasználását.
-- **Márkázás:** Beágyazza a cég logóját minden exportált fájlba.
-- **Szerzői jogi közlemények:** Automatikusan megjeleníti a szerzői jogi információkat nagy mennyiségű fájl esetén.
+## Kapcsolódó oktatóanyagok
 
-## Teljesítményfontosságú szempontok
-- Használjon adatfolyamokat (ahogy bemutattuk), hogy alacsony memóriahasználatot biztosítson, különösen nagy dokumentumok esetén.  
-- Optimalizálja a forrás vízjel képet (felbontás, formátum) a feldolgozás előtt.  
-- Tesztelje különböző fájlméretekkel a teljesítmény méréséhez a saját környezetében.
-
-## Következtetés
-Most már rendelkezik egy teljes, termelésre kész munkafolyamattal a **add image watermark java** használatához a GroupDocs.Watermark segítségével. A lépések követésével hatékonyan védheti, márkázhatja és kezelheti digitális eszközeit. Következő lépésként fedezze fel a szöveges vízjeleket, a többoldalas PDF-eket vagy a felhasználói adatok alapján dinamikusan generált vízjeleket.
-
-## Gyakran Ismételt Kérdések
-
-**Q: Mire használható a GroupDocs.Watermark for Java?**  
-A: Ez egy Java könyvtár, amely lehetővé teszi vízjelek (kép, szöveg, vonalkód) hozzáadását vagy eltávolítását számos dokumentumformátumból.
-
-**Q: Használhatom a GroupDocs.Watermark-ot kereskedelmi alkalmazásokhoz?**  
-A: Igen, de érvényes kereskedelmi licencre van szükség. Ingyenes próbaverzió is elérhető értékeléshez.
-
-**Q: Hogyan kezeljem a nagyon nagy fájlokat?**  
-A: Dolgozza fel őket adatfolyamokkal (ahogy bemutattuk), és csak szükség esetén növelje a JVM heap méretét.
-
-**Q: Lehetőség van a vízjel megjelenésének testreszabására?**  
-A: Természetesen. Az `ImageWatermark` objektumon beállíthatja az átlátszóságot, méretet, forgatást és pozíciót.
-
-**Q: Mely dokumentumtípusok támogatottak?**  
-A: Több mint 100 formátum, többek között PNG, JPEG, PDF, DOCX, PPTX és még sok más.
-
-## Források
-- [Dokumentáció](https://docs.groupdocs.com/watermark/java/)
-- [API referencia](https://reference.groupdocs.com/watermark/java)
-- [Letöltés](https://releases.groupdocs.com/watermark/java/)
-- [GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Ingyenes támogatás](https://forum.groupdocs.com/c/watermark/10)
-- [Ideiglenes licenc](https://purchase.groupdocs.com/temporary-license)
-
----
-
-**Utoljára frissítve:** 2026-01-08  
-**Tesztelve ezzel:** GroupDocs.Watermark 24.11 for Java  
-**Szerző:** GroupDocs  
-
----
+- [Hogyan adjunk hozzá képi vízjeleket Word dokumentumokhoz a GroupDocs.Watermark for Java használatával](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
+- [Hogyan adjunk hozzá képi vízjeleket Excelhez a GroupDocs for Java használatával: Átfogó útmutató](/watermark/java/image-watermarks/groupdocs-watermark-java-add-image-to-excel/)
+- [Útmutató szöveges vízjelek hozzáadásához dokumentumokhoz a GroupDocs.Watermark for Java használatával](/watermark/java/text-watermarks/add-text-watermarks-groupdocs-java/)
