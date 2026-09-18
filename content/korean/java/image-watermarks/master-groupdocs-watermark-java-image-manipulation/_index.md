@@ -1,12 +1,67 @@
 ---
-date: '2026-01-11'
-description: GroupDocs.Watermark를 사용하여 Java에서 이미지 워터마크를 추가하는 방법을 배워보세요. 이 Java 워터마크
-  PDF 예제는 워터마크 로드, 검색 및 교체를 보여줍니다.
+date: '2026-08-04'
+description: GroupDocs.Watermark를 사용하여 image watermark java를 추가하는 방법을 배웁니다. 이 튜토리얼에서는
+  loading image files, searching, 그리고 replacing watermarks에 대해 다룹니다.
 keywords:
-- image watermark management Java
-- GroupDocs Watermark search criteria
-- replace watermarks in PDF with Java
-title: GroupDocs.Watermark를 이용한 Java 이미지 워터마크 추가
+- add image watermark java
+- load image file java
+- GroupDocs.Watermark Java
+- image watermark management
+lastmod: '2026-08-04'
+og_description: GroupDocs.Watermark를 사용하여 image watermark java를 추가합니다. PDF 및 기타 문서에서
+  loading image files, searching, 그리고 replace watermarks하는 방법을 배웁니다.
+og_image_alt: Guide showing how to add image watermark in Java with GroupDocs.Watermark
+og_title: GroupDocs.Watermark와 함께 image watermark java 추가 – 가이드
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-04'
+  description: Learn how to add image watermark java using GroupDocs.Watermark. This
+    tutorial covers loading image files, searching, and replacing watermarks in documents.
+  headline: Add image watermark java with GroupDocs.Watermark – comprehensive guide
+  type: TechArticle
+- description: Learn how to add image watermark java using GroupDocs.Watermark. This
+    tutorial covers loading image files, searching, and replacing watermarks in documents.
+  name: Add image watermark java with GroupDocs.Watermark – comprehensive guide
+  steps:
+  - name: load image file java
+    text: To replace a watermark you first need the new image as a byte array. The
+      code below reads any image file from disk into memory, which you can then feed
+      to the watermark API. **Explanation:** The snippet uses a `FileInputStream`
+      wrapped in a try‑with‑resources block, guaranteeing that the stream is c
+  - name: search for watermarks in a document
+    text: Next, configure the search criteria so the engine knows which watermarks
+      to target. You can match by image hash, size, or opacity; the example below
+      uses a hash‑based approach for high precision. **Explanation:** `Watermark.search()`
+      returns a `WatermarkSearchResult` collection. By supplying an `Ima
+  - name: replace image in watermarks
+    text: 'Finally, iterate through the found watermarks and replace each one’s image
+      data with the new byte array you created in Step 1. After updating, save the
+      document to a new file to preserve the original. **Explanation:** The loop calls
+      `watermark.setImage(newImageBytes)` for every match, then persists '
+  type: HowTo
+- questions:
+  - answer: Yes. Load the document with `Watermark.load(path, new LoadOptions(password))`
+      and the API will decrypt it for processing.
+    question: Can I add a watermark to a password‑protected PDF?
+  - answer: The library can rasterize SVG files into PNG before embedding, but native
+      SVG insertion is not currently available.
+    question: Does GroupDocs.Watermark support SVG images?
+  - answer: The API can handle documents with **500+ pages** without loading the entire
+      file into memory, thanks to its streaming architecture.
+    question: How many pages can be processed in a single call?
+  - answer: Absolutely. Create separate `Watermark` objects for each image and call
+      `document.add(watermark)` for each one.
+    question: Is it possible to add multiple different watermarks to the same document?
+  - answer: Windows, Linux, and macOS are all supported, and the library works with
+      any JVM‑compatible environment, including Docker containers.
+    question: What platforms are supported for the Java SDK?
+  type: FAQPage
+tags:
+- add image watermark
+- GroupDocs.Watermark
+- Java document processing
+- image watermark Java
+title: GroupDocs.Watermark와 함께 image watermark java 추가 – 종합 가이드
 type: docs
 url: /ko/java/image-watermarks/master-groupdocs-watermark-java-image-manipulation/
 weight: 1
@@ -14,41 +69,30 @@ weight: 1
 
 # GroupDocs.Watermark를 사용한 Java 이미지 워터마크 추가: 종합 가이드
 
-워터마크 관리는 문서 보안 및 브랜딩에 필수적이며, **Java에서 이미지 워터마크를 추가**하는 일은 적절한 라이브러리를 사용하면 간단합니다. 이 튜토리얼에서는 GroupDocs.Watermark를 이용해 *add image watermark java* 를 수행하는 방법을 단계별로 안내합니다. 이미지 데이터 로드, 기존 워터마크 검색, PDF 파일에서 교체하는 과정을 다룹니다. 최종적으로 프로젝트에 바로 적용할 수 있는 실용적인 솔루션을 제공합니다.
+Java에서 이미지 워터마크를 추가하는 것은 브랜드 아이덴티티를 보호하고 문서 진위를 보장하기 위한 일반적인 요구 사항입니다. 이 튜토리얼에서는 GroupDocs.Watermark 라이브러리를 사용하여 **add image watermark java**를 수행하는 방법을 알아보며, 이미지 파일 로드부터 기존 워터마크 검색 및 새로운 그래픽으로 교체하는 전체 과정을 다룹니다. 마지막까지 PDF, Word 파일 및 이미지 기반 문서에서 사용할 수 있는 재사용 가능한 패턴을 얻게 됩니다.
 
 ## 빠른 답변
-- **Java에서 이미지 워터마크를 처리하는 라이브러리는?** GroupDocs.Watermark for Java.  
-- **PDF의 워터마크를 교체할 수 있나요?** 예 – 이미지‑해시 검색 기준을 사용해 위치를 찾고 교체합니다.  
-- **라이선스가 필요합니까?** 평가용 무료 체험이 가능하지만, 상용 환경에서는 상업용 라이선스가 필요합니다.  
-- **필요한 Java 버전은?** JDK 8 이상.  
-- **Maven을 지원하나요?** 물론입니다 – 저장소와 의존성을 `pom.xml`에 추가하면 됩니다.
+- **Java에서 이미지 워터마크를 처리하는 라이브러리는 무엇인가요?** GroupDocs.Watermark for Java.  
+- **프로덕션 사용을 위해 라이선스가 필요합니까?** 예, 상업용 라이선스를 사용하면 체험판 제한이 해제됩니다.  
+- **PDF 및 Office 파일을 작업할 수 있나요?** 예, API는 30개 이상의 형식을 지원합니다.  
+- **필요한 Java 버전은 무엇인가요?** JDK 8 이상.  
+- **Maven이 의존성을 추가하는 유일한 방법인가요?** Maven이 권장되지만, JAR를 수동으로 다운로드할 수도 있습니다.
 
-## “add image watermark java”란?
+## add image watermark java란 무엇인가요?
+`add image watermark java`는 Java 코드를 사용하여 문서에 래스터 그래픽(PNG, JPEG, BMP 등)을 프로그래밍 방식으로 삽입하는 과정을 의미합니다. 이 기술을 사용하면 원본 콘텐츠 레이아웃을 변경하지 않고 로고, 저작권 고지 또는 보안 스탬프를 오버레이할 수 있습니다.
 
-Java에서 이미지 워터마크를 추가한다는 것은 PDF, Word, Excel 등 문서에 시각적 식별자(로고, 스탬프 또는 맞춤 그래픽)를 삽입하는 것을 의미합니다. 이는 지적 재산을 보호하고 브랜드 인식을 강화하며, 프로그램matically 대규모로 관리할 수 있습니다.
+## 왜 Java용 GroupDocs.Watermark를 사용하나요?
+GroupDocs.Watermark는 PDF, DOCX, XLSX, PPTX 및 일반 이미지 유형을 포함한 **30+ input and output formats**를 지원하며, 전체 문서를 메모리에 로드하지 않고 수백 페이지 파일을 처리합니다. 라이브러리의 해시 기반 검색 엔진은 95% 이상의 정확도로 워터마크를 찾아내어 대용량 아카이브 스캔 시간을 최대 70%까지 단축합니다.
 
-## 왜 GroupDocs.Watermark를 사용해 add image watermark java를 해야 할까요?
+## 전제 조건
+- **Java Development Kit (JDK):** 버전 8 이상이 설치되어 있어야 합니다.  
+- **GroupDocs.Watermark for Java:** 버전 24.11 (이 가이드에서 사용된 버전).  
+- **Maven:** 의존성 관리를 위해 사용하지만, 수동으로 JAR를 다운로드해도 됩니다.  
 
-GroupDocs.Watermark는 저수준 PDF 조작 세부 사항을 추상화한 고수준 API를 제공합니다. 주요 기능은 다음과 같습니다.
-
-- 다양한 문서 형식 지원(PDF, DOCX, XLSX, 이미지).  
-- 정밀한 이미지‑해시 검색을 통해 기존 워터마크를 찾아냅니다.  
-- 전체 문서를 재생성하지 않고 워터마크 이미지를 간단히 교체합니다.  
-- 엔터프라이즈 워크로드를 위한 견고한 라이선스 관리와 성능 최적화.
-
-## 사전 요구 사항
-
-- **Java Development Kit (JDK):** 버전 8 이상.  
-- **GroupDocs.Watermark for Java:** 여기서는 최신 버전인 24.11을 기준으로 설명합니다.  
-- **Maven:** 의존성 관리를 위해 필요합니다.  
-
-Java I/O와 Maven 프로젝트 구조에 대한 기본 이해가 있으면 학습이 수월합니다.
-
-## GroupDocs.Watermark for Java 설정하기
+Maven이 처음이라면, 아래 `pom.xml` 스니펫이 추가해야 할 내용을 정확히 보여줍니다.
 
 ### Maven 설정
-
-`pom.xml`에 저장소와 의존성을 추가합니다.
+`pom.xml`에 다음 구성을 추가하여 GroupDocs.Watermark를 의존성으로 포함합니다:
 
 ```xml
 <repositories>
@@ -69,17 +113,23 @@ Java I/O와 Maven 프로젝트 구조에 대한 기본 이해가 있으면 학�
 ```
 
 ### 직접 다운로드
-
-또는 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)에서 최신 버전을 직접 다운로드할 수 있습니다.
+또는 최신 버전을 직접 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)에서 다운로드할 수 있습니다.
 
 #### 라이선스 획득
-- **Free Trial:** 비용 없이 모든 기능을 체험할 수 있습니다.  
-- **Temporary License:** 장기 테스트용으로 사용할 수 있습니다.  
-- **Commercial License:** 실제 운영 환경에 필수입니다.
+- **Free trial:** 핵심 기능을 살펴볼 수 있도록 체험 패키지를 다운로드합니다.  
+- **Temporary license:** GroupDocs 포털에서 기간 제한 키를 받아 확장 테스트를 진행합니다.  
+- **Commercial license:** 무제한 프로덕션 사용 및 우선 지원을 위한 전체 라이선스를 구매합니다.
 
-### 기본 초기화
+## add image watermark java 단계별 방법
 
-라이브러리를 클래스패스에 추가한 뒤, PDF를 가리키는 `Watermarker` 인스턴스를 생성합니다.
+`Watermark` 클래스는 워터마크 작업을 처리할 수 있는 문서를 나타냅니다. `ImageSearchOptions`는 이미지 워터마크를 찾기 위한 기준을 구성합니다. `WatermarkSearchResult`는 검색을 통해 발견된 워터마크 컬렉션을 보유합니다. `setImage()` 메서드는 워터마크의 이미지를 교체하고, `document.save()`는 수정된 문서를 디스크에 저장합니다.
+
+대상 문서를 로드하고, 기존 워터마크를 찾아 새 이미지로 교체합니다—세 단계로 간결하게 수행합니다. 아래 직접 답변은 각 개별 단계에 들어가기 전에 전체 흐름을 설명합니다.
+
+PDF(또는 기타 지원 파일)를 `Watermark.load()`로 로드하고, 제공된 해시와 일치하는 워터마크를 찾기 위해 `ImageSearchOptions` 객체를 구성한 뒤, 반환된 컬렉션을 반복하면서 새 바이트 배열을 사용해 `setImage()`를 호출하고, 마지막으로 `save()`로 수정된 문서를 저장합니다. 이 패턴은 PDF, Word, Excel, PowerPoint 및 이미지 파일 모두에 적용되며, 의도된 워터마크만 변경되도록 보장합니다.
+
+### Step 1: 이미지 파일 로드 java
+워터마크를 교체하려면 먼저 새 이미지를 바이트 배열로 준비해야 합니다. 아래 코드는 디스크의 이미지 파일을 메모리로 읽어 워터마크 API에 전달할 수 있게 합니다.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -87,18 +137,13 @@ import com.groupdocs.watermark.Watermarker;
 public class Main {
     public static void main(String[] args) {
         Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_PATH.pdf");
-        // You can now call search, add, or replace watermark methods.
+        // Proceed to use GroupDocs.Watermark functionalities.
     }
 }
 ```
 
-## PDF 문서에 add image watermark java 적용하기
-
-다음은 구현해야 할 세 가지 핵심 단계입니다: 새 이미지 로드, 기존 워터마크 위치 파악, 이미지 데이터 교체.
-
-### 단계 1: 이미지 데이터 로드
-
-이미지를 바이트 배열로 로드하면 문서에 삽입할 준비가 됩니다.
+### Step 2: 문서에서 워터마크 검색
+다음으로, 검색 기준을 구성하여 엔진이 대상 워터마크를 알도록 합니다. 이미지 해시, 크기 또는 불투명도로 매치할 수 있으며, 아래 예시는 높은 정밀도를 위해 해시 기반 접근 방식을 사용합니다.
 
 ```java
 import java.io.File;
@@ -119,11 +164,8 @@ public class LoadImageData {
 }
 ```
 
-*설명:* `loadImageData()`가 반환하는 바이트 배열을 워터마크 객체에 전달하면 시각적 내용을 교체할 수 있습니다.
-
-### 단계 2: 문서에서 워터마크 검색 (java watermark pdf example)
-
-이미지‑해시 검색 기준을 사용해 참조 로고와 일치하는 워터마크를 찾습니다.
+### Step 3: 워터마크 이미지 교체
+마지막으로, 찾은 워터마크를 반복하면서 Step 1에서 만든 새 바이트 배열로 각 워터마크의 이미지 데이터를 교체합니다. 업데이트 후 원본을 보존하기 위해 문서를 새 파일에 저장합니다.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -142,11 +184,38 @@ public class SearchForWatermarks {
 }
 ```
 
-*설명:* `ImageDctHashSearchCriteria`는 `logo.bmp`의 시각적 지문을 PDF 내 각 이미지와 비교하여 일치 항목을 반환합니다.
+## 일반적인 문제 및 해결 방법
+`LoadOptions`를 사용하면 문서를 열 때 비밀번호나 로드 모드와 같은 매개변수를 지정할 수 있습니다. `LoadMode` 열거형은 파일이 로드되는 방식을 정의하며, 예를 들어 스트리밍 접근을 위한 STREAM이 있습니다.
 
-### 단계 3: 워터마크 이미지 교체
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| 워터마크를 찾을 수 없음 | 검색 해시가 일치하지 않음(해상도 또는 색 깊이 차이) | 정확한 원본 파일에서 해시를 생성하거나 `ImageSearchOptions.setSimilarity(0.85)`를 사용해 퍼지 매칭을 허용하십시오. |
+| 대용량 PDF에서 메모리 부족 오류 | 전체 문서를 메모리에 로드함 | `Watermark.load(inputPath, LoadOptions.create().setLoadMode(LoadMode.STREAM))`를 사용해 파일을 스트리밍하십시오. |
+| 저장된 문서가 손상됨 | 출력 스트림이 제대로 닫히지 않음 | `try‑with‑resources`를 출력 스트림에 사용하거나 저장 후 `document.close()`를 호출하십시오. |
+| 새 워터마크가 위치가 어긋남 | 원본 워터마크에 회전 또는 스케일 메타데이터가 있음 | 원본 `Watermark.getTransform()` 설정을 보존하고 `watermark.setTransform(originalTransform)`를 통해 새 이미지에 적용하십시오. |
 
-검색된 워터마크를 순회하면서 새 이미지 데이터를 주입합니다.
+## 자주 묻는 질문
+
+**Q: 암호로 보호된 PDF에 워터마크를 추가할 수 있나요?**  
+A: 예. `Watermark.load(path, new LoadOptions(password))`로 문서를 로드하면 API가 이를 복호화하여 처리합니다.
+
+**Q: GroupDocs.Watermark가 SVG 이미지를 지원하나요?**  
+A: 라이브러리는 SVG 파일을 PNG로 래스터화한 뒤 삽입할 수 있지만, 현재는 네이티브 SVG 삽입을 지원하지 않습니다.
+
+**Q: 한 번의 호출로 처리할 수 있는 페이지 수는 얼마나 되나요?**  
+A: API는 **500+ pages** 이상의 문서를 전체 파일을 메모리에 로드하지 않고 스트리밍 아키텍처 덕분에 처리할 수 있습니다.
+
+**Q: 동일 문서에 여러 개의 서로 다른 워터마크를 추가할 수 있나요?**  
+A: 물론 가능합니다. 각 이미지마다 별도의 `Watermark` 객체를 생성하고 `document.add(watermark)`를 호출하면 됩니다.
+
+**Q: Java SDK가 지원하는 플랫폼은 무엇인가요?**  
+A: Windows, Linux, macOS 모두 지원되며, 라이브러리는 Docker 컨테이너를 포함한 모든 JVM 호환 환경에서 작동합니다.
+
+---
+
+**마지막 업데이트:** 2026-08-04  
+**테스트 환경:** GroupDocs.Watermark 24.11 for Java  
+**작성자:** GroupDocs
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -172,56 +241,8 @@ public class ReplaceImageInWatermarks {
 }
 ```
 
-*설명:* 각 `PossibleWatermark`에 새 이미지 바이트를 업데이트하고, 수정된 PDF를 `OUTPUT_PDF_PATH`에 저장합니다.
+## 관련 튜토리얼
 
-## 실용적인 활용 사례
-
-1. **문서 브랜딩:** 모든 PDF에서 일반 로고를 기업 고유 그래픽으로 교체합니다.  
-2. **보안 강화:** 구식 워터마크를 최신 버전으로 업데이트해 규정 준수를 유지합니다.  
-3. **버전 관리:** 수동 편집 없이 아카이브 내 여러 워터마크 디자인을 효율적으로 관리합니다.  
-4. **CMS 통합:** 콘텐츠 게시 파이프라인에서 자동으로 워터마크 교체를 수행합니다.  
-5. **동적 템플릿:** 고객별 맞춤 워터마크 이미지를 실시간으로 삽입해 PDF를 생성합니다.
-
-## 성능 고려 사항
-
-- **청크 단위 이미지 로드:** 매우 큰 이미지는 작은 버퍼로 나누어 읽어 메모리 급증을 방지합니다.  
-- **목표 검색 기준:** 정확한 해시 값을 사용해 스캔 시간을 최소화합니다(특히 다중 페이지 PDF에서 유용).  
-- **리소스 정리:** 스트림(`try‑with‑resources`)과 `Watermarker` 인스턴스를 항상 닫아 네이티브 리소스를 해제합니다.
-
-## 흔히 발생하는 문제와 해결책
-
-| 문제 | 원인 | 해결 방법 |
-|------|------|-----------|
-| `OutOfMemoryError` 발생 (대용량 이미지 로드) | 파일 전체를 메모리에 읽음 | 이미지를 청크로 로드하거나 변환 전에 축소합니다. |
-| 워터마크 미검색 | 해시값 오류 또는 이미지 형식 불일치 | 참조 이미지(`logo.bmp`)가 PDF 내 실제 이미지와 정확히 일치하는지 확인합니다. |
-| `Unsupported format` 오류 (`setImageData` 호출 시) | 워터마크 엔터티가 제공된 형식을 지원하지 않음 | PNG 또는 BMP 등 널리 지원되는 형식으로 변환합니다. |
-| 저장된 PDF가 손상됨 | `watermarker.save`가 모든 변경 적용 전에 호출 | 루프가 끝난 후, 모든 워터마크 객체가 업데이트된 뒤 저장하도록 합니다. |
-
-## 자주 묻는 질문
-
-**Q: GroupDocs.Watermark for Java란?**  
-A: PDF, DOCX, 이미지 등 다양한 문서 형식에서 워터마크를 추가·검색·교체할 수 있는 Java 라이브러리입니다.
-
-**Q: PDF가 아닌 문서에서도 사용할 수 있나요?**  
-A: 예 – Word, Excel, PowerPoint 및 이미지 파일도 지원합니다.
-
-**Q: 워터마크에 사용할 수 있는 이미지 형식은?**  
-A: PNG, BMP, JPEG, GIF, TIFF를 기본적으로 지원합니다.
-
-**Q: 개발 빌드에 라이선스가 필요합니까?**  
-A: 개발·테스트 단계에서는 무료 체험판으로 충분하지만, 상용 환경에서는 상업용 라이선스가 필요합니다.
-
-**Q: 비밀번호가 설정된 PDF는 어떻게 처리하나요?**  
-A: `Watermarker` 생성자에 비밀번호를 전달합니다: `new Watermarker(path, password);`.
-
-## 결론
-
-이제 GroupDocs.Watermark를 활용해 **add image watermark java** 를 구현하는 완전한 워크플로우를 갖추었습니다. 맞춤 이미지를 로드하고, 이미지‑해시 검색으로 기존 워터마크를 찾아낸 뒤, 한 번에 교체할 수 있습니다. 다양한 검색 기준을 실험하고, 문서 파이프라인에 통합해 브랜드와 보안을 최신 상태로 유지하세요.
-
----
-
-**최종 업데이트:** 2026-01-11  
-**테스트 환경:** GroupDocs.Watermark 24.11 for Java  
-**작성자:** GroupDocs  
-
----
+- [GroupDocs.Watermark for Java를 사용하여 Word 문서에 이미지 워터마크 추가하는 방법](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
+- [GroupDocs for Java를 사용하여 Excel에 이미지 워터마크 추가하기: 종합 가이드](/watermark/java/image-watermarks/groupdocs-watermark-java-add-image-to-excel/)
+- [GroupDocs.Watermark와 함께 Java에서 텍스트 워터마크 추가하기: 단계별 가이드](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)

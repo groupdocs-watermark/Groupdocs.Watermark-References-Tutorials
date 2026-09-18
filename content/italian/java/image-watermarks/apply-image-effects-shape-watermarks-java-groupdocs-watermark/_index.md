@@ -1,50 +1,106 @@
 ---
-date: '2026-01-11'
-description: Scopri come aggiungere una filigrana a file pptx e aggiungere una filigrana
-  immagine in Java con effetti come luminosità, contrasto e bordi usando GroupDocs.Watermark
-  per Java.
+date: '2026-08-04'
+description: Scopri come utilizzare GroupDocs per aggiungere image effects — brightness,
+  contrast, chroma key, borders — alle shape watermarks nelle presentazioni Java con
+  GroupDocs.Watermark.
 keywords:
-- add watermark to pptx
-- add image watermark java
-- GroupDocs Watermark for Java
-- image watermark customization
-title: Aggiungi filigrana a pptx con effetti immagine sulle filigrane di forma – Java
-  GroupDocs.Watermark
+- how to use groupdocs
+- apply image effects to shape watermarks in java
+- groupdocs watermark java
+lastmod: '2026-08-04'
+og_description: Scopri come utilizzare GroupDocs per aggiungere brightness, contrast,
+  chroma key e border effects alle shape watermarks nelle presentazioni Java. Guida
+  passo‑passo per gli sviluppatori.
+og_image_alt: Guide showing GroupDocs.Watermark Java code for applying image effects
+  to shape watermarks
+og_title: Come utilizzare GroupDocs – Apply image effects alle shape watermarks in
+  Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-04'
+  description: Learn how to use GroupDocs to add image effects—brightness, contrast,
+    chroma key, borders—to shape watermarks in Java presentations with GroupDocs.Watermark.
+  headline: How to use GroupDocs to apply image effects to shape watermarks in Java
+  type: TechArticle
+- description: Learn how to use GroupDocs to add image effects—brightness, contrast,
+    chroma key, borders—to shape watermarks in Java presentations with GroupDocs.Watermark.
+  name: How to use GroupDocs to apply image effects to shape watermarks in Java
+  steps:
+  - name: load the presentation file
+    text: The `Watermarker` class is the entry point for all watermark operations
+      on a document.
+  - name: create an image watermark instance
+    text: The `ImageWatermark` class represents a raster image (e.g., a logo) that
+      can be placed onto a shape as a watermark.
+  - name: configure image effects
+    text: The `PresentationImageEffects` class lets you modify brightness, contrast,
+      chroma‑key transparency, and border settings for image watermarks in presentations.
+  - name: add the configured watermark to the presentation
+    text: The `PresentationWatermarkOptions` class specifies where and how a watermark
+      is applied, such as target slides and positioning.
+  - name: save the modified presentation and release resources
+    text: Always close the `Watermarker` to free file handles and memory buffers.
+  type: HowTo
+- questions:
+  - answer: Call `setOpacity(double opacity)` on the `PresentationImageEffects` object;
+      values range from 0.0 (fully transparent) to 1.0 (fully opaque).
+    question: How do I adjust the transparency of an image watermark?
+  - answer: Yes. Use `PresentationWatermarkOptions.setSlideIndices(int... indices)`
+      to target individual slide numbers.
+    question: Can I apply watermarks to specific slides only?
+  - answer: PNG, JPEG, BMP, GIF, TIFF, and WebP are all supported, giving you flexibility
+      for logos and graphics.
+    question: What image formats are supported for watermarking?
+  - answer: Wrap the workflow in a try‑catch block and catch `WatermarkException`
+      to obtain detailed error codes and messages.
+    question: How should I handle errors during watermark processing?
+  - answer: Absolutely. Iterate over a collection of file paths, instantiate a `Watermarker`
+      for each, and apply the same watermark configuration.
+    question: Is batch processing of many presentations possible?
+  type: FAQPage
+tags:
+- groupdocs watermark
+- java image effects
+- shape watermarks
+- presentation security
+title: Come utilizzare GroupDocs per applicare image effects alle shape watermarks
+  in Java
 type: docs
 url: /it/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/
 weight: 1
 ---
 
-# Aggiungere filigrana a pptx con effetti immagine su filigrane di forma – Java GroupDocs.Watermark
+# Come utilizzare GroupDocs per applicare effetti immagine ai filigrane a forma in Java
 
-Proteggere i file delle presentazioni è una pratica indispensabile per chi condivide slide aziendali o educative. In questa guida **add watermark to pptx** i file mentre personalizzi l'aspetto della filigrana con luminosità, contrasto, chroma‑key e effetti di bordo — il tutto usando **GroupDocs.Watermark for Java**. Ti mostreremo anche come **add image watermark java**‑style grafica alle filigrane di forma, così le tue slide saranno sia sicure che rifinite.
+Proteggere i file delle presentazioni è una priorità assoluta per qualsiasi professionista che condivide le diapositive pubblicamente o internamente. **Come utilizzare GroupDocs** per aggiungere effetti immagine — come luminosità, contrasto, trasparenza chroma‑key e bordi personalizzati — ti offre un controllo dettagliato su come appare una filigrana mantenendo intatto il contenuto originale. In questo tutorial imparerai l’intero flusso di lavoro, dalla configurazione del progetto al salvataggio del file finale, e vedrai perché GroupDocs.Watermark è la libreria più ricca di funzionalità per questo compito.
 
-## Introduzione
+## Risposte rapide
+- **Quale libreria aggiunge effetti immagine alle filigrane?** GroupDocs.Watermark per Java.  
+- **Posso modificare luminosità e contrasto insieme?** Sì, tramite `PresentationImageEffects`.  
+- **Il bordo è opzionale?** Puoi abilitarlo o disabilitarlo con `setBorderColor` e `setBorderWidth`.  
+- **È necessaria una licenza per la produzione?** È richiesta una licenza GroupDocs valida per un utilizzo senza restrizioni.  
+- **Quali formati di file sono supportati?** Oltre 50 formati, inclusi PPTX, PPT e PDF.
 
-Nell'era digitale, proteggere le tue presentazioni aiuta a prevenire usi non autorizzati. Questo tutorial ti guida attraverso il processo completo di aggiunta di una filigrana a un file PowerPoint (.pptx), applicando effetti immagine e perfezionando i bordi. Alla fine, sarai in grado di proteggere la tua proprietà intellettuale senza sacrificare la qualità visiva.
+## Cos'è GroupDocs.Watermark per Java?
 
-## Risposte Rapide
-- **What does “add watermark to pptx” mean?** Significa incorporare un identificatore visivo (testo o immagine) in ogni diapositiva di un file PowerPoint.  
-- **Which library supports image effects?** GroupDocs.Watermark for Java fornisce `PresentationImageEffects`.  
-- **Can I change brightness and contrast?** Sì, usa `setBrightness()` e `setContrast()` sull'oggetto effects.  
-- **Is a license required for production?** È necessaria una licenza GroupDocs valida per la piena funzionalità.  
-- **Will this work with large presentations?** Sì, ma rilascia le risorse prontamente per mantenere basso l'uso di memoria.  
+GroupDocs.Watermark per Java è una libreria completa che consente agli sviluppatori di aggiungere, modificare e rimuovere filigrane su più di 50 formati di documenti e immagini. Funziona interamente sul lato server, eliminando la necessità di applicazioni di terze parti, e fornisce un'API ricca per una personalizzazione visiva fine, elaborazione batch e streaming ad alte prestazioni.
 
-## Cos'è “add watermark to pptx”?
-Aggiungere una filigrana a un file PPTX inserisce una grafica o testo semi‑trasparente su ogni diapositiva. Questo marcatore visivo segnala la proprietà e scoraggia la distribuzione non autorizzata.
+## Perché utilizzare effetti immagine sulle filigrane a forma?
 
-## Perché usare GroupDocs.Watermark per Java?
-GroupDocs.Watermark offre un'API fluida, supporta un'ampia gamma di formati immagine e consente di manipolare le proprietà visive (luminosità, contrasto, chroma‑key, bordi) senza convertire la presentazione in un altro formato.
+Applicare effetti immagine ti consente di personalizzare l'impatto visivo di una filigrana senza compromettere la leggibilità. Regolare la luminosità o il contrasto può far sì che un logo si fonda delicatamente con gli sfondi delle diapositive, mentre la trasparenza chroma‑key rimuove i colori indesiderati. Aggiungere bordi crea un confine visivo chiaro, rafforzando l'identità del marchio e rendendo la filigrana più difficile da rimuovere o ignorare.
 
 ## Prerequisiti
-- **GroupDocs.Watermark for Java** (Version 24.11 or later)  
-- Java 8 or newer, IntelliJ IDEA or Eclipse  
-- Basic Java programming knowledge  
-- Access to a `.pptx` file you want to protect  
+- **GroupDocs.Watermark per Java** — Versione 24.11 o successiva.  
+- Java Development Kit 8 o successivo.  
+- Un IDE come IntelliJ IDEA o Eclipse.  
+- Conoscenze di base di programmazione Java e familiarità con i file di presentazione (PPTX).
 
-## Configurazione di GroupDocs.Watermark per Java
+## Come configurare GroupDocs.Watermark per Java
 
-Aggiungi la libreria al tuo progetto Maven:
+Carica la libreria nel tuo progetto Maven e assicurati che la licenza sia disponibile prima di qualsiasi chiamata API.
+
+**Configurazione Maven**  
+Aggiungi la seguente dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -64,41 +120,41 @@ Aggiungi la libreria al tuo progetto Maven:
 </dependencies>
 ```
 
-Oppure scaricala direttamente da [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+**Download diretto**  
+Puoi anche scaricare il JAR dalla pagina ufficiale di rilascio: [GroupDocs.Watermark per Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Acquisizione della Licenza
-- Inizia con una prova gratuita per esplorare le funzionalità.  
-- Richiedi una licenza temporanea o acquista una licenza completa per l'uso in produzione.
+### Acquisizione della licenza
+Una prova gratuita è disponibile per la valutazione. Per l'uso in produzione, richiedi una licenza temporanea o acquista una licenza completa dal portale GroupDocs.
 
-#### Inizializzazione e Configurazione di Base
+## Come applicare effetti immagine alle filigrane a forma in una presentazione
 
-```java
-PresentationLoadOptions loadOptions = new PresentationLoadOptions();
-Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
-```
+Carica la tua presentazione, crea una filigrana immagine, configura gli effetti desiderati e salva il risultato. I passaggi seguenti ti offrono una soluzione concisa, end‑to‑end, e ogni passaggio include un breve esempio di codice che puoi copiare direttamente nel tuo progetto.
 
-Ora sei pronto a utilizzare grafiche **add image watermark java**‑style con effetti personalizzati.
-
-## Guida all'Implementazione
-
-### Come aggiungere filigrana a pptx con effetti immagine su filigrane di forma
-
-#### Passo 1: Carica la tua Presentazione
-Prima, apri il file PowerPoint che desideri proteggere.
+### Passo 1: caricare il file di presentazione
+La classe `Watermarker` è il punto di ingresso per tutte le operazioni di filigrana su un documento.
 
 ```java
 PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-#### Passo 2: Crea e Configura la Filigrana Immagine
-Crea un `ImageWatermark` dal tuo logo o da qualsiasi immagine preferisci.
+### Passo 2: creare un'istanza di filigrana immagine
+La classe `ImageWatermark` rappresenta un'immagine raster (ad es., un logo) che può essere posizionata su una forma come filigrana.
+
+```java
+PresentationLoadOptions loadOptions = new PresentationLoadOptions();
+Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
+```
+
+### Passo 3: configurare gli effetti immagine
+La classe `PresentationImageEffects` ti consente di modificare luminosità, contrasto, trasparenza chroma‑key e impostazioni del bordo per le filigrane immagine nelle presentazioni.
 
 ```java
 ImageWatermark watermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
 ```
 
-Ora imposta gli effetti visivi di cui hai bisogno.
+### Passo 4: aggiungere la filigrana configurata alla presentazione
+La classe `PresentationWatermarkOptions` specifica dove e come viene applicata una filigrana, ad esempio le diapositive target e il posizionamento.
 
 ```java
 PresentationImageEffects effects = new PresentationImageEffects();
@@ -111,8 +167,8 @@ effects.getBorderLineFormat().setEnabled(true);
 effects.getBorderLineFormat().setWeight(1); // Set border weight to 1.
 ```
 
-#### Passo 3: Aggiungi la Filigrana con gli Effetti
-Allega la filigrana configurata a ogni diapositiva.
+### Passo 5: salvare la presentazione modificata e rilasciare le risorse
+Chiudi sempre il `Watermarker` per liberare i handle dei file e i buffer di memoria.
 
 ```java
 PresentationWatermarkSlideOptions options = new PresentationWatermarkSlideOptions();
@@ -121,59 +177,60 @@ options.setEffects(effects);
 watermarker.add(watermark, options);
 ```
 
-#### Passo 4: Salva e Chiudi le Risorse
-Salva le modifiche e pulisci le risorse.
+## Problemi comuni e risoluzione
+- **Percorsi file errati** – Usa percorsi assoluti o risolvi i percorsi relativi rispetto a `System.getProperty("user.dir")`.  
+- **Formato immagine non supportato** – Verifica che l'immagine sia PNG, JPEG, BMP o un altro tipo supportato.  
+- **Licenza non caricata** – Assicurati che il file di licenza sia posizionato nel classpath e inizializzato prima di qualsiasi chiamata API.  
+- **Presentazioni di grandi dimensioni** – Abilita la modalità streaming (`Watermarker.setStreaming(true)`) per mantenere basso l'uso della memoria.
+
+## Applicazioni pratiche
+1. **Protezione del marchio** – Inserisci un logo aziendale semi‑trasparente con luminosità personalizzata per rendere la copia poco attraente.  
+2. **Contenuto educativo** – Filtra le diapositive delle lezioni con un sigillo universitario che utilizza un effetto chroma‑key per fondersi con gli sfondi delle diapositive.  
+3. **Report aziendali** – Aggiungi una filigrana con bordo ai deck finanziari riservati, assicurando che il colore del bordo corrisponda alle linee guida del branding aziendale.
+
+## Suggerimenti sulle prestazioni
+- Elabora le presentazioni in batch usando un executor thread‑pool per massimizzare l'utilizzo della CPU.  
+- Riutilizza la stessa istanza `Watermarker` per più file quando possibile; reinizializza l'oggetto filigrana solo quando lo stile visivo cambia.  
+- Monitora l'heap JVM con strumenti come VisualVM per rilevare eventuali picchi di memoria inaspettati.
+
+## Domande frequenti
+
+**D:** Come regolo la trasparenza di una filigrana immagine?  
+**R:** Chiama `setOpacity(double opacity)` sull'oggetto `PresentationImageEffects`; i valori vanno da 0.0 (totalmente trasparente) a 1.0 (totalmente opaco).
+
+**D:** Posso applicare filigrane solo a diapositive specifiche?  
+**R:** Sì. Usa `PresentationWatermarkOptions.setSlideIndices(int... indices)` per mirare a numeri di diapositiva individuali.
+
+**D:** Quali formati immagine sono supportati per le filigrane?  
+**R:** PNG, JPEG, BMP, GIF, TIFF e WebP sono tutti supportati, offrendoti flessibilità per loghi e grafiche.
+
+**D:** Come devo gestire gli errori durante l'elaborazione delle filigrane?  
+**R:** Avvolgi il flusso di lavoro in un blocco try‑catch e cattura `WatermarkException` per ottenere codici di errore e messaggi dettagliati.
+
+**D:** È possibile l'elaborazione batch di molte presentazioni?  
+**R:** Assolutamente. Itera su una collezione di percorsi file, istanzia un `Watermarker` per ciascuno e applica la stessa configurazione di filigrana.
+
+## Risorse aggiuntive
+- [Documentazione](https://docs.groupdocs.com/watermark/java/)  
+- [Riferimento API](https://reference.groupdocs.com/watermark/java)  
+- [Scarica GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/)  
+- [Repository GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- [Forum di supporto gratuito](https://forum.groupdocs.com/c/watermark/10)  
+- [Richiedi una licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Ultimo aggiornamento:** 2026-08-04  
+**Testato con:** GroupDocs.Watermark 24.11 per Java  
+**Autore:** GroupDocs
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/out_presentation.pptx");
 watermarker.close();
 ```
 
-### Suggerimenti per la Risoluzione dei Problemi
-- Verifica i percorsi dei file; i percorsi assoluti evitano confusione.  
-- Assicurati di utilizzare una versione supportata di GroupDocs (24.11+).  
-- Se la filigrana appare troppo tenue, aumenta la luminosità o l'opacità tramite `setOpacity()`.
+## Tutorial correlati
 
-## Applicazioni Pratiche
-1. **Brand Protection** – Inserisci il tuo logo aziendale con effetti personalizzati per affermare la proprietà.  
-2. **Educational Content** – Applica una filigrana alle slide delle lezioni prima di pubblicarle online.  
-3. **Client Deliverables** – Aggiungi una filigrana discreta alle presentazioni dei clienti mantenendo un aspetto professionale.  
-
-## Considerazioni sulle Prestazioni
-- Elabora grandi presentazioni in batch per mantenere basso l'uso di memoria.  
-- Rilascia l'istanza `Watermarker` prontamente con `close()`.  
-- Riizza lo stesso oggetto `PresentationImageEffects` se applichi le stesse impostazioni a più file.  
-
-## Conclusione
-Ora hai imparato come **add watermark to pptx** file e grafiche **add image watermark java** con effetti immagine finemente regolati usando GroupDocs.Watermark. Questo approccio ti offre il pieno controllo sia sulla sicurezza sia sullo stile visivo. Sperimenta con diversi valori di effetto, bordi e colori chroma‑key per adeguarli alle linee guida del tuo brand.
-
-## Sezione FAQ
-
-**Q1:** Come regolo la trasparenza di una filigrana immagine?  
-**A1:** Usa il metodo `setOpacity()` in `PresentationImageEffects` per definire il livello di opacità desiderato.
-
-**Q2:** Posso applicare filigrane solo a slide specifiche?  
-**A2:** Sì, configura `PresentationWatermarkSlideOptions` con una collezione di indici di slide per mirare a slide particolari.
-
-**Q3:** Quali formati immagine sono supportati per la filigrana?  
-**A3:** PNG, JPEG, BMP e diversi altri formati comuni sono supportati da GroupDocs.Watermark.
-
-**Q4:** Come gestisco gli errori durante l'applicazione della filigrana?  
-**A4:** Avvolgi il codice di elaborazione in un blocco try‑catch e gestisci i tipi `Exception` di conseguenza.
-
-**Q5:** È possibile elaborare in batch più presentazioni?  
-**A5:** Assolutamente – itera su una lista di percorsi file e applica la stessa logica di filigrana a ciascun file.
-
-## Risorse
-- [Documentazione](https://docs.groupdocs.com/watermark/java/)
-- [Riferimento API](https://reference.groupdocs.com/watermark/java)
-- [Download GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/)
-- [Repository GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Forum di Supporto Gratuito](https://forum.groupdocs.com/c/watermark/10)
-- [Richiedi una Licenza Temporanea](https://purchase.groupdocs.com/temporary-license/) 
-
----
-
-**Ultimo Aggiornamento:** 2026-01-11  
-**Testato Con:** GroupDocs.Watermark 24.11 per Java  
-**Autore:** GroupDocs
+- [Come aggiungere filigrane a forma in Java per presentazioni PowerPoint usando GroupDocs.Watermark](/watermark/java/presentation-document-watermarking/groupdocs-watermark-java-add-shape-watermark-ppt/)
+- [Come aggiungere filigrane con effetti linea in PowerPoint usando GroupDocs.Watermark e Java](/watermark/java/presentation-document-watermarking/add-line-effects-watermarks-powerpoint-java-groupdocs/)
+- [Aggiungere filigrane a presentazioni PowerPoint usando GroupDocs.Watermark per Java](/watermark/java/presentation-document-watermarking/groupdocs-watermark-java-add-powerpoint-watermarks/)

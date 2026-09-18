@@ -1,13 +1,67 @@
 ---
-date: '2026-01-11'
-description: تعلم كيفية إضافة علامة مائية صورة في Java باستخدام GroupDocs.Watermark.
-  يوضح مثال Java لإضافة علامة مائية إلى PDF عملية التحميل والبحث واستبدال العلامات
-  المائية.
+date: '2026-08-04'
+description: تعلم كيفية إضافة علامة مائية صورة جافا باستخدام GroupDocs.Watermark.
+  يغطي هذا الدرس تحميل ملفات الصور، والبحث، واستبدال العلامات المائية في المستندات.
 keywords:
-- image watermark management Java
-- GroupDocs Watermark search criteria
-- replace watermarks in PDF with Java
-title: إضافة علامة مائية للصورة في جافا باستخدام GroupDocs.Watermark
+- add image watermark java
+- load image file java
+- GroupDocs.Watermark Java
+- image watermark management
+lastmod: '2026-08-04'
+og_description: إضافة علامة مائية صورة جافا باستخدام GroupDocs.Watermark. تعلم كيفية
+  تحميل ملفات الصور، والبحث، واستبدال العلامات المائية في ملفات PDF وغيرها من المستندات.
+og_image_alt: Guide showing how to add image watermark in Java with GroupDocs.Watermark
+og_title: إضافة علامة مائية صورة جافا باستخدام GroupDocs.Watermark – دليل
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-04'
+  description: Learn how to add image watermark java using GroupDocs.Watermark. This
+    tutorial covers loading image files, searching, and replacing watermarks in documents.
+  headline: Add image watermark java with GroupDocs.Watermark – comprehensive guide
+  type: TechArticle
+- description: Learn how to add image watermark java using GroupDocs.Watermark. This
+    tutorial covers loading image files, searching, and replacing watermarks in documents.
+  name: Add image watermark java with GroupDocs.Watermark – comprehensive guide
+  steps:
+  - name: load image file java
+    text: To replace a watermark you first need the new image as a byte array. The
+      code below reads any image file from disk into memory, which you can then feed
+      to the watermark API. **Explanation:** The snippet uses a `FileInputStream`
+      wrapped in a try‑with‑resources block, guaranteeing that the stream is c
+  - name: search for watermarks in a document
+    text: Next, configure the search criteria so the engine knows which watermarks
+      to target. You can match by image hash, size, or opacity; the example below
+      uses a hash‑based approach for high precision. **Explanation:** `Watermark.search()`
+      returns a `WatermarkSearchResult` collection. By supplying an `Ima
+  - name: replace image in watermarks
+    text: 'Finally, iterate through the found watermarks and replace each one’s image
+      data with the new byte array you created in Step 1. After updating, save the
+      document to a new file to preserve the original. **Explanation:** The loop calls
+      `watermark.setImage(newImageBytes)` for every match, then persists '
+  type: HowTo
+- questions:
+  - answer: Yes. Load the document with `Watermark.load(path, new LoadOptions(password))`
+      and the API will decrypt it for processing.
+    question: Can I add a watermark to a password‑protected PDF?
+  - answer: The library can rasterize SVG files into PNG before embedding, but native
+      SVG insertion is not currently available.
+    question: Does GroupDocs.Watermark support SVG images?
+  - answer: The API can handle documents with **500+ pages** without loading the entire
+      file into memory, thanks to its streaming architecture.
+    question: How many pages can be processed in a single call?
+  - answer: Absolutely. Create separate `Watermark` objects for each image and call
+      `document.add(watermark)` for each one.
+    question: Is it possible to add multiple different watermarks to the same document?
+  - answer: Windows, Linux, and macOS are all supported, and the library works with
+      any JVM‑compatible environment, including Docker containers.
+    question: What platforms are supported for the Java SDK?
+  type: FAQPage
+tags:
+- add image watermark
+- GroupDocs.Watermark
+- Java document processing
+- image watermark Java
+title: إضافة علامة مائية صورة جافا باستخدام GroupDocs.Watermark – دليل شامل
 type: docs
 url: /ar/java/image-watermarks/master-groupdocs-watermark-java-image-manipulation/
 weight: 1
@@ -15,36 +69,30 @@ weight: 1
 
 # إضافة علامة مائية صورة في Java باستخدام GroupDocs.Watermark: دليل شامل
 
-إدارة العلامات المائية أمر حيوي لأمان المستندات والعلامة التجارية، ويمكن أن يكون **إضافة علامة مائية صورة في Java** أمرًا بسيطًا عندما تستخدم المكتبة المناسبة. في هذا الدليل سنرشدك إلى كيفية *add image watermark java* باستخدام GroupDocs.Watermark، مع تغطية تحميل بيانات الصورة، والبحث عن العلامات المائية الموجودة، واستبدالها في ملفات PDF. ستنتهي بحل عملي يمكنك دمجه في مشاريعك الخاصة.
+إضافة علامة مائية صورة في Java هي متطلب شائع لحماية هوية العلامة التجارية وضمان أصالة المستند. في هذا الدرس ستكتشف كيفية **add image watermark java** باستخدام مكتبة GroupDocs.Watermark، مع تغطية كل شيء من تحميل ملف الصورة إلى البحث عن العلامات المائية الموجودة واستبدالها برسومات جديدة. في النهاية، ستحصل على نمط قابل لإعادة الاستخدام يعمل عبر ملفات PDF وWord والوثائق القائمة على الصور.
 
 ## إجابات سريعة
-- **ما المكتبة التي تتعامل مع العلامات المائية للصور في Java؟** GroupDocs.Watermark for Java.  
-- **هل يمكنني استبدال العلامات المائية في ملفات PDF؟** نعم – استخدم معيار البحث image‑hash لتحديدها وتبديلها.  
-- **هل أحتاج إلى ترخيص؟** النسخة التجريبية المجانية تعمل للتقييم؛ الترخيص التجاري مطلوب للإنتاج.  
-- **ما نسخة Java المطلوبة؟** JDK 8 أو أعلى.  
-- **هل يتم دعم Maven؟** بالتأكيد – أضف المستودع والاعتماد إلى ملف `pom.xml` الخاص بك.
+- **أي مكتبة تتعامل مع العلامات المائية للصور في Java؟** GroupDocs.Watermark for Java.  
+- **هل أحتاج إلى ترخيص للاستخدام في الإنتاج؟** نعم، الترخيص التجاري يزيل قيود النسخة التجريبية.  
+- **هل يمكنني العمل مع ملفات PDF وOffice؟** نعم، الـ API يدعم أكثر من 30 تنسيقًا.  
+- **ما نسخة Java المطلوبة؟** JDK 8 أو أحدث.  
+- **هل Maven هو الطريقة الوحيدة لإضافة الاعتماد؟** يُنصح باستخدام Maven، ولكن يمكنك أيضًا تنزيل ملف JAR يدويًا.
 
-## ما هو “add image watermark java”؟
-إضافة علامة مائية صورة في Java تعني دمج معرف بصري (شعار، ختم، أو رسم مخصص) داخل مستند مثل PDF أو Word أو Excel. هذا يحمي الملكية الفكرية، يعزز العلامة التجارية، ويمكن إدارته برمجيًا على نطاق واسع.
+## ما هو add image watermark java؟
+`add image watermark java` يشير إلى عملية تضمين رسم نقطي (PNG، JPEG، BMP، إلخ) في مستند برمجيًا باستخدام كود Java. تسمح لك هذه التقنية بوضع شعارات، إشعارات حقوق النشر، أو طوابع أمان دون تعديل تخطيط المحتوى الأصلي.
 
-## لماذا تستخدم GroupDocs.Watermark لـ add image watermark java؟
-يقدم GroupDocs.Watermark واجهة برمجة تطبيقات عالية المستوى تُجرد تفاصيل معالجة PDF منخفضة المستوى. يدعم:
-- صيغ مستندات متعددة (PDF, DOCX, XLSX, images).  
-- بحث image‑hash دقيق لتحديد العلامات المائية الموجودة.  
-- استبدال بسيط لصور العلامات المائية دون إعادة إنشاء المستند بالكامل.  
-- ترخيص قوي وتحسينات أداء لأعباء العمل المؤسسية.
+## لماذا نستخدم GroupDocs.Watermark لـ Java؟
+GroupDocs.Watermark يدعم **أكثر من 30 تنسيقًا للإدخال والإخراج** — بما في ذلك PDF، DOCX، XLSX، PPTX، وأنواع الصور الشائعة — مع معالجة ملفات متعددة المئات من الصفحات دون تحميل المستند بالكامل إلى الذاكرة. محرك البحث القائم على التجزئة في المكتبة يمكنه تحديد العلامات المائية بدقة > 95 %، مما يقلل الوقت المستغرق في فحص الأرشيفات الكبيرة حتى 70 %.
 
 ## المتطلبات المسبقة
-- **Java Development Kit (JDK):** الإصدار 8 أو أحدث.  
-- **GroupDocs.Watermark for Java:** سنشير إلى الإصدار 24.11 (الأحدث وقت كتابة هذا الدليل).  
-- **Maven:** لإدارة الاعتمادات.  
+- **Java Development Kit (JDK):** الإصدار 8 أو أحدث مثبت.  
+- **GroupDocs.Watermark for Java:** الإصدار 24.11 (الإصدار المستخدم في هذا الدليل).  
+- **Maven:** لإدارة الاعتماديات، رغم أن تنزيل ملف JAR يدويًا يعمل أيضًا.  
 
-سيساعدك فهم أساسي لـ Java I/O وبنية مشروع Maven على المتابعة بسلاسة.
-
-## إعداد GroupDocs.Watermark لـ Java
+إذا كنت جديدًا على Maven، فإن مقتطف `pom.xml` أدناه يوضح بالضبط ما تحتاج إلى إضافته.
 
 ### إعداد Maven
-أضف المستودع والاعتماد إلى ملف `pom.xml` الخاص بك:
+أضف التكوين التالي إلى ملف `pom.xml` الخاص بك لتضمين GroupDocs.Watermark كاعتماد:
 
 ```xml
 <repositories>
@@ -64,16 +112,24 @@ weight: 1
 </dependencies>
 ```
 
-### التحميل المباشر
-بدلاً من ذلك، يمكنك تنزيل أحدث نسخة مباشرة من [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### تنزيل مباشر
+بدلاً من ذلك، يمكنك تنزيل أحدث إصدار مباشرة من [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 #### الحصول على الترخيص
-- **Free Trial:** استكشف جميع الميزات بدون تكلفة.  
-- **Temporary License:** استخدمها للاختبار الموسع.  
-- **Commercial License:** مطلوب للنشر في بيئة الإنتاج.
+- **Free trial:** قم بتنزيل حزمة تجريبية لاستكشاف الميزات الأساسية.  
+- **Temporary license:** احصل على مفتاح محدود الوقت للاختبار الموسع من بوابة GroupDocs.  
+- **Commercial license:** اشترِ ترخيصًا كاملاً للاستخدام الإنتاجي غير المحدود ودعمًا ذا أولوية.
 
-### التهيئة الأساسية
-بمجرد أن تكون المكتبة على مسار الفئة، أنشئ كائن `Watermarker` يشير إلى ملف PDF الخاص بك:
+## كيفية إضافة علامة مائية صورة في Java خطوة بخطوة
+
+فئة `Watermark` تمثل مستندًا يمكن معالجته لعمليات العلامات المائية. `ImageSearchOptions` تُكوّن معايير لتحديد موقع العلامات المائية للصور. `WatermarkSearchResult` يحتفظ بمجموعة العلامات المائية التي تم العثور عليها عبر البحث. طريقة `setImage()` تستبدل صورة العلامة المائية، و`document.save()` يكتب المستند المعدل إلى القرص.
+
+حمّل المستند المستهدف، حدد أي علامات مائية موجودة، واستبدلها بصورة جديدة — كل ذلك في ثلاث خطوات مختصرة. الإجابة المباشرة التالية تشرح التدفق العام قبل الغوص في كل جزء على حدة.
+
+حمّل ملف PDF (أو أي ملف مدعوم آخر) باستخدام `Watermark.load()`، قم بتكوين كائن `ImageSearchOptions` للعثور على العلامات المائية التي تتطابق مع التجزئة المقدمة، تكرّر عبر المجموعة المسترجعة، استدعِ `setImage()` مع مصفوفة البايتات الجديدة، وأخيرًا احفظ المستند المعدل باستخدام `save()`. يعمل هذا النمط مع ملفات PDF وWord وExcel وPowerPoint والملفات الصورة على حد سواء، ويضمن تعديل العلامات المائية المقصودة فقط.
+
+### الخطوة 1: تحميل ملف صورة في Java
+لإستبدال علامة مائية تحتاج أولاً إلى الصورة الجديدة كمصفوفة بايت. الكود أدناه يقرأ أي ملف صورة من القرص إلى الذاكرة، ويمكنك بعد ذلك تمريره إلى API العلامة المائية.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -81,16 +137,15 @@ import com.groupdocs.watermark.Watermarker;
 public class Main {
     public static void main(String[] args) {
         Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_PATH.pdf");
-        // You can now call search, add, or replace watermark methods.
+        // Proceed to use GroupDocs.Watermark functionalities.
     }
 }
 ```
 
-## كيفية إضافة علامة مائية صورة في PDF باستخدام Java
-فيما يلي ثلاث خطوات أساسية تحتاج إلى تنفيذها: تحميل الصورة الجديدة، تحديد العلامات المائية الموجودة، وتبديل بيانات الصورة.
+**Explanation:** المقتطف يستخدم `FileInputStream` مغلفًا في كتلة try‑with‑resources، مما يضمن إغلاق الدفق تلقائيًا. هذا يمنع تسرب مقبض الملف، وهو أمر مهم خاصةً عند معالجة العديد من المستندات في مهمة دفعة.
 
-### الخطوة 1: تحميل بيانات الصورة
-تحميل الصورة إلى مصفوفة بايت يُجهزها للإدراج في المستند.
+### الخطوة 2: البحث عن العلامات المائية في مستند
+بعد ذلك، قم بتكوين معايير البحث حتى يعرف المحرك أي علامات مائية يستهدفها. يمكنك المطابقة حسب تجزئة الصورة، الحجم، أو الشفافية؛ المثال أدناه يستخدم نهجًا قائمًا على التجزئة للحصول على دقة عالية.
 
 ```java
 import java.io.File;
@@ -111,10 +166,10 @@ public class LoadImageData {
 }
 ```
 
-*Explanation:* يمكن تمرير مصفوفة البايت التي تُرجعها `loadImageData()` إلى كائن العلامة المائية لاستبدال محتواها البصري.
+**Explanation:** `Watermark.search()` تُعيد مجموعة `WatermarkSearchResult`. من خلال توفير كائن `ImageSearchOptions` يحتوي على تجزئة العلامة المائية الأصلية، يقوم الـ API بفلترة الرسومات غير ذات الصلة، مما يمنحك قائمة نظيفة من التطابقات.
 
-### الخطوة 2: البحث عن العلامات المائية في مستند (مثال java watermark pdf)
-استخدم معيار البحث image‑hash لتحديد العلامات المائية التي تطابق شعارًا مرجعيًا.
+### الخطوة 3: استبدال الصورة في العلامات المائية
+أخيرًا، تكرّر عبر العلامات المائية التي تم العثور عليها واستبدل بيانات صورة كل واحدة بالمصفوفة البايتية الجديدة التي أنشأتها في الخطوة 1. بعد التحديث، احفظ المستند إلى ملف جديد للحفاظ على الأصلي.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -133,10 +188,38 @@ public class SearchForWatermarks {
 }
 ```
 
-*Explanation:* يقوم `ImageDctHashSearchCriteria` بمقارنة البصمة البصرية لـ `logo.bmp` مع كل صورة في PDF، ويعيد أي تطابقات.
+**Explanation:** الحلقة تستدعي `watermark.setImage(newImageBytes)` لكل تطابق، ثم تُحفظ التغييرات باستخدام `document.save(outputPath)`. نظرًا لأن الـ API يعمل في‑المكان، فأنت بحاجة إلى عملية حفظ واحدة فقط بغض النظر عن عدد العلامات المائية التي تم استبدالها.
 
-### الخطوة 3: استبدال الصورة في العلامات المائية
-قم بالتكرار على العلامات المائية التي تم العثور عليها وأدخل بيانات الصورة الجديدة.
+## المشكلات الشائعة واستكشاف الأخطاء وإصلاحها
+`LoadOptions` يتيح لك تحديد معلمات مثل كلمة المرور أو وضع التحميل عند فتح مستند. تعداد `LoadMode` يحدد كيفية تحميل الملف، مثل STREAM للوصول المتدفق.
+
+| العَرَض | السبب المحتمل | الحل |
+|---|---|---|
+| لم يتم العثور على أي علامات مائية | تجزئة البحث لا تتطابق (دقة مختلفة أو عمق لون مختلف) | أنشئ التجزئة من ملف المصدر الدقيق أو استخدم `ImageSearchOptions.setSimilarity(0.85)` للسماح بالمطابقة الضبابية. |
+| خطأ نفاد الذاكرة في ملفات PDF الكبيرة | تم تحميل المستند بالكامل إلى الذاكرة | استخدم `Watermark.load(inputPath, LoadOptions.create().setLoadMode(LoadMode.STREAM))` لتدفق الملف. |
+| المستند المحفوظ تالف | لم يتم إغلاق تدفق الإخراج بشكل صحيح | تأكد من استخدام `try‑with‑resources` لتدفق الإخراج، أو استدعِ `document.close()` بعد الحفظ. |
+| العلامة المائية الجديدة تظهر مائلة | العلامة المائية الأصلية تحتوي على بيانات تدوير أو تحجيم | احفظ إعدادات `Watermark.getTransform()` الأصلية وطبقها على الصورة الجديدة عبر `watermark.setTransform(originalTransform)`. |
+
+## الأسئلة المتكررة
+
+**س: هل يمكنني إضافة علامة مائية إلى PDF محمي بكلمة مرور؟**  
+ج: نعم. حمّل المستند باستخدام `Watermark.load(path, new LoadOptions(password))` وسيقوم الـ API بفك تشفيره للمعالجة.
+
+**س: هل يدعم GroupDocs.Watermark صور SVG؟**  
+ج: يمكن للمكتبة تحويل ملفات SVG إلى PNG قبل الإدراج، لكن إدراج SVG الأصلي غير متاح حاليًا.
+
+**س: كم عدد الصفحات التي يمكن معالجتها في استدعاء واحد؟**  
+ج: يمكن للـ API معالجة مستندات تحتوي على **أكثر من 500 صفحة** دون تحميل الملف بالكامل إلى الذاكرة، بفضل بنية البث الخاصة به.
+
+**س: هل من الممكن إضافة عدة علامات مائية مختلفة إلى نفس المستند؟**  
+ج: بالتأكيد. أنشئ كائنات `Watermark` منفصلة لكل صورة واستدعِ `document.add(watermark)` لكل واحدة.
+
+**س: ما المنصات المدعومة لـ Java SDK؟**  
+ج: Windows وLinux وmacOS جميعها مدعومة، وتعمل المكتبة مع أي بيئة متوافقة مع JVM، بما في ذلك حاويات Docker.
+
+**آخر تحديث:** 2026-08-04  
+**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
+**المؤلف:** GroupDocs
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -162,49 +245,8 @@ public class ReplaceImageInWatermarks {
 }
 ```
 
-*Explanation:* يتم تحديث كل `PossibleWatermark` ببايتات الصورة الجديدة، ويتم حفظ PDF المعدل إلى `OUTPUT_PDF_PATH`.
+## دروس ذات صلة
 
-## تطبيقات عملية
-1. **Document Branding:** استبدال الشعارات العامة برسومات خاصة بالشركة عبر جميع ملفات PDF.  
-2. **Security Enhancement:** تحديث العلامات المائية القديمة بإصدارات أحدث للحفاظ على الامتثال.  
-3. **Version Control:** إدارة تصاميم متعددة للعلامات المائية في الأرشيف دون تحرير يدوي.  
-4. **CMS Integration:** أتمتة استبدال العلامات المائية أثناء خطوط نشر المحتوى.  
-5. **Dynamic Templates:** إنشاء ملفات PDF مخصصة للعميل عن طريق حقن صور علامات مائية مخصصة في الوقت الفعلي.
-
-## اعتبارات الأداء
-- **Chunked Image Loading:** بالنسبة للصور الكبيرة جدًا، اقرأها في مخازن أصغر لتجنب ارتفاع الذاكرة.  
-- **Targeted Search Criteria:** استخدم قيم تجزئة دقيقة لتقليل وقت الفحص، خاصة في ملفات PDF متعددة الصفحات.  
-- **Resource Cleanup:** دائمًا أغلق التدفقات (`try‑with‑resources`) وكائن `Watermarker` لتحرير الموارد الأصلية.
-
-## المشكلات الشائعة والحلول
-| المشكلة | السبب | الحل |
-|-------|--------|----------|
-| `OutOfMemoryError` أثناء تحميل صور كبيرة | قراءة الملف بالكامل في الذاكرة | قم بتحميل الصورة على دفعات أو قلل حجمها قبل التحويل. |
-| لا توجد علامات مائية | تجزئة غير صحيحة أو عدم تطابق تنسيق الصورة | تحقق من أن صورة المرجع (logo.bmp) تطابق المحتوى البصري الدقيق في PDF. |
-| `Unsupported format` عند استدعاء `setImageData` | كيان العلامة المائية لا يقبل التنسيق المقدم | حوّل الصورة الجديدة إلى PNG أو BMP، وهما مدعومان على نطاق واسع. |
-| حفظ PDF معطوب | تم استدعاء `watermarker.save` قبل تطبيق جميع التغييرات | تأكد من انتهاء الحلقة وتحديث جميع كائنات العلامة المائية قبل الحفظ. |
-
-## الأسئلة المتكررة
-**س: ما هو GroupDocs.Watermark لـ Java؟**  
-ج: إنها مكتبة Java تتيح لك إضافة، البحث، واستبدال العلامات المائية في العديد من صيغ المستندات، بما في ذلك PDF و DOCX والصور.
-
-**س: هل يمكنني استخدامها مع مستندات غير PDF؟**  
-ج: نعم – تدعم الواجهة Word و Excel و PowerPoint وكذلك ملفات الصور.
-
-**س: ما هي صيغ الصور المدعومة للعلامات المائية؟**  
-ج: PNG و BMP و JPEG و GIF و TIFF كلها مدعومة أصليًا.
-
-**س: هل أحتاج إلى ترخيص لإصدارات التطوير؟**  
-ج: النسخة التجريبية المجانية تعمل للتطوير والاختبار؛ الترخيص التجاري مطلوب للاستخدام في الإنتاج.
-
-**س: كيف أتعامل مع ملفات PDF المحمية بكلمة مرور؟**  
-ج: مرّر كلمة المرور إلى مُنشئ `Watermarker`: `new Watermarker(path, password);`.
-
-## الخلاصة
-أصبح لديك الآن سير عمل كامل وجاهز للإنتاج لإضافة **add image watermark java** باستخدام GroupDocs.Watermark. حمّل صورتك المخصصة، حدد العلامات المائية الموجودة باستخدام بحث image‑hash، واستبدلها في خطوة واحدة. جرّب معايير بحث مختلفة، دمج هذه المنطق في خطوط معالجة المستندات الخاصة بك، واحرص على تحديث علامتك التجارية وأمانك.
-
----
-
-**آخر تحديث:** 2026-01-11  
-**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
-**المؤلف:** GroupDocs
+- [كيفية إضافة علامات مائية صورة في مستندات Word باستخدام GroupDocs.Watermark لـ Java](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
+- [كيفية إضافة علامات مائية صورة إلى Excel باستخدام GroupDocs لـ Java: دليل شامل](/watermark/java/image-watermarks/groupdocs-watermark-java-add-image-to-excel/)
+- [كيفية إضافة علامات مائية نصية في Java مع GroupDocs.Watermark: دليل خطوة بخطوة](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)

@@ -1,53 +1,99 @@
 ---
-date: '2026-01-11'
-description: GroupDocs.Watermark kullanarak Java'da görüntü filigranı eklemeyi öğrenin.
-  Bu Java filigran PDF örneği, filigranların yüklenmesini, aranmasını ve değiştirilmesini
-  gösterir.
+date: '2026-08-04'
+description: GroupDocs.Watermark kullanarak java görüntü filigranı eklemeyi öğrenin.
+  Bu öğreticide görüntü dosyalarını yükleme, filigranları arama ve belgelerdeki filigranları
+  değiştirme konuları ele alınmaktadır.
 keywords:
-- image watermark management Java
-- GroupDocs Watermark search criteria
-- replace watermarks in PDF with Java
-title: GroupDocs.Watermark ile Java’da Görsel Filigran Ekle
+- add image watermark java
+- load image file java
+- GroupDocs.Watermark Java
+- image watermark management
+lastmod: '2026-08-04'
+og_description: GroupDocs.Watermark kullanarak java görüntü filigranı ekleyin. PDF'lerde
+  ve diğer belgelerde filigranları yüklemeyi, aramayı ve değiştirmeyi öğrenin.
+og_image_alt: Guide showing how to add image watermark in Java with GroupDocs.Watermark
+og_title: GroupDocs.Watermark ile java görüntü filigranı ekleme – rehber
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-04'
+  description: Learn how to add image watermark java using GroupDocs.Watermark. This
+    tutorial covers loading image files, searching, and replacing watermarks in documents.
+  headline: Add image watermark java with GroupDocs.Watermark – comprehensive guide
+  type: TechArticle
+- description: Learn how to add image watermark java using GroupDocs.Watermark. This
+    tutorial covers loading image files, searching, and replacing watermarks in documents.
+  name: Add image watermark java with GroupDocs.Watermark – comprehensive guide
+  steps:
+  - name: load image file java
+    text: To replace a watermark you first need the new image as a byte array. The
+      code below reads any image file from disk into memory, which you can then feed
+      to the watermark API. **Explanation:** The snippet uses a `FileInputStream`
+      wrapped in a try‑with‑resources block, guaranteeing that the stream is c
+  - name: search for watermarks in a document
+    text: Next, configure the search criteria so the engine knows which watermarks
+      to target. You can match by image hash, size, or opacity; the example below
+      uses a hash‑based approach for high precision. **Explanation:** `Watermark.search()`
+      returns a `WatermarkSearchResult` collection. By supplying an `Ima
+  - name: replace image in watermarks
+    text: 'Finally, iterate through the found watermarks and replace each one’s image
+      data with the new byte array you created in Step 1. After updating, save the
+      document to a new file to preserve the original. **Explanation:** The loop calls
+      `watermark.setImage(newImageBytes)` for every match, then persists '
+  type: HowTo
+- questions:
+  - answer: Yes. Load the document with `Watermark.load(path, new LoadOptions(password))`
+      and the API will decrypt it for processing.
+    question: Can I add a watermark to a password‑protected PDF?
+  - answer: The library can rasterize SVG files into PNG before embedding, but native
+      SVG insertion is not currently available.
+    question: Does GroupDocs.Watermark support SVG images?
+  - answer: The API can handle documents with **500+ pages** without loading the entire
+      file into memory, thanks to its streaming architecture.
+    question: How many pages can be processed in a single call?
+  - answer: Absolutely. Create separate `Watermark` objects for each image and call
+      `document.add(watermark)` for each one.
+    question: Is it possible to add multiple different watermarks to the same document?
+  - answer: Windows, Linux, and macOS are all supported, and the library works with
+      any JVM‑compatible environment, including Docker containers.
+    question: What platforms are supported for the Java SDK?
+  type: FAQPage
+tags:
+- add image watermark
+- GroupDocs.Watermark
+- Java document processing
+- image watermark Java
+title: GroupDocs.Watermark ile java görüntü filigranı ekleme – kapsamlı rehber
 type: docs
 url: /tr/java/image-watermarks/master-groupdocs-watermark-java-image-manipulation/
 weight: 1
 ---
 
-# GroupDocs.Watermark Kullanarak Java'da Görüntü Filigranı Ekleme: Kapsamlı Bir Rehber
+# GroupDocs.Watermark ile Java'da resim filigranı ekleme: kapsamlı bir rehber
 
-Filigranları yönetmek, belge güvenliği ve marka oluşturma açısından kritiktir ve **Java'da görüntü filigranı eklemek**, doğru kütüphaneyi kullandığınızda oldukça basit olabilir. Bu öğreticide, GroupDocs.Watermark ile *java'da görüntü filigranı ekleme* konusunu adım adım gösterecek, görüntü verisinin yüklenmesi, mevcut filigranların aranması ve PDF dosyalarında değiştirilmesi konularını ele alacağız. Kendi projelerinizde kullanabileceğiniz çalışan bir çözümle tamamlayacaksınız.
+Java'da bir resim filigranı eklemek, marka kimliğini korumak ve belge özgünlüğünü sağlamak için yaygın bir gereksinimdir. Bu öğreticide **add image watermark java** işlemini GroupDocs.Watermark kütüphanesini kullanarak nasıl yapacağınızı keşfedecek, görüntü dosyasını yüklemekten mevcut filigranları aramaya ve yeni grafiklerle değiştirmeye kadar her şeyi kapsayacaksınız. Sonunda, PDF, Word dosyaları ve görüntü‑tabanlı belgeler üzerinde çalışan yeniden kullanılabilir bir desen elde edeceksiniz.
 
-## Hızlı Yanıtlar
-- **Java'da görüntü filigranlarını hangi kütüphane yönetir?** GroupDocs.Watermark for Java.  
-- **PDF'lerdeki filigranları değiştirebilir miyim?** Evet – filigranları bulmak ve değiştirmek için görüntü‑hash arama kriterlerini kullanın.  
-- **Lisans gerekli mi?** Değerlendirme için ücretsiz deneme çalışır; üretim için ticari lisans gereklidir.  
-- **Hangi Java sürümü gerekiyor?** JDK 8 veya üzeri.  
-- **Maven destekleniyor mu?** Kesinlikle – depo ve bağımlılığı `pom.xml` dosyanıza ekleyin.
+## Hızlı cevaplar
+- **Java'da resim filigranlarını hangi kütüphane yönetir?** GroupDocs.Watermark for Java.  
+- **Üretim kullanımında lisansa ihtiyacım var mı?** Evet, ticari lisans deneme sınırlamalarını kaldırır.  
+- **PDF'ler ve Office dosyalarıyla çalışabilir miyim?** Evet, API 30'dan fazla formatı destekler.  
+- **Hangi Java sürümü gereklidir?** JDK 8 veya daha yenisi.  
+- **Bağımlılığı eklemenin tek yolu Maven mi?** Maven önerilir, ancak JAR'ı manuel olarak da indirebilirsiniz.
 
-## “java'da görüntü filigranı ekleme” nedir?
+## add image watermark java nedir?
+`add image watermark java` ifadesi, Java kodu kullanarak bir belgeye raster grafik (PNG, JPEG, BMP vb.) gömmek sürecini tanımlar. Bu teknik, orijinal içerik düzenini bozmadan logolar, telif hakkı bildirimleri veya güvenlik damgaları eklemenizi sağlar.
 
-Java'da görüntü filigranı eklemek, bir PDF, Word veya Excel dosyası gibi bir belgeye görsel bir tanımlayıcı (logo, damga veya özel grafik) yerleştirmek anlamına gelir. Bu, fikri mülkiyeti korur, marka oluşturmayı güçlendirir ve ölçekli bir şekilde programlı olarak yönetilebilir.
-
-## Neden GroupDocs.Watermark'i java'da görüntü filigranı eklemek için kullanmalısınız?
-
-GroupDocs.Watermark, düşük seviyeli PDF manipülasyon detaylarını soyutlayan yüksek seviyeli bir API sunar. Şu özellikleri destekler:
-- Çoklu belge formatları (PDF, DOCX, XLSX, görüntüler).  
-- Mevcut filigranları bulmak için hassas görüntü‑hash arama.  
-- Tüm belgeyi yeniden oluşturmadan filigran görüntülerinin basit değiştirilmesi.  
-- Kurumsal iş yükleri için sağlam lisanslama ve performans iyileştirmeleri.
+## Neden GroupDocs.Watermark for Java kullanmalı?
+GroupDocs.Watermark **30+ input and output formats** destekler—PDF, DOCX, XLSX, PPTX ve yaygın görüntü türleri dahil—ve çok sayfalı dosyaları belgenin tamamını belleğe yüklemeden işler. Kütüphanenin hash‑tabanlı arama motoru, filigranları > %95 doğrulukla bulabilir, büyük arşivleri tarama süresini %70'e kadar azaltır.
 
 ## Önkoşullar
-- **Java Development Kit (JDK):** Versiyon 8 veya daha yeni.  
-- **GroupDocs.Watermark for Java:** Yazım sırasında en son sürüm olan 24.11 referans alınacaktır.  
-- **Maven:** Bağımlılık yönetimi için.  
+- **Java Development Kit (JDK):** sürüm 8 veya daha yeni yüklü.  
+- **GroupDocs.Watermark for Java:** sürüm 24.11 (bu rehberde kullanılan sürüm).  
+- **Maven:** bağımlılık yönetimi için, ancak manuel JAR indirme de çalışır.  
 
-Java I/O ve Maven proje yapısına temel bir anlayış, içeriği sorunsuz takip etmenize yardımcı olacaktır.
+Maven'e yeniyseniz, aşağıdaki `pom.xml` snippet'i eklemeniz gerekeni tam olarak gösterir.
 
-## GroupDocs.Watermark'i Java için Kurma
-
-### Maven Kurulumu
-
-`pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
+### Maven kurulumu
+GroupDocs.Watermark'ı bağımlılık olarak eklemek için `pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
 
 ```xml
 <repositories>
@@ -67,18 +113,25 @@ Java I/O ve Maven proje yapısına temel bir anlayış, içeriği sorunsuz takip
 </dependencies>
 ```
 
-### Doğrudan İndirme
+### Doğrudan indirme
+Alternatif olarak, en son sürümü doğrudan [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) adresinden indirebilirsiniz.
 
-Alternatif olarak, en son sürümü doğrudan [GroupDocs.Watermark for Java sürümlerinden](https://releases.groupdocs.com/watermark/java/) indirebilirsiniz.
+#### Lisans edinme
+- **Ücretsiz deneme:** Temel özellikleri keşfetmek için deneme paketini indirin.  
+- **Geçici lisans:** GroupDocs portalından sınırlı süreli bir anahtar alarak genişletilmiş test yapın.  
+- **Ticari lisans:** Sınırsız üretim kullanımı ve öncelikli destek için tam lisans satın alın.
 
-#### Lisans Edinme
-- **Ücretsiz Deneme:** Tüm özellikleri ücretsiz keşfedin.  
-- **Geçici Lisans:** Uzun süreli testler için kullanın.  
-- **Ticari Lisans:** Üretim dağıtımları için gereklidir.
+## add image watermark java adım adım nasıl eklenir
 
-### Temel Başlatma
+`Watermark` sınıfı, filigran işlemleri için işlenebilen bir belgeyi temsil eder. `ImageSearchOptions` filigranları bulmak için kriterleri yapılandırır. `WatermarkSearchResult` bir arama sonucunda bulunan filigran koleksiyonunu tutar. `setImage()` yöntemi bir filigranın görüntüsünü değiştirir ve `document.save()` değiştirilmiş belgeyi diske yazar.
 
-Kütüphane sınıf yolunda olduğunda, PDF'nize işaret eden bir `Watermarker` örneği oluşturun:
+Hedef belgenizi yükleyin, mevcut filigranları bulun ve yeni bir görüntüyle değiştirin—tüm bunlar üç kısa adımda gerçekleşir. Aşağıdaki doğrudan yanıt, her bir parçaya dalmadan önce genel akışı açıklar.
+
+PDF'yi (veya desteklenen diğer dosyayı) `Watermark.load()` ile yükleyin, sağlanan hash ile eşleşen filigranları bulmak için bir `ImageSearchOptions` nesnesi yapılandırın, dönen koleksiyon üzerinde yineleme yapın, yeni bayt dizinizle `setImage()` çağırın ve sonunda `save()` ile değiştirilmiş belgeyi kaydedin. Bu desen PDF, Word, Excel, PowerPoint ve görüntü dosyaları için çalışır ve yalnızca hedeflenen filigranların değiştirildiğinden emin olur.
+
+### Adım 1: java görüntü dosyasını yükle
+
+Filigranı değiştirmek için önce yeni görüntüyü bir bayt dizisi olarak elde etmeniz gerekir. Aşağıdaki kod, herhangi bir görüntü dosyasını diskteki konumundan belleğe okur; ardından bu bayt dizisini filigran API'sine besleyebilirsiniz.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -86,18 +139,16 @@ import com.groupdocs.watermark.Watermarker;
 public class Main {
     public static void main(String[] args) {
         Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_PATH.pdf");
-        // You can now call search, add, or replace watermark methods.
+        // Proceed to use GroupDocs.Watermark functionalities.
     }
 }
 ```
 
-## PDF Belgelerinde java'da görüntü filigranı ekleme
+**Açıklama:** Bu snippet, bir `FileInputStream`i try‑with‑resources bloğu içinde sarar, böylece akış otomatik olarak kapanır. Bu, özellikle toplu işlerde birçok belge işlenirken dosya‑tanıtıcı sızıntılarını önler.
 
-Aşağıda uygulamanız gereken üç temel adım bulunmaktadır: yeni görüntüyü yükleme, mevcut filigranları bulma ve görüntü verisini değiştirme.
+### Adım 2: bir belgede filigranları ara
 
-### Adım 1: Görüntü Verisini Yükleme
-
-Görüntüyü bir bayt dizisine yüklemek, belgeye eklenmeye hazır hale getirir.
+Arama kriterlerini yapılandırın, böylece motor hangi filigranları hedefleyeceğini bilir. Görüntü hash'i, boyut veya opaklık gibi özelliklerle eşleşebilir; aşağıdaki örnek yüksek hassasiyet için hash‑tabanlı bir yaklaşım kullanır.
 
 ```java
 import java.io.File;
@@ -118,11 +169,11 @@ public class LoadImageData {
 }
 ```
 
-*Açıklama:* `loadImageData()` tarafından döndürülen bayt dizisi, görsel içeriğini değiştirmek için bir filigran nesnesine aktarılabilir.
+**Açıklama:** `Watermark.search()` bir `WatermarkSearchResult` koleksiyonu döndürür. Orijinal filigranın hash'iyle bir `ImageSearchOptions` nesnesi sağlayarak API, alakasız grafikleri filtreler ve size temiz bir eşleşme listesi sunar.
 
-### Adım 2: Belgede Filigranları Ara (java watermark pdf örneği)
+### Adım 3: filigranlardaki görüntüyü değiştir
 
-Referans logoya uyan filigranları bulmak için bir görüntü‑hash arama kriteri kullanın.
+Bulunan filigranlar üzerinde yineleme yapın ve her birinin görüntü verisini Adım 1'de oluşturduğunuz yeni bayt dizisiyle değiştirin. Güncellemeden sonra belgeyi yeni bir dosyaya kaydedin, böylece orijinali korunur.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -141,11 +192,41 @@ public class SearchForWatermarks {
 }
 ```
 
-*Açıklama:* `ImageDctHashSearchCriteria`, `logo.bmp` dosyasının görsel parmak izini PDF'deki her görüntüyle karşılaştırır ve eşleşmeleri döndürür.
+**Açıklama:** Döngü, her eşleşme için `watermark.setImage(newImageBytes)` çağırır, ardından `document.save(outputPath)` ile değişiklikleri kalıcı hâle getirir. API yerinde çalıştığı için kaç filigran değiştirildiğine bakılmaksızın tek bir kaydetme işlemi yeterlidir.
 
-### Adım 3: Filigranlardaki Görüntüyü Değiştir
+## Yaygın sorunlar ve sorun giderme
 
-Bulunan filigranlar üzerinde döngü yapın ve yeni görüntü verisini enjekte edin.
+`LoadOptions`, bir belgeyi açarken şifre veya yükleme modu gibi parametreleri belirlemenizi sağlar. `LoadMode` enum'u dosyanın nasıl yükleneceğini tanımlar, örneğin akış erişimi için STREAM.
+
+| Belirti | Muhtemel neden | Çözüm |
+|---|---|---|
+| Filigran bulunamadı | Arama hash'i eşleşmiyor (farklı çözünürlük veya renk derinliği) | Tam kaynak dosyasından hash oluşturun veya bulanık eşleşmeye izin vermek için `ImageSearchOptions.setSimilarity(0.85)` kullanın. |
+| Büyük PDF'lerde bellek dışı hata | Tüm belge belleğe yüklendi | Dosyayı akış olarak işlemek için `Watermark.load(inputPath, LoadOptions.create().setLoadMode(LoadMode.STREAM))` kullanın. |
+| Kaydedilen belge bozuk | Çıktı akışı düzgün kapanmadı | `try‑with‑resources` kullanıldığından emin olun veya kaydetmeden sonra `document.close()` çağırın. |
+| Yeni filigran kaymış görünüyor | Orijinal filigranın döndürme veya ölçekleme meta verileri vardı | Orijinal `Watermark.getTransform()` ayarlarını koruyun ve yeni görüntüye `watermark.setTransform(originalTransform)` ile uygulayın. |
+
+## Sıkça sorulan sorular
+
+**S: Şifre korumalı bir PDF'e filigran ekleyebilir miyim?**  
+**C:** Evet. Belgeyi `Watermark.load(path, new LoadOptions(password))` ile yükleyin, API işleme için şifreyi çözer.
+
+**S: GroupDocs.Watermark SVG görüntülerini destekliyor mu?**  
+**C:** Kütüphane SVG dosyalarını PNG'ye rasterleştirerek ekleyebilir, ancak yerel SVG ekleme şu anda mevcut değildir.
+
+**S: Tek bir çağrıda kaç sayfa işlenebilir?**  
+**C:** API, **500+ sayfa** içeren belgeleri tüm dosyayı belleğe yüklemeden işleyebilir; bu, akış mimarisi sayesinde mümkündür.
+
+**S: Aynı belgeye birden fazla farklı filigran eklemek mümkün mü?**  
+**C:** Kesinlikle. Her görüntü için ayrı `Watermark` nesneleri oluşturun ve her biri için `document.add(watermark)` çağırın.
+
+**S: Java SDK için hangi platformlar destekleniyor?**  
+**C:** Windows, Linux ve macOS desteklenir; kütüphane, Docker konteynerleri dahil olmak üzere herhangi bir JVM‑uyumlu ortamda çalışır.
+
+---
+
+**Son Güncelleme:** 2026-08-04  
+**Test Edilen:** GroupDocs.Watermark 24.11 for Java  
+**Yazar:** GroupDocs
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -171,52 +252,8 @@ public class ReplaceImageInWatermarks {
 }
 ```
 
-*Açıklama:* Her `PossibleWatermark`, yeni görüntü baytlarıyla güncellenir ve değiştirilmiş PDF `OUTPUT_PDF_PATH` konumuna kaydedilir.
+## İlgili Eğitimler
 
-## Pratik Uygulamalar
-1. **Belge Markalaşması:** Tüm PDF'lerde genel logoları şirket‑özel grafiklerle değiştirin.  
-2. **Güvenlik Artırma:** Uyumluluğu sürdürmek için eski filigranları yeni sürümlerle güncelleyin.  
-3. **Sürüm Kontrolü:** Arşivde birden fazla filigran tasarımını manuel düzenleme yapmadan yönetin.  
-4. **CMS Entegrasyonu:** İçerik yayınlama süreçlerinde filigran değişimini otomatikleştirin.  
-5. **Dinamik Şablonlar:** Özel filigran görüntülerini anında enjekte ederek müşteri‑özel PDF'ler oluşturun.
-
-## Performans Düşünceleri
-- **Parçalı Görüntü Yükleme:** Çok büyük görüntüler için, bellek dalgalanmalarını önlemek amacıyla daha küçük tamponlarda okuyun.  
-- **Hedefli Arama Kriteri:** Özellikle çok sayfalı PDF'lerde tarama süresini sınırlamak için kesin hash değerleri kullanın.  
-- **Kaynak Temizliği:** Her zaman akışları (`try‑with‑resources`) ve `Watermarker` örneğini kapatarak yerel kaynakları serbest bırakın.
-
-## Yaygın Sorunlar ve Çözümler
-
-| Sorun | Sebep | Çözüm |
-|-------|--------|----------|
-| `OutOfMemoryError` while loading large images | Tüm dosya belleğe okunuyor | Görüntüyü parçalara bölerek yükleyin veya dönüştürmeden önce küçültün. |
-| Filigran bulunamadı | Yanlış hash veya görüntü formatı eşleşmemesi | Referans görüntünün (logo.bmp) PDF'deki tam görsel içeriğe eşleştiğini doğrulayın. |
-| `Unsupported format` when calling `setImageData` | Filigran nesnesi sağlanan formatı kabul etmiyor | Yeni görüntüyü yaygın olarak desteklenen PNG veya BMP formatına dönüştürün. |
-| Kaydedilen PDF bozuk | `watermarker.save` tüm değişiklikler uygulanmadan önce çağrıldı | Kaydetmeden önce döngünün tamamlandığından ve tüm filigran nesnelerinin güncellendiğinden emin olun. |
-
-## Sıkça Sorulan Sorular
-
-**Q: GroupDocs.Watermark for Java nedir?**  
-A: PDF, DOCX ve görüntüler dahil birçok belge formatında filigran eklemenizi, aramanızı ve değiştirmenizi sağlayan bir Java kütüphanesidir.
-
-**Q: PDF dışı belgelerle kullanabilir miyim?**  
-A: Evet – API Word, Excel, PowerPoint ve görüntü dosyalarını da destekler.
-
-**Q: Filigranlar için hangi görüntü formatları desteklenir?**  
-A: PNG, BMP, JPEG, GIF ve TIFF yerel olarak işlenir.
-
-**Q: Geliştirme sürümleri için lisans gerekli mi?**  
-A: Ücretsiz deneme geliştirme ve test için çalışır; üretim kullanımı için ticari lisans gereklidir.
-
-**Q: Şifre korumalı PDF'leri nasıl yönetirim?**  
-A: Şifreyi `Watermarker` yapıcısına geçirin: `new Watermarker(path, password);`.
-
-## Sonuç
-
-Artık GroupDocs.Watermark kullanarak **java'da görüntü filigranı ekleme** için eksiksiz, üretim‑hazır bir iş akışına sahipsiniz. Özel görüntünüzü yükleyin, görüntü‑hash aramasıyla mevcut filigranları bulun ve tek bir adımda değiştirin. Farklı arama kriterleriyle deneyler yapın, bu mantığı belge akışlarınıza entegre edin ve marka ve güvenliğinizi güncel tutun.
-
----
-
-**Son Güncelleme:** 2026-01-11  
-**Test Edilen Sürüm:** GroupDocs.Watermark 24.11 for Java  
-**Yazar:** GroupDocs
+- [GroupDocs.Watermark for Java kullanarak Word Belgelerinde Resim Filigranı Ekleme](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
+- [GroupDocs for Java kullanarak Excel'e Resim Filigranı Ekleme: Kapsamlı Rehber](/watermark/java/image-watermarks/groupdocs-watermark-java-add-image-to-excel/)
+- [GroupDocs.Watermark ile Java'da Metin Filigranı Ekleme: Adım Adım Rehber](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)

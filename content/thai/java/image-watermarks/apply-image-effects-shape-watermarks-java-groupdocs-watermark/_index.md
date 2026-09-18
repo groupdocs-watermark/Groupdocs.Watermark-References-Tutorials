@@ -1,54 +1,99 @@
 ---
-date: '2026-01-11'
-description: เรียนรู้วิธีเพิ่มลายน้ำลงในไฟล์ pptx และเพิ่มลายน้ำรูปภาพใน Java พร้อมเอฟเฟกต์ภาพเช่น
-  ความสว่าง ความคอนทราสต์ และขอบโดยใช้ GroupDocs.Watermark สำหรับ Java.
+date: '2026-08-04'
+description: เรียนรู้วิธีใช้ GroupDocs เพื่อเพิ่ม image effects—brightness, contrast,
+  chroma key, borders—ให้กับ shape watermarks ใน Java presentations ด้วย GroupDocs.Watermark.
 keywords:
-- add watermark to pptx
-- add image watermark java
-- GroupDocs Watermark for Java
-- image watermark customization
-title: เพิ่มลายน้ำในไฟล์ pptx ด้วยเอฟเฟกต์ภาพบนลายน้ำรูปทรง – Java GroupDocs.Watermark
+- how to use groupdocs
+- apply image effects to shape watermarks in java
+- groupdocs watermark java
+lastmod: '2026-08-04'
+og_description: ค้นพบวิธีใช้ GroupDocs เพื่อเพิ่ม brightness, contrast, chroma key
+  และ border effects ให้กับ shape watermarks ใน Java presentations. คู่มือขั้นตอนต่อขั้นสำหรับนักพัฒนา.
+og_image_alt: Guide showing GroupDocs.Watermark Java code for applying image effects
+  to shape watermarks
+og_title: วิธีใช้ GroupDocs – Apply image effects ให้กับ shape watermarks ใน Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-04'
+  description: Learn how to use GroupDocs to add image effects—brightness, contrast,
+    chroma key, borders—to shape watermarks in Java presentations with GroupDocs.Watermark.
+  headline: How to use GroupDocs to apply image effects to shape watermarks in Java
+  type: TechArticle
+- description: Learn how to use GroupDocs to add image effects—brightness, contrast,
+    chroma key, borders—to shape watermarks in Java presentations with GroupDocs.Watermark.
+  name: How to use GroupDocs to apply image effects to shape watermarks in Java
+  steps:
+  - name: load the presentation file
+    text: The `Watermarker` class is the entry point for all watermark operations
+      on a document.
+  - name: create an image watermark instance
+    text: The `ImageWatermark` class represents a raster image (e.g., a logo) that
+      can be placed onto a shape as a watermark.
+  - name: configure image effects
+    text: The `PresentationImageEffects` class lets you modify brightness, contrast,
+      chroma‑key transparency, and border settings for image watermarks in presentations.
+  - name: add the configured watermark to the presentation
+    text: The `PresentationWatermarkOptions` class specifies where and how a watermark
+      is applied, such as target slides and positioning.
+  - name: save the modified presentation and release resources
+    text: Always close the `Watermarker` to free file handles and memory buffers.
+  type: HowTo
+- questions:
+  - answer: Call `setOpacity(double opacity)` on the `PresentationImageEffects` object;
+      values range from 0.0 (fully transparent) to 1.0 (fully opaque).
+    question: How do I adjust the transparency of an image watermark?
+  - answer: Yes. Use `PresentationWatermarkOptions.setSlideIndices(int... indices)`
+      to target individual slide numbers.
+    question: Can I apply watermarks to specific slides only?
+  - answer: PNG, JPEG, BMP, GIF, TIFF, and WebP are all supported, giving you flexibility
+      for logos and graphics.
+    question: What image formats are supported for watermarking?
+  - answer: Wrap the workflow in a try‑catch block and catch `WatermarkException`
+      to obtain detailed error codes and messages.
+    question: How should I handle errors during watermark processing?
+  - answer: Absolutely. Iterate over a collection of file paths, instantiate a `Watermarker`
+      for each, and apply the same watermark configuration.
+    question: Is batch processing of many presentations possible?
+  type: FAQPage
+tags:
+- groupdocs watermark
+- java image effects
+- shape watermarks
+- presentation security
+title: วิธีใช้ GroupDocs เพื่อ apply image effects ให้กับ shape watermarks ใน Java
 type: docs
 url: /th/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/
 weight: 1
 ---
 
-# เพิ่มลายน้ำในไฟล์ pptx ด้วยเอฟเฟกต์ภาพบนลายน้ำรูปทรง – Java GroupDocs.Watermark
+# วิธีใช้ GroupDocs เพื่อใช้เอฟเฟกต์ภาพกับลายน้ำรูปทรงใน Java
 
-การปกป้องไฟล์งานนำเสนอเป็นแนวปฏิบัติที่จำเป็นสำหรับผู้ที่แชร์สไลด์ขององค์กรหรือการศึกษา ในคู่มือนี้คุณจะ **เพิ่มลายน้ำในไฟล์ pptx** พร้อมปรับลักษณะของลายน้ำด้วยความสว่าง, ความคอนทราสต์, คีย์โครมา, และเอฟเฟกต์ขอบ—ทั้งหมดโดยใช้ **GroupDocs.Watermark for Java** เราจะยังแสดงวิธี **เพิ่มลายน้ำภาพแบบ java** ลงในลายน้ำรูปทรง เพื่อให้สไลด์ของคุณดูปลอดภัยและมีความเป็นมืออาชีพ
+การปกป้องไฟล์การนำเสนอของคุณเป็นสิ่งสำคัญอันดับแรกสำหรับผู้เชี่ยวชาญทุกคนที่แชร์สไลด์สาธารณะหรือภายใน **วิธีใช้ GroupDocs** เพื่อเพิ่มเอฟเฟกต์ภาพ—เช่น ความสว่าง, ความคอนทราสต์, ความโปร่งใสแบบ chroma‑key, และกรอบที่กำหนดเอง—จะให้การควบคุมอย่างละเอียดว่าลายน้ำดูเป็นอย่างไรในขณะที่รักษาเนื้อหาเดิมไว้ไม่เปลี่ยนแปลง. ในบทเรียนนี้คุณจะได้เรียนรู้ขั้นตอนทำงานทั้งหมด ตั้งแต่การตั้งค่าโครงการจนถึงการบันทึกไฟล์สุดท้าย และคุณจะเห็นว่า GroupDocs.Watermark เป็นไลบรารีที่มีคุณสมบัติมากที่สุดสำหรับงานนี้.
 
-## บทนำ
+## คำตอบสั้น
+- **ไลบรารีใดที่เพิ่มเอฟเฟกต์ภาพให้กับลายน้ำ?** GroupDocs.Watermark for Java.  
+- **ฉันสามารถปรับความสว่างและความคอนทราสต์พร้อมกันได้หรือไม่?** Yes, via `PresentationImageEffects`.  
+- **กรอบเป็นตัวเลือกหรือไม่?** You can enable or disable it with `setBorderColor` and `setBorderWidth`.  
+- **ฉันต้องการใบอนุญาตสำหรับการใช้งานในผลิตภัณฑ์หรือไม่?** A valid GroupDocs license is required for unrestricted use.  
+- **รูปแบบไฟล์ใดบ้างที่รองรับ?** Over 50 formats, including PPTX, PPT, and PDF.
 
-ในยุคดิจิทัล การปกป้องงานนำเสนอของคุณช่วยป้องกันการนำไปใช้โดยไม่ได้รับอนุญาต คู่มือนี้จะพาคุณผ่านกระบวนการทั้งหมดของการเพิ่มลายน้ำลงในไฟล์ PowerPoint (.pptx) การใช้เอฟเฟกต์ภาพ และการปรับขอบอย่างละเอียด เมื่อเสร็จสิ้นคุณจะสามารถปกป้องทรัพย์สินทางปัญญาของคุณโดยไม่เสียคุณภาพภาพ
+## GroupDocs.Watermark for Java คืออะไร?
+GroupDocs.Watermark for Java เป็นไลบรารีที่ครอบคลุมซึ่งช่วยให้นักพัฒนาสามารถเพิ่ม, แก้ไข, และลบลายน้ำบนรูปแบบเอกสารและภาพกว่า 50 ประเภท. มันทำงานทั้งหมดบนเซิร์ฟเวอร์, ไม่ต้องพึ่งพาแอปพลิเคชันของบุคคลที่สาม, และให้ API ที่เต็มไปด้วยความสามารถสำหรับการปรับแต่งภาพอย่างละเอียด, การประมวลผลเป็นชุด, และการสตรีมประสิทธิภาพสูง.
 
-## คำตอบอย่างรวดเร็ว
-- **What does “add watermark to pptx” mean?** It means embedding a visual identifier (text or image) into each slide of a PowerPoint file.  
-  **“add watermark to pptx”** หมายถึงการฝังตัวระบุภาพ (ข้อความหรือรูปภาพ) ลงในแต่ละสไลด์ของไฟล์ PowerPoint  
-- **Which library supports image effects?** GroupDocs.Watermark for Java provides `PresentationImageEffects`.  
-  ไลบรารีที่รองรับเอฟเฟกต์ภาพคือ GroupDocs.Watermark for Java ซึ่งมี `PresentationImageEffects`  
-- **Can I change brightness and contrast?** Yes, use `setBrightness()` and `setContrast()` on the effects object.  
-  สามารถปรับความสว่างและความคอนทราสต์ได้โดยใช้ `setBrightness()` และ `setContrast()` บนวัตถุเอฟเฟกต์  
-- **Is a license required for production?** A valid GroupDocs license is needed for full functionality.  
-  จำเป็นต้องมีใบอนุญาต GroupDocs ที่ถูกต้องสำหรับการใช้งานเต็มรูปแบบในสภาพแวดล้อมการผลิต  
-- **Will this work with large presentations?** Yes, but release resources promptly to keep memory usage low.  
-  ใช้งานได้กับงานนำเสนอขนาดใหญ่ แต่ควรปล่อยทรัพยากรโดยเร็วเพื่อรักษาการใช้หน่วยความจำให้ต่ำ  
-
-## “add watermark to pptx” คืออะไร?
-การเพิ่มลายน้ำในไฟล์ PPTX จะใส่กราฟิกหรือข้อความที่มีความโปร่งแสงบางส่วนลงบนแต่ละสไลด์ ตัวบ่งชี้ภาพนี้สื่อถึงความเป็นเจ้าของและช่วยยับยั้งการแจกจ่ายโดยไม่ได้รับอนุญาต
-
-## ทำไมต้องใช้ GroupDocs.Watermark for Java?
-GroupDocs.Watermark มี API ที่ใช้งานง่าย รองรับรูปแบบภาพหลายประเภท และให้คุณปรับคุณสมบัติดูภาพ (ความสว่าง, ความคอนทราสต์, คีย์โครมา, ขอบ) โดยไม่ต้องแปลงงานนำเสนอเป็นรูปแบบอื่น
+## ทำไมต้องใช้เอฟเฟกต์ภาพบนลายน้ำรูปทรง?
+การใช้เอฟเฟกต์ภาพช่วยให้คุณปรับแต่งผลกระทบทางภาพของลายน้ำโดยไม่ทำให้การอ่านลดลง การปรับความสว่างหรือความคอนทราสต์สามารถทำให้โลโก้ผสมกับพื้นหลังสไลด์อย่างละเอียดอ่อน, ในขณะที่ความโปร่งใสแบบ chroma‑key จะลบสีที่ไม่ต้องการ การเพิ่มกรอบสร้างขอบเขตภาพที่ชัดเจน, เสริมสร้างอัตลักษณ์แบรนด์และทำให้ลายน้ำยากต่อการลบหรือเพิกเฉย.
 
 ## ข้อกำหนดเบื้องต้น
+- **GroupDocs.Watermark for Java** — Version 24.11 or later.  
+- Java Development Kit 8 or newer.  
+- IDE เช่น IntelliJ IDEA หรือ Eclipse.  
+- ความรู้พื้นฐานการเขียนโปรแกรม Java และความคุ้นเคยกับไฟล์การนำเสนอ (PPTX).
 
-- **GroupDocs.Watermark for Java** (Version 24.11 หรือใหม่กว่า)  
-- Java 8 หรือใหม่กว่า, IntelliJ IDEA หรือ Eclipse  
-- ความรู้พื้นฐานการเขียนโปรแกรม Java  
-- เข้าถึงไฟล์ `.pptx` ที่ต้องการปกป้อง  
+## วิธีตั้งค่า GroupDocs.Watermark for Java
+โหลดไลบรารีเข้าสู่โครงการ Maven ของคุณและตรวจสอบให้แน่ใจว่าใบอนุญาตพร้อมใช้งานก่อนการเรียกใช้ API ใด ๆ.
 
-## การตั้งค่า GroupDocs.Watermark for Java
-
-เพิ่มไลบรารีลงในโครงการ Maven ของคุณ:
+**การกำหนดค่า Maven**  
+เพิ่ม dependency ต่อไปนี้ลงในไฟล์ `pom.xml` ของคุณ:
 
 ```xml
 <repositories>
@@ -68,41 +113,40 @@ GroupDocs.Watermark มี API ที่ใช้งานง่าย รอง
 </dependencies>
 ```
 
-หรือดาวน์โหลดโดยตรงจาก [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
+**ดาวน์โหลดโดยตรง**  
+คุณยังสามารถดาวน์โหลดไฟล์ JAR จากหน้าปล่อยอย่างเป็นทางการ: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### การรับใบอนุญาต
-- เริ่มต้นด้วยการทดลองใช้ฟรีเพื่อสำรวจฟีเจอร์  
-- ขอรับใบอนุญาตชั่วคราวหรือซื้อใบอนุญาตเต็มสำหรับการใช้งานในสภาพแวดล้อมการผลิต  
+มีการทดลองใช้ฟรีสำหรับการประเมินผล สำหรับการใช้งานในผลิตภัณฑ์, ขอใบอนุญาตชั่วคราวหรือซื้อใบอนุญาตเต็มจากพอร์ทัลของ GroupDocs.
 
-#### การเริ่มต้นและการตั้งค่าเบื้องต้น
+## วิธีใช้เอฟเฟกต์ภาพกับลายน้ำรูปทรงในงานนำเสนอ
+โหลดงานนำเสนอของคุณ, สร้างลายน้ำภาพ, กำหนดค่าเอฟเฟกต์ที่ต้องการ, และบันทึกผลลัพธ์. ขั้นตอนด้านล่างให้วิธีแก้ไขที่กระชับและครบวงจร, และแต่ละขั้นตอนมีตัวอย่างโค้ดสั้นที่คุณสามารถคัดลอกไปยังโครงการของคุณได้โดยตรง.
 
-```java
-PresentationLoadOptions loadOptions = new PresentationLoadOptions();
-Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
-```
-
-ตอนนี้คุณพร้อมที่จะ **เพิ่มลายน้ำภาพแบบ java** พร้อมเอฟเฟกต์ที่กำหนดเองแล้ว
-
-## คู่มือการใช้งาน
-
-### วิธีเพิ่มลายน้ำในไฟล์ pptx ด้วยเอฟเฟกต์ภาพบนลายน้ำรูปทรง
-
-#### ขั้นตอนที่ 1: โหลดงานนำเสนอของคุณ
-เปิดไฟล์ PowerPoint ที่ต้องการปกป้องก่อน
+### ขั้นตอน 1: โหลดไฟล์งานนำเสนอ
+คลาส `Watermarker` เป็นจุดเริ่มต้นสำหรับการดำเนินการลายน้ำทั้งหมดบนเอกสาร.
 
 ```java
 PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-#### ขั้นตอนที่ 2: สร้างและกำหนดค่าลายน้ำภาพ
-สร้าง `ImageWatermark` จากโลโก้หรือรูปภาพที่คุณต้องการใช้
+### ขั้นตอน 2: สร้างอินสแตนซ์ลายน้ำภาพ
+คลาส `ImageWatermark` แสดงภาพแรสเตอร์ (เช่น โลโก้) ที่สามารถวางบนรูปทรงเป็นลายน้ำได้.
+
+```java
+PresentationLoadOptions loadOptions = new PresentationLoadOptions();
+Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
+```
+
+### ขั้นตอน 3: กำหนดค่าเอฟเฟกต์ภาพ
+คลาส `PresentationImageEffects` ให้คุณปรับความสว่าง, ความคอนทราสต์, ความโปร่งใสแบบ chroma‑key, และการตั้งค่ากรอบสำหรับลายน้ำภาพในงานนำเสนอ.
 
 ```java
 ImageWatermark watermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
 ```
 
-ตอนนี้ตั้งค่าเอฟเฟกต์ภาพที่ต้องการ
+### ขั้นตอน 4: เพิ่มลายน้ำที่กำหนดค่าแล้วลงในงานนำเสนอ
+คลาส `PresentationWatermarkOptions` ระบุตำแหน่งและวิธีการที่ลายน้ำจะถูกนำไปใช้, เช่น สไลด์เป้าหมายและการจัดตำแหน่ง.
 
 ```java
 PresentationImageEffects effects = new PresentationImageEffects();
@@ -115,8 +159,8 @@ effects.getBorderLineFormat().setEnabled(true);
 effects.getBorderLineFormat().setWeight(1); // Set border weight to 1.
 ```
 
-#### ขั้นตอนที่ 3: เพิ่มลายน้ำพร้อมเอฟเฟกต์
-แนบลายน้ำที่กำหนดค่าแล้วไปยังทุกสไลด์
+### ขั้นตอน 5: บันทึกงานนำเสนอที่แก้ไขและปล่อยทรัพยากร
+ควรปิด `Watermarker` เสมอเพื่อปล่อยตัวจัดการไฟล์และบัฟเฟอร์หน่วยความจำ.
 
 ```java
 PresentationWatermarkSlideOptions options = new PresentationWatermarkSlideOptions();
@@ -125,62 +169,60 @@ options.setEffects(effects);
 watermarker.add(watermark, options);
 ```
 
-#### ขั้นตอนที่ 4: บันทึกและปิดทรัพยากร
-บันทึกการเปลี่ยนแปลงและทำความสะอาดทรัพยากร
+## ข้อผิดพลาดทั่วไปและการแก้ไขปัญหา
+- **เส้นทางไฟล์ไม่ถูกต้อง** – ใช้เส้นทางแบบเต็มหรือแก้ไขเส้นทางสัมพันธ์โดยอ้างอิงจาก `System.getProperty("user.dir")`.  
+- **รูปแบบภาพที่ไม่รองรับ** – ตรวจสอบว่าภาพเป็น PNG, JPEG, BMP, หรือประเภทที่รองรับอื่น ๆ.  
+- **ไม่ได้โหลดใบอนุญาต** – ตรวจสอบให้แน่ใจว่าไฟล์ใบอนุญาตอยู่ใน classpath และถูกกำหนดค่าเริ่มต้นก่อนการเรียก API ใด ๆ.  
+- **งานนำเสนอขนาดใหญ่** – เปิดใช้งานโหมดสตรีม (`Watermarker.setStreaming(true)`) เพื่อรักษาการใช้หน่วยความจำให้ต่ำ.
+
+## การประยุกต์ใช้งานจริง
+1. **การปกป้องแบรนด์** – ฝังโลโก้บริษัทที่มีความโปร่งใสระดับกึ่งหนึ่งพร้อมความสว่างที่กำหนดเองเพื่อทำให้การคัดลอกไม่น่าสนใจ.  
+2. **เนื้อหาการศึกษา** – ใส่ลายน้ำบนสไลด์บรรยายด้วยตรามหาวิทยาลัยที่ใช้เอฟเฟกต์ chroma‑key เพื่อผสมกับพื้นหลังสไลด์.  
+3. **การรายงานขององค์กร** – เพิ่มลายน้ำที่มีกรอบบนชุดสไลด์การเงินที่เป็นความลับ, เพื่อให้สีกรอบตรงกับแนวทางแบรนด์ขององค์กร.
+
+## เคล็ดลับด้านประสิทธิภาพ
+- ประมวลผลงานนำเสนอเป็นชุดโดยใช้ thread‑pool executor เพื่อเพิ่มการใช้ CPU ให้สูงสุด.  
+- ใช้ instance ของ `Watermarker` เดียวกันสำหรับหลายไฟล์เมื่อเป็นไปได้; เพียงรี‑initialize วัตถุลายน้ำเมื่อสไตล์ภาพเปลี่ยน.  
+- ตรวจสอบ heap ของ JVM ด้วยเครื่องมือเช่น VisualVM เพื่อตรวจจับการเพิ่มขึ้นของหน่วยความจำที่ไม่คาดคิด.
+
+## คำถามที่พบบ่อย
+
+**Q: ฉันจะปรับความโปร่งใสของลายน้ำภาพได้อย่างไร?**  
+A: เรียก `setOpacity(double opacity)` บนวัตถุ `PresentationImageEffects`; ค่าจะอยู่ระหว่าง 0.0 (โปร่งใสเต็ม) ถึง 1.0 (ทึบเต็ม).
+
+**Q: ฉันสามารถใส่ลายน้ำลงในสไลด์เฉพาะได้หรือไม่?**  
+A: ใช่. ใช้ `PresentationWatermarkOptions.setSlideIndices(int... indices)` เพื่อกำหนดสไลด์แต่ละหมายเลข.
+
+**Q: รูปแบบภาพใดบ้างที่รองรับการใส่ลายน้ำ?**  
+A: PNG, JPEG, BMP, GIF, TIFF, และ WebP ทั้งหมดรองรับ, ให้ความยืดหยุ่นสำหรับโลโก้และกราฟิก.
+
+**Q: ฉันควรจัดการกับข้อผิดพลาดระหว่างการประมวลผลลายน้ำอย่างไร?**  
+A: ห่อ workflow ด้วยบล็อก try‑catch และจับ `WatermarkException` เพื่อรับรหัสข้อผิดพลาดและข้อความรายละเอียด.
+
+**Q: การประมวลผลเป็นชุดของงานนำเสนอหลายไฟล์เป็นไปได้หรือไม่?**  
+A: แน่นอน. วนลูปผ่านคอลเลกชันของเส้นทางไฟล์, สร้าง `Watermarker` สำหรับแต่ละไฟล์, และใช้การกำหนดค่าลายน้ำเดียวกัน.
+
+## แหล่งข้อมูลเพิ่มเติม
+- [เอกสารประกอบ](https://docs.groupdocs.com/watermark/java/)  
+- [อ้างอิง API](https://reference.groupdocs.com/watermark/java)  
+- [ดาวน์โหลด GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)  
+- [ที่เก็บ GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- [ฟอรั่มสนับสนุนฟรี](https://forum.groupdocs.com/c/watermark/10)  
+- [ขอใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**อัปเดตล่าสุด:** 2026-08-04  
+**ทดสอบกับ:** GroupDocs.Watermark 24.11 for Java  
+**ผู้เขียน:** GroupDocs
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/out_presentation.pptx");
 watermarker.close();
 ```
 
-### เคล็ดลับการแก้ไขปัญหา
-- ตรวจสอบเส้นทางไฟล์ให้ถูกต้อง; การใช้เส้นทางแบบเต็มช่วยหลีกเลี่ยงความสับสน  
-- ตรวจสอบว่าคุณใช้เวอร์ชัน GroupDocs ที่รองรับ (24.11+)  
-- หากลายน้ำดูจางเกินไป ให้เพิ่มความสว่างหรือความทึบโดยใช้ `setOpacity()`  
+## บทเรียนที่เกี่ยวข้อง
 
-## การประยุกต์ใช้ในทางปฏิบัติ
-
-1. **การปกป้องแบรนด์** – ฝังโลโก้บริษัทของคุณพร้อมเอฟเฟกต์ที่กำหนดเองเพื่อยืนยันความเป็นเจ้าของ  
-2. **เนื้อหาการศึกษา** – ใส่ลายน้ำบนสไลด์การบรรยายก่อนเผยแพร่บนอินเทอร์เน็ต  
-3. **งานส่งมอบให้ลูกค้า** – เพิ่มลายน้ำที่ไม่เด่นชัดบนงานนำเสนอของลูกค้าเพื่อคงความเป็นมืออาชีพ  
-
-## ข้อควรพิจารณาด้านประสิทธิภาพ
-
-- ประมวลผลชุดใหญ่เป็นแบตช์เพื่อรักษาการใช้หน่วยความจำให้ต่ำ  
-- ปล่อยอินสแตนซ์ `Watermarker` อย่างทันท่วงทีด้วย `close()`  
-- ใช้วัตถุ `PresentationImageEffects` เดียวกันซ้ำหากต้องการตั้งค่าเดียวกันกับหลายไฟล์  
-
-## สรุป
-
-คุณได้เรียนรู้วิธี **เพิ่มลายน้ำในไฟล์ pptx** และ **เพิ่มลายน้ำภาพแบบ java** พร้อมปรับเอฟเฟกต์ภาพอย่างละเอียดโดยใช้ GroupDocs.Watermark วิธีนี้ให้คุณควบคุมทั้งด้านความปลอดภัยและการออกแบบภาพได้เต็มที่ ลองปรับค่าต่าง ๆ ของเอฟเฟกต์, ขอบ, และสีคีย์โครมาให้สอดคล้องกับแนวทางแบรนด์ของคุณ
-
-## ส่วนคำถามที่พบบ่อย
-
-**Q1:** ฉันจะปรับความโปร่งแสงของลายน้ำภาพได้อย่างไร?  
-**A1:** ใช้เมธอด `setOpacity()` ใน `PresentationImageEffects` เพื่อกำหนดระดับความโปร่งแสงที่ต้องการ  
-
-**Q2:** ฉันสามารถใส่ลายน้ำเฉพาะสไลด์บางสไลด์ได้หรือไม่?  
-**A2:** ได้, กำหนด `PresentationWatermarkSlideOptions` พร้อมคอลเลกชันของดัชนีสไลด์เพื่อเลือกสไลด์เป้าหมาย  
-
-**Q3:** รองรับรูปแบบภาพใดบ้างสำหรับการใส่ลายน้ำ?  
-**A3:** รองรับ PNG, JPEG, BMP และรูปแบบทั่วไปอื่น ๆ ที่ GroupDocs.Watermark รองรับ  
-
-**Q4:** ฉันจะจัดการกับข้อผิดพลาดระหว่างการใส่ลายน้ำอย่างไร?  
-**A4:** ห่อโค้ดการประมวลผลด้วยบล็อก try‑catch และจัดการกับประเภท `Exception` ตามความเหมาะสม  
-
-**Q5:** สามารถประมวลผลหลายงานนำเสนอพร้อมกันได้หรือไม่?  
-**A5:** แน่นอน – ทำการวนลูปผ่านรายการเส้นทางไฟล์และใช้ตรรกะการใส่ลายน้ำเดียวกันกับแต่ละไฟล์  
-
-## แหล่งข้อมูล
-- [เอกสารประกอบ](https://docs.groupdocs.com/watermark/java/)  
-- [อ้างอิง API](https://reference.groupdocs.com/watermark/java)  
-- [ดาวน์โหลด GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
-- [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-
----
-
-**Last Updated:** 2026-01-11  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+- [วิธีเพิ่มลายน้ำรูปทรงใน Java สำหรับการนำเสนอ PowerPoint ด้วย GroupDocs.Watermark](/watermark/java/presentation-document-watermarking/groupdocs-watermark-java-add-shape-watermark-ppt/)
+- [วิธีเพิ่มลายน้ำเอฟเฟกต์เส้นใน PowerPoint ด้วย GroupDocs.Watermark และ Java](/watermark/java/presentation-document-watermarking/add-line-effects-watermarks-powerpoint-java-groupdocs/)
+- [เพิ่มลายน้ำลงในการนำเสนอ PowerPoint ด้วย GroupDocs.Watermark for Java](/watermark/java/presentation-document-watermarking/groupdocs-watermark-java-add-powerpoint-watermarks/)

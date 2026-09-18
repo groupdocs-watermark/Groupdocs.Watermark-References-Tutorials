@@ -1,51 +1,106 @@
 ---
-date: '2026-01-11'
-description: Erfahren Sie, wie Sie ein Wasserzeichen zu PPTX hinzufügen und ein Bildwasserzeichen
-  in Java mit Bildeffekten wie Helligkeit, Kontrast und Rändern mithilfe von GroupDocs.Watermark
-  für Java hinzufügen.
+date: '2026-08-04'
+description: Erfahren Sie, wie Sie GroupDocs verwenden, um Bild‑Effekte—brightness,
+  contrast, chroma key, borders—zu Form‑Wasserzeichen in Java‑Präsentationen mit GroupDocs.Watermark
+  hinzuzufügen.
 keywords:
-- add watermark to pptx
-- add image watermark java
-- GroupDocs Watermark for Java
-- image watermark customization
-title: Wasserzeichen zu PPTX hinzufügen mit Bildeffekten auf Form‑Wasserzeichen –
-  Java GroupDocs.Watermark
+- how to use groupdocs
+- apply image effects to shape watermarks in java
+- groupdocs watermark java
+lastmod: '2026-08-04'
+og_description: Entdecken Sie, wie Sie GroupDocs verwenden, um brightness, contrast,
+  chroma key und border effects zu Form‑Wasserzeichen in Java‑Präsentationen hinzuzufügen.
+  Schritt‑für‑Schritt‑Anleitung für Entwickler.
+og_image_alt: Guide showing GroupDocs.Watermark Java code for applying image effects
+  to shape watermarks
+og_title: Wie man GroupDocs verwendet – Bildeffekte auf Form‑Wasserzeichen in Java
+  anwenden
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-04'
+  description: Learn how to use GroupDocs to add image effects—brightness, contrast,
+    chroma key, borders—to shape watermarks in Java presentations with GroupDocs.Watermark.
+  headline: How to use GroupDocs to apply image effects to shape watermarks in Java
+  type: TechArticle
+- description: Learn how to use GroupDocs to add image effects—brightness, contrast,
+    chroma key, borders—to shape watermarks in Java presentations with GroupDocs.Watermark.
+  name: How to use GroupDocs to apply image effects to shape watermarks in Java
+  steps:
+  - name: load the presentation file
+    text: The `Watermarker` class is the entry point for all watermark operations
+      on a document.
+  - name: create an image watermark instance
+    text: The `ImageWatermark` class represents a raster image (e.g., a logo) that
+      can be placed onto a shape as a watermark.
+  - name: configure image effects
+    text: The `PresentationImageEffects` class lets you modify brightness, contrast,
+      chroma‑key transparency, and border settings for image watermarks in presentations.
+  - name: add the configured watermark to the presentation
+    text: The `PresentationWatermarkOptions` class specifies where and how a watermark
+      is applied, such as target slides and positioning.
+  - name: save the modified presentation and release resources
+    text: Always close the `Watermarker` to free file handles and memory buffers.
+  type: HowTo
+- questions:
+  - answer: Call `setOpacity(double opacity)` on the `PresentationImageEffects` object;
+      values range from 0.0 (fully transparent) to 1.0 (fully opaque).
+    question: How do I adjust the transparency of an image watermark?
+  - answer: Yes. Use `PresentationWatermarkOptions.setSlideIndices(int... indices)`
+      to target individual slide numbers.
+    question: Can I apply watermarks to specific slides only?
+  - answer: PNG, JPEG, BMP, GIF, TIFF, and WebP are all supported, giving you flexibility
+      for logos and graphics.
+    question: What image formats are supported for watermarking?
+  - answer: Wrap the workflow in a try‑catch block and catch `WatermarkException`
+      to obtain detailed error codes and messages.
+    question: How should I handle errors during watermark processing?
+  - answer: Absolutely. Iterate over a collection of file paths, instantiate a `Watermarker`
+      for each, and apply the same watermark configuration.
+    question: Is batch processing of many presentations possible?
+  type: FAQPage
+tags:
+- groupdocs watermark
+- java image effects
+- shape watermarks
+- presentation security
+title: Wie man GroupDocs verwendet, um Bildeffekte auf Form‑Wasserzeichen in Java
+  anzuwenden
 type: docs
 url: /de/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/
 weight: 1
 ---
 
-# Add watermark to pptx with image effects on shape watermarks – Java GroupDocs.Watermark
+# Wie man GroupDocs verwendet, um Bildeffekte auf Form‑Wasserzeichen in Java anzuwenden
 
-Das Schützen Ihrer Präsentationsdateien ist ein unverzichtbares Vorgehen für alle, die Unternehmens‑ oder Lehrfolien teilen. In diesem Leitfaden werden Sie **add watermark to pptx**‑Dateien hinzufügen, während Sie das Aussehen des Wasserzeichens mit Helligkeit, Kontrast, Chroma‑Key und Rahmen‑Effekten anpassen – alles mit **GroupDocs.Watermark for Java**. Wir zeigen Ihnen außerdem, wie Sie **add image watermark java**‑artige Grafiken zu Form‑Wasserzeichen hinzufügen, sodass Ihre Folien sowohl sicher als auch professionell aussehen.
-
-## Einführung
-
-Im digitalen Zeitalter hilft das Sichern Ihrer Präsentationen, unbefugte Wiederverwendung zu verhindern. Dieses Tutorial führt Sie durch den gesamten Prozess, ein Wasserzeichen zu einer PowerPoint‑Datei (.pptx) hinzuzufügen, Bildeffekte anzuwenden und Rahmen fein abzustimmen. Am Ende können Sie Ihr geistiges Eigentum schützen, ohne die visuelle Qualität zu beeinträchtigen.
+Das Schützen Ihrer Präsentationsdateien hat für jeden Fachmann, der Folien öffentlich oder intern teilt, höchste Priorität. **Wie man GroupDocs** verwendet, um Bildeffekte hinzuzufügen – wie Helligkeit, Kontrast, Chroma‑Key‑Transparenz und benutzerdefinierte Rahmen – gibt Ihnen eine feinkörnige Kontrolle darüber, wie ein Wasserzeichen aussieht, während der ursprüngliche Inhalt unverändert bleibt. In diesem Tutorial lernen Sie den vollständigen Arbeitsablauf, von der Projektkonfiguration bis zum Speichern der endgültigen Datei, und Sie sehen, warum GroupDocs.Watermark die funktionsreichste Bibliothek für diese Aufgabe ist.
 
 ## Schnelle Antworten
-- **What does “add watermark to pptx” mean?** Es bedeutet, einen visuellen Identifikator (Text oder Bild) in jede Folie einer PowerPoint‑Datei einzubetten.  
-- **Which library supports image effects?** GroupDocs.Watermark for Java stellt `PresentationImageEffects` bereit.  
-- **Can I change brightness and contrast?** Ja, verwenden Sie `setBrightness()` und `setContrast()` am Effekte‑Objekt.  
-- **Is a license required for production?** Für die volle Funktionalität ist eine gültige GroupDocs‑Lizenz erforderlich.  
-- **Will this work with large presentations?** Ja, aber geben Sie Ressourcen sofort frei, um den Speicherverbrauch gering zu halten.
+- **Welche Bibliothek fügt Wasserzeichen Bildeffekte hinzu?** GroupDocs.Watermark für Java.  
+- **Kann ich Helligkeit und Kontrast zusammen ändern?** Ja, über `PresentationImageEffects`.  
+- **Ist ein Rahmen optional?** Sie können ihn mit `setBorderColor` und `setBorderWidth` aktivieren oder deaktivieren.  
+- **Benötige ich eine Lizenz für die Produktion?** Eine gültige GroupDocs-Lizenz ist für uneingeschränkte Nutzung erforderlich.  
+- **Welche Dateiformate werden unterstützt?** Über 50 Formate, darunter PPTX, PPT und PDF.
 
-## Was ist “add watermark to pptx”?
-Ein Wasserzeichen zu einer PPTX‑Datei hinzuzufügen, fügt jeder Folie eine halbtransparente Grafik oder einen Text hinzu. Dieses visuelle Zeichen signalisiert Eigentum und entmutigt unbefugte Verbreitung.
+## Was ist GroupDocs.Watermark für Java?
 
-## Warum GroupDocs.Watermark für Java verwenden?
-GroupDocs.Watermark bietet eine flüssige API, unterstützt ein breites Spektrum an Bildformaten und ermöglicht die Manipulation visueller Eigenschaften (Helligkeit, Kontrast, Chroma‑Key, Rahmen), ohne die Präsentation in ein anderes Format zu konvertieren.
+GroupDocs.Watermark für Java ist eine umfassende Bibliothek, die Entwicklern ermöglicht, Wasserzeichen zu hinzufügen, zu bearbeiten und zu entfernen, und das für mehr als 50 Dokumenten- und Bildformate. Sie läuft vollständig serverseitig, wodurch die Notwendigkeit von Drittanbieter‑Anwendungen entfällt, und bietet eine umfangreiche API für fein abgestimmte visuelle Anpassungen, Batch‑Verarbeitung und Hochleistungs‑Streaming.
+
+## Warum Bildeffekte auf Form‑Wasserzeichen verwenden?
+
+Das Anwenden von Bildeffekten ermöglicht es Ihnen, die visuelle Wirkung eines Wasserzeichens anzupassen, ohne die Lesbarkeit zu beeinträchtigen. Das Anpassen von Helligkeit oder Kontrast kann ein Logo dezent in den Folienhintergrund einfließen lassen, während Chroma‑Key‑Transparenz unerwünschte Farben entfernt. Das Hinzufügen von Rahmen schafft eine klare visuelle Grenze, stärkt die Markenidentität und macht das Wasserzeichen schwerer zu entfernen oder zu ignorieren.
 
 ## Voraussetzungen
+- **GroupDocs.Watermark für Java** — Version 24.11 oder neuer.  
+- Java Development Kit 8 oder neuer.  
+- Eine IDE wie IntelliJ IDEA oder Eclipse.  
+- Grundlegende Java‑Programmierkenntnisse und Vertrautheit mit Präsentationsdateien (PPTX).
 
-- **GroupDocs.Watermark for Java** (Version 24.11 oder neuer)  
-- Java 8 oder neuer, IntelliJ IDEA oder Eclipse  
-- Grundlegende Java‑Programmierkenntnisse  
-- Zugriff auf eine `.pptx`‑Datei, die Sie schützen möchten  
+## Wie man GroupDocs.Watermark für Java einrichtet
 
-## Einrichtung von GroupDocs.Watermark für Java
+Laden Sie die Bibliothek in Ihr Maven‑Projekt und stellen Sie sicher, dass die Lizenz vor jedem API‑Aufruf verfügbar ist.
 
-Fügen Sie die Bibliothek zu Ihrem Maven‑Projekt hinzu:
+**Maven‑Konfiguration**  
+Fügen Sie die folgende Abhängigkeit zu Ihrer `pom.xml` hinzu:
 
 ```xml
 <repositories>
@@ -65,41 +120,41 @@ Fügen Sie die Bibliothek zu Ihrem Maven‑Projekt hinzu:
 </dependencies>
 ```
 
-Oder laden Sie sie direkt von [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) herunter.
+**Direkter Download**  
+Sie können das JAR auch von der offiziellen Release‑Seite herunterladen: [GroupDocs.Watermark für Java Releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Lizenzbeschaffung
-- Beginnen Sie mit einer kostenlosen Testversion, um die Funktionen zu erkunden.  
-- Fordern Sie eine temporäre Lizenz an oder erwerben Sie eine Voll‑Lizenz für den Produktionseinsatz.
+Eine kostenlose Testversion ist zur Evaluierung verfügbar. Für den Produktionseinsatz beantragen Sie eine temporäre Lizenz oder erwerben Sie eine Voll‑Lizenz über das GroupDocs‑Portal.
 
-#### Grundlegende Initialisierung und Einrichtung
+## Wie man Bildeffekte auf Form‑Wasserzeichen in einer Präsentation anwendet
 
-```java
-PresentationLoadOptions loadOptions = new PresentationLoadOptions();
-Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
-```
+Laden Sie Ihre Präsentation, erstellen Sie ein Bildwasserzeichen, konfigurieren Sie die gewünschten Effekte und speichern Sie das Ergebnis. Die nachfolgenden Schritte bieten Ihnen eine kompakte End‑zu‑End‑Lösung, und jeder Schritt enthält ein kurzes Code‑Beispiel, das Sie direkt in Ihr Projekt kopieren können.
 
-Jetzt sind Sie bereit, **add image watermark java**‑artige Grafiken mit benutzerdefinierten Effekten hinzuzufügen.
-
-## Implementierungs‑Leitfaden
-
-### Wie man ein Wasserzeichen zu pptx mit Bildeffekten auf Form‑Wasserzeichen hinzufügt
-
-#### Schritt 1: Präsentation laden
-Öffnen Sie zunächst die PowerPoint‑Datei, die Sie schützen möchten.
+### Schritt 1: Präsentationsdatei laden
+Die Klasse `Watermarker` ist der Einstiegspunkt für alle Wasserzeichen‑Operationen an einem Dokument.
 
 ```java
 PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-#### Schritt 2: Bild‑Wasserzeichen erstellen und konfigurieren
-Erstellen Sie ein `ImageWatermark` aus Ihrem Logo oder einem beliebigen Bild Ihrer Wahl.
+### Schritt 2: Eine Bildwasserzeichen‑Instanz erstellen
+Die Klasse `ImageWatermark` repräsentiert ein Rasterbild (z. B. ein Logo), das als Wasserzeichen auf eine Form platziert werden kann.
+
+```java
+PresentationLoadOptions loadOptions = new PresentationLoadOptions();
+Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
+```
+
+### Schritt 3: Bildeffekte konfigurieren
+Die Klasse `PresentationImageEffects` ermöglicht es Ihnen, Helligkeit, Kontrast, Chroma‑Key‑Transparenz und Rahmen‑Einstellungen für Bildwasserzeichen in Präsentationen zu ändern.
 
 ```java
 ImageWatermark watermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
 ```
 
-Legen Sie nun die gewünschten Bildeffekte fest.
+### Schritt 4: Das konfigurierte Wasserzeichen zur Präsentation hinzufügen
+Die Klasse `PresentationWatermarkOptions` legt fest, wo und wie ein Wasserzeichen angewendet wird, z. B. Ziel‑Folien und Positionierung.
 
 ```java
 PresentationImageEffects effects = new PresentationImageEffects();
@@ -112,8 +167,8 @@ effects.getBorderLineFormat().setEnabled(true);
 effects.getBorderLineFormat().setWeight(1); // Set border weight to 1.
 ```
 
-#### Schritt 3: Wasserzeichen mit Effekten hinzufügen
-Fügen Sie das konfigurierte Wasserzeichen jeder Folie hinzu.
+### Schritt 5: Die modifizierte Präsentation speichern und Ressourcen freigeben
+Schließen Sie stets den `Watermarker`, um Dateihandles und Speicherpuffer freizugeben.
 
 ```java
 PresentationWatermarkSlideOptions options = new PresentationWatermarkSlideOptions();
@@ -122,62 +177,60 @@ options.setEffects(effects);
 watermarker.add(watermark, options);
 ```
 
-#### Schritt 4: Ressourcen speichern und schließen
-Speichern Sie die Änderungen und räumen Sie auf.
+## Häufige Fallstricke und Fehlersuche
+- **Falsche Dateipfade** – Verwenden Sie absolute Pfade oder lösen Sie relative Pfade relativ zu `System.getProperty("user.dir")` auf.  
+- **Nicht unterstütztes Bildformat** – Stellen Sie sicher, dass das Bild PNG, JPEG, BMP oder ein anderes unterstütztes Format ist.  
+- **Lizenz nicht geladen** – Stellen Sie sicher, dass die Lizenzdatei im Klassenpfad liegt und vor jedem API‑Aufruf initialisiert wird.  
+- **Große Präsentationen** – Aktivieren Sie den Streaming‑Modus (`Watermarker.setStreaming(true)`), um den Speicherverbrauch gering zu halten.
+
+## Praktische Anwendungen
+1. **Markenschutz** – Betten Sie ein halbtransparentes Unternehmenslogo mit benutzerdefinierter Helligkeit ein, um das Kopieren unattraktiv zu machen.  
+2. **Bildungsinhalte** – Wasserzeichen für Vorlesungsfolien mit einem Universitätssiegel, das einen Chroma‑Key‑Effekt nutzt, um sich in die Folienhintergründe einzufügen.  
+3. **Unternehmensberichte** – Fügen Sie ein umrandetes Wasserzeichen zu vertraulichen Finanzpräsentationen hinzu, wobei die Rahmenfarbe den Corporate‑Branding‑Richtlinien entspricht.
+
+## Leistungstipps
+- Verarbeiten Sie Präsentationen stapelweise mit einem Thread‑Pool‑Executor, um die CPU‑Auslastung zu maximieren.  
+- Verwenden Sie dieselbe `Watermarker`‑Instanz nach Möglichkeit für mehrere Dateien; initialisieren Sie das Wasserzeichen‑Objekt nur neu, wenn sich der visuelle Stil ändert.  
+- Überwachen Sie den JVM‑Heap mit Tools wie VisualVM, um unerwartete Speicherspitzen zu erkennen.
+
+## Häufig gestellte Fragen
+
+**F: Wie stelle ich die Transparenz eines Bildwasserzeichens ein?**  
+A: Rufen Sie `setOpacity(double opacity)` auf dem `PresentationImageEffects`‑Objekt auf; die Werte reichen von 0.0 (vollständig transparent) bis 1.0 (vollständig undurchsichtig).
+
+**F: Kann ich Wasserzeichen nur auf bestimmte Folien anwenden?**  
+A: Ja. Verwenden Sie `PresentationWatermarkOptions.setSlideIndices(int... indices)`, um einzelne Foliennummern anzusprechen.
+
+**F: Welche Bildformate werden für Wasserzeichen unterstützt?**  
+A: PNG, JPEG, BMP, GIF, TIFF und WebP werden alle unterstützt, was Ihnen Flexibilität für Logos und Grafiken bietet.
+
+**F: Wie sollte ich Fehler bei der Wasserzeichen‑Verarbeitung behandeln?**  
+A: Umwickeln Sie den Arbeitsablauf mit einem try‑catch‑Block und fangen Sie `WatermarkException`, um detaillierte Fehlercodes und -meldungen zu erhalten.
+
+**F: Ist die Batch‑Verarbeitung vieler Präsentationen möglich?**  
+A: Absolut. Durchlaufen Sie eine Sammlung von Dateipfaden, instanziieren Sie für jede einen `Watermarker` und wenden Sie dieselbe Wasserzeichen‑Konfiguration an.
+
+## Zusätzliche Ressourcen
+- [Dokumentation](https://docs.groupdocs.com/watermark/java/)  
+- [API‑Referenz](https://reference.groupdocs.com/watermark/java)  
+- [GroupDocs.Watermark für Java herunterladen](https://releases.groupdocs.com/watermark/java/)  
+- [GitHub‑Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- [Kostenloses Support‑Forum](https://forum.groupdocs.com/c/watermark/10)  
+- [Temporäre Lizenz anfordern](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Zuletzt aktualisiert:** 2026-08-04  
+**Getestet mit:** GroupDocs.Watermark 24.11 für Java  
+**Autor:** GroupDocs
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/out_presentation.pptx");
 watermarker.close();
 ```
 
-### Tipps zur Fehlerbehebung
-- Überprüfen Sie Dateipfade doppelt; absolute Pfade vermeiden Verwirrung.  
-- Stellen Sie sicher, dass Sie eine unterstützte GroupDocs‑Version (24.11+) verwenden.  
-- Wenn das Wasserzeichen zu schwach erscheint, erhöhen Sie die Helligkeit oder Deckkraft über `setOpacity()`.
+## Verwandte Tutorials
 
-## Praktische Anwendungen
-
-1. **Markenschutz** – Betten Sie Ihr Unternehmenslogo mit benutzerdefinierten Effekten ein, um Eigentum zu behaupten.  
-2. **Bildungsinhalte** – Wasserzeichen für Vorlesungsfolien, bevor Sie sie online veröffentlichen.  
-3. **Kundenlieferungen** – Fügen Sie Kundenpräsentationen ein dezentes Wasserzeichen hinzu und bewahren Sie dabei ein professionelles Erscheinungsbild.
-
-## Leistungs‑Überlegungen
-
-- Verarbeiten Sie große Decks stapelweise, um den Speicherverbrauch gering zu halten.  
-- Geben Sie die `Watermarker`‑Instanz sofort mit `close()` frei.  
-- Verwenden Sie dasselbe `PresentationImageEffects`‑Objekt erneut, wenn Sie dieselben Einstellungen auf mehrere Dateien anwenden.
-
-## Fazit
-
-Sie haben nun gelernt, wie man **add watermark to pptx**‑Dateien und **add image watermark java**‑Grafiken mit fein abgestimmten Bildeffekten mithilfe von GroupDocs.Watermark hinzuzufügt. Dieser Ansatz gibt Ihnen die volle Kontrolle über Sicherheit und visuelle Gestaltung. Experimentieren Sie mit verschiedenen Effektwerten, Rahmen und Chroma‑Key‑Farben, um Ihren Markenrichtlinien zu entsprechen.
-
-## FAQ‑Abschnitt
-
-**Q1:** Wie stelle ich die Transparenz eines Bild‑Wasserzeichens ein?  
-**A1:** Verwenden Sie die Methode `setOpacity()` in `PresentationImageEffects`, um den gewünschten Deckkraftwert festzulegen.
-
-**Q2:** Kann ich Wasserzeichen nur auf bestimmte Folien anwenden?  
-**A2:** Ja, konfigurieren Sie `PresentationWatermarkSlideOptions` mit einer Folien‑Index‑Sammlung, um gezielt Folien anzusprechen.
-
-**Q3:** Welche Bildformate werden für Wasserzeichen unterstützt?  
-**A3:** PNG, JPEG, BMP und mehrere andere gängige Formate werden von GroupDocs.Watermark unterstützt.
-
-**Q4:** Wie gehe ich mit Fehlern bei der Wasserzeichen‑Anwendung um?  
-**A4:** Umwickeln Sie den Verarbeitungs‑Code in einem try‑catch‑Block und behandeln Sie die `Exception`‑Typen entsprechend.
-
-**Q5:** Ist es möglich, mehrere Präsentationen stapelweise zu verarbeiten?  
-**A5:** Absolut – iterieren Sie über eine Liste von Dateipfaden und wenden Sie die gleiche Wasserzeichen‑Logik auf jede Datei an.
-
-## Ressourcen
-- [Dokumentation](https://docs.groupdocs.com/watermark/java/)
-- [API‑Referenz](https://reference.groupdocs.com/watermark/java)
-- [GroupDocs.Watermark für Java herunterladen](https://releases.groupdocs.com/watermark/java/)
-- [GitHub‑Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Kostenloses Support‑Forum](https://forum.groupdocs.com/c/watermark/10)
-- [Temporäre Lizenz anfordern](https://purchase.groupdocs.com/temporary-license/) 
-
----
-
-**Zuletzt aktualisiert:** 2026-01-11  
-**Getestet mit:** GroupDocs.Watermark 24.11 für Java  
-**Autor:** GroupDocs
+- [Wie man Form‑Wasserzeichen in Java für PowerPoint‑Präsentationen mit GroupDocs.Watermark hinzufügt](/watermark/java/presentation-document-watermarking/groupdocs-watermark-java-add-shape-watermark-ppt/)
+- [Wie man Linien‑Effekt‑Wasserzeichen in PowerPoint mit GroupDocs.Watermark und Java hinzufügt](/watermark/java/presentation-document-watermarking/add-line-effects-watermarks-powerpoint-java-groupdocs/)
+- [Wasserzeichen zu PowerPoint‑Präsentationen mit GroupDocs.Watermark für Java hinzufügen](/watermark/java/presentation-document-watermarking/groupdocs-watermark-java-add-powerpoint-watermarks/)

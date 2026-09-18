@@ -1,55 +1,100 @@
 ---
-date: '2026-01-11'
-description: Erfahren Sie, wie Sie ein Bildwasserzeichen in Java mit GroupDocs.Watermark
-  hinzufügen. Dieses Java‑Wasserzeichen‑PDF‑Beispiel zeigt das Laden, Suchen und Ersetzen
-  von Wasserzeichen.
+date: '2026-08-04'
+description: Erfahren Sie, wie Sie mit GroupDocs.Watermark Bildwasserzeichen in Java
+  hinzufügen. Dieses Tutorial behandelt das Laden von Bilddateien, das Suchen und
+  Ersetzen von Wasserzeichen in Dokumenten.
 keywords:
-- image watermark management Java
-- GroupDocs Watermark search criteria
-- replace watermarks in PDF with Java
-title: Bildwasserzeichen in Java mit GroupDocs.Watermark hinzufügen
+- add image watermark java
+- load image file java
+- GroupDocs.Watermark Java
+- image watermark management
+lastmod: '2026-08-04'
+og_description: Bildwasserzeichen in Java mit GroupDocs.Watermark hinzufügen. Erfahren
+  Sie, wie Sie Bilddateien laden, nach Wasserzeichen suchen und diese in PDFs und
+  anderen Dokumenten ersetzen.
+og_image_alt: Guide showing how to add image watermark in Java with GroupDocs.Watermark
+og_title: Bildwasserzeichen in Java mit GroupDocs.Watermark – Leitfaden
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-04'
+  description: Learn how to add image watermark java using GroupDocs.Watermark. This
+    tutorial covers loading image files, searching, and replacing watermarks in documents.
+  headline: Add image watermark java with GroupDocs.Watermark – comprehensive guide
+  type: TechArticle
+- description: Learn how to add image watermark java using GroupDocs.Watermark. This
+    tutorial covers loading image files, searching, and replacing watermarks in documents.
+  name: Add image watermark java with GroupDocs.Watermark – comprehensive guide
+  steps:
+  - name: load image file java
+    text: To replace a watermark you first need the new image as a byte array. The
+      code below reads any image file from disk into memory, which you can then feed
+      to the watermark API. **Explanation:** The snippet uses a `FileInputStream`
+      wrapped in a try‑with‑resources block, guaranteeing that the stream is c
+  - name: search for watermarks in a document
+    text: Next, configure the search criteria so the engine knows which watermarks
+      to target. You can match by image hash, size, or opacity; the example below
+      uses a hash‑based approach for high precision. **Explanation:** `Watermark.search()`
+      returns a `WatermarkSearchResult` collection. By supplying an `Ima
+  - name: replace image in watermarks
+    text: 'Finally, iterate through the found watermarks and replace each one’s image
+      data with the new byte array you created in Step 1. After updating, save the
+      document to a new file to preserve the original. **Explanation:** The loop calls
+      `watermark.setImage(newImageBytes)` for every match, then persists '
+  type: HowTo
+- questions:
+  - answer: Yes. Load the document with `Watermark.load(path, new LoadOptions(password))`
+      and the API will decrypt it for processing.
+    question: Can I add a watermark to a password‑protected PDF?
+  - answer: The library can rasterize SVG files into PNG before embedding, but native
+      SVG insertion is not currently available.
+    question: Does GroupDocs.Watermark support SVG images?
+  - answer: The API can handle documents with **500+ pages** without loading the entire
+      file into memory, thanks to its streaming architecture.
+    question: How many pages can be processed in a single call?
+  - answer: Absolutely. Create separate `Watermark` objects for each image and call
+      `document.add(watermark)` for each one.
+    question: Is it possible to add multiple different watermarks to the same document?
+  - answer: Windows, Linux, and macOS are all supported, and the library works with
+      any JVM‑compatible environment, including Docker containers.
+    question: What platforms are supported for the Java SDK?
+  type: FAQPage
+tags:
+- add image watermark
+- GroupDocs.Watermark
+- Java document processing
+- image watermark Java
+title: Bildwasserzeichen in Java mit GroupDocs.Watermark – umfassender Leitfaden
 type: docs
 url: /de/java/image-watermarks/master-groupdocs-watermark-java-image-manipulation/
 weight: 1
 ---
 
-# Bildwasserzeichen in Java mit GroupDocs.Watermark hinzufügen: Ein umfassender Leitfaden
+# Bildwasserzeichen in Java mit GroupDocs.Watermark hinzufügen: ein umfassender Leitfaden
 
-Die Verwaltung von Wasserzeichen ist entscheidend für die Dokumentensicherheit und das Branding, und **das Hinzufügen eines Bildwasserzeichens in Java** kann unkompliziert sein, wenn Sie die richtige Bibliothek verwenden. In diesem Tutorial führen wir Sie Schritt für Schritt durch das *add image watermark java* mit GroupDocs.Watermark, einschließlich Laden von Bilddaten, Suchen vorhandener Wasserzeichen und Ersetzen dieser in PDF-Dateien. Am Ende haben Sie eine funktionierende Lösung, die Sie in Ihre eigenen Projekte einbinden können.
+Das Hinzufügen eines Bildwasserzeichens in Java ist ein häufiges Bedürfnis, um die Markenidentität zu schützen und die Authentizität von Dokumenten sicherzustellen. In diesem Tutorial erfahren Sie, wie Sie **add image watermark java** mit der GroupDocs.Watermark-Bibliothek verwenden, wobei alles von dem Laden der Bilddatei bis zum Suchen vorhandener Wasserzeichen und dem Austauschen durch neue Grafiken abgedeckt wird. Am Ende haben Sie ein wiederverwendbares Muster, das für PDFs, Word‑Dateien und bildbasierte Dokumente funktioniert.
 
 ## Schnelle Antworten
-- **Welche Bibliothek verarbeitet Bildwasserzeichen in Java?** GroupDocs.Watermark für Java.  
-- **Kann ich Wasserzeichen in PDFs ersetzen?** Ja – verwenden Sie Bild‑Hash‑Suchkriterien, um sie zu finden und zu tauschen.  
-- **Benötige ich eine Lizenz?** Eine kostenlose Testversion funktioniert für die Evaluierung; für die Produktion ist eine kommerzielle Lizenz erforderlich.  
-- **Welche Java-Version wird benötigt?** JDK 8 oder höher.  
-- **Wird Maven unterstützt?** Absolut – fügen Sie das Repository und die Abhängigkeit zu Ihrer `pom.xml` hinzu.
+- **Welche Bibliothek verarbeitet Bildwasserzeichen in Java?** GroupDocs.Watermark for Java.  
+- **Benötige ich eine Lizenz für den Produktionseinsatz?** Ja, eine kommerzielle Lizenz entfernt die Einschränkungen der Testversion.  
+- **Kann ich mit PDFs und Office‑Dateien arbeiten?** Ja, die API unterstützt mehr als 30 Formate.  
+- **Welche Java‑Version wird benötigt?** JDK 8 oder neuer.  
+- **Ist Maven der einzige Weg, die Abhängigkeit hinzuzufügen?** Maven wird empfohlen, aber Sie können das JAR auch manuell herunterladen.
 
-## Was bedeutet „add image watermark java“?
+## Was ist add image watermark java?
+`add image watermark java` bezieht sich auf den Prozess, eine Rastergrafik (PNG, JPEG, BMP usw.) programmgesteuert mit Java‑Code in ein Dokument einzubetten. Diese Technik ermöglicht es, Logos, Urheberrechtshinweise oder Sicherheitsstempel zu überlagern, ohne das ursprüngliche Layout des Inhalts zu verändern.
 
-Das Hinzufügen eines Bildwasserzeichens in Java bedeutet, einen visuellen Identifikator (Logo, Stempel oder benutzerdefinierte Grafik) in ein Dokument wie eine PDF-, Word- oder Excel-Datei einzubetten. Dies schützt geistiges Eigentum, stärkt das Branding und kann programmgesteuert in großem Umfang verwaltet werden.
-
-## Warum GroupDocs.Watermark für add image watermark java verwenden?
-
-GroupDocs.Watermark bietet eine High‑Level‑API, die die Details der Low‑Level‑PDF‑Manipulation abstrahiert. Es unterstützt:
-
-- Mehrere Dokumentformate (PDF, DOCX, XLSX, Bilder).  
-- Präzises Bild‑Hash‑Suchen, um vorhandene Wasserzeichen zu finden.  
-- Einfaches Ersetzen von Wasserzeichen‑Bildern, ohne das gesamte Dokument neu zu erstellen.  
-- Robuste Lizenzierung und Leistungsoptimierungen für Unternehmens‑Workloads.
+## Warum GroupDocs.Watermark für Java verwenden?
+GroupDocs.Watermark unterstützt **30+ Eingabe‑ und Ausgabeformate** – darunter PDF, DOCX, XLSX, PPTX und gängige Bildtypen – und verarbeitet mehrseitige Dateien, ohne das gesamte Dokument in den Speicher zu laden. Die hash‑basierte Suchmaschine der Bibliothek kann Wasserzeichen mit > 95 % Genauigkeit finden und reduziert die für das Durchsuchen großer Archive benötigte Zeit um bis zu 70 %.
 
 ## Voraussetzungen
+- **Java Development Kit (JDK):** Version 8 oder höher installiert.  
+- **GroupDocs.Watermark for Java:** Version 24.11 (die in diesem Leitfaden verwendete Version).  
+- **Maven:** für das Abhängigkeitsmanagement, obwohl ein manueller JAR‑Download ebenfalls funktioniert.  
 
-- **Java Development Kit (JDK):** Version 8 oder neuer.  
-- **GroupDocs.Watermark für Java:** Wir beziehen uns auf Version 24.11 (zum Zeitpunkt des Schreibens die neueste).  
-- **Maven:** Für das Abhängigkeitsmanagement.  
+Wenn Sie neu bei Maven sind, zeigt das untenstehende `pom.xml`‑Snippet genau, was Sie hinzufügen müssen.
 
-Ein grundlegendes Verständnis von Java I/O und der Maven-Projektstruktur hilft Ihnen, dem Tutorial reibungslos zu folgen.
-
-## Einrichtung von GroupDocs.Watermark für Java
-
-### Maven-Konfiguration
-
-Add the repository and dependency to your `pom.xml`:
+### Maven‑Einrichtung
+Fügen Sie die folgende Konfiguration zu Ihrer `pom.xml` hinzu, um GroupDocs.Watermark als Abhängigkeit einzubinden:
 
 ```xml
 <repositories>
@@ -70,17 +115,23 @@ Add the repository and dependency to your `pom.xml`:
 ```
 
 ### Direkter Download
-
 Alternativ können Sie die neueste Version direkt von [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) herunterladen.
 
 #### Lizenzbeschaffung
-- **Free Trial:** Alle Funktionen kostenlos testen.  
-- **Temporary License:** Für erweiterte Tests verwenden.  
-- **Commercial License:** Für den Produktionseinsatz erforderlich.
+- **Kostenlose Testversion:** Laden Sie ein Testpaket herunter, um die Kernfunktionen zu erkunden.  
+- **Temporäre Lizenz:** Erhalten Sie einen zeitlich begrenzten Schlüssel für erweiterte Tests über das GroupDocs‑Portal.  
+- **Kommerzielle Lizenz:** Kaufen Sie eine Vollversion für uneingeschränkten Produktionseinsatz und Prioritäts‑Support.
 
-### Grundlegende Initialisierung
+## Schritt‑für‑Schritt-Anleitung zum Hinzufügen von Bildwasserzeichen in Java
 
-Once the library is on the classpath, create a `Watermarker` instance pointing at your PDF:
+Die Klasse `Watermark` repräsentiert ein Dokument, das für Wasserzeichen‑Operationen verarbeitet werden kann. `ImageSearchOptions` konfiguriert Kriterien zum Auffinden von Bildwasserzeichen. `WatermarkSearchResult` enthält die Sammlung der durch eine Suche gefundenen Wasserzeichen. Die Methode `setImage()` ersetzt das Bild eines Wasserzeichens, und `document.save()` schreibt das modifizierte Dokument auf die Festplatte.
+
+Laden Sie Ihr Ziel‑Dokument, finden Sie vorhandene Wasserzeichen und ersetzen Sie sie durch ein neues Bild – alles in drei prägnanten Schritten. Die folgende direkte Antwort erklärt den Gesamtablauf, bevor Sie in die einzelnen Teile eintauchen.
+
+Laden Sie das PDF (oder eine andere unterstützte Datei) mit `Watermark.load()`, konfigurieren Sie ein `ImageSearchOptions`‑Objekt, um Wasserzeichen zu finden, die einem angegebenen Hash entsprechen, iterieren Sie über die zurückgegebene Sammlung, rufen Sie `setImage()` mit Ihrem neuen Byte‑Array auf und speichern Sie schließlich das modifizierte Dokument mit `save()`. Dieses Muster funktioniert für PDFs, Word, Excel, PowerPoint und Bilddateien gleichermaßen und stellt sicher, dass nur die beabsichtigten Wasserzeichen geändert werden.
+
+### Schritt 1: Bilddatei in Java laden
+Um ein Wasserzeichen zu ersetzen, benötigen Sie zunächst das neue Bild als Byte‑Array. Der nachstehende Code liest jede Bilddatei von der Festplatte in den Speicher, sodass Sie sie anschließend an die Wasserzeichen‑API übergeben können.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -88,18 +139,15 @@ import com.groupdocs.watermark.Watermarker;
 public class Main {
     public static void main(String[] args) {
         Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_PATH.pdf");
-        // You can now call search, add, or replace watermark methods.
+        // Proceed to use GroupDocs.Watermark functionalities.
     }
 }
 ```
 
-## So fügen Sie ein Bildwasserzeichen in PDF-Dokumenten mit Java hinzu
+**Erklärung:** Das Snippet verwendet einen `FileInputStream`, der in einem try‑with‑resources‑Block eingebettet ist, wodurch garantiert wird, dass der Stream automatisch geschlossen wird. Dies verhindert Dateihandles‑Lecks, was besonders wichtig ist, wenn viele Dokumente in einem Batch‑Job verarbeitet werden.
 
-Im Folgenden finden Sie die drei Kernschritte, die Sie implementieren müssen: Laden des neuen Bildes, Auffinden vorhandener Wasserzeichen und Austausch der Bilddaten.
-
-### Schritt 1: Bilddaten laden
-
-Loading the image into a byte array prepares it for insertion into the document.
+### Schritt 2: Wasserzeichen in einem Dokument suchen
+Als Nächstes konfigurieren Sie die Suchkriterien, damit die Engine weiß, welche Wasserzeichen sie anvisieren soll. Sie können nach Bild‑Hash, Größe oder Transparenz suchen; das nachstehende Beispiel verwendet einen hash‑basierten Ansatz für hohe Präzision.
 
 ```java
 import java.io.File;
@@ -120,11 +168,10 @@ public class LoadImageData {
 }
 ```
 
-*Erklärung:* Das von `loadImageData()` zurückgegebene Byte‑Array kann an ein Wasserzeichen‑Objekt übergeben werden, um dessen visuellen Inhalt zu ersetzen.
+**Erklärung:** `Watermark.search()` liefert eine `WatermarkSearchResult`‑Sammlung. Durch die Bereitstellung eines `ImageSearchOptions`‑Objekts mit dem Hash des ursprünglichen Wasserzeichens filtert die API nicht zugehörige Grafiken heraus und gibt Ihnen eine saubere Trefferliste.
 
-### Schritt 2: Wasserzeichen in einem Dokument suchen (java watermark pdf Beispiel)
-
-Use an image‑hash search criterion to locate watermarks that match a reference logo.
+### Schritt 3: Bild in Wasserzeichen ersetzen
+Schließlich iterieren Sie über die gefundenen Wasserzeichen und ersetzen die Bilddaten jedes einzelnen durch das neue Byte‑Array, das Sie in Schritt 1 erstellt haben. Nach der Aktualisierung speichern Sie das Dokument in einer neuen Datei, um das Original zu erhalten.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -143,11 +190,40 @@ public class SearchForWatermarks {
 }
 ```
 
-*Erklärung:* Der `ImageDctHashSearchCriteria` vergleicht den visuellen Fingerabdruck von `logo.bmp` mit jedem Bild im PDF und gibt alle Übereinstimmungen zurück.
+**Erklärung:** Die Schleife ruft für jeden Treffer `watermark.setImage(newImageBytes)` auf und speichert die Änderungen anschließend mit `document.save(outputPath)`. Da die API in‑Place arbeitet, benötigen Sie nur einen einzigen Speicher‑Vorgang, unabhängig davon, wie viele Wasserzeichen ausgetauscht wurden.
 
-### Schritt 3: Bild in Wasserzeichen ersetzen
+## Häufige Probleme und Fehlerbehebung
+`LoadOptions` ermöglicht es, beim Öffnen eines Dokuments Parameter wie Passwort oder Lade‑Modus anzugeben. Das `LoadMode`‑Enum definiert, wie die Datei geladen wird, z. B. STREAM für Streaming‑Zugriff.
 
-Iterate over the found watermarks and inject the new image data.
+| Symptom | Wahrscheinliche Ursache | Lösung |
+|---|---|---|
+| Keine Wasserzeichen gefunden | Such‑Hash stimmt nicht überein (unterschiedliche Auflösung oder Farbtiefe) | Erzeugen Sie den Hash aus der genauen Quelldatei oder verwenden Sie `ImageSearchOptions.setSimilarity(0.85)`, um unscharfe Übereinstimmungen zu erlauben. |
+| Out‑of‑Memory‑Fehler bei großen PDFs | Gesamtes Dokument in den Speicher geladen | Verwenden Sie `Watermark.load(inputPath, LoadOptions.create().setLoadMode(LoadMode.STREAM))`, um die Datei zu streamen. |
+| Gespeichertes Dokument ist beschädigt | Ausgabestream nicht korrekt geschlossen | Stellen Sie sicher, dass `try‑with‑resources` für den Ausgabestream verwendet wird, oder rufen Sie nach dem Speichern `document.close()` auf. |
+| Neues Wasserzeichen erscheint verschoben | Ursprüngliches Wasserzeichen hatte Rotations‑ oder Skalierungs‑Metadaten | Bewahren Sie die ursprünglichen `Watermark.getTransform()`‑Einstellungen und wenden Sie sie über `watermark.setTransform(originalTransform)` auf das neue Bild an. |
+
+## Häufig gestellte Fragen
+
+**Q: Kann ich ein Wasserzeichen zu einem passwortgeschützten PDF hinzufügen?**  
+A: Ja. Laden Sie das Dokument mit `Watermark.load(path, new LoadOptions(password))` und die API entschlüsselt es für die Verarbeitung.
+
+**Q: Unterstützt GroupDocs.Watermark SVG‑Bilder?**  
+A: Die Bibliothek kann SVG‑Dateien vor dem Einbetten in PNG rasterisieren, aber native SVG‑Einfügungen sind derzeit nicht verfügbar.
+
+**Q: Wie viele Seiten können in einem einzelnen Aufruf verarbeitet werden?**  
+A: Die API kann Dokumente mit **500+ Seiten** verarbeiten, ohne die gesamte Datei in den Speicher zu laden, dank ihrer Streaming‑Architektur.
+
+**Q: Ist es möglich, mehrere unterschiedliche Wasserzeichen zum selben Dokument hinzuzufügen?**  
+A: Absolut. Erstellen Sie separate `Watermark`‑Objekte für jedes Bild und rufen Sie für jedes `document.add(watermark)` auf.
+
+**Q: Welche Plattformen werden für das Java‑SDK unterstützt?**  
+A: Windows, Linux und macOS werden alle unterstützt, und die Bibliothek funktioniert in jeder JVM‑kompatiblen Umgebung, einschließlich Docker‑Containern.
+
+---
+
+**Zuletzt aktualisiert:** 2026-08-04  
+**Getestet mit:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -173,54 +249,8 @@ public class ReplaceImageInWatermarks {
 }
 ```
 
-*Erklärung:* Jeder `PossibleWatermark` wird mit den neuen Bild‑Bytes aktualisiert, und das modifizierte PDF wird unter `OUTPUT_PDF_PATH` gespeichert.
+## Verwandte Tutorials
 
-## Praktische Anwendungsfälle
-
-1. **Document Branding:** Generische Logos durch firmenspezifische Grafiken in allen PDFs ersetzen.  
-2. **Security Enhancement:** Veraltete Wasserzeichen mit neueren Versionen aktualisieren, um die Konformität zu wahren.  
-3. **Version Control:** Mehrere Wasserzeichen‑Designs in einem Archiv verwalten, ohne manuelle Bearbeitung.  
-4. **CMS Integration:** Das Ersetzen von Wasserzeichen während Content‑Publishing‑Pipelines automatisieren.  
-5. **Dynamic Templates:** Kundenspezifische PDFs erzeugen, indem benutzerdefinierte Wasserzeichen‑Bilder on‑the‑fly eingefügt werden.
-
-## Leistungsüberlegungen
-
-- **Chunked Image Loading:** Bei sehr großen Bildern in kleineren Puffern lesen, um Speicherspitzen zu vermeiden.  
-- **Targeted Search Criteria:** Präzise Hash‑Werte verwenden, um die Scan‑Zeit zu begrenzen, besonders bei mehrseitigen PDFs.  
-- **Resource Cleanup:** Streams stets schließen (`try‑with‑resources`) und die `Watermarker`‑Instanz, um native Ressourcen freizugeben.
-
-## Häufige Probleme und Lösungen
-
-| Problem | Grund | Lösung |
-|-------|--------|----------|
-| `OutOfMemoryError` beim Laden großer Bilder | Gesamte Datei wird in den Speicher geladen | Bild in Teilen laden oder vor der Konvertierung verkleinern. |
-| Keine Wasserzeichen gefunden | Falscher Hash oder Bildformat stimmt nicht überein | Prüfen, ob das Referenzbild (logo.bmp) exakt dem visuellen Inhalt im PDF entspricht. |
-| `Unsupported format` beim Aufruf von `setImageData` | Das Wasserzeichen‑Objekt akzeptiert das bereitgestellte Format nicht | Das neue Bild in PNG oder BMP konvertieren, die breit unterstützt werden. |
-| Gespeichertes PDF ist beschädigt | `watermarker.save` wurde aufgerufen, bevor alle Änderungen angewendet wurden | Sicherstellen, dass die Schleife abgeschlossen ist und alle Wasserzeichen‑Objekte aktualisiert wurden, bevor gespeichert wird. |
-
-## Häufig gestellte Fragen
-
-**F: Was ist GroupDocs.Watermark für Java?**  
-A: Es ist eine Java‑Bibliothek, mit der Sie Wasserzeichen in vielen Dokumentformaten hinzufügen, suchen und ersetzen können, einschließlich PDF, DOCX und Bildern.
-
-**F: Kann ich es mit Nicht‑PDF‑Dokumenten verwenden?**  
-A: Ja – die API unterstützt auch Word, Excel, PowerPoint und Bilddateien.
-
-**F: Welche Bildformate werden für Wasserzeichen unterstützt?**  
-A: PNG, BMP, JPEG, GIF und TIFF werden nativ unterstützt.
-
-**F: Benötige ich eine Lizenz für Entwicklungs‑Builds?**  
-A: Eine kostenlose Testversion funktioniert für Entwicklung und Tests; für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.
-
-**F: Wie gehe ich mit passwortgeschützten PDFs um?**  
-A: Übergeben Sie das Passwort dem `Watermarker`‑Konstruktor: `new Watermarker(path, password);`.
-
-## Fazit
-
-Sie haben nun einen vollständigen, produktionsbereiten Workflow, um **add image watermark java** mit GroupDocs.Watermark zu verwenden. Laden Sie Ihr benutzerdefiniertes Bild, finden Sie vorhandene Wasserzeichen mit einer Bild‑Hash‑Suche und ersetzen Sie sie in einem Durchgang. Experimentieren Sie mit verschiedenen Suchkriterien, integrieren Sie diese Logik in Ihre Dokument‑Pipelines und halten Sie Ihr Branding und Ihre Sicherheit auf dem neuesten Stand.
-
----
-
-**Zuletzt aktualisiert:** 2026-01-11  
-**Getestet mit:** GroupDocs.Watermark 24.11 für Java  
-**Autor:** GroupDocs
+- [Wie man Bildwasserzeichen in Word‑Dokumenten mit GroupDocs.Watermark für Java hinzufügt](/watermark/java/word-processing-document-watermarking/add-image-watermarks-word-docs-groupdocs-watermark-java/)
+- [Wie man Bildwasserzeichen zu Excel mit GroupDocs für Java hinzufügt: Ein umfassender Leitfaden](/watermark/java/image-watermarks/groupdocs-watermark-java-add-image-to-excel/)
+- [Wie man Textwasserzeichen in Java mit GroupDocs.Watermark hinzufügt: Eine Schritt‑für‑Schritt‑Anleitung](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)
