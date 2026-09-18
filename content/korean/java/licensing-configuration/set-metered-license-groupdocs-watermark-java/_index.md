@@ -1,212 +1,42 @@
 ---
-date: '2026-07-30'
-description: Java에서 GroupDocs.Watermark의 License를 설정하는 방법을 배우고, 문서를 효과적으로 보호하며 사용량을
-  효율적으로 관리하세요.
+date: '2026-01-21'
+description: Java에서 GroupDocs Watermark 라이선스를 설정하는 방법을 배우고, 워터마크 PDF 적용 및 미터링 라이선스로
+  사용량을 관리하는 방법을 포함합니다.
 keywords:
-- how to set license
-- GroupDocs Watermark Java
-- metered licensing Java
-lastmod: '2026-07-30'
-og_description: Java에서 GroupDocs.Watermark의 License를 설정하는 방법. 이 가이드는 SDK 설치, metered
-  key 획득, 그리고 License 구성을 통해 문서를 보호하는 과정을 안내합니다.
-og_image_alt: 'Guide: Set license for GroupDocs Watermark in Java'
-og_title: Java에서 GroupDocs Watermark License 설정 방법
-schemas:
-- author: GroupDocs
-  dateModified: '2026-07-30'
-  description: Learn how to set license for GroupDocs.Watermark in Java, protect your
-    documents effectively and manage usage efficiently.
-  headline: How to Set License for GroupDocs Watermark in Java
-  type: TechArticle
-- description: Learn how to set license for GroupDocs.Watermark in Java, protect your
-    documents effectively and manage usage efficiently.
-  name: How to Set License for GroupDocs Watermark in Java
-  steps:
-  - name: Define the public and private keys
-    text: Enter the keys you received after registering for a temporary license. `Metered`
-      is the GroupDocs.Watermark class that handles metered licensing and usage tracking.
-      *Place your keys in a secure location (environment variables, encrypted config,
-      etc.) before using them in code.*
-  - name: Create an instance of the Metered class
-    text: Instantiate the `Metered` object with your keys. This object will be passed
-      to the watermark engine during initialization.
-  - name: Set the metered license using the provided keys
-    text: Call the `setLicense` method (or the equivalent API call) with your public
-      and private keys. Once set, all subsequent watermark operations will be billed
-      according to your usage. > **Pro tip:** Keep the keys out of source control.
-      Use a secrets manager or encrypted properties file to avoid accidenta
-  type: HowTo
-- questions:
-  - answer: A temporary license is time‑limited and ideal for evaluation, while a
-      perpetual license provides unlimited use without recurring fees.
-    question: What is the difference between a temporary and a perpetual license?
-  - answer: Yes—replace the metered key initialization with a call to `engine.setLicense("path/to/license/file")`.
-    question: Can I switch from a metered license to a perpetual one without code
-      changes?
-  - answer: The SDK falls back to offline mode; watermarking continues but usage won’t
-      be reported until connectivity is restored.
-    question: What happens if the metered service is unreachable?
-  - answer: The SDK can handle files up to 1 GB; larger files should be split or processed
-      in streaming mode.
-    question: Are there file‑size limits for watermarking?
-  - answer: It works on any platform that supports Java 8+, including Windows, Linux,
-      and macOS.
-    question: Does the metered license work on all operating systems?
-  type: FAQPage
-tags:
-- set license
-- GroupDocs Watermark
-- Java licensing
-- metered license
-- document security
-title: Java에서 GroupDocs Watermark License 설정 방법
+- metered license GroupDocs Watermark Java
+- GroupDocs.Watermark setup Java
+- Java document security watermarks
+title: Java에서 GroupDocs Watermark (Metered) 라이선스 설정 방법
 type: docs
 url: /ko/java/licensing-configuration/set-metered-license-groupdocs-watermark-java/
 weight: 1
 ---
 
-# GroupDocs Watermark의 Java 라이선스 설정 방법
+# GroupDocs Watermark (Metered) 라이선스 설정 방법 (Java)
 
-지적 재산 보호는 현대 애플리케이션에서 최우선 과제이며, 워터마크는 무단 배포를 방지하는 검증된 방법입니다. **GroupDocs.Watermark for Java**를 사용하고 있다면 사용량을 추적하고 수요에 맞게 확장할 수 있는 라이선스가 필요합니다. 이 튜토리얼에서는 SDK 설치부터 사용량을 서비스에 보고하는 메터드 키 구성까지 Java에서 GroupDocs.Watermark의 **라이선스 설정 방법**을 설명합니다.
+지적 재산 보호는 현대 비즈니스의 최우선 과제이며, 워터마크는 이를 입증된 방식으로 구현합니다. 이 튜토리얼에서는 **GroupDocs.Watermark**에 메터드 방식으로 **라이선스를 설정하는 방법**을 배우고, **PDF 파일에 워터마크를 적용**하면서 사용량을 완벽히 제어하는 방법을 확인합니다. 전제 조건부터 실제 사용 시나리오까지 모두 안내하고, 라이선스 활성화를 위해 **공개/비공개 키를 사용하는 위치**를 정확히 보여드립니다.
 
 ## 빠른 답변
-- **메터드 라이선스란?** 사용량 기반 라이선스로, 각 API 호출을 기록하여 사용한 만큼만 비용을 지불할 수 있습니다.  
-- **먼저 체험판이 필요합니까?** 예, 제품을 평가하기 위해 GroupDocs 사이트에서 임시 라이선스를 요청할 수 있습니다.  
-- **필요한 Java 버전은?** Java 8 이상; SDK는 JDK 8+용으로 컴파일되었습니다.  
-- **나중에 영구 라이선스로 전환할 수 있나요?** 물론입니다 – 메터드 키를 영구 라이선스 파일로 교체하면 됩니다.  
-- **Maven과 호환되나요?** 예, 원활한 의존성 관리를 위해 Maven 좌표가 제공됩니다.
+- **메터드 라이선스란?** API 호출마다 사용량을 추적하는 사용량 기반 라이선스 모델입니다.  
+- **라이선스 파일이 필요합니까?** 아니요 – 공개 키와 비공개 키로 활성화합니다.  
+- **필요한 Java 버전은?** Java 8 이상.  
+- **PDF 문서에 워터마크를 추가할 수 있나요?** 예, API는 PDF, DOCX, PPTX 및 이미지 형식을 지원합니다.  
+- **이 방법은 안전한가요?** 예, 키는 HTTPS를 통해 전송되며 평문으로 저장되지 않습니다.
 
-## GroupDocs Watermark의 메터드 라이선스란?
-메터드 라이선스는 GroupDocs에서 제공하는 클라우드 기반 권한으로, SDK가 수행하는 각 워터마크 작업을 기록합니다. 각 API 호출은 GroupDocs 라이선스 서버에 로그로 남겨 실제 사용량에 따라 종량제 청구가 가능합니다. 이 모델은 개발자에게 실시간 사용량 인사이트를 제공하고 비용을 관리하면서 전체 기능 접근을 보장합니다.
-
-## GroupDocs Watermark와 메터드 라이선스를 사용하는 이유는?
-GroupDocs.Watermark는 PDF, DOCX, PPTX 및 다양한 이미지 형식을 포함해 50개 이상의 입력·출력 형식을 지원하며, 전체 문서를 메모리에 로드하지 않고 최대 1 GB 파일을 처리할 수 있어 성능을 유지합니다. 메터드 라이선스를 사용하면 실제 수행한 작업에 대해서만 비용을 지불하게 되므로, 전체 기능에 대한 접근성을 유지하면서 비용 효율적으로 솔루션을 확장할 수 있습니다.
+## 메터드 라이선스란 무엇이며 왜 사용하나요?
+메터드 라이선스는 실제 사용량에 따라 비용을 지불하도록 해 SaaS 또는 마이크로서비스 아키텍처에 최적화됩니다. 전통적인 라이선스 파일을 관리할 필요 없이 **문서 보안 워터마크** 기능을 제공하며, 사용량을 즉시 확대·축소할 수 있습니다.
 
 ## 전제 조건
-- **GroupDocs.Watermark for Java** 버전 24.11 이상.  
-- 설치 및 구성된 Java Development Kit (JDK) 8 이상.  
-- Maven 또는 수동 JAR 관리에 대한 기본 지식.  
-- GroupDocs 포털에서 발급받은 임시 또는 영구 라이선스 키.
+시작하기 전에 다음을 준비하세요:
 
-## Java에서 GroupDocs Watermark의 메터드 라이선스를 설정하는 방법은?
-공개 키와 비공개 키를 로드하고 `Metered` 인스턴스를 생성한 뒤 라이선스를 적용합니다—세 단계로 간단히 수행됩니다. 이 방법은 모든 워터마크 요청이 계정에 기록되도록 보장하여 사용량을 완전히 파악할 수 있게 합니다.
-
-### 1단계: 공개 키와 비공개 키 정의
-임시 라이선스를 등록한 후 받은 키를 입력합니다.
-
-`Metered`는 메터드 라이선스와 사용량 추적을 처리하는 GroupDocs.Watermark 클래스입니다.  
-*코드에서 사용하기 전에 키를 안전한 위치(환경 변수, 암호화된 설정 등)에 보관하십시오.*
-
-### 2단계: Metered 클래스 인스턴스 생성
-키를 사용해 `Metered` 객체를 인스턴스화합니다. 이 객체는 초기화 시 워터마크 엔진에 전달됩니다.
-
-```text
-Metered metered = new Metered(System.getenv("GROUPDOCS_PUBLIC_KEY"),
-                               System.getenv("GROUPDOCS_PRIVATE_KEY"));
-```
-
-### 3단계: 제공된 키를 사용하여 메터드 라이선스 설정
-`setLicense` 메서드(또는 동등한 API 호출)를 공개 키와 비공개 키와 함께 호출합니다. 설정이 완료되면 이후 모든 워터마크 작업이 사용량에 따라 청구됩니다.
-
-```text
-WatermarkEngine engine = new WatermarkEngine();
-engine.setMeteredLicense(metered);
-```
-
-> **팁:** 키를 소스 제어에 포함하지 마세요. 비밀 관리자를 사용하거나 암호화된 속성 파일을 이용해 우발적인 노출을 방지하십시오.
+1. **GroupDocs.Watermark for Java** ≥ 24.11 (최신 릴리스).  
+2. **JDK 8+** 설치 및 `JAVA_HOME` 설정.  
+3. **공개 및 비공개 키** – GroupDocs 계정에서 발급받은 키를 코드에 사용할 예정입니다.
 
 ## GroupDocs.Watermark for Java 설정
 
 ### 설치 정보
-
-Maven을 사용하거나 JAR를 직접 다운로드하여 프로젝트에 GroupDocs.Watermark를 통합합니다.
-
-**Maven 설정:**  
-`pom.xml` 파일에 다음 구성을 추가합니다:
-
-```xml
-<dependency>
-    <groupId>com.groupdocs</groupId>
-    <artifactId>watermark</artifactId>
-    <version>24.11</version>
-</dependency>
-```
-
-**직접 다운로드:**  
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)에서 최신 버전을 다운로드합니다.
-
-### 라이선스 획득
-
-전체 기능을 사용하려면 무료 체험판 또는 임시 라이선스를 획득하십시오:
-
-- [GroupDocs 웹사이트](https://purchase.groupdocs.com/temporary-license/)에 가입하여 시작합니다.  
-- 키를 획득한 후 구현 가이드에 따라 프로젝트에 통합합니다.
-
-### 기본 초기화 및 설정
-
-SDK를 프로젝트에 추가하면 필요한 네임스페이스를 import하고 위의 코드 스니펫에서 보여준 대로 워터마크 엔진 인스턴스를 생성합니다.
-
-## 문제 해결 팁
-- **키 오류:** 공개 키와 비공개 키가 정확히 일치하는지 다시 확인하십시오; 한 글자 오타만으로도 활성화가 실패합니다.  
-- **라이선스 파일 경로 오류:** 파일 기반 라이선스를 사용하려면 파일 경로가 절대 경로이거나 작업 디렉터리를 기준으로 올바르게 해석되는지 확인하십시오.  
-- **네트워크 문제:** 메터드 라이선스는 외부 HTTPS 호출이 필요합니다; 방화벽이 `api.groupdocs.com`으로의 트래픽을 허용하는지 확인하십시오.
-
-## 실제 적용 사례
-1. **문서 보안:** PDF, Word 문서 및 이미지에 눈에 보이거나 보이지 않는 워터마크를 추가하여 민감한 기업 데이터를 보호합니다.  
-2. **사용량 추적:** 하루에 워터마크가 적용된 문서 수에 대한 보고서를 생성하여 예산 책정 및 규정 준수에 활용합니다.  
-3. **CMS 통합:** 콘텐츠 게시 워크플로우 중 워터마크 삽입을 자동화하고 라이선스를 자동으로 적용합니다.
-
-## 성능 고려 사항
-
-**성능 최적화:**  
-- 필요할 때만 워터마크를 적용하고 이미 보호된 파일은 처리하지 않습니다.  
-- 대량 배치에서는 동일한 `WatermarkEngine` 인스턴스를 재사용하여 초기화 오버헤드를 줄입니다.  
-
-**모범 사례:**  
-- 수백 페이지 PDF를 처리할 때 JVM 힙 사용량을 모니터링하고 메모리 병목 현상이 발생하면 스트리밍 API를 고려하십시오.  
-- 콘솔을 과부하하지 않도록 `INFO` 수준에서 로깅을 활성화하여 라이선스 호출을 기록합니다.
-
-## 결론
-
-이 가이드에서는 Maven 설치부터 메터드 키 구성까지 Java에서 GroupDocs.Watermark의 **라이선스 설정 방법**을 다루었습니다. 단계대로 진행하면 정확한 사용량 추적, 유연한 청구, 강력한 문서 보호를 얻을 수 있으며 성능 저하 없이 구현할 수 있습니다.
-
-**다음 단계:**  
-- 다양한 워터마크 스타일(텍스트, 이미지, 대각선)을 실험해 보세요.  
-- 사용자 역할에 기반한 조건부 워터마크와 같은 고급 기능을 탐색하십시오.  
-- 사용량 추세를 모니터링하기 위해 GroupDocs 분석 대시보드를 검토하십시오.
-
-문서를 보호할 준비가 되셨나요? 오늘 솔루션을 구현하여 자산이 보호되고 라이선스 비용이 투명함을 확인하십시오.
-
-## 자주 묻는 질문
-
-**Q: 임시 라이선스와 영구 라이선스의 차이점은 무엇인가요?**  
-A: 임시 라이선스는 기간이 제한되어 평가에 적합하며, 영구 라이선스는 반복 비용 없이 무제한 사용을 제공합니다.
-
-**Q: 코드를 변경하지 않고 메터드 라이선스에서 영구 라이선스로 전환할 수 있나요?**  
-A: 예—메터드 키 초기화를 `engine.setLicense("path/to/license/file")` 호출로 교체하면 됩니다.
-
-**Q: 메터드 서비스에 연결할 수 없으면 어떻게 되나요?**  
-A: SDK가 오프라인 모드로 전환됩니다; 워터마크는 계속되지만 연결이 복구될 때까지 사용량이 보고되지 않습니다.
-
-**Q: 워터마크 적용에 파일 크기 제한이 있나요?**  
-A: SDK는 최대 1 GB 파일을 처리할 수 있으며, 더 큰 파일은 분할하거나 스트리밍 모드로 처리해야 합니다.
-
-**Q: 메터드 라이선스는 모든 운영 체제에서 작동하나요?**  
-A: Java 8+를 지원하는 모든 플랫폼에서 작동합니다. Windows, Linux, macOS 포함.
-
----
-
-**마지막 업데이트:** 2026-07-30  
-**테스트 환경:** GroupDocs.Watermark 24.11 for Java  
-**작성자:** GroupDocs  
-
-**리소스**
-- [문서](https://docs.groupdocs.com/watermark/java/)
-- [API 레퍼런스](https://reference.groupdocs.com/watermark/java)
-- [다운로드](https://releases.groupdocs.com/watermark/java/)
-- [GitHub 저장소](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [무료 지원 포럼](https://forum.groupdocs.com/c/watermark/10)
-- [임시 라이선스 획득](https://purchase.groupdocs.com/temporary-license/)
+Maven 프로젝트에 GroupDocs.Watermark를 통합합니다:
 
 ```xml
 <repositories>
@@ -226,6 +56,17 @@ A: Java 8+를 지원하는 모든 플랫폼에서 작동합니다. Windows, Li
 </dependencies>
 ```
 
+> **팁:** 아래 직접 다운로드 옵션에서도 동일한 저장소 URL을 사용합니다.
+
+#### 직접 다운로드
+공식 릴리스 페이지에서 최신 JAR 파일을 받으세요: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+
+### 라이선스 획득
+프리미엄 기능을 사용하려면 임시 또는 체험 라이선스가 필요합니다. [GroupDocs 웹사이트](https://purchase.groupdocs.com/temporary-license/)에 가입하고 제공되는 공개/비공개 키를 복사하세요.
+
+### 기본 초기화
+라이브러리를 클래스패스에 추가한 뒤 다음과 같이 초기화합니다:
+
 ```java
 import com.groupdocs.watermark.License;
 
@@ -238,24 +79,86 @@ public class InitializeWatermark {
 }
 ```
 
+> **왜 중요한가:** 메터드 라이선스를 사용하더라도 `License` 객체를 초기화하면 이후 워크플로에서 키 기반 활성화를 받을 준비가 됩니다.
+
+## 구현 가이드
+
+### 메터드 라이선스 설정
+
+#### 단계 1: 공개 및 비공개 키 정의
 ```java
 // Step 1: Define the public and private keys for the metered license.
 String publicKey = "*****"; // Replace with your actual public key
 String privateKey = "*****"; // Replace with your actual private key
 ```
+이 키들은 **공개/비공개 키**를 사용해 계정을 안전하게 식별합니다.
 
+#### 단계 2: Metered 클래스 인스턴스 생성
 ```java
 // Step 2: Create an instance of Metered class.
 Metered metered = new Metered();
 ```
+`Metered` 클래스가 내부에서 모든 사용량 추적을 담당합니다.
 
+#### 단계 3: 제공된 키로 메터드 라이선스 설정
 ```java
 // Step 3: Set the metered license using the provided keys.
 metered.setMeteredKey(publicKey, privateKey);
 ```
+이 호출 이후 SDK는 완전히 라이선스가 적용되며 **PDF 파일에 워터마크를 추가**하거나 **워터마크가 적용된 문서를 생성**할 수 있습니다.
 
-## 관련 튜토리얼
+### 라이선스 파일 대신 공개/비공개 키를 사용하는 이유
+- **보안:** 키가 평문으로 디스크에 저장되지 않습니다.  
+- **유연성:** 환경(개발, 테스트, 운영) 전환 시 파일 복사 없이 키만 교체하면 됩니다.  
+- **확장성:** 컨테이너가 불변인 클라우드‑네이티브 배포에 최적입니다.
 
-- [GroupDocs.Watermark for Java 라이선스 및 구성 튜토리얼](/watermark/java/licensing-configuration/)
-- [Java에서 GroupDocs.Watermark 라이선스 설정 방법: 완전 가이드](/watermark/java/licensing-configuration/groupdocs-watermark-licensing-java-guide/)
-- [Java 워터마크 가이드: GroupDocs.Watermark API로 문서 보호](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
+## 실용적인 적용 사례
+
+1. **문서 보안:** PDF에 눈에 보이거나 보이지 않는 워터마크를 삽입해 무단 배포를 방지합니다.  
+2. **사용량 추적:** 매월 처리되는 문서 수를 모니터링해 메터드 할당량을 초과하지 않도록 관리합니다.  
+3. **CMS 연동:** 콘텐츠 관리 시스템에 업로드되는 모든 파일에 자동으로 **PDF에 워터마크를 적용**합니다.
+
+## 성능 고려 사항
+
+- **필요할 때만 워터마크 적용** – 불필요한 대량 배치는 피합니다.  
+- **요청 간 `Metered` 인스턴스 재사용** – 객체 생성 오버헤드를 줄입니다.  
+- **고해상도 이미지 처리 시 메모리 모니터링** – SDK의 스트리밍 API를 활용해 메모리 사용량을 최소화합니다.
+
+## 일반적인 문제와 해결책
+| Issue | Solution |
+|-------|----------|
+| Keys are rejected | 문자열에 공백이나 줄바꿈이 없는지 다시 확인합니다. |
+| License not activated | 워터마크 작업을 수행하기 **전에** `metered.setMeteredKey(...)` 호출을 했는지 확인합니다. |
+| Out‑of‑memory errors on big PDFs | `WatermarkOptions.setUseMemoryCache(true)`를 사용해 처리 데이터를 디스크에 오프로드합니다. |
+
+## 자주 묻는 질문
+
+**Q: 메터드 라이선스가 무엇이며 왜 사용해야 하나요?**  
+A: 메터드 라이선스는 각 API 호출을 추적해 실제 사용량에만 비용을 지불하게 하며, 애플리케이션을 손쉽게 확장할 수 있게 해줍니다.
+
+**Q: 체험 라이선스 파일과 메터드 키를 전환할 수 있나요?**  
+A: 예. 체험용 파일은 `license.setLicense("path/to/file.lic")`로 설정하고, 이후 `metered.setMeteredKey(...)`로 교체하면 됩니다.
+
+**Q: 공개 키 또는 비공개 키를 잘못 입력하면 어떻게 되나요?**  
+A: SDK가 인증 예외를 발생시키며 프리미엄 기능 접근을 차단합니다.
+
+**Q: 한 달에 추가할 수 있는 워터마크 수에 제한이 있나요?**  
+A: 제한은 계약에 따라 다르므로 대시보드에서 정확한 할당량을 확인하세요.
+
+**Q: 이미지 파일에도 적용할 수 있나요?**  
+A: 물론입니다. 동일 API가 JPEG, PNG, BMP 등 일반 이미지 포맷을 지원합니다.
+
+## 리소스
+
+- [Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2026-01-21  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs

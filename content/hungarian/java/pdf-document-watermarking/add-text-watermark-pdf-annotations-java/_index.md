@@ -1,99 +1,33 @@
 ---
-date: '2026-07-30'
-description: Ismerje meg, hogyan lehet PDF-et vízjelezni Java-ban, text watermark
-  hozzáadásával a PDF image annotations-hoz a GroupDocs.Watermark segítségével, és
-  hatékonyan megvédeni dokumentumait.
+date: '2026-01-21'
+description: Tanulja meg, hogyan adhat hozzá szöveges vízjelet PDF-hez képanotációkhoz
+  a GroupDocs.Watermark for Java használatával, hatékonyan védve dokumentumait.
 keywords:
-- watermark pdf java
-- add text watermark pdf
-- protect pdf with watermark
-lastmod: '2026-07-30'
-og_description: PDF vízjel Java-ban, text watermark hozzáadásával a PDF image annotations-hoz
-  a GroupDocs.Watermark segítségével. Dokumentumait gyorsan és megbízhatóan védje.
-og_image_alt: 'Developer guide: Add text watermark to PDF image annotations using
-  GroupDocs.Watermark for Java'
-og_title: PDF vízjel Java-ban – Add Text to Image Annotations
-schemas:
-- author: GroupDocs
-  dateModified: '2026-07-30'
-  description: Learn how to watermark PDF in Java by adding a text watermark to PDF
-    image annotations using GroupDocs.Watermark, protecting your documents effectively.
-  headline: Watermark PDF in Java – Add Text to Image Annotations
-  type: TechArticle
-- description: Learn how to watermark PDF in Java by adding a text watermark to PDF
-    image annotations using GroupDocs.Watermark, protecting your documents effectively.
-  name: Watermark PDF in Java – Add Text to Image Annotations
-  steps:
-  - name: Load the PDF Document
-    text: Open the target PDF file so the API can inspect its annotation objects.
-  - name: Create the Text Watermark
-    text: '`TextWatermark` represents a textual watermark with customizable font,
-      size, color, opacity, and rotation.'
-  - name: Apply the Watermark to Annotations
-    text: '`ImageAnnotation` is a PDF annotation that contains an embedded image,
-      which can be targeted for watermarking.'
-  - name: Save the Watermarked PDF
-    text: '`watermark.save()` writes the modified document to the specified path.'
-  type: HowTo
-- questions:
-  - answer: Yes, you can target `TextAnnotation`, `StampAnnotation`, or custom annotation
-      objects by using the same `addWatermark` method.
-    question: Can I add watermarks to other annotation types?
-  - answer: No hard limit, but keep the total opacity below 70 % to maintain readability
-      and avoid performance degradation.
-    question: Is there a limit to how many watermarks I can place on a page?
-  - answer: Use `annotation.removeWatermark(watermarkId)` or call `Watermark.removeAll()`
-      to strip every watermark from the document.
-    question: How do I remove a watermark after it’s been applied?
-  - answer: 'Yes – provide the password when loading the document: `Watermark.load("secure.pdf",
-      "myPassword")`.'
-    question: Does the library handle password‑protected PDFs?
-  - answer: The API can process files up to 2 GB on a 64‑bit JVM; larger files should
-      be split into sections before watermarking.
-    question: What is the maximum file size supported?
-  type: FAQPage
-tags:
-- watermark pdf
-- GroupDocs.Watermark
-- Java PDF processing
-- add text watermark
-- protect pdf
-title: PDF vízjel Java-ban – Add Text to Image Annotations
+- Add Text Watermark to PDF
+- Java PDF Watermarking
+- GroupDocs.Watermark for Java
+title: Hogyan adjon szöveges vízjelet PDF-hez képanotációkhoz a GroupDocs.Watermark
+  for Java használatával
 type: docs
 url: /hu/java/pdf-document-watermarking/add-text-watermark-pdf-annotations-java/
 weight: 1
 ---
 
-# PDF vízjel Java‑ban – Szöveg hozzáadása kép megjegyzésekhez
+# Hogyanme létfontosságú. képanotációkra, egy olyan technikát, amely megvédi a tartalmat, miközben megőrzi az eredeti elrendezést. Lépésről‑lépésre végigvezetjük a folyamaton – a GroupDocs.Watermark for Java beállításától a vízjel alkalmazásán és a vízjelezett PDF mentésén át – hogy magabiztosan védhesse PDF-jeit.
 
-A PDF‑fájlok jogosulatlan terjesztés elleni védelme mindennapi aggodalom a fejlesztők számára. **Watermark PDF Java** lehetővé teszi, hogy látható szöveget ágyazzunk közvetlenül a kép megjegyzésekbe, biztosítva, hogy minden oldal viselje a márkát vagy a titoktartási figyelmeztetést. Ebben az útmutatóban megismerheted, miért megbízható ez a megközelítés, mire van szükséged a kezdéshez, és egy lépésről‑lépésre megvalósítást a GroupDocs.Watermark for Java segítségével.
+### Java  
+- **Melyóra céloz ez az útmutató?** add text megfelelő memória‑kezelés segít  
+- **Lehet‑e később eltávolítani a vízjelet PDF‑ből Java‑ban?** Igen, a GroupDocs.Watermark biztosít eltávolító API‑kat  
 
-## Gyors válaszok
-- **Mit csinál a könyvtár?** Vízjeleket ad hozzá, szerkeszt, vagy eltávolít PDF‑eken, Word‑ön, Excel‑en és képfájlokon.  
-- **Melyik fő metódus hozza létre a vízjelet?** `Watermark.add()` alkalmazva egy `Annotation` objektumra.  
-- **Szükség van licencre a fejlesztéshez?** Egy ingyenes próba verzió tesztelésre elegendő; a termeléshez állandó licenc szükséges.  
-- **Nagy PDF‑eket is tudok feldolgozni?** Igen – az API oldalanként streameli a fájlokat, így > 500 MB‑os dokumentumokat is kezel anélkül, hogy a teljes fájlt a memóriába töltené.  
-- **A megoldás szálbiztos?** Minden publikus metódus állapot nélküli, így több példányt is biztonságosan futtathatsz párhuzamosan.
+## Mi az a „add text watermark pdf”?
+A szöveges vízjel PDF‑hez való hozzáadása azt jelenti, hogy félig átlátszó szöveget (például „Confidential”) ágyazunk közvetlenül a PDF‑oldalakra vagy konkrét elemekre, például képanotációkra. Ez a vizuális jelzés elriasztja a jogosulatlan másolást és egyértelműen jelzi a dokumentum tulajdonjogát.
 
-## Mi az a watermark pdf java?
-A `watermark pdf java` a vizuális vízjelek PDF‑dokumentumokhoz való hozzáadásának képességét jelenti Java‑kódból, általában a GroupDocs.Watermark könyvtár használatával. Segít a tulajdonjog, a titoktartás vagy a márka közvetlen beágyazásában a fájlba, miközben megőrzi az eredeti elrendezést, és finomhangolt vezérlést biztosít a megjelenés és a pozicionálás felett.
-
-## Miért a GroupDocs.Watermark for Java?
-A GroupDocs.Watermark **50+ bemeneti és kimeneti formátumot** támogat, több száz oldalas PDF‑eket 2 másodperc alatt dolgoz fel standard hardveren, és nem igényel teljes PDF‑viewer telepítését. Az annotáció‑tudatos motor megőrzi az eredeti elrendezést, miközben állítható átlátszóságú, forgatható és betűstílus‑testreszabható szöveges vízjeleket illeszt be, így gyors, megbízható választás vállalati szintű vízjelezéshez.
-
-## Előfeltételek
-- **Java Development Kit (JDK)** 8 vagy újabb.  
-- **Maven** (vagy kézi JAR‑beillesztés) a függőségkezeléshez.  
-- Alapvető ismeretek a PDF‑szerkezetről és a Java programozásról.  
-
-## Mik az előfeltételek a PDF‑ek Java‑ban történő vízjelezéséhez?
-Kompatibilis JDK‑ra, Maven‑re (vagy a JAR‑fájlokra) és érvényes GroupDocs.Watermark licencre van szükség. A könyvtár bármely, Java 8+‑t támogató operációs rendszeren fut, és kompatibilis a Java 11, 17 és újabb LTS kiadásokkal. Emellett biztosítsd, hogy a projektnek elegendő heap memóriája legyen (legalább 2 GB) a nagy PDF‑ek feldolgozásához, és legyen írási jogosultsága a kimeneti könyvtárra.
-
-## GroupDocs.Watermark for Java beállítása
-Mielőtt kódot írnál, add hozzá a könyvtárat a projektedhez.
+## Miért használjuk a GroupDocs.Watermark for Java‑t?
+A GroupDocs.Watermark magas szintű API‑t kínál, amely elrejti (őségkezeléshez  
+- Alapvető PDF‑kon**‑ot Java‑projektjébe az alábbi utasítások szerint:
 
 ### Maven beállítás
-Add hozzá a következőt a `pom.xml` fájlodhoz:
+Adja hozzá a következőt a `pom.xml` fájlhoz:
 ```xml
 <repositories>
    <repository>
@@ -113,15 +47,15 @@ Add hozzá a következőt a `pom.xml` fájlodhoz:
 ```
 
 ### Közvetlen letöltés
-Alternatívaként töltsd le a legújabb verziót a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
+Alternatívaként töltse le a legújabb verziót a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
 
 #### Licenc beszerzése
-- **Ingyenes próba** – fedezd fel a fő funkciókat díj nélkül.  
-- **Ideiglenes licenc** – teljes funkcionalitás fejlesztés közben.  
-- **Vásárlás** – állandó licenc a termeléshez és prémium támogatáshoz.
+- **Free Trial** – alapfunkciók kipróbálása licenc nélkül.  
+- **Temporary License** – teljes funkcionalitás feloldása fejlesztés közben.  
+- **Purchase** – állandó licenc a termeléshez és prémium támogatáshoz.
 
 ### Alapvető inicializálás
-A `Watermark` a belépési pont osztály, amely betölti a dokumentumot, alkalmazza a vízjel‑objektumokat, és elmenti az eredményt.
+A GroupDocs.Watermark használatának megkezdéséhez:
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -138,16 +72,10 @@ public class WatermarkDemo {
 }
 ```
 
-## Hogyan adjunk szöveges vízjelet PDF kép megjegyzésekhez a GroupDocs.Watermark for Java segítségével?
-A `Watermark.load()` betölti a PDF‑dokumentumot a Watermark API‑ba feldolgozásra. A `TextWatermark` egy szöveges vízjelet képvisel, amelynek betűtípusa, mérete, színe, átlátszósága és forgatása testreszabható. Az `ImageAnnotation` egy PDF‑annotáció, amely beágyazott képet tartalmaz, és célpontként szolgálhat a vízjelezéshez. Az `annotation.addWatermark()` csatolja a létrehozott vízjelet az annotációhoz, a `watermark.save()` pedig a módosított dokumentumot a megadott útvonalra írja.
+## Hogyan adjunk szöveges vízjelet PDF‑hez képanotációkon
+Az alábbi lépés‑ről‑lépésre útmutató pontosan bemutatja, hogyan ágyazzuk be a szöveges vízjelet a képanotációkra.
 
-Töltsd be a PDF‑t a `Watermark.load("sample.pdf")` paranccsal, hozd létre a `TextWatermark` példányt, iterálj végig minden `ImageAnnotation` objektumon, és hívd meg az `annotation.addWatermark(textWatermark)` metódust. Végül mentsd el a módosított dokumentumot a `watermark.save("output.pdf")` hívással. Ez a tömör folyamat egyetlen átfutásban kezeli a megjegyzések tetszőleges számát, és megőrzi az eredeti annotáció metaadatait.
-
-### Szöveges vízjel hozzáadása PDF kép megjegyzésekhez
-Az alábbi szakaszok bontják le a lépéseket.
-
-#### 1. lépés: PDF dokumentum betöltése
-Nyisd meg a cél PDF‑fájlt, hogy az API ellenőrizhesse a megjegyzés‑objektumokat.
+### 1. lépés: PDF‑dokumentum betöltése
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -158,8 +86,7 @@ try (Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document
 }
 ```
 
-#### 2. lépés: Szöveges vízjel létrehozása
-A `TextWatermark` egy szöveges vízjelet képvisel, amelynek betűtípusa, mérete, színe, átlátszósága és forgatása testreszabható.
+### 2. lépés: Szöveges vízjel létrehozása
 ```java
 import com.groupdocs.watermark.contents.PdfAnnotation;
 import com.groupdocs.watermark.watermarks.TextWatermark;
@@ -175,8 +102,7 @@ textWatermark.setSizingType(SizingType.ScaleToParentDimensions);
 textWatermark.setScaleFactor(0.5);
 ```
 
-#### 3. lépés: Vízjel alkalmazása az annotációkra
-Az `ImageAnnotation` egy PDF‑annotáció, amely beágyazott képet tartalmaz, és célpontként szolgálhat a vízjelezéshez.
+### 3. lépés: Vízjel alkalmazása a képanotációkra
 ```java
 import com.groupdocs.watermark.contents.PdfPage;
 
@@ -190,63 +116,56 @@ for (PdfPage page : watermarker.getContent().getPages()) {
 }
 ```
 
-#### 4. lépés: Vízjelezett PDF mentése
-A `watermark.save()` a módosított dokumentumot a megadott útvonalra írja.
+### 4. lépés: Vízjelezett PDF mentése
 ```java
 watermarker.save("YOUR_DOCUMENT_DIRECTORY/watermarked_document.pdf");
 System.out.println("Document saved with watermark.");
 ```
 
 ## Gyakori problémák és megoldások
-- **Hiányzó függőségek** – Ellenőrizd, hogy minden GroupDocs‑artifact szerepel-e a `pom.xml`‑ben.  
-- **Fájlútvonal‑problémák** – Használj abszolút útvonalakat vagy `Paths.get()`‑t a relatív‑útvonalak meglepetéseinek elkerülése érdekében.  
-- **Nem támogatott annotáció‑típusok** – Az API jelenleg kezeli az `ImageAnnotation`, `TextAnnotation` és `StampAnnotation` típusokat; más típusokhoz egyedi kezelést kell megvalósítani.
+- **Missing Dependencies** – Ellenőrizze, hogy minden `<dependency>` bejegyzés a `pom.xml`‑ben megegyezik‑e a fent bemutatott verziókkal.  
+- **File Path Issues** – Használjon abszolút útvonalakat, vagy győződjön meg róla, hogy a munkakönyvtár a `YOUR_DOCUMENT_DIRECTORY`‑re mutat.  
+- **Unsupported Formats** – A GroupDocs.Watermark támogatja a PDF, DOCX, PPTX és több képéb formátumok kivételt váltanak ki.  
+- **remove watermark pdf java** – Ha később el kellódust a dokumentum mentése előtt.
 
 ## Gyakorlati alkalmazások
-Szöveges vízjel PDF kép megjegyzésekhez különösen hasznos:
-1. **Jogos dokumentumok** – Jelöld a szerződéseket “Confidential – For Internal Use Only” felirattal.  
-2. **Bizalmas jelentések** – Megakadályozd a véletlen szivárgást egy vállalati címke beágyazásával.  
-3. **Marketing anyagok** – Márkázd a promóciós PDF‑eket egy finom logó‑szöveg átfedéssel.  
-4. **Akademiai vázlatok** – Jelezd a “Draft – Do Not Distribute” feliratot a kutatási anyagokon a lektorálás előtt.
+A szöveges vízjel PDF‑hez külön. **Legal Documents** – Szerenekkel.  
+4. **Academic Drafts** – Vázlat státusz jelzése a lektorálás előtt.
 
-## Teljesítménybeli megfontolások
-- **Kötegelt feldolgozás** – Csoportosíts több PDF‑et egyetlen szálkezelőbe a JVM‑túlterhelés minimalizálása érdekében.  
-- **Memóriakezelés** – A könyvtár oldalanként streamel, ezért legalább 2 GB heap‑et ajánlunk 200 MB‑nál nagyobb fájlokhoz.  
-- **Vízjel beállítások** – Alacsonyabb átlátszóság (pl. 30 %) csökkenti a vizuális zajt, miközben továbbra is észlelhető marad.
+## Teljesítmény‑szempontok
+- **Batch Processing** – Iteráljon egy PDF‑gyűjteményen, és ahol lehetséges, használjon egyetlen `Watermarker` példányt.  
+- **Memory Management** – Nagy fájlok esetén növelje a JVM heap‑et (`-Xmx2g` vagy nagyobb), és zárja le a `Watermarker`‑t egy try‑with‑resources blokkban, ahogy a példában láthatFactor`‑t és az átlátszóságési foly annotációkategóriákra, például szöveg, hivatkozás vagy alakzat annotációkra.  
+2. **Is there a limit on the number of watermarks per page?**  
+   Nincs szigorú korlát, de a túl sok vízjel ronthatja az olvashatóságot és a feldolgozási időt.  
+3. **How do I remove a watermark if needed?**  
+   Használja a GroupDocs.Watermark eltávol.removegen, amennyiben a dokumentum betöltésekor megadja a helyes jelszót.  
+5. **What file sizes can be processed?**  
+   Nagy fájlok is támogatottak; figyelje a memóriahasználatot, és nagyon nagy dokumentumok esetén fontolja meg a feldolgozást darabokra bontva.
 
-## Gyakran feltett kérdések
+## Gyakransek
 
-**K: Hozzá tudok-e adni vízjelet más annotáció‑típusokhoz?**  
-V: Igen, a `TextAnnotation`, `StampAnnotation` vagy egyedi annotáció‑objektumok is célozhatók ugyanazzal az `addWatermark` metódussal.
+**Q: Hogyan védhetem a PDF‑et vízjellel úgy, hogy az eredeti elrendezés megmarad?** és egy megfelelő `scale**  
+A: Igen, hívja a `watermarker.removeWatermarks()` metódust. Ez a javasolt megoldás a „remove watermark pdf java” esetére.
 
-**K: Van korlátozás arra, hány vízjelet helyezhetek el egy oldalon?**  
-V: Nincs szigorú korlát, de a teljes átlátszóságot tartsd 70 % alatt a olvashatóság és a teljesítmény megőrzése érdekében.
+**eket?**  
+A: Teljes mértékben. Adja át a jelszót a `PdfLoadOptions`‑nek a `Watermarker` inicializálásakor.
 
-**K: Hogyan távolíthatom el a vízjelet a felvitel után?**  
-V: Használd az `annotation.removeWatermark(watermarkId)` metódust, vagy hívd a `Watermark.removeAll()`‑t a dokumentum összes vízjelének eltávolításához.
+**Qk kompatibilisek a legújabb GroupDocs.Watermark‑dal?**  
+A: A könyvtár JDK 8‑tól felfelé működik, beleértve a Java 11, 17 és 21 verziókat is.
 
-**K: Kezeli-e a könyvtár a jelszóval védett PDF‑eket?**  
-V: Igen – add meg a jelszót a dokumentum betöltésekor: `Watermark.load("secure.pdf", "myPassword")`.
+**Q: Képes vagyok kötegelt feldolgozásra több tucat
+Mostelés‑kész útmutatóval a **add text watermark pdf** képanotációkon történő alkalmazásához a GroupDocs.Watermark for Java használatával. A fenti lépések követésével megvédheti a bizalok integritását – mindezt tiszta és karbantartható kóddal. Fedezze fel a további funkciókat, például a képi vízjeleket, dinamikus szöveget és OCR‑alapú vízjelezést, hogy még szélesebb körű PDF‑védelmi stratégiát valósítson meg.
 
-**K: Mi a maximális támogatott fájlméret?**  
-V: Az API 2 GB‑ig képes fájlokat feldolgozni 64‑bit JVM‑en; nagyobb fájlokat előbb szakaszokra kell bontani a vízjelezés előtt.
+---
 
-## Források
+**Last Updated:** 2026-01-21  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  
+
+**Resources**
 - [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)
 - [API Reference](https://reference.groupdocs.com/watermark/java)
 - [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
 - [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
-
----
-
-**Utolsó frissítés:** 2026-07-30  
-**Tesztelt verzió:** GroupDocs.Watermark 23.9 for Java  
-**Szerző:** GroupDocs
-
-## Kapcsolódó oktatóanyagok
-
-- [How to Add a Text Watermark to PDF Using GroupDocs.Watermark for Java (2023 Guide)](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-java/)
-- [How to Add Text and Image Watermarks to Specific PDF Pages Using GroupDocs.Watermark for Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Access and Iterate Over PDF Artifacts Using GroupDocs.Watermark in Java for Document Watermarking](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)

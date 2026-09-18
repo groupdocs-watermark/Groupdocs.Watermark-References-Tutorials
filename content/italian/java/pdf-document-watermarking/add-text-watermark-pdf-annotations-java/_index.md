@@ -1,100 +1,39 @@
 ---
-date: '2026-07-30'
-description: Scopri come filigranare PDF in Java aggiungendo una text watermark alle
-  PDF image annotations usando GroupDocs.Watermark, proteggendo i tuoi documenti in
-  modo efficace.
+date: '2026-01-21'
+description: Scopri come aggiungere una filigrana di testo PDF alle annotazioni delle
+  immagini usando GroupDocs.Watermark per Java, proteggendo efficacemente i tuoi documenti.
 keywords:
-- watermark pdf java
-- add text watermark pdf
-- protect pdf with watermark
-lastmod: '2026-07-30'
-og_description: Filigrana PDF in Java aggiungendo una text watermark alle PDF image
-  annotations con GroupDocs.Watermark. Proteggi i tuoi documenti rapidamente e in
-  modo affidabile.
-og_image_alt: 'Developer guide: Add text watermark to PDF image annotations using
-  GroupDocs.Watermark for Java'
-og_title: Filigrana PDF in Java – Add Text to Image Annotations
-schemas:
-- author: GroupDocs
-  dateModified: '2026-07-30'
-  description: Learn how to watermark PDF in Java by adding a text watermark to PDF
-    image annotations using GroupDocs.Watermark, protecting your documents effectively.
-  headline: Watermark PDF in Java – Add Text to Image Annotations
-  type: TechArticle
-- description: Learn how to watermark PDF in Java by adding a text watermark to PDF
-    image annotations using GroupDocs.Watermark, protecting your documents effectively.
-  name: Watermark PDF in Java – Add Text to Image Annotations
-  steps:
-  - name: Load the PDF Document
-    text: Open the target PDF file so the API can inspect its annotation objects.
-  - name: Create the Text Watermark
-    text: '`TextWatermark` represents a textual watermark with customizable font,
-      size, color, opacity, and rotation.'
-  - name: Apply the Watermark to Annotations
-    text: '`ImageAnnotation` is a PDF annotation that contains an embedded image,
-      which can be targeted for watermarking.'
-  - name: Save the Watermarked PDF
-    text: '`watermark.save()` writes the modified document to the specified path.'
-  type: HowTo
-- questions:
-  - answer: Yes, you can target `TextAnnotation`, `StampAnnotation`, or custom annotation
-      objects by using the same `addWatermark` method.
-    question: Can I add watermarks to other annotation types?
-  - answer: No hard limit, but keep the total opacity below 70 % to maintain readability
-      and avoid performance degradation.
-    question: Is there a limit to how many watermarks I can place on a page?
-  - answer: Use `annotation.removeWatermark(watermarkId)` or call `Watermark.removeAll()`
-      to strip every watermark from the document.
-    question: How do I remove a watermark after it’s been applied?
-  - answer: 'Yes – provide the password when loading the document: `Watermark.load("secure.pdf",
-      "myPassword")`.'
-    question: Does the library handle password‑protected PDFs?
-  - answer: The API can process files up to 2 GB on a 64‑bit JVM; larger files should
-      be split into sections before watermarking.
-    question: What is the maximum file size supported?
-  type: FAQPage
-tags:
-- watermark pdf
-- GroupDocs.Watermark
-- Java PDF processing
-- add text watermark
-- protect pdf
-title: Filigrana PDF in Java – Add Text to Image Annotations
+- Add Text Watermark to PDF
+- Java PDF Watermarking
+- GroupDocs.Watermark for Java
+title: Come aggiungere una filigrana di testo PDF su annotazioni immagine usando GroupDocs.Watermark
+  per Java
 type: docs
 url: /it/java/pdf-document-watermarking/add-text-watermark-pdf-annotations-java/
 weight: 1
 ---
 
-# Filigrana PDF in Java – Aggiungere Testo alle Annotazioni Immagine
+# Come aggiungere una filigrana di testo PDF alle annotazioni immagine usando GroupDocs.Watermark per Java
 
-Proteggere i file PDF dalla distribuzione non autorizzata è una preoccupazione quotidiana per gli sviluppatori. **Watermark PDF Java** consente di incorporare testo visibile direttamente sulle annotazioni immagine, garantendo che ogni pagina riporti il tuo marchio o avviso di riservatezza. In questo tutorial vedrai perché questo approccio è affidabile, cosa ti serve per iniziare e un'implementazione passo‑passo usando GroupDocs.Watermark per Java.
+## Introduzione
+Proteggere i documenti PDF da utilizzi o distribuzioni non autorizzate è fondamentale. In questo tutorial imparerai **come aggiungere una filigrana di testo PDF** alle annotazioni immagine, una tecnica che salvagu layout originale. Ti guideremo passo dopo passo—dalla configurazione di GroupDocs.Watermark per Java all’applicazione e al salvataggio del PDF con filigrana—così potrai proteggere i tuoi PDF con fiducia.
 
-## Risposte Rapide
-- **Che cosa fa la libreria?** Aggiunge, modifica o rimuove filigrane su PDF, Word, Excel e file immagine.  
-- **Quale metodo principale crea la filigrana?** `Watermark.add()` applicato a un oggetto `Annotation`.  
-- **Ho bisogno di una licenza per lo sviluppo?** Una prova gratuita funziona per i test; è necessaria una licenza permanente per la produzione.  
-- **Posso elaborare PDF di grandi dimensioni?** Sì – l'API trasmette le pagine in streaming, gestendo file > 500 MB senza caricare l'intero documento in memoria.  
-- **La soluzione è thread‑safe?** Tutti i metodi pubblici sono senza stato, quindi è possibile eseguire più istanze in parallelo in modo sicuro.
+### Risposte rapide
+- **Quale libreria viene utilizzata?** GroupDocs.Watermark per Java  
+- **Qual è la parola chiave principale di questa guida?** l’uso in produzione  
+- **Posso proteggere PDF con filigrana su file di grandi dimensioni?** Sì, l’elaborazione batch e una corretta gestione della memoria aiutano  
+ filigrana PDF Java?** Sì, GroupDocs.Watermark fornisce API di rimozione  
 
-## Cos'è watermark pdf java?
-`watermark pdf java` si riferisce alla capacità di aggiungere filigrane visive ai documenti PDF dal codice Java, tipicamente usando una libreria come GroupDocs.Watermark. Aiuta a far rispettare la proprietà, la riservatezza o il branding direttamente all'interno del file mantenendo il layout originale e consentendo un controllo granulare sull'aspetto e sul posizionamento.
-
-## Perché usare GroupDocs.Watermark per Java?
-GroupDocs.Watermark supporta **oltre 50 formati di input e output**, elabora PDF di centinaia di pagine in meno di 2 secondi su hardware standard e non richiede l'installazione di un visualizzatore PDF completo. Il suo motore consapevole delle annotazioni preserva il layout originale inserendo filigrane testuali con opacità regolabile, rotazione e stile del font, rendendolo una scelta veloce e affidabile per la filigranatura di livello enterprise.
-
-## Prerequisiti
-- **Java Development Kit (JDK)** 8 o superiore.  
-- **Maven** (o inclusione manuale di JAR) per la gestione delle dipendenze.  
-- Familiarità di base con la struttura PDF e i concetti di programmazione Java.  
-
-## Quali sono i prerequisiti per la filigranatura dei PDF in Java?
-Hai bisogno di un JDK compatibile, Maven (o i file JAR), e una licenza valida di GroupDocs.Watermark. La libreria funziona su qualsiasi OS che supporti Java 8+ e funziona con Java 11, 17 e le versioni LTS più recenti. Inoltre, assicurati che il tuo progetto disponga di sufficiente memoria heap (almeno 2 GB) per l'elaborazione di PDF di grandi dimensioni e che tu abbia i permessi di scrittura nella directory di output.
+## Cos’è “add text watermark pdf”?
+Aggiungere una filigrana di testo PDF significa incorporare testo semitrasparente (ad es. “Confidenziale”) direttamente sulle pagine PDF o su elementi specifici come lenale visché usare GroupDocsenze integrate, elaborazione batch e ottimizzazioni delle prestazioni—perfetto per la prote## Prerequisiti
+- **Java Development Kit (JDK)** dipendenze  
+- Familiarità con i concetti di base dei PDF e con la sintassi Java  
 
 ## Configurazione di GroupDocs.Watermark per Java
-Prima di scrivere qualsiasi codice, aggiungi la libreria al tuo progetto.
+Incorpora **GroupDocs.Watermark** nel tuo progetto Java seguendo queste istruzioni:
 
 ### Configurazione Maven
-Aggiungi il seguente al file `pom.xml`:
+Aggiungi quanto segue al tuo file `pom.xml`:
 ```xml
 <repositories>
    <repository>
@@ -113,16 +52,16 @@ Aggiungi il seguente al file `pom.xml`:
 </dependencies>
 ```
 
-### Download Diretto
-In alternativa, scarica l'ultima versione da [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Download diretto
+In alternativa, scarica l’ultima versione da [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-#### Acquisizione Licenza
-- **Free Trial** – esplora le funzionalità principali senza costi.  
-- **Temporary License** – sblocca tutte le funzionalità durante lo sviluppo.  
-- **Purchase** – ottieni una licenza permanente per l'uso in produzione e supporto premium.
+#### Acquisizione della licenza
+- **Prova gratuita** – esplora le funzionalità di base senza licenza.  
+- **Licenza temporanea** – sblocca tutte le capacità durante lo sviluppo.  
+- **Acquisto** – ottieni una licenza permanente per la produzione e il supporto premium.
 
-### Inizializzazione di Base
-`Watermark` è la classe di ingresso che carica un documento, applica gli oggetti filigrana e salva il risultato.
+### Inizializzazione di base
+Per iniziare a usare GroupDocs.Watermark:
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -139,16 +78,10 @@ public class WatermarkDemo {
 }
 ```
 
-## Come aggiungere una filigrana testuale alle annotazioni immagine PDF usando GroupDocs.Watermark per Java?
-`Watermark.load()` carica un documento PDF nell'API Watermark per l'elaborazione. `TextWatermark` rappresenta una filigrana testuale con font, dimensione, colore, opacità e rotazione personalizzabili. `ImageAnnotation` è un'annotazione PDF che contiene un'immagine incorporata, che può essere bersaglio della filigrana. `annotation.addWatermark()` collega la filigrana creata all'annotazione, e `watermark.save()` scrive il documento modificato nel percorso specificato.
+## Come aggiungere una filigrana di testo PDF alle annotazioni immagine PDF
+Di seguito trovi una guida passo‑passo che mostra esattamente come incorporare una filigrana di testo sulle annotazioni immagine.
 
-Carica il tuo PDF con `Watermark.load("sample.pdf")`, crea un'istanza `TextWatermark`, itera su ogni `ImageAnnotation` e chiama `annotation.addWatermark(textWatermark)`. Infine, salva il documento modificato con `watermark.save("output.pdf")`. Questo flusso conciso gestisce qualsiasi numero di annotazioni in un unico passaggio e preserva i metadati originali delle annotazioni.
-
-### Aggiungere una Filigrana Testuale alle Annotazioni Immagine PDF
-Le sezioni seguenti scompongono ogni passaggio.
-
-#### Passo 1: Caricare il Documento PDF
-Apri il file PDF di destinazione affinché l'API possa ispezionare i suoi oggetti di annotazione.
+### Passo 1: Caricare il documento PDF
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -159,8 +92,7 @@ try (Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document
 }
 ```
 
-#### Passo 2: Creare la Filigrana Testuale
-`TextWatermark` rappresenta una filigrana testuale con font, dimensione, colore, opacità e rotazione personalizzabili.
+### Passo 2: Creare la filigrana di testo
 ```java
 import com.groupdocs.watermark.contents.PdfAnnotation;
 import com.groupdocs.watermark.watermarks.TextWatermark;
@@ -176,8 +108,7 @@ textWatermark.setSizingType(SizingType.ScaleToParentDimensions);
 textWatermark.setScaleFactor(0.5);
 ```
 
-#### Passo 3: Applicare la Filigrana alle Annotazioni
-`ImageAnnotation` è un'annotazione PDF che contiene un'immagine incorporata, che può essere bersaglio della filigrana.
+### Passo 3: Applicare la filigrana alle annotazioni immagine
 ```java
 import com.groupdocs.watermark.contents.PdfPage;
 
@@ -191,63 +122,69 @@ for (PdfPage page : watermarker.getContent().getPages()) {
 }
 ```
 
-#### Passo 4: Salvare il PDF Filigranato
-`watermark.save()` scrive il documento modificato nel percorso specificato.
+### Passo 4: Salvare il PDF con filigrana
 ```java
 watermarker.save("YOUR_DOCUMENT_DIRECTORY/watermarked_document.pdf");
 System.out.println("Document saved with watermark.");
 ```
 
-## Problemi Comuni e Soluzioni
-- **Missing Dependencies** – Verifica che tutti gli artefatti GroupDocs siano elencati in `pom.xml`.  
-- **File Path Issues** – Usa percorsi assoluti o `Paths.get()` per evitare sorprese con percorsi relativi.  
-- **Unsupported Annotation Types** – L'API attualmente gestisce `ImageAnnotation`, `TextAnnotation` e `StampAnnotation`; altri tipi richiedono una gestione personalizzata.
+## Problemi comuni e soluzioni
+- **Dipendenze mancanti** – Verifica che ogni voce `<dependency>` in `pom.xml` corrisponda alle versioni indicate sopra.  
+- **Problemi di percorso file** – Usa percorsi assoluti o assicurati che la directory di lavoro punti a `YOUR_DOCUMENT_DIRECTORY`.  
+- **Formati non supportati** – GroupDocs.Watermark supporta PDF, DOCX, PPTX e diversi tipi di immagine; altri formati genereranno un’eccezione.  
+- **remove watermark pdf java** – Se devi rimuovere una filigrana in seguito, utilizza `watermarker.removeWatermarks()` prima di salvare il documento.
 
-## Applicazioni Pratiche
-Aggiungere una filigrana testuale alle annotazioni immagine PDF è particolarmente utile per:
-1. **Legal Documents** – Contrassegnare i contratti con “Confidential – For Internal Use Only”.  
-2. **Confidential Reports** – Impedire perdite accidentali incorporando un'etichetta aziendale.  
-3. **Marketing Materials** – Brandizzare i PDF promozionali con una leggera sovrapposizione di logo‑testo.  
-4. **Academic Drafts** – Indicare “Draft – Do Not Distribute” sui documenti di ricerca prima della revisione paritaria.
+## Applicazioni pratiche
+Aggiungere una filigrana di testo PDF è particolarmente utile per:
+1. **Documenti legali** – Contrassegna i contratti come “Confidenziale”.  
+2. **Report interni** – Previeni la distribuzione accidentale all’esterno.  
+3. **Materiale di marketing** – Brandizza i PDF con gli slogan aziendali.  
+4. **Bozze accademiche** – Indica lo stato di bozza prima della revisione tra pari.
 
-## Considerazioni sulle Prestazioni
-- **Batch Processing** – Raggruppa più PDF in un unico thread pool per ridurre al minimo l'overhead della JVM.  
-- **Memory Management** – La libreria trasmette le pagine in streaming, quindi allocare almeno 2 GB di heap per file superiori a 200 MB.  
-- **Watermark Settings** – Un'opacità più bassa (es. 30 %) riduce il disordine visivo mantenendo la filigrana rilevabile.
+## Considerazioni sulle prestazioni
+- **Elaborazione batch** – Scorri una collezione di PDF e riutilizza un’unica istanza `Watermarker` quando possibile.  
+- **Gestione della memoria** – Per file di grandi dimensioni, aumenta l’heap JVM (`-Xmx2g` o superiore) e chi blocco try‑with‑resources come mostrato.  
+- **Ottimizzazione delle impostazioni della filigrana** – Regola `setScaleFactor` e la trasparenza per bilanciare visibilità e dimensione del file.
 
-## Domande Frequenti
+## Sezione FAQ
+1. **Posso aggiungere filigrane ad altri tipi di annotazioni?**  
+   Sì, puoi personalizzare il processo di filigranatura per diverse categorie di annotazione, come testo, collegamento o forme.  
+2. **Esiste un limite**  
+   Nessun limite rigido, ma un numero eccessivo di filigrane può compromettere la leggibilità e i tempi di elaborazione.  
+3. **Come rimuovo una filigrana se necessario?**  
+   Usa l’API di rimozione di GroupDocs.Watermark (`watermarker.removeWatermarks()`).  
+4. **Questo metodo gestisce PDF criptati?**  
+   Sì, a patto di fornire la password corretta al momento del caricamento del documento.  
+5. **Quali dimensioni di file possono essere elaborate?**  
+   Sono supportati file di grandi dimensioni; monitora l’uso della memoria e considera l’elaborazione a blocchi per documenti molto voluminosi.
 
-**Q: Posso aggiungere filigrane ad altri tipi di annotazione?**  
-A: Sì, è possibile mirare a `TextAnnotation`, `StampAnnotation` o oggetti di annotazione personalizzati usando lo stesso metodo `addWatermark`.
+## Domande frequenti
 
-**Q: Esiste un limite al numero di filigrane che posso posizionare su una pagina?**  
-A: Non c'è un limite rigido, ma mantieni l'opacità totale al di sotto del 70 % per preservare la leggibilità ed evitare degrado delle prestazioni.
+**D: Come proteggere un PDF con filigrana mantenendo il layout originale?**  
+R: Utilizzando `Text chiama ` pdf java”.
 
-**Q: Come rimuovo una filigrana dopo che è stata applicata?**  
-A: Usa `annotation.removeWatermark(watermarkId)` o chiama `Watermark.removeAll()` per rimuovere tutte le filigrane dal documento.
+**D: GroupDocs.Watermark supporta PDF protetti da password?**  
+R: Assolutamente. Passa la password a `PdfLoadOptions` durante l’inizializzazione del `Watermarker`.
 
-**Q: La libreria gestisce PDF protetti da password?**  
-A: Sì – fornisci la password durante il caricamento del documento: `Watermark.load("secure.pdf", "myPassword")`.
+**D: Quali versioni di Java sono compatibili con l’ultima versione di GroupDocs.Watermark?**  
+R: La libreria funziona con JDK 8 e versioni successive, inclusi Java 11, 17 e 21.
 
-**Q: Qual è la dimensione massima del file supportata?**  
-A: L'API può elaborare file fino a 2 GB su una JVM a 64 bit; file più grandi dovrebbero essere suddivisi in sezioni prima della filigranatura.
+**D: Posso elaborare in batch decine di PDF in un’unica esecuzione?**  
+R: Sì. Avvolgi i passaggi di caricamento, filigranatura e salvataggio all’interno di un ciclo; riutilizza la stessa configurazione `Watermarker` per migliorare le prestazioni.
 
-## Risorse
-- [Documentazione GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)
-- [Riferimento API](https://reference.groupdocs.com/watermark/java)
-- [Download GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/)
-- [Repository GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Forum di Supporto Gratuito](https://forum.groupdocs.com/c/watermark/10)
-- [Applicazione Licenza Temporanea](https://purchase.groupdocs.com/temporary-license/)
+## Conclusione
+Ora disponi di una guida completa e pronta per la produzione su **add text watermark pdf** nelle annotazioni immagine usando GroupDocs.Watermark per Java. Seguendo i passaggi indicati potrai proteggere documenti sensibili, brandizzare materiale di marketing e mettere al sicuro bozze accademiche—tutto mantenendo il codice pulito e manutenibile. Esplora funzionalità aggiuntive come filigrane immagine, testo dinamico e filigrane basate su OCR per estendere ulteriormente la tua strategia di protezione PDF.
 
 ---
 
-**Ultimo Aggiornamento:** 2026-07-30  
-**Testato Con:** GroupDocs.Watermark 23.9 for Java  
-**Autore:** GroupDocs
+**Ultimo aggiornamento:** 2026-01-21  
+**Testato con:** GroupDocs.Watermark 24.11 per Java  
+**Autore:** GroupDocs  
 
-## Tutorial Correlati
-
-- [Come Aggiungere una Filigrana Testuale a PDF Usando GroupDocs.Watermark per Java (Guida 2023)](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-java/)
-- [Come Aggiungere Filigrane Testo e Immagine a Pagine PDF Specifiche Usando GroupDocs.Watermark per Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Accedere e Iterare sugli Artefatti PDF Usando GroupDocs.Watermark in Java per la Filigranatura dei Documenti](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
+**Risorse**
+- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)

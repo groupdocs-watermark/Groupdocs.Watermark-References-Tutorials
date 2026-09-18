@@ -1,100 +1,38 @@
 ---
-date: '2026-07-30'
-description: Pelajari cara menambahkan watermark PDF di Java dengan menambahkan watermark
-  teks ke anotasi gambar PDF menggunakan GroupDocs.Watermark, melindungi dokumen Anda
-  secara efektif.
+date: '2026-01-21'
+description: Pelajari cara menambahkan watermark teks PDF ke anotasi gambar menggunakan
+  GroupDocs.Watermark untuk Java, melindungi dokumen Anda secara efektif.
 keywords:
-- watermark pdf java
-- add text watermark pdf
-- protect pdf with watermark
-lastmod: '2026-07-30'
-og_description: Watermark PDF di Java dengan menambahkan watermark teks ke anotasi
-  gambar PDF menggunakan GroupDocs.Watermark. Amankan dokumen Anda dengan cepat dan
-  dapat diandalkan.
-og_image_alt: 'Developer guide: Add text watermark to PDF image annotations using
-  GroupDocs.Watermark for Java'
-og_title: Watermark PDF di Java – Tambahkan Teks ke Anotasi Gambar
-schemas:
-- author: GroupDocs
-  dateModified: '2026-07-30'
-  description: Learn how to watermark PDF in Java by adding a text watermark to PDF
-    image annotations using GroupDocs.Watermark, protecting your documents effectively.
-  headline: Watermark PDF in Java – Add Text to Image Annotations
-  type: TechArticle
-- description: Learn how to watermark PDF in Java by adding a text watermark to PDF
-    image annotations using GroupDocs.Watermark, protecting your documents effectively.
-  name: Watermark PDF in Java – Add Text to Image Annotations
-  steps:
-  - name: Load the PDF Document
-    text: Open the target PDF file so the API can inspect its annotation objects.
-  - name: Create the Text Watermark
-    text: '`TextWatermark` represents a textual watermark with customizable font,
-      size, color, opacity, and rotation.'
-  - name: Apply the Watermark to Annotations
-    text: '`ImageAnnotation` is a PDF annotation that contains an embedded image,
-      which can be targeted for watermarking.'
-  - name: Save the Watermarked PDF
-    text: '`watermark.save()` writes the modified document to the specified path.'
-  type: HowTo
-- questions:
-  - answer: Yes, you can target `TextAnnotation`, `StampAnnotation`, or custom annotation
-      objects by using the same `addWatermark` method.
-    question: Can I add watermarks to other annotation types?
-  - answer: No hard limit, but keep the total opacity below 70 % to maintain readability
-      and avoid performance degradation.
-    question: Is there a limit to how many watermarks I can place on a page?
-  - answer: Use `annotation.removeWatermark(watermarkId)` or call `Watermark.removeAll()`
-      to strip every watermark from the document.
-    question: How do I remove a watermark after it’s been applied?
-  - answer: 'Yes – provide the password when loading the document: `Watermark.load("secure.pdf",
-      "myPassword")`.'
-    question: Does the library handle password‑protected PDFs?
-  - answer: The API can process files up to 2 GB on a 64‑bit JVM; larger files should
-      be split into sections before watermarking.
-    question: What is the maximum file size supported?
-  type: FAQPage
-tags:
-- watermark pdf
-- GroupDocs.Watermark
-- Java PDF processing
-- add text watermark
-- protect pdf
-title: Watermark PDF di Java – Tambahkan Teks ke Anotasi Gambar
+- Add Text Watermark to PDF
+- Java PDF Watermarking
+- GroupDocs.Watermark for Java
+title: Cara menambahkan watermark teks PDF pada anotasi gambar menggunakan GroupDocs.Watermark
+  untuk Java
 type: docs
 url: /id/java/pdf-document-watermarking/add-text-watermark-pdf-annotations-java/
 weight: 1
 ---
 
-# Watermark PDF di Java – Tambahkan Teks ke Anotasi Gambar
+# Cara menambahkan teks watermark pdf pada Anotasi Gambar Menggunakan GroupDocs.Watermark untuk Java
 
-Melindungi file PDF dari distribusi tidak sah adalah perhatian harian bagi pengembang. **Watermark PDF Java** memungkinkan Anda menyematkan teks yang terlihat langsung pada anotasi gambar, memastikan setiap halaman membawa merek atau pemberitahuan kerahasiaan Anda. Dalam tutorial ini Anda akan melihat mengapa pendekatan ini dapat diandalkan, apa yang Anda perlukan untuk memulai, dan implementasi langkah demi langkah menggunakan GroupDocs.Watermark untuk Java.
+## Pendahuluan
+Melindungi dokumen PDF Anda dari penggunaan atau distribusi yang tidak sah sangat penting. Pada tutorial ini Anda akan mempelajari **cara menambahkan teks watermark pdf** pada anotasi gambar, sebuah teknik yang melindungi konten Anda sambil mempertahankan tata letak aslinya. Kami akan memandu Anda melalui setiap langkah—dari menyiapkan GroupDocs.Watermark untuk Java hingga menerapkan dan menyimpan PDF yang telah diberi watermark—sehingga Anda dapat melindungi PDF Anda dengan percaya diri.
 
-## Jawaban Cepat
-- **Apa yang dilakukan perpustakaan?** Ia menambahkan, mengedit, atau menghapus watermark pada file PDF, Word, Excel, dan gambar.  
-- **Metode utama mana yang membuat watermark?** `Watermark.add()` diterapkan pada objek `Annotation`.  
-- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi permanen diperlukan untuk produksi.  
-- **Bisakah saya memproses PDF besar?** Ya – API melakukan streaming halaman, menangani file > 500 MB tanpa memuat seluruh dokumen ke memori.  
-- **Apakah solusi ini thread‑safe?** Semua metode publik bersifat stateless, sehingga Anda dapat menjalankan beberapa instance secara paralel dengan aman.
+### Jawaban Cepat
+- **Perpustakaan apa yang digunakan?** GroupDocs.Watermark untuk Java  
+- **Kata kunci utama yang ditargetkan panduan ini?** add text watermark pdf  
+- **Apakah saya memerlukan lisensi?** Lisensi sementara atau penuh diperlukan untuk penggunaan produksi  
+- **Bisakah saya melindungi pdf dengan watermark pada file besar?** Ya, pemrosesan batch dan manajemen memori yang tepat membantu  
+- **Apakah memungkinkan menghapus watermark pdf java nanti?** Ya, GroupDocs.Watermark menyediakan API penghapusan  
 
-## Apa itu watermark pdf java?
-`watermark pdf java` mengacu pada kemampuan menambahkan watermark visual ke dokumen PDF dari kode Java, biasanya menggunakan perpustakaan seperti GroupDocs.Watermark. Ini membantu menegakkan kepemilikan, kerahasiaan, atau branding langsung di dalam file sambil mempertahankan tata letak asli dan memungkinkan kontrol terperinci atas tampilan dan penempatan.
+## Apa itu “add text watermark pdf”?
+Menambahkan teks watermark pdf berarti menyisipkan teks semi‑transparan (misalnya, “Confidential”) langsung ke halaman PDF atau elemen tertentu seperti anotasi gambar. Isyarat visual ini menghalangi penyalinan tidak sah dan secara jelas menandai kepemilikan dokumen.
 
-## Mengapa menggunakan GroupDocs.Watermark untuk Java?
-GroupDocs.Watermark mendukung **lebih dari 50 format input dan output**, memproses PDF berukuran ratusan halaman dalam waktu kurang dari 2 detik pada perangkat keras standar, dan tidak memerlukan pemasangan penampil PDF lengkap. Mesin yang sadar anotasi ini mempertahankan tata letak asli sambil menyisipkan watermark teks dengan opasitas yang dapat disesuaikan, rotasi, dan gaya font, menjadikannya pilihan cepat dan andal untuk watermark tingkat perusahaan.
-
-## Prasyarat
-- **Java Development Kit (JDK)** 8 atau lebih tinggi.  
-- **Maven** (atau penyertaan JAR manual) untuk manajemen dependensi.  
-- Pemahaman dasar tentang struktur PDF dan konsep pemrograman Java.  
-
-## Apa saja prasyarat untuk watermark PDF di Java?
-Anda memerlukan JDK yang kompatibel, Maven (atau file JAR), dan lisensi GroupDocs.Watermark yang valid. Perpustakaan ini berjalan pada sistem operasi apa pun yang mendukung Java 8+, dan berfungsi dengan Java 11, 17, serta rilis LTS yang lebih baru. Selain itu, pastikan proyek Anda memiliki memori heap yang cukup (setidaknya 2 GB) untuk memproses PDF besar dan Anda memiliki izin menulis ke direktori output.
-
-## Menyiapkan GroupDocs.Watermark untuk Java
-Sebelum menulis kode apa pun, tambahkan perpustakaan ke proyek Anda.
+## Mengapa menggunakan GroupDocs.Watermarkasi, dan bekerja pada semua versi Java utama. Ia juga menyertakan lisensi bawaan, pemrosesan batch, dan optimasi kinerja—sempurna untuk perlind##atermark untuk Java
+Masukkan **GroupDocs.Watermark** ke dalam proyek Java Anda dengan mengikuti instruksi berikut:
 
 ### Pengaturan Maven
-Tambahkan berikut ke file `pom.xml` Anda:
+Tambahkan berikut ini ke file `pom.xml` Anda:
 ```xml
 <repositories>
    <repository>
@@ -114,15 +52,14 @@ Tambahkan berikut ke file `pom.xml` Anda:
 ```
 
 ### Unduhan Langsung
-Alternatifnya, unduh versi terbaru dari [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Sebagai alternatif, unduh versi terbaru dari [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 #### Akuisisi Lisensi
-- **Free Trial** – jelajahi fitur inti tanpa biaya.  
-- **Temporary License** – buka semua kemampuan selama pengembangan.  
-- **Purchase** – dapatkan lisensi permanen untuk penggunaan produksi dan dukungan premium.
+ License** – buka semua kemampuan selama pengembangan.  
+- **Purchase** – dapatkan lisensi permanen untuk produksi dan dukungan premium.
 
 ### Inisialisasi Dasar
-`Watermark` adalah kelas titik masuk yang memuat dokumen, menerapkan objek watermark, dan menyimpan hasilnya.
+Untuk mulai menggunakan GroupDocs.Watermark:
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -139,16 +76,10 @@ public class WatermarkDemo {
 }
 ```
 
-## Cara menambahkan watermark teks ke anotasi gambar PDF menggunakan GroupDocs.Watermark untuk Java?
-`Watermark.load()` memuat dokumen PDF ke dalam API Watermark untuk diproses. `TextWatermark` mewakili watermark teks dengan font, ukuran, warna, opasitas, dan rotasi yang dapat disesuaikan. `ImageAnnotation` adalah anotasi PDF yang berisi gambar tersemat, yang dapat menjadi target watermarking. `annotation.addWatermark()` menempelkan watermark yang dibuat ke anotasi, dan `watermark.save()` menulis dokumen yang telah dimodifikasi ke jalur yang ditentukan.
+## Cara menambahkan teks watermark pdf ke Anotasi Gambar PDF
+Berikut adalah panduan langkah‑demi‑langkah yang menunjukkan secara tepat cara menyisipkan teks watermark ke anotasi gambar.
 
-Muat PDF Anda dengan `Watermark.load("sample.pdf")`, buat instance `TextWatermark`, iterasi setiap `ImageAnnotation`, dan panggil `annotation.addWatermark(textWatermark)`. Akhirnya, simpan dokumen yang dimodifikasi dengan `watermark.save("output.pdf")`. Alur singkat ini menangani sejumlah anotasi dalam satu kali proses dan mempertahankan metadata anotasi asli.
-
-### Menambahkan Watermark Teks ke Anotasi Gambar PDF
-Bagian berikut menjelaskan setiap langkah.
-
-#### Langkah 1: Muat Dokumen PDF
-Buka file PDF target sehingga API dapat memeriksa objek anotasinya.
+### Langkah 1: Muat Dokumen PDF
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -159,8 +90,7 @@ try (Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document
 }
 ```
 
-#### Langkah 2: Buat Watermark Teks
-`TextWatermark` mewakili watermark teks dengan font, ukuran, warna, opasitas, dan rotasi yang dapat disesuaikan.
+### Langkah 2: Buat Teks Watermark
 ```java
 import com.groupdocs.watermark.contents.PdfAnnotation;
 import com.groupdocs.watermark.watermarks.TextWatermark;
@@ -176,8 +106,7 @@ textWatermark.setSizingType(SizingType.ScaleToParentDimensions);
 textWatermark.setScaleFactor(0.5);
 ```
 
-#### Langkah 3: Terapkan Watermark ke Anotasi
-`ImageAnnotation` adalah anotasi PDF yang berisi gambar tersemat, yang dapat menjadi target watermarking.
+### Langkah 3: Terapkan Watermark ke Anotasi Gambar
 ```java
 import com.groupdocs.watermark.contents.PdfPage;
 
@@ -191,63 +120,69 @@ for (PdfPage page : watermarker.getContent().getPages()) {
 }
 ```
 
-#### Langkah 4: Simpan PDF yang Diberi Watermark
-`watermark.save()` menulis dokumen yang telah dimodifikasi ke jalur yang ditentukan.
+### Langkah 4: Simpan PDF yang Diberi Watermark
 ```java
 watermarker.save("YOUR_DOCUMENT_DIRECTORY/watermarked_document.pdf");
 System.out.println("Document saved with watermark.");
 ```
 
 ## Masalah Umum dan Solusinya
-- **Missing Dependencies** – Verifikasi bahwa semua artefak GroupDocs terdaftar di `pom.xml`.  
-- **File Path Issues** – Gunakan jalur absolut atau `Paths.get()` untuk menghindari kejutan jalur relatif.  
-- **Unsupported Annotation Types** – API saat ini menangani `ImageAnnotation`, `TextAnnotation`, dan `StampAnnotation`; tipe lain memerlukan penanganan khusus.
+- **Missing Dependencies** – Verifikasi bahwa setiap entri `<dependency>` di `pom.xml` cocok dengan versi yang ditampilkan di atas.  
+- **File Path Issues** – Gunakan jalur absolut atau pastikan direktori kerja mengarah ke `YOUR_DOCUMENT_DIRECTORY`.  
+- **Unsupported Formats** – GroupDocs.Watermark mendukung PDF, DOCX, PPTX, dan beberapa tipe gambar; format lain akan memicu pengecualian.  
+- **remove watermark pdf java** – Jika Anda perlu menghapus watermark nanti, gunakan `watermarker.removeWatermarks()` sebelum menyimpan dokumen.
 
 ## Aplikasi Praktis
-Menambahkan watermark teks ke anotasi gambar PDF sangat berguna untuk:
-1. **Legal Documents** – Tandai kontrak dengan “Confidential – For Internal Use Only”.  
-2. **Confidential Reports** – Cegah kebocoran tidak sengaja dengan menyematkan label perusahaan.  
-3. **Marketing Materials** – Beri merek pada PDF promosi dengan overlay logo‑teks yang halus.  
-4. **Academic Drafts** – Tunjukkan “Draft – Do Not Distribute” pada makalah penelitian sebelum tinjauan sejawat.
+Menambahkan teks watermark pdf sangat berguna untuk:
+1. **Legal Documents** – Tandai kontrak sebagai “Confidential”.  
+2. **Internal Reports** – Cegah distribusi eksternal yang tidak disengaja.  
+3. **Marketing Assets** – Beri merek pada PDF dengan slogan perusahaan.  
+4. **Academic Drafts** – Tampilkan status draft sebelum tinjauan sejawat.
 
 ## Pertimbangan Kinerja
-- **Batch Processing** – Kelompokkan beberapa PDF ke dalam satu thread pool untuk meminimalkan overhead JVM.  
-- **Memory Management** – Perpustakaan melakukan streaming halaman, jadi alokasikan setidaknya 2 GB heap untuk file yang lebih besar dari 200 MB.  
-- **Watermark Settings** – Opasitas yang lebih rendah (mis., 30 %) mengurangi kekacauan visual sambil tetap dapat terdeteksi.
+- **Batch Processing** – Loop melalui kumpulan PDF dan gunakan kembali satu instance `Watermarker` bila memungkinkan.  
+- **Memory Management** – Untuk file besar, tingkatkan heap JVM (`-Xmx2g` atau lebih) dan tutup `Watermarker` dalam blok try‑with‑resources seperti yang ditunjukkan.  
+- **Optimize Watermark Settings** – Sesuaikan `setScaleFactor` dan transparansi untuk menyeimbangkan visibilitas dengan ukuran file.
+
+## Bagian FAQ
+1. **Can I add watermarks to other types of annotations?**  
+   Yes, you can customize the watermarking process for different annotation categories such as text, link, or shape annotations.  
+2. **Is there a limit on the number of watermarks per page?**  
+   No hard limit, but excessive watermarks may affect readability and processing time.  
+3. **How do I remove a watermark if needed?**  
+   Use GroupDocs.Watermark’s removal API (`watermarker.removeWatermarks()`).  
+4. **Can this method handle encrypted PDFs?**  
+   Yes, provided you supply the correct password when loading the document.  
+5. **What file sizes can be processed?**  
+   Large files are supported; monitor memory usage and consider processing in chunks for very large documents.
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q: Bisakah saya menambahkan watermark ke tipe anotasi lain?**  
-A: Ya, Anda dapat menargetkan `TextAnnotation`, `StampAnnotation`, atau objek anotasi khusus dengan menggunakan metode `addWatermark` yang sama.
+**T: Bagaimana cara melindungi pdf dengan watermark sambil mempertahankan tata letak asli?**  
+J: Dengan menggunakan `TextWatermark` bersama `SizingType.ScaleToParentDimensions` dan mengatur `scaleFactor` yang sesuai, watermark menyesuaikan ukuran anotasi tanpa merusak PDF.
 
-**Q: Apakah ada batas berapa banyak watermark yang dapat saya tempatkan pada satu halaman?**  
-A: Tidak ada batas keras, tetapi pertahankan total opasitas di bawah 70 % untuk menjaga keterbacaan dan menghindari penurunan kinerja.
+**T: Apakah ada cara menghapus watermark dari PDF secara programatis menggunakan Java?**  
+J: Ya, panggil `watermarker.removeWatermarks()` sebelum menyimpan dokumen. Ini merupakan pendekatan yang direkomendasikan untuk skenario “remove watermark pdf java”.
 
-**Q: Bagaimana cara menghapus watermark setelah diterapkan?**  
-A: Gunakan `annotation.removeWatermark(watermarkId)` atau panggil `Watermark.removeAll()` untuk menghapus semua watermark dari dokumen.
+**T: Apakah GroupDocs.Watermark mendukung PDF yang dilindungi password?**  
+J: Tentu saja. Berikan password ke `PdfLoadOptions` saat menginisialisasi `Watermarker`.
 
-**Q: Apakah perpustakaan menangani PDF yang dilindungi kata sandi?**  
-A: Ya – berikan kata sandi saat memuat dokumen: `Watermark.load("secure.pdf", "myPassword")`.
+**T: Versi Java apa yang kompatibel dengan GroupDocs.Watermark terbaru?**  
+J: Perpustakaan ini bekerja dengan JDK 8 dan yang lebih baru, termasuk Java 11, 17, dan 21.
 
-**Q: Berapa ukuran file maksimum yang didukung?**  
-A: API dapat memproses file hingga 2 GB pada JVM 64‑bit; file yang lebih besar harus dibagi menjadi bagian sebelum watermarking.
+**T: Bisakah saya memproses puluhan PDF dalam satu kali jalan?**  
+J: Ya. Bungkus langkah pemuatan, penambahan watermark, dan penyimpanan dalam sebuah loop; gunakan kembali konfigurasi `Watermarker` yang sama untuk meningkatkan kinerja.
 
-## Sumber Daya
-- [Dokumentasi GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)
-- [Referensi API](https://reference.groupdocs.com/watermark/java)
-- [Unduh GroupDocs.Watermark untuk Java](https://releases.groupdocs.com/watermark/java/)
-- [Repositori GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Forum Dukungan Gratis](https://forum.groupdocs.com/c/watermark/10)
-- [Aplikasi Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
+## Kesimpulan
+Anda kini memiliki panduan lengkap dan siap produksi untuk **add text watermark pdf** pada anotasi gambar menggunakan GroupDocs.Watermark untuk Java. Dengan mengikuti langkah‑langkah di atas, Anda dapat melindungi dokumen sensitif, memberi merek pada materi pemasaran, dan mengamankan draft akademik—semua sambil menjaga kode tetap bersih dan mudah dipelihara. Jelajahi fitur tambahan seperti watermark gambar, teks din OCR untuk memperluas strategi perlindungan PDF Anda.
 
 ---
 
-**Terakhir Diperbarui:** 2026-07-30  
-**Diuji Dengan:** GroupDocs.Watermark 23.9 untuk Java  
-**Penulis:** GroupDocs
-
-## Tutorial Terkait
-
-- [Cara Menambahkan Watermark Teks ke PDF Menggunakan GroupDocs.Watermark untuk Java (Panduan 2023)](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-java/)
-- [Cara Menambahkan Watermark Teks dan Gambar ke Halaman PDF Tertentu Menggunakan GroupDocs.Watermark untuk Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Akses dan Iterasi Artefak PDF Menggunakan GroupDocs.Watermark di Java untuk Watermark Dokumen](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
+**Terakhir Diperbarui:** 2026-01-21  
+**Diuji DenganSumber Daya**
+- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](httpshttps://reference.groupdocs.com/watermark/java)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)

@@ -1,213 +1,42 @@
 ---
-date: '2026-07-30'
-description: Naučte se, jak nastavit licenci pro GroupDocs.Watermark v Javě, efektivně
-  chránit své dokumenty a efektivně spravovat využití.
+date: '2026-01-21'
+description: Naučte se, jak nastavit licenci pro GroupDocs Watermark v Javě, včetně
+  toho, jak aplikovat vodoznak na PDF a spravovat používání pomocí měřené licence.
 keywords:
-- how to set license
-- GroupDocs Watermark Java
-- metered licensing Java
-lastmod: '2026-07-30'
-og_description: Jak nastavit licenci pro GroupDocs.Watermark v Javě. Tento průvodce
-  vás provede instalací SDK, získáním metered key a konfigurací licence pro zabezpečení
-  vašich dokumentů.
-og_image_alt: 'Guide: Set license for GroupDocs Watermark in Java'
-og_title: Jak nastavit licenci pro GroupDocs Watermark v Javě
-schemas:
-- author: GroupDocs
-  dateModified: '2026-07-30'
-  description: Learn how to set license for GroupDocs.Watermark in Java, protect your
-    documents effectively and manage usage efficiently.
-  headline: How to Set License for GroupDocs Watermark in Java
-  type: TechArticle
-- description: Learn how to set license for GroupDocs.Watermark in Java, protect your
-    documents effectively and manage usage efficiently.
-  name: How to Set License for GroupDocs Watermark in Java
-  steps:
-  - name: Define the public and private keys
-    text: Enter the keys you received after registering for a temporary license. `Metered`
-      is the GroupDocs.Watermark class that handles metered licensing and usage tracking.
-      *Place your keys in a secure location (environment variables, encrypted config,
-      etc.) before using them in code.*
-  - name: Create an instance of the Metered class
-    text: Instantiate the `Metered` object with your keys. This object will be passed
-      to the watermark engine during initialization.
-  - name: Set the metered license using the provided keys
-    text: Call the `setLicense` method (or the equivalent API call) with your public
-      and private keys. Once set, all subsequent watermark operations will be billed
-      according to your usage. > **Pro tip:** Keep the keys out of source control.
-      Use a secrets manager or encrypted properties file to avoid accidenta
-  type: HowTo
-- questions:
-  - answer: A temporary license is time‑limited and ideal for evaluation, while a
-      perpetual license provides unlimited use without recurring fees.
-    question: What is the difference between a temporary and a perpetual license?
-  - answer: Yes—replace the metered key initialization with a call to `engine.setLicense("path/to/license/file")`.
-    question: Can I switch from a metered license to a perpetual one without code
-      changes?
-  - answer: The SDK falls back to offline mode; watermarking continues but usage won’t
-      be reported until connectivity is restored.
-    question: What happens if the metered service is unreachable?
-  - answer: The SDK can handle files up to 1 GB; larger files should be split or processed
-      in streaming mode.
-    question: Are there file‑size limits for watermarking?
-  - answer: It works on any platform that supports Java 8+, including Windows, Linux,
-      and macOS.
-    question: Does the metered license work on all operating systems?
-  type: FAQPage
-tags:
-- set license
-- GroupDocs Watermark
-- Java licensing
-- metered license
-- document security
-title: Jak nastavit licenci pro GroupDocs Watermark v Javě
+- metered license GroupDocs Watermark Java
+- GroupDocs.Watermark setup Java
+- Java document security watermarks
+title: Jak nastavit licenci pro GroupDocs Watermark (měřený) v Javě
 type: docs
 url: /cs/java/licensing-configuration/set-metered-license-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Jak nastavit licenci pro GroupDocs Watermark v Javě
+# Jak nastavit licenci pro GroupDocs Watermark (měřenou) v Javě
 
-Ochrana duševního vlastnictví je pro moderní aplikace nejvyšší prioritou a vodoznaky jsou osvědčený způsob, jak odradit neoprávněné šíření. Pokud používáte **GroupDocs.Watermark pro Javu**, budete potřebovat licenci, která dokáže sledovat využití a škálovat s poptávkou. Tento tutoriál vysvětluje **jak nastavit licenci** pro GroupDocs.Watermark v Javě, od instalace SDK až po konfiguraci měřeného klíče, který hlásí spotřebu zpět službě.
+Ochrana duševního vlastnictví je pro moderní podniky nejvyšší prioritou a vodoznaky jsou osvědčený způsob, jak toho dosáhnout. V tomto tutoriálu se naučíte **jak nastavit licenci** pro GroupDocs.Watermark pomocí měřeného přístupu, takže můžete **přidávat vodoznak do PDF** souborů a mít plnou kontrolu nad jejich používáním. Provedeme vás všemi kroky od předpokladů až po reálné scénáře použití a ukážeme vám přesně, kde **použít veřejné a soukromé klíče** k aktivaci licence.
 
 ## Rychlé odpovědi
-- **Co je měřená licence?** Jedná se o licenci založenou na využití, která zaznamenává každé volání API, což vám umožňuje platit jen za to, co spotřebujete.  
-- **Potřebuji nejprve zkušební verzi?** Ano, můžete požádat o dočasnou licenci na stránkách GroupDocs k vyzkoušení produktu.  
-- **Jaká verze Javy je požadována?** Java 8 nebo novější; SDK je zkompilováno pro JDK 8+.  
-- **Mohu později přejít na trvalou licenci?** Rozhodně – stačí nahradit měřené klíče souborem s trvalou licencí.  
-- **Je nastavení kompatibilní s Maven?** Ano, Maven koordináty jsou poskytnuty pro bezproblémové řízení závislostí.
+- **Co je měřená licence?** Model licencování založený na využití, který sleduje každé volání API.  
+- **Potřebuji licenční soubor?** Ne – aktivujete pomocí veřejných a soukromých klíčů.  
+- **Jaká verze Javy je vyžadována?** Java 8 nebo vyšší.  
+- **Mohu přidávat vodoznaky do PDF dokumentů?** Ano, API podporuje PDF, DOCX, PPTX a obrázky.  
+- **Je tato metoda bezpečná?** Ano, klíče jsou přenášeny přes HTTPS a nikdy nejsou uloženy v prostém textu.
 
-## Co je měřená licence pro GroupDocs Watermark?
-Měřená licence je cloud‑povolení poskytované společností GroupDocs, které zaznamenává každou operaci vodoznakování provedenou SDK. Každé volání API je zaznamenáno na licenčním serveru GroupDocs, což umožňuje fakturaci podle skutečného využití (pay‑as‑you‑go). Tento model poskytuje vývojářům v reálném čase přehled o spotřebě a pomáhá kontrolovat náklady při zachování plného přístupu ke všem funkcím.
+## Co je měřená licence a proč ji používat?
+Měřená licence vám umožňuje platit jen za to, co skutečně spotřebujete, což ji činí ideální pro SaaS nebo mikro‑službové architektury. Poskytuje funkce **vodoznaku pro zabezpečení dokumentů** bez zátěže správy tradičních licenčních souborů a můžete okamžitě škálovat své využití nahoru i dolů.
 
-## Proč používat měřenou licenci s GroupDocs Watermark?
-GroupDocs.Watermark podporuje více než padesát vstupních a výstupních formátů – včetně PDF, DOCX, PPTX a různých typů obrázků – a dokáže zpracovat soubory až do 1 GB, aniž by načítal celý dokument do paměti, což zachovává výkon. Používáním měřené licence platíte jen za operace, které skutečně spustíte, což umožňuje řešení škálovat nákladově efektivně a zároveň zachovat plný přístup ke všem funkcím.
+## Předpoklady
+Předtím, než začnete, ujistěte se, že máte:
 
-## Požadavky
-- **GroupDocs.Watermark pro Javu** verze 24.11 nebo novější.  
-- Java Development Kit (JDK) 8 nebo novější, nainstalovaný a nakonfigurovaný.  
-- Základní znalost Maven nebo ručního správy JAR souborů.  
-- Dočasný nebo trvalý licenční klíč z portálu GroupDocs.
+1. **GroupDocs.Watermark for Java** ≥ 24.11 (nejnovější verze).  
+2. **JDK 8+** nainstalovaný a `JAVA_HOME` nastavený.  
+3. **Veřejné a soukromé klíče** získané z vašeho GroupDocs účtu (použijete je v kódu).  
 
-## Jak nastavit měřenou licenci pro GroupDocs Watermark v Javě?
-Nahrajte své veřejné a soukromé klíče, vytvořte instanci `Metered` a aplikujte licenci – vše ve třech stručných krocích. Tento přístup zajišťuje, že každý požadavek na vodoznakování je započítán na váš účet, což vám poskytuje úplnou přehlednost o spotřebě.
-
-### Krok 1: Definujte veřejný a soukromý klíč
-Zadejte klíče, které jste obdrželi po registraci pro dočasnou licenci.
-
-`Metered` je třída GroupDocs.Watermark, která zpracovává měřenou licenci a sledování využití.  
-*Umístěte své klíče na bezpečné místo (proměnné prostředí, šifrovaná konfigurace atd.) před jejich použitím v kódu.*
-
-### Krok 2: Vytvořte instanci třídy Metered
-Vytvořte objekt `Metered` s vašimi klíči. Tento objekt bude předán vodotiskovému enginu během inicializace.
-
-```text
-Metered metered = new Metered(System.getenv("GROUPDOCS_PUBLIC_KEY"),
-                               System.getenv("GROUPDOCS_PRIVATE_KEY"));
-```
-
-### Krok 3: Nastavte měřenou licenci pomocí poskytnutých klíčů
-Zavolejte metodu `setLicense` (nebo ekvivalentní API volání) s vašimi veřejnými a soukromými klíči. Po nastavení budou všechny následné operace vodoznakování účtovány podle vašeho využití.
-
-```text
-WatermarkEngine engine = new WatermarkEngine();
-engine.setMeteredLicense(metered);
-```
-
-> **Pro tip:** Uchovávejte klíče mimo správu zdrojového kódu. Použijte správce tajemství nebo šifrovaný soubor s vlastnostmi, aby nedošlo k neúmyslnému odhalení.
-
-## Nastavení GroupDocs.Watermark pro Javu
+## Nastavení GroupDocs.Watermark pro Java
 
 ### Informace o instalaci
-
-Integrujte GroupDocs.Watermark do svého projektu pomocí Maven nebo stažením JAR souboru přímo.
-
-**Nastavení Maven:**  
-Přidejte následující konfiguraci do souboru `pom.xml`:
-
-```xml
-<dependency>
-    <groupId>com.groupdocs</groupId>
-    <artifactId>watermark</artifactId>
-    <version>24.11</version>
-</dependency>
-```
-
-**Přímé stažení:**  
-Download the latest version from [GroupDocs.Watermark pro Java – vydání](https://releases.groupdocs.com/watermark/java/).
-
-### Získání licence
-
-Pro odemčení plné funkčnosti získáte bezplatnou zkušební verzi nebo dočasnou licenci:
-
-- Zaregistrujte se na [webových stránkách GroupDocs](https://purchase.groupdocs.com/temporary-license/), abyste mohli začít.  
-- Po získání klíčů je integrujte do svého projektu, jak je ukázáno v průvodci implementací.
-
-### Základní inicializace a nastavení
-
-Jakmile je SDK přidáno do vašeho projektu, importujte potřebné jmenné prostory a vytvořte instanci vodotiskového enginu, jak je demonstrováno v kódech výše.
-
-## Tipy pro řešení problémů
-- **Neplatné klíče:** Zkontrolujte, že veřejný a soukromý klíč jsou přesně shodné; jediná překlep zabrání aktivaci.  
-- **Chyby cesty k souboru licence:** Pokud dáváte přednost souborové licenci, ujistěte se, že cesta k souboru je absolutní nebo správně rozpoznána relativně k pracovnímu adresáři.  
-- **Problémy se sítí:** Měřená licence vyžaduje odchozí HTTPS volání; ověřte, že váš firewall povoluje provoz na `api.groupdocs.com`.
-
-## Praktické aplikace
-1. **Zabezpečení dokumentů:** Přidejte viditelné nebo neviditelné vodoznaky do PDF, Word dokumentů a obrázků, aby byly chráněny citlivé firemní údaje.  
-2. **Sledování využití:** Generujte zprávy o tom, kolik dokumentů bylo denně opatřeno vodoznakem, což je užitečné pro rozpočtování a soulad s předpisy.  
-3. **Integrace s CMS:** Automatizujte vkládání vodoznaků během workflow publikování obsahu, přičemž licence je automaticky vynucována.
-
-## Úvahy o výkonu
-
-**Optimalizace výkonu:**  
-- Aplikujte vodoznaky jen když je to nutné; přeskočte zpracování již chráněných souborů.  
-- Pro velké dávky znovu použijte stejnou instanci `WatermarkEngine`, abyste se vyhnuli opakovanému zatížení inicializací.  
-
-**Nejlepší postupy:**  
-- Sledujte využití haldy JVM při zpracování PDF s více stovkami stránek; zvažte streamingové API, pokud se paměť stane úzkým místem.  
-- Povolení logování na úrovni `INFO` pro zachycení licenčních volání, aniž byste zahltili konzoli.
-
-## Závěr
-
-V tomto průvodci jsme pokryli **jak nastavit licenci** pro GroupDocs.Watermark v Javě, od instalace Maven až po konfiguraci měřeného klíče. Dodržením kroků získáte přesné sledování využití, flexibilní fakturaci a robustní ochranu dokumentů – vše bez kompromisů ve výkonu.
-
-**Další kroky:**  
-- Experimentujte s různými styly vodoznaků (text, obrázek, diagonální).  
-- Prozkoumejte pokročilé funkce, jako jsou podmíněné vodoznaky založené na rolích uživatelů.  
-- Prohlédněte si analytický dashboard GroupDocs pro sledování trendů spotřeby.
-
-Připraveni zabezpečit své dokumenty? Implementujte řešení ještě dnes a užívejte si klid, vědomí, že vaše aktiva jsou chráněna a náklady na licence jsou transparentní.
-
-## Často kladené otázky
-
-**Q: Jaký je rozdíl mezi dočasnou a trvalou licencí?**  
-A: Dočasná licence je časově omezená a ideální pro vyhodnocení, zatímco trvalá licence poskytuje neomezené používání bez opakujících se poplatků.
-
-**Q: Mohu přejít z měřené licence na trvalou bez změn kódu?**  
-A: Ano – nahraďte inicializaci měřeného klíče voláním `engine.setLicense("path/to/license/file")`.
-
-**Q: Co se stane, pokud je měřená služba nedostupná?**  
-A: SDK přejde do offline režimu; vodoznakování pokračuje, ale využití nebude hlášeno, dokud se spojení neobnoví.
-
-**Q: Existují omezení velikosti souboru pro vodoznakování?**  
-A: SDK zvládne soubory až do 1 GB; větší soubory by měly být rozděleny nebo zpracovány ve streamingovém režimu.
-
-**Q: Funguje měřená licence na všech operačních systémech?**  
-A: Funguje na jakékoli platformě, která podporuje Java 8+, včetně Windows, Linuxu a macOS.
-
----
-
-**Poslední aktualizace:** 2026-07-30  
-**Testováno s:** GroupDocs.Watermark 24.11 for Java  
-**Autor:** GroupDocs  
-
-**Zdroje**
-- [Dokumentace](https://docs.groupdocs.com/watermark/java/)
-- [Reference API](https://reference.groupdocs.com/watermark/java)
-- [Stáhnout](https://releases.groupdocs.com/watermark/java/)
-- [Repozitář na GitHubu](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Bezplatné fórum podpory](https://forum.groupdocs.com/c/watermark/10)
-- [Získání dočasné licence](https://purchase.groupdocs.com/temporary-license/)
+Integrujte GroupDocs.Watermark do svého Maven projektu:
 
 ```xml
 <repositories>
@@ -227,6 +56,17 @@ A: Funguje na jakékoli platformě, která podporuje Java 8+, včetně Windows
 </dependencies>
 ```
 
+> **Tip:** Stejná URL repozitáře se používá i pro možnost přímého stažení níže.
+
+#### Přímé stažení
+Stáhněte nejnovější JAR z oficiální stránky vydání: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+
+### Získání licence
+Pro odemknutí prémiových funkcí potřebujete dočasnou nebo zkušební licenci. Zaregistrujte se na [webu GroupDocs](https://purchase.groupdocs.com/temporary-license/) a zkopírujte veřejný/soukromý klíč, který vám poskytnou.
+
+### Základní inicializace
+Jakmile je knihovna ve vaší classpath, můžete ji inicializovat:
+
 ```java
 import com.groupdocs.watermark.License;
 
@@ -239,24 +79,80 @@ public class InitializeWatermark {
 }
 ```
 
+> **Proč je to důležité:** I když používáte měřenou licenci, inicializace objektu `License` zajišťuje, že SDK je připraveno přijmout aktivaci založenou na klíčích později v pracovním postupu.
+
+## Průvodce implementací
+
+### Nastavení měřené licence
+
+#### Krok 1: Definujte veřejný a soukromý klíč
 ```java
 // Step 1: Define the public and private keys for the metered license.
 String publicKey = "*****"; // Replace with your actual public key
 String privateKey = "*****"; // Replace with your actual private key
 ```
+Tyto klíče **používají veřejné a soukromé klíče** k bezpečné identifikaci vašeho účtu.
 
+#### Krok 2: Vytvořte instanci třídy Metered
 ```java
 // Step 2: Create an instance of Metered class.
 Metered metered = new Metered();
 ```
+Třída `Metered` zajišťuje veškeré sledování využití na pozadí.
 
+#### Krok 3: Nastavte měřenou licenci pomocí poskytnutých klíčů
 ```java
 // Step 3: Set the metered license using the provided keys.
 metered.setMeteredKey(publicKey, privateKey);
 ```
+ **přid:** zapisovány na disk v prostém textu.  
+- **Flexibilita:** Přepínání prostředí (dev, test, prod) bez kopírování souborů.  
+- **Škálovatelnost:** Ideální pro cloud‑native nasazení, kde jsou kontejnery neměnné.
 
-## Související tutoriály
+## Praktické aplikace
+1. **Zabezpečení dokumentů:** Vložte viditelný nebo neviditelný vodoznak do PDF, aby se odradila neautorizovaná distribuce.  
+2. **Sledování využití:** Sledujte, kolik dokumentů je zpracováno každý měsíc, což vám pomůže zůstat v rámci vaší měřené kvóty.  
+3. **Integrace CMS:** Automaticky **přidávejte vodoznak do PDF** ke každému nahranému souboru v systému pro správu obsahu.
 
-- [Tutoriály o licencování a konfiguraci GroupDocs.Watermark pro Java](/watermark/java/licensing-configuration/)
-- [Jak nastavit licencování GroupDocs.Watermark v Javě: Kompletní průvodce](/watermark/java/licensing-configuration/groupdocs-watermark-licensing-java-guide/)
-- [Průvodce vodoznakováním v Javě: Zabezpečte dokumenty pomocí GroupDocs.Watermark API](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
+## Úvahy o výkonu
+- **Přidávejte vodoznak jen když je potřeba** – vyhněte se zbytečnému zpracování velkých dávek.  
+- **Znovu použijte instanci `Metered`** napříč požadavky, aby se snížila zátěž tvorby objektů.  
+- **Sledujte paměť** při zpracování vysoce rozlišených obrázků; SDK poskytuje streamingové API pro udržení nízké paměťové stopy.
+
+## Časté problémy a řešení
+| Problém | Řešení |
+|-------|----------|
+| Klíče jsou odmítnuty | Zkontrolujte, že v řetězcích nejsou žádné nadbytečné mezery nebo zalomení řádků. |
+| Licence není aktivována | Ujistěte se, že jste zavolali `metered.setMeteredKey(...)` **před** jakoukoliv operací vodoznaku. |
+| Chyby nedostatku paměti u velkých PDF | Použijte `WatermarkOptions.setUseMemoryCache(true)`, aby se zpracování přesunulo na disk. |
+
+## Často kladené otázky
+
+**á licence a proč bych ji měl používat?**  
+A: Měřená licence sleduje každé volání API, což vám umožní platit jen za skutečné využití a snadno škálovat vaši aplikaci.
+
+**Q: Mohu přepínat mezi zkušebním licenčním souborem a měřeným klíčem?**  
+A: Ano. Stačí zavolat `license.setLicense("path/to/file.lic")` pro zkušební verzi a později ji nahradit voláním `metered.setMeteredKey(...)`.
+
+**Q: Co se stane, pokud je veřejný nebo soukromý klíč zadán nesprávně?**  
+A: SDK vyhodí výjimku autentizace a zablokuje přístup k prémiovým funkcím.
+
+**Q: Existují omezení, kolik vodoznaků mohu přidat za měsíc?**  
+A: Omezení závisí na smlouvě s GroupDocs; podívejte se na svůj dashboard pro přesné kvóty.
+
+**Q: Funguje to i s obrázkovými soubory, nejen s PDF?**  
+A: Rozhodně. Stejné API podporuje JPEG, PNG, BMP a další běžné formáty obrázků.
+
+## Zdroje
+- [Dokumentace](https://docs.groupdocs.com/watermark/java/)
+- [Reference API](https://reference.groupdocs.com/watermark/java)
+- [Stažení](https://releases.groupdocs.com/watermark/java/)
+- [Úložiště GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Bezplatné fórum podpory](https://forum.groupdocs.com/c/watermark/10)
+- [Získání dočasné licence](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Poslední aktualizace:** 2026-01-21  
+**Testováno s:** GroupDocs.Watermark 24.11 pro Java  
+**Autor:** GroupDocs

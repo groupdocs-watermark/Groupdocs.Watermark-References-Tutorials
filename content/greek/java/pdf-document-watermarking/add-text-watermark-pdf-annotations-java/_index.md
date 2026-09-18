@@ -1,100 +1,44 @@
 ---
-date: '2026-07-30'
-description: Μάθετε πώς να προσθέτετε υδατογράφημα σε PDF με Java προσθέτοντας κείμενο
-  ως υδατογράφημα σε σχολιασμούς εικόνας PDF χρησιμοποιώντας το GroupDocs.Watermark,
-  προστατεύοντας τα έγγραφά σας αποτελεσματικά.
+date: '2026-01-21'
+description: Μάθετε πώς να προσθέτετε υδατογράφημα κειμένου PDF σε σχολιασμούς εικόνας
+  χρησιμοποιώντας το GroupDocs.Watermark για Java, προστατεύοντας αποτελεσματικά τα
+  έγγραφά σας.
 keywords:
-- watermark pdf java
-- add text watermark pdf
-- protect pdf with watermark
-lastmod: '2026-07-30'
-og_description: Προσθήκη υδατογραφήματος σε PDF με Java προσθέτοντας κείμενο ως υδατογράφημα
-  σε σχολιασμούς εικόνας PDF με το GroupDocs.Watermark. Ασφαλίστε τα έγγραφά σας γρήγορα
-  και αξιόπιστα.
-og_image_alt: 'Developer guide: Add text watermark to PDF image annotations using
-  GroupDocs.Watermark for Java'
-og_title: Watermark PDF σε Java – Προσθήκη κειμένου σε σχολιασμούς εικόνας
-schemas:
-- author: GroupDocs
-  dateModified: '2026-07-30'
-  description: Learn how to watermark PDF in Java by adding a text watermark to PDF
-    image annotations using GroupDocs.Watermark, protecting your documents effectively.
-  headline: Watermark PDF in Java – Add Text to Image Annotations
-  type: TechArticle
-- description: Learn how to watermark PDF in Java by adding a text watermark to PDF
-    image annotations using GroupDocs.Watermark, protecting your documents effectively.
-  name: Watermark PDF in Java – Add Text to Image Annotations
-  steps:
-  - name: Load the PDF Document
-    text: Open the target PDF file so the API can inspect its annotation objects.
-  - name: Create the Text Watermark
-    text: '`TextWatermark` represents a textual watermark with customizable font,
-      size, color, opacity, and rotation.'
-  - name: Apply the Watermark to Annotations
-    text: '`ImageAnnotation` is a PDF annotation that contains an embedded image,
-      which can be targeted for watermarking.'
-  - name: Save the Watermarked PDF
-    text: '`watermark.save()` writes the modified document to the specified path.'
-  type: HowTo
-- questions:
-  - answer: Yes, you can target `TextAnnotation`, `StampAnnotation`, or custom annotation
-      objects by using the same `addWatermark` method.
-    question: Can I add watermarks to other annotation types?
-  - answer: No hard limit, but keep the total opacity below 70 % to maintain readability
-      and avoid performance degradation.
-    question: Is there a limit to how many watermarks I can place on a page?
-  - answer: Use `annotation.removeWatermark(watermarkId)` or call `Watermark.removeAll()`
-      to strip every watermark from the document.
-    question: How do I remove a watermark after it’s been applied?
-  - answer: 'Yes – provide the password when loading the document: `Watermark.load("secure.pdf",
-      "myPassword")`.'
-    question: Does the library handle password‑protected PDFs?
-  - answer: The API can process files up to 2 GB on a 64‑bit JVM; larger files should
-      be split into sections before watermarking.
-    question: What is the maximum file size supported?
-  type: FAQPage
-tags:
-- watermark pdf
-- GroupDocs.Watermark
-- Java PDF processing
-- add text watermark
-- protect pdf
-title: Watermark PDF σε Java – Προσθήκη κειμένου σε σχολιασμούς εικόνας
+- Add Text Watermark to PDF
+- Java PDF Watermarking
+- GroupDocs.Watermark for Java
+title: Πώς να προσθέσετε υδατογράφημα κειμένου PDF σε σχολιασμούς εικόνας χρησιμοποιώντας
+  το GroupDocs.Watermark για Java
 type: docs
 url: /el/java/pdf-document-watermarking/add-text-watermark-pdf-annotations-java/
 weight: 1
 ---
 
-# Υδατογράφημα PDF σε Java – Προσθήκη κειμένου σε εικόνες σχολίων
+τη είναι κρίσιμη. Σε αυτό το tutorial θα μάθετε **πώς να προσθέσετε υδατογράφημα κειμένου PDF** σε σχόλια εικόνας, μια τεχνική που διασφαλίζει το περιεχόμενό σας ενώ διατηρεί την αρχική διάταξη. Θα περάσουμε βήμα‑βήμα από τη ρύθμιση του GroupDocs.Watermark για Java μέχρι την να μπορείτε να προστατεύετε τα PDF σας με σιγουριά.
 
-Η προστασία των αρχείων PDF από μη εξουσιοδοτημένη διανομή αποτελεί καθημερινή ανησυχία για τους προγραμματιστές. **Watermark PDF Java** σας επιτρέπει να ενσωματώσετε ορατό κείμενο απευθείας σε εικόνες σχολίων, διασφαλίζοντας ότι κάθε σελίδα φέρει το σήμα ή την ειδοποίηση εμπιστευτικότητας σας. Σε αυτό το σεμινάριο θα δείτε γιατί αυτή η προσέγγιση είναι αξιόπιστη, τι χρειάζεστε για να ξεκινήσετε και μια υλοποίηση βήμα‑βήμα χρησιμοποιώντας το GroupDocs.Watermark για Java.
+### Γρήγορες Απαντήσεις
+- **Ποια βιβλιοθήκη χρησιμοποιείται;** GroupDocs.Watermark για Java  
+- **Ποια είναι η κύρια λέξη‑κλειδί που στοχεύει αυτός ο οδηγός;** add text watermark pdf  
+- **Χρειάζομαι άδεια;** Απαιτείται προσωρινή ή πλήρης άδεια για παραγωγική χρήση  
+- **Μπορώ να προστατεύσω PDF με υδατογράφημα σε μεγάλα αρχεία;** Ναι, η επεξεργασία σε batch και η σωστή διαχείριση μνήμης βοηθούν  
+- **Μπορεί να αφαιρεθεί το υδατογράφημα PDF Java αργότερα;** Ναι, το GroupDocs.Watermark παρέχει APIs αφαίρεσης  
 
-## Γρήγορες Απαντήσεις
-- **Τι κάνει η βιβλιοθήκη;** Προσθέτει, επεξεργάζεται ή αφαιρεί υδατογραφήματα σε PDF, Word, Excel και αρχεία εικόνας.  
-- **Ποια κύρια μέθοδος δημιουργεί το υδατογράφημα;** `Watermark.add()` εφαρμόζεται σε ένα αντικείμενο `Annotation`.  
-- **Χρειάζομαι άδεια για ανάπτυξη;** Μια δωρεάν δοκιμή λειτουργεί για δοκιμές· απαιτείται μόνιμη άδεια για παραγωγή.  
-- **Μπορώ να επεξεργαστώ μεγάλα PDF;** Ναι – το API μεταδίδει τις σελίδες, διαχειριζόμενο αρχεία > 500 MB χωρίς να φορτώνει ολόκληρο το έγγραφο στη μνήμη.  
-- **Είναι η λύση ασφαλής για νήματα (thread‑safe);** Όλες οι δημόσιες μέθοδοι είναι χωρίς κατάσταση, έτσι μπορείτε να εκτελείτε με ασφάλεια πολλαπλές παρουσίες ταυτόχρονα.
-
-## Τι είναι το watermark pdf java;
-`watermark pdf java` αναφέρεται στη δυνατότητα προσθήκης οπτικών υδατογραφημάτων σε έγγραφα PDF από κώδικα Java, συνήθως χρησιμοποιώντας μια βιβλιοθήκη όπως το GroupDocs.Watermark. Βοηθά στην επιβολή ιδιοκτησίας, εμπιστευτικότητας ή σήμανσης απευθείας μέσα στο αρχείο, διατηρώντας την αρχική διάταξη και επιτρέποντας λεπτομερή έλεγχο της εμφάνισης και της τοποθέτησης.
+## Τι σημαίνει “add text watermark pdf”;
+Η προσθήκη υδατογραφήματος κειμένου PDF σημαίνει ενσωμάτωση ημιδιαφανούς κειμένου (π.χ., “Confidential”) απευθείας στις σελίδες PDF ή σε συγκεκριμένα στοιχεία όπως σχόλια εικόνας. Αυτό το οπτικό σήμα αποθαρρύνει την μη εξουσιοδοτημένη αντιγραφή και σηματοδοτεί σαφώς την ιδιοκτησία του εγγράφου.
 
 ## Γιατί να χρησιμοποιήσετε το GroupDocs.Watermark για Java;
-Το GroupDocs.Watermark υποστηρίζει **50+ μορφές εισόδου και εξόδου**, επεξεργάζεται PDF πολλών εκατοντάδων σελίδων σε λιγότερο από 2 δευτερόλεπτα σε τυπικό υλικό, και δεν απαιτεί εγκατεστημένο πλήρες πρόγραμμα προβολής PDF. Η μηχανή του που είναι ενήμερη για σχόλια διατηρεί την αρχική διάταξη ενώ εισάγει κειμενικά υδατογραφήματα με ρυθμιζόμενη αδιαφάνεια, περιστροφή και στυλ γραμματοσειράς, καθιστώντας το μια γρήγορη, αξιόπιστη επιλογή για επιχειρησιακό υδατογράφημα.
+Το GroupDocs.Watermark προσφέρει ένα υψηλού επιπέδου API που αφαιρεί την πολυπλοκότητα των εσωτερικών δομών PDF, υποστηρίζει ευρύ φάσμα τύπων σχολίων και λειτουργεί σε όλες τις κύριες εκδόσεις Java. Περιλαμβάνει επίσης ενσωματωμένη διαχείριση αδειών, επεξεργασία σε batch και βελτιστοποιήσεις απόδοσης—ιδανικό για επιχειρηματική προστασία PDF.
 
 ## Προαπαιτούμενα
-- **Java Development Kit (JDK)** 8 ή νεότερο.  
-- **Maven** (ή χειροκίνητη ένταξη JAR) για διαχείριση εξαρτήσεων.  
-- Βασική εξοικείωση με τη δομή PDF και τις έννοιες προγραμματισμού Java.  
-
-## Ποια είναι τα προαπαιτούμενα για υδατογράφημα PDF σε Java;
-Χρειάζεστε ένα συμβατό JDK, Maven (ή τα αρχεία JAR) και μια έγκυρη άδεια GroupDocs.Watermark. Η βιβλιοθήκη λειτουργεί σε οποιοδήποτε λειτουργικό σύστημα που υποστηρίζει Java 8+, και λειτουργεί με Java 11, 17 και νεότερες εκδόσεις LTS. Επιπλέον, βεβαιωθείτε ότι το έργο σας διαθέτει επαρκή μνήμη heap (τουλάχιστον 2 GB) για την επεξεργασία μεγάλων PDF και ότι έχετε δικαιώματα εγγραφής στον φάκελο εξόδου.
+- **Java Development Kit (JDK)** 8 ή νεότερο  
+- **Maven** (ή χειροκίνητη διαχείριση JAR) για διαχείριση εξαρτήσεων  
+- Εξοικείωση με βασικές έννοιες PDF και σύνταξη Java  
 
 ## Ρύθμιση του GroupDocs.Watermark για Java
-Πριν γράψετε κώδικα, προσθέστε τη βιβλιοθήκη στο έργο σας.
+Ενσωματώστε το **GroupDocs.Watermark** στο έργο Java ακολουθώντας τις παρακάτω οδηγίες:
 
 ### Ρύθμιση Maven
-Προσθέστε τα παρακάτω στο αρχείο `pom.xml` σας:
+Προσθέστε το παρακάτω στο αρχείο `pom.xml` σας:
 ```xml
 <repositories>
    <repository>
@@ -114,15 +58,15 @@ weight: 1
 ```
 
 ### Άμεση Λήψη
-Εναλλακτικά, κατεβάστε την τελευταία έκδοση από [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Εναλλακτικά, κατεβάστε την πιο πρόσφατη έκδοση από [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 #### Απόκτηση Άδειας
-- **Free Trial** – εξερευνήστε τις βασικές λειτουργίες δωρεάν.  
-- **Temporary License** – ξεκλειδώστε όλες τις δυνατότητες κατά την ανάπτυξη.  
-- **Purchase** – αποκτήστε μόνιμη άδεια για χρήση σε παραγωγή και premium υποστήριξη.
+- **Δωρεάν Δοκιμή** – εξερευνήστε βασικές λειτουργίες χωρίς άδεια.  
+- **Προσωρινή Άδεια** – ξεκλειδώστε πλήρεις δυνατότητες κατά την ανάπτυξη.  
+- **Αγορά** – αποκτήστε μόνιμη άδεια για παραγωγή και premium υποστήριξη.
 
 ### Βασική Αρχικοποίηση
-`Watermark` είναι η κλάση εισόδου που φορτώνει ένα έγγραφο, εφαρμόζει αντικείμενα υδατογραφήματος και αποθηκεύει το αποτέλεσμα.
+Για να αρχίσετε να χρησιμοποιείτε το GroupDocs.Watermark:
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -139,16 +83,10 @@ public class WatermarkDemo {
 }
 ```
 
-## Πώς να προσθέσετε κειμενικό υδατογράφημα σε εικόνες σχολίων PDF χρησιμοποιώντας το GroupDocs.Watermark για Java;
-`Watermark.load()` φορτώνει ένα έγγραφο PDF στο Watermark API για επεξεργασία. `TextWatermark` αντιπροσωπεύει ένα κειμενικό υδατογράφημα με προσαρμόσιμη γραμματοσειρά, μέγεθος, χρώμα, αδιαφάνεια και περιστροφή. `ImageAnnotation` είναι ένα σχόλιο PDF που περιέχει ενσωματωμένη εικόνα, η οποία μπορεί να στοχευθεί για υδατογράφημα. `annotation.addWatermark()` προσθέτει το δημιουργημένο υδατογράφημα στο σχόλιο, και `watermark.save()` γράφει το τροποποιημένο έγγραφο στην καθορισμένη διαδρομή.
+## Πώς να προσθέσετε υδατογράφημα κειμένου PDF σε Σχόλια Εικόνας PDF
+Ακολουθεί ένας οδηγός βήμα‑βήμα που δείχνει ακριβώς πώς να ενσωματώσετε υδατογράφημα κειμένου σε σχόλια εικόνας.
 
-Φορτώστε το PDF σας με `Watermark.load("sample.pdf")`, δημιουργήστε μια παρουσία `TextWatermark`, επαναλάβετε για κάθε `ImageAnnotation` και καλέστε `annotation.addWatermark(textWatermark)`. Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο με `watermark.save("output.pdf")`. Αυτή η σύντομη ροή διαχειρίζεται οποιονδήποτε αριθμό σχολίων σε μία μόνο διέλευση και διατηρεί τα αρχικά μεταδεδομένα των σχολίων.
-
-### Προσθήκη Κειμενικού Υδατογραφήματος σε Εικόνες Σχολίων PDF
-Οι παρακάτω ενότητες εξηγούν κάθε βήμα.
-
-#### Βήμα 1: Φόρτωση του Εγγράφου PDF
-Ανοίξτε το στοχευόμενο αρχείο PDF ώστε το API να μπορεί να εξετάσει τα αντικείμενα σχολίων του.
+### Βήμα 1: Φόρτωση του Εγγράφου PDF
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -159,8 +97,7 @@ try (Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document
 }
 ```
 
-#### Βήμα 2: Δημιουργία του Κειμενικού Υδατογραφήματος
-`TextWatermark` αντιπροσωπεύει ένα κειμενικό υδατογράφημα με προσαρμόσιμη γραμματοσειρά, μέγεθος, χρώμα, αδιαφάνεια και περιστροφή.
+### Βήμα 2: Δημιουργία του Υδατογραφήματος Κειμένου
 ```java
 import com.groupdocs.watermark.contents.PdfAnnotation;
 import com.groupdocs.watermark.watermarks.TextWatermark;
@@ -176,8 +113,7 @@ textWatermark.setSizingType(SizingType.ScaleToParentDimensions);
 textWatermark.setScaleFactor(0.5);
 ```
 
-#### Βήμα 3: Εφαρμογή του Υδατογραφήματος στα Σχόλια
-`ImageAnnotation` είναι ένα σχόλιο PDF που περιέχει ενσωματωμένη εικόνα, η οποία μπορεί να στοχευθεί για υδατογράφημα.
+### Βήμα 3: Εφαρμογή του Υδατογραφήματος σε Σχόλια Εικόνας
 ```java
 import com.groupdocs.watermark.contents.PdfPage;
 
@@ -191,63 +127,66 @@ for (PdfPage page : watermarker.getContent().getPages()) {
 }
 ```
 
-#### Βήμα 4: Αποθήκευση του Υδατογραφημένου PDF
-`watermark.save()` γράφει το τροποποιημένο έγγραφο στην καθορισμένη διαδρομή.
+### Βήμα 4: Αποθήκευση του PDF με Υδατογράφημα
 ```java
 watermarker.save("YOUR_DOCUMENT_DIRECTORY/watermarked_document.pdf");
 System.out.println("Document saved with watermark.");
 ```
 
-## Συχνά Προβλήματα και Λύσεις
-- **Missing Dependencies** – Επαληθεύστε ότι όλα τα αντικείμενα GroupDocs αναφέρονται στο `pom.xml`.  
-- **File Path Issues** – Χρησιμοποιήστε απόλυτες διαδρομές ή `Paths.get()` για να αποφύγετε εκπλήξεις σχετικές με σχετικές διαδρομές.  
-- **Unsupported Annotation Types** – Το API αυτή τη στιγμή διαχειρίζεται `ImageAnnotation`, `TextAnnotation` και `StampAnnotation`; άλλοι τύποι απαιτούν προσαρμοσμένη διαχείριση.
+## Συνηθισμένα Προβλήματα και Λύσεις
+- **Ελλιπείς Εξαρτήσεις** – Επαληθεύστε ότι κάθε καταχώρηση `<dependency>` στο `pom.xml` ταιριάζει με τις εκδόσεις που εμφανίζονται παραπάνω.  
+- **Προβλήματα Διαδρομής Αρχείου** – Χρησιμοποιήστε απόλυτες διαδρομές ή βεβαιωθείτε ότι ο τρέχων φάκελος δείχνει στο `YOUR_DOCUMENT_DIRECTORY`.  
+- **Μόμενες Μορφές** – Το GroupDocs.Watermark υποστηρίζει PDF, DOCX, PPTX και διάφορους τύπους εικόνας· άλλ – Εάν χρειαστεί να αφαιρέσετε το υδατογράφημα αργότερα, χρησιμοποιήστε `watermarker.removeWatermarks()` πριν αποθηκεύσετε το έγγραφο.
 
 ## Πρακτικές Εφαρμογές
-Η προσθήκη κειμενικού υδατογραφήματος σε εικόνες σχολίων PDF είναι ιδιαίτερα χρήσιμη για:
-1. **Legal Documents** – Σημειώστε συμβάσεις με «Confidential – For Internal Use Only».  
-2. **Confidential Reports** – Αποτρέψτε τυχαίες διαρροές ενσωματώνοντας μια ετικέτα σε όλη την εταιρεία.  
-3. **Marketing Materials** – Προωθήστε τα PDF με ένα διακριτικό λογότυπο‑κειμενικό επικάλυψη.  
-4. **Academic Drafts** – Δείξτε «Draft – Do Not Distribute» σε ερευνητικές εργασίες πριν από την αξιολόγηση.
+Η προσθήκη υδατογραφήματος κειμένου PDF είναι ιδιαίτερα χρήσιμη για:
+1. **Νομικά Έγγραφα** – Σήμανση συμβάσεων ως “Confidential”.  
+2. **Εσωτερικές Αναφορές** – Πρόληψη τυχαίας εξωτερικής διανομής.  
+3. **Μάρκετινγκ Υλικά** – Επωνυμία PDF με σλόγκαν εταιρείας.  
+4. **Ακαδημαϊκά Σχέδια** – Εμφάνιση κατάστασης “draft” πριν από την αξιολόγηση.
 
 ## Σκέψεις για την Απόδοση
-- **Batch Processing** – Ομαδοποιήστε πολλά PDF σε μια ενιαία ομάδα νημάτων για ελαχιστοποίηση του κόστους JVM.  
-- **Memory Management** – Η βιβλιοθήκη μεταδίδει τις σελίδες, οπότε εκχωρήστε τουλάχιστον 2 GB heap για αρχεία μεγαλύτερα από 200 MB.  
-- **Watermark Settings** – Μειώστε την αδιαφάνεια (π.χ., 30 %) για να μειώσετε το οπτικό άγχος ενώ παραμένει ανιχνεύσιμο.
+- **Επεξεργασία σε Batch** – Επανάληψη σε συλλογή PDF και επαναχρησιμοποίηση ενός ενιαίου αντικειμένου `Watermarker` όταν είναι δυνατόν.  
+- **Διαχείριση Μνήμης** – Για μεγάλα αρχεία, αυξήστε το heap της JVM (`-Xmx2g` ή περισσότερο) και κλείστε το `Watermarker` σε μπλοκ try‑with‑resources όπως φαίνεται.  
+- **Βελτιστοποίηση Ρυθμίσεων Υδατογραφήματος** – Ρυθμίστε `setScaleFactor` και τη διαφάνεια για ισορροπία ορατότητας και μεγέθους αρχείου.
+
+## Ενότητα Συχνών Ερωτήσεων
+1. **Μπορώ να προσθέσω υδατογραφήματα σε άλλους τύπους σχολίων;**  
+   Ναι, μπορείτε να προσαρμόσετε τη διαδικασία υδατογράφησης για διαφορετικές κατηγορίες σχολίων όπως κείμενο, σύνδεσμο ή σχήμα.  
+2. **Υπάρχει όριο στον αριθμό των υδατογραφημάτων ανά σελίδα;**  
+   Δεν υπάρχει σκληρό όριο, αλλά υπερβολικά πολλά υδατογραφήματα μπορεί να επηρεάσουν την αναγνωσιμότητα και τον χρόνο επεξεργασίας.  
+3. **Πώς αφαιρώ ένα υδατογράφημα αν χρειαστεί;**  
+   Χρησιμοποιήστε το API αφαίρεσης του GroupDocs.Watermark (`watermarker.removeWatermarks()`).  
+4. **Μπορεί αυτή η μέθοδος να χειριστεί κρυπτογραφημένα PDF;**  
+   Ναι, εφόσον παρέχετε τον σωστό κωδικό πρόσβασης κατά τη φόρτωση του εγγράφου.  
+5. **Ποια μεγέθη αρχείων μπορούν να υποβληθούν σε επεξεργασία;**  
+   Υποστηρίζονται μεγάλα αρχεία· παρακολουθείτε τη χρήση μνήμης και εξετάστε την επεξεργασία σε τμήματα για πολύ μεγάλα έγγραφα.
 
 ## Συχνές Ερωτήσεις
 
-**Q: Μπορώ να προσθέσω υδατογραφήματα σε άλλους τύπους σχολίων;**  
-A: Ναι, μπορείτε να στοχεύσετε `TextAnnotation`, `StampAnnotation` ή προσαρμοσμένα αντικείμενα σχολίων χρησιμοποιώντας την ίδια μέθοδο `addWatermark`.
+**Ε: Πώς προστατεύω PDF με υδατογράφημα διατηρώντας την αρχική διάταξη;**  
+Α: Χρησιμοποιώντας το `TextWatermark` με `SizingType.ScaleToParentDimensions` και ορίζοντας κατάλληλο `scaleFactor`, το υδατογράφημα προσαρμόζεται στο μέγεθος του σχολίου χωρίς παραμόρφωση του PDF.
 
-**Q: Υπάρχει όριο στον αριθμό των υδατογραφημάτων που μπορώ να τοποθετήσω σε μια σελίδα;**  
-A: Δεν υπάρχει σκληρό όριο, αλλά διατηρήστε τη συνολική αδιαφάνεια κάτω από 70 % για να διατηρήσετε την αναγνωσιμότητα και να αποφύγετε την υποβάθμιση της απόδοσης.
+**Ε: Υπάρχει τρόπος να αφαιρέσω προγραμματιστικά ένα υδατογράφημα από PDF με Java;**  
+Α: Ναι, καλέστε `watermarker.removeWatermarks()` πριν αποθηκεύσετε το έγγραφο. Αυτή είναι η προτεινόμενη προσέγγιση για το σενάριο “remove watermark pdf java”.
 
-**Q: Πώς να αφαιρέσω ένα υδατογράφημα μετά την εφαρμογή του;**  
-A: Χρησιμοποιήστε `annotation.removeWatermark(watermarkId)` ή καλέστε `Watermark.removeAll()` για να αφαιρέσετε όλα τα υδατογραφήματα από το έγγραφο.
+**Ε: Υποστηρίζει το GroupDocs.Watermark PDF με κωδικό πρόσβασης;**  
+Α: Απόλυτα. Περνάτε τον κωδικό στο `PdfLoadOptions` κατά την αρχικοποίηση του `Watermarker`.
 
-**Q: Η βιβλιοθήκη διαχειρίζεται PDF με κωδικό πρόσβασης;**  
-A: Ναι – δώστε τον κωδικό πρόσβασης κατά τη φόρτωση του εγγράφου: `Watermark.load("secure.pdf", "myPassword")`.
+**Ε: Ποιες εκδόσεις Java είναι συμβατές με την τελευταία έκδοση του GroupDocs.Watermark;**  
+Α: Η βιβλιοθήκη λειτουργεί με JDK 8 και νεότερες, συμπεριλαμβανομένων των Java 11, 17 και 21.
 
-**Q: Ποιο είναι το μέγιστο μέγεθος αρχείου που υποστηρίζεται;**  
-A: Το API μπορεί να επεξεργαστεί αρχεία έως 2 GB σε 64‑bit JVM· μεγαλύτερα αρχεία θα πρέπει να χωριστούν σε τμήματα πριν το υδατογράφημα.
+**Ε: Μπορώ να επεξεργαστώ δεκάδες PDF σε μία εκτέλεση;**  
+Α: Ναι. Τοποθετήστε τα βήματα φόρτωσης, υδατογράφησης και αποθήκευσης μέσα σε βρόχο· επαναχρησιμοποιήστε την ίδια διαμόρφωση `Watermarker` για βελτιωμένη απόδοση.
 
-## Πόροι
-- [Τεκμηρίωση GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)
-- [Αναφορά API](https://reference.groupdocs.com/watermark/java)
-- [Λήψη GroupDocs.Watermark για Java](https://releases.groupdocs.com/watermark/java/)
-- [Αποθετήριο GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Δωρεάν Φόρουμ Υποστήριξης](https://forum.groupdocs.com/c/watermark/10)
-- [Αίτηση για Προσωρινή Άδεια](https://purchase.groupdocs.com/temporary-license/)
+## Συμπέρασμα
+Τώρα έχετε έναν πλήρη, έτοιμο για παραγωγή οδηγό για **add text watermark pdf** σε σχόλιαatermark για Java. Ακολουθώντας τα παραπάνω βήματα μπορείτε να προστατεύσετε ευαίσθητα έγγραφα, να επωνυμείτε υλικά μάρκετινγκ και να ασφαλίσετε ακαδη στρατηγικής προσταμένο.11 for Java  
+**Συγγραφέας:** GroupDocs  
 
----
-
-**Τελευταία Ενημέρωση:** 2026-07-30  
-**Δοκιμή Με:** GroupDocs.Watermark 23.9 for Java  
-**Συγγραφέας:** GroupDocs
-
-## Σχετικά Μαθήματα
-
-- [Πώς να Προσθέσετε Κειμενικό Υδατογράφημα σε PDF Χρησιμοποιώντας το GroupDocs.Watermark για Java (Οδηγός 2023)](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-java/)
-- [Πώς να Προσθέσετε Κείμενο και Εικόνα Υδατογραφήματα σε Συγκεκριμένες Σελίδες PDF Χρησιμοποιώντας το GroupDocs.Watermark για Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Πρόσβαση και Επανάληψη σε PDF Artifacts Χρησιμοποιώντας το GroupDocs.Watermark σε Java για Υδατογράφημα Εγγράφων](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
+**Πόροι**
+- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)

@@ -1,211 +1,41 @@
 ---
-date: '2026-07-30'
-description: 了解如何在 Java 中为 GroupDocs.Watermark 设置许可证，有效保护文档并高效管理使用。
+date: '2026-01-21'
+description: 了解如何在 Java 中为 GroupDocs Watermark 设置许可证，包括如何为 PDF 添加水印以及如何使用计量许可证管理使用情况。
 keywords:
-- how to set license
-- GroupDocs Watermark Java
-- metered licensing Java
-lastmod: '2026-07-30'
-og_description: 如何在 Java 中为 GroupDocs.Watermark 设置许可证。本指南将指导您安装 SDK、获取计量密钥并配置许可证，以保护您的文档。
-og_image_alt: 'Guide: Set license for GroupDocs Watermark in Java'
-og_title: 如何在 Java 中为 GroupDocs Watermark 设置许可证
-schemas:
-- author: GroupDocs
-  dateModified: '2026-07-30'
-  description: Learn how to set license for GroupDocs.Watermark in Java, protect your
-    documents effectively and manage usage efficiently.
-  headline: How to Set License for GroupDocs Watermark in Java
-  type: TechArticle
-- description: Learn how to set license for GroupDocs.Watermark in Java, protect your
-    documents effectively and manage usage efficiently.
-  name: How to Set License for GroupDocs Watermark in Java
-  steps:
-  - name: Define the public and private keys
-    text: Enter the keys you received after registering for a temporary license. `Metered`
-      is the GroupDocs.Watermark class that handles metered licensing and usage tracking.
-      *Place your keys in a secure location (environment variables, encrypted config,
-      etc.) before using them in code.*
-  - name: Create an instance of the Metered class
-    text: Instantiate the `Metered` object with your keys. This object will be passed
-      to the watermark engine during initialization.
-  - name: Set the metered license using the provided keys
-    text: Call the `setLicense` method (or the equivalent API call) with your public
-      and private keys. Once set, all subsequent watermark operations will be billed
-      according to your usage. > **Pro tip:** Keep the keys out of source control.
-      Use a secrets manager or encrypted properties file to avoid accidenta
-  type: HowTo
-- questions:
-  - answer: A temporary license is time‑limited and ideal for evaluation, while a
-      perpetual license provides unlimited use without recurring fees.
-    question: What is the difference between a temporary and a perpetual license?
-  - answer: Yes—replace the metered key initialization with a call to `engine.setLicense("path/to/license/file")`.
-    question: Can I switch from a metered license to a perpetual one without code
-      changes?
-  - answer: The SDK falls back to offline mode; watermarking continues but usage won’t
-      be reported until connectivity is restored.
-    question: What happens if the metered service is unreachable?
-  - answer: The SDK can handle files up to 1 GB; larger files should be split or processed
-      in streaming mode.
-    question: Are there file‑size limits for watermarking?
-  - answer: It works on any platform that supports Java 8+, including Windows, Linux,
-      and macOS.
-    question: Does the metered license work on all operating systems?
-  type: FAQPage
-tags:
-- set license
-- GroupDocs Watermark
-- Java licensing
-- metered license
-- document security
-title: 如何在 Java 中为 GroupDocs Watermark 设置许可证
+- metered license GroupDocs Watermark Java
+- GroupDocs.Watermark setup Java
+- Java document security watermarks
+title: 如何在 Java 中为 GroupDocs Watermark（计量版）设置许可证
 type: docs
 url: /zh/java/licensing-configuration/set-metered-license-groupdocs-watermark-java/
 weight: 1
 ---
 
-# 如何在 Java 中为 GroupDocs Watermark 设置许可证
+# 如何在 Java 中为 GroupDocs Watermark（计量）设置许可证
 
-保护知识产权是现代应用程序的首要任务，水印是阻止未经授权分发的有效手段。如果您正在使用 **GroupDocs.Watermark for Java**，则需要一个能够跟踪使用情况并随需求扩展的许可证。本教程解释了在 Java 中 **如何设置许可证**，从安装 SDK 到配置向服务报告消耗的计量密钥。
+保护知识产权是现代企业的首要任务，水印是行之有效的方式。在本教程中，您将学习**如何设置许可证**，使用计量方式为 GroupDocs.Watermark 设置许可证，从而能够**为 PDF 文件添加水印**，并全面控制使用情况。我们将从前置条件到实际使用场景逐步讲解，并准确展示在何处**使用公私钥**来激活许可证。
 
 ## 快速答案
-- **什么是计量许可证？** 它是一种基于使用量的许可证，记录每个 API 调用，让您只为实际消耗付费。  
-- **我需要先获取试用吗？** 是的，您可以从 GroupDocs 网站请求临时许可证以评估产品。  
-- **需要哪个 Java 版本？** Java 8 或更高；SDK 编译针对 JDK 8+。  
-- **我可以以后切换到永久许可证吗？** 当然——只需用永久许可证文件替换计量密钥。  
-- **此设置是否兼容 Maven？** 是的，提供了 Maven 坐标以实现无缝依赖管理。
+- **什么是计量许可证？** 基于使用量的授权模型，会跟踪每一次 API 调用。  
+- **我需要许可证文件吗？** 不需要——您可以使用公钥和私钥进行激活。  
+- **需要哪个 Java 版本？** Java 8 或更高版本。  
+- **我可以为 PDF 文档添加水印吗？** 可以，API 支持 PDF、DOCX、PPTX 和图像。  
+- **此方法安全吗？** 安全，密钥通过 HTTPS 传输，且从不以明文形式存储。  
 
-## 计量许可证是什么？
-计量许可证是 GroupDocs 提供的云启用授权，记录 SDK 执行的每一次水印操作。每个 API 调用都会在 GroupDocs 的授权服务器上记录，基于实际使用量进行按需付费计费。该模型为开发者提供实时的消耗洞察，帮助控制成本，同时确保完整功能访问。
+## 什么是计量许可证以及为何使用它？
+计量许可证让您仅为实际消耗的资源付费，非常适合 SaaS 或微服务架构。它提供**文档安全水印**功能，无需管理传统许可证文件的负担，并且可以即时上下扩展使用量。
 
-## 为什么在 GroupDocs Watermark 中使用计量许可证？
-GroupDocs.Watermark 支持超过五十种输入和输出格式——包括 PDF、DOCX、PPTX 以及各种图像类型，并且能够在不将整个文档加载到内存中的情况下处理高达 1 GB 的文件，从而保持性能。使用计量许可证，您只为实际运行的操作付费，使解决方案能够在成本有效的情况下扩展，同时保留对所有功能的完整访问。
+## 前置条件
+在开始之前，请确保您拥有：
 
-## 先决条件
-- **GroupDocs.Watermark for Java** 版本 24.11 或更高。  
-- 已安装并配置的 Java Development Kit (JDK) 8 或更高版本。  
-- 对 Maven 或手动 JAR 管理有基本了解。  
-- 来自 GroupDocs 门户的临时或永久许可证密钥。
+1. **GroupDocs.Watermark for Java** ≥ 24.11（最新发布）。  
+2. 已安装 **JDK 8+** 并配置 `JAVA_HOME`。  
+3. 从您的 GroupDocs 账户获取的 **公钥和私钥**（将在代码中使用）。  
 
-## 如何在 Java 中为 GroupDocs Watermark 设置计量许可证？
-
-加载您的公钥和私钥，创建 `Metered` 实例并应用许可证——全部在三个简洁的步骤中完成。这种方法确保每个水印请求都计入您的账户，让您对消耗有完整的可视性。
-
-### 步骤 1：定义公钥和私钥
-输入您在注册临时许可证后收到的密钥。
-
-`Metered` 是处理计量授权和使用跟踪的 GroupDocs.Watermark 类。  
-*在代码中使用之前，请将密钥放置在安全位置（环境变量、加密配置等）。*
-
-### 步骤 2：创建 Metered 类的实例
-使用您的密钥实例化 `Metered` 对象。该对象将在初始化期间传递给水印引擎。
-
-```text
-Metered metered = new Metered(System.getenv("GROUPDOCS_PUBLIC_KEY"),
-                               System.getenv("GROUPDOCS_PRIVATE_KEY"));
-```
-
-### 步骤 3：使用提供的密钥设置计量许可证
-使用您的公钥和私钥调用 `setLicense` 方法（或等效的 API 调用）。设置后，所有后续的水印操作将根据您的使用量计费。
-
-```text
-WatermarkEngine engine = new WatermarkEngine();
-engine.setMeteredLicense(metered);
-```
-
-> **专业提示：** 将密钥保存在源代码控制之外。使用密钥管理器或加密的属性文件，以避免意外泄露。
-
-## 为 Java 设置 GroupDocs.Watermark
+## 设置 GroupDocs.Watermark for Java
 
 ### 安装信息
-
-使用 Maven 或直接下载 JAR，将 GroupDocs.Watermark 集成到您的项目中。
-
-**Maven 设置：**  
-在您的 `pom.xml` 文件中添加以下配置：
-
-```xml
-<dependency>
-    <groupId>com.groupdocs</groupId>
-    <artifactId>watermark</artifactId>
-    <version>24.11</version>
-</dependency>
-```
-
-**直接下载：**  
-从 [GroupDocs.Watermark for Java 发布版](https://releases.groupdocs.com/watermark/java/) 下载最新版本。
-
-### 许可证获取
-
-要解锁全部功能，请获取免费试用或临时许可证：
-
-- 在 [GroupDocs 网站](https://purchase.groupdocs.com/temporary-license/) 注册以开始。  
-- 获取密钥后，按照实现指南将其集成到项目中。
-
-### 基本初始化和设置
-
-将 SDK 添加到项目后，导入必要的命名空间并创建水印引擎实例，如上面的代码片段所示。
-
-## 故障排除技巧
-- **无效密钥：** 仔细检查公钥和私钥是否完全匹配；任何一个拼写错误都会导致激活失败。  
-- **许可证文件路径错误：** 如果您更喜欢基于文件的许可证，请确保文件路径是绝对路径或相对于工作目录正确解析。  
-- **网络问题：** 计量授权需要向外部发起 HTTPS 调用；请确认防火墙允许访问 `api.groupdocs.com`。
-
-## 实际应用
-1. **文档安全：** 为 PDF、Word 文档和图像添加可见或不可见的水印，以保护敏感的企业数据。  
-2. **使用跟踪：** 生成每日水印文档数量的报告，有助于预算编制和合规性。  
-3. **CMS 集成：** 在内容发布工作流中自动插入水印，许可证自动强制执行。
-
-## 性能考虑因素
-
-**优化性能：**  
-- 仅在必要时应用水印；对已受保护的文件跳过处理。  
-- 对于大批量处理，复用同一个 `WatermarkEngine` 实例，以避免重复的初始化开销。  
-
-**最佳实践：**  
-- 在处理数百页的 PDF 时监控 JVM 堆使用情况；如果内存成为瓶颈，考虑使用流式 API。  
-- 将日志级别设为 `INFO`，以捕获授权调用而不会使控制台信息过载。
-
-## 结论
-
-在本指南中，我们介绍了在 Java 中为 GroupDocs.Watermark **如何设置许可证**，从 Maven 安装到计量密钥配置。遵循这些步骤，您将获得精确的使用跟踪、灵活的计费以及强大的文档保护——且不影响性能。
-
-**后续步骤：**  
-- 试验不同的水印样式（文字、图像、对角线）。  
-- 探索高级功能，例如基于用户角色的条件水印。  
-- 查看 GroupDocs 分析仪表板，监控消耗趋势。
-
-准备好保护您的文档了吗？立即实现该解决方案，安心地知道您的资产受到保护，许可证费用透明可见。
-
-## 常见问题
-
-**Q: 临时许可证和永久许可证有什么区别？**  
-A: 临时许可证有时间限制，适合评估使用；永久许可证提供无限使用且无需周期性费用。
-
-**Q: 我可以在不更改代码的情况下从计量许可证切换到永久许可证吗？**  
-A: 可以——将计量密钥初始化替换为对 `engine.setLicense("path/to/license/file")` 的调用。
-
-**Q: 如果计量服务不可用会怎样？**  
-A: SDK 将回退到离线模式；水印仍会继续，但使用情况将在恢复连接后才会上报。
-
-**Q: 水印对文件大小有限制吗？**  
-A: SDK 能处理最高 1 GB 的文件；更大的文件应拆分或使用流式模式处理。
-
-**Q: 计量许可证在所有操作系统上都能工作吗？**  
-A: 它在任何支持 Java 8+ 的平台上均可运行，包括 Windows、Linux 和 macOS。
-
----
-
-**Last Updated:** 2026-07-30  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
-
-**资源**
-- [文档](https://docs.groupdocs.com/watermark/java/)
-- [API 参考](https://reference.groupdocs.com/watermark/java)
-- [下载](https://releases.groupdocs.com/watermark/java/)
-- [GitHub 仓库](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [免费支持论坛](https://forum.groupdocs.com/c/watermark/10)
-- [临时许可证获取](https://purchase.groupdocs.com/temporary-license/)
+将 GroupDocs.Watermark 集成到您的 Maven 项目中：
 
 ```xml
 <repositories>
@@ -225,6 +55,17 @@ A: 它在任何支持 Java 8+ 的平台上均可运行，包括 Windows、Linu
 </dependencies>
 ```
 
+> **提示：** 相同的仓库 URL 也用于下面的直接下载选项。
+
+#### 直接下载
+从官方发布页面获取最新的 JAR： [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)。
+
+### 许可证获取
+要解锁高级功能，您需要临时或试用许可证。请在 [GroupDocs 网站](https://purchase.groupdocs.com/temporary-license/) 注册，并复制他们提供的公钥/私钥。
+
+### 基本初始化
+将库加入类路径后，您可以进行初始化：
+
 ```java
 import com.groupdocs.watermark.License;
 
@@ -237,24 +78,86 @@ public class InitializeWatermark {
 }
 ```
 
+> **为何重要：** 即使使用计量许可证，初始化 `License` 对象也能确保 SDK 在后续工作流中准备好接受基于密钥的激活。
+
+## 实施指南
+
+### 设置计量许可证
+
+#### 第一步：定义公钥和私钥
 ```java
 // Step 1: Define the public and private keys for the metered license.
 String publicKey = "*****"; // Replace with your actual public key
 String privateKey = "*****"; // Replace with your actual private key
 ```
+这些密钥**使用公私钥**来安全地标识您的账户。
 
+#### 第二步：创建 Metered 类的实例
 ```java
 // Step 2: Create an instance of Metered class.
 Metered metered = new Metered();
 ```
+`Metered` 类在后台处理所有使用量跟踪。
 
+#### 第三步：使用提供的密钥设置计量许可证
 ```java
 // Step 3: Set the metered license using the provided keys.
 metered.setMeteredKey(publicKey, privateKey);
 ```
+调用此方法后，SDK 完全获得许可证，您即可开始**为 PDF 文件添加水印**或**创建带水印的文档**。
 
-## 相关教程
+### 为何使用公私钥而非许可证文件？
+- **安全性：** 密钥从不以明文形式写入磁盘。  
+- **灵活性：** 在不同环境（开发、测试、生产）之间切换，无需复制文件。  
+- **可扩展性：** 适用于容器不可变的云原生部署。  
 
-- [GroupDocs.Watermark for Java 许可证和配置教程](/watermark/java/licensing-configuration/)
-- [如何在 Java 中设置 GroupDocs.Watermark 许可证：完整指南](/watermark/java/licensing-configuration/groupdocs-watermark-licensing-java-guide/)
-- [Java 水印指南：使用 GroupDocs.Watermark API 保护文档](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
+## 实际应用
+
+1. **文档安全：** 在 PDF 中嵌入可见或不可见的水印，以阻止未经授权的分发。  
+2. **使用量跟踪：** 监控每月处理的文档数量，帮助您保持在计量配额范围内。  
+3. **CMS 集成：** 自动在内容管理系统中对每个上传的文件**应用 PDF 水印**。  
+
+## 性能考虑
+
+- **仅在需要时应用水印**——避免不必要的大批量处理。  
+- **在请求之间复用 `Metered` 实例**，以降低对象创建开销。  
+- **监控内存**，在处理高分辨率图像时；SDK 提供流式 API 以保持占用低。  
+
+## 常见问题及解决方案
+| 问题 | 解决方案 |
+|------|----------|
+| 密钥被拒绝 | 再次检查字符串中是否没有多余的空格或换行。 |
+| 许可证未激活 | 确保在任何水印操作 **之前** 调用 `metered.setMeteredKey(...)`。 |
+| 大 PDF 导致内存不足错误 | 使用 `WatermarkOptions.setUseMemoryCache(true)` 将处理卸载到磁盘。 |
+
+## 常见问答
+
+**问：什么是计量许可证，为什么要使用它？**  
+A: 计量许可证会跟踪每一次 API 调用，让您仅为实际使用付费，并且可以轻松扩展应用程序。
+
+**问：我可以在试用许可证文件和计量密钥之间切换吗？**  
+A: 可以。只需对试用调用 `license.setLicense("path/to/file.lic")`，随后再用 `metered.setMeteredKey(...)` 替换即可。
+
+**问：如果我的公钥或私钥输入错误会怎样？**  
+A: SDK 将抛出身份验证异常，阻止访问高级功能。
+
+**问：每月可以添加多少水印有限制吗？**  
+A: 限制取决于您与 GroupDocs 的协议；请在仪表盘查看具体配额。
+
+**问：这是否同样适用于图像文件而不仅是 PDF？**  
+A: 当然。相同的 API 支持 JPEG、PNG、BMP 以及其他常见图像格式。
+
+## 资源
+
+- [文档](https://docs.groupdocs.com/watermark/java/)
+- [API 参考](https://reference.groupdocs.com/watermark/java)
+- [下载](https://releases.groupdocs.com/watermark/java/)
+- [GitHub 仓库](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [免费支持论坛](https://forum.groupdocs.com/c/watermark/10)
+- [临时许可证获取](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**最后更新：** 2026-01-21  
+**测试环境：** GroupDocs.Watermark 24.11 for Java  
+**作者：** GroupDocs
