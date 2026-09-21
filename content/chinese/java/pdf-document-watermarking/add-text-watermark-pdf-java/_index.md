@@ -1,80 +1,43 @@
 ---
-date: '2026-08-14'
-description: 了解如何使用 GroupDocs.Watermark for Java 为 PDF 文件添加水印。只需几个简单步骤，即可保护文档并提升品牌形象。
+date: '2026-01-23'
+description: 学习如何使用 GroupDocs.Watermark for Java 为 PDF Java 文件添加文本水印。提供代码、前置条件和常见问题的逐步指南。
 keywords:
-- how to add watermark
-- watermark pdf java
-- secure pdf watermark
-- add text watermark pdf
-- pdf branding watermark
-lastmod: '2026-08-14'
-og_description: 使用 GroupDocs.Watermark for Java 为 PDF 添加水印。本指南逐步演示如何嵌入文字水印、提升安全性，并在
-  Java 应用程序中强化品牌形象。
-og_image_alt: 'Guide: add text watermark to PDF using GroupDocs.Watermark for Java'
-og_title: 如何使用 GroupDocs.Watermark Java 为 PDF 添加水印
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-14'
-  description: Learn how to add watermark to PDF files with GroupDocs.Watermark for
-    Java. Secure your documents and boost branding in a few simple steps.
-  headline: How to add a text watermark to PDF using GroupDocs.Watermark for Java
-    (2023 guide)
-  type: TechArticle
-- questions:
-  - answer: Yes, GroupDocs.Watermark supports over 50 formats, including DOCX, PPTX,
-      and image files.
-    question: Can I watermark non‑PDF files?
-  - answer: Absolutely – the `TextWatermark` API exposes `setColor()` and `setOpacity()`
-      methods for fine‑tuned styling.
-    question: Is it possible to customize text color and opacity?
-  - answer: Enable memory‑optimized loading and consider processing the file in page‑range
-      chunks to avoid exhausting heap space.
-    question: How should I handle PDFs larger than 500 MB?
-  - answer: Yes, a full license removes trial limitations and grants access to all
-      premium features.
-    question: Is a commercial license required for production use?
-  - answer: The library offers advanced features such as multi‑line watermarks, diagonal
-      placement, and conditional rendering—refer to the API reference for details.
-    question: What if I need more complex watermark layouts?
-  type: FAQPage
-tags:
-- pdf watermark
-- groupdocs watermark
-- java pdf security
-title: 如何使用 GroupDocs.Watermark for Java 为 PDF 添加文字水印（2023 指南）
+- PDF watermarking
+- GroupDocs.Watermark for Java
+- Java PDF security
+title: PDF 水印 Java：使用 GroupDocs 添加文字水印
 type: docs
 url: /zh/java/pdf-document-watermarking/add-text-watermark-pdf-java/
 weight: 1
 ---
 
-# 如何使用 GroupDocs.Watermark for Java 为 PDF 添加文本水印（2023 指南）
+中atermark for Java 为 **watermark PDF Java** 文档添加水印，从项目设置到保存最终的带水印文件。
 
-在 PDF 中添加文本水印是 **how to add watermark** 最有效的方式之一，同时还能强化品牌形象。在本指南中，您将学习如何使用 **GroupDocs.Watermark for Java** 将可自定义的文本水印嵌入任意 PDF 文档，保持文件完整性。
+## 快速回答
+- **推荐使用哪个库？** GroupDocs.Watermark for Java  
+- **需要多少行代码？** 大约 30 行，分为 5 步  
+- **需要许可证吗？** 试用版可用于测试；生产环境需正式许可证  
+- **可以处理大 PDF 吗？** 可以——在循环中处理页面并及时关闭资源  
+- **水印在图片上可见吗？** 可见，你可以将其应用于嵌入的图片元素  
 
-## 快速答案
-- **需要哪个库？** GroupDocs.Watermark for Java (v24.11 或更高)。  
-- **需要哪个 Java 版本？** JDK 8 或更高。  
-- **是否需要许可证？** 免费试用可用于评估；生产环境需要商业许可证。  
-- **可以给大 PDF 加水印吗？** 可以——API 能在不将整个文档加载到内存的情况下处理数百页的文件。  
-- **支持品牌化吗？** 当然——您可以设置字体、颜色、不透明度和旋转角度，以匹配企业风格。
-
-## 什么是 how to add watermark？
-**How to add watermark** 指的是以编程方式在 PDF 文件中插入可见文本覆盖层，以表明所有权、机密性或品牌标识的过程。GroupDocs.Watermark for Java 提供了高级 API 来处理繁重的工作，您只需调用少量方法。
+## 什么是 watermark pdf java？
+**watermark pdf java** 指使用 Java 代码以编程方式将可见或半透明的文字或图片标记嵌入 PDF 文件的过程。此技术有助于阻止未授权分发，并清晰显示文档所有权。
 
 ## 为什么使用 GroupDocs.Watermark for Java？
-GroupDocs.Watermark 支持 **50+** 种输入和输出格式，能够在不完整加载内存的情况下处理 **最高 1 GB** 大小的 PDF，并提供 **线程安全** 的操作，可在多线程环境中扩展。这些量化的能力使其成为企业级 PDF 安全和品牌化的可靠选择。
+- **易于集成** – 简单的 Maven 依赖和清晰的 API。  
+- **广泛的格式支持** – 支持 PDF、Word、Excel 和图片。  
+- **细粒度控制** – 位置、旋转、缩放和不透明度均可自定义。  
+- **性能导向** – 在保存后关闭 `Watermarker`，即可高效处理大文件。  
 
 ## 前置条件
-- **Java Development Kit (JDK)** 8 或更高。  
-- **GroupDocs.Watermark 库** v24.11（或更高）。  
-- 使用 IntelliJ IDEA 或 Eclipse 等带有 Maven 支持的 IDE。  
-- 具备基本的 Java 知识并熟悉 PDF 结构。
+- **Java Development Kit (JDK)** 8 或更高版本  
+- **GroupDocs.Watermark Library** 版本 24.11（或更新）  
+- 支持 Maven 的 IDE，如 IntelliJ IDEA 或 Eclipse  
+- 基础的 Java 与 PDF 结构知识  
 
 ## 设置 GroupDocs.Watermark for Java
-首先，将库添加到您的 Maven 项目中：
-
-**Maven 设置**  
-将以下依赖添加到您的 `pom.xml` 文件中：
+### Maven 设置
+在 `pom.xml` 中添加仓库和依赖：
 
 ```xml
 <repositories>
@@ -92,156 +55,133 @@ GroupDocs.Watermark 支持 **50+** 种输入和输出格式，能够在不完整
       <version>24.11</version>
    </dependency>
 </dependencies>
-```  
+```
 
-如果您不想使用 Maven，也可以直接从官方发布页面下载 JAR：
-
-- [GroupDocs.Watermark for Java 发行版](https://releases.groupdocs.com/watermark/java/)
+### 直接下载
+或者直接从 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下载库。
 
 ### 许可证获取步骤
-- **免费试用** – 生成用于评估的临时许可证密钥。  
-- **购买** – 提供永久许可证，解锁全部功能。
+- **免费试用** – 使用临时许可证测试所有功能。  
+- **购买** – 获取正式许可证以实现无限制的生产使用。
 
-**基本初始化和设置**  
-在开始处理 PDF 之前导入所需的类：
+### 基本初始化与设置
+导入你需要的核心类：
 
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
-```  
+```
 
-## 实现指南
-下面您将看到一步步的演练，涵盖水印工作流的每个阶段。
+## 实现指南 – watermark pdf java
+下面是逐步演示，使用原教程中的七个代码块。
 
-### 如何在 Java 中为 PDF 添加文本水印？
-加载 PDF，创建文本水印，将其应用到每页，然后保存结果。完整过程可以用 **四个简洁步骤** 表示，您可以将其复制到项目中，快速集成水印功能，代码最少，并确保所有页面外观一致。
-
-### 加载 PDF 文档
-**定义锚点** – `PdfLoadOptions` 允许您指定加载参数，例如密码保护或内存使用。  
-**直接答案** – 实例化 `PdfLoadOptions` 和 `Watermarker` 对象，然后调用 `new Watermarker(inputStream, loadOptions)` 打开 PDF 进行编辑。此步骤确保文档已准备好插入水印，而无需完全加载到 RAM 中。
+### 步骤 1：加载 PDF 文档
+首先，加载需要保护的 PDF：
 
 ```java
-   String pdfPath = "YOUR_DOCUMENT_DIRECTORY/document.pdf";
-   PdfLoadOptions loadOptions = new PdfLoadOptions();
-   Watermarker watermarker = new Watermarker(pdfPath, loadOptions);
-   ```  
-*原因*：配置 `PdfLoadOptions` 可让您细粒度控制 PDF 的解析方式，这对大型或加密文件至关重要。
+String pdfPath = "YOUR_DOCUMENT_DIRECTORY/document.pdf";
+PdfLoadOptions loadOptions = new PdfLoadOptions();
+Watermarker watermarker = new Watermarker(pdfPath, loadOptions);
+```
 
-### 初始化文本水印
-**定义锚点** – `TextWatermark` 表示将在每页渲染的可视文本覆盖层。  
-**直接答案** – 创建 `TextWatermark` 实例，设置其字体、大小、颜色和旋转角度，然后可选地调整不透明度。此对象封装了所有外观设置，您只需将其一次传递给 `Watermarker`。
+*为什么？* 这会创建一个 `Watermarker` 实例，让你能够完整访问 PDF 内容。
 
-```java
-   import com.groupdocs.watermark.common.HorizontalAlignment;
-   import com.groupdocs.watermark.common.VerticalAlignment;
-   import com.groupdocs.watermark.watermarks.Font;
-   import com.groupdocs.watermark.watermarks.SizingType;
-   import com.groupdocs.watermark.watermarks.TextWatermark;
-
-   TextWatermark watermark = new TextWatermark("Protected image", new Font("Arial", 8));
-   watermark.setHorizontalAlignment(HorizontalAlignment.Center);
-   watermark.setVerticalAlignment(VerticalAlignment.Center);
-   watermark.setRotateAngle(45);
-   watermark.setSizingType(SizingType.ScaleToParentDimensions);
-   watermark.setScaleFactor(1);
-   ```  
-*原因*：适当的样式使水印易读且不突兀，保持用户体验的同时声明所有权。
-
-### 访问 PDF 内容和页面
-**定义锚点** – `Watermarker.getPages()` 返回一个集合，允许您操作各个页面。  
-**直接答案** – 遍历 `watermarker.getPages()`，对每个想要修改的页面调用 `page.addWatermark(textWatermark)`。此方法让您可以针对特定页面或全局应用水印。
+### 步骤 2：初始化文字水印（add text watermark pdf）
+创建文字水印并定义其外观：
 
 ```java
-   import com.groupdocs.watermark.contents.PdfContent;
-   import com.groupdocs.watermark.contents.PdfPage;
+import com.groupdocs.watermark.common.HorizontalAlignment;
+import com.groupdocs.watermark.common.VerticalAlignment;
+import com.groupdocs.watermark.watermarks.Font;
+import com.groupdocs.watermark.watermarks.SizingType;
+import com.groupdocs.watermark.watermarks.TextWatermark;
 
-   PdfContent pdfContent = watermarker.getContent(PdfContent.class);
-   for (PdfPage page : pdfContent.getPages()) {
-       // Process each page as needed.
-   }
-   ```  
-*原因*：页面级控制在仅需对特定章节（如封面或机密章节）加水印时非常有用。
+TextWatermark watermark = new TextWatermark("Protected image", new Font("Arial", 8));
+watermark.setHorizontalAlignment(HorizontalAlignment.Center);
+watermark.setVerticalAlignment(VerticalAlignment.Center);
+watermark.setRotateAngle(45);
+watermark.setSizingType(SizingType.ScaleToParentDimensions);
+watermark.setScaleFactor(1);
+```
 
-### 为图像工件添加水印
-**定义锚点** – `ImageArtifact` 对象表示 PDF 页面内嵌的光栅图像。  
-**直接答案** – 遍历 `page.getImageArtifacts()` 并调用 `artifact.addWatermark(textWatermark)` 将相同的文本水印嵌入每个图像。这可保护可能被提取和重复使用的视觉资产。
+*为什么？* 调整对齐、旋转和缩放可以使水印既醒目又美观。
 
-```java
-   import com.groupdocs.watermark.contents.PdfArtifact;
-
-   for (PdfPage page : pdfContent.getPages()) {
-       for (PdfArtifact artifact : page.getArtifacts()) {
-           if (artifact.getImage() != null) {
-               artifact.getImage().add(watermark);
-           }
-       }
-   }
-   ```  
-*原因*：对图像加水印可防止文档中出现的图形、图表或照片被未经授权地重复使用。
-
-### 保存并关闭加水印的 PDF 文档
-**定义锚点** – `Watermarker.save(String path)` 将修改后的 PDF 写入文件系统。  
-**直接答案** – 调用 `watermarker.save("output.pdf")` 然后 `watermarker.close()` 刷新缓冲区并释放文件句柄。此最终步骤确保所有水印更改被持久化，并清理系统资源。
+### 步骤 3：访问 PDF 内容和页面
+遍历每一页，以便定位特定元素：
 
 ```java
-   import java.io.File;
+import com.groupdocs.watermark.contents.PdfContent;
+import com.groupdocs.watermark.contents.PdfPage;
 
-   String outputPath = "YOUR_OUTPUT_DIRECTORY/output.pdf";
-   watermarker.save(outputPath);
-   watermarker.close();
-   ```  
-*原因*：适当的资源管理可避免文件锁定和内存泄漏，这在高吞吐量服务器环境中尤为重要。
+PdfContent pdfContent = watermarker.getContent(PdfContent.class);
+for (PdfPage page : pdfContent.getPages()) {
+    // Process each page as needed.
+}
+```
+
+*为什么？* 直接访问页面可以让你仅在需要的地方应用水印。
+
+### 步骤 4：对 PDF 图像应用水印（apply watermark to pdf）
+为每页中找到的每个图像元素添加水印：
+
+```java
+import com.groupdocs.watermark.contents.PdfArtifact;
+
+for (PdfPage page : pdfContent.getPages()) {
+    for (PdfArtifact artifact : page.getArtifacts()) {
+        if (artifact.getImage() != null) {
+            artifact.getImage().add(watermark);
+        }
+    }
+}
+```
+
+*为什么？* 对嵌入的图片加水印可防止视觉内容在未注明来源的情况下被重复使用。
+
+### 步骤 5：保存并关闭带水印的 PDF 文档（java add watermark code）
+最后，将更改写入新文件并释放资源：
+
+```java
+import java.io.File;
+
+String outputPath = "YOUR_OUTPUT_DIRECTORY/output.pdf";
+watermarker.save(outputPath);
+watermarker.close();
+```
+
+*为什么？* 保存会永久保留水印，关闭则释放内存——这对大 PDF 至关重要。
 
 ## 实际应用
-GroupDocs.Watermark for Java 自然适用于许多实际场景：
-
-- **文档安全** – 在合同、发票或法律简报上嵌入机密声明。  
-- **品牌化** – 在所有导出的 PDF 中显示公司名称或口号。  
-- **版权保护** – 通过在每页盖上可见声明来阻止未经授权的分发。
-
-典型的集成点包括自动文档生成流水线、内容管理系统和企业工作流引擎。
+- **文档安全** – 保护机密报告、合同或发票。  
+- **品牌强化** – 在所有页面显示公司名称或徽标。  
+- **版权保护** – 阻止专有材料的未授权再分发。  
 
 ## 性能考虑
-处理大 PDF 时，请牢记以下最佳实践：
+- 使用高效循环（如示例所示）以避免不必要的开销。  
+- 及时关闭 `Watermarker` 以释放文件句柄。  
+- 对于批量操作，可分批处理文件，并在可能的情况下复用单个 `Watermarker` 实例。
 
-- 使用 `PdfLoadOptions.setLoadMode(LoadMode.MemoryOptimized)` 以保持低内存使用。  
-- 保存后及时关闭 `Watermarker` 对象。  
-- 使用线程池批量处理文档，以最大化 CPU 利用率而不导致 I/O 过载。
+## 常见问题与解决方案
+| 问题 | 解决方案 |
+|------|----------|
+| **大 PDF 导致 OutOfMemoryError** | 一次处理一页，并在每个文件处理完后调用 `watermarker.close()`。 |
+| **某些页面看不到水印** | 确认该页面实际包含图像元素；否则可直接将水印应用于页面背景。 |
+| **许可证未被识正式许可证文件放置在应用的工作目录，或通过 `License.setLicense("license_file_path")` 设置。 |
 
-## 常见问题
-**Q: 我可以给非 PDF 文件加水印吗？**  
-A: 是的，GroupDocs.Watermark 支持超过 50 种格式，包括 DOCX、PPTX 和图像文件。
+## 常见问答
+**问：除了 PDF，我还能给其他文件类型加水印吗？**  
+答：可以，GroupDocs.Watermark 支创建 `Watermarker` 时问 JDK，即可在任何操作系统上运行。
 
-**Q: 可以自定义文本颜色和不透明度吗？**  
-A: 完全可以——`TextWatermark` API 提供 `setColor()` 和 `setOpacity()` 方法，以实现精细的样式设置。
+**问：如果需要动态水印（例如用户名、日期）该怎么办？**  
+答：在运行时构建水印文本字符串，例如 `new TextWatermark("Confidential – " + LocalDate.now(), ...)`。
 
-**Q: 如何处理大于 500 MB 的 PDF？**  
-A: 启用内存优化加载，并考虑将文件按页范围分块处理，以避免耗尽堆内存。
+## 结论
+现在，你已经掌握了使用 GroupDocs.Watermark 为 **watermark PDF Java** 文件添加水印的完整、可投入生产的方法。按照上述步骤，你可以保护敏感文档、强化品牌形象并满足版权要求。进一步探索 API 的其他功能，如图片水印、PDF 元数据编辑以及批量处理，以 24 GroupDocs  
 
-**Q: 生产环境是否需要商业许可证？**  
-A: 是的，完整许可证消除试用限制，并提供所有高级功能的访问权限。
-
-**Q: 如果需要更复杂的水印布局怎么办？**  
-A: 该库提供高级功能，如多行水印、对角线放置和条件渲染——详情请参阅 API 参考。
-
-## 其他资源
-- [文档](https://docs.groupdocs.com/watermark/java/)  
-- [API 参考](https://reference.groupdocs.com/watermark/java)  
-- [下载](https://releases.groupdocs.com/watermark/java/)  
+**资源**  
+- [Documentation](https://docs.groupdocs.com/watermark/java/)  
+- [API Reference](https://reference.groupdocs.com/watermark/java)  
+- [Download](https://releases.groupdocs.com/watermark/java/)  
 - [GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [免费支持](https://forum.groupdocs.com/c/watermark/10)  
-- [临时许可证](https://purchase.groupdocs.com/temporary-license/)
-
-通过遵循上述步骤，您现在已经拥有了在 Java 中对 PDF 文件 **how to add watermark** 的坚实基础。将这些模式整合到您自己的服务中，以保护敏感内容、强化品牌并满足合规要求。
-
----
-
-**最后更新：** 2026-08-14  
-**测试环境：** GroupDocs.Watermark 24.11 for Java  
-**作者：** GroupDocs
-
-## 相关教程
-
-- [如何使用 GroupDocs.Watermark for Java 为 PDF 图像批注添加文本水印](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-annotations-java/)
-- [如何使用 GroupDocs.Watermark for Java 为特定 PDF 页面添加文本和图像水印](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [GroupDocs.Watermark for Java：PDF 水印完整指南](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermark-guide/)
+- [Free Support](https://forum.groupdocs.com/c/watermark/10)  
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
