@@ -1,120 +1,42 @@
 ---
-date: '2026-08-09'
-description: Learn how to add watermark to PDF using GroupDocs.Watermark for Java.
-  This java pdf watermark example shows text and image watermarks, saving PDFs with
-  watermark.
-images:
-- /java/pdf-document-watermarking/add-watermarks-to-pdfs-groupdocs-watermark-java/og-image.png
-keywords:
-- add watermark to pdf
-- save pdf with watermark
-- java pdf watermark example
-lastmod: '2026-08-09'
-og_description: Learn how to add watermark to PDF using GroupDocs.Watermark for Java.
-  This step‑by‑step java pdf watermark example helps you save PDF with watermark quickly.
-og_image_alt: Guide showing how to add text and image watermarks to PDF files in Java
-og_title: Add watermark to PDF with GroupDocs.Watermark for Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-09'
-  description: Learn how to add watermark to PDF using GroupDocs.Watermark for Java.
-    This java pdf watermark example shows text and image watermarks, saving PDFs with
-    watermark.
-  headline: Add watermark to PDF with GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to add watermark to PDF using GroupDocs.Watermark for Java.
-    This java pdf watermark example shows text and image watermarks, saving PDFs with
-    watermark.
-  name: Add watermark to PDF with GroupDocs.Watermark for Java
-  steps:
-  - name: create TextWatermark instance
-    text: 'Create a `TextWatermark` using the desired text and font settings: This
-      example sets the watermark text to “Protected image” using Arial, size 8.'
-  - name: set alignment
-    text: 'Center the watermark horizontally and vertically for uniform positioning:'
-  - name: rotate watermark
-    text: 'Apply a 45‑degree rotation to make the watermark harder to remove:'
-  - name: configure sizing
-    text: 'Scale the watermark relative to the target image dimensions:'
-  - name: load image file
-    text: 'Load the watermark image from disk: Replace the placeholder path with the
-      actual location of your logo or seal.'
-  - name: set alignment
-    text: 'Center the image watermark for balanced visual impact:'
-  - name: rotate image watermark
-    text: 'Apply a –30‑degree rotation to introduce visual variation:'
-  - name: configure sizing
-    text: 'Define the image size as a percentage of the underlying image’s width:'
-  - name: open the document
-    text: 'Instantiate a `Watermarker` with the path to your source PDF:'
-  - name: retrieve images
-    text: 'Collect all images from the PDF that can receive a watermark:'
-  type: HowTo
-- questions:
-  - answer: Yes. Open the document with `new Watermarker("file.pdf", "password")`
-      and then apply the watermark as usual.
-    question: Can I add a watermark to a password‑protected PDF?
-  - answer: Absolutely. Loop through a folder of PDFs, instantiate a `Watermarker`
-      for each file, apply the same watermark objects, and save the results.
-    question: Does the API support batch processing of multiple PDFs?
-  - answer: The library can handle **500+ watermarks per document** without performance
-      degradation, thanks to its optimized rendering engine.
-    question: What is the maximum number of watermarks I can add to a single PDF?
-  - answer: Yes. Use the `setOpacity(0)` method on the watermark object to embed it
-      invisibly for forensic tracking.
-    question: Is it possible to make the watermark invisible (metadata only)?
-  - answer: GroupDocs.Watermark for Java supports JDK 8, 11, and 17, ensuring compatibility
-      with both legacy and modern applications.
-    question: Which Java versions are officially supported?
-  type: FAQPage
-tags:
-- pdf watermark
-- GroupDocs.Watermark
-- Java document security
-title: Add watermark to PDF with GroupDocs.Watermark for Java
-type: docs
-url: /java/pdf-document-watermarking/add-watermarks-to-pdfs-groupdocs-watermark-java/
+title: "How to Watermark PDF Using GroupDocs.Watermark for Java"
+description: "Learn how to watermark PDF files with text and image watermarks using GroupDocs.Watermark for Java – a complete guide for PDF document security."
+date: "2026-01-23"
 weight: 1
+url: "/java/pdf-document-watermarking/add-watermarks-to-pdfs-groupdocs-watermark-java/"
+keywords:
+- GroupDocs Watermark Java
+- PDF watermarking
+- Java document security
+- image watermark Java
+type: docs
 ---
+# How to Watermark PDF Using GroupDocs.Watermark for Java
 
-# Add watermark to PDF with GroupDocs.Watermark for Java
+In today's digital world, **how to watermark PDF** files is a common question for anyone who needs to protect intellectual property or brand assets. Adding watermarks—whether text or images—helps you enforce **PDF document security** and makes unauthorized distribution much harder. In this tutorial, you’ll learn step‑by‑step how to use **GroupDocs.Watermark for Java** to add both text and image watermarks to PDF documents.
 
-## Introduction
+## Quick Answers
+- **What library adds watermarks to PDF in Java?** GroupDocs.Watermark for Java.  
+- **Can I add both text and image watermarks?** Yes, the API supports both types.  
+- **Do I need a license?** A free trial works for evaluation; a paid license removes limitations.  
+- **Which Java version is required?** JDK 8 or higher.  
+- **Is Maven supported?** Absolutely – just add the repository and dependency.
 
-In today’s digital landscape, protecting intellectual property is crucial, and **add watermark to PDF** is one of the most effective ways to do it. This tutorial walks you through using GroupDocs.Watermark for Java to embed both text and image watermarks into PDF files. By the end, you’ll be able to:
-
-- Initialize text and image watermarks
-- Apply watermarks conditionally based on image dimensions
-- **save PDF with watermark** while preserving original quality
-
-Ready to secure your documents? Let’s get started!
-
-## Quick answers
-- **Which library adds watermarks to PDFs in Java?** GroupDocs.Watermark for Java.
-- **Can I add both text and image watermarks?** Yes, the API supports both types in a single run.
-- **Do I need a license for development?** A free trial works for testing; a permanent license is required for production.
-- **What file formats are supported?** Over 30 formats, including PDF, DOCX, PPTX, and images.
-- **How large a PDF can be processed?** Up to 2,000 pages without loading the whole file into memory.
-
-## What is add watermark to PDF?
-**Add watermark to PDF** means embedding visible or invisible marks—such as text strings or logos—directly into a PDF file to indicate ownership, confidentiality, or branding. This process modifies the document’s visual layers while keeping the original content intact.
-
-## Why use GroupDocs.Watermark for Java?
-GroupDocs.Watermark supports **30+ document formats**, can process PDFs up to **2,000 pages** in a single pass, and adds up to **500 watermarks per document** without a noticeable performance hit. Its API is fully thread‑safe, making it ideal for high‑throughput server environments.
+## What is PDF Watermarking and Why Use It?
+Watermarking a PDF embeds a visible or invisible marker that identifies ownership, confidentiality, or branding. It’s a lightweight yet powerful way to deter copying, prove authorship, and comply with corporate policies.
 
 ## Prerequisites
 
-Before proceeding, confirm that you have:
+Before you start, make sure you have:
 
-1. **Java Development Kit (JDK):** Version 8 or newer installed.
-2. **GroupDocs.Watermark for Java:** Version 24.11 (or newer) added to your project.
-3. **Build tool:** Maven preferred, but a direct JAR download works as well.
+1. **Java Development Kit (JDK) 8+** installed on your machine.  
+2. **GroupDocs.Watermark for Java** (the latest version).  
+3. **Maven** (or the ability to add a JAR manually).
 
-### Environment setup
+### Environment Setup
 
-#### Maven configuration
-
-Add the GroupDocs repository and dependency to your `pom.xml` file:
+#### Maven Configuration
+Add the GroupDocs repository and the watermark dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -134,147 +56,103 @@ Add the GroupDocs repository and dependency to your `pom.xml` file:
 </dependencies>
 ```
 
-#### Direct download
+#### Direct Download
+If you prefer not to use Maven, you can download the JAR directly from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-Alternatively, download the latest JAR from the official releases page: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### License Acquisition
+To start with a free trial or obtain a temporary license, visit [GroupDocs Licensing](https://purchase.groupdocs.com/temporary-license). For production use, purchase a subscription to unlock all features.
 
-### License acquisition
+## Setting Up GroupDocs.Watermark for Java
 
-For a free trial or a temporary license, visit the licensing portal: [GroupDocs Licensing](https://purchase.groupdocs.com/temporary-license). Production deployments should use a purchased license to remove all trial limitations.
-
-## Setting up GroupDocs.Watermark for Java
-
-After adding the library, import the required classes into your Java source file:
+Import the core class that drives all watermark operations:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
 ```
 
-This import block makes the watermark‑related APIs available throughout your project.
+This import gives you access to the `Watermarker` class, which is the entry point for adding watermarks to any supported document type.
 
-## Implementation guide
+## Step‑by‑Step Implementation
 
-We’ll break the implementation into logical sections, each answering a specific question.
+Below we break the process into logical sections: creating text watermarks, creating image watermarks, and finally applying them to images inside a PDF.
 
-### How do you add watermark to PDF in Java?
+### 1. Initialize a Text Watermark
 
-`Watermarker` is the main class that loads a document and allows watermarks to be applied.  
-Load your PDF with `new Watermarker("input.pdf")` and then apply a watermark object before calling `save("output.pdf")`. This two‑step approach handles both text and image watermarks in a single pass, ensuring the file is **saved PDF with watermark** efficiently.
+**Why a text watermark?** It’s lightweight, searchable, and perfect for adding copyright notices or confidentiality statements.
 
-### Initialize text watermark
-
-**Definition anchor:** `TextWatermark` is the class representing a textual overlay that can be placed on pages, images, or vector graphics within a document.
-
-#### Step 1: create TextWatermark instance
-
-Create a `TextWatermark` using the desired text and font settings:
-
+#### 1.1 Create the TextWatermark Instance
 ```java
 // Create a text watermark with custom settings
 TextWatermark textWatermark = new TextWatermark("Protected image", new Font("Arial", 8));
 ```
 
-This example sets the watermark text to “Protected image” using Arial, size 8.
-
-#### Step 2: set alignment
-
-Center the watermark horizontally and vertically for uniform positioning:
-
+#### 1.2 Set Alignment
 ```java
 // Align watermark to the center of images
 textWatermark.setHorizontalAlignment(HorizontalAlignment.Center);
 textWatermark.setVerticalAlignment(VerticalAlignment.Center);
 ```
 
-#### Step 3: rotate watermark
-
-Apply a 45‑degree rotation to make the watermark harder to remove:
-
+#### 1.3 Rotate the Watermark
 ```java
 // Rotate the watermark by 45 degrees
 textWatermark.setRotateAngle(45);
 ```
 
-#### Step 4: configure sizing
-
-Scale the watermark relative to the target image dimensions:
-
+#### 1.4 Configure Sizing
 ```java
 // Scale watermark based on parent image size
 textWatermark.setSizingType(SizingType.ScaleToParentDimensions);
 textWatermark.setScaleFactor(1);
 ```
 
-### Initialize image watermark
+### 2. Initialize an Image Watermark
 
-**Definition anchor:** `ImageWatermark` encapsulates an image (PNG, JPEG, BMP, etc.) that will be overlaid on the document content as a watermark.
+**When to use an image watermark?** Ideal for branding with logos or for adding complex visual patterns.
 
-#### Step 1: load image file
-
-Load the watermark image from disk:
-
+#### 2.1 Load the Image File
 ```java
 // Load an image file as a watermark
-ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY\ProtectJpg");
+ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY\\ProtectJpg");
 ```
 
-Replace the placeholder path with the actual location of your logo or seal.
-
-#### Step 2: set alignment
-
-Center the image watermark for balanced visual impact:
-
+#### 2.2 Set Alignment
 ```java
 // Align image watermark to the center
 imageWatermark.setHorizontalAlignment(HorizontalAlignment.Center);
 imageWatermark.setVerticalAlignment(VerticalAlignment.Center);
 ```
 
-#### Step 3: rotate image watermark
-
-Apply a –30‑degree rotation to introduce visual variation:
-
+#### 2.3 Rotate the Image Watermark
 ```java
 // Rotate the image watermark by -45 degrees
 textWatermark.setRotateAngle(-45);
 ```
 
-#### Step 4: configure sizing
-
-Define the image size as a percentage of the underlying image’s width:
-
+#### 2.4 Configure Sizing
 ```java
 // Scale the image watermark relative to its parent dimensions
 imageWatermark.setSizingType(SizingType.ScaleToParentDimensions);
 imageWatermark.setScaleFactor(1);
 ```
 
-### Add watermarks to images in a document
+### 3. Add Watermarks to Images Inside a PDF
 
-**Definition anchor:** `Watermarker` is the core class that loads a document, provides access to its elements, and writes watermarks back to the file.
+Now we’ll put everything together: open a PDF, locate every image, and apply either the text or image watermark based on size.
 
-#### Step 1: open the document
-
-Instantiate a `Watermarker` with the path to your source PDF:
-
+#### 3.1 Open the PDF Document
 ```java
 // Open the PDF containing images for watermarking
-Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY\document.pdf");
+Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY\\document.pdf");
 ```
 
-#### Step 2: retrieve images
-
-Collect all images from the PDF that can receive a watermark:
-
+#### 3.2 Retrieve All Images
 ```java
 // Get a collection of all images within the PDF
 WatermarkableImageCollection images = watermarker.getImages();
 ```
 
-#### Step 3: add watermarks conditionally
-
-For each image, check its dimensions; if the width exceeds 300 px, apply the text watermark, otherwise use the image watermark:
-
+#### 3.3 Apply Watermarks Conditionally
 ```java
 for (int i = 0; i < images.getCount(); i++) {
     // Check if the image exceeds specific size criteria
@@ -289,81 +167,65 @@ for (int i = 0; i < images.getCount(); i++) {
 }
 ```
 
-This conditional logic ensures that only suitable images receive the more prominent text overlay, optimizing processing time.
-
-#### Step 4: release image resources
-
-After processing, close the image watermark object to free native resources:
-
+#### 3.4 Release Image Resources
 ```java
 // Close the image watermark instance after use
 imageWatermark.close();
 ```
 
-#### Step 5: save changes
-
-Persist the modifications by saving the document to a new file:
-
+#### 3.5 Save the Modified PDF
 ```java
 // Save the PDF with added watermarks in a new file
-watermarker.save("YOUR_OUTPUT_DIRECTORY\document.pdf");
+watermarker.save("YOUR_OUTPUT_DIRECTORY\\document.pdf");
 ```
 
-The resulting file is a **save PDF with watermark** version ready for distribution.
-
-#### Step 6: clean up
-
-Dispose of the `Watermarker` instance to prevent memory leaks:
-
+#### 3.6 Clean Up
 ```java
 // Close the main watermarker to release document resources
 watermarker.close();
 ```
 
-## Common issues and troubleshooting
+## Practical Applications of PDF Watermarking
 
-- **License errors:** Ensure the license file path is correctly set via `License.setLicense("license_file_path")`. A missing or expired license throws a `LicenseException`.
-- **Large PDFs:** For documents larger than 1,000 pages, enable streaming mode by calling `watermarker.setStreamMode(true)` to keep memory consumption low.
-- **Unsupported image formats:** GroupDocs.Watermark supports PNG, JPEG, BMP, and GIF. Converting other formats to PNG before loading avoids `UnsupportedFormatException`.
+| Use Case | How Watermarking Helps |
+|----------|------------------------|
+| **Document Security** | Marks confidential files, deterring leaks. |
+| **Brand Protection** | Embeds logos on marketing PDFs, reinforcing brand identity. |
+| **Copyright Assertion** | Adds author name or © symbol to assert ownership. |
+| **Version Control** | Shows version numbers or dates directly on the page. |
 
-## Frequently asked questions
+## Common Pitfalls & Tips
 
-**Q: Can I add a watermark to a password‑protected PDF?**  
-A: Yes. Open the document with `new Watermarker("file.pdf", "password")` and then apply the watermark as usual.
+- **Path separators:** Use double backslashes (`\\`) on Windows or forward slashes (`/`) on Linux/macOS to avoid `FileNotFoundException`.
+- **Large PDFs:** Process images in batches or increase JVM heap size (`-Xmx2g`) to prevent OutOfMemory errors.
+- **License limits:** The trial version may limit the number of pages processed; upgrade for unlimited usage.
+- **Rotation confusion:** Remember that `setRotateAngle` expects degrees; negative values rotate counter‑clockwise.
 
-**Q: Does the API support batch processing of multiple PDFs?**  
-A: Absolutely. Loop through a folder of PDFs, instantiate a `Watermarker` for each file, apply the same watermark objects, and save the results.
+## Frequently Asked Questions
 
-**Q: What is the maximum number of watermarks I can add to a single PDF?**  
-A: The library can handle **500+ watermarks per document** without performance degradation, thanks to its optimized rendering engine.
+**Q: Can I watermark password‑protected PDFs?**  
+A: Yes. Open the document with the password using the `Watermarker` constructor that accepts a password string.
 
-**Q: Is it possible to make the watermark invisible (metadata only)?**  
-A: Yes. Use the `setOpacity(0)` method on the watermark object to embed it invisibly for forensic tracking.
+**Q: Does the library support other formats like DOCX or PPTX?**  
+A: Absolutely. GroupDocs.Watermark works with Word, PowerPoint, Excel, and image files as well.
 
-**Q: Which Java versions are officially supported?**  
-A: GroupDocs.Watermark for Java supports JDK 8, 11, and 17, ensuring compatibility with both legacy and modern applications.
+**Q: How do I change the opacity of a watermark?**  
+A: Use `setOpacity(float opacity)` on the watermark object (value between 0.0 and 1.0).
 
-## Practical applications
+**Q: Is it possible to add a watermark to only the first page?**  
+A: Retrieve the page collection via `watermarker.getPages()` and apply the watermark to the desired page index.
 
-Adding watermarks can serve various real‑world scenarios:
-
-1. **Document security:** Mark confidential files to deter unauthorized sharing.
-2. **Brand protection:** Overlay company logos on marketing PDFs.
-3. **Copyright assertion:** Embed author names or copyright symbols on published works.
-4. **Version control:** Stamp version numbers or dates onto draft documents.
+**Q: What if I need to watermark a PDF stored in a cloud bucket?**  
+A: Load the PDF into a `InputStream` and pass it to the `Watermarker` constructor; after processing, write the output stream back to the cloud.
 
 ## Conclusion
 
-By following this **java pdf watermark example**, you now have a complete, production‑ready solution for **add watermark to PDF** using GroupDocs.Watermark for Java. You can customize text, images, rotation, and sizing, as well as conditionally apply watermarks based on image dimensions—all while keeping the process fast and memory‑efficient.
+You now have a complete, production‑ready method for **how to watermark PDF** files using GroupDocs.Watermark for Java. By combining text and image watermarks, you can achieve robust **PDF document security** that meets both branding and compliance requirements. Explore the library’s other features—such as watermark removal or batch processing—to further extend your document workflow.
 
----  
+---
 
-**Last Updated:** 2026-08-09  
+**Last Updated:** 2026-01-23  
 **Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+**Author:** GroupDocs  
 
-## Related Tutorials
-
-- [How to Add Text and Image Watermarks to Specific PDF Pages Using GroupDocs.Watermark for Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Add Print-Only Watermarks to PDFs Using GroupDocs.Watermark Java: A Comprehensive Guide](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-print-only-pdf-watermark/)
-- [Access and Iterate Over PDF Artifacts Using GroupDocs.Watermark in Java for Document Watermarking](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
+---

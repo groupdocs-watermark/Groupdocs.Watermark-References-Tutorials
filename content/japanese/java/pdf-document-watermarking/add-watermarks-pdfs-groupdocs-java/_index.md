@@ -1,114 +1,43 @@
 ---
-date: '2026-08-09'
-description: GroupDocs.Watermark を使用して Java で PDF に透かしを追加する方法を学びます。このステップバイステップのチュートリアルでは、PDF
-  ファイルにテキストおよび画像の透かしを効率的に適用する方法を示します。
+date: '2026-01-26'
+description: GroupDocs.Watermark for Java を使用して PDF ファイルに透かしを付ける方法を学びましょう。このステップバイステップガイドでは、テキストおよび画像の透かしの追加、設定オプション、パフォーマンスのヒントについて説明します。
 keywords:
-- add watermark pdf java
-- GroupDocs watermark java
-- PDF text watermark java
-- PDF image watermark java
-lastmod: '2026-08-09'
-og_description: GroupDocs.Watermark を使用して Java で PDF に透かしを追加する方法を学びます。このステップバイステップのチュートリアルでは、PDF
-  ファイルにテキストおよび画像の透かしを効率的に適用する方法を示します。
-og_image_alt: Screenshot of Java code adding text and image watermarks to a PDF with
-  GroupDocs
-og_title: JavaでPDFに透かしを追加 – GroupDocs PDF透かしガイド
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-09'
-  description: Learn how to add watermark pdf java using GroupDocs.Watermark. This
-    step‑by‑step tutorial shows you how to apply text and image watermarks to PDF
-    files efficiently.
-  headline: Add watermark pdf java – GroupDocs PDF watermark guide
-  type: TechArticle
-- description: Learn how to add watermark pdf java using GroupDocs.Watermark. This
-    step‑by‑step tutorial shows you how to apply text and image watermarks to PDF
-    files efficiently.
-  name: Add watermark pdf java – GroupDocs PDF watermark guide
-  steps:
-  - name: load the pdf document
-    text: First, create a `Watermarker` instance pointing at the source PDF file.
-      This object represents the PDF in memory and provides methods for watermark
-      manipulation. `
-  - name: create a text watermark
-    text: '`TextWatermark` represents a textual overlay that can be placed on a document
-      page. Instantiate a `TextWatermark` object, then set its font, size, color,
-      rotation, and opacity. `'
-  - name: apply the text watermark
-    text: The `add()` method attaches the specified watermark to the document according
-      to the current settings. Call `add()` on the `Watermarker` instance, passing
-      the configured `TextWatermark`. The SDK automatically repeats the watermark
-      on every page unless you specify a page range. `
-  - name: create an image watermark (optional)
-    text: '`ImageWatermark` defines a graphic overlay, such as a logo, that can be
-      positioned and styled on each page. If you prefer a logo, create an `ImageWatermark`
-      with the path to your PNG or JPEG file, then adjust its size and transparency.
-      `'
-  - name: apply the image watermark
-    text: Add the `ImageWatermark` to the same `Watermarker` instance. You can combine
-      text and image watermarks in a single document for layered protection. `
-  - name: save the watermarked pdf
-    text: The `save()` method writes the watermarked document to disk, preserving
-      the original file unchanged. Finally, invoke `save()` on the `Watermarker` and
-      provide the output path. The SDK writes the modified PDF without altering the
-      original file. `
-  type: HowTo
-- questions:
-  - answer: Yes, provide the password when constructing the `Watermarker` object;
-      the SDK decrypts the file, applies the watermark, and re‑encrypts it on save.
-    question: Can I watermark password‑protected PDFs?
-  - answer: Absolutely. Loop through a directory of PDFs, instantiate a `Watermarker`
-      for each file, and apply the same watermark configuration.
-    question: Does the library support batch processing?
-  - answer: PNG, JPEG, BMP, GIF, and TIFF are all supported, and the SDK automatically
-      preserves transparency for PNG files.
-    question: What image formats are accepted for image watermarks?
-  - answer: Use the `setHorizontalAlignment` and `setVerticalAlignment` methods, or
-      specify exact X/Y coordinates with `setLeft` and `setTop`.
-    question: Is there a way to position the watermark at a custom location?
-  - answer: Load the document with `Watermarker`, call `removeAll()` or `removeById()`
-      with the watermark identifier, then save the file.
-    question: How do I remove a watermark that was previously added?
-  type: FAQPage
-tags:
-- add watermark pdf
-- GroupDocs.Watermark
-- Java PDF processing
-title: JavaでPDFに透かしを追加 – GroupDocs PDF透かしガイド
+- GroupDocs Watermark Java
+- PDF text watermark Java
+- PDF image watermark Java
+title: GroupDocs for Java を使用して PDF ドキュメントに透かしを付ける方法（テキストと画像）
 type: docs
 url: /ja/java/pdf-document-watermarking/add-watermarks-pdfs-groupdocs-java/
 weight: 1
 ---
 
-# PDFに透かしを追加する Java – GroupDocs PDF 透かしガイド
+# GroupDocs for Java を使用した PDF ドキュメントへの透かしの付け方（テキスト＆画像）
 
-現代のソフトウェアプロジェクトでは、PDF を不正配布から保護することが不可欠であり、**add watermark pdf java** は多くの企業で一般的な要件です。このチュートリアルでは、GroupDocs.Watermark for Java を使用して PDF ファイルにテキストと画像の透かしの両方を埋め込む方法を説明し、実装をシンプルに保ちながら知的財産を保護するのに役立ちます。
+このチュートリアルでは、**GroupDocs.Watermarkキストと画像の両方で **PDF に透かしを付ける方法** を学び を保護したいだけの場合でも、ライブラリの設定から透かしの外観カスタマイズまで、すべての手順を順を追って説明しますので、PDF に Java スタイルの透かしを迅速かつ安全に追加できます。
 
-## クイック回答
-- **Java で PDF に透かしを追加するライブラリはどれですか？** GroupDocs.Watermark for Java.  
-- **テキストと画像の両方の透かしを追加できますか？** はい、API は単一ドキュメントで両方のタイプをサポートしています。  
-- **開発にライセンスは必要ですか？** 評価用の無料トライアルが利用可能です。製品版では永続ライセンスが必要です。  
-- **必要な Java バージョンは何ですか？** JDK 8 以上。  
-- **SDK が対応するファイル形式は何種類ですか？** PDF、DOCX、PPTX、画像など、70 以上の入力および出力形式に対応しています。
+## Quick Answers
+- **Java で PDF に透かしを追加するライブラリは何ですか？** GroupDocs.Watermark for Java.  
+- **テキスト `TextWatermark` と `ImageWatermark` をサポートしています。  
+- **本番センスが必要ですか？** 評価にはトライアルで動作しますが、商用展開にはフルライセンスが必要です。  
+- **必要な Java バージは不可視所有ドラフト状態を示したり、ブランドガイドラインに従ったりするために **PDF にテキスト透かしを追加** したり **PDF に画像透かしを追加** したりできます。
 
-## GroupDocs.Watermark for Java とは？
-`GroupDocs.Watermark for Java` は、70 以上の文書および画像形式に対して透かしの適用、編集、削除を可能にする専用 SDK です。Adobe Acrobat などの外部ソフトウェアを必要とせず、Java 互換プラットフォーム上で動作します。PDF、Word 文書、スプレッドシート、プレゼンテーション、画像の透かしをサポートし、バッチ処理、カスタム位置設定、透明度制御のための API を提供します。
+## Why use GroupDocs.Watermark for Java?
+- **豊富な機能セット** – テキスト、画像、さらにはカスタムシェイプの透かしをサポート。  
+- **クロスフォーマット対応** – PDF、Word、Excel、PowerPoint などで動作。  
+- **細かな制御** – 不透明度、回転、配置、ページ範囲を調整可能。  
+- **パフォーマンス最適化** – 大規模ドキュメント処理向けに設計。
 
-## なぜ Java で PDF に透かしを追加するのか？
-独立したセキュリティ調査によると、PDF ファイルに透かしを追加することで、管理された環境での不正共有リスクが 85 % 減少します。SDK は標準的な 2.5 GHz CPU 上で 300 ページの PDF を 2 秒未満で処理でき、高スループットのバッチジョブに適しています。
+## Prerequisites
+開始する前に、以下が揃っていることを確認してください。
 
-## 前提条件
-- Java Development Kit 8 以上がインストールされていること。  
-- 依存関係管理のための Maven などのビルドツール（オプションだが推奨）。  
-- GroupDocs.Watermark for Java のライセンス（トライアルまたは有料）へのアクセス。
+- **Java Development Kit (Eclipse**、**Net### Direct Download (keep for reference)
+公式リリースページから手動でライブラリを取得することもできます: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-## Java で PDF に透かしを追加する方法
-PDF を読み込み、透かしを設定し、結果を保存します—すべて数ステップで完了します。以下の説明は、Maven 依存関係を追加済みまたは JAR ファイルをダウンロード済みであることを前提としています。手順は、ドキュメントの読み込み、透かしオブジェクトの作成、視覚プロパティの設定、目的のページへの適用、最後に変更されたファイルの保存です。複数の透かしを連結したり、ページ範囲を指定して選択的に適用することも可能です。
+## Setting Up GroupDocs.Watermark for Java
+### Using Maven
+リポジトリと依存関係を `pom.xml` に追加します:
 
-### 手順 1: PDF ドキュメントを読み込む
-まず、ソース PDF ファイルを指す `Watermarker` インスタンスを作成します。このオブジェクトはメモリ内の PDF を表し、透かし操作のためのメソッドを提供します。  
-
-````xml
+```xml
 <repositories>
     <repository>
         <id>repository.groupdocs.com</id>
@@ -124,125 +53,116 @@ PDF を読み込み、透かしを設定し、結果を保存します—すべ�
         <version>24.11</version>
     </dependency>
 </dependencies>
-````
+```
 
-### 手順 2: テキスト透かしを作成する
-`TextWatermark` は、ドキュメントページに配置できるテキストのオーバーレイを表します。`TextWatermark` オブジェクトをインスタンス化し、フォント、サイズ、色、回転、透明度を設定します。  
+### Basic Initialization
+ライブラリが利用可能になったら、必要なクラスをインポートし、PDF ファイルを指すようにします:
 
-````java
+```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
 
 // Specify your document directory
 String inputPath = "YOUR_DOCUMENT_DIRECTORY/document.pdf";
-PpdfLoadOptions loadOptions = new PdfLoadOptions();
+PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker(inputPath, loadOptions);
-````
+```
 
-### 手順 3: テキスト透かしを適用する
-`add()` メソッドは、現在の設定に従って指定された透かしをドキュメントに付加します。設定済みの `TextWatermark` を渡して `Watermarker` インスタンスで `add()` を呼び出します。ページ範囲を指定しない限り、SDK は自動的にすべてのページに透かしを繰り返し適用します。  
-
-````java
+## Adding a Text Watermark (add text watermark pdf)
+### Step 1: Load the PDF Document
+```java
 PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
-````
+```
 
-### 手順 4: 画像透かしを作成する（オプション）
-`ImageWatermark` は、ロゴなどのグラフィックオーバーレイを定義し、各ページに配置およびスタイル設定できます。ロゴを使用したい場合は、PNG または JPEG ファイルへのパスで `ImageWatermark` を作成し、サイズと透明度を調整します。  
-
-````java
+### Step 2: Create and Configure a Text Watermark
+```java
 import com.groupdocs.watermark.common.HorizontalAlignment;
 import com.groupdocs.watermark.watermarks.Font;
 import com.groupdocs.watermark.watermarks.TextWatermark;
 
 TextWatermark textWatermark = new TextWatermark("This is an artifact watermark", new Font("Arial", 8));
 textWatermark.setHorizontalAlignment(HorizontalAlignment.Right);
-````
+```
 
-### 手順 5: 画像透かしを適用する
-同じ `Watermarker` インスタンスに `ImageWatermark` を追加します。テキスト透かしと画像透かしを単一のドキュメントで組み合わせて、階層的な保護を実現できます。  
-
-````java
+### Step 3: Add the Text Watermark to the PDF Document
+```java
 watermarker.add(textWatermark, null); // Use default options for simplicity
-````
+```
 
-### 手順 6: 透かし付き PDF を保存する
-`save()` メソッドは、透かし付きドキュメントをディスクに書き込み、元のファイルは変更しません。最後に `Watermarker` で `save()` を呼び出し、出力パスを指定します。SDK は元のファイルを変更せずに修正された PDF を書き出します。  
-
-````java
+### Step 4: Save and Close the Watermarked PDF
+```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/out_document.pdf");
 watermarker.close();
-````
+```
 
-## よくある落とし穴とトラブルシューティングのヒント
-- **大きな PDF のメモリ使用量** – `Watermarker.setUseMemoryCache(true)` を呼び出してストリーミングモードを有効にし、500 ページ超のファイルでメモリ消費を 200 MB 未満に抑えます。  
-- **不正確な透明度** – 透明度の値は 0（透明）から 1（不透明）までです。一般的な透かしは 0.3〜0.5 の範囲で控えめな可視性を持たせます。  
-- **ライセンスエラー** – ライセンスファイルがクラスパスに配置されていることを確認してください。配置されていない場合、SDK はトライアルモードにフォールバックし、評価ステータスを示す可視透かしを追加します。
-
-## よくある質問
-
-**Q: パスワードで保護された PDF に透かしを付けられますか？**  
-A: はい、`Watermarker` オブジェクトを作成する際にパスワードを提供すれば、SDK がファイルを復号し、透かしを適用し、保存時に再暗号化します。
-
-**Q: ライブラリはバッチ処理をサポートしていますか？**  
-A: もちろんです。PDF ディレクトリをループし、各ファイルに対して `Watermarker` をインスタンス化し、同じ透かし設定を適用します。
-
-**Q: 画像透かしでサポートされている画像形式は何ですか？**  
-A: PNG、JPEG、BMP、GIF、TIFF がすべてサポートされ、SDK は PNG ファイルの透明性を自動的に保持します。
-
-**Q: カスタム位置に透かしを配置する方法はありますか？**  
-A: `setHorizontalAlignment` と `setVerticalAlignment` メソッドを使用するか、`setLeft` と `setTop` で正確な X/Y 座標を指定します。
-
-**Q: 以前に追加した透かしを削除するにはどうすればよいですか？**  
-A: `Watermarker` でドキュメントを読み込み、`removeAll()` または透かし ID を指定して `removeById()` を呼び出し、ファイルを保存します。
-
-## 実用的な活用例
-透かしの埋め込みは、さまざまな実務シーンで有用です。
-
-1. **法的契約** – 機密契約書を「ドラフト」または「機密」とマークします。  
-2. **Eラーニング** – コース PDF を機関のブランディングで保護します。  
-3. **マーケティング資産** – 配布前にプロモーションパンフレットに会社ロゴを追加します。  
-4. **サブスクリプションサービス** – プレミアムコンテンツに購読者情報をタグ付けし、共有を抑止します。
-
-## パフォーマンス上の考慮点
-- 大量処理時は PDF を並列ストリームで処理します。SDK はスレッドセーフです。  
-- 300 dpi を超えるロゴは画像解像度を下げることで、処理時間を最大 40 % 短縮できます。  
-- 透かしのサイズはページ面積の 10 % 未満に保ち、可読性を維持し、ファイルサイズの過剰な増大を防ぎます。
-
-## 結論
-これで、GroupDocs.Watermark を使用した **add watermark pdf java** の完全な本番対応ロードマップが手に入りました。上記の手順に従うことで、テキストと画像の両方の透かしで PDF を保護しつつ、高いパフォーマンスを維持できます。条件付きページ範囲や動的透かしコンテンツなど、さらに高度なカスタマイズについては、公式ドキュメントの完全な API リファレンスをご確認ください。
-
-さらに機能を確認するには、[GroupDocs documentation](https://docs.groupdocs.com/watermark/java/) をご覧ください。また、最新の SDK は [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) からダウンロードできます。
-
----
-
-**最終更新日:** 2026-08-09  
-**テスト環境:** GroupDocs.Watermark 23.12 for Java  
-**作者:** GroupDocs
-
+## Adding an Image Watermark (add image watermark pdf)
+### Step 1: Load the PDF Document
 ```java
 PdfLoadOptions loadOptions = new PdfLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
+### Step 2: Create and Configure an Image Watermark
 ```java
 import com.groupdocs.watermark.watermarks.ImageWatermark;
 
 ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.bmp");
 ```
 
+### Step 3: Add the Image Watermark to the PDF Document
 ```java
 watermarker.add(imageWatermark, null);
 ```
 
+### Step 4: Close and Save the Watermarked PDF
 ```java
 imageWatermark.close();
 watermarker.save("YOUR_OUTPUT_DIRECTORY/out_document.pdf");
 watermarker.close();
 ```
 
-## 関連チュートリアル
+## Practical Applications
+**GroupDocs.Watermark** を Java プロジェクトに統合することで、さまざまなシナリオでドキュメントを保護できます。
 
-- [GroupDocs.Watermark for Java を使用して PDF にテキスト透かしを追加する方法（2023 ガイド）](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-java/)
-- [GroupDocs.Watermark を使用して Java で画像透かしを追加する方法：ステップバイステップガイド](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [GroupDocs.Watermark Java を使用して PDF に印刷専用透かしを追加する：包括的ガイド](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-print-only-pdf-watermark/)
+1. **法的契約** – 「Confidential」テキスト透かしで機密契約書にマーク。  
+2. **教育資料** – 機関ロゴを埋め込み、無断共有を防止。  
+3. **マーケティング資料** – 企業ロゴで PDF にブランド付与し、一貫したビジュアルアイデンティティを実現。  
+4. **社内レポート** – 半透明透かしでドラフトをフラグ付け。  
+5. **サブスクリプションサービス** – 有料ユーザーに提供するプレミアム PDF を保護。
+
+## Performance Considerations (apply watermark pdf java efficiently)
+- **メモリ管理** – 大きな PDF をチャンクに分割して処理するか、可能な限りストリーミングを使用。  
+- **透かしサイズの最適化** – 小さな画像と低い不透明度で処理時間を短縮。  
+- **ライブラリを最新に保つ** – 新しいバージョンにはパフォーマンス向上やバグ修正が含まれます。
+
+## Common Issues & Solutions
+| 問題 | 解決策 |
+|-------|----------|
+| **大きな PDF で OutOfMemoryError が発生** | `PdfLoadOptions` の `setMemorySavingMode(true)` を使用し、ページを個別に処理します。 |
+| **透かしが表示されない** | 不透明度と色のコントラストを確認し、透かしが正しいページ範囲に追加されていることを確認してください。 |
+| **LicenseException** | `Watermarker` を作成する前に、`License license = new License(); license.setLicense("path/to/license.file");` のように有効なライセンスファイルを適用します。 |
+
+## Frequently Asked Questions
+**Q: テキスト透かしの外観をカスタマイズするにはどうすればよいですか？**  
+A: `TextWatermark` オブジェクトのフォント、サイズ、色、回転、不透明度などのプロパティを調整します。
+
+**Q: 同じ PDF に複数の画像透かしを追加できますか？**  
+A: はい—埋め込みたい各画像に対して `watermarker.add(imageWatermark, null);` を呼び出します。
+
+**Q: 非常に大きな PDF ファイルを扱うベストプラクティスは何ですか？**  
+A: メモリ節約モードを有効にし、ドキュメントを小さなバッチに分けて処理し、リソースは速やかにクローズします。
+
+**Q: GroupDocs.Watermark は PDF 以外の形式もサポートしていますか？**  
+A: もちろんです。Word、Excel、PowerPoint、そしていくつかの画像形式でも動作します。
+
+**Q: 透かし処理中の例外はどのように扱うべきですか？**  
+A:本番。上記の手順に従うことで、**テキスト** と **画像** の両方の透かしを追加し、外観を細かく調整し、任意の Java ベースのアプリケーションに統合できます。
+
+さらに詳しくは公式ドキュメントをご覧ください: [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/)。さまざまな設定を試し、用途に合わせた可視性と控えめさの最適なバランスを見つけてください。
+
+---
+
+**Last Updated:** 2026-01-26  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs

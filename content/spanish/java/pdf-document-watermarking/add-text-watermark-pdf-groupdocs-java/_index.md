@@ -1,112 +1,41 @@
 ---
-date: '2026-08-09'
-description: Aprende cómo agregar una marca de agua java pdf y proteger PDF con marca
-  de agua usando GroupDocs.Watermark for Java. Sigue este tutorial detallado para
-  obtener resultados rápidos y fiables.
+date: '2026-01-21'
+description: Aprende cómo agregar marcas de agua a documentos PDF usando GroupDocs.Watermark
+  para Java. Protege tu propiedad intelectual con facilidad y confianza.
 keywords:
-- java pdf watermark
-- add text watermark pdf
-- protect pdf with watermark
-lastmod: '2026-08-09'
-og_description: Añade una marca de agua java pdf y protege PDF con marca de agua usando
-  GroupDocs.Watermark for Java. Este tutorial te muestra cómo hacerlo en minutos.
-og_image_alt: Screenshot of a Java IDE applying a text watermark to a PDF with GroupDocs.Watermark
-og_title: Añade una marca de agua java pdf con GroupDocs.Watermark – guía rápida
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-09'
-  description: Learn how to add a java pdf watermark and protect pdf with watermark
-    using GroupDocs.Watermark for Java. Follow this detailed tutorial for fast, reliable
-    results.
-  headline: 'How to add a java pdf watermark using GroupDocs.Watermark for Java: a
-    step-by-step guide'
-  type: TechArticle
-- description: Learn how to add a java pdf watermark and protect pdf with watermark
-    using GroupDocs.Watermark for Java. Follow this detailed tutorial for fast, reliable
-    results.
-  name: 'How to add a java pdf watermark using GroupDocs.Watermark for Java: a step-by-step
-    guide'
-  steps:
-  - name: load the PDF document
-    text: 'Load your PDF document using `PdfLoadOptions`: `PdfLoadOptions` specifies
-      how a PDF is opened, including password and rendering options. The `PdfLoadOptions`
-      class tells the library how to interpret the source file, allowing you to open
-      password‑protected PDFs or set custom rendering options.'
-  - name: create and configure the text watermark
-    text: 'Create a `TextWatermark` object and customize it using various properties:
-      `TextWatermark` represents a text overlay that can be styled and positioned
-      on a PDF page. - `setFont` defines the typeface and size of the watermark text.
-      - `setForegroundColor` determines the color (e.g., semi‑transparent g'
-  - name: specify page options
-    text: 'Use `PdfArtifactWatermarkOptions` to add the watermark to specific pages:
-      `PdfArtifactWatermarkOptions` defines which pages and how the watermark is applied
-      to a PDF. The `setPageIndex` method accepts a zero‑based page number; you can
-      also provide a range or a collection to watermark multiple pages '
-  - name: add watermark and save
-    text: 'Add the configured watermark to your document and save it: `Watermarker.add`
-      applies the watermark to the document based on the provided options. The `add`
-      method applies the watermark based on the options you set, and `save` writes
-      the watermarked PDF to disk. After saving, close the `Watermarker` '
-  type: HowTo
-- questions:
-  - answer: Yes – omit the `setPageIndex` call in `PdfArtifactWatermarkOptions` and
-      the watermark will be applied to all pages automatically.
-    question: Can I add a watermark to every page without specifying a page index?
-  - answer: Absolutely. Provide the password via `PdfLoadOptions.setPassword("yourPassword")`
-      before loading the document.
-    question: Does GroupDocs.Watermark support password‑protected PDFs?
-  - answer: The library can handle PDFs larger than 200 MB; it streams pages to keep
-      memory usage under 100 MB on a typical server.
-    question: What is the maximum file size I can process?
-  - answer: A single site‑wide license covers all instances on the same domain, but
-      you must embed the license file on each server.
-    question: Is a separate license required for each server instance?
-  - answer: Yes – use `Watermarker.removeWatermarks()` with appropriate filter criteria
-      to delete specific watermarks.
-    question: Can I remove an existing watermark instead of adding a new one?
-  type: FAQPage
-tags:
-- java pdf watermark
-- groupdocs watermark
-- pdf document protection
-- java document processing
-title: 'Cómo añadir una marca de agua java pdf usando GroupDocs.Watermark for Java:
-  guía paso a paso'
+- text watermark PDF
+- GroupDocs Watermark Java
+- PDF document watermarking
+title: 'Cómo agregar una marca de agua a PDF usando GroupDocs.Watermark para Java:
+  una guía paso a paso'
 type: docs
 url: /es/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/
 weight: 1
 ---
 
-# Cómo agregar una java pdf watermark usando GroupDocs.Watermark para Java: una guía paso a paso
+# Cómo agregar una marca de agua a PDF usando GroupDocs.Watermark para Java: Guía paso a paso
 
-En este tutorial aprenderá cómo agregar una **java pdf watermark** para proteger archivos PDF con una superposición de texto clara y personalizable. Las marcas de agua son esenciales cuando necesita etiquetar borradores confidenciales, marcar informes con la marca de la empresa o incrustar avisos legales. GroupDocs.Watermark para Java ofrece una API sencilla que le permite aplicar marcas de agua a cualquier página, controlar su apariencia y mantener un alto rendimiento incluso con documentos grandes.
+En la era digital actual, **how to add watermark** a un PDF es una pregunta que muchos desarrolladores se hacen cuando necesitan proteger documentos confidenciales o reforzar la identidad de marca. Agregar una marca de agua no solo disuade la copia no autorizada, sino que también marca claramente la propiedad del contenido. En este tutorial aprenderás cómo agregar una marca de agua de texto a páginas específicas de un PDF usando GroupDocs.Watermark para Java, además de consejos para aplicar una marca de agua confidencial PDF, proteger PDF con marca de agua y más.
 
 ## Respuestas rápidas
-- **¿Qué biblioteca agrega una java pdf watermark?** GroupDocs.Watermark for Java.
-- **¿Puedo aplicar marca de agua solo a páginas seleccionadas?** Sí – use `PdfArtifactWatermarkOptions` para seleccionar páginas.
-- **¿Necesito una licencia para producción?** Se requiere una licencia válida; hay una prueba gratuita disponible.
-- **¿Qué versión de Java es compatible?** JDK 8 o superior.
-- **¿Qué tan rápido es el proceso?** Los PDFs de hasta 500 páginas se procesan en menos de 5 segundos en un servidor típico.
+- **¿Qué biblioteca es la mejor para agregar marcas de agua en Java?** GroupDocs.Watermark for Java.  
+- **¿Puedo agregar una marca de agua solo a una página?** Sí – use `PdfArtifactWatermarkOptions.setPageIndex`.  
+- **¿Necesito una licencia?** Una licencia de prueba funciona para evaluación; se requiere una licencia completa para producción.  
+- **¿Qué versión de Java se requiere?** Java 8 o superior con un JDK compatible.  
+- **¿Es posible agregar una marca de agua confidencial PDF?** Absolutamente – simplemente establezca el texto de la marca de agua a “Confidential” y ajuste el estilo.
 
-## Qué es java pdf watermark?
-Una **java pdf watermark** es una superposición de texto o imagen añadida a un archivo PDF mediante una API basada en Java, que marca visualmente el documento mientras preserva el contenido original. Cargue el PDF con `PdfLoadOptions`, cree un `TextWatermark`, configure su estilo y aplíquelo con `Watermarker.add`. Este flujo de dos pasos maneja fuentes, colores y la ubicación en la página automáticamente, de modo que pueda proteger documentos con un código mínimo.
-
-## ¿Por qué usar GroupDocs.Watermark para Java?
-GroupDocs.Watermark admite **más de 30 formatos de entrada y salida** y puede procesar PDFs de hasta **500 páginas** sin cargar todo el archivo en memoria, reduciendo el uso de RAM hasta un **70 %**. La biblioteca se ejecuta en cualquier entorno Java 8+ , ofrece operaciones seguras para subprocesos en trabajos por lotes y proporciona licenciamiento incorporado que elimina los límites de prueba después de la activación.
-
-## Requisitos previos
-Antes de comenzar a aplicar marcas de agua a sus PDFs, asegúrese de contar con lo siguiente:
-
-1. **Bibliotecas y dependencias** – GroupDocs.Watermark para Java versión 24.11 o posterior.  
-2. **Entorno** – Un entorno de desarrollo Java funcional (JDK 8 o superior) y un IDE como IntelliJ IDEA o Eclipse.  
-3. **Conocimientos básicos de Java** – Familiaridad con la programación orientada a objetos y herramientas de construcción Maven o Gradle.
+## ¿Qué es agregar una marca de agua a un PDF?
+Una marca de agua es una superposición semiando internamente estructuras PDF complejas. Soporta procesamiento por lotes, control a nivel de página y una amplia gama de opciones de estilo, lo que lo hacerate demark for Java** versión 24.11 o posterior.  
+2. Un entorno de desarrollo Java (JDK 8 o más reciente, IDE de tu elección).  
+3. Familiaridad básica con la sintaxis de Java y Maven.
 
 ## Configuración de GroupDocs.Watermark para Java
-Para comenzar, integre la biblioteca GroupDocs.Watermark en su proyecto usando Maven o descargando el JAR directamente.
+
+Para integrar la biblioteca, puedes usar Maven o descargar el JAR directamente.
 
 **Integración con Maven**
 
-Agregue la siguiente configuración a su archivo `pom.xml`:
+Agrega el repositorio y la dependencia a tu `pom.xml`:
 
 ```xml
 <repositories>
@@ -128,15 +57,14 @@ Agregue la siguiente configuración a su archivo `pom.xml`:
 
 **Descarga directa**
 
-Alternativamente, descargue la última versión desde [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternativamente, descarga la última versión desde [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Obtención de licencia
-Comience con GroupDocs.Watermark obteniendo una licencia de prueba gratuita o comprando la versión completa. Solicite una [licencia temporal](https://purchase.groupdocs.com/temporary-license/) en su sitio web para acceso temporal sin limitaciones.
+Comienza con una prueba gratuita o compra una licencia completa. Solicita una [temporary license](https://purchase.groupdocs.com/temporary-license/) si solo deseas evaluar el producto.
 
 ### Inicialización y configuración básica
-Una vez instalada, inicialice la biblioteca en su aplicación Java:
+Una vez que la biblioteca esté disponible, inicialízala en tu código Java:
 
-`Watermarker` es la clase principal utilizada para cargar documentos y aplicar marcas de agua.  
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -153,18 +81,15 @@ public class WatermarkSetup {
 }
 ```
 
-La clase `Watermarker` es el punto de entrada principal que carga un documento, aplica marcas de agua y guarda el resultado.
-
 ## Guía de implementación
-Ahora que ha configurado el entorno, añadamos una marca de agua de texto a su PDF.
 
-### Cómo agregar una marca de agua de texto a una página específica en un PDF?
-Para aplicar una marca de agua a una sola página, cargue el PDF, instancie un `TextWatermark` con el texto y estilo deseados, configure `PdfArtifactWatermarkOptions` para apuntar al índice de página específico, añada la marca de agua mediante la instancia `Watermarker` y, finalmente, guarde el documento modificado. Este enfoque funciona para cualquier tamaño de PDF.
+Ahora recorreremos los pasos exactos para **add text watermark pdf** en una página específica.
 
-#### Paso 1: cargar el documento PDF
-Cargue su documento PDF usando `PdfLoadOptions`:
+### Agregar una marca de agua de texto a una página específica
 
-`PdfLoadOptions` especifica cómo se abre un PDF, incluyendo la contraseña y opciones de renderizado.  
+**Visión general:** Este enfoque te permite superponer texto personalizado (p. ej., “Do not copy”, “Confidential”) en cualquier página del PDF.
+
+#### Paso 1: Cargar el documento PDF
 ```java
 // Step 1: Load the PDF document with PdfLoadOptions.
 PdfLoadOptions loadOptions = new PdfLoadOptions();
@@ -172,12 +97,7 @@ String inputFilePath = "YOUR_DOCUMENT_DIRECTORY/document.pdf"; // Replace with y
 Watermarker watermarker = new Watermarker(inputFilePath, loadOptions);
 ```
 
-La clase `PdfLoadOptions` indica a la biblioteca cómo interpretar el archivo fuente, permitiéndole abrir PDFs protegidos con contraseña o establecer opciones de renderizado personalizadas.
-
-#### Paso 2: crear y configurar la marca de agua de texto
-Cree un objeto `TextWatermark` y personalícelo usando varias propiedades:
-
-`TextWatermark` representa una superposición de texto que puede ser estilizada y posicionada en una página PDF.  
+#### Paso 2: Crear y configurar la marca de agua de texto
 ```java
 // Step 2: Create and configure the text watermark.
 import com.groupdocs.watermark.common.HorizontalAlignment;
@@ -196,26 +116,22 @@ watermark.setSizingType(SizingType.ScaleToParentDimensions);
 watermark.setScaleFactor(1.0);
 ```
 
-- `setFont` define la tipografía y el tamaño del texto de la marca de agua.  
-- `setForegroundColor` determina el color (p. ej., gris semitransparente).  
-- Las propiedades de alineación (`setHorizontalAlignment`, `setVerticalAlignment`) posicionan la marca de agua con precisión en la página.
+**Explicación:**  
+- `setFont` – elige el tipo de letra y el tamaño.  
+- `setForegroundColor` – define el color de la marca de agua.  
+- Las propiedades de alineación posicionan la marca de agua exactamente donde la deseas.  
+- `SizingType.ScaleToParentDimensions` asegura que la marca de agua se escale con el tamaño de la página, lo cual es útil cuando **protect pdf with watermark** para documentos de dimensiones variables.
 
-#### Paso 3: especificar opciones de página
-Use `PdfArtifactWatermarkOptions` para agregar la marca de agua a páginas específicas:
-
-`PdfArtifactWatermarkOptions` define qué páginas y cómo se aplica la marca de agua a un PDF.  
+#### Paso 3: Especificar opciones de página (Agregar marca de agua a página específica)
 ```java
 // Step 3: Specify page options for adding the watermark.
 PdfArtifactWatermarkOptions options = new PdfArtifactWatermarkOptions();
 options.setPageIndex(0); // Add watermark to the first page (index 0)
 ```
 
-El método `setPageIndex` acepta un número de página basado en cero; también puede proporcionar un rango o una colección para aplicar marcas de agua a varias páginas en una sola llamada.
+Puedes cambiar `setPageIndex` a cualquier número de página basado en cero, o llamar a `options.setPageIndexes(new int[]{0,2,4})` para apuntar a varias páginas.
 
-#### Paso 4: agregar la marca de agua y guardar
-Agregue la marca de agua configurada a su documento y guárdelo:
-
-`Watermarker.add` aplica la marca de agua al documento según las opciones proporcionadas.  
+#### Paso 4: Agregar la marca de agua y guardar
 ```java
 // Step 4: Add the text watermark to the document.
 watermarker.add(watermark, options);
@@ -223,59 +139,36 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/watermarked_document.pdf");
 watermarker.close();
 ```
 
-El método `add` aplica la marca de agua según las opciones que configuró, y `save` escribe el PDF marcado en disco. Después de guardar, cierre la instancia `Watermarker` para liberar recursos.
+**Explicación:**  
+- `add` aplica la marca de agua usando las opciones que definiste.  
+- `save` escribe el nuevo PDF en disco.  
+- Cerrar el `Watermarker` libera recursos, lo cual es importante para el procesamiento a gran escala.
 
-## Problemas comunes y soluciones
-1. **Errores de ruta de archivo** – Verifique que las rutas de entrada y salida sean correctas y que la aplicación tenga permisos de lectura/escritura.  
-2. **Fuentes faltantes** – Asegúrese de que la fuente que especifica en `setFont` esté instalada en el servidor o incluida con su aplicación.  
-3. **Restricciones de licencia** – Si ve mensajes de límite de prueba, verifique que el archivo de licencia se haya cargado correctamente mediante `License.setLicense("path/to/license.json")`.  
+### Consejos de solución de problemas
+1. **File paths:** Verifica que los directorios de entrada y salida existan; de lo contrario verás una `FileNotFoundException`.  
+2. **Font availability:** La fuente que especifiques debe estar instalada en la máquina host; de lo contrario la biblioteca recurre a una fuente predeterminada.  
+3. **License errors:** Si encuentras “trial limit exceeded”, asegúrate de que se cargue un archivo de licencia válido mediante `License.setLicense("path/to/license.file")`.
 
 ## Aplicaciones prácticas
-A continuación se presentan algunos escenarios del mundo real donde agregar una java pdf watermark es especialmente útil:
+- **Confidentiality Notices:** Usa “Confidential” o “Internal Use Only” como texto de la marca de agua.  
+- **Branding:** Inserta el nombre o eslogan de tu empresa para reforzar la identidad de marca.  
+- **rega identificadores únicos a Consideraciones de rendimiento
+Al procesar PDFs grandes o por lotes:
 
-- **Avisos de confidencialidad** – Marque borradores con “CONFIDENTIAL” para desalentar la distribución no autorizada.  
-- **Branding** – Superponga el nombre o logotipo de su empresa en informes, propuestas y material de marketing.  
-- **Cumplimiento normativo** – Incruste declaraciones legales como “DO NOT DISTRIBUTE” en documentos regulados.  
-- **Entradas de eventos** – Añada identificadores únicos a entradas digitales para prevenir fraudes.  
-
-## Consideraciones de rendimiento
-Al trabajar con archivos PDF grandes, tenga en cuenta los siguientes consejos:
-
-- **Procesamiento por lotes** – Agrupe varios archivos en un solo trabajo para reducir la sobrecarga de inicio de la JVM.  
-- **Gestión de memoria** – Llame a `watermarker.close()` después de cada documento para liberar recursos nativos.  
-- **Optimización del tamaño de archivo** – Reduzca la resolución de imágenes o elimine objetos no utilizados antes de aplicar la marca de agua para mantener bajo el tamaño final del archivo.  
+- **Batch Processing:** Recorre una lista de archivos y reutiliza una única instancia de `Watermarker` cuando sea posible.  
+- **Memory Management:** Siempre llama a `watermarker.close()` después de cada documento.  
+- **File Size:** Reduce la resolución o elimina objetos no usados antes de aplicar la marca de agua para mantener el tamaño final del archivo manejable.
 
 ## Conclusión
-Ahora dispone de un método completo y listo para producción para agregar una java pdf watermark usando GroupDocs.Watermark para Java. Esta capacidad le ayuda a **proteger pdf con marca de agua**, reforzar la identidad corporativa y cumplir con los requisitos de cumplimiento con solo unas pocas líneas de código.
+Ahora sabes **how to add watermark** a archivos PDF usando GroupDocs.Watermark para Java, fuentes, colores y selecciones de página para adaptarlos a las necesidades de tuDocs.W: Un JDK compatible (8 o superior) y un IDE como IntelliJ IDEA o Eclipse.
 
-**Próximos pasos**
-- Experimente con diferentes fuentes, colores y ángulos de rotación para que coincidan con la guía de estilo corporativa.  
-- Explore marcas de agua de imagen o superposiciones combinadas de texto y imagen para una protección más completa.  
-- Integre el flujo de marcas de agua en su canal CI/CD para etiquetar automáticamente los informes generados.  
+**Q: ¿Puedo agregar marcas de agua a todas las páginas de un documento PDF?**  
+A: Sí—omite la llamada a `setPageIndex` o usa `options.setAllPages(true)` para aplicar la marca de agua globalmente.
 
-## Preguntas frecuentes
-**Q: ¿Puedo agregar una marca de agua a cada página sin especificar un índice de página?**  
-A: Sí – omita la llamada `setPageIndex` en `PdfArtifactWatermarkOptions` y la marca de agua se aplicará a todas las páginas automáticamente.
+**Q: ¿Cómo elimino marcas de agua de un PDF usando GroupDocs.Watermark?**  
+A: Usa el método `watermarker.remove(watermark)` después de cargar el documento y luego guarda el resultado.
 
-**Q: ¿GroupDocs.Watermark admite PDFs protegidos con contraseña?**  
-A: Absolutamente. Proporcione la contraseña mediante `PdfLoadOptions.setPassword("yourPassword")` antes de cargar el documento.
+** de agua a PDFs protegidos con contraseña?**  
+A: Sí—proporciona la contraseña mediante `PdfLoadOptions.setPassword("yourPassword")` antes de cargar.
 
-**Q: ¿Cuál es el tamaño máximo de archivo que puedo procesar?**  
-A: La biblioteca puede manejar PDFs de más de 200 MB; transmite las páginas para mantener el uso de memoria por debajo de 100 MB en un servidor típico.
-
-**Q: ¿Se requiere una licencia separada para cada instancia del servidor?**  
-A: Una licencia única para todo el sitio cubre todas las instancias en el mismo dominio, pero debe incrustar el archivo de licencia en cada servidor.
-
-**Q: ¿Puedo eliminar una marca de agua existente en lugar de agregar una nueva?**  
-A: Sí – use `Watermarker.removeWatermarks()` con los criterios de filtro apropiados para eliminar marcas de agua específicas.
-
----
-
-**Última actualización:** 2026-08-09  
-**Probado con:** GroupDocs.Watermark for Java 24.11  
-**Autor:** GroupDocs
-
-## Tutoriales relacionados
-- [Cómo agregar una marca de agua de imagen en Java usando GroupDocs.Watermark: una guía paso a paso](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [Cómo agregar marcas de agua de texto e imagen a páginas PDF específicas usando GroupDocs.Watermark para Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Domine la manipulación de PDF: implemente GroupDocs.Watermark en Java para marcas de agua y gestión de documentos](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-manipulation-guide/)
+**Q: ¿GroupDocs.Watermark admiteÚltima actualización:**

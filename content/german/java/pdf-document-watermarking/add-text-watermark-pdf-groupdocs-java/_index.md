@@ -1,115 +1,44 @@
 ---
-date: '2026-08-09'
-description: Erfahren Sie, wie Sie ein java pdf watermark hinzufügen und PDFs mit
-  watermark schützen, indem Sie GroupDocs.Watermark for Java verwenden. Folgen Sie
-  diesem ausführlichen Tutorial für schnelle, zuverlässige Ergebnisse.
+date: '2026-01-21'
+description: Erfahren Sie, wie Sie Wasserzeichen zu PDF‑Dokumenten mit GroupDocs.Watermark
+  für Java hinzufügen. Schützen Sie Ihr geistiges Eigentum mühelos und mit Vertrauen.
 keywords:
-- java pdf watermark
-- add text watermark pdf
-- protect pdf with watermark
-lastmod: '2026-08-09'
-og_description: Fügen Sie ein java pdf watermark hinzu und schützen Sie PDFs mit watermark
-  mithilfe von GroupDocs.Watermark for Java. Dieses Tutorial zeigt Ihnen, wie es in
-  wenigen Minuten geht.
-og_image_alt: Screenshot of a Java IDE applying a text watermark to a PDF with GroupDocs.Watermark
-og_title: java pdf watermark mit GroupDocs.Watermark hinzufügen – Schnellleitfaden
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-09'
-  description: Learn how to add a java pdf watermark and protect pdf with watermark
-    using GroupDocs.Watermark for Java. Follow this detailed tutorial for fast, reliable
-    results.
-  headline: 'How to add a java pdf watermark using GroupDocs.Watermark for Java: a
-    step-by-step guide'
-  type: TechArticle
-- description: Learn how to add a java pdf watermark and protect pdf with watermark
-    using GroupDocs.Watermark for Java. Follow this detailed tutorial for fast, reliable
-    results.
-  name: 'How to add a java pdf watermark using GroupDocs.Watermark for Java: a step-by-step
-    guide'
-  steps:
-  - name: load the PDF document
-    text: 'Load your PDF document using `PdfLoadOptions`: `PdfLoadOptions` specifies
-      how a PDF is opened, including password and rendering options. The `PdfLoadOptions`
-      class tells the library how to interpret the source file, allowing you to open
-      password‑protected PDFs or set custom rendering options.'
-  - name: create and configure the text watermark
-    text: 'Create a `TextWatermark` object and customize it using various properties:
-      `TextWatermark` represents a text overlay that can be styled and positioned
-      on a PDF page. - `setFont` defines the typeface and size of the watermark text.
-      - `setForegroundColor` determines the color (e.g., semi‑transparent g'
-  - name: specify page options
-    text: 'Use `PdfArtifactWatermarkOptions` to add the watermark to specific pages:
-      `PdfArtifactWatermarkOptions` defines which pages and how the watermark is applied
-      to a PDF. The `setPageIndex` method accepts a zero‑based page number; you can
-      also provide a range or a collection to watermark multiple pages '
-  - name: add watermark and save
-    text: 'Add the configured watermark to your document and save it: `Watermarker.add`
-      applies the watermark to the document based on the provided options. The `add`
-      method applies the watermark based on the options you set, and `save` writes
-      the watermarked PDF to disk. After saving, close the `Watermarker` '
-  type: HowTo
-- questions:
-  - answer: Yes – omit the `setPageIndex` call in `PdfArtifactWatermarkOptions` and
-      the watermark will be applied to all pages automatically.
-    question: Can I add a watermark to every page without specifying a page index?
-  - answer: Absolutely. Provide the password via `PdfLoadOptions.setPassword("yourPassword")`
-      before loading the document.
-    question: Does GroupDocs.Watermark support password‑protected PDFs?
-  - answer: The library can handle PDFs larger than 200 MB; it streams pages to keep
-      memory usage under 100 MB on a typical server.
-    question: What is the maximum file size I can process?
-  - answer: A single site‑wide license covers all instances on the same domain, but
-      you must embed the license file on each server.
-    question: Is a separate license required for each server instance?
-  - answer: Yes – use `Watermarker.removeWatermarks()` with appropriate filter criteria
-      to delete specific watermarks.
-    question: Can I remove an existing watermark instead of adding a new one?
-  type: FAQPage
-tags:
-- java pdf watermark
-- groupdocs watermark
-- pdf document protection
-- java document processing
-title: 'So fügen Sie ein java pdf watermark mit GroupDocs.Watermark for Java hinzu:
-  Eine Schritt‑für‑Schritt‑Anleitung'
+- text watermark PDF
+- GroupDocs Watermark Java
+- PDF document watermarking
+title: 'So fügen Sie einem PDF mit GroupDocs.Watermark für Java ein Wasserzeichen
+  hinzu: Eine Schritt‑für‑Schritt‑Anleitung'
 type: docs
 url: /de/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/
 weight: 1
 ---
 
-# Wie man ein java pdf watermark mit GroupDocs.Watermark für Java hinzufügt: Eine Schritt-für-Schritt-Anleitung
+# Wie man ein Wasserzeichen zu PDF mit GroupDocs.Watermark für Java hinzufügt: Eine Schritt‑für‑Schritt‑Anleitung
 
-In diesem Tutorial lernen Sie, wie Sie ein **java pdf watermark** hinzufügen, um PDF-Dateien mit einer klaren, anpassbaren Textüberlagerung zu schützen. Wasserzeichen sind unverzichtbar, wenn Sie vertrauliche Entwürfe kennzeichnen, Berichte branden oder rechtliche Hinweise einbetten müssen. GroupDocs.Watermark für Java bietet eine unkomplizierte API, mit der Sie Wasserzeichen auf jeder Seite anwenden, das Aussehen steuern und die Leistung auch bei großen Dokumenten hoch halten können.
+Im heutigen digitalen Zeitalter ist **how to add watermark** zu einem PDF eine Frage, die sich viele Entwickler stellen, wenn sie vertrauliche Dokumente schützen oder die Markenidentität stärken müssen. Das Hinzufügen eines Wasserzeichens verhindert nicht nur unbefugzeichen zu bestimmten Seiten eines PDFs mit GroupDocs.Watermark für Java hinzufügen, sowie Tipps zum Anwenden einess, zum Schutz von PDFs mit Wasserzeichen und mehr.
 
 ## Schnelle Antworten
-- **Welche Bibliothek fügt ein java pdf watermark hinzu?** GroupDocs.Watermark for Java.
-- **Kann ich nur ausgewählte Seiten wasserzeichen?** Ja – verwenden Sie `PdfArtifactWatermarkOptions`, um Seiten zu adressieren.
-- **Benötige ich eine Lizenz für die Produktion?** Eine gültige Lizenz ist erforderlich; ein kostenloser Testzeitraum ist verfügbar.
-- **Welche Java-Version wird unterstützt?** JDK 8 oder neuer.
-- **Wie schnell ist der Vorgang?** PDFs mit bis zu 500 Seiten werden in weniger als 5 Sekunden auf einem typischen Server verarbeitet.
+- **Welche Bibliothek ist am besten zum Hinzufügen von Wasserzeichen in Java?** GroupDocs.Watermark for Java.  
+- **Kann ich ein Wasserzeichen nur zu einer benötigt?oderzeichen‑PDF hinzuzufügen?** Absolut – setzen Sie einfach den Wasserzeichentext auf „Confidential“ und passen Sie das Styling an.
 
-## Was ist ein java pdf watermark?
-Ein **java pdf watermark** ist eine Text‑ oder Bildüberlagerung, die über eine Java‑basierte API zu einer PDF‑Datei hinzugefügt wird und das Dokument sichtbar kennzeichnet, während der Originalinhalt erhalten bleibt. Laden Sie das PDF mit `PdfLoadOptions`, erstellen Sie ein `TextWatermark`, konfigurieren Sie dessen Stil und wenden Sie es mit `Watermarker.add` an. Dieser zweistufige Ablauf verarbeitet Schriftarten, Farben und Seitenpositionierung automatisch, sodass Sie Dokumente mit minimalem Code schützen können.
+## Was bedeutet das Hinzufügen eines Wasserzeichens zu einem PDF?
+Ein Wasserzeichen ist ein halbtransparentes Overlay – Text oder Bild –, das hinter oder vor dem Seiteninhalt erscheint. Es wird häufig verwendet, um **add confidential watermark PDF**‑Hinweise, Markenlogos oder Entwurfskennzeichnungen hinzuzufügen.
 
 ## Warum GroupDocs.Watermark für Java verwenden?
-GroupDocs.Watermark unterstützt **30+ Eingabe‑ und Ausgabeformate** und kann PDFs mit bis zu **500 Seiten** verarbeiten, ohne die gesamte Datei in den Speicher zu laden, wodurch der RAM‑Verbrauch um bis zu **70 %** reduziert wird. Die Bibliothek läuft auf jeder Java 8+ Runtime, bietet thread‑sichere Operationen für Batch‑Jobs und stellt integrierte Lizenzierung bereit, die nach Aktivierung die Testbeschränkungen aufhebt.
+GroupDocs.Watermark bietet eine einfache API für **apply watermark PDF Java**‑Entwickler und verarbeitet intern komplexe PDF‑Strukturen. Es unterstützt Batch‑Verarbeitung, Seiten‑Kontrolle und eine Vielzahl von Styling‑Optionen, wodurch es sowohl für kleine Hilfsprogramme als auch für groß angelegte Dokument‑Pipelines ideal ist.
 
 ## Voraussetzungen
-
-Bevor Sie mit dem Wasserzeichen Ihrer PDFs beginnen, stellen Sie sicher, dass Sie Folgendes haben:
-
-1. **Bibliotheken und Abhängigkeiten** – GroupDocs.Watermark für Java Version 24.11 oder höher.  
-2. **Umgebung** – Eine funktionierende Java‑Entwicklungsumgebung (JDK 8 oder neuer) und eine IDE wie IntelliJ IDEA oder Eclipse.  
-3. **Grundlegende Java‑Kenntnisse** – Vertrautheit mit objektorientierter Programmierung sowie Maven‑ oder Gradle‑Build‑Tools.
+1. **GroupDocs.Watermark for Java** Version 24.11 oder neuer.  
+2. Eine Java‑Entwicklungsumgebung (JDK 8 oder neuer, IDE Ihrer Wahl).  
+3. Grundlegende Kenntnisse der Java‑Syntax und Maven.
 
 ## Einrichtung von GroupDocs.Watermark für Java
 
-Um zu beginnen, integrieren Sie die GroupDocs.Watermark‑Bibliothek in Ihr Projekt mittels Maven oder durch direktes Herunterladen des JARs.
+Um die Bibliothek zu integrieren, können Sie Maven verwenden oder das JAR direkt herunterladen.
 
 **Maven-Integration**
 
-Fügen Sie die folgende Konfiguration zu Ihrer `pom.xml`‑Datei hinzu:
+Fügen Sie das Repository undhängigkeit zu Ihrer `pom.xml` hinzu:
 
 ```xml
 <repositories>
@@ -131,17 +60,14 @@ Fügen Sie die folgende Konfiguration zu Ihrer `pom.xml`‑Datei hinzu:
 
 **Direkter Download**
 
-Alternativ laden Sie die neueste Version von [GroupDocs.Watermark für Java Releases](https://releases.groupdocs.com/watermark/java/) herunter.
+Alternativ können Sie die neueste Version von [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) herunterladen.
 
 ### Lizenzbeschaffung
-
-Beginnen Sie mit GroupDocs.Watermark, indem Sie eine kostenlose Testlizenz erwerben oder die Vollversion kaufen. Beantragen Sie eine [temporäre Lizenz](https://purchase.groupdocs.com/temporary-license/) auf deren Website für temporären Zugriff ohne Einschränkungen.
+Beginnen Sie mit einer kostenlosen Testversion oder erwerben Sie eine Volllizenz. Beantragen Sie eine [temporary license](https://purchase.groupdocs.com/temporary-license/), wenn Sie das Produkt nur evaluieren möchten.
 
 ### Grundlegende Initialisierung und Einrichtung
+Sobald die Bibliothek verfügbar ist, initialisieren Sie sie in Ihrem Java‑Code:
 
-Nach der Installation initialisieren Sie die Bibliothek in Ihrer Java‑Anwendung:
-
-`Watermarker` ist die Hauptklasse, die zum Laden von Dokumenten und Anwenden von Wasserzeichen verwendet wird.  
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.PdfLoadOptions;
@@ -158,21 +84,15 @@ public class WatermarkSetup {
 }
 ```
 
-Die Klasse `Watermarker` ist der zentrale Einstiegspunkt, der ein Dokument lädt, Wasserzeichen anwendet und das Ergebnis speichert.
+faden
 
-## Implementierungsleitfaden
+Jetzt gehen wir die genauen Schritte durch, um **add text watermark pdf** auf einer bestimmten Seite hinzuzufügen.
 
-Jetzt, da Sie die Umgebung eingerichtet haben, fügen wir ein Textwasserzeichen zu Ihrem PDF hinzu.
+### Hinzufügen eines Text‑Wasserzeichens zu einer bestimmten Seite
 
-### Wie fügt man ein Textwasserzeichen zu einer bestimmten Seite in einem PDF hinzu?
-
-Um eine einzelne Seite zu wasserzeichen, laden Sie das PDF, instanziieren Sie ein `TextWatermark` mit dem gewünschten Text und Stil, konfigurieren Sie `PdfArtifactWatermarkOptions`, um den spezifischen Seitenindex anzusprechen, fügen Sie das Wasserzeichen über die `Watermarker`‑Instanz hinzu und speichern schließlich das modifizierte Dokument. Dieser Ansatz funktioniert für PDFs jeder Größe.
+**Übersicht:** Dieser Ansatz ermöglicht es Ihnen, benutzerdefinierten Text (z. B. „Do not copy“, „Confidential“) auf jeder Seite des PDFs zu überlagern.
 
 #### Schritt 1: PDF‑Dokument laden
-
-Laden Sie Ihr PDF‑Dokument mit `PdfLoadOptions`:
-
-`PdfLoadOptions` gibt an, wie ein PDF geöffnet wird, einschließlich Passwort‑ und Rendering‑Optionen.  
 ```java
 // Step 1: Load the PDF document with PdfLoadOptions.
 PdfLoadOptions loadOptions = new PdfLoadOptions();
@@ -180,13 +100,7 @@ String inputFilePath = "YOUR_DOCUMENT_DIRECTORY/document.pdf"; // Replace with y
 Watermarker watermarker = new Watermarker(inputFilePath, loadOptions);
 ```
 
-Die Klasse `PdfLoadOptions` teilt der Bibliothek mit, wie die Quelldatei zu interpretieren ist, sodass Sie passwortgeschützte PDFs öffnen oder benutzerdefinierte Rendering‑Optionen festlegen können.
-
-#### Schritt 2: Textwasserzeichen erstellen und konfigurieren
-
-Erstellen Sie ein `TextWatermark`‑Objekt und passen Sie es mit verschiedenen Eigenschaften an:
-
-`TextWatermark` stellt eine Textüberlagerung dar, die auf einer PDF‑Seite gestaltet und positioniert werden kann.  
+#### Schritt 2: Text‑Wasserzeichen erstellen und konfigurieren
 ```java
 // Step 2: Create and configure the text watermark.
 import com.groupdocs.watermark.common.HorizontalAlignment;
@@ -205,28 +119,22 @@ watermark.setSizingType(SizingType.ScaleToParentDimensions);
 watermark.setScaleFactor(1.0);
 ```
 
-- `setFont` definiert die Schriftart und Größe des Wasserzeichentextes.  
-- `setForegroundColor` bestimmt die Farbe (z. B. halbtransparentes Grau).  
-- Ausrichtungs‑Eigenschaften (`setHorizontalAlignment`, `setVerticalAlignment`) positionieren das Wasserzeichen präzise auf der Seite.
+**Erklärung:**  
+- `setFont` – wählt die Schriftart und Größe aus.  
+- `setForegroundColor` – definiert die Farbe des Wasserzeichens.  
+- Ausrichtungs‑Eigenschaften positionieren das Wasserzeichen genau dort, wo Sie es benötigen.  
+- `SizingType.ScaleToParentDimensions` sorgt dafür, dass das Wasserzeichen mit der Seitengröße skaliert, was nützlich ist, wenn **protect pdf with watermark** für Dokumente unterschiedlicher Abmessungen verwendet wird.
 
-#### Schritt 3: Seitenoptionen festlegen
-
-Verwenden Sie `PdfArtifactWatermarkOptions`, um das Wasserzeichen zu bestimmten Seiten hinzuzufügen:
-
-`PdfArtifactWatermarkOptions` definiert, auf welchen Seiten und wie das Wasserzeichen auf ein PDF angewendet wird.  
+#### Schritt 3: Seiten‑Optionen festlegen (Wasserzeichen zu bestimmter Seite hinzufügen)
 ```java
 // Step 3: Specify page options for adding the watermark.
 PdfArtifactWatermarkOptions options = new PdfArtifactWatermarkOptions();
 options.setPageIndex(0); // Add watermark to the first page (index 0)
 ```
 
-Die Methode `setPageIndex` akzeptiert eine nullbasierte Seitennummer; Sie können auch einen Bereich oder eine Sammlung angeben, um mehrere Seiten in einem Aufruf zu wasserzeichen.
+Sie können `setPageIndex` auf jede nullbasierte Seitennummer ändern oder `options.setPageIndexes(new int[]{0,2,4})` aufrufen, um mehrere Seiten anzusprechen.
 
 #### Schritt 4: Wasserzeichen hinzufügen und speichern
-
-Fügen Sie das konfigurierte Wasserzeichen zu Ihrem Dokument hinzu und speichern Sie es:
-
-`Watermarker.add` wendet das Wasserzeichen auf das Dokument basierend auf den angegebenen Optionen an.  
 ```java
 // Step 4: Add the text watermark to the document.
 watermarker.add(watermark, options);
@@ -234,65 +142,47 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/watermarked_document.pdf");
 watermarker.close();
 ```
 
-Die Methode `add` wendet das Wasserzeichen gemäß den von Ihnen festgelegten Optionen an, und `save` schreibt das wassergezeichnete PDF auf die Festplatte. Nach dem Speichern schließen Sie die `Watermarker`‑Instanz, um Ressourcen freizugeben.
+**Erklärung:**  
+- `add` wendet das Wasserzeichen mit den von Ihnen definierten Optionen an.  
+- `save` schreibt das neue PDF auf die Festplatte.  
+- Das Sch gibt Ressourcen frei, was bei groß angelegter Verarbeitung wichtig ist.
 
-## Häufige Probleme und Lösungen
-
-1. **Dateipfad‑Fehler** – Stellen Sie sicher, dass die Eingabe‑ und Ausgabepfade korrekt sind und die Anwendung Lese‑/Schreibrechte hat.  
-2. **Fehlende Schriftarten** – Vergewissern Sie sich, dass die in `setFont` angegebene Schriftart auf dem Server installiert oder mit Ihrer Anwendung gebündelt ist.  
-3. **Lizenzbeschränkungen** – Wenn Sie Meldungen über Testlimits sehen, prüfen Sie, ob die Lizenzdatei korrekt über `License.setLicense("path/to/license.json")` geladen wurde.
+### Tipps zur Fehlers; andernfalls erhalten Sie eine `FileNotFoundException`.  
+2. **Schriftverfügbarkeit:** Die von Ihnen angegebene Schrift muss auf dem Host‑System installiert sein; andernfalls greift die Bibliothek auf eine Standardschrift zurück.  
+3. **Lizenzfehler:** Wenn Sie „trial limit exceeded“ sehen, stellen Sie sicher, dass eine gültige Lizenzdatei über `")` geladen wird.
 
 ## Praktische Anwendungen
-
-Hier sind einige Praxisbeispiele, bei denen das Hinzufügen eines java pdf watermark besonders nützlich ist:
-
-- **Vertraulichkeits‑Hinweise** – Kennzeichnen Sie Entwürfe mit „CONFIDENTIAL“, um unbefugtes Teilen zu verhindern.  
-- **Branding** – Überlagern Sie Ihren Firmennamen oder Ihr Logo auf Berichten, Angeboten und Marketingmaterialien.  
-- **Regulatorische Konformität** – Betten Sie rechtliche Hinweise wie „DO NOT DISTRIBUTE“ in regulierte Dokumente ein.  
-- **Event‑Tickets** – Fügen Sie digitale Tickets eindeutige Kennungen hinzu, um Betrug zu verhindern.
-
-## Leistungsüberlegungen
-
-Beim Arbeiten mit großen PDF‑Dateien beachten Sie folgende Tipps:
-
-- **Batch‑Verarbeitung** – Gruppieren Sie mehrere Dateien zu einem einzigen Job, um den JVM‑Start‑Overhead zu reduzieren.  
-- **Speicherverwaltung** – Rufen Sie `watermarker.close()` nach jedem Dokument auf, um native Ressourcen freizugeben.  
-- **Dateigrößen‑Optimierung** – Reduzieren Sie die Bildauflösung oder entfernen Sie ungenutzte Objekte vor dem Wasserzeichen, um die endgültige Dateigröße gering zu halten.
+- **Vertraulichkeits‑Hinweise:** Verwenden Sie „Confidential“ oder „Internal Use Only die MarkenidentitätBatch‑iliste und verwenden Sie nach Möglichkeit eine einzelne `Watermarker`‑Instanz erneut.  
+- **Speicherverwaltung:** Rufen Sie stets `watermarker.close()` nach jedem Dokument auf.  
+- **Dateigröße:** Reduzieren Sie die Auflösung oder entfernen Sie ungenutzte Ob Wasserzeichen, um die endgültige Dateigröße handhabbar zu halten.
 
 ## Fazit
-
-Sie haben nun eine vollständige, produktionsreife Methode, um ein java pdf watermark mit GroupDocs.Watermark für Java hinzuzufügen. Diese Fähigkeit hilft Ihnen, **PDFs mit Wasserzeichen zu schützen**, Branding durchzusetzen und Compliance‑Anforderungen mit nur wenigen Codezeilen zu erfüllen.
+Sie wissen jetzt, **how to add watermark** zu PDF‑Dateien mit GroupDocs.Watermark für Java hinzuzufügen, einschließlich **add watermark specific page**, **add confidential watermark pdf** und **protect pdf with watermark**. Experimentieren Sie mit verschiedenen Schriftarten, Farben und Seitenauswahlen, um den Anforderungen Ihres Projekts gerecht zu werden.
 
 **Nächste Schritte**
-- Experimentieren Sie mit verschiedenen Schriftarten, Farben und Rotationswinkeln, um Ihrem Corporate‑Style‑Guide zu entsprechen.  
-- Erkunden Sie Bildwasserzeichen oder kombinierte Text‑und‑Bild‑Überlagerungen für einen umfassenderen Schutz.  
-- Integrieren Sie den Wasserzeichen‑Workflow in Ihre CI/CD‑Pipeline, um automatisch generierte Berichte zu kennzeichnen.
+- Versuchen Sie, ein Bild‑Wasserzeichen mit `ImageWatermark` hinzuzufügen.  
+- Erkunden Sie die API zum Entfernen von Wasserzeichen aus bestehenden PDFs.  
+- Integrieren Sie diesen Code in eine größere Dokument‑Verarbeitungspipeline.
 
 ## Häufig gestellte Fragen
 
-**Q: Kann ich ein Wasserzeichen zu jeder Seite hinzufügen, ohne einen Seitenindex anzugeben?**  
-A: Ja – lassen Sie den Aufruf `setPageIndex` in `PdfArtifactWatermarkOptions` weg und das Wasserzeichen wird automatisch auf alle Seiten angewendet.
+**F: Was sind die Systemanforderungen für die Verwendung von GroupDocs.Watermark für Java?**  
+A: Ein kompatibles JDK (8 oder neuer) und eine IDE wie IntelliJ IDEA oder Eclipse.
 
-**Q: Unterstützt GroupDocs.Watermark passwortgeschützte PDFs?**  
-A: Absolut. Geben Sie das Passwort über `PdfLoadOptions.setPassword("yourPassword")` an, bevor Sie das Dokument laden.
+**F: Kann ich Wasserzeichen zu allen Seiten eines PDF‑Dokuments hinzufügen?**  
+A: Ja – lassen Sie den Aufruf von `setPageIndex` weg oder verwenden Sie `options.setAllPages(true)`, um das Wasserzeichen global anzuwenden.
 
-**Q: Wie groß ist die maximale Dateigröße, die ich verarbeiten kann?**  
-A: Die Bibliothek kann PDFs größer als 200 MB verarbeiten; sie streamt Seiten, um den Speicherverbrauch unter 100 MB auf einem typischen Server zu halten.
+**F: Wie entferne ich Wasserzeichen aus einem PDF mit GroupDocs.Watermark?**  
+A: Verwenden Sie die Methode `watermarker.remove(watermark)` nach dem Laden des Dokuments und speichern Sie anschließend das Ergebnis.
 
-**Q: Wird für jede Serverinstanz eine separate Lizenz benötigt?**  
-A: Eine einzige länderweite Lizenz deckt alle Instanzen auf derselben Domain ab, jedoch müssen Sie die Lizenzdatei auf jedem Server einbetten.
+**F: Ist es möglich, ein Wasserzeichen zu passwortgeschützten PDFs hinzuzufügen?**  
+A: Ja – geben Sie das Passwort über `PdfLoadOptions.setPassword("yourPassword")` vor dem Laden an.
 
-**Q: Kann ich ein vorhandenes Wasserzeichen entfernen, anstatt ein neues hinzuzufügen?**  
-A: Ja – verwenden Sie `Watermarker.removeWatermarks()` mit geeigneten Filterkriterien, um bestimmte Wasserzeichen zu löschen.
+**F: Unterstützt GroupDocs.Watermark weitere Dokumentformate?**  
+A: Absolut – Word, Excel, PowerPoint, Bilder und mehr werden alle unterstützt.
 
 ---
 
-**Zuletzt aktualisiert:** 2026-08-09  
-**Getestet mit:** GroupDocs.Watermark for Java 24.11  
+**Letzte Aktualisierung:** 2026-01-21  
+**Getestet mit:** GroupDocs.Watermark 24.11 for Java  
 **Autor:** GroupDocs
-
-## Verwandte Tutorials
-
-- [Wie man ein Bildwasserzeichen in Java mit GroupDocs.Watermark hinzufügt: Eine Schritt-für-Schritt-Anleitung](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [Wie man Text‑ und Bildwasserzeichen zu bestimmten PDF‑Seiten mit GroupDocs.Watermark für Java hinzufügt](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Meistere PDF‑Manipulation: Implementiere GroupDocs.Watermark in Java für Dokumenten‑Wasserzeichen und -Management](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-manipulation-guide/)
