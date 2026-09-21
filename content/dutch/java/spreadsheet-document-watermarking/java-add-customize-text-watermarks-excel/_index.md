@@ -120,7 +120,6 @@ Om een tekstwatermerk in een Excel‑werkboek te embedden laad je eerst het best
       <version>24.11</version>
    </dependency>
 </dependencies>
-```
 ```  
 
 ### Stap 2: Maak en configureer het tekstwatermerk
@@ -136,7 +135,6 @@ SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 
 // Create a watermarker instance for the Excel file
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx", loadOptions);
-```
 ```  
 
 ### Stap 3: Pas het watermerk toe op gewenste bladen
@@ -157,7 +155,6 @@ TextWatermark watermark = new TextWatermark("Confidential", new Font("Segoe UI",
 watermark.setSizingType(TextWatermark.SIZING_TYPE.FIT_TO_PAGE);
 watermark.setHorizontalAlignment(HorizontalAlignment.Center);
 watermark.setVerticalAlignment(VerticalAlignment.Center);
-```
 ```  
 
 ### Stap 4: Sla het watermerk‑werkboek op
@@ -170,7 +167,6 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/spreadsheet_watermarked.xlsx");
 
 // Release resources
 watermarker.close();
-```
 ```  
 
 ## Teksteffecten toepassen op watermerken in spreadsheets
@@ -192,7 +188,6 @@ effects.getLineFormat().setColor(Color.getRed());
 effects.getLineFormat().setDashStyle(SpreadsheetDashStyle.DashDotDot);
 effects.getLineFormat().setLineStyle(SpreadsheetLineStyle.Triple);
 effects.getLineFormat().setWeight(1);
-```
 ```  
 
 ### Effecten toepassen op watermerkopties
@@ -205,7 +200,6 @@ import com.groupdocs.watermark.options.SpreadsheetWatermarkShapeOptions;
 // Attach effects to the watermark shape options
 SpreadsheetWatermarkShapeOptions options = new SpreadsheetWatermarkShapeOptions();
 options.setEffects(effects);
-```
 ```  
 
 ## Praktische toepassingen

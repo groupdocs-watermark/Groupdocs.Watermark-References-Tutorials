@@ -118,7 +118,6 @@ GroupDocs.Watermark รองรับ **30+ รูปแบบการนำ�
       <version>24.11</version>
    </dependency>
 </dependencies>
-```
 ```  
 
 ### ขั้นตอนที่ 2: สร้างและกำหนดค่าลายน้ำข้อความ
@@ -134,7 +133,6 @@ SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 
 // Create a watermarker instance for the Excel file
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx", loadOptions);
-```
 ```  
 
 ### ขั้นตอนที่ 3: ใส่ลายน้ำลงในแผ่นงานที่ต้องการ
@@ -155,7 +153,6 @@ TextWatermark watermark = new TextWatermark("Confidential", new Font("Segoe UI",
 watermark.setSizingType(TextWatermark.SIZING_TYPE.FIT_TO_PAGE);
 watermark.setHorizontalAlignment(HorizontalAlignment.Center);
 watermark.setVerticalAlignment(VerticalAlignment.Center);
-```
 ```  
 
 ### ขั้นตอนที่ 4: บันทึกเวิร์กบุ๊กที่มีลายน้ำ
@@ -168,7 +165,6 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/spreadsheet_watermarked.xlsx");
 
 // Release resources
 watermarker.close();
-```
 ```  
 
 ## การใช้เอฟเฟกต์ข้อความกับลายน้ำในสเปรดชีต
@@ -190,7 +186,6 @@ effects.getLineFormat().setColor(Color.getRed());
 effects.getLineFormat().setDashStyle(SpreadsheetDashStyle.DashDotDot);
 effects.getLineFormat().setLineStyle(SpreadsheetLineStyle.Triple);
 effects.getLineFormat().setWeight(1);
-```
 ```  
 
 ### ใช้เอฟเฟกต์กับตัวเลือกลายน้ำ
@@ -203,7 +198,6 @@ import com.groupdocs.watermark.options.SpreadsheetWatermarkShapeOptions;
 // Attach effects to the watermark shape options
 SpreadsheetWatermarkShapeOptions options = new SpreadsheetWatermarkShapeOptions();
 options.setEffects(effects);
-```
 ```  
 
 ## การประยุกต์ใช้งานจริง

@@ -120,7 +120,6 @@ Para incrustar una marca de agua de texto en un libro de Excel primero carga el 
       <version>24.11</version>
    </dependency>
 </dependencies>
-```
 ```  
 
 ### Paso 2: Crear y configurar la marca de agua de texto
@@ -136,7 +135,6 @@ SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 
 // Create a watermarker instance for the Excel file
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx", loadOptions);
-```
 ```  
 
 ### Paso 3: Aplicar la marca de agua a las hojas deseadas
@@ -157,7 +155,6 @@ TextWatermark watermark = new TextWatermark("Confidential", new Font("Segoe UI",
 watermark.setSizingType(TextWatermark.SIZING_TYPE.FIT_TO_PAGE);
 watermark.setHorizontalAlignment(HorizontalAlignment.Center);
 watermark.setVerticalAlignment(VerticalAlignment.Center);
-```
 ```  
 
 ### Paso 4: Guardar el libro de trabajo con marca de agua
@@ -170,7 +167,6 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/spreadsheet_watermarked.xlsx");
 
 // Release resources
 watermarker.close();
-```
 ```  
 
 ## Aplicar efectos de texto a marcas de agua en hojas de cálculo
@@ -192,7 +188,6 @@ effects.getLineFormat().setColor(Color.getRed());
 effects.getLineFormat().setDashStyle(SpreadsheetDashStyle.DashDotDot);
 effects.getLineFormat().setLineStyle(SpreadsheetLineStyle.Triple);
 effects.getLineFormat().setWeight(1);
-```
 ```  
 
 ### Aplicar efectos a las opciones de marca de agua
@@ -205,7 +200,6 @@ import com.groupdocs.watermark.options.SpreadsheetWatermarkShapeOptions;
 // Attach effects to the watermark shape options
 SpreadsheetWatermarkShapeOptions options = new SpreadsheetWatermarkShapeOptions();
 options.setEffects(effects);
-```
 ```  
 
 ## Aplicaciones prácticas

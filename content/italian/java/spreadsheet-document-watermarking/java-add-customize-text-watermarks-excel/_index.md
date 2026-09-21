@@ -120,7 +120,6 @@ Per incorporare una filigrana di testo in un workbook Excel devi prima caricare 
       <version>24.11</version>
    </dependency>
 </dependencies>
-```
 ```  
 
 ### Passo 2: Crea e configura la filigrana di testo
@@ -136,7 +135,6 @@ SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 
 // Create a watermarker instance for the Excel file
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx", loadOptions);
-```
 ```  
 
 ### Passo 3: Applica la filigrana ai fogli desiderati
@@ -157,7 +155,6 @@ TextWatermark watermark = new TextWatermark("Confidential", new Font("Segoe UI",
 watermark.setSizingType(TextWatermark.SIZING_TYPE.FIT_TO_PAGE);
 watermark.setHorizontalAlignment(HorizontalAlignment.Center);
 watermark.setVerticalAlignment(VerticalAlignment.Center);
-```
 ```  
 
 ### Passo 4: Salva il workbook con filigrana
@@ -170,7 +167,6 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/spreadsheet_watermarked.xlsx");
 
 // Release resources
 watermarker.close();
-```
 ```  
 
 ## Applicare effetti di testo alle filigrane nei fogli di calcolo
@@ -192,7 +188,6 @@ effects.getLineFormat().setColor(Color.getRed());
 effects.getLineFormat().setDashStyle(SpreadsheetDashStyle.DashDotDot);
 effects.getLineFormat().setLineStyle(SpreadsheetLineStyle.Triple);
 effects.getLineFormat().setWeight(1);
-```
 ```  
 
 ### Applica gli effetti alle opzioni della filigrana
@@ -205,7 +200,6 @@ import com.groupdocs.watermark.options.SpreadsheetWatermarkShapeOptions;
 // Attach effects to the watermark shape options
 SpreadsheetWatermarkShapeOptions options = new SpreadsheetWatermarkShapeOptions();
 options.setEffects(effects);
-```
 ```  
 
 ## Applicazioni pratiche

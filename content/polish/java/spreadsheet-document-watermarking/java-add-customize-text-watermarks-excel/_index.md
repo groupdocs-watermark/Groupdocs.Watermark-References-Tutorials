@@ -120,7 +120,6 @@ Aby osadzić znak wodny tekstowy w skoroszycie Excel, najpierw ładujesz plik pr
       <version>24.11</version>
    </dependency>
 </dependencies>
-```
 ```  
 
 ### Krok 2: Utwórz i skonfiguruj znak wodny tekstowy
@@ -136,7 +135,6 @@ SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 
 // Create a watermarker instance for the Excel file
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx", loadOptions);
-```
 ```  
 
 ### Krok 3: Zastosuj znak wodny do wybranych arkuszy
@@ -157,7 +155,6 @@ TextWatermark watermark = new TextWatermark("Confidential", new Font("Segoe UI",
 watermark.setSizingType(TextWatermark.SIZING_TYPE.FIT_TO_PAGE);
 watermark.setHorizontalAlignment(HorizontalAlignment.Center);
 watermark.setVerticalAlignment(VerticalAlignment.Center);
-```
 ```  
 
 ### Krok 4: Zapisz skoroszyt z znakiem wodnym
@@ -170,7 +167,6 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/spreadsheet_watermarked.xlsx");
 
 // Release resources
 watermarker.close();
-```
 ```  
 
 ## Stosowanie efektów tekstowych do znaków wodnych w arkuszach kalkulacyjnych
@@ -192,7 +188,6 @@ effects.getLineFormat().setColor(Color.getRed());
 effects.getLineFormat().setDashStyle(SpreadsheetDashStyle.DashDotDot);
 effects.getLineFormat().setLineStyle(SpreadsheetLineStyle.Triple);
 effects.getLineFormat().setWeight(1);
-```
 ```  
 
 ### Zastosuj efekty do opcji znaku wodnego
@@ -205,7 +200,6 @@ import com.groupdocs.watermark.options.SpreadsheetWatermarkShapeOptions;
 // Attach effects to the watermark shape options
 SpreadsheetWatermarkShapeOptions options = new SpreadsheetWatermarkShapeOptions();
 options.setEffects(effects);
-```
 ```  
 
 ## Praktyczne zastosowania

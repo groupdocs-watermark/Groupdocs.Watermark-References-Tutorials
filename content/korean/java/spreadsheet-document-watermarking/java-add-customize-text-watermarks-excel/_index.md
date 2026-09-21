@@ -118,7 +118,6 @@ Excel 워크북에 텍스트 워터마크를 삽입하려면 먼저 Watermarker�
       <version>24.11</version>
    </dependency>
 </dependencies>
-```
 ```  
 
 ### 단계 2: 텍스트 워터마크 생성 및 구성
@@ -134,7 +133,6 @@ SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 
 // Create a watermarker instance for the Excel file
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/spreadsheet.xlsx", loadOptions);
-```
 ```  
 
 ### 단계 3: 원하는 시트에 워터마크 적용
@@ -155,7 +153,6 @@ TextWatermark watermark = new TextWatermark("Confidential", new Font("Segoe UI",
 watermark.setSizingType(TextWatermark.SIZING_TYPE.FIT_TO_PAGE);
 watermark.setHorizontalAlignment(HorizontalAlignment.Center);
 watermark.setVerticalAlignment(VerticalAlignment.Center);
-```
 ```  
 
 ### 단계 4: 워터마크가 적용된 워크북 저장
@@ -168,7 +165,6 @@ watermarker.save("YOUR_OUTPUT_DIRECTORY/spreadsheet_watermarked.xlsx");
 
 // Release resources
 watermarker.close();
-```
 ```  
 
 ## 스프레드시트 워터마크에 텍스트 효과 적용
@@ -190,7 +186,6 @@ effects.getLineFormat().setColor(Color.getRed());
 effects.getLineFormat().setDashStyle(SpreadsheetDashStyle.DashDotDot);
 effects.getLineFormat().setLineStyle(SpreadsheetLineStyle.Triple);
 effects.getLineFormat().setWeight(1);
-```
 ```  
 
 ### 워터마크 옵션에 효과 적용
@@ -203,7 +198,6 @@ import com.groupdocs.watermark.options.SpreadsheetWatermarkShapeOptions;
 // Attach effects to the watermark shape options
 SpreadsheetWatermarkShapeOptions options = new SpreadsheetWatermarkShapeOptions();
 options.setEffects(effects);
-```
 ```  
 
 ## 실용적인 적용 사례
