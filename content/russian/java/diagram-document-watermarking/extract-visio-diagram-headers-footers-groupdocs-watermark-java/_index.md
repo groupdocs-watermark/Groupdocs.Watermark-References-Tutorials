@@ -1,110 +1,66 @@
 ---
-date: '2026-08-25'
-description: Узнайте, как извлекать заголовки Visio с помощью GroupDocs.Watermark
-  для Java, включая font settings, text content, colors и margins в диаграммах Visio.
+date: '2025-12-31'
+description: Узнайте, как использовать GroupDocs и извлекать колонтитулы из диаграмм
+  Visio с помощью GroupDocs.Watermark Java, включая настройки шрифта и содержимое
+  текста.
 keywords:
-- extract visio headers
+- extract headers footers Visio diagrams
 - GroupDocs Watermark Java
-- Visio diagram processing
-lastmod: '2026-08-25'
-og_description: Узнайте, как извлекать заголовки Visio с помощью GroupDocs.Watermark
-  для Java, охватывая font settings, text content, colors и margins для файлов диаграмм
-  Visio.
-og_image_alt: Guide showing how to extract Visio headers using GroupDocs.Watermark
-  for Java
-og_title: Извлечение заголовков Visio с помощью GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-25'
-  description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  headline: Extract visio headers with GroupDocs.Watermark Java
-  type: TechArticle
-- description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  name: Extract visio headers with GroupDocs.Watermark Java
-  steps:
-  - name: '**Document analysis** – batch‑process Visio files to build a style inventory
-      for compliance reporting.'
-    text: '**Document analysis** – batch‑process Visio files to build a style inventory
-      for compliance reporting.'
-  - name: '**Compliance checks** – verify that all diagrams follow corporate header/footer
-      standards.'
-    text: '**Compliance checks** – verify that all diagrams follow corporate header/footer
-      standards.'
-  - name: '**Automated report generation** – dynamically adjust generated diagrams
-      based on extracted font and color data.'
-    text: '**Automated report generation** – dynamically adjust generated diagrams
-      based on extracted font and color data.'
-  - name: '**CMS integration** – feed extracted header text into metadata fields of
-      a content‑management system.'
-    text: '**CMS integration** – feed extracted header text into metadata fields of
-      a content‑management system.'
-  type: HowTo
-- questions:
-  - answer: Enable streaming mode, close the `Watermarker` promptly, and process pages
-      in batches to keep memory usage minimal.
-    question: How do I handle very large Visio files efficiently?
-  - answer: Yes—it supports over 50 formats, including PDF, DOCX, PPTX, and image
-      files. Use the same header/footer API where applicable.
-    question: Can GroupDocs.Watermark extract headers from other file types?
-  - answer: Verify that the file is a supported Visio version, ensure you’re using
-      the latest library release, and check the stack trace for missing dependencies.
-    question: What should I do if extraction throws an exception?
-  - answer: Yes—use the GroupDocs [free support forum](https://forum.groupdocs.com/c/watermark/10)
-      for community assistance, or contact the support team with a valid license.
-    question: Is technical support available for this library?
-  - answer: Wrap the extraction logic in a service class, inject the `Watermarker`
-      via Spring, and expose a REST endpoint that returns JSON with the extracted
-      header data.
-    question: How can I integrate these calls into an existing Java web service?
-  type: FAQPage
-tags:
-- extract visio headers
-- GroupDocs.Watermark
-- Java diagram API
-- Visio automation
-title: Извлечение заголовков Visio с помощью GroupDocs.Watermark Java
+- Visio diagram watermarking
+title: Как использовать GroupDocs – извлечение заголовков и нижних колонтитулов Visio
+  (Java)
 type: docs
 url: /ru/java/diagram-document-watermarking/extract-visio-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Извлечение заголовков Visio с помощью GroupDocs.Watermark Java
+# Извлечение заголовков и нижних колонтитулов из диаграмм Visio с помощью GroupDocs.Watermark для Java
 
-Если вам нужно **извлечь заголовки Visio** — включая детали шрифтов, строки текста, цвета и отступы — из файлов диаграмм Visio, GroupDocs.Watermark для Java предоставляет чистый программный способ сделать это. Этот учебник проведёт вас через всё необходимое, от настройки библиотеки до извлечения каждой части информации о заголовках и нижних колонтитулах.
+## Введение
+
+Проблемы с извлечением информации о шрифтах, текстового содержимого, цветов или полей из заголовков и нижних колонтитулов в диаграммах Microsoft Visio? С GroupDocs.Watermark для Java эти задачи становятся простыми. В этом руководстве будет показано, как использовать эту мощную библиотеку для эффективного извлечения важных деталей.
+
+В этом учебнике **вы узнаете, как использовать GroupDocs** для извлечения данных заголовков/нижних колонтитулов, делая анализ документов и проверку соответствия лёгкими.
+
+К концу этого руководства вы получите полное понимание этих возможностей. Давайте погрузимся в то, что вам нужно, чтобы начать!
 
 ## Быстрые ответы
-- **Что означает “extract visio headers”?** Это чтение объектов заголовка/нижнего колонтитула внутри файла Visio и получение их данных о стиле и макете.  
-- **Какая библиотека обрабатывает это?** GroupDocs.Watermark для Java (версия 24.11 или новее).  
-- **Нужна ли лицензия?** Бесплатная пробная версия подходит для оценки; постоянная лицензия требуется для продакшн.  
-- **Можно ли обрабатывать большие диаграммы?** Да — GroupDocs.Watermark может работать с файлами более 500 страниц без загрузки всего файла в память.  
-- **Какая версия Java требуется?** Java 8 или новее.
+- **Что можно извлечь?** Настройки шрифтов, текстовое содержимое, цвета и поля из заголовков и нижних колонтитулов Visio.  
+- **Какая библиотека требуется?** GroupDocs.Watermark для Java (версия 24.11 или новее).  
+- **Нужна ли лицензия?** Бесплатная пробная версия подходит для оценки; полная лицензия требуется для продакшна.  
+- **Какая версия Java поддерживается?** JDK 8 или выше.  
+- **Как освободить ресурсы?** Вызовите `watermarker.close()` после завершения извлечения данных.
 
-## Что такое извлечение заголовков Visio?
-Извлечение заголовков Visio относится к программному чтению разделов заголовка и нижнего колонтитула, встроенных в файл диаграммы Microsoft Visio. Получая доступ к этим элементам, вы можете извлечь отображаемый текст, семейство шрифта, размер, атрибуты стиля, цвет, применённый к тексту, и значения отступов, которые контролируют позиционирование заголовка и нижнего колонтитула на каждой странице.
+## Как использовать GroupDocs для извлечения заголовков и нижних колонтитулов Visio
 
-## Почему использовать GroupDocs.Watermark для Java?
-GroupDocs.Watermark поддерживает **более 50 форматов ввода и вывода**, включая Visio (VSD, VSDX). Он может обрабатывать многосотенные диаграммы менее чем за секунду на 100 страниц на типичном серверном оборудовании и делает это без необходимости установки Microsoft Office.
+Ниже вы найдёте пошаговое руководство, охватывающее всё от настройки проекта до извлечения каждой части информации заголовков/нижних колонтитулов. Следуйте нумерованным шагам, и у вас будет работающий код за несколько минут.
 
 ## Предварительные требования
-- **GroupDocs.Watermark для Java** ≥ 24.11 (скачайте со страницы официальных релизов).  
-- Java Development Kit 8 или новее.  
-- IDE, например IntelliJ IDEA или Eclipse.  
-- Базовые знания Maven.
 
-## Настройка GroupDocs.Watermark для Java
-Добавьте зависимость Maven в ваш `pom.xml`:
+Прежде чем начать, убедитесь, что у вас есть следующее:
+
+### Требуемые библиотеки и зависимости
+
+- **GroupDocs.Watermark для Java**: Убедитесь, что установлена версия 24.11 или новее.
+
+### Требования к настройке окружения
+
+- Совместимый JDK (Java Development Kit), предпочтительно версия 8 или выше.
+- IDE, например IntelliJ IDEA или Eclipse.
+
+### Требования к знаниям
+
+Базовое знакомство с программированием на Java и понимание управления зависимостями Maven будет полезным.
+
+## Использование GroupDocs.Watermark Java для извлечения
+
+### Настройка GroupDocs.Watermark для Java
+
+Чтобы начать, вам нужно добавить библиотеку GroupDocs.Watermark в ваш проект. Вы можете сделать это через Maven:
+
+**Настройка Maven**
 
 ```xml
-<dependency>
-    <groupId>com.groupdocs</groupId>
-    <artifactId>groupdocs-watermark</artifactId>
-    <version>24.11</version>
-</dependency>
-```
-
-> **Примечание:** Заполнитель ````xml
 <repositories>
    <repository>
       <id>repository.groupdocs.com</id>
@@ -120,48 +76,47 @@ GroupDocs.Watermark поддерживает **более 50 форматов в
       <version>24.11</version>
    </dependency>
 </dependencies>
-```` указывает, где в оригинальном источнике будет находиться фактический фрагмент Maven.
-
-Вы также можете получить JAR напрямую со страницы официальных релизов: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
-
-### Приобретение лицензии
-- **Бесплатная пробная версия** – начните сразу, чтобы исследовать основные функции.  
-- **Временная лицензия** – запросите ограниченный по времени ключ в портале GroupDocs.  
-- **Полная лицензия** – приобретите для неограниченного использования в продакшн и приоритетной поддержки.
-
-### Базовая инициализация
-Watermarker — основной класс, который открывает и манипулирует файлами диаграмм.  
-Создайте экземпляр `Watermarker`, чтобы загрузить вашу диаграмму Visio:
-
-```java
-Watermarker watermarker = new Watermarker("sample.vsdx", new VisioLoadOptions());
 ```
 
-> Заполнитель ````java
+В качестве альтернативы загрузите библиотеку напрямую с [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+
+### Приобретение лицензии
+
+- **Free Trial**: Начните с бесплатной пробной версии, чтобы изучить возможности.  
+- **Temporary License**: Оформите временную лицензию на сайте GroupDocs.  
+- **Purchase**: Для полного доступа и поддержки рассмотрите покупку лицензии.
+
+### Базовая инициализация
+
+Инициализируйте окружение, создав экземпляр `Watermarker`. Это загрузит ваш документ диаграммы в приложение:
+
+```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```` указывает оригинальный код инициализации.
+```
 
-## Как извлечь заголовки Visio?
-Чтобы извлечь заголовки Visio, сначала загрузите файл диаграммы в экземпляр `Watermarker`, затем используйте API заголовков‑нижних колонтитулов для запроса каждой страницы. Библиотека предоставляет методы, такие как `getHeaderFooter().getFont()`, `getText()`, `getColor()` и `getMargin()`, которые возвращают соответствующую информацию о стиле и макете. Соберите результаты и обработайте их по необходимости.
+## Руководство по реализации
 
-Загрузите диаграмму с помощью `Watermarker`, затем вызовите соответствующие методы API, чтобы получить данные заголовка/нижнего колонтитула. В следующих разделах подробно описаны каждое задание по извлечению.
+Теперь разберём каждую функцию и посмотрим, как их реализовать.
 
-### Функция 1: извлечение информации о шрифте заголовка и нижнего колонтитула
-#### Прямой ответ
-Вызовите `getHeaderFooter().getFont()` у объекта `Watermarker`, чтобы получить объект `FontInfo`, содержащий название семейства, размер, флаги жирного, курсивного, подчёркнутого и зачеркивания.
+### Функция 1: Извлечение информации о шрифте заголовков и нижних колонтитулов
 
-#### Шаги реализации
-**Инициализировать Watermarker**
+#### Обзор
 
-````java
+Эта функция позволяет получить настройки шрифта из заголовков и нижних колонтитулов документа диаграммы. Это включает извлечение названия семейства, размера, жирности, наклона, подчеркивания и зачеркивания.
+
+##### Пошаговая реализация
+
+**Инициализация Watermarker**
+
+```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-````
+```
 
-**Извлечь настройки шрифта**
+**Извлечение настроек шрифта**
 
-````java
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Extract font attributes
@@ -173,16 +128,19 @@ boolean isUnderline = content.getHeaderFooter().getFont().getUnderline();
 boolean isStrikeout = content.getHeaderFooter().getFont().getStrikeout();
 
 watermarker.close(); // Always close the watermarker to free resources
-````
+```
 
-### Функция 2: извлечение текстового содержимого из заголовков и нижних колонтитулов
-#### Прямой ответ
-Используйте `getHeaderFooter().getText()`, чтобы получить необработанную строку, хранящуюся в каждом регионе заголовка и нижнего колонтитула диаграммы Visio.
+### Функция 2: Извлечение текстового содержимого из заголовков и нижних колонтитулов
 
-#### Шаги реализации
-**Извлечь текст заголовка и нижнего колонтитула**
+#### Обзор
 
-````java
+Эта функция сосредоточена на извлечении текста из разных частей заголовков и нижних колонтитулов в документе диаграммы.
+
+##### Пошаговая реализация
+
+**Извлечение текста заголовков и нижних колонтитулов**
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Extract header texts
@@ -196,32 +154,38 @@ String footerCenterText = content.getHeaderFooter().getFooterCenter();
 String footerRightText = content.getHeaderFooter().getFooterRight();
 
 watermarker.close(); // Remember to close the watermarker
-````
+```
 
-### Функция 3: извлечение цвета текста из заголовков и нижних колонтитулов
-#### Прямой ответ
-Вызовите `getHeaderFooter().getColor()`; метод возвращает целое ARGB, которое можно преобразовать в шестнадцатеричный код цвета.
+### Функция 3: Извлечение цвета текста из заголовков и нижних колонтитулов
 
-#### Шаги реализации
-**Извлечь цвет текста**
+#### Обзор
 
-````java
+Эта функция позволяет определить цвет, используемый в заголовках и нижних колонтитулах, представленный в виде целочисленного значения ARGB.
+
+##### Пошаговая реализация
+
+**Извлечение цвета текста**
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Get text color as ARGB integer
 int textColorArgb = content.getHeaderFooter().getTextColor().toArgb();
 
 watermarker.close(); // Close to release resources
-````
+```
 
-### Функция 4: извлечение отступов заголовка и нижнего колонтитула
-#### Прямой ответ
-Вызовите `getHeaderFooter().getMargin()`, чтобы получить объект `MarginInfo`, содержащий значения отступов слева, справа, сверху и снизу в пунктах.
+### Функция 4: Извлечение полей заголовков и нижних колонтитулов
 
-#### Шаги реализации
-**Извлечь настройки отступов**
+#### Обзор
 
-````java
+Узнайте, как извлечь настройки полей для заголовков и нижних колонтитулов, что важно для понимания конфигураций макета.
+
+##### Пошаговая реализация
+
+**Извлечение настроек полей**
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Get margins
@@ -229,53 +193,56 @@ float footerMargin = content.getHeaderFooter().getFooterMargin();
 float headerMargin = content.getHeaderFooter().getHeaderMargin();
 
 watermarker.close(); // Closing is crucial for resource management
-````
+```
 
 ## Практические применения
-Используя эти возможности извлечения, вы можете автоматизировать несколько реальных сценариев:
-1. **Анализ документов** – пакетная обработка файлов Visio для создания инвентаризации стилей для отчётности о соответствии.  
-2. **Проверка соответствия** – убедитесь, что все диаграммы соответствуют корпоративным стандартам заголовков/нижних колонтитулов.  
-3. **Автоматическая генерация отчётов** – динамически корректировать сгенерированные диаграммы на основе извлечённых данных о шрифте и цвете.  
-4. **Интеграция с CMS** – передавать извлечённый текст заголовка в поля метаданных системы управления контентом.
+
+Использование этих функций может упростить различные реальные задачи, такие как:
+
+1. **Document Analysis** – Автоматизировать извлечение информации о стиле для анализа и сравнения документов.  
+2. **Compliance Checks** – Обеспечить соответствие форматов заголовков и нижних колонтитулов организационным стандартам.  
+3. **Automated Report Generation** – Динамически корректировать стили на основе извлечённых настроек шрифта и цвета.  
+4. **Integration with CMS Systems** – Использовать извлечённый текст для заполнения метаданных в системах управления контентом.
 
 ## Соображения по производительности
-- **Освобождайте** экземпляр `Watermarker` после использования, чтобы освободить файловые дескрипторы.  
-- Для больших диаграмм включайте режим потоковой передачи, чтобы снизить использование памяти.  
-- Профилируйте приложение с помощью Java‑профайлера, чтобы найти узкие места.
 
-## Заключение
-Теперь у вас есть полное пошаговое руководство по **извлечению заголовков Visio** и связанной информации о стиле с помощью GroupDocs.Watermark для Java. Экспериментируйте с API, чтобы адаптировать эти извлечения к вашему рабочему процессу, и обращайтесь к официальной документации для расширенных сценариев.
+Для оптимизации производительности при использовании GroupDocs.Watermark:
 
-Для более глубокого изучения см. [документацию GroupDocs](https://docs.groupdocs.com/watermark/java/) и рассмотрите возможность расширения решения на другие форматы диаграмм, поддерживаемые библиотекой.
+- Минимизировать использование ресурсов, закрывая экземпляр `Watermarker` после операций.  
+- Эффективно управлять памятью, особенно для больших файлов диаграмм.  
+- Профилировать и тестировать приложение, чтобы выявить узкие места.
 
 ## Часто задаваемые вопросы
-**В: Как эффективно обрабатывать очень большие файлы Visio?**  
-**О:** Включите режим потоковой передачи, своевременно закрывайте `Watermarker` и обрабатывайте страницы пакетами, чтобы минимизировать использование памяти.
 
-**В: Может ли GroupDocs.Watermark извлекать заголовки из других типов файлов?**  
-**О:** Да — он поддерживает более 50 форматов, включая PDF, DOCX, PPTX и файлы изображений. Используйте тот же API заголовков/нижних колонтитулов, где это применимо.
+**Q: Как эффективно обрабатывать большие файлы диаграмм?**  
+A: Используйте практики эффективного управления памятью, своевременно закрывайте `Watermarker` и профилируйте приложение, чтобы обнаружить операции с высоким потреблением памяти.
 
-**В: Что делать, если при извлечении возникает исключение?**  
-**О:** Убедитесь, что файл является поддерживаемой версией Visio, используйте последнюю версию библиотеки и проверьте трассировку стека на отсутствие зависимостей.
+**Q: Может ли GroupDocs.Watermark извлекать информацию из других типов документов?**  
+A: Да, он поддерживает широкий спектр форматов, помимо диаграмм Visio. См. официальную документацию для полного списка.
 
-**В: Доступна ли техническая поддержка для этой библиотеки?**  
-**О:** Да — используйте [бесплатный форум поддержки GroupDocs](https://forum.groupdocs.com/c/watermark/10) для помощи сообщества или свяжитесь с командой поддержки, имея действующую лицензию.
+**Q: Что делать, если возникнут ошибки извлечения?**  
+A: Убедитесь, что ваша среда соответствует требованиям библиотеки, проверьте поддержку формата диаграммы и изучите детали ошибки для обнаружения недостающих зависимостей.
 
-**В: Как интегрировать эти вызовы в существующий веб‑сервис Java?**  
-**О:** Оберните логику извлечения в сервисный класс, внедрите `Watermarker` через Spring и откройте REST‑endpoint, который возвращает JSON с извлечёнными данными заголовка.
+**Q: Доступна ли поддержка для устранения неполадок?**  
+A: Да, вы можете задавать вопросы на [free support forum](https://forum.groupdocs.com/c/watermark/10) или напрямую обращаться в поддержкуDocs.
+
+**Q: Как интегрировать эти шаги извлечения в существующее Java‑приложение?**  
+A: Следуйте тому же шаблону инициализации, показанному выше, внедрите код извлечения там, где нужны данные заголовков/нижних колонтитулов, и не забудьте закрыть `Watermarker` после использования.
+
+## Заключение
+
+Теперь у вас есть надёжная база для извлечения заголовков и нижних колонтитулов из диаграмм Visio с помощью GroupDocs.Watermark в Java. Экспериментируйте с этими функциями, чтобы бесшовно интегрировать их в свои проекты. Для дальнейшего изучения обратитесь к [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/) и рассмотрите возможность расширения функциональности в соответствии с вашими потребностями.
 
 ## Ресурсы
-- **Документация:** Узнайте больше на [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **Ссылка на API:** Подробнее в [API References](https://reference.groupdocs.com/watermark/java)  
-- **Скачать библиотеку:** Получите последнюю версию по ссылке [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)
+
+- **Documentation**: Узнайте больше на [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/)
+- **API Reference**: Подробнее с [API References](https://reference.groupdocs.com/watermark/java)
+- **Download Library**: Получите последнюю версию с [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
 
 ---
 
-**Последнее обновление:** 2026-08-25  
-**Тестировано с:** GroupDocs.Watermark 24.11 for Java  
-**Автор:** GroupDocs
+**Last Updated:** 2025-12-31  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  
 
-## Связанные учебники
-- [Редактирование заголовков и нижних колонтитулов диаграмм в Java с помощью GroupDocs.Watermark: Полное руководство](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Как добавить текстовые водяные знаки к диаграммам с помощью GroupDocs.Watermark в Java](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Извлечение информации о фигурах из диаграмм с помощью GroupDocs.Watermark в Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
+---

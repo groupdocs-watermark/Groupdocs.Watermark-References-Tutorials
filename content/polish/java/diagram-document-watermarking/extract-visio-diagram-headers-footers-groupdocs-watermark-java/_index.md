@@ -1,112 +1,62 @@
 ---
-date: '2026-08-25'
-description: Dowiedz się, jak wyodrębnić nagłówki Visio przy użyciu GroupDocs.Watermark
-  dla Java, w tym font settings, text content, colors i margins w Visio diagrams.
+date: '2025-12-31'
+description: Dowiedz się, jak używać GroupDocs i wyodrębniać nagłówki oraz stopki
+  z diagramów Visio przy użyciu GroupDocs.Watermark Java, w tym ustawienia czcionek
+  i treść tekstu.
 keywords:
-- extract visio headers
+- extract headers footers Visio diagrams
 - GroupDocs Watermark Java
-- Visio diagram processing
-lastmod: '2026-08-25'
-og_description: Dowiedz się, jak wyodrębnić nagłówki Visio przy użyciu GroupDocs.Watermark
-  dla Java, obejmując font settings, text content, colors i margins dla Visio diagram
-  files.
-og_image_alt: Guide showing how to extract Visio headers using GroupDocs.Watermark
-  for Java
-og_title: Wyodrębnij nagłówki Visio przy użyciu GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-25'
-  description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  headline: Extract visio headers with GroupDocs.Watermark Java
-  type: TechArticle
-- description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  name: Extract visio headers with GroupDocs.Watermark Java
-  steps:
-  - name: '**Document analysis** – batch‑process Visio files to build a style inventory
-      for compliance reporting.'
-    text: '**Document analysis** – batch‑process Visio files to build a style inventory
-      for compliance reporting.'
-  - name: '**Compliance checks** – verify that all diagrams follow corporate header/footer
-      standards.'
-    text: '**Compliance checks** – verify that all diagrams follow corporate header/footer
-      standards.'
-  - name: '**Automated report generation** – dynamically adjust generated diagrams
-      based on extracted font and color data.'
-    text: '**Automated report generation** – dynamically adjust generated diagrams
-      based on extracted font and color data.'
-  - name: '**CMS integration** – feed extracted header text into metadata fields of
-      a content‑management system.'
-    text: '**CMS integration** – feed extracted header text into metadata fields of
-      a content‑management system.'
-  type: HowTo
-- questions:
-  - answer: Enable streaming mode, close the `Watermarker` promptly, and process pages
-      in batches to keep memory usage minimal.
-    question: How do I handle very large Visio files efficiently?
-  - answer: Yes—it supports over 50 formats, including PDF, DOCX, PPTX, and image
-      files. Use the same header/footer API where applicable.
-    question: Can GroupDocs.Watermark extract headers from other file types?
-  - answer: Verify that the file is a supported Visio version, ensure you’re using
-      the latest library release, and check the stack trace for missing dependencies.
-    question: What should I do if extraction throws an exception?
-  - answer: Yes—use the GroupDocs [free support forum](https://forum.groupdocs.com/c/watermark/10)
-      for community assistance, or contact the support team with a valid license.
-    question: Is technical support available for this library?
-  - answer: Wrap the extraction logic in a service class, inject the `Watermarker`
-      via Spring, and expose a REST endpoint that returns JSON with the extracted
-      header data.
-    question: How can I integrate these calls into an existing Java web service?
-  type: FAQPage
-tags:
-- extract visio headers
-- GroupDocs.Watermark
-- Java diagram API
-- Visio automation
-title: Wyodrębnij nagłówki Visio przy użyciu GroupDocs.Watermark Java
+- Visio diagram watermarking
+title: Jak korzystać z GroupDocs – wyodrębnić nagłówki i stopki w Visio (Java)
 type: docs
 url: /pl/java/diagram-document-watermarking/extract-visio-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Wyodrębnij nagłówki Visio przy użyciu GroupDocs.Watermark Java
+# Wyodrębnianie nagłówków i stopek z diagramów Visio przy użyciu GroupDocs.Watermark dla Java
 
-Jeśli potrzebujesz **wyodrębnić nagłówki Visio** — w tym szczegóły czcionki, ciągi tekstowe, kolory i marginesy — z plików diagramów Visio, GroupDocs.Watermark dla Javy zapewnia czysty, programowy sposób na to. Ten samouczek przeprowadzi Cię przez wszystko, czego potrzebujesz, od konfiguracji biblioteki po wyciąganie każdego elementu informacji o nagłówku i stopce.
+## Wprowadzenie
+
+Masz problem z wyodrębnianiem informacji o czcionce, treści tekstu, kolorów lub marginesów z nagłówków i stopek w diagramach Microsoft Visio? Dzięki GroupDocs.Watermark dla Java te zadania stają się proste. Ten przewodnik pokaże, jak wykorzystać tę potężną bibliotekę do efektywnego wyodrębniania kluczowych szczegółów.
+
+W tym samouczku **dowiesz się, jak używać GroupDocs**, aby wyciągnąć dane nagłówka/stopki, co ułatwi analizę dokumentów i kontrole zgodności.
+
+Po zakończeniu tego przewodnika będziesz mieć pełne zrozumienie tych funkcji. Zanurzmy się w to, co jest potrzebne, aby rozpocząć!
 
 ## Szybkie odpowiedzi
-- **Co oznacza „wyodrębnić nagłówki Visio”?** Oznacza to odczytywanie obiektów nagłówka/stopki wewnątrz pliku Visio i pobieranie ich danych stylizacji oraz układu.  
-- **Która biblioteka obsługuje to?** GroupDocs.Watermark for Java (wersja 24.11 lub nowsza).  
-- **Czy potrzebuję licencji?** Darmowa wersja próbna działa w ocenie; stała licencja jest wymagana w środowisku produkcyjnym.  
-- **Czy mogę przetwarzać duże diagramy?** Tak — GroupDocs.Watermark może obsługiwać pliki z ponad 500 stronami bez ładowania całego pliku do pamięci.  
-- **Jakiej wersji Javy wymaga?** Java 8 lub nowszy.
+- **Co możesz wyodrębnić?** Ustawienia czcionki, treść tekstu, kolory i marginesy z nagłówków i stopek w Visio.  
+- **Jaka biblioteka jest wymagana?** GroupDocs.Watermark dla Java (wersja 24.11 lub nowsza).  
+- **Czy potrzebna jest licencja?** Darmowa wersja próbna wystarczy do oceny; pełna licencja jest wymagana w produkcji.  
+- **Jaką wersję Javy obsługuje?** JDK 8 lub wyższą.  
+- **Jak zwolnić zasoby?** Wywołaj `watermarker.close()` po zakończeniu wyodrębniania danych.
 
-## Co to jest wyodrębnić nagłówki Visio?
-Wyodrębnianie nagłówków Visio odnosi się do programowego odczytywania sekcji nagłówka i stopki osadzonych w pliku diagramu Microsoft Visio. Uzyskując dostęp do tych elementów, możesz pobrać wyświetlany tekst, rodzinę czcionki, rozmiar, atrybuty stylu, kolor zastosowany do tekstu oraz wartości marginesów kontrolujące pozycjonowanie nagłówka i stopki na każdej stronie.
+## Jak używać GroupDocs do wyodrębniania nagłówków i stopek w Visio
 
-## Dlaczego używać GroupDocs.Watermark dla Javy?
-GroupDocs.Watermark obsługuje **ponad 50 formatów wejściowych i wyjściowych**, w tym Visio (VSD, VSDX). Może przetwarzać diagramy liczące setki stron w czasie krótszym niż sekunda na 100 stron na typowym sprzęcie serwerowym i robi to bez konieczności instalacji Microsoft Office.
+Poniżej znajdziesz instrukcję krok po kroku, obejmującą wszystko od konfiguracji projektu po wyodrębnianie poszczególnych elementów nagłówka/stopki. Postępujowanymi krokami, a w kilka minut będziesz mieć działający kod.
 
 ## Wymagania wstępne
 
-- **GroupDocs.Watermark for Java** ≥ 24.11 (pobierz ze strony oficjalnych wydań).  
-- Java Development Kit 8 lub nowszy.  
-- IDE, takie jak IntelliJ IDEA lub Eclipse.  
-- Podstawowa znajomość Maven.
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
-## Konfiguracja GroupDocs.Watermark dla Javy
+### Wymagane biblioteki i zależności
+- **GroupDocs.Watermark dla Java**: Upewnij się, że zainstalowana jest wersja 24.11 lub nowsza.
 
-Dodaj zależność Maven do swojego `pom.xml`:
+### Wymagania dotyczące konfiguracji środowiska
+- Kompatybilny JDK (Java Development Kit), najlepiej wersja 8 lub wyższa.  
+- IDE, IntelliJ IDEA lub Eclipse.
+
+### Wymagania wiedzy
+Podstawowa znajomość programowania w Javie oraz zrozumienie zarządzania zależnościami Maven będzie pomocna.
+
+## Używanie GroupDocs.Watermark Java do wyodrębniania
+
+### Konfiguracja GroupDocs.Watermark dla Java
+
+Aby rozpocząć, musisz dodać bibliotekę GroupDocs.Watermark do swojego projektu. Możesz to zrobić za pomocą Maven:
+
+**Konfiguracja Maven**
 
 ```xml
-<dependency>
-    <groupId>com.groupdocs</groupId>
-    <artifactId>groupdocs-watermark</artifactId>
-    <version>24.11</version>
-</dependency>
-```
-
-> **Uwaga:** Symbol ````xml
 <repositories>
    <repository>
       <id>repository.groupdocs.com</id>
@@ -122,52 +72,47 @@ Dodaj zależność Maven do swojego `pom.xml`:
       <version>24.11</version>
    </dependency>
 </dependencies>
-```` wskazuje, gdzie w oryginalnym źródle pojawiłby się rzeczywisty fragment Maven.
+```
 
-Możesz również pobrać plik JAR bezpośrednio ze strony oficjalnych wydań: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternatywnie, pobierz bibliotekę bezpośrednio z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Uzyskanie licencji
+### Uzyskiwanie licencji
 
-- **Free trial** – rozpocznij natychmiast, aby przetestować podstawowe funkcje.  
-- **Temporary license** – poproś o klucz czasowo ograniczony w portalu GroupDocs.  
-- **Full license** – zakup, aby uzyskać nieograniczone użycie w produkcji i priorytetowe wsparcie.
+- **Darmowa wersja próbna**: Rozpocznij od darmowej wersji próbnej, aby poznać możliwości.  
+- **Licencja tymczasowa**: Złóż wniosek o licencję tymczasową na stronie GroupDocs.  
+- **Zakup**: Aby uzyskać pełny dostęp i wsparcie, rozważ zakup licencji.
 
 ### Podstawowa inicjalizacja
 
-Watermarker jest klasą podstawową, która otwiera i manipuluje plikami diagramów.  
-Utwórz instancję `Watermarker`, aby załadować swój diagram Visio:
+Zainicjalizuj środowisko, tworząc instancję `Watermarker`. Spowoduje to załadowanie dokumentu diagramu do aplikacji:
 
 ```java
-Watermarker watermarker = new Watermarker("sample.vsdx", new VisioLoadOptions());
+DiagramLoadOptions loadOptions = new DiagramLoadOptions();
+Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-> Symbol ````java
+## Przewodnik implementacji
+
+Teraz rozbijmy każdą funkcję i zobaczmy, jak można je zaimplementować.
+
+### Funkcja 1: Wyodrębnianie informacji o czcionce w nagłówku i stopce
+
+#### Przegląd
+
+Ta funkcja umożliwia pobranie ustawień czcionki z nagłówków i stopek dokumentu diagramu. Obejmuje to wyodrębnianie nazwy rodziny, rozmiaru, pogrubienia, kursywy, podkreślenia oraz przekreślenia.
+
+##### Implementacja krok po kroku
+
+**Inicjalizacja Watermarker**
+
+```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```` wskazuje na oryginalny kod inicjalizacji.
+```
 
-## Jak wyodrębnić nagłówki Visio?
-Aby wyodrębnić nagłówki Visio, najpierw wczytaj plik diagramu do instancji `Watermarker`, a następnie użyj API nagłówka‑stopki, aby zapytać o każdą stronę. Biblioteka udostępnia metody takie jak `getHeaderFooter().getFont()`, `getText()`, `getColor()` i `getMargin()`, które zwracają odpowiednie informacje o stylizacji i układzie. Zbierz wyniki i przetwarzaj je w razie potrzeby.
+**Wyodrębnianie ustawień czcionki**
 
-Załaduj diagram przy użyciu `Watermarker`, a następnie wywołaj odpowiednie metody API, aby pobrać dane nagłówka/stopki. Poniższe sekcje szczegółowo opisują każde zadanie wyodrębniania.
-
-### Funkcja 1: wyodrębnić informacje o czcionce nagłówka i stopki
-
-#### Bezpośrednia odpowiedź
-Wywołaj `getHeaderFooter().getFont()` na obiekcie `Watermarker`, aby uzyskać obiekt `FontInfo`, który zawiera nazwę rodziny, rozmiar, flagi pogrubienia, kursywy, podkreślenia i przekreślenia.
-
-#### Kroki implementacji
-
-**Initialize Watermarker**
-
-````java
-DiagramLoadOptions loadOptions = new DiagramLoadOptions();
-Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-````
-
-**Extract font settings**
-
-````java
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Extract font attributes
@@ -179,18 +124,19 @@ boolean isUnderline = content.getHeaderFooter().getFont().getUnderline();
 boolean isStrikeout = content.getHeaderFooter().getFont().getStrikeout();
 
 watermarker.close(); // Always close the watermarker to free resources
-````
+```
 
-### Funkcja 2: wyodrębnić treść tekstową z nagłówków i stopek
+### Funkcja 2: Wyodrębnianie treści tekstowej z nagłówków i stopek
 
-#### Bezpośrednia odpowiedź
-Użyj `getHeaderFooter().getText()`, aby pobrać surowy ciąg znaków przechowywany w każdym regionie nagłówka i stopki diagramu Visio.
+#### Przegląd
 
-#### Kroki implementacji
+Ta funkcja koncentruje się na wyodrębnianiu tekstu z różnych części nagłówków i stopek w dokumencie diagramu.
 
-**Extract header & footer text**
+##### Implementacja krok po kroku
 
-````java
+**Wyodrębnianie tekstu nagłówka i stopki**
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Extract header texts
@@ -204,36 +150,38 @@ String footerCenterText = content.getHeaderFooter().getFooterCenter();
 String footerRightText = content.getHeaderFooter().getFooterRight();
 
 watermarker.close(); // Remember to close the watermarker
-````
+```
 
-### Funkcja 3: wyodrębnić kolor tekstu z nagłówków i stopek
+### Funkcja 3: Wyodrębnianie koloru tekstu z nagłówków i stopek
 
-#### Bezpośrednia odpowiedź
-Wywołaj `getHeaderFooter().getColor()`; metoda zwraca liczbę całkowitą ARGB, którą możesz przekształcić na kod koloru szesnastkowego.
+#### Przegląd
 
-#### Kroki implementacji
+Ta funkcja umożliwia określenie koloru używanego w nagłówkach i stopkach, reprezentowanego jako wartość całkowita ARGB.
 
-**Extract text color**
+##### Implementacja krok po kroku
 
-````java
+**Wyodrębnianie koloru tekstu**
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Get text color as ARGB integer
 int textColorArgb = content.getHeaderFooter().getTextColor().toArgb();
 
 watermarker.close(); // Close to release resources
-````
+```
 
-### Funkcja 4: wyodrębnić marginesy nagłówka i stopki
+### Funkcja 4: Wyodrębnianie marginesów nagłówka i stopki
 
-#### Bezpośrednia odpowiedź
-Wywołaj `getHeaderFooter().getMargin()`, aby otrzymać obiekt `MarginInfo` zawierający wartości marginesów lewego, prawego, górnego i dolnego w punktach.
+#### Przegląd
 
-#### Kroki implementacji
+Dowiedz się, jak wyodrębnić ustawienia marginesów dla nagłówków i stopek, co jest niezbędne do zrozumienia konfiguracji układu.
 
-**Extract margin settings**
+##### Implementacja krok po kroku
 
-````java
+**Wyodrębnianie ustawień marginesów**
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Get margins
@@ -241,60 +189,56 @@ float footerMargin = content.getHeaderFooter().getFooterMargin();
 float headerMargin = content.getHeaderFooter().getHeaderMargin();
 
 watermarker.close(); // Closing is crucial for resource management
-````
+```
 
 ## Praktyczne zastosowania
 
-Korzystając z tych możliwości wyodrębniania, możesz zautomatyzować kilka rzeczywistych scenariuszy:
+Wykorzystanie tych funkcji może usprawnić różne zadania w rzeczywistym świecie, takie jak:
 
-1. **Analiza dokumentów** – przetwarzaj wsadowo pliki Visio, aby stworzyć inwentaryzację stylów do raportowania zgodności.  
-2. **Kontrole zgodności** – sprawdź, czy wszystkie diagramy spełniają korporacyjne standardy nagłówków/stopki.  
-3. **Automatyczne generowanie raportów** – dynamicznie dostosowuj generowane diagramy na podstawie wyodrębnionych danych o czcionce i kolorze.  
-4. **Integracja z CMS** – wprowadzaj wyodrębniony tekst nagłówka do pól metadanych systemu zarządzania treścią.
+1. **Analiza dokumentów** – Automatyzuj wyodrębnianie informacji o stylach do analizy i porównywania dokumentów.  
+2. **Kontrole zgodności** – Upewnij się, że formaty nagłówków i stopek spełniają standardy organizacyjne.  
+3. **Automatyczne generowanie raportów** – Dynamicznie dostosowuj style na podstawie wyodrębnionych ustawień czcionki i koloru.  
+4. **Integracja z systemami CMS** – Wykorzystaj wyodrębnioną treść tekstową do wypełniania metadanych w systemach zarządzania treścią.
 
-## Rozważania dotyczące wydajności
+## Względy dotyczące wydajności
 
-- **Dispose** instancję `Watermarker` po użyciu, aby zwolnić uchwyty plików.  
-- W przypadku dużych diagramów włącz tryb strumieniowania, aby utrzymać niskie zużycie pamięci.  
-- Profiluj swoją aplikację przy użyciu profilera Javy, aby zlokalizować ewentualne wąskie gardła.
+Aby zoptymalizować wydajność przy użyciu GroupDocs.Watermark:
 
-## Podsumowanie
-
-Masz teraz kompletny, krok po kroku przewodnik do **wyodrębnić nagłówki Visio** i powiązanych informacji o stylizacji przy użyciu GroupDocs.Watermark dla Javy. Eksperymentuj z API, aby dostosować te wyodrębnienia do swojego konkretnego przepływu pracy, i zapoznaj się z oficjalną dokumentacją w celu zaawansowanych scenariuszy.
-
-Aby zgłębić temat, zobacz [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/) i rozważ rozszerzenie rozwiązania na inne formaty diagramów obsługiwane przez bibliotekę.
+- Minimalizuj zużycie zasobów, zamykając instancję `Watermarker` po zakończeniu operacji.  
+- Zarządzaj pamięcią efektywnie, szczególnie przy dużych plikach diagramów.  
+- Profiluj i testuj aplikację, aby zidentyfikować wąskie gardła.
 
 ## Najczęściej zadawane pytania
 
-**Q: Jak efektywnie obsługiwać bardzo duże pliki Visio?**  
-A: Włącz tryb strumieniowania, szybko zamykaj `Watermarker` i przetwarzaj strony w partiach, aby utrzymać minimalne zużycie pamięci.
+**P: Jak efektywnie obsługiwać duże pliki diagramów?**  
+O: Stosuj praktyki efektywnego zarządzania pamięcią, szybko zamykaj `Watermarker` i profiluj aplikację, aby wykryć operacje intensywnie wykorzystujące pamięć.
 
-**Q: Czy GroupDocs.Watermark może wyodrębniać nagłówki z innych typów plików?**  
-A: Tak — obsługuje ponad 50 formatów, w tym PDF, DOCX, PPTX i pliki graficzne. Użyj tego samego API nagłówka/stopki tam, gdzie ma to zastosowanie.
+**P: Czy GroupDocs.Watermark może wyodrębniać informacje z innych typów dokumentów?**  
+O: Tak, obsługuje szeroką gamę formatów poza diagramami Visio. Sprawdź oficjalną dokumentację, aby zobaczyć pełną listę.
 
-**Q: Co zrobić, gdy wyodrębnianie zgłasza wyjątek?**  
-A: Sprawdź, czy plik jest obsługiwaną wersją Visio, upewnij się, że używasz najnowszej wersji biblioteki i przeanalizuj stos wywołań pod kątem brakujących zależności.
+**P: Co zrobić, gdy napotkam błędy wyodrębniania?**  
+O: Zwuj, czy środowisko spełnia wymagania biblioteki, upewnij się, że format diagramu jest obsługiwany oraz sprawdź szczegóły błędu pod kątem brakujących zależności.
 
-**Q: Czy dostępne jest wsparcie techniczne dla tej biblioteki?**  
-A: Tak — użyj [free support forum](https://forum.groupdocs.com/c/watermark/10) GroupDocs do pomocy społecznościowej lub skontaktuj się z zespołem wsparcia, posiadając ważną licencję.
+**P: Czy dostępne jest wsparcie przy rozwiązywaniu problemów?**  
+O: Tak, możesz zadawać pytania na [darmowym forum wsparcia](https://forum.groupdocs.com/c/watermark/10) lub skontaktować się bezpośrednio z wsparciem GroupDocs.
 
-**Q: Jak mogę zintegrować te wywołania z istniejącą usługą internetową Java?**  
-A: Umieść logikę wyodrębniania w klasie serwisowej, wstrzyknij `Watermarker` za pomocą Spring i udostępnij punkt końcowy REST zwracający JSON z wyodrębnionymi danymi nagłówka.
+**P: Jak mogę zintegrować te kroki wyodrębniania z istniejącą aplikacją Java?**  
+O: Postępuj zgodnie z samym schematem inicjalizacji przedstawionym powyżej, wstaw kod wyodrębniania tam, gdzie potrzebujesz danych nagłówka/stopki, i pamiętaj o zamknięciu `Watermarker` po użyciu.
+
+## Zakończenie
+
+Masz teraz solidne podstawy do wyodrębniania nagłówków i stopek z diagramów Visio przy użyciu GroupDocs.Watermark w Javie. Eksperymentuj z tymi funkcjami, aby płynnie włączyć je do swoich projektów. Aby dalszej eksploracji, zagłęb się w [dokumentację GroupDocs](https://docs.groupdocs.com/watermark/java/) i rozważ rozszerzenie funkcjonalności zgodnie z własnymi potrzebami.
 
 ## Zasoby
 
-- **Documentation:** Dowiedz się więcej na [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **API reference:** Zagłęb się w szczegóły z [API References](https://reference.groupdocs.com/watermark/java)  
-- **Download library:** Pobierz najnowszą wersję z [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)
+- **Dokumentacja**: Dowiedz się więcej na [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Referencje API**: Zagłęb się w [API References](https://reference.groupdocs.com/watermark/java)  
+- **Pobierz bibliotekę**: Pobierz najnowszą wersję z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
 
 ---
 
-**Ostatnia aktualizacja:** 2026-08-25  
+**Ostatnia aktualizacja:** 2025-12-31  
 **Testowano z:** GroupDocs.Watermark 24.11 for Java  
-**Autor:** GroupDocs
+**Autor:** GroupDocs  
 
-## Powiązane samouczki
-
-- [Edytuj nagłówki i stopki diagramów w Javie przy użyciu GroupDocs.Watermark: Kompletny przewodnik](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Jak dodać znaki wodne tekstowe do diagramów przy użyciu GroupDocs.Watermark w Javie](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Wyodrębnij informacje o kształtach z diagramów przy użyciu GroupDocs.Watermark w Javie](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
+---

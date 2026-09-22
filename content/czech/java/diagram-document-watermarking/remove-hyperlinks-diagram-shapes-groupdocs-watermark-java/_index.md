@@ -1,69 +1,48 @@
 ---
-date: '2026-08-25'
-description: Naučte se upravovat soubory diagramů a odstraňovat hypertextové odkazy
-  pomocí GroupDocs.Watermark for Java. Rychle zabezpečte své diagramy pomocí podrobných
-  návodů krok po kroku.
+date: '2025-12-19'
+description: Naučte se, jak pomocí GroupDocs.Watermark Java odstranit hypertextové
+  odkazy z tvarů diagramu, což je klíčový krok pro zabezpečení Java dokumentů a hromadné
+  odstraňování hypertextových odkazů.
 keywords:
-- how to edit diagram
-- remove hyperlinks diagram shapes
-- GroupDocs.Watermark Java
-lastmod: '2026-08-25'
-og_description: Naučte se upravovat soubory diagramů a odstraňovat hypertextové odkazy
-  pomocí GroupDocs.Watermark for Java. Postupujte podle jasných kroků k ochraně svých
-  dokumentů.
-og_image_alt: Guide showing how to edit diagram and remove hyperlinks using GroupDocs.Watermark
+- remove hyperlinks diagram shapes GroupDocs Watermark Java
+- manage digital documents diagrams
+- GroupDocs Watermark library Java
+title: Jak odstranit hypertextové odkazy z tvarů diagramu pomocí GroupDocs.Watermark
   Java
-og_title: Jak upravit diagram a odstranit hypertextové odkazy pomocí Javy
-tags:
-- edit diagram
-- remove hyperlinks
-- GroupDocs.Watermark
-- Java document processing
-- diagram security
-title: Jak upravit diagram a odstranit hypertextové odkazy pomocí Javy
 type: docs
 url: /cs/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Jak upravit diagram a odstranit hypertextové odkazy pomocí Javy  
+# Jak odstranit hypertextové odkazy z tvarů diagramu pomocí GroupDocs.Watermark Java
 
-Správa digitálních dokumentů často zahrnuje úpravu diagramů, zejména když potřebujete **edit diagram** soubory odstranit hypertextové odkazy z důvodů bezpečnosti nebo vizuální přehlednosti. Tento tutoriál vám přesně ukáže, jak upravit soubory diagramů a odstranit nechtěné hypertextové odkazy z tvarů diagramu pomocí výkonné knihovny **GroupDocs.Watermark** pro Javu. Na konci tohoto průvodce budete mít čistý diagram bez odkazů připravený k distribuci.  
+Správa digitálních dokumentů často zahrnuje úpravu diagramů, zejména při **odstraňování hypertextových odkazů** z důvodu bezpečnosti nebo přehlednosti. V tomto tutoriálu se naučíte **jak odstranit hypertextové odkazy** z tvarů diagramu pomocí GroupDocs.Watermark pro Java, aby vaše soubory zůstaly čisté, bezpečné a profesionální.
 
-## Rychlé odpovědi  
-- **Jaký je hlavní cíl?** Odstraňte všechny hypertextové odkazy z tvarů diagramu, aby se zlepšila bezpečnost a prezentace.  
-- **Která knihovna je vyžadována?** GroupDocs.Watermark pro Javu, verze 24.11 nebo novější.  
-- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro testování; pro produkci je vyžadována komerční licence.  
-- **Mohu zpracovávat mnoho souborů najednou?** Ano – stejný kód lze umístit do smyčky pro zpracování dávky.  
-- **Jaká verze Javy je podporována?** Java 8 nebo vyšší (doporučena Java 11).  
+## Rychlé odpovědi
+- **Jaký je hlavní účel?** Odstranit nechtěné hypertextové odkazy z tvarů diagramu pro lepší zabezpečení dokumentu.  
+- **Která knihovna se používá?** GroupDocs.Watermark pro Java (verze 24.11 nebo novější).  
+- **Potřebuji licenci?** Zkušební verze funguje pro testování; pro produkci je vyžadována platná licence.  
+- **Mohu zpracovávat mnoho souborů najednou?** Ano – stejnou logiku lze umístit do smyčky pro dávkové zpracování.  
+- **Je Java 8 dostačující?** Java 8+ je podporována; doporučují se novější JDK.
 
-## Co je „how to edit diagram“?  
-**How to edit diagram** odkazuje na proces programového otevření souboru diagramu, úpravy jeho vnitřních prvků (jako jsou tvary, text nebo hypertextové odkazy) a uložení výsledku. Pomocí GroupDocs.Watermark můžete upravovat soubory diagramů bez potřeby původního autorovacího nástroje.  
+## Co znamená „odstranění hypertextových odkazů“ v kontextu diagramů?
+Odstranění hypertextových odkazů znamená smazání URL odkazů připojených k tvarům uvnitř souboru diagramu (např. Visio *.vsdx). Tato operace zabraňuje náhodnému přesměrování na externí stránky a pomáhá splnit požadavky na shodu nebo interní bezpečnostní politiky.
 
-## Proč použít GroupDocs.Watermark pro Javu?  
-GroupDocs.Watermark podporuje **30+ formátů diagramů a obrázků** (včetně VSDX, SVG a WMF) a může zpracovávat soubory až do **500 MB** bez načítání celého dokumentu do paměti, což poskytuje **o 20 % rychlejší** rychlost zpracování ve srovnání s mnoha konkurenty.  
+## Proč použít GroupDocs.Watermark Java pro tento úkol?
+- **Robustní podpora formátů** – funguje s širokou škálou typů diagramů.  
+- **Detailní API** – umožňuje cílit na jednotlivé tvary a jejich kolekce hypertextových odkazů.  
+- **Optimalizovaný výkon** – vhodný jak pro jednotlivé soubory, tak pro hromadné zpracování.
 
-## Předpoklady  
-- **GroupDocs.Watermark** knihovna verze 24.11 nebo novější.  
-- Maven nainstalován (nebo JAR soubory, pokud dáváte přednost ručnímu nastavení).  
-- Java Development Kit 8 nebo novější a IDE jako IntelliJ IDEA nebo Eclipse.  
+## Předpoklady
+- **Knihovna GroupDocs.Watermark** verze 24.11 nebo novější.  
+- Maven nebo přímé stažení JAR (viz kroky nastavení níže).  
+- Java Development Kit (JDK 8 nebo novější) a IDE jako IntelliJ IDEA nebo Eclipse.
 
-### Požadované knihovny, verze a závislosti  
-- GroupDocs.Watermark 24.11+  
-- Maven 3.6+ (pokud používáte přístup Maven)  
+## Nastavení GroupDocs.Watermark pro Java
+Pro začátek zahrňte knihovnu do svého projektu pomocí Maven nebo stažením JAR.
 
-### Požadavky na nastavení prostředí  
-Ujistěte se, že adresář `bin` JDK je ve vaší `PATH` a že vaše IDE ukazuje na správnou verzi JDK.  
-
-### Předpoklady znalostí  
-Měli byste se dobře orientovat v základní syntaxi Javy, správě závislostí Maven a operacích souborového I/O.  
-
-## Jak nastavit GroupDocs.Watermark pro Javu?  
-Třída `Watermarker` poskytuje vstupní bod API pro načítání a úpravu dokumentů.  
-
-Chcete-li začít používat GroupDocs.Watermark, přidejte jeho Maven koordináty do souboru `pom.xml` vašeho projektu. Tím se stáhne knihovna a její závislosti, což vám umožní vytvořit instanci třídy Watermarker a pracovat se soubory diagramů přímo z Java kódu. Poté můžete nakonfigurovat licencování a nastavit výstupní možnosti před zpracováním jakéhokoli dokumentu.  
-
-Přidejte závislost GroupDocs.Watermark do vašeho `pom.xml`.  
+### Nastavení Maven
+Add the following configuration to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -81,132 +60,118 @@ Přidejte závislost GroupDocs.Watermark do vašeho `pom.xml`.
       <version>24.11</version>
    </dependency>
 </dependencies>
-```  
+```
 
-Pokud dáváte přednost nepoužívat Maven, stáhněte nejnovější JAR z oficiální stránky vydání.  
+### Přímé stažení
+Alternativně stáhněte nejnovější verzi z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)  
-
-#### Kroky získání licence  
+#### Kroky získání licence
 - Začněte s bezplatnou zkušební verzí pro vyzkoušení API.  
-- Pro produkci získáte dočasnou nebo trvalou licenci z portálu dodavatele.  
+- Pro produkci získejte dočasnou nebo plnou licenci z portálu GroupDocs.
 
-#### Základní inicializace a nastavení  
-Třída `Watermarker` je vstupním bodem pro všechny operace zpracování dokumentů.  
-
+#### Basic Initialization and Setup
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```  
+```
 
-## Jak upravit diagram a odstranit hypertextové odkazy pomocí GroupDocs.Watermark?  
-Třída `Watermarker` poskytuje vstupní bod API pro načítání a úpravu dokumentů.  
+## Jak odstranit hypertextové odkazy z tvarů diagramu
+Níže je podrobný návod, který vás provede načtením diagramu, vyhledáním tvarů a odstraněním nechtěných hypertextových odkazů.
 
-Nejprve načtěte soubor diagramu do instance Watermarker. Poté získejte kolekci tvarů, identifikujte ty, které obsahují objekty hypertextových odkazů, a iterujte přes ně v opačném pořadí, abyste bezpečně smazali každý odkaz, aniž byste ovlivnili indexování kolekce. Tím se zajistí, že všechny vložené URL jsou odstraněny při zachování vizuální integrity diagramu.  
-
+### Step 1: Load the Diagram File
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```  
+```
+*Proč?* Načtení souboru vám poskytne programový přístup k jeho vnitřní struktuře.
 
-- **Proč je tento krok důležitý**: Načtení souboru vám poskytuje programový přístup ke každému tvaru a jeho souvisejícím vlastnostem.  
-
-## Jak získat obsah tvaru v diagramu?  
-Objekt `DiagramShape` představuje jednotlivý tvar v diagramu a zpřístupňuje jeho vlastnosti a připojená metadata.  
-
-Po načtení diagramu zavolejte `getShapes()` na Watermarker, abyste získali seznam objektů `DiagramShape`. Každý tvar lze prozkoumat na kolekce hypertextových odkazů, což umožňuje přesné zaměření odkazů pro odstranění nebo úpravu. Můžete také číst text tvaru, barvy a geometrii, pokud jsou potřeba další úpravy.  
-
+### Step 2: Access Shape Content
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 DiagramShape shape = content.getPages().get_Item(0).getShapes().get_Item(0);
-```  
+```
+*Proč?* Potřebujete odkaz na konkrétní tvar, který může obsahovat hypertextové odkazy.
 
-- **Proč je tento krok důležitý**: Zaměření na konkrétní tvar zajišťuje, že odstraníte pouze nechtěné odkazy, aniž byste ovlivnili jiné vizuální prvky.  
-
-## Jak iterovat a bezpečně odstraňovat hypertextové odkazy?  
-Metoda `removeHyperlink(int index)` maže hypertextový odkaz na zadané pozici v kolekci hypertextových odkazů tvaru.  
-
-Iterujte přes seznam hypertextových odkazů od posledního indexu směrem k nule. Tento opačný cyklus zabraňuje posunu indexů, ke kterému dochází při odstraňování položek, a zajišťuje, že každý hypertextový odkaz je zpracován bez vynechání. Po odstranění můžete obnovit stav tvaru nebo pokračovat k dalšímu tvaru v diagramu.  
-
+### Step 3: Iterate and Remove Hyperlinks
 ```java
 for (int i = shape.getHyperlinks().getCount() - 1; i >= 0; i--) {
     if (shape.getHyperlinks().get_Item(i).getAddress().contains("http://someurl.com")) {
         shape.getHyperlinks().removeAt(i);
     }
 }
-```  
+```
+*Proč?* Iterace pozpátku zabraňuje chybám indexu při mazání položek ze sbírky.
 
-- **Proč je tento krok důležitý**: Opačný cyklus zaručuje, že všechny hypertextové odkazy jsou odstraněny bez vynechání jakýchkoli položek.  
-
-## Jak uložit upravený diagram a uvolnit prostředky?  
-Metoda `save(String path)` zapíše upravený dokument na zadané umístění souboru a dokončí všechny změny.  
-
-Jakmile jsou všechny hypertextové odkazy odstraněny, zavolejte metodu `save` na instanci Watermarker a zadejte nový název souboru, aby nedošlo k přepsání originálu. Poté zavolejte `close()`, čímž uvolníte souborové handly a paměť, což je nezbytné pro dlouhodobé dávkové procesy. Tím se zajistí, že soubor je řádně uzavřen a připraven k dalšímu použití.  
-
+### Step 4: Save and Close
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY");
 watermarker.close();
-```  
+```
+*Proč?* Uložení změn a uvolnění zdrojů zabraňuje únikům paměti a zamčeným souborům.
 
-- **Proč je tento krok důležitý**: Správné uzavření prostředků zabraňuje únikům paměti a problémům se zamčením souborů na serveru.  
+## Dávkové odstranění hypertextových odkazů (pokročilý případ použití)
+Pokud potřebujete najednou vyčistit mnoho diagramů, zabalte výše uvedenou logiku do smyčky, která iteruje přes seznam cest k souborům. Použijí se stejné API volání; stačí změnit vstupní a výstupní adresáře pro každou iteraci. Tento přístup odpovídá požadavkům na **dávkové odstranění hypertextových odkazů** pro velké úložiště dokumentů.
 
-## Praktické aplikace  
-Odstranění hypertextových odkazů z tvarů diagramu může být užitečné v několika reálných scénářích:  
+## Praktické aplikace
+Odstranění hypertextových odkazů z tvarů diagramu může být užitečné v několika reálných scénářích:
 
-1. **Bezpečnost** – Zabránit externím odkazům, které by mohly vést na škodlivé stránky.  
-2. **Soulad** – Splnit firemní politiky zakazující vložené URL v sdílených prostředcích.  
-3. **Přehlednost** – Vytvořit čistší prezentace, kde by odkazy odváděly pozornost.  
+1. **Bezpečnostní účely** – Zabránit externím odkazům, které by mohly vystavit vaši síť phishingu nebo malwaru.  
+2. **Shoda** – Splnit firemní politiky zakazující odchozí URL v sdílených dokumentech.  
+3. **Přehlednost** – Vytvořit čistší prezentace, kde jsou hypertextové odkazy zbytečné nebo rušivé.  
 
-Tuto logiku můžete vložit do větších automatizačních pipeline, například nočních dávkových úloh, které sanitizují všechny diagramy před jejich publikací na intranet.  
+## Úvahy o výkonu
+### Optimalizace výkonu
+- Použijte vzor iterace pozpátku uvedený výše pro udržení efektivity smyček.  
+- Uzavřete objekt `Watermarker` co nejdříve po dokončení, aby se uvolnila paměť.
 
-## Úvahy o výkonu  
+### Pokyny pro využití zdrojů
+- Sledujte CPU a RAM při zpracování velkých diagramů.  
+- Pro hromadné úlohy zvažte streamování souborů místo načítání všech najednou.
 
-### Optimalizace výkonu  
-- Používejte jednu instanci `Watermarker` na soubor, aby se snížilo zatížení.  
-- Upřednostňujte opačnou iteraci (jak je ukázáno), aby se předešlo nákladnému přepočítávání indexů seznamu.  
+### Nejlepší praktiky pro správu paměti v Javě
+- Vyhněte se vytváření objektů uvnitř těsných smyček.  
+- Používejte try‑with‑resources tam, kde je to vhodné, pro automatické čištění.
 
-### Pokyny pro využití zdrojů  
-- Pro diagramy větší než 200 MB monitorujte využití haldy a zvažte zvýšení JVM flagu `-Xmx`.  
-- Nástroje pro profilování jako VisualVM mohou pomoci identifikovat úzká místa ve velkých dávkových bězích.  
+## Často kladené otázky
+1. **Jak zacházet s více tvary?**  
+   Iterujte přes všechny stránky a jejich tvary a aplikujte stejnou logiku odstraňování hypertextových odkazů na každý tvar.  
 
-### Nejlepší postupy pro správu paměti v Javě  
-- Deklarujte objekty v co nejmenším možném rozsahu.  
-- Používejte try‑with‑resources při práci se streamy, aby se zajistilo automatické uzavření.  
+2. **Lze tento proces automatizovat pro velké dávky diagramů?**  
+   Ano – vložte kód do rutiny pro dávkové zpracování nebo jej integrujte se svým systémem pro správu dokumentů.  
 
-## Často kladené otázky  
+3. **Co když potřebuji odstranit hypertextové odkazy jen z konkrétních stránek?**  
+   Přistupte k požadované stránce podle jejího indexu (`content.getPages().get_Item(pageIndex)`) a zaměřte se jen na tvary na této stránce.  
 
-**Q: Jak zvládnu diagramy, které obsahují tisíce tvarů?**  
-A: Zpracovávejte diagram stránku po stránce a uvolňujte prostředky každé stránky před přechodem na další, aby se udržovalo nízké využití paměti.  
+4. **Je pro produkční použití GroupDocs.Watermark potřeba licence?**  
+   Platná komerční licence je vyžadována po uplynutí zkušební doby.  
 
-**Q: Mohu omezit odstraňování hypertextových odkazů pouze na konkrétní stránky?**  
-A: Ano – načtěte index stránky, kterou chcete, a pak aplikujte smyčku odstraňování pouze na tvary na této stránce.  
+5. **Lze tuto metodu použít s jinými formáty diagramů?**  
+   GroupDocs.Watermark podporuje mnoho typů diagramů; ověřte kompatibilitu v oficiální dokumentaci.  
 
-**Q: Je komerční licence povinná pro dávkové zpracování?**  
-A: Platná licence je vyžadována pro jakékoli nasazení na úrovni produkce; bezplatná zkušební verze je omezena na 30 dnů a 5 dokumentů.  
+**Další otázky a odpovědi**
 
-**Q: Podporuje GroupDocs.Watermark SVG diagramy?**  
-A: Rozhodně – SVG patří mezi 30+ podporovaných formátů a hypertextové odkazy lze odstranit pomocí stejných API volání.  
+**Q:** *Je možné zaznamenat, které hypertextové odkazy byly odstraněny?*  
+**A:** Ano – před voláním `removeAt(i)` zachyťte `shape.getHyperlinks().get_Item(i).getAddress()` a zapište jej do souboru protokolu.
 
-**Q: Co když má tvar více hypertextových odkazů?**  
-A: Opačná iterace odstraňuje každý odkaz jednotlivě, čímž se zajistí, že všechny odkazy jsou vymazány.  
+**Q:** *Ovlivní odstranění hypertextových odkazů vizuální vzhled tvaru?*  
+**A:** Ne. Geometrie tvaru zůstane nezměněna; pouze metadata odkazu jsou odstraněna.
 
-## Zdroje  
+**Q:** *Je potřeba po odstranění znovu aplikovat nějaké stylování?*  
+**A:** Obvykle ne. Odstranění hypertextových odkazů nemění výplň, čáru ani textové styly.
 
+## Závěr
+Nyní máte kompletní, připravenou metodu pro **odstranění hypertextových odkazů** z tvarů diagramu pomocí GroupDocs.Watermark pro Java. Dodržením výše uvedených kroků můžete zabezpečit své diagramy, splnit politiky a udržet své dokumenty v profesionálním vzhledu.
+
+**Zdroje**  
 - [Dokumentace](https://docs.groupdocs.com/watermark/java/)  
-- [Reference API](https://reference.groupdocs.com/watermark/java)  
+- [API Reference](https://reference.groupdocs.com/watermark/java)  
 - [Stáhnout](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub repozitář](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- [GitHub úložiště](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Bezplatné fórum podpory](https://forum.groupdocs.com/c/watermark/10)  
-- [Získání dočasné licence](https://purchase.groupdocs.com/temporary-license/)  
+- [Získání dočasné licence](https://purchase.groupdocs.com/temporary-license/)
 
----  
+---
 
-**Poslední aktualizace:** 2026-08-25  
-**Testováno s:** GroupDocs.Watermark 24.11 pro Javu  
+**Poslední aktualizace:** 2025-12-19  
+**Testováno s:** GroupDocs.Watermark 24.11 pro Java  
 **Autor:** GroupDocs  
-
-## Související tutoriály
-
-- [Tutoriály vodoznakování diagramů pro GroupDocs.Watermark Java](/watermark/java/diagram-document-watermarking/)  
-- [Úprava záhlaví a zápatí diagramu v Javě pomocí GroupDocs.Watermark: Komplexní průvodce](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)  
-- [Efektivní odstranění tvarů z diagramů pomocí GroupDocs.Watermark pro Javu](/watermark/java/watermark-removal/remove-shapes-diagrams-groupdocs-watermark-java/)

@@ -1,64 +1,45 @@
 ---
-date: '2026-08-25'
-description: 了解如何使用 GroupDocs.Watermark for Java 編輯圖表檔案並移除超連結。快速保護您的圖表，提供逐步指引。
+date: '2025-12-19'
+description: 學習如何使用 GroupDocs.Watermark Java 從圖表形狀中移除超連結，這是 Java 文件安全的重要步驟，同時亦可批次移除超連結。
 keywords:
-- how to edit diagram
-- remove hyperlinks diagram shapes
-- GroupDocs.Watermark Java
-lastmod: '2026-08-25'
-og_description: 了解如何使用 GroupDocs.Watermark for Java 編輯圖表檔案並移除超連結。遵循清晰步驟保護您的文件。
-og_image_alt: Guide showing how to edit diagram and remove hyperlinks using GroupDocs.Watermark
-  Java
-og_title: 如何使用 Java 編輯圖表並移除超連結
-tags:
-- edit diagram
-- remove hyperlinks
-- GroupDocs.Watermark
-- Java document processing
-- diagram security
-title: 如何使用 Java 編輯圖表並移除超連結
+- remove hyperlinks diagram shapes GroupDocs Watermark Java
+- manage digital documents diagrams
+- GroupDocs Watermark library Java
+title: 如何使用 GroupDocs.Watermark Java 從圖表形狀中移除超連結
 type: docs
 url: /zh-hant/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/
 weight: 1
 ---
 
-# 如何使用 Java 編輯圖表並移除超連結  
+# 如何使用 GroupDocs.Watermark Java 從圖表形狀中移除超連結
 
-管理數位文件時常需要編輯圖表，特別是當您需要 **edit diagram** 檔案以去除超連結以提升安全性或視覺清晰度時。本教學將向您展示如何使用功能強大的 **GroupDocs.Watermark** Java 函式庫編輯圖表檔案並移除圖表形狀中不需要的超連結。完成本指南後，您將擁有一個乾淨、無超連結的圖表，可供發佈使用。  
+管理數位文件時常需要編輯圖表，特別是為了安全或清晰度而**移除超連結**。在本教學中，您將學習如何使用 GroupDocs.Watermark for Java 從圖表形狀中**移除超連結**，確保您的檔案保持乾淨、安全且專業。
 
-## 快速回答  
-- **What is the main goal?** 移除圖表形狀中的所有超連結，以提升安全性與呈現效果。  
-- **Which library is required?** GroupDocs.Watermark for Java，版本 24.11 或更新。  
-- **Do I need a license?** 免費試用可用於測試；正式環境需購買商業授權。  
-- **Can I process many files at once?** 可以——相同程式碼可放入迴圈以批次處理。  
-- **What Java version is supported?** Java 8 或以上（建議使用 Java 11）。  
+## 快速解答
+- **主要目的為何？** 為了提升文件安全性，從圖表形狀中剔除不需要的超連結。  
+- **使用哪個函式庫？** GroupDocs.Watermark for Java（版本 24.11 或更新）。  
+- **需要授權嗎？** 試用版可用於測試；正式環境需使用有效授權。  
+- **可以一次處理多個檔案嗎？** 可以——將相同邏輯放入批次迴圈即可。  
+- **Java 8 足夠嗎？** 支援 Java 8 以上；建議使用較新版本的 JDK。
 
-## 「how to edit diagram」是什麼？  
-**How to edit diagram** 指的是以程式方式開啟圖表檔案、修改其內部元素（例如形狀、文字或超連結），並儲存結果的過程。使用 GroupDocs.Watermark，您可以在不需要原始編輯工具的情況下編輯圖表檔案。  
+## 在圖表情境下，什麼是「移除超連結」？
+移除超連結指的是刪除附加在圖表檔案（例如 Visio *.vsdx）內形狀上的 URL 參考。此操作可防止意外導向外部網站，並協助符合合規或內部安全政策。
 
-## 為何使用 GroupDocs.Watermark for Java？  
-GroupDocs.Watermark 支援 **30+ 圖表與影像格式**（包括 VSDX、SVG 與 WMF），且可處理高達 **500 MB** 的檔案而無需將整個文件載入記憶體，提供比多數競爭對手快 **20 %** 的處理速度。  
+## 為何使用 GroupDocs.Watermark Java 來執行此任務？
+- **強大的格式支援** – 可處理多種圖表類型。  
+- **細緻的 API** – 讓您能針對單一形狀及其超連結集合操作。  
+- **效能最佳化** – 適用於單一檔案與批次處理。  
 
-## 前置條件  
+## 前置條件
 - **GroupDocs.Watermark** 函式庫版本 24.11 或更新。  
-- 已安裝 Maven（或若偏好手動設定則使用 JAR 檔案）。  
-- Java Development Kit 8 或更新，並搭配如 IntelliJ IDEA 或 Eclipse 等 IDE。  
+- Maven 或直接下載 JAR（請參考以下設定步驟）。  
+- Java Development Kit（JDK 8 或更新）以及 IntelliJ IDEA 或 Eclipse 等 IDE。  
 
-### 必要的函式庫、版本與相依性  
-- GroupDocs.Watermark 24.11+  
-- Maven 3.6+（若使用 Maven 方式）  
+## 設定 GroupDocs.Watermark for Java
+首先，透過 Maven 或下載 JAR 將函式庫加入專案中。
 
-### 環境設定需求  
-確保 JDK 的 `bin` 目錄已加入 `PATH`，且您的 IDE 指向正確的 JDK 版本。  
-
-### 知識前置條件  
-您應熟悉基本的 Java 語法、Maven 相依性管理，以及檔案 I/O 操作。  
-
-## 如何設定 GroupDocs.Watermark for Java？  
-`Watermarker` 類別提供載入與修改文件的 API 入口。  
-要開始使用 GroupDocs.Watermark，請將其 Maven 坐標加入專案的 `pom.xml`。此舉會下載函式庫及其相依性，讓您能實例化 Watermarker 類別，直接在 Java 程式碼中處理圖表檔案。之後即可設定授權並在處理文件前設定輸出選項。  
-
-將 GroupDocs.Watermark 的相依性加入您的 `pom.xml`。  
+### Maven 設定
+將以下設定加入您的 `pom.xml`：
 
 ```xml
 <repositories>
@@ -76,128 +57,118 @@ GroupDocs.Watermark 支援 **30+ 圖表與影像格式**（包括 VSDX、SVG 與
       <version>24.11</version>
    </dependency>
 </dependencies>
-```  
+```
 
-如果不想使用 Maven，請從官方發行頁面下載最新的 JAR 檔案。  
+### 直接下載
+或者，從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載最新版本。
 
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)  
-
-#### 取得授權步驟  
+#### 取得授權步驟
 - 先使用免費試用版評估 API。  
-- 正式環境請從供應商入口網站取得臨時或永久授權。  
+- 正式環境請從 GroupDocs 入口網站取得臨時或正式授權。  
 
-#### 基本初始化與設定  
-`Watermarker` 類別是所有文件處理操作的入口點。  
-
+#### 基本初始化與設定
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```  
+```
 
-## 如何使用 GroupDocs.Watermark 編輯圖表並移除超連結？  
-`Watermarker` 類別提供載入與修改文件的 API 入口點。  
-首先，將圖表檔案載入 Watermarker 實例。接著取得形狀集合，找出包含超連結物件的形狀，並以逆向順序遍歷，以安全地刪除每個連結而不影響集合索引。此作法確保移除所有嵌入的 URL，同時保留圖表的視覺完整性。  
+## 如何從圖表形狀中移除超連結
+以下為逐步說明，帶您完成載入圖表、定位形狀，並剔除不需要的超連結。
 
+### 步驟 1：載入圖表檔案
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```  
+```
+*為什麼？* 載入檔案後即可以程式方式存取其內部結構。
 
-- **Why this step matters**: 載入檔案可讓您以程式方式存取每個形狀及其相關屬性。  
-
-## 如何在圖表中存取形狀內容？  
-`DiagramShape` 物件代表圖表中的單一形狀，提供其屬性與附加的中繼資料。  
-載入圖表後，於 Watermarker 呼叫 `getShapes()` 以取得 `DiagramShape` 物件的清單。每個形狀皆可檢查其超連結集合，從而精確定位要移除或修改的連結。若需進一步調整，亦可讀取形狀的文字、顏色與幾何資訊。  
-
+### 步驟 2：存取形狀內容
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 DiagramShape shape = content.getPages().get_Item(0).getShapes().get_Item(0);
-```  
+```
+*為什麼？* 您需要取得可能包含超連結的特定形狀參考。
 
-- **Why this step matters**: 精準鎖定形狀可確保只移除不需要的連結，而不影響其他視覺元素。  
-
-## 如何安全地遍歷並移除超連結？  
-`removeHyperlink(int index)` 方法會刪除形狀超連結集合中指定位置的超連結。  
-從最後一個索引向零遞減遍歷超連結清單。此逆向迴圈可避免刪除項目時產生的索引移位，確保每個超連結皆被處理且不會被跳過。移除後，您可以刷新形狀狀態或繼續處理圖表中的下一個形狀。  
-
+### 步驟 3：遍歷並移除超連結
 ```java
 for (int i = shape.getHyperlinks().getCount() - 1; i >= 0; i--) {
     if (shape.getHyperlinks().get_Item(i).getAddress().contains("http://someurl.com")) {
         shape.getHyperlinks().removeAt(i);
     }
 }
-```  
+```
+*為什麼？* 反向迴圈可避免在刪除集合項目時產生索引錯誤。
 
-- **Why this step matters**: 逆向迴圈可保證所有超連結皆被移除，且不會遺漏任何項目。  
-
-## 如何儲存編輯後的圖表並釋放資源？  
-`save(String path)` 方法會將修改後的文件寫入指定的檔案位置，完成所有變更。  
-所有超連結移除後，於 Watermarker 實例呼叫 `save` 方法，提供新檔名以避免覆寫原始檔案。接著呼叫 `close()` 釋放檔案句柄並釋放記憶體，這對長時間執行的批次處理至關重要。此步驟確保檔案正確關閉，並可供後續使用。  
-
+### 步驟 4：儲存並關閉
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY");
 watermarker.close();
-```  
+```
+*為什麼？* 儲存變更並釋放資源可防止記憶體洩漏與檔案被鎖定。
 
-- **Why this step matters**: 正確關閉資源可避免記憶體洩漏與伺服器上的檔案鎖定問題。  
+## 批次移除超連結（進階案例）
+若需一次清理多個圖表，可將上述邏輯包在遍歷檔案路徑清單的迴圈中。API 呼叫相同，只需在每次迭代時更改輸入與輸出目錄。此方式符合大型文件庫的**批次移除超連結**需求。
 
-## 實務應用  
-從圖表形狀中移除超連結在多種實務情境中皆有益處：  
+## 實務應用
+在多種實務情境中，移除圖表形狀的超連結皆有其好處：
 
-1. **Security** – 防止可能導向惡意網站的外部連結。  
-2. **Compliance** – 符合禁止在共享資產中嵌入 URL 的公司政策。  
-3. **Clarity** – 產生更乾淨的簡報，避免連結分散注意力。  
+1. **安全目的** – 防止外部連結可能使您的網路遭受釣魚或惡意軟體攻擊。  
+2. **合規** – 符合公司政策，禁止在共享文件中包含外部 URL。  
+3. **清晰度** – 產生更乾淨的簡報，避免不必要或分散注意力的超連結。  
 
-您可以將此邏輯嵌入更大的自動化流程，例如每晚的批次作業，於圖表發佈至內部網路前先進行清理。  
+## 效能考量
+### 效能最佳化
+- 使用上述的反向迭代模式，以提升迴圈效能。  
+- 完成後立即關閉 `Watermarker` 物件以釋放記憶體。
 
-## 效能考量  
+### 資源使用指引
+- 處理大型圖表時監控 CPU 與記憶體使用情況。  
+- 大量作業時，考慮以串流方式處理檔案，而非一次全部載入。
 
-### 優化效能  
-- 每個檔案使用單一 `Watermarker` 實例以降低開銷。  
-- 偏好使用逆向迭代（如示範）以避免昂貴的清單重新索引。  
+### Java 記憶體管理最佳實踐
+- 避免在緊密迴圈內建立物件。  
+- 在適用情況下使用 try‑with‑resources 以自動清理。
 
-### 資源使用指導原則  
-- 圖表若大於 200 MB，請監控堆積使用情況，並考慮提升 JVM `-Xmx` 參數。  
-- 如 VisualVM 等效能分析工具可協助找出大規模批次執行的瓶頸。  
+## 常見問題
+1. **如何處理多個形狀？**  
+   迭代所有頁面及其形狀，對每個形狀套用相同的超連結移除邏輯。  
 
-### Java 記憶體管理最佳實踐  
-- 在最小可能的範圍內宣告物件。  
-- 使用 try‑with‑resources 處理串流，以確保自動關閉。  
+2. **此流程能否自動化處理大量圖表？**  
+   可以——將程式碼嵌入批次處理例行或與文件管理系統整合。  
 
-## 常見問題  
+3. **如果只想從特定頁面移除超連結該怎麼做？**  
+   透過索引取得目標頁面（`content.getPages().get_Item(pageIndex)`），僅針對該頁面的形狀執行。  
 
-**Q: How do I handle diagrams that contain thousands of shapes?**  
-A: 逐頁處理圖表，並在移至下一頁前釋放該頁的資源，以降低記憶體使用量。  
+4. **正式使用 GroupDocs.Watermark 是否需要授權？**  
+   試用期結束後需購買有效的商業授權。  
 
-**Q: Can I limit hyperlink removal to specific pages only?**  
-A: 可以——取得目標頁面的索引，然後僅對該頁的形狀執行移除迴圈。  
+5. **此方法能否支援其他圖表格式？**  
+   GroupDocs.Watermark 支援多種圖表類型，請於官方文件確認相容性。  
 
-**Q: Is a commercial license mandatory for batch processing?**  
-A: 任何正式環境的部署皆需有效授權；免費試用僅限 30 天與 5 份文件。  
+**其他問答**
 
-**Q: Does GroupDocs.Watermark support SVG diagrams?**  
-A: 當然支援——SVG 為 30+ 支援格式之一，且可使用相同的 API 呼叫移除超連結。  
+**問：** *能否記錄被移除的超連結？*  
+**答：** 可以——在呼叫 `removeAt(i)` 前，取得 `shape.getHyperlinks().get_Item(i).getAddress()`，並寫入日誌檔案。
 
-**Q: What if a shape has multiple hyperlinks?**  
-A: 逆向迭代迴圈會逐一移除每個超連結項目，確保所有連結皆被清除。  
+**問：** *移除超連結會影響形狀的視覺外觀嗎？*  
+**答：** 不會。形狀的幾何形狀保持不變，僅移除連結的中繼資料。
 
-## 資源  
+**問：** *移除後需要重新套用樣式嗎？*  
+**答：** 通常不需要。移除超連結不會改變填色、線條或文字樣式。
 
+## 結論
+現在您已掌握使用 GroupDocs.Watermark for Java 從圖表形狀中**移除超連結**的完整、可投入生產的做法。依照上述步驟，您可以保護圖表安全、符合政策，並讓文件保持精緻。
+
+**資源**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
 - [Download](https://releases.groupdocs.com/watermark/java/)  
 - [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
-- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)  
+- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
 
----  
+---
 
-**最後更新:** 2026-08-25  
-**測試環境:** GroupDocs.Watermark 24.11 for Java  
-**作者:** GroupDocs  
-
-## 相關教學
-
-- [Diagram Watermarking Tutorials for GroupDocs.Watermark Java](/watermark/java/diagram-document-watermarking/)
-- [Edit Diagram Headers & Footers in Java Using GroupDocs.Watermark: A Comprehensive Guide](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Efficiently Remove Shapes from Diagrams Using GroupDocs.Watermark for Java](/watermark/java/watermark-removal/remove-shapes-diagrams-groupdocs-watermark-java/)
+**Last Updated:** 2025-12-19  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  

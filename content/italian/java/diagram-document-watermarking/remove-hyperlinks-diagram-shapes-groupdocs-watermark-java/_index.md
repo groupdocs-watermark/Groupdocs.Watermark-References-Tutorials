@@ -1,67 +1,48 @@
 ---
-date: '2026-08-25'
-description: Impara a modificare i file di diagrammi e a rimuovere i collegamenti
-  ipertestuali usando GroupDocs.Watermark for Java. Proteggi rapidamente i tuoi diagrammi
-  con una guida passo‑passo.
+date: '2025-12-19'
+description: Scopri come rimuovere i collegamenti ipertestuali dalle forme dei diagrammi
+  usando GroupDocs.Watermark Java, un passaggio fondamentale per la sicurezza dei
+  documenti Java e per rimuovere in batch i collegamenti ipertestuali.
 keywords:
-- how to edit diagram
-- remove hyperlinks diagram shapes
-- GroupDocs.Watermark Java
-lastmod: '2026-08-25'
-og_description: Scopri come modificare i file di diagrammi e rimuovere i collegamenti
-  ipertestuali usando GroupDocs.Watermark for Java. Segui passaggi chiari per proteggere
-  i tuoi documenti.
-og_image_alt: Guide showing how to edit diagram and remove hyperlinks using GroupDocs.Watermark
-  Java
-og_title: Come modificare diagrammi e rimuovere i collegamenti ipertestuali con Java
-tags:
-- edit diagram
-- remove hyperlinks
-- GroupDocs.Watermark
-- Java document processing
-- diagram security
-title: Come modificare diagrammi e rimuovere i collegamenti ipertestuali con Java
+- remove hyperlinks diagram shapes GroupDocs Watermark Java
+- manage digital documents diagrams
+- GroupDocs Watermark library Java
+title: Come rimuovere i collegamenti ipertestuali dalle forme del diagramma usando
+  GroupDocs.Watermark Java
 type: docs
 url: /it/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Come modificare diagrammi e rimuovere i collegamenti ipertestuali con Java  
+# Come rimuovere i collegamenti ipertestuali dalle forme dei diagrammi usando GroupDocs.Watermark Java
 
-Gestire i documenti digitali spesso comporta la modifica dei diagrammi, soprattutto quando è necessario **edit diagram** file per rimuovere i collegamenti ipertestuali per motivi di sicurezza o chiarezza visiva. Questo tutorial mostra esattamente come modificare i file diagram e rimuovere i collegamenti ipertestuali indesiderati dalle forme del diagramma utilizzando la potente libreria **GroupDocs.Watermark** per Java. Alla fine di questa guida avrai un diagramma pulito, privo di collegamenti, pronto per la distribuzione.  
+Gestire documenti digitali spesso comporta la modifica dei diagrammi, soprattutto quando si **rimuovono i collegamenti ipertestuali** per motivi di sicurezza o chiarezza. In questo tutorial imparerai **come rimuovere i collegamenti ipertestuali** dalle forme dei diagrammi con GroupDocs.Watermark per Java, garantendo che i tuoi file rimangano puliti, sicuri e professionali.
 
-## Risposte rapide  
-- **Qual è l'obiettivo principale?** Rimuovere tutti i collegamenti ipertestuali dalle forme del diagramma per migliorare sicurezza e presentazione.  
-- **Quale libreria è necessaria?** GroupDocs.Watermark per Java, versione 24.11 o successiva.  
-- **È necessaria una licenza?** Una prova gratuita è sufficiente per i test; è richiesta una licenza commerciale per la produzione.  
-- **Posso elaborare molti file contemporaneamente?** Sì – lo stesso codice può essere inserito in un ciclo per gestire i batch.  
-- **Quale versione di Java è supportata?** Java 8 o superiore (Java 11 consigliato).  
+## Risposte rapide
+- **Qual è lo scopo principale?** Rimuovere i collegamenti ipertestuali indesiderati dalle forme dei diagrammi per una migliore sicurezza del documento.  
+- **Quale libreria viene utilizzata?** GroupDocs.Watermark per Java (versione 24.11 o successiva).  
+- **È necessaria una licenza?** Una versione di prova funziona per i test; è richiesta una licenza valida per la produzione.  
+- **Posso elaborare molti file contemporaneamente?** Sì – la stessa logica può essere inserita in un ciclo batch.  
+- **Java 8 è sufficiente?** Java 8+ è supportato; si raccomandano JDK più recenti.
 
-## Cos'è “how to edit diagram”?  
-**How to edit diagram** si riferisce al processo di apertura programmatica di un file diagram, modifica dei suoi elementi interni (come forme, testo o collegamenti ipertestuali) e salvataggio del risultato. Utilizzando GroupDocs.Watermark è possibile modificare i file diagram senza necessità dello strumento di authoring originale.  
+## Cosa significa “come rimuovere i collegamenti ipertestuali” nel contesto dei diagrammi?
+Rimuovere i collegamenti ipertestuali significa eliminare i riferimenti URL allegati alle forme all'interno di un file di diagramma (ad esempio, Visio *.vsdx). Questa operazione impedisce navigazioni accidentali a siti esterni e aiuta a soddisfare le normative di conformità o le politiche di sicurezza interne.
 
-## Perché usare GroupDocs.Watermark per Java?  
-GroupDocs.Watermark supporta **oltre 30 formati di diagrammi e immagini** (inclusi VSDX, SVG e WMF) e può elaborare file fino a **500 MB** senza caricare l'intero documento in memoria, offrendo una velocità di elaborazione **20 % più veloce** rispetto a molti concorrenti.  
+## Perché utilizzare GroupDocs.Watermark Java per questa attività?
+- **Supporto robusto dei formati** – funziona con un'ampia gamma di tipi di diagrammi.  
+- **API fine‑grained** – consente di mirare a forme individuali e alle loro collezioni di collegamenti ipertestuali.  
+- **Ottimizzata per le prestazioni** – adatta sia per file singoli sia per elaborazioni in batch.  
 
-## Prerequisiti  
-- **GroupDocs.Watermark** versione 24.11 o successiva.  
-- Maven installato (oppure i file JAR se preferisci una configurazione manuale).  
-- Java Development Kit 8 o più recente e un IDE come IntelliJ IDEA o Eclipse.  
+## Prerequisiti
+- **Libreria GroupDocs.Watermark** versione 24.11 o successiva.  
+- Maven o download diretto del JAR (vedi i passaggi di configurazione di seguito).  
+- Java Development Kit (JDK 8 o successivo) e un IDE come IntelliJ IDEA o Eclipse.  
 
-### Librerie richieste, versioni e dipendenze  
-- GroupDocs.Watermark 24.11+  
-- Maven 3.6+ (se utilizzi l'approccio Maven)  
+## Configurazione di GroupDocs.Watermark per Java
+Per iniziare, includi la libreria nel tuo progetto tramite Maven o scaricando il JAR.
 
-### Requisiti di configurazione dell'ambiente  
-Assicurati che la directory `bin` del JDK sia nel tuo `PATH` e che il tuo IDE punti alla versione corretta del JDK.  
-
-### Prerequisiti di conoscenza  
-Dovresti sentirti a tuo agio con la sintassi di base di Java, la gestione delle dipendenze Maven e le operazioni di I/O sui file.  
-
-## Come configurare GroupDocs.Watermark per Java?  
-La classe `Watermarker` fornisce il punto di ingresso API per caricare e modificare i documenti. Per iniziare a usare GroupDocs.Watermark, aggiungi le sue coordinate Maven al `pom.xml` del tuo progetto. Questo scarica la libreria e le sue dipendenze, consentendoti di istanziare la classe Watermarker e lavorare con i file diagram direttamente dal codice Java. Puoi quindi configurare la licenza e impostare le opzioni di output prima di elaborare qualsiasi documento.  
-
-Aggiungi la dipendenza GroupDocs.Watermark al tuo `pom.xml`.  
+### Configurazione Maven
+Aggiungi la seguente configurazione al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -79,126 +60,118 @@ Aggiungi la dipendenza GroupDocs.Watermark al tuo `pom.xml`.
       <version>24.11</version>
    </dependency>
 </dependencies>
-```  
+```
 
-Se preferisci non usare Maven, scarica l'ultimo JAR dalla pagina ufficiale dei rilasci.  
+### Download diretto
+In alternativa, scarica l'ultima versione da [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)  
-
-#### Passaggi per l'acquisizione della licenza  
+#### Passaggi per l'acquisizione della licenza
 - Inizia con una prova gratuita per valutare l'API.  
-- Per la produzione, ottieni una licenza temporanea o permanente dal portale del fornitore.  
+- Per la produzione, ottieni una licenza temporanea o completa dal portale GroupDocs.
 
-#### Inizializzazione e configurazione di base  
-
-La classe `Watermarker` è il punto di ingresso per tutte le operazioni di elaborazione dei documenti.  
-
+#### Inizializzazione e configurazione di base
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```  
+```
 
-## Come modificare diagrammi e rimuovere i collegamenti ipertestuali con GroupDocs.Watermark?  
-La classe `Watermarker` fornisce il punto di ingresso API per caricare e modificare i documenti. Prima, carica il file diagram in un'istanza di Watermarker. Quindi recupera la collezione di forme, identifica quelle contenenti oggetti hyperlink e itera su di esse in ordine inverso per eliminare in modo sicuro ogni collegamento senza influenzare l'indicizzazione della collezione. Questo garantisce che tutti gli URL incorporati vengano rimossi mantenendo l'integrità visiva del diagramma.  
+## Come rimuovere i collegamenti ipertestuali dalle forme dei diagrammi
+Di seguito trovi una guida passo‑passo che ti accompagna nel caricamento di un diagramma, nella localizzazione delle forme e nella rimozione dei collegamenti ipertestuali indesiderati.
 
+### Passo 1: Carica il file del diagramma
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```  
+```
+*Perché?* Caricare il file ti consente di accedere programmaticamente alla sua struttura interna.
 
-- **Perché questo passaggio è importante**: Caricare il file ti fornisce l'accesso programmatico a ogni forma e alle sue proprietà associate.  
-
-## Come accedere al contenuto delle forme in un diagramma?  
-L'oggetto `DiagramShape` rappresenta una singola forma all'interno di un diagramma, esponendo le sue proprietà e i metadati allegati. Dopo aver caricato il diagramma, chiama `getShapes()` sul Watermarker per ottenere un elenco di oggetti `DiagramShape`. Ogni forma può essere ispezionata per le collezioni di hyperlink, consentendo un targeting preciso dei collegamenti per rimozione o modifica. È inoltre possibile leggere il testo della forma, i colori e la geometria se sono necessari ulteriori aggiustamenti.  
-
+### Passo 2: Accedi al contenuto della forma
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 DiagramShape shape = content.getPages().get_Item(0).getShapes().get_Item(0);
-```  
+```
+*Perché?* Hai bisogno di un riferimento alla forma specifica che può contenere collegamenti ipertestuali.
 
-- **Perché questo passaggio è importante**: Targetizzare la forma esatta garantisce che vengano rimossi solo i collegamenti indesiderati senza influenzare altri elementi visivi.  
-
-## Come iterare e rimuovere i collegamenti ipertestuali in modo sicuro?  
-Il metodo `removeHyperlink(int index)` elimina un hyperlink nella posizione specificata all'interno della collezione di hyperlink di una forma. Itera sull'elenco di hyperlink dall'ultimo indice fino a zero. Questo ciclo inverso previene lo spostamento degli indici che si verifica quando gli elementi vengono rimossi, garantendo che ogni hyperlink sia elaborato senza essere saltato. Dopo la rimozione, puoi aggiornare lo stato della forma o passare alla forma successiva nel diagramma.  
-
+### Passo 3: Itera e rimuovi i collegamenti ipertestuali
 ```java
 for (int i = shape.getHyperlinks().getCount() - 1; i >= 0; i--) {
     if (shape.getHyperlinks().get_Item(i).getAddress().contains("http://someurl.com")) {
         shape.getHyperlinks().removeAt(i);
     }
 }
-```  
+```
+*Perché?* Iterare all'indietro previene errori di indice quando elimini elementi dalla collezione.
 
-- **Perché questo passaggio è importante**: Un ciclo inverso garantisce che tutti i collegamenti ipertestuali vengano rimossi senza saltare alcuna voce.  
-
-## Come salvare il diagramma modificato e rilasciare le risorse?  
-Il metodo `save(String path)` scrive il documento modificato nella posizione di file specificata, finalizzando tutte le modifiche. Una volta rimossi tutti i collegamenti ipertestuali, invoca il metodo `save` sull'istanza Watermarker, fornendo un nuovo nome file per evitare di sovrascrivere l'originale. Quindi chiama `close()` per rilasciare i handle dei file e liberare la memoria, operazione essenziale per processi batch a lungo termine. Questo garantisce che il file sia correttamente chiuso e pronto per ulteriori utilizzi.  
-
+### Passo 4: Salva e chiudi
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY");
 watermarker.close();
-```  
+```
+*Perché?* Persistere le modifiche e rilasciare le risorse evita perdite di memoria e file bloccati.
 
-- **Perché questo passaggio è importante**: Chiudere correttamente le risorse evita perdite di memoria e problemi di blocco dei file sul server.  
+## Rimozione batch di collegamenti ipertestuali (caso d'uso avanzato)
+Se devi pulire molti diagrammi contemporaneamente, avvolgi la logica sopra in un ciclo che itera su un elenco di percorsi file. Le stesse chiamate API si applicano; basta cambiare le directory di input e output per ogni iterazione. Questo approccio soddisfa i requisiti di **rimozione batch di collegamenti ipertestuali** per grandi repository di documenti.
 
-## Applicazioni pratiche  
+## Applicazioni pratiche
+Rimuovere i collegamenti ipertestuali dalle forme dei diagrammi può essere vantaggioso in diversi scenari reali:
 
-Rimuovere i collegamenti ipertestuali dalle forme dei diagrammi può essere vantaggioso in diversi scenari reali:  
+1. **Scopi di sicurezza** – Impedire link esterni che potrebbero esporre la tua rete a phishing o malware.  
+2. **Conformità** – Rispettare le politiche aziendali che vietano URL in uscita nei documenti condivisi.  
+3. **Chiarezza** – Produrre presentazioni più pulite dove i collegamenti ipertestuali sono inutili o distraenti.  
 
-1. **Sicurezza** – Impedire collegamenti esterni che potrebbero portare a siti dannosi.  
-2. **Conformità** – Rispettare le politiche aziendali che vietano URL incorporati negli asset condivisi.  
-3. **Chiarezza** – Produrre presentazioni più pulite dove i collegamenti sarebbero di distrazione.  
+## Considerazioni sulle prestazioni
+### Ottimizzazione delle prestazioni
+- Usa il pattern di iterazione inversa mostrato sopra per mantenere i cicli efficienti.  
+- Chiudi l'oggetto `Watermarker` non appena hai finito per liberare memoria.
 
-Puoi incorporare questa logica in pipeline di automazione più ampie, come job batch notturni che sanificano tutti i diagrammi prima della loro pubblicazione su un intranet.  
+### Linee guida sull'uso delle risorse
+- Monitora CPU e RAM durante l'elaborazione di diagrammi di grandi dimensioni.  
+- Per lavori in batch, considera lo streaming dei file invece di caricarli tutti contemporaneamente.
 
-## Considerazioni sulle prestazioni  
+### Best practice per la gestione della memoria in Java
+- Evita di creare oggetti all'interno di cicli stretti.  
+- Usa try‑with‑resources dove possibile per la pulizia automatica.
 
-### Ottimizzazione delle prestazioni  
-- Usa una singola istanza `Watermarker` per file per ridurre l'overhead.  
-- Preferisci l'iterazione inversa (come mostrato) per evitare costosi ri‑indicizzamenti della lista.  
+## Domande frequenti
+1. **Come gestisco più forme?**  
+   Itera su tutte le pagine e le loro forme, applicando la stessa logica di rimozione dei collegamenti ipertestuali a ciascuna forma.  
 
-### Linee guida sull'uso delle risorse  
-- Per diagrammi più grandi di 200 MB, monitora l'uso dell'heap e considera di aumentare il flag JVM `-Xmx`.  
-- Strumenti di profiling come VisualVM possono aiutare a identificare i colli di bottiglia in esecuzioni batch su larga scala.  
+2. **Questo processo può essere automatizzato per grandi batch di diagrammi?**  
+   Sì – incorpora il codice in una routine di elaborazione batch o integralo con il tuo sistema di gestione documenti.  
 
-### Best practice per la gestione della memoria Java  
-- Dichiarare gli oggetti all'interno del più piccolo ambito possibile.  
-- Usa try‑with‑resources quando lavori con gli stream per garantire la chiusura automatica.  
+3. **E se devo rimuovere i collegamenti ipertestuali solo da pagine specifiche?**  
+   Accedi alla pagina desiderata tramite il suo indice (`content.getPages().get_Item(pageIndex)`) e mira solo alle forme su quella pagina.  
 
-## Domande frequenti  
+4. **È necessaria una licenza per l'uso in produzione di GroupDocs.Watermark?**  
+   È richiesta una licenza commerciale valida oltre il periodo di prova.  
 
-**Q: Come gestisco i diagrammi che contengono migliaia di forme?**  
-A: Elabora il diagramma pagina per pagina e rilascia le risorse di ogni pagina prima di passare alla successiva per mantenere basso l'uso della memoria.  
+5. **Questo metodo funziona con altri formati di diagramma?**  
+   GroupDocs.Watermark supporta molti tipi di diagrammi; verifica la compatibilità nella documentazione ufficiale.  
 
-**Q: Posso limitare la rimozione dei collegamenti ipertestuali a pagine specifiche?**  
-A: Sì – recupera l'indice della pagina desiderata, quindi applica il ciclo di rimozione solo alle forme di quella pagina.  
+**Domande aggiuntive**
 
-**Q: È obbligatoria una licenza commerciale per l'elaborazione batch?**  
-A: È necessaria una licenza valida per qualsiasi distribuzione a livello di produzione; la prova gratuita è limitata a 30 giorni e 5 documenti.  
+**D:** *È possibile registrare quali collegamenti ipertestuali sono stati rimossi?*  
+**R:** Sì – prima di chiamare `removeAt(i)`, cattura `shape.getHyperlinks().get_Item(i).getAddress()` e scrivilo in un file di log.
 
-**Q: GroupDocs.Watermark supporta i diagrammi SVG?**  
-A: Assolutamente – SVG è tra i più di 30 formati supportati, e i collegamenti ipertestuali possono essere rimossi usando le stesse chiamate API.  
+**D:** *La rimozione dei collegamenti ipertestuali influirà sull'aspetto visivo della forma?*  
+**R:** No. La geometria della forma rimane invariata; solo i metadati del collegamento vengono rimossi.
 
-**Q: Cosa succede se una forma ha più collegamenti ipertestuali?**  
-A: Il ciclo di iterazione inversa rimuove ogni voce di collegamento ipertestuale individualmente, garantendo che tutti i link siano eliminati.  
+**D:** *Devo riapplicare qualche stile dopo la rimozione?*  
+**R:** Di solito no. La rimozione dei collegamenti ipertestuali non altera i riempimenti, le linee o gli stili del testo.
 
-## Risorse  
+## Conclusione
+Ora disponi di un metodo completo, pronto per la produzione, per **rimuovere i collegamenti ipertestuali** dalle forme dei diagrammi usando GroupDocs.Watermark per Java. Seguendo i passaggi sopra, puoi proteggere i tuoi diagrammi, rispettare le politiche e mantenere i documenti dall'aspetto curato.
 
-- [Documentation](https://docs.groupdocs.com/watermark/java/)  
-- [API Reference](https://reference.groupdocs.com/watermark/java)  
+## Risorse
+- [Documentazione](https://docs.groupdocs.com/watermark/java/)  
+- [Riferimento API](https://reference.groupdocs.com/watermark/java)  
 - [Download](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
-- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)  
+- [Repository GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- [Forum di supporto gratuito](https://forum.groupdocs.com/c/watermark/10)  
+- [Acquisizione licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
 
----  
+---
 
-**Ultimo aggiornamento:** 2026-08-25  
-**Testato con:** GroupDocs.Watermark 24.11 per Java  
-**Autore:** GroupDocs  
-
-## Tutorial correlati
-
-- [Tutorial di watermarking diagrammi per GroupDocs.Watermark Java](/watermark/java/diagram-document-watermarking/)  
-- [Modifica intestazioni e piè di pagina dei diagrammi in Java usando GroupDocs.Watermark: Guida completa](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)  
-- [Rimuovi forme dai diagrammi in modo efficiente usando GroupDocs.Watermark per Java](/watermark/java/watermark-removal/remove-shapes-diagrams-groupdocs-watermark-java/)
+**Last Updated:** 2025-12-19  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  

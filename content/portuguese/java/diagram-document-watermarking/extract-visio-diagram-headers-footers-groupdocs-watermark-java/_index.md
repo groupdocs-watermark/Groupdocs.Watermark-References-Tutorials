@@ -1,112 +1,65 @@
 ---
-date: '2026-08-25'
-description: Aprenda como extrair cabeçalhos do Visio usando o GroupDocs.Watermark
-  para Java, incluindo configurações de fonte, conteúdo de texto, cores e margens
-  em diagramas Visio.
+date: '2025-12-31'
+description: Aprenda a usar o GroupDocs e extrair cabeçalhos e rodapés de diagramas
+  Visio com o GroupDocs.Watermark Java, incluindo configurações de fonte e conteúdo
+  de texto.
 keywords:
-- extract visio headers
+- extract headers footers Visio diagrams
 - GroupDocs Watermark Java
-- Visio diagram processing
-lastmod: '2026-08-25'
-og_description: Aprenda como extrair cabeçalhos do Visio usando o GroupDocs.Watermark
-  para Java, abordando configurações de fonte, conteúdo de texto, cores e margens
-  para arquivos de diagramas Visio.
-og_image_alt: Guide showing how to extract Visio headers using GroupDocs.Watermark
-  for Java
-og_title: Extrair cabeçalhos do Visio com GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-25'
-  description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  headline: Extract visio headers with GroupDocs.Watermark Java
-  type: TechArticle
-- description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  name: Extract visio headers with GroupDocs.Watermark Java
-  steps:
-  - name: '**Document analysis** – batch‑process Visio files to build a style inventory
-      for compliance reporting.'
-    text: '**Document analysis** – batch‑process Visio files to build a style inventory
-      for compliance reporting.'
-  - name: '**Compliance checks** – verify that all diagrams follow corporate header/footer
-      standards.'
-    text: '**Compliance checks** – verify that all diagrams follow corporate header/footer
-      standards.'
-  - name: '**Automated report generation** – dynamically adjust generated diagrams
-      based on extracted font and color data.'
-    text: '**Automated report generation** – dynamically adjust generated diagrams
-      based on extracted font and color data.'
-  - name: '**CMS integration** – feed extracted header text into metadata fields of
-      a content‑management system.'
-    text: '**CMS integration** – feed extracted header text into metadata fields of
-      a content‑management system.'
-  type: HowTo
-- questions:
-  - answer: Enable streaming mode, close the `Watermarker` promptly, and process pages
-      in batches to keep memory usage minimal.
-    question: How do I handle very large Visio files efficiently?
-  - answer: Yes—it supports over 50 formats, including PDF, DOCX, PPTX, and image
-      files. Use the same header/footer API where applicable.
-    question: Can GroupDocs.Watermark extract headers from other file types?
-  - answer: Verify that the file is a supported Visio version, ensure you’re using
-      the latest library release, and check the stack trace for missing dependencies.
-    question: What should I do if extraction throws an exception?
-  - answer: Yes—use the GroupDocs [free support forum](https://forum.groupdocs.com/c/watermark/10)
-      for community assistance, or contact the support team with a valid license.
-    question: Is technical support available for this library?
-  - answer: Wrap the extraction logic in a service class, inject the `Watermarker`
-      via Spring, and expose a REST endpoint that returns JSON with the extracted
-      header data.
-    question: How can I integrate these calls into an existing Java web service?
-  type: FAQPage
-tags:
-- extract visio headers
-- GroupDocs.Watermark
-- Java diagram API
-- Visio automation
-title: Extrair cabeçalhos do Visio com GroupDocs.Watermark Java
+- Visio diagram watermarking
+title: Como usar o GroupDocs – Extrair cabeçalhos e rodapés do Visio (Java)
 type: docs
 url: /pt/java/diagram-document-watermarking/extract-visio-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Extrair cabeçalhos Visio com GroupDocs.Watermark Java
+# Extrair Cabeçalhos e Rodapés de Diagramas Visio Usando GroupDocs.Watermark para Java
 
-Se você precisar **extrair cabeçalhos Visio** — incluindo detalhes de fonte, cadeias de texto, cores e margens — de arquivos de diagramas Visio, o GroupDocs.Watermark para Java oferece uma maneira limpa e programática de fazer isso. Este tutorial orienta você em tudo que precisa, desde a configuração da biblioteca até a extração de cada parte das informações de cabeçalho e rodapé.
+## Introdução
 
-## Respostas rápidas
-- **O que significa “extrair cabeçalhos Visio”?** Significa ler os objetos de cabeçalho/rodapé dentro de um arquivo Visio e recuperar seus dados de estilo e layout.  
-- **Qual biblioteca lida com isso?** GroupDocs.Watermark for Java (versão 24.11 ou posterior).  
-- **Preciso de licença?** Um teste gratuito funciona para avaliação; uma licença permanente é necessária para produção.  
-- **Posso processar diagramas grandes?** Sim — o GroupDocs.Watermark pode lidar com arquivos com mais de 500 páginas sem carregar todo o arquivo na memória.  
-- **Qual versão do Java é necessária?** Java 8 ou mais recente.
+Está com dificuldades para extrair informações de fonte, conteúdo de texto, cores ou margens de cabeçalhos e rodapés em diagramas Microsoft Visio? Com o GroupDocs.Watermark para Java, essas tarefas se tornam simples. Este guia demonstrará como utilizar esta poderosa biblioteca para extrair detalhes cruciais de forma eficiente.
 
-## O que é extrair cabeçalhos Visio?
-Extrair cabeçalhos Visio refere-se à leitura programática das seções de cabeçalho e rodapé incorporadas em um arquivo de diagrama Microsoft Visio. Ao acessar esses elementos, você pode recuperar o texto exibido, a família da fonte, tamanho, atributos de estilo, a cor aplicada ao texto e os valores de margem que controlam o posicionamento do cabeçalho e do rodapé em cada página.
+Neste tutorial, **você aprenderá a usar o GroupDocs** para obter dados de cabeçalho/rodapé, facilitando a análise de documentos e verificações de conformidade.
 
-## Por que usar GroupDocs.Watermark para Java?
-GroupDocs.Watermark suporta **mais de 50 formatos de entrada e saída**, incluindo Visio (VSD, VSDX). Ele pode processar diagramas com centenas de páginas em menos de um segundo por 100 páginas em hardware de servidor típico, e faz isso sem precisar do Microsoft Office instalado.
+Ao final deste guia, você terá uma compreensão completa desses recursos. Vamos mergulhar no que você precisa para começar!
 
-## Pré-requisitos
-- **GroupDocs.Watermark for Java** ≥ 24.11 (download da página oficial de lançamentos).  
-- Java Development Kit 8 ou mais recente.  
-- Uma IDE como IntelliJ IDEA ou Eclipse.  
-- Conhecimento básico de Maven.
+## Respostas Rápidas
+- **O que pode ser extraído?** Configurações de fonte, conteúdo de texto, cores e margens de cabeçalhos e rodapés do Visio.  
+- **Qual biblioteca é necessária?** GroupDocs.Watermark para Java (versão 24.11 ou mais recente).  
+- **Preciso de licença?** Uma avaliação gratuita funciona para testes; uma licença completa é necessária para produção.  
+- **Qual versão do Java é suportada?** JDK 8 ou superior.  
+- **Como liberar recursos?** Chame `watermarker.close()` após concluir a extração de dados.
 
-## Configurando GroupDocs.Watermark para Java
+## Como Usar o GroupDocs para Extrair Cabeçalhos e Rodapés do Visio
 
-Add the Maven dependency to your `pom.xml`:
+A seguir você encontrará um passo‑a‑passo que cobre tudo, desde a configuração do projeto até a extração de cada informação de cabeçalho/rodapé. Siga os passos numerados e você terá código funcional em minutos.
+
+## Pré‑requisitos
+
+Antes de começar, certifique‑se de que você tem o seguinte:
+
+### Bibliotecas e Dependências Necessárias
+
+- **GroupDocs.Watermark para Java**: Garanta que a versão 24.11 ou posterior esteja instalada.
+
+### Requisitos de Configuração do Ambiente
+
+- Um JDK compatível (Java Development Kit), preferencialmente versão 8 ou superior.  
+- Uma IDE como IntelliJ IDEA ou Eclipse.
+
+### Pré‑requisitos de Conhecimento
+
+Familiaridade básica com programação Java e compreensão do gerenciamento de dependências Maven serão úteis.
+
+## Usando GroupDocs.Watermark Java para Extração
+
+### Configurando GroupDocs.Watermark para Java
+
+Para começar, você precisará adicionar a biblioteca GroupDocs.Watermark ao seu projeto. Você pode fazer isso via Maven:
+
+**Configuração Maven**
 
 ```xml
-<dependency>
-    <groupId>com.groupdocs</groupId>
-    <artifactId>groupdocs-watermark</artifactId>
-    <version>24.11</version>
-</dependency>
-```
-
-> **Nota:** O placeholder ````xml
 <repositories>
    <repository>
       <id>repository.groupdocs.com</id>
@@ -122,50 +75,47 @@ Add the Maven dependency to your `pom.xml`:
       <version>24.11</version>
    </dependency>
 </dependencies>
-```` indica onde o trecho real do Maven apareceria na fonte original.
-
-Você também pode obter o JAR diretamente da página oficial de lançamentos: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
-
-### Aquisição de licença
-- **Teste gratuito** – comece imediatamente a explorar os recursos principais.  
-- **Licença temporária** – solicite uma chave de tempo limitado no portal GroupDocs.  
-- **Licença completa** – compre para uso ilimitado em produção e suporte prioritário.
-
-### Inicialização básica
-Watermarker é a classe central que abre e manipula arquivos de diagramas.  
-Crie uma instância `Watermarker` para carregar seu diagrama Visio:
-
-```java
-Watermarker watermarker = new Watermarker("sample.vsdx", new VisioLoadOptions());
 ```
 
-> O placeholder ````java
+Como alternativa, faça o download da biblioteca diretamente em [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+
+### Aquisição de Licença
+
+- **Avaliação Gratuita**: Comece com uma avaliação gratuita para explorar os recursos.  
+- **Licença Temporária**: Solicite uma licença temporária no site da GroupDocs.  
+- **Compra**: Para acesso total e suporte, considere adquirir uma licença.
+
+### Inicialização Básica
+
+Inicialize seu ambiente criando uma instância `Watermarker`. Isso carregará seu documento de diagrama na aplicação:
+
+```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```` indica o código de inicialização original.
+```
 
-## Como extrair cabeçalhos Visio?
-Para extrair cabeçalhos Visio, primeiro carregue o arquivo de diagrama em uma instância `Watermarker`, então use a API de cabeçalho‑rodapé para consultar cada página. A biblioteca fornece métodos como `getHeaderFooter().getFont()`, `getText()`, `getColor()` e `getMargin()` que retornam as informações correspondentes de estilo e layout. Colete os resultados e processe-os conforme necessário.
+## Guia de Implementação
 
-Carregue o diagrama com `Watermarker`, então chame os métodos de API apropriados para obter os dados de cabeçalho/rodapé. As seções a seguir detalham cada tarefa de extração.
+Agora, vamos detalhar cada recurso e ver como implementá‑los.
 
-### Recurso 1: extrair informações de fonte do cabeçalho e rodapé
+### Recurso 1: Extrair Informações de Fonte de Cabeçalho e Rodapé
 
-#### Resposta direta
-Chame `getHeaderFooter().getFont()` no objeto `Watermarker` para obter um objeto `FontInfo` que contém o nome da família, tamanho, negrito, itálico, sublinhado e flags de tachado.
+#### Visão Geral
 
-#### Etapas de implementação
+Este recurso permite recuperar as configurações de fonte dos cabeçalhos e rodapés de um documento de diagrama. Isso inclui extrair nome da família, tamanho, negrito, itálico, sublinhado e atributos de tachado.
+
+##### Implementação Passo a Passo
 
 **Inicializar Watermarker**
 
-````java
+```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-````
+```
 
-**Extrair configurações de fonte**
+**Extrair Configurações de Fonte**
 
-````java
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Extract font attributes
@@ -177,18 +127,19 @@ boolean isUnderline = content.getHeaderFooter().getFont().getUnderline();
 boolean isStrikeout = content.getHeaderFooter().getFont().getStrikeout();
 
 watermarker.close(); // Always close the watermarker to free resources
-````
+```
 
-### Recurso 2: extrair conteúdo de texto dos cabeçalhos e rodapés
+### Recurso 2: Extrair Conteúdo de Texto de Cabeçalhos e Rodapés
 
-#### Resposta direta
-Use `getHeaderFooter().getText()` para recuperar a string bruta armazenada em cada região de cabeçalho e rodapé do diagrama Visio.
+#### Visão Geral
 
-#### Etapas de implementação
+Este recurso foca na extração de texto de diferentes partes dos cabeçalhos e rodapés em um documento de diagrama.
 
-**Extrair texto de cabeçalho e rodapé**
+##### Implementação Passo a Passo
 
-````java
+**Extrair Texto de Cabeçalho & Rodapé**
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Extract header texts
@@ -202,36 +153,38 @@ String footerCenterText = content.getHeaderFooter().getFooterCenter();
 String footerRightText = content.getHeaderFooter().getFooterRight();
 
 watermarker.close(); // Remember to close the watermarker
-````
+```
 
-### Recurso 3: extrair cor do texto dos cabeçalhos e rodapés
+### Recurso 3: Extrair Cor do Texto de Cabeçalhos e Rodapés
 
-#### Resposta direta
-Invocar `getHeaderFooter().getColor()`; o método retorna um inteiro ARGB que você pode converter para um código de cor hexadecimal.
+#### Visão Geral
 
-#### Etapas de implementação
+Este recurso permite determinar a cor usada em cabeçalhos e rodapés, representada como um valor inteiro ARGB.
 
-**Extrair cor do texto**
+##### Implementação Passo a Passo
 
-````java
+**Extrair Cor do Texto**
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Get text color as ARGB integer
 int textColorArgb = content.getHeaderFooter().getTextColor().toArgb();
 
 watermarker.close(); // Close to release resources
-````
+```
 
-### Recurso 4: extrair margens do cabeçalho e rodapé
+### Recurso 4: Extrair Margens de Cabeçalho e Rodapé
 
-#### Resposta direta
-Chame `getHeaderFooter().getMargin()` para receber um objeto `MarginInfo` contendo os valores de margem esquerda, direita, superior e inferior em pontos.
+#### Visão Geral
 
-#### Etapas de implementação
+Aprenda a extrair as configurações de margem para cabeçalhos e rodapés, essencial para entender as configurações de layout.
 
-**Extrair configurações de margem**
+##### Implementação Passo a Passo
 
-````java
+**Extrair Configurações de Margem**
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Get margins
@@ -239,56 +192,56 @@ float footerMargin = content.getHeaderFooter().getFooterMargin();
 float headerMargin = content.getHeaderFooter().getHeaderMargin();
 
 watermarker.close(); // Closing is crucial for resource management
-````
+```
 
-## Aplicações práticas
+## Aplicações Práticas
 
-Usando essas capacidades de extração, você pode automatizar vários cenários reais:
+Aproveitar esses recursos pode simplificar várias tarefas do mundo real, como:
 
-1. **Análise de documentos** – processar em lote arquivos Visio para construir um inventário de estilos para relatórios de conformidade.  
-2. **Verificações de conformidade** – verificar se todos os diagramas seguem os padrões corporativos de cabeçalho/rodapé.  
-3. **Geração automática de relatórios** – ajustar dinamicamente diagramas gerados com base nos dados de fonte e cor extraídos.  
-4. **Integração com CMS** – alimentar o texto de cabeçalho extraído em campos de metadados de um sistema de gerenciamento de conteúdo.
+1. **Análise de Documentos** – Automatizar a extração de informações de estilo para análise e comparação de documentos.  
+2. **Verificações de Conformidade** – Garantir que os formatos de cabeçalho e rodapé estejam em conformidade com os padrões organizacionais.  
+3. **Geração Automática de Relatórios** – Ajustar dinamicamente estilos com base nas fontes e cores extraídas.  
+4. **Integração com Sistemas CMS** – Usar o texto extraído para preencher metadados em sistemas de gerenciamento de conteúdo.
 
-## Considerações de desempenho
-- **Descartar** a instância `Watermarker` após o uso para liberar os manipuladores de arquivos.  
-- Para diagramas grandes, habilite o modo streaming para manter o uso de memória baixo.  
-- Faça o profiling da sua aplicação com um profiler Java para localizar gargalos.
+## Considerações de Desempenho
+
+Para otimizar o desempenho ao usar o GroupDocs.Watermark:
+
+- Minimize o uso de recursos fechando a instância `Watermarker` após as operações.  
+- Gerencie a memória de forma eficiente, especialmente para arquivos de diagrama grandes.  
+- Perfis e teste sua aplicação para identificar gargalos.
+
+## Perguntas Frequentes
+
+**P: Como lidar eficientemente com arquivos de diagrama grandes?**  
+R: Use práticas eficientes de gerenciamento de memória, feche o `Watermarker` prontamente e faça profiling da aplicação para identificar operações que consomem muita memória.
+
+**P: O GroupDocs.Watermark pode extrair informações de outros tipos de documento?**  
+R: Sim, ele suporta uma ampla variedade de formatos além de diagramas Visio. Consulte a documentação oficial para a lista completa.
+
+**P: O que fazer se encontrar erros de extração?**  
+R: Verifique se corresponde aos requisitos da biblioteca, assegure que o formato do diagrama seja suportado e consulte os detalhes do erro para dependências ausentes.
+
+**P: Existe suporte disponível para solução de problemas?**  
+R: Sim, você pode fazer perguntas no [forum de suporte gratuito](https://forum.groupdocs.com/c/watermark/10) ou entrar em contato diretamente com o suporte da GroupDocs.
+
+**P: Como integrar esses passos de extração em uma aplicação Java existente?**  
+R: Siga o mesmo padrão de inicialização mostrado acima, incorpore o código de extração onde precisar dos dados de cabeçalho/rodapé e lembre‑se de fechar o `Watermarker` após o uso.
 
 ## Conclusão
-Agora você tem um guia completo, passo a passo, para **extrair cabeçalhos Visio** e informações de estilo relacionadas usando GroupDocs.Watermark para Java. Experimente a API para adaptar essas extrações ao seu fluxo de trabalho específico e consulte a documentação oficial para cenários avançados.
 
-Para uma exploração mais profunda, veja a [documentação do GroupDocs](https://docs.groupdocs.com/watermark/java/) e considere estender a solução para outros formatos de diagramas suportados pela biblioteca.
-
-## Perguntas frequentes
-
-**Q: Como lidar com arquivos Visio muito grandes de forma eficiente?**  
-A: Habilite o modo streaming, feche o `Watermarker` prontamente e processe as páginas em lotes para manter o uso de memória mínimo.
-
-**Q: O GroupDocs.Watermark pode extrair cabeçalhos de outros tipos de arquivo?**  
-A: Sim — ele suporta mais de 50 formatos, incluindo PDF, DOCX, PPTX e arquivos de imagem. Use a mesma API de cabeçalho/rodapé onde aplicável.
-
-**Q: O que fazer se a extração lançar uma exceção?**  
-A: Verifique se o arquivo é uma versão Visio suportada, assegure que está usando a versão mais recente da biblioteca e confira o stack trace para dependências ausentes.
-
-**Q: O suporte técnico está disponível para esta biblioteca?**  
-A: Sim — use o [fórum de suporte gratuito](https://forum.groupdocs.com/c/watermark/10) do GroupDocs para assistência da comunidade, ou entre em contato com a equipe de suporte com uma licença válida.
-
-**Q: Como integrar essas chamadas em um serviço web Java existente?**  
-A: Envolva a lógica de extração em uma classe de serviço, injete o `Watermarker` via Spring e exponha um endpoint REST que retorne JSON com os dados de cabeçalho extraídos.
+Agora você tem uma base sólida para extrair cabeçalhos e rodapés de diagramas Visio usando o GroupDocs.Watermark em Java. Experimente esses recursos e integre‑os aos seus projetos de forma fluida. Para aprofundar, explore a [documentação do GroupDocs](https://docs.groupdocs.com/watermark/java/) e considere estender a funcionalidade conforme suas necessidades específicas.
 
 ## Recursos
-- **Documentação:** Explore mais em [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **Referência da API:** Aprofunde-se com as [API References](https://reference.groupdocs.com/watermark/java)  
-- **Baixar a biblioteca:** Obtenha a versão mais recente em [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)
+
+- **Documentação**: Explore mais em [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Referência de API**: Aprofunde-se com [API References](https://reference.groupdocs.com/watermark/java)  
+- **Download da Biblioteca**: Obtenha a versão mais recente em [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
 
 ---
 
-**Última atualização:** 2026-08-25  
+**Última atualização:** 2025-12-31  
 **Testado com:** GroupDocs.Watermark 24.11 para Java  
-**Autor:** GroupDocs
+**Autor:** GroupDocs  
 
-## Tutoriais Relacionados
-- [Editar cabeçalhos e rodapés de diagramas em Java usando GroupDocs.Watermark: Um Guia Abrangente](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Como adicionar marcas d'água de texto a diagramas usando GroupDocs.Watermark em Java](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Extrair informações de formas de diagramas usando GroupDocs.Watermark em Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
+---

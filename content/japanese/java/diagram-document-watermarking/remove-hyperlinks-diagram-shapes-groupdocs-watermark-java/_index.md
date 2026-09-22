@@ -1,63 +1,50 @@
 ---
-date: '2026-08-25'
-description: GroupDocs.Watermark for Java を使用して、図ファイルを編集しハイパーリンクを削除する方法を学びます。ステップバイステップのガイダンスで図を迅速に保護しましょう。
+date: '2025-12-19'
+description: GroupDocs.Watermark Java を使用して図形のハイパーリンクを削除する方法を学びましょう。これは Java ドキュメントのセキュリティにおける重要なステップであり、ハイパーリンクを一括で削除できます。
 keywords:
-- how to edit diagram
-- remove hyperlinks diagram shapes
-- GroupDocs.Watermark Java
-lastmod: '2026-08-25'
-og_description: GroupDocs.Watermark for Java を使用して、図ファイルを編集しハイパーリンクを削除する方法を学びます。ドキュメントを保護するための明確な手順をご案内します。
-og_image_alt: Guide showing how to edit diagram and remove hyperlinks using GroupDocs.Watermark
-  Java
-og_title: Javaで図を編集しハイパーリンクを削除する方法
-tags:
-- edit diagram
-- remove hyperlinks
-- GroupDocs.Watermark
-- Java document processing
-- diagram security
-title: Javaで図を編集しハイパーリンクを削除する方法
+- remove hyperlinks diagram shapes GroupDocs Watermark Java
+- manage digital documents diagrams
+- GroupDocs Watermark library Java
+title: GroupDocs.Watermark Java を使用して図形のハイパーリンクを削除する方法
 type: docs
 url: /ja/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Javaでダイアグラムを編集しハイパーリンクを削除する方法  
+# GroupDocs.Watermark Java を使用した図形からハイパーリンクを削除する方法
 
-デジタル文書の管理では、特にセキュリティや視覚的な明瞭さのためにハイパーリンクを除去する必要がある場合、**edit diagram** ファイルの編集が頻繁に行われます。このチュートリアルでは、Java 用の強力な **GroupDocs.Watermark** ライブラリを使用して、ダイアグラムファイルを編集し、ダイアグラムのシェイプから不要なハイパーリンクを削除する方法を正確に示します。ガイドの最後までに、配布用にリンクのないクリーンなダイアグラムが手に入ります。  
+デジタル文書の管理では、特に **ハイパーリンクの削除** がセキュリティや可読性の観点で重要になることから、図面の編集が頻繁に行われます。このチュートリアルでは、GroupDocs.Watermark for Java を使って図形から **ハイパーリンクを削除する方法** を学び、ファイルをクリーンで安全、かつプロフェッショナルに保つ方法をご紹介します。
 
-## クイック回答  
-- **What is the main goal?** ダイアグラムのシェイプからすべてのハイパーリンクを削除し、セキュリティとプレゼンテーションを向上させます。  
-- **Which library is required?** Java 用 GroupDocs.Watermark、バージョン 24.11 以上。  
-- **Do I need a license?** テストには無料トライアルが利用可能です。商用環境では商用ライセンスが必要です。  
-- **Can I process many files at once?** はい。同じコードをループに入れることでバッチ処理が可能です。  
-- **What Java version is supported?** Java 8 以上（Java 11 推奨）。  
+## クイックアンサー
+- **主な目的は何ですか？**  
+  不要なハイパーリンクを図形から除去し、文書のセキュリティを向上させることです。  
+- **使用するライブラリは？**  
+  GroupDocs.Watermark for Java（バージョン 24.11 以降）。  
+- **ライセンスは必要ですか？**  
+  試用版でテストは可能ですが、本番環境では有効なライセンスが必要です。  
+- **多数のファイルを一括処理できますか？**  
+  はい。同じロジックをバッチループに組み込むことで対応できます。  
+- **Java 8 で十分ですか？**  
+  Java 8 以上がサポートされており、より新しい JDK の使用が推奨されます。
 
-## “how to edit diagram” とは何ですか？  
-**How to edit diagram** は、プログラムでダイアグラムファイルを開き、内部要素（シェイプ、テキスト、ハイパーリンクなど）を変更し、結果を保存するプロセスを指します。GroupDocs.Watermark を使用すれば、元の作成ツールがなくてもダイアグラムファイルを編集できます。  
+## 図面における「ハイパーリンクの削除」とは？
+ハイパーリンクの削除とは、図面ファイル（例: Visio *.vsdx）内の図形に付随している URL 参照を削除することです。この操作により、外部サイトへの誤クリックを防ぎ、コンプライアンスや社内セキュリティポリシーの遵守に役立ちます。
 
-## なぜ Java 用 GroupDocs.Watermark を使用するのか？  
-GroupDocs.Watermark は **30 以上のダイアグラムおよび画像フォーマット**（VSDX、SVG、WMF など）をサポートし、ドキュメント全体をメモリに読み込むことなく **500 MB** までのファイルを処理でき、競合他社に比べて **20 % 高速** な処理速度を実現します。  
+## なぜ GroupDocs.Watermark Java を使うのか？
+- **堅牢なフォーマットサポート** – 幅広い図面タイプに対応。  
+- **細粒度 API** – 個々の図形とそのハイパーリンクコレクションを直接操作可能。  
+- **パフォーマンス最適化** – 単一ファイルでも大量処理でも高速に動作。
 
-## 前提条件  
-- **GroupDocs.Watermark** ライブラリ バージョン 24.11 以上。  
-- Maven がインストールされていること（または手動設定を好む場合は JAR ファイル）。  
-- Java Development Kit 8 以上と、IntelliJ IDEA や Eclipse などの IDE。  
+## 前提条件
+- **GroupDocs.Watermark** ライブラリ バージョン 24.11 以降。  
+- Maven または直接 JAR ダウンロード（下記セットアップ手順参照）。  
+- Java Development Kit (JDK 8 以上) と IntelliJ IDEA や Eclipse などの IDE。
 
-### 必要なライブラリ、バージョン、依存関係  
-- GroupDocs.Watermark 24.11+  
-- Maven 3.6+（Maven アプローチを使用する場合）  
+## GroupDocs.Watermark for Java の設定方法
+まず、Maven もしくは JAR ダウンロードでプロジェクトにライブラリを組み込みます。
 
-### 環境設定要件  
-JDK の `bin` ディレクトリが `PATH` に含まれていること、IDE が正しい JDK バージョンを指していることを確認してください。  
-
-### 知識の前提条件  
-基本的な Java 構文、Maven の依存関係管理、ファイル I/O 操作に慣れている必要があります。  
-
-## Java 用 GroupDocs.Watermark のセットアップ方法は？  
-`Watermarker` クラスは、ドキュメントの読み込みと変更のための API エントリーポイントを提供します。GroupDocs.Watermark の使用を開始するには、Maven の座標をプロジェクトの `pom.xml` に追加します。これによりライブラリとその依存関係が取得され、Watermarker クラスをインスタンス化して Java コードから直接ダイアグラムファイルを操作できるようになります。その後、ライセンスを設定し、ドキュメントを処理する前に出力オプションを構成できます。  
-
-`pom.xml` に GroupDocs.Watermark の依存関係を追加します。  
+### Maven 設定
+`pom.xml` に以下の設定を追加してください。
 
 ```xml
 <repositories>
@@ -75,126 +62,118 @@ JDK の `bin` ディレクトリが `PATH` に含まれていること、IDE が
       <version>24.11</version>
    </dependency>
 </dependencies>
-```  
+```
 
-Maven を使用したくない場合は、公式リリースページから最新の JAR をダウンロードしてください。  
+### 直接ダウンロード
+または、[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) から最新バージョンを取得してください。
 
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)  
+#### ライセンス取得手順
+- 無料トライアルで API を評価する。  
+- 本番環境では、GroupDocs ポータルから一時ライセンスまたはフルサイズライセンスを取得する。
 
-#### ライセンス取得手順  
-- API を評価するために無料トライアルから開始します。  
-- 本番環境では、ベンダーポータルから一時または永続ライセンスを取得します。  
-
-#### 基本的な初期化と設定  
-
-`Watermarker` クラスは、すべてのドキュメント処理操作のエントリーポイントです。  
-
+#### 基本的な初期化と設定
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```  
+```
 
-## GroupDocs.Watermark を使用してダイアグラムを編集しハイパーリンクを削除する方法は？  
-`Watermarker` クラスは、ドキュメントの読み込みと変更のための API エントリーポイントを提供します。まず、ダイアグラムファイルを Watermarker インスタンスにロードします。次に、シェイプのコレクションを取得し、ハイパーリンクオブジェクトを含むシェイプを特定し、逆順にイテレートしてコレクションのインデックスに影響を与えず安全に各リンクを削除します。これにより、埋め込まれたすべての URL が削除され、ダイアグラムの視覚的整合性が保たれます。  
+## 図形からハイパーリンクを削除する方法
+以下は、図面を読み込み、図形を特定し、不要なハイパーリンクを除去する手順をステップバイステップで示したガイドです。
 
+### 手順 1: 図面ファイルをロードする
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```  
+```
+*Why?* ファイルをロードすることで、内部構造へプログラムからアクセスできるようになります。
 
-- **このステップが重要な理由**: ファイルをロードすることで、すべてのシェイプとその関連プロパティにプログラムからアクセスできるようになります。  
-
-## ダイアグラムでシェイプのコンテンツにアクセスする方法は？  
-`DiagramShape` オブジェクトは、ダイアグラム内の個々のシェイプを表し、そのプロパティと付随するメタデータを公開します。ダイアグラムをロードした後、Watermarker で `getShapes()` を呼び出して `DiagramShape` オブジェクトのリストを取得します。各シェイプはハイパーリンクコレクションを検査でき、削除や変更のためにリンクを正確に対象にできます。さらに調整が必要な場合は、シェイプのテキスト、色、ジオメトリも読み取れます。  
-
+### 手順 2: 図形コンテンツにアクセスする
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 DiagramShape shape = content.getPages().get_Item(0).getShapes().get_Item(0);
-```  
+```
+*Why?* ハイパーリンクが含まれる可能性のある特定の図形への参照が必要です。
 
-- **このステップが重要な理由**: 正確なシェイプを対象にすることで、不要なリンクだけを削除し、他の視覚要素に影響を与えません。  
-
-## ハイパーリンクを安全にイテレートして削除する方法は？  
-`removeHyperlink(int index)` メソッドは、シェイプのハイパーリンクコレクション内の指定された位置にあるハイパーリンクを削除します。ハイパーリンクリストを最後のインデックスからゼロまで逆順にイテレートします。この逆ループにより、アイテム削除時に発生するインデックスシフトを防ぎ、すべてのハイパーリンクがスキップされることなく処理されます。削除後、シェイプの状態をリフレッシュするか、ダイアグラム内の次のシェイプに進むことができます。  
-
+### 手順 3: 反復処理でハイパーリンクを削除する
 ```java
 for (int i = shape.getHyperlinks().getCount() - 1; i >= 0; i--) {
     if (shape.getHyperlinks().get_Item(i).getAddress().contains("http://someurl.com")) {
         shape.getHyperlinks().removeAt(i);
     }
 }
-```  
+```
+*Why?* 逆順にループすることで、コレクションから要素を削除した際のインデックスエラーを防止します。
 
-- **このステップが重要な理由**: 逆ループにより、エントリをスキップすることなくすべてのハイパーリンクが確実に削除されます。  
-
-## 編集したダイアグラムを保存しリソースを解放する方法は？  
-`save(String path)` メソッドは、変更されたドキュメントを指定されたファイル場所に書き込み、すべての変更を確定します。すべてのハイパーリンクが削除されたら、Watermarker インスタンスで `save` メソッドを呼び出し、元のファイルを上書きしないよう新しいファイル名を指定します。その後、`close()` を呼び出してファイルハンドルを解放し、メモリを開放します。これは長時間実行されるバッチ処理に不可欠です。これにより、ファイルが適切に閉じられ、次の使用に備えられます。  
-
+### 手順 4: 保存してクローズする
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY");
 watermarker.close();
-```  
+```
+*Why?* 変更を永続化し、リソースを解放することでメモリリークやファイルロックを回避します。
 
-- **このステップが重要な理由**: リソースを適切に閉じることで、メモリリークやサーバー上のファイルロック問題を防げます。  
+## バッチでハイパーリンクを削除する（高度なユースケース）
+多数の図面を一括でクリーンアップする必要がある場合は、上記ロジックをファイルパスのリストを走査するループでラップします。API 呼び出しは同一で、各イテレーションの入力・出力ディレクトリを変更するだけです。この手法は、大規模ドキュメントリポジトリ向けの **バッチハイパーリンク削除** 要件に適合します。
 
-## 実用的な活用例  
+## 実務での活用例
+図形からハイパーリンクを削除することは、以下のような実際のシナリオで有益です。
 
-ダイアグラムのシェイプからハイパーリンクを削除することは、実際のシナリオでいくつかの利点があります：  
+1. **セキュリティ目的** – フィッシングやマルウェアにつながる外部リンクを防止。  
+2. **コンプライアンス** – 共有文書内での外部 URL 使用を禁止する社内ポリシーに準拠。  
+3. **可読性向上** – ハイパーリンクが不要または視覚的に邪魔になるプレゼンテーションをすっきりさせる。
 
-1. **Security** – 悪意のあるサイトへ誘導する可能性のある外部リンクを防止します。  
-2. **Compliance** – 共有資産に埋め込まれた URL を禁止する企業ポリシーを遵守します。  
-3. **Clarity** – リンクが注意を散らすことのない、よりクリーンなプレゼンテーションを作成します。  
+## パフォーマンスに関する考慮点
+### パフォーマンス最適化
+- 前述の逆順イテレーションパターンを使用してループ効率を保つ。  
+- 作業完了後は `Watermarker` オブジェクトを速やかにクローズし、メモリを解放する。
 
-このロジックを、イントラネットに公開される前にすべてのダイアグラムをサニタイズする夜間バッチジョブなど、より大規模な自動化パイプラインに組み込むことができます。  
+### リソース使用ガイドライン
+- 大容量図面を処理する際は CPU と RAM の使用状況を監視。  
+- バルクジョブでは、すべてのファイルを同時にロードするのではなくストリーミング処理を検討。
 
-## パフォーマンスに関する考慮事項  
+### Java メモリ管理のベストプラクティス
+- ループ内でのオブジェクト生成は避ける。  
+- `try‑with‑resources` を活用し、可能な限り自動クリーンアップを実装。
 
-### パフォーマンス最適化  
-- ファイルごとに単一の `Watermarker` インスタンスを使用してオーバーヘッドを削減します。  
-- コストのかかるリスト再インデックスを避けるため、逆順イテレーション（上記参照）を優先します。  
+## Frequently Asked Questions
+1. **複数の図形を扱う場合はどうすればよいですか？**  
+   すべてのページとその図形を走査し、各図形に対して同じハイパーリンク削除ロジックを適用します。  
 
-### リソース使用ガイドライン  
-- 200 MB を超えるダイアグラムの場合、ヒープ使用量を監視し、JVM の `-Xmx` フラグ増加を検討してください。  
-- VisualVM などのプロファイリングツールは、大規模バッチ実行時のボトルネック特定に役立ちます。  
+2. **大量の図面バッチを自動化できますか？**  
+   はい。コードをバッチ処理ルーチンに組み込むか、ドキュメント管理システムと統合してください。  
 
-### Java メモリ管理のベストプラクティス  
-- オブジェクトは可能な限り最小のスコープで宣言します。  
-- ストリームを扱う際は try‑with‑resources を使用して自動的にクローズされるようにします。  
+3. **特定のページだけからハイパーリンクを削除したい場合は？**  
+   `content.getPages().get_Item(pageIndex)` で目的のページを取得し、そのページ上の図形のみを対象にします。  
 
-## よくある質問  
+4. **本番環境で GroupDocs.Watermark を使用する際にライセンスは必要ですか？**  
+   トライアル期間を過ぎた場合は、正規の商用ライセンスが必須です。  
 
-**Q: 数千のシェイプを含むダイアグラムはどう処理すればよいですか？**  
-A: ダイアグラムをページ単位で処理し、次のページに進む前に各ページのリソースを解放してメモリ使用量を抑えます。  
+5. **他の図面フォーマットでもこの方法は使えますか？**  
+   GroupDocs.Watermark は多数の図面タイプをサポートしています。公式ドキュメントで対応フォーマットを確認してください。  
 
-**Q: ハイパーリンクの削除を特定のページのみに限定できますか？**  
-A: はい。対象のページインデックスを取得し、そのページのシェイプに対してのみ削除ループを適用します。  
+**Additional Q&A**
 
-**Q: バッチ処理には商用ライセンスが必須ですか？**  
-A: 本番レベルの導入には有効なライセンスが必要です。無料トライアルは 30 日間、5 ドキュメントに制限されています。  
+**Q:** *削除されたハイパーリンクをログに記録できますか？*  
+**A:** はい。`removeAt(i)` を呼び出す前に `shape.getHyperlinks().get_Item(i).getAddress()` を取得し、ログファイルに書き出します。
 
-**Q: GroupDocs.Watermark は SVG ダイアグラムをサポートしていますか？**  
-A: もちろんです。SVG は 30 以上のサポートフォーマットの一つで、同じ API 呼び出しでハイパーリンクを除去できます。  
+**Q:** *ハイパーリンクを削除すると図形の見た目は変わりますか？*  
+**A:** 変更ありません。図形のジオメトリはそのままで、リンクメタデータだけが除去されます。
 
-**Q: シェイプに複数のハイパーリンクがある場合はどうなりますか？**  
-A: 逆順イテレーションループが各ハイパーリンクエントリを個別に削除し、すべてのリンクがクリアされます。  
+**Q:** *削除後にスタイルを再適用する必要がありますか？*  
+**A:** 通常は不要です。ハイパーリンク削除は塗り、線、テキストスタイルに影響しません。
 
-## リソース  
+## Conclusion
+これで、GroupDocs.Watermark for Java を使用した図形からハイパーリンクを削除する **完全な本番対応手法** が身につきました。上記手順に従うことで、図面のセキュリティを強化し、ポリシー遵守を実現し、文書を洗練された状態に保つことができます。
 
-- [ドキュメント](https://docs.groupdocs.com/watermark/java/)  
-- [API リファレンス](https://reference.groupdocs.com/watermark/java)  
-- [ダウンロード](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub リポジトリ](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [無料サポートフォーラム](https://forum.groupdocs.com/c/watermark/10)  
-- [一時ライセンス取得](https://purchase.groupdocs.com/temporary-license/)  
+**Resources**  
+- [Documentation](https://docs.groupdocs.com/watermark/java/)  
+- [API Reference](https://reference.groupdocs.com/watermark/java)  
+- [Download](https://releases.groupdocs.com/watermark/java/)  
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
+- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
 
----  
+---
 
-**最終更新日:** 2026-08-25  
-**テスト環境:** GroupDocs.Watermark 24.11 for Java  
-**作者:** GroupDocs  
-
-## 関連チュートリアル  
-
-- [GroupDocs.Watermark Java 用 ダイアグラム透かしチュートリアル](/watermark/java/diagram-document-watermarking/)  
-- [Java で GroupDocs.Watermark を使用してダイアグラムのヘッダーとフッターを編集する包括的ガイド](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)  
-- [GroupDocs.Watermark for Java を使用してダイアグラムからシェイプを効率的に削除する](/watermark/java/watermark-removal/remove-shapes-diagrams-groupdocs-watermark-java/)
+**Last Updated:** 2025-12-19  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  

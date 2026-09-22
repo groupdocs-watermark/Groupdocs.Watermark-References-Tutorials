@@ -1,69 +1,48 @@
 ---
-date: '2026-08-25'
-description: GroupDocs.Watermark for Java kullanarak diyagram dosyalarını nasıl düzenleyeceğinizi
-  ve hiperlinkleri nasıl kaldıracağınızı öğrenin. Diyagramlarınızı adım adım rehberlikle
-  hızlı bir şekilde güvenceye alın.
+date: '2025-12-19'
+description: GroupDocs.Watermark Java kullanarak diyagram şekillerindeki hiperlinkleri
+  nasıl kaldıracağınızı öğrenin; bu, Java belge güvenliği için önemli bir adımdır
+  ve hiperlinkleri toplu olarak kaldırır.
 keywords:
-- how to edit diagram
-- remove hyperlinks diagram shapes
-- GroupDocs.Watermark Java
-lastmod: '2026-08-25'
-og_description: GroupDocs.Watermark for Java kullanarak diyagram dosyalarını nasıl
-  düzenleyeceğinizi ve hiperlinkleri nasıl kaldıracağınızı öğrenin. Belgelerinizi
-  korumak için net adımları izleyin.
-og_image_alt: Guide showing how to edit diagram and remove hyperlinks using GroupDocs.Watermark
-  Java
-og_title: Java ile diyagramı düzenleme ve hiperlinkleri kaldırma
-tags:
-- edit diagram
-- remove hyperlinks
-- GroupDocs.Watermark
-- Java document processing
-- diagram security
-title: Java ile diyagramı düzenleme ve hiperlinkleri kaldırma
+- remove hyperlinks diagram shapes GroupDocs Watermark Java
+- manage digital documents diagrams
+- GroupDocs Watermark library Java
+title: GroupDocs.Watermark Java ile Diyagram Şekillerindeki Hipermetin Bağlantılarını
+  Nasıl Kaldırılır
 type: docs
 url: /tr/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Java ile diyagramı düzenleme ve hiperlinkleri kaldırma  
+# Diagram Şekillerinden Hipermetin Bağlantılarını Kaldırma – GroupDocs.Watermark Java Kullanarak
 
-Dijital belgeleri yönetmek genellikle diyagramları düzenlemeyi içerir, özellikle güvenlik veya görsel netlik için hiperlinkleri kaldırmanız gereken **edit diagram** dosyaları olduğunda. Bu öğretici, güçlü **GroupDocs.Watermark** Java kütüphanesini kullanarak diyagram dosyalarını nasıl düzenleyeceğinizi ve diyagram şekillerindeki istenmeyen hiperlinkleri nasıl kaldıracağınızı tam olarak gösterir. Bu rehberin sonunda, dağıtıma hazır, temiz ve bağlantısız bir diyagrama sahip olacaksınız.  
+Dijital belgeleri yönetmek, özellikle **hipermetin bağlantılarını kaldırma** gerektiğinde diyagramları düzenlemeyi içerir. Bu öğreticide, dosyalarınızın temiz, güvenli ve profesyonel kalmasını sağlayarak GroupDocs.Watermark for Java ile diyagram şekillerinden **hipermetin bağlantılarını nasıl kaldıracağınızı** öğreneceksiniz.
 
-## Hızlı cevaplar  
-- **Ana hedef nedir?** Güvenliği ve sunumu iyileştirmek için diyagram şekillerindeki tüm hiperlinkleri kaldırın.  
-- **Hangi kütüphane gereklidir?** GroupDocs.Watermark for Java, version 24.11 or newer.  
-- **Lisans gerekli mi?** Test için ücretsiz deneme çalışır; üretim için ticari bir lisans gereklidir.  
-- **Birçok dosyayı aynı anda işleyebilir miyim?** Evet – aynı kod bir döngü içinde yerleştirilerek toplu işleme yapılabilir.  
-- **Hangi Java sürümü destekleniyor?** Java 8 or higher (Java 11 recommended).  
+## Hızlı Yanıtlar
+- **Birincil amaç nedir?** Diyagram şekillerindeki istenmeyen hipermetin bağlantılarını kaldırarak belge güvenliğini artırmak.  
+- **Hangi kütüphane kullanılıyor?** GroupDocs.Watermark for Java (sürüm 24.11 veya üzeri).  
+- **Lisans gerekli mi?** Test için bir deneme sürümü yeterlidir; üretim ortamı için geçerli bir lisans gerekir.  
+- **Birden çok dosyayı aynı anda işleyebilir miyim?** Evet – aynı mantık bir toplu döngü içinde kullanılabilir.  
+- **Java 8 yeterli mi?** Java 8+ desteklenir; daha yeni JDK’lar önerilir.
 
-## “how to edit diagram” nedir?  
-**How to edit diagram**, bir diyagram dosyasını programlı olarak açma, iç öğelerini (şekiller, metin veya hiperlinkler gibi) değiştirme ve sonucu kaydetme sürecine atıfta bulunur. GroupDocs.Watermark kullanarak, orijinal oluşturma aracına ihtiyaç duymadan diyagram dosyalarını düzenleyebilirsiniz.  
+## “Diyagramlarda hipermetin bağlantılarını kaldırma” ne anlama geliyor?
+Hipermetin bağlantılarını kaldırmak, bir diyagram dosyasındaki (ör. Visio *.vsdx) şekillere eklenmiş URL referanslarını silmek demektir. Bu işlem, dış sitelere yanlışlıkla yönlendirmeyi önler ve uyumluluk ya da iç güvenlik politikalarına uymaya yardımcı olur.
 
-## Java için GroupDocs.Watermark neden kullanılmalı?  
-GroupDocs.Watermark, **30+ diyagram ve görüntü formatını** (VSDX, SVG ve WMF dahil) destekler ve tüm belgeyi belleğe yüklemeden **500 MB**'a kadar dosyaları işleyebilir, birçok rakibe kıyasla **%20 daha hızlı** işleme hızı sunar.  
+## Bu görev için GroupDocs.Watermark Java neden tercih edilmeli?
+- **Geniş format desteği** – çok çeşitli diyagram türleriyle çalışır.  
+- **İnce ayarlı API** – tek tek şekilleri ve onların hipermetin koleksiyonlarını hedeflemenizi sağlar.  
+- **Performans odaklı** – tek dosya ve toplu işleme için uygundur.  
 
-## Önkoşullar  
-- **GroupDocs.Watermark** kütüphane sürümü 24.11 veya üzeri.  
-- Maven yüklü (veya manuel kurulum tercih ediyorsanız JAR dosyaları).  
-- Java Development Kit 8 veya üzeri ve IntelliJ IDEA veya Eclipse gibi bir IDE.  
+## Ön Koşullar
+- **GroupDocs.Watermark** kütüphanesi sürüm 24.11 veya üzeri.  
+- Maven veya doğrudan JAR indirme (aşağıdaki kurulum adımlarına bakın).  
+- Java Development Kit (JDK 8 veya daha yeni) ve IntelliJ IDEA veya Eclipse gibi bir IDE.  
 
-### Gerekli kütüphaneler, sürümler ve bağımlılıklar  
-- GroupDocs.Watermark 24.11+  
-- Maven 3.6+ (Maven yaklaşımını kullanıyorsanız)  
+## GroupDocs.Watermark for Java Kurulumu
+Projeye kütüphaneyi Maven üzerinden ekleyebilir ya da JAR dosyasını doğrudan indirebilirsiniz.
 
-### Ortam kurulum gereksinimleri  
-JDK `bin` dizininin `PATH`'inizde olduğundan ve IDE'nizin doğru JDK sürümüne işaret ettiğinden emin olun.  
-
-### Bilgi önkoşulları  
-Temel Java sözdizimi, Maven bağımlılık yönetimi ve dosya I/O işlemleri konusunda rahat olmalısınız.  
-
-## Java için GroupDocs.Watermark nasıl kurulur?  
-`Watermarker` sınıfı, belgeleri yüklemek ve değiştirmek için API giriş noktasını sağlar.  
-
-GroupDocs.Watermark'ı kullanmaya başlamak için Maven koordinatlarını projenizin `pom.xml` dosyasına ekleyin. Bu, kütüphaneyi ve bağımlılıklarını çeker, Watermarker sınıfını örneklemenize ve diyagram dosyalarıyla doğrudan Java kodundan çalışmanıza olanak tanır. Ardından, herhangi bir belgeyi işlemeye başlamadan önce lisanslamayı yapılandırabilir ve çıktı seçeneklerini ayarlayabilirsiniz.  
-
-`pom.xml` dosyanıza GroupDocs.Watermark bağımlılığını ekleyin.  
+### Maven Kurulumu
+`pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
 
 ```xml
 <repositories>
@@ -81,132 +60,118 @@ GroupDocs.Watermark'ı kullanmaya başlamak için Maven koordinatlarını projen
       <version>24.11</version>
    </dependency>
 </dependencies>
-```  
+```
 
-Maven kullanmayı tercih etmiyorsanız, resmi sürüm sayfasından en son JAR dosyasını indirin.  
+### Doğrudan İndirme
+Alternatif olarak, en son sürümü [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) adresinden indirin.
 
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)  
+#### Lisans Edinme Adımları
+- API’yı değerlendirmek için ücretsiz deneme sürümüyle başlayın.  
+- Üretim için, GroupDocs portalından geçici ya da tam lisans alın.
 
-#### Lisans edinme adımları  
-- API'yi değerlendirmek için ücretsiz deneme ile başlayın.  
-- Üretim için, satıcı portalından geçici veya kalıcı bir lisans edinin.  
-
-#### Temel başlatma ve kurulum  
-
-`Watermarker` sınıfı, tüm belge‑işleme işlemleri için giriş noktasıdır.  
-
+#### Temel Başlatma ve Kurulum
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```  
+```
 
-## GroupDocs.Watermark ile diyagramı düzenleme ve hiperlinkleri kaldırma?  
-`Watermarker` sınıfı, belgeleri yüklemek ve değiştirmek için API giriş noktasını sağlar.  
+## Diyagram Şekillerinden Hipermetin Bağlantılarını Kaldırma
+Aşağıda, bir diyagramı yükleme, şekilleri bulma ve istenmeyen hipermetin bağlantılarını temizleme adımlarını gösteren adım‑adım bir kılavuz yer almaktadır.
 
-İlk olarak, diyagram dosyasını bir Watermarker örneğine yükleyin. Ardından şekil koleksiyonunu alın, hiperlink nesneleri içerenleri belirleyin ve koleksiyon indekslemesini etkilemeden her bağlantıyı güvenli bir şekilde silmek için ters sırada yineleyin. Bu, tüm gömülü URL'lerin kaldırılmasını sağlarken diyagramın görsel bütünlüğünü korur.  
-
+### Adım 1: Diyagram Dosyasını Yükle
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-```  
+```
+*Neden?* Dosyayı yüklemek, iç yapısına programatik erişim sağlar.
 
-- **Bu adımın önemi**: Dosyayı yüklemek, her şekle ve ilişkili özelliklerine programlı erişim sağlar.  
-
-## Diyagramda şekil içeriğine nasıl erişilir?  
-`DiagramShape` nesnesi, bir diyagram içindeki tek bir şekli temsil eder ve özelliklerini ve ek meta verilerini ortaya çıkarır.  
-
-Diyagramı yükledikten sonra, Watermarker üzerinde `getShapes()` çağırarak `DiagramShape` nesnelerinin bir listesini elde edin. Her şekil, hiperlink koleksiyonları için incelenebilir, böylece kaldırma veya değiştirme için bağlantılara kesin hedefleme yapılabilir. Ayrıca, daha fazla ayarlama gerekirse şekil metnini, renklerini ve geometrisini okuyabilirsiniz.  
-
+### Adım 2: Şekil İçeriğine Eriş
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 DiagramShape shape = content.getPages().get_Item(0).getShapes().get_Item(0);
-```  
+```
+*Neden?* Hipermetin içerebilecek belirli bir şekle referans almanız gerekir.
 
-- **Bu adımın önemi**: Tam olarak doğru şekli hedeflemek, istenmeyen bağlantıları yalnızca o şekilden kaldırmanızı sağlar ve diğer görsel öğeleri etkilemez.  
-
-## Hiperlinkleri güvenli bir şekilde nasıl yineleyip kaldırabilirsiniz?  
-`removeHyperlink(int index)` yöntemi, bir şeklin hiperlink koleksiyonundaki belirtilen konumdaki hiperlinki siler.  
-
-Hiperlink listesini son indeksten sıfıra doğru yineleyin. Bu ters döngü, öğeler kaldırıldığında oluşan indeks kaymasını önler ve her hiperlinkin atlanmadan işlenmesini sağlar. Kaldırma işleminden sonra, şeklin durumunu yenileyebilir veya diyagramdaki bir sonraki şekle geçebilirsiniz.  
-
+### Adım 3: Döngüyle Geç ve Hipermetin Bağlantılarını Kaldır
 ```java
 for (int i = shape.getHyperlinks().getCount() - 1; i >= 0; i--) {
     if (shape.getHyperlinks().get_Item(i).getAddress().contains("http://someurl.com")) {
         shape.getHyperlinks().removeAt(i);
     }
 }
-```  
+```
+*Neden?* Koleksiyondan öğe silinirken indeks hatalarını önlemek için geriye doğru döngü kullanılır.
 
-- **Bu adımın önemi**: Ters bir döngü, hiçbir giriş atlanmadan tüm hiperlinklerin kaldırılmasını garanti eder.  
-
-## Düzenlenmiş diyagramı nasıl kaydedip kaynakları serbest bırakırsınız?  
-`save(String path)` yöntemi, değiştirilmiş belgeyi belirtilen dosya konumuna yazar ve tüm değişiklikleri tamamlar.  
-
-Tüm hiperlinkler kaldırıldıktan sonra, Watermarker örneğinde `save` yöntemini çağırarak orijinali üzerine yazmamak için yeni bir dosya adı sağlayın. Ardından, dosya tutamaçlarını serbest bırakmak ve belleği boşaltmak için `close()` metodunu çağırın; bu, uzun süren toplu işlemler için gereklidir. Bu, dosyanın düzgün bir şekilde kapatılmasını ve sonraki kullanım için hazır olmasını sağlar.  
-
+### Adım 4: Kaydet ve Kapat
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY");
 watermarker.close();
-```  
+```
+*Neden?* Değişiklikleri kalıcı hâle getirmek ve kaynakları serbest bırakmak bellek sızıntılarını ve dosya kilitlenmelerini önler.
 
-- **Bu adımın önemi**: Kaynakları düzgün bir şekilde kapatmak, sunucuda bellek sızıntılarını ve dosya kilitleme sorunlarını önler.  
+## Toplu Hipermetin Bağlantı Kaldırma (İleri Seviye Kullanım)
+Birden çok diyagramı aynı anda temizlemeniz gerekiyorsa, yukarıdaki mantığı dosya yolu listesi üzerinde dönen bir döngüye yerleştirin. Aynı API çağrıları geçerlidir; sadece her yineleme için giriş ve çıkış dizinlerini değiştirmeniz yeterlidir. Bu yaklaşım, büyük belge depoları için **toplu hipermetin kaldırma** gereksinimleriyle uyumludur.
 
-## Pratik uygulamalar  
-Diyagram şekillerinden hiperlinkleri kaldırmak, çeşitli gerçek dünya senaryolarında faydalı olabilir:  
+## Pratik Kullanım Alanları
+Diyagram şekillerinden hipermetin bağlantılarını kaldırmak, aşağıdaki gerçek dünya senaryolarında faydalı olabilir:
 
-1. **Güvenlik** – Kötü amaçlı sitelere yönlendirebilecek dış bağlantıları önleyin.  
-2. **Uyumluluk** – Paylaşılan varlıklarda gömülü URL'leri yasaklayan kurumsal politikalara uyun.  
-3. **Netlik** – Bağlantıların dikkat dağıtıcı olabileceği daha temiz sunumlar üretin.  
+1. **Güvenlik Amaçlı** – Ağınızı phishing veya kötü amaçlı yazılımlara maruz bırakabilecek dış bağlantıları engelleyin.  
+2. **Uyumluluk** – Paylaşılan belgelerde dış URL’lerin yasak olduğu kurumsal politikalara uyun.  
+3. **Netlik** – Hipermetin bağlantılarının gereksiz ya da dikkat dağıtıcı olduğu durumlarda daha temiz sunumlar üretin.  
 
-Bu mantığı, intranete yayınlanmadan önce tüm diyagramları temizleyen gece toplu işleri gibi daha büyük otomasyon hatlarına entegre edebilirsiniz.  
+## Performans Düşünceleri
+### Performans Optimizasyonu
+- Yukarıda gösterilen ters‑döngü desenini kullanarak döngüleri verimli tutun.  
+- İşiniz bittiğinde `Watermarker` nesnesini hemen kapatarak belleği serbest bırakın.
 
-## Performans değerlendirmeleri  
-### Performansı optimize etme  
-- Aşırı yükü azaltmak için dosya başına tek bir `Watermarker` örneği kullanın.  
-- Maliyetli liste yeniden indekslemeyi önlemek için ters yinelemeyi (gösterildiği gibi) tercih edin.  
+### Kaynak Kullanım Rehberi
+- Büyük diyagramları işlerken CPU ve RAM kullanımını izleyin.  
+- Toplu işler için dosyaları tek tek yüklemek yerine akış (stream) yöntemi tercih edin.
 
-### Kaynak kullanım yönergeleri  
-- 200 MB'den büyük diyagramlar için yığın kullanımını izleyin ve JVM `-Xmx` bayrağını artırmayı düşünün.  
-- VisualVM gibi profil oluşturma araçları, büyük ölçekli toplu çalışmalardaki darboğazları belirlemenize yardımcı olabilir.  
+### Java Bellek Yönetimi İçin En İyi Uygulamalar
+- Sıkı döngüler içinde nesne oluşturmaktan kaçının.  
+- Mümkün olduğunda otomatik temizlik için try‑with‑resources kullanın.
 
-### Java bellek yönetimi için en iyi uygulamalar  
-- Nesneleri mümkün olan en küçük kapsam içinde tanımlayın.  
-- Akışlarla çalışırken otomatik kapanmayı sağlamak için try‑with‑resources kullanın.  
+## Sık Sorulan Sorular
+1. **Birden çok şekil nasıl işlenir?**  
+   Tüm sayfalar ve şekiller üzerinde yineleme yapın; aynı hipermetin kaldırma mantığını her şekle uygulayın.  
 
-## Sıkça Sorulan Sorular  
+2. **Bu işlem büyük diyagram topluları için otomatikleştirilebilir mi?**  
+   Evet – kodu bir toplu‑işleme rutinine yerleştirin ya da belge‑yönetim sisteminizle entegre edin.  
 
-**Q: Binlerce şekil içeren diyagramları nasıl yönetirim?**  
-A: Diyagramı sayfa sayfa işleyin ve bir sonraki sayfaya geçmeden önce her sayfanın kaynaklarını serbest bırakarak bellek kullanımını düşük tutun.  
+3. **Sadece belirli sayfalardan hipermetin kaldırmak istesem ne yapmalıyım?**  
+   İstenen sayfayı `content.getPages().get_Item(pageIndex)` ile alın ve yalnızca o sayfadaki şekillere odaklanın.  
 
-**Q: Hiperlink kaldırmayı yalnızca belirli sayfalara sınırlayabilir miyim?**  
-A: Evet – istediğiniz sayfa indeksini alın, ardından kaldırma döngüsünü yalnızca o sayfadaki şekillere uygulayın.  
+4 **GroupDocs.Watermark’ın üretim kullanımı için lisans gerekli mi?**  
+   Deneme süresi dışında geçerli bir ticari lisans gerekir.  
 
-**Q: Toplu işleme için ticari lisans zorunlu mu?**  
-A: Herhangi bir üretim‑seviyesi dağıtım için geçerli bir lisans gereklidir; ücretsiz deneme 30 gün ve 5 belge ile sınırlıdır.  
+5. **Bu yöntem diğer diyagram formatlarıyla çalışır mı?**  
+   GroupDocs.Watermark birçok diyagram türünü destekler; uyumluluğu resmi dokümantasyonda kontrol edin.  
 
-**Q: GroupDocs.Watermark SVG diyagramlarını destekliyor mu?**  
-A: Kesinlikle – SVG, 30+ desteklenen format arasında yer alır ve aynı API çağrılarıyla hiperlinkler temizlenebilir.  
+**Ek Soru‑Cevap**
 
-**Q: Bir şeklin birden fazla hiperlinki olursa ne olur?**  
-A: Ters‑yineleme döngüsü, her hiperlink girişini ayrı ayrı kaldırır ve tüm bağlantıların temizlenmesini sağlar.  
+**S:** *Kaldırılan hipermetin bağlantılarını kaydetmek mümkün mü?*  
+**C:** Evet – `removeAt(i)` çağrısından önce `shape.getHyperlinks().get_Item(i).getAddress()` değerini alın ve bir log dosyasına yazın.
 
-## Kaynaklar  
+**S:** *Hipermetin kaldırmak şeklin görsel görünümünü etkiler mi?*  
+**C:** Hayır. Şeklin geometrisi değişmez; yalnızca bağlantı meta verisi silinir.
 
-- [Dokümantasyon](https://docs.groupdocs.com/watermark/java/)  
-- [API Referansı](https://reference.groupdocs.com/watermark/java)  
-- [İndirme](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub Deposu](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Ücretsiz Destek Forumu](https://forum.groupdocs.com/c/watermark/10)  
-- [Geçici Lisans Edinme](https://purchase.groupdocs.com/temporary-license/)  
+**S:** *Kaldırma sonrası stil yeniden uygulanmalı mı?*  
+**C:** Genellikle gerekmez. Hipermetin kaldırma dolgu, çizgi veya metin stillerini etkilemez.
 
----  
+## Sonuç
+Artık GroupDocs.Watermark for Java kullanarak diyagram şekillerinden **hipermetin bağlantılarını nasıl kaldıracağınız** konusunda eksiksiz, üretim‑hazır bir yönteme sahipsiniz. Yukarıdaki adımları izleyerek diyagramlarınızı güvence altına alabilir, politikalara uyum sağlayabilir ve belgelerinizin profesyonel görünümünü koruyabilirsiniz.
 
-**Son Güncelleme:** 2026-08-25  
-**Test Edilen Versiyon:** GroupDocs.Watermark 24.11 for Java  
+**Kaynaklar**  
+- [Documentation](https://docs.groupdocs.com/watermark/java/)  
+- [API Reference](https://reference.groupdocs.com/watermark/java)  
+- [Download](https://releases.groupdocs.com/watermark/java/)  
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
+- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Son Güncelleme:** 2025-12-19  
+**Test Edilen Sürüm:** GroupDocs.Watermark 24.11 for Java  
 **Yazar:** GroupDocs  
-
-## İlgili Eğitimler
-
-- [GroupDocs.Watermark Java için Diyagram Su İşareti Eğitimleri](/watermark/java/diagram-document-watermarking/)  
-- [Java'da GroupDocs.Watermark Kullanarak Diyagram Başlık ve Altbilgilerini Düzenleme: Kapsamlı Rehber](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)  
-- [GroupDocs.Watermark for Java Kullanarak Diyagramlardan Şekilleri Verimli Bir Şekilde Kaldırma](/watermark/java/watermark-removal/remove-shapes-diagrams-groupdocs-watermark-java/)

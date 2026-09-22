@@ -1,109 +1,61 @@
 ---
-date: '2026-08-25'
-description: GroupDocs.Watermark for Java를 사용하여 Visio 헤더를 추출하는 방법을 배우고, 글꼴 설정, 텍스트
-  내용, 색상 및 Visio 다이어그램의 여백을 포함합니다.
+date: '2025-12-31'
+description: GroupDocs.Watermark Java를 사용하여 그룹문서를 활용하고 Visio 다이어그램에서 머리글 및 바닥글을 추출하는
+  방법을 배우세요. 여기에는 글꼴 설정 및 텍스트 내용이 포함됩니다.
 keywords:
-- extract visio headers
+- extract headers footers Visio diagrams
 - GroupDocs Watermark Java
-- Visio diagram processing
-lastmod: '2026-08-25'
-og_description: GroupDocs.Watermark for Java를 사용하여 Visio 헤더를 추출하는 방법을 배우고, Visio 파일의
-  글꼴 설정, 텍스트 내용, 색상 및 여백을 다룹니다.
-og_image_alt: Guide showing how to extract Visio headers using GroupDocs.Watermark
-  for Java
-og_title: GroupDocs.Watermark Java로 Visio 헤더 추출
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-25'
-  description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  headline: Extract visio headers with GroupDocs.Watermark Java
-  type: TechArticle
-- description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  name: Extract visio headers with GroupDocs.Watermark Java
-  steps:
-  - name: '**Document analysis** – batch‑process Visio files to build a style inventory
-      for compliance reporting.'
-    text: '**Document analysis** – batch‑process Visio files to build a style inventory
-      for compliance reporting.'
-  - name: '**Compliance checks** – verify that all diagrams follow corporate header/footer
-      standards.'
-    text: '**Compliance checks** – verify that all diagrams follow corporate header/footer
-      standards.'
-  - name: '**Automated report generation** – dynamically adjust generated diagrams
-      based on extracted font and color data.'
-    text: '**Automated report generation** – dynamically adjust generated diagrams
-      based on extracted font and color data.'
-  - name: '**CMS integration** – feed extracted header text into metadata fields of
-      a content‑management system.'
-    text: '**CMS integration** – feed extracted header text into metadata fields of
-      a content‑management system.'
-  type: HowTo
-- questions:
-  - answer: Enable streaming mode, close the `Watermarker` promptly, and process pages
-      in batches to keep memory usage minimal.
-    question: How do I handle very large Visio files efficiently?
-  - answer: Yes—it supports over 50 formats, including PDF, DOCX, PPTX, and image
-      files. Use the same header/footer API where applicable.
-    question: Can GroupDocs.Watermark extract headers from other file types?
-  - answer: Verify that the file is a supported Visio version, ensure you’re using
-      the latest library release, and check the stack trace for missing dependencies.
-    question: What should I do if extraction throws an exception?
-  - answer: Yes—use the GroupDocs [free support forum](https://forum.groupdocs.com/c/watermark/10)
-      for community assistance, or contact the support team with a valid license.
-    question: Is technical support available for this library?
-  - answer: Wrap the extraction logic in a service class, inject the `Watermarker`
-      via Spring, and expose a REST endpoint that returns JSON with the extracted
-      header data.
-    question: How can I integrate these calls into an existing Java web service?
-  type: FAQPage
-tags:
-- extract visio headers
-- GroupDocs.Watermark
-- Java diagram API
-- Visio automation
-title: GroupDocs.Watermark Java로 Visio 헤더 추출
+- Visio diagram watermarking
+title: GroupDocs 사용 방법 – Visio 머리글 및 바닥글 추출 (Java)
 type: docs
 url: /ko/java/diagram-document-watermarking/extract-visio-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# GroupDocs.Watermark Java로 Visio 헤더 추출
+# Visio 다이어그램에서 헤더 및 푸터 추출하기 - GroupDocs.Watermark for Java
 
-Visio 다이어그램 파일에서 **Visio 헤더 추출**(폰트 세부 정보, 텍스트 문자열, 색상 및 여백 포함)이 필요하다면, GroupDocs.Watermark for Java는 깔끔하고 프로그래밍 방식으로 이를 수행할 수 있는 방법을 제공합니다. 이 튜토리얼은 라이브러리 설정부터 헤더와 푸터 정보를 각각 추출하는 방법까지 모든 과정을 안내합니다.
+## 소개
+
+Microsoft Visio 다이어그램의 헤더와 푸터에서 글꼴 정보, 텍스트 내용, 색상 또는 여백을 추출하는 데 어려움을 겪고 계신가요? GroupDocs.Watermark for Java를 사용하면 이러한 작업이 간단해집니다. 이 가이드는 이 강력한 라이브러리를 활용하여 중요한 세부 정보를 효율적으로 추출하는 방법을 보여줍니다.
+
+이 튜토리얼에서는 **GroupDocs**를 사용하여 헤더/푸터 데이터를 추출하는 방법을 배우게 되며, 문서 분석 및 규정 준수 검사가 쉬워집니다.
+
+이 가이드를 끝까지 읽으면 이러한 기능에 대한 포괄적인 이해를 갖게 됩니다. 이제 시작에 필요한 내용을 살펴보겠습니다!
 
 ## 빠른 답변
-- **“extract visio headers”는 무엇을 의미하나요?** Visio 파일 내부의 헤더/푸터 객체를 읽고 해당 스타일 및 레이아웃 데이터를 가져오는 것을 의미합니다.  
-- **어떤 라이브러리가 이를 처리하나요?** GroupDocs.Watermark for Java (버전 24.11 이상).  
-- **라이선스가 필요합니까?** 평가용으로는 무료 체험판을 사용할 수 있으며, 프로덕션에서는 영구 라이선스가 필요합니다.  
-- **대용량 다이어그램을 처리할 수 있나요?** 예—GroupDocs.Watermark는 전체 파일을 메모리에 로드하지 않고도 500페이지 이상의 파일을 처리할 수 있습니다.  
-- **필요한 Java 버전은 무엇인가요?** Java 8 이상.
+- **무엇을 추출할 수 있나요?** Visio 헤더와 푸터에서 글꼴 설정, 텍스트 내용, 색상 및 여백.  
+- **필요한 라이브러리는?** GroupDocs.Watermark for Java (버전 24.11 이상).  
+- **라이선스가 필요합니까?** 평가용으로는 무료 체험을 사용할 수 있으며, 프로덕션에서는 정식 라이선스가 필요합니다.  
+- **지원되는 Java 버전은?** JDK 8 이상.  
+- **리소스를 해제하려면?** 데이터 추출을 마친 후 `watermarker.close()`를 호출합니다.
 
-## Visio 헤더 추출이란?
-Visio 헤더 추출은 Microsoft Visio 다이어그램 파일에 포함된 헤더 및 푸터 섹션을 프로그래밍 방식으로 읽는 것을 의미합니다. 이러한 요소에 접근함으로써 표시된 텍스트, 폰트 패밀리, 크기, 스타일 속성, 텍스트에 적용된 색상, 그리고 각 페이지 내에서 헤더와 푸터의 위치를 제어하는 여백 값을 가져올 수 있습니다.
+## GroupDocs를 사용하여 Visio 헤더 및 푸터 추출하는 방법
 
-## 왜 GroupDocs.Watermark for Java를 사용해야 하나요?
-GroupDocs.Watermark는 Visio(VSD, VSDX)를 포함한 **50개 이상의 입력 및 출력 형식**을 지원합니다. 일반 서버 하드웨어에서 100페이지당 1초 미만으로 수백 페이지 다이어그램을 처리할 수 있으며, Microsoft Office를 설치할 필요 없이 동작합니다.
+아래에서는 프로젝트 설정부터 헤더/푸터 정보를 각각 추출하는 단계까지 모든 과정을 단계별로 안내합니다. 번호가 매겨진 단계를 따라 하면 몇 분 안에 작동하는 코드를 얻을 수 있습니다.
 
-## 전제 조건
-- **GroupDocs.Watermark for Java** ≥ 24.11 (공식 릴리스 페이지에서 다운로드).  
-- Java Development Kit 8 이상.  
-- IntelliJ IDEA 또는 Eclipse와 같은 IDE.  
-- 기본 Maven 지식.
+## 사전 요구 사항
 
-## GroupDocs.Watermark for Java 설정
-Add the Maven dependency to your `pom.xml`:
+시작하기 전에 다음 항목을 준비하십시오:
+
+### 필수 라이브러리 및 종속성
+- **GroupDocs.Watermark for Java**: 버전 24.11 이상이 설치되어 있는지 확인하십시오.
+
+### 환경 설정 요구 사항
+- 호환되는 JDK(Java Development Kit), 권장 버전 8 이상.  
+- IntelliJ IDEA 또는 Eclipse와 같은 IDE.
+
+### 지식 사전 요구 사항
+Java 프로그래밍에 대한 기본적인 이해와 Maven 종속성 관리에 대한 지식이 있으면 도움이 됩니다.
+
+## GroupDocs.Watermark Java를 사용한 추출
+
+### GroupDocs.Watermark for Java 설정
+
+시작하려면 프로젝트에 GroupDocs.Watermark 라이브러리를 추가해야 합니다. Maven을 통해 추가할 수 있습니다:
+
+**Maven 설정**
 
 ```xml
-<dependency>
-    <groupId>com.groupdocs</groupId>
-    <artifactId>groupdocs-watermark</artifactId>
-    <version>24.11</version>
-</dependency>
-```
-
-> **Note:** 자리표시자 ````xml
 <repositories>
    <repository>
       <id>repository.groupdocs.com</id>
@@ -119,46 +71,44 @@ Add the Maven dependency to your `pom.xml`:
       <version>24.11</version>
    </dependency>
 </dependencies>
-````는 원본 소스에서 실제 Maven 스니펫이 나타나는 위치를 표시합니다.
-
-공식 릴리스 페이지에서 JAR 파일을 직접 다운로드할 수도 있습니다: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
-
-### 라이선스 획득
-- **무료 체험** – 핵심 기능을 즉시 탐색할 수 있습니다.  
-- **임시 라이선스** – GroupDocs 포털에서 기간 제한 키를 요청하십시오.  
-- **전체 라이선스** – 무제한 프로덕션 사용 및 우선 지원을 위해 구매하십시오.
-
-### 기본 초기화
-Watermarker는 다이어그램 파일을 열고 조작하는 핵심 클래스입니다.  
-`Watermarker` 인스턴스를 생성하여 Visio 다이어그램을 로드합니다:
-
-```java
-Watermarker watermarker = new Watermarker("sample.vsdx", new VisioLoadOptions());
 ```
 
-> 자리표시자 ````java
+또는 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)에서 직접 라이브러리를 다운로드하십시오.
+
+### 라이선스 획득
+- **무료 체험**: 기능을 살펴보기 위해 무료 체험으로 시작하십시오.  
+- **임시 라이선스**: GroupDocs 웹사이트에서 임시 라이선스를 신청하십시오.  
+- **구매**: 전체 기능 및 지원을 위해 라이선스 구매를 고려하십시오.
+
+### 기본 초기화
+`Watermarker` 인스턴스를 생성하여 환경을 초기화합니다. 이렇게 하면 다이어그램 문서가 애플리케이션에 로드됩니다:
+
+```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-````는 원본 초기화 코드를 나타냅니다.
+```
 
-## Visio 헤더를 추출하는 방법?
-Visio 헤더를 추출하려면 먼저 다이어그램 파일을 `Watermarker` 인스턴스로 로드한 다음 헤더‑푸터 API를 사용하여 각 페이지를 조회합니다. 라이브러리는 `getHeaderFooter().getFont()`, `getText()`, `getColor()`, `getMargin()`와 같은 메서드를 제공하며, 이 메서드들은 해당 스타일 및 레이아웃 정보를 반환합니다. 결과를 수집하고 필요에 따라 처리하십시오.
+## 구현 가이드
 
-`Watermarker`로 다이어그램을 로드한 다음 적절한 API 메서드를 호출하여 헤더/푸터 데이터를 가져옵니다. 다음 섹션에서는 각 추출 작업을 자세히 설명합니다.
+이제 각 기능을 자세히 살펴보고 구현 방법을 확인해 보겠습니다.
 
-### 기능 1: 헤더 및 푸터 폰트 정보 추출
-#### 직접 답변
-`Watermarker` 객체에서 `getHeaderFooter().getFont()`를 호출하면 폰트 패밀리 이름, 크기, 굵게, 기울임, 밑줄 및 취소선 플래그를 포함하는 `FontInfo` 객체를 얻을 수 있습니다.
+### 기능 1: 헤더 및 푸터 글꼴 정보 추출
 
-#### 구현 단계
+#### 개요
+이 기능을 사용하면 다이어그램 문서의 헤더와 푸터에서 글꼴 설정을 가져올 수 있습니다. 여기에는 글꼴 패밀리 이름, 크기, 굵기, 이탤릭, 밑줄 및 취소선 속성을 추출하는 것이 포함됩니다.
+
+##### 단계별 구현
+
 **Watermarker 초기화**
-````java
+
+```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
-````
+```
 
-**폰트 설정 추출**
-````java
+**글꼴 설정 추출**
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Extract font attributes
@@ -170,15 +120,18 @@ boolean isUnderline = content.getHeaderFooter().getFont().getUnderline();
 boolean isStrikeout = content.getHeaderFooter().getFont().getStrikeout();
 
 watermarker.close(); // Always close the watermarker to free resources
-````
+```
 
 ### 기능 2: 헤더 및 푸터에서 텍스트 내용 추출
-#### 직접 답변
-`getHeaderFooter().getText()`를 사용하여 Visio 다이어그램의 각 헤더 및 푸터 영역에 저장된 원시 문자열을 가져옵니다.
 
-#### 구현 단계
+#### 개요
+이 기능은 다이어그램 문서의 헤더와 푸터의 다양한 부분에서 텍스트를 추출하는 데 중점을 둡니다.
+
+##### 단계별 구현
+
 **헤더 및 푸터 텍스트 추출**
-````java
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Extract header texts
@@ -192,30 +145,36 @@ String footerCenterText = content.getHeaderFooter().getFooterCenter();
 String footerRightText = content.getHeaderFooter().getFooterRight();
 
 watermarker.close(); // Remember to close the watermarker
-````
+```
 
 ### 기능 3: 헤더 및 푸터에서 텍스트 색상 추출
-#### 직접 답변
-`getHeaderFooter().getColor()`를 호출합니다; 이 메서드는 ARGB 정수를 반환하며 이를 16진수 색상 코드로 변환할 수 있습니다.
 
-#### 구현 단계
+#### 개요
+이 기능을 사용하면 헤더와 푸터에 사용된 색상을 ARGB 정수 값으로 확인할 수 있습니다.
+
+##### 단계별 구현
+
 **텍스트 색상 추출**
-````java
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Get text color as ARGB integer
 int textColorArgb = content.getHeaderFooter().getTextColor().toArgb();
 
 watermarker.close(); // Close to release resources
-````
+```
 
 ### 기능 4: 헤더 및 푸터 여백 추출
-#### 직접 답변
-`getHeaderFooter().getMargin()`를 호출하면 포인트 단위의 왼쪽, 오른쪽, 위, 아래 여백 값을 포함하는 `MarginInfo` 객체를 받게 됩니다.
 
-#### 구현 단계
+#### 개요
+레이아웃 구성을 이해하는 데 필수적인 헤더와 푸터의 여백 설정을 추출하는 방법을 배웁니다.
+
+##### 단계별 구현
+
 **여백 설정 추출**
-````java
+
+```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 
 // Get margins
@@ -223,53 +182,54 @@ float footerMargin = content.getHeaderFooter().getFooterMargin();
 float headerMargin = content.getHeaderFooter().getHeaderMargin();
 
 watermarker.close(); // Closing is crucial for resource management
-````
+```
 
-## 실용적인 활용 사례
-이러한 추출 기능을 사용하면 여러 실제 시나리오를 자동화할 수 있습니다:
-1. **문서 분석** – Visio 파일을 일괄 처리하여 규정 준수 보고를 위한 스타일 인벤토리를 구축합니다.  
-2. **규정 준수 검사** – 모든 다이어그램이 기업 헤더/푸터 표준을 따르는지 확인합니다.  
-3. **자동 보고서 생성** – 추출된 폰트 및 색상 데이터를 기반으로 생성된 다이어그램을 동적으로 조정합니다.  
-4. **CMS 통합** – 추출된 헤더 텍스트를 콘텐츠 관리 시스템의 메타데이터 필드에 입력합니다.
+## 실용적인 적용 사례
+
+이 기능들을 활용하면 다음과 같은 다양한 실제 작업을 효율화할 수 있습니다:
+
+1. **문서 분석** – 문서 분석 및 비교를 위한 스타일 정보 추출을 자동화합니다.  
+2. **규정 준수 검사** – 헤더 및 푸터 형식이 조직 표준을 준수하는지 확인합니다.  
+3. **자동 보고서 생성** – 추출된 글꼴 및 색상 설정에 따라 스타일을 동적으로 조정합니다.  
+4. **CMS 시스템과의 통합** – 추출된 텍스트 내용을 사용해 콘텐츠 관리 시스템의 메타데이터를 채웁니다.
 
 ## 성능 고려 사항
-- **Dispose** 사용 후 `Watermarker` 인스턴스를 해제하여 파일 핸들을 릴리스합니다.  
-- 대용량 다이어그램의 경우 스트리밍 모드를 활성화하여 메모리 사용량을 낮게 유지합니다.  
-- Java 프로파일러를 사용해 애플리케이션을 프로파일링하고 병목 현상을 찾아냅니다.
 
-## 결론
-이제 GroupDocs.Watermark for Java를 사용하여 **Visio 헤더 추출** 및 관련 스타일 정보를 단계별로 완전하게 안내받았습니다. API를 실험하여 이러한 추출을 특정 워크플로에 맞게 조정하고, 고급 시나리오에 대해서는 공식 문서를 참고하십시오.
+GroupDocs.Watermark를 사용할 때 성능을 최적화하려면:
 
-더 깊이 탐색하려면 [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/)을 참고하고, 라이브러리가 지원하는 다른 다이어그램 형식으로 솔루션을 확장하는 것을 고려하십시오.
+- 작업이 끝난 후 `Watermarker` 인스턴스를 닫아 리소스 사용을 최소화합니다.  
+- 특히 대용량 다이어그램 파일의 경우 메모리를 효율적으로 관리합니다.  
+- 병목 현상을 파악하기 위해 애플리케이션을 프로파일링하고 테스트합니다.
 
 ## 자주 묻는 질문
-**Q: 매우 큰 Visio 파일을 효율적으로 처리하려면 어떻게 해야 하나요?**  
-A: 스트리밍 모드를 활성화하고, `Watermarker`를 즉시 닫으며, 페이지를 배치로 처리하여 메모리 사용량을 최소화합니다.
 
-**Q: GroupDocs.Watermark가 다른 파일 유형에서도 헤더를 추출할 수 있나요?**  
-A: 예—PDF, DOCX, PPTX 및 이미지 파일을 포함한 50개 이상의 형식을 지원합니다. 해당되는 경우 동일한 헤더/푸터 API를 사용하십시오.
+**Q: 대용량 다이어그램 파일을 효율적으로 처리하려면 어떻게 해야 하나요?**  
+A: 효율적인 메모리 관리 방식을 사용하고 `Watermarker`를 즉시 닫으며, 애플리케이션을 프로파일링하여 메모리 사용이 많은 작업을 찾아야 합니다.
 
-**Q: 추출 중 예외가 발생하면 어떻게 해야 하나요?**  
-A: 파일이 지원되는 Visio 버전인지 확인하고, 최신 라이브러리 릴리스를 사용하고 있는지 확인하며, 누락된 종속성에 대한 스택 트레이스를 확인하십시오.
+**Q: GroupDocs.Watermark가 다른 문서 유형에서도 정보를 추출할 수 있나요?**  
+A: 예, Visio 다이어그램 외에도 다양한 형식을 지원합니다. 전체 목록은 공식 문서를 확인하십시오.
 
-**Q: 이 라이브러리에 대한 기술 지원이 제공되나요?**  
-A: 예—커뮤니티 지원을 위해 GroupDocs [free support forum](https://forum.groupdocs.com/c/watermark/10)을 사용하거나, 유효한 라이선스로 지원 팀에 연락하십시오.
+**Q: 추출 오류가 발생하면 어떻게 해야 하나요?**  
+A: 환경이 라이브러리 요구 사항에 맞는지 확인하고, 다이어그램 형식이 지원되는지 확인한 뒤, 누락된 종속성에 대한 오류 세부 정보를 참고하십시오.
 
-**Q: 기존 Java 웹 서비스에 이러한 호출을 어떻게 통합할 수 있나요?**  
-A: 추출 로직을 서비스 클래스로 감싸고, Spring을 통해 `Watermarker`를 주입한 뒤, 추출된 헤더 데이터를 JSON으로 반환하는 REST 엔드포인트를 노출하십시오.
+**Q: 문제 해결을 위한 지원이 있나요?**  
+A: 예, [무료 지원 포럼](https://forum.groupdocs.com/c/watermark/10)에서 질문하거나 GroupDocs 지원팀에 직접 문의할 수 있습니다.
+
+**Q: 기존 Java 애플리케이션에 이러한 추출 단계를 어떻게 통합할 수 있나요?**  
+A: 위에서 보여준 초기화 패턴을 그대로 사용하고, 헤더/푸터 데이터가 필요한 곳에 추출 코드를 삽입하며, 사용 후 `Watermarker`를 닫는 것을 기억하십시오.
+
+## 결론
+
+이제 Java에서 GroupDocs.Watermark를 사용해 Visio 다이어그램의 헤더와 푸터를 추출할 수 있는 탄탄한 기반을 갖추었습니다. 이러한 기능을 실험하여 프로젝트에 원활히 통합해 보세요. 추가 탐색을 위해 [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/)을 살펴보고, 필요에 따라 기능을 확장하는 것을 고려하십시오.
 
 ## 리소스
-- **문서:** [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/)에서 자세히 살펴보세요  
-- **API 레퍼런스:** [API References](https://reference.groupdocs.com/watermark/java)를 통해 더 깊이 탐색하십시오.  
-- **라이브러리 다운로드:** [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)에서 최신 버전을 받으세요.
+
+- **문서**: [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/)에서 자세히 확인하십시오.  
+- **API 레퍼런스**: [API References](https://reference.groupdocs.com/watermark/java)를 통해 더 깊이 살펴보세요.  
+- **라이브러리 다운로드**: 최신 버전은 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)에서 받으세요.
 
 ---
 
-**마지막 업데이트:** 2026-08-25  
+**마지막 업데이트:** 2025-12-31  
 **테스트 환경:** GroupDocs.Watermark 24.11 for Java  
 **작성자:** GroupDocs
-
-## 관련 튜토리얼
-- [Java에서 GroupDocs.Watermark를 사용하여 다이어그램 헤더 및 푸터 편집: 포괄적인 가이드](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Java에서 GroupDocs.Watermark를 사용하여 다이어그램에 텍스트 워터마크 추가하는 방법](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Java에서 GroupDocs.Watermark를 사용하여 다이어그램에서 도형 정보 추출](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
