@@ -1,98 +1,47 @@
 ---
-date: '2026-08-19'
-description: Aprenda como proteger diagramas de propriedade intelectual usando o GroupDocs.Watermark
-  para Java. Guia passo a passo para carregar, detectar marca d'água de imagem, pesquisar
-  e remover marcas d'água de arquivos .vsdx.
+date: '2025-12-19'
+description: Aprenda a usar o GroupDocs Watermark Maven para gerenciar marcas d'água
+  em arquivos de diagramas como .vsdx com Java, aprimorando a integridade dos documentos
+  e protegendo a propriedade intelectual.
 keywords:
-- intellectual property diagrams
-- detect image watermark
 - GroupDocs.Watermark Java
-- diagram watermark management
-- Java watermark API
-lastmod: '2026-08-19'
-og_description: Descubra como proteger diagramas de propriedade intelectual usando
-  o GroupDocs.Watermark para Java. Aprenda a carregar arquivos .vsdx, detectar marca
-  d'água de imagem e remover marcas d'água indesejadas de forma eficiente.
-og_image_alt: Java code snippet showing watermark detection in diagram files
-og_title: Proteja diagramas de propriedade intelectual com o GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  headline: Protect intellectual property diagrams with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  name: Protect intellectual property diagrams with GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-    text: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-    text: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-  type: HowTo
-- questions:
-  - answer: Yes, combine criteria with `OrSearchCriteria` (e.g., `new OrSearchCriteria(textCriteria,
-      imageCriteria)`) to retrieve both types at once.
-    question: Can I search for both text and image watermarks in a single call?
-  - answer: No. The library isolates watermark objects, so shapes, connectors, and
-      formatting remain unchanged after `clear()`.
-    question: Will removing watermarks corrupt the diagram layout?
-  - answer: GroupDocs.Watermark handles `.vsdx`, `.vdx`, `.vsx`, and several older
-      Visio formats, covering over **30** diagram types.
-    question: Which diagram formats are supported?
-  - answer: Use Java’s `ExecutorService` to run watermark detection/removal in parallel
-      batches, and reuse a single `Watermarker` configuration object to reduce overhead.
-    question: How do I process thousands of diagrams efficiently?
-  - answer: Absolutely. Add the Java snippets to your build scripts (Maven/Gradle)
-      and run them as a pre‑deployment verification step to ensure no prohibited watermarks
-      are present.
-    question: Is it possible to integrate this into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark diagrams
-- GroupDocs.Watermark
-- Java document processing
-- intellectual property protection
-title: Proteja diagramas de propriedade intelectual com o GroupDocs.Watermark
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark maven – Gerenciar marcas d'água de diagramas com Java
 type: docs
 url: /pt/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
 weight: 1
 ---
 
-# Proteger diagramas de propriedade intelectual com GroupDocs.Watermark
+# groupdocs watermark maven – Gerenciar Marcas d'água em Diagramas com Java
 
-Proteger diagramas de propriedade intelectual é uma etapa crítica para qualquer organização que compartilha ativos de design, fluxogramas ou desenhos de arquitetura. Com o GroupDocs.Watermark para Java você pode carregar programaticamente arquivos de diagrama (como `.vsdx`), detectar instâncias de marca d'água de imagem, buscar marcas d'água de texto e removê‑las com segurança sem corromper o desenho original. Este tutorial orienta você por todo o processo — desde a configuração do ambiente até o processamento em lote de grandes bibliotecas de diagramas — para que possa incorporar proteção robusta de PI diretamente em suas aplicações Java.
+Gerenciar marcas d'água em documentos é essencial para proteger a propriedade intelectual e manter a integridade dos documentos. **Neste tutorial mostraremos como usar groupdocs watermark maven para carregar, pesquisar e remover marcas d'água de arquivos de diagramas como `.vsdx`**. Seja desenvolvendo software corporativo ou automatizando fluxos de trabalho de documentos, dominar essas técnicas lhe dará controle total sobre o gerenciamento de marcas d'água em diagramas.
 
-## Respostas rápidas
-- **Qual biblioteca lida com marcas d'água em diagramas?** GroupDocs.Watermark for Java.  
-- **Posso detectar marca d'água de imagem assim como texto?** Sim, a API fornece `ImageDctHashSearchCriteria` para detecção de imagens e `TextSearchCriteria` para texto.  
-- **Preciso de uma licença comercial para executar o código?** Uma licença de avaliação funciona para desenvolvimento; uma licença paga é necessária para produção.  
-- **O processamento em lote é suportado?** Absolutamente—faça loop sobre uma pasta e aplique a mesma lógica de marca d'água a cada arquivo.  
-- **O layout original do diagrama permanecerá intacto após a remoção?** A biblioteca limpa apenas objetos de marca d'água, preservando todas as formas, conectores e formatação.
+## Respostas Rápidas
+- **Qual biblioteca é necessária?** GroupDocs.Watermark for Java (disponível via Maven).  
+- **Quais formatos de diagrama são suportados?** `.vsdx`, `.vdx` e outros formatos Visio.  
+- **Posso pesquisar marcas d'água de texto e imagem?** Sim – combine critérios de pesquisa com `or()`.  
+- **É necessária uma licença para produção?** É necessária uma licença válida do GroupDocs.Watermark.  
+- **Como integrar isso ao Maven?** Adicione o repositório e a dependência mostrados abaixo.
 
-## O que são diagramas de propriedade intelectual?
-Diagramas de propriedade intelectual são representações visuais — como fluxogramas, modelos UML, esquemas de rede ou desenhos arquitetônicos — que contêm informações proprietárias de propriedade de um indivíduo ou organização. Esses diagramas frequentemente transmitem processos, designs ou estratégias confidenciais, tornando‑os ativos valiosos que requerem proteção contra cópia, distribuição ou alteração não autorizadas. Ao tratá‑los como propriedade intelectual, você pode aplicar salvaguardas legais e técnicas, incluindo marca d'água, para manter o controle sobre seu uso e disseminação.
+## O que é groupdocs watermark maven?
+`groupdocs watermark maven` refere-se à integração baseada em Maven da biblioteca GroupDocs.Watermark para Java. Ao declarar a biblioteca no seu `pom.xml`, o Maven resolve automaticamente todos os binários necessários, permitindo que você se concentre no código que carrega diagramas, pesquisa marcas d'água e as remove programaticamente.
 
-## Por que usar GroupDocs.Watermark para Java?
-GroupDocs.Watermark suporta **mais de 50 formatos de entrada e saída** (incluindo `.vsdx`, `.vdx`, `.vsx`) e pode processar diagramas com centenas de páginas sem carregar o arquivo inteiro na memória, reduzindo o consumo de RAM em até **70 %** comparado a abordagens ingênuas de fluxo de arquivo. A API também oferece comparação de hash de imagem sem OCR incorporado, permitindo operações confiáveis de `detect image watermark` em menos de **200 ms** por diagrama em um servidor típico de 2,5 GHz.
+## Por que usar GroupDocs.Watermark para gerenciamento de marcas d'água em diagramas?
+- **API completa** – suporta marcas d'água de texto, imagem e forma em diversos tipos de diagramas.  
+- **Remoção precisa** – elimina marcas d'água sem corromper o layout original do diagrama.  
+- **Escalável** – adequado para processamento em lote de grandes coleções de diagramas.  
+- **Amigável ao Maven** – gerenciamento simples de dependências, mantendo seu projeto limpo.
 
 ## Pré-requisitos
-Antes de começar, verifique se você tem:
+1. **Java Development Kit (JDK) 8+** – garante compatibilidade com a biblioteca.  
+2. **IDE** – IntelliJ IDEA, Eclipse ou qualquer editor compatível com Java.  
+3. **GroupDocs.Watermark for Java** – adicionado via Maven (recomendado) ou download direto do JAR.  
 
-1. **Java Development Kit (JDK) 8+** – o código usa APIs padrão do Java 8.  
-2. **IDE** – IntelliJ IDEA, Eclipse ou qualquer editor que preferir.  
-3. **GroupDocs.Watermark for Java** – via Maven ou download manual do JAR.  
-
-### Bibliotecas e dependências necessárias
-Você pode adicionar a biblioteca via Maven ou baixar os JARs diretamente.
-
+### Bibliotecas e Dependências Necessárias
 #### Configuração Maven
-Adicione o repositório e as entradas de dependência ao seu arquivo `pom.xml`:
+Adicione a seguinte configuração ao seu arquivo `pom.xml`:
 
 ```xml
 <repositories>
@@ -112,88 +61,16 @@ Adicione o repositório e as entradas de dependência ao seu arquivo `pom.xml`:
 </dependencies>
 ```
 
-#### Download direto
-Se preferir instalação manual, baixe a versão mais recente em [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+#### Download Direto
+Alternativamente, faça o download da versão mais recente em [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Aquisição de licença
-- **Teste gratuito:** Ideal para avaliar as capacidades da API.  
-- **Licença temporária:** Use para testes de curto prazo sem restrições de recursos.  
-- **Compra:** Necessária para implantações em produção e para desbloquear formatos premium.
+### Aquisição de Licença
+- **Teste Gratuito:** Teste a biblioteca com uma licença de avaliação.  
+- **Licença Temporária:** Solicite uma chave de curto prazo para avaliação.  
+- **Compra:** Obtenha uma licença de produção para uso ilimitado.
 
-## Como inicializar o Watermarker?
-Criar uma instância `Watermarker` é o primeiro passo em qualquer fluxo de trabalho de marca d'água. A classe `Watermarker` carrega um arquivo de diagrama na memória e fornece métodos para buscar, adicionar e remover marcas d'água. Ao passar o caminho do diagrama e opcionalmente `DiagramLoadOptions`, você obtém um objeto que serve como ponto central para todas as operações subsequentes, garantindo tratamento consistente do documento ao longo do processo.
-
-```java
-Watermarker watermarker = new Watermarker(inputFilePath, loadOptions);
-```
-
-## Como carregar um documento de diagrama?
-Carregar um diagrama com `DiagramLoadOptions` oferece controle granular sobre como o arquivo é analisado. `DiagramLoadOptions` permite especificar se apenas páginas visíveis devem ser carregadas, se camadas ocultas devem ser preservadas e como lidar com fontes incorporadas. Ajustar essas opções pode melhorar drasticamente o desempenho para diagramas grandes e garante que apenas as partes necessárias do arquivo sejam processadas, reduzindo o uso de memória e acelerando a detecção de marcas d'água.
-
-```java
-DiagramLoadOptions loadOptions = new DiagramLoadOptions();
-loadOptions.setLoadHiddenLayers(false);
-Watermarker watermarker = new Watermarker("sample.vsdx", loadOptions);
-```
-
-## Como detectar marca d'água de imagem em um diagrama?
-Detectar marcas d'água de imagem baseia‑se na classe `ImageDctHashSearchCriteria`, que calcula um hash perceptual de uma imagem de referência e o compara com cada imagem incorporada no diagrama. Esse método é rápido e tolerante a pequenas variações visuais, permitindo localizar logotipos ou outras marcas gráficas mesmo que tenham sido redimensionadas ou ligeiramente alteradas. Ao configurar o limiar de similaridade, você pode equilibrar a sensibilidade da detecção contra correspondências falsas‑positivas.
-
-```java
-ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria("logo.png");
-PossibleWatermarkCollection watermarks = watermarker.search(criteria);
-```
-
-## Como buscar marcas d'água de texto?
-Buscar marcas d'água de texto usa a classe `TextSearchCriteria`. Essa classe varre todas as camadas textuais dentro do diagrama, incluindo aquelas dentro de formas, conectores e agrupamentos, e devolve quaisquer correspondências que contenham a string ou padrão especificado. A busca não diferencia maiúsculas de minúsculas por padrão e pode ser refinada com expressões regulares, permitindo localizar marcas d'água que estejam rotacionadas, parcialmente ocultas ou incorporadas em estruturas de diagrama complexas.
-
-```java
-TextSearchCriteria textCriteria = new TextSearchCriteria("Confidential");
-PossibleWatermarkCollection textWatermarks = watermarker.search(textCriteria);
-```
-
-## Como remover marcas d'água de um diagrama?
-Remover marcas d'água é feito invocando o método `clear()` em cada objeto `Watermark` retornado por uma operação de busca. O método `clear()` exclui apenas os elementos visuais da marca d'água, deixando intactos os objetos subjacentes do diagrama — como formas, conectores e formatação. Após a limpeza, salve o documento usando o método `save`, produzindo uma versão limpa do diagrama que mantém seu layout e funcionalidade originais.
-
-```java
-for (Watermark wm : watermarks) {
-    wm.clear();
-}
-watermarker.save("cleaned.vsdx");
-```
-
-## Aplicações práticas
-- **Integração de software empresarial:** Incorpore validação de marca d'água em sistemas de gerenciamento de documentos para aplicar políticas de PI automaticamente.  
-- **Sistemas de gerenciamento de conteúdo (CMS):** Analise diagramas enviados por usuários em busca de logotipos não autorizados antes da publicação.  
-- **Manipulação de documentos legais:** Detecte e remova marcas d'água confidenciais ao preparar pacotes de evidências.  
-
-## Armadilhas comuns e solução de problemas
-- **Exceção de licença ausente:** Certifique-se de que o arquivo de licença de avaliação ou paga está referenciado corretamente via `License.setLicense("license_path")`.  
-- **Desaceleração em diagramas grandes:** Ative `loadOptions.setLoadHiddenLayers(false)` e considere processar diagramas em fluxos paralelos.  
-- **Correspondências de imagem falsos‑positivos:** Ajuste a tolerância do hash DCT com `criteria.setSimilarityThreshold(0.85)` para reduzir correspondências acidentais.
-
-## Perguntas frequentes
-
-**Q: Posso buscar tanto marcas d'água de texto quanto de imagem em uma única chamada?**  
-A: Sim, combine critérios com `OrSearchCriteria` (por exemplo, `new OrSearchCriteria(textCriteria, imageCriteria)`) para recuperar ambos os tipos de uma vez.
-
-**Q: A remoção de marcas d'água corromperá o layout do diagrama?**  
-A: Não. A biblioteca isola objetos de marca d'água, de modo que formas, conectores e formatação permanecem inalterados após `clear()`.
-
-**Q: Quais formatos de diagrama são suportados?**  
-A: GroupDocs.Watermark lida com `.vsdx`, `.vdx`, `.vsx` e vários formatos Visio mais antigos, cobrindo mais de **30** tipos de diagramas.
-
-**Q: Como processar milhares de diagramas de forma eficiente?**  
-A: Use o `ExecutorService` do Java para executar detecção/removal de marcas d'água em lotes paralelos e reutilize um único objeto de configuração `Watermarker` para reduzir a sobrecarga.
-
-**Q: É possível integrar isso em um pipeline CI/CD?**  
-A: Absolutamente. Adicione os trechos de Java aos seus scripts de build (Maven/Gradle) e execute‑os como etapa de verificação pré‑implantação para garantir que nenhuma marca d'água proibida esteja presente.
-
----
-
-**Última atualização:** 2026-08-19  
-**Testado com:** GroupDocs.Watermark 23.12 for Java  
-**Autor:** GroupDocs
+## Usando groupdocs watermark maven para Carregar um Documento de Diagrama
+Carregar um documento de diagrama é o primeiro passo antes de qualquer operação de marca d'água. Abaixo está um exemplo mínimo que cria uma instância `Watermarker` com `DiagramLoadOptions`.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -209,6 +86,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
+
+- **Parâmetros:**  
+  - `inputFilePath` – caminho para o seu arquivo `.vsdx`.  
+  - `loadOptions` – permite controlar como o diagrama é analisado (ex.: proteção por senha).
+
+## Pesquisando Marcas d'água com groupdocs watermark maven
+### Marcas d'água de Texto
+Para localizar marcas d'água baseadas em texto, defina um `TextSearchCriteria` e consulte a primeira página do diagrama.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -231,6 +116,13 @@ public class SearchTextWatermarks {
 }
 ```
 
+- **Métodos Principais:**  
+  - `TextSearchCriteria` – especifica o texto exato a ser procurado.  
+  - `PossibleWatermarkCollection` – armazena quaisquer correspondências encontradas.
+
+### Marcas d'água de Imagem
+Se o seu diagrama contém marcas d'água de logotipo ou imagem, use `ImageDctHashSearchCriteria` para comparar com uma imagem de referência.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -252,6 +144,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
+
+- **Métodos Principais:**  
+  - `ImageDctHashSearchCriteria` – cria um hash perceptual da imagem de referência para correspondência robusta.
+
+## Removendo Marcas d'água
+Depois de identificar as marcas d'água indesejadas, você pode removê‑las e salvar uma cópia limpa do diagrama.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -280,8 +178,40 @@ public class RemoveWatermarks {
 }
 ```
 
-## Tutoriais relacionados
+- **Método Principal:** `clear()` remove todas as marcas d'água encontradas pelos critérios combinados, deixando o diagrama intacto.
 
-- [Guia para adicionar marcas d'água a diagramas usando GroupDocs.Watermark para Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [Adicionar marcas d'água de texto a diagramas usando GroupDocs.Watermark para Java&#58; Um guia abrangente](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Editar cabeçalhos e rodapés de diagramas em Java usando GroupDocs.Watermark&#58; Um guia abrangente](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
+## Aplicações Práticas
+1. **Integração de Software Corporativo** – Incorpore o gerenciamento de marcas d'água em aplicativos empresariais para proteger diagramas proprietários.  
+2. **Sistemas de Gerenciamento de Conteúdo (CMS)** – Automatize a detecção e remoção de logotipos não autorizados antes da publicação.  
+3. **Fluxos de Trabalho de Documentos Legais** – Adicione ou remova marcas d'água em diferentes estágios do processamento de contratos.  
+
+## Problemas Comuns & Solução de Problemas
+- **Erros de licença:** Certifique‑se de que o arquivo de licença está corretamente referenciado antes de criar um `Watermarker`.  
+- **Arquivos grandes:** Use APIs de streaming ou aumente o tamanho do heap da JVM (`-Xmx2g`) para diagramas > 100 MB.  
+- **Marcas d'água ausentes:** Verifique se os critérios de pesquisa (maiúsculas/minúsculas, limiar de similaridade de imagem) correspondem ao conteúdo real da marca d'água.
+
+## Perguntas Frequentes
+
+**Q: Posso pesquisar texto e imagens simultaneamente?**  
+A: Sim. Combine os critérios com `or()` como mostrado no exemplo de remoção.
+
+**Q: É seguro remover marcas d'água sem alterar o layout do diagrama?**  
+A: Absolutamente. A API direciona precisamente os objetos de marca d'água, preservando todos os demais elementos do diagrama.
+
+**Q: Quais formatos de diagrama o GroupDocs.Watermark suporta?**  
+A: Ele suporta formatos Visio como `.vsdx`, `.vdx`, além de outros tipos de diagramas vetoriais.
+
+**Q: Como posso processar centenas de diagramas de forma eficiente?**  
+A: Implemente um loop em lote, reutilize uma única instância `Watermarker` quando possível e considere o processamento paralelo com o `ExecutorService` do Java.
+
+**Q: Posso integrar a detecção de marcas d'água em um pipeline CI/CD?**  
+A: Sim. Inclua os trechos de Java nos seus scripts de build (por exemplo, plugins Maven ou tarefas Gradle) para validar diagramas antes da implantação.
+
+## Conclusão
+Ao aproveitar **groupdocs watermark maven**, você obtém uma forma poderosa e gerenciada pelo Maven para carregar, pesquisar e remover marcas d'água de arquivos de diagramas usando Java. Essa capacidade reforça a segurança dos documentos, simplifica os fluxos de conteúdo e escala sem esforço em grandes coleções de documentos.
+
+---
+
+**Última Atualização:** 2025-12-19  
+**Testado com:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs

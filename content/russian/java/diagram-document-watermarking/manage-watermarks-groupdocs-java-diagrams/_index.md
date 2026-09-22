@@ -1,96 +1,48 @@
 ---
-date: '2026-08-19'
-description: Узнайте, как защищать диаграммы интеллектуальной собственности с помощью
-  GroupDocs.Watermark для Java. Пошаговое руководство по загрузке, обнаружению image
-  watermark, поиску и удалению watermarks из файлов .vsdx.
+date: '2025-12-19'
+description: Узнайте, как использовать GroupDocs Watermark Maven для управления водяными
+  знаками в файлах диаграмм, таких как .vsdx, с помощью Java, повышая целостность
+  документов и защищая интеллектуальную собственность.
 keywords:
-- intellectual property diagrams
-- detect image watermark
 - GroupDocs.Watermark Java
-- diagram watermark management
-- Java watermark API
-lastmod: '2026-08-19'
-og_description: Узнайте, как защищать диаграммы интеллектуальной собственности с помощью
-  GroupDocs.Watermark для Java. Научитесь загружать файлы .vsdx, обнаруживать image
-  watermark и эффективно удалять нежелательные watermarks.
-og_image_alt: Java code snippet showing watermark detection in diagram files
-og_title: Защитите диаграммы интеллектуальной собственности с помощью GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  headline: Protect intellectual property diagrams with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  name: Protect intellectual property diagrams with GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-    text: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-    text: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-  type: HowTo
-- questions:
-  - answer: Yes, combine criteria with `OrSearchCriteria` (e.g., `new OrSearchCriteria(textCriteria,
-      imageCriteria)`) to retrieve both types at once.
-    question: Can I search for both text and image watermarks in a single call?
-  - answer: No. The library isolates watermark objects, so shapes, connectors, and
-      formatting remain unchanged after `clear()`.
-    question: Will removing watermarks corrupt the diagram layout?
-  - answer: GroupDocs.Watermark handles `.vsdx`, `.vdx`, `.vsx`, and several older
-      Visio formats, covering over **30** diagram types.
-    question: Which diagram formats are supported?
-  - answer: Use Java’s `ExecutorService` to run watermark detection/removal in parallel
-      batches, and reuse a single `Watermarker` configuration object to reduce overhead.
-    question: How do I process thousands of diagrams efficiently?
-  - answer: Absolutely. Add the Java snippets to your build scripts (Maven/Gradle)
-      and run them as a pre‑deployment verification step to ensure no prohibited watermarks
-      are present.
-    question: Is it possible to integrate this into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark diagrams
-- GroupDocs.Watermark
-- Java document processing
-- intellectual property protection
-title: Защитите диаграммы интеллектуальной собственности с помощью GroupDocs.Watermark
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark maven – Управляйте водяными знаками диаграмм с помощью
+  Java
 type: docs
 url: /ru/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
 weight: 1
 ---
 
-# Защита диаграмм интеллектуальной собственности с помощью GroupDocs.Watermark
+# groupdocs watermark maven – Управление водяными знаками диаграмм с помощью Java
 
-Защита диаграмм интеллектуальной собственности — критически важный шаг для любой организации, которая делится дизайнерскими активами, блок‑схемами или архитектурными чертежами. С GroupDocs.Watermark для Java вы можете программно загружать файлы диаграмм (например, `.vsdx`), обнаруживать экземпляры водяных знаков‑изображений, искать текстовые водяные знаки и безопасно удалять их без повреждения оригинального рисунка. Этот учебник проведёт вас через весь процесс — от настройки окружения до пакетной обработки больших библиотек диаграмм — чтобы вы могли встроить надёжную защиту ИС непосредственно в свои Java‑приложения.
+Управление водяными знаками в документах необходимо для защиты интеллектуальной собственности и поддержания целостности документов. **В этом руководстве мы покажем, как использовать groupdocs watermark maven для эффективной загрузки, поиска и удаления водяных знаков из файлов диаграмм, таких как `.vsdx`**. Независимо от того, разрабатываете ли вы корпоративное программное обеспечение или автоматизируете документооборот, освоение этих техник даст вам полный контроль над управлением водяными знаками диаграмм.
 
 ## Быстрые ответы
-- **Какая библиотека обрабатывает водяные знаки диаграмм?** GroupDocs.Watermark for Java.  
-- **Могу ли я обнаруживать водяные знаки‑изображения, а также текст?** Да, API предоставляет `ImageDctHashSearchCriteria` для обнаружения изображений и `TextSearchCriteria` для текста.  
-- **Нужна ли коммерческая лицензия для запуска кода?** Пробная лицензия работает для разработки; платная лицензия требуется для продакшн‑использования.  
-- **Поддерживается ли пакетная обработка?** Абсолютно — цикл по папке и применение той же логики водяных знаков к каждому файлу.  
-- **Останется ли оригинальная компоновка диаграммы неизменной после удаления?** Библиотека очищает только объекты водяных знаков, сохраняя все формы, соединители и форматирование.
+- **Какая библиотека нужна?** GroupDocs.Watermark for Java (доступна через Maven).  
+- **Какие форматы диаграмм поддерживаются?** `.vsdx`, `.vdx` и другие форматы Visio.  
+- **Можно ли искать как текстовые, так и графические водяные знаки?** Да – комбинируйте критерии поиска с `or()`.  
+- **Нужна ли лицензия для продакшн?** Требуется действующая лицензия GroupDocs.Watermark.  
+- **Как интегрировать это в Maven?** Добавьте репозиторий и зависимость, показанные ниже.
 
-## Что такое диаграммы интеллектуальной собственности?
-Диаграммы интеллектуальной собственности — это визуальные представления — такие как блок‑схемы, UML‑модели, сетевые схемы или архитектурные чертежи, содержащие собственническую информацию, принадлежащую отдельному лицу или организации. Эти диаграммы часто передают конфиденциальные процессы, дизайны или стратегии, делая их ценными активами, требующими защиты от несанкционированного копирования, распространения или изменения. Рассматривая их как интеллектуальную собственность, вы можете применять юридические и технические меры защиты, включая водяные знаки, чтобы контролировать их использование и распространение.
+## Что такое groupdocs watermark maven?
+`groupdocs watermark maven` — это интеграция библиотеки GroupDocs.Watermark для Java на основе Maven. Объявив библиотеку в вашем `pom.xml`, Maven автоматически разрешит все необходимые бинарные файлы, позволяя вам сосредоточиться на коде, который загружает диаграммы, ищет водяные знаки и удаляет их программно.
 
-## Почему использовать GroupDocs.Watermark для Java?
-GroupDocs.Watermark поддерживает **50+ форматов ввода и вывода** (включая `.vsdx`, `.vdx`, `.vsx`) и может обрабатывать многосотенные диаграммы без загрузки всего файла в память, снижая потребление ОЗУ до **70 %** по сравнению с наивными подходами потоковой обработки файлов. API также предлагает встроенное сравнение изображений без OCR, обеспечивая надёжные операции `detect image watermark` менее чем за **200 ms** на диаграмму на типичном сервере с частотой 2,5 ГГц.
+## Почему стоит использовать GroupDocs.Watermark для управления водяными знаками диаграмм?
+- **Полнофункциональное API** — поддерживает текстовые, графические и фигурные водяные знаки во множестве типов диаграмм.  
+- **Точное удаление** — устраняет водяные знаки без повреждения исходного макета диаграммы.  
+- **Масштабируемость** — подходит для пакетной обработки больших коллекций диаграмм.  
+- **Удобство Maven** — простое управление зависимостями, ваш проект остаётся чистым.
 
-## Требования
-1. **Java Development Kit (JDK) 8+** — код использует стандартные API Java 8.  
-2. **IDE** — IntelliJ IDEA, Eclipse или любой предпочитаемый редактор.  
-3. **GroupDocs.Watermark for Java** — через Maven или ручную загрузку JAR‑файла.  
+## Предварительные требования
+1. **Java Development Kit (JDK) 8+** — обеспечивает совместимость с библиотекой.  
+2. **IDE** — IntelliJ IDEA, Eclipse или любой совместимый с Java редактор.  
+3. **GroupDocs.Watermark for Java** — добавляется через Maven (рекомендовано) или прямой загрузкой JAR‑файла.  
 
 ### Требуемые библиотеки и зависимости
-Вы можете добавить библиотеку через Maven или загрузить JAR‑файлы напрямую.
-
 #### Настройка Maven
-Добавьте репозиторий и зависимости в ваш файл `pom.xml`:
+Добавьте следующую конфигурацию в ваш файл `pom.xml`:
 
 ```xml
 <repositories>
@@ -110,88 +62,16 @@ GroupDocs.Watermark поддерживает **50+ форматов ввода �
 </dependencies>
 ```
 
-#### Прямое скачивание
-Если вы предпочитаете ручную установку, загрузите последнюю версию с [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+#### Прямая загрузка
+Или скачайте последнюю версию с [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Приобретение лицензии
-- **Free trial:** Идеально для оценки возможностей API.  
-- **Temporary license:** Используйте для краткосрочного тестирования без ограничений функций.  
-- **Purchase:** Требуется для продакшн‑развёртываний и для разблокировки премиум‑форматов.
+- **Бесплатная пробная версия:** протестируйте библиотеку с пробной лицензией.  
+- **Временная лицензия:** запросите краткосрочный ключ для оценки.  
+- **Покупка:** получите производственную лицензию для неограниченного использования.
 
-## Как инициализировать Watermarker?
-Создание экземпляра `Watermarker` — первый шаг в любой работе с водяными знаками. Класс `Watermarker` загружает файл диаграммы в память и предоставляет методы для поиска, добавления и удаления водяных знаков. Передавая путь к диаграмме и опциональные `DiagramLoadOptions`, вы получаете объект, который служит центральной точкой для всех последующих операций, обеспечивая согласованную обработку документа на протяжении всего процесса.
-
-```java
-Watermarker watermarker = new Watermarker(inputFilePath, loadOptions);
-```
-
-## Как загрузить документ диаграммы?
-Загрузка диаграммы с помощью `DiagramLoadOptions` даёт тонкую настройку того, как файл будет парситься. `DiagramLoadOptions` позволяет указать, загружать ли только видимые страницы, сохранять ли скрытые слои и как обрабатывать встроенные шрифты. Настройка этих параметров может значительно повысить производительность при работе с большими диаграммами и гарантирует, что обрабатываются только необходимые части файла, уменьшая использование памяти и ускоряя обнаружение водяных знаков.
-
-```java
-DiagramLoadOptions loadOptions = new DiagramLoadOptions();
-loadOptions.setLoadHiddenLayers(false);
-Watermarker watermarker = new Watermarker("sample.vsdx", loadOptions);
-```
-
-## Как обнаружить изображение‑водяной знак в диаграмме?
-Обнаружение изображений‑водяных знаков опирается на класс `ImageDctHashSearchCriteria`, который вычисляет перцептивный хеш эталонного изображения и сравнивает его со всеми встроенными изображениями в диаграмме. Этот метод быстрый и устойчив к небольшим визуальным изменениям, позволяя находить логотипы или другие графические водяные знаки даже при их изменении размера или небольших искажениях. Настраивая порог сходства, вы можете балансировать чувствительность обнаружения и количество ложных срабатываний.
-
-```java
-ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria("logo.png");
-PossibleWatermarkCollection watermarks = watermarker.search(criteria);
-```
-
-## Как искать текстовые водяные знаки?
-Поиск текстовых водяных знаков использует класс `TextSearchCriteria`. Этот класс сканирует все текстовые слои внутри диаграммы, включая те, что находятся внутри фигур, соединителей и групп, и возвращает любые совпадения, содержащие указанную строку или шаблон. Поиск по умолчанию нечувствителен к регистру и может быть уточнён с помощью регулярных выражений, позволяя находить водяные знаки, которые могут быть повернуты, частично скрыты или встроены в сложные структуры диаграмм.
-
-```java
-TextSearchCriteria textCriteria = new TextSearchCriteria("Confidential");
-PossibleWatermarkCollection textWatermarks = watermarker.search(textCriteria);
-```
-
-## Как удалить водяные знаки из диаграммы?
-Удаление водяных знаков выполняется вызовом метода `clear()` у каждого объекта `Watermark`, возвращённого операцией поиска. Метод `clear()` удаляет только визуальные элементы водяного знака, оставляя базовые объекты диаграммы — такие как формы, соединители и форматирование — нетронутыми. После очистки сохраняйте документ с помощью метода `save`, получая чистую версию диаграммы, сохраняющую оригинальную компоновку и функциональность.
-
-```java
-for (Watermark wm : watermarks) {
-    wm.clear();
-}
-watermarker.save("cleaned.vsdx");
-```
-
-## Практические применения
-- **Enterprise software integration:** Встраивание проверки водяных знаков в системы управления документами для автоматического соблюдения политик ИС.  
-- **Content management systems (CMS):** Сканирование загружаемых пользователями диаграмм на предмет неавторизованных логотипов перед публикацией.  
-- **Legal document handling:** Обнаружение и удаление конфиденциальных водяных знаков при подготовке пакетов доказательств.  
-
-## Распространённые подводные камни и устранение неполадок
-- **Missing license exception:** Убедитесь, что файл пробной или платной лицензии правильно указан через `License.setLicense("license_path")`.  
-- **Large diagram slowdown:** Включите `loadOptions.setLoadHiddenLayers(false)` и рассмотрите обработку диаграмм в параллельных потоках.  
-- **False‑positive image matches:** Отрегулируйте допуск DCT‑хеша с помощью `criteria.setSimilarityThreshold(0.85)`, чтобы уменьшить случайные совпадения.
-
-## Часто задаваемые вопросы
-
-**Q: Can I search for both text and image watermarks in a single call?**  
-A: Yes, combine criteria with `OrSearchCriteria` (e.g., `new OrSearchCriteria(textCriteria, imageCriteria)`) to retrieve both types at once.
-
-**Q: Will removing watermarks corrupt the diagram layout?**  
-A: No. The library isolates watermark objects, so shapes, connectors, and formatting remain unchanged after `clear()`.
-
-**Q: Which diagram formats are supported?**  
-A: GroupDocs.Watermark handles `.vsdx`, `.vdx`, `.vsx`, and several older Visio formats, covering over **30** diagram types.
-
-**Q: How do I process thousands of diagrams efficiently?**  
-A: Use Java’s `ExecutorService` to run watermark detection/removal in parallel batches, and reuse a single `Watermarker` configuration object to reduce overhead.
-
-**Q: Is it possible to integrate this into a CI/CD pipeline?**  
-A: Absolutely. Add the Java snippets to your build scripts (Maven/Gradle) and run them as a pre‑deployment verification step to ensure no prohibited watermarks are present.
-
----
-
-**Last Updated:** 2026-08-19  
-**Tested With:** GroupDocs.Watermark 23.12 for Java  
-**Author:** GroupDocs
+## Использование groupdocs watermark maven для загрузки документа диаграммы
+Загрузка документа диаграммы — первый шаг перед любой операцией с водяными знаками. Ниже приведён минимальный пример, создающий экземпляр `Watermarker` с `DiagramLoadOptions`.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -207,6 +87,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
+
+- **Параметры:**  
+  - `inputFilePath` — путь к вашему файлу `.vsdx`.  
+  - `loadOptions` — позволяет управлять тем, как диаграмма будет разобрана (например, защита паролем).
+
+## Поиск водяных знаков с помощью groupdocs watermark maven
+### Текстовые водяные знаки
+Чтобы найти текстовые водяные знаки, определите `TextSearchCriteria` и выполните запрос к первой странице диаграммы.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -229,6 +117,13 @@ public class SearchTextWatermarks {
 }
 ```
 
+- **Ключевые методы:**  
+  - `TextSearchCriteria` — задаёт точный текст для поиска.  
+  - `PossibleWatermarkCollection` — хранит найденные совпадения.
+
+### Графические водяные знаки
+Если в вашей диаграмме присутствуют логотипы или изображения‑водяные знаки, используйте `ImageDctHashSearchCriteria` для сравнения с эталонным изображением.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -250,6 +145,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
+
+- **Ключевые методы:**  
+  - `ImageDctHashSearchCriteria` — создаёт перцептивный хеш эталонного изображения для надёжного сопоставления.
+
+## Удаление водяных знаков
+После того как нежелательные водяные знаки обнаружены, их можно очистить и сохранить чистую копию диаграммы.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -278,8 +179,42 @@ public class RemoveWatermarks {
 }
 ```
 
-## Связанные руководства
+- **Ключевой метод:** `clear()` — удаляет каждый найденный водяной знак, соответствующий объединённым критериям, оставляя диаграмму нетронутой.
 
-- [Guide to Adding Watermarks to Diagrams Using GroupDocs.Watermark for Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [Add Text Watermarks to Diagrams Using GroupDocs.Watermark for Java&#58; A Comprehensive Guide](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Edit Diagram Headers & Footers in Java Using GroupDocs.Watermark&#58; A Comprehensive Guide](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
+## Практические применения
+1. **Интеграция в корпоративное ПО** — внедрите управление водяными знаками в бизнес‑приложения для защиты собственных диаграмм.  
+2. **Системы управления контентом (CMS)** — автоматизируйте обнаружение и удаление неавторизованных логотипов перед публикацией.  
+3. **Юридические документообороты** — добавляйте или удаляйте водяные знаки на разных этапах обработки контрактов.  
+
+## Распространённые проблемы и их решение
+- **Ошибки лицензии:** убедитесь, что файл лицензии правильно указан перед созданием `Watermarker`.  
+- **Большие файлы:** используйте потоковые API или увеличьте размер кучи JVM (`-Xmx2g`) для диаграмм более 100 МБ.  
+- **Не найдены водяные знаки:** проверьте, что критерии поиска (регистр текста, порог схожести изображения) соответствуют реальному содержимому водяного знака.
+
+## Часто задаваемые вопросы
+
+**В: Можно ли искать одновременно текст и изображения?**  
+О: Да. Комбинируйте критерии с `or()` как показано в примере удаления.
+
+**В: Безопасно ли удалять водяные знаки без изменения макета диаграммы?**  
+О: Абсолютно. API точно нацеливается на объекты водяных знаков, сохраняя все остальные элементы диаграммы.
+
+**В: Какие форматы диаграмм поддерживает GroupDocs.Watermark?**  
+О: Поддерживаются форматы Visio, такие как `.vsdx`, `.vdx`, а также другие векторные типы диаграмм.
+
+**В: Как эффективно обрабатывать сотни диаграмм?**  
+О: Реализуйте пакетный цикл, переиспользуйте один экземпляр `Watermarker`, когда это возможно, и рассмотрите параллельную обработку с помощью `ExecutorService` в Java.
+
+**В: Можно ли интегрировать обнаружение водяных знаков в CI/CD pipeline?**  
+О: Да. Включите Java‑фрагменты в скрипты сборки (например, Maven‑плагины или задачи Gradle) для проверки диаграмм перед развертыванием.
+
+## Заключение
+Используя **groupdocs watermark maven**, вы получаете мощный, управляемый Maven способ загрузки, поиска и удаления водяных знаков из файлов диаграмм с помощью Java. Эта возможность повышает безопасность документов, упрощает рабочие процессы с контентом и без труда масштабируется на большие коллекции файлов.
+
+---
+
+**Последнее обновление:** 2025-12-19  
+**Тестировано с:** GroupDocs.Watermark 24.11 for Java  
+**Автор:** GroupDocs  
+
+---

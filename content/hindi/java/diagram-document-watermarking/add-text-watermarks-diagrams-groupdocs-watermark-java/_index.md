@@ -1,103 +1,47 @@
 ---
-date: '2026-08-19'
-description: GroupDocs.Watermark का उपयोग करके Java में टेक्स्ट के साथ डायग्राम पेजों
-  पर वॉटरमार्क कैसे लगाएँ सीखें। यह गाइड सेटअप, कार्यान्वयन और व्यावहारिक टिप्स को
-  कवर करता है।
+date: '2025-12-19'
+description: GroupDocs.Watermark for Java के साथ आरेखों में टेक्स्ट वॉटरमार्क कैसे
+  जोड़ें, सीखें। यह चरण‑दर‑चरण गाइड सेटअप, वॉटरमार्क फ़ॉन्ट सेटिंग्स और व्यावहारिक
+  उपयोग मामलों को कवर करता है।
 keywords:
-- how to watermark diagram
-- apply text watermark
-- text watermark pages
-- java watermark example
-lastmod: '2026-08-19'
-og_description: GroupDocs.Watermark का उपयोग करके Java में टेक्स्ट के साथ डायग्राम
-  पेजों पर वॉटरमार्क कैसे लगाएँ सीखें। यह चरण‑दर‑चरण गाइड सेटअप, कोड कार्यान्वयन और
-  सुरक्षित डायग्राम ब्रांडिंग के लिए सर्वोत्तम प्रथाओं को कवर करता है।
-og_image_alt: Guide showing Java code adding text watermarks to diagram files
-og_title: Java में टेक्स्ट के साथ डायग्राम पेजों पर वॉटरमार्क कैसे लगाएँ
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to watermark diagram pages with text in Java using GroupDocs.Watermark.
-    This guide covers setup, implementation, and practical tips.
-  headline: How to watermark diagram pages with text in Java
-  type: TechArticle
-- description: Learn how to watermark diagram pages with text in Java using GroupDocs.Watermark.
-    This guide covers setup, implementation, and practical tips.
-  name: How to watermark diagram pages with text in Java
-  steps:
-  - name: load your diagram
-    text: DiagramLoadOptions tells the library how to read diagram files, such as
-      handling passwords or specific format options. First, instantiate a `Watermarker`
-      with `DiagramLoadOptions`. This object represents the source diagram in memory.
-      java String inputFilePath = "YOUR_DOCUMENT_DIRECTORY/diagram.vsdx"
-  - name: initialize the text watermark
-    text: '`TextWatermark` defines the visible text, font, color, and rotation. You
-      can also set opacity to make the watermark subtle. java TextWatermark textWatermark
-      = new TextWatermark("Test watermark", new Font("Arial", 36)); textWatermark.setColor(Color.getBlue());
-      textWatermark.setBackground(false); text'
-  - name: add watermark to diagram pages
-    text: DiagramShapeWatermarkOptions configures how a watermark is applied to diagram
-      shapes. DiagramWatermarkPlacementType specifies whether the watermark appears
-      in the foreground or background. Apply the watermark to all background pages
-      (or a custom page range). The API streams each page, so memory usag
-  - name: save and close
-    text: Persist the watermarked diagram to a new file and release resources. java
-      String outputFilePath = "YOUR_OUTPUT_DIRECTORY/watermarked_diagram.vsdx"; watermarker.save(outputFilePath);
-      watermarker.close();
-  type: HowTo
-- questions:
-  - answer: Yes—pass the password to `DiagramLoadOptions` when loading the file.
-    question: Does the library support password‑protected diagrams?
-  - answer: The API is fully server‑side and requires no GUI components.
-    question: Can I run this on a headless server?
-  - answer: Java 8 through Java 17 are tested and documented.
-    question: Which Java versions are officially supported?
-  - answer: It streams pages, keeping peak memory usage under 200 MB even for 1 GB
-      diagrams.
-    question: How does GroupDocs.Watermark handle large files?
-  - answer: Use `Watermarker.getResultImage()` to generate a preview bitmap of any
-      page.
-    question: Is there a way to preview the watermark before saving?
-  type: FAQPage
-tags:
-- watermark diagram
-- GroupDocs.Watermark
-- Java watermarking
-- text watermark
-- diagram security
-title: Java में टेक्स्ट के साथ डायग्राम पेजों पर वॉटरमार्क कैसे लगाएँ
+- text watermarks in Java
+- add text watermark to diagram
+- GroupDocs Watermark for Java setup
+title: GroupDocs.Watermark for Java का उपयोग करके डायग्राम में टेक्स्ट वॉटरमार्क कैसे
+  जोड़ें
 type: docs
 url: /hi/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/
 weight: 1
 ---
 
-# डायग्राम पृष्ठों पर टेक्स्ट के साथ वॉटरमार्क कैसे जोड़ें जावा में
+# GroupDocs.Watermark for Java का उपयोग करके डायग्राम में टेक्स्ट वॉटरमार्क कैसे जोड़ें
 
-आधुनिक सॉफ़्टवेयर प्रोजेक्ट्स में, आप जो दृश्य संपत्तियां साझा करते हैं—विशेषकर डायग्राम—की सुरक्षा अब शीर्ष प्राथमिकता बन गई है। **डायग्राम में वॉटरमार्क कैसे जोड़ें** पृष्ठों पर टेक्स्ट के साथ जावा में एक सामान्य आवश्यकता है उन कंपनियों के लिए जिन्हें ब्रांड पहचान बनाए रखनी है, अनधिकृत पुन: उपयोग को रोकना है, और दस्तावेज़ की उत्पत्ति को ट्रैक करना है। यह ट्यूटोरियल आपको **GroupDocs.Watermark for Java** का उपयोग करके पूरी प्रक्रिया के माध्यम से ले जाता है, पर्यावरण तैयारी से लेकर अंतिम सत्यापन तक, ताकि आप अपने डायग्राम को आत्मविश्वास से सुरक्षित कर सकें।
+अपने डायग्राम को अनधिकृत पुन: उपयोग से बचाना कई डेवलपर्स और डिज़ाइनर्स के लिए शीर्ष प्राथमिकता है। इस ट्यूटोरियल में आप **डायग्राम फ़ाइलों में टेक्स्ट वॉटरमार्क कैसे जोड़ें** सीखेंगे, शक्तिशाली **GroupDocs.Watermark for Java** लाइब्रेरी का उपयोग करके। हम हर चरण को विस्तार से बताएँगे—Maven सेटअप से लेकर कस्टम वॉटरमार्क फ़ॉन्ट सेटिंग्स लागू करने तक—ताकि आप अपने विज़ुअल एसेट्स को जल्दी और भरोसेमंद तरीके से सुरक्षित कर सकें।
 
 ## त्वरित उत्तर
-- **वॉटरमार्क जोड़ने वाली लाइब्रेरी कौन सी है?** GroupDocs.Watermark for Java.  
-- **कौन सा जावा संस्करण आवश्यक है?** JDK 8 या नया.  
-- **परीक्षण के लिए लाइसेंस चाहिए?** मूल्यांकन के लिए एक मुफ्त अस्थायी लाइसेंस काम करता है.  
-- **क्या मैं एक साथ कई पृष्ठों पर वॉटरमार्क लगा सकता हूँ?** हाँ—एक ही कॉल में सभी पृष्ठों पर वॉटरमार्क लागू करें.  
-- **क्या प्रक्रिया मेमोरी‑कुशल है?** API पृष्ठों को स्ट्रीम करता है, इसलिए 500‑पृष्ठीय डायग्राम भी 200 MB RAM से कम में रहता है.
+- **लाइब्रेरी क्या करती है?** यह 100 से अधिक दस्तावेज़ और डायग्राम फ़ॉर्मैट्स में टेक्स्ट (या इमेज) वॉटरमार्क एम्बेड करती है।  
+- **मुख्य कीवर्ड कौन सा है?** *add text watermark* – इस गाइड में लगातार उपयोग किया गया है।  
+- **क्या मुझे लाइसेंस चाहिए?** विकास के लिए एक अस्थायी ट्रायल लाइसेंस काम करता है; प्रोडक्शन के लिए पूर्ण लाइसेंस आवश्यक है।  
+- **क्या मैं फ़ॉन्ट कस्टमाइज़ कर सकता हूँ?** हाँ, आप वॉटरमार्क फ़ॉन्ट सेटिंग्स के माध्यम से फ़ॉन्ट फ़ैमिली, साइज, रंग और रोटेशन नियंत्रित कर सकते हैं।  
+- **क्या यह Java‑8 के साथ संगत है?** बिल्कुल—लाइब्रेरी JDK 8 और उससे ऊपर को सपोर्ट करती है।
 
-## जावा में डायग्राम पृष्ठों पर वॉटरमार्किंग क्या है?
-यह जावा लाइब्रेरी का उपयोग करके प्रत्येक डायग्राम फ़ाइल (जैसे Visio, SVG, या अन्य समर्थित फ़ॉर्मैट) के प्रत्येक पृष्ठ पर अर्ध‑पारदर्शी टेक्स्ट (या छवियां) को प्रोग्रामेटिक रूप से ओवरले करने को शामिल करता है। वॉटरमार्क दृश्य सामग्री का हिस्सा बन जाता है, जिससे यह किसी भी व्यूअर में दिखाई देता है जबकि मूल डायग्राम डेटा संरक्षित रहता है।
+## “add text watermark” क्या है?
+टेक्स्ट वॉटरमार्क जोड़ना मतलब दस्तावेज़ के प्रत्येक पेज या शैप पर अर्ध‑पारदर्शी टेक्स्ट ओवरले करना है, जिससे सामग्री पहचान योग्य बनी रहे। यह तकनीक ब्रांडिंग, कॉपीराइट सुरक्षा, और सहयोगी संपादन में व्यापक रूप से उपयोग होती है।
 
-## GroupDocs.Watermark for Java का उपयोग क्यों करें?
-GroupDocs.Watermark **50+ इनपुट और आउटपुट फ़ॉर्मैट** का समर्थन करता है, **1 GB** तक की फ़ाइलों को पूरी दस्तावेज़ को मेमोरी में लोड किए बिना प्रोसेस करता है, और मौजूदा वॉटरमार्क का पता लगाने के लिए **बिल्ट‑इन OCR** प्रदान करता है। ये मापनीय क्षमताएं बड़े‑पैमाने के डायग्राम रिपॉज़िटरी के लिए तेज़, विश्वसनीय सुरक्षा सुनिश्चित करती हैं, जबकि इसका API जावा एप्लिकेशन में एकीकरण को सरल बनाता है।
+## GroupDocs.Watermark for Java क्यों उपयोग करें?
+- **विस्तृत फ़ॉर्मैट सपोर्ट** – Visio, SVG, PDF, Word और कई अन्य फ़ॉर्मैट्स के साथ काम करता है।  
+- **सूक्ष्म नियंत्रण** – आप फ़ॉन्ट, रंग, रोटेशन, अपारदर्शिता और प्लेसमेंट सेट कर सकते हैं।  
+- **सरल API** – कुछ ही कोड लाइनों से काम पूरा हो जाता है, जिससे विकास समय बचता है।  
+- **परफ़ॉर्मेंस‑ऑप्टिमाइज़्ड** – जब आप संसाधनों को तुरंत बंद करते हैं तो बड़े फ़ाइलों को कुशलता से संभालता है।
 
 ## पूर्वापेक्षाएँ
-- **Java Development Kit (JDK)** 8 या उससे ऊपर आपके मशीन पर स्थापित होना चाहिए.  
-- **IntelliJ IDEA** या **Eclipse** जैसे IDE का उपयोग जावा कोड को संपादित और चलाने के लिए करें.  
-- डिपेंडेंसी प्रबंधन के लिए Maven की बुनियादी जानकारी.
+- आपके मशीन पर JDK 8 या उससे ऊपर स्थापित होना चाहिए।  
+- IntelliJ IDEA या Eclipse जैसे IDE का उपयोग।  
+- बेसिक Java ज्ञान (क्लासेज़, ऑब्जेक्ट्स, और Maven)।
 
-### आवश्यक लाइब्रेरी और डिपेंडेंसीज़
-हम GroupDocs.Watermark for Java का उपयोग करेंगे, जिसे आप अपने Maven प्रोजेक्ट में जोड़ सकते हैं:
+### आवश्यक लाइब्रेरीज़ और डिपेंडेंसीज़
+हम Maven का उपयोग करके GroupDocs.Watermark लाइब्रेरी को जोड़ेंगे। अपने `pom.xml` में नीचे दिखाए अनुसार रिपॉज़िटरी और डिपेंडेंसी जोड़ें:
 
-```xml
-<!-- Placeholder for Maven dependency – keep unchanged -->
 ```xml
 <repositories>
    <repository>
@@ -115,143 +59,110 @@ GroupDocs.Watermark **50+ इनपुट और आउटपुट फ़ॉर
    </dependency>
 </dependencies>
 ```
-```
 
-यदि आप मैनुअल सेटअप पसंद करते हैं, तो आधिकारिक रिलीज़ पेज [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) से बाइनरीज़ डाउनलोड करें और उन्हें अपने प्रोजेक्ट की क्लासपाथ में जोड़ें।
+यदि आप मैन्युअल डाउनलोड पसंद करते हैं, तो आधिकारिक पेज पर जाएँ: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) और निर्देशों का पालन करें।
 
 ### लाइसेंस प्राप्ति
-एक मुफ्त ट्रायल के साथ शुरू करें, अस्थायी लाइसेंस प्राप्त करने के लिए [GroupDocs.Trial Licensing](https://purchase.groupdocs.com/temporary-license/) पर जाएँ। प्रोडक्शन उपयोग के लिए, पूर्ण लाइसेंस खरीदें और `license.json` फ़ाइल को उस स्थान पर रखें जहाँ आपका एप्लिकेशन इसे पढ़ सके:
+ट्रायल पोर्टल से अस्थायी लाइसेंस प्राप्त करके मुफ्त ट्रायल शुरू करें: [GroupDocs.Trial Licensing](https://purchase.groupdocs.com/temporary-license/). किसी भी वॉटरमार्क ऑपरेशन से पहले लाइसेंस फ़ाइल लोड करें:
 
-```java
-// Load the temporary or purchased license – keep unchanged
 ```java
 License license = new License();
 license.setLicense("path/to/license/file");
 ```
-```
 
-## कार्यान्वयन गाइड
-नीचे एक चरण‑दर‑चरण मार्गदर्शिका है जो दिखाती है कि कैसे एक टेक्स्ट वॉटरमार्क को प्रत्येक डायग्राम पृष्ठ में एम्बेड किया जाए।
+## इम्प्लीमेंटेशन गाइड
 
-### मैं एक डायग्राम पृष्ठ पर टेक्स्ट वॉटरमार्क कैसे जोड़ूँ?
-डायग्राम लोड करें, एक `TextWatermark` ऑब्जेक्ट बनाएं, इसे इच्छित पृष्ठों पर लागू करें, और अंत में आउटपुट सहेजें। यह एंड‑टू‑एंड फ्लो केवल चार संक्षिप्त API कॉल्स की आवश्यकता रखता है और सामान्य 10‑पृष्ठीय फ़ाइलों के लिए एक सेकंड से कम समय में चलता है, जबकि फ़ॉन्ट, रंग, अपारदर्शिता, और घूर्णन को अनुकूलित करने की अनुमति देता है।
+### चरण 1: अपना डायग्राम लोड करें
+सबसे पहले, `Watermarker` को अपने स्रोत डायग्राम फ़ाइल की ओर इंगित करें। `DiagramLoadOptions` ऑब्जेक्ट लाइब्रेरी को बताता है कि फ़ाइल को डायग्राम फ़ॉर्मैट के रूप में ट्रीट किया जाए।
 
-#### चरण 1: अपना डायग्राम लोड करें
-DiagramLoadOptions लाइब्रेरी को बताता है कि डायग्राम फ़ाइलों को कैसे पढ़ा जाए, जैसे पासवर्ड संभालना या विशिष्ट फ़ॉर्मैट विकल्प। सबसे पहले, `DiagramLoadOptions` के साथ एक `Watermarker` इंस्टैंसिएट करें। यह ऑब्जेक्ट मेमोरी में स्रोत डायग्राम को दर्शाता है।
-
-```java
-// Load diagram – keep unchanged
 ```java
 String inputFilePath = "YOUR_DOCUMENT_DIRECTORY/diagram.vsdx";
 Watermarker watermarker = new Watermarker(inputFilePath, new DiagramLoadOptions());
 ```
-```
 
-#### चरण 2: टेक्स्ट वॉटरमार्क को इनिशियलाइज़ करें
-`TextWatermark` दृश्यमान टेक्स्ट, फ़ॉन्ट, रंग, और घूर्णन को परिभाषित करता है। आप वॉटरमार्क को सूक्ष्म बनाने के लिए अपारदर्शिता भी सेट कर सकते हैं।
+### चरण 2: टेक्स्ट वॉटरमार्क इनिशियलाइज़ करें (कस्टम **watermark font settings** के साथ)
+`TextWatermark` इंस्टेंस बनाएँ, जिसमें टेक्स्ट, फ़ॉन्ट फ़ैमिली, साइज और आवश्यक अतिरिक्त स्टाइलिंग निर्दिष्ट करें।
 
-```java
-// Create TextWatermark – keep unchanged
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark", new Font("Arial", 36));
 textWatermark.setColor(Color.getBlue());
 textWatermark.setBackground(false);
 textWatermark.setRotationAngle(-45);
 ```
-```
 
-#### चरण 3: डायग्राम पृष्ठों पर वॉटरमार्क जोड़ें
-DiagramShapeWatermarkOptions निर्धारित करता है कि वॉटरमार्क को डायग्राम शैप्स पर कैसे लागू किया जाए। DiagramWatermarkPlacementType यह निर्दिष्ट करता है कि वॉटरमार्क अग्रभूमि में दिखेगा या पृष्ठभूमि में। वॉटरमार्क को सभी पृष्ठभूमि पृष्ठों (या कस्टम पेज रेंज) पर लागू करें। API प्रत्येक पृष्ठ को स्ट्रीम करता है, इसलिए बड़े फ़ाइलों के लिए भी मेमोरी उपयोग कम रहता है।
+> **प्रो टिप:** अपने ब्रांडिंग गाइडलाइन के अनुसार `setColor` और `setRotationAngle` को समायोजित करें। `setBackground(false)` कॉल सुनिश्चित करता है कि वॉटरमार्क डायग्राम शैप्स के ऊपर रहे, पीछे नहीं।
 
-```java
-// Apply watermark – keep unchanged
+### चरण 3: प्लेसमेंट चुनें – बैकग्राउंड बनाम फ़ोरग्राउंड
+GroupDocs आपको यह तय करने देता है कि वॉटरमार्क डायग्राम शैप्स के पीछे (बैकग्राउंड) दिखे या ऊपर (फ़ोरग्राउंड)। अधिकांश ब्रांडिंग परिदृश्यों में बैकग्राउंड प्लेसमेंट सबसे अच्छा काम करता है।
+
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
 options.setPlacement(DiagramWatermarkPlacementType.Background);
 watermarker.add(textWatermark, options);
 ```
-```
 
-#### चरण 4: सहेजें और बंद करें
-वॉटरमार्क किए गए डायग्राम को नई फ़ाइल में सहेजें और संसाधनों को रिलीज़ करें।
+### चरण 4: वॉटरमार्क्ड डायग्राम सहेजें
+अंत में, संशोधित फ़ाइल को डिस्क पर लिखें और संसाधनों को रिलीज़ करें।
 
-```java
-// Save and close – keep unchanged
 ```java
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/watermarked_diagram.vsdx";
 watermarker.save(outputFilePath);
 watermarker.close();
 ```
-```
 
-### सामान्य समस्याएँ और समाधान
-- **फ़ाइल पाथ समस्याएँ:** पूर्ण पाथ का उपयोग करें या सत्यापित करें कि कार्य निर्देशिका आपके डायग्राम फ़ाइलों के स्थान से मेल खाती है.  
-- **संस्करण असंगतता:** GroupDocs.Watermark रिलीज़ विशिष्ट JDK संस्करणों से जुड़ी होती हैं; सुनिश्चित करें कि आप संगत JDK 8‑17 बिल्ड का उपयोग कर रहे हैं.  
-- **प्रदर्शन बाधाएँ:** बैच प्रोसेसिंग के लिए, एक ही `Watermarker` इंस्टेंस को पुन: उपयोग करें और बैच समाप्त होने के बाद ही `close()` कॉल करें.
+## सामान्य समस्याएँ और समाधान
+| लक्षण | संभावित कारण | समाधान |
+|---------|--------------|-----|
+| **फ़ाइल नहीं मिली** त्रुटि | गलत `inputFilePath` या पढ़ने की अनुमति नहीं है | पथ की जाँच करें और सुनिश्चित करें कि Java प्रक्रिया फ़ाइल को पढ़ सके। |
+| **वॉटरमार्क दिखाई नहीं दे रहा** | `Foreground` में सेट किया गया प्लेसमेंट और पारदर्शी रंग | `Background` प्लेसमेंट उपयोग करें या कंट्रास्टिंग रंग चुनें। |
+| **Out‑of‑memory अपवाद** बड़े डायग्राम पर | `Watermarker` को बंद न करना या लूप में कई फ़ाइलें प्रोसेस करना | प्रत्येक फ़ाइल के बाद `watermarker.close()` कॉल करें और बैच में प्रोसेस करने पर विचार करें। |
+| **लाइसेंस पहचान नहीं रहा** | गलत लाइसेंस फ़ाइल पथ या समाप्त ट्रायल | पथ को दोबारा जाँचें और वर्तमान लाइसेंस फ़ाइल उपयोग करें। |
 
 ## व्यावहारिक अनुप्रयोग
-टेक्स्ट वॉटरमार्क कई वास्तविक‑दुनिया परिदृश्यों में उपयोगी होते हैं:
-1. **दस्तावेज़ सुरक्षा** – प्रतिस्पर्धियों को स्वामित्व वाले डायग्राम को पुनः उपयोग करने से रोकें.  
-2. **ब्रांड सुदृढ़ीकरण** – कंपनी का नाम या स्लोगन सीधे प्रत्येक पृष्ठ पर एम्बेड करें.  
-3. **सहयोग ट्रैकिंग** – उपयोगकर्ता के प्रारंभिक अक्षर या टाइमस्टैम्प जोड़ें जिससे पता चले कि किसने डायग्राम संपादित किया.
+1. **डॉक्यूमेंट सुरक्षा** – प्रतिस्पर्धियों को स्वामित्व वाले फ्लोचार्ट चोरी करने से रोकें।  
+2. **ब्रांडिंग** – सभी डायग्राम पेजों में कॉरपोरेट नाम या लोगो एम्बेड करें।  
+3. **सहयोग ट्रैकिंग** – डायग्राम को किसने संपादित किया, यह दर्शाने के लिए उपयोगकर्ता के इनिशियल्स को वॉटरमार्क के रूप में जोड़ें।  
 
-## प्रदर्शन विचार
-- **मेमोरी प्रबंधन:** लाइब्रेरी पृष्ठों को लेज़ीली प्रोसेस करती है; हमेशा `watermarker.close()` को कॉल करके नेटिव रिसोर्सेज़ को मुक्त करें.  
-- **वॉटरमार्क आकार:** बड़े फ़ॉन्ट आकार प्रोसेसिंग समय को रैखिक रूप से बढ़ाते हैं; 12‑pt फ़ॉन्ट पढ़ने योग्यता और गति के लिए अच्छा संतुलन है.  
-- **बैच परीक्षण:** हजारों फ़ाइलों पर स्केल करने से पहले एक प्रतिनिधि नमूने पर वॉटरमार्किंग रूटीन चलाएँ.
+## प्रदर्शन संबंधी विचार
+- सहेजने के बाद तुरंत `Watermarker` को बंद करें ताकि नेटिव रिसोर्सेज़ मुक्त हो सकें।  
+- वॉटरमार्क टेक्स्ट को संक्षिप्त रखें; बहुत बड़े फ़ॉन्ट्स प्रोसेसिंग समय बढ़ाते हैं।  
+- हजारों फ़ाइलों को बैच‑प्रोसेस करने से पहले प्रतिनिधि सैंपल पर परीक्षण करें।  
 
 ## निष्कर्ष
-अब आपके पास **डायग्राम में वॉटरमार्क कैसे जोड़ें** पृष्ठों पर टेक्स्ट के साथ जावा में GroupDocs.Watermark का उपयोग करके एक पूर्ण, प्रोडक्शन‑रेडी विधि है। यह क्षमता न केवल आपके दृश्य संपत्तियों को सुरक्षित करती है बल्कि सभी साझा किए गए डायग्राम में ब्रांड स्थिरता को भी सुदृढ़ करती है।
+अब आपके पास **GroupDocs.Watermark for Java** का उपयोग करके डायग्राम फ़ाइलों में **टेक्स्ट वॉटरमार्क जोड़ने** का एक पूर्ण, प्रोडक्शन‑रेडी तरीका है। यह तरीका आपके बौद्धिक संपदा की सुरक्षा करता है और आपको वॉटरमार्क फ़ॉन्ट सेटिंग्स और प्लेसमेंट पर पूर्ण नियंत्रण देता है।
 
 ### अगले कदम
-- अतिरिक्त दृश्य ब्रांडिंग के लिए इमेज वॉटरमार्क का अन्वेषण करें.  
-- मल्टी‑लेयर सुरक्षा के लिए टेक्स्ट और इमेज वॉटरमार्क को मिलाएँ.  
-- डायग्राम सुरक्षा को स्वचालित करने के लिए वॉटरमार्किंग फ्लो को अपने CI/CD पाइपलाइन में एकीकृत करें.
+- विज़ुअल ब्रांड टच के लिए इमेज वॉटरमार्क का अन्वेषण करें।  
+- लेयर्ड सुरक्षा के लिए कई वॉटरमार्क (टेक्स्ट + इमेज) को मिलाएँ।  
+- समान API कॉल्स के साथ एक साधारण `for` लूप से बैच प्रोसेसिंग को ऑटोमेट करें।  
 
 ## अक्सर पूछे जाने वाले प्रश्न
-1. **क्या मैं GroupDocs.Watermark को अन्य फ़ाइल फ़ॉर्मैट्स के लिए उपयोग कर सकता हूँ?**  
-   हाँ—PDF, DOCX, PPTX, और SVG सहित 50 से अधिक फ़ॉर्मैट समर्थित हैं.  
+**प्रश्न: क्या GroupDocs.Watermark नवीनतम Java संस्करणों के साथ काम करता है?**  
+**उत्तर:** हाँ, यह Java 8 से लेकर Java 21 तक पूरी तरह संगत है।  
 
-2. **मैं कितने वॉटरमार्क जोड़ सकता हूँ, इसमें कोई सीमा है?**  
-   कोई कठोर सीमा नहीं है, लेकिन प्रति पृष्ठ 10 से अधिक जोड़ने से रेंडरिंग गति प्रभावित हो सकती है.  
+**प्रश्न: क्या मैं टेक्स्ट वॉटरमार्क की अपारदर्शिता कस्टमाइज़ कर सकता हूँ?**  
+**उत्तर:** बिल्कुल। `textWatermark.setOpacity(0.5)` का उपयोग करके 50 % अपारदर्शिता सेट करें।  
 
-3. **डायग्राम से वॉटरमार्क कैसे हटाएँ?**  
-   मौजूदा वॉटरमार्क को खोजने और हटाने के लिए `Watermarker.removeWatermarks()` API का उपयोग करें.  
+**प्रश्न: क्या केवल चयनित डायग्राम शैप्स पर वॉटरमार्क जोड़ने का तरीका है?**  
+**उत्तर:** आप `DiagramShapeWatermarkOptions` के माध्यम से शैप IDs या नाम प्रदान करके शैप्स को फ़िल्टर कर सकते हैं।  
 
-4. **क्या मैं केवल विशिष्ट पृष्ठों को लक्षित कर सकता हूँ?**  
-   बिल्कुल—`WatermarkOptions` को पेज रेंज या कस्टम प्रेडिकेट के साथ कॉन्फ़िगर करें.  
+**प्रश्न: पासवर्ड‑सुरक्षित डायग्राम फ़ाइलों को कैसे हैंडल करें?**  
+**उत्तर:** `DiagramLoadOptions` में पासवर्ड शामिल करके फ़ाइल लोड करें, फिर सामान्य रूप से वॉटरमार्क लागू करें।  
 
-5. **यदि वॉटरमार्क दिखाई नहीं दे रहा है तो क्या करें?**  
-   अपारदर्शिता, रंग कंट्रास्ट, और घूर्णन सेटिंग्स की जाँच करें; समस्या निवारण के लिए API दस्तावेज़ देखें.  
-
-### अतिरिक्त प्रश्न‑उत्तर
-**प्र: क्या लाइब्रेरी पासवर्ड‑सुरक्षित डायग्राम का समर्थन करती है?**  
-उ: हाँ—फ़ाइल लोड करते समय पासवर्ड को `DiagramLoadOptions` में पास करें.
-
-**प्र: क्या मैं इसे हेडलेस सर्वर पर चला सकता हूँ?**  
-उ: API पूरी तरह से सर्वर‑साइड है और किसी GUI घटक की आवश्यकता नहीं है.
-
-**प्र: कौन से जावा संस्करण आधिकारिक रूप से समर्थित हैं?**  
-उ: Java 8 से लेकर Java 17 तक परीक्षणित और दस्तावेज़ित हैं.
-
-**प्र: GroupDocs.Watermark बड़े फ़ाइलों को कैसे संभालता है?**  
-उ: यह पृष्ठों को स्ट्रीम करता है, जिससे 1 GB डायग्राम के लिए भी अधिकतम मेमोरी उपयोग 200 MB से कम रहता है.
-
-**प्र: सहेजने से पहले वॉटरमार्क का पूर्वावलोकन कैसे देखें?**  
-उ: किसी भी पृष्ठ का प्रीव्यू बिटमैप बनाने के लिए `Watermarker.getResultImage()` का उपयोग करें.
+**प्रश्न: व्यावसायिक उपयोग के लिए कोई लाइसेंस प्रतिबंध हैं?**  
+**उत्तर:** प्रोडक्शन डिप्लॉयमेंट के लिए एक व्यावसायिक लाइसेंस आवश्यक है; ट्रायल लाइसेंस केवल मूल्यांकन के लिए हैं।  
 
 ## संसाधन
-- [दस्तावेज़ीकरण](https://docs.groupdocs.com/watermark/java/)
-- [API रेफ़रेंस](https://reference.groupdocs.com/watermark/java)
-- [नवीनतम संस्करण डाउनलोड करें](https://releases.groupdocs.com/watermark/java/)
-- [GitHub रिपॉज़िटरी](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [मुफ़्त सपोर्ट फ़ोरम](https://forum.groupdocs.com/c/watermark/10)
+- [डॉक्यूमेंटेशन](https://docs.groupdocs.com/watermark/java/)  
+- [API रेफ़रेंस](https://reference.groupdocs.com/watermark/java)  
+- [नवीनतम संस्करण डाउनलोड करें](https://releases.groupdocs.com/watermark/java/)  
+- [GitHub रिपॉज़िटरी](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- [फ्री सपोर्ट फ़ोरम](https://forum.groupdocs.com/c/watermark/10)
 
-**अंतिम अपडेट:** 2026-08-19  
-**परीक्षण किया गया:** GroupDocs.Watermark 23.12 for Java  
-**लेखक:** GroupDocs
+---
 
-## संबंधित ट्यूटोरियल
-- [GroupDocs.Watermark for Java का उपयोग करके डायग्राम में वॉटरमार्क जोड़ने की गाइड](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [GroupDocs.Watermark के साथ जावा में टेक्स्ट वॉटरमार्क कैसे जोड़ें: एक पूर्ण गाइड](/watermark/java/text-watermarks/add-text-watermark-java-groupdocs/)
-- [GroupDocs.Watermark for Java का उपयोग करके PDF में टेक्स्ट वॉटरमार्क कैसे जोड़ें: चरण‑दर‑चरण गाइड](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
+**अंतिम अपडेट:** 2025-12-19  
+**टेस्ट किया गया:** GroupDocs.Watermark 24.11 for Java  
+**लेखक:** GroupDocs  
+
+---

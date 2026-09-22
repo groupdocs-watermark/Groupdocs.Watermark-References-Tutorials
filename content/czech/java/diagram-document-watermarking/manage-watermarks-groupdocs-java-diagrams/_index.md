@@ -1,96 +1,47 @@
 ---
-date: '2026-08-19'
-description: Zjistěte, jak chránit diagramy duševního vlastnictví pomocí GroupDocs.Watermark
-  pro Java. Praktický návod krok za krokem, jak načíst, detekovat obrázkový vodoznak,
-  vyhledat a odstranit vodoznaky ze souborů .vsdx.
+date: '2025-12-19'
+description: Naučte se, jak pomocí GroupDocs Watermark Maven spravovat vodoznaky v
+  diagramových souborech, jako je .vsdx, s využitím Javy, čímž zvýšíte integritu dokumentů
+  a ochráníte duševní vlastnictví.
 keywords:
-- intellectual property diagrams
-- detect image watermark
 - GroupDocs.Watermark Java
-- diagram watermark management
-- Java watermark API
-lastmod: '2026-08-19'
-og_description: Objevte, jak chránit diagramy duševního vlastnictví pomocí GroupDocs.Watermark
-  pro Java. Naučte se načítat soubory .vsdx, detekovat obrázkový vodoznak a efektivně
-  odstraňovat nechtěné vodoznaky.
-og_image_alt: Java code snippet showing watermark detection in diagram files
-og_title: Chraňte diagramy duševního vlastnictví pomocí GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  headline: Protect intellectual property diagrams with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  name: Protect intellectual property diagrams with GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-    text: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-    text: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-  type: HowTo
-- questions:
-  - answer: Yes, combine criteria with `OrSearchCriteria` (e.g., `new OrSearchCriteria(textCriteria,
-      imageCriteria)`) to retrieve both types at once.
-    question: Can I search for both text and image watermarks in a single call?
-  - answer: No. The library isolates watermark objects, so shapes, connectors, and
-      formatting remain unchanged after `clear()`.
-    question: Will removing watermarks corrupt the diagram layout?
-  - answer: GroupDocs.Watermark handles `.vsdx`, `.vdx`, `.vsx`, and several older
-      Visio formats, covering over **30** diagram types.
-    question: Which diagram formats are supported?
-  - answer: Use Java’s `ExecutorService` to run watermark detection/removal in parallel
-      batches, and reuse a single `Watermarker` configuration object to reduce overhead.
-    question: How do I process thousands of diagrams efficiently?
-  - answer: Absolutely. Add the Java snippets to your build scripts (Maven/Gradle)
-      and run them as a pre‑deployment verification step to ensure no prohibited watermarks
-      are present.
-    question: Is it possible to integrate this into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark diagrams
-- GroupDocs.Watermark
-- Java document processing
-- intellectual property protection
-title: Chraňte diagramy duševního vlastnictví pomocí GroupDocs.Watermark
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark maven – Správa vodoznaků diagramů v Javě
 type: docs
 url: /cs/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
 weight: 1
 ---
 
-# Chraňte diagramy duševního vlastnictví pomocí GroupDocs.Watermark
+# groupdocs watermark maven – Správa vodoznaků diagramů v Javě
 
-Ochrana diagramů duševního vlastnictví je kritickým krokem pro každou organizaci, která sdílí designové artefakty, vývojové diagramy nebo architektonické výkresy. S GroupDocs.Watermark pro Java můžete programově načíst soubory diagramů (např. `.vsdx`), detekovat instance vodoznaků v obrazech, vyhledávat textové vodoznaky a bezpečně je odstranit, aniž byste poškozovali původní výkres. Tento tutoriál vás provede celým procesem – od nastavení prostředí po dávkové zpracování velkých knihoven diagramů – abyste mohli vložit robustní ochranu IP přímo do svých Java aplikací.
+Správa vodoznaků v dokumentech je nezbytná pro ochranu duševního vlastnictví a zachování integrity dokumentu. **V tomto tutoriálu vám ukážeme, jak použít groupdocs watermark maven k efektivnímu načtení, vyhledání a odstranění vodoznaků ze souborů diagramů, jako je `.vsdx`**. Ať už vytváříte podnikovou software nebo automatizujete pracovní postupy s dokumenty, zvládnutí těchto technik vám poskytne plnou kontrolu nad správou vodoznaků diagramů.
 
 ## Rychlé odpovědi
-- **Která knihovna zpracovává vodoznaky diagramů?** GroupDocs.Watermark for Java.  
-- **Mohu detekovat vodoznak v obraze i text?** Ano, API poskytuje `ImageDctHashSearchCriteria` pro detekci obrazu a `TextSearchCriteria` pro text.  
-- **Potřebuji komerční licenci pro spuštění kódu?** Zkušební licence funguje pro vývoj; pro produkci je vyžadována placená licence.  
-- **Je podporováno dávkové zpracování?** Rozhodně – projděte složku a aplikujte stejnou logiku vodoznaku na každý soubor.  
-- **Zůstane původní rozvržení diagramu po odstranění nedotčeno?** Knihovna vymaže pouze objekty vodoznaku a zachová všechny tvary, spojnice a formátování.
+- **Jaká knihovna je potřeba?** GroupDocs.Watermark for Java (k dispozici přes Maven).  
+- **Jaké formáty diagramů jsou podporovány?** `.vsdx`, `.vdx` a další formáty Visio.  
+- **Mohu vyhledávat jak textové, tak obrazové vodoznaky?** Ano – kombinujte kritéria vyhledávání pomocí `or()`.  
+- **Je pro produkci vyžadována licence?** Je vyžadována platná licence GroupDocs.Watermark.  
+- **Jak to integrovat do Maven?** Přidejte úložiště a závislost uvedenou níže.
 
-## Co jsou diagramy duševního vlastnictví?
-Diagramy duševního vlastnictví jsou vizuální reprezentace – například vývojové diagramy, UML modely, síťové schémata nebo architektonické výkresy – které obsahují proprietární informace vlastněné jednotlivcem nebo organizací. Tyto diagramy často předávají důvěrné procesy, návrhy nebo strategie, což z nich činí cenná aktiva vyžadující ochranu proti neoprávněnému kopírování, distribuci nebo úpravám. Považováním těchto diagramů za duševní vlastnictví můžete aplikovat právní a technická opatření, včetně vodoznakování, aby byl zachován kontrola nad jejich používáním a šířením.
+## Co je groupdocs watermark maven?
+`groupdocs watermark maven` označuje integraci založenou na Maven pro knihovnu GroupDocs.Watermark pro Java. Deklarací knihovny ve vašem `pom.xml` Maven automaticky vyřeší všechny potřebné binární soubory, což vám umožní soustředit se na kód, který načítá diagramy, vyhledává vodoznaky a odstraňuje je programově.
 
-## Proč používat GroupDocs.Watermark pro Java?
-GroupDocs.Watermark podporuje **více než 50 vstupních a výstupních formátů** (včetně `.vsdx`, `.vdx`, `.vsx`) a může zpracovávat diagramy o stovkách stránek, aniž by načítal celý soubor do paměti, čímž snižuje spotřebu RAM až o **70 %** ve srovnání s naivními přístupy pomocí file‑streamu. API také nabízí vestavěné porovnání obrazových hashů bez OCR, což umožňuje spolehlivé operace `detect image watermark` za méně než **200 ms** na diagram na typickém 2,5 GHz serveru.
+## Proč použít GroupDocs.Watermark pro správu vodoznaků diagramů?
+- **Plnohodnotné API** – podporuje textové, obrazové a tvarové vodoznaky napříč mnoha typy diagramů.  
+- **Přesné odstranění** – eliminuje vodoznaky bez poškození původního rozvržení diagramu.  
+- **Škálovatelné** – vhodné pro dávkové zpracování velkých kolekcí diagramů.  
+- **Maven‑přátelské** – jednoduchá správa závislostí, udržuje projekt čistý.
 
 ## Předpoklady
-1. **Java Development Kit (JDK) 8+** – kód používá standardní Java 8 API.  
-2. **IDE** – IntelliJ IDEA, Eclipse nebo jakýkoli editor, který preferujete.  
-3. **GroupDocs.Watermark for Java** – buď přes Maven, nebo ruční stažení JAR.  
+1. **Java Development Kit (JDK) 8+** – zajišťuje kompatibilitu s knihovnou.  
+2. **IDE** – IntelliJ IDEA, Eclipse nebo jakýkoli editor kompatibilní s Javou.  
+3. **GroupDocs.Watermark for Java** – přidáno přes Maven (doporučeno) nebo přímé stažení JAR.  
 
 ### Požadované knihovny a závislosti
-Knihovnu můžete přidat přes Maven nebo stáhnout JAR soubory přímo.
-
 #### Nastavení Maven
-Přidejte repozitář a závislosti do souboru `pom.xml`:
+Add the following configuration to your `pom.xml` file:
 
 ```xml
 <repositories>
@@ -111,87 +62,15 @@ Přidejte repozitář a závislosti do souboru `pom.xml`:
 ```
 
 #### Přímé stažení
-Pokud upřednostňujete ruční instalaci, stáhněte nejnovější verzi z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternativně stáhněte nejnovější verzi z [vydání GroupDocs.Watermark pro Java](https://releases.groupdocs.com/watermark/java/).
 
 ### Získání licence
-- **Bezplatná zkušební verze:** Ideální pro vyhodnocení možností API.  
-- **Dočasná licence:** Použijte pro krátkodobé testování bez omezení funkcí.  
-- **Zakoupení:** Vyžadováno pro produkční nasazení a odemčení prémiových formátů.
+- **Bezplatná zkušební verze:** Otestujte knihovnu s trial licencí.  
+- **Dočasná licence:** Požádejte o krátkodobý klíč pro hodnocení.  
+- **Koupě:** Získejte produkční licenci pro neomezené používání.
 
-## Jak inicializovat Watermarker?
-Vytvoření instance `Watermarker` je prvním krokem v jakémkoli workflow vodoznaku. Třída `Watermarker` načte soubor diagramu do paměti a poskytuje metody pro vyhledávání, přidávání a odstraňování vodoznaků. Předáním cesty k diagramu a volitelných `DiagramLoadOptions` získáte objekt, který slouží jako centrální bod pro všechny následné operace, což zajišťuje konzistentní zpracování dokumentu během celého procesu.
-
-```java
-Watermarker watermarker = new Watermarker(inputFilePath, loadOptions);
-```
-
-## Jak načíst dokument diagramu?
-Načtení diagramu s `DiagramLoadOptions` vám dává jemnozrnné řízení toho, jak je soubor parsován. `DiagramLoadOptions` umožňuje specifikovat, zda načíst pouze viditelné stránky, zda zachovat skryté vrstvy a jak zacházet s vloženými fonty. Úprava těchto možností může dramaticky zlepšit výkon u velkých diagramů a zajistit, že budou zpracovány pouze nezbytné části souboru, čímž se sníží využití paměti a urychlí detekce vodoznaků.
-
-```java
-DiagramLoadOptions loadOptions = new DiagramLoadOptions();
-loadOptions.setLoadHiddenLayers(false);
-Watermarker watermarker = new Watermarker("sample.vsdx", loadOptions);
-```
-
-## Jak detekovat vodoznak v obraze v diagramu?
-Detekce obrazových vodoznaků využívá třídu `ImageDctHashSearchCriteria`, která vypočítá percepční hash referenčního obrázku a porovná jej se všemi vloženými obrázky v diagramu. Tato metoda je rychlá a tolerantní k menším vizuálním odchylkám, což vám umožní najít loga nebo jiné grafické vodoznaky i v případě, že byly změněny velikostí nebo mírně upraveny. Nastavením prahu podobnosti můžete vyvážit citlivost detekce proti falešně pozitivním shodám.
-
-```java
-ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria("logo.png");
-PossibleWatermarkCollection watermarks = watermarker.search(criteria);
-```
-
-## Jak vyhledat textové vodoznaky?
-Vyhledávání textových vodoznaků používá třídu `TextSearchCriteria`. Tato třída prohledává všechny textové vrstvy v diagramu, včetně těch uvnitř tvarů, spojnic a seskupení, a vrací shody, které obsahují zadaný řetězec nebo vzor. Vyhledávání je ve výchozím nastavení necitlivé na velikost písmen a může být upřesněno regulárními výrazy, což vám umožní najít vodoznaky, které mohou být otočené, částečně skryté nebo vložené do složitých struktur diagramu.
-
-```java
-TextSearchCriteria textCriteria = new TextSearchCriteria("Confidential");
-PossibleWatermarkCollection textWatermarks = watermarker.search(textCriteria);
-```
-
-## Jak odstranit vodoznaky z diagramu?
-Odstraňování vodoznaků se provádí voláním metody `clear()` na každém objektu `Watermark` vráceném vyhledávací operací. Metoda `clear()` smaže pouze vizuální prvky vodoznaku, zatímco podkladové objekty diagramu – jako tvary, spojnice a formátování – zůstávají nedotčeny. Po vyčištění dokument uložíte pomocí metody `save`, čímž získáte čistou verzi diagramu, která zachovává původní rozvržení a funkčnost.
-
-```java
-for (Watermark wm : watermarks) {
-    wm.clear();
-}
-watermarker.save("cleaned.vsdx");
-```
-
-## Praktické aplikace
-- **Integrace podnikového softwaru:** Vložte validaci vodoznaku do systémů pro správu dokumentů, aby automaticky vynucovaly IP politiky.  
-- **Systémy pro správu obsahu (CMS):** Prohledejte diagramy nahrané uživateli na neautorizované loga před publikací.  
-- **Zpracování právních dokumentů:** Detekujte a odstraňte důvěrné vodoznaky při přípravě balíčků důkazů.
-
-## Časté úskalí a řešení problémů
-- **Výjimka chybějící licence:** Ujistěte se, že soubor zkušební nebo placené licence je správně odkazován pomocí `License.setLicense("license_path")`.  
-- **Zpomalení u velkých diagramů:** Povolením `loadOptions.setLoadHiddenLayers(false)` a zvážením zpracování diagramů v paralelních streamech.  
-- **Falešně pozitivní shody obrázků:** Upravte toleranci DCT hash pomocí `criteria.setSimilarityThreshold(0.85)`, aby se snížil počet nechtěných shod.
-
-## Často kladené otázky
-
-**Q: Mohu vyhledat jak textové, tak obrazové vodoznaky v jednom volání?**  
-A: Ano, kombinujte kritéria pomocí `OrSearchCriteria` (např. `new OrSearchCriteria(textCriteria, imageCriteria)`) a získáte oba typy najednou.
-
-**Q: Způsobí odstranění vodoznaků poškození rozvržení diagramu?**  
-A: Ne. Knihovna izoluje objekty vodoznaku, takže tvary, spojnice a formátování zůstávají po `clear()` beze změny.
-
-**Q: Jaké formáty diagramů jsou podporovány?**  
-A: GroupDocs.Watermark zpracovává `.vsdx`, `.vdx`, `.vsx` a několik starších Visio formátů, což pokrývá více než **30** typů diagramů.
-
-**Q: Jak efektivně zpracovat tisíce diagramů?**  
-A: Použijte `ExecutorService` v Javě k paralelnímu spouštění detekce/odstraňování vodoznaků ve skupinách a znovu použijte jediný konfigurační objekt `Watermarker` ke snížení režie.
-
-**Q: Je možné integrovat toto do CI/CD pipeline?**  
-A: Rozhodně. Přidejte Java úryvky do svých build skriptů (Maven/Gradle) a spusťte je jako krok před nasazením, abyste zajistili, že žádné zakázané vodoznaky nejsou přítomny.
-
----
-
-**Poslední aktualizace:** 2026-08-19  
-**Testováno s:** GroupDocs.Watermark 23.12 pro Java  
-**Autor:** GroupDocs
+## Použití groupdocs watermark maven k načtení diagramového dokumentu
+Načtení diagramového dokumentu je prvním krokem před jakoukoliv operací s vodoznakem. Níže je minimální příklad, který vytváří instanci `Watermarker` s `DiagramLoadOptions`.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -207,6 +86,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
+
+- **Parametry:**  
+  - `inputFilePath` – cesta k vašemu souboru `.vsdx`.  
+  - `loadOptions` – umožňuje kontrolovat, jak je diagram parsován (např. ochrana heslem).
+
+## Vyhledávání vodoznaků pomocí groupdocs watermark maven
+### Textové vodoznaky
+Pro nalezení textových vodoznaků definujte `TextSearchCriteria` a dotazujte první stránku diagramu.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -229,6 +116,13 @@ public class SearchTextWatermarks {
 }
 ```
 
+- **Klíčové metody:**  
+  - `TextSearchCriteria` – určuje přesný text, který hledáte.  
+  - `PossibleWatermarkCollection` – ukládá nalezené shody.
+
+### Obrazové vodoznaky
+Pokud váš diagram obsahuje logo nebo obrázkové vodoznaky, použijte `ImageDctHashSearchCriteria` pro porovnání s referenčním obrázkem.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -250,6 +144,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
+
+- **Klíčové metody:**  
+  - `ImageDctHashSearchCriteria` – vytváří percepční hash referenčního obrázku pro robustní porovnání.
+
+## Odstraňování vodoznaků
+Jakmile identifikujete nechtěné vodoznaky, můžete je vymazat a uložit čistou kopii diagramu.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -278,8 +178,40 @@ public class RemoveWatermarks {
 }
 ```
 
-## Související tutoriály
+- **Klíčová metoda:** `clear()` odstraňuje každý vodoznak nalezený kombinovanými kritérii a ponechává diagram neporušený.
 
-- [Průvodce přidáváním vodoznaků do diagramů pomocí GroupDocs.Watermark pro Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [Přidání textových vodoznaků do diagramů pomocí GroupDocs.Watermark pro Java: Kompletní průvodce](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Úprava záhlaví a zápatí diagramů v Java pomocí GroupDocs.Watermark: Kompletní průvodce](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
+## Praktické aplikace
+1. **Integrace podnikového softwaru** – Vložte správu vodoznaků do obchodních aplikací pro ochranu proprietárních diagramů.  
+2. **Systémy pro správu obsahu (CMS)** – Automatizujte detekci a odstraňování neautorizovaných log a před publikací.  
+3. **Pracovní postupy právních dokumentů** – Přidávejte nebo odstraňujte vodoznaky v různých fázích zpracování smluv.  
+
+## Časté problémy a řešení
+- **Chyby licence:** Ujistěte se, že soubor licence je správně odkazován před vytvořením `Watermarker`.  
+- **Velké soubory:** Použijte streaming API nebo zvýšte velikost haldy JVM (`-Xmx2g`) pro diagramy > 100 MB.  
+- **Chybějící vodoznaky:** Ověřte, že kritéria vyhledávání (rozlišování velikosti písmen, práh podobnosti obrázku) odpovídají skutečnému obsahu vodoznaku.
+
+## Často kladené otázky
+
+**Q: Mohu vyhledávat současně text i obrázky?**  
+A: Ano. Kombinujte kritéria pomocí `or()` jak je ukázáno v příkladu odstraňování.
+
+**Q: Je bezpečné odstraňovat vodoznaky bez změny rozvržení diagramu?**  
+A: Rozhodně. API přesně cílí na objekty vodoznaku a zachovává všechny ostatní prvky diagramu.
+
+**Q: Jaké formáty diagramů GroupDocs.Watermark podporuje?**  
+A: Podporuje formáty Visio jako `.vsdx`, `.vdx` a také další vektorové typy diagramů.
+
+**Q: Jak mohu efektivně zpracovat stovky diagramů?**  
+A: Implementujte dávkový cyklus, opakovaně používejte jednu instanci `Watermarker`, pokud je to možné, a zvažte paralelní zpracování pomocí `ExecutorService` v Javě.
+
+**Q: Mohu integrovat detekci vodoznaků do CI/CD pipeline?**  
+A: Ano. Zahrňte Java úryvky do svých skriptů pro sestavení (např. Maven pluginy nebo Gradle úlohy) pro validaci diagramů před nasazením.
+
+## Závěr
+Využitím **groupdocs watermark maven** získáte výkonný, Maven‑spravovaný způsob, jak načítat, vyhledávat a odstraňovat vodoznaky z diagramových souborů pomocí Javy. Tato schopnost posiluje zabezpečení dokumentů, zjednodušuje pracovní postupy s obsahem a snadno škáluje napříč velkými kolekcemi dokumentů.
+
+---
+
+**Poslední aktualizace:** 2025-12-19  
+**Testováno s:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs

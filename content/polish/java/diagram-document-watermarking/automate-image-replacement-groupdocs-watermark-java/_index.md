@@ -1,78 +1,43 @@
 ---
-date: '2026-08-19'
-description: Dowiedz się, jak zastąpić obrazy diagramów w Javie przy użyciu GroupDocs.Watermark
-  oraz jak efektywnie dodać znak wodny do diagramu. Krok po kroku kod i najlepsze
-  praktyki.
+date: '2025-12-17'
+description: Dowiedz się, jak zastępować obrazy diagramów w Javie przy użyciu GroupDocs.Watermark
+  for Java oraz efektywnie odczytywać bajty obrazu w Javie. Automatyzuj aktualizacje
+  dzięki przejrzystemu kodowi krok po kroku.
 keywords:
-- replace diagram images java
-- add watermark to diagram
-- groupdocs watermark java
-lastmod: '2026-08-19'
-og_description: Dowiedz się, jak zastąpić obrazy diagramów w Javie przy użyciu GroupDocs.Watermark
-  oraz jak efektywnie dodać znak wodny do diagramu. Krok po kroku kod i najlepsze
-  praktyki.
-og_image_alt: Guide showing Java code to replace diagram images with GroupDocs.Watermark
-og_title: Zastąp obrazy diagramów w Javie przy użyciu GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to replace diagram images in Java using GroupDocs.Watermark,
-    and also add watermark to diagram efficiently. Step‑by‑step code and best practices.
-  headline: Replace diagram images in Java using GroupDocs.Watermark
-  type: TechArticle
-- questions:
-  - answer: Yes. Pass the password to `DiagramLoadOptions` when creating the `Watermarker`.
-    question: Can I replace images in password‑protected diagrams?
-  - answer: Absolutely – GroupDocs.Watermark supports the Draw.io XML format and treats
-      each node as a shape.
-    question: Does the library work with .drawio (XML) files?
-  - answer: The library is thread‑safe for read‑only operations; for write operations,
-      limit concurrency to the number of CPU cores to avoid file‑handle contention.
-    question: How many diagrams can I process in parallel?
-  - answer: Images up to 100 MB are supported; larger files should be resized beforehand
-      to keep memory usage low.
-    question: Is there a limit on image size?
-  - answer: You can start with a free 30‑day trial; production use requires a paid
-      license, which can be obtained from the GroupDocs store.
-    question: What licensing options are available?
-  type: FAQPage
-tags:
-- diagram image replacement
-- groupdocs watermark
-- java document processing
-title: Zastąp obrazy diagramów w Javie przy użyciu GroupDocs.Watermark
+- GroupDocs Watermark Java
+- automate image replacement
+- Java diagram watermarking
+title: Zastąp obrazy diagramów w Javie przy pomocy GroupDocs.Watermark – pełny przewodnik
 type: docs
 url: /pl/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Zastąp obrazy diagramów w Javie przy użyciu GroupDocs.Watermark
+# Zamień obrazy diagramów Java na GroupDocs.Watermark
 
-Aktualizowanie obrazów w plikach diagramów ręcznie jest czasochłonne i podatne na błędy. W tym samouczku dowiesz się, jak **zastąpić obrazy diagramów w Javie** przy użyciu kilku linii kodu, a także zobaczysz, jak **dodać znak wodny do diagramu** w razie potrzeby. Po zakończeniu będziesz mieć wielokrotnego użytku fragment kodu, który możesz wstawić do dowolnego projektu Java pracującego z Visio, Draw.io lub innymi obsługiwanymi formatami diagramów.
+Aktualizowanie grafiki w diagramach w stylu Visio może być żmudnym, niezbędnym, szczególnie gdy trzeba **zamień obrazy diagramów java** w wielu plikach. W tym poradniku dowiesz się, jak zautomatyzować dziesięć procesów przy użyciu GroupDocs.Watermark dla Java, odczytaj bajty obrazu Java oraz wartość zmiany programu. Po usunięciu rozwiązania, które może zostać ponownie zachowane, redukujące błędy ludzkie i wynikające z konieczności posiadania dokumentacji.
 
 ## Szybkie odpowiedzi
-- **Jaką bibliotekę obsługuje zastępowanie obrazów diagramów?** GroupDocs.Watermark for Java.
-- **Ile linii kodu jest potrzebnych do podstawowego zastąpienia?** Tylko trzy linie po utworzeniu Watermarker.
-- **Czy mogę dodać znak wodny jednocześnie?** Tak – użyj tej samej instancji Watermarker z obiektem znaku wodnego.
-- **Jaka wersja Javy jest wymagana?** JDK 8 lub wyższa.
-- **Czy potrzebna jest licencja do użytku produkcyjnego?** Wymagana jest ważna licencja GroupDocs.Watermark; dostępna jest darmowa wersja próbna.
+- **Jaka biblioteka obsługuje zastępowanie obrazów diagramów?** GroupDocs.Watermark dla Java
+- **Która metoda odczytuje bajty obrazu?** `FileInputStream` w połączeniu z `read(byte[])` (odczyt bajtów obrazu Java)
+- **Czy potrzebuję licencji?** Licencja próbna działa w celach testowych; do produkcji wymagana jest pełna licencja.
+- **Obsługiwane formaty diagramów?** VSDX, VDX, VDXM i inne pliki Microsoft Visio.
+- **Jak długo trwa wdrożenie?** Około 15–20 minut w przypadku podstawowego przepływu pracy polegającego na wymianie diagramu–obrazów–java.
 
-## Co to jest zastępowanie obrazów diagramów w Javie?
-Zastępowanie obrazów diagramów w Javie oznacza programowe znajdowanie kształtów zawierających grafikę bitmapową w pliku diagramu (takim jak .vsdx, .drawio lub .svg) i wymienianie tych osadzonych obrazów na nowe przy użyciu API GroupDocs.Watermark. Automatyzuje to aktualizacje, które w przeciwnym razie wymagałyby ręcznej edycji w edytorze diagramów.
+## Co to jest zamiana obrazów diagramów Java?
+Zastępowanie obrazów diagramów Java odnosi się do programowego wyszukiwania kształtów kluczowych obrazów w diagramie Visio i zamieniania kodu wbudowanego na nowy plik przy użyciu Java. Technika ta jest idealna przy masowych aktualizacjach brandingu, odświeżaniu katalogów produktów lub w każdej sytuacji, gdy zasoby są wykorzystywane w czasie.
 
-## Dlaczego używać GroupDocs.Watermark do zastępowania obrazów diagramów?
-GroupDocs.Watermark obsługuje **ponad 50 formatów wejściowych i wyjściowych** – w tym Visio, Draw.io i SVG – i może przetwarzać **pliki do 500 MB** bez ładowania całego dokumentu do pamięci, co zapewnia **30 % redukcji zużycia CPU** w porównaniu z naiwnymi podejściami opartymi na strumieniach plików.
+## Dlaczego warto używać GroupDocs.Watermark do tego zadania?
+GroupDocs.Watermark zapewnia wysokopoziomowe API, które abstrahuje niskopoziomowy pliki XML Visio, umieszczone na logice biznesowej, a nie na szczegółowych formatu pliku. Obsługuje ładowanie, nawigację po zawartości i zapisywanie, jednocześnie różnicując integralność diagramu.
 
-## Wymagania wstępne
-- JDK 8 lub nowszy zainstalowany.
-- IDE (IntelliJ IDEA, Eclipse lub VS Code) do programowania w Javie.
-- Maven (lub możliwość ręcznego dodania plików JAR).
-- Ważna licencja GroupDocs.Watermark (próbna lub stała). Licencję można uzyskać na stronie [GroupDocs](https://purchase.groupdocs.com/temporary-license/).
+## Warunki wstępne
+- JDK8lub dodatkowy funkcjonalny.
+- Maven (lub ręczne zarządzanie JAR-ami) do obsługi zależności.
+- Podstawowa przyjemność Java (klasy, strumienie, obsługa wyjątków).
 
 ### Wymagane biblioteki, wersje i zależności
-Dodaj repozytorium GroupDocs.Watermark i zależność do swojego `pom.xml`:
+Aby używać GroupDocs.Watermark for Java, dodaj repozytorium i zależność w pliku `pom.xml`:
 
-```xml
 ```xml
 <repositories>
    <repository>
@@ -90,16 +55,27 @@ Dodaj repozytorium GroupDocs.Watermark i zależność do swojego `pom.xml`:
    </dependency>
 </dependencies>
 ```
-```
 
-Jeśli wolisz ręczne zarządzanie plikami JAR, pobierz najnowsze wydanie ze strony oficjalnej: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Możesz także pobrać najnowszy JAR ze strony oficjalnej: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-## Jak zastąpić obrazy diagramów w Javie krok po kroku
+### Wymagania dotyczące konfiguracji środowiska
+- IDE, takie jak IntelliJ IDEA lub Eclipse.
+- Dostępność do plików diagramów, które mogą modyfikować.
 
-### Jak zainicjalizować Watermarker dla pliku diagramu?
-Watermarker jest główną klasą reprezentującą dokument i udostępnia metodę manipulacji treścią. Na początek utwórz obiekt `Watermarker`, który wczyta plik diagramu do pamięci. Klasa `Watermarker` jest podstawowym punktem wejścia GroupDocs.Watermark, umożliwiając odczyt, modyfikację i zapisywanie dokumentów. Użyj `DiagramLoadOptions`, aby określić ustawienia specyficzne dla formatu, takie jak DPI lub zakres stron. `DiagramLoadOptions` konfiguruje sposób ładowania diagramu, np. ustawiając DPI lub tryb ładowania.
+### Wymagania wstępne dotyczące wiedzy
+Java I/O, programowanie obiektu oraz moduły diagramów ułatwienie przejścia przez kolejne kroki.
 
-```java
+## Konfigurowanie pliku GroupDocs.Watermark dla języka Java
+1. **Dodaj zależność Maven** (jak pokazano powyżej) lub umieść pliki JAR w ścieżce klas.
+2. **Uzyskaj licencję próbną lub stałą** w sklepie GroupDocs: [GroupDocs](https://purchase.groupdocs.com/temporary-license/).
+3. **Zaimportuj wymagane pakiety** i utwórz instancję `Watermarker` (patrz kod poniżej).
+
+## Jak zamienić obrazy diagramów Java na GroupDocs.Watermark
+Zawiera się, krok po kroku przewodnika, który prowadzi przez inicjalizację biblioteki, dostęp do schematu zawartości, zamianę obrazów oraz zapisanie zmiany.
+
+### Krok 1: Zainicjuj znak wodny
+Najpierw utwórz obiekt `Watermarker`, który wskazuje na Twój plik diagramu.
+
 ```java
 import java.io.File;
 import com.groupdocs.watermark.Watermarker;
@@ -113,12 +89,12 @@ public class FeatureWatermarkerInitialization {
     }
 }
 ```
-```
 
-### Jak uzyskać dostęp do zawartości diagramu, aby zlokalizować kształty?
-Po wczytaniu pliku pobierz obiekt `DiagramContent` z `Watermarker`. `DiagramContent` reprezentuje wewnętrzną hierarchię diagramu, składającą się ze stron i kształtów. Ten model udostępnia kolekcje stron i kształtów, które możesz iterować, co ułatwia znajdowanie konkretnych elementów, takich jak obrazy czy tekst.
+*Dlaczego to ma znaczenie:* `Watermarker` otwiera plik i przygotowuje struktury wewnętrzne do późniejszej manipulacji.
 
-```java
+### Krok 2: Dostęp do zawartości diagramu
+Pobierz wewnętrzną reprezentację diagramu, aby móc wyliczyć kształty.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -129,12 +105,12 @@ public class FeatureAccessDiagramContent {
     }
 }
 ```
-```
 
-### Jak zastąpić obrazy kształtów w diagramie?
-Iteruj po każdym `DiagramShape` na wybranej stronie, sprawdź, czy kształt zawiera obraz, i zamień bajty obrazu na te z nowego pliku. `DiagramShape` jest modelem pojedynczego kształtu w diagramie, natomiast `DiagramWatermarkableImage` przechowuje dane obrazu, które można zastosować do kształtu.
+*Dlaczego to ważne:* `DiagramContent` udostępnia kolekcje stron i kształtów, punkt wejścia do zamiany obrazów.
 
-```java
+### Krok 3: Odczyt bajtów obrazu Java i zamiana obrazów kształtów
+Teraz lokalizujemy każdy kształt zawierający obraz, odczytujemy nowy plik obrazu (odczyt bajtów obrazu Java) i stosujemy go.
+
 ```java
 import java.io.File;
 import java.io.FileInputStream;
@@ -159,12 +135,14 @@ public class FeatureReplaceShapeImages {
     }
 }
 ```
-```
 
-### Jak zapisać zmiany i zamknąć Watermarker?
-Po zakończeniu wszystkich modyfikacji wywołaj `save` na obiekcie `Watermarker`, aby zapisać zaktualizowany diagram do pliku, a następnie wywołaj `close`, aby zwolnić zasoby natywne. Zapewnia to zwolnienie uchwytów plików i zapobiega wyciekom pamięci, szczególnie przy przetwarzaniu wielu diagramów w trybie wsadowym.
+*Kluczowe punkty:*
+- `FileInputStream` odczytuje nowy PNG do tablicy bajtów — to jest krok **odczytu bajtów obrazu Java**.
+- `DiagramWatermarkableImage` opakowuje tablicę bajtów, aby biblioteka mogła ją osadzić w kształcie.
 
-```java
+### Krok 4: Zapisz i zamknij Watermarker
+Utrwal zmodyfikowany diagram i zwolnij zasoby.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -176,51 +154,52 @@ public class FeatureSaveAndCloseWatermarker {
     }
 }
 ```
-```
 
-## Dodawanie znaku wodnego do tego samego diagramu (opcjonalnie)
+*Dlaczego to ma znaczenie:* Zapisanie powoduje dodanie nowych obrazów do pliku, a zamknięcie zwalnia pamięć — co jest niezbędne do przetwarzania wsadowego wielu diagramów.
 
-Jeśli potrzebujesz również oznaczyć diagram, możesz dodać znak wodny przed lub po zamianie obrazu:
+## Praktyczne zastosowania
+1. **Aktualizacja marki firmowej** – Zastąp stare logo na wszystkich schematach organizacyjnych za jednym razem.
 
-```java
-// Example – adding a text watermark
-Watermark watermark = new TextWatermark("Confidential", new Font("Arial", 12));
-watermarker.add(watermark);
-```
+2. **Odświeżanie katalogu produktów** – Zastąp wycofane obrazy produktów w instrukcjach technicznych.
 
-## Częste problemy i rozwiązywanie
+3. **Konserwacja materiałów edukacyjnych** – Utrzymuj aktualność ilustracji naukowych bez ręcznej edycji.
 
-| Symptom | Likely cause | Fix |
-|---------|--------------|-----|
-| Brak zmiany obrazu po uruchomieniu kodu | `DiagramShape.hasImage()` zwróciło false | Sprawdź typ kształtu; niektóre kształty wektorowe przechowują obrazy w inny sposób. |
-| OutOfMemoryError przy dużych plikach | Ładowanie całego diagramu jednocześnie | Użyj `DiagramLoadOptions.setLoadMode(LoadMode.Stream)`, aby przetwarzać strony kolejno. |
-| Znak wodny niewidoczny | Znak wodny umieszczony za istniejącą zawartością | Wywołaj `watermarker.setWatermarkPosition(Position.Foreground)` przed zapisem. |
+## Kwestie wydajnościowe
+- **Przetwarzaj jeden diagram na raz** podczas pracy z dużymi plikami, aby utrzymać niskie zużycie pamięci.
 
-## Najczęściej zadawane pytania
+- **Zamykaj strumienie natychmiast** (jak pokazano), aby uniknąć blokad plików.
 
-**Q: Czy mogę zastąpić obrazy w diagramach chronionych hasłem?**  
-A: Tak. Przekaż hasło do `DiagramLoadOptions` przy tworzeniu `Watermarker`.
+- **Profiluj wejście/wyjście**, jeśli musisz obsługiwać setki diagramów; rozważ wielowątkowość z oddzielnymi instancjami `Watermarker` dla każdego wątku.
 
-**Q: Czy biblioteka działa z plikami .drawio (XML)?**  
-A: Zdecydowanie – GroupDocs.Watermark obsługuje format Draw.io XML i traktuje każdy węzeł jako kształt.
+## Typowe problemy i rozwiązania
+| Problem | Rozwiązanie |
+|---------|----------|
+| **Obraz pusty po zamianie** | Przed wywołaniem `setImage` sprawdź, czy źródłowy PNG jest obsługiwanym formatem i czy tablica bajtów została w pełni odczytana. |
+| **Błąd OutOfMemoryError na dużych diagramach** | Przetwarzaj diagramy sekwencyjnie i wywołuj `System.gc()` po każdym `watermarker.close()`, jeśli to konieczne. |
+| **Wyjątek licencji** | Przed zainicjowaniem `Watermarker` upewnij się, że plik licencji próbnej lub zakupionej jest poprawnie odwołany. |
 
-**Q: Ile diagramów mogę przetwarzać równocześnie?**  
-A: Biblioteka jest bezpieczna wątkowo dla operacji tylko do odczytu; przy operacjach zapisu ogranicz równoległość do liczby rdzeni CPU, aby uniknąć konfliktów uchwytów plików.
+## Często zadawane pytania
 
-**Q: Czy istnieje limit rozmiaru obrazu?**  
-A: Obsługiwane są obrazy do 100 MB; większe pliki należy wcześniej zmniejszyć, aby utrzymać niskie zużycie pamięci.
+**P: Czy mogę zastąpić obrazy w diagramach chronionych hasłem?**
+O: Tak. Załaduj diagram z odpowiednimi opcjami `DiagramLoadOptions` zawierającymi hasło, a następnie przejdź do kroków zamiany.
 
-**Q: Jakie opcje licencjonowania są dostępne?**  
-A: Można rozpocząć od darmowej 30‑dniowej wersji próbnej; użycie w produkcji wymaga płatnej licencji, którą można uzyskać w sklepie GroupDocs.
+**P: Czy to działa z innymi formatami diagramów, takimi jak VDX?**
+O: GroupDocs.Watermark obsługuje VDX, VDXM i VSDX od razu. Wystarczy zmienić rozszerzenie pliku w ścieżce.
+
+**P: Jak zastąpić obrazy na wszystkich stronach, a nie tylko na pierwszej?**
+O: Przeprowadź iterację po `content.getPages()` i zastosuj wewnętrzną pętlę kształtu do każdej strony.
+
+**P: Czy istnieje sposób na przetwarzanie wsadowe wielu diagramów?**
+O: Umieść cztery kroki w pętli, która odczytuje nazwy plików z katalogu, tworząc nowy `Watermark` dla każdego pliku.
+
+**P: Jaka wersja GroupDocs.Watermark jest wymagana?**
+O: Samouczek korzysta z wersji 24.11, ale nowsze wersje zachowują wsteczną kompatybilność z tymi interfejsami API.
+
+## Wnioski
+Masz teraz kompletny, gotowy do produkcji przepływ pracy, który umożliwia **zastąpienie obrazów diagramów w języku Java** za pomocą GroupDocs.Watermark dla Javy. Odczytując bajty obrazów w języku Java, iterując po kształtach i zapisując wynik, możesz zautomatyzować branding, katalogowanie lub aktualizacje edukacyjne na dużą skalę. Poznaj dodatkowe funkcje znakowania wodnego — takie jak dodawanie tekstowych znaków wodnych lub zabezpieczanie diagramów — aby jeszcze bardziej rozszerzyć możliwości przetwarzania dokumentów.
 
 ---
 
-**Ostatnia aktualizacja:** 2026-08-19  
-**Testowano z:** GroupDocs.Watermark 23.9 dla Java  
+**Ostatnia aktualizacja:** 2025-12-17
+**Testowano z:** GroupDocs.Watermark 24.11 dla Javy
 **Autor:** GroupDocs
-
-## Powiązane samouczki
-
-- [Samouczki znakowania diagramów dla GroupDocs.Watermark Java](/watermark/java/diagram-document-watermarking/)
-- [Usuwanie hiperłączy z kształtów diagramu przy użyciu GroupDocs.Watermark Java dla zwiększonego bezpieczeństwa dokumentów](/watermark/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-- [Jak dodać znak wodny obrazu w Javie przy użyciu GroupDocs.Watermark: przewodnik krok po kroku](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)

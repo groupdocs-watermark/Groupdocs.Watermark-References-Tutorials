@@ -1,76 +1,41 @@
 ---
-date: '2026-08-19'
-description: GroupDocs.Watermark を使用して Java で図の画像を置き換える方法と、図に効率的に watermark を追加する方法を学びます。ステップバイステップの
-  code と best practices。
+date: '2025-12-17'
+description: GroupDocs.Watermark for Java を使用して、Java で図の画像を置き換える方法と、画像バイトを効率的に読み取る方法を学びましょう。明確なステップバイステップのコードで更新を自動化します。
 keywords:
-- replace diagram images java
-- add watermark to diagram
-- groupdocs watermark java
-lastmod: '2026-08-19'
-og_description: GroupDocs.Watermark を使用して Java で図の画像を置き換える方法と、図に効率的に watermark を追加する方法を学びます。ステップバイステップの
-  code と best practices。
-og_image_alt: Guide showing Java code to replace diagram images with GroupDocs.Watermark
-og_title: GroupDocs.Watermark を使用して Java で図の画像を置き換える
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to replace diagram images in Java using GroupDocs.Watermark,
-    and also add watermark to diagram efficiently. Step‑by‑step code and best practices.
-  headline: Replace diagram images in Java using GroupDocs.Watermark
-  type: TechArticle
-- questions:
-  - answer: Yes. Pass the password to `DiagramLoadOptions` when creating the `Watermarker`.
-    question: Can I replace images in password‑protected diagrams?
-  - answer: Absolutely – GroupDocs.Watermark supports the Draw.io XML format and treats
-      each node as a shape.
-    question: Does the library work with .drawio (XML) files?
-  - answer: The library is thread‑safe for read‑only operations; for write operations,
-      limit concurrency to the number of CPU cores to avoid file‑handle contention.
-    question: How many diagrams can I process in parallel?
-  - answer: Images up to 100 MB are supported; larger files should be resized beforehand
-      to keep memory usage low.
-    question: Is there a limit on image size?
-  - answer: You can start with a free 30‑day trial; production use requires a paid
-      license, which can be obtained from the GroupDocs store.
-    question: What licensing options are available?
-  type: FAQPage
-tags:
-- diagram image replacement
-- groupdocs watermark
-- java document processing
-title: GroupDocs.Watermark を使用して Java で図の画像を置き換える
+- GroupDocs Watermark Java
+- automate image replacement
+- Java diagram watermarking
+title: JavaでDiagram画像をGroupDocs.Watermarkに置き換える – 完全ガイド
 type: docs
 url: /ja/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/
 weight: 1
 ---
 
-# GroupDocs.Watermark を使用した Java での図の画像置換
+# JavaでDiagram Imagesを置換する（GroupDocs.Watermark使用）
 
-図ファイル内の画像を手動で更新するのは時間がかかり、ミスが起きやすいです。このチュートリアルでは、数行のコードだけで **Java で図の画像を置換** する方法を学び、必要に応じて **図に透かしを追加** する方法も確認できます。最後まで読むと、Visio、Draw.io、その他サポートされている図形式で動作する任意の Java プロジェクトに組み込める再利用可能なスニペットが手に入ります。
+Visio 形式の図のグラフィックを更新することは、特に多数のファイルで **replace diagram images java** を行う必要がある場合、手作業で行うと手間がかかります。このチュートリアルでは、GroupDocs.Watermark for Java と read image bytes java を使用してそのプロセスを自動化する方法を紹介します。最後まで読むと、時間を節約しヒューマンエラーを減らし、ドキュメントのブランド統一を保つ再利用可能なソリューションが手に入ります。
 
 ## クイック回答
-- **図の画像置換を処理するライブラリは何ですか？** GroupDocs.Watermark for Java.
-- **基本的な置換に必要なコード行数は？** Watermarker が作成された後はわずか 3 行です。
-- **同時に透かしを追加できますか？** はい – 同じ Watermarker インスタンスに透かしオブジェクトを使用します。
-- **必要な Java バージョンは？** JDK 8 以上。
-- **本番環境でライセンスが必要ですか？** 有効な GroupDocs.Watermark ライセンスが必要です；無料トライアルが利用可能です。
+- **図イメージ置換を扱うライブラリは？** GroupDocs.Watermark for Java  
+- **画像バイトを読み込むメソッドは？** `FileInputStream` と `read(byte[])` の組み合わせ（read image bytes java）  
+- **ライセンスは必要ですか？** 評価用にはトライアルライセンスで動作しますが、本番環境ではフルライセンスが必要です。  
+- **対応している図の形式は？** VSDX、VDX、VDXM などの Microsoft Visio ファイル。  
+- **実装にかかる時間は？** 基本的な replace‑diagram‑images‑java ワークフローでおおよそ 15‑20 分です。
 
-## Java での図の画像置換とは？
-Java で図の画像を置換するとは、.vsdx、.drawio、.svg などの図ファイル内でビットマップ画像を含むシェイプをプログラムで検出し、GroupDocs.Watermark API を使用して埋め込まれた画像を新しい画像に差し替えることを意味します。これにより、図エディタで手動で編集する必要があった更新作業を自動化できます。
+## replace diagram images javaとは？
+replace diagram images java とは、Visio 図内の画像を含むシェイプをプログラムで検出し、埋め込まれた画像を新しいファイルに置き換えることを指します。この手法は、ブランドロゴの一括更新や製品カタログの刷新、時間とともに変化するビジュアル資産の管理に最適です。
 
-## なぜ GroupDocs.Watermark を図の画像置換に使用するのか？
-GroupDocs.Watermark は **50 以上の入力および出力形式** をサポートしており（Visio、Draw.io、SVG などを含む）、**最大 500 MB のファイル** をメモリ全体にロードせずに処理できるため、ナイーブなファイルストリーム方式と比較して **CPU 使用率を 30 % 削減** できます。
+## このタスクに GroupDocs.Watermark を使う理由
+GroupDocs.Watermark は、Visio ファイルの低レベル XML を抽象化したハイレベル API を提供し、ビジネスロジックに集中できるようにします。ファイルの読み込み、コンテンツのナビゲーション、保存を自動で行い、図の整合性を保ちます。
 
 ## 前提条件
-- JDK 8 以上がインストールされていること。
-- Java 開発用の IDE（IntelliJ IDEA、Eclipse、または VS Code）。
-- Maven（または手動で JAR を追加できる環境）。
-- 有効な GroupDocs.Watermark ライセンス（トライアルまたは永続）。ライセンスは [GroupDocs](https://purchase.groupdocs.com/temporary-license/) から取得できます。
+- JDK 8 以上がインストールされていること。  
+- 依存関係管理のため Maven（または手動で JAR を扱う）。  
+- 基本的な Java の知識（クラス、ストリーム、例外処理）。
 
 ### 必要なライブラリ、バージョン、依存関係
-`pom.xml` に GroupDocs.Watermark リポジトリと依存関係を追加します：
+GroupDocs.Watermark for Java を使用するには、`pom.xml` にリポジトリと依存関係を追加します。
 
-```xml
 ```xml
 <repositories>
    <repository>
@@ -88,16 +53,27 @@ GroupDocs.Watermark は **50 以上の入力および出力形式** をサポー
    </dependency>
 </dependencies>
 ```
-```
 
-手動で JAR を管理したい場合は、公式サイトから最新リリースをダウンロードしてください： [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)。
+公式サイトから最新の JAR をダウンロードすることもできます: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)。
 
-## Java で図の画像を置換する手順
+### 環境セットアップ要件
+- IntelliJ IDEA や Eclipse などの IDE。  
+- 変更対象となる図ファイルへのアクセス権。
 
-### 図ファイル用に Watermarker を初期化するには？
-Watermarker はドキュメントを表す主要クラスで、コンテンツ操作用メソッドを提供します。まず、図ファイルをメモリにロードする `Watermarker` オブジェクトを作成します。`Watermarker` クラスは GroupDocs.Watermark のコアエントリーポイントで、読み取り、変更、保存が可能です。`DiagramLoadOptions` を使用して DPI やページ範囲など、フォーマット固有の設定を指定します。`DiagramLoadOptions` は図のロード方法（例：DPI 設定やロードモード）を構成します。
+### 知識の前提条件
+Java I/O、オブジェクト指向プログラミング、基本的な図の概念に慣れていると、手順がスムーズに進みます。
 
-```java
+## GroupDocs.Watermark for Java の設定
+1. **Maven 依存関係を追加**（上記参照）または JAR をクラスパスに配置。  
+2. **トライアルまたは永続ライセンスを取得**: [GroupDocs](https://purchase.groupdocs.com/temporary-license/)。  
+3. **必要なパッケージをインポート**し、`Watermarker` インスタンスを作成（コード例は下記参照）。
+
+## GroupDocs.Watermark で replace diagram images java を実行する手順
+以下は、ライブラリの初期化、図コンテンツへのアクセス、画像の置換、変更の保存までをステップバイステップで示した完全なガイドです。
+
+### ステップ 1: Watermarker を初期化する
+まず、対象の図ファイルを指す `Watermarker` オブジェクトを作成します。
+
 ```java
 import java.io.File;
 import com.groupdocs.watermark.Watermarker;
@@ -111,12 +87,12 @@ public class FeatureWatermarkerInitialization {
     }
 }
 ```
-```
 
-### 図のコンテンツにアクセスしてシェイプを特定するには？
-ファイルをロードした後、`Watermarker` から `DiagramContent` オブジェクトを取得します。`DiagramContent` は図のページとシェイプの内部階層を表し、ページやシェイプのコレクションを提供するため、画像やテキストなど特定の要素を簡単に検索できます。
+*これが重要な理由:* `Watermarker` はファイルを開き、後続の操作に備えて内部構造を準備します。
 
-```java
+### ステップ 2: ダイアグラムのコンテンツにアクセスする
+図の内部表現を取得し、シェイプを列挙できるようにします。
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -127,12 +103,12 @@ public class FeatureAccessDiagramContent {
     }
 }
 ```
-```
 
-### 図内のシェイプ画像を置換するには？
-目的のページ上の各 `DiagramShape` をループし、シェイプに画像が含まれているか確認して、画像バイト列を新しいファイルのものに置換します。`DiagramShape` は図内の個々のシェイプを表すモデルで、`DiagramWatermarkableImage` がシェイプに適用できる画像データを保持します。
+*これが重要な理由:* `DiagramContent` はページとシェイプのコレクションを提供し、画像置換のエントリーポイントとなります。
 
-```java
+### ステップ 3: Java で画像バイトを読み取り、図形画像を置き換える
+次に、画像を含むシェイプを検出し、新しい画像ファイルを読み込んで（read image bytes java）置換します。
+
 ```java
 import java.io.File;
 import java.io.FileInputStream;
@@ -157,12 +133,14 @@ public class FeatureReplaceShapeImages {
     }
 }
 ```
-```
 
-### 変更を保存して Watermarker を閉じるには？
-すべての変更が完了したら、`Watermarker` の `save` を呼び出して更新された図をファイルに書き込み、`close` でネイティブリソースを解放します。これによりファイルハンドルが解放され、バッチ処理で多数の図を扱う際のメモリリークを防止できます。
+*要点:* 
+- `FileInputStream` が新しい PNG をバイト配列に読み込む—これが **read image bytes java** のステップです。  
+- `DiagramWatermarkableImage` がバイト配列をラップし、ライブラリがシェイプに埋め込めるようにします。
 
-```java
+### ステップ4: Watermarkerを保存して閉じる
+変更を永続化し、リソースを解放します。
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -174,51 +152,48 @@ public class FeatureSaveAndCloseWatermarker {
     }
 }
 ```
-```
 
-## 同じ図に透かしを追加する（オプション）
+*これが重要な理由:* 保存により新しい画像がファイルに書き込まれ、クローズでメモリが解放されます。多数の図をバッチ処理する際に重要です。
 
-図にブランド付けが必要な場合は、画像置換の前後に透かしを追加できます：
+## 実用的な活用例
+1. **企業ブランディングの更新** – すべての組織図で古いロゴを一括置換。  
+2. **製品カタログの刷新** – 技術マニュアル内の廃止製品画像を差し替え。  
+3. **教育教材の保守** – 科学イラストを手作業せずに最新状態に保つ。
 
-```java
-// Example – adding a text watermark
-Watermark watermark = new TextWatermark("Confidential", new Font("Arial", 12));
-watermarker.add(watermark);
-```
+## パフォーマンス上の考慮点
+- 大容量ファイルを扱う場合は **1 ファイルずつ** 処理し、メモリ使用量を抑える。  
+- ストリームは **すぐにクローズ**（例示通り）してファイルロックを防止。  
+- 数百枚の図を処理する場合は I/O をプロファイルし、スレッドごとに別々の `Watermarker` インスタンスを使用したマルチスレッド化を検討。
 
-## よくある落とし穴とトラブルシューティング
+## よくある問題と解決策
+| Issue | Solution |
+|-------|----------|
+| **置換後に画像が null になる** | ソース PNG がサポート対象形式であること、`setImage` 呼び出し前にバイト配列が完全に読み込まれていることを確認してください。 |
+| **大規模図で OutOfMemoryError が発生** | 図を順次処理し、`watermarker.close()` 後に必要に応じて `System.gc()` を呼び出してください。 |
+| **ライセンス例外** | `Watermarker` 初期化前に、トライアルまたは購入済みのライセンスファイルが正しく参照されていることを確認してください。 |
 
-| 症状 | 考えられる原因 | 対策 |
-|---------|--------------|-----|
-| コード実行後に画像が変わらない | `DiagramShape.hasImage()` が false を返した | シェイプのタイプを確認してください；一部のベクターシェイプは画像を別の方法で保持しています。 |
-| 大きなファイルで OutOfMemoryError が発生 | 図全体を一度にロードしている | `DiagramLoadOptions.setLoadMode(LoadMode.Stream)` を使用してページを順次処理してください。 |
-| 透かしが表示されない | 透かしが既存コンテンツの背後に配置されている | 保存前に `watermarker.setWatermarkPosition(Position.Foreground)` を呼び出してください。 |
+## FAQ（よくある質問）
 
-## よくある質問
+**Q: パスワード保護された図でも画像を置換できますか？**  
+A: はい。パスワードを含む `DiagramLoadOptions` で図を読み込み、同じ置換手順を実行します。
 
-**Q: パスワードで保護された図の画像を置換できますか？**  
-A: はい。`Watermarker` 作成時に `DiagramLoadOptions` にパスワードを渡してください。
+**Q: VDX など他の図形式でも動作しますか？**  
+A: GroupDocs.Watermark は VDX、VDXM、VSDX を標準でサポートしています。パスの拡張子を変更するだけで利用可能です。
 
-**Q: ライブラリは .drawio（XML）ファイルに対応していますか？**  
-A: 対応しています – GroupDocs.Watermark は Draw.io XML 形式をサポートし、各ノードをシェイプとして扱います。
+**Q: 最初のページだけでなく、すべてのページで画像を置換するには？**  
+A: `content.getPages()` をループし、各ページに対してシェイプの内部ループを実行してください。
 
-**Q: 同時に処理できる図の数はどれくらいですか？**  
-A: ライブラリは読み取り専用操作に対してスレッドセーフです。書き込み操作の場合は、ファイルハンドルの競合を避けるために CPU コア数に合わせて同時実行数を制限してください。
+**Q: 複数の図を一括処理する方法はありますか？**  
+A: ディレクトリからファイル名を取得し、各ファイルごとに新しい `Watermarker` を作成して 4 つのステップをループで実行します。
 
-**Q: 画像サイズに制限はありますか？**  
-A: 最大 100 MB の画像がサポートされています。より大きなファイルは事前にリサイズしてメモリ使用量を抑えてください。
+**Q: 必要な GroupDocs.Watermark のバージョンは？**  
+A: 本チュートリアルはバージョン 24.11 を使用していますが、以降のリリースでも同 API は下位互換性があります。
 
-**Q: 利用可能なライセンスオプションは？**  
-A: まずは無料の 30 日間トライアルから開始できます。本番環境での使用には有料ライセンスが必要で、GroupDocs ストアから取得できます。
+## 結論
+これで **replace diagram images java** を GroupDocs.Watermark for Java で実現する、完全な本番レベルのワークフローが完成しました。read image bytes java で画像バイトを取得し、シェイプを走査して置換し、結果を保存することで、ブランド更新やカタログ刷新、教育資料の保守を大規模に自動化できます。さらに、テキストウォーターマークの追加や図の保護機能など、他のウォーターマーキング機能も活用してドキュメント処理の幅を広げてみてください。
 
 ---
 
-**最終更新日:** 2026-08-19  
-**テスト済みバージョン:** GroupDocs.Watermark 23.9 for Java  
-**作者:** GroupDocs
-
-## 関連チュートリアル
-
-- [GroupDocs.Watermark Java 用の図への透かしチュートリアル](/watermark/java/diagram-document-watermarking/)
-- [文書セキュリティ強化のための GroupDocs.Watermark Java で図シェイプからハイパーリンクを削除](/watermark/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-- [GroupDocs.Watermark を使用した Java での画像透かしの追加方法：ステップバイステップガイド](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
+**Last Updated:** 2025-12-17  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs

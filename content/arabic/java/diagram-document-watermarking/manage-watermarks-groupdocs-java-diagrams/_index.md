@@ -1,98 +1,47 @@
 ---
-date: '2026-08-19'
-description: تعلم كيفية حماية مخططات الملكية الفكرية باستخدام GroupDocs.Watermark
-  لـ Java. دليل خطوة بخطوة لتحميل، واكتشاف image watermark، والبحث وإزالة watermarks
-  من ملفات .vsdx.
+date: '2025-12-19'
+description: تعلم كيفية استخدام GroupDocs Watermark Maven لإدارة العلامات المائية
+  في ملفات المخططات مثل .vsdx باستخدام Java، مما يعزز سلامة المستندات ويحمي الملكية
+  الفكرية.
 keywords:
-- intellectual property diagrams
-- detect image watermark
 - GroupDocs.Watermark Java
-- diagram watermark management
-- Java watermark API
-lastmod: '2026-08-19'
-og_description: اكتشف كيفية حماية مخططات الملكية الفكرية باستخدام GroupDocs.Watermark
-  لـ Java. تعلم تحميل ملفات .vsdx، واكتشاف image watermark، وإزالة watermarks غير
-  المرغوب فيها بفعالية.
-og_image_alt: Java code snippet showing watermark detection in diagram files
-og_title: حماية مخططات الملكية الفكرية باستخدام GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  headline: Protect intellectual property diagrams with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  name: Protect intellectual property diagrams with GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-    text: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-    text: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-  type: HowTo
-- questions:
-  - answer: Yes, combine criteria with `OrSearchCriteria` (e.g., `new OrSearchCriteria(textCriteria,
-      imageCriteria)`) to retrieve both types at once.
-    question: Can I search for both text and image watermarks in a single call?
-  - answer: No. The library isolates watermark objects, so shapes, connectors, and
-      formatting remain unchanged after `clear()`.
-    question: Will removing watermarks corrupt the diagram layout?
-  - answer: GroupDocs.Watermark handles `.vsdx`, `.vdx`, `.vsx`, and several older
-      Visio formats, covering over **30** diagram types.
-    question: Which diagram formats are supported?
-  - answer: Use Java’s `ExecutorService` to run watermark detection/removal in parallel
-      batches, and reuse a single `Watermarker` configuration object to reduce overhead.
-    question: How do I process thousands of diagrams efficiently?
-  - answer: Absolutely. Add the Java snippets to your build scripts (Maven/Gradle)
-      and run them as a pre‑deployment verification step to ensure no prohibited watermarks
-      are present.
-    question: Is it possible to integrate this into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark diagrams
-- GroupDocs.Watermark
-- Java document processing
-- intellectual property protection
-title: حماية مخططات الملكية الفكرية باستخدام GroupDocs.Watermark
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark maven – إدارة العلامات المائية للمخططات باستخدام Java
 type: docs
 url: /ar/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
 weight: 1
 ---
 
-# حماية مخططات الملكية الفكرية باستخدام GroupDocs.Watermark
+# groupdocs watermark maven – إدارة علامات مائية للرسوم البيانية باستخدام Java
 
-تعد حماية مخططات الملكية الفكرية خطوة حاسمة لأي منظمة تشارك أصول التصميم أو المخططات الانسيابية أو الرسومات المعمارية. باستخدام GroupDocs.Watermark for Java يمكنك تحميل ملفات المخططات برمجيًا (مثل `.vsdx`)، واكتشاف حالات العلامة المائية للصور، والبحث عن العلامات المائية النصية، وإزالتها بأمان دون إتلاف الرسم الأصلي. يشرح هذا البرنامج التعليمي العملية بالكامل—من إعداد البيئة إلى المعالجة الدفعية لمكتبات المخططات الكبيرة—حتى تتمكن من دمج حماية IP قوية مباشرة في تطبيقات Java الخاصة بك.
+إدارة العلامات المائية في المستندات أمر أساسي لحماية الملكية الفكرية والحفاظ على سلامة المستند. **في هذا الدرس سنوضح لك كيفية استخدام groupdocs watermark maven لتحميل، البحث، وإزالة العلامات المائية من ملفات الرسوم البيانية مثل `.vsdx`**. سواءً كنت تبني برنامجًا مؤسسيًا أو تقوم بأتمتة سير عمل المستندات، ستمكنك إتقان هذه التقنيات من التحكم الكامل في إدارة العلامات المائية للرسوم البيانية.
 
 ## إجابات سريعة
-- **أي مكتبة تتعامل مع علامات مائية للمخططات؟** GroupDocs.Watermark for Java.  
-- **هل يمكنني اكتشاف علامة مائية صورة وكذلك نص؟** نعم، توفر API `ImageDctHashSearchCriteria` لاكتشاف الصور و `TextSearchCriteria` للنص.  
-- **هل أحتاج إلى ترخيص تجاري لتشغيل الكود؟** ترخيص تجريبي يعمل للتطوير؛ الترخيص المدفوع مطلوب للإنتاج.  
-- **هل يدعم المعالجة الدفعية؟** بالتأكيد—تكرار عبر مجلد وتطبيق نفس منطق العلامة المائية على كل ملف.  
-- **هل سيبقى تخطيط المخطط الأصلي سليمًا بعد الإزالة؟** المكتبة تمسح فقط كائنات العلامة المائية، مع الحفاظ على جميع الأشكال والموصلات والتنسيق.
+- **ما المكتبة المطلوبة؟** GroupDocs.Watermark for Java (متاحة عبر Maven).  
+- **ما صيغ الرسوم البيانية المدعومة؟** `.vsdx`، `.vdx`، وغيرها من صيغ Visio.  
+- **هل يمكنني البحث عن كل من العلامات النصية والصورية؟** نعم – اجمع معايير البحث باستخدام `or()`.  
+- **هل تحتاج إلى ترخيص للإنتاج؟** يتطلب ترخيص صالح من GroupDocs.Watermark.  
+- **كيف أدمج ذلك في Maven؟** أضف المستودع والاعتماد الموضحين أدناه.
 
-## ما هي مخططات الملكية الفكرية؟
-مخططات الملكية الفكرية هي تمثيلات بصرية—مثل المخططات الانسيابية، نماذج UML، المخططات الشبكية، أو الرسومات المعمارية—تحتوي على معلومات مملوكة لفرد أو منظمة. غالبًا ما تنقل هذه المخططات عمليات أو تصاميم أو استراتيجيات سرية، مما يجعلها أصولًا قيمة تتطلب حماية ضد النسخ غير المصرح به أو التوزيع أو التعديل. من خلال اعتبارها ملكية فكرية، يمكنك تطبيق تدابير قانونية وتقنية، بما في ذلك العلامات المائية، للحفاظ على التحكم في استخدامها ونشرها.
+## ما هو groupdocs watermark maven؟
+`groupdocs watermark maven` يشير إلى التكامل القائم على Maven لمكتبة GroupDocs.Watermark للغة Java. من خلال إعلان المكتبة في ملف `pom.xml` الخاص بك، يقوم Maven تلقائيًا بحل جميع الثنائيات المطلوبة، مما يتيح لك التركيز على الكود الذي يحمل الرسوم البيانية، يبحث عن العلامات المائية، ويزيلها برمجيًا.
 
-## لماذا تستخدم GroupDocs.Watermark for Java؟
-يدعم GroupDocs.Watermark **أكثر من 50** تنسيق إدخال وإخراج (بما في ذلك `.vsdx`، `.vdx`، `.vsx`) ويمكنه معالجة مخططات مئات الصفحات دون تحميل الملف بالكامل في الذاكرة، مما يقلل استهلاك RAM بنسبة تصل إلى **70 %** مقارنةً بأساليب تدفق الملفات البسيطة. كما توفر API مقارنة تجزئة صور بدون OCR مدمجة، مما يتيح عمليات `detect image watermark` موثوقة في أقل من **200 ms** لكل مخطط على خادم عادي بسرعة 2.5 GHz.
+## لماذا نستخدم GroupDocs.Watermark لإدارة العلامات المائية للرسوم البيانية؟
+- **API كامل الميزات** – يدعم العلامات النصية، الصورية، والشكلية عبر العديد من أنواع الرسوم البيانية.  
+- **إزالة دقيقة** – يزيل العلامات المائية دون إفساد تخطيط الرسم الأصلي.  
+- **قابلية التوسع** – مناسب للمعالجة الدفعة لمجموعات كبيرة من الرسوم البيانية.  
+- **ملائم لـ Maven** – إدارة تبعيات بسيطة، تحافظ على نظافة مشروعك.
 
 ## المتطلبات المسبقة
-قبل البدء، تأكد من وجود ما يلي:
-
-1. **Java Development Kit (JDK) 8+** – يستخدم الكود واجهات برمجة تطبيقات Java 8 القياسية.  
-2. **IDE** – IntelliJ IDEA أو Eclipse أو أي محرر تفضله.  
-3. **GroupDocs.Watermark for Java** – إما عبر Maven أو تحميل JAR يدويًا.  
+1. **مجموعة تطوير جافا (JDK) 8+** – لضمان التوافق مع المكتبة.  
+2. **بيئة تطوير متكاملة (IDE)** – IntelliJ IDEA، Eclipse، أو أي محرر يدعم Java.  
+3. **GroupDocs.Watermark for Java** – يُضاف عبر Maven (مُفضَّل) أو تحميل JAR مباشر.  
 
 ### المكتبات والاعتمادات المطلوبة
-يمكنك إضافة المكتبة عبر Maven أو تحميل ملفات JAR مباشرة.
-
 #### إعداد Maven
-أضف مستودع وإدخالات الاعتماد إلى ملف `pom.xml` الخاص بك:
+أضف التكوين التالي إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <repositories>
@@ -113,87 +62,15 @@ weight: 1
 ```
 
 #### التحميل المباشر
-إذا كنت تفضل التثبيت اليدوي، قم بتحميل أحدث إصدار من [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+بدلاً من ذلك، حمّل أحدث نسخة من [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### الحصول على الترخيص
-- **نسخة تجريبية مجانية:** مثالية لتقييم قدرات API.  
-- **ترخيص مؤقت:** استخدمه للاختبار قصير المدى دون قيود على الميزات.  
-- **شراء:** مطلوب للنشر في بيئات الإنتاج ولإلغاء قفل الصيغ المتميزة.
+- **تجربة مجانية:** اختبر المكتبة باستخدام ترخيص تجريبي.  
+- **ترخيص مؤقت:** اطلب مفتاحًا قصير الأمد للتقييم.  
+- **شراء:** احصل على ترخيص إنتاج لاستخدام غير محدود.
 
-## كيف تقوم بتهيئة Watermarker؟
-إنشاء مثيل `Watermarker` هو الخطوة الأولى في أي سير عمل للعلامات المائية. تقوم فئة `Watermarker` بتحميل ملف المخطط إلى الذاكرة وتوفر طرقًا للبحث، الإضافة، والإزالة. بتمرير مسار المخطط و`DiagramLoadOptions` الاختيارية، تحصل على كائن يُعد النقطة المركزية لجميع العمليات اللاحقة، مما يضمن معالجة متسقة للمستند طوال العملية.
-
-```java
-Watermarker watermarker = new Watermarker(inputFilePath, loadOptions);
-```
-
-## كيف تقوم بتحميل مستند مخطط؟
-يمنحك تحميل مخطط باستخدام `DiagramLoadOptions` تحكمًا دقيقًا في طريقة تحليل الملف. تسمح لك `DiagramLoadOptions` بتحديد ما إذا كنت تريد تحميل الصفحات المرئية فقط، أو الحفاظ على الطبقات المخفية، وكيفية التعامل مع الخطوط المدمجة. يمكن لضبط هذه الخيارات تحسين الأداء بشكل كبير للمخططات الكبيرة ويضمن معالجة الأجزاء الضرورية فقط من الملف، مما يقلل استهلاك الذاكرة ويسرع اكتشاف العلامات المائية.
-
-```java
-DiagramLoadOptions loadOptions = new DiagramLoadOptions();
-loadOptions.setLoadHiddenLayers(false);
-Watermarker watermarker = new Watermarker("sample.vsdx", loadOptions);
-```
-
-## كيف تكتشف علامة مائية صورة في مخطط؟
-يعتمد اكتشاف العلامات المائية للصور على الفئة `ImageDctHashSearchCriteria`، التي تحسب تجزئة إدراكية لصورة مرجعية وتقارنها مع كل صورة مدمجة في المخطط. هذه الطريقة سريعة وتتحمل الاختلافات البصرية الطفيفة، مما يتيح لك تحديد الشعارات أو العلامات الرسومية حتى وإن تم تغيير حجمها أو تعديلها قليلاً. من خلال ضبط عتبة التشابه، يمكنك موازنة حساسية الاكتشاف مع تقليل الإيجابيات الزائفة.
-
-```java
-ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria("logo.png");
-PossibleWatermarkCollection watermarks = watermarker.search(criteria);
-```
-
-## كيف تبحث عن علامات مائية نصية؟
-يستخدم البحث عن العلامات المائية النصية الفئة `TextSearchCriteria`. تقوم هذه الفئة بمسح جميع الطبقات النصية داخل المخطط، بما في ذلك تلك داخل الأشكال والموصلات والمجموعات، وتعيد أي تطابق يحتوي على السلسلة أو النمط المحدد. البحث غير حساس لحالة الأحرف بشكل افتراضي ويمكن تحسينه باستخدام تعبيرات منتظمة، مما يتيح لك العثور على العلامات المائية التي قد تكون مائلة أو مخفية جزئيًا أو مدمجة في هياكل مخططات معقدة.
-
-```java
-TextSearchCriteria textCriteria = new TextSearchCriteria("Confidential");
-PossibleWatermarkCollection textWatermarks = watermarker.search(textCriteria);
-```
-
-## كيف تزيل العلامات المائية من مخطط؟
-يتم إزالة العلامات المائية عن طريق استدعاء طريقة `clear()` على كل كائن `Watermark` تم إرجاعه من عملية البحث. تحذف طريقة `clear()` فقط العناصر البصرية للعلامة المائية مع ترك كائنات المخطط الأساسية—مثل الأشكال والموصلات والتنسيق—سليمة. بعد الإزالة، احفظ المستند باستخدام طريقة `save`، لتنتج نسخة نظيفة من المخطط تحتفظ بتخطيطه ووظائفه الأصلية.
-
-```java
-for (Watermark wm : watermarks) {
-    wm.clear();
-}
-watermarker.save("cleaned.vsdx");
-```
-
-## التطبيقات العملية
-- **تكامل برمجيات المؤسسات:** دمج التحقق من العلامة المائية في أنظمة إدارة المستندات لفرض سياسات الملكية الفكرية تلقائيًا.  
-- **أنظمة إدارة المحتوى (CMS):** فحص المخططات التي يرفعها المستخدمون للبحث عن شعارات غير مصرح بها قبل النشر.  
-- **معالجة المستندات القانونية:** اكتشاف وإزالة العلامات المائية السرية عند إعداد حزم الأدلة.  
-
-## الأخطاء الشائعة واستكشاف الأخطاء وإصلاحها
-- **استثناء الترخيص المفقود:** تأكد من أن ملف الترخيص التجريبي أو المدفوع مُشار إليه بشكل صحيح عبر `License.setLicense("license_path")`.  
-- **تباطؤ المخططات الكبيرة:** فعّل `loadOptions.setLoadHiddenLayers(false)` وفكّر في معالجة المخططات عبر تدفقات متوازية.  
-- **مطابقات صور زائفة:** اضبط تسامح تجزئة DCT باستخدام `criteria.setSimilarityThreshold(0.85)` لتقليل المطابقات غير المقصودة.
-
-## الأسئلة المتكررة
-
-**س: هل يمكنني البحث عن كل من العلامات المائية النصية والصورية في استدعاء واحد؟**  
-ج: نعم، اجمع المعايير باستخدام `OrSearchCriteria` (مثال: `new OrSearchCriteria(textCriteria, imageCriteria)`) لاسترجاع النوعين في آن واحد.
-
-**س: هل سيؤدي إزالة العلامات المائية إلى إتلاف تخطيط المخطط؟**  
-ج: لا. تقوم المكتبة بعزل كائنات العلامة المائية، لذا تبقى الأشكال والموصلات والتنسيق دون تغيير بعد `clear()`.
-
-**س: ما هي صيغ المخططات المدعومة؟**  
-ج: يدعم GroupDocs.Watermark `.vsdx`، `.vdx`، `.vsx`، والعديد من صيغ Visio القديمة، ما يغطي أكثر من **30** نوعًا من المخططات.
-
-**س: كيف يمكنني معالجة آلاف المخططات بكفاءة؟**  
-ج: استخدم `ExecutorService` في Java لتشغيل اكتشاف/إزالة العلامات المائية في دفعات متوازية، وأعد استخدام كائن تكوين `Watermarker` واحد لتقليل الحمل.
-
-**س: هل يمكن دمجه في خط أنابيب CI/CD؟**  
-ج: بالتأكيد. أضف مقتطفات Java إلى سكريبتات البناء (Maven/Gradle) وشغّلها كخطوة تحقق قبل النشر لضمان عدم وجود علامات مائية محظورة.
-
----
-
-**آخر تحديث:** 2026-08-19  
-**تم الاختبار مع:** GroupDocs.Watermark 23.12 for Java  
-**المؤلف:** GroupDocs
+## استخدام groupdocs watermark maven لتحميل مستند رسم بياني
+تحميل مستند الرسم البياني هو الخطوة الأولى قبل أي عملية علامة مائية. المثال الأدنى يوضح إنشاء كائن `Watermarker` باستخدام `DiagramLoadOptions`.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -209,6 +86,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
+
+- **المعلمات:**  
+  - `inputFilePath` – مسار ملف `.vsdx` الخاص بك.  
+  - `loadOptions` – يتيح لك التحكم في طريقة تحليل الرسم (مثل الحماية بكلمة مرور).
+
+## البحث عن العلامات المائية باستخدام groupdocs watermark maven
+### العلامات النصية
+لتحديد العلامات المائية النصية، عرّف `TextSearchCriteria` واستعلم عن الصفحة الأولى من الرسم.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -231,6 +116,13 @@ public class SearchTextWatermarks {
 }
 ```
 
+- **الطرق الأساسية:**  
+  - `TextSearchCriteria` – يحدد النص الدقيق للبحث عنه.  
+  - `PossibleWatermarkCollection` – يخزن أي تطابقات تم العثور عليها.
+
+### العلامات الصورية
+إذا كان الرسم يحتوي على شعارات أو صور كعلامات مائية، استخدم `ImageDctHashSearchCriteria` للمقارنة مع صورة مرجعية.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -252,6 +144,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
+
+- **الطرق الأساسية:**  
+  - `ImageDctHashSearchCriteria` – يُنشئ تجزئة إدراكية (perceptual hash) للصورة المرجعية لتطابق قوي.
+
+## إزالة العلامات المائية
+بعد تحديد العلامات غير المرغوب فيها، يمكنك مسحها وحفظ نسخة نظيفة من الرسم.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -280,8 +178,42 @@ public class RemoveWatermarks {
 }
 ```
 
-## دروس ذات صلة
+- **الطريقة الأساسية:** `clear()` يزيل كل علامة مائية تم العثور عليها بالمعايير المدمجة، مع الحفاظ على الرسم دون تعديل.
 
-- [دليل إضافة علامات مائية إلى المخططات باستخدام GroupDocs.Watermark for Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [إضافة علامات مائية نصية إلى المخططات باستخدام GroupDocs.Watermark for Java&#58; دليل شامل](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [تحرير رؤوس وتذييلات المخططات في Java باستخدام GroupDocs.Watermark&#58; دليل شامل](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
+## تطبيقات عملية
+1. **تكامل برامج مؤسسية** – دمج إدارة العلامات المائية في تطبيقات الأعمال لحماية الرسوم البيانية المملوكة.  
+2. **أنظمة إدارة المحتوى (CMS)** – أتمتة اكتشاف وإزالة الشعارات غير المصرح بها قبل النشر.  
+3. **سير عمل المستندات القانونية** – إضافة أو إزالة العلامات المائية في مراحل مختلفة من معالجة العقود.  
+
+## المشكلات الشائعة & استكشاف الأخطاء
+- **أخطاء الترخيص:** تأكد من الإشارة إلى ملف الترخيص بشكل صحيح قبل إنشاء كائن `Watermarker`.  
+- **الملفات الكبيرة:** استخدم واجهات برمجة التطبيقات المتدفقة أو زد حجم ذاكرة JVM (`-Xmx2g`) للرسوم التي يزيد حجمها عن 100 ميغابايت.  
+- **عدم العثور على العلامات:** تحقق من أن معايير البحث (حالة النص، عتبة تشابه الصورة) تتطابق مع محتوى العلامة المائية الفعلي.
+
+## الأسئلة المتكررة
+
+**س: هل يمكنني البحث عن النصوص والصور في آنٍ واحد؟**  
+ج: نعم. اجمع المعايير باستخدام `or()` كما هو موضح في مثال الإزالة.
+
+**س: هل من الآمن إزالة العلامات المائية دون تعديل تخطيط الرسم؟**  
+ج: بالتأكيد. تستهدف الـ API كائنات العلامة المائية بدقة، مع الحفاظ على جميع عناصر الرسم الأخرى.
+
+**س: ما صيغ الرسوم البيانية التي يدعمها GroupDocs.Watermark؟**  
+ج: يدعم صيغ Visio مثل `.vsdx`، `.vdx`، بالإضافة إلى أنواع أخرى من الرسوم المتجهية.
+
+**س: كيف يمكنني معالجة مئات الرسوم البيانية بكفاءة؟**  
+ج: نفّذ حلقة دفعة، أعد استخدام كائن `Watermarker` واحد عندما يكون ذلك ممكنًا، وفكّر في المعالجة المتوازية باستخدام `ExecutorService` في Java.
+
+**س: هل يمكن دمج اكتشاف العلامات المائية في خط أنابيب CI/CD؟**  
+ج: نعم. أدرج مقتطفات Java في سكريبتات البناء (مثل إضافات Maven أو مهام Gradle) للتحقق من الرسوم البيانية قبل النشر.
+
+## الخلاصة
+باستخدام **groupdocs watermark maven**، تحصل على طريقة قوية تُدار عبر Maven لتحميل، البحث، وإزالة العلامات المائية من ملفات الرسوم البيانية باستخدام Java. هذه القدرة تعزز أمان المستندات، تُبسط سير عمل المحتوى، وتُقابل بسهولة مجموعات كبيرة من المستندات.
+
+---
+
+**آخر تحديث:** 2025-12-19  
+**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
+**المؤلف:** GroupDocs  
+
+---

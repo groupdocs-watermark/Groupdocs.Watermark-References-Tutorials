@@ -1,78 +1,44 @@
 ---
-date: '2026-08-19'
-description: Ismerje meg, hogyan cserélhet diagramképeket Java-ban a GroupDocs.Watermark
-  segítségével, és hatékonyan adhat hozzá vízjelet a diagramhoz. Lépésről‑lépésre
-  kód és legjobb gyakorlatok.
+date: '2025-12-17'
+description: Tanulja meg, hogyan cserélhet diagramképeket Java-ban a GroupDocs.Watermark
+  for Java segítségével, és hogyan olvashatja hatékonyan a képadatokat Java-ban. Automatizálja
+  a frissítéseket egyértelmű, lépésről‑lépésre kód segítségével.
 keywords:
-- replace diagram images java
-- add watermark to diagram
-- groupdocs watermark java
-lastmod: '2026-08-19'
-og_description: Ismerje meg, hogyan cserélhet diagramképeket Java-ban a GroupDocs.Watermark
-  segítségével, és hatékonyan adhat hozzá vízjelet a diagramhoz. Lépésről‑lépésre
-  kód és legjobb gyakorlatok.
-og_image_alt: Guide showing Java code to replace diagram images with GroupDocs.Watermark
-og_title: Diagramképek cseréje Java-ban a GroupDocs.Watermark segítségével
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to replace diagram images in Java using GroupDocs.Watermark,
-    and also add watermark to diagram efficiently. Step‑by‑step code and best practices.
-  headline: Replace diagram images in Java using GroupDocs.Watermark
-  type: TechArticle
-- questions:
-  - answer: Yes. Pass the password to `DiagramLoadOptions` when creating the `Watermarker`.
-    question: Can I replace images in password‑protected diagrams?
-  - answer: Absolutely – GroupDocs.Watermark supports the Draw.io XML format and treats
-      each node as a shape.
-    question: Does the library work with .drawio (XML) files?
-  - answer: The library is thread‑safe for read‑only operations; for write operations,
-      limit concurrency to the number of CPU cores to avoid file‑handle contention.
-    question: How many diagrams can I process in parallel?
-  - answer: Images up to 100 MB are supported; larger files should be resized beforehand
-      to keep memory usage low.
-    question: Is there a limit on image size?
-  - answer: You can start with a free 30‑day trial; production use requires a paid
-      license, which can be obtained from the GroupDocs store.
-    question: What licensing options are available?
-  type: FAQPage
-tags:
-- diagram image replacement
-- groupdocs watermark
-- java document processing
-title: Diagramképek cseréje Java-ban a GroupDocs.Watermark segítségével
+- GroupDocs Watermark Java
+- automate image replacement
+- Java diagram watermarking
+title: Diagram képek cseréje Java-ban a GroupDocs.Watermark használatával – Teljes
+  útmutató
 type: docs
 url: /hu/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Diagram képek cseréje Java-ban a GroupDocs.Watermark használatával
+# Diagramkép cseréje Java-val a GroupDocs.Watermark segítségével
 
-A diagramfájlokban lévő képek manuális frissítése időigényes és hibára hajlamos. Ebben az útmutatóban megtanulja, hogyan **cseréljen diagram képeket Java-ban** néhány kódsorral, és azt is megmutatjuk, hogyan **adhat hozzá vízjelet a diagramhoz** szükség esetén. A végére egy újrahasználható kódrészletet kap, amelyet bármely Java projekthez beilleszthet, amely Visio, Draw.io vagy más támogatott diagramformátumokkal dolgozik.
+A Visio‑stílusú diagramok grafikai elemeinek frissítése fáradságos manuális feladat lehet, különösen akkor, ha sok fájlban kell **replace diagram images java** műveletet végrehajtani. Ebben az útmutatóban megismerheted, hogyan automatizálhatod ezt a folyamatot a GroupDocs.Watermark for Java segítségével, hogyan olvass be kép bájtokat java, és hogyan alkalmazd a változtatásokat programozottan. A végére egy újrahasználható megoldást kapsz, amely időt takarít meg, csökkenti az emberi hibákat, és egységes márkázást biztosít a dokumentációban.
 
 ## Gyors válaszok
-- **Melyik könyvtár kezeli a diagram képek cseréjét?** GroupDocs.Watermark for Java.
-- **Hány sor kódra van szükség egy alapvető cserehez?** Csak három sor a Watermarker létrehozása után.
-- **Hozzáadhatok vízjelet egyszerre?** Igen – használja ugyanazt a Watermarker példányt egy vízjel objektummal.
-- **Melyik Java verzió szükséges?** JDK 8 vagy újabb.
-- **Szükségem van licencre a termeléshez?** Érvényes GroupDocs.Watermark licenc szükséges; ingyenes próba elérhető.
+- **Melyik könyvtár kezeli a diagramkép cseréjét?** GroupDocs.Watermark for Java  
+- **Melyik metódus olvassa be a kép bájtjait?** `FileInputStream` combined with `read(byte[])` (read image bytes java)  
+- **Szükségem van licencre?** A próbaverzió licenc működik értékeléshez; a teljes licenc szükséges a termeléshez.  
+- **Támogatott diagramformátumok?** VSDX, VDX, VDXM, és más Microsoft Visio fájlok.  
+- **Mennyi időt vesz igénybe a megvalósítás?** Körülbelül 15‑20 perc egy alap replace‑diagram‑images‑java munkafolyamathoz.
 
-## Mi az a diagram képek cseréje Java-ban?
-A diagram képek cseréje Java-ban azt jelenti, hogy programozottan megtaláljuk azokat a formákat, amelyek bitmap grafikát tartalmaznak egy diagramfájlban (például .vsdx, .drawio vagy .svg), és ezeket a beágyazott képeket újakkal cseréljük a GroupDocs.Watermark API használatával. Ez automatizálja a frissítéseket, amelyek egyébként manuális szerkesztést igényelnének egy diagram szerkesztőben.
+## Mi az a replace diagram images java?
+A diagramképek Java‑ban történő cseréje azt jelenti, hogy programozottan megtaláljuk a Visio diagramon belül a képet tartalmazó alakzatokat, és a beágyazott képet egy új fájllal cseréljük Java kóddal. Ez a technika ideális tömeges márkafrissítésekhez, termékkatalógus‑újraélesztésekhez, vagy bármely olyan helyzethez, ahol a vizuális elemek idővel változnak.
 
-## Miért használja a GroupDocs.Watermark-ot diagram képek cseréjéhez?
-A GroupDocs.Watermark **50+ bemeneti és kimeneti formátumot** támogat – beleértve a Visio, Draw.io és SVG formátumokat – és **akár 500 MB‑os fájlokat** képes feldolgozni anélkül, hogy a teljes dokumentumot a memóriába töltené, így **30 % CPU‑használat csökkenést** eredményez a naív fájl‑stream megközelítésekkel szemben.
+## Miért használjuk a GroupDocs.Watermark-ot ehhez a feladathoz?
+A GroupDocs.Watermark egy magas szintű API‑t biztosít, amely elrejti a Visio fájlok alacsony szintű XML‑jét, így a fejlesztő a üzleti logikára koncentrálhat a fájlformátum sajátosságai helyett. Kezeli a betöltést, a tartalom navigálását és a mentést, miközben megőrzi a diagram integritását.
 
-## Előfeltételek
-- JDK 8 vagy újabb telepítve.
-- IDE (IntelliJ IDEA, Eclipse vagy VS Code) a Java fejlesztéshez.
-- Maven (vagy a lehetőség, hogy a JAR-okat manuálisan adja hozzá).
-- Érvényes GroupDocs.Watermark licenc (próba vagy állandó). Licencet a [GroupDocs](https://purchase.groupdocs.com/temporary-license/) oldalról szerezhet.
+## Előkövetelmények
+- JDK 8 vagy újabb telepítve.  
+- Maven (vagy manuális JAR kezelés) a függőségkezeléshez.  
+- Alap Java ismeretek (osztályok, stream-ek, kivételkezelés).  
 
 ### Szükséges könyvtárak, verziók és függőségek
-Add the GroupDocs.Watermark repository and dependency to your `pom.xml`:
+A GroupDocs.Watermark for Java használatához add hozzá a tárolót és a függőséget a `pom.xml` fájlodba:
 
-```xml
 ```xml
 <repositories>
    <repository>
@@ -90,16 +56,27 @@ Add the GroupDocs.Watermark repository and dependency to your `pom.xml`:
    </dependency>
 </dependencies>
 ```
-```
 
-If you prefer manual JAR management, download the latest release from the official site: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+A legújabb JAR‑t letöltheted a hivatalos oldalról is: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-## Hogyan cserélje ki a diagram képeket Java-ban lépésről lépésre
+### Környezet beállítási követelmények
+- IDE, például IntelliJ IDEA vagy Eclipse.  
+- Hozzáférés a módosítani kívánt diagramfájlokhoz.  
 
-### Hogyan inicializálja a Watermarker-t egy diagram fájlhoz?
-A Watermarker a fő osztály, amely egy dokumentumot képvisel és módszereket biztosít a tartalom manipulálásához. Kezdésként hozzon létre egy `Watermarker` objektumot, amely betölti a diagramfájlt a memóriába. A `Watermarker` osztály a GroupDocs.Watermark központi belépési pontja, lehetővé téve a dokumentumok olvasását, módosítását és mentését. Használja a `DiagramLoadOptions`‑t a formátumspecifikus beállítások, például DPI vagy oldaltartomány megadásához. A `DiagramLoadOptions` konfigurálja, hogyan töltődik be a diagram, például DPI vagy betöltési mód beállításával.
+### Tudás előkövetelmények
+A Java I/O, az objektum‑orientált programozás és az alap diagramfogalmak ismerete segíti a lépések zökkenőmentes követését.
 
-```java
+## A GroupDocs.Watermark beállítása Java-hoz
+1. **Add the Maven dependency** (as shown above) or place the JARs on your classpath.  
+2. **Obtain a trial or permanent license** from the GroupDocs store: [GroupDocs](https://purchase.groupdocs.com/temporary-license/).  
+3. **Import the required packages** and create a `Watermarker` instance (see code below).
+
+## Hogyan cseréljünk diagramképeket java-val a GroupDocs.Watermark segítségével
+Az alábbiakban egy teljes, lépésről‑lépésre útmutatót találsz, amely végigvezet a könyvtár inicializálásán, a diagram tartalmának elérésén, a képek cseréjén és a módosítások mentésén.
+
+### 1. lépés: Watermarker inicializálása
+Először hozz létre egy `Watermarker` objektumot, amely a diagramfájlra mutat.
+
 ```java
 import java.io.File;
 import com.groupdocs.watermark.Watermarker;
@@ -113,12 +90,12 @@ public class FeatureWatermarkerInitialization {
     }
 }
 ```
-```
 
-### Hogyan érheti el a diagram tartalmát a formák megtalálásához?
-A fájl betöltése után szerezzen be egy `DiagramContent` objektumot a `Watermarker`‑ből. A `DiagramContent` a diagram belső hierarchiáját (oldalak és formák) képviseli. Ez a modell gyűjteményeket biztosít az oldalakról és formákról, amelyeken iterálhat, így könnyen megtalálhatja a képeket vagy szöveget tartalmazó elemeket.
+*Why this matters:* A `Watermarker` megnyitja a fájlt, és előkészíti a belső struktúrákat a későbbi manipulációhoz.
 
-```java
+### 2. lépés: Diagram tartalom elérése
+Szerezd meg a diagram belső reprezentációját, hogy felsorolhasd az alakzatokat.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -129,12 +106,12 @@ public class FeatureAccessDiagramContent {
     }
 }
 ```
-```
 
-### Hogyan cserélje le a formák képeit egy diagramon?
-Iteráljon végig minden `DiagramShape`‑on a kívánt oldalon, ellenőrizze, hogy a forma tartalmaz-e képet, és cserélje le a kép bájtjait egy új fájl bájtjaival. A `DiagramShape` egy egyedi forma modellje a diagramon, míg a `DiagramWatermarkableImage` tárolja a képadatokat, amelyeket egy formára lehet alkalmazni.
+*Why this matters:* A `DiagramContent` oldal‑ és alakzatgyűjteményeket ad, amelyek a képcsere kiindulópontjai.
 
-```java
+### 3. lépés: Kép bájtok olvasása java és alakzatok képeinek cseréje
+Most megtaláljuk az összes képet tartalmazó alakzatot, beolvassuk az új képfájlt (read image bytes java), és alkalmazzuk azt.
+
 ```java
 import java.io.File;
 import java.io.FileInputStream;
@@ -159,12 +136,14 @@ public class FeatureReplaceShapeImages {
     }
 }
 ```
-```
 
-### Hogyan mentse a módosításokat és zárja be a Watermarker-t?
-Amikor minden módosítás befejeződött, hívja meg a `save`‑t a `Watermarker`‑en, hogy az frissített diagramot egy fájlba írja, majd hívja meg a `close`‑t a natív erőforrások felszabadításához. Ez biztosítja, hogy a fájlkezelők felszabaduljanak, és megakadályozza a memória szivárgást, különösen nagy mennyiségű diagram kötegelt feldolgozása esetén.
+*Kulcsfontosságú pontok:*  
+- `FileInputStream` reads the new PNG into a byte array—this is the **read image bytes java** step.  
+- `DiagramWatermarkableImage` wraps the byte array so the library can embed it into the shape.
 
-```java
+### 4. lépés: Watermarker mentése és bezárása
+Mentse el a módosított diagramot, és szabadítsa fel az erőforrásokat.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -176,51 +155,49 @@ public class FeatureSaveAndCloseWatermarker {
     }
 }
 ```
-```
 
-## Vízjel hozzáadása ugyanahhoz a diagramhoz (opcionális)
+*Why this matters:* A mentés beírja az új képeket a fájlba, a bezárás pedig felszabadítja a memóriát — ez elengedhetetlen a sok diagram batch‑feldolgozásához.
 
-Ha a diagramot is márkázni szeretné, hozzáadhat egy vízjelet a képcsere előtt vagy után:
+## Gyakorlati alkalmazások
+1. **Corporate branding updates** – Régi logók cseréje az összes szervezeti diagramon egyetlen futtatással.  
+2. **Product catalog refreshes** – Elavult termékképek cseréje a műszaki kézikönyvekben.  
+3. **Educational material maintenance** – Tudományos illusztrációk naprakészen tartása manuális szerkesztés nélkül.
 
-```java
-// Example – adding a text watermark
-Watermark watermark = new TextWatermark("Confidential", new Font("Arial", 12));
-watermarker.add(watermark);
-```
+## Teljesítmény szempontok
+- **Process one diagram at a time** when dealing with large files to keep memory usage low.  
+- **Close streams promptly** (as shown) to avoid file locks.  
+- **Profile I/O** if you need to handle hundreds of diagrams; consider multithreading with separate `Watermarker` instances per thread.
 
-## Gyakori hibák és hibaelhárítás
+## Gyakori problémák és megoldások
 
-| Tünet | Valószínű ok | Megoldás |
-|---------|--------------|-----|
-| A kód futtatása után nem változik a kép | `DiagramShape.hasImage()` hamis értéket adott vissza | Ellenőrizze a forma típusát; egyes vektorformák másként tárolják a képeket. |
-| OutOfMemoryError nagy fájlok esetén | A teljes diagram egyszerre történő betöltése | Használja a `DiagramLoadOptions.setLoadMode(LoadMode.Stream)`-et az oldalak sorozatos feldolgozásához. |
-| A vízjel nem látható | A vízjel a meglévő tartalom mögött helyezkedik el | Hívja meg a `watermarker.setWatermarkPosition(Position.Foreground)`-t a mentés előtt. |
+| Probléma | Megoldás |
+|----------|----------|
+| **Null image after replacement** | Ellenőrizd, hogy a forrás PNG támogatott formátumú-e, és hogy a byte‑tömb teljesen be legyen olvasva a `setImage` hívása előtt. |
+| **OutOfMemoryError on large diagrams** | A diagramokat sorban dolgozd fel, és szükség esetén hívd meg a `System.gc()`‑t minden `watermarker.close()` után. |
+| **License exception** | Győződj meg róla, hogy a próbaverzió vagy a megvásárolt licencfájl helyesen van hivatkozva a `Watermarker` inicializálása előtt. |
 
 ## Gyakran feltett kérdések
 
-**Q: Cserélhetek képeket jelszóval védett diagramokban?**  
-A: Igen. Adja meg a jelszót a `DiagramLoadOptions`-nek a `Watermarker` létrehozásakor.
+**Q:** **Can I replace images in password‑protected diagrams?**  
+A:** Igen. Töltsd be a diagramot a megfelelő `DiagramLoadOptions`‑szel, amely tartalmazza a jelszót, majd hajtsd végre ugyanazokat a csere‑lépéseket.
 
-**Q: A könyvtár működik .drawio (XML) fájlokkal?**  
-A: Teljesen – a GroupDocs.Watermark támogatja a Draw.io XML formátumot, és minden csomópontot formaként kezel.
+**Q:** **Does this work with other diagram formats like VDX?**  
+**A:** A GroupDocs.Watermark támogatja a VDX, VDXM és VSDX formátumokat alapból. Csak módosítsd a fájl kiterjesztését az útvonalban.
 
-**Q: Hány diagramot dolgozhatok fel párhuzamosan?**  
-A: A könyvtár szálbiztos csak olvasási műveletekhez; írási műveletek esetén korlátozza a párhuzamosságot a CPU‑magok számához, hogy elkerülje a fájlkezelő ütközéseket.
+**Q:** **How do I replace images in all pages, not just the first one?**  
+**A:** Iterálj a `content.getPages()` gyűjteményen, és alkalmazd a belső alakzatformázó ciklust minden oldalra.
 
-**Q: Van korlátozás a kép méretére?**  
-A: Legfeljebb 100 MB‑os képek támogatottak; nagyobb fájlokat előzetesen méretezze át a memóriahasználat alacsonyan tartása érdekében.
+**Q:** **Is there a way to batch process multiple diagrams?**  
+**A:** Csomagold a négy lépést egy ciklusba, amely egy könyvtárból olvassa be a fájlneveket, és minden fájlhoz új `Watermarker`‑t hoz létre.
 
-**Q: Milyen licencelési lehetőségek állnak rendelkezésre?**  
-A: Kezdhet egy ingyenes 30‑napos próbaidőszakkal; termelési használathoz fizetős licenc szükséges, amelyet a GroupDocs áruházból szerezhet be.
+**Q:** **What version of GroupDocs.Watermark is required?**  
+**A:** Az útmutató a 24.11‑es verziót használja, de az újabb kiadások visszafelé kompatibilisek ezekkel az API‑kkal.
+
+## Következtetés
+Most már egy teljes, termelés‑kész munkafolyamatod van a **replace diagram images java** végrehajtásához a GroupDocs.Watermark for Java segítségével. A kép bájtok java‑ban történő beolvasásával, az alakzatok iterálásával és az eredmény mentésével automatizálhatod a márkafrissítéseket, katalógus‑ vagy oktatási anyagok frissítését nagy léptékben. Fedezd fel a további vízjelezési funkciókat — például szöveges vízjelek hozzáadását vagy diagramok védelmét — hogy még szélesebb körben bővíthesd a dokumentumfeldolgozási képességeidet.
 
 ---
 
-**Legutóbb frissítve:** 2026-08-19  
-**Tesztelve:** GroupDocs.Watermark 23.9 for Java  
-**Szerző:** GroupDocs
-
-## Kapcsolódó útmutatók
-
-- [Diagram vízjelezési útmutatók a GroupDocs.Watermark Java-hoz](/watermark/java/diagram-document-watermarking/)
-- [Hiperhivatkozások eltávolítása diagram formákból a GroupDocs.Watermark Java használatával a dokumentum biztonságának növeléséhez](/watermark/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-- [Hogyan adjon hozzá képi vízjelet Java-ban a GroupDocs.Watermark használatával: Lépésről lépésre útmutató](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
+**Last Updated:** 2025-12-17  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs

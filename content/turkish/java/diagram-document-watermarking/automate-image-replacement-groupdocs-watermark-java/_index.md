@@ -1,78 +1,43 @@
 ---
-date: '2026-08-19'
-description: Java'da GroupDocs.Watermark kullanarak diyagram görüntülerini nasıl değiştireceğinizi
-  ve diyagrama verimli bir şekilde filigran eklemeyi öğrenin. Adım adım kod ve en
-  iyi uygulamalar.
+date: '2025-12-17'
+description: GroupDocs.Watermark for Java kullanarak diyagram görüntülerini nasıl
+  değiştireceğinizi ve görüntü baytlarını Java’da verimli bir şekilde nasıl okuyacağınızı
+  öğrenin. Açık adım‑adım kodla güncellemeleri otomatikleştirin.
 keywords:
-- replace diagram images java
-- add watermark to diagram
-- groupdocs watermark java
-lastmod: '2026-08-19'
-og_description: Java'da GroupDocs.Watermark kullanarak diyagram görüntülerini nasıl
-  değiştireceğinizi ve diyagrama verimli bir şekilde filigran eklemeyi öğrenin. Adım
-  adım kod ve en iyi uygulamalar.
-og_image_alt: Guide showing Java code to replace diagram images with GroupDocs.Watermark
-og_title: Java'da GroupDocs.Watermark kullanarak diyagram görüntülerini değiştirin
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to replace diagram images in Java using GroupDocs.Watermark,
-    and also add watermark to diagram efficiently. Step‑by‑step code and best practices.
-  headline: Replace diagram images in Java using GroupDocs.Watermark
-  type: TechArticle
-- questions:
-  - answer: Yes. Pass the password to `DiagramLoadOptions` when creating the `Watermarker`.
-    question: Can I replace images in password‑protected diagrams?
-  - answer: Absolutely – GroupDocs.Watermark supports the Draw.io XML format and treats
-      each node as a shape.
-    question: Does the library work with .drawio (XML) files?
-  - answer: The library is thread‑safe for read‑only operations; for write operations,
-      limit concurrency to the number of CPU cores to avoid file‑handle contention.
-    question: How many diagrams can I process in parallel?
-  - answer: Images up to 100 MB are supported; larger files should be resized beforehand
-      to keep memory usage low.
-    question: Is there a limit on image size?
-  - answer: You can start with a free 30‑day trial; production use requires a paid
-      license, which can be obtained from the GroupDocs store.
-    question: What licensing options are available?
-  type: FAQPage
-tags:
-- diagram image replacement
-- groupdocs watermark
-- java document processing
-title: Java'da GroupDocs.Watermark kullanarak diyagram görüntülerini değiştirin
+- GroupDocs Watermark Java
+- automate image replacement
+- Java diagram watermarking
+title: Java'da Diagram Görsellerini GroupDocs.Watermark ile Değiştir – Tam Kılavuz
 type: docs
 url: /tr/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Java'da GroupDocs.Watermark kullanarak diyagram görüntülerini değiştirin
+# Java ile Diagram Görsellerini Değiştirme - GroupDocs.Watermark
 
-Diyagram dosyalarındaki görüntüleri manuel olarak güncellemek zaman alıcı ve hataya açıktır. Bu öğreticide sadece birkaç satır kodla **Java'da diyagram görüntülerini değiştirmeyi** öğrenecek ve gerektiğinde **diyagrama filigran eklemeyi** de göreceksiniz. Sonunda Visio, Draw.io veya diğer desteklenen diyagram formatlarıyla çalışan herhangi bir Java projesine ekleyebileceğiniz yeniden kullanılabilir bir kod parçacığına sahip olacaksınız.
+Visio‑stilindeki diagramların içindeki grafikleri güncellemek, özellikle birçok dosyada **replace diagram images java** yapmanız gerektiğinde zahmetli bir manuel görev olabilir. Bu öğreticide, GroupDocs.Watermark for Java, read image bytes java kullanarak bu süreci nasıl otomatikleştireceğinizi keşfedecek ve değişiklikleri programlı olarak uygulayacaksınız. Sonunda, zaman kazandıran, insan hatasını azaltan ve belgelerinizin tutarlı bir şekilde markalanmasını sağlayan yeniden kullanılabilir bir çözüm elde edeceksiniz.
 
-## Hızlı cevaplar
-- **Diyagram görüntüsü değişimini hangi kütüphane yönetir?** GroupDocs.Watermark for Java.
-- **Temel bir değişim için kaç satır kod gerekir?** Watermarker oluşturulduktan sonra sadece üç satır.
-- **Aynı anda bir filigran ekleyebilir miyim?** Evet – aynı Watermarker örneğini bir filigran nesnesiyle kullanın.
-- **Hangi Java sürümü gereklidir?** JDK 8 veya üzeri.
-- **Üretim kullanımında lisansa ihtiyacım var mı?** Geçerli bir GroupDocs.Watermark lisansı gereklidir; ücretsiz deneme sürümü mevcuttur.
+## Hızlı Yanıtlar
+- **Diagram görsel değiştirme işlemini hangi kütüphane yönetir?** GroupDocs.Watermark for Java  
+- **Hangi yöntem görüntü baytlarını okur?** `FileInputStream` combined with `read(byte[])` (read image bytes java)  
+- **Bir lisansa ihtiyacım var mı?** Değerlendirme için deneme lisansı yeterlidir; üretim için tam lisans gereklidir.  
+- **Desteklenen diagram formatları?** VSDX, VDX, VDXM ve diğer Microsoft Visio dosyaları.  
+- **Uygulama ne kadar sürer?** Temel bir replace‑diagram‑images‑java iş akışı için yaklaşık 15‑20 dakika.
 
-## Java'da diyagram görüntülerini değiştirme nedir?
-Java'da diyagram görüntülerini değiştirmek, bir diyagram dosyası (.vsdx, .drawio veya .svg gibi) içinde bitmap grafik içeren şekilleri programlı olarak bulmak ve bu gömülü görüntüleri GroupDocs.Watermark API'si kullanarak yeni görüntülerle değiştirmek anlamına gelir. Bu, aksi takdirde bir diyagram düzenleyicisinde manuel olarak yapılması gereken güncellemeleri otomatikleştirir.
+## replace diagram images java nedir?
+Replacing diagram images Java, bir Visio diagramı içinde görüntü içeren şekilleri programlı olarak bulup gömülü resmi yeni bir dosyayla Java kodu kullanarak değiştirmeyi ifade eder. Bu teknik, toplu marka güncellemeleri, ürün kataloğu yenilemeleri veya görsel varlıkların zaman içinde değiştiği herhangi bir senaryo için idealdir.
 
-## Diyagram görüntüsü değişimi için neden GroupDocs.Watermark kullanılmalı?
-GroupDocs.Watermark **50+ giriş ve çıkış formatını** destekler – Visio, Draw.io ve SVG dahil – ve belgeyi belleğe tamamen yüklemeden **500 MB'a kadar dosyaları** işleyebilir, bu da naif dosya akışı yaklaşımlarına göre **CPU kullanımında %30 azalma** sağlar.
+## Bu görev için neden GroupDocs.Watermark kullanılmalı?
+GroupDocs.Watermark, Visio dosyalarının düşük seviyeli XML'ini soyutlayan yüksek seviyeli bir API sunar, böylece dosya formatı incelikleri yerine iş mantığına odaklanabilirsiniz. Yükleme, içerik gezinme ve kaydetme işlemlerini, diagram bütünlüğünü koruyarak yönetir.
 
 ## Önkoşullar
-- JDK 8 veya daha yeni bir sürüm yüklü.
-- Java geliştirme için bir IDE (IntelliJ IDEA, Eclipse veya VS Code).
-- Maven (veya JAR'ları manuel ekleme yeteneği).
-- Geçerli bir GroupDocs.Watermark lisansı (deneme veya kalıcı). Lisansı [GroupDocs](https://purchase.groupdocs.com/temporary-license/) adresinden edinebilirsiniz.
+- JDK 8 ve üzeri yüklü.  
+- Bağımlılık yönetimi için Maven (veya manuel JAR yönetimi).  
+- Temel Java bilgisi (sınıflar, akışlar, istisna yönetimi).  
 
-### Gerekli kütüphaneler, sürümler ve bağımlılıklar
-GroupDocs.Watermark deposunu ve bağımlılığını `pom.xml` dosyanıza ekleyin:
+### Gerekli Kütüphaneler, Sürümler ve Bağımlılıklar
+GroupDocs.Watermark for Java kullanmak için, depo ve bağımlılığı `pom.xml` dosyanıza ekleyin:
 
-```xml
 ```xml
 <repositories>
    <repository>
@@ -90,16 +55,27 @@ GroupDocs.Watermark deposunu ve bağımlılığını `pom.xml` dosyanıza ekleyi
    </dependency>
 </dependencies>
 ```
-```
 
-Manuel JAR yönetimini tercih ediyorsanız, resmi siteden en son sürümü indirin: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Ayrıca resmi siteden en yeni JAR'ı indirebilirsiniz: [GroupDocs.Watermark for Java sürümleri](https://releases.groupdocs.com/watermark/java/).
 
-## Java'da diyagram görüntülerini adım adım nasıl değiştirilir
+### Ortam Kurulum Gereksinimleri
+- IntelliJ IDEA veya Eclipse gibi bir IDE.  
+- Değiştirmeyi planladığınız diagram dosyalarına erişim.  
 
-### Bir diyagram dosyası için Watermarker nasıl başlatılır?
-Watermarker, bir belgeyi temsil eden ve içerik manipülasyonu için yöntemler sağlayan ana sınıftır. Başlamak için diyagram dosyasını belleğe yükleyen bir `Watermarker` nesnesi oluşturun. `Watermarker` sınıfı, GroupDocs.Watermark'ın temel giriş noktasıdır ve belgeleri okumanıza, değiştirmenize ve kaydetmenize olanak tanır. DPI veya sayfa aralığı gibi format‑özel ayarları belirtmek için `DiagramLoadOptions` kullanın. `DiagramLoadOptions`, bir diyagramın nasıl yükleneceğini yapılandırır; örneğin DPI veya yükleme modunu ayarlamak gibi.
+### Bilgi Önkoşulları
+Java I/O, nesne yönelimli programlama ve temel diagram kavramlarına aşina olmak, adımları sorunsuz takip etmenize yardımcı olacaktır.
 
-```java
+## GroupDocs.Watermark for Java'ı Kurma
+1. **Maven bağımlılığını ekleyin** (yukarıda gösterildiği gibi) veya JAR'ları sınıf yolunuza yerleştirin.  
+2. **GroupDocs mağazasından deneme veya kalıcı lisans edinin**: [GroupDocs](https://purchase.groupdocs.com/temporary-license/).  
+3. **Gerekli paketleri içe aktarın** ve bir `Watermarker` örneği oluşturun (aşağıdaki koda bakın).
+
+## GroupDocs.Watermark ile diagram görsellerini java’da nasıl değiştirilir
+Aşağıda, kütüphaneyi başlatma, diagram içeriğine erişme, görselleri değiştirme ve değişiklikleri kalıcı hale getirme adımlarını adım adım gösteren eksiksiz bir rehber bulacaksınız.
+
+### Adım 1: Watermarker'ı Başlatma
+İlk olarak, diagram dosyanıza işaret eden bir `Watermarker` nesnesi oluşturun.
+
 ```java
 import java.io.File;
 import com.groupdocs.watermark.Watermarker;
@@ -113,12 +89,12 @@ public class FeatureWatermarkerInitialization {
     }
 }
 ```
-```
 
-### Şekilleri bulmak için diyagram içeriğine nasıl erişilir?
-Dosya yüklendikten sonra `Watermarker` üzerinden bir `DiagramContent` nesnesi alın. `DiagramContent`, diyagramın sayfalar ve şekiller içindeki iç hiyerarşisini temsil eder. Bu model, sayfa ve şekil koleksiyonlarını ortaya çıkarır; bu koleksiyonlar üzerinde döngü kurarak görüntü veya metin gibi belirli öğeleri kolayca bulabilirsiniz.
+*Neden önemli:* `Watermarker` dosyayı açar ve sonraki manipülasyonlar için iç yapıları hazırlar.
 
-```java
+### Adım 2: Diagram İçeriğine Erişim
+Şekilleri listeleyebilmek için diagramın iç temsilini alın.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -129,12 +105,12 @@ public class FeatureAccessDiagramContent {
     }
 }
 ```
-```
 
-### Diyagramda şekil görüntüleri nasıl değiştirilir?
-İstenen sayfadaki her `DiagramShape` üzerinde döngü yapın, şeklin bir görüntü içerip içermediğini kontrol edin ve görüntü baytlarını yeni bir dosyanın baytlarıyla değiştirin. `DiagramShape`, diyagramdaki tek bir şeklin modelidir; `DiagramWatermarkableImage` ise bir şekle uygulanabilecek görüntü verilerini saklar.
+*Neden önemli:* `DiagramContent` size sayfa ve şekil koleksiyonlarını sağlar, görsel değiştirme için giriş noktasıdır.
 
-```java
+### Adım 3: read image bytes java ve şekil görsellerini değiştir
+Şimdi, içinde görüntü bulunan her şekli buluyor, yeni resim dosyasını (read image bytes java) okuyor ve uyguluyoruz.
+
 ```java
 import java.io.File;
 import java.io.FileInputStream;
@@ -159,12 +135,14 @@ public class FeatureReplaceShapeImages {
     }
 }
 ```
-```
 
-### Değişiklikleri nasıl kaydedip Watermarker'ı kapatırsınız?
-Tüm değişiklikler tamamlandığında, güncellenen diyagramı bir dosyaya yazmak için `Watermarker` üzerinde `save` metodunu çağırın, ardından yerel kaynakları serbest bırakmak için `close` metodunu çalıştırın. Bu, dosya tanıtıcılarının serbest bırakılmasını sağlar ve özellikle toplu işte birçok diyagram işlenirken bellek sızıntılarını önler.
+*Ana noktalar:*  
+- `FileInputStream` yeni PNG'yi bir bayt dizisine okur—bu **read image bytes java** adımıdır.  
+- `DiagramWatermarkableImage` bayt dizisini sarar, böylece kütüphane şekle gömebilir.
 
-```java
+### Adım 4: Watermarker'ı Kaydet ve Kapat
+Değiştirilen diagramı kalıcı hale getirin ve kaynakları serbest bırakın.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -176,51 +154,49 @@ public class FeatureSaveAndCloseWatermarker {
     }
 }
 ```
-```
 
-## Aynı diyagrama filigran ekleme (isteğe bağlı)
+*Neden önemli:* Kaydetme yeni görselleri dosyaya yazar ve kapatma bellek serbest bırakır—birçok diagramı toplu işlemek için esastır.
 
-Diyagramı markalamak da istiyorsanız, görüntü değişiminden önce ya da sonra bir filigran ekleyebilirsiniz:
+## Pratik Uygulamalar
+1. **Kurumsal marka güncellemeleri** – Tüm organizasyon şalarında eski logoları tek seferde değiştirin.  
+2. **Ürün kataloğu yenilemeleri** – Teknik kılavuzlarda artık satılmayan ürün görsellerini değiştirin.  
+3. **Eğitim materyali bakımı** – Bilimsel illüstrasyonları manuel düzenleme yapmadan güncel tutun.
 
-```java
-// Example – adding a text watermark
-Watermark watermark = new TextWatermark("Confidential", new Font("Arial", 12));
-watermarker.add(watermark);
-```
+## Performans Düşünceleri
+- **Büyük dosyalarla çalışırken** bellek kullanımını düşük tutmak için bir seferde bir diagram işleyin.  
+- **Akışları hemen kapatın** (gösterildiği gibi) dosya kilitlenmelerini önlemek için.  
+- **I/O profilini çıkarın** yüzlerce diagramla çalışmanız gerekiyorsa; her iş parçacığı için ayrı `Watermarker` örnekleriyle çok iş parçacıklı çalışmayı düşünün.
 
-## Yaygın tuzaklar ve sorun giderme
+## Yaygın Sorunlar ve Çözümler
 
-| Semptom | Muhtemel neden | Çözüm |
-|---------|----------------|-------|
-| Kod çalıştırıldıktan sonra görüntü değişmedi | `DiagramShape.hasImage()` false döndürdü | Şekil tipini doğrulayın; bazı vektör şekilleri görüntüleri farklı şekilde depolar. |
-| Büyük dosyalarda OutOfMemoryError | Diyagramın tamamını bir kerede yüklemek | `DiagramLoadOptions.setLoadMode(LoadMode.Stream)` kullanarak sayfaları sıralı işleyin. |
-| Filigran görünmüyor | Filigran mevcut içeriğin arkasına yerleştirildi | Kaydetmeden önce `watermarker.setWatermarkPosition(Position.Foreground)` metodunu çağırın. |
+| Sorun | Çözüm |
+|-------|----------|
+| **Değiştirme sonrası boş (null) görüntü** | Kaynak PNG'nin desteklenen bir format olduğundan ve `setImage` çağrılmadan önce bayt dizisinin tamamen okunduğundan emin olun. |
+| **Büyük diagramlarda OutOfMemoryError** | Diagramları sırayla işleyin ve gerekirse her `watermarker.close()` sonrası `System.gc()` çağırın. |
+| **Lisans istisnası** | `Watermarker` başlatılmadan önce deneme veya satın alınmış lisans dosyasının doğru şekilde referans alındığından emin olun. |
 
-## Sıkça sorulan sorular
+## Sıkça Sorulan Sorular
 
-**S: Parola korumalı diyagramlardaki görüntüleri değiştirebilir miyim?**  
-C: Evet. `Watermarker` oluştururken parolayı `DiagramLoadOptions`'a geçirin.
+**S: Parola korumalı diagramlarda görselleri değiştirebilir miyim?**  
+C: Evet. Parolayı içeren uygun `DiagramLoadOptions` ile diagramı yükleyin, ardından aynı değiştirme adımlarını izleyin.
 
-**S: Kütüphane .drawio (XML) dosyalarıyla çalışıyor mu?**  
-C: Kesinlikle – GroupDocs.Watermark Draw.io XML formatını destekler ve her düğümü bir şekil olarak ele alır.
+**S: Bu, VDX gibi diğer diagram formatlarıyla çalışır mı?**  
+C: GroupDocs.Watermark, VDX, VDXM ve VSDX formatlarını kutudan çıkar çıkmaz destekler. Yalnızca yol içindeki dosya uzantısını değiştirin.
 
-**S: Aynı anda kaç diyagram işleyebilirim?**  
-C: Kütüphane sadece okuma işlemleri için iş parçacığı güvenlidir; yazma işlemleri için dosya tanıtıcı çakışmasını önlemek amacıyla eşzamanlılığı CPU çekirdek sayısıyla sınırlayın.
+**S: Görselleri sadece ilk sayfada değil, tüm sayfalarda nasıl değiştiririm?**  
+C: `content.getPages()` üzerinde döngü kurun ve iç şekil döngüsünü her sayfaya uygulayın.
 
-**S: Görüntü boyutu için bir limit var mı?**  
-C: 100 MB'a kadar görüntüler desteklenir; daha büyük dosyalar bellek kullanımını düşük tutmak için önceden yeniden boyutlandırılmalıdır.
+**S: Birden fazla diagramı toplu işlemek için bir yol var mı?**  
+C: Dört adımı bir döngü içinde sarın; dizinden dosya adlarını okuyun ve her dosya için yeni bir `Watermarker` oluşturun.
 
-**S: Hangi lisans seçenekleri mevcuttur?**  
-C: Ücretsiz 30‑günlük deneme ile başlayabilirsiniz; üretim kullanımı için ücretli bir lisans gerekir ve bu lisans GroupDocs mağazasından temin edilebilir.
+**S: Hangi GroupDocs.Watermarkümü gereklidir?**  
+C: Öğreticide 24.11 sürümü kullanılmıştır, ancak daha yeni sürümler bu API'lerle geriye dönük uyumluluğu korur.
+
+## Sonuç
+Artık GroupDocs.Watermark for Java kullanarak **replace diagram images java** işlemi için eksiksiz, üretim‑hazır bir iş akışına sahipsiniz. read image bytes java okuyarak, şekiller üzerinde döngü kurarak ve sonucu kaydederek marka, katalog veya eğitim güncellemelerini ölçekli bir şekilde otomatikleştirebilirsiniz. Metin watermark'ları ekleme veya diagramları koruma gibi ek watermark özelliklerini keşfederek belge işleme yeteneklerinizi daha da genişletebilirsiniz.
 
 ---
 
-**Son Güncelleme:** 2026-08-19  
-**Test Edilen:** GroupDocs.Watermark 23.9 for Java  
+**Son Güncelleme:** 2025-12-17  
+**Test Edilen Sürüm:** GroupDocs.Watermark 24.11 for Java  
 **Yazar:** GroupDocs
-
-## İlgili Öğreticiler
-
-- [GroupDocs.Watermark Java için Diyagram Filigranlama Öğreticileri](/watermark/java/diagram-document-watermarking/)
-- [Gelişmiş Belge Güvenliği için GroupDocs.Watermark Java kullanarak Diyagram Şekillerinden Hipermetin Bağlantılarını Kaldırma](/watermark/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-- [Java'da GroupDocs.Watermark kullanarak Görüntü Filigranı Ekleme: Adım Adım Kılavuz](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)

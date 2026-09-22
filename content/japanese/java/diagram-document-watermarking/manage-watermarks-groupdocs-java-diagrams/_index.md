@@ -1,96 +1,47 @@
 ---
-date: '2026-08-19'
-description: GroupDocs.Watermark for Java を使用して知的財産図を保護する方法を学びます。ステップバイステップ ガイドで .vsdx
-  ファイルを読み込み、image watermark を検出し、watermarks を検索・削除する方法を解説します。
+date: '2025-12-19'
+description: Java を使用して GroupDocs Watermark Maven の使い方を学び、.vsdx などの図面ファイルの透かしを管理し、文書の完全性を高め、知的財産を保護します。
 keywords:
-- intellectual property diagrams
-- detect image watermark
 - GroupDocs.Watermark Java
-- diagram watermark management
-- Java watermark API
-lastmod: '2026-08-19'
-og_description: GroupDocs.Watermark for Java を使用して知的財産図を保護する方法をご紹介します。.vsdx ファイルの読み込み、image
-  watermark の検出、不要な watermarks の効率的な削除方法を学びましょう。
-og_image_alt: Java code snippet showing watermark detection in diagram files
-og_title: GroupDocs.Watermark を使用して知的財産図を保護する
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  headline: Protect intellectual property diagrams with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  name: Protect intellectual property diagrams with GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-    text: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-    text: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-  type: HowTo
-- questions:
-  - answer: Yes, combine criteria with `OrSearchCriteria` (e.g., `new OrSearchCriteria(textCriteria,
-      imageCriteria)`) to retrieve both types at once.
-    question: Can I search for both text and image watermarks in a single call?
-  - answer: No. The library isolates watermark objects, so shapes, connectors, and
-      formatting remain unchanged after `clear()`.
-    question: Will removing watermarks corrupt the diagram layout?
-  - answer: GroupDocs.Watermark handles `.vsdx`, `.vdx`, `.vsx`, and several older
-      Visio formats, covering over **30** diagram types.
-    question: Which diagram formats are supported?
-  - answer: Use Java’s `ExecutorService` to run watermark detection/removal in parallel
-      batches, and reuse a single `Watermarker` configuration object to reduce overhead.
-    question: How do I process thousands of diagrams efficiently?
-  - answer: Absolutely. Add the Java snippets to your build scripts (Maven/Gradle)
-      and run them as a pre‑deployment verification step to ensure no prohibited watermarks
-      are present.
-    question: Is it possible to integrate this into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark diagrams
-- GroupDocs.Watermark
-- Java document processing
-- intellectual property protection
-title: GroupDocs.Watermark を使用して知的財産図を保護する
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark maven – Javaでダイアグラムの透かしを管理する
 type: docs
 url: /ja/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
 weight: 1
 ---
 
-# 知的財産図の保護 - GroupDocs.Watermark
+# groupdocs watermark maven – Javaで図面の透かしを管理する
 
-知的財産図を保護することは、設計資産、フローチャート、またはアーキテクチャ図を共有するすべての組織にとって重要なステップです。GroupDocs.Watermark for Java を使用すると、図ファイル（例: `.vsdx`）をプログラムで読み込み、画像ウォーターマークのインスタンスを検出し、テキストウォーターマークを検索し、元の図を破損させることなく安全に削除できます。このチュートリアルでは、環境設定から大量の図ライブラリのバッチ処理まで、プロセス全体を順を追って説明しますので、Java アプリケーションに堅牢な IP 保護を直接組み込むことができます。
+ドキュメントの透かしを管理することは、知的財産を保護し、ドキュメントの完全性を維持するために不可欠です。**このチュートリアルでは、groupdocs watermark maven を使用して `.vsdx` などの図面ファイルから透かしを効率的に読み込み、検索し、削除する方法を示します**。エンタープライズソフトウェアの構築やドキュメントワークフローの自動化を行う場合でも、これらのテクニックを習得すれば、図面の透かし管理を完全にコントロールできます。
 
 ## クイック回答
-- **どのライブラリが図のウォーターマークを処理しますか？** GroupDocs.Watermark for Java.  
-- **画像ウォーターマークとテキストの両方を検出できますか？** Yes, the API provides `ImageDctHashSearchCriteria` for image detection and `TextSearchCriteria` for text.  
-- **コードを実行するのに商用ライセンスが必要ですか？** A trial license works for development; a paid license is required for production.  
-- **バッチ処理はサポートされていますか？** Absolutely—loop over a folder and apply the same watermark logic to each file.  
-- **削除後も元の図のレイアウトはそのままですか？** The library clears only watermark objects, preserving all shapes, connectors, and formatting.
+- **必要なライブラリは何ですか？** GroupDocs.Watermark for Java (Maven で利用可能)。
+- **サポートされている図面フォーマットは何ですか？** `.vsdx`, `.vdx`, およびその他の Visio フォーマット。
+- **テキストと画像の透かしの両方を検索できますか？** はい – 検索条件を `or()` で組み合わせます。
+- **本番環境でライセンスは必要ですか？** 有効な GroupDocs.Watermark ライセンスが必要です。
+- **これを Maven に統合するにはどうすればよいですか？** 以下に示すリポジトリと依存関係を追加します。
 
-## 知的財産図とは何ですか？
-知的財産図は、フローチャート、UML モデル、ネットワーク図、または建築図面など、個人または組織が所有する専有情報を含む視覚的表現です。これらの図は機密プロセス、設計、戦略を伝えることが多く、無断コピー、配布、改変から保護すべき価値ある資産です。知的財産として扱うことで、ウォーターマークを含む法的・技術的な保護策を適用し、使用と配布を管理できます。
+## groupdocs watermark maven とは？
 
-## なぜ GroupDocs.Watermark for Java を使用するのか？
-GroupDocs.Watermark は **50+** の入力および出力フォーマット（`.vsdx`、`.vdx`、`.vsx` など）をサポートし、ファイル全体をメモリに読み込むことなく数百ページに及ぶ図を処理できるため、ナイーブなファイルストリーム方式と比較して RAM 使用量を最大 **70 %** 削減します。API には OCR 不要の画像ハッシュ比較が組み込まれており、典型的な 2.5 GHz サーバー上で 1 図あたり **200 ms** 未満で信頼性の高い画像ウォーターマーク検出が可能です。
+`groupdocs watermark maven` は、GroupDocs.Watermark ライブラリ（Java 用）の Maven ベースの統合を指します。`pom.xml` にライブラリを宣言すると、Maven が必要なバイナリを自動的に解決し、図面の読み込み、透かしの検索、透かしのプログラム的な削除に集中できるようになります。
+
+## なぜ Diagram の透かし管理に GroupDocs.Watermark を使用するのか？
+
+- **フル機能 API** – 多くの図面タイプに対してテキスト、画像、シェイプの透かしをサポートします。  
+- **正確な削除** – 元の図面レイアウトを破壊せずに透かしを除去します。  
+- **スケーラブル** – 大量の図面コレクションのバッチ処理に適しています。  
+- **Maven フレンドリー** – シンプルな依存関係管理でプロジェクトをクリーンに保ちます。
 
 ## 前提条件
-開始する前に、以下を用意してください。
-
-1. **Java Development Kit (JDK) 8+** – コードは標準の Java 8 API を使用します。  
-2. **IDE** – IntelliJ IDEA、Eclipse、またはお好みのエディタ。  
-3. **GroupDocs.Watermark for Java** – Maven 経由または手動 JAR ダウンロードで入手。  
+1. **Java Development Kit (JDK) 8+** – ライブラリとの互換性を保証します。  
+2. **IDE** – IntelliJ IDEA、Eclipse、または任意の Java 対応エディタ。  
+3. **GroupDocs.Watermark for Java** – Maven 経由（推奨）または直接 JAR ダウンロードで追加します。  
 
 ### 必要なライブラリと依存関係
-ライブラリは Maven で追加するか、JAR を直接ダウンロードできます。
-
 #### Maven 設定
-`pom.xml` ファイルにリポジトリと依存関係のエントリを追加します:
+Add the following configuration to your `pom.xml` file:
 
 ```xml
 <repositories>
@@ -111,87 +62,15 @@ GroupDocs.Watermark は **50+** の入力および出力フォーマット（`.v
 ```
 
 #### 直接ダウンロード
-手動インストールを希望する場合は、[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) から最新リリースをダウンロードしてください。
+または、最新バージョンを [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) からダウンロードしてください。
 
 ### ライセンス取得
-- **無料トライアル:** API 機能の評価に最適です。  
-- **一時ライセンス:** 機能制限なしで短期テストに使用できます。  
-- **購入:** 本番環境での展開とプレミアムフォーマットのロック解除に必要です。
+- **Free Trial:** 試用ライセンスでライブラリをテストできます。  
+- **Temporary License:** 評価用に短期キーをリクエストできます。  
+- **Purchase:** 無制限に使用できる本番ライセンスを取得します。
 
-## Watermarker の初期化方法は？
-`Watermarker` インスタンスの作成は、すべてのウォーターマークワークフローの最初のステップです。`Watermarker` クラスは図ファイルをメモリに読み込み、検索、追加、削除のメソッドを提供します。図のパスとオプションの `DiagramLoadOptions` を渡すことで、以降のすべての操作の中心となるオブジェクトを取得し、ドキュメント全体の一貫した取り扱いを保証します。
-
-```java
-Watermarker watermarker = new Watermarker(inputFilePath, loadOptions);
-```
-
-## 図ドキュメントの読み込み方法は？
-`DiagramLoadOptions` を使用して図を読み込むと、ファイルの解析方法を細かく制御できます。`DiagramLoadOptions` では、表示ページのみを読み込むか、非表示レイヤーを保持するか、埋め込みフォントの取り扱いなどを指定できます。これらのオプションを調整することで、大規模な図のパフォーマンスが大幅に向上し、必要な部分だけを処理してメモリ使用量とウォーターマーク検出の速度を最適化できます。
-
-```java
-DiagramLoadOptions loadOptions = new DiagramLoadOptions();
-loadOptions.setLoadHiddenLayers(false);
-Watermarker watermarker = new Watermarker("sample.vsdx", loadOptions);
-```
-
-## 図内の画像ウォーターマークを検出する方法は？
-画像ウォーターマークの検出は `ImageDctHashSearchCriteria` クラスに依存します。このクラスは参照画像の知覚ハッシュを計算し、図内のすべての埋め込み画像と比較します。軽微な視覚的変化に耐える高速な手法で、サイズ変更や微調整が行われたロゴやグラフィックウォーターマークも検出できます。類似度閾値を設定することで、検出感度と偽陽性のバランスを調整できます。
-
-```java
-ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria("logo.png");
-PossibleWatermarkCollection watermarks = watermarker.search(criteria);
-```
-
-## テキストウォーターマークを検索する方法は？
-テキストウォーターマークの検索には `TextSearchCriteria` クラスを使用します。このクラスは図内のすべてのテキスト層（シェイプ、コネクタ、グループ化された要素内も含む）を走査し、指定した文字列またはパターンを含む一致を返します。デフォルトで大文字小文字を区別せず、正規表現で絞り込むこともできるため、回転、部分的に隠された、または複雑な構造に埋め込まれたウォーターマークも検出可能です。
-
-```java
-TextSearchCriteria textCriteria = new TextSearchCriteria("Confidential");
-PossibleWatermarkCollection textWatermarks = watermarker.search(textCriteria);
-```
-
-## 図からウォーターマークを削除する方法は？
-削除は検索操作で取得した各 `Watermark` オブジェクトの `clear()` メソッドを呼び出すことで実行します。`clear()` は視覚的なウォーターマーク要素のみを削除し、形状、コネクタ、書式設定などの基礎となる図オブジェクトはそのまま残します。削除後は `save` メソッドでドキュメントを保存し、元のレイアウトと機能を保持したクリーンな図バージョンを生成します。
-
-```java
-for (Watermark wm : watermarks) {
-    wm.clear();
-}
-watermarker.save("cleaned.vsdx");
-```
-
-## 実用的な応用例
-- **エンタープライズソフトウェア統合:** ドキュメント管理システムにウォーターマーク検証を組み込み、IP ポリシーを自動的に適用。  
-- **コンテンツ管理システム (CMS):** ユーザーがアップロードした図をスキャンし、無許可ロゴが含まれていないか公開前にチェック。  
-- **法務文書取り扱い:** 証拠バンドル作成時に機密ウォーターマークを検出・除去。
-
-## よくある落とし穴とトラブルシューティング
-- **Missing license exception:** `License.setLicense("license_path")` でトライアルまたは有料ライセンスファイルが正しく参照されていることを確認してください。  
-- **Large diagram slowdown:** `loadOptions.setLoadHiddenLayers(false)` を有効にし、図の並列ストリーム処理を検討してください。  
-- **False‑positive image matches:** `criteria.setSimilarityThreshold(0.85)` で DCT ハッシュの許容度を調整し、誤検出を減らします。
-
-## よくある質問
-
-**Q: テキストと画像の両方のウォーターマークを単一の呼び出しで検索できますか？**  
-A: はい、`OrSearchCriteria` を組み合わせて（例: `new OrSearchCriteria(textCriteria, imageCriteria)`）両方のタイプを同時に取得できます。
-
-**Q: ウォーターマークを削除すると図のレイアウトが壊れますか？**  
-A: いいえ。ライブラリはウォーターマークオブジェクトだけを分離するため、`clear()` 後も形状、コネクタ、書式設定は変更されません。
-
-**Q: サポートされている図のフォーマットは何ですか？**  
-A: GroupDocs.Watermark は `.vsdx`, `.vdx`, `.vsx` などの古い Visio フォーマットを含め、**30** 以上の図タイプをサポートします。
-
-**Q: 何千もの図を効率的に処理するにはどうすればよいですか？**  
-A: Java の `ExecutorService` を使用してウォーターマークの検出/削除を並列バッチで実行し、`Watermarker` 設定オブジェクトを再利用してオーバーヘッドを削減します。
-
-**Q: これを CI/CD パイプラインに統合できますか？**  
-A: もちろんです。Java スニペットをビルドスクリプト（Maven/Gradle）に追加し、デプロイ前の検証ステップとして実行すれば、禁止されたウォーターマークが存在しないことを確認できます。
-
----
-
-**最終更新日:** 2026-08-19  
-**テスト環境:** GroupDocs.Watermark 23.12 for Java  
-**作者:** GroupDocs
+## groupdocs watermark maven を使用した図面ドキュメントの読み込み
+図面ドキュメントの読み込みは、透かし操作を行う前の最初のステップです。以下は、`DiagramLoadOptions` を使用して `Watermarker` インスタンスを作成する最小例です。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -207,6 +86,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
+
+- **パラメータ:**  
+  - `inputFilePath` – `.vsdx` ファイルへのパス。  
+  - `loadOptions` – 図面の解析方法を制御できます（例: パスワード保護）。
+
+## groupdocs watermark maven を使用した透かし検索
+### テキスト透かし
+テキストベースの透かしを検索するには、`TextSearchCriteria` を定義し、図面の最初のページをクエリします。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -229,6 +116,13 @@ public class SearchTextWatermarks {
 }
 ```
 
+- **主要メソッド:**  
+  - `TextSearchCriteria` – 検索する正確なテキストを指定します。  
+  - `PossibleWatermarkCollection` – 見つかった一致を格納します。
+
+### 画像透かし
+図面にロゴや画像の透かしが含まれている場合は、`ImageDctHashSearchCriteria` を使用して参照画像と比較します。
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -250,6 +144,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
+
+- **主要メソッド:**  
+  - `ImageDctHashSearchCriteria` – 参照画像の知覚ハッシュを作成し、堅牢なマッチングを実現します。
+
+## 透かしの削除
+不要な透かしを特定したら、クリアして図面のクリーンなコピーを保存できます。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -278,8 +178,40 @@ public class RemoveWatermarks {
 }
 ```
 
-## 関連チュートリアル
+- **主要メソッド:** `clear()` は、組み合わせた条件で見つかったすべての透かしを削除し、図面をそのまま残します。
 
-- [GroupDocs.Watermark for Java を使用した図へのウォーターマーク追加ガイド](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [GroupDocs.Watermark for Java を使用した図へのテキストウォーターマーク追加&#58; 包括的ガイド](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [GroupDocs.Watermark を使用した Java での図ヘッダー＆フッター編集&#58; 包括的ガイド](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
+## 実用的な応用例
+1. **エンタープライズソフトウェア統合** – ビジネスアプリに透かし管理を組み込み、専有図面を保護します。  
+2. **コンテンツ管理システム (CMS)** – 公開前に無許可ロゴの検出と削除を自動化します。  
+3. **法務ドキュメントワークフロー** – 契約処理の各段階で透かしを追加または除去します。  
+
+## よくある問題とトラブルシューティング
+- **ライセンスエラー:** `Watermarker` 作成前にライセンスファイルが正しく参照されていることを確認してください。  
+- **大きなファイル:** ストリーミング API を使用するか、図面が 100 MB を超える場合は JVM ヒープサイズ（`-Xmx2g`）を増やしてください。  
+- **透かしが見つからない:** 検索条件（テキストの大文字小文字、画像類似度閾値）が実際の透かし内容と一致しているか確認してください。
+
+## よくある質問
+
+**Q: テキストと画像の両方を同時に検索できますか？**  
+A: はい。削除例に示すように、条件を `or()` で組み合わせます。
+
+**Q: 図面のレイアウトを変更せずに透かしを安全に削除できますか？**  
+A: 完全に安全です。API は透かしオブジェクトだけを正確に対象とし、他のすべての図面要素を保持します。
+
+**Q: GroupDocs.Watermark がサポートする図面フォーマットは何ですか？**  
+A: `.vsdx`、`.vdx` などの Visio フォーマットや、その他のベクターダイアグラムタイプをサポートします。
+
+**Q: 数百の図面を効率的に処理するにはどうすればよいですか？**  
+A: バッチループを実装し、可能な限り単一の `Watermarker` インスタンスを再利用し、Java の `ExecutorService` を使った並列処理を検討してください。
+
+**Q: 透かし検出を CI/CD パイプラインに統合できますか？**  
+A: はい。ビルドスクリプト（例: Maven プラグインや Gradle タスク）に Java スニペットを組み込み、デプロイ前に図面を検証します。
+
+## 結論
+**groupdocs watermark maven** を活用することで、Java を使用して図面ファイルから透かしを読み込み、検索し、削除する強力な Maven 管理方式を手に入れられます。この機能はドキュメントのセキュリティを強化し、コンテンツワークフローを効率化し、大規模なドキュメントコレクションでも容易にスケールします。
+
+---
+
+**最終更新日:** 2025-12-19  
+**テスト環境:** GroupDocs.Watermark 24.11 for Java  
+**作者:** GroupDocs

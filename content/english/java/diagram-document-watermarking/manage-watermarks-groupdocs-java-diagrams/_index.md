@@ -1,100 +1,45 @@
 ---
-date: '2026-08-19'
-description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-  for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-  watermarks from .vsdx files.
-images:
-- /java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/og-image.png
-keywords:
-- intellectual property diagrams
-- detect image watermark
-- GroupDocs.Watermark Java
-- diagram watermark management
-- Java watermark API
-lastmod: '2026-08-19'
-og_description: Discover how to protect intellectual property diagrams using GroupDocs.Watermark
-  for Java. Learn to load .vsdx files, detect image watermark, and remove unwanted
-  watermarks efficiently.
-og_image_alt: Java code snippet showing watermark detection in diagram files
-og_title: Protect intellectual property diagrams with GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  headline: Protect intellectual property diagrams with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  name: Protect intellectual property diagrams with GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-    text: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-    text: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-  type: HowTo
-- questions:
-  - answer: Yes, combine criteria with `OrSearchCriteria` (e.g., `new OrSearchCriteria(textCriteria,
-      imageCriteria)`) to retrieve both types at once.
-    question: Can I search for both text and image watermarks in a single call?
-  - answer: No. The library isolates watermark objects, so shapes, connectors, and
-      formatting remain unchanged after `clear()`.
-    question: Will removing watermarks corrupt the diagram layout?
-  - answer: GroupDocs.Watermark handles `.vsdx`, `.vdx`, `.vsx`, and several older
-      Visio formats, covering over **30** diagram types.
-    question: Which diagram formats are supported?
-  - answer: Use Java’s `ExecutorService` to run watermark detection/removal in parallel
-      batches, and reuse a single `Watermarker` configuration object to reduce overhead.
-    question: How do I process thousands of diagrams efficiently?
-  - answer: Absolutely. Add the Java snippets to your build scripts (Maven/Gradle)
-      and run them as a pre‑deployment verification step to ensure no prohibited watermarks
-      are present.
-    question: Is it possible to integrate this into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark diagrams
-- GroupDocs.Watermark
-- Java document processing
-- intellectual property protection
-title: Protect intellectual property diagrams with GroupDocs.Watermark
-type: docs
-url: /java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
+title: "groupdocs watermark maven – Manage Diagram Watermarks with Java"
+description: "Learn how to use groupdocs watermark maven to manage watermarks in diagram files like .vsdx with Java, enhancing document integrity and protecting intellectual property."
+date: "2025-12-19"
 weight: 1
+url: "/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/"
+keywords:
+  - GroupDocs.Watermark Java
+  - manage watermarks in diagrams
+  - Java diagram document watermarking
+  - groupdocs watermark maven
+type: docs
 ---
 
-# Protect intellectual property diagrams with GroupDocs.Watermark
+# groupdocs watermark maven – Manage Diagram Watermarks with Java
 
-Protecting intellectual property diagrams is a critical step for any organization that shares design assets, flowcharts, or architecture drawings. With GroupDocs.Watermark for Java you can programmatically load diagram files (such as `.vsdx`), detect image watermark instances, search for text watermarks, and safely remove them without corrupting the original drawing. This tutorial walks you through the entire process—from environment setup to batch‑processing large diagram libraries—so you can embed robust IP protection directly into your Java applications.
+Managing watermarks in documents is essential for protecting intellectual property and maintaining document integrity. **In this tutorial we’ll show you how to use groupdocs watermark maven to efficiently load, search, and remove watermarks from diagram files such as `.vsdx`**. Whether you’re building enterprise software or automating document workflows, mastering these techniques will give you full control over diagram watermark management.
 
-## Quick answers
-- **Which library handles diagram watermarks?** GroupDocs.Watermark for Java.  
-- **Can I detect image watermark as well as text?** Yes, the API provides `ImageDctHashSearchCriteria` for image detection and `TextSearchCriteria` for text.  
-- **Do I need a commercial license to run the code?** A trial license works for development; a paid license is required for production.  
-- **Is batch processing supported?** Absolutely—loop over a folder and apply the same watermark logic to each file.  
-- **Will the original diagram layout stay intact after removal?** The library clears only watermark objects, preserving all shapes, connectors, and formatting.
+## Quick Answers
+- **What library is needed?** GroupDocs.Watermark for Java (available via Maven).  
+- **Which diagram formats are supported?** `.vsdx`, `.vdx`, and other Visio formats.  
+- **Can I search both text and image watermarks?** Yes – combine search criteria with `or()`.  
+- **Is a license required for production?** A valid GroupDocs.Watermark license is required.  
+- **How do I integrate this into Maven?** Add the repository and dependency shown below.
 
-## What is intellectual property diagrams?
-Intellectual property diagrams are visual representations—such as flowcharts, UML models, network schematics, or architectural drawings—that contain proprietary information owned by an individual or organization. These diagrams often convey confidential processes, designs, or strategies, making them valuable assets that require protection against unauthorized copying, distribution, or alteration. By treating them as intellectual property, you can apply legal and technical safeguards, including watermarking, to maintain control over their use and dissemination.
+## What is groupdocs watermark maven?
+`groupdocs watermark maven` refers to the Maven‑based integration of the GroupDocs.Watermark library for Java. By declaring the library in your `pom.xml`, Maven automatically resolves all required binaries, letting you focus on code that loads diagrams, searches for watermarks, and removes them programmatically.
 
-## Why use GroupDocs.Watermark for Java?
-GroupDocs.Watermark supports **50+ input and output formats** (including `.vsdx`, `.vdx`, `.vsx`) and can process multi‑hundred‑page diagrams without loading the entire file into memory, reducing RAM consumption by up to **70 %** compared with naïve file‑stream approaches. The API also offers built‑in OCR‑free image‑hash comparison, enabling reliable `detect image watermark` operations in under **200 ms** per diagram on a typical 2.5 GHz server.
+## Why use GroupDocs.Watermark for diagram watermark management?
+- **Full‑featured API** – supports text, image, and shape watermarks across many diagram types.  
+- **Precise removal** – eliminates watermarks without corrupting the original diagram layout.  
+- **Scalable** – suitable for batch processing large collections of diagrams.  
+- **Maven friendly** – simple dependency management, keeping your project clean.
 
 ## Prerequisites
-Before you start, make sure you have:
+1. **Java Development Kit (JDK) 8+** – ensures compatibility with the library.  
+2. **IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.  
+3. **GroupDocs.Watermark for Java** – added via Maven (recommended) or direct JAR download.  
 
-1. **Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.  
-2. **IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.  
-3. **GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.  
-
-### Required libraries and dependencies
-You can add the library through Maven or download the JARs directly.
-
-#### Maven setup
-Add the repository and dependency entries to your `pom.xml` file:
+### Required Libraries and Dependencies
+#### Maven Setup
+Add the following configuration to your `pom.xml` file:
 
 ```xml
 <repositories>
@@ -114,88 +59,16 @@ Add the repository and dependency entries to your `pom.xml` file:
 </dependencies>
 ```
 
-#### Direct download
-If you prefer manual installation, download the latest release from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+#### Direct Download
+Alternatively, download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### License acquisition
-- **Free trial:** Ideal for evaluating API capabilities.  
-- **Temporary license:** Use for short‑term testing without feature restrictions.  
-- **Purchase:** Required for production deployments and to unlock premium formats.
+### License Acquisition
+- **Free Trial:** Test the library with a trial license.  
+- **Temporary License:** Request a short‑term key for evaluation.  
+- **Purchase:** Obtain a production license for unlimited use.
 
-## How to initialize the Watermarker?
-Creating a `Watermarker` instance is the first step in any watermark workflow. The `Watermarker` class loads a diagram file into memory and provides methods for searching, adding, and removing watermarks. By passing the diagram path and optional `DiagramLoadOptions`, you obtain an object that serves as the central point for all subsequent operations, ensuring consistent handling of the document throughout the process.
-
-```java
-Watermarker watermarker = new Watermarker(inputFilePath, loadOptions);
-```
-
-## How to load a diagram document?
-Loading a diagram with `DiagramLoadOptions` gives you fine‑grained control over how the file is parsed. `DiagramLoadOptions` lets you specify whether to load only visible pages, whether to preserve hidden layers, and how to handle embedded fonts. Adjusting these options can dramatically improve performance for large diagrams and ensures that only the necessary parts of the file are processed, reducing memory usage and speeding up watermark detection.
-
-```java
-DiagramLoadOptions loadOptions = new DiagramLoadOptions();
-loadOptions.setLoadHiddenLayers(false);
-Watermarker watermarker = new Watermarker("sample.vsdx", loadOptions);
-```
-
-## How to detect image watermark in a diagram?
-Detecting image watermarks relies on the `ImageDctHashSearchCriteria` class, which computes a perceptual hash of a reference image and compares it against every embedded image in the diagram. This method is fast and tolerant of minor visual variations, allowing you to locate logos or other graphic watermarks even if they have been resized or slightly altered. By configuring the similarity threshold, you can balance detection sensitivity against false‑positive matches.
-
-```java
-ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria("logo.png");
-PossibleWatermarkCollection watermarks = watermarker.search(criteria);
-```
-
-## How to search for text watermarks?
-Searching for text watermarks uses the `TextSearchCriteria` class. This class scans all textual layers within the diagram, including those inside shapes, connectors, and groupings, and returns any matches that contain the specified string or pattern. The search is case‑insensitive by default and can be refined with regular expressions, enabling you to locate watermarks that may be rotated, partially hidden, or embedded in complex diagram structures.
-
-```java
-TextSearchCriteria textCriteria = new TextSearchCriteria("Confidential");
-PossibleWatermarkCollection textWatermarks = watermarker.search(textCriteria);
-```
-
-## How to remove watermarks from a diagram?
-Removing watermarks is performed by invoking the `clear()` method on each `Watermark` object returned by a search operation. The `clear()` method deletes only the visual watermark elements while leaving the underlying diagram objects—such as shapes, connectors, and formatting—intact. After clearing, you save the document using the `save` method, producing a clean version of the diagram that retains its original layout and functionality.
-
-```java
-for (Watermark wm : watermarks) {
-    wm.clear();
-}
-watermarker.save("cleaned.vsdx");
-```
-
-## Practical applications
-- **Enterprise software integration:** Embed watermark validation into document‑management systems to enforce IP policies automatically.  
-- **Content management systems (CMS):** Scan user‑uploaded diagrams for unauthorized logos before publishing.  
-- **Legal document handling:** Detect and strip confidential watermarks when preparing evidence bundles.  
-
-## Common pitfalls and troubleshooting
-- **Missing license exception:** Ensure the trial or paid license file is correctly referenced via `License.setLicense("license_path")`.  
-- **Large diagram slowdown:** Enable `loadOptions.setLoadHiddenLayers(false)` and consider processing diagrams in parallel streams.  
-- **False‑positive image matches:** Adjust the DCT hash tolerance with `criteria.setSimilarityThreshold(0.85)` to reduce accidental matches.
-
-## Frequently asked questions
-
-**Q: Can I search for both text and image watermarks in a single call?**  
-A: Yes, combine criteria with `OrSearchCriteria` (e.g., `new OrSearchCriteria(textCriteria, imageCriteria)`) to retrieve both types at once.
-
-**Q: Will removing watermarks corrupt the diagram layout?**  
-A: No. The library isolates watermark objects, so shapes, connectors, and formatting remain unchanged after `clear()`.
-
-**Q: Which diagram formats are supported?**  
-A: GroupDocs.Watermark handles `.vsdx`, `.vdx`, `.vsx`, and several older Visio formats, covering over **30** diagram types.
-
-**Q: How do I process thousands of diagrams efficiently?**  
-A: Use Java’s `ExecutorService` to run watermark detection/removal in parallel batches, and reuse a single `Watermarker` configuration object to reduce overhead.
-
-**Q: Is it possible to integrate this into a CI/CD pipeline?**  
-A: Absolutely. Add the Java snippets to your build scripts (Maven/Gradle) and run them as a pre‑deployment verification step to ensure no prohibited watermarks are present.
-
----
-
-**Last Updated:** 2026-08-19  
-**Tested With:** GroupDocs.Watermark 23.12 for Java  
-**Author:** GroupDocs
+## Using groupdocs watermark maven to Load a Diagram Document
+Loading a diagram document is the first step before any watermark operation. Below is a minimal example that creates a `Watermarker` instance with `DiagramLoadOptions`.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -211,6 +84,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
+
+- **Parameters:**  
+  - `inputFilePath` – path to your `.vsdx` file.  
+  - `loadOptions` – lets you control how the diagram is parsed (e.g., password protection).
+
+## Searching for Watermarks with groupdocs watermark maven
+### Text Watermarks
+To locate text‑based watermarks, define a `TextSearchCriteria` and query the first page of the diagram.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -233,6 +114,13 @@ public class SearchTextWatermarks {
 }
 ```
 
+- **Key Methods:**  
+  - `TextSearchCriteria` – specifies the exact text to look for.  
+  - `PossibleWatermarkCollection` – stores any matches found.
+
+### Image Watermarks
+If your diagram contains logo or picture watermarks, use `ImageDctHashSearchCriteria` to compare against a reference image.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -254,6 +142,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
+
+- **Key Methods:**  
+  - `ImageDctHashSearchCriteria` – creates a perceptual hash of the reference image for robust matching.
+
+## Removing Watermarks
+Once you’ve identified unwanted watermarks, you can clear them and save a clean copy of the diagram.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -282,8 +176,42 @@ public class RemoveWatermarks {
 }
 ```
 
-## Related Tutorials
+- **Key Method:** `clear()` removes every watermark found by the combined criteria, leaving the diagram intact.
 
-- [Guide to Adding Watermarks to Diagrams Using GroupDocs.Watermark for Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [Add Text Watermarks to Diagrams Using GroupDocs.Watermark for Java&#58; A Comprehensive Guide](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Edit Diagram Headers & Footers in Java Using GroupDocs.Watermark&#58; A Comprehensive Guide](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
+## Practical Applications
+1. **Enterprise Software Integration** – Embed watermark management into business apps to protect proprietary diagrams.  
+2. **Content Management Systems (CMS)** – Automate detection and removal of unauthorized logos before publishing.  
+3. **Legal Document Workflows** – Add or strip watermarks at different stages of contract processing.  
+
+## Common Issues & Troubleshooting
+- **License errors:** Ensure the license file is correctly referenced before creating a `Watermarker`.  
+- **Large files:** Use streaming APIs or increase JVM heap size (`-Xmx2g`) for diagrams > 100 MB.  
+- **Missing watermarks:** Verify that the search criteria (text case, image similarity threshold) match the actual watermark content.
+
+## Frequently Asked Questions
+
+**Q: Can I search for both text and images simultaneously?**  
+A: Yes. Combine criteria with `or()` as shown in the removal example.
+
+**Q: Is it safe to remove watermarks without altering the diagram layout?**  
+A: Absolutely. The API precisely targets watermark objects, preserving all other diagram elements.
+
+**Q: Which diagram formats does GroupDocs.Watermark support?**  
+A: It supports Visio formats like `.vsdx`, `.vdx`, as well as other vector diagram types.
+
+**Q: How can I process hundreds of diagrams efficiently?**  
+A: Implement a batch loop, reuse a single `Watermarker` instance when possible, and consider parallel processing with Java’s `ExecutorService`.
+
+**Q: Can I integrate watermark detection into a CI/CD pipeline?**  
+A: Yes. Include the Java snippets in your build scripts (e.g., Maven plugins or Gradle tasks) to validate diagrams before deployment.
+
+## Conclusion
+By leveraging **groupdocs watermark maven**, you gain a powerful, Maven‑managed way to load, search, and remove watermarks from diagram files using Java. This capability strengthens document security, streamlines content workflows, and scales effortlessly across large document collections.
+
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  
+
+---

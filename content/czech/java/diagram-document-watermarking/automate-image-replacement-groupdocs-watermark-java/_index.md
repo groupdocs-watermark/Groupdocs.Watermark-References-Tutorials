@@ -1,76 +1,43 @@
 ---
-date: '2026-08-19'
-description: Zjistěte, jak nahradit diagramové obrázky v Javě pomocí GroupDocs.Watermark
-  a také efektivně přidat vodoznak do diagramu. Kód krok za krokem a osvědčené postupy.
+date: '2025-12-17'
+description: Naučte se, jak nahradit diagramové obrázky v Javě pomocí GroupDocs.Watermark
+  pro Javu a efektivně číst bajty obrázku v Javě. Automatizujte aktualizace pomocí
+  jasného krok‑za‑krokem kódu.
 keywords:
-- replace diagram images java
-- add watermark to diagram
-- groupdocs watermark java
-lastmod: '2026-08-19'
-og_description: Zjistěte, jak nahradit diagramové obrázky v Javě pomocí GroupDocs.Watermark
-  a také efektivně přidat vodoznak do diagramu. Kód krok za krokem a osvědčené postupy.
-og_image_alt: Guide showing Java code to replace diagram images with GroupDocs.Watermark
-og_title: Nahraďte diagramové obrázky v Javě pomocí GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to replace diagram images in Java using GroupDocs.Watermark,
-    and also add watermark to diagram efficiently. Step‑by‑step code and best practices.
-  headline: Replace diagram images in Java using GroupDocs.Watermark
-  type: TechArticle
-- questions:
-  - answer: Yes. Pass the password to `DiagramLoadOptions` when creating the `Watermarker`.
-    question: Can I replace images in password‑protected diagrams?
-  - answer: Absolutely – GroupDocs.Watermark supports the Draw.io XML format and treats
-      each node as a shape.
-    question: Does the library work with .drawio (XML) files?
-  - answer: The library is thread‑safe for read‑only operations; for write operations,
-      limit concurrency to the number of CPU cores to avoid file‑handle contention.
-    question: How many diagrams can I process in parallel?
-  - answer: Images up to 100 MB are supported; larger files should be resized beforehand
-      to keep memory usage low.
-    question: Is there a limit on image size?
-  - answer: You can start with a free 30‑day trial; production use requires a paid
-      license, which can be obtained from the GroupDocs store.
-    question: What licensing options are available?
-  type: FAQPage
-tags:
-- diagram image replacement
-- groupdocs watermark
-- java document processing
-title: Nahraďte diagramové obrázky v Javě pomocí GroupDocs.Watermark
+- GroupDocs Watermark Java
+- automate image replacement
+- Java diagram watermarking
+title: Nahraďte diagramové obrázky v Javě pomocí GroupDocs.Watermark – kompletní průvodce
 type: docs
 url: /cs/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Nahradit obrázky diagramu v Javě pomocí GroupDocs.Watermark
+# Nahradit diagramové obrázky Java za GroupDocs.Watermark
 
-Aktualizace obrázků v souborech diagramů ručně je časově náročná a náchylná k chybám. V tomto tutoriálu se naučíte, jak **nahradit obrázky diagramu v Javě** pomocí několika řádků kódu, a také uvidíte, jak **přidat vodoznak do diagramu**, pokud je potřeba. Na konci budete mít znovupoužitelný úryvek, který můžete vložit do libovolného Java projektu pracujícího s Visio, Draw.io nebo jinými podporovanými formáty diagramů.
+Aktualizace grafiky ve Visio‑stylových diagramech může být úspěšná ruční úloha, zejména když potřebujete **replace diagram images java** v mnoha souborech. V tomto tutoriálu se dozvíte, jak tento proces automatizovat pomocí GroupDocs.Watermark pro Java, read image bytes java, a aplikovat změny programově. Na konci budete mít znovupoužitelné řešení, které šetří čas, snižuje lidské chyby a šetří vaši dokumentaci jednotně brandovanou.
 
 ## Rychlé odpovědi
-- **Jaká knihovna provádí nahrazení obrázků diagramu?** GroupDocs.Watermark pro Javu.
-- **Kolik řádků kódu je potřeba pro základní nahrazení?** Pouze tři řádky po vytvoření Watermarkeru.
-- **Mohu přidat vodoznak současně?** Ano – použijte stejnou instanci Watermarker s objektem vodoznaku.
-- **Jaká verze Javy je vyžadována?** JDK 8 nebo vyšší.
-- **Potřebuji licenci pro produkční použití?** Je vyžadována platná licence GroupDocs.Watermark; je k dispozici bezplatná zkušební verze.
+- **Jaká knihovna zpracovává nahrazování obrázků diagramů?** GroupDocs.Watermark for Java
+- **Jaká metoda čte bajty obrázku?** `FileInputStream` v kombinaci s `read(byte[])` (čtení bajtů obrázku java)
+- **Potřebuji licenci?** Zkušební licence funguje pro hodnocení; plná licence je vyžadována pro produkci.
+- **Podporované formáty diagramů?** VSDX, VDX, VDXM a další soubory Microsoft Visio.
+- **Jak dlouho trvá implementace?** Přibližně 15–20 minut pro základní workflow replace-diagram-images-java.
 
-## Co je nahrazení obrázků diagramu v Javě?
-Nahrazení obrázků diagramu v Javě znamená programově najít tvary, které obsahují bitmapovou grafiku uvnitř souboru diagramu (např. .vsdx, .drawio nebo .svg) a vyměnit tyto vložené obrázky za nové pomocí API GroupDocs.Watermark. Toto automatizuje aktualizace, které by jinak vyžadovaly ruční úpravy v editoru diagramů.
+## Co je nahradit obrázky diagramu java?
+Replacing diagram images Java označuje programové vyhledávané tvary obsahujících obrázky uvnitř Visio diagramu a výměnu vložené grafiky za nový soubor pomocí kódu Java. Tato technika je ideální pro hromadné aktualizace brandingu, obnovy produktových katalogů nebo jakéhokoli scénáře, kde se vizuální aktiva v průběhu času mění.
 
-## Proč použít GroupDocs.Watermark pro nahrazení obrázků diagramu?
-GroupDocs.Watermark podporuje **více než 50 vstupních a výstupních formátů** – včetně Visio, Draw.io a SVG – a může zpracovat **soubory až do 500 MB** bez načítání celého dokumentu do paměti, což vám poskytne **snížení využití CPU o 30 %** ve srovnání s naivními přístupy založenými na souborových streamech.
+## Proč pro tento úkol používat GroupDocs.Watermark?
+GroupDocs.Watermark poskytuje high-level API, které abstrahuje low-level XML Visio, což vám umožní se na obchodní logiku místo detailů formátu souboru. Zajišťuje načítání, navigaci v obsahu a ukládání při zachování integrity diagramu.
 
-## Požadavky
-- Nainstalovaný JDK 8 nebo novější.
-- IDE (IntelliJ IDEA, Eclipse nebo VS Code) pro vývoj v Javě.
-- Maven (nebo možnost přidat JAR soubory ručně).
-- Platná licence GroupDocs.Watermark (zkušební nebo trvalá). Licenci můžete získat na [GroupDocs](https://purchase.groupdocs.com/temporary-license/).
+## Předpoklady
+- JDK8nebo vyšší nainstalovaný.
+- Maven (nebo ruční správa JAR souborů) pro správu závislostí.
+- Základní znalost Javy (třídy, streamy, zpracování výjimek).
 
 ### Požadované knihovny, verze a závislosti
-Přidejte repozitář GroupDocs.Watermark a závislost do vašeho `pom.xml`:
+Pro použití GroupDocs.Watermark pro Java zahrňte repozitář a závislost do svého `pom.xml`:
 
-```xml
 ```xml
 <repositories>
    <repository>
@@ -88,16 +55,27 @@ Přidejte repozitář GroupDocs.Watermark a závislost do vašeho `pom.xml`:
    </dependency>
 </dependencies>
 ```
-```
 
-Pokud dáváte přednost ruční správě JAR souborů, stáhněte si nejnovější verzi z oficiální stránky: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Můžete také stáhnout nejnovější JAR z oficiálního webu: [GroupDocs.Watermark pro Java – vydání](https://releases.groupdocs.com/watermark/java/).
 
-## Jak nahradit obrázky diagramu v Javě krok za krokem
+### Požadavky na nastavení prostředí
+- IDE jako IntelliJ IDEA nebo Eclipse.
+- Přístup k souborům diagramů, které chcete upravit.
 
-### Jak inicializovat Watermarker pro soubor diagramu?
-Watermarker je hlavní třída, která představuje dokument a poskytuje metody pro manipulaci s obsahem. Pro začátek vytvořte objekt `Watermarker`, který načte soubor diagramu do paměti. Třída `Watermarker` je hlavní vstupní bod GroupDocs.Watermark, který vám umožňuje číst, upravovat a ukládat dokumenty. Použijte `DiagramLoadOptions` k zadání nastavení specifických pro formát, jako je DPI nebo rozsah stránek. `DiagramLoadOptions` konfiguruje, jak je diagram načten, např. nastavení DPI nebo režimu načítání.
+### Předpoklady znalostí
+Znalost Java I/O, objektově orientovaného programování a diagramů základních konceptů vám pomůže projít jednotlivými kroky.
 
-```java
+## Nastavení GroupDocs.Watermark pro Java
+1. **Přidejte závislost na Maven** (jak je uvedeno výše) nebo umístěte JAR do své třídy.
+2. **Získejte zkušební nebo trvalou licenci** z obchodu GroupDocs: [GroupDocs](https://purchase.groupdocs.com/temporary-license/).
+3. **Importujte požadované balíčky** a vytvořte instanci `Watermarker` (viz kód níže).
+
+## Jak nahradit obrázky diagramů java pomocí GroupDocs.Watermark
+Níže je kompletní, krok‑za‑krokem průvodce, který vás provede inicializací knihovny, přístupem k obsahu diagramu, výměnou obrázků a uložením změn.
+
+### Krok 1: Inicializujte vodoznak
+Nejprve vytvořte objekt `Watermarker`, který ukazuje na váš soubor diagramu.
+
 ```java
 import java.io.File;
 import com.groupdocs.watermark.Watermarker;
@@ -111,12 +89,12 @@ public class FeatureWatermarkerInitialization {
     }
 }
 ```
-```
 
-### Jak získat přístup k obsahu diagramu pro vyhledání tvarů?
-Po načtení souboru získejte objekt `DiagramContent` z `Watermarker`. `DiagramContent` představuje vnitřní hierarchii diagramu – stránky a tvary. Tento model poskytuje kolekce stránek a tvarů, přes které můžete iterovat, což usnadňuje vyhledání konkrétních prvků, jako jsou obrázky nebo text.
+*Why this matters:* `Watermarker` otevře soubor a připraví interní struktury pro následnou manipulaci.
 
-```java
+### Krok 2: Přístup k obsahu diagramu
+Získejte interní reprezentaci diagramu, abyste mohli enumerovat tvary.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -127,12 +105,13 @@ public class FeatureAccessDiagramContent {
     }
 }
 ```
-```
 
-### Jak nahradit obrázky tvarů v diagramu?
-Projděte smyčkou každou `DiagramShape` na požadované stránce, zkontrolujte, zda tvar obsahuje obrázek, a nahraďte bajty obrázku těmi z nového souboru. `DiagramShape` je model pro jednotlivý tvar v diagramu, zatímco `DiagramWatermarkableImage` ukládá data obrázku, která lze aplikovat na tvar.
 
-```java
+*Proč je to důležité:* `DiagramContent` poskytuje kolekce stránek a tvarů, což je vstupní bod pro výměnu obrázků.
+
+### Krok 3: Přečtěte bajty obrázku v Javě a nahraďte tvary obrázky
+Nyní najdeme každý tvar, který obsahuje obrázek, načteme nový soubor obrázku (read image bytes java) a aplikujeme jej.
+
 ```java
 import java.io.File;
 import java.io.FileInputStream;
@@ -157,12 +136,14 @@ public class FeatureReplaceShapeImages {
     }
 }
 ```
-```
 
-### Jak uložit změny a zavřít Watermarker?
-Po dokončení všech úprav zavolejte `save` na `Watermarker`, aby se aktualizovaný diagram zapsal do souboru, a poté vyvolejte `close` pro uvolnění nativních zdrojů. Tím se zajistí uvolnění souborových handle a zabrání se únikům paměti, zejména při zpracování mnoha diagramů v dávkovém úkolu.
+*Klíčové body:* 
+- `FileInputStream` načte nový PNG do pole bajtů — toto je krok **read image bytes java**.  
+- `DiagramWatermarkableImage` obalí pole bajtů, aby knihovna mohla vložit obrázek do tvaru.
 
-```java
+### Krok 4: Uložte a zavřete Watermarker
+Uložte upravený diagram a uvolněte prostředky.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -174,51 +155,48 @@ public class FeatureSaveAndCloseWatermarker {
     }
 }
 ```
-```
 
-## Přidání vodoznaku do stejného diagramu (volitelné)
+*Proč na tom záleží:* Ukládání zapíše nové obrázky do souboru a uzavření uvolní paměti—důležité při dávkovém zpracování mnoha diagramů.
 
-Pokud také potřebujete diagram označit, můžete přidat vodoznak před nebo po nahrazení obrázku:
+## Praktické aplikace
+1. **Aktualizace firemního brandingu** – Vyměňte starou logu ve všech organigramech najednou.
+2. **Product Catalog refreshes** – Nahraďte vyřazené produktové obrázky v technických manuálech.
+3. **Údržba vzdělávacích materiálů** – Udržujte vědecké ilustrace aktuální bez ruční úpravy.
 
-```java
-// Example – adding a text watermark
-Watermark watermark = new TextWatermark("Confidential", new Font("Arial", 12));
-watermarker.add(watermark);
-```
+## Úvahy o výkonu
+- **Process one diagram at at time** při práci s velkými soubory, aby se snížila spotřeba paměti.
+- **Uzavřít proudy promptně** (jak je ukázáno) pro zabránění souborovým zámkům.
+- **Profile I/O** pokud potřebujete zpracovat stovky diagramů; obsahuje multithreading s oddělenými instancemi `Watermarker` pro každý vláken.
 
-## Časté problémy a řešení
-
-| Příznak | Předpokládaná příčina | Řešení |
-|---------|-----------------------|--------|
-| Žádná změna obrázku po spuštění kódu | `DiagramShape.hasImage()` vrátil false | Ověřte typ tvaru; některé vektorové tvary ukládají obrázky jinak. |
-| OutOfMemoryError u velkých souborů | Načítání celého diagramu najednou | Použijte `DiagramLoadOptions.setLoadMode(LoadMode.Stream)` pro sekvenční zpracování stránek. |
-| Vodoznak není viditelný | Vodoznak umístěn za existující obsah | Zavolejte `watermarker.setWatermarkPosition(Position.Foreground)` před uložením. |
+## Běžné problémy a řešení
+| Vydání | Řešení |
+|-------|----------|
+| **Nulový obrázek po výměně** | Ověřte, že zdrojový PNG je podporovaný formát a že pole bajtů je kompletně načteno před voláním `setImage`. |
+| **OutOfMemoryError na velkých diagramech** | Zpracovávejte diagramy sekvenčně a po každém `watermarker.close()` případně zavolejte `System.gc()`. |
+| **Výjimka licence** | doporučujeme se, že soubor s licencí (zkušební nebo zakoupenou) je správně odkazován před inicializací `Watermarker`. |
 
 ## Často kladené otázky
 
-**Q: Mohu nahradit obrázky v diagramu chráněném heslem?**  
-A: Ano. Předávejte heslo do `DiagramLoadOptions` při vytváření `Watermarker`.
+**Otázka: Mohu nahradit obrázky v diagramech chráněných heslem?**
+A: Ano. Přečtěte si diagram s vhodnými `Diagramy s vhodnými možnostmi, které zahrnují heslo, a dále stejnými kroky výměny.
 
-**Q: Pracuje knihovna s .drawio (XML) soubory?**  
-A: Rozhodně – GroupDocs.Watermark podporuje formát Draw.io XML a zachází s každým uzlem jako s tvarem.
+**Otázka: Funguje to s jinými formáty diagramů, jako je VDX?**
+A: GroupDocs.Watermark podporuje VDX, VDXM a VSDX přímo. Stačí změnit příponu souboru v cestě.
 
-**Q: Kolik diagramů mohu zpracovávat paralelně?**  
-A: Knihovna je vlákny‑bezpečná pro operace jen pro čtení; pro zápis omezte souběžnost na počet CPU jader, aby nedošlo ke konfliktům s souborovými handle.
+**Otázka: Jak nahradím obrázky na všech stránkách, nejen na první?**
+A: Procházejte `content.getPages()` a aplikujte vnitřní smyčku tvarů na každou stránku.
 
-**Q: Existuje limit velikosti obrázku?**  
-A: Obrázky až do 100 MB jsou podporovány; větší soubory by měly být předem zmenšeny, aby se udržovala nízká spotřeba paměti.
+**Otázka: Existuje způsob, jak dávkově zpracovat více diagramů?**
+A: Zabalte čtyři kroky do smyčky, která načte názvy souborů z adresáře a pro každý soubor vytvoří novou instanci `Watermarker`.
 
-**Q: Jaké licenční možnosti jsou k dispozici?**  
-A: Můžete začít s bezplatnou 30‑denní zkušební verzí; pro produkční použití je vyžadována placená licence, kterou lze získat v obchodě GroupDocs.
+**Otázka: Jaká verze GroupDocs.Watermark je vyžadována?**
+A: Tutoriál používá verzi 24.11, ale novější vydání podporuje tuto kompatibilitu API.
+
+## Závěr
+Nyní máte kompletní, produkčně připravený workflow pro **replace diagram images java** pomocí GroupDocs.Watermark pro Java. Načtením image bytes java, iterací přes tvary a uložením výsledku můžete automatizovat aktualizace brandingu, katalogů nebo vzdělávacích materiálů ve velkém měřítku. Prozkoumejte další funkce vodoznakování—například přidání textových vodoznaků nebo ochranu diagramů—pro rozšíření vašich možností zpracování dokumentů.
 
 ---
 
-**Poslední aktualizace:** 2026-08-19  
-**Testováno s:** GroupDocs.Watermark 23.9 pro Javu  
+**Poslední aktualizace:** 2025-12-17
+**Testováno s:** GroupDocs.Watermark 24.11 pro Javu
 **Autor:** GroupDocs
-
-## Související tutoriály
-
-- [Tutoriály vodoznakování diagramů pro GroupDocs.Watermark Java](/watermark/java/diagram-document-watermarking/)
-- [Odstranění hyperodkazů z tvarů diagramu pomocí GroupDocs.Watermark Java pro zvýšenou bezpečnost dokumentů](/watermark/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-- [Jak přidat obrázkový vodoznak v Javě pomocí GroupDocs.Watermark: Průvodce krok za krokem](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)

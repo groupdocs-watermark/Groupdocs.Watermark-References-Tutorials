@@ -1,98 +1,47 @@
 ---
-date: '2026-08-19'
-description: Ismerje meg, hogyan védheti a szellemi tulajdon diagramokat a GroupDocs.Watermark
-  for Java segítségével. Lépésről‑lépésre útmutató a .vsdx fájlok betöltéséhez, a
-  kép vízjel felismeréséhez, kereséshez és a vízjelek eltávolításához.
+date: '2025-12-19'
+description: Tanulja meg, hogyan használja a GroupDocs Watermark Maven-t a .vsdx formátumú
+  diagramfájlok vízjeleinek kezelésére Java-val, javítva a dokumentum integritását
+  és védve a szellemi tulajdont.
 keywords:
-- intellectual property diagrams
-- detect image watermark
 - GroupDocs.Watermark Java
-- diagram watermark management
-- Java watermark API
-lastmod: '2026-08-19'
-og_description: Fedezze fel, hogyan védheti a szellemi tulajdon diagramokat a GroupDocs.Watermark
-  for Java segítségével. Tanulja meg a .vsdx fájlok betöltését, a kép vízjel felismerését,
-  és a nem kívánt vízjelek hatékony eltávolítását.
-og_image_alt: Java code snippet showing watermark detection in diagram files
-og_title: Szellemi tulajdon diagramok védelme a GroupDocs.Watermark segítségével
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  headline: Protect intellectual property diagrams with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  name: Protect intellectual property diagrams with GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-    text: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-    text: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-  type: HowTo
-- questions:
-  - answer: Yes, combine criteria with `OrSearchCriteria` (e.g., `new OrSearchCriteria(textCriteria,
-      imageCriteria)`) to retrieve both types at once.
-    question: Can I search for both text and image watermarks in a single call?
-  - answer: No. The library isolates watermark objects, so shapes, connectors, and
-      formatting remain unchanged after `clear()`.
-    question: Will removing watermarks corrupt the diagram layout?
-  - answer: GroupDocs.Watermark handles `.vsdx`, `.vdx`, `.vsx`, and several older
-      Visio formats, covering over **30** diagram types.
-    question: Which diagram formats are supported?
-  - answer: Use Java’s `ExecutorService` to run watermark detection/removal in parallel
-      batches, and reuse a single `Watermarker` configuration object to reduce overhead.
-    question: How do I process thousands of diagrams efficiently?
-  - answer: Absolutely. Add the Java snippets to your build scripts (Maven/Gradle)
-      and run them as a pre‑deployment verification step to ensure no prohibited watermarks
-      are present.
-    question: Is it possible to integrate this into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark diagrams
-- GroupDocs.Watermark
-- Java document processing
-- intellectual property protection
-title: Szellemi tulajdon diagramok védelme a GroupDocs.Watermark segítségével
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark maven – Diagram vízjelek kezelése Java-val
 type: docs
 url: /hu/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
 weight: 1
 ---
 
-# Szellemi tulajdon diagramok védelme a GroupDocs.Watermark segítségével
+# groupdocs watermark maven – Diagram Vízjelek Kezelése Java-val
 
-A szellemi tulajdon diagramok védelme kritikus lépés minden olyan szervezet számára, amely tervezési eszközöket, folyamatábrákat vagy építészeti rajzokat oszt meg. A GroupDocs.Watermark for Java segítségével programozottan betöltheti a diagramfájlokat (például `.vsdx`), észlelheti a képi vízjelpéldányokat, kereshet szöveges vízjeleket, és biztonságosan eltávolíthatja azokat anélkül, hogy a eredeti rajzot megsértené. Ez az útmutató végigvezeti Önt a teljes folyamaton – a környezet beállításától a nagyméretű diagramkönyvtárak kötegelt feldolgozásáig – hogy közvetlenül Java‑alkalmazásaiba ágyazhassa a robusztus IP‑védelmet.
+A vízjelek kezelése a dokumentumokban elengedhetetlen a szellemi tulajdon védelme és a dokumentum integritásának megőrzése érdekében. **Ebben az útmutatóban megmutatjuk, hogyan használhatja a groupdocs watermark maven-t a diagramfájlok, például a `.vsdx` hatékony betöltésére, keresésére és eltávolítására**. Akár vállalati szoftvert fejleszt, akár dokumentumfolyamatokat automatizál, ezen technikák elsajátítása teljes irányítást biztosít a diagram vízjelkezelés felett.
 
-## Gyors válaszok
-- **Melyik könyvtár kezeli a diagramok vízjeleit?** GroupDocs.Watermark for Java.  
-- **Képes vagyok képi vízjelet és szövegeset is észlelni?** Igen, az API biztosítja az `ImageDctHashSearchCriteria`‑t a képek észleléséhez, valamint a `TextSearchCriteria`‑t a szöveghez.  
-- **Szükség van kereskedelmi licencre a kód futtatásához?** A próbaverzió licenc fejlesztéshez működik; a termeléshez fizetett licenc szükséges.  
-- **Támogatott a kötegelt feldolgozás?** Teljes mértékben – egyszerűen bejárhat egy mappát, és ugyanazt a vízjellogikát alkalmazhatja minden fájlra.  
-- **A diagram eredeti elrendezése megmarad az eltávolítás után?** A könyvtár csak a vízjelobjektumokat törli, megőrizve az összes alakzatot, kapcsolatot és formázást.
+## Gyors Válaszok
+- **Milyen könyvtár szükséges?** GroupDocs.Watermark for Java (elérhető Maven-en keresztül).  
+- **Mely diagramformátumok támogatottak?** `.vsdx`, `.vdx`, és egyéb Visio formátumok.  
+- **Kereshetek szöveges és képes vízjelekre is?** Igen – kombinálja a keresési feltételeket `or()`-ral.  
+- **Szükséges licenc a termeléshez?** Érvényes GroupDocs.Watermark licenc szükséges.  
+- **Hogyan integráljam ezt Maven-be?** Adja hozzá az alább látható tárolót és függőséget.
 
-## Mi az a szellemi tulajdon diagram?
-A szellemi tulajdon diagramok vizuális ábrázolások – például folyamatábrák, UML‑modellek, hálózati vázlatok vagy építészeti rajzok –, amelyek olyan tulajdonosi információkat tartalmaznak, amelyeket egy egyén vagy szervezet birtokol. Ezek a diagramok gyakran bizalmas folyamatokat, terveket vagy stratégiákat közvetítenek, ezért értékes eszközök, amelyeket védeni kell az illetéktelen másolás, terjesztés vagy módosítás ellen. Szellemi tulajdonként kezelve jogi és technikai védelmet, köztük vízjelezést, alkalmazhat a felhasználás és terjesztés ellenőrzésére.
+## Mi az a groupdocs watermark maven?
+`groupdocs watermark maven` a Maven‑alapú integrációt jelenti a GroupDocs.Watermark Java könyvtárhoz. A könyvtár `pom.xml`‑ben történő deklarálásával a Maven automatikusan feloldja az összes szükséges binárist, így Ön a diagramok betöltésére, vízjelek keresésére és programozott eltávolítására koncentrálhat.
 
-## Miért használjuk a GroupDocs.Watermark for Java‑t?
-A GroupDocs.Watermark **50+ bemeneti és kimeneti formátumot** támogat (beleértve `.vsdx`, `.vdx`, `.vsx`‑t) és képes több száz oldalas diagramok feldolgozására anélkül, hogy a teljes fájlt a memóriába töltené, ezáltal a RAM‑használatot akár **70 %**‑kal csökkentve a hagyományos fájl‑stream megközelítésekhez képest. Az API beépített OCR‑mentes képhash‑összehasonlítást is kínál, lehetővé téve a megbízható `detect image watermark` műveleteket **200 ms**‑nél kevesebb idő alatt egy tipikus 2,5 GHz‑es szerveren.
+## Miért használja a GroupDocs.Watermark-ot diagram vízjelkezeléshez?
+- **Teljes körű API** – támogatja a szöveges, képes és alakzat vízjeleket számos diagramtípusban.  
+- **Precíz eltávolítás** – eltávolítja a vízjeleket anélkül, hogy a diagram eredeti elrendezését sértené.  
+- **Skálázható** – alkalmas nagy mennyiségű diagram kötegelt feldolgozására.  
+- **Maven‑barát** – egyszerű függőségkezelés, amely tisztán tartja a projektet.
 
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg róla, hogy rendelkezik:
+1. **Java Development Kit (JDK) 8+** – biztosítja a könyvtárral való kompatibilitást.  
+2. **IDE** – IntelliJ IDEA, Eclipse vagy bármely Java‑kompatibilis szerkesztő.  
+3. **GroupDocs.Watermark for Java** – Maven‑en keresztül hozzáadva (ajánlott) vagy közvetlen JAR letöltéssel.
 
-1. **Java Development Kit (JDK) 8+** – a kód a standard Java 8 API‑kat használja.  
-2. **IDE** – IntelliJ IDEA, Eclipse vagy bármely kedvenc szerkesztő.  
-3. **GroupDocs.Watermark for Java** – Maven‑en vagy manuális JAR‑letöltésen keresztül.  
-
-### Szükséges könyvtárak és függőségek
-A könyvtárat hozzáadhatja Maven‑en vagy közvetlenül letöltheti a JAR‑okat.
-
-#### Maven beállítás
-Adja hozzá a tárolót és a függőségi bejegyzéseket a `pom.xml` fájlhoz:
+### Szükséges Könyvtárak és Függőségek
+#### Maven Beállítás
+Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz:
 
 ```xml
 <repositories>
@@ -112,88 +61,16 @@ Adja hozzá a tárolót és a függőségi bejegyzéseket a `pom.xml` fájlhoz:
 </dependencies>
 ```
 
-#### Közvetlen letöltés
-Ha a manuális telepítést részesíti előnyben, töltse le a legújabb kiadást a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
+#### Közvetlen Letöltés
+Alternatívaként töltse le a legújabb verziót a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
 
-### Licenc beszerzése
-- **Ingyenes próba:** Ideális az API képességeinek kiértékeléséhez.  
-- **Ideiglenes licenc:** Rövid távú teszteléshez használható korlátozások nélkül.  
-- **Vásárlás:** Szükséges a termelési környezethez és a prémium formátumok feloldásához.
+### Licenc Beszerzése
+- **Ingyenes Próba:** Tesztelje a könyvtárat próba licenccel.  
+- **Ideiglenes Licenc:** Kérjen rövid távú kulcsot értékeléshez.  
+- **Megvásárlás:** Szerezzen be egy termelési licencet korlátlan használathoz.
 
-## Hogyan inicializáljuk a Watermarker‑t?
-A `Watermarker` példány létrehozása az első lépés minden vízjel‑munkafolyamatban. A `Watermarker` osztály betölti a diagramfájlt a memóriába, és módszereket biztosít a vízjelek keresésére, hozzáadására és eltávolítására. A diagram útvonalának és opcionális `DiagramLoadOptions`‑nek a megadásával egy olyan objektumot kap, amely a további műveletek központi pontjaként szolgál, biztosítva a dokumentum egységes kezelését a teljes folyamat során.
-
-```java
-Watermarker watermarker = new Watermarker(inputFilePath, loadOptions);
-```
-
-## Hogyan töltsünk be egy diagramdokumentumot?
-A `DiagramLoadOptions` használatával finomhangolt vezérlést kap a fájl feldolgozásához. A `DiagramLoadOptions` lehetővé teszi, hogy meghatározza, csak a látható oldalakat töltse-e be, megőrizze‑e a rejtett rétegeket, illetve hogyan kezelje a beágyazott betűtípusokat. Ezeknek a beállításoknak a módosítása jelentősen javíthatja a nagy diagramok teljesítményét, és biztosítja, hogy csak a szükséges fájlrészek kerüljenek feldolgozásra, csökkentve a memóriahasználatot és felgyorsítva a vízjel‑észlelést.
-
-```java
-DiagramLoadOptions loadOptions = new DiagramLoadOptions();
-loadOptions.setLoadHiddenLayers(false);
-Watermarker watermarker = new Watermarker("sample.vsdx", loadOptions);
-```
-
-## Hogyan észleljük a képi vízjelet egy diagramon?
-A képi vízjelek észlelése az `ImageDctHashSearchCriteria` osztályra támaszkodik, amely egy referencia kép perceptuális hash‑ét számítja ki, majd összehasonlítja a diagramben beágyazott összes képpel. Ez a módszer gyors és toleráns a kisebb vizuális eltérésekre, lehetővé téve logók vagy egyéb grafikus vízjelek megtalálását még akkor is, ha azok átméreteződtek vagy enyhén módosultak. A hasonlósági küszöb beállításával egyensúlyba hozhatja az észlelés érzékenységét a hamis pozitív találatokkal szemben.
-
-```java
-ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria("logo.png");
-PossibleWatermarkCollection watermarks = watermarker.search(criteria);
-```
-
-## Hogyan keressünk szöveges vízjelekre?
-A szöveges vízjelek keresése a `TextSearchCriteria` osztályt használja. Ez az osztály bejárja a diagram összes szövegrétegét, beleértve az alakzatok, kapcsolók és csoportok belsejében lévőket, és visszaadja azokat a találatokat, amelyek tartalmazzák a megadott karakterláncot vagy mintát. A keresés alapértelmezés szerint nem érzékeny a kis‑ és nagybetűkre, és finomítható reguláris kifejezésekkel, így megtalálhatók a forgatott, részben rejtett vagy összetett diagramstruktúrákba ágyazott vízjelek.
-
-```java
-TextSearchCriteria textCriteria = new TextSearchCriteria("Confidential");
-PossibleWatermarkCollection textWatermarks = watermarker.search(textCriteria);
-```
-
-## Hogyan távolítsuk el a vízjeleket egy diagramról?
-A vízjelek eltávolítása a keresési művelet által visszaadott `Watermark` objektumok `clear()` metódusának meghívásával történik. A `clear()` csak a vizuális vízjelelemeket törli, míg az alapul szolgáló diagramobjektumok – például alakzatok, kapcsolók és formázás – érintetlenek maradnak. A törlés után a dokumentumot a `save` metódussal mentheti, így egy tiszta verziót kap, amely megőrzi az eredeti elrendezést és funkcionalitást.
-
-```java
-for (Watermark wm : watermarks) {
-    wm.clear();
-}
-watermarker.save("cleaned.vsdx");
-```
-
-## Gyakorlati alkalmazások
-- **Vállalati szoftverintegráció:** Vízjel‑ellenőrzés beágyazása dokumentumkezelő rendszerekbe az IP‑szabályzatok automatikus érvényesítéséhez.  
-- **Tartalomkezelő rendszerek (CMS):** Felhasználók által feltöltött diagramok átvizsgálása jogosulatlan logók után a közzététel előtt.  
-- **Jogi dokumentumkezelés:** Bizalmas vízjelek felismerése és eltávolítása bizonyítékcsomagok előkészítésekor.  
-
-## Gyakori hibák és hibaelhárítás
-- **Hiányzó licenc kivétel:** Győződjön meg róla, hogy a próbaverzió vagy a fizetett licenc fájl helyesen van hivatkozva a `License.setLicense("license_path")` segítségével.  
-- **Nagy diagramok lassulása:** Engedélyezze a `loadOptions.setLoadHiddenLayers(false)` beállítást, és fontolja meg a diagramok párhuzamos stream‑ekben történő feldolgozását.  
-- **Hamisan pozitív képi egyezések:** Állítsa be a DCT‑hash toleranciát a `criteria.setSimilarityThreshold(0.85)` értékkel a véletlen egyezések csökkentése érdekében.
-
-## Gyakran feltett kérdések
-
-**K: Kereshetek egyszerre szöveges és képi vízjelekre?**  
-V: Igen, kombinálhatja a kritériumokat az `OrSearchCriteria`‑vel (például `new OrSearchCriteria(textCriteria, imageCriteria)`) a két típus egyidejű lekérdezéséhez.
-
-**K: Az eltávolítás megsérti a diagram elrendezését?**  
-V: Nem. A könyvtár csak a vízjelobjektumokat izolálja, így az alakzatok, kapcsolók és formázás változatlan marad a `clear()` után.
-
-**K: Mely diagramformátumok támogatottak?**  
-V: A GroupDocs.Watermark kezeli a `.vsdx`, `.vdx`, `.vsx` és több régebbi Visio formátumot, összesen több mint **30** diagramtípust.
-
-**K: Hogyan dolgozzam fel hatékonyan több ezer diagramot?**  
-V: Használja a Java `ExecutorService`‑t a vízjel‑észlelés/eltávolítás párhuzamos kötegekben történő futtatásához, és egyetlen `Watermarker` konfigurációs objektumot újrahasználva csökkentse a terhelést.
-
-**K: Integrálható ez CI/CD pipeline‑ba?**  
-V: Teljes mértékben. Adja hozzá a Java‑kódrészleteket a build‑szkriptekhez (Maven/Gradle), és futtassa őket elő‑telepítési ellenőrzésként, hogy biztosítsa a tiltott vízjelek hiányát.
-
----
-
-**Utoljára frissítve:** 2026-08-19  
-**Tesztelve a következővel:** GroupDocs.Watermark 23.12 for Java  
-**Szerző:** GroupDocs
+## A groupdocs watermark maven használata Diagram Dokumentum Betöltéséhez
+A diagram dokumentum betöltése az első lépés minden vízjel művelet előtt. Az alábbiakban egy minimális példát láthat, amely egy `Watermarker` példányt hoz létre `DiagramLoadOptions` használatával.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -209,6 +86,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
+
+- **Paraméterek:**  
+  - `inputFilePath` – a `.vsdx` fájl elérési útja.  
+  - `loadOptions` – lehetővé teszi a diagram feldolgozásának vezérlését (pl. jelszóvédelem).
+
+## Vízjelek Keresése a groupdocs watermark maven segítségével
+### Szöveges Vízjelek
+A szöveges vízjelek megtalálásához definiáljon egy `TextSearchCriteria`-t, és kérdezze le a diagram első oldalát.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -231,6 +116,13 @@ public class SearchTextWatermarks {
 }
 ```
 
+- **Kulcsfontosságú Metódusok:**  
+  - `TextSearchCriteria` – megadja a keresendő pontos szöveget.  
+  - `PossibleWatermarkCollection` – tárolja a megtalált egyezéseket.
+
+### Képes Vízjelek
+Ha a diagram logó vagy képes vízjelet tartalmaz, használja az `ImageDctHashSearchCriteria`-t a referencia képpel való összehasonlításhoz.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -252,6 +144,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
+
+- **Kulcsfontosságú Metódusok:**  
+  - `ImageDctHashSearchCriteria` – egy percepciós hash-t hoz létre a referencia képről a robusztus egyezéshez.
+
+## Vízjelek Eltávolítása
+Miután azonosította a nem kívánt vízjeleket, törölheti azokat, és elmentheti a diagram tiszta másolatát.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -280,8 +178,40 @@ public class RemoveWatermarks {
 }
 ```
 
-## Kapcsolódó oktatóanyagok
+- **Kulcs Metódus:** `clear()` eltávolítja az összes, a kombinált feltételek által talált vízjelet, a diagramot érintetlenül hagyva.
 
-- [Guide to Adding Watermarks to Diagrams Using GroupDocs.Watermark for Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [Add Text Watermarks to Diagrams Using GroupDocs.Watermark for Java&#58; A Comprehensive Guide](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Edit Diagram Headers & Footers in Java Using GroupDocs.Watermark&#58; A Comprehensive Guide](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
+## Gyakorlati Alkalmazások
+1. **Vállalati Szoftver Integráció** – Ágyazzon be vízjelkezelést az üzleti alkalmazásokba a tulajdonosi diagramok védelme érdekében.  
+2. **Tartalomkezelő Rendszerek (CMS)** – Automatizálja a jogosulatlan logók felismerését és eltávolítását a közzététel előtt.  
+3. **Jogi Dokumentum Munkafolyamatok** – Vízjelek hozzáadása vagy eltávolítása a szerződésfeldolgozás különböző szakaszaiban.  
+
+## Gyakori Problémák és Hibaelhárítás
+- **Licenc hibák:** Győződjön meg róla, hogy a licencfájl helyesen van hivatkozva a `Watermarker` létrehozása előtt.  
+- **Nagy fájlok:** Használjon streaming API-kat vagy növelje a JVM heap méretét (`-Xmx2g`) a 100 MB-nál nagyobb diagramok esetén.  
+- **Hiányzó vízjelek:** Ellenőrizze, hogy a keresési feltételek (szöveg nagybetű/kisbetű, képsimilaritás küszöb) egyeznek-e a tényleges vízjel tartalmával.
+
+## Gyakran Ismételt Kérdések
+
+**K: Kereshetek egyszerre szöveges és képes vízjelekre is?**  
+V: Igen. Kombinálja a feltételeket `or()`-ral, ahogy a eltávolítási példában látható.
+
+**K: Biztonságos-e a vízjelek eltávolítása anélkül, hogy a diagram elrendezése megváltozna?**  
+V: Teljesen. Az API pontosan a vízjel objektumokat célozza meg, megőrizve a többi diagram elemet.
+
+**K: Mely diagramformátumokat támogat a GroupDocs.Watermark?**  
+V: Támogatja a Visio formátumokat, mint a `.vsdx`, `.vdx`, valamint egyéb vektorgrafikus diagramtípusokat.
+
+**K: Hogyan tudok hatékonyan feldolgozni több száz diagramot?**  
+V: Implementáljon egy kötegelt ciklust, ahol lehetőség szerint újrahasznál egy `Watermarker` példányt, és fontolja meg a párhuzamos feldolgozást a Java `ExecutorService`-ével.
+
+**K: Integrálhatom a vízjel-észlelést egy CI/CD csővezetékbe?**  
+V: Igen. Vegye bele a Java kódrészleteket a build szkriptekbe (pl. Maven pluginek vagy Gradle feladatok), hogy a diagramokat a telepítés előtt ellenőrizze.
+
+## Következtetés
+A **groupdocs watermark maven** kihasználásával egy hatékony, Maven‑kezelésű megoldást kap a diagramfájlok vízjeleinek betöltésére, keresésére és eltávolítására Java használatával. Ez a képesség erősíti a dokumentumok biztonságát, egyszerűsíti a tartalomfolyamatokat, és könnyedén skálázható nagy dokumentumgyűjtemények esetén.
+
+---
+
+**Utolsó frissítés:** 2025-12-19  
+**Tesztelve ezzel:** GroupDocs.Watermark 24.11 for Java  
+**Szerző:** GroupDocs

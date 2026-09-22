@@ -1,76 +1,43 @@
 ---
-date: '2026-08-19'
-description: تعلم كيفية استبدال صور المخطط في Java باستخدام GroupDocs.Watermark، وكذلك
-  إضافة علامة مائية إلى المخطط بكفاءة. كود خطوة بخطوة وأفضل الممارسات.
+date: '2025-12-17'
+description: تعلم كيفية استبدال صور المخططات في جافا باستخدام GroupDocs.Watermark
+  لجافا وقراءة بايتات الصورة في جافا بكفاءة. قم بأتمتة التحديثات باستخدام كود واضح
+  خطوة بخطوة.
 keywords:
-- replace diagram images java
-- add watermark to diagram
-- groupdocs watermark java
-lastmod: '2026-08-19'
-og_description: تعلم كيفية استبدال صور المخطط في Java باستخدام GroupDocs.Watermark،
-  وكذلك إضافة علامة مائية إلى المخطط بكفاءة. كود خطوة بخطوة وأفضل الممارسات.
-og_image_alt: Guide showing Java code to replace diagram images with GroupDocs.Watermark
-og_title: استبدال صور المخطط في Java باستخدام GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to replace diagram images in Java using GroupDocs.Watermark,
-    and also add watermark to diagram efficiently. Step‑by‑step code and best practices.
-  headline: Replace diagram images in Java using GroupDocs.Watermark
-  type: TechArticle
-- questions:
-  - answer: Yes. Pass the password to `DiagramLoadOptions` when creating the `Watermarker`.
-    question: Can I replace images in password‑protected diagrams?
-  - answer: Absolutely – GroupDocs.Watermark supports the Draw.io XML format and treats
-      each node as a shape.
-    question: Does the library work with .drawio (XML) files?
-  - answer: The library is thread‑safe for read‑only operations; for write operations,
-      limit concurrency to the number of CPU cores to avoid file‑handle contention.
-    question: How many diagrams can I process in parallel?
-  - answer: Images up to 100 MB are supported; larger files should be resized beforehand
-      to keep memory usage low.
-    question: Is there a limit on image size?
-  - answer: You can start with a free 30‑day trial; production use requires a paid
-      license, which can be obtained from the GroupDocs store.
-    question: What licensing options are available?
-  type: FAQPage
-tags:
-- diagram image replacement
-- groupdocs watermark
-- java document processing
-title: استبدال صور المخطط في Java باستخدام GroupDocs.Watermark
+- GroupDocs Watermark Java
+- automate image replacement
+- Java diagram watermarking
+title: استبدال صور المخططات في جافا بـ GroupDocs.Watermark – دليل كامل
 type: docs
 url: /ar/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/
 weight: 1
 ---
 
-# استبدال صور المخطط في Java باستخدام GroupDocs.Watermark
+# استبدال صور المخطط Java باستخدام GroupDocs.Watermark
 
-تحديث الصور داخل ملفات المخططات يدويًا يستغرق وقتًا طويلاً ومعرض للأخطاء. في هذا الدرس ستتعلم كيفية **استبدال صور المخطط في Java** ببضع أسطر من الشيفرة فقط، وسترى أيضًا كيفية **إضافة علامة مائية إلى المخطط** عند الحاجة. في النهاية ستحصل على مقتطف قابل لإعادة الاستخدام يمكنك إدراجه في أي مشروع Java يعمل مع Visio أو Draw.io أو أي صيغ مخططات مدعومة أخرى.
+تحديث الرسومات داخل المخططات على نمط Visio يمكن أن يكون مهمة يدوية شاقة، خاصة عندما تحتاج إلى **replace diagram images java** عبر العديد من الملفات. في هذا البرنامج التعليمي ستكتشف كيفية أتمتة هذه العملية باستخدام GroupDocs.Watermark for Java، read image bytes java، وتطبيق التغييرات برمجياً. في النهاية، ستحصل على حل قابل لإعادة الاستخدام يوفر الوقت، يقلل الأخطاء البشرية، ويحافظ على توحيد العلامة التجارية للوثائق.
 
 ## إجابات سريعة
-- **ما المكتبة التي تتعامل مع استبدال صور المخطط؟** GroupDocs.Watermark for Java.
-- **كم عدد أسطر الشيفرة المطلوبة للاستبدال الأساسي؟** Only three lines after the Watermarker is created.
-- **هل يمكنني إضافة علامة مائية في نفس الوقت؟** Yes – use the same Watermarker instance with a watermark object.
-- **ما نسخة Java المطلوبة؟** JDK 8 or higher.
-- **هل أحتاج إلى ترخيص للاستخدام في الإنتاج؟** A valid GroupDocs.Watermark license is required; a free trial is available.
+- **ما المكتبة التي تتعامل مع استبدال صور المخطط؟** GroupDocs.Watermark for Java  
+- **ما الطريقة التي تقرأ بايتات الصورة؟** `FileInputStream` combined with `read(byte[])` (read image bytes java)  
+- **هل أحتاج إلى ترخيص؟** ترخيص تجريبي يعمل للتقييم؛ الترخيص الكامل مطلوب للإنتاج.  
+- **ما صيغ المخططات المدعومة؟** VSDX, VDX, VDXM، وغيرها من ملفات Microsoft Visio.  
+- **كم من الوقت تستغرق عملية التنفيذ؟** تقريباً 15‑20 دقيقة لتدفق عمل basic replace‑diagram‑images‑java.
 
-## ما هو استبدال صور المخطط في Java؟
-استبدال صور المخطط في Java يعني العثور برمجيًا على الأشكال التي تحتوي على رسومات نقطية داخل ملف مخطط (مثل .vsdx أو .drawio أو .svg) وتبديل تلك الصور المدمجة بأخرى جديدة باستخدام GroupDocs.Watermark API. هذا ي automatis updates التي كانت تتطلب تحريرًا يدويًا في محرر المخططات.
+## ما هو replace diagram images java؟
+استبدال صور المخطط Java يشير إلى تحديد الأشكال التي تحمل صورًا داخل مخطط Visio برمجيًا واستبدال الصورة المدمجة بملف جديد باستخدام كود Java. هذه التقنية مثالية لتحديث العلامة التجارية على نطاق واسع، تجديد كتالوج المنتجات، أو أي سيناريو حيث تتطور الأصول البصرية مع مرور الوقت.
 
-## لماذا نستخدم GroupDocs.Watermark لاستبدال صور المخطط؟
-GroupDocs.Watermark يدعم **أكثر من 50 تنسيق إدخال وإخراج** – بما في ذلك Visio و Draw.io و SVG – ويمكنه معالجة **ملفات تصل إلى 500 MB** دون تحميل المستند بالكامل في الذاكرة، مما يمنحك **تقليل بنسبة 30 % في استهلاك المعالج** مقارنةً بالنهج البسيط لتدفق الملفات.
+## لماذا نستخدم GroupDocs.Watermark لهذه المهمة؟
+يوفر GroupDocs.Watermark واجهة برمجة تطبيقات عالية المستوى تُجرد XML منخفض المستوى لملفات Visio، مما يتيح لك التركيز على منطق الأعمال بدلاً من تفاصيل تنسيق الملف. يتعامل مع التحميل، تنقل المحتوى، والحفظ مع الحفاظ على سلامة المخطط.
 
 ## المتطلبات المسبقة
-- JDK 8 أو أحدث مثبت.
-- بيئة تطوير متكاملة (IntelliJ IDEA، Eclipse، أو VS Code) لتطوير Java.
-- Maven (أو القدرة على إضافة ملفات JAR يدويًا).
-- ترخيص صالح لـ GroupDocs.Watermark (تجريبي أو دائم). يمكنك الحصول على ترخيص من [GroupDocs](https://purchase.groupdocs.com/temporary-license/).
+- تثبيت JDK 8 أو أعلى.  
+- Maven (أو التعامل اليدوي مع JAR) لإدارة التبعيات.  
+- معرفة أساسية بـ Java (الفئات، التدفقات، معالجة الاستثناءات).
 
-### المكتبات المطلوبة والإصدارات والاعتماديات
-أضف مستودع GroupDocs.Watermark والاعتماديات إلى ملف `pom.xml` الخاص بك:
+### المكتبات المطلوبة، الإصدارات، والتبعيات
+لاستخدام GroupDocs.Watermark for Java، أدرج المستودع والتبعية في ملف `pom.xml` الخاص بك:
 
-```xml
 ```xml
 <repositories>
    <repository>
@@ -88,16 +55,27 @@ GroupDocs.Watermark يدعم **أكثر من 50 تنسيق إدخال وإخرا
    </dependency>
 </dependencies>
 ```
-```
 
-إذا كنت تفضل إدارة ملفات JAR يدويًا، قم بتنزيل أحدث إصدار من الموقع الرسمي: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+يمكنك أيضًا تنزيل أحدث JAR من الموقع الرسمي: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-## كيفية استبدال صور المخطط في Java خطوة بخطوة
+### متطلبات إعداد البيئة
+- بيئة تطوير متكاملة (IDE) مثل IntelliJ IDEA أو Eclipse.  
+- الوصول إلى ملفات المخططات التي تنوي تعديلها.
 
-### كيف تقوم بتهيئة Watermarker لملف مخطط؟
-Watermarker هو الصف الرئيسي الذي يمثل مستندًا ويوفر طرقًا للتلاعب بالمحتوى. للبدء، أنشئ كائن `Watermarker` يحمل ملف المخطط في الذاكرة. صف `Watermarker` هو نقطة الدخول الأساسية لـ GroupDocs.Watermark، مما يتيح لك قراءة المستندات وتعديلها وحفظها. استخدم `DiagramLoadOptions` لتحديد إعدادات خاصة بالتنسيق مثل DPI أو نطاق الصفحات. `DiagramLoadOptions` يكوّن طريقة تحميل المخطط، على سبيل المثال تحديد DPI أو وضع التحميل.
+### متطلبات المعرفة
+الإلمام بـ Java I/O، البرمجة الكائنية، ومفاهيم المخططات الأساسية سيساعدك على متابعة الخطوات بسلاسة.
 
-```java
+## إعداد GroupDocs.Watermark لـ Java
+1. **إضافة تبعية Maven** (كما هو موضح أعلاه) أو وضع ملفات JAR على مسار الفئة الخاص بك.  
+2. **الحصول على ترخيص تجريبي أو دائم** من متجر GroupDocs: [GroupDocs](https://purchase.groupdocs.com/temporary-license/).  
+3. **استيراد الحزم المطلوبة** وإنشاء كائن `Watermarker` (انظر الكود أدناه).
+
+## كيفية استبدال صور المخطط java باستخدام GroupDocs.Watermark
+فيما يلي دليل كامل خطوة بخطوة يوضح لك كيفية تهيئة المكتبة، الوصول إلى محتوى المخطط، استبدال الصور، وحفظ التغييرات.
+
+### الخطوة 1: تهيئة Watermarker
+أولاً، أنشئ كائن `Watermarker` يشير إلى ملف المخطط الخاص بك.
+
 ```java
 import java.io.File;
 import com.groupdocs.watermark.Watermarker;
@@ -111,12 +89,12 @@ public class FeatureWatermarkerInitialization {
     }
 }
 ```
-```
 
-### كيف يمكنك الوصول إلى محتوى المخطط لتحديد الأشكال؟
-بعد تحميل الملف، استرجع كائن `DiagramContent` من `Watermarker`. `DiagramContent` يمثل الهيكل الداخلي للمخطط من صفحات وأشكال. هذا النموذج يعرّض مجموعات من الصفحات والأشكال التي يمكنك التنقل خلالها، مما يسهل تحديد العناصر المحددة مثل الصور أو النص.
+*لماذا هذا مهم:* يقوم `Watermarker` بفتح الملف وإعداد الهياكل الداخلية للتلاعب اللاحق.
 
-```java
+### الخطوة 2: الوصول إلى محتوى المخطط
+استرجع تمثيل المخطط الداخلي حتى تتمكن من تعداد الأشكال.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -127,12 +105,12 @@ public class FeatureAccessDiagramContent {
     }
 }
 ```
-```
 
-### كيف تستبدل صور الأشكال في المخطط؟
-تجول عبر كل `DiagramShape` في الصفحة المطلوبة، تحقق مما إذا كان الشكل يحتوي على صورة، واستبدل بايتات الصورة ببايتات ملف جديد. `DiagramShape` هو النموذج لشكل فردي في المخطط، بينما `DiagramWatermarkableImage` يخزن بيانات الصورة التي يمكن تطبيقها على الشكل.
+*لماذا هذا مهم:* يوفر `DiagramContent` مجموعات الصفحات والأشكال، وهو نقطة الدخول لاستبدال الصور.
 
-```java
+### الخطوة 3: قراءة بايتات الصورة java واستبدال صور الأشكال
+الآن نحدد كل شكل يحتوي على صورة، نقرأ ملف الصورة الجديد (read image bytes java)، ونطبقه.
+
 ```java
 import java.io.File;
 import java.io.FileInputStream;
@@ -157,12 +135,14 @@ public class FeatureReplaceShapeImages {
     }
 }
 ```
-```
 
-### كيف تحفظ التغييرات وتغلق Watermarker؟
-عند اكتمال جميع التعديلات، استدعِ `save` على `Watermarker` لكتابة المخطط المحدث إلى ملف، ثم استدعِ `close` لتحرير الموارد الأصلية. هذا يضمن تحرير مقبض الملف ويمنع تسرب الذاكرة، خاصةً عند معالجة عدد كبير من المخططات في مهمة دفعة.
+*نقاط رئيسية:*  
+- `FileInputStream` يقرأ ملف PNG الجديد إلى مصفوفة بايت—هذه هي خطوة **read image bytes java**.  
+- `DiagramWatermarkableImage` يلف مصفوفة البايت بحيث يمكن للمكتبة تضمينها في الشكل.
 
-```java
+### الخطوة 4: حفظ وإغلاق Watermarker
+احفظ المخطط المعدل وأطلق الموارد.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -174,51 +154,47 @@ public class FeatureSaveAndCloseWatermarker {
     }
 }
 ```
-```
 
-## إضافة علامة مائية إلى نفس المخطط (اختياري)
+*لماذا هذا مهم:* الحفظ يكتب الصور الجديدة إلى الملف، والإغلاق يحرر الذاكرة—وهو أمر أساسي لمعالجة دفعات متعددة من المخططات.
 
-إذا كنت تحتاج أيضًا إلى تمييز المخطط، يمكنك إضافة علامة مائية قبل أو بعد استبدال الصورة:
+## تطبيقات عملية
+1. **تحديثات العلامة التجارية للشركة** – استبدال الشعارات القديمة عبر جميع المخططات التنظيمية في تشغيل واحد.  
+2. **تجديد كتالوج المنتجات** – استبدال صور المنتجات المتوقفة في الأدلة التقنية.  
+3. **صيانة المواد التعليمية** – الحفاظ على الرسوم العلمية محدثة دون تحرير يدوي.
 
-```java
-// Example – adding a text watermark
-Watermark watermark = new TextWatermark("Confidential", new Font("Arial", 12));
-watermarker.add(watermark);
-```
+## اعتبارات الأداء
+- **معالجة مخطط واحد في كل مرة** عند التعامل مع ملفات كبيرة للحفاظ على انخفاض استهلاك الذاكرة.  
+- **إغلاق التدفقات فورًا** (كما هو موضح) لتجنب قفل الملفات.  
+- **تحليل أداء I/O** إذا كنت بحاجة إلى معالجة مئات المخططات؛ فكر في تعدد الخيوط مع إنشاء كائنات `Watermarker` منفصلة لكل خيط.
 
-## المشكلات الشائعة واستكشاف الأخطاء
-
-| العَرَض | السبب المحتمل | الحل |
-|---------|--------------|-----|
-| لم يحدث تغيير في الصورة بعد تشغيل الشيفرة | `DiagramShape.hasImage()` أرجع false | تحقق من نوع الشكل؛ بعض الأشكال المتجهية تخزن الصور بطريقة مختلفة. |
-| خطأ OutOfMemoryError في الملفات الكبيرة | تحميل المخطط بالكامل مرة واحدة | استخدم `DiagramLoadOptions.setLoadMode(LoadMode.Stream)` لمعالجة الصفحات بشكل متسلسل. |
-| العلامة المائية غير مرئية | العلامة المائية وضعت خلف المحتوى الموجود | استدعِ `watermarker.setWatermarkPosition(Position.Foreground)` قبل الحفظ. |
+## المشكلات الشائعة والحلول
+| المشكلة | الحل |
+|-------|----------|
+| **صورة فارغة بعد الاستبدال** | تأكد من أن ملف PNG المصدر مدعوم وأن مصفوفة البايت تم قراءتها بالكامل قبل استدعاء `setImage`. |
+| **OutOfMemoryError في المخططات الكبيرة** | عالج المخططات بشكل متسلسل، واستدعِ `System.gc()` بعد كل `watermarker.close()` إذا لزم الأمر. |
+| **استثناء الترخيص** | تأكد من أن ملف الترخيص التجريبي أو المشتراة مُشار إليه بشكل صحيح قبل تهيئة `Watermarker`. |
 
 ## الأسئلة المتكررة
-
 **س: هل يمكنني استبدال الصور في المخططات المحمية بكلمة مرور؟**  
-ج: نعم. مرّر كلمة المرور إلى `DiagramLoadOptions` عند إنشاء `Watermarker`.
+ج: نعم. قم بتحميل المخطط باستخدام `DiagramLoadOptions` المناسبة التي تتضمن كلمة المرور، ثم تابع نفس خطوات الاستبدال.
 
-**س: هل تعمل المكتبة مع ملفات .drawio (XML)؟**  
-ج: بالتأكيد – GroupDocs.Watermark يدعم تنسيق Draw.io XML ويعامل كل عقدة كشكل.
+**س: هل يعمل هذا مع صيغ مخططات أخرى مثل VDX؟**  
+ج: يدعم GroupDocs.Watermark صيغ VDX، VDXM، وVSDX مباشرة. فقط غيّر امتداد الملف في المسار.
 
-**س: كم عدد المخططات التي يمكنني معالجتها بالتوازي؟**  
-ج: المكتبة آمنة للقراءة المتعددة الخيوط للعمليات القراءة فقط؛ بالنسبة لعمليات الكتابة، حدّ التوازي بعدد نوى المعالج لتجنب التنافس على مقابض الملفات.
+**س: كيف يمكنني استبدال الصور في جميع الصفحات، وليس فقط الأولى؟**  
+ج: قم بالتكرار على `content.getPages()` وطبق حلقة الأشكال الداخلية على كل صفحة.
 
-**س: هل هناك حد لحجم الصورة؟**  
-ج: تدعم الصور حتى 100 MB؛ يجب تصغير الملفات الأكبر مسبقًا لتقليل استهلاك الذاكرة.
+**س: هل هناك طريقة لمعالجة دفعة من المخططات المتعددة؟**  
+ج: ضع الخطوات الأربع داخل حلقة تقرأ أسماء الملفات من دليل، وتُنشئ `Watermarker` جديد لكل ملف.
 
-**س: ما خيارات الترخيص المتاحة؟**  
-ج: يمكنك البدء بتجربة مجانية لمدة 30 يومًا؛ الاستخدام في الإنتاج يتطلب ترخيصًا مدفوعًا يمكن الحصول عليه من متجر GroupDocs.
+**س: ما هو إصدار GroupDocs.Watermark المطلوب؟**  
+ج: يستخدم البرنامج التعليمي الإصدار 24.11، لكن الإصدارات الأحدث تحافظ على التوافق العكسي لهذه الواجهات.
+
+## الخلاصة
+أنت الآن تمتلك سير عمل كامل وجاهز للإنتاج لاستبدال **replace diagram images java** باستخدام GroupDocs.Watermark for Java. من خلال قراءة image bytes java، التكرار على الأشكال، وحفظ النتيجة، يمكنك أتمتة تحديثات العلامة التجارية أو الكتالوج أو المواد التعليمية على نطاق واسع. استكشف ميزات العلامات المائية الإضافية—مثل إضافة علامات مائية نصية أو حماية المخططات—لتوسيع قدرات معالجة المستندات لديك.
 
 ---
 
-**آخر تحديث:** 2026-08-19  
-**تم الاختبار مع:** GroupDocs.Watermark 23.9 for Java  
+** تحديث:** 2025-12-17  
+**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
 **المؤلف:** GroupDocs
-
-## دروس ذات صلة
-
-- [دروس وضع العلامة المائية للمخططات لـ GroupDocs.Watermark Java](/watermark/java/diagram-document-watermarking/)
-- [إزالة الروابط التشعبية من أشكال المخطط باستخدام GroupDocs.Watermark Java لتعزيز أمان المستند](/watermark/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-- [كيفية إضافة علامة مائية صورة في Java باستخدام GroupDocs.Watermark: دليل خطوة بخطوة](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)

@@ -1,78 +1,43 @@
 ---
-date: '2026-08-19'
-description: Tìm hiểu cách thay thế hình ảnh sơ đồ trong Java bằng GroupDocs.Watermark,
-  đồng thời thêm watermark vào sơ đồ một cách hiệu quả. Mã từng bước và các thực tiễn
-  tốt nhất.
+date: '2025-12-17'
+description: Tìm hiểu cách thay thế hình ảnh sơ đồ trong Java bằng GroupDocs.Watermark
+  cho Java và đọc byte hình ảnh trong Java một cách hiệu quả. Tự động cập nhật với
+  mã rõ ràng, từng bước.
 keywords:
-- replace diagram images java
-- add watermark to diagram
-- groupdocs watermark java
-lastmod: '2026-08-19'
-og_description: Tìm hiểu cách thay thế hình ảnh sơ đồ trong Java bằng GroupDocs.Watermark,
-  đồng thời thêm watermark vào sơ đồ một cách hiệu quả. Mã từng bước và các thực tiễn
-  tốt nhất.
-og_image_alt: Guide showing Java code to replace diagram images with GroupDocs.Watermark
-og_title: Thay thế hình ảnh sơ đồ trong Java bằng GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to replace diagram images in Java using GroupDocs.Watermark,
-    and also add watermark to diagram efficiently. Step‑by‑step code and best practices.
-  headline: Replace diagram images in Java using GroupDocs.Watermark
-  type: TechArticle
-- questions:
-  - answer: Yes. Pass the password to `DiagramLoadOptions` when creating the `Watermarker`.
-    question: Can I replace images in password‑protected diagrams?
-  - answer: Absolutely – GroupDocs.Watermark supports the Draw.io XML format and treats
-      each node as a shape.
-    question: Does the library work with .drawio (XML) files?
-  - answer: The library is thread‑safe for read‑only operations; for write operations,
-      limit concurrency to the number of CPU cores to avoid file‑handle contention.
-    question: How many diagrams can I process in parallel?
-  - answer: Images up to 100 MB are supported; larger files should be resized beforehand
-      to keep memory usage low.
-    question: Is there a limit on image size?
-  - answer: You can start with a free 30‑day trial; production use requires a paid
-      license, which can be obtained from the GroupDocs store.
-    question: What licensing options are available?
-  type: FAQPage
-tags:
-- diagram image replacement
-- groupdocs watermark
-- java document processing
-title: Thay thế hình ảnh sơ đồ trong Java bằng GroupDocs.Watermark
+- GroupDocs Watermark Java
+- automate image replacement
+- Java diagram watermarking
+title: Thay thế hình ảnh sơ đồ Java bằng GroupDocs.Watermark – Hướng dẫn đầy đủ
 type: docs
 url: /vi/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Thay thế hình ảnh sơ đồ trong Java bằng GroupDocs.Watermark
+# Thay Thế Hình Ảnh Sơ Đồ Java bằng GroupDocs.Watermark
 
-Việc cập nhật hình ảnh trong các tệp sơ đồ một cách thủ công tốn thời gian và dễ gây lỗi. Trong hướng dẫn này, bạn sẽ học cách **thay thế hình ảnh sơ đồ trong Java** chỉ với vài dòng mã, và bạn cũng sẽ thấy cách **thêm watermark vào sơ đồ** khi cần. Khi hoàn thành, bạn sẽ có một đoạn mã có thể tái sử dụng và chèn vào bất kỳ dự án Java nào làm việc với Visio, Draw.io hoặc các định dạng sơ đồ được hỗ trợ khác.
+Cập nhật đồ họa trong các sơ đồ kiểu Visio có thể là một công việc thủ công tẻ nhạt, đặc biệt khi bạn cần **replace diagram images java** trên nhiều tệp. Trong hướng dẫn này, bạn sẽ khám phá cách tự động hoá quy trình đó với GroupDocs.Watermark cho Java, read image bytes java, và áp dụng các thay đổi một cách lập trình. Khi kết thúc, bạn sẽ có một giải pháp có thể tái sử dụng giúp tiết kiệm thời gian, giảm lỗi con người, và giữ cho tài liệu của bạn luôn có thương hiệu nhất quán.
 
 ## Câu trả lời nhanh
-- **Thư viện nào xử lý việc thay thế hình ảnh sơ đồ?** GroupDocs.Watermark for Java.
-- **Cần bao nhiêu dòng mã cho một lần thay thế cơ bản?** Chỉ ba dòng sau khi Watermarker được tạo.
-- **Tôi có thể thêm watermark cùng lúc không?** Có – sử dụng cùng một thể hiện Watermarker với một đối tượng watermark.
-- **Phiên bản Java nào được yêu cầu?** JDK 8 hoặc cao hơn.
-- **Tôi có cần giấy phép cho việc sử dụng trong môi trường sản xuất không?** Cần một giấy phép GroupDocs.Watermark hợp lệ; có sẵn bản dùng thử miễn phí.
+- **What library handles diagram image replacement?** GroupDocs.Watermark for Java  
+- **Which method reads image bytes?** `FileInputStream` combined with `read(byte[])` (read image bytes java)  
+- **Do I need a license?** A trial license works for evaluation; a full license is required for production.  
+- **Supported diagram formats?** VSDX, VDX, VDXM, and other Microsoft Visio files.  
+- **How long does implementation take?** Roughly 15‑20 minutes for a basic replace‑diagram‑images‑java workflow.
 
-## Thay thế hình ảnh sơ đồ trong Java là gì?
-Thay thế hình ảnh sơ đồ trong Java có nghĩa là tìm kiếm các hình dạng chứa đồ họa bitmap bên trong tệp sơ đồ (như .vsdx, .drawio hoặc .svg) một cách lập trình và thay thế các hình ảnh nhúng bằng các hình ảnh mới bằng cách sử dụng API của GroupDocs.Watermark. Điều này tự động hoá các cập nhật mà nếu không sẽ phải chỉnh sửa thủ công trong trình chỉnh sửa sơ đồ.
+## Replace diagram images java là gì?
+Thay thế hình ảnh sơ đồ Java đề cập đến việc tìm kiếm một cách lập trình các hình dạng chứa hình ảnh bên trong một sơ đồ Visio và thay thế hình ảnh nhúng bằng một tệp mới bằng mã Java. Kỹ thuật này lý tưởng cho việc cập nhật thương hiệu hàng loạt, làm mới danh mục sản phẩm, hoặc bất kỳ trường hợp nào mà tài sản hình ảnh thay đổi theo thời gian.
 
-## Tại sao nên sử dụng GroupDocs.Watermark để thay thế hình ảnh sơ đồ?
-GroupDocs.Watermark hỗ trợ **hơn 50 định dạng đầu vào và đầu ra** – bao gồm Visio, Draw.io và SVG – và có thể xử lý **các tệp lên tới 500 MB** mà không cần tải toàn bộ tài liệu vào bộ nhớ, mang lại **giảm 30 % mức sử dụng CPU** so với các phương pháp xử lý luồng tệp đơn giản.
+## Tại sao nên sử dụng GroupDocs.Watermark cho nhiệm vụ này?
+GroupDocs.Watermark cung cấp một API cấp cao trừu tượng hoá XML cấp thấp của các tệp Visio, cho phép bạn tập trung vào logic nghiệp vụ thay vì những chi tiết phức tạp của định dạng tệp. Nó xử lý việc tải, điều hướng nội dung và lưu lại trong khi duy trì tính toàn vẹn của sơ đồ.
 
 ## Yêu cầu trước
-- JDK 8 hoặc mới hơn đã được cài đặt.
-- Một IDE (IntelliJ IDEA, Eclipse hoặc VS Code) để phát triển Java.
-- Maven (hoặc khả năng thêm JAR thủ công).
-- Một giấy phép GroupDocs.Watermark hợp lệ (bản dùng thử hoặc vĩnh viễn). Bạn có thể lấy giấy phép từ [GroupDocs](https://purchase.groupdocs.com/temporary-license/).
+- JDK 8 or higher installed.  
+- Maven (or manual JAR handling) for dependency management.  
+- Basic Java knowledge (classes, streams, exception handling).  
 
-### Thư viện, phiên bản và phụ thuộc cần thiết
-Thêm kho lưu trữ và phụ thuộc GroupDocs.Watermark vào `pom.xml` của bạn:
+### Thư viện, Phiên bản và Phụ thuộc cần thiết
+Để sử dụng GroupDocs.Watermark cho Java, bao gồm kho lưu trữ và phụ thuộc trong tệp `pom.xml` của bạn:
 
-```xml
 ```xml
 <repositories>
    <repository>
@@ -90,16 +55,27 @@ Thêm kho lưu trữ và phụ thuộc GroupDocs.Watermark vào `pom.xml` của 
    </dependency>
 </dependencies>
 ```
-```
 
-Nếu bạn muốn quản lý JAR thủ công, tải bản phát hành mới nhất từ trang chính thức: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Bạn cũng có thể tải JAR mới nhất từ trang chính thức: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-## Cách thay thế hình ảnh sơ đồ trong Java từng bước
+### Yêu cầu thiết lập môi trường
+- An IDE such as IntelliJ IDEA or Eclipse.  
+- Access to the diagram files you intend to modify.  
 
-### Làm thế nào để khởi tạo Watermarker cho một tệp sơ đồ?
-Watermarker là lớp chính đại diện cho một tài liệu và cung cấp các phương thức để thao tác nội dung. Để bắt đầu, tạo một đối tượng `Watermarker` tải tệp sơ đồ vào bộ nhớ. Lớp `Watermarker` là điểm vào cốt lõi của GroupDocs.Watermark, cho phép bạn đọc, sửa đổi và lưu tài liệu. Sử dụng `DiagramLoadOptions` để chỉ định các cài đặt riêng cho định dạng như DPI hoặc phạm vi trang. `DiagramLoadOptions` cấu hình cách một sơ đồ được tải, ví dụ, đặt DPI hoặc chế độ tải.
+### Kiến thức tiên quyết
+Familiarity with Java I/O, object‑oriented programming, and basic diagram concepts will help you follow the steps smoothly.
 
-```java
+## Cài đặt GroupDocs.Watermark cho Java
+1. **Add the Maven dependency** (as shown above) or place the JARs on your classpath.  
+2. **Obtain a trial or permanent license** from the GroupDocs store: [GroupDocs](https://purchase.groupdocs.com/temporary-license/).  
+3. **Import the required packages** and create a `Watermarker` instance (see code below).
+
+## Cách thay thế hình ảnh sơ đồ java bằng GroupDocs.Watermark
+Below is a complete, step‑by‑step guide that walks you through initializing the library, accessing diagram content, swapping images, and persisting the changes.
+
+### Bước 1: Khởi tạo Watermarker
+First, create a `Watermarker` object that points to your diagram file.
+
 ```java
 import java.io.File;
 import com.groupdocs.watermark.Watermarker;
@@ -113,12 +89,13 @@ public class FeatureWatermarkerInitialization {
     }
 }
 ```
-```
 
-### Làm thế nào để truy cập nội dung sơ đồ để tìm các hình dạng?
-Sau khi tải tệp, lấy một đối tượng `DiagramContent` từ `Watermarker`. `DiagramContent` đại diện cho cấu trúc nội bộ của sơ đồ gồm các trang và hình dạng. Mô hình này cung cấp các bộ sưu tập các trang và hình dạng mà bạn có thể lặp qua, giúp dễ dàng tìm các phần tử cụ thể như hình ảnh hoặc văn bản.
+*Why this matters:* `Watermarker` opens the file and prepares internal structures for later manipulation.  
+*Trong tiếng Việt:* *Tại sao điều này quan trọng:* `Watermarker` mở tệp và chuẩn bị các cấu trúc nội bộ cho việc thao tác sau này.
 
-```java
+### Bước 2: Truy cập nội dung sơ đồ
+Retrieve the diagram’s internal representation so you can enumerate shapes.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -129,12 +106,13 @@ public class FeatureAccessDiagramContent {
     }
 }
 ```
-```
 
-### Làm thế nào để thay thế hình ảnh của các hình dạng trong sơ đồ?
-Lặp qua mỗi `DiagramShape` trên trang mong muốn, kiểm tra xem hình dạng có chứa hình ảnh không, và thay thế byte hình ảnh bằng byte của tệp mới. `DiagramShape` là mô hình cho một hình dạng riêng lẻ trong sơ đồ, trong khi `DiagramWatermarkableImage` lưu trữ dữ liệu hình ảnh có thể áp dụng cho một hình dạng.
+*Why this matters:* `DiagramContent` gives you page and shape collections, the entry point for image replacement.  
+*Trong tiếng Việt:* *Tại sao điều này quan trọng:* `DiagramContent` cung cấp các bộ sưu tập trang và hình dạng, là điểm khởi đầu cho việc thay thế hình ảnh.
 
-```java
+### Bước 3: Đọc byte ảnh java và thay thế hình ảnh hình dạng
+Now we locate each shape that contains an image, read the new picture file (read image bytes java), and apply it.
+
 ```java
 import java.io.File;
 import java.io.FileInputStream;
@@ -159,12 +137,17 @@ public class FeatureReplaceShapeImages {
     }
 }
 ```
-```
 
-### Làm thế nào để lưu các thay đổi và đóng Watermarker?
-Khi tất cả các sửa đổi đã hoàn tất, gọi `save` trên `Watermarker` để ghi sơ đồ đã cập nhật vào tệp, sau đó gọi `close` để giải phóng tài nguyên gốc. Điều này đảm bảo các handle tệp được giải phóng và ngăn ngừa rò rỉ bộ nhớ, đặc biệt khi xử lý nhiều sơ đồ trong một công việc batch.
+*Key points:*  
+- `FileInputStream` reads the new PNG into a byte array—this is the **read image bytes java** step.  
+- `DiagramWatermarkableImage` wraps the byte array so the library can embed it into the shape.  
+*Trong tiếng Việt:*  
+- `FileInputStream` đọc PNG mới vào một mảng byte — đây là bước **read image bytes java**.  
+- `DiagramWatermarkableImage` bao bọc mảng byte để thư viện có thể nhúng nó vào hình dạng.
 
-```java
+### Bước 4: Lưu và đóng Watermarker
+Persist the modified diagram and release resources.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -176,51 +159,54 @@ public class FeatureSaveAndCloseWatermarker {
     }
 }
 ```
-```
 
-## Thêm watermark vào cùng một sơ đồ (tùy chọn)
+*Why this matters:* Saving writes the new images into the file, and closing frees memory—essential for batch processing many diagrams.  
+*Trong tiếng Việt:* *Tại sao điều này quan trọng:* Lưu sẽ ghi các hình ảnh mới vào tệp, và đóng sẽ giải phóng bộ nhớ — rất cần thiết cho việc xử lý hàng loạt nhiều sơ đồ.
 
-Nếu bạn cũng cần gắn thương hiệu vào sơ đồ, bạn có thể thêm watermark trước hoặc sau khi thay thế hình ảnh:
+## Ứng dụng thực tế
+1. **Corporate branding updates** – Replace old logos across all org charts in one run.  
+2. **Product catalog refreshes** – Swap out discontinued product images in technical manuals.  
+3. **Educational material maintenance** – Keep scientific illustrations current without manual editing.
 
-```java
-// Example – adding a text watermark
-Watermark watermark = new TextWatermark("Confidential", new Font("Arial", 12));
-watermarker.add(watermark);
-```
+## Các cân nhắc về hiệu suất
+- **Process one diagram at a time** when dealing with large files to keep memory usage low.  
+- **Close streams promptly** (as shown) to avoid file locks.  
+- **Profile I/O** if you need to handle hundreds of diagrams; consider multithreading with separate `Watermarker` instances per thread.
 
-## Các lỗi thường gặp và cách khắc phục
-
-| Triệu chứng | Nguyên nhân khả dĩ | Cách khắc phục |
-|------------|----------------------|----------------|
-| Không có thay đổi hình ảnh sau khi chạy mã | `DiagramShape.hasImage()` trả về false | Xác minh loại hình dạng; một số hình dạng vector lưu trữ hình ảnh khác nhau. |
-| Lỗi OutOfMemoryError trên các tệp lớn | Tải toàn bộ sơ đồ một lúc | Sử dụng `DiagramLoadOptions.setLoadMode(LoadMode.Stream)` để xử lý các trang theo thứ tự. |
-| Watermark không hiển thị | Watermark được đặt phía sau nội dung hiện có | Gọi `watermarker.setWatermarkPosition(Position.Foreground)` trước khi lưu. |
+## Các vấn đề thường gặp & Giải pháp
+| Issue | Solution |
+|-------|----------|
+| **Null image after replacement** | Verify that the source PNG is a supported format and that the byte array is fully read before calling `setImage`. |
+| **OutOfMemoryError on large diagrams** | Process diagrams sequentially, and call `System.gc()` after each `watermarker.close()` if necessary. |
+| **License exception** | Ensure the trial or purchased license file is correctly referenced before initializing `Watermarker`. |
 
 ## Câu hỏi thường gặp
 
-**Q: Tôi có thể thay thế hình ảnh trong sơ đồ được bảo vệ bằng mật khẩu không?**  
-A: Có. Cung cấp mật khẩu cho `DiagramLoadOptions` khi tạo `Watermarker`.
+**Q: Can I replace images in password‑protected diagrams?**  
+A: Yes. Load the diagram with appropriate `DiagramLoadOptions` that include the password, then proceed with the same replacement steps.  
+*Trong tiếng Việt:* Có. Tải sơ đồ bằng `DiagramLoadOptions` phù hợp có chứa mật khẩu, sau đó thực hiện các bước thay thế tương tự.
 
-**Q: Thư viện có hoạt động với các tệp .drawio (XML) không?**  
-A: Hoàn toàn – GroupDocs.Watermark hỗ trợ định dạng Draw.io XML và xem mỗi node như một hình dạng.
+**Q: Does this work with other diagram formats like VDX?**  
+A: GroupDocs.Watermark supports VDX, VDXM, and VSDX out of the box. Just change the file extension in the path.  
+*Trong tiếng Việt:* GroupDocs.Watermark hỗ trợ VDX, VDXM và VSDX ngay lập tức. Chỉ cần thay đổi phần mở rộng tệp trong đường dẫn.
 
-**Q: Tôi có thể xử lý bao nhiêu sơ đồ đồng thời?**  
-A: Thư viện an toàn với đa luồng cho các thao tác chỉ đọc; đối với các thao tác ghi, hạn chế đồng thời theo số lõi CPU để tránh tranh chấp handle tệp.
+**Q: How do I replace images in all pages, not just the first one?**  
+A: Iterate over `content.getPages()` and apply the inner shape loop to each page.  
+*Trong tiếng Việt:* Lặp qua `content.getPages()` và áp dụng vòng lặp hình dạng nội bộ cho mỗi trang.
 
-**Q: Có giới hạn kích thước hình ảnh không?**  
-A: Hình ảnh lên tới 100 MB được hỗ trợ; các tệp lớn hơn nên được thu nhỏ trước để giảm mức sử dụng bộ nhớ.
+**Q: Is there a way to batch process multiple diagrams?**  
+A: Wrap the four steps in a loop that reads file names from a directory, creating a new `Watermarker` for each file.  
+*Trong tiếng Việt:* Đặt bốn bước trong một vòng lặp đọc tên tệp từ thư mục, tạo một `Watermarker` mới cho mỗi tệp.
 
-**Q: Các tùy chọn cấp phép nào có sẵn?**  
-A: Bạn có thể bắt đầu với bản dùng thử miễn phí 30 ngày; sử dụng trong môi trường sản xuất yêu cầu giấy phép trả phí, có thể mua tại cửa hàng GroupDocs.
+**Q: What version of GroupDocs.Watermark is required?**  
+A: The tutorial uses version 24.11, but newer releases maintain backward compatibility for these APIs.  
+*Trong tiếng Việt:* Hướng dẫn này sử dụng phiên bản 24.11, nhưng các bản phát hành mới hơn vẫn giữ tính tương thích ngược cho các API này.
+
+## Kết luận
+You now have a complete, production‑ready workflow to **replace diagram images java** using GroupDocs.Watermark for Java. By reading image bytes java, iterating over shapes, and saving the result, you can automate branding, catalog, or educational updates at scale. Explore additional watermarking features—such as adding text watermarks or protecting diagrams—to further extend your document processing capabilities.
 
 ---
 
-**Cập nhật lần cuối:** 2026-08-19  
-**Được kiểm tra với:** GroupDocs.Watermark 23.9 for Java  
-**Tác giả:** GroupDocs
-
-## Hướng dẫn liên quan
-
-- [Hướng dẫn Watermark cho Sơ đồ cho GroupDocs.Watermark Java](/watermark/java/diagram-document-watermarking/)
-- [Xóa liên kết siêu văn bản khỏi các hình dạng sơ đồ bằng GroupDocs.Watermark Java để tăng cường bảo mật tài liệu](/watermark/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-- [Cách Thêm Watermark Hình Ảnh trong Java bằng GroupDocs.Watermark: Hướng Dẫn Từng Bước](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
+**Last Updated:** 2025-12-17  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs

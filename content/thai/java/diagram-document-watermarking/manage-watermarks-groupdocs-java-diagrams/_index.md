@@ -1,97 +1,46 @@
 ---
-date: '2026-08-19'
-description: เรียนรู้วิธีปกป้องแผนภาพทรัพย์สินทางปัญญาด้วย GroupDocs.Watermark สำหรับ
-  Java คู่มือขั้นตอนต่อขั้นตอนในการโหลด, ตรวจจับ image watermark, ค้นหาและลบ watermarks
-  จากไฟล์ .vsdx
+date: '2025-12-19'
+description: เรียนรู้วิธีใช้ GroupDocs Watermark Maven เพื่อจัดการลายน้ำในไฟล์แผนภาพเช่น
+  .vsdx ด้วย Java เพื่อเพิ่มความสมบูรณ์ของเอกสารและปกป้องทรัพย์สินทางปัญญา
 keywords:
-- intellectual property diagrams
-- detect image watermark
 - GroupDocs.Watermark Java
-- diagram watermark management
-- Java watermark API
-lastmod: '2026-08-19'
-og_description: ค้นพบวิธีปกป้องแผนภาพทรัพย์สินทางปัญญาด้วย GroupDocs.Watermark สำหรับ
-  Java เรียนรู้การโหลดไฟล์ .vsdx, ตรวจจับ image watermark, และลบ watermarks ที่ไม่ต้องการอย่างมีประสิทธิภาพ
-og_image_alt: Java code snippet showing watermark detection in diagram files
-og_title: ปกป้องแผนภาพทรัพย์สินทางปัญญาด้วย GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  headline: Protect intellectual property diagrams with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to protect intellectual property diagrams using GroupDocs.Watermark
-    for Java. Step‑by‑step guide to load, detect image watermark, search and remove
-    watermarks from .vsdx files.
-  name: Protect intellectual property diagrams with GroupDocs.Watermark
-  steps:
-  - name: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-    text: '**Java Development Kit (JDK) 8+** – the code uses standard Java 8 APIs.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-    text: '**GroupDocs.Watermark for Java** – either via Maven or a manual JAR download.'
-  type: HowTo
-- questions:
-  - answer: Yes, combine criteria with `OrSearchCriteria` (e.g., `new OrSearchCriteria(textCriteria,
-      imageCriteria)`) to retrieve both types at once.
-    question: Can I search for both text and image watermarks in a single call?
-  - answer: No. The library isolates watermark objects, so shapes, connectors, and
-      formatting remain unchanged after `clear()`.
-    question: Will removing watermarks corrupt the diagram layout?
-  - answer: GroupDocs.Watermark handles `.vsdx`, `.vdx`, `.vsx`, and several older
-      Visio formats, covering over **30** diagram types.
-    question: Which diagram formats are supported?
-  - answer: Use Java’s `ExecutorService` to run watermark detection/removal in parallel
-      batches, and reuse a single `Watermarker` configuration object to reduce overhead.
-    question: How do I process thousands of diagrams efficiently?
-  - answer: Absolutely. Add the Java snippets to your build scripts (Maven/Gradle)
-      and run them as a pre‑deployment verification step to ensure no prohibited watermarks
-      are present.
-    question: Is it possible to integrate this into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark diagrams
-- GroupDocs.Watermark
-- Java document processing
-- intellectual property protection
-title: ปกป้องแผนภาพทรัพย์สินทางปัญญาด้วย GroupDocs.Watermark
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark maven – จัดการลายน้ำแผนภาพด้วย Java
 type: docs
 url: /th/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
 weight: 1
 ---
 
-# ปกป้องแผนภาพทรัพย์สินทางปัญญาด้วย GroupDocs.Watermark
+# groupdocs watermark maven – จัดการลายน้ำแผนภาพด้วย Java
 
-การปกป้องแผนภาพทรัพย์สินทางปัญญาเป็นขั้นตอนสำคัญสำหรับองค์กรใด ๆ ที่แชร์สินทรัพย์การออกแบบ, แผนผัง, หรือภาพวาดสถาปัตยกรรม. ด้วย GroupDocs.Watermark for Java คุณสามารถโหลดไฟล์แผนภาพโดยโปรแกรม (เช่น `.vsdx`), ตรวจจับลายน้ำรูปภาพ, ค้นหาลายน้ำข้อความ, และลบออกอย่างปลอดภัยโดยไม่ทำให้ภาพวาดต้นฉบับเสียหาย. บทแนะนำนี้จะพาคุณผ่านกระบวนการทั้งหมด—ตั้งแต่การตั้งค่าสภาพแวดล้อมจนถึงการประมวลผลแบบแบตช์ของไลบรารีแผนภาพขนาดใหญ่—เพื่อให้คุณฝังการปกป้อง IP ที่แข็งแกร่งโดยตรงในแอปพลิเคชัน Java ของคุณ.
+การจัดการลายน้ำในเอกสารเป็นสิ่งสำคัญสำหรับการปกป้องทรัพย์สินทางปัญญาและการรักษาความสมบูรณ์ของเอกสาร **ในบทแนะนำนี้เราจะแสดงวิธีใช้ groupdocs watermark maven เพื่อโหลด ค้นหา และลบลายน้ำจากไฟล์แผนภาพเช่น `.vsdx` อย่างมีประสิทธิภาพ** ไม่ว่าคุณจะกำลังพัฒนาซอฟต์แวร์ระดับองค์กรหรืออัตโนมัติขั้นตอนการทำงานของเอกสาร การเชี่ยวชาญเทคนิคเหล่านี้จะทำให้คุณควบคุมการจัดการลายน้ำแผนภาพได้อย่างเต็มที่
 
-## คำตอบด่วน
-- **ไลบรารีใดจัดการกับลายน้ำในแผนภาพ?** GroupDocs.Watermark for Java.  
-- **ฉันสามารถตรวจจับลายน้ำรูปภาพและข้อความได้หรือไม่?** ใช่, API มี `ImageDctHashSearchCriteria` สำหรับการตรวจจับรูปภาพและ `TextSearchCriteria` สำหรับข้อความ.  
-- **ฉันต้องใช้ไลเซนส์เชิงพาณิชย์เพื่อรันโค้ดหรือไม่?** ไลเซนส์ทดลองใช้ได้สำหรับการพัฒนา; จำเป็นต้องมีไลเซนส์แบบชำระเงินสำหรับการใช้งานจริง.  
-- **รองรับการประมวลผลแบบกลุ่มหรือไม่?** แน่นอน—วนลูปผ่านโฟลเดอร์และใช้ตรรกะลายน้ำเดียวกันกับแต่ละไฟล์.  
-- **การลบลายน้ำจะทำให้โครงร่างแผนภาพต้นฉบับยังคงเหมือนเดิมหรือไม่?** ไลบรารีจะลบเฉพาะวัตถุลายน้ำเท่านั้น, รักษารูปร่าง, ตัวเชื่อมต่อ, และการจัดรูปแบบทั้งหมดไว้.
+## คำตอบอย่างรวดเร็ว
+- **ต้องการไลบรารีอะไร?** GroupDocs.Watermark for Java (available via Maven).  
+- **รูปแบบแผนภาพใดที่รองรับ?** `.vsdx`, `.vdx`, และรูปแบบ Visio อื่นๆ.  
+- **ฉันสามารถค้นหาลายน้ำทั้งข้อความและรูปภาพได้หรือไม่?** ได้ – รวมเกณฑ์การค้นหาด้วย `or()`.  
+- **ต้องการใบอนุญาตสำหรับการใช้งานจริงหรือไม่?** ต้องมีใบอนุญาต GroupDocs.Watermark ที่ถูกต้อง.  
+- **ฉันจะรวมเข้ากับ Maven อย่างไร?** เพิ่ม repository และ dependency ตามที่แสดงด้านล่าง.
 
-## แผนภาพทรัพย์สินทางปัญญาคืออะไร
-แผนภาพทรัพย์สินทางปัญญาเป็นการแสดงภาพเชิงภาพ—เช่น แผนผัง, โมเดล UML, แผนผังเครือข่าย, หรือภาพวาดสถาปัตยกรรม—ที่มีข้อมูลเชิงลิขสิทธิ์เป็นของบุคคลหรือองค์กร. แผนภาพเหล่านี้มักสื่อสารกระบวนการ, การออกแบบ, หรือกลยุทธ์ที่เป็นความลับ, ทำให้เป็นสินทรัพย์ที่มีคุณค่าและต้องการการปกป้องจากการคัดลอก, แจกจ่าย, หรือการดัดแปลงโดยไม่ได้รับอนุญาต. การถือว่าเป็นทรัพย์สินทางปัญญาช่วยให้คุณใช้มาตรการทางกฎหมายและเทคนิค, รวมถึงการใส่ลายน้ำ, เพื่อควบคุมการใช้และการเผยแพร่ของมัน.
+## groupdocs watermark maven คืออะไร?
+`groupdocs watermark maven` หมายถึงการบูรณาการแบบ Maven ของไลบรารี GroupDocs.Watermark สำหรับ Java โดยการประกาศไลบรารีใน `pom.xml` ของคุณ Maven จะดึงไบนารีที่จำเป็นทั้งหมดโดยอัตโนมัติ ทำให้คุณมุ่งเน้นที่โค้ดที่โหลดแผนภาพ ค้นหาลายน้ำ และลบลายน้ำโดยโปรแกรม
 
-## ทำไมต้องใช้ GroupDocs.Watermark สำหรับ Java
-GroupDocs.Watermark รองรับ **50+** รูปแบบการเข้าและออก (รวมถึง `.vsdx`, `.vdx`, `.vsx`) และสามารถประมวลผลแผนภาพหลายร้อยหน้าโดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ, ลดการใช้ RAM ได้ถึง **70 %** เมื่อเทียบกับวิธีการสตรีมไฟล์แบบดั้งเดิม. API ยังมีการเปรียบเทียบแฮชรูปภาพแบบไม่มี OCR ในตัว, ทำให้การ `detect image watermark` ทำได้อย่างเชื่อถือได้ในเวลาไม่ถึง **200 ms** ต่อแผนภาพบนเซิร์ฟเวอร์ 2.5 GHz ปกติ.
+## ทำไมต้องใช้ GroupDocs.Watermark สำหรับการจัดการลายน้ำแผนภาพ?
+- **API ครบถ้วน** – รองรับลายน้ำข้อความ, รูปภาพ, และรูปทรงในหลายประเภทของแผนภาพ.  
+- **การลบที่แม่นยำ** – กำจัดลายน้ำโดยไม่ทำให้โครงสร้างแผนภาพต้นฉบับเสียหาย.  
+- **ขยายได้** – เหมาะสำหรับการประมวลผลเป็นชุดของแผนภาพจำนวนมาก.  
+- **เป็นมิตรกับ Maven** – การจัดการ dependency ง่าย ทำให้โครงการของคุณสะอาด.
 
 ## ข้อกำหนดเบื้องต้น
-ก่อนเริ่ม, โปรดตรวจสอบว่าคุณมี:
+1. **Java Development Kit (JDK) 8+** – เพื่อให้เข้ากันได้กับไลบรารี.  
+2. **IDE** – IntelliJ IDEA, Eclipse หรือเครื่องมือแก้ไขที่รองรับ Java ใดก็ได้.  
+3. **GroupDocs.Watermark for Java** – เพิ่มผ่าน Maven (แนะนำ) หรือดาวน์โหลด JAR โดยตรง.  
 
-1. **Java Development Kit (JDK) 8+** – โค้ดใช้ API มาตรฐานของ Java 8.  
-2. **IDE** – IntelliJ IDEA, Eclipse, หรือเครื่องมือแก้ไขใด ๆ ที่คุณต้องการ.  
-3. **GroupDocs.Watermark for Java** – สามารถติดตั้งผ่าน Maven หรือดาวน์โหลด JAR ด้วยตนเอง.  
-
-### ไลบรารีและการพึ่งพาที่จำเป็น
-คุณสามารถเพิ่มไลบรารีผ่าน Maven หรือดาวน์โหลด JAR โดยตรง.
-
+### ไลบรารีและ Dependency ที่จำเป็น
 #### การตั้งค่า Maven
-เพิ่ม repository และรายการ dependency ลงในไฟล์ `pom.xml` ของคุณ:
+Add the following configuration to your `pom.xml` file:
 
 ```xml
 <repositories>
@@ -112,87 +61,15 @@ GroupDocs.Watermark รองรับ **50+** รูปแบบการเข
 ```
 
 #### ดาวน์โหลดโดยตรง
-หากคุณต้องการติดตั้งด้วยตนเอง, ดาวน์โหลดเวอร์ชันล่าสุดจาก [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternatively, download the latest version from [การปล่อย GroupDocs.Watermark สำหรับ Java](https://releases.groupdocs.com/watermark/java/).
 
-### การรับไลเซนส์
-- **Free trial:** เหมาะสำหรับการประเมินความสามารถของ API.  
-- **Temporary license:** ใช้สำหรับการทดสอบระยะสั้นโดยไม่มีข้อจำกัดฟีเจอร์.  
-- **Purchase:** จำเป็นสำหรับการใช้งานในสภาพแวดล้อมจริงและเพื่อเปิดใช้งานฟอร์แมตพรีเมี่ยม.
+### การรับใบอนุญาต
+- **ทดลองใช้ฟรี:** ทดสอบไลบรารีด้วยใบอนุญาตทดลอง.  
+- **ใบอนุญาตชั่วคราว:** ขอคีย์ระยะสั้นเพื่อการประเมิน.  
+- **ซื้อ:** รับใบอนุญาตการใช้งานจริงสำหรับการใช้ไม่จำกัด.
 
-## วิธีการเริ่มต้น Watermarker?
-การสร้างอินสแตนซ์ `Watermarker` เป็นขั้นตอนแรกในกระบวนการลายน้ำใด ๆ. คลาส `Watermarker` โหลดไฟล์แผนภาพเข้าสู่หน่วยความจำและให้เมธอดสำหรับการค้นหา, เพิ่ม, และลบลายน้ำ. โดยการส่งพาธของแผนภาพและ `DiagramLoadOptions` ทางเลือก, คุณจะได้อ็อบเจ็กต์ที่ทำหน้าที่เป็นจุดศูนย์กลางสำหรับการดำเนินการต่อไปทั้งหมด, ทำให้การจัดการเอกสารสอดคล้องกันตลอดกระบวนการ.
-
-```java
-Watermarker watermarker = new Watermarker(inputFilePath, loadOptions);
-```
-
-## วิธีการโหลดเอกสารแผนภาพ?
-การโหลดแผนภาพด้วย `DiagramLoadOptions` ให้การควบคุมระดับละเอียดว่าฟाइलจะถูกพาร์สอย่างไร. `DiagramLoadOptions` ให้คุณระบุว่าจะโหลดเฉพาะหน้าที่มองเห็น, จะรักษาชั้นที่ซ่อนอยู่หรือไม่, และจะจัดการกับฟอนต์ที่ฝังอยู่อย่างไร. การปรับตัวเลือกเหล่านี้สามารถเพิ่มประสิทธิภาพอย่างมากสำหรับแผนภาพขนาดใหญ่และทำให้แน่ใจว่าเฉพาะส่วนที่จำเป็นของไฟล์เท่านั้นที่ถูกประมวลผล, ลดการใช้หน่วยความจำและเร่งความเร็วการตรวจจับลายน้ำ.
-
-```java
-DiagramLoadOptions loadOptions = new DiagramLoadOptions();
-loadOptions.setLoadHiddenLayers(false);
-Watermarker watermarker = new Watermarker("sample.vsdx", loadOptions);
-```
-
-## วิธีการตรวจจับลายน้ำรูปภาพในแผนภาพ?
-การตรวจจับลายน้ำรูปภาพอาศัยคลาส `ImageDctHashSearchCriteria`, ซึ่งคำนวณแฮชเชิงรับรู้ของภาพอ้างอิงและเปรียบเทียบกับภาพทุกภาพที่ฝังอยู่ในแผนภาพ. วิธีนี้เร็วและทนต่อการเปลี่ยนแปลงภาพเล็กน้อย, ทำให้คุณสามารถค้นหาโลโก้หรือกราฟิกลายน้ำอื่น ๆ แม้ว่าจะถูกปรับขนาดหรือเปลี่ยนแปลงเล็กน้อย. โดยการกำหนดค่าขีดจำกัดความคล้ายคลึง, คุณสามารถปรับสมดุลระหว่างความไวต่อการตรวจจับและการจับคู่เท็จ.
-
-```java
-ImageDctHashSearchCriteria criteria = new ImageDctHashSearchCriteria("logo.png");
-PossibleWatermarkCollection watermarks = watermarker.search(criteria);
-```
-
-## วิธีการค้นหาลายน้ำข้อความ?
-การค้นหาลายน้ำข้อความใช้คลาส `TextSearchCriteria`. คลาสนี้สแกนทุกชั้นข้อความภายในแผนภาพ, รวมถึงข้อความในรูปทรง, ตัวเชื่อมต่อ, และกลุ่ม, แล้วคืนค่าการจับคู่ที่มีสตริงหรือแพทเทิร์นที่ระบุ. การค้นหาเป็นแบบไม่แยกแยะตัวพิมพ์ใหญ่/เล็กโดยค่าเริ่มต้นและสามารถปรับให้ละเอียดด้วย regular expressions, ทำให้คุณสามารถค้นหาลายน้ำที่อาจถูกหมุน, ซ่อนบางส่วน, หรือฝังในโครงสร้างแผนภาพซับซ้อนได้.
-
-```java
-TextSearchCriteria textCriteria = new TextSearchCriteria("Confidential");
-PossibleWatermarkCollection textWatermarks = watermarker.search(textCriteria);
-```
-
-## วิธีการลบลายน้ำจากแผนภาพ?
-การลบลายน้ำทำโดยเรียกเมธอด `clear()` บนแต่ละอ็อบเจ็กต์ `Watermark` ที่ได้จากการค้นหา. เมธอด `clear()` จะลบเฉพาะองค์ประกอบลายน้ำที่มองเห็นได้เท่านั้น, ขณะที่วัตถุแผนภาพพื้นฐาน—เช่น รูปร่าง, ตัวเชื่อมต่อ, และการจัดรูปแบบ—ยังคงอยู่ครบถ้วน. หลังจากลบแล้ว, ให้บันทึกเอกสารด้วยเมธอด `save`, จะได้เวอร์ชันแผนภาพที่สะอาดและคงรูปแบบต้นฉบับไว้.
-
-```java
-for (Watermark wm : watermarks) {
-    wm.clear();
-}
-watermarker.save("cleaned.vsdx");
-```
-
-## การประยุกต์ใช้งานจริง
-- **Enterprise software integration:** ฝังการตรวจสอบลายน้ำลงในระบบจัดการเอกสารเพื่อบังคับใช้นโยบาย IP อัตโนมัติ.  
-- **Content management systems (CMS):** สแกนแผนภาพที่ผู้ใช้อัปโหลดเพื่อค้นหาโลโก้ที่ไม่ได้รับอนุญาตก่อนเผยแพร่.  
-- **Legal document handling:** ตรวจจับและลบลายน้ำที่เป็นความลับเมื่อเตรียมชุดหลักฐาน.
-
-## ข้อผิดพลาดทั่วไปและการแก้ไขปัญหา
-- **Missing license exception:** ตรวจสอบให้แน่ใจว่าไฟล์ไลเซนส์ทดลองหรือแบบชำระเงินถูกอ้างอิงอย่างถูกต้องผ่าน `License.setLicense("license_path")`.  
-- **Large diagram slowdown:** เปิดใช้งาน `loadOptions.setLoadHiddenLayers(false)` และพิจารณาประมวลผลแผนภาพใน parallel streams.  
-- **False‑positive image matches:** ปรับค่าความทนทานของ DCT hash ด้วย `criteria.setSimilarityThreshold(0.85)` เพื่อลดการจับคู่เท็จ.
-
-## คำถามที่พบบ่อย
-
-**Q: ฉันสามารถค้นหาลายน้ำข้อความและรูปภาพในคำสั่งเดียวได้หรือไม่?**  
-A: ใช่, ผสาน criteria ด้วย `OrSearchCriteria` (เช่น `new OrSearchCriteria(textCriteria, imageCriteria)`) เพื่อดึงข้อมูลทั้งสองประเภทพร้อมกัน.
-
-**Q: การลบลายน้ำจะทำให้โครงร่างแผนภาพเสียหายหรือไม่?**  
-A: ไม่. ไลบรารีแยกวัตถุลายน้ำออก, ดังนั้นรูปทรง, ตัวเชื่อมต่อ, และการจัดรูปแบบจะคงเดิมหลังจาก `clear()`.
-
-**Q: แผนภาพรูปแบบใดบ้างที่รองรับ?**  
-A: GroupDocs.Watermark รองรับ `.vsdx`, `.vdx`, `.vsx` และหลายรูปแบบ Visio เก่า, ครอบคลุมกว่า **30** ประเภทแผนภาพ.
-
-**Q: จะประมวลผลแผนภาพหลายพันไฟล์อย่างมีประสิทธิภาพได้อย่างไร?**  
-A: ใช้ `ExecutorService` ของ Java เพื่อรันการตรวจจับ/ลบลายน้ำแบบแบตช์ขนาน, และใช้วัตถุการตั้งค่า `Watermarker` เพียงอันเดียวเพื่อ ลดค่าโอเวอร์เฮด.
-
-**Q: สามารถผสานเข้ากับ pipeline CI/CD ได้หรือไม่?**  
-A: แน่นอน. เพิ่มสคริปต์ Java ลงในสคริปต์การสร้าง (Maven/Gradle) และเรียกใช้เป็นขั้นตอนตรวจสอบก่อนการปรับใช้ เพื่อให้แน่ใจว่าไม่มีลายน้ำที่ห้ามอยู่.
-
----
-
-**อัปเดตล่าสุด:** 2026-08-19  
-**ทดสอบด้วย:** GroupDocs.Watermark 23.12 for Java  
-**ผู้เขียน:** GroupDocs
+## การใช้ groupdocs watermark maven เพื่อโหลดเอกสารแผนภาพ
+การโหลดเอกสารแผนภาพเป็นขั้นตอนแรกก่อนการดำเนินการลายน้ำใดๆ ด้านล่างเป็นตัวอย่างขั้นต่ำที่สร้างอินสแตนซ์ `Watermarker` ด้วย `DiagramLoadOptions`.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -208,6 +85,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
+
+- **พารามิเตอร์:**  
+  - `inputFilePath` – เส้นทางไปยังไฟล์ `.vsdx` ของคุณ.  
+  - `loadOptions` – ให้คุณควบคุมวิธีการแยกวิเคราะห์แผนภาพ (เช่น การป้องกันด้วยรหัสผ่าน).
+
+## การค้นหาลายน้ำด้วย groupdocs watermark maven
+### ลายน้ำข้อความ
+To locate text‑based watermarks, define a `TextSearchCriteria` and query the first page of the diagram.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -230,6 +115,13 @@ public class SearchTextWatermarks {
 }
 ```
 
+- **เมธอดสำคัญ:**  
+  - `TextSearchCriteria` – ระบุข้อความที่ต้องการค้นหาอย่างแม่นยำ.  
+  - `PossibleWatermarkCollection` – เก็บผลลัพธ์ที่พบ.
+
+### ลายน้ำรูปภาพ
+If your diagram contains logo or picture watermarks, use `ImageDctHashSearchCriteria` to compare against a reference image.
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -251,6 +143,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
+
+- **เมธอดสำคัญ:**  
+  - `ImageDctHashSearchCriteria` – สร้างแฮชเชิงรับรู้ของภาพอ้างอิงเพื่อการจับคู่ที่ทนทาน.
+
+## การลบลายน้ำ
+Once you’ve identified unwanted watermarks, you can clear them and save a clean copy of the diagram.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -279,8 +177,39 @@ public class RemoveWatermarks {
 }
 ```
 
-## บทแนะนำที่เกี่ยวข้อง
+- **เมธอดสำคัญ:** `clear()` จะลบลายน้ำทั้งหมดที่พบโดยเกณฑ์ที่รวมกัน ทำให้แผนภาพคงสภาพเดิม.
 
-- [คู่มือการเพิ่มลายน้ำในแผนภาพโดยใช้ GroupDocs.Watermark for Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [เพิ่มลายน้ำข้อความในแผนภาพโดยใช้ GroupDocs.Watermark for Java&#58; คู่มือฉบับสมบูรณ์](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [แก้ไขส่วนหัวและส่วนท้ายของแผนภาพใน Java โดยใช้ GroupDocs.Watermark&#58; คู่มือฉบับสมบูรณ์](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
+## การประยุกต์ใช้งานจริง
+1. **การบูรณาการซอฟต์แวร์ระดับองค์กร** – ฝังการจัดการลายน้ำเข้าในแอปธุรกิจเพื่อปกป้องแผนภาพที่เป็นทรัพย์สินของบริษัท.  
+2. **ระบบจัดการเนื้อหา (CMS)** – ทำให้การตรวจจับและลบโลโก้ที่ไม่ได้รับอนุญาตเป็นอัตโนมัติก่อนการเผยแพร่.  
+3. **กระบวนการทำงานของเอกสารทางกฎหมาย** – เพิ่มหรือลบลายน้ำในขั้นตอนต่างๆ ของการประมวลผลสัญญา.
+
+## ปัญหาที่พบบ่อยและการแก้ไข
+- **ข้อผิดพลาดใบอนุญาต:** ตรวจสอบให้แน่ใจว่าไฟล์ใบอนุญาตถูกอ้างอิงอย่างถูกต้องก่อนสร้าง `Watermarker`.  
+- **ไฟล์ขนาดใหญ่:** ใช้ API แบบสตรีมมิ่งหรือเพิ่มขนาด heap ของ JVM (`-Xmx2g`) สำหรับแผนภาพที่ใหญ่กว่า 100 MB.  
+- **ลายน้ำไม่พบ:** ตรวจสอบว่าเกณฑ์การค้นหา (ตัวอักษร, เกณฑ์ความคล้ายของภาพ) ตรงกับเนื้อหาลายน้ำจริง.
+
+## คำถามที่พบบ่อย
+**ถาม: ฉันสามารถค้นหาทั้งข้อความและรูปภาพพร้อมกันได้หรือไม่?**  
+ตอบ: ได้. รวมเกณฑ์ด้วย `or()` ตามที่แสดงในตัวอย่างการลบ.
+
+**ถาม: การลบลายน้ำปลอดภัยโดยไม่ทำให้โครงสร้างแผนภาพเปลี่ยนแปลงหรือไม่?**  
+ตอบ: แน่นอน. API จะกำหนดเป้าหมายลายน้ำอย่างแม่นยำ ทำให้ส่วนอื่นของแผนภาพคงเดิม.
+
+**ถาม: GroupDocs.Watermark รองรับรูปแบบแผนภาพใดบ้าง?**  
+ตอบ: รองรับรูปแบบ Visio เช่น `.vsdx`, `.vdx` รวมถึงประเภทแผนภาพเวกเตอร์อื่นๆ.
+
+**ถาม: ฉันจะประมวลผลแผนภาพหลายร้อยไฟล์ได้อย่างมีประสิทธิภาพอย่างไร?**  
+ตอบ: สร้างลูปแบบแบช, ใช้ `Watermarker` ตัวเดียวซ้ำเมื่อเป็นไปได้, และพิจารณาการประมวลผลแบบขนานด้วย `ExecutorService` ของ Java.
+
+**ถาม: ฉันสามารถรวมการตรวจจับลายน้ำเข้าใน pipeline CI/CD ได้หรือไม่?**  
+ตอบ: ได้. ใส่โค้ด Java ลงในสคริปต์การสร้าง (เช่น Maven plugins หรือ Gradle tasks) เพื่อยืนยันแผนภาพก่อนการปรับใช้.
+
+## สรุป
+โดยการใช้ **groupdocs watermark maven** คุณจะได้วิธีที่ทรงพลังและจัดการด้วย Maven เพื่อโหลด, ค้นหา, และลบลายน้ำจากไฟล์แผนภาพด้วย Java ความสามารถนี้ช่วยเสริมความปลอดภัยของเอกสาร, ทำให้กระบวนการทำงานของเนื้อหาเป็นระบบ, และขยายได้อย่างง่ายดายในคอลเลกชันเอกสารขนาดใหญ่.
+
+---
+
+**อัปเดตล่าสุด:** 2025-12-19  
+**ทดสอบกับ:** GroupDocs.Watermark 24.11 for Java  
+**ผู้เขียน:** GroupDocs

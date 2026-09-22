@@ -1,74 +1,41 @@
 ---
-date: '2026-08-19'
-description: 了解如何在 Java 中使用 GroupDocs.Watermark 替換圖表圖片，並有效地為圖表添加水印。提供逐步程式碼與最佳實踐。
+date: '2025-12-17'
+description: 學習如何使用 GroupDocs.Watermark for Java 取代圖表圖像，並有效讀取圖像位元組。透過清晰的逐步程式碼自動化更新。
 keywords:
-- replace diagram images java
-- add watermark to diagram
-- groupdocs watermark java
-lastmod: '2026-08-19'
-og_description: 了解如何在 Java 中使用 GroupDocs.Watermark 替換圖表圖片，並有效地為圖表添加水印。提供逐步程式碼與最佳實踐。
-og_image_alt: Guide showing Java code to replace diagram images with GroupDocs.Watermark
-og_title: 使用 GroupDocs.Watermark 在 Java 中替換圖表圖片
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-19'
-  description: Learn how to replace diagram images in Java using GroupDocs.Watermark,
-    and also add watermark to diagram efficiently. Step‑by‑step code and best practices.
-  headline: Replace diagram images in Java using GroupDocs.Watermark
-  type: TechArticle
-- questions:
-  - answer: Yes. Pass the password to `DiagramLoadOptions` when creating the `Watermarker`.
-    question: Can I replace images in password‑protected diagrams?
-  - answer: Absolutely – GroupDocs.Watermark supports the Draw.io XML format and treats
-      each node as a shape.
-    question: Does the library work with .drawio (XML) files?
-  - answer: The library is thread‑safe for read‑only operations; for write operations,
-      limit concurrency to the number of CPU cores to avoid file‑handle contention.
-    question: How many diagrams can I process in parallel?
-  - answer: Images up to 100 MB are supported; larger files should be resized beforehand
-      to keep memory usage low.
-    question: Is there a limit on image size?
-  - answer: You can start with a free 30‑day trial; production use requires a paid
-      license, which can be obtained from the GroupDocs store.
-    question: What licensing options are available?
-  type: FAQPage
-tags:
-- diagram image replacement
-- groupdocs watermark
-- java document processing
-title: 使用 GroupDocs.Watermark 在 Java 中替換圖表圖片
+- GroupDocs Watermark Java
+- automate image replacement
+- Java diagram watermarking
+title: 以 GroupDocs.Watermark 取代 Diagram Images Java – 完整指南
 type: docs
 url: /zh-hant/java/diagram-document-watermarking/automate-image-replacement-groupdocs-watermark-java/
 weight: 1
 ---
 
-# 使用 GroupDocs.Watermark 在 Java 中取代圖表圖像
+# 使用 GroupDocs.Watermark 替換 Diagram Images（Java）
 
-手動在圖表檔案中更新圖像既耗時又容易出錯。在本教學中，您將學會如何僅用幾行程式碼 **在 Java 中取代圖表圖像**，同時也會看到在需要時 **為圖表加入浮水印** 的方法。完成後，您將擁有一段可直接放入任何使用 Visio、Draw.io 或其他支援圖表格式的 Java 專案的可重用程式碼片段。
+在 Visio 風格的圖表中更新圖形可能是一項繁瑣的手動工作，特別是當您需要在大量檔案中 **replace diagram images java** 時。在本教學中，您將了解如何使用 GroupDocs.Watermark for Java 自動化此過程、read image bytes java，並以程式方式套用變更。完成後，您將擁有一個可重複使用的解決方案，節省時間、減少人工錯誤，並確保文件品牌一致。
 
 ## 快速解答
-- **什麼程式庫負責圖表圖像取代？** GroupDocs.Watermark for Java.
-- **基本取代需要多少行程式碼？** 只需在建立 Watermarker 後的三行程式碼。
-- **我可以同時加入浮水印嗎？** 可以 – 使用相同的 Watermarker 實例搭配浮水印物件。
-- **需要哪個 Java 版本？** JDK 8 或更高。
-- **生產環境需要授權嗎？** 需要有效的 GroupDocs.Watermark 授權；可使用免費試用版。
+- **什麼函式庫負責圖表影像替換？** GroupDocs.Watermark for Java  
+- **哪個方法讀取影像位元組？** `FileInputStream` 結合 `read(byte[])` (read image bytes java)  
+- **我需要授權嗎？** 試用授權可用於評估；正式使用需購買完整授權。  
+- **支援的圖表格式？** VSDX、VDX、VDXM 以及其他 Microsoft Visio 檔案。  
+- **實作需要多長時間？** 基本的 replace‑diagram‑images‑java 工作流程大約需要 15‑20 分鐘。  
 
-## 什麼是 Java 圖表圖像取代？
-在 Java 中取代圖表圖像指的是以程式方式在圖表檔案（如 .vsdx、.drawio 或 .svg）中尋找包含位圖圖形的形狀，並使用 GroupDocs.Watermark API 將這些內嵌圖像換成新圖像。此方式可自動化原本需要在圖表編輯器中手動編輯的更新工作。
+## 什麼是 replace diagram images java？
+replace diagram images Java 指的是以程式方式在 Visio 圖表中定位含有影像的形狀，並使用 Java 程式碼將嵌入的圖片替換為新檔案。此技術非常適合大量品牌更新、產品目錄刷新，或任何視覺資產隨時間變化的情境。
 
-## 為什麼使用 GroupDocs.Watermark 進行圖表圖像取代？
-GroupDocs.Watermark 支援 **超過 50 種輸入與輸出格式**，包括 Visio、Draw.io 與 SVG，且可在不將整個文件載入記憶體的情況下處理 **最高 500 MB 的檔案**，相較於傳統檔案串流方式可減少 **30 % 的 CPU 使用率**。
+## 為什麼在此任務中使用 GroupDocs.Watermark？
+GroupDocs.Watermark 提供高階 API，抽象化 Visio 檔案的低階 XML，讓您專注於業務邏輯，而非檔案格式的細節。它負責載入、內容導覽與儲存，同時保持圖表完整性。
 
 ## 前置條件
-- 已安裝 JDK 8 或更新版本。
-- Java 開發的 IDE（IntelliJ IDEA、Eclipse 或 VS Code）。
-- Maven（或手動加入 JAR 的能力）。
-- 有效的 GroupDocs.Watermark 授權（試用或永久）。可從 [GroupDocs](https://purchase.groupdocs.com/temporary-license/) 取得授權。
+- JDK 8 或更高版本已安裝。  
+- Maven（或手動 JAR 管理）用於相依性管理。  
+- 基本的 Java 知識（類別、串流、例外處理）。  
 
 ### 必要的函式庫、版本與相依性
-將 GroupDocs.Watermark 的儲存庫與相依性加入您的 `pom.xml`：
+要在 Java 中使用 GroupDocs.Watermark，請在 `pom.xml` 中加入儲存庫與相依性：
 
-```xml
 ```xml
 <repositories>
    <repository>
@@ -86,16 +53,27 @@ GroupDocs.Watermark 支援 **超過 50 種輸入與輸出格式**，包括 Visio
    </dependency>
 </dependencies>
 ```
-```
 
-如果您偏好手動管理 JAR，請從官方網站下載最新發行版： [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)。
+您也可以從官方網站下載最新的 JAR： [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)。  
 
-## 如何在 Java 中逐步取代圖表圖像
+### 環境設定需求
+- 使用 IntelliJ IDEA 或 Eclipse 等 IDE。  
+- 取得欲修改的圖表檔案的存取權限。  
 
-### 如何為圖表檔案初始化 Watermarker？
-Watermarker 是代表文件並提供內容操作方法的主要類別。首先，建立一個 `Watermarker` 物件將圖表檔案載入記憶體。`Watermarker` 類別是 GroupDocs.Watermark 的核心入口，允許您讀取、修改與儲存文件。使用 `DiagramLoadOptions` 可指定格式特定的設定，例如 DPI 或頁面範圍。`DiagramLoadOptions` 會設定圖表的載入方式，例如 DPI 或載入模式。
+### 知識前提
+熟悉 Java I/O、物件導向程式設計以及基本的圖表概念，將有助於順利跟隨步驟。
 
-```java
+## 設定 GroupDocs.Watermark for Java
+1. **新增 Maven 相依性**（如上所示），或將 JAR 放入 classpath。  
+2. **從 GroupDocs 商店取得試用或永久授權**： [GroupDocs](https://purchase.groupdocs.com/temporary-license/)。  
+3. **匯入必要的套件**，並建立 `Watermarker` 實例（見下方程式碼）。
+
+## 如何使用 GroupDocs.Watermark 替換 diagram images（Java）
+以下是一個完整的逐步指南，說明如何初始化函式庫、存取圖表內容、交換影像，並保存變更。
+
+### 步驟 1：初始化 Watermarker
+首先，建立指向圖表檔案的 `Watermarker` 物件。
+
 ```java
 import java.io.File;
 import com.groupdocs.watermark.Watermarker;
@@ -109,12 +87,12 @@ public class FeatureWatermarkerInitialization {
     }
 }
 ```
-```
 
-### 如何存取圖表內容以定位圖形？
-載入檔案後，從 `Watermarker` 取得 `DiagramContent` 物件。`DiagramContent` 代表圖表內部的頁面與圖形層級結構。此模型會公開頁面與圖形的集合，讓您可以遍歷，輕鬆定位圖像或文字等特定元素。
+*為什麼這很重要：* `Watermarker` 會開啟檔案並準備內部結構，以便之後的操作。
 
-```java
+### 步驟 2：存取 Diagram Content
+取得圖表的內部表示，以便列舉形狀。
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -125,12 +103,12 @@ public class FeatureAccessDiagramContent {
     }
 }
 ```
-```
 
-### 如何在圖表中取代圖形圖像？
-遍歷目標頁面的每個 `DiagramShape`，檢查該圖形是否包含圖像，若有則以新檔案的位元組取代圖像。`DiagramShape` 是圖表中單一圖形的模型，而 `DiagramWatermarkableImage` 則儲存可套用於圖形的圖像資料。
+*為什麼這很重要：* `DiagramContent` 提供頁面與形狀集合，是影像替換的入口點。
 
-```java
+### 步驟 3：讀取 image bytes（java）並替換形狀影像
+現在我們定位每個包含影像的形狀，讀取新圖片檔案（read image bytes java），並套用。
+
 ```java
 import java.io.File;
 import java.io.FileInputStream;
@@ -155,12 +133,14 @@ public class FeatureReplaceShapeImages {
     }
 }
 ```
-```
 
-### 如何儲存變更並關閉 Watermarker？
-完成所有修改後，呼叫 `Watermarker` 的 `save` 方法將更新後的圖表寫入檔案，然後呼叫 `close` 釋放原生資源。這可確保檔案句柄被釋放，避免在批次處理大量圖表時產生記憶體洩漏。
+*關鍵點：*  
+- `FileInputStream` 讀取新的 PNG 成為位元組陣列——這就是 **read image bytes java** 步驟。  
+- `DiagramWatermarkableImage` 包裝位元組陣列，使函式庫能將其嵌入形狀。
 
-```java
+### 步驟 4：儲存並關閉 Watermarker
+保存已修改的圖表並釋放資源。
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -172,51 +152,48 @@ public class FeatureSaveAndCloseWatermarker {
     }
 }
 ```
-```
 
-## 為相同圖表加入浮水印（可選）
+*為什麼這很重要：* 儲存會將新影像寫入檔案，關閉則釋放記憶體——對大量圖表的批次處理至關重要。
 
-如果您也需要為圖表加上品牌標記，可在圖像取代前或之後加入浮水印：
+## 實務應用
+1. **企業品牌更新** – 一次性替換所有組織圖中的舊標誌。  
+2. **產品目錄刷新** – 在技術手冊中替換已停產的產品影像。  
+3. **教育材料維護** – 保持科學插圖最新，無需手動編輯。  
 
-```java
-// Example – adding a text watermark
-Watermark watermark = new TextWatermark("Confidential", new Font("Arial", 12));
-watermarker.add(watermark);
-```
+## 效能考量
+- **一次處理一個圖表**，在處理大型檔案時可降低記憶體使用量。  
+- **即時關閉串流**（如示範），以避免檔案鎖定。  
+- **分析 I/O 效能**，若需處理數百個圖表，可考慮使用多執行緒，為每個執行緒建立獨立的 `Watermarker` 實例。  
 
-## 常見陷阱與疑難排解
-
-| 症狀 | 可能原因 | 解決方法 |
-|---------|--------------|-----|
-| 執行程式碼後圖像未變更 | `DiagramShape.hasImage()` 回傳 false | 確認圖形類型；某些向量圖形以不同方式儲存圖像。 |
-| 大型檔案發生 OutOfMemoryError | 一次載入整個圖表 | 使用 `DiagramLoadOptions.setLoadMode(LoadMode.Stream)` 以逐頁串流方式處理。 |
-| 浮水印未顯示 | 浮水印被放在現有內容之後 | 在儲存前呼叫 `watermarker.setWatermarkPosition(Position.Foreground)`。 |
+## 常見問題與解決方案
+| 問題 | 解決方案 |
+|-------|----------|
+| **Null image after replacement** | 確認來源 PNG 為支援格式，且在呼叫 `setImage` 前已完整讀取位元組陣列。 |
+| **OutOfMemoryError on large diagrams** | 依序處理圖表，必要時在每次 `watermarker.close()` 後呼叫 `System.gc()`。 |
+| **License exception** | 在初始化 `Watermarker` 前，確保正確引用試用或購買的授權檔案。 |
 
 ## 常見問答
 
-**問：我可以取代受密碼保護的圖表圖像嗎？**  
-答：可以。建立 `Watermarker` 時，將密碼傳入 `DiagramLoadOptions`。
+**Q: 我可以在受密碼保護的圖表中替換影像嗎？**  
+A: 可以。使用包含密碼的適當 `DiagramLoadOptions` 載入圖表，然後照相同的替換步驟進行。
 
-**問：此程式庫支援 .drawio（XML）檔案嗎？**  
-答：當然支援 – GroupDocs.Watermark 支援 Draw.io XML 格式，並將每個節點視為圖形。
+**Q: 這是否支援其他圖表格式，例如 VDX？**  
+A: GroupDocs.Watermark 內建支援 VDX、VDXM 與 VSDX。只需在路徑中更改檔案副檔名即可。
 
-**問：我可以平行處理多少個圖表？**  
-答：程式庫對唯讀操作是執行緒安全的；寫入操作時，請將併發數限制在 CPU 核心數，以避免檔案句柄衝突。
+**Q: 我如何在所有頁面（而非僅第一頁）替換影像？**  
+A: 迭代 `content.getPages()`，對每個頁面執行內部形狀迴圈。
 
-**問：圖像大小有上限嗎？**  
-答：支援最高 100 MB 的圖像；較大的檔案請事先調整大小，以降低記憶體使用。
+**Q: 有沒有方法批次處理多個圖表？**  
+A: 將四個步驟包在迴圈中，從目錄讀取檔名，為每個檔案建立新的 `Watermarker`。
 
-**問：有哪些授權方案可供選擇？**  
-答：可先使用 30 天免費試用；正式使用需購買授權，可從 GroupDocs 商店取得。
+**Q: 需要哪個版本的 GroupDocs.Watermark？**  
+A: 本教學使用 24.11 版，但較新版本仍保持相容性。
+
+## 結論
+您現在擁有一套完整、可投入生產的工作流程，使用 GroupDocs.Watermark for Java **replace diagram images java**。透過 read image bytes java、遍歷形狀並儲存結果，您可以大規模自動化品牌、目錄或教育內容的更新。探索其他浮水印功能——例如加入文字浮水印或保護圖表——以進一步擴展文件處理能力。
 
 ---
 
-**最後更新：** 2026-08-19  
-**測試於：** GroupDocs.Watermark 23.9 for Java  
+**最後更新：** 2025-12-17  
+**測試環境：** GroupDocs.Watermark 24.11 for Java  
 **作者：** GroupDocs
-
-## 相關教學
-
-- [GroupDocs.Watermark Java 圖表浮水印教學](/watermark/java/diagram-document-watermarking/)
-- [使用 GroupDocs.Watermark Java 從圖表圖形移除超連結以提升文件安全性](/watermark/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-- [如何在 Java 中使用 GroupDocs.Watermark 加入圖像浮水印：逐步指南](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
