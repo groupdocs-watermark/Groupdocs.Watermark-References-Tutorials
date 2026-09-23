@@ -1,99 +1,43 @@
 ---
-date: '2026-08-31'
-description: 了解如何使用 GroupDocs.Watermark 在 java 中获取 pdf 页面尺寸。通过 step‑by‑step 代码和技巧快速提取
-  pdf 页面尺寸。
+date: '2026-02-05'
+description: 了解如何使用 GroupDocs.Watermark for Java 提取 PDF 页面尺寸、获取 PDF 页面宽度和高度，以及读取 PDF
+  大小。
 keywords:
-- pdf page size java
-- get pdf page width
-- extract pdf page dimensions
-lastmod: '2026-08-31'
-og_description: 了解如何使用 GroupDocs.Watermark 在 java 中获取 pdf 页面尺寸。本指南展示代码、setup 和 performance
-  技巧，以提取 PDF 页面尺寸。
-og_image_alt: Guide to extract PDF page size in Java with GroupDocs.Watermark
-og_title: 如何使用 GroupDocs.Watermark 在 java 中获取 pdf 页面尺寸
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-31'
-  description: Learn how to get pdf page size java using GroupDocs.Watermark. Extract
-    pdf page dimensions quickly with step‑by‑step code and tips.
-  headline: How to get pdf page size java using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to get pdf page size java using GroupDocs.Watermark. Extract
-    pdf page dimensions quickly with step‑by‑step code and tips.
-  name: How to get pdf page size java using GroupDocs.Watermark
-  steps:
-  - name: set up load options
-    text: Create a `PdfLoadOptions` instance to control how the file is read.
-  - name: initialize the watermarker
-    text: Pass the file path and the load options to the `Watermarker` constructor.
-  - name: access PDF content
-    text: Retrieve a `PdfContent` object, which gives you direct access to page collections.
-  - name: retrieve and print page dimensions
-    text: The `PageInfo` class represents a single page’s metadata, including its
-      width and height. Iterate over `pdfContent.getPages()` and call `getWidth()`
-      / `getHeight()` on each `PageInfo`.
-  - name: close the watermarker
-    text: Always invoke `watermarker.close()` to free native resources and avoid memory
-      leaks.
-  type: HowTo
-- questions:
-  - answer: JDK 8 or higher is required; the library is fully compatible with Java
-      11, 17, and newer LTS releases.
-    question: What is the minimum Java version required for GroupDocs.Watermark?
-  - answer: Loop through `pdfContent.getPages()` and read each `PageInfo` object’s
-      width and height inside the loop.
-    question: How can I extract dimensions from every page in a multi‑page PDF?
-  - answer: Yes – supply the password via `PdfLoadOptions.setPassword("yourPassword")`
-      before initializing the `Watermarker`.
-    question: Does GroupDocs.Watermark support password‑protected PDFs?
-  - answer: The library can handle files up to 500 MB without full‑memory loading;
-      for larger files, consider processing pages in batches.
-    question: What are the memory limits when processing large PDFs?
-  - answer: The official documentation and API reference provide extensive code snippets
-      for watermarking, metadata editing, and more.
-    question: Where can I find more examples of PDF manipulation?
-  type: FAQPage
-tags:
-- pdf page size
-- GroupDocs.Watermark
-- Java PDF
-- document processing
-- extract dimensions
-title: 如何使用 GroupDocs.Watermark 在 java 中获取 pdf 页面尺寸
+- extract PDF page dimensions Java
+- GroupDocs Watermark setup
+- PDF page width and height
+title: 如何在 Java 中使用 GroupDocs.Watermark 提取 PDF 页面尺寸：完整指南
 type: docs
 url: /zh/java/document-information/get-pdf-page-dimensions-groupdocs-watermark-java/
 weight: 1
 ---
 
-# 如何使用 GroupDocs.Watermark 获取 PDF 页面大小（Java）
+# 使用 GroupDocs.Watermark 在 Java 中提取 PDF 页面尺寸
 
-在本教程中，您将学习 **如何获取 PDF 页面大小（Java）** 使用 GroupDocs.Watermark 库。提取页面宽度和高度是构建 PDF 编辑器、自动化报告工具或布局验证流水线时的常见需求。我们将完整演示设置步骤，展示具体的 API 调用，并分享实用技巧，以保持代码高效可靠。
+提取 PDF 中特定页面的尺寸是常见需求，当您需要进行布局验证、动态内容放置或自动化报告时，需要 **如何提取 PDF** 信息。在本教程中，您将学习如何使用 GroupDocs.Watermark for Java 提取 **如何提取 PDF** 页面宽度和高度，并提供实用技巧和故障排除建议。
 
 ## 快速答案
-- **哪个库提供 PDF 页面大小（Java）？** GroupDocs.Watermark for Java.
-- **最低 JDK 版本是多少？** JDK 8 或更高。
-- **开发时需要许可证吗？** 免费试用可用于测试；生产环境需要商业许可证。
-- **可以从受密码保护的 PDF 中提取尺寸吗？** 可以——在加载文档时提供密码。
-- **支持批量处理吗？** 支持，您可以遍历 `pdfContent.getPages()` 来处理所有页面。
+- **主要方法是什么？** 使用 `Watermarker` 的 `PdfContent` 读取页面尺寸。  
+- **哪个库版本可用？** GroupDocs.Watermark 24.11 或更高版本。  
+- **我需要许可证吗？** 免费试用可用于测试；生产环境需要商业许可证。  
+- **我可以读取受密码保护的 PDF 吗？** 可以——在初始化 `Watermarker` 时提供密码。  
+- **它是线程安全的吗？** 每个线程仅加载一次文档，并及时关闭以避免资源泄漏。
 
-## 什么是 PDF 页面大小（Java）？
-术语 **pdf page size java** 指的是 PDF 文件中单页的宽度和高度，单位为点（1 pt = 1/72 英寸）。了解这些尺寸可帮助您对齐图形、适配内容或验证文档是否符合打印规格。
+## 什么是 “如何提取 PDF” 页面尺寸？
+当我们谈论 **如何提取 PDF** 页面尺寸时，我们指的是检索 PDF 文件中每页的宽度和高度（以点为单位）。这些数据让您能够以编程方式调整图形、放置水印或验证文档是否符合打印规格。
 
-## 为什么使用 GroupDocs.Watermark 提取 PDF 页面大小？
-GroupDocs.Watermark 支持 **30 多种文件格式**，并且能够在不将整个文件加载到内存的情况下处理高达 **500 MB** 的 PDF，这得益于其流式架构。这种效率可降低 CPU 使用率，并为大规模文档流水线提供更快的响应时间。
+## 为什么使用 GroupDocs.Watermark for Java？
+GroupDocs.Watermark 提供了高级 API，抽象了底层 PDF 解析，使您在不同 PDF 版本上都能获得可靠的结果。它还能无缝集成到 Maven，支持受密码保护的文件，并在处理大文档时提供出色的性能。
 
 ## 前置条件
-
-- Java Development Kit 8 或更高版本。
-- IntelliJ IDEA 或 Eclipse 等 IDE。
-- 用于依赖管理的 Maven。
-- 获取 GroupDocs.Watermark 许可证（试用或商业）。
+- **Java 开发工具包 (JDK)** 8 或更高。  
+- **Maven** 用于依赖管理。  
+- 基本的 Java 知识以及熟悉添加 Maven 依赖。  
 
 ## 为 Java 设置 GroupDocs.Watermark
 
-`GroupDocs.Watermark` 是一个 Java 库，提供水印、元数据处理和文档检查功能。添加 Maven 坐标后，即可立即使用其 API。
+在您的 `pom.xml` 中加入仓库和依赖：
 
-**Maven 配置：**  
 ```xml
 <repositories>
    <repository>
@@ -112,16 +56,14 @@ GroupDocs.Watermark 支持 **30 多种文件格式**，并且能够在不将整�
 </dependencies>
 ```
 
-**直接下载：**  
-或者，从 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下载最新版本。
+您也可以直接从 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下载最新的 JAR。
 
-### 获取许可证的步骤
-1. **免费试用** – 无需费用即可评估该库。  
+### 许可证获取步骤
+1. **免费试用** – 开始免费评估该库。  
 2. **临时许可证** – 获取限时密钥以进行更长时间的测试。  
-3. **购买** – 为生产部署获取商业许可证。
+3. **购买** – 获取商业许可证用于生产环境。
 
-**基本初始化和设置：**  
-`Watermarker` 类是加载和操作文档的主要入口。  
+### 基本初始化
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -136,15 +78,11 @@ public class InitializeWatermarker {
 }
 ```
 
-## 实现指南
+## 如何提取 PDF 页面尺寸
 
-以下是使用 GroupDocs.Watermark 提取 PDF 页面尺寸的逐步过程。
+以下是逐步演示，展示如何 **提取 PDF** 页面尺寸，包括宽度和高度。
 
-### 如何使用 GroupDocs.Watermark 提取 PDF 页面尺寸？
-加载 PDF，访问其 `PdfContent`，并读取 `PageInfo` 对象以获取宽度和高度。整个操作只需几行代码，并在 `Watermarker` 关闭时自动释放资源。此方法适用于单页和多页文档，能够在不将整个文件加载到内存的情况下提供准确的尺寸。
-
-#### 步骤 1：设置加载选项
-创建 `PdfLoadOptions` 实例，以控制文件的读取方式。  
+### 步骤 1：设置加载选项
 ```java
 import com.groupdocs.watermark.options.PdfLoadOptions;
 
@@ -152,8 +90,7 @@ import com.groupdocs.watermark.options.PdfLoadOptions;
 PdfLoadOptions loadOptions = new PdfLoadOptions();
 ```
 
-#### 步骤 2：初始化 Watermarker
-将文件路径和加载选项传入 `Watermarker` 构造函数。  
+### 步骤 2：使用加载选项初始化 Watermarker
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -161,8 +98,7 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-#### 步骤 3：访问 PDF 内容
-获取 `PdfContent` 对象，可直接访问页面集合。  
+### 步骤 3：访问 PDF 内容
 ```java
 import com.groupdocs.watermark.contents.PdfContent;
 
@@ -170,9 +106,7 @@ import com.groupdocs.watermark.contents.PdfContent;
 PdfContent pdfContent = watermarker.getContent(PdfContent.class);
 ```
 
-#### 步骤 4：获取并打印页面尺寸
-`PageInfo` 类表示单页的元数据，包括宽度和高度。  
-遍历 `pdfContent.getPages()`，对每个 `PageInfo` 调用 `getWidth()` / `getHeight()`。  
+### 步骤 4：检索并打印页面尺寸
 ```java
 // Access dimensions for the first page
 double width = pdfContent.getPages().get_Item(0).getWidth();
@@ -182,66 +116,55 @@ System.out.println("Width of the first page: " + width);
 System.out.println("Height of the first page: " + height);
 ```
 
-#### 步骤 5：关闭 Watermarker
-始终调用 `watermarker.close()` 以释放本地资源，防止内存泄漏。  
+> **技巧提示：** 宽度和高度以点为单位返回（1 pt = 1/72 英寸）。如有需要，可乘以 0.3528 将其转换为毫米。
+
+### 步骤 5：关闭 Watermarker
 ```java
 watermarker.close();
 ```
 
-## 常见问题及解决方案
-- **文件路径不正确** – 请确认路径是绝对路径或相对于工作目录的相对路径。  
-- **不支持的 PDF 版本** – 确保 PDF 符合 PDF 1.4 – 1.7；较旧版本可能需要转换。  
-- **权限不足** – 以对包含 PDF 的文件夹具有读取权限的方式运行 JVM。
-
-## 实际应用
-了解页面尺寸可打开多种场景：
-
-1. **PDF 编辑工具** – 根据精确的页面大小动态调整字体或图像。  
-2. **文档分析** – 确认导出报告符合预定义的打印规格。  
-3. **数据可视化** – 生成恰好适配页面可打印区域的图表。
+## PDF 页面尺寸提取的常见用例
+1. **动态布局调整** – 调整图像或表格大小以匹配精确的页面尺寸。  
+2. **打印就绪验证** – 在发送至打印机前确保文档符合特定尺寸约束。  
+3. **批量处理** – 循环 `pdfContent.getPages()`，收集大型 PDF 中每页的尺寸。  
 
 ## 性能考虑
-在处理大型 PDF 或批量处理时：
+- **缓存结果**：如果需要多次获取许多页面的尺寸，请将其存入映射表以避免重复读取文件。  
+- **内存管理**：读取完尺寸后尽快关闭 `Watermarker`，尤其是处理大型 PDF 时。  
+- **并行处理**：对于多页文档，在提取尺寸列表后，可在独立线程中处理每页。  
 
-- 如果使用相同设置加载大量文档，请缓存 `PdfLoadOptions`。  
-- 使用 Java 的 `ExecutorService` 并行处理页面，以最大化 CPU 利用率。  
-- 避免将整个文档加载到内存；GroupDocs.Watermark 按需流式读取页面。
+## 故障排除技巧
+- **路径错误** – 确认 `"YOUR_DOCUMENT_DIRECTORY/document.pdf"` 指向一个存在且可读的文件。  
+- **不受支持的 PDF 版本** – 确保 PDF 符合 PDF 1.4 或更高版本；较旧版本可能需要转换。  
+- **许可证错误** – 缺失或过期的许可证会抛出 `LicenseException`。开发时使用试用许可证。  
 
-## 常见问答
+## 常见问题
 
-**问：使用 GroupDocs.Watermark 所需的最低 Java 版本是多少？**  
-答：需要 JDK 8 或更高版本；该库完全兼容 Java 11、 17 以及更新的 LTS 版本。
+**问：GroupDocs.Watermark 所需的最低 Java 版本是什么？**  
+答：至少需要 JDK 8 或更高。
 
-**问：如何从多页 PDF 的每一页提取尺寸？**  
-答：遍历 `pdfContent.getPages()`，在循环中读取每个 `PageInfo` 对象的宽度和高度。
+**问：如何使用 GroupDocs.Watermark 高效处理大型 PDF 文件？**  
+答：分批处理页面，仅缓存所需的元数据，并及时关闭 `Watermarker` 以释放资源。
 
-**问：GroupDocs.Watermark 是否支持受密码保护的 PDF？**  
-答：是的——在初始化 `Watermarker` 之前，通过 `PdfLoadOptions.setPassword("yourPassword")` 提供密码。
+**问：GroupDocs.Watermark 能处理受密码保护的 PDF 吗？**  
+答：可以——在创建 `Watermarker` 时于 `PdfLoadOptions` 中提供密码。
 
-**问：处理大型 PDF 时的内存限制是什么？**  
-答：该库可在不完整加载内存的情况下处理高达 500 MB 的文件；对于更大的文件，建议分批处理页面。
+**问：有没有办法自动提取所有页面的尺寸？**  
+答：当然。遍历 `pdfContent.getPages()`，在循环中对每页调用 `getWidth()` / `getHeight()`。
 
-**问：在哪里可以找到更多 PDF 操作示例？**  
-答：官方文档和 API 参考提供了大量关于水印、元数据编辑等的代码示例。
+**问：提取页面尺寸时常见的问题有哪些？**  
+答：常见问题包括错误的文件路径、页面对象损坏的 PDF，或文件权限不足。
 
-## 资源
-- [文档](https://docs.groupdocs.com/watermark/java/)
-- [API 参考](https://reference.groupdocs.com/watermark/java)
-- [下载 GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
-- [GitHub 仓库](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [免费支持论坛](https://forum.groupdocs.com/c/watermark/10)
-- [临时许可证信息](https://purchase.groupdocs.com/temporary-license/)
-
----
-
-**最后更新：** 2026-08-31  
-**测试版本：** GroupDocs.Watermark 24.11 for Java  
-**作者：** GroupDocs  
+## 其他资源
+- [Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License Information](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-## 相关教程
-
-- [使用 GroupDocs.Watermark for Java 检索文档信息：分步指南](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
-- [在 Java 中使用 GroupDocs.Watermark 访问并遍历 PDF 工件进行文档水印](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
-- [使用 GroupDocs.Watermark for Java 提取 PDF 注释：完整指南](/watermark/java/pdf-document-watermarking/extract-pdf-annotations-groupdocs-watermark-java/)
+**最后更新：** 2026-02-05  
+**测试环境：** GroupDocs.Watermark 24.11 for Java  
+**作者：** GroupDocs

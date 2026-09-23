@@ -1,104 +1,52 @@
 ---
-date: '2026-08-31'
-description: Tìm hiểu cách thêm watermark vào sơ đồ bằng GroupDocs.Watermark cho Java.
-  Hướng dẫn này bao gồm cài đặt, tạo text watermark, các tùy chọn vị trí và lưu các
-  tệp đã được bảo vệ.
+date: '2025-12-19'
+description: Tìm hiểu cách thêm watermark văn bản vào các sơ đồ bằng GroupDocs.Watermark
+  cho Java. Bảo vệ nội dung hình ảnh của bạn một cách hiệu quả và đảm bảo tính toàn
+  vẹn của tài liệu.
 keywords:
-- how to add watermark
-- text watermark Java
-- diagram watermarking
-- GroupDocs.Watermark
-lastmod: '2026-08-31'
-og_description: Tìm hiểu cách thêm watermark vào sơ đồ bằng GroupDocs.Watermark cho
-  Java. Thực hiện theo các hướng dẫn từng bước để bảo vệ nội dung hình ảnh của bạn
-  bằng text watermark.
-og_image_alt: Guide showing how to add watermark to diagram files using GroupDocs.Watermark
-  for Java
-og_title: Cách thêm watermark vào sơ đồ với GroupDocs.Watermark cho Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-31'
-  description: Learn how to add watermark to diagrams using GroupDocs.Watermark for
-    Java. This guide covers setup, text watermark creation, placement options, and
-    saving the protected files.
-  headline: How to add watermark to diagrams with GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to add watermark to diagrams using GroupDocs.Watermark for
-    Java. This guide covers setup, text watermark creation, placement options, and
-    saving the protected files.
-  name: How to add watermark to diagrams with GroupDocs.Watermark for Java
-  steps:
-  - name: load the diagram document
-    text: First, specify the file location and initialise the load options. **Definition
-      anchor:** `DiagramLoadOptions` specifies how a diagram file is parsed, including
-      page‑size handling and shape extraction.
-  - name: create and configure the text watermark
-    text: Instantiate a `TextWatermark` object and set its visual properties. **Definition
-      anchor:** `TextWatermark` represents a textual overlay that can be styled with
-      font, size, color, and opacity before being applied to a document.
-  - name: configure watermark placement options
-    text: Define where the watermark should appear within the diagram shapes. **Definition
-      anchor:** `DiagramShapeWatermarkOptions` lets you target specific diagram elements
-      (e.g., background pages, individual shapes) for watermark insertion.
-  - name: add the watermark and save the document
-    text: Apply the configured watermark to the loaded diagram and write the protected
-      file to disk. **Definition anchor:** `Watermarker` is the core class that orchestrates
-      loading, watermarking, and saving operations for supported file types.
-  type: HowTo
-- questions:
-  - answer: A size between 14 pt and 24 pt balances readability and unobtrusiveness
-      for most diagram dimensions.
-    question: What is the best font size for a diagram watermark?
-  - answer: Yes – use `textWatermark.setColor(Color.BLUE)` (or any `java.awt.Color`)
-      to customise the hue.
-    question: Can I change the watermark colour?
-  - answer: Iterate over your file collection and reuse a single `Watermarker` per
-      thread, calling `watermarker.add()` for each document before saving.
-    question: How do I process a large batch of diagrams?
-  - answer: GroupDocs.Watermark supports over 50 formats, including Visio (.vsdx),
-      SVG, PNG, and JPEG. See the full list in the official [documentation](https://docs.groupdocs.com/watermark/java/).
-    question: Are there any format limitations?
-  - answer: 'Post questions on the community forum: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10).'
-    question: Where can I get help if I encounter issues?
-  type: FAQPage
-tags:
-- watermark
-- GroupDocs.Watermark
-- Java diagram
-- text watermark
-- document protection
-title: Cách thêm watermark vào sơ đồ với GroupDocs.Watermark cho Java
+- text watermarks
+- GroupDocs Watermark for Java
+- diagram document watermarking
+title: Thêm Đánh Dấu Văn Bản vào Sơ Đồ bằng GroupDocs.Watermark cho Java – Hướng Dẫn
+  Toàn Diện
 type: docs
 url: /vi/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/
 weight: 1
 ---
 
-# Cách thêm watermark vào sơ đồ với GroupDocs.Watermark cho Java
+# Thêm Đánh Dấu Văn Bản vào Sơ Đồ Sử Dụng GroupDocs.Watermark cho Java: Hướng Dẫn Toàn Diện
 
-Bảo vệ tài liệu sơ đồ khỏi việc sử dụng trái phép là điều cần thiết cho bất kỳ tổ chức nào chia sẻ tài sản hình ảnh. Trong hướng dẫn toàn diện này, bạn sẽ khám phá **cách thêm watermark** vào sơ đồ bằng GroupDocs.Watermark cho Java, từ thiết lập dự án đến lưu tài liệu cuối cùng. Hướng dẫn được viết cho các nhà phát triển quen thuộc với Java và nhằm cung cấp cho bạn giải pháp rõ ràng, sẵn sàng cho môi trường sản xuất.
+## Giới thiệu
+Bảo vệ các tài liệu sơ đồ khỏi việc sử dụng trái phép là rất quan trọng, và **thêm một dấu watermark văn bản** cung cấp một giải pháp đơn giản nhưng hiệu quả. Trong hướng dẫn này, bạn sẽ khám phá cách tải các tệp sơ đồ, tạo một dấu watermark văn bản có thể tùy chỉnh, và áp dụng nó lên các trang nền hoặc các hình dạng cụ thể bằng **GroupDocs.Watermark cho Java**. Khi kết thúc hướng dẫn, bạn sẽ có thể bảo vệ tài sản hình ảnh của mình đồng thời giữ nguyên giao diện và cảm giác ban đầu.
 
-## Câu trả lời nhanh
-- **Thư viện nào xử lý watermark cho sơ đồ?** GroupDocs.Watermark for Java.  
-- **Phiên bản Java tối thiểu?** JDK 8 hoặc cao hơn.  
-- **Tôi có thể xử lý hàng loạt nhiều sơ đồ không?** Có – API cung cấp các phương thức batch.  
-- **Tôi có cần giấy phép cho việc phát triển không?** Giấy phép tạm thời loại bỏ mọi hạn chế.  
-- **Các tệp đã được watermark được lưu ở đâu?** Vào bất kỳ đường dẫn nào bạn chỉ định qua `watermarker.save()`.
+### Câu trả lời nhanh
+- **Thêm dấu watermark văn bản** có nghĩa là gì?  
+  Nó có nghĩa là nhúng một lớp văn bản bán trong suốt vào tài liệu để chỉ ra quyền sở hữu hoặc tính bảo mật.  
+- **Thư viện nào hỗ trợ đánh dấu watermark cho sơ đồ?**  
+  GroupDocs.Watermark for Java cung cấp hỗ trợ gốc cho các định dạng sơ đồ (ví dụ: Visio, VSDX).  
+- **Tôi có cần giấy phép không?**  
+  Cần một giấy phép tạm thời hoặc đầy đủ cho việc sử dụng trong môi trường sản xuất; bản dùng thử miễn phí có sẵn để đánh giá.  
+- **Tôi có thể đặt watermark lên các trang nền không?**  
+  Có – sử dụng tùy chọn `DiagramWatermarkPlacementType.SeparateBackgrounds` cho **watermark trang nền**.  
+- **Mã có tương thích với Java 8+ không?**  
+  Hoàn toàn – thư viện hoạt động với JDK 8 và các phiên bản mới hơn.
 
-## Thêm watermark vào sơ đồ là gì?
-Thêm watermark có nghĩa là nhúng văn bản (hoặc hình ảnh) bán trong suốt vào tệp sơ đồ để nội dung hình ảnh mang thông tin sở hữu. Watermark trở thành một phần của tệp và không thể bị xóa mà không thay đổi tài liệu. Nó thường được hiển thị với độ trong suốt giảm để sơ đồ nền vẫn có thể đọc được trong khi watermark vẫn hiển thị.
+## Đánh Dấu Văn Bản là gì cho Sơ Đồ?
+Một watermark văn bản là một đoạn văn bản có thể đọc được (thường là bán trong suốt) được hiển thị phía trên hoặc phía sau các thành phần của sơ đồ. Nó có thể được sử dụng cho việc xây dựng thương hiệu, bảo vệ bản quyền, hoặc đánh dấu các bản nháp bảo mật.
 
 ## Tại sao nên sử dụng GroupDocs.Watermark cho Java?
-GroupDocs.Watermark hỗ trợ **hơn 50 định dạng đầu vào và đầu ra** — bao gồm Visio (.vsdx), SVG và các loại hình ảnh phổ biến — và có thể xử lý sơ đồ lên tới **500 trang** mà không cần tải toàn bộ tệp vào bộ nhớ, mang lại các thao tác nhanh, tiêu thụ ít bộ nhớ cho các dự án quy mô lớn. Thư viện cũng cung cấp các API cho xử lý batch, xoay tùy chỉnh và điều chỉnh màu sắc, làm cho nó phù hợp với các quy trình tài liệu cấp doanh nghiệp.
+- **Broad format support** – hoạt động với Visio, VSDX và nhiều loại sơ đồ khác.  
+- **Fine‑grained placement** – chọn watermark cho nền trước, nền sau, hoặc cho hình dạng cụ thể.  
+- **Simple API** – tạo và áp dụng watermark chỉ với vài dòng mã Java.  
 
 ## Yêu cầu trước
-- **GroupDocs.Watermark for Java** ≥ 24.11 (tải xuống từ trang phát hành chính thức).  
-- **Java Development Kit (JDK)** 8 hoặc mới hơn.  
-- Một IDE như IntelliJ IDEA hoặc Eclipse.  
-- Maven để quản lý phụ thuộc (tùy chọn nhưng được khuyến nghị).  
+- **GroupDocs.Watermark for Java** (v24.11 hoặc sau)  
+- **Java Development Kit (JDK)** 8 hoặc cao hơn  
+- Maven (hoặc bao gồm JAR thủ công)  
 
 ## Cài đặt GroupDocs.Watermark cho Java
 ### Cấu hình Maven
-Thêm phụ thuộc sau vào tệp `pom.xml` của bạn:
+Add the following configuration to your `pom.xml` file:
 
 ```xml
 <repositories>
@@ -119,18 +67,25 @@ Thêm phụ thuộc sau vào tệp `pom.xml` của bạn:
 ```
 
 ### Tải trực tiếp
-Lấy JAR mới nhất từ trang phát hành chính thức: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Tải phiên bản mới nhất từ [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Nhận giấy phép
-- **Dùng thử miễn phí** – đánh giá tất cả tính năng mà không tốn phí.  
-- **Giấy phép tạm thời** – loại bỏ giới hạn sử dụng trong quá trình phát triển.  
-- **Giấy phép thương mại** – cần thiết cho triển khai sản xuất.
+### Đăng ký giấy phép
+- **Free Trial** – đánh giá tất cả các tính năng mà không cần khóa giấy phép.  
+- **Temporary License** – sử dụng trong quá trình phát triển để mở khóa đầy đủ chức năng.  
+- **Purchase** – mua giấy phép sản xuất cho các dự án thương mại.  
 
-## Cách thêm watermark vào sơ đồ bằng GroupDocs.Watermark cho Java?
-Quá trình bao gồm bốn bước chính: tải sơ đồ nguồn vào một thể hiện `Watermarker`, tạo một `TextWatermark` với giao diện mong muốn, cấu hình vị trí watermark sẽ xuất hiện bằng `DiagramShapeWatermarkOptions`, và cuối cùng lưu tệp đã chỉnh sửa vào vị trí đích. Mỗi bước được minh họa bằng các đoạn mã ngắn gọn dưới đây.
+### Khởi tạo và Cấu hình Cơ bản
+Make sure the following imports are present in your Java class:
 
-### Bước 1: tải tài liệu sơ đồ
-Đầu tiên, chỉ định vị trí tệp và khởi tạo các tùy chọn tải.
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.DiagramLoadOptions;
+```
+
+## Thực hiện từng bước
+
+### Bước 1: Tải tài liệu sơ đồ
+First, point the library to your diagram file and initialize load options.
 
 ```java
 String inputPath = "YOUR_DOCUMENT_DIRECTORY";
@@ -138,29 +93,29 @@ DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker(inputPath, loadOptions);
 ```
 
-**Định nghĩa:** `DiagramLoadOptions` chỉ định cách tệp sơ đồ được phân tích, bao gồm xử lý kích thước trang và trích xuất hình dạng.
+*Giải thích*: `DiagramLoadOptions` cho phép bạn kiểm soát cách sơ đồ được phân tích trước khi áp dụng watermark.
 
-### Bước 2: tạo và cấu hình watermark văn bản
-Khởi tạo một đối tượng `TextWatermark` và thiết lập các thuộc tính hiển thị của nó.
+### Bước 2: Tạo Watermark Văn Bản
+Now create the watermark text and define its visual style.
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark 1", new Font("Calibri", 19));
 ```
 
-**Định nghĩa:** `TextWatermark` đại diện cho lớp phủ văn bản có thể được định dạng với phông chữ, kích thước, màu sắc và độ trong suốt trước khi áp dụng vào tài liệu.
+*Giải thích*: Điều này tạo một `TextWatermark` với cụm từ **“Test watermark 1”** sử dụng phông chữ Calibri kích thước 19.
 
-### Bước 3: cấu hình tùy chọn vị trí watermark
-Xác định vị trí watermark sẽ xuất hiện trong các hình dạng của sơ đồ.
+### Bước 3: Cấu hình Vị trí – Watermark Trang Nền
+Choose where the watermark should appear. For a **background page watermark**, use the following option:
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
 options.setPlacementType(DiagramWatermarkPlacementType.SeparateBackgrounds);
 ```
 
-**Định nghĩa:** `DiagramShapeWatermarkOptions` cho phép bạn nhắm mục tiêu các phần tử sơ đồ cụ thể (ví dụ: các trang nền, các hình dạng riêng lẻ) để chèn watermark.
+*Giải thích*: `DiagramShapeWatermarkOptions` kiểm soát vị trí chính xác. Đặt loại vị trí thành `SeparateBackgrounds` sẽ thêm watermark vào mỗi trang nền của sơ đồ.
 
-### Bước 4: thêm watermark và lưu tài liệu
-Áp dụng watermark đã cấu hình vào sơ đồ đã tải và ghi tệp đã bảo vệ ra đĩa.
+### Bước 4: Áp dụng Watermark và Lưu
+Finally, add the watermark to the document, save the result, and release resources.
 
 ```java
 watermarker.add(textWatermark, options);
@@ -169,63 +124,52 @@ watermarker.save(outputPath);
 watermarker.close();
 ```
 
-**Định nghĩa:** `Watermarker` là lớp cốt lõi điều phối các thao tác tải, watermark và lưu cho các loại tệp được hỗ trợ.
+*Giải thích*: Phương thức `add` áp dụng `textWatermark` đã cấu hình bằng các tùy chọn vị trí, sau đó sơ đồ đã chỉnh sửa được lưu vào `outputPath`.
 
-## Ứng dụng thực tiễn
-Nhúng watermark có giá trị trong nhiều kịch bản thực tế:
+## Ứng dụng Thực tiễn
+- **Intellectual Property Protection** – Ngăn chặn đối thủ tái sử dụng các sơ đồ sở hữu.  
+- **Brand Reinforcement** – Nhúng tên công ty hoặc logo dưới dạng watermark văn bản trên tất cả các sơ đồ xuất khẩu.  
+- **Legal Documentation** – Đánh dấu các bản nháp bảo mật của sơ đồ kỹ thuật.  
+- **Academic Submissions** – Thêm mã sinh viên hoặc mã khóa học vào sơ đồ để theo dõi đạo văn.  
 
-- **Bảo vệ sở hữu trí tuệ:** Ngăn ngừa đối thủ tái sử dụng các sơ đồ luồng độc quyền.  
-- **Củng cố thương hiệu:** Hiển thị tên công ty của bạn trên tất cả các sơ đồ đã xuất.  
-- **Tuân thủ pháp lý:** Đánh dấu các sơ đồ mật với “Confidential – Do Not Distribute.”  
-- **Tính trung thực học thuật:** Gắn thẻ các bài nộp của sinh viên bằng các định danh duy nhất.
+## Các yếu tố về hiệu suất
+- **Memory Management** – Đóng instance `Watermarker` (`watermarker.close()`) để giải phóng tài nguyên gốc, đặc biệt khi xử lý các tệp lớn.  
+- **Batch Processing** – Lặp qua một tập hợp các đường dẫn sơ đồ và tái sử dụng một instance `Watermarker` duy nhất khi có thể để giảm tải.  
 
-Bạn có thể tích hợp quy trình này vào hệ thống quản lý tài liệu, pipeline CI, hoặc dịch vụ xử lý batch để tự động bảo vệ hàng ngàn tệp.
-
-## Các cân nhắc về hiệu năng
-- **Tối ưu bộ nhớ:** Tái sử dụng các thể hiện `Watermarker` khi có thể và đóng chúng bằng `watermarker.close()` để giải phóng tài nguyên gốc.  
-- **Xử lý tệp lớn:** Thư viện xử lý các trang theo yêu cầu, vì vậy ngay cả sơ đồ 300 trang cũng giữ dưới 200 MB bộ nhớ heap trên một JVM 8 GB tiêu chuẩn.  
-- **An toàn đa luồng:** Mỗi luồng nên làm việc với một thể hiện `Watermarker` riêng; API không được đồng bộ toàn cục.
+## Các vấn đề thường gặp và giải pháp
+| Vấn đề | Giải pháp |
+|-------|----------|
+| **OutOfMemoryError trên các sơ đồ lớn** | Tăng kích thước heap JVM (`-Xmx2g`) và xử lý các tệp từng cái một. |
+| **Watermark không hiển thị** | Đảm bảo màu watermark có độ tương phản đủ; đặt độ trong suốt qua `textWatermark.setOpacity(0.5)`. |
+| **Định dạng sơ đồ không được hỗ trợ** | Kiểm tra định dạng có được liệt kê trong tài liệu các định dạng được GroupDocs.Watermark hỗ trợ. |
 
 ## Câu hỏi thường gặp
 
-**Q: Kích thước phông chữ tốt nhất cho watermark trên sơ đồ là gì?**  
-A: Kích thước từ 14 pt đến 24 pt cân bằng giữa khả năng đọc và không gây phiền nhiễu cho hầu hết các kích thước sơ đồ.
+**Q: Kích thước phông chữ tốt nhất cho watermark là bao nhiêu?**  
+A: Kích thước tối ưu phụ thuộc vào kích thước của sơ đồ; 12‑20 pt thường phù hợp cho hầu hết các trường hợp.
 
-**Q: Tôi có thể thay đổi màu của watermark không?**  
-A: Có – sử dụng `textWatermark.setColor(Color.BLUE)` (hoặc bất kỳ `java.awt.Color` nào) để tùy chỉnh màu.
+**Q: Tôi có thể tùy chỉnh màu sắc của watermark không?**  
+A: Có, sử dụng `textWatermark.setColor(Color.GRAY)` (hoặc bất kỳ `java.awt.Color` nào).
 
-**Q: Làm thế nào để xử lý một batch lớn các sơ đồ?**  
-A: Lặp qua bộ sưu tập tệp của bạn và tái sử dụng một `Watermarker` duy nhất cho mỗi luồng, gọi `watermarker.add()` cho mỗi tài liệu trước khi lưu.
+**Q: Làm thế nào để xử lý một loạt tài liệu lớn?**  
+A: Tận dụng API batch của thư viện hoặc viết một vòng lặp tái sử dụng các đối tượng `Watermarker` để giảm thiểu tải.
 
-**Q: Có bất kỳ giới hạn định dạng nào không?**  
-A: GroupDocs.Watermark hỗ trợ hơn 50 định dạng, bao gồm Visio (.vsdx), SVG, PNG và JPEG. Xem danh sách đầy đủ trong [tài liệu chính thức](https://docs.groupdocs.com/watermark/java/).
+**Q: Có bất kỳ hạn chế nào với GroupDocs.Watermark không?**  
+A: Thư viện hỗ trợ hầu hết các định dạng sơ đồ phổ biến, nhưng một số phần mở rộng độc quyền có thể không được hiển thị đầy đủ. Kiểm tra [documentation](https://docs.groupdocs.com/watermark/java/) để biết chi tiết.
 
-**Q: Tôi có thể nhận được sự hỗ trợ ở đâu nếu gặp vấn đề?**  
-A: Đăng câu hỏi trên diễn đàn cộng đồng: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10).
+**Q: Làm sao tôi có thể nhận hỗ trợ nếu gặp vấn đề?**  
+A: Truy cập [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10) để được cộng đồng hỗ trợ hoặc liên hệ trực tiếp với bộ phận hỗ trợ của GroupDocs.
 
-## Tài nguyên
-- **Tài liệu:** [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **Tham khảo API:** [Java API Reference](https://reference.groupdocs.com/watermark/java)  
-- **Tải xuống:** [Get GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
-- **Kho GitHub:** [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Diễn đàn hỗ trợ miễn phí:** [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
-- **Giấy phép tạm thời:** [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-
-Thực hiện các bước trên để bảo vệ tài sản sơ đồ của bạn bằng watermark văn bản chuyên nghiệp. Thử nghiệm với các phông chữ, màu sắc và tùy chọn vị trí khác nhau để phù hợp với hướng dẫn thương hiệu của bạn, và cân nhắc tự động hoá quy trình cho các thư viện tài liệu lớn.
+## Tài nguyên bổ sung
+- **Tài liệu**: [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Tham chiếu API**: [Java API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Tải xuống**: [Get GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
+- **Kho GitHub**: [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Diễn đàn hỗ trợ miễn phí**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
+- **Giấy phép tạm thời**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 
 ---
 
-**Cập nhật lần cuối:** 2026-08-31  
+**Cập nhật lần cuối:** 2025-12-19  
 **Kiểm tra với:** GroupDocs.Watermark 24.11 for Java  
 **Tác giả:** GroupDocs
-
-```java
-import com.groupdocs.watermark.Watermarker;
-import com.groupdocs.watermark.options.DiagramLoadOptions;
-```
-
-## Hướng dẫn liên quan
-
-- [Hướng dẫn thêm Watermark vào sơ đồ bằng GroupDocs.Watermark cho Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [Cách thêm Watermark văn bản vào PDF bằng GroupDocs.Watermark cho Java: Hướng dẫn từng bước](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [Cách thêm Watermark văn bản vào hình ảnh tài liệu Word bằng GroupDocs.Watermark cho Java](/watermark/java/image-watermarks/add-watermarks-word-images-groupdocs-java/)

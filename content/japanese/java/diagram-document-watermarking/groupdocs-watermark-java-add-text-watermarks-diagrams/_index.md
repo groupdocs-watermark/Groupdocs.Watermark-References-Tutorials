@@ -1,104 +1,54 @@
 ---
-date: '2026-08-31'
-description: GroupDocs.Watermark for Java を使用して diagrams に watermark を追加する方法を学びます。このガイドでは、セットアップ、text
-  watermark の作成、配置オプション、保護されたファイルの保存について説明します。
+date: '2025-12-19'
+description: GroupDocs.Watermark for Java を使って、図にテキスト透かしを追加する方法を学びましょう。視覚コンテンツを効果的に保護し、文書の完全性を確保します。
 keywords:
-- how to add watermark
-- text watermark Java
-- diagram watermarking
-- GroupDocs.Watermark
-lastmod: '2026-08-31'
-og_description: GroupDocs.Watermark for Java を使用して diagrams に watermark を追加する方法を学びます。ステップバイステップの手順で、visual
-  content を text watermarks で保護します。
-og_image_alt: Guide showing how to add watermark to diagram files using GroupDocs.Watermark
-  for Java
-og_title: GroupDocs.Watermark for Java を使用して diagrams に watermark を追加する方法
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-31'
-  description: Learn how to add watermark to diagrams using GroupDocs.Watermark for
-    Java. This guide covers setup, text watermark creation, placement options, and
-    saving the protected files.
-  headline: How to add watermark to diagrams with GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to add watermark to diagrams using GroupDocs.Watermark for
-    Java. This guide covers setup, text watermark creation, placement options, and
-    saving the protected files.
-  name: How to add watermark to diagrams with GroupDocs.Watermark for Java
-  steps:
-  - name: load the diagram document
-    text: First, specify the file location and initialise the load options. **Definition
-      anchor:** `DiagramLoadOptions` specifies how a diagram file is parsed, including
-      page‑size handling and shape extraction.
-  - name: create and configure the text watermark
-    text: Instantiate a `TextWatermark` object and set its visual properties. **Definition
-      anchor:** `TextWatermark` represents a textual overlay that can be styled with
-      font, size, color, and opacity before being applied to a document.
-  - name: configure watermark placement options
-    text: Define where the watermark should appear within the diagram shapes. **Definition
-      anchor:** `DiagramShapeWatermarkOptions` lets you target specific diagram elements
-      (e.g., background pages, individual shapes) for watermark insertion.
-  - name: add the watermark and save the document
-    text: Apply the configured watermark to the loaded diagram and write the protected
-      file to disk. **Definition anchor:** `Watermarker` is the core class that orchestrates
-      loading, watermarking, and saving operations for supported file types.
-  type: HowTo
-- questions:
-  - answer: A size between 14 pt and 24 pt balances readability and unobtrusiveness
-      for most diagram dimensions.
-    question: What is the best font size for a diagram watermark?
-  - answer: Yes – use `textWatermark.setColor(Color.BLUE)` (or any `java.awt.Color`)
-      to customise the hue.
-    question: Can I change the watermark colour?
-  - answer: Iterate over your file collection and reuse a single `Watermarker` per
-      thread, calling `watermarker.add()` for each document before saving.
-    question: How do I process a large batch of diagrams?
-  - answer: GroupDocs.Watermark supports over 50 formats, including Visio (.vsdx),
-      SVG, PNG, and JPEG. See the full list in the official [documentation](https://docs.groupdocs.com/watermark/java/).
-    question: Are there any format limitations?
-  - answer: 'Post questions on the community forum: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10).'
-    question: Where can I get help if I encounter issues?
-  type: FAQPage
-tags:
-- watermark
-- GroupDocs.Watermark
-- Java diagram
-- text watermark
-- document protection
-title: GroupDocs.Watermark for Java を使用して diagrams に watermark を追加する方法
+- text watermarks
+- GroupDocs Watermark for Java
+- diagram document watermarking
+title: GroupDocs.Watermark for Java を使用して図にテキスト透かしを追加する – 包括的ガイド
 type: docs
 url: /ja/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/
 weight: 1
 ---
 
-# GroupDocs.Watermark for Java を使用した図への透かしの追加方法
+# GroupDocs.Watermark for Java を使用した図へのテキスト透かしの追加: 包括的ガイド
 
-図のドキュメントを不正使用から保護することは、ビジュアル資産を共有する組織にとって不可欠です。この包括的なチュートリアルでは、GroupDocs.Watermark for Java を使用して図に **透かしを追加する方法** を、プロジェクトのセットアップから最終的なドキュメントの保存まで解説します。ガイドは Java に慣れた開発者向けに書かれており、明確で本番環境でも使えるソリューションを提供することを目的としています。
+## はじめに
+図のドキュメントを不正使用から保護することは重要で、**テキスト透かしの追加**はシンプルながら効果的な解決策です。このチュートリアルでは、図ファイルの読み込み、カスタマイズ可能なテキスト透かしの作成、そして **GroupDocs.Watermark for Java** を使用して背景ページや特定のシェイプに適用する方法を学びます。ガイドの最後までに、元の外観や感覚を損なうことなくビジュアル資産を保護できるようになります。
 
-## クイック回答
-- **どのライブラリが図の透かしを処理しますか？** GroupDocs.Watermark for Java.
-- **最低限必要な Java バージョンは？** JDK 8 以上。
-- **多数の図をバッチ処理できますか？** はい – API はバッチメソッドを提供します。
-- **開発にライセンスは必要ですか？** 一時ライセンスで全ての制限が解除されます。
-- **透かしが付いたファイルはどこに保存されますか？** `watermarker.save()` で指定した任意のパスに保存されます。
+### クイック回答
+- **“add text watermark” とは何ですか？**  
+  文書に所有権や機密性を示すため、半透明のテキストオーバーレイを埋め込むことを意味します。  
+- **どのライブラリが図の透かしに対応していますか？**  
+  GroupDocs.Watermark for Java は、図のフォーマット（例: Visio、VSDX）に対するネイティブサポートを提供します。  
+- **ライセンスは必要ですか？**  
+  本番環境で使用するには一時ライセンスまたはフルライセンスが必要です。評価用の無料トライアルも利用可能です。  
+- **透かしを背景ページに配置できますか？**  
+  はい – **背景ページ透かし** 用に `DiagramWatermarkPlacementType.SeparateBackgrounds` オプションを使用します。  
+- **コードは Java 8+ と互換性がありますか？**  
+  もちろんです – ライブラリは JDK 8 以降で動作します。
 
-## 図への透かし追加とは？
+## 図におけるテキスト透かしとは？
 
-透かしを追加するとは、図ファイルに半透明のテキスト（または画像）を埋め込み、視覚的コンテンツに所有権情報を付与することを意味します。透かしはファイルの一部となり、ドキュメント自体を変更しない限り削除できません。通常、透過度を下げて描画されるため、下の図は読みやすさを保ちつつ、透かしは目に見える状態になります。
+テキスト透かしとは、図要素の上または背後に描画される（多くの場合半透明の）可読テキストです。ブランド表示、著作権保護、機密ドラフトのマーキングなどに使用できます。
 
 ## なぜ GroupDocs.Watermark for Java を使用するのか？
 
-GroupDocs.Watermark は **50 以上の入力および出力フォーマット**（Visio (.vsdx)、SVG、一般的な画像形式など）をサポートし、最大 **500 ページ** の図をファイル全体をメモリに読み込むことなく処理できるため、大規模プロジェクトでも高速かつ低メモリで動作します。また、バッチ処理、カスタム回転、カラー調整のための API も提供しており、エンタープライズレベルのドキュメントパイプラインに適しています。
+- **広範なフォーマットサポート** – Visio、VSDX など多くの図フォーマットに対応します。  
+- **細かい配置制御** – 前景、背景、または特定のシェイプへの透かしを選択できます。  
+- **シンプルな API** – 数行の Java コードで透かしを作成・適用できます。
 
 ## 前提条件
-- **GroupDocs.Watermark for Java** ≥ 24.11（公式リリースページからダウンロード）。  
-- **Java Development Kit (JDK)** 8 以上。  
-- IntelliJ IDEA や Eclipse などの IDE。  
-- 依存関係管理のための Maven（任意ですが推奨）。
+
+- **GroupDocs.Watermark for Java** (v24.11 以降)  
+- **Java Development Kit (JDK)** 8 以上  
+- Maven（または手動で JAR を含める）
 
 ## GroupDocs.Watermark for Java の設定
+
 ### Maven 設定
-次の依存関係を `pom.xml` ファイルに追加してください：
+
+以下の設定を `pom.xml` ファイルに追加してください：
 
 ```xml
 <repositories>
@@ -119,19 +69,29 @@ GroupDocs.Watermark は **50 以上の入力および出力フォーマット**�
 ```
 
 ### 直接ダウンロード
-公式リリースページから最新の JAR を取得してください: [GroupDocs.Watermark for Java リリース](https://releases.groupdocs.com/watermark/java/).
+
+最新バージョンは [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) からダウンロードしてください。
 
 ### ライセンス取得
-- **無料トライアル** – すべての機能を費用なしで評価できます。  
-- **一時ライセンス** – 開発中の使用制限が解除されます。  
-- **商用ライセンス** – 本番環境での導入には必須です。
 
-## GroupDocs.Watermark for Java を使用して図に透かしを追加する方法は？
+- **無料トライアル** – ライセンスキーなしで全機能を評価できます。  
+- **一時ライセンス** – 開発中に使用してフル機能を解放します。  
+- **購入** – 商用プロジェクト向けに本番ライセンスを取得します。
 
-このプロセスは 4 つの主要ステップで構成されます：ソース図を `Watermarker` インスタンスにロードし、目的の外観を持つ `TextWatermark` を作成し、`DiagramShapeWatermarkOptions` を使用して透かしの表示位置を設定し、最後に変更されたファイルを対象の場所に保存します。各ステップは以下の簡潔なコードスニペットで示しています。
+### 基本的な初期化と設定
 
-### 手順 1: 図のドキュメントをロードする
-まず、ファイルの場所を指定し、ロードオプションを初期化します。
+Java クラスに以下のインポートが含まれていることを確認してください：
+
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.DiagramLoadOptions;
+```
+
+## ステップバイステップ実装
+
+### ステップ 1: 図ドキュメントの読み込み
+
+まず、ライブラリに図ファイルのパスを指定し、ロードオプションを初期化します。
 
 ```java
 String inputPath = "YOUR_DOCUMENT_DIRECTORY";
@@ -139,29 +99,32 @@ DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker(inputPath, loadOptions);
 ```
 
-**定義アンカー:** `DiagramLoadOptions` は、ページサイズの処理やシェイプ抽出など、図ファイルの解析方法を指定します。
+*説明*: `DiagramLoadOptions` は透かし処理前に図の解析方法を制御できます。
 
-### 手順 2: テキスト透かしを作成・設定する
-`TextWatermark` オブジェクトをインスタンス化し、視覚的プロパティを設定します。
+### ステップ 2: テキスト透かしの作成
+
+次に、透かしテキストを作成し、視覚スタイルを定義します。
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark 1", new Font("Calibri", 19));
 ```
 
-**定義アンカー:** `TextWatermark` は、フォント、サイズ、色、透明度でスタイル設定できるテキストオーバーレイで、ドキュメントに適用されます。
+*説明*: これは Calibri フォント、サイズ 19 でフレーズ **“Test watermark 1”** を使用した `TextWatermark` を作成します。
 
-### 手順 3: 透かし配置オプションを設定する
-透かしが図のシェイプ内のどこに表示されるかを定義します。
+### ステップ 3: 配置の設定 – 背景ページ透かし
+
+透かしの表示位置を選択します。**背景ページ透かし** の場合、以下のオプションを使用します。
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
 options.setPlacementType(DiagramWatermarkPlacementType.SeparateBackgrounds);
 ```
 
-**定義アンカー:** `DiagramShapeWatermarkOptions` を使用すると、特定の図要素（例：背景ページ、個別シェイプ）に透かしを挿入できます。
+*説明*: `DiagramShapeWatermarkOptions` は正確な位置を制御します。配置タイプを `SeparateBackgrounds` に設定すると、図の各背景ページに透かしが追加されます。
 
-### 手順 4: 透かしを追加し、ドキュメントを保存する
-設定した透かしをロードした図に適用し、保護されたファイルをディスクに書き込みます。
+### ステップ 4: 透かしの適用と保存
+
+最後に、透かしをドキュメントに追加し、結果を保存してリソースを解放します。
 
 ```java
 watermarker.add(textWatermark, options);
@@ -170,64 +133,58 @@ watermarker.save(outputPath);
 watermarker.close();
 ```
 
-**定義アンカー:** `Watermarker` は、サポートされているファイルタイプのロード、透かし付与、保存操作を統括するコアクラスです。
+*説明*: `add` メソッドは配置オプションを使用して設定された `textWatermark` を適用し、変更された図は `outputPath` に保存されます。
 
-## 実用的な活用例
+## 実用的な応用例
 
-透かしの埋め込みは、さまざまな実務シナリオで有用です。
+- **知的財産保護** – 競合他社が自社の図を再利用するのを防止します。  
+- **ブランド強化** – すべてのエクスポート図に会社名やロゴをテキスト透かしとして埋め込みます。  
+- **法的文書** – エンジニアリング図面の機密ドラフトにマーキングします。  
+- **学術提出物** – 盗作追跡のために図に学生IDやコースコードを付加します。
 
-- **知的財産保護:** 競合他社が独自のフローチャートを再利用するのを防止します。  
-- **ブランド強化:** すべてのエクスポートされた図に会社名を表示します。  
-- **法的コンプライアンス:** 「Confidential – Do Not Distribute」のように機密回路図にマークを付けます。  
-- **学術的誠実性:** 学生の提出物にユニークな識別子を付与します。
+## パフォーマンス上の考慮点
 
-このワークフローは、文書管理システム、CI パイプライン、またはバッチ処理サービスに統合でき、数千のファイルに対して保護を自動化できます。
+- **メモリ管理** – 大きなファイルを処理する際は、`Watermarker` インスタンス（`watermarker.close()`）を閉じてネイティブリソースを解放してください。  
+- **バッチ処理** – 図のパスコレクションをループし、可能な限り単一の `Watermarker` インスタンスを再利用してオーバーヘッドを削減します。
 
-## パフォーマンスに関する考慮点
-- **メモリ最適化:** 可能な限り `Watermarker` インスタンスを再利用し、`watermarker.close()` で閉じてネイティブリソースを解放します。  
-- **大容量ファイルの取り扱い:** ライブラリはページをオンデマンドで処理するため、300 ページの図でも典型的な 8 GB JVM ではヒープ使用量が 200 MB 未満に抑えられます。  
-- **スレッド安全性:** 各スレッドは独自の `Watermarker` インスタンスを使用すべきです。API はグローバルに同期されていません。
+## 一般的な問題と解決策
+
+| 問題 | 解決策 |
+|-------|----------|
+| **大きな図で OutOfMemoryError が発生** | JVM ヒープサイズを増やす（`-Xmx2g`）と、ファイルを一つずつ処理してください。 |
+| **透かしが表示されない** | 透かしの色が十分なコントラストを持つことを確認し、`textWatermark.setOpacity(0.5)` で不透明度を設定してください。 |
+| **サポートされていない図フォーマット** | GroupDocs.Watermark がサポートするフォーマット一覧にその形式が記載されているか確認してください。 |
 
 ## よくある質問
 
-**Q: 図の透かしに最適なフォントサイズは何ですか？**  
-A: ほとんどの図サイズに対して、14 pt〜24 pt のサイズが可読性と目立ちすぎないバランスを保ちます。
+**Q: 透かしに最適なフォントサイズは何ですか？**  
+A: 最適なサイズは図の寸法に依存しますが、12‑20 pt が多くの場合でうまく機能します。
 
-**Q: 透かしの色を変更できますか？**  
-A: はい – `textWatermark.setColor(Color.BLUE)`（または任意の `java.awt.Color`）を使用して色相をカスタマイズできます。
+**Q: 透かしの色をカスタマイズできますか？**  
+A: はい、`textWatermark.setColor(Color.GRAY)`（または任意の `java.awt.Color`）を使用します。
 
-**Q: 大量の図をバッチ処理するにはどうすればよいですか？**  
-A: ファイルコレクションを反復処理し、スレッドごとに単一の `Watermarker` を再利用し、保存前に各ドキュメントに対して `watermarker.add()` を呼び出します。
+**Q: 大量のドキュメントを処理するにはどうすればよいですか？**  
+A: ライブラリのバッチ API を活用するか、`Watermarker` オブジェクトを再利用するループを書いてオーバーヘッドを最小化してください。
 
-**Q: フォーマットに制限はありますか？**  
-A: GroupDocs.Watermark は 50 種類以上のフォーマットをサポートしており、Visio (.vsdx)、SVG、PNG、JPEG などが含まれます。完全な一覧は公式 [ドキュメント](https://docs.groupdocs.com/watermark/java/) を参照してください。
+**Q: GroupDocs.Watermark に制限はありますか？**  
+A: ライブラリはほとんどの一般的な図フォーマットをサポートしていますが、一部の独自拡張は完全にレンダリングされない場合があります。詳細は [documentation](https://docs.groupdocs.com/watermark/java/) を確認してください。
 
-**Q: 問題が発生した場合、どこでサポートを受けられますか？**  
-A: コミュニティフォーラムに質問を投稿してください: [GroupDocs フォーラム](https://forum.groupdocs.com/c/watermark/10)。
+**Q: 問題が発生した場合、どのようにサポートを受けられますか？**  
+A: コミュニティ支援のために [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10) を訪れるか、直接 GroupDocs サポートにお問い合わせください。
 
-## リソース
-- **ドキュメント:** [GroupDocs.Watermark ドキュメント](https://docs.groupdocs.com/watermark/java/)  
-- **API リファレンス:** [Java API リファレンス](https://reference.groupdocs.com/watermark/java)  
-- **ダウンロード:** [GroupDocs.Watermark を取得](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub リポジトリ:** [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **無料サポートフォーラム:** [GroupDocs フォーラム](https://forum.groupdocs.com/c/watermark/10)  
-- **一時ライセンス:** [一時ライセンスを取得](https://purchase.groupdocs.com/temporary-license/)  
+## 追加リソース
 
-上記の手順を実行して、図資産をプロフェッショナルなテキスト透かしで保護してください。さまざまなフォント、色、配置オプションを試してブランドガイドラインに合わせ、 大規模なドキュメントライブラリ向けにプロセスの自動化も検討してください。
+- **ドキュメント**: [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **API リファレンス**: [Java API Reference](https://reference.groupdocs.com/watermark/java)  
+- **ダウンロード**: [Get GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
+- **GitHub リポジトリ**: [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **無料サポートフォーラム**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
+- **一時ライセンス**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 
 ---
 
-**最終更新日:** 2026-08-31  
+**最終更新日:** 2025-12-19  
 **テスト環境:** GroupDocs.Watermark 24.11 for Java  
-**作者:** GroupDocs
+**作者:** GroupDocs  
 
-```java
-import com.groupdocs.watermark.Watermarker;
-import com.groupdocs.watermark.options.DiagramLoadOptions;
-```
-
-## 関連チュートリアル
-
-- [GroupDocs.Watermark for Java を使用した図への透かし追加ガイド](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [GroupDocs.Watermark for Java を使用して PDF にテキスト透かしを追加する方法: ステップバイステップガイド](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [GroupDocs.Watermark for Java を使用して Word 文書画像にテキスト透かしを追加する方法](/watermark/java/image-watermarks/add-watermarks-word-images-groupdocs-java/)
+---

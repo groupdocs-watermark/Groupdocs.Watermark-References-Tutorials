@@ -1,106 +1,52 @@
 ---
-date: '2026-08-31'
-description: Ismerje meg, hogyan adhat hozzá watermark-et diagramokhoz a GroupDocs.Watermark
-  for Java használatával. Ez az útmutató bemutatja a beállítást, a szöveges watermark
-  létrehozását, az elhelyezési lehetőségeket és a védett fájlok mentését.
+date: '2025-12-19'
+description: Tanulja meg, hogyan adhat szöveges vízjelet diagramokhoz a GroupDocs.Watermark
+  for Java segítségével. Hatékonyan védje vizuális tartalmát és biztosítsa a dokumentumok
+  integritását.
 keywords:
-- how to add watermark
-- text watermark Java
-- diagram watermarking
-- GroupDocs.Watermark
-lastmod: '2026-08-31'
-og_description: Ismerje meg, hogyan adhat hozzá watermark-et diagramokhoz a GroupDocs.Watermark
-  for Java használatával. Kövesse a lépésről‑lépésre útmutatót, hogy szöveges watermarks
-  segítségével védje vizuális tartalmát.
-og_image_alt: Guide showing how to add watermark to diagram files using GroupDocs.Watermark
-  for Java
-og_title: Hogyan adjon hozzá watermark-et diagramokhoz a GroupDocs.Watermark for Java
-  segítségével
-schemas:
-- author: GroupDocs
-  dateModified: '2026-08-31'
-  description: Learn how to add watermark to diagrams using GroupDocs.Watermark for
-    Java. This guide covers setup, text watermark creation, placement options, and
-    saving the protected files.
-  headline: How to add watermark to diagrams with GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to add watermark to diagrams using GroupDocs.Watermark for
-    Java. This guide covers setup, text watermark creation, placement options, and
-    saving the protected files.
-  name: How to add watermark to diagrams with GroupDocs.Watermark for Java
-  steps:
-  - name: load the diagram document
-    text: First, specify the file location and initialise the load options. **Definition
-      anchor:** `DiagramLoadOptions` specifies how a diagram file is parsed, including
-      page‑size handling and shape extraction.
-  - name: create and configure the text watermark
-    text: Instantiate a `TextWatermark` object and set its visual properties. **Definition
-      anchor:** `TextWatermark` represents a textual overlay that can be styled with
-      font, size, color, and opacity before being applied to a document.
-  - name: configure watermark placement options
-    text: Define where the watermark should appear within the diagram shapes. **Definition
-      anchor:** `DiagramShapeWatermarkOptions` lets you target specific diagram elements
-      (e.g., background pages, individual shapes) for watermark insertion.
-  - name: add the watermark and save the document
-    text: Apply the configured watermark to the loaded diagram and write the protected
-      file to disk. **Definition anchor:** `Watermarker` is the core class that orchestrates
-      loading, watermarking, and saving operations for supported file types.
-  type: HowTo
-- questions:
-  - answer: A size between 14 pt and 24 pt balances readability and unobtrusiveness
-      for most diagram dimensions.
-    question: What is the best font size for a diagram watermark?
-  - answer: Yes – use `textWatermark.setColor(Color.BLUE)` (or any `java.awt.Color`)
-      to customise the hue.
-    question: Can I change the watermark colour?
-  - answer: Iterate over your file collection and reuse a single `Watermarker` per
-      thread, calling `watermarker.add()` for each document before saving.
-    question: How do I process a large batch of diagrams?
-  - answer: GroupDocs.Watermark supports over 50 formats, including Visio (.vsdx),
-      SVG, PNG, and JPEG. See the full list in the official [documentation](https://docs.groupdocs.com/watermark/java/).
-    question: Are there any format limitations?
-  - answer: 'Post questions on the community forum: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10).'
-    question: Where can I get help if I encounter issues?
-  type: FAQPage
-tags:
-- watermark
-- GroupDocs.Watermark
-- Java diagram
-- text watermark
-- document protection
-title: Hogyan adjon hozzá watermark-et diagramokhoz a GroupDocs.Watermark for Java
-  segítségével
+- text watermarks
+- GroupDocs Watermark for Java
+- diagram document watermarking
+title: Szöveges vízjel hozzáadása diagramokhoz a GroupDocs.Watermark for Java használatával
+  – Átfogó útmutató
 type: docs
 url: /hu/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/
 weight: 1
 ---
 
-# Hogyan adjon vízjelet diagramokhoz a GroupDocs.Watermark for Java segítségével
+# Szöveges Vízjel Hozzáadása Diagramokhoz a GroupDocs.Watermark for Java használatával: Átfogó Útmutató
 
-A diagram dokumentumok jogosulatlan használattól való védelme minden olyan szervezet számára elengedhetetlen, amely vizuális eszközöket oszt meg. Ebben az átfogó útmutatóban megismerheti, hogyan adhat **vízjelet** a diagramokhoz a GroupDocs.Watermark for Java használatával, a projekt beállításától a végső dokumentum mentéséig. Az útmutató Java-val jártas fejlesztőknek készült, és egyértelmű, termelésre kész megoldást kínál.
+## Bevezetés
+A diagramdokumentumok jogosulatlan használat elleni védelme létfontosságú, és a **szöveges vízjel hozzáadása** egyszerű, mégis hatékony megoldást nyújt. Ebben az útmutatóban megtudja, hogyan töltsön be diagramfájlokat, hozza létre a testreszabható szöveges vízjelet, és alkalmazza azt háttéroldalakra vagy konkrét alakzatokra a **GroupDocs.Watermark for Java** segítségével. A útmutató végére képes lesz megvédeni vizuális anyagait, miközben az eredeti megjelenés és érzet változatlan marad.
 
-## Gyors válaszok
-- **Melyik könyvtár kezeli a diagram vízjeleket?** GroupDocs.Watermark for Java.
-- **Minimum Java verzió?** JDK 8 vagy újabb.
-- **Feldolgozhatok sok diagramot kötegelt módon?** Igen – az API kötegelt módszereket biztosít.
-- **Szükségem van licencre a fejlesztéshez?** Egy ideiglenes licenc eltávolítja az összes korlátozást.
-- **Hol kerülnek mentésre a vízjelezett fájlok?** Bármelyik útvonalra, amelyet a `watermarker.save()` megad.
+### Gyors Válaszok
+- **Mit jelent a „szöveges vízjel hozzáadása”?**  
+  Ez azt jelenti, hogy egy félig átlátszó szöveges réteget ágyaz be a dokumentumba a tulajdonjog vagy a titoktartás jelzésére.  
+- **Melyik könyvtár támogatja a diagramok vízjelezését?**  
+  A GroupDocs.Watermark for Java natív támogatást nyújt diagramformátumokhoz (pl. Visio, VSDX).  
+- **Szükségem van licencre?**  
+  Ideiglenes vagy teljes licenc szükséges a termelésben való használathoz; ingyenes próba verzió is elérhető értékeléshez.  
+- **Elhelyezhetem a vízjelet a háttéroldalakon?**  
+  Igen – használja a `DiagramWatermarkPlacementType.SeparateBackgrounds` opciót a **háttéroldali vízjel** létrehozásához.  
+- **A kód kompatibilis a Java 8+ verzióval?**  
+  Teljesen – a könyvtár a JDK 8 és újabb verzióival működik.
 
-## Mi a vízjel hozzáadása diagramokhoz?
-A vízjel hozzáadása azt jelenti, hogy félig átlátszó szöveget (vagy képeket) ágyazunk be egy diagram fájlba, így a vizuális tartalom tulajdonjogi információt hordoz. A vízjel a fájl részévé válik, és nem távolítható el a dokumentum módosítása nélkül. Általában csökkentett átlátszósággal jelenik meg, hogy az alatta lévő diagram olvasható maradjon, miközben a vízjel látható.
+## Mi az a Szöveges Vízjel Diagramokhoz?
+A szöveges vízjel egy olvasható szövegrész (gyakran félig átlátszó), amely a diagram elemei fölött vagy mögött jelenik meg. Használható márkázásra, szerzői jogi védelemre vagy bizalmas vázlatok jelzésére.
 
-## Miért használja a GroupDocs.Watermark for Java‑t?
-A GroupDocs.Watermark **50+ bemeneti és kimeneti formátumot** támogat — beleértve a Visio (.vsdx), SVG és a gyakori képformátumokat —, és képes legfeljebb **500 oldalas** diagramok feldolgozására anélkül, hogy az egész fájlt a memóriába töltené, gyors, alacsony memóriaigényű műveleteket biztosítva nagyszabású projektekhez. A könyvtár emellett API‑kat kínál kötegelt feldolgozáshoz, egyedi forgatáshoz és színbeállításokhoz, így alkalmas vállalati szintű dokumentumcsővezetékekhez.
+## Miért Használjuk a GroupDocs.Watermark for Java-t?
+- **Széles körű formátumtámogatás** – működik Visio, VSDX és számos más diagramtípussal.  
+- **Finomhangolt elhelyezés** – választhat előtér, háttér vagy konkrét alakzat vízjelezését.  
+- **Egyszerű API** – néhány Java kódsorral hozhat létre és alkalmazhat vízjeleket.  
 
 ## Előfeltételek
-- **GroupDocs.Watermark for Java** ≥ 24.11 (letöltés a hivatalos kiadások oldaláról).  
-- **Java Development Kit (JDK)** 8 vagy újabb.  
-- Egy IDE, például IntelliJ IDEA vagy Eclipse.  
-- Maven a függőségkezeléshez (opcionális, de ajánlott).  
+- **GroupDocs.Watermark for Java** (v24.11 vagy újabb)  
+- **Java Development Kit (JDK)** 8 vagy újabb  
+- Maven (vagy manuális JAR beillesztés)  
 
-## A GroupDocs.Watermark for Java beállítása
-### Maven beállítás
-Adja hozzá a következő függőséget a `pom.xml` fájlhoz:
+## A GroupDocs.Watermark for Java Beállítása
+### Maven Beállítás
+Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz:
 
 ```xml
 <repositories>
@@ -120,19 +66,26 @@ Adja hozzá a következő függőséget a `pom.xml` fájlhoz:
 </dependencies>
 ```
 
-### Közvetlen letöltés
-Szerezze be a legújabb JAR‑t a hivatalos kiadások oldaláról: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Közvetlen Letöltés
+Töltse le a legújabb verziót a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
 
-### Licenc beszerzése
-- **Ingyenes próba** – minden funkció kipróbálása költség nélkül.  
-- **Ideiglenes licenc** – eltávolítja a használati korlátokat a fejlesztés során.  
-- **Kereskedelmi licenc** – szükséges a termelési környezetben való telepítéshez.
+### Licenc Beszerzése
+- **Free Trial** – értékelje az összes funkciót licenckulcs nélkül.  
+- **Temporary License** – fejlesztés közben használja a teljes funkcionalitás feloldásához.  
+- **Purchase** – szerezzen termelési licencet kereskedelmi projektekhez.  
 
-## Hogyan adjon vízjelet diagramokhoz a GroupDocs.Watermark for Java használatával?
-A folyamat négy fő lépésből áll: a forrásdiagram betöltése egy `Watermarker` példányba, egy `TextWatermark` létrehozása a kívánt megjelenéssel, a vízjel megjelenési helyének beállítása a `DiagramShapeWatermarkOptions` használatával, majd a módosított fájl mentése a célhelyre. Minden lépést rövid kódrészletekkel mutatunk be alább.
+### Alap Inicializálás és Beállítás
+Győződjön meg arról, hogy a következő importok szerepelnek a Java osztályában:
 
-### 1. lépés: a diagram dokumentum betöltése
-Először adja meg a fájl helyét, és inicializálja a betöltési beállításokat.
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.DiagramLoadOptions;
+```
+
+## Lépésről‑Lépésre Implementáció
+
+### 1. lépés: Diagram Dokumentum Betöltése
+Először mutassa meg a könyvtárnak a diagramfájlt, és inicializálja a betöltési beállításokat.
 
 ```java
 String inputPath = "YOUR_DOCUMENT_DIRECTORY";
@@ -140,29 +93,29 @@ DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker(inputPath, loadOptions);
 ```
 
-**Definíció horgony:** `DiagramLoadOptions` meghatározza, hogyan kerül feldolgozásra egy diagram fájl, beleértve az oldalméret kezelését és az alakzatok kinyerését.
+*Explanation*: A `DiagramLoadOptions` lehetővé teszi, hogy szabályozza, hogyan legyen a diagram feldolgozva a vízjelezés előtt.
 
-### 2. lépés: a szöveges vízjel létrehozása és beállítása
-Hozzon létre egy `TextWatermark` objektumot, és állítsa be a vizuális tulajdonságait.
+### 2. lépés: Szöveges Vízjel Létrehozása
+Hozza létre a vízjel szövegét, és definiálja a vizuális stílusát.
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark 1", new Font("Calibri", 19));
 ```
 
-**Definíció horgony:** `TextWatermark` egy szöveges átfedést képvisel, amely betűtípussal, mérettel, színnel és átlátszósággal formázható, mielőtt egy dokumentumra alkalmaznák.
+*Explanation*: Ez egy `TextWatermark` objektumot hoz létre a **„Test watermark 1”** szöveggel, a Calibri betűtípussal, 19-es mérettel.
 
-### 3. lépés: a vízjel elhelyezési beállításainak konfigurálása
-Határozza meg, hogy a vízjel hol jelenjen meg a diagram alakzatai között.
+### 3. lépés: Elhelyezés Konfigurálása – Háttéroldal Vízjel
+Válassza ki, hogy hol jelenjen meg a vízjel. **Háttéroldali vízjel** esetén használja a következő opciót:
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
 options.setPlacementType(DiagramWatermarkPlacementType.SeparateBackgrounds);
 ```
 
-**Definíció horgony:** `DiagramShapeWatermarkOptions` lehetővé teszi, hogy a vízjel beillesztését konkrét diagram elemekre (pl. háttéroldalak, egyedi alakzatok) irányítsa.
+*Explanation*: A `DiagramShapeWatermarkOptions` szabályozza a pontos helyet. A `SeparateBackgrounds` elhelyezési típus beállítása a vízjelet minden háttéroldalra hozzáadja a diagramon.
 
-### 4. lépés: a vízjel hozzáadása és a dokumentum mentése
-Alkalmazza a beállított vízjelet a betöltött diagramra, és írja a védett fájlt a lemezre.
+### 4. lépés: Vízjel Alkalmazása és Mentés
+Végül adja hozzá a vízjelet a dokumentumhoz, mentse az eredményt, és szabadítsa fel az erőforrásokat.
 
 ```java
 watermarker.add(textWatermark, options);
@@ -171,62 +124,53 @@ watermarker.save(outputPath);
 watermarker.close();
 ```
 
-**Definíció horgony:** `Watermarker` a központi osztály, amely a betöltési, vízjelezési és mentési műveleteket koordinálja a támogatott fájltípusok esetén.
+*Explanation*: Az `add` metódus alkalmazza a konfigurált `textWatermark`-et a megadott elhelyezési beállításokkal, majd a módosított diagramot az `outputPath` helyre menti.
 
-## Gyakorlati alkalmazások
-A vízjelek beágyazása sok valós helyzetben értékes:
-- **Szellemi tulajdon védelme:** Megakadályozza, hogy a versenytársak újra felhasználják a saját tulajdonú folyamatábrákat.
-- **Márka erősítése:** A vállalat nevét jeleníti meg minden exportált diagramon.
-- **Jogi megfelelés:** Jelölje a bizalmas terveket a „Confidential – Do Not Distribute” felirattal.
-- **Akadémiai integritás:** A hallgatói benyújtásokat egyedi azonosítókkal jelöli.
+## Gyakorlati Alkalmazások
+- **Intellektuális Tulajdon Védelme** – megakadályozza, hogy a versenytársak újra felhasználják a saját diagramjait.  
+- **Márka Erősítése** – ágyazza be a cég nevét vagy logóját szöveges vízjelként minden exportált diagramra.  
+- **Jogi Dokumentáció** – jelölje meg a bizalmas mérnöki vázlatok vázlatait.  
+- **Akadémiai Leadások** – adja hozzá a hallgatói azonosítókat vagy kurzuskódokat a diagramokhoz a plágium nyomon követéséhez.
 
-Ezt a munkafolyamatot integrálhatja dokumentumkezelő rendszerekbe, CI csővezetékekbe vagy kötegelt feldolgozó szolgáltatásokba, hogy automatizálja a védelem alkalmazását több ezer fájlra.
+## Teljesítményfontosságú Szempontok
+- **Memória Kezelés** – zárja le a `Watermarker` példányt (`watermarker.close()`) a natív erőforrások felszabadításához, különösen nagy fájlok feldolgozásakor.  
+- **Kötegelt Feldolgozás** – iteráljon egy diagramútvonal-gyűjteményen, és ahol lehetséges, használjon egyetlen `Watermarker` példányt a terhelés csökkentése érdekében.  
 
-## Teljesítménybeli megfontolások
-- **Memóriaoptimalizálás:** Amikor lehetséges, újrahasználja a `Watermarker` példányokat, és zárja le őket a `watermarker.close()` hívással a natív erőforrások felszabadításához.  
-- **Nagy fájlok kezelése:** A könyvtár igény szerint dolgozza fel az oldalakat, így még a 300 oldalas diagramok is kevesebb, mint 200 MB heap használatot igényelnek egy tipikus 8 GB JVM-en.  
-- **Szálbiztonság:** Minden szálnak saját `Watermarker` példánnyal kell dolgoznia; az API nincs globálisan szinkronizálva.  
+## Gyakori Problémák és Megoldások
 
-## Gyakran ismételt kérdések
+| Probléma | Megoldás |
+|----------|----------|
+| **OutOfMemoryError nagy diagramok esetén** | Növelje a JVM heap méretét (`-Xmx2g`) és dolgozzon a fájlokkal egyesével. |
+| **A vízjel nem látható** | Győződjön meg arról, hogy a vízjel színe megfelelő kontraszttal rendelkezik; állítsa be az átlátszatlanságot a `textWatermark.setOpacity(0.5)` segítségével. |
+| **Nem támogatott diagram formátum** | Ellenőrizze, hogy a formátum szerepel-e a GroupDocs.Watermark támogatott formátumok dokumentációjában. |
 
-**Q: Mi a legjobb betűméret egy diagram vízjeléhez?**  
-A: A 14 pt és 24 pt közötti méret egyensúlyt teremt az olvashatóság és a visszafogottság között a legtöbb diagram méretéhez.
+## Gyakran Ismételt Kérdések
 
-**Q: Megváltoztathatom a vízjel színét?**  
-A: Igen – használja a `textWatermark.setColor(Color.BLUE)` (vagy bármely `java.awt.Color`) metódust a szín testreszabásához.
+**Q: Mi a legjobb betűméret a vízjelekhez?**  
+A: Az optimális méret a diagram méretétől függ; a 12‑20 pt általában jól működik a legtöbb esetben.
 
-**Q: Hogyan dolgozzak fel nagy mennyiségű diagramot?**  
-A: Iteráljon a fájlgazdálkodásán, és szálanként használjon egyetlen `Watermarker` példányt, a mentés előtt minden dokumentumra meghívva a `watermarker.add()` metódust.
+**Q: Testreszabhatom a vízjel színeit?**  
+A: Igen, használja a `textWatermark.setColor(Color.GRAY)` (vagy bármely `java.awt.Color`) metódust.
 
-**Q: Vannak-e formátumkorlátozások?**  
-A: A GroupDocs.Watermark több mint 50 formátumot támogat, beleértve a Visio (.vsdx), SVG, PNG és JPEG formátumokat. A teljes listát megtalálja a hivatalos [documentation](https://docs.groupdocs.com/watermark/java/) oldalon.
+**Q: Hogyan kezeljem a nagy mennyiségű dokumentumot?**  
+A: Használja a könyvtár kötegelt API-ját, vagy írjon egy ciklust, amely újrahasználja a `Watermarker` objektumokat a terhelés minimalizálása érdekében.
 
-**Q: Hol kaphatok segítséget, ha problémáim vannak?**  
-A: Tegyen fel kérdéseket a közösségi fórumon: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10).
+**Q: Vannak-e korlátozások a GroupDocs.Watermark használatában?**  
+A: A könyvtár a legtöbb általános diagramformátumot támogatja, de egyes saját fejlesztésű kiterjesztések nem biztos, hogy teljesen megjeleníthetők. Tekintse meg a [dokumentációt](https://docs.groupdocs.com/watermark/java/) a részletekért.
 
-## Erőforrások
-- **Dokumentáció:** [GroupDocs.Watermark dokumentáció](https://docs.groupdocs.com/watermark/java/)  
-- **API referencia:** [Java API referencia](https://reference.groupdocs.com/watermark/java)  
-- **Letöltés:** [GroupDocs.Watermark letöltése](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub tároló:** [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Ingyenes támogatási fórum:** [GroupDocs Fórum](https://forum.groupdocs.com/c/watermark/10)  
-- **Ideiglenes licenc:** [Ideiglenes licenc beszerzése](https://purchase.groupdocs.com/temporary-license/)  
+**Q: Hogyan kaphatok támogatást, ha problémáim adódnak?**  
+A: Látogassa meg a [GroupDocs Fórumot](https://forum.groupdocs.com/c/watermark/10) a közösségi segítségért, vagy vegye fel a kapcsolatot közvetlenül a GroupDocs támogatással.
 
-Valósítsa meg a fenti lépéseket, hogy a diagram eszközeit professzionális szöveges vízjellel védje. Kísérletezzen különböző betűtípusokkal, színekkel és elhelyezési beállításokkal, hogy megfeleljen a márka irányelveinek, és fontolja meg a folyamat automatizálását nagy dokumentumtárak esetén.
+## További Források
+- **Documentation**: [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **API Reference**: [Java API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Download**: [Get GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
+- **GitHub Repository**: [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Free Support Forum**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
+- **Temporary License**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 
 ---
 
-**Utoljára frissítve:** 2026-08-31  
-**Tesztelve ezzel:** GroupDocs.Watermark 24.11 for Java  
+**Utolsó frissítés:** 2025-12-19  
+**Tesztelve a következővel:** GroupDocs.Watermark 24.11 for Java  
 **Szerző:** GroupDocs
-
-```java
-import com.groupdocs.watermark.Watermarker;
-import com.groupdocs.watermark.options.DiagramLoadOptions;
-```
-
-## Kapcsolódó oktatóanyagok
-
-- [Útmutató a vízjelek hozzáadásához diagramokhoz a GroupDocs.Watermark for Java használatával](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [Hogyan adjon szöveges vízjelet PDF-ekhez a GroupDocs.Watermark for Java használatával: Lépésről lépésre útmutató](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
-- [Hogyan adjon szöveges vízjelet Word dokumentum képekhez a GroupDocs.Watermark for Java használatával](/watermark/java/image-watermarks/add-watermarks-word-images-groupdocs-java/)
