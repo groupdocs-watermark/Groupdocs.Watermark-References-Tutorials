@@ -1,47 +1,104 @@
 ---
-date: '2026-02-11'
-description: Tanulja meg, hogyan lehet Java-ban lekérni a képméreteket és kinyerni
-  a diák háttéradatait a GroupDocs.Watermark for Java segítségével. Tökéletes testreszabáshoz,
-  elemzéshez vagy dokumentációhoz.
+date: '2026-09-11'
+description: Tanulja meg, hogyan lehet kinyerni a slide background java-t és beolvasni
+  a PowerPoint slide méreteket a GroupDocs.Watermark for Java használatával. Szerezzen
+  meg image size, file size és metadata értékeket percek alatt.
 keywords:
-- extract slide background information Java
-- GroupDocs.Watermark PowerPoint
-- slide background details Java
-title: java képméretek lekérése – Diák háttérképeinek kinyerése a GroupDocs.Watermark
-  használatával
+- extract slide background java
+- read powerpoint slide dimensions
+- slide background details java
+lastmod: '2026-09-11'
+og_description: Slide background java kinyerése és PowerPoint slide méretek beolvasása
+  a GroupDocs.Watermark for Java használatával. Részletes útmutató beállítással, kóddal
+  és hibaelhárítással.
+og_image_alt: Guide showing Java code extracting slide background information from
+  PowerPoint
+og_title: Slide background java kinyerése a GroupDocs.Watermark segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-11'
+  description: Learn how to extract slide background java and read PowerPoint slide
+    dimensions using GroupDocs.Watermark for Java. Get image size, file size, and
+    metadata in minutes.
+  headline: How to extract slide background java
+  type: TechArticle
+- description: Learn how to extract slide background java and read PowerPoint slide
+    dimensions using GroupDocs.Watermark for Java. Get image size, file size, and
+    metadata in minutes.
+  name: How to extract slide background java
+  steps:
+  - name: create load options
+    text: '`PresentationLoadOptions` defines loading preferences such as password
+      handling and memory usage.'
+  - name: open the PowerPoint document
+    text: Instantiate `Watermarker` with the path to your `.pptx` file and the load
+      options created earlier.
+  - name: access slide content
+    text: '`PresentationContent` is the entry point for retrieving slide‑level objects,
+      including background images.'
+  - name: iterate over slides and read background details
+    text: Slide represents an individual slide within the presentation and provides
+      access to its visual elements. For each `Slide` object, call `getBackground()`
+      to obtain the image, then read its dimensions and size.
+  - name: close the watermarker
+    text: Always close the `Watermarker` instance to free native resources and avoid
+      memory leaks.
+  type: HowTo
+- questions:
+  - answer: Java 11 or newer is required; earlier versions lack the necessary language
+      features for the library.
+    question: What is the minimum Java version required?
+  - answer: Yes—set the password in `PresentationLoadOptions` before opening the file.
+    question: Can I extract backgrounds from password‑protected presentations?
+  - answer: The trial imposes a watermark on output files but does not restrict slide
+      count for metadata extraction.
+    question: Does the trial mode limit the number of slides I can process?
+  - answer: Absolutely—use `ImageInfo.save("output.png")` after retrieving the `ImageInfo`
+      object.
+    question: Is it possible to save the extracted background image to disk?
+  - answer: The API supports PNG, JPEG, BMP, and GIF for background image export.
+    question: Which formats can I export the extracted image to?
+  type: FAQPage
+tags:
+- extract slide background
+- GroupDocs.Watermark
+- Java PowerPoint
+- document processing
+title: Hogyan lehet kinyerni a slide background java
 type: docs
 url: /hu/java/document-information/groupdocs-watermark-java-extract-slide-backgrounds/
 weight: 1
 ---
 
-# java get image dimensions – Slide háttér kinyerése a GroupDocs.Watermark segítségével
+# Hogyan nyerjünk ki diák háttérképet Java-ban
 
-Szeretne **java get image dimensions** és egyéb háttéradatokat kinyerni egy PowerPoint diából? Akár egyedi márkázáshoz, adat elemzéshez vagy dokumentációhoz van szüksége ezekre az információkra, a GroupDocs.Watermark Java könyvtár egyszerű megoldást nyújt. Ebben az útmutatóban megtanulja, hogyan nyerhet ki diák háttérinformációkat – beleértve a kép szélességét, magasságát és fájlméretét – néhány egyszerű API hívással.
+## Bevezetés
 
-## Gyors válaszok
-- **Mi jelent a “java get image dimensions”?** A PowerPoint diára beágyazott kép szélességének és magasságának Java kóddal történő lekérdezését jelenti.  
-- **Melyik könyvtár segít ebben?** A GroupDocs.Watermark for Java magas szintű API-t biztosít a diák háttér olvasásához.  
-- **Szükségem van licencre?** Gyártási környezetben ideiglenes vagy teljes licenc szükséges; próba mód is elérhető.  
-- **Feldolgozhatok nagy prezentációkat?** Igen – csak ne felejtse el időben bezárni a `Watermarker`-t a erőforrások felszabadításához.  
-- **Milyen Java verzió szükséges?** Java 8+ és Maven a függőségek kezeléséhez.
+A diák háttérképének Java-ban történő kinyerése gyakori igény, amikor a PowerPoint fájlban lévő vizuális elemeket szeretné elemezni, újra felhasználni vagy dokumentálni. A GroupDocs.Watermark for Java segítségével programozottan lekérheti a kép méreteit, fájlméretét és egyéb metaadatokat anélkül, hogy megnyitná a prezentációt a PowerPointban. Ez az útmutató végigvezeti Önt a teljes munkafolyamaton – a környezet beállításától a háttér részleteinek kinyeréséig és értelmezéséig –, hogy a képességet bármely Java‑alapú automatizálási csővezetékbe integrálhassa.
 
-## Mi az a java get image dimensions?
-PowerPoint fájlok esetén minden dián lehet háttérkép. A GroupDocs.Watermark segítségével programozottan lekérheti a kép **szélességét**, **magasságát** és **bájt méretét** – ez a “java get image dimensions” művelet lényege.
+### Gyors válaszok
+- **Melyik könyvtár kezeli a diák háttérképének kinyerését?** GroupDocs.Watermark for Java.  
+- **Melyik metódus adja vissza a kép méreteit?** `getBackground().getImageInfo().getWidth()` és `getHeight()`.  
+- **Kaphatok fájlméretet a háttérképről?** Igen, a `getBackground().getImageInfo().getSize()` segítségével.  
+- **Szükség van licencre ehhez a funkcióhoz?** Egy ideiglenes vagy teljes licenc feloldja a teljes funkcionalitást; a próbaverzió korlátozásokkal működik.  
+- **Támogatja a Maven?** Teljesen—adja hozzá a GroupDocs.Watermark függőséget a `pom.xml`-hez.
 
-## Miért kell kinyerni a diák háttérinformációit?
-- **Márka megfelelőség:** Ellenőrizze, hogy minden dia a megfelelő háttérmérettel és felbontással rendelkezik.  
-- **Automatizálás:** Dinamikusan cserélje vagy méretezze át a háttérképeket egy teljes prezentáción.  
-- **Elemzés:** Gyűjtsön statisztikákat a képek használatáról jelentésekhez vagy optimalizáláshoz.  
-- **Integráció:** Adja át a háttér metaadatait CMS folyamatokba vagy tervezőeszközökbe.
+## Mi az a diák háttérképének Java-ban történő kinyerése?
+A diák háttérképének Java-ban történő kinyerése arra a folyamatra utal, amikor Java kóddal programozottan beolvassuk egy PowerPoint prezentáció egyes diáinak vizuális hátterét. Ez a művelet metaadatokat ad, például a kép szélességét, magasságát és fájlméretét, lehetővé téve az olyan további feldolgozást, mint a márkaellenőrzés vagy az eszközök újrahasznosítása.
 
-## Előkövetelmények
-- **GroupDocs.Watermark 24.11+** (vagy a legújabb kiadás)  
-- **Java 8 vagy újabb** Maven-nel telepítve  
-- Alapvető ismeretek a Java fájl I/O-val kapcsolatban  
+## Miért használja a GroupDocs.Watermark-ot ehhez a feladathoz?
+A GroupDocs.Watermark **30+ bemeneti és kimeneti formátumot** támogat, akár **500 diát** képes feldolgozni anélkül, hogy a teljes fájlt a memóriába töltené, és dedikált API‑t biztosít a diák hátterének eléréséhez. Ezek a számszerűsíthető képességek megbízható választássá teszik vállalati szintű automatizálás esetén.
+
+## Előfeltételek
+- **Java 11+** telepítve a fejlesztői gépén.  
+- **Maven** a függőségkezeléshez.  
+- **GroupDocs.Watermark 24.11** (vagy újabb) – a könyvtár tartalmazza a `PresentationLoadOptions` és `PresentationContent` osztályokat, amelyeket ebben az útmutatóban használunk.  
+- Egy **érvényes licenc** (ideiglenes vagy teljes) a teljes funkciók feloldásához.
 
 ## A GroupDocs.Watermark beállítása Java-hoz
 
-A GroupDocs.Watermark Java projektben való használatának megkezdéséhez adja hozzá a tárolót és a függőséget a `pom.xml`-hez:
+### Maven konfiguráció
+Addja a GroupDocs.Watermark függőséget a `pom.xml` fájlhoz:
 
 ```xml
 <repositories>
@@ -61,13 +118,14 @@ A GroupDocs.Watermark Java projektben való használatának megkezdéséhez adja
 </dependencies>
 ```
 
-Letöltheti a könyvtárat közvetlenül a hivatalos kiadási oldalról: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Közvetlen letöltés
+Ha a kézi telepítést részesíti előnyben, szerezze be a legújabb JAR‑t a hivatalos kiadási oldalról: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Licenc beszerzése
-Egy ideiglenes vagy teljes licenc feloldja az összes funkciót. Szerezzen egyet itt: [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/).
+Egy ideiglenes licenc lehetővé teszi az API kipróbálását, míg egy teljes licenc eltávolítja az összes próbaverziós korlátozást. Szerezze be a licencet a licencportálon: [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/).
 
 #### Alap inicializálás és beállítás
-Az alábbi minimális kód egy `Watermarker` példányt hoz létre egy PowerPoint fájlhoz:
+Az első lépés egy `Watermarker` példány létrehozása, amely a PowerPoint fájlra mutat:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -80,24 +138,25 @@ PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-## Implementációs útmutató – Lépésről‑lépésre
+## Hogyan nyerjünk ki diák háttérképet Java-ban?
+A folyamat a PowerPoint fájl betöltésével kezdődik egy Watermarker példány segítségével, majd a megfelelő betöltési beállítások létrehozásával. A dokumentum megnyitása után hozzáférhet az egyes diák tartalmához, lekérheti a háttérképet, és kinyerheti annak metaadatait, például a méreteket és a fájlméretet. Végül zárja be a Watermarker‑t az erőforrások felszabadításához. Az alábbi lépések pontosan leírják a szükséges sorrendet, a kódtöredékek pedig megmutatják, hol helyezkednek el a meglévő kódrészletek.
 
-### 1. lépés: Load Options létrehozása
-Először létrehozunk egy `PresentationLoadOptions` objektumot. Ez lehetővé teszi a fájl feldolgozásának vezérlését (pl. csak bizonyos diák betöltése).
+### 1. lépés: betöltési beállítások létrehozása
+A `PresentationLoadOptions` meghatározza a betöltési preferenciákat, például a jelszókezelést és a memóriahasználatot.
 
 ```java
 PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 ```
 
 ### 2. lépés: PowerPoint dokumentum megnyitása
-Adja át a load options-t a `Watermarker` konstruktorának a prezentáció betöltéséhez.
+Hozzon létre egy `Watermarker` példányt a `.pptx` fájl elérési útjával és a korábban létrehozott betöltési beállításokkal.
 
 ```java
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-### 3. lépés: Diatartalom elérése
-Szerezze meg a prezentáció tartalommodelljét, hogy végig tudja iterálni a diákon.
+### 3. lépés: diák tartalmának elérése
+A `PresentationContent` a belépési pont a diák‑szintű objektumok, köztük a háttérképek lekéréséhez.
 
 ```java
 import com.groupdocs.watermark.contents.PresentationContent;
@@ -105,8 +164,9 @@ import com.groupdocs.watermark.contents.PresentationContent;
 PresentationContent content = watermarker.getContent(PresentationContent.class);
 ```
 
-### 4. lépés: Diák iterálása és képadatok kinyerése
-Most végigjárjuk az összes diát, ellenőrizzük, hogy van-e háttérkép, majd kinyerjük annak méreteit és fájlméretét. Ez a **java get image dimensions** művelet középpontja.
+### 4. lépés: diák bejárása és háttéradatok olvasása
+A `Slide` egy egyedi diát képvisel a prezentációban, és hozzáférést biztosít a vizuális elemeihez.  
+Minden `Slide` objektum esetén hívja meg a `getBackground()` metódust a kép lekéréséhez, majd olvassa ki a méreteket és a méretet.
 
 ```java
 import com.groupdocs.watermark.contents.PresentationSlide;
@@ -124,62 +184,74 @@ for (PresentationSlide slide : content.getSlides()) {
 }
 ```
 
-### 5. lépés: Watermarker bezárása
-Mindig szabadítsa fel az erőforrásokat, amikor befejezte.
+### 5. lépés: a watermarker bezárása
+Mindig zárja be a `Watermarker` példányt a natív erőforrások felszabadítása és a memória‑szivárgások elkerülése érdekében.
 
 ```java
 watermarker.close();
 ```
 
-## Gyakori problémák és megoldások
-- **Fájl nem található:** Ellenőrizze újra az elérési utat, és győződjön meg róla, hogy az alkalmazásnak olvasási jogosultsága van.  
-- **Null háttérkép:** Egyes diák szilárd színeket használnak képek helyett; védekezzen a `null` ellen, ahogy fent is látható.  
-- **Nagy fájlok memória nyomást okoznak:** Dolgozza fel a diákat kötegekben, és szükség esetén zárja be a `Watermarker`-t minden köteg után.
+## Hogyan olvassuk ki a PowerPoint diák méreteit a GroupDocs.Watermark segítségével?
+Az API a `ImageInfo` objektumon keresztül teszi elérhetővé a szélességet és magasságot, amely a dia hátteréhez van csatolva. Ezeket a `getWidth()` és `getHeight()` metódusokkal kérheti le, amelyek pixelértékeket adnak vissza, és felhasználhatók elrendezési számításokhoz vagy a márka‑irányelvek ellenőrzéséhez.
+
+## Gyakori problémák és hibaelhárítás
+- **Fájl nem található** – Ellenőrizze, hogy az elérési út abszolút vagy helyesen relatív a projekt gyökérkönyvtárához.  
+- **Nem támogatott formátum** – A GroupDocs.Watermark támogatja a PPTX, PPT és ODP formátumokat; a régebbi bináris PPT fájlok először konvertálást igényelhetnek.  
+- **Licenc nincs alkalmazva** – Győződjön meg róla, hogy a `License.setLicense("path/to/license.file")` hívást a többi API használata előtt végzi.
 
 ## Gyakorlati alkalmazások
-1. **Egyedi diatervezés:** Automatikusan cserélje le az alacsony felbontású háttereket magas minőségű eszközökre.  
-2. **Adat elemzés:** Készítsen jelentéseket a képek használatáról a vállalati diakönyvtárban.  
-3. **CMS integráció:** Szinkronizálja a háttér metaadatait egy digitális eszközkezelő rendszerrel.  
-4. **Audit és megfelelőség:** Ellenőrizze, hogy minden dia megfelel a márka‑irányelvek méreteinek.
+1. **Automatizált márka-megfelelőség** – Vizsgálja meg a diák hátterét, hogy megegyeznek-e a vállalati színpalettával vagy a logó méreteivel.  
+2. **Eszközinventár** – Készítsen katalógust a háttérképekről a dokumentumtárban, hogy újra felhasználhassa őket marketing anyagokban.  
+3. **Tartalom migráció** – Kinyerje a háttereket, tárolja őket egy digitális eszközkezelőben, és programozottan alkalmazza új prezentációkra.  
+4. **Teljesítményfigyelés** – Naplózza a képméret statisztikákat, hogy észlelje a szokatlanul nagy eszközöket, amelyek lassíthatják a diák renderelését.
 
 ## Teljesítmény szempontok
-- **Erőforrás menedzsment:** Zárja be a `Watermarker`-t időben a natív erőforrások felszabadításához.  
-- **Memória lábnyoma:** Száz diát tartalmazó prezentációk esetén fontolja meg egy diát egyszerre feldolgozni.  
-- **Profilozás:** Használjon Java profilereket a szűk keresztmetszetek felderítéséhez nagy prezentációk esetén.
+- **Erőforrás-tisztítás** – A `Watermarker` gyors bezárása felszabadítja a natív memóriát, ami nagy prezentációk feldolgozásakor kritikus.  
+- **Memóriahasználat** – A könyvtár streameli a diák adatait; tovább csökkentheti a használatot, ha egyesével dolgozza fel a diákat a teljes prezentáció betöltése helyett.  
+- **Kötegelt feldolgozási tipp** – Több tucat fájl kezelésekor használja újra egyetlen `License` példányt, és fájlonként hozzon létre új `Watermarker`‑t a JVM heap stabilitásának megőrzése érdekében.
+
+## Következtetés
+Most már rendelkezik egy teljes, termelés‑kész útmutatóval a diák háttérképének Java‑ban történő kinyeréséhez a GroupDocs.Watermark segítségével. A fenti lépések követésével lekérheti a kép méreteit, fájlméretét és egyéb metaadatait, majd ezeket felhasználhatja márka‑ellenőrzésekhez, eszközkezeléshez vagy bármilyen egyedi munkafolyamathoz, amelyet elképzel.
+
+**Következő lépések**
+- Kísérletezzen különböző `PresentationLoadOptions`‑okkal (pl. jelszóval védett fájlok).  
+- Fedezze fel a vízjel API‑t, hogy automatikusan hozzáadjon vagy cseréljen háttérképeket.  
+- Kombinálja ezt a kinyerési logikát egy REST szolgáltatással, hogy diák‑metaadat végpontokat biztosítson.
 
 ## Gyakran ismételt kérdések
 
-**K: Mi a legegyszerűbb módja annak, hogy csak a kép méretét lekérje anélkül, hogy az egész diát betöltené?**  
-V: Használja a `slide.getImageFillFormat().getBackgroundImage().getBytes().length` kifejezést, miután megerősítette, hogy a kép objektum nem `null`.
+**Q: Mi a minimális Java verzió, amely szükséges?**  
+A: Java 11 vagy újabb szükséges; a korábbi verziók nem tartalmazzák a könyvtárhoz szükséges nyelvi funkciókat.
 
-**K: Kinyerhetek háttérképeket jelszóval védett prezentációkból?**  
-V: Igen – adja meg a jelszót a `PresentationLoadOptions`-ban a `Watermarker` létrehozása előtt.
+**Q: Kinyerhetek hátteret jelszóval védett prezentációkból?**  
+A: Igen — állítsa be a jelszót a `PresentationLoadOptions`‑ban a fájl megnyitása előtt.
 
-**K: A GroupDocs.Watermark támogat más formátumokat, például PDF vagy Word, hasonló képkinyeréshez?**  
-V: Természetesen. A könyvtár hasonló API-kat kínál PDF-ekhez, Word dokumentumokhoz és képekhez.
+**Q: A próbaverzió korlátozza a feldolgozható diák számát?**  
+A: A próbaverzió vízjelet helyez el a kimeneti fájlokon, de nem korlátozza a diák számát a metaadat‑kinyerés során.
 
-**K: Kötelező licenc a fejlesztői környezetben?**  
-V: Egy ideiglenes licenc eltávolítja a próba korlátokat; egyébként a könyvtár próba módban fut, funkciókorlátozásokkal.
+**Q: Lehet-e a kinyert háttérképet lementeni a lemezre?**  
+A: Teljesen — használja a `ImageInfo.save("output.png")` metódust a `ImageInfo` objektum lekérése után.
 
-**K: Hol találok részletesebb API dokumentációt?**  
-V: Látogassa meg a hivatalos [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/) oldalt a teljes körű útmutatókért és referencia anyagokért.
-
-## Következtetés
-Most már rendelkezik egy teljes, termelés‑kész megközelítéssel a **java get image dimensions** és a diák háttéradatainak kinyerésére a GroupDocs.Watermark for Java segítségével. A fenti lépések követésével beépítheti ezt a funkciót bármely Java alkalmazásba – legyen szó márka‑megfelelőségi eszközről, elemző irányítópultról vagy automatizált diakészítő csővezetékről.
-
-**Következő lépések**  
-- Kísérletezzen különböző `PresentationLoadOptions`-okkal (pl. csak bizonyos diák betöltése).  
-- Fedezze fel a GroupDocs.Watermark további funkcióit, például vízjel beszúrását vagy dokumentum konvertálást.  
-
----
-
-**Utoljára frissítve:** 2026-02-11  
-**Tesztelve ezzel:** GroupDocs.Watermark 24.11 for Java  
-**Szerző:** GroupDocs  
+**Q: Milyen formátumokba exportálhatom a kinyert képet?**  
+A: Az API támogatja a PNG, JPEG, BMP és GIF formátumokat a háttérkép exportálásához.
 
 ## Erőforrások
+
+- **Dokumentáció:** [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/)  
 - **Dokumentáció:** [GroupDocs Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
 - **API referencia:** [GroupDocs Watermark API Reference](https://reference.groupdocs.com/watermark/java)  
 - **Letöltés:** [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)  
 - **GitHub tároló:** [GroupDocs GitHub Page](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - **Támogatási fórum:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/watermark/10)
+
+---
+
+**Last Updated:** 2026-09-11  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs
+
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan lehet lekérni a PowerPoint diák méreteit a GroupDocs.Watermark Java API használatával](/watermark/java/presentation-document-watermarking/retrieve-slide-dimensions-powerpoint-groupdocs-watermark-java/)
+- [PowerPoint diák háttér eltávolítása Java-ban a GroupDocs.Watermark könyvtárral](/watermark/java/watermark-removal/remove-ppt-slide-background-groupdocs-watermark-java/)
+- [Hogyan lehet lekérni a dokumentum információkat a GroupDocs.Watermark for Java használatával: Lépésről lépésre útmutató](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)

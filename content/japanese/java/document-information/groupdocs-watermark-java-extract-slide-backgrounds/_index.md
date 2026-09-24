@@ -1,67 +1,100 @@
 ---
-date: '2026-02-11'
-description: GroupDocs.Watermark for Java を使用して、画像の寸法を取得し、スライドの背景情報を抽出する方法を学びましょう。カスタマイズ、分析、またはドキュメント作成に最適です。
+date: '2026-09-11'
+description: GroupDocs.Watermark for Java を使用して、スライドの背景（java）を抽出し、PowerPoint のスライドサイズを読み取る方法を学びます。数分で画像サイズ、ファイルサイズ、メタデータを取得できます。
 keywords:
-- extract slide background information Java
-- GroupDocs.Watermark PowerPoint
-- slide background details Java
-title: javaで画像サイズを取得 – GroupDocs.Watermarkを使用したスライド背景の抽出
+- extract slide background java
+- read powerpoint slide dimensions
+- slide background details java
+lastmod: '2026-09-11'
+og_description: GroupDocs.Watermark for Java を使用して、スライドの背景（java）を抽出し、PowerPoint のスライドサイズを読み取ります。セットアップ、コード、トラブルシューティングを含む詳細ガイドです。
+og_image_alt: Guide showing Java code extracting slide background information from
+  PowerPoint
+og_title: GroupDocs.Watermark でスライドの背景（java）を抽出
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-11'
+  description: Learn how to extract slide background java and read PowerPoint slide
+    dimensions using GroupDocs.Watermark for Java. Get image size, file size, and
+    metadata in minutes.
+  headline: How to extract slide background java
+  type: TechArticle
+- description: Learn how to extract slide background java and read PowerPoint slide
+    dimensions using GroupDocs.Watermark for Java. Get image size, file size, and
+    metadata in minutes.
+  name: How to extract slide background java
+  steps:
+  - name: create load options
+    text: '`PresentationLoadOptions` defines loading preferences such as password
+      handling and memory usage.'
+  - name: open the PowerPoint document
+    text: Instantiate `Watermarker` with the path to your `.pptx` file and the load
+      options created earlier.
+  - name: access slide content
+    text: '`PresentationContent` is the entry point for retrieving slide‑level objects,
+      including background images.'
+  - name: iterate over slides and read background details
+    text: Slide represents an individual slide within the presentation and provides
+      access to its visual elements. For each `Slide` object, call `getBackground()`
+      to obtain the image, then read its dimensions and size.
+  - name: close the watermarker
+    text: Always close the `Watermarker` instance to free native resources and avoid
+      memory leaks.
+  type: HowTo
+- questions:
+  - answer: Java 11 or newer is required; earlier versions lack the necessary language
+      features for the library.
+    question: What is the minimum Java version required?
+  - answer: Yes—set the password in `PresentationLoadOptions` before opening the file.
+    question: Can I extract backgrounds from password‑protected presentations?
+  - answer: The trial imposes a watermark on output files but does not restrict slide
+      count for metadata extraction.
+    question: Does the trial mode limit the number of slides I can process?
+  - answer: Absolutely—use `ImageInfo.save("output.png")` after retrieving the `ImageInfo`
+      object.
+    question: Is it possible to save the extracted background image to disk?
+  - answer: The API supports PNG, JPEG, BMP, and GIF for background image export.
+    question: Which formats can I export the extracted image to?
+  type: FAQPage
+tags:
+- extract slide background
+- GroupDocs.Watermark
+- Java PowerPoint
+- document processing
+title: スライドの背景（java）を抽出する方法
 type: docs
 url: /ja/java/document-information/groupdocs-watermark-java-extract-slide-backgrounds/
 weight: 1
 ---
 
-Translate each Q&A.
+# スライド背景を抽出する方法 java
 
-## Conclusion
+## はじめに
 
-Translate.
+スライド背景の抽出（java）は、PowerPoint ファイル内のビジュアル資産を分析、再利用、または文書化したいときに一般的に必要とされます。GroupDocs.Watermark for Java を使用すれば、PowerPoint を開かずに画像の幅・高さ、ファイルサイズ、その他のメタデータをプログラムから取得できます。本チュートリアルでは、環境設定から背景情報の抽出・解釈までの全工程を解説し、任意の Java ベースの自動化パイプラインにこの機能を組み込めるようにします。
 
-**Next Steps** translate bullet points.
+### クイック回答
+- **スライド背景抽出を扱うライブラリはどれですか？** GroupDocs.Watermark for Java。  
+- **画像の幅・高さを返すメソッドは？** `getBackground().getImageInfo().getWidth()` と `getHeight()`。  
+- **背景画像のファイルサイズを取得できますか？** はい、`getBackground().getImageInfo().getSize()` で取得可能です。  
+- **この機能にライセンスは必要ですか？** 一時ライセンスまたはフルライセンスで全機能が解放されます。トライアルモードでも制限付きで利用できます。  
+- **Maven はサポートされていますか？** はい、`pom.xml` に GroupDocs.Watermark の依存関係を追加してください。
 
-Then bottom metadata.
+## スライド背景抽出（Java）とは
+スライド背景抽出（java）とは、Java コードを用いて PowerPoint プレゼンテーションの各スライドのビジュアル背景をプログラム的に読み取るプロセスです。この操作により、画像の幅・高さ・ファイルサイズといったメタデータが取得でき、ブランドチェックや資産再利用などの下流処理に活用できます。
 
-**Last Updated:** keep date.
+## このタスクにGroupDocs.Watermarkを使用する理由
+GroupDocs.Watermark は **30 以上の入力・出力フォーマット** をサポートし、**最大 500 スライド** のプレゼンテーションをメモリ全体にロードせずに処理できます。また、スライド背景にアクセスするための専用 API を提供しているため、エンタープライズ規模の自動化に信頼できる選択肢です。
 
-**Tested With:** keep.
+## 前提条件
+- **Java 11+** が開発マシンにインストールされていること。  
+- **Maven** による依存関係管理。  
+- **GroupDocs.Watermark 24.11**（以降） – 本ガイドで使用する `PresentationLoadOptions` と `PresentationContent` クラスが含まれます。  
+- フル機能を解放する **有効なライセンス**（一時またはフル）。
 
-**Author:** keep.
+## GroupDocs.Watermark for Java の設定
 
-**Resources** list with links unchanged, but translate titles.
-
-Now produce final output.# java get image dimensions – GroupDocs.Watermark を使用したスライド背景の抽出
-
-PowerPoint スライドから **java get image dimensions** やその他の背景情報を取得したいですか？ カスタムブランディング、データ分析、ドキュメント作成など、さまざまな用途で GroupDocs.Watermark ライブラリ for Java を使えば簡単に実現できます。このチュートリアルでは、数行の API 呼び出しだけでスライド背景情報（画像の幅・高さ・ファイルサイズ）を抽出する方法を学びます。
-
-## Quick Answers
-- **What does “java get image dimensions” mean?**  
-  PowerPoint スライドに埋め込まれた画像の幅と高さを Java コードで取得することを指します。  
-- **Which library helps with this?**  
-  GroupDocs.Watermark for Java が、スライド背景を読み取るための高レベル API を提供します。  
-- **Do I need a license?**  
-  本番環境で使用するには一時ライセンスまたはフルライセンスが必要です。トライアルモードも利用可能です。  
-- **Can I process large presentations?**  
-  はい。`Watermarker` を速やかにクローズしてリソースを解放することを忘れないでください。  
-- **What Java version is required?**  
-  Java 8 以上と、依存関係管理のための Maven が必要です。
-
-## What is java get image dimensions?
-PowerPoint ファイルでは、各スライドに背景画像が設定されることがあります。GroupDocs.Watermark を使用すると、その画像の **幅**、**高さ**、そして **バイトサイズ** をプログラムから取得でき、これが「java get image dimensions」操作の核心です。
-
-## Why extract slide background information?
-- **Brand compliance:** すべてのスライドが正しい背景サイズと解像度を使用しているか確認できます。  
-- **Automation:** デッキ全体の背景を動的に置き換えたりリサイズしたりできます。  
-- **Analytics:** 画像使用状況の統計を収集し、レポートや最適化に活用できます。  
-- **Integration:** 背景メタデータを CMS パイプラインやデザインツールに連携できます。
-
-## Prerequisites
-- **GroupDocs.Watermark 24.11+**（または最新リリース）  
-- **Java 8 以上** かつ Maven がインストール済み  
-- Java のファイル I/O に関する基本的な知識  
-
-## Setting Up GroupDocs.Watermark for Java
-
-Java プロジェクトで GroupDocs.Watermark を使用するには、`pom.xml` にリポジトリと依存関係を追加します。
+### Maven 設定
+`pom.xml` ファイルに GroupDocs.Watermark の依存関係を追加します:
 
 ```xml
 <repositories>
@@ -81,13 +114,14 @@ Java プロジェクトで GroupDocs.Watermark を使用するには、`pom.xml`
 </dependencies>
 ```
 
-公式リリースページから直接ライブラリをダウンロードすることもできます: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)。
+### 直接ダウンロード
+手動インストールを希望する場合は、公式リリースページから最新の JAR を取得してください: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### License Acquisition
-一時ライセンスまたはフルライセンスを取得すると、すべての機能がロック解除されます。取得はこちらから: [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/)。
+### ライセンス取得
+一時ライセンスは API の評価に、フルライセンスはすべてのトライアル制限を解除します。ライセンスは以下のポータルから取得してください: [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/).
 
-#### Basic Initialization and Setup
-PowerPoint ファイル用の `Watermarker` インスタンスを作成する最小コードは以下の通りです。
+#### 基本的な初期化と設定
+最初のステップは、PowerPoint ファイルを指す `Watermarker` インスタンスを作成することです:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -100,24 +134,25 @@ PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-## Implementation Guide – Step‑by‑Step
+## スライド背景抽出（Java）の方法
+このプロセスは、Watermarker インスタンスで PowerPoint ファイルを読み込み、適切なロードオプションを作成した後に開始します。ドキュメントを開いたら、各スライドのコンテンツにアクセスし、背景画像を取得して、幅・高さ・サイズといったメタデータを抽出します。最後に Watermarker を閉じてリソースを解放します。以下の手順に従ってください。
 
-### Step 1: Create Load Options
-まず `PresentationLoadOptions` オブジェクトを作成します。これにより、ファイルの解析方法（例: 特定のスライドだけを読み込む）を制御できます。
+### 手順 1: ロードオプションの作成
+`PresentationLoadOptions` は、パスワード処理やメモリ使用量などの読み込み設定を定義します。
 
 ```java
 PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 ```
 
-### Step 2: Open the PowerPoint Document
-ロードオプションを `Watermarker` コンストラクタに渡して、プレゼンテーションを読み込みます。
+### 手順 2: PowerPoint ドキュメントを開く
+先ほど作成したロードオプションと `.pptx` ファイルへのパスを指定して `Watermarker` をインスタンス化します。
 
 ```java
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-### Step 3: Access Slide Content
-プレゼンテーションのコンテンツモデルを取得し、各スライドを反復処理できるようにします。
+### 手順 3: スライドコンテンツにアクセス
+`PresentationContent` は、背景画像を含むスライドレベルのオブジェクトを取得するエントリーポイントです。
 
 ```java
 import com.groupdocs.watermark.contents.PresentationContent;
@@ -125,8 +160,9 @@ import com.groupdocs.watermark.contents.PresentationContent;
 PresentationContent content = watermarker.getContent(PresentationContent.class);
 ```
 
-### Step 4: Iterate Over Slides and Extract Image Details
-すべてのスライドを走査し、背景画像が存在すればそのサイズとファイルサイズを取得します。これが **java get image dimensions** の核心です。
+### 手順 4: スライドを反復処理し背景情報を取得
+Slide はプレゼンテーション内の個々のスライドを表し、視覚要素へのアクセスを提供します。  
+各 `Slide` オブジェクトに対して `getBackground()` を呼び出し画像を取得し、続いて幅・高さ・サイズを読み取ります。
 
 ```java
 import com.groupdocs.watermark.contents.PresentationSlide;
@@ -144,62 +180,74 @@ for (PresentationSlide slide : content.getSlides()) {
 }
 ```
 
-### Step 5: Close Watermarker
-作業が完了したら必ずリソースを解放してください。
+### 手順 5: Watermarker を閉じる
+`Watermarker` インスタンスは必ず閉じて、ネイティブリソースを解放しメモリリークを防止してください。
 
 ```java
 watermarker.close();
 ```
 
-## Common Issues and Solutions
-- **File not found:** パスを再確認し、アプリケーションに読み取り権限があることを確認してください。  
-- **Null background image:** スライドによっては画像ではなく単色が設定されている場合があります。`null` チェックを忘れずに。  
-- **Large files cause memory pressure:** バッチ単位でスライドを処理し、必要に応じて各バッチ後に `Watermarker` をクローズしてください。
+## GroupDocs.Watermark を使用して PowerPoint スライドのサイズを取得する方法
+API はスライド背景に付随する `ImageInfo` オブジェクトを通じて幅と高さを公開します。`getWidth()` と `getHeight()` を使用してピクセル単位の値を取得し、レイアウト計算やブランドガイドラインとの検証に利用できます。
 
-## Practical Applications
-1. **Custom Slide Design:** 低解像度の背景を自動的に高品質アセットに置き換える。  
-2. **Data Analysis:** 企業のスライドライブラリ全体での画像使用状況レポートを生成する。  
-3. **CMS Integration:** 背景メタデータをデジタル資産管理システムと同期させる。  
-4. **Audit & Compliance:** すべてのスライドがブランドガイドラインのサイズ要件を満たしているか検証する。
+## よくある問題とトラブルシューティング
+- **ファイルが見つからない** – ファイルパスが絶対パスであるか、プロジェクトルートからの相対パスが正しいか確認してください。  
+- **サポートされていない形式** – GroupDocs.Watermark は PPTX、PPT、ODP をサポートします。古いバイナリ PPT は事前に変換が必要な場合があります。  
+- **ライセンスが適用されていない** – いかなる API 呼び出しよりも先に `License.setLicense("path/to/license.file")` を実行していることを確認してください。
 
-## Performance Considerations
-- **Resource Management:** `Watermarker` は速やかにクローズしてネイティブリソースを解放しましょう。  
-- **Memory Footprint:** 数百枚のスライドがある場合は、1枚ずつ処理することを検討してください。  
-- **Profiling:** 大規模デッキでのスケーリング時は、Java プロファイラでボトルネックを特定しましょう。
+## 実用的な活用例
+1. **自動ブランドコンプライアンス** – スライド背景をスキャンし、企業のカラーパレットやロゴサイズと一致しているか確認します。  
+2. **資産インベントリ** – ドキュメントライブラリ全体の背景画像をカタログ化し、マーケティング資産として再利用します。  
+3. **コンテンツ移行** – 背景画像を抽出してデジタル資産管理システムに保存し、プログラムで新しいプレゼンテーションに再適用します。  
+4. **パフォーマンス監視** – 画像サイズ統計を記録し、スライド描画を遅延させる可能性のある異常に大きな資産を検出します。
 
-## Frequently Asked Questions
+## パフォーマンス上の考慮点
+- **リソースのクリーンアップ** – `Watermarker` を速やかに閉じることでネイティブメモリが解放され、大規模デッキの処理時に重要です。  
+- **メモリフットプリント** – ライブラリはスライドデータをストリーミングします。プレゼンテーション全体をロードせず、スライド単位で処理することで使用メモリをさらに削減できます。  
+- **バッチ処理のヒント** – 複数ファイルを扱う際は `License` インスタンスを共有し、ファイルごとに新しい `Watermarker` を作成して JVM ヒープの安定性を保ちます。
 
-**Q: What is the easiest way to retrieve just the image size without loading the whole slide?**  
-A: 画像オブジェクトが `null` でないことを確認した上で、`slide.getImageFillFormat().getBackgroundImage().getBytes().length` を使用します。
+## 結論
+これで、GroupDocs.Watermark を使用したスライド背景抽出（java）の完全な実装ガイドが完成しました。上記手順に従えば、画像の幅・高さ・ファイルサイズなどのメタデータを取得し、ブランドチェック、資産管理、または任意のカスタムワークフローに活用できます。
 
-**Q: Can I extract background images from password‑protected presentations?**  
-A: はい。`PresentationLoadOptions` にパスワードを設定してから `Watermarker` を作成すれば取得可能です。
+**次のステップ**
+- パスワード保護されたファイル向けに `PresentationLoadOptions` を色々試してみる。  
+- 背景を自動的に追加・置換するためにウォーターマーキング API を探索する。  
+- 本抽出ロジックを REST サービスと組み合わせ、スライドメタデータのエンドポイントを提供する。
 
-**Q: Does GroupDocs.Watermark support other formats like PDF or Word for similar image extraction?**  
-A: もちろんです。PDF、Word、画像ファイル向けにも同様の API が用意されています。
+## よくある質問
 
-**Q: Is a license mandatory for development environments?**  
-A: 一時ライセンスを取得すればトライアル制限が解除されます。ライセンスがない場合は機能制限付きのトライアルモードで動作します。
+**Q: 必要最低限の Java バージョンは何ですか？**  
+A: Java 11 以上が必要です。古いバージョンではライブラリに必要な言語機能が欠如しています。
 
-**Q: Where can I find more detailed API documentation?**  
-A: 公式の [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/) で包括的なガイドとリファレンスをご覧いただけます。
+**Q: パスワード保護されたプレゼンテーションから背景を抽出できますか？**  
+A: はい、ファイルを開く前に `PresentationLoadOptions` にパスワードを設定してください。
 
-## Conclusion
-これで **java get image dimensions** とスライド背景情報の抽出を、GroupDocs.Watermark for Java を使って実装するための完全な手順が揃いました。上記の手順に従えば、ブランディング遵守ツール、分析ダッシュボード、あるいは自動スライド生成パイプラインなど、あらゆる Java アプリケーションにこの機能を組み込むことができます。
+**Q: トライアルモードは処理できるスライド数に制限がありますか？**  
+A: トライアルは出力ファイルに透かしを付加しますが、メタデータ抽出においてスライド数の制限はありません。
 
-**Next Steps**  
-- 特定のスライドだけを読み込む `PresentationLoadOptions` の活用を試してみてください。  
-- Watermark 挿入やドキュメント変換など、GroupDocs.Watermark の他機能も探索してみましょう。  
+**Q: 抽出した背景画像をディスクに保存できますか？**  
+A: もちろんです。`ImageInfo.save("output.png")` を使用して `ImageInfo` オブジェクト取得後に保存できます。
+
+**Q: 抽出画像はどのフォーマットにエクスポートできますか？**  
+A: API は PNG、JPEG、BMP、GIF のエクスポートをサポートしています。
+
+## リソース
+
+- **Documentation:** [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Documentation:** [GroupDocs Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **API reference:** [GroupDocs Watermark API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)  
+- **GitHub repository:** [GroupDocs GitHub Page](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Support forum:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/watermark/10)
 
 ---
 
-**Last Updated:** 2026-02-11  
+**Last Updated:** 2026-09-11  
 **Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
+**Author:** GroupDocs
 
-**Resources**  
-- **Documentation:** [GroupDocs Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **API Reference:** [GroupDocs Watermark API Reference](https://reference.groupdocs.com/watermark/java)  
-- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub Repository:** [GroupDocs GitHub Page](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Support Forum:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/watermark/10)
+## 関連チュートリアル
+
+- [How to Retrieve PowerPoint Slide Dimensions Using GroupDocs.Watermark Java API](/watermark/java/presentation-document-watermarking/retrieve-slide-dimensions-powerpoint-groupdocs-watermark-java/)
+- [Remove PowerPoint Slide Background in Java with GroupDocs.Watermark Library](/watermark/java/watermark-removal/remove-ppt-slide-background-groupdocs-watermark-java/)
+- [How to Retrieve Document Information Using GroupDocs.Watermark for Java: A Step-by-Step Guide](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)

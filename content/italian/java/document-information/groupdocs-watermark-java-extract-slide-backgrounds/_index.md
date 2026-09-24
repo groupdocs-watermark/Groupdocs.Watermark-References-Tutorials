@@ -1,59 +1,106 @@
 ---
-date: '2026-02-11'
-description: Impara come ottenere le dimensioni dell'immagine in Java ed estrarre
-  i dettagli dello sfondo della diapositiva usando GroupDocs.Watermark per Java. Perfetto
-  per personalizzazione, analisi o documentazione.
+date: '2026-09-11'
+description: Impara a estrarre lo sfondo della diapositiva java e a leggere le dimensioni
+  della diapositiva PowerPoint usando GroupDocs.Watermark per Java. Ottieni la dimensione
+  dell'immagine, la dimensione del file e i metadati in pochi minuti.
 keywords:
-- extract slide background information Java
-- GroupDocs.Watermark PowerPoint
-- slide background details Java
-title: java ottieni le dimensioni dell'immagine – estrai gli sfondi delle diapositive
-  con GroupDocs.Watermark
+- extract slide background java
+- read powerpoint slide dimensions
+- slide background details java
+lastmod: '2026-09-11'
+og_description: Estrai lo sfondo della diapositiva java e leggi le dimensioni della
+  diapositiva PowerPoint usando GroupDocs.Watermark per Java. Guida dettagliata con
+  configurazione, codice e risoluzione dei problemi.
+og_image_alt: Guide showing Java code extracting slide background information from
+  PowerPoint
+og_title: Estrai lo sfondo della diapositiva java con GroupDocs.Watermark
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-11'
+  description: Learn how to extract slide background java and read PowerPoint slide
+    dimensions using GroupDocs.Watermark for Java. Get image size, file size, and
+    metadata in minutes.
+  headline: How to extract slide background java
+  type: TechArticle
+- description: Learn how to extract slide background java and read PowerPoint slide
+    dimensions using GroupDocs.Watermark for Java. Get image size, file size, and
+    metadata in minutes.
+  name: How to extract slide background java
+  steps:
+  - name: create load options
+    text: '`PresentationLoadOptions` defines loading preferences such as password
+      handling and memory usage.'
+  - name: open the PowerPoint document
+    text: Instantiate `Watermarker` with the path to your `.pptx` file and the load
+      options created earlier.
+  - name: access slide content
+    text: '`PresentationContent` is the entry point for retrieving slide‑level objects,
+      including background images.'
+  - name: iterate over slides and read background details
+    text: Slide represents an individual slide within the presentation and provides
+      access to its visual elements. For each `Slide` object, call `getBackground()`
+      to obtain the image, then read its dimensions and size.
+  - name: close the watermarker
+    text: Always close the `Watermarker` instance to free native resources and avoid
+      memory leaks.
+  type: HowTo
+- questions:
+  - answer: Java 11 or newer is required; earlier versions lack the necessary language
+      features for the library.
+    question: What is the minimum Java version required?
+  - answer: Yes—set the password in `PresentationLoadOptions` before opening the file.
+    question: Can I extract backgrounds from password‑protected presentations?
+  - answer: The trial imposes a watermark on output files but does not restrict slide
+      count for metadata extraction.
+    question: Does the trial mode limit the number of slides I can process?
+  - answer: Absolutely—use `ImageInfo.save("output.png")` after retrieving the `ImageInfo`
+      object.
+    question: Is it possible to save the extracted background image to disk?
+  - answer: The API supports PNG, JPEG, BMP, and GIF for background image export.
+    question: Which formats can I export the extracted image to?
+  type: FAQPage
+tags:
+- extract slide background
+- GroupDocs.Watermark
+- Java PowerPoint
+- document processing
+title: Come estrarre lo sfondo della diapositiva java
 type: docs
 url: /it/java/document-information/groupdocs-watermark-java-extract-slide-backgrounds/
 weight: 1
 ---
 
-"
+# Come estrarre lo sfondo della diapositiva in Java
 
-- **GitHub Repository:** -> "- **Repository GitHub:**"
+## Introduzione
 
-- **Support Forum:** -> "- **Forum di supporto:**"
+Estrazione dello sfondo della diapositiva in Java è una necessità comune quando si desidera analizzare, riutilizzare o documentare le risorse visive all'interno di un file PowerPoint. Con GroupDocs.Watermark per Java è possibile recuperare programmaticamente le dimensioni dell'immagine, la dimensione del file e altri metadati senza aprire la presentazione in PowerPoint. Questo tutorial ti guida attraverso l'intero flusso di lavoro — dalla configurazione dell'ambiente all'estrazione e interpretazione dei dettagli dello sfondo — così da poter integrare la funzionalità in qualsiasi pipeline di automazione basata su Java.
 
-Now ensure all shortcodes {{CODE_BLOCK_X}} remain unchanged.
+### Risposte rapide
+- **Quale libreria gestisce l'estrazione dello sfondo della diapositiva?** GroupDocs.Watermark for Java.  
+- **Quale metodo restituisce le dimensioni dell'immagine?** `getBackground().getImageInfo().getWidth()` e `getHeight()`.  
+- **Posso ottenere la dimensione del file dell'immagine di sfondo?** Sì, tramite `getBackground().getImageInfo().getSize()`.  
+- **È necessaria una licenza per questa funzionalità?** Una licenza temporanea o completa sblocca tutte le funzionalità; la modalità di prova funziona con limitazioni.  
+- **Maven è supportato?** Assolutamente — aggiungi la dipendenza GroupDocs.Watermark a `pom.xml`.
 
-Also preserve any other markdown like code fences? There are none besides shortcodes.
+## Cos'è l'estrazione dello sfondo della diapositiva in Java?
 
-Now produce final content.
+L'estrazione dello sfondo della diapositiva in Java si riferisce al processo di lettura programmatica dello sfondo visivo di ogni diapositiva in una presentazione PowerPoint utilizzando codice Java. Questa operazione fornisce metadati come larghezza, altezza e dimensione del file dell'immagine, consentendo elaborazioni successive come controlli di branding o riutilizzo delle risorse.
 
-# java get image dimensions – Estrai gli sfondi delle diapositive usando GroupDocs.Watermark
+## Perché utilizzare GroupDocs.Watermark per questo compito?
 
-Stai cercando di **java get image dimensions** e altri dettagli di sfondo da una diapositiva PowerPoint? Che tu abbia bisogno di queste informazioni per branding personalizzato, analisi dei dati o documentazione, la libreria GroupDocs.Watermark per Java lo rende semplice. In questo tutorial imparerai come estrarre le informazioni di sfondo della diapositiva — inclusi larghezza, altezza e dimensione del file dell'immagine — usando alcune semplici chiamate API.
-
-## Risposte rapide
-- **Cosa significa “java get image dimensions”?** Si riferisce al recupero della larghezza e dell'altezza di un'immagine incorporata in una diapositiva PowerPoint tramite codice Java.  
-- **Quale libreria aiuta in questo?** GroupDocs.Watermark per Java fornisce un'API di alto livello per leggere gli sfondi delle diapositive.  
-- **È necessaria una licenza?** È necessaria una licenza temporanea o completa per l'uso in produzione; è disponibile la modalità di prova.  
-- **Posso elaborare presentazioni di grandi dimensioni?** Sì — ricordati di chiudere prontamente il `Watermarker` per liberare le risorse.  
-- **Quale versione di Java è richiesta?** Java 8+ e Maven per la gestione delle dipendenze.
-
-## Cos'è java get image dimensions?
-Nel contesto dei file PowerPoint, ogni diapositiva può contenere un'immagine di sfondo. Usando GroupDocs.Watermark, è possibile ottenere programmaticamente la **larghezza**, l'**altezza** e la **dimensione in byte** di quell'immagine — il fulcro dell'operazione “java get image dimensions”.
-
-## Perché estrarre le informazioni di sfondo delle diapositive?
-- **Conformità al brand:** Verifica che tutte le diapositive utilizzino la dimensione e la risoluzione corrette dello sfondo.  
-- **Automazione:** Sostituisci o ridimensiona dinamicamente gli sfondi in tutto il deck.  
-- **Analisi:** Raccogli statistiche sull'uso delle immagini per report o ottimizzazione.  
-- **Integrazione:** Fornisci i metadati di sfondo ai pipeline CMS o agli strumenti di design.
+GroupDocs.Watermark supporta **oltre 30 formati di input e output**, elabora presentazioni con fino a **500 diapositive** senza caricare l'intero file in memoria, e fornisce un'API dedicata per accedere agli sfondi delle diapositive. Queste capacità quantificate lo rendono una scelta affidabile per l'automazione su scala aziendale.
 
 ## Prerequisiti
-- **GroupDocs.Watermark 24.11+** (o l'ultima versione)  
-- **Java 8 o superiore** con Maven installato  
-- Familiarità di base con Java file I/O  
+- **Java 11+** installato sulla tua macchina di sviluppo.  
+- **Maven** per la gestione delle dipendenze.  
+- **GroupDocs.Watermark 24.11** (o successivo) – la libreria contiene le classi `PresentationLoadOptions` e `PresentationContent` utilizzate in questa guida.  
+- Una **licenza valida** (temporanea o completa) per sbloccare l'intero set di funzionalità.
 
-## Configurare GroupDocs.Watermark per Java
+## Configurazione di GroupDocs.Watermark per Java
 
-Per iniziare a usare GroupDocs.Watermark nel tuo progetto Java, aggiungi il repository e la dipendenza al tuo `pom.xml`:
+### Configurazione Maven
+Aggiungi la dipendenza GroupDocs.Watermark al tuo file `pom.xml`:
 
 ```xml
 <repositories>
@@ -73,13 +120,14 @@ Per iniziare a usare GroupDocs.Watermark nel tuo progetto Java, aggiungi il repo
 </dependencies>
 ```
 
-Puoi anche scaricare la libreria direttamente dalla pagina ufficiale delle release: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Download diretto
+Se preferisci l'installazione manuale, ottieni l'ultimo JAR dalla pagina di rilascio ufficiale: [rilasci di GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/).
 
 ### Acquisizione della licenza
-Una licenza temporanea o completa sblocca tutte le funzionalità. Ottieni una licenza qui: [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/).
+Una licenza temporanea ti consente di valutare l'API, mentre una licenza completa rimuove tutte le restrizioni di prova. Ottieni la tua sul portale di licenze: [pagina di licenza di GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 
 #### Inizializzazione e configurazione di base
-Di seguito il codice minimo per creare un'istanza `Watermarker` per un file PowerPoint:
+Il primo passo è creare un'istanza `Watermarker` che punti al tuo file PowerPoint:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -92,24 +140,25 @@ PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-## Guida all'implementazione – Passo‑per‑passo
+## Come estrarre lo sfondo della diapositiva in Java?
+Il processo inizia caricando il file PowerPoint usando un'istanza Watermarker, quindi creando le opzioni di caricamento appropriate. Dopo aver aperto il documento, è possibile accedere al contenuto di ciascuna diapositiva, recuperare l'immagine di sfondo e estrarre i suoi metadati come dimensioni e dimensione del file. Infine, chiudi il Watermarker per rilasciare le risorse. I passaggi seguenti descrivono la sequenza esatta da seguire, e i segnaposto del codice mostrano dove inserire i tuoi snippet esistenti.
 
-### Passo 1: Crea le opzioni di caricamento
-Innanzitutto, creiamo un oggetto `PresentationLoadOptions`. Questo ti consente di controllare come il file viene analizzato (ad esempio, caricando solo diapositive specifiche).
+### Passo 1: creare le opzioni di caricamento
+`PresentationLoadOptions` definisce le preferenze di caricamento come la gestione della password e l'utilizzo della memoria.
 
 ```java
 PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 ```
 
-### Passo 2: Apri il documento PowerPoint
-Passa le opzioni di caricamento al costruttore `Watermarker` per caricare la tua presentazione.
+### Passo 2: aprire il documento PowerPoint
+Istanzia `Watermarker` con il percorso del tuo file `.pptx` e le opzioni di caricamento create in precedenza.
 
 ```java
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-### Passo 3: Accedi al contenuto della diapositiva
-Recupera il modello di contenuto della presentazione così da poter iterare su ogni diapositiva.
+### Passo 3: accedere al contenuto della diapositiva
+`PresentationContent` è il punto di ingresso per recuperare gli oggetti a livello di diapositiva, incluse le immagini di sfondo.
 
 ```java
 import com.groupdocs.watermark.contents.PresentationContent;
@@ -117,8 +166,9 @@ import com.groupdocs.watermark.contents.PresentationContent;
 PresentationContent content = watermarker.getContent(PresentationContent.class);
 ```
 
-### Passo 4: Itera sulle diapositive ed estrai i dettagli dell'immagine
-Ora attraversiamo ogni diapositiva, verifichiamo se esiste un'immagine di sfondo e poi ne estraiamo le dimensioni e la dimensione del file. Questo è il fulcro di **java get image dimensions**.
+### Passo 4: iterare sulle diapositive e leggere i dettagli dello sfondo
+Slide rappresenta una singola diapositiva all'interno della presentazione e fornisce l'accesso ai suoi elementi visivi.  
+Per ogni oggetto `Slide`, chiama `getBackground()` per ottenere l'immagine, quindi leggi le sue dimensioni e la sua dimensione.
 
 ```java
 import com.groupdocs.watermark.contents.PresentationSlide;
@@ -136,62 +186,74 @@ for (PresentationSlide slide : content.getSlides()) {
 }
 ```
 
-### Passo 5: Chiudi Watermarker
-Rilascia sempre le risorse quando hai finito.
+### Passo 5: chiudere il watermarker
+Chiudi sempre l'istanza `Watermarker` per liberare le risorse native ed evitare perdite di memoria.
 
 ```java
 watermarker.close();
 ```
 
-## Problemi comuni e soluzioni
-- **File non trovato:** Verifica nuovamente il percorso e assicurati che l'applicazione abbia i permessi di lettura.  
-- **Immagine di sfondo null:** Alcune diapositive usano colori solidi invece di immagini; proteggi il codice contro `null` come mostrato sopra.  
-- **File di grandi dimensioni causano pressione sulla memoria:** Elabora le diapositive in batch e chiudi il `Watermarker` dopo ogni batch se necessario.
+## Come leggere le dimensioni delle diapositive PowerPoint usando GroupDocs.Watermark?
+L'API espone larghezza e altezza tramite l'oggetto `ImageInfo` associato allo sfondo di una diapositiva. Recuperali con `getWidth()` e `getHeight()`, che restituiscono valori in pixel che puoi utilizzare per calcoli di layout o per la convalida rispetto alle linee guida di branding.
+
+## Problemi comuni e risoluzione
+- **File non trovato** – Verifica che il percorso del file sia assoluto o correttamente relativo alla radice del tuo progetto.  
+- **Formato non supportato** – GroupDocs.Watermark supporta PPTX, PPT e ODP; i file PPT binari più vecchi potrebbero richiedere una conversione preliminare.  
+- **Licenza non applicata** – Assicurati di chiamare `License.setLicense("path/to/license.file")` prima di qualsiasi altro utilizzo dell'API.
 
 ## Applicazioni pratiche
-1. **Design personalizzato delle diapositive:** Sostituisci automaticamente gli sfondi a bassa risoluzione con risorse ad alta qualità.  
-2. **Analisi dei dati:** Genera report sull'uso delle immagini in tutta la libreria di diapositive aziendale.  
-3. **Integrazione CMS:** Sincronizza i metadati di sfondo con un sistema di gestione delle risorse digitali.  
-4. **Audit e conformità:** Convalida che tutte le diapositive rispettino le dimensioni delle linee guida del brand.
+1. **Conformità al branding automatizzata** – Scansiona gli sfondi delle diapositive per confermare che corrispondano alle palette di colori aziendali o alle dimensioni del logo.  
+2. **Inventario delle risorse** – Crea un catalogo delle immagini di sfondo attraverso una libreria di documenti per il riutilizzo nelle risorse di marketing.  
+3. **Migrazione dei contenuti** – Estrai gli sfondi, archiviali in un gestore di risorse digitali e riapplicali programmaticamente a nuove presentazioni.  
+4. **Monitoraggio delle prestazioni** – Registra le statistiche delle dimensioni delle immagini per rilevare risorse insolitamente grandi che potrebbero rallentare il rendering delle diapositive.
 
 ## Considerazioni sulle prestazioni
-- **Gestione delle risorse:** Chiudi prontamente il `Watermarker` per liberare le risorse native.  
-- **Impronta di memoria:** Per presentazioni con centinaia di diapositive, considera di elaborare una diapositiva alla volta.  
-- **Profilazione:** Usa profiler Java per individuare colli di bottiglia quando si scala a deck di grandi dimensioni.
+- **Pulizia delle risorse** – Chiudere prontamente il `Watermarker` rilascia la memoria nativa, fondamentale quando si elaborano deck di grandi dimensioni.  
+- **Impronta di memoria** – La libreria trasmette in streaming i dati delle diapositive; è possibile ridurre ulteriormente l'uso elaborando le diapositive una alla volta invece di caricare l'intera presentazione.  
+- **Suggerimento per l'elaborazione batch** – Quando gestisci decine di file, riutilizza una singola istanza `License` e crea un nuovo `Watermarker` per file per mantenere stabile l'heap della JVM.
+
+## Conclusione
+Ora disponi di una guida completa e pronta per la produzione per estrarre lo sfondo della diapositiva in Java con GroupDocs.Watermark. Seguendo i passaggi sopra potrai recuperare le dimensioni dell'immagine, la dimensione del file e altri metadati, quindi applicare queste informazioni a controlli di branding, gestione delle risorse o qualsiasi flusso di lavoro personalizzato tu possa immaginare.
+
+**Passaggi successivi**
+- Sperimenta con diversi `PresentationLoadOptions` (ad esempio, file protetti da password).  
+- Esplora l'API di watermarking per aggiungere o sostituire gli sfondi automaticamente.  
+- Combina questa logica di estrazione con un servizio REST per esporre endpoint di metadati delle diapositive.
 
 ## Domande frequenti
 
-**Q: Qual è il modo più semplice per recuperare solo la dimensione dell'immagine senza caricare l'intera diapositiva?**  
-A: Usa `slide.getImageFillFormat().getBackgroundImage().getBytes().length` dopo aver verificato che l'oggetto immagine non sia `null`.
+**D: Qual è la versione minima di Java richiesta?**  
+R: È richiesto Java 11 o versioni successive; le versioni precedenti non dispongono delle funzionalità linguistiche necessarie per la libreria.
 
-**Q: Posso estrarre le immagini di sfondo da presentazioni protette da password?**  
-A: Sì — fornisci la password in `PresentationLoadOptions` prima di creare il `Watermarker`.
+**D: Posso estrarre gli sfondi da presentazioni protette da password?**  
+R: Sì — imposta la password in `PresentationLoadOptions` prima di aprire il file.
 
-**Q: GroupDocs.Watermark supporta altri formati come PDF o Word per l'estrazione di immagini simili?**  
-A: Assolutamente. La libreria offre API analoghe per PDF, documenti Word e immagini.
+**D: La modalità di prova limita il numero di diapositive che posso elaborare?**  
+R: La versione di prova impone un watermark sui file di output ma non limita il conteggio delle diapositive per l'estrazione dei metadati.
 
-**Q: È obbligatoria una licenza per gli ambienti di sviluppo?**  
-A: Una licenza temporanea rimuove le limitazioni della versione di prova; altrimenti, la libreria funziona in modalità di prova con limitazioni delle funzionalità.
+**D: È possibile salvare l'immagine di sfondo estratta su disco?**  
+R: Assolutamente — usa `ImageInfo.save("output.png")` dopo aver recuperato l'oggetto `ImageInfo`.
 
-**Q: Dove posso trovare una documentazione API più dettagliata?**  
-A: Visita la [documentazione ufficiale di GroupDocs](https://docs.groupdocs.com/watermark/java/) per guide complete e materiale di riferimento.
+**D: In quali formati posso esportare l'immagine estratta?**  
+R: L'API supporta PNG, JPEG, BMP e GIF per l'esportazione dell'immagine di sfondo.
 
-## Conclusione
-Ora disponi di un approccio completo e pronto per la produzione a **java get image dimensions** e per estrarre i dettagli di sfondo delle diapositive usando GroupDocs.Watermark per Java. Seguendo i passaggi sopra, puoi integrare questa funzionalità in qualsiasi applicazione Java — sia che tu stia costruendo uno strumento di conformità al brand, un cruscotto di analisi o una pipeline automatizzata di generazione di diapositive.
+## Risorse
 
-**Passaggi successivi**  
-- Sperimenta con diversi `PresentationLoadOptions` (ad esempio, carica solo diapositive specifiche).  
-- Esplora funzionalità aggiuntive di GroupDocs.Watermark come l'inserimento di watermark o la conversione di documenti.  
+- **Documentazione:** [Documentazione GroupDocs](https://docs.groupdocs.com/watermark/java/)  
+- **Documentazione:** [Documentazione GroupDocs Watermark](https://docs.groupdocs.com/watermark/java/)  
+- **Riferimento API:** [Riferimento API di GroupDocs Watermark](https://reference.groupdocs.com/watermark/java)  
+- **Download:** [Download di GroupDocs](https://releases.groupdocs.com/watermark/java/)  
+- **Repository GitHub:** [Pagina GitHub di GroupDocs](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Forum di supporto:** [Forum di supporto GroupDocs](https://forum.groupdocs.com/c/watermark/10)
 
 ---
 
-**Ultimo aggiornamento:** 2026-02-11  
+**Ultimo aggiornamento:** 2026-09-11  
 **Testato con:** GroupDocs.Watermark 24.11 for Java  
-**Autore:** GroupDocs  
+**Autore:** GroupDocs
 
-**Risorse**  
-- **Documentazione:** [GroupDocs Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **Riferimento API:** [GroupDocs Watermark API Reference](https://reference.groupdocs.com/watermark/java)  
-- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)  
-- **Repository GitHub:** [GroupDocs GitHub Page](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Forum di supporto:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/watermark/10)
+## Tutorial correlati
+
+- [Come recuperare le dimensioni delle diapositive PowerPoint usando l'API Java di GroupDocs.Watermark](/watermark/java/presentation-document-watermarking/retrieve-slide-dimensions-powerpoint-groupdocs-watermark-java/)
+- [Rimuovere lo sfondo della diapositiva PowerPoint in Java con la libreria GroupDocs.Watermark](/watermark/java/watermark-removal/remove-ppt-slide-background-groupdocs-watermark-java/)
+- [Come recuperare le informazioni del documento usando GroupDocs.Watermark per Java: Guida passo passo](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)

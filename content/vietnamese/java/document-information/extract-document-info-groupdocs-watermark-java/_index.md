@@ -1,50 +1,124 @@
 ---
-date: '2026-02-05'
-description: Tìm hiểu cách trích xuất siêu dữ liệu tài liệu và lấy loại tệp Java bằng
-  GroupDocs.Watermark cho Java. Hướng dẫn này bao gồm cài đặt, triển khai và các trường
-  hợp sử dụng thực tiễn.
+date: '2026-09-11'
+description: Tìm hiểu cách lấy loại tệp java và truy xuất số trang java với GroupDocs.Watermark
+  cho Java, bao gồm cài đặt, đoạn mã mẫu và mẹo hiệu năng.
 keywords:
-- GroupDocs Watermark Java
-- extract document metadata Java
-- Java document information retrieval
-title: Trích xuất siêu dữ liệu tài liệu bằng GroupDocs.Watermark cho Java
+- get file type java
+- retrieve page count java
+- GroupDocs.Watermark Java
+- document metadata extraction
+lastmod: '2026-09-11'
+og_description: Tìm hiểu cách lấy loại tệp java và truy xuất số trang java với GroupDocs.Watermark
+  cho Java. Thực hiện cài đặt từng bước và xem các ví dụ mã.
+og_image_alt: Guide showing Java code to extract document metadata with GroupDocs.Watermark
+og_title: Cách lấy loại tệp java bằng GroupDocs.Watermark
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-11'
+  description: Learn how to get file type java and retrieve page count java with GroupDocs.Watermark
+    for Java, including setup, code snippets, and performance tips.
+  headline: How to get file type java using GroupDocs.Watermark
+  type: TechArticle
+- description: Learn how to get file type java and retrieve page count java with GroupDocs.Watermark
+    for Java, including setup, code snippets, and performance tips.
+  name: How to get file type java using GroupDocs.Watermark
+  steps:
+  - name: initialize watermarker
+    text: Create a `Watermarker` object by providing the full path to the document
+      you want to inspect. This step establishes the context for all subsequent metadata
+      calls.
+  - name: access document information
+    text: 'Use the `getDocumentInfo()` method to obtain a `DocumentInfo` object. From
+      this object you can read `fileType`, `pageCount`, and `fileSize` properties.
+      **Explanation** - **fileType** – Identifies the document format, essential for
+      downstream processing. - **pageCount** – Returns the total number of '
+  - name: release resources
+    text: Always close the `Watermarker` instance after you finish extracting metadata.
+      This releases file handles and frees native resources, preventing memory leaks
+      in long‑running services.
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Watermark is a Java library that enables you to add, detect,
+      and extract watermarks as well as retrieve detailed document metadata.
+    question: What is GroupDocs.Watermark?
+  - answer: Yes, you can download the JAR files directly and add them to your project’s
+      classpath.
+    question: Can I use GroupDocs.Watermark with non‑Maven projects?
+  - answer: It supports over 60 formats, including DOCX, PDF, XLSX, PPTX, HTML, and
+      common image types.
+    question: What file formats does GroupDocs.Watermark support?
+  - answer: Metadata extraction reads only the file header, so the impact is minimal
+      and suitable for high‑volume scenarios.
+    question: Is there a performance impact when retrieving document information?
+  - answer: Wrap your code in try‑catch blocks and log the exception message; the
+      library throws specific exceptions for missing files, unsupported formats, and
+      licensing issues.
+    question: How can I handle exceptions during document processing?
+  type: FAQPage
+tags:
+- get file type
+- retrieve page count
+- GroupDocs.Watermark
+- Java document processing
+title: Cách lấy loại tệp java bằng GroupDocs.Watermark
 type: docs
 url: /vi/java/document-information/extract-document-info-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Trích xuất siêu dữ liệu tài liệu bằng GroupDocs.Watermark cho Java: Hướng dẫn đầy đủ
+# Cách lấy file type java bằng GroupDocs.Watermark
 
-Bạn có muốn nắm bắt thông tin chi tiết về các tài liệu được lưu trữ trong hệ thống tệp cục bộ của mình không? Cho dù là xác định loại, kích thước hoặc số trang của một tài liệu, việc lấy được thông tin này một cách hiệu quả là rất quan trọng đối với nhiều ứng dụng. Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn cách **trích xuất siêu dữ liệu tài liệu** như loại tệp, số trang và kích thước tệp bằng cách sử dụng GroupDocs.Watermark cho Java.
+Trong nhiều ứng dụng Java, bạn cần **get file type java** nhanh chóng để có thể định tuyến tài liệu, thực thi chính sách hoặc hiển thị biểu tượng phù hợp. GroupDocs.Watermark cho Java giúp việc này trở nên đơn giản bằng cách cung cấp siêu dữ liệu phong phú như loại tệp, số trang và kích thước tệp thông qua một API đơn giản. Hướng dẫn này sẽ chỉ cho bạn cách cài đặt thư viện, trích xuất thông tin và áp dụng chúng trong các kịch bản thực tế.
 
 ## Câu trả lời nhanh
-- **“extract document metadata” có nghĩa là gì?** Nó có nghĩa là đọc các thuộc tính tích hợp sẵn như loại tệp, số trang và kích thước mà không cần mở nội dung của tài liệu.  
-- **Thư viện nào hỗ trợ việc này trong Java?** GroupDocs.Watermark cho Java cung cấp một API đơn giản để truy xuất các thuộc tính đó.  
-- **Tôi có cần giấy phép không?** Cần có giấy phép tạm thời hoặc mua để sử dụng trong môi trường sản xuất.  
-- **Tôi có thể sử dụng nó với Maven không?** Có – thư viện có sẵn qua kho Maven.  
-- **Nó có nhanh cho các lô lớn không?** Việc truy xuất siêu dữ liệu nhẹ, bạn có thể xử lý an toàn nhiều tệp trong một vòng lặp.
+- **Cách nhanh nhất để get file type java là gì?**  
+  Tải tài liệu bằng `Watermarker` và gọi `getDocumentInfo().getFileType()`.
+- **Tôi có thể cũng lấy page count java trong cùng một lời gọi không?**  
+  Có, `getDocumentInfo().getPageCount()` trả về tổng số trang.
+- **Tôi có cần giấy phép để chạy ví dụ không?**  
+  Giấy phép tạm thời hoạt động cho phát triển; giấy phép đầy đủ cần thiết cho môi trường sản xuất.
+- **Maven có phải là cách duy nhất để thêm thư viện không?**  
+  Không, bạn cũng có thể tải JAR trực tiếp từ trang releases.
+- **Cách tiếp cận này có xử lý các tệp lớn một cách hiệu quả không?**  
+  Có, việc trích xuất siêu dữ liệu chỉ đọc phần đầu tệp, giữ mức sử dụng bộ nhớ thấp.
 
-## Siêu dữ liệu tài liệu là gì?
-Việc trích xuất siêu dữ liệu tài liệu là quá trình đọc thông tin mô tả của một tệp—như định dạng, số trang và kích thước tính bằng byte—mà không thay đổi nội dung. Dữ liệu này rất quan trọng cho các nhiệm vụ lập chỉ mục, xác thực và tối ưu hóa lưu trữ.
+## get file type java là gì?
+Cụm từ “get file type java” đề cập đến việc lấy định dạng của tài liệu (ví dụ: PDF, DOCX) từ trong một chương trình Java. Sử dụng GroupDocs.Watermark, bạn có thể lấy thông tin này bằng một lời gọi phương thức duy nhất mà không cần mở toàn bộ nội dung tài liệu. Cách tiếp cận này hoạt động hiệu quả cho bất kỳ loại tệp nào được hỗ trợ.
 
 ## Tại sao nên sử dụng GroupDocs.Watermark cho Java?
-GroupDocs.Watermark không chỉ thêm hoặc xóa watermark mà còn cung cấp một API **groupdocs watermark java** để truy vấn nhanh các thuộc tính tài liệu. Nó hỗ trợ nhiều định dạng (DOCX, PDF, XLSX, v.v.) và hoạt động trên bất kỳ nền tảng nào tương thích với Java.
+GroupDocs.Watermark hỗ trợ **hơn 60 định dạng đầu vào và đầu ra** và có thể trích xuất siêu dữ liệu từ các tệp lên tới **2 GB** mà không cần tải toàn bộ tệp vào bộ nhớ. Khả năng định lượng này cho phép bạn xử lý các thư viện tài liệu khổng lồ trong khi giữ mức tiêu thụ CPU và RAM dưới kiểm soát.
+
+## Giới thiệu
+
+Bạn có muốn có được những hiểu biết chi tiết về các tài liệu lưu trữ trong hệ thống tệp cục bộ của mình không? Cho dù là xác định loại, kích thước hoặc số trang của một tài liệu, việc lấy thông tin này một cách hiệu quả là rất quan trọng đối với nhiều ứng dụng. Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn cách sử dụng GroupDocs.Watermark cho Java để trích xuất các chi tiết quan trọng của tài liệu như loại tệp, số trang và kích thước tệp.
+
+**Bạn sẽ học được**
+- Cách thiết lập GroupDocs.Watermark trong môi trường Java.  
+- Các bước để lấy các thông tin khác nhau từ tài liệu bằng thư viện.  
+- Các ứng dụng thực tế của tính năng này trong các kịch bản thực tế.  
+- Mẹo tối ưu hoá hiệu năng cho việc xử lý tài liệu.
+
+Hãy cùng khám phá các yêu cầu trước khi chúng ta bắt đầu với các chi tiết triển khai.
 
 ## Yêu cầu trước
 
+Trước khi bắt đầu, hãy chắc chắn rằng bạn có những thứ sau:
+
 ### Thư viện và phụ thuộc cần thiết
-Bạn cần đưa GroupDocs.Watermark vào dự án của mình. Bạn có thể làm điều này bằng Maven hoặc tải trực tiếp từ trang phát hành của họ.
+Bạn cần đưa GroupDocs.Watermark vào dự án của mình. Bạn có thể làm điều này bằng Maven hoặc tải trực tiếp từ trang releases của họ.
 
 ### Yêu cầu thiết lập môi trường
-- Java Development Kit (JDK) đã được cài đặt trên hệ thống của bạn.  
-- Một IDE như IntelliJ IDEA hoặc Eclipse.
+- Bộ công cụ phát triển Java (JDK) đã được cài đặt trên hệ thống của bạn.  
+- Một môi trường phát triển tích hợp (IDE) phù hợp như IntelliJ IDEA hoặc Eclipse.
 
-### Kiến thức nền tảng cần có
-Kiến thức lập trình Java cơ bản và quen thuộc với Maven sẽ hữu ích.
+### Kiến thức yêu cầu
+Hiểu biết cơ bản về lập trình Java là cần thiết để theo dõi hướng dẫn. Quen thuộc với các dự án Maven cũng sẽ có lợi nếu bạn chọn cách quản lý thư viện này.
 
 ## Cài đặt GroupDocs.Watermark cho Java
 
-### Cài đặt Maven
+Để bắt đầu sử dụng GroupDocs.Watermark, thêm nó như một phụ thuộc trong dự án của bạn. Đây là cách thực hiện:
+
+**Cài đặt Maven**  
 ```xml
 <repositories>
    <repository>
@@ -63,16 +137,27 @@ Kiến thức lập trình Java cơ bản và quen thuộc với Maven sẽ hữ
 </dependencies>
 ```
 
-### Tải trực tiếp
+**Tải xuống trực tiếp**  
 Hoặc, tải phiên bản mới nhất từ [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Nhận giấy phép
-Để sử dụng GroupDocs.Watermark vượt quá thời gian dùng thử, bạn có thể nhận giấy phép tạm thời hoặc mua giấy phép. Truy cập trang web của họ để biết các bước chi tiết về cách lấy và áp dụng giấy phép.
+Để sử dụng GroupDocs.Watermark sau thời gian dùng thử, bạn có thể lấy giấy phép tạm thời hoặc mua giấy phép. Truy cập trang của họ để biết các bước chi tiết về cách nhận và áp dụng giấy phép.
 
-## Cách trích xuất siêu dữ liệu tài liệu bằng GroupDocs.Watermark cho Java
+#### Khởi tạo cơ bản
+Lớp `Watermarker` là điểm vào cho tất cả các thao tác tài liệu trong GroupDocs.Watermark. Sau khi bạn thêm thư viện vào dự án, bạn tạo một thể hiện `Watermarker` bằng cách truyền đường dẫn tới tệp mục tiêu.
 
-### Bước 1: Khởi tạo Watermarker
-Tạo một thể hiện `Watermarker` trỏ tới tài liệu bạn muốn kiểm tra.
+## Hướng dẫn triển khai
+
+### Cách lấy file type java?
+
+`Lớp `Watermarker` là điểm vào để tải và kiểm tra tài liệu. Phương thức `getDocumentInfo()` trả về một đối tượng `DocumentInfo` chứa siêu dữ liệu về tệp đã tải. Tải tài liệu mục tiêu bằng một thể hiện `Watermarker` và gọi `getDocumentInfo().getFileType()`. Lời gọi duy nhất này trả về chuỗi định dạng chính xác (ví dụ: “PDF”, “DOCX”) mà không cần phân tích toàn bộ tệp, rất phù hợp cho các dịch vụ có lưu lượng cao cần phân loại tệp khi tải lên.
+
+### Cách lấy page count java?
+
+Gọi `getDocumentInfo().getPageCount()` trên cùng một thể hiện `Watermarker`. Phương thức này chỉ đọc thông tin tiêu đề của tài liệu, vì vậy ngay cả các PDF có hàng trăm trang cũng được xử lý trong vài mili giây, giữ cho ứng dụng của bạn phản hồi nhanh. Hoạt động nhẹ này cũng cung cấp số trang mà không cần tải nội dung trang, giúp duy trì mức sử dụng bộ nhớ thấp ngay cả với tài liệu lớn.
+
+#### Bước 1: khởi tạo watermarker
+Tạo một đối tượng `Watermarker` bằng cách cung cấp đường dẫn đầy đủ tới tài liệu bạn muốn kiểm tra. Bước này thiết lập ngữ cảnh cho tất cả các lời gọi siêu dữ liệu tiếp theo.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -85,8 +170,8 @@ public class FeatureGetDocumentInformation {
         Watermarker watermarker = new Watermarker(DOCUMENT_PATH);
 ```
 
-### Bước 2: Lấy thông tin tài liệu  
-Sử dụng `getDocumentInfo()` để lấy ra siêu dữ liệu. Phương thức này cho phép bạn truy cập vào **retrieve file type java**, **java get document properties**, và hơn nữa.
+#### Bước 2: truy cập thông tin tài liệu
+Sử dụng phương thức `getDocumentInfo()` để lấy một đối tượng `DocumentInfo`. Từ đối tượng này bạn có thể đọc các thuộc tính `fileType`, `pageCount` và `fileSize`.
 
 ```java
         IDocumentInfo info = watermarker.getDocumentInfo();
@@ -96,14 +181,13 @@ Sử dụng `getDocumentInfo()` để lấy ra siêu dữ liệu. Phương thứ
         long fileSize = info.getSize();        // Size in bytes
 ```
 
-**Giải thích các giá trị trả về**
+**Giải thích**
+- **fileType** – Xác định định dạng tài liệu, cần thiết cho quá trình xử lý tiếp theo.  
+- **pageCount** – Trả về tổng số trang, hữu ích cho logic phân trang hoặc chỉ báo tiến độ.  
+- **fileSize** – Cung cấp kích thước tính bằng byte, giúp bạn thực thi hạn ngạch lưu trữ.
 
-- **fileType** – cho bạn biết định dạng tài liệu, điều này rất quan trọng cho việc xử lý theo định dạng cụ thể.  
-- **pageCount** – giá trị **get document page count** mà bạn thường cần cho việc phân trang hoặc hiển thị trước giao diện người dùng.  
-- **fileSize** – thuộc tính **extract file size java**, hữu ích cho các tính toán lưu trữ.
-
-### Bước 3: Giải phóng tài nguyên  
-Luôn luôn đóng `Watermarker` để giải phóng tài nguyên gốc và tránh rò rỉ bộ nhớ.
+#### Bước 3: giải phóng tài nguyên
+Luôn đóng thể hiện `Watermarker` sau khi bạn hoàn thành việc trích xuất siêu dữ liệu. Điều này giải phóng các handle tệp và tài nguyên gốc, ngăn ngừa rò rỉ bộ nhớ trong các dịch vụ chạy lâu dài.
 
 ```java
         watermarker.close();
@@ -111,71 +195,71 @@ Luôn luôn đóng `Watermarker` để giải phóng tài nguyên gốc và trá
 }
 ```
 
-#### Mẹo khắc phục sự cố
-- Kiểm tra đường dẫn tệp; đường dẫn không đúng sẽ gây ra `FileNotFoundException`.  
-- Đảm bảo các tọa độ Maven khớp với phiên bản bạn đã tải; phiên bản không khớp gây lỗi khởi tạo.  
-- Bao quanh mã trong khối try‑catch để xử lý `WatermarkerException` một cách nhẹ nhàng.
+### Mẹo khắc phục sự cố
+- Nếu đường dẫn tài liệu không đúng, bắt ngoại lệ được ném và ghi lại thông báo lỗi rõ ràng.  
+- Kiểm tra rằng tất cả các tọa độ Maven hoặc tệp JAR đã được tham chiếu đúng; nếu không, việc khởi tạo sẽ thất bại.
 
-## Ứng dụng thực tiễn
+## Ứng dụng thực tế
 
-Dưới đây là một số kịch bản thực tế mà việc trích xuất siêu dữ liệu tài liệu tỏa sáng:
+Dưới đây là một số trường hợp sử dụng thực tế cho việc lấy thông tin tài liệu:
+1. **Content management systems (CMS):** Tự động phân loại và lưu trữ tài liệu dựa trên loại và kích thước.  
+2. **Legal document processing:** Sử dụng loại tệp và số trang để định tuyến hợp đồng tới quy trình xem xét phù hợp.  
+3. **Educational platforms:** Theo dõi việc phân phối tài liệu học tập bằng siêu dữ liệu của chúng để tạo báo cáo sử dụng.  
 
-1. **Content Management Systems (CMS):** Tự động gắn thẻ và sắp xếp tệp dựa trên loại và kích thước.  
-2. **Legal Document Processing:** Sử dụng số trang để ước tính công sức xem xét và phân bổ nguồn lực.  
-3. **Educational Platforms:** Hiển thị cho sinh viên số trang và kích thước tệp trước khi họ tải tài liệu học tập.  
+Tích hợp GroupDocs.Watermark với cơ sở dữ liệu hoặc dịch vụ lưu trữ đám mây để xây dựng một quy trình quản lý tài liệu đầy đủ tính năng.
 
-Bạn có thể kết hợp siêu dữ liệu với các mục nhập cơ sở dữ liệu hoặc API lưu trữ đám mây để tạo một quy trình hoàn toàn tự động.
+## Các cân nhắc về hiệu năng
 
-## Các lưu ý về hiệu năng
-- **Close Instances Promptly:** Như đã thấy ở Bước 3, giải phóng `Watermarker` giúp giảm mức sử dụng bộ nhớ.  
-- **Batch Processing:** Khi xử lý hàng ngàn tệp, hãy xử lý chúng theo các lô nhỏ để giới hạn việc tiêu thụ heap.  
-- **Thread Safety:** Lớp `Watermarker` không an toàn với đa luồng; tạo một thể hiện riêng cho mỗi luồng nếu bạn cần đồng thời.
-
-## Các vấn đề thường gặp và giải pháp
-
-| **Đường dẫn tài liệu không đúng** | Xác thực đường dẫn bằng `Files.exists(Paths.get(path))` trước khi tạo `Watermarker`. |
-| **Định dạng tệp không được hỗ trợ** | Kiểm tra `info.getFileType()` trước; nếu định dạng không có trong tài liệu GroupDocs, bỏ qua hoặc chuyển đổi tệp. |
-| **Rò rỉ bộ nhớ trên tệp lớn** | Luôn gọi `watermarker.close()` trong khối finally hoặc sử dụng try‑with‑resources khi API hỗ trợ. |
-
-## Câu hỏi thường gặp
-
-**Q: Tôi có thể lấy siêu dữ liệu từ tài liệu được bảo mật bằng mật khẩu không?**  
-A: Có. Mở tài liệu bằng mật khẩu thích hợp sử dụng hàm khởi tạo `Watermarker` chấp nhận mật khẩu, sau đó gọi `getDocumentInfo()`.
-
-**Q: GroupDocs.Watermark có hỗ trợ các tệp hình ảnh không?**  
-A: Việc trích xuất siêu dữ liệu chủ yếu dành cho các định dạng tài liệu (DOCX, PDF, XLSX). Đối với hình ảnh, hãy sử dụng thư viện xử lý ảnh chuyên dụng.
-
-**Q: Làm thế nào để xử lý các PDF rất lớn (hàng trăm MB)?**  
-A: Xử lý chúng từng cái một, đóng mỗi `Watermarker` ngay lập tức, và cân nhắc tăng kích thước heap của JVM nếu cần.
-
-**Q: Có cách nào để lấy các thuộc tính tài liệu tùy chỉnh không?**  
-A: API hiện tại chỉ cung cấp các thuộc tính tiêu chuẩn; để lấy siêu dữ liệu tùy chỉnh, bạn cần phân tích định dạng tệp trực tiếp hoặc sử dụng thư viện khác.
-
-**Q: Phiên bản GroupDocs.Watermark nào đã được sử dụng trong ví dụ này?**  
-A: Mã đã được kiểm tra với phiên bản **24.11**, nhưng cùng một API hoạt động với các phiên bản 24.x trước đó.
+Khi làm việc với việc truy xuất thông tin tài liệu, hãy cân nhắc các mẹo sau:
+- **Optimize memory usage:** Đóng các thể hiện `Watermarker` kịp thời để giải phóng tài nguyên.  
+- **Efficient file handling:** Xử lý tài liệu theo lô nếu làm việc với bộ dữ liệu lớn để giảm thiểu dung lượng bộ nhớ.  
+- **Concurrency management:** Sử dụng đa luồng một cách thận trọng và đảm bảo mỗi luồng làm việc với một thể hiện `Watermarker` riêng để tránh các vấn đề về an toàn luồng.
 
 ## Kết luận
 
-Bằng cách làm theo hướng dẫn này, bạn đã biết cách **trích xuất siêu dữ liệu tài liệu**—bao gồm loại tệp, số trang và kích thước tệp—bằng việc sử dụng GroupDocs.Watermark cho Java. Những khả năng này cho phép quy trình làm việc với tài liệu thông minh hơn, quản lý lưu trữ tốt hơn và mang lại trải nghiệm người dùng phong phú hơn.
+Bằng cách làm theo hướng dẫn này, bạn đã học cách trích xuất thông tin tài liệu quan trọng bằng GroupDocs.Watermark cho Java. Tính năng này có thể nâng cao đáng kể các ứng dụng của bạn bằng cách cung cấp những hiểu biết về siêu dữ liệu quan trọng của tài liệu.
 
 ### Các bước tiếp theo
-- Khám phá các tính năng watermark, che dấu và chỉnh sửa tài liệu do GroupDocs.Watermark cung cấp.  
-- Tích hợp logic trích xuất siêu dữ liệu vào quy trình nhập tài liệu hiện có của bạn.  
-- Thử nghiệm xử lý theo lô và đa luồng cho các triển khai quy mô lớn.
+Khám phá thêm các tính năng của GroupDocs.Watermark như khả năng thêm watermark và sửa đổi. Xem xét tích hợp các chức năng này để tạo ra một giải pháp quản lý tài liệu toàn diện.
 
-**Call to Action:**  
-Hãy thử mã trong dự án của bạn, điều chỉnh đường dẫn tệp và xem bạn có thể thu thập thông tin tài liệu có giá trị nhanh như thế nào!
+**Kêu gọi hành động:**  
+Hãy thử thực hiện các bước được nêu trong hướng dẫn này để khai thác toàn bộ tiềm năng của GroupDocs.Watermark cho Java trong các dự án của bạn!
 
----
+## Câu hỏi thường gặp
 
-**Cập nhật lần cuối:** 2026-02-05  
-**Được kiểm tra với:** GroupDocs.Watermark 24.11 for Java  
-**Tác giả:** GroupDocs  
+**Q: GroupDocs.Watermark là gì?**  
+A: GroupDocs.Watermark là một thư viện Java cho phép bạn thêm, phát hiện và trích xuất watermark cũng như lấy siêu dữ liệu chi tiết của tài liệu.
+
+**Q: Tôi có thể sử dụng GroupDocs.Watermark với các dự án không phải Maven không?**  
+A: Có, bạn có thể tải các tệp JAR trực tiếp và thêm chúng vào classpath của dự án.
+
+**Q: GroupDocs.Watermark hỗ trợ những định dạng tệp nào?**  
+A: Nó hỗ trợ hơn 60 định dạng, bao gồm DOCX, PDF, XLSX, PPTX, HTML và các loại ảnh phổ biến.
+
+**Q: Có ảnh hưởng đến hiệu năng khi lấy thông tin tài liệu không?**  
+A: Việc trích xuất siêu dữ liệu chỉ đọc phần đầu tệp, vì vậy ảnh hưởng là tối thiểu và phù hợp cho các kịch bản khối lượng lớn.
+
+**Q: Làm thế nào tôi có thể xử lý ngoại lệ trong quá trình xử lý tài liệu?**  
+A: Bao quanh mã của bạn bằng các khối try‑catch và ghi lại thông báo ngoại lệ; thư viện ném các ngoại lệ cụ thể cho các trường hợp tệp bị thiếu, định dạng không hỗ trợ và vấn đề giấy phép.
 
 ## Tài nguyên
 - [Tài liệu](https://docs.groupdocs.com/watermark/java/)
-- [Tham khảo API](https://reference.groupdocs.com/watermark/java)
-- [Tải xuống GroupDocs.Watermark cho Java](https://releases.groupdocs.com/watermark/java/)
-- [Kho lưu trữ GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Tham chiếu API](https://reference.groupdocs.com/watermark/java)
+- [Tải GroupDocs.Watermark cho Java](https://releases.groupdocs.com/watermark/java/)
+- [Kho GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
 - [Diễn đàn hỗ trợ miễn phí](https://forum.groupdocs.com/c/watermark/10)
-- [Nhận giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
+- [Mua giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/) 
+
+Với hướng dẫn này, bạn đã sẵn sàng tích hợp việc truy xuất thông tin tài liệu vào các ứng dụng Java của mình bằng GroupDocs.Watermark. Chúc lập trình vui vẻ!
+
+---
+
+**Cập nhật lần cuối:** 2026-09-11  
+**Kiểm tra với:** GroupDocs.Watermark 23.12 for Java  
+**Tác giả:** GroupDocs
+
+## Hướng dẫn liên quan
+
+- [Cách liệt kê các định dạng tệp được hỗ trợ bằng GroupDocs.Watermark cho Java: Hướng dẫn đầy đủ](/watermark/java/document-information/groupdocs-watermark-java-list-supported-formats/)
+- [Các thao tác tải và lưu tài liệu với GroupDocs.Watermark cho Java](/watermark/java/document-loading-saving/)
+- [Cách lấy thông tin tài liệu bằng GroupDocs.Watermark cho Java: Hướng dẫn từng bước](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)

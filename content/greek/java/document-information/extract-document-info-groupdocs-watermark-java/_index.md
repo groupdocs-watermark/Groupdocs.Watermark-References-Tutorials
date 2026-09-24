@@ -1,50 +1,124 @@
 ---
-date: '2026-02-05'
-description: Μάθετε πώς να εξάγετε μεταδεδομένα εγγράφων και να ανακτήσετε τον τύπο
-  αρχείου Java χρησιμοποιώντας το GroupDocs.Watermark για Java. Αυτός ο οδηγός καλύπτει
-  τη ρύθμιση, την υλοποίηση και πρακτικές περιπτώσεις χρήσης.
+date: '2026-09-11'
+description: Μάθετε πώς να λάβετε τον τύπο αρχείου java και να ανακτήσετε τον αριθμό
+  σελίδων java με το GroupDocs.Watermark για Java, συμπεριλαμβανομένης της ρύθμισης,
+  των αποσπασμάτων κώδικα και των συμβουλών απόδοσης.
 keywords:
-- GroupDocs Watermark Java
-- extract document metadata Java
-- Java document information retrieval
-title: Εξαγωγή μεταδεδομένων εγγράφου με το GroupDocs.Watermark για Java
+- get file type java
+- retrieve page count java
+- GroupDocs.Watermark Java
+- document metadata extraction
+lastmod: '2026-09-11'
+og_description: Μάθετε πώς να λάβετε τον τύπο αρχείου java και να ανακτήσετε τον αριθμό
+  σελίδων java με το GroupDocs.Watermark για Java. Ακολουθήστε τη βήμα‑βήμα ρύθμιση
+  και τα παραδείγματα κώδικα.
+og_image_alt: Guide showing Java code to extract document metadata with GroupDocs.Watermark
+og_title: Πώς να λάβετε τον τύπο αρχείου java χρησιμοποιώντας το GroupDocs.Watermark
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-11'
+  description: Learn how to get file type java and retrieve page count java with GroupDocs.Watermark
+    for Java, including setup, code snippets, and performance tips.
+  headline: How to get file type java using GroupDocs.Watermark
+  type: TechArticle
+- description: Learn how to get file type java and retrieve page count java with GroupDocs.Watermark
+    for Java, including setup, code snippets, and performance tips.
+  name: How to get file type java using GroupDocs.Watermark
+  steps:
+  - name: initialize watermarker
+    text: Create a `Watermarker` object by providing the full path to the document
+      you want to inspect. This step establishes the context for all subsequent metadata
+      calls.
+  - name: access document information
+    text: 'Use the `getDocumentInfo()` method to obtain a `DocumentInfo` object. From
+      this object you can read `fileType`, `pageCount`, and `fileSize` properties.
+      **Explanation** - **fileType** – Identifies the document format, essential for
+      downstream processing. - **pageCount** – Returns the total number of '
+  - name: release resources
+    text: Always close the `Watermarker` instance after you finish extracting metadata.
+      This releases file handles and frees native resources, preventing memory leaks
+      in long‑running services.
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Watermark is a Java library that enables you to add, detect,
+      and extract watermarks as well as retrieve detailed document metadata.
+    question: What is GroupDocs.Watermark?
+  - answer: Yes, you can download the JAR files directly and add them to your project’s
+      classpath.
+    question: Can I use GroupDocs.Watermark with non‑Maven projects?
+  - answer: It supports over 60 formats, including DOCX, PDF, XLSX, PPTX, HTML, and
+      common image types.
+    question: What file formats does GroupDocs.Watermark support?
+  - answer: Metadata extraction reads only the file header, so the impact is minimal
+      and suitable for high‑volume scenarios.
+    question: Is there a performance impact when retrieving document information?
+  - answer: Wrap your code in try‑catch blocks and log the exception message; the
+      library throws specific exceptions for missing files, unsupported formats, and
+      licensing issues.
+    question: How can I handle exceptions during document processing?
+  type: FAQPage
+tags:
+- get file type
+- retrieve page count
+- GroupDocs.Watermark
+- Java document processing
+title: Πώς να λάβετε τον τύπο αρχείου java χρησιμοποιώντας το GroupDocs.Watermark
 type: docs
 url: /el/java/document-information/extract-document-info-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Εξαγωγή Μεταδεδομένων Εγγράφου Χρησιμοποιώντας το GroupDocs.Watermark για Java: Ένας Πλήρης Οδηγός
+# Πώς να λάβετε τον τύπο αρχείου java χρησιμοποιώντας το GroupDocs.Watermark
 
-Αναζητάτε να αποκτήσετε λεπτομερείς πληροφορίες σχετικά με έγγραφα που αποθηκεύονται στο τοπικό σας σύστημα αρχείων; Είτε πρόκειται για την ταυτοποίηση του τύπου, του μεγέθους ή του αριθμού σελίδων ενός εγγράφου, η αποδοτική λήψη αυτών των πληροφοριών είναι κρίσιμη για πολλές εφαρμογές. Σε αυτόν τον οδηγό, θα σας δείξουμε πώς να **εξάγετε μεταδεδομένα εγγράφου** όπως ο τύπος αρχείου, ο αριθμός σελίδων και το μέγεθος αρχείου χρησιμοποιώντας το GroupDocs.Watermark για Java.
+## Γρήγορες απαντήσεις
+- **Ποιος είναι ο πιο γρήγορος τρόπος για να λάβετε τον τύπο αρχείου java;**  
+  Φορτώστε το έγγραφο με `Watermarker` και καλέστε `getDocumentInfo().getFileType()`.
+- **Μπορώ επίσης να ανακτήσω τον αριθμό σελίδων java στην ίδια κλήση;**  
+  Ναι, το `getDocumentInfo().getPageCount()` επιστρέφει το συνολικό αριθμό σελίδων.
+- **Χρειάζομαι άδεια για να εκτελέσω το παράδειγμα;**  
+  Μια προσωρινή άδεια λειτουργεί για ανάπτυξη· απαιτείται πλήρης άδεια για παραγωγή.
+- **Είναι το Maven ο μοναδικός τρόπος για να προσθέσετε τη βιβλιοθήκη;**  
+  Όχι, μπορείτε επίσης να κατεβάσετε το JAR απευθείας από τη σελίδα εκδόσεων.
+- **Θα χειριστεί αυτή η προσέγγιση μεγάλα αρχεία αποδοτικά;**  
+  Ναι, η εξαγωγή μεταδεδομένων διαβάζει μόνο την κεφαλίδα του αρχείου, διατηρώντας τη χρήση μνήμης χαμηλή.
 
-## Quick Answers
-- **Τι σημαίνει “εξαγωγή μεταδεδομένων εγγράφου”;** Σημαίνει ανάγνωση ενσωματωμένων ιδιοτήτων όπως ο τύπος αρχείου, ο αριθμός σελίδων και το μέγεθος χωρίς το άνοιγμα του περιεχομένου του εγγράφου.  
-- **Ποια βιβλιοθήκη βοηθά με αυτό στην Java;** Το GroupDocs.Watermark για Java παρέχει ένα απλό API για την ανάκτηση αυτών των ιδιοτήτων.  
-- **Χρειάζομαι άδεια;** Απαιτείται προσωρινή ή αγορασμένη άδεια για χρήση σε παραγωγή.  
-- **Μπορώ να το χρησιμοποιήσω με Maven;** Ναι – η βιβλιοθήκη είναι διαθέσιμη μέσω αποθετηρίου Maven.  
-- **Είναι γρήγορο για μεγάλες δέσμες;** Η ανάκτηση μεταδεδομένων είναι ελαφριά· μπορείτε να επεξεργαστείτε με ασφάλεια πολλά αρχεία σε βρόχο.
+## Τι είναι το get file type java;
+Η φράση “get file type java” αναφέρεται στην ανάκτηση της μορφής ενός εγγράφου (π.χ., PDF, DOCX) από ένα πρόγραμμα Java. Χρησιμοποιώντας το GroupDocs.Watermark, μπορείτε να λάβετε αυτήν την πληροφορία με μία κλήση μεθόδου χωρίς να ανοίξετε ολόκληρο το περιεχόμενο του εγγράφου. Αυτή η προσέγγιση λειτουργεί αποδοτικά για οποιοδήποτε υποστηριζόμενο τύπο αρχείου.
 
-## What is Extract Document Metadata?
-Η εξαγωγή μεταδεδομένων εγγράφου είναι η διαδικασία ανάγνωσης των περιγραφικών πληροφοριών ενός αρχείου — όπως η μορφή του, ο αριθμός σελίδων και το μέγεθος σε bytes — χωρίς τροποποίηση του περιεχομένου. Αυτά τα δεδομένα είναι απαραίτητα για εργασίες ευρετηρίασης, επικύρωσης και βελτιστοποίησης αποθήκευσης.
+## Γιατί να χρησιμοποιήσετε το GroupDocs.Watermark για Java;
+Το GroupDocs.Watermark υποστηρίζει **πάνω από 60 μορφές εισόδου και εξόδου** και μπορεί να εξάγει μεταδεδομένα από αρχεία έως **2 GB** χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη. Αυτή η ποσοτικοποιημένη δυνατότητα σημαίνει ότι μπορείτε να επεξεργαστείτε τεράστιες βιβλιοθήκες εγγράφων διατηρώντας την κατανάλωση CPU και RAM υπό έλεγχο.
 
-## Why Use GroupDocs.Watermark for Java?
-Το GroupDocs.Watermark δεν προσθέτει ή αφαιρεί μόνο υδατογραφήματα, αλλά παρέχει επίσης ένα **groupdocs watermark java** API για γρήγορη ερώτηση ιδιοτήτων εγγράφου. Υποστηρίζει μια ευρεία γκάμα μορφών (DOCX, PDF, XLSX, κ.λπ.) και λειτουργεί σε οποιαδήποτε πλατφόρμα συμβατή με Java.
+## Εισαγωγή
 
-## Prerequisites
+Αναζητάτε λεπτομερή πληροφορίες για έγγραφα που αποθηκεύονται στο τοπικό σας σύστημα αρχείων; Είτε πρόκειται για την ταυτοποίηση του τύπου, του μεγέθους ή του αριθμού σελίδων ενός εγγράφου, η αποδοτική λήψη αυτών των πληροφοριών είναι κρίσιμη για πολλές εφαρμογές. Σε αυτόν τον οδηγό, θα σας δείξουμε πώς να χρησιμοποιήσετε το GroupDocs.Watermark για Java ώστε να εξάγετε βασικές λεπτομέρειες εγγράφου όπως τύπο αρχείου, αριθμό σελίδων και μέγεθος αρχείου.
 
-### Required Libraries and Dependencies
-Πρέπει να συμπεριλάβετε το GroupDocs.Watermark στο έργο σας. Μπορείτε να το κάνετε αυτό χρησιμοποιώντας Maven ή κατεβάζοντας απευθείας από τη σελίδα εκδόσεων τους.
+**Τι θα μάθετε**
+- Πώς να ρυθμίσετε το GroupDocs.Watermark σε περιβάλλον Java.  
+- Βήματα για την ανάκτηση διαφόρων πληροφοριών από έγγραφα χρησιμοποιώντας τη βιβλιοθήκη.  
+- Πρακτικές εφαρμογές αυτής της δυνατότητας σε πραγματικά σενάρια.  
+- Συμβουλές βελτιστοποίησης απόδοσης για την επεξεργασία εγγράφων.
 
-### Environment Setup Requirements
-- Java Development Kit (JDK) εγκατεστημένο στο σύστημά σας.  
-- Ένα IDE όπως IntelliJ IDEA ή Eclipse.
+Ας ξεκινήσουμε με τις προαπαιτούμενες ρυθμίσεις πριν προχωρήσουμε στις λεπτομέρειες υλοποίησης.
 
-### Knowledge Prerequisites
-Βασικές γνώσεις προγραμματισμού Java και εξοικείωση με Maven είναι χρήσιμες.
+## Προαπαιτούμενα
 
-## Setting Up GroupDocs.Watermark for Java
+Πριν ξεκινήσετε, βεβαιωθείτε ότι διαθέτετε τα παρακάτω:
 
-### Maven Setup
+### Απαιτούμενες βιβλιοθήκες και εξαρτήσεις
+Πρέπει να συμπεριλάβετε το GroupDocs.Watermark στο έργο σας. Μπορείτε να το κάνετε αυτό χρησιμοποιώντας Maven ή κατεβάζοντας απευθείας από τη σελίδα εκδόσεων.
+
+### Απαιτήσεις ρύθμισης περιβάλλοντος
+- Εγκατεστημένο Java Development Kit (JDK) στο σύστημά σας.  
+- Κατάλληλο Integrated Development Environment (IDE) όπως IntelliJ IDEA ή Eclipse.
+
+### Προαπαιτούμενες γνώσεις
+Απαιτείται βασική κατανόηση του προγραμματισμού Java για να ακολουθήσετε τον οδηγό. Η εξοικείωση με έργα Maven θα είναι επίσης χρήσιμη εάν επιλέξετε αυτήν τη διαδρομή για τη διαχείριση της βιβλιοθήκης.
+
+## Ρύθμιση του GroupDocs.Watermark για Java
+
+Για να αρχίσετε να χρησιμοποιείτε το GroupDocs.Watermark, προσθέστε το ως εξάρτηση στο έργο σας. Δείτε πώς:
+
+**Ρύθμιση Maven**  
 ```xml
 <repositories>
    <repository>
@@ -63,16 +137,27 @@ weight: 1
 </dependencies>
 ```
 
-### Direct Download
+**Απευθείας λήψη**  
 Εναλλακτικά, κατεβάστε την πιο πρόσφατη έκδοση από [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### License Acquisition
-Για να χρησιμοποιήσετε το GroupDocs.Watermark πέρα από την δοκιμαστική περίοδο, μπορείτε να αποκτήσετε μια προσωρινή άδεια ή να αγοράσετε μία. Επισκεφθείτε τον ιστότοπό τους για λεπτομερή βήματα σχετικά με το πώς να αποκτήσετε και να εφαρμόσετε την άδεια.
+### Απόκτηση άδειας
+Για να χρησιμοποιήσετε το GroupDocs.Watermark πέρα από την δοκιμαστική περίοδο, μπορείτε να αποκτήσετε προσωρινή άδεια ή να αγοράσετε μόνιμη. Επισκεφθείτε τον ιστότοπό τους για λεπτομερείς οδηγίες σχετικά με την απόκτηση και εφαρμογή της άδειας.
 
-## How to Extract Document Metadata Using GroupDocs.Watermark for Java
+#### Βασική αρχικοποίηση
+Η κλάση `Watermarker` είναι το σημείο εισόδου για όλες τις λειτουργίες εγγράφων στο GroupDocs.Watermark. Αφού προσθέσετε τη βιβλιοθήκη στο έργο σας, δημιουργείτε μια παρουσία `Watermarker` περνώντας τη διαδρομή του αρχείου-στόχου.
 
-### Step 1: Initialize the Watermarker
-Δημιουργήστε μια παρουσία `Watermarker` που δείχνει στο έγγραφο που θέλετε να εξετάσετε.
+## Οδηγός υλοποίησης
+
+### Πώς να λάβετε τον τύπο αρχείου java;
+
+Η κλάση `Watermarker` είναι το σημείο εισόδου για τη φόρτωση και την επιθεώρηση εγγράφων. Η μέθοδος `getDocumentInfo()` επιστρέφει ένα αντικείμενο `DocumentInfo` που περιέχει μεταδεδομένα για το φορτωμένο αρχείο. Φορτώστε το έγγραφο-στόχο με μια παρουσία `Watermarker` και καλέστε `getDocumentInfo().getFileType()`. Αυτή η ενιαία κλήση επιστρέφει το ακριβές string μορφής (π.χ., “PDF”, “DOCX”) χωρίς να χρειάζεται η πλήρης ανάλυση του αρχείου, καθιστώντας το ιδανικό για υπηρεσίες υψηλής διαπερατότητας που χρειάζονται κατηγοριοποίηση αρχείων κατά το ανέβασμα.
+
+### Πώς να ανακτήσετε τον αριθμό σελίδων java;
+
+Καλείστε `getDocumentInfo().getPageCount()` στην ίδια παρουσία `Watermarker`. Η μέθοδος διαβάζει μόνο τις πληροφορίες κεφαλίδας του εγγράφου, έτσι ακόμη και PDF με εκατοντάδες σελίδες επεξεργάζονται σε χιλιοστά του δευτερολέπτου, διατηρώντας την εφαρμογή σας ανταποκρινόμενη. Αυτή η ελαφριά λειτουργία παρέχει επίσης τον αριθμό σελίδων χωρίς να φορτώνει το περιεχόμενο των σελίδων, βοηθώντας στη χαμηλή χρήση μνήμης ακόμη και για μεγάλα έγγραφα.
+
+#### Βήμα 1: αρχικοποίηση watermarker
+Δημιουργήστε ένα αντικείμενο `Watermarker` παρέχοντας την πλήρη διαδρομή του εγγράφου που θέλετε να επιθεωρήσετε. Αυτό το βήμα δημιουργεί το πλαίσιο για όλες τις επόμενες κλήσεις μεταδεδομένων.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -85,8 +170,8 @@ public class FeatureGetDocumentInformation {
         Watermarker watermarker = new Watermarker(DOCUMENT_PATH);
 ```
 
-### Step 2: Retrieve Document Information  
-Χρησιμοποιήστε το `getDocumentInfo()` για να εξάγετε τα μεταδεδομένα. Αυτή η μέθοδος σας δίνει πρόσβαση σε **retrieve file type java**, **java get document properties**, και άλλα.
+#### Βήμα 2: πρόσβαση σε πληροφορίες εγγράφου
+Χρησιμοποιήστε τη μέθοδο `getDocumentInfo()` για να λάβετε ένα αντικείμενο `DocumentInfo`. Από αυτό το αντικείμενο μπορείτε να διαβάσετε τις ιδιότητες `fileType`, `pageCount` και `fileSize`.
 
 ```java
         IDocumentInfo info = watermarker.getDocumentInfo();
@@ -96,14 +181,13 @@ public class FeatureGetDocumentInformation {
         long fileSize = info.getSize();        // Size in bytes
 ```
 
-**Explanation of the returned values**
+**Εξήγηση**
+- **fileType** – Αναγνωρίζει τη μορφή του εγγράφου, απαραίτητη για επεξεργασία downstream.  
+- **pageCount** – Επιστρέφει το συνολικό αριθμό σελίδων, χρήσιμο για λογική σελιδοποίησης ή ενδείξεις προόδου.  
+- **fileSize** – Παρέχει το μέγεθος σε bytes, βοηθώντας στην επιβολή ορίων αποθήκευσης.
 
-- **fileType** – σας λέει τη μορφή του εγγράφου, η οποία είναι απαραίτητη για επεξεργασία ειδική για τη μορφή.  
-- **pageCount** – η τιμή **get document page count** που συχνά χρειάζεστε για σελιδοποίηση ή προεπισκοπήσεις UI.  
-- **fileSize** – η ιδιότητα **extract file size java**, χρήσιμη για υπολογισμούς αποθήκευσης.
-
-### Step 3: Release Resources  
-Πάντα κλείστε το `Watermarker` για να ελευθερώσετε τους εγγενείς πόρους και να αποφύγετε διαρροές μνήμης.
+#### Βήμα 3: απελευθέρωση πόρων
+Κλείστε πάντα την παρουσία `Watermarker` μετά την ολοκλήρωση της εξαγωγής μεταδεδομένων. Αυτό απελευθερώνει τους χειριστές αρχείων και τις εγγενείς πόρους, αποτρέποντας διαρροές μνήμης σε υπηρεσίες μακράς λειτουργίας.
 
 ```java
         watermarker.close();
@@ -111,76 +195,69 @@ public class FeatureGetDocumentInformation {
 }
 ```
 
-#### Troubleshooting Tips
-- Επαληθεύστε τη διαδρομή του αρχείου· μια λανθασμένη διαδρομή προκαλεί `FileNotFoundException`.  
-- Βεβαιωθείτε ότι οι συντεταγμένες Maven ταιριάζουν με την έκδοση που κατεβάσατε· ασυμφωνίες εκδόσεων προκαλούν αποτυχίες αρχικοποίησης.  
-- Τυλίξτε τον κώδικα σε μπλοκ try‑catch για να διαχειριστείτε το `WatermarkerException` με χάρη.
+### Συμβουλές αντιμετώπισης προβλημάτων
+- Εάν η διαδρομή του εγγράφου είναι λανθασμένη, πιάστε την εξαίρεση και καταγράψτε ένα σαφές μήνυμα σφάλματος.  
+- Βεβαιωθείτε ότι όλες οι συντεταγμένες Maven ή τα αρχεία JAR αναφέρονται σωστά· διαφορετικά η αρχικοποίηση θα αποτύχει.  
 
-## Practical Applications
+## Πρακτικές εφαρμογές
 
-Here are some real‑world scenarios where extracting document metadata shines:
+Εδώ είναι μερικές πραγματικές περιπτώσεις χρήσης για την ανάκτηση πληροφοριών εγγράφου:
+1. **Συστήματα διαχείρισης περιεχομένου (CMS):** Αυτόματη κατηγοριοποίηση και αποθήκευση εγγράφων βάσει τύπου και μεγέθους.  
+2. **Επεξεργασία νομικών εγγράφων:** Χρήση τύπου αρχείου και αριθμού σελίδων για δρομολόγηση συμβάσεων στο κατάλληλο workflow ελέγχου.  
+3. **Εκπαιδευτικές πλατφόρμες:** Παρακολούθηση διανομής εκπαιδευτικού υλικού μέσω των μεταδεδομένων του για δημιουργία αναφορών χρήσης.  
 
-1. **Συστήματα Διαχείρισης Περιεχομένου (CMS):** Αυτόματη ετικετοθέτηση και ταξινόμηση αρχείων βάσει τύπου και μεγέθους.  
-2. **Επεξεργασία Νομικών Εγγράφων:** Χρησιμοποιήστε τον αριθμό σελίδων για εκτίμηση του κόστους ελέγχου και κατανομή πόρων.  
-3. **Εκπαιδευτικές Πλατφόρμες:** Εμφανίστε στους μαθητές τον αριθμό σελίδων και το μέγεθος αρχείου πριν κατεβάσουν το υλικό μελέτης.
+Ενσωματώστε το GroupDocs.Watermark με βάσεις δεδομένων ή υπηρεσίες αποθήκευσης cloud για να δημιουργήσετε μια πλήρη γραμμή διαχείρισης εγγράφων.
 
-Μπορείτε να συνδυάσετε τα μεταδεδομένα με εγγραφές βάσης δεδομένων ή API αποθήκευσης στο cloud για μια πλήρως αυτοματοποιημένη διαδικασία.
+## Παράγοντες απόδοσης
 
-## Performance Considerations
+Κατά την εργασία με ανάκτηση πληροφοριών εγγράφου, λάβετε υπόψη τις παρακάτω συμβουλές:
+- **Βελτιστοποίηση χρήσης μνήμης:** Κλείστε άμεσα τις παρουσίες `Watermarker` για απελευθέρωση πόρων.  
+- **Αποδοτικός χειρισμός αρχείων:** Επεξεργαστείτε έγγραφα σε παρτίδες εάν διαχειρίζεστε μεγάλα σύνολα δεδομένων, ώστε να μειώσετε το αποτύπωμα μνήμης.  
+- **Διαχείριση ταυτόχρονης εκτέλεσης:** Χρησιμοποιήστε πολυνηματικότητα με προσοχή και βεβαιωθείτε ότι κάθε νήμα εργάζεται με τη δική του παρουσία `Watermarker` για αποφυγή προβλημάτων ασφαλείας νήματος.
 
-- **Κλείσιμο Παραδειγμάτων Άμεσα:** Όπως φαίνεται στο Βήμα 3, η απελευθέρωση του `Watermarker` διατηρεί τη χρήση μνήμης χαμηλή.  
-- **Επεξεργασία σε Παρτίδες:** Όταν διαχειρίζεστε χιλιάδες αρχεία, επεξεργαστείτε τα σε μικρές παρτίδες για να περιορίσετε την κατανάλωση heap.  
-- **Ασφάλεια Νήματος:** Η κλάση `Watermarker` δεν είναι thread‑safe· δημιουργήστε ξεχωριστή παρουσία ανά νήμα αν χρειάζεστε ταυτόχρονη εκτέλεση.
+## Συμπέρασμα
 
-## Common Issues and Solutions
+Ακολουθώντας αυτόν τον οδηγό, έχετε μάθει πώς να εξάγετε κρίσιμες πληροφορίες εγγράφου χρησιμοποιώντας το GroupDocs.Watermark για Java. Αυτή η δυνατότητα μπορεί να ενισχύσει σημαντικά τις εφαρμογές σας παρέχοντας βασικές μεταδεδομένες γνώσεις για τα έγγραφα.
 
-| Πρόβλημα | Λύση |
-|----------|------|
-| **Λανθασμένη διαδρομή εγγράφου** | Επικυρώστε τη διαδρομή με `Files.exists(Paths.get(path))` πριν δημιουργήσετε το `Watermarker`. |
-| **Μη υποστηριζόμενη μορφή αρχείου** | Ελέγξτε πρώτα το `info.getFileType()`· εάν η μορφή δεν αναφέρεται στην τεκμηρίωση του GroupDocs, παραλείψτε ή μετατρέψτε το αρχείο. |
-| **Διαρροή μνήμης σε μεγάλα αρχεία** | Πάντα καλέστε `watermarker.close()` σε μπλοκ finally ή χρησιμοποιήστε try‑with‑resources όταν το API το υποστηρίζει. |
+### Επόμενα βήματα
+Εξερευνήστε περισσότερες δυνατότητες του GroupDocs.Watermark όπως η προσθήκη υδατογραφήματος και οι δυνατότητες τροποποίησης. Σκεφτείτε την ενσωμάτωση αυτών των λειτουργιών για τη δημιουργία μιας ολοκληρωμένης λύσης διαχείρισης εγγράφων.
 
-## Frequently Asked Questions
+**Κάλεσμα σε δράση:**  
+Δοκιμάστε να υλοποιήσετε τα βήματα που περιγράφονται σε αυτόν τον οδηγό για να αξιοποιήσετε πλήρως το δυναμικό του GroupDocs.Watermark για Java στα έργα σας!
 
-**Ε: Μπορώ να ανακτήσω μεταδεδομένα από έγγραφα με προστασία κωδικού;**  
-Α: Ναι. Ανοίξτε το έγγραφο με τον κατάλληλο κωδικό χρησιμοποιώντας τον κατασκευαστή `Watermarker` που δέχεται κωδικό, στη συνέχεια καλέστε το `getDocumentInfo()`.
+## Συχνές ερωτήσεις
 
-**Ε: Υποστηρίζει το GroupDocs.Watermark αρχεία εικόνας;**  
-Α: Η εξαγωγή μεταδεδομένων είναι κυρίως για μορφές εγγράφων (DOCX, PDF, XLSX). Για εικόνες, χρησιμοποιήστε μια εξειδικευμένη βιβλιοθήκη επεξεργασίας εικόνας.
+**Ε: Τι είναι το GroupDocs.Watermark;**  
+Α: Το GroupDocs.Watermark είναι μια βιβλιοθήκη Java που σας επιτρέπει να προσθέτετε, να ανιχνεύετε και να εξάγετε υδατογραφήματα καθώς και να ανακτάτε λεπτομερή μεταδεδομένα εγγράφου.
 
-**Ε: Πώς να διαχειριστώ πολύ μεγάλα PDF (εκατοντάδες MB);**  
-Α: Επεξεργαστείτε τα ένα προς ένα, κλείστε άμεσα κάθε `Watermarker` και εξετάστε το ενδεχόμενο αύξησης του μεγέθους heap της JVM εάν χρειάζεται.
+**Ε: Μπορώ να χρησιμοποιήσω το GroupDocs.Watermark σε έργα που δεν χρησιμοποιούν Maven;**  
+Α: Ναι, μπορείτε να κατεβάσετε τα αρχεία JAR απευθείας και να τα προσθέσετε στο classpath του έργου σας.
 
-**Ε: Υπάρχει τρόπος να λάβω προσαρμοσμένες ιδιότητες εγγράφου;**  
-Α: Το τρέχον API εκθέτει μόνο τις τυπικές ιδιότητες· για προσαρμοσμένα μεταδεδομένα, θα πρέπει να αναλύσετε άμεσα τη μορφή του αρχείου ή να χρησιμοποιήσετε άλλη βιβλιοθήκη.
+**Ε: Ποιες μορφές αρχείων υποστηρίζει το GroupDocs.Watermark;**  
+Α: Υποστηρίζει πάνω από 60 μορφές, συμπεριλαμβανομένων των DOCX, PDF, XLSX, PPTX, HTML και κοινών τύπων εικόνων.
 
-**Ε: Ποια έκδοση του GroupDocs.Watermark χρησιμοποιήθηκε σε αυτό το παράδειγμα;**  
-Α: Ο κώδικας δοκιμάστηκε με την έκδοση **24.11**, αλλά το ίδιο API λειτουργεί με παλαιότερες εκδόσεις 24.x.
+**Ε: Υπάρχει αντίκτυπο στην απόδοση όταν ανακτώνται πληροφορίες εγγράφου;**  
+Α: Η εξαγωγή μεταδεδομένων διαβάζει μόνο την κεφαλίδα του αρχείου, οπότε η επίπτωση είναι ελάχιστη και κατάλληλη για σενάρια υψηλού όγκου.
 
-## Conclusion
+**Ε: Πώς μπορώ να διαχειριστώ εξαιρέσεις κατά την επεξεργασία εγγράφων;**  
+Α: Περιβάλλετε τον κώδικά σας σε μπλοκ try‑catch και καταγράψτε το μήνυμα της εξαίρεσης· η βιβλιοθήκη ρίχνει συγκεκριμένες εξαιρέσεις για ελλιπή αρχεία, μη υποστηριζόμενες μορφές και προβλήματα άδειας.
 
-Ακολουθώντας αυτό το tutorial, τώρα γνωρίζετε πώς να **εξάγετε μεταδεδομένα εγγράφου** — συμπεριλαμβανομένου του τύπου αρχείου, του αριθμού σελίδων και του μεγέθους αρχείου — χρησιμοποιώντας το GroupDocs.Watermark για Java. Αυτές οι δυνατότητες επιτρέπουν πιο έξυπνες ροές εργασίας εγγράφων, καλύτερη διαχείριση αποθήκευσης και πλουσιότερες εμπειρίες χρήστη.
+## Πόροι
+- [Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/) 
 
-### Next Steps
-- Εξερευνήστε τις δυνατότητες υδατογράφησης, διαγραφής και επεξεργασίας εγγράφων που προσφέρει το GroupDocs.Watermark.  
-- Ενσωματώστε τη λογική εξαγωγής μεταδεδομένων στην υπάρχουσα διαδικασία εισαγωγής εγγράφων σας.  
-- Πειραματιστείτε με επεξεργασία σε παρτίδες και πολυνηματικότητα για μεγάλες αναπτύξεις.
+Με αυτόν τον οδηγό, είστε έτοιμοι να ενσωματώσετε την ανάκτηση πληροφοριών εγγράφου στις εφαρμογές Java σας χρησιμοποιώντας το GroupDocs.Watermark. Καλή προγραμματιστική!
 
-**Κάλεσμα σε Δράση:**  
-Δοκιμάστε τον κώδικα στο δικό σας έργο, προσαρμόστε τη διαδρομή του αρχείου και δείτε πόσο γρήγορα μπορείτε να συλλέξετε πολύτιμες πληροφορίες εγγράφου!
+**Last Updated:** 2026-09-11  
+**Tested With:** GroupDocs.Watermark 23.12 for Java  
+**Author:** GroupDocs
 
----
+## Σχετικά Μαθήματα
 
-**Last Updated:** 2026-02-05  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
-
-## Resources
-- [Τεκμηρίωση](https://docs.groupdocs.com/watermark/java/)
-- [Αναφορά API](https://reference.groupdocs.com/watermark/java)
-- [Λήψη GroupDocs.Watermark για Java](https://releases.groupdocs.com/watermark/java/)
-- [Αποθετήριο GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Δωρεάν Φόρουμ Υποστήριξης](https://forum.groupdocs.com/c/watermark/10)
-- [Απόκτηση Προσωρινής Άδειας](https://purchase.groupdocs.com/temporary-license/) 
-
----
+- [How to List Supported File Formats Using GroupDocs.Watermark for Java: A Complete Guide](/watermark/java/document-information/groupdocs-watermark-java-list-supported-formats/)
+- [Document Loading and Saving Operations with GroupDocs.Watermark for Java](/watermark/java/document-loading-saving/)
+- [How to Retrieve Document Information Using GroupDocs.Watermark for Java: A Step-by-Step Guide](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)

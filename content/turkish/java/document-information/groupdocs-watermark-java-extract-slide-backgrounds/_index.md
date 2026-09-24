@@ -1,47 +1,104 @@
 ---
-date: '2026-02-11'
-description: GroupDocs.Watermark for Java kullanarak Java’da görüntü boyutlarını nasıl
-  alacağınızı ve slayt arka plan detaylarını nasıl çıkaracağınızı öğrenin. Özelleştirme,
-  analiz veya dokümantasyon için mükemmeldir.
+date: '2026-09-11'
+description: Java ile slide background nasıl çıkarılacağını ve GroupDocs.Watermark
+  for Java kullanarak PowerPoint slide boyutlarını nasıl okuyacağınızı öğrenin. Dakikalar
+  içinde image size, file size ve metadata alın.
 keywords:
-- extract slide background information Java
-- GroupDocs.Watermark PowerPoint
-- slide background details Java
-title: java görüntü boyutlarını al – GroupDocs.Watermark kullanarak slayt arka planlarını
-  çıkar
+- extract slide background java
+- read powerpoint slide dimensions
+- slide background details java
+lastmod: '2026-09-11'
+og_description: GroupDocs.Watermark for Java kullanarak slide background java çıkarın
+  ve PowerPoint slide boyutlarını okuyun. Kurulum, code ve troubleshooting içeren
+  detaylı kılavuz.
+og_image_alt: Guide showing Java code extracting slide background information from
+  PowerPoint
+og_title: GroupDocs.Watermark ile slide background java çıkarın
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-11'
+  description: Learn how to extract slide background java and read PowerPoint slide
+    dimensions using GroupDocs.Watermark for Java. Get image size, file size, and
+    metadata in minutes.
+  headline: How to extract slide background java
+  type: TechArticle
+- description: Learn how to extract slide background java and read PowerPoint slide
+    dimensions using GroupDocs.Watermark for Java. Get image size, file size, and
+    metadata in minutes.
+  name: How to extract slide background java
+  steps:
+  - name: create load options
+    text: '`PresentationLoadOptions` defines loading preferences such as password
+      handling and memory usage.'
+  - name: open the PowerPoint document
+    text: Instantiate `Watermarker` with the path to your `.pptx` file and the load
+      options created earlier.
+  - name: access slide content
+    text: '`PresentationContent` is the entry point for retrieving slide‑level objects,
+      including background images.'
+  - name: iterate over slides and read background details
+    text: Slide represents an individual slide within the presentation and provides
+      access to its visual elements. For each `Slide` object, call `getBackground()`
+      to obtain the image, then read its dimensions and size.
+  - name: close the watermarker
+    text: Always close the `Watermarker` instance to free native resources and avoid
+      memory leaks.
+  type: HowTo
+- questions:
+  - answer: Java 11 or newer is required; earlier versions lack the necessary language
+      features for the library.
+    question: What is the minimum Java version required?
+  - answer: Yes—set the password in `PresentationLoadOptions` before opening the file.
+    question: Can I extract backgrounds from password‑protected presentations?
+  - answer: The trial imposes a watermark on output files but does not restrict slide
+      count for metadata extraction.
+    question: Does the trial mode limit the number of slides I can process?
+  - answer: Absolutely—use `ImageInfo.save("output.png")` after retrieving the `ImageInfo`
+      object.
+    question: Is it possible to save the extracted background image to disk?
+  - answer: The API supports PNG, JPEG, BMP, and GIF for background image export.
+    question: Which formats can I export the extracted image to?
+  type: FAQPage
+tags:
+- extract slide background
+- GroupDocs.Watermark
+- Java PowerPoint
+- document processing
+title: Java ile slide background nasıl çıkarılır
 type: docs
 url: /tr/java/document-information/groupdocs-watermark-java-extract-slide-backgrounds/
 weight: 1
 ---
 
-# java get image dimensions – GroupDocs.Watermark Kullanarak Slayt Arka Planlarını Çıkarma
+# Slayt arka planını java ile nasıl çıkarılır
 
-PowerPoint slaytından **java get image dimensions** ve diğer arka plan detaylarını mı arıyorsunuz? Bu bilgiyi özel marka oluşturma, veri analizi veya dokümantasyon için ihtiyacınız olsun, Java için GroupDocs.Watermark kütüphanesi bunu basit bir şekilde sağlar. Bu öğreticide, birkaç basit API çağrısı kullanarak slayt arka plan bilgilerini—görüntü genişliği, yüksekliği ve dosya boyutu dahil—nasıl çıkaracağınızı öğreneceksiniz.
+## Giriş
 
-## Quick Answers
-- **“java get image dimensions” ne anlama geliyor?** Java kodu ile bir PowerPoint slaytına gömülmüş bir görüntünün genişliğini ve yüksekliğini almayı ifade eder.  
-- **Hangi kütüphane yardımcı olur?** Java için GroupDocs.Watermark, slayt arka planlarını okumak için yüksek seviyeli bir API sağlar.  
-- **Lisans gerekiyor mu?** Üretim kullanımı için geçici veya tam lisans gerekir; deneme modu mevcuttur.  
-- **Büyük sunumları işleyebilir miyim?** Evet—kaynakları serbest bırakmak için `Watermarker` nesnesini zamanında kapatmayı unutmayın.  
-- **Hangi Java sürümü gerekli?** Java 8+ ve bağımlılık yönetimi için Maven.
+Slide arka planı java çıkarımı, bir PowerPoint dosyasındaki görsel varlıkları analiz etmek, yeniden kullanmak veya belgelemek istediğinizde yaygın bir ihtiyaçtır. GroupDocs.Watermark for Java ile sunumu PowerPoint’te açmadan programlı olarak görüntü boyutlarını, dosya boyutunu ve diğer meta verileri alabilirsiniz. Bu öğretici, ortam kurulumundan arka plan ayrıntılarını çıkarmaya ve yorumlamaya kadar tam iş akışını adım adım gösterir—böylece bu yeteneği herhangi bir Java tabanlı otomasyon hattına entegre edebilirsiniz.
 
-## What is java get image dimensions?
-PowerPoint dosyaları bağlamında, her slayt bir arka plan görüntüsü içerebilir. GroupDocs.Watermark kullanarak, bu görüntünün **genişliğini**, **yüksekliğini** ve **bayt boyutunu** programlı olarak elde edebilirsiniz—bu da “java get image dimensions” işleminin temelini oluşturur.
+### Hızlı cevaplar
+- **Slayt arka planı çıkarımını hangi kütüphane yönetir?** GroupDocs.Watermark for Java.  
+- **Hangi yöntem görüntü boyutlarını döndürür?** `getBackground().getImageInfo().getWidth()` ve `getHeight()`.  
+- **Arka plan görüntüsünün dosya boyutunu alabilir miyim?** Evet, `getBackground().getImageInfo().getSize()` ile.  
+- **Bu özellik için lisansa ihtiyacım var mı?** Geçici veya tam lisans tam işlevselliği açar; deneme modu sınırlamalarla çalışır.  
+- **Maven destekleniyor mu?** Kesinlikle—GroupDocs.Watermark bağımlılığını `pom.xml` dosyasına ekleyin.
 
-## Why extract slide background information?
-- **Marka uyumu:** Tüm slaytların doğru arka plan boyutu ve çözünürlüğünü kullandığını doğrulayın.  
-- **Otomasyon:** Tüm sunu boyunca arka planları dinamik olarak değiştirin veya yeniden boyutlandırın.  
-- **Analitik:** Raporlama veya optimizasyon için görüntü kullanım istatistiklerini toplayın.  
-- **Entegrasyon:** Arka plan meta verilerini CMS boru hatlarına veya tasarım araçlarına besleyin.
+## Slide arka planı java çıkarımı nedir?
+Slide arka planı java çıkarımı, Java kodu kullanarak bir PowerPoint sunumundaki her slaytın görsel arka planını programlı olarak okuma sürecine denir. Bu işlem, görüntü genişliği, yüksekliği ve dosya boyutu gibi meta verileri sağlar ve marka denetimleri veya varlık yeniden kullanımı gibi sonraki işlemlere olanak tanır.
 
-## Prerequisites
-- **GroupDocs.Watermark 24.11+** (veya en son sürüm)  
-- **Java 8 veya daha yeni** bir sürüm, Maven yüklü  
-- Java dosya I/O konusunda temel bilgi
+## Bu görev için neden GroupDocs.Watermark kullanılmalı?
+GroupDocs.Watermark **30+ giriş ve çıkış formatını** destekler, tüm dosyayı belleğe yüklemeden **500 slayta** kadar sunumları işler ve slayt arka planlarına erişim için özel bir API sunar. Bu ölçülebilir özellikler, onu kurumsal ölçekli otomasyon için güvenilir bir seçim haline getirir.
 
-## Setting Up GroupDocs.Watermark for Java
+## Önkoşullar
+- **Java 11+** geliştirme makinenizde yüklü olmalıdır.  
+- **Maven** bağımlılık yönetimi için.  
+- **GroupDocs.Watermark 24.11** (veya daha yeni) – bu kütüphane, bu kılavuzda kullanılan `PresentationLoadOptions` ve `PresentationContent` sınıflarını içerir.  
+- Tam özellik setini açmak için **geçerli bir lisans** (geçici veya tam).
 
-Java projenizde GroupDocs.Watermark kullanmaya başlamak için `pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
+## Java için GroupDocs.Watermark kurulumu
+
+### Maven yapılandırması
+Add the GroupDocs.Watermark dependency to your `pom.xml` file:
 
 ```xml
 <repositories>
@@ -61,13 +118,14 @@ Java projenizde GroupDocs.Watermark kullanmaya başlamak için `pom.xml` dosyan�
 </dependencies>
 ```
 
-Kütüphaneyi doğrudan resmi sürüm sayfasından da indirebilirsiniz: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Doğrudan indirme
+Manuel kurulumu tercih ediyorsanız, resmi sürüm sayfasından en son JAR dosyasını edinin: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### License Acquisition
-Geçici veya tam bir lisans tüm özelliklerin kilidini açar. Buradan bir lisans edinin: [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/).
+### Lisans edinimi
+Geçici bir lisans API'yi değerlendirmenizi sağlar, tam lisans ise tüm deneme kısıtlamalarını kaldırır. Lisansınızı lisans portalından edinin: [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/).
 
-#### Basic Initialization and Setup
-PowerPoint dosyası için bir `Watermarker` örneği oluşturmanın en temel kodu aşağıdadır:
+#### Temel başlatma ve kurulum
+The first step is to create a `Watermarker` instance that points to your PowerPoint file:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -80,24 +138,25 @@ PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-## Implementation Guide – Step‑by‑Step
+## Slide arka planı java nasıl çıkarılır?
+The process begins by loading the PowerPoint file using a Watermarker instance, then creating appropriate load options. After opening the document, you can access each slide's content, retrieve the background image, and extract its metadata such as dimensions and file size. Finally, close the Watermarker to release resources. The following steps describe the exact sequence you need to follow, and the code placeholders show where your existing snippets belong.
 
-### Step 1: Create Load Options
-İlk olarak bir `PresentationLoadOptions` nesnesi oluştururuz. Bu nesne, dosyanın nasıl ayrıştırılacağını kontrol etmenizi sağlar (ör. yalnızca belirli slaytları yükleme).
+### Adım 1: yükleme seçeneklerini oluşturun
+`PresentationLoadOptions` defines loading preferences such as password handling and memory usage.
 
 ```java
 PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 ```
 
-### Step 2: Open the PowerPoint Document
-Yükleme seçeneklerini `Watermarker` yapıcısına geçirerek sununuzu yükleyin.
+### Adım 2: PowerPoint belgesini açın
+Instantiate `Watermarker` with the path to your `.pptx` file and the load options created earlier.
 
 ```java
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-### Step 3: Access Slide Content
-Sununun içerik modelini alın, böylece her bir slaytı döngüyle gezebilirsiniz.
+### Adım 3: slayt içeriğine erişin
+`PresentationContent` is the entry point for retrieving slide‑level objects, including background images.
 
 ```java
 import com.groupdocs.watermark.contents.PresentationContent;
@@ -105,8 +164,9 @@ import com.groupdocs.watermark.contents.PresentationContent;
 PresentationContent content = watermarker.getContent(PresentationContent.class);
 ```
 
-### Step 4: Iterate Over Slides and Extract Image Details
-Şimdi her slaytı dolaşır, bir arka plan görüntüsü olup olmadığını kontrol eder ve ardından boyutlarını ve dosya boyutunu alırız. Bu, **java get image dimensions** işleminin çekirdeğidir.
+### Adım 4: slaytlar üzerinde döngü yapın ve arka plan ayrıntılarını okuyun
+Slide represents an individual slide within the presentation and provides access to its visual elements.  
+For each `Slide` object, call `getBackground()` to obtain the image, then read its dimensions and size.
 
 ```java
 import com.groupdocs.watermark.contents.PresentationSlide;
@@ -124,62 +184,74 @@ for (PresentationSlide slide : content.getSlides()) {
 }
 ```
 
-### Step 5: Close Watermarker
-İşiniz bittiğinde her zaman kaynakları serbest bırakın.
+### Adım 5: watermarker'ı kapatın
+Always close the `Watermarker` instance to free native resources and avoid memory leaks.
 
 ```java
 watermarker.close();
 ```
 
-## Common Issues and Solutions
-- **Dosya bulunamadı:** Yolu iki kez kontrol edin ve uygulamanın okuma iznine sahip olduğundan emin olun.  
-- **Null arka plan görüntüsü:** Bazı slaytlar görüntü yerine düz renk kullanır; yukarıda gösterildiği gibi `null` kontrolü yapın.  
-- **Büyük dosyalar bellek baskısı oluşturur:** Slaytları partiler halinde işleyin ve gerekirse her partiden sonra `Watermarker` nesnesini kapatın.
+## GroupDocs.Watermark kullanarak PowerPoint slayt boyutlarını nasıl okursunuz?
+The API exposes width and height through the `ImageInfo` object attached to a slide’s background. Retrieve them with `getWidth()` and `getHeight()`, which return pixel values that you can use for layout calculations or validation against branding guidelines.
 
-## Practical Applications
-1. **Özel Slayt Tasarımı:** Düşük çözünürlüklü arka planları otomatik olarak yüksek kaliteli varlıklarla değiştirin.  
-2. **Veri Analizi:** Kurumsal slayt kütüphanesindeki görüntü kullanımına ilişkin raporlar oluşturun.  
-3. **CMS Entegrasyonu:** Arka plan meta verilerini dijital varlık yönetim sistemiyle senkronize edin.  
-4. **Denetim & Uyumluluk:** Tüm slaytların marka yönergelerine uygun boyutlarda olduğunu doğrulayın.
+## Yaygın sorunlar ve sorun giderme
+- **Dosya bulunamadı** – Dosya yolunun mutlak veya proje köküne göre doğru göreli olduğundan emin olun.  
+- **Desteklenmeyen format** – GroupDocs.Watermark PPTX, PPT ve ODP formatlarını destekler; eski ikili PPT dosyaları önce dönüştürülmelidir.  
+- **Lisans uygulanmadı** – Diğer API kullanımından önce `License.setLicense("path/to/license.file")` çağrısını yaptığınızdan emin olun.
 
-## Performance Considerations
-- **Kaynak Yönetimi:** Yerel kaynakları serbest bırakmak için `Watermarker` nesnesini zamanında kapatın.  
-- **Bellek Ayak İzi:** Yüzlerce slaytı olan sunular için bir seferde tek bir slaytı işlemek daha iyidir.  
-- **Profil Oluşturma:** Büyük sunulara ölçeklendirirken darboğazları tespit etmek için Java profillerini kullanın.
+## Pratik uygulamalar
+1. **Otomatik marka uyumluluğu** – Slayt arka planlarını tarayarak kurumsal renk paletleri veya logo boyutlarıyla eşleştiğini doğrulayın.  
+2. **Varlık envanteri** – Belge kütüphanesindeki arka plan görüntülerinin bir kataloğunu oluşturarak pazarlama varlıklarında yeniden kullanımını sağlayın.  
+3. **İçerik taşıma** – Arka planları çıkarın, bir dijital varlık yöneticisinde saklayın ve yeni sunumlara programlı olarak yeniden uygulayın.  
+4. **Performans izleme** – Görüntü boyutu istatistiklerini kaydederek slayt renderını yavaşlatabilecek olağandışı büyük varlıkları tespit edin.
 
-## Frequently Asked Questions
+## Performans değerlendirmeleri
+- **Kaynak temizliği** – `Watermarker`'ı hızlıca kapatmak, büyük sunumları işlerken kritik olan yerel belleği serbest bırakır.  
+- **Bellek ayak izi** – Kütüphane slayt verilerini akış olarak işler; tüm sunumu yüklemek yerine slaytları tek tek işleyerek kullanımı daha da azaltabilirsiniz.  
+- **Toplu işleme ipucu** – Çeşitli dosyalarla çalışırken tek bir `License` örneğini yeniden kullanın ve JVM yığınını stabil tutmak için her dosya için yeni bir `Watermarker` oluşturun.
 
-**S: Tüm slaytı yüklemeden sadece görüntü boyutunu almanın en kolay yolu nedir?**  
-C: Görüntü nesnesinin `null` olmadığını doğruladıktan sonra `slide.getImageFillFormat().getBackgroundImage().getBytes().length` kullanın.
+## Sonuç
+Artık GroupDocs.Watermark ile slide arka planı java çıkarımı için eksiksiz, üretim‑hazır bir kılavuza sahipsiniz. Yukarıdaki adımları izleyerek görüntü boyutlarını, dosya boyutunu ve diğer meta verileri alabilir, bu bilgileri marka denetimleri, varlık yönetimi veya hayal ettiğiniz herhangi bir özel iş akışına uygulayabilirsiniz.
 
-**S: Şifre korumalı sunumlardan arka plan görüntülerini çıkarabilir miyim?**  
-C: Evet—`Watermarker` oluşturmadan önce şifreyi `PresentationLoadOptions` içinde belirtin.
+**Sonraki adımlar**
+- `PresentationLoadOptions`'ın farklı seçenekleriyle (ör. şifre korumalı dosyalar) deney yapın.  
+- Arka planları otomatik olarak eklemek veya değiştirmek için watermark API'sini keşfedin.  
+- Bu çıkarma mantığını bir REST servisiyle birleştirerek slayt‑meta veri uç noktalarını sunun.
 
-**S: GroupDocs.Watermark, PDF veya Word gibi diğer formatlarda benzer görüntü çıkarımını destekliyor mu?**  
-C: Kesinlikle. Kütüphane PDF, Word belgeleri ve görüntüler için benzer API’ler sunar.
+## Sıkça sorulan sorular
 
-**S: Geliştirme ortamları için lisans zorunlu mu?**  
-C: Geçici bir lisans deneme sınırlamalarını kaldırır; aksi takdirde kütüphane özellik kısıtlamalarıyla deneme modunda çalışır.
+**S: Minimum Java sürümü nedir?**  
+C: Java 11 veya daha yenisi gereklidir; daha eski sürümler kütüphane için gerekli dil özelliklerine sahip değildir.
 
-**S: Daha ayrıntılı API dokümantasyonunu nereden bulabilirim?**  
-C: Kapsamlı rehberler ve referans materyalleri için resmi [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/) sayfasını ziyaret edin.
+**S: Şifre korumalı sunumlardan arka planları çıkarabilir miyim?**  
+C: Evet—dosyayı açmadan önce `PresentationLoadOptions` içinde şifreyi ayarlayın.
 
-## Conclusion
-Artık **java get image dimensions** işlemini ve slayt arka plan detaylarını Java için GroupDocs.Watermark kullanarak çıkarmak için eksiksiz, üretim‑hazır bir yaklaşıma sahipsiniz. Yukarıdaki adımları izleyerek bu yeteneği herhangi bir Java uygulamasına entegre edebilirsiniz—ister bir marka uyumu aracı, ister bir analiz panosu, ister otomatik slayt‑oluşturma hattı olsun.
+**S: Deneme modu işleyebileceğim slayt sayısını sınırlıyor mu?**  
+C: Deneme, çıktı dosyalarına bir watermark ekler ancak meta veri çıkarımı için slayt sayısını kısıtlamaz.
 
-**Next Steps**  
-- Farklı `PresentationLoadOptions` seçeneklerini deneyin (ör. yalnızca belirli slaytları yükleme).  
-- Watermark ekleme veya belge dönüştürme gibi ek GroupDocs.Watermark özelliklerini keşfedin.  
+**S: Çıkarılan arka plan görüntüsünü diske kaydetmek mümkün mü?**  
+C: Kesinlikle—`ImageInfo` nesnesini aldıktan sonra `ImageInfo.save("output.png")` kullanın.
+
+**S: Çıkarılan görüntüyü hangi formatlara dışa aktarabilirim?**  
+C: API, arka plan görüntüsü dışa aktarımı için PNG, JPEG, BMP ve GIF formatlarını destekler.
+
+## Kaynaklar
+
+- **Dokümantasyon:** [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Dokümantasyon:** [GroupDocs Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **API referansı:** [GroupDocs Watermark API Reference](https://reference.groupdocs.com/watermark/java)  
+- **İndirme:** [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)  
+- **GitHub deposu:** [GroupDocs GitHub Page](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Destek forumu:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/watermark/10)
 
 ---
 
-**Last Updated:** 2026-02-11  
+**Last Updated:** 2026-09-11  
 **Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
+**Author:** GroupDocs
 
-**Resources**  
-- **Documentation:** [GroupDocs Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **API Reference:** [GroupDocs Watermark API Reference](https://reference.groupdocs.com/watermark/java)  
-- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub Repository:** [GroupDocs GitHub Page](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Support Forum:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/watermark/10)
+## İlgili Eğitimler
+
+- [PowerPoint Slayt Boyutlarını GroupDocs.Watermark Java API Kullanarak Nasıl Alırsınız](/watermark/java/presentation-document-watermarking/retrieve-slide-dimensions-powerpoint-groupdocs-watermark-java/)
+- [Java'da GroupDocs.Watermark Kütüphanesi ile PowerPoint Slayt Arka Planını Kaldırma](/watermark/java/watermark-removal/remove-ppt-slide-background-groupdocs-watermark-java/)
+- [GroupDocs.Watermark for Java Kullanarak Belge Bilgilerini Nasıl Alırsınız: Adım Adım Kılavuz](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)

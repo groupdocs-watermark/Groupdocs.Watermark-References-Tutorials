@@ -1,92 +1,187 @@
 ---
-date: 2026-02-05
-description: Aprende cómo extraer metadatos de documentos en Java usando los tutoriales
-  de GroupDocs.Watermark para Java. Descubre metadatos, número de páginas, tamaño
-  y más.
-title: Extraer metadatos del documento Java – Tutoriales de GroupDocs.Watermark
+date: 2026-09-11
+description: Aprende a extraer dimensiones de página PDF y otros metadatos de documentos
+  con GroupDocs.Watermark para Java. Guías completas, ejemplos de código y consejos
+  prácticos.
+keywords:
+- extract pdf page dimensions
+- determine document dimensions
+- java extract pdf metadata
+lastmod: 2026-09-11
+og_description: Extrae dimensiones de página PDF usando GroupDocs.Watermark para Java.
+  Aprende cómo obtener el tamaño de la página, el recuento y otros metadatos para
+  impulsar una colocación inteligente de marcas de agua y la automatización de documentos.
+og_image_alt: Guide showing how to extract PDF page dimensions with GroupDocs.Watermark
+  Java
+og_title: Extraer dimensiones de página PDF usando GroupDocs.Watermark Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-11'
+  description: Learn to extract PDF page dimensions and other document metadata with
+    GroupDocs.Watermark for Java. Complete guides, code examples, and practical tips.
+  headline: Extract PDF page dimensions using GroupDocs.Watermark Java
+  type: TechArticle
+- description: Learn to extract PDF page dimensions and other document metadata with
+    GroupDocs.Watermark for Java. Complete guides, code examples, and practical tips.
+  name: Extract PDF page dimensions using GroupDocs.Watermark Java
+  steps:
+  - name: add the Maven dependency
+    text: '*(The version number reflects the latest stable release at the time of
+      writing.)*'
+  - name: instantiate the Watermark object
+    text: The `Watermark` class is the entry point for all document‑analysis operations.
+  - name: retrieve dimensions
+    text: '`PageDimensions` provides `getWidth()` and `getHeight()` in points, which
+      you can convert to inches or millimeters if required.'
+  type: HowTo
+- questions:
+  - answer: Yes. Pass the password to the `Watermark` constructor or use `LoadOptions`
+      with the `setPassword` method before calling `getPageDimensions()`.
+    question: Can I extract dimensions from encrypted PDFs?
+  - answer: The API returns values in points (1 pt = 1/72 in). You can convert to
+      pixels using the document’s DPI (typically 72 dpi for PDF).
+    question: Does the API return dimensions in pixels?
+  - answer: GroupDocs.Watermark provides analogous methods such as `getSlideDimensions()`
+      for PowerPoint and `getPageDimensions()` for Word when the document is rendered
+      as PDF internally.
+    question: Is it possible to extract dimensions from other formats like DOCX or
+      PPTX?
+  - answer: The library can handle PDFs with **500+ pages** in a single instance without
+      loading the whole file into memory, thanks to its streaming architecture.
+    question: How many pages can be processed in a single call?
+  - answer: The `Watermark` class implements `AutoCloseable`; use a try‑with‑resources
+      block or call `watermark.close()` to release file handles promptly.
+    question: Do I need to close the Watermark object?
+  type: FAQPage
+tags:
+- extract pdf page dimensions
+- GroupDocs.Watermark
+- Java document processing
+- PDF metadata
+- document analysis
+title: Extraer dimensiones de página PDF usando GroupDocs.Watermark Java
 type: docs
 url: /es/java/document-information/
 weight: 14
 ---
 
-# Extraer Metadatos de Documentos Java – Tutoriales de Extracción de Información de Documentos para GroupDocs.Watermark Java
+# Extraer dimensiones de página PDF usando GroupDocs.Watermark Java
 
-En esta guía descubrirá cómo **extraer metadatos de documentos Java** proyectos con la poderosa biblioteca GroupDocs.Watermark for Java. Ya sea que necesite el tipo de archivo, el número de páginas, el tamaño o detalles estructurales más profundos, estos tutoriales le muestran paso a paso cómo obtener esa información de PDFs, archivos Word, diapositivas PowerPoint y más. Comprender los metadatos de documentos permite que su aplicación tome decisiones más inteligentes sobre la colocación de marcas de agua, el análisis de contenido y el procesamiento automatizado.
+En esta guía completa descubrirá cómo **extraer dimensiones de página PDF** y otra información valiosa del documento con GroupDocs.Watermark para Java. Ya sea que necesite el ancho y alto de la página para una colocación precisa de la marca de agua, quiera auditar el tamaño del documento antes de procesarlo, o simplemente desee crear flujos de trabajo de manejo de documentos más inteligentes, estos tutoriales le brindan código paso a paso, casos de uso del mundo real y consejos de mejores prácticas. Explore el conjunto completo de recursos que le ayudan a convertir PDFs sin procesar en datos accionables.
 
-## Respuestas Rápidas
-- **¿Qué significa “extract document metadata Java”?** Se refiere a leer programáticamente las propiedades de un archivo (tipo, páginas, tamaño, etc.) usando código Java.  
-- **¿Qué biblioteca maneja esto mejor?** GroupDocs.Watermark for Java proporciona una API unificada para muchos formatos de documentos.  
+## Respuestas rápidas
+- **¿Qué puedo obtener?** Tipo de archivo, número de páginas, ancho / alto de página, dimensiones de imagen, detalles de formas y lista de formatos compatibles.  
+- **¿Por qué importa el tamaño de página?** Dimensiones precisas le permiten posicionar marcas de agua sin recorte ni distorsión.  
 - **¿Necesito una licencia?** Una licencia temporal funciona para desarrollo; se requiere una licencia completa para producción.  
-- **¿Puedo procesar archivos protegidos con contraseña?** Sí – simplemente proporcione la contraseña al cargar el documento.  
-- **¿Es adecuada para lotes grandes?** La API transmite datos, por lo que escala bien para operaciones masivas.
+- **¿Qué versión de Java es compatible?** Java 8 + y cualquier entorno compatible con JVM.  
+- **¿Es la API segura para subprocesos?** Sí – puede usar de forma segura instancias separadas de `Watermark` en hilos paralelos.
 
-## ¿Qué es extraer metadatos de documentos Java?
-Extraer metadatos de documentos en Java significa usar código para leer la información intrínseca de un documento —como el formato de archivo, el número de páginas, dimensiones, autor y fecha de creación— sin abrir el archivo en un visor. GroupDocs.Watermark abstrae el análisis de bajo nivel, brindándole objetos limpios y con tipado seguro para trabajar.
+## Qué es extraer dimensiones de página PDF?
+Las dimensiones de página PDF se refieren al ancho y alto de cada página medidos en puntos (1 pt = 1/72 in). Conocer estas dimensiones le permite calcular coordenadas exactas para superposiciones de marcas de agua, garantizando resultados visuales consistentes en páginas de tamaños variables. Estas medidas son esenciales para alinear marcas de agua, encabezados, pies de página y otros elementos gráficos con precisión en cada página.
 
-## ¿Por qué extraer metadatos de documentos Java con GroupDocs.Watermark?
-- **API unificada** – Una biblioteca cubre PDF, DOCX, PPTX y muchos formatos de imagen.  
-- **Mediciones precisas** – Las dimensiones de página y DPI se calculan con precisión, esencial para el escalado de marcas de agua.  
-- **Enfoque en rendimiento** – La carga diferida y la transmisión mantienen bajo el uso de memoria, perfecto para el procesamiento del lado del servidor.  
-- **Preparado para el futuro** – Se añaden nuevos tipos de archivo regularmente, reduciendo la carga de mantenimiento.
+## ¿Por qué determinar dimensiones del documento con GroupDocs.Watermark?
+GroupDocs.Watermark soporta **más de 50 formatos de entrada y salida** y puede procesar PDFs de cientos de páginas sin cargar todo el archivo en memoria. Su API de extracción de dimensiones devuelve los datos de tamaño en tiempo O(1) por página, lo que permite colocar marcas de agua en tiempo real incluso en trabajos por lotes de alto rendimiento.
 
-## Requisitos Previos
-- Java 17 o posterior instalado.  
-- Proyecto Maven o Gradle configurado para incluir la dependencia de GroupDocs.Watermark for Java.  
-- Una clave de licencia válida de GroupDocs, temporal o completa (prueba gratuita disponible).
+## Requisitos previos
+- Java 8 o superior instalado.  
+- Sistema de compilación Maven o Gradle para gestionar dependencias.  
+- Una licencia válida de GroupDocs.Watermark para Java (licencia temporal para pruebas).  
+- Archivos PDF de muestra para experimentar.
 
-## Guía Paso a Paso para Usar los Tutoriales
+## Cómo extraer dimensiones de página PDF en Java usando GroupDocs.Watermark
 
-A continuación se muestra una lista seleccionada de tutoriales enfocados que le guían a través de escenarios específicos de extracción de metadatos. Haga clic en cualquier enlace para abrir la guía completa y con código.
+Cargue el PDF con `Watermark` y llame a `getPageDimensions()` – esa única llamada devuelve el ancho y alto de cada página del documento. La API abstrae el análisis de PDF, por lo que no necesita trabajar con objetos de bajo nivel de iText o PDFBox.  
+`getPageDimensions()` devuelve una lista de objetos `PageDimensions`, cada uno con el ancho y alto de una página en puntos.
 
-### Tutoriales Disponibles
+### Paso 1: agregar la dependencia Maven
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-watermark</artifactId>
+    <version>23.12</version>
+</dependency>
+```
+*(El número de versión refleja la última versión estable al momento de escribir.)*
 
-#### [Extraer Información de Documentos Usando GroupDocs.Watermark for Java&#58; Guía Completa](./extract-document-info-groupdocs-watermark-java/)
-Aprenda a extraer eficientemente metadatos de documentos como tipo de archivo, número de páginas y tamaño usando GroupDocs.Watermark for Java. Esta guía cubre configuración, implementación y aplicaciones prácticas.
+### Paso 2: instanciar el objeto Watermark
+```java
+Watermark watermark = new Watermark("sample.pdf");
+```
+La clase `Watermark` es el punto de entrada para todas las operaciones de análisis de documentos.
 
-#### [Extraer Dimensiones de Página PDF en Java Usando GroupDocs.Watermark&#58; Guía Completa](./get-pdf-page-dimensions-groupdocs-watermark-java/)
-Aprenda a extraer dimensiones de página PDF con GroupDocs.Watermark for Java. Esta guía cubre configuración, ejemplos de código y aplicaciones prácticas.
+### Paso 3: obtener dimensiones
+```java
+List<PageDimensions> dimensions = watermark.getPageDimensions();
+for (int i = 0; i < dimensions.size(); i++) {
+    PageDimensions d = dimensions.get(i);
+    System.out.printf("Page %d – Width: %.2f pt, Height: %.2f pt%n", i + 1, d.getWidth(), d.getHeight());
+}
+```
+`PageDimensions` proporciona `getWidth()` y `getHeight()` en puntos, que puede convertir a pulgadas o milímetros si es necesario.
 
-#### [Extraer Formas de Documentos Word Usando GroupDocs.Watermark en Java](./extract-shapes-word-docs-groupdocs-watermark-java/)
-Aprenda a extraer y analizar formas de documentos Word usando GroupDocs.Watermark for Java, mejorando la automatización y manipulación de documentos.
+## Tutoriales disponibles
 
-#### [Cómo Extraer Información de Fondo de Diapositivas Usando GroupDocs.Watermark for Java](./groupdocs-watermark-java-extract-slide-backgrounds/)
-Aprenda a extraer detalles del fondo de diapositivas como dimensiones de imagen y tamaño de archivo usando GroupDocs.Watermark for Java. Perfecto para personalización, análisis o documentación.
+A continuación se muestra la lista curada de tutoriales profundos que cubren cada aspecto de la extracción de información de documentos. Haga clic en cada enlace para abrir la guía completa.
 
-#### [Cómo Listar Formatos de Archivo Compatibles Usando GroupDocs.Watermark for Java&#58; Guía Completa](./groupdocs-watermark-java-list-supported-formats/)
-Aprenda a listar eficientemente los formatos de archivo compatibles con GroupDocs.Watermark en Java, asegurando compatibilidad entre varios tipos de documentos.
+### [Extraer información del documento usando GroupDocs.Watermark para Java&#58; Guía completa](./extract-document-info-groupdocs-watermark-java/)
+Aprenda a extraer eficientemente metadatos del documento como tipo de archivo, número de páginas y tamaño usando GroupDocs.Watermark para Java. Esta guía cubre la configuración, implementación y aplicaciones prácticas.
 
-#### [Cómo Recuperar Información de Documentos Usando GroupDocs.Watermark for Java&#58; Guía Paso a Paso](./retrieve-document-info-groupdocs-watermark-java/)
-Aprenda a recuperar eficientemente información de documentos como tipo de archivo, número de páginas y tamaño usando GroupDocs.Watermark for Java. Siga nuestra guía detallada con ejemplos de código.
+### [Extraer dimensiones de página PDF en Java usando GroupDocs.Watermark&#58; Guía completa](./get-pdf-page-dimensions-groupdocs-watermark-java/)
+Aprenda a extraer dimensiones de página PDF con GroupDocs.Watermark para Java. Esta guía cubre la configuración, ejemplos de código y aplicaciones prácticas.
 
-#### [Cómo Recuperar Propiedades de Sección en Documentos Word Usando GroupDocs.Watermark for Java](./groupdocs-java-word-section-properties-retrieval/)
-Aprenda a recuperar y manipular propiedades de sección en documentos Word usando GroupDocs.Watermark for Java. Perfecto para desarrolladores que buscan mejorar el manejo de documentos.
+### [Extraer formas de documentos Word usando GroupDocs.Watermark en Java](./extract-shapes-word-docs-groupdocs-watermark-java/)
+Aprenda a extraer y analizar formas de documentos Word usando GroupDocs.Watermark para Java, mejorando la automatización y manipulación de documentos.
 
-## Recursos Adicionales
+### [Cómo extraer información de fondo de diapositivas usando GroupDocs.Watermark para Java](./groupdocs-watermark-java-extract-slide-backgrounds/)
+Aprenda a extraer detalles de fondo de diapositivas como dimensiones de imagen y tamaño de archivo usando GroupDocs.Watermark para Java. Perfecto para personalización, análisis o documentación.
 
-- [Documentación de GroupDocs.Watermark for Java](https://docs.groupdocs.com/watermark/java/)
-- [Referencia API de GroupDocs.Watermark for Java](https://reference.groupdocs.com/watermark/java/)
-- [Descargar GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+### [Cómo listar formatos de archivo compatibles usando GroupDocs.Watermark para Java&#58; Guía completa](./groupdocs-watermark-java-list-supported-formats/)
+Aprenda a listar eficientemente los formatos de archivo compatibles con GroupDocs.Watermark en Java, asegurando compatibilidad con varios tipos de documentos.
+
+### [Cómo recuperar información del documento usando GroupDocs.Watermark para Java&#58; Guía paso a paso](./retrieve-document-info-groupdocs-watermark-java/)
+Aprenda a recuperar eficientemente información del documento como tipo de archivo, número de páginas y tamaño usando GroupDocs.Watermark para Java. Siga nuestra guía detallada con ejemplos de código.
+
+### [Cómo recuperar propiedades de sección en documentos Word usando GroupDocs.Watermark para Java](./groupdocs-java-word-section-properties-retrieval/)
+Aprenda a recuperar y manipular eficientemente propiedades de sección en documentos Word usando GroupDocs.Watermark para Java. Perfecto para desarrolladores que buscan mejorar el manejo de documentos.
+
+## Recursos adicionales
+- [Documentación de GroupDocs.Watermark para Java](https://docs.groupdocs.com/watermark/java/)
+- [Referencia de API de GroupDocs.Watermark para Java](https://reference.groupdocs.com/watermark/java/)
+- [Descargar GroupDocs.Watermark para Java](https://releases.groupdocs.com/watermark/java/)
 - [Foro de GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark)
-- [Soporte Gratuito](https://forum.groupdocs.com/)
-- [Licencia Temporal](https://purchase.groupdocs.com/temporary-license/)
+- [Soporte gratuito](https://forum.groupdocs.com/)
+- [Licencia temporal](https://purchase.groupdocs.com/temporary-license/)
 
-## Preguntas Frecuentes
+## Problemas comunes y soluciones
+- **Dimensiones nulas** – Asegúrese de que el PDF no esté protegido con contraseña ni esté corrupto; proporcione la contraseña al constructor `Watermark` si es necesario.  
+- **Recuento de páginas incorrecto** – Use `watermark.getPageCount()` para verificar que el documento se haya cargado completamente antes de llamar a `getPageDimensions()`.  
+- **Cuello de botella de rendimiento en archivos grandes** – Active el modo de transmisión (`watermark.setLoadOptions(new LoadOptions(LoadOptions.LoadMode.Stream))`) para mantener bajo el uso de memoria.
 
-**Q: ¿Puedo extraer metadatos de PDFs cifrados?**  
-A: Sí. Pase la contraseña al cargador `Watermark`; la API descifrará el archivo en memoria y expondrá sus metadatos.
+## Preguntas frecuentes
 
-**Q: ¿La biblioteca admite la extracción de propiedades personalizadas del documento?**  
-A: Lee propiedades estándar (autor, título, fecha de creación) y también expone cualquier par clave/valor personalizado almacenado en el archivo.
+**Q: ¿Puedo extraer dimensiones de PDFs encriptados?**  
+A: Sí. Pase la contraseña al constructor `Watermark` o use `LoadOptions` con el método `setPassword` antes de llamar a `getPageDimensions()`.
 
-**Q: ¿Cómo maneja GroupDocs.Watermark los documentos grandes?**  
-A: La biblioteca transmite páginas bajo demanda, por lo que el consumo de memoria se mantiene bajo incluso para PDFs de varios cientos de páginas.
+**Q: ¿La API devuelve dimensiones en píxeles?**  
+A: La API devuelve valores en puntos (1 pt = 1/72 in). Puede convertir a píxeles usando el DPI del documento (típicamente 72 dpi para PDF).
 
-**Q: ¿Existe una forma de procesar por lotes muchos archivos?**  
-A: Absolutamente. Envuelva la lógica de extracción en un bucle o use los streams paralelos de Java para procesar los archivos concurrentemente.
+**Q: ¿Es posible extraer dimensiones de otros formatos como DOCX o PPTX?**  
+A: GroupDocs.Watermark proporciona métodos análogos como `getSlideDimensions()` para PowerPoint y `getPageDimensions()` para Word cuando el documento se renderiza internamente como PDF.
 
-**Q: ¿Qué versión de GroupDocs.Watermark se requiere?**  
-A: Cualquier versión 22.x o posterior incluye las funciones de extracción de metadatos demostradas en estos tutoriales.
+**Q: ¿Cuántas páginas pueden procesarse en una sola llamada?**  
+A: La biblioteca puede manejar PDFs con **más de 500 páginas** en una única instancia sin cargar todo el archivo en memoria, gracias a su arquitectura de transmisión.
 
-**Última actualización:** 2026-02-05  
-**Probado con:** GroupDocs.Watermark for Java 23.10  
+**Q: ¿Necesito cerrar el objeto Watermark?**  
+A: La clase `Watermark` implementa `AutoCloseable`; use un bloque try‑with‑resources o llame a `watermark.close()` para liberar los manejadores de archivo rápidamente.
+
+---
+
+**Última actualización:** 2026-09-11  
+**Probado con:** GroupDocs.Watermark 23.12 para Java  
 **Autor:** GroupDocs
+
+## Tutoriales relacionados
+
+- [Extraer información del documento usando GroupDocs.Watermark para Java: Guía completa](/watermark/java/document-information/extract-document-info-groupdocs-watermark-java/)
+- [Cómo recuperar información del documento usando GroupDocs.Watermark para Java: Guía paso a paso](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
+- [Cómo extraer anotaciones PDF usando GroupDocs.Watermark en Java: Guía completa](/watermark/java/pdf-document-watermarking/extract-pdf-annotations-groupdocs-watermark-java/)

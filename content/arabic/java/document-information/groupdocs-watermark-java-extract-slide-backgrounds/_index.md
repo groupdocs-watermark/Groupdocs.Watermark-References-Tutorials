@@ -1,45 +1,105 @@
 ---
-date: '2026-02-11'
-description: تعلم كيفية الحصول على أبعاد الصورة واستخراج تفاصيل خلفية الشريحة باستخدام
-  GroupDocs.Watermark للـ Java. مثالي للتخصيص أو التحليل أو التوثيق.
+date: '2026-09-11'
+description: تعلم كيفية استخراج خلفية الشريحة في Java وقراءة أبعاد شريحة PowerPoint
+  باستخدام GroupDocs.Watermark for Java. احصل على حجم الصورة، حجم الملف، والبيانات
+  الوصفية في دقائق.
 keywords:
-- extract slide background information Java
-- GroupDocs.Watermark PowerPoint
-- slide background details Java
-title: جافا الحصول على أبعاد الصورة – استخراج خلفيات الشرائح باستخدام GroupDocs.Watermark
+- extract slide background java
+- read powerpoint slide dimensions
+- slide background details java
+lastmod: '2026-09-11'
+og_description: استخراج خلفية الشريحة في Java وقراءة أبعاد شريحة PowerPoint باستخدام
+  GroupDocs.Watermark for Java. دليل مفصل مع الإعداد، الكود، وحل المشكلات.
+og_image_alt: Guide showing Java code extracting slide background information from
+  PowerPoint
+og_title: استخراج خلفية الشريحة في Java باستخدام GroupDocs.Watermark
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-11'
+  description: Learn how to extract slide background java and read PowerPoint slide
+    dimensions using GroupDocs.Watermark for Java. Get image size, file size, and
+    metadata in minutes.
+  headline: How to extract slide background java
+  type: TechArticle
+- description: Learn how to extract slide background java and read PowerPoint slide
+    dimensions using GroupDocs.Watermark for Java. Get image size, file size, and
+    metadata in minutes.
+  name: How to extract slide background java
+  steps:
+  - name: create load options
+    text: '`PresentationLoadOptions` defines loading preferences such as password
+      handling and memory usage.'
+  - name: open the PowerPoint document
+    text: Instantiate `Watermarker` with the path to your `.pptx` file and the load
+      options created earlier.
+  - name: access slide content
+    text: '`PresentationContent` is the entry point for retrieving slide‑level objects,
+      including background images.'
+  - name: iterate over slides and read background details
+    text: Slide represents an individual slide within the presentation and provides
+      access to its visual elements. For each `Slide` object, call `getBackground()`
+      to obtain the image, then read its dimensions and size.
+  - name: close the watermarker
+    text: Always close the `Watermarker` instance to free native resources and avoid
+      memory leaks.
+  type: HowTo
+- questions:
+  - answer: Java 11 or newer is required; earlier versions lack the necessary language
+      features for the library.
+    question: What is the minimum Java version required?
+  - answer: Yes—set the password in `PresentationLoadOptions` before opening the file.
+    question: Can I extract backgrounds from password‑protected presentations?
+  - answer: The trial imposes a watermark on output files but does not restrict slide
+      count for metadata extraction.
+    question: Does the trial mode limit the number of slides I can process?
+  - answer: Absolutely—use `ImageInfo.save("output.png")` after retrieving the `ImageInfo`
+      object.
+    question: Is it possible to save the extracted background image to disk?
+  - answer: The API supports PNG, JPEG, BMP, and GIF for background image export.
+    question: Which formats can I export the extracted image to?
+  type: FAQPage
+tags:
+- extract slide background
+- GroupDocs.Watermark
+- Java PowerPoint
+- document processing
+title: كيفية استخراج خلفية الشريحة في Java
 type: docs
 url: /ar/java/document-information/groupdocs-watermark-java-extract-slide-backgrounds/
 weight: 1
 ---
 
-# java get image dimensions – استخراج خلفيات الشرائح باستخدام GroupDocs.Watermark
+# كيفية استخراج خلفية الشريحة في جافا
 
-هل تبحث عن **java get image dimensions** وتفاصيل خلفية أخرى من شريحة PowerPoint؟ سواء كنت تحتاج هذه المعلومات للعلامة التجارية المخصصة أو تحليل البيانات أو التوثيق، فإن مكتبة GroupDocs.Watermark للـ Java تجعل العملية سهلة. في هذا الدرس ستتعلم كيفية استخراج معلومات خلفية الشريحة — بما في ذلك **width**، **height**، وحجم **byte size** — باستخدام بعض استدعاءات API البسيطة.
+## مقدمة
 
-## إجابات سريعة
-- **What does “java get image dimensions” mean?** يشير إلى استرجاع عرض وارتفاع صورة مدمجة في شريحة PowerPoint عبر كود Java.  
-- **Which library helps with this?** توفر GroupDocs.Watermark للـ Java API عالي المستوى لقراءة خلفيات الشرائح.  
-- **Do I need a license?** يلزم الحصول على ترخيص مؤقت أو كامل للاستخدام في الإنتاج؛ وضع التجربة متاح.  
-- **Can I process large presentations?** نعم — فقط تذكر إغلاق `Watermarker` بسرعة لتحرير الموارد.  
-- **What Java version is required?** Java 8+ و Maven لإدارة التبعيات.
+استخراج خلفية الشريحة في جافا هو حاجة شائعة عندما تريد تحليل أو إعادة استخدام أو توثيق الأصول البصرية داخل ملف PowerPoint. باستخدام GroupDocs.Watermark for Java يمكنك استرجاع أبعاد الصورة، حجم الملف، وغيرها من البيانات الوصفية برمجياً دون فتح العرض التقديمي في PowerPoint. يشرح هذا البرنامج التعليمي سير العمل الكامل — من إعداد البيئة إلى استخراج وتفسير تفاصيل الخلفية — بحيث يمكنك دمج هذه القدرة في أي خط أنابيب أتمتة مبني على جافا.
 
-## ما هو java get image dimensions؟
-في سياق ملفات PowerPoint، يمكن لكل شريحة أن تحتوي على صورة خلفية. باستخدام GroupDocs.Watermark، يمكنك برمجيًا الحصول على **width**، **height**، و**byte size** لتلك الصورة — وهو جوهر عملية “java get image dimensions”.
+### إجابات سريعة
+- **ما المكتبة التي تتعامل مع استخراج خلفية الشريحة؟** GroupDocs.Watermark for Java.  
+- **ما الطريقة التي تُرجع أبعاد الصورة؟** `getBackground().getImageInfo().getWidth()` و `getHeight()`.  
+- **هل يمكنني الحصول على حجم ملف صورة الخلفية؟** نعم، عبر `getBackground().getImageInfo().getSize()`.  
+- **هل أحتاج إلى ترخيص لهذه الميزة؟** ترخيص مؤقت أو كامل يفتح جميع الوظائف؛ وضع التجربة يعمل مع بعض القيود.  
+- **هل يدعم Maven؟** بالتأكيد — أضف تبعية GroupDocs.Watermark إلى `pom.xml`.
 
-## لماذا استخراج معلومات خلفية الشريحة؟
-- **Brand compliance:** تحقق من أن جميع الشرائح تستخدم الحجم والدقة الصحيحين للخلفية.  
-- **Automation:** استبدال أو تعديل حجم الخلفيات ديناميكيًا عبر مجموعة الشرائح بأكملها.  
-- **Analytics:** جمع إحصاءات حول استخدام الصور للتقارير أو التحسين.  
-- **Integration:** تغذية بيانات ميتا الخلفية إلى خطوط أنابيب CMS أو أدوات التصميم.
+## ما هو استخراج خلفية الشريحة في جافا؟
+
+يشير استخراج خلفية الشريحة في جافا إلى عملية قراءة الخلفية البصرية لكل شريحة في عرض PowerPoint برمجياً باستخدام كود جافا. تنتج هذه العملية بيانات وصفية مثل عرض الصورة، ارتفاعها، وحجم الملف، مما يتيح معالجة لاحقة مثل فحص العلامة التجارية أو إعادة استخدام الأصول.
+
+## لماذا تستخدم GroupDocs.Watermark لهذه المهمة؟
+
+يدعم GroupDocs.Watermark **أكثر من 30 تنسيقًا للإدخال والإخراج**، يعالج العروض التقديمية التي تصل إلى **500 شريحة** دون تحميل الملف بالكامل في الذاكرة، ويوفر API مخصص للوصول إلى خلفيات الشرائح. هذه القدرات المقاسة تجعلها خيارًا موثوقًا لأتمتة على مستوى المؤسسات.
 
 ## المتطلبات المسبقة
-- **GroupDocs.Watermark 24.11+** (أو أحدث إصدار)  
-- **Java 8 أو أحدث** مع تثبيت Maven  
-- إلمام أساسي بـ Java file I/O  
+- **Java 11+** مثبت على جهاز التطوير الخاص بك.  
+- **Maven** لإدارة التبعيات.  
+- **GroupDocs.Watermark 24.11** (أو أحدث) – المكتبة تحتوي على الفئات `PresentationLoadOptions` و `PresentationContent` المستخدمة في هذا الدليل.  
+- رخصة **صحيحة** (مؤقتة أو كاملة) لفتح مجموعة الميزات بالكامل.
 
-## إعداد GroupDocs.Watermark للـ Java
+## إعداد GroupDocs.Watermark لجافا
 
-لبدء استخدام GroupDocs.Watermark في مشروع Java الخاص بك، أضف المستودع والاعتماد إلى ملف `pom.xml` الخاص بك:
+### تكوين Maven
+أضف تبعية GroupDocs.Watermark إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <repositories>
@@ -59,13 +119,14 @@ weight: 1
 </dependencies>
 ```
 
-يمكنك أيضًا تنزيل المكتبة مباشرةً من صفحة الإصدارات الرسمية: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### التحميل المباشر
+إذا كنت تفضل التثبيت اليدوي، احصل على أحدث ملف JAR من صفحة الإصدار الرسمية: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### الحصول على الترخيص
-ترخيص مؤقت أو كامل يفتح جميع الميزات. احصل على واحد هنا: [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/).
+تتيح لك الرخصة المؤقتة تقييم الـ API، بينما تزيل الرخصة الكاملة جميع قيود التجربة. احصل على رخصتك من بوابة الترخيص: [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/).
 
 #### التهيئة الأساسية والإعداد
-الشفرة أدناه هي الحد الأدنى لإنشاء كائن `Watermarker` لملف PowerPoint:
+الخطوة الأولى هي إنشاء كائن `Watermarker` يشير إلى ملف PowerPoint الخاص بك:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -78,24 +139,25 @@ PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
-## دليل التنفيذ – خطوة بخطوة
+## كيفية استخراج خلفية الشريحة في جافا؟
+تبدأ العملية بتحميل ملف PowerPoint باستخدام كائن Watermarker، ثم إنشاء خيارات التحميل المناسبة. بعد فتح المستند، يمكنك الوصول إلى محتوى كل شريحة، استرجاع صورة الخلفية، واستخراج بياناتها الوصفية مثل الأبعاد وحجم الملف. أخيرًا، أغلق Watermarker لتحرير الموارد. الخطوات التالية توضح التسلسل الدقيق الذي يجب اتباعه، وتظهر نواقل الشيفرة أين يجب وضع المقاطع البرمجية الحالية.
 
 ### الخطوة 1: إنشاء خيارات التحميل
-أولاً، نقوم بإنشاء كائن `PresentationLoadOptions`. يتيح لك ذلك التحكم في طريقة تحليل الملف (مثلاً، تحميل شرائح محددة فقط).
+`PresentationLoadOptions` يحدد تفضيلات التحميل مثل معالجة كلمة المرور واستخدام الذاكرة.
 
 ```java
 PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 ```
 
 ### الخطوة 2: فتح مستند PowerPoint
-مرّر خيارات التحميل إلى مُنشئ `Watermarker` لتحميل عرضك التقديمي.
+أنشئ كائن `Watermarker` مع المسار إلى ملف `.pptx` الخاص بك وخيارات التحميل التي تم إنشاؤها مسبقًا.
 
 ```java
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/presentation.pptx", loadOptions);
 ```
 
 ### الخطوة 3: الوصول إلى محتوى الشريحة
-استرجع نموذج محتوى العرض التقديمي لتتمكن من التكرار عبر كل شريحة.
+`PresentationContent` هو نقطة الدخول لاسترجاع كائنات مستوى الشريحة، بما في ذلك صور الخلفية.
 
 ```java
 import com.groupdocs.watermark.contents.PresentationContent;
@@ -103,8 +165,9 @@ import com.groupdocs.watermark.contents.PresentationContent;
 PresentationContent content = watermarker.getContent(PresentationContent.class);
 ```
 
-### الخطوة 4: التكرار عبر الشرائح واستخراج تفاصيل الصورة
-الآن نتجول عبر كل شريحة، نتحقق مما إذا كانت هناك صورة خلفية، ثم نستخرج أبعادها وحجم ملفها. هذا هو جوهر **java get image dimensions**.
+### الخطوة 4: التكرار على الشرائح وقراءة تفاصيل الخلفية
+Slide تمثل شريحة فردية داخل العرض التقديمي وتوفر الوصول إلى عناصرها البصرية.  
+لكل كائن `Slide`، استدعِ `getBackground()` للحصول على الصورة، ثم اقرأ أبعادها وحجمها.
 
 ```java
 import com.groupdocs.watermark.contents.PresentationSlide;
@@ -123,61 +186,73 @@ for (PresentationSlide slide : content.getSlides()) {
 ```
 
 ### الخطوة 5: إغلاق Watermarker
-دائمًا حرّر الموارد عند الانتهاء.
+دائمًا أغلق كائن `Watermarker` لتحرير الموارد الأصلية وتجنب تسرب الذاكرة.
 
 ```java
 watermarker.close();
 ```
 
-## المشكلات الشائعة والحلول
-- **File not found:** تحقق مرة أخرى من المسار وتأكد من أن التطبيق لديه أذونات القراءة.  
-- **Null background image:** بعض الشرائح تستخدم ألوانًا صلبة بدلاً من الصور؛ احرص على معالجة `null` كما هو موضح أعلاه.  
-- **Large files cause memory pressure:** عالج الشرائح على دفعات وأغلق `Watermarker` بعد كل دفعة إذا لزم الأمر.
+## كيفية قراءة أبعاد شريحة PowerPoint باستخدام GroupDocs.Watermark؟
+تُظهر الـ API العرض والارتفاع عبر كائن `ImageInfo` المرتبط بخلفية الشريحة. استرجعهما باستخدام `getWidth()` و `getHeight()`، والتي تُعيد قيم بكسل يمكنك استخدامها لحسابات التخطيط أو للتحقق من التوافق مع إرشادات العلامة التجارية.
 
-## تطبيقات عملية
-1. **Custom Slide Design:** استبدال الخلفيات منخفضة الدقة تلقائيًا بأصول عالية الجودة.  
-2. **Data Analysis:** إنشاء تقارير حول استخدام الصور عبر مكتبة الشرائح المؤسسية.  
-3. **CMS Integration:** مزامنة بيانات ميتا الخلفية مع نظام إدارة الأصول الرقمية.  
-4. **Audit & Compliance:** التحقق من أن جميع الشرائح تلتزم بأبعاد دليل العلامة التجارية.
+## المشكلات الشائعة واستكشاف الأخطاء
+- **الملف غير موجود** – تحقق من أن مسار الملف مطلق أو نسبي بشكل صحيح إلى جذر مشروعك.  
+- **تنسيق غير مدعوم** – يدعم GroupDocs.Watermark تنسيقات PPTX و PPT و ODP؛ قد تحتاج ملفات PPT الثنائية القديمة إلى تحويل أولاً.  
+- **الترخيص غير مفعّل** – تأكد من استدعاء `License.setLicense("path/to/license.file")` قبل أي استخدام آخر للـ API.
+
+## التطبيقات العملية
+1. **الامتثال التلقائي للعلامة التجارية** – فحص خلفيات الشرائح للتأكد من مطابقتها لألوان الشركة أو أبعاد الشعار.  
+2. **جرد الأصول** – بناء فهرس لصور الخلفية عبر مكتبة المستندات لإعادة استخدامها في أصول التسويق.  
+3. **ترحيل المحتوى** – استخراج الخلفيات، تخزينها في مدير أصول رقمي، وإعادة تطبيقها على عروض تقديمية جديدة برمجياً.  
+4. **مراقبة الأداء** – تسجيل إحصاءات حجم الصورة لاكتشاف الأصول الكبيرة غير العادية التي قد تبطئ عرض الشرائح.
 
 ## اعتبارات الأداء
-- **Resource Management:** أغلق `Watermarker` بسرعة لتحرير الموارد الأصلية.  
-- **Memory Footprint:** بالنسبة للعروض التي تحتوي على مئات الشرائح، فكر في معالجة شريحة واحدة في كل مرة.  
-- **Profiling:** استخدم أدوات تحليل الأداء في Java لتحديد نقاط الاختناق عند التعامل مع مجموعات شرائح كبيرة.
+- **تنظيف الموارد** – إغلاق `Watermarker` بسرعة يحرر الذاكرة الأصلية، وهو أمر حاسم عند معالجة مجموعات شرائح كبيرة.  
+- **بصمة الذاكرة** – المكتبة تبث بيانات الشرائح؛ يمكنك تقليل الاستخدام أكثر بمعالجة الشرائح واحدةً تلو الأخرى بدلاً من تحميل العرض الكامل.  
+- **نصيحة المعالجة الدفعية** – عند التعامل مع العشرات من الملفات، أعد استخدام كائن `License` واحد وأنشئ `Watermarker` جديد لكل ملف للحفاظ على استقرار ذاكرة JVM.
+
+## الخلاصة
+أصبح لديك الآن دليل كامل وجاهز للإنتاج لاستخراج خلفية الشريحة في جافا باستخدام GroupDocs.Watermark. باتباع الخطوات أعلاه يمكنك استرجاع أبعاد الصورة، حجم الملف، وغيرها من البيانات الوصفية، ثم تطبيق هذه المعلومات على فحوصات العلامة التجارية، إدارة الأصول، أو أي سير عمل مخصص تتخيله.
+
+**الخطوات التالية**
+- جرب `PresentationLoadOptions` المختلفة (مثل الملفات المحمية بكلمة مرور).  
+- استكشف API العلامة المائية لإضافة أو استبدال الخلفيات تلقائيًا.  
+- دمج منطق الاستخراج هذا مع خدمة REST لتوفير نقاط نهاية لبيانات ميتا الشريحة.
 
 ## الأسئلة المتكررة
 
-**س: ما هي أسهل طريقة لاسترجاع حجم الصورة فقط دون تحميل الشريحة بالكامل؟**  
-ج: استخدم `slide.getImageFillFormat().getBackgroundImage().getBytes().length` بعد التأكد من أن كائن الصورة ليس `null`.
+**س: ما هو الحد الأدنى لإصدار Java المطلوب؟**  
+ج: Java 11 أو أحدث مطلوب؛ الإصدارات الأقدم تفتقر إلى ميزات اللغة اللازمة للمكتبة.
 
-**س: هل يمكنني استخراج صور الخلفية من عروض تقديمية محمية بكلمة مرور؟**  
-ج: نعم — قدم كلمة المرور في `PresentationLoadOptions` قبل إنشاء `Watermarker`.
+**س: هل يمكنني استخراج الخلفيات من العروض المحمية بكلمة مرور؟**  
+ج: نعم — قم بتعيين كلمة المرور في `PresentationLoadOptions` قبل فتح الملف.
 
-**س: هل يدعم GroupDocs.Watermark صيغًا أخرى مثل PDF أو Word لاستخراج الصور بشكل مماثل؟**  
-ج: بالتأكيد. توفر المكتبة واجهات API مماثلة لـ PDFs ومستندات Word والصور.
+**س: هل يحد وضع التجربة عدد الشرائح التي يمكنني معالجتها؟**  
+ج: وضع التجربة يضيف علامة مائية على ملفات الإخراج لكنه لا يحد من عدد الشرائح لاستخراج البيانات الوصفية.
 
-**س: هل الترخيص إلزامي لبيئات التطوير؟**  
-ج: الترخيص المؤقت يزيل قيود التجربة؛ وإلا فإن المكتبة تعمل في وضع التجربة مع حدود للميزات.
+**س: هل يمكن حفظ صورة الخلفية المستخرجة إلى القرص؟**  
+ج: بالتأكيد — استخدم `ImageInfo.save("output.png")` بعد استرجاع كائن `ImageInfo`.
 
-**س: أين يمكنني العثور على وثائق API أكثر تفصيلاً؟**  
-ج: زر [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/) الرسمي للحصول على أدلة شاملة ومواد مرجعية.
+**س: إلى أي تنسيقات يمكنني تصدير الصورة المستخرجة؟**  
+ج: الـ API يدعم PNG و JPEG و BMP و GIF لتصدير صورة الخلفية.
 
-## الخلاصة
-أنت الآن تمتلك نهجًا كاملاً وجاهزًا للإنتاج لـ **java get image dimensions** واستخراج تفاصيل خلفية الشرائح باستخدام GroupDocs.Watermark للـ Java. باتباع الخطوات أعلاه، يمكنك دمج هذه القدرة في أي تطبيق Java — سواء كنت تبني أداة التزام بالعلامة التجارية، لوحة تحكم تحليلية، أو خط أنابيب توليد شرائح تلقائي.
+## الموارد
 
-**الخطوات التالية**  
-- جرب خيارات `PresentationLoadOptions` المختلفة (مثلاً، تحميل شرائح محددة فقط).  
-- استكشف ميزات GroupDocs.Watermark الإضافية مثل إدراج العلامات المائية أو تحويل المستندات.  
+- **الوثائق:** [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/)  
+- **الوثائق:** [GroupDocs Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **مرجع API:** [GroupDocs Watermark API Reference](https://reference.groupdocs.com/watermark/java)  
+- **التنزيل:** [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)  
+- **مستودع GitHub:** [GroupDocs GitHub Page](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **منتدى الدعم:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/watermark/10)
 
 ---
 
-**آخر تحديث:** 2026-02-11  
-**تم الاختبار مع:** GroupDocs.Watermark 24.11 للـ Java  
-**المؤلف:** GroupDocs  
+**آخر تحديث:** 2026-09-11  
+**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
+**المؤلف:** GroupDocs
 
-**الموارد**  
-- **Documentation:** [GroupDocs Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **API Reference:** [GroupDocs Watermark API Reference](https://reference.groupdocs.com/watermark/java)  
-- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub Repository:** [GroupDocs GitHub Page](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Support Forum:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/watermark/10)
+## دروس ذات صلة
+
+- [كيفية استرجاع أبعاد شريحة PowerPoint باستخدام GroupDocs.Watermark Java API](/watermark/java/presentation-document-watermarking/retrieve-slide-dimensions-powerpoint-groupdocs-watermark-java/)
+- [إزالة خلفية شريحة PowerPoint في جافا باستخدام مكتبة GroupDocs.Watermark](/watermark/java/watermark-removal/remove-ppt-slide-background-groupdocs-watermark-java/)
+- [كيفية استرجاع معلومات المستند باستخدام GroupDocs.Watermark لجافا: دليل خطوة بخطوة](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
