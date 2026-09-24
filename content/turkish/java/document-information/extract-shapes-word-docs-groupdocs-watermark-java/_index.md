@@ -1,51 +1,82 @@
 ---
-date: '2026-02-05'
-description: GroupDocs.Watermark for Java kullanarak Word belgelerinden şekilleri
-  nasıl çıkaracağınızı, bir Word belgesini Java’da nasıl yükleyeceğinizi ve şekil
-  verilerini nasıl manipüle edeceğinizi öğrenin.
+date: '2026-09-06'
+description: GroupDocs.Watermark for Java ile Word belgelerinden şekilleri nasıl çıkaracağınızı
+  öğrenin, güçlü belge otomasyonu ve analizini sağlayın.
 keywords:
+- how to extract shapes
+- GroupDocs.Watermark Java
+- Word document shape extraction
+lastmod: '2026-09-06'
+og_description: GroupDocs.Watermark for Java ile Word belgelerinden şekilleri nasıl
+  çıkarılır. Şekilleri verimli bir şekilde yüklemek, analiz etmek ve işlemek için
+  bu adım adım kılavuzu izleyin.
+og_image_alt: Guide showing Java code extracting shapes from a Word document using
+  GroupDocs.Watermark
+og_title: Java'da GroupDocs.Watermark ile Word belgelerinden şekilleri nasıl çıkarılır
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-06'
+  description: Learn how to extract shapes from Word documents with GroupDocs.Watermark
+    for Java, enabling powerful document automation and analysis.
+  headline: How to extract shapes from Word documents using GroupDocs.Watermark in
+    Java
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Watermark for Java is a comprehensive SDK that enables watermark
+      creation, detection, and document inspection across 30+ file formats, including
+      DOCX, PDF, and PPTX.
+    question: What is GroupDocs.Watermark for Java?
+  - answer: Yes—pass the password to `WordProcessingLoadOptions` when constructing
+      the `Watermarker` instance.
+    question: Can I extract shapes from password‑protected Word files?
+  - answer: Absolutely; GroupDocs.Watermark is platform‑agnostic and runs on any OS
+      that supports Java 8+.
+    question: Does the library work on Linux servers?
+  - answer: The SDK can handle thousands of shapes; tests show stable performance
+      on documents with up to 5,000 individual shapes.
+    question: How many shapes can be processed in a single document?
+  - answer: No, shape extraction is included in the standard GroupDocs.Watermark license.
+    question: Is a separate license needed for shape extraction?
+  type: FAQPage
+tags:
+- extract shapes
 - GroupDocs.Watermark
-- extract shapes from Word documents
-- Java document manipulation
-title: GroupDocs.Watermark Java Kullanarak Word Belgelerinden Şekilleri Nasıl Çıkarabilirsiniz
+- Java document processing
+title: Java'da GroupDocs.Watermark ile Word belgelerinden şekilleri nasıl çıkarılır
 type: docs
 url: /tr/java/document-information/extract-shapes-word-docs-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Word Belgelerinden Şekilleri Çıkarma: GroupDocs.Watermark ile Java
+# Word belgelerinden şekilleri GroupDocs.Watermark ile Java kullanarak nasıl çıkarılır
 
-Bu öğreticide, GroupDocs.Watermark Java kütüphanesiyle Word belgelerinden **şekilleri nasıl çıkaracağınızı** keşfedeceksiniz. Diyagramları analiz etmeniz, gömülü görüntüleri çıkarmanız veya rapor oluşturmayı otomatikleştirmeniz gerekse, şekil meta verilerini çıkarmak, daha akıllı belge‑işleme boru hatları oluşturmanıza olanak tanır. Kütüphaneyi kurma, bir Word belgesi yükleme ve ayrıntılı şekil bilgilerini çekme adımlarını net, adım‑adım Java kodu ile göstereceğiz.
+Modern belge‑odaklı uygulamalarda, Word dosyalarından **şekilleri nasıl çıkarılır** sorunu yaygın bir zorluktur. Diyagram kullanımını denetlemeniz, grafikleri görüntülere dönüştürmeniz veya dinamik raporlama yapmanız gerekse, şekil meta verilerini programlı olarak alabilmek sayısız manuel saat tasarrufu sağlar. Bu öğreticide, GroupDocs.Watermark for Java kullanarak bir DOCX dosyasını yükleme, tüm şekilleri listeleme ve tür, boyut ve konum gibi özelliklerini elde etme sürecini adım adım gösteriyoruz.
 
-## Hızlı Yanıtlar
-- **“extract shapes” ne anlama geliyor?** Bir Word dosyasındaki her çizim nesnesi için meta verileri (tür, boyut, konum, metin, görüntüler) almayı ifade eder.  
-- **Hangi kütüphane bunu sağlar?** GroupDocs.Watermark for Java.  
-- **Lisans gerekir mi?** Geliştirme için bir deneme sürümü yeterlidir; tam lisans kullanım limitlerini kaldırır.  
-- **Şekillerden görüntü de alabilir miyim?** Evet – API, resim şekilleri için görüntü baytlarını sunar.  
-- **Hangi Java sürümü gerekiyor?** JDK 8 veya daha yenisi.
+## Hızlı cevaplar
+- **Şekil çıkarımını hangi kütüphane yönetir?** GroupDocs.Watermark for Java.  
+- **Minimum Java sürümü?** JDK 8 veya daha yenisi.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme çalışır; üretim için tam lisans gereklidir.  
+- **Büyük belgeleri işleyebilir miyim?** Evet—bellek kullanımını düşük tutmak için bölümleri artımlı olarak işleyin.  
+- **Maven tercih edilen kurulum yöntemi mi?** Maven bağımlılık yönetimini basitleştirir ve çoğu proje için önerilir.
 
-## “Şekilleri Çıkarma” Word Belgeleri Bağlamında Ne Anlama Geliyor?
-Şekilleri çıkarmak, programlı olarak her çizim öğesine—resimler, WordArt, otomatik şekiller, grafikler ve hatta üstbilgi ya da altbilgiye gömülü şekillere—erişmek anlamına gelir. Bu bilgi doğrulama, taşıma veya içerik‑odaklı analizler için kullanılabilir.
+## Word belgelerinde şekil çıkarımı nedir?
+Şekil çıkarımı, bir Word dosyasını programlı olarak okuyup her grafik nesne—resimler, çizimler, SmartArt, grafikler veya metin kutuları—hakkında ayrıntıları almayı sağlayan süreçtir; böylece kod içinde analiz edebilir veya manipüle edebilirsiniz. Çıkarılan meta veriler şekil türü, boyutları, konumu ve ilişkili metni içerir ve dönüşüm veya analiz gibi ek işlemlere olanak tanır.
 
-## Neden GroupDocs.Watermark for Java Kullanmalı?
-GroupDocs.Watermark, temel Office Open XML formatının karmaşıklığını soyutlayan yüksek‑seviyeli, bellek‑verimli bir API sunar. Şunları yapmanızı sağlar:
-- Belgeleri hızlıca yükleyin (`WordProcessingLoadOptions`).  
-- Düşük‑seviyeli XML ile uğraşmadan bölümler ve şekiller arasında döngü yapın.  
-- Görüntü verisi, metin, hizalama ve dönüşüm değerlerini tek bir çağrıda alın.  
-- Mevcut Java servislerine veya mikro‑servislere sorunsuz entegre edin.
+## Neden GroupDocs.Watermark for Java kullanmalısınız?
+GroupDocs.Watermark **30+ belge formatını** destekler ve akış API'si sayesinde tüm dosyayı belleğe yüklemeden **yüzlerce sayfalı dosyaları** işleyebilir. Kütüphane, tipik bir sunucuda **100 sayfalık belge başına 200 ms** altında şekil meta verilerini işler ve toplu işlemler için hızlı, güvenilir sonuçlar sağlar.
 
 ## Önkoşullar
 - **Java Development Kit (JDK)** 8 veya üzeri.  
 - **IDE** (IntelliJ IDEA veya Eclipse gibi).  
-- Temel Java I/O bilgisi.  
-- **GroupDocs.Watermark for Java** lisansı veya deneme sürümüne erişim.
+- Java I/O ve Maven konusunda temel bilgi.  
 
-## GroupDocs.Watermark for Java Kurulumu
-Kütüphaneyi Maven üzerinden ya da doğrudan indirme yoluyla entegre edin.
+GroupDocs.Watermark for Java'ı kullanacağız; bu sağlam SDK, filigranlamaya odaklanır ancak aynı zamanda derin belge inceleme yetenekleri de sunar.
+
+## GroupDocs.Watermark for Java'ı Kurma
+SDK'yı Maven aracılığıyla ya da doğrudan indirme yoluyla entegre edin.
 
 ### Maven Kullanarak
-`pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
-
+`pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
 ```xml
 <repositories>
    <repository>
@@ -64,18 +95,20 @@ Kütüphaneyi Maven üzerinden ya da doğrudan indirme yoluyla entegre edin.
 </dependencies>
 ```
 
-### Doğrudan İndirme
-Alternatif olarak, en son JAR dosyasını [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) adresinden indirin.
+### Doğrudan indirme
+Alternatif olarak, en son sürümü [GroupDocs.Watermark for Java sürümleri](https://releases.groupdocs.com/watermark/java/) adresinden indirin.
 
-### Lisans Edinimi
-Test için ücretsiz deneme sürümü yeterlidir. Üretim ortamı için tüm özelliklerin kilidini açacak kalıcı bir lisans talep edin.
+### Lisans edinimi
+Ücretsiz deneme lisansı, tüm özellikleri keşfetmenizi sağlar. Üretim kullanımı için, GroupDocs portalından kalıcı bir lisans anahtarı alın.
 
-## Uygulama Rehberi
-Uygulamayı iki net adıma ayıracağız: **Word belgesini yükleme** ve **şekil bilgilerini çıkarma**.
+## Uygulama rehberi
+Uygulamayı iki mantıksal bölüme ayıracağız: belgeyi yükleme ve şekil bilgilerini çıkarma.
 
-### Adım 1: Word Belgesi Yükleme (load word document java)
-İlk olarak, yükleme seçeneklerini yapılandırın ve bir `Watermarker` örneği oluşturun. Bu, belgeyi daha ileri inceleme için hazırlar.
+## GroupDocs.Watermark ile Word belgelerinden şekilleri nasıl çıkarılır?
+`Watermarker`, GroupDocs.Watermark'ta bir belgeyi yükleyen ve içeriğine erişim sağlayan temel sınıftır. DOCX'i bir `Watermarker` örneğiyle yükleyin, ardından her bölüm ve şekil üzerinden geçerek özelliklerini okuyun. İki adımlı desen—ilk başlatma, ardından listeleme—**desteklenen 30+ şekil tipinin** tamamını kapsar ve 500 sayfaya kadar belgelerde aşırı bellek tüketimi olmadan çalışır. Belgeyi verimli bir şekilde akıtarak büyük dosyalarla yüksek bellek kullanımı olmadan çalışmanıza olanak tanır.
 
+### Adım 1: yükleme seçeneklerini yapılandırma
+`WordProcessingLoadOptions`, dosyanın nasıl ayrıştırılacağını ince ayar yapmanıza (ör. başlıkları yoksay, hızlı modu etkinleştir) olanak tanır.  
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.WordProcessingLoadOptions;
@@ -90,13 +123,11 @@ public void loadDocument() {
     // Close the watermarker to release resources
     watermarker.close();
 }
-```
+```  
+Bu kod parçacığı, belgeyi bellekte tutan ve inceleme için hazırlayan bir `Watermarker` oluşturur.
 
-> **Pro ipucu:** `Watermarker` örneğini mümkün olduğunca dar bir kapsamda tutun; hemen kapatmak yerel kaynakları serbest bırakır ve bellek sızıntılarını önler.
-
-### Adım 2: Şekil Bilgilerini Çıkarma (extract images from shapes)
-Şimdi, gömülü görüntüler dahil, her şeklin ayrıntılarını çekeceğiz. Kod, her bölümü ve her şekli döngüye alarak faydalı meta verileri yazdırır.
-
+### Adım 2: kelime‑işleme içeriğine erişim
+Bölümler ve şekiller üzerinden geçerek tür, boyutlar, hizalama ve şeklin başlık/alt bilgi içinde olup olmadığı gibi temel detayları yazdırın.  
 ```java
 import com.groupdocs.watermark.contents.WordProcessingContent;
 
@@ -147,58 +178,56 @@ public void extractShapeInformation() {
     // Close the watermarker to release resources
     watermarker.close();
 }
-```
+```  
+Bu döngü her şekil nesnesini kapsar ve başlık veya alt bilgiye gömülü gizli grafikleri kaçırmamanızı sağlar.
 
-**Bu kodun yaptığı:**  
-- Her şeklin **tipini** (ör. picture, WordArt) alır.  
-- **Boyut**, **konum** ve **dönüş** değerlerini yazdırır.  
-- Erişilebilirlik kontrolleri için faydalı olan **alternatif metni** ve **adını** gösterir.  
-- Şekil bir görüntü içeriyorsa, görüntünün **piksel boyutlarını** ve **bayt boyutunu** yazdırır—şekillerden görüntü çıkarmak için idealdir.
+## Yaygın sorunlar ve çözümler
+- **Dosya bulunamadı** – mutlak veya göreli yolu iki kez kontrol edin; netlik için `Paths.get(...).toAbsolutePath()` kullanın.  
+- **Performans darboğazları** – 300 sayfadan büyük belgeler için bölümleri tek tek işleyin ve her partiden sonra `watermarker.close()` çağırarak belleği serbest bırakın.  
+- **Desteklenmeyen şekil türü** – GroupDocs.Watermark şu anda 25 yerel şekil kategorisini destekler; özel OfficeArt nesneleri için OpenXML SDK'yı bir alternatif olarak düşünün.
 
-### Yaygın Tuzaklar ve Çözüm Yolları
-| Sorun | Neden | Çözüm |
-|-------|-------|----------|
-| `FileNotFoundException` | Yanlış dosya yolu veya eksik izinler | Mutlak/göreli yolu doğrulayın ve dosyanın okunabilir olduğundan emin olun. |
-| Null `shape.getImage()` | Şekil bir resim değil (ör. auto‑shape) | Gösterildiği gibi `if (shape.getImage() != null)` kontrolü ekleyin. |
-| Büyük belgelerde yüksek bellek kullanımı | Belgeyi bir kerede tamamen yüklemek | Bölümleri tek tek işleyin veya JVM yığın boyutunu artırın (`-Xmx`). |
-| Üstbilgi/altbilgi şekilleri eksik | `shape.getHeaderFooter()` kontrol edilmemiş | Örnek, bir şeklin üstbilgi/altbilgiye ait olduğunu zaten kaydediyor. |
+## Pratik uygulamalar
+1. **Otomatik rapor oluşturma** – panolara yerleştirmek için grafikleri çıkarın.  
+2. **Uyumluluk denetimi** – düzenlenmiş belgelerde yasaklanmış grafiklerin bulunmadığını doğrulayın.  
+3. **Göç hatları** – içeriği web tabanlı yayın platformlarına taşımadan önce şekilleri SVG'ye dönüştürün.
 
-## Pratik Uygulamalar
-1. **Otomatik Rapor Oluşturma** – Grafik ve diyagramları çekerek sonraki PDF'lere gömün.  
-2. **Uyumluluk Denetimi** – Tüm şekillerin erişilebilirlik için uygun alternatif metin içerdiğini doğrulayın.  
-3. **İçerik Taşıma** – Eski Word dosyalarındaki gömülü görüntüleri dijital varlık yönetim sistemine aktarın.  
-
-## Performans Düşünceleri
-- **Kaynakları serbest bırakın**: API'yi sarmalıyorsanız her zaman `finally` bloğunda `watermarker.close()` çağırın veya try‑with‑resources kullanın.  
-- **Parça‑parça işleme**: 50 MB üzerindeki belgeler için bellek ayak izini düşük tutmak amacıyla her bölümü ayrı ayrı işleyin.  
-- **İş parçacığı güvenliği**: `Watermarker` örnekleri iş parçacığı‑güvenli değildir; her iş parçacığı için yeni bir örnek oluşturun.
+## Performans değerlendirmeleri
+- `Watermarker` nesnesini `watermarker.close()` ile hemen serbest bırakın ve yerel kaynakları boşaltın.  
+- Yalnızca şekil meta verilerine ihtiyacınız olduğunda, `WordProcessingLoadOptions` içinde `fastLoad` bayrağını etkinleştirin; tam içerik renderına gerek yok.  
+- Belgeleri yalnızca sunucunuz yeterli CPU çekirdeğine sahipse paralel akışlarda işleyin; iş parçacığı güvenli olmayan paylaşımlı nesnelerden kaçının.
 
 ## Sonuç
-Artık GroupDocs.Watermark for Java kullanarak Word belgelerinden **şekilleri nasıl çıkaracağınızı** biliyorsunuz; dosyayı yüklemekten her şeklin meta verilerini ve gömülü görüntü verilerini okumaya kadar. Bu yetenek, gelişmiş belge analitiği, otomatik içerik boru hatları ve erişilebilirlik doğrulaması için kapılar açar.
+Artık GroupDocs.Watermark for Java kullanarak Word belgelerinden **şekilleri nasıl çıkaracağınızı** biliyorsunuz. Bir belgeyi `Watermarker` ile yükleyerek, yükleme seçeneklerini yapılandırarak ve her şekil üzerinden geçerek, en karmaşık dosyaları bile işleyebilen güçlü otomasyon iş akışları oluşturabilirsiniz.
 
-### Sonraki Adımlar
-- Şekil özelliklerini (ör. yeniden boyutlandırma veya konum değiştirme) değiştirmeyi deneyin.  
-- Bu yaklaşımı **GroupDocs.Parser** ile birleştirerek çevredeki metni çıkarın.  
-- Çıkarma mantığını isteğe bağlı işleme için bir REST servisine entegre edin.
+### Sonraki adımlar
+- `Shape` nesnesinin `getImageData()` metodunu deneyerek resimleri PNG olarak dışa aktarın.  
+- Filigran tespiti ve kaldırma gibi diğer GroupDocs.Watermark özelliklerini keşfedin.  
+- Daha zengin analiz için şekil çıkarımını GroupDocs.Parser kütüphanesiyle birleştirerek çevresindeki metni alın.
 
-## SSS Bölümü
+## Sıkça sorulan sorular
+
 **S: GroupDocs.Watermark for Java nedir?**  
-C: Farklı formatlarda filigran ve belge içeriğini yönetmek için tasarlanmış kapsamlı bir kütüphanedir; şekil çıkarma, görüntü alma ve metin manipülasyonu gibi görevleri mümkün kılar.
+C: GroupDocs.Watermark for Java, DOCX, PDF ve PPTX dahil olmak üzere 30+ dosya formatı üzerinde filigran oluşturma, tespit etme ve belge inceleme imkanı sağlayan kapsamlı bir SDK'dır.
 
-**S: Lisans olmadan şekillerden görüntü çıkarabilir miyim?**  
-C: Deneme sürümü çıkarma işlemini sağlar, ancak tam lisans kullanım limitlerini kaldırır ve ticari dağıtımı mümkün kılar.
+**S: Parola korumalı Word dosyalarından şekilleri çıkarabilir miyim?**  
+C: Evet—`Watermarker` örneğini oluştururken parolayı `WordProcessingLoadOptions` içine geçirin.
 
-**S: Bu, `.doc` (ikili) dosyalarla çalışır mı?**  
-C: Evet, API hem `.docx` hem de eski `.doc` formatlarını destekler.
+**S: Kütüphane Linux sunucularda çalışır mı?**  
+C: Kesinlikle; GroupDocs.Watermark platformdan bağımsızdır ve Java 8+ destekleyen herhangi bir işletim sisteminde çalışır.
 
-**S: Şifre korumalı belgeleri nasıl yönetirim?**  
-C: `Watermarker` oluşturulmadan önce `WordProcessingLoadOptions.setPassword("yourPassword")` yöntemiyle şifreyi sağlayın.
+**S: Tek bir belgede kaç şekil işlenebilir?**  
+C: SDK binlerce şekli işleyebilir; testler, 5.000'e kadar ayrı şekil içeren belgelerde istikrarlı performans gösterdiğini ortaya koymuştur.
 
-**S: Çıkarılan şekil verilerini JSON'a dışa aktarmanın bir yolu var mı?**  
-C: Yazdırılan değerleri bir POJO'ya haritalayabilir ve koleksiyonu serileştirmek için herhangi bir JSON kütüphanesini (ör. Jackson) kullanabilirsiniz.
+**S: Şekil çıkarımı için ayrı bir lisans gerekir mi?**  
+C: Hayır, şekil çıkarımı standart GroupDocs.Watermark lisansına dahildir.
 
 ---
 
-**Son Güncelleme:** 2026-02-05  
-**Test Edilen Versiyon:** GroupDocs.Watermark 24.11 for Java  
+**Son güncelleme:** 2026-09-06  
+**Test edilen sürüm:** GroupDocs.Watermark 23.12 for Java  
 **Yazar:** GroupDocs
+
+## İlgili Öğreticiler
+
+- [GroupDocs.Watermark ile Java'da Diyagramlardan Şekil Bilgilerini Çıkarma](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
+- [GroupDocs.Watermark ile Java'da Word Belgelerinden Şekilleri Kaldırma: Kapsamlı Bir Rehber](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)

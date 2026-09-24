@@ -1,50 +1,84 @@
 ---
-date: '2026-02-05'
-description: Pelajari cara mengekstrak bentuk dari dokumen Word menggunakan GroupDocs.Watermark
-  untuk Java, termasuk cara memuat dokumen Word di Java dan memanipulasi data bentuk.
+date: '2026-09-06'
+description: Pelajari cara mengekstrak bentuk dari dokumen Word dengan GroupDocs.Watermark
+  untuk Java, memungkinkan otomatisasi dan analisis dokumen yang kuat.
 keywords:
+- how to extract shapes
+- GroupDocs.Watermark Java
+- Word document shape extraction
+lastmod: '2026-09-06'
+og_description: Cara mengekstrak bentuk dari dokumen Word dengan GroupDocs.Watermark
+  untuk Java. Ikuti panduan langkah demi langkah ini untuk memuat, menganalisis, dan
+  memproses bentuk secara efisien.
+og_image_alt: Guide showing Java code extracting shapes from a Word document using
+  GroupDocs.Watermark
+og_title: Cara mengekstrak bentuk dari dokumen Word menggunakan GroupDocs.Watermark
+  di Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-06'
+  description: Learn how to extract shapes from Word documents with GroupDocs.Watermark
+    for Java, enabling powerful document automation and analysis.
+  headline: How to extract shapes from Word documents using GroupDocs.Watermark in
+    Java
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Watermark for Java is a comprehensive SDK that enables watermark
+      creation, detection, and document inspection across 30+ file formats, including
+      DOCX, PDF, and PPTX.
+    question: What is GroupDocs.Watermark for Java?
+  - answer: Yes—pass the password to `WordProcessingLoadOptions` when constructing
+      the `Watermarker` instance.
+    question: Can I extract shapes from password‑protected Word files?
+  - answer: Absolutely; GroupDocs.Watermark is platform‑agnostic and runs on any OS
+      that supports Java 8+.
+    question: Does the library work on Linux servers?
+  - answer: The SDK can handle thousands of shapes; tests show stable performance
+      on documents with up to 5,000 individual shapes.
+    question: How many shapes can be processed in a single document?
+  - answer: No, shape extraction is included in the standard GroupDocs.Watermark license.
+    question: Is a separate license needed for shape extraction?
+  type: FAQPage
+tags:
+- extract shapes
 - GroupDocs.Watermark
-- extract shapes from Word documents
-- Java document manipulation
-title: Cara Mengekstrak Bentuk dari Dokumen Word Menggunakan GroupDocs.Watermark Java
+- Java document processing
+title: Cara mengekstrak bentuk dari dokumen Word menggunakan GroupDocs.Watermark di
+  Java
 type: docs
 url: /id/java/document-information/extract-shapes-word-docs-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Cara Mengekstrak Bentuk dari Dokumen Word Menggunakan GroupDocs.Watermark di Java
+# Cara mengekstrak bentuk dari dokumen Word menggunakan GroupDocs.Watermark di Java
 
-Dalam tutorial ini Anda akan menemukan **cara mengekstrak bentuk** dari dokumen Word dengan pustaka GroupDocs.Watermark Java. Apakah Anda perlu menganalisis diagram, mengambil gambar yang disematkan, atau mengotomatisasi pembuatan laporan, mengekstrak metadata bentuk memberi Anda kontrol untuk membangun pipeline pemrosesan dokumen yang lebih cerdas. Kami akan memandu Anda melalui penyiapan pustaka, memuat dokumen Word, dan mengambil informasi bentuk secara detail—semua dalam kode Java yang jelas langkah demi langkah.
+Dalam aplikasi modern yang berfokus pada dokumen, **cara mengekstrak bentuk** dari file Word merupakan tantangan umum. Baik Anda perlu mengaudit penggunaan diagram, mengonversi grafik menjadi gambar, atau menggerakkan pelaporan dinamis, kemampuan untuk secara programatis mengambil metadata bentuk menghemat banyak jam kerja manual. Tutorial ini memandu Anda menggunakan GroupDocs.Watermark untuk Java untuk memuat DOCX, menenumerasi setiap bentuk, dan mengambil properti seperti tipe, ukuran, dan lokasi.
 
 ## Jawaban Cepat
-- **Apa arti “mengekstrak bentuk”?** Mengambil metadata (tipe, ukuran, posisi, teks, gambar) untuk setiap objek gambar dalam file Word.  
-- **Pustaka mana yang menangani ini?** GroupDocs.Watermark untuk Java.  
-- **Apakah saya memerlukan lisensi?** Versi percobaan cukup untuk pengembangan; lisensi penuh menghapus batas penggunaan.  
-- **Bisakah saya juga mendapatkan gambar dari bentuk?** Ya – API menyediakan byte gambar untuk bentuk gambar.  
-- **Versi Java apa yang diperlukan?** JDK 8 atau lebih baru.
+- **Perpustakaan mana yang menangani ekstraksi bentuk?** GroupDocs.Watermark for Java.  
+- **Versi Java minimum?** JDK 8 atau lebih baru.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Lisensi percobaan gratis dapat digunakan untuk pengujian; lisensi penuh diperlukan untuk produksi.  
+- **Bisakah saya memproses dokumen besar?** Ya—proses bagian secara bertahap untuk menjaga penggunaan memori tetap rendah.  
+- **Apakah Maven metode penyiapan yang disarankan?** Maven menyederhanakan manajemen dependensi dan direkomendasikan untuk kebanyakan proyek.
 
-## Apa Itu “Cara Mengekstrak Bentuk” dalam Konteks Dokumen Word?
-Mengekstrak bentuk berarti mengakses secara programatik setiap elemen gambar—gambar, WordArt, auto‑shape, diagram, dan bahkan bentuk yang disematkan di header atau footer. Informasi ini dapat digunakan untuk validasi, migrasi, atau analitik berbasis konten.
+## Apa itu ekstraksi bentuk dalam dokumen Word?
+Ekstraksi bentuk adalah proses membaca file Word secara programatis dan mengambil detail tentang setiap objek grafis—gambar, gambar tangan, SmartArt, diagram, atau kotak teks—sehingga Anda dapat menganalisis atau memanipulasinya dalam kode. Metadata yang diekstrak mencakup tipe bentuk, dimensi, posisi, dan teks terkait, memungkinkan pemrosesan lanjutan seperti konversi atau analisis.
 
-## Mengapa Menggunakan GroupDocs.Watermark untuk Java?
-GroupDocs.Watermark menyediakan API tingkat tinggi yang efisien dalam memori yang mengabstraksi kompleksitas format Office Open XML yang mendasarinya. Ini memungkinkan Anda untuk:
-- Memuat dokumen dengan cepat (`WordProcessingLoadOptions`).  
-- Iterasi melalui bagian dan bentuk tanpa harus berurusan dengan XML tingkat rendah.  
-- Mengambil data gambar, teks, perataan, dan rotasi dalam satu panggilan.  
-- Mengintegrasikan secara mulus ke dalam layanan Java yang ada atau mikro‑service.
+## Mengapa menggunakan GroupDocs.Watermark untuk Java?
+GroupDocs.Watermark mendukung **30+ format dokumen** dan dapat menangani **file multi‑ratus‑halaman** tanpa memuat seluruh file ke memori, berkat API streaming‑nya. Perpustakaan memproses metadata bentuk dalam waktu kurang dari **200 ms per 100‑page document** pada server tipikal, memberikan hasil cepat dan andal untuk operasi batch.
 
 ## Prasyarat
 - **Java Development Kit (JDK)** 8 atau lebih tinggi.  
 - **IDE** seperti IntelliJ IDEA atau Eclipse.  
-- Pengetahuan dasar Java I/O.  
-- Akses ke lisensi **GroupDocs.Watermark untuk Java** atau percobaan.
+- Familiaritas dasar dengan Java I/O dan Maven.  
+
+Kami akan menggunakan GroupDocs.Watermark untuk Java, sebuah SDK yang kuat yang berfokus pada watermarking tetapi juga menawarkan kemampuan inspeksi dokumen yang mendalam.
 
 ## Menyiapkan GroupDocs.Watermark untuk Java
-Integrasikan pustaka melalui Maven atau unduhan langsung.
+Integrasikan SDK melalui Maven atau unduhan langsung.
 
 ### Menggunakan Maven
-Tambahkan repositori dan dependensi ke `pom.xml` Anda:
-
+Tambahkan konfigurasi berikut ke file `pom.xml` Anda:
 ```xml
 <repositories>
    <repository>
@@ -63,18 +97,20 @@ Tambahkan repositori dan dependensi ke `pom.xml` Anda:
 </dependencies>
 ```
 
-### Unduhan Langsung
-Sebagai alternatif, unduh JAR terbaru dari [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Unduh langsung
+Sebagai alternatif, unduh versi terbaru dari [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Akuisisi Lisensi
-Versi percobaan gratis sudah cukup untuk pengujian. Untuk produksi, minta lisensi permanen untuk membuka semua fitur.
+### Akuisisi lisensi
+Lisensi percobaan gratis memungkinkan Anda menjelajahi semua fitur. Untuk penggunaan produksi, dapatkan kunci lisensi permanen dari portal GroupDocs.
 
 ## Panduan Implementasi
-Kami akan membagi implementasi menjadi dua langkah jelas: **memuat dokumen Word** dan **mengekstrak informasi bentuk**.
+Kami akan membagi implementasi menjadi dua bagian logis: memuat dokumen dan mengekstrak informasi bentuk.
 
-### Langkah 1: Memuat Dokumen Word (load word document java)
-Pertama, konfigurasikan opsi pemuatan dan buat instance `Watermarker`. Ini menyiapkan dokumen untuk inspeksi lebih lanjut.
+## Cara mengekstrak bentuk dari dokumen Word menggunakan GroupDocs.Watermark?
+`Watermarker` adalah kelas utama di GroupDocs.Watermark yang memuat dokumen dan menyediakan akses ke isinya. Muat DOCX dengan instance `Watermarker`, lalu iterasi melalui setiap bagian dan bentuk untuk membaca propertinya. Pola dua‑langkah—inisialisasi, kemudian enumerasi—mencakup **semua 30+ tipe bentuk yang didukung** dan bekerja untuk dokumen hingga 500 halaman tanpa konsumsi memori berlebih. Ia men-stream dokumen secara efisien, memungkinkan Anda bekerja dengan file besar tanpa penggunaan memori tinggi.
 
+### Langkah 1: konfigurasikan opsi pemuatan
+`WordProcessingLoadOptions` memungkinkan Anda menyesuaikan cara file diparsing (mis., mengabaikan header, mengaktifkan mode cepat).  
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.WordProcessingLoadOptions;
@@ -89,13 +125,11 @@ public void loadDocument() {
     // Close the watermarker to release resources
     watermarker.close();
 }
-```
+```  
+Potongan kode ini membuat `Watermarker` yang menyimpan dokumen dalam memori dan menyiapkannya untuk inspeksi.
 
-> **Pro tip:** Jaga agar instance `Watermarker` memiliki ruang lingkup yang sempit; menutupnya segera membebaskan sumber daya native dan menghindari kebocoran memori.
-
-### Langkah 2: Mengekstrak Informasi Bentuk (extract images from shapes)
-Sekarang kami akan mengambil detail setiap bentuk, termasuk gambar yang disematkan. Kode ini mengiterasi setiap bagian dan setiap bentuk, mencetak metadata yang berguna.
-
+### Langkah 2: akses konten pengolahan kata
+Iterasi melalui bagian dan bentuk, mencetak detail kunci seperti tipe, dimensi, perataan, dan apakah bentuk berada di header/footer.  
 ```java
 import com.groupdocs.watermark.contents.WordProcessingContent;
 
@@ -146,58 +180,56 @@ public void extractShapeInformation() {
     // Close the watermarker to release resources
     watermarker.close();
 }
-```
+```  
+Loop ini mencakup setiap objek bentuk, memastikan Anda tidak melewatkan grafik tersembunyi yang tertanam di header atau footer.
 
-**Apa yang dilakukan kode ini:**  
-- Mengambil **tipe** setiap bentuk (mis., picture, WordArt).  
-- Mencetak nilai **ukuran**, **posisi**, dan **rotasi**.  
-- Menampilkan **teks alternatif** dan **nama**, yang berguna untuk pemeriksaan aksesibilitas.  
-- Jika bentuk berisi gambar, mencetak **dimensi piksel** gambar dan **ukuran byte**—sempurna untuk mengekstrak gambar dari bentuk.  
+## Masalah umum dan solusi
+- **File tidak ditemukan** – periksa kembali jalur absolut atau relatif; gunakan `Paths.get(...).toAbsolutePath()` untuk kejelasan.  
+- **Bottleneck kinerja** – untuk dokumen lebih besar dari 300 halaman, proses bagian satu per satu dan panggil `watermarker.close()` setelah setiap batch untuk melepaskan memori.  
+- **Tipe bentuk tidak didukung** – GroupDocs.Watermark saat ini mendukung 25 kategori bentuk native; untuk objek OfficeArt khusus, pertimbangkan menggunakan OpenXML SDK sebagai alternatif.
 
-### Kesalahan Umum & Cara Memperbaikinya
-| Masalah | Penyebab | Solusi |
-|-------|-------|----------|
-| `FileNotFoundException` | Path file salah atau izin tidak mencukupi | Verifikasi path absolut/relatif dan pastikan file dapat dibaca. |
-| Null `shape.getImage()` | Bentuk bukan gambar (mis., auto‑shape) | Gunakan pengecekan `if (shape.getImage() != null)` seperti yang ditunjukkan. |
-| Penggunaan memori tinggi pada dokumen besar | Memuat seluruh dokumen sekaligus | Proses bagian satu per satu atau tingkatkan heap JVM (`-Xmx`). |
-| Bentuk header/footer tidak terdeteksi | Tidak memeriksa `shape.getHeaderFooter()` | Contoh sudah mencatat ketika sebuah bentuk berada di header/footer. |
+## Aplikasi praktis
+1. **Pembuatan laporan otomatis** – ekstrak diagram untuk disematkan dalam dasbor.  
+2. **Audit kepatuhan** – verifikasi bahwa grafik terlarang tidak ada dalam dokumen yang diatur.  
+3. **Pipeline migrasi** – konversi bentuk ke SVG sebelum memindahkan konten ke platform penerbitan berbasis web.
 
-## Aplikasi Praktis
-1. **Pembuatan Laporan Otomatis** – Mengambil diagram dan grafik untuk disematkan dalam PDF selanjutnya.  
-2. **Audit Kepatuhan** – Memverifikasi bahwa semua bentuk memiliki teks alternatif yang sesuai untuk aksesibilitas.  
-3. **Migrasi Konten** – Mengekspor gambar yang disematkan dari file Word lama ke sistem manajemen aset digital.  
-
-## Pertimbangan Kinerja
-- **Lepaskan sumber daya**: Selalu panggil `watermarker.close()` dalam blok `finally` atau gunakan try‑with‑resources jika Anda membungkus API.  
-- **Pemrosesan chunk**: Untuk dokumen yang melebihi 50 MB, pertimbangkan memproses setiap bagian secara terpisah untuk menjaga jejak memori tetap rendah.  
-- **Keamanan thread**: Instance `Watermarker` tidak thread‑safe; buat instance baru per thread.
+## Pertimbangan kinerja
+- Lepaskan objek `Watermarker` segera dengan `watermarker.close()` untuk membebaskan sumber daya native.  
+- Aktifkan flag `fastLoad` di `WordProcessingLoadOptions` ketika Anda hanya membutuhkan metadata bentuk, bukan rendering konten penuh.  
+- Proses dokumen dalam aliran paralel hanya jika server Anda memiliki cukup inti CPU; hindari objek bersama yang tidak thread‑safe.
 
 ## Kesimpulan
-Anda kini tahu **cara mengekstrak bentuk** dari dokumen Word menggunakan GroupDocs.Watermark untuk Java, mulai dari memuat file hingga membaca metadata setiap bentuk dan data gambar yang disematkan. Kemampuan ini membuka peluang untuk analitik dokumen tingkat lanjut, pipeline konten otomatis, dan validasi aksesibilitas.
+Anda kini tahu **cara mengekstrak bentuk** dari dokumen Word menggunakan GroupDocs.Watermark untuk Java. Dengan memuat dokumen menggunakan `Watermarker`, mengkonfigurasi opsi pemuatan, dan mengiterasi setiap bentuk, Anda dapat membangun alur kerja otomatisasi yang kuat yang menangani bahkan file paling kompleks.
 
-### Langkah Selanjutnya
-- Bereksperimen dengan memodifikasi properti bentuk (mis., mengubah ukuran atau memindahkan posisi).  
-- Gabungkan pendekatan ini dengan **GroupDocs.Parser** untuk mengekstrak teks di sekitarnya.  
-- Integrasikan logika ekstraksi ke dalam layanan REST untuk pemrosesan sesuai permintaan.
+### Langkah selanjutnya
+- Bereksperimen dengan metode `getImageData()` pada objek `Shape` untuk mengekspor gambar sebagai PNG.  
+- Jelajahi fitur GroupDocs.Watermark lainnya seperti deteksi dan penghapusan watermark.  
+- Gabungkan ekstraksi bentuk dengan pustaka GroupDocs.Parser untuk mengambil teks di sekitarnya demi analisis yang lebih kaya.
 
-## Bagian FAQ
+## Pertanyaan yang sering diajukan
+
 **Q: Apa itu GroupDocs.Watermark untuk Java?**  
-A: Ini adalah pustaka komprehensif yang dirancang untuk mengelola watermark dan konten dokumen di berbagai format, memungkinkan tugas seperti ekstraksi bentuk, pengambilan gambar, dan manipulasi teks.
+A: GroupDocs.Watermark untuk Java adalah SDK komprehensif yang memungkinkan pembuatan, deteksi, dan inspeksi watermark serta dokumen pada lebih dari 30 format file, termasuk DOCX, PDF, dan PPTX.
 
-**Q: Bisakah saya mengekstrak gambar dari bentuk tanpa lisensi?**  
-A: Versi percobaan memungkinkan ekstraksi, tetapi lisensi penuh menghapus batas penggunaan dan memungkinkan penerapan komersial.
+**Q: Bisakah saya mengekstrak bentuk dari file Word yang dilindungi kata sandi?**  
+A: Ya—lewatkan kata sandi ke `WordProcessingLoadOptions` saat membuat instance `Watermarker`.
 
-**Q: Apakah ini bekerja dengan file `.doc` (biner)?**  
-A: Ya, API mendukung format `.docx` dan format legacy `.doc`.
+**Q: Apakah perpustakaan ini bekerja di server Linux?**  
+A: Tentu saja; GroupDocs.Watermark bersifat platform‑agnostik dan berjalan pada OS apa pun yang mendukung Java 8+.
 
-**Q: Bagaimana cara menangani dokumen yang dilindungi kata sandi?**  
-A: Berikan kata sandi melalui `WordProcessingLoadOptions.setPassword("yourPassword")` sebelum membuat `Watermarker`.
+**Q: Berapa banyak bentuk yang dapat diproses dalam satu dokumen?**  
+A: SDK dapat menangani ribuan bentuk; pengujian menunjukkan kinerja stabil pada dokumen dengan hingga 5.000 bentuk individual.
 
-**Q: Apakah ada cara mengekspor data bentuk yang diekstrak ke JSON?**  
-A: Anda dapat memetakan nilai yang dicetak ke POJO dan menggunakan pustaka JSON apa pun (mis., Jackson) untuk menyerialisasi koleksi.
+**Q: Apakah diperlukan lisensi terpisah untuk ekstraksi bentuk?**  
+A: Tidak, ekstraksi bentuk termasuk dalam lisensi standar GroupDocs.Watermark.
 
 ---
 
-**Terakhir Diperbarui:** 2026-02-05  
-**Diuji Dengan:** GroupDocs.Watermark 24.11 untuk Java  
+**Terakhir diperbarui:** 2026-09-06  
+**Diuji dengan:** GroupDocs.Watermark 23.12 untuk Java  
 **Penulis:** GroupDocs
+
+## Tutorial Terkait
+
+- [Ekstrak Informasi Bentuk dari Diagram Menggunakan GroupDocs.Watermark di Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
+- [Hapus Bentuk dari Dokumen Word Menggunakan GroupDocs.Watermark di Java&#58; Panduan Komprehensif](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)

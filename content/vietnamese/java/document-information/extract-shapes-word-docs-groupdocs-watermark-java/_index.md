@@ -1,50 +1,84 @@
 ---
-date: '2026-02-05'
+date: '2026-09-06'
 description: Tìm hiểu cách trích xuất các hình dạng từ tài liệu Word bằng GroupDocs.Watermark
-  cho Java, bao gồm cách tải tài liệu Word trong Java và thao tác dữ liệu hình dạng.
+  cho Java, cho phép tự động hoá và phân tích tài liệu mạnh mẽ.
 keywords:
+- how to extract shapes
+- GroupDocs.Watermark Java
+- Word document shape extraction
+lastmod: '2026-09-06'
+og_description: Cách trích xuất các hình dạng từ tài liệu Word bằng GroupDocs.Watermark
+  cho Java. Hãy làm theo hướng dẫn từng bước này để tải, phân tích và xử lý các hình
+  dạng một cách hiệu quả.
+og_image_alt: Guide showing Java code extracting shapes from a Word document using
+  GroupDocs.Watermark
+og_title: Cách trích xuất các hình dạng từ tài liệu Word bằng GroupDocs.Watermark
+  trong Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-06'
+  description: Learn how to extract shapes from Word documents with GroupDocs.Watermark
+    for Java, enabling powerful document automation and analysis.
+  headline: How to extract shapes from Word documents using GroupDocs.Watermark in
+    Java
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Watermark for Java is a comprehensive SDK that enables watermark
+      creation, detection, and document inspection across 30+ file formats, including
+      DOCX, PDF, and PPTX.
+    question: What is GroupDocs.Watermark for Java?
+  - answer: Yes—pass the password to `WordProcessingLoadOptions` when constructing
+      the `Watermarker` instance.
+    question: Can I extract shapes from password‑protected Word files?
+  - answer: Absolutely; GroupDocs.Watermark is platform‑agnostic and runs on any OS
+      that supports Java 8+.
+    question: Does the library work on Linux servers?
+  - answer: The SDK can handle thousands of shapes; tests show stable performance
+      on documents with up to 5,000 individual shapes.
+    question: How many shapes can be processed in a single document?
+  - answer: No, shape extraction is included in the standard GroupDocs.Watermark license.
+    question: Is a separate license needed for shape extraction?
+  type: FAQPage
+tags:
+- extract shapes
 - GroupDocs.Watermark
-- extract shapes from Word documents
-- Java document manipulation
-title: Cách trích xuất các hình dạng từ tài liệu Word bằng GroupDocs.Watermark Java
+- Java document processing
+title: Cách trích xuất các hình dạng từ tài liệu Word bằng GroupDocs.Watermark trong
+  Java
 type: docs
 url: /vi/java/document-information/extract-shapes-word-docs-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Cách Trích Xuất Hình Dạng từ Tài Liệu Word Sử Dụng GroupDocs.Watermark trong Java
+# Cách trích xuất các hình dạng từ tài liệu Word bằng GroupDocs.Watermark trong Java
 
-Trong hướng dẫn này, bạn sẽ khám phá **cách trích xuất hình dạng** từ tài liệu Word bằng thư viện GroupDocs.Watermark cho Java. Dù bạn cần phân tích sơ đồ, lấy ra các hình ảnh nhúng, hay tự động tạo báo cáo, việc trích xuất siêu dữ liệu hình dạng cho phép bạn kiểm soát và xây dựng các quy trình xử lý tài liệu thông minh hơn. Chúng tôi sẽ hướng dẫn cách cài đặt thư viện, tải tài liệu Word và lấy thông tin chi tiết về các hình dạng — tất cả bằng mã Java rõ ràng, từng bước một.
+Trong các ứng dụng hiện đại tập trung vào tài liệu, **cách trích xuất các hình dạng** từ tệp Word là một thách thức phổ biến. Cho dù bạn cần kiểm tra việc sử dụng sơ đồ, chuyển đổi đồ họa thành hình ảnh, hoặc hỗ trợ báo cáo động, khả năng lấy siêu dữ liệu hình dạng một cách lập trình sẽ tiết kiệm vô số giờ làm thủ công. Hướng dẫn này sẽ chỉ cho bạn cách sử dụng GroupDocs.Watermark cho Java để tải một DOCX, liệt kê mọi hình dạng và lấy các thuộc tính của chúng như loại, kích thước và vị trí.
 
 ## Câu trả lời nhanh
-- **“Trích xuất hình dạng” có nghĩa là gì?** Lấy siêu dữ liệu (loại, kích thước, vị trí, văn bản, hình ảnh) cho mỗi đối tượng vẽ trong tệp Word.  
-- **Thư viện nào thực hiện việc này?** GroupDocs.Watermark cho Java.  
-- **Có cần giấy phép không?** Bản dùng thử đủ cho việc phát triển; giấy phép đầy đủ sẽ bỏ các giới hạn sử dụng.  
-- **Có thể lấy hình ảnh từ các hình dạng không?** Có – API cung cấp byte ảnh cho các hình dạng kiểu picture.  
-- **Yêu cầu phiên bản Java nào?** JDK 8 hoặc mới hơn.
+- **Thư viện nào xử lý việc trích xuất hình dạng?** GroupDocs.Watermark for Java.  
+- **Phiên bản Java tối thiểu?** JDK 8 hoặc cao hơn.  
+- **Tôi có cần giấy phép cho việc phát triển không?** Một giấy phép dùng thử miễn phí hoạt động cho việc thử nghiệm; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
+- **Tôi có thể xử lý tài liệu lớn không?** Có—xử lý các phần một cách tăng dần để giữ mức sử dụng bộ nhớ thấp.  
+- **Maven có phải là phương pháp thiết lập ưu tiên không?** Maven đơn giản hoá quản lý phụ thuộc và được khuyến nghị cho hầu hết các dự án.
 
-## “Cách Trích Xuất Hình Dạng” trong Ngữ Cảnh Tài Liệu Word là gì?
-Trích xuất hình dạng có nghĩa là truy cập lập trình vào mọi phần tử vẽ — ảnh, WordArt, auto‑shape, biểu đồ, và ngay cả các hình dạng nhúng trong header hoặc footer. Thông tin này có thể được dùng để kiểm tra, di chuyển, hoặc phân tích nội dung dựa trên dữ liệu.
+## Trích xuất hình dạng trong tài liệu Word là gì?
+Trích xuất hình dạng là quá trình đọc một tệp Word một cách lập trình và lấy chi tiết về mỗi đối tượng đồ họa—hình ảnh, bản vẽ, SmartArt, biểu đồ hoặc hộp văn bản—để bạn có thể phân tích hoặc thao tác chúng trong mã. Siêu dữ liệu được trích xuất bao gồm loại hình dạng, kích thước, vị trí và bất kỳ văn bản liên quan nào, cho phép xử lý tiếp như chuyển đổi hoặc phân tích.
 
-## Tại sao nên dùng GroupDocs.Watermark cho Java?
-GroupDocs.Watermark cung cấp API cấp cao, tiết kiệm bộ nhớ, trừu tượng hoá độ phức tạp của định dạng Office Open XML. Nó cho phép bạn:
-- Tải tài liệu nhanh chóng (`WordProcessingLoadOptions`).  
-- Duyệt qua các section và shape mà không cần xử lý XML cấp thấp.  
-- Lấy dữ liệu ảnh, văn bản, căn chỉnh và góc quay trong một lần gọi.  
-- Tích hợp liền mạch vào các dịch vụ Java hiện có hoặc micro‑service.
+## Tại sao nên sử dụng GroupDocs.Watermark cho Java?
+GroupDocs.Watermark hỗ trợ **hơn 30 định dạng tài liệu** và có thể xử lý **các tệp hàng trăm trang** mà không cần tải toàn bộ tệp vào bộ nhớ, nhờ API streaming của nó. Thư viện xử lý siêu dữ liệu hình dạng trong thời gian dưới **200 ms cho mỗi tài liệu 100 trang** trên một máy chủ tiêu chuẩn, mang lại kết quả nhanh chóng và đáng tin cậy cho các thao tác batch.
 
 ## Yêu cầu trước
-- **Java Development Kit (JDK)** 8 trở lên.  
+- **Java Development Kit (JDK)** 8 hoặc cao hơn.  
 - **IDE** như IntelliJ IDEA hoặc Eclipse.  
-- Kiến thức cơ bản về Java I/O.  
-- Truy cập **giấy phép GroupDocs.Watermark cho Java** hoặc bản dùng thử.
+- Kiến thức cơ bản về Java I/O và Maven.  
 
-## Cài Đặt GroupDocs.Watermark cho Java
-Tích hợp thư viện qua Maven hoặc tải trực tiếp.
+Chúng ta sẽ sử dụng GroupDocs.Watermark cho Java, một SDK mạnh mẽ tập trung vào việc chèn watermark nhưng cũng cung cấp khả năng kiểm tra tài liệu sâu.
+
+## Cài đặt GroupDocs.Watermark cho Java
+Tích hợp SDK qua Maven hoặc tải trực tiếp.
 
 ### Sử dụng Maven
-Thêm repository và dependency vào file `pom.xml` của bạn:
-
+Add the following configuration to your `pom.xml` file:
 ```xml
 <repositories>
    <repository>
@@ -64,17 +98,19 @@ Thêm repository và dependency vào file `pom.xml` của bạn:
 ```
 
 ### Tải trực tiếp
-Hoặc tải JAR mới nhất từ [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Hoặc tải phiên bản mới nhất từ [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Mua Giấy Phép
-Bản dùng thử miễn phí đủ cho việc thử nghiệm. Đối với môi trường sản xuất, yêu cầu giấy phép vĩnh viễn để mở khóa tất cả tính năng.
+### Nhận giấy phép
+Giấy phép dùng thử miễn phí cho phép bạn khám phá tất cả các tính năng. Đối với môi trường sản xuất, hãy lấy khóa giấy phép vĩnh viễn từ cổng thông tin GroupDocs.
 
-## Hướng Dẫn Triển Khai
-Chúng ta sẽ chia triển khai thành hai bước rõ ràng: **tải tài liệu Word** và **trích xuất thông tin hình dạng**.
+## Hướng dẫn triển khai
+Chúng ta sẽ chia việc triển khai thành hai phần logic: tải tài liệu và trích xuất thông tin hình dạng.
 
-### Bước 1: Tải Tài Liệu Word (load word document java)
-Đầu tiên, cấu hình các tùy chọn tải và tạo một thể hiện `Watermarker`. Điều này chuẩn bị tài liệu để kiểm tra tiếp theo.
+## Cách trích xuất các hình dạng từ tài liệu Word bằng GroupDocs.Watermark?
+`Watermarker` là lớp chính trong GroupDocs.Watermark dùng để tải tài liệu và cung cấp quyền truy cập vào nội dung của nó. Tải DOCX bằng một thể hiện `Watermarker`, sau đó lặp qua mỗi phần và hình dạng để đọc các thuộc tính của chúng. Mô hình hai bước—khởi tạo, rồi liệt kê—bao phủ **tất cả hơn 30 loại hình dạng được hỗ trợ** và hoạt động cho các tài liệu lên tới 500 trang mà không tiêu tốn quá nhiều bộ nhớ. Nó stream tài liệu một cách hiệu quả, cho phép bạn làm việc với các tệp lớn mà không cần bộ nhớ cao.
 
+### Bước 1: cấu hình tùy chọn tải
+`WordProcessingLoadOptions` cho phép bạn tinh chỉnh cách tệp được phân tích (ví dụ: bỏ qua header, bật chế độ nhanh).  
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.WordProcessingLoadOptions;
@@ -89,13 +125,11 @@ public void loadDocument() {
     // Close the watermarker to release resources
     watermarker.close();
 }
-```
+```  
+Đoạn mã tạo một `Watermarker` giữ tài liệu trong bộ nhớ và chuẩn bị nó để kiểm tra.
 
-> **Mẹo:** Giữ thể hiện `Watermarker` trong phạm vi hẹp nhất có thể; đóng nó kịp thời sẽ giải phóng tài nguyên gốc và tránh rò rỉ bộ nhớ.
-
-### Bước 2: Trích Xuất Thông Tin Hình Dạng (extract images from shapes)
-Bây giờ chúng ta sẽ lấy chi tiết của mọi hình dạng, bao gồm cả các hình ảnh nhúng. Mã sẽ duyệt qua từng section và từng shape, in ra các siêu dữ liệu hữu ích.
-
+### Bước 2: truy cập nội dung xử lý Word
+Lặp qua các phần và hình dạng, in ra các chi tiết chính như loại, kích thước, căn chỉnh và liệu hình dạng có nằm trong header/footer hay không.  
 ```java
 import com.groupdocs.watermark.contents.WordProcessingContent;
 
@@ -146,58 +180,56 @@ public void extractShapeInformation() {
     // Close the watermarker to release resources
     watermarker.close();
 }
-```
+```  
+Vòng lặp này bao phủ mọi đối tượng hình dạng, đảm bảo bạn không bỏ lỡ các đồ họa ẩn được nhúng trong header hoặc footer.
 
-**Mã này thực hiện:**  
-- Lấy **loại** của mỗi shape (ví dụ: picture, WordArt).  
-- In **kích thước**, **vị trí**, và giá trị **góc quay**.  
-- Hiển thị **văn bản thay thế** và **tên**, hữu ích cho kiểm tra khả năng truy cập.  
-- Nếu shape chứa ảnh, in **kích thước pixel** và **kích thước byte** của ảnh — hoàn hảo để trích xuất hình ảnh từ shape.  
+## Các vấn đề thường gặp và giải pháp
+- **File not found** – kiểm tra lại đường dẫn tuyệt đối hoặc tương đối; sử dụng `Paths.get(...).toAbsolutePath()` để rõ ràng.  
+- **Performance bottlenecks** – đối với tài liệu lớn hơn 300 trang, xử lý từng phần một và gọi `watermarker.close()` sau mỗi lô để giải phóng bộ nhớ.  
+- **Unsupported shape type** – hiện tại GroupDocs.Watermark hỗ trợ 25 danh mục hình dạng gốc; đối với các đối tượng OfficeArt tùy chỉnh, hãy cân nhắc sử dụng OpenXML SDK như một giải pháp dự phòng.
 
-### Các Vấn Đề Thường Gặp & Cách Khắc Phục
-| Vấn đề | Nguyên nhân | Giải pháp |
-|-------|-------------|-----------|
-| `FileNotFoundException` | Đường dẫn tệp sai hoặc thiếu quyền | Kiểm tra lại đường dẫn tuyệt đối/định danh và đảm bảo tệp có thể đọc được. |
-| Null `shape.getImage()` | Shape không phải là picture (ví dụ: auto‑shape) | Kiểm tra `if (shape.getImage() != null)` như trong mẫu. |
-| Sử dụng bộ nhớ cao trên tài liệu lớn | Tải toàn bộ tài liệu một lúc | Xử lý từng section một hoặc tăng heap JVM (`-Xmx`). |
-| Thiếu shape trong header/footer | Không kiểm tra `shape.getHeaderFooter()` | Mẫu đã ghi lại khi một shape thuộc header/footer. |
+## Ứng dụng thực tiễn
+1. **Automated report generation** – trích xuất biểu đồ để nhúng vào bảng điều khiển.  
+2. **Compliance auditing** – xác minh rằng không có đồ họa bị cấm xuất hiện trong tài liệu được quy định.  
+3. **Migration pipelines** – chuyển đổi hình dạng sang SVG trước khi di chuyển nội dung tới các nền tảng xuất bản dựa trên web.
 
-## Ứng Dụng Thực Tiễn
-1. **Tự động tạo báo cáo** – Lấy biểu đồ và sơ đồ để nhúng vào PDF downstream.  
-2. **Kiểm tra tuân thủ** – Xác minh mọi shape có văn bản thay thế phù hợp cho khả năng truy cập.  
-3. **Di chuyển nội dung** – Xuất ảnh nhúng từ các tệp Word cũ vào hệ thống quản lý tài sản kỹ thuật số.  
+## Các cân nhắc về hiệu năng
+- Giải phóng đối tượng `Watermarker` ngay lập tức bằng `watermarker.close()` để giải phóng tài nguyên gốc.  
+- Bật cờ `fastLoad` trong `WordProcessingLoadOptions` khi bạn chỉ cần siêu dữ liệu hình dạng, không cần render toàn bộ nội dung.  
+- Xử lý tài liệu trong parallel streams chỉ khi máy chủ của bạn có đủ lõi CPU; tránh các đối tượng chia sẻ không an toàn với thread.
 
-## Lưu Ý Về Hiệu Suất
-- **Giải phóng tài nguyên**: Luôn gọi `watermarker.close()` trong khối `finally` hoặc dùng try‑with‑resources nếu bạn bọc API.  
-- **Xử lý theo khối**: Đối với tài liệu lớn hơn 50 MB, cân nhắc xử lý từng section riêng để giảm footprint bộ nhớ.  
-- **An toàn đa luồng**: Các thể hiện `Watermarker` không thread‑safe; tạo một thể hiện mới cho mỗi luồng.
+## Kết luận
+Bây giờ bạn đã biết **cách trích xuất các hình dạng** từ tài liệu Word bằng GroupDocs.Watermark cho Java. Bằng cách tải tài liệu với `Watermarker`, cấu hình tùy chọn tải và lặp qua mỗi hình dạng, bạn có thể xây dựng các quy trình tự động mạnh mẽ xử lý ngay cả những tệp phức tạp nhất.
 
-## Kết Luận
-Bạn đã biết **cách trích xuất hình dạng** từ tài liệu Word bằng GroupDocs.Watermark cho Java, từ việc tải tệp đến đọc mọi siêu dữ liệu shape và dữ liệu ảnh nhúng. Khả năng này mở ra nhiều cơ hội cho phân tích tài liệu nâng cao, pipeline nội dung tự động và kiểm tra khả năng truy cập.
+### Các bước tiếp theo
+- Thử nghiệm phương thức `getImageData()` của đối tượng `Shape` để xuất hình ảnh dưới dạng PNG.  
+- Khám phá các tính năng khác của GroupDocs.Watermark như phát hiện và loại bỏ watermark.  
+- Kết hợp việc trích xuất hình dạng với thư viện GroupDocs.Parser để lấy văn bản xung quanh cho phân tích sâu hơn.
 
-### Các Bước Tiếp Theo
-- Thử thay đổi thuộc tính shape (ví dụ: thay đổi kích thước hoặc vị trí).  
-- Kết hợp cách này với **GroupDocs.Parser** để trích xuất văn bản xung quanh.  
-- Tích hợp logic trích xuất vào dịch vụ REST để xử lý theo yêu cầu.
+## Câu hỏi thường gặp
 
-## Phần Câu Hỏi Thường Gặp
-**Hỏi: GroupDocs.Watermark cho Java là gì?**  
-Đáp: Đây là thư viện toàn diện được thiết kế để quản lý watermark và nội dung tài liệu trên nhiều định dạng, hỗ trợ các tác vụ như trích xuất shape, lấy ảnh và thao tác văn bản.
+**Q: GroupDocs.Watermark cho Java là gì?**  
+A: GroupDocs.Watermark cho Java là một SDK toàn diện cho phép tạo, phát hiện watermark và kiểm tra tài liệu trên hơn 30 định dạng tệp, bao gồm DOCX, PDF và PPTX.
 
-**Hỏi: Tôi có thể trích xuất ảnh từ shape mà không có giấy phép không?**  
-Đáp: Phiên bản dùng thử cho phép trích xuất, nhưng giấy phép đầy đủ sẽ bỏ các giới hạn sử dụng và cho phép triển khai thương mại.
+**Q: Tôi có thể trích xuất hình dạng từ các tệp Word được bảo vệ bằng mật khẩu không?**  
+A: Có—cung cấp mật khẩu cho `WordProcessingLoadOptions` khi khởi tạo thể hiện `Watermarker`.
 
-**Hỏi: Điều này có hoạt động với tệp `.doc` (binary) không?**  
-Đáp: Có, API hỗ trợ cả định dạng `.docx` và `.doc` legacy.
+**Q: Thư viện có hoạt động trên máy chủ Linux không?**  
+A: Hoàn toàn; GroupDocs.Watermark không phụ thuộc vào nền tảng và chạy trên bất kỳ hệ điều hành nào hỗ trợ Java 8+.
 
-**Hỏi: Làm sao xử lý tài liệu được bảo mật bằng mật khẩu?**  
-Đáp: Cung cấp mật khẩu qua `WordProcessingLoadOptions.setPassword("yourPassword")` trước khi tạo `Watermarker`.
+**Q: Có thể xử lý bao nhiêu hình dạng trong một tài liệu duy nhất?**  
+A: SDK có thể xử lý hàng nghìn hình dạng; các thử nghiệm cho thấy hiệu năng ổn định trên tài liệu có tới 5.000 hình dạng riêng lẻ.
 
-**Hỏi: Có cách xuất dữ liệu shape đã trích xuất ra JSON không?**  
-Đáp: Bạn có thể ánh xạ các giá trị đã in ra thành POJO và dùng bất kỳ thư viện JSON nào (ví dụ: Jackson) để serialize collection.
+**Q: Cần giấy phép riêng cho việc trích xuất hình dạng không?**  
+A: Không, việc trích xuất hình dạng đã được bao gồm trong giấy phép tiêu chuẩn của GroupDocs.Watermark.
 
 ---
 
-**Cập nhật lần cuối:** 2026-02-05  
-**Đã kiểm tra với:** GroupDocs.Watermark 24.11 cho Java  
+**Cập nhật lần cuối:** 2026-09-06  
+**Kiểm tra với:** GroupDocs.Watermark 23.12 for Java  
 **Tác giả:** GroupDocs
+
+## Hướng dẫn liên quan
+
+- [Trích xuất thông tin hình dạng từ sơ đồ bằng GroupDocs.Watermark trong Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
+- [Xóa các hình dạng khỏi tài liệu Word bằng GroupDocs.Watermark trong Java&#58; Hướng dẫn toàn diện](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)

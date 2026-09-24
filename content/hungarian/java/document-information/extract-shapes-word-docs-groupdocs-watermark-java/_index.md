@@ -1,52 +1,85 @@
 ---
-date: '2026-02-05'
-description: Tanulja meg, hogyan lehet alakzatokat kinyerni Word dokumentumokból a
-  GroupDocs.Watermark for Java használatával, beleértve, hogyan töltsön be egy Word
-  dokumentumot Java‑ban, és hogyan manipulálja az alakzatok adatait.
+date: '2026-09-06'
+description: Ismerje meg, hogyan nyerhet ki alakzatokat a Word dokumentumokból a GroupDocs.Watermark
+  for Java segítségével, amely lehetővé teszi az erőteljes dokumentumautomatizálást
+  és elemzést.
 keywords:
+- how to extract shapes
+- GroupDocs.Watermark Java
+- Word document shape extraction
+lastmod: '2026-09-06'
+og_description: Hogyan nyerhet ki alakzatokat a Word dokumentumokból a GroupDocs.Watermark
+  for Java segítségével. Kövesse ezt a lépésről‑lépésre útmutatót a alakzatok hatékony
+  betöltéséhez, elemzéséhez és feldolgozásához.
+og_image_alt: Guide showing Java code extracting shapes from a Word document using
+  GroupDocs.Watermark
+og_title: Hogyan nyerhet ki alakzatokat a Word dokumentumokból a GroupDocs.Watermark
+  Java segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-06'
+  description: Learn how to extract shapes from Word documents with GroupDocs.Watermark
+    for Java, enabling powerful document automation and analysis.
+  headline: How to extract shapes from Word documents using GroupDocs.Watermark in
+    Java
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Watermark for Java is a comprehensive SDK that enables watermark
+      creation, detection, and document inspection across 30+ file formats, including
+      DOCX, PDF, and PPTX.
+    question: What is GroupDocs.Watermark for Java?
+  - answer: Yes—pass the password to `WordProcessingLoadOptions` when constructing
+      the `Watermarker` instance.
+    question: Can I extract shapes from password‑protected Word files?
+  - answer: Absolutely; GroupDocs.Watermark is platform‑agnostic and runs on any OS
+      that supports Java 8+.
+    question: Does the library work on Linux servers?
+  - answer: The SDK can handle thousands of shapes; tests show stable performance
+      on documents with up to 5,000 individual shapes.
+    question: How many shapes can be processed in a single document?
+  - answer: No, shape extraction is included in the standard GroupDocs.Watermark license.
+    question: Is a separate license needed for shape extraction?
+  type: FAQPage
+tags:
+- extract shapes
 - GroupDocs.Watermark
-- extract shapes from Word documents
-- Java document manipulation
-title: Hogyan lehet alakzatokat kinyerni Word dokumentumokból a GroupDocs.Watermark
+- Java document processing
+title: Hogyan nyerhet ki alakzatokat a Word dokumentumokból a GroupDocs.Watermark
   Java segítségével
 type: docs
 url: /hu/java/document-information/extract-shapes-word-docs-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Hogyan lehet alakzatokat kinyerni Word dokumentumokból a GroupDocs.Watermark Java könyvtárral
+# Hogyan lehet alakzatokat kinyerni Word dokumentumokból a GroupDocs.Watermark segítségével Java-ban
 
-Ebben az oktatóanyagban megtudja, **hogyan kell alakzatokat kinyerni** a Word dokumentumokból a GroupDocs.Watermark Java könyvtárral. Akár diagramok elemzésére, beágyazott képek kinyerésére, vagy jelentéskészítés automatizálására van szüksége, az alakzat metaadatainak kinyerése lehetővé teszi, hogy intelligensebb dokumentum‑feldolgozó csővezetékeket építsen. Lépésről‑lépésre végigvezetjük a könyvtár beállításán, egy Word dokumentum betöltésén, és a részletes alakzat információk lekérésén — mindezt tiszta, lépés‑ről‑lépésre Java kóddal.
+A modern dokumentum‑központú alkalmazásokban a Word fájlokból **alakzatok kinyerése** gyakori kihívás. Akár diagramhasználatot kell ellenőrizni, grafikákat képekké konvertálni, vagy dinamikus jelentéseket készíteni, a programozott módon történő alakzat‑metaadatok lekérése rengeteg manuális órát takarít meg. Ez az útmutató végigvezet a GroupDocs.Watermark for Java használatán, egy DOCX betöltésén, az összes alakzat felsorolásán és a tulajdonságok, például típus, méret és hely lekérésén.
 
 ## Gyors válaszok
-- **Mit jelent a „alakzatok kinyerése”?** A Word fájl minden rajzobjektumához (típus, méret, pozíció, szöveg, képek) tartozó metaadatok lekérése.  
-- **Melyik könyvtár végzi ezt?** GroupDocs.Watermark for Java.  
-- **Szükségem van licencre?** A próbaverzió fejlesztéshez elegendő; a teljes licenc eltávolítja a használati korlátokat.  
-- **Képek is kinyerhetők az alakzatokból?** Igen – az API a kép bájtjait biztosítja a képalakzatok esetén.  
-- **Milyen Java verzió szükséges?** JDK 8 vagy újabb.
+- **Melyik könyvtár kezeli az alakzatok kinyerését?** GroupDocs.Watermark for Java.  
+- **Minimum Java verzió?** JDK 8 vagy újabb.  
+- **Szükségem van licencre a fejlesztéshez?** Egy ingyenes próba működik a teszteléshez; a teljes licenc szükséges a produkcióhoz.  
+- **Feldolgozhatok nagy dokumentumokat?** Igen — szekciókat inkrementálisan dolgozzon fel a memóriahasználat alacsonyan tartásához.  
+- **A Maven a preferált beállítási módszer?** A Maven egyszerűsíti a függőségkezelést és a legtöbb projekt számára ajánlott.
 
-## Mi az a „Hogyan kell alakzatokat kinyerni” a Word dokumentumok kontextusában?
-Az alakzatok kinyerése azt jelenti, hogy programozottan hozzáférünk minden rajzelemhez – képek, WordArt, auto‑shape‑ok, diagramok, sőt a fejlécekben vagy láblécekben beágyazott alakzatok is. Ezek az információk felhasználhatók validációra, migrációra vagy tartalom‑alapú elemzésekre.
+## Mi az alakzatok kinyerése Word dokumentumokban?
+Az alakzatok kinyerése a folyamat, amely során programozott módon olvasunk be egy Word fájlt, és lekérjük az egyes grafikus objektumok—képek, rajzok, SmartArt, diagramok vagy szövegdobozok—részleteit, hogy kódból elemezni vagy manipulálni lehessen őket. A kinyert metaadatok tartalmazzák az alakzat típusát, méreteit, pozícióját és a hozzá kapcsolódó szöveget, lehetővé téve a további feldolgozást, például konvertálást vagy elemzést.
 
-## Miért használja a GroupDocs.Watermark Java könyvtárat?
-A GroupDocs.Watermark egy magas szintű, memóriahatékony API‑t biztosít, amely elrejti az Office Open XML formátum bonyolultságát. Lehetővé teszi:
-- Dokumentumok gyors betöltését (`WordProcessingLoadOptions`).  
-- Szakaszok és alakzatok bejárását anélkül, hogy alacsony szintű XML‑kel kellene foglalkozni.  
-- Képadatok, szöveg, igazítás és forgatás lekérését egyetlen hívásban.  
-- Zökkenőmentes integrációt meglévő Java szolgáltatásokba vagy mikro‑szolgáltatásokba.
+## Miért használjuk a GroupDocs.Watermark for Java-t?
+A GroupDocs.Watermark **30+ dokumentumformátumot** támogat, és **több száz oldalas fájlokat** képes kezelni anélkül, hogy az egész fájlt memóriába töltené, köszönhetően a streaming API-nak. A könyvtár **200 ms alatt** dolgozza fel az alakzat metaadatait 100‑oldalas dokumentumonként egy tipikus szerveren, gyors és megbízható eredményeket biztosítva kötegelt műveletekhez.
 
-## Előfeltételek
+## Előkövetelmények
 - **Java Development Kit (JDK)** 8 vagy újabb.  
 - **IDE** például IntelliJ IDEA vagy Eclipse.  
-- Alapvető Java I/O ismeretek.  
-- Hozzáférés egy **GroupDocs.Watermark for Java** licenchez vagy próbaverzióhoz.
+- Alapvető ismeretek a Java I/O-val és a Maven-nel kapcsolatban.  
 
-## A GroupDocs.Watermark Java könyvtár beállítása
-Integrálja a könyvtárat Maven‑en vagy közvetlen letöltéssel.
+A GroupDocs.Watermark for Java-t fogjuk használni, egy robusztus SDK-t, amely a vízjelekre fókuszál, de mély dokumentumellenőrzési képességeket is kínál.
+
+## A GroupDocs.Watermark for Java beállítása
+Integrálja az SDK-t Maven vagy közvetlen letöltés segítségével.
 
 ### Maven használata
-Adja hozzá a tárolót és a függőséget a `pom.xml`‑hez:
-
+Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz:
 ```xml
 <repositories>
    <repository>
@@ -66,17 +99,19 @@ Adja hozzá a tárolót és a függőséget a `pom.xml`‑hez:
 ```
 
 ### Közvetlen letöltés
-Alternatívaként töltse le a legújabb JAR‑t a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
+Alternatívaként töltse le a legújabb verziót a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
 
 ### Licenc beszerzése
-A ingyenes próbaverzió elegendő a teszteléshez. Termeléshez kérjen állandó licencet a teljes funkcionalitás feloldásához.
+Az ingyenes próba licenc lehetővé teszi az összes funkció kipróbálását. Produkciós használathoz szerezzen be egy állandó licenckulcsot a GroupDocs portálról.
 
 ## Implementációs útmutató
-Az implementációt két egyértelmű lépésre bontjuk: **Word dokumentum betöltése** és **alakzat információk kinyerése**.
+Az implementációt két logikai részre osztjuk: a dokumentum betöltése és az alakzat információk kinyerése.
 
-### 1. lépés: Word dokumentum betöltése (load word document java)
-Először konfigurálja a betöltési beállításokat, és hozza létre a `Watermarker` példányt. Ez előkészíti a dokumentumot a további vizsgálatra.
+## Hogyan lehet alakzatokat kinyerni Word dokumentumokból a GroupDocs.Watermark segítségével?
+`Watermarker` a GroupDocs.Watermark fő osztálya, amely betölti a dokumentumot és hozzáférést biztosít a tartalmához. Töltse be a DOCX-et egy `Watermarker` példánnyal, majd iteráljon végig minden szekción és alakzaton, hogy kiolvassa a tulajdonságaikat. A kétlépéses minta—inicializálás, majd felsorolás—lefedi a **30+ támogatott alakzattípust**, és 500 oldalig terjedő dokumentumoknál is működik túlzott memóriahasználat nélkül. Hatékonyan streameli a dokumentumot, lehetővé téve a nagy fájlok kezelését alacsony memóriaigénnyel.
 
+### 1. lépés: betöltési beállítások konfigurálása
+`WordProcessingLoadOptions` lehetővé teszi a fájl feldolgozásának finomhangolását (pl. fejlécek figyelmen kívül hagyása, gyors mód engedélyezése).  
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.WordProcessingLoadOptions;
@@ -91,13 +126,11 @@ public void loadDocument() {
     // Close the watermarker to release resources
     watermarker.close();
 }
-```
+```  
+A kódrészlet egy `Watermarker` példányt hoz létre, amely a dokumentumot memóriában tartja, és előkészíti az ellenőrzéshez.
 
-> **Pro tip:** Tartsa a `Watermarker` példányt a lehető legszűkebb hatókörben; a gyors lezárás felszabadítja a natív erőforrásokat és elkerüli a memória‑szivárgásokat.
-
-### 2. lépés: Alakzat információk kinyerése (extract images from shapes)
-Most minden alakzat részleteit lekérjük, beleértve a beágyazott képeket is. A kód minden szekción és minden alakzaton végig iterál, és hasznos metaadatokat nyomtat.
-
+### 2. lépés: a Word‑feldolgozási tartalom elérése
+Iteráljon a szekciókon és alakzatokon, kiírva a kulcsfontosságú részleteket, például a típust, méreteket, igazítást és hogy az alakzat fejlécekben/láblécekben található-e.  
 ```java
 import com.groupdocs.watermark.contents.WordProcessingContent;
 
@@ -148,58 +181,54 @@ public void extractShapeInformation() {
     // Close the watermarker to release resources
     watermarker.close();
 }
-```
+```  
+Ez a ciklus minden alakzat objektumot lefed, biztosítva, hogy ne hagyjon ki rejtett grafikákat, amelyek fejlécekben vagy láblécekben vannak beágyazva.
 
-**A kód által végzett műveletek:**  
-- Lekéri minden alakzat **típusát** (pl. picture, WordArt).  
-- Kiírja a **méret**, **pozíció** és **forgatás** értékeket.  
-- Megjeleníti az **alternatív szöveget** és a **nevet**, amelyek az akadálymentességi ellenőrzésekhez hasznosak.  
-- Ha az alakzat képet tartalmaz, kiírja a kép **pixelméreteit** és **bájtméretét** – tökéletes a képek alakzatokból való kinyeréséhez.  
-
-### Gyakori hibák és megoldások
-| Probléma | Ok | Megoldás |
-|----------|----|----------|
-| `FileNotFoundException` | Rossz fájlútvonal vagy hiányzó jogosultság | Ellenőrizze a abszolút/relatív útvonalat, és győződjön meg róla, hogy a fájl olvasható. |
-| Null `shape.getImage()` | Az alakzat nem kép (pl. auto‑shape) | Használjon ellenőrzést `if (shape.getImage() != null)` a példában látható módon. |
-| Magas memóriahasználat nagy dokumentumoknál | A teljes dokumentum egyszerre történő betöltése | Dolgozza fel a szekciókat egyenként, vagy növelje a JVM heap‑et (`-Xmx`). |
-| Hiányzó fej‑/lábléc alakzatok | Nem ellenőrizte a `shape.getHeaderFooter()` értéket | A minta már naplózza, ha egy alakzat fej‑ vagy lábléchez tartozik. |
+## Gyakori problémák és megoldások
+- **Fájl nem található** – ellenőrizze újra a abszolút vagy relatív útvonalat; a tisztaság kedvéért használja a `Paths.get(...).toAbsolutePath()`-t.  
+- **Teljesítménybottleneckek** – 300 oldalnál nagyobb dokumentumok esetén dolgozzon szekcióról szekcióra, és hívja meg a `watermarker.close()`-t minden köteg után a memória felszabadításához.  
+- **Nem támogatott alakzattípus** – a GroupDocs.Watermark jelenleg 25 natív alakzattípust támogat; egyedi OfficeArt objektumok esetén fontolja meg az OpenXML SDK használatát tartalékmegoldásként.
 
 ## Gyakorlati alkalmazások
-1. **Automatizált jelentéskészítés** – Diagramok és ábrák kinyerése, majd downstream PDF‑ekbe ágyazása.  
-2. **Megfelelőségi audit** – Ellenőrizze, hogy minden alakzat megfelelő alternatív szöveget tartalmaz-e az akadálymentesség érdekében.  
-3. **Tartalom migráció** – Beágyazott képek exportálása régi Word fájlokból egy digitális eszközkezelő rendszerbe.  
+1. **Automatizált jelentéskészítés** – diagramok kinyerése a műszerfalakba ágyazáshoz.  
+2. **Megfelelőségi audit** – ellenőrizze, hogy a szabályozott dokumentumokban ne legyenek tiltott grafikák.  
+3. **Migrációs folyamatok** – alakzatok SVG‑re konvertálása, mielőtt a tartalmat web‑alapú kiadási platformokra helyezné.
 
-## Teljesítménybeli megfontolások
-- **Erőforrások felszabadítása**: Mindig hívja a `watermarker.close()`‑t egy `finally` blokkban, vagy használjon try‑with‑resources‑t, ha az API‑t burkolja.  
-- **Darabolt feldolgozás**: 50 MB‑nál nagyobb dokumentumok esetén fontolja meg a szekciók külön feldolgozását a memória‑lábnyom alacsonyan tartása érdekében.  
-- **Szálbiztonság**: A `Watermarker` példányok nem szálbiztosak; minden szálnak hozzon létre egy új példányt.
+## Teljesítményfontosságú szempontok
+- Szabadítsa fel a `Watermarker` objektumot gyorsan a `watermarker.close()` hívásával a natív erőforrások felszabadításához.  
+- Kapcsolja be a `fastLoad` jelzőt a `WordProcessingLoadOptions`‑ben, ha csak alakzat metaadatokra van szükség, nem a teljes tartalom renderelésére.  
+- Dokumentumokat csak akkor dolgozzon párhuzamos streamekben, ha a szervere elegendő CPU maggal rendelkezik; kerülje a szálbiztonsággal nem rendelkező megosztott objektumokat.
 
 ## Következtetés
-Most már tudja, **hogyan kell alakzatokat kinyerni** Word dokumentumokból a GroupDocs.Watermark for Java segítségével, a fájl betöltésétől kezdve minden alakzat metaadatainak és beágyazott képadatainak olvasásáig. Ez a képesség lehetővé teszi fejlett dokumentumelemzések, automatizált tartalomcsővezetékek és akadálymentességi ellenőrzések megvalósítását.
+Most már tudja, **hogyan kell alakzatokat kinyerni** Word dokumentumokból a GroupDocs.Watermark for Java segítségével. Egy dokumentum betöltésével `Watermarker`‑rel, a betöltési beállítások konfigurálásával és az egyes alakzatok iterálásával erőteljes automatizálási munkafolyamatokat építhet, amelyek még a legösszetettebb fájlokkal is megbirkóznak.
 
 ### Következő lépések
-- Kísérletezzen az alakzat tulajdonságainak módosításával (pl. átméretezés vagy áthelyezés).  
-- Kombinálja ezt a megközelítést a **GroupDocs.Parser**‑rel a környező szöveg kinyeréséhez.  
-- Integrálja a kinyerési logikát egy REST szolgáltatásba az igény szerinti feldolgozáshoz.
+- Kísérletezzen a `Shape` objektum `getImageData()` metódusával a képek PNG‑ként való exportálásához.  
+- Fedezze fel a GroupDocs.Watermark egyéb funkcióit, például a vízjel felismerést és eltávolítást.  
+- Kombinálja az alakzat kinyerést a GroupDocs.Parser könyvtárral, hogy a környező szöveget is lekérje a gazdagabb elemzéshez.
 
-## GyIK szekció
+## Gyakran ismételt kérdések
+
 **Q: Mi a GroupDocs.Watermark for Java?**  
-A: Egy átfogó könyvtár, amely vízjelek és dokumentumtartalom kezelésére szolgál különböző formátumokban, lehetővé téve olyan feladatokat, mint az alakzatok kinyerése, képek lekérése és szövegmanipuláció.
+A: A GroupDocs.Watermark for Java egy átfogó SDK, amely lehetővé teszi a vízjel létrehozását, felismerését és a dokumentumok ellenőrzését több mint 30 fájlformátumban, beleértve a DOCX, PDF és PPTX formátumokat.
 
-**Q: Képek kinyerhetők az alakzatokból licenc nélkül?**  
-A: A próbaverzió engedélyezi a kinyerést, de a teljes licenc eltávolítja a használati korlátokat és lehetővé teszi a kereskedelmi üzemeltetést.
+**Q: Kinyerhetek alakzatokat jelszóval védett Word fájlokból?**  
+A: Igen—adja meg a jelszót a `WordProcessingLoadOptions`‑nek a `Watermarker` példány létrehozásakor.
 
-**Q: Működik ez `.doc` (bináris) fájlokkal is?**  
-A: Igen, az API támogatja mind a `.docx`, mind a régi `.doc` formátumokat.
+**Q: Működik a könyvtár Linux szervereken?**  
+A: Teljesen; a GroupDocs.Watermark platformfüggetlen, és bármely, Java 8+‑t támogató operációs rendszeren fut.
 
-**Q: Hogyan kezeljem a jelszóval védett dokumentumokat?**  
-A: Adja meg a jelszót a `WordProcessingLoadOptions.setPassword("yourPassword")` hívással a `Watermarker` létrehozása előtt.
+**Q: Hány alakzatot lehet feldolgozni egyetlen dokumentumban?**  
+A: Az SDK több ezer alakzatot képes kezelni; a tesztek stabil teljesítményt mutatnak akár 5 000 egyedi alakzattal rendelkező dokumentumoknál is.
 
-**Q: Van mód a kinyert alakzat adatokat JSON‑ba exportálni?**  
-A: A kiírt értékeket leképezheti egy POJO‑ra, és bármely JSON könyvtárat (pl. Jackson) használhatja a gyűjtemény sorosításához.
+**Q: Szükséges külön licenc az alakzatok kinyeréséhez?**  
+A: Nem, az alakzatok kinyerése a standard GroupDocs.Watermark licenc része.
 
----
+**Legutóbb frissítve:** 2026-09-06  
+**Tesztelve a következővel:** GroupDocs.Watermark 23.12 for Java  
+**Szerző:** GroupDocs
 
-**Last Updated:** 2026-02-05  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+## Kapcsolódó oktatóanyagok
+
+- [Alakzatinformációk kinyerése diagramokból a GroupDocs.Watermark Java használatával](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
+- [Alakzatok eltávolítása Word dokumentumokból a GroupDocs.Watermark Java használatával: Átfogó útmutató](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)

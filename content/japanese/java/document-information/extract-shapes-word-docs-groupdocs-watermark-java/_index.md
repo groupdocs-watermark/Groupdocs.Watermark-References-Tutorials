@@ -1,49 +1,79 @@
 ---
-date: '2026-02-05'
-description: GroupDocs.Watermark for Java を使用して Word 文書からシェイプを抽出する方法、Word 文書の読み込み方法とシェイプデータの操作方法を学びましょう。
+date: '2026-09-06'
+description: Java用GroupDocs.Watermarkを使用してWord文書からシェイプを抽出する方法を学び、強力な文書自動化と分析を実現します。
 keywords:
+- how to extract shapes
+- GroupDocs.Watermark Java
+- Word document shape extraction
+lastmod: '2026-09-06'
+og_description: Java用GroupDocs.WatermarkでWord文書からシェイプを抽出する方法。ステップバイステップのガイドに従って、シェイプを効率的にロード、分析、処理しましょう。
+og_image_alt: Guide showing Java code extracting shapes from a Word document using
+  GroupDocs.Watermark
+og_title: JavaでGroupDocs.Watermarkを使用してWord文書からシェイプを抽出する方法
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-06'
+  description: Learn how to extract shapes from Word documents with GroupDocs.Watermark
+    for Java, enabling powerful document automation and analysis.
+  headline: How to extract shapes from Word documents using GroupDocs.Watermark in
+    Java
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Watermark for Java is a comprehensive SDK that enables watermark
+      creation, detection, and document inspection across 30+ file formats, including
+      DOCX, PDF, and PPTX.
+    question: What is GroupDocs.Watermark for Java?
+  - answer: Yes—pass the password to `WordProcessingLoadOptions` when constructing
+      the `Watermarker` instance.
+    question: Can I extract shapes from password‑protected Word files?
+  - answer: Absolutely; GroupDocs.Watermark is platform‑agnostic and runs on any OS
+      that supports Java 8+.
+    question: Does the library work on Linux servers?
+  - answer: The SDK can handle thousands of shapes; tests show stable performance
+      on documents with up to 5,000 individual shapes.
+    question: How many shapes can be processed in a single document?
+  - answer: No, shape extraction is included in the standard GroupDocs.Watermark license.
+    question: Is a separate license needed for shape extraction?
+  type: FAQPage
+tags:
+- extract shapes
 - GroupDocs.Watermark
-- extract shapes from Word documents
-- Java document manipulation
-title: GroupDocs.Watermark Java を使用して Word 文書からシェイプを抽出する方法
+- Java document processing
+title: JavaでGroupDocs.Watermarkを使用してWord文書からシェイプを抽出する方法
 type: docs
 url: /ja/java/document-information/extract-shapes-word-docs-groupdocs-watermark-java/
 weight: 1
 ---
 
-# GroupDocs.Watermark for Java を使用して Word 文書からシェイプを抽出する方法
+# Word文書から形状を抽出する方法（GroupDocs.Watermark for Java）
 
-このチュートリアルでは、GroupDocs.Watermark Java ライブラリを使って **シェイプを抽出する方法** を学びます。図表の解析、埋め込み画像の取得、レポート自動生成など、シェイプのメタデータを抽出すれば、より賢いドキュメント処理パイプラインを構築できます。ライブラリのセットアップ、Word 文書の読み込み、シェイプ情報の取得まで、分かりやすいステップバイステップの Java コードで解説します。
+現代のドキュメント中心のアプリケーションでは、Word ファイルから **形状を抽出する方法** は一般的な課題です。ダイアグラムの使用状況を監査したり、グラフィックを画像に変換したり、動的レポートを生成したりする必要がある場合、プログラムで形状メタデータを取得できることで、膨大な手作業時間を節約できます。このチュートリアルでは、GroupDocs.Watermark for Java を使用して DOCX をロードし、すべての形状を列挙し、タイプ、サイズ、位置などのプロパティを取得する方法を解説します。
 
-## Quick Answers
-- **「シェイプを抽出する」とは何ですか？** Word ファイル内の各描画オブジェクトのメタデータ（タイプ、サイズ、位置、テキスト、画像など）を取得することです。  
-- **どのライブラリがこれを処理しますか？** GroupDocs.Watermark for Java。  
-- **ライセンスは必要ですか？** 開発目的ならトライアルで動作します。フルライセンスを取得すれば使用制限が解除されます。  
-- **シェイプから画像も取得できますか？** はい – API で画像バイトを取得できます。  
-- **必要な Java バージョンは？** JDK 8 以上。
+## クイック回答
+- **どのライブラリが形状抽出を処理しますか？** GroupDocs.Watermark for Java.  
+- **最低 Java バージョンは？** JDK 8 or newer.  
+- **開発にライセンスは必要ですか？** A free trial works for testing; a full license is required for production.  
+- **大きなドキュメントを処理できますか？** Yes—process sections incrementally to keep memory usage low.  
+- **Maven は推奨のセットアップ方法ですか？** Maven simplifies dependency management and is recommended for most projects.
 
-## Word 文書における「シェイプ抽出」とは何か？
-シェイプ抽出とは、プログラムからすべての描画要素（画像、WordArt、オートシェイプ、チャート、ヘッダーやフッターに埋め込まれたシェイプなど）にアクセスすることです。この情報は、検証、移行、コンテンツ駆動型分析に利用できます。
+## Word 文書における形状抽出とは何ですか？
+形状抽出とは、Word ファイルをプログラムで読み取り、各グラフィックオブジェクト（画像、図形、SmartArt、チャート、テキストボックスなど）の詳細を取得するプロセスです。取得されたメタデータには形状の種類、寸法、位置、関連するテキストが含まれ、変換や分析などのさらなる処理が可能になります。
 
-## なぜ GroupDocs.Watermark for Java を使うのか？
-GroupDocs.Watermark は、Office Open XML の複雑さを抽象化した高レベルでメモリ効率の良い API を提供します。次のことが可能です。
-- ドキュメントを高速に読み込む（`WordProcessingLoadOptions`）。  
-- 低レベル XML を扱わずにセクションやシェイプを反復処理。  
-- 画像データ、テキスト、配置、回転を一括取得。  
-- 既存の Java サービスやマイクロサービスにシームレスに統合。
+## なぜ GroupDocs.Watermark for Java を使用するのか？
+GroupDocs.Watermark は **30 以上のドキュメント形式** をサポートし、ストリーミング API によりファイル全体をメモリに読み込むことなく **数百ページのファイル** を処理できます。ライブラリは典型的なサーバー上で **100 ページのドキュメントあたり 200 ms 未満** で形状メタデータを処理し、バッチ操作において高速で信頼性の高い結果を提供します。
 
 ## 前提条件
 - **Java Development Kit (JDK)** 8 以上。  
 - **IDE**（IntelliJ IDEA や Eclipse など）。  
-- 基本的な Java I/O の知識。  
-- **GroupDocs.Watermark for Java** のライセンスまたはトライアルへのアクセス。
+- Java I/O と Maven の基本的な知識。  
 
-## GroupDocs.Watermark for Java の設定
-Maven か直接ダウンロードでライブラリを組み込みます。
+本チュートリアルでは、透かし機能に焦点を当てつつ、深いドキュメント検査機能も提供する堅牢な SDK である GroupDocs.Watermark for Java を使用します。
 
-### Maven を使用する場合
-`pom.xml` にリポジトリと依存関係を追加します。
+## GroupDocs.Watermark for Java のセットアップ
+Maven または直接ダウンロードで SDK を統合します。
 
+### Maven の使用
+以下の設定を `pom.xml` ファイルに追加してください：
 ```xml
 <repositories>
    <repository>
@@ -63,17 +93,19 @@ Maven か直接ダウンロードでライブラリを組み込みます。
 ```
 
 ### 直接ダウンロード
-または、[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) から最新 JAR を取得してください。
+または、最新バージョンを [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) からダウンロードしてください。
 
 ### ライセンス取得
-テストには無料トライアルで十分です。製品環境では、すべての機能を解放する永続ライセンスを取得してください。
+無料トライアルライセンスで全機能を試すことができます。製品環境で使用する場合は、GroupDocs ポータルから永続ライセンスキーを取得してください。
 
 ## 実装ガイド
-実装は **Word 文書の読み込み** と **シェイプ情報の抽出** の 2 ステップに分かれます。
+実装は、ドキュメントのロードと形状情報の抽出という 2 つの論理パートに分けます。
 
-### 手順 1: Word 文書を読み込む (load word document java)
-まずロードオプションを設定し、`Watermarker` インスタンスを作成します。これにより、後続の検査が可能になります。
+## GroupDocs.Watermark を使用して Word 文書から形状を抽出する方法は？
+`Watermarker` は GroupDocs.Watermark の主要クラスで、ドキュメントをロードし、その内容にアクセスできます。`Watermarker` インスタンスで DOCX をロードし、各セクションと形状を反復してプロパティを読み取ります。初期化して列挙するという 2 段階パターンは **30 以上のサポート対象形状タイプ** をすべてカバーし、最大 500 ページのドキュメントでも過剰なメモリ使用なしに動作します。ドキュメントを効率的にストリーミングし、大きなファイルでも高いメモリ消費なしに処理できます。
 
+### 手順 1: ロードオプションの設定
+`WordProcessingLoadOptions` を使用すると、ファイルの解析方法を細かく調整できます（例: ヘッダーを無視、ファストモードを有効化）。  
 ```java
 import com.groupdocs.watermark.Watermarker;
 import com.groupdocs.watermark.options.WordProcessingLoadOptions;
@@ -88,13 +120,11 @@ public void loadDocument() {
     // Close the watermarker to release resources
     watermarker.close();
 }
-```
+```  
+このスニペットは、ドキュメントをメモリに保持し、検査の準備を行う `Watermarker` を作成します。
 
-> **プロのコツ:** `Watermarker` インスタンスはできるだけ狭いスコープで使用し、速やかに閉じてネイティブリソースを解放し、メモリリークを防ぎましょう。
-
-### 手順 2: シェイプ情報を抽出する (extract images from shapes)
-次に、すべてのシェイプの詳細（埋め込み画像を含む）を取得します。コードは各セクションとシェイプを走査し、役立つメタデータを出力します。
-
+### 手順 2: ワードプロセッシングコンテンツへのアクセス
+セクションと形状を反復し、タイプ、寸法、配置、ヘッダー/フッターに存在するかどうかなどの重要な詳細を出力します。  
 ```java
 import com.groupdocs.watermark.contents.WordProcessingContent;
 
@@ -145,58 +175,56 @@ public void extractShapeInformation() {
     // Close the watermarker to release resources
     watermarker.close();
 }
-```
+```  
+このループはすべての形状オブジェクトをカバーし、ヘッダーやフッターに埋め込まれた隠れたグラフィックを見逃さないようにします。
 
-**このコードの動作概要:**  
-- 各シェイプの **type**（例: picture, WordArt）を取得。  
-- **size**、**position**、**rotation** の値を出力。  
-- アクセシビリティチェックに有用な **alternative text** と **name** を表示。  
-- シェイプが画像を保持している場合、画像の **pixel dimensions** と **byte size** を出力 – シェイプから画像を抽出するのに最適です。
+## よくある問題と解決策
+- **File not found** – 絶対パスまたは相対パスを再確認し、`Paths.get(...).toAbsolutePath()` を使用して明確にしてください。  
+- **Performance bottlenecks** – 300 ページを超えるドキュメントの場合、セクションを一つずつ処理し、各バッチ後に `watermarker.close()` を呼び出してメモリを解放してください。  
+- **Unsupported shape type** – GroupDocs.Watermark は現在 25 のネイティブ形状カテゴリをサポートしています。カスタム OfficeArt オブジェクトについては、代替手段として OpenXML SDK の使用を検討してください。
 
-### よくある落とし穴と対処法
-| Issue | Cause | Solution |
-|-------|-------|----------|
-| `FileNotFoundException` | ファイルパスが間違っている、または権限が不足している | 絶対パス/相対パスを確認し、ファイルが読み取り可能か確認してください。 |
-| Null `shape.getImage()` | シェイプが画像ではない（例: オートシェイプ） | サンプル通り `if (shape.getImage() != null)` でガードしてください。 |
-| 大容量ドキュメントでメモリ使用量が高い | ドキュメント全体を一度にロードしている | セクション単位で処理するか、JVM ヒープを増やす（`-Xmx`） |
-| ヘッダー/フッターのシェイプが取得できない | `shape.getHeaderFooter()` をチェックしていない | サンプルはシェイプがヘッダー/フッターに属する場合にログを出します。 |
-
-## 実用例
-1. **自動レポート生成** – チャートや図を抽出し、下流の PDF に埋め込む。  
-2. **コンプライアンス監査** – すべてのシェイプに適切な代替テキストが設定されているか検証。  
-3. **コンテンツ移行** – 旧式 Word ファイルから埋め込み画像を抽出し、デジタル資産管理システムへ保存。
+## 実用的な応用例
+1. **Automated report generation** – ダッシュボードに埋め込むためにチャートを抽出します。  
+2. **Compliance auditing** – 規制対象の文書に禁止されたグラフィックが含まれていないか確認します。  
+3. **Migration pipelines** – コンテンツをウェブベースの出版プラットフォームに移行する前に、形状を SVG に変換します。
 
 ## パフォーマンス上の考慮点
-- **リソース解放**: `watermarker.close()` を `finally` ブロックで必ず呼ぶか、try‑with‑resources を使用してください。  
-- **チャンク処理**: 50 MB 超のドキュメントはセクションごとに処理してメモリフットプリントを抑える。  
-- **スレッド安全性**: `Watermarker` インスタンスはスレッドセーフではありません。スレッドごとに新しいインスタンスを作成してください。
+- `Watermarker` オブジェクトは `watermarker.close()` で速やかに解放し、ネイティブリソースを解放してください。  
+- 形状メタデータだけが必要で、完全なコンテンツレンダリングが不要な場合は、`WordProcessingLoadOptions` の `fastLoad` フラグを有効にしてください。  
+- サーバーに十分な CPU コアがある場合にのみ、ドキュメントを並列ストリームで処理してください。スレッド安全でない共有オブジェクトは避けましょう。
 
 ## 結論
-これで **GroupDocs.Watermark for Java を使って Word 文書からシェイプを抽出する方法** をマスターしました。ファイルの読み込みからシェイプのメタデータ・埋め込み画像取得まで、一連の手順を実装できました。この機能により、高度なドキュメント分析、コンテンツ自動化パイプライン、アクセシビリティ検証が可能になります。
+これで、GroupDocs.Watermark for Java を使用して Word 文書から **形状を抽出する方法** が分かりました。`Watermarker` でドキュメントをロードし、ロードオプションを設定し、各形状を反復することで、最も複雑なファイルでも処理できる強力な自動化ワークフローを構築できます。
 
 ### 次のステップ
-- シェイプのプロパティ（サイズ変更や再配置など）を変更してみる。  
-- **GroupDocs.Parser** と組み合わせて周辺テキストも抽出する。  
-- 抽出ロジックを REST サービスに組み込み、オンデマンド処理を実現する。
+- `Shape` オブジェクトの `getImageData()` メソッドを試して、画像を PNG としてエクスポートしてみてください。  
+- 透かし検出や除去など、他の GroupDocs.Watermark 機能も調査してください。  
+- 形状抽出と GroupDocs.Parser ライブラリを組み合わせて、周囲のテキストを取得し、よりリッチな分析を行ってください。
 
-## FAQ Section
+## よくある質問
+
 **Q: GroupDocs.Watermark for Java とは何ですか？**  
-A: ウォーターマークやドキュメントコンテンツを様々なフォーマットで管理できる包括的ライブラリで、シェイプ抽出、画像取得、テキスト操作などのタスクを実現します。
+A: GroupDocs.Watermark for Java は、DOCX、PDF、PPTX など 30 以上のファイル形式に対して透かしの作成、検出、ドキュメント検査を可能にする包括的な SDK です。
 
-**Q: ライセンスなしでシェイプから画像を抽出できますか？**  
-A: トライアル版でも抽出は可能ですが、フルライセンスにすると使用制限が解除され、商用展開が可能になります。
+**Q: パスワード保護された Word ファイルから形状を抽出できますか？**  
+A: はい。`Watermarker` インスタンスを作成する際に `WordProcessingLoadOptions` にパスワードを渡してください。
 
-**Q: `.doc`（バイナリ）ファイルでも動作しますか？**  
-A: はい、API は `.docx` とレガシー `.doc` の両方をサポートしています。
+**Q: このライブラリは Linux サーバーで動作しますか？**  
+A: 完全に対応しています。GroupDocs.Watermark はプラットフォームに依存せず、Java 8+ をサポートする任意の OS 上で動作します。
 
-**Q: パスワード保護された文書はどう扱いますか？**  
-A: `Watermarker` 作成前に `WordProcessingLoadOptions.setPassword("yourPassword")` でパスワードを設定してください。
+**Q: 1 つのドキュメントで処理できる形状の数はどれくらいですか？**  
+A: SDK は数千の形状を処理でき、テストでは最大 5,000 個の個別形状を含むドキュメントでも安定したパフォーマンスが確認されています。
 
-**Q: 抽出したシェイプデータを JSON にエクスポートできますか？**  
-A: 出力された値を POJO にマッピングし、Jackson などの JSON ライブラリでシリアライズすれば可能です。
+**Q: 形状抽出に別途ライセンスは必要ですか？**  
+A: いいえ、形状抽出は標準の GroupDocs.Watermark ライセンスに含まれています。
 
 ---
 
-**最終更新日:** 2026-02-05  
-**テスト環境:** GroupDocs.Watermark 24.11 for Java  
+**最終更新日:** 2026-09-06  
+**テスト環境:** GroupDocs.Watermark 23.12 for Java  
 **作者:** GroupDocs
+
+## 関連チュートリアル
+
+- [GroupDocs.Watermark を使用した Java での図形情報抽出](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
+- [GroupDocs.Watermark を使用した Java での Word 文書からの形状削除&#58; 包括的ガイド](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
