@@ -230,10 +230,3 @@ A: 아니요, 도형 추출은 표준 GroupDocs.Watermark 라이선스에 포함
 
 - [GroupDocs.Watermark를 사용하여 Java에서 다이어그램의 도형 정보 추출](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [GroupDocs.Watermark를 사용하여 Java에서 Word 문서의 도형 제거: 종합 가이드](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

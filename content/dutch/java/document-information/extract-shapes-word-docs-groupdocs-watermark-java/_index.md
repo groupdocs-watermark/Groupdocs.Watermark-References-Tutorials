@@ -232,10 +232,3 @@ A: Nee, vorm‑extractie is inbegrepen in de standaard GroupDocs.Watermark‑lic
 
 - [Vorminformatie uit diagrammen extraheren met GroupDocs.Watermark in Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [Vormen verwijderen uit Word‑documenten met GroupDocs.Watermark in Java: Een uitgebreide gids](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

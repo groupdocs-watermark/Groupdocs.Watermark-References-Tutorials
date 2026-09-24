@@ -232,10 +232,3 @@ A: Nem, az alakzatok kinyerése a standard GroupDocs.Watermark licenc része.
 
 - [Alakzatinformációk kinyerése diagramokból a GroupDocs.Watermark Java használatával](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [Alakzatok eltávolítása Word dokumentumokból a GroupDocs.Watermark Java használatával: Átfogó útmutató](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

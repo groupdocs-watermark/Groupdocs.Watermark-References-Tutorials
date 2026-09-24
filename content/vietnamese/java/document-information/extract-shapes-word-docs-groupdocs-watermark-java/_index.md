@@ -233,10 +233,3 @@ A: Không, việc trích xuất hình dạng đã được bao gồm trong giấ
 
 - [Trích xuất thông tin hình dạng từ sơ đồ bằng GroupDocs.Watermark trong Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [Xóa các hình dạng khỏi tài liệu Word bằng GroupDocs.Watermark trong Java&#58; Hướng dẫn toàn diện](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

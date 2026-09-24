@@ -230,10 +230,3 @@ R : Non, l’extraction de formes est incluse dans la licence standard de Grou
 
 - [Extraire les informations de forme des diagrammes avec GroupDocs.Watermark en Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [Supprimer les formes des documents Word avec GroupDocs.Watermark en Java : Guide complet](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

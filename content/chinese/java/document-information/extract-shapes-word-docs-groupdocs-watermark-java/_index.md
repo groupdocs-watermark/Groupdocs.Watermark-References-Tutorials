@@ -225,10 +225,3 @@ A: 不需要，形状提取已包含在标准的 GroupDocs.Watermark 许可证�
 ## 相关教程
 - [使用 GroupDocs.Watermark 在 Java 中提取图表的形状信息](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [使用 GroupDocs.Watermark 在 Java 中从 Word 文档中删除形状：综合指南](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

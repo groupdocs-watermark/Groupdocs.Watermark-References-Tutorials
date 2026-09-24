@@ -231,10 +231,3 @@ A: Ne, extrakce tvarů je zahrnuta ve standardní licenci GroupDocs.Watermark.
 
 - [Extrahovat informace o tvarech z diagramů pomocí GroupDocs.Watermark v Javě](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [Odstranit tvary z dokumentů Word pomocí GroupDocs.Watermark v Javě&#58; Komplexní průvodce](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

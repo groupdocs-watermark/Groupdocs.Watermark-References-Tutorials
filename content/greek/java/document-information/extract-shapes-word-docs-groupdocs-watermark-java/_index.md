@@ -233,11 +233,3 @@ A: Όχι, η εξαγωγή σχημάτων περιλαμβάνεται στ�
 
 - [Εξαγωγή πληροφοριών σχήματος από διαγράμματα χρησιμοποιώντας το GroupDocs.Watermark σε Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [Αφαίρεση σχημάτων από έγγραφα Word χρησιμοποιώντας το GroupDocs.Watermark σε Java: Ολοκληρωμένος Οδηγός](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

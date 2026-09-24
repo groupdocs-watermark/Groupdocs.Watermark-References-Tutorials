@@ -233,11 +233,3 @@ A: Nie, wyodrębnianie kształtów jest wliczone w standardową licencję GroupD
 
 - [Wyodrębnij informacje o kształtach z diagramów przy użyciu GroupDocs.Watermark w Javie](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [Usuń kształty z dokumentów Word przy użyciu GroupDocs.Watermark w Javie: Kompletny przewodnik](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

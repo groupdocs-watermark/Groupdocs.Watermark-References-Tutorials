@@ -232,10 +232,3 @@ A: Nein, die Formextraktion ist in der Standard‑GroupDocs.Watermark‑Lizenz e
 
 - [Forminformationen aus Diagrammen mit GroupDocs.Watermark in Java extrahieren](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [Formen aus Word-Dokumenten mit GroupDocs.Watermark in Java entfernen&#58; Ein umfassender Leitfaden](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

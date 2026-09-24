@@ -228,11 +228,3 @@ A: いいえ、形状抽出は標準の GroupDocs.Watermark ライセンスに�
 
 - [GroupDocs.Watermark を使用した Java での図形情報抽出](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [GroupDocs.Watermark を使用した Java での Word 文書からの形状削除&#58; 包括的ガイド](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

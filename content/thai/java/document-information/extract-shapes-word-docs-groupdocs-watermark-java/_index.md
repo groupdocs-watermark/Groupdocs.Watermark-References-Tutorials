@@ -230,10 +230,3 @@ A: ไม่, การดึงรูปทรงรวมอยู่ในไ
 
 - [ดึงข้อมูลรูปทรงจากแผนภาพโดยใช้ GroupDocs.Watermark ใน Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [ลบรูปทรงจากเอกสาร Word โดยใช้ GroupDocs.Watermark ใน Java: คู่มือฉบับสมบูรณ์](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

@@ -228,10 +228,3 @@ A: 不需要，圖形提取已包含在標準的 GroupDocs.Watermark 授權中�
 
 - [使用 GroupDocs.Watermark 在 Java 中從圖表提取圖形資訊](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [使用 GroupDocs.Watermark 在 Java 中從 Word 文件移除圖形&#58; 完整指南](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

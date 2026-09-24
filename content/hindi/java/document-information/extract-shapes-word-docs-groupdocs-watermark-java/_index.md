@@ -233,11 +233,3 @@ A: नहीं, आकार निकालना मानक GroupDocs.Water
 
 - [GroupDocs.Watermark का उपयोग करके Java में डायग्राम से आकार जानकारी निकालें](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [GroupDocs.Watermark का उपयोग करके Java में Word दस्तावेज़ों से आकार हटाएँ: एक व्यापक गाइड](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

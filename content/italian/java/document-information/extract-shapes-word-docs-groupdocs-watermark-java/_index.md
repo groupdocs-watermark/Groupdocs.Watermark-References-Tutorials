@@ -231,10 +231,3 @@ A: No, l'estrazione di forme è inclusa nella licenza standard di GroupDocs.Wate
 
 - [Extract Shape Information from Diagrams Using GroupDocs.Watermark in Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
 - [Remove Shapes from Word Documents Using GroupDocs.Watermark in Java&#58; A Comprehensive Guide](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
