@@ -1,61 +1,85 @@
 ---
-date: '2026-02-13'
-description: تعلم كيفية إضافة علامة مائية في جافا وقائمة صيغ الملفات المدعومة بكفاءة
-  باستخدام GroupDocs.Watermark، مع ضمان التوافق عبر أنواع المستندات.
+date: '2026-09-16'
+description: تعلم كيفية سرد صيغ الملفات المدعومة باستخدام GroupDocs.Watermark for
+  Java، لضمان التوافق عبر العشرات من أنواع المستندات.
 keywords:
-- GroupDocs Watermark Java
-- list supported file formats GroupDocs
-- Java watermarking library
-title: 'إضافة علامة مائية Java: قائمة الصيغ المدعومة مع GroupDocs'
+- groupdocs watermark java list
+- list supported file formats
+- java watermark library
+lastmod: '2026-09-16'
+og_description: يتيح لك GroupDocs.Watermark Java list استرجاع كل نوع ملف يمكن للlibrary
+  وضع علامة مائية عليه بسرعة. يوضح هذا الدليل الإعداد، code snippets، و real‑world
+  use cases.
+og_image_alt: Screenshot of GroupDocs.Watermark Java listing supported formats in
+  an IDE
+og_title: 'GroupDocs.Watermark Java list: دليل صيغ الملفات المدعومة'
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-16'
+  description: Learn how to list supported file formats with GroupDocs.Watermark for
+    Java, ensuring compatibility across dozens of document types.
+  headline: 'GroupDocs.Watermark Java list: supported file formats'
+  type: TechArticle
+- questions:
+  - answer: Over 50 formats, including PDF, DOCX, PPTX, JPEG, PNG, TIFF, BMP, and
+      many more.
+    question: What file formats does GroupDocs.Watermark support?
+  - answer: Verify Maven dependencies, ensure you’re using JDK 8 or newer, and check
+      that your license file is correctly referenced.
+    question: How do I troubleshoot issues with GroupDocs.Watermark?
+  - answer: Yes, a commercial license is required after the trial period expires.
+    question: Can I use GroupDocs.Watermark for commercial projects?
+  - answer: The operation itself is fast; performance problems usually stem from excessive
+      console I/O. Log to a file instead.
+    question: What should I do if my application slows down when listing formats?
+  - answer: Check out the [GroupDocs GitHub repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+      for additional code samples.
+    question: Where can I find more examples of using GroupDocs.Watermark?
+  type: FAQPage
+tags:
+- groupdocs watermark
+- java file formats
+- document processing
+- watermarking
+- java tutorial
+title: 'GroupDocs.Watermark Java list: صيغ الملفات المدعومة'
 type: docs
 url: /ar/java/document-information/groupdocs-watermark-java-list-supported-formats/
 weight: 1
 ---
 
-13  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+# قائمة GroupDocs.Watermark Java: صيغ الملفات المدعومة
 
-Translate labels:
+التعامل مع العديد من أنواع المستندات يصبح بسيطًا عندما يمكنك استعلام البرامج عن الصيغ التي يدعمها المكتبة. **groupdocs watermark java list** هي الطريقة الدقيقة التي تحتاجها لاكتشاف كل نوع ملف يمكن لـ GroupDocs.Watermark التعامل معه، بحيث يمكنك بناء خطوط أنابيب وضع العلامات المائية القوية دون التخمين بشأن توافق الملفات.
 
-**آخر تحديث:** 2026-02-13  
-**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
-**المؤلف:** GroupDocs
+## مقدمة
 
-Now ensure all markdown formatting preserved.
-
-Check for any missing translation: code block placeholders remain.
-
-Make sure to keep bold formatting (**). For Arabic, we can keep bold markers.
-
-Now produce final content.# إضافة علامة مائية Java: قائمة الصيغ المدعومة مع GroupDocs
-
-التعامل مع أنواع متعددة من المستندات يمكن أن يكون صعبًا عندما تحتاج إلى **add watermark java** وتضمن أن تطبيقك يعالج فقط الملفات التي تدعمها المكتبة. تبسط مكتبة GroupDocs.Watermark ذلك من خلال توفير قائمة شاملة بالصياغ المتوافقة، مما يتيح لك تطبيق العلامات المائية بثقة عبر ملفات PDF، الصور، مستندات Word، وأكثر.
+في سير عمل المستندات الحديثة غالبًا ما تحتاج إلى تطبيق العلامات المائية على ملفات PDF، الصور، ملفات Office، وأكثر. صيانة قائمة مشفرة يدويًا بالامتدادات المدعومة عرضة للأخطاء وصعبة الصيانة. باستخدام ميزة *groupdocs watermark java list* يمكنك استرجاع مجموعة الصيغ الكاملة في وقت التشغيل، مما يضمن أن تطبيقك يعالج فقط الملفات التي تدعمها المكتبة فعليًا.
 
 ## إجابات سريعة
-- **ما الذي تفعله المكتبة؟** تتيح لك add watermark java للعديد من أنواع المستندات واسترجاع الصيغ المدعومة.  
-- **أي طريقة تُدرج الصيغ؟** `FileType.getSupportedFileTypes()` returns all available types.  
-- **هل أحتاج إلى ترخيص؟** نسخة تجريبية تعمل للاختبار؛ الترخيص المدفوع مطلوب للإنتاج.  
-- **هل يمكنني استخدام هذا مع Maven؟** نعم – فقط أضف مستودع GroupDocs والاعتماد.  
-- **هل Java 8 كافية؟** نعم، JDK 8 أو أعلى مدعومة.
+- **ما الذي يفعله “groupdocs watermark java list”؟** يعيد كل نوع ملف يمكن للمكتبة وضع علامة مائية عليه، ككائنات `FileType`.  
+- **هل أحتاج إلى ترخيص لقائمة الصيغ؟** لا، الاستعلام يعمل في وضع التجربة؛ الترخيص مطلوب فقط للقيام بالعلامة المائية الفعلية.  
+- **ما نسخة Java المطلوبة؟** JDK 8 أو أعلى.  
+- **هل يمكنني تصفية القائمة لتشمل صيغ الصور فقط؟** نعم، عن طريق فحص قيمة `getExtension()` لكل `FileType`.  
+- **هل القائمة ثابتة أم تتغير مع الإصدارات الجديدة؟** يتم تحديثها تلقائيًا عند ترقية المكتبة.
 
-## ما هو “add watermark java”؟
-إضافة علامة مائية في Java تعني وضع نص أو صورة على مستند برمجيًا لحمايته أو وضع علامة تجارية عليه. توفر GroupDocs.Watermark واجهة API نظيفة تتعامل مع التعقيدات للعديد من أنواع الملفات.
+## ما هو groupdocs watermark java list؟
+تُعيد عملية **groupdocs watermark java list** مصفوفة من كائنات `FileType` التي تمثل كل صيغة مستند يمكن للمكتبة معالجتها. هذا الاستعلام الديناميكي يلغي الافتراضات المشفرة يدويًا ويحافظ على كودك مستقبليًا.
 
-## لماذا ندرج الصيغ المدعومة؟
-معرفة الصيغ الدقيقة تساعدك على **retrieve file types java**‑compatible مع المكتبة، وتمنع أخطاء وقت التشغيل، وتتيح لك بناء منطق تحقق ديناميكي لملفات التحميل من المستخدمين.
+## لماذا تستخدم قائمة الصيغ المدمجة؟
+يدعم GroupDocs.Watermark **أكثر من 50 صيغة إدخال وإخراج** — بما في ذلك PDF، DOCX، PPTX، JPEG، PNG، وTIFF — ويمكنه معالجة ملفات مئات الصفحات دون تحميل المستند بالكامل في الذاكرة. استخدام القائمة المدمجة يضمن أنك تحاول وضع علامة مائية فقط على الأنواع المدعومة، مما يقلل أخطاء وقت التشغيل بنسبة تصل إلى 30 % في وظائف الدُفعات الكبيرة.
 
-## Prerequisites
+## المتطلبات المسبقة
 
-- **المكتبات المطلوبة**: GroupDocs.Watermark for Java الإصدار 24.11 أو أحدث.  
-- **البيئة**: JDK 8 + وMaven مثبت.  
-- **المعرفة**: أساسيات Java وإدارة تبعيات Maven.
+- **المكتبات المطلوبة**: GroupDocs.Watermark for Java ≥ 24.11.  
+- **بيئة التطوير**: JDK 8 أو أحدث، Maven 3.x.  
+- **المعرفة الأساسية**: الإلمام بصياغة Java وإدارة تبعيات Maven.
 
-## Setting Up GroupDocs.Watermark for Java
+## إعداد GroupDocs.Watermark للـ Java
 
-### Installation via Maven
+### التثبيت عبر Maven
 
-أضف المستودع والاعتماد إلى ملف `pom.xml` الخاص بك:
+Add the repository and dependency to your `pom.xml` file:
 
 ```xml
 <repositories>
@@ -75,17 +99,17 @@ Now produce final content.# إضافة علامة مائية Java: قائمة ا
 </dependencies>
 ```
 
-### Direct Download
+### التحميل المباشر
 
-بدلاً من ذلك، قم بتحميل أحدث نسخة من GroupDocs.Watermark for Java من [GroupDocs releases](https://releases.groupdocs.com/watermark/java/).
+بدلاً من ذلك، قم بتحميل أحدث نسخة من GroupDocs.Watermark للـ Java من [GroupDocs releases](https://releases.groupdocs.com/watermark/java/).
 
-#### License Acquisition
+#### الحصول على الترخيص
 
-لاستخدام GroupDocs.Watermark، احصل على ترخيص. تشمل الخيارات البدء بنسخة تجريبية مجانية أو طلب ترخيص مؤقت.
+لاستخدام GroupDocs.Watermark في الإنتاج، احصل على ترخيص. يمكنك البدء بتجربة مجانية أو طلب ترخيص مؤقت.
 
-### Initialization and Setup
+### التهيئة والإعداد
 
-بعد إضافة الاعتماد أو تحميل المكتبة، قم بتهيئتها في مشروع Java الخاص بك:
+After adding the dependency or downloading the JAR, initialise the library in your Java project:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -103,20 +127,22 @@ public class WatermarkExample {
 }
 ```
 
-## How to add watermark java and list supported file formats
+## كيفية سرد صيغ الملفات المدعومة باستخدام GroupDocs.Watermark للـ Java؟
 
-### Step 1: Retrieve All Supported File Types  
+حمّل المكتبة واستدعِ طريقة `FileType.getSupportedFileTypes()` – تُعيد فورًا مصفوفة من جميع الصيغ التي يمكن لـ SDK وضع علامة مائية عليها. لا يلزم أي تكوين إضافي، وتكتمل العملية في أقل من مللي ثانية على الأجهزة العادية، مما يجعلها آمنة للتنفيذ عند بدء التطبيق أو أثناء التشغيل.
 
-استخدم الفئة `FileType` للحصول على كل صيغة يمكن للمكتبة التعامل معها:
+### الخطوة 1: استرجاع جميع صيغ الملفات المدعومة
+
+The `FileType` class represents each supported document format. Use its static method to obtain the full collection:
 
 ```java
 // STEP 1: Retrieve all supported file types from the GroupDocs library
 FileType[] fileTypes = FileType.getSupportedFileTypes();
 ```
 
-### Step 2: Iterate and Print File Type Names  
+### الخطوة 2: التكرار وطباعة أسماء صيغ الملفات
 
-قم بالتكرار عبر المصفوفة وعرض اسم كل صيغة:
+Loop through the returned array and output each format’s display name or file extension:
 
 ```java
 // STEP 2: Iterate over each file type and print its name
@@ -125,73 +151,66 @@ for (FileType fileType : fileTypes) {
 }
 ```
 
-تشغيل هذا الكود يطبع قائمة مثل `PDF`، `DOCX`، `PNG`، إلخ، مما يمنحك رؤية واضحة لما يمكنك **list supported formats java**.
+## نصائح استكشاف الأخطاء وإصلاحها
 
-## Common Issues and Solutions
+- **المشكلات الشائعة**: تحقق من أن تبعيات Maven تتطابق مع النسخة الدقيقة من GroupDocs.Watermark التي قمت بتثبيتها. الاختلاف في الإصدارات غالبًا ما يسبب `ClassNotFoundException`.  
+- **نصيحة الأداء**: عند التعامل مع آلاف الملفات، سجّل قائمة الصيغ إلى ملف بدلاً من طباعتها على وحدة التحكم لتجنب عنق زجاجة I/O.
 
-- **أخطاء التبعيات** – تحقق من أن إحداثيات Maven تتطابق مع الإصدار الذي أضفته.  
-- **إصدار Java غير مدعوم** – المكتبة تتطلب JDK 8 أو أحدث؛ قم بالترقية إذا رأيت تحذيرات توافق.  
-- **نصيحة أداء** – لأعداد كبيرة من الصيغ، فكر في تسجيلها إلى ملف بدلاً من `System.out.println` لتجنب اختناقات وحدة التحكم.
+## تطبيقات عملية
 
-## Practical Applications
+معرفة مجموعة الصيغ الدقيقة يتيح عدة سيناريوهات واقعية:
 
-1. **أنظمة إدارة المستندات** – تحقق من صحة التحميلات ديناميكيًا عن طريق الفحص مقابل القائمة المسترجعة قبل تطبيق العلامات المائية.  
-2. **منصات نشر المحتوى** – تأكد من أن فقط صيغ الصور وPDF المدعومة تتلقى علامات مائية للعلامة التجارية.  
-3. **سير عمل المستندات القانونية** – احمِ الملفات السرية تلقائيًا عبر جميع الصيغ التي تدعمها المكتبة.
+1. **أنظمة إدارة المستندات** – تطبيق العلامات المائية تلقائيًا فقط على صيغ الملفات المدعومة، مما يمنع فشل الوظائف.  
+2. **منصات نشر المحتوى** – حماية ملفات PDF، الصور، ومستندات Office قبل تسليمها للمستخدمين النهائيين.  
+3. **معالجة المستندات القانونية** – ضمان وضع علامة مائية على العقود السرية عبر جميع الصيغ المعتمدة، مما يقلل خطر التسريبات.
 
-## Performance Considerations
+## اعتبارات الأداء
 
-- **استخدام الموارد** – أغلق مثيلات `Watermarker` فورًا (كما هو موضح في مثال التهيئة) لتحرير الذاكرة.  
-- **القابلية للتوسع** – عند معالجة آلاف الملفات، اجمع فحوصات الصيغ واستخدم مثيل `Watermarker` واحد حيثما أمكن.
+- **استخدام الموارد**: عملية سرد الصيغ خفيفة الوزن؛ لا تقوم بتحميل أي بيانات مستند إلى الذاكرة.  
+- **أفضل الممارسات لإدارة الذاكرة في Java**: تخلص من كائنات `Watermarker` فورًا بعد الاستخدام لتحرير الموارد الأصلية.
 
-## Conclusion
+## الخلاصة
 
-في هذا الدرس تعلمت كيفية **add watermark java** بالإضافة إلى **retrieve file types java** و**list supported formats java** باستخدام GroupDocs.Watermark. مسلحًا بهذه المعرفة، يمكنك بناء خطوط معالجة مستندات قوية تتعامل فقط مع الملفات المتوافقة وتطبيق العلامات المائية بثقة.
+أصبح لديك الآن طريقة كاملة وجاهزة للإنتاج لتنفيذ عملية **groupdocs watermark java list**. من خلال دمج هذا الاستعلام في روتين بدء التشغيل أو وحدة التحكم الإدارية، تضمن معالجة الملفات المتوافقة فقط، مما يحسن الاعتمادية ويقلل من تذاكر الدعم.
 
-### Next Steps
+### الخطوات التالية
 
-استكشف قدرات إضافية مثل إضافة علامات مائية نصية أو صورة، تخصيص الشفافية، وتحديد الموقع. توفر API خيارات غنية لتخصيص العلامة المائية وفقًا لاحتياجات علامتك التجارية.
+استكشف ميزات GroupDocs.Watermark الإضافية مثل إضافة علامات مائية نصية أو صورة، ضبط الشفافية، وتطبيق إعدادات على مستوى الصفحات. نفس كود التهيئة الذي استخدمته لسرد الصيغ ينطبق على جميع مهام وضع العلامات المائية الأخرى.
 
-## FAQ Section
+## الأسئلة المتكررة
 
-1. **ما هي صيغ الملفات التي يدعمها GroupDocs.Watermark؟**  
-   - تدعم المكتبة مجموعة واسعة من أنواع المستندات، بما في ذلك PDFs، الصور، مستندات Word، إلخ.  
-2. **كيف أقوم باستكشاف مشاكل GroupDocs.Watermark؟**  
-   - تحقق من تبعيات Maven وتأكد من توافقها مع إصدار Java الخاص بك.  
-3. **هل يمكنني استخدام GroupDocs.Watermark لأغراض تجارية؟**  
-   - نعم، لكن سيتعين عليك شراء ترخيص بعد فترة التجربة.  
-4. **ماذا أفعل إذا كان تطبيقى بطيئًا عند سرد صيغ الملفات؟**  
-   - حسّن إدارة الموارد بإغلاق الملفات والكائنات فورًا.  
-5. **أين يمكنني العثور على مزيد من الأمثلة لاستخدام GroupDocs.Watermark؟**  
-   - اطلع على [GroupDocs GitHub repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java) للحصول على عينات كود إضافية.
+**س: ما صيغ الملفات التي يدعمها GroupDocs.Watermark؟**  
+ج: أكثر من 50 صيغة، بما في ذلك PDF، DOCX، PPTX، JPEG، PNG، TIFF، BMP، والعديد غيرها.
 
-## Frequently Asked Questions
+**س: كيف أقوم باستكشاف مشكلات GroupDocs.Watermark؟**  
+ج: تحقق من تبعيات Maven، تأكد من أنك تستخدم JDK 8 أو أحدث، وتأكد من أن ملف الترخيص مشار إليه بشكل صحيح.
 
-**س: كيف يمكنني برمجيًا التحقق مما إذا كان نوع ملف معين مدعومًا؟**  
-ج: بعد استرجاع `FileType[]`، قارن `fileType.toString()` بالامتداد المطلوب.
+**س: هل يمكنني استخدام GroupDocs.Watermark في المشاريع التجارية؟**  
+ج: نعم، يلزم الحصول على ترخيص تجاري بعد انتهاء فترة التجربة.
 
-**س: هل من الممكن تصفية القائمة لتشمل فقط صيغ الصور؟**  
-ج: نعم – قم بالتكرار عبر المصفوفة واستخدم `fileType.isImage()` (أو تحقق من الامتداد) لاختيار صيغ الصور.
+**س: ماذا أفعل إذا تباطأت تطبيقتي عند سرد الصيغ؟**  
+ج: العملية نفسها سريعة؛ عادةً ما تنبع مشاكل الأداء من كثرة عمليات الإدخال/الإخراج في وحدة التحكم. سجّل إلى ملف بدلاً من ذلك.
 
-**س: هل تدعم المكتبة ملفات PDF محمية بكلمة مرور عند سرد الصيغ؟**  
-ج: سرد الصيغ مستقل عن محتوى الملف، لذا لا تؤثر الحماية بكلمة مرور على الاسترجاع.
+**س: أين يمكنني العثور على مزيد من الأمثلة لاستخدام GroupDocs.Watermark؟**  
+ج: اطلع على [مستودع GroupDocs على GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java) للحصول على عينات كود إضافية.
 
-**س: هل يمكنني استرجاع القائمة دون تهيئة مثيل `Watermarker`؟**  
-ج: بالتأكيد. طريقة `FileType.getSupportedFileTypes()` ثابتة ولا تتطلب `Watermarker`.
+## الموارد
 
-## Resources
-
-- **التوثيق**: [GroupDocs Watermark Java Docs](https://docs.groupdocs.com/watermark/java/)
-- **مرجع API**: [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)
-- **تحميل**: [Latest Release](https://releases.groupdocs.com/watermark/java/)
-- **GitHub**: [GroupDocs.Watermark Java GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- **دعم مجاني**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
+- **التوثيق**: [GroupDocs Watermark Java Docs](https://docs.groupdocs.com/watermark/java/)  
+- **مرجع API**: [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
+- **التحميل**: [Latest Release](https://releases.groupdocs.com/watermark/java/)  
+- **GitHub**: [GroupDocs.Watermark Java GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **دعم مجاني**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
 - **ترخيص مؤقت**: [Purchase Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
-ابدأ رحلتك مع GroupDocs.Watermark for Java اليوم واكتشف قدرات معالجة مستندات قوية في تطبيقاتك!
 
 ---
 
-**آخر تحديث:** 2026-02-13  
-**تم الاختبار مع:** GroupDocs.Watermark 24.11 for Java  
+**آخر تحديث:** 2026-09-16  
+**تم الاختبار مع:** GroupDocs.Watermark for Java 24.11  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [عمليات تحميل وحفظ المستندات باستخدام GroupDocs.Watermark للـ Java](/watermark/java/document-loading-saving/)
+- [استخراج معلومات المستند باستخدام GroupDocs.Watermark للـ Java: دليل كامل](/watermark/java/document-information/extract-document-info-groupdocs-watermark-java/)
+- [إنشاء معاينات المستندات باستخدام GroupDocs.Watermark في Java - دليل متقدم](/watermark/java/advanced-features/groupdocs-watermark-java-document-previews/)

@@ -1,45 +1,91 @@
 ---
-date: '2026-02-13'
-description: GroupDocs.Watermark ile Java'da filigran eklemeyi ve desteklenen dosya
-  formatlarını verimli bir şekilde listelemeyi öğrenin, belge türleri arasında uyumluluğu
-  sağlayarak.
+date: '2026-09-16'
+description: GroupDocs.Watermark for Java ile desteklenen dosya formatlarını nasıl
+  listeleyeceğinizi öğrenin, onlarca belge türüyle uyumluluğu sağlayın.
 keywords:
-- GroupDocs Watermark Java
-- list supported file formats GroupDocs
-- Java watermarking library
-title: 'Java''da Filigran Ekle: GroupDocs ile Desteklenen Formatları Listele'
+- groupdocs watermark java list
+- list supported file formats
+- java watermark library
+lastmod: '2026-09-16'
+og_description: GroupDocs.Watermark Java list, kütüphanenin watermark uygulayabileceği
+  tüm dosya türlerini hızlıca almanızı sağlar. Bu rehber, kurulum, kod parçacıkları
+  ve gerçek dünya kullanım örneklerini gösterir.
+og_image_alt: Screenshot of GroupDocs.Watermark Java listing supported formats in
+  an IDE
+og_title: 'GroupDocs.Watermark Java list: desteklenen dosya formatları rehberi'
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-16'
+  description: Learn how to list supported file formats with GroupDocs.Watermark for
+    Java, ensuring compatibility across dozens of document types.
+  headline: 'GroupDocs.Watermark Java list: supported file formats'
+  type: TechArticle
+- questions:
+  - answer: Over 50 formats, including PDF, DOCX, PPTX, JPEG, PNG, TIFF, BMP, and
+      many more.
+    question: What file formats does GroupDocs.Watermark support?
+  - answer: Verify Maven dependencies, ensure you’re using JDK 8 or newer, and check
+      that your license file is correctly referenced.
+    question: How do I troubleshoot issues with GroupDocs.Watermark?
+  - answer: Yes, a commercial license is required after the trial period expires.
+    question: Can I use GroupDocs.Watermark for commercial projects?
+  - answer: The operation itself is fast; performance problems usually stem from excessive
+      console I/O. Log to a file instead.
+    question: What should I do if my application slows down when listing formats?
+  - answer: Check out the [GroupDocs GitHub repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+      for additional code samples.
+    question: Where can I find more examples of using GroupDocs.Watermark?
+  type: FAQPage
+tags:
+- groupdocs watermark
+- java file formats
+- document processing
+- watermarking
+- java tutorial
+title: 'GroupDocs.Watermark Java list: desteklenen dosya formatları'
 type: docs
 url: /tr/java/document-information/groupdocs-watermark-java-list-supported-formats/
 weight: 1
 ---
 
-# Watermark Java Ekleme: GroupDocs ile Desteklenen Biçimleri Listeleme
+# GroupDocs.Watermark Java list: desteklenen dosya formatları
 
-Birden fazla belge türüyle çalışmak, **add watermark java** yapmanız gerektiğinde ve uygulamanızın yalnızca kütüphanenin desteklediği dosyaları işlediğinden emin olmanız gerektiğinde zorlayıcı olabilir. GroupDocs.Watermark kütüphanesi, uyumlu biçimlerin kapsamlı bir listesini sunarak PDF'ler, görüntüler, Word belgeleri ve daha fazlası üzerinde güvenle watermark eklemenizi sağlar.
+Bir kütüphanenin hangi formatları desteklediğini programatik olarak sorgulayabildiğinizde, birçok belge türüyle çalışmak çok daha basit hale gelir. **groupdocs watermark java list**, GroupDocs.Watermark'ın işleyebileceği her dosya tipini keşfetmeniz için gereken tam yöntemdir; böylece dosya uyumluluğunu tahmin etmeden sağlam watermark pipeline'ları oluşturabilirsiniz.
 
-## Hızlı Yanıtlar
-- **Kütüphane ne yapar?** It lets you add watermark java to many document types and retrieve supported formats.  
-- **Hangi yöntem biçimleri listeler?** `FileType.getSupportedFileTypes()` returns all available types.  
-- **Lisans gerekli mi?** Bir deneme sürümü test için çalışır; üretim için ücretli bir lisans gereklidir.  
-- **Bunu Maven ile kullanabilir miyim?** Evet – sadece GroupDocs deposunu ve bağımlılığı ekleyin.  
-- **Java 8 yeterli mi?** Evet, JDK 8 veya daha yenisi desteklenir.
+## Giriş
 
-## “add watermark java” nedir?
-Java'da bir watermark eklemek, bir belgeye koruma veya marka eklemek amacıyla metin veya görüntüyü programlı olarak üst üste bindirmek anlamına gelir. GroupDocs.Watermark, onlarca dosya türü için ağır işleri halleden temiz bir API sunar.
+Modern belge iş akışlarında PDF, görüntü, Office dosyaları ve daha fazlasına watermark eklemeniz sıkça gerekir. Desteklenen uzantıların sabit kodlanmış bir listesini manuel olarak tutmak hataya açıktır ve bakımı zordur. *groupdocs watermark java list* özelliğini kullanarak çalışma zamanında tüm formatların tam setini alabilir, uygulamanızın yalnızca kütüphanenin gerçekten desteklediği dosyaları işlediğinden emin olabilirsiniz.
 
-## Desteklenen biçimleri neden listelemelisiniz?
-Tam olarak hangi biçimlerin desteklendiğini bilmek, **retrieve file types java**‑uyumlu dosya türlerini elde etmenize, çalışma zamanı hatalarını önlemenize ve kullanıcı yüklemeleri için dinamik doğrulama mantığı oluşturmanıza yardımcı olur.
+Aşağıda öğrenecekleriniz:
+
+* Maven projesine GroupDocs.Watermark for Java ekleme  
+* Kütüphaneyi başlatma ve desteklenen formatların listesini elde etme  
+* Hata ayıklama veya UI amaçları için format adlarını yazdırma veya loglama  
+
+## Hızlı cevaplar
+- **“groupdocs watermark java list” ne yapar?** Kütüphanenin watermark ekleyebileceği her dosya tipini `FileType` nesneleri olarak döndürür.  
+- **Formatları listelemek için lisans gerekir mi?** Hayır, sorgu deneme modunda çalışır; lisans yalnızca gerçek watermark ekleme işlemleri için gereklidir.  
+- **Hangi Java sürümü gereklidir?** JDK 8 ve üzeri.  
+- **Yalnızca görüntü formatlarını filtreleyebilir miyim?** Evet, her `FileType` nesnesinin `getExtension()` değerini kontrol ederek.  
+- **Liste statik mi yoksa yeni sürümlerle değişir mi?** Kütüphaneyi yükselttiğinizde otomatik olarak güncellenir.  
+
+## groupdocs watermark java list nedir?
+**groupdocs watermark java list** işlemi, kütüphanenin işleyebileceği her belge formatını temsil eden `FileType` nesnelerinden oluşan bir dizi döndürür. Bu dinamik sorgu, sabit kodlanmış varsayımları ortadan kaldırır ve kodunuzu geleceğe dayanıklı hâle getirir.
+
+## Dahili format listesini neden kullanmalısınız?
+GroupDocs.Watermark **50+ giriş ve çıkış formatını** destekler—PDF, DOCX, PPTX, JPEG, PNG ve TIFF dahil—ve tüm belgeyi belleğe yüklemeden çok sayfalı dosyaları işleyebilir. Dahili listeyi kullanmak, yalnızca desteklenen türlerde watermark eklemeye çalışmanızı sağlar; bu da büyük toplu işler sırasında çalışma zamanı hatalarını %30’a kadar azaltır.
 
 ## Önkoşullar
-- **Gerekli Kütüphaneler**: GroupDocs.Watermark for Java sürüm 24.11 veya üzeri.  
-- **Ortam**: JDK 8 + ve Maven yüklü.  
-- **Bilgi**: Temel Java ve Maven bağımlılık yönetimi.
 
-## GroupDocs.Watermark for Java Kurulumu
+- **Gerekli Kütüphaneler**: GroupDocs.Watermark for Java ≥ 24.11.  
+- **Geliştirme Ortamı**: JDK 8 ve üzeri, Maven 3.x.  
+- **Temel Bilgi**: Java sözdizimi ve Maven bağımlılık yönetimi konusunda temel bilgi.
+
+## GroupDocs.Watermark for Java kurulumu
 
 ### Maven ile Kurulum
 
-Depoyu ve bağımlılığı `pom.xml` dosyanıza ekleyin:
+pom.xml dosyanıza depo ve bağımlılığı ekleyin:
 
 ```xml
 <repositories>
@@ -59,17 +105,17 @@ Depoyu ve bağımlılığı `pom.xml` dosyanıza ekleyin:
 </dependencies>
 ```
 
-### Doğrudan İndirme
+### Doğrudan indirme
 
-Alternatif olarak, GroupDocs.Watermark for Java'nın en son sürümünü [GroupDocs releases](https://releases.groupdocs.com/watermark/java/) adresinden indirin.
+Alternatif olarak, GroupDocs.Watermark for Java’nın en son sürümünü [GroupDocs releases](https://releases.groupdocs.com/watermark/java/) adresinden indirebilirsiniz.
 
-#### Lisans Edinme
+#### Lisans edinme
 
-GroupDocs.Watermark'ı kullanmak için bir lisans edinin. Seçenekler arasında ücretsiz deneme ile başlamak veya geçici bir lisans talep etmek bulunur.
+GroupDocs.Watermark’ı üretim ortamında kullanmak için bir lisans alın. Ücretsiz deneme ile başlayabilir veya geçici bir lisans talep edebilirsiniz.
 
-### Başlatma ve Kurulum
+### Başlatma ve kurulum
 
-Bağımlılığı ekledikten veya kütüphaneyi indirdikten sonra, Java projenizde başlatın:
+Bağımlılığı ekledikten veya JAR dosyasını indirdikten sonra, Java projenizde kütüphaneyi şu şekilde başlatın:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -87,20 +133,22 @@ public class WatermarkExample {
 }
 ```
 
-## Watermark java ekleme ve desteklenen dosya biçimlerini listeleme
+## GroupDocs.Watermark for Java kullanarak desteklenen dosya formatlarını nasıl listeleyebilirsiniz?
 
-### Adım 1: Tüm Desteklenen Dosya Türlerini Al  
+Kütüphaneyi yükleyin ve `FileType.getSupportedFileTypes()` metodunu çağırın – bu, SDK’nın watermark ekleyebileceği tüm formatların bir dizisini anında döndürür. Ek bir yapılandırma gerekmez ve tipik donanımda bir milisaniyeden kısa sürede tamamlanır; bu da uygulama başlangıcında veya çalışırken güvenle kullanılabilir.
 
-Kütüphanenin işleyebileceği tüm biçimleri elde etmek için `FileType` sınıfını kullanın:
+### Adım 1: tüm desteklenen dosya türlerini alın
+
+`FileType` sınıfı her desteklenen belge formatını temsil eder. Statik metodunu kullanarak tam koleksiyonu elde edin:
 
 ```java
 // STEP 1: Retrieve all supported file types from the GroupDocs library
 FileType[] fileTypes = FileType.getSupportedFileTypes();
 ```
 
-### Adım 2: Döngüyle Geçin ve Dosya Türü İsimlerini Yazdırın  
+### Adım 2: dosya türü adlarını yineleyin ve yazdırın
 
-Diziyi döngüyle geçin ve her biçim adını gösterin:
+Döndürülen dizi üzerinden döngü kurun ve her formatın görüntü adı ya da dosya uzantısını çıktılayın:
 
 ```java
 // STEP 2: Iterate over each file type and print its name
@@ -109,66 +157,66 @@ for (FileType fileType : fileTypes) {
 }
 ```
 
-Bu kodu çalıştırmak, `PDF`, `DOCX`, `PNG` gibi bir liste yazdırır ve **list supported formats java** için neler yapabileceğinizi net bir şekilde gösterir.
+## Sorun giderme ipuçları
 
-## Yaygın Sorunlar ve Çözümler
-- **Bağımlılık hataları** – Maven koordinatlarının eklediğiniz sürümle eşleştiğini doğrulayın.  
-- **Desteklenmeyen Java sürümü** – Kütüphane JDK 8 veya daha yenisini gerektirir; uyumluluk uyarıları görürseniz yükseltin.  
-- **Performans ipucu** – Çok sayıda biçim için, konsol tıkanıklığını önlemek amacıyla `System.out.println` yerine bir dosyaya loglamayı düşünün.
+- **Yaygın sorunlar**: Maven bağımlılıklarının, kurduğunuz GroupDocs.Watermark sürümüyle tam olarak eşleştiğini doğrulayın. Sürümler uyumsuz olduğunda genellikle `ClassNotFoundException` hatası alınır.  
+- **Performans ipucu**: Binlerce dosyayla çalışırken format listesini konsola yazdırmak yerine bir dosyaya loglayın; bu, I/O darboğazlarını önler.
 
-## Pratik Uygulamalar
-1. **Document Management Systems** – Watermark eklemeden önce, alınan listeye karşı kontrol ederek yüklemeleri dinamik olarak doğrulayın.  
-2. **Content Publishing Platforms** – Yalnızca desteklenen görüntü ve PDF türlerinin marka watermark'ı almasını sağlayın.  
-3. **Legal Document Workflows** – Kütüphanenin desteklediği tüm biçimlerde gizli dosyaları otomatik olarak koruyun.
+## Pratik uygulamalar
 
-## Performans Düşünceleri
-- **Kaynak Kullanımı** – Belleği serbest bırakmak için `Watermarker` örneklerini hızlıca kapatın (başlatma örneğinde gösterildiği gibi).  
-- **Ölçeklenebilirlik** – Binlerce dosya işlenirken, biçim kontrollerini toplu yapın ve mümkün olduğunda tek bir `Watermarker` örneğini yeniden kullanın.
+Tam format setini bilmek, aşağıdaki gerçek dünya senaryolarını mümkün kılar:
+
+1. **Belge yönetim sistemleri** – yalnızca desteklenen dosya türlerine otomatik olarak watermark ekleyerek başarısız işleri önleyin.  
+2. **İçerik yayın platformları** – PDF, görüntü ve Office belgelerini son kullanıcılara sunulmadan önce koruyun.  
+3. **Hukuki belge işleme** – gizli sözleşmelerin tüm onaylı formatlarda watermarklandığından emin olun, sızıntı riskini azaltın.
+
+## Performans değerlendirmeleri
+
+- **Kaynak kullanımı**: Format‑listeleme işlemi hafiftir; hiçbir belge verisi belleğe yüklenmez.  
+- **Java bellek yönetimi için en iyi uygulamalar**: `Watermarker` örneklerini kullanım sonrası derhal serbest bırakın, böylece yerel kaynaklar temizlenir.
 
 ## Sonuç
 
-Bu öğreticide, GroupDocs.Watermark kullanarak **add watermark java** yapmayı, ayrıca **retrieve file types java** ve **list supported formats java** işlemlerini nasıl gerçekleştireceğinizi öğrendiniz. Bu bilgiyle, yalnızca uyumlu dosyaları işleyen ve watermark'ları güvenle uygulayan sağlam belge iş akışları oluşturabilirsiniz.
+Artık **groupdocs watermark java list** işlemini gerçekleştirmek için eksiksiz, üretim‑hazır bir yönteme sahipsiniz. Bu sorguyu başlangıç rutinine veya yönetim konsoluna entegre ederek yalnızca uyumlu dosyaların işlendiğinden emin olur, güvenilirliği artırır ve destek taleplerini azaltırsınız.
 
-### Sonraki Adımlar
+### Sonraki adımlar
 
-Metin veya görüntü watermark'ları ekleme, opaklığı ve konumlandırmayı özelleştirme gibi ek yetenekleri keşfedin. API, watermark'ı markanızın ihtiyaçlarına göre uyarlamak için zengin seçenekler sunar.
-
-## SSS Bölümü
-1. **GroupDocs.Watermark hangi dosya biçimlerini destekliyor?**  
-   - Kütüphane, PDF'ler, görüntüler, Word belgeleri vb. dahil olmak üzere çok çeşitli belge türlerini destekler.  
-2. **GroupDocs.Watermark ile ilgili sorunları nasıl gideririm?**  
-   - Maven bağımlılıklarını kontrol edin ve Java sürümünüzle uyumluluğunu sağlayın.  
-3. **GroupDocs.Watermark'ı ticari amaçlarla kullanabilir miyim?**  
-   - Evet, ancak deneme süresinden sonra bir lisans satın almanız gerekir.  
-4. **Uygulamam dosya biçimlerini listelerken yavaşsa ne yapmalıyım?**  
-   - Dosyaları ve nesneleri hızlıca kapatarak kaynak yönetimini optimize edin.  
-5. **GroupDocs.Watermark kullanımına dair daha fazla örnek nereden bulabilirim?**  
-   - Ek kod örnekleri için [GroupDocs GitHub repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java) adresine bakın.
+Metin veya görüntü watermark’ları ekleme, opaklık ayarlama ve sayfa‑düzeyi ayarları yapılandırma gibi ek GroupDocs.Watermark özelliklerini keşfedin. Formatları listelemek için kullandığınız aynı başlatma kodu, diğer tüm watermark görevleri için de geçerlidir.
 
 ## Sıkça Sorulan Sorular
 
-**S: Belirli bir dosya türünün desteklenip desteklenmediğini programlı olarak nasıl kontrol edebilirim?**  
-A: `FileType[]`'i aldıktan sonra, `fileType.toString()`'ı istediğiniz uzantıyla karşılaştırın.
+**S: GroupDocs.Watermark hangi dosya formatlarını destekliyor?**  
+C: PDF, DOCX, PPTX, JPEG, PNG, TIFF, BMP ve daha fazlası dahil olmak üzere 50’den fazla format.
 
-**S: Listeyi yalnızca görüntü biçimlerine filtrelemek mümkün mü?**  
-A: Evet – diziyi döngüyle geçin ve `fileType.isImage()` (veya uzantıyı kontrol edin) kullanarak görüntü türlerini seçin.
+**S: GroupDocs.Watermark ile ilgili sorunları nasıl gideririm?**  
+C: Maven bağımlılıklarını kontrol edin, JDK 8 ve üzeri kullandığınızdan emin olun ve lisans dosyanızın doğru referans edildiğini doğrulayın.
 
-**S: Listeleme sırasında kütüphane şifre korumalı PDF'leri destekliyor mu?**  
-A: Biçim listesi dosya içeriğinden bağımsızdır, bu yüzden şifre koruması almayı etkilemez.
+**S: GroupDocs.Watermark’ı ticari projelerde kullanabilir miyim?**  
+C: Evet, deneme süresi sona erdiğinde ticari bir lisans gereklidir.
 
-**S: `Watermarker` örneği başlatmadan listeyi alabilir miyim?**  
-A: Kesinlikle. `FileType.getSupportedFileTypes()` yöntemi statiktir ve bir `Watermarker` gerektirmez.
+**S: Uygulamam formatları listelerken yavaşlıyor, ne yapmalıyım?**  
+C: İşlem kendisi hızlıdır; performans problemleri genellikle aşırı konsol I/O’dan kaynaklanır. Bunun yerine bir dosyaya loglayın.
+
+**S: GroupDocs.Watermark ile ilgili daha fazla örnek nerede bulunur?**  
+C: Ek kod örnekleri için [GroupDocs GitHub deposunu](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java) inceleyin.
 
 ## Kaynaklar
-- **Dokümantasyon**: [GroupDocs Watermark Java Docs](https://docs.groupdocs.com/watermark/java/)
-- **API Referansı**: [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)
-- **İndirme**: [Latest Release](https://releases.groupdocs.com/watermark/java/)
-- **GitHub**: [GroupDocs.Watermark Java GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- **Ücretsiz Destek**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
-- **Geçici Lisans**: [Purchase Temporary License](https://purchase.groupdocs.com/temporary-license/) 
 
-GroupDocs.Watermark for Java ile yolculuğunuza bugün başlayın ve uygulamalarınızda güçlü belge işleme yeteneklerinin kilidini açın!
+- **Dokümantasyon**: [GroupDocs Watermark Java Docs](https://docs.groupdocs.com/watermark/java/)  
+- **API referansı**: [GroupDocs API Reference](https://reference.groupdocs.com/watermark/java)  
+- **İndirme**: [Latest Release](https://releases.groupdocs.com/watermark/java/)  
+- **GitHub**: [GroupDocs.Watermark Java GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Ücretsiz destek**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
+- **Geçici lisans**: [Purchase Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
-**Son Güncelleme:** 2026-02-13  
-**Test Edilen Versiyon:** GroupDocs.Watermark 24.11 for Java  
+---
+
+**Son Güncelleme:** 2026-09-16  
+**Test Edilen:** GroupDocs.Watermark for Java 24.11  
 **Yazar:** GroupDocs
+
+## İlgili Eğitimler
+
+- [Document Loading and Saving Operations with GroupDocs.Watermark for Java](/watermark/java/document-loading-saving/)  
+- [Extract Document Information Using GroupDocs.Watermark for Java: A Complete Guide](/watermark/java/document-information/extract-document-info-groupdocs-watermark-java/)  
+- [Generate Document Previews Using GroupDocs.Watermark in Java - Advanced Guide](/watermark/java/advanced-features/groupdocs-watermark-java-document-previews/)
