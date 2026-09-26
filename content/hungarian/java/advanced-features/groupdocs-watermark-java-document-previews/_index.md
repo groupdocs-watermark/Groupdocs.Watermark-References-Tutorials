@@ -1,10 +1,8 @@
 ---
 date: '2026-09-26'
-description: Learn how to convert document to image and java generate thumbnails using
-  GroupDocs.Watermark. Step-by-step guide covers setup, preview streams, and performance
-  tips.
-images:
-- /java/advanced-features/groupdocs-watermark-java-document-previews/og-image.png
+description: Ismerje meg, hogyan lehet a dokumentumot képpé konvertálni és a Java
+  segítségével thumbnail-eket generálni a GroupDocs.Watermark használatával. A lépésről-lépésre
+  útmutató bemutatja a beállítást, az előnézeti adatfolyamokat és a teljesítmény tippeket.
 keywords:
 - convert document to image
 - java generate thumbnails
@@ -12,12 +10,13 @@ keywords:
 - document preview generation
 - Java watermarking library
 lastmod: '2026-09-26'
-og_description: Learn how to convert document to image and java generate thumbnails
-  using GroupDocs.Watermark. This guide walks you through installation, stream handling,
-  and performance optimisation for fast preview creation.
+og_description: Ismerje meg, hogyan lehet a dokumentumot képpé konvertálni és a Java
+  segítségével thumbnail-eket generálni a GroupDocs.Watermark használatával. Ez az
+  útmutató végigvezet a telepítésen, az adatfolyam-kezelésen és a teljesítmény optimalizáláson
+  a gyors előnézet létrehozásához.
 og_image_alt: Guide showing how to convert document to image with GroupDocs.Watermark
   in Java
-og_title: Convert document to image with GroupDocs.Watermark Java
+og_title: Dokumentum átalakítása képpé a GroupDocs.Watermark Java segítségével
 schemas:
 - author: GroupDocs
   dateModified: '2026-09-26'
@@ -76,47 +75,45 @@ tags:
 - GroupDocs.Watermark
 - Java document processing
 - preview generation
-title: Convert document to image with GroupDocs.Watermark Java
+title: Dokumentum átalakítása képpé a GroupDocs.Watermark Java segítségével
 type: docs
-url: /java/advanced-features/groupdocs-watermark-java-document-previews/
+url: /hu/java/advanced-features/groupdocs-watermark-java-document-previews/
 weight: 1
 ---
 
-# Convert document to image with GroupDocs.Watermark Java
+# Dokumentum konvertálása képpé a GroupDocs.Watermark Java-val
 
-Generating lightweight image previews of multi‑page documents is a common requirement for portals, content‑management systems, and cloud storage services. By **convert document to image** you give end‑users a fast visual cue without the overhead of loading the full file. The GroupDocs.Watermark Java library not only adds watermarks but also provides a high‑performance preview engine that can **java generate thumbnails** for every page in a single pass.
+Könnyűsúlyú kép előnézetek generálása többoldalas dokumentumokhoz gyakori követelmény a portálok, tartalomkezelő rendszerek és felhőalapú tárolási szolgáltatások számára. A **convert document to image** használatával a végfelhasználók gyors vizuális jelzést kapnak anélkül, hogy a teljes fájlt be kellene tölteni. A GroupDocs.Watermark Java könyvtár nem csak vízjeleket ad hozzá, hanem egy nagy teljesítményű előnézeti motorral is rendelkezik, amely **java generate thumbnails** képes minden oldalra egyetlen átfutásban.
 
-In this tutorial you will learn how to set up the library, create custom page streams, release resources safely, and finally produce image previews for each page of a source document. The instructions are written for developers familiar with Java and object‑oriented concepts, and they include best‑practice tips for handling large batches of files.
+Ebben az oktatóanyagban megtanulja, hogyan állítsa be a könyvtárat, hozzon létre egyedi oldal‑streameket, szabadítsa fel a erőforrásokat biztonságosan, és végül állítson elő kép előnézeteket a forrásdokumentum minden oldalához. Az útmutató fejlesztőknek készült, akik jártasak a Java és az objektum‑orientált koncepciókban, és tartalmaz legjobb gyakorlatokra vonatkozó tippeket nagy fájlbatches kezeléséhez.
 
-## Quick answers
-- **What is the first step?** Add the GroupDocs.Watermark Maven dependency and initialise a `Watermarker` with the source file path.  
-- **How are preview images created?** Implement `ICreatePageStream` to open an output stream for each page, then call `generatePreview()` with appropriate options.  
-- **Do I need a license?** A trial works for basic scenarios, but a full license removes watermarks and unlocks batch processing.  
-- **Can I process PDFs larger than 200 pages?** Yes – the library streams pages, so memory usage stays low even for 500‑page files.  
-- **What image formats are supported?** PNG, JPEG, BMP, and TIFF are available out of the box.
+## Gyors válaszok
+- **Mi az első lépés?** Add the GroupDocs.Watermark Maven dependency and initialise a `Watermarker` with the source file path.  
+- **Hogyan jönnek létre az előnézeti képek?** Implement `ICreatePageStream` to open an output stream for each page, then call `generatePreview()` with appropriate options.  
+- **Szükségem van licencre?** A trial works for basic scenarios, but a full license removes watermarks and unlocks batch processing.  
+- **Feldolgozhatok 200 oldalnál nagyobb PDF-eket?** Yes – the library streams pages, so memory usage stays low even for 500‑page files.  
+- **Milyen képformátumok támogatottak?** PNG, JPEG, BMP, and TIFF are available out of the box.
 
-## What is convert document to image?
-The phrase **convert document to image** describes the process of rendering each page of a source file (PDF, DOCX, PPTX, etc.) into a raster image such as PNG or JPEG. This conversion is useful for thumbnail galleries, preview panes, and mobile‑friendly document viewers.
+## Mi a convert document to image?
+A **convert document to image** kifejezés azt a folyamatot írja le, amikor egy forrásfájl (PDF, DOCX, PPTX stb.) minden oldalát raster képpé, például PNG vagy JPEG formátumba rendereljük. Ez a konverzió hasznos thumbnail galériákhoz, előnézeti panelekhez és mobilbarát dokumentumnézőkhöz.
 
-## Why use GroupDocs.Watermark for preview generation?
-GroupDocs.Watermark supports **30+ input formats** and can generate previews for documents up to **500 pages** without loading the entire file into memory. Internally it processes pages sequentially, which keeps the Java heap usage under 50 MB even for large PDFs. The library also offers built‑in image optimisation, allowing you to specify DPI, colour depth, and compression level, which results in thumbnails that are typically **70 % smaller** than naïve rasterisation.
+## Miért használjuk a GroupDocs.Watermark-ot az előnézet generálásához?
+A GroupDocs.Watermark **30+ bemeneti formátumot** támogat, és képes előnézeteket generálni akár **500 oldalas** dokumentumokhoz is anélkül, hogy a teljes fájlt a memóriába töltené. Belsőleg oldalanként dolgozza fel a dokumentumot, ami a Java heap használatát 50 MB alá tartja még nagy PDF-ek esetén is. A könyvtár beépített képoptimalizálást is kínál, lehetővé téve DPI, színmélység és tömörítési szint megadását, ami általában **70 % kisebb** thumbnail‑eket eredményez a naív rasterizációhoz képest.
 
-## Prerequisites
+## Előkövetelmények
 
-Before you start, make sure you have the following:
-
-- **Java Development Kit (JDK) 11 or newer** – the library is compiled for Java 8+, but JDK 11 gives you long‑term support and better performance.
+- **Java Development Kit (JDK) 11 vagy újabb** – the library is compiled for Java 8+, but JDK 11 gives you long‑term support and better performance.
 - **Maven 3.6+** – for dependency management.
 - **GroupDocs.Watermark for Java version 24.11** – the latest stable release at the time of writing.
 - **Basic knowledge of Java I/O streams** – you’ll be creating `FileOutputStream` objects for each preview page.
 - **A licence key** (optional for production) – the trial limits preview size to 5 MB per document.
 
-## How to set up GroupDocs.Watermark for Java
+## Hogyan állítsuk be a GroupDocs.Watermark-ot Java-hoz
 
-To set up GroupDocs.Watermark, first add the Maven repository and then include the library as a dependency in your project's `pom.xml`. This ensures Maven can download the correct artifacts and makes the classes available on the classpath for compilation and runtime.
+A GroupDocs.Watermark beállításához először adja hozzá a Maven tárolót, majd tartalmazza a könyvtárat függőségként a projekt `pom.xml`‑ében. Ez biztosítja, hogy a Maven letölthesse a megfelelő artefaktumokat, és a osztályok elérhetők legyenek a fordítás és futás során.
 
-### Add the Maven dependency
-The library is distributed via Maven Central. Add the following snippet to your `pom.xml` inside the `<dependencies>` block:
+### Maven függőség hozzáadása
+A könyvtár a Maven Central‑on keresztül érhető el. Adja hozzá a következő kódrészletet a `pom.xml`‑jéhez a `<dependencies>` blokkba:
 ```xml
 <dependency>
     <groupId>com.groupdocs</groupId>
@@ -127,26 +124,25 @@ The library is distributed via Maven Central. Add the following snippet to your 
 
 > **Pro tip:** Keep the version number in a property (`<groupdocs.watermark.version>24.11</groupdocs.watermark.version>`) so you can upgrade easily.
 
-### Direct download (alternative)
-If you prefer manual installation, you can download the JAR from the official releases page: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Közvetlen letöltés (alternatíva)
+Ha a manuális telepítést részesíti előnyben, letöltheti a JAR‑t a hivatalos kiadási oldalról: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-## How to acquire and apply a licence
+## Hogyan szerezzünk és alkalmazzunk licencet
 
-Applying a licence to GroupDocs.Watermark removes trial limitations and disables the default watermark overlay. Place the licence file in a known location and point the API to it, or embed the licence path directly in code before any other calls. Once loaded, all subsequent operations run in full‑feature mode.
+A licenc alkalmazása a GroupDocs.Watermark‑on eltávolítja a próbaverzió korlátozásait és letiltja az alapértelmezett vízjel‑réteget. Helyezze a licencfájlt egy ismert helyre, és mutassa meg az API‑nak, vagy ágyazza be a licenc útvonalát közvetlenül a kódban minden más hívás előtt. Betöltés után minden további művelet teljes funkcionalitással fut.
 
-You can:
+Megteheti:
 
 - **Request a free trial** from the GroupDocs portal – it provides a 30‑day licence file.
 - **Generate a temporary licence** via the online licence generator for evaluation environments.
 - **Purchase a commercial licence** for unlimited production use and priority support.
 
-Place the licence file (`GroupDocs.Watermark.lic`) in the root of your project or specify its path programmatically with `Watermarker.setLicense("path/to/license.file")`.
+Helyezze a licencfájlt (`GroupDocs.Watermark.lic`) a projekt gyökerébe, vagy adja meg az útvonalát programozottan a `Watermarker.setLicense("path/to/license.file")` hívással.
 
-## How to initialize the Watermarker
+## Hogyan inicializáljuk a Watermarker-t
 
-Initialize the `Watermarker` by providing the path to the source document, optionally including a password for protected files. The constructor validates the format and prepares internal parsers, allowing you to immediately call preview or watermark methods. After creation, keep a reference to reuse the instance for multiple operations if needed.
+Inicializálja a `Watermarker`‑t a forrásdokumentum útvonalának megadásával, opcionálisan jelszóval a védett fájlokhoz. A konstruktor ellenőrzi a formátumot és előkészíti a belső parszereket, lehetővé téve, hogy azonnal hívja az előnézet vagy vízjel metódusokat. Létrehozás után tartson egy referenciát, hogy több művelethez újra felhasználhassa az objektumot, ha szükséges.
 
-The `Watermarker` class is GroupDocs.Watermark's core object that loads a document and exposes operations such as watermark insertion and preview generation.
 ```text
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vdx");
 ```
@@ -156,11 +152,11 @@ Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vdx")
 
 > **Definition anchor:** `Watermarker` is the entry point for all document‑processing actions in GroupDocs.Watermark for Java.
 
-## How to create page streams for preview generation
+## Hogyan hozzunk létre oldal‑streameket az előnézet generálásához
 
-Create custom page streams by implementing the `ICreatePageStream` interface, which the library invokes for each page it renders. Your implementation should generate a fresh `OutputStream`—typically a `FileOutputStream`—that points to a uniquely named file based on the page number. This approach isolates each page's output and prevents data overlap.
+Hozzon létre egyedi oldal‑streameket az `ICreatePageStream` interfész megvalósításával, amelyet a könyvtár minden renderelt oldalhoz meghív. A megvalósításnak friss `OutputStream`‑et kell előállítania – általában `FileOutputStream`‑et – amely egy egyedi névvel ellátott fájlra mutat az oldal száma alapján. Ez a megközelítés elkülöníti az egyes oldalak kimenetét és megakadályozza az adat‑átfedést.
 
-To **java generate thumbnails**, you must provide a stream for each page where the rendered image will be written. Implement the `ICreatePageStream` interface; the library calls your implementation for every page it processes.
+A **java generate thumbnails** funkcióhoz minden oldalhoz streamet kell biztosítania, ahová a renderelt kép íródik. Implementálja az `ICreatePageStream` interfészt; a könyvtár minden feldolgozott oldalhoz meghívja az Ön megvalósítását.
 ```text
 public class FeatureCreatePageStream implements ICreatePageStream {
     private final String outputDir;
@@ -184,11 +180,11 @@ public class FeatureCreatePageStream implements ICreatePageStream {
 
 > **Definition anchor:** `ICreatePageStream` is a callback interface that lets you define how output streams are created for each preview page.
 
-## How to release page streams after preview generation
+## Hogyan szabadítsuk fel az oldal‑streameket az előnézet generálása után
 
-After a page image is written, the library calls `IReleasePageStream` to allow you to close and clean up the associated output stream. Implement this callback to safely release file handles, flush buffers, and perform any additional logging. Proper cleanup avoids descriptor leaks and ensures subsequent pages can be processed without interference.
+Miután egy oldal képe ki lett írva, a könyvtár meghívja az `IReleasePageStream`‑et, hogy lehetőséget adjon a kapcsolódó output stream biztonságos lezárására és takarítására. Implementálja ezt a visszahívást a fájl‑handle‑ek zárásához, puffer‑flush‑hoz és esetleges további naplózáshoz. A megfelelő takarítás elkerüli a descriptor‑szivárgásokat és biztosítja, hogy a következő oldalak feldolgozása zavarás nélkül folytatódhasson.
 
-Proper resource cleanup prevents file‑handle leaks and keeps the JVM from exhausting descriptors. Implement `IReleasePageStream` to close streams once the library signals that a page is finished.
+A megfelelő erőforrás‑takarítás megakadályozza a fájl‑handle‑szivárgásokat és megakadályozza, hogy a JVM kifogyjon a descriptor‑okból. Implementálja az `IReleasePageStream`‑et, hogy a streamek lezáródjanak, amint a könyvtár jelzi, hogy az oldal befejeződött.
 ```text
 public class FeatureReleasePageStream implements IReleasePageStream {
     @Override
@@ -200,11 +196,11 @@ public class FeatureReleasePageStream implements IReleasePageStream {
 
 > **Definition anchor:** `IReleasePageStream` is a callback interface that lets you define custom logic for disposing of page‑specific output resources.
 
-## How to generate document previews (convert document to image)
+## Hogyan generáljunk dokumentum előnézeteket (convert document to image)
 
-Generate previews by calling `generatePreview()` on the `Watermarker` instance, supplying a `PreviewOptions` object that defines resolution, image format, and page range. The method iterates through each page, uses your stream creators to write the raster image, and then releases the streams. This process produces a set of image files representing the document pages.
+Generáljon előnézeteket a `Watermarker` példány `generatePreview()` metódusának meghívásával, egy `PreviewOptions` objektum átadásával, amely meghatározza a felbontást, a képformátumot és az oldaltartományt. A metódus minden oldalon iterál, az Ön stream‑készítőit használva írja a raster képet, majd felszabadítja a streameket. Ez a folyamat egy sor képfájlt hoz létre, amelyek a dokumentum oldalait képviselik.
 
-With the `Watermarker`, `FeatureCreatePageStream`, and `FeatureReleasePageStream` ready, you can invoke the preview engine. The `generatePreview()` method iterates over each page, calls your stream creators, writes the image, and finally releases the streams.
+A `Watermarker`, a `FeatureCreatePageStream` és a `FeatureReleasePageStream` készen áll, meghívhatja az előnézeti motort. A `generatePreview()` metódus minden oldalon iterál, meghívja az Ön stream‑készítőit, írja a képet, és végül felszabadítja a streameket.
 ```text
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vdx");
 ICreatePageStream createPageStream = new FeatureCreatePageStream("output/previews", "preview_page_{0}.png");
@@ -223,9 +219,9 @@ watermarker.generatePreview(previewOptions, createPageStream, releasePageStream)
 
 > **Definition anchor:** `generatePreview()` is the API call that renders each page of the loaded document into an image using the streams you supplied.
 
-## Practical applications of convert document to image
+## A convert document to image gyakorlati alkalmazásai
 
-Generating image previews opens up many possibilities:
+A kép előnézetek generálása számos lehetőséget nyit meg:
 
 1. **Document browsers** – Show a grid of PNG thumbnails so users can skim large PDFs without opening them.
 2. **Search result snippets** – Attach a preview image to search index entries for richer UI.
@@ -233,9 +229,9 @@ Generating image previews opens up many possibilities:
 4. **Mobile apps** – Reduce bandwidth by sending 200 KB PNG previews instead of full PDFs.
 5. **Compliance portals** – Render legally‑required watermarked versions of contracts as images for audit trails.
 
-## Performance considerations when you java generate thumbnails
+## Teljesítmény szempontok, amikor java generate thumbnails
 
-When you are dealing with bulk processing, keep these optimisation tips in mind:
+Bulk feldolgozás esetén tartsa szem előtt ezeket az optimalizálási tippeket:
 
 - **Stream buffering** – Wrap the `FileOutputStream` in a `BufferedOutputStream` to minimise disk I/O.
 - **Parallel batch execution** – Use Java’s `ForkJoinPool` to process multiple documents concurrently; each task should create its own `Watermarker` instance to avoid thread‑safety issues.
@@ -243,41 +239,41 @@ When you are dealing with bulk processing, keep these optimisation tips in mind:
 - **Reuse licence objects** – Loading the licence file once per JVM reduces overhead.
 - **Monitor memory** – The library keeps only the current page in memory. For extremely large files, consider increasing the JVM heap modestly (e.g., `-Xmx512m`) to accommodate occasional spikes.
 
-## Common pitfalls and how to avoid them
+## Gyakori buktatók és hogyan kerüljük el őket
 
-| Symptom | Likely cause | Fix |
-|---------|--------------|-----|
-| `OutOfMemoryError` during preview generation | Using `ImageFormat.Jpeg` with 300 DPI on a 1000‑page PDF | Reduce DPI or switch to PNG with lower colour depth |
+| Tünet | Valószínű ok | Javítás |
+|-------|--------------|---------|
+| `OutOfMemoryError` during preview generation | `ImageFormat.Jpeg` használata 300 DPI‑vel egy 1000‑oldalas PDF‑en | Reduce DPI or switch to PNG with lower colour depth |
 | Empty preview files | `FeatureCreatePageStream` returns the same `FileOutputStream` for every page | Ensure a new stream is created per `pageNumber` |
 | Preview images are rotated | Source PDF contains rotation metadata that isn’t honoured | Call `previewOptions.setRotatePages(true)` (if available) |
 | License warning appears | Licence file not found or path incorrect | Verify `Watermarker.setLicense("path/to/license.file")` runs before any other API calls |
 
-## Frequently asked questions
+## Gyakran feltett kérdések
 
-**Q: Can I generate previews for password‑protected PDFs?**  
+**Q: Generálhatok előnézetet jelszóval védett PDF‑ekhez?**  
 A: Yes. Pass the password to the `Watermarker` constructor: `new Watermarker("file.pdf", "password")`.
 
-**Q: Which image formats are supported for the preview output?**  
+**Q: Mely képformátumok támogatottak az előnézeti kimenethez?**  
 A: PNG, JPEG, BMP, and TIFF are available. PNG is recommended for lossless thumbnails.
 
-**Q: How many pages can be processed in a single call?**  
+**Q: Hány oldalt lehet feldolgozni egyetlen hívásban?**  
 A: The library imposes no hard limit; you can preview documents with thousands of pages, limited only by storage space and I/O throughput.
 
-**Q: Do I need a separate licence for each server instance?**  
+**Q: Szükség van külön licencre minden szerverpéldányhoz?**  
 A: A single licence file can be reused across multiple instances as long as the total usage complies with the licence terms.
 
-**Q: Is there a way to generate a single combined thumbnail (e.g., first page only)?**  
+**Q: Van mód egyetlen kombinált thumbnail (pl. csak az első oldal) generálására?**  
 A: Yes. Set `previewOptions.setPages(new int[]{1})` to limit generation to the first page.
 
-## Conclusion
+## Következtetés
 
-You now have a complete, production‑ready workflow for **convert document to image** and **java generate thumbnails** using GroupDocs.Watermark. By configuring custom page‑stream handlers, you keep memory usage low, and by tweaking `PreviewOptions` you control image quality and file size. These techniques let you embed fast, high‑quality previews into any Java‑based application—whether it’s a web portal, a desktop client, or a cloud‑native microservice.
+Most már rendelkezik egy teljes, termelésre kész munkafolyamattal a **convert document to image** és **java generate thumbnails** használatához a GroupDocs.Watermark segítségével. Egyedi oldal‑stream kezelők konfigurálásával alacsony memóriahasználatot tart, a `PreviewOptions` finomhangolásával pedig szabályozhatja a képminőséget és a fájlméretet. Ezek a technikák lehetővé teszik, hogy gyors, magas minőségű előnézeteket ágyazzon be bármely Java‑alapú alkalmazásba – legyen az webportál, asztali kliens vagy felhő‑natív mikroszolgáltatás.
 
 ---
 
-**Last Updated:** 2026-09-26  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs
+**Utoljára frissítve:** 2026-09-26  
+**Tesztelve ezzel:** GroupDocs.Watermark 24.11 for Java  
+**Szerző:** GroupDocs
 
 ```xml
 <repositories>
@@ -377,8 +373,8 @@ public class FeatureGenerateDocumentPreview {
 }
 ```
 
-## Related Tutorials
+## Kapcsolódó oktatóanyagok
 
-- [How to Retrieve Document Information Using GroupDocs.Watermark for Java&#58; A Step-by-Step Guide](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
-- [Advanced Watermarking Features Tutorials for GroupDocs.Watermark Java](/watermark/java/advanced-features/)
-- [How to Add an Image Watermark in Java using GroupDocs.Watermark&#58; A Step-by-Step Guide](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
+- [Hogyan lehet lekérni a dokumentum információkat a GroupDocs.Watermark for Java segítségével: lépésről lépésre útmutató](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
+- [Haladó vízjel funkciók oktatóanyagok a GroupDocs.Watermark Java-hoz](/watermark/java/advanced-features/)
+- [Hogyan adjunk hozzá képi vízjelet Java-ban a GroupDocs.Watermark segítségével: lépésről lépésre útmutató](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
