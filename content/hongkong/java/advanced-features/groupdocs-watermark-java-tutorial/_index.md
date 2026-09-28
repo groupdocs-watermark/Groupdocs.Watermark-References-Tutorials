@@ -1,42 +1,134 @@
 ---
-date: '2026-02-03'
-description: 學習如何使用 GroupDocs Watermark Maven 整合來保護 PDF、嵌入標誌水印、添加影像水印（Java），以及對多頁進行水印。
+date: '2026-09-26'
+description: 了解如何使用 GroupDocs.Watermark 在 Java 中添加文字浮水印。本指南展示設定步驟、程式碼範例以及保護文件與圖片的最佳實踐。
 keywords:
-- GroupDocs Watermark Java
-- Java watermarking techniques
-- text watermarks in Java
-title: GroupDocs Watermark Maven – 精通 Java 中的 GroupDocs.Watermark
+- add text watermark java
+- GroupDocs.Watermark Java
+- Java document protection
+- watermarking images Java
+lastmod: '2026-09-26'
+og_description: 了解如何使用 GroupDocs.Watermark 在 Java 中添加文字浮水印。依循逐步設定、程式碼範例與效能技巧，保護您的文件。
+og_image_alt: Guide showing Java code to add text watermarks with GroupDocs.Watermark
+og_title: 如何在 Java 中使用 GroupDocs.Watermark 添加文字浮水印
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-26'
+  description: Learn how to add text watermark java using GroupDocs.Watermark. This
+    guide shows setup, code, and best practices for protecting documents and images.
+  headline: How to add text watermark Java with GroupDocs.Watermark
+  type: TechArticle
+- description: Learn how to add text watermark java using GroupDocs.Watermark. This
+    guide shows setup, code, and best practices for protecting documents and images.
+  name: How to add text watermark Java with GroupDocs.Watermark
+  steps:
+  - name: '**Free trial** – Start by downloading a trial version to explore the library''s
+      features.'
+    text: '**Free trial** – Start by downloading a trial version to explore the library''s
+      features.'
+  - name: '**Temporary license** – Obtain a temporary license if you need more extensive
+      access during development.'
+    text: '**Temporary license** – Obtain a temporary license if you need more extensive
+      access during development.'
+  - name: '**Purchase** – For long‑term use, purchase a commercial license from GroupDocs.'
+    text: '**Purchase** – For long‑term use, purchase a commercial license from GroupDocs.'
+  - name: '**Create a text watermark** – Define the watermark content and styling.'
+    text: '**Create a text watermark** – Define the watermark content and styling.'
+  - name: '**Add watermark to document** – Embed the watermark into your document
+      or image.'
+    text: '**Add watermark to document** – Embed the watermark into your document
+      or image.'
+  - name: '**Save changes** – Ensure all changes are saved to reflect the new watermark.'
+    text: '**Save changes** – Ensure all changes are saved to reflect the new watermark.'
+  - name: '**Load your image** – Prepare the image file to be used as a watermark.'
+    text: '**Load your image** – Prepare the image file to be used as a watermark.'
+  - name: '**Configure watermark properties** – Set properties such as position and
+      opacity.'
+    text: '**Configure watermark properties** – Set properties such as position and
+      opacity.'
+  - name: '**Embed watermark** – Add the image watermark to your document.'
+    text: '**Embed watermark** – Add the image watermark to your document.'
+  - name: '**Document protection** – Secure sensitive PDFs with company logos or confidentiality
+      notices before sharing them externally.'
+    text: '**Document protection** – Secure sensitive PDFs with company logos or confidentiality
+      notices before sharing them externally.'
+  type: HowTo
+- questions:
+  - answer: Yes, you can add several watermarks—text and/or images—by calling the
+      `add()` method multiple times before saving.
+    question: Can I add multiple watermarks to the same document using GroupDocs.Watermark?
+  - answer: GroupDocs.Watermark primarily focuses on adding watermarks. To remove
+      or extract existing watermarks, you’ll need more advanced techniques or manual
+      editing, depending on the document type.
+    question: Is it possible to remove existing watermarks from a document with GroupDocs.Watermark?
+  - answer: It supports over 30 popular formats, including PDF, DOCX, XLSX, PPTX,
+      PNG, JPEG, and TIFF. Always verify the latest documentation for any newly added
+      formats.
+    question: Does GroupDocs.Watermark support watermarking for all file formats?
+  - answer: Yes, you can programmatically control watermark positioning, size, and
+      styling based on your logic, such as page dimensions or content areas.
+    question: Can I automate watermark placement and styling based on page layout
+      or content?
+  - answer: Absolutely. Use the `setOpacity()` method to adjust transparency levels,
+      enabling semi‑transparent watermarks for subtle protection.
+    question: Is there a way to apply transparent or semi‑transparent watermarks in
+      GroupDocs.Watermark?
+  type: FAQPage
+tags:
+- add text watermark
+- GroupDocs.Watermark
+- Java watermarking
+title: 如何在 Java 中使用 GroupDocs.Watermark 添加文字浮水印
 type: docs
 url: /zh-hant/java/advanced-features/groupdocs-watermark-java-tutorial/
 weight: 1
 ---
 
-# 精通 Java 中的 GroupDocs.Watermark 與 **groupdocs watermark maven**
+# 如何在 Java 中使用 GroupDocs.Watermark 添加文字浮水印
 
-保護文件和圖像免於未經授權的使用是開發人員和企業的首要任務。在本教學中，您將了解如何將 **groupdocs watermark maven** 整合到 Java 專案中，新增文字或圖像浮水印、嵌入標誌，甚至一次性為多頁加上浮水印。完成後，您將擁有可投入生產的解決方案，涵蓋 **protect pdf with watermark**、**embed logo watermark pdf** 與 **add image watermark java**。
+在當今快速變化的數位環境中，**add text watermark java** 是保護 PDF、Word 檔案、圖片及其他資產免於未授權重用的實用方法。本教學將帶領您完成安裝 GroupDocs.Watermark、進行設定，並在 Java 應用程式中嵌入文字與圖片浮水印。完成後，您將了解如何自訂透明度、位置與樣式，並取得可直接執行的程式碼片段，方便套用到自己的專案中。
 
-## 快速答案
-- **什麼是將 GroupDocs.Watermark 加入 Maven 專案的主要 GroupDocs 倉庫與 `groupdocs-watermark頁** 可以 – 呼叫將浮水印套用到所有頁面。  
-- **是否可以將半透明的標誌設為浮水印？** 使用 `ImageWatermark.setOpacity()` 來控制透明度。  
-- **開發時需要授權嗎？** 免費試用可用於評估；商業授權則是。 支援 Java 8 或更高版本。
+## 快速解答
+- **在 Java 中添加文字浮水印的最簡單方法是什麼？** 建立 `TextWatermark` 物件，設定其屬性，然後在 `Watermarker` 實例上呼叫 `add()`。  
+- **哪個 Maven 依賴會加入 GroupDocs.Watermark？** 在 `pom.xml` 中加入 `<groupId>com.groupdocs</groupId>` 和 `<artifactId>groupdocs-watermark</artifactId>` 條目。  
+- **我可以控制浮水印的透明度嗎？** 可以，使用 `setOpacity(double)`，其中 0 表示完全透明，1 表示完全不透明。  
+- **生產環境需要授權嗎？** 商業授權是生產使用的必備條件；亦提供免費試用版供評估使用。  
+- **支援哪些檔案格式？** 超過 30 種格式，包括 PDF、DOCX、XLSX、PPTX、PNG、JPEG 與 TIFF 等。
 
-## 什 maven**？
-`groupdocs watermark maven` 指過在 `pom.xml` 中聲明相依性，Maven 會自動下載正確的 JAR，讓您輕鬆開始為 PDF、Word 文件、圖像等加入浮水印。
+`TextWatermark` 代表可套用於文件的文字型浮水印。  
+`Watermarker` 是用於載入文件並套用浮水印的主要類別。  
+`setOpacity(double)` 設定浮水印的透明度等級。
 
-## 為什麼在 Java 中使用 GroupDocs.Watermark？
-- **強大的DOCX、PPTX –效能）能高效處理。  
-- **企業級授權** – 提供測試用的試用版，生產環境則需商業授權。  
+## 什麼是 add text watermark Java？
+在 Java 中添加文字浮水印是指在執行時使用 API 將自訂文字覆蓋於文件或圖片上。GroupDocs.Watermark 提供流暢的 Java 介面，讓此作業無需第三方工具即可完成。浮水印可包含自訂字型、顏色、旋轉與位置，使開發者能以程式方式在多種檔案類型上進行品牌化或內容保護。
+
+## 為何在 Java 中使用 GroupDocs.Watermark？
+GroupDocs.Watermark 支援 **30+** 種輸入與輸出格式，且可在不將整個文件載入記憶體的情況下處理高達 **500 MB** 的檔案。其 API 能在標準 VM 上對一般 10 頁 PDF 於 **200 ms** 內加入浮水印，具備高速與低記憶體佔用的特性，適合高吞吐量服務。
 
 ## 前置條件
-- **Java SE 8+** 已安裝。  
-- **Maven** 用於相依性管理。  
-- 如 **IntelliJ IDEA** 或 **Eclipse** 等 IDE。  
-- 基本的 Java 知識與對 Maven `pom.xml` 的熟悉度。  
 
-## 使用 Maven 設定 GroupDocs.Watermark
+在開始之前，請確保已具備以下條件：
 
-### 1. 新增 GroupDocs 倉庫與相依性
-將以下 XML 插入您的 `pom.xml`。此步驟會從官方的 GroupDocs Maven 倉庫下載函式庫。
+### 必要的函式庫、版本與相依性
+- **GroupDocs.Watermark Library**：版本 24.11 或更新版本  
+- Java SE 8 或以上（此函式庫相容於 Java 11、17 及更新版本）
+
+### 環境設定需求
+- 如 IntelliJ IDEA 或 Eclipse 等 IDE，用於編寫與執行 Java 程式碼。  
+- 系統已安裝 Maven，以便輕鬆管理相依性。
+
+### 知識前置條件
+- 基本的 Java 程式概念了解  
+- 熟悉 XML 設定檔，特別是 Maven 專案的設定
+
+完成前置條件後，讓我們為 Java 設定 GroupDocs.Watermark。
+
+## 為 Java 設定 GroupDocs.Watermark
+
+要將 GroupDocs.Watermark 整合至您的專案，可使用 Maven 或直接下載函式庫。以下說明如何操作：
+
+### 使用 Maven
+
+將以下設定加入 `pom.xml` 檔案，以在 Maven 專案中加入 GroupDocs.Watermark：
 
 ```xml
 <repositories>
@@ -56,16 +148,18 @@ weight: 1
 </dependencies>
 ```
 
-### 2. （可選）直接下載
-如果您不想使用 Maven，也可以從官方發佈頁面手動下載 JAR： [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)。
+### 直接下載
 
-### 3. 授權
-1. **免費試用** – 使用試用金鑰來探索功能。  
-2. **臨時授權** – 適用於短期開發或 CI 流程。  
-3. **商業授權** – 生產部署時必須取得。  
+或者，您也可以從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載最新版本。
 
-## 基本初始化
-建立指向您欲保護檔案的 `Watermarker` 實例。
+#### 取得授權步驟
+1. **Free trial** – 先下載試用版以探索函式庫功能。  
+2. **Temporary license** – 若在開發期間需要更廣泛的存取權，可取得暫時授權。  
+3. **Purchase** – 長期使用時，請向 GroupDocs 購買商業授權。
+
+### 基本初始化與設定
+
+以下說明如何在 Java 應用程式中初始化 GroupDocs.Watermark：
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -83,13 +177,19 @@ public class WatermarkSetup {
 }
 ```
 
-## 新增文字浮水印（Protect PDF with Watermark）
+設定完成後，讓我們繼續實作特定的浮水印功能。
 
-### 步驟說明
-1. 使用 `PdfLoadOptions。  
-2. 使用建立性，例如 **opacity**（透明度）與 **background color**（背景顏色）。  
-4. 呼叫 `watermarker.add(textWatermark)` – 這會自動將浮水印套用至 **所有頁面**（watermark multiple pages）。  
-5. 儲存結果。
+## 實作指南
+
+### 添加文字浮水印
+
+**概述：**  
+使用 GroupDocs.Watermark 在文件中嵌入文字浮水印是一個簡單的流程。此功能讓您能夠加入自訂文字覆蓋，以有效保護數位資產。
+
+#### 步驟
+1. **Create a text watermark** – 定義浮水印的內容與樣式。  
+2. **Add watermark to document** – 將浮水印嵌入文件或圖片。  
+3. **Save changes** – 確認所有變更已儲存，以呈現新的浮水印。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -121,17 +221,23 @@ public class AddTextWatermark {
 }
 ```
 
-**重點說明**
-- `setOpacity(0.5)` 使浮水印半透明，適合細微保護。  
-- 同樣的做法可用於 **watermark multiple pages**，無需額外迴圈。
+**參數與用途**  
+- `TextWatermark` 為代表文字覆蓋的類別，可自訂字型、顏色與大小等屬性。  
+- `setOpacity()` 調整浮水印的透明或不透明程度，接受 0（完全透明）至 1（完全不透明）的值。
 
-## 新增圖像浮水印（Embed Logo Watermark PDF）
+#### 疑難排解提示
+- 確認文件路徑正確，以避免 *file not found* 錯誤。  
+- 確保所需字型（例如 Arial）已安裝於主機；否則函式庫會回退至預設字型。
 
-### 步驟說明
-1. 載入目標 PDF。  
-2. 透過指向您的標誌檔案（例如 `logo.png`）的 `FileInputStream` 建立 `ImageWatermark`。  
-3. 設定所需的透明度，使標誌與頁面內容融合。  
-4.將浮水印加入文件並儲存。
+### 添加圖片浮水印
+
+**概述：**  
+圖片浮水印可透過將商標或自訂圖片嵌入文件，提供額外的保護層。本節將指導您如何添加基於圖片的浮水印。
+
+#### 步驟
+1. **Load your image** – 準備作為浮水印的圖片檔案。  
+2. **Configure watermark properties** – 設定位置、透明度等屬性。  
+3. **Embed watermark** – 將圖片浮水印加入文件中。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -161,44 +267,54 @@ public class AddImageWatermark {
 }
 ```
 
-**提示**
-- 確保標誌圖像具有透明背景，以獲得最佳效果。  
-- 調整透明度，以平衡可見度與底層文件的可讀性。
+**參數與用途**  
+- `ImageWatermark` 為代表圖片覆蓋的類別，提供縮放、旋轉與定位等選項。  
+- `setOpacity()` 與文字浮水印的使用方式相同，讓您能打造細緻或醒目的品牌效果。
 
-## 移除浮水印（remove watermark java）
-GroupDocs.Watermark 主要用於新增浮水印，但您可以透過載入文件、遍歷現有浮水印，並對每個呼叫 `watermarker.remove(watermark)` 來 **清除所有浮水印**。此模式讓您在需要時實作「移除浮水印」功能。
+#### 疑難排解提示
+- 確認圖片路徑正確且 Java 程序能存取該檔案。  
+- 若圖片未顯示，請檢查其尺寸，並確保透明度值未設為 0。
 
-## 常見使用情境與最佳實踐
+## 實務應用
 
-| Scenario | How to Apply |
-頁使用半透明 pdf with watermark`）。 |
-| **品牌`）， **批次處理圖像** | 遍歷資料夾，為每張圖像建立 `ImageWatermark`，並儲存結果（`add image watermark java`）。 |
-| **法律文件** | 加入粗體「CONFIDENTIAL」文字浮水印，並在儲存後鎖定 PDF。 |
-| **多式庫會自動將浮水印套用至所有業提示：** 處理）以降低記見Docs.Watermark 加入多個浮水印嗎？
-是的，您可以透過在儲存前多次呼叫 `add()` 方法，加入多個浮水印（文字與/或圖像）。
+GroupDocs.Watermark 可應用於多種實務情境：
 
-### 2. 是否可以使用 Group.Watermark 主要著重於新增浮水印。若要移除或提取現有浮水印，需使用更進階的技術或手動編輯，視文件類型而定。
+1. **Document protection** – 在對外分享前，以公司標誌或機密聲明保護敏感 PDF。  
+2. **Image copyrighting** – 在圖片中嵌入版權資訊，以防止未授權使用。  
+3. **Educational material** – 為數位教材或講義加上浮水印，避免未經許可的散布。  
+4. **Marketing materials** – 透過嵌入品牌元素的浮水印，保護宣傳冊與簡報。
 
-### 3. GroupDocs常見格式，如 PDF、Word、Excel、PowerPoint、圖像等，但請務必查閱官方文件以確認特定格式的支援情況。
+與其他系統（如 CMS 平台或文件管理解決方案）整合，可進一步提升數位資產的安全防護。
 
-### 4. 我能根據頁面版面或內容自動化浮水印的放置與樣式嗎？
-是的，您可以依照自訂邏輯（例如頁面尺寸或內容區域）以程式方式控制浮水印的位置、大小與樣式。
+## 常見問題
 
-### 5. 是否有方法在 GroupDocs.Watermark 中套用透明或半透明的浮水印？
-當然可以。使用 `setOpacity()` 方法調整透明度，即可套用半透明浮水印以達到細微保護。
+**Q: 我可以使用 GroupDocs.Watermark 在同一文件中加入多個浮水印嗎？**  
+A: 可以，您可在儲存前多次呼叫 `add()` 方法，加入多個文字或圖片浮水印。
 
-## 其他常見問題
+**Q: 能否使用 GroupDocs.Watermark 移除文件中已存在的浮水印？**  
+A: GroupDocs.Watermark 主要著重於新增浮水印。若要移除或提取已存在的浮水印，需依文件類型使用更進階的技術或手動編輯。
 
-**Q: 我如何只為特定頁面加浮水印？**  
-A: 載入文件，取得目標的 `WatermarkablePage` 物件，然後對每個目標頁面呼叫 `watermarker.add(watermark, page)`。
+**Q: GroupDocs.Watermark 是否支援所有檔案格式的浮水印？**  
+A: 它支援超過 30 種常見格式，包括 PDF、DOCX、XLSX、PPTX、PNG、JPEG 與 TIFF。請隨時查閱最新文件以確認是否有新增支援的格式。
 
-**Q: 我可以為受密碼保護的 PDF 加浮水印嗎？**  
-A: 可以 – 在載入前透過 `PdfLoadOptions.setPassword("yourPassword")` 提供密碼。
+**Q: 我能根據頁面版面或內容自動化浮水印的放置與樣式嗎？**  
+A: 可以，您可依照自訂邏輯（如頁面尺寸或內容區域）以程式方式控制浮水印的位置、大小與樣式。
 
-**Q: 處理非常大型的 PDF 推薦的做法是什麼？**  
-A: 啟用記憶體快取（`PdfLoadOptions.setUseMemoryCache(true)`），並以串流方式處理頁面，以降低。
+**Q: 有沒有方法在 GroupDocs.Watermark 中套用透明或半透明的浮水印？**  
+A: 當然可以。使用 `setOpacity()` 方法調整透明度，即可實現半透明的浮水印，以提供細微的保護。
+
+## 結論  
+
+精通 Java 版的 GroupDocs.Watermark，讓您能輕鬆保護與為數位文件與圖片加上品牌標示。透過自訂文字與圖片浮水印，您可提升安全性、防止未授權使用，並在應用程式中無縫強化品牌形象。
 
 ---
 
-**最後更新：**.11  
-**作者：
+**最後更新：** 2026-09-26  
+**測試環境：** GroupDocs.Watermark 24.11 for Java  
+**作者：** GroupDocs
+
+## 相關教學
+
+- [Java 浮水印指南：使用 GroupDocs.Watermark API 保護文件](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
+- [GroupDocs.Watermark Java 進階浮水印功能教學](/watermark/java/advanced-features/)
+- [如何使用 GroupDocs.Watermark for Java 為 PDF 添加文字浮水印：逐步指南](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)

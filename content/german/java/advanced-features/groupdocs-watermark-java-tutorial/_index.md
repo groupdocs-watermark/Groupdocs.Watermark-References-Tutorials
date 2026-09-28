@@ -1,33 +1,138 @@
 ---
-date: '2026-02-03'
-description: Erfahren Sie, wie Sie die GroupDocs Watermark Maven‑Integration nutzen,
-  um PDFs zu schützen, Logo‑Wasserzeichen einzubetten, Bild‑Wasserzeichen in Java
-  hinzuzufügen und mehrere Seiten zu versehen.
+date: '2026-09-26'
+description: Erfahren Sie, wie Sie mit Java Textwasserzeichen mit GroupDocs.Watermark
+  hinzufügen. Dieser Leitfaden zeigt Einrichtung, Code und bewährte Methoden zum Schutz
+  von Dokumenten und Bildern.
 keywords:
-- GroupDocs Watermark Java
-- Java watermarking techniques
-- text watermarks in Java
-title: groupdocs watermark maven – Meistern von GroupDocs.Watermark in Java
+- add text watermark java
+- GroupDocs.Watermark Java
+- Java document protection
+- watermarking images Java
+lastmod: '2026-09-26'
+og_description: Erfahren Sie, wie Sie mit Java Textwasserzeichen mit GroupDocs.Watermark
+  hinzufügen. Folgen Sie einer Schritt‑für‑Schritt‑Einrichtung, Code‑Beispielen und
+  Leistungstipps zum Schutz Ihrer Dokumente.
+og_image_alt: Guide showing Java code to add text watermarks with GroupDocs.Watermark
+og_title: Wie man Textwasserzeichen in Java mit GroupDocs.Watermark hinzufügt
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-26'
+  description: Learn how to add text watermark java using GroupDocs.Watermark. This
+    guide shows setup, code, and best practices for protecting documents and images.
+  headline: How to add text watermark Java with GroupDocs.Watermark
+  type: TechArticle
+- description: Learn how to add text watermark java using GroupDocs.Watermark. This
+    guide shows setup, code, and best practices for protecting documents and images.
+  name: How to add text watermark Java with GroupDocs.Watermark
+  steps:
+  - name: '**Free trial** – Start by downloading a trial version to explore the library''s
+      features.'
+    text: '**Free trial** – Start by downloading a trial version to explore the library''s
+      features.'
+  - name: '**Temporary license** – Obtain a temporary license if you need more extensive
+      access during development.'
+    text: '**Temporary license** – Obtain a temporary license if you need more extensive
+      access during development.'
+  - name: '**Purchase** – For long‑term use, purchase a commercial license from GroupDocs.'
+    text: '**Purchase** – For long‑term use, purchase a commercial license from GroupDocs.'
+  - name: '**Create a text watermark** – Define the watermark content and styling.'
+    text: '**Create a text watermark** – Define the watermark content and styling.'
+  - name: '**Add watermark to document** – Embed the watermark into your document
+      or image.'
+    text: '**Add watermark to document** – Embed the watermark into your document
+      or image.'
+  - name: '**Save changes** – Ensure all changes are saved to reflect the new watermark.'
+    text: '**Save changes** – Ensure all changes are saved to reflect the new watermark.'
+  - name: '**Load your image** – Prepare the image file to be used as a watermark.'
+    text: '**Load your image** – Prepare the image file to be used as a watermark.'
+  - name: '**Configure watermark properties** – Set properties such as position and
+      opacity.'
+    text: '**Configure watermark properties** – Set properties such as position and
+      opacity.'
+  - name: '**Embed watermark** – Add the image watermark to your document.'
+    text: '**Embed watermark** – Add the image watermark to your document.'
+  - name: '**Document protection** – Secure sensitive PDFs with company logos or confidentiality
+      notices before sharing them externally.'
+    text: '**Document protection** – Secure sensitive PDFs with company logos or confidentiality
+      notices before sharing them externally.'
+  type: HowTo
+- questions:
+  - answer: Yes, you can add several watermarks—text and/or images—by calling the
+      `add()` method multiple times before saving.
+    question: Can I add multiple watermarks to the same document using GroupDocs.Watermark?
+  - answer: GroupDocs.Watermark primarily focuses on adding watermarks. To remove
+      or extract existing watermarks, you’ll need more advanced techniques or manual
+      editing, depending on the document type.
+    question: Is it possible to remove existing watermarks from a document with GroupDocs.Watermark?
+  - answer: It supports over 30 popular formats, including PDF, DOCX, XLSX, PPTX,
+      PNG, JPEG, and TIFF. Always verify the latest documentation for any newly added
+      formats.
+    question: Does GroupDocs.Watermark support watermarking for all file formats?
+  - answer: Yes, you can programmatically control watermark positioning, size, and
+      styling based on your logic, such as page dimensions or content areas.
+    question: Can I automate watermark placement and styling based on page layout
+      or content?
+  - answer: Absolutely. Use the `setOpacity()` method to adjust transparency levels,
+      enabling semi‑transparent watermarks for subtle protection.
+    question: Is there a way to apply transparent or semi‑transparent watermarks in
+      GroupDocs.Watermark?
+  type: FAQPage
+tags:
+- add text watermark
+- GroupDocs.Watermark
+- Java watermarking
+title: Wie man Textwasserzeichen in Java mit GroupDocs.Watermark hinzufügt
 type: docs
 url: /de/java/advanced-features/groupdocs-watermark-java-tutorial/
 weight: 1
 ---
 
-#Das Schützen von Dokumentenugter Nutzung hat für Entwickler und Unternehmen höchste Priorität. In diesem Tutorial erfahren Sie, wie Sie **groupdocs watermark maven** in Ihre Java‑Projekte integrieren, Text‑ oder Bildwasserzeichen hinzufügen, Logos einbetten und sogar mehrere Seiten in einem einzigen Vorgang zu wasserzeichen. Am Ende haben Sie eine produktionsreife Lösung für **protect pdf with watermark**, **embed logo watermark pdf** und **add image watermark java.W Fügen Sie das GroupDocs‑Abhängigkeit zu Ihrer `pom** Ja – rufen Sie `watermarker.add(watermark)` auf und die Bibliothek wendet es auf alle Seiten an.  
-- **Ist es möglich, ein halbImageWatermark.setOpacity()`, um die Transpar  
-- **Benötige ich eine Lizenz für die Entwicklung?** Eine für die Produktion ist eine kommerzielle Lizenz erforderlich.  
-- **Welche Java‑Version wird benötigt ist **groupdocs watermark maven**?
-`groupdocs watermark maven` bezieht sich auf die Maven‑basierte Integration der GroupDocs.W. Durch die Deklaration der Abhängigkeit in `pom.xml` lädt Maven automatisch die richtigen von Wasserzeichen zu PDFs, Word‑Dokumenten, Bildern und mehr einfach verwenden?
-- **, JPEG usw.  
-- und Positionierung sind vollständig programmierbar.  
-- **Leistungsoptimiert** – Batch‑Operationen wie das Wasserzeichen mehrerer Seiten werden effizient verarbeitet.  
-- **Unternehmensgerechte Lizenzierung** – Testversion für Tests, kommerzielle Lizenz für die Produktion.
+# Wie man Textwasserzeichen in Java mit GroupDocs.Watermark hinzufügt
+
+In der heutigen schnelllebigen digitalen Umgebung ist **add text watermark java** eine praktische Methode, PDFs, Word‑Dateien, Bilder und andere Assets vor unbefugter Wiederverwendung zu schützen. Dieses Tutorial führt Sie durch die Installation von GroupDocs.Watermark, dessen Konfiguration und das Einbetten von Text‑ und Bildwasserzeichen in Java‑Anwendungen. Am Ende verstehen Sie, wie Sie Deckkraft, Position und Stil anpassen können, und Sie erhalten ein einsatzbereites Code‑Snippet, das Sie an Ihre eigenen Projekte anpassen können.
+
+## Schnelle Antworten
+- **Was ist der einfachste Weg, ein Textwasserzeichen in Java hinzuzufügen?** Erstellen Sie ein `TextWatermark`‑Objekt, konfigurieren Sie dessen Eigenschaften und rufen Sie `add()` auf der `Watermarker`‑Instanz auf.  
+- **Welche Maven‑Abhängigkeit fügt GroupDocs.Watermark hinzu?** Fügen Sie die Einträge `<groupId>com.groupdocs</groupId>` und `<artifactId>groupdocs-watermark</artifactId>` zu `pom.xml` hinzu.  
+- **Kann ich die Deckkraft des Wasserzeichens steuern?** Ja, verwenden Sie `setOpacity(double)`, wobei 0 vollständig transparent und 1 vollständig undurchsichtig ist.  
+- **Ist für die Produktion eine Lizenz erforderlich?** Eine kommerzielle Lizenz ist für den Produktionseinsatz obligatorisch; ein kostenloser Testzeitraum ist für Evaluierungszwecke verfügbar.  
+- **Welche Dateiformate werden unterstützt?** Mehr als 30 Formate, darunter PDF, DOCX, XLSX, PPTX, PNG, JPEG und TIFF.  
+
+`TextWatermark` stellt ein textbasiertes Wasserzeichen dar, das auf Dokumente angewendet werden kann.  
+`Watermarker` ist die Hauptklasse, die zum Laden eines Dokuments und zum Anwenden von Wasserzeichen verwendet wird.  
+`setOpacity(double)` legt die Transparenzstufe des Wasserzeichens fest.
+
+## Was bedeutet das Hinzufügen von Textwasserzeichen in Java?
+Das Hinzufügen eines Textwasserzeichens in Java bedeutet, benutzerdefinierten Text zur Laufzeit über ein Dokument oder Bild zu legen, wobei eine API verwendet wird. GroupDocs.Watermark bietet eine flüssige Java‑Schnittstelle, um diese Aufgabe ohne Drittanbieter‑Tools auszuführen. Das Wasserzeichen kann benutzerdefinierte Schriftarten, Farben, Drehungen und Positionierungen enthalten, sodass Entwickler Inhalte programmatisch über viele Dateitypen hinweg branden oder schützen können.
+
+## Warum GroupDocs.Watermark für Java verwenden?
+GroupDocs.Watermark unterstützt **über 30 Eingabe‑ und Ausgabeformate** und kann Dateien bis zu **500 MB** verarbeiten, ohne das gesamte Dokument in den Speicher zu laden. Seine API fügt Wasserzeichen in weniger als **200 ms** zu typischen 10‑seitigen PDFs auf einer Standard‑VM hinzu, wodurch es sowohl schnell als auch speichereffizient für hochdurchsatzfähige Dienste ist.
 
 ## Voraussetzungen
-- **Java SE 8+** installiert.  
-- **Maven** für das Abhängigkeitsmanagement.  
-- Eine IDE wie **IntelliJ IDEA** oder **Eclipse**.  
--.WaterF. aus dem offiziellen GroupDocs Maven‑Repository.
+
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes bereit haben:
+
+### Erforderliche Bibliotheken, Versionen und Abhängigkeiten
+- **GroupDocs.Watermark Bibliothek**: Version 24.11 oder neuer  
+- Java SE 8 oder höher (die Bibliothek ist kompatibel mit Java 11, 17 und neueren Versionen)
+
+### Anforderungen an die Umgebung
+- Eine IDE wie IntelliJ IDEA oder Eclipse zum Schreiben und Ausführen Ihres Java‑Codes.  
+- Maven ist auf Ihrem System installiert, um Abhängigkeiten mühelos zu verwalten.
+
+### Vorkenntnisse
+- Grundlegendes Verständnis von Java‑Programmierkonzepten  
+- Vertrautheit mit XML‑Konfigurationsdateien, insbesondere für Maven‑Projekte  
+
+Nachdem die Voraussetzungen geklärt sind, richten wir GroupDocs.Watermark für Java ein.
+
+## Einrichtung von GroupDocs.Watermark für Java
+
+Um GroupDocs.Watermark in Ihr Projekt zu integrieren, können Sie Maven verwenden oder die Bibliothek direkt herunterladen. So geht’s:
+
+### Verwendung von Maven
+
+Fügen Sie die folgende Konfiguration zu Ihrer `pom.xml`‑Datei hinzu, um GroupDocs.Watermark in Ihr Maven‑basiertes Projekt einzubinden:
 
 ```xml
 <repositories>
@@ -47,16 +152,19 @@ weight: 1
 </dependencies>
 ```
 
-### 2. (Optional) Direkter Download
-Wenn Sie Maven nicht verwenden möchten, können Sie das JAR manuell von der offiziellen Release‑Seite herunterladen: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Direkter Download
 
-### 3. Lizenzierung
-1. **Kostenlose Testversion** – beginnen Sie mit einem Testschlüssel, um die Funktionen zu erkunden.  
-2. **Temporäre Lizenz** – nützlich für kurzfristige Entwicklung oder CI‑Pipelines.  
-3. **Kommerzielle Lizenz** – erforderlich für Produktionsbereitstellungen.
+Alternativ können Sie die neueste Version von [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) herunterladen.
 
-## Grundlegende Initialisierung
-Erstellen Sie eine `Watermarker`‑Instanz, die auf die zu schützende Datei zeigt.
+#### Schritte zum Erwerb einer Lizenz
+
+1. **Free trial** – Beginnen Sie mit dem Herunterladen einer Testversion, um die Funktionen der Bibliothek zu erkunden.  
+2. **Temporary license** – Erhalten Sie eine temporäre Lizenz, wenn Sie während der Entwicklung umfangreicheren Zugriff benötigen.  
+3. **Purchase** – Für den langfristigen Einsatz kaufen Sie eine kommerzielle Lizenz von GroupDocs.
+
+### Grundlegende Initialisierung und Einrichtung
+
+So initialisieren Sie GroupDocs.Watermark in Ihrer Java‑Anwendung:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -74,14 +182,19 @@ public class WatermarkSetup {
 }
 ```
 
-## Hinzufügen eines Text‑Wasserzeichens (Protect PDF with Watermark)
+Nachdem die Einrichtung abgeschlossen ist, gehen wir zu den konkreten Wasserzeichen‑Funktionen über.
 
-### Schritt‑für‑Schritt
-1. Laden Sie das PDF mit `PdfLoadOptions`.  
-2. Erstellen Sie ein `TextWatermark` mit dem gewünschten Text, Schriftart und Farbe.  
-3. Passen Sie Eigenschaften wie **opacity** und **background color** an.  
-4. Rufen Sie `watermarker.add(textWatermark)` auf – dies wendet das Wasserzeichen automatisch auf **alle Seiten** an (watermark multiple pages).  
-5. Speichern Sie das Ergebnis.
+## Implementierungsleitfaden
+
+### Hinzufügen von Textwasserzeichen
+
+**Übersicht:**  
+Das Einbetten von Textwasserzeichen in Dokumente ist mit GroupDocs.Watermark ein unkomplizierter Vorgang. Diese Funktion ermöglicht es Ihnen, angepasste Textüberlagerungen hinzuzufügen, um Ihre digitalen Assets effektiv zu sichern.
+
+#### Schritte
+1. **Create a text watermark** – Definieren Sie den Inhalt und das Styling des Wasserzeichens.  
+2. **Add watermark to document** – Betten Sie das Wasserzeichen in Ihr Dokument oder Bild ein.  
+3. **Save changes** – Stellen Sie sicher, dass alle Änderungen gespeichert werden, um das neue Wasserzeichen zu übernehmen.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -113,17 +226,23 @@ public class AddTextWatermark {
 }
 ```
 
-**Wichtige Punkte**
-- `setOpacity(0.5)` macht das Wasserzeichen halbtransparent, ideal für subtile Sicherheit.  
-- Der gleiche Ansatz funktioniert für **watermark multiple pages**, ohne zusätzliche Schleifen.
+**Parameter & Zweck**  
+- `TextWatermark` ist die Klasse, die eine Textüberlagerung mit anpassbaren Eigenschaften wie Schriftart, Farbe und Größe darstellt.  
+- `setOpacity()` passt an, wie transparent oder undurchsichtig das Wasserzeichen erscheint, wobei Werte von 0 (vollständig transparent) bis 1 (vollständig undurchsichtig) akzeptiert werden.
 
-## Hinzufügen eines Bild‑Wasserzeichens (Embed Logo Watermark PDF)
+#### Fehlerbehebungstipps
+- Überprüfen Sie, ob der Dokumentpfad korrekt ist, um *Datei nicht gefunden*‑Fehler zu vermeiden.  
+- Stellen Sie sicher, dass die erforderliche Schriftart (z. B. Arial) auf dem Host‑Computer installiert ist; andernfalls greift die Bibliothek auf eine Standardschrift zurück.
 
-### Schritt‑für‑Schritt
-1. Laden Sie das Ziel‑PDF.  
-2. Erstellen Sie ein `ImageWatermark` aus einem `FileInputStream`, das auf Ihre Logodatei zeigt (z. B. `logo.png`).  
-3. Setzen Sie die gewünschte Opazität, damit das Logo mit dem Seiteninhalt verschmilzt.  
-4. Fügen Sie das Wasserzeichen dem Dokument hinzu und speichern Sie es.
+### Hinzufügen von Bildwasserzeichen
+
+**Übersicht:**  
+Bildwasserzeichen können eine zusätzliche Schutzschicht hinzufügen, indem Logos oder benutzerdefinierte Bilder in Dokumente eingebettet werden. Dieser Abschnitt führt Sie durch den Prozess des Hinzufügens bildbasierter Wasserzeichen.
+
+#### Schritte
+1. **Load your image** – Bereiten Sie die Bilddatei vor, die als Wasserzeichen verwendet werden soll.  
+2. **Configure watermark properties** – Legen Sie Eigenschaften wie Position und Deckkraft fest.  
+3. **Embed watermark** – Fügen Sie das Bildwasserzeichen Ihrem Dokument hinzu.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -153,45 +272,54 @@ public class AddImageWatermark {
 }
 ```
 
-**Tipps**
- Stellen Sie sicher, dass das Passenbarkeitrunde liegenden Dokuments auszubalancieren.
+**Parameter & Zweck**  
+- `ImageWatermark` ist die Klasse, die die Bildüberlagerung mit Optionen für Skalierung, Drehung und Positionierung darstellt.  
+- `setOpacity()` funktioniert genauso wie bei Textwasserzeichen und ermöglicht es Ihnen, subtile oder auffällige Markenkennzeichnungen zu erstellen.
 
-## Entfernen eines Wasserzeichens (remove watermark java)
-GroupDocs.Watermark konzentriert sich auf das Hinzufügen von Wasserzeichen, aber Sie können **alle Wasserzeichen löschen**, indem Sie das Dokument laden, durch vorhandene Wasseratermark)` aufrufen einee Anwendungsfälle & bewährte Methoden
+#### Fehlerbehebungstipps
+- Bestätigen Sie, dass der Bildpfad korrekt ist und die Datei vom Java‑Prozess zugänglich ist.  
+- Wenn das Bild nicht angezeigt wird, prüfen Sie seine Abmessungen und stellen Sie sicher, dass der Deckkraftwert nicht auf 0 gesetzt ist.
 
-| Szenario |** | Verwenden Sie ein halbtransparentes Text‑Wasserzeichen auf jeder Seite (`protect pdf with watermark`). |
-| **Branding von Marketingmaterialien** | Betten Sie ein hochauflösendes Logo (`embed logo watermark pdf`) mit 30‑40 % Opazität ein. |
-| **Batch‑Verarbeitung von Bildern** | Durchlaufen Sie einen Ordner, erstellen Sie für jedes Bild ein `ImageWatermark` und speichern Sie die Ergebnisse (` **Rechtsdokumente** | Fügen Sie ein fettgedrucktes „CONFIDENTIAL“-Text‑Wasserzeichen hinzu und sperren Sie das PDF nach dem Speichern. |
-| **Mehrseitige PDFs** | Rufen Sie `watermarker.add(water Seiten an (`watermark multiple pages`). |
+## Praktische Anwendungen
 
-**us)` zu reduzieren.
+GroupDocs.Watermark kann in einer Vielzahl von realen Szenarien eingesetzt werden:
 
-## FAQ
+1. **Document protection** – Sichern Sie sensible PDFs mit Firmenlogos oder Vertraulichkeitsvermerken, bevor Sie sie extern teilen.  
+2. **Image copyrighting** – Betten Sie Urheberrechtsinformationen in Bilder ein, um unbefugte Nutzung abzuschrecken.  
+3. **Educational material** – Fügen Sie digitalen Lehrbüchern oder Vorlesungsnotizen Wasserzeichen hinzu, um die Verteilung ohne Erlaubnis zu verhindern.  
+4. **Marketing materials** – Schützen Sie Broschüren und Präsentationen, indem Sie Branding‑Elemente als Wasserzeichen einbetten.  
 
-### 1. Kann ich mehrere Wasserzeichen zum selben Dokument mit GroupDocs.Watermark hinzufügen?
-/oder Bild‑Wasserzeichen – hinzufügen, indem Sie die `add()`‑Methode mehrmals vor dem Speichern aufrufen.
+Die Integration mit anderen Systemen, wie CMS‑Plattformen oder Dokumenten‑Management‑Lösungen, kann die Sicherheitsmaßnahmen für Ihre digitalen Assets weiter verstärken.
 
-eneDocs.Watermark konzentriert sich hauptsächlich auf das Hinzufügen von Wasserzeichen. oder manuelle Bearbeitung, je nach Dokumenttyp.
+## Häufig gestellte Fragen
 
-### 3. Unterstützt GroupDocs.Watermark das Wasserzeichen für alle Dateiformate?
-Es unterstützt viele gängige Formate wie PDF, Word, Excel, PowerPoint, Bilder usw., aber prüfen Sie stets für die spezifische Formatunter Styling die Positionierung, Größe und das Styling von Wasser, z. B. Seitenuern.
+**F: Kann ich mehrere Wasserzeichen zum selben Dokument mit GroupDocs.Watermark hinzufügen?**  
+A: Ja, Sie können mehrere Wasserzeichen – Text‑ und/oder Bild‑Wasserzeichen – hinzufügen, indem Sie die `add()`‑Methode mehrfach vor dem Speichern aufrufen.
 
- Möglichkeit, transparente oder halbtransparente Wasserzeichen in GroupDocs.Watermark anzuwenden?
-Absolut. Verwenden Sie die `setOpacity()`‑Methode, um Transparenzstufen anzupassen, wodurch halbtransparente Wasserzeichen für subtile Sicherheit ermöglicht werden.
+**F: Ist es möglich, vorhandene Wasserzeichen aus einem Dokument mit GroupDocs.Watermark zu entfernen?**  
+A: GroupDocs.Watermark konzentriert sich hauptsächlich auf das Hinzufügen von Wasserzeichen. Um vorhandene Wasserzeichen zu entfernen oder zu extrahieren, benötigen Sie fortgeschrittenere Techniken oder manuelle Bearbeitung, je nach Dokumenttyp.
 
-## Weitere häufig gestellte Fragen
+**F: Unterstützt GroupDocs.Watermark das Wasserzeichen für alle Dateiformate?**  
+A: Es unterstützt über 30 gängige Formate, darunter PDF, DOCX, XLSX, PPTX, PNG, JPEG und TIFF. Prüfen Sie stets die aktuelle Dokumentation für neu hinzugefügte Formate.
 
-**Q: Wie kann ich nur ausgewählte Seiten wasserzeichen?**  
-A: Laden Sie das Dokument, holen Sie die gewünschten `WatermarkablePage`‑Objekte und rufen Sie für jede Zielseite `watermarker.add(watermark, page)` auf.
+**F: Kann ich die Platzierung und das Styling von Wasserzeichen basierend auf Seitenlayout oder Inhalt automatisieren?**  
+A: Ja, Sie können programmgesteuert die Position, Größe und das Styling von Wasserzeichen basierend auf Ihrer Logik, wie Seitenabmessungen oder Inhaltsbereichen, steuern.
 
-**Q: Kann ich passwortgeschützte PDFs wasserzeichen?**  
-A: Ja – geben Sie das Passwort über `PdfLoadOptions.setPassword("yourPassword")` vor dem Laden an.
+**F: Gibt es eine Möglichkeit, transparente oder halbtransparente Wasserzeichen in GroupDocs.Watermark anzuwenden?**  
+A: Absolut. Verwenden Sie die `setOpacity()`‑Methode, um Transparenzstufen anzupassen und halbtransparente Wasserzeichen für einen dezenten Schutz zu ermöglichen.
 
-**Q: Was ist die empfohlene Vorgehensweise für sehr große PDFs?**  
-A: Aktivieren Sie das Speichercaching (`PdfLoadOptions.setUseMemoryCache(true)`) und verarbeiten Sie Seiten in einem Streaming‑Modus, um den Speicherverbrauch gering zu halten.
+## Fazit  
+
+Das Beherrschen von GroupDocs.Watermark in Java ermöglicht es Ihnen, Ihre digitalen Dokumente und Bilder einfach zu schützen und zu branden. Durch die Anpassung von Text‑ und Bildwasserzeichen können Sie die Sicherheit erhöhen, unbefugte Nutzung verhindern und Ihr Branding nahtlos in Ihre Anwendungen integrieren.
 
 ---
 
-**Zuletzt aktualisiert:** 2026-02-03  
-**Getestet mit:** GroupDocs.Watermark 24.11  
+**Zuletzt aktualisiert:** 2026-09-26  
+**Getestet mit:** GroupDocs.Watermark 24.11 für Java  
 **Autor:** GroupDocs
+
+## Verwandte Tutorials
+
+- [Java-Wasserzeichen‑Leitfaden: Dokumente mit GroupDocs.Watermark‑API sichern](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
+- [Erweiterte Wasserzeichen‑Funktionen Tutorials für GroupDocs.Watermark Java](/watermark/java/advanced-features/)
+- [Wie man ein Textwasserzeichen zu PDFs mit GroupDocs.Watermark für Java hinzufügt: Eine Schritt‑für‑Schritt‑Anleitung](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)

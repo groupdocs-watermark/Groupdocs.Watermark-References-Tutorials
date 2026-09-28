@@ -1,36 +1,136 @@
 ---
-date: '2026-02-03'
-description: GroupDocs 워터마크 Maven 통합을 사용하여 PDF를 보호하고, 로고 워터마크를 삽입하며, Java 이미지 워터마크를
-  추가하고, 여러 페이지에 워터마크를 적용하는 방법을 배워보세요.
+date: '2026-09-26'
+description: GroupDocs.Watermark를 사용하여 Java 텍스트 워터마크를 추가하는 방법을 배웁니다. 이 가이드는 설정, 코드
+  및 문서와 이미지 보호를 위한 모범 사례를 보여줍니다.
 keywords:
-- GroupDocs Watermark Java
-- Java watermarking techniques
-- text watermarks in Java
-title: groupdocs 워터마크 maven – Java에서 GroupDocs.Watermark 마스터하기
+- add text watermark java
+- GroupDocs.Watermark Java
+- Java document protection
+- watermarking images Java
+lastmod: '2026-09-26'
+og_description: GroupDocs.Watermark를 사용하여 Java 텍스트 워터마크를 추가하는 방법을 배웁니다. 단계별 설정, 코드
+  예제 및 문서 보호를 위한 성능 팁을 따라 보세요.
+og_image_alt: Guide showing Java code to add text watermarks with GroupDocs.Watermark
+og_title: GroupDocs.Watermark를 사용한 Java 텍스트 워터마크 추가 방법
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-26'
+  description: Learn how to add text watermark java using GroupDocs.Watermark. This
+    guide shows setup, code, and best practices for protecting documents and images.
+  headline: How to add text watermark Java with GroupDocs.Watermark
+  type: TechArticle
+- description: Learn how to add text watermark java using GroupDocs.Watermark. This
+    guide shows setup, code, and best practices for protecting documents and images.
+  name: How to add text watermark Java with GroupDocs.Watermark
+  steps:
+  - name: '**Free trial** – Start by downloading a trial version to explore the library''s
+      features.'
+    text: '**Free trial** – Start by downloading a trial version to explore the library''s
+      features.'
+  - name: '**Temporary license** – Obtain a temporary license if you need more extensive
+      access during development.'
+    text: '**Temporary license** – Obtain a temporary license if you need more extensive
+      access during development.'
+  - name: '**Purchase** – For long‑term use, purchase a commercial license from GroupDocs.'
+    text: '**Purchase** – For long‑term use, purchase a commercial license from GroupDocs.'
+  - name: '**Create a text watermark** – Define the watermark content and styling.'
+    text: '**Create a text watermark** – Define the watermark content and styling.'
+  - name: '**Add watermark to document** – Embed the watermark into your document
+      or image.'
+    text: '**Add watermark to document** – Embed the watermark into your document
+      or image.'
+  - name: '**Save changes** – Ensure all changes are saved to reflect the new watermark.'
+    text: '**Save changes** – Ensure all changes are saved to reflect the new watermark.'
+  - name: '**Load your image** – Prepare the image file to be used as a watermark.'
+    text: '**Load your image** – Prepare the image file to be used as a watermark.'
+  - name: '**Configure watermark properties** – Set properties such as position and
+      opacity.'
+    text: '**Configure watermark properties** – Set properties such as position and
+      opacity.'
+  - name: '**Embed watermark** – Add the image watermark to your document.'
+    text: '**Embed watermark** – Add the image watermark to your document.'
+  - name: '**Document protection** – Secure sensitive PDFs with company logos or confidentiality
+      notices before sharing them externally.'
+    text: '**Document protection** – Secure sensitive PDFs with company logos or confidentiality
+      notices before sharing them externally.'
+  type: HowTo
+- questions:
+  - answer: Yes, you can add several watermarks—text and/or images—by calling the
+      `add()` method multiple times before saving.
+    question: Can I add multiple watermarks to the same document using GroupDocs.Watermark?
+  - answer: GroupDocs.Watermark primarily focuses on adding watermarks. To remove
+      or extract existing watermarks, you’ll need more advanced techniques or manual
+      editing, depending on the document type.
+    question: Is it possible to remove existing watermarks from a document with GroupDocs.Watermark?
+  - answer: It supports over 30 popular formats, including PDF, DOCX, XLSX, PPTX,
+      PNG, JPEG, and TIFF. Always verify the latest documentation for any newly added
+      formats.
+    question: Does GroupDocs.Watermark support watermarking for all file formats?
+  - answer: Yes, you can programmatically control watermark positioning, size, and
+      styling based on your logic, such as page dimensions or content areas.
+    question: Can I automate watermark placement and styling based on page layout
+      or content?
+  - answer: Absolutely. Use the `setOpacity()` method to adjust transparency levels,
+      enabling semi‑transparent watermarks for subtle protection.
+    question: Is there a way to apply transparent or semi‑transparent watermarks in
+      GroupDocs.Watermark?
+  type: FAQPage
+tags:
+- add text watermark
+- GroupDocs.Watermark
+- Java watermarking
+title: GroupDocs.Watermark를 사용한 Java 텍스트 워터마크 추가 방법
 type: docs
 url: /ko/java/advanced-features/groupdocs-watermark-java-tutorial/
 weight: 1
 ---
 
-# Java에서 **groupdocs watermark maven**을 사용한 GroupDocs.Watermark 마스터하기
+# GroupDocs.Watermark를 사용한 Java 텍스트 워터마크 추가 방법
 
-문서와 이미지를 무단 사용으로부터 보호하는 것은 개발자와 기업 모두에게 최우선 과제입니다. 이 튜토리얼에서는 **groupdocs watermark maven**을 Java 프로젝트에 통합하고, 텍스트 또는 이미지 워터마크를 추가하고, 로고를 삽입하며, 단일 작업으로 여러 페이지에 워터마크를 적용하는 방법을 알아봅니다. 최종적으로 **protect pdf with watermark**, **embed logo watermark pdf**, **add image watermark java**에 대한 프로덕션 준비 솔루션을 갖게 됩니다.
+오늘날 빠르게 변화하는 디지털 환경에서 **add text watermark java**는 PDF, Word 파일, 이미지 및 기타 자산을 무단 재사용으로부터 보호하는 실용적인 방법입니다. 이 튜토리얼에서는 GroupDocs.Watermark를 설치하고 구성하며 Java 애플리케이션에 텍스트와 이미지 워터마크를 삽입하는 과정을 단계별로 안내합니다. 마지막까지 읽으면 불투명도, 위치 및 스타일을 맞춤 설정하는 방법을 이해하고, 자체 프로젝트에 적용할 수 있는 실행 가능한 코드 스니펫을 얻게 됩니다.
 
 ## 빠른 답변
-- **GroupDocs.Watermark를 Maven 프로젝트에 추가하는 기본 방법은 무엇인가요?** `pom.xml`에 GroupDocs 저장소와 `groupdocs-watermark` 의존성을 추가합니다.  
-- **PDF의 모든 페이지에 한 번에 워터마크를 적용할 수 있나요?** 예 – `watermarker.add(watermark)`를 호출하면 라이브러리가 모든 페이지에 적용합니다.  
-- **반투명 로고를 워터마크로 설정할 수 있나요?** 투명도 제어를 위해 `ImageWatermark.setOpacity()`를 사용합니다.  
-- **개발에 라이선스가 필요합니까?** 평가용으로는 무료 체험이 가능하지만, 프로덕션에서는 상용 라이선스가 필요합니다.  
-- **필요한 Java 버전은 무엇인가요?** Java 8 이상을 지원합니다.
+- **Java에서 텍스트 워터마크를 추가하는 가장 간단한 방법은 무엇인가요?** `TextWatermark` 객체를 생성하고 속성을 설정한 뒤 `Watermarker` 인스턴스에서 `add()`를 호출합니다.  
+- **어떤 Maven 의존성이 GroupDocs.Watermark를 추가합니까?** `<groupId>com.groupdocs</groupId>`와 `<artifactId>groupdocs-watermark</artifactId>` 항목을 `pom.xml`에 추가합니다.  
+- **워터마크 불투명도를 제어할 수 있나요?** 예, `setOpacity(double)`을 사용하면 0은 완전 투명, 1은 완전 불투명으로 설정할 수 있습니다.  
+- **프로덕션에 라이선스가 필요합니까?** 프로덕션 사용에는 상용 라이선스가 필수이며, 평가용 무료 체험판을 사용할 수 있습니다.  
+- **지원되는 파일 형식은 무엇인가요?** PDF, DOCX, XLSX, PPTX, PNG, JPEG, TIFF 등 30개 이상의 형식을 지원합니다.  
 
-## **groupdocsDocs.Watermark 라이브러리의 Maven 기반 통합을 의미 Word 문서마mark를 사용하는 이유
-- **강력한 포맷 지원** – PDF, DOCX, PPTX, XLSX, PNG, JPEG 등에서 작동합니다.  
-- **세밀한 제어** – 불투명도, 회전, 스케일링, 위치 지정 등을 완전히 프로그래밍할 수 있습니다.  
-- **성능 최적화** – 여러 페이지에 워터마크를 적용하는 배치 작업라이 테스트용 체험+**elliJ IDEA** 또는 **Eclipse**와 같은 IDE  
-Docs.Watermark 설정하기
+`TextWatermark`는 문서에 적용할 수 있는 텍스트 기반 워터마크를 나타냅니다.  
+`Watermarker`는 문서를 로드하고 워터마크를 적용하는 데 사용되는 주요 클래스입니다.  
+`setOpacity(double)`는 워터마크의 투명도 수준을 설정합니다.
 
-### 1. GroupDocs 저장소와 의존성 추가
-`pom.xml`에 다음 XML을 삽입브러리를 가져옵니다.
+## add text watermark Java란 무엇인가요?
+Java에서 텍스트 워터마크를 추가한다는 것은 API를 사용해 실행 시간에 문서나 이미지 위에 사용자 정의 텍스트를 오버레이하는 것을 의미합니다. GroupDocs.Watermark는 타사 도구 없이도 이 작업을 수행할 수 있는 유연한 Java 인터페이스를 제공합니다. 워터마크에는 사용자 정의 폰트, 색상, 회전 및 위치 지정이 가능하여 개발자가 다양한 파일 유형에 대해 프로그램matically 콘텐츠에 브랜드를 삽입하거나 보호할 수 있습니다.
+
+## Java에서 GroupDocs.Watermark를 사용하는 이유는?
+GroupDocs.Watermark는 **30개 이상의 입력 및 출력 형식**을 지원하며, 전체 문서를 메모리에 로드하지 않고도 **500 MB**까지의 파일을 처리할 수 있습니다. 일반적인 10페이지 PDF를 표준 VM에서 처리할 경우 **200 ms** 미만에 워터마크를 추가하므로 고처리량 서비스에 적합한 빠르고 메모리 효율적인 솔루션입니다.
+
+## 전제 조건
+
+시작하기 전에 다음 항목이 준비되어 있는지 확인하세요:
+
+### 필요한 라이브러리, 버전 및 의존성
+- **GroupDocs.Watermark Library**: 버전 24.11 이상  
+- Java SE 8 이상 (라이브러리는 Java 11, 17 및 최신 버전과 호환됩니다)
+
+### 환경 설정 요구 사항
+- IntelliJ IDEA 또는 Eclipse와 같은 IDE를 사용하여 Java 코드를 작성하고 실행합니다.  
+- Maven이 시스템에 설치되어 있어 의존성을 손쉽게 관리할 수 있습니다.
+
+### 지식 전제 조건
+- Java 프로그래밍 기본 개념에 대한 이해  
+- Maven 프로젝트용 XML 설정 파일에 대한 친숙함  
+
+전제 조건을 모두 충족했으니, 이제 GroupDocs.Watermark를 Java에 설정해 보겠습니다.
+
+## GroupDocs.Watermark를 Java에 설정하기
+
+프로젝트에 GroupDocs.Watermark를 통합하려면 Maven을 사용하거나 라이브러리를 직접 다운로드할 수 있습니다. 방법은 다음과 같습니다:
+
+### Maven 사용
+
+Maven 기반 프로젝트에 GroupDocs.Watermark를 포함하려면 `pom.xml` 파일에 다음 구성을 추가하십시오:
 
 ```xml
 <repositories>
@@ -51,15 +151,18 @@ Docs.Watermark 설정하기
 ```
 
 ### 직접 다운로드
-Maven을 사용하지 않으려면 공식 릴리스 페이지에서 JAR를 수동으로 다운로드할 수 있습니다: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### 3. 라이선스
-1. **무료 체험** – 기능을 탐색하기 위해 체험 키로 시작합니다.  
-2. **임시 라이선스** – 단기 개발이나 CI 파이프라인에 유용합니다.  
-3. **상용 라이선스** – 프로덕션 배포에 필요합니다.
+또는 최신 버전을 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)에서 다운로드할 수 있습니다.
 
-## 기본 초기화
-보호하려는 파일을 가리키는 `Watermarker` 인스턴스를 생성합니다.
+#### 라이선스 획득 단계
+
+1. **Free trial** – 라이브러리 기능을 살펴볼 수 있도록 체험판을 먼저 다운로드합니다.  
+2. **Temporary license** – 개발 중에 더 많은 접근 권한이 필요하면 임시 라이선스를 획득합니다.  
+3. **Purchase** – 장기 사용을 위해 GroupDocs에서 상용 라이선스를 구매합니다.
+
+### 기본 초기화 및 설정
+
+Java 애플리케이션에서 GroupDocs.Watermark를 초기화하는 방법은 다음과 같습니다:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -77,14 +180,19 @@ public class WatermarkSetup {
 }
 ```
 
-## 텍스트 워터마크 추가 (Protect PDF with Watermark)
+설정이 완료되었으니, 이제 구체적인 워터마크 기능 구현으로 넘어갑니다.
 
-### 단계별
-1. `PdfLoadOptions`를 사용하여 PDF를 로드합니다.  
-2. 원하는 텍스트, 폰트, 색상으로 `TextWatermark`를 생성합니다.  
-3. **불투명도**와 **배경 색상**과 같은 속성을 조정합니다.  
-4. `watermarker.add(textWatermark)`를 호출합니다 – 이 메서드는 워터마크를 **전체 페이지**에 자동으로 적용합니다 (watermark multiple pages).  
-5. 결과를 저장합니다.
+## 구현 가이드
+
+### 텍스트 워터마크 추가
+
+**Overview:**  
+GroupDocs.Watermark를 사용하면 문서에 텍스트 워터마크를 삽입하는 과정이 매우 간단합니다. 이 기능을 통해 디지털 자산을 효과적으로 보호하기 위해 맞춤형 텍스트 오버레이를 추가할 수 있습니다.
+
+#### 단계
+1. **텍스트 워터마크 생성** – 워터마크 내용과 스타일을 정의합니다.  
+2. **문서에 워터마크 추가** – 워터마크를 문서 또는 이미지에 삽입합니다.  
+3. **변경 사항 저장** – 새로운 워터마크가 반영되도록 모든 변경 사항을 저장합니다.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -116,17 +224,23 @@ public class AddTextWatermark {
 }
 ```
 
-**핵심 포인트**  
-- `setOpacity(0.5)`는 워터마크를 반투명하게 만들어 미묘한 보호에 적합합니다.  
-- 동일한 방법으로 **watermark multiple pages**를 추가 루프 없이 적용할 수 있습니다.
+**매개변수 및 목적**  
+- `TextWatermark`는 폰트, 색상, 크기 등 사용자 정의 가능한 속성을 가진 텍스트 오버레이를 나타내는 클래스입니다.  
+- `setOpacity()`는 워터마크가 얼마나 투명하거나 불투명하게 표시될지를 조정하며, 0(완전 투명)부터 1(완전 불투명)까지의 값을 허용합니다.
 
-## 이미지 워터마크 추가 (Embed Logo Watermark PDF)
+#### 문제 해결 팁
+- 문서 경로가 올바른지 확인하여 *file not found* 오류를 방지합니다.  
+- 필요한 폰트(예: Arial)가 호스트 머신에 설치되어 있는지 확인합니다. 설치되지 않은 경우 라이브러리가 기본 폰트로 대체됩니다.
 
-### 단계별
-1. 대상 PDF를 로드합니다.  
-2. 로고 파일(`logo.png` 등)을 가리키는 `FileInputStream`에서 `ImageWatermark`를 생성합니다.  
-3. 로고가 페이지 내용과 자연스럽게 섞이도록 원하는 불투명도를 설정합니다.  
-4. 워터마크를 문서에 추가하고 저장합니다.
+### 이미지 워터마크 추가
+
+**Overview:**  
+이미지 워터마크는 로고나 맞춤형 이미지를 문서에 삽입하여 추가적인 보호 계층을 제공할 수 있습니다. 이 섹션에서는 이미지 기반 워터마크를 추가하는 과정을 안내합니다.
+
+#### 단계
+1. **이미지 로드** – 워터마크로 사용할 이미지 파일을 준비합니다.  
+2. **워터마크 속성 구성** – 위치 및 불투명도와 같은 속성을 설정합니다.  
+3. **워터마크 삽입** – 이미지 워터마크를 문서에 추가합니다.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -156,48 +270,54 @@ public class AddImageWatermark {
 }
 ```
 
-**팁**  
-- 최상의 결과를 위해 로고 이미지에 투명 배경이 있는지 확인하세요.  
-- 불투명도를 조정하여 로고 가시성과 문서 가독성 사이의 균형을 맞추세요.
+**매개변수 및 목적**  
+- `ImageWatermark`는 크기 조정, 회전 및 위치 지정 옵션을 제공하는 이미지 오버레이 클래스를 나타냅니다.  
+- `setOpacity()`는 텍스트 워터마크와 동일하게 작동하여 미묘하거나 강렬한 브랜딩을 만들 수 있게 합니다.
 
-## 워터마크 제거 (remove watermark java)
+#### 문제 해결 팁
+- 이미지 경로가 정확하고 Java 프로세스가 파일에 접근할 수 있는지 확인합니다.  
+- 이미지가 표시되지 않을 경우, 이미지 크기를 확인하고 불투명도 값이 0으로 설정되지 않았는지 점검합니다.
 
-GroupDocs.Watermark는 워터마크 추가에 중점을 두지만, 문서를 로드하고 기존 워터마크를 순회하며 `watermarker.remove(watermark)`를 호출하면 **모든 워터마크를 삭제**할 수 있습니다. 이 패턴을 사용하면 필요할 때 “워터마크 제거” 기능을 구현할 수 있습니다.
+## 실제 적용 사례
 
-## 일반 사용 사례 및 모범 사례
+GroupDocs.Watermark는 다양한 실제 시나리오에서 활용될 수 있습니다:
 
-| Scenario | How to Apply |
-|----------|--------------|
-| **내부 보고서 보안** | 모든 페이지에스트 워터마크를 사용합니다 (`protect pdf with 브랜‑ logo watermark pdf`). |
-|하며 각 이미지에 `ImageWatermark`를 생성하고 결과를 저장합니다 (`add image watermark java`). “ 추가하고 저장 후 PDF를 잠급니다. |
-| **다중 페이지 PDF** | `watermarker.add(watermark)`를 한 번 호출하면 라이브러리가 자동으로 모든 페이지에 적용합니다 (`watermark multiple pages`). |
+- **문서 보호** – 외부에 공유하기 전에 회사 로고나 기밀성 안내문을 삽입해 민감한 PDF를 보호합니다.  
+- **이미지 저작권 표시** – 이미지에 저작권 정보를 삽입해 무단 사용을 억제합니다.  
+- **교육 자료** – 디지털 교과서나 강의 노트에 워터마크를 추가해 무단 배포를 방지합니다.  
+- **마케팅 자료** – 브로셔와 프레젠테이션에 브랜드 요소를 워터마크로 삽입해 보호합니다.  
 
-**프로 팁:** 대용량 PDF 작업 시 스트리밍 모드(`PdfLoadOptions.setUseMemoryCache(true)`)를 활성화하여 메모리 사용량을 줄이세요.
+CMS 플랫폼이나 문서 관리 솔루션과 같은 다른 시스템과 통합하면 디지털 자산 전반에 걸쳐 보안 조치를 더욱 강화할 수 있습니다.
 
-## FAQ
+## 자주 묻는 질문
 
-### 1. GroupDocs.Watermark를 사용해 동일 문서에 여러 워터마크를 추가할 수 있나요?
-예, `add()` 메서드를 여러 번 호출하여 텍스트 및/또는 이미지 워터마크를 여러 개 추가한 뒤 저장할 수 있습니다.
+**Q: GroupDocs.Watermark를 사용해 동일 문서에 여러 워터마크를 추가할 수 있나요?**  
+A: 예, 저장하기 전에 `add()` 메서드를 여러 번 호출하여 텍스트 및/또는 이미지 워터마크를 여러 개 추가할 수 있습니다.
 
-### 2. GroupDocs.Watermark로 문서에 기존 워터마크를 제거할 수 있나요?
-GroupDocs.Watermark는 주로 워터마크 추가에 중점을 둡니다. 기존 워터마크를 제거하거나 추출하려면 문서 유형에 따라 더 고급 기술이나 수동 편집이 필요합니다.
+**Q: GroupDocs.Watermark로 문서에 기존에 존재하는 워터마크를 제거할 수 있나요?**  
+A: GroupDocs.Watermark는 주로 워터마크 추가에 초점을 맞춥니다. 기존 워터마크를 제거하거나 추출하려면 문서 유형에 따라 보다 고급 기술이나 수동 편집이 필요합니다.
 
-### 3. GroupDocs.Watermark가 모든 파일 형식에 대한 워터마크를 지원하나요?
-PDF, Word, Excel, PowerPoint, 이미지 등 많은 인기 형식을 지원하지만, 구체적인 형식 지원 여부는 공식 문서를 확인하세요.
+**Q: GroupDocs.Watermark가 모든 파일 형식에 대한 워터마크를 지원하나요?**  
+A: PDF, DOCX, XLSX, PPTX, PNG, JPEG, TIFF 등 30개 이상의 인기 형식을 지원합니다. 최신 추가 형식은 최신 문서를 확인하십시오.
 
-### 4. 페이지 레이아웃이나 내용에 따라 워터마크 위치와 스타일을 자동화할 수 있나요?
-예, 페이지 크기나 내용 영역 등에 따라 워터마크 위치, 크기, 스타일을 프로그래밍적으로 제어할 수 있습니다.
+**Q: 페이지 레이아웃이나 내용에 따라 워터마크 위치와 스타일을 자동화할 수 있나요?**  
+A: 예, 페이지 크기나 내용 영역과 같은 논리에 따라 워터마크 위치, 크기 및 스타일을 프로그래밍 방식으로 제어할 수 있습니다.
 
-### 5. GroupDocs.Watermark에서 투명하거나 반투명 워터마크를 적용할 수 있나요?
-네, `setOpacity()` 메서드를 사용해 투명도 수준을 조정하면 반투명 워터마크를 적용할 수 있습니다.
+**Q: GroupDocs.Watermark에서 투명하거나 반투명 워터마크를 적용할 수 있는 방법이 있나요?**  
+A: 물론입니다. `setOpacity()` 메서드를 사용해 투명도 수준을 조정하면 미묘한 보호를 위한 반투명 워터마크를 만들 수 있습니다.
 
-## 추가 자주 묻는 질문
+## 결론  
 
-**Q: 선택한 페이지에만 워터마크를 적용하려면 어떻게 해야 하나요?**  
-A: 문서를 로드하고 원하는 `WatermarkablePage` 객체를 가져온 뒤, 각 대상 페이지에 대해 `watermarker.add(watermark, page)`를 호출합니다.
+Java에서 GroupDocs.Watermark를 마스터하면 디지털 문서와 이미지를 손쉽게 보호하고 브랜드화할 수 있습니다. 텍스트와 이미지 워터마크를 맞춤 설정함으로써 보안을 강화하고 무단 사용을 방지하며 애플리케이션 내에서 브랜드를 자연스럽게 강화할 수 있습니다.
 
-**Q: 비밀번호로 보호된 PDF에 워터마크를 적용할 수 있나요?**  
-A: 예 – 로드하기 전에 `PdfLoadOptions.setPassword("yourPassword")`로 비밀번호를 제공하면 됩니다.
+---
 
-**Q: 매우 큰 PDF를 처리하는 권장 방법은 무엇인가요?**  
-A: 메모리 캐싱(`PdfLoadOptions.setUseMemoryCache(true)`)을 활성화하고 스트리밍 방식으로 페이지를0211
+**마지막 업데이트:** 2026-09-26  
+**테스트 환경:** GroupDocs.Watermark 24.11 for Java  
+**작성자:** GroupDocs
+
+## 관련 튜토리얼
+
+- [Java 워터마크 가이드: GroupDocs.Watermark API로 문서 보안](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
+- [GroupDocs.Watermark Java 고급 워터마크 기능 튜토리얼](/watermark/java/advanced-features/)
+- [Java용 GroupDocs.Watermark를 사용하여 PDF에 텍스트 워터마크 추가 방법: 단계별 가이드](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)

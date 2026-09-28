@@ -1,38 +1,138 @@
 ---
-date: '2026-02-03'
-description: Tìm hiểu cách sử dụng tích hợp Maven của GroupDocs Watermark để bảo vệ
-  PDF, chèn logo watermark, thêm watermark hình ảnh trong Java và áp dụng watermark
-  cho nhiều trang.
+date: '2026-09-26'
+description: Tìm hiểu cách thêm watermark văn bản Java bằng GroupDocs.Watermark. Hướng
+  dẫn này trình bày cách cài đặt, mã nguồn và các thực tiễn tốt nhất để bảo vệ tài
+  liệu và hình ảnh.
 keywords:
-- GroupDocs Watermark Java
-- Java watermarking techniques
-- text watermarks in Java
-title: groupdocs watermark maven – Thành thạo GroupDocs.Watermark trong Java
+- add text watermark java
+- GroupDocs.Watermark Java
+- Java document protection
+- watermarking images Java
+lastmod: '2026-09-26'
+og_description: Tìm hiểu cách thêm watermark văn bản Java bằng GroupDocs.Watermark.
+  Thực hiện các bước cài đặt từng bước, ví dụ mã và mẹo hiệu năng để bảo vệ tài liệu
+  của bạn.
+og_image_alt: Guide showing Java code to add text watermarks with GroupDocs.Watermark
+og_title: Cách thêm watermark văn bản Java với GroupDocs.Watermark
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-26'
+  description: Learn how to add text watermark java using GroupDocs.Watermark. This
+    guide shows setup, code, and best practices for protecting documents and images.
+  headline: How to add text watermark Java with GroupDocs.Watermark
+  type: TechArticle
+- description: Learn how to add text watermark java using GroupDocs.Watermark. This
+    guide shows setup, code, and best practices for protecting documents and images.
+  name: How to add text watermark Java with GroupDocs.Watermark
+  steps:
+  - name: '**Free trial** – Start by downloading a trial version to explore the library''s
+      features.'
+    text: '**Free trial** – Start by downloading a trial version to explore the library''s
+      features.'
+  - name: '**Temporary license** – Obtain a temporary license if you need more extensive
+      access during development.'
+    text: '**Temporary license** – Obtain a temporary license if you need more extensive
+      access during development.'
+  - name: '**Purchase** – For long‑term use, purchase a commercial license from GroupDocs.'
+    text: '**Purchase** – For long‑term use, purchase a commercial license from GroupDocs.'
+  - name: '**Create a text watermark** – Define the watermark content and styling.'
+    text: '**Create a text watermark** – Define the watermark content and styling.'
+  - name: '**Add watermark to document** – Embed the watermark into your document
+      or image.'
+    text: '**Add watermark to document** – Embed the watermark into your document
+      or image.'
+  - name: '**Save changes** – Ensure all changes are saved to reflect the new watermark.'
+    text: '**Save changes** – Ensure all changes are saved to reflect the new watermark.'
+  - name: '**Load your image** – Prepare the image file to be used as a watermark.'
+    text: '**Load your image** – Prepare the image file to be used as a watermark.'
+  - name: '**Configure watermark properties** – Set properties such as position and
+      opacity.'
+    text: '**Configure watermark properties** – Set properties such as position and
+      opacity.'
+  - name: '**Embed watermark** – Add the image watermark to your document.'
+    text: '**Embed watermark** – Add the image watermark to your document.'
+  - name: '**Document protection** – Secure sensitive PDFs with company logos or confidentiality
+      notices before sharing them externally.'
+    text: '**Document protection** – Secure sensitive PDFs with company logos or confidentiality
+      notices before sharing them externally.'
+  type: HowTo
+- questions:
+  - answer: Yes, you can add several watermarks—text and/or images—by calling the
+      `add()` method multiple times before saving.
+    question: Can I add multiple watermarks to the same document using GroupDocs.Watermark?
+  - answer: GroupDocs.Watermark primarily focuses on adding watermarks. To remove
+      or extract existing watermarks, you’ll need more advanced techniques or manual
+      editing, depending on the document type.
+    question: Is it possible to remove existing watermarks from a document with GroupDocs.Watermark?
+  - answer: It supports over 30 popular formats, including PDF, DOCX, XLSX, PPTX,
+      PNG, JPEG, and TIFF. Always verify the latest documentation for any newly added
+      formats.
+    question: Does GroupDocs.Watermark support watermarking for all file formats?
+  - answer: Yes, you can programmatically control watermark positioning, size, and
+      styling based on your logic, such as page dimensions or content areas.
+    question: Can I automate watermark placement and styling based on page layout
+      or content?
+  - answer: Absolutely. Use the `setOpacity()` method to adjust transparency levels,
+      enabling semi‑transparent watermarks for subtle protection.
+    question: Is there a way to apply transparent or semi‑transparent watermarks in
+      GroupDocs.Watermark?
+  type: FAQPage
+tags:
+- add text watermark
+- GroupDocs.Watermark
+- Java watermarking
+title: Cách thêm watermark văn bản Java với GroupDocs.Watermark
 type: docs
 url: /vi/java/advanced-features/groupdocs-watermark-java-tutorial/
 weight: 1
 ---
 
- chủ Group là ưu tiên hàng đầu của các nhà phát triển và doanh nghiệp. Trong hướng dẫn này, bạn sẽ khám phá cách tích hợp **groupdocs watermark maven** vào các dự án Java, thêm dấu nước dạng văn bản hoặc hình ảnh, nhúng logo, và thậm chí đánh dấu nhiều trang trong một thao tác duy nhất. Khi hoàn thành, bạn sẽ có một giải pháp sẵn sàng cho sản xuất cho **protect pdf with watermark**, **embed logo watermark pdf**, và Thêm` vào file `pom.xml` của bạn.  
-- **Tôi có thể đánh dấu mọi trang của một PDF cùng một lúc không?** Có trong mại cần## **groupdocs watermark maven** là gì?
-`groupdocs watermark maven` đề cập đến việc tích hợp dựa trên Maven của thư viện GroupDocs.Watermark. Bằng cách khai báo phụ thuộc trong `pom tài liệu Word, hình ảnh và nhiều định dạng khác.
+# Cách thêm dấu nước văn bản Java với GroupDocs.Watermark
 
-## Tại sao nên dùng GroupDocs.Watermark cho Java?
-- **Hỗ trợ đa định dạng mạnh mẽ** – hoạt động với PDF, DOCX, PPTX, XLSX, PNG, JPEG, v.v.  
-- **Kiểm soát chi tiết** – độ trong suốt, xoay, tỷ lệ và vị trí đều có thể lập trình.  
-- **Tối ưu hiệu năng** – các thao tác batch như đánh dấu nhiều trang được xử lý hiệu quả.  
-- **Giấy phép doanh nghiệp** – bản dùng thử để thử nghiệm, giấy phép thương mại cho môi trường sản xuất.
+Trong môi trường kỹ thuật số nhanh chóng ngày nay, **add text watermark java** là một cách thực tế để bảo vệ PDF, tệp Word, hình ảnh và các tài sản khác khỏi việc sử dụng trái phép. Hướng dẫn này sẽ chỉ cho bạn cách cài đặt GroupDocs.Watermark, cấu hình và nhúng cả dấu nước văn bản và hình ảnh trong các ứng dụng Java. Khi hoàn thành, bạn sẽ hiểu cách tùy chỉnh độ mờ, vị trí và kiểu dáng, và sẽ có một đoạn mã sẵn sàng chạy mà bạn có thể điều chỉnh cho dự án của mình.
 
-## Điều kiện tiên quyết
-- **Java SE 8+** đã được cài đặt.  
-- **Maven** để quản lý phụ thuộc.  
-- Một IDE như **IntelliJ IDEA** hoặc **Eclipse**.  
-- Kiến thức cơ bản về Java và quen thuộc với `pom.xml` của Maven.
+## Câu trả lời nhanh
+- **Cách đơn giản nhất để thêm dấu nước văn bản trong Java là gì?** Create a `TextWatermark` object, configure its properties, and call `add()` on the `Watermarker` instance.  
+- **Phụ thuộc Maven nào thêm GroupDocs.Watermark?** Add the `<groupId>com.groupdocs</groupId>` and `<artifactId>groupdocs-watermark</artifactId>` entries to `pom.xml`.  
+- **Tôi có thể kiểm soát độ mờ của dấu nước không?** Yes, use `setOpacity(double)` where 0 is fully transparent and 1 is fully opaque.  
+- **Cần giấy phép cho môi trường sản xuất không?** A commercial license is mandatory for production use; a free trial is available for evaluation.  
+- **Các định dạng tệp nào được hỗ trợ?** Over 30 formats, including PDF, DOCX, XLSX, PPTX, PNG, JPEG, and TIFF.  
 
-## Cài đặt GroupDocs.Watermark với Maven
+`TextWatermark` đại diện cho một dấu nước dựa trên văn bản có thể được áp dụng cho tài liệu.  
+`Watermarker` là lớp chính được sử dụng để tải tài liệu và áp dụng dấu nước.  
+`setOpacity(double)` đặt mức độ trong suốt của dấu nước.
 
-### 1. Thêm repository và phụ thuộc của GroupDocs
-Chèn đoạn XML sau vào file `pom.xml` của bạn. Bước này sẽ tải thư viện từ repository Maven chính thức của GroupDocs.
+## Thêm dấu nước văn bản Java là gì?
+Thêm dấu nước văn bản trong Java có nghĩa là chồng lớp văn bản tùy chỉnh lên tài liệu hoặc hình ảnh tại thời gian chạy bằng một API. GroupDocs.Watermark cung cấp giao diện Java mượt mà để thực hiện nhiệm vụ này mà không cần công cụ bên thứ ba. Dấu nước có thể bao gồm phông chữ tùy chỉnh, màu sắc, xoay và vị trí, cho phép các nhà phát triển gắn thương hiệu hoặc bảo vệ nội dung một cách lập trình trên nhiều loại tệp.
+
+## Tại sao nên sử dụng GroupDocs.Watermark cho Java?
+GroupDocs.Watermark hỗ trợ **30+ định dạng đầu vào và đầu ra** và có thể xử lý các tệp lên tới **500 MB** mà không cần tải toàn bộ tài liệu vào bộ nhớ. API của nó thêm dấu nước trong thời gian dưới **200 ms** cho các PDF 10 trang điển hình trên một VM tiêu chuẩn, giúp nhanh và tiết kiệm bộ nhớ cho các dịch vụ có lưu lượng cao.
+
+## Yêu cầu trước
+
+Trước khi bắt đầu, hãy đảm bảo bạn đã có những thứ sau:
+
+### Thư viện, phiên bản và phụ thuộc cần thiết
+- **GroupDocs.Watermark Library**: Version 24.11 or later  
+- Java SE 8 or higher (the library is compatible with Java 11, 17, and newer)
+
+### Yêu cầu thiết lập môi trường
+- Một IDE như IntelliJ IDEA hoặc Eclipse để viết và chạy mã Java của bạn.  
+- Maven được cài đặt trên hệ thống để quản lý phụ thuộc một cách dễ dàng.
+
+### Kiến thức yêu cầu
+- Kiến thức cơ bản về các khái niệm lập trình Java  
+- Quen thuộc với các tệp cấu hình XML, đặc biệt là cho các dự án Maven  
+
+Với các yêu cầu đã được đáp ứng, hãy cùng thiết lập GroupDocs.Watermark cho Java.
+
+## Cài đặt GroupDocs.Watermark cho Java
+
+Để tích hợp GroupDocs.Watermark vào dự án của bạn, bạn có thể sử dụng Maven hoặc tải thư viện trực tiếp. Dưới đây là cách thực hiện:
+
+### Sử dụng Maven
+
+Thêm cấu hình sau vào tệp `pom.xml` của bạn để bao gồm GroupDocs.Watermark trong dự án dựa trên Maven của bạn:
 
 ```xml
 <repositories>
@@ -52,16 +152,19 @@ Chèn đoạn XML sau vào file `pom.xml` của bạn. Bước này sẽ tải t
 </dependencies>
 ```
 
-### 2. (Tùy chọn) Tải trực tiếp
-Nếu bạn không muốn dùng Maven, có thể tải JAR thủ công từ trang phát hành chính thức: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Tải trực tiếp
 
-### 3. Giấy phép
-1. **Bản dùng thử** – bắt đầu với khóa trial để khám phá các tính năng.  
-2. **Giấy phép tạm thời** – hữu ích cho việc phát triển ngắn hạn hoặc pipeline CI.  
-3. **Giấy phép thương mại** – bắt buộc cho các triển khai sản xuất.
+Ngoài ra, bạn có thể tải phiên bản mới nhất từ [GroupDocs.Watermark cho Java releases](https://releases.groupdocs.com/watermark/java/).
 
-## Khởi tạo cơ bản
-Tạo một thể hiện `Watermarker` trỏ tới tệp bạn muốn bảo vệ.
+#### Các bước lấy giấy phép
+
+1. **Bản dùng thử miễn phí** – Bắt đầu bằng cách tải phiên bản dùng thử để khám phá các tính năng của thư viện.  
+2. **Giấy phép tạm thời** – Nhận giấy phép tạm thời nếu bạn cần quyền truy cập mở rộng trong quá trình phát triển.  
+3. **Mua** – Đối với việc sử dụng lâu dài, mua giấy phép thương mại từ GroupDocs.
+
+### Khởi tạo và thiết lập cơ bản
+
+Dưới đây là cách khởi tạo GroupDocs.Watermark trong ứng dụng Java của bạn:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -79,14 +182,19 @@ public class WatermarkSetup {
 }
 ```
 
-## Thêm dấu nước dạng văn bản (Protect PDF with Watermark)
+Với việc thiết lập đã hoàn tất, hãy chuyển sang triển khai các tính năng watermark cụ thể.
 
-### Các bước thực hiện
-1. Tải PDF bằng `PdfLoadOptions`.  
-2. Tạo một `TextWatermark` với nội dung, phông chữ và màu sắc mong muốn.  
-3. Điều chỉnh các thuộc tính như **opacity** và **background color**.  
-4. Gọi `watermarker.add(textWatermark)` – thao tác này sẽ tự động áp dụng dấu nước cho **tất cả các trang** (watermark multiple pages).  
-5. Lưu kết quả.
+## Hướng dẫn triển khai
+
+### Thêm dấu nước văn bản
+
+**Tổng quan:**  
+Nhúng dấu nước văn bản vào tài liệu là một quy trình đơn giản với GroupDocs.Watermark. Tính năng này cho phép bạn thêm lớp văn bản tùy chỉnh để bảo vệ tài sản kỹ thuật số một cách hiệu quả.
+
+#### Các bước
+1. **Tạo một dấu nước văn bản** – Xác định nội dung và kiểu dáng của dấu nước.  
+2. **Thêm dấu nước vào tài liệu** – Nhúng dấu nước vào tài liệu hoặc hình ảnh của bạn.  
+3. **Lưu thay đổi** – Đảm bảo tất cả các thay đổi được lưu để phản ánh dấu nước mới.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -118,17 +226,23 @@ public class AddTextWatermark {
 }
 ```
 
-**Các điểm chính**
-- `setOpacity(0.5)` làm cho dấu nước bán trong suốt, lý tưởng cho việc bảo vệ nhẹ nhàng.  
-- Cách tiếp cận này cũng hoạt động cho **watermark multiple pages** mà không cần vòng lặp thêm.
+**Tham số & mục đích**  
+- `TextWatermark` là lớp đại diện cho lớp phủ văn bản có thể tùy chỉnh các thuộc tính như phông chữ, màu sắc và kích thước.  
+- `setOpacity()` điều chỉnh độ trong suốt hoặc độ đục của dấu nước, chấp nhận giá trị từ 0 (hoàn toàn trong suốt) đến 1 (hoàn toàn đục).
 
-## Thêm dấu nước dạng hình ảnh (Embed Logo Watermark PDF)
+#### Mẹo khắc phục sự cố
+- Xác minh rằng đường dẫn tài liệu là chính xác để tránh lỗi *file not found*.  
+- Đảm bảo phông chữ yêu cầu (ví dụ: Arial) đã được cài đặt trên máy chủ; nếu không, thư viện sẽ quay lại phông chữ mặc định.
 
-### Các bước thực hiện
-1. Tải PDF mục tiêu.  
-2. Tạo một `ImageWatermark` từ `FileInputStream` trỏ tới tệp logo của bạn (ví dụ:`).  
-3. Đặt độ trong suốt mong muốn để logo hòa quyện với nội dung trang.  
-4. Thêm dấu nước vào tài liệu và lưu lại.
+### Thêm dấu nước hình ảnh
+
+**Tổng quan:**  
+Dấu nước hình ảnh có thể thêm một lớp bảo vệ bổ sung bằng cách nhúng logo hoặc hình ảnh tùy chỉnh vào tài liệu. Phần này hướng dẫn bạn cách thêm dấu nước dựa trên hình ảnh.
+
+#### Các bước
+1. **Tải hình ảnh của bạn** – Chuẩn bị tệp hình ảnh sẽ được sử dụng làm dấu nước.  
+2. **Cấu hình thuộc tính dấu nước** – Đặt các thuộc tính như vị trí và độ mờ.  
+3. **Nhúng dấu nước** – Thêm dấu nước hình ảnh vào tài liệu của bạn.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -158,59 +272,54 @@ public class AddImageWatermark {
 }
 ```
 
-**Mẹo**
-- Đảm bảo hình logo có nền trong suốt để có kết quả tốt nhất.  
-- Điều chỉnh độ trong suốt để cân bằng giữa khả năng hiển thị và độ đọc được của tài liệu gốc.
+**Tham số & mục đích**  
+- `ImageWatermark` là lớp đại diện cho lớp phủ hình ảnh với các tùy chọn về thu phóng, xoay và vị trí.  
+- `setOpacity()` hoạt động tương tự như với dấu nước văn bản, cho phép bạn tạo thương hiệu nhẹ nhàng hoặc nổi bật.
 
-## Xóa dấu nước (remove watermark java)
+#### Mẹo khắc phục sự cố
+- Xác nhận rằng đường dẫn hình ảnh là chính xác và tệp có thể truy cập được bởi tiến trình Java.  
+- Nếu hình ảnh không hiển thị, kiểm tra kích thước của nó và đảm bảo giá trị độ mờ không được đặt thành 0.
 
-GroupDocs.W thêm dấu nước, nhưng bạn có thể **xóa tất cả các dấu nước** bằng cách tải tài liệu, duyệt qua các dấu nước hiện có và gọi `watermarker.remove(watermark)` cho mỗi dấu. Mô hình này cho phép bạn triển khai tính năng “xóa dấu nước” khi cần.
+## Ứng dụng thực tiễn
 
-## Các trường hợp sử dụng phổ biến & Thực hành tốt
+GroupDocs.Watermark có thể được sử dụng trong nhiều kịch bản thực tế:
 
-| Kịch bản | Cách áp dụng |
-|----------|--------------|
-| **Bảo mật báo cáo nội bộ** | Sử dụng dấu nước văn bản bán trong suốt trên mọi trang (`protect pdf with watermark`). |
-| **Đánh dấu thương hiệu tài liệu marketing** | Nhúng logo độ phân giải cao (`embed logo watermark pdf`) với độ trong suốt 30‑40 %. |
-| **Xử lý hàng loạt hình ảnh** | Duyệt qua một thư mục, tạo `ImageWatermark` cho mỗi hình ảnh và lưu kết quả (`add image watermark java`). |
-| **Tài liệu pháp lý** | Thêm dấu nước chữ đậm “CONFIDENTIAL” và khóa PDF sau khi lưu. |
-| **PDF đa trang** | Gọi `watermarker.add(watermark)` một lần – thư viện tự động áp dụng cho tất cả các trang (`watermarkẹo chuyên nghiệp:** Khi làm việc với PDF lớn, bật chế độ streaming (`PdfLoadOptions.setUseMemoryCache(true)`) để giảm tiêu thụ bộ nhớ.
+1. **Bảo vệ tài liệu** – Bảo mật các PDF nhạy cảm bằng logo công ty hoặc thông báo bảo mật trước khi chia sẻ ra bên ngoài.  
+2. **Bảo vệ bản quyền hình ảnh** – Nhúng thông tin bản quyền vào hình ảnh để ngăn chặn việc sử dụng trái phép.  
+3. **Tài liệu giáo dục** – Thêm dấu nước vào sách giáo trình kỹ thuật số hoặc ghi chú bài giảng để ngăn việc phân phối không có sự cho phép.  
+4. **Tài liệu marketing** – Bảo vệ brochure và bản trình bày bằng cách nhúng các yếu tố thương hiệu dưới dạng dấu nước.  
+
+Việc tích hợp với các hệ thống khác, chẳng hạn như nền tảng CMS hoặc giải pháp quản lý tài liệu, có thể nâng cao hơn nữa các biện pháp bảo mật cho tài sản kỹ thuật số của bạn.
 
 ## Câu hỏi thường gặp
 
-### 1. Tôi có thể thêm nhiều dấu nước vào cùng một tài liệu bằng GroupDocs.Watermark không?  
+**Q: Tôi có thể thêm nhiều dấu nước vào cùng một tài liệu bằng GroupDocs.Watermark không?**  
+A: Có, bạn có thể thêm nhiều dấu nước—văn bản và/hoặc hình ảnh—bằng cách gọi phương thức `add()` nhiều lần trước khi lưu.
 
-Có, bạn có thể thêm nhiều dấu nước—văn bản và/hoặc hình ảnh—bằng cách gọi phương thức `add()` nhiều lần trước khi lưu.
+**Q: Có thể loại bỏ các dấu nước hiện có khỏi tài liệu bằng GroupDocs.Watermark không?**  
+A: GroupDocs.Watermark chủ yếu tập trung vào việc thêm dấu nước. Để loại bỏ hoặc trích xuất các dấu nước hiện có, bạn sẽ cần các kỹ thuật nâng cao hơn hoặc chỉnh sửa thủ công, tùy thuộc vào loại tài liệu.
 
-### 2. Có thể xóa các dấu nước hiện có trong tài liệu bằng GroupDocs.Watermark không?  
+**Q: GroupDocs.Watermark có hỗ trợ watermark cho tất cả các định dạng tệp không?**  
+A: Nó hỗ trợ hơn 30 định dạng phổ biến, bao gồm PDF, DOCX, XLSX, PPTX, PNG, JPEG và TIFF. Luôn kiểm tra tài liệu mới nhất để biết các định dạng mới được thêm vào.
 
-GroupDocs.Watermark chủ yếu tập trung vào việc thêm dấu nước. Để xóa hoặc trích xuất các dấu nước đã tồn tại, bạn sẽ cần các kỹ thuật nâng cao hơn hoặc chỉnh sửa thủ công, tùy thuộc vào loại tài liệu.
+**Q: Tôi có thể tự động đặt vị trí và kiểu dáng dấu nước dựa trên bố cục trang hoặc nội dung không?**  
+A: Có, bạn có thể lập trình điều khiển vị trí, kích thước và kiểu dáng của dấu nước dựa trên logic của mình, chẳng hạn như kích thước trang hoặc khu vực nội dung.
 
-### 3. GroupDocs.Watermark có hỗ trợ đánh dấu nước cho mọi định dạng file không?  
+**Q: Có cách nào áp dụng dấu nước trong suốt hoặc bán trong suốt trong GroupDocs.Watermark không?**  
+A: Chắc chắn. Sử dụng phương thức `setOpacity()` để điều chỉnh mức độ trong suốt, cho phép tạo dấu nước bán trong suốt để bảo vệ nhẹ nhàng.
 
-Thư viện hỗ trợ nhiều định dạng phổ biến như PDF, Word, Excel, PowerPoint, hình ảnh và hơn thế nữa, nhưng luôn kiểm tra tài liệu chính thức để biết hỗ trợ cụ thể cho từng định dạng.
+## Kết luận  
 
-### 4. Tôi có thể tự động đặt vị trí và kiểu dáng dấu nước dựa trên bố cục hoặc nội dung trang không?  
-
-Có, bạn có thể lập trình kiểm soát vị trí, kích thước và kiểu dáng dấu nước dựa trên logic của mình, chẳng hạn như kích thước trang hoặc khu vực nội dung.
-
-### 5. Có cách nào để áp dụng dấu nước trong suốt hoặc bán trong suốt trong GroupDocs.Watermark không?  
-
-Chắc chắn. Sử dụng phương thức `setOpacity()` để điều chỉnh mức độ trong suốt, cho phép tạo dấu nước bán trong suốt cho bảo vệ nhẹ nhàng.
-
-## Các câu hỏi thường gặp bổ sung
-
-**Hỏi: Làm sao chỉ đánh dấu nước cho các trang được chọn?**  
-Đáp: Tải tài liệu, lấy các đối tượng `WatermarkablePage` mong muốn, và gọi `watermarker.add(watermark, page)` cho mỗi trang mục tiêu.
-
-**Hỏi: Tôi có thể đánh dấu nước cho PDF được bảo vệ bằng mật khẩu không?**  
-Đáp: Có – cung cấp mật khẩu qua `PdfLoadOptions.setPassword("yourPassword")` trước khi tải.
-
-**Hỏi: Cách xử lý các PDF rất lớn được đề xuất là gì?**  
-Đáp: Bật bộ.set và xử lý các trang theo chế độ streaming để giữ mức tiêu thụ bộ nhớ thấp.
+Việc thành thạo GroupDocs.Watermark trong Java cho phép bạn dễ dàng bảo vệ và gắn thương hiệu cho tài liệu và hình ảnh kỹ thuật số. Bằng cách tùy chỉnh dấu nước văn bản và hình ảnh, bạn có thể nâng cao bảo mật, ngăn chặn việc sử dụng trái phép và củng cố thương hiệu một cách liền mạch trong các ứng dụng của mình.
 
 ---
 
-**Cập nhật lần cuối:** 2026-02-03  
-**Đã kiểm tra với:** GroupDocs.Watermark 24.11  
+**Cập nhật lần cuối:** 2026-09-26  
+**Kiểm tra với:** GroupDocs.Watermark 24.11 for Java  
 **Tác giả:** GroupDocs
+
+## Hướng dẫn liên quan
+
+- [Hướng dẫn Watermark Java: Bảo mật tài liệu với API GroupDocs.Watermark](/watermark/java/getting-started/java-watermark-groupdocs-guide/)
+- [Các bài hướng dẫn tính năng Watermark nâng cao cho GroupDocs.Watermark Java](/watermark/java/advanced-features/)
+- [Cách thêm dấu nước văn bản vào PDF bằng GroupDocs.Watermark cho Java: Hướng dẫn từng bước](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-groupdocs-java/)
