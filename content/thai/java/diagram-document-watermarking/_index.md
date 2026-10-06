@@ -1,172 +1,125 @@
 ---
-date: 2026-10-06
-description: เรียนรู้วิธีเพิ่มลายน้ำให้กับแผนภาพ Visio ด้วย GroupDocs.Watermark สำหรับ
-  Java คู่มือนี้แสดงการใช้ลายน้ำแบบข้อความ, รูปภาพ, และรูปทรง, โดยคงโครงสร้างของแผนภาพไว้ครบถ้วน
-keywords:
-- add watermark to visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking
-lastmod: 2026-10-06
-og_description: เรียนรู้วิธีเพิ่มลายน้ำให้กับแผนภาพ Visio ด้วย GroupDocs.Watermark
-  สำหรับ Java คู่มือนี้แสดงการใช้ลายน้ำแบบข้อความ, รูปภาพ, และรูปทรง, โดยคงโครงสร้างของแผนภาพไว้ครบถ้วน
-og_image_alt: 'Developer guide: add watermark to Visio diagram using GroupDocs.Watermark
-  Java'
-og_title: เพิ่มลายน้ำให้กับแผนภาพ Visio ด้วย GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to Visio diagram with GroupDocs.Watermark
-    for Java. This guide shows text, image, and shape watermarks, keeping diagram
-    layout intact.
-  headline: Add watermark to Visio diagram using GroupDocs.Watermark Java
-  type: TechArticle
-- questions:
-  - answer: Yes, you can chain multiple `addTextWatermark` and `addImageWatermark`
-      calls on the same `Watermark` instance.
-    question: Can I add both text and image watermarks to the same diagram?
-  - answer: 'Absolutely. Provide the password when constructing the `Watermark` object:
-      `new Watermark("file.vsdx", "password")`.'
-    question: Does the library support password‑protected Visio files?
-  - answer: Use the `removeWatermarks` method with appropriate selectors to delete
-      specific watermarks without affecting other content.
-    question: Is it possible to remove an existing watermark?
-  - answer: Iterate over a directory with a simple `for` loop, applying the same watermark
-      options to each file and saving with a unique name.
-    question: How do I automate watermarking for a batch of Visio files?
-  - answer: The library runs on Windows, Linux, and macOS, and is compatible with
-      any Java‑compatible environment, including Docker containers.
-    question: What platforms are supported?
-  type: FAQPage
-tags:
-- watermark Visio
-- GroupDocs.Watermark
-- Java diagram processing
-- add watermark to Visio diagram
-title: เพิ่มลายน้ำให้กับแผนภาพ Visio ด้วย GroupDocs.Watermark Java
+date: 2026-02-16
+description: บทแนะนำแบบขั้นตอนเพื่อเพิ่มลายน้ำในแผนภาพ Visio โดยใช้ GroupDocs.Watermark
+  สำหรับ Java ครอบคลุมลายน้ำแบบข้อความ, รูปภาพ, ส่วนหัว/ส่วนท้าย, และลายน้ำรูปทรง
+title: เพิ่มลายน้ำ Visio – บทเรียนการใส่ลายน้ำแผนภาพสำหรับ GroupDocs.Watermark Java
 type: docs
 url: /th/java/diagram-document-watermarking/
 weight: 10
 ---
 
-# เพิ่มลายน้ำลงในแผนภาพ Visio ด้วย GroupDocs.Watermark Java
+# เพิ่มลายน้ำ Visio – บทแนะนำการใส่ลายน้ำในแผนภาพสำหรับ GroupDocs.Watermark Java
 
-ในบทแนะนำที่ครอบคลุมนี้ คุณจะได้เรียนรู้วิธี **เพิ่มลายน้ำลงในแผนภาพ Visio** โดยใช้ไลบรารี GroupDocs.Watermark สำหรับ Java ไม่ว่าคุณจะต้องการฝังแบรนด์ ปกป้องทรัพย์สินทางปัญญา หรือปฏิบัติตามนโยบายขององค์กร คู่มือนี้จะพาคุณผ่านกระบวนการทั้งหมด — ตั้งแต่การตั้งค่า SDK ไปจนถึงการใส่ลายน้ำแบบข้อความ ภาพ และรูปร่าง พร้อมคงรูปแบบแผนภาพเดิมไว้
+ในคู่มือนี้ คุณจะได้เรียนรู้วิธี **เพิ่มลายน้ำ Visio** ในแผนภาพโดยใช้ GroupDocs.Watermark สำหรับ Java เพื่อให้ทรัพย์สินภาพของคุณได้รับการปกป้อง มีแบรนด์ และสอดคล้องกับนโยบายขององค์กร ไม่ว่าคุณจะต้องการใส่ข้อความทับแบบละเอียด เปลี่ยนรูปภาพอัตโนมัติ หรือจัดการส่วนหัวและส่วนท้าย บทแนะนำเหล่านี้จะพาคุณผ่านทุกขั้นตอนด้วยโค้ด Java ที่พร้อมใช้งานในสภาพแวดล้อมการผลิต
 
-## คำตอบด่วน
-- **ไลบรารีใดที่เพิ่มลายน้ำลงในแผนภาพ Visio?** GroupDocs.Watermark for Java.  
-- **ฉันสามารถใส่ลายน้ำทั้งหน้าและรูปร่างเดี่ยวได้หรือไม่?** ใช่ คุณสามารถกำหนดเป้าหมายทั้งหน้า ประเภทหน้าที่เฉพาะ หรือรูปร่างเดี่ยวได้.  
-- **ฉันต้องการใบอนุญาตสำหรับการใช้งานในขั้นตอนการผลิตหรือไม่?** จำเป็นต้องมีใบอนุญาตเชิงพาณิชย์สำหรับการใช้งานในขั้นตอนการผลิต; มีใบอนุญาตชั่วคราวสำหรับการทดสอบ.  
-- **รูปแบบไฟล์ที่รองรับมีอะไรบ้าง?** รองรับรูปแบบแผนภาพกว่า 30 แบบ รวมถึง VSDX, VDX, VSSX, และ VSTX.  
-- **API ปลอดภัยต่อการทำงานหลายเธรดหรือไม่?** ใช่ ไลบรารีออกแบบมาเพื่อการใช้งานพร้อมกันในแอปพลิเคชันแบบหลายเธรด.
+## คำตอบอย่างรวดเร็ว
+- **“add watermark Visio” หมายถึงอะไร?** หมายถึงการฝังลายน้ำแบบข้อความหรือรูปภาพลงในไฟล์ Microsoft Visio (.vsdx) เพื่อปกป้องทรัพย์สินทางปัญญา  
+- **ไลบรารีใดจัดการเรื่องนี้?** GroupDocs.Watermark สำหรับ Java มี API แบบ fluent สำหรับการใส่ลายน้ำ Visio  
+- **ต้องใช้ไลเซนส์หรือไม่?** ไลเซนส์ชั่วคราวใช้ได้สำหรับการทดสอบ; จำเป็นต้องมีไลเซนส์เต็มสำหรับการใช้งานจริง  
+- **สามารถกำหนดเป้าหมายเป็นหน้า หรือรูปทรงเฉพาะได้หรือไม่?** ได้ — ลายน้ำสามารถนำไปใช้กับหน้าที่เลือก, ประเภทหน้า หรือรูปทรงแต่ละอันได้  
+- **API รองรับ Java 17 หรือไม่?** แน่นอน; ไลบรารีรองรับ Java 8 ถึง 17
 
-## การเพิ่มลายน้ำลงในแผนภาพ Visio คืออะไร?
-*การเพิ่มลายน้ำลงในแผนภาพ Visio* หมายถึงกระบวนการฝังเครื่องหมายที่มองเห็นหรือมองไม่เห็นลงในไฟล์ Microsoft Visio อย่างอัตโนมัติ เครื่องหมายเหล่านี้อาจประกอบด้วยข้อความ ภาพ หรือรูปร่างที่ระบุตัวเจ้าของเอกสาร ส่งข้อความข้อจำกัดการใช้งาน หรือให้แบรนด์ ลายน้ำจะถูกเก็บไว้ในโครงสร้างของไฟล์โดยไม่ทำให้รูปแบบแผนภาพเดิมเปลี่ยนแปลง
+## “add watermark Visio” คืออะไร?
+การเพิ่มลายน้ำลงในแผนภาพ Visio หมายถึงการแทรกเลเยอร์ข้อความหรือรูปภาพที่กึ่งโปร่งใสซึ่งปรากฏอยู่เหนือ (หรือด้านหลัง) ส่วนประกอบการวาดที่มีอยู่ เทคนิคนี้ช่วยให้คุณยืนยันความเป็นเจ้าของ, แจ้งความลับ, หรือสร้างแบรนด์โดยไม่ต้องแก้ไขการออกแบบเดิม
 
 ## ทำไมต้องใช้ GroupDocs.Watermark สำหรับ Java?
-GroupDocs.Watermark รองรับ **30+ diagram formats** และสามารถประมวลผลไฟล์ขนาดสูงสุด **500 MB** โดยไม่ต้องโหลดเอกสารทั้งหมดเข้าสู่หน่วยความจำ ทำให้ **ลดการใช้ CPU ได้ถึง 40 %** เมื่อเทียบกับวิธีการแบบใช้ภาพด้วยตนเอง ไลบรารียังมี OCR ในตัวสำหรับการสกัดข้อความ ทำให้ลายน้ำถูกวางอย่างแม่นยำแม้บนรูปร่างที่ซับซ้อน
+- **รองรับ Visio โดยเนทีฟ** – จัดการไฟล์ .vsdx, .vsd และรูปแบบ Visio อื่น ๆ ได้โดยตรง  
+- **การควบคุมระดับละเอียด** – กำหนดเป้าหมายเป็นหน้า, ประเภทหน้า, รูปทรง, ส่วนหัวและส่วนท้ายแยกกันได้  
+- **ประสิทธิภาพสูง** – ประมวลผลแผนภาพขนาดใหญ่ได้อย่างรวดเร็วด้วยการใช้หน่วยความจำน้อย  
+- **ข้ามแพลตฟอร์ม** – ทำงานบนสภาพแวดล้อมที่รองรับ JVM ใด ๆ ไม่ว่าจะเป็นแอปพลิเคชันเดสก์ท็อปหรือบริการคลาวด์
 
 ## ข้อกำหนดเบื้องต้น
-- Java 17 หรือใหม่กว่า ติดตั้งบนเครื่องพัฒนาของคุณ.  
-- Maven 3.6+ (หรือ Gradle) สำหรับการจัดการ dependencies.  
-- ใบอนุญาต GroupDocs.Watermark สำหรับ Java ที่ถูกต้อง (ใบอนุญาตชั่วคราวใช้สำหรับการประเมินผล).  
-- เข้าถึงไฟล์ Visio (.vsdx) ที่คุณต้องการปกป้อง.
+- Java 8 หรือสูงกว่า (แนะนำ Java 17)  
+- ไฟล์ JAR ของ GroupDocs.Watermark สำหรับ Java (ดาวน์โหลดจากเว็บไซต์ทางการ)  
+- คีย์ไลเซนส์ GroupDocs ชั่วคราวหรือเต็มที่ถูกต้อง  
 
-## วิธีเพิ่มลายน้ำลงในแผนภาพ Visio ทีละขั้นตอน
+## ภาพรวมขั้นตอนแบบเป็นขั้นตอน
 
-โหลดไฟล์ Visio ตั้งค่าตัวเลือกลายน้ำ และบันทึกผลลัพธ์ ส่วนต่อไปนี้จะอธิบายแต่ละขั้นตอนอย่างละเอียด.
+### ขั้นตอนที่ 1: ตั้งค่าโปรเจกต์
+เพิ่มไฟล์ JAR ของ GroupDocs.Watermark ลงใน classpath ของโปรเจกต์ (Maven, Gradle หรือการเพิ่มไฟล์ *.jar* ด้วยตนเอง) จากนั้นเริ่มต้น `Watermarker` ด้วยไฟล์ Visio ของคุณและไลเซนส์
 
-### วิธีโหลดแผนภาพ Visio ใน Java?
-สร้างอ็อบเจกต์ `Watermark` และชี้ไปยังไฟล์ต้นทาง.  
-```java
-Watermark watermark = new Watermark("input.vsdx");
-```  
-คลาส `Watermark` เป็นจุดเริ่มต้นสำหรับการดำเนินการทั้งหมดบนไฟล์แผนภาพ.
+### ขั้นตอนที่ 2: เลือกประเภทลายน้ำ
+ตัดสินใจว่าคุณต้องการ **ลายน้ำข้อความ** (เช่น “Confidential”) หรือ **ลายน้ำรูปภาพ** (เช่นโลโก้บริษัท) API มีอ็อบเจกต์ `TextWatermark` และ `ImageWatermark` ที่คุณสามารถกำหนดค่าได้ (ความทึบ, การหมุน, สี ฯลฯ)
 
-### วิธีกำหนดค่าลายน้ำแบบข้อความ?
-กำหนดข้อความ ฟอนต์ สี และความทึบแสง.  
-```java
-TextWatermarkOptions textOptions = new TextWatermarkOptions();
-textOptions.setText("Confidential");
-textOptions.setFont(new Font("Arial", FontStyle.BOLD, 36));
-textOptions.setColor(Color.RED);
-textOptions.setOpacity(0.5);
-```  
-ตัวเลือกเหล่านี้ทำให้ลายน้ำอ่านได้ชัดเจนแต่ยังคงเป็นกึ่ง‑โปร่งใส.
+### ขั้นตอนที่ 3: กำหนดเป้าหมายเป็นหน้า หรือรูปทรงเฉพาะ
+ใช้ `DiagramPageSelector` หรือ `DiagramShapeSelector` เพื่อจำกัดลายน้ำให้กับหน้า, ประเภทหน้า หรือรูปทรงที่ต้องการ นี่เป็นประโยชน์เมื่อคุณต้องการปกป้องเฉพาะหน้าปกหรือองค์ประกอบแผนภาพบางส่วนเท่านั้น
 
-### วิธีนำลายน้ำไปใช้กับหน้าที่ระบุ?
-เลือกหน้าตามดัชนีหรือประเภทหน้า (เช่น หน้าพื้นหลัง).  
-```java
-watermark.addTextWatermark(textOptions, new PageSelector().includePages(0, 2));
-```  
-คลาส `PageSelector` ช่วยให้คุณปรับแต่งตำแหน่งที่ลายน้ำปรากฏได้อย่างละเอียด.
+### ขั้นตอนที่ 4: ใส่ลายน้ำ
+เรียก `watermarker.add(watermark, selector)` เพื่อฝังลายน้ำ การทำงานนี้จะไม่เปลี่ยนแปลงโครงสร้างต้นฉบับ; ลายน้ำจะถูกแสดงเป็นชั้นทับ
 
-### วิธีใส่ลายน้ำลงในรูปร่างเดี่ยว?
-ดึงรูปร่างจากหน้าและใส่ภาพหรือข้อความทับ.  
-```java
-Shape shape = watermark.getPage(0).getShapeById("ShapeId123");
-shape.addTextWatermark("Draft", textOptions);
-```  
-การกำหนดเป้าหมายที่รูปร่างเป็นประโยชน์สำหรับการติดป้ายกำกับส่วนประกอบเฉพาะในแผนภาพ.
+### ขั้นตอนที่ 5: บันทึกแผนภาพที่อัปเดต
+บันทึกไฟล์ Visio ที่แก้ไขแล้วไปยังตำแหน่งใหม่หรือเขียนทับไฟล์เดิมตามความต้องการของกระบวนการทำงานของคุณ
 
-### วิธีบันทึกแผนภาพที่มีลายน้ำ?
-เลือกรูปแบบเอาต์พุตและเขียนไฟล์.  
-```java
-watermark.save("output.vsdx", SaveFormat.VSDX);
-```  
-เมธอด `save` จะเขียนแผนภาพที่แก้ไขแล้วโดยคงเมตาดาต้าต้นฉบับทั้งหมดไว้.
+> **เคล็ดลับ:** ควรสำรองไฟล์ Visio ดั้งเดิมไว้เสมอก่อนทำการใส่ลายน้ำ โดยเฉพาะเมื่อทำการประมวลผลแบบชุดอัตโนมัติ
 
-## ปัญหาทั่วไปและวิธีแก้
-- **ลายน้ำไม่ปรากฏบนบางหน้า** – ตรวจสอบว่า page selector รวมหน้าที่ต้องการ; หน้าพื้นหลังต้องใช้แฟล็ก `includeBackgroundPages(true)`.  
-- **ประสิทธิภาพช้าลงบนไฟล์ขนาดใหญ่** – เปิดโหมดสตรีมมิ่งด้วย `watermark.enableStreaming(true)` เพื่อลดการใช้หน่วยความจำ.  
-- **การแสดงฟอนต์ไม่ถูกต้อง** – ตรวจสอบว่าระบบเป้าหมายมีฟอนต์ติดตั้งหรือฝังฟอนต์ด้วย `textOptions.setEmbedFont(true)`.
+## กรณีการใช้งานทั่วไป
+- **ปกป้องแบรนด์:** ฝังโลโก้บริษัทบนทุกแผนภาพ Visio ที่ส่งออก  
+- **ข้อความความลับ:** เพิ่มข้อความ “Draft – Do Not Distribute” บนแผนภาพภายใน  
+- **การควบคุมเวอร์ชัน:** ตราประทับแผนภาพด้วยหมายเลขเวอร์ชันหรือวันที่โดยอัตโนมัติ  
+- **การปฏิบัติตามกฎระเบียบ:** แทรกส่วนท้ายกฎหมายที่บังคับใช้บนทุกหน้า
 
-## คำถามที่พบบ่อย
+## การแก้ไขปัญหาและข้อควรระวัง
+- **ฟอนต์หาย:** หากไฟล์ Visio ใช้ฟอนต์ที่กำหนดเอง ให้ตรวจสอบว่าฟอนต์นั้นติดตั้งบนเซิร์ฟเวอร์แล้ว; มิฉะนั้นลายน้ำอาจแสดงผลไม่ถูกต้อง  
+- **ไฟล์ขนาดใหญ่:** สำหรับแผนภาพที่ใหญ่กว่า 50 MB ควรใช้ API แบบสตรีมมิ่งเพื่อลดการใช้หน่วยความจำ  
+- **ปัญหาความทึบ:** ความทึบที่ต่ำเกินไปอาจทำให้ลายน้ำมองไม่เห็นบนพื้นหลังที่ซับซ้อน; ควรทดสอบในช่วง 30‑40 %  
 
-**Q: สามารถเพิ่มลายน้ำแบบข้อความและภาพพร้อมกันในแผนภาพเดียวได้หรือไม่?**  
-A: ใช่ คุณสามารถเรียงต่อหลายคำสั่ง `addTextWatermark` และ `addImageWatermark` บน `Watermark` อินสแตนซ์เดียวกันได้.
+## บทแนะนำที่พร้อมใช้งาน
 
-**Q: ไลบรารีรองรับไฟล์ Visio ที่มีการป้องกันด้วยรหัสผ่านหรือไม่?**  
-A: แน่นอน ให้ใส่รหัสผ่านเมื่อสร้างอ็อบเจกต์ `Watermark`: `new Watermark("file.vsdx", "password")`.
+### [Add Text Watermarks to Diagrams Using GroupDocs.Watermark for Java&#58; A Comprehensive Guide](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
+เรียนรู้วิธีเพิ่มลายน้ำข้อความลงในแผนภาพด้วย GroupDocs.Watermark สำหรับ Java เพื่อปกป้องเนื้อหาภาพของคุณอย่างมีประสิทธิภาพและรักษาความสมบูรณ์ของเอกสาร
 
-**Q: สามารถลบลายน้ำที่มีอยู่ได้หรือไม่?**  
-A: ใช้เมธอด `removeWatermarks` พร้อมตัวเลือกที่เหมาะเพื่อทำการลบลายน้ำที่ระบุโดยไม่กระทบเนื้อหาอื่น.
+### [Edit Diagram Headers & Footers in Java Using GroupDocs.Watermark&#58; A Comprehensive Guide](./edit-diagram-headers-footers-groupdocs-watermark-java/)
+เรียนรู้การแก้ไขส่วนหัวและส่วนท้ายของแผนภาพด้วย GroupDocs.Watermark สำหรับ Java ตามขั้นตอนที่ชัดเจนเพื่อยกระดับเอกสารของคุณ
 
-**Q: ฉันจะทำการใส่ลายน้ำอัตโนมัติสำหรับชุดไฟล์ Visio อย่างไร?**  
-A: วนลูปผ่านไดเรกทอรีด้วย `for` loop ง่าย ๆ ใช้ตัวเลือกลายน้ำเดียวกันกับแต่ละไฟล์และบันทึกด้วยชื่อที่ไม่ซ้ำกัน.
+### [Extract Headers & Footers from Visio Diagrams Using GroupDocs.Watermark for Java](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
+เรียนรู้วิธีสกัดส่วนหัวและส่วนท้าย รวมถึงการตั้งค่าฟอนต์และข้อความจากแผนภาพ Microsoft Visio ด้วย GroupDocs.Watermark สำหรับ Java
 
-**Q: แพลตฟอร์มใดบ้างที่รองรับ?**  
-A: ไลบรารีทำงานบน Windows, Linux, และ macOS และเข้ากันได้กับสภาพแวดล้อมที่รองรับ Java ใด ๆ รวมถึงคอนเทนเนอร์ Docker.
+### [Extract Shape Information from Diagrams Using GroupDocs.Watermark in Java](./retrieve-shape-info-groupdocs-watermark-java/)
+เรียนรู้การใช้ GroupDocs.Watermark สำหรับ Java เพื่อดึงข้อมูลรูปทรงอย่างละเอียดจากไฟล์แผนภาพอย่างมีประสิทธิภาพ เพิ่มศักยภาพการประมวลผลแผนภาพของคุณด้วยคู่มือฉบับสมบูรณ์นี้
+
+### [Guide to Adding Watermarks to Diagrams Using GroupDocs.Watermark for Java](./add-watermarks-groupdocs-diagrams-java/)
+เรียนรู้วิธีปกป้องแผนภาพของคุณด้วยการเพิ่มลายน้ำข้อความและรูปภาพด้วย GroupDocs.Watermark สำหรับ Java คู่มือขั้นตอนต่อขั้นตอนสำหรับการรักษาสิทธิ์ทรัพย์สินทางปัญญา
+
+### [How to Add Text Watermarks to Diagrams Using GroupDocs.Watermark in Java](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
+เรียนรู้วิธีเพิ่มลายน้ำข้อความลงในแผนภาพด้วย GroupDocs.Watermark สำหรับ Java คู่มือนี้ครอบคลุมการตั้งค่า การใช้งาน และการประยุกต์ใช้ในสถานการณ์จริง
+
+### [Master Image Replacement in Diagrams with GroupDocs.Watermark for Java](./automate-image-replacement-groupdocs-watermark-java/)
+อัตโนมัติการอัปเดตรูปภาพในแผนภาพด้วย GroupDocs.Watermark สำหรับ Java เพื่อเพิ่มประสิทธิภาพและความแม่นยำ เรียนรู้วิธีทำให้กระบวนการทำงานของคุณเป็นระบบ
+
+### [Master Watermark Management in Diagrams using GroupDocs.Watermark for Java](./manage-watermarks-groupdocs-java-diagrams/)
+เรียนรู้วิธีจัดการลายน้ำในไฟล์แผนภาพเช่น .vsdx อย่างมีประสิทธิภาพด้วย GroupDocs.Watermark สำหรับ Java เพื่อเสริมความสมบูรณ์ของเอกสารและปกป้องทรัพย์สินทางปัญญา
+
+### [Remove Hyperlinks from Diagram Shapes using GroupDocs.Watermark Java for Enhanced Document Security](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
+เรียนรู้วิธีลบไฮเปอร์ลิงก์จากรูปทรงในแผนภาพด้วย GroupDocs.Watermark ใน Java เพื่อเพิ่มความปลอดภัยและความชัดเจนของเอกสาร
 
 ## แหล่งข้อมูลเพิ่มเติม
 
-ด้านล่างนี้คุณจะพบชุดเต็มของบทแนะนำการใส่ลายน้ำในแผนภาพที่ขยายความในแต่ละหัวข้อที่กล่าวถึงที่นี่.
+- [GroupDocs.Watermark for Java Documentation](https://docs.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java API Reference](https://reference.groupdocs.com/watermark/java/)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark Forum](https://forum.groupdocs.com/c/watermark)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
-### บทแนะนำที่มี
-- [เพิ่มลายน้ำข้อความในแผนภาพโดยใช้ GroupDocs.Watermark สำหรับ Java: คู่มือเชิงลึก](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [แก้ไขส่วนหัวและส่วนท้ายของแผนภาพใน Java ด้วย GroupDocs.Watermark: คู่มือเชิงลึก](./edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [สกัดส่วนหัวและส่วนท้ายจากแผนภาพ Visio ด้วย GroupDocs.Watermark สำหรับ Java](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
-- [สกัดข้อมูลรูปร่างจากแผนภาพโดยใช้ GroupDocs.Watermark ใน Java](./retrieve-shape-info-groupdocs-watermark-java/)
-- [คู่มือการเพิ่มลายน้ำในแผนภาพโดยใช้ GroupDocs.Watermark สำหรับ Java](./add-watermarks-groupdocs-diagrams-java/)
-- [วิธีเพิ่มลายน้ำข้อความในแผนภาพโดยใช้ GroupDocs.Watermark ใน Java](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [การแทนที่ภาพในแผนภาพด้วย GroupDocs.Watermark สำหรับ Java](./automate-image-replacement-groupdocs-watermark-java/)
-- [การจัดการลายน้ำในแผนภาพโดยใช้ GroupDocs.Watermark สำหรับ Java](./manage-watermarks-groupdocs-java-diagrams/)
-- [ลบไฮเปอร์ลิงก์จากรูปร่างแผนภาพโดยใช้ GroupDocs.Watermark Java เพื่อเพิ่มความปลอดภัยของเอกสาร](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
+## คำถามที่พบบ่อย
 
-### แหล่งข้อมูลเพิ่มเติม
-- [เอกสาร GroupDocs.Watermark สำหรับ Java](https://docs.groupdocs.com/watermark/java/)
-- [อ้างอิง API ของ GroupDocs.Watermark สำหรับ Java](https://reference.groupdocs.com/watermark/java/)
-- [ดาวน์โหลด GroupDocs.Watermark สำหรับ Java](https://releases.groupdocs.com/watermark/java/)
-- [ฟอรั่ม GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark)
-- [สนับสนุนฟรี](https://forum.groupdocs.com/)
-- [ใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
+**ถาม: ฉันสามารถใส่ลายน้ำข้อความและรูปภาพพร้อมกันบนหน้า Visio เดียวได้หรือไม่?**  
+ตอบ: ได้ คุณสามารถใส่ลายน้ำหลายรายการต่อเนื่องกัน; API จะเรนเดอร์ตามลำดับที่คุณเพิ่ม
+
+**ถาม: สามารถลบลายน้ำที่มีอยู่โดยโปรแกรมได้หรือไม่?**  
+ตอบ: คุณสามารถดึงลายน้ำที่มีอยู่ผ่าน `watermarker.getWatermarks()` แล้วลบด้วยเมธอด `remove`
+
+**ถาม: ไลบรารีรองรับไฟล์ Visio ที่มีการป้องกันด้วยรหัสผ่านหรือไม่?**  
+ตอบ: แน่นอน ส่งรหัสผ่านเมื่อโหลดเอกสารด้วย `Watermarker.load(filePath, password)`
+
+**ถาม: จะทำอย่างไรให้ลายน้ำอยู่ด้านหลังเนื้อหาแผนภาพ?**  
+ตอบ: ตั้งค่าคุณสมบัติ `zOrder` ของลายน้ำให้เป็นค่าต่ำกว่า หรือใช้เมธอด `addBackground` สำหรับลายน้ำพื้นหลัง
+
+**ถาม: ต้องใช้เวอร์ชัน GroupDocs.Watermark ใดสำหรับความเข้ากันได้กับ Java 17?**  
+ตอบ: เวอร์ชัน 23.10 หรือใหม่กว่า รองรับ Java 17 อย่างเต็มที่และสเปคไฟล์ Visio ล่าสุด
 
 ---
 
-**อัปเดตล่าสุด:** 2026-10-06  
-**ทดสอบด้วย:** GroupDocs.Watermark 23.10 for Java  
+**อัปเดตล่าสุด:** 2026-02-16  
+**ทดสอบด้วย:** GroupDocs.Watermark for Java 23.10  
 **ผู้เขียน:** GroupDocs
-
-## บทแนะนำที่เกี่ยวข้อง
-- [เพิ่มลายน้ำข้อความในแผนภาพโดยใช้ GroupDocs.Watermark สำหรับ Java: คู่มือเชิงลึก](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [วิธีเพิ่มลายน้ำภาพใน Java ด้วย GroupDocs.Watermark: คู่มือขั้นตอนต่อขั้นตอน](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [ใช้เอฟเฟกต์ภาพกับลายน้ำรูปร่างใน Java ด้วย GroupDocs.Watermark](/watermark/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/)

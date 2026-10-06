@@ -1,158 +1,89 @@
 ---
-date: 2026-10-06
-description: 了解如何使用 GroupDocs.Watermark for Java 为 Visio diagram 添加水印。本指南展示 text、image
-  和 shape 水印，保持 diagram 布局完整。
-keywords:
-- add watermark to visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking
-lastmod: 2026-10-06
-og_description: 了解如何使用 GroupDocs.Watermark for Java 为 Visio diagram 添加水印。本指南展示 text、image
-  和 shape 水印，保持 diagram 布局完整。
-og_image_alt: 'Developer guide: add watermark to Visio diagram using GroupDocs.Watermark
-  Java'
-og_title: 使用 GroupDocs.Watermark Java 为 Visio diagram 添加水印
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to Visio diagram with GroupDocs.Watermark
-    for Java. This guide shows text, image, and shape watermarks, keeping diagram
-    layout intact.
-  headline: Add watermark to Visio diagram using GroupDocs.Watermark Java
-  type: TechArticle
-- questions:
-  - answer: Yes, you can chain multiple `addTextWatermark` and `addImageWatermark`
-      calls on the same `Watermark` instance.
-    question: Can I add both text and image watermarks to the same diagram?
-  - answer: 'Absolutely. Provide the password when constructing the `Watermark` object:
-      `new Watermark("file.vsdx", "password")`.'
-    question: Does the library support password‑protected Visio files?
-  - answer: Use the `removeWatermarks` method with appropriate selectors to delete
-      specific watermarks without affecting other content.
-    question: Is it possible to remove an existing watermark?
-  - answer: Iterate over a directory with a simple `for` loop, applying the same watermark
-      options to each file and saving with a unique name.
-    question: How do I automate watermarking for a batch of Visio files?
-  - answer: The library runs on Windows, Linux, and macOS, and is compatible with
-      any Java‑compatible environment, including Docker containers.
-    question: What platforms are supported?
-  type: FAQPage
-tags:
-- watermark Visio
-- GroupDocs.Watermark
-- Java diagram processing
-- add watermark to Visio diagram
-title: 使用 GroupDocs.Watermark Java 为 Visio diagram 添加水印
+date: 2026-02-16
+description: 使用 GroupDocs.Watermark for Java 为 Visio 图表添加水印的分步教程，涵盖文本水印、图片水印、页眉/页脚水印和形状水印。
+title: 在 Visio 中添加水印 – GroupDocs.Watermark Java 图表水印教程
 type: docs
 url: /zh/java/diagram-document-watermarking/
 weight: 10
 ---
 
-# 在 Java 中使用 GroupDocs.Watermark 为 Visio 图表添加水印
+# 添加 Watermark Visio – Diagram Watermarking 教程（适用于 GroupDocs.Watermark Java）
 
-在本综合教程中，您将学习如何使用适用于 Java 的 GroupDocs.Watermark 库为 Visio 图表文件 **添加水印**。无论是嵌入品牌标识、保护知识产权，还是遵守公司政策，本指南都会引导您完成完整流程——从设置 SDK 到应用文本、图像和形状水印，同时保持原始图表布局。
+在本指南中，您将学习如何使用 GroupDocs.Watermark for Java **添加 watermark Visio** 图表，确保您的视觉资产受到保护、具备品牌标识，并符合公司政策。无论您需要放置低调的文字覆盖、自动替换图像，还是管理页眉和页脚，这些教程都将以清晰、可直接用于生产的 Java 代码逐步引导您完成每一步。
 
 ## 快速答案
-- **哪个库可以为 Visio 图表添加水印？** GroupDocs.Watermark for Java.  
-- **我可以同时为页面和单个形状添加水印吗？** 是的，您可以针对整页、特定页面类型或单个形状进行水印。  
-- **生产环境使用是否需要许可证？** 生产环境需要商业许可证；临时许可证可用于测试。  
-- **支持哪些文件格式？** 超过 30 种图表格式，包括 VSDX、VDX、VSSX 和 VSTX。  
-- **API 是否线程安全？** 是的，库已设计为在多线程应用中安全并发使用。
+- **“add watermark Visio” 是什么意思？** 它指的是将文本或图像水印嵌入 Microsoft Visio (.vsdx) 文件中，以保护知识产权。  
+- **哪个库负责此功能？** GroupDocs.Watermark for Java 提供了用于 Visio 水印的流畅 API。  
+- **我需要许可证吗？** 临时许可证可用于测试；生产使用需要正式许可证。  
+- **我可以针对特定页面或形状吗？** 可以——水印可以应用于选定的页面、页面类型或单个形状。  
+- **API 是否兼容 Java 17？** 当然；该库支持 Java 8 至 17。  
 
-## 什么是为 Visio 图表添加水印？
-*为 Visio 图表添加水印* 指的是以编程方式将可见或不可见的标记嵌入 Microsoft Visio 文件的过程。这些标记可以是文本、图像或形状，用于标识文档所有者、传达使用限制或提供品牌标识。水印存储在文件结构中，不会改变原始图表布局。
+## 什么是 “add watermark Visio”？
+在 Visio 图表中添加水印是指插入一个半透明的文字或图像层，该层显示在现有绘图元素的上方（或下方）。此技术帮助您声明所有权、传达保密信息或提供品牌标识，而无需更改原始设计。
 
 ## 为什么使用 GroupDocs.Watermark for Java？
-GroupDocs.Watermark 支持 **30+ 图表格式**，并且能够在不将整个文档加载到内存中的情况下处理高达 **500 MB** 的文件，与手动基于图像的方法相比，可实现 **最高降低 40 % 的 CPU 使用率**。该库还提供内置 OCR 用于文本提取，确保即使在复杂形状上也能准确放置水印。
+- **原生 Visio 支持** – 开箱即支持 .vsdx、.vsd 以及其他 Visio 格式。  
+- **细粒度控制** – 可单独针对页面、页面类型、形状、页眉和页脚进行操作。  
+- **性能优化** – 快速处理大型图表，内存占用低。  
+- **跨平台** – 可在任何兼容 JVM 的环境中运行，从桌面应用到云服务均可。  
 
 ## 前提条件
-- 在您的开发机器上安装 Java 17 或更高版本。  
-- 使用 Maven 3.6+（或 Gradle）进行依赖管理。  
-- 有效的 GroupDocs.Watermark for Java 许可证（临时许可证可用于评估）。  
-- 访问您想要保护的 Visio（.vsdx）文件。
+- Java 8 或更高（推荐使用 Java 17）。  
+- GroupDocs.Watermark for Java JAR（从官方网站下载）。  
+- 有效的 GroupDocs 临时或正式许可证密钥。  
 
-## 如何一步步为 Visio 图表添加水印
+## 步骤概览
 
-加载 Visio 文件，配置水印选项，并保存结果。以下各节将详细描述每一步。
+### 步骤 1：设置项目
+将 GroupDocs.Watermark JAR 添加到项目的 classpath 中（Maven、Gradle 或手动 *.jar 添加）。使用您的 Visio 文件和许可证初始化 `Watermarker`。
 
-### 如何在 Java 中加载 Visio 图表？
-创建一个 `Watermark` 对象并指向源文件。  
-```java
-Watermark watermark = new Watermark("input.vsdx");
-```  
-`Watermark` 类是对图表文件进行所有操作的入口。
+### 步骤 2：选择水印类型
+决定是需要 **文本水印**（例如 “Confidential”）还是 **图像水印**（例如公司徽标）。API 提供 `TextWatermark` 和 `ImageWatermark` 对象，您可以配置其不透明度、旋转、颜色等属性。
 
-### 如何配置文本水印？
-定义文本、字体、颜色和不透明度。  
-```java
-TextWatermarkOptions textOptions = new TextWatermarkOptions();
-textOptions.setText("Confidential");
-textOptions.setFont(new Font("Arial", FontStyle.BOLD, 36));
-textOptions.setColor(Color.RED);
-textOptions.setOpacity(0.5);
-```  
-这些选项确保水印清晰可读且半透明。
+### 步骤 3：定位特定页面或形状
+使用 `DiagramPageSelector` 或 `DiagramShapeSelector` 将水印限制在特定页面、页面类型或形状上。当您只想保护封面页或特定图表元素时，这非常有用。
 
-### 如何将水印应用于特定页面？
-按索引或页面类型（例如背景页）选择页面。  
-```java
-watermark.addTextWatermark(textOptions, new PageSelector().includePages(0, 2));
-```  
-`PageSelector` 允许您精确调节水印出现的位置。
+### 步骤 4：应用水印
+调用 `watermarker.add(watermark, selector)` 将水印嵌入。此操作不会更改原始布局；水印以覆盖层形式呈现。
 
-### 如何为单个形状添加水印？
-从页面检索形状并应用图像或文本覆盖。  
-```java
-Shape shape = watermark.getPage(0).getShapeById("ShapeId123");
-shape.addTextWatermark("Draft", textOptions);
-```  
-针对形状的水印有助于为图表中的特定组件添加标签。
+### 步骤 5：保存更新后的图表
+根据工作流需求，将修改后的 Visio 文件保存到新位置或覆盖原文件。
 
-### 如何保存已加水印的图表？
-选择输出格式并写入文件。  
-```java
-watermark.save("output.vsdx", SaveFormat.VSDX);
-```  
-`save` 方法在保存修改后的图表时保留所有原始元数据。
+> **专业提示：** 在应用水印之前，请始终保留原始 Visio 文件的备份，尤其是在自动化批处理时。
 
-## 常见问题及解决方案
-- **某些页面上水印不可见** – 验证页面选择器是否包含所需页面；背景页面需要使用 `includeBackgroundPages(true)` 标志。  
-- **大文件性能下降** – 使用 `watermark.enableStreaming(true)` 启用流式模式，以保持低内存使用。  
-- **字体渲染不正确** – 确保目标系统已安装该字体，或使用 `textOptions.setEmbedFont(true)` 嵌入字体。
+## 常见使用场景
+- **品牌保护：** 在每个导出的 Visio 图表上嵌入公司徽标。  
+- **保密声明：** 在内部示意图上添加 “Draft – Do Not Distribute” 文本。  
+- **版本控制：** 自动在图表上标注版本号或日期。  
+- **合规性要求：** 在所有页面插入强制性的法律页脚。  
 
-## 常见问答
+## 故障排除与常见问题
+- **缺少字体：** 如果 Visio 文件使用自定义字体，请确保服务器已安装这些字体；否则水印可能渲染不正确。  
+- **大文件：** 对于大于 50 MB 的图表，考虑使用流式 API 以降低内存消耗。  
+- **不透明度问题：** 极低的不透明度可能导致水印在复杂背景上不可见；建议在 30‑40% 范围内测试。  
 
-**Q: 我可以在同一图表中同时添加文本和图像水印吗？**  
-A: 是的，您可以在同一个 `Watermark` 实例上链式调用多个 `addTextWatermark` 和 `addImageWatermark`。
+## 可用教程
 
-**Q: 该库是否支持受密码保护的 Visio 文件？**  
-A: 当然。构造 `Watermark` 对象时提供密码，例如 `new Watermark("file.vsdx", "password")`。
+### [使用 GroupDocs.Watermark for Java 添加文本水印到图表&#58; 全面指南](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
 
-**Q: 是否可以移除已有的水印？**  
-A: 使用 `removeWatermarks` 方法并配合适当的选择器，可删除特定水印而不影响其他内容。
+### [在 Java 中使用 GroupDocs.Watermark 编辑图表页眉和页脚&#58; 全面指南](./edit-diagram-headers-footers-groupdocs-watermark-java/)
 
-**Q: 如何为一批 Visio 文件自动添加水印？**  
-A: 使用简单的 `for` 循环遍历目录，对每个文件应用相同的水印选项并以唯一名称保存。
+### [使用 GroupDocs.Watermark for Java 从 Visio 图表中提取页眉和页脚](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
 
-**Q: 支持哪些平台？**  
-A: 该库可在 Windows、Linux 和 macOS 上运行，兼容任何支持 Java 的环境，包括 Docker 容器。
+### [使用 GroupDocs.Watermark for Java 提取图表形状信息](./retrieve-shape-info-groupdocs-watermark-java/)
+
+### [使用 GroupDocs.Watermark for Java 为图表添加水印的指南](./add-watermarks-groupdocs-diagrams-java/)
+
+### [如何使用 GroupDocs.Watermark for Java 为图表添加文本水印](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
+
+### [使用 GroupDocs.Watermark for Java 在图表中实现图像替换](./automate-image-replacement-groupdocs-watermark-java/)
+
+### [使用 GroupDocs.Watermark for Java 管理图表水印的完整指南](./manage-watermarks-groupdocs-java-diagrams/)
+
+### [使用 GroupDocs.Watermark Java 从图表形状中移除超链接以提升文档安全性](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
 
 ## 其他资源
 
-下面您将找到完整的图表水印教程集合，进一步展开本文涉及的各个主题。
-
-### 可用教程
-- [使用 GroupDocs.Watermark for Java 为图表添加文本水印：综合指南](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [使用 GroupDocs.Watermark 在 Java 中编辑图表页眉和页脚：综合指南](./edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [使用 GroupDocs.Watermark for Java 从 Visio 图表中提取页眉和页脚](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
-- [使用 GroupDocs.Watermark in Java 提取图表形状信息](./retrieve-shape-info-groupdocs-watermark-java/)
-- [使用 GroupDocs.Watermark for Java 为图表添加水印指南](./add-watermarks-groupdocs-diagrams-java/)
-- [如何使用 GroupDocs.Watermark in Java 为图表添加文本水印](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [使用 GroupDocs.Watermark for Java 在图表中实现图像替换](./automate-image-replacement-groupdocs-watermark-java/)
-- [使用 GroupDocs.Watermark for Java 在图表中进行水印管理](./manage-watermarks-groupdocs-java-diagrams/)
-- [使用 GroupDocs.Watermark Java 从图表形状中移除超链接以增强文档安全性](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-
-### 其他资源
 - [GroupDocs.Watermark for Java 文档](https://docs.groupdocs.com/watermark/java/)
 - [GroupDocs.Watermark for Java API 参考](https://reference.groupdocs.com/watermark/java/)
 - [下载 GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
@@ -160,13 +91,25 @@ A: 该库可在 Windows、Linux 和 macOS 上运行，兼容任何支持 Java �
 - [免费支持](https://forum.groupdocs.com/)
 - [临时许可证](https://purchase.groupdocs.com/temporary-license/)
 
+## 常见问题
+
+**问：我可以在同一 Visio 页面上同时添加文本和图像水印吗？**  
+答：可以。顺序应用多个水印；API 按添加顺序渲染它们。
+
+**问：是否可以通过编程方式删除已有的水印？**  
+答：可以通过 `watermarker.getWatermarks()` 获取现有水印，并使用 `remove` 方法将其删除。
+
+**问：该库是否支持受密码保护的 Visio 文件？**  
+答：完全支持。使用 `Watermarker.load(filePath, password)` 加载文档时传入密码即可。
+
+**问：如何确保水印位于图表内容的后面？**  
+答：将水印的 `zOrder` 属性设为较低值，或使用 `addBackground` 方法添加背景水印。
+
+**问：哪个版本的 GroupDocs.Watermark 才能兼容 Java 17？**  
+答：23.10 及以上版本完全支持 Java 17 以及最新的 Visio 文件规范。
+
 ---
 
-**最后更新：** 2026-10-06  
-**测试版本：** GroupDocs.Watermark 23.10 for Java  
+**最后更新：** 2026-02-16  
+**测试环境：** GroupDocs.Watermark for Java 23.10  
 **作者：** GroupDocs
-
-## 相关教程
-- [使用 GroupDocs.Watermark for Java 为图表添加文本水印：综合指南](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [如何在 Java 中使用 GroupDocs.Watermark 添加图像水印：分步指南](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [在 Java 中使用 GroupDocs.Watermark 为形状水印应用图像效果](/watermark/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/)

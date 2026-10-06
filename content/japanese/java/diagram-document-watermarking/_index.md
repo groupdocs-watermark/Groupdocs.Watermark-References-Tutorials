@@ -1,173 +1,123 @@
 ---
-date: 2026-10-06
-description: GroupDocs.Watermark for Java を使用して Visio ダイアグラムに透かしを追加する方法を学びます。このガイドでは、テキスト、画像、シェイプの透かしの設定方法を示し、ダイアグラムのレイアウトをそのまま保ちます。
-keywords:
-- add watermark to visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking
-lastmod: 2026-10-06
-og_description: GroupDocs.Watermark for Java を使用して Visio ダイアグラムに透かしを追加する方法を学びます。このガイドでは、テキスト、画像、シェイプの透かしの設定方法を示し、ダイアグラムのレイアウトをそのまま保ちます。
-og_image_alt: 'Developer guide: add watermark to Visio diagram using GroupDocs.Watermark
-  Java'
-og_title: GroupDocs.Watermark Java を使用して Visio ダイアグラムに透かしを追加する
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to Visio diagram with GroupDocs.Watermark
-    for Java. This guide shows text, image, and shape watermarks, keeping diagram
-    layout intact.
-  headline: Add watermark to Visio diagram using GroupDocs.Watermark Java
-  type: TechArticle
-- questions:
-  - answer: Yes, you can chain multiple `addTextWatermark` and `addImageWatermark`
-      calls on the same `Watermark` instance.
-    question: Can I add both text and image watermarks to the same diagram?
-  - answer: 'Absolutely. Provide the password when constructing the `Watermark` object:
-      `new Watermark("file.vsdx", "password")`.'
-    question: Does the library support password‑protected Visio files?
-  - answer: Use the `removeWatermarks` method with appropriate selectors to delete
-      specific watermarks without affecting other content.
-    question: Is it possible to remove an existing watermark?
-  - answer: Iterate over a directory with a simple `for` loop, applying the same watermark
-      options to each file and saving with a unique name.
-    question: How do I automate watermarking for a batch of Visio files?
-  - answer: The library runs on Windows, Linux, and macOS, and is compatible with
-      any Java‑compatible environment, including Docker containers.
-    question: What platforms are supported?
-  type: FAQPage
-tags:
-- watermark Visio
-- GroupDocs.Watermark
-- Java diagram processing
-- add watermark to Visio diagram
-title: GroupDocs.Watermark Java を使用して Visio ダイアグラムに透かしを追加する
+date: 2026-02-16
+description: Java 用 GroupDocs.Watermark を使用して Visio 図に透かしを追加するステップバイステップのチュートリアルで、テキスト、画像、ヘッダー/フッター、形状の透かしをカバーしています。
+title: Visio に透かしを追加 – GroupDocs.Watermark Java 用 ダイアグラム透かしチュートリアル
 type: docs
 url: /ja/java/diagram-document-watermarking/
 weight: 10
 ---
 
-# GroupDocs.Watermark Java を使用して Visio ダイアグラムに透かしを追加する
+# Visio に透かしを追加 – GroupDocs.Watermark Java 用ダイアグラム透かしチュートリアル
 
-この包括的なチュートリアルでは、Java 用 GroupDocs.Watermark ライブラリを使用して **Visio ダイアグラムに透かしを追加する** 方法を学びます。ブランドの埋め込み、知的財産の保護、企業ポリシーへの準拠が必要な場合でも、本ガイドは SDK の設定からテキスト、画像、シェイプ透かしの適用まで、元のダイアグラムレイアウトを保持しながら完全なプロセスを案内します。
+このガイドでは、GroupDocs.Watermark for Java を使用して **Visio に透かしを追加** する方法を学びます。これにより、視覚資産が保護され、ブランド化され、企業ポリシーに準拠した状態を保てます。目立たないテキストオーバーレイの配置、画像の自動置換、ヘッダーやフッターの管理が必要な場合でも、これらのチュートリアルは明確で本番環境向けの Java コードとともに、ステップバイステップで案内します。
 
 ## クイック回答
-- **Visio ダイアグラムに透かしを追加するライブラリはどれですか？** GroupDocs.Watermark for Java。  
-- **ページ全体と個々のシェイプの両方に透かしを付けられますか？** はい、ページ全体、特定のページタイプ、または個々のシェイプを対象にできます。  
-- **本番環境で使用するためにライセンスが必要ですか？** 本番環境では商用ライセンスが必要です。テスト用には一時ライセンスが利用可能です。  
-- **サポートされているファイル形式は何ですか？** VSDX、VDX、VSSX、VSTX を含む 30 以上のダイアグラム形式がサポートされています。  
-- **API はスレッドセーフですか？** はい、ライブラリはマルチスレッドアプリケーションでの同時使用を想定して設計されています。
+- **“add watermark Visio” は何を意味しますか？** Microsoft Visio (.vsdx) ファイルにテキストまたは画像の透かしを埋め込み、知的財産を保護することを指します。  
+- **どのライブラリがこれを処理しますか？** GroupDocs.Watermark for Java は Visio 透かし処理のためのフルエント API を提供します。  
+- **ライセンスは必要ですか？** テスト用には一時ライセンスで動作しますが、本番利用には正式なライセンスが必要です。  
+- **特定のページやシェイプを対象にできますか？** はい。透かしは選択したページ、ページタイプ、または個々のシェイプに適用できます。  
+- **API は Java 17 と互換性がありますか？** 完全に対応しています。ライブラリは Java 8 から 17 までサポートしています。
 
-## Visio ダイアグラムに透かしを追加するとは何ですか？
-*Visio ダイアグラムに透かしを追加する* は、Microsoft Visio ファイルに可視または不可視のマークをプログラムで埋め込むプロセスを指します。これらのマークは、テキスト、画像、またはシェイプで構成され、文書の所有者を識別したり、使用制限を伝えたり、ブランディングを提供したりします。透かしは元のダイアグラムレイアウトを変更せずに、ファイル構造内に保存されます。
+## “add watermark Visio” とは？
+Visio ダイアグラムに透かしを追加するとは、既存の描画要素の上（または背後）に半透明のテキストまたは画像レイヤーを挿入することを意味します。この手法により、所有権を主張したり、機密性を示したり、デザインを変更せずにブランドを付与したりできます。
 
-## なぜ GroupDocs.Watermark for Java を使用するのですか？
-GroupDocs.Watermark は **30+ diagram formats** をサポートし、**500 MB** までのファイルをドキュメント全体をメモリに読み込まずに処理でき、手動の画像ベースのアプローチと比較して **up to 40 % lower CPU usage** を実現します。ライブラリはテキスト抽出用の組み込み OCR も提供し、複雑なシェイプ上でも透かしを正確に配置できます。
+## なぜ GroupDocs.Watermark for Java を使用するのか？
+- **ネイティブ Visio サポート** – .vsdx、.vsd などの Visio フォーマットをそのまま処理します。  
+- **細かな制御** – ページ、ページタイプ、シェイプ、ヘッダー、フッターを個別に対象にできます。  
+- **パフォーマンス最適化** – 大規模なダイアグラムを高速かつ低メモリで処理します。  
+- **クロスプラットフォーム** – デスクトップアプリからクラウドサービスまで、JVM 対応環境で動作します。
 
 ## 前提条件
-- 開発マシンに Java 17 以降がインストールされていること。  
-- 依存関係管理のために Maven 3.6+（または Gradle）。  
-- 有効な GroupDocs.Watermark for Java ライセンス（評価用には一時ライセンスが使用可能）。  
-- 保護したい Visio（.vsdx）ファイルへのアクセス。
+- Java 8 以上（推奨は Java 17）。  
+- GroupDocs.Watermark for Java の JAR（公式サイトからダウンロード）。  
+- 有効な GroupDocs の一時または正式ライセンスキー。  
 
-## Visio ダイアグラムに透かしを追加する手順
+## 手順概要
 
-Visio ファイルを読み込み、透かしオプションを設定し、結果を保存します。以下のセクションで各ステップを詳細に説明します。
+### 手順 1: プロジェクトのセットアップ
+GroupDocs.Watermark の JAR をプロジェクトのクラスパスに追加します（Maven、Gradle、または手動で *.jar を追加）。`Watermarker` を Visio ファイルとライセンスで初期化します。
 
-### Java で Visio ダイアグラムを読み込む方法
-`Watermark` オブジェクトを作成し、ソースファイルを指すようにします。  
-```java
-Watermark watermark = new Watermark("input.vsdx");
-```  
-`Watermark` クラスはダイアグラムファイルに対するすべての操作のエントリーポイントです。
+### 手順 2: 透かしのタイプを選択
+**テキスト透かし**（例: “Confidential”）が必要か、**画像透かし**（例: 会社ロゴ）が必要かを決定します。API は `TextWatermark` と `ImageWatermark` オブジェクトを提供し、透明度、回転、色などを設定できます。
 
-### テキスト透かしを設定する方法
-テキスト、フォント、色、透明度を定義します。  
-```java
-TextWatermarkOptions textOptions = new TextWatermarkOptions();
-textOptions.setText("Confidential");
-textOptions.setFont(new Font("Arial", FontStyle.BOLD, 36));
-textOptions.setColor(Color.RED);
-textOptions.setOpacity(0.5);
-```  
-これらのオプションにより、透かしは読みやすく、かつ半透明になります。
+### 手順 3: 特定のページまたはシェイプを対象にする
+`DiagramPageSelector` または `DiagramShapeSelector` を使用して、透かしを特定のページ、ページタイプ、シェイプに限定します。表紙ページや特定のダイアグラム要素だけを保護したい場合に便利です。
 
-### 特定のページに透かしを適用する方法
-インデックスまたはページタイプ（例: 背景ページ）でページを選択します。  
-```java
-watermark.addTextWatermark(textOptions, new PageSelector().includePages(0, 2));
-```  
-`PageSelector` を使用すると、透かしが表示される正確な位置を細かく調整できます。
+### 手順 4: 透かしを適用
+`watermarker.add(watermark, selector)` を呼び出して透かしを埋め込みます。この操作は元のレイアウトを変更せず、透かしはオーバーレイとして描画されます。
 
-### 個々のシェイプに透かしを付ける方法
-ページからシェイプを取得し、画像またはテキストのオーバーレイを適用します。  
-```java
-Shape shape = watermark.getPage(0).getShapeById("ShapeId123");
-shape.addTextWatermark("Draft", textOptions);
-```  
-シェイプを対象にすることで、ダイアグラム内の特定コンポーネントにラベル付けするのに便利です。
+### 手順 5: 更新されたダイアグラムを保存
+ワークフローの要件に応じて、変更された Visio ファイルを新しい場所に保存するか、元のファイルを上書きします。
 
-### 透かし付きダイアグラムを保存する方法
-出力フォーマットを選択し、ファイルを書き出します。  
-```java
-watermark.save("output.vsdx", SaveFormat.VSDX);
-```  
-`save` メソッドは、元のメタデータをすべて保持しながら、変更されたダイアグラムを書き込みます。
+> **プロのコツ:** 透かしを適用する前に、特にバッチ処理を自動化する場合は、必ず元の Visio ファイルのバックアップを保持してください。
 
-## 一般的な問題と解決策
-- **特定のページで透かしが表示されない** – ページセレクタが目的のページを含んでいるか確認してください。背景ページの場合は `includeBackgroundPages(true)` フラグが必要です。  
-- **大きなファイルでパフォーマンスが低下** – メモリ使用量を低く抑えるために `watermark.enableStreaming(true)` でストリーミングモードを有効にしてください。  
-- **フォントのレンダリングが正しくない** – 対象システムにフォントがインストールされていることを確認するか、`textOptions.setEmbedFont(true)` でフォントを埋め込んでください。
+## 一般的な使用例
+- **ブランド保護:** すべてのエクスポートされた Visio ダイアグラムに企業ロゴを埋め込みます。  
+- **機密通知:** 社内図面に “Draft – Do Not Distribute” テキストを追加します。  
+- **バージョン管理:** ダイアグラムにバージョン番号や日付を自動的にスタンプします。  
+- **規制遵守:** すべてのページに必須の法的フッターを挿入します。  
 
-## よくある質問
+## トラブルシューティングと落とし穴
+- **フォントが見つからない:** Visio ファイルがカスタムフォントを使用している場合、サーバーにインストールされていることを確認してください。インストールされていないと、透かしが正しく表示されない可能性があります。  
+- **大容量ファイル:** 50 MB を超えるダイアグラムの場合、メモリ使用量を削減するためにストリーミング API の使用を検討してください。  
+- **透明度の問題:** 非常に低い透明度では、複雑な背景上で透かしが見えなくなることがあります。30‑40 % の透明度範囲でテストしてください。  
 
-**Q: 同じダイアグラムにテキストと画像の両方の透かしを追加できますか？**  
-A: はい、同じ `Watermark` インスタンスで複数の `addTextWatermark` と `addImageWatermark` 呼び出しを連鎖させることができます。
+## 利用可能なチュートリアル
 
-**Q: ライブラリはパスワード保護された Visio ファイルをサポートしていますか？**  
-A: もちろんです。`Watermark` オブジェクトを作成する際にパスワードを指定してください: `new Watermark("file.vsdx", "password")`。
+### [GroupDocs.Watermark for Java を使用したダイアグラムへのテキスト透かし追加&#58; 包括的ガイド](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
+GroupDocs.Watermark for Java を使用してダイアグラムにテキスト透かしを追加する方法を学びます。視覚コンテンツを効果的に保護し、ドキュメントの完全性を確保します。
 
-**Q: 既存の透かしを削除することは可能ですか？**  
-A: `removeWatermarks` メソッドを適切なセレクタと共に使用し、他のコンテンツに影響を与えず特定の透かしを削除します。
+### [GroupDocs.Watermark を使用した Java におけるダイアグラムヘッダーとフッターの編集&#58; 包括的ガイド](./edit-diagram-headers-footers-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java を使用してダイアグラムのヘッダーとフッターを編集する方法を学びます。このステップバイステップガイドに従ってドキュメントを強化してください。
 
-**Q: Visio ファイルのバッチに対して透かし処理を自動化するにはどうすればよいですか？**  
-A: シンプルな `for` ループでディレクトリを走査し、各ファイルに同じ透かしオプションを適用して、固有の名前で保存します。
+### [GroupDocs.Watermark for Java を使用して Visio ダイアグラムからヘッダーとフッターを抽出](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java を使用して、Microsoft Visio ダイアグラムからフォント設定やテキスト内容を含むヘッダーとフッターを効率的に抽出する方法を学びます。
 
-**Q: サポートされているプラットフォームは何ですか？**  
-A: ライブラリは Windows、Linux、macOS 上で動作し、Docker コンテナを含む任意の Java 対応環境と互換性があります。
+### [Java で GroupDocs.Watermark を使用してダイアグラムからシェイプ情報を抽出](./retrieve-shape-info-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java を使用してダイアグラムファイルから詳細なシェイプ情報を効率的に取得する方法を学びます。この包括的ガイドでダイアグラム処理機能を強化してください。
+
+### [GroupDocs.Watermark for Java を使用したダイアグラムへの透かし追加ガイド](./add-watermarks-groupdocs-diagrams-java/)
+GroupDocs.Watermark for Java を使用してテキストと画像の透かしを追加し、ダイアグラムを保護する方法を学びます。知的財産を守るためのステップバイステップガイドです。
+
+### [Java で GroupDocs.Watermark を使用してダイアグラムにテキスト透かしを追加する方法](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java を使用してダイアグラムにテキスト透かしを追加する方法を学びます。このガイドではセットアップ、実装、実用的な活用例を取り上げます。
+
+### [GroupDocs.Watermark for Java でダイアグラムの画像置換をマスター](./automate-image-replacement-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java を使用してダイアグラムの画像更新を自動化し、効率と正確性を向上させます。ワークフローの合理化方法を学びます。
+
+### [GroupDocs.Watermark for Java を使用したダイアグラムの透かし管理をマスター](./manage-watermarks-groupdocs-java-diagrams/)
+GroupDocs.Watermark for Java を使用して .vsdx などのダイアグラムファイルの透かしを効率的に管理する方法を学びます。ドキュメントの完全性を高め、知的財産を保護します。
+
+### [GroupDocs.Watermark Java を使用してダイアグラムシェイプからハイパーリンクを削除し、ドキュメントセキュリティを強化](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java を使用してダイアグラムシェイプからハイパーリンクを削除し、ドキュメントのセキュリティと明瞭性を確保する方法を学びます。
 
 ## 追加リソース
-
-以下に、ここで取り上げた各トピックを拡張するダイアグラム透かしチュートリアルの全セットを示します。
-
-### 利用可能なチュートリアル
-
-- [GroupDocs.Watermark for Java を使用したダイアグラムへのテキスト透かし追加&#58; 包括的ガイド](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [GroupDocs.Watermark を使用した Java でのダイアグラムヘッダーとフッターの編集&#58; 包括的ガイド](./edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [GroupDocs.Watermark for Java を使用した Visio ダイアグラムからのヘッダーとフッターの抽出](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
-- [GroupDocs.Watermark を使用した Java でのダイアグラムからのシェイプ情報抽出](./retrieve-shape-info-groupdocs-watermark-java/)
-- [GroupDocs.Watermark for Java を使用したダイアグラムへの透かし追加ガイド](./add-watermarks-groupdocs-diagrams-java/)
-- [GroupDocs.Watermark を使用した Java でのダイアグラムへのテキスト透かし追加方法](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [GroupDocs.Watermark for Java によるダイアグラムの画像置換マスター](./automate-image-replacement-groupdocs-watermark-java/)
-- [GroupDocs.Watermark for Java を使用したダイアグラムの透かし管理マスター](./manage-watermarks-groupdocs-java-diagrams/)
-- [GroupDocs.Watermark Java を使用したダイアグラムシェイプからのハイパーリンク削除：ドキュメントセキュリティ強化](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-
-### 追加リソース
-
 - [GroupDocs.Watermark for Java ドキュメント](https://docs.groupdocs.com/watermark/java/)
 - [GroupDocs.Watermark for Java API リファレンス](https://reference.groupdocs.com/watermark/java/)
-- [GroupDocs.Watermark for Java のダウンロード](https://releases.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java をダウンロード](https://releases.groupdocs.com/watermark/java/)
 - [GroupDocs.Watermark フォーラム](https://forum.groupdocs.com/c/watermark)
 - [無料サポート](https://forum.groupdocs.com/)
 - [一時ライセンス](https://purchase.groupdocs.com/temporary-license/)
 
+## よくある質問
+
+**Q: 同じ Visio ページにテキストと画像の両方の透かしを追加できますか？**  
+A: はい。複数の透かしを順番に適用できます。API は追加した順序で透かしを描画します。
+
+**Q: 既存の透かしをプログラムで削除することは可能ですか？**  
+A: `watermarker.getWatermarks()` で既存の透かしを取得し、`remove` メソッドで削除できます。
+
+**Q: ライブラリはパスワードで保護された Visio ファイルをサポートしていますか？**  
+A: 完全にサポートしています。`Watermarker.load(filePath, password)` でドキュメントを読み込む際にパスワードを渡してください。
+
+**Q: 透かしをダイアグラムのコンテンツの背後に表示させるにはどうすればよいですか？**  
+A: 透かしの `zOrder` プロパティを低い値に設定するか、背景透かし用に `addBackground` メソッドを使用してください。
+
+**Q: Java 17 互換性のために必要な GroupDocs.Watermark のバージョンは何ですか？**  
+A: バージョン 23.10 以降であれば、Java 17 と最新の Visio ファイル仕様を完全にサポートしています。
+
 ---
 
-**最終更新日:** 2026-10-06  
-**テスト環境:** GroupDocs.Watermark 23.10 for Java  
+**最終更新日:** 2026-02-16  
+**テスト環境:** GroupDocs.Watermark for Java 23.10  
 **作者:** GroupDocs
-
-## 関連チュートリアル
-
-- [GroupDocs.Watermark for Java を使用したダイアグラムへのテキスト透かし追加：包括的ガイド](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [GroupDocs.Watermark を使用した Java での画像透かし追加：ステップバイステップガイド](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [GroupDocs.Watermark を使用した Java でのシェイプ透かしへの画像効果適用](/watermark/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/)

@@ -1,104 +1,46 @@
 ---
-date: '2026-10-06'
-description: Leer hoe je een watermerk aan pagina's in diagrammen kunt toevoegen met
-  GroupDocs.Watermark voor Java. Stapsgewijze installatie, code‑fragmenten en praktische
-  tips voor veilige publicatie van diagrammen.
+date: '2025-12-19'
+description: Leer hoe je een tekstwatermerk aan diagrammen toevoegt met GroupDocs.Watermark
+  voor Java. Deze stapsgewijze gids behandelt de installatie, watermerklettertype‑instellingen
+  en praktische use‑cases.
 keywords:
-- add watermark to pages
 - text watermarks in Java
-- GroupDocs.Watermark for Java
-- diagram watermarking tutorial
-lastmod: '2026-10-06'
-og_description: Voeg een watermerk toe aan pagina's in diagrammen met GroupDocs.Watermark
-  voor Java. Volg deze gids voor installatie, implementatie en best practices.
-og_image_alt: Developer guide showing Java code that adds text watermarks to diagram
-  pages
-og_title: Hoe watermerk aan pagina's toevoegen met GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to pages in diagrams with GroupDocs.Watermark
-    for Java. Step‑by‑step setup, code snippets, and practical tips for secure diagram
-    publishing.
-  headline: How to add watermark to pages using GroupDocs.Watermark Java
-  type: TechArticle
-- description: Learn how to add watermark to pages in diagrams with GroupDocs.Watermark
-    for Java. Step‑by‑step setup, code snippets, and practical tips for secure diagram
-    publishing.
-  name: How to add watermark to pages using GroupDocs.Watermark Java
-  steps:
-  - name: load your diagram
-    text: 'First, create a `DiagramLoadOptions` instance to tell the SDK how to interpret
-      the source file, then open the diagram with `Watermarker`. DiagramLoadOptions
-      specifies loading parameters such as format and password for diagram files.
-      `Watermarker` is the main class that manages loading, editing, and '
-  - name: initialize the text watermark
-    text: Next, build a `TextWatermark` object that holds the watermark text, font,
-      color, and rotation angle. `TextWatermark` represents a reusable textual overlay
-      that can be applied to one or many pages.
-  - name: add watermark to diagram
-    text: Now specify the pages you want to watermark. Using `DiagramPage` with `WatermarkPageOptions`
-      lets you target background, foreground, or both. `DiagramPage` selects individual
-      or ranges of diagram pages for watermarking. `WatermarkPageOptions` defines
-      where (background/foreground) and how the waterma
-  - name: save and close
-    text: Finally, write the watermarked diagram to disk and release resources. `Watermarker.save()`
-      persists the changes, and `close()` frees native resources to keep memory usage
-      low.
-  type: HowTo
-- questions:
-  - answer: Yes – it supports over 50 formats, including PDF, Word, Excel, PowerPoint,
-      and image files.
-    question: Can GroupDocs.Watermark handle other file types besides diagrams?
-  - answer: There is no hard limit, but applying more than 10 watermarks per page
-      can increase processing time by roughly 15 % per additional watermark.
-    question: Is there a limit to how many watermarks I can apply?
-  - answer: Use the `Watermarker.removeWatermarks()` method with a matching `WatermarkSearchOptions`
-      filter to delete specific watermarks.
-    question: How do I remove a watermark once it’s been added?
-  - answer: Absolutely – configure `DiagramPage` with a page index range or a custom
-      predicate to apply watermarks selectively.
-    question: Can I target only selected pages instead of all pages?
-  - answer: Verify the page’s background/foreground settings and ensure the opacity
-      is not set below 10 %. Also confirm the font size is appropriate for the page
-      dimensions.
-    question: The watermark is not visible on some pages; what should I check?
-  type: FAQPage
-tags:
-- add watermark to pages
-- GroupDocs.Watermark
-- Java diagram security
-- watermark tutorial
-title: Hoe watermerk aan pagina's toevoegen met GroupDocs.Watermark Java
+- add text watermark to diagram
+- GroupDocs Watermark for Java setup
+title: Hoe tekstwatermerk toe te voegen aan diagrammen met GroupDocs.Watermark voor
+  Java
 type: docs
 url: /nl/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Hoe een watermerk aan pagina's toe te voegen met GroupDocs.Watermark Java
+# Hoe tekstwatermerk toe te voegen aan diagrammen met GroupDocs.Watermark voor Java
 
-Het beschermen van uw intellectuele eigendom is essentieel wanneer u diagrammen deelt met teamgenoten, klanten of het publiek. In deze tutorial leert u **hoe u een watermerk aan pagina's toevoegt** in diagrambestanden met GroupDocs.Watermark voor Java, zodat elke geëxporteerde pagina uw merk of vertrouwelijkheidsmelding draagt. De stappen omvatten het opzetten van de omgeving, licenties en de exacte API‑aanroepen die u nodig heeft om een aanpasbaar tekstwatermerk in te voegen.
+Het beschermen van je diagrammen tegen ongeautoriseerd hergebruik is een topprioriteit voor veel ontwikkelaars en ontwerpers. In deze tutorial leer je **hoe je een tekstwatermerk** toevoegt aan diagrambestanden met de krachtige **GroupDocs.Watermark voor Java** bibliotheek. We lopen elke stap door – van Maven‑configuratie tot het toepassen van aangepaste watermerk‑lettertype‑instellingen – zodat je je visuele assets snel en betrouwbaar kunt beveiligen.
 
 ## Snelle antwoorden
-- **Welke bibliotheek voegt watermerken toe aan diagrammen in Java?** GroupDocs.Watermark for Java.  
-- **Welke primaire methode maakt het watermerkobject?** `new TextWatermark(...)`.  
-- **Heb ik een licentie nodig voor ontwikkeling?** Een tijdelijke proeflicentie werkt voor testen; een volledige licentie is vereist voor productie.  
-- **Kan ik elke pagina automatisch watermerken?** Ja – gebruik `Watermarker.addWatermark()` met een `DiagramPage` selector.  
-- **Is het proces thread‑safe?** De API is ontworpen voor gelijktijdig gebruik; deel alleen niet dezelfde `Watermarker`‑instantie over threads.
+- **Wat doet de bibliotheek?** Ze voegt tekst‑ (of afbeelding‑)watermerken toe aan meer dan 100 document‑ en diagramformaten.  
+- **Welk primair trefwoord moet ik targeten?** *add text watermark* – gebruikt door de hele gids.  
+- **Heb ik een licentie nodig?** Een tijdelijke proeflicentie werkt voor ontwikkeling; een volledige licentie is vereist voor productie.  
+- **Kan ik het lettertype aanpassen?** Ja, je kunt lettertypefamilie, grootte, kleur en rotatie regelen via watermerk‑lettertype‑instellingen.  
+- **Is het compatibel met Java‑8?** Absoluut – de bibliotheek ondersteunt JDK 8 en hoger.
 
-## Wat betekent watermerk aan pagina's toevoegen?
-*Watermerk aan pagina's toevoegen* betekent het invoegen van een semi‑transparante tekstlaag op elke pagina van een document of diagram zodat de inhoud leesbaar blijft terwijl het watermerk duidelijk zichtbaar is. Deze techniek ontmoedigt ongeautoriseerd hergebruik en versterkt de merkidentiteit.
+## Wat betekent “add text watermark”?
+Een tekstwatermerk toevoegen betekent semi‑transparante tekst over elke pagina of vorm van een document leggen zodat de inhoud herkenbaar blijft. Deze techniek wordt veel gebruikt voor branding, auteursrechtbescherming en collaboratieve bewerking.
 
 ## Waarom GroupDocs.Watermark voor Java gebruiken?
-GroupDocs.Watermark ondersteunt **meer dan 50 bestandsformaten** (inclusief VDX, VSDX, SVG en andere diagramtypen) en kan bestanden tot **500 MB** verwerken zonder het volledige bestand in het geheugen te laden, waardoor sub‑seconde latentie op typische serverhardware wordt bereikt. De vloeiende API stelt u in staat om lettertype, kleur, rotatie en doorzichtigheid in één oproep te configureren.
+- **Brede formaatondersteuning** – werkt met Visio, SVG, PDF, Word en nog veel meer.  
+- **Fijne controle** – je kunt lettertype, kleur, rotatie, opacity en plaatsing instellen.  
+- **Eenvoudige API** – een paar regels code volstaat, waardoor ontwikkeltijd wordt bespaard.  
+- **Prestaties geoptimaliseerd** – verwerkt grote bestanden efficiënt wanneer je resources tijdig sluit.
 
-## Voorvereisten
-- Java Development Kit 8 of nieuwer.  
+## Vereisten
+- JDK 8 of hoger geïnstalleerd op je machine.  
 - Een IDE zoals IntelliJ IDEA of Eclipse.  
-- Basis Java‑programmeervaardigheden.  
+- Basiskennis van Java (klassen, objecten en Maven).
 
 ### Vereiste bibliotheken en afhankelijkheden
-GroupDocs.Watermark voor Java wordt gedistribueerd via Maven Central. Voeg de afhankelijkheid toe in uw `pom.xml`:
+We gebruiken Maven om de GroupDocs.Watermark‑bibliotheek binnen te halen. Voeg de repository en afhankelijkheid toe aan je `pom.xml` precies zoals weergegeven:
 
 ```xml
 <repositories>
@@ -118,38 +60,28 @@ GroupDocs.Watermark voor Java wordt gedistribueerd via Maven Central. Voeg de af
 </dependencies>
 ```
 
-[GroupDocs.Watermark voor Java releases](https://releases.groupdocs.com/watermark/java/)
-
-Als u de voorkeur geeft aan een handmatige download, haal dan de binaries van de officiële release‑pagina.
+Als je liever handmatig downloadt, bezoek de officiële pagina: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) en volg de instructies.
 
 ### Licentie‑acquisitie
-U kunt beginnen met een gratis proefversie door een tijdelijke licentie te downloaden van het GroupDocs‑proefportaal. Nadat u het `.lic`‑bestand heeft, laadt u het zoals hieronder weergegeven.
-
-De `License`‑klasse valideert uw proef‑ of aangeschafte licentiebestand tijdens runtime.  
+Begin met een gratis proefversie door een tijdelijke licentie te verkrijgen via het proefportaal: [GroupDocs.Trial Licensing](https://purchase.groupdocs.com/temporary-license/). Laad het licentiebestand vóór elke watermerk‑operatie:
 
 ```java
 License license = new License();
 license.setLicense("path/to/license/file");
 ```
 
-[GroupDocs.Proeflicentie](https://purchase.groupdocs.com/temporary-license/)
-
 ## Implementatie‑gids
 
-### Tekstwatermerken toevoegen aan diagrampagina's
-#### Stap 1: laad uw diagram
-Eerst maakt u een `DiagramLoadOptions`‑instantie aan om de SDK te vertellen hoe het bronbestand moet worden geïnterpreteerd, en vervolgens opent u het diagram met `Watermarker`.  
-`DiagramLoadOptions` specificeert laadparameters zoals formaat en wachtwoord voor diagrambestanden.  
-`Watermarker` is de hoofdklasse die het laden, bewerken en opslaan van diagramdocumenten beheert.
+### Stap 1: Laad je diagram
+Eerst wijs je de `Watermarker` naar je bron‑diagrambestand. Het `DiagramLoadOptions`‑object vertelt de bibliotheek het bestand als diagramformaat te behandelen.
 
 ```java
 String inputFilePath = "YOUR_DOCUMENT_DIRECTORY/diagram.vsdx";
 Watermarker watermarker = new Watermarker(inputFilePath, new DiagramLoadOptions());
 ```
 
-#### Stap 2: initialiseert het tekstwatermerk
-Vervolgens bouwt u een `TextWatermark`‑object dat de watermerktekst, het lettertype, de kleur en de rotatiehoek bevat.  
-`TextWatermark` vertegenwoordigt een herbruikbare tekstoverlay die op één of meerdere pagina's kan worden toegepast.
+### Stap 2: Initialiseert het tekstwatermerk (met aangepaste **watermerk‑lettertype‑instellingen**)
+Maak een `TextWatermark`‑instantie aan, waarbij je de tekst, lettertypefamilie, grootte en eventuele extra styling opgeeft.
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark", new Font("Arial", 36));
@@ -158,10 +90,10 @@ textWatermark.setBackground(false);
 textWatermark.setRotationAngle(-45);
 ```
 
-#### Stap 3: watermerk toevoegen aan diagram
-Geef nu de pagina's op die u wilt watermerken. Het gebruik van `DiagramPage` met `WatermarkPageOptions` stelt u in staat om de achtergrond, voorgrond of beide te targeten.  
-`DiagramPage` selecteert individuele of reeksen diagrampagina's voor watermerken.  
-`WatermarkPageOptions` definieert waar (achtergrond/voorgrond) en hoe het watermerk wordt gerenderd op de geselecteerde pagina's.
+> **Pro tip:** Pas `setColor` en `setRotationAngle` aan om aan je merk‑richtlijnen te voldoen. De aanroep `setBackground(false)` zorgt ervoor dat het watermerk boven de diagramvormen wordt geplaatst in plaats van erachter.
+
+### Stap 3: Kies plaatsing – achtergrond vs. voorgrond
+GroupDocs laat je bepalen of het watermerk achter diagramvormen (achtergrond) of erboven (voorgrond) verschijnt. Voor de meeste merk‑scenario's werkt achtergrondplaatsing het beste.
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
@@ -169,10 +101,8 @@ options.setPlacement(DiagramWatermarkPlacementType.Background);
 watermarker.add(textWatermark, options);
 ```
 
-#### Stap 4: opslaan en sluiten
-Schrijf tenslotte het watergemerkte diagram naar schijf en geef de bronnen vrij.
-
-`Watermarker.save()` slaat de wijzigingen op, en `close()` maakt native bronnen vrij om het geheugenverbruik laag te houden.  
+### Stap 4: Sla het watermerk‑diagram op
+Schrijf tenslotte het gewijzigde bestand naar schijf en maak resources vrij.
 
 ```java
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/watermarked_diagram.vsdx";
@@ -181,60 +111,59 @@ watermarker.close();
 ```
 
 ## Veelvoorkomende problemen en oplossingen
-- **Bestandspad‑fouten** – Controleer of de invoer‑ en uitvoerpaden absoluut of correct relatief ten opzichte van uw werkmap zijn.  
-- **Versie‑mismatches** – Gebruik GroupDocs.Watermark 23.11 of later; oudere releases kunnen diagramondersteuning missen.  
-- **Onvoldoende rechten** – Het proces moet lees‑/schrijftoegang hebben tot de opgegeven mappen.
+| Symptoom | Waarschijnlijke oorzaak | Oplossing |
+|----------|--------------------------|-----------|
+| **Bestand niet gevonden** fout | Onjuist `inputFilePath` of ontbrekende leesrechten | Controleer het pad en zorg dat het Java‑proces het bestand kan lezen. |
+| **Watermerk niet zichtbaar** | Plaatsing ingesteld op `Foreground` met transparante kleur | Gebruik `Background`‑plaatsing of kies een contrasterende kleur. |
+| **Out‑of‑memory‑exception** bij grote diagrammen | `Watermarker` niet gesloten of veel bestanden in één lus verwerkt | Roep `watermarker.close()` aan na elk bestand en overweeg batch‑verwerking. |
+| **Licentie niet herkend** | Verkeerd licentiebestandspad of verlopen proefversie | Controleer het pad en gebruik een actuele licentie. |
 
 ## Praktische toepassingen
-1. **Beveilig klantleveringen** – Watermerk elk diagram voordat u PDF's naar externe partners stuurt.  
-2. **Bedrijfsbranding** – Integreer uw logo of bedrijfsnaam automatisch over alle geëxporteerde pagina's.  
-3. **Samenwerkings‑tracking** – Voeg gebruikersinitialen toe als watermerk om aan te geven wie elke diagramversie heeft bewerkt.
+1. **Documentbeveiliging** – Voorkom dat concurrenten eigendomsspecifieke flowcharts stelen.  
+2. **Branding** – Voeg de bedrijfsnaam of logo toe aan alle diagrampagina's.  
+3. **Samenwerkings‑tracking** – Voeg gebruikersinitialen toe als watermerk om aan te geven wie een diagram heeft bewerkt.  
 
 ## Prestatie‑overwegingen
-- Verwerk grote batches door één `Watermarker`‑instantie te hergebruiken en `addWatermark` in een lus aan te roepen; dit vermindert de overhead van objectcreatie tot **30 %**.  
-- Houd de watermerktekst beknopt (minder dan 30 tekens) om de render‑tijd te minimaliseren, vooral bij diagrammen met hoge resolutie.  
-- Test met een diagram van 200 pagina's; de typische verwerkingstijd is onder **2 seconden** op een standaard 2 vCPU‑VM.
+- Sluit de `Watermarker` direct na het opslaan om native resources vrij te geven.  
+- Houd de watermerk‑tekst beknopt; te grote lettertypen verhogen de verwerkingstijd.  
+- Test op een representatieve steekproef voordat je duizenden bestanden in batch verwerkt.
 
 ## Conclusie
-U heeft nu een volledige, productie‑klare workflow voor **het toevoegen van watermerk aan pagina's** in diagrambestanden met GroupDocs.Watermark voor Java. Deze aanpak beschermt niet alleen uw assets, maar versterkt ook de merkgemak over alle geëxporteerde assets.
+Je beschikt nu over een volledige, productie‑klare methode om **tekstwatermerk toe te voegen** aan diagrambestanden met **GroupDocs.Watermark voor Java**. Deze aanpak beschermt je intellectueel eigendom terwijl je volledige controle hebt over watermerk‑lettertype‑instellingen en plaatsing.
 
 ### Volgende stappen
-- Verken afbeelding‑watermerken voor rijkere branding.  
-- Combineer tekst‑ en afbeelding‑watermerken voor meerlagige bescherming.  
-- Integreer de watermerk‑routine in uw CI/CD‑pipeline om documentbeveiliging te automatiseren.
+- Verken afbeelding‑watermerken voor een visuele merk‑touch.  
+- Combineer meerdere watermerken (tekst + afbeelding) voor gelaagde bescherming.  
+- Automatiseer batch‑verwerking met een eenvoudige `for`‑lus en dezelfde API‑aanroepen.
 
 ## Veelgestelde vragen
 
-**Q: Kan GroupDocs.Watermark andere bestandstypen dan diagrammen verwerken?**  
-A: Ja – het ondersteunt meer dan 50 formaten, inclusief PDF, Word, Excel, PowerPoint en afbeeldingsbestanden.
+**Q: Werkt GroupDocs.Watermark met de nieuwste Java‑versies?**  
+A: Ja, het is volledig compatibel met Java 8 tot en met Java 21.  
 
-**Q: Is er een limiet aan het aantal watermerken dat ik kan toepassen?**  
-A: Er is geen harde limiet, maar het toepassen van meer dan 10 watermerken per pagina kan de verwerkingstijd met ongeveer 15 % per extra watermerk verhogen.
+**Q: Kan ik de opacity van het tekstwatermerk aanpassen?**  
+A: Absoluut. Gebruik `textWatermark.setOpacity(0.5)` om 50 % opacity in te stellen.  
 
-**Q: Hoe verwijder ik een watermerk nadat het is toegevoegd?**  
-A: Gebruik de `Watermarker.removeWatermarks()`‑methode met een passende `WatermarkSearchOptions`‑filter om specifieke watermerken te verwijderen.
+**Q: Is er een manier om watermerken alleen aan geselecteerde diagramvormen toe te voegen?**  
+A: Je kunt vormen filteren via `DiagramShapeWatermarkOptions` door vorm‑ID’s of namen op te geven.  
 
-**Q: Kan ik alleen geselecteerde pagina's targeten in plaats van alle pagina's?**  
-A: Absoluut – configureer `DiagramPage` met een paginabereik of een aangepaste predicate om watermerken selectief toe te passen.
+**Q: Hoe ga ik om met wachtwoord‑beveiligde diagrambestanden?**  
+A: Laad het bestand met `DiagramLoadOptions` waarin het wachtwoord is opgenomen, en pas vervolgens het watermerk toe zoals gewoonlijk.  
 
-**Q: Het watermerk is niet zichtbaar op sommige pagina's; wat moet ik controleren?**  
-A: Controleer de achtergrond/voorgrond‑instellingen van de pagina en zorg ervoor dat de doorzichtigheid niet onder 10 % staat. Bevestig ook dat de lettergrootte geschikt is voor de paginadimensies.
+**Q: Zijn er licentiebeperkingen voor commercieel gebruik?**  
+A: Een commerciële licentie is vereist voor productie‑implementaties; proeflicenties zijn alleen voor evaluatie.
 
-## Bronnen
-- [Documentatie](https://docs.groupdocs.com/watermark/java/) – officiële gids en tutorials.  
-- [API‑referentie](https://reference.groupdocs.com/watermark/java) – gedetailleerde klasse‑ en methodespecificaties.  
-- [Laatste versie downloaden](https://releases.groupdocs.com/watermark/java/) – haal de nieuwste bibliotheekrelease op.  
-- [GitHub‑repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java) – broncode, issues en bijdragen.  
-- [Gratis ondersteuningsforum](https://forum.groupdocs.com/c/watermark/10) – community‑hulp en discussies.
+## Resources
+- [Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download Latest Version](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
 
 ---
 
-**Laatst bijgewerkt:** 2026-10-06  
-**Getest met:** GroupDocs.Watermark 23.11 for Java  
+**Laatst bijgewerkt:** 2025-12-19  
+**Getest met:** GroupDocs.Watermark 24.11 for Java  
 **Auteur:** GroupDocs  
 
-## Gerelateerde tutorials
-
-- [Hoe tekst‑ en afbeelding‑watermerken toe te voegen aan specifieke PDF‑pagina's met GroupDocs.Watermark voor Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Hoe tekst‑watermerken toe te voegen aan diagrammen met GroupDocs.Watermark in Java](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Tekst‑watermerken toevoegen in Java met GroupDocs.Watermark: een stapsgewijze gids](/watermark/java/text-watermarks/add-text-watermarks-java-groupdocs/)
+---

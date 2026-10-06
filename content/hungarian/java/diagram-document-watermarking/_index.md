@@ -1,161 +1,100 @@
 ---
-date: 2026-10-06
-description: Ismerje meg, hogyan adhat hozzá vízjelet Visio diagramhoz a GroupDocs.Watermark
-  Java segítségével. Ez az útmutató bemutatja a szöveges, képes és alakzati vízjeleket,
-  miközben a diagram elrendezése változatlan marad.
-keywords:
-- add watermark to visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking
-lastmod: 2026-10-06
-og_description: Ismerje meg, hogyan adhat hozzá vízjelet Visio diagramhoz a GroupDocs.Watermark
-  Java segítségével. Ez az útmutató bemutatja a szöveges, képes és alakzati vízjeleket,
-  miközben a diagram elrendezése változatlan marad.
-og_image_alt: 'Developer guide: add watermark to Visio diagram using GroupDocs.Watermark
-  Java'
-og_title: Vízjel hozzáadása Visio diagramhoz a GroupDocs.Watermark Java segítségével
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to Visio diagram with GroupDocs.Watermark
-    for Java. This guide shows text, image, and shape watermarks, keeping diagram
-    layout intact.
-  headline: Add watermark to Visio diagram using GroupDocs.Watermark Java
-  type: TechArticle
-- questions:
-  - answer: Yes, you can chain multiple `addTextWatermark` and `addImageWatermark`
-      calls on the same `Watermark` instance.
-    question: Can I add both text and image watermarks to the same diagram?
-  - answer: 'Absolutely. Provide the password when constructing the `Watermark` object:
-      `new Watermark("file.vsdx", "password")`.'
-    question: Does the library support password‑protected Visio files?
-  - answer: Use the `removeWatermarks` method with appropriate selectors to delete
-      specific watermarks without affecting other content.
-    question: Is it possible to remove an existing watermark?
-  - answer: Iterate over a directory with a simple `for` loop, applying the same watermark
-      options to each file and saving with a unique name.
-    question: How do I automate watermarking for a batch of Visio files?
-  - answer: The library runs on Windows, Linux, and macOS, and is compatible with
-      any Java‑compatible environment, including Docker containers.
-    question: What platforms are supported?
-  type: FAQPage
-tags:
-- watermark Visio
-- GroupDocs.Watermark
-- Java diagram processing
-- add watermark to Visio diagram
-title: Vízjel hozzáadása Visio diagramhoz a GroupDocs.Watermark Java segítségével
+date: 2026-02-16
+description: Lépésről lépésre útmutatók a vízjelek hozzáadásához Visio-diagramokhoz
+  a GroupDocs.Watermark for Java használatával, amely lefedi a szöveges, képes, fejléc/lábléc
+  és alakzat vízjeleket.
+title: Vízjel hozzáadása Visio – Diagram vízjelezési útmutatók a GroupDocs.Watermark
+  Java-hoz
 type: docs
 url: /hu/java/diagram-document-watermarking/
 weight: 10
 ---
 
-# Vízjel hozzáadása Visio diagramhoz a GroupDocs.Watermark Java használatával
+# Visio vízjel hozzáadása – Diagram vízjelezési útmutatók a GroupDocs.Watermark Java számára
 
-Ebben az átfogó útmutatóban megtanulja, hogyan **add watermark to Visio diagram** fájlokhoz a GroupDocs.Watermark Java könyvtár segítségével. Akár márkázást szeretne beágyazni, szellemi tulajdont védeni, vagy a vállalati irányelveknek megfelelni, ez az útmutató végigvezeti a teljes folyamaton – a SDK beállításától a szöveges, képes és alakú vízjelek alkalmazásáig, miközben megőrzi az eredeti diagram elrendezését.
+Ebben az útmutatóban megtanulja, hogyan **vízjel hozzáadása Visio** diagramokhoz használja a GroupDocs.Watermark for Java-t, biztosítva, hogy vizuális eszközei védve, márkázva és a vállalati irányelvekkel összhangban legyenek. Akár egy diszkrét szöveges átfedést, automatikus képcserét, vagy fejlécek és láblécek kezelését szeretné, ezek az útmutatók minden lépésen végigvezetnek egyértelmű, termelésre kész Java kóddal.
 
 ## Gyors válaszok
-- **Melyik könyvtár ad hozzá vízjeleket Visio diagramokhoz?** GroupDocs.Watermark for Java.  
-- **Vízjelezhetek mind oldalakat, mind egyedi alakzatokat?** Igen, célozhatja a teljes oldalakat, konkrét oldal típusokat vagy egyedi alakzatokat.  
-- **Szükségem van licencre a termelési használathoz?** A termeléshez kereskedelmi licenc szükséges; ideiglenes licenc elérhető teszteléshez.  
-- **Milyen fájlformátumok támogatottak?** Több mint 30 diagramformátum, köztük VSDX, VDX, VSSX és VSTX.  
-- **A API szálbiztos?** Igen, a könyvtár úgy van tervezve, hogy több szálú alkalmazásokban is biztonságosan használható legyen.
+- **Mit jelent a “vízjel hozzáadása Visio”?** Ez azt jelenti, hogy szöveges vagy képes vízjeleket ágyaz be a Microsoft Visio (.vsdx) fájlokba a szellemi tulajdon védelme érdekében.  
+- **Melyik könyvtár kezeli ezt?** A GroupDocs.Watermark for Java egy folyékony API-t biztosít a Visio vízjelezéshez.  
+- **Szükségem van licencre?** Egy ideiglenes licenc teszteléshez működik; a termeléshez teljes licenc szükséges.  
+- **Célzottan alkalmazhatok vízjeleket konkrét oldalakra vagy alakzatokra?** Igen — a vízjelek alkalmazhatók kiválasztott oldalakra, oldal típusokra vagy egyedi alakzatokra.  
+- **Az API kompatibilis a Java 17‑tel?** Teljesen; a könyvtár támogatja a Java 8‑tól 17‑ig terjedő verziókat.
 
-## Mi az add watermark to Visio diagram?
-*Add watermark to Visio diagram* a folyamatot jelenti, amely programozott módon beágyaz látható vagy láthatatlan jeleket egy Microsoft Visio fájlba. Ezek a jelek tartalmazhatnak szöveget, képeket vagy alakzatokat, amelyek azonosítják a dokumentum tulajdonosát, közlik a használati korlátozásokat, vagy márkázást biztosítanak. A vízjel a fájl struktúrájában tárolódik anélkül, hogy megváltoztatná az eredeti diagram elrendezését.
+## Mi a “vízjel hozzáadása Visio”?
+A vízjel hozzáadása egy Visio diagramhoz azt jelenti, hogy egy félig átlátszó szöveges vagy képes réteget helyez el a meglévő rajzelemek fölé (vagy mögé). Ez a technika segít a tulajdonjog kijelölésében, a titoktartási információk közlésében vagy a márka megjelenítésében anélkül, hogy az eredeti tervezést módosítaná.
 
-## Miért használja a GroupDocs.Watermark for Java-t?
-A GroupDocs.Watermark támogat **30+ diagramformátumot** és képes **500 MB**-ig terjedő fájlokat feldolgozni anélkül, hogy a teljes dokumentumot a memóriába töltené, ami **akár 40 % alacsonyabb CPU‑használatot** eredményez a kézi képalapú megközelítésekkel szemben. A könyvtár beépített OCR‑t is kínál a szövegkivonáshoz, biztosítva, hogy a vízjelek pontosan kerüljenek elhelyezésre még összetett alakzatok esetén is.
+## Miért használja a GroupDocs.Watermark for Java‑t?
+- **Natív Visio támogatás** – Képes .vsdx, .vsd és egyéb Visio formátumok kezelésére „out‑of‑the‑box”.  
+- **Finomhangolt vezérlés** – Célzottan alkalmazhat vízjeleket oldalakra, oldal típusokra, alakzatokra, fejlécekre és láblécekre.  
+- **Teljesítmény‑optimalizált** – Nagy diagramok gyors feldolgozása alacsony memóriaigénnyel.  
+- **Keresztplatformos** – Bármely JVM‑kompatibilis környezetben működik, legyen az asztali alkalmazás vagy felhőszolgáltatás.
 
 ## Előfeltételek
-- Java 17 vagy újabb telepítve a fejlesztői gépen.  
-- Maven 3.6+ (vagy Gradle) a függőségkezeléshez.  
-- Érvényes GroupDocs.Watermark for Java licenc (az ideiglenes licenc értékeléshez használható).  
-- Hozzáférés a védendő Visio (.vsdx) fájlhoz.
+- Java 8 vagy újabb (Java 17 ajánlott).  
+- GroupDocs.Watermark for Java JAR (letölthető a hivatalos oldalról).  
+- Érvényes GroupDocs ideiglenes vagy teljes licenckulcs.  
 
-## Hogyan adjon hozzá vízjelet Visio diagramhoz lépésről lépésre
+## Lépés‑ről‑lépésre áttekintés
 
-Töltse be a Visio fájlt, konfigurálja a vízjel beállításait, és mentse az eredményt. Az alábbi szakaszok részletesen leírják az egyes lépéseket.
+### 1. lépés: A projekt beállítása
+Adja hozzá a GroupDocs.Watermark JAR‑t a projekt osztályútvonalához (Maven, Gradle vagy manuális *.jar hozzáadás). Inicializálja a `Watermarker`‑t a Visio fájllal és a licenccel.
 
-### Hogyan töltsön be Visio diagramot Java-ban?
-`Watermark` objektumot hoz létre, és a forrásfájlra mutat.  
-```java
-Watermark watermark = new Watermark("input.vsdx");
-```  
-A `Watermark` osztály a belépési pont minden diagramfájl művelethez.
+### 2. lépés: Válassza ki a vízjel típusát
+Döntse el, hogy **szöveges vízjelet** (pl. „Confidential”) vagy **képes vízjelet** (pl. vállalati logó) szeretne‑e használni. Az API `TextWatermark` és `ImageWatermark` objektumokat biztosít, amelyeket konfigurálhat (átlátszóság, forgatás, szín stb.).
 
-### Hogyan konfiguráljon szöveges vízjelet?
-Határozza meg a szöveget, betűtípust, színt és átlátszóságot.  
-```java
-TextWatermarkOptions textOptions = new TextWatermarkOptions();
-textOptions.setText("Confidential");
-textOptions.setFont(new Font("Arial", FontStyle.BOLD, 36));
-textOptions.setColor(Color.RED);
-textOptions.setOpacity(0.5);
-```  
-Ezek a beállítások biztosítják, hogy a vízjel olvasható legyen, ugyanakkor félig átlátszó.
+### 3. lépés: Célzott oldalak vagy alakzatok kiválasztása
+Használja a `DiagramPageSelector` vagy `DiagramShapeSelector` osztályokat a vízjel korlátozásához meghatározott oldalakra, oldal típusokra vagy alakzatokra. Ez akkor hasznos, ha csak a címlapot vagy egy konkrét diagram elemet szeretné védeni.
 
-### Hogyan alkalmazza a vízjelet konkrét oldalakra?
-Válasszon oldalakat index vagy oldal típus (pl. háttéroldalak) szerint.  
-```java
-watermark.addTextWatermark(textOptions, new PageSelector().includePages(0, 2));
-```  
-A `PageSelector` lehetővé teszi, hogy pontosan finomhangolja, hol jelenik meg a vízjel.
+### 4. lépés: A vízjel alkalmazása
+Hívja meg a `watermarker.add(watermark, selector)` metódust a vízjel beágyazásához. A művelet nem módosítja az eredeti elrendezést; a vízjel átfedésként kerül renderelésre.
 
-### Hogyan vízjelezzen egyedi alakzatokat?
-Szerezze be az alakzatokat egy oldalról, és alkalmazzon képi vagy szöveges átfedést.  
-```java
-Shape shape = watermark.getPage(0).getShapeById("ShapeId123");
-shape.addTextWatermark("Draft", textOptions);
-```  
-Az alakzatok célzott vízjelezése hasznos a diagramon belüli konkrét komponensek címkézéséhez.
+### 5. lépés: A módosított diagram mentése
+Mentse a módosított Visio fájlt egy új helyre, vagy írja felül az eredetit a munkafolyamat igényei szerint.
 
-### Hogyan mentse a vízjelezett diagramot?
-Válassza ki a kimeneti formátumot, és írja ki a fájlt.  
-```java
-watermark.save("output.vsdx", SaveFormat.VSDX);
-```  
-A `save` metódus kiírja a módosított diagramot, miközben megőrzi az összes eredeti metaadatot.
+> **Hasznos tipp:** Mindig készítsen biztonsági másolatot az eredeti Visio fájlról a vízjelek alkalmazása előtt, különösen kötegelt folyamatok automatizálásakor.
 
-## Gyakori problémák és megoldások
-- **Watermark not visible on certain pages** – Ellenőrizze, hogy az oldalválasztó tartalmazza-e a kívánt oldalakat; a háttéroldalakhoz a `includeBackgroundPages(true)` jelző szükséges.  
-- **Performance slowdown on large files** – Engedélyezze a streaming módot a `watermark.enableStreaming(true)` használatával a memóriahasználat alacsonyan tartásához.  
-- **Incorrect font rendering** – Győződjön meg róla, hogy a célrendszeren a betűtípus telepítve van, vagy ágyazza be a betűtípust a `textOptions.setEmbedFont(true)` használatával.
+## Gyakori felhasználási esetek
+- **Márka védelem:** Vállalati logók beágyazása minden exportált Visio diagramra.  
+- **Titoktartási figyelmeztetések:** „Draft – Do Not Distribute” szöveg hozzáadása belső vázlatokhoz.  
+- **Verziókövetés:** A diagram automatikus pecsételése verziószámmal vagy dátummal.  
+- **Szabályozási megfelelés:** Kötelező jogi láblécek beszúrása az összes oldalra.
 
-## Gyakran feltett kérdések
+## Hibaelhárítás és gyakori buktatók
+- **Hiányzó betűtípusok:** Ha a Visio fájl egyedi betűtípusokat használ, telepítse azokat a szerveren; ellenkező esetben a vízjel helytelenül jelenhet meg.  
+- **Nagy fájlok:** 50 MB‑nál nagyobb diagramok esetén fontolja meg a streaming API‑k használatát a memóriaigény csökkentése érdekében.  
+- **Átlátszósági problémák:** Nagyon alacsony átlátszóság esetén a vízjel elhalhat a komplex háttér előtt; teszteljen 30‑40 % közötti átlátszósággal.  
 
-**Q: Hozzáadhatok mind szöveges, mind képes vízjeleket ugyanahhoz a diagramhoz?**  
-A: Igen, több `addTextWatermark` és `addImageWatermark` hívást is láncolhat ugyanazon `Watermark` példányon.
+## Elérhető útmutatók
 
-**Q: Támogatja a könyvtár a jelszóval védett Visio fájlokat?**  
-A: Teljesen. Adja meg a jelszót a `Watermark` objektum létrehozásakor: `new Watermark("file.vsdx", "password")`.
+### [Szöveges vízjelek hozzáadása diagramokhoz a GroupDocs.Watermark for Java használatával: Átfogó útmutató](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
+Ismerje meg, hogyan adhat szöveges vízjeleket diagramokhoz a GroupDocs.Watermark for Java segítségével, és védje hatékonyan vizuális tartalmát.
 
-**Q: Lehetőség van meglévő vízjel eltávolítására?**  
-A: Használja a `removeWatermarks` metódust megfelelő selectorokkal a specifikus vízjelek törléséhez anélkül, hogy a többi tartalmat befolyásolná.
+### [Diagram fejlécek és láblécek szerkesztése Java‑ban a GroupDocs.Watermark használatával: Átfogó útmutató](./edit-diagram-headers-footers-groupdocs-watermark-java/)
+Tanulja meg, hogyan szerkeszthet diagram fejléceket és lábléceket a GroupDocs.Watermark for Java‑val, lépésről‑lépésre.
 
-**Q: Hogyan automatizálhatom a vízjelezést Visio fájlok egy csomagjában?**  
-A: Iteráljon egy könyvtáron egy egyszerű `for` ciklussal, alkalmazva ugyanazokat a vízjel beállításokat minden fájlra, és egyedi névvel mentve.
+### [Fejlécek és láblécek kinyerése Visio diagramokból a GroupDocs.Watermark for Java segítségével](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
+Ismerje meg, hogyan nyerheti ki hatékonyan a fejléceket, lábléceket, betűtípusbeállításokat és szövegtartalmat a Microsoft Visio diagramokból a GroupDocs.Watermark for Java‑val.
 
-**Q: Milyen platformok támogatottak?**  
-A: A könyvtár Windows, Linux és macOS rendszereken fut, és kompatibilis bármely Java‑kompatibilis környezettel, beleértve a Docker konténereket.
+### [Alakzatinformációk kinyerése diagramokból a GroupDocs.Watermark Java‑val](./retrieve-shape-info-groupdocs-watermark-java/)
+Tanulja meg, hogyan használhatja a GroupDocs.Watermark for Java‑t részletes alakzatinformációk kinyerésére diagramfájlokból. Bővítse diagramfeldolgozási képességeit ezzel az átfogó útmutatóval.
+
+### [Vízjelek hozzáadása diagramokhoz a GroupDocs.Watermark for Java használatával](./add-watermarks-groupdocs-diagrams-java/)
+Ismerje meg, hogyan védheti diagramjait szöveges és képes vízjelek hozzáadásával a GroupDocs.Watermark for Java segítségével. Lépésről‑lépésre útmutató a szellemi tulajdon védelméhez.
+
+### [Szöveges vízjelek hozzáadása diagramokhoz a GroupDocs.Watermark Java‑val](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
+Tanulja meg, hogyan adhat szöveges vízjeleket diagramokhoz a GroupDocs.Watermark for Java‑val. Ez az útmutató a beállítást, a megvalósítást és a gyakorlati alkalmazásokat mutatja be.
+
+### [Képcserék automatizálása diagramokban a GroupDocs.Watermark for Java‑val](./automate-image-replacement-groupdocs-watermark-java/)
+Automatizálja a képek frissítését diagramokban a GroupDocs.Watermark for Java segítségével a hatékonyság és pontosság növelése érdekében. Tanulja meg, hogyan egyszerűsítheti munkafolyamatát.
+
+### [Vízjelkezelés mesterfokon diagramokban a GroupDocs.Watermark for Java‑val](./manage-watermarks-groupdocs-java-diagrams/)
+Ismerje meg, hogyan kezelheti hatékonyan a vízjeleket .vsdx‑szerű diagramfájlokban a GroupDocs.Watermark for Java‑val. Növelje a dokumentum integritását és védje a szellemi tulajdont.
+
+### [Hiperhivatkozások eltávolítása diagram alakzatokból a GroupDocs.Watermark Java‑val a dokumentumbiztonság növelése érdekében](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
+Tanulja meg, hogyan távolíthatja el a hiperhivatkozásokat a diagram alakzatokból a GroupDocs.Watermark Java‑val, biztosítva a dokumentum biztonságát és átláthatóságát.
 
 ## További források
-
-Az alábbiakban megtalálja a diagram‑vízjelezés teljes sorozatát, amely kibővíti az itt tárgyalt témákat.
-
-### Elérhető oktatóanyagok
-
-- [Szöveges vízjelek hozzáadása diagramokhoz a GroupDocs.Watermark for Java használatával&#58; Átfogó útmutató](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Diagram fejlécek és láblécek szerkesztése Java-ban a GroupDocs.Watermark&#58; Átfogó útmutató](./edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Fejlécek és láblécek kinyerése Visio diagramokból a GroupDocs.Watermark for Java használatával](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
-- [Alakzat információk kinyerése diagramokból a GroupDocs.Watermark Java használatával](./retrieve-shape-info-groupdocs-watermark-java/)
-- [Útmutató a vízjelek hozzáadásához diagramokhoz a GroupDocs.Watermark for Java használatával](./add-watermarks-groupdocs-diagrams-java/)
-- [Hogyan adjunk szöveges vízjeleket diagramokhoz a GroupDocs.Watermark Java használatával](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Képcsere mesterfokon diagramokban a GroupDocs.Watermark for Java használatával](./automate-image-replacement-groupdocs-watermark-java/)
-- [Vízjelkezelés mesterfokon diagramokban a GroupDocs.Watermark for Java használatával](./manage-watermarks-groupdocs-java-diagrams/)
-- [Hiperhivatkozások eltávolítása diagram alakzatokból a GroupDocs.Watermark Java használatával a fokozott dokumentumbiztonság érdekében](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-
-### További források
 
 - [GroupDocs.Watermark for Java dokumentáció](https://docs.groupdocs.com/watermark/java/)
 - [GroupDocs.Watermark for Java API referencia](https://reference.groupdocs.com/watermark/java/)
@@ -164,14 +103,25 @@ Az alábbiakban megtalálja a diagram‑vízjelezés teljes sorozatát, amely ki
 - [Ingyenes támogatás](https://forum.groupdocs.com/)
 - [Ideiglenes licenc](https://purchase.groupdocs.com/temporary-license/)
 
+## Gyakran ismételt kérdések
+
+**K: Hozzáadhatok egyszerre szöveges és képes vízjeleket ugyanahhoz a Visio oldalhoz?**  
+V: Igen. Több vízjelet alkalmazhat egymás után; az API a hozzáadási sorrendben rendereli őket.
+
+**K: Lehet programozottan eltávolítani egy meglévő vízjelet?**  
+V: A meglévő vízjeleket a `watermarker.getWatermarks()` metódussal lekérheti, majd a `remove` metódussal törölheti.
+
+**K: Támogatja a könyvtár a jelszóval védett Visio fájlokat?**  
+V: Teljesen. A jelszót a `Watermarker.load(filePath, password)` hívás során adja meg.
+
+**K: Hogyan biztosíthatom, hogy a vízjel a diagram tartalma mögött jelenjen meg?**  
+V: Állítsa be a vízjel `zOrder` tulajdonságát alacsonyabb értékre, vagy használja az `addBackground` metódust a háttér‑vízjelekhez.
+
+**K: Melyik GroupDocs.Watermark verzió szükséges a Java 17 kompatibilitáshoz?**  
+V: A 23.10 vagy újabb verzió teljes mértékben támogatja a Java 17‑et és a legújabb Visio fájlformátumokat.
+
 ---
 
-**Utolsó frissítés:** 2026-10-06  
-**Tesztelve ezzel:** GroupDocs.Watermark 23.10 for Java  
+**Utolsó frissítés:** 2026-02-16  
+**Tesztelve:** GroupDocs.Watermark for Java 23.10  
 **Szerző:** GroupDocs
-
-## Kapcsolódó oktatóanyagok
-
-- [Szöveges vízjelek hozzáadása diagramokhoz a GroupDocs.Watermark for Java használatával&#58; Átfogó útmutató](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Képes vízjel hozzáadása Java-ban a GroupDocs.Watermark használatával&#58; Lépésről lépésre útmutató](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [Képeffektusok alkalmazása alakzat vízjelekre Java-ban a GroupDocs.Watermark segítségével](/watermark/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/)

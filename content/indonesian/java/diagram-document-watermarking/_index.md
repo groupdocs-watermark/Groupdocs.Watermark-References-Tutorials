@@ -1,160 +1,101 @@
 ---
-date: 2026-10-06
-description: Pelajari cara menambahkan watermark ke diagram Visio dengan GroupDocs.Watermark
-  untuk Java. Panduan ini menunjukkan watermark teks, gambar, dan bentuk, menjaga
-  tata letak diagram tetap utuh.
-keywords:
-- add watermark to visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking
-lastmod: 2026-10-06
-og_description: Pelajari cara menambahkan watermark ke diagram Visio dengan GroupDocs.Watermark
-  untuk Java. Panduan ini menunjukkan watermark teks, gambar, dan bentuk, menjaga
-  tata letak diagram tetap utuh.
-og_image_alt: 'Developer guide: add watermark to Visio diagram using GroupDocs.Watermark
-  Java'
-og_title: Tambahkan watermark ke diagram Visio menggunakan GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to Visio diagram with GroupDocs.Watermark
-    for Java. This guide shows text, image, and shape watermarks, keeping diagram
-    layout intact.
-  headline: Add watermark to Visio diagram using GroupDocs.Watermark Java
-  type: TechArticle
-- questions:
-  - answer: Yes, you can chain multiple `addTextWatermark` and `addImageWatermark`
-      calls on the same `Watermark` instance.
-    question: Can I add both text and image watermarks to the same diagram?
-  - answer: 'Absolutely. Provide the password when constructing the `Watermark` object:
-      `new Watermark("file.vsdx", "password")`.'
-    question: Does the library support password‑protected Visio files?
-  - answer: Use the `removeWatermarks` method with appropriate selectors to delete
-      specific watermarks without affecting other content.
-    question: Is it possible to remove an existing watermark?
-  - answer: Iterate over a directory with a simple `for` loop, applying the same watermark
-      options to each file and saving with a unique name.
-    question: How do I automate watermarking for a batch of Visio files?
-  - answer: The library runs on Windows, Linux, and macOS, and is compatible with
-      any Java‑compatible environment, including Docker containers.
-    question: What platforms are supported?
-  type: FAQPage
-tags:
-- watermark Visio
-- GroupDocs.Watermark
-- Java diagram processing
-- add watermark to Visio diagram
-title: Tambahkan watermark ke diagram Visio menggunakan GroupDocs.Watermark Java
+date: 2026-02-16
+description: Tutorial langkah demi langkah untuk menambahkan watermark pada diagram
+  Visio menggunakan GroupDocs.Watermark untuk Java, mencakup watermark teks, gambar,
+  header/footer, dan bentuk.
+title: Menambahkan Watermark Visio – Tutorial Penandaan Diagram untuk GroupDocs.Watermark
+  Java
 type: docs
 url: /id/java/diagram-document-watermarking/
 weight: 10
 ---
 
-# Tambahkan watermark ke diagram Visio menggunakan GroupDocs.Watermark Java
+# Tambahkan Watermark Visio – Tutorial Watermark Diagram untuk GroupDocs.Watermark Java
 
-Dalam tutorial komprehensif ini Anda akan belajar cara **menambahkan watermark ke diagram Visio** menggunakan pustaka GroupDocs.Watermark untuk Java. Baik Anda perlu menyematkan merek, melindungi kekayaan intelektual, atau mematuhi kebijakan perusahaan, panduan ini akan membawa Anda melalui proses lengkap—mulai dari menyiapkan SDK hingga menerapkan watermark teks, gambar, dan bentuk sambil mempertahankan tata letak diagram asli.
+Dalam panduan ini, Anda akan belajar cara **menambahkan watermark Visio** pada diagram menggunakan GroupDocs.Watermark untuk Java, memastikan aset visual Anda tetap terlindungi, bermerek, dan sesuai dengan kebijakan perusahaan. Baik Anda perlu menempatkan overlay teks yang halus, mengganti gambar secara otomatis, atau mengelola header dan footer, tutorial ini akan memandu Anda melalui setiap langkah dengan kode Java yang siap produksi.
 
 ## Jawaban Cepat
-- **Perpustakaan mana yang menambahkan watermark ke diagram Visio?** GroupDocs.Watermark untuk Java.  
-- **Apakah saya dapat menambahkan watermark pada halaman dan bentuk individual?** Ya, Anda dapat menargetkan seluruh halaman, tipe halaman tertentu, atau bentuk individual.  
-- **Apakah saya memerlukan lisensi untuk penggunaan produksi?** Lisensi komersial diperlukan untuk produksi; lisensi sementara tersedia untuk pengujian.  
-- **Format file apa yang didukung?** Lebih dari 30 format diagram, termasuk VSDX, VDX, VSSX, dan VSTX.  
-- **Apakah API thread‑safe?** Ya, pustaka ini dirancang untuk penggunaan bersamaan dalam aplikasi multi‑thread.
+- **Apa arti “add watermark Visio”?** Ini merujuk pada penyisipan watermark teks atau gambar ke dalam file Microsoft Visio (.vsdx) untuk melindungi hak kekayaan intelektual.  
+- **Perpustakaan mana yang menangani ini?** GroupDocs.Watermark untuk Java menyediakan Fluent API untuk watermark Visio.  
+- **Apakah saya memerlukan lisensi?** Lisensi sementara dapat digunakan untuk pengujian; lisensi penuh diperlukan untuk penggunaan produksi.  
+- **Bisakah saya menargetkan halaman atau bentuk tertentu?** Ya—watermark dapat diterapkan pada halaman yang dipilih, tipe halaman, atau bentuk individual.  
+- **Apakah API kompatibel dengan Java 17?** Tentu saja; perpustakaan mendukung Java 8 hingga 17.
 
-## Apa itu menambahkan watermark ke diagram Visio?
-*Add watermark to Visio diagram* mengacu pada proses menyisipkan secara programatis tanda yang terlihat atau tidak terlihat ke dalam file Microsoft Visio. Tanda-tanda ini dapat berupa teks, gambar, atau bentuk yang mengidentifikasi pemilik dokumen, menyampaikan pembatasan penggunaan, atau memberikan merek. Watermark disimpan dalam struktur file tanpa mengubah tata letak diagram asli.
+## Apa itu “add watermark Visio”?
+Menambahkan watermark ke diagram Visio berarti menyisipkan lapisan teks atau gambar semi‑transparan yang muncul di atas (atau di belakang) elemen gambar yang ada. Teknik ini membantu Anda menegaskan kepemilikan, menyampaikan kerahasiaan, atau memberikan branding tanpa mengubah desain asli.
 
 ## Mengapa menggunakan GroupDocs.Watermark untuk Java?
-GroupDocs.Watermark mendukung **lebih dari 30 format diagram** dan dapat memproses file hingga **500 MB** tanpa memuat seluruh dokumen ke memori, menghasilkan **hingga 40 % penggunaan CPU yang lebih rendah** dibandingkan pendekatan berbasis gambar manual. Pustaka ini juga menawarkan OCR bawaan untuk ekstraksi teks, memastikan watermark ditempatkan secara akurat bahkan pada bentuk yang kompleks.
+- **Dukungan Visio native** – Menangani .vsdx, .vsd, dan format Visio lainnya secara langsung.  
+- **Kontrol halus** – Menargetkan halaman, tipe halaman, bentuk, header, dan footer secara individual.  
+- **Dioptimalkan untuk kinerja** – Memproses diagram besar dengan cepat dan penggunaan memori rendah.  
+- **Cross‑platform** – Berfungsi pada lingkungan kompatibel JVM apa pun, mulai dari aplikasi desktop hingga layanan cloud.
 
 ## Prasyarat
-- Java 17 atau lebih baru terpasang di mesin pengembangan Anda.  
-- Maven 3.6+ (atau Gradle) untuk manajemen dependensi.  
-- Lisensi GroupDocs.Watermark untuk Java yang valid (lisensi sementara dapat digunakan untuk evaluasi).  
-- Akses ke file Visio (.vsdx) yang ingin Anda lindungi.
+- Java 8 atau lebih tinggi (Java 17 direkomendasikan).  
+- JAR GroupDocs.Watermark untuk Java (unduh dari situs resmi).  
+- Kunci lisensi GroupDocs sementara atau penuh yang valid.  
 
-## Cara menambahkan watermark ke diagram Visio langkah demi langkah
+## Ikhtisar Langkah‑per‑Langkah
 
-Muat file Visio, konfigurasikan opsi watermark, dan simpan hasilnya. Bagian-bagian berikut menjelaskan setiap langkah secara detail.
+### Langkah 1: Siapkan Proyek
+Tambahkan JAR GroupDocs.Watermark ke classpath proyek Anda (Maven, Gradle, atau penambahan manual *.jar). Inisialisasi `Watermarker` dengan file Visio dan lisensi Anda.
 
-### Cara memuat diagram Visio di Java?
-Buat objek `Watermark` dan arahkan ke file sumber.  
-```java
-Watermark watermark = new Watermark("input.vsdx");
-```  
-Kelas `Watermark` adalah titik masuk untuk semua operasi pada file diagram.
+### Langkah 2: Pilih Tipe Watermark
+Tentukan apakah Anda memerlukan **watermark teks** (mis., “Confidential”) atau **watermark gambar** (mis., logo perusahaan). API menyediakan objek `TextWatermark` dan `ImageWatermark` yang dapat Anda konfigurasikan (opacity, rotasi, warna, dll.).
 
-### Cara mengkonfigurasi watermark teks?
-Tentukan teks, font, warna, dan opasitas.  
-```java
-TextWatermarkOptions textOptions = new TextWatermarkOptions();
-textOptions.setText("Confidential");
-textOptions.setFont(new Font("Arial", FontStyle.BOLD, 36));
-textOptions.setColor(Color.RED);
-textOptions.setOpacity(0.5);
-```  
-Opsi-opsi ini memastikan watermark dapat dibaca namun semi‑transparan.
+### Langkah 3: Target Halaman atau Bentuk Tertentu
+Gunakan `DiagramPageSelector` atau `DiagramShapeSelector` untuk membatasi watermark pada halaman tertentu, tipe halaman, atau bentuk. Ini berguna ketika Anda hanya ingin melindungi halaman sampul atau elemen diagram tertentu.
 
-### Cara menerapkan watermark ke halaman tertentu?
-Pilih halaman berdasarkan indeks atau tipe halaman (misalnya, halaman latar belakang).  
-```java
-watermark.addTextWatermark(textOptions, new PageSelector().includePages(0, 2));
-```  
-`PageSelector` memungkinkan Anda menyesuaikan secara tepat di mana watermark muncul.
+### Langkah 4: Terapkan Watermark
+Panggil `watermarker.add(watermark, selector)` untuk menyisipkan watermark. Operasi ini tidak mengubah tata letak asli; watermark dirender sebagai overlay.
 
-### Cara menambahkan watermark pada bentuk individual?
-Ambil bentuk dari sebuah halaman dan terapkan overlay gambar atau teks.  
-```java
-Shape shape = watermark.getPage(0).getShapeById("ShapeId123");
-shape.addTextWatermark("Draft", textOptions);
-```  
-Menargetkan bentuk berguna untuk memberi label pada komponen spesifik dalam diagram.
+### Langkah 5: Simpan Diagram yang Diperbarui
+Simpan file Visio yang telah dimodifikasi ke lokasi baru atau timpa yang asli, tergantung pada kebutuhan alur kerja Anda.
 
-### Cara menyimpan diagram yang telah di-watermark?
-Pilih format output dan tulis file.  
-```java
-watermark.save("output.vsdx", SaveFormat.VSDX);
-```  
-Metode `save` menulis diagram yang dimodifikasi sambil mempertahankan semua metadata asli.
+> **Pro tip:** Selalu simpan cadangan file Visio asli sebelum menerapkan watermark, terutama saat mengotomatisasi proses batch.
 
-## Masalah umum dan solusi
-- **Watermark tidak terlihat pada halaman tertentu** – Pastikan selector halaman mencakup halaman yang diinginkan; halaman latar belakang memerlukan flag `includeBackgroundPages(true)`.  
-- **Penurunan kinerja pada file besar** – Aktifkan mode streaming dengan `watermark.enableStreaming(true)` untuk menjaga penggunaan memori tetap rendah.  
-- **Rendering font yang tidak tepat** – Pastikan sistem target memiliki font terpasang atau sematkan font menggunakan `textOptions.setEmbedFont(true)`.
+## Kasus Penggunaan Umum
+- **Perlindungan merek:** Sisipkan logo perusahaan pada setiap diagram Visio yang diekspor.  
+- **Pemberitahuan kerahasiaan:** Tambahkan teks “Draft – Do Not Distribute” pada skematik internal.  
+- **Kontrol versi:** Cap diagram dengan nomor versi atau tanggal secara otomatis.  
+- **Kepatuhan regulasi:** Sisipkan footer legal wajib di semua halaman.
 
-## Pertanyaan yang sering diajukan
+## Pemecahan Masalah & Jebakan
+- **Font hilang:** Jika file Visio menggunakan font khusus, pastikan font tersebut terpasang di server; jika tidak, watermark mungkin terrender tidak benar.  
+- **File besar:** Untuk diagram lebih besar dari 50 MB, pertimbangkan menggunakan streaming API untuk mengurangi konsumsi memori.  
+- **Masalah opacity:** Opacity yang sangat rendah dapat membuat watermark tidak terlihat pada latar belakang yang kompleks; uji dengan rentang opacity 30‑40 %.
 
-**Q: Bisakah saya menambahkan watermark teks dan gambar sekaligus pada diagram yang sama?**  
-A: Ya, Anda dapat menautkan beberapa pemanggilan `addTextWatermark` dan `addImageWatermark` pada instance `Watermark` yang sama.
+## Tutorial yang Tersedia
 
-**Q: Apakah pustaka ini mendukung file Visio yang dilindungi password?**  
-A: Tentu saja. Berikan password saat membuat objek `Watermark`: `new Watermark("file.vsdx", "password")`.
+### [Tambahkan Watermark Teks ke Diagram Menggunakan GroupDocs.Watermark untuk Java&#58; Panduan Komprehensif](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
+Pelajari cara menambahkan watermark teks ke diagram dengan GroupDocs.Watermark untuk Java. Lindungi konten visual Anda secara efektif dan pastikan integritas dokumen.
 
-**Q: Apakah memungkinkan menghapus watermark yang sudah ada?**  
-A: Gunakan metode `removeWatermarks` dengan selector yang sesuai untuk menghapus watermark tertentu tanpa memengaruhi konten lain.
+### [Edit Header & Footer Diagram di Java Menggunakan GroupDocs.Watermark&#58; Panduan Komprehensif](./edit-diagram-headers-footers-groupdocs-watermark-java/)
+Pelajari cara mengedit header dan footer diagram menggunakan GroupDocs.Watermark untuk Java. Ikuti panduan langkah‑demi‑langkah ini untuk meningkatkan dokumen Anda.
 
-**Q: Bagaimana cara mengotomatiskan watermarking untuk sekumpulan file Visio?**  
-A: Iterasi melalui direktori dengan loop `for` sederhana, menerapkan opsi watermark yang sama pada setiap file dan menyimpan dengan nama unik.
+### [Ekstrak Header & Footer dari Diagram Visio Menggunakan GroupDocs.Watermark untuk Java](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
+Pelajari cara mengekstrak header dan footer secara efisien, termasuk pengaturan font dan konten teks dari diagram Microsoft Visio menggunakan GroupDocs.Watermark untuk Java.
 
-**Q: Platform apa yang didukung?**  
-A: Pustaka ini berjalan di Windows, Linux, dan macOS, serta kompatibel dengan lingkungan Java apa pun, termasuk kontainer Docker.
+### [Ekstrak Informasi Bentuk dari Diagram Menggunakan GroupDocs.Watermark di Java](./retrieve-shape-info-groupdocs-watermark-java/)
+Pelajari cara menggunakan GroupDocs.Watermark untuk Java untuk mengambil informasi bentuk detail dari file diagram secara efisien. Tingkatkan kemampuan pemrosesan diagram Anda dengan panduan komprehensif ini.
 
-## Sumber daya tambahan
+### [Panduan Menambahkan Watermark ke Diagram Menggunakan GroupDocs.Watermark untuk Java](./add-watermarks-groupdocs-diagrams-java/)
+Pelajari cara melindungi diagram Anda dengan menambahkan watermark teks dan gambar menggunakan GroupDocs.Watermark untuk Java. Panduan langkah‑demi‑langkah untuk mengamankan hak kekayaan intelektual.
 
-Di bawah ini Anda akan menemukan rangkaian lengkap tutorial watermark diagram yang memperluas setiap topik yang dibahas di sini.
+### [Cara Menambahkan Watermark Teks ke Diagram Menggunakan GroupDocs.Watermark di Java](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
+Pelajari cara menambahkan watermark teks ke diagram menggunakan GroupDocs.Watermark untuk Java. Panduan ini mencakup penyiapan, implementasi, dan aplikasi praktis.
 
-### Tutorial yang tersedia
-- [Tambahkan Watermark Teks ke Diagram Menggunakan GroupDocs.Watermark untuk Java&#58; Panduan Komprehensif](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Edit Header & Footer Diagram di Java Menggunakan GroupDocs.Watermark&#58; Panduan Komprehensif](./edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Ekstrak Header & Footer dari Diagram Visio Menggunakan GroupDocs.Watermark untuk Java](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
-- [Ekstrak Informasi Bentuk dari Diagram Menggunakan GroupDocs.Watermark di Java](./retrieve-shape-info-groupdocs-watermark-java/)
-- [Panduan Menambahkan Watermark ke Diagram Menggunakan GroupDocs.Watermark untuk Java](./add-watermarks-groupdocs-diagrams-java/)
-- [Cara Menambahkan Watermark Teks ke Diagram Menggunakan GroupDocs.Watermark di Java](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Penggantian Gambar Master dalam Diagram dengan GroupDocs.Watermark untuk Java](./automate-image-replacement-groupdocs-watermark-java/)
-- [Manajemen Watermark Master dalam Diagram menggunakan GroupDocs.Watermark untuk Java](./manage-watermarks-groupdocs-java-diagrams/)
-- [Hapus Hyperlink dari Bentuk Diagram menggunakan GroupDocs.Watermark Java untuk Keamanan Dokumen yang Ditingkatkan](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
+### [Menguasai Penggantian Gambar dalam Diagram dengan GroupDocs.Watermark untuk Java](./automate-image-replacement-groupdocs-watermark-java/)
+Otomatisasi pembaruan gambar dalam diagram menggunakan GroupDocs.Watermark untuk Java untuk meningkatkan efisiensi dan akurasi. Pelajari cara menyederhanakan alur kerja Anda.
 
-### Sumber daya tambahan
+### [Menguasai Manajemen Watermark dalam Diagram menggunakan GroupDocs.Watermark untuk Java](./manage-watermarks-groupdocs-java-diagrams/)
+Pelajari cara mengelola watermark secara efisien dalam file diagram seperti .vsdx dengan GroupDocs.Watermark untuk Java. Tingkatkan integritas dokumen dan lindungi hak kekayaan intelektual.
+
+### [Hapus Hyperlink dari Bentuk Diagram menggunakan GroupDocs.Watermark Java untuk Keamanan Dokumen yang Ditingkatkan](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
+Pelajari cara menghapus hyperlink dari bentuk diagram dengan GroupDocs.Watermark di Java, memastikan keamanan dan kejelasan dokumen.
+
+## Sumber Daya Tambahan
+
 - [Dokumentasi GroupDocs.Watermark untuk Java](https://docs.groupdocs.com/watermark/java/)
 - [Referensi API GroupDocs.Watermark untuk Java](https://reference.groupdocs.com/watermark/java/)
 - [Unduh GroupDocs.Watermark untuk Java](https://releases.groupdocs.com/watermark/java/)
@@ -162,13 +103,25 @@ Di bawah ini Anda akan menemukan rangkaian lengkap tutorial watermark diagram ya
 - [Dukungan Gratis](https://forum.groupdocs.com/)
 - [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
 
+## Pertanyaan yang Sering Diajukan
+
+**Q: Bisakah saya menambahkan watermark teks dan gambar ke halaman Visio yang sama?**  
+A: Ya. Terapkan beberapa watermark secara berurutan; API merendernya sesuai urutan penambahan.
+
+**Q: Apakah memungkinkan untuk menghapus watermark yang ada secara programatis?**  
+A: Anda dapat mengambil watermark yang ada melalui `watermarker.getWatermarks()` dan menghapusnya menggunakan metode `remove`.
+
+**Q: Apakah perpustakaan mendukung file Visio yang dilindungi kata sandi?**  
+A: Tentu saja. Berikan kata sandi saat memuat dokumen dengan `Watermarker.load(filePath, password)`.
+
+**Q: Bagaimana saya memastikan watermark muncul di belakang konten diagram?**  
+A: Atur properti `zOrder` watermark ke nilai yang lebih rendah atau gunakan metode `addBackground` untuk watermark latar belakang.
+
+**Q: Versi GroupDocs.Watermark yang mana diperlukan untuk kompatibilitas Java 17?**  
+A: Versi 23.10 atau yang lebih baru sepenuhnya mendukung Java 17 dan spesifikasi file Visio terbaru.
+
 ---
 
-**Terakhir Diperbarui:** 2026-10-06  
-**Diuji Dengan:** GroupDocs.Watermark 23.10 untuk Java  
+**Terakhir Diperbarui:** 2026-02-16  
+**Diuji Dengan:** GroupDocs.Watermark for Java 23.10 
 **Penulis:** GroupDocs
-
-## Tutorial Terkait
-- [Tambahkan Watermark Teks ke Diagram Menggunakan GroupDocs.Watermark untuk Java: Panduan Komprehensif](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Cara Menambahkan Watermark Gambar di Java menggunakan GroupDocs.Watermark: Panduan Langkah demi Langkah](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [Terapkan Efek Gambar pada Watermark Bentuk di Java dengan GroupDocs.Watermark](/watermark/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/)

@@ -1,172 +1,117 @@
 ---
-date: 2026-10-06
-description: تعلم كيفية إضافة watermark إلى مخطط Visio باستخدام GroupDocs.Watermark
-  للغة Java. يوضح هذا الدليل text, image, and shape watermarks، مع الحفاظ على تخطيط
-  المخطط كما هو.
-keywords:
-- add watermark to visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking
-lastmod: 2026-10-06
-og_description: تعلم كيفية إضافة watermark إلى مخطط Visio باستخدام GroupDocs.Watermark
-  للغة Java. يوضح هذا الدليل text, image, and shape watermarks، مع الحفاظ على تخطيط
-  المخطط كما هو.
-og_image_alt: 'Developer guide: add watermark to Visio diagram using GroupDocs.Watermark
-  Java'
-og_title: إضافة watermark إلى مخطط Visio باستخدام GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to Visio diagram with GroupDocs.Watermark
-    for Java. This guide shows text, image, and shape watermarks, keeping diagram
-    layout intact.
-  headline: Add watermark to Visio diagram using GroupDocs.Watermark Java
-  type: TechArticle
-- questions:
-  - answer: Yes, you can chain multiple `addTextWatermark` and `addImageWatermark`
-      calls on the same `Watermark` instance.
-    question: Can I add both text and image watermarks to the same diagram?
-  - answer: 'Absolutely. Provide the password when constructing the `Watermark` object:
-      `new Watermark("file.vsdx", "password")`.'
-    question: Does the library support password‑protected Visio files?
-  - answer: Use the `removeWatermarks` method with appropriate selectors to delete
-      specific watermarks without affecting other content.
-    question: Is it possible to remove an existing watermark?
-  - answer: Iterate over a directory with a simple `for` loop, applying the same watermark
-      options to each file and saving with a unique name.
-    question: How do I automate watermarking for a batch of Visio files?
-  - answer: The library runs on Windows, Linux, and macOS, and is compatible with
-      any Java‑compatible environment, including Docker containers.
-    question: What platforms are supported?
-  type: FAQPage
-tags:
-- watermark Visio
-- GroupDocs.Watermark
-- Java diagram processing
-- add watermark to Visio diagram
-title: إضافة watermark إلى مخطط Visio باستخدام GroupDocs.Watermark Java
+date: 2026-02-16
+description: دروس خطوة بخطوة لإضافة علامة مائية إلى مخططات Visio باستخدام GroupDocs.Watermark
+ للغة Java، تغطي العلامات المائية النصية، والصورية، والرأس/التذييل، والرسومات.
+title: إضافة علامة مائية إلى Visio – دروس وضع العلامات المائية على المخططات لـ GroupDocs.Watermark
+  Java
 type: docs
 url: /ar/java/diagram-document-watermarking/
 weight: 10
 ---
 
-# إضافة علامة مائية إلى مخطط Visio باستخدام GroupDocs.Watermark Java
+# إضافة علامة مائية Visio – دروس وضع علامة مائية على المخططات لـ GroupDocs.Watermark Java
 
-في هذا الدرس الشامل ستتعلم كيفية **إضافة علامة مائية إلى مخطط Visio** باستخدام مكتبة GroupDocs.Watermark للغة Java. سواء كنت بحاجة إلى دمج العلامة التجارية، حماية الملكية الفكرية، أو الالتزام بسياسات الشركة، يشرح هذا الدليل العملية بالكامل — من إعداد SDK إلى تطبيق العلامات المائية النصية، الصورية، والشكلية مع الحفاظ على تخطيط المخطط الأصلي.
+في هذا الدليل، ستتعلم كيفية **add watermark Visio** للمخططات باستخدام GroupDocs.Watermark for Java، مما يضمن بقاء أصولك البصرية محمية ومُعلمة ومتوافقة مع سياسات الشركة. سواء كنت بحاجة إلى وضع طبقة نصية خفيفة، أو استبدال الصور تلقائيًا، أو إدارة رؤوس وتذييلات الصفحات، فإن هذه الدروس ستقودك خطوة بخطوة مع كود Java جاهز للإنتاج.
 
-## الإجابات السريعة
-- **أي مكتبة تضيف علامات مائية إلى مخططات Visio؟** GroupDocs.Watermark for Java.  
-- **هل يمكنني إضافة علامة مائية لكل من الصفحات والأشكال الفردية؟** نعم، يمكنك استهداف الصفحات بالكامل، أنواع الصفحات المحددة، أو الأشكال الفردية.  
-- **هل أحتاج إلى ترخيص للاستخدام في الإنتاج؟** يلزم ترخيص تجاري للإنتاج؛ يتوفر ترخيص مؤقت للاختبار.  
-- **ما هي صيغ الملفات المدعومة؟** أكثر من 30 صيغة مخطط، بما في ذلك VSDX و VDX و VSSX و VSTX.  
-- **هل الـ API آمن للخطوط المتعددة؟** نعم، تم تصميم المكتبة للاستخدام المتزامن في التطبيقات متعددة الخيوط.
+## إجابات سريعة
+- **What does “add watermark Visio” mean?** يشير إلى دمج علامات مائية نصية أو صورة داخل ملفات Microsoft Visio (.vsdx) لحماية الملكية الفكرية.  
+- **Which library handles this?** GroupDocs.Watermark for Java يوفر API سلسة لتطبيق العلامات المائية على Visio.  
+- **Do I need a license?** رخصة مؤقتة تعمل للاختبار؛ رخصة كاملة مطلوبة للاستخدام في الإنتاج.  
+- **Can I target specific pages or shapes?** نعم—يمكن تطبيق العلامات المائية على صفحات مختارة، أنواع الصفحات، أو أشكال فردية.  
+- **Is the API compatible with Java 17?** بالتأكيد؛ المكتبة تدعم Java 8 حتى 17.
 
-## ما هي إضافة علامة مائية إلى مخطط Visio؟
-*إضافة علامة مائية إلى مخطط Visio* تشير إلى عملية إدراج علامات مرئية أو غير مرئية برمجياً داخل ملف Microsoft Visio. يمكن أن تشمل هذه العلامات نصًا، صورًا، أو أشكالًا تحدد مالك المستند، تنقل قيود الاستخدام، أو توفر العلامة التجارية. تُخزن العلامة المائية داخل بنية الملف دون تعديل تخطيط المخطط الأصلي.
+## ما هو “add watermark Visio”؟
+إضافة علامة مائية إلى مخطط Visio تعني إدراج طبقة نصية أو صورة شبه شفافة تظهر فوق (أو خلف) العناصر الرسومية الحالية. تساعدك هذه التقنية على تأكيد الملكية، نقل السرية، أو تقديم العلامة التجارية دون تعديل التصميم الأصلي.
 
-## لماذا تستخدم GroupDocs.Watermark للغة Java؟
-يدعم GroupDocs.Watermark **أكثر من 30 صيغة مخطط** ويمكنه معالجة ملفات تصل إلى **500 ميغابايت** دون تحميل المستند بالكامل في الذاكرة، مما يؤدي إلى **انخفاض استهلاك المعالج بنسبة تصل إلى 40 %** مقارنةً بالطرق اليدوية القائمة على الصور. كما توفر المكتبة تقنية OCR مدمجة لاستخراج النص، مما يضمن وضع العلامات المائية بدقة حتى على الأشكال المعقدة.
+## لماذا تستخدم GroupDocs.Watermark for Java؟
+- **دعم Visio الأصلي** – يتعامل مع .vsdx، .vsd، وغيرها من صيغ Visio مباشرة.  
+- **تحكم دقيق** – استهداف الصفحات، أنواع الصفحات، الأشكال، الرؤوس، والتذييلات بشكل فردي.  
+- **أداء مُحسّن** – يعالج المخططات الكبيرة بسرعة مع استهلاك منخفض للذاكرة.  
+- **متعدد المنصات** – يعمل على أي بيئة متوافقة مع JVM، من التطبيقات المكتبية إلى الخدمات السحابية.
 
 ## المتطلبات المسبقة
-- Java 17 أو أحدث مثبت على جهاز التطوير الخاص بك.  
-- Maven 3.6+ (أو Gradle) لإدارة التبعيات.  
-- ترخيص صالح لـ GroupDocs.Watermark للغة Java (الترخيص المؤقت يعمل للتقييم).  
-- الوصول إلى ملف Visio (.vsdx) الذي تريد حمايته.
+- Java 8 أو أعلى (يفضل Java 17).  
+- ملف JAR الخاص بـ GroupDocs.Watermark for Java (تحميل من الموقع الرسمي).  
+- مفتاح رخصة GroupDocs صالح مؤقت أو كامل.  
 
-## كيفية إضافة علامة مائية إلى مخطط Visio خطوة بخطوة
+## نظرة عامة خطوة بخطوة
 
-قم بتحميل ملف Visio، ضبط خيارات العلامة المائية، وحفظ النتيجة. الأقسام التالية تصف كل خطوة بالتفصيل.
+### الخطوة 1: إعداد المشروع
+أضف ملف JAR الخاص بـ GroupDocs.Watermark إلى مسار الفئة في مشروعك (Maven، Gradle، أو إضافة *.jar يدويًا). قم بتهيئة `Watermarker` مع ملف Visio الخاص بك والرخصة.
 
-### كيفية تحميل مخطط Visio في Java؟
-Create a `Watermark` object and point it to the source file.  
-```java
-Watermark watermark = new Watermark("input.vsdx");
-```  
-فئة `Watermark` هي نقطة الدخول لجميع العمليات على ملفات المخططات.
+### الخطوة 2: اختيار نوع العلامة المائية
+حدد ما إذا كنت تحتاج إلى **text watermark** (مثال: “Confidential”) أو **image watermark** (مثال: شعار الشركة). توفر API كائنات `TextWatermark` و `ImageWatermark` التي يمكنك ضبطها (الشفافية، الدوران، اللون، إلخ).
 
-### كيفية ضبط علامة مائية نصية؟
-Define the text, font, color, and opacity.  
-```java
-TextWatermarkOptions textOptions = new TextWatermarkOptions();
-textOptions.setText("Confidential");
-textOptions.setFont(new Font("Arial", FontStyle.BOLD, 36));
-textOptions.setColor(Color.RED);
-textOptions.setOpacity(0.5);
-```  
-هذه الخيارات تضمن أن تكون العلامة المائية مقروءة ولكن شبه شفافة.
+### الخطوة 3: استهداف صفحات أو أشكال محددة
+استخدم `DiagramPageSelector` أو `DiagramShapeSelector` لتقليل تطبيق العلامة المائية إلى صفحات معينة، أنواع الصفحات، أو أشكال محددة. هذا مفيد عندما تريد حماية صفحة الغلاف فقط أو عنصر مخطط معين.
 
-### كيفية تطبيق العلامة المائية على صفحات محددة؟
-Select pages by index or by page type (e.g., background pages).  
-```java
-watermark.addTextWatermark(textOptions, new PageSelector().includePages(0, 2));
-```  
-تتيح لك `PageSelector` ضبط المكان بدقة التي تظهر فيه العلامة المائية.
+### الخطوة 4: تطبيق العلامة المائية
+استدعِ `watermarker.add(watermark, selector)` لدمج العلامة المائية. العملية لا تغير التخطيط الأصلي؛ تُعرض العلامة المائية كطبقة فوقية.
 
-### كيفية إضافة علامة مائية إلى أشكال فردية؟
-Retrieve shapes from a page and apply an image or text overlay.  
-```java
-Shape shape = watermark.getPage(0).getShapeById("ShapeId123");
-shape.addTextWatermark("Draft", textOptions);
-```  
-استهداف الأشكال مفيد لتسمية مكونات محددة داخل المخطط.
+### الخطوة 5: حفظ المخطط المحدث
+احفظ ملف Visio المعدل في موقع جديد أو استبدل الأصلي، حسب متطلبات سير العمل لديك.
 
-### كيفية حفظ المخطط الممّوّج بالعلامة المائية؟
-Choose the output format and write the file.  
-```java
-watermark.save("output.vsdx", SaveFormat.VSDX);
-```  
-طريقة `save` تكتب المخطط المعدل مع الحفاظ على جميع البيانات الوصفية الأصلية.
+> **نصيحة احترافية:** احرص دائمًا على الاحتفاظ بنسخة احتياطية من ملف Visio الأصلي قبل تطبيق العلامات المائية، خاصةً عند أتمتة عمليات الدُفعات.
 
-## المشكلات الشائعة والحلول
-- **العلامة المائية غير مرئية على صفحات معينة** – تحقق من أن محدد الصفحات يشمل الصفحات المطلوبة؛ الصفحات الخلفية تتطلب العلم `includeBackgroundPages(true)`.  
-- **تباطؤ الأداء على ملفات كبيرة** – فعّل وضع البث مع `watermark.enableStreaming(true)` للحفاظ على انخفاض استهلاك الذاكرة.  
-- **عرض الخط غير صحيح** – تأكد من تثبيت الخط على النظام المستهدف أو دمج الخط باستخدام `textOptions.setEmbedFont(true)`.
+## حالات الاستخدام الشائعة
+- **حماية العلامة التجارية:** دمج شعارات الشركة على كل مخطط Visio مُصدّر.  
+- **إشعارات السرية:** إضافة نص “Draft – Do Not Distribute” إلى المخططات الداخلية.  
+- **التحكم في الإصدارات:** ختم المخطط برقم الإصدار أو التاريخ تلقائيًا.  
+- **الامتثال التنظيمي:** إدراج تذييلات قانونية إلزامية عبر جميع الصفحات.
 
-## الأسئلة المتكررة
+## استكشاف الأخطاء وإصلاحها & المزالق
+- **الخطوط المفقودة:** إذا كان ملف Visio يستخدم خطوطًا مخصصة، تأكد من تثبيتها على الخادم؛ وإلا قد تُعرض العلامة المائية بشكل غير صحيح.  
+- **الملفات الكبيرة:** للمخططات التي يزيد حجمها عن 50 ميغابايت، فكر في استخدام API البث لتقليل استهلاك الذاكرة.  
+- **مشكلات الشفافية:** الشفافية المنخفضة جدًا قد تجعل العلامة المائية غير مرئية على خلفيات معقدة؛ اختبر بنطاق شفافية 30‑40 ٪.
 
-**س: هل يمكنني إضافة كل من العلامات المائية النصية والصورية إلى نفس المخطط؟**  
-ج: نعم، يمكنك ربط عدة استدعاءات `addTextWatermark` و `addImageWatermark` على نفس كائن `Watermark`.
+## الدروس المتاحة
 
-**س: هل تدعم المكتبة ملفات Visio المحمية بكلمة مرور؟**  
-ج: بالتأكيد. قدم كلمة المرور عند إنشاء كائن `Watermark`: `new Watermark("file.vsdx", "password")`.
+### [إضافة علامات مائية نصية إلى المخططات باستخدام GroupDocs.Watermark for Java: دليل شامل](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
 
-**س: هل يمكن إزالة علامة مائية موجودة؟**  
-ج: استخدم طريقة `removeWatermarks` مع المحددات المناسبة لحذف علامات مائية معينة دون التأثير على المحتوى الآخر.
+### [تحرير رؤوس وتذييلات المخططات في Java باستخدام GroupDocs.Watermark: دليل شامل](./edit-diagram-headers-footers-groupdocs-watermark-java/)
 
-**س: كيف يمكنني أتمتة وضع العلامات المائية لمجموعة من ملفات Visio؟**  
-ج: كرّر عبر دليل باستخدام حلقة `for` بسيطة، مع تطبيق نفس خيارات العلامة المائية على كل ملف وحفظه باسم فريد.
+### [استخراج الرؤوس والتذييلات من مخططات Visio باستخدام GroupDocs.Watermark for Java](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
 
-**س: ما هي المنصات المدعومة؟**  
-ج: تعمل المكتبة على Windows و Linux و macOS، وهي متوافقة مع أي بيئة تدعم Java، بما في ذلك حاويات Docker.
+### [استخراج معلومات الأشكال من المخططات باستخدام GroupDocs.Watermark في Java](./retrieve-shape-info-groupdocs-watermark-java/)
+
+### [دليل إضافة علامات مائية إلى المخططات باستخدام GroupDocs.Watermark for Java](./add-watermarks-groupdocs-diagrams-java/)
+
+### [كيفية إضافة علامات مائية نصية إلى المخططات باستخدام GroupDocs.Watermark في Java](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
+
+### [إتقان استبدال الصور في المخططات باستخدام GroupDocs.Watermark for Java](./automate-image-replacement-groupdocs-watermark-java/)
+
+### [إتقان إدارة العلامات المائية في المخططات باستخدام GroupDocs.Watermark for Java](./manage-watermarks-groupdocs-java-diagrams/)
+
+### [إزالة الروابط التشعبية من أشكال المخططات باستخدام GroupDocs.Watermark Java لتعزيز أمان المستند](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
 
 ## موارد إضافية
 
-أدناه ستجد مجموعة كاملة من دروس وضع العلامات المائية على المخططات التي توسّع كل موضوع مغطى هنا.
-
-### الدروس المتاحة
-- [إضافة علامات مائية نصية إلى المخططات باستخدام GroupDocs.Watermark للغة Java: دليل شامل](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [تحرير رؤوس وتذييلات المخطط في Java باستخدام GroupDocs.Watermark: دليل شامل](./edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [استخراج رؤوس وتذييلات من مخططات Visio باستخدام GroupDocs.Watermark للغة Java](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
-- [استخراج معلومات الشكل من المخططات باستخدام GroupDocs.Watermark في Java](./retrieve-shape-info-groupdocs-watermark-java/)
-- [دليل لإضافة علامات مائية إلى المخططات باستخدام GroupDocs.Watermark للغة Java](./add-watermarks-groupdocs-diagrams-java/)
-- [كيفية إضافة علامات مائية نصية إلى المخططات باستخدام GroupDocs.Watermark في Java](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [استبدال الصور المتقن في المخططات باستخدام GroupDocs.Watermark للغة Java](./automate-image-replacement-groupdocs-watermark-java/)
-- [إدارة العلامات المائية المتقنة في المخططات باستخدام GroupDocs.Watermark للغة Java](./manage-watermarks-groupdocs-java-diagrams/)
-- [إزالة الروابط التشعبية من أشكال المخطط باستخدام GroupDocs.Watermark Java لتعزيز أمان المستند](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-
-### موارد إضافية
-- [توثيق GroupDocs.Watermark للغة Java](https://docs.groupdocs.com/watermark/java/)
-- [مرجع API لـ GroupDocs.Watermark للغة Java](https://reference.groupdocs.com/watermark/java/)
-- [تحميل GroupDocs.Watermark للغة Java](https://releases.groupdocs.com/watermark/java/)
+- [توثيق GroupDocs.Watermark for Java](https://docs.groupdocs.com/watermark/java/)
+- [مرجع API لـ GroupDocs.Watermark for Java](https://reference.groupdocs.com/watermark/java/)
+- [تحميل GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
 - [منتدى GroupDocs.Watermark](https://forum.groupdocs.com/c/watermark)
 - [دعم مجاني](https://forum.groupdocs.com/)
-- [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
+- [رخصة مؤقتة](https://purchase.groupdocs.com/temporary-license/)
 
-**آخر تحديث:** 2026-10-06  
-**تم الاختبار مع:** GroupDocs.Watermark 23.10 for Java  
+## الأسئلة المتكررة
+
+**س: هل يمكنني إضافة كل من العلامات المائية النصية والصورية إلى نفس صفحة Visio؟**  
+ج: نعم. يمكنك تطبيق عدة علامات مائية بالتتابع؛ تقوم API بعرضها بالترتيب الذي تضيفه فيه.
+
+**س: هل من الممكن إزالة علامة مائية موجودة برمجيًا؟**  
+ج: يمكنك استرجاع العلامات المائية الحالية عبر `watermarker.getWatermarks()` وحذفها باستخدام طريقة `remove`.
+
+**س: هل تدعم المكتبة ملفات Visio المحمية بكلمة مرور؟**  
+ج: بالتأكيد. مرّر كلمة المرور عند تحميل المستند باستخدام `Watermarker.load(filePath, password)`.
+
+**س: كيف أضمن أن تظهر العلامة المائية خلف محتوى المخطط؟**  
+ج: اضبط خاصية `zOrder` للعلامة المائية إلى قيمة أقل أو استخدم طريقة `addBackground` للعلامات الخلفية.
+
+**س: ما الإصدار المطلوب من GroupDocs.Watermark لتوافق Java 17؟**  
+ج: الإصدار 23.10 أو أحدث يدعم بالكامل Java 17 وأحدث مواصفات ملفات Visio.
+
+---
+
+**آخر تحديث:** 2026-02-16  
+**تم الاختبار مع:** GroupDocs.Watermark for Java 23.10  
 **المؤلف:** GroupDocs
-
-## دروس ذات صلة
-- [إضافة علامات مائية نصية إلى المخططات باستخدام GroupDocs.Watermark للغة Java: دليل شامل](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [كيفية إضافة علامة مائية صورية في Java باستخدام GroupDocs.Watermark: دليل خطوة بخطوة](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [تطبيق تأثيرات الصور على علامات مائية الشكل في Java مع GroupDocs.Watermark](/watermark/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/)

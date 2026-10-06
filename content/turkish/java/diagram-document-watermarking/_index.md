@@ -1,177 +1,127 @@
 ---
-date: 2026-10-06
-description: GroupDocs.Watermark for Java ile Visio diyagramına watermark eklemeyi
-  öğrenin. Bu rehber, text, image ve shape watermark'larını gösterir, diyagram düzenini
-  bozmadan.
-keywords:
-- add watermark to visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking
-lastmod: 2026-10-06
-og_description: GroupDocs.Watermark for Java ile Visio diyagramına watermark eklemeyi
-  öğrenin. Bu rehber, text, image ve shape watermark'larını gösterir, diyagram düzenini
-  bozmadan.
-og_image_alt: 'Developer guide: add watermark to Visio diagram using GroupDocs.Watermark
-  Java'
-og_title: GroupDocs.Watermark Java kullanarak Visio diyagramına watermark ekleyin
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to Visio diagram with GroupDocs.Watermark
-    for Java. This guide shows text, image, and shape watermarks, keeping diagram
-    layout intact.
-  headline: Add watermark to Visio diagram using GroupDocs.Watermark Java
-  type: TechArticle
-- questions:
-  - answer: Yes, you can chain multiple `addTextWatermark` and `addImageWatermark`
-      calls on the same `Watermark` instance.
-    question: Can I add both text and image watermarks to the same diagram?
-  - answer: 'Absolutely. Provide the password when constructing the `Watermark` object:
-      `new Watermark("file.vsdx", "password")`.'
-    question: Does the library support password‑protected Visio files?
-  - answer: Use the `removeWatermarks` method with appropriate selectors to delete
-      specific watermarks without affecting other content.
-    question: Is it possible to remove an existing watermark?
-  - answer: Iterate over a directory with a simple `for` loop, applying the same watermark
-      options to each file and saving with a unique name.
-    question: How do I automate watermarking for a batch of Visio files?
-  - answer: The library runs on Windows, Linux, and macOS, and is compatible with
-      any Java‑compatible environment, including Docker containers.
-    question: What platforms are supported?
-  type: FAQPage
-tags:
-- watermark Visio
-- GroupDocs.Watermark
-- Java diagram processing
-- add watermark to Visio diagram
-title: GroupDocs.Watermark Java kullanarak Visio diyagramına watermark ekleyin
+date: 2026-02-16
+description: Java için GroupDocs.Watermark kullanarak Visio diyagramlarına filigran
+  ekleme adım adım öğreticileri, metin, resim, üstbilgi/altbilgi ve şekil filigranlarını
+  kapsar.
+title: Visio'ye Filigran Ekle – GroupDocs.Watermark Java için Diyagram Filigranlama
+  Eğitimleri
 type: docs
 url: /tr/java/diagram-document-watermarking/
 weight: 10
 ---
 
-# Visio diyagramına GroupDocs.Watermark Java kullanarak filigran ekleme
+# Visio'ya Su İşareti Ekle – GroupDocs.Watermark Java için Diyagram Su İşareti Eğitimleri
 
-Bu kapsamlı öğreticide, Java için GroupDocs.Watermark kütüphanesini kullanarak **Visio diyagramına filigran ekleme** dosyalarını nasıl yapacağınızı öğreneceksiniz. Markanızı yerleştirmeniz, fikri mülkiyeti korumanız veya kurumsal politikalarla uyum sağlamanız gerektiğinde, bu kılavuz SDK'yı kurmaktan metin, resim ve şekil filigranları uygulamaya kadar tüm süreci, orijinal diyagram düzenini koruyarak adım adım gösterir.
+Bu rehberde, GroupDocs.Watermark for Java kullanarak **add watermark Visio** diyagramlarına nasıl su işareti ekleneceğini öğrenecek, görsel varlıklarınızın korunmuş, markalı ve kurumsal politikalara uygun kalmasını sağlayacaksınız. Gizli bir metin katmanı yerleştirmeniz, görüntüleri otomatik olarak değiştirmeniz veya başlık ve altbilgileri yönetmeniz gerekse de, bu eğitimler net, üretim‑hazır Java kodlarıyla her adımı size gösterecek.
 
-## Hızlı cevaplar
-- **Visio diyagramlarına filigran ekleyen kütüphane hangisidir?** GroupDocs.Watermark for Java.  
-- **Hem sayfaları hem de tek tek şekilleri filigranlayabilir miyim?** Evet, tüm sayfaları, belirli sayfa türlerini veya tek tek şekilleri hedefleyebilirsiniz.  
-- **Üretim kullanımında lisansa ihtiyacım var mı?** Üretim için ticari bir lisans gereklidir; test için geçici bir lisans mevcuttur.  
-- **Hangi dosya formatları destekleniyor?** VSDX, VDX, VSSX ve VSTX dahil olmak üzere 30'dan fazla diyagram formatı.  
-- **API çok iş parçacıklı (thread‑safe) mı?** Evet, kütüphane çok iş parçacıklı uygulamalarda eşzamanlı kullanım için tasarlanmıştır.
+## Hızlı Yanıtlar
+- **“add watermark Visio” ne anlama geliyor?** Microsoft Visio (.vsdx) dosyalarına metin veya resim su işareti ekleyerek fikri mülkiyeti korumak anlamına gelir.  
+- **Hangi kütüphane bunu yapıyor?** GroupDocs.Watermark for Java, Visio su işareti eklemek için akıcı bir API sağlar.  
+- **Lisans gerekli mi?** Test amaçlı geçici bir lisans çalışır; üretim kullanımı için tam lisans gerekir.  
+- **Belirli sayfalara veya şekillere hedefleyebilir miyim?** Evet—su işaretleri seçili sayfalara, sayfa türlerine veya tek tek şekillere uygulanabilir.  
+- **API Java 17 ile uyumlu mu?** Kesinlikle; kütüphane Java 8 ‑ 17 arasını destekler.
 
-## Visio diyagramına filigran ekleme nedir?
-*Visio diyagramına filigran ekleme*, bir Microsoft Visio dosyasına programlı olarak görünür veya görünmez işaretler yerleştirme sürecini ifade eder. Bu işaretler, belgenin sahibini tanımlayan, kullanım kısıtlamalarını ileten veya markalaşma sağlayan metin, resim veya şekiller içerebilir. Filigran, orijinal diyagram düzenini değiştirmeden dosyanın yapısına kaydedilir.
+## “add watermark Visio” nedir?
+Bir Visio diyagramına su işareti eklemek, mevcut çizim öğelerinin üzerine (veya arkasına) yarı saydam bir metin veya resim katmanı yerleştirmek demektir. Bu teknik, sahipliğinizi belirtmenize, gizliliği iletmenize veya markanızı eklemenize olanak tanır; orijinal tasarımı değiştirmez.
 
-## Neden Java için GroupDocs.Watermark kullanmalı?
-GroupDocs.Watermark, **30+ diyagram formatını** destekler ve **500 MB**'a kadar dosyaları tüm belgeyi belleğe yüklemeden işleyebilir; bu, manuel görüntü‑tabanlı yaklaşımlara göre **%40'a kadar daha düşük CPU kullanımı** sağlar. Kütüphane ayrıca metin çıkarımı için yerleşik OCR sunar, böylece filigranlar karmaşık şekillerde bile doğru bir şekilde yerleştirilir.
+## Neden GroupDocs.Watermark for Java kullanmalı?
+- **Yerel Visio desteği** – .vsdx, .vsd ve diğer Visio formatlarını kutudan çıkar çıkmaz işler.  
+- **İnce ayar kontrolü** – Sayfaları, sayfa türlerini, şekilleri, başlıkları ve altbilgileri tek tek hedefleyebilirsiniz.  
+- **Performans‑optimizasyonu** – Büyük diyagramları düşük bellek tüketimiyle hızlıca işler.  
+- **Çapraz platform** – Masaüstü uygulamalardan bulut hizmetlerine, JVM‑uyumlu her ortamda çalışır.
 
 ## Önkoşullar
-- Geliştirme makinenizde Java 17 veya daha yeni bir sürüm yüklü olmalıdır.  
-- Bağımlılık yönetimi için Maven 3.6+ (veya Gradle).  
-- Geçerli bir GroupDocs.Watermark for Java lisansı (değerlendirme için geçici lisans çalışır).  
-- Koruma altına almak istediğiniz Visio (.vsdx) dosyasına erişim.
+- Java 8 veya üzeri (Java 17 önerilir).  
+- GroupDocs.Watermark for Java JAR (resmi siteden indirin).  
+- Geçerli bir GroupDocs geçici veya tam lisans anahtarı.  
 
-## Visio diyagramına filigran ekleme adım adım
+## Adım‑Adım Genel Bakış
 
-Visio dosyasını yükleyin, filigran seçeneklerini yapılandırın ve sonucu kaydedin. Aşağıdaki bölümler her adımı ayrıntılı olarak açıklar.
+### Adım 1: Projeyi Kurun
+GroupDocs.Watermark JAR dosyasını projenizin sınıf yoluna (Maven, Gradle veya manuel *.jar ekleme) ekleyin. `Watermarker` nesnesini Visio dosyanız ve lisansınızla başlatın.
 
-### Java'da Visio diyagramı nasıl yüklenir?
-Bir `Watermark` nesnesi oluşturun ve kaynak dosyaya yönlendirin.  
-```java
-Watermark watermark = new Watermark("input.vsdx");
-```  
-`Watermark` sınıfı, diyagram dosyalarındaki tüm işlemler için giriş noktasıdır.
+### Adım 2: Su İşareti Türünü Seçin
+**Metin su işareti** (ör. “Confidential”) mi yoksa **resim su işareti** (ör. şirket logosu) mi istediğinize karar verin. API, `TextWatermark` ve `ImageWatermark` nesnelerini (opaklık, dönüş, renk vb.) yapılandırmanıza olanak tanır.
 
-### Metin filigranı nasıl yapılandırılır?
-Metni, yazı tipini, rengi ve opaklığı tanımlayın.  
-```java
-TextWatermarkOptions textOptions = new TextWatermarkOptions();
-textOptions.setText("Confidential");
-textOptions.setFont(new Font("Arial", FontStyle.BOLD, 36));
-textOptions.setColor(Color.RED);
-textOptions.setOpacity(0.5);
-```  
-Bu seçenekler, filigranın okunabilir olmasını ancak yarı saydam kalmasını sağlar.
+### Adım 3: Belirli Sayfa veya Şekillere Hedefleyin
+Su işaretini belirli sayfalara, sayfa türlerine veya şekillere sınırlamak için `DiagramPageSelector` veya `DiagramShapeSelector` kullanın. Bu, yalnızca kapak sayfasını veya belirli bir diyagram öğesini korumak istediğinizde faydalıdır.
 
-### Filigranı belirli sayfalara nasıl uygularsınız?
-Sayfaları indeksine veya sayfa türüne göre seçin (ör. arka plan sayfaları).  
-```java
-watermark.addTextWatermark(textOptions, new PageSelector().includePages(0, 2));
-```  
-`PageSelector` filigranın tam olarak nerede görüneceğini ince ayar yapmanıza olanak tanır.
+### Adım 4: Su İşaretini Uygulayın
+`watermarker.add(watermark, selector)` metodunu çağırarak su işaretini ekleyin. İşlem, orijinal yerleşimi değiştirmez; su işareti bir katman olarak işlenir.
 
-### Tek tek şekillere nasıl filigran eklersiniz?
-Bir sayfadan şekilleri alın ve bir resim veya metin katmanı uygulayın.  
-```java
-Shape shape = watermark.getPage(0).getShapeById("ShapeId123");
-shape.addTextWatermark("Draft", textOptions);
-```  
-Şekillere hedefleme, diyagram içindeki belirli bileşenleri etiketlemek için kullanışlıdır.
+### Adım 5: Güncellenen Diyagramı Kaydedin
+Değiştirilmiş Visio dosyasını yeni bir konuma kaydedin veya iş akışınıza bağlı olarak orijinali üzerine yazın.
 
-### Filigranlı diyagramı nasıl kaydedersiniz?
-Çıktı formatını seçin ve dosyayı yazın.  
-```java
-watermark.save("output.vsdx", SaveFormat.VSDX);
-```  
-`save` yöntemi, tüm orijinal meta verileri koruyarak değiştirilmiş diyagramı yazar.
+> **İpucu:** Özellikle toplu işlemler otomatikleştirildiğinde, su işareti eklemeden önce orijinal Visio dosyasının bir yedeğini her zaman alın.
 
-## Yaygın sorunlar ve çözümler
-- **Filigran belirli sayfalarda görünmüyor** – Sayfa seçicinin istenen sayfaları içerdiğini doğrulayın; arka plan sayfaları `includeBackgroundPages(true)` bayrağını gerektirir.  
-- **Büyük dosyalarda performans yavaşlaması** – Bellek kullanımını düşük tutmak için `watermark.enableStreaming(true)` ile akış modunu etkinleştirin.  
-- **Yanlış yazı tipi render'ı** – Hedef sistemde yazı tipinin yüklü olduğundan emin olun veya `textOptions.setEmbedFont(true)` ile yazı tipini gömün.
+## Yaygın Kullanım Senaryoları
+- **Marka koruması:** Her dışa aktarılan Visio diyagramına şirket logolarını yerleştirin.  
+- **Gizlilik uyarıları:** İç şemalara “Taslak – Dağıtılmasın” metni ekleyin.  
+- **Sürüm kontrolü:** Diyagrama otomatik olarak bir sürüm numarası veya tarih damgası ekleyin.  
+- **Yasal uyumluluk:** Tüm sayfalara zorunlu yasal altbilgileri yerleştirin.
 
-## Sıkça sorulan sorular
+## Sorun Giderme ve Dikkat Edilmesi Gerekenler
+- **Eksik yazı tipleri:** Visio dosyası özel yazı tipleri kullanıyorsa, sunucuda bu yazı tiplerinin kurulu olduğundan emin olun; aksi takdirde su işareti hatalı görünebilir.  
+- **Büyük dosyalar:** 50 MB’dan büyük diyagramlar için bellek tüketimini azaltmak amacıyla akış (streaming) API’lerini kullanmayı düşünün.  
+- **Opaklık sorunları:** Çok düşük opaklık, karmaşık arka planlarda su işaretinin görünmez olmasına yol açabilir; %30‑%40 aralığında test edin.  
 
-**S: Aynı diyagrama hem metin hem de resim filigranı ekleyebilir miyim?**  
-C: Evet, aynı `Watermark` örneğinde birden fazla `addTextWatermark` ve `addImageWatermark` çağrısını zincirleyebilirsiniz.
+## Mevcut Eğitimler
 
-**S: Kütüphane şifre korumalı Visio dosyalarını destekliyor mu?**  
-C: Kesinlikle. `Watermark` nesnesini oluştururken şifreyi sağlayın: `new Watermark("file.vsdx", "password")`.
+### [Metin Su İşaretlerini Diyagramlara Eklemek için GroupDocs.Watermark for Java: Kapsamlı Rehber](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
+GroupDocs.Watermark for Java ile diyagramlara metin su işaretleri eklemeyi öğrenin. Görsel içeriğinizi etkili bir şekilde koruyun ve belge bütünlüğünü sağlayın.
 
-**S: Mevcut bir filigranı kaldırmak mümkün mü?**  
-C: Diğer içeriği etkilemeden belirli filigranları silmek için uygun seçicilerle `removeWatermarks` metodunu kullanın.
+### [Java’da Diagram Başlık ve Altbilgilerini Düzenlemek için GroupDocs.Watermark: Kapsamlı Rehber](./edit-diagram-headers-footers-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java kullanarak diagram başlık ve altbilgilerini düzenlemeyi öğrenin. Belgelerinizi geliştirmek için bu adım‑adım rehberi izleyin.
 
-**S: Visio dosyalarının bir topluluğu için filigranlamayı nasıl otomatikleştiririm?**  
-C: Basit bir `for` döngüsüyle bir dizini yineleyin, aynı filigran seçeneklerini her dosyaya uygulayın ve benzersiz bir adla kaydedin.
+### [Visio Diyagramlarından Başlık ve Altbilgileri Çıkarmak için GroupDocs.Watermark for Java](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java ile Microsoft Visio diyagramlarından başlık ve altbilgileri, yazı tipi ayarları ve metin içeriği dahil olmak üzere verimli bir şekilde çıkarmayı öğrenin.
 
-**S: Hangi platformlar destekleniyor?**  
-C: Kütüphane Windows, Linux ve macOS'ta çalışır ve Docker konteynerleri dahil olmak üzere herhangi bir Java‑uyumlu ortamla uyumludur.
+### [Diyagramlardan Şekil Bilgilerini Çıkarmak için GroupDocs.Watermark in Java Kullanımı](./retrieve-shape-info-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java’yı kullanarak diyagram dosyalarından ayrıntılı şekil bilgilerini verimli bir şekilde elde etmeyi öğrenin. Bu kapsamlı rehberle diyagram işleme yeteneklerinizi artırın.
 
-## Ek kaynaklar
+### [GroupDocs.Watermark for Java ile Diyagramlara Su İşareti Eklemek İçin Kılavuz](./add-watermarks-groupdocs-diagrams-java/)
+GroupDocs.Watermark for Java ile metin ve resim su işaretleri ekleyerek diyagramlarınızı korumayı öğrenin. Fikri mülkiyeti güvence altına almak için adım‑adım bir rehber.
 
-Aşağıda, burada ele alınan konuların her birini genişleten diyagram‑filigranlama öğreticilerinin tam setini bulacaksınız.
+### [Java’da GroupDocs.Watermark ile Diyagramlara Metin Su İşareti Eklemek](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java kullanarak diyagramlara metin su işareti eklemeyi öğrenin. Bu rehber kurulum, uygulama ve pratik kullanım örneklerini kapsar.
 
-### Mevcut öğreticiler
+### [GroupDocs.Watermark for Java ile Diyagramlarda Görüntü Değiştirmeyi Uzmanlıkla Yönetmek](./automate-image-replacement-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java ile diyagramlardaki görüntü güncellemelerini otomatikleştirerek verimliliği ve doğruluğu artırın. İş akışınızı nasıl sadeleştireceğinizi öğrenin.
 
-- [GroupDocs.Watermark for Java Kullanarak Diyagramlara Metin Filigranları Ekleme: Kapsamlı Rehber](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [GroupDocs.Watermark Kullanarak Java'da Diyagram Başlık ve Altbilgilerini Düzenleme: Kapsamlı Rehber](./edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [GroupDocs.Watermark for Java Kullanarak Visio Diyagramlarından Başlık ve Altbilgileri Çıkarma](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
-- [GroupDocs.Watermark ile Java'da Diyagramlardan Şekil Bilgilerini Çıkarma](./retrieve-shape-info-groupdocs-watermark-java/)
-- [GroupDocs.Watermark for Java Kullanarak Diyagramlara Filigran Ekleme Rehberi](./add-watermarks-groupdocs-diagrams-java/)
-- [GroupDocs.Watermark ile Java'da Diyagramlara Metin Filigranları Ekleme](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [GroupDocs.Watermark for Java ile Diyagramlarda Görüntü Değiştirmeyi Uzmanlıkla Yapma](./automate-image-replacement-groupdocs-watermark-java/)
-- [GroupDocs.Watermark for Java Kullanarak Diyagramlarda Filigran Yönetimini Uzmanlıkla Yapma](./manage-watermarks-groupdocs-java-diagrams/)
-- [GroupDocs.Watermark Java ile Diyagram Şekillerinden Hipermetin Bağlantılarını Kaldırma: Gelişmiş Belge Güvenliği](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
+### [GroupDocs.Watermark for Java ile Diyagramlarda Su İşareti Yönetimini Uzmanlıkla Yapmak](./manage-watermarks-groupdocs-java-diagrams/)
+GroupDocs.Watermark for Java ile .vsdx gibi diyagram dosyalarında su işaretlerini etkili bir şekilde yönetmeyi öğrenin. Belge bütünlüğünü artırın ve fikri mülkiyeti koruyun.
 
-### Ek kaynaklar
+### [GroupDocs.Watermark Java ile Diyagram Şekillerindeki Hipermetin Bağlantılarını Kaldırmak ve Belge Güvenliğini Artırmak](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
+GroupDocs.Watermark for Java kullanarak diyagram şekillerindeki hipermetin bağlantılarını kaldırmayı öğrenin; belge güvenliğini ve netliğini sağlayın.
 
-- [GroupDocs.Watermark for Java Belgeleri](https://docs.groupdocs.com/watermark/java/)
-- [GroupDocs.Watermark for Java API Referansı](https://reference.groupdocs.com/watermark/java/)
-- [GroupDocs.Watermark for Java'ı İndir](https://releases.groupdocs.com/watermark/java/)
-- [GroupDocs.Watermark Forumu](https://forum.groupdocs.com/c/watermark)
-- [Ücretsiz Destek](https://forum.groupdocs.com/)
-- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
+## Ek Kaynaklar
+
+- [GroupDocs.Watermark for Java Documentation](https://docs.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java API Reference](https://reference.groupdocs.com/watermark/java/)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark Forum](https://forum.groupdocs.com/c/watermark)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+## Sık Sorulan Sorular
+
+**S: Aynı Visio sayfasına hem metin hem de resim su işareti ekleyebilir miyim?**  
+C: Evet. Birden fazla su işaretini sırasıyla uygulayın; API, eklediğiniz sıraya göre render eder.
+
+**S: Mevcut bir su işaretini programlı olarak kaldırmak mümkün mü?**  
+C: `watermarker.getWatermarks()` ile mevcut su işaretlerini alabilir ve `remove` metodu ile silebilirsiniz.
+
+**S: Kütüphane şifre‑korumalı Visio dosyalarını destekliyor mu?**  
+C: Kesinlikle. Belgeyi `Watermarker.load(filePath, password)` ile yüklerken şifreyi iletin.
+
+**S: Su işaretinin diyagram içeriğinin arkasında görünmesini nasıl sağlarım?**  
+C: Su işaretinin `zOrder` özelliğini daha düşük bir değere ayarlayın veya arka plan su işaretleri için `addBackground` metodunu kullanın.
+
+**S: Java 17 uyumluluğu için hangi GroupDocs.Watermark sürümü gerekir?**  
+C: Versiyon 23.10 veya üzeri, Java 17 ve en yeni Visio dosya spesifikasyonlarını tam olarak destekler.
 
 ---
 
-**Son Güncelleme:** 2026-10-06  
-**Test Edilen Versiyon:** GroupDocs.Watermark 23.10 for Java  
+**Son Güncelleme:** 2026-02-16  
+**Test Edilen Versiyon:** GroupDocs.Watermark for Java 23.10  
 **Yazar:** GroupDocs
-
-## İlgili Öğreticiler
-
-- [GroupDocs.Watermark for Java Kullanarak Diyagramlara Metin Filigranları Ekleme: Kapsamlı Rehber](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [GroupDocs.Watermark Kullanarak Java'da Görüntü Filigranı Ekleme: Adım Adım Rehber](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [GroupDocs.Watermark ile Java'da Şekil Filigranlarına Görüntü Efektleri Uygulama](/watermark/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/)

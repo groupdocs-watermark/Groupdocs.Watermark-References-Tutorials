@@ -1,160 +1,91 @@
 ---
-date: 2026-10-06
-description: Apprenez comment ajouter un filigrane à un diagramme Visio avec GroupDocs.Watermark
-  pour Java. Ce guide montre les filigranes de texte, d'image et de forme, tout en
-  conservant la mise en page du diagramme.
-keywords:
-- add watermark to visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking
-lastmod: 2026-10-06
-og_description: Apprenez comment ajouter un filigrane à un diagramme Visio avec GroupDocs.Watermark
-  pour Java. Ce guide montre les filigranes de texte, d'image et de forme, tout en
-  conservant la mise en page du diagramme.
-og_image_alt: 'Developer guide: add watermark to Visio diagram using GroupDocs.Watermark
-  Java'
-og_title: Ajouter un filigrane à un diagramme Visio avec GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to Visio diagram with GroupDocs.Watermark
-    for Java. This guide shows text, image, and shape watermarks, keeping diagram
-    layout intact.
-  headline: Add watermark to Visio diagram using GroupDocs.Watermark Java
-  type: TechArticle
-- questions:
-  - answer: Yes, you can chain multiple `addTextWatermark` and `addImageWatermark`
-      calls on the same `Watermark` instance.
-    question: Can I add both text and image watermarks to the same diagram?
-  - answer: 'Absolutely. Provide the password when constructing the `Watermark` object:
-      `new Watermark("file.vsdx", "password")`.'
-    question: Does the library support password‑protected Visio files?
-  - answer: Use the `removeWatermarks` method with appropriate selectors to delete
-      specific watermarks without affecting other content.
-    question: Is it possible to remove an existing watermark?
-  - answer: Iterate over a directory with a simple `for` loop, applying the same watermark
-      options to each file and saving with a unique name.
-    question: How do I automate watermarking for a batch of Visio files?
-  - answer: The library runs on Windows, Linux, and macOS, and is compatible with
-      any Java‑compatible environment, including Docker containers.
-    question: What platforms are supported?
-  type: FAQPage
-tags:
-- watermark Visio
-- GroupDocs.Watermark
-- Java diagram processing
-- add watermark to Visio diagram
-title: Ajouter un filigrane à un diagramme Visio avec GroupDocs.Watermark Java
+date: 2026-02-16
+description: Tutoriels étape par étape pour ajouter des filigranes aux diagrammes
+  Visio en utilisant GroupDocs.Watermark pour Java, couvrant les filigranes de texte,
+  d’image, d’en-tête/pied de page et de forme.
+title: Ajouter un filigrane Visio – Tutoriels de filigrane de diagrammes pour GroupDocs.Watermark
+  Java
 type: docs
 url: /fr/java/diagram-document-watermarking/
 weight: 10
 ---
 
-# Ajouter un filigrane à un diagramme Visio avec GroupDocs.Watermark Java
+# Ajouter un filigrane Visio – Tutoriels de filigrane de diagrammes pour GroupDocs.Watermark Java
 
-Dans ce tutoriel complet, vous apprendrez comment **ajouter un filigrane à des fichiers de diagramme Visio** en utilisant la bibliothèque GroupDocs.Watermark pour Java. Que vous ayez besoin d’intégrer votre marque, de protéger la propriété intellectuelle ou de respecter les politiques d’entreprise, ce guide vous accompagne à travers le processus complet — de la configuration du SDK à l’application de filigranes texte, image et forme tout en préservant la mise en page originale du diagramme.
+Dans ce guide, vous apprendrez comment **ajouter un filigrane Visio** aux diagrammes en utilisant GroupDocs.Watermark pour Java, en veillant à ce que vos actifs visuels restent protégés, marqués et conformes aux politiques d'entreprise. Que vous ayez besoin de placer une superposition de texte discrète, de remplacer automatiquement des images ou de gérer les en-têtes et pieds de page, ces tutoriels vous guident à chaque étape avec du code Java prêt pour la production.
 
 ## Réponses rapides
-- **Quelle bibliothèque ajoute des filigranes aux diagrammes Visio ?** GroupDocs.Watermark for Java.  
-- **Puis-je appliquer des filigranes à la fois aux pages et aux formes individuelles ?** Oui, vous pouvez cibler des pages entières, des types de pages spécifiques ou des formes individuelles.  
-- **Ai-je besoin d’une licence pour une utilisation en production ?** Une licence commerciale est requise pour la production ; une licence temporaire est disponible pour les tests.  
-- **Quels formats de fichiers sont pris en charge ?** Plus de 30 formats de diagrammes, y compris VSDX, VDX, VSSX et VSTX.  
-- **L’API est‑elle thread‑safe ?** Oui, la bibliothèque est conçue pour une utilisation concurrente dans des applications multithread.
+- **Que signifie “add watermark Visio” ?** Il s’agit d’insérer des filigranes texte ou image dans des fichiers Microsoft Visio (.vsdx) afin de protéger la propriété intellectuelle.  
+- **Quelle bibliothèque gère cela ?** GroupDocs.Watermark for Java fournit une API fluide pour le filigrane de Visio.  
+- **Ai-je besoin d’une licence ?** Une licence temporaire fonctionne pour les tests ; une licence complète est requise pour une utilisation en production.  
+- **Puis-je cibler des pages ou des formes spécifiques ?** Oui — les filigranes peuvent être appliqués aux pages sélectionnées, aux types de pages ou aux formes individuelles.  
+- **L’API est‑elle compatible avec Java 17 ?** Absolument ; la bibliothèque prend en charge Java 8 à 17.
 
-## Qu’est‑ce que l’ajout de filigrane à un diagramme Visio ?
-*Ajouter un filigrane à un diagramme Visio* désigne le processus d’insertion programmatique de marques visibles ou invisibles dans un fichier Microsoft Visio. Ces marques peuvent inclure du texte, des images ou des formes qui identifient le propriétaire du document, indiquent des restrictions d’utilisation ou assurent la marque. Le filigrane est stocké dans la structure du fichier sans modifier la mise en page originale du diagramme.
+## Qu’est‑ce que “add watermark Visio” ?
+Ajouter un filigrane à un diagramme Visio signifie insérer une couche de texte ou d’image semi‑transparente qui apparaît au-dessus (ou derrière) les éléments de dessin existants. Cette technique vous aide à affirmer la propriété, à transmettre la confidentialité ou à fournir une image de marque sans modifier le design original.
 
 ## Pourquoi utiliser GroupDocs.Watermark pour Java ?
-GroupDocs.Watermark prend en charge **plus de 30 formats de diagrammes** et peut traiter des fichiers jusqu’à **500 Mo** sans charger l’ensemble du document en mémoire, ce qui entraîne **une réduction pouvant atteindre 40 % de l’utilisation du CPU** par rapport aux approches manuelles basées sur des images. La bibliothèque offre également une OCR intégrée pour l’extraction de texte, garantissant que les filigranes sont placés avec précision même sur des formes complexes.
+- **Prise en charge native de Visio** – Gère les formats .vsdx, .vsd et autres formats Visio dès le départ.  
+- **Contrôle granulaire** – Ciblez les pages, les types de pages, les formes, les en-têtes et les pieds de page individuellement.  
+- **Optimisé pour la performance** – Traite rapidement les grands diagrammes avec une faible utilisation de mémoire.  
+- **Cross‑platform** – Fonctionne sur tout environnement compatible JVM, des applications de bureau aux services cloud.
 
 ## Prérequis
-- Java 17 ou version ultérieure installé sur votre machine de développement.  
-- Maven 3.6+ (ou Gradle) pour la gestion des dépendances.  
-- Une licence valide GroupDocs.Watermark pour Java (une licence temporaire fonctionne pour l’évaluation).  
-- Accès au fichier Visio (.vsdx) que vous souhaitez protéger.
+- Java 8 ou supérieur (Java 17 recommandé).  
+- JAR GroupDocs.Watermark pour Java (téléchargez depuis le site officiel).  
+- Une clé de licence GroupDocs valide, temporaire ou complète.  
 
-## Comment ajouter un filigrane à un diagramme Visio étape par étape
+## Vue d’ensemble étape par étape
 
-Chargez le fichier Visio, configurez les options de filigrane et enregistrez le résultat. Les sections suivantes décrivent chaque étape en détail.
+### Étape 1 : Configurer le projet
+Ajoutez le JAR GroupDocs.Watermark au classpath de votre projet (Maven, Gradle ou ajout manuel du *.jar). Initialise le `Watermarker` avec votre fichier Visio et votre licence.
 
-### Comment charger un diagramme Visio en Java ?
-Créez un objet `Watermark` et pointez‑le vers le fichier source.  
-```java
-Watermark watermark = new Watermark("input.vsdx");
-```  
-La classe `Watermark` est le point d’entrée pour toutes les opérations sur les fichiers de diagramme.
+### Étape 2 : Choisir le type de filigrane
+Décidez si vous avez besoin d’un **filigrane texte** (p. ex., « Confidential ») ou d’un **filigrane image** (p. ex., le logo de l’entreprise). L’API fournit les objets `TextWatermark` et `ImageWatermark` que vous pouvez configurer (opacité, rotation, couleur, etc.).
 
-### Comment configurer un filigrane texte ?
-Définissez le texte, la police, la couleur et l’opacité.  
-```java
-TextWatermarkOptions textOptions = new TextWatermarkOptions();
-textOptions.setText("Confidential");
-textOptions.setFont(new Font("Arial", FontStyle.BOLD, 36));
-textOptions.setColor(Color.RED);
-textOptions.setOpacity(0.5);
-```  
-Ces options garantissent que le filigrane est lisible tout en restant semi‑transparent.
+### Étape 3 : Cibler des pages ou des formes spécifiques
+Utilisez le `DiagramPageSelector` ou le `DiagramShapeSelector` pour limiter le filigrane à des pages, types de pages ou formes particulières. Cela est utile lorsque vous ne souhaitez protéger que la page de garde ou un élément de diagramme spécifique.
 
-### Comment appliquer le filigrane à des pages spécifiques ?
-Sélectionnez les pages par indice ou par type de page (par ex., pages d’arrière‑plan).  
-```java
-watermark.addTextWatermark(textOptions, new PageSelector().includePages(0, 2));
-```  
-Le `PageSelector` vous permet d’ajuster précisément l’endroit où le filigrane apparaît.
+### Étape 4 : Appliquer le filigrane
+Appelez `watermarker.add(watermark, selector)` pour intégrer le filigrane. L’opération ne modifie pas la mise en page originale ; le filigrane est rendu comme une superposition.
 
-### Comment appliquer un filigrane aux formes individuelles ?
-Récupérez les formes d’une page et appliquez une superposition d’image ou de texte.  
-```java
-Shape shape = watermark.getPage(0).getShapeById("ShapeId123");
-shape.addTextWatermark("Draft", textOptions);
-```  
-Cibler les formes est utile pour étiqueter des composants spécifiques au sein d’un diagramme.
+### Étape 5 : Enregistrer le diagramme mis à jour
+Enregistrez le fichier Visio modifié à un nouvel emplacement ou écrasez l’original, selon les exigences de votre flux de travail.
 
-### Comment enregistrer le diagramme filigrané ?
-Choisissez le format de sortie et écrivez le fichier.  
-```java
-watermark.save("output.vsdx", SaveFormat.VSDX);
-```  
-La méthode `save` écrit le diagramme modifié tout en préservant toutes les métadonnées originales.
+> **Astuce :** Conservez toujours une sauvegarde du fichier Visio original avant d’appliquer des filigranes, surtout lors de l’automatisation de processus par lots.
 
-## Problèmes courants et solutions
-- **Filigrane non visible sur certaines pages** – Vérifiez que le sélecteur de pages inclut les pages souhaitées ; les pages d’arrière‑plan nécessitent le drapeau `includeBackgroundPages(true)`.  
-- **Ralentissement des performances sur les gros fichiers** – Activez le mode streaming avec `watermark.enableStreaming(true)` pour maintenir une faible utilisation de la mémoire.  
-- **Rendu de police incorrect** – Assurez‑vous que le système cible a la police installée ou intégrez la police en utilisant `textOptions.setEmbedFont(true)`.
+## Cas d’utilisation courants
+- **Protection de la marque :** Intégrez les logos d’entreprise sur chaque diagramme Visio exporté.  
+- **Avis de confidentialité :** Ajoutez le texte « Draft – Do Not Distribute » aux schémas internes.  
+- **Contrôle de version :** Apposez automatiquement sur le diagramme un numéro de version ou une date.  
+- **Conformité réglementaire :** Insérez les pieds de page légaux obligatoires sur toutes les pages.
 
-## Questions fréquemment posées
+## Dépannage & pièges
+- **Polices manquantes :** Si le fichier Visio utilise des polices personnalisées, assurez‑vous qu’elles sont installées sur le serveur ; sinon, le filigrane peut s’afficher incorrectement.  
+- **Fichiers volumineux :** Pour les diagrammes supérieurs à 50 Mo, envisagez d’utiliser des API de streaming afin de réduire la consommation de mémoire.  
+- **Problèmes d’opacité :** Une opacité très faible peut rendre le filigrane invisible sur des arrière‑plans complexes ; testez avec une plage d’opacité de 30‑40 %.
 
-**Q : Puis‑je ajouter à la fois des filigranes texte et image au même diagramme ?**  
-R : Oui, vous pouvez chaîner plusieurs appels `addTextWatermark` et `addImageWatermark` sur la même instance `Watermark`.
+## Tutoriels disponibles
 
-**Q : La bibliothèque prend‑elle en charge les fichiers Visio protégés par mot de passe ?**  
-R : Absolument. Fournissez le mot de passe lors de la construction de l’objet `Watermark` : `new Watermark("file.vsdx", "password")`.
+### [Ajouter des filigranes texte aux diagrammes avec GroupDocs.Watermark pour Java&#58; Guide complet](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
 
-**Q : Est‑il possible de supprimer un filigrane existant ?**  
-R : Utilisez la méthode `removeWatermarks` avec les sélecteurs appropriés pour supprimer des filigranes spécifiques sans affecter le reste du contenu.
+### [Modifier les en-têtes et pieds de page du diagramme en Java avec GroupDocs.Watermark&#58; Guide complet](./edit-diagram-headers-footers-groupdocs-watermark-java/)
 
-**Q : Comment automatiser le filigranage d’un lot de fichiers Visio ?**  
-R : Parcourez un répertoire avec une simple boucle `for`, en appliquant les mêmes options de filigrane à chaque fichier et en enregistrant sous un nom unique.
+### [Extraire les en-têtes et pieds de page des diagrammes Visio avec GroupDocs.Watermark pour Java](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
 
-**Q : Quelles plateformes sont prises en charge ?**  
-R : La bibliothèque fonctionne sous Windows, Linux et macOS, et est compatible avec tout environnement compatible Java, y compris les conteneurs Docker.
+### [Extraire les informations de forme des diagrammes avec GroupDocs.Watermark en Java](./retrieve-shape-info-groupdocs-watermark-java/)
+
+### [Guide pour ajouter des filigranes aux diagrammes avec GroupDocs.Watermark pour Java](./add-watermarks-groupdocs-diagrams-java/)
+
+### [Comment ajouter des filigranes texte aux diagrammes avec GroupDocs.Watermark en Java](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
+
+### [Maîtriser le remplacement d’images dans les diagrammes avec GroupDocs.Watermark pour Java](./automate-image-replacement-groupdocs-watermark-java/)
+
+### [Maîtriser la gestion des filigranes dans les diagrammes avec GroupDocs.Watermark pour Java](./manage-watermarks-groupdocs-java-diagrams/)
+
+### [Supprimer les hyperliens des formes de diagramme avec GroupDocs.Watermark Java pour une sécurité documentaire renforcée](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
 
 ## Ressources supplémentaires
-
-Vous trouverez ci‑dessous l’ensemble complet des tutoriels de filigrane de diagrammes qui développent chacun des sujets abordés ici.
-
-### Tutoriels disponibles
-- [Ajouter des filigranes texte aux diagrammes avec GroupDocs.Watermark pour Java : Guide complet](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Modifier les en‑têtes et pieds de page des diagrammes en Java avec GroupDocs.Watermark : Guide complet](./edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Extraire les en‑têtes et pieds de page des diagrammes Visio avec GroupDocs.Watermark pour Java](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
-- [Extraire les informations de forme des diagrammes avec GroupDocs.Watermark en Java](./retrieve-shape-info-groupdocs-watermark-java/)
-- [Guide d’ajout de filigranes aux diagrammes avec GroupDocs.Watermark pour Java](./add-watermarks-groupdocs-diagrams-java/)
-- [Comment ajouter des filigranes texte aux diagrammes avec GroupDocs.Watermark en Java](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Remplacement d’images maître dans les diagrammes avec GroupDocs.Watermark pour Java](./automate-image-replacement-groupdocs-watermark-java/)
-- [Gestion maître des filigranes dans les diagrammes avec GroupDocs.Watermark pour Java](./manage-watermarks-groupdocs-java-diagrams/)
-- [Supprimer les hyperliens des formes de diagramme avec GroupDocs.Watermark Java pour une sécurité documentaire renforcée](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-
-### Ressources complémentaires
 - [Documentation GroupDocs.Watermark pour Java](https://docs.groupdocs.com/watermark/java/)
 - [Référence API GroupDocs.Watermark pour Java](https://reference.groupdocs.com/watermark/java/)
 - [Télécharger GroupDocs.Watermark pour Java](https://releases.groupdocs.com/watermark/java/)
@@ -162,13 +93,25 @@ Vous trouverez ci‑dessous l’ensemble complet des tutoriels de filigrane de d
 - [Support gratuit](https://forum.groupdocs.com/)
 - [Licence temporaire](https://purchase.groupdocs.com/temporary-license/)
 
+## Questions fréquentes
+
+**Q : Puis‑je ajouter à la fois des filigranes texte et image à la même page Visio ?**  
+R : Oui. Appliquez plusieurs filigranes séquentiellement ; l’API les rend dans l’ordre où vous les ajoutez.
+
+**Q : Est‑il possible de supprimer un filigrane existant par programme ?**  
+R : Vous pouvez récupérer les filigranes existants via `watermarker.getWatermarks()` et les supprimer avec la méthode `remove`.
+
+**Q : La bibliothèque prend‑elle en charge les fichiers Visio protégés par mot de passe ?**  
+R : Absolument. Transmettez le mot de passe lors du chargement du document avec `Watermarker.load(filePath, password)`.
+
+**Q : Comment garantir que le filigrane apparaît derrière le contenu du diagramme ?**  
+R : Définissez la propriété `zOrder` du filigrane à une valeur plus basse ou utilisez la méthode `addBackground` pour les filigranes d’arrière‑plan.
+
+**Q : Quelle version de GroupDocs.Watermark est requise pour la compatibilité avec Java 17 ?**  
+R : La version 23.10 ou ultérieure prend pleinement en charge Java 17 et les dernières spécifications des fichiers Visio.
+
 ---
 
-**Dernière mise à jour :** 2026-10-06  
-**Testé avec :** GroupDocs.Watermark 23.10 for Java  
+**Dernière mise à jour :** 2026-02-16  
+**Testé avec :** GroupDocs.Watermark pour Java 23.10  
 **Auteur :** GroupDocs
-
-## Tutoriels associés
-- [Ajouter des filigranes texte aux diagrammes avec GroupDocs.Watermark pour Java : Guide complet](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Comment ajouter un filigrane image en Java avec GroupDocs.Watermark : Guide étape par étape](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [Appliquer des effets d’image aux filigranes de forme en Java avec GroupDocs.Watermark](/watermark/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/)

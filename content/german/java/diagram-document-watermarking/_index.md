@@ -1,177 +1,126 @@
 ---
-date: 2026-10-06
-description: Erfahren Sie, wie Sie mit GroupDocs.Watermark for Java ein Wasserzeichen
-  zu einem Visio-Diagramm hinzufügen. Dieser Leitfaden zeigt Text-, Bild- und Form‑Wasserzeichen
-  und bewahrt das Layout des Diagramms.
-keywords:
-- add watermark to visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking
-lastmod: 2026-10-06
-og_description: Erfahren Sie, wie Sie mit GroupDocs.Watermark for Java ein Wasserzeichen
-  zu einem Visio-Diagramm hinzufügen. Dieser Leitfaden zeigt Text-, Bild- und Form‑Wasserzeichen
-  und bewahrt das Layout des Diagramms.
-og_image_alt: 'Developer guide: add watermark to Visio diagram using GroupDocs.Watermark
-  Java'
-og_title: Wasserzeichen zu Visio-Diagramm hinzufügen mit GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to Visio diagram with GroupDocs.Watermark
-    for Java. This guide shows text, image, and shape watermarks, keeping diagram
-    layout intact.
-  headline: Add watermark to Visio diagram using GroupDocs.Watermark Java
-  type: TechArticle
-- questions:
-  - answer: Yes, you can chain multiple `addTextWatermark` and `addImageWatermark`
-      calls on the same `Watermark` instance.
-    question: Can I add both text and image watermarks to the same diagram?
-  - answer: 'Absolutely. Provide the password when constructing the `Watermark` object:
-      `new Watermark("file.vsdx", "password")`.'
-    question: Does the library support password‑protected Visio files?
-  - answer: Use the `removeWatermarks` method with appropriate selectors to delete
-      specific watermarks without affecting other content.
-    question: Is it possible to remove an existing watermark?
-  - answer: Iterate over a directory with a simple `for` loop, applying the same watermark
-      options to each file and saving with a unique name.
-    question: How do I automate watermarking for a batch of Visio files?
-  - answer: The library runs on Windows, Linux, and macOS, and is compatible with
-      any Java‑compatible environment, including Docker containers.
-    question: What platforms are supported?
-  type: FAQPage
-tags:
-- watermark Visio
-- GroupDocs.Watermark
-- Java diagram processing
-- add watermark to Visio diagram
-title: Wasserzeichen zu Visio-Diagramm hinzufügen mit GroupDocs.Watermark Java
+date: 2026-02-16
+description: Schritt‑für‑Schritt‑Tutorials zum Hinzufügen von Wasserzeichen zu Visio‑Diagrammen
+  mit GroupDocs.Watermark für Java, die Text‑, Bild‑, Kopf‑/Fußzeilen‑ und Form‑Wasserzeichen
+  abdecken.
+title: Wasserzeichen hinzufügen Visio – Diagramm‑Wasserzeichen‑Tutorials für GroupDocs.Watermark Java
 type: docs
 url: /de/java/diagram-document-watermarking/
 weight: 10
 ---
 
-# Wasserzeichen zu Visio-Diagramm hinzufügen mit GroupDocs.Watermark für Java
+# Wasserzeichen zu Visio hinzufügen – Diagramm‑Wasserzeichen‑Tutorials für GroupDocs.Watermark Java
 
-In diesem umfassenden Tutorial lernen Sie, wie Sie **Wasserzeichen zu Visio-Diagramm**‑Dateien mithilfe der GroupDocs.Watermark‑Bibliothek für Java hinzufügen. Egal, ob Sie Branding einbetten, geistiges Eigentum schützen oder Unternehmensrichtlinien einhalten müssen – dieser Leitfaden führt Sie durch den gesamten Prozess – vom Einrichten des SDKs bis zum Anwenden von Text‑, Bild‑ und Form‑Wasserzeichen, wobei das ursprüngliche Diagrammlayout erhalten bleibt.
+In diesem Leitfaden lernen Sie, wie Sie **Wasserzeichen zu Visio**‑Diagrammen mit GroupDocs.Watermark für Java hinzufügen, sodass Ihre visuellen Assets geschützt, gebrandet und konform mit Unternehmensrichtlinien bleiben. Egal, ob Sie ein dezentes Text‑Overlay platzieren, Bilder automatisch ersetzen oder Kopf‑ und Fußzeilen verwalten möchten – diese Tutorials führen Sie Schritt für Schritt mit klaren, produktionsreifen Java‑Codebeispielen.
 
-## Schnelle Antworten
-- **Welche Bibliothek fügt Wasserzeichen zu Visio-Diagrammen hinzu?** GroupDocs.Watermark für Java.  
-- **Kann ich sowohl Seiten als auch einzelne Formen mit Wasserzeichen versehen?** Ja, Sie können ganze Seiten, bestimmte Seitentypen oder einzelne Formen anvisieren.  
-- **Benötige ich eine Lizenz für den Produktionseinsatz?** Für die Produktion ist eine kommerzielle Lizenz erforderlich; eine temporäre Lizenz steht für Tests zur Verfügung.  
-- **Welche Dateiformate werden unterstützt?** Über 30 Diagrammformate, darunter VSDX, VDX, VSSX und VSTX.  
-- **Ist die API thread‑sicher?** Ja, die Bibliothek ist für die gleichzeitige Nutzung in mehr‑threadigen Anwendungen konzipiert.
+## Quick Answers
+- **Was bedeutet „add watermark Visio“?** Es bezeichnet das Einbetten von Text‑ oder Bild‑Wasserzeichen in Microsoft‑Visio‑Dateien (.vsdx), um geistiges Eigentum zu schützen.  
+- **Welche Bibliothek übernimmt das?** GroupDocs.Watermark für Java bietet eine fluente API für Visio‑Wasserzeichen.  
+- **Benötige ich eine Lizenz?** Eine temporäre Lizenz reicht für Tests; für den Produktionseinsatz ist eine Voll‑Lizenz erforderlich.  
+- **Kann ich bestimmte Seiten oder Shapes anvisieren?** Ja – Wasserzeichen können auf ausgewählte Seiten, Seitentypen oder einzelne Shapes angewendet werden.  
+- **Ist die API mit Java 17 kompatibel?** Absolut; die Bibliothek unterstützt Java 8 bis 17.
 
-## Was bedeutet das Hinzufügen von Wasserzeichen zu Visio-Diagrammen?
-*Wasserzeichen zu Visio-Diagrammen hinzufügen* bezeichnet den Vorgang, programmgesteuert sichtbare oder unsichtbare Markierungen in eine Microsoft‑Visio‑Datei einzufügen. Diese Markierungen können Text, Bilder oder Formen enthalten, die den Eigentümer des Dokuments identifizieren, Nutzungsbeschränkungen vermitteln oder Branding bereitstellen. Das Wasserzeichen wird in der Dateistruktur gespeichert, ohne das ursprüngliche Diagrammlayout zu verändern.
+## Was bedeutet „add watermark Visio“?
+Ein Wasserzeichen zu einem Visio‑Diagramm hinzuzufügen bedeutet, eine halbtransparente Text‑ oder Bildebene einzufügen, die über (oder hinter) den bestehenden Zeichnungselementen liegt. Diese Technik hilft Ihnen, Eigentum zu beanspruchen, Vertraulichkeit zu signalisieren oder Branding zu zeigen, ohne das Originaldesign zu verändern.
 
 ## Warum GroupDocs.Watermark für Java verwenden?
-GroupDocs.Watermark unterstützt **30+ Diagrammformate** und kann Dateien bis zu **500 MB** verarbeiten, ohne das gesamte Dokument in den Speicher zu laden, was zu **bis zu 40 % geringerem CPU‑Verbrauch** im Vergleich zu manuellen bildbasierten Ansätzen führt. Die Bibliothek bietet zudem integrierte OCR für die Texterkennung, sodass Wasserzeichen selbst bei komplexen Formen präzise platziert werden können.
+- **Native Visio‑Unterstützung** – Unterstützt .vsdx, .vsd und weitere Visio‑Formate out of the box.  
+- **Fein abgestimmte Kontrolle** – Zielgerichtetes Anvisieren von Seiten, Seitentypen, Shapes, Kopf‑ und Fußzeilen einzeln.  
+- **Performance‑optimiert** – Verarbeitet große Diagramme schnell bei geringem Speicherverbrauch.  
+- **Plattform‑übergreifend** – Läuft in jeder JVM‑kompatiblen Umgebung, von Desktop‑Apps bis zu Cloud‑Services.
 
-## Voraussetzungen
-- Java 17 oder höher auf Ihrer Entwicklungsmaschine installiert.  
-- Maven 3.6+ (oder Gradle) für das Abhängigkeitsmanagement.  
-- Eine gültige GroupDocs.Watermark‑Lizenz für Java (eine temporäre Lizenz reicht für die Evaluierung).  
-- Zugriff auf die Visio‑(.vsdx)‑Datei, die Sie schützen möchten.
+## Prerequisites
+- Java 8 oder höher (Java 17 empfohlen).  
+- GroupDocs.Watermark für Java JAR (Download von der offiziellen Website).  
+- Ein gültiger temporärer oder vollständiger GroupDocs‑Lizenzschlüssel.  
 
-## Wie man Wasserzeichen zu Visio-Diagrammen Schritt für Schritt hinzufügt
+## Step‑by‑Step Overview
 
-Laden Sie die Visio‑Datei, konfigurieren Sie die Wasserzeichen‑Optionen und speichern Sie das Ergebnis. Die folgenden Abschnitte beschreiben jeden Schritt im Detail.
+### Step 1: Set Up the Project
+Fügen Sie das GroupDocs.Watermark‑JAR zu Ihrem Projekt‑Classpath hinzu (Maven, Gradle oder manuelle *.jar‑Einbindung). Initialisieren Sie den `Watermarker` mit Ihrer Visio‑Datei und Lizenz.
 
-### Wie lädt man ein Visio-Diagramm in Java?
-Erstellen Sie ein `Watermark`‑Objekt und verweisen Sie auf die Quelldatei.  
-```java
-Watermark watermark = new Watermark("input.vsdx");
-```  
-Die Klasse `Watermark` ist der Einstiegspunkt für alle Vorgänge mit Diagrammdateien.
+### Step 2: Choose the Watermark Type
+Entscheiden Sie, ob Sie ein **Text‑Wasserzeichen** (z. B. „Confidential“) oder ein **Bild‑Wasserzeichen** (z. B. Firmenlogo) benötigen. Die API stellt `TextWatermark`‑ und `ImageWatermark`‑Objekte bereit, die Sie konfigurieren können (Opacity, Rotation, Farbe usw.).
 
-### Wie konfiguriert man ein Text‑Wasserzeichen?
-Definieren Sie Text, Schriftart, Farbe und Transparenz.  
-```java
-TextWatermarkOptions textOptions = new TextWatermarkOptions();
-textOptions.setText("Confidential");
-textOptions.setFont(new Font("Arial", FontStyle.BOLD, 36));
-textOptions.setColor(Color.RED);
-textOptions.setOpacity(0.5);
-```  
-Diese Optionen stellen sicher, dass das Wasserzeichen lesbar, aber halbtransparent ist.
+### Step 3: Target Specific Pages or Shapes
+Verwenden Sie `DiagramPageSelector` oder `DiagramShapeSelector`, um das Wasserzeichen auf bestimmte Seiten, Seitentypen oder Shapes zu beschränken. Das ist nützlich, wenn Sie nur die Titelseite oder ein bestimmtes Diagrammelement schützen wollen.
 
-### Wie wendet man das Wasserzeichen auf bestimmte Seiten an?
-Wählen Sie Seiten nach Index oder nach Seitentyp (z. B. Hintergrundseiten).  
-```java
-watermark.addTextWatermark(textOptions, new PageSelector().includePages(0, 2));
-```  
-Der `PageSelector` ermöglicht eine feine Abstimmung, wo das Wasserzeichen erscheint.
+### Step 4: Apply the Watermark
+Rufen Sie `watermarker.add(watermark, selector)` auf, um das Wasserzeichen einzubetten. Der Vorgang ändert das ursprüngliche Layout nicht; das Wasserzeichen wird als Overlay gerendert.
 
-### Wie versieht man einzelne Formen mit Wasserzeichen?
-Rufen Sie Formen einer Seite ab und wenden Sie ein Bild‑ oder Text‑Overlay an.  
-```java
-Shape shape = watermark.getPage(0).getShapeById("ShapeId123");
-shape.addTextWatermark("Draft", textOptions);
-```  
-Das Anvisieren von Formen ist nützlich, um bestimmte Komponenten innerhalb eines Diagramms zu kennzeichnen.
+### Step 5: Save the Updated Diagram
+Speichern Sie die modifizierte Visio‑Datei an einem neuen Ort oder überschreiben Sie das Original, je nach Ihren Workflow‑Anforderungen.
 
-### Wie speichert man das wassergezeichnete Diagramm?
-Wählen Sie das Ausgabeformat und schreiben Sie die Datei.  
-```java
-watermark.save("output.vsdx", SaveFormat.VSDX);
-```  
-Die Methode `save` schreibt das modifizierte Diagramm, wobei alle ursprünglichen Metadaten erhalten bleiben.
+> **Pro tip:** Bewahren Sie stets ein Backup der Original‑Visio‑Datei auf, bevor Sie Wasserzeichen anwenden, insbesondere bei automatisierten Batch‑Prozessen.
 
-## Häufige Probleme und Lösungen
-- **Wasserzeichen auf bestimmten Seiten nicht sichtbar** – Stellen Sie sicher, dass der Seitenselektor die gewünschten Seiten einschließt; Hintergrundseiten benötigen das Flag `includeBackgroundPages(true)`.  
-- **Leistungsabfall bei großen Dateien** – Aktivieren Sie den Streaming‑Modus mit `watermark.enableStreaming(true)`, um den Speicherverbrauch gering zu halten.  
-- **Falsche Schriftanzeige** – Vergewissern Sie sich, dass das Zielsystem die Schriftart installiert hat, oder betten Sie die Schriftart ein mit `textOptions.setEmbedFont(true)`.
+## Common Use Cases
+- **Markenschutz:** Firmenlogos in jedes exportierte Visio‑Diagramm einbetten.  
+- **Vertraulichkeits‑Hinweise:** Text „Draft – Do Not Distribute“ zu internen Schemata hinzufügen.  
+- **Versionskontrolle:** Diagramm automatisch mit Versionsnummer oder Datum versehen.  
+- **Regulatorische Konformität:** Pflicht‑rechtliche Fußzeilen auf allen Seiten einfügen.
 
-## Häufig gestellte Fragen
+## Troubleshooting & Pitfalls
+- **Fehlende Schriften:** Nutzt die Visio‑Datei benutzerdefinierte Fonts, stellen Sie sicher, dass diese auf dem Server installiert sind; sonst kann das Wasserzeichen falsch gerendert werden.  
+- **Große Dateien:** Bei Diagrammen größer als 50 MB sollten Sie Streaming‑APIs verwenden, um den Speicherverbrauch zu reduzieren.  
+- **Opacity‑Probleme:** Sehr niedrige Opazität kann das Wasserzeichen auf komplexen Hintergründen unsichtbar machen; testen Sie im Bereich von 30‑40 % Opazität.  
 
-**F: Kann ich sowohl Text‑ als auch Bild‑Wasserzeichen zum selben Diagramm hinzufügen?**  
-A: Ja, Sie können mehrere Aufrufe von `addTextWatermark` und `addImageWatermark` auf derselben `Watermark`‑Instanz verketten.
+## Available Tutorials
 
-**F: Unterstützt die Bibliothek passwortgeschützte Visio‑Dateien?**  
-A: Absolut. Geben Sie das Passwort beim Erzeugen des `Watermark`‑Objekts an: `new Watermark("file.vsdx", "password")`.
+### [Add Text Watermarks to Diagrams Using GroupDocs.Watermark for Java&#58; A Comprehensive Guide](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
+Lernen Sie, wie Sie Text‑Wasserzeichen zu Diagrammen mit GroupDocs.Watermark für Java hinzufügen. Schützen Sie Ihre visuellen Inhalte effektiv und gewährleisten Sie die Dokumenten‑Integrität.
 
-**F: Ist es möglich, ein vorhandenes Wasserzeichen zu entfernen?**  
-A: Verwenden Sie die Methode `removeWatermarks` mit passenden Selektoren, um bestimmte Wasserzeichen zu löschen, ohne andere Inhalte zu beeinflussen.
+### [Edit Diagram Headers & Footers in Java Using GroupDocs.Watermark&#58; A Comprehensive Guide](./edit-diagram-headers-footers-groupdocs-watermark-java/)
+Erfahren Sie, wie Sie Diagram‑Kopf‑ und Fußzeilen mit GroupDocs.Watermark für Java bearbeiten. Folgen Sie dieser Schritt‑für‑Schritt‑Anleitung, um Ihre Dokumente zu verbessern.
 
-**F: Wie automatisiere ich das Wasserzeichen‑Setzen für einen Stapel von Visio‑Dateien?**  
-A: Durchlaufen Sie ein Verzeichnis mit einer einfachen `for`‑Schleife, wenden Sie dieselben Wasserzeichen‑Optionen auf jede Datei an und speichern Sie sie unter einem eindeutigen Namen.
+### [Extract Headers & Footers from Visio Diagrams Using GroupDocs.Watermark for Java](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
+Lernen Sie, wie Sie Kopf‑ und Fußzeilen, einschließlich Schrift‑Einstellungen und Textinhalt, effizient aus Microsoft‑Visio‑Diagrammen mit GroupDocs.Watermark für Java extrahieren.
 
-**F: Welche Plattformen werden unterstützt?**  
-A: Die Bibliothek läuft unter Windows, Linux und macOS und ist mit jeder Java‑kompatiblen Umgebung, einschließlich Docker‑Containern, kompatibel.
+### [Extract Shape Information from Diagrams Using GroupDocs.Watermark in Java](./retrieve-shape-info-groupdocs-watermark-java/)
+Erfahren Sie, wie Sie mit GroupDocs.Watermark für Java detaillierte Shape‑Informationen aus Diagramm‑Dateien effizient abrufen. Erweitern Sie Ihre Diagramm‑Verarbeitungs‑Fähigkeiten mit diesem umfassenden Leitfaden.
 
-## Zusätzliche Ressourcen
+### [Guide to Adding Watermarks to Diagrams Using GroupDocs.Watermark for Java](./add-watermarks-groupdocs-diagrams-java/)
+Lernen Sie, wie Sie Ihre Diagramme durch Hinzufügen von Text‑ und Bild‑Wasserzeichen mit GroupDocs.Watermark für Java schützen. Eine Schritt‑für‑Schritt‑Anleitung zur Sicherung geistigen Eigentums.
 
-Im Folgenden finden Sie die vollständige Sammlung von Diagram‑Wasserzeichen‑Tutorials, die jedes hier behandelte Thema vertiefen.
+### [How to Add Text Watermarks to Diagrams Using GroupDocs.Watermark in Java](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
+Erfahren Sie, wie Sie Text‑Wasserzeichen zu Diagrammen mit GroupDocs.Watermark für Java hinzufügen. Dieser Leitfaden deckt Einrichtung, Implementierung und praktische Anwendungen ab.
 
-### Verfügbare Tutorials
+### [Master Image Replacement in Diagrams with GroupDocs.Watermark for Java](./automate-image-replacement-groupdocs-watermark-java/)
+Automatisieren Sie Bild‑Updates in Diagrammen mit GroupDocs.Watermark für Java, um Effizienz und Genauigkeit zu steigern. Lernen Sie, Ihren Workflow zu optimieren.
 
-- [Textwasserzeichen zu Diagrammen hinzufügen mit GroupDocs.Watermark für Java&#58; Ein umfassender Leitfaden](./groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Diagramkopf‑ und -fußzeilen in Java mit GroupDocs.Watermark bearbeiten&#58; Ein umfassender Leitfaden](./edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Kopf‑ und Fußzeilen aus Visio‑Diagrammen extrahieren mit GroupDocs.Watermark für Java](./extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
-- [Forminformationen aus Diagrammen extrahieren mit GroupDocs.Watermark in Java](./retrieve-shape-info-groupdocs-watermark-java/)
-- [Leitfaden zum Hinzufügen von Wasserzeichen zu Diagrammen mit GroupDocs.Watermark für Java](./add-watermarks-groupdocs-diagrams-java/)
-- [Wie man Textwasserzeichen zu Diagrammen hinzufügt mit GroupDocs.Watermark in Java](./add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Bildersatz in Diagrammen meistern mit GroupDocs.Watermark für Java](./automate-image-replacement-groupdocs-watermark-java/)
-- [Wasserzeichenverwaltung in Diagrammen meistern mit GroupDocs.Watermark für Java](./manage-watermarks-groupdocs-java-diagrams/)
-- [Hyperlinks aus Diagrammformen entfernen mit GroupDocs.Watermark Java für verbesserte Dokumentsicherheit](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
+### [Master Watermark Management in Diagrams using GroupDocs.Watermark for Java](./manage-watermarks-groupdocs-java-diagrams/)
+Erfahren Sie, wie Sie Wasserzeichen in Diagramm‑Dateien wie .vsdx effizient verwalten mit GroupDocs.Watermark für Java. Verbessern Sie die Dokumenten‑Integrität und schützen Sie geistiges Eigentum.
 
-### Weitere Ressourcen
+### [Remove Hyperlinks from Diagram Shapes using GroupDocs.Watermark Java for Enhanced Document Security](./remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
+Lernen Sie, wie Sie Hyperlinks aus Diagram‑Shapes mit GroupDocs.Watermark in Java entfernen, um Dokumentensicherheit und Klarheit zu gewährleisten.
 
-- [GroupDocs.Watermark für Java Dokumentation](https://docs.groupdocs.com/watermark/java/)
-- [GroupDocs.Watermark für Java API‑Referenz](https://reference.groupdocs.com/watermark/java/)
-- [GroupDocs.Watermark für Java herunterladen](https://releases.groupdocs.com/watermark/java/)
+## Additional Resources
+
+- [GroupDocs.Watermark for Java Documentation](https://docs.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java API Reference](https://reference.groupdocs.com/watermark/java/)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
 - [GroupDocs.Watermark Forum](https://forum.groupdocs.com/c/watermark)
-- [Kostenloser Support](https://forum.groupdocs.com/)
-- [Temporäre Lizenz](https://purchase.groupdocs.com/temporary-license/)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+## Frequently Asked Questions
+
+**Q: Kann ich sowohl Text‑ als auch Bild‑Wasserzeichen auf derselben Visio‑Seite hinzufügen?**  
+A: Ja. Wenden Sie mehrere Wasserzeichen nacheinander an; die API rendert sie in der Reihenfolge, in der Sie sie hinzufügen.
+
+**Q: Ist es möglich, ein vorhandenes Wasserzeichen programmgesteuert zu entfernen?**  
+A: Sie können vorhandene Wasserzeichen über `watermarker.getWatermarks()` abrufen und mit der `remove`‑Methode löschen.
+
+**Q: Unterstützt die Bibliothek passwortgeschützte Visio‑Dateien?**  
+A: Absolut. Übergeben Sie das Passwort beim Laden des Dokuments mit `Watermarker.load(filePath, password)`.
+
+**Q: Wie stelle ich sicher, dass das Wasserzeichen hinter dem Diagramminhalt erscheint?**  
+A: Setzen Sie die `zOrder`‑Eigenschaft des Wasserzeichens auf einen niedrigeren Wert oder verwenden Sie die `addBackground`‑Methode für Hintergrund‑Wasserzeichen.
+
+**Q: Welche Version von GroupDocs.Watermark ist für die Kompatibilität mit Java 17 erforderlich?**  
+A: Version 23.10 oder höher unterstützt Java 17 vollständig sowie die neuesten Visio‑Dateispezifikationen.
 
 ---
 
-**Zuletzt aktualisiert:** 2026-10-06  
-**Getestet mit:** GroupDocs.Watermark 23.10 für Java  
-**Autor:** GroupDocs
-
-## Verwandte Tutorials
-
-- [Textwasserzeichen zu Diagrammen hinzufügen mit GroupDocs.Watermark für Java: Ein umfassender Leitfaden](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Wie man ein Bildwasserzeichen in Java hinzufügt mit GroupDocs.Watermark: Eine Schritt‑für‑Schritt‑Anleitung](/watermark/java/image-watermarks/add-image-watermark-java-groupdocs/)
-- [Bild‑Effekte auf Form‑Wasserzeichen in Java mit GroupDocs.Watermark anwenden](/watermark/java/image-watermarks/apply-image-effects-shape-watermarks-java-groupdocs-watermark/)
+**Last Updated:** 2026-02-16  
+**Tested With:** GroupDocs.Watermark for Java 23.10  
+**Author:** GroupDocs

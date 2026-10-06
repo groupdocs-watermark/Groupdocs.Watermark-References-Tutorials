@@ -1,104 +1,46 @@
 ---
-date: '2026-10-06'
-description: Узнайте, как добавить watermark к страницам в диаграммах с помощью GroupDocs.Watermark
-  для Java. Пошаговая настройка, фрагменты кода и практические советы для безопасной
-  публикации диаграмм.
+date: '2025-12-19'
+description: Узнайте, как добавить текстовый водяной знак к диаграммам с помощью GroupDocs.Watermark
+  для Java. Это пошаговое руководство охватывает настройку, параметры шрифта водяного
+  знака и практические примеры использования.
 keywords:
-- add watermark to pages
 - text watermarks in Java
-- GroupDocs.Watermark for Java
-- diagram watermarking tutorial
-lastmod: '2026-10-06'
-og_description: Добавьте watermark к страницам в диаграммах с помощью GroupDocs.Watermark
-  для Java. Следуйте этому руководству для настройки, реализации и лучших практик.
-og_image_alt: Developer guide showing Java code that adds text watermarks to diagram
-  pages
-og_title: Как добавить watermark к страницам с помощью GroupDocs.Watermark Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to pages in diagrams with GroupDocs.Watermark
-    for Java. Step‑by‑step setup, code snippets, and practical tips for secure diagram
-    publishing.
-  headline: How to add watermark to pages using GroupDocs.Watermark Java
-  type: TechArticle
-- description: Learn how to add watermark to pages in diagrams with GroupDocs.Watermark
-    for Java. Step‑by‑step setup, code snippets, and practical tips for secure diagram
-    publishing.
-  name: How to add watermark to pages using GroupDocs.Watermark Java
-  steps:
-  - name: load your diagram
-    text: 'First, create a `DiagramLoadOptions` instance to tell the SDK how to interpret
-      the source file, then open the diagram with `Watermarker`. DiagramLoadOptions
-      specifies loading parameters such as format and password for diagram files.
-      `Watermarker` is the main class that manages loading, editing, and '
-  - name: initialize the text watermark
-    text: Next, build a `TextWatermark` object that holds the watermark text, font,
-      color, and rotation angle. `TextWatermark` represents a reusable textual overlay
-      that can be applied to one or many pages.
-  - name: add watermark to diagram
-    text: Now specify the pages you want to watermark. Using `DiagramPage` with `WatermarkPageOptions`
-      lets you target background, foreground, or both. `DiagramPage` selects individual
-      or ranges of diagram pages for watermarking. `WatermarkPageOptions` defines
-      where (background/foreground) and how the waterma
-  - name: save and close
-    text: Finally, write the watermarked diagram to disk and release resources. `Watermarker.save()`
-      persists the changes, and `close()` frees native resources to keep memory usage
-      low.
-  type: HowTo
-- questions:
-  - answer: Yes – it supports over 50 formats, including PDF, Word, Excel, PowerPoint,
-      and image files.
-    question: Can GroupDocs.Watermark handle other file types besides diagrams?
-  - answer: There is no hard limit, but applying more than 10 watermarks per page
-      can increase processing time by roughly 15 % per additional watermark.
-    question: Is there a limit to how many watermarks I can apply?
-  - answer: Use the `Watermarker.removeWatermarks()` method with a matching `WatermarkSearchOptions`
-      filter to delete specific watermarks.
-    question: How do I remove a watermark once it’s been added?
-  - answer: Absolutely – configure `DiagramPage` with a page index range or a custom
-      predicate to apply watermarks selectively.
-    question: Can I target only selected pages instead of all pages?
-  - answer: Verify the page’s background/foreground settings and ensure the opacity
-      is not set below 10 %. Also confirm the font size is appropriate for the page
-      dimensions.
-    question: The watermark is not visible on some pages; what should I check?
-  type: FAQPage
-tags:
-- add watermark to pages
-- GroupDocs.Watermark
-- Java diagram security
-- watermark tutorial
-title: Как добавить watermark к страницам с помощью GroupDocs.Watermark Java
+- add text watermark to diagram
+- GroupDocs Watermark for Java setup
+title: Как добавить текстовый водяной знак в диаграммы с помощью GroupDocs.Watermark
+  для Java
 type: docs
 url: /ru/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Как добавить водяной знак на страницы с помощью GroupDocs.Watermark Java
+# Как добавить текстовый водяной знак к диаграммам с помощью GroupDocs.Watermark for Java
 
-Protecting your intellectual property is essential when you share diagrams with teammates, clients, or the public. In this tutorial you’ll learn **how to add watermark to pages** in diagram files using GroupDocs.Watermark for Java, so every exported page carries your branding or confidentiality notice. The steps cover environment setup, licensing, and the exact API calls you need to embed a customizable text watermark.
+Защита ваших диаграмм от несанкционированного использования является приоритетом для многих разработчиков и дизайнеров. В этом руководстве вы узнаете **как добавить текстовый водяной знак** в файлы диаграмм с помощью мощной библиотеки **GroupDocs.Watermark for Java**. Мы пройдем каждый шаг — от настройки Maven до применения пользовательских параметров шрифта водяного знака — чтобы вы могли быстро и надежно защитить свои визуальные ресурсы.
 
 ## Быстрые ответы
-- **Какая библиотека добавляет водяные знаки к диаграммам в Java?** GroupDocs.Watermark for Java.  
-- **Какой основной метод создает объект водяного знака?** `new TextWatermark(...)`.  
-- **Нужна ли лицензия для разработки?** Временная пробная лицензия подходит для тестирования; полная лицензия требуется для продакшн.  
-- **Могу ли я автоматически добавить водяной знак на каждую страницу?** Да — используйте `Watermarker.addWatermark()` с селектором `DiagramPage`.  
-- **Является ли процесс потокобезопасным?** API разработан для одновременного использования; просто избегайте совместного использования одного экземпляра `Watermarker` между потоками.
+- **Что делает библиотека?** Она встраивает текстовые (или изображенные) водяные знаки в более чем 100 форматов документов и диаграмм.  
+- **Какое основное ключевое слово следует использовать?** *add text watermark* — используется на протяжении всего руководства.  
+- **Нужна ли лицензия?** Временная пробная лицензия подходит для разработки; полная лицензия требуется для продакшн.  
+- **Можно ли настроить шрифт?** Да, вы можете управлять семейством шрифта, размером, цветом и поворотом через параметры шрифта водяного знака.  
+- **Совместима ли она с Java‑8?** Абсолютно — библиотека поддерживает JDK 8 и новее.
 
-## Что означает добавление водяного знака на страницы?
-*Добавление водяного знака на страницы* означает вставку полупрозрачного текстового слоя на каждую страницу документа или диаграммы, так чтобы содержимое оставалось читаемым, а водяной знак — явно видимым. Эта техника препятствует несанкционированному использованию и укрепляет фирменный стиль.
+## Что означает “add text watermark”?
+Добавление текстового водяного знака означает наложение полупрозрачного текста на каждую страницу или форму документа, чтобы содержание оставалось идентифицируемым. Эта техника широко используется для брендинга, защиты авторских прав и совместного редактирования.
 
-## Почему использовать GroupDocs.Watermark для Java?
-GroupDocs.Watermark поддерживает **более 50 форматов файлов** (включая VDX, VSDX, SVG и другие типы диаграмм) и может обрабатывать файлы размером до **500 МБ** без загрузки всего файла в память, обеспечивая задержку менее секунды на типичном серверном оборудовании. Его удобный API позволяет настроить шрифт, цвет, вращение и непрозрачность одним вызовом.
+## Почему использовать GroupDocs.Watermark for Java?
+- **Широкая поддержка форматов** — работает с Visio, SVG, PDF, Word и многими другими.  
+- **Тонкая настройка** — вы можете задавать шрифт, цвет, поворот, непрозрачность и размещение.  
+- **Простой API** — несколько строк кода решают задачу, экономя время разработки.  
+- **Оптимизирована по производительности** — эффективно обрабатывает большие файлы при своевременном закрытии ресурсов.
 
 ## Предварительные требования
-- Java Development Kit 8 или новее.  
+- JDK 8 или выше, установленный на вашем компьютере.  
 - IDE, например IntelliJ IDEA или Eclipse.  
-- Базовый опыт программирования на Java.  
+- Базовые знания Java (классы, объекты и Maven).
 
 ### Требуемые библиотеки и зависимости
-GroupDocs.Watermark для Java распространяется через Maven Central. Добавьте зависимость в ваш `pom.xml`:
+Мы будем использовать Maven для получения библиотеки GroupDocs.Watermark. Добавьте репозиторий и зависимость в ваш `pom.xml` точно как показано:
 
 ```xml
 <repositories>
@@ -118,38 +60,28 @@ GroupDocs.Watermark для Java распространяется через Mave
 </dependencies>
 ```
 
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
-
-Если вы предпочитаете ручную загрузку, скачайте бинарные файлы со страницы официального релиза.
+Если вы предпочитаете ручную загрузку, посетите официальную страницу: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) и следуйте инструкциям.
 
 ### Приобретение лицензии
-Вы можете начать с бесплатной пробной версии, загрузив временную лицензию с портала пробных версий GroupDocs. После получения файла `.lic` загрузите его, как показано ниже.
-
-The `License` class validates your trial or purchased license file at runtime.  
+Начните с бесплатной пробной версии, получив временную лицензию через портал пробных лицензий: [GroupDocs.Trial Licensing](https://purchase.groupdocs.com/temporary-license/). Загрузите файл лицензии перед любой операцией с водяным знаком:
 
 ```java
 License license = new License();
 license.setLicense("path/to/license/file");
 ```
 
-[GroupDocs.Trial Licensing](https://purchase.groupdocs.com/temporary-license/)
-
 ## Руководство по реализации
 
-### Добавление текстовых водяных знаков к страницам диаграмм
-#### Шаг 1: загрузите вашу диаграмму
-Сначала создайте экземпляр `DiagramLoadOptions`, чтобы указать SDK, как интерпретировать исходный файл, затем откройте диаграмму с помощью `Watermarker`.  
-`DiagramLoadOptions` задаёт параметры загрузки, такие как формат и пароль для файлов диаграмм.  
-`Watermarker` — основной класс, управляющий загрузкой, редактированием и сохранением документов диаграмм.
+### Шаг 1: Загрузите вашу диаграмму
+Сначала укажите `Watermarker` на ваш исходный файл диаграммы. Объект `DiagramLoadOptions` сообщает библиотеке рассматривать файл как формат диаграммы.
 
 ```java
 String inputFilePath = "YOUR_DOCUMENT_DIRECTORY/diagram.vsdx";
 Watermarker watermarker = new Watermarker(inputFilePath, new DiagramLoadOptions());
 ```
 
-#### Шаг 2: инициализируйте текстовый водяной знак
-Далее создайте объект `TextWatermark`, содержащий текст водяного знака, шрифт, цвет и угол вращения.  
-`TextWatermark` представляет собой переиспользуемый текстовый наложение, которое можно применить к одной или нескольким страницам.
+### Шаг 2: Инициализируйте текстовый водяной знак (с пользовательскими **watermark font settings**)
+Создайте экземпляр `TextWatermark`, указав текст, семейство шрифта, размер и любые дополнительные стили, которые вам нужны.
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark", new Font("Arial", 36));
@@ -158,10 +90,10 @@ textWatermark.setBackground(false);
 textWatermark.setRotationAngle(-45);
 ```
 
-#### Шаг 3: добавьте водяной знак к диаграмме
-Теперь укажите страницы, которые нужно водяным знаком. Использование `DiagramPage` вместе с `WatermarkPageOptions` позволяет выбрать фон, передний план или оба.  
-`DiagramPage` выбирает отдельные страницы или диапазоны страниц диаграммы для наложения водяного знака.  
-`WatermarkPageOptions` определяет, где (фон/передний план) и как водяной знак будет отрисован на выбранных страницах.
+> **Совет:** Отрегулируйте `setColor` и `setRotationAngle` в соответствии с вашими рекомендациями по брендингу. Вызов `setBackground(false)` гарантирует, что водяной знак будет находиться поверх фигур диаграммы, а не за ними.
+
+### Шаг 3: Выберите размещение — фон или передний план
+GroupDocs позволяет решить, будет ли водяной знак находиться за фигурами диаграммы (фон) или поверх них (передний план). Для большинства сценариев брендинга лучше использовать размещение в фоне.
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
@@ -169,10 +101,8 @@ options.setPlacement(DiagramWatermarkPlacementType.Background);
 watermarker.add(textWatermark, options);
 ```
 
-#### Шаг 4: сохраните и закройте
-Наконец, запишите диаграмму с водяным знаком на диск и освободите ресурсы.
-
-`Watermarker.save()` сохраняет изменения, а `close()` освобождает нативные ресурсы, чтобы снизить использование памяти.  
+### Шаг 4: Сохраните диаграмму с водяным знаком
+Наконец, запишите измененный файл на диск и освободите ресурсы.
 
 ```java
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/watermarked_diagram.vsdx";
@@ -180,63 +110,60 @@ watermarker.save(outputFilePath);
 watermarker.close();
 ```
 
-## Распространённые проблемы и решения
-- **Ошибки путей к файлам** – Убедитесь, что пути ввода и вывода являются абсолютными или правильно относительными к вашему рабочему каталогу.  
-- **Несоответствие версий** – Используйте GroupDocs.Watermark 23.11 или новее; более старые версии могут не поддерживать диаграммы.  
-- **Недостаточные разрешения** – Процесс должен иметь права чтения/записи к указанным папкам.
+## Распространенные проблемы и решения
+| Симптом | Вероятная причина | Решение |
+|---------|-------------------|---------|
+| **Ошибка: файл не найден** | Неправильный `inputFilePath` или отсутствие прав на чтение | Проверьте путь и убедитесь, что процесс Java может читать файл. |
+| **Водяной знак не виден** | Размещение установлено в `Foreground` с прозрачным цветом | Используйте размещение `Background` или выберите контрастный цвет. |
+| **Исключение Out‑of‑memory** при больших диаграммах | Не закрывается `Watermarker` или обработка большого количества файлов в цикле | Вызовите `watermarker.close()` после каждого файла и рассмотрите обработку пакетами. |
+| **Лицензия не распознана** | Неправильный путь к файлу лицензии или истекший пробный период | Проверьте путь еще раз и используйте актуальный файл лицензии. |
 
 ## Практические применения
-1. **Защита клиентских поставок** – Добавляйте водяной знак к каждой диаграмме перед отправкой PDF внешним партнёрам.  
-2. **Корпоративный брендинг** – Встраивайте ваш логотип или название компании на все экспортированные страницы автоматически.  
-3. **Отслеживание сотрудничества** – Добавляйте инициалы пользователя в виде водяного знака, чтобы указать, кто отредактировал каждую версию диаграммы.
+1. **Защита документов** — Предотвратить кражу фирменных блок-схем конкурентами.  
+2. **Брендинг** — Внедрить название компании или логотип на всех страницах диаграмм.  
+3. **Отслеживание сотрудничества** — Добавить инициалы пользователя как водяной знак, указывающий, кто редактировал диаграмму.  
 
 ## Соображения по производительности
-- Обрабатывайте большие партии, переиспользуя один экземпляр `Watermarker` и вызывая `addWatermark` в цикле; это снижает накладные расходы на создание объектов до **30 %**.  
-- Держите текст водяного знака коротким (менее 30 символов), чтобы минимизировать время рендеринга, особенно на диаграммах высокого разрешения.  
-- Протестируйте на 200‑страничной диаграмме; типичное время обработки составляет менее **2 секунд** на стандартной VM с 2 vCPU.
+- Закрывайте `Watermarker` сразу после сохранения, чтобы освободить нативные ресурсы.  
+- Делайте текст водяного знака лаконичным; слишком крупные шрифты увеличивают время обработки.  
+- Проведите тестирование на репрезентативном образце перед пакетной обработкой тысяч файлов.  
 
 ## Заключение
-Теперь у вас есть полный, готовый к продакшн рабочий процесс для **добавления водяного знака на страницы** в файлах диаграмм с помощью GroupDocs.Watermark для Java. Этот подход не только защищает ваши активы, но и укрепляет согласованность бренда во всех экспортированных ресурсах.
+Теперь у вас есть полный, готовый к продакшн метод **добавления текстового водяного знака** в файлы диаграмм с помощью **GroupDocs.Watermark for Java**. Этот подход защищает вашу интеллектуальную собственность, предоставляя полный контроль над параметрами шрифта водяного знака и его размещением.
 
 ### Следующие шаги
-- Исследуйте изображённые водяные знаки для более насыщенного брендинга.  
-- Сочетайте текстовые и изображённые водяные знаки для многослойной защиты.  
-- Интегрируйте процесс наложения водяных знаков в ваш CI/CD конвейер для автоматизации безопасности документов.
+- Исследуйте изображенные водяные знаки для визуального брендинга.  
+- Комбинируйте несколько водяных знаков (текст + изображение) для многоуровневой защиты.  
+- Автоматизируйте пакетную обработку с помощью простого цикла `for` и тех же вызовов API.  
 
 ## Часто задаваемые вопросы
 
-**Q: Может ли GroupDocs.Watermark работать с другими типами файлов, помимо диаграмм?**  
-A: Да — поддерживает более 50 форматов, включая PDF, Word, Excel, PowerPoint и файлы изображений.
+**В: Работает ли GroupDocs.Watermark с последними версиями Java?**  
+О: Да, полностью совместим с Java 8 до Java 21.
 
-**Q: Есть ли ограничение на количество водяных знаков, которые я могу применить?**  
-A: Твёрдого ограничения нет, но применение более 10 водяных знаков на страницу может увеличить время обработки примерно на 15 % за каждый дополнительный водяной знак.
+**В: Можно ли настроить непрозрачность текстового водяного знака?**  
+О: Абсолютно. Используйте `textWatermark.setOpacity(0.5)`, чтобы установить непрозрачность 50 %.
 
-**Q: Как удалить водяной знак после его добавления?**  
-A: Используйте метод `Watermarker.removeWatermarks()` с соответствующим фильтром `WatermarkSearchOptions` для удаления конкретных водяных знаков.
+**В: Есть ли способ добавить водяные знаки только к выбранным фигурам диаграммы?**  
+О: Вы можете фильтровать фигуры через `DiagramShapeWatermarkOptions`, указывая ID или имена фигур.
 
-**Q: Могу ли я применять водяной знак только к выбранным страницам, а не ко всем?**  
-A: Конечно — настройте `DiagramPage` с диапазоном индексов страниц или пользовательским предикатом, чтобы применять водяные знаки выборочно.
+**В: Как работать с диаграммами, защищенными паролем?**  
+О: Загрузите файл с помощью `DiagramLoadOptions`, включающего пароль, затем примените водяной знак как обычно.
 
-**Q: Водяной знак не виден на некоторых страницах; что следует проверить?**  
-A: Проверьте настройки фона/переднего плана страницы и убедитесь, что непрозрачность не установлена ниже 10 %. Также убедитесь, что размер шрифта подходит к размерам страницы.
+**В: Есть ли ограничения лицензирования для коммерческого использования?**  
+О: Для продакшн-развертываний требуется коммерческая лицензия; пробные лицензии только для оценки.
 
 ## Ресурсы
-- [Документация](https://docs.groupdocs.com/watermark/java/) – официальное руководство и учебные материалы.  
-- [Справочник API](https://reference.groupdocs.com/watermark/java) – подробные описания классов и методов.  
-- [Скачать последнюю версию](https://releases.groupdocs.com/watermark/java/) – получите новейший релиз библиотеки.  
-- [Репозиторий GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java) – исходный код, проблемы и вклад.  
-- [Бесплатный форум поддержки](https://forum.groupdocs.com/c/watermark/10) – помощь сообщества и обсуждения.
+- [Документация](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download Latest Version](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
 
 ---
 
-**Последнее обновление:** 2026-10-06  
-**Тестировано с:** GroupDocs.Watermark 23.11 for Java  
+**Последнее обновление:** 2025-12-19  
+**Тестировано с:** GroupDocs.Watermark 24.11 for Java  
 **Автор:** GroupDocs  
 
 ---
-
-## Связанные руководства
-
-- [Как добавить текстовые и изображённые водяные знаки на отдельные страницы PDF с помощью GroupDocs.Watermark для Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Как добавить текстовые водяные знаки к диаграммам с помощью GroupDocs.Watermark в Java](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Добавление текстовых водяных знаков в Java с помощью GroupDocs.Watermark: пошаговое руководство](/watermark/java/text-watermarks/add-text-watermarks-java-groupdocs/)

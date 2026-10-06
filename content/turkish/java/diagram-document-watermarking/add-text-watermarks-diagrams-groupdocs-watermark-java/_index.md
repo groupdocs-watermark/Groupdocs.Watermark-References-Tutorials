@@ -1,104 +1,45 @@
 ---
-date: '2026-10-06'
-description: GroupDocs.Watermark for Java ile diyagramlardaki sayfalara watermark
-  eklemeyi öğrenin. Adım adım kurulum, kod parçacıkları ve güvenli diyagram yayınlama
-  için pratik ipuçları.
+date: '2025-12-19'
+description: GroupDocs.Watermark for Java ile diyagramlara metin filigranı eklemeyi
+  öğrenin. Bu adım adım rehber, kurulum, filigran yazı tipi ayarları ve pratik kullanım
+  senaryolarını kapsar.
 keywords:
-- add watermark to pages
 - text watermarks in Java
-- GroupDocs.Watermark for Java
-- diagram watermarking tutorial
-lastmod: '2026-10-06'
-og_description: GroupDocs.Watermark for Java ile diyagramlardaki sayfalara watermark
-  ekleyin. Kurulum, uygulama ve en iyi uygulamalar için bu kılavuzu izleyin.
-og_image_alt: Developer guide showing Java code that adds text watermarks to diagram
-  pages
-og_title: GroupDocs.Watermark Java kullanarak sayfalara watermark ekleme
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-06'
-  description: Learn how to add watermark to pages in diagrams with GroupDocs.Watermark
-    for Java. Step‑by‑step setup, code snippets, and practical tips for secure diagram
-    publishing.
-  headline: How to add watermark to pages using GroupDocs.Watermark Java
-  type: TechArticle
-- description: Learn how to add watermark to pages in diagrams with GroupDocs.Watermark
-    for Java. Step‑by‑step setup, code snippets, and practical tips for secure diagram
-    publishing.
-  name: How to add watermark to pages using GroupDocs.Watermark Java
-  steps:
-  - name: load your diagram
-    text: 'First, create a `DiagramLoadOptions` instance to tell the SDK how to interpret
-      the source file, then open the diagram with `Watermarker`. DiagramLoadOptions
-      specifies loading parameters such as format and password for diagram files.
-      `Watermarker` is the main class that manages loading, editing, and '
-  - name: initialize the text watermark
-    text: Next, build a `TextWatermark` object that holds the watermark text, font,
-      color, and rotation angle. `TextWatermark` represents a reusable textual overlay
-      that can be applied to one or many pages.
-  - name: add watermark to diagram
-    text: Now specify the pages you want to watermark. Using `DiagramPage` with `WatermarkPageOptions`
-      lets you target background, foreground, or both. `DiagramPage` selects individual
-      or ranges of diagram pages for watermarking. `WatermarkPageOptions` defines
-      where (background/foreground) and how the waterma
-  - name: save and close
-    text: Finally, write the watermarked diagram to disk and release resources. `Watermarker.save()`
-      persists the changes, and `close()` frees native resources to keep memory usage
-      low.
-  type: HowTo
-- questions:
-  - answer: Yes – it supports over 50 formats, including PDF, Word, Excel, PowerPoint,
-      and image files.
-    question: Can GroupDocs.Watermark handle other file types besides diagrams?
-  - answer: There is no hard limit, but applying more than 10 watermarks per page
-      can increase processing time by roughly 15 % per additional watermark.
-    question: Is there a limit to how many watermarks I can apply?
-  - answer: Use the `Watermarker.removeWatermarks()` method with a matching `WatermarkSearchOptions`
-      filter to delete specific watermarks.
-    question: How do I remove a watermark once it’s been added?
-  - answer: Absolutely – configure `DiagramPage` with a page index range or a custom
-      predicate to apply watermarks selectively.
-    question: Can I target only selected pages instead of all pages?
-  - answer: Verify the page’s background/foreground settings and ensure the opacity
-      is not set below 10 %. Also confirm the font size is appropriate for the page
-      dimensions.
-    question: The watermark is not visible on some pages; what should I check?
-  type: FAQPage
-tags:
-- add watermark to pages
-- GroupDocs.Watermark
-- Java diagram security
-- watermark tutorial
-title: GroupDocs.Watermark Java kullanarak sayfalara watermark ekleme
+- add text watermark to diagram
+- GroupDocs Watermark for Java setup
+title: GroupDocs.Watermark for Java kullanarak diyagramlara metin filigranı ekleme
 type: docs
 url: /tr/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/
 weight: 1
 ---
 
-# GroupDocs.Watermark Java kullanarak sayfalara filigran ekleme
+# GroupDocs.Watermark for Java diyagramlarına metin filigranı ekleme
 
-Fikri mülkiyetinizi korumak, diyagramları ekip arkadaşlarınızla, müşterilerle veya halka paylaştığınızda çok önemlidir. Bu öğreticide, GroupDocs.Watermark for Java kullanarak diyagram dosyalarında **sayfalara filigran ekleme** yöntemini öğrenecek, böylece dışa aktarılan her sayfa markanızı veya gizlilik bildiriminizi taşıyacak. Adımlar, ortam kurulumunu, lisanslamayı ve özelleştirilebilir metin filigranı eklemek için gereken kesin API çağrılarını kapsar.
+Diyagramlarınızı yetkisiz olarak yeniden kullanmaktan koruyun, birçok geliştirici ve tasarımcı için en önemli parlaklıktır. Bu öğreticide, güçlü **GroupDocs.Watermark for Java** kütüphanesini kullanarak diyagram dosyalarına **metin filigranı ekleme** merkezi bölgeleri. Maven kurulumundan özel filigran yazı tipi çalışmasının performansınına kadar her adım adım adım gösterirz, böylece görsel varlıklarınızı hızlı ve güvenilir bir şekilde geliştirebilirsiniz.
 
-## Hızlı cevaplar
-- **Java'da diyagramlara filigran ekleyen kütüphane nedir?** GroupDocs.Watermark for Java.  
-- **Filigran nesnesini oluşturan birincil yöntem hangisidir?** `new TextWatermark(...)`.  
-- **Geliştirme için lisansa ihtiyacım var mı?** Geçici bir deneme lisansı test için çalışır; üretim için tam lisans gereklidir.  
-- **Her sayfayı otomatik olarak filigranlayabilir miyim?** Evet – `Watermarker.addWatermark()` metodunu bir `DiagramPage` seçici ile kullanın.  
-- **İşlem çok iş parçacıklı (thread‑safe) mi?** API, eşzamanlı kullanım için tasarlanmıştır; aynı `Watermarker` örneğini iş parçacıkları arasında paylaşmamaya dikkat edin.
+## Hızlı Yanıtlar
+- **Kütüphane ne yapar?** Metin (veya görüntü) filigranlarını 100'den fazla belge ve diyagram formatına gömer.
+- **Hangi anahtar kelimeyi hedeflemeliyim?** *metin filigranı ekle* – bu rehber boyunca kullanıldı.
+- **Lisans gerekir mi?** Geliştirme için geçici bir deneme lisansı yeterlidir; üretim için tam lisans gereklidir.
+- **Yazı tipini özelleştirebilir miyim?** Evet, filigran yazı tipi ayarlarıyla yazı tipi ailesi, boyutu, rengi ve dönüşünü kontrol edebilirsiniz.
+- **Java‑8 ile uyumlu mu?** kesinlikle – JDK8 ve üzerini bulundurmak.
 
-## Sayfalara filigran ekleme nedir?
-*Sayfalara filigran ekleme*, bir belge veya diyagramın her sayfasına yarı saydam bir metin katmanı eklemek anlamına gelir; böylece içerik okunabilir kalırken filigran net bir şekilde görülür. Bu teknik yetkisiz yeniden kullanımı engeller ve marka kimliğini güçlendirir.
+## “metin filigranı ekle” nedir?
+Metin filigranını seçer, bir belgenin her sayfası veya şekline yarı saydam bir metin yerleştirerek içeriğin saklanmasını sağlama anlamına gelir. Bu teknik, marka oluşturma, telif hakkının korunması ve ortak düzenleme için yaygın olarak kullanılır.
 
-## GroupDocs.Watermark for Java neden kullanılmalı?
-GroupDocs.Watermark, **50+ dosya formatını** (VDX, VSDX, SVG ve diğer diyagram türleri dahil) destekler ve **500 MB**'a kadar dosyaları tüm dosyayı belleğe yüklemeden işleyebilir, tipik sunucu donanımında saniyenin altında gecikme sağlar. Akıcı API'si, tek bir çağrıda yazı tipi, renk, dönüş ve opaklığı yapılandırmanıza olanak tanır.
+## Neden GroupDocs.Watermark for Java kullanılmıyor?
+- **Geniş format desteği** – Visio, SVG, PDF, Word ve daha birçok formatla çalışır.
+- **İnce ayar kontrolü** – yazı tipi, renk, dönüş, opaklık ve kimlikleri ayarlayabilirsiniz.
+- **Basit API** – birkaç satır kod işini halleder, geliştirme tasarrufu sağlar.
+- **Performans‑optimizeli** – kaynakları hızlı bir şekilde kapattığınızda büyük dosyaları verimli bir şekilde işler.
 
 ## Önkoşullar
-- Java Development Kit 8 veya daha yenisi.  
-- IntelliJ IDEA veya Eclipse gibi bir IDE.  
-- Temel Java programlama deneyimi.  
+- Makinenizde JDK8 veya daha yeni bir sürüm yüklü olmalı.
+- IntelliJ IDEA veya Eclipse gibi bir IDE.
+- Temel Java bilgisi (sınıflar, nesneler ve Maven).
 
-### Gerekli kütüphaneler ve bağımlılıklar
-GroupDocs.Watermark for Java, Maven Central üzerinden dağıtılır. Bağımlılığı `pom.xml` dosyanıza ekleyin:
+### Gerekli Kitaplıklar ve Bağımlılıklar
+GroupDocs.Watermark kütüphanesini Maven ile çekeceğiz. Depoyu ve bağımlılığı `pom.xml` dosyanıza aşağıdaki gibi ekleyin:
 
 ```xml
 <repositories>
@@ -118,39 +59,28 @@ GroupDocs.Watermark for Java, Maven Central üzerinden dağıtılır. Bağımlı
 </dependencies>
 ```
 
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
+Manuel indirmeyi tercih ederseniz, resmi sayfayı ziyaret edin: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) ve talimatları izleyin.
 
-Manuel indirmeyi tercih ederseniz, ikili dosyaları resmi sürüm sayfasından alın.
-
-### Lisans edinimi
-GroupDocs deneme portalından geçici bir lisans indirerek ücretsiz deneme ile başlayabilirsiniz. `.lic` dosyasını aldıktan sonra aşağıda gösterildiği gibi yükleyin.
-
-`License` sınıfı, çalışma zamanında deneme veya satın alınmış lisans dosyanızı doğrular.  
+### Lisans Edinimi
+Deneme sürümüyle başlamak için geçici bir lisansı deneme portalından alın: [GroupDocs.Trial Licensing](https://purchase.groupdocs.com/temporary-license/). Herhangi bir filigran işlemi öncesinde lisans dosyasını yükleyin:
 
 ```java
 License license = new License();
 license.setLicense("path/to/license/file");
 ```
 
-[GroupDocs.Trial Licensing](https://purchase.groupdocs.com/temporary-license/)
+## Uygulama Kılavuzu
 
-## Uygulama rehberi
-
-### Diyagram sayfalarına metin filigranları ekleme
-
-#### Adım 1: diyagramınızı yükleyin
-İlk olarak, SDK'ya kaynak dosyayı nasıl yorumlayacağını söylemek için bir `DiagramLoadOptions` örneği oluşturun, ardından diyagramı `Watermarker` ile açın.  
-`DiagramLoadOptions`, diyagram dosyaları için format ve şifre gibi yükleme parametrelerini belirtir.  
-`Watermarker`, diyagram belgelerini yükleme, düzenleme ve kaydetme işlemlerini yöneten ana sınıftır.
+### Adım 1: Diyagramınızı Yükleyin
+İlk olarak, `Watermarker`ı kaynak diyagramı dosyanıza yönlendirin. `DiagramLoadOptions`ın nesnesi, kütüphaneye ait bir diyagram formatı olarak işlenmesini söylüyor.
 
 ```java
 String inputFilePath = "YOUR_DOCUMENT_DIRECTORY/diagram.vsdx";
 Watermarker watermarker = new Watermarker(inputFilePath, new DiagramLoadOptions());
 ```
 
-#### Adım 2: metin filigranını başlatın
-Sonra, filigran metni, yazı tipi, renk ve dönüş açısını tutan bir `TextWatermark` nesnesi oluşturun.  
-`TextWatermark`, bir veya birden fazla sayfaya uygulanabilen yeniden kullanılabilir bir metin katmanını temsil eder.
+### Adım 2: Metin Filigranını Başlatın (özel **filigran yazı tipi ayarları** ile)
+İhtiyacınız olan metni, yazı tipi ailesini, boyutunu ve ek stil ayarlarını belirterek bir `TextWatermark` örneği oluşturun.
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark", new Font("Arial", 36));
@@ -159,10 +89,10 @@ textWatermark.setBackground(false);
 textWatermark.setRotationAngle(-45);
 ```
 
-#### Adım 3: diyagrama filigran ekleyin
-Şimdi filigranlamak istediğiniz sayfaları belirtin. `DiagramPage` ile `WatermarkPageOptions` kullanarak arka plan, ön plan veya her ikisini hedefleyebilirsiniz.  
-`DiagramPage`, filigranlama için tek tek veya aralıklarla diyagram sayfalarını seçer.  
-`WatermarkPageOptions`, seçilen sayfalarda filigranın nerede (arka plan/ön plan) ve nasıl render edileceğini tanımlar.
+> **Pro ipucu:** `setColor` ve `setRotationAngle` değerlerini marka yönergelerinize göre ayarlayın. `setBackground(false)` çağrısı, filigranın diyagram şekillerinin arkasına değil, üstüne yerleştirilmesini sağlar.
+
+### Adım 3: Yerleşimi Seçin – Arka Plan mı Ön Plan mı?
+GroupDocs, filigranın diyagram şekillerinin arkasında (arka plan) mı yoksa üstünde (ön plan) mı görüneceğine karar vermenizi sağlar. Çoğu marka senaryosu için arka plan konumu en iyisidir.
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
@@ -170,10 +100,8 @@ options.setPlacement(DiagramWatermarkPlacementType.Background);
 watermarker.add(textWatermark, options);
 ```
 
-#### Adım 4: kaydedin ve kapatın
-Son olarak, filigranlı diyagramı diske yazın ve kaynakları serbest bırakın.
-
-`Watermarker.save()` değişiklikleri kalıcı hale getirir ve `close()` yerel kaynakları serbest bırakarak bellek kullanımını düşük tutar.  
+### Adım 4: Filigranlı Diyagramı Kaydedin
+Son olarak, değiştirilmiş dosyayı diske yazın ve kaynakları serbest bırakın.
 
 ```java
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/watermarked_diagram.vsdx";
@@ -181,59 +109,58 @@ watermarker.save(outputFilePath);
 watermarker.close();
 ```
 
-## Yaygın sorunlar ve çözümler
-- **Dosya yolu hataları** – Girdi ve çıktı yollarının mutlak ya da çalışma dizininize göre doğru göreceli olduğundan emin olun.  
-- **Sürüm uyumsuzlukları** – GroupDocs.Watermark 23.11 veya daha yenisini kullanın; eski sürümler diyagram desteği içermeyebilir.  
-- **Yetersiz izinler** – İşlemin, belirttiğiniz klasörlere okuma/yazma erişimi olması gerekir.
+## Yaygın Sorunlar ve Çözümler
+| Belirti | Muhtemel Neden | Çözüm |
+|-----------|-----|------|
+| **Dosya hatası** hatası | `inputFilePath` hatalı veya okumaya izinleri eksik | Yolu doğrulayın ve Java depolarının okunabildiğinden emin olun. |
+| **Filigran görünmüyor** | Yerleşim `Ön Plan` olarak ayarlanmış ve renk şeffaf | Arka plan yerleşimini kullanın veya bir renk seçin. |
+| **Büyük diyagramlarda bellek yetersizliği istisnası** | `Watermarker` kapatılmadığı veya döngüde çok sayıda dosya işlendiği | Onu dosyadan sonra `watermarker.close()` çağırın ve toplu işlemeyi düşünün. |
+| **Lisans tanınmadı** | Yanlış lisans dosya yolu veya süresi dolmuş deneme | Yolu tekrar kontrol edin ve geçerli bir lisans dosyasını kullanın. |
 
-## Pratik uygulamalar
-1. **Müşteri teslimatlarını güvence altına alın** – PDF'leri dış ortaklara göndermeden önce her diyagramı filigranlayın.  
-2. **Kurumsal marka** – Logonuzu veya şirket adınızı tüm dışa aktarılan sayfalara otomatik olarak yerleştirin.  
-3. **İş birliği takibi** – Her diyagram sürümünü kimin düzenlediğini göstermek için kullanıcı baş harflerini filigran olarak ekleyin.
+## Pratik Uygulamalar
+1. **Belge Güvenliği** – Rakiplerin özel akış şemasını çalmasını önleyin.
+2. **Marka Oluşturma** – Kurumsal ad veya logoyu tüm diyagram sayfalarına gömün.
+3. **İşbirliği İzleme** – Diyagramı kimin düzenlediğini göstermek için kullanıcı baş harflerini filigran olarak ekleyin.
 
-## Performans değerlendirmeleri
-- Büyük toplu işlemleri, tek bir `Watermarker` örneğini yeniden kullanarak ve bir döngü içinde `addWatermark` çağırarak işleyin; bu, nesne oluşturma yükünü **%30**'a kadar azaltır.  
-- Filigran metnini kısa tutun (30 karakterin altında) böylece render süresini, özellikle yüksek çözünürlüklü diyagramlarda, minimize edin.  
-- 200 sayfalık bir diyagramla test edin; tipik işlem süresi standart 2 vCPU VM'de **2 saniyenin** altında olur.
+## Performansla İlgili Hususlar
+- Kaydetmeden hemen sonra `Watermarker`ı kapatın, böylece yerel kaynaklar serbest kalır.
+- Filigran metnii öz tutun; Çok büyük yazı tipi işlem süresini artırır.
+- Orantılı olarak görülen toplu işlem yapılmadan önce temsilcinin bir örneği üzerinde test edin.
 
-## Sonuç
-Artık GroupDocs.Watermark for Java kullanarak diyagram dosyalarında **sayfalara filigran ekleme** için eksiksiz, üretim‑hazır bir iş akışına sahipsiniz. Bu yaklaşım yalnızca varlıklarınızı korumakla kalmaz, aynı zamanda tüm dışa aktarılan varlıklarda marka tutarlılığını da güçlendirir.
+## Çözüm
+Artık **GroupDocs.Watermark for Java** kullanarak diyagram dosyalarına **metin filigranını ekleme** için eksiksiz, üretim‑hazır bir yönteme ilerleme. Bu seçenek, fikri mülkiyetinizi korurken filigran yazı tipi ayarlarını ve kimlikleri üzerinde tam kontrol sağlar.
 
-### Sonraki adımlar
-- Daha zengin marka için görüntü filigranlarını keşfedin.  
-- Çok katmanlı koruma için metin ve görüntü filigranlarını birleştirin.  
-- Belge güvenliğini otomatikleştirmek için filigranlama rutinini CI/CD boru hattınıza entegre edin.
+### Sonraki Adımlar
+- Görsel bir marka dokunuşu için görüntü filimlerini evler.
+- Katmanlı koruma için birden fazla filigran (metin + görüntü) birleştirin.
+- Basit bir konu için ve aynı API çağrılarıyla toplu otomasyonu sağlayın.
 
 ## Sıkça Sorulan Sorular
 
-**S: GroupDocs.Watermark diyagramların dışında diğer dosya türlerini işleyebilir mi?**  
-C: Evet – PDF, Word, Excel, PowerPoint ve görüntü dosyaları dahil 50'den fazla formatı destekler.
+**S: GroupDocs.Watermark en son Java'da çalıştırılarak çalışıyor mu?**
+C: Evet, Java8'den Java21'e kadar tam uyumludur.
 
-**S: Kaç tane filigran uygulayabileceğim konusunda bir sınırlama var mı?**  
-C: Katı bir sınır yok, ancak sayfa başına 10'dan fazla filigran uygulamak, ek her bir filigran için işlem süresini yaklaşık %15 artırabilir.
+**S: Metin filigranının opaklığını özelleştirebilir miyim?**
+C: elbette. `%50` opaklık için `textWatermark.setOpacity(0.5)` kullanın.
 
-**S: Eklenmiş bir filigranı nasıl kaldırabilirim?**  
-C: Belirli filigranları silmek için eşleşen bir `WatermarkSearchOptions` filtresiyle `Watermarker.removeWatermarks()` metodunu kullanın.
+**S: Sadece diyagram şekillerine filigran eklemenin bir yolu var mı?**
+C: Şekil ID'leri veya reklamları sağlayarak `DiagramShapeWatermarkOptions` ile seçenekleri filtreleyebilirsiniz.
 
-**S: Tüm sayfalar yerine yalnızca seçili sayfaları hedefleyebilir miyim?**  
-C: Kesinlikle – filigranları seçici olarak uygulamak için `DiagramPage`'i bir sayfa indeksi aralığı veya özel bir koşul (predicate) ile yapılandırın.
+**S: Şifreli diyagram düzeni nasıl yönetilir?**
+C: Şifreyi içeren `DiagramLoadOptions` ile tanışın, ardından filigranı normal şekilde etkinleştirin.
 
-**S: Filigran bazı sayfalarda görünmüyor; ne kontrol etmeliyim?**  
-C: Sayfanın arka plan/ön plan ayarlarını doğrulayın ve opaklığın %10'un altına ayarlanmadığından emin olun. Ayrıca yazı tipi boyutunun sayfa boyutlarıyla uyumlu olduğundan emin olun.
+**S: Ticari kullanım için lisans kısıtlamaları var mı?**
+C: Üretim sunumları için ticari lisans gereklidir; Deneme lisansları sadece değerlendirme amaçlıdır.
 
 ## Kaynaklar
-- [Documentation](https://docs.groupdocs.com/watermark/java/) – resmi kılavuz ve öğreticiler.  
-- [API Reference](https://reference.groupdocs.com/watermark/java) – detaylı sınıf ve metod açıklamaları.  
-- [Download Latest Version](https://releases.groupdocs.com/watermark/java/) – en yeni kütüphane sürümünü indirin.  
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java) – kaynak kodu, sorunlar ve katkılar.  
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10) – topluluk yardımı ve tartışmalar.
+- [Dokümantasyon](https://docs.groupdocs.com/watermark/java/)
+- [API Referansı](https://reference.groupdocs.com/watermark/java)
+- [En Son Sürümü İndir](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Deposu](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Ücretsiz Destek Forumu](https://forum.groupdocs.com/c/watermark/10)
 
-**Son Güncelleme:** 2026-10-06  
-**Test Edilen Versiyon:** GroupDocs.Watermark 23.11 for Java  
-**Yazar:** GroupDocs  
+---
 
-## İlgili Öğreticiler
-
-- [GroupDocs.Watermark for Java kullanarak belirli PDF sayfalarına metin ve görüntü filigranları ekleme](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [GroupDocs.Watermark ile Java'da diyagramlara metin filigranları ekleme](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [GroupDocs.Watermark kullanarak Java'da metin filigranları ekleme: Adım adım rehber](/watermark/java/text-watermarks/add-text-watermarks-java-groupdocs/)
+**Son Güncelleme:** 2025-12-19
+**Edilen Sürümünü Test Edin:** Java için GroupDocs.Watermark 24.11
+**Yazar:** GroupDocs
