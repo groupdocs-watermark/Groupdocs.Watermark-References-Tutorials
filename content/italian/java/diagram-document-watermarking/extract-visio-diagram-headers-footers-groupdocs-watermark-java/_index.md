@@ -1,104 +1,62 @@
 ---
-date: '2026-10-11'
-description: Scopri come estrarre le intestazioni Visio utilizzando GroupDocs.Watermark
-  per Java, incluse le impostazioni dei caratteri, il contenuto del testo, i colori
-  e i margini nei diagrammi Visio.
+date: '2025-12-31'
+description: Scopri come utilizzare GroupDocs ed estrarre intestazioni e piè di pagina
+  dai diagrammi Visio con GroupDocs.Watermark Java, inclusi le impostazioni dei caratteri
+  e il contenuto del testo.
 keywords:
-- extract visio headers
-- GroupDocs.Watermark Java
-- Visio diagram processing
-- diagram watermarking
-- Java document extraction
-lastmod: '2026-10-11'
-og_description: Scopri come estrarre le intestazioni Visio utilizzando GroupDocs.Watermark
-  per Java, incluse le impostazioni dei caratteri, il contenuto del testo, i colori
-  e i margini nei diagrammi Visio.
-og_image_alt: Guide showing Java code extracting headers and footers from Visio diagrams
-  with GroupDocs.Watermark
-og_title: Estrai le intestazioni Visio con GroupDocs.Watermark per Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-11'
-  description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  headline: Extract visio headers with GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  name: Extract visio headers with GroupDocs.Watermark for Java
-  steps:
-  - name: '**Document analysis** – compare styling across thousands of diagrams for
-      consistency.'
-    text: '**Document analysis** – compare styling across thousands of diagrams for
-      consistency.'
-  - name: '**Compliance checks** – verify that corporate header/footer standards are
-      met before publishing.'
-    text: '**Compliance checks** – verify that corporate header/footer standards are
-      met before publishing.'
-  - name: '**Automated report generation** – reuse extracted text to populate metadata
-      fields in reporting systems.'
-    text: '**Automated report generation** – reuse extracted text to populate metadata
-      fields in reporting systems.'
-  - name: '**CMS integration** – feed header text into content‑management workflows
-      for indexing or search.'
-    text: '**CMS integration** – feed header text into content‑management workflows
-      for indexing or search.'
-  type: HowTo
-- questions:
-  - answer: Yes. GroupDocs.Watermark processes large diagrams in a streaming mode,
-      avoiding full‑in‑memory loading and keeping RAM usage under 200 MB.
-    question: Can I extract headers from large Visio files (e.g., 300 MB)?
-  - answer: Absolutely. Pass the password to the `Watermarker` constructor to unlock
-      the document before extraction.
-    question: Does the API work with password‑protected Visio files?
-  - answer: The library handles Visio 2003‑2021 files, covering both VSD and VSDX
-      formats.
-    question: Which Visio versions are supported?
-  - answer: Verify that the diagram actually contains a header/footer; some templates
-      omit them, resulting in empty collections.
-    question: What should I do if I encounter a null value for a header property?
-  - answer: Loop through your file list, instantiate a `Watermarker` for each file,
-      extract the data, then dispose of the instance before moving to the next file.
-    question: Is there a way to batch‑process multiple diagrams?
-  type: FAQPage
-tags:
-- extract visio headers
-- GroupDocs.Watermark
-- Java diagram API
-- Visio automation
-- document processing
-title: Estrai le intestazioni Visio con GroupDocs.Watermark per Java
+- extract headers footers Visio diagrams
+- GroupDocs Watermark Java
+- Visio diagram watermarking
+title: Come utilizzare GroupDocs – Estrarre intestazioni e piè di pagina di Visio
+  (Java)
 type: docs
 url: /it/java/diagram-document-watermarking/extract-visio-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Estrai intestazioni Visio con GroupDocs.Watermark per Java
+# Estrarre intestazioni e piè di pagina dai diagrammi Visio usando GroupDocs.Watermark per Java
 
-In questo tutorial scoprirai come **estrarre intestazioni Visio** e piè di pagina dai file di diagrammi Microsoft Visio utilizzando la libreria GroupDocs.Watermark per Java. Ti guideremo nel recuperare i dettagli dei caratteri, il contenuto del testo, i colori e i valori dei margini, così potrai automatizzare l'analisi o i controlli di conformità sui tuoi asset di diagrammi.
+## Introduzione
+
+Hai difficoltà a estrarre informazioni sui caratteri, contenuto testuale, colori o margini da intestazioni e piè di pagina nei diagrammi Microsoft Visio? Con GroupDocs.Watermark per Java, queste operazioni diventano semplici. Questa guida dimostrerà come utilizzare questa potente libreria per estrarre dettagli cruciali in modo efficiente.
+
+In questo tutorial, **imparerai a usare GroupDocs** per estrarre i dati di intestazione/piè di pagina, rendendo l'analisi dei documenti e i controlli di conformità un gioco da ragazzi.
+
+Alla fine di questa guida avrai una comprensione completa di queste funzionalità. Immergiamoci in ciò che ti serve per iniziare!
 
 ## Risposte rapide
-- **Quale classe carica un file Visio?** `Watermarker` carica il diagramma e fornisce l'accesso agli oggetti intestazione/piè di pagina.  
-- **Posso leggere la dimensione e lo stile del carattere?** Sì – l'API restituisce famiglia, dimensione, grassetto, corsivo, sottolineato e barrato.  
-- **Il colore è restituito come ARGB?** Il colore del testo è fornito come intero ARGB a 32 bit.  
-- **È necessaria una licenza per l'estrazione?** Una versione di prova funziona per la valutazione; è necessaria una licenza permanente per la produzione.  
-- **Quale versione di Java è richiesta?** Java 8 o superiore è supportata.
+- **Cosa puoi estrarre?** Impostazioni dei caratteri, contenuto testuale, colori e margini dalle intestazioni e dai piè di pagina di Visio.  
+- **Quale libreria è necessaria?** GroupDocs.Watermark per Java (versione 24.11 o successiva).  
+- **È necessaria una licenza?** Una prova gratuita è sufficiente per la valutazione; per la produzione è richiesta una licenza completa.  
+- **Quale versione di Java è supportata?** JDK 8 o superiore.  
+- **Come rilasciare le risorse?** Chiama `watermarker.close()` dopo aver terminato l'estrazione dei dati.
 
-## Che cos'è l'estrazione delle intestazioni Visio?
-`extract visio headers` si riferisce al recupero programmatico dei metadati di intestazione e piè di pagina — come attributi dei caratteri, stringhe di testo, colori e margini di layout — dai file di diagrammi Visio. Accedendo a queste proprietà tramite l'API GroupDocs.Watermark è possibile analizzare lo stile, applicare gli standard aziendali e riutilizzare il contenuto dell'intestazione per scopi di reportistica o indicizzazione.
+## Come usare GroupDocs per estrarre intestazioni e piè di pagina di Visio
 
-## Perché usare GroupDocs.Watermark per Java?
-GroupDocs.Watermark supporta **oltre 30 formati di diagrammi e immagini** e può elaborare file fino a **500 MB** senza caricare l'intero documento in memoria, fornendo un'estrazione rapida e a basso consumo di memoria per pipeline di automazione su larga scala.
+Di seguito trovi una procedura passo‑per‑passo che copre tutto, dall'impostazione del progetto all'estrazione di ciascun elemento di intestazione/piè di pagina. Segui i passaggi numerati e avrai codice funzionante in pochi minuti.
 
 ## Prerequisiti
-- **GroupDocs.Watermark per Java** versione 24.11 o successiva.  
-- Java Development Kit 8 o più recente.  
-- Un IDE come IntelliJ IDEA o Eclipse.  
-- Conoscenze di base di Maven.
 
-## Configurazione di GroupDocs.Watermark per Java
+Prima di iniziare, assicurati di avere quanto segue:
 
-Per prima cosa, aggiungi la libreria al tuo progetto Maven:
+### Librerie e dipendenze richieste
+
+- **GroupDocs.Watermark per Java**: Assicurati di avere installato la versione 24.11 o successiva.
+
+### Requisiti per la configurazione dell'ambiente
+
+- Un JDK compatibile (Java Development Kit), preferibilmente versione 8 o superiore.  
+- Un IDE come IntelliJ IDEA o Eclipse.
+
+### Prerequisiti di conoscenza
+
+Una familiarità di base con la programmazione Java e la gestione delle dipendenze Maven sarà utile.
+
+## Utilizzare GroupDocs.Watermark Java per l'estrazione
+
+### Configurare GroupDocs.Watermark per Java
+
+Per iniziare, dovrai aggiungere la libreria GroupDocs.Watermark al tuo progetto. Puoi farlo tramite Maven:
 
 **Configurazione Maven**
 
@@ -120,49 +78,43 @@ Per prima cosa, aggiungi la libreria al tuo progetto Maven:
 </dependencies>
 ```
 
-Puoi anche scaricare il JAR direttamente da [GroupDocs.Watermark per Java releases](https://releases.groupdocs.com/watermark/java/).
+In alternativa, scarica la libreria direttamente da [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Acquisizione licenza
-- **Versione di prova gratuita** – esplora l'API senza costi.  
-- **Licenza temporanea** – richiedila dal portale GroupDocs.  
-- **Licenza completa** – acquista per utilizzo illimitato in produzione.
+### Acquisizione della licenza
 
-## Risorse
-- [Rilasci di GroupDocs.Watermark per Java](https://releases.groupdocs.com/watermark/java/)
-- [Documentazione GroupDocs](https://docs.groupdocs.com/watermark/java/)
-- [forum di supporto gratuito](https://forum.groupdocs.com/c/watermark/10)
-- [Documentazione GroupDocs](https://docs.groupdocs.com/watermark/java/)
-- [Riferimenti API](https://reference.groupdocs.com/watermark/java)
-- [Download GroupDocs](https://releases.groupdocs.com/watermark/java/)
+- **Prova gratuita**: Inizia con una prova gratuita per esplorare le funzionalità.  
+- **Licenza temporanea**: Richiedi una licenza temporanea sul sito di GroupDocs.  
+- **Acquisto**: Per accesso completo e supporto, considera l'acquisto di una licenza.
 
 ### Inizializzazione di base
 
-`Watermarker` è la classe principale che carica e manipola i documenti diagramma. Crea un'istanza per aprire il tuo file Visio:
+Inizializza il tuo ambiente creando un'istanza `Watermarker`. Questo caricherà il documento diagramma nell'applicazione:
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-## Come estrarre intestazioni Visio con GroupDocs.Watermark per Java?
+## Guida all'implementazione
 
-Carica il diagramma Visio usando `Watermarker`, quindi chiama le API intestazione/piè di pagina per ottenere le informazioni desiderate. Questo approccio a due fasi — inizializzazione seguita dall'estrazione delle proprietà — copre tutti i dati di intestazione e piè di pagina di cui potresti aver bisogno. L'API fornisce oggetti separati per intestazioni e piè di pagina, ciascuno espone metodi per recuperare le impostazioni dei caratteri, le stringhe di testo, i valori di colore e le misurazioni dei margini, consentendoti di raccogliere metadati completi in un unico passaggio.
+Ora analizziamo ogni funzionalità e vediamo come implementarle.
 
-### Funzione 1: estrarre informazioni sui caratteri di intestazione e piè di pagina
+### Funzionalità 1: Estrarre informazioni sui caratteri di intestazione e piè di pagina
 
 #### Panoramica
-Questa funzione restituisce la configurazione completa dei caratteri per ciascun elemento di intestazione e piè di pagina, includendo nome della famiglia, dimensione, grassetto, corsivo, sottolineato e flag di barrato.
 
-##### Implementazione passo‑a‑passo
+Questa funzionalità consente di recuperare le impostazioni dei caratteri dalle intestazioni e dai piè di pagina di un documento diagramma. Include l'estrazione del nome della famiglia, dimensione, grassetto, corsivo, sottolineatura e attributi di barrato.
 
-**Inizializza Watermarker**
+##### Implementazione passo‑per‑passo
+
+**Inizializzare Watermarker**
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-**Estrai impostazioni dei caratteri**
+**Estrarre le impostazioni dei caratteri**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -178,14 +130,15 @@ boolean isStrikeout = content.getHeaderFooter().getFont().getStrikeout();
 watermarker.close(); // Always close the watermarker to free resources
 ```
 
-### Funzione 2: estrarre contenuto testuale da intestazioni e piè di pagina
+### Funzionalità 2: Estrarre il contenuto testuale da intestazioni e piè di pagina
 
 #### Panoramica
-Puoi leggere il testo letterale che appare in ciascuna regione di intestazione e piè di pagina di un diagramma Visio.
 
-##### Implementazione passo‑a‑passo
+Questa funzionalità si concentra sull'estrazione del testo da diverse parti di intestazioni e piè di pagina in un documento diagramma.
 
-**Estrai testo intestazione & piè di pagina**
+##### Implementazione passo‑per‑passo
+
+**Estrarre testo di intestazione e piè di pagina**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -203,14 +156,15 @@ String footerRightText = content.getHeaderFooter().getFooterRight();
 watermarker.close(); // Remember to close the watermarker
 ```
 
-### Funzione 3: estrarre colore del testo da intestazioni e piè di pagina
+### Funzionalità 3: Estrarre il colore del testo da intestazioni e piè di pagina
 
 #### Panoramica
-L'API fornisce il colore del testo come un unico intero ARGB, che puoi convertire nei formati standard RGB o HEX.
 
-##### Implementazione passo‑a‑passo
+Questa funzionalità consente di determinare il colore usato in intestazioni e piè di pagina, rappresentato come valore intero ARGB.
 
-**Estrai colore del testo**
+##### Implementazione passo‑per‑passo
+
+**Estrarre il colore del testo**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -221,14 +175,15 @@ int textColorArgb = content.getHeaderFooter().getTextColor().toArgb();
 watermarker.close(); // Close to release resources
 ```
 
-### Funzione 4: estrarre margini di intestazione e piè di pagina
+### Funzionalità 4: Estrarre i margini di intestazione e piè di pagina
 
 #### Panoramica
-I valori dei margini ti permettono di comprendere la spaziatura attorno al contenuto di intestazione/piè di pagina, utile per la convalida del layout.
 
-##### Implementazione passo‑a‑passo
+Scopri come estrarre le impostazioni dei margini per intestazioni e piè di pagina, essenziali per comprendere le configurazioni di layout.
 
-**Estrai impostazioni dei margini**
+##### Implementazione passo‑per‑passo
+
+**Estrarre le impostazioni dei margini**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -241,50 +196,53 @@ watermarker.close(); // Closing is crucial for resource management
 ```
 
 ## Applicazioni pratiche
-Utilizzando queste capacità di estrazione puoi automatizzare diversi scenari reali:
 
-1. **Analisi dei documenti** – confronta lo stile tra migliaia di diagrammi per coerenza.  
-2. **Controlli di conformità** – verifica che gli standard aziendali di intestazione/piè di pagina siano rispettati prima della pubblicazione.  
-3. **Generazione automatica di report** – riutilizza il testo estratto per popolare i campi di metadati nei sistemi di reporting.  
-4. **Integrazione CMS** – inserisci il testo dell'intestazione nei flussi di lavoro di gestione dei contenuti per indicizzazione o ricerca.
+Sfruttare queste funzionalità può semplificare vari compiti reali, come:
+
+1. **Analisi dei documenti** – Automatizzare l'estrazione di informazioni di stile per analisi e confronto dei documenti.  
+2. **Controlli di conformità** – Garantire che i formati di intestazione e piè di pagina rispettino gli standard organizzativi.  
+3. **Generazione automatica di report** – Regolare dinamicamente gli stili in base alle impostazioni di carattere e colore estratte.  
+4. **Integrazione con sistemi CMS** – Utilizzare il testo estratto per popolare i metadati nei sistemi di gestione dei contenuti.
 
 ## Considerazioni sulle prestazioni
-Per mantenere l'estrazione veloce ed efficiente in termini di memoria:
 
-- Chiudi l'istanza `Watermarker` non appena hai terminato l'elaborazione.  
-- Per file più grandi di 200 MB, trasmetti il documento invece di caricarlo interamente.  
-- Analizza l'utilizzo dell'heap Java; la libreria rilascia le risorse native dopo ogni chiamata.
+Per ottimizzare le prestazioni quando usi GroupDocs.Watermark:
+
+- Riduci l'uso delle risorse chiudendo l'istanza `Watermarker` dopo le operazioni.  
+- Gestisci la memoria in modo efficiente, soprattutto per file diagramma di grandi dimensioni.  
+- Profilare e testare l'applicazione per identificare colli di bottiglia.
 
 ## Domande frequenti
 
-**Q: Posso estrarre intestazioni da file Visio di grandi dimensioni (es., 300 MB)?**  
-**A:** Sì. GroupDocs.Watermark elabora grandi diagrammi in modalità streaming, evitando il caricamento completo in memoria e mantenendo l'uso della RAM sotto i 200 MB.
+**D: Come gestire file diagramma di grandi dimensioni in modo efficiente?**  
+R: Usa pratiche di gestione della memoria efficienti, chiudi il `Watermarker` tempestivamente e profila l'applicazione per individuare operazioni ad alto consumo di memoria.
 
-**Q: L'API funziona con file Visio protetti da password?**  
-**A:** Assolutamente. Passa la password al costruttore `Watermarker` per sbloccare il documento prima dell'estrazione.
+**D: GroupDocs.Watermark può estrarre informazioni da altri tipi di documento?**  
+R: Sì, supporta un'ampia gamma di formati oltre ai diagrammi Visio. Consulta la documentazione ufficiale per l'elenco completo.
 
-**Q: Quali versioni di Visio sono supportate?**  
-**A:** La libreria gestisce file Visio 2003‑2021, coprendo sia i formati VSD che VSDX.
+**D: Cosa fare se si verificano errori di estrazione?**  
+R: Verifica che l'ambiente soddisfi i requisiti della libreria, assicurati che il formato del diagramma sia supportato e consulta i dettagli dell'errore per eventuali dipendenze mancanti.
 
-**Q: Cosa devo fare se incontro un valore null per una proprietà dell'intestazione?**  
-**A:** Verifica che il diagramma contenga effettivamente un'intestazione/piè di pagina; alcuni modelli le omettono, risultando in collezioni vuote.
+**D: È disponibile supporto per la risoluzione dei problemi?**  
+R: Sì, puoi porre domande sul [forum di supporto gratuito](https://forum.groupdocs.com/c/watermark/10) o contattare direttamente il supporto GroupDocs.
 
-**Q: Esiste un modo per elaborare in batch più diagrammi?**  
-**A:** Scorri la tua lista di file, istanzia un `Watermarker` per ciascun file, estrai i dati, quindi elimina l'istanza prima di passare al file successivo.
+**D: Come integrare questi passaggi di estrazione in un'applicazione Java esistente?**  
+R: Segui lo stesso schema di inizializzazione mostrato sopra, incorpora il codice di estrazione dove ti servono i dati di intestazione/piè di pagina e ricorda di chiudere il `Watermarker` dopo l'uso.
 
 ## Conclusione
-Ora hai una guida completa, passo‑a‑passo, per **estrarre intestazioni Visio** e piè di pagina usando GroupDocs.Watermark per Java. Applica queste tecniche per automatizzare gli audit di stile, generare metadati o integrare le informazioni dei diagrammi in applicazioni Java più ampie. Per ulteriori dettagli, consulta la documentazione ufficiale e il riferimento API.
+
+Ora hai una solida base per estrarre intestazioni e piè di pagina dai diagrammi Visio usando GroupDocs.Watermark in Java. Sperimenta con queste funzionalità per integrarle nei tuoi progetti senza soluzione di continuità. Per ulteriori approfondimenti, esplora la [documentazione di GroupDocs](https://docs.groupdocs.com/watermark/java/) e considera di estendere le funzionalità in base alle tue esigenze specifiche.
+
+## Risorse
+
+- **Documentazione**: Scopri di più su [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Riferimento API**: Approfondisci con [API References](https://reference.groupdocs.com/watermark/java)  
+- **Download della libreria**: Ottieni l'ultima versione da [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
 
 ---
 
-**Ultimo aggiornamento:** 2026-10-11  
-**Testato con:** GroupDocs.Watermark 24.11 for Java  
+**Ultimo aggiornamento:** 2025-12-31  
+**Testato con:** GroupDocs.Watermark 24.11 per Java  
 **Autore:** GroupDocs  
 
 ---
-
-## Tutorial correlati
-
-- [Modifica intestazioni e piè di pagina del diagramma in Java usando GroupDocs.Watermark: Guida completa](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Estrai informazioni sulla forma dai diagrammi usando GroupDocs.Watermark in Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
-- [Tutorial di watermarking di diagrammi per GroupDocs.Watermark Java](/watermark/java/diagram-document-watermarking/)

@@ -1,88 +1,47 @@
 ---
-date: '2026-10-11'
-description: Μάθετε πώς να watermark συγκεκριμένη σελίδα διαγράμματος σε Java με το
-  GroupDocs.Watermark, καλύπτοντας τα βήματα για την εφαρμογή watermark σε Visio διάγραμμα,
-  την προσθήκη κειμενικών ή εικόνας watermarks, και τη βελτιστοποίηση της απόδοσης.
+date: '2026-02-16'
+description: Μάθετε πώς να προσθέτετε υδατογράφημα σε συγκεκριμένη σελίδα διαγράμματος
+  με το GroupDocs.Watermark for Java, συμπεριλαμβανομένου του πώς να προσθέσετε υδατογράφημα
+  εικόνας σε Java και να προστατεύσετε τα αρχεία σας.
 keywords:
-- watermark specific diagram page
-- apply watermark visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking Java
-- Java diagram protection
-lastmod: '2026-10-11'
-og_description: Μάθετε πώς να watermark συγκεκριμένη σελίδα διαγράμματος σε Java με
-  το GroupDocs.Watermark, καλύπτοντας τα βήματα για την εφαρμογή watermark σε Visio
-  διάγραμμα και την προσθήκη κειμενικών ή εικόνας watermarks αποδοτικά.
-og_image_alt: 'Developer guide: watermark specific diagram page using GroupDocs.Watermark
-  for Java'
-og_title: Watermark συγκεκριμένη σελίδα διαγράμματος σε Java χρησιμοποιώντας το GroupDocs
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-11'
-  description: Learn how to watermark specific diagram page in Java with GroupDocs.Watermark,
-    covering steps to apply watermark Visio diagram, add text or image watermarks,
-    and optimise performance.
-  headline: Watermark specific diagram page in Java using GroupDocs
-  type: TechArticle
-- questions:
-  - answer: Yes. Call `watermarker.add()` repeatedly with different watermark objects
-      and the same `DiagramPageWatermarkOptions`.
-    question: Can I add multiple watermarks to a single diagram page?
-  - answer: It supports over 50 formats, including Visio (VSD, VSDX), PDF, SVG, PNG,
-      JPEG, and BMP. See the [API documentation](https://reference.groupdocs.com/watermark/java)
-      for the full list.
-    question: What file formats are supported by GroupDocs.Watermark for Java?
-  - answer: Download a temporary trial license from the GroupDocs portal. For production,
-      purchase a full license to unlock all features and remove trial limitations.
-    question: How do I handle licensing when using a trial version?
-  - answer: Verify the page index (zero‑based), ensure the image path is correct,
-      and confirm that the watermark’s opacity is not set to 0 %.
-    question: What are common troubleshooting steps if a watermark does not appear?
-  - answer: Adjust font size, opacity, rotation angle, and positioning through the
-      properties of `TextWatermark` or `ImageWatermark`.
-    question: How can I further customize watermark appearance?
-  type: FAQPage
-tags:
-- watermark specific diagram page
-- GroupDocs.Watermark
-- Java diagram watermark
-- diagram security
-title: Watermark συγκεκριμένη σελίδα διαγράμματος σε Java χρησιμοποιώντας το GroupDocs
+- GroupDocs Watermark Java
+- adding watermarks diagrams
+- Java diagram document watermarking
+title: Τοποθέτηση υδατογραφήματος σε συγκεκριμένη σελίδα διαγράμματος με το GroupDocs.Watermark
+  για Java
 type: docs
 url: /el/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/
 weight: 1
 ---
 
-# Τοποθέτηση υδατογραφήματος σε συγκεκριμένη σελίδα διαγράμματος σε Java με το GroupDocs
+# Προσθήκη Υδατογραφήματος σε Συγκεκριμένη Σελίδα Διαγράμματος με το GroupDocs.Watermark για Java
 
-Η προστασία των διαγραμμάτων σας είναι κρίσιμη, ειδικά όταν χρειάζεται να **τοποθετήσετε υδατογράφημα σε συγκεκριμένη σελίδα διαγράμματος** για να διασφαλίσετε την πνευματική ιδιοκτησία ή να εγγυηθείτε την κατάλληλη αποδοχή. Σε αυτό το tutorial θα μάθετε πώς να προσθέτετε υδατογραφήματα κειμένου και εικόνας σε επιλεγμένες σελίδες ενός αρχείου διαγράμματος χρησιμοποιώντας το **GroupDocs.Watermark for Java**. Στο τέλος θα μπορείτε να:
+Η προστασία των διαγραμμάτων σας είναι κρίσιμη, ειδικά όταν χρειάζεται να **προσθέσετε υδατογράφημα σε συγκεκριμένη σελίδα διαγράμματος** για την ασφάλεια της πνευματικής ιδιοκτησίας ή την απόδοση της μάρκας. Σε αυτό το tutorial θα μάθετε βήμα‑βήμα πώς να προσθέτετε υδατογραφήματα κειμένου και εικόνας σε επιλεγμένες σελίδες ενός αρχείου διαγράμματος χρησιμοποιώντας το **GroupDocs.Watermark για Java**. Στο τέλος, θα είστε έτοιμοι να ασφαλίσετε τα διαγράμματά σας και να ελέγχετε ακριβώς πού εμφανίζεται κάθε υδατογράφημα.
 
-- Εφαρμόσετε υδατογράφημα κειμένου σε οποιαδήποτε σελίδα διαγράμματος επιλέξετε.  
-- Εισάγετε υδατογράφημα εικόνας σε μια στοχευμένη σελίδα.  
-- Βελτιώσετε την απόδοση για μεγάλες συλλογές διαγραμμάτων.
+## Γρήγορες Απαντήσεις
+- **Ποιος είναι ο κύριος σκοπός;** Προσθήκη υδατογραφημάτων σε επιλεγμένες σελίδες διαγράμματος.  
+- **Ποια βιβλιοθήκη απαιτείται;** GroupDocs.Watermark for Java (Maven ή άμεση λήψη).  
+- **Μπορώ να προσθέσω υδατογράφημα εικόνας σε Java;** Ναι – χρησιμοποιήστε `ImageWatermark` με επιλογές συγκεκριμένες για τη σελίδα.  
+- **Χρειάζομαι άδεια;** Μια προσωρινή δοκιμαστική άδεια λειτουργεί για δοκιμές· απαιτείται πλήρης άδεια για παραγωγή.  
+- **Πόσες γραμμές κώδικα;** Λιγότερες από 30 γραμμές για μια πλήρη ροή εργασίας υδατογραφήματος κειμένου + εικόνας.
 
-## Γρήγορες απαντήσεις
-- **Τι σημαίνει “watermark specific diagram page”;** Σημαίνει την τοποθέτηση ενός υδατογραφήματος μόνο στις σελίδες που επιλέγετε, αφήνοντας το υπόλοιπο του εγγράφου αμετάβλητο.  
-- **Ποια βιβλιοθήκη το διαχειρίζεται;** Το GroupDocs.Watermark for Java παρέχει τα απαραίτητα API.  
-- **Χρειάζομαι άδεια;** Μια προσωρινή δοκιμαστική άδεια λειτουργεί για δοκιμές· απαιτείται πληρωμένη άδεια για παραγωγή.  
-- **Μπορώ να τοποθετήσω υδατογράφημα σε διαγράμματα Visio;** Ναι – η βιβλιοθήκη υποστηρίζει αρχεία Visio (VSDX, VSD).  
-- **Ανησυχείτε για την απόδοση σε μεγάλα αρχεία;** Βελτιστοποιήστε τη χρήση μνήμης και το μέγεθος της εικόνας· το SDK επεξεργάζεται διαγράμματα με εκατοντάδες σελίδες χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη RAM.
-
-## Τι είναι το υδατογράφημα συγκεκριμένης σελίδας διαγράμματος;
-Το υδατογράφημα συγκεκριμένης σελίδας διαγράμματος αναφέρεται στην προσθήκη ενός οπτικού επικάλυψης—όπως κείμενο ή εικόνα—μόνο στις σελίδες που επιλέγετε ρητά μέσα σε ένα αρχείο διαγράμματος. Αυτή η προσέγγιση αφήνει όλες τις άλλες σελίδες αμετάβλητες, επιτρέποντάς σας να προστατεύσετε ή να προβάλετε συγκεκριμένα τμήματα χωρίς να επηρεάζετε τη συνολική διάταξη ή την αναγνωσιμότητα του εγγράφου.
+## Τι είναι το “watermark specific diagram page”;
+Ένα **υδατογράφημα συγκεκριμένης σελίδας διαγράμματος** σημαίνει την εφαρμογή ενός οπτικού δείκτη—κειμένου ή εικόνας—μόνο στις σελίδες που επιλέγετε μέσα σε ένα πολυσελιδικό διάγραμμα (π.χ., Visio . vsdx). Αυτό σας δίνει λεπτομερή έλεγχο πάνω στην επωνυμία, τις ειδοποιήσεις εμπιστευτικότητας ή τις δηλώσεις πνευματικών δικαιωμάτων χωρίς να επηρεάζει ολόκληρο το έγγραφο.
 
 ## Γιατί να χρησιμοποιήσετε το GroupDocs.Watermark για Java;
-Το GroupDocs.Watermark for Java προσφέρει μια ισχυρή αρχιτεκτονική βασισμένη στη ροή δεδομένων που μπορεί να διαχειριστεί πάνω από 50 μορφές αρχείων, συμπεριλαμβανομένων των Visio, PDF, SVG και κοινών τύπων εικόνων. Επεξεργάζεται έγγραφα με έως και 500 σελίδες διατηρώντας την κατανάλωση μνήμης κάτω από 150 MB σε έναν τυπικό διακομιστή 8 GB, καθιστώντας το ιδανικό για μεγάλης κλίμακας έργα υδατογράφησης διαγραμμάτων που απαιτούν ταχύτητα και αξιοπιστία.
+- **Πλήρης έλεγχος σελίδας** – στοχεύστε οποιονδήποτε δείκτη σελίδας χρειάζεστε.  
+- **Πλούσια μορφοποίηση** – γραμματοσειρές, χρώματα, διαφάνεια, περιστροφή και κλιμάκωση εικόνας είναι όλα ρυθμιζόμενα.  
+- **Βελτιστοποιημένη απόδοση** – επεξεργάζεται μεγάλα διαγράμματα αποδοτικά και ενσωματώνεται ομαλά με τις κατασκευές Maven.  
+- **Υποστήριξη πολλαπλών μορφών** – λειτουργεί με Visio, SVG και πολλές άλλες μορφές διαγραμμάτων.
 
 ## Προαπαιτούμενα
-- GroupDocs.Watermark for Java **version 24.11** ή νεότερη.  
-- Maven ή χειροκίνητη λήψη JAR.  
-- Βασική εμπειρία ανάπτυξης Java (IDE, JDK 8+).  
+- **GroupDocs.Watermark for Java** βιβλιοθήκη έκδοση 24.11 ή νεότερη.  
+- Maven ή άμεση λήψη JAR.  
+- Βασική ρύθμιση ανάπτυξης Java (συνιστάται JDK 8+).
 
 ## Ρύθμιση του GroupDocs.Watermark για Java
-
-### Χρήση Maven
-Add the dependency to your `pom.xml`:
+### Χρήση Maven για το GroupDocs.Watermark
+Συμπεριλάβετε το GroupDocs.Watermark στο έργο σας μέσω Maven προσθέτοντας αυτό στο `pom.xml` σας:
 
 ```xml
 <repositories>
@@ -102,27 +61,26 @@ Add the dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### Άμεση λήψη
-You can also obtain the library from the official release page: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Άμεση Λήψη
+Εναλλακτικά, κατεβάστε την πιο πρόσφατη έκδοση απευθείας από [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-#### Απόκτηση άδειας
-Start with a free trial by downloading a temporary license. Purchase options are available on their official site if you choose to continue using GroupDocs.Watermark.
+#### Απόκτηση Άδειας
+Ξεκινήστε με μια δωρεάν δοκιμή κατεβάζοντας μια προσωρινή άδεια. Επιλογές αγοράς είναι διαθέσιμες στην επίσημη ιστοσελίδα τους εάν επιλέξετε να συνεχίσετε τη χρήση του GroupDocs.Watermark.
 
-### Βασική αρχικοποίηση και ρύθμιση
-The `Watermarker` class is the entry point for all watermarking operations. It loads a diagram, applies watermarks, and saves the result.
+### Βασική Αρχικοποίηση και Ρύθμιση
+Μόλις εγκατασταθεί, αρχικοποιήστε την κλάση `Watermarker` για λειτουργίες υδατογράφησης:
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-## Οδηγός υλοποίησης
+## Οδηγός Υλοποίησης
+### Προσθήκη Υδατογραφήματος Κειμένου σε Συγκεκριμένη Σελίδα
+Για να προσθέσετε υδατογράφημα κειμένου, δημιουργήστε το και ρυθμίστε το πριν καθορίσετε τη σελίδα-στόχο.
 
-### Πώς να προσθέσετε υδατογράφημα κειμένου σε συγκεκριμένη σελίδα διαγράμματος;
-First, load the diagram file, then create a `TextWatermark` object that defines the watermark’s content, font, size, color, and opacity. After configuring these visual properties, specify the target page using `DiagramPageWatermarkOptions`. Finally, add the watermark to the diagram and save the changes. This sequence ensures the watermark appears only on the chosen page while leaving other pages unchanged.
-
-#### Δημιουργία υδατογραφήματος κειμένου
-`TextWatermark` represents a textual overlay that can be styled with font, size, color, and opacity.
+#### Δημιουργία Υδατογραφήματος Κειμένου
+Ορίστε το υδατογράφημα κειμένου σας με προσαρμόσιμο περιεχόμενο, στυλ γραμματοσειράς, μέγεθος κ.λπ.:
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Confidential", new Font("Arial", 18));
@@ -130,49 +88,49 @@ textWatermark.setForegroundColor(Color.BLUE);
 textWatermark.setOpacity(0.5f);
 ```
 
-#### Ορισμός δείκτη σελίδας για το υδατογράφημα
-`DiagramPageWatermarkOptions` lets you target a single page (zero‑based index) or a range of pages.
+#### Ορισμός Δείκτη Σελίδας για το Υδατογράφημα
+Καθορίστε ποια σελίδα διαγράμματος θα εμφανίσει το υδατογράφημα χρησιμοποιώντας το `DiagramPageWatermarkOptions`:
 
 ```java
 DiagramPageWatermarkOptions textWatermarkOptions = new DiagramPageWatermarkOptions();
 textWatermarkOptions.setPageIndex(0); // First page (index 0)
 ```
 
-#### Προσθήκη υδατογραφήματος κειμένου
-Call `watermarker.add()` with the diagram object, the watermark instance, and the options that contain the page index.
+#### Προσθήκη Υδατογραφήματος Κειμένου
+Προσθέστε το ρυθμισμένο υδατογράφημα στο διάγραμμα:
 
 ```java
 watermarker.add(textWatermark, textWatermarkOptions);
 ```
 
-### Πώς να προσθέσετε υδατογράφημα εικόνας σε συγκεκριμένη σελίδα διαγράμματος;
-Begin by loading the diagram, then instantiate an `ImageWatermark` with the path to the image you wish to overlay. Adjust the image’s size, opacity, and rotation as needed. Use `DiagramPageWatermarkOptions` to point the watermark to the exact page index you want to modify. After adding the watermark with `watermarker.add()`, save the document to persist the changes on that specific page.
+### Προσθήκη Υδατογραφήματος Εικόνας σε Συγκεκριμένη Σελίδα
+Ακολουθήστε παρόμοια βήματα για υδατογραφήματα εικόνας χρησιμοποιώντας ένα αντικείμενο `ImageWatermark`.
 
-#### Δημιουργία υδατογραφήματος εικόνας
-`ImageWatermark` holds the path to the image you want to overlay on the diagram.
+#### Δημιουργία Υδατογραφήματος Εικόνας
+Δημιουργήστε μια παρουσία του `ImageWatermark` με τη διαδρομή της επιθυμητής εικόνας υδατογραφήματος:
 
 ```java
 ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
 imageWatermark.setOpacity(0.7f);
 ```
 
-#### Ορισμός δείκτη σελίδας για το υδατογράφημα
-Again, use `DiagramPageWatermarkOptions` to point the image at the exact page you need.
+#### Ορισμός Δείκτη Σελίδας για το Υδατογράφημα
+Καθορίστε ποια σελίδα θα εμφανίσει το υδατογράφημα εικόνας:
 
 ```java
 DiagramPageWatermarkOptions imageWatermarkOptions = new DiagramPageWatermarkOptions();
 imageWatermarkOptions.setPageIndex(1); // Second page (index 1)
 ```
 
-#### Προσθήκη υδατογραφήματος εικόνας
-Invoke `watermarker.add()` with the diagram, the `ImageWatermark`, and the page‑specific options.
+#### Προσθήκη Υδατογραφήματος Εικόνας
+Προσθέστε την εικόνα στη συγκεκριμένη σελίδα του διαγράμματος:
 
 ```java
 watermarker.add(imageWatermark, imageWatermarkOptions);
 ```
 
-### Πώς να αποθηκεύσετε τις αλλαγές και να κλείσετε σωστά τους πόρους;
-After you have added all desired watermarks, call the `save()` method on the `Watermarker` instance to write the modified diagram to disk. Immediately following the save operation, invoke `close()` to release any native resources and file handles held by the SDK. Properly closing the `Watermarker` helps prevent memory leaks and ensures that subsequent operations on the same file can proceed without conflicts.
+### Αποθήκευση και Κλείσιμο Πόρων
+Θυμηθείτε να αποθηκεύσετε τις αλλαγές και να κλείσετε τους πόρους για να αποτρέψετε διαρροές:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_diagram.vsdx");
@@ -181,51 +139,52 @@ textWatermark.close();
 imageWatermark.close();
 ```
 
-## Πρακτικές εφαρμογές
-- **Document security** – protect confidential engineering diagrams before sharing with partners.  
-- **Branding** – embed corporate logos on selected pages of technical manuals.  
-- **Copyright protection** – add legal notices to Visio schematics to deter unauthorized reuse.
+## Πρακτικές Εφαρμογές
+- **Ασφάλεια Εγγράφου** – Εφαρμόστε εμπιστευτικά υδατογραφήματα μόνο σε σελίδες που περιέχουν ευαίσθητα σχέδια.  
+- **Επωνυμία** – Τοποθετήστε το λογότυπο της εταιρείας σας στην εξώφυλλο ενώ αφήνετε τις εσωτερικές σελίδες καθαρές.  
+- **Προστασία Πνευματικών Δικαιωμάτων** – Προσθέστε μια σημείωση πνευματικών δικαιωμάτων στην τελευταία σελίδα ενός πακέτου τεχνικών διαγραμμάτων.
 
-## Παράγοντες απόδοσης
-- **Memory management** – the SDK streams pages, so you can watermark a 300‑page diagram without exceeding 200 MB RAM.  
-- **Image optimisation** – down‑scale watermark images to ≤ 300 KB to reduce processing time.  
-- **Garbage collection** – always call `close()` on the `Watermarker` to let Java reclaim native resources promptly.
+## Σκέψεις Απόδοσης
+- **Διαχείριση Μνήμης** – Κλείστε κάθε αντικείμενο υδατογραφήματος μετά την αποθήκευση για να ελευθερώσετε τους εγγενείς πόρους.  
+- **Βελτιστοποίηση Εικόνας** – Χρησιμοποιήστε αρχεία PNG/JPEG κατάλληλου μεγέθους για να διατηρήσετε τη γρήγορη επεξεργασία.  
+- **Επεξεργασία σε Παρτίδες** – Όταν διαχειρίζεστε πολλά διαγράμματα, επαναχρησιμοποιήστε μια ενιαία παρουσία του `Watermarker` όπου είναι δυνατόν.
 
-## Συχνές ερωτήσεις
+## Συχνά Προβλήματα και Λύσεις
+| Σύμπτωμα | Πιθανή Αιτία | Διόρθωση |
+|---------|--------------|----------|
+| Το υδατογράφημα δεν είναι ορατό | Λάθος `pageIndex` (μηδενική αρίθμηση) | Επαληθεύστε ότι ο δείκτης ταιριάζει με την επιθυμητή σελίδα. |
+| Η εικόνα εμφανίζεται παραμορφωμένη | Εικόνα υψηλής ανάλυσης | Αλλάξτε το μέγεθος της εικόνας πριν δημιουργήσετε το `ImageWatermark`. |
+| Σφάλμα άδειας στην παραγωγή | Χρήση δοκιμαστικής άδειας πέραν της λήξης της | Εφαρμόστε πλήρη αρχείο άδειας μέσω `License.setLicense("path/to/license.json")`. |
 
-**Q: Μπορώ να προσθέσω πολλαπλά υδατογραφήματα σε μία σελίδα διαγράμματος;**  
-A: Yes. Call `watermarker.add()` repeatedly with different watermark objects and the same `DiagramPageWatermarkOptions`.
+## Συχνές Ερωτήσεις
 
-**Q: Ποιες μορφές αρχείων υποστηρίζονται από το GroupDocs.Watermark για Java;**  
-A: It supports over 50 formats, including Visio (VSD, VSDX), PDF, SVG, PNG, JPEG, and BMP. See the [API documentation](https://reference.groupdocs.com/watermark/java) for the full list.
+**Q1: Μπορώ να προσθέσω πολλαπλά υδατογραφήματα σε μία σελίδα διαγράμματος;**  
+A1: Ναι, απλώς καλέστε `watermarker.add()` με διαφορετικά αντικείμενα υδατογραφήματος για τον ίδιο δείκτη σελίδας.
 
-**Q: Πώς διαχειρίζομαι την άδεια όταν χρησιμοποιώ δοκιμαστική έκδοση;**  
-A: Download a temporary trial license from the GroupDocs portal. For production, purchase a full license to unlock all features and remove trial limitations.
+**Q2: Ποιες μορφές αρχείων υποστηρίζονται από το GroupDocs.Watermark για Java;**  
+A2: Υποστηρίζει διάφορες μορφές διαγράμματος και εικόνας. Ελέγξτε την [Τεκμηρίωση API](https://reference.groupdocs.com/watermark/java) για την πλήρη λίστα.
 
-**Q: Ποια είναι τα κοινά βήματα αντιμετώπισης προβλημάτων αν ένα υδατογράφημα δεν εμφανίζεται;**  
-A: Verify the page index (zero‑based), ensure the image path is correct, and confirm that the watermark’s opacity is not set to 0 %.
+**Q3: Πώς να αντιμετωπίσω προβλήματα άδειας όταν χρησιμοποιώ τη δοκιμαστική έκδοση;**  
+A3: Ξεκινήστε με μια δωρεάν προσωρινή άδεια από το GroupDocs. Αγοράστε πλήρη άδεια για να ξεκλειδώσετε όλες τις δυνατότητες για παραγωγή.
 
-**Q: Πώς μπορώ να προσαρμόσω περαιτέρω την εμφάνιση του υδατογραφήματος;**  
-A: Adjust font size, opacity, rotation angle, and positioning through the properties of `TextWatermark` or `ImageWatermark`.
+**Q4: Ποια είναι μερικά κοινά συμβουλές αντιμετώπισης προβλημάτων εάν τα υδατογραφήματα δεν εμφανίζονται όπως αναμένεται;**  
+A4: Βεβαιωθείτε ότι ο δείκτης σελίδας είναι σωστός και ελέγξτε ξανά τις διαδρομές αρχείων για τους πόρους εικόνας. Επίσης, βεβαιωθείτε ότι η διαφάνεια του υδατογραφήματος δεν είναι ορισμένη στο 0.
 
-## Πρόσθετοι πόροι
-- [Τεκμηρίωση GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
-- [Οδηγός Αναφοράς API](https://reference.groupdocs.com/watermark/java)  
-- [Λήψη Βιβλιοθήκης](https://releases.groupdocs.com/watermark/java/)  
-- [Αποθετήριο GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Δωρεάν Φόρουμ Υποστήριξης](https://forum.groupdocs.com/c/watermark/10)  
+**Q5: Πώς μπορώ να προσαρμόσω περαιτέρω την εμφάνιση του υδατογραφήματος;**  
+A5: Ρυθμίστε το μέγεθος γραμματοσειράς, τη διαφάνεια, την περιστροφή και τη θέση χρησιμοποιώντας τις μεθόδους που διατίθενται στο `TextWatermark` ή `ImageWatermark`.
+
+## Πόροι
+- [Τεκμηρίωση GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)
+- [Οδηγός Αναφοράς API](https://reference.groupdocs.com/watermark/java)
+- [Λήψη Βιβλιοθήκης](https://releases.groupdocs.com/watermark/java/)
+- [Αποθετήριο GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Δωρεάν Φόρουμ Υποστήριξης](https://forum.groupdocs.com/c/watermark/10)
 - [Πληροφορίες Προσωρινής Άδειας](https://purchase.groupdocs.com/temporary-license/)
 
-Explore these links to deepen your expertise with GroupDocs.Watermark for Java. Happy watermarking!
+Εξερευνήστε αυτούς τους πόρους για να εμβαθύνετε την κατανόηση και τις δυνατότητές σας με το GroupDocs.Watermark για Java. Καλή υδατογράφημα!
 
 ---
 
-**Τελευταία ενημέρωση:** 2026-10-11  
-**Δοκιμάστηκε με:** GroupDocs.Watermark 24.11 for Java  
+**Τελευταία Ενημέρωση:** 2026-02-16  
+**Δοκιμάστηκε Με:** GroupDocs.Watermark 24.11 for Java  
 **Συγγραφέας:** GroupDocs
-
-## Σχετικά μαθήματα
-
-- [Πώς να προσθέσετε υδατογραφήματα κειμένου σε διαγράμματα χρησιμοποιώντας το GroupDocs.Watermark σε Java](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Προσθήκη υδατογραφημάτων κειμένου σε διαγράμματα με το GroupDocs.Watermark για Java: Ένας ολοκληρωμένος οδηγός](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Πώς να προσθέσετε υδατογραφήματα κειμένου και εικόνας σε συγκεκριμένες σελίδες PDF χρησιμοποιώντας το GroupDocs.Watermark για Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)

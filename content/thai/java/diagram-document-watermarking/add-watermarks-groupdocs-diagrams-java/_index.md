@@ -1,87 +1,45 @@
 ---
-date: '2026-10-11'
-description: เรียนรู้วิธีการ Watermark หน้าแผนภาพเฉพาะใน Java ด้วย GroupDocs.Watermark,
-  ครอบคลุมขั้นตอนการใช้ Watermark กับแผนภาพ Visio, เพิ่ม Watermark แบบข้อความหรือภาพ,
-  และเพิ่มประสิทธิภาพการทำงาน
+date: '2026-02-16'
+description: เรียนรู้วิธีใส่น้ำลายน้ำในหน้าภาพแผนภาพเฉพาะด้วย GroupDocs.Watermark
+  สำหรับ Java รวมถึงวิธีเพิ่มน้ำลายน้ำรูปภาพใน Java และปกป้องไฟล์ของคุณ
 keywords:
-- watermark specific diagram page
-- apply watermark visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking Java
-- Java diagram protection
-lastmod: '2026-10-11'
-og_description: เรียนรู้วิธีการ Watermark หน้าแผนภาพเฉพาะใน Java ด้วย GroupDocs.Watermark,
-  ครอบคลุมขั้นตอนการใช้ Watermark กับแผนภาพ Visio และเพิ่ม Watermark แบบข้อความหรือภาพอย่างมีประสิทธิภาพ
-og_image_alt: 'Developer guide: watermark specific diagram page using GroupDocs.Watermark
-  for Java'
-og_title: Watermark หน้าแผนภาพเฉพาะใน Java ด้วย GroupDocs
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-11'
-  description: Learn how to watermark specific diagram page in Java with GroupDocs.Watermark,
-    covering steps to apply watermark Visio diagram, add text or image watermarks,
-    and optimise performance.
-  headline: Watermark specific diagram page in Java using GroupDocs
-  type: TechArticle
-- questions:
-  - answer: Yes. Call `watermarker.add()` repeatedly with different watermark objects
-      and the same `DiagramPageWatermarkOptions`.
-    question: Can I add multiple watermarks to a single diagram page?
-  - answer: It supports over 50 formats, including Visio (VSD, VSDX), PDF, SVG, PNG,
-      JPEG, and BMP. See the [API documentation](https://reference.groupdocs.com/watermark/java)
-      for the full list.
-    question: What file formats are supported by GroupDocs.Watermark for Java?
-  - answer: Download a temporary trial license from the GroupDocs portal. For production,
-      purchase a full license to unlock all features and remove trial limitations.
-    question: How do I handle licensing when using a trial version?
-  - answer: Verify the page index (zero‑based), ensure the image path is correct,
-      and confirm that the watermark’s opacity is not set to 0 %.
-    question: What are common troubleshooting steps if a watermark does not appear?
-  - answer: Adjust font size, opacity, rotation angle, and positioning through the
-      properties of `TextWatermark` or `ImageWatermark`.
-    question: How can I further customize watermark appearance?
-  type: FAQPage
-tags:
-- watermark specific diagram page
-- GroupDocs.Watermark
-- Java diagram watermark
-- diagram security
-title: Watermark หน้าแผนภาพเฉพาะใน Java ด้วย GroupDocs
+- GroupDocs Watermark Java
+- adding watermarks diagrams
+- Java diagram document watermarking
+title: ใส่ลายน้ำบนหน้าภาพแผนภาพเฉพาะโดยใช้ GroupDocs.Watermark สำหรับ Java
 type: docs
 url: /th/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/
 weight: 1
 ---
 
-# ใส่น้ำลายน้ำในหน้าตำแหน่งแผนภาพเฉพาะใน Java ด้วย GroupDocs
+# การใส่ลายน้ำในหน้าแผนภาพเฉพาะโดยใช้ GroupDocs.Watermark for Java
 
-การปกป้องแผนภาพของคุณเป็นสิ่งสำคัญ โดยเฉพาะเมื่อคุณต้องการ **watermark specific diagram page** เพื่อปกป้องทรัพย์สินทางปัญญาหรือรับประกันการอ้างอิงที่ถูกต้อง ในบทเรียนนี้คุณจะได้เรียนรู้วิธีการเพิ่มน้ำลายน้ำแบบข้อความและรูปภาพลงในหน้าที่เลือกของไฟล์แผนภาพโดยใช้ **GroupDocs.Watermark for Java** ในตอนท้ายคุณจะสามารถ:
-
-- ใส่น้ำลายน้ำข้อความลงในหน้าแผนภาพใดก็ได้ที่คุณเลือก  
-- แทรกน้ำลายน้ำรูปภาพบนหน้าที่กำหนด  
-- ปรับประสิทธิภาพสำหรับคอลเลกชันแผนภาพขนาดใหญ่  
+การปกป้องแผนภาพของคุณเป็นสิ่งสำคัญ โดยเฉพาะเมื่อคุณต้องการ **watermark specific diagram page** เพื่อความปลอดภัยของทรัพย์สินทางปัญญาหรือการระบุแบรนด์ ในบทแนะนำนี้คุณจะได้เรียนรู้ขั้นตอนการเพิ่มลายน้ำแบบข้อความและภาพลงในหน้าที่เลือกของไฟล์แผนภาพโดยใช้ **GroupDocs.Watermark for Java** เมื่อเสร็จแล้วคุณจะพร้อมที่จะรักษาความปลอดภัยของแผนภาพและควบคุมตำแหน่งที่ลายน้ำแต่ละอันปรากฏได้อย่างแม่นยำ
 
 ## คำตอบด่วน
-- **อะไรหมายถึง “watermark specific diagram page”?** หมายถึงการวางน้ำลายน้ำบนเฉพาะหน้าที่คุณเลือกเท่านั้น โดยไม่กระทบต่อส่วนที่เหลือของเอกสาร  
-- **ไลบรารีใดจัดการเรื่องนี้?** GroupDocs.Watermark for Java ให้ API ที่จำเป็น  
-- **ฉันต้องการใบอนุญาตหรือไม่?** ใบอนุญาตทดลองชั่วคราวใช้ได้สำหรับการทดสอบ; ใบอนุญาตแบบชำระเงินจำเป็นสำหรับการใช้งานจริง  
-- **ฉันสามารถใส่น้ำลายน้ำบนแผนภาพ Visio ได้หรือไม่?** ได้ – ไลบรารีรองรับไฟล์ Visio (VSDX, VSD)  
-- **ประสิทธิภาพเป็นปัญหาสำหรับไฟล์ขนาดใหญ่หรือไม่?** ปรับการใช้หน่วยความจำและขนาดภาพ; SDK ประมวลผลแผนภาพหลายร้อยหน้าโดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่ RAM  
+- **วัตถุประสงค์หลักคืออะไร?** เพิ่มลายน้ำในหน้าแผนภาพที่เลือก.  
+- **ไลบรารีที่จำเป็นคืออะไร?** GroupDocs.Watermark for Java (Maven หรือดาวน์โหลดโดยตรง).  
+- **ฉันสามารถเพิ่มลายน้ำภาพใน Java ได้หรือไม่?** ใช่ – ใช้ `ImageWatermark` กับตัวเลือกเฉพาะหน้า.  
+- **ฉันต้องการใบอนุญาตหรือไม่?** ใบอนุญาตทดลองชั่วคราวทำงานสำหรับการทดสอบ; จำเป็นต้องใช้ใบอนุญาตเต็มสำหรับการผลิต.  
+- **ต้องใช้โค้ดกี่บรรทัด?** น้อยกว่า 30 บรรทัดสำหรับกระบวนการลายน้ำข้อความ + ภาพครบวงจร.
 
-## อะไรคือการใส่น้ำลายน้ำในหน้าตำแหน่งแผนภาพเฉพาะ?
-การใส่น้ำลายน้ำในหน้าตำแหน่งแผนภาพเฉพาะหมายถึงการเพิ่มชั้นภาพซ้อน—เช่นข้อความหรือรูปภาพ—เฉพาะบนหน้าที่คุณเลือกอย่างชัดเจนภายในไฟล์แผนภาพ วิธีนี้ทำให้หน้าที่เหลือทั้งหมดไม่ถูกกระทบ ช่วยให้คุณปกป้องหรือทำแบรนด์ให้กับส่วนเฉพาะโดยไม่ส่งผลต่อการจัดวางหรือความอ่านง่ายของเอกสารโดยรวม  
+## “watermark specific diagram page” คืออะไร?
+**watermark specific diagram page** หมายถึงการใส่เครื่องหมายภาพ—ข้อความหรือรูปภาพ—เฉพาะบนหน้าที่คุณเลือกภายในแผนภาพหลายหน้า (เช่น Visio . vsdx) ซึ่งช่วยให้คุณควบคุมการใส่แบรนด์, ประกาศความลับ, หรือข้อความลิขสิทธิ์ได้อย่างละเอียดโดยไม่กระทบต่อเอกสารทั้งหมด
 
 ## ทำไมต้องใช้ GroupDocs.Watermark for Java?
-GroupDocs.Watermark for Java มีสถาปัตยกรรมแบบสตรีมมิ่งที่แข็งแกร่ง สามารถจัดการไฟล์ได้มากกว่า 50 รูปแบบ รวมถึง Visio, PDF, SVG และรูปภาพทั่วไป มันประมวลผลเอกสารที่มีถึง 500 หน้าโดยคงการใช้หน่วยความจำไม่เกิน 150 MB บนเซิร์ฟเวอร์ 8 GB ปกติ ทำให้เหมาะสำหรับโครงการใส่น้ำลายน้ำแผนภาพขนาดใหญ่ที่ต้องการความเร็วและความน่าเชื่อถือ  
+- **การควบคุมหน้าระดับเต็ม** – เลือกดัชนีหน้าที่ต้องการได้ตามต้องการ.  
+- **การจัดรูปแบบที่หลากหลาย** – ฟอนต์, สี, ความทึบ, การหมุน, และการปรับขนาดภาพทั้งหมดสามารถกำหนดค่าได้.  
+- **ประสิทธิภาพที่ปรับให้เหมาะสม** – ประมวลผลแผนภาพขนาดใหญ่ได้อย่างมีประสิทธิภาพและรวมเข้ากับการสร้าง Maven ได้อย่างราบรื่น.  
+- **รองรับหลายรูปแบบ** – ทำงานกับ Visio, SVG, และรูปแบบแผนภาพอื่น ๆ อีกมากมาย.
 
 ## ข้อกำหนดเบื้องต้น
-- GroupDocs.Watermark for Java **version 24.11** หรือใหม่กว่า  
-- Maven หรือการดาวน์โหลด JAR ด้วยตนเอง  
-- ประสบการณ์พื้นฐานในการพัฒนา Java (IDE, JDK 8+)  
+- **GroupDocs.Watermark for Java** เวอร์ชัน 24.11 หรือใหม่กว่า.  
+- Maven หรือดาวน์โหลด JAR โดยตรง.  
+- การตั้งค่าพัฒนา Java พื้นฐาน (แนะนำ JDK 8+).
 
 ## การตั้งค่า GroupDocs.Watermark for Java
-
-### ใช้ Maven
-เพิ่ม dependency ลงในไฟล์ `pom.xml` ของคุณ:
+### การใช้ Maven groupdocs watermark
+เพิ่ม GroupDocs.Watermark ในโปรเจกต์ของคุณผ่าน Maven โดยใส่โค้ดต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
 
 ```xml
 <repositories>
@@ -102,13 +60,13 @@ GroupDocs.Watermark for Java มีสถาปัตยกรรมแบบส
 ```
 
 ### ดาวน์โหลดโดยตรง
-คุณสามารถรับไลบรารีได้จากหน้าปล่อยอย่างเป็นทางการ: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)  
+หรือคุณสามารถดาวน์โหลดเวอร์ชันล่าสุดโดยตรงจาก [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 #### การรับใบอนุญาต
-เริ่มต้นด้วยการทดลองฟรีโดยดาวน์โหลดใบอนุญาตชั่วคราว ตัวเลือกการซื้อมีให้บนเว็บไซต์อย่างเป็นทางการหากคุณต้องการใช้ GroupDocs.Watermark ต่อไป  
+เริ่มต้นด้วยการทดลองฟรีโดยดาวน์โหลดใบอนุญาตชั่วคราว ตัวเลือกการซื้อพร้อมให้บริการบนเว็บไซต์อย่างเป็นทางการของพวกเขาหากคุณต้องการใช้ GroupDocs.Watermark ต่อเนื่อง
 
 ### การเริ่มต้นและตั้งค่าเบื้องต้น
-คลาส `Watermarker` เป็นจุดเริ่มต้นสำหรับการดำเนินการใส่น้ำลายน้ำทั้งหมด มันโหลดแผนภาพ, ประยุกต์น้ำลายน้ำ, และบันทึกผลลัพธ์
+หลังจากติดตั้งแล้ว ให้เริ่มต้นคลาส `Watermarker` สำหรับการทำงานลายน้ำ:
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
@@ -116,12 +74,11 @@ Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx"
 ```
 
 ## คู่มือการใช้งาน
+### การเพิ่มลายน้ำข้อความในหน้าเฉพาะ
+เพื่อเพิ่มลายน้ำข้อความ ให้สร้างและกำหนดค่าก่อนระบุหน้าที่เป้าหมาย
 
-### วิธีเพิ่มน้ำลายน้ำข้อความในหน้าตำแหน่งแผนภาพเฉพาะ?
-แรกเริ่มให้โหลดไฟล์แผนภาพ จากนั้นสร้างอ็อบเจกต์ `TextWatermark` ที่กำหนดเนื้อหาน้ำลายน้ำ, ฟอนต์, ขนาด, สี, และความทึบ หลังจากกำหนดคุณสมบัติดังกล่าวแล้ว ให้ระบุหน้าที่เป้าหมายด้วย `DiagramPageWatermarkOptions` สุดท้ายให้เพิ่มน้ำลายน้ำลงในแผนภาพและบันทึกการเปลี่ยนแปลง ลำดับนี้ทำให้น้ำลายน้ำปรากฏเฉพาะบนหน้าที่เลือกโดยไม่กระทบหน้าที่เหลือ
-
-#### สร้างน้ำลายน้ำข้อความ
-`TextWatermark` แทนชั้นภาพข้อความที่สามารถกำหนดสไตล์ด้วยฟอนต์, ขนาด, สี, และความทึบ
+#### สร้างลายน้ำข้อความ
+กำหนดลายน้ำข้อความของคุณด้วยเนื้อหาที่ปรับได้, รูปแบบฟอนต์, ขนาด, ฯลฯ:
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Confidential", new Font("Arial", 18));
@@ -129,49 +86,49 @@ textWatermark.setForegroundColor(Color.BLUE);
 textWatermark.setOpacity(0.5f);
 ```
 
-#### ตั้งค่าดัชนีหน้าสำหรับน้ำลายน้ำ
-`DiagramPageWatermarkOptions` ให้คุณกำหนดเป้าหมายเป็นหน้าเดียว (ดัชนีเริ่มจาก 0) หรือช่วงหน้าต่างๆ
+#### กำหนดดัชนีหน้าสำหรับลายน้ำ
+ระบุว่าหน้าแผนภาพใดจะแสดงลายน้ำโดยใช้ `DiagramPageWatermarkOptions`:
 
 ```java
 DiagramPageWatermarkOptions textWatermarkOptions = new DiagramPageWatermarkOptions();
 textWatermarkOptions.setPageIndex(0); // First page (index 0)
 ```
 
-#### เพิ่มน้ำลายน้ำข้อความ
-เรียก `watermarker.add()` พร้อมอ็อบเจกต์แผนภาพ, อินสแตนซ์น้ำลายน้ำ, และตัวเลือกที่บรรจุดัชนีหน้า
+#### เพิ่มลายน้ำข้อความ
+เพิ่มลายน้ำที่กำหนดค่าแล้วลงในแผนภาพ:
 
 ```java
 watermarker.add(textWatermark, textWatermarkOptions);
 ```
 
-### วิธีเพิ่มน้ำลายน้ำรูปภาพในหน้าตำแหน่งแผนภาพเฉพาะ?
-เริ่มต้นด้วยการโหลดแผนภาพ แล้วสร้างอ็อบเจกต์ `ImageWatermark` พร้อมระบุพาธของรูปภาพที่ต้องการซ้อน ปรับขนาด, ความทึบ, และการหมุนของรูปตามต้องการ ใช้ `DiagramPageWatermarkOptions` เพื่อชี้น้ำลายน้ำไปยังดัชนีหน้าที่ต้องการแก้ไข หลังจากเพิ่มน้ำลายน้ำด้วย `watermarker.add()` ให้บันทึกเอกสารเพื่อให้การเปลี่ยนแปลงคงอยู่บนหน้าที่ระบุ
+### การเพิ่มลายน้ำภาพในหน้าเฉพาะ
+ทำตามขั้นตอนคล้ายกันสำหรับลายน้ำภาพโดยใช้วัตถุ `ImageWatermark`
 
-#### สร้างน้ำลายน้ำรูปภาพ
-`ImageWatermark` เก็บพาธของรูปภาพที่คุณต้องการซ้อนบนแผนภาพ
+#### สร้างลายน้ำภาพ
+สร้างอินสแตนซ์ของ `ImageWatermark` พร้อมเส้นทางภาพลายน้ำที่ต้องการ:
 
 ```java
 ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
 imageWatermark.setOpacity(0.7f);
 ```
 
-#### ตั้งค่าดัชนีหน้าสำหรับน้ำลายน้ำ
-อีกครั้งให้ใช้ `DiagramPageWatermarkOptions` เพื่อชี้รูปภาพไปยังหน้าที่ต้องการอย่างแม่นยำ
+#### กำหนดดัชนีหน้าสำหรับลายน้ำ
+ระบุว่าหน้าใดควรแสดงลายน้ำภาพ:
 
 ```java
 DiagramPageWatermarkOptions imageWatermarkOptions = new DiagramPageWatermarkOptions();
 imageWatermarkOptions.setPageIndex(1); // Second page (index 1)
 ```
 
-#### เพิ่มน้ำลายน้ำรูปภาพ
-เรียก `watermarker.add()` พร้อมแผนภาพ, `ImageWatermark`, และตัวเลือกเฉพาะหน้าที่กำหนด
+#### เพิ่มลายน้ำภาพ
+เพิ่มภาพลงในหน้าแผนภาพที่คุณระบุ:
 
 ```java
 watermarker.add(imageWatermark, imageWatermarkOptions);
 ```
 
-### วิธีบันทึกการเปลี่ยนแปลงและปิดทรัพยากรอย่างถูกต้อง?
-หลังจากเพิ่มน้ำลายน้ำที่ต้องการทั้งหมดแล้ว ให้เรียกเมธอด `save()` ของอ็อบเจกต์ `Watermarker` เพื่อเขียนแผนภาพที่แก้ไขแล้วลงดิสก์ ทันทีหลังการบันทึกให้เรียก `close()` เพื่อปล่อยทรัพยากรเนทีฟและตัวจัดการไฟล์ที่ SDK ถืออยู่ การปิด `Watermarker` อย่างถูกต้องช่วยป้องกันการรั่วไหลของหน่วยความจำและทำให้การดำเนินการต่อไปบนไฟล์เดียวกันทำได้โดยไม่มีข้อขัดแย้ง
+### บันทึกและปิดทรัพยากร
+อย่าลืมบันทึกการเปลี่ยนแปลงและปิดทรัพยากรเพื่อป้องกันการรั่วไหล:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_diagram.vsdx");
@@ -181,50 +138,51 @@ imageWatermark.close();
 ```
 
 ## การประยุกต์ใช้งานจริง
-- **Document security** – ปกป้องแผนภาพวิศวกรรมที่เป็นความลับก่อนแชร์กับพันธมิตร  
-- **Branding** – ฝังโลโก้บริษัทบนหน้าที่เลือกของคู่มือเทคนิค  
-- **Copyright protection** – เพิ่มประกาศทางกฎหมายบนแผนภาพ Visio เพื่อป้องกันการนำไปใช้โดยไม่ได้รับอนุญาต  
+- **ความปลอดภัยของเอกสาร** – ใส่ลายน้ำความลับเฉพาะบนหน้าที่มีแผนผังที่สำคัญ.  
+- **การสร้างแบรนด์** – วางโลโก้บริษัทบนหน้าปกขณะที่หน้าภายในยังคงสะอาด.  
+- **การปกป้องลิขสิทธิ์** – เพิ่มข้อความลิขสิทธิ์บนหน้าสุดท้ายของชุดแผนภาพเทคนิค.
 
 ## ข้อควรพิจารณาด้านประสิทธิภาพ
-- **Memory management** – SDK สตรีมหน้า ดังนั้นคุณสามารถใส่น้ำลายน้ำบนแผนภาพ 300 หน้าโดยไม่เกิน 200 MB RAM  
-- **Image optimisation** – ลดขนาดภาพน้ำลายน้ำให้ ≤ 300 KB เพื่อลดเวลาประมวลผล  
-- **Garbage collection** – เรียก `close()` บน `Watermarker` เสมอเพื่อให้ Java คืนทรัพยากรเนทีฟอย่างทันท่วงที  
+- **การจัดการหน่วยความจำ** – ปิดวัตถุลายน้ำแต่ละอันหลังจากบันทึกเพื่อปลดปล่อยทรัพยากรเนทีฟ.  
+- **การปรับรูปภาพ** – ใช้ไฟล์ PNG/JPEG ขนาดเหมาะเพื่อให้การประมวลผลเร็ว.  
+- **การประมวลผลเป็นชุด** – เมื่อจัดการแผนภาพหลายไฟล์ ให้ใช้อินสแตนซ์ `Watermarker` ตัวเดียวซ้ำได้เท่าที่เป็นไปได้.
+
+## ปัญหาที่พบบ่อยและวิธีแก้ไข
+| อาการ | สาเหตุที่เป็นไปได้ | วิธีแก้ |
+|---------|--------------|-----|
+| ลายน้ำไม่ปรากฏ | `pageIndex` ผิด (เริ่มจากศูนย์) | ตรวจสอบให้แน่ใจว่าดัชนีตรงกับหน้าที่ต้องการ. |
+| ภาพบิดเบี้ยว | ภาพต้นฉบับความละเอียดสูง | ปรับขนาดภาพก่อนสร้าง `ImageWatermark`. |
+| เกิดข้อผิดพลาดใบอนุญาตในผลิตภัณฑ์ | ใช้ใบอนุญาตทดลองเกินระยะเวลาที่กำหนด | ใช้ไฟล์ใบอนุญาตเต็มผ่าน `License.setLicense("path/to/license.json")`. |
 
 ## คำถามที่พบบ่อย
 
-**Q: ฉันสามารถเพิ่มน้ำลายน้ำหลายชั้นบนหน้าแผนภาพเดียวได้หรือไม่?**  
-A: ได้. เรียก `watermarker.add()` ซ้ำหลายครั้งโดยใช้อ็อบเจกต์น้ำลายน้ำที่แตกต่างและใช้ `DiagramPageWatermarkOptions` เดียวกัน  
+**Q1: ฉันสามารถเพิ่มลายน้ำหลายรายการในหน้าแผนภาพเดียวได้หรือไม่?**  
+A1: ใช่ เพียงเรียก `watermarker.add()` ด้วยวัตถุลายน้ำที่แตกต่างกันสำหรับดัชนีหน้าเดียวกัน.
 
-**Q: ฟอร์แมตไฟล์ใดบ้างที่ GroupDocs.Watermark for Java รองรับ?**  
-A: รองรับมากกว่า 50 ฟอร์แมต รวมถึง Visio (VSD, VSDX), PDF, SVG, PNG, JPEG, และ BMP ดูที่ [API documentation](https://reference.groupdocs.com/watermark/java) สำหรับรายการเต็ม  
+**Q2: ไฟล์รูปแบบใดบ้างที่ GroupDocs.Watermark for Java รองรับ?**  
+A2: รองรับรูปแบบแผนภาพและรูปภาพหลายประเภท ดูรายละเอียดเต็มใน [API documentation](https://reference.groupdocs.com/watermark/java).
 
-**Q: ฉันจะจัดการเรื่องใบอนุญาตเมื่อใช้เวอร์ชันทดลองได้อย่างไร?**  
-A: ดาวน์โหลดใบอนุญาตทดลองชั่วคราวจากพอร์ทัล GroupDocs สำหรับการใช้งานจริงให้ซื้อใบอนุญาตเต็มเพื่อเปิดฟีเจอร์ทั้งหมดและลบข้อจำกัดของรุ่นทดลอง  
+**Q3: ฉันจะจัดการกับปัญหาใบอนุญาตเมื่อใช้เวอร์ชันทดลองได้อย่างไร?**  
+A3: เริ่มต้นด้วยใบอนุญาตชั่วคราวฟรีจาก GroupDocs. ซื้อใบอนุญาตเต็มเพื่อเปิดใช้งานคุณสมบัติทั้งหมดสำหรับการผลิต.
 
-**Q: ขั้นตอนการแก้ไขปัญหาที่พบบ่อยเมื่อน้ำลายน้ำไม่ปรากฏคืออะไร?**  
-A: ตรวจสอบดัชนีหน้า (เริ่มจาก 0), ยืนยันพาธรูปภาพถูกต้อง, และตรวจสอบว่าความทึบของน้ำลายน้ำไม่ได้ตั้งเป็น 0 %  
+**Q4: มีเคล็ดลับการแก้ไขปัญหาที่พบบ่อยเมื่อลายน้ำไม่แสดงตามที่คาดหวังหรือไม่?**  
+A4: ตรวจสอบให้แน่ใจว่าดัชนีหน้าถูกต้องและตรวจสอบเส้นทางไฟล์ภาพอีกครั้ง นอกจากนี้ตรวจสอบว่าความทึบของลายน้ำไม่ได้ตั้งเป็น 0.
 
-**Q: ฉันสามารถปรับแต่งลักษณะของน้ำลายน้ำเพิ่มเติมได้อย่างไร?**  
-A: ปรับขนาดฟอนต์, ความทึบ, มุมการหมุน, และตำแหน่งผ่านคุณสมบัติของ `TextWatermark` หรือ `ImageWatermark`  
+**Q5: ฉันจะปรับแต่งลักษณะลายน้ำให้ละเอียดขึ้นได้อย่างไร?**  
+A5: ปรับขนาดฟอนต์, ความทึบ, การหมุน, และตำแหน่งโดยใช้เมธอดที่มีใน `TextWatermark` หรือ `ImageWatermark`.
 
-## แหล่งข้อมูลเพิ่มเติม
-- [เอกสาร GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
-- [คู่มืออ้างอิง API](https://reference.groupdocs.com/watermark/java)  
-- [ดาวน์โหลดไลบรารี](https://releases.groupdocs.com/watermark/java/)  
-- [ที่เก็บ GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [ฟอรัมสนับสนุนฟรี](https://forum.groupdocs.com/c/watermark/10)  
-- [ข้อมูลใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)  
+## แหล่งข้อมูล
+- [เอกสาร GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)
+- [คู่มืออ้างอิง API](https://reference.groupdocs.com/watermark/java)
+- [ดาวน์โหลดไลบรารี](https://releases.groupdocs.com/watermark/java/)
+- [ที่เก็บ GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [ฟอรั่มสนับสนุนฟรี](https://forum.groupdocs.com/c/watermark/10)
+- [ข้อมูลใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
 
-สำรวจลิงก์เหล่านี้เพื่อเพิ่มพูนความเชี่ยวชาญของคุณกับ GroupDocs.Watermark for Java. ขอให้สนุกกับการใส่น้ำลายน้ำ!
+สำรวจแหล่งข้อมูลเหล่านี้เพื่อเพิ่มพูนความเข้าใจและความสามารถของคุณกับ GroupDocs.Watermark for Java. ขอให้สนุกกับการใส่ลายน้ำ!
 
 ---
 
-**อัปเดตล่าสุด:** 2026-10-11  
-**ทดสอบด้วย:** GroupDocs.Watermark 24.11 for Java  
-**ผู้เขียน:** GroupDocs  
-
-## บทแนะนำที่เกี่ยวข้อง
-
-- [วิธีเพิ่มน้ำลายน้ำข้อความในแผนภาพโดยใช้ GroupDocs.Watermark ใน Java](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)  
-- [เพิ่มน้ำลายน้ำข้อความในแผนภาพโดยใช้ GroupDocs.Watermark for Java: คู่มือครบถ้วน](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)  
-- [วิธีเพิ่มน้ำลายน้ำข้อความและรูปภาพในหน้า PDF เฉพาะโดยใช้ GroupDocs.Watermark for Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
+**Last Updated:** 2026-02-16  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs

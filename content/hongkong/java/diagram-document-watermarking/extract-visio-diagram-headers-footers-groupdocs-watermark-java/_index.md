@@ -1,107 +1,61 @@
 ---
-date: '2026-10-11'
-description: 了解如何使用 GroupDocs.Watermark for Java 提取 Visio 頁眉，包括 font settings、text
-  content、colors 以及 margins 在 Visio 圖表中。
+date: '2025-12-31'
+description: 了解如何使用 GroupDocs 並使用 GroupDocs.Watermark Java 從 Visio 圖表中提取頁首與頁尾，包括字型設定與文字內容。
 keywords:
-- extract visio headers
-- GroupDocs.Watermark Java
-- Visio diagram processing
-- diagram watermarking
-- Java document extraction
-lastmod: '2026-10-11'
-og_description: 了解如何使用 GroupDocs.Watermark for Java 提取 Visio 頁眉，包括 font settings、text
-  content、colors 以及 margins 在 Visio 圖表中。
-og_image_alt: Guide showing Java code extracting headers and footers from Visio diagrams
-  with GroupDocs.Watermark
-og_title: 使用 GroupDocs.Watermark for Java 提取 Visio 頁眉
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-11'
-  description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  headline: Extract visio headers with GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  name: Extract visio headers with GroupDocs.Watermark for Java
-  steps:
-  - name: '**Document analysis** – compare styling across thousands of diagrams for
-      consistency.'
-    text: '**Document analysis** – compare styling across thousands of diagrams for
-      consistency.'
-  - name: '**Compliance checks** – verify that corporate header/footer standards are
-      met before publishing.'
-    text: '**Compliance checks** – verify that corporate header/footer standards are
-      met before publishing.'
-  - name: '**Automated report generation** – reuse extracted text to populate metadata
-      fields in reporting systems.'
-    text: '**Automated report generation** – reuse extracted text to populate metadata
-      fields in reporting systems.'
-  - name: '**CMS integration** – feed header text into content‑management workflows
-      for indexing or search.'
-    text: '**CMS integration** – feed header text into content‑management workflows
-      for indexing or search.'
-  type: HowTo
-- questions:
-  - answer: Yes. GroupDocs.Watermark processes large diagrams in a streaming mode,
-      avoiding full‑in‑memory loading and keeping RAM usage under 200 MB.
-    question: Can I extract headers from large Visio files (e.g., 300 MB)?
-  - answer: Absolutely. Pass the password to the `Watermarker` constructor to unlock
-      the document before extraction.
-    question: Does the API work with password‑protected Visio files?
-  - answer: The library handles Visio 2003‑2021 files, covering both VSD and VSDX
-      formats.
-    question: Which Visio versions are supported?
-  - answer: Verify that the diagram actually contains a header/footer; some templates
-      omit them, resulting in empty collections.
-    question: What should I do if I encounter a null value for a header property?
-  - answer: Loop through your file list, instantiate a `Watermarker` for each file,
-      extract the data, then dispose of the instance before moving to the next file.
-    question: Is there a way to batch‑process multiple diagrams?
-  type: FAQPage
-tags:
-- extract visio headers
-- GroupDocs.Watermark
-- Java diagram API
-- Visio automation
-- document processing
-title: 使用 GroupDocs.Watermark for Java 提取 Visio 頁眉
+- extract headers footers Visio diagrams
+- GroupDocs Watermark Java
+- Visio diagram watermarking
+title: 如何使用 GroupDocs – 提取 Visio 頁眉與頁腳 (Java)
 type: docs
 url: /zh-hant/java/diagram-document-watermarking/extract-visio-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# 使用 GroupDocs.Watermark for Java 提取 Visio 標頭
+# 從 Visio 圖表中提取頁眉與頁腳，使用 GroupDocs.Watermark for Java
 
-在本教學中，您將了解如何使用 GroupDocs.Watermark for Java 函式庫從 Microsoft Visio 圖表檔案中 **提取 Visio 標頭** 和頁腳。我們將逐步說明如何取得字型細節、文字內容、顏色以及邊距值，讓您能自動化分析或合規性檢查您的圖表資產。
+## 簡介
 
-## 快速解答
-- **哪個類別載入 Visio 檔案？** `Watermarker` 載入圖表並提供對標頭/頁腳物件的存取。  
-- **我可以讀取字型大小與樣式嗎？** 是的 – API 會回傳字型系列、大小、粗體、斜體、底線與刪除線。  
-- **顏色是否以 ARGB 形式回傳？** 文字顏色以 32 位元 ARGB 整數提供。  
-- **提取時需要授權嗎？** 試用版可用於評估；正式環境需購買永久授權。  
-- **需要哪個 Java 版本？** 支援 Java 8 或更高版本。
+在 Microsoft Visio 圖表的頁眉與頁腳中提取字型資訊、文字內容、顏色或邊距時感到困難嗎？使用 GroupDocs.Watermark for Java，這些工作變得簡單。本指南將示範如何利用這個強大的函式庫高效提取關鍵細節。
 
-## 何謂提取 Visio 標頭？
+在本教學中，**您將學習如何使用 GroupDocs** 來提取頁眉/頁腳資料，讓文件分析與合規檢查變得輕而易舉。
 
-`extract visio headers` 指的是以程式方式從 Visio 圖表檔案中取得標頭與頁腳的中繼資料——例如字型屬性、文字字串、顏色與版面邊距。透過 GroupDocs.Watermark API 存取這些屬性，即可分析樣式、強制執行企業標準，並將標頭內容重新利用於報告或索引等用途。
+閱讀完本指南後，您將全面了解這些功能。讓我們一起深入了解開始所需的內容！
 
-## 為何使用 GroupDocs.Watermark for Java？
+## 快速回答
+- **可以提取什麼？** Visio 頁眉與頁腳的字型設定、文字內容、顏色與邊距。  
+- **需要哪個函式庫？** GroupDocs.Watermark for Java（版本 24.11 或更新）。  
+- **需要授權嗎？** 免費試用可用於評估；正式環境需購買完整授權。  
+- **支援的 Java 版本？** JDK 8 或以上。  
+- **如何釋放資源？** 完成資料提取後呼叫 `watermarker.close()`。
 
-GroupDocs.Watermark 支援 **30 多種圖表與影像格式**，且可處理最高 **500 MB** 的檔案，而無需將整個文件載入記憶體，為大規模自動化流程提供快速、低記憶體的提取。
+## 如何使用 GroupDocs 提取 Visio 頁眉與頁腳
 
-## 前置條件
+以下提供逐步操作說明，涵蓋從專案設定到提取每項頁眉/頁腳資訊的全部過程。依照編號步驟執行，即可在數分鐘內取得可執行的程式碼。
 
-- **GroupDocs.Watermark for Java** version 24.11 或更新。  
-- Java Development Kit 8 或更新。  
-- 如 IntelliJ IDEA 或 Eclipse 等 IDE。  
-- 基本的 Maven 知識。
+## 先決條件
 
-## 設定 GroupDocs.Watermark for Java
+在開始之前，請確保您具備以下條件：
 
-首先，將函式庫加入您的 Maven 專案：
+### 必需的函式庫與相依性
 
-**Maven 設定**
+- **GroupDocs.Watermark for Java**：確保已安裝 24.11 或更新版本。
+
+### 環境設定需求
+
+- 相容的 JDK（Java Development Kit），建議使用 8 版或以上。  
+- 如 IntelliJ IDEA 或 Eclipse 等 IDE。
+
+### 知識先備條件
+
+具備 Java 程式設計的基本知識以及 Maven 相依性管理的概念將會很有幫助。
+
+## 使用 GroupDocs.Watermark Java 進行提取
+
+### 設定 GroupDocs.Watermark for Java
+
+要開始使用，您需要將 GroupDocs.Watermark 函式庫加入專案。可透過 Maven 完成：
+
+**Maven Setup**
 
 ```xml
 <repositories>
@@ -121,51 +75,43 @@ GroupDocs.Watermark 支援 **30 多種圖表與影像格式**，且可處理最�
 </dependencies>
 ```
 
-您也可以直接從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載 JAR 檔。
+或者直接從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載函式庫。
 
 ### 取得授權
 
-- **Free trial** – 免費探索 API。  
-- **Temporary license** – 從 GroupDocs 入口網站申請。  
-- **Full license** – 購買以獲得無限制的正式使用。
-
-## 資源
-- [GroupDocs.Watermark for Java 版本發布](https://releases.groupdocs.com/watermark/java/)
-- [GroupDocs 文件](https://docs.groupdocs.com/watermark/java/)
-- [免費支援論壇](https://forum.groupdocs.com/c/watermark/10)
-- [GroupDocs 文件](https://docs.groupdocs.com/watermark/java/)
-- [API 參考文件](https://reference.groupdocs.com/watermark/java)
-- [GroupDocs 下載](https://releases.groupdocs.com/watermark/java/)
+- **免費試用**：先使用免費試用版以探索功能。  
+- **臨時授權**：在 GroupDocs 官方網站申請臨時授權。  
+- **購買**：若需完整功能與支援，請考慮購買授權。
 
 ### 基本初始化
 
-`Watermarker` 是用來載入與操作圖表文件的主要類別。建立實例以開啟您的 Visio 檔案：
+透過建立 `Watermarker` 實例來初始化環境。此實例會載入您的圖表文件至應用程式中：
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-## 如何使用 GroupDocs.Watermark for Java 提取 Visio 標頭？
+## 實作指南
 
-使用 `Watermarker` 載入 Visio 圖表，然後呼叫標頭/頁腳 API 以取得所需資訊。此兩步驟方法——先初始化再提取屬性——涵蓋您可能需要的所有標頭與頁腳資料。API 為標頭與頁腳提供獨立的物件，分別公開取得字型設定、文字字串、顏色值與邊距測量的方法，讓您在一次執行中收集完整的中繼資料。
+接下來，我們將逐一說明每個功能，示範如何實作。
 
-### 功能 1：提取標頭與頁腳字型資訊
+### 功能 1：提取頁眉與頁腳字型資訊
 
 #### 概述
 
-此功能會回傳每個標頭與頁腳元素的完整字型設定，包括字型系列名稱、大小、粗體、斜體、底線與刪除線旗標。
+此功能可從圖表文件的頁眉與頁腳取得字型設定，包括字型名稱、大小、粗體、斜體、底線與刪除線等屬性。
 
 ##### 步驟實作
 
-**初始化 Watermarker**
+**Initialize Watermarker**
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-**提取字型設定**
+**Extract Font Settings**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -181,15 +127,15 @@ boolean isStrikeout = content.getHeaderFooter().getFont().getStrikeout();
 watermarker.close(); // Always close the watermarker to free resources
 ```
 
-### 功能 2：提取標頭與頁腳文字內容
+### 功能 2：提取頁眉與頁腳文字內容
 
 #### 概述
 
-您可以讀取出現在 Visio 圖表每個標頭與頁腳區域的文字內容。
+此功能專注於從圖表文件的頁眉與頁腳不同區域提取文字。
 
 ##### 步驟實作
 
-**提取標頭與頁腳文字**
+**Extract Header & Footer Text**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -207,15 +153,15 @@ String footerRightText = content.getHeaderFooter().getFooterRight();
 watermarker.close(); // Remember to close the watermarker
 ```
 
-### 功能 3：提取標頭與頁腳文字顏色
+### 功能 3：提取頁眉與頁腳文字顏色
 
 #### 概述
 
-API 以單一 ARGB 整數提供文字顏色，您可以將其轉換為標準的 RGB 或 HEX 格式。
+此功能可讓您取得頁眉與頁腳使用的顏色，以 ARGB 整數值表示。
 
 ##### 步驟實作
 
-**提取文字顏色**
+**Extract Text Color**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -226,15 +172,15 @@ int textColorArgb = content.getHeaderFooter().getTextColor().toArgb();
 watermarker.close(); // Close to release resources
 ```
 
-### 功能 4：提取標頭與頁腳邊距
+### 功能 4：提取頁眉與頁腳邊距
 
 #### 概述
 
-邊距值讓您了解標頭/頁腳內容周圍的間距，對版面驗證很有幫助。
+了解如何提取頁眉與頁腳的邊距設定，這對於掌握版面配置至關重要。
 
 ##### 步驟實作
 
-**提取邊距設定**
+**Extract Margin Settings**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -248,50 +194,50 @@ watermarker.close(); // Closing is crucial for resource management
 
 ## 實務應用
 
-利用這些提取功能，您可以自動化多種實務情境：
+運用這些功能可簡化多項實務任務，例如：
 
-1. **文件分析** – 比較成千上萬圖表的樣式以確保一致性。  
-2. **合規性檢查** – 在發布前驗證企業的標頭/頁腳標準是否符合。  
-3. **自動化報告產生** – 重新使用提取的文字填充報告系統中的中繼資料欄位。  
-4. **CMS 整合** – 將標頭文字輸入內容管理工作流程，以供索引或搜尋使用。
+1. **文件分析** – 自動提取樣式資訊以進行文件分析與比對。  
+2. **合規檢查** – 確保頁眉與頁腳格式符合組織標準。  
+3. **自動化報告產生** – 根據提取的字型與顏色設定動態調整樣式。  
+4. **與 CMS 系統整合** – 使用提取的文字內容填充內容管理系統的中繼資料。
 
 ## 效能考量
 
-為了保持提取速度快且記憶體效率高：
+使用 GroupDocs.Watermark 時，為了最佳化效能：
 
-- 在完成處理後盡快關閉 `Watermarker` 實例。  
-- 對於超過 200 MB 的檔案，請以串流方式處理文件，而非一次性載入。  
-- 監測 Java 堆積使用情況；函式庫會在每次呼叫後釋放原生資源。
+- 在操作完成後關閉 `Watermarker` 實例，以減少資源使用。  
+- 有效管理記憶體，特別是處理大型圖表檔案時。  
+- 針對應用程式進行效能分析與測試，以找出瓶頸。
 
 ## 常見問題
 
-**Q:** 我可以從大型 Visio 檔案（例如 300 MB）提取標頭嗎？  
-**A:** 是的。GroupDocs.Watermark 以串流模式處理大型圖表，避免完整載入記憶體，將 RAM 使用量控制在 200 MB 以下。
+**Q: 如何有效處理大型圖表檔案？**  
+A: 採用有效的記憶體管理方式，及時關閉 `Watermarker`，並對應用程式進行效能分析以找出大量記憶體使用的操作。
 
-**Q:** API 是否能處理受密碼保護的 Visio 檔案？  
-**A:** 絕對可以。將密碼傳入 `Watermarker` 建構子，即可在提取前解鎖文件。
+**Q: GroupDocs.Watermark 能否從其他文件類型提取資訊？**  
+A: 可以，它支援除 Visio 圖表之外的多種格式。請參閱官方文件取得完整清單。
 
-**Q:** 支援哪些 Visio 版本？  
-**A:** 此函式庫支援 Visio 2003‑2021 檔案，涵蓋 VSD 與 VSDX 格式。
+**Q: 若遇到提取錯誤該怎麼辦？**  
+A: 請確認環境符合函式庫需求，確保圖表格式受支援，並檢查錯誤細節以找出缺少的相依性。
 
-**Q:** 若遇到標頭屬性為 null，該怎麼辦？  
-**A:** 請確認圖表確實包含標頭/頁腳；某些範本會省略，導致集合為空。
+**Q: 是否提供除錯支援？**  
+A: 有，您可以在 [free support forum](https://forum.groupdocs.com/c/watermark/10) 提問，或直接聯繫 GroupDocs 支援團隊。
 
-**Q:** 有沒有方法批次處理多個圖表？  
-**A:** 迭代您的檔案清單，為每個檔案建立 `Watermarker` 實例，提取資料後釋放實例，再處理下一個檔案。
+**Q: 如何將這些提取步驟整合到現有的 Java 應用程式中？**  
+A: 依照上述的初始化模式，在需要頁眉/頁腳資料的地方嵌入提取程式碼，並記得在使用完畢後關閉 `Watermarker`。
 
 ## 結論
 
-您現在擁有使用 GroupDocs.Watermark for Java **提取 Visio 標頭** 與頁腳的完整步驟指南。將這些技術應用於自動化樣式稽核、產生中繼資料，或將圖表資訊整合至更大型的 Java 應用程式中。欲取得更深入的資訊，請參閱官方文件與 API 參考。
+您現在已具備使用 GroupDocs.Watermark for Java 從 Visio 圖表提取頁眉與頁腳的堅實基礎。可自行嘗試這些功能，將其無縫整合至專案中。欲進一步探索，請深入閱讀 [GroupDocs documentation](https://docs.groupdocs.com/watermark/java/)，並依需求考慮擴充功能。
+
+## 資源
+
+- **文件說明**：前往 [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/) 瞭解更多  
+- **API 參考**：深入閱讀 [API References](https://reference.groupdocs.com/watermark/java)  
+- **下載函式庫**：從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 取得最新版本
 
 ---
 
-**最後更新：** 2026-10-11  
+**最後更新：** 2025-12-31  
 **測試環境：** GroupDocs.Watermark 24.11 for Java  
-**作者：** GroupDocs  
-
-## 相關教學
-
-- [使用 GroupDocs.Watermark 在 Java 中編輯圖表標頭與頁腳&#58; 完整指南](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [使用 GroupDocs.Watermark 在 Java 中提取圖表形狀資訊](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
-- [GroupDocs.Watermark Java 圖表浮水印教學](/watermark/java/diagram-document-watermarking/)
+**作者：** GroupDocs

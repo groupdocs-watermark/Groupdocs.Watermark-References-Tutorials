@@ -1,105 +1,63 @@
 ---
-date: '2026-10-11'
-description: GroupDocs.Watermark for Java kullanarak Visio başlıklarını nasıl çıkaracağınızı
-  öğrenin; font ayarları, text içeriği, colors ve margins Visio diyagramlarında.
+date: '2025-12-31'
+description: GroupDocs.Watermark Java ile groupdocs kullanmayı ve Visio diyagramlarından
+  başlık ve altbilgileri, yazı tipi ayarları ve metin içeriği dahil olmak üzere nasıl
+  çıkaracağınızı öğrenin.
 keywords:
-- extract visio headers
-- GroupDocs.Watermark Java
-- Visio diagram processing
-- diagram watermarking
-- Java document extraction
-lastmod: '2026-10-11'
-og_description: GroupDocs.Watermark for Java kullanarak Visio başlıklarını nasıl çıkaracağınızı
-  öğrenin; font ayarları, text içeriği, colors ve margins Visio diyagramlarında.
-og_image_alt: Guide showing Java code extracting headers and footers from Visio diagrams
-  with GroupDocs.Watermark
-og_title: GroupDocs.Watermark for Java ile Visio başlıklarını çıkarın
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-11'
-  description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  headline: Extract visio headers with GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  name: Extract visio headers with GroupDocs.Watermark for Java
-  steps:
-  - name: '**Document analysis** – compare styling across thousands of diagrams for
-      consistency.'
-    text: '**Document analysis** – compare styling across thousands of diagrams for
-      consistency.'
-  - name: '**Compliance checks** – verify that corporate header/footer standards are
-      met before publishing.'
-    text: '**Compliance checks** – verify that corporate header/footer standards are
-      met before publishing.'
-  - name: '**Automated report generation** – reuse extracted text to populate metadata
-      fields in reporting systems.'
-    text: '**Automated report generation** – reuse extracted text to populate metadata
-      fields in reporting systems.'
-  - name: '**CMS integration** – feed header text into content‑management workflows
-      for indexing or search.'
-    text: '**CMS integration** – feed header text into content‑management workflows
-      for indexing or search.'
-  type: HowTo
-- questions:
-  - answer: Yes. GroupDocs.Watermark processes large diagrams in a streaming mode,
-      avoiding full‑in‑memory loading and keeping RAM usage under 200 MB.
-    question: Can I extract headers from large Visio files (e.g., 300 MB)?
-  - answer: Absolutely. Pass the password to the `Watermarker` constructor to unlock
-      the document before extraction.
-    question: Does the API work with password‑protected Visio files?
-  - answer: The library handles Visio 2003‑2021 files, covering both VSD and VSDX
-      formats.
-    question: Which Visio versions are supported?
-  - answer: Verify that the diagram actually contains a header/footer; some templates
-      omit them, resulting in empty collections.
-    question: What should I do if I encounter a null value for a header property?
-  - answer: Loop through your file list, instantiate a `Watermarker` for each file,
-      extract the data, then dispose of the instance before moving to the next file.
-    question: Is there a way to batch‑process multiple diagrams?
-  type: FAQPage
-tags:
-- extract visio headers
-- GroupDocs.Watermark
-- Java diagram API
-- Visio automation
-- document processing
-title: GroupDocs.Watermark for Java ile Visio başlıklarını çıkarın
+- extract headers footers Visio diagrams
+- GroupDocs Watermark Java
+- Visio diagram watermarking
+title: GroupDocs Nasıl Kullanılır – Visio Başlık ve Altbilgilerini Çıkarma (Java)
 type: docs
 url: /tr/java/diagram-document-watermarking/extract-visio-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# GroupDocs.Watermark for Java ile Visio başlıklarını çıkarma
+# Visio Diyagramlarından Başlık ve Altbilgileri GroupDocs.Watermark for Java Kullanarak Çıkarma
 
-Bu öğreticide, GroupDocs.Watermark Java kütüphanesini kullanarak Microsoft Visio diyagram dosyalarından **visio başlıklarını** ve altbilgilerini nasıl çıkaracağınızı keşfedeceksiniz. Yazı tipi ayrıntılarını, metin içeriğini, renkleri ve kenar boşluğu değerlerini almayı adım adım göstereceğiz, böylece diyagram varlıklarınızda analiz veya uyumluluk kontrollerini otomatikleştirebilirsiniz.
+## Giriş
 
-## Hızlı cevaplar
-- **Visio dosyasını hangi sınıf yükler?** `Watermarker` diyagramı yükler ve başlık/altbilgi nesnelerine erişim sağlar.  
-- **Yazı tipi boyutunu ve stilini okuyabilir miyim?** Evet – API aile, boyut, kalın, italik, altı çizili ve üstü çizili bilgilerini döndürür.  
-- **Renk ARGB olarak döndürülüyor mu?** Metin rengi 32‑bit ARGB tamsayı olarak sağlanır.  
-- **Çıkarma için lisansa ihtiyacım var mı?** Değerlendirme için bir deneme sürümü çalışır; üretim için kalıcı bir lisans gereklidir.  
-- **Hangi Java sürümü gereklidir?** Java 8 veya üzeri desteklenir.
+Microsoft Visio diyagramlarındaki başlık ve altbilgilerden yazı tipi bilgisi, metin içeriği, renkler veya kenar boşluklarını çıkarmakta zorlanıyor musunuz? GroupDocs.Watermark for Java ile bu görevler çok daha basit hale geliyor. Bu kılavuz, bu güçlü kütüphaneyi kullanarak kritik detayları verimli bir şekilde nasıl çıkaracağınızı gösterecek.
 
-## Visio başlıklarını çıkarma nedir?
-`extract visio headers`, Visio diyagram dosyalarından başlık ve altbilgi meta verilerini—yazı tipi özellikleri, metin dizeleri, renkler ve düzen kenar boşlukları gibi—programatik olarak almayı ifade eder. Bu özelliklere GroupDocs.Watermark API'si aracılığıyla erişerek stil analizi yapabilir, kurumsal standartları uygulayabilir ve raporlama veya indeksleme amaçları için başlık içeriğini yeniden kullanabilirsiniz.
+Bu öğreticide, **GroupDocs** kullanarak başlık/altbilgi verilerini nasıl alacağınızı öğrenecek ve belge analizi ile uyumluluk kontrollerini zahmetsizce yapabileceksiniz.
 
-## Java için GroupDocs.Watermark neden kullanılmalı?
-GroupDocs.Watermark **30'dan fazla diyagram ve görüntü formatını** destekler ve **500 MB**'a kadar dosyaları tüm belgeyi belleğe yüklemeden işleyebilir, büyük ölçekli otomasyon hatları için hızlı ve düşük bellek tüketimli çıkarma sağlar.
+Bu rehberin sonunda, bu özellikler hakkında kapsamlı bir anlayışa sahip olacaksınız. Başlamak için ihtiyacınız olanları inceleyelim!
 
-## Önkoşullar
+## Hızlı Yanıtlar
+- **Ne çıkarabilirsiniz?** Visio başlık ve altbilgilerindeki yazı tipi ayarları, metin içeriği, renkler ve kenar boşlukları.  
+- **Hangi kütüphane gereklidir?** GroupDocs.Watermark for Java (sürüm 24.11 veya daha yeni).  
+- **Lisans gerekli mi?** Değerlendirme için ücretsiz deneme yeterlidir; üretim için tam lisans gerekir.  
+- **Hangi Java sürümü desteklenir?** JDK 8 ve üzeri.  
+- **Kaynakları nasıl serbest bırakırım?** Veri çıkarma işlemi tamamlandığında `watermarker.close()` çağırın.
 
-- **GroupDocs.Watermark for Java** sürüm 24.11 veya üzeri.  
-- Java Development Kit 8 veya daha yeni.  
-- IntelliJ IDEA veya Eclipse gibi bir IDE.  
-- Temel Maven bilgisi.
+## GroupDocs Kullanarak Visio Başlık ve Altbilgileri Nasıl Çıkarılır
 
-## Java için GroupDocs.Watermark kurulumu
+Aşağıda, proje kurulumundan başlık/altbilgi bilgilerinin çıkarılmasına kadar her şeyi kapsayan adım‑adım bir rehber bulacaksınız. Numaralı adımları izleyin, birkaç dakika içinde çalışan kodunuz olacak.
 
-İlk olarak, kütüphaneyi Maven projenize ekleyin:
+## Ön Koşullar
 
-**Maven kurulumu**
+Başlamadan önce aşağıdakilerin mevcut olduğundan emin olun:
+
+### Gerekli Kütüphaneler ve Bağımlılıklar
+
+- **GroupDocs.Watermark for Java**: Sürüm 24.11 veya daha yenisinin yüklü olduğundan emin olun.
+
+### Ortam Kurulum Gereksinimleri
+
+- Uyumlu bir JDK (Java Development Kit), tercihen sürüm 8 veya üzeri.
+- IntelliJ IDEA veya Eclipse gibi bir IDE.
+
+### Bilgi Gereksinimleri
+
+Java programlamaya temel aşinalık ve Maven bağımlılık yönetimini anlamak faydalı olacaktır.
+
+## GroupDocs.Watermark Java ile Çıkarma
+
+### GroupDocs.Watermark for Java Kurulumu
+
+Başlamak için GroupDocs.Watermark kütüphanesini projenize eklemeniz gerekir. Bunu Maven üzerinden yapabilirsiniz:
+
+**Maven Kurulumu**
 
 ```xml
 <repositories>
@@ -119,51 +77,43 @@ GroupDocs.Watermark **30'dan fazla diyagram ve görüntü formatını** destekle
 </dependencies>
 ```
 
-JAR dosyasını doğrudan [GroupDocs.Watermark for Java sürümleri](https://releases.groupdocs.com/watermark/java/) adresinden de indirebilirsiniz.
+Alternatif olarak, kütüphaneyi doğrudan [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) adresinden indirebilirsiniz.
 
-### Lisans edinme
+### Lisans Edinme
 
-- **Ücretsiz deneme** – API'yi ücretsiz keşfedin.  
-- **Geçici lisans** – GroupDocs portalından talep edin.  
-- **Tam lisans** – sınırsız üretim kullanımı için satın alın.
+- **Ücretsiz Deneme**: Özellikleri keşfetmek için ücretsiz deneme ile başlayın.  
+- **Geçici Lisans**: GroupDocs web sitesinden geçici bir lisans talep edin.  
+- **Satın Alma**: Tam erişim ve destek için lisans satın almayı düşünün.
 
-## Kaynaklar
-- [GroupDocs.Watermark for Java sürümleri](https://releases.groupdocs.com/watermark/java/)
-- [GroupDocs belgeleri](https://docs.groupdocs.com/watermark/java/)
-- [ücretsiz destek forumu](https://forum.groupdocs.com/c/watermark/10)
-- [GroupDocs Belgeleri](https://docs.groupdocs.com/watermark/java/)
-- [API Referansları](https://reference.groupdocs.com/watermark/java)
-- [GroupDocs İndirilenler](https://releases.groupdocs.com/watermark/java/)
+### Temel Başlatma
 
-### Temel başlatma
-
-`Watermarker`, diyagram belgelerini yükleyen ve işleyen birincil sınıftır. Visio dosyanızı açmak için bir örnek oluşturun:
+Ortamınızı bir `Watermarker` örneği oluşturarak başlatın. Bu, diyagram belgenizi uygulamaya yükleyecektir:
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-## GroupDocs.Watermark for Java ile Visio başlıklarını nasıl çıkarabilirsiniz?
+## Uygulama Kılavuzu
 
-`Watermarker` kullanarak Visio diyagramını yükleyin, ardından istediğiniz bilgileri almak için başlık/altbilgi API'lerini çağırın. Bu iki adımlı yaklaşım—başlatma ardından özellik çıkarma—gereken tüm başlık ve altbilgi verilerini kapsar. API, başlıklar ve altbilgiler için ayrı nesneler sağlar; her biri yazı tipi ayarlarını, metin dizelerini, renk değerlerini ve kenar boşluğu ölçümlerini almak için yöntemler sunar, böylece tek bir geçişte kapsamlı meta verileri toplayabilirsiniz.
+Şimdi her özelliği ayrıntılı olarak inceleyelim ve nasıl uygulayabileceğinizi görelim.
 
-### Özellik 1: başlık ve altbilgi yazı tipi bilgilerini çıkarma
+### Özellik 1: Başlık ve Altbilgi Yazı Tipi Bilgilerini Çıkarma
 
 #### Genel Bakış
 
-Bu özellik, her başlık ve altbilgi öğesi için aile adı, boyut, kalınlık, italik, altı çizili ve üstü çizili bayrakları içeren tam yazı tipi yapılandırmasını döndürür.
+Bu özellik, diyagram belgesinin başlık ve altbilgilerindeki yazı tipi ayarlarını almanızı sağlar. Aile adı, boyut, kalınlık, italik, alt çizgi ve üstü çizili gibi nitelikleri içerir.
 
-##### Adım adım uygulama
+##### Adım‑Adım Uygulama
 
-**Watermarker'ı Başlat**
+**Watermarker Başlatma**
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-**Yazı tipi ayarlarını çıkar**
+**Yazı Tipi Ayarlarını Çıkarma**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -179,15 +129,15 @@ boolean isStrikeout = content.getHeaderFooter().getFont().getStrikeout();
 watermarker.close(); // Always close the watermarker to free resources
 ```
 
-### Özellik 2: başlık ve altbilgilerden metin içeriğini çıkarma
+### Özellik 2: Başlık ve Altbilgilerden Metin İçeriğini Çıkarma
 
 #### Genel Bakış
 
-Visio diyagramının her başlık ve altbilgi bölgesinde görünen gerçek metni okuyabilirsiniz.
+Bu özellik, diyagram belgesindeki başlık ve altbilgilerin farklı bölümlerinden metin çıkarmaya odaklanır.
 
-##### Adım adım uygulama
+##### Adım‑Adım Uygulama
 
-**Başlık ve altbilgi metnini çıkar**
+**Başlık ve Altbilgi Metnini Çıkarma**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -205,15 +155,15 @@ String footerRightText = content.getHeaderFooter().getFooterRight();
 watermarker.close(); // Remember to close the watermarker
 ```
 
-### Özellik 3: başlık ve altbilgilerden metin rengini çıkarma
+### Özellik 3: Başlık ve Altbilgilerdeki Metin Rengini Çıkarma
 
 #### Genel Bakış
 
-API, metin rengini tek bir ARGB tamsayı olarak sağlar; bunu standart RGB veya HEX formatlarına dönüştürebilirsiniz.
+Bu özellik, başlık ve altbilgilerde kullanılan rengi, ARGB tamsayı değeri olarak belirlemenizi sağlar.
 
-##### Adım adım uygulama
+##### Adım‑Adım Uygulama
 
-**Metin rengini çıkar**
+**Metin Rengini Çıkarma**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -224,15 +174,15 @@ int textColorArgb = content.getHeaderFooter().getTextColor().toArgb();
 watermarker.close(); // Close to release resources
 ```
 
-### Özellik 4: başlık ve altbilgi kenar boşluklarını çıkarma
+### Özellik 4: Başlık ve Altbilgi Kenar Boşluklarını Çıkarma
 
 #### Genel Bakış
 
-Kenar boşluğu değerleri, başlık/altbilgi içeriği etrafındaki boşlukları anlamanızı sağlar; bu, düzen doğrulaması için faydalıdır.
+Başlık ve altbilgilerin kenar boşluğu ayarlarını çıkararak düzen yapılandırmalarını anlamanıza yardımcı olur.
 
-##### Adım adım uygulama
+##### Adım‑Adım Uygulama
 
-**Kenar boşluğu ayarlarını çıkar**
+**Kenar Boşluğu Ayarlarını Çıkarma**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -244,54 +194,54 @@ float headerMargin = content.getHeaderFooter().getHeaderMargin();
 watermarker.close(); // Closing is crucial for resource management
 ```
 
-## Pratik uygulamalar
+## Pratik Uygulamalar
 
-Bu çıkarma yeteneklerini kullanarak çeşitli gerçek dünya senaryolarını otomatikleştirebilirsiniz:
+Bu özellikleri kullanarak aşağıdaki gerçek‑dünya görevlerini kolaylaştırabilirsiniz:
 
-1. **Belge analizi** – binlerce diyagramda stil karşılaştırması yaparak tutarlılığı kontrol edin.  
-2. **Uyumluluk kontrolleri** – yayınlamadan önce kurumsal başlık/altbilgi standartlarının karşılandığını doğrulayın.  
-3. **Otomatik rapor oluşturma** – çıkarılan metni raporlama sistemlerindeki meta veri alanlarını doldurmak için yeniden kullanın.  
-4. **CMS entegrasyonu** – başlık metnini indeksleme veya arama için içerik yönetimi iş akışlarına besleyin.
+1. **Belge Analizi** – Stil bilgilerini otomatik olarak çıkarıp belge analizi ve karşılaştırması yapın.  
+2. **Uyumluluk Kontrolleri** – Başlık ve altbilgi formatlarının organizasyon standartlarına uygunluğunu sağlayın.  
+3.tomatik Rapor Oluşturma** – Çıkarılan yazı tipi ve renk ayarlarına göre stilleri dinamik olarak ayarlayın.  
+4. **CMS Sistemleriyle Entegrasyon** – Çıkarılan metin içeriğini içerik yönetim sistemlerinde meta veri olarak kullanın.
 
-## Performans hususları
+## Performans Düşünceleri
 
-Çıkarma işlemini hızlı ve bellek verimli tutmak için:
+GroupDocs.Watermark kullanırken performansı optimize etmek için:
 
-- `Watermarker` örneğini işleme tamamlar tamamlamaz kapatın.  
-- 200 MB'den büyük dosyalar için belgeyi tamamen yüklemek yerine akış olarak işleyin.  
-- Java yığın kullanımınızı profilleyin; kütüphane her çağrıdan sonra yerel kaynakları serbest bırakır.
+- İşlemler tamamlandıktan sonra `Watermarker` örneğini kapatarak kaynak kullanımını en aza indirin.  
+- Büyük diyagram dosyalarında bellek yönetimine özen gösterin.  
+- Uygulamanızı profilleyerek darboğazları tespit edin.
 
-## Sıkça Sorulan Sorular
+## Sık Sorulan Sorular
 
-**Q: Büyük Visio dosyalarından (ör. 300 MB) başlıkları çıkarabilir miyim?**  
-A: Evet. GroupDocs.Watermark büyük diyagramları akış modunda işler, tam bellek yüklemesini önler ve RAM kullanımını 200 MB altında tutar.
+**S: Büyük diyagram dosyalarını verimli bir şekilde nasıl yönetebilirim?**  
+C: Bellek yönetimi uygulamalarını kullanın, `Watermarker`ı hızlıca kapatın ve ağır bellek kullanan bölümleri profilleyin.
 
-**Q: API, şifre korumalı Visio dosyalarıyla çalışıyor mu?**  
-A: Kesinlikle. Çıkarma işleminden önce belgeyi açmak için şifreyi `Watermarker` yapıcısına geçirin.
+**S: GroupDocs.Watermark diğer belge türlerinden bilgi çıkarabilir mi?**  
+C: Evet, Visio diyagramlarının ötesinde çok çeşitli formatları destekler. Tam liste için resmi dokümantasyona bakın.
 
-**Q: Hangi Visio sürümleri destekleniyor?**  
-A: Kütüphane Visio 2003‑2021 dosyalarını, VSD ve VSDX formatlarını kapsayacak şekilde işler.
+**S: Çıkarma hataları alırsam ne yapmalıyım?**  
+C: Ortamınızın kütüphane gereksinimleriyle uyumlu olduğunu doğrulayın, diyagram formatının desteklendiğinden emin olun ve eksik bağımlılıklar için hata detaylarını inceleyin.
 
-**Q: Bir başlık özelliği için null değerle karşılaşırsam ne yapmalıyım?**  
-A: Diyagramın gerçekten bir başlık/altbilgi içerdiğini doğrulayın; bazı şablonlar bunları atlayabilir ve boş koleksiyonlar ortaya çıkabilir.
+**S: Sorun giderme konusunda destek mevcut mu?**  
+C: Evet, [ücretsiz destek forumunda](https://forum.groupdocs.com/c/watermark/10) sorular sorabilir veya doğrudan GroupDocs destek ekibiyle iletişime geçebilirsiniz.
 
-**Q: Birden fazla diyagramı toplu olarak işlemek mümkün mü?**  
-A: Dosya listeniz üzerinden döngü kurun, her dosya için bir `Watermarker` örneği oluşturun, verileri çıkarın ve bir sonraki dosyaya geçmeden önce örneği serbest bırakın.
+**S: Bu çıkarma adımlarını mevcut bir Java uygulamasına nasıl entegre edebilirim?**  
+C: Yukarıda gösterilen başlatma desenini aynı şekilde kullanın, başlık/altbilgi verisine ihtiyaç duyduğunuz yere çıkarma kodunu yerleştirin ve kullanım sonrası `Watermarker`ı kapatmayı unutmayın.
 
 ## Sonuç
 
-Artık GroupDocs.Watermark for Java kullanarak **visio başlıklarını** ve altbilgilerini çıkarmak için eksiksiz, adım adım bir kılavuza sahipsiniz. Bu teknikleri stil denetimlerini otomatikleştirmek, meta veri oluşturmak veya diyagram bilgilerini daha büyük Java uygulamalarına entegre etmek için uygulayın. Daha ayrıntılı bilgi için resmi belgeleri ve API referansını inceleyin.
+Artık GroupDocs.Watermark for Java ile Visio diyagramlarından başlık ve altbilgileri çıkarmak için sağlam bir temele sahipsiniz. Bu özellikleri projelerinize sorunsuz bir şekilde entegre etmek için deneyler yapın. Daha fazla keşif için [GroupDocs dokümantasyonuna](https://docs.groupdocs.com/watermark/java/) göz atın ve ihtiyaçlarınıza göre işlevselliği genişletmeyi düşünün.
+
+## Kaynaklar
+
+- **Dokümantasyon**: Daha fazlası için [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/) adresini inceleyin  
+- **API Referansı**: Detaylı bilgi için [API References](https://reference.groupdocs.com/watermark/java) adresine bakın  
+- **Kütüphane İndir**: En son sürümü [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) üzerinden edinin
 
 ---
 
-**Last Updated:** 2026-10-11  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
+**Son Güncelleme:** 2025-12-31  
+**Test Edilen Sürüm:** GroupDocs.Watermark 24.11 for Java  
+**Yazar:** GroupDocs  
 
 ---
-
-## İlgili Öğreticiler
-
-- [Java'da GroupDocs.Watermark ile Diyagram Başlıklarını ve Altbilgilerini Düzenleme: Kapsamlı Bir Rehber](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Java'da GroupDocs.Watermark Kullanarak Diyagramlardan Şekil Bilgilerini Çıkarma](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
-- [GroupDocs.Watermark Java için Diyagram Su İşareti Öğreticileri](/watermark/java/diagram-document-watermarking/)

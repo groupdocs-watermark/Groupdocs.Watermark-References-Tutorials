@@ -1,88 +1,46 @@
 ---
-date: '2026-10-11'
-description: Apprenez comment appliquer un filigrane à une page de diagramme spécifique
-  en Java avec GroupDocs.Watermark, en couvrant les étapes pour appliquer un filigrane
-  à un diagramme Visio, ajouter des filigranes texte ou image, et optimiser les performances.
+date: '2026-02-16'
+description: Apprenez à ajouter un filigrane à une page de diagramme spécifique avec
+  GroupDocs.Watermark pour Java, y compris comment ajouter un filigrane d’image en
+  Java et protéger vos fichiers.
 keywords:
-- watermark specific diagram page
-- apply watermark visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking Java
-- Java diagram protection
-lastmod: '2026-10-11'
-og_description: Apprenez comment appliquer un filigrane à une page de diagramme spécifique
-  en Java avec GroupDocs.Watermark, en couvrant les étapes pour appliquer un filigrane
-  à un diagramme Visio et ajouter des filigranes texte ou image efficacement.
-og_image_alt: 'Developer guide: watermark specific diagram page using GroupDocs.Watermark
-  for Java'
-og_title: Appliquer un filigrane à une page de diagramme spécifique en Java avec GroupDocs
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-11'
-  description: Learn how to watermark specific diagram page in Java with GroupDocs.Watermark,
-    covering steps to apply watermark Visio diagram, add text or image watermarks,
-    and optimise performance.
-  headline: Watermark specific diagram page in Java using GroupDocs
-  type: TechArticle
-- questions:
-  - answer: Yes. Call `watermarker.add()` repeatedly with different watermark objects
-      and the same `DiagramPageWatermarkOptions`.
-    question: Can I add multiple watermarks to a single diagram page?
-  - answer: It supports over 50 formats, including Visio (VSD, VSDX), PDF, SVG, PNG,
-      JPEG, and BMP. See the [API documentation](https://reference.groupdocs.com/watermark/java)
-      for the full list.
-    question: What file formats are supported by GroupDocs.Watermark for Java?
-  - answer: Download a temporary trial license from the GroupDocs portal. For production,
-      purchase a full license to unlock all features and remove trial limitations.
-    question: How do I handle licensing when using a trial version?
-  - answer: Verify the page index (zero‑based), ensure the image path is correct,
-      and confirm that the watermark’s opacity is not set to 0 %.
-    question: What are common troubleshooting steps if a watermark does not appear?
-  - answer: Adjust font size, opacity, rotation angle, and positioning through the
-      properties of `TextWatermark` or `ImageWatermark`.
-    question: How can I further customize watermark appearance?
-  type: FAQPage
-tags:
-- watermark specific diagram page
-- GroupDocs.Watermark
-- Java diagram watermark
-- diagram security
-title: Appliquer un filigrane à une page de diagramme spécifique en Java avec GroupDocs
+- GroupDocs Watermark Java
+- adding watermarks diagrams
+- Java diagram document watermarking
+title: Filigraner une page de diagramme spécifique avec GroupDocs.Watermark pour Java
 type: docs
 url: /fr/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/
 weight: 1
 ---
 
-# Filigraner une page de diagramme spécifique en Java avec GroupDocs
+# Page de diagramme spécifique avec filigrane à l'aide de GroupDocs.Watermark pour Java
 
-Protéger vos diagrammes est essentiel, surtout lorsque vous devez **watermark specific diagram page** pour protéger la propriété intellectuelle ou garantir une attribution correcte. Dans ce tutoriel, vous découvrirez comment ajouter des filigranes texte et image aux pages sélectionnées d’un fichier de diagramme en utilisant **GroupDocs.Watermark for Java**. À la fin, vous serez capable de :
-
-- Appliquer un filigrane texte à toute page de diagramme que vous sélectionnez.  
-- Insérer un filigrane image sur une page ciblée.  
-- Optimiser les performances pour de grandes collections de diagrammes.
+Protéger vos diagrammes est essentiel, surtout lorsque vous devez **filigraner une page de diagramme spécifique** pour la sécurité de la propriété intellectuelle ou l’attribution de marque. Dans ce tutoriel, vous apprendrez étape par étape comment ajouter des filigranes texte et image aux pages choisies d’un fichier de diagramme à l’aide de **GroupDocs.Watermark pour Java**. À la fin, vous serez prêt à sécuriser vos diagrammes et à contrôler exactement où chaque filigrane apparaît.
 
 ## Réponses rapides
-- **What does “watermark specific diagram page” mean?** Cela signifie placer un filigrane uniquement sur les pages que vous choisissez, en laissant le reste du document intact.  
-- **Which library handles this?** GroupDocs.Watermark for Java fournit les API nécessaires.  
-- **Do I need a license?** Une licence d’essai temporaire fonctionne pour les tests ; une licence payante est requise pour la production.  
-- **Can I watermark Visio diagrams?** Oui – la bibliothèque prend en charge les fichiers Visio (VSDX, VSD).  
-- **Is performance a concern for large files?** Optimisez l’utilisation de la mémoire et la taille des images ; le SDK traite des diagrammes de plusieurs centaines de pages sans charger le fichier complet en RAM.
+- **Quel est le but principal ?** Ajouter des filigranes aux pages de diagramme sélectionnées.  
+- **Quelle bibliothèque est requise ?** GroupDocs.Watermark pour Java (Maven ou téléchargement direct).  
+- **Puis‑je ajouter un filigrane image en java ?** Oui – utilisez `ImageWatermark` avec des options spécifiques à la page.  
+- **Ai‑je besoin d’une licence ?** Une licence d’essai temporaire fonctionne pour les tests ; une licence complète est requise pour la production.  
+- **Combien de lignes de code ?** Moins de 30 lignes pour un flux complet de filigrane texte + image.
 
-## Qu’est-ce que le filigrane d’une page de diagramme spécifique ?
-Un filigrane d’une page de diagramme spécifique désigne l’ajout d’une superposition visuelle — telle qu’un texte ou une image — uniquement aux pages que vous sélectionnez explicitement dans un fichier de diagramme. Cette approche laisse toutes les autres pages intactes, vous permettant de protéger ou de marquer des sections particulières sans affecter la mise en page globale ou la lisibilité du document.
+## Qu’est‑ce que le « filigrane d’une page de diagramme spécifique » ?
+Un **filigrane d’une page de diagramme spécifique** signifie appliquer un marqueur visuel—texte ou image—uniquement aux pages que vous choisissez dans un diagramme multipage (par ex. Visio . vsdx). Cela vous donne un contrôle granulaire sur le branding, les mentions de confidentialité ou les déclarations de droits d’auteur sans affecter l’ensemble du document.
 
 ## Pourquoi utiliser GroupDocs.Watermark pour Java ?
-GroupDocs.Watermark for Java offre une architecture robuste basée sur le streaming capable de gérer plus de 50 formats de fichiers, y compris Visio, PDF, SVG et les types d’images courants. Il traite des documents contenant jusqu’à 500 pages tout en maintenant la consommation de mémoire sous 150 Mo sur un serveur typique de 8 Go, ce qui le rend idéal pour les projets de filigranage de diagrammes à grande échelle nécessitant à la fois rapidité et fiabilité.
+- **Contrôle complet des pages** – ciblez n’importe quel indice de page dont vous avez besoin.  
+- **Style riche** – polices, couleurs, opacité, rotation et mise à l’échelle d’image sont toutes configurables.  
+- **Performance optimisée** – traite efficacement les grands diagrammes et s’intègre sans problème aux builds Maven.  
+- **Support multi‑format** – fonctionne avec Visio, SVG et de nombreux autres formats de diagramme.
 
 ## Prérequis
-- GroupDocs.Watermark for Java **version 24.11** ou plus récente.  
-- Maven ou téléchargement manuel du JAR.  
-- Expérience de base en développement Java (IDE, JDK 8+).  
+- Bibliothèque **GroupDocs.Watermark pour Java** version 24.11 ou ultérieure.  
+- Maven ou un téléchargement direct du JAR.  
+- Environnement de développement Java de base (JDK 8+ recommandé).  
 
-## Configuration de GroupDocs.Watermark pour Java
-
-### Utilisation de Maven
-Add the dependency to your `pom.xml`:
+## Installation de GroupDocs.Watermark pour Java
+### Utilisation de Maven groupdocs watermark
+Ajoutez GroupDocs.Watermark à votre projet via Maven en insérant ceci dans votre `pom.xml` :
 
 ```xml
 <repositories>
@@ -103,13 +61,13 @@ Add the dependency to your `pom.xml`:
 ```
 
 ### Téléchargement direct
-Vous pouvez également obtenir la bibliothèque depuis la page officielle de publication : [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Sinon, téléchargez la dernière version directement depuis [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-#### Obtention de licence
-Commencez avec un essai gratuit en téléchargeant une licence temporaire. Des options d’achat sont disponibles sur leur site officiel si vous décidez de continuer à utiliser GroupDocs.Watermark.
+#### Acquisition de licence
+Commencez avec un essai gratuit en téléchargeant une licence temporaire. Des options d’achat sont disponibles sur leur site officiel si vous décidez de poursuivre avec GroupDocs.Watermark.
 
 ### Initialisation et configuration de base
-La classe `Watermarker` est le point d’entrée pour toutes les opérations de filigranage. Elle charge un diagramme, applique les filigranes et enregistre le résultat.
+Une fois installé, initialisez la classe `Watermarker` pour les opérations de filigrane :
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
@@ -117,12 +75,11 @@ Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx"
 ```
 
 ## Guide de mise en œuvre
-
-### Comment ajouter un filigrane texte à une page de diagramme spécifique ?
-Tout d’abord, chargez le fichier de diagramme, puis créez un objet `TextWatermark` qui définit le contenu du filigrane, la police, la taille, la couleur et l’opacité. Après avoir configuré ces propriétés visuelles, spécifiez la page cible à l’aide de `DiagramPageWatermarkOptions`. Enfin, ajoutez le filigrane au diagramme et enregistrez les modifications. Cette séquence garantit que le filigrane apparaît uniquement sur la page choisie tout en laissant les autres pages inchangées.
+### Ajout d’un filigrane texte à une page spécifique
+Pour ajouter un filigrane texte, créez‑le et configurez‑le avant de spécifier la page cible.
 
 #### Créer un filigrane texte
-`TextWatermark` représente une superposition textuelle qui peut être stylisée avec la police, la taille, la couleur et l’opacité.
+Définissez votre filigrane texte avec un contenu personnalisable, style de police, taille, etc. :
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Confidential", new Font("Arial", 18));
@@ -131,7 +88,7 @@ textWatermark.setOpacity(0.5f);
 ```
 
 #### Définir l’indice de page pour le filigrane
-`DiagramPageWatermarkOptions` vous permet de cibler une seule page (indice basé sur zéro) ou une plage de pages.
+Déterminez quelle page du diagramme affichera le filigrane à l’aide de `DiagramPageWatermarkOptions` :
 
 ```java
 DiagramPageWatermarkOptions textWatermarkOptions = new DiagramPageWatermarkOptions();
@@ -139,17 +96,17 @@ textWatermarkOptions.setPageIndex(0); // First page (index 0)
 ```
 
 #### Ajouter le filigrane texte
-Appelez `watermarker.add()` avec l’objet diagramme, l’instance du filigrane et les options contenant l’indice de page.
+Ajoutez votre filigrane configuré au diagramme :
 
 ```java
 watermarker.add(textWatermark, textWatermarkOptions);
 ```
 
-### Comment ajouter un filigrane image à une page de diagramme spécifique ?
-Commencez par charger le diagramme, puis créez une instance d’`ImageWatermark` avec le chemin vers l’image que vous souhaitez superposer. Ajustez la taille, l’opacité et la rotation de l’image selon les besoins. Utilisez `DiagramPageWatermarkOptions` pour diriger le filigrane vers l’indice de page exact que vous voulez modifier. Après avoir ajouté le filigrane avec `watermarker.add()`, enregistrez le document pour conserver les modifications sur cette page spécifique.
+### Ajout d’un filigrane image à une page spécifique
+Suivez des étapes similaires pour les filigranes image en utilisant un objet `ImageWatermark`.
 
 #### Créer un filigrane image
-`ImageWatermark` contient le chemin vers l’image que vous souhaitez superposer sur le diagramme.
+Créez une instance de `ImageWatermark` avec le chemin de l’image de filigrane souhaitée :
 
 ```java
 ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
@@ -157,7 +114,7 @@ imageWatermark.setOpacity(0.7f);
 ```
 
 #### Définir l’indice de page pour le filigrane
-`DiagramPageWatermarkOptions` vous permet de pointer l’image vers la page exacte dont vous avez besoin.
+Spécifiez quelle page doit afficher le filigrane image :
 
 ```java
 DiagramPageWatermarkOptions imageWatermarkOptions = new DiagramPageWatermarkOptions();
@@ -165,14 +122,14 @@ imageWatermarkOptions.setPageIndex(1); // Second page (index 1)
 ```
 
 #### Ajouter le filigrane image
-Appelez `watermarker.add()` avec le diagramme, l’`ImageWatermark` et les options spécifiques à la page.
+Ajoutez l’image à la page de diagramme spécifiée :
 
 ```java
 watermarker.add(imageWatermark, imageWatermarkOptions);
 ```
 
-### Comment enregistrer les modifications et fermer correctement les ressources ?
-Après avoir ajouté tous les filigranes souhaités, appelez la méthode `save()` sur l’instance `Watermarker` pour écrire le diagramme modifié sur le disque. Immédiatement après l’opération d’enregistrement, invoquez `close()` pour libérer toutes les ressources natives et les poignées de fichier détenues par le SDK. Fermer correctement le `Watermarker` aide à prévenir les fuites de mémoire et garantit que les opérations ultérieures sur le même fichier peuvent se dérouler sans conflits.
+### Enregistrement et libération des ressources
+N’oubliez pas d’enregistrer les modifications et de fermer les ressources pour éviter les fuites :
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_diagram.vsdx");
@@ -182,50 +139,51 @@ imageWatermark.close();
 ```
 
 ## Applications pratiques
-- **Document security** – protéger les diagrammes d’ingénierie confidentiels avant de les partager avec des partenaires.  
-- **Branding** – intégrer les logos d’entreprise sur les pages sélectionnées des manuels techniques.  
-- **Copyright protection** – ajouter des mentions légales aux schémas Visio pour décourager la réutilisation non autorisée.
+- **Sécurité des documents** – Appliquez des filigranes confidentiels uniquement sur les pages contenant des schémas sensibles.  
+- **Branding** – Placez le logo de votre entreprise sur la page de couverture tout en laissant les pages intérieures propres.  
+- **Protection des droits d’auteur** – Ajoutez une mention de copyright à la dernière page d’un pack de diagrammes techniques.
 
 ## Considérations de performance
-- **Memory management** – le SDK diffuse les pages, vous pouvez donc filigraner un diagramme de 300 pages sans dépasser 200 Mo de RAM.  
-- **Image optimisation** – réduire la taille des images de filigrane à ≤ 300 KB pour diminuer le temps de traitement.  
-- **Garbage collection** – appelez toujours `close()` sur le `Watermarker` pour permettre à Java de récupérer rapidement les ressources natives.
+- **Gestion de la mémoire** – Fermez chaque objet filigrane après l’enregistrement pour libérer les ressources natives.  
+- **Optimisation des images** – Utilisez des fichiers PNG/JPEG de taille appropriée pour garder le traitement rapide.  
+- **Traitement par lots** – Lors du traitement de nombreux diagrammes, réutilisez une seule instance de `Watermarker` autant que possible.
 
-## Questions fréquemment posées
+## Problèmes courants et solutions
+| Symptôme | Cause probable | Solution |
+|----------|----------------|----------|
+| Filigrane non visible | Mauvais `pageIndex` (indexé à zéro) | Vérifiez que l’indice correspond à la page souhaitée. |
+| Image déformée | Image source à haute résolution | Redimensionnez l’image avant de créer `ImageWatermark`. |
+| Erreur de licence en production | Utilisation d’une licence d’essai expirée | Appliquez un fichier de licence complet via `License.setLicense("path/to/license.json")`. |
 
-**Q: Puis-je ajouter plusieurs filigranes à une seule page de diagramme ?**  
-R : Oui. Appelez `watermarker.add()` à plusieurs reprises avec différents objets de filigrane et les mêmes `DiagramPageWatermarkOptions`.
+## Questions fréquentes
 
-**Q: Quels formats de fichiers sont pris en charge par GroupDocs.Watermark pour Java ?**  
-R : Il prend en charge plus de 50 formats, dont Visio (VSD, VSDX), PDF, SVG, PNG, JPEG et BMP. Consultez la [API documentation](https://reference.groupdocs.com/watermark/java) pour la liste complète.
+**Q1 : Puis‑je ajouter plusieurs filigranes à une même page de diagramme ?**  
+R1 : Oui, il suffit d’appeler `watermarker.add()` avec différents objets filigrane pour le même indice de page.
 
-**Q: Comment gérer la licence lors de l’utilisation d’une version d’essai ?**  
-R : Téléchargez une licence d’essai temporaire depuis le portail GroupDocs. Pour la production, achetez une licence complète pour débloquer toutes les fonctionnalités et supprimer les limitations de la version d’essai.
+**Q2 : Quels formats de fichiers sont pris en charge par GroupDocs.Watermark pour Java ?**  
+R2 : Il prend en charge divers formats de diagramme et d’image. Consultez la [documentation de l’API](https://reference.groupdocs.com/watermark/java) pour la liste complète.
 
-**Q: Quelles sont les étapes de dépannage courantes si un filigrane n’apparaît pas ?**  
-R : Vérifiez l’indice de page (basé sur zéro), assurez‑vous que le chemin de l’image est correct, et confirmez que l’opacité du filigrane n’est pas réglée à 0 %.
+**Q3 : Comment gérer les problèmes de licence avec une version d’essai ?**  
+R3 : Commencez avec une licence temporaire gratuite de GroupDocs. Achetez une licence complète pour débloquer toutes les fonctionnalités en production.
 
-**Q: Comment puis‑je personnaliser davantage l’apparence du filigrane ?**  
-R : Ajustez la taille de la police, l’opacité, l’angle de rotation et le positionnement via les propriétés de `TextWatermark` ou `ImageWatermark`.
+**Q4 : Quels sont les conseils de dépannage courants si les filigranes n’apparaissent pas comme prévu ?**  
+R4 : Assurez‑vous que l’indice de page est correct et revérifiez les chemins de fichiers pour les ressources image. Vérifiez également que l’opacité du filigrane n’est pas réglée à 0.
 
-## Ressources supplémentaires
-- [Documentation GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
-- [Guide de référence API](https://reference.groupdocs.com/watermark/java)  
-- [Télécharger la bibliothèque](https://releases.groupdocs.com/watermark/java/)  
-- [Référentiel GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Forum d’assistance gratuit](https://forum.groupdocs.com/c/watermark/10)  
+**Q5 : Comment puis‑je personnaliser davantage l’apparence du filigrane ?**  
+R5 : Ajustez la taille de police, l’opacité, la rotation et le positionnement à l’aide des méthodes disponibles sur `TextWatermark` ou `ImageWatermark`.
+
+## Ressources
+- [Documentation GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)
+- [Guide de référence API](https://reference.groupdocs.com/watermark/java)
+- [Télécharger la bibliothèque](https://releases.groupdocs.com/watermark/java/)
+- [Dépôt GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Forum d’assistance gratuit](https://forum.groupdocs.com/c/watermark/10)
 - [Informations sur la licence temporaire](https://purchase.groupdocs.com/temporary-license/)
 
-Explorez ces liens pour approfondir votre expertise avec GroupDocs.Watermark pour Java. Bon filigranage !
+Explorez ces ressources pour approfondir votre compréhension et vos compétences avec GroupDocs.Watermark pour Java. Bon filigrannage !
 
 ---
 
-**Dernière mise à jour :** 2026-10-11  
+**Dernière mise à jour :** 2026-02-16  
 **Testé avec :** GroupDocs.Watermark 24.11 pour Java  
 **Auteur :** GroupDocs
-
-## Tutoriels associés
-
-- [Comment ajouter des filigranes texte aux diagrammes avec GroupDocs.Watermark en Java](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Ajouter des filigranes texte aux diagrammes avec GroupDocs.Watermark pour Java : guide complet](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)
-- [Comment ajouter des filigranes texte et image à des pages PDF spécifiques avec GroupDocs.Watermark pour Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)

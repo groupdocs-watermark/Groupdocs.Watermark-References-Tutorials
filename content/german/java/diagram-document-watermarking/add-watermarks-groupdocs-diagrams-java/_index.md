@@ -1,90 +1,46 @@
 ---
-date: '2026-10-11'
-description: Erfahren Sie, wie Sie in Java mit GroupDocs.Watermark einer bestimmten
-  Diagrammseite ein Wasserzeichen hinzufügen, einschließlich der Schritte zum Anwenden
-  von Wasserzeichen auf Visio-Diagramme, zum Hinzufügen von Text- oder Bildwasserzeichen
-  und zur Optimierung der Leistung.
+date: '2026-02-16'
+description: Erfahren Sie, wie Sie mit GroupDocs.Watermark für Java eine bestimmte
+  Diagrammseite mit einem Wasserzeichen versehen, einschließlich der Anleitung zum
+  Hinzufügen eines Bildwasserzeichens in Java und zum Schutz Ihrer Dateien.
 keywords:
-- watermark specific diagram page
-- apply watermark visio diagram
-- GroupDocs.Watermark Java
-- diagram watermarking Java
-- Java diagram protection
-lastmod: '2026-10-11'
-og_description: Erfahren Sie, wie Sie in Java mit GroupDocs.Watermark einer bestimmten
-  Diagrammseite ein Wasserzeichen hinzufügen, einschließlich der Schritte zum Anwenden
-  von Wasserzeichen auf Visio-Diagramme und zum effizienten Hinzufügen von Text- oder
-  Bildwasserzeichen.
-og_image_alt: 'Developer guide: watermark specific diagram page using GroupDocs.Watermark
-  for Java'
-og_title: Wasserzeichen für bestimmte Diagrammseite in Java mit GroupDocs
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-11'
-  description: Learn how to watermark specific diagram page in Java with GroupDocs.Watermark,
-    covering steps to apply watermark Visio diagram, add text or image watermarks,
-    and optimise performance.
-  headline: Watermark specific diagram page in Java using GroupDocs
-  type: TechArticle
-- questions:
-  - answer: Yes. Call `watermarker.add()` repeatedly with different watermark objects
-      and the same `DiagramPageWatermarkOptions`.
-    question: Can I add multiple watermarks to a single diagram page?
-  - answer: It supports over 50 formats, including Visio (VSD, VSDX), PDF, SVG, PNG,
-      JPEG, and BMP. See the [API documentation](https://reference.groupdocs.com/watermark/java)
-      for the full list.
-    question: What file formats are supported by GroupDocs.Watermark for Java?
-  - answer: Download a temporary trial license from the GroupDocs portal. For production,
-      purchase a full license to unlock all features and remove trial limitations.
-    question: How do I handle licensing when using a trial version?
-  - answer: Verify the page index (zero‑based), ensure the image path is correct,
-      and confirm that the watermark’s opacity is not set to 0 %.
-    question: What are common troubleshooting steps if a watermark does not appear?
-  - answer: Adjust font size, opacity, rotation angle, and positioning through the
-      properties of `TextWatermark` or `ImageWatermark`.
-    question: How can I further customize watermark appearance?
-  type: FAQPage
-tags:
-- watermark specific diagram page
-- GroupDocs.Watermark
-- Java diagram watermark
-- diagram security
-title: Wasserzeichen für bestimmte Diagrammseite in Java mit GroupDocs
+- GroupDocs Watermark Java
+- adding watermarks diagrams
+- Java diagram document watermarking
+title: Wasserzeichen für bestimmte Diagrammseite mit GroupDocs.Watermark für Java
 type: docs
 url: /de/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/
 weight: 1
 ---
 
-# Wasserzeichen für bestimmte Diagrammseite in Java mit GroupDocs
+# Wasserzeichen für bestimmte Diagrammseite mit GroupDocs.Watermark für Java
 
-Der Schutz Ihrer Diagramme ist entscheidend, besonders wenn Sie **watermark specific diagram page** benötigen, um geistiges Eigentum zu schützen oder eine korrekte Attribution zu gewährleisten. In diesem Tutorial erfahren Sie, wie Sie sowohl Text- als auch Bildwasserzeichen zu ausgewählten Seiten einer Diagrammdatei mit **GroupDocs.Watermark for Java** hinzufügen. Am Ende können Sie:
-
-- Ein Textwasserzeichen auf einer beliebigen von Ihnen ausgewählten Diagrammseite anwenden.  
-- Ein Bildwasserzeichen auf einer Zielseite einfügen.  
-- Die Leistung für große Diagrammsammlungen optimieren.
+Das Schützen Ihrer Diagramme ist entscheidend, besonders wenn Sie eine **watermark specific diagram page** für den Schutz des geistigen Eigentums oder die Markenkennzeichnung benötigen. In diesem Tutorial lernen Sie Schritt für Schritt, wie Sie sowohl Text- als auch Bildwasserzeichen zu ausgewählten Seiten einer Diagrammdatei mit **GroupDocs.Watermark for Java** hinzufügen. Am Ende sind Sie bereit, Ihre Diagramme zu sichern und genau zu steuern, wo jedes Wasserzeichen erscheint.
 
 ## Schnelle Antworten
-- **Was bedeutet “watermark specific diagram page”?** Es bedeutet, ein Wasserzeichen nur auf den von Ihnen ausgewählten Seiten zu platzieren, während der Rest des Dokuments unverändert bleibt.  
-- **Welche Bibliothek übernimmt das?** GroupDocs.Watermark for Java stellt die erforderlichen APIs bereit.  
-- **Benötige ich eine Lizenz?** Eine temporäre Testlizenz funktioniert für Tests; für die Produktion ist eine kostenpflichtige Lizenz erforderlich.  
-- **Kann ich Visio-Diagramme wasserzeichen?** Ja – die Bibliothek unterstützt Visio‑Dateien (VSDX, VSD).  
-- **Ist die Leistung bei großen Dateien ein Problem?** Optimieren Sie den Speicherverbrauch und die Bildgröße; das SDK verarbeitet Diagramme mit mehreren hundert Seiten, ohne die gesamte Datei in den RAM zu laden.
+- **Was ist der Hauptzweck?** Wasserzeichen zu ausgewählten Diagrammseiten hinzufügen.  
+- **Welche Bibliothek wird benötigt?** GroupDocs.Watermark for Java (Maven oder direkter Download).  
+- **Kann ich ein Bildwasserzeichen in Java hinzufügen?** Ja – verwenden Sie `ImageWatermark` mit seitenbezogenen Optionen.  
+- **Benötige ich eine Lizenz?** Eine temporäre Testlizenz funktioniert für Tests; für die Produktion ist eine Voll‑Lizenz erforderlich.  
+- **Wie viele Codezeilen?** Weniger als 30 Zeilen für einen vollständigen Text‑+‑Bild‑Wasserzeichen‑Workflow.
 
-## Was ist watermark specific diagram page?
-Ein watermark specific diagram page bezieht sich darauf, ein visuelles Overlay – wie Text oder ein Bild – nur zu den Seiten hinzuzufügen, die Sie ausdrücklich innerhalb einer Diagrammdatei auswählen. Dieser Ansatz lässt alle anderen Seiten unverändert, sodass Sie bestimmte Abschnitte schützen oder branden können, ohne das Gesamtlayout oder die Lesbarkeit des Dokuments zu beeinträchtigen.
+## Was bedeutet „watermark specific diagram page“?
+Ein **watermark specific diagram page** bedeutet, dass ein visuelles Markierungselement – Text oder Bild – nur auf die von Ihnen ausgewählten Seiten eines mehrseitigen Diagramms (z. B. Visio . vsdx) angewendet wird. Das gibt Ihnen eine feinkörnige Kontrolle über Branding, Vertraulichkeits‑Hinweise oder Urheberrechtshinweise, ohne das gesamte Dokument zu beeinflussen.
 
 ## Warum GroupDocs.Watermark für Java verwenden?
-GroupDocs.Watermark für Java bietet eine robuste, streaming‑basierte Architektur, die mehr als 50 Dateiformate verarbeiten kann, darunter Visio, PDF, SVG und gängige Bildtypen. Es verarbeitet Dokumente mit bis zu 500 Seiten, während der Speicherverbrauch auf einem typischen 8 GB‑Server unter 150 MB bleibt, was es ideal für groß angelegte Diagramm‑Wasserzeichnungsprojekte macht, die sowohl Geschwindigkeit als auch Zuverlässigkeit erfordern.
+- **Vollständige Seitenkontrolle** – Zielgerichtet jeder gewünschte Seitenindex.  
+- **Umfangreiche Gestaltung** – Schriftarten, Farben, Deckkraft, Drehung und Bildskalierung sind alle konfigurierbar.  
+- **Leistungsoptimiert** – verarbeitet große Diagramme effizient und lässt sich reibungslos in Maven‑Builds integrieren.  
+- **Cross‑Format‑Unterstützung** – funktioniert mit Visio, SVG und vielen anderen Diagrammformaten.
 
 ## Voraussetzungen
-- GroupDocs.Watermark für Java **Version 24.11** oder neuer.  
-- Maven oder ein manueller JAR‑Download.  
-- Grundlegende Java‑Entwicklungserfahrung (IDE, JDK 8+).  
+- **GroupDocs.Watermark for Java** Bibliothek Version 24.11 oder neuer.  
+- Maven oder ein direkter JAR‑Download.  
+- Grundlegende Java‑Entwicklungsumgebung (JDK 8+ empfohlen).  
 
 ## Einrichtung von GroupDocs.Watermark für Java
-
-### Verwendung von Maven
-Add the dependency to your `pom.xml`:
+### Verwendung von Maven groupdocs watermark
+Binden Sie GroupDocs.Watermark in Ihr Projekt via Maven ein, indem Sie Folgendes zu Ihrer `pom.xml` hinzufügen:
 
 ```xml
 <repositories>
@@ -105,13 +61,13 @@ Add the dependency to your `pom.xml`:
 ```
 
 ### Direkter Download
-Sie können die Bibliothek auch von der offiziellen Release‑Seite erhalten: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Alternativ können Sie die neueste Version direkt von [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) herunterladen.
 
 #### Lizenzbeschaffung
 Beginnen Sie mit einer kostenlosen Testversion, indem Sie eine temporäre Lizenz herunterladen. Kaufoptionen sind auf ihrer offiziellen Website verfügbar, falls Sie GroupDocs.Watermark weiter nutzen möchten.
 
 ### Grundlegende Initialisierung und Einrichtung
-Die Klasse `Watermarker` ist der Einstiegspunkt für alle Wasserzeichen‑Operationen. Sie lädt ein Diagramm, wendet Wasserzeichen an und speichert das Ergebnis.
+Nach der Installation initialisieren Sie die `Watermarker`‑Klasse für Wasserzeichen‑Operationen:
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
@@ -119,12 +75,11 @@ Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx"
 ```
 
 ## Implementierungs‑Leitfaden
+### Hinzufügen eines Text‑Wasserzeichens zu einer bestimmten Seite
+Um ein Text‑Wasserzeichen hinzuzufügen, erstellen und konfigurieren Sie es, bevor Sie die Zielseite festlegen.
 
-### Wie fügt man ein Textwasserzeichen zu einer bestimmten Diagrammseite hinzu?
-Laden Sie zunächst die Diagrammdatei, dann erstellen Sie ein `TextWatermark`‑Objekt, das den Inhalt, die Schriftart, Größe, Farbe und Transparenz des Wasserzeichens definiert. Nach der Konfiguration dieser visuellen Eigenschaften geben Sie die Zielseite mit `DiagramPageWatermarkOptions` an. Schließlich fügen Sie das Wasserzeichen dem Diagramm hinzu und speichern die Änderungen. Diese Reihenfolge stellt sicher, dass das Wasserzeichen nur auf der ausgewählten Seite erscheint, während andere Seiten unverändert bleiben.
-
-#### Erstellen eines Textwasserzeichens
-`TextWatermark` stellt ein textuelles Overlay dar, das mit Schriftart, Größe, Farbe und Transparenz gestaltet werden kann.
+#### Erstellen eines Text‑Wasserzeichens
+Definieren Sie Ihr Text‑Wasserzeichen mit anpassbarem Inhalt, Schriftstil, Größe usw.:
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Confidential", new Font("Arial", 18));
@@ -133,25 +88,25 @@ textWatermark.setOpacity(0.5f);
 ```
 
 #### Festlegen des Seitenindex für das Wasserzeichen
-`DiagramPageWatermarkOptions` ermöglicht das Anvisieren einer einzelnen Seite (nullbasiert) oder eines Seitenbereichs.
+Bestimmen Sie, welche Diagrammseite das Wasserzeichen mit `DiagramPageWatermarkOptions` anzeigen soll:
 
 ```java
 DiagramPageWatermarkOptions textWatermarkOptions = new DiagramPageWatermarkOptions();
 textWatermarkOptions.setPageIndex(0); // First page (index 0)
 ```
 
-#### Hinzufügen des Textwasserzeichens
-Rufen Sie `watermarker.add()` mit dem Diagrammobjekt, der Wasserzeicheninstanz und den Optionen, die den Seitenindex enthalten, auf.
+#### Hinzufügen des Text‑Wasserzeichens
+Fügen Sie Ihr konfiguriertes Wasserzeichen dem Diagramm hinzu:
 
 ```java
 watermarker.add(textWatermark, textWatermarkOptions);
 ```
 
-### Wie fügt man ein Bildwasserzeichen zu einer bestimmten Diagrammseite hinzu?
-Beginnen Sie mit dem Laden des Diagramms, dann instanziieren Sie ein `ImageWatermark` mit dem Pfad zu dem Bild, das Sie überlagern möchten. Passen Sie Größe, Transparenz und Drehung des Bildes nach Bedarf an. Verwenden Sie `DiagramPageWatermarkOptions`, um das Wasserzeichen auf den genauen Seitenindex zu richten, den Sie ändern möchten. Nach dem Hinzufügen des Wasserzeichens mit `watermarker.add()` speichern Sie das Dokument, um die Änderungen auf dieser spezifischen Seite zu übernehmen.
+### Hinzufügen eines Bild‑Wasserzeichens zu einer bestimmten Seite
+Folgen Sie ähnlichen Schritten für Bild‑Wasserzeichen mit einem `ImageWatermark`‑Objekt.
 
-#### Erstellen eines Bildwasserzeichens
-`ImageWatermark` enthält den Pfad zu dem Bild, das Sie auf das Diagramm legen möchten.
+#### Erstellen eines Bild‑Wasserzeichens
+Erstellen Sie eine Instanz von `ImageWatermark` mit dem gewünschten Pfad zum Wasserzeichen‑Bild:
 
 ```java
 ImageWatermark imageWatermark = new ImageWatermark("YOUR_DOCUMENT_DIRECTORY/logo.png");
@@ -159,22 +114,22 @@ imageWatermark.setOpacity(0.7f);
 ```
 
 #### Festlegen des Seitenindex für das Wasserzeichen
-Verwenden Sie erneut `DiagramPageWatermarkOptions`, um das Bild auf die gewünschte Seite zu richten.
+Geben Sie an, welche Seite das Bild‑Wasserzeichen anzeigen soll:
 
 ```java
 DiagramPageWatermarkOptions imageWatermarkOptions = new DiagramPageWatermarkOptions();
 imageWatermarkOptions.setPageIndex(1); // Second page (index 1)
 ```
 
-#### Hinzufügen des Bildwasserzeichens
-Rufen Sie `watermarker.add()` mit dem Diagramm, dem `ImageWatermark` und den seiten­spezifischen Optionen auf.
+#### Hinzufügen des Bild‑Wasserzeichens
+Fügen Sie das Bild Ihrer angegebenen Diagrammseite hinzu:
 
 ```java
 watermarker.add(imageWatermark, imageWatermarkOptions);
 ```
 
-### Wie speichert man Änderungen und schließt Ressourcen korrekt?
-Nachdem Sie alle gewünschten Wasserzeichen hinzugefügt haben, rufen Sie die Methode `save()` auf der `Watermarker`‑Instanz auf, um das modifizierte Diagramm auf die Festplatte zu schreiben. Direkt nach dem Speichervorgang rufen Sie `close()` auf, um alle nativen Ressourcen und Dateihandles, die vom SDK gehalten werden, freizugeben. Das korrekte Schließen des `Watermarker` verhindert Speicherlecks und stellt sicher, dass nachfolgende Vorgänge mit derselben Datei ohne Konflikte durchgeführt werden können.
+### Speichern und Ressourcen schließen
+Denken Sie daran, Änderungen zu speichern und Ressourcen zu schließen, um Lecks zu vermeiden:
 
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output_diagram.vsdx");
@@ -183,51 +138,50 @@ textWatermark.close();
 imageWatermark.close();
 ```
 
-## Praktische Anwendungsfälle
-- **Dokumentensicherheit** – vertrauliche technische Diagramme schützen, bevor sie mit Partnern geteilt werden.  
-- **Branding** – Unternehmenslogos auf ausgewählten Seiten technischer Handbücher einbetten.  
-- **Urheberrechtsschutz** – rechtliche Hinweise zu Visio‑Schemata hinzufügen, um unbefugte Wiederverwendung abzuschrecken.
+## Praktische Anwendungen
+- **Document Security** – Vertrauliche Wasserzeichen nur auf Seiten anwenden, die sensible Schaltpläne enthalten.  
+- **Branding** – Platzieren Sie Ihr Firmenlogo auf der Titelseite, während die Innenseiten sauber bleiben.  
+- **Copyright Protection** – Fügen Sie einen Urheberrechtshinweis auf der letzten Seite eines technischen Diagrammpakets hinzu.
 
 ## Leistungsüberlegungen
-- **Speichermanagement** – das SDK streamt Seiten, sodass Sie ein 300‑seitiges Diagramm wasserzeichen können, ohne 200 MB RAM zu überschreiten.  
-- **Bildoptimierung** – Wasserzeichen‑Bilder auf ≤ 300 KB verkleinern, um die Verarbeitungszeit zu reduzieren.  
-- **Garbage Collection** – rufen Sie stets `close()` auf dem `Watermarker` auf, damit Java native Ressourcen schnell freigibt.
+- **Memory Management** – Schließen Sie jedes Wasserzeichen‑Objekt nach dem Speichern, um native Ressourcen freizugeben.  
+- **Image Optimization** – Verwenden Sie passend dimensionierte PNG/JPEG‑Dateien, um die Verarbeitung schnell zu halten.  
+- **Batch Processing** – Beim Verarbeiten vieler Diagramme, verwenden Sie nach Möglichkeit eine einzelne `Watermarker`‑Instanz erneut.
+
+## Häufige Probleme und Lösungen
+| Symptom | Wahrscheinliche Ursache | Lösung |
+|---------|--------------------------|--------|
+| Wasserzeichen nicht sichtbar | Falscher `pageIndex` (nullbasiert) | Stellen Sie sicher, dass der Index mit der gewünschten Seite übereinstimmt. |
+| Bild erscheint verzerrt | Hochauflösendes Quellbild | Größen Sie das Bild vor dem Erstellen von `ImageWatermark`. |
+| Lizenzfehler in der Produktion | Verwendung einer Testlizenz über das Ablaufdatum hinaus | Verwenden Sie eine vollständige Lizenzdatei über `License.setLicense("path/to/license.json")`. |
 
 ## Häufig gestellte Fragen
 
-**F: Kann ich mehrere Wasserzeichen zu einer einzelnen Diagrammseite hinzufügen?**  
-A: Ja. Rufen Sie `watermarker.add()` wiederholt mit verschiedenen Wasserzeichen‑Objekten und denselben `DiagramPageWatermarkOptions` auf.
+**Q1: Kann ich mehrere Wasserzeichen zu einer einzelnen Diagrammseite hinzufügen?**  
+A1: Ja, rufen Sie einfach `watermarker.add()` mit verschiedenen Wasserzeichen‑Objekten für denselben Seitenindex auf.
 
-**F: Welche Dateiformate werden von GroupDocs.Watermark für Java unterstützt?**  
-A: Es unterstützt über 50 Formate, darunter Visio (VSD, VSDX), PDF, SVG, PNG, JPEG und BMP. Siehe die [API documentation](https://reference.groupdocs.com/watermark/java) für die vollständige Liste.
+**Q2: Welche Dateiformate werden von GroupDocs.Watermark für Java unterstützt?**  
+A2: Es unterstützt verschiedene Diagramm‑ und Bildformate. Siehe die [API documentation](https://reference.groupdocs.com/watermark/java) für die vollständige Liste.
 
-**F: Wie gehe ich mit der Lizenzierung bei Verwendung einer Testversion um?**  
-A: Laden Sie eine temporäre Testlizenz vom GroupDocs‑Portal herunter. Für die Produktion erwerben Sie eine Voll‑Lizenz, um alle Funktionen freizuschalten und Testbeschränkungen zu entfernen.
+**Q3: Wie gehe ich mit Lizenzproblemen bei Verwendung einer Testversion um?**  
+A3: Beginnen Sie mit einer kostenlosen temporären Lizenz von GroupDocs. Kaufen Sie eine Voll‑Lizenz, um alle Funktionen für die Produktion freizuschalten.
 
-**F: Was sind gängige Fehlersuchschritte, wenn ein Wasserzeichen nicht erscheint?**  
-A: Überprüfen Sie den Seitenindex (nullbasiert), stellen Sie sicher, dass der Bildpfad korrekt ist, und bestätigen Sie, dass die Transparenz des Wasserzeichens nicht auf 0 % gesetzt ist.
+**Q4: Was sind einige gängige Tipps zur Fehlersuche, wenn Wasserzeichen nicht wie erwartet erscheinen?**  
+A4: Stellen Sie sicher, dass der Seitenindex korrekt ist und überprüfen Sie die Dateipfade für Bildressourcen doppelt. Vergewissern Sie sich außerdem, dass die Deckkraft des Wasserzeichens nicht auf 0 gesetzt ist.
 
-**F: Wie kann ich das Aussehen des Wasserzeichens weiter anpassen?**  
-A: Passen Sie Schriftgröße, Transparenz, Rotationswinkel und Positionierung über die Eigenschaften von `TextWatermark` oder `ImageWatermark` an.
+**Q5: Wie kann ich das Aussehen des Wasserzeichens weiter anpassen?**  
+A5: Passen Sie Schriftgröße, Deckkraft, Drehung und Positionierung mit den Methoden von `TextWatermark` oder `ImageWatermark` an.
 
-## Zusätzliche Ressourcen
-- [GroupDocs.Watermark Dokumentation](https://docs.groupdocs.com/watermark/java/)  
-- [API Referenzhandbuch](https://reference.groupdocs.com/watermark/java)  
-- [Bibliothek herunterladen](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub‑Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Kostenloses Support‑Forum](https://forum.groupdocs.com/c/watermark/10)  
+## Ressourcen
+- [GroupDocs.Watermark Dokumentation](https://docs.groupdocs.com/watermark/java/)
+- [API Referenzhandbuch](https://reference.groupdocs.com/watermark/java)
+- [Bibliothek herunterladen](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Kostenloses Support-Forum](https://forum.groupdocs.com/c/watermark/10)
 - [Informationen zur temporären Lizenz](https://purchase.groupdocs.com/temporary-license/)
 
-Entdecken Sie diese Links, um Ihr Fachwissen zu GroupDocs.Watermark für Java zu vertiefen. Viel Spaß beim Wasserzeichen!
+Entdecken Sie diese Ressourcen, um Ihr Verständnis und Ihre Fähigkeiten mit GroupDocs.Watermark für Java zu vertiefen. Viel Spaß beim Wasserzeichen!
 
----
-
-**Zuletzt aktualisiert:** 2026-10-11  
-**Getestet mit:** GroupDocs.Watermark 24.11 für Java  
+**Zuletzt aktualisiert:** 2026-02-16  
+**Getestet mit:** GroupDocs.Watermark 24.11 for Java  
 **Autor:** GroupDocs
-
-## Verwandte Tutorials
-
-- [Wie man Textwasserzeichen zu Diagrammen mit GroupDocs.Watermark in Java hinzufügt](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)  
-- [Textwasserzeichen zu Diagrammen mit GroupDocs.Watermark für Java hinzufügen: Ein umfassender Leitfaden](/watermark/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/)  
-- [Wie man Text- und Bildwasserzeichen zu bestimmten PDF‑Seiten mit GroupDocs.Watermark für Java hinzufügt](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)

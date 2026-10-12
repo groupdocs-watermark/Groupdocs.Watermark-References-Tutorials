@@ -1,101 +1,46 @@
 ---
-date: '2026-10-11'
-description: Μάθετε πώς να επεξεργάζεστε κεφαλίδες διαγράμματος java με το GroupDocs.Watermark
-  για Java. Ακολουθήστε αυτόν τον οδηγό βήμα‑βήμα για να προσαρμόσετε τα υποσέλιδα
-  και τις κεφαλίδες του διαγράμματος.
+date: '2026-02-16'
+description: Μάθετε πώς να επεξεργάζεστε τις κεφαλίδες διαγραμμάτων Java και να προσθέτετε
+  υδατογράφημα στο διάγραμμα χρησιμοποιώντας το GroupDocs.Watermark για Java. Ακολουθήστε
+  αυτόν τον βήμα‑βήμα οδηγό για να βελτιώσετε τα έγγραφά σας.
 keywords:
-- edit diagram headers java
+- edit diagram headers footers
 - groupdocs watermark java
-- diagram header footer editing
-lastmod: '2026-10-11'
-og_description: Επεξεργασία κεφαλίδων διαγράμματος java με το GroupDocs.Watermark.
-  Αυτός ο οδηγός δείχνει πώς να φορτώνετε, να τροποποιείτε και να αποθηκεύετε τις
-  κεφαλίδες και τα υποσέλιδα του διαγράμματος αποδοτικά.
-og_image_alt: 'Guide: editing diagram headers and footers in Java using GroupDocs.Watermark'
-og_title: Επεξεργασία κεφαλίδων διαγράμματος java χρησιμοποιώντας το GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-11'
-  description: Learn how to edit diagram headers java with GroupDocs.Watermark for
-    Java. Follow this step‑by‑step guide to customize diagram footers and headers.
-  headline: Edit diagram headers java using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to edit diagram headers java with GroupDocs.Watermark for
-    Java. Follow this step‑by‑step guide to customize diagram footers and headers.
-  name: Edit diagram headers java using GroupDocs.Watermark
-  steps:
-  - name: create a DiagramLoadOptions object
-    text: DiagramLoadOptions configures how the diagram is loaded, such as password
-      handling and page range selection.
-  - name: instantiate the Watermarker
-    text: Watermarker is the main class that provides methods to manipulate diagram
-      content, including headers and footers.
-  - name: remove the existing header
-    text: DiagramContent represents the editable parts of a diagram, allowing access
-      to its header and footer elements.
-  - name: replace the footer with custom text
-    text: HeaderFooter is a helper object used to define new header or footer text
-      and styling.
-  - name: save the modified diagram
-    text: The save method writes the modified diagram to the specified output path,
-      preserving the original file.
-  - name: close the Watermarker
-    text: Calling close releases native resources and file handles associated with
-      the Watermarker instance.
-  type: HowTo
-- questions:
-  - answer: Over 30 formats, including Visio (.vsdx), SVG, and EMF, plus image types
-      like PNG and JPEG.
-    question: What diagram formats does GroupDocs.Watermark support?
-  - answer: Yes—specify the password in `DiagramLoadOptions` before loading the file.
-    question: Can I edit headers in password‑protected diagrams?
-  - answer: Absolutely. GroupDocs.Watermark is platform‑agnostic and runs on any OS
-      with a compatible JRE.
-    question: Does the library work on Linux servers?
-  - answer: Always invoke `watermarker.close()` in a finally block or use try‑with‑resources
-      if the API supports AutoCloseable.
-    question: How do I avoid memory leaks when processing thousands of files?
-  - answer: You can export the diagram to an image (e.g., PNG) using `watermarker.saveAsImage()`
-      and inspect the result programmatically.
-    question: Is there a way to preview changes before saving?
-  type: FAQPage
-tags:
-- edit diagram headers
-- groupdocs watermark
-- java document processing
-title: Επεξεργασία κεφαλίδων διαγράμματος java χρησιμοποιώντας το GroupDocs.Watermark
+- diagram document watermarking
+title: Επεξεργασία κεφαλίδων διαγράμματος Java χρησιμοποιώντας το GroupDocs.Watermark
 type: docs
 url: /el/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Επεξεργασία κεφαλίδων διαγραμμάτων java χρησιμοποιώντας το GroupDocs.Watermark
+# Επεξεργασία Κεφαλίδων Διαγραμμάτων Java με το GroupDocs.Watermark
 
-Στη σύγχρονη τεχνική τεκμηρίωση, η δυνατότητα **edit diagram headers java** γρήγορα και αξιόπιστα μπορεί να σας εξοικονομήσει ώρες χειροκίνητης επεξεργασίας. Είτε προετοιμάζετε υλικά παρουσίασης, τεχνικά σχέδια ή διαγράμματα συμμόρφωσης, το σωστό περιεχόμενο κεφαλίδας και υποσέλιδου είναι απαραίτητο για το branding και την ανιχνευσιμότητα. Αυτός ο οδηγός σας καθοδηγεί βήμα‑βήμα — από τη ρύθμιση του GroupDocs.Watermark για Java μέχρι τη φόρτωση ενός διαγράμματος, την αφαίρεση ή αντικατάσταση της κεφαλίδας/υποσέλιδου, και τέλος την αποθήκευση των αλλαγών.
+Στη σύγχρονη τεχνική τεκμηρίωση και παρουσιάσεις, **edit diagram headers java** είναι συχνή απαίτηση—είτε χρειάζεται να αφαιρέσετε παλιούς τίτλους, να εισάγετε branding, είτε να συμμορφωθείτε με νομικά υποσέλιδα. Αυτό το tutorial σας καθοδηγεί στη χρήση του GroupDocs.Watermark για Java για την γρήγορη και αξιόπιστη επεξεργασία κεφαλίδων και υποσέλιδων διαγραμμάτων.
 
-## Γρήγορες απαντήσεις
-- **Which library handles diagram header editing in Java?** GroupDocs.Watermark for Java.
-- **Do I need a license to run the sample?** Μια δωρεάν δοκιμή λειτουργεί για ανάπτυξη· απαιτείται μόνιμη άδεια για παραγωγή.
-- **What Java version is required?** JDK 8 ή νεότερη.
-- **Can I process multiple diagrams in one run?** Ναι—υποστηρίζεται επεξεργασία παρτίδας μέσω ενός απλού βρόχου.
-- **Will the original diagram be overwritten?** Όχι—η αποθήκευση δημιουργεί νέο αρχείο, αφήνοντας το πηγαίο ανέπαφο.
+## Γρήγορες Απαντήσεις
+- **Ποια βιβλιοθήκη χρειάζομαι;** GroupDocs.Watermark for Java.  
+- **Μπορώ να επεξεργαστώ και τις κεφαλίδες και τα υποσέλιδα;** Ναι, το API σας επιτρέπει να τροποποιήσετε το καθένα ανεξάρτητα.  
+- **Χρειάζομαι άδεια;** Μια δοκιμαστική έκδοση λειτουργεί για ανάπτυξη· απαιτείται εμπορική άδεια για παραγωγή.  
+- **Ποιοι τύποι διαγραμμάτων υποστηρίζονται;** Visio (`.vsdx`, `.vsd`), μεταξύ άλλων.  
+- **Είναι δυνατή η επεξεργασία παρτίδας;** Απόλυτα—επαναλάβετε τα αρχεία με την ίδια λογική Watermarker.  
 
-## Τι είναι το edit diagram headers java;
-`edit diagram headers java` αναφέρεται στην προγραμματιστική διαχείριση των στοιχείων κεφαλίδας και υποσέλιδου μέσα σε αρχεία διαγράμματος (όπως Visio (.vsdx) ή άλλες υποστηριζόμενες μορφές) χρησιμοποιώντας κώδικα Java. Αυτή η ενέργεια εκτελείται συνήθως για την εισαγωγή branding, αριθμών έκδοσης ή νομικών σημειώσεων χωρίς να ανοίγετε χειροκίνητα κάθε αρχείο.
+## Τι είναι το “edit diagram headers java”;
+Η επεξεργασία κεφαλίδων διαγράμματος σε Java σημαίνει προγραμματιστική πρόσβαση σε αρχείο διαγράμματος (π.χ., Visio) και αλλαγή ή αφαίρεση του κειμένου που εμφανίζεται στην κορυφή κάθε σελίδας. Το GroupDocs.Watermark παρέχει ένα υψηλού επιπέδου API που αφαιρεί τις λεπτομέρειες του μορφότυπου αρχείου, επιτρέποντάς σας να εστιάσετε στη λογική της επιχείρησης.
 
-## Γιατί να χρησιμοποιήσετε το GroupDocs.Watermark για Java;
-Το GroupDocs.Watermark υποστηρίζει **50+ input and output formats** και μπορεί να επεξεργαστεί διαγράμματα έως 500 σελίδες χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη, μειώνοντας τη μέγιστη χρήση RAM έως και 70 % σε σύγκριση με απλές προσεγγίσεις ροής αρχείων. Το API παρέχει επίσης αντικείμενα thread‑safe, επιτρέποντας εργασίες παρτίδας υψηλής απόδοσης σε διακομιστές πολλαπλών πυρήνων.
+## Γιατί να χρησιμοποιήσετε το GroupDocs.Watermark για να προσθέσετε υδατογράφημα σε διάγραμμα;
+- **Χωρίς εξωτερικές εξαρτήσεις** – λειτουργεί με απλή Java.  
+- **Πλούσιες επιλογές στυλ** – γραμματοσειρές, χρώματα και τοποθέτηση ελέγχονται πλήρως.  
+- **Έτοιμο για παρτίδες** – επεξεργασία δεκάδων αρχείων σε μία εκτέλεση.  
+- **Υποστήριξη πολλαπλών μορφών** – ο ίδιος κώδικας λειτουργεί για PDFs, εικόνες και έγγραφα Office.  
 
 ## Προαπαιτούμενα
-- **Java Development Kit (JDK)** 8 ή νεότερο εγκατεστημένο.
-- **GroupDocs.Watermark for Java** βιβλιοθήκη προστιθέμενη στο έργο σας (μέσω Maven ή άμεσης λήψης).  
-- Βασική εξοικείωση με το Java file I/O και τις αντικειμενο‑προσανατολισμένες έννοιες.
+- **Java Development Kit (JDK)** 8 ή νεότερο.  
+- **GroupDocs.Watermark for Java** βιβλιοθήκη (προστέθηκε ως εξάρτηση Maven ή κατεβάστηκε χειροκίνητα).  
+- Βασική εξοικείωση με Java file I/O.  
 
 ## Ρύθμιση του GroupDocs.Watermark για Java
-Για να ενσωματώσετε τη βιβλιοθήκη, ακολουθήστε μία από τις δύο διαδρομές εγκατάστασης.
-
-**Maven setup**  
-Προσθέστε την ακόλουθη εξάρτηση στο αρχείο `pom.xml` σας:
+### Ρύθμιση Maven
+Προσθέστε το αποθετήριο και την εξάρτηση στο `pom.xml` σας:
 
 ```xml
 <repositories>
@@ -115,17 +60,14 @@ weight: 1
 </dependencies>
 ```
 
-**Άμεση λήψη**  
-Εναλλακτικά, αποκτήστε το πιο πρόσφατο JAR από τη σελίδα κυκλοφορίας: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Άμεση Λήψη
+Εναλλακτικά, κατεβάστε το πιο πρόσφατο JAR από το [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Απόκτηση άδειας
-Μπορείτε να ξεκινήσετε με δοκιμή 30 ημερών ή να αγοράσετε μόνιμη άδεια. Λεπτομέρειες διατίθενται στη [license page](https://purchase.groupdocs.com/temporary-license/). Η δοκιμή παρέχει πλήρη πρόσβαση στο API αλλά προσθέτει υδατογράφημα στα αρχεία εξόδου· μια άδεια παραγωγής αφαιρεί αυτόν τον περιορισμό.
+### Απόκτηση Άδειας
+Για να εκτελείτε χωρίς περιορισμούς αξιολόγησης, αποκτήστε άδεια από τη [license page](https://purchase.groupdocs.com/temporary-license/). Μια δωρεάν δοκιμή είναι επαρκής για πειραματισμό.
 
-## Πώς να επεξεργαστείτε το edit diagram headers java;
-Φορτώστε το διάγραμμα, τροποποιήστε την κεφαλίδα ή το υποσέλιδο, και στη συνέχεια αποθηκεύστε το αποτέλεσμα. Η πλήρης ροή εργασίας χωρίζεται σε **four concise steps**, το καθένα παρουσιάζεται με έναν σύντομο placeholder κώδικα που αντικαθιστάτε με πραγματικές δηλώσεις Java. Η διαδικασία περιλαμβάνει τη φόρτωση του διαγράμματος με τις κατάλληλες επιλογές, την πρόσβαση στις δομές κεφαλίδας/υποσέλιδου, την εφαρμογή τροποποιήσεων, και τέλος την αποθήκευση των αλλαγών σε νέο αρχείο.
-
-### Βήμα 1: δημιουργία αντικειμένου DiagramLoadOptions
-Το DiagramLoadOptions διαμορφώνει τον τρόπο φόρτωσης του διαγράμματος, όπως η διαχείριση κωδικού πρόσβασης και η επιλογή εύρους σελίδων.
+## Αρχικοποίηση του Watermarker
+Το πρώτο βήμα είναι η δημιουργία μιας παρουσίας `Watermarker` που δείχνει στο αρχείο διαγράμματος σας:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -141,8 +83,9 @@ public class InitializeWatermarker {
 }
 ```
 
-### Βήμα 2: δημιουργία αντικειμένου Watermarker
-Το Watermarker είναι η κύρια κλάση που παρέχει μεθόδους για τη διαχείριση του περιεχομένου του διαγράμματος, συμπεριλαμβανομένων των κεφαλίδων και υποσέλιδων.
+## Φόρτωση και Αρχικοποίηση του Watermarker με Προσαρμοσμένες Επιλογές
+### Βήμα 1: Δημιουργία DiagramLoadOptions
+Μπορείτε να ρυθμίσετε λεπτομερώς πώς φορτώνεται το διάγραμμα χρησιμοποιώντας το `DiagramLoadOptions`:
 
 ```java
 import com.groupdocs.watermark.options.DiagramLoadOptions;
@@ -150,8 +93,8 @@ import com.groupdocs.watermark.options.DiagramLoadOptions;
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 ```
 
-### Βήμα 3: αφαίρεση της υπάρχουσας κεφαλίδας
-Το DiagramContent αντιπροσωπεύει τα επεξεργάσιμα μέρη ενός διαγράμματος, επιτρέποντας πρόσβαση στα στοιχεία κεφαλίδας και υποσέλιδου.
+### Βήμα 2: Φόρτωση του Εγγράφου
+Περάστε τις επιλογές κατά τη δημιουργία του `Watermarker`:
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -159,8 +102,9 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-### Βήμα 4: αντικατάσταση του υποσέλιδου με προσαρμοσμένο κείμενο
-Το HeaderFooter είναι ένα βοηθητικό αντικείμενο που χρησιμοποιείται για τον ορισμό νέου κειμένου και στυλ κεφαλίδας ή υποσέλιδου.
+## Αφαίρεση Κεφαλίδας από Διάγραμμα
+### Βήμα 1: Πρόσβαση στο Περιεχόμενο του Διαγράμματος
+Ανακτήστε το αντικείμενο περιεχομένου που σας δίνει άμεση πρόσβαση στις ενότητες κεφαλίδας/υποσέλιδου:
 
 ```java
 import com.groupdocs.watermark.contents.DiagramContent;
@@ -168,15 +112,16 @@ import com.groupdocs.watermark.contents.DiagramContent;
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 ```
 
-### Βήμα 5: αποθήκευση του τροποποιημένου διαγράμματος
-Η μέθοδος save γράφει το τροποποιημένο διάγραμμα στη καθορισμένη διαδρομή εξόδου, διατηρώντας το αρχικό αρχείο.
+### Βήμα 2: Αφαίρεση Κεφαλίδας
+Ορίζοντας το κέντρο της κεφαλίδας σε `null` αφαιρεί πλήρως την κεφαλίδα:
 
 ```java
 content.getHeaderFooter().setHeaderCenter(null);
 ```
 
-### Βήμα 6: κλείσιμο του Watermarker
-Η κλήση της close απελευθερώνει τους εγγενείς πόρους και τους χειριστές αρχείων που σχετίζονται με το στιγμιότυπο Watermarker.
+## Αντικατάσταση Υποσέλιδου σε Διάγραμμα
+### Βήμα 1: Ορισμός Νέου Κειμένου Υποσέλιδου
+Μπορείτε να αντικαταστήσετε το υπάρχον υποσέλιδο με οποιαδήποτε προσαρμοσμένη συμβολοσειρά:
 
 ```java
 import com.groupdocs.watermark.watermarks.Color;
@@ -184,49 +129,8 @@ import com.groupdocs.watermark.watermarks.Color;
 content.getHeaderFooter().setFooterCenter("New Footer Text");
 ```
 
-## Πρακτικές εφαρμογές
-1. **Branding diagrams** – αυτόματη ενσωμάτωση εταιρικών λογοτύπων ή σλόγκαν σε κάθε κεφαλίδα.  
-2. **Version control** – ενσωμάτωση συμβολοσειράς έκδοσης στο υποσέλιδο ώστε τα ενδιαφερόμενα μέρη να βλέπουν αμέσως ποια έκδοση βλέπουν.  
-3. **Legal compliance** – προσθήκη υποχρεωτικού κειμένου αποποίησης ευθύνης για την τήρηση κανονιστικών απαιτήσεων σε πολλές δικαιοδοσίες.
-
-Αυτά τα σενάρια δείχνουν γιατί το **editing diagram headers java** είναι κάτι περισσότερο από μια αισθητική τροποποίηση· αποτελεί βασικό μέρος της διακυβέρνησης εγγράφων.
-
-## Σκέψεις απόδοσης
-Κατά την επεξεργασία μεγάλων παρτίδων, κρατήστε αυτές τις βέλτιστες πρακτικές στο μυαλό:
-
-- **Optimize memory usage** – επαναχρησιμοποίηση ενός μόνο αντικειμένου `Watermarker` για πολλά αρχεία όταν είναι δυνατόν· αυτό αποφεύγει επαναλαμβανόμενες εγγενείς εκχωρήσεις.  
-- **Batch processing** – τυλίξτε τη λογική ανά αρχείο σε βρόχο `for` ή Java Stream για να αξιοποιήσετε τον παραλληλισμό σε CPU πολλαπλών πυρήνων.  
-- **Robust error handling** – περιβάλλετε τις λειτουργίες αρχείων με μπλοκ try‑catch που καταγράφουν λεπτομέρειες `WatermarkerException`, διασφαλίζοντας ότι ένα κατεστραμμένο αρχείο δεν θα σταματήσει ολόκληρη τη δουλειά.
-
-## Συχνές ερωτήσεις
-
-**Q: What diagram formats does GroupDocs.Watermark support?**  
-A: Πάνω από 30 μορφές, συμπεριλαμβανομένων Visio (.vsdx), SVG, και EMF, καθώς και τύπων εικόνας όπως PNG και JPEG.
-
-**Q: Can I edit headers in password‑protected diagrams?**  
-A: Ναι—καθορίστε τον κωδικό πρόσβασης στο `DiagramLoadOptions` πριν φορτώσετε το αρχείο.
-
-**Q: Does the library work on Linux servers?**  
-A: Απόλυτα. Το GroupDocs.Watermark είναι ανεξάρτητο πλατφόρμας και λειτουργεί σε οποιοδήποτε λειτουργικό σύστημα με συμβατό JRE.
-
-**Q: How do I avoid memory leaks when processing thousands of files?**  
-A: Πάντα να καλείτε `watermarker.close()` σε μπλοκ finally ή να χρησιμοποιείτε try‑with‑resources αν το API υποστηρίζει AutoCloseable.
-
-**Q: Is there a way to preview changes before saving?**  
-A: Μπορείτε να εξάγετε το διάγραμμα σε εικόνα (π.χ., PNG) χρησιμοποιώντας `watermarker.saveAsImage()` και να ελέγξετε το αποτέλεσμα προγραμματιστικά.
-
-## Πρόσθετοι πόροι
-- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/) – πλήρης αναφορά API και πρότυπα χρήσης.  
-- [API Reference](https://reference.groupdocs.com/watermark/java) – λεπτομερείς υπογραφές μεθόδων.  
-- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/) – λήψη των τελευταίων δυαδικών αρχείων.  
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Wat) – πηγαίος κώδικας, σύστημα παρακολούθησης σφαλμάτων και συνεισφορές κοινότητας.  
-- [GroupDocs forums](https://forum.groupdocs.com/c/watermark/10) – θέστε ερωτήσεις και μοιραστείτε λύσεις με άλλους προγραμματιστές.
-
----
-
-**Τελευταία ενημέρωση:** 2026-10-11  
-**Δοκιμή με:** GroupDocs.Watermark 23.12 for Java  
-**Συγγραφέας:** GroupDocs  
+### Βήμα 2: Προσαρμογή Ιδιοτήτων Γραμματοσειράς
+Ρυθμίστε το μέγεθος, την οικογένεια και το χρώμα ώστε να ταιριάζουν με το branding σας:
 
 ```java
 content.getHeaderFooter().getFont().setSize(19);
@@ -234,16 +138,70 @@ content.getHeaderFooter().getFont().setFamilyName("Calibri");
 content.getHeaderFooter().setTextColor(Color.getRed());
 ```
 
+## Αποθήκευση και Κλείσιμο του Watermarker
+### Βήμα 1: Αποθήκευση Αλλαγών
+Γράψτε το τροποποιημένο διάγραμμα σε νέο αρχείο:
+
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output.vsdx");
 ```
+
+### Βήμα 2: Κλείσιμο Watermarker
+Πάντα κλείστε την παρουσία για να ελευθερώσετε τους εγγενείς πόρους:
 
 ```java
 watermarker.close();
 ```
 
-## Σχετικά μαθήματα
+## Πρακτικές Εφαρμογές
+1. **Branding Documents** – Εισάγετε λογότυπα ή σλόγκαν της εταιρείας σε κεφαλίδες/υποσέλιδα.  
+2. **Version Control** – Προσθέστε αυτόματα αριθμούς έκδοσης ή ημερομηνίες.  
+3. **Legal Compliance** – Προσθέστε υποχρεωτικό κείμενο αποποίησης ευθύνης σε κάθε διάγραμμα.  
 
-- [Extract Headers & Footers from Visio Diagrams Using GroupDocs.Watermark for Java](/watermark/java/diagram-document-watermarking/extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
-- [Remove Hyperlinks from Diagram Shapes using GroupDocs.Watermark Java for Enhanced Document Security](/watermark/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-- [Diagram Watermarking Tutorials for GroupDocs.Watermark Java](/watermark/java/diagram-document-watermarking/)
+## Σκέψεις για την Απόδοση
+- **Βελτιστοποίηση Χρήσης Μνήμης** – Αποδεσμεύστε άμεσα τα αντικείμενα `Watermarker`.  
+- **Επεξεργασία Παρτίδας** – Επανάληψη μέσω φακέλου διαγραμμάτων για εφαρμογή της ίδιας λογικής κεφαλίδας/υποσέλιδου.  
+- **Διαχείριση Σφαλμάτων** – Τυλίξτε τις λειτουργίες αρχείων σε μπλοκ `try‑catch` για να πιάσετε `IOException` ή `WatermarkException`.  
+
+## Συνηθισμένα Προβλήματα & Λύσεις
+| Πρόβλημα | Γιατί Συμβαίνει | Πώς να Διορθώσετε |
+|----------|------------------|-------------------|
+| **Η κεφαλίδα δεν αφαιρέθηκε** | Το διάγραμμα χρησιμοποιεί διαφορετική περιοχή κεφαλίδας (αριστερά/δεξιά). | Χρησιμοποιήστε `setHeaderLeft(...)` ή `setHeaderRight(...)` ανάλογα. |
+| **Οι αλλαγές γραμματοσειράς δεν είναι ορατές** | Το διάγραμμα παρακάμπτει τις ρυθμίσεις γραμματοσειράς με ένα φύλλο στυλ. | Καλέστε `content.getHeaderFooter().getFont().setBold(true)` ή προσαρμόστε την ιεραρχία στυλ. |
+| **Η άδεια δεν αναγνωρίζεται** | Η διαδρομή του αρχείου άδειας είναι λανθασμένη. | Τοποθετήστε το `license.lic` στη ρίζα του έργου και φορτώστε το με `License license = new License(); license.setLicense("license.lic");` πριν δημιουργήσετε το `Watermarker`. |
+
+## Συχνές Ερωτήσεις
+
+**Q: Μπορώ να επεξεργαστώ και τις κεφαλίδες και τα υποσέλιδα στην ίδια εκτέλεση;**  
+A: Ναι—απλώς καλέστε τις κατάλληλες μεθόδους `setHeader...` και `setFooter...` πριν αποθηκεύσετε.
+
+**Q: Υποστηρίζει το GroupDocs.Watermark διαγράμματα με προστασία κωδικού;**  
+A: Ναι. Παρέχετε τον κωδικό στο `DiagramLoadOptions.setPassword("yourPassword")`.
+
+**Q: Είναι δυνατόν να προσθέσετε υδατογράφημα εικόνας μαζί με αλλαγές κεφαλίδας/υποσέλιδου;**  
+A: Απόλυτα. Χρησιμοποιήστε `watermarker.add(watermark)` όπου το `watermark` είναι μια παρουσία του `ImageWatermark`.
+
+**Q: Πόσο μεγάλο διάγραμμα μπορώ να επεξεργαστώ;**  
+A: Η βιβλιοθήκη διαχειρίζεται αρχεία έως μερικές εκατοντάδες megabytes· παρακολουθήστε τη μνήμη heap της JVM και αυξήστε την αν χρειαστεί.
+
+**Q: Υπάρχουν περιορισμοί στη δωρεάν δοκιμή;**  
+A: Η δοκιμή επιτρέπει πλήρη λειτουργικότητα αλλά μπορεί να ενσωματώνει υδατογράφημα που υποδεικνύει ότι είναι έκδοση δοκιμής.
+
+## Συμπέρασμα
+Τώρα έχετε μια πλήρη, έτοιμη για παραγωγή ροή εργασίας για **edit diagram headers java** και ακόμη **add watermark to diagram** χρησιμοποιώντας το GroupDocs.Watermark. Ακολουθώντας τα παραπάνω βήματα, μπορείτε να αυτοματοποιήσετε το branding, την έκδοση και τη συμμόρφωση σε μεγάλα σύνολα αρχείων διαγραμμάτων.
+
+Για να συνεχίσετε να επεκτείνετε τις γνώσεις σας, εξερευνήστε άλλες δυνατότητες υδατογράφησης όπως υδατογραφήματα εικόνας, κειμένου και πρότυπα επεξεργασίας παρτίδας. Μοιραστείτε τις εμπειρίες σας στο φόρουμ της κοινότητας!
+
+**Πόροι**  
+- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- [API Reference](https://reference.groupdocs.com/watermark/java)  
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)  
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Wat)  
+- [GroupDocs forums](https://forum.groupdocs.com/c/watermark/10)
+
+
+---
+
+**Τελευταία Ενημέρωση:** 2026-02-16  
+**Δοκιμάστηκε Με:** GroupDocs.Watermark 24.11 for Java  
+**Συγγραφέας:** GroupDocs  

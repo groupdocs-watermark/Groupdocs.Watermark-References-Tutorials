@@ -1,105 +1,63 @@
 ---
-date: '2026-10-11'
-description: Tìm hiểu cách trích xuất tiêu đề Visio bằng GroupDocs.Watermark cho Java,
-  bao gồm cài đặt phông chữ, nội dung văn bản, màu sắc và lề trong các sơ đồ Visio.
+date: '2025-12-31'
+description: Tìm hiểu cách sử dụng GroupDocs và trích xuất tiêu đề và chân trang từ
+  các sơ đồ Visio bằng GroupDocs.Watermark Java, bao gồm cài đặt phông chữ và nội
+  dung văn bản.
 keywords:
-- extract visio headers
-- GroupDocs.Watermark Java
-- Visio diagram processing
-- diagram watermarking
-- Java document extraction
-lastmod: '2026-10-11'
-og_description: Tìm hiểu cách trích xuất tiêu đề Visio bằng GroupDocs.Watermark cho
-  Java, bao gồm cài đặt phông chữ, nội dung văn bản, màu sắc và lề trong các sơ đồ
-  Visio.
-og_image_alt: Guide showing Java code extracting headers and footers from Visio diagrams
-  with GroupDocs.Watermark
-og_title: Trích xuất tiêu đề Visio bằng GroupDocs.Watermark cho Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-11'
-  description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  headline: Extract visio headers with GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to extract visio headers using GroupDocs.Watermark for Java,
-    including font settings, text content, colors, and margins in Visio diagrams.
-  name: Extract visio headers with GroupDocs.Watermark for Java
-  steps:
-  - name: '**Document analysis** – compare styling across thousands of diagrams for
-      consistency.'
-    text: '**Document analysis** – compare styling across thousands of diagrams for
-      consistency.'
-  - name: '**Compliance checks** – verify that corporate header/footer standards are
-      met before publishing.'
-    text: '**Compliance checks** – verify that corporate header/footer standards are
-      met before publishing.'
-  - name: '**Automated report generation** – reuse extracted text to populate metadata
-      fields in reporting systems.'
-    text: '**Automated report generation** – reuse extracted text to populate metadata
-      fields in reporting systems.'
-  - name: '**CMS integration** – feed header text into content‑management workflows
-      for indexing or search.'
-    text: '**CMS integration** – feed header text into content‑management workflows
-      for indexing or search.'
-  type: HowTo
-- questions:
-  - answer: Yes. GroupDocs.Watermark processes large diagrams in a streaming mode,
-      avoiding full‑in‑memory loading and keeping RAM usage under 200 MB.
-    question: Can I extract headers from large Visio files (e.g., 300 MB)?
-  - answer: Absolutely. Pass the password to the `Watermarker` constructor to unlock
-      the document before extraction.
-    question: Does the API work with password‑protected Visio files?
-  - answer: The library handles Visio 2003‑2021 files, covering both VSD and VSDX
-      formats.
-    question: Which Visio versions are supported?
-  - answer: Verify that the diagram actually contains a header/footer; some templates
-      omit them, resulting in empty collections.
-    question: What should I do if I encounter a null value for a header property?
-  - answer: Loop through your file list, instantiate a `Watermarker` for each file,
-      extract the data, then dispose of the instance before moving to the next file.
-    question: Is there a way to batch‑process multiple diagrams?
-  type: FAQPage
-tags:
-- extract visio headers
-- GroupDocs.Watermark
-- Java diagram API
-- Visio automation
-- document processing
-title: Trích xuất tiêu đề Visio bằng GroupDocs.Watermark cho Java
+- extract headers footers Visio diagrams
+- GroupDocs Watermark Java
+- Visio diagram watermarking
+title: Cách sử dụng GroupDocs – Trích xuất tiêu đề và chân trang Visio (Java)
 type: docs
 url: /vi/java/diagram-document-watermarking/extract-visio-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Trích xuất tiêu đề Visio với GroupDocs.Watermark cho Java
+# Trích Xuất Header & Footer từ Sơ Đồ Visio bằng GroupDocs.Watermark cho Java
 
-Trong hướng dẫn này, bạn sẽ khám phá cách **trích xuất tiêu đề Visio** và chân trang từ các tệp sơ đồ Microsoft Visio bằng thư viện GroupDocs.Watermark cho Java. Chúng tôi sẽ hướng dẫn cách lấy chi tiết phông chữ, nội dung văn bản, màu sắc và giá trị lề, để bạn có thể tự động hoá việc phân tích hoặc kiểm tra tuân thủ trên các tài sản sơ đồ của mình.
+## Giới thiệu
+
+Bạn đang gặp khó khăn trong việc trích xuất thông tin phông chữ, nội dung văn bản, màu sắc hoặc lề từ header và footer trong các sơ đồ Microsoft Visio? Với GroupDocs.Watermark cho Java, những công việc này trở nên đơn giản. Hướng dẫn này sẽ minh họa cách sử dụng thư viện mạnh mẽ này để trích xuất các chi tiết quan trọng một cách hiệu quả.
+
+Trong tutorial này, **bạn sẽ học cách sử dụng GroupDocs** để lấy dữ liệu header/footer, giúp việc phân tích tài liệu và kiểm tra tuân thủ trở nên dễ dàng.
+
+Khi kết thúc hướng dẫn, bạn sẽ có hiểu biết toàn diện về các tính năng này. Hãy cùng khám phá những gì bạn cần để bắt đầu!
 
 ## Câu trả lời nhanh
-- **Lớp nào tải tệp Visio?** `Watermarker` tải sơ đồ và cung cấp quyền truy cập vào các đối tượng tiêu đề/chân trang.  
-- **Tôi có thể đọc kích thước và kiểu phông chữ không?** Có – API trả về họ, kích thước, in đậm, nghiêng, gạch dưới và gạch ngang.  
-- **Màu sắc có được trả về dưới dạng ARGB không?** Màu văn bản được cung cấp dưới dạng số nguyên ARGB 32‑bit.  
-- **Tôi có cần giấy phép để trích xuất không?** Bản dùng thử hoạt động cho việc đánh giá; giấy phép vĩnh viễn cần thiết cho môi trường sản xuất.  
-- **Yêu cầu phiên bản Java nào?** Java 8 hoặc cao hơn được hỗ trợ.
+- **Bạn có thể trích xuất gì?** Cài đặt phông chữ, nội dung văn bản, màu sắc và lề từ header và footer của Visio.  
+- **Thư viện nào cần thiết?** GroupDocs.Watermark cho Java (phiên bản 24.11 hoặc mới hơn).  
+- **Có cần giấy phép không?** Bản dùng thử miễn phí đủ cho việc đánh giá; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
+- **Phiên bản Java nào được hỗ trợ?** JDK 8 hoặc cao hơn.  
+- **Làm sao giải phóng tài nguyên?** Gọi `watermarker.close()` sau khi hoàn thành việc trích xuất dữ liệu.
 
-## Trích xuất tiêu đề Visio là gì?
-`extract visio headers` đề cập đến việc lấy dữ liệu tiêu đề và chân trang một cách lập trình—như các thuộc tính phông chữ, chuỗi văn bản, màu sắc và lề bố cục—từ các tệp sơ đồ Visio. Bằng cách truy cập các thuộc tính này thông qua API GroupDocs.Watermark, bạn có thể phân tích kiểu dáng, thực thi tiêu chuẩn doanh nghiệp và tái sử dụng nội dung tiêu đề cho mục đích báo cáo hoặc lập chỉ mục.
+## Cách Sử Dụng GroupDocs Để Trích Xuất Header & Footer của Visio
 
-## Tại sao nên sử dụng GroupDocs.Watermark cho Java?
-GroupDocs.Watermark hỗ trợ **hơn 30 định dạng sơ đồ và hình ảnh** và có thể xử lý các tệp lên tới **500 MB** mà không cần tải toàn bộ tài liệu vào bộ nhớ, cung cấp việc trích xuất nhanh, tiêu tốn ít bộ nhớ cho các quy trình tự động quy mô lớn.
+Dưới đây là hướng dẫn chi tiết từng bước, bao gồm mọi thứ từ cài đặt dự án đến trích xuất từng phần thông tin header/footer. Thực hiện các bước được đánh số, bạn sẽ có mã hoạt động trong vài phút.
 
 ## Yêu cầu trước
-- **GroupDocs.Watermark cho Java** phiên bản 24.11 hoặc mới hơn.  
-- Java Development Kit 8 hoặc mới hơn.  
-- Một IDE như IntelliJ IDEA hoặc Eclipse.  
-- Kiến thức cơ bản về Maven.
 
-## Cài đặt GroupDocs.Watermark cho Java
+Trước khi bắt đầu, hãy đảm bảo bạn có những thứ sau:
 
-First, add the library to your Maven project:
+### Thư viện & Phụ Thuộc Cần Thiết
 
-**Cài đặt Maven**
+- **GroupDocs.Watermark cho Java**: Đảm bảo đã cài đặt phiên bản 24.11 hoặc mới hơn.
+
+### Yêu Cầu Cài Đặt Môi Trường
+
+- Một JDK tương thích (Java Development Kit), ưu tiên phiên bản 8 hoặc cao hơn.  
+- Một IDE như IntelliJ IDEA hoặc Eclipse.
+
+### Kiến Thức Cần Có
+
+Hiểu biết cơ bản về lập trình Java và quản lý phụ thuộc Maven sẽ rất hữu ích.
+
+## Sử Dụng GroupDocs.Watermark Java để Trích Xuất
+
+### Cài Đặt GroupDocs.Watermark cho Java
+
+Để bắt đầu, bạn cần thêm thư viện GroupDocs.Watermark vào dự án. Bạn có thể làm điều này qua Maven:
+
+**Cài Đặt Maven**
 
 ```xml
 <repositories>
@@ -119,41 +77,34 @@ First, add the library to your Maven project:
 </dependencies>
 ```
 
-You can also download the JAR directly from [GroupDocs.Watermark cho Java releases](https://releases.groupdocs.com/watermark/java/).
+Hoặc tải trực tiếp thư viện từ [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Nhận giấy phép
-- **Dùng thử miễn phí** – khám phá API mà không tốn phí.  
-- **Giấy phép tạm thời** – yêu cầu từ cổng thông tin GroupDocs.  
-- **Giấy phép đầy đủ** – mua để sử dụng không giới hạn trong môi trường sản xuất.
+### Mua Giấy Phép
 
-## Tài nguyên
-- [GroupDocs.Watermark cho Java releases](https://releases.groupdocs.com/watermark/java/)
-- [Tài liệu GroupDocs](https://docs.groupdocs.com/watermark/java/)
-- [diễn đàn hỗ trợ miễn phí](https://forum.groupdocs.com/c/watermark/10)
-- [Tài liệu GroupDocs](https://docs.groupdocs.com/watermark/java/)
-- [Tham chiếu API](https://reference.groupdocs.com/watermark/java)
-- [Tải xuống GroupDocs](https://releases.groupdocs.com/watermark/java/)
+- **Bản Dùng Thử**: Bắt đầu với bản dùng thử để khám phá các tính năng.  
+- **Giấy Phép Tạm Thời**: Yêu cầu giấy phép tạm thời trên trang web GroupDocs.  
+- **Mua Bản Quyền**: Đối với quyền truy cập đầy đủ và hỗ trợ, cân nhắc mua giấy phép.
 
-### Khởi tạo cơ bản
+### Khởi Tạo Cơ Bản
 
-`Watermarker` là lớp chính dùng để tải và thao tác các tài liệu sơ đồ. Tạo một thể hiện để mở tệp Visio của bạn:
+Khởi tạo môi trường bằng cách tạo một thể hiện `Watermarker`. Thao tác này sẽ tải tài liệu sơ đồ của bạn vào ứng dụng:
 
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-## Cách trích xuất tiêu đề Visio với GroupDocs.Watermark cho Java?
+## Hướng Dẫn Thực Hiện
 
-Load the Visio diagram using `Watermarker`, then call the header/footer APIs to pull the desired information. This two‑step approach—initialization followed by property extraction—covers all header and footer data you might need. The API provides separate objects for headers and footers, each exposing methods to retrieve font settings, text strings, color values, and margin measurements, allowing you to collect comprehensive metadata in a single pass.
+Bây giờ, chúng ta sẽ phân tích từng tính năng và xem cách triển khai chúng.
 
-### Tính năng 1: trích xuất thông tin phông chữ tiêu đề và chân trang
+### Tính năng 1: Trích Xuất Thông Tin Phông Chữ của Header và Footer
 
 #### Tổng quan
 
-This feature returns the complete font configuration for each header and footer element, including family name, size, boldness, italic, underline, and strikeout flags.
+Tính năng này cho phép bạn lấy cài đặt phông chữ từ header và footer của tài liệu sơ đồ, bao gồm tên họ, kích thước, in đậm, in nghiêng, gạch chân và gạch ngang.
 
-##### Hướng dẫn thực hiện từng bước
+##### Thực hiện Bước‑bước
 
 **Khởi tạo Watermarker**
 
@@ -162,7 +113,7 @@ DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-**Trích xuất cài đặt phông chữ**
+**Trích xuất Cài đặt Phông Chữ**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -178,15 +129,15 @@ boolean isStrikeout = content.getHeaderFooter().getFont().getStrikeout();
 watermarker.close(); // Always close the watermarker to free resources
 ```
 
-### Tính năng 2: trích xuất nội dung văn bản từ tiêu đề và chân trang
+### Tính năng 2: Trích Xuất Nội Dung Văn Bản từ Header và Footer
 
 #### Tổng quan
 
-You can read the literal text that appears in each header and footer region of a Visio diagram.
+Tính năng này tập trung vào việc trích xuất văn bản từ các phần khác nhau của header và footer trong tài liệu sơ đồ.
 
-##### Hướng dẫn thực hiện từng bước
+##### Thực hiện Bước‑bước
 
-**Trích xuất văn bản tiêu đề & chân trang**
+**Trích xuất Văn Bản Header & Footer**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -204,15 +155,15 @@ String footerRightText = content.getHeaderFooter().getFooterRight();
 watermarker.close(); // Remember to close the watermarker
 ```
 
-### Tính năng 3: trích xuất màu văn bản từ tiêu đề và chân trang
+### Tính năng 3: Trích Xuất Màu Văn Bản từ Header và Footer
 
 #### Tổng quan
 
-The API provides the text color as a single ARGB integer, which you can convert to standard RGB or HEX formats.
+Tính năng này cho phép bạn xác định màu sắc được sử dụng trong header và footer, được biểu diễn dưới dạng giá trị nguyên ARGB.
 
-##### Hướng dẫn thực hiện từng bước
+##### Thực hiện Bước‑bước
 
-**Trích xuất màu văn bản**
+**Trích xuất Màu Văn Bản**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -223,15 +174,15 @@ int textColorArgb = content.getHeaderFooter().getTextColor().toArgb();
 watermarker.close(); // Close to release resources
 ```
 
-### Tính năng 4: trích xuất lề tiêu đề và chân trang
+### Tính năng 4: Trích Xuất Lề của Header và Footer
 
 #### Tổng quan
 
-Margin values let you understand the spacing around header/footer content, useful for layout validation.
+Tìm hiểu cách trích xuất cài đặt lề cho header và footer, rất quan trọng để hiểu cấu hình bố cục.
 
-##### Hướng dẫn thực hiện từng bước
+##### Thực hiện Bước‑bước
 
-**Trích xuất cài đặt lề**
+**Trích xuất Cài đặt Lề**
 
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
@@ -243,54 +194,54 @@ float headerMargin = content.getHeaderFooter().getHeaderMargin();
 watermarker.close(); // Closing is crucial for resource management
 ```
 
-## Ứng dụng thực tiễn
+## Ứng Dụng Thực Tiễn
 
-Using these extraction capabilities you can automate several real‑world scenarios:
+Áp dụng các tính năng này có thể tối ưu hoá nhiều công việc thực tế, chẳng hạn như:
 
-1. **Phân tích tài liệu** – so sánh kiểu dáng trên hàng ngàn sơ đồ để đảm bảo tính nhất quán.  
-2. **Kiểm tra tuân thủ** – xác minh rằng tiêu đề/chân trang đáp ứng tiêu chuẩn doanh nghiệp trước khi xuất bản.  
-3. **Tự động tạo báo cáo** – tái sử dụng văn bản đã trích xuất để điền vào các trường siêu dữ liệu trong hệ thống báo cáo.  
-4. **Tích hợp CMS** – đưa văn bản tiêu đề vào quy trình quản lý nội dung để lập chỉ mục hoặc tìm kiếm.
+1. **Phân Tích Tài Liệu** – Tự động trích xuất thông tin định dạng để phân tích và so sánh tài liệu.  
+2. **Kiểm Tra Tuân Thủ** – Đảm bảo định dạng header và footer đáp ứng tiêu chuẩn tổ chức.  
+3. **Tự Động Tạo Báo Cáo** – Điều chỉnh kiểu dáng một cách động dựa trên phông chữ và màu sắc đã trích xuất.  
+4. **Tích Hợp với Hệ Thống CMS** – Sử dụng nội dung văn bản đã trích xuất để điền metadata trong hệ thống quản lý nội dung.
 
-## Các cân nhắc về hiệu năng
+## Lưu Ý Về Hiệu Suất
 
-To keep extraction fast and memory‑efficient:
+Để tối ưu hiệu suất khi sử dụng GroupDocs.Watermark:
 
-- Đóng đối tượng `Watermarker` ngay khi hoàn thành xử lý.  
-- Đối với các tệp lớn hơn 200 MB, truyền dữ liệu tài liệu thay vì tải toàn bộ.  
-- Theo dõi việc sử dụng heap Java; thư viện giải phóng tài nguyên gốc sau mỗi lần gọi.
+- Giảm thiểu việc sử dụng tài nguyên bằng cách đóng thể hiện `Watermarker` sau khi hoàn thành.  
+- Quản lý bộ nhớ một cách hiệu quả, đặc biệt với các file sơ đồ lớn.  
+- Thực hiện profiling và kiểm thử ứng dụng để xác định các điểm nghẽn.
 
-## Câu hỏi thường gặp
+## Câu Hỏi Thường Gặp
 
-**Q: Tôi có thể trích xuất tiêu đề từ các tệp Visio lớn (ví dụ, 300 MB)?**  
-A: Có. GroupDocs.Watermark xử lý các sơ đồ lớn ở chế độ truyền dữ liệu, tránh tải toàn bộ vào bộ nhớ và giữ mức sử dụng RAM dưới 200 MB.
+**Q: Làm sao xử lý các file sơ đồ lớn một cách hiệu quả?**  
+A: Áp dụng các thực hành quản lý bộ nhớ tốt, đóng `Watermarker` kịp thời và profiling ứng dụng để phát hiện các thao tác tiêu tốn nhiều bộ nhớ.
 
-**Q: API có hoạt động với các tệp Visio được bảo vệ bằng mật khẩu không?**  
-A: Chắc chắn. Chuyển mật khẩu vào hàm khởi tạo `Watermarker` để mở khóa tài liệu trước khi trích xuất.
+**Q: GroupDocs.Watermark có thể trích xuất thông tin từ các loại tài liệu khác không?**  
+A: Có, nó hỗ trợ nhiều định dạng ngoài sơ đồ Visio. Kiểm tra tài liệu chính thức để biết danh sách đầy đủ.
 
-**Q: Các phiên bản Visio nào được hỗ trợ?**  
-A: Thư viện xử lý các tệp Visio 2003‑2021, bao gồm cả định dạng VSD và VSDX.
+**Q: Nếu gặp lỗi khi trích xuất, tôi nên làm gì?**  
+A: Kiểm tra môi trường có đáp ứng yêu cầu của thư viện, xác nhận định dạng sơ đồ được hỗ trợ và xem chi tiết lỗi để tìm thiếu phụ thuộc.
 
-**Q: Tôi nên làm gì nếu gặp giá trị null cho một thuộc tính tiêu đề?**  
-A: Kiểm tra xem sơ đồ có thực sự chứa tiêu đề/chân trang không; một số mẫu bỏ qua chúng, dẫn đến các bộ sưu tập rỗng.
+**Q: Có hỗ trợ kỹ thuật để giải quyết vấn đề không?**  
+A: Có, bạn có thể đặt câu hỏi trên [diễn đàn hỗ trợ miễn phí](https://forum.groupdocs.com/c/watermark/10) hoặc liên hệ trực tiếp với bộ phận hỗ trợ của GroupDocs.
 
-**Q: Có cách nào để xử lý hàng loạt nhiều sơ đồ không?**  
-A: Lặp qua danh sách tệp của bạn, tạo một `Watermarker` cho mỗi tệp, trích xuất dữ liệu, sau đó giải phóng thể hiện trước khi chuyển sang tệp tiếp theo.
+**Q: Làm sao tích hợp các bước trích xuất này vào một ứng dụng Java hiện có?**  
+A: Áp dụng mẫu khởi tạo giống như trên, nhúng mã trích xuất vào nơi cần dữ liệu header/footer, và nhớ đóng `Watermarker` sau khi sử dụng.
 
-## Kết luận
+## Kết Luận
 
-You now have a complete, step‑by‑step guide to **extract visio headers** and footers using GroupDocs.Watermark for Java. Apply these techniques to automate styling audits, generate metadata, or integrate diagram information into larger Java applications. For deeper details, explore the official documentation and API reference.
+Bạn đã có nền tảng vững chắc để trích xuất header và footer từ sơ đồ Visio bằng GroupDocs.Watermark trong Java. Hãy thử nghiệm các tính năng này và tích hợp chúng vào dự án của bạn một cách liền mạch. Để khám phá sâu hơn, truy cập [tài liệu GroupDocs](https://docs.groupdocs.com/watermark/java/) và cân nhắc mở rộng chức năng dựa trên nhu cầu cụ thể.
+
+## Tài Nguyên
+
+- **Tài liệu**: Tìm hiểu thêm tại [GroupDocs Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Tham Khảo API**: Nghiên cứu chi tiết với [API References](https://reference.groupdocs.com/watermark/java)  
+- **Tải Thư Viện**: Nhận phiên bản mới nhất từ [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
 
 ---
 
-**Last Updated:** 2026-10-11  
-**Tested With:** GroupDocs.Watermark 24.11 for Java  
-**Author:** GroupDocs  
+**Cập nhật lần cuối:** 2025-12-31  
+**Đã kiểm tra với:** GroupDocs.Watermark 24.11 for Java  
+**Tác giả:** GroupDocs  
 
 ---
-
-## Hướng dẫn liên quan
-
-- [Chỉnh sửa tiêu đề & chân trang sơ đồ trong Java bằng GroupDocs.Watermark: Hướng dẫn toàn diện](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
-- [Trích xuất thông tin hình dạng từ sơ đồ bằng GroupDocs.Watermark trong Java](/watermark/java/diagram-document-watermarking/retrieve-shape-info-groupdocs-watermark-java/)
-- [Hướng dẫn Đánh dấu sơ đồ cho GroupDocs.Watermark Java](/watermark/java/diagram-document-watermarking/)

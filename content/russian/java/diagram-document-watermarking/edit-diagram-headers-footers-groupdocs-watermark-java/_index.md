@@ -1,69 +1,13 @@
 ---
-date: '2026-10-11'
-description: Узнайте, как редактировать diagram headers java с помощью GroupDocs.Watermark
-  для Java. Следуйте этому пошаговому руководству, чтобы настроить diagram footers
-  и headers.
+date: '2026-02-16'
+description: Узнайте, как редактировать заголовки диаграмм на Java и добавить водяной
+  знак к диаграмме с помощью GroupDocs.Watermark для Java. Следуйте этому пошаговому
+  руководству, чтобы улучшить свои документы.
 keywords:
-- edit diagram headers java
+- edit diagram headers footers
 - groupdocs watermark java
-- diagram header footer editing
-lastmod: '2026-10-11'
-og_description: Редактировать diagram headers java с помощью GroupDocs.Watermark.
-  Это руководство показывает, как эффективно загружать, изменять и сохранять diagram
-  headers и footers.
-og_image_alt: 'Guide: editing diagram headers and footers in Java using GroupDocs.Watermark'
-og_title: Редактировать diagram headers java с помощью GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-11'
-  description: Learn how to edit diagram headers java with GroupDocs.Watermark for
-    Java. Follow this step‑by‑step guide to customize diagram footers and headers.
-  headline: Edit diagram headers java using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to edit diagram headers java with GroupDocs.Watermark for
-    Java. Follow this step‑by‑step guide to customize diagram footers and headers.
-  name: Edit diagram headers java using GroupDocs.Watermark
-  steps:
-  - name: create a DiagramLoadOptions object
-    text: DiagramLoadOptions configures how the diagram is loaded, such as password
-      handling and page range selection.
-  - name: instantiate the Watermarker
-    text: Watermarker is the main class that provides methods to manipulate diagram
-      content, including headers and footers.
-  - name: remove the existing header
-    text: DiagramContent represents the editable parts of a diagram, allowing access
-      to its header and footer elements.
-  - name: replace the footer with custom text
-    text: HeaderFooter is a helper object used to define new header or footer text
-      and styling.
-  - name: save the modified diagram
-    text: The save method writes the modified diagram to the specified output path,
-      preserving the original file.
-  - name: close the Watermarker
-    text: Calling close releases native resources and file handles associated with
-      the Watermarker instance.
-  type: HowTo
-- questions:
-  - answer: Over 30 formats, including Visio (.vsdx), SVG, and EMF, plus image types
-      like PNG and JPEG.
-    question: What diagram formats does GroupDocs.Watermark support?
-  - answer: Yes—specify the password in `DiagramLoadOptions` before loading the file.
-    question: Can I edit headers in password‑protected diagrams?
-  - answer: Absolutely. GroupDocs.Watermark is platform‑agnostic and runs on any OS
-      with a compatible JRE.
-    question: Does the library work on Linux servers?
-  - answer: Always invoke `watermarker.close()` in a finally block or use try‑with‑resources
-      if the API supports AutoCloseable.
-    question: How do I avoid memory leaks when processing thousands of files?
-  - answer: You can export the diagram to an image (e.g., PNG) using `watermarker.saveAsImage()`
-      and inspect the result programmatically.
-    question: Is there a way to preview changes before saving?
-  type: FAQPage
-tags:
-- edit diagram headers
-- groupdocs watermark
-- java document processing
-title: Редактировать diagram headers java с помощью GroupDocs.Watermark
+- diagram document watermarking
+title: Редактирование заголовков диаграмм Java с использованием GroupDocs.Watermark
 type: docs
 url: /ru/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/
 weight: 1
@@ -71,31 +15,32 @@ weight: 1
 
 # Редактирование заголовков диаграмм Java с помощью GroupDocs.Watermark
 
-В современной технической документации возможность **edit diagram headers java** быстро и надёжно может сэкономить вам часы ручной доработки. Независимо от того, готовите ли вы материалы для презентаций, инженерные схемы или диаграммы соответствия, правильное содержание заголовков и нижних колонтитулов необходимо для брендинга и отслеживаемости. Это руководство проведёт вас через каждый шаг — от настройки GroupDocs.Watermark для Java до загрузки диаграммы, удаления или замены её заголовка/нижнего колонтитула и, наконец, сохранения изменений.
+В современной технической документации и презентациях **edit diagram headers java** часто требуется — будь то удаление устаревших заголовков, вставка брендинга или соблюдение юридических нижних колонтитулов. Этот учебник покажет, как с помощью GroupDocs.Watermark for Java быстро и надёжно редактировать заголовки и нижние колонтитулы диаграмм.
 
 ## Быстрые ответы
-- **Какая библиотека обрабатывает редактирование заголовков диаграмм в Java?** GroupDocs.Watermark for Java.
-- **Нужна ли лицензия для запуска примера?** Бесплатная пробная версия подходит для разработки; для продакшена требуется постоянная лицензия.
-- **Какая версия Java требуется?** JDK 8 или новее.
-- **Можно ли обработать несколько диаграмм за один запуск?** Да — пакетная обработка поддерживается через простой цикл.
-- **Будет ли оригинальная диаграмма перезаписана?** Нет — сохранение создаёт новый файл, оставляя исходный нетронутым.
+- **What library do I need?** GroupDocs.Watermark for Java.  
+- **Can I edit both headers and footers?** Yes, the API lets you modify each independently.  
+- **Do I need a license?** A trial works for development; a commercial license is required for production.  
+- **Which diagram formats are supported?** Visio (`.vsdx`, `.vsd`), among others.  
+- **Is batch processing possible?** Absolutely—loop through files with the same Watermarker logic.
 
-## Что такое edit diagram headers java?
-`edit diagram headers java` относится к программному управлению элементами заголовка и нижнего колонтитула внутри файлов диаграмм (например, Visio (.vsdx) или других поддерживаемых форматов) с использованием Java‑кода. Эта операция обычно выполняется для вставки брендинга, номеров версий или юридических уведомлений без необходимости вручную открывать каждый файл.
+## Что такое “edit diagram headers java”?
+Редактирование заголовков диаграмм в Java означает программный доступ к файлу диаграммы (например, Visio) и изменение или удаление текста, который появляется в верхней части каждой страницы. GroupDocs.Watermark предоставляет высокоуровневый API, который абстрагирует детали формата файла, позволяя сосредоточиться на бизнес‑логике.
 
-## Почему использовать GroupDocs.Watermark для Java?
-GroupDocs.Watermark поддерживает **50+ форматов ввода и вывода** и может обрабатывать диаграммы до 500 страниц без загрузки всего файла в память, снижая пиковое использование ОЗУ до 70 % по сравнению с наивными подходами потоковой обработки файлов. API также предоставляет потокобезопасные объекты, позволяющие выполнять высокопроизводительные пакетные задания на многопроцессорных серверах.
+## Почему использовать GroupDocs.Watermark для добавления водяного знака к диаграмме?
+- **No external dependencies** – works with plain Java.  
+- **Rich styling options** – fonts, colors, and positioning are fully controllable.  
+- **Batch‑ready** – process dozens of files in a single run.  
+- **Cross‑format support** – the same code works for PDFs, images, and Office documents.
 
-## Требования
-- **Java Development Kit (JDK)** 8 или выше установлен.
-- **GroupDocs.Watermark for Java** библиотека добавлена в ваш проект (через Maven или прямую загрузку).  
-- Базовое знакомство с вводом‑выводом файлов в Java и объектно‑ориентированными концепциями.
+## Предварительные требования
+- **Java Development Kit (JDK)** 8 or newer.  
+- **GroupDocs.Watermark for Java** library (added as a Maven dependency or downloaded manually).  
+- Basic familiarity with Java file I/O.
 
 ## Настройка GroupDocs.Watermark для Java
-Для интеграции библиотеки следуйте одному из двух путей установки.
-
-**Настройка Maven**  
-Добавьте следующую зависимость в ваш файл `pom.xml`:
+### Настройка Maven
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -115,17 +60,15 @@ GroupDocs.Watermark поддерживает **50+ форматов ввода �
 </dependencies>
 ```
 
-**Прямая загрузка**  
-В качестве альтернативы, получите последнюю JAR‑файл со официальной страницы релизов: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Прямое скачивание
+Alternatively, download the latest JAR from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Получение лицензии
-Вы можете начать с 30‑дневной пробной версии или приобрести постоянную лицензию. Подробности доступны на [странице лицензий](https://purchase.groupdocs.com/temporary-license/). Пробная версия предоставляет полный доступ к API, но добавляет водяной знак к выходным файлам; производственная лицензия снимает это ограничение.
+### Приобретение лицензии
+To run without evaluation limits, obtain a license from the [license page](https://purchase.groupdocs.com/temporary-license/). A free trial is sufficient for experimenting.
 
-## Как редактировать заголовки диаграмм java?
-Загрузите диаграмму, измените её заголовок или нижний колонтитул, а затем сохраните результат. Полный рабочий процесс укладывается в **четыре лаконичных шага**, каждый из которых продемонстрирован коротким заполнителем кода, который вы заменяете реальными Java‑операторами. Процесс включает загрузку диаграммы с соответствующими параметрами, доступ к структурам заголовка/нижнего колонтитула, применение изменений и, наконец, сохранение изменений в новый файл.
+## Инициализация Watermarker
+The first step is to create a `Watermarker` instance that points to your diagram file:
 
-### Шаг 1: создать объект DiagramLoadOptions
-DiagramLoadOptions настраивает способ загрузки диаграммы, например обработку пароля и выбор диапазона страниц.  
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -140,87 +83,54 @@ public class InitializeWatermarker {
 }
 ```
 
-### Шаг 2: создать экземпляр Watermarker
-Watermarker — основной класс, предоставляющий методы для манипуляции содержимым диаграммы, включая заголовки и нижние колонтитулы.  
+## Загрузка и инициализация Watermarker с пользовательскими параметрами
+### Шаг 1: Создание DiagramLoadOptions
+You can fine‑tune how the diagram is loaded by using `DiagramLoadOptions`:
+
 ```java
 import com.groupdocs.watermark.options.DiagramLoadOptions;
 
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 ```
 
-### Шаг 3: удалить существующий заголовок
-DiagramContent представляет редактируемые части диаграммы, позволяя получить доступ к её элементам заголовка и нижнего колонтитула.  
+### Шаг 2: Загрузка документа
+Pass the options when constructing the `Watermarker`:
+
 ```java
 import com.groupdocs.watermark.Watermarker;
 
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/diagram.vsdx", loadOptions);
 ```
 
-### Шаг 4: заменить нижний колонтитул пользовательским текстом
-HeaderFooter — вспомогательный объект, используемый для определения нового текста и стиля заголовка или нижнего колонтитула.  
+## Удаление заголовка из диаграммы
+### Шаг 1: Доступ к содержимому диаграммы
+Retrieve the content object that gives you direct access to header/footer sections:
+
 ```java
 import com.groupdocs.watermark.contents.DiagramContent;
 
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 ```
 
-### Шаг 5: сохранить изменённую диаграмму
-Метод save записывает изменённую диаграмму в указанный путь вывода, сохраняет оригинальный файл.  
+### Шаг 2: Удаление заголовка
+Setting the header center to `null` removes the header entirely:
+
 ```java
 content.getHeaderFooter().setHeaderCenter(null);
 ```
 
-### Шаг 6: закрыть Watermarker
-Вызов close освобождает нативные ресурсы и файловые дескрипторы, связанные с экземпляром Watermarker.  
+## Замена нижнего колонтитула в диаграмме
+### Шаг 1: Установка нового текста нижнего колонтитула
+You can replace the existing footer with any custom string:
+
 ```java
 import com.groupdocs.watermark.watermarks.Color;
 
 content.getHeaderFooter().setFooterCenter("New Footer Text");
 ```
 
-## Практические применения
-1. **Branding diagrams** – автоматически вставлять корпоративные логотипы или слоганы в каждый заголовок.  
-2. **Version control** – внедрять строку версии в нижний колонтитул, чтобы заинтересованные стороны могли мгновенно увидеть, какую ревизию они просматривают.  
-3. **Legal compliance** – добавлять обязательный отказ от ответственности, чтобы соответствовать нормативным требованиям в разных юрисдикциях.
-
-Эти сценарии показывают, почему **editing diagram headers java** — это больше, чем косметическое изменение; это ключевая часть управления документами.
-
-## Соображения по производительности
-При обработке больших пакетов учитывайте следующие рекомендации по лучшим практикам:
-
-- **Optimize memory usage** – переиспользуйте один экземпляр `Watermarker` для нескольких файлов, когда это возможно; это избегает повторных нативных выделений.  
-- **Batch processing** – оберните логику обработки каждого файла в цикл `for` или Java Stream, чтобы использовать параллелизм на многопроцессорных CPU.  
-- **Robust error handling** – окружите операции с файлами блоками try‑catch, которые логируют детали `WatermarkerException`, гарантируя, что один повреждённый файл не остановит всю задачу.
-
-## Часто задаваемые вопросы
-
-**Q: Какие форматы диаграмм поддерживает GroupDocs.Watermark?**  
-A: Более 30 форматов, включая Visio (.vsdx), SVG и EMF, а также типы изображений, такие как PNG и JPEG.
-
-**Q: Можно ли редактировать заголовки в защищённых паролем диаграммах?**  
-A: Да — укажите пароль в `DiagramLoadOptions` перед загрузкой файла.
-
-**Q: Работает ли библиотека на Linux‑серверах?**  
-A: Абсолютно. GroupDocs.Watermark не зависит от платформы и работает на любой ОС с совместимой JRE.
-
-**Q: Как избежать утечек памяти при обработке тысяч файлов?**  
-A: Всегда вызывайте `watermarker.close()` в блоке finally или используйте try‑with‑resources, если API поддерживает AutoCloseable.
-
-**Q: Есть ли способ предварительно просмотреть изменения перед сохранением?**  
-A: Вы можете экспортировать диаграмму в изображение (например, PNG) с помощью `watermarker.saveAsImage()` и программно проверить результат.
-
-## Дополнительные ресурсы
-- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/) – полная ссылка на API и примеры использования.  
-- [API Reference](https://reference.groupdocs.com/watermark/java) – подробные сигнатуры методов.  
-- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/) – получить последние бинарные файлы.  
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Wat) – исходный код, трекер проблем и вклад сообщества.  
-- [GroupDocs forums](https://forum.groupdocs.com/c/watermark/10) – задавайте вопросы и делитесь решениями с другими разработчиками.
-
----
-
-**Последнее обновление:** 2026-10-11  
-**Тестировано с:** GroupDocs.Watermark 23.12 for Java  
-**Автор:** GroupDocs  
+### Шаг 2: Настройка свойств шрифта
+Adjust size, family, and color to match your branding:
 
 ```java
 content.getHeaderFooter().getFont().setSize(19);
@@ -228,16 +138,69 @@ content.getHeaderFooter().getFont().setFamilyName("Calibri");
 content.getHeaderFooter().setTextColor(Color.getRed());
 ```
 
+## Сохранение и закрытие Watermarker
+### Шаг 1: Сохранение изменений
+Write the modified diagram to a new file:
+
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY/output.vsdx");
 ```
+
+### Шаг 2: Закрытие Watermarker
+Always close the instance to free native resources:
 
 ```java
 watermarker.close();
 ```
 
-## Связанные руководства
+## Практические применения
+1. **Branding Documents** – Insert company logos or taglines in headers/footers.  
+2. **Version Control** – Append version numbers or dates automatically.  
+3. **Legal Compliance** – Add mandatory disclaimer text to every diagram.
 
-- [Извлечение заголовков и нижних колонтитулов из Visio‑диаграмм с помощью GroupDocs.Watermark для Java](/watermark/java/diagram-document-watermarking/extract-visio-diagram-headers-footers-groupdocs-watermark-java/)
-- [Удаление гиперссылок из фигур диаграмм с помощью GroupDocs.Watermark Java для повышения безопасности документов](/watermark/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/)
-- [Учебники по водяным знакам в диаграммах для GroupDocs.Watermark Java](/watermark/java/diagram-document-watermarking/)
+## Соображения по производительности
+- **Optimize Memory Usage** – Dispose of `Watermarker` objects promptly.  
+- **Batch Processing** – Loop through a folder of diagrams to apply the same header/footer logic.  
+- **Error Handling** – Wrap file operations in `try‑catch` blocks to capture `IOException` or `WatermarkException`.
+
+## Распространённые проблемы и решения
+| Проблема | Почему происходит | Как исправить |
+|----------|-------------------|---------------|
+| **Header not removed** | The diagram uses a different header region (left/right). | Use `setHeaderLeft(...)` or `setHeaderRight(...)` as needed. |
+| **Font changes not visible** | The diagram overrides font settings with a style sheet. | Call `content.getHeaderFooter().getFont().setBold(true)` or adjust style hierarchy. |
+| **License not recognized** | License file path is incorrect. | Place `license.lic` in the project root and load it with `License license = new License(); license.setLicense("license.lic");` before creating `Watermarker`. |
+
+## Часто задаваемые вопросы
+
+**Q: Can I edit both headers and footers in the same run?**  
+A: Yes—simply call the appropriate `setHeader...` and `setFooter...` methods before saving.
+
+**Q: Does GroupDocs.Watermark support password‑protected diagrams?**  
+A: It does. Provide the password in `DiagramLoadOptions.setPassword("yourPassword")`.
+
+**Q: Is it possible to add an image watermark together with header/footer changes?**  
+A: Absolutely. Use `watermarker.add(watermark)` where `watermark` is an instance of `ImageWatermark`.
+
+**Q: How large a diagram can I process?**  
+A: The library handles files up to several hundred megabytes; monitor JVM heap and increase it if necessary.
+
+**Q: Are there any limits in the free trial?**  
+A: The trial allows full functionality but may embed a watermark indicating it’s a trial version.
+
+## Заключение
+You now have a complete, production‑ready workflow to **edit diagram headers java** and even **add watermark to diagram** using GroupDocs.Watermark. By following the steps above, you can automate branding, versioning, and compliance across large sets of diagram files.
+
+To keep expanding your expertise, explore other watermarking features such as image watermarks, text watermarks, and batch processing patterns. Share your experiences on the community forum!
+
+**Resources**  
+- [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- [API Reference](https://reference.groupdocs.com/watermark/java)  
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)  
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Wat)  
+- [GroupDocs forums](https://forum.groupdocs.com/c/watermark/10)
+
+---
+
+**Last Updated:** 2026-02-16  
+**Tested With:** GroupDocs.Watermark 24.11 for Java  
+**Author:** GroupDocs  
