@@ -5,79 +5,10 @@ date: "2025-12-19"
 weight: 1
 url: "/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/"
 keywords:
-- how to delete hyperlink
-- remove hyperlinks diagram shapes
-- GroupDocs.Watermark Java
-lastmod: '2026-10-16'
-og_description: Learn how to delete hyperlink from diagram shapes using GroupDocs.Watermark
-  for Java. Follow step‑by‑step instructions to secure your documents quickly.
-og_image_alt: Guide showing removal of hyperlinks from diagram shapes with GroupDocs.Watermark
-  Java
-og_title: How to delete hyperlink from shapes with GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-16'
-  description: Learn how to delete hyperlink from diagram shapes using GroupDocs.Watermark
-    for Java, ensuring secure and clean documents.
-  headline: How to delete hyperlink from shapes with GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to delete hyperlink from diagram shapes using GroupDocs.Watermark
-    for Java, ensuring secure and clean documents.
-  name: How to delete hyperlink from shapes with GroupDocs.Watermark
-  steps:
-  - name: add the Maven dependency
-    text: 'Add the following configuration to your `pom.xml`: You can also view the
-      latest releases on the [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
-      page.'
-  - name: initialize the Watermarker
-    text: The `Watermarker` class is the entry point for all document‑processing actions.
-      It opens the file and gives you access to pages, shapes, and their properties.
-      For detailed usage, refer to the official [Documentation](https://docs.groupdocs.com/watermark/java/).
-  - name: load the diagram file
-    text: 'Create a `Watermarker` instance with the path to your diagram (e.g., `.vsdx`,
-      `.drawio`). This object represents the entire document in memory. - **Why**:
-      Loading the file gives you programmatic access to every shape that may contain
-      a hyperlink.'
-  - name: retrieve shape content
-    text: 'The `Shape` class represents an individual diagram element. By calling
-      `getShapes()` you obtain a collection you can iterate. - **Why**: Accessing
-      shapes lets you target exactly those objects that hold hyperlink data.'
-  - name: iterate and delete hyperlinks
-    text: 'Iterate the shape’s hyperlink list backwards so that removal does not affect
-      the loop index. Call `removeHyperlink(index)` for each unwanted link. - **Why**:
-      Reverse iteration prevents `IndexOutOfBoundsException` when elements are removed.'
-  - name: save the modified diagram
-    text: 'After cleaning up the hyperlinks, save the document to a new location.
-      This writes the changes without altering the original file. - **Why**: Saving
-      to a new file preserves the original version for audit purposes and avoids file‑locking
-      issues.'
-  type: HowTo
-- questions:
-  - answer: Yes. Access the desired page via `watermarker.getPage(pageIndex)` and
-      apply the removal logic only to its shapes.
-    question: Can I remove hyperlinks from only specific pages?
-  - answer: GroupDocs.Watermark supports vector formats like SVG, but raster images
-      (PNG, JPEG) do not contain hyperlink objects.
-    question: Does this work with SVG or PNG diagrams?
-  - answer: Inspect each `Hyperlink` object's URL or ID and skip removal when it matches
-      your whitelist criteria.
-    question: How do I keep certain hyperlinks while deleting others?
-  - answer: A commercial license is required for any production‑grade usage, including
-      automated batch jobs.
-    question: Is a commercial license mandatory for batch processing?
-  - answer: Over 30 formats, including VSDX, DRAWIO, SVG, PDF, DOCX, PPTX, and more.
-      See the full [API Reference](https://reference.groupdocs.com/watermark/java)
-      for details.
-    question: What file formats can I process with this API?
-  type: FAQPage
-tags:
-- delete hyperlink
-- GroupDocs.Watermark
-- Java diagram processing
-title: How to delete hyperlink from shapes with GroupDocs.Watermark
+- remove hyperlinks diagram shapes GroupDocs Watermark Java
+- manage digital documents diagrams
+- GroupDocs Watermark library Java
 type: docs
-url: /java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/
-weight: 1
 ---
 
 # How to Remove Hyperlinks from Diagram Shapes using GroupDocs.Watermark Java
@@ -128,7 +59,8 @@ Add the following configuration to your `pom.xml`:
 </dependencies>
 ```
 
-You can also view the latest releases on the [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) page.
+### Direct Download
+Alternatively, download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 #### License Acquisition Steps
 - Start with a free trial to evaluate the API.  
@@ -172,6 +104,62 @@ for (int i = shape.getHyperlinks().getCount() - 1; i >= 0; i--) {
 watermarker.save("YOUR_OUTPUT_DIRECTORY");
 watermarker.close();
 ```
+*Why?* Persisting the changes and releasing resources avoids memory leaks and locked files.
+
+## Batch Remove Hyperlinks (Advanced Use Case)
+If you need to clean many diagrams at once, wrap the above logic inside a loop that iterates over a list of file paths. The same API calls apply; just change the input and output directories for each iteration. This approach aligns with **batch remove hyperlinks** requirements for large document repositories.
+
+## Practical Applications
+Removing hyperlinks from diagram shapes can be beneficial in several real‑world scenarios:
+
+1. **Security Purposes** – Prevent external links that could expose your network to phishing or malware.  
+2. **Compliance** – Meet corporate policies that forbid outbound URLs in shared documents.  
+3. **Clarity** – Produce cleaner presentations where hyperlinks are unnecessary or distracting.  
+
+## Performance Considerations
+### Optimizing Performance
+- Use the reverse‑iteration pattern shown above to keep loops efficient.  
+- Close the `Watermarker` object as soon as you’re done to free memory.
+
+### Resource Usage Guidelines
+- Monitor CPU and RAM when processing large diagrams.  
+- For bulk jobs, consider streaming the files rather than loading them all at once.
+
+### Best Practices for Java Memory Management
+- Avoid creating objects inside tight loops.  
+- Use try‑with‑resources where applicable for automatic cleanup.
+
+## Frequently Asked Questions
+1. **How do I handle multiple shapes?**  
+   Iterate over all pages and their shapes, applying the same hyperlink‑removal logic to each shape.  
+
+2. **Can this process be automated for large batches of diagrams?**  
+   Yes – embed the code in a batch‑processing routine or integrate it with your document‑management system.  
+
+3. **What if I need to remove hyperlinks only from specific pages?**  
+   Access the desired page by its index (`content.getPages().get_Item(pageIndex)`) and target shapes on that page only.  
+
+4. **Is there any licensing required for production use of GroupDocs.Watermark?**  
+   A valid commercial license is required beyond the trial period.  
+
+5. **Can this method work with other diagram formats?**  
+   GroupDocs.Watermark supports many diagram types; verify compatibility in the official documentation.  
+
+**Additional Q&A**
+
+**Q:** *Is it possible to log which hyperlinks were removed?*  
+**A:** Yes – before calling `removeAt(i)`, capture `shape.getHyperlinks().get_Item(i).getAddress()` and write it to a log file.
+
+**Q:** *Will removing hyperlinks affect the visual appearance of the shape?*  
+**A:** No. The shape’s geometry stays unchanged; only the link metadata is stripped.
+
+**Q:** *Do I need to re‑apply any styling after removal?*  
+**A:** Not usually. Hyperlink removal does not alter fill, line, or text styles.
+
+## Conclusion
+You now have a complete, production‑ready method for **how to remove hyperlinks** from diagram shapes using GroupDocs.Watermark for Java. By following the steps above, you can secure your diagrams, comply with policies, and keep your documents looking polished.
+
+**Resources**  
 - [Documentation](https://docs.groupdocs.com/watermark/java/)  
 - [API Reference](https://reference.groupdocs.com/watermark/java)  
 - [Download](https://releases.groupdocs.com/watermark/java/)  
@@ -186,7 +174,3 @@ watermarker.close();
 **Author:** GroupDocs  
 
 ---
-- [Remove Hyperlinks from PDFs Using GroupDocs.Watermark for Java](/watermark/java/watermark-removal/remove-hyperlinks-pdf-groupdocs-watermark-java/)
-- [Mastering GroupDocs.Watermark Java to Remove or Replace Hyperlinks in Excel Spreadsheets](/watermark/java/spreadsheet-document-watermarking/remove-replace-hyperlinks-excel-groupdocs-watermark-java/)
-- [Efficiently Remove Shapes from Diagrams Using GroupDocs.Watermark for Java](/watermark/java/watermark-removal/remove-shapes-diagrams-groupdocs-watermark-java/)
-
