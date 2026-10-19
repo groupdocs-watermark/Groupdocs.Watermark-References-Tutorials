@@ -1,98 +1,46 @@
 ---
-date: '2026-10-16'
-description: Aprenda a aplicar marca d'água em páginas de diagramas java com GroupDocs.Watermark.
-  Este guia passo a passo cobre a configuração, implementação e as melhores práticas
-  para o manuseio seguro de diagramas.
+date: '2025-12-19'
+description: Aprenda a adicionar marca d'água de texto a diagramas com o GroupDocs.Watermark
+  para Java. Este guia passo a passo cobre a configuração, as configurações de fonte
+  da marca d'água e casos de uso práticos.
 keywords:
-- watermark diagram pages java
-- GroupDocs.Watermark Java
-- add text watermark diagram
-lastmod: '2026-10-16'
-og_description: Aprenda a aplicar marca d'água em páginas de diagramas java com GroupDocs.Watermark.
-  Este guia orienta você na configuração, trechos de código e dicas de desempenho
-  para proteger seus diagramas.
-og_image_alt: Guide showing how to watermark diagram pages in Java with GroupDocs.Watermark
-og_title: Como aplicar marca d'água em páginas de diagramas java usando GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-16'
-  description: Learn how to watermark diagram pages java with GroupDocs.Watermark.
-    This step‑by‑step guide covers setup, implementation, and best practices for secure
-    diagram handling.
-  headline: How to watermark diagram pages java using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to watermark diagram pages java with GroupDocs.Watermark.
-    This step‑by‑step guide covers setup, implementation, and best practices for secure
-    diagram handling.
-  name: How to watermark diagram pages java using GroupDocs.Watermark
-  steps:
-  - name: load your diagram
-    text: The `DiagramLoadOptions` class configures how a diagram file is read into
-      memory. Provide the source file path and any format‑specific options you need.
-  - name: initialize the text watermark
-    text: '`TextWatermark` represents a text overlay that can be applied to documents.
-      Create a `TextWatermark` instance with the desired text, font, color, and rotation.
-      This object defines the visual appearance of the overlay.'
-  - name: add the watermark to the diagram
-    text: The `Watermarker` class orchestrates the watermarking operation. Use the
-      `add` method to apply the `TextWatermark` to all background pages of the diagram.
-  - name: save and close
-    text: '`save` writes the modified document to the specified output path. `close`
-      releases the underlying file resources. Call `save` on the `Watermarker` instance
-      to write the watermarked diagram to disk, then release resources with `close`.
-      This ensures the file handle is released promptly.'
-  type: HowTo
-- questions:
-  - answer: Yes, the library fully supports SVG, VSDX, and other vector diagram formats,
-      preserving scalability after watermarking.
-    question: Can GroupDocs.Watermark handle vector formats like SVG?
-  - answer: Absolutely. Use the `add` method overload that accepts a page range or
-      a `PageCollection` to target specific pages.
-    question: Is it possible to watermark only selected pages?
-  - answer: The `remove` API scans for matching watermark signatures and deletes them,
-      allowing you to restore the original diagram without re‑uploading.
-    question: How do I remove a watermark that was previously added?
-  - answer: When you save the watermarked diagram as PDF, the overlay is baked into
-      the PDF pages, making it permanent across viewers.
-    question: Does the watermark survive PDF conversion?
-  - answer: Each watermark is rendered in the order added; you can stack text and
-      image watermarks for layered branding.
-    question: What happens if I apply multiple watermarks?
-  type: FAQPage
-tags:
-- watermark diagram
-- GroupDocs.Watermark
-- Java watermarking
-title: Como aplicar marca d'água em páginas de diagramas java usando GroupDocs.Watermark
+- text watermarks in Java
+- add text watermark to diagram
+- GroupDocs Watermark for Java setup
+title: Como adicionar marca d'água de texto a diagramas usando o GroupDocs.Watermark
+  para Java
 type: docs
 url: /pt/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Como aplicar marca d'água em páginas de diagramas Java usando GroupDocs.Watermark
+# Como adicionar marca d'água de texto a diagramas usando GroupDocs.Watermark para Java
 
-Proteger os ativos visuais em seus projetos de software é essencial, especialmente quando você compartilha diagramas com parceiros ou os incorpora na documentação. Neste tutorial, você aprenderá **como aplicar marca d'água em páginas de diagramas Java** usando a biblioteca GroupDocs.Watermark. Cobriremos tudo, desde a preparação do ambiente até o código exato necessário para inserir uma marca d'água de texto reutilizável em cada página de um arquivo de diagrama.
+Proteger seus diagramas contra reutilização não autorizada é uma prioridade para muitos desenvolvedores e designers. Neste tutorial você aprenderá **como adicionar marca d'água de texto** a arquivos de diagrama com a poderosa biblioteca **GroupDocs.Watermark para Java**. Vamos percorrer cada passo — da configuração do Maven à aplicação de configurações personalizadas de fonte da marca d'água — para que você possa proteger seus ativos visuais de forma rápida e confiável.
 
-## Respostas rápidas
-- **Qual biblioteca adiciona marcas d'água a diagramas em Java?** GroupDocs.Watermark for Java.  
-- **Quantas linhas de código são necessárias para uma marca d'água de texto básica?** Apenas cinco linhas após o diagrama ser carregado.  
-- **Preciso de uma licença paga para desenvolvimento?** Uma licença de avaliação gratuita funciona para testes; uma licença completa é necessária para produção.  
-- **Posso aplicar marca d'água em várias páginas de uma vez?** Sim – a API permite aplicar a mesma marca d'água a todas as páginas em uma única chamada.  
-- **O processo é eficiente em memória?** A biblioteca faz streaming das páginas, portanto, mesmo diagramas com centenas de páginas permanecem abaixo de 200 MB de RAM.
+## Respostas Rápidas
+- **O que a biblioteca faz?** Ela incorpora marcas d'água de texto (ou imagem) em mais de 100 formatos de documentos e diagramas.  
+- **Qual palavra‑chave principal devo focar?** *add text watermark* – usada ao longo deste guia.  
+- **Preciso de licença?** Uma licença de teste temporária funciona para desenvolvimento; uma licença completa é necessária para produção.  
+- **Posso personalizar a fonte?** Sim, você pode controlar família, tamanho, cor e rotação da fonte via configurações de fonte da marca d'água.  
+- **É compatível com Java‑8?** Absolutamente – a biblioteca suporta JDK 8 e versões posteriores.
 
-## O que é marca d'água em páginas de diagramas Java?
-A expressão *watermark diagram pages java* refere‑se à prática de incorporar uma sobreposição de texto semitransparente em cada página de um arquivo de diagrama (como Visio, SVG ou PDF) usando código Java. Essa técnica ajuda a identificar a propriedade, impedir o uso não autorizado e adicionar branding sem alterar o conteúdo original.
+## O que significa “add text watermark”?
+Adicionar uma marca d'água de texto significa sobrepor texto semitransparente em cada página ou forma de um documento, de modo que o conteúdo permaneça identificável. Essa técnica é amplamente usada para branding, proteção de direitos autorais e edição colaborativa.
+
+## Por que usar GroupDocs.Watermark para Java?
+- **Amplo suporte a formatos** – funciona com Visio, SVG, PDF, Word e muitos outros.  
+- **Controle granular** – você pode definir fonte, cor, rotação, opacidade e posicionamento.  
+- **API simples** – poucas linhas de código resolvem o problema, economizando tempo de desenvolvimento.  
+- **Desempenho otimizado** – lida com arquivos grandes de forma eficiente quando os recursos são fechados rapidamente.
 
 ## Pré‑requisitos
-- Java Development Kit (JDK) 8 ou mais recente.  
+- JDK 8 ou superior instalado na sua máquina.  
 - Uma IDE como IntelliJ IDEA ou Eclipse.  
-- Maven para gerenciamento de dependências (ou a capacidade de adicionar JARs manualmente).  
-- Um arquivo de licença válido do GroupDocs.Watermark (uma avaliação temporária funciona para testes).
+- Conhecimento básico de Java (classes, objetos e Maven).
 
-## Configurando o GroupDocs.Watermark para Java
-Adicione a coordenada Maven do GroupDocs.Watermark ao seu `pom.xml`. Essa única dependência traz todos os binários necessários.
-
-A entrada no `pom.xml` se parece com isto:
+### Bibliotecas e Dependências Necessárias
+Usaremos o Maven para obter a biblioteca GroupDocs.Watermark. Adicione o repositório e a dependência ao seu `pom.xml` exatamente como mostrado:
 
 ```xml
 <repositories>
@@ -112,35 +60,28 @@ A entrada no `pom.xml` se parece com isto:
 </dependencies>
 ```
 
-Se preferir instalação manual, faça o download dos JARs mais recentes na página oficial de lançamentos [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Se preferir download manual, visite a página oficial: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) e siga as instruções.
 
-### Aquisição de licença
-Obtenha uma licença de avaliação temporária no portal GroupDocs [GroupDocs.Trial Licensing](https://purchase.groupdocs.com/temporary-license/). Após receber o arquivo `.lic`, carregue‑o conforme mostrado abaixo.
-
-A classe `License` carrega seu arquivo de licença do GroupDocs.Watermark para desbloquear a funcionalidade completa.
+### Aquisição de Licença
+Comece com um teste gratuito obtendo uma licença temporária no portal de teste: [GroupDocs.Trial Licensing](https://purchase.groupdocs.com/temporary-license/). Carregue o arquivo de licença antes de qualquer operação de marca d'água:
 
 ```java
 License license = new License();
 license.setLicense("path/to/license/file");
 ```
 
-## Guia de implementação
-A seguir, um passo a passo que adiciona uma marca d'água de texto personalizada a cada página de um diagrama.
+## Guia de Implementação
 
-### Como adicionar uma marca d'água de texto a páginas de diagramas?
-Carregue o diagrama, crie um objeto `TextWatermark`, aplique‑o a todas as páginas e, finalmente, salve o resultado. O processo completo requer apenas quatro etapas lógicas.
-
-#### Etapa 1: carregue seu diagrama
-A classe `DiagramLoadOptions` configura como um arquivo de diagrama é lido na memória. Forneça o caminho do arquivo de origem e quaisquer opções específicas de formato que precisar.
+### Etapa 1: Carregar Seu Diagrama
+Primeiro, aponte o `Watermarker` para o arquivo de diagrama de origem. O objeto `DiagramLoadOptions` informa à biblioteca que o arquivo deve ser tratado como um formato de diagrama.
 
 ```java
 String inputFilePath = "YOUR_DOCUMENT_DIRECTORY/diagram.vsdx";
 Watermarker watermarker = new Watermarker(inputFilePath, new DiagramLoadOptions());
 ```
 
-#### Etapa 2: inicialize a marca d'água de texto
-`TextWatermark` representa uma sobreposição de texto que pode ser aplicada a documentos.  
-Crie uma instância de `TextWatermark` com o texto desejado, fonte, cor e rotação. Esse objeto define a aparência visual da sobreposição.
+### Etapa 2: Inicializar a Marca d'Água de Texto (com **configurações de fonte da marca d'água** personalizadas)
+Crie uma instância `TextWatermark`, especificando o texto, a família da fonte, o tamanho e quaisquer estilos adicionais que precisar.
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark", new Font("Arial", 36));
@@ -149,8 +90,10 @@ textWatermark.setBackground(false);
 textWatermark.setRotationAngle(-45);
 ```
 
-#### Etapa 3: adicione a marca d'água ao diagrama
-A classe `Watermarker` orquestra a operação de marca d'água. Use o método `add` para aplicar o `TextWatermark` a todas as páginas de fundo do diagrama.
+> **Dica profissional:** Ajuste `setColor` e `setRotationAngle` para atender às diretrizes da sua marca. A chamada `setBackground(false)` garante que a marca d'água fique sobre as formas do diagrama, e não atrás delas.
+
+### Etapa 3: Escolher Posicionamento – Fundo vs. Primeiro Plano
+O GroupDocs permite decidir se a marca d'água aparece atrás das formas do diagrama (fundo) ou sobre elas (primeiro plano). Para a maioria dos cenários de branding, o posicionamento em fundo funciona melhor.
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
@@ -158,9 +101,8 @@ options.setPlacement(DiagramWatermarkPlacementType.Background);
 watermarker.add(textWatermark, options);
 ```
 
-#### Etapa 4: salvar e fechar
-`save` grava o documento modificado no caminho de saída especificado. `close` libera os recursos subjacentes do arquivo.  
-Chame `save` na instância `Watermarker` para gravar o diagrama com marca d'água no disco, depois libere os recursos com `close`. Isso garante que o manipulador de arquivo seja liberado prontamente.
+### Etapa 4: Salvar o Diagrama com Marca d'Água
+Por fim, escreva o arquivo modificado no disco e libere os recursos.
 
 ```java
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/watermarked_diagram.vsdx";
@@ -168,53 +110,60 @@ watermarker.save(outputFilePath);
 watermarker.close();
 ```
 
-## Problemas comuns e solução de erros
-- **Erros de caminho de arquivo** – Verifique se o caminho usa barras (`/`) ou barras invertidas escapadas (`\\`) no Windows.  
-- **Versões incompatíveis da biblioteca** – GroupDocs.Watermark 23.10+ requer JDK 8+. Atualize ambos se você vir `NoClassDefFoundError`.  
-- **Licença ausente** – Se a marca d'água não aparecer, verifique o console para um aviso `License not loaded` e recarregue o arquivo `.lic`.  
+## Problemas Comuns e Soluções
+| Sintoma | Causa Provável | Solução |
+|---------|----------------|---------|
+| **Erro “File not found”** | `inputFilePath` incorreto ou permissões de leitura ausentes | Verifique o caminho e assegure que o processo Java possa ler o arquivo. |
+| **Marca d'água não visível** | Posicionamento definido como `Foreground` com cor transparente | Use posicionamento `Background` ou escolha uma cor contrastante. |
+| **Exceção de falta de memória** em diagramas grandes | Não fechar o `Watermarker` ou processar muitos arquivos em um loop | Chame `watermarker.close()` após cada arquivo e considere processar em lotes. |
+| **Licença não reconhecida** | Caminho do arquivo de licença errado ou teste expirado | Verifique o caminho e use um arquivo de licença atual. |
 
-## Aplicações práticas
-1. **Segurança de documentos** – Impedir que concorrentes reutilizem fluxogramas proprietários.  
-2. **Reforço de marca** – Exibir o nome da sua empresa em cada diagrama exportado.  
-3. **Rastreamento de colaboração** – Inserir as iniciais do usuário como marca d'água para identificar quem editou cada versão.  
+## Aplicações Práticas
+1. **Segurança de Documentos** – Impedir que concorrentes copiem fluxogramas proprietários.  
+2. **Branding** – Inserir nome corporativo ou logotipo em todas as páginas do diagrama.  
+3. **Rastreamento de Colaboração** – Adicionar as iniciais do usuário como marca d'água para indicar quem editou o diagrama.  
 
-## Considerações de desempenho
-- Transmita diagramas em vez de carregá‑los completamente na memória; a API faz isso automaticamente para arquivos grandes.  
-- Mantenha a opacidade da marca d'água entre 30‑50 % para manter a legibilidade enquanto ainda é visível.  
-- Teste com uma amostra representativa antes de processar em lote milhares de arquivos para avaliar o impacto na CPU e na memória.  
+## Considerações de Desempenho
+- Feche o `Watermarker` imediatamente após salvar para liberar recursos nativos.  
+- Mantenha o texto da marca d'água conciso; fontes muito grandes aumentam o tempo de processamento.  
+- Teste em uma amostra representativa antes de processar em lote milhares de arquivos.
 
-## Perguntas frequentes
+## Conclusão
+Agora você tem um método completo e pronto para produção de **add text watermark** em arquivos de diagrama usando **GroupDocs.Watermark para Java**. Essa abordagem protege sua propriedade intelectual enquanto lhe dá controle total sobre as configurações de fonte da marca d'água e seu posicionamento.
 
-**Q: O GroupDocs.Watermark pode lidar com formatos vetoriais como SVG?**  
-A: Sim, a biblioteca suporta totalmente SVG, VSDX e outros formatos de diagramas vetoriais, preservando a escalabilidade após a aplicação da marca d'água.
+### Próximos Passos
+- Explore marcas d'água de imagem para um toque visual de marca.  
+- Combine múltiplas marcas d'água (texto + imagem) para proteção em camadas.  
+- Automatize o processamento em lote com um simples `for` loop e as mesmas chamadas de API.
 
-**Q: É possível aplicar marca d'água apenas em páginas selecionadas?**  
-A: Absolutamente. Use a sobrecarga do método `add` que aceita um intervalo de páginas ou um `PageCollection` para direcionar páginas específicas.
+## Perguntas Frequentes
 
-**Q: Como remover uma marca d'água que foi adicionada anteriormente?**  
-A: A API `remove` procura assinaturas de marca d'água correspondentes e as exclui, permitindo restaurar o diagrama original sem precisar re‑carregar.
+**Q: O GroupDocs.Watermark funciona com as versões mais recentes do Java?**  
+A: Sim, é totalmente compatível com Java 8 até Java 21.  
 
-**Q: A marca d'água sobrevive à conversão para PDF?**  
-A: Quando você salva o diagrama com marca d'água como PDF, a sobreposição é incorporada nas páginas PDF, tornando‑a permanente em todos os visualizadores.
+**Q: Posso personalizar a opacidade da marca d'água de texto?**  
+A: Absolutamente. Use `textWatermark.setOpacity(0.5)` para definir 50 % de opacidade.  
 
-**Q: O que acontece se eu aplicar múltiplas marcas d'água?**  
-A: Cada marca d'água é renderizada na ordem em que foi adicionada; você pode empilhar marcas d'água de texto e imagem para branding em camadas.
+**Q: Existe uma forma de adicionar marcas d'água apenas a formas selecionadas do diagrama?**  
+A: Você pode filtrar formas via `DiagramShapeWatermarkOptions` fornecendo IDs ou nomes das formas.  
 
-## Recursos adicionais
-- [Documentação](https://docs.groupdocs.com/watermark/java/)
-- [Referência da API](https://reference.groupdocs.com/watermark/java)
-- [Baixar a versão mais recente](https://releases.groupdocs.com/watermark/java/)
-- [Repositório no GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Fórum de suporte gratuito](https://forum.groupdocs.com/c/watermark/10)
+**Q: Como lidar com arquivos de diagrama protegidos por senha?**  
+A: Carregue o arquivo com `DiagramLoadOptions` que incluam a senha, então aplique a marca d'água normalmente.  
+
+**Q: Há restrições de licenciamento para uso comercial?**  
+A: Uma licença comercial é necessária para implantações em produção; licenças de teste são apenas para avaliação.
+
+## Recursos
+- [Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download Latest Version](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
 
 ---
 
-**Última atualização:** 2026-10-16  
-**Testado com:** GroupDocs.Watermark 23.11 for Java  
+**Última atualização:** 2025-12-19  
+**Testado com:** GroupDocs.Watermark 24.11 para Java  
 **Autor:** GroupDocs  
 
-## Tutoriais relacionados
-
-- [Guia para adicionar marcas d'água a diagramas usando GroupDocs.Watermark para Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [Adicionar marcas d'água de texto em Java usando GroupDocs.Watermark: um guia passo a passo](/watermark/java/text-watermarks/add-text-watermarks-java-groupdocs/)
-- [Como recuperar informações de documentos usando GroupDocs.Watermark para Java: um guia passo a passo](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
+---

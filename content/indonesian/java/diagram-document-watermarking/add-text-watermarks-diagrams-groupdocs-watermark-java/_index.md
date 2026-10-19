@@ -1,98 +1,46 @@
 ---
-date: '2026-10-16'
-description: Pelajari cara menambahkan watermark pada halaman diagram java dengan
-  GroupDocs.Watermark. Panduan langkah demi langkah ini mencakup penyiapan, implementasi,
-  dan praktik terbaik untuk penanganan diagram yang aman.
+date: '2025-12-19'
+description: Pelajari cara menambahkan watermark teks ke diagram dengan GroupDocs.Watermark
+  untuk Java. Panduan langkah demi langkah ini mencakup pengaturan, pengaturan font
+  watermark, dan contoh penggunaan praktis.
 keywords:
-- watermark diagram pages java
-- GroupDocs.Watermark Java
-- add text watermark diagram
-lastmod: '2026-10-16'
-og_description: Pelajari cara menambahkan watermark pada halaman diagram java dengan
-  GroupDocs.Watermark. Panduan ini memandu Anda melalui penyiapan, contoh kode, dan
-  tips kinerja untuk melindungi diagram Anda.
-og_image_alt: Guide showing how to watermark diagram pages in Java with GroupDocs.Watermark
-og_title: Cara menambahkan watermark pada halaman diagram java menggunakan GroupDocs.Watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-16'
-  description: Learn how to watermark diagram pages java with GroupDocs.Watermark.
-    This step‑by‑step guide covers setup, implementation, and best practices for secure
-    diagram handling.
-  headline: How to watermark diagram pages java using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to watermark diagram pages java with GroupDocs.Watermark.
-    This step‑by‑step guide covers setup, implementation, and best practices for secure
-    diagram handling.
-  name: How to watermark diagram pages java using GroupDocs.Watermark
-  steps:
-  - name: load your diagram
-    text: The `DiagramLoadOptions` class configures how a diagram file is read into
-      memory. Provide the source file path and any format‑specific options you need.
-  - name: initialize the text watermark
-    text: '`TextWatermark` represents a text overlay that can be applied to documents.
-      Create a `TextWatermark` instance with the desired text, font, color, and rotation.
-      This object defines the visual appearance of the overlay.'
-  - name: add the watermark to the diagram
-    text: The `Watermarker` class orchestrates the watermarking operation. Use the
-      `add` method to apply the `TextWatermark` to all background pages of the diagram.
-  - name: save and close
-    text: '`save` writes the modified document to the specified output path. `close`
-      releases the underlying file resources. Call `save` on the `Watermarker` instance
-      to write the watermarked diagram to disk, then release resources with `close`.
-      This ensures the file handle is released promptly.'
-  type: HowTo
-- questions:
-  - answer: Yes, the library fully supports SVG, VSDX, and other vector diagram formats,
-      preserving scalability after watermarking.
-    question: Can GroupDocs.Watermark handle vector formats like SVG?
-  - answer: Absolutely. Use the `add` method overload that accepts a page range or
-      a `PageCollection` to target specific pages.
-    question: Is it possible to watermark only selected pages?
-  - answer: The `remove` API scans for matching watermark signatures and deletes them,
-      allowing you to restore the original diagram without re‑uploading.
-    question: How do I remove a watermark that was previously added?
-  - answer: When you save the watermarked diagram as PDF, the overlay is baked into
-      the PDF pages, making it permanent across viewers.
-    question: Does the watermark survive PDF conversion?
-  - answer: Each watermark is rendered in the order added; you can stack text and
-      image watermarks for layered branding.
-    question: What happens if I apply multiple watermarks?
-  type: FAQPage
-tags:
-- watermark diagram
-- GroupDocs.Watermark
-- Java watermarking
-title: Cara menambahkan watermark pada halaman diagram java menggunakan GroupDocs.Watermark
+- text watermarks in Java
+- add text watermark to diagram
+- GroupDocs Watermark for Java setup
+title: Cara menambahkan watermark teks ke diagram menggunakan GroupDocs.Watermark
+  untuk Java
 type: docs
 url: /id/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Cara menambahkan watermark pada halaman diagram java menggunakan GroupDocs.Watermark
+# Cara menambahkan watermark teks ke diagram menggunakan GroupDocs.Watermark untuk Java
 
-Melindungi aset visual dalam proyek perangkat lunak Anda sangat penting, terutama ketika Anda berbagi diagram dengan mitra atau menyematkannya dalam dokumentasi. Dalam tutorial ini Anda akan belajar **cara menambahkan watermark pada halaman diagram java** menggunakan pustaka GroupDocs.Watermark. Kami akan membahas semuanya mulai dari persiapan lingkungan hingga kode tepat yang diperlukan untuk menyematkan watermark teks yang dapat digunakan kembali pada setiap halaman file diagram.
+Melindungi diagram Anda dari penggunaan tidak sah adalah prioritas utama bagi banyak pengembang dan desainer. Dalam tutorial ini Anda akan belajar **cara menambahkan watermark teks** ke file diagram dengan pustaka **GroupDocs.Watermark untuk Java** yang kuat. Kami akan membimbing Anda melalui setiap langkah—dari penyiapan Maven hingga menerapkan pengaturan font watermark khusus—sehingga Anda dapat mengamankan aset visual Anda dengan cepat dan andal.
 
 ## Jawaban Cepat
-- **Perpustakaan apa yang menambahkan watermark ke diagram di Java?** GroupDocs.Watermark for Java.  
-- **Berapa baris kode yang dibutuhkan untuk watermark teks dasar?** Hanya lima baris setelah diagram dimuat.  
-- **Apakah saya memerlukan lisensi berbayar untuk pengembangan?** Lisensi percobaan gratis cukup untuk pengujian; lisensi penuh diperlukan untuk produksi.  
-- **Bisakah saya menambahkan watermark ke beberapa halaman sekaligus?** Ya – API memungkinkan Anda menerapkan watermark yang sama ke semua halaman dalam satu panggilan.  
-- **Apakah prosesnya efisien memori?** Perpustakaan mem‑stream halaman, sehingga diagram dengan ratusan halaman tetap di bawah 200 MB RAM.
+- **Apa yang dilakukan pustaka ini?** Ia menyisipkan watermark teks (atau gambar) ke dalam lebih dari 100 format dokumen dan diagram.  
+- **Kata kunci utama apa yang harus saya targetkan?** *add text watermark* – digunakan sepanjang panduan ini.  
+- **Apakah saya memerlukan lisensi?** Lisensi percobaan sementara dapat digunakan untuk pengembangan; lisensi penuh diperlukan untuk produksi.  
+- **Bisakah saya menyesuaikan font?** Ya, Anda dapat mengontrol keluarga font, ukuran, warna, dan rotasi melalui pengaturan font watermark.  
+- **Apakah kompatibel dengan Java‑8?** Tentu – pustaka ini mendukung JDK 8 dan yang lebih baru.
 
-## Apa itu watermark diagram pages java?
-Frasa *watermark diagram pages java* mengacu pada praktik menyematkan lapisan teks semi‑transparan pada setiap halaman file diagram (seperti Visio, SVG, atau PDF) menggunakan kode Java. Teknik ini membantu mengidentifikasi kepemilikan, mencegah penggunaan tidak sah, dan menambahkan branding tanpa mengubah konten asli.
+## Apa itu “add text watermark”?
+Menambahkan watermark teks berarti menumpangkan teks semi‑transparan pada setiap halaman atau bentuk dokumen sehingga kontennya tetap dapat diidentifikasi. Teknik ini banyak digunakan untuk branding, perlindungan hak cipta, dan penyuntingan kolaboratif.
+
+## Mengapa menggunakan GroupDocs.Watermark untuk Java?
+- **Dukungan format luas** – bekerja dengan Visio, SVG, PDF, Word, dan banyak lagi.  
+- **Kontrol detail** – Anda dapat mengatur font, warna, rotasi, opasitas, dan penempatan.  
+- **API sederhana** – beberapa baris kode sudah cukup, menghemat waktu pengembangan.  
+- **Dioptimalkan untuk kinerja** – menangani file besar secara efisien ketika Anda menutup sumber daya dengan cepat.
 
 ## Prasyarat
-- Java Development Kit (JDK) 8 atau yang lebih baru.  
+- JDK 8 atau lebih tinggi terpasang di mesin Anda.  
 - Sebuah IDE seperti IntelliJ IDEA atau Eclipse.  
-- Maven untuk manajemen dependensi (atau kemampuan menambahkan JAR secara manual).  
-- File lisensi GroupDocs.Watermark yang valid (lisensi percobaan sementara dapat digunakan untuk pengujian).
+- Pengetahuan dasar Java (kelas, objek, dan Maven).
 
-## Menyiapkan GroupDocs.Watermark untuk Java
-Tambahkan koordinat Maven untuk GroupDocs.Watermark ke `pom.xml` Anda. Dependensi tunggal ini akan mengunduh semua binary yang diperlukan.
-
-Entri `pom.xml` terlihat seperti ini:
+### Perpustakaan dan Dependensi yang Diperlukan
+Kami akan menggunakan Maven untuk menarik pustaka GroupDocs.Watermark. Tambahkan repositori dan dependensi ke `pom.xml` Anda persis seperti yang ditunjukkan:
 
 ```xml
 <repositories>
@@ -112,12 +60,10 @@ Entri `pom.xml` terlihat seperti ini:
 </dependencies>
 ```
 
-Jika Anda lebih suka instalasi manual, unduh JAR terbaru dari halaman rilis resmi [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+Jika Anda lebih suka mengunduh secara manual, kunjungi halaman resmi: [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) dan ikuti petunjuknya.
 
 ### Akuisisi Lisensi
-Dapatkan lisensi percobaan sementara dari portal GroupDocs [GroupDocs.Trial Licensing](https://purchase.groupdocs.com/temporary-license/). Setelah Anda menerima file `.lic`, muatlah seperti yang ditunjukkan di bawah.
-
-Kelas `License` memuat file lisensi GroupDocs.Watermark Anda untuk membuka semua fungsionalitas.
+Mulailah dengan percobaan gratis dengan memperoleh lisensi sementara dari portal percobaan: [GroupDocs.Trial Licensing](https://purchase.groupdocs.com/temporary-license/). Muat file lisensi sebelum operasi watermark apa pun:
 
 ```java
 License license = new License();
@@ -125,22 +71,17 @@ license.setLicense("path/to/license/file");
 ```
 
 ## Panduan Implementasi
-Berikut adalah panduan langkah demi langkah yang menambahkan watermark teks khusus ke setiap halaman diagram.
 
-### Cara menambahkan watermark teks ke halaman diagram?
-Muat diagram, buat objek `TextWatermark`, terapkan ke semua halaman, dan akhirnya simpan hasilnya. Seluruh proses hanya memerlukan empat langkah logis.
-
-#### Langkah 1: muat diagram Anda
-Kelas `DiagramLoadOptions` mengonfigurasi cara file diagram dibaca ke memori. Berikan jalur file sumber dan opsi spesifik format yang Anda perlukan.
+### Langkah 1: Muat Diagram Anda
+Pertama, arahkan `Watermarker` ke file diagram sumber Anda. Objek `DiagramLoadOptions` memberi tahu pustaka untuk memperlakukan file sebagai format diagram.
 
 ```java
 String inputFilePath = "YOUR_DOCUMENT_DIRECTORY/diagram.vsdx";
 Watermarker watermarker = new Watermarker(inputFilePath, new DiagramLoadOptions());
 ```
 
-#### Langkah 2: inisialisasi watermark teks
-`TextWatermark` mewakili lapisan teks yang dapat diterapkan pada dokumen.  
-Buat instance `TextWatermark` dengan teks, font, warna, dan rotasi yang diinginkan. Objek ini menentukan tampilan visual lapisan tersebut.
+### Langkah 2: Inisialisasi Watermark Teks (dengan **pengaturan font watermark** khusus)
+Buat instance `TextWatermark`, menentukan teks, keluarga font, ukuran, dan styling tambahan yang Anda perlukan.
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark", new Font("Arial", 36));
@@ -149,8 +90,10 @@ textWatermark.setBackground(false);
 textWatermark.setRotationAngle(-45);
 ```
 
-#### Langkah 3: tambahkan watermark ke diagram
-Kelas `Watermarker` mengatur operasi watermarking. Gunakan metode `add` untuk menerapkan `TextWatermark` ke semua halaman latar belakang diagram.
+> **Tips pro:** Sesuaikan `setColor` dan `setRotationAngle` agar sesuai dengan pedoman branding Anda. Pemanggilan `setBackground(false)` memastikan watermark berada di atas bentuk diagram, bukan di belakangnya.
+
+### Langkah 3: Pilih Penempatan – Latar Belakang vs. Depan
+GroupDocs memungkinkan Anda memutuskan apakah watermark muncul di belakang bentuk diagram (latar belakang) atau di atas (depan). Untuk kebanyakan skenario branding, penempatan latar belakang bekerja paling baik.
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
@@ -158,9 +101,8 @@ options.setPlacement(DiagramWatermarkPlacementType.Background);
 watermarker.add(textWatermark, options);
 ```
 
-#### Langkah 4: simpan dan tutup
-`save` menulis dokumen yang telah dimodifikasi ke jalur output yang ditentukan. `close` melepaskan sumber daya file yang mendasarinya.  
-Panggil `save` pada instance `Watermarker` untuk menulis diagram ber‑watermark ke disk, kemudian lepaskan sumber daya dengan `close`. Ini memastikan handle file dilepaskan dengan cepat.
+### Langkah 4: Simpan Diagram yang Diberi Watermark
+Akhirnya, tulis file yang telah dimodifikasi ke disk dan lepaskan sumber daya.
 
 ```java
 String outputFilePath = "YOUR_OUTPUT_DIRECTORY/watermarked_diagram.vsdx";
@@ -168,39 +110,50 @@ watermarker.save(outputFilePath);
 watermarker.close();
 ```
 
-## Masalah Umum dan Pemecahan Masalah
-- **Kesalahan jalur file** – Pastikan jalur menggunakan garis miring maju (`/`) atau backslash yang di‑escape (`\\`) pada Windows.  
-- **Versi perpustakaan tidak kompatibel** – GroupDocs.Watermark 23.10+ memerlukan JDK 8+. Tingkatkan keduanya jika Anda melihat `NoClassDefFoundError`.  
-- **Lisensi hilang** – Jika watermark tidak muncul, periksa konsol untuk peringatan `License not loaded` dan muat ulang file `.lic`.  
+## Masalah Umum dan Solusinya
+| Gejala | Penyebab Kemungkinan | Solusi |
+|---------|----------------------|--------|
+| **File tidak ditemukan** error | `inputFilePath` yang salah atau izin baca yang hilang | Verifikasi jalur dan pastikan proses Java dapat membaca file tersebut. |
+| **Watermark tidak terlihat** | Penempatan diatur ke `Foreground` dengan warna transparan | Gunakan penempatan `Background` atau pilih warna yang kontras. |
+| **Exception out‑of‑memory** pada diagram besar | Tidak menutup `Watermarker` atau memproses banyak file dalam loop | Panggil `watermarker.close()` setelah setiap file dan pertimbangkan pemrosesan dalam batch. |
+| **Lisensi tidak dikenali** | Jalur file lisensi salah atau percobaan kedaluwarsa | Periksa kembali jalur dan gunakan file lisensi yang masih berlaku. |
 
 ## Aplikasi Praktis
-1. **Keamanan dokumen** – Mencegah kompetitor menggunakan kembali flowchart milik perusahaan.  
-2. **Penguatan merek** – Tampilkan nama perusahaan Anda pada setiap diagram yang diekspor.  
-3. **Pelacakan kolaborasi** – Sisipkan inisial pengguna sebagai watermark untuk mengidentifikasi siapa yang mengedit setiap versi.  
+1. **Keamanan Dokumen** – Mencegah kompetitor mencuri flowchart proprietary.  
+2. **Branding** – Menyisipkan nama perusahaan atau logo di semua halaman diagram.  
+3. **Pelacakan Kolaborasi** – Menambahkan inisial pengguna sebagai watermark untuk menunjukkan siapa yang mengedit diagram.  
 
 ## Pertimbangan Kinerja
-- Stream diagram alih-alih memuatnya sepenuhnya ke memori; API melakukan ini secara otomatis untuk file besar.  
-- Jaga opacity watermark antara 30‑50 % untuk mempertahankan keterbacaan sambil tetap terlihat.  
-- Uji dengan sampel representatif sebelum memproses ribuan file secara batch untuk mengukur dampak CPU dan memori.  
+- Tutup `Watermarker` segera setelah menyimpan untuk membebaskan sumber daya native.  
+- Jaga teks watermark tetap singkat; font yang terlalu besar meningkatkan waktu pemrosesan.  
+- Uji pada sampel representatif sebelum memproses ribuan file secara batch.  
+
+## Kesimpulan
+Anda kini memiliki metode lengkap yang siap produksi untuk **menambahkan watermark teks** ke file diagram menggunakan **GroupDocs.Watermark untuk Java**. Pendekatan ini melindungi kekayaan intelektual Anda sambil memberi Anda kontrol penuh atas pengaturan font watermark dan penempatan.
+
+### Langkah Selanjutnya
+- Jelajahi watermark gambar untuk sentuhan visual merek.  
+- Gabungkan beberapa watermark (teks + gambar) untuk perlindungan berlapis.  
+- Otomatiskan pemrosesan batch dengan loop `for` sederhana dan panggilan API yang sama.  
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q: Apakah GroupDocs.Watermark dapat menangani format vektor seperti SVG?**  
-A: Ya, perpustakaan sepenuhnya mendukung SVG, VSDX, dan format diagram vektor lainnya, mempertahankan skalabilitas setelah watermarking.
+**Q: Apakah GroupDocs.Watermark bekerja dengan versi Java terbaru?**  
+A: Ya, sepenuhnya kompatibel dengan Java 8 hingga Java 21.  
 
-**Q: Apakah memungkinkan untuk menambahkan watermark hanya pada halaman tertentu?**  
-A: Tentu saja. Gunakan overload metode `add` yang menerima rentang halaman atau `PageCollection` untuk menargetkan halaman spesifik.
+**Q: Bisakah saya menyesuaikan opasitas watermark teks?**  
+A: Tentu. Gunakan `textWatermark.setOpacity(0.5)` untuk mengatur opasitas 50 %.  
 
-**Q: Bagaimana cara menghapus watermark yang sebelumnya ditambahkan?**  
-A: API `remove` memindai tanda watermark yang cocok dan menghapusnya, memungkinkan Anda mengembalikan diagram asli tanpa mengunggah ulang.
+**Q: Apakah ada cara menambahkan watermark hanya pada bentuk diagram tertentu?**  
+A: Anda dapat memfilter bentuk melalui `DiagramShapeWatermarkOptions` dengan memberikan ID atau nama bentuk.  
 
-**Q: Apakah watermark tetap ada setelah konversi ke PDF?**  
-A: Saat Anda menyimpan diagram ber‑watermark sebagai PDF, lapisan tersebut tertanam ke halaman PDF, menjadikannya permanen di semua penampil.
+**Q: Bagaimana cara menangani file diagram yang dilindungi password?**  
+A: Muat file dengan `DiagramLoadOptions` yang mencakup password, lalu terapkan watermark seperti biasa.  
 
-**Q: Apa yang terjadi jika saya menerapkan beberapa watermark?**  
-A: Setiap watermark dirender sesuai urutan penambahan; Anda dapat menumpuk watermark teks dan gambar untuk branding berlapis.
+**Q: Apakah ada pembatasan lisensi untuk penggunaan komersial?**  
+A: Lisensi komersial diperlukan untuk penerapan produksi; lisensi percobaan hanya untuk evaluasi.  
 
-## Sumber Daya Tambahan
+## Sumber Daya
 - [Dokumentasi](https://docs.groupdocs.com/watermark/java/)
 - [Referensi API](https://reference.groupdocs.com/watermark/java)
 - [Unduh Versi Terbaru](https://releases.groupdocs.com/watermark/java/)
@@ -209,14 +162,8 @@ A: Setiap watermark dirender sesuai urutan penambahan; Anda dapat menumpuk water
 
 ---
 
-**Terakhir Diperbarui:** 2026-10-16  
-**Diuji Dengan:** GroupDocs.Watermark 23.11 for Java  
+**Terakhir Diperbarui:** 2025-12-19  
+**Diuji Dengan:** GroupDocs.Watermark 24.11 untuk Java  
 **Penulis:** GroupDocs  
 
 ---
-
-## Tutorial Terkait
-
-- [Panduan Menambahkan Watermark ke Diagram Menggunakan GroupDocs.Watermark untuk Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [Menambahkan Watermark Teks di Java Menggunakan GroupDocs.Watermark: Panduan Langkah demi Langkah](/watermark/java/text-watermarks/add-text-watermarks-java-groupdocs/)
-- [Cara Mengambil Informasi Dokumen Menggunakan GroupDocs.Watermark untuk Java: Panduan Langkah demi Langkah](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
