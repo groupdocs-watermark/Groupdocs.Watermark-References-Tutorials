@@ -64,10 +64,7 @@ tags:
 - watermark diagram
 - GroupDocs.Watermark
 - Java watermarking
-title: How to watermark diagram pages java using GroupDocs.Watermark
 type: docs
-url: /java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/
-weight: 1
 ---
 
 # How to add text watermark to diagrams using GroupDocs.Watermark for Java
