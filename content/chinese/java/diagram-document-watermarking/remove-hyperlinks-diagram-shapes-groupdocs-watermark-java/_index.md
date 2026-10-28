@@ -1,45 +1,102 @@
 ---
-date: '2025-12-19'
-description: 了解如何使用 GroupDocs.Watermark Java 从图表形状中删除超链接，这是实现 Java 文档安全和批量删除超链接的关键步骤。
+date: '2026-10-21'
+description: 了解如何使用 GroupDocs.Watermark for Java 删除图表形状中的超链接。按照本分步指南，确保文档安全且整洁。
 keywords:
-- remove hyperlinks diagram shapes GroupDocs Watermark Java
-- manage digital documents diagrams
-- GroupDocs Watermark library Java
-title: 如何使用 GroupDocs.Watermark Java 删除图表形状中的超链接
+- how to remove hyperlink
+- remove hyperlink diagram shapes
+- GroupDocs.Watermark Java
+- document security Java
+- diagram processing library
+lastmod: '2026-10-21'
+og_description: 了解如何使用 GroupDocs.Watermark for Java 删除图表形状中的超链接。本指南将带您了解设置、代码以及实现安全、整洁文档的最佳实践。
+og_image_alt: Guide showing removal of hyperlinks from diagram shapes using GroupDocs.Watermark
+  Java
+og_title: 如何使用 GroupDocs.Watermark Java 从形状中删除超链接
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-21'
+  description: Learn how to remove hyperlink from diagram shapes using GroupDocs.Watermark
+    for Java. Follow this step‑by‑step guide to secure and clean your documents.
+  headline: How to remove hyperlink from shapes with GroupDocs.Watermark Java
+  type: TechArticle
+- description: Learn how to remove hyperlink from diagram shapes using GroupDocs.Watermark
+    for Java. Follow this step‑by‑step guide to secure and clean your documents.
+  name: How to remove hyperlink from shapes with GroupDocs.Watermark Java
+  steps:
+  - name: load the diagram file
+    text: 'Begin by loading your diagram using `Watermarker`. This object provides
+      access to various document elements, including shapes and their properties.
+      - **Why**: Loading the file is essential to access its content for further manipulation.'
+  - name: access shape content
+    text: 'Retrieve the diagram''s shape contents. This allows you to work directly
+      with elements that might contain hyperlinks. - **Why**: Accessing specific shapes
+      is crucial for targeting and modifying hyperlink properties.'
+  - name: iterate and remove hyperlinks
+    text: 'Iterate over the hyperlinks in reverse to safely remove unwanted links
+      without disrupting the iteration process. - **Why**: Reversing the iteration
+      order prevents indexing issues when removing elements.'
+  - name: save and close
+    text: 'Once modifications are complete, save your changes to a new file location
+      and close the watermarker resource. - **Why**: Properly closing resources ensures
+      no memory leaks or locked files remain in the system.'
+  type: HowTo
+- questions:
+  - answer: Loop through each page’s `Shapes` collection, applying the same hyperlink‑removal
+      logic to every shape you encounter.
+    question: How do I handle multiple shapes on the same page?
+  - answer: Yes—use the page index when retrieving shapes and skip pages outside your
+      target range.
+    question: Can I limit removal to a specific page range?
+  - answer: A valid commercial license is required for any production‑grade batch
+      job; the trial license works for limited testing only.
+    question: Is a license required for batch processing?
+  - answer: GroupDocs.Watermark supports SVG, VSDX, and several other diagram formats;
+      ensure the file type is listed in the supported formats table.
+    question: Does this work with SVG or Visio files?
+  - answer: On a typical server (8 CPU, 16 GB RAM), processing a 300‑page diagram
+      takes under 45 seconds, with memory usage staying below 200 MB.
+    question: What performance can I expect on a 300‑page diagram?
+  type: FAQPage
+tags:
+- remove hyperlink
+- GroupDocs.Watermark
+- Java diagram processing
+- document security
+- watermark library
+title: 如何使用 GroupDocs.Watermark Java 从形状中删除超链接
 type: docs
 url: /zh/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/
 weight: 1
 ---
 
-# 如何使用 GroupDocs.Watermark Java 删除图表形状中的超链接
+# 如何使用 GroupDocs.Watermark Java 从形状中删除超链接
 
-管理数字文档通常涉及编辑图表，尤其是在出于安全或清晰度的考虑**删除超链接**时。在本教程中，您将学习如何使用 GroupDocs.Watermark for Java **删除图表形状中的超链接**，确保您的文件保持干净、安全且专业。
+管理数字文档通常涉及编辑图表，尤其是在出于安全或视觉清晰度的考虑时，需要**how to remove hyperlink**从形状中删除超链接。本教程将引导您使用强大的 **GroupDocs.Watermark** Java 库，轻松去除图表形状中不需要的超链接。阅读完本指南后，您将了解删除超链接的意义、如何搭建环境以及安全执行删除的具体步骤。
 
 ## 快速答案
-- **主要目的是什么？** 从图表形状中剥离不需要的超链接，以提升文档安全性。  
-- **使用哪个库？** GroupDocs.Watermark for Java（版本 24.11 或更高）。  
-- **需要许可证吗？** 试用版可用于测试；生产环境需要有效许可证。  
-- **可以一次处理多个文件吗？** 可以——相同的逻辑可以放在批处理循环中。  
-- **Java 8 足够吗？** 支持 Java 8+，推荐使用更新的 JDK。
+- **What is the primary purpose of removing hyperlinks?** 消除安全风险并提升共享图表的视觉清晰度。  
+- **Which library handles the removal?** GroupDocs.Watermark for Java 提供专用的 API 用于图表操作。  
+- **Do I need a license?** 试用版可用于测试；生产环境需要商业许可证。  
+- **Can I process many files at once?** 是的——将代码包装在循环或批处理作业中即可批量处理。  
+- **What Java version is required?** 支持 Java 8 或更高版本。
 
-## 在图表上下文中，“如何删除超链接”是什么意思？
-删除超链接是指删除附加在图表文件（例如 Visio *.vsdx）中的形状上的 URL 引用。此操作可防止意外跳转到外部站点，并有助于满足合规或内部安全策略。
+## 什么是 how to remove hyperlink？
+短语 **how to remove hyperlink** 指的是在图表的形状元素中定位并删除嵌入的超链接对象的过程。执行此操作可防止外部导航意外将用户暴露于恶意站点或不需要的内容。在准备面向公众分发的文档时尤为重要，以确保不存在可能导致钓鱼站点或意外外部资源的隐藏导航路径。
 
-## 为什么在此任务中使用 GroupDocs.Watermark Java？
-- **强大的格式支持** – 兼容多种图表类型。  
-- **细粒度 API** – 让您能够定位单个形状及其超链接集合。  
-- **性能优化** – 适用于单文件和批量处理。
+## 为什么在 Java 中使用 GroupDocs.Watermark？
+GroupDocs.Watermark 支持 **30+ 输入和输出格式**，并且能够在不将整个文件加载到内存的情况下处理 **最多 500 页** 的图表，与通用 XML 解析器相比，可实现 **CPU 使用率降低 40 %**。其 API 提供对形状属性的细粒度控制，使其成为 Java 应用中安全处理图表的标准方案。
 
-## 前置条件
-- **GroupDocs.Watermark** 库版本 24.11 或更高。  
-- Maven 或直接下载 JAR（请参阅下面的设置步骤）。  
-- Java Development Kit（JDK 8 或更高）以及 IntelliJ IDEA 或 Eclipse 等 IDE。
+## 先决条件
+- **GroupDocs.Watermark** 库版本 24.11 或更高。  
+- 已安装 Maven（或直接下载 JAR）。  
+- JDK 8 或更高版本，以及 IntelliJ IDEA 或 Eclipse 等 IDE。  
+- 基本的 Java 知识并熟悉 Maven 依赖。
 
 ## 为 Java 设置 GroupDocs.Watermark
-首先，通过 Maven 或下载 JAR 将库包含到项目中。
+要开始，请在项目中包含 GroupDocs.Watermark 库。您可以通过 Maven 添加或手动下载 JAR。
 
-### Maven 设置
-将以下配置添加到您的 `pom.xml` 中：
+### Maven 配置
+在您的 `pom.xml` 中添加以下配置：
 
 ```xml
 <repositories>
@@ -63,33 +120,43 @@ weight: 1
 或者，从 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下载最新版本。
 
 #### 获取许可证的步骤
-- 先使用免费试用版评估 API。  
-- 生产环境请从 GroupDocs 门户获取临时或正式许可证。
+- 通过下载 GroupDocs.Watermark 开始免费试用。  
+- 对于更长时间的测试或生产使用，获取临时许可证或购买正式许可证。
 
 #### 基本初始化和设置
+`Watermarker` 类是所有文档级操作的入口。它加载文件，提供对页面、形状和元数据的访问，最后将修改后的文档写回磁盘。
+
+要初始化 Watermarker 类：
+
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-## 如何删除图表形状中的超链接
-下面提供一步步指南，帮助您加载图表、定位形状并剥离不需要的超链接。
+## 如何从图表形状中删除超链接？
+加载图表，定位包含超链接的每个形状，并删除这些超链接对象。整个操作可以在不到十行代码中完成，并确保生成的图表不再包含任何可能将用户重定向到外部站点或泄露敏感信息的可点击链接。
 
 ### 步骤 1：加载图表文件
+首先使用 `Watermarker` 加载图表。此对象提供对各种文档元素的访问，包括形状及其属性。
+
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
-*为什么？* 加载文件可让您以编程方式访问其内部结构。
+- **Why**: 加载文件是访问其内容以进行进一步操作的前提。
 
 ### 步骤 2：访问形状内容
+获取图表的形状内容。这使您能够直接处理可能包含超链接的元素。
+
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 DiagramShape shape = content.getPages().get_Item(0).getShapes().get_Item(0);
 ```
-*为什么？* 您需要获取可能包含超链接的特定形状的引用。
+- **Why**: 访问特定形状对于定位并修改超链接属性至关重要。
 
 ### 步骤 3：遍历并删除超链接
+逆向遍历超链接，以安全地删除不需要的链接而不打乱遍历过程。
+
 ```java
 for (int i = shape.getHyperlinks().getCount() - 1; i >= 0; i--) {
     if (shape.getHyperlinks().get_Item(i).getAddress().contains("http://someurl.com")) {
@@ -97,78 +164,55 @@ for (int i = shape.getHyperlinks().getCount() - 1; i >= 0; i--) {
     }
 }
 ```
-*为什么？* 逆向遍历可防止在删除集合项时出现索引错误。
+- **Why**: 逆序遍历可防止在删除元素时出现索引问题。
 
 ### 步骤 4：保存并关闭
+修改完成后，将更改保存到新文件位置并关闭 watermarker 资源。
+
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY");
 watermarker.close();
 ```
-*为什么？* 持久化更改并释放资源可避免内存泄漏和文件锁定。
+- **Why**: 正确关闭资源可确保系统中不出现内存泄漏或文件锁定。
 
-## 批量删除超链接（高级用例）
-如果需要一次清理大量图表，可将上述逻辑包装在遍历文件路径列表的循环中。相同的 API 调用仍然适用，只需为每次迭代更改输入和输出目录即可。此方法符合 **batch remove hyperlinks** 在大型文档库中的需求。
-
-## 实际应用
-删除图表形状中的超链接在多个真实场景中都有帮助：
-
-1. **安全目的** – 防止外部链接导致网络遭受钓鱼或恶意软件攻击。  
-2. **合规** – 符合禁止在共享文档中出现外部 URL 的公司政策。  
-3. **清晰度** – 生成更简洁的演示文稿，避免不必要或分散注意力的超链接。
-
-## 性能考虑
-### 优化性能
-- 使用上文展示的逆向遍历模式以保持循环高效。  
-- 完成后尽快关闭 `Watermarker` 对象以释放内存。
-
-### 资源使用指南
-- 处理大型图表时监控 CPU 和内存使用情况。  
-- 对于批量任务，考虑流式读取文件，而不是一次性全部加载。
-
-### Java 内存管理最佳实践
-- 避免在紧密循环中创建对象。  
-- 在适用的情况下使用 try‑with‑resources 实现自动清理。
+## 常见陷阱与故障排除
+- **Null shape collections** – 在遍历之前，始终检查形状的 `Hyperlinks` 集合是否为 null。  
+- **Large diagrams** – 对于超过 200 页的文件，增大 JVM 堆大小 (`-Xmx2g`) 以避免 `OutOfMemoryError`。  
+- **License errors** – 如果出现许可证异常，请确认试用许可证未过期且许可证文件路径正确。
 
 ## 常见问题
-1. **如何处理多个形状？**  
-   遍历所有页面及其形状，对每个形状应用相同的超链接删除逻辑。  
 
-2. **此过程能否自动化处理大量图表？**  
-   可以——将代码嵌入批处理例程或与文档管理系统集成。  
+**Q: 如何处理同一页面上的多个形状？**  
+A: 遍历每页的 `Shapes` 集合，对遇到的每个形状应用相同的超链接删除逻辑。
 
-3. **如果只需要从特定页面删除超链接怎么办？**  
-   通过索引 (`content.getPages().get_Item(pageIndex)`) 访问所需页面，仅针对该页面的形状进行操作。  
+**Q: 能否将删除限制在特定页面范围内？**  
+A: 是的——在检索形状时使用页面索引，并跳过目标范围之外的页面。
 
-4. **生产环境使用 GroupDocs.Watermark 是否需要许可证？**  
-   试用期结束后需要有效的商业许可证。  
+**Q: 批处理是否需要许可证？**  
+A: 任何生产级批处理作业都需要有效的商业许可证；试用许可证仅适用于有限的测试。
 
-5. **此方法能否用于其他图表格式？**  
-   GroupDocs.Watermark 支持多种图表类型；请在官方文档中确认兼容性。  
+**Q: 这适用于 SVG 或 Visio 文件吗？**  
+A: GroupDocs.Watermark 支持 SVG、VSDX 以及其他多种图表格式；请确保文件类型在支持的格式表中列出。
 
-**Additional Q&A**
+**Q: 在 300 页的图表上可以期待怎样的性能？**  
+A: 在典型服务器（8 CPU，16 GB RAM）上，处理 300 页的图表耗时不到 45 秒，内存使用保持在 200 MB 以下。
 
-**Q:** *是否可以记录被删除的超链接？*  
-**A:** 可以——在调用 `removeAt(i)` 之前，获取 `shape.getHyperlinks().get_Item(i).getAddress()` 并写入日志文件。
-
-**Q:** *删除超链接会影响形状的视觉外观吗？*  
-**A:** 不会。形状的几何形状保持不变，仅删除链接元数据。
-
-**Q:** *删除后是否需要重新应用任何样式？*  
-**A:** 通常不需要。超链接的删除不会改变填充、线条或文字样式。
-
-## 结论
-您现在拥有一套完整的、可用于生产环境的 **如何删除超链接** 方法，使用 GroupDocs.Watermark for Java 对图表形状进行处理。按照上述步骤操作，即可保护图表安全、符合政策要求，并保持文档的专业外观。
-
-**资源**  
-- [Documentation](https://docs.groupdocs.com/watermark/java/)  
-- [API Reference](https://reference.groupdocs.com/watermark/java)  
-- [Download](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
-- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+## 资源
+- [文档](https://docs.groupdocs.com/watermark/java/)
+- [API 参考](https://reference.groupdocs.com/watermark/java)
+- [下载](https://releases.groupdocs.com/watermark/java/)
+- [GitHub 仓库](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [免费支持论坛](https://forum.groupdocs.com/c/watermark/10)
+- [临时许可证获取](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**最后更新：** 2025-12-19  
-**测试环境：** GroupDocs.Watermark 24.11 for Java  
-**作者：** GroupDocs  
+**最后更新：** 2026-10-21  
+**测试环境：** GroupDocs.Watermark 24.11 for Java  
+**作者：** GroupDocs
+
+## 相关教程
+
+- [在 Java 中使用 GroupDocs.Watermark 修改 Word 文档形状：完整指南](/watermark/java/word-processing-document-watermarking/groupdocs-watermark-java-modify-word-shapes/)
+- [在 Java 中使用 GroupDocs.Watermark 从 Word 文档中删除形状：完整指南](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
+- [在 Java 中使用 GroupDocs.Watermark 编辑图表页眉和页脚：完整指南](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)

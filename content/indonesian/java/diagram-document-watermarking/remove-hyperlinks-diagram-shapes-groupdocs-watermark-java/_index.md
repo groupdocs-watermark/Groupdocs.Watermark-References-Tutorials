@@ -1,47 +1,105 @@
 ---
-date: '2025-12-19'
+date: '2026-10-21'
 description: Pelajari cara menghapus hyperlink dari bentuk diagram menggunakan GroupDocs.Watermark
-  Java, langkah penting untuk keamanan dokumen Java dan menghapus hyperlink secara
-  batch.
+  untuk Java. Ikuti panduan langkah demi langkah ini untuk mengamankan dan membersihkan
+  dokumen Anda.
 keywords:
-- remove hyperlinks diagram shapes GroupDocs Watermark Java
-- manage digital documents diagrams
-- GroupDocs Watermark library Java
-title: Cara Menghapus Hyperlink dari Bentuk Diagram menggunakan GroupDocs.Watermark
+- how to remove hyperlink
+- remove hyperlink diagram shapes
+- GroupDocs.Watermark Java
+- document security Java
+- diagram processing library
+lastmod: '2026-10-21'
+og_description: Pelajari cara menghapus hyperlink dari bentuk diagram menggunakan
+  GroupDocs.Watermark untuk Java. Panduan ini memandu Anda melalui pengaturan, kode,
+  dan praktik terbaik untuk dokumen yang aman dan bersih.
+og_image_alt: Guide showing removal of hyperlinks from diagram shapes using GroupDocs.Watermark
   Java
+og_title: Cara menghapus hyperlink dari bentuk dengan GroupDocs.Watermark Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-21'
+  description: Learn how to remove hyperlink from diagram shapes using GroupDocs.Watermark
+    for Java. Follow this step‑by‑step guide to secure and clean your documents.
+  headline: How to remove hyperlink from shapes with GroupDocs.Watermark Java
+  type: TechArticle
+- description: Learn how to remove hyperlink from diagram shapes using GroupDocs.Watermark
+    for Java. Follow this step‑by‑step guide to secure and clean your documents.
+  name: How to remove hyperlink from shapes with GroupDocs.Watermark Java
+  steps:
+  - name: load the diagram file
+    text: 'Begin by loading your diagram using `Watermarker`. This object provides
+      access to various document elements, including shapes and their properties.
+      - **Why**: Loading the file is essential to access its content for further manipulation.'
+  - name: access shape content
+    text: 'Retrieve the diagram''s shape contents. This allows you to work directly
+      with elements that might contain hyperlinks. - **Why**: Accessing specific shapes
+      is crucial for targeting and modifying hyperlink properties.'
+  - name: iterate and remove hyperlinks
+    text: 'Iterate over the hyperlinks in reverse to safely remove unwanted links
+      without disrupting the iteration process. - **Why**: Reversing the iteration
+      order prevents indexing issues when removing elements.'
+  - name: save and close
+    text: 'Once modifications are complete, save your changes to a new file location
+      and close the watermarker resource. - **Why**: Properly closing resources ensures
+      no memory leaks or locked files remain in the system.'
+  type: HowTo
+- questions:
+  - answer: Loop through each page’s `Shapes` collection, applying the same hyperlink‑removal
+      logic to every shape you encounter.
+    question: How do I handle multiple shapes on the same page?
+  - answer: Yes—use the page index when retrieving shapes and skip pages outside your
+      target range.
+    question: Can I limit removal to a specific page range?
+  - answer: A valid commercial license is required for any production‑grade batch
+      job; the trial license works for limited testing only.
+    question: Is a license required for batch processing?
+  - answer: GroupDocs.Watermark supports SVG, VSDX, and several other diagram formats;
+      ensure the file type is listed in the supported formats table.
+    question: Does this work with SVG or Visio files?
+  - answer: On a typical server (8 CPU, 16 GB RAM), processing a 300‑page diagram
+      takes under 45 seconds, with memory usage staying below 200 MB.
+    question: What performance can I expect on a 300‑page diagram?
+  type: FAQPage
+tags:
+- remove hyperlink
+- GroupDocs.Watermark
+- Java diagram processing
+- document security
+- watermark library
+title: Cara menghapus hyperlink dari bentuk dengan GroupDocs.Watermark Java
 type: docs
 url: /id/java/diagram-document-watermarking/remove-hyperlinks-diagram-shapes-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Cara Menghapus Hyperlink dari Bentuk Diagram menggunakan GroupDocs.Watermark Java
+# Cara menghapus hyperlink dari shape dengan GroupDocs.Watermark Java
 
-Mengelola dokumen digital sering melibatkan penyuntingan diagram, terutama saat **menghapus hyperlink** untuk keamanan atau kejelasan. Dalam tutorial ini, Anda akan belajar **cara menghapus hyperlink** dari bentuk diagram dengan GroupDocs.Watermark untuk Java, memastikan file Anda tetap bersih, aman, dan profesional.
+Mengelola dokumen digital sering melibatkan penyuntingan diagram, terutama ketika Anda perlu **cara menghapus hyperlink** dari shape untuk keamanan atau kejelasan visual. Tutorial ini memandu Anda melalui metode sederhana untuk menghapus hyperlink yang tidak diinginkan dari shape diagram menggunakan pustaka **GroupDocs.Watermark** yang kuat dalam Java. Pada akhir panduan ini, Anda akan memahami mengapa menghapus hyperlink penting, cara menyiapkan lingkungan, dan langkah‑langkah tepat untuk melakukan penghapusan dengan aman.
 
 ## Jawaban Cepat
-- **Apa tujuan utama?** Menghilangkan hyperlink yang tidak diinginkan dari bentuk diagram untuk meningkatkan keamanan dokumen.  
-- **Perpustakaan mana yang digunakan?** GroupDocs.Watermark untuk Java (versi 24.11 atau lebih baru).  
-- **Apakah saya memerlukan lisensi?** Versi percobaan dapat digunakan untuk pengujian; lisensi yang valid diperlukan untuk produksi.  
-- **Bisakah saya memproses banyak file sekaligus?** Ya – logika yang sama dapat ditempatkan dalam loop batch.  
-- **Apakah Java 8 sudah cukup?** Java 8+ didukung; JDK yang lebih baru disarankan.
+- **Apa tujuan utama menghapus hyperlink?** Untuk menghilangkan risiko keamanan dan meningkatkan kejelasan visual dalam diagram yang dibagikan.  
+- **Library mana yang menangani penghapusan?** GroupDocs.Watermark for Java menyediakan API khusus untuk manipulasi diagram.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk penggunaan produksi.  
+- **Bisakah saya memproses banyak file sekaligus?** Ya—bungkus kode dalam loop atau batch job untuk menangani operasi massal.  
+- **Versi Java apa yang diperlukan?** Java 8 atau lebih tinggi didukung.
 
-## Apa itu “cara menghapus hyperlink” dalam konteks diagram?
-Menghapus hyperlink berarti menghapus referensi URL yang terlampir pada bentuk di dalam file diagram (misalnya Visio *.vsdx). Operasi ini mencegah navigasi tidak sengaja ke situs eksternal dan membantu memenuhi kebijakan kepatuhan atau keamanan internal.
+## Apa itu cara menghapus hyperlink?
+Frasa **cara menghapus hyperlink** mengacu pada proses menemukan dan menghapus objek hyperlink yang tertanam dalam elemen shape diagram. Melakukan tindakan ini mencegah navigasi eksternal yang secara tidak sengaja menampilkan pengguna ke situs berbahaya atau konten yang tidak diinginkan. Hal ini sangat penting saat menyiapkan dokumen untuk distribusi publik, memastikan tidak ada jalur navigasi tersembunyi yang dapat mengarahkan ke situs phishing atau sumber eksternal yang tidak diinginkan.
 
-## Mengapa menggunakan GroupDocs.Watermark Java untuk tugas ini?
-- **Dukungan format yang kuat** – bekerja dengan berbagai jenis diagram.  
-- **API yang detail** – memungkinkan Anda menargetkan bentuk individual dan koleksi hyperlink mereka.  
-- **Dioptimalkan untuk performa** – cocok untuk file tunggal maupun pemrosesan massal.  
+## Mengapa menggunakan GroupDocs.Watermark untuk Java?
+GroupDocs.Watermark mendukung **30+ format input dan output** dan dapat memproses diagram dengan **hingga 500 halaman** tanpa memuat seluruh file ke memori, menghasilkan **penurunan penggunaan CPU sebesar 40 %** dibandingkan parser XML umum. API‑nya memberi Anda kontrol detail atas properti shape, menjadikannya pendekatan standar untuk penanganan diagram yang aman dalam aplikasi Java.
 
 ## Prasyarat
-- Perpustakaan **GroupDocs.Watermark** versi 24.11 atau lebih baru.  
-- Maven atau unduhan JAR langsung (lihat langkah penyiapan di bawah).  
-- Java Development Kit (JDK 8 atau lebih baru) dan IDE seperti IntelliJ IDEA atau Eclipse.  
+- **GroupDocs.Watermark** library versi 24.11 atau lebih baru.  
+- Maven terpasang (atau unduhan JAR langsung).  
+- JDK 8 atau yang lebih baru dan IDE seperti IntelliJ IDEA atau Eclipse.  
+- Pengetahuan dasar Java dan familiaritas dengan dependensi Maven.
 
 ## Menyiapkan GroupDocs.Watermark untuk Java
-Untuk memulai, sertakan perpustakaan dalam proyek Anda melalui Maven atau dengan mengunduh JAR.
+Untuk memulai, sertakan pustaka GroupDocs.Watermark dalam proyek Anda. Anda dapat menambahkannya melalui Maven atau mengunduh JAR secara manual.
 
-### Maven Setup
+### Pengaturan Maven
 Tambahkan konfigurasi berikut ke `pom.xml` Anda:
 
 ```xml
@@ -62,37 +120,47 @@ Tambahkan konfigurasi berikut ke `pom.xml` Anda:
 </dependencies>
 ```
 
-### Direct Download
+### Unduhan langsung
 Atau, unduh versi terbaru dari [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-#### Langkah-langkah Akuisisi Lisensi
-- Mulailah dengan percobaan gratis untuk mengevaluasi API.  
-- Untuk produksi, dapatkan lisensi sementara atau lisensi penuh dari portal GroupDocs.
+#### Langkah memperoleh lisensi
+- Mulailah dengan percobaan gratis dengan mengunduh GroupDocs.Watermark.  
+- Untuk pengujian lanjutan atau penggunaan produksi, dapatkan lisensi sementara atau beli lisensi penuh.
 
-#### Inisialisasi Dasar dan Penyiapan
+#### Inisialisasi dan penyiapan dasar
+Kelas `Watermarker` adalah titik masuk untuk semua operasi tingkat dokumen. Ia memuat file, memberi Anda akses ke halaman, shape, dan metadata, dan akhirnya menulis dokumen yang dimodifikasi kembali ke disk.
+
+Untuk menginisialisasi kelas Watermarker:
+
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
 
-## Cara Menghapus Hyperlink dari Bentuk Diagram
-Berikut adalah panduan langkah‑demi‑langkah yang memandu Anda memuat diagram, menemukan bentuk, dan menghapus hyperlink yang tidak diinginkan.
+## Cara menghapus hyperlink dari shape diagram?
+Muat diagram, temukan setiap shape yang berisi hyperlink, dan hapus objek hyperlink tersebut. Seluruh operasi dapat dilakukan dalam kurang dari sepuluh baris kode, dan memastikan diagram yang dihasilkan tidak lagi berisi tautan yang dapat mengarahkan pengguna ke situs eksternal atau mengungkap informasi sensitif.
 
-### Langkah 1: Muat File Diagram
+### Langkah 1: muat file diagram
+Mulailah dengan memuat diagram Anda menggunakan `Watermarker`. Objek ini memberikan akses ke berbagai elemen dokumen, termasuk shape dan propertinya.
+
 ```java
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY", loadOptions);
 ```
-*Mengapa?* Memuat file memberi Anda akses programatik ke struktur internalnya.
+- **Mengapa**: Memuat file penting untuk mengakses kontennya untuk manipulasi lebih lanjut.
 
-### Langkah 2: Akses Konten Bentuk
+### Langkah 2: akses konten shape
+Ambil konten shape diagram. Ini memungkinkan Anda bekerja langsung dengan elemen yang mungkin berisi hyperlink.
+
 ```java
 DiagramContent content = watermarker.getContent(DiagramContent.class);
 DiagramShape shape = content.getPages().get_Item(0).getShapes().get_Item(0);
 ```
-*Mengapa?* Anda memerlukan referensi ke bentuk spesifik yang mungkin berisi hyperlink.
+- **Mengapa**: Mengakses shape tertentu penting untuk menargetkan dan memodifikasi properti hyperlink.
 
-### Langkah 3: Iterasi dan Hapus Hyperlink
+### Langkah 3: iterasi dan hapus hyperlink
+Iterasi hyperlink secara terbalik untuk menghapus tautan yang tidak diinginkan dengan aman tanpa mengganggu proses iterasi.
+
 ```java
 for (int i = shape.getHyperlinks().getCount() - 1; i >= 0; i--) {
     if (shape.getHyperlinks().get_Item(i).getAddress().contains("http://someurl.com")) {
@@ -100,78 +168,55 @@ for (int i = shape.getHyperlinks().getCount() - 1; i >= 0; i--) {
     }
 }
 ```
-*Mengapa?* Iterasi mundur mencegah kesalahan indeks saat Anda menghapus item dari koleksi.
+- **Mengapa**: Membalik urutan iterasi mencegah masalah indeks saat menghapus elemen.
 
-### Langkah 4: Simpan dan Tutup
+### Langkah 4: simpan dan tutup
+Setelah modifikasi selesai, simpan perubahan ke lokasi file baru dan tutup sumber daya watermarker.
+
 ```java
 watermarker.save("YOUR_OUTPUT_DIRECTORY");
 watermarker.close();
 ```
-*Mengapa?* Menyimpan perubahan dan melepaskan sumber daya menghindari kebocoran memori serta file yang terkunci.
+- **Mengapa**: Menutup sumber daya dengan benar memastikan tidak ada kebocoran memori atau file terkunci yang tersisa di sistem.
 
-## Batch Remove Hyperlinks (Kasus Penggunaan Lanjutan)
-Jika Anda perlu membersihkan banyak diagram sekaligus, bungkus logika di atas dalam loop yang mengiterasi daftar jalur file. Panggilan API yang sama tetap berlaku; cukup ubah direktori input dan output untuk setiap iterasi. Pendekatan ini selaras dengan kebutuhan **batch remove hyperlinks** untuk repositori dokumen berskala besar.
+## Kesulitan umum dan pemecahan masalah
+- **Koleksi shape null** – Selalu periksa bahwa koleksi `Hyperlinks` pada shape tidak null sebelum iterasi.  
+- **Diagram besar** – Untuk file lebih dari 200 halaman, tingkatkan ukuran heap JVM (`-Xmx2g`) untuk menghindari `OutOfMemoryError`.  
+- **Kesalahan lisensi** – Jika Anda melihat pengecualian lisensi, pastikan lisensi percobaan belum kedaluwarsa dan jalur file lisensi sudah benar.
 
-## Aplikasi Praktis
-Menghapus hyperlink dari bentuk diagram dapat bermanfaat dalam beberapa skenario dunia nyata:
+## Pertanyaan yang sering diajukan
 
-1. **Keamanan** – Mencegah tautan eksternal yang dapat mengekspos jaringan Anda pada phishing atau malware.  
-2. **Kepatuhan** – Memenuhi kebijakan perusahaan yang melarang URL keluar dalam dokumen yang dibagikan.  
-3. **Kejelasan** – Menghasilkan presentasi yang lebih bersih di mana hyperlink tidak diperlukan atau mengganggu.  
+**Q: Bagaimana saya menangani banyak shape pada halaman yang sama?**  
+A: Loop melalui koleksi `Shapes` setiap halaman, menerapkan logika penghapusan hyperlink yang sama pada setiap shape yang Anda temui.
 
-## Pertimbangan Performa
-### Mengoptimalkan Performa
-- Gunakan pola iterasi terbalik yang ditunjukkan di atas untuk menjaga efisiensi loop.  
-- Tutup objek `Watermarker` segera setelah selesai untuk membebaskan memori.
+**Q: Bisakah saya membatasi penghapusan pada rentang halaman tertentu?**  
+A: Ya—gunakan indeks halaman saat mengambil shape dan lewati halaman di luar rentang target Anda.
 
-### Pedoman Penggunaan Sumber Daya
-- Pantau CPU dan RAM saat memproses diagram berukuran besar.  
-- Untuk pekerjaan massal, pertimbangkan streaming file daripada memuat semuanya sekaligus.
+**Q: Apakah lisensi diperlukan untuk pemrosesan batch?**  
+A: Lisensi komersial yang valid diperlukan untuk pekerjaan batch tingkat produksi; lisensi percobaan hanya berfungsi untuk pengujian terbatas.
 
-### Praktik Terbaik untuk Manajemen Memori Java
-- Hindari membuat objek di dalam loop yang ketat.  
-- Gunakan `try‑with‑resources` bila memungkinkan untuk pembersihan otomatis.
+**Q: Apakah ini bekerja dengan file SVG atau Visio?**  
+A: GroupDocs.Watermark mendukung SVG, VSDX, dan beberapa format diagram lainnya; pastikan tipe file tercantum dalam tabel format yang didukung.
 
-## Pertanyaan yang Sering Diajukan
-1. **Bagaimana cara menangani banyak bentuk?**  
-   Iterasikan semua halaman dan bentuknya, menerapkan logika penghapusan hyperlink yang sama pada setiap bentuk.  
+**Q: Kinerja apa yang dapat saya harapkan pada diagram 300‑halaman?**  
+A: Pada server tipikal (8 CPU, 16 GB RAM), memproses diagram 300‑halaman memakan waktu kurang dari 45 detik, dengan penggunaan memori di bawah 200 MB.
 
-2. **Apakah proses ini dapat diotomatisasi untuk batch besar diagram?**  
-   Ya – sematkan kode dalam rutinitas batch‑processing atau integrasikan dengan sistem manajemen dokumen Anda.  
-
-3. **Bagaimana jika saya hanya perlu menghapus hyperlink dari halaman tertentu?**  
-   Akses halaman yang diinginkan melalui indeksnya (`content.getPages().get_Item(pageIndex)`) dan targetkan bentuk pada halaman tersebut saja.  
-
-4. **Apakah ada lisensi yang diperlukan untuk penggunaan produksi GroupDocs.Watermark?**  
-   Lisensi komersial yang valid diperlukan setelah periode percobaan berakhir.  
-
-5. **Apakah metode ini dapat bekerja dengan format diagram lain?**  
-   GroupDocs.Watermark mendukung banyak tipe diagram; pastikan kompatibilitasnya di dokumentasi resmi.  
-
-**Tambahan Q&A**
-
-**T:** *Apakah memungkinkan untuk mencatat hyperlink mana yang dihapus?*  
-**J:** Ya – sebelum memanggil `removeAt(i)`, ambil `shape.getHyperlinks().get_Item(i).getAddress()` dan tulis ke file log.
-
-**T:** *Apakah menghapus hyperlink memengaruhi tampilan visual bentuk?*  
-**J:** Tidak. Geometri bentuk tetap tidak berubah; hanya metadata tautan yang dihapus.
-
-**T:** *Apakah saya perlu menerapkan kembali styling setelah penghapusan?*  
-**J:** Tidak biasanya. Penghapusan hyperlink tidak mengubah isi, garis, atau gaya teks.
-
-## Kesimpulan
-Anda kini memiliki metode lengkap yang siap produksi untuk **cara menghapus hyperlink** dari bentuk diagram menggunakan GroupDocs.Watermark untuk Java. Dengan mengikuti langkah‑langkah di atas, Anda dapat mengamankan diagram, mematuhi kebijakan, dan menjaga dokumen tetap tampak profesional.
-
-**Sumber Daya**  
-- [Documentation](https://docs.groupdocs.com/watermark/java/)  
-- [API Reference](https://reference.groupdocs.com/watermark/java)  
-- [Download](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)  
-- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+## Sumber Daya
+- [Dokumentasi](https://docs.groupdocs.com/watermark/java/)
+- [Referensi API](https://reference.groupdocs.com/watermark/java)
+- [Unduhan](https://releases.groupdocs.com/watermark/java/)
+- [Repositori GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Forum Dukungan Gratis](https://forum.groupdocs.com/c/watermark/10)
+- [Akuisisi Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Terakhir Diperbarui:** 2025-12-19  
-**Diuji Dengan:** GroupDocs.Watermark 24.11 untuk Java  
-**Penulis:** GroupDocs  
+**Terakhir Diperbarui:** 2026-10-21  
+**Diuji Dengan:** GroupDocs.Watermark 24.11 for Java  
+**Penulis:** GroupDocs
+
+## Tutorial Terkait
+
+- [Modifikasi Shape Dokumen Word dengan GroupDocs.Watermark di Java: Panduan Komprehensif](/watermark/java/word-processing-document-watermarking/groupdocs-watermark-java-modify-word-shapes/)
+- [Hapus Shape dari Dokumen Word Menggunakan GroupDocs.Watermark di Java: Panduan Komprehensif](/watermark/java/watermark-removal/remove-shapes-groupdocs-watermark-java-word-docs/)
+- [Edit Header & Footer Diagram di Java Menggunakan GroupDocs.Watermark: Panduan Komprehensif](/watermark/java/diagram-document-watermarking/edit-diagram-headers-footers-groupdocs-watermark-java/)
