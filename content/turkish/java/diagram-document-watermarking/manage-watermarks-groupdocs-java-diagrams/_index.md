@@ -1,123 +1,47 @@
 ---
-date: '2026-10-27'
-description: GroupDocs.Watermark for Java kullanarak diyagram dosyalarından metin
-  filigranını nasıl sileceğinizi öğrenin ve image watermark'ı verimli bir şekilde
-  tespit edin. Geliştiriciler için adım adım kılavuz.
+date: '2025-12-19'
+description: GroupDocs Watermark Maven'i Java ile .vsdx gibi diyagram dosyalarındaki
+  filigranları yönetmek için nasıl kullanacağınızı öğrenin, belge bütünlüğünü artırın
+  ve fikri mülkiyeti koruyun.
 keywords:
-- delete text watermark
-- detect image watermark
 - GroupDocs.Watermark Java
-lastmod: '2026-10-27'
-og_description: GroupDocs.Watermark for Java ile diyagram dosyalarından metin filigranını
-  silin. image watermark'ı tespit etmeyi, aramayı ve code snippets ile filigranları
-  kaldırmayı öğrenin.
-og_image_alt: Diagram file with watermark management using GroupDocs.Watermark for
-  Java
-og_title: Java ile diyagram dosyalarında metin filigranını hızlıca silin
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-27'
-  description: Learn how to delete text watermark from diagram files using GroupDocs.Watermark
-    for Java and detect image watermark efficiently. Step‑by‑step guide for developers.
-  headline: How to delete text watermark in diagrams with Java
-  type: TechArticle
-- description: Learn how to delete text watermark from diagram files using GroupDocs.Watermark
-    for Java and detect image watermark efficiently. Step‑by‑step guide for developers.
-  name: How to delete text watermark in diagrams with Java
-  steps:
-  - name: '**Java Development Kit (JDK)** 8 or higher.'
-    text: '**Java Development Kit (JDK)** 8 or higher.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – the library JAR(s) must be on your classpath.'
-    text: '**GroupDocs.Watermark for Java** – the library JAR(s) must be on your classpath.'
-  - name: '**Install the library** – ensure the Maven repository and dependency entries
-      are present, or place the JAR files in `libs/` and add them to your project’s
-      build path.'
-    text: '**Install the library** – ensure the Maven repository and dependency entries
-      are present, or place the JAR files in `libs/` and add them to your project’s
-      build path.'
-  - name: '**Initialize the API** – create a `Watermarker` instance; this object is
-      the entry point for loading diagrams and performing watermark operations.'
-    text: '**Initialize the API** – create a `Watermarker` instance; this object is
-      the entry point for loading diagrams and performing watermark operations.'
-  - name: '**Enterprise software integration** – embed watermark management into document‑centric
-      business applications to protect proprietary diagrams.'
-    text: '**Enterprise software integration** – embed watermark management into document‑centric
-      business applications to protect proprietary diagrams.'
-  - name: '**Content Management Systems (CMS)** – automate detection of unauthorized
-      logos before publishing user‑generated diagrams.'
-    text: '**Content Management Systems (CMS)** – automate detection of unauthorized
-      logos before publishing user‑generated diagrams.'
-  - name: '**Legal document handling** – add or delete watermarks at different stages
-      of a case file workflow, ensuring compliance with confidentiality policies.'
-    text: '**Legal document handling** – add or delete watermarks at different stages
-      of a case file workflow, ensuring compliance with confidentiality policies.'
-  type: HowTo
-- questions:
-  - answer: Yes – combine `TextSearchCriteria` and `ImageDctHashSearchCriteria` with
-      the `or()` operator to locate both types in a single pass.
-    question: Can I search for both text and images simultaneously?
-  - answer: Absolutely. The API isolates watermark objects and removes them, leaving
-      the original diagram structure intact.
-    question: Is it possible to delete watermarks without damaging the diagram?
-  - answer: Yes – it supports over 20 formats, including `.vsdx`, `.vdx`, `.drawio`,
-      and `.svg`, enabling broad‑range diagram management.
-    question: Does GroupDocs.Watermark support multiple diagram formats?
-  - answer: Use batch processing loops, reuse a single `Watermarker` instance where
-      possible, and tune `LoadOptions` to stream pages instead of loading whole files.
-    question: How do I handle large volumes of documents efficiently?
-  - answer: Yes – the library is headless and can be called from Maven, Gradle, or
-      any build script to validate diagram assets automatically.
-    question: Can I integrate watermark detection into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark management
-- GroupDocs.Watermark
-- Java diagram processing
-title: Java ile diyagramlarda metin filigranını nasıl silinir
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark maven – Java ile Diyagram Filigranlarını Yönetin
 type: docs
 url: /tr/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
 weight: 1
 ---
 
-# Java ile diyagramlarda metin filigranını silme
+# groupdocs watermark maven – Diyagram Su İşaretlerini Java ile Yönet
 
-Belgelerdeki filigranları yönetmek, fikri mülkiyeti korumak ve belge bütünlüğünü sürdürmek için esastır. Bu öğreticide, GroupDocs.Watermark for Java kullanarak `.vsdx` gibi diyagram dosyalarından **metin filigranını silmeyi** ve gerektiğinde **görüntü filigranını tespit etmeyi** öğreneceksiniz. İster kurumsal düzeyde bir belge iş akışı oluşturuyor olun, ister basit bir toplu işi otomatikleştiriyor olun, bu teknikler diyagram filigranları üzerinde ayrıntılı kontrol sağlar.
+Belgelerde su işaretlerini yönetmek, fikri mülkiyeti korumak ve belge bütünlüğünü sürdürmek için esastır. **Bu öğreticide, `.vsdx` gibi diyagram dosyalarından su işaretlerini verimli bir şekilde yüklemek, aramak ve kaldırmak için groupdocs watermark maven nasıl kullanılır gösterilecektir**. İster kurumsal yazılım geliştirin ister belge iş akışlarını otomatikleştirin, bu tekniklerde uzmanlaşmak diyagram su işareti yönetimi üzerinde tam kontrol sağlar.
 
-**Öğrenecekleriniz**
-- GroupDocs.Watermark kütüphanesini kurma
-- Belirli seçeneklerle bir diyagram belgesi yükleme
-- Metin filigranlarını arama ve silme
-- Görüntü filigranlarını tespit etme ve kaldırma
-- Büyük ölçekli işleme için en iyi uygulama ipuçları
+## Hızlı Yanıtlar
+- **Hangi kütüphane gerekiyor?** GroupDocs.Watermark for Java (Maven üzerinden temin edilebilir).  
+- **Hangi diyagram formatları destekleniyor?** `.vsdx`, `.vdx` ve diğer Visio formatları.  
+- **Metin ve görsel su işaretlerini aynı anda arayabilir miyim?** Evet – arama kriterlerini `or()` ile birleştirin.  
+- **Üretim ortamında lisans gerekli mi?** Geçerli bir GroupDocs.Watermark lisansı gereklidir.  
+- **Bunu Maven'e nasıl entegre ederim?** Aşağıda gösterilen depo ve bağımlılığı ekleyin.
 
-Başlamaya hazır mısınız? Önce ortamınızı hazırlayalım.
+## groupdocs watermark maven nedir?
+`groupdocs watermark maven`, Java için GroupDocs.Watermark kütüphanesinin Maven tabanlı entegrasyonunu ifade eder. Kütüphaneyi `pom.xml` dosyanıza bildirerek, Maven gerekli tüm ikili dosyaları otomatik olarak çözer ve diyagramları yükleyen, su işaretlerini arayan ve programlı olarak kaldıran koda odaklanmanızı sağlar.
 
-## Hızlı cevaplar
-- **Metin ve görüntü filigranlarını aynı anda silebilir miyim?** Evet – `TextSearchCriteria` ve `ImageDctHashSearchCriteria`'yi bir `or()` koşulu ile birleştirin.  
-- **Kütüphane tüm diyagramı belleğe yüklüyor mu?** Hayır – sayfaları akış olarak okur, tam bellek tüketimi olmadan 500 MB'a kadar dosyalara izin verir.  
-- **Hangi diyagram formatları destekleniyor?** `.vsdx`, `.vdx` ve `.drawio` dahil olmak üzere 20'den fazla format.  
-- **Üretim için lisans gerekli mi?** Deneme dışı kullanım için geçerli bir GroupDocs.Watermark lisansı gerekir.  
-- **Bunu bir CI/CD boru hattında çalıştırabilir miyim?** Kesinlikle – API başsızdır ve Windows, Linux ve macOS'ta çalışır.
-
-## Metin filigranını silmek ne demektir?
-Metin filigranını silmek, bir belgeye sahiplik, gizlilik veya taslak durumu göstermek için eklenen metin tabanlı üst üste bindirme nesnelerini kaldırmak anlamına gelir. GroupDocs.Watermark'ta bu işlem, filigran nesnelerini arama kriterleriyle bulup ardından elde edilen koleksiyonda `clear()` metodunu çağırarak gerçekleştirilir.
-
-## Görüntü filigranını neden tespit etmeliyiz?
-Görüntü filigranını tespit etmek, bir diyagrama gömülmüş grafik logoları veya mühürleri tanımlamanızı sağlar. Bu, uyumluluk kontrolleri, marka koruması ve otomatik içerik denetimi için kritiktir. GroupDocs.Watermark, görüntüleri hızlı ve doğru bir şekilde karşılaştırmak için algısal karma (DCT) kullanır.
+## Neden Diagram Su İşareti Yönetimi İçin GroupDocs.Watermark Kullanmalı?
+- **Full‑featured API** – birçok diyagram türünde metin, görsel ve şekil su işaretlerini destekler.  
+- **Precise removal** – su işaretlerini orijinal diyagram düzenini bozmadan ortadan kaldırır.  
+- **Scalable** – büyük diyagram koleksiyonlarını toplu işleme için uygundur.  
+- **Maven friendly** – basit bağımlılık yönetimi, projenizi temiz tutar.
 
 ## Önkoşullar
-Başlamadan önce, şunların yüklü olduğundan emin olun:
-1. **Java Development Kit (JDK)** 8 veya üzeri.  
-2. **IDE** – IntelliJ IDEA, Eclipse veya tercih ettiğiniz herhangi bir editör.  
-3. **GroupDocs.Watermark for Java** – kütüphane JAR(lar)ının sınıf yolunuzda olması gerekir.  
+1. **Java Development Kit (JDK) 8+** – kütüphane ile uyumluluğu sağlar.  
+2. **IDE** – IntelliJ IDEA, Eclipse veya herhangi bir Java‑uyumlu editör.  
+3. **GroupDocs.Watermark for Java** – Maven aracılığıyla eklenir (önerilir) veya doğrudan JAR indirilir.  
 
-### Gerekli kütüphaneler ve bağımlılıklar
-Kütüphaneyi Maven aracılığıyla ekleyebilir veya JAR dosyalarını manuel olarak indirebilirsiniz.
-
-#### Maven kurulumu
-`pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
+### Gerekli Kütüphaneler ve Bağımlılıklar
+#### Maven Kurulumu
+Aşağıdaki yapılandırmayı `pom.xml` dosyanıza ekleyin:
 
 ```xml
 <repositories>
@@ -137,22 +61,16 @@ Kütüphaneyi Maven aracılığıyla ekleyebilir veya JAR dosyalarını manuel o
 </dependencies>
 ```
 
-#### Doğrudan indirme
-Alternatif olarak, en son sürümü [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) adresinden indirin.
+#### Doğrudan İndirme
+Alternatif olarak, en son sürümü [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) adresinden indirebilirsiniz.
 
-### Lisans edinme
-- **Ücretsiz deneme** – lisans anahtarı olmadan tüm özellikleri test edin.  
-- **Geçici lisans** – değerlendirme için zaman sınırlı bir anahtar isteyin.  
-- **Satın alma** – üretim kullanımı için kalıcı veya abonelik lisansı edinin.
+### Lisans Edinme
+- **Free Trial:** Kütüphaneyi deneme lisansı ile test edin.  
+- **Temporary License:** Değerlendirme için kısa vadeli bir anahtar isteyin.  
+- **Purchase:** Sınırsız kullanım için üretim lisansı edinin.
 
-## GroupDocs.Watermark for Java'ı kurma
-1. **Kütüphaneyi kurun** – Maven deposu ve bağımlılık girişlerinin mevcut olduğundan emin olun veya JAR dosyalarını `libs/` içine koyup proje derleme yoluna ekleyin.  
-2. **API'yi başlatın** – bir `Watermarker` örneği oluşturun; bu nesne diyagramları yüklemek ve filigran işlemlerini gerçekleştirmek için giriş noktasıdır.
-
-## Java ile diyagramlarda metin filigranını silme
-Metin filigranını silmek için, diyagramı `Watermarker` ile yükleyin, filigran metniyle eşleşen bir `TextSearchCriteria` oluşturun, eşleşen `PossibleWatermarkCollection`'ı alın ve üzerinde `clear()` metodunu çağırın. Bu, yalnızca belirtilen metin üst üste bindirmelerini kaldırır ve diyagramın geri kalanını aynı tutar.
-
-`Watermarker` sınıfı bellekte tek bir belgeyi temsil eder ve filigranları yükleme, arama ve değiştirme yöntemleri sağlar.
+## groupdocs watermark maven ile Bir Diyagram Belgesi Yükleme
+Bir diyagram belgesini yüklemek, herhangi bir su işareti işleminden önceki ilk adımdır. Aşağıda, `DiagramLoadOptions` ile bir `Watermarker` örneği oluşturan minimal bir örnek bulunmaktadır.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -168,14 +86,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
-- **Parametreler:**  
-  - `inputFilePath`: `.vsdx` dosyanızın yolu.  
-  - `loadOptions`: Belgenin nasıl yükleneceğini yapılandırır (ör. sayfa aralığı, şifre).
 
-## Bir diyagram dosyasında görüntü filigranını nasıl tespit edebilirim?
-Görüntü filigranını tespit etmek, bir referans görüntüsüyle `ImageDctHashSearchCriteria` oluşturmayı, ardından diyagramı aramak için `Watermarker` kullanmayı içerir. API, gömülü her görüntünün algısal karmasını oluşturur ve referansla karşılaştırır, benzerlik puanlarıyla eşleşmeleri döndürür; böylece istenmeyen logoları veya mühürleri tanımlayıp kaldırabilirsiniz.
+- **Parameters:**  
+  - `inputFilePath` – `.vsdx` dosyanızın yolu.  
+  - `loadOptions` – diyagramın nasıl ayrıştırılacağını kontrol etmenizi sağlar (ör. şifre koruması).
 
-`ImageDctHashSearchCriteria`, referans görüntüsünün bir karmasını oluşturur ve diyagramda gömülü görüntülerle karşılaştırır, benzerlik puanı ile eşleşmeleri döndürür.
+## groupdocs watermark maven ile Su İşaretlerini Arama
+### Metin Su İşaretleri
+Metin tabanlı su işaretlerini bulmak için bir `TextSearchCriteria` tanımlayın ve diyagramın ilk sayfasını sorgulayın.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -197,14 +115,13 @@ public class SearchTextWatermarks {
     }
 }
 ```
-- **Ana yöntemler:**  
-  - `TextSearchCriteria` – metin tabanlı filigranlar için kriter oluşturur.  
-  - `PossibleWatermarkCollection` – herhangi bir arama işleminin sonuçlarını tutar.
 
-## Filigranlar bulunduğunda nasıl kaldırılır?
-Filigranlar belirlendikten sonra, arama tarafından döndürülen `PossibleWatermarkCollection` üzerinde `clear()` metodunu çağırarak kaldırabilirsiniz. Bu işlem, diğer tüm diyagram öğelerini korurken filigran nesnelerini siler ve orijinal içeriğin tamamen değişmeden kalmasını sağlar.
+- **Key Methods:**  
+  - `TextSearchCriteria` – aranacak tam metni belirtir.  
+  - `PossibleWatermarkCollection` – bulunan eşleşmeleri saklar.
 
-`clear()` koleksiyondaki tüm filigranları kaldırırken diyagramın geri kalan içeriğini korur.
+### Görsel Su İşaretleri
+Diyagramınız logo veya resim su işaretleri içeriyorsa, referans görsel ile karşılaştırmak için `ImageDctHashSearchCriteria` kullanın.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -227,40 +144,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
-- **Ana yöntem:** `clear()` – sağlanan koleksiyondaki tüm filigranları diğer diyagram öğelerini etkilemeden siler.
 
-## Pratik uygulamalar
-1. **Kurumsal yazılım entegrasyonu** – belge odaklı iş uygulamalarına filigran yönetimini entegre ederek özel diyagramları koruyun.  
-2. **İçerik Yönetim Sistemleri (CMS)** – kullanıcı tarafından oluşturulan diyagramları yayınlamadan önce yetkisiz logoların tespitini otomatikleştirin.  
-3. **Hukuki belge yönetimi** – dava dosyası iş akışının farklı aşamalarında filigran ekleyin veya silin, gizlilik politikalarına uyumu sağlayın.
+- **Key Methods:**  
+  - `ImageDctHashSearchCriteria` – sağlam eşleşme için referans görselin algısal hash'ini oluşturur.
 
-## Yaygın tuzaklar ve sorun giderme
-- **Büyük dosyalar** – `OutOfMemoryError` alırsanız `LoadOptions` içinde `maxMemory` ayarını artırın.  
-- **Şifre korumalı diyagramlar** – dosyayı açmak için şifreyi `LoadOptions` içinde sağlayın.  
-- **Eksik görüntü karma eşleşmeleri** – referans görüntünün yeterli çözünürlüğe sahip olduğundan emin olun; düşük çözünürlüklü görüntüler zayıf karmalar üretebilir.
-
-## Sıkça sorulan sorular
-
-**S: Metin ve görüntüleri aynı anda arayabilir miyim?**  
-C: Evet – `TextSearchCriteria` ve `ImageDctHashSearchCriteria`'yi `or()` operatörüyle birleştirerek her iki türü tek bir geçişte bulun.
-
-**S: Filigranları diyagramı zarar vermeden silmek mümkün mü?**  
-C: Kesinlikle. API, filigran nesnelerini izole eder ve kaldırır, orijinal diyagram yapısını aynı tutar.
-
-**S: GroupDocs.Watermark birden fazla diyagram formatını destekliyor mu?**  
-C: Evet – `.vsdx`, `.vdx`, `.drawio` ve `.svg` dahil olmak üzere 20'den fazla formatı destekler, geniş kapsamlı diyagram yönetimi sağlar.
-
-**S: Büyük miktarda belgeyi verimli bir şekilde nasıl yönetirim?**  
-C: Toplu işleme döngüleri kullanın, mümkün olduğunda tek bir `Watermarker` örneğini yeniden kullanın ve `LoadOptions`'ı tüm dosyaları yüklemek yerine sayfaları akış olarak işlemek için ayarlayın.
-
-**S: Filigran tespitini bir CI/CD boru hattına entegre edebilir miyim?**  
-C: Evet – kütüphane başsızdır ve Maven, Gradle veya herhangi bir derleme betiğinden çağrılarak diyagram varlıklarını otomatik olarak doğrulayabilir.
-
----
-
-**Son Güncelleme:** 2026-10-27  
-**Test Edilen Sürüm:** GroupDocs.Watermark 23.6 for Java  
-**Yazar:** GroupDocs
+## Su İşaretlerini Kaldırma
+İstenmeyen su işaretlerini belirledikten sonra, bunları temizleyebilir ve diyagramın temiz bir kopyasını kaydedebilirsiniz.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -289,8 +178,40 @@ public class RemoveWatermarks {
 }
 ```
 
-## İlgili Öğreticiler
+- **Key Method:** `clear()` birleştirilmiş kriterlerle bulunan tüm su işaretlerini kaldırır, diyagramı bozulmadan bırakır.
 
-- [Java'da GroupDocs.Watermark Kullanarak Diyagramlara Metin Filigranı Ekleme](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Java için GroupDocs.Watermark ile Diyagramlara Filigran Ekleme Kılavuzu](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [Java için GroupDocs.Watermark Kullanarak Belge Bilgilerini Alma: Adım Adım Kılavuz](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
+## Pratik Uygulamalar
+1. **Enterprise Software Integration** – Özel diyagramları korumak için su işareti yönetimini iş uygulamalarına entegre edin.  
+2. **Content Management Systems (CMS)** – Yayınlamadan önce yetkisiz logoların tespitini ve kaldırılmasını otomatikleştirin.  
+3. **Legal Document Workflows** – Sözleşme işleme aşamalarında su işaretlerini ekleyin veya çıkarın.  
+
+## Yaygın Sorunlar ve Çözümleme
+- **License errors:** `Watermarker` oluşturulmadan önce lisans dosyasının doğru şekilde referans alındığından emin olun.  
+- **Large files:** Akış API'lerini kullanın veya 100 MB üzerindeki diyagramlar için JVM yığın boyutunu (`-Xmx2g`) artırın.  
+- **Missing watermarks:** Arama kriterlerinin (metin büyük/küçük harf duyarlılığı, görsel benzerlik eşiği) gerçek su işareti içeriğiyle eşleştiğini doğrulayın.
+
+## Sıkça Sorulan Sorular
+
+**Q: Metin ve görselleri aynı anda arayabilir miyim?**  
+A: Evet. Kaldırma örneğinde gösterildiği gibi kriterleri `or()` ile birleştirin.
+
+**Q: Diyagram düzenini değiştirmeden su işaretlerini kaldırmak güvenli mi?**  
+A: Kesinlikle. API, su işareti nesnelerini hassas bir şekilde hedef alır ve diğer tüm diyagram öğelerini korur.
+
+**Q: GroupDocs.Watermark hangi diyagram formatlarını destekliyor?**  
+A: `.vsdx`, `.vdx` gibi Visio formatlarının yanı sıra diğer vektör diyagram türlerini destekler.
+
+**Q: Yüzlerce diyagramı verimli bir şekilde nasıl işleyebilirim?**  
+A: Bir toplu döngü uygulayın, mümkün olduğunda tek bir `Watermarker` örneğini yeniden kullanın ve Java’nın `ExecutorService` ile paralel işleme düşünün.
+
+**Q: Su işareti tespitini bir CI/CD boru hattına entegre edebilir miyim?**  
+A: Evet. Java kod parçacıklarını derleme betiklerinizde (ör. Maven eklentileri veya Gradle görevleri) dahil ederek dağıtımdan önce diyagramları doğrulayabilirsiniz.
+
+## Sonuç
+**groupdocs watermark maven** kullanarak, Java ile diyagram dosyalarından su işaretlerini yükleme, arama ve kaldırma konusunda güçlü ve Maven‑yönetimli bir yol elde edersiniz. Bu yetenek belge güvenliğini artırır, içerik iş akışlarını sadeleştirir ve büyük belge koleksiyonları üzerinde sorunsuz ölçeklenebilir.
+
+---
+
+**Son Güncelleme:** 2025-12-19  
+**Test Edilen:** GroupDocs.Watermark 24.11 for Java  
+**Yazar:** GroupDocs

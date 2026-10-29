@@ -1,123 +1,47 @@
 ---
-date: '2026-10-27'
-description: Μάθετε πώς να διαγράψετε υδατογράφημα κειμένου από αρχεία διαγραμμάτων
-  χρησιμοποιώντας το GroupDocs.Watermark for Java και να ανιχνεύσετε αποτελεσματικά
-  υδατογράφημα εικόνας. Οδηγός βήμα‑βήμα για προγραμματιστές.
+date: '2025-12-19'
+description: Μάθετε πώς να χρησιμοποιείτε το GroupDocs Watermark Maven για τη διαχείριση
+  υδατογραφιών σε αρχεία διαγραμμάτων όπως .vsdx με τη Java, ενισχύοντας την ακεραιότητα
+  των εγγράφων και προστατεύοντας τη διανοητική ιδιοκτησία.
 keywords:
-- delete text watermark
-- detect image watermark
 - GroupDocs.Watermark Java
-lastmod: '2026-10-27'
-og_description: Διαγράψτε υδατογράφημα κειμένου από αρχεία διαγραμμάτων με το GroupDocs.Watermark
-  for Java. Μάθετε να ανιχνεύετε υδατογράφημα εικόνας, να κάνετε search και να αφαιρείτε
-  υδατογραφήματα με code snippets.
-og_image_alt: Diagram file with watermark management using GroupDocs.Watermark for
-  Java
-og_title: Διαγραφή υδατογραφήματος κειμένου σε αρχεία διαγραμμάτων με Java γρήγορα
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-27'
-  description: Learn how to delete text watermark from diagram files using GroupDocs.Watermark
-    for Java and detect image watermark efficiently. Step‑by‑step guide for developers.
-  headline: How to delete text watermark in diagrams with Java
-  type: TechArticle
-- description: Learn how to delete text watermark from diagram files using GroupDocs.Watermark
-    for Java and detect image watermark efficiently. Step‑by‑step guide for developers.
-  name: How to delete text watermark in diagrams with Java
-  steps:
-  - name: '**Java Development Kit (JDK)** 8 or higher.'
-    text: '**Java Development Kit (JDK)** 8 or higher.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – the library JAR(s) must be on your classpath.'
-    text: '**GroupDocs.Watermark for Java** – the library JAR(s) must be on your classpath.'
-  - name: '**Install the library** – ensure the Maven repository and dependency entries
-      are present, or place the JAR files in `libs/` and add them to your project’s
-      build path.'
-    text: '**Install the library** – ensure the Maven repository and dependency entries
-      are present, or place the JAR files in `libs/` and add them to your project’s
-      build path.'
-  - name: '**Initialize the API** – create a `Watermarker` instance; this object is
-      the entry point for loading diagrams and performing watermark operations.'
-    text: '**Initialize the API** – create a `Watermarker` instance; this object is
-      the entry point for loading diagrams and performing watermark operations.'
-  - name: '**Enterprise software integration** – embed watermark management into document‑centric
-      business applications to protect proprietary diagrams.'
-    text: '**Enterprise software integration** – embed watermark management into document‑centric
-      business applications to protect proprietary diagrams.'
-  - name: '**Content Management Systems (CMS)** – automate detection of unauthorized
-      logos before publishing user‑generated diagrams.'
-    text: '**Content Management Systems (CMS)** – automate detection of unauthorized
-      logos before publishing user‑generated diagrams.'
-  - name: '**Legal document handling** – add or delete watermarks at different stages
-      of a case file workflow, ensuring compliance with confidentiality policies.'
-    text: '**Legal document handling** – add or delete watermarks at different stages
-      of a case file workflow, ensuring compliance with confidentiality policies.'
-  type: HowTo
-- questions:
-  - answer: Yes – combine `TextSearchCriteria` and `ImageDctHashSearchCriteria` with
-      the `or()` operator to locate both types in a single pass.
-    question: Can I search for both text and images simultaneously?
-  - answer: Absolutely. The API isolates watermark objects and removes them, leaving
-      the original diagram structure intact.
-    question: Is it possible to delete watermarks without damaging the diagram?
-  - answer: Yes – it supports over 20 formats, including `.vsdx`, `.vdx`, `.drawio`,
-      and `.svg`, enabling broad‑range diagram management.
-    question: Does GroupDocs.Watermark support multiple diagram formats?
-  - answer: Use batch processing loops, reuse a single `Watermarker` instance where
-      possible, and tune `LoadOptions` to stream pages instead of loading whole files.
-    question: How do I handle large volumes of documents efficiently?
-  - answer: Yes – the library is headless and can be called from Maven, Gradle, or
-      any build script to validate diagram assets automatically.
-    question: Can I integrate watermark detection into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark management
-- GroupDocs.Watermark
-- Java diagram processing
-title: Πώς να διαγράψετε υδατογράφημα κειμένου σε διαγράμματα με Java
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark maven – Διαχείριση υδατοσημάτων διαγραμμάτων με Java
 type: docs
 url: /el/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
 weight: 1
 ---
 
-# Πώς να διαγράψετε το κείμενο υδατογράφημα σε διαγράμματα με Java
+# groupdocs watermark maven – Διαχείριση Υδατογραφιών Διαγραμμάτων με Java
 
-Η διαχείριση των υδατογραφημάτων σε έγγραφα είναι απαραίτητη για την προστασία της πνευματικής ιδιοκτησίας και τη διατήρηση της ακεραιότητας των εγγράφων. Σε αυτό το εκπαιδευτικό υλικό θα μάθετε πώς να **διαγράψετε το κείμενο υδατογράφημα** από αρχεία διαγραμμάτων όπως `.vsdx` χρησιμοποιώντας το GroupDocs.Watermark για Java, καθώς και πώς να **ανιχνεύσετε υδατογράφημα εικόνας** όταν χρειάζεται. Είτε δημιουργείτε μια επιχειρησιακή γραμμή επεξεργασίας εγγράφων είτε αυτοματοποιείτε μια απλή εργασία batch, αυτές οι τεχνικές σας δίνουν λεπτομερή έλεγχο πάνω στα υδατογραφήματα διαγραμμάτων.
+Η διαχείριση των υδατογραφιών σε έγγραφα είναι απαραίτητη για την προστασία της πνευματικής ιδιοκτησίας και τη διατήρηση της ακεραιότητας των εγγράφων. **Σε αυτό το σεμινάριο θα σας δείξουμε πώς να χρησιμοποιήσετε το groupdocs watermark maven για να φορτώνετε, να αναζητάτε και να αφαιρείτε αποδοτικά υδατογραφίες από αρχεία διαγραμμάτων όπως `.vsdx`**. Είτε δημιουργείτε λογισμικό επιχειρήσεων είτε αυτοματοποιείτε ροές εργασίας εγγράφων, η εξοικείωση με αυτές τις τεχνικές θα σας δώσει πλήρη έλεγχο στη διαχείριση υδατογραφιών διαγραμμάτων.
 
-**Τι θα μάθετε**
-- Ρύθμιση της βιβλιοθήκης GroupDocs.Watermark
-- Φόρτωση εγγράφου διαγράμματος με συγκεκριμένες επιλογές
-- Αναζήτηση και διαγραφή υδατογραφημάτων κειμένου
-- Ανίχνευση υδατογραφημάτων εικόνας και αφαίρεσή τους
-- Συμβουλές βέλτιστης πρακτικής για επεξεργασία μεγάλης κλίμακας
+## Γρήγορες Απαντήσεις
+- **Ποια βιβλιοθήκη χρειάζεται;** GroupDocs.Watermark for Java (διαθέσιμη μέσω Maven).  
+- **Ποιοι τύποι διαγραμμάτων υποστηρίζονται;** `.vsdx`, `.vdx` και άλλες μορφές Visio.  
+- **Μπορώ να αναζητήσω τόσο κείμενο όσο και εικόνα υδατογραφιών;** Ναι – συνδυάστε κριτήρια αναζήτησης με `or()`.  
+- **Απαιτείται άδεια για παραγωγή;** Απαιτείται έγκυρη άδεια GroupDocs.Watermark.  
+- **Πώς ενσωματώνω αυτό στο Maven;** Προσθέστε το αποθετήριο και την εξάρτηση που φαίνονται παρακάτω.
 
-Έτοιμοι να ξεκινήσετε; Ας ετοιμάσουμε πρώτα το περιβάλλον σας.
+## Τι είναι το groupdocs watermark maven;
+`groupdocs watermark maven` αναφέρεται στην ενσωμάτωση βασισμένη στο Maven της βιβλιοθήκης GroupDocs.Watermark για Java. Με την δήλωση της βιβλιοθήκης στο `pom.xml`, το Maven επιλύει αυτόματα όλα τα απαιτούμενα δυαδικά αρχεία, επιτρέποντάς σας να εστιάσετε στον κώδικα που φορτώνει διαγράμματα, αναζητά υδατογραφίες και τις αφαιρεί προγραμματιστικά.
 
-## Γρήγορες απαντήσεις
-- **Μπορώ να διαγράψω ταυτόχρονα υδατογραφήματα κειμένου και εικόνας;** Ναι – συνδυάστε `TextSearchCriteria` και `ImageDctHashSearchCriteria` με συνθήκη `or()`.  
-- **Φορτώνει η βιβλιοθήκη ολόκληρο το διάγραμμα στη μνήμη;** Όχι – κάνει ροή των σελίδων, επιτρέποντας αρχεία έως 500 MB χωρίς πλήρη κατανάλωση μνήμης.  
-- **Ποιες μορφές διαγράμματος υποστηρίζονται;** Πάνω από 20 μορφές, συμπεριλαμβανομένων `.vsdx`, `.vdx` και `.drawio`.  
-- **Απαιτείται άδεια για παραγωγική χρήση;** Απαιτείται έγκυρη άδεια GroupDocs.Watermark για μη‑δοκιμαστική χρήση.  
-- **Μπορώ να το εκτελέσω σε CI/CD pipeline;** Απόλυτα – το API είναι headless και λειτουργεί σε Windows, Linux και macOS.
-
-## Τι είναι η διαγραφή κειμένου υδατογραφήματος;
-Η διαγραφή κειμένου υδατογραφήματος σημαίνει την αφαίρεση αντικειμένων επικάλυψης βασισμένων σε κείμενο που προστέθηκαν σε ένα έγγραφο για να υποδείξουν ιδιοκτησία, εμπιστευτικότητα ή κατάσταση πρόχειρου. Στο GroupDocs.Watermark αυτή η λειτουργία εκτελείται εντοπίζοντας τα αντικείμενα υδατογραφήματος με κριτήρια αναζήτησης και στη συνέχεια καλώντας `clear()` στη συλλογή που προκύπτει.
-
-## Γιατί να ανιχνεύσετε υδατογράφημα εικόνας;
-Η ανίχνευση υδατογραφήματος εικόνας σας επιτρέπει να εντοπίσετε λογότυπα ή σφραγίδες που έχουν ενσωματωθεί σε ένα διάγραμμα. Αυτό είναι κρίσιμο για ελέγχους συμμόρφωσης, προστασία εμπορικού σήματος και αυτοματοποιημένη διαχείριση περιεχομένου. Το GroupDocs.Watermark χρησιμοποιεί αντιληπτικό hashing (DCT) για γρήγορη και ακριβή σύγκριση εικόνων.
+## Γιατί να χρησιμοποιήσετε το GroupDocs.Watermark για τη διαχείριση υδατογραφιών διαγραμμάτων;
+- **Πλήρης API** – υποστηρίζει υδατογραφίες κειμένου, εικόνας και σχήματος σε πολλούς τύπους διαγραμμάτων.  
+- **Ακριβής αφαίρεση** – αφαιρεί τις υδατογραφίες χωρίς να καταστρέφει τη διάταξη του αρχικού διαγράμματος.  
+- **Κλιμακούμενο** – κατάλληλο για επεξεργασία μεγάλων συλλογών διαγραμμάτων σε batch.  
+- **Φιλικό στο Maven** – απλή διαχείριση εξαρτήσεων, διατηρώντας το έργο σας καθαρό.
 
 ## Προαπαιτούμενα
-Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε:
-1. **Java Development Kit (JDK)** 8 ή νεότερο.  
-2. **IDE** – IntelliJ IDEA, Eclipse ή οποιονδήποτε επεξεργαστή προτιμάτε.  
-3. **GroupDocs.Watermark for Java** – τα JAR της βιβλιοθήκης πρέπει να βρίσκονται στο classpath σας.  
+1. **Java Development Kit (JDK) 8+** – εξασφαλίζει τη συμβατότητα με τη βιβλιοθήκη.  
+2. **IDE** – IntelliJ IDEA, Eclipse ή οποιονδήποτε επεξεργαστή συμβατό με Java.  
+3. **GroupDocs.Watermark for Java** – προστίθεται μέσω Maven (συνιστάται) ή άμεση λήψη JAR.  
 
-### Απαιτούμενες βιβλιοθήκες και εξαρτήσεις
-Μπορείτε να προσθέσετε τη βιβλιοθήκη μέσω Maven ή να κατεβάσετε τα JAR χειροκίνητα.
-
+### Απαιτούμενες Βιβλιοθήκες και Εξαρτήσεις
 #### Ρύθμιση Maven
-Προσθέστε την παρακάτω διαμόρφωση στο αρχείο `pom.xml` σας:
+Add the following configuration to your `pom.xml` file:
 
 ```xml
 <repositories>
@@ -137,22 +61,16 @@ weight: 1
 </dependencies>
 ```
 
-#### Άμεση λήψη
+#### Άμεση Λήψη
 Εναλλακτικά, κατεβάστε την πιο πρόσφατη έκδοση από [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Απόκτηση άδειας
-- **Δωρεάν δοκιμή** – δοκιμάστε όλες τις λειτουργίες χωρίς κλειδί άδειας.  
-- **Προσωρινή άδεια** – ζητήστε κλειδί περιορισμένου χρόνου για αξιολόγηση.  
-- **Αγορά** – αποκτήστε μόνιμη ή συνδρομητική άδεια για παραγωγική χρήση.
+### Απόκτηση Άδειας
+- **Δωρεάν Δοκιμή:** Δοκιμάστε τη βιβλιοθήκη με άδεια δοκιμής.  
+- **Προσωρινή Άδεια:** Ζητήστε κλειδί βραχυπρόθεσμης αξιολόγησης.  
+- **Αγορά:** Αποκτήστε άδεια παραγωγής για απεριόριστη χρήση.
 
-## Ρύθμιση GroupDocs.Watermark για Java
-1. **Εγκατάσταση της βιβλιοθήκης** – βεβαιωθείτε ότι το αποθετήριο Maven και οι εξαρτήσεις είναι παρούσες, ή τοποθετήστε τα JAR στο φάκελο `libs/` και προσθέστε τα στη διαδρομή κατασκευής του έργου σας.  
-2. **Αρχικοποίηση του API** – δημιουργήστε ένα αντικείμενο `Watermarker`; αυτό το αντικείμενο είναι το σημείο εισόδου για τη φόρτωση διαγραμμάτων και την εκτέλεση λειτουργιών υδατογραφήματος.
-
-## Πώς να διαγράψετε κείμενο υδατογράφημα σε διαγράμματα με Java
-Για να διαγράψετε ένα κείμενο υδατογράφημα, φορτώστε το διάγραμμα με `Watermarker`, δημιουργήστε ένα `TextSearchCriteria` που ταιριάζει με το κείμενο του υδατογραφήματος, ανακτήστε τη συλλογή `PossibleWatermarkCollection` που ταιριάζει και καλέστε `clear()` σε αυτήν. Αυτό αφαιρεί μόνο τις καθορισμένες επικάλυψεις κειμένου ενώ διατηρεί το υπόλοιπο του διαγράμματος αμετάβλητο.
-
-Η κλάση `Watermarker` αντιπροσωπεύει ένα μοναδικό έγγραφο στη μνήμη και παρέχει μεθόδους για φόρτωση, αναζήτηση και τροποποίηση υδατογραφημάτων.
+## Χρήση του groupdocs watermark maven για Φόρτωση Εγγράφου Διαγράμματος
+Η φόρτωση ενός εγγράφου διαγράμματος είναι το πρώτο βήμα πριν από οποιαδήποτε λειτουργία υδατογραφίας. Παρακάτω υπάρχει ένα ελάχιστο παράδειγμα που δημιουργεί μια παρουσία `Watermarker` με `DiagramLoadOptions`.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -168,14 +86,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
+
 - **Παράμετροι:**  
-  - `inputFilePath`: Διαδρομή προς το αρχείο `.vsdx`.  
-  - `loadOptions`: Διαμορφώνει τον τρόπο φόρτωσης του εγγράφου (π.χ., εύρος σελίδων, κωδικός πρόσβασης).
+  - `inputFilePath` – διαδρομή προς το αρχείο `.vsdx`.  
+  - `loadOptions` – σας επιτρέπει να ελέγξετε πώς θα αναλυθεί το διάγραμμα (π.χ., προστασία με κωδικό).
 
-## Πώς να ανιχνεύσετε υδατογράφημα εικόνας σε αρχείο διαγράμματος;
-Η ανίχνευση υδατογραφήματος εικόνας περιλαμβάνει τη δημιουργία ενός `ImageDctHashSearchCriteria` με μια εικόνα αναφοράς, έπειτα τη χρήση του `Watermarker` για την αναζήτηση στο διάγραμμα. Το API δημιουργεί αντιληπτικό hash για κάθε ενσωματωμένη εικόνα και το συγκρίνει με την αναφορά, επιστρέφοντας ταιριάσματα με βαθμολογίες ομοιότητας ώστε να μπορείτε να εντοπίσετε και να αφαιρέσετε ανεπιθύμητα λογότυπα ή σφραγίδες.
-
-`ImageDctHashSearchCriteria` δημιουργεί hash της εικόνας αναφοράς και το συγκρίνει με τις εικόνες ενσωματωμένες στο διάγραμμα, επιστρέφοντας ταιριάσματα με βαθμολογία ομοιότητας.
+## Αναζήτηση Υδατογραφιών με το groupdocs watermark maven
+### Υδατογραφίες Κειμένου
+Για να εντοπίσετε υδατογραφίες βασισμένες σε κείμενο, ορίστε ένα `TextSearchCriteria` και ερωτήστε την πρώτη σελίδα του διαγράμματος.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -197,14 +115,13 @@ public class SearchTextWatermarks {
     }
 }
 ```
-- **Κύριες μέθοδοι:**  
-  - `TextSearchCriteria` – δημιουργεί κριτήρια για υδατογραφήματα κειμένου.  
-  - `PossibleWatermarkCollection` – περιέχει τα αποτελέσματα οποιασδήποτε λειτουργίας αναζήτησης.
 
-## Πώς να αφαιρέσετε τα υδατογραφήματα μόλις εντοπιστούν;
-Μόλις εντοπιστούν τα υδατογραφήματα, μπορείτε να τα αφαιρέσετε καλώντας τη μέθοδο `clear()` στη `PossibleWatermarkCollection` που επιστράφηκε από την αναζήτηση. Αυτή η λειτουργία διαγράφει τα αντικείμενα υδατογραφήματος ενώ διατηρεί όλα τα άλλα στοιχεία του διαγράμματος, εξασφαλίζοντας ότι το αρχικό περιεχόμενο παραμένει αμετάβλητο.
+- **Κύριες Μέθοδοι:**  
+  - `TextSearchCriteria` – καθορίζει το ακριβές κείμενο προς αναζήτηση.  
+  - `PossibleWatermarkCollection` – αποθηκεύει τυχόν ευρήματα.
 
-`clear()` αφαιρεί κάθε υδατογράφημα στη συλλογή ενώ διατηρεί το υπόλοιπο περιεχόμενο του διαγράμματος.
+### Υδατογραφίες Εικόνας
+Εάν το διάγραμμα σας περιέχει λογότυπα ή εικόνες ως υδατογραφίες, χρησιμοποιήστε `ImageDctHashSearchCriteria` για σύγκριση με μια εικόνα αναφοράς.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -227,40 +144,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
-- **Κύρια μέθοδος:** `clear()` – διαγράφει όλα τα υδατογραφήματα στη δοθείσα συλλογή χωρίς να τροποποιεί άλλα στοιχεία του διαγράμματος.
 
-## Πρακτικές εφαρμογές
-1. **Ενσωμάτωση σε επιχειρησιακό λογισμικό** – ενσωματώστε τη διαχείριση υδατογραφημάτων σε εφαρμογές που εστιάζουν σε έγγραφα για προστασία ιδιόκτητων διαγραμμάτων.  
-2. **Συστήματα Διαχείρισης Περιεχομένου (CMS)** – αυτοματοποιήστε την ανίχνευση μη εξουσιοδοτημένων λογοτύπων πριν από τη δημοσίευση διαγραμμάτων που δημιουργούνται από χρήστες.  
-3. **Διαχείριση νομικών εγγράφων** – προσθέστε ή διαγράψτε υδατογραφήματα σε διαφορετικά στάδια της ροής εργασίας ενός φακέλου υπόθεσης, διασφαλίζοντας τη συμμόρφωση με πολιτικές εμπιστευτικότητας.
+- **Κύριες Μέθοδοι:**  
+  - `ImageDctHashSearchCriteria` – δημιουργεί ένα αντιληπτικό hash της εικόνας αναφοράς για αξιόπιστη αντιστοίχιση.
 
-## Συνηθισμένα προβλήματα και αντιμετώπιση
-- **Μεγάλα αρχεία** – αυξήστε τη ρύθμιση `maxMemory` στο `LoadOptions` εάν αντιμετωπίσετε `OutOfMemoryError`.  
-- **Διαγράμματα με κωδικό πρόσβασης** – παρέχετε τον κωδικό στο `LoadOptions` για να ανοίξετε το αρχείο.  
-- **Απουσία αντιστοιχίσεων hash εικόνας** – βεβαιωθείτε ότι η εικόνα αναφοράς έχει επαρκή ανάλυση· εικόνες χαμηλής ανάλυσης μπορεί να παράγουν αδύναμα hashes.
-
-## Συχνές ερωτήσεις
-
-**Ε: Μπορώ να αναζητήσω ταυτόχρονα κείμενο και εικόνες;**  
-Α: Ναι – συνδυάστε `TextSearchCriteria` και `ImageDctHashSearchCriteria` με τον τελεστή `or()` για να εντοπίσετε και τους δύο τύπους σε μία διαδρομή.
-
-**Ε: Είναι δυνατόν να διαγράψω υδατογραφήματα χωρίς να καταστρέψω το διάγραμμα;**  
-Α: Απόλυτα. Το API απομονώνει τα αντικείμενα υδατογραφήματος και τα αφαιρεί, αφήνοντας την αρχική δομή του διαγράμματος αμετάβλητη.
-
-**Ε: Υποστηρίζει το GroupDocs.Watermark πολλαπλές μορφές διαγράμματος;**  
-Α: Ναι – υποστηρίζει πάνω από 20 μορφές, συμπεριλαμβανομένων `.vsdx`, `.vdx`, `.drawio` και `.svg`, επιτρέποντας ευρεία διαχείριση διαγραμμάτων.
-
-**Ε: Πώς να διαχειριστώ μεγάλο όγκο εγγράφων αποδοτικά;**  
-Α: Χρησιμοποιήστε βρόχους επεξεργασίας batch, επαναχρησιμοποιήστε ένα ενιαίο αντικείμενο `Watermarker` όπου είναι δυνατόν, και ρυθμίστε το `LoadOptions` ώστε να κάνει ροή των σελίδων αντί να φορτώνει ολόκληρα αρχεία.
-
-**Ε: Μπορώ να ενσωματώσω την ανίχνευση υδατογραφήματος σε CI/CD pipeline;**  
-Α: Ναι – η βιβλιοθήκη είναι headless και μπορεί να κληθεί από Maven, Gradle ή οποιοδήποτε script κατασκευής για αυτόματη επικύρωση περιουσιακών στοιχείων διαγράμματος.
-
----
-
-**Τελευταία ενημέρωση:** 2026-10-27  
-**Δοκιμασμένο με:** GroupDocs.Watermark 23.6 for Java  
-**Συγγραφέας:** GroupDocs
+## Αφαίρεση Υδατογραφιών
+Μόλις εντοπίσετε ανεπιθύμητες υδατογραφίες, μπορείτε να τις διαγράψετε και να αποθηκεύσετε ένα καθαρό αντίγραφο του διαγράμματος.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -289,8 +178,40 @@ public class RemoveWatermarks {
 }
 ```
 
-## Σχετικά Tutorials
+- **Κύρια Μέθοδος:** `clear()` αφαιρεί κάθε υδατογραφία που βρέθηκε με τα συνδυασμένα κριτήρια, αφήνοντας το διάγραμμα αμετάβλητο.
 
-- [How to Add Text Watermarks to Diagrams Using GroupDocs.Watermark in Java](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Guide to Adding Watermarks to Diagrams Using GroupDocs.Watermark for Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [How to Retrieve Document Information Using GroupDocs.Watermark for Java: A Step-by-Step Guide](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
+## Πρακτικές Εφαρμογές
+1. **Ενσωμάτωση σε Επιχειρηματικό Λογισμικό** – Ενσωματώστε τη διαχείριση υδατογραφιών σε επιχειρηματικές εφαρμογές για την προστασία ιδιόκτητων διαγραμμάτων.  
+2. **Συστήματα Διαχείρισης Περιεχομένου (CMS)** – Αυτοματοποιήστε την ανίχνευση και αφαίρεση μη εξουσιοδοτημένων λογοτύπων πριν τη δημοσίευση.  
+3. **Ροές Εργασίας Νομικών Εγγράφων** – Προσθέστε ή αφαιρέστε υδατογραφίες σε διαφορετικά στάδια επεξεργασίας συμβάσεων.  
+
+## Συχνά Προβλήματα & Επίλυση
+- **Σφάλματα άδειας:** Βεβαιωθείτε ότι το αρχείο άδειας αναφέρεται σωστά πριν δημιουργήσετε ένα `Watermarker`.  
+- **Μεγάλα αρχεία:** Χρησιμοποιήστε streaming APIs ή αυξήστε το μέγεθος heap της JVM (`-Xmx2g`) για διαγράμματα > 100 MB.  
+- **Απουσία υδατογραφιών:** Επαληθεύστε ότι τα κριτήρια αναζήτησης (πεζά/κεφαλαία, κατώφλι ομοιότητας εικόνας) ταιριάζουν με το πραγματικό περιεχόμενο της υδατογραφίας.
+
+## Συχνές Ερωτήσεις
+
+**Ε: Μπορώ να αναζητήσω ταυτόχρονα κείμενο και εικόνες;**  
+Α: Ναι. Συνδυάστε τα κριτήρια με `or()` όπως φαίνεται στο παράδειγμα αφαίρεσης.
+
+**Ε: Είναι ασφαλές να αφαιρέσω τις υδατογραφίες χωρίς να αλλάξω τη διάταξη του διαγράμματος;**  
+Α: Απόλυτα. Το API στοχεύει ακριβώς στα αντικείμενα υδατογραφίας, διατηρώντας όλα τα άλλα στοιχεία του διαγράμματος.
+
+**Ε: Ποιοι τύποι διαγραμμάτων υποστηρίζει το GroupDocs.Watermark;**  
+Α: Υποστηρίζει μορφές Visio όπως `.vsdx`, `.vdx`, καθώς και άλλους τύπους διαγραμμάτων διανυσματικού τύπου.
+
+**Ε: Πώς μπορώ να επεξεργαστώ εκατοντάδες διαγράμματα αποδοτικά;**  
+Α: Υλοποιήστε βρόχο batch, επαναχρησιμοποιήστε μια ενιαία παρουσία `Watermarker` όταν είναι δυνατόν, και εξετάστε την παράλληλη επεξεργασία με το `ExecutorService` της Java.
+
+**Ε: Μπορώ να ενσωματώσω την ανίχνευση υδατογραφιών σε pipeline CI/CD;**  
+Α: Ναι. Συμπεριλάβετε τα αποσπάσματα Java στα σενάρια κατασκευής (π.χ., Maven plugins ή Gradle tasks) για την επικύρωση των διαγραμμάτων πριν από την ανάπτυξη.
+
+## Συμπέρασμα
+Χρησιμοποιώντας το **groupdocs watermark maven**, αποκτάτε έναν ισχυρό, διαχειριζόμενο από Maven τρόπο για τη φόρτωση, αναζήτηση και αφαίρεση υδατογραφιών από αρχεία διαγραμμάτων με Java. Αυτή η δυνατότητα ενισχύει την ασφάλεια των εγγράφων, βελτιστοποιεί τις ροές περιεχομένου και κλιμακώνεται άψογα σε μεγάλες συλλογές εγγράφων.
+
+---
+
+**Τελευταία Ενημέρωση:** 2025-12-19  
+**Δοκιμή με:** GroupDocs.Watermark 24.11 for Java  
+**Συγγραφέας:** GroupDocs

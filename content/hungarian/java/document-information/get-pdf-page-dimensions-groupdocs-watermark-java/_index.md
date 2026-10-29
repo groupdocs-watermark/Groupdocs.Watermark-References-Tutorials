@@ -1,111 +1,45 @@
 ---
-date: '2026-10-27'
-description: Ismerje meg, hogyan lehet kinyerni a GroupDocs.Watermark PDF dimensions
-  Java-ban. Ez az útmutató végigvezet a beállításon, code placeholders, real‑world
-  use cases és performance tips.
+date: '2026-02-05'
+description: Tanulja meg, hogyan lehet kinyerni a PDF oldal méreteit, megkapni a PDF
+  oldal szélességét és magasságát, valamint olvasni a PDF méretét a GroupDocs.Watermark
+  for Java segítségével.
 keywords:
-- groupdocs watermark pdf dimensions
-- java pdf page size extraction
-- groupdocs watermark java
-lastmod: '2026-10-27'
-og_description: Ismerje meg, hogyan lehet kinyerni a GroupDocs.Watermark PDF dimensions
-  Java-ban step‑by‑step code, setup tips és performance advice segítségével.
-og_image_alt: Guide showing extraction of PDF page dimensions using GroupDocs.Watermark
-  for Java
-og_title: GroupDocs.Watermark PDF dimensions Java-ban – Gyors kinyerési útmutató
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-27'
-  description: Learn how to extract GroupDocs.Watermark PDF dimensions in Java. This
-    guide walks through setup, code placeholders, real‑world use cases, and performance
-    tips.
-  headline: How to get GroupDocs.Watermark PDF dimensions in Java
-  type: TechArticle
-- description: Learn how to extract GroupDocs.Watermark PDF dimensions in Java. This
-    guide walks through setup, code placeholders, real‑world use cases, and performance
-    tips.
-  name: How to get GroupDocs.Watermark PDF dimensions in Java
-  steps:
-  - name: configure load options
-    text: '`PdfLoadOptions` lets you specify how the PDF is opened, such as providing
-      a password or limiting the page range. **Definition anchor:** `PdfLoadOptions`
-      is a class that configures PDF loading behavior, including password handling
-      and page selection.'
-  - name: create a Watermarker instance
-    text: Pass the file path and the `loadOptions` to the `Watermarker` constructor.
-      **Definition anchor:** `Watermarker` is the core class of GroupDocs.Watermark
-      that gives you access to document content, watermarking features, and metadata
-      manipulation.
-  - name: obtain PDF content
-    text: Retrieve the `PdfContent` object, which exposes the collection of pages.
-      **Definition anchor:** `PdfContent` represents the internal structure of a PDF
-      document and provides methods to enumerate pages, images, and text blocks.
-  - name: read page dimensions
-    text: '`PdfPageInfo` represents the size information of a single PDF page. Each
-      entry in `pdfContent.getPages()` returns a `PdfPageInfo` object containing `getWidth()`
-      and `getHeight()` values measured in points (1 pt = 1/72 inch).'
-  - name: output the dimensions
-    text: Loop through the pages (or target a specific index) and print the width
-      and height.
-  - name: release resources
-    text: Always close the `Watermarker` instance to free native resources and file
-      handles.
-  type: HowTo
-- questions:
-  - answer: Yes. Provide the password in `PdfLoadOptions` before creating the `Watermarker`
-      instance.
-    question: Can I extract dimensions from encrypted PDFs?
-  - answer: The Java SDK is platform‑agnostic and runs on any OS with a compatible
-      JDK.
-    question: Does the API work on Linux and Windows?
-  - answer: There is no hard limit; however, processing more than 1,000 pages may
-      benefit from paging the load options to keep memory usage low.
-    question: How many pages can I process in a single call?
-  - answer: Convert points to millimeters by multiplying by 0.3528 (1 pt ≈ 0.3528
-      mm).
-    question: Is there a way to get dimensions in millimeters instead of points?
-  - answer: '`PdfContent` has been available since version 24.5, with performance
-      improvements added in 24.11.'
-    question: What version of GroupDocs.Watermark introduced the `PdfContent` API?
-  type: FAQPage
-tags:
-- pdf dimensions
-- groupdocs watermark
-- java pdf processing
-- document analysis
-title: Hogyan lehet lekérni a GroupDocs.Watermark PDF dimensions Java-ban
+- extract PDF page dimensions Java
+- GroupDocs Watermark setup
+- PDF page width and height
+title: 'PDF oldalméretek kinyerése Java-ban a GroupDocs.Watermark használatával: Teljes
+  útmutató'
 type: docs
 url: /hu/java/document-information/get-pdf-page-dimensions-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Hogyan kapjuk meg a GroupDocs.Watermark PDF méreteket Java-ban
+# PDF oldalméretek kinyerése Java-ban a GroupDocs.Watermark segítségével
 
-A **GroupDocs.Watermark PDF méretek** kinyerése gyakori igény, amikor ellenőrizni kell a elrendezést, bélyegképeket kell generálni, vagy dinamikusan tartalmat kell elhelyezni egy PDF-ben. Ebben az oktatóanyagban pontosan megmutatjuk, hogyan lehet lekérni egy oldal szélességét és magasságát a GroupDocs.Watermark Java SDK használatával, miért hatékony a megközelítés, és mely teljesítménytrükkök tartják a alkalmazást reszponzív módon még nagy dokumentumok esetén is.
+PDF-ben egy adott oldal méretének kinyerése gyakori igény, amikor **how to extract pdf** információra van szükség a layout ellenőrzéshez, dinamikus tartalom elhelyezéshez vagy automatizált jelentéskészítéshez. Ebben az útmutatóban megtanulja, hogyan **how to extract pdf** oldal szélességét és magasságát használva a GroupDocs.Watermark for Java-t, gyakorlati tippekkel és hibaelhárítási tanácsokkal.
 
 ## Gyors válaszok
-- **Melyik könyvtár biztosítja a PDF méretkivonást?** GroupDocs.Watermark for Java.  
-- **Melyik osztály tartalmazza az oldal méretinformációkat?** `PdfPageInfo` a `PdfContent.getPages()`-ből visszaadva.  
-- **Szükségem van licencre a fejlesztéshez?** Egy ingyenes próba a teszteléshez elegendő; a termeléshez kereskedelmi licenc szükséges.  
-- **Olvashatok jelszóval védett PDF-eket?** Igen – a jelszót a `PdfLoadOptions`-on keresztül adja meg.  
-- **A API szálbiztos?** A `Watermarker` példány nem szálbiztos; minden szálnak külön példányt hozzon létre.
+- **Mi a fő módszer?** Use `PdfContent` from the `Watermarker` to read page size.  
+- **Melyik könyvtárverzió működik?** GroupDocs.Watermark 24.11 vagy újabb.  
+- **Szükségem van licencre?** A free trial works for testing; a commercial license is required for production.  
+- **Olvashatok jelszóval védett PDF-eket?** Yes – provide the password when initializing `Watermarker`.  
+- **Biztonságos több szálon?** Load the document once per thread and close it promptly to avoid resource leaks.
 
-## Mi a GroupDocs.Watermark PDF méretek?
-A GroupDocs.Watermark PDF méretek a PDF-fájl egyes oldalainak szélesség‑ és magasságértékeit (pontban) jelentik, amikor a fájlt a GroupDocs.Watermark Java SDK dolgozza fel. Ezek a mérések elengedhetetlenek a layout‑érzékeny műveletekhez, például vízjel elhelyezéshez vagy oldal‑szintű elemzéshez.
+## Mi az a “how to extract pdf” oldalméretek?
+Amikor a **how to extract pdf** oldalméretekről beszélünk, a PDF-fájl egyes oldalainak szélességének és magasságának (pontokban) lekéréséről van szó. Ezek az adatok lehetővé teszik, hogy programozottan állítsa be a grafikákat, elhelyezze a vízjeleket, vagy ellenőrizze, hogy egy dokumentum megfelel-e a nyomtatási specifikációknak.
 
-## Miért használjuk a GroupDocs.Watermark-ot PDF méretek kinyeréséhez?
-A GroupDocs.Watermark **50+ bemeneti és kimeneti formátumot** támogat, és képes a PDF oldalgeometriát beolvasni anélkül, hogy a teljes dokumentumot a memóriába töltené. Benchmark tesztekben egy 300‑oldalas PDF méretének kinyerése kevesebb, mint 2 másodpercet vesz igénybe egy tipikus 8‑magos szerveren, kevesebb mint 150 MB RAM használatával. Ez a hatékonyság ideálissá teszi kötegelt feldolgozási csővezetékekhez és valós‑idő előnézeti szolgáltatásokhoz.
+## Miért használjuk a GroupDocs.Watermark-ot Java-ban?
+A GroupDocs.Watermark egy magas szintű API-t kínál, amely elrejti az alacsony szintű PDF-parszolást, megbízható eredményeket biztosítva a PDF-verziók között. Emellett zökkenőmentesen integrálódik a Maven-nel, támogatja a jelszóval védett fájlokat, és kiváló teljesítményt nyújt nagy dokumentumok esetén.
 
 ## Előfeltételek
-- Java Development Kit (JDK) 8 vagy újabb.  
-- Maven vagy Gradle a függőségkezeléshez.  
-- Hozzáférés egy GroupDocs.Watermark licenchez (próba vagy kereskedelmi).  
-- Alapvető ismeretek a Java kivételkezelésről.
+- **Java Development Kit (JDK)** 8 or higher.  
+- **Maven** for dependency management.  
+- Basic Java knowledge and familiarity with adding Maven dependencies.  
 
-## Hogyan nyerjük ki a GroupDocs.Watermark PDF méreteket Java-ban
+## A GroupDocs.Watermark beállítása Java-hoz
 
-### Hogyan állítsam be a GroupDocs.Watermark-ot Java-hoz?
-Először adja hozzá a könyvtárat a projektjéhez. A Maven koordináták: `com.groupdocs:groupdocs-watermark:24.11`. A függőség feloldása után azonnal használhatja az API-t. Győződjön meg róla, hogy a `pom.xml` tartalmazza a GroupDocs tárolót, és frissítse a projektet, hogy a JAR‑fájlok letöltődjenek és a classpath‑hoz kerüljenek. A legújabb verziót letöltheti közvetlenül a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.  
+Adja hozzá a tárolót és a függőséget a `pom.xml`-hez:
+
 ```xml
 <repositories>
    <repository>
@@ -124,9 +58,14 @@ Először adja hozzá a könyvtárat a projektjéhez. A Maven koordináták: `co
 </dependencies>
 ```
 
-### 1. lépés: betöltési beállítások konfigurálása
-`PdfLoadOptions` lehetővé teszi, hogy megadja, hogyan nyissa meg a PDF‑et, például jelszó megadásával vagy az oldalintervallum korlátozásával.  
-**Definition anchor:** `PdfLoadOptions` egy osztály, amely a PDF betöltési viselkedését konfigurálja, beleértve a jelszókezelést és az oldalválasztást.  
+A legújabb JAR-t közvetlenül letöltheti a [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) oldalról.
+
+### Licenc beszerzési lépések
+1. **Free Trial** – start evaluating the library without cost.  
+2. **Temporary License** – obtain a time‑limited key for extended testing.  
+3. **Purchase** – secure a commercial license for production use.
+
+### Alap inicializálás
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -141,9 +80,11 @@ public class InitializeWatermarker {
 }
 ```
 
-### 2. lépés: Watermarker példány létrehozása
-Adja át a fájl elérési útját és a `loadOptions`‑t a `Watermarker` konstruktorának.  
-**Definition anchor:** `Watermarker` a GroupDocs.Watermark központi osztálya, amely hozzáférést biztosít a dokumentumtartalomhoz, a vízjel‑funkciókhoz és a metaadat‑manipulációhoz.  
+## PDF oldalméretek kinyerése
+
+Az alábbi lépésről‑lépésre útmutató bemutatja, hogyan **how to extract pdf** oldalméretet, beleértve a szélességet és a magasságot.
+
+### 1. lépés: Betöltési beállítások konfigurálása
 ```java
 import com.groupdocs.watermark.options.PdfLoadOptions;
 
@@ -151,9 +92,7 @@ import com.groupdocs.watermark.options.PdfLoadOptions;
 PdfLoadOptions loadOptions = new PdfLoadOptions();
 ```
 
-### 3. lépés: PDF tartalom lekérése
-Szerezze be a `PdfContent` objektumot, amely a lapok gyűjteményét teszi elérhetővé.  
-**Definition anchor:** `PdfContent` a PDF dokumentum belső struktúráját képviseli, és metódusokat biztosít az oldalak, képek és szövegrészek felsorolásához.  
+### 2. lépés: Watermarker inicializálása betöltési beállításokkal
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -161,9 +100,7 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-### 4. lépés: oldalméretek olvasása
-`PdfPageInfo` egyetlen PDF oldal méretinformációit tartalmazza.  
-A `pdfContent.getPages()` minden eleme egy `PdfPageInfo` objektum, amely `getWidth()` és `getHeight()` értékeket ad vissza pontban (1 pt = 1/72 hüvelyk).  
+### 3. lépés: PDF tartalom elérése
 ```java
 import com.groupdocs.watermark.contents.PdfContent;
 
@@ -171,8 +108,7 @@ import com.groupdocs.watermark.contents.PdfContent;
 PdfContent pdfContent = watermarker.getContent(PdfContent.class);
 ```
 
-### 5. lépés: méretek kiírása
-Iteráljon az oldalakon (vagy célozzon meg egy konkrét indexet), és írja ki a szélességet és magasságot.  
+### 4. lépés: Oldalméretek lekérése és kiírása
 ```java
 // Access dimensions for the first page
 double width = pdfContent.getPages().get_Item(0).getWidth();
@@ -182,63 +118,55 @@ System.out.println("Width of the first page: " + width);
 System.out.println("Height of the first page: " + height);
 ```
 
-### 6. lépés: erőforrások felszabadítása
-Mindig zárja le a `Watermarker` példányt a natív erőforrások és fájlkezelők felszabadítása érdekében.  
+> **Pro tip:** A szélesség és magasság pontokban (1 pt = 1/72 inch) kerül visszaadásra. Szükség esetén szorozza 0,3528‑al a milliméterre konvertáláshoz.
+
+### 5. lépés: Watermarker bezárása
 ```java
 watermarker.close();
 ```
 
-## Gyakori buktatók és hibaelhárítás
-- **Helytelen fájlútvonal** – Ellenőrizze, hogy az útvonal abszolút vagy a munkakönyvtárhoz relatív legyen.  
-- **Nem támogatott PDF verzió** – A GroupDocs.Watermark a PDF 1.4‑től 1.7‑ig terjedő verziókat kezeli; a régebbi vagy sérült fájlok `UnsupportedFormatException`‑t dobhatnak.  
-- **Memória nyomás hatalmas fájlok esetén** – Használja a `PdfLoadOptions.setPageRange()`‑t, hogy csak a szükséges oldalakat töltse be, ezáltal csökkentve a RAM‑használatot.  
-- **Jelszó hibák** – Adja meg a helyes jelszót a `PdfLoadOptions.setPassword("yourPassword")`‑val; ellenkező esetben `WrongPasswordException` keletkezik.
+## Gyakori felhasználási esetek PDF oldalméret kinyerésére
+1. **Dynamic Layout Adjustments** – Resize images or tables to fit the exact page dimensions.  
+2. **Print‑Ready Validation** – Ensure the document meets specific size constraints before sending to a printer.  
+3. **Batch Processing** – Loop through `pdfContent.getPages()` to collect dimensions for every page in a large PDF.  
 
-## Gyakorlati felhasználási esetek
-1. **Dinamikus vízjel elhelyezés** – A pontos oldalméret ismeretében középre vagy átlósan helyezhet vízjelet találgatás nélkül.  
-2. **Nyomtatásra kész ellenőrzés** – Ellenőrizze, hogy minden oldal megfelel-e a 8,5 × 11 hüvelyk (612 × 792 pt) követelménynek, mielőtt nyomtatóhoz küldené.  
-3. **Bélyegkép generálás** – A méreteket felhasználva arányosan skálázott előnézeti képeket hozhat létre egy dokumentumkezelő portálhoz.  
+## Teljesítmény szempontok
+- **Cache Results**: If you need dimensions for many pages repeatedly, store them in a map to avoid re‑reading the file.  
+- **Memory Management**: Close the `Watermarker` as soon as you finish reading dimensions, especially for large PDFs.  
+- **Parallel Processing**: For multi‑page documents, process each page in a separate thread after extracting the dimensions list.
 
-## Teljesítményfontosságú szempontok
-- **Gyorsítótárazza a betöltési beállításokat** sok PDF‑feldolgozásnál azonos beállításokkal, hogy elkerülje az objektumok ismételt létrehozását.  
-- **Oldalak párhuzamos feldolgozása** csak a `PdfContent` lekérése után; minden `PdfPageInfo` immutable, ezért biztonságosan olvasható párhuzamosan.  
-- **Kerülje a teljes dokumentum betöltését** – a `Watermarker` streameli a fájlt; nincs szükség a teljes PDF memóriában tartására, hacsak nem kérjük explicit módon.
+## Hibaelhárítási tippek
+- **Incorrect Path** – Verify that `"YOUR_DOCUMENT_DIRECTORY/document.pdf"` points to an existing, readable file.  
+- **Unsupported PDF Version** – Ensure the PDF conforms to PDF 1.4 or later; older versions may need conversion.  
+- **License Errors** – A missing or expired license will throw a `LicenseException`. Use the trial license for development.  
 
-## Gyakran feltett kérdések
+## Gyakran ismételt kérdések
 
-**K: Kinyerhetek méreteket titkosított PDF-ekből?**  
-V: Igen. Adja meg a jelszót a `PdfLoadOptions`‑ban a `Watermarker` példány létrehozása előtt.
+**Q: Mi a minimális Java verzió, amely a GroupDocs.Watermark-hoz szükséges?**  
+A: Legalább JDK 8 vagy újabb szükséges.
 
-**K: Működik az API Linuxon és Windowson?**  
-V: A Java SDK platform‑független, és bármely, kompatibilis JDK‑val rendelkező operációs rendszeren fut.
+**Q: Hogyan kezelhetem hatékonyan a nagy PDF-fájlokat a GroupDocs.Watermark segítségével?**  
+A: Process pages in batches, cache only required metadata, and close the `Watermarker` promptly to free resources.
 
-**K: Hány oldalt dolgozhatok fel egyetlen hívásban?**  
-V: Nincs szigorú korlát; azonban több mint 1 000 oldal esetén érdemes a betöltési beállításokat lapozni a memóriahasználat alacsonyan tartása érdekében.
+**Q: A GroupDocs.Watermark képes jelszóval védett PDF-eket kezelni?**  
+A: Yes – provide the password in `PdfLoadOptions` when creating the `Watermarker`.
 
-**K: Van mód a méreteket milliméterben kapni a pontok helyett?**  
-V: A pontokat szorozza meg 0,3528‑al (1 pt ≈ 0,3528 mm), így kapja meg a milliméter értéket.
+**Q: Van mód az összes oldal méretének automatikus kinyerésére?**  
+A: Absolutely. Iterate over `pdfContent.getPages()` and call `getWidth()` / `getHeight()` for each page inside a loop.
 
-**K: Melyik GroupDocs.Watermark verzió vezette be a `PdfContent` API‑t?**  
-V: A `PdfContent` a 24.5‑ös verziótól érhető el, a 24.11‑es verzióban pedig teljesítményjavításokkal bővült.
+**Q: Mik a tipikus problémák az oldalméretek kinyerésekor?**  
+A: Common issues include wrong file paths, PDFs with corrupted page objects, or insufficient file permissions.
 
 ## További források
-- [Documentation](https://docs.groupdocs.com/watermark/java/)
-- [API Reference](https://reference.groupdocs.com/watermark/java)
-- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
-- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
-- [Temporary License Information](https://purchase.groupdocs.com/temporary-license/)
+- [Dokumentáció](https://docs.groupdocs.com/watermark/java/)
+- [API Referencia](https://reference.groupdocs.com/watermark/java)
+- [GroupDocs.Watermark letöltése Java-hoz](https://releases.groupdocs.com/watermark/java/)
+- [GitHub tároló](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Ingyenes támogatási fórum](https://forum.groupdocs.com/c/watermark/10)
+- [Ideiglenes licenc információk](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Utolsó frissítés:** 2026-10-27  
-**Tesztelve a következővel:** GroupDocs.Watermark 24.11 for Java  
-**Szerző:** GroupDocs  
-
----
-
-## Kapcsolódó oktatóanyagok
-
-- [Extract Document Information Using GroupDocs.Watermark for Java: A Complete Guide](/watermark/java/document-information/extract-document-info-groupdocs-watermark-java/)
-- [Access and Iterate Over PDF Artifacts Using GroupDocs.Watermark in Java for Document Watermarking](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
-- [How to Add a Text Watermark to PDF Using GroupDocs.Watermark for Java (2023 Guide)](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-java/)
+**Utoljára frissítve:** 2026-02-05  
+**Tesztelve:** GroupDocs.Watermark 24.11 for Java  
+**Szerző:** GroupDocs

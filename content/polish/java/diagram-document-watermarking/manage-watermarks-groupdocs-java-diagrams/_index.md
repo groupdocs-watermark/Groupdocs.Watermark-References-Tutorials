@@ -1,121 +1,45 @@
 ---
-date: '2026-10-27'
-description: Dowiedz się, jak usunąć znak wodny tekstowy z plików diagramów przy użyciu
-  GroupDocs.Watermark for Java oraz skutecznie wykrywać znak wodny obrazu. Przewodnik
-  krok po kroku dla programistów.
+date: '2025-12-19'
+description: Dowiedz się, jak używać GroupDocs Watermark Maven do zarządzania znakami
+  wodnymi w plikach diagramów, takich jak .vsdx, przy użyciu Javy, zwiększając integralność
+  dokumentów i chroniąc własność intelektualną.
 keywords:
-- delete text watermark
-- detect image watermark
 - GroupDocs.Watermark Java
-lastmod: '2026-10-27'
-og_description: Usuń znak wodny tekstowy z plików diagramów za pomocą GroupDocs.Watermark
-  for Java. Dowiedz się, jak wykrywać znak wodny obrazu, wyszukiwać i usuwać znaki
-  wodne przy użyciu fragmentów kodu.
-og_image_alt: Diagram file with watermark management using GroupDocs.Watermark for
-  Java
-og_title: Szybko usuń znak wodny tekstowy w plikach diagramów przy użyciu Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-27'
-  description: Learn how to delete text watermark from diagram files using GroupDocs.Watermark
-    for Java and detect image watermark efficiently. Step‑by‑step guide for developers.
-  headline: How to delete text watermark in diagrams with Java
-  type: TechArticle
-- description: Learn how to delete text watermark from diagram files using GroupDocs.Watermark
-    for Java and detect image watermark efficiently. Step‑by‑step guide for developers.
-  name: How to delete text watermark in diagrams with Java
-  steps:
-  - name: '**Java Development Kit (JDK)** 8 or higher.'
-    text: '**Java Development Kit (JDK)** 8 or higher.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – the library JAR(s) must be on your classpath.'
-    text: '**GroupDocs.Watermark for Java** – the library JAR(s) must be on your classpath.'
-  - name: '**Install the library** – ensure the Maven repository and dependency entries
-      are present, or place the JAR files in `libs/` and add them to your project’s
-      build path.'
-    text: '**Install the library** – ensure the Maven repository and dependency entries
-      are present, or place the JAR files in `libs/` and add them to your project’s
-      build path.'
-  - name: '**Initialize the API** – create a `Watermarker` instance; this object is
-      the entry point for loading diagrams and performing watermark operations.'
-    text: '**Initialize the API** – create a `Watermarker` instance; this object is
-      the entry point for loading diagrams and performing watermark operations.'
-  - name: '**Enterprise software integration** – embed watermark management into document‑centric
-      business applications to protect proprietary diagrams.'
-    text: '**Enterprise software integration** – embed watermark management into document‑centric
-      business applications to protect proprietary diagrams.'
-  - name: '**Content Management Systems (CMS)** – automate detection of unauthorized
-      logos before publishing user‑generated diagrams.'
-    text: '**Content Management Systems (CMS)** – automate detection of unauthorized
-      logos before publishing user‑generated diagrams.'
-  - name: '**Legal document handling** – add or delete watermarks at different stages
-      of a case file workflow, ensuring compliance with confidentiality policies.'
-    text: '**Legal document handling** – add or delete watermarks at different stages
-      of a case file workflow, ensuring compliance with confidentiality policies.'
-  type: HowTo
-- questions:
-  - answer: Yes – combine `TextSearchCriteria` and `ImageDctHashSearchCriteria` with
-      the `or()` operator to locate both types in a single pass.
-    question: Can I search for both text and images simultaneously?
-  - answer: Absolutely. The API isolates watermark objects and removes them, leaving
-      the original diagram structure intact.
-    question: Is it possible to delete watermarks without damaging the diagram?
-  - answer: Yes – it supports over 20 formats, including `.vsdx`, `.vdx`, `.drawio`,
-      and `.svg`, enabling broad‑range diagram management.
-    question: Does GroupDocs.Watermark support multiple diagram formats?
-  - answer: Use batch processing loops, reuse a single `Watermarker` instance where
-      possible, and tune `LoadOptions` to stream pages instead of loading whole files.
-    question: How do I handle large volumes of documents efficiently?
-  - answer: Yes – the library is headless and can be called from Maven, Gradle, or
-      any build script to validate diagram assets automatically.
-    question: Can I integrate watermark detection into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark management
-- GroupDocs.Watermark
-- Java diagram processing
-title: Jak usunąć znak wodny tekstowy w diagramach przy użyciu Java
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark maven – Zarządzaj znakami wodnymi diagramów w Javie
 type: docs
 url: /pl/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
 weight: 1
 ---
 
-# Jak usunąć znak wodny tekstowy w diagramach przy użyciu Javy
+# groupdocs watermark maven – Zarządzanie znakami wodnymi diagramów w Javie
 
-Zarządzanie znakami wodnymi w dokumentach jest niezbędne do ochrony własności intelektualnej i utrzymania integralności dokumentu. W tym samouczku dowiesz się, jak **usunąć znak wodny tekstowy** z plików diagramów, takich jak `.vsdx`, przy użyciu GroupDocs.Watermark dla Javy, oraz jak **wykrywać znak wodny obrazu** w razie potrzeby. Niezależnie od tego, czy tworzysz przedsiębiorstwowy potok dokumentów, czy automatyzujesz prostą pracę wsadową, te techniki dają precyzyjną kontrolę nad znakami wodnymi w diagramach.
-
-**Co się nauczysz**
-- Konfiguracja biblioteki GroupDocs.Watermark
-- Ładowanie dokumentu diagramu z określonymi opcjami
-- Wyszukiwanie i usuwanie znaków wodnych tekstowych
-- Wykrywanie znaków wodnych obrazu i ich usuwanie
-- Wskazówki najlepszych praktyk dla przetwarzania w dużej skali
-
-Gotowy, aby zanurzyć się? Najpierw przygotujmy Twoje środowisko.
+Zarządzanie znakami wodnymi w dokumentach jest niezbędne do ochrony własności intelektualnej i utrzymania integralności dokumentu. **W tym samouczku pokażemy, jak używać groupdocs watermark maven do efektywnego ładowania, wyszukiwania i usuwania znaków wodnych z plików diagramów, takich jak `.vsdx`**. Niezależnie od tego, czy tworzysz oprogramowanie korporacyjne, czy automatyzujesz przepływy pracy z dokumentami, opanowanie tych technik da Ci pełną kontrolę nad zarządzaniem znakami wodnymi diagramów.
 
 ## Szybkie odpowiedzi
-- **Czy mogę usunąć jednocześnie zarówno znaki wodne tekstowe, jak i obrazowe?** Tak – połącz `TextSearchCriteria` i `ImageDctHashSearchCriteria` za pomocą warunku `or()`.  
-- **Czy biblioteka ładuje cały diagram do pamięci?** Nie – strumieniuje strony, umożliwiając pliki do 500 MB bez pełnego zużycia pamięci.  
-- **Jakie formaty diagramów są obsługiwane?** Ponad 20 formatów, w tym `.vsdx`, `.vdx` i `.drawio`.  
-- **Czy wymagana jest licencja do produkcji?** Ważna licencja GroupDocs.Watermark jest potrzebna do użytku nie‑trial.  
-- **Czy mogę uruchomić to w potoku CI/CD?** Zdecydowanie – API jest bez interfejsu graficznego i działa na Windows, Linux i macOS.
+- **Jakiej biblioteki potrzebujesz?** GroupDocs.Watermark for Java (available via Maven).  
+- **Jakie formaty diagramów są obsługiwane?** `.vsdx`, `.vdx`, and other Visio formats.  
+- **Czy mogę wyszukiwać zarówno tekstowe, jak i graficzne znaki wodne?** Yes – combine search criteria with `or()`.  
+- **Czy wymagana jest licencja do produkcji?** A valid GroupDocs.Watermark license is required.  
+- **Jak zintegrować to z Maven?** Add the repository and dependency shown below.  
 
-## Co to jest usunięcie znaku wodnego tekstowego?
-Usunięcie znaku wodnego tekstowego oznacza usunięcie nakładek opartych na tekście, które zostały dodane do dokumentu w celu wskazania własności, poufności lub statusu wersji roboczej. W GroupDocs.Watermark operacja ta jest wykonywana poprzez zlokalizowanie obiektów znaku wodnego przy użyciu kryteriów wyszukiwania, a następnie wywołanie `clear()` na otrzymanej kolekcji.
+## Co to jest groupdocs watermark maven?
+`groupdocs watermark maven` odnosi się do integracji opartej na Maven biblioteki GroupDocs.Watermark dla Javy. Deklarując bibliotekę w swoim `pom.xml`, Maven automatycznie rozwiązuje wszystkie wymagane pliki binarne, pozwalając skupić się na kodzie, który ładuje diagramy, wyszukuje znaki wodne i usuwa je programowo.
 
-## Dlaczego wykrywać znak wodny obrazu?
-Wykrywanie znaku wodnego obrazu pozwala zidentyfikować graficzne loga lub pieczęcie, które zostały osadzone w diagramie. Jest to kluczowe dla kontroli zgodności, ochrony marki i automatycznej moderacji treści. GroupDocs.Watermark używa perceptual hashing (DCT) do szybkiego i dokładnego porównywania obrazów.
+## Dlaczego warto używać GroupDocs.Watermark do zarządzania znakami wodnymi diagramów?
+- **Pełnofunkcyjne API** – supports text, image, and shape watermarks across many diagram types.  
+- **Precyzyjne usuwanie** – eliminates watermarks without corrupting the original diagram layout.  
+- **Skalowalne** – suitable for batch processing large collections of diagrams.  
+- **Przyjazne Maven** – simple dependency management, keeping your project clean.  
 
 ## Wymagania wstępne
-Zanim zaczniemy, upewnij się, że masz:
-1. **Java Development Kit (JDK)** 8 lub wyższą.  
-2. **IDE** – IntelliJ IDEA, Eclipse lub dowolny edytor, który preferujesz.  
-3. **GroupDocs.Watermark for Java** – pliki JAR biblioteki muszą znajdować się na Twojej ścieżce klas.  
+1. **Java Development Kit (JDK) 8+** – ensures compatibility with the library.  
+2. **IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.  
+3. **GroupDocs.Watermark for Java** – added via Maven (recommended) or direct JAR download.  
 
 ### Wymagane biblioteki i zależności
-Możesz dodać bibliotekę za pomocą Maven lub pobrać pliki JAR ręcznie.
-
 #### Konfiguracja Maven
 Add the following configuration to your `pom.xml` file:
 
@@ -141,18 +65,12 @@ Add the following configuration to your `pom.xml` file:
 Alternatywnie pobierz najnowszą wersję z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Uzyskanie licencji
-- **Free trial** – przetestuj wszystkie funkcje bez klucza licencyjnego.  
-- **Temporary license** – zamów klucz czasowo ograniczony do oceny.  
-- **Purchase** – uzyskaj licencję wieczystą lub subskrypcyjną do użytku produkcyjnego.
+- **Free Trial:** Test the library with a trial license.  
+- **Temporary License:** Request a short‑term key for evaluation.  
+- **Purchase:** Obtain a production license for unlimited use.  
 
-## Konfiguracja GroupDocs.Watermark dla Javy
-1. **Zainstaluj bibliotekę** – upewnij się, że repozytorium Maven i wpisy zależności są obecne, lub umieść pliki JAR w `libs/` i dodaj je do ścieżki kompilacji projektu.  
-2. **Zainicjalizuj API** – utwórz instancję `Watermarker`; ten obiekt jest punktem wejścia do ładowania diagramów i wykonywania operacji znaków wodnych.
-
-## Jak usunąć znak wodny tekstowy w diagramach przy użyciu Javy
-Aby usunąć znak wodny tekstowy, załaduj diagram przy użyciu `Watermarker`, utwórz `TextSearchCriteria` pasujące do tekstu znaku wodnego, pobierz pasującą `PossibleWatermarkCollection` i wywołaj na niej `clear()`. To usuwa tylko określone nakładki tekstowe, pozostawiając resztę diagramu nienaruszoną.
-
-Klasa `Watermarker` reprezentuje pojedynczy dokument w pamięci i udostępnia metody do ładowania, wyszukiwania i modyfikacji znaków wodnych.
+## Używanie groupdocs watermark maven do ładowania dokumentu diagramu
+Ładowanie dokumentu diagramu jest pierwszym krokiem przed jakąkolwiek operacją na znakach wodnych. Poniżej znajduje się minimalny przykład, który tworzy instancję `Watermarker` z `DiagramLoadOptions`.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -168,14 +86,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
-- **Parametry:**  
-  - `inputFilePath`: Ścieżka do Twojego pliku `.vsdx`.  
-  - `loadOptions`: Konfiguruje sposób ładowania dokumentu (np. zakres stron, hasło).
 
-## Jak wykryć znak wodny obrazu w pliku diagramu?
-Wykrywanie znaku wodnego obrazu polega na utworzeniu `ImageDctHashSearchCriteria` z obrazem referencyjnym, a następnie użyciu `Watermarker` do przeszukania diagramu. API generuje perceptual hash każdego osadzonego obrazu i porównuje go z referencją, zwracając dopasowania z oceną podobieństwa, abyś mógł zidentyfikować i usunąć niepożądane loga lub pieczęcie.
+- **Parameters:**  
+  - `inputFilePath` – path to your `.vsdx` file.  
+  - `loadOptions` – lets you control how the diagram is parsed (e.g., password protection).
 
-`ImageDctHashSearchCriteria` tworzy hash obrazu referencyjnego i porównuje go z obrazami osadzonymi w diagramie, zwracając dopasowania z wynikiem podobieństwa.
+## Wyszukiwanie znaków wodnych przy użyciu groupdocs watermark maven
+### Tekstowe znaki wodne
+To locate text‑based watermarks, define a `TextSearchCriteria` and query the first page of the diagram.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -197,14 +115,13 @@ public class SearchTextWatermarks {
     }
 }
 ```
-- **Kluczowe metody:**  
-  - `TextSearchCriteria` – tworzy kryteria dla znaków wodnych opartych na tekście.  
-  - `PossibleWatermarkCollection` – przechowuje wyniki dowolnej operacji wyszukiwania.
 
-## Jak usunąć znaki wodne po ich wykryciu?
-Po zidentyfikowaniu znaków wodnych możesz je usunąć, wywołując metodę `clear()` na `PossibleWatermarkCollection` zwróconej przez wyszukiwanie. Operacja ta usuwa obiekty znaków wodnych, zachowując wszystkie pozostałe elementy diagramu, zapewniając, że oryginalna zawartość pozostaje w pełni niezmieniona.
+- **Key Methods:**  
+  - `TextSearchCriteria` – specifies the exact text to look for.  
+  - `PossibleWatermarkCollection` – stores any matches found.
 
-`clear()` usuwa każdy znak wodny w kolekcji, zachowując resztę zawartości diagramu.
+### Graficzne znaki wodne
+If your diagram contains logo or picture watermarks, use `ImageDctHashSearchCriteria` to compare against a reference image.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -227,40 +144,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
-- **Kluczowa metoda:** `clear()` – usuwa wszystkie znaki wodne w podanej kolekcji bez modyfikacji innych elementów diagramu.
 
-## Praktyczne zastosowania
-1. **Integracja oprogramowania korporacyjnego** – wbuduj zarządzanie znakami wodnymi w aplikacje biznesowe skoncentrowane na dokumentach, aby chronić własnościowe diagramy.  
-2. **Systemy zarządzania treścią (CMS)** – automatyzuj wykrywanie nieautoryzowanych logotypów przed publikacją diagramów generowanych przez użytkowników.  
-3. **Obsługa dokumentów prawnych** – dodawaj lub usuwaj znaki wodne na różnych etapach przepływu pracy plików spraw, zapewniając zgodność z politykami poufności.
+- **Key Methods:**  
+  - `ImageDctHashSearchCriteria` – creates a perceptual hash of the reference image for robust matching.
 
-## Typowe pułapki i rozwiązywanie problemów
-- **Duże pliki** – zwiększ ustawienie `maxMemory` w `LoadOptions`, jeśli napotkasz `OutOfMemoryError`.  
-- **Diagramy chronione hasłem** – podaj hasło w `LoadOptions`, aby otworzyć plik.  
-- **Brak dopasowań hash obrazu** – upewnij się, że obraz referencyjny ma wystarczającą rozdzielczość; obrazy o niskiej rozdzielczości mogą generować słabe hashe.
-
-## Najczęściej zadawane pytania
-
-**Q: Czy mogę jednocześnie wyszukiwać zarówno tekst, jak i obrazy?**  
-A: Tak – połącz `TextSearchCriteria` i `ImageDctHashSearchCriteria` za pomocą operatora `or()`, aby zlokalizować oba typy w jednym przebiegu.
-
-**Q: Czy możliwe jest usunięcie znaków wodnych bez uszkadzania diagramu?**  
-A: Zdecydowanie. API izoluje obiekty znaków wodnych i usuwa je, pozostawiając oryginalną strukturę diagramu nienaruszoną.
-
-**Q: Czy GroupDocs.Watermark obsługuje wiele formatów diagramów?**  
-A: Tak – obsługuje ponad 20 formatów, w tym `.vsdx`, `.vdx`, `.drawio` i `.svg`, umożliwiając szerokie zarządzanie diagramami.
-
-**Q: Jak efektywnie obsługiwać duże wolumeny dokumentów?**  
-A: Używaj pętli przetwarzania wsadowego, ponownie wykorzystuj pojedynczą instancję `Watermarker` tam, gdzie to możliwe, oraz dostosuj `LoadOptions`, aby strumieniować strony zamiast ładować całe pliki.
-
-**Q: Czy mogę zintegrować wykrywanie znaków wodnych z potokiem CI/CD?**  
-A: Tak – biblioteka jest bez interfejsu graficznego i może być wywoływana z Maven, Gradle lub dowolnego skryptu budującego w celu automatycznej weryfikacji zasobów diagramów.
-
----
-
-**Ostatnia aktualizacja:** 2026-10-27  
-**Testowano z:** GroupDocs.Watermark 23.6 for Java  
-**Autor:** GroupDocs
+## Usuwanie znaków wodnych
+Once you’ve identified unwanted watermarks, you can clear them and save a clean copy of the diagram.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -289,8 +178,40 @@ public class RemoveWatermarks {
 }
 ```
 
-## Powiązane samouczki
+- **Key Method:** `clear()` removes every watermark found by the combined criteria, leaving the diagram intact.
 
-- [Jak dodać znaki wodne tekstowe do diagramów przy użyciu GroupDocs.Watermark w Javie](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Przewodnik dodawania znaków wodnych do diagramów przy użyciu GroupDocs.Watermark dla Javy](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [Jak pobrać informacje o dokumencie przy użyciu GroupDocs.Watermark dla Javy: przewodnik krok po kroku](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
+## Praktyczne zastosowania
+1. **Enterprise Software Integration** – Embed watermark management into business apps to protect proprietary diagrams.  
+2. **Content Management Systems (CMS)** – Automate detection and removal of unauthorized logos before publishing.  
+3. **Legal Document Workflows** – Add or strip watermarks at different stages of contract processing.  
+
+## Typowe problemy i rozwiązywanie
+- **License errors:** Ensure the license file is correctly referenced before creating a `Watermarker`.  
+- **Large files:** Use streaming APIs or increase JVM heap size (`-Xmx2g`) for diagrams > 100 MB.  
+- **Missing watermarks:** Verify that the search criteria (text case, image similarity threshold) match the actual watermark content.
+
+## Najczęściej zadawane pytania
+
+**Q: Czy mogę wyszukiwać zarówno tekst i obrazy jednocześnie?**  
+A: Yes. Combine criteria with `or()` as shown in the removal example.
+
+**Q: Czy bezpieczne jest usuwanie znaków wodnych bez zmiany układu diagramu?**  
+A: Absolutely. The API precisely targets watermark objects, preserving all other diagram elements.
+
+**Q: Jakie formaty diagramów obsługuje GroupDocs.Watermark?**  
+A: It supports Visio formats like `.vsdx`, `.vdx`, as well as other vector diagram types.
+
+**Q: Jak mogę efektywnie przetwarzać setki diagramów?**  
+A: Implement a batch loop, reuse a single `Watermarker` instance when possible, and consider parallel processing with Java’s `ExecutorService`.
+
+**Q: Czy mogę zintegrować wykrywanie znaków wodnych w pipeline CI/CD?**  
+A: Yes. Include the Java snippets in your build scripts (e.g., Maven plugins or Gradle tasks) to validate diagrams before deployment.
+
+## Podsumowanie
+By leveraging **groupdocs watermark maven**, you gain a powerful, Maven‑managed way to load, search, and remove watermarks from diagram files using Java. This capability strengthens document security, streamlines content workflows, and scales effortlessly across large document collections.
+
+---
+
+**Ostatnia aktualizacja:** 2025-12-19  
+**Testowano z:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs

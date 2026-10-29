@@ -1,111 +1,44 @@
 ---
-date: '2026-10-27'
-description: Pelajari cara mengekstrak dimensi PDF GroupDocs.Watermark di Java. Panduan
-  ini menjelaskan langkah‑langkah penyiapan, placeholder kode, contoh penggunaan dunia
-  nyata, dan tips kinerja.
+date: '2026-02-05'
+description: Pelajari cara mengekstrak dimensi halaman PDF, mendapatkan lebar dan
+  tinggi halaman PDF, serta membaca ukuran PDF dengan GroupDocs.Watermark untuk Java.
 keywords:
-- groupdocs watermark pdf dimensions
-- java pdf page size extraction
-- groupdocs watermark java
-lastmod: '2026-10-27'
-og_description: Pelajari cara mengekstrak dimensi PDF GroupDocs.Watermark di Java
-  dengan kode langkah‑demi‑langkah, tips penyiapan, dan saran kinerja.
-og_image_alt: Guide showing extraction of PDF page dimensions using GroupDocs.Watermark
-  for Java
-og_title: Dimensi PDF GroupDocs.Watermark di Java – Panduan Ekstraksi Cepat
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-27'
-  description: Learn how to extract GroupDocs.Watermark PDF dimensions in Java. This
-    guide walks through setup, code placeholders, real‑world use cases, and performance
-    tips.
-  headline: How to get GroupDocs.Watermark PDF dimensions in Java
-  type: TechArticle
-- description: Learn how to extract GroupDocs.Watermark PDF dimensions in Java. This
-    guide walks through setup, code placeholders, real‑world use cases, and performance
-    tips.
-  name: How to get GroupDocs.Watermark PDF dimensions in Java
-  steps:
-  - name: configure load options
-    text: '`PdfLoadOptions` lets you specify how the PDF is opened, such as providing
-      a password or limiting the page range. **Definition anchor:** `PdfLoadOptions`
-      is a class that configures PDF loading behavior, including password handling
-      and page selection.'
-  - name: create a Watermarker instance
-    text: Pass the file path and the `loadOptions` to the `Watermarker` constructor.
-      **Definition anchor:** `Watermarker` is the core class of GroupDocs.Watermark
-      that gives you access to document content, watermarking features, and metadata
-      manipulation.
-  - name: obtain PDF content
-    text: Retrieve the `PdfContent` object, which exposes the collection of pages.
-      **Definition anchor:** `PdfContent` represents the internal structure of a PDF
-      document and provides methods to enumerate pages, images, and text blocks.
-  - name: read page dimensions
-    text: '`PdfPageInfo` represents the size information of a single PDF page. Each
-      entry in `pdfContent.getPages()` returns a `PdfPageInfo` object containing `getWidth()`
-      and `getHeight()` values measured in points (1 pt = 1/72 inch).'
-  - name: output the dimensions
-    text: Loop through the pages (or target a specific index) and print the width
-      and height.
-  - name: release resources
-    text: Always close the `Watermarker` instance to free native resources and file
-      handles.
-  type: HowTo
-- questions:
-  - answer: Yes. Provide the password in `PdfLoadOptions` before creating the `Watermarker`
-      instance.
-    question: Can I extract dimensions from encrypted PDFs?
-  - answer: The Java SDK is platform‑agnostic and runs on any OS with a compatible
-      JDK.
-    question: Does the API work on Linux and Windows?
-  - answer: There is no hard limit; however, processing more than 1,000 pages may
-      benefit from paging the load options to keep memory usage low.
-    question: How many pages can I process in a single call?
-  - answer: Convert points to millimeters by multiplying by 0.3528 (1 pt ≈ 0.3528
-      mm).
-    question: Is there a way to get dimensions in millimeters instead of points?
-  - answer: '`PdfContent` has been available since version 24.5, with performance
-      improvements added in 24.11.'
-    question: What version of GroupDocs.Watermark introduced the `PdfContent` API?
-  type: FAQPage
-tags:
-- pdf dimensions
-- groupdocs watermark
-- java pdf processing
-- document analysis
-title: Cara mendapatkan dimensi PDF GroupDocs.Watermark di Java
+- extract PDF page dimensions Java
+- GroupDocs Watermark setup
+- PDF page width and height
+title: 'Cara Mengekstrak Dimensi Halaman PDF di Java Menggunakan GroupDocs.Watermark:
+  Panduan Lengkap'
 type: docs
 url: /id/java/document-information/get-pdf-page-dimensions-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Cara mendapatkan dimensi PDF GroupDocs.Watermark di Java
+# Cara Mengekstrak Dimensi Halaman PDF di Java Menggunakan GroupDocs.Watermark
 
-Mengekstrak **GroupDocs.Watermark PDF dimensions** adalah kebutuhan umum ketika Anda perlu memvalidasi tata letak, membuat thumbnail, atau menempatkan konten secara dinamis di dalam PDF. Dalam tutorial ini Anda akan melihat secara tepat cara mendapatkan lebar dan tinggi setiap halaman menggunakan GroupDocs.Watermark Java SDK, mengapa pendekatannya efisien, dan trik kinerja apa yang membuat aplikasi Anda tetap responsif bahkan dengan dokumen besar.
+Mengekstrak dimensi halaman tertentu dalam sebuah PDF adalah kebutuhan umum ketika Anda perlu **cara mengekstrak pdf** informasi untuk validasi tata letak, penempatan konten dinamis, atau pelaporan otomatis. Dalam tutorial ini Anda akan belajar cara **cara mengekstrak pdf** lebar dan tinggi halaman menggunakan GroupDocs.Watermark untuk Java, beserta tips praktis dan saran pemecahan masalah.
 
 ## Jawaban Cepat
-- **Perpustakaan apa yang menyediakan ekstraksi dimensi PDF?** GroupDocs.Watermark untuk Java.  
-- **Kelas mana yang menyimpan informasi ukuran halaman?** `PdfPageInfo` yang dikembalikan dari `PdfContent.getPages()`.  
-- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
-- **Bisakah saya membaca PDF yang dilindungi password?** Ya – berikan password melalui `PdfLoadOptions`.  
-- **Apakah API thread‑safe?** Instance `Watermarker` tidak thread‑safe; buat instance terpisah per thread.
+- **Apa metode utama?** Gunakan `PdfContent` dari `Watermarker` untuk membaca ukuran halaman.  
+- **Versi perpustakaan mana yang berfungsi?** GroupDocs.Watermark 24.11 atau yang lebih baru.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
+- **Bisakah saya membaca PDF yang dilindungi kata sandi?** Ya – berikan kata sandi saat menginisialisasi `Watermarker`.  
+- **Apakah thread‑safe?** Muat dokumen sekali per thread dan tutup segera untuk menghindari kebocoran sumber daya.
 
-## Apa itu dimensi PDF GroupDocs.Watermark?
-Dimensi PDF GroupDocs.Watermark mengacu pada nilai lebar dan tinggi (dalam poin) yang menggambarkan ukuran setiap halaman dalam file PDF ketika diproses melalui GroupDocs.Watermark Java SDK. Pengukuran ini penting untuk operasi yang memperhatikan tata letak seperti penempatan watermark atau analisis tingkat halaman.
+## Apa itu dimensi halaman “cara mengekstrak pdf”?
+Ketika kita membicarakan dimensi halaman **cara mengekstrak pdf**, kita merujuk pada pengambilan lebar dan tinggi (dalam poin) setiap halaman dalam sebuah file PDF. Data ini memungkinkan Anda menyesuaikan grafik secara programatik, menempatkan watermark, atau memverifikasi bahwa dokumen memenuhi spesifikasi pencetakan.
 
-## Mengapa menggunakan GroupDocs.Watermark untuk mengekstrak dimensi PDF?
-GroupDocs.Watermark mendukung **lebih dari 50 format input dan output** dan dapat membaca geometri halaman PDF tanpa memuat seluruh dokumen ke memori. Dalam pengujian benchmark, mengekstrak dimensi dari PDF 300‑halaman memakan waktu kurang dari 2 detik pada server 8‑core tipikal, menggunakan kurang dari 150 MB RAM. Efisiensi ini menjadikannya ideal untuk pipeline pemrosesan batch dan layanan pratinjau waktu nyata.
+## Mengapa menggunakan GroupDocs.Watermark untuk Java?
+GroupDocs.Watermark menawarkan API tingkat tinggi yang menyembunyikan parsing PDF tingkat rendah, memberikan hasil yang dapat diandalkan di semua versi PDF. Ia juga terintegrasi mulus dengan Maven, mendukung file yang dilindungi kata sandi, dan memberikan kinerja yang luar biasa untuk dokumen besar.
 
 ## Prasyarat
-- Java Development Kit (JDK) 8 atau lebih baru.  
-- Maven atau Gradle untuk manajemen dependensi.  
-- Akses ke lisensi GroupDocs.Watermark (percobaan atau komersial).  
-- Familiaritas dasar dengan penanganan pengecualian Java.
+- **Java Development Kit (JDK)** 8 atau lebih tinggi.  
+- **Maven** untuk manajemen dependensi.  
+- Pengetahuan dasar Java dan familiaritas dengan menambahkan dependensi Maven.  
 
-## Cara mengekstrak dimensi PDF GroupDocs.Watermark di Java
+## Menyiapkan GroupDocs.Watermark untuk Java
 
-### Bagaimana cara menyiapkan GroupDocs.Watermark untuk Java?
-Pertama, tambahkan pustaka ke proyek Anda. Koordinat Maven adalah `com.groupdocs:groupdocs-watermark:24.11`. Setelah dependensi teratasi, Anda dapat langsung mulai menggunakan API. Pastikan `pom.xml` Anda menyertakan repositori GroupDocs dan Anda menyegarkan proyek sehingga file JAR diunduh dan ditambahkan ke classpath. Anda juga dapat mengunduh versi terbaru langsung dari [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).  
+Sertakan repositori dan dependensi dalam `pom.xml` Anda:
+
 ```xml
 <repositories>
    <repository>
@@ -124,9 +57,14 @@ Pertama, tambahkan pustaka ke proyek Anda. Koordinat Maven adalah `com.groupdocs
 </dependencies>
 ```
 
-### Langkah 1: konfigurasikan opsi pemuatan
-`PdfLoadOptions` memungkinkan Anda menentukan cara PDF dibuka, seperti memberikan password atau membatasi rentang halaman.  
-**Definition anchor:** `PdfLoadOptions` adalah kelas yang mengonfigurasi perilaku pemuatan PDF, termasuk penanganan password dan pemilihan halaman.  
+Anda juga dapat mengunduh JAR terbaru secara langsung dari [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+
+### Langkah-langkah Akuisisi Lisensi
+1. **Free Trial** – mulai mengevaluasi perpustakaan tanpa biaya.  
+2. **Temporary License** – dapatkan kunci dengan batas waktu untuk pengujian lanjutan.  
+3. **Purchase** – dapatkan lisensi komersial untuk penggunaan produksi.
+
+### Inisialisasi Dasar
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -141,9 +79,11 @@ public class InitializeWatermarker {
 }
 ```
 
-### Langkah 2: buat instance Watermarker
-Berikan jalur file dan `loadOptions` ke konstruktor `Watermarker`.  
-**Definition anchor:** `Watermarker` adalah kelas inti GroupDocs.Watermark yang memberi Anda akses ke konten dokumen, fitur watermark, dan manipulasi metadata.  
+## Cara Mengekstrak Dimensi Halaman PDF
+
+Berikut adalah panduan langkah demi langkah yang menunjukkan **cara mengekstrak pdf** ukuran halaman, termasuk lebar dan tinggi.
+
+### Langkah 1: Siapkan Load Options
 ```java
 import com.groupdocs.watermark.options.PdfLoadOptions;
 
@@ -151,9 +91,7 @@ import com.groupdocs.watermark.options.PdfLoadOptions;
 PdfLoadOptions loadOptions = new PdfLoadOptions();
 ```
 
-### Langkah 3: dapatkan konten PDF
-Dapatkan objek `PdfContent`, yang menampilkan koleksi halaman.  
-**Definition anchor:** `PdfContent` mewakili struktur internal dokumen PDF dan menyediakan metode untuk menenumerasi halaman, gambar, dan blok teks.  
+### Langkah 2: Inisialisasi Watermarker dengan Load Options
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -161,9 +99,7 @@ import com.groupdocs.watermark.Watermarker;
 Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
 ```
 
-### Langkah 4: baca dimensi halaman
-`PdfPageInfo` mewakili informasi ukuran satu halaman PDF.  
-Setiap entri dalam `pdfContent.getPages()` mengembalikan objek `PdfPageInfo` yang berisi nilai `getWidth()` dan `getHeight()` yang diukur dalam poin (1 pt = 1/72 inci).  
+### Langkah 3: Akses Konten PDF
 ```java
 import com.groupdocs.watermark.contents.PdfContent;
 
@@ -171,8 +107,7 @@ import com.groupdocs.watermark.contents.PdfContent;
 PdfContent pdfContent = watermarker.getContent(PdfContent.class);
 ```
 
-### Langkah 5: keluarkan dimensi
-Iterasi melalui halaman (atau target indeks tertentu) dan cetak lebar serta tinggi.  
+### Langkah 4: Ambil dan Cetak Dimensi Halaman
 ```java
 // Access dimensions for the first page
 double width = pdfContent.getPages().get_Item(0).getWidth();
@@ -182,63 +117,55 @@ System.out.println("Width of the first page: " + width);
 System.out.println("Height of the first page: " + height);
 ```
 
-### Langkah 6: lepaskan sumber daya
-Selalu tutup instance `Watermarker` untuk membebaskan sumber daya native dan handle file.  
+> **Tips pro:** Lebar dan tinggi dikembalikan dalam poin (1 pt = 1/72 inci). Kalikan dengan 0.3528 untuk mengonversi ke milimeter jika diperlukan.
+
+### Langkah 5: Tutup Watermarker
 ```java
 watermarker.close();
 ```
 
-## Kesalahan umum dan pemecahan masalah
-- **Path file tidak benar** – Periksa kembali bahwa path tersebut absolut atau relatif terhadap direktori kerja Anda.  
-- **Versi PDF tidak didukung** – GroupDocs.Watermark menangani PDF 1.4 sampai 1.7; file yang lebih lama atau rusak dapat memicu `UnsupportedFormatException`.  
-- **Tekanan memori pada file besar** – Gunakan `PdfLoadOptions.setPageRange()` untuk memuat hanya halaman yang Anda perlukan, mengurangi konsumsi RAM.  
-- **Kesalahan password** – Berikan password yang benar melalui `PdfLoadOptions.setPassword("yourPassword")`; jika tidak, `WrongPasswordException` akan dilempar.
+## Kasus Penggunaan Umum untuk Ekstraksi Ukuran Halaman PDF
+1. **Dynamic Layout Adjustments** – Ubah ukuran gambar atau tabel agar sesuai dengan dimensi halaman yang tepat.  
+2. **Print‑Ready Validation** – Pastikan dokumen memenuhi batas ukuran tertentu sebelum dikirim ke printer.  
+3. **Batch Processing** – Loop melalui `pdfContent.getPages()` untuk mengumpulkan dimensi setiap halaman dalam PDF besar.  
 
-## Kasus penggunaan praktis
-1. **Penempatan watermark dinamis** – Mengetahui ukuran halaman yang tepat memungkinkan Anda menghitung watermark yang terpusat atau diagonal tanpa menebak.  
-2. **Validasi siap cetak** – Verifikasi bahwa setiap halaman memenuhi persyaratan 8,5 × 11 inci (612 × 792 pt) sebelum dikirim ke printer.  
-3. **Pembuatan thumbnail** – Gunakan dimensi untuk membuat gambar pratinjau yang diskalakan proporsional untuk portal manajemen dokumen.  
+## Pertimbangan Kinerja
+- **Cache Results**: Jika Anda membutuhkan dimensi untuk banyak halaman secara berulang, simpan mereka dalam peta untuk menghindari pembacaan ulang file.  
+- **Memory Management**: Tutup `Watermarker` segera setelah selesai membaca dimensi, terutama untuk PDF besar.  
+- **Parallel Processing**: Untuk dokumen multi‑halaman, proses setiap halaman dalam thread terpisah setelah mengekstrak daftar dimensi.  
 
-## Pertimbangan kinerja
-- **Cache opsi pemuatan** saat memproses banyak PDF dengan pengaturan yang sama untuk menghindari pembuatan objek berulang.  
-- **Proses halaman secara paralel** hanya setelah mengambil `PdfContent`; setiap `PdfPageInfo` bersifat immutable, sehingga dapat dibaca secara bersamaan dengan aman.  
-- **Hindari pemuatan seluruh dokumen** – `Watermarker` melakukan streaming file; Anda tidak pernah perlu menahan seluruh PDF di memori kecuali secara eksplisit memintanya.
+## Tips Pemecahan Masalah
+- **Incorrect Path** – Verifikasi bahwa `"YOUR_DOCUMENT_DIRECTORY/document.pdf"` mengarah ke file yang ada dan dapat dibaca.  
+- **Unsupported PDF Version** – Pastikan PDF sesuai dengan PDF 1.4 atau lebih baru; versi lama mungkin memerlukan konversi.  
+- **License Errors** – Lisensi yang hilang atau kedaluwarsa akan melempar `LicenseException`. Gunakan lisensi percobaan untuk pengembangan.  
 
-## Pertanyaan yang sering diajukan
+## Pertanyaan yang Sering Diajukan
 
-**Q: Bisakah saya mengekstrak dimensi dari PDF terenkripsi?**  
-A: Ya. Berikan password di `PdfLoadOptions` sebelum membuat instance `Watermarker`.
+**Q: Versi Java minimum apa yang diperlukan untuk GroupDocs.Watermark?**  
+A: Anda memerlukan setidaknya JDK 8 atau lebih tinggi.
 
-**Q: Apakah API bekerja di Linux dan Windows?**  
-A: Java SDK bersifat platform‑agnostic dan berjalan di OS apa pun dengan JDK yang kompatibel.
+**Q: Bagaimana saya dapat menangani file PDF besar secara efisien dengan GroupDocs.Watermark?**  
+A: Proses halaman dalam batch, cache hanya metadata yang diperlukan, dan tutup `Watermarker` segera untuk membebaskan sumber daya.
 
-**Q: Berapa banyak halaman yang dapat saya proses dalam satu panggilan?**  
-A: Tidak ada batas keras; namun, memproses lebih dari 1.000 halaman dapat diuntungkan dengan mempaging opsi pemuatan untuk menjaga penggunaan memori tetap rendah.
+**Q: Bisakah GroupDocs.Watermark menangani PDF yang dilindungi kata sandi?**  
+A: Ya – berikan kata sandi di `PdfLoadOptions` saat membuat `Watermarker`.
 
-**Q: Apakah ada cara untuk mendapatkan dimensi dalam milimeter alih-alih poin?**  
-A: Konversikan poin ke milimeter dengan mengalikan dengan 0.3528 (1 pt ≈ 0.3528 mm).
+**Q: Apakah ada cara untuk mengotomatisasi ekstraksi dimensi untuk semua halaman?**  
+A: Tentu saja. Iterasi melalui `pdfContent.getPages()` dan panggil `getWidth()` / `getHeight()` untuk setiap halaman di dalam loop.
 
-**Q: Versi GroupDocs.Watermark mana yang memperkenalkan API `PdfContent`?**  
-A: `PdfContent` telah tersedia sejak versi 24.5, dengan peningkatan kinerja ditambahkan pada 24.11.
+**Q: Apa masalah umum saat mengekstrak dimensi halaman?**  
+A: Masalah umum meliputi jalur file yang salah, PDF dengan objek halaman yang rusak, atau izin file yang tidak memadai.
 
-## Sumber daya tambahan
-- [Dokumentasi](https://docs.groupdocs.com/watermark/java/)
-- [Referensi API](https://reference.groupdocs.com/watermark/java)
-- [Unduh GroupDocs.Watermark untuk Java](https://releases.groupdocs.com/watermark/java/)
-- [Repositori GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
-- [Forum Dukungan Gratis](https://forum.groupdocs.com/c/watermark/10)
-- [Informasi Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
-
----
-
-**Terakhir Diperbarui:** 2026-10-27  
-**Diuji Dengan:** GroupDocs.Watermark 24.11 for Java  
-**Penulis:** GroupDocs  
+## Sumber Daya Tambahan
+- [Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License Information](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-## Tutorial Terkait
-
-- [Ekstrak Informasi Dokumen Menggunakan GroupDocs.Watermark untuk Java: Panduan Lengkap](/watermark/java/document-information/extract-document-info-groupdocs-watermark-java/)
-- [Akses dan Iterasi Artefak PDF Menggunakan GroupDocs.Watermark di Java untuk Watermark Dokumen](/watermark/java/pdf-document-watermarking/access-iterate-pdf-artifacts-groupdocs-watermark-java/)
-- [Cara Menambahkan Watermark Teks ke PDF Menggunakan GroupDocs.Watermark untuk Java (Panduan 2023)](/watermark/java/pdf-document-watermarking/add-text-watermark-pdf-java/)
+**Terakhir Diperbarui:** 2026-02-05  
+**Diuji Dengan:** GroupDocs.Watermark 24.11 for Java  
+**Penulis:** GroupDocs

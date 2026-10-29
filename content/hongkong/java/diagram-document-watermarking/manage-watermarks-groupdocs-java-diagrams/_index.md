@@ -1,121 +1,45 @@
 ---
-date: '2026-10-27'
-description: 了解如何使用 GroupDocs.Watermark for Java 從 diagram files 刪除 text watermark，並高效偵測
-  image watermark。開發人員的逐步指南。
+date: '2025-12-19'
+description: 學習如何使用 GroupDocs Watermark Maven 於 Java 中管理 .vsdx 等圖表檔案的浮水印，以提升文件完整性並保護智慧財產權。
 keywords:
-- delete text watermark
-- detect image watermark
 - GroupDocs.Watermark Java
-lastmod: '2026-10-27'
-og_description: 使用 GroupDocs.Watermark for Java 從 diagram files 刪除 text watermark。了解如何偵測
-  image watermark、搜尋及使用 code snippets 移除 watermarks。
-og_image_alt: Diagram file with watermark management using GroupDocs.Watermark for
-  Java
-og_title: 快速使用 Java 刪除 diagram files 中的 text watermark
-schemas:
-- author: GroupDocs
-  dateModified: '2026-10-27'
-  description: Learn how to delete text watermark from diagram files using GroupDocs.Watermark
-    for Java and detect image watermark efficiently. Step‑by‑step guide for developers.
-  headline: How to delete text watermark in diagrams with Java
-  type: TechArticle
-- description: Learn how to delete text watermark from diagram files using GroupDocs.Watermark
-    for Java and detect image watermark efficiently. Step‑by‑step guide for developers.
-  name: How to delete text watermark in diagrams with Java
-  steps:
-  - name: '**Java Development Kit (JDK)** 8 or higher.'
-    text: '**Java Development Kit (JDK)** 8 or higher.'
-  - name: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-    text: '**IDE** – IntelliJ IDEA, Eclipse, or any editor you prefer.'
-  - name: '**GroupDocs.Watermark for Java** – the library JAR(s) must be on your classpath.'
-    text: '**GroupDocs.Watermark for Java** – the library JAR(s) must be on your classpath.'
-  - name: '**Install the library** – ensure the Maven repository and dependency entries
-      are present, or place the JAR files in `libs/` and add them to your project’s
-      build path.'
-    text: '**Install the library** – ensure the Maven repository and dependency entries
-      are present, or place the JAR files in `libs/` and add them to your project’s
-      build path.'
-  - name: '**Initialize the API** – create a `Watermarker` instance; this object is
-      the entry point for loading diagrams and performing watermark operations.'
-    text: '**Initialize the API** – create a `Watermarker` instance; this object is
-      the entry point for loading diagrams and performing watermark operations.'
-  - name: '**Enterprise software integration** – embed watermark management into document‑centric
-      business applications to protect proprietary diagrams.'
-    text: '**Enterprise software integration** – embed watermark management into document‑centric
-      business applications to protect proprietary diagrams.'
-  - name: '**Content Management Systems (CMS)** – automate detection of unauthorized
-      logos before publishing user‑generated diagrams.'
-    text: '**Content Management Systems (CMS)** – automate detection of unauthorized
-      logos before publishing user‑generated diagrams.'
-  - name: '**Legal document handling** – add or delete watermarks at different stages
-      of a case file workflow, ensuring compliance with confidentiality policies.'
-    text: '**Legal document handling** – add or delete watermarks at different stages
-      of a case file workflow, ensuring compliance with confidentiality policies.'
-  type: HowTo
-- questions:
-  - answer: Yes – combine `TextSearchCriteria` and `ImageDctHashSearchCriteria` with
-      the `or()` operator to locate both types in a single pass.
-    question: Can I search for both text and images simultaneously?
-  - answer: Absolutely. The API isolates watermark objects and removes them, leaving
-      the original diagram structure intact.
-    question: Is it possible to delete watermarks without damaging the diagram?
-  - answer: Yes – it supports over 20 formats, including `.vsdx`, `.vdx`, `.drawio`,
-      and `.svg`, enabling broad‑range diagram management.
-    question: Does GroupDocs.Watermark support multiple diagram formats?
-  - answer: Use batch processing loops, reuse a single `Watermarker` instance where
-      possible, and tune `LoadOptions` to stream pages instead of loading whole files.
-    question: How do I handle large volumes of documents efficiently?
-  - answer: Yes – the library is headless and can be called from Maven, Gradle, or
-      any build script to validate diagram assets automatically.
-    question: Can I integrate watermark detection into a CI/CD pipeline?
-  type: FAQPage
-tags:
-- watermark management
-- GroupDocs.Watermark
-- Java diagram processing
-title: 如何使用 Java 刪除圖表中的 text watermark
+- manage watermarks in diagrams
+- Java diagram document watermarking
+- groupdocs watermark maven
+title: groupdocs watermark Maven – 使用 Java 管理圖表水印
 type: docs
 url: /zh-hant/java/diagram-document-watermarking/manage-watermarks-groupdocs-java-diagrams/
 weight: 1
 ---
 
-# 如何在 Java 中刪除圖表的文字浮水印
+# groupdocs watermark maven – 使用 Java 管理圖表浮水印
 
-管理文件中的浮水印對於保護智慧財產權與維持文件完整性至關重要。在本教學中，您將學會如何使用 GroupDocs.Watermark for Java 從 `.vsdx` 等圖表檔案中 **刪除文字浮水印**，以及在需要時 **偵測圖片浮水印**。無論是建置企業級文件管線或是自動化簡易批次工作，這些技巧都能讓您對圖表浮水印進行精細控制。
-
-**您將學到的內容**
-- 設定 GroupDocs.Watermark 函式庫
-- 使用特定選項載入圖表文件
-- 搜尋並刪除文字浮水印
-- 偵測圖片浮水印並將其移除
-- 大規模處理的最佳實踐技巧
-
-準備好深入了解了嗎？先把環境建好吧。
+在文件中管理浮水印對於保護智慧財產權與維持文件完整性至關重要。**在本教學中，我們將示範如何使用 groupdocs watermark maven 高效載入、搜尋及移除 `.vsdx` 等圖表檔案中的浮水印**。無論您是開發企業軟體或自動化文件工作流程，精通這些技巧都能讓您全面掌控圖表浮水印的管理。
 
 ## 快速解答
-- **我可以一次刪除文字與圖片浮水印嗎？** 可以 – 只要將 `TextSearchCriteria` 與 `ImageDctHashSearchCriteria` 以 `or()` 條件結合即可。  
-- **函式庫會將整個圖表載入記憶體嗎？** 不會 – 它會串流頁面，支援最高 500 MB 的檔案而不會一次佔用全部記憶體。  
-- **支援哪些圖表格式？** 超過 20 種格式，包括 `.vsdx`、`.vdx`、`.drawio`。  
-- **正式環境需要授權嗎？** 非試用使用時必須擁有有效的 GroupDocs.Watermark 授權。  
-- **可以在 CI/CD 管線中執行嗎？** 完全可以 – API 為無頭模式，支援 Windows、Linux 與 macOS。
+- **需要的函式庫是什麼？** GroupDocs.Watermark for Java（可透過 Maven 取得）。  
+- **支援哪些圖表格式？** `.vsdx`、`.vdx` 以及其他 Visio 格式。  
+- **可以同時搜尋文字與圖片浮水印嗎？** 可以 – 使用 `or()` 結合搜尋條件。  
+- **正式環境需要授權嗎？** 需要有效的 GroupDocs.Watermark 授權。  
+- **如何將其整合至 Maven？** 在下方加入儲存庫與相依性設定。
 
-## 什麼是刪除文字浮水印？
-刪除文字浮水印指的是移除文件中以文字形式呈現的覆蓋物，這類浮水印通常用於標示所有權、機密性或草稿狀態。於 GroupDocs.Watermark 中，此操作透過搜尋條件定位浮水印物件，然後對取得的集合呼叫 `clear()` 來完成。
+## 什麼是 groupdocs watermark maven？
+`groupdocs watermark maven` 指的是基於 Maven 的 GroupDocs.Watermark Java 函式庫整合。只要在 `pom.xml` 中聲明此函式庫，Maven 會自動解析所有必要的二進位檔，讓您專注於載入圖表、搜尋浮水印以及以程式方式移除它們的程式碼。
 
-## 為什麼要偵測圖片浮水印？
-偵測圖片浮水印可讓您找出嵌入圖表中的商標或印章圖形。這對於合規檢查、品牌保護與自動化內容審核相當重要。GroupDocs.Watermark 採用感知雜湊（DCT）快速且精確地比對圖像。
+## 為何使用 GroupDocs.Watermark 來管理圖表浮水印？
+- **功能完整的 API** – 支援多種圖表類型的文字、圖片與形狀浮水印。  
+- **精準移除** – 在不破壞原始圖表版面配置的情況下消除浮水印。  
+- **具擴充性** – 適用於批次處理大量圖表。  
+- **Maven 友好** – 簡易的相依性管理，保持專案整潔。
 
 ## 前置條件
-在開始之前，請確認您已具備以下項目：
-1. **Java Development Kit (JDK)** 8 或更新版本。  
-2. **IDE** – IntelliJ IDEA、Eclipse，或您慣用的任何編輯器。  
-3. **GroupDocs.Watermark for Java** – 必須將函式庫 JAR 加入 classpath。  
+1. **Java Development Kit (JDK) 8+** – 確保與函式庫相容。  
+2. **IDE** – 如 IntelliJ IDEA、Eclipse 或任何支援 Java 的編輯器。  
+3. **GroupDocs.Watermark for Java** – 透過 Maven（建議）或直接下載 JAR 加入。  
 
 ### 必要的函式庫與相依性
-您可以透過 Maven 加入函式庫，或手動下載 JAR。
-
 #### Maven 設定
-在 `pom.xml` 檔案中加入以下設定：
+將以下設定加入您的 `pom.xml` 檔案：
 
 ```xml
 <repositories>
@@ -136,21 +60,15 @@ weight: 1
 ```
 
 #### 直接下載
-或是從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載最新版本。
+或者，從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載最新版本。
 
-### 授權取得
-- **免費試用** – 無需授權金鑰即可測試全部功能。  
-- **臨時授權** – 申請限時金鑰以供評估使用。  
-- **購買授權** – 取得永久或訂閱授權以供正式環境使用。
+### 取得授權
+- **免費試用：** 使用試用授權測試函式庫。  
+- **臨時授權：** 申請短期金鑰以進行評估。  
+- **購買：** 取得正式授權以無限制使用。  
 
-## 設定 GroupDocs.Watermark for Java
-1. **安裝函式庫** – 確認 Maven 套件庫與相依性已正確設定，或將 JAR 放置於 `libs/` 並加入專案建置路徑。  
-2. **初始化 API** – 建立 `Watermarker` 實例；此物件是載入圖表與執行浮水印操作的入口。
-
-## 如何在 Java 中刪除圖表的文字浮水印
-要刪除文字浮水印，先以 `Watermarker` 載入圖表，建立匹配浮水印文字的 `TextSearchCriteria`，取得 `PossibleWatermarkCollection`，然後對其呼叫 `clear()`。此動作只會移除指定的文字覆蓋層，其他圖表內容保持不變。
-
-`Watermarker` 類別代表記憶體中的單一文件，提供載入、搜尋與修改浮水印的方法。
+## 使用 groupdocs watermark maven 載入圖表文件
+載入圖表文件是執行任何浮水印操作的第一步。以下是一個最小範例，示範如何使用 `DiagramLoadOptions` 建立 `Watermarker` 實例。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -166,14 +84,14 @@ public class LoadDiagramDocument {
     }
 }
 ```
+
 - **參數：**  
-  - `inputFilePath`：您的 `.vsdx` 檔案路徑。  
-  - `loadOptions`：設定文件載入方式（例如頁面範圍、密碼）。
+  - `inputFilePath` – 您的 `.vsdx` 檔案路徑。  
+  - `loadOptions` – 讓您控制圖表的解析方式（例如密碼保護）。  
 
-## 如何在圖表檔案中偵測圖片浮水印？
-偵測圖片浮水印的流程是先以參考圖建立 `ImageDctHashSearchCriteria`，再使用 `Watermarker` 搜尋圖表。API 會為每個嵌入的圖像產生感知雜湊，並與參考圖比較，回傳相似度分數，讓您辨識並移除不需要的商標或印章。
-
-`ImageDctHashSearchCriteria` 會產生參考圖的雜湊，並與圖表中嵌入的圖像進行比對，回傳相似度分數。
+## 使用 groupdocs watermark maven 搜尋浮水印
+### 文字浮水印
+要定位文字型浮水印，請定義 `TextSearchCriteria` 並對圖表的第一頁進行查詢。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -195,14 +113,13 @@ public class SearchTextWatermarks {
     }
 }
 ```
+
 - **關鍵方法：**  
-  - `TextSearchCriteria` – 建立文字浮水印的搜尋條件。  
-  - `PossibleWatermarkCollection` – 保存任何搜尋操作的結果集合。
+  - `TextSearchCriteria` – 指定要搜尋的精確文字。  
+  - `PossibleWatermarkCollection` – 儲存找到的所有匹配項目。  
 
-## 如何在找到浮水印後將其移除？
-一旦定位到浮水印，只需對搜尋返回的 `PossibleWatermarkCollection` 呼叫 `clear()` 即可。此操作會刪除浮水印物件，同時保留圖表的其他元素，確保原始內容完整不變。
-
-`clear()` 會移除集合中的所有浮水印，同時保留圖表其餘內容。
+### 圖片浮水印
+如果圖表中包含標誌或圖片浮水印，請使用 `ImageDctHashSearchCriteria` 與參考圖像進行比對。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -225,40 +142,12 @@ public class SearchImageWatermarks {
     }
 }
 ```
-- **關鍵方法：** `clear()` – 在不改變其他圖表元素的前提下，刪除提供集合中的全部浮水印。
 
-## 實務應用
-1. **企業軟體整合** – 將浮水印管理嵌入以文件為中心的業務應用，保護專有圖表。  
-2. **內容管理系統 (CMS)** – 在發佈使用者產生的圖表前，自動偵測未授權的商標。  
-3. **法律文件處理** – 在案件流程的不同階段加入或刪除浮水印，確保符合機密政策。
+- **關鍵方法：**  
+  - `ImageDctHashSearchCriteria` – 為參考圖像產生感知雜湊，以實現穩健的匹配。  
 
-## 常見問題與除錯
-- **大型檔案** – 若遇到 `OutOfMemoryError`，請在 `LoadOptions` 中提升 `maxMemory` 設定。  
-- **受密碼保護的圖表** – 在 `LoadOptions` 中提供密碼即可開啟檔案。  
-- **找不到圖片雜湊匹配** – 確認參考圖的解析度足夠；低解析度圖像可能產生弱雜湊。
-
-## 常見問答
-
-**Q: 我可以同時搜尋文字與圖片嗎？**  
-A: 可以 – 只要將 `TextSearchCriteria` 與 `ImageDctHashSearchCriteria` 以 `or()` 運算子結合，即可在一次搜尋中定位兩種浮水印。
-
-**Q: 能否在不損壞圖表的前提下刪除浮水印？**  
-A: 完全可以。API 會隔離浮水印物件並將其移除，保留原始圖表結構不變。
-
-**Q: GroupDocs.Watermark 支援多種圖表格式嗎？**  
-A: 支援超過 20 種格式，包括 `.vsdx`、`.vdx`、`.drawio`、`.svg`，可廣泛管理各類圖表。
-
-**Q: 如何有效處理大量文件？**  
-A: 使用批次處理迴圈，盡可能重複利用單一 `Watermarker` 實例，並調整 `LoadOptions` 以串流頁面而非一次載入整個檔案。
-
-**Q: 能將浮水印偵測整合到 CI/CD 管線嗎？**  
-A: 能 – 函式庫為無頭模式，可從 Maven、Gradle 或任何建置腳本呼叫，自動驗證圖表資產。
-
----
-
-**最後更新：** 2026-10-27  
-**測試環境：** GroupDocs.Watermark 23.6 for Java  
-**作者：** GroupDocs
+## 移除浮水印
+當您識別出不需要的浮水印後，即可將其清除並儲存圖表的乾淨副本。
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -287,8 +176,40 @@ public class RemoveWatermarks {
 }
 ```
 
-## 相關教學
+- **關鍵方法：** `clear()` 會移除所有符合組合條件的浮水印，保持圖表完整不變。
 
-- [How to Add Text Watermarks to Diagrams Using GroupDocs.Watermark in Java](/watermark/java/diagram-document-watermarking/add-text-watermarks-diagrams-groupdocs-watermark-java/)
-- [Guide to Adding Watermarks to Diagrams Using GroupDocs.Watermark for Java](/watermark/java/diagram-document-watermarking/add-watermarks-groupdocs-diagrams-java/)
-- [How to Retrieve Document Information Using GroupDocs.Watermark for Java: A Step-by-Step Guide](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)
+## 實務應用
+1. **企業軟體整合** – 將浮水印管理嵌入商業應用，以保護專有圖表。  
+2. **內容管理系統 (CMS)** – 在發佈前自動偵測並移除未授權的標誌。  
+3. **法律文件工作流程** – 在合約處理的不同階段加入或移除浮水印。  
+
+## 常見問題與故障排除
+- **授權錯誤：** 在建立 `Watermarker` 前，確保正確引用授權檔案。  
+- **大型檔案：** 使用串流 API 或將 JVM 堆積大小提升（如 `-Xmx2g`）以處理超過 100 MB 的圖表。  
+- **找不到浮水印：** 確認搜尋條件（文字大小寫、圖片相似度閾值）與實際浮水印內容相符。  
+
+## 常見問答
+
+**Q: 可以同時搜尋文字與圖片嗎？**  
+A: 可以。如移除範例所示，使用 `or()` 結合條件。
+
+**Q: 移除浮水印會不會影響圖表版面配置？**  
+A: 絕對不會。API 精準定位浮水印物件，保留其他所有圖表元素。
+
+**Q: GroupDocs.Watermark 支援哪些圖表格式？**  
+A: 支援 Visio 格式如 `.vsdx`、`.vdx`，以及其他向量圖表類型。
+
+**Q: 如何有效處理數百個圖表？**  
+A: 實作批次迴圈，盡可能重複使用單一 `Watermarker` 實例，並考慮使用 Java 的 `ExecutorService` 進行平行處理。
+
+**Q: 能否將浮水印偵測整合至 CI/CD 流程？**  
+A: 可以。將 Java 程式碼片段加入建置腳本（例如 Maven 插件或 Gradle 任務），於部署前驗證圖表。
+
+## 結論
+透過 **groupdocs watermark maven**，您即可使用 Java 以強大且受 Maven 管理的方式載入、搜尋與移除圖表檔案中的浮水印。此功能提升文件安全性、簡化內容工作流程，且能輕鬆擴展至大型文件集合。
+
+---
+
+**最後更新：** 2025-12-19  
+**測試環境：** GroupDocs.Watermark 24.11 for Java  
+**作者：** GroupDocs
