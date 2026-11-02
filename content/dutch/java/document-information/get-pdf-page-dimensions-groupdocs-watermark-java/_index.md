@@ -1,107 +1,45 @@
 ---
-date: '2026-11-01'
-description: Leer hoe u pdf-pagina-afmetingen kunt extraheren in Java met GroupDocs.Watermark.
-  Stapsgewijze installatie, code-fragmenten en praktische tips.
+date: '2026-02-05'
+description: Leer hoe u pdf-paginamaten kunt extraheren, de breedte en hoogte van
+  pdf-pagina's kunt verkrijgen en de pdf-grootte kunt lezen met GroupDocs.Watermark
+  voor Java.
 keywords:
-- pdf page dimensions java
-- groupdocs watermark java
-- pdf page size extraction
-- java pdf processing
-lastmod: '2026-11-01'
-og_description: Pdf-pagina-afmetingen extraheren in Java met GroupDocs.Watermark.
-  Volg deze gids voor installatie, code en prestatie-tips.
-og_image_alt: Guide showing Java code extracting PDF page dimensions with GroupDocs.Watermark
-og_title: Pdf-pagina-afmetingen extraheren in Java met GroupDocs
-schemas:
-- author: GroupDocs
-  dateModified: '2026-11-01'
-  description: Learn how to extract pdf page dimensions in Java with GroupDocs.Watermark.
-    Step‑by‑step setup, code snippets, and real‑world tips.
-  headline: Extract pdf page dimensions in Java using GroupDocs.Watermark
-  type: TechArticle
-- description: Learn how to extract pdf page dimensions in Java with GroupDocs.Watermark.
-    Step‑by‑step setup, code snippets, and real‑world tips.
-  name: Extract pdf page dimensions in Java using GroupDocs.Watermark
-  steps:
-  - name: set up load options
-    text: '`PdfLoadOptions` lets you fine‑tune how the file is opened (e.g., password
-      handling, memory usage).'
-  - name: initialize the watermarker
-    text: Pass the file path and the `loadOptions` instance to the `Watermarker` constructor.
-      `Watermarker` is the core class that loads a document and provides access to
-      its content for processing.
-  - name: retrieve PDF content
-    text: '`PdfContent` provides direct access to the document’s page collection.'
-  - name: read and print page dimensions
-    text: Call `getPages()` to obtain the page list, then use `getWidth()` and `getHeight()`
-      on the target page object. `getPages()` returns a collection of page objects
-      for the PDF. Each page object offers `getWidth()` and `getHeight()` methods
-      that return the page dimensions in points.
-  - name: close the watermarker
-    text: Always release resources by invoking `close()` on the `Watermarker` instance.
-      `close()` releases all resources held by the Watermarker, ensuring proper cleanup.
-  type: HowTo
-- questions:
-  - answer: JDK 8 or higher is required; the library also runs on newer Java 11, 17,
-      and 21 runtimes.
-    question: What is the minimum Java version required for GroupDocs.Watermark?
-  - answer: Use the streaming API (as shown above) and process pages in batches, which
-      keeps memory consumption under 50 MB even for 10 000‑page documents.
-    question: How can I efficiently handle very large PDF files?
-  - answer: Yes – supply the password via `PdfLoadOptions.setPassword("yourPassword")`
-      before creating the `Watermarker`.
-    question: Does GroupDocs.Watermark support password‑protected PDFs?
-  - answer: Absolutely. Iterate over `pdfContent.getPages()` and call `getWidth()`
-      / `getHeight()` for each page inside a loop.
-    question: Can I extract dimensions for all pages automatically?
-  - answer: Common issues include incorrect file paths, missing read permissions,
-      or using an outdated library version that lacks support for newer PDF specifications.
-    question: What are typical pitfalls when extracting page dimensions?
-  type: FAQPage
-tags:
-- pdf page dimensions
-- groupdocs watermark
-- java pdf
-- document analysis
-title: Pdf-pagina-afmetingen extraheren in Java met GroupDocs.Watermark
+- extract PDF page dimensions Java
+- GroupDocs Watermark setup
+- PDF page width and height
+title: 'Hoe PDF-pagina‑afmetingen te extraheren in Java met GroupDocs.Watermark: Een
+  volledige gids'
 type: docs
 url: /nl/java/document-information/get-pdf-page-dimensions-groupdocs-watermark-java/
 weight: 1
 ---
 
-# PDF-paginamaten extraheren in Java met GroupDocs.Watermark
+# Hoe PDF-paginamaten te extraheren in Java met GroupDocs.Watermark
 
-## Inleiding
-
-Het extraheren van **pdf page dimensions java** is een veelvoorkomende vereiste wanneer je lay-outs moet aanpassen, miniaturen moet genereren of print‑klare bestanden moet valideren. In deze gids leer je hoe je GroupDocs.Watermark voor Java instelt, de breedte en hoogte van elke pagina opvraagt, en best‑practice prestatie‑trucs toepast. Aan het einde kun je exacte paginamaten uit PDF‑bestanden van elke grootte direct in je Java‑applicatie halen.
+Het extraheren van de afmetingen van specifieke pagina's binnen een PDF is een veelvoorkomende eis wanneer je **hoe pdf te extraheren** informatie nodig hebt voor lay-outvalidatie, dynamische contentplaatsing of geautomatiseerde rapportage. In deze tutorial leer je hoe je **hoe pdf te extraheren** paginabreedte en -hoogte kunt bepalen met GroupDocs.Watermark voor Java, inclusief praktische tips en probleemoplossend advies.
 
 ## Snelle antwoorden
-- **Welke bibliotheek behandelt pdf page dimensions java?** GroupDocs.Watermark for Java.  
-- **Minimale Java‑versie?** JDK 8 of nieuwer.  
-- **Hoeveel regels code zijn nodig?** Slechts vijf beknopte statements na initialisatie.  
-- **Kan het grote PDF‑bestanden verwerken?** Ja – het streamt pagina's, zodat het geheugenverbruik laag blijft, zelfs voor bestanden met 10 000 pagina's.  
-- **Heb ik een licentie nodig voor productie?** Een commerciële licentie is vereist; een gratis proefversie is beschikbaar voor evaluatie.
+- **Wat is de primaire methode?** Gebruik `PdfContent` van de `Watermarker` om de paginagrootte te lezen.  
+- **Welke bibliotheekversie werkt?** GroupDocs.Watermark 24.11 of later.  
+- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor testen; een commerciële licentie is vereist voor productie.  
+- **Kan ik wachtwoord‑beveiligde PDF's lezen?** Ja – geef het wachtwoord op bij het initialiseren van `Watermarker`.  
+- **Is het thread‑veilig?** Laad het document één keer per thread en sluit het snel om resource‑lekken te voorkomen.
 
-## Wat is pdf page dimensions java?
-De term **pdf page dimensions java** beschrijft de numerieke breedte en hoogte (in points) van elke pagina in een PDF wanneer deze via Java‑code wordt benaderd.  
+## Wat is “hoe pdf te extraheren” paginamaten?
+Wanneer we het hebben over **hoe pdf te extraheren** paginamaten, verwijzen we naar het ophalen van de breedte en hoogte (in points) van elke pagina in een PDF‑bestand. Deze gegevens stellen je in staat om programmatisch graphics aan te passen, watermerken te plaatsen of te verifiëren dat een document voldoet aan de afdrukspecificaties.
 
-Je kunt deze waarden direct ophalen zonder het hele document te renderen, wat layout‑bewuste verwerking snel en betrouwbaar maakt.
+## Waarom GroupDocs.Watermark voor Java gebruiken?
+GroupDocs.Watermark biedt een high‑level API die de lage‑niveau PDF‑parsing abstraheert, waardoor je betrouwbare resultaten krijgt over verschillende PDF‑versies heen. Het integreert bovendien naadloos met Maven, ondersteunt wachtwoord‑beveiligde bestanden en levert uitstekende prestaties voor grote documenten.
 
-## Waarom pdf page dimensions in Java extraheren?
-GroupDocs.Watermark kan afmetingen uit PDF's halen met **tot 10 000 pagina's in minder dan 2 seconden per 100 pagina's** op een standaard 8‑core server, en het laadt nooit het volledige bestand in het geheugen. Deze gekwantificeerde prestatie stelt je in staat batch‑verwerkingspijplijnen te bouwen die responsief blijven, zelfs bij enorme documentcollecties.
-
-## Vereisten
-
-- **GroupDocs.Watermark** bibliotheek — versie 24.11 of later.  
-- Java Development Kit 8 of hoger.  
-- Een IDE zoals IntelliJ IDEA of Eclipse.  
-- Bekendheid met Maven‑dependency‑beheer (handig maar niet verplicht).
+## Voorvereisten
+- **Java Development Kit (JDK)** 8 of hoger.  
+- **Maven** voor afhankelijkheidsbeheer.  
+- Basiskennis van Java en vertrouwdheid met het toevoegen van Maven‑afhankelijkheden.  
 
 ## GroupDocs.Watermark voor Java instellen
 
-Voeg de Maven‑coördinaten toe aan je `pom.xml`:
+Include the repository and dependency in your `pom.xml`:
 
-**Maven‑configuratie:**  
 ```xml
 <repositories>
    <repository>
@@ -120,127 +58,14 @@ Voeg de Maven‑coördinaten toe aan je `pom.xml`:
 </dependencies>
 ```
 
-Als je de voorkeur geeft aan een handmatige download, haal dan de nieuwste binaries van de officiële release‑pagina:  
-[GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)
+U kunt de nieuwste JAR ook direct downloaden van [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
-### Stappen voor het verkrijgen van een licentie
-1. **Gratis proefversie** – evalueer de bibliotheek zonder kosten.  
-2. **Tijdelijke licentie** – verkrijg een kort‑lopende sleutel voor uitgebreide tests.  
-3. **Aankoop** – beveilig een commerciële licentie voor productie‑implementaties.
+### Stappen voor licentie‑acquisitie
+1. **Gratis proefversie** – begin de bibliotheek te evalueren zonder kosten.  
+2. **Tijdelijke licentie** – verkrijg een tijdelijk beperkte sleutel voor uitgebreid testen.  
+3. **Aankoop** – zorg voor een commerciële licentie voor productiegebruik.
 
-## Implementatie‑gids
-
-### Hoe pdf page dimensions in Java extraheren?
-
-Laad de PDF, krijg toegang tot de inhoud, en lees de grootte van de gewenste pagina – alles in vijf eenvoudige statements.  
-
-Hieronder vind je een stap‑voor‑stap walkthrough die precies laat zien hoe elk onderdeel samenwerkt.
-
-#### Stap 1: laadopties instellen  
-`PdfLoadOptions` stelt je in staat om fijn af te stemmen hoe het bestand wordt geopend (bijv. wachtwoordafhandeling, geheugengebruik).  
-
-```java
-import com.groupdocs.watermark.options.PdfLoadOptions;
-
-// Initialize PdfLoadOptions
-PdfLoadOptions loadOptions = new PdfLoadOptions();
-```
-
-#### Stap 2: de watermarker initialiseren  
-Geef het bestandspad en de `loadOptions`‑instantie door aan de `Watermarker`‑constructor.  
-`Watermarker` is de kernklasse die een document laadt en toegang tot de inhoud biedt voor verwerking.  
-
-```java
-import com.groupdocs.watermark.Watermarker;
-
-// Replace with your actual document path
-Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
-```
-
-#### Stap 3: PDF‑inhoud ophalen  
-`PdfContent` biedt directe toegang tot de paginacollectie van het document.  
-
-```java
-import com.groupdocs.watermark.contents.PdfContent;
-
-// Get PdfContent from Watermarker
-PdfContent pdfContent = watermarker.getContent(PdfContent.class);
-```
-
-#### Stap 4: paginamaten lezen en afdrukken  
-Roep `getPages()` aan om de paginalijst te verkrijgen, en gebruik vervolgens `getWidth()` en `getHeight()` op het doelpagina‑object.  
-`getPages()` retourneert een collectie van pagina‑objecten voor de PDF. Elk pagina‑object biedt de methoden `getWidth()` en `getHeight()` die de paginamaten in points teruggeven.  
-
-```java
-// Access dimensions for the first page
-double width = pdfContent.getPages().get_Item(0).getWidth();
-double height = pdfContent.getPages().get_Item(0).getHeight();
-
-System.out.println("Width of the first page: " + width);
-System.out.println("Height of the first page: " + height);
-```
-
-#### Stap 5: de watermarker sluiten  
-Maak altijd de resources vrij door `close()` aan te roepen op de `Watermarker`‑instantie.  
-`close()` geeft alle resources vrij die door de Watermarker worden gehouden, waardoor een juiste opruiming wordt gegarandeerd.  
-
-```java
-watermarker.close();
-```
-
-### Veelvoorkomende probleemoplossingstips
-- Controleer of het bestandspad absoluut is of correct wordt opgelost ten opzichte van de werkdirectory.  
-- Vang `IOException` en `WatermarkException` op om onleesbare bestanden of niet‑ondersteunde PDF‑versies af te handelen.  
-- Voor met wachtwoord beveiligde PDF's, geef het wachtwoord door via `PdfLoadOptions.setPassword("yourPassword")` vóór het initialiseren van de `Watermarker`.
-
-## Praktische toepassingen
-
-Het begrijpen van paginamaten opent vele real‑world scenario's:
-
-1. **Dynamische PDF‑editors** – automatisch tekstvakken of afbeeldingen aanpassen aan het paginacanvas.  
-2. **Print‑klare validatie** – zorg ervoor dat elke pagina voldoet aan de 8,5 × 11 inch (612 × 792 points) eis voordat deze naar een printer wordt gestuurd.  
-3. **Miniatuurgeneratie** – bereken de juiste schaalfactor zodat voorbeeldafbeeldingen de beeldverhouding behouden.  
-
-## Prestatie‑overwegingen
-
-Wanneer je werkt met grote PDF's of veel bestanden parallel moet verwerken, houd dan deze tips in gedachten:
-
-- **Cache laadopties** – hergebruik een enkele `PdfLoadOptions`‑instantie voor meerdere documenten wanneer de instellingen identiek zijn.  
-- **Pagina's streamen** – GroupDocs.Watermark leest pagina's op aanvraag, zodat je kunt itereren over `pdfContent.getPages()` zonder het hele bestand te laden.  
-- **Multi‑threading** – verdeel werk op paginaniveau over een thread‑pool; de bibliotheek is thread‑veilig voor alleen‑lezen operaties.  
-
-## Veelgestelde vragen
-
-**Q: Wat is de minimale Java‑versie die vereist is voor GroupDocs.Watermark?**  
-A: JDK 8 of hoger is vereist; de bibliotheek draait ook op nieuwere Java 11, 17, en 21 runtimes.
-
-**Q: Hoe kan ik zeer grote PDF‑bestanden efficiënt verwerken?**  
-A: Gebruik de streaming‑API (zoals hierboven getoond) en verwerk pagina's in batches, waardoor het geheugenverbruik onder 50 MB blijft, zelfs voor documenten met 10 000 pagina's.
-
-**Q: Ondersteunt GroupDocs.Watermark wachtwoord‑beveiligde PDF's?**  
-A: Ja – geef het wachtwoord door via `PdfLoadOptions.setPassword("yourPassword")` vóór het aanmaken van de `Watermarker`.
-
-**Q: Kan ik afmetingen voor alle pagina's automatisch extraheren?**  
-A: Absoluut. Iterate over `pdfContent.getPages()` en roep `getWidth()` / `getHeight()` aan voor elke pagina binnen een lus.
-
-**Q: Wat zijn typische valkuilen bij het extraheren van paginamaten?**  
-A: Veelvoorkomende problemen zijn onjuiste bestandspaden, ontbrekende leesrechten, of het gebruik van een verouderde bibliotheekversie die geen ondersteuning biedt voor nieuwere PDF‑specificaties.
-
-## Aanvullende bronnen
-
-- [Documentation](https://docs.groupdocs.com/watermark/java/)  
-- [API reference](https://reference.groupdocs.com/watermark/java)  
-- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)  
-- [GitHub repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Free support forum](https://forum.groupdocs.com/c/watermark/10)  
-- [Temporary license information](https://purchase.groupdocs.com/temporary-license/)
-
----
-
-**Laatst bijgewerkt:** 2026-11-01  
-**Getest met:** GroupDocs.Watermark 24.11 for Java  
-**Auteur:** GroupDocs
-
+### Basisinitialisatie
 ```java
 import com.groupdocs.watermark.Watermarker;
 
@@ -255,8 +80,93 @@ public class InitializeWatermarker {
 }
 ```
 
-## Gerelateerde tutorials
+## Hoe PDF-paginamaten te extraheren
 
-- [Documentinformatie‑extractie‑tutorials voor GroupDocs.Watermark Java](/watermark/java/document-information/)  
-- [Meester PDF‑artefact‑extractie met GroupDocs.Watermark Java](/watermark/java/pdf-document-watermarking/extract-pdf-artifacts-groupdocs-watermark-java/)  
-- [Meester PDF‑manipulatie: GroupDocs.Watermark implementeren in Java voor documentwatermarking en -beheer](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-manipulation-guide/)
+Hieronder staat een stapsgewijze walkthrough die laat zien **hoe pdf te extraheren** paginagrootte, inclusief zowel breedte als hoogte.
+
+### Stap 1: Laadopties instellen
+```java
+import com.groupdocs.watermark.options.PdfLoadOptions;
+
+// Initialize PdfLoadOptions
+PdfLoadOptions loadOptions = new PdfLoadOptions();
+```
+
+### Stap 2: Watermarker initialiseren met laadopties
+```java
+import com.groupdocs.watermark.Watermarker;
+
+// Replace with your actual document path
+Watermarker watermarker = new Watermarker("YOUR_DOCUMENT_DIRECTORY/document.pdf", loadOptions);
+```
+
+### Stap 3: Toegang tot PDF‑inhoud
+```java
+import com.groupdocs.watermark.contents.PdfContent;
+
+// Get PdfContent from Watermarker
+PdfContent pdfContent = watermarker.getContent(PdfContent.class);
+```
+
+### Stap 4: Paginamaten ophalen en afdrukken
+```java
+// Access dimensions for the first page
+double width = pdfContent.getPages().get_Item(0).getWidth();
+double height = pdfContent.getPages().get_Item(0).getHeight();
+
+System.out.println("Width of the first page: " + width);
+System.out.println("Height of the first page: " + height);
+```
+
+> **Pro tip:** De breedte en hoogte worden geretourneerd in points (1 pt = 1/72 inch). Vermenigvuldig met 0.3528 om naar millimetres te converteren indien nodig.
+
+### Stap 5: Watermarker sluiten
+```java
+watermarker.close();
+```
+
+## Veelvoorkomende gebruikssituaties voor het extraheren van PDF-paginagrootte
+1. **Dynamische lay-outaanpassingen** – Afbeeldingen of tabellen schalen zodat ze exact passen bij de paginamaten.  
+2. **Print‑klaar validatie** – Zorg ervoor dat het document voldoet aan specifieke grootte‑vereisten voordat het naar een printer wordt gestuurd.  
+3. **Batchverwerking** – Loop door `pdfContent.getPages()` om de afmetingen van elke pagina in een grote PDF te verzamelen.  
+
+## Prestatie‑overwegingen
+- **Resultaten cachen**: Als je herhaaldelijk afmetingen voor veel pagina's nodig hebt, sla ze dan op in een map om het bestand niet opnieuw te lezen.  
+- **Geheugenbeheer**: Sluit de `Watermarker` zodra je klaar bent met het lezen van afmetingen, vooral bij grote PDF's.  
+- **Parallel verwerken**: Verwerk bij documenten met meerdere pagina's elke pagina in een aparte thread nadat de lijst met afmetingen is verkregen.
+
+## Probleemoplossingstips
+- **Onjuist pad** – Controleer of `"YOUR_DOCUMENT_DIRECTORY/document.pdf"` naar een bestaand, leesbaar bestand wijst.  
+- **Niet‑ondersteunde PDF‑versie** – Zorg dat de PDF voldoet aan PDF 1.4 of later; oudere versies moeten mogelijk worden geconverteerd.  
+- **Licentiefouten** – Een ontbrekende of verlopen licentie zal een `LicenseException` veroorzaken. Gebruik de proeflicentie voor ontwikkeling.  
+
+## Veelgestelde vragen
+
+**Q: Wat is de minimale Java‑versie die vereist is voor GroupDocs.Watermark?**  
+A: Je hebt minimaal JDK 8 of hoger nodig.
+
+**Q: Hoe kan ik grote PDF‑bestanden efficiënt verwerken met GroupDocs.Watermark?**  
+A: Verwerk pagina's in batches, cache alleen de benodigde metadata, en sluit de `Watermarker` snel om resources vrij te geven.
+
+**Q: Kan GroupDocs.Watermark wachtwoord‑beveiligde PDF's verwerken?**  
+A: Ja – geef het wachtwoord op in `PdfLoadOptions` bij het aanmaken van de `Watermarker`.
+
+**Q: Is er een manier om de afmetingen automatisch voor alle pagina's te extraheren?**  
+A: Absoluut. Iterate over `pdfContent.getPages()` and call `getWidth()` / `getHeight()` for each page inside a loop. (De code blijft ongewijzigd.)
+
+**Q: Wat zijn typische problemen bij het extraheren van paginamaten?**  
+A: Veelvoorkomende problemen zijn onjuiste bestands‑paden, PDF's met corrupte paginobjecten of onvoldoende bestandsrechten.
+
+## Aanvullende bronnen
+- [Documentatie](https://docs.groupdocs.com/watermark/java/)
+- [API‑referentie](https://reference.groupdocs.com/watermark/java)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+- [GitHub‑repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Gratis ondersteuningsforum](https://forum.groupdocs.com/c/watermark/10)
+- [Informatie over tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Laatst bijgewerkt:** 2026-02-05  
+**Getest met:** GroupDocs.Watermark 24.11 for Java  
+**Auteur:** GroupDocs
