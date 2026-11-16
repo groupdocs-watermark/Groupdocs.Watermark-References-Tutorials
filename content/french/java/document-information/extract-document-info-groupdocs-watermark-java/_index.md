@@ -1,104 +1,124 @@
 ---
-date: '2026-11-13'
-description: Apprenez comment obtenir le type de fichier java, extraire la taille
-  du fichier java et récupérer le nombre de pages en utilisant GroupDocs.Watermark
-  pour Java. Inclut la configuration, le code et les meilleures pratiques.
+date: '2026-09-11'
+description: Apprenez comment obtenir le file type java et récupérer le page count
+  java avec GroupDocs.Watermark pour Java, incluant le setup, les code snippets et
+  les performance tips.
 keywords:
 - get file type java
-- java read document properties
-- extract file size java
-- java get page count
-lastmod: '2026-11-13'
-og_description: Obtenez le type de fichier java et extrayez les métadonnées du document
-  en utilisant GroupDocs.Watermark pour Java. Configuration étape par étape, extraits
-  de code et conseils de performance.
-og_image_alt: Screenshot of Java code extracting document metadata with GroupDocs.Watermark
-og_title: Obtenez le type de fichier java avec GroupDocs.Watermark – Guide complet
+- retrieve page count java
+- GroupDocs.Watermark Java
+- document metadata extraction
+lastmod: '2026-09-11'
+og_description: Apprenez comment obtenir le file type java et récupérer le page count
+  java avec GroupDocs.Watermark pour Java. Suivez le step‑by‑step setup et les code
+  examples.
+og_image_alt: Guide showing Java code to extract document metadata with GroupDocs.Watermark
+og_title: Comment obtenir le file type java avec GroupDocs.Watermark
 schemas:
 - author: GroupDocs
-  dateModified: '2026-11-13'
-  description: Learn how to get file type java, extract file size java, and retrieve
-    page count using GroupDocs.Watermark for Java. Includes setup, code, and best
-    practices.
-  headline: How to get file type java and extract document information with GroupDocs.Watermark
+  dateModified: '2026-09-11'
+  description: Learn how to get file type java and retrieve page count java with GroupDocs.Watermark
+    for Java, including setup, code snippets, and performance tips.
+  headline: How to get file type java using GroupDocs.Watermark
   type: TechArticle
-- description: Learn how to get file type java, extract file size java, and retrieve
-    page count using GroupDocs.Watermark for Java. Includes setup, code, and best
-    practices.
-  name: How to get file type java and extract document information with GroupDocs.Watermark
+- description: Learn how to get file type java and retrieve page count java with GroupDocs.Watermark
+    for Java, including setup, code snippets, and performance tips.
+  name: How to get file type java using GroupDocs.Watermark
   steps:
   - name: initialize watermarker
-    text: Create a `Watermarker` instance by passing the absolute path of the target
-      document. This step sets up the context for all subsequent calls.
+    text: Create a `Watermarker` object by providing the full path to the document
+      you want to inspect. This step establishes the context for all subsequent metadata
+      calls.
   - name: access document information
-    text: Call `watermarker.getDocumentInfo()` to obtain a `DocumentInfo` object.
-      DocumentInfo holds metadata such as file type, page count, and size for the
-      loaded document. From there you can read `fileType`, `pageCount`, and `fileSize`.
+    text: 'Use the `getDocumentInfo()` method to obtain a `DocumentInfo` object. From
+      this object you can read `fileType`, `pageCount`, and `fileSize` properties.
+      **Explanation** - **fileType** – Identifies the document format, essential for
+      downstream processing. - **pageCount** – Returns the total number of '
   - name: release resources
-    text: Always close the `Watermarker` instance after operations are complete. This
-      step is essential for resource management and preventing memory leaks.
+    text: Always close the `Watermarker` instance after you finish extracting metadata.
+      This releases file handles and frees native resources, preventing memory leaks
+      in long‑running services.
   type: HowTo
 - questions:
-  - answer: It is a Java library that lets you read document metadata, add watermarks,
-      and manipulate files without needing Microsoft Office installed.
+  - answer: GroupDocs.Watermark is a Java library that enables you to add, detect,
+      and extract watermarks as well as retrieve detailed document metadata.
     question: What is GroupDocs.Watermark?
-  - answer: Yes, you can download the JAR files directly and include them in your
-      project’s build path.
+  - answer: Yes, you can download the JAR files directly and add them to your project’s
+      classpath.
     question: Can I use GroupDocs.Watermark with non‑Maven projects?
-  - answer: It supports over 100 formats, including DOCX, PDF, XLSX, PPTX, HTML, and
+  - answer: It supports over 60 formats, including DOCX, PDF, XLSX, PPTX, HTML, and
       common image types.
     question: What file formats does GroupDocs.Watermark support?
-  - answer: Retrieving metadata is lightweight; the library reads only header data,
-      so impact is negligible even for large files.
+  - answer: Metadata extraction reads only the file header, so the impact is minimal
+      and suitable for high‑volume scenarios.
     question: Is there a performance impact when retrieving document information?
-  - answer: Wrap calls in try‑catch blocks and log `WatermarkerException` details
-      to manage errors gracefully.
+  - answer: Wrap your code in try‑catch blocks and log the exception message; the
+      library throws specific exceptions for missing files, unsupported formats, and
+      licensing issues.
     question: How can I handle exceptions during document processing?
   type: FAQPage
 tags:
-- document metadata
+- get file type
+- retrieve page count
 - GroupDocs.Watermark
 - Java document processing
-title: Comment obtenir le type de fichier java et extraire les informations du document
-  avec GroupDocs.Watermark
+title: Comment obtenir le file type java avec GroupDocs.Watermark
 type: docs
 url: /fr/java/document-information/extract-document-info-groupdocs-watermark-java/
 weight: 1
 ---
 
-# Obtenir le type de fichier java et extraire les informations du document avec GroupDocs.Watermark
+# Comment obtenir le type de fichier java avec GroupDocs.Watermark
+
+Dans de nombreuses applications Java, vous devez **get file type java** rapidement afin de pouvoir router les documents, appliquer des politiques ou afficher les icônes appropriées. GroupDocs.Watermark for Java rend cela simple en exposant des métadonnées riches telles que le type de fichier, le nombre de pages et la taille du fichier via une API simple. Ce guide vous accompagne dans l’installation de la bibliothèque, l’extraction des informations et leur utilisation dans des scénarios réels.
+
+## Réponses rapides
+- **Quelle est la façon la plus rapide d'obtenir le type de fichier java ?**  
+  Chargez le document avec `Watermarker` et appelez `getDocumentInfo().getFileType()`.
+- **Puis‑je également récupérer le nombre de pages java dans le même appel ?**  
+  Oui, `getDocumentInfo().getPageCount()` renvoie le nombre total de pages.
+- **Ai‑je besoin d’une licence pour exécuter l’exemple ?**  
+  Une licence temporaire fonctionne pour le développement ; une licence complète est requise pour la production.
+- **Maven est‑il le seul moyen d’ajouter la bibliothèque ?**  
+  Non, vous pouvez également télécharger le JAR directement depuis la page des releases.
+- **Cette approche gérera‑t‑elle efficacement les gros fichiers ?**  
+  Oui, l’extraction des métadonnées ne lit que l’en‑tête du fichier, maintenant une faible consommation de mémoire.
+
+## Qu’est‑ce que get file type java ?
+L’expression « get file type java » désigne la récupération du format d’un document (par ex., PDF, DOCX) depuis un programme Java. Avec GroupDocs.Watermark, vous pouvez obtenir cette information en un seul appel de méthode sans ouvrir le contenu complet du document. Cette approche fonctionne efficacement pour tout type de fichier pris en charge.
+
+## Pourquoi utiliser GroupDocs.Watermark pour Java ?
+GroupDocs.Watermark prend en charge **plus de 60 formats d’entrée et de sortie** et peut extraire des métadonnées de fichiers jusqu’à **2 GB** sans charger le fichier entier en mémoire. Cette capacité quantifiée vous permet de traiter d’immenses bibliothèques de documents tout en maintenant la consommation CPU et RAM sous contrôle.
 
 ## Introduction
 
-Vous cherchez à obtenir des informations détaillées sur les documents stockés dans votre système de fichiers local ? Que ce soit pour identifier le type, la taille ou le nombre de pages d’un document, obtenir ces informations de manière efficace est crucial pour de nombreuses applications. Dans ce guide, nous vous montrons comment utiliser GroupDocs.Watermark pour Java afin d’extraire des détails essentiels du document tels que le type de fichier, le nombre de pages et la taille du fichier.
+Vous cherchez à obtenir des informations détaillées sur les documents stockés dans votre système de fichiers local ? Qu’il s’agisse d’identifier le type, la taille ou le nombre de pages d’un document, obtenir ces informations de manière efficace est crucial pour de nombreuses applications. Dans ce guide, nous vous montrons comment utiliser GroupDocs.Watermark for Java pour extraire les détails essentiels d’un document tels que le type de fichier, le nombre de pages et la taille du fichier.
 
 **Ce que vous apprendrez**
 - Comment configurer GroupDocs.Watermark dans un environnement Java.  
-- Les étapes pour récupérer diverses informations à partir des documents à l’aide de la bibliothèque.  
-- Des applications pratiques de cette fonctionnalité dans des scénarios réels.  
-- Des conseils d’optimisation des performances pour le traitement de documents.
+- Étapes pour récupérer diverses informations à partir des documents en utilisant la bibliothèque.  
+- Applications pratiques de cette fonctionnalité dans des scénarios réels.  
+- Conseils d’optimisation des performances pour le traitement de documents.
 
-## Réponses rapides
-- **Comment obtenir le type de fichier java ?** Appelez `watermarker.getDocumentInfo().getFileType()` après avoir initialisé `Watermarker`.  
-- **Puis-je également obtenir le nombre de pages ?** Oui, utilisez `getPageCount()` depuis le même objet `DocumentInfo`.  
-- **Quelle méthode renvoie la taille du fichier ?** `getFileSize()` fournit la taille en octets.  
-- **Ai‑je besoin d’une licence pour ces appels ?** Une version d’essai fonctionne, mais une licence permanente supprime les limites et active le support complet.  
-- **Cette approche est‑elle efficace en mémoire ?** GroupDocs.Watermark ne lit que l’en‑tête du document, de sorte que même les fichiers de plusieurs centaines de pages sont traités avec un minimum de RAM.
-
-## Qu'est-ce que get file type java ?
-L’expression **get file type java** désigne la récupération de l’identifiant MIME ou du format d’un document à l’aide de code Java. Avec GroupDocs.Watermark, vous pouvez obtenir cette information en un seul appel de méthode, ce qui vous permet de diriger votre logique en fonction du format du document.
-
-## Pourquoi utiliser GroupDocs.Watermark pour l'extraction de métadonnées ?
-GroupDocs.Watermark prend en charge **plus de 100 formats d’entrée et de sortie** et peut traiter des fichiers jusqu’à **2 Go** sans charger le fichier complet en mémoire. Cette capacité quantifiée vous permet de scanner en toute sécurité de grands dépôts sur des serveurs modestes tout en maintenant l’utilisation du CPU en dessous de 10 % par opération.
+Plongeons dans les prérequis nécessaires avant de commencer les détails d’implémentation.
 
 ## Prérequis
 
-- JDK (Java Development Kit) installé sur votre système.  
-- Un IDE tel qu’IntelliJ IDEA ou Eclipse.  
-- Connaissances de base en Java et familiarité avec Maven si vous choisissez ce gestionnaire de dépendances.
+Avant de commencer, assurez‑vous de disposer de ce qui suit :
 
 ### Bibliothèques et dépendances requises
-Vous devez inclure GroupDocs.Watermark dans votre projet. Vous pouvez le faire via Maven ou en téléchargeant directement depuis leur page de releases.
+Vous devez inclure GroupDocs.Watermark dans votre projet. Vous pouvez le faire avec Maven ou en téléchargeant directement depuis leur page de releases.
+
+### Exigences de configuration de l'environnement
+- Java Development Kit (JDK) installé sur votre système.  
+- Un environnement de développement intégré (IDE) adapté comme IntelliJ IDEA ou Eclipse.
+
+### Prérequis de connaissances
+Une compréhension de base de la programmation Java est nécessaire pour suivre le guide. Une familiarité avec les projets Maven sera également utile si vous choisissez cette voie pour la gestion de la bibliothèque.
+
+## Configuration de GroupDocs.Watermark pour Java
+
+Pour commencer à utiliser GroupDocs.Watermark, ajoutez‑le comme dépendance dans votre projet. Voici comment :
 
 **Configuration Maven**  
 ```xml
@@ -123,32 +143,21 @@ Vous devez inclure GroupDocs.Watermark dans votre projet. Vous pouvez le faire v
 Alternativement, téléchargez la dernière version depuis [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Acquisition de licence
-Pour utiliser GroupDocs.Watermark au‑delà de la période d’essai, vous pouvez obtenir une licence temporaire ou en acheter une. Consultez leur site pour obtenir les étapes détaillées sur la façon d’obtenir et d’appliquer la licence.
+Pour utiliser GroupDocs.Watermark au‑delà de sa période d’essai, vous pouvez obtenir une licence temporaire ou en acheter une. Visitez leur site pour obtenir les étapes détaillées afin d’obtenir et d’appliquer la licence.
 
 #### Initialisation de base
-La classe `Watermarker` est le point d’entrée pour toutes les opérations sur les documents. Elle encapsule le chargement du fichier, l’accès aux métadonnées et la manipulation des filigranes.
-
-## Comment obtenir le type de fichier java ?
-
-Chargez le fichier cible avec une instance de `Watermarker` et appelez `getDocumentInfo().getFileType()`. La méthode `getFileType()` renvoie l’identifiant de format du document, tel que PDF ou DOCX. Cet appel d’une ligne renvoie l’identifiant exact du format (par ex. PDF, DOCX) afin que vous puissiez décider comment traiter le fichier ensuite. L’opération ne lit que l’en‑tête du fichier, maintenant ainsi une faible consommation de mémoire même pour les documents volumineux.
-
-## Comment obtenir la taille du document java ?
-
-Après avoir initialisé `Watermarker`, invoquez `getDocumentInfo().getFileSize()`. La méthode `getFileSize()` fournit la taille en octets, reflétant l’empreinte de stockage exacte. Vous pouvez convertir cette valeur en kilo‑octets ou méga‑octets pour l’affichage ou les calculs de budget de stockage. Comme la taille est lue à partir des métadonnées du système de fichiers, l’appel est instantané. Cette valeur vous aide à surveiller la consommation d’espace et à appliquer des limites de taille de fichier dans votre application.
-
-## Comment obtenir le nombre de pages en Java ?
-
-Utilisez `getDocumentInfo().getPageCount()` sur le même objet `DocumentInfo`. La méthode `getPageCount()` renvoie le nombre total de pages du document. Cela vous permet d’implémenter une logique de pagination, d’estimer le temps de traitement ou d’appliquer des politiques de longueur de document. Connaître le nombre de pages vous aide également à allouer les ressources appropriées et à afficher des indicateurs de progression lors du traitement par lots.
+La classe `Watermarker` est le point d’entrée pour toutes les opérations de documents dans GroupDocs.Watermark. Après avoir ajouté la bibliothèque à votre projet, vous créez une instance `Watermarker` en passant le chemin du fichier cible.
 
 ## Guide d'implémentation
 
-### Récupération des informations du document
+### Comment obtenir le type de fichier java ?
+La classe `Watermarker` est le point d’entrée pour charger et inspecter les documents. La méthode `getDocumentInfo()` renvoie un objet `DocumentInfo` contenant les métadonnées du fichier chargé. Chargez le document cible avec une instance `Watermarker` et appelez `getDocumentInfo().getFileType()`. Cet appel unique renvoie la chaîne de format exacte (par ex., « PDF », « DOCX ») sans analyser le fichier complet, ce qui le rend idéal pour des services à haut débit devant catégoriser les fichiers lors du téléchargement.
 
-**Vue d'ensemble**  
-Cette fonctionnalité vous permet d’extraire des informations essentielles d’un document, ce qui peut être crucial dans diverses applications comme les systèmes de gestion de contenu ou les outils de reporting automatisés.
+### Comment récupérer le nombre de pages java ?
+Appelez `getDocumentInfo().getPageCount()` sur la même instance `Watermarker`. La méthode ne lit que les informations d’en‑tête du document, de sorte que même les PDF de plusieurs centaines de pages sont traités en quelques millisecondes, maintenant votre application réactive. Cette opération légère fournit également le nombre de pages sans charger le contenu des pages, aidant à conserver une faible utilisation de mémoire même pour les gros documents.
 
-#### Étape 1 : initialiser le watermarker
-Créez une instance de `Watermarker` en passant le chemin absolu du document cible. Cette étape configure le contexte pour tous les appels suivants.
+#### Étape 1 : initialiser le watermarker
+Créez un objet `Watermarker` en fournissant le chemin complet du document que vous souhaitez inspecter. Cette étape établit le contexte pour tous les appels de métadonnées ultérieurs.
 
 ```java
 import com.groupdocs.watermark.Watermarker;
@@ -161,8 +170,8 @@ public class FeatureGetDocumentInformation {
         Watermarker watermarker = new Watermarker(DOCUMENT_PATH);
 ```
 
-#### Étape 2 : accéder aux informations du document
-Appelez `watermarker.getDocumentInfo()` pour obtenir un objet `DocumentInfo`. `DocumentInfo` contient des métadonnées telles que le type de fichier, le nombre de pages et la taille du document chargé. Vous pouvez alors lire `fileType`, `pageCount` et `fileSize`.
+#### Étape 2 : accéder aux informations du document
+Utilisez la méthode `getDocumentInfo()` pour obtenir un objet `DocumentInfo`. À partir de cet objet, vous pouvez lire les propriétés `fileType`, `pageCount` et `fileSize`.
 
 ```java
         IDocumentInfo info = watermarker.getDocumentInfo();
@@ -172,8 +181,13 @@ Appelez `watermarker.getDocumentInfo()` pour obtenir un objet `DocumentInfo`. `D
         long fileSize = info.getSize();        // Size in bytes
 ```
 
-#### Étape 3 : libérer les ressources
-Fermez toujours l’instance `Watermarker` après la fin des opérations. Cette étape est essentielle pour la gestion des ressources et pour éviter les fuites de mémoire.
+**Explication**
+- **fileType** – Identifie le format du document, essentiel pour le traitement en aval.  
+- **pageCount** – Renvoie le nombre total de pages, utile pour la logique de pagination ou les indicateurs de progression.  
+- **fileSize** – Fournit la taille en octets, vous aidant à appliquer des quotas de stockage.
+
+#### Étape 3 : libérer les ressources
+Fermez toujours l’instance `Watermarker` après avoir fini d’extraire les métadonnées. Cela libère les descripteurs de fichiers et les ressources natives, évitant les fuites de mémoire dans les services à long terme.
 
 ```java
         watermarker.close();
@@ -182,67 +196,70 @@ Fermez toujours l’instance `Watermarker` après la fin des opérations. Cette 
 ```
 
 ### Conseils de dépannage
-- Si le chemin du document est incorrect, gérez les exceptions pour éviter les erreurs d’exécution.  
-- Assurez‑vous que toutes les dépendances sont correctement configurées dans votre projet afin d’éviter les échecs d’initialisation.
+- Si le chemin du document est incorrect, capturez l’exception levée et consignez un message d’erreur clair.  
+- Vérifiez que toutes les coordonnées Maven ou les fichiers JAR sont correctement référencés ; sinon l’initialisation échouera.
 
 ## Applications pratiques
 
 Voici quelques cas d’utilisation réels pour la récupération d’informations sur les documents :
 1. **Systèmes de gestion de contenu (CMS) :** catégoriser et stocker automatiquement les documents en fonction du type et de la taille.  
-2. **Traitement de documents juridiques :** utiliser les types de fichiers et le nombre de pages pour gérer efficacement les dossiers juridiques.  
-3. **Plateformes éducatives :** suivre la distribution des supports d’étude grâce à leurs métadonnées.
+2. **Traitement de documents juridiques :** utiliser le type de fichier et le nombre de pages pour acheminer les contrats vers le workflow de révision approprié.  
+3. **Plateformes éducatives :** suivre la distribution de supports d’étude via leurs métadonnées afin de générer des rapports d’utilisation.  
 
-Intégrez GroupDocs.Watermark avec d’autres systèmes comme les bases de données ou les solutions de stockage cloud pour améliorer les capacités de gestion documentaire.
+Intégrez GroupDocs.Watermark avec des bases de données ou des services de stockage cloud pour créer une chaîne de gestion de documents complète.
 
 ## Considérations de performance
 
-Lorsque vous travaillez à la récupération d’informations sur les documents, prenez en compte ces conseils :
+Lors de la récupération d’informations sur les documents, prenez en compte ces conseils :
 - **Optimiser l’utilisation de la mémoire :** fermez rapidement les instances `Watermarker` pour libérer les ressources.  
-- **Gestion efficace des fichiers :** traitez les documents par lots si vous manipulez de grands ensembles de données afin de réduire l’empreinte mémoire.  
-- **Gestion de la concurrence :** utilisez le multithreading avec prudence et assurez la sécurité des threads lors de l’accès à des ressources partagées.
+- **Gestion efficace des fichiers :** traitez les documents par lots si vous avez de grands ensembles de données afin de minimiser l’empreinte mémoire.  
+- **Gestion de la concurrence :** utilisez le multithreading avec précaution et assurez‑vous que chaque thread travaille avec sa propre instance `Watermarker` pour éviter les problèmes de thread‑safety.
 
 ## Conclusion
 
-En suivant ce guide, vous avez appris comment **obtenir le type de fichier java**, extraire la taille du fichier et obtenir le nombre de pages à l’aide de GroupDocs.Watermark pour Java. Ces capacités peuvent considérablement enrichir vos applications en fournissant des informations clés sur les métadonnées des documents.
+En suivant ce guide, vous avez appris à extraire les informations essentielles d’un document à l’aide de GroupDocs.Watermark for Java. Cette fonctionnalité peut considérablement enrichir vos applications en fournissant des métadonnées clés sur les documents.
 
 ### Prochaines étapes
-Explorez davantage les fonctionnalités de GroupDocs.Watermark telles que le filigrane et les capacités de modification. Envisagez d’intégrer ces fonctionnalités pour créer une solution complète de gestion documentaire.
+Explorez davantage les fonctionnalités de GroupDocs.Watermark telles que le filigrannage et les capacités de modification. Envisagez d’intégrer ces fonctionnalités pour créer une solution complète de gestion de documents.
 
-**Appel à l’action :** Essayez de mettre en œuvre les étapes décrites dans ce guide pour exploiter tout le potentiel de GroupDocs.Watermark pour Java dans vos projets !
+**Appel à l’action :**  
+Essayez de mettre en œuvre les étapes décrites dans ce guide pour exploiter tout le potentiel de GroupDocs.Watermark for Java dans vos projets !
 
-## Section FAQ
+## Questions fréquentes
 
-**Q : Qu'est-ce que GroupDocs.Watermark ?**  
-R : C’est une bibliothèque Java qui vous permet de lire les métadonnées des documents, d’ajouter des filigranes et de manipuler les fichiers sans nécessiter l’installation de Microsoft Office.
+**Q : Qu’est‑ce que GroupDocs.Watermark ?**  
+R : GroupDocs.Watermark est une bibliothèque Java qui vous permet d’ajouter, de détecter et d’extraire des filigranes ainsi que de récupérer des métadonnées détaillées d’un document.
 
 **Q : Puis‑je utiliser GroupDocs.Watermark avec des projets non‑Maven ?**  
-R : Oui, vous pouvez télécharger les fichiers JAR directement et les inclure dans le chemin de construction de votre projet.
+R : Oui, vous pouvez télécharger les fichiers JAR directement et les ajouter au classpath de votre projet.
 
 **Q : Quels formats de fichiers GroupDocs.Watermark prend‑il en charge ?**  
-R : Il prend en charge plus de 100 formats, dont DOCX, PDF, XLSX, PPTX, HTML et les types d’images courants.
+R : Il prend en charge plus de 60 formats, dont DOCX, PDF, XLSX, PPTX, HTML et les types d’images courants.
 
 **Q : Y a‑t‑il un impact sur les performances lors de la récupération des informations du document ?**  
-R : La récupération des métadonnées est légère ; la bibliothèque ne lit que les données d’en‑tête, de sorte que l’impact est négligeable même pour les gros fichiers.
+R : L’extraction des métadonnées ne lit que l’en‑tête du fichier, l’impact est donc minimal et adapté aux scénarios à haut volume.
 
 **Q : Comment gérer les exceptions pendant le traitement des documents ?**  
-R : Enveloppez les appels dans des blocs try‑catch et consignez les détails de `WatermarkerException` pour gérer les erreurs de manière élégante.
+R : Enveloppez votre code dans des blocs try‑catch et consignez le message d’exception ; la bibliothèque lève des exceptions spécifiques pour les fichiers manquants, les formats non pris en charge et les problèmes de licence.
 
 ## Ressources
-- [Documentation](https://docs.groupdocs.com/watermark/java/)  
-- [Référence API](https://reference.groupdocs.com/watermark/java)  
-- [Télécharger GroupDocs.Watermark pour Java](https://releases.groupdocs.com/watermark/java/)  
-- [Dépôt GitHub](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- [Forum d’assistance gratuit](https://forum.groupdocs.com/c/watermark/10)  
-- [Acquisition de licence temporaire](https://purchase.groupdocs.com/temporary-license/)
+- [Documentation](https://docs.groupdocs.com/watermark/java/)
+- [API Reference](https://reference.groupdocs.com/watermark/java)
+- [Download GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
+- [GitHub Repository](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/watermark/10)
+- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/) 
+
+Avec ce guide, vous êtes bien équipé pour intégrer la récupération d’informations sur les documents dans vos applications Java en utilisant GroupDocs.Watermark. Bon codage !
 
 ---
 
-**Dernière mise à jour :** 2026-11-13  
-**Testé avec :** GroupDocs.Watermark 23.12 pour Java  
+**Dernière mise à jour :** 2026-09-11  
+**Testé avec :** GroupDocs.Watermark 23.12 for Java  
 **Auteur :** GroupDocs
 
 ## Tutoriels associés
 
-- [Comment récupérer les informations d’un document avec GroupDocs.Watermark pour Java : guide étape par étape](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)  
-- [Comment lister les formats de fichiers pris en charge avec GroupDocs.Watermark pour Java : guide complet](/watermark/java/document-information/groupdocs-watermark-java-list-supported-formats/)  
-- [Opérations de chargement et d’enregistrement de documents avec GroupDocs.Watermark pour Java](/watermark/java/document-loading-saving/)
+- [How to List Supported File Formats Using GroupDocs.Watermark for Java: A Complete Guide](/watermark/java/document-information/groupdocs-watermark-java-list-supported-formats/)
+- [Document Loading and Saving Operations with GroupDocs.Watermark for Java](/watermark/java/document-loading-saving/)
+- [How to Retrieve Document Information Using GroupDocs.Watermark for Java: A Step-by-Step Guide](/watermark/java/document-information/retrieve-document-info-groupdocs-watermark-java/)

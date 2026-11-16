@@ -1,104 +1,49 @@
 ---
-date: '2026-11-13'
-description: GroupDocs.Watermark for Java를 사용하여 텍스트 워터마크 다이어그램을 추가하는 방법을 배웁니다. 다이어그램을
-  편집 가능하고 안전하게 유지하면서 시각 콘텐츠를 효과적으로 보호하세요.
+date: '2025-12-19'
+description: GroupDocs.Watermark for Java를 사용하여 다이어그램에 텍스트 워터마크를 추가하는 방법을 배우세요. 시각적
+  콘텐츠를 효과적으로 보호하고 문서 무결성을 보장하세요.
 keywords:
-- add text watermark diagram
-- GroupDocs.Watermark for Java
-- diagram watermarking
-lastmod: '2026-11-13'
-og_description: GroupDocs.Watermark for Java를 사용하여 텍스트 워터마크 다이어그램을 추가합니다. 이 가이드는 다이어그램을
-  보호하고, 배치를 구성하며, 결과를 효율적으로 저장하는 방법을 단계별로 보여줍니다.
-og_image_alt: 'Developer guide: adding text watermarks to diagram files with GroupDocs.Watermark
-  for Java'
-og_title: GroupDocs.Watermark for Java와 함께 텍스트 워터마크 다이어그램 추가
-schemas:
-- author: GroupDocs
-  dateModified: '2026-11-13'
-  description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  headline: Add text watermark diagram using GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  name: Add text watermark diagram using GroupDocs.Watermark for Java
-  steps:
-  - name: load diagram document
-    text: '**Definition anchor**: `DiagramLoadOptions` configures how GroupDocs.Watermark
-      reads diagram files, allowing you to specify page ranges or rendering settings.
-      Specify the file path and initialise the load options:'
-  - name: create and configure the text watermark
-    text: '**Definition anchor**: `TextWatermark` represents the textual overlay that
-      will be rendered on each selected diagram shape. Instantiate the watermark with
-      your chosen text, font, size, and color:'
-  - name: set watermark placement options
-    text: '**Definition anchor**: `DiagramShapeWatermarkOptions` lets you decide whether
-      the watermark appears on the background, foreground, or specific shapes within
-      the diagram. Configure the placement type and any rotation or opacity settings:'
-  - name: add the watermark and save the diagram
-    text: '**Definition anchor**: `Watermarker` is the core class that applies watermarks
-      to supported documents and writes the output file. Apply the `textWatermark`
-      to the loaded diagram using the previously defined `options`, then save the
-      result to a new location:'
-  type: HowTo
-- questions:
-  - answer: A size between 12 pt and 24 pt works well; choose larger sizes for high‑resolution
-      diagrams to ensure readability without obscuring details.
-    question: What is the best font size for watermarks on diagrams?
-  - answer: Yes, call `textWatermark.setColor(java.awt.Color)` with any RGB value
-      to match your branding.
-    question: Can I change the watermark color?
-  - answer: Iterate over a directory, reuse the same `Watermarker` object for each
-      file, and call `watermarker.add(textWatermark, options)` inside the loop.
-    question: How do I process a batch of diagram files?
-  - answer: Review [documentation](https://docs.groupdocs.com/watermark/java/) for
-      the full list of supported diagram formats; the library handles VSX, SVG, and
-      many proprietary formats.
-    question: Are there any format limitations?
-  - answer: Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
-      for community assistance or open a support ticket through your account portal.
-    question: Where can I get help if I run into issues?
-  type: FAQPage
-tags:
-- add text watermark diagram
-- GroupDocs.Watermark
-- Java diagram processing
-- document security
-title: GroupDocs.Watermark for Java를 사용하여 텍스트 워터마크 다이어그램 추가
+- text watermarks
+- GroupDocs Watermark for Java
+- diagram document watermarking
+title: GroupDocs.Watermark for Java를 사용하여 다이어그램에 텍스트 워터마크 추가 – 포괄적인 가이드
 type: docs
 url: /ko/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/
 weight: 1
 ---
 
-# GroupDocs.Watermark for Java를 사용하여 다이어그램에 텍스트 워터마크 추가
+# GroupDocs.Watermark for Java를 사용하여 다이어그램에 텍스트 워터마크 추가: 종합 가이드
 
-다이어그램 문서를 무단 사용으로부터 보호하는 것은 매우 중요하며, **add text watermark diagram**은 간단하면서도 강력한 방법입니다. 이 튜토리얼에서는 다이어그램 파일을 로드하고, 사용자 정의 가능한 텍스트 워터마크를 생성하며, 다이어그램 도형에 정확히 배치하고, 보호된 파일을 저장하는 방법을 GroupDocs.Watermark for Java와 함께 배웁니다.
+## 소개
+다이어그램 문서를 무단 사용으로부터 보호하는 것은 매우 중요하며, **텍스트 워터마크 추가**는 간단하면서도 효과적인 해결책을 제공합니다. 이 튜토리얼에서는 다이어그램 파일을 로드하고, 사용자 정의 가능한 텍스트 워터마크를 생성한 뒤, **GroupDocs.Watermark for Java**를 사용해 배경 페이지 또는 특정 도형에 적용하는 방법을 알아봅니다. 가이드를 마치면 원본의 외관과 느낌을 유지하면서 시각 자산을 안전하게 보호할 수 있습니다.
 
-## 빠른 답변
-- **어떤 라이브러리가 다이어그램 워터마크를 처리합니까?** GroupDocs.Watermark for Java.  
-- **최소 Java 버전은 무엇입니까?** JDK 8 or newer.  
-- **개발에 라이선스가 필요합니까?** 테스트 중 모든 기능을 사용할 수 있는 임시 라이선스가 작동합니다.  
-- **배치에서 여러 파일에 워터마크를 적용할 수 있나요?** 예, 루프에서 동일한 Watermarker 인스턴스를 사용합니다.  
-- **대형 다이어그램에서 메모리 사용이 문제인가요?** 객체를 재사용하고 Watermarker를 닫아 리소스를 해제합니다.
+### 빠른 답변
+- **“텍스트 워터마크 추가”는 무엇을 의미하나요?**  
+  문서에 반투명 텍스트 오버레이를 삽입하여 소유권이나 기밀성을 표시하는 것을 의미합니다.  
+- **어떤 라이브러리가 다이어그램 워터마크를 지원하나요?**  
+  GroupDocs.Watermark for Java는 Visio, VSDX 등 다이어그램 형식을 기본적으로 지원합니다.  
+- **라이선스가 필요하나요?**  
+  프로덕션 사용을 위해 임시 또는 정식 라이선스가 필요하며, 평가용 무료 체험판을 제공하고 있습니다.  
+- **워터마크를 배경 페이지에 배치할 수 있나요?**  
+  예 – `DiagramWatermarkPlacementType.SeparateBackgrounds` 옵션을 사용하면 **배경 페이지 워터마크**를 적용할 수 있습니다.  
+- **코드가 Java 8+와 호환되나요?**  
+  물론입니다 – 라이브러리는 JDK 8 및 그 이후 버전에서 작동합니다.
 
-## add text watermark diagram이란?
-`add text watermark diagram`은 읽을 수 있는 텍스트(예: “Confidential” 또는 회사 이름)를 다이어그램 파일에 직접 삽입하여 워터마크가 시각적 콘텐츠의 일부가 되고 다이어그램 자체를 변경하지 않으면 제거할 수 없는 프로세스를 의미합니다.
+## 다이어그램용 텍스트 워터마크란?
+텍스트 워터마크는 읽을 수 있는 텍스트(대개 반투명)로, 다이어그램 요소 위 또는 뒤에 렌더링됩니다. 브랜드화, 저작권 보호, 기밀 초안 표시 등에 사용할 수 있습니다.
 
-## 왜 GroupDocs.Watermark for Java를 사용해야 할까요?
-GroupDocs.Watermark는 Visio (.vsdx), SVG 및 기타 인기 있는 다이어그램 유형을 포함한 **50개 이상의 입력 및 출력 형식**을 지원합니다. 전체 파일을 메모리에 로드하지 않고 수백 페이지에 달하는 다이어그램을 처리할 수 있으며, 100 MB 이상의 파일을 다룰 때 많은 경쟁 제품에 비해 **CPU 사용량을 30 % 감소**시킵니다.
+## 왜 GroupDocs.Watermark for Java를 사용해야 하나요?
+- **광범위한 형식 지원** – Visio, VSDX 등 다양한 다이어그램 형식을 지원합니다.  
+- **세밀한 배치 옵션** – 전경, 배경 또는 특정 도형에 워터마크를 선택적으로 적용할 수 있습니다.  
+- **간단한 API** – 몇 줄의 Java 코드만으로 워터마크를 생성하고 적용할 수 있습니다.  
 
-## 사전 요구 사항
-- **GroupDocs.Watermark for Java** 버전 24.11 이상 (이 라이브러리는 매월 보안 패치와 함께 업데이트됩니다).  
-- **Java Development Kit (JDK)** 8 이상.  
-- IntelliJ IDEA 또는 Eclipse와 같은 IDE.  
-- 종속성 관리를 위한 Maven (선택 사항이지만 권장).
+## 전제 조건
+- **GroupDocs.Watermark for Java** (v24.11 이상)  
+- **Java Development Kit (JDK)** 8 이상  
+- Maven(또는 수동 JAR 포함)  
 
 ## GroupDocs.Watermark for Java 설정
-시작하려면 라이브러리를 Maven 프로젝트에 추가하세요:
-
-**Maven 설정**  
+### Maven 설정
 `pom.xml` 파일에 다음 구성을 추가하세요:
 
 ```xml
@@ -119,22 +64,26 @@ GroupDocs.Watermark는 Visio (.vsdx), SVG 및 기타 인기 있는 다이어�
 </dependencies>
 ```
 
-수동 다운로드를 선호한다면 최신 바이너리를 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)에서 받으세요.
+### 직접 다운로드
+최신 버전은 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)에서 다운로드할 수 있습니다.
 
 ### 라이선스 획득
-- **무료 체험** – 30 일 동안 모든 기능을 탐색할 수 있습니다.  
-- **임시 라이선스** – 개발 중에 모든 체험 제한을 해제합니다.  
-- **전체 라이선스** – 프로덕션 배포에 필요합니다.
+- **무료 체험** – 라이선스 키 없이 모든 기능을 평가할 수 있습니다.  
+- **임시 라이선스** – 개발 중 전체 기능을 사용하려면 필요합니다.  
+- **구매** – 상업 프로젝트를 위한 정식 프로덕션 라이선스를 획득하세요.  
 
-## 구현 가이드
+### 기본 초기화 및 설정
+Java 클래스에 다음 import 문이 포함되어 있는지 확인하세요:
 
-### GroupDocs.Watermark for Java를 사용하여 다이어그램에 텍스트 워터마크를 추가하는 방법?
-먼저 `DiagramLoadOptions`를 사용하여 다이어그램 파일을 로드합니다. 다음으로 원하는 텍스트, 폰트, 크기 및 색상으로 `TextWatermark`를 인스턴스화합니다. 그런 다음 `DiagramShapeWatermarkOptions`를 구성하여 배치, 회전 및 불투명도를 제어합니다. 마지막으로 `Watermarker.add`로 워터마크를 적용하고 수정된 다이어그램을 새 파일에 저장합니다. 이 직접적인 답변은 자세한 설명 전에 전체 흐름을 제공합니다.
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.DiagramLoadOptions;
+```
 
-#### 단계 1: 다이어그램 문서 로드
-**정의 앵커**: `DiagramLoadOptions`는 GroupDocs.Watermark가 다이어그램 파일을 읽는 방식을 구성하며, 페이지 범위나 렌더링 설정을 지정할 수 있게 합니다.
+## 단계별 구현
 
-파일 경로를 지정하고 로드 옵션을 초기화합니다:
+### 단계 1: 다이어그램 문서 로드
+먼저 라이브러리가 다이어그램 파일을 가리키도록 하고 로드 옵션을 초기화합니다.
 
 ```java
 String inputPath = "YOUR_DOCUMENT_DIRECTORY";
@@ -142,29 +91,29 @@ DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker(inputPath, loadOptions);
 ```
 
-#### 단계 2: 텍스트 워터마크 생성 및 구성
-**정의 앵커**: `TextWatermark`는 선택된 각 다이어그램 도형에 렌더링될 텍스트 오버레이를 나타냅니다.
+*설명*: `DiagramLoadOptions`를 사용하면 워터마크 적용 전에 다이어그램이 어떻게 파싱되는지 제어할 수 있습니다.
 
-선택한 텍스트, 폰트, 크기 및 색상으로 워터마크를 인스턴스화합니다:
+### 단계 2: 텍스트 워터마크 생성
+이제 워터마크 텍스트를 만들고 시각 스타일을 정의합니다.
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark 1", new Font("Calibri", 19));
 ```
 
-#### 단계 3: 워터마크 배치 옵션 설정
-**정의 앵커**: `DiagramShapeWatermarkOptions`를 사용하면 워터마크가 다이어그램의 배경, 전경 또는 특정 도형에 나타날지 결정할 수 있습니다.
+*설명*: 이 코드는 **“Test watermark 1”**이라는 문구를 Calibri 폰트, 크기 19로 설정한 `TextWatermark`를 생성합니다.
 
-배치 유형 및 회전이나 불투명도 설정을 구성합니다:
+### 단계 3: 배치 구성 – 배경 페이지 워터마크
+워터마크가 표시될 위치를 선택합니다. **배경 페이지 워터마크**를 만들려면 다음 옵션을 사용하세요:
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
 options.setPlacementType(DiagramWatermarkPlacementType.SeparateBackgrounds);
 ```
 
-#### 단계 4: 워터마크 추가 및 다이어그램 저장
-**정의 앵커**: `Watermarker`는 지원되는 문서에 워터마크를 적용하고 출력 파일을 작성하는 핵심 클래스입니다.
+*설명*: `DiagramShapeWatermarkOptions`는 정확한 위치를 제어합니다. 배치 유형을 `SeparateBackgrounds`로 설정하면 다이어그램의 각 배경 페이지에 워터마크가 추가됩니다.
 
-이전에 정의한 `options`를 사용하여 로드된 다이어그램에 `textWatermark`를 적용한 다음, 결과를 새 위치에 저장합니다:
+### 단계 4: 워터마크 적용 및 저장
+마지막으로 워터마크를 문서에 추가하고 결과를 저장한 뒤 리소스를 해제합니다.
 
 ```java
 watermarker.add(textWatermark, options);
@@ -173,61 +122,54 @@ watermarker.save(outputPath);
 watermarker.close();
 ```
 
-### 실용적인 적용 사례
-다이어그램에 텍스트 워터마크를 추가하는 것은 다양한 실제 시나리오에서 유용합니다:
+*설명*: `add` 메서드는 지정된 `textWatermark`와 배치 옵션을 적용하고, 수정된 다이어그램을 `outputPath`에 저장합니다.
 
-- **지식재산 보호** – 경쟁자가 독점적인 프로세스 흐름을 재사용하는 것을 방지합니다.  
-- **브랜드 강화** – 모든 내보낸 다이어그램에 회사 이름이나 로고를 삽입합니다.  
-- **법적 준수** – “Do Not Distribute”와 같이 기밀 설계도를 표시합니다.  
-- **학문적 무결성** – 학생 제출물에 고유 식별자를 태그합니다.
+## 실용적인 적용 사례
+- **지식 재산 보호** – 경쟁사가 독점 다이어그램을 재사용하는 것을 방지합니다.  
+- **브랜드 강화** – 모든 내보낸 다이어그램에 회사명이나 로고를 텍스트 워터마크로 삽입합니다.  
+- **법적 문서** – 엔지니어링 설계 초안을 기밀 초안으로 표시합니다.  
+- **학술 제출** – 표절 추적을 위해 학생 ID나 강좌 코드를 다이어그램에 추가합니다.  
 
-이 워크플로를 문서 관리 시스템, CI/CD 파이프라인 또는 배치 처리 서비스에 통합하여 수천 개 파일에 대한 워터마크 작업을 자동화할 수 있습니다.
+## 성능 고려 사항
+- **메모리 관리** – 대용량 파일을 처리할 때는 `Watermarker` 인스턴스(`watermarker.close()`)를 닫아 네이티브 리소스를 해제합니다.  
+- **배치 처리** – 가능한 경우 단일 `Watermarker` 인스턴스를 재사용하면서 다이어그램 경로 컬렉션을 순회하면 오버헤드를 줄일 수 있습니다.  
 
-### 성능 고려 사항
-대형 다이어그램 컬렉션에서 최적의 성능을 위해:
-
-- **객체 재사용** – 단일 `Watermarker` 인스턴스를 생성하고 루프에서 파일을 처리합니다.  
-- **리소스 즉시 해제** – 저장 후 항상 `watermarker.close()`를 호출하여 네이티브 메모리를 해제합니다.  
-- **대용량 파일 스트리밍** – 전체 파일 대신 `DiagramLoadOptions`를 사용해 필요 시 페이지를 로드합니다.
+## 일반적인 문제 및 해결책
+| 문제 | 해결책 |
+|-------|----------|
+| **대형 다이어그램에서 OutOfMemoryError 발생** | JVM 힙 크기(`-Xmx2g`)를 늘리고 파일을 하나씩 처리합니다. |
+| **워터마크가 보이지 않음** | 워터마크 색상의 대비를 충분히 확보하고, `textWatermark.setOpacity(0.5)`로 불투명도를 설정합니다. |
+| **지원되지 않는 다이어그램 형식** | 형식이 GroupDocs.Watermark 지원 형식 목록에 포함되어 있는지 확인합니다. |
 
 ## 자주 묻는 질문
 
-**Q: 다이어그램 워터마크에 가장 적합한 글꼴 크기는 무엇인가요?**  
-A: 12 pt에서 24 pt 사이가 적합합니다; 고해상도 다이어그램의 경우 가독성을 유지하면서 세부 사항을 가리지 않도록 더 큰 크기를 선택하세요.
+**Q: 워터마크에 가장 적합한 글꼴 크기는 얼마인가요?**  
+A: 최적 크기는 다이어그램 크기에 따라 다르지만, 대부분의 경우 12‑20 pt가 잘 어울립니다.
 
-**Q: 워터마크 색상을 변경할 수 있나요?**  
-A: 예, `textWatermark.setColor(java.awt.Color)`를 호출하여 원하는 RGB 값으로 브랜드에 맞게 설정할 수 있습니다.
+**Q: 워터마크 색상을 커스터마이즈할 수 있나요?**  
+A: 예, `textWatermark.setColor(Color.GRAY)`와 같이 `java.awt.Color` 객체를 사용하면 됩니다.
 
-**Q: 다이어그램 파일 배치를 어떻게 처리하나요?**  
-A: 디렉터리를 순회하면서 각 파일에 동일한 `Watermarker` 객체를 재사용하고, 루프 내에서 `watermarker.add(textWatermark, options)`를 호출합니다.
+**Q: 대량 문서를 어떻게 처리하나요?**  
+A: 라이브러리의 배치 API를 활용하거나 `Watermarker` 객체를 재사용하는 루프를 작성해 오버헤드를 최소화합니다.
 
-**Q: 형식 제한이 있나요?**  
-A: 지원되는 다이어그램 형식 전체 목록은 [documentation](https://docs.groupdocs.com/watermark/java/)을 확인하세요; 라이브러리는 VSX, SVG 및 많은 독점 형식을 처리합니다.
+**Q: GroupDocs.Watermark에 제한 사항이 있나요?**  
+A: 대부분의 일반적인 다이어그램 형식을 지원하지만, 일부 독점 확장자는 완전히 렌더링되지 않을 수 있습니다. 자세한 내용은 [문서](https://docs.groupdocs.com/watermark/java/)를 확인하세요.
 
-**Q: 문제가 발생하면 어디에서 도움을 받을 수 있나요?**  
-A: 커뮤니티 지원을 위해 [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)을 방문하거나 계정 포털을 통해 지원 티켓을 열 수 있습니다.
+**Q: 문제가 발생하면 어떻게 지원받나요?**  
+A: 커뮤니티 지원을 위해 [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)을 방문하거나 GroupDocs 지원팀에 직접 문의하세요.
 
-## 리소스
+## 추가 리소스
 - **문서**: [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **API 참조**: [Java API Reference](https://reference.groupdocs.com/watermark/java)  
+- **API 레퍼런스**: [Java API Reference](https://reference.groupdocs.com/watermark/java)  
 - **다운로드**: [Get GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
 - **GitHub 저장소**: [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - **무료 지원 포럼**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
-- **임시 라이선스**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **임시 라이선스**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 
 ---
 
-**마지막 업데이트:** 2026-11-13  
-**테스트 환경:** GroupDocs.Watermark for Java 24.11  
-**작성자:** GroupDocs
+**마지막 업데이트:** 2025-12-19  
+**테스트 환경:** GroupDocs.Watermark 24.11 for Java  
+**작성자:** GroupDocs  
 
-```java
-import com.groupdocs.watermark.Watermarker;
-import com.groupdocs.watermark.options.DiagramLoadOptions;
-```
-
-## 관련 튜토리얼
-
-- [Java에서 GroupDocs.Watermark를 사용하여 텍스트 워터마크 추가하기: 완전 가이드](/watermark/java/text-watermarks/add-text-watermark-java-groupdocs/)
-- [Java용 GroupDocs.Watermark를 사용하여 특정 PDF 페이지에 텍스트 및 이미지 워터마크 추가하기](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Java용 GroupDocs.Watermark를 사용하여 Word 문서 이미지에 텍스트 워터마크 추가하기](/watermark/java/image-watermarks/add-watermarks-word-images-groupdocs-java/)
+---

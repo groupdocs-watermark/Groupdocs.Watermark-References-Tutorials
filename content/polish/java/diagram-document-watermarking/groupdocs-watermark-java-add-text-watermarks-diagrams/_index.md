@@ -1,106 +1,51 @@
 ---
-date: '2026-11-13'
-description: Dowiedz się, jak dodać znak wodny tekstowy do diagramu przy użyciu GroupDocs.Watermark
-  dla Java. Skutecznie zabezpieczaj swoją zawartość wizualną, jednocześnie pozostawiając
-  diagramy edytowalne i bezpieczne.
+date: '2025-12-19'
+description: Dowiedz się, jak dodać znak wodny z tekstem do diagramów przy użyciu
+  GroupDocs.Watermark dla Javy. Skutecznie zabezpiecz swoją treść wizualną i zapewnij
+  integralność dokumentów.
 keywords:
-- add text watermark diagram
-- GroupDocs.Watermark for Java
-- diagram watermarking
-lastmod: '2026-11-13'
-og_description: Dodaj znak wodny tekstowy do diagramu przy użyciu GroupDocs.Watermark
-  dla Java. Ten przewodnik pokazuje krok po kroku, jak chronić diagramy, konfigurować
-  położenie i efektywnie zapisywać wynik.
-og_image_alt: 'Developer guide: adding text watermarks to diagram files with GroupDocs.Watermark
-  for Java'
-og_title: Dodaj znak wodny tekstowy do diagramu z GroupDocs.Watermark dla Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-11-13'
-  description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  headline: Add text watermark diagram using GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  name: Add text watermark diagram using GroupDocs.Watermark for Java
-  steps:
-  - name: load diagram document
-    text: '**Definition anchor**: `DiagramLoadOptions` configures how GroupDocs.Watermark
-      reads diagram files, allowing you to specify page ranges or rendering settings.
-      Specify the file path and initialise the load options:'
-  - name: create and configure the text watermark
-    text: '**Definition anchor**: `TextWatermark` represents the textual overlay that
-      will be rendered on each selected diagram shape. Instantiate the watermark with
-      your chosen text, font, size, and color:'
-  - name: set watermark placement options
-    text: '**Definition anchor**: `DiagramShapeWatermarkOptions` lets you decide whether
-      the watermark appears on the background, foreground, or specific shapes within
-      the diagram. Configure the placement type and any rotation or opacity settings:'
-  - name: add the watermark and save the diagram
-    text: '**Definition anchor**: `Watermarker` is the core class that applies watermarks
-      to supported documents and writes the output file. Apply the `textWatermark`
-      to the loaded diagram using the previously defined `options`, then save the
-      result to a new location:'
-  type: HowTo
-- questions:
-  - answer: A size between 12 pt and 24 pt works well; choose larger sizes for high‑resolution
-      diagrams to ensure readability without obscuring details.
-    question: What is the best font size for watermarks on diagrams?
-  - answer: Yes, call `textWatermark.setColor(java.awt.Color)` with any RGB value
-      to match your branding.
-    question: Can I change the watermark color?
-  - answer: Iterate over a directory, reuse the same `Watermarker` object for each
-      file, and call `watermarker.add(textWatermark, options)` inside the loop.
-    question: How do I process a batch of diagram files?
-  - answer: Review [documentation](https://docs.groupdocs.com/watermark/java/) for
-      the full list of supported diagram formats; the library handles VSX, SVG, and
-      many proprietary formats.
-    question: Are there any format limitations?
-  - answer: Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
-      for community assistance or open a support ticket through your account portal.
-    question: Where can I get help if I run into issues?
-  type: FAQPage
-tags:
-- add text watermark diagram
-- GroupDocs.Watermark
-- Java diagram processing
-- document security
-title: Dodaj znak wodny tekstowy do diagramu przy użyciu GroupDocs.Watermark dla Java
+- text watermarks
+- GroupDocs Watermark for Java
+- diagram document watermarking
+title: Dodaj znak wodny z tekstem do diagramów przy użyciu GroupDocs.Watermark dla
+  Javy – Kompletny przewodnik
 type: docs
 url: /pl/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/
 weight: 1
 ---
 
-# Dodaj znak wodny tekstowy do diagramu przy użyciu GroupDocs.Watermark dla Java
+# Dodaj znak wodny tekstowy do diagramów przy użyciu GroupDocs.Watermark dla Java: Kompletny przewodnik
 
-Ochrona dokumentów diagramów przed nieautoryzowanym użyciem jest kluczowa, a **add text watermark diagram** jest prostym, ale skutecznym sposobem na to. W tym samouczku dowiesz się, jak ładować pliki diagramów, tworzyć konfigurowalny znak wodny tekstowy, precyzyjnie pozycjonować go na kształtach diagramu oraz zapisać chroniony plik — wszystko przy użyciu GroupDocs.Watermark dla Java.
+## Wprowadzenie
+Ochrona dokumentów diagramów przed nieautoryzowanym użyciem jest kluczowa, a **dodanie znaku wodnego tekstowego** zapewnia proste, a jednocześnie skuteczne rozwiązanie. W tym samouczku dowiesz się, jak wczytać pliki diagramów, stworzyć konfigurowalny znak wodny tekstowy oraz zastosować go do stron tła lub konkretnych kształtów przy użyciu **GroupDocs.Watermark for Java**. Po zakończeniu przewodnika będziesz w stanie zabezpieczyć swoje zasoby wizualne, zachowując oryginalny wygląd i odczucie.
 
-## Szybkie odpowiedzi
-- **Która biblioteka obsługuje znaki wodne diagramów?** GroupDocs.Watermark for Java.
-- **Jaka jest minimalna wersja Javy?** JDK 8 or newer.
-- **Czy potrzebuję licencji do rozwoju?** A temporary license works for all features during testing.
-- **Czy mogę dodać znak wodny do wielu plików w partii?** Yes, use the same Watermarker instance in a loop.
-- **Czy zużycie pamięci jest problemem przy dużych diagramach?** Reuse objects and close the Watermarker to free resources.
+### Szybkie odpowiedzi
+- **Co oznacza „add text watermark”?**  
+  Oznacza to osadzenie półprzezroczystej warstwy tekstowej w dokumencie w celu wskazania własności lub poufności.  
+- **Która biblioteka obsługuje znakowanie diagramów?**  
+  GroupDocs.Watermark for Java zapewnia natywną obsługę formatów diagramów (np. Visio, VSDX).  
+- **Czy potrzebna jest licencja?**  
+  Do użytku produkcyjnego wymagana jest tymczasowa lub pełna licencja; dostępna jest darmowa wersja próbna do oceny.  
+- **Czy mogę umieścić znak wodny na stronach tła?**  
+  Tak – użyj opcji `DiagramWatermarkPlacementType.SeparateBackgrounds` dla **znaku wodnego strony tła**.  
+- **Czy kod jest kompatybilny z Java 8+?**  
+  Zdecydowanie – biblioteka działa z JDK 8 i nowszymi.
 
-## Czym jest add text watermark diagram?
-`add text watermark diagram` odnosi się do procesu osadzania czytelnego tekstu (np. „Confidential” lub nazwy firmy) bezpośrednio w plikach diagramów, tak aby znak wodny stał się częścią wizualnej treści i nie mógł być usunięty bez zmiany samego diagramu.
+## Co to jest znak wodny tekstowy dla diagramów?
+Znak wodny tekstowy to fragment czytelnego tekstu (często półprzezroczysty), który jest renderowany nad lub pod elementami diagramu. Może być używany do budowania marki, ochrony praw autorskich lub oznaczania poufnych wersji roboczych.
 
-## Dlaczego używać GroupDocs.Watermark dla Java?
-GroupDocs.Watermark obsługuje **ponad 50 formatów wejściowych i wyjściowych**, w tym Visio (.vsdx), SVG oraz inne popularne typy diagramów. Może przetwarzać diagramy o setkach stron bez ładowania całego pliku do pamięci, zapewniając **30 % redukcji zużycia CPU** w porównaniu z wieloma konkurentami przy obsłudze plików większych niż 100 MB.
+## Dlaczego warto używać GroupDocs.Watermark dla Java?
+- **Szerokie wsparcie formatów** – działa z Visio, VSDX i wieloma innymi typami diagramów.  
+- **Precyzyjne rozmieszczenie** – wybierz znakowanie w pierwszym planie, tle lub konkretnym kształcie.  
+- **Proste API** – twórz i stosuj znaki wodne za pomocą kilku linii kodu Java.  
 
-## Wymagania wstępne
-- **GroupDocs.Watermark for Java** wersja 24.11 lub nowsza (biblioteka jest aktualizowana co miesiąc o poprawki bezpieczeństwa).  
-- **Java Development Kit (JDK)** 8 lub nowszy.  
-- IDE, takie jak IntelliJ IDEA lub Eclipse.  
-- Maven do zarządzania zależnościami (opcjonalnie, ale zalecane).
+## Prerequisites
+- **GroupDocs.Watermark for Java** (v24.11 lub nowszy)  
+- **Java Development Kit (JDK)** 8 lub wyższy  
+- Maven (lub ręczne dołączenie JAR)
 
 ## Konfiguracja GroupDocs.Watermark dla Java
-Aby rozpocząć, dodaj bibliotekę do swojego projektu Maven:
-
-**Konfiguracja Maven**  
+### Konfiguracja Maven
 Dodaj następującą konfigurację do pliku `pom.xml`:
 
 ```xml
@@ -121,22 +66,26 @@ Dodaj następującą konfigurację do pliku `pom.xml`:
 </dependencies>
 ```
 
-Jeśli wolisz ręczne pobranie, pobierz najnowsze pliki binarne z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### Bezpośrednie pobranie
+Download the latest version from [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Uzyskanie licencji
-- **Free trial** – przetestuj wszystkie funkcje przez 30 dni.  
-- **Temporary license** – usuwa wszystkie ograniczenia wersji próbnej podczas rozwoju.  
-- **Full license** – wymagana przy wdrożeniach produkcyjnych.
+- **Free Trial** – oceń wszystkie funkcje bez klucza licencyjnego.  
+- **Temporary License** – użyj podczas rozwoju, aby odblokować pełną funkcjonalność.  
+- **Purchase** – uzyskaj licencję produkcyjną do projektów komercyjnych.  
 
-## Przewodnik implementacji
+### Podstawowa inicjalizacja i konfiguracja
+Upewnij się, że następujące importy znajdują się w Twojej klasie Java:
 
-### Jak dodać znak wodny tekstowy do diagramu przy użyciu GroupDocs.Watermark dla Java?
-Najpierw załaduj plik diagramu przy użyciu `DiagramLoadOptions`. Następnie utwórz instancję `TextWatermark` z żądanym tekstem, czcionką, rozmiarem i kolorem. Potem skonfiguruj `DiagramShapeWatermarkOptions`, aby kontrolować położenie, obrót i przezroczystość. Na koniec zastosuj znak wodny za pomocą `Watermarker.add` i zapisz zmodyfikowany diagram do nowego pliku. Ta bezpośrednia odpowiedź przedstawia ogólny przepływ przed szczegółowym wyjaśnieniem.
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.DiagramLoadOptions;
+```
 
-#### Krok 1: załaduj dokument diagramu
-**Definition anchor**: `DiagramLoadOptions` konfiguruje sposób, w jaki GroupDocs.Watermark odczytuje pliki diagramów, umożliwiając określenie zakresów stron lub ustawień renderowania.
+## Implementacja krok po kroku
 
-Określ ścieżkę pliku i zainicjuj opcje ładowania:
+### Krok 1: Wczytaj dokument diagramu
+Najpierw wskaż bibliotece plik diagramu i zainicjalizuj opcje ładowania.
 
 ```java
 String inputPath = "YOUR_DOCUMENT_DIRECTORY";
@@ -144,29 +93,29 @@ DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker(inputPath, loadOptions);
 ```
 
-#### Krok 2: utwórz i skonfiguruj znak wodny tekstowy
-**Definition anchor**: `TextWatermark` reprezentuje nakładkę tekstową, która zostanie wyrenderowana na każdym wybranym kształcie diagramu.
+*Wyjaśnienie*: `DiagramLoadOptions` pozwala kontrolować, jak diagram jest parsowany przed dodaniem znaku wodnego.
 
-Utwórz znak wodny z wybranym tekstem, czcionką, rozmiarem i kolorem:
+### Krok 2: Utwórz znak wodny tekstowy
+Teraz utwórz tekst znaku wodnego i zdefiniuj jego styl wizualny.
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark 1", new Font("Calibri", 19));
 ```
 
-#### Krok 3: ustaw opcje położenia znaku wodnego
-**Definition anchor**: `DiagramShapeWatermarkOptions` pozwala zdecydować, czy znak wodny pojawi się w tle, na pierwszym planie, czy na konkretnych kształtach w diagramie.
+*Wyjaśnienie*: To tworzy `TextWatermark` z frazą **“Test watermark 1”** używając czcionki Calibri o rozmiarze 19.
 
-Skonfiguruj typ położenia oraz ewentualne ustawienia obrotu lub przezroczystości:
+### Krok 3: Skonfiguruj rozmieszczenie – znak wodny strony tła
+Wybierz, gdzie ma się pojawić znak wodny. Dla **znaku wodnego strony tła**, użyj następującej opcji:
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
 options.setPlacementType(DiagramWatermarkPlacementType.SeparateBackgrounds);
 ```
 
-#### Krok 4: dodaj znak wodny i zapisz diagram
-**Definition anchor**: `Watermarker` to podstawowa klasa, która nakłada znaki wodne na obsługiwane dokumenty i zapisuje plik wyjściowy.
+*Wyjaśnienie*: `DiagramShapeWatermarkOptions` kontroluje dokładną lokalizację. Ustawienie typu rozmieszczenia na `SeparateBackgrounds` dodaje znak wodny do każdej strony tła diagramu.
 
-Zastosuj `textWatermark` do załadowanego diagramu przy użyciu wcześniej zdefiniowanych `options`, a następnie zapisz wynik w nowej lokalizacji:
+### Krok 4: Zastosuj znak wodny i zapisz
+Na koniec dodaj znak wodny do dokumentu, zapisz wynik i zwolnij zasoby.
 
 ```java
 watermarker.add(textWatermark, options);
@@ -175,59 +124,55 @@ watermarker.save(outputPath);
 watermarker.close();
 ```
 
-### Praktyczne zastosowania
-Dodawanie znaku wodnego tekstowego do diagramów jest przydatne w wielu rzeczywistych scenariuszach:
+*Wyjaśnienie*: Metoda `add` stosuje skonfigurowany `textWatermark` przy użyciu opcji rozmieszczenia, a zmodyfikowany diagram jest zapisywany do `outputPath`.
 
-- **Intellectual‑property protection** – zatrzymaj konkurentów przed ponownym użyciem własnościowych przepływów procesów.  
-- **Brand reinforcement** – osadź nazwę swojej firmy lub logo na każdym wyeksportowanym diagramie.  
-- **Legal compliance** – oznacz poufne schematy napisem „Do Not Distribute”.  
-- **Academic integrity** – oznacz zgłoszenia studentów unikalnymi identyfikatorami.
+## Praktyczne zastosowania
+- **Ochrona własności intelektualnej** – Zapobiegaj wykorzystywaniu własnych diagramów przez konkurencję.  
+- **Wzmacnianie marki** – Osadź nazwę firmy lub logo jako znak wodny tekstowy na wszystkich wyeksportowanych diagramach.  
+- **Dokumentacja prawna** – Oznacz poufne wersje robocze schematów inżynieryjnych.  
+- **Zgłoszenia akademickie** – Dodaj identyfikatory studentów lub kody kursów do diagramów w celu śledzenia plagiatu.
 
-Możesz zintegrować ten przepływ pracy z systemami zarządzania dokumentami, pipeline’ami CI/CD lub usługami przetwarzania wsadowego, aby automatyzować znakowanie tysięcy plików.
+## Rozważania dotyczące wydajności
+- **Zarządzanie pamięcią** – Zamknij instancję `Watermarker` (`watermarker.close()`), aby zwolnić zasoby natywne, szczególnie przy przetwarzaniu dużych plików.  
+- **Przetwarzanie wsadowe** – Przejdź pętlą przez kolekcję ścieżek diagramów i w miarę możliwości ponownie użyj jednej instancji `Watermarker`, aby zmniejszyć narzut.  
 
-### Rozważania dotyczące wydajności
-Aby uzyskać optymalną wydajność przy dużych zbiorach diagramów:
+## Typowe problemy i rozwiązania
 
-- **Reuse objects** – utwórz jedną instancję `Watermarker` i przetwarzaj pliki w pętli.  
-- **Close resources promptly** – zawsze wywołuj `watermarker.close()` po zapisaniu, aby zwolnić pamięć natywną.  
-- **Stream large files** – użyj `DiagramLoadOptions`, aby ładować strony na żądanie zamiast całego pliku.
+| Problem | Rozwiązanie |
+|-------|----------|
+| **OutOfMemoryError przy dużych diagramach** | Zwiększ rozmiar sterty JVM (`-Xmx2g`) i przetwarzaj pliki pojedynczo. |
+| **Znak wodny niewidoczny** | Upewnij się, że kolor znaku wodnego ma wystarczający kontrast; ustaw przezroczystość za pomocą `textWatermark.setOpacity(0.5)`. |
+| **Nieobsługiwany format diagramu** | Sprawdź, czy format jest wymieniony w dokumentacji obsługiwanych formatów GroupDocs.Watermark. |
 
 ## Najczęściej zadawane pytania
 
-**Q: Jaki jest najlepszy rozmiar czcionki dla znaków wodnych na diagramach?**  
-A: Rozmiar od 12 pt do 24 pt sprawdza się dobrze; wybierz większe rozmiary dla diagramów wysokiej rozdzielczości, aby zapewnić czytelność bez zasłaniania szczegółów.
+**Q:** Jaki jest najlepszy rozmiar czcionki dla znaków wodnych?  
+**A:** Optymalny rozmiar zależy od wymiarów diagramu; 12‑20 pt sprawdza się w większości przypadków.
 
-**Q: Czy mogę zmienić kolor znaku wodnego?**  
-A: Tak, wywołaj `textWatermark.setColor(java.awt.Color)` z dowolną wartością RGB, aby dopasować go do swojej marki.
+**Q:** Czy mogę dostosować kolory znaku wodnego?  
+**A:** Tak, użyj `textWatermark.setColor(Color.GRAY)` (lub dowolnego `java.awt.Color`).
 
-**Q: Jak przetworzyć partię plików diagramów?**  
-A: Przejdź przez katalog, ponownie użyj tego samego obiektu `Watermarker` dla każdego pliku i wywołaj `watermarker.add(textWatermark, options)` wewnątrz pętli.
+**Q:** Jak obsłużyć duże partie dokumentów?  
+**A:** Skorzystaj z API wsadowego biblioteki lub napisz pętlę, która ponownie używa obiektów `Watermarker`, aby zminimalizować narzut.
 
-**Q: Czy istnieją ograniczenia formatów?**  
-A: Przejrzyj [dokumentację](https://docs.groupdocs.com/watermark/java/) aby zobaczyć pełną listę obsługiwanych formatów diagramów; biblioteka obsługuje VSX, SVG i wiele formatów własnościowych.
+**Q:** Czy istnieją ograniczenia w GroupDocs.Watermark?  
+**A:** Biblioteka obsługuje większość popularnych formatów diagramów, ale niektóre własnościowe rozszerzenia mogą nie być w pełni renderowane. Sprawdź [dokumentację](https://docs.groupdocs.com/watermark/java/) po szczegóły.
 
-**Q: Gdzie mogę uzyskać pomoc, jeśli napotkam problemy?**  
-A: Odwiedź [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10) aby uzyskać pomoc społeczności lub otwórz zgłoszenie wsparcia przez portal swojego konta.
+**Q:** Jak mogę uzyskać wsparcie w razie problemów?  
+**A:** Odwiedź [Forum GroupDocs](https://forum.groupdocs.com/c/watermark/10) w celu uzyskania pomocy społeczności lub skontaktuj się bezpośrednio z wsparciem GroupDocs.
 
-## Zasoby
-- **Dokumentacja**: [Dokumentacja GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
-- **Referencja API**: [Referencja API Java](https://reference.groupdocs.com/watermark/java)  
-- **Pobieranie**: [Pobierz GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
+## Dodatkowe zasoby
+- **Dokumentacja**: [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Referencja API**: [Java API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Pobierz**: [Get GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
 - **Repozytorium GitHub**: [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - **Darmowe forum wsparcia**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
-- **Licencja tymczasowa**: [Uzyskaj licencję tymczasową](https://purchase.groupdocs.com/temporary-license/)
+- **Licencja tymczasowa**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 
-**Ostatnia aktualizacja:** 2026-11-13  
-**Testowano z:** GroupDocs.Watermark for Java 24.11  
-**Autor:** GroupDocs
+---
 
-```java
-import com.groupdocs.watermark.Watermarker;
-import com.groupdocs.watermark.options.DiagramLoadOptions;
-```
+**Ostatnia aktualizacja:** 2025-12-19  
+**Testowano z:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs  
 
-## Powiązane samouczki
-
-- [Jak dodać znaki wodne tekstowe w Javie z GroupDocs.Watermark: Kompletny przewodnik](/watermark/java/text-watermarks/add-text-watermark-java-groupdocs/)
-- [Jak dodać znaki wodne tekstowe i graficzne do konkretnych stron PDF przy użyciu GroupDocs.Watermark dla Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Jak dodać znaki wodne tekstowe do obrazów w dokumentach Word przy użyciu GroupDocs.Watermark dla Java](/watermark/java/image-watermarks/add-watermarks-word-images-groupdocs-java/)
+---

@@ -1,103 +1,49 @@
 ---
-date: '2026-11-13'
-description: 了解如何使用 GroupDocs.Watermark for Java 為圖表添加文字浮水印。有效保護您的視覺內容，同時保持圖表可編輯且安全。
+date: '2025-12-19'
+description: 學習如何使用 GroupDocs.Watermark for Java 為圖表添加文字浮水印。有效保護您的視覺內容，確保文件完整性。
 keywords:
-- add text watermark diagram
-- GroupDocs.Watermark for Java
-- diagram watermarking
-lastmod: '2026-11-13'
-og_description: 使用 GroupDocs.Watermark for Java 為圖表添加文字浮水印。本指南逐步說明如何保護圖表、設定浮水印位置，並高效儲存結果。
-og_image_alt: 'Developer guide: adding text watermarks to diagram files with GroupDocs.Watermark
-  for Java'
-og_title: 使用 GroupDocs.Watermark for Java 為圖表添加文字浮水印
-schemas:
-- author: GroupDocs
-  dateModified: '2026-11-13'
-  description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  headline: Add text watermark diagram using GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  name: Add text watermark diagram using GroupDocs.Watermark for Java
-  steps:
-  - name: load diagram document
-    text: '**Definition anchor**: `DiagramLoadOptions` configures how GroupDocs.Watermark
-      reads diagram files, allowing you to specify page ranges or rendering settings.
-      Specify the file path and initialise the load options:'
-  - name: create and configure the text watermark
-    text: '**Definition anchor**: `TextWatermark` represents the textual overlay that
-      will be rendered on each selected diagram shape. Instantiate the watermark with
-      your chosen text, font, size, and color:'
-  - name: set watermark placement options
-    text: '**Definition anchor**: `DiagramShapeWatermarkOptions` lets you decide whether
-      the watermark appears on the background, foreground, or specific shapes within
-      the diagram. Configure the placement type and any rotation or opacity settings:'
-  - name: add the watermark and save the diagram
-    text: '**Definition anchor**: `Watermarker` is the core class that applies watermarks
-      to supported documents and writes the output file. Apply the `textWatermark`
-      to the loaded diagram using the previously defined `options`, then save the
-      result to a new location:'
-  type: HowTo
-- questions:
-  - answer: A size between 12 pt and 24 pt works well; choose larger sizes for high‑resolution
-      diagrams to ensure readability without obscuring details.
-    question: What is the best font size for watermarks on diagrams?
-  - answer: Yes, call `textWatermark.setColor(java.awt.Color)` with any RGB value
-      to match your branding.
-    question: Can I change the watermark color?
-  - answer: Iterate over a directory, reuse the same `Watermarker` object for each
-      file, and call `watermarker.add(textWatermark, options)` inside the loop.
-    question: How do I process a batch of diagram files?
-  - answer: Review [documentation](https://docs.groupdocs.com/watermark/java/) for
-      the full list of supported diagram formats; the library handles VSX, SVG, and
-      many proprietary formats.
-    question: Are there any format limitations?
-  - answer: Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
-      for community assistance or open a support ticket through your account portal.
-    question: Where can I get help if I run into issues?
-  type: FAQPage
-tags:
-- add text watermark diagram
-- GroupDocs.Watermark
-- Java diagram processing
-- document security
-title: 使用 GroupDocs.Watermark for Java 為圖表添加文字浮水印
+- text watermarks
+- GroupDocs Watermark for Java
+- diagram document watermarking
+title: 使用 GroupDocs.Watermark for Java 為圖表添加文字水印 – 完整指南
 type: docs
 url: /zh-hant/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/
 weight: 1
 ---
 
-# 使用 GroupDocs.Watermark for Java 為圖表添加文字浮水印
+# 使用 GroupDocs.Watermark for Java 為圖表添加文字浮水印：完整指南
 
-保護圖表文件免於未經授權的使用至關重要，而 **add text watermark diagram** 是一種簡單卻強大的做法。在本教學中，您將學習如何載入圖表檔案、建立可自訂的文字浮水印、精確定位於圖表形狀上，並儲存受保護的檔案——全部使用 GroupDocs.Watermark for Java。
+## 介紹
+保護圖表文件免於未授權使用至關重要，而 **添加文字浮水印** 提供了一個簡單且有效的解決方案。在本教學中，你將學會如何載入圖表檔案、建立可自訂的文字浮水印，並使用 **GroupDocs.Watermark for Java** 將其套用於背景頁面或特定圖形。完成本指南後，你將能在保持原始外觀的同時，保護你的視覺資產。
 
-## 快速解答
-- **哪個函式庫處理圖表浮水印？** GroupDocs.Watermark for Java.
-- **最低支援的 Java 版本是什麼？** JDK 8 或更新版本.
-- **開發時需要授權嗎？** 臨時授權在測試期間可使用所有功能.
-- **我可以一次批次為多個檔案加浮水印嗎？** 是的，在迴圈中使用相同的 Watermarker 實例.
-- **大型圖表的記憶體使用是否成問題？** 重複使用物件並在完成後關閉 Watermarker 以釋放資源.
+### 快速回答
+- **「添加文字浮水印」是什麼意思？**  
+  意指在文件中嵌入半透明的文字覆蓋層，以表明所有權或機密性。  
+- **哪個函式庫支援圖表浮水印？**  
+  GroupDocs.Watermark for Java 原生支援圖表格式（例如 Visio、VSDX）。  
+- **我需要授權嗎？**  
+  生產環境使用需取得臨時或正式授權；亦提供免費試用版供評估。  
+- **我可以將浮水印放在背景頁面上嗎？**  
+  可以 – 使用 `DiagramWatermarkPlacementType.SeparateBackgrounds` 選項即可實現 **背景頁面浮水印**。  
+- **程式碼是否相容於 Java 8+？**  
+  完全相容 – 此函式庫支援 JDK 8 及更新版本。
 
-## 什麼是 add text watermark diagram？
-`add text watermark diagram` 指的是將可讀文字（例如「機密」或公司名稱）直接嵌入圖表檔案的過程，使浮水印成為視覺內容的一部分，且在未修改圖表本身的情況下無法移除。
+## 什麼是圖表的文字浮水印？
+文字浮水印是一段可讀的文字（通常為半透明），會渲染在圖表元素的上方或下方。它可用於品牌宣傳、版權保護，或標示機密草稿。
 
-## 為何使用 GroupDocs.Watermark for Java？
-GroupDocs.Watermark 支援 **50+ 種輸入與輸出格式**，包括 Visio (.vsdx)、SVG 以及其他常見的圖表類型。它能在不將整個檔案載入記憶體的情況下處理數百頁的圖表，較許多競爭對手在處理超過 100 MB 檔案時可實現 **30 % 的 CPU 使用率降低**。
+## 為什麼使用 GroupDocs.Watermark for Java？
+- **廣泛的格式支援** – 可處理 Visio、VSDX 以及其他多種圖表類型。  
+- **精細的放置控制** – 可選擇前景、背景或特定圖形的浮水印。  
+- **簡易的 API** – 只需幾行 Java 程式碼即可建立並套用浮水印。  
 
 ## 前置條件
-- **GroupDocs.Watermark for Java** 版本 24.11 或更新（此函式庫每月更新安全修補程式）。  
-- **Java Development Kit (JDK)** 8 或更新。  
-- 如 IntelliJ IDEA 或 Eclipse 等 IDE。  
-- 用於相依管理的 Maven（非必須，但建議使用）。
+- **GroupDocs.Watermark for Java**（v24.11 或更新版本）  
+- **Java Development Kit (JDK)** 8 或以上  
+- Maven（或手動加入 JAR）  
 
 ## 設定 GroupDocs.Watermark for Java
-首先，將函式庫加入您的 Maven 專案：
-
-**Maven 設定**  
-將以下配置加入您的 `pom.xml` 檔案：
+### Maven 設定
+將以下設定加入你的 `pom.xml` 檔案：
 
 ```xml
 <repositories>
@@ -117,22 +63,26 @@ GroupDocs.Watermark 支援 **50+ 種輸入與輸出格式**，包括 Visio (.v
 </dependencies>
 ```
 
-如果您偏好手動下載，可從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 取得最新二進位檔。
+### 直接下載
+從 [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/) 下載最新版本。
 
 ### 取得授權
-- **Free trial** – 30 天內可體驗所有功能。  
-- **Temporary license** – 開發期間移除所有試用限制。  
-- **Full license** – 生產環境部署時必須取得完整授權。
+- **免費試用** – 無需授權金鑰即可評估全部功能。  
+- **臨時授權** – 開發期間使用，可解鎖完整功能。  
+- **購買正式授權** – 用於商業專案的正式授權。  
 
-## 實作指南
+### 基本初始化與設定
+確保你的 Java 類別中已匯入以下程式碼：
 
-### 如何使用 GroupDocs.Watermark for Java 為圖表添加文字浮水印？
-首先，使用 `DiagramLoadOptions` 載入圖表檔案。接著，實例化 `TextWatermark`，設定所需的文字、字型、大小與顏色。然後，配置 `DiagramShapeWatermarkOptions` 以控制放置位置、旋轉角度與不透明度。最後，使用 `Watermarker.add` 套用浮水印，並將修改後的圖表儲存為新檔案。此直接答案提供整體流程概覽，後續會有詳細說明。
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.DiagramLoadOptions;
+```
 
-#### 步驟 1：載入圖表文件
-**Definition anchor**：`DiagramLoadOptions` 設定 GroupDocs.Watermark 讀取圖表檔案的方式，允許您指定頁面範圍或渲染設定。
+## 步驟實作
 
-指定檔案路徑並初始化載入選項：
+### 步驟 1：載入圖表文件
+首先，指向圖表檔案並初始化載入選項。
 
 ```java
 String inputPath = "YOUR_DOCUMENT_DIRECTORY";
@@ -140,29 +90,29 @@ DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker(inputPath, loadOptions);
 ```
 
-#### 步驟 2：建立並設定文字浮水印
-**Definition anchor**：`TextWatermark` 代表將在每個選取的圖表形狀上渲染的文字覆蓋層。
+*說明*：`DiagramLoadOptions` 讓你在加入浮水印前控制圖表的解析方式。
 
-以您選擇的文字、字型、大小與顏色實例化浮水印：
+### 步驟 2：建立文字浮水印
+接著建立浮水印文字並定義其視覺樣式。
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark 1", new Font("Calibri", 19));
 ```
 
-#### 步驟 3：設定浮水印放置選項
-**Definition anchor**：`DiagramShapeWatermarkOptions` 讓您決定浮水印是顯示在背景、前景，或是圖表中的特定形狀上。
+*說明*：此程式碼會建立一個文字浮水印 **「Test watermark 1」**，使用 Calibri 字型，字型大小 19。
 
-配置放置類型以及任何旋轉或不透明度設定：
+### 步驟 3：配置放置方式 – 背景頁面浮水印
+選擇浮水印的顯示位置。若要建立 **背景頁面浮水印**，使用以下選項：
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
 options.setPlacementType(DiagramWatermarkPlacementType.SeparateBackgrounds);
 ```
 
-#### 步驟 4：加入浮水印並儲存圖表
-**Definition anchor**：`Watermarker` 為核心類別，負責將浮水印套用至支援的文件並寫入輸出檔案。
+*說明*：`DiagramShapeWatermarkOptions` 控制精確位置。將放置類型設定為 `SeparateBackgrounds` 後，浮水印會加到圖表的每個背景頁面。
 
-使用先前定義的 `options`，將 `textWatermark` 套用至已載入的圖表，然後將結果儲存至新位置：
+### 步驟 4：套用浮水印並儲存
+最後，將浮水印加入文件、儲存結果，並釋放資源。
 
 ```java
 watermarker.add(textWatermark, options);
@@ -171,61 +121,52 @@ watermarker.save(outputPath);
 watermarker.close();
 ```
 
-### 實務應用
-在許多實務情境中，為圖表添加文字浮水印非常有用：
+*說明*：`add` 方法使用配置好的 `textWatermark` 及放置選項，然後將修改後的圖表儲存至 `outputPath`。
 
-- **Intellectual‑property protection** – 防止競爭者重複使用專有流程圖。  
-- **Brand reinforcement** – 在每個匯出的圖表上嵌入公司名稱或標誌。  
-- **Legal compliance** – 使用「Do Not Distribute」標記機密圖紙以符合法規要求。  
-- **Academic integrity** – 為學生提交的作品加上唯一識別碼以維護學術誠信。
+## 實務應用
+- **智慧財產保護** – 防止競爭對手重複使用專有圖表。  
+- **品牌強化** – 在所有匯出圖表上嵌入公司名稱或標誌作為文字浮水印。  
+- **法律文件** – 為工程圖紙的機密草稿加上標記。  
+- **學術提交** – 在圖表上附加學號或課程代碼，以便追蹤抄襲情況。
 
-您可以將此工作流程整合至文件管理系統、CI/CD 管線或批次處理服務，以自動化為數千個檔案加浮水印。
+## 效能考量
+- **記憶體管理** – 關閉 `Watermarker` 實例 (`watermarker.close()`) 以釋放原生資源，尤其在處理大型檔案時。  
+- **批次處理** – 迭代處理多個圖表路徑時，盡可能重複使用同一個 `Watermarker` 實例，以降低開銷。  
 
-### 效能考量
-針對大型圖表集合的最佳效能建議：
+## 常見問題與解決方案
+| 問題 | 解決方案 |
+|------|----------|
+| **大型圖表導致 OutOfMemoryError** | 增加 JVM 堆積大小（`-Xmx2g`），並一次處理單一檔案。 |
+| **浮水印未顯示** | 確認浮水印顏色具備足夠對比度；可透過 `textWatermark.setOpacity(0.5)` 設定不透明度。 |
+| **不支援的圖表格式** | 確認該格式已列於 GroupDocs.Watermark 支援格式文件中。 |
 
-- **Reuse objects** – 建立單一 `Watermarker` 實例，於迴圈中處理檔案。  
-- **Close resources promptly** – 儲存後務必呼叫 `watermarker.close()` 以釋放原生記憶體。  
-- **Stream large files** – 使用 `DiagramLoadOptions` 按需載入頁面，而非一次載入整個檔案。
+## 常見問答
 
-## 常見問題
+**Q: 文字浮水印的最佳字型大小是多少？**  
+A: 最適字型大小取決於圖表尺寸；大多數情況下 12‑20 pt 表現良好。
 
-**Q: 圖表浮水印的最佳字體大小是多少？**  
-A: 12 pt 至 24 pt 之間的大小通常表現良好；對於高解析度的圖表，請選擇較大的字體，以確保可讀性且不遮蔽細節。
+**Q: 我可以自訂浮水印顏色嗎？**  
+A: 可以，使用 `textWatermark.setColor(Color.GRAY)`（或任意 `java.awt.Color`）。
 
-**Q: 我可以更改浮水印的顏色嗎？**  
-A: 可以，呼叫 `textWatermark.setColor(java.awt.Color)` 並傳入任意 RGB 值，以符合您的品牌色彩。
+**Q: 如何處理大量文件的批次作業？**  
+A: 可利用函式庫的批次 API，或撰寫迴圈重複使用 `Watermarker` 物件以降低開銷。
 
-**Q: 我該如何批次處理圖表檔案？**  
-A: 迭代目錄中的檔案，對每個檔案重複使用相同的 `Watermarker` 物件，並在迴圈內呼叫 `watermarker.add(textWatermark, options)`。
+**Q: GroupDocs.Watermark 有什麼限制嗎？**  
+A: 此函式庫支援大多數常見圖表格式，但某些專有擴充功能可能無法完整呈現。詳情請參閱 [documentation](https://docs.groupdocs.com/watermark/java/)。
 
-**Q: 有任何格式限制嗎？**  
-A: 請參閱 [documentation](https://docs.groupdocs.com/watermark/java/) 以取得支援的圖表格式完整清單；此函式庫支援 VSX、SVG 以及許多專有格式。
+**Q: 若遇到問題該如何取得支援？**  
+A: 前往 [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10) 尋求社群協助，或直接聯繫 GroupDocs 客服。
 
-**Q: 若遇到問題，我該向哪裡尋求協助？**  
-A: 前往 [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10) 取得社群協助，或透過您的帳號入口開立支援工單。
-
-## 資源
-- **Documentation**: [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
-- **API reference**: [Java API Reference](https://reference.groupdocs.com/watermark/java)  
-- **Download**: [Get GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub repository**: [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Free support forum**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
-- **Temporary license**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)
+## 其他資源
+- **文件說明**： [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **API 參考**： [Java API Reference](https://reference.groupdocs.com/watermark/java)  
+- **下載**： [Get GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
+- **GitHub 程式庫**： [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **免費支援論壇**： [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
+- **臨時授權**： [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 
 ---
 
-**最後更新：** 2026-11-13  
-**測試環境：** GroupDocs.Watermark for Java 24.11  
+**最後更新：** 2025-12-19  
+**測試環境：** GroupDocs.Watermark 24.11 for Java  
 **作者：** GroupDocs
-
-```java
-import com.groupdocs.watermark.Watermarker;
-import com.groupdocs.watermark.options.DiagramLoadOptions;
-```
-
-## 相關教學
-
-- [如何在 Java 中使用 GroupDocs.Watermark 添加文字浮水印：完整指南](/watermark/java/text-watermarks/add-text-watermark-java-groupdocs/)
-- [如何使用 GroupDocs.Watermark for Java 為特定 PDF 頁面添加文字與圖像浮水印](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [如何使用 GroupDocs.Watermark for Java 為 Word 文件圖像添加文字浮水印](/watermark/java/image-watermarks/add-watermarks-word-images-groupdocs-java/)

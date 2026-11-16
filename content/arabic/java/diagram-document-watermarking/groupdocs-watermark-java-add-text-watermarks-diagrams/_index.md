@@ -1,104 +1,50 @@
 ---
-date: '2026-11-13'
-description: تعلم كيفية إضافة مخطط علامة مائية نصية باستخدام GroupDocs.Watermark for
-  Java. احمِ محتواك البصري بفعالية مع الحفاظ على إمكانية تعديل المخططات وأمانها.
+date: '2025-12-19'
+description: تعلم كيفية إضافة علامة مائية نصية إلى المخططات باستخدام GroupDocs.Watermark
+  للغة Java. احمِ محتواك البصري بفعالية وتأكد من سلامة المستند.
 keywords:
-- add text watermark diagram
-- GroupDocs.Watermark for Java
-- diagram watermarking
-lastmod: '2026-11-13'
-og_description: إضافة مخطط علامة مائية نصية باستخدام GroupDocs.Watermark for Java.
-  يوضح هذا الدليل خطوة بخطوة كيفية حماية المخططات، وتكوين الموضع، وحفظ النتيجة بكفاءة.
-og_image_alt: 'Developer guide: adding text watermarks to diagram files with GroupDocs.Watermark
-  for Java'
-og_title: إضافة مخطط علامة مائية نصية مع GroupDocs.Watermark for Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-11-13'
-  description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  headline: Add text watermark diagram using GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  name: Add text watermark diagram using GroupDocs.Watermark for Java
-  steps:
-  - name: load diagram document
-    text: '**Definition anchor**: `DiagramLoadOptions` configures how GroupDocs.Watermark
-      reads diagram files, allowing you to specify page ranges or rendering settings.
-      Specify the file path and initialise the load options:'
-  - name: create and configure the text watermark
-    text: '**Definition anchor**: `TextWatermark` represents the textual overlay that
-      will be rendered on each selected diagram shape. Instantiate the watermark with
-      your chosen text, font, size, and color:'
-  - name: set watermark placement options
-    text: '**Definition anchor**: `DiagramShapeWatermarkOptions` lets you decide whether
-      the watermark appears on the background, foreground, or specific shapes within
-      the diagram. Configure the placement type and any rotation or opacity settings:'
-  - name: add the watermark and save the diagram
-    text: '**Definition anchor**: `Watermarker` is the core class that applies watermarks
-      to supported documents and writes the output file. Apply the `textWatermark`
-      to the loaded diagram using the previously defined `options`, then save the
-      result to a new location:'
-  type: HowTo
-- questions:
-  - answer: A size between 12 pt and 24 pt works well; choose larger sizes for high‑resolution
-      diagrams to ensure readability without obscuring details.
-    question: What is the best font size for watermarks on diagrams?
-  - answer: Yes, call `textWatermark.setColor(java.awt.Color)` with any RGB value
-      to match your branding.
-    question: Can I change the watermark color?
-  - answer: Iterate over a directory, reuse the same `Watermarker` object for each
-      file, and call `watermarker.add(textWatermark, options)` inside the loop.
-    question: How do I process a batch of diagram files?
-  - answer: Review [documentation](https://docs.groupdocs.com/watermark/java/) for
-      the full list of supported diagram formats; the library handles VSX, SVG, and
-      many proprietary formats.
-    question: Are there any format limitations?
-  - answer: Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
-      for community assistance or open a support ticket through your account portal.
-    question: Where can I get help if I run into issues?
-  type: FAQPage
-tags:
-- add text watermark diagram
-- GroupDocs.Watermark
-- Java diagram processing
-- document security
-title: إضافة مخطط علامة مائية نصية باستخدام GroupDocs.Watermark for Java
+- text watermarks
+- GroupDocs Watermark for Java
+- diagram document watermarking
+title: إضافة علامة مائية نصية إلى المخططات باستخدام GroupDocs.Watermark للغة Java
+  – دليل شامل
 type: docs
 url: /ar/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/
 weight: 1
 ---
 
-# إضافة علامة مائية نصية إلى المخطط باستخدام GroupDocs.Watermark للـ Java
+# إضافة علامة مائية نصية إلى المخططات باستخدام GroupDocs.Watermark للـ Java: دليل شامل
 
-حماية مستندات المخططات من الاستخدام غير المصرح به أمر حاسم، و**إضافة علامة مائية نصية إلى المخطط** طريقة بسيطة لكنها قوية للقيام بذلك. في هذا الدرس ستتعلم كيفية تحميل ملفات المخطط، إنشاء علامة مائية نصية قابلة للتخصيص، وضعها بدقة على أشكال المخطط، وحفظ الملف المحمي — كل ذلك باستخدام GroupDocs.Watermark للـ Java.
+## المقدمة
+حماية مستندات المخططات من الاستخدام غير المصرح به أمر حاسم، و**إضافة علامة مائية نصية** توفر حلاً بسيطًا وفعالًا. في هذا الدرس ستكتشف كيفية تحميل ملفات المخططات، إنشاء علامة مائية نصية قابلة للتخصيص، وتطبيقها على صفحات الخلفية أو الأشكال المحددة باستخدام **GroupDocs.Watermark للـ Java**. في نهاية الدليل ستكون قادرًا على حماية أصولك البصرية مع الحفاظ على المظهر والشعور الأصلي.
 
-## إجابات سريعة
-- **أي مكتبة تتعامل مع علامات مائية للمخططات؟** GroupDocs.Watermark for Java.  
-- **ما هو الحد الأدنى لإصدار Java؟** JDK 8 أو أحدث.  
-- **هل أحتاج إلى ترخيص للتطوير؟** ترخيص مؤقت يعمل لجميع الميزات أثناء الاختبار.  
-- **هل يمكنني وضع علامة مائية على ملفات متعددة دفعة واحدة؟** نعم، استخدم نفس كائن Watermarker في حلقة.  
-- **هل استهلاك الذاكرة مصدر قلق للمخططات الكبيرة؟** أعد استخدام الكائنات وأغلق Watermarker لتحرير الموارد.  
+### إجابات سريعة
+- **ماذا يعني “إضافة علامة مائية نصية”?**  
+  يعني ذلك دمج طبقة نصية شبه شفافة داخل المستند للإشارة إلى الملكية أو السرية.  
+- **أي مكتبة تدعم وضع العلامات المائية على المخططات؟**  
+  توفر GroupDocs.Watermark للـ Java دعمًا أصليًا لتنسيقات المخططات (مثل Visio، VSDX).  
+- **هل أحتاج إلى ترخيص؟**  
+  يلزم الحصول على ترخيص مؤقت أو كامل للاستخدام في الإنتاج؛ يتوفر نسخة تجريبية مجانية للتقييم.  
+- **هل يمكنني وضع العلامة المائية على صفحات الخلفية؟**  
+  نعم – استخدم الخيار `DiagramWatermarkPlacementType.SeparateBackgrounds` للحصول على **علامة مائية لصفحة الخلفية**.  
+- **هل الكود متوافق مع Java 8+؟**  
+  بالتأكيد – المكتبة تعمل مع JDK 8 والإصدارات الأحدث.
 
-## ما هي إضافة علامة مائية نصية إلى المخطط؟
-`add text watermark diagram` يشير إلى عملية دمج نص قابل للقراءة (مثل “Confidential” أو اسم الشركة) مباشرةً في ملفات المخطط بحيث تصبح العلامة المائية جزءًا من المحتوى البصري ولا يمكن إزالتها دون تعديل المخطط نفسه.
+## ما هي العلامة المائية النصية للمخططات؟
+العلامة المائية النصية هي قطعة من النص القابل للقراءة (غالبًا ما تكون شبه شفافة) تُعرض فوق أو خلف عناصر المخطط. يمكن استخدامها للعلامة التجارية، حماية حقوق النشر، أو لتحديد المسودات السرية.
 
 ## لماذا تستخدم GroupDocs.Watermark للـ Java؟
-GroupDocs.Watermark يدعم **أكثر من 50 تنسيقًا للإدخال والإخراج**، بما في ذلك Visio (.vsdx)، SVG، وأنواع المخططات الشائعة الأخرى. يمكنه معالجة مخططات مئات الصفحات دون تحميل الملف بالكامل في الذاكرة، مما يحقق **خفضًا بنسبة 30 % في استهلاك وحدة المعالجة المركزية** مقارنة بالعديد من المنافسين عند التعامل مع ملفات أكبر من 100 MB.
+- **دعم واسع للتنسيقات** – يعمل مع Visio، VSDX، والعديد من أنواع المخططات الأخرى.  
+- **تحديد دقيق للموقع** – اختر وضع العلامة المائية في المقدمة، الخلفية، أو على شكل محدد.  
+- **واجهة برمجة تطبيقات بسيطة** – إنشاء وتطبيق العلامات المائية ببضع أسطر فقط من كود Java.  
 
 ## المتطلبات المسبقة
-- **GroupDocs.Watermark للـ Java** الإصدار 24.11 أو أحدث (المكتبة تُحدَّث شهريًا بتصحيحات الأمان).  
-- **مجموعة تطوير جافا (JDK)** 8 أو أحدث.  
-- بيئة تطوير متكاملة (IDE) مثل IntelliJ IDEA أو Eclipse.  
-- Maven لإدارة التبعيات (اختياري لكن يُنصح به).  
+- **GroupDocs.Watermark للـ Java** (الإصدار v24.11 أو أحدث)  
+- **مجموعة تطوير Java (JDK)** الإصدار 8 أو أعلى  
+- Maven (أو تضمين JAR يدويًا)  
 
 ## إعداد GroupDocs.Watermark للـ Java
-لبدء العمل، أضف المكتبة إلى مشروع Maven الخاص بك:
-
-**إعداد Maven**  
+### إعداد Maven
 أضف التكوين التالي إلى ملف `pom.xml` الخاص بك:
 
 ```xml
@@ -119,22 +65,26 @@ GroupDocs.Watermark يدعم **أكثر من 50 تنسيقًا للإدخال و
 </dependencies>
 ```
 
-إذا كنت تفضّل التحميل اليدوي، احصل على أحدث الملفات الثنائية من [GroupDocs.Watermark للـ Java الإصدارات](https://releases.groupdocs.com/watermark/java/).
+### التحميل المباشر
+حمّل أحدث نسخة من [إصدارات GroupDocs.Watermark للـ Java](https://releases.groupdocs.com/watermark/java/).
 
 ### الحصول على الترخيص
-- **نسخة تجريبية مجانية** – استكشف جميع الميزات لمدة 30 يومًا.  
-- **ترخيص مؤقت** – يزيل جميع قيود النسخة التجريبية أثناء التطوير.  
-- **ترخيص كامل** – مطلوب لنشر الإنتاج.  
+- **نسخة تجريبية مجانية** – تقييم جميع الميزات دون مفتاح ترخيص.  
+- **ترخيص مؤقت** – استخدمه أثناء التطوير لفتح جميع الوظائف.  
+- **شراء** – الحصول على ترخيص إنتاج للمشاريع التجارية.  
 
-## دليل التنفيذ
+### التهيئة الأساسية والإعداد
+تأكد من وجود الاستيرادات التالية في فئة Java الخاصة بك:
 
-### كيف تضيف علامة مائية نصية إلى المخطط باستخدام GroupDocs.Watermark للـ Java؟
-أولاً، حمّل ملف المخطط باستخدام `DiagramLoadOptions`. بعد ذلك، أنشئ كائن `TextWatermark` بالنص المطلوب، الخط، الحجم، واللون. ثم، اضبط `DiagramShapeWatermarkOptions` للتحكم في الموضع، الدوران، والشفافية. أخيرًا، طبّق العلامة المائية باستخدام `Watermarker.add` واحفظ المخطط المعدل في ملف جديد. هذا الجواب المباشر يقدّم لك التدفق العام قبل أي شرح تفصيلي.
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.DiagramLoadOptions;
+```
 
-#### الخطوة 1: تحميل مستند المخطط
-**مرساة التعريف**: `DiagramLoadOptions` يضبط كيفية قراءة GroupDocs.Watermark لملفات المخطط، مما يتيح لك تحديد نطاقات الصفحات أو إعدادات العرض.
+## تنفيذ خطوة بخطوة
 
-حدد مسار الملف وابدأ خيارات التحميل:
+### الخطوة 1: تحميل مستند المخطط
+أولاً، وجه المكتبة إلى ملف المخطط الخاص بك وقم بتهيئة خيارات التحميل.
 
 ```java
 String inputPath = "YOUR_DOCUMENT_DIRECTORY";
@@ -142,29 +92,29 @@ DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker(inputPath, loadOptions);
 ```
 
-#### الخطوة 2: إنشاء وتكوين العلامة المائية النصية
-**مرساة التعريف**: `TextWatermark` تمثل التراكب النصي الذي سيُعرض على كل شكل مخطط مختار.
+*شرح*: يتيح لك `DiagramLoadOptions` التحكم في كيفية تحليل المخطط قبل إضافة العلامة المائية.
 
-أنشئ العلامة المائية بالنص المختار، الخط، الحجم، واللون:
+### الخطوة 2: إنشاء علامة مائية نصية
+الآن أنشئ نص العلامة المائية وحدد نمطها البصري.
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark 1", new Font("Calibri", 19));
 ```
 
-#### الخطوة 3: ضبط خيارات وضع العلامة المائية
-**مرساة التعريف**: `DiagramShapeWatermarkOptions` تتيح لك تحديد ما إذا كانت العلامة المائية تظهر في الخلفية، المقدمة، أو على أشكال محددة داخل المخطط.
+*شرح*: هذا ينشئ `TextWatermark` بالعبارة **“Test watermark 1”** باستخدام خط Calibri بحجم 19.
 
-اضبط نوع الموضع وأي إعدادات للدوران أو الشفافية:
+### الخطوة 3: تكوين الموقع – علامة مائية لصفحة الخلفية
+اختر المكان الذي يجب أن تظهر فيه العلامة المائية. للحصول على **علامة مائية لصفحة الخلفية**، استخدم الخيار التالي:
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
 options.setPlacementType(DiagramWatermarkPlacementType.SeparateBackgrounds);
 ```
 
-#### الخطوة 4: إضافة العلامة المائية وحفظ المخطط
-**مرساة التعريف**: `Watermarker` هو الفئة الأساسية التي تطبق العلامات المائية على المستندات المدعومة وتكتب ملف الإخراج.
+*شرح*: يتحكم `DiagramShapeWatermarkOptions` في الموقع الدقيق. ضبط نوع الموقع إلى `SeparateBackgrounds` يضيف العلامة المائية إلى كل صفحة خلفية في المخطط.
 
-طبق `textWatermark` على المخطط المحمل باستخدام `options` المعرفة مسبقًا، ثم احفظ النتيجة في موقع جديد:
+### الخطوة 4: تطبيق العلامة المائية وحفظ الملف
+أخيرًا، أضف العلامة المائية إلى المستند، احفظ النتيجة، وأفرغ الموارد.
 
 ```java
 watermarker.add(textWatermark, options);
@@ -173,61 +123,54 @@ watermarker.save(outputPath);
 watermarker.close();
 ```
 
-### تطبيقات عملية
-إضافة علامة مائية نصية إلى المخططات مفيدة في العديد من السيناريوهات الواقعية:
+*شرح*: طريقة `add` تطبق `textWatermark` المكوَّنة باستخدام خيارات الموقع، ثم يُحفظ المخطط المعدل إلى `outputPath`.
 
-- **حماية الملكية الفكرية** – إيقاف المنافسين عن إعادة استخدام تدفقات العمليات المملوكة.  
-- **تعزيز العلامة التجارية** – دمج اسم شركتك أو شعارك على كل مخطط مُصدَّر.  
-- **الامتثال القانوني** – وضع علامة على المخططات السرية بعبارة “Do Not Distribute”.  
-- **النزاهة الأكاديمية** – وضع علامة على أعمال الطلاب بمعرفات فريدة.
+## تطبيقات عملية
+- **حماية الملكية الفكرية** – منع المنافسين من إعادة استخدام المخططات المملوكة.  
+- **تعزيز العلامة التجارية** – تضمين اسم الشركة أو الشعار كعلامة مائية نصية على جميع المخططات المصدرة.  
+- **وثائق قانونية** – وضع علامة على المسودات السرية للمخططات الهندسية.  
+- **تقديمات أكاديمية** – إرفاق أرقام هوية الطلاب أو رموز الدورات إلى المخططات لتتبع الانتحال.
 
-يمكنك دمج سير العمل هذا في أنظمة إدارة المستندات، خطوط CI/CD، أو خدمات المعالجة الدفعية لأتمتة وضع العلامات المائية عبر آلاف الملفات.
+## اعتبارات الأداء
+- **إدارة الذاكرة** – أغلق كائن `Watermarker` (`watermarker.close()`) لتحرير الموارد الأصلية، خاصةً عند معالجة ملفات كبيرة.  
+- **المعالجة الدفعية** – كرر عبر مجموعة من مسارات المخططات وأعد استخدام كائن `Watermarker` واحد حيثما أمكن لتقليل الحمل.  
 
-### اعتبارات الأداء
-لتحقيق الأداء المثالي مع مجموعات المخططات الكبيرة:
-
-- **إعادة استخدام الكائنات** – أنشئ كائن `Watermarker` واحد وعالج الملفات في حلقة.  
-- **إغلاق الموارد فورًا** – استدعِ دائمًا `watermarker.close()` بعد الحفظ لتحرير الذاكرة الأصلية.  
-- **بث الملفات الكبيرة** – استخدم `DiagramLoadOptions` لتحميل الصفحات عند الطلب بدلاً من تحميل الملف بالكامل.
+## المشكلات الشائعة والحلول
+| المشكلة | الحل |
+|-------|----------|
+| **OutOfMemoryError على مخططات كبيرة** | زيادة حجم الذاكرة المخصصة للـ JVM (`-Xmx2g`) ومعالجة الملفات واحدةً تلو الأخرى. |
+| **العلامة المائية غير مرئية** | تأكد من أن لون العلامة المائية لديه تباين كافٍ؛ اضبط الشفافية عبر `textWatermark.setOpacity(0.5)`. |
+| **تنسيق مخطط غير مدعوم** | تحقق من أن التنسيق مدرج في وثائق تنسيقات GroupDocs.Watermark المدعومة. |
 
 ## الأسئلة المتكررة
 
-**س: ما هو أفضل حجم خط للعلامات المائية على المخططات؟**  
-ج: حجم بين 12 pt و24 pt يعمل جيدًا؛ اختر أحجامًا أكبر للمخططات عالية الدقة لضمان القابلية للقراءة دون إخفاء التفاصيل.
+**س: ما هو أفضل حجم خط للعلامات المائية؟**  
+ج: يعتمد الحجم المثالي على أبعاد المخطط؛ 12‑20 pt يعمل جيدًا في معظم الحالات.
 
-**س: هل يمكنني تغيير لون العلامة المائية؟**  
-ج: نعم، استدعِ `textWatermark.setColor(java.awt.Color)` بأي قيمة RGB لتتناسب مع علامتك التجارية.
+**س: هل يمكنني تخصيص ألوان العلامة المائية؟**  
+ج: نعم، استخدم `textWatermark.setColor(Color.GRAY)` (أو أي `java.awt.Color`).
 
-**س: كيف يمكنني معالجة دفعة من ملفات المخططات؟**  
-ج: كرّر عبر دليل، أعد استخدام نفس كائن `Watermarker` لكل ملف، واستدعِ `watermarker.add(textWatermark, options)` داخل الحلقة.
+**س: كيف يمكنني التعامل مع دفعات كبيرة من المستندات؟**  
+ج: استفد من API الدفعات في المكتبة أو اكتب حلقة تعيد استخدام كائنات `Watermarker` لتقليل الحمل.
 
-**س: هل هناك أي قيود على الصيغ؟**  
-ج: راجع [التوثيق](https://docs.groupdocs.com/watermark/java/) للقائمة الكاملة للأنساق المدعومة للمخططات؛ المكتبة تدعم VSX، SVG، والعديد من الصيغ المملوكة.
+**س: هل هناك أي قيود على GroupDocs.Watermark؟**  
+ج: تدعم المكتبة معظم تنسيقات المخططات الشائعة، لكن بعض الامتدادات المملوكة قد لا تُعرض بالكامل. راجع [الوثائق](https://docs.groupdocs.com/watermark/java/) للتفاصيل.
 
-**س: أين يمكنني الحصول على المساعدة إذا واجهت مشاكل؟**  
-ج: زر [منتدى GroupDocs](https://forum.groupdocs.com/c/watermark/10) للحصول على مساعدة المجتمع أو افتح تذكرة دعم عبر بوابة حسابك.
+**س: كيف يمكنني الحصول على الدعم إذا واجهت مشاكل؟**  
+ج: زر [منتدى GroupDocs](https://forum.groupdocs.com/c/watermark/10) للحصول على مساعدة المجتمع أو تواصل مباشرةً مع دعم GroupDocs.
 
-## الموارد
-- **التوثيق**: [توثيق GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
+## موارد إضافية
+- **الوثائق**: [توثيق GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
 - **مرجع API**: [مرجع API للـ Java](https://reference.groupdocs.com/watermark/java)  
-- **التنزيل**: [احصل على GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
+- **تحميل**: [احصل على GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
 - **مستودع GitHub**: [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **منتدى الدعم المجاني**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
-- **ترخيص مؤقت**: [احصل على ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
+- **منتدى الدعم المجاني**: [منتدى GroupDocs](https://forum.groupdocs.com/c/watermark/10)  
+- **ترخيص مؤقت**: [الحصول على ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)  
 
 ---
 
-**آخر تحديث:** 2026-11-13  
-**تم الاختبار مع:** GroupDocs.Watermark للـ Java 24.11  
-**المؤلف:** GroupDocs
+**آخر تحديث:** 2025-12-19  
+**تم الاختبار مع:** GroupDocs.Watermark 24.11 للـ Java  
+**المؤلف:** GroupDocs  
 
-```java
-import com.groupdocs.watermark.Watermarker;
-import com.groupdocs.watermark.options.DiagramLoadOptions;
-```
-
-## دروس ذات صلة
-
-- [كيفية إضافة علامات مائية نصية في Java باستخدام GroupDocs.Watermark: دليل كامل](/watermark/java/text-watermarks/add-text-watermark-java-groupdocs/)
-- [كيفية إضافة علامات مائية نصية وصورية إلى صفحات PDF محددة باستخدام GroupDocs.Watermark للـ Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [كيفية إضافة علامات مائية نصية إلى صور مستندات Word باستخدام GroupDocs.Watermark للـ Java](/watermark/java/image-watermarks/add-watermarks-word-images-groupdocs-java/)
+---

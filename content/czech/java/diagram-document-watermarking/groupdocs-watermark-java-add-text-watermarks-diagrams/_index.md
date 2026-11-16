@@ -1,106 +1,50 @@
 ---
-date: '2026-11-13'
-description: Naučte se, jak přidat textový vodoznak do diagramu pomocí GroupDocs.Watermark
-  for Java. Efektivně chraňte svůj vizuální obsah a zároveň zachovejte editovatelnost
-  a bezpečnost diagramů.
+date: '2025-12-19'
+description: Naučte se, jak přidat textový vodoznak do diagramů pomocí GroupDocs.Watermark
+  pro Javu. Efektivně chraňte svůj vizuální obsah a zajistěte integritu dokumentu.
 keywords:
-- add text watermark diagram
-- GroupDocs.Watermark for Java
-- diagram watermarking
-lastmod: '2026-11-13'
-og_description: Přidání textového vodoznaku do diagramu pomocí GroupDocs.Watermark
-  for Java. Tento průvodce krok za krokem ukazuje, jak chránit diagramy, nastavit
-  umístění a efektivně uložit výsledek.
-og_image_alt: 'Developer guide: adding text watermarks to diagram files with GroupDocs.Watermark
-  for Java'
-og_title: Přidání textového vodoznaku do diagramu s GroupDocs.Watermark for Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-11-13'
-  description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  headline: Add text watermark diagram using GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  name: Add text watermark diagram using GroupDocs.Watermark for Java
-  steps:
-  - name: load diagram document
-    text: '**Definition anchor**: `DiagramLoadOptions` configures how GroupDocs.Watermark
-      reads diagram files, allowing you to specify page ranges or rendering settings.
-      Specify the file path and initialise the load options:'
-  - name: create and configure the text watermark
-    text: '**Definition anchor**: `TextWatermark` represents the textual overlay that
-      will be rendered on each selected diagram shape. Instantiate the watermark with
-      your chosen text, font, size, and color:'
-  - name: set watermark placement options
-    text: '**Definition anchor**: `DiagramShapeWatermarkOptions` lets you decide whether
-      the watermark appears on the background, foreground, or specific shapes within
-      the diagram. Configure the placement type and any rotation or opacity settings:'
-  - name: add the watermark and save the diagram
-    text: '**Definition anchor**: `Watermarker` is the core class that applies watermarks
-      to supported documents and writes the output file. Apply the `textWatermark`
-      to the loaded diagram using the previously defined `options`, then save the
-      result to a new location:'
-  type: HowTo
-- questions:
-  - answer: A size between 12 pt and 24 pt works well; choose larger sizes for high‑resolution
-      diagrams to ensure readability without obscuring details.
-    question: What is the best font size for watermarks on diagrams?
-  - answer: Yes, call `textWatermark.setColor(java.awt.Color)` with any RGB value
-      to match your branding.
-    question: Can I change the watermark color?
-  - answer: Iterate over a directory, reuse the same `Watermarker` object for each
-      file, and call `watermarker.add(textWatermark, options)` inside the loop.
-    question: How do I process a batch of diagram files?
-  - answer: Review [documentation](https://docs.groupdocs.com/watermark/java/) for
-      the full list of supported diagram formats; the library handles VSX, SVG, and
-      many proprietary formats.
-    question: Are there any format limitations?
-  - answer: Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
-      for community assistance or open a support ticket through your account portal.
-    question: Where can I get help if I run into issues?
-  type: FAQPage
-tags:
-- add text watermark diagram
-- GroupDocs.Watermark
-- Java diagram processing
-- document security
-title: Přidání textového vodoznaku do diagramu pomocí GroupDocs.Watermark for Java
+- text watermarks
+- GroupDocs Watermark for Java
+- diagram document watermarking
+title: Přidání textové vodoznaku do diagramů pomocí GroupDocs.Watermark pro Javu –
+  komplexní průvodce
 type: docs
 url: /cs/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/
 weight: 1
 ---
 
-# Přidání textové vodoznaku do diagramu pomocí GroupDocs.Watermark pro Java
+# Přidání textové vodoznaku do diagramů pomocí GroupDocs.Watermark pro Java: Komplexní průvodce
 
-Ochrana diagramových dokumentů před neoprávněným použitím je zásadní a **add text watermark diagram** je jednoduchý, ale výkonný způsob, jak toho dosáhnout. V tomto tutoriálu se naučíte, jak načíst soubory diagramů, vytvořit přizpůsobitelný textový vodoznak, přesně jej umístit na tvary diagramu a uložit chráněný soubor — vše pomocí GroupDocs.Watermark pro Java.
+## Úvod
+Ochrana diagramových dokumentů před neoprávněným použitím je zásadní a **přidání textového vodoznaku** poskytuje jednoduché, ale účinné řešení. V tomto tutoriálu se dozvíte, jak načíst soubory diagramů, vytvořit přizpůsobitelný textový vodoznak a aplikovat jej na pozadí stránek nebo konkrétní tvary pomocí **GroupDocs.Watermark pro Java**. Na konci průvodce budete schopni chránit své vizuální aktiva a zároveň zachovat původní vzhled a pocit.
 
-## Rychlé odpovědi
-- **Která knihovna zpracovává vodoznaky diagramů?** GroupDocs.Watermark for Java.
-- **Jaká je minimální verze Javy?** JDK 8 nebo novější.
-- **Potřebuji licenci pro vývoj?** Dočasná licence funguje pro všechny funkce během testování.
-- **Mohu vodoznakovat více souborů najednou?** Ano, použijte stejnou instanci Watermarker v cyklu.
-- **Je spotřeba paměti problémem u velkých diagramů?** Znovu používejte objekty a zavřete Watermarker pro uvolnění prostředků.
+### Rychlé odpovědi
+- **Co znamená „přidání textového vodoznaku“?**  
+  Znamená to vložení poloprůhledného textového překryvu do dokumentu za účelem označení vlastnictví nebo důvěrnosti.  
+- **Která knihovna podporuje vodoznakování diagramů?**  
+  GroupDocs.Watermark pro Java poskytuje nativní podporu formátů diagramů (např. Visio, VSDX).  
+- **Potřebuji licenci?**  
+  Pro produkční použití je vyžadována dočasná nebo plná licence; k vyzkoušení je k dispozici bezplatná zkušební verze.  
+- **Mohu umístit vodoznak na pozadí stránek?**  
+  Ano – použijte možnost `DiagramWatermarkPlacementType.SeparateBackgrounds` pro **vodoznak na pozadí stránky**.  
+- **Je kód kompatibilní s Java 8+?**  
+  Naprosto – knihovna funguje s JDK 8 a novějšími.
 
-## Co je add text watermark diagram?
-`add text watermark diagram` označuje proces vložení čitelného textu (např. „Confidential“ nebo název společnosti) přímo do souborů diagramů, takže vodoznak se stane součástí vizuálního obsahu a nelze jej odstranit bez úpravy samotného diagramu.
+## Co je textový vodoznak pro diagramy?
+Textový vodoznak je kus čitelného textu (často poloprůhledný), který je vykreslen nad nebo pod elementy diagramu. Může být použit pro značkování, ochranu autorských práv nebo pro označení důvěrných návrhů.
 
-## Proč používat GroupDocs.Watermark pro Java?
-GroupDocs.Watermark podporuje **více než 50 vstupních a výstupních formátů**, včetně Visio (.vsdx), SVG a dalších populárních typů diagramů. Dokáže zpracovat diagramy o stovkách stránek, aniž by načítal celý soubor do paměti, a poskytuje **30 % snížení využití CPU** ve srovnání s mnoha konkurenty při práci se soubory většími než 100 MB.
+## Proč použít GroupDocs.Watermark pro Java?
+- **Široká podpora formátů** – funguje s Visio, VSDX a mnoha dalšími typy diagramů.  
+- **Precizní umístění** – vyberte vodoznak v popředí, pozadí nebo na konkrétní tvar.  
+- **Jednoduché API** – vytvořte a aplikujte vodoznaky pomocí několika řádků Java kódu.  
 
-## Požadavky
-- **GroupDocs.Watermark for Java** verze 24.11 nebo novější (knihovna je aktualizována měsíčně s bezpečnostními záplatami).  
-- **Java Development Kit (JDK)** 8 nebo novější.  
-- IDE, jako je IntelliJ IDEA nebo Eclipse.  
-- Maven pro správu závislostí (volitelné, ale doporučené).
+## Prerequisites
+- **GroupDocs.Watermark pro Java** (v24.11 nebo novější)  
+- **Java Development Kit (JDK)** 8 nebo vyšší  
+- Maven (nebo ruční zahrnutí JAR souboru)  
 
-## Nastavení GroupDocs.Watermark pro Java
-Pro začátek přidejte knihovnu do svého Maven projektu:
-
-**Nastavení Maven**  
+## Setting Up GroupDocs.Watermark for Java
+### Nastavení Maven
 Přidejte následující konfiguraci do souboru `pom.xml`:
 
 ```xml
@@ -121,22 +65,26 @@ Přidejte následující konfiguraci do souboru `pom.xml`:
 </dependencies>
 ```
 
-If you prefer a manual download, get the latest binaries from [vydání GroupDocs.Watermark pro Java](https://releases.groupdocs.com/watermark/java/).
+### Přímé stažení
+Stáhněte nejnovější verzi z [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
 
 ### Získání licence
-- **Free trial** – vyzkoušejte všechny funkce po 30 dnů.  
-- **Temporary license** – odstraňuje všechna omezení zkušební verze během vývoje.  
-- **Full license** – vyžadována pro nasazení do produkce.
+- **Bezplatná zkušební verze** – vyzkoušejte všechny funkce bez licenčního klíče.  
+- **Dočasná licence** – použijte během vývoje k odemknutí plné funkčnosti.  
+- **Nákup** – získat produkční licenci pro komerční projekty.  
 
-## Průvodce implementací
+### Základní inicializace a nastavení
+Ujistěte se, že následující importy jsou ve vaší Java třídě:
 
-### Jak přidat textový vodoznak do diagramu pomocí GroupDocs.Watermark pro Java?
-Nejprve načtěte soubor diagramu pomocí `DiagramLoadOptions`. Dále vytvořte instanci `TextWatermark` s požadovaným textem, fontem, velikostí a barvou. Poté nakonfigurujte `DiagramShapeWatermarkOptions` pro řízení umístění, rotace a průhlednosti. Nakonec aplikujte vodoznak pomocí `Watermarker.add` a uložte upravený diagram do nového souboru. Tato stručná odpověď vám poskytne celkový postup před podrobným vysvětlením.
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.DiagramLoadOptions;
+```
 
-#### Krok 1: načtení diagramového dokumentu
-**Definition anchor**: `DiagramLoadOptions` konfiguruje, jak GroupDocs.Watermark čte soubory diagramů, což vám umožňuje zadat rozsahy stránek nebo nastavení renderování.
+## Implementace krok za krokem
 
-Zadejte cestu k souboru a inicializujte možnosti načtení:
+### Krok 1: Načtení diagramového dokumentu
+Nejprve nasměrujte knihovnu na svůj diagramový soubor a inicializujte možnosti načtení.
 
 ```java
 String inputPath = "YOUR_DOCUMENT_DIRECTORY";
@@ -144,29 +92,29 @@ DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker(inputPath, loadOptions);
 ```
 
-#### Krok 2: vytvoření a konfigurace textového vodoznaku
-**Definition anchor**: `TextWatermark` představuje textový překryv, který bude vykreslen na každém vybraném tvaru diagramu.
+*Vysvětlení*: `DiagramLoadOptions` vám umožňuje řídit, jak je diagram parsován před vodoznakem.
 
-Vytvořte vodoznak s vámi zvoleným textem, fontem, velikostí a barvou:
+### Krok 2: Vytvoření textového vodoznaku
+Nyní vytvořte text vodoznaku a definujte jeho vizuální styl.
 
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark 1", new Font("Calibri", 19));
 ```
 
-#### Krok 3: nastavení možností umístění vodoznaku
-**Definition anchor**: `DiagramShapeWatermarkOptions` vám umožňuje rozhodnout, zda se vodoznak zobrazí na pozadí, popředí nebo na konkrétních tvarech v diagramu.
+*Vysvětlení*: Toto vytvoří `TextWatermark` s frází **„Test watermark 1“** pomocí fontu Calibri o velikosti 19.
 
-Nakonfigurujte typ umístění a případná nastavení rotace nebo průhlednosti:
+### Krok 3: Nastavení umístění – Vodoznak na pozadí stránky
+Vyberte, kde se má vodoznak zobrazit. Pro **vodoznak na pozadí stránky** použijte následující možnost:
 
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
 options.setPlacementType(DiagramWatermarkPlacementType.SeparateBackgrounds);
 ```
 
-#### Krok 4: přidání vodoznaku a uložení diagramu
-**Definition anchor**: `Watermarker` je hlavní třída, která aplikuje vodoznaky na podporované dokumenty a zapisuje výstupní soubor.
+*Vysvětlení*: `DiagramShapeWatermarkOptions` řídí přesné umístění. Nastavením typu umístění na `SeparateBackgrounds` přidáte vodoznak na každou pozadí stránku diagramu.
 
-Aplikujte `textWatermark` na načtený diagram pomocí dříve definovaných `options` a poté uložte výsledek na nové místo:
+### Krok 4: Aplikace vodoznaku a uložení
+Nakonec přidejte vodoznak do dokumentu, uložte výsledek a uvolněte prostředky.
 
 ```java
 watermarker.add(textWatermark, options);
@@ -175,61 +123,55 @@ watermarker.save(outputPath);
 watermarker.close();
 ```
 
-### Praktické aplikace
-Přidání textového vodoznaku do diagramů je užitečné v mnoha reálných scénářích:
+*Vysvětlení*: Metoda `add` aplikuje nakonfigurovaný `textWatermark` pomocí možností umístění, poté je upravený diagram uložen do `outputPath`.
 
-- **Intellectual‑property protection** – zastavte konkurenci v opětovném používání proprietárních procesních toků.  
-- **Brand reinforcement** – vložte název nebo logo vaší společnosti do každého exportovaného diagramu.  
-- **Legal compliance** – označte důvěrné schémata textem „Do Not Distribute“.  
-- **Academic integrity** – označte studentské odevzdání unikátními identifikátory.
+## Praktické aplikace
+- **Ochrana duševního vlastnictví** – Zabránit konkurenci v opětovném použití proprietárních diagramů.  
+- **Posílení značky** – Vložte název společnosti nebo logo jako textový vodoznak na všechny exportované diagramy.  
+- **Právní dokumentace** – Označte důvěrné návrhy technických schémat.  
+- **Akademické podání** – Přidejte ID studentů nebo kódy kurzů k diagramům pro sledování plagiátorství.  
 
-Tento pracovní postup můžete integrovat do systémů správy dokumentů, CI/CD pipeline nebo služeb dávkového zpracování k automatizaci vodoznakování tisíců souborů.
+## Úvahy o výkonu
+- **Správa paměti** – Zavřete instanci `Watermarker` (`watermarker.close()`) pro uvolnění nativních prostředků, zejména při zpracování velkých souborů.  
+- **Dávkové zpracování** – Procházejte kolekci cest k diagramům a kde je to možné, znovu použijte jedinou instanci `Watermarker`, abyste snížili režii.  
 
-### Úvahy o výkonu
-Pro optimální výkon při práci s velkými kolekcemi diagramů:
+## Časté problémy a řešení
 
-- **Reuse objects** – vytvořte jedinou instanci `Watermarker` a zpracovávejte soubory v cyklu.  
-- **Close resources promptly** – vždy po uložení zavolejte `watermarker.close()` pro uvolnění nativní paměti.  
-- **Stream large files** – použijte `DiagramLoadOptions` k načítání stránek na požádání místo načtení celého souboru.
+| Problém | Řešení |
+|-------|----------|
+| **OutOfMemoryError u velkých diagramů** | Zvyšte velikost haldy JVM (`-Xmx2g`) a zpracovávejte soubory po jednom. |
+| **Vodoznak není viditelný** | Ujistěte se, že barva vodoznaku má dostatečný kontrast; nastavte neprůhlednost pomocí `textWatermark.setOpacity(0.5)`. |
+| **Nepodporovaný formát diagramu** | Ověřte, že formát je uveden v dokumentaci podporovaných formátů GroupDocs.Watermark. |
 
 ## Často kladené otázky
 
-**Q: Jaká je nejlepší velikost písma pro vodoznaky na diagramech?**  
-A: Velikost mezi 12 pt a 24 pt funguje dobře; pro diagramy s vysokým rozlišením zvolte větší velikosti, aby byl text čitelný a nepřekrýval detaily.
+**Q: Jaká je nejlepší velikost písma pro vodoznaky?**  
+A: Optimální velikost závisí na rozměrech diagramu; 12‑20 pt funguje dobře ve většině případů.
 
-**Q: Mohu změnit barvu vodoznaku?**  
-A: Ano, zavolejte `textWatermark.setColor(java.awt.Color)` s libovolnou RGB hodnotou, aby odpovídala vaší značce.
+**Q: Mohu přizpůsobit barvy vodoznaku?**  
+A: Ano, použijte `textWatermark.setColor(Color.GRAY)` (nebo libovolnou `java.awt.Color`).
 
-**Q: Jak mohu zpracovat dávku souborů diagramů?**  
-A: Procházejte adresář, opakovaně používejte stejný objekt `Watermarker` pro každý soubor a v cyklu volejte `watermarker.add(textWatermark, options)`.
+**Q: Jak zvládnout velké dávky dokumentů?**  
+A: Využijte dávkové API knihovny nebo napište smyčku, která znovu používá objekty `Watermarker` ke snížení režie.
 
-**Q: Existují nějaká omezení formátů?**  
-A: Prohlédněte si [dokumentaci](https://docs.groupdocs.com/watermark/java/) pro úplný seznam podporovaných formátů diagramů; knihovna zvládá VSX, SVG a mnoho proprietárních formátů.
+**Q: Existují nějaká omezení GroupDocs.Watermark?**  
+A: Knihovna podporuje většinu běžných formátů diagramů, ale některé proprietární rozšíření nemusí být plně vykresleny. Podívejte se do [dokumentace](https://docs.groupdocs.com/watermark/java/) pro podrobnosti.
 
-**Q: Kde mohu získat pomoc, pokud narazím na problémy?**  
-A: Navštivte [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10) pro komunitní podporu nebo otevřete ticket podpory přes portál svého účtu.
+**Q: Jak získám podporu, pokud narazím na problémy?**  
+A: Navštivte [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10) pro komunitní pomoc nebo kontaktujte přímo podporu GroupDocs.
 
-## Zdroje
-- **Documentation**: [Dokumentace GroupDocs.Watermark](https://docs.groupdocs.com/watermark/java/)  
-- **API reference**: [Reference Java API](https://reference.groupdocs.com/watermark/java)  
-- **Download**: [Získat GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
-- **GitHub repository**: [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
-- **Free support forum**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
-- **Temporary license**: [Získat dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
+## Další zdroje
+- **Dokumentace**: [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+- **Reference API**: [Java API Reference](https://reference.groupdocs.com/watermark/java)  
+- **Stažení**: [Get GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
+- **GitHub repozitář**: [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Bezplatné fórum podpory**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
+- **Dočasná licence**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 
 ---
 
-**Poslední aktualizace:** 2026-11-13  
-**Testováno s:** GroupDocs.Watermark for Java 24.11  
-**Autor:** GroupDocs
+**Poslední aktualizace:** 2025-12-19  
+**Testováno s:** GroupDocs.Watermark 24.11 for Java  
+**Autor:** GroupDocs  
 
-```java
-import com.groupdocs.watermark.Watermarker;
-import com.groupdocs.watermark.options.DiagramLoadOptions;
-```
-
-## Související tutoriály
-
-- [Jak přidat textové vodoznaky v Javě pomocí GroupDocs.Watermark: Kompletní průvodce](/watermark/java/text-watermarks/add-text-watermark-java-groupdocs/)
-- [Jak přidat textové a obrázkové vodoznaky na konkrétní stránky PDF pomocí GroupDocs.Watermark pro Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [Jak přidat textové vodoznaky na obrázky ve Word dokumentech pomocí GroupDocs.Watermark pro Java](/watermark/java/image-watermarks/add-watermarks-word-images-groupdocs-java/)
+---

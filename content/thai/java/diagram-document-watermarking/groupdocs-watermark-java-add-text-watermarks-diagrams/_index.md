@@ -1,105 +1,51 @@
 ---
-date: '2026-11-13'
-description: เรียนรู้วิธีเพิ่มลายน้ำข้อความในแผนภาพโดยใช้ GroupDocs.Watermark สำหรับ
-  Java. ปกป้องเนื้อหาภาพของคุณอย่างมีประสิทธิภาพพร้อมให้แผนภาพยังคงแก้ไขได้และปลอดภัย.
+date: '2025-12-19'
+description: เรียนรู้วิธีเพิ่มลายน้ำข้อความลงในแผนภาพด้วย GroupDocs.Watermark สำหรับ
+  Java ปกป้องเนื้อหาภาพของคุณอย่างมีประสิทธิภาพและรับประกันความสมบูรณ์ของเอกสาร
 keywords:
-- add text watermark diagram
-- GroupDocs.Watermark for Java
-- diagram watermarking
-lastmod: '2026-11-13'
-og_description: เพิ่มลายน้ำข้อความในแผนภาพโดยใช้ GroupDocs.Watermark สำหรับ Java.
-  คู่มือนี้แสดงขั้นตอนโดยละเอียดว่าต้องปกป้องแผนภาพอย่างไร ตั้งค่าตำแหน่งลายน้ำ และบันทึกผลลัพธ์อย่างมีประสิทธิภาพ.
-og_image_alt: 'Developer guide: adding text watermarks to diagram files with GroupDocs.Watermark
-  for Java'
-og_title: เพิ่มลายน้ำข้อความในแผนภาพด้วย GroupDocs.Watermark สำหรับ Java
-schemas:
-- author: GroupDocs
-  dateModified: '2026-11-13'
-  description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  headline: Add text watermark diagram using GroupDocs.Watermark for Java
-  type: TechArticle
-- description: Learn how to add text watermark diagram using GroupDocs.Watermark for
-    Java. Protect your visual content effectively while keeping diagrams editable
-    and secure.
-  name: Add text watermark diagram using GroupDocs.Watermark for Java
-  steps:
-  - name: load diagram document
-    text: '**Definition anchor**: `DiagramLoadOptions` configures how GroupDocs.Watermark
-      reads diagram files, allowing you to specify page ranges or rendering settings.
-      Specify the file path and initialise the load options:'
-  - name: create and configure the text watermark
-    text: '**Definition anchor**: `TextWatermark` represents the textual overlay that
-      will be rendered on each selected diagram shape. Instantiate the watermark with
-      your chosen text, font, size, and color:'
-  - name: set watermark placement options
-    text: '**Definition anchor**: `DiagramShapeWatermarkOptions` lets you decide whether
-      the watermark appears on the background, foreground, or specific shapes within
-      the diagram. Configure the placement type and any rotation or opacity settings:'
-  - name: add the watermark and save the diagram
-    text: '**Definition anchor**: `Watermarker` is the core class that applies watermarks
-      to supported documents and writes the output file. Apply the `textWatermark`
-      to the loaded diagram using the previously defined `options`, then save the
-      result to a new location:'
-  type: HowTo
-- questions:
-  - answer: A size between 12 pt and 24 pt works well; choose larger sizes for high‑resolution
-      diagrams to ensure readability without obscuring details.
-    question: What is the best font size for watermarks on diagrams?
-  - answer: Yes, call `textWatermark.setColor(java.awt.Color)` with any RGB value
-      to match your branding.
-    question: Can I change the watermark color?
-  - answer: Iterate over a directory, reuse the same `Watermarker` object for each
-      file, and call `watermarker.add(textWatermark, options)` inside the loop.
-    question: How do I process a batch of diagram files?
-  - answer: Review [documentation](https://docs.groupdocs.com/watermark/java/) for
-      the full list of supported diagram formats; the library handles VSX, SVG, and
-      many proprietary formats.
-    question: Are there any format limitations?
-  - answer: Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)
-      for community assistance or open a support ticket through your account portal.
-    question: Where can I get help if I run into issues?
-  type: FAQPage
-tags:
-- add text watermark diagram
-- GroupDocs.Watermark
-- Java diagram processing
-- document security
-title: เพิ่มลายน้ำข้อความในแผนภาพโดยใช้ GroupDocs.Watermark สำหรับ Java
+- text watermarks
+- GroupDocs Watermark for Java
+- diagram document watermarking
+title: เพิ่มลายน้ำข้อความลงในแผนภาพโดยใช้ GroupDocs.Watermark สำหรับ Java – คู่มือฉบับสมบูรณ์
 type: docs
 url: /th/java/diagram-document-watermarking/groupdocs-watermark-java-add-text-watermarks-diagrams/
 weight: 1
 ---
 
-# เพิ่มลายน้ำข้อความในแผนภาพโดยใช้ GroupDocs.Watermark สำหรับ Java
+# เพิ่มลายน้ำข้อความลงในไดอะแกรมด้วย GroupDocs.Watermark สำหรับ Java: คู่มือฉบับสมบูรณ์
 
-การปกป้องเอกสารแผนภาพจากการใช้งานโดยไม่ได้รับอนุญาตเป็นสิ่งสำคัญ, และ **add text watermark diagram** เป็นวิธีที่ง่ายแต่ทรงพลังในการทำเช่นนั้น ในบทแนะนำนี้คุณจะได้เรียนรู้วิธีโหลดไฟล์แผนภาพ, สร้างลายน้ำข้อความที่ปรับแต่งได้, กำหนดตำแหน่งอย่างแม่นยำบนรูปทรงของแผนภาพ, และบันทึกไฟล์ที่ได้รับการปกป้อง — ทั้งหมดนี้ด้วย GroupDocs.Watermark สำหรับ Java.
+## บทนำ
+การปกป้องเอกสารไดอะแกรมจากการใช้งานโดยไม่ได้รับอนุญาตเป็นสิ่งสำคัญ และ **การเพิ่มลายน้ำข้อความ** ให้เป็นวิธีที่ง่ายแต่มีประสิทธิภาพ ในบทแนะนำนี้คุณจะได้เรียนรู้วิธีโหลดไฟล์ไดอะแกรม, สร้างลายน้ำข้อความที่ปรับแต่งได้, และนำไปใช้กับหน้าพื้นหลังหรือรูปร่างเฉพาะโดยใช้ **GroupDocs.Watermark for Java** เมื่อจบคู่มือคุณจะสามารถปกป้องทรัพย์สินภาพของคุณได้โดยยังคงรูปลักษณ์เดิมไว้ครบถ้วน
 
-## คำตอบอย่างรวดเร็ว
-- **ไลบรารีใดที่จัดการลายน้ำแผนภาพ?** GroupDocs.Watermark for Java.
-- **เวอร์ชัน Java ขั้นต่ำคืออะไร?** JDK 8 or newer.
-- **ฉันต้องการใบอนุญาตสำหรับการพัฒนาหรือไม่?** A temporary license works for all features during testing.
-- **ฉันสามารถใส่ลายน้ำหลายไฟล์ในชุดเดียวได้หรือไม่?** Yes, use the same Watermarker instance in a loop.
-- **การใช้หน่วยความจำเป็นปัญหาสำหรับแผนภาพขนาดใหญ่หรือไม่?** Reuse objects and close the Watermarker to free resources.
+### คำตอบอย่างรวดเร็ว
+- **“เพิ่มลายน้ำข้อความ” หมายถึงอะไร?**  
+  หมายถึงการฝังข้อความกึ่งโปร่งใสลงบนเอกสารเพื่อบ่งบอกความเป็นเจ้าของหรือความลับ  
+- **ไลบรารีใดรองรับการใส่ลายน้ำบนไดอะแกรม?**  
+  GroupDocs.Watermark for Java ให้การสนับสนุนโดยตรงสำหรับรูปแบบไดอะแกรม (เช่น Visio, VSDX)  
+- **ต้องการไลเซนส์หรือไม่?**  
+  จำเป็นต้องมีไลเซนส์ชั่วคราวหรือเต็มสำหรับการใช้งานในสภาพแวดล้อมผลิต; มีรุ่นทดลองฟรีสำหรับการประเมินผล  
+- **ฉันสามารถวางลายน้ำบนหน้าพื้นหลังได้หรือไม่?**  
+  ได้ – ใช้ตัวเลือก `DiagramWatermarkPlacementType.SeparateBackgrounds` สำหรับ **ลายน้ำหน้าพื้นหลัง**  
+- **โค้ดนี้เข้ากันได้กับ Java 8+ หรือไม่?**  
+  แน่นอน – ไลบรารีทำงานกับ JDK 8 และรุ่นใหม่ต่อไป  
 
-## add text watermark diagram คืออะไร?
-`add text watermark diagram` หมายถึงกระบวนการฝังข้อความที่อ่านได้ (เช่น “Confidential” หรือชื่อบริษัท) ลงบนไฟล์แผนภาพโดยตรง ทำให้ลายน้ำเป็นส่วนหนึ่งของเนื้อหาภาพและไม่สามารถลบออกได้โดยไม่ทำการเปลี่ยนแปลงแผนภาพเอง.
+## สิ่งที่เรียกว่าลายน้ำข้อความสำหรับไดอะแกรมคืออะไร?
+ลายน้ำข้อความคือข้อความที่อ่านได้ (มักเป็นกึ่งโปร่งใส) ที่แสดงบนหรืออยู่ด้านหลังองค์ประกอบของไดอะแกรม สามารถใช้เพื่อการสร้างแบรนด์, ปกป้องลิขสิทธิ์, หรือทำเครื่องหมายร่างที่เป็นความลับ  
 
 ## ทำไมต้องใช้ GroupDocs.Watermark สำหรับ Java?
-GroupDocs.Watermark รองรับ **รูปแบบการนำเข้าและส่งออกกว่า 50 แบบ**, รวมถึง Visio (.vsdx), SVG, และประเภทแผนภาพยอดนิยมอื่น ๆ มันสามารถประมวลผลแผนภาพหลายร้อยหน้าโดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ, ให้ผลลัพธ์การลดการใช้ CPU **30 %** เมื่อเทียบกับคู่แข่งหลายรายเมื่อต้องจัดการไฟล์ที่ใหญ่กว่า 100 MB.
+- **รองรับรูปแบบหลากหลาย** – ทำงานกับ Visio, VSDX, และไดอะแกรมประเภทอื่น ๆ มากมาย  
+- **การวางตำแหน่งละเอียด** – เลือกวางลายน้ำบนพื้นหน้า, พื้นหลัง, หรือรูปร่างเฉพาะได้  
+- **API ที่เรียบง่าย** – สร้างและใช้ลายน้ำด้วยเพียงไม่กี่บรรทัดของโค้ด Java  
 
 ## ข้อกำหนดเบื้องต้น
-- **GroupDocs.Watermark for Java** version 24.11 หรือใหม่กว่า (ไลบรารีนี้อัปเดตทุกเดือนพร้อมแพตช์ความปลอดภัย).  
-- **Java Development Kit (JDK)** 8 หรือใหม่กว่า.  
-- IDE เช่น IntelliJ IDEA หรือ Eclipse.  
-- Maven สำหรับการจัดการ dependencies (ไม่บังคับแต่แนะนำ).
+- **GroupDocs.Watermark for Java** (เวอร์ชัน 24.11 หรือใหม่กว่า)  
+- **Java Development Kit (JDK)** 8 หรือสูงกว่า  
+- Maven (หรือการเพิ่ม JAR ด้วยตนเอง)  
 
 ## การตั้งค่า GroupDocs.Watermark สำหรับ Java
-เพื่อเริ่มต้น, เพิ่มไลบรารีนี้ลงในโครงการ Maven ของคุณ:
+### การตั้งค่า Maven
+เพิ่มการกำหนดค่าดังต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
 
-**การตั้งค่า Maven**  
-เพิ่มการกำหนดค่าต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
 ```xml
 <repositories>
     <repository>
@@ -118,50 +64,57 @@ GroupDocs.Watermark รองรับ **รูปแบบการนำเข
 </dependencies>
 ```
 
-หากคุณต้องการดาวน์โหลดด้วยตนเอง, ให้รับไบนารีล่าสุดจาก [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/).
+### ดาวน์โหลดโดยตรง
+ดาวน์โหลดเวอร์ชันล่าสุดจาก [GroupDocs.Watermark for Java releases](https://releases.groupdocs.com/watermark/java/)  
 
-### การรับใบอนุญาต
-- **Free trial** – ทดลองใช้ทุกฟีเจอร์เป็นเวลา 30 วัน.  
-- **Temporary license** – ยกเลิกข้อจำกัดของการทดลองขณะคุณพัฒนา.  
-- **Full license** – จำเป็นสำหรับการใช้งานในสภาพแวดล้อมการผลิต.
+### การรับไลเซนส์
+- **รุ่นทดลองฟรี** – ประเมินคุณสมบัติทั้งหมดโดยไม่ต้องใช้คีย์ไลเซนส์  
+- **ไลเซนส์ชั่วคราว** – ใช้ระหว่างการพัฒนาเพื่อเปิดใช้งานฟังก์ชันเต็ม  
+- **การซื้อ** – รับไลเซนส์สำหรับการผลิตในโครงการเชิงพาณิชย์  
 
-## คู่มือการใช้งาน
+### การเริ่มต้นและตั้งค่าเบื้องต้น
+ตรวจสอบให้แน่ใจว่ามีการนำเข้าต่อไปนี้ในคลาส Java ของคุณ:
 
-### วิธีเพิ่มลายน้ำข้อความในแผนภาพโดยใช้ GroupDocs.Watermark สำหรับ Java?
-ขั้นแรก, โหลดไฟล์แผนภาพโดยใช้ `DiagramLoadOptions`. ต่อไป, สร้างอินสแตนซ์ของ `TextWatermark` ด้วยข้อความ, ฟอนต์, ขนาด, และสีที่ต้องการ. จากนั้น, ตั้งค่า `DiagramShapeWatermarkOptions` เพื่อควบคุมการวางตำแหน่ง, การหมุน, และความทึบ. สุดท้าย, ใช้ลายน้ำด้วย `Watermarker.add` และบันทึกแผนภาพที่แก้ไขเป็นไฟล์ใหม่. คำตอบโดยตรงนี้ให้ภาพรวมของกระบวนการก่อนการอธิบายรายละเอียดใด ๆ.
+```java
+import com.groupdocs.watermark.Watermarker;
+import com.groupdocs.watermark.options.DiagramLoadOptions;
+```
 
-#### ขั้นตอนที่ 1: โหลดเอกสารแผนภาพ
-**Definition anchor**: `DiagramLoadOptions` configures how GroupDocs.Watermark reads diagram files, allowing you to specify page ranges or rendering settings.
+## การดำเนินการตามขั้นตอน
 
-ระบุเส้นทางไฟล์และเริ่มต้นตัวเลือกการโหลด:
+### ขั้นตอนที่ 1: โหลดเอกสารไดอะแกรม
+ก่อนอื่นให้ชี้ไลบรารีไปยังไฟล์ไดอะแกรมของคุณและกำหนดตัวเลือกการโหลด
+
 ```java
 String inputPath = "YOUR_DOCUMENT_DIRECTORY";
 DiagramLoadOptions loadOptions = new DiagramLoadOptions();
 Watermarker watermarker = new Watermarker(inputPath, loadOptions);
 ```
 
-#### ขั้นตอนที่ 2: สร้างและกำหนดค่าลายน้ำข้อความ
-**Definition anchor**: `TextWatermark` represents the textual overlay that will be rendered on each selected diagram shape.
+*Explanation*: `DiagramLoadOptions` ให้คุณควบคุมวิธีการแยกวิเคราะห์ไดอะแกรมก่อนใส่ลายน้ำ  
 
-สร้างอินสแตนซ์ของลายน้ำด้วยข้อความ, ฟอนต์, ขนาด, และสีที่คุณเลือก:
+### ขั้นตอนที่ 2: สร้างลายน้ำข้อความ
+ต่อไปให้สร้างข้อความลายน้ำและกำหนดสไตล์การแสดงผล
+
 ```java
 TextWatermark textWatermark = new TextWatermark("Test watermark 1", new Font("Calibri", 19));
 ```
 
-#### ขั้นตอนที่ 3: ตั้งค่าตัวเลือกการวางลายน้ำ
-**Definition anchor**: `DiagramShapeWatermarkOptions` lets you decide whether the watermark appears on the background, foreground, or specific shapes within the diagram.
+*Explanation*: โค้ดนี้สร้าง `TextWatermark` ด้วยข้อความ **“Test watermark 1”** โดยใช้ฟอนต์ Calibri ขนาด 19  
 
-`DiagramShapeWatermarkOptions` ให้คุณกำหนดว่าลายน้ำจะแสดงบนพื้นหลัง, ด้านหน้า, หรือรูปทรงเฉพาะภายในแผนภาพหรือไม่.
-กำหนดประเภทการวางและการตั้งค่าการหมุนหรือความทึบใด ๆ:
+### ขั้นตอนที่ 3: กำหนดการวางตำแหน่ง – ลายน้ำหน้าพื้นหลัง
+เลือกตำแหน่งที่ต้องการให้ลายน้ำปรากฏ สำหรับ **ลายน้ำหน้าพื้นหลัง** ให้ใช้ตัวเลือกต่อไปนี้
+
 ```java
 DiagramShapeWatermarkOptions options = new DiagramShapeWatermarkOptions();
 options.setPlacementType(DiagramWatermarkPlacementType.SeparateBackgrounds);
 ```
 
-#### ขั้นตอนที่ 4: เพิ่มลายน้ำและบันทึกแผนภาพ
-**Definition anchor**: `Watermarker` is the core class that applies watermarks to supported documents and writes the output file.
+*Explanation*: `DiagramShapeWatermarkOptions` ควบคุมตำแหน่งที่แน่นอน การตั้งค่า placement type เป็น `SeparateBackgrounds` จะเพิ่มลายน้ำให้กับแต่ละหน้าพื้นหลังของไดอะแกรม  
 
-ใช้ `textWatermark` กับแผนภาพที่โหลดโดยใช้ `options` ที่กำหนดไว้ก่อนหน้า, จากนั้นบันทึกผลลัพธ์ไปยังตำแหน่งใหม่:
+### ขั้นตอนที่ 4: ใส่ลายน้ำและบันทึก
+สุดท้ายให้เพิ่มลายน้ำลงในเอกสาร, บันทึกผลลัพธ์, แล้วปล่อยทรัพยากร
+
 ```java
 watermarker.add(textWatermark, options);
 String outputPath = "YOUR_OUTPUT_DIRECTORY";
@@ -169,59 +122,52 @@ watermarker.save(outputPath);
 watermarker.close();
 ```
 
-### การประยุกต์ใช้งานจริง
-การเพิ่มลายน้ำข้อความลงในแผนภาพมีประโยชน์ในหลายสถานการณ์จริง:
-- **Intellectual‑property protection** – ป้องกันคู่แข่งจากการนำกระบวนการที่เป็นกรรมสิทธิ์ไปใช้ซ้ำ.
-- **Brand reinforcement** – ฝังชื่อบริษัทหรือโลโก้ของคุณบนทุกแผนภาพที่ส่งออก.
-- **Legal compliance** – ทำเครื่องหมายแผนภาพลับด้วย “Do Not Distribute”.
-- **Academic integrity** – ติดแท็กการส่งของนักเรียนด้วยตัวระบุที่ไม่ซ้ำกัน.
+*Explanation*: เมธอด `add` ใช้ `textWatermark` พร้อมตัวเลือกการวางตำแหน่ง จากนั้นบันทึกไดอะแกรมที่แก้ไขไปยัง `outputPath`  
 
-คุณสามารถรวมกระบวนการทำงานนี้เข้ากับระบบจัดการเอกสาร, สายงาน CI/CD, หรือบริการประมวลผลแบบชุดเพื่อทำการใส่ลายน้ำอัตโนมัติบนไฟล์หลายพันไฟล์.
+## การประยุกต์ใช้งานจริง
+- **การปกป้องทรัพย์สินทางปัญญา** – ป้องกันคู่แข่งไม่ให้ใช้ไดอะแกรมที่เป็นกรรมสิทธิ์ของคุณได้  
+- **การเสริมสร้างแบรนด์** – ฝังชื่อบริษัทหรือโลโก้เป็นลายน้ำข้อความบนไดอะแกรมที่ส่งออกทั้งหมด  
+- **เอกสารทางกฎหมาย** – ทำเครื่องหมายร่างที่เป็นความลับของแผนผังวิศวกรรม  
+- **การส่งงานทางการศึกษา** – เพิ่มรหัสนักศึกษา หรือรหัสวิชาในไดอะแกรมเพื่อการตรวจสอบการคัดลอก  
 
-### ข้อควรพิจารณาด้านประสิทธิภาพ
-เพื่อประสิทธิภาพสูงสุดกับคอลเลกชันแผนภาพขนาดใหญ่:
-- **Reuse objects** – สร้างอินสแตนซ์ `Watermarker` เพียงหนึ่งตัวและประมวลผลไฟล์ในลูป.
-- **Close resources promptly** – เรียก `watermarker.close()` เสมอหลังการบันทึกเพื่อปล่อยหน่วยความจำเนทีฟ.
-- **Stream large files** – ใช้ `DiagramLoadOptions` เพื่อโหลดหน้าเมื่อจำเป็นแทนการโหลดไฟล์ทั้งหมด.
+## พิจารณาด้านประสิทธิภาพ
+- **การจัดการหน่วยความจำ** – ปิดอินสแตนซ์ `Watermarker` (`watermarker.close()`) เพื่อปล่อยทรัพยากรเนทีฟ โดยเฉพาะเมื่อประมวลผลไฟล์ขนาดใหญ่  
+- **การประมวลผลเป็นชุด** – วนลูปผ่านคอลเลกชันของเส้นทางไดอะแกรมและใช้ `Watermarker` ตัวเดียวซ้ำเมื่อเป็นไปได้ เพื่อลดภาระการทำงาน  
+
+## ปัญหาที่พบบ่อยและวิธีแก้
+| ปัญหา | วิธีแก้ |
+|-------|----------|
+| **OutOfMemoryError บนไดอะแกรมขนาดใหญ่** | เพิ่มขนาด heap ของ JVM (`-Xmx2g`) และประมวลผลไฟล์ทีละไฟล์ |
+| **ลายน้ำไม่ปรากฏ** | ตรวจสอบให้แน่ใจว่าความเข้มของสีลายน้ำมีความคอนทราสต์เพียงพอ; ตั้งค่าความทึบผ่าน `textWatermark.setOpacity(0.5)` |
+| **รูปแบบไดอะแกรมที่ไม่รองรับ** | ยืนยันว่ารูปแบบนั้นอยู่ในรายการรูปแบบที่สนับสนุนโดย GroupDocs.Watermark ตามเอกสาร |
 
 ## คำถามที่พบบ่อย
 
-**Q: ขนาดฟอนต์ที่ดีที่สุดสำหรับลายน้ำบนแผนภาพคืออะไร?**  
-A: ขนาดระหว่าง 12 pt ถึง 24 pt ทำงานได้ดี; เลือกขนาดใหญ่กว่าสำหรับแผนภาพความละเอียดสูงเพื่อให้อ่านง่ายโดยไม่บดบังรายละเอียด.
+**ถาม: ขนาดฟอนต์ที่เหมาะสมสำหรับลายน้ำคือเท่าไหร่?**  
+ตอบ: ขนาดที่เหมาะสมขึ้นอยู่กับมิติของไดอะแกรม; 12‑20 pt ทำงานได้ดีในกรณีส่วนใหญ่  
 
-**Q: ฉันสามารถเปลี่ยนสีของลายน้ำได้หรือไม่?**  
-A: ใช่, เรียก `textWatermark.setColor(java.awt.Color)` พร้อมค่า RGB ใด ๆ เพื่อให้ตรงกับแบรนด์ของคุณ.
+**ถาม: สามารถปรับสีของลายน้ำได้หรือไม่?**  
+ตอบ: ได้, ใช้ `textWatermark.setColor(Color.GRAY)` (หรือ `java.awt.Color` ใดก็ได้)  
 
-**Q: ฉันจะประมวลผลชุดไฟล์แผนภาพอย่างไร?**  
-A: วนลูปผ่านไดเรกทอรี, ใช้อ็อบเจ็กต์ `Watermarker` เดียวกันสำหรับแต่ละไฟล์, และเรียก `watermarker.add(textWatermark, options)` ภายในลูป.
+**ถาม: จะจัดการกับชุดเอกสารขนาดใหญ่อย่างไร?**  
+ตอบ: ใช้ API การประมวลผลเป็นชุดของไลบรารีหรือเขียนลูปที่ใช้วัตถุ `Watermarker` ซ้ำเพื่อให้ใช้ทรัพยากรน้อยลง  
 
-**Q: มีข้อจำกัดรูปแบบใดบ้าง?**  
-A: ตรวจสอบ [documentation](https://docs.groupdocs.com/watermark/java/) เพื่อดูรายการเต็มของรูปแบบแผนภาพที่รองรับ; ไลบรารีรองรับ VSX, SVG, และรูปแบบที่เป็นกรรมสิทธิ์หลายรูปแบบ.
+**ถาม: มีข้อจำกัดใดกับ GroupDocs.Watermark หรือไม่?**  
+ตอบ: ไลบรารีรองรับรูปแบบไดอะแกรมส่วนใหญ่, แต่บางส่วนขยายที่เป็นกรรมสิทธิ์อาจไม่แสดงผลเต็มที่ ตรวจสอบ [documentation](https://docs.groupdocs.com/watermark/java/) สำหรับรายละเอียด  
 
-**Q: ฉันจะขอความช่วยเหลือได้จากที่ไหนหากเจอปัญหา?**  
-A: เยี่ยมชม [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10) เพื่อรับความช่วยเหลือจากชุมชนหรือเปิดตั๋วสนับสนุนผ่านพอร์ทัลบัญชีของคุณ.
+**ถาม: จะขอรับการสนับสนุนหากเจอปัญหาได้อย่างไร?**  
+ตอบ: เยี่ยมชม [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10) เพื่อรับความช่วยเหลือจากชุมชน หรือ ติดต่อฝ่ายสนับสนุนของ GroupDocs โดยตรง  
 
-## แหล่งข้อมูล
-- **Documentation**: [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
+## แหล่งข้อมูลเพิ่มเติม
+- **เอกสาร**: [GroupDocs.Watermark Documentation](https://docs.groupdocs.com/watermark/java/)  
 - **อ้างอิง API**: [Java API Reference](https://reference.groupdocs.com/watermark/java)  
 - **ดาวน์โหลด**: [Get GroupDocs.Watermark](https://releases.groupdocs.com/watermark/java/)  
-- **ที่เก็บ GitHub**: [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
+- **Repository บน GitHub**: [GroupDocs Watermark Java](https://github.com/groupdocs-watermark/GroupDocs.Watermark-for-Java)  
 - **ฟอรั่มสนับสนุนฟรี**: [GroupDocs Forum](https://forum.groupdocs.com/c/watermark/10)  
-- **ใบอนุญาตชั่วคราว**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **ไลเซนส์ชั่วคราว**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 
 ---
 
-**อัปเดตล่าสุด:** 2026-11-13  
-**ทดสอบด้วย:** GroupDocs.Watermark for Java 24.11  
+**อัปเดตล่าสุด:** 2025-12-19  
+**ทดสอบด้วย:** GroupDocs.Watermark 24.11 for Java  
 **ผู้เขียน:** GroupDocs
-
-```java
-import com.groupdocs.watermark.Watermarker;
-import com.groupdocs.watermark.options.DiagramLoadOptions;
-```
-
-## บทแนะนำที่เกี่ยวข้อง
-
-- [วิธีเพิ่มลายน้ำข้อความใน Java ด้วย GroupDocs.Watermark: คู่มือครบถ้วน](/watermark/java/text-watermarks/add-text-watermark-java-groupdocs/)
-- [วิธีเพิ่มลายน้ำข้อความและรูปภาพในหน้า PDF เฉพาะโดยใช้ GroupDocs.Watermark สำหรับ Java](/watermark/java/pdf-document-watermarking/add-watermarks-pdf-pages-groupdocs-java/)
-- [วิธีเพิ่มลายน้ำข้อความในรูปภาพเอกสาร Word โดยใช้ GroupDocs.Watermark สำหรับ Java](/watermark/java/image-watermarks/add-watermarks-word-images-groupdocs-java/)
