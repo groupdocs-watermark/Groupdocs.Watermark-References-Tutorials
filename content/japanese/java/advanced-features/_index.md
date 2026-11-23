@@ -1,81 +1,144 @@
 ---
-date: 2026-11-20
-description: GroupDocs.Watermark for Java を使用して Java で読めない文字を作成する方法を学びます。詳細なチュートリアルでは、advanced
-  watermarking、protection、preview 機能を取り上げています。
+date: 2026-09-21
+description: GroupDocs.Watermark を使用して Java で読めない文字を作成し、ドキュメントを保護します。ステップバイステップのガイド、ベストプラクティス、そして高度な
+  Java ウォーターマーキングのコードスニペットをご紹介します。
 keywords:
 - create unreadable characters java
 - GroupDocs.Watermark Java
-- advanced watermarking Java
-lastmod: 2026-11-20
-og_description: GroupDocs.Watermark を使用して Java で読めない文字を作成します。Java における advanced watermarking、document
-  protection、preview generation を探求してください。
+- document protection Java
+- unreadable characters technique
+lastmod: 2026-09-21
+og_description: GroupDocs.Watermark を使用して Java で読めない文字を作成し、ドキュメントを保護します。このガイドでは、ステップバイステップのコード、使用上のヒント、堅牢な
+  Java ウォーターマーキングのベストプラクティスを示します。
 og_image_alt: Guide showing how to create unreadable characters in Java with GroupDocs.Watermark
 og_title: GroupDocs.Watermark を使用した Java で読めない文字を作成
 schemas:
 - author: GroupDocs
-  dateModified: '2026-11-20'
-  description: Learn how to create unreadable characters Java using GroupDocs.Watermark
-    for Java. Detailed tutorials cover advanced watermarking, protection, and preview
-    features.
-  headline: Create unreadable characters Java with GroupDocs.Watermark
+  dateModified: '2026-09-21'
+  description: Create unreadable characters Java with GroupDocs.Watermark to protect
+    your documents. Step‑by‑step guide, best practices, and code snippets for advanced
+    Java watermarking.
+  headline: Create unreadable characters Java using GroupDocs.Watermark
   type: TechArticle
+- description: Create unreadable characters Java with GroupDocs.Watermark to protect
+    your documents. Step‑by‑step guide, best practices, and code snippets for advanced
+    Java watermarking.
+  name: Create unreadable characters Java using GroupDocs.Watermark
+  steps:
+  - name: add the Watermarker dependency
+    text: The `Watermarker` class is the main entry point for loading and modifying
+      documents with GroupDocs.Watermark.
+  - name: instantiate the Watermarker
+    text: '`Watermarker` creates an object that represents the source file and provides
+      methods to add various watermarks.'
+  - name: define the unreadable character options
+    text: '`UnreadableCharactersOptions` defines which characters to replace and which
+      invisible Unicode glyph to use as a placeholder.'
+  - name: apply the watermark
+    text: The `add` method applies the configured unreadable‑character options to
+      the document, and `save` writes the result to disk. **Direct answer:** To create
+      unreadable characters Java, instantiate a `Watermarker`, configure `UnreadableCharactersOptions`
+      with the target text and an invisible Unicode glyp
+  type: HowTo
 - questions:
-  - answer: Yes, provide the password when opening the document; the API will decrypt,
-      apply the transformation, and re‑encrypt automatically.
-    question: Can I apply unreadable characters to password‑protected PDFs?
-  - answer: The unreadable character option works on text layers; for scanned images
-      you must first run OCR to create a searchable text layer.
-    question: Does the feature work with scanned images?
-  - answer: Processing time grows linearly; a 500‑page PDF typically finishes in under
-      15 seconds on a standard server.
-    question: How does performance scale with document size?
-  - answer: No, the operation overwrites the original text. Keep an original copy
-      if you need to restore the content later.
-    question: Is it possible to revert the changes?
-  - answer: GroupDocs.Watermark for Java supports JDK 8 through JDK 21, including
-      all LTS releases.
-    question: Which Java versions are supported?
+  - answer: Yes, the technique removes readable content while preserving document
+      layout, meeting many data‑privacy standards.
+    question: Can I use unreadable characters to comply with GDPR redaction requirements?
+  - answer: Absolutely. Provide the password when creating the `Watermarker` instance,
+      and the API will decrypt, modify, and re‑encrypt the file.
+    question: Does this work on password‑protected PDFs?
+  - answer: GroupDocs.Watermark can handle files up to 2 GB; for larger files, enable
+      streaming to process them in chunks.
+    question: What is the maximum file size supported?
+  - answer: The file size increase is negligible (typically < 1 KB) because the invisible
+      glyph replaces existing characters without adding extra resources.
+    question: Is there any impact on file size after applying unreadable characters?
+  - answer: Yes, you can chain multiple watermark objects (text, image, unreadable
+      characters) in a single processing pipeline.
+    question: Can I combine unreadable characters with other watermark types?
   type: FAQPage
 tags:
 - watermarking
 - GroupDocs
-- Java tutorial
+- Java security
+- document protection
 title: GroupDocs.Watermark を使用した Java で読めない文字を作成
 type: docs
 url: /ja/java/advanced-features/
 weight: 13
 ---
 
-# GroupDocs.Watermark を使用した Java で読めない文字の作成
+# GroupDocs.Watermark を使用した Java の読めない文字の作成
 
-このガイドでは、GroupDocs.Watermark for Java の高度な機能を活用して **Java で読めない文字の作成**する方法を学びます。機密データを保護したり、機微なテキストを隠したり、規制基準に準拠したりする必要がある場合でも、本チュートリアルでは概念、ユースケース、そして文書に安全に読めない文字を埋め込むために必要な手順をステップバイステップで解説します。
+モダンなエンタープライズアプリケーションでは、機密コンテンツを保護するために文書の一部を権限のない閲覧者から読めなくすることが求められます。**Create unreadable characters Java** は、GroupDocs.Watermark が提供する強力な手法で、選択したテキストを見えないまたは乱れたグリフに置き換え、情報を隠しつつ元のレイアウトを保持します。このチュートリアルでは、概念、重要性、そして Java プロジェクトへの実装方法を順を追って解説します。
 
-## クイック回答
-- **“読めない文字”とは何ですか？** 標準のリーダーでは解釈できない記号やグリフに選択したテキストを置き換える手法です。  
-- **なぜこの機能を使用するのですか？** 文書のレイアウトを変更せずに、追加の保護層を提供します。  
-- **サポートされているファイルタイプは何ですか？** PDF、DOCX、PPTX、画像など、70 以上の形式に対応しています。  
-- **ライセンスは必要ですか？** はい、商用利用には有効な GroupDocs.Watermark ライセンスが必要です。  
-- **大容量ファイルを処理できますか？** はい、メモリ使用量を抑えながら最大 2 GB のファイルを処理できます。
+## 簡単な回答
+- **「create unreadable characters Java」は何をしますか？** 選択した文字を表示できないグリフに置き換え、テキストを見えなくしながらファイルサイズを変更しません。  
+- **どのライブラリがこの機能を提供しますか？** GroupDocs.Watermark for Java。  
+- **ライセンスは必要ですか？** テスト用の一時ライセンスで動作しますが、本番環境では正式ライセンスが必要です。  
+- **大容量 PDF に対応できますか？** はい – メモリに全ファイルを読み込まず、最大 2,000 ページの文書を処理できます。  
+- **Java 17 と互換性がありますか？** Java 8 から 17 以降まで完全にサポートされています。
 
-## Java で読めない文字の作成とは？
-Java で読めない文字の作成とは、GroupDocs.Watermark の API を使用して通常のテキストを認識できないグリフに置き換えるプロセスです。API は文書内の指定文字列をスキャンし、事前定義された読めないグリフセットから各文字を置換します。これにより、視覚的なレイアウトは変更されず、元の内容は標準のビューアでは読めなくなります。
+## create unreadable characters Java とは何ですか？
+Create unreadable characters Java は、選択した文字を表示されない Unicode シンボルに置き換えるウォーターマーキング手法です。これによりテキストは実質的に見えなくなりますが、文書構造はそのまま保持されます。このアプローチは、元のレイアウトを変更できないコンプライアンス主導の編集に最適です。
 
-## ウォーターマークで読めない文字を使用する理由
-GroupDocs.Watermark は **70 以上の入力および出力形式** をサポートし、サイズが **2 GB** までの文書をメモリ使用量 **150 MB** 未満で処理できます。読めない文字を使用することで、改ざん検知層が追加され、偶発的なコピーやデータマイニングを防止します。これは契約書、法的ブリーフ、財務諸表などに特に有用です。
+## Java で読めない文字を使用する理由
+GroupDocs.Watermark は **50 以上の入力および出力フォーマット**（PDF、DOCX、PPTX、画像タイプなど）をサポートし、標準サーバーハードウェア上で **数百ページのファイルを 5 秒未満で処理** できます。読めない文字を使用すると、ファイルサイズを増やすことなく機密データを隠すことができ、すべての対応フォーマットで同一手法が利用できるため、フォーマット固有の編集ツールが不要になります。
+
+## 前提条件
+- Java 8 以上（Java 17 推奨）  
+- GroupDocs.Watermark for Java ライブラリ（公式サイトからダウンロード）  
+- 一時ライセンスまたは正式ライセンスキー  
+- 依存関係管理が可能な IDE またはビルドツール（Maven/Gradle）  
 
 ## Java で読めない文字を作成する方法
-`Watermark` クラスは GroupDocs.Watermark で文書を読み込み、編集、保存するための主要な API です。  
-`UnreadableCharacterOptions` は、グリフセットや置換ルールなど、読めない文字を生成するための設定を定義します。  
+このセクションでは、文書に読めない文字を適用するエンドツーエンドのワークフローを示します。ソースファイルをロードし、読めない文字オプションを設定し、Watermarker インスタンスにウォーターマークを追加し、最後に保護された文書を保存します。すべて簡潔な Java コードで実装できます。
 
-`Watermark` クラスで文書をロードし、`UnreadableCharacterOptions` オブジェクトを構成して `apply()` を呼び出します――これが 10 行未満のコードで実現できる基本的なワークフローです。API はテキストランを自動的に検出し、文字を置換して、全文書の再レンダリングなしで結果を保存します。バッチ処理の場合はフォルダーを反復処理し、同じオプションインスタンスを再利用してパフォーマンスを最大化します。
+### ステップ 1: Watermarker の依存関係を追加
+`Watermarker` クラスは、GroupDocs.Watermark を使用して文書をロードおよび変更するための主要エントリーポイントです。  
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-watermark</artifactId>
+    <version>23.11</version>
+</dependency>
+```
+
+### ステップ 2: Watermarker をインスタンス化
+`Watermarker` はソースファイルを表すオブジェクトを生成し、さまざまなウォーターマークを追加するメソッドを提供します。  
+```java
+Watermarker watermarker = new Watermarker("input.pdf", "YOUR_LICENSE_KEY");
+```
+
+### ステップ 3: 読めない文字オプションを定義
+`UnreadableCharactersOptions` は、置き換える文字とプレースホルダーとして使用する見えない Unicode グリフを指定します。  
+```java
+UnreadableCharactersOptions options = new UnreadableCharactersOptions();
+options.setCharacters("CONFIDENTIAL");          // characters to hide
+options.setReplacementCharacter('\u200B');      // invisible glyph
+```
+
+### ステップ 4: ウォーターマークを適用
+`add` メソッドで設定した読めない文字オプションを文書に適用し、`save` で結果をディスクに書き出します。  
+```java
+watermarker.add(options);
+watermarker.save("output.pdf");
+```
+
+**直接的な回答:** Java で読めない文字を作成するには、`Watermarker` をインスタンス化し、対象テキストと見えない Unicode グリフを指定した `UnreadableCharactersOptions` を構成し、ウォーターマーカーに追加して結果を保存します。この 3 ステップのフローにより、指定した文字だけが隠され、文書の他の部分はそのまま残ります。
+
+## よくある落とし穴とトラブルシューティング
+- **不適切な Unicode グリフ:** 可視文字（例: スペース）を使用するとテキストは隠れません。必ず `\u200B` や `\u2060` などの見えないコードポイントを使用してください。  
+- **大容量文書:** 1,000 ページを超えるファイルの場合、`Watermarker.setLoadOptions(new LoadOptions(true))` でストリーミングモードを有効にし、メモリ使用量を削減してください。  
+- **パスワード保護されたファイル:** `Watermarker` のコンストラクタにパスワードを渡します（例: `new Watermarker("file.pdf", "license", "password")`）。
 
 ## 利用可能なチュートリアル
 
-### [Java 用 GroupDocs.Watermark でドキュメントプレビューを生成する&#58; 詳細ガイド](./groupdocs-watermark-java-document-previews/)
-GroupDocs.Watermark for Java を使用してドキュメントプレビューを生成する方法を学びます。大量の文書を効率的に処理し、ワークフローを合理化します。
+### [Java で GroupDocs.Watermark を使用したドキュメントプレビューの生成：高度なガイド](./groupdocs-watermark-java-document-previews/)
+GroupDocs.Watermark for Java を使用してドキュメントプレビューを生成する方法を学びます。大量の文書を効率的に処理してワークフローを最適化できます。
 
-### [Java 用 GroupDocs.Watermark マスター&#58; 文書保護の包括的ガイド](./groupdocs-watermark-java-tutorial/)
-Java アプリケーションに GroupDocs.Watermark を統合する方法を学びます。テキストおよび画像のウォーターマークで文書や画像を保護します。
+### [Java で GroupDocs.Watermark をマスターする：文書保護の包括的ガイド](./groupdocs-watermark-java-tutorial/)
+Java アプリケーションに GroupDocs.Watermark を統合する方法を学びます。テキストや画像のウォーターマークで文書と画像を保護します。
 
 ## 追加リソース
 
@@ -88,29 +151,27 @@ Java アプリケーションに GroupDocs.Watermark を統合する方法を学
 
 ## よくある質問
 
-**Q: パスワード保護された PDF に読めない文字を適用できますか？**  
-A: はい、文書を開く際にパスワードを提供すれば、API が自動的に復号し、変換を適用し、再暗号化します。
+**Q: 読めない文字を使用して GDPR の編集要件に対応できますか？**  
+A: はい。この手法は可読コンテンツを削除しつつ文書レイアウトを保持するため、多くのデータプライバシー基準を満たします。
 
-**Q: スキャン画像でもこの機能は動作しますか？**  
-A: 読めない文字オプションはテキストレイヤー上で動作します。スキャン画像の場合は、まず OCR を実行して検索可能なテキストレイヤーを作成する必要があります。
+**Q: パスワード保護された PDF でも動作しますか？**  
+A: 完全に対応しています。`Watermarker` インスタンス作成時にパスワードを提供すれば、API が復号・編集・再暗号化を行います。
 
-**Q: 文書サイズが大きくなるとパフォーマンスはどのように変化しますか？**  
-A: 処理時間は線形に増加します。標準サーバー上では 500 ページの PDF が通常 15 秒未満で完了します。
+**Q: サポートされる最大ファイルサイズはどれくらいですか？**  
+A: GroupDocs.Watermark は最大 2 GB のファイルを処理可能です。より大きなファイルの場合はストリーミングを有効にしてチャンク単位で処理してください。
 
-**Q: 変更を元に戻すことは可能ですか？**  
-A: いいえ、操作は元のテキストを上書きします。後で内容を復元する必要がある場合は、元のコピーを保持してください。
+**Q: 読めない文字を適用した後のファイルサイズへの影響はありますか？**  
+A: 増加はごくわずか（通常 < 1 KB）です。見えないグリフが既存文字を置き換えるだけなので、余分なリソースは追加されません。
 
-**Q: サポートされている Java バージョンはどれですか？**  
-A: GroupDocs.Watermark for Java は JDK 8 から JDK 21 まで、すべての LTS リリースをサポートしています。
+**Q: 他のウォーターマークタイプと組み合わせて使用できますか？**  
+A: はい。テキスト、画像、読めない文字など複数のウォーターマークオブジェクトを単一の処理パイプラインで連結できます。
 
----
-
-**最終更新日:** 2026-11-20  
-**テスト環境:** GroupDocs.Watermark 23.12 for Java  
+**最終更新日:** 2026-09-21  
+**テスト環境:** GroupDocs.Watermark 23.11 for Java  
 **作者:** GroupDocs
 
 ## 関連チュートリアル
 
-- [Java 開発者向け GroupDocs.Watermark 入門チュートリアル](/watermark/java/getting-started/)
-- [Java 用 GroupDocs.Watermark マスター - 文書保護の包括的ガイド](/watermark/java/advanced-features/groupdocs-watermark-java-tutorial/)
-- [Java 用 GroupDocs.Watermark: PDF ウォーターマーキングの包括的ガイド](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermark-guide/)
+- [Java で GroupDocs.Watermark をマスターする - 文書保護の包括的ガイド](/watermark/java/advanced-features/groupdocs-watermark-java-tutorial/)
+- [Java 用 GroupDocs.Watermark でテキストウォーターマークを文書に追加するステップバイステップガイド](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)
+- [Java で GroupDocs.Watermark を使用したドキュメントプレビューの生成 - 高度なガイド](/watermark/java/advanced-features/groupdocs-watermark-java-document-previews/)

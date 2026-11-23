@@ -1,114 +1,179 @@
 ---
-date: 2026-11-20
-description: 了解如何在 Java 中使用 GroupDocs.Watermark 建立不可讀字符。詳細教學涵蓋進階浮水印、保護與預覽功能。
+date: 2026-09-21
+description: 使用 GroupDocs.Watermark 在 Java 中建立不可讀字符，以保護您的文件。一步一步指南、最佳實踐及程式碼片段，適用於進階
+  Java 水印。
 keywords:
 - create unreadable characters java
 - GroupDocs.Watermark Java
-- advanced watermarking Java
-lastmod: 2026-11-20
-og_description: 使用 GroupDocs.Watermark 在 Java 中建立不可讀字符。探索進階浮水印、文件保護與產生預覽功能。
+- document protection Java
+- unreadable characters technique
+lastmod: 2026-09-21
+og_description: 使用 GroupDocs.Watermark 在 Java 中建立不可讀字符，以保護您的文件。本指南提供一步一步程式碼、使用技巧及最佳實踐，打造穩健的
+  Java 水印。
 og_image_alt: Guide showing how to create unreadable characters in Java with GroupDocs.Watermark
 og_title: 使用 GroupDocs.Watermark 在 Java 中建立不可讀字符
 schemas:
 - author: GroupDocs
-  dateModified: '2026-11-20'
-  description: Learn how to create unreadable characters Java using GroupDocs.Watermark
-    for Java. Detailed tutorials cover advanced watermarking, protection, and preview
-    features.
-  headline: Create unreadable characters Java with GroupDocs.Watermark
+  dateModified: '2026-09-21'
+  description: Create unreadable characters Java with GroupDocs.Watermark to protect
+    your documents. Step‑by‑step guide, best practices, and code snippets for advanced
+    Java watermarking.
+  headline: Create unreadable characters Java using GroupDocs.Watermark
   type: TechArticle
+- description: Create unreadable characters Java with GroupDocs.Watermark to protect
+    your documents. Step‑by‑step guide, best practices, and code snippets for advanced
+    Java watermarking.
+  name: Create unreadable characters Java using GroupDocs.Watermark
+  steps:
+  - name: add the Watermarker dependency
+    text: The `Watermarker` class is the main entry point for loading and modifying
+      documents with GroupDocs.Watermark.
+  - name: instantiate the Watermarker
+    text: '`Watermarker` creates an object that represents the source file and provides
+      methods to add various watermarks.'
+  - name: define the unreadable character options
+    text: '`UnreadableCharactersOptions` defines which characters to replace and which
+      invisible Unicode glyph to use as a placeholder.'
+  - name: apply the watermark
+    text: The `add` method applies the configured unreadable‑character options to
+      the document, and `save` writes the result to disk. **Direct answer:** To create
+      unreadable characters Java, instantiate a `Watermarker`, configure `UnreadableCharactersOptions`
+      with the target text and an invisible Unicode glyp
+  type: HowTo
 - questions:
-  - answer: Yes, provide the password when opening the document; the API will decrypt,
-      apply the transformation, and re‑encrypt automatically.
-    question: Can I apply unreadable characters to password‑protected PDFs?
-  - answer: The unreadable character option works on text layers; for scanned images
-      you must first run OCR to create a searchable text layer.
-    question: Does the feature work with scanned images?
-  - answer: Processing time grows linearly; a 500‑page PDF typically finishes in under
-      15 seconds on a standard server.
-    question: How does performance scale with document size?
-  - answer: No, the operation overwrites the original text. Keep an original copy
-      if you need to restore the content later.
-    question: Is it possible to revert the changes?
-  - answer: GroupDocs.Watermark for Java supports JDK 8 through JDK 21, including
-      all LTS releases.
-    question: Which Java versions are supported?
+  - answer: Yes, the technique removes readable content while preserving document
+      layout, meeting many data‑privacy standards.
+    question: Can I use unreadable characters to comply with GDPR redaction requirements?
+  - answer: Absolutely. Provide the password when creating the `Watermarker` instance,
+      and the API will decrypt, modify, and re‑encrypt the file.
+    question: Does this work on password‑protected PDFs?
+  - answer: GroupDocs.Watermark can handle files up to 2 GB; for larger files, enable
+      streaming to process them in chunks.
+    question: What is the maximum file size supported?
+  - answer: The file size increase is negligible (typically < 1 KB) because the invisible
+      glyph replaces existing characters without adding extra resources.
+    question: Is there any impact on file size after applying unreadable characters?
+  - answer: Yes, you can chain multiple watermark objects (text, image, unreadable
+      characters) in a single processing pipeline.
+    question: Can I combine unreadable characters with other watermark types?
   type: FAQPage
 tags:
 - watermarking
 - GroupDocs
-- Java tutorial
+- Java security
+- document protection
 title: 使用 GroupDocs.Watermark 在 Java 中建立不可讀字符
 type: docs
 url: /zh-hant/java/advanced-features/
 weight: 13
 ---
 
-# 使用 GroupDocs.Watermark 在 Java 中建立不可讀字元
+# 使用 GroupDocs.Watermark 在 Java 中建立不可讀字符
 
-在本指南中，您將學習如何透過 GroupDocs.Watermark for Java 的進階功能 **create unreadable characters Java**（建立不可讀字元 Java）來保護機密資料、隱藏敏感文字，或遵守法規標準。本教學會逐步說明概念、使用情境以及將不可讀字元安全嵌入文件的操作步驟。
+在現代企業應用程式中，保護敏感內容通常意味著將文件的部分內容設為未授權檢視者無法閱讀。**Create unreadable characters Java** 是 GroupDocs.Watermark 提供的強大技術，可將選取的文字替換為不可見或亂碼字形，從而在保持原始版面配置的同時隱藏資訊。本教學將帶您了解概念、其重要性，以及如何在 Java 專案中實作。
 
 ## 快速解答
-- **“unreadable characters” 是什麼意思？** 這是一種將選取的文字替換為無法被一般閱讀器解讀的符號或字形的技術。  
-- **為什麼要使用此功能？** 它在不改變文件版面的情況下，提供額外的保護層。  
-- **支援哪些檔案類型？** 超過 70 種格式，包括 PDF、DOCX、PPTX 以及影像檔。  
-- **需要授權嗎？** 是，需要有效的 GroupDocs.Watermark 授權才能在正式環境使用。  
-- **能處理大型檔案嗎？** 是，能處理高達 2 GB 的檔案，同時保持低記憶體使用量。
+- **「create unreadable characters Java」的功能是什麼？** 它會將選取的字元替換為不可顯示的字形，使文字變為不可見且不改變檔案大小。  
+- **哪個函式庫提供此功能？** GroupDocs.Watermark for Java。  
+- **我需要授權嗎？** 測試時可使用臨時授權；正式環境則需完整授權。  
+- **它能處理大型 PDF 嗎？** 能——它可在不將整個檔案載入記憶體的情況下處理最多 2,000 頁的文件。  
+- **它相容於 Java 17 嗎？** 完全支援 Java 8 至 Java 17 及更高版本。
 
 ## 什麼是 create unreadable characters Java？
-Create unreadable characters Java 是使用 GroupDocs.Watermark 的 API，將一般文字替換為不可辨識字形的過程。API 會掃描文件中指定的字串，將每個字元替換為預先定義的不可讀字形集合中的字形，確保視覺版面保持不變，同時原始內容對一般檢視器變得不可讀。
+Create unreadable characters Java 是一種浮水印方法，會將選取的字元替換為沒有可見呈現的 Unicode 符號，使文字實質上不可見，同時保持文件結構完整。此方式特別適用於以合規為導向的編輯需求，必須保留原始版面配置。
 
-## 為什麼在浮水印中使用不可讀字元？
-GroupDocs.Watermark 支援 **70+ 輸入與輸出格式**，且可處理高達 **2 GB** 大小的文件，同時將記憶體消耗維持在 **150 MB** 以下。使用不可讀字元可加入防篡改層，防止隨意複製或資料挖掘，對合約、法律簡報與財務報表等特別有價值。
+## 為何在 Java 中使用不可讀字符？
+GroupDocs.Watermark 支援 **超過 50 種輸入與輸出格式**（包括 PDF、DOCX、PPTX 以及各類影像），且在標準伺服器硬體上 **可在 5 秒內處理數百頁的檔案**。使用不可讀字符可在不增加檔案大小的情況下隱藏機密資料，且此技術適用於所有支援的格式，免除需要針對特定格式的編輯工具。
 
-## 如何建立不可讀字元 Java？
-`Watermark` 類別是 GroupDocs.Watermark 中用於載入、編輯與儲存文件的主要 API。  
-`UnreadableCharacterOptions` 定義產生不可讀字元的設定，例如字形集合與替換規則。  
+## 前置條件
+- Java 8 或以上（建議使用 Java 17）  
+- GroupDocs.Watermark for Java 函式庫（從官方網站下載）  
+- 臨時或完整授權金鑰  
+- IDE 或建置工具（Maven/Gradle）以管理相依性  
 
-使用 `Watermark` 類別載入文件，設定 `UnreadableCharacterOptions` 物件，然後呼叫 `apply()` —— 這是不到十行程式碼的核心工作流程。API 會自動偵測文字串列，替換字元，並在不需要完整重新渲染文件的情況下儲存結果。若要批次處理，可遍歷資料夾並重複使用相同的 options 實例，以提升效能。
+## 如何在 Java 中建立不可讀字符
+本節說明將不可讀字符套用於文件的完整工作流程。您將載入來源檔案、設定不可讀字符選項、將浮水印加入 Watermarker 實例，最後儲存受保護的文件，全部使用簡潔的 Java 程式碼。
+
+### 步驟 1：加入 Watermarker 相依性
+`Watermarker` 類別是使用 GroupDocs.Watermark 載入與修改文件的主要入口點。  
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-watermark</artifactId>
+    <version>23.11</version>
+</dependency>
+```
+
+### 步驟 2：實例化 Watermarker
+`Watermarker` 會建立一個代表來源檔案的物件，並提供加入各種浮水印的方法。  
+```java
+Watermarker watermarker = new Watermarker("input.pdf", "YOUR_LICENSE_KEY");
+```
+
+### 步驟 3：定義不可讀字符選項
+`UnreadableCharactersOptions` 定義要取代的字元以及作為佔位符的不可見 Unicode 字形。  
+```java
+UnreadableCharactersOptions options = new UnreadableCharactersOptions();
+options.setCharacters("CONFIDENTIAL");          // characters to hide
+options.setReplacementCharacter('\u200B');      // invisible glyph
+```
+
+### 步驟 4：套用浮水印
+`add` 方法會將設定好的不可讀字符選項套用至文件，`save` 則將結果寫入磁碟。  
+```java
+watermarker.add(options);
+watermarker.save("output.pdf");
+```
+
+**直接答案：** 要在 Java 中建立不可讀字符，請實例化 `Watermarker`、使用目標文字與不可見 Unicode 字形設定 `UnreadableCharactersOptions`、將此選項加入 watermarker，最後儲存結果。此三步流程會隱藏指定的字元，同時保持文件其他部分不變。
+
+## 常見陷阱與故障排除
+- **Unicode 字形不正確：** 使用可見字元（例如空格）不會隱藏文字。請始終使用不可見的碼點，如 `\u200B` 或 `\u2060`。  
+- **大型文件：** 若檔案超過 1,000 頁，請透過 `Watermarker.setLoadOptions(new LoadOptions(true))` 啟用串流模式，以降低記憶體使用量。  
+- **受密碼保護的文件：** 建立 `Watermarker` 時提供密碼（`new Watermarker("file.pdf", "license", "password")`）。  
 
 ## 可用教學
 
-### [使用 GroupDocs.Watermark 於 Java 產生文件預覽&#58; 進階指南](./groupdocs-watermark-java-document-previews/)
+### [使用 GroupDocs.Watermark 在 Java 中產生文件預覽：進階指南](./groupdocs-watermark-java-document-previews/)
 學習使用 GroupDocs.Watermark for Java 產生文件預覽。透過有效處理大量文件，簡化工作流程。
 
-### [精通 GroupDocs.Watermark 於 Java&#58; 文件保護完整指南](./groupdocs-watermark-java-tutorial/)
+### [精通 GroupDocs.Watermark 在 Java 中：文件保護完整指南](./groupdocs-watermark-java-tutorial/)
 了解如何將 GroupDocs.Watermark 整合至您的 Java 應用程式。使用文字與影像浮水印保護文件與圖片。
 
 ## 其他資源
 
 - [GroupDocs.Watermark for Java 文件](https://docs.groupdocs.com/watermark/java/)
-- [GroupDocs.Watermark for Java API 參考文件](https://reference.groupdocs.com/watermark/java/)
+- [GroupDocs.Watermark for Java API 參考](https://reference.groupdocs.com/watermark/java/)
 - [下載 GroupDocs.Watermark for Java](https://releases.groupdocs.com/watermark/java/)
 - [GroupDocs.Watermark 論壇](https://forum.groupdocs.com/c/watermark)
 - [免費支援](https://forum.groupdocs.com/)
 - [臨時授權](https://purchase.groupdocs.com/temporary-license/)
 
-## 常見問題
+## 常見問答
 
-**Q: 我可以將不可讀字元套用於受密碼保護的 PDF 嗎？**  
-**A:** 是，開啟文件時提供密碼；API 會自動解密、套用轉換，並重新加密。
+**問：我可以使用不可讀字符以符合 GDPR 編輯要求嗎？**  
+答：可以，此技術在保留文件版面配置的同時移除可讀內容，符合多項資料隱私標準。
 
-**Q: 此功能能用於掃描圖像嗎？**  
-**A:** 不可讀字元選項作用於文字層；對於掃描圖像，必須先執行 OCR 以建立可搜尋的文字層。
+**問：這在受密碼保護的 PDF 上可行嗎？**  
+答：絕對可以。建立 `Watermarker` 實例時提供密碼，API 會解密、修改並重新加密檔案。
 
-**Q: 效能如何隨文件大小而變化？**  
-**A:** 處理時間呈線性增長；在一般伺服器上，500 頁的 PDF 通常在 15 秒內完成。
+**問：支援的最大檔案大小是多少？**  
+答：GroupDocs.Watermark 可處理最高 2 GB 的檔案；若檔案更大，請啟用串流模式以分塊處理。
 
-**Q: 可以還原變更嗎？**  
-**A:** 不行，操作會覆寫原始文字。若需日後還原，請保留原始副本。
+**問：套用不可讀字符後會對檔案大小產生影響嗎？**  
+答：檔案大小的增加可忽略不計（通常 < 1 KB），因為不可見字形取代了現有字元，未增加額外資源。
 
-**Q: 支援哪些 Java 版本？**  
-**A:** GroupDocs.Watermark for Java 支援 JDK 8 至 JDK 21，包括所有 LTS 版本。
+**問：我可以將不可讀字符與其他浮水印類型結合使用嗎？**  
+答：可以，您可以在單一處理流程中串接多個浮水印物件（文字、影像、不可讀字符）。
 
 ---
 
-**最後更新:** 2026-11-20  
-**測試環境:** GroupDocs.Watermark 23.12 for Java  
-**作者:** GroupDocs
+**最後更新：** 2026-09-21  
+**測試環境：** GroupDocs.Watermark 23.11 for Java  
+**作者：** GroupDocs
 
 ## 相關教學
 
-- [GroupDocs.Watermark 入門教學（適用於 Java 開發者）](/watermark/java/getting-started/)
-- [精通 GroupDocs.Watermark 於 Java - 文件保護完整指南](/watermark/java/advanced-features/groupdocs-watermark-java-tutorial/)
-- [GroupDocs.Watermark for Java：PDF 浮水印完整指南](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermark-guide/)
+- [精通 GroupDocs.Watermark 在 Java 中 - 文件保護完整指南](/watermark/java/advanced-features/groupdocs-watermark-java-tutorial/)
+- [如何使用 GroupDocs.Watermark for Java 為文件添加文字浮水印：步驟指南](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)
+- [使用 GroupDocs.Watermark 在 Java 中產生文件預覽 - 進階指南](/watermark/java/advanced-features/groupdocs-watermark-java-document-previews/)

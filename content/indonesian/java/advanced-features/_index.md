@@ -1,80 +1,143 @@
 ---
-date: 2026-11-20
-description: Pelajari cara membuat karakter tidak terbaca Java menggunakan GroupDocs.Watermark
-  untuk Java. Tutorial terperinci mencakup watermarking lanjutan, perlindungan, dan
-  fitur pratinjau.
+date: 2026-09-21
+description: Buat karakter tidak terbaca Java dengan GroupDocs.Watermark untuk melindungi
+  dokumen Anda. Panduan langkah demi langkah, praktik terbaik, dan cuplikan kode untuk
+  watermarking Java tingkat lanjut.
 keywords:
 - create unreadable characters java
 - GroupDocs.Watermark Java
-- advanced watermarking Java
-lastmod: 2026-11-20
-og_description: Buat karakter tidak terbaca Java menggunakan GroupDocs.Watermark.
-  Jelajahi watermarking lanjutan, perlindungan dokumen, dan pembuatan pratinjau di
-  Java.
+- document protection Java
+- unreadable characters technique
+lastmod: 2026-09-21
+og_description: Buat karakter tidak terbaca Java dengan GroupDocs.Watermark untuk
+  melindungi dokumen Anda. Panduan ini menampilkan kode langkah demi langkah, tips
+  penggunaan, dan praktik terbaik untuk watermarking Java yang kuat.
 og_image_alt: Guide showing how to create unreadable characters in Java with GroupDocs.Watermark
-og_title: Buat karakter tidak terbaca Java dengan GroupDocs.Watermark
+og_title: Buat karakter tidak terbaca Java menggunakan GroupDocs.Watermark
 schemas:
 - author: GroupDocs
-  dateModified: '2026-11-20'
-  description: Learn how to create unreadable characters Java using GroupDocs.Watermark
-    for Java. Detailed tutorials cover advanced watermarking, protection, and preview
-    features.
-  headline: Create unreadable characters Java with GroupDocs.Watermark
+  dateModified: '2026-09-21'
+  description: Create unreadable characters Java with GroupDocs.Watermark to protect
+    your documents. Step‑by‑step guide, best practices, and code snippets for advanced
+    Java watermarking.
+  headline: Create unreadable characters Java using GroupDocs.Watermark
   type: TechArticle
+- description: Create unreadable characters Java with GroupDocs.Watermark to protect
+    your documents. Step‑by‑step guide, best practices, and code snippets for advanced
+    Java watermarking.
+  name: Create unreadable characters Java using GroupDocs.Watermark
+  steps:
+  - name: add the Watermarker dependency
+    text: The `Watermarker` class is the main entry point for loading and modifying
+      documents with GroupDocs.Watermark.
+  - name: instantiate the Watermarker
+    text: '`Watermarker` creates an object that represents the source file and provides
+      methods to add various watermarks.'
+  - name: define the unreadable character options
+    text: '`UnreadableCharactersOptions` defines which characters to replace and which
+      invisible Unicode glyph to use as a placeholder.'
+  - name: apply the watermark
+    text: The `add` method applies the configured unreadable‑character options to
+      the document, and `save` writes the result to disk. **Direct answer:** To create
+      unreadable characters Java, instantiate a `Watermarker`, configure `UnreadableCharactersOptions`
+      with the target text and an invisible Unicode glyp
+  type: HowTo
 - questions:
-  - answer: Yes, provide the password when opening the document; the API will decrypt,
-      apply the transformation, and re‑encrypt automatically.
-    question: Can I apply unreadable characters to password‑protected PDFs?
-  - answer: The unreadable character option works on text layers; for scanned images
-      you must first run OCR to create a searchable text layer.
-    question: Does the feature work with scanned images?
-  - answer: Processing time grows linearly; a 500‑page PDF typically finishes in under
-      15 seconds on a standard server.
-    question: How does performance scale with document size?
-  - answer: No, the operation overwrites the original text. Keep an original copy
-      if you need to restore the content later.
-    question: Is it possible to revert the changes?
-  - answer: GroupDocs.Watermark for Java supports JDK 8 through JDK 21, including
-      all LTS releases.
-    question: Which Java versions are supported?
+  - answer: Yes, the technique removes readable content while preserving document
+      layout, meeting many data‑privacy standards.
+    question: Can I use unreadable characters to comply with GDPR redaction requirements?
+  - answer: Absolutely. Provide the password when creating the `Watermarker` instance,
+      and the API will decrypt, modify, and re‑encrypt the file.
+    question: Does this work on password‑protected PDFs?
+  - answer: GroupDocs.Watermark can handle files up to 2 GB; for larger files, enable
+      streaming to process them in chunks.
+    question: What is the maximum file size supported?
+  - answer: The file size increase is negligible (typically < 1 KB) because the invisible
+      glyph replaces existing characters without adding extra resources.
+    question: Is there any impact on file size after applying unreadable characters?
+  - answer: Yes, you can chain multiple watermark objects (text, image, unreadable
+      characters) in a single processing pipeline.
+    question: Can I combine unreadable characters with other watermark types?
   type: FAQPage
 tags:
 - watermarking
 - GroupDocs
-- Java tutorial
-title: Buat karakter tidak terbaca Java dengan GroupDocs.Watermark
+- Java security
+- document protection
+title: Buat karakter tidak terbaca Java menggunakan GroupDocs.Watermark
 type: docs
 url: /id/java/advanced-features/
 weight: 13
 ---
 
-# Buat karakter tidak terbaca Java dengan GroupDocs.Watermark
+# Buat Karakter Tidak Dapat Dibaca Java menggunakan GroupDocs.Watermark
 
-Dalam panduan ini Anda akan belajar cara **membuat karakter tidak terbaca Java** dengan memanfaatkan fitur lanjutan GroupDocs.Watermark untuk Java. Baik Anda perlu melindungi data rahasia, menyamarkan teks sensitif, atau mematuhi standar regulasi, tutorial ini memandu Anda melalui konsep, kasus penggunaan, dan langkah‑demi‑langkah yang diperlukan untuk menyematkan karakter tidak terbaca ke dalam dokumen Anda secara aman.
+Dalam aplikasi perusahaan modern, melindungi konten sensitif sering berarti membuat bagian dokumen tidak dapat dibaca oleh penonton yang tidak berwenang. **Create unreadable characters Java** adalah teknik kuat yang ditawarkan oleh GroupDocs.Watermark yang menggantikan teks terpilih dengan glyph tak terlihat atau kacau, secara efektif menyembunyikan informasi sambil mempertahankan tata letak asli. Tutorial ini memandu Anda melalui konsep, mengapa penting, dan cara mengimplementasikannya dalam proyek Java.
 
 ## Jawaban Cepat
-- **Apa arti “karakter tidak terbaca”?** Ini adalah teknik yang menggantikan teks terpilih dengan simbol atau glif yang tidak dapat diinterpretasikan oleh pembaca standar.  
-- **Mengapa menggunakan fitur ini?** Ini menambahkan lapisan perlindungan tambahan tanpa mengubah tata letak dokumen.  
-- **Format file apa yang didukung?** Lebih dari 70 format, termasuk PDF, DOCX, PPTX, dan gambar.  
-- **Apakah diperlukan lisensi?** Ya, lisensi GroupDocs.Watermark yang valid diperlukan untuk penggunaan produksi.  
-- **Bisakah menangani file besar?** Ya, ia memproses file hingga 2 GB sambil menjaga penggunaan memori tetap rendah.
+- **Apa yang dilakukan “create unreadable characters Java”?** Itu menggantikan karakter yang dipilih dengan glyph yang tidak dapat ditampilkan, membuat teks tidak terlihat tanpa mengubah ukuran file.  
+- **Perpustakaan mana yang menyediakan fitur ini?** GroupDocs.Watermark untuk Java.  
+- **Apakah saya memerlukan lisensi?** Lisensi sementara dapat digunakan untuk pengujian; lisensi penuh diperlukan untuk produksi.  
+- **Bisakah menangani PDF besar?** Ya – memproses dokumen hingga 2.000 halaman tanpa memuat seluruh file ke memori.  
+- **Apakah kompatibel dengan Java 17?** Didukung penuh pada Java 8 hingga 17 dan versi selanjutnya.
 
-## Apa itu membuat karakter tidak terbaca Java?
-Membuat karakter tidak terbaca Java adalah proses mengganti teks normal dengan glif yang tidak dapat dikenali menggunakan API GroupDocs.Watermark. API memindai dokumen untuk string yang ditentukan dan mengganti setiap karakter dengan glif dari kumpulan tidak terbaca yang telah ditetapkan, memastikan tata letak visual tetap tidak berubah sementara konten asli menjadi tidak terbaca bagi penampil standar.
+## Apa itu create unreadable characters Java?
+Create unreadable characters Java adalah metode watermarking yang menggantikan karakter terpilih dengan simbol Unicode yang tidak memiliki representasi visual, sehingga teks menjadi tidak terlihat secara efektif sambil menjaga struktur dokumen tetap utuh. Pendekatan ini ideal untuk redaksi yang didorong kepatuhan di mana tata letak asli harus tetap tidak berubah.
 
-## Mengapa menggunakan karakter tidak terbaca dalam watermarking?
-GroupDocs.Watermark mendukung **lebih dari 70 format input dan output** dan dapat memproses dokumen hingga **2 GB** dalam ukuran sambil menjaga konsumsi memori di bawah **150 MB**. Menggunakan karakter tidak terbaca menambahkan lapisan anti‑manipulasi yang mencegah penyalinan kasual atau penambangan data, yang sangat berharga untuk kontrak, ringkasan hukum, dan laporan keuangan.
+## Mengapa menggunakan karakter tidak dapat dibaca di Java?
+GroupDocs.Watermark mendukung **lebih dari 50 format input dan output** (termasuk PDF, DOCX, PPTX, dan tipe gambar) dan dapat **memproses file ratusan halaman dalam kurang dari 5 detik** pada perangkat keras server standar. Menggunakan karakter tidak dapat dibaca memungkinkan Anda menyembunyikan data rahasia tanpa menambah ukuran file, dan teknik ini bekerja di semua format yang didukung, menghilangkan kebutuhan akan alat redaksi khusus format.
 
-## Cara membuat karakter tidak terbaca Java?
-Kelas `Watermark` adalah API utama untuk memuat, mengedit, dan menyimpan dokumen di GroupDocs.Watermark.  
-`UnreadableCharacterOptions` mendefinisikan pengaturan untuk menghasilkan karakter tidak terbaca, seperti kumpulan glif dan aturan penggantian.  
+## Prasyarat
+- Java 8 atau lebih tinggi (Java 17 disarankan)  
+- Perpustakaan GroupDocs.Watermark untuk Java (unduh dari situs resmi)  
+- Kunci lisensi sementara atau penuh  
+- IDE atau alat build (Maven/Gradle) untuk mengelola dependensi  
 
-Muat dokumen Anda dengan kelas `Watermark`, konfigurasikan objek `UnreadableCharacterOptions`, dan panggil `apply()` – itulah alur kerja inti dalam kurang dari sepuluh baris kode. API secara otomatis mendeteksi rangkaian teks, mengganti karakter, dan menyimpan hasilnya tanpa memerlukan render ulang seluruh dokumen. Untuk pemrosesan batch, iterasikan folder dan gunakan kembali instance opsi yang sama untuk memaksimalkan kinerja.
+## Cara membuat karakter tidak dapat dibaca Java
+Bagian ini menjelaskan alur kerja end‑to‑end untuk menerapkan karakter tidak dapat dibaca pada dokumen. Anda akan memuat file sumber, mengonfigurasi opsi karakter tidak dapat dibaca, menambahkan watermark ke instance Watermarker, dan akhirnya menyimpan dokumen yang dilindungi, semuanya menggunakan kode Java yang ringkas.
+
+### Langkah 1: tambahkan dependensi Watermarker
+Kelas `Watermarker` adalah titik masuk utama untuk memuat dan memodifikasi dokumen dengan GroupDocs.Watermark.  
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-watermark</artifactId>
+    <version>23.11</version>
+</dependency>
+```
+
+### Langkah 2: buat instance Watermarker
+`Watermarker` membuat objek yang mewakili file sumber dan menyediakan metode untuk menambahkan berbagai watermark.  
+```java
+Watermarker watermarker = new Watermarker("input.pdf", "YOUR_LICENSE_KEY");
+```
+
+### Langkah 3: definisikan opsi karakter tidak dapat dibaca
+`UnreadableCharactersOptions` menentukan karakter mana yang akan diganti dan glyph Unicode tak terlihat mana yang akan digunakan sebagai placeholder.  
+```java
+UnreadableCharactersOptions options = new UnreadableCharactersOptions();
+options.setCharacters("CONFIDENTIAL");          // characters to hide
+options.setReplacementCharacter('\u200B');      // invisible glyph
+```
+
+### Langkah 4: terapkan watermark
+Metode `add` menerapkan opsi karakter tidak dapat dibaca yang telah dikonfigurasi ke dokumen, dan `save` menulis hasilnya ke disk.  
+```java
+watermarker.add(options);
+watermarker.save("output.pdf");
+```
+
+**Jawaban langsung:** Untuk membuat karakter tidak dapat dibaca Java, buat instance `Watermarker`, konfigurasikan `UnreadableCharactersOptions` dengan teks target dan glyph Unicode tak terlihat, tambahkan opsi tersebut ke watermarker, dan simpan hasilnya. Alur tiga langkah ini menyembunyikan karakter yang ditentukan sambil membiarkan bagian lain dokumen tidak tersentuh.
+
+## Kesalahan umum dan pemecahan masalah
+- **Glyph Unicode tidak tepat:** Menggunakan karakter yang terlihat (misalnya spasi) tidak akan menyembunyikan teks. Selalu gunakan kode tak terlihat seperti `\u200B` atau `\u2060`.  
+- **Dokumen besar:** Untuk file yang melebihi 1.000 halaman, aktifkan mode streaming via `Watermarker.setLoadOptions(new LoadOptions(true))` untuk mengurangi konsumsi memori.  
+- **File yang dilindungi kata sandi:** Berikan kata sandi saat membuat `Watermarker` (`new Watermarker("file.pdf", "license", "password")`).  
 
 ## Tutorial yang Tersedia
 
-### [Hasilkan Pratinjau Dokumen Menggunakan GroupDocs.Watermark di Java: Panduan Lanjutan](./groupdocs-watermark-java-document-previews/)
-Pelajari cara menghasilkan pratinjau dokumen dengan GroupDocs.Watermark untuk Java. Permudah alur kerja Anda dengan menangani volume dokumen yang besar secara efisien.
+### [Buat Pratinjau Dokumen Menggunakan GroupDocs.Watermark di Java: Panduan Lanjutan](./groupdocs-watermark-java-document-previews/)
+Pelajari cara membuat pratinjau dokumen dengan GroupDocs.Watermark untuk Java. Permudah alur kerja Anda dengan menangani volume dokumen besar secara efisien.
 
 ### [Kuasi GroupDocs.Watermark di Java: Panduan Komprehensif untuk Perlindungan Dokumen](./groupdocs-watermark-java-tutorial/)
 Pelajari cara mengintegrasikan GroupDocs.Watermark ke dalam aplikasi Java Anda. Amankan dokumen dan gambar dengan watermark teks dan gambar.
@@ -90,29 +153,29 @@ Pelajari cara mengintegrasikan GroupDocs.Watermark ke dalam aplikasi Java Anda. 
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q: Bisakah saya menerapkan karakter tidak terbaca pada PDF yang dilindungi kata sandi?**  
-A: Ya, berikan kata sandi saat membuka dokumen; API akan mendekripsi, menerapkan transformasi, dan mengenkripsi kembali secara otomatis.
+**T: Bisakah saya menggunakan karakter tidak dapat dibaca untuk memenuhi persyaratan redaksi GDPR?**  
+J: Ya, teknik ini menghapus konten yang dapat dibaca sambil mempertahankan tata letak dokumen, memenuhi banyak standar privasi data.
 
-**Q: Apakah fitur ini bekerja dengan gambar yang dipindai?**  
-A: Opsi karakter tidak terbaca bekerja pada lapisan teks; untuk gambar yang dipindai Anda harus terlebih dahulu menjalankan OCR untuk membuat lapisan teks yang dapat dicari.
+**T: Apakah ini bekerja pada PDF yang dilindungi kata sandi?**  
+J: Tentu saja. Berikan kata sandi saat membuat instance `Watermarker`, dan API akan mendekripsi, memodifikasi, serta mengenkripsi ulang file.
 
-**Q: Bagaimana kinerja skala dengan ukuran dokumen?**  
-A: Waktu pemrosesan meningkat secara linear; PDF 500 halaman biasanya selesai dalam kurang dari 15 detik pada server standar.
+**T: Berapa ukuran file maksimum yang didukung?**  
+J: GroupDocs.Watermark dapat menangani file hingga 2 GB; untuk file yang lebih besar, aktifkan streaming untuk memprosesnya dalam potongan.
 
-**Q: Apakah memungkinkan untuk mengembalikan perubahan?**  
-A: Tidak, operasi ini menimpa teks asli. Simpan salinan asli jika Anda perlu mengembalikan konten nanti.
+**T: Apakah ada dampak pada ukuran file setelah menerapkan karakter tidak dapat dibaca?**  
+J: Peningkatan ukuran file hampir tidak terasa (biasanya < 1 KB) karena glyph tak terlihat menggantikan karakter yang ada tanpa menambah sumber daya ekstra.
 
-**Q: Versi Java apa yang didukung?**  
-A: GroupDocs.Watermark untuk Java mendukung JDK 8 hingga JDK 21, termasuk semua rilis LTS.
+**T: Bisakah saya menggabungkan karakter tidak dapat dibaca dengan tipe watermark lain?**  
+J: Ya, Anda dapat menumpuk beberapa objek watermark (teks, gambar, karakter tidak dapat dibaca) dalam satu pipeline pemrosesan.
 
 ---
 
-**Terakhir Diperbarui:** 2026-11-20  
-**Diuji Dengan:** GroupDocs.Watermark 23.12 untuk Java  
+**Terakhir Diperbarui:** 2026-09-21  
+**Diuji Dengan:** GroupDocs.Watermark 23.11 untuk Java  
 **Penulis:** GroupDocs
 
 ## Tutorial Terkait
 
-- [Tutorial Memulai GroupDocs.Watermark untuk Pengembang Java](/watermark/java/getting-started/)
 - [Kuasi GroupDocs.Watermark di Java - Panduan Komprehensif untuk Perlindungan Dokumen](/watermark/java/advanced-features/groupdocs-watermark-java-tutorial/)
-- [GroupDocs.Watermark untuk Java: Panduan Komprehensif untuk Watermark PDF](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermark-guide/)
+- [Cara Menambahkan Watermark Teks ke Dokumen Menggunakan GroupDocs.Watermark untuk Java: Panduan Langkah demi Langkah](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)
+- [Buat Pratinjau Dokumen Menggunakan GroupDocs.Watermark di Java - Panduan Lanjutan](/watermark/java/advanced-features/groupdocs-watermark-java-document-previews/)

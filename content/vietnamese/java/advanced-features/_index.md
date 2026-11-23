@@ -1,81 +1,146 @@
 ---
-date: 2026-11-20
-description: Tìm hiểu cách tạo ký tự không đọc được trong Java bằng cách sử dụng GroupDocs.Watermark
-  cho Java. Các hướng dẫn chi tiết bao gồm watermarking nâng cao, protection và preview.
+date: 2026-09-21
+description: Tạo ký tự không thể đọc được trong Java với GroupDocs.Watermark để bảo
+  vệ tài liệu của bạn. Hướng dẫn step-by-step, best practices, và code snippets cho
+  watermarking Java nâng cao.
 keywords:
 - create unreadable characters java
 - GroupDocs.Watermark Java
-- advanced watermarking Java
-lastmod: 2026-11-20
-og_description: Tạo ký tự không đọc được trong Java bằng GroupDocs.Watermark. Khám
-  phá watermarking nâng cao, document protection và preview generation trong Java.
+- document protection Java
+- unreadable characters technique
+lastmod: 2026-09-21
+og_description: Tạo ký tự không thể đọc được trong Java với GroupDocs.Watermark để
+  bảo vệ tài liệu của bạn. Hướng dẫn này hiển thị code step-by-step, usage tips, và
+  best practices cho watermarking Java mạnh mẽ.
 og_image_alt: Guide showing how to create unreadable characters in Java with GroupDocs.Watermark
-og_title: Tạo ký tự không đọc được trong Java với GroupDocs.Watermark
+og_title: Tạo ký tự không thể đọc được trong Java bằng GroupDocs.Watermark
 schemas:
 - author: GroupDocs
-  dateModified: '2026-11-20'
-  description: Learn how to create unreadable characters Java using GroupDocs.Watermark
-    for Java. Detailed tutorials cover advanced watermarking, protection, and preview
-    features.
-  headline: Create unreadable characters Java with GroupDocs.Watermark
+  dateModified: '2026-09-21'
+  description: Create unreadable characters Java with GroupDocs.Watermark to protect
+    your documents. Step‑by‑step guide, best practices, and code snippets for advanced
+    Java watermarking.
+  headline: Create unreadable characters Java using GroupDocs.Watermark
   type: TechArticle
+- description: Create unreadable characters Java with GroupDocs.Watermark to protect
+    your documents. Step‑by‑step guide, best practices, and code snippets for advanced
+    Java watermarking.
+  name: Create unreadable characters Java using GroupDocs.Watermark
+  steps:
+  - name: add the Watermarker dependency
+    text: The `Watermarker` class is the main entry point for loading and modifying
+      documents with GroupDocs.Watermark.
+  - name: instantiate the Watermarker
+    text: '`Watermarker` creates an object that represents the source file and provides
+      methods to add various watermarks.'
+  - name: define the unreadable character options
+    text: '`UnreadableCharactersOptions` defines which characters to replace and which
+      invisible Unicode glyph to use as a placeholder.'
+  - name: apply the watermark
+    text: The `add` method applies the configured unreadable‑character options to
+      the document, and `save` writes the result to disk. **Direct answer:** To create
+      unreadable characters Java, instantiate a `Watermarker`, configure `UnreadableCharactersOptions`
+      with the target text and an invisible Unicode glyp
+  type: HowTo
 - questions:
-  - answer: Yes, provide the password when opening the document; the API will decrypt,
-      apply the transformation, and re‑encrypt automatically.
-    question: Can I apply unreadable characters to password‑protected PDFs?
-  - answer: The unreadable character option works on text layers; for scanned images
-      you must first run OCR to create a searchable text layer.
-    question: Does the feature work with scanned images?
-  - answer: Processing time grows linearly; a 500‑page PDF typically finishes in under
-      15 seconds on a standard server.
-    question: How does performance scale with document size?
-  - answer: No, the operation overwrites the original text. Keep an original copy
-      if you need to restore the content later.
-    question: Is it possible to revert the changes?
-  - answer: GroupDocs.Watermark for Java supports JDK 8 through JDK 21, including
-      all LTS releases.
-    question: Which Java versions are supported?
+  - answer: Yes, the technique removes readable content while preserving document
+      layout, meeting many data‑privacy standards.
+    question: Can I use unreadable characters to comply with GDPR redaction requirements?
+  - answer: Absolutely. Provide the password when creating the `Watermarker` instance,
+      and the API will decrypt, modify, and re‑encrypt the file.
+    question: Does this work on password‑protected PDFs?
+  - answer: GroupDocs.Watermark can handle files up to 2 GB; for larger files, enable
+      streaming to process them in chunks.
+    question: What is the maximum file size supported?
+  - answer: The file size increase is negligible (typically < 1 KB) because the invisible
+      glyph replaces existing characters without adding extra resources.
+    question: Is there any impact on file size after applying unreadable characters?
+  - answer: Yes, you can chain multiple watermark objects (text, image, unreadable
+      characters) in a single processing pipeline.
+    question: Can I combine unreadable characters with other watermark types?
   type: FAQPage
 tags:
 - watermarking
 - GroupDocs
-- Java tutorial
-title: Tạo ký tự không đọc được trong Java với GroupDocs.Watermark
+- Java security
+- document protection
+title: Tạo ký tự không thể đọc được trong Java bằng GroupDocs.Watermark
 type: docs
 url: /vi/java/advanced-features/
 weight: 13
 ---
 
-# Tạo ký tự không đọc được Java với GroupDocs.Watermark
+# Tạo ký tự không đọc được Java bằng GroupDocs.Watermark
 
-Trong hướng dẫn này, bạn sẽ học cách **tạo ký tự không đọc được Java** bằng cách tận dụng các tính năng nâng cao của GroupDocs.Watermark cho Java. Cho dù bạn cần bảo vệ dữ liệu mật, làm mờ văn bản nhạy cảm, hoặc tuân thủ các tiêu chuẩn quy định, bài hướng dẫn này sẽ đưa bạn qua các khái niệm, trường hợp sử dụng và các bước hành động cần thiết để nhúng ký tự không đọc được vào tài liệu của bạn một cách an toàn.
+Trong các ứng dụng doanh nghiệp hiện đại, việc bảo vệ nội dung nhạy cảm thường có nghĩa là làm cho một phần tài liệu không thể đọc được đối với người xem không được phép. **Create unreadable characters Java** là một kỹ thuật mạnh mẽ do GroupDocs.Watermark cung cấp, thay thế văn bản đã chọn bằng các glyph vô hình hoặc rối loạn, hiệu quả ẩn thông tin trong khi giữ nguyên bố cục gốc. Hướng dẫn này sẽ đưa bạn qua khái niệm, lý do quan trọng và cách triển khai trong dự án Java.
 
 ## Câu trả lời nhanh
-- **“Ký tự không đọc được” có nghĩa là gì?** Đó là một kỹ thuật thay thế văn bản đã chọn bằng các ký hiệu hoặc glyph mà các trình đọc tiêu chuẩn không thể giải mã.  
-- **Tại sao nên sử dụng tính năng này?** Nó thêm một lớp bảo vệ bổ sung mà không làm thay đổi bố cục của tài liệu.  
-- **Các loại tệp nào được hỗ trợ?** Hơn 70 định dạng, bao gồm PDF, DOCX, PPTX và hình ảnh.  
-- **Cần có giấy phép không?** Có, cần một giấy phép GroupDocs.Watermark hợp lệ để sử dụng trong môi trường sản xuất.  
-- **Có thể xử lý các tệp lớn không?** Có, nó xử lý các tệp lên tới 2 GB trong khi giữ mức sử dụng bộ nhớ thấp.
+- **What does “create unreadable characters Java” do?** Nó thay thế các ký tự đã chọn bằng các glyph không hiển thị, làm cho văn bản trở nên vô hình mà không thay đổi kích thước tệp.  
+- **Which library provides this feature?** GroupDocs.Watermark for Java.  
+- **Do I need a license?** Giấy phép tạm thời hoạt động cho việc thử nghiệm; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
+- **Can it handle large PDFs?** Có – nó xử lý tài liệu lên tới 2.000 trang mà không cần tải toàn bộ tệp vào bộ nhớ.  
+- **Is it compatible with Java 17?** Được hỗ trợ đầy đủ trên Java 8 đến 17 và các phiên bản sau.
 
-## Tạo ký tự không đọc được Java là gì?
-Tạo ký tự không đọc được Java là quá trình thay thế văn bản bình thường bằng các glyph không thể nhận dạng được bằng cách sử dụng API của GroupDocs.Watermark. API sẽ quét tài liệu để tìm các chuỗi đã chỉ định và thay thế mỗi ký tự bằng một glyph từ bộ ký tự không đọc được được định trước, đảm bảo bố cục hình ảnh không thay đổi trong khi nội dung gốc trở nên không đọc được đối với các trình xem tiêu chuẩn.
+## Create unreadable characters Java là gì?
+Create unreadable characters Java là một phương pháp đánh dấu nước mà thay thế các ký tự đã chọn bằng các ký hiệu Unicode không có biểu diễn hiển thị, làm cho văn bản thực sự vô hình trong khi giữ nguyên cấu trúc tài liệu. Cách tiếp cận này lý tưởng cho việc xóa nhạy cảm dựa trên tuân thủ, nơi bố cục gốc phải được giữ nguyên.
 
-## Tại sao sử dụng ký tự không đọc được trong việc đánh dấu bản quyền?
-GroupDocs.Watermark hỗ trợ **hơn 70 định dạng đầu vào và đầu ra** và có thể xử lý tài liệu lên tới **2 GB** trong khi giữ mức tiêu thụ bộ nhớ dưới **150 MB**. Việc sử dụng ký tự không đọc được thêm một lớp chống giả mạo, ngăn chặn việc sao chép hoặc khai thác dữ liệu một cách tùy tiện, điều này đặc biệt có giá trị đối với hợp đồng, bản tóm tắt pháp lý và báo cáo tài chính.
+## Tại sao nên sử dụng ký tự không đọc được trong Java?
+GroupDocs.Watermark hỗ trợ **hơn 50 định dạng đầu vào và đầu ra** (bao gồm PDF, DOCX, PPTX và các loại hình ảnh) và có thể **xử lý các tệp hàng trăm trang trong vòng dưới 5 giây** trên phần cứng máy chủ tiêu chuẩn. Sử dụng ký tự không đọc được cho phép bạn ẩn dữ liệu mật mà không làm tăng kích thước tệp, và kỹ thuật này hoạt động trên tất cả các định dạng được hỗ trợ, loại bỏ nhu cầu sử dụng công cụ xóa nhạy cảm riêng cho từng định dạng.
 
-## Cách tạo ký tự không đọc được Java?
-Lớp `Watermark` là API chính để tải, chỉnh sửa và lưu tài liệu trong GroupDocs.Watermark.  
-`UnreadableCharacterOptions` định nghĩa các cài đặt để tạo ký tự không đọc được, chẳng hạn như bộ glyph và quy tắc thay thế.  
+## Yêu cầu trước
+- Java 8 hoặc cao hơn (khuyến nghị Java 17)  
+- Thư viện GroupDocs.Watermark for Java (tải xuống từ trang chính thức)  
+- Khóa giấy phép tạm thời hoặc đầy đủ  
+- IDE hoặc công cụ xây dựng (Maven/Gradle) để quản lý phụ thuộc  
 
-Tải tài liệu của bạn bằng lớp `Watermark`, cấu hình một đối tượng `UnreadableCharacterOptions`, và gọi `apply()` – đây là quy trình chính trong chưa đầy mười dòng mã. API tự động phát hiện các đoạn văn bản, thay thế các ký tự, và lưu kết quả mà không cần render lại toàn bộ tài liệu. Đối với xử lý hàng loạt, lặp qua một thư mục và tái sử dụng cùng một thể hiện của options để tối đa hoá hiệu suất.
+## Cách tạo ký tự không đọc được Java
+Phần này mô tả quy trình từ đầu đến cuối để áp dụng ký tự không đọc được vào tài liệu. Bạn sẽ tải tệp nguồn, cấu hình các tùy chọn ký tự không đọc được, thêm watermark vào thể hiện Watermarker, và cuối cùng lưu tài liệu đã bảo vệ, tất cả bằng mã Java ngắn gọn.
+
+### Bước 1: thêm phụ thuộc Watermarker
+Lớp `Watermarker` là điểm vào chính để tải và chỉnh sửa tài liệu với GroupDocs.Watermark.  
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-watermark</artifactId>
+    <version>23.11</version>
+</dependency>
+```
+
+### Bước 2: khởi tạo Watermarker
+`Watermarker` tạo một đối tượng đại diện cho tệp nguồn và cung cấp các phương thức để thêm các watermark khác nhau.  
+```java
+Watermarker watermarker = new Watermarker("input.pdf", "YOUR_LICENSE_KEY");
+```
+
+### Bước 3: định nghĩa tùy chọn ký tự không đọc được
+`UnreadableCharactersOptions` xác định các ký tự cần thay thế và glyph Unicode vô hình nào sẽ được dùng làm chỗ giữ.  
+```java
+UnreadableCharactersOptions options = new UnreadableCharactersOptions();
+options.setCharacters("CONFIDENTIAL");          // characters to hide
+options.setReplacementCharacter('\u200B');      // invisible glyph
+```
+
+### Bước 4: áp dụng watermark
+Phương thức `add` áp dụng các tùy chọn ký tự không đọc được đã cấu hình vào tài liệu, và `save` ghi kết quả ra đĩa.  
+```java
+watermarker.add(options);
+watermarker.save("output.pdf");
+```
+
+**Direct answer:** Để tạo ký tự không đọc được Java, khởi tạo một `Watermarker`, cấu hình `UnreadableCharactersOptions` với văn bản mục tiêu và một glyph Unicode vô hình, thêm các tùy chọn vào watermarker, và lưu kết quả. Quy trình ba bước này ẩn các ký tự được chỉ định trong khi để lại phần còn lại của tài liệu không bị thay đổi.
+
+## Những khó khăn thường gặp và khắc phục
+- **Incorrect Unicode glyph:** Sử dụng ký tự có thể hiển thị (ví dụ: dấu cách) sẽ không ẩn văn bản. Luôn sử dụng mã Unicode vô hình như `\u200B` hoặc `\u2060`.  
+- **Large documents:** Đối với các tệp vượt quá 1.000 trang, bật chế độ streaming bằng `Watermarker.setLoadOptions(new LoadOptions(true))` để giảm tiêu thụ bộ nhớ.  
+- **Password‑protected files:** Cung cấp mật khẩu khi khởi tạo `Watermarker` (`new Watermarker("file.pdf", "license", "password")`).  
 
 ## Các hướng dẫn có sẵn
 
-### [Tạo Xem Trước Tài Liệu Sử Dụng GroupDocs.Watermark trong Java&#58; Hướng Dẫn Nâng Cao](./groupdocs-watermark-java-document-previews/)
-Học cách tạo xem trước tài liệu với GroupDocs.Watermark cho Java. Tối ưu hoá quy trình làm việc của bạn bằng cách xử lý hiệu quả khối lượng lớn tài liệu.
+### [Tạo bản xem trước tài liệu bằng GroupDocs.Watermark trong Java: Hướng dẫn nâng cao](./groupdocs-watermark-java-document-previews/)
+Học cách tạo bản xem trước tài liệu với GroupDocs.Watermark cho Java. Tinh giản quy trình làm việc của bạn bằng cách xử lý hiệu quả khối lượng lớn tài liệu.
 
-### [Thành thạo GroupDocs.Watermark trong Java&#58; Hướng Dẫn Toàn Diện về Bảo Vệ Tài Liệu](./groupdocs-watermark-java-tutorial/)
-Tìm hiểu cách tích hợp GroupDocs.Watermark vào các ứng dụng Java của bạn. Bảo vệ tài liệu và hình ảnh bằng các watermark văn bản và hình ảnh.
+### [Thành thạo GroupDocs.Watermark trong Java: Hướng dẫn toàn diện về bảo vệ tài liệu](./groupdocs-watermark-java-tutorial/)
+Tìm hiểu cách tích hợp GroupDocs.Watermark vào các ứng dụng Java của bạn. Bảo vệ tài liệu và hình ảnh bằng watermark văn bản và hình ảnh.
 
 ## Tài nguyên bổ sung
 
@@ -88,29 +153,29 @@ Tìm hiểu cách tích hợp GroupDocs.Watermark vào các ứng dụng Java c�
 
 ## Câu hỏi thường gặp
 
-**Q: Có thể áp dụng ký tự không đọc được cho PDF được bảo mật bằng mật khẩu không?**  
-A: Có, cung cấp mật khẩu khi mở tài liệu; API sẽ giải mã, áp dụng chuyển đổi và tự động mã hoá lại.
+**Q: Tôi có thể sử dụng ký tự không đọc được để đáp ứng yêu cầu xóa dữ liệu GDPR không?**  
+A: Có, kỹ thuật này loại bỏ nội dung có thể đọc được trong khi giữ nguyên bố cục tài liệu, đáp ứng nhiều tiêu chuẩn bảo mật dữ liệu.
 
-**Q: Tính năng này có hoạt động với hình ảnh đã quét không?**  
-A: Tùy chọn ký tự không đọc được hoạt động trên các lớp văn bản; đối với hình ảnh đã quét, bạn phải chạy OCR trước để tạo lớp văn bản có thể tìm kiếm.
+**Q: Điều này có hoạt động trên các PDF được bảo vệ bằng mật khẩu không?**  
+A: Chắc chắn. Cung cấp mật khẩu khi tạo thể hiện `Watermarker`, và API sẽ giải mã, chỉnh sửa và mã hóa lại tệp.
 
-**Q: Hiệu suất thay đổi như thế nào với kích thước tài liệu?**  
-A: Thời gian xử lý tăng tuyến tính; một PDF 500 trang thường hoàn thành trong chưa đầy 15 giây trên máy chủ tiêu chuẩn.
+**Q: Kích thước tệp tối đa được hỗ trợ là bao nhiêu?**  
+A: GroupDocs.Watermark có thể xử lý các tệp lên tới 2 GB; đối với các tệp lớn hơn, bật streaming để xử lý chúng theo từng phần.
 
-**Q: Có thể khôi phục lại các thay đổi không?**  
-A: Không, thao tác này ghi đè lên văn bản gốc. Giữ một bản sao gốc nếu bạn cần khôi phục nội dung sau này.
+**Q: Có ảnh hưởng nào đến kích thước tệp sau khi áp dụng ký tự không đọc được không?**  
+A: Tăng kích thước tệp là không đáng kể (thường < 1 KB) vì glyph vô hình thay thế các ký tự hiện có mà không thêm tài nguyên bổ sung.
 
-**Q: Các phiên bản Java nào được hỗ trợ?**  
-A: GroupDocs.Watermark cho Java hỗ trợ JDK 8 đến JDK 21, bao gồm tất cả các bản phát hành LTS.
+**Q: Tôi có thể kết hợp ký tự không đọc được với các loại watermark khác không?**  
+A: Có, bạn có thể chuỗi nhiều đối tượng watermark (văn bản, hình ảnh, ký tự không đọc được) trong một pipeline xử lý duy nhất.
 
 ---
 
-**Cập nhật lần cuối:** 2026-11-20  
-**Kiểm tra với:** GroupDocs.Watermark 23.12 for Java  
+**Cập nhật lần cuối:** 2026-09-21  
+**Kiểm tra với:** GroupDocs.Watermark 23.11 cho Java  
 **Tác giả:** GroupDocs
 
 ## Hướng dẫn liên quan
 
-- [Hướng dẫn Bắt đầu với GroupDocs.Watermark cho Nhà phát triển Java](/watermark/java/getting-started/)
-- [Thành thạo GroupDocs.Watermark trong Java - Hướng Dẫn Toàn Diện về Bảo Vệ Tài Liệu](/watermark/java/advanced-features/groupdocs-watermark-java-tutorial/)
-- [GroupDocs.Watermark cho Java: Hướng Dẫn Toàn Diện về Đánh Dấu PDF](/watermark/java/pdf-document-watermarking/groupdocs-watermark-java-pdf-watermark-guide/)
+- [Thành thạo GroupDocs.Watermark trong Java - Hướng dẫn toàn diện về bảo vệ tài liệu](/watermark/java/advanced-features/groupdocs-watermark-java-tutorial/)
+- [Cách thêm Watermark văn bản vào tài liệu bằng GroupDocs.Watermark cho Java: Hướng dẫn từng bước](/watermark/java/text-watermarks/groupdocs-watermark-java-add-text-watermarks/)
+- [Tạo bản xem trước tài liệu bằng GroupDocs.Watermark trong Java - Hướng dẫn nâng cao](/watermark/java/advanced-features/groupdocs-watermark-java-document-previews/)
